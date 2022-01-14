@@ -310,10 +310,11 @@ function cmplx128Array(): array.Complex128Array {
 
 // The compiler should not throw an error when using ndarray types...
 {
+	const data = [ 1, 2, 3 ];
 	const arr: ndarray.ndarray = {
 		'byteLength': null,
 		'BYTES_PER_ELEMENT': null,
-		'data': [ 1, 2, 3 ],
+		'data': data,
 		'dtype': 'generic',
 		'flags': {
 			'ROW_MAJOR_CONTIGUOUS': true,
@@ -325,11 +326,11 @@ function cmplx128Array(): array.Complex128Array {
 		'order': 'row-major',
 		'shape': [ 3 ],
 		'strides': [ 1 ],
-		'get': ( i: number ): any => {
-			return arr.data[ i ];
+		'get': ( i: number ): number => {
+			return data[ i ];
 		},
-		'set': ( i: number, v: any ): ndarray.ndarray => {
-			arr.data[ i ] = v;
+		'set': ( i: number, v: number ): ndarray.ndarray => {
+			data[ i ] = v;
 			return arr;
 		}
 	};
