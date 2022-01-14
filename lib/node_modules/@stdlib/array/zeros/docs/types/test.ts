@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-/// <reference types="@stdlib/types"/>
-
 import zeros = require( './index' );
 
 
@@ -25,8 +23,19 @@ import zeros = require( './index' );
 
 // The function returns an array or typed array...
 {
-	zeros( 10 ); // $ExpectType ArrayOrTypedArray
-	zeros( 10, 'float32' ); // $ExpectType ArrayOrTypedArray
+	zeros( 10 ); // $ExpectType Float64Array
+	zeros( 10, 'float64' ); // $ExpectType Float64Array
+	zeros( 10, 'float32' ); // $ExpectType Float32Array
+	zeros( 10, 'complex128' ); // $ExpectType Complex128Array
+	zeros( 10, 'complex64' ); // $ExpectType Complex64Array
+	zeros( 10, 'int32' ); // $ExpectType Int32Array
+	zeros( 10, 'int16' ); // $ExpectType Int16Array
+	zeros( 10, 'int8' ); // $ExpectType Int8Array
+	zeros( 10, 'uint32' ); // $ExpectType Uint32Array
+	zeros( 10, 'uint16' ); // $ExpectType Uint16Array
+	zeros( 10, 'uint8' ); // $ExpectType Uint8Array
+	zeros( 10, 'uint8c' ); // $ExpectType Uint8ClampedArray
+	zeros( 10, 'generic' ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is not provided a number for the first argument...
