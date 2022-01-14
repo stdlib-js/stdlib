@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { RealOrComplexDataType as DataType } from '@stdlib/types/array';
+
 /**
 * Returns a list of typed array data types.
 *
@@ -27,7 +31,7 @@
 * var list = dtypes();
 * // e.g., returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex128', 'complex64' ]
 */
-declare function dtypes(): Array<string>;
+declare function dtypes(): Array<DataType>;
 
 
 // EXPORTS //
