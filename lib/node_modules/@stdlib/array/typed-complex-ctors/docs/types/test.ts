@@ -18,11 +18,13 @@
 
 import ctors = require( './index' );
 
+
 // TESTS //
 
 // The function returns a function or null..
 {
-	ctors( 'complex128' ); // $ExpectType Function | null
+	ctors( 'complex128' ); // $ExpectType Complex128ArrayConstructor
+	ctors( 'complex64' ); // $ExpectType Complex64ArrayConstructor
 	ctors( 'float' ); // $ExpectType Function | null
 }
 
