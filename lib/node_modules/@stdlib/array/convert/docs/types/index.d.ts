@@ -20,13 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealOrComplexTypedArray, Complex128Array, Complex64Array, DataType } from '@stdlib/types/array';
+import { AnyArray, Complex128Array, Complex64Array, DataType } from '@stdlib/types/array';
 import { Collection } from '@stdlib/types/object';
-
-/**
-* Array or typed array.
-*/
-type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
 
 /**
 * Converts an array to a `Float64Array`.
@@ -208,7 +203,7 @@ declare function convert( x: Collection, dtype: 'generic' ): Array<any>;
 * var out = convert( arr, 'float64' );
 * // returns <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
 */
-declare function convert( x: Collection, dtype: DataType ): ArrayOrTypedArray;
+declare function convert( x: Collection, dtype: DataType ): AnyArray;
 
 
 // EXPORTS //
