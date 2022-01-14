@@ -23,7 +23,17 @@ import ctors = require( './index' );
 
 // The function returns a function or null..
 {
-	ctors( 'float64' ); // $ExpectType Function | null
+	ctors( 'float64' ); // $ExpectType Float64ArrayConstructor
+	ctors( 'float32' ); // $ExpectType Float32ArrayConstructor
+	ctors( 'complex128' ); // $ExpectType Complex128ArrayConstructor
+	ctors( 'complex64' ); // $ExpectType Complex64ArrayConstructor
+	ctors( 'int32' ); // $ExpectType Int32ArrayConstructor
+	ctors( 'int16' ); // $ExpectType Int16ArrayConstructor
+	ctors( 'int8' ); // $ExpectType Int8ArrayConstructor
+	ctors( 'uint32' ); // $ExpectType Uint32ArrayConstructor
+	ctors( 'uint16' ); // $ExpectType Uint16ArrayConstructor
+	ctors( 'uint8' ); // $ExpectType Uint8ArrayConstructor
+	ctors( 'uint8c' ); // $ExpectType Uint8ClampedArrayConstructor
 	ctors( 'float' ); // $ExpectType Function | null
 }
 
