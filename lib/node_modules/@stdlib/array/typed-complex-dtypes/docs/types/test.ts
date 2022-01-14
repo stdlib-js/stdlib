@@ -18,11 +18,12 @@
 
 import dtypes = require( './index' );
 
+
 // TESTS //
 
 // The function returns a string array..
 {
-	dtypes(); // $ExpectType string[]
+	dtypes(); // $ExpectType ComplexDataType[]
 }
 
 // The compiler throws an error if the function is provided arguments...

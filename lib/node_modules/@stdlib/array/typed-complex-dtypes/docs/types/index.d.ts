@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { ComplexDataType as DataType } from '@stdlib/types/array';
+
 /**
 * Returns a list of complex typed array data types.
 *
@@ -27,7 +31,7 @@
 * var list = dtypes();
 * // returns [ 'complex64', 'complex128' ]
 */
-declare function dtypes(): Array<string>;
+declare function dtypes(): Array<DataType>;
 
 
 // EXPORTS //
