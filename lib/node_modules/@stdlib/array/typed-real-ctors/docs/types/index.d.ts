@@ -19,6 +19,114 @@
 // TypeScript Version: 2.0
 
 /**
+* Returns a `Float64Array` constructor.
+*
+* @param dtype - data type
+* @returns constructor
+*
+* @example
+* var ctor = ctors( 'float64' );
+* // returns <Function>
+*/
+declare function ctors( dtype: 'float64' ): typeof Float64Array;
+
+/**
+* Returns a `Float32Array` constructor.
+*
+* @param dtype - data type
+* @returns constructor
+*
+* @example
+* var ctor = ctors( 'float32' );
+* // returns <Function>
+*/
+declare function ctors( dtype: 'float32' ): typeof Float32Array;
+
+/**
+* Returns an `Int32Array` constructor.
+*
+* @param dtype - data type
+* @returns constructor
+*
+* @example
+* var ctor = ctors( 'int32' );
+* // returns <Function>
+*/
+declare function ctors( dtype: 'int32' ): typeof Int32Array;
+
+/**
+* Returns an `Int16Array` constructor.
+*
+* @param dtype - data type
+* @returns constructor
+*
+* @example
+* var ctor = ctors( 'int16' );
+* // returns <Function>
+*/
+declare function ctors( dtype: 'int16' ): typeof Int16Array;
+
+/**
+* Returns an `Int8Array` constructor.
+*
+* @param dtype - data type
+* @returns constructor
+*
+* @example
+* var ctor = ctors( 'int8' );
+* // returns <Function>
+*/
+declare function ctors( dtype: 'int8' ): typeof Int8Array;
+
+/**
+* Returns a `Uint32Array` constructor.
+*
+* @param dtype - data type
+* @returns constructor
+*
+* @example
+* var ctor = ctors( 'uint32' );
+* // returns <Function>
+*/
+declare function ctors( dtype: 'uint32' ): typeof Uint32Array;
+
+/**
+* Returns a `Uint16Array` constructor.
+*
+* @param dtype - data type
+* @returns constructor
+*
+* @example
+* var ctor = ctors( 'uint16' );
+* // returns <Function>
+*/
+declare function ctors( dtype: 'uint16' ): typeof Uint16Array;
+
+/**
+* Returns a `Uint8Array` constructor.
+*
+* @param dtype - data type
+* @returns constructor
+*
+* @example
+* var ctor = ctors( 'uint8' );
+* // returns <Function>
+*/
+declare function ctors( dtype: 'uint8' ): typeof Uint8Array;
+
+/**
+* Returns a `Uint8ClampedArray` constructor.
+*
+* @param dtype - data type
+* @returns constructor
+*
+* @example
+* var ctor = ctors( 'uint8c' );
+* // returns <Function>
+*/
+declare function ctors( dtype: 'uint8c' ): typeof Uint8ClampedArray;
+
+/**
 * Returns a typed array constructor.
 *
 * @param dtype - data type
