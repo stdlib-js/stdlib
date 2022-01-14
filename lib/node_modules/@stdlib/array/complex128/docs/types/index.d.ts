@@ -296,7 +296,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 /**
 * Interface defining a 128-bit complex number array constructor which is both "newable" and "callable".
 */
-interface Constructor {
+interface Complex128ArrayConstructor {
 	/**
 	* 128-bit complex number array constructor.
 	*
@@ -580,7 +580,7 @@ interface Constructor {
 * var len = arr.length;
 * // returns 2
 */
-declare var ctor: Constructor;
+declare var ctor: Complex128ArrayConstructor;
 
 
 // EXPORTS //
