@@ -18,12 +18,34 @@
 
 import nextDataType = require( './index' );
 
+
 // TESTS //
 
-// The function returns a string array, object, or null..
+// The function returns a table when not provided an input argument..
 {
-	nextDataType(); // $ExpectType Object | string[] | null
-	nextDataType( 'float32' ); // $ExpectType Object | string[] | null
+	nextDataType(); // $ExpectType Table
+}
+
+// The function returns the next larger data type or null when provided an input argument...
+{
+	nextDataType( 'complex128' ); // $ExpectType number
+	nextDataType( 'complex64' ); // $ExpectType "complex128"
+
+	nextDataType( 'float64' ); // $ExpectType number
+	nextDataType( 'float32' ); // $ExpectType "float64"
+
+	nextDataType( 'int32' ); // $ExpectType number
+	nextDataType( 'int16' ); // $ExpectType "int32"
+	nextDataType( 'int8' ); // $ExpectType "int16"
+
+	nextDataType( 'uint32' ); // $ExpectType number
+	nextDataType( 'uint16' ); // $ExpectType "uint32"
+	nextDataType( 'uint8' ); // $ExpectType "uint16"
+	nextDataType( 'uint8c' ); // $ExpectType "uint16"
+
+	nextDataType( 'generic' ); // $ExpectType number
+
+	nextDataType( 'float' ); // $ExpectType null
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...
