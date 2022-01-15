@@ -23,7 +23,14 @@ import minDataType = require( './index' );
 
 // The function returns a data type..
 {
-	minDataType( 2.13 ); // $ExpectType DataType
+	const z = {
+		're': 1.0,
+		'im': 2.0
+	};
+
+	minDataType( 2.13 ); // $ExpectType RealDataType
+	minDataType( z ); // $ExpectType ComplexDataType
+	minDataType( 'beep' ); // $ExpectType "generic"
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...

@@ -20,7 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { DataType } from '@stdlib/types/array';
+import { RealDataType, ComplexDataType, DataType } from '@stdlib/types/array';
+import { ComplexLike } from '@stdlib/types/object';
 
 /**
 * Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.
@@ -40,7 +41,43 @@ import { DataType } from '@stdlib/types/array';
 * var dt = minDataType( 3 );
 * // returns 'uint8'
 */
-declare function minDataType( value: any ): DataType;
+declare function minDataType( value: number ): RealDataType;
+
+/**
+* Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.
+*
+* ## Notes
+*
+* -   The function does *not* provide precision guarantees for non-integer-valued real numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
+*
+* @param value - scalar value
+* @returns array data type
+*
+* @example
+* var z = {
+*     're': 3.141592653589793,
+*     'im': 1.0
+* };
+* var dt = minDataType( z );
+* // returns 'complex64'
+*/
+declare function minDataType( value: ComplexLike ): ComplexDataType;
+
+/**
+* Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.
+*
+* ## Notes
+*
+* -   The function does *not* provide precision guarantees for non-integer-valued real numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
+*
+* @param value - scalar value
+* @returns array data type
+*
+* @example
+* var dt = minDataType( 'beep' );
+* // returns 'generic'
+*/
+declare function minDataType( value: any ): 'generic';
 
 
 // EXPORTS //
