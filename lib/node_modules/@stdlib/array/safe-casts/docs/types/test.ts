@@ -18,12 +18,22 @@
 
 import safeCasts = require( './index' );
 
+
 // TESTS //
 
-// The function returns a string array, object, or null..
+// The function returns a casting table..
 {
-	safeCasts(); // $ExpectType Object | string[] | null
-	safeCasts( 'float32' ); // $ExpectType Object | string[] | null
+	safeCasts(); // $ExpectType Table
+}
+
+// The function returns a list of data types when provided a recognized data type...
+{
+	safeCasts( 'float32' ); // $ExpectType DataType[]
+}
+
+// The function returns null when provided an unrecognized data type...
+{
+	safeCasts( 'float' ); // $ExpectType null
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...
