@@ -77,7 +77,7 @@ type MapFunction = Nullary | Unary | Binary;
 * var arr = iterator2array( iter );
 * // returns <Array>
 */
-declare function iterator2array( iterator: Iterator, mapFcn?: MapFunction, thisArg?: any ): Collection; // tslint:disable-line:max-line-length
+declare function iterator2array( iterator: Iterator, mapFcn?: MapFunction, thisArg?: any ): Array<any>; // tslint:disable-line:max-line-length
 
 /**
 * Creates (or fills) an array from an iterator.
