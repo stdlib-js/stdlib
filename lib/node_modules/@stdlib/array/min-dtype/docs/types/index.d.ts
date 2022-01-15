@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { DataType } from '@stdlib/types/array';
+
 /**
 * Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.
 *
@@ -36,7 +40,7 @@
 * var dt = minDataType( 3 );
 * // returns 'uint8'
 */
-declare function minDataType( value: any ): string;
+declare function minDataType( value: any ): DataType;
 
 
 // EXPORTS //

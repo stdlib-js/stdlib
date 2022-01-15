@@ -18,11 +18,12 @@
 
 import minDataType = require( './index' );
 
+
 // TESTS //
 
-// The function returns a string..
+// The function returns a data type..
 {
-	minDataType( 2.13 ); // $ExpectType string
+	minDataType( 2.13 ); // $ExpectType DataType
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
