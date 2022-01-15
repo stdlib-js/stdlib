@@ -21,12 +21,22 @@ import promotionRules = require( './index' );
 
 // TESTS //
 
-// The function returns an object, array of strings, or null...
+// The function returns an object when not provided any arguments...
 {
 	promotionRules(); // $ExpectType Table
-	promotionRules( 'float32', 'uint32' ); // $ExpectType string | number | null
-	promotionRules( 'int32', 'generic' ); // $ExpectType string | number | null
-	promotionRules( 'float32', 'foo' ); // $ExpectType string | number | null
+}
+
+// The function returns a promoted data type promotion rule when provided recognized data types...
+{
+	promotionRules( 'float32', 'uint32' ); // $ExpectType PromotionRule
+	promotionRules( 'int32', 'generic' ); // $ExpectType PromotionRule
+}
+
+// The function returns null when provided unrecognized data types...
+{
+	promotionRules( 'float32', 'foo' ); // $ExpectType null
+	promotionRules( 'bar', 'foo' ); // $ExpectType null
+	promotionRules( 'bar', 'float32' ); // $ExpectType null
 }
 
 // The function does not compile if provided a first argument that is not a string...

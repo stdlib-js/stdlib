@@ -18,20 +18,31 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { DataType } from '@stdlib/types/array';
+
 /**
 * Interface describing a promotion table.
 */
 interface Table {
-	// Table properties:
-	[key: string]: string | number;
+	/**
+	* Data type promotion rules.
+	*/
+	[key: string]: DataType | number;
 }
+
+/**
+* Promotion rule.
+*/
+type PromotionRule = DataType | number;
 
 /**
 * Returns the array data type with the smallest size and closest "kind" to which array data types can be safely cast.
 *
 * @param dtype1 - array data type
 * @param dtype2 - array data type
-* @returns promotion rule(s) or null
+* @returns promotion rule
 *
 * @example
 * var dt = promotionRules( 'float32', 'uint32' );
@@ -41,11 +52,34 @@ interface Table {
 * var dt = promotionRules( 'float32', 'foo' );
 * // returns null
 */
-declare function promotionRules( dtype1: string, dtype2: string ): number | string | null; // tslint-disable-line max-line-length
+declare function promotionRules( dtype1: DataType, dtype2: DataType ): PromotionRule; // tslint:disable-line:max-line-length
+
+/**
+* Returns the array data type with the smallest size and closest "kind" to which array data types can be safely cast.
+*
+* @param dtype1 - array data type
+* @param dtype2 - array data type
+* @returns promotion rule
+*
+* @example
+* var dt = promotionRules( 'float32', 'foo' );
+* // returns null
+*
+* @example
+* var dt = promotionRules( 'bar', 'float32' );
+* // returns null
+*
+* @example
+* var dt = promotionRules( 'bar', 'foo' );
+* // returns null
+*/
+declare function promotionRules( dtype1: string, dtype2: string ): null;
 
 /**
 * Returns a type promotion table displaying array data types with the smallest size and closest "kind" to which array data types can be safely cast.
 *
+* @param dtype1 - array data type
+* @param dtype2 - array data type
 * @returns promotion rule table
 *
 * @example
