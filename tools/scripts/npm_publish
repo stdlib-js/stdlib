@@ -593,8 +593,6 @@ update_remote_repository() {
 
 # Main execution sequence.
 main() {
-	update_internal_dependencies
-
 	echo '' >&2
 	check
 	if [[ "$?" -ne 0 ]]; then
