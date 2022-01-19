@@ -4,6 +4,7 @@ acronym,"\nacronym( str:string[, options:Object] )\n    Generates an acronym for
 AFINN_96,"\nAFINN_96()\n    Returns a list of English words rated for valence.\n"
 AFINN_111,"\nAFINN_111()\n    Returns a list of English words rated for valence.\n"
 afull,"\nafull( length:integer, value:any[, dtype:string] )\n    Returns a filled array having a specified length.\n"
+afullLike,"\nafullLike( x:TypedArray|Array[, dtype:string] )\n    Returns a filled array having the same length and data type as a provided\n    input array.\n"
 alias2pkg,"\nalias2pkg( alias:string )\n    Returns the package name associated with a provided alias.\n"
 alias2related,"\nalias2related( alias:string )\n    Returns aliases related to a specified alias.\n"
 alias2standalone,"\nalias2standalone( alias:string )\n    Returns the standalone package name associated with a provided alias.\n"

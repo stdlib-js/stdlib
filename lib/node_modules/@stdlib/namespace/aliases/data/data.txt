@@ -17,6 +17,7 @@ anyByAsync
 anyByRight
 anyByRightAsync
 aones
+aonesLike
 APERY
 append
 ARCH
