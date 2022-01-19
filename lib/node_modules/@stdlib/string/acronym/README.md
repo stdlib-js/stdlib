@@ -54,7 +54,7 @@ out = acronym( 'Hard-boiled eggs' );
 
 The function accepts the following `options`:
 
--   **stopwords**: list of custom stop words. If not specified, the function uses [@stdlib/datasets/stopwords-en][@stdlib/datasets/stopwords-en].
+-   **stopwords**: list of custom stop words. If not specified, the function uses a default set of stop words from the English language that were deemed words one would likely want to exclude from the acronym generation (a subset of the stop words from [@stdlib/datasets/stopwords-en][@stdlib/datasets/stopwords-en]).
 
 By default, the function uses a list of common English stop words. To use a custom list, set the `stopwords` option.
 

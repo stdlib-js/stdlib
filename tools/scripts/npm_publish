@@ -418,9 +418,8 @@ update_version() {
 update_internal_dependencies() {
 	echo 'Updating `@stdlib` dependency versions...' >&2
 	echo 'Getting list of `@stdlib` dependencies...' >&2
-	dependencies="$(
-		node list_stdlib_dependencies.js
-	)"
+	script="var pkg = require( '${package_json}' ); var keys = Object.keys( pkg.dependencies ); for ( var i = 0; i < keys.length; i++ ) { if ( /^@stdlib/.test( keys[ i ] ) ) { console.log( keys[ i ] ); } }"
+	dependencies="$(node -e "${script}")"
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
 		echo 'Error: unexpected error. Encountered an error when getting list of `@stdlib` dependencies.' >&2
