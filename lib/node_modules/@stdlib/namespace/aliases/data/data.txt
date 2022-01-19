@@ -731,6 +731,8 @@ base.mul
 base.mulf
 base.ndarray
 base.ndarrayUnary
+base.ndzeros
+base.ndzerosLike
 base.negafibonacci
 base.negalucas
 base.nonfibonacci

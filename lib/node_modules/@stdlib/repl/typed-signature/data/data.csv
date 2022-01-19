@@ -20,6 +20,7 @@ anyByRight,"anyByRight( collection:Array|TypedArray|Object, predicate:Function[,
 anyByRightAsync,"anyByRightAsync( collection:Array|TypedArray|Object, [options:Object,] predicate:Function, done:Function )"
 anyByRightAsync.factory,"anyByRightAsync.factory( [options:Object,] predicate:Function )"
 aones,"aones( length:integer[, dtype:string] )"
+aonesLike,"aonesLike( x:TypedArray|Array[, dtype:string] )"
 APERY,"APERY"
 append,"append( collection1:Array|TypedArray|Object, collection2:Array|TypedArray|Object )"
 ARCH,"ARCH"

@@ -731,6 +731,8 @@
 "@stdlib/math/base/ops/mulf",base.mulf
 "@stdlib/ndarray/base/ctor",base.ndarray
 "@stdlib/ndarray/base/unary",base.ndarrayUnary
+"@stdlib/ndarray/base/zeros",base.ndzeros
+"@stdlib/ndarray/base/zeros-like",base.ndzerosLike
 "@stdlib/math/base/special/negafibonacci",base.negafibonacci
 "@stdlib/math/base/special/negalucas",base.negalucas
 "@stdlib/math/base/special/nonfibonacci",base.nonfibonacci
