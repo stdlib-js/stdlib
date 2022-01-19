@@ -64,7 +64,7 @@ import zerosLike = require( './index' );
 	zerosLike( ( x: number ): number => x ); // $ExpectError
 
 	zerosLike( '5', 'float32' ); // $ExpectError
-	zerosLike( 5 'float32' ); // $ExpectError
+	zerosLike( 5, 'float32' ); // $ExpectError
 	zerosLike( false, 'float32' ); // $ExpectError
 	zerosLike( true, 'float32' ); // $ExpectError
 	zerosLike( null, 'float32' ); // $ExpectError
