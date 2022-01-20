@@ -2220,6 +2220,8 @@ ndarrayOrders
 ndarrayPromotionRules
 ndarraySafeCasts
 ndarraySameKindCasts
+ndzeros
+ndzerosLike
 nextGraphemeClusterBreak
 nextTick
 NIGHTINGALES_ROSE

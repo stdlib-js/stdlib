@@ -2220,6 +2220,8 @@
 "@stdlib/ndarray/promotion-rules",ndarrayPromotionRules
 "@stdlib/ndarray/safe-casts",ndarraySafeCasts
 "@stdlib/ndarray/same-kind-casts",ndarraySameKindCasts
+"@stdlib/ndarray/zeros",ndzeros
+"@stdlib/ndarray/zeros-like",ndzerosLike
 "@stdlib/string/next-grapheme-cluster-break",nextGraphemeClusterBreak
 "@stdlib/utils/next-tick",nextTick
 "@stdlib/datasets/nightingales-rose",NIGHTINGALES_ROSE
