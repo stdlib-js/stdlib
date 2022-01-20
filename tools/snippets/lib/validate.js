@@ -44,7 +44,7 @@ var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 */
 function validate( opts, options ) {
 	if ( !isPlainObject( options ) ) {
-		return new TypeError( 'invalid argument. Options must be an object. Value: `' + options + '`.' );
+		return new TypeError( 'invalid argument. Options argument must be an object. Value: `' + options + '`.' );
 	}
 	if ( hasOwnProp( options, 'TODO' ) ) {
 		opts.TODO = options.TODO;
