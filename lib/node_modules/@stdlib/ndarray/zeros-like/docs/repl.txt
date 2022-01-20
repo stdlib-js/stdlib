@@ -1,0 +1,53 @@
+
+{{alias}}( x[, options] )
+    Returns a zero-filled ndarray having the same shape and data type as a
+    provided input ndarray.
+
+    The function infers the following attributes from the input array:
+
+    - shape: array shape.
+    - dtype: underlying array data type.
+    - order: whether the array order is row-major (C-style) or column-major
+      (Fortran-style).
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    options: Object (optional)
+        Options.
+
+    options.shape: ArrayLikeObject<integer>|integer (optional)
+        Array shape. Overrides the input array's inferred shape.
+
+    options.dtype: string (optional)
+        Array data type. Overrides the input array's inferred data type.
+
+    options.order: string (optional)
+        Array order (either 'row-major' (C-style) or 'column-major' (Fortran-
+        style)). Overrides the input array's inferred order.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
+    <ndarray>
+    > var sh = x.shape
+    [ 2, 2 ]
+    > var dt = x.dtype
+    'float64'
+    > var y = {{alias}}( x )
+    <ndarray>
+    > sh = y.shape
+    [ 2, 2 ]
+    > dt = y.dtype
+    'float64'
+
+    See Also
+    --------
+
