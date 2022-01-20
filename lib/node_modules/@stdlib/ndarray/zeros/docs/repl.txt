@@ -1,0 +1,36 @@
+
+{{alias}}( shape[, options] )
+    Returns a zero-filled ndarray having a specified shape and data type.
+
+    Parameters
+    ----------
+    shape: ArrayLikeObject<integer>|integer
+        Array shape.
+
+    options: Object (optional)
+        Options.
+
+    options.dtype: string (optional)
+        Underlying data type. Default: 'float64'.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( [ 2, 2 ] )
+    <ndarray>
+    > var sh = arr.shape
+    [ 2, 2 ]
+    > var dt = arr.dtype
+    'float64'
+
+    See Also
+    --------
+
