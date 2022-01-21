@@ -147,7 +147,7 @@ var v = out.get( 1, 1 );
 
 Input and output arrays must be either both array-like objects or both [`ndarray`][@stdlib/ndarray/ctor]-like objects. If input and output arrays are both array-like objects, both arrays **must** have the same number of elements.
 
-If input and output arrays are both [`ndarray`][@stdlib/ndarray/ctor]-like objects, the arrays **must** be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes].
+If input and output arrays are both [`ndarray`][@stdlib/ndarray/ctor]-like objects, the arrays **must** be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes]. To map from an input [`ndarray`][@stdlib/ndarray/ctor] to an output [`ndarray`][@stdlib/ndarray/ctor] which has the same rank (i.e., dimensionality) and the same number of elements, but which is not [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes], reshape the arrays prior to invocation.
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
@@ -174,6 +174,8 @@ var v = out.get( 0, 1, 1 );
 v = out.get( 1, 1, 1 );
 // returns 5
 ```
+
+In general, avoid providing output [`ndarray`][@stdlib/ndarray/ctor]-like objects which are [non-contiguous][@stdlib/ndarray/base/assert/is-contiguous] views containing one or more elements referring to the **same** memory location. Writing to an overlapping [non-contiguous][@stdlib/ndarray/base/assert/is-contiguous] view is likely to simultaneously affect multiple elements and yield unexpected results.
 
 The applied function is provided the same arguments as with [`map`](#fcn-map).
 
@@ -294,6 +296,8 @@ console.log( y.data );
 [@stdlib/ndarray/base/unary]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/ndarray/base/assert/is-contiguous]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/array/complex64]: https://github.com/stdlib-js/stdlib
 
