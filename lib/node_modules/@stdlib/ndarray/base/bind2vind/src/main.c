@@ -86,10 +86,6 @@ int64_t stdlib_ndarray_bind2vind( int64_t ndims, int64_t *shape, int64_t *stride
 	} else if ( idx < 0 || idx >= len ) {
 		return -1;
 	}
-	// Trivial case where the offset into the underlying data buffer is 0...
-	if ( offset == 0 ) {
-		return idx;
-	}
 	// The approach which follows is to resolve a buffer index to its subscripts and then plug the subscripts into the standard formula for computing the linear index in the array view (i.e., where all strides are positive and offset is 0)...
 	ind = 0;
 	if ( order == STDLIB_NDARRAY_COLUMN_MAJOR ) {
