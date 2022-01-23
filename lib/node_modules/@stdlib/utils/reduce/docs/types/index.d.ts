@@ -122,9 +122,9 @@ type ArrayReducer = Nullary | Unary | Binary | Ternary | ArrayQuaternary;
 * @returns accumulated result
 *
 * @example
-* var naryFunction = require( '@stdlib/utils/nary-function' );
-* var add = require( '@stdlib/math/base/ops/add' );
-* var array = require( '@stdlib/ndarray/array' );
+* var naryFunction = require( `@stdlib/utils/nary-function` );
+* var add = require( `@stdlib/math/base/ops/add` );
+* var array = require( `@stdlib/ndarray/array` );
 *
 * var opts = {
 *     'dtype': 'generic'
