@@ -56,9 +56,13 @@
     - arr: input array.
 
     Input and output arrays must be either both array-like objects or both
-    ndarray-like objects and must have the same number of elements.
+    ndarray-like objects.
 
-    ndarray-like objects are *not* required to have the same shape.
+    If input and output arrays are array-like objects, the arrays must have the
+    same number of elements.
+
+    If input and output arrays are both ndarray-like objects, the arrays *must*
+    be broadcast compatible.
 
     Parameters
     ----------
