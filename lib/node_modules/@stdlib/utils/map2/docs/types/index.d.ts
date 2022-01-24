@@ -1,0 +1,363 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2022 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/// <reference types="@stdlib/types"/>
+
+import { Collection } from '@stdlib/types/object';
+import { ndarray } from '@stdlib/types/ndarray';
+
+/**
+* Callback invoked for each pair of array elements.
+*
+* @returns result
+*/
+type Nullary = () => any;
+
+/**
+* Callback invoked for each pair of array elements.
+*
+* @param v1 - element from the first input array
+* @returns result
+*/
+type Unary = ( v1: any ) => any;
+
+/**
+* Callback invoked for each pair of array elements.
+*
+* @param v1 - element from the first input array
+* @param v2 - element from the second input array
+* @returns result
+*/
+type Binary = ( v1: any, v2: any ) => any;
+
+/**
+* Callback invoked for each pair of array elements.
+*
+* @param v1 - element from the first input array
+* @param v2 - element from the second input array
+* @param index - element index
+* @returns result
+*/
+type Ternary = ( v1: any, v2: any, index: number ) => any;
+
+/**
+* Callback invoked for each pair of array elements.
+*
+* @param v1 - element from the first input array
+* @param v2 - element from the second input array
+* @param index - element index
+* @param x - first input array
+* @returns result
+*/
+type Quaternary = ( v1: any, v2: any, index: number, x: ndarray ) => any;
+
+/**
+* Callback invoked for each pair of array elements.
+*
+* @param v1 - element from the first input array
+* @param v2 - element from the second input array
+* @param index - element index
+* @param x - first input array
+* @returns result
+*/
+type ArrayQuaternary = ( v1: any, v2: any, index: number, x: Collection ) => any; // tslint:disable-line:max-line-length
+
+/**
+* Callback invoked for each pair of array elements.
+*
+* @param v1 - element from the first input array
+* @param v2 - element from the second input array
+* @param index - element index
+* @param x - first input array
+* @param y - second input array
+* @returns result
+*/
+type Quinary = ( v1: any, v2: any, index: number, x: ndarray, y: ndarray ) => any; // tslint:disable-line:max-line-length
+
+/**
+* Callback invoked for each pair of array elements.
+*
+* @param v1 - element from the first input array
+* @param v2 - element from the second input array
+* @param index - element index
+* @param x - first input array
+* @param y - second input array
+* @returns result
+*/
+type ArrayQuinary = ( v1: any, v2: any, index: number, x: Collection, y: Collection ) => any; // tslint:disable-line:max-line-length
+
+/**
+* Callback invoked for each pair of array elements.
+*
+* @param v1 - element from the first input array
+* @param v2 - element from the second input array
+* @param index - element index
+* @param x - first input array
+* @param y - second input array
+* @returns result
+*/
+type Callback = Nullary | Unary | Binary | Ternary | Quaternary | Quinary;
+
+/**
+* Callback invoked for each pair of array elements.
+*
+* @param v1 - element from the first input array
+* @param v2 - element from the second input array
+* @param index - element index
+* @param x - first input array
+* @param y - second input array
+* @returns result
+*/
+type ArrayCallback = Nullary | Unary | Binary | Ternary | ArrayQuaternary | ArrayQuinary; // tslint:disable-line:max-line-length
+
+/**
+* Interface describing the main export.
+*/
+interface Routine {
+	// NOTE: signature order matters here, as an ndarray is an array-like object...
+
+	/**
+	* Applies a function to elements in two input arrays and assigns the results to a new array.
+	*
+	* ## Notes
+	*
+	* -   The applied function is provided the following arguments:
+	*
+	*     -   **v1**: element from first input array.
+	*     -   **v2**: element from second input array.
+	*     -   **idx**: element index.
+	*     -   **x**: first input array.
+	*     -   **y**: second input array.
+	*
+	* @param x - first input array
+	* @param y - second input array
+	* @param fcn - function to apply
+	* @param thisArg - input function context
+	* @returns output array
+	*
+	* @example
+	* var naryFunction = require( `@stdlib/utils/nary-function` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	* var array = require( `@stdlib/ndarray/array` );
+	*
+	* var opts = {
+	*     'dtype': 'generic'
+	* };
+	* var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], opts );
+	* var y = array( [ [ 1, 1, 1 ], [ 1, 1, 1 ] ], opts );
+	*
+	* var out = map2( x, y, naryFunction( add, 2 ) );
+	* // returns <ndarray>
+	*
+	* var data = out.data;
+	* // returns [ 2, 3, 4, 5, 6, 7 ]
+	*/
+	( x: ndarray, y: ndarray, fcn: Callback, thisArg?: any ): ndarray;
+
+	/**
+	* Applies a function to elements in two input arrays and assigns the results to a new array.
+	*
+	* ## Notes
+	*
+	* -   The applied function is provided the following arguments:
+	*
+	*     -   **v1**: element from first input array.
+	*     -   **v2**: element from second input array.
+	*     -   **idx**: element index.
+	*     -   **x**: first input array.
+	*     -   **y**: second input array.
+	*
+	* @param x - first input array
+	* @param y - second input array
+	* @param fcn - function to apply
+	* @param thisArg - input function context
+	* @returns output array
+	*
+	* @example
+	* var naryFunction = require( `@stdlib/utils/nary-function` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var x = [ 1, 2, 3, 4, 5, 6 ];
+	* var y = [ 1, 1, 1, 1, 1, 1 ];
+	*
+	* var out = map2( x, y, naryFunction( add, 2 ) );
+	* // returns [ 2, 3, 4, 5, 6, 7 ]
+	*/
+	( x: Collection, y: Collection, fcn: ArrayCallback, thisArg?: any ): Collection; // tslint:disable-line:max-line-length
+
+	/**
+	* Applies a function to elements in two input arrays and assigns the results to an output array.
+	*
+	* ## Notes
+	*
+	* -   The applied function is provided the following arguments:
+	*
+	*     -   **v1**: element from first input array.
+	*     -   **v2**: element from second input array.
+	*     -   **idx**: element index.
+	*     -   **x**: first input array.
+	*     -   **y**: second input array.
+	*
+	* @param x - first input array
+	* @param y - second input array
+	* @param out - output array
+	* @param fcn - function to apply
+	* @param thisArg - input function context
+	* @returns output array
+	*
+	* @example
+	* var naryFunction = require( `@stdlib/utils/nary-function` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	* var array = require( `@stdlib/ndarray/array` );
+	*
+	* var opts = {
+	*     'dtype': 'generic',
+	*     'shape': [ 2, 3 ]
+	* };
+	* var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], opts );
+	* var y = array( [ [ 1, 1, 1 ], [ 1, 1, 1 ] ], opts );
+	* var out = array( opts );
+	*
+	* map2.assign( x, y, out, naryFunction( add, 2 ) );
+	*
+	* var data = out.data;
+	* // returns [ 2, 3, 4, 5, 6, 7 ]
+	*/
+	assign( x: ndarray, y: ndarray, out: ndarray, fcn: Callback, thisArg?: any ): ndarray; // tslint:disable-line:max-line-length
+
+	/**
+	* Applies a function to elements in two input arrays and assigns the results to an output array.
+	*
+	* ## Notes
+	*
+	* -   The applied function is provided the following arguments:
+	*
+	*     -   **v1**: element from first input array.
+	*     -   **v2**: element from second input array.
+	*     -   **idx**: element index.
+	*     -   **x**: first input array.
+	*     -   **y**: second input array.
+	*
+	* @param x - first input array
+	* @param y - second input array
+	* @param out - output array
+	* @param fcn - function to apply
+	* @param thisArg - input function context
+	* @returns output array
+	*
+	* @example
+	* var naryFunction = require( `@stdlib/utils/nary-function` );
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var x = [ 1, 2, 3, 4, 5, 6 ];
+	* var y = [ 1, 1, 1, 1, 1, 1 ];
+	* var out = [ 0, 0, 0, 0, 0, 0 ];
+	*
+	* map2.assign( x, y, out, naryFunction( add, 2 ) );
+	*
+	* console.log( out );
+	* // => [ 2, 3, 4, 5, 6, 7 ]
+	*/
+	assign( x: Collection, y: Collection, out: Collection, fcn: ArrayCallback, thisArg?: any ): Collection; // tslint:disable-line:max-line-length
+}
+
+/**
+* Applies a function to elements in two input arrays and assigns the results to a new array.
+*
+* ## Notes
+*
+* -   The applied function is provided the following arguments:
+*
+*     -   **v1**: element from first input array.
+*     -   **v2**: element from second input array.
+*     -   **idx**: element index.
+*     -   **x**: first input array.
+*     -   **y**: second input array.
+*
+* @param x - first input array
+* @param y - second input array
+* @param fcn - function to apply
+* @param thisArg - input function context
+* @returns output array
+*
+* @example
+* var naryFunction = require( `@stdlib/utils/nary-function` );
+* var add = require( `@stdlib/math/base/ops/add` );
+*
+* var x = [ 1, 2, 3, 4, 5, 6 ];
+* var y = [ 1, 1, 1, 1, 1, 1 ];
+*
+* var out = map2( x, y, naryFunction( add, 2 ) );
+* // returns [ 2, 3, 4, 5, 6, 7 ]
+*
+* @example
+* var naryFunction = require( `@stdlib/utils/nary-function` );
+* var add = require( `@stdlib/math/base/ops/add` );
+* var array = require( `@stdlib/ndarray/array` );
+*
+* var opts = {
+*     'dtype': 'generic'
+* };
+* var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], opts );
+* var y = array( [ [ 1, 1, 1 ], [ 1, 1, 1 ] ], opts );
+*
+* var out = map2( x, y, naryFunction( add, 2 ) );
+* // returns <ndarray>
+*
+* var data = out.data;
+* // returns [ 2, 3, 4, 5, 6, 7 ]
+*
+* @example
+* var naryFunction = require( `@stdlib/utils/nary-function` );
+* var add = require( `@stdlib/math/base/ops/add` );
+*
+* var x = [ 1, 2, 3, 4, 5, 6 ];
+* var y = [ 1, 1, 1, 1, 1, 1 ];
+* var out = [ 0, 0, 0, 0, 0, 0 ];
+*
+* map2.assign( x, y, out, naryFunction( add, 2 ) );
+*
+* console.log( out );
+* // => [ 2, 3, 4, 5, 6, 7 ]
+*
+* @example
+* var naryFunction = require( `@stdlib/utils/nary-function` );
+* var add = require( `@stdlib/math/base/ops/add` );
+* var array = require( `@stdlib/ndarray/array` );
+*
+* var opts = {
+*     'dtype': 'generic',
+*     'shape': [ 2, 3 ]
+* };
+* var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], opts );
+* var y = array( [ [ 1, 1, 1 ], [ 1, 1, 1 ] ], opts );
+* var out = array( opts );
+*
+* map2.assign( x, y, out, naryFunction( add, 2 ) );
+*
+* var data = out.data;
+* // returns [ 2, 3, 4, 5, 6, 7 ]
+*/
+declare var map2: Routine;
+
+
+// EXPORTS //
+
+export = map2;
