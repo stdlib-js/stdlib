@@ -46,7 +46,7 @@ import { ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, in
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'float64'
 */
 declare function zerosLike( x: float64ndarray ): float64ndarray;
@@ -75,7 +75,7 @@ declare function zerosLike( x: float64ndarray ): float64ndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'float32'
 */
 declare function zerosLike( x: float32ndarray ): float32ndarray;
@@ -104,7 +104,7 @@ declare function zerosLike( x: float32ndarray ): float32ndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'complex128'
 */
 declare function zerosLike( x: complex128ndarray ): complex128ndarray;
@@ -133,7 +133,7 @@ declare function zerosLike( x: complex128ndarray ): complex128ndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'complex64'
 */
 declare function zerosLike( x: complex64ndarray ): complex64ndarray;
@@ -162,7 +162,7 @@ declare function zerosLike( x: complex64ndarray ): complex64ndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'int32'
 */
 declare function zerosLike( x: int32ndarray ): int32ndarray;
@@ -191,7 +191,7 @@ declare function zerosLike( x: int32ndarray ): int32ndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'int16'
 */
 declare function zerosLike( x: int16ndarray ): int16ndarray;
@@ -220,7 +220,7 @@ declare function zerosLike( x: int16ndarray ): int16ndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'int8'
 */
 declare function zerosLike( x: int8ndarray ): int8ndarray;
@@ -249,7 +249,7 @@ declare function zerosLike( x: int8ndarray ): int8ndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'uint32'
 */
 declare function zerosLike( x: uint32ndarray ): uint32ndarray;
@@ -278,7 +278,7 @@ declare function zerosLike( x: uint32ndarray ): uint32ndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'uint16'
 */
 declare function zerosLike( x: uint16ndarray ): uint16ndarray;
@@ -307,7 +307,7 @@ declare function zerosLike( x: uint16ndarray ): uint16ndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'uint8'
 */
 declare function zerosLike( x: uint8ndarray ): uint8ndarray;
@@ -336,7 +336,7 @@ declare function zerosLike( x: uint8ndarray ): uint8ndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'uint8c'
 */
 declare function zerosLike( x: uint8cndarray ): uint8cndarray;
@@ -365,7 +365,7 @@ declare function zerosLike( x: uint8cndarray ): uint8cndarray;
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
-* dt = x.dtype;
+* dt = y.dtype;
 * // returns 'generic'
 */
 declare function zerosLike( x: ndarray ): typedndarray<number>;
