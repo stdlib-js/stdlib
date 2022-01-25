@@ -1,0 +1,40 @@
+
+{{alias}}( value[, dtype] )
+    Returns a zero-dimensional ndarray containing a provided scalar value.
+
+    If `value` is a number and `dtype` is a complex number data type, the
+    function returns a zero-dimensional ndarray containing a complex number
+    whose real component equals the provided scalar value and whose imaginary
+    component is zero.
+
+    Parameters
+    ----------
+    value: any
+        Scalar value.
+
+    dtype: string (optional)
+        Data type. If not provided and `value`
+
+        - is a number, the default data type is 'float64'.
+        - is a complex number object, the default data type is 'complex128'.
+        - is any other value type, the default data type is 'generic'.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias}}( 1.0 )
+    <ndarray>
+    > var sh = x.shape
+    []
+    > var dt = x.dtype
+    'float64'
+    > var v = x.get()
+    1.0
+
+    See Also
+    --------
+
