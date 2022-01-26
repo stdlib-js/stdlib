@@ -736,7 +736,7 @@ declare module '@stdlib/types/ndarray' {
 		dtype: string;
 
 		/**
-		* Information regarding the memory layout of the array.
+		* Flags and other meta information (e.g., memory layout of the array).
 		*/
 		flags: {
 			/**
@@ -748,6 +748,11 @@ declare module '@stdlib/types/ndarray' {
 			* Boolean indicating if an array is column-major contiguous.
 			*/
 			COLUMN_MAJOR_CONTIGUOUS: boolean;
+
+			/**
+			* Boolean indicating if an array is read-only.
+			*/
+			READONLY?: boolean;
 		};
 
 		/**
