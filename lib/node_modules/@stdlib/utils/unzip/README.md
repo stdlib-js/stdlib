@@ -72,22 +72,18 @@ var round = require( '@stdlib/math/base/special/round' );
 var randu = require( '@stdlib/random/base/randu' );
 var pow = require( '@stdlib/math/base/special/pow' );
 
-var arr;
-var len;
-var out;
+var arr = new Array( 100 );
+var len = 5;
+
 var i;
 var j;
-
-arr = new Array( 100 );
-len = 5;
-
 for ( i = 0; i < arr.length; i++ ) {
     arr[ i ] = new Array( len );
     for ( j = 0; j < len; j++ ) {
         arr[ i ][ j ] = round( randu() * pow(10, j) );
     }
 }
-out = unzip( arr );
+var out = unzip( arr );
 
 console.dir( out );
 ```
