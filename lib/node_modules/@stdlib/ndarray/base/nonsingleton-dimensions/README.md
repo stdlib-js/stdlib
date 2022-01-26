@@ -42,7 +42,7 @@ var nonsingletonDimensions = require( '@stdlib/ndarray/base/nonsingleton-dimensi
 
 #### nonsingletonDimensions( shape )
 
-Returns number of non-singleton dimensions.
+Returns the number of non-singleton dimensions.
 
 ```javascript
 var n = nonsingletonDimensions( [ 3, 1, 3 ] );
