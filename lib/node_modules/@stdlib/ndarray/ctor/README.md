@@ -74,6 +74,7 @@ The constructor accepts the following `options`:
 
 -   **mode**: specifies how to handle indices which exceed array dimensions. Default: `'throw'`.
 -   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions. If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
+-   **readonly**: `boolean` indicating whether an array should be **read-only**. Default: `false`.
 
 The constructor supports the following `modes`:
 
@@ -281,10 +282,11 @@ var dtype = arr.dtype;
 
 #### ndarray.prototype.flags
 
-Information regarding the memory layout of the array. The returned `object` has the following properties:
+Meta information, such as information regarding the memory layout of the array. The returned `object` has the following properties:
 
 -   **ROW_MAJOR_CONTIGUOUS**: `boolean` indicating if an array is row-major contiguous.
 -   **COLUMN_MAJOR_CONTIGUOUS**: `boolean` indicating if an array is column-major contiguous.
+-   **READONLY**: `boolean` indicating whether an array is **read-only**.
 
 An array is contiguous if (1) an array is compatible with being stored in a single memory segment and (2) each array element is adjacent to the next array element. Note that an array can be both row-major contiguous and column-major contiguous at the same time (e.g., if an array is a 1-dimensional ndarray with `strides = [1]`).
 
@@ -523,7 +525,7 @@ var d = arr.data;
 // returns [ 1.0, 2.0, 3.0, 40.0 ]
 ```
 
-The method returns the `ndarray` instance.
+The method returns the `ndarray` instance. If an array is **read-only**, the method raises an exception.
 
 <a name="method-iset"></a>
 
@@ -552,7 +554,9 @@ var d = arr.data;
 // returns [ 1.0, 2.0, 3.0, 40.0 ]
 ```
 
-For zero-dimensional arrays, the first, and **only**, argument should be the value `v` to set. The method returns the `ndarray` instance.
+For zero-dimensional arrays, the first, and **only**, argument should be the value `v` to set.
+
+The method returns the `ndarray` instance. If an array is **read-only**, the method raises an exception.
 
 <a name="method-to-string"></a>
 
