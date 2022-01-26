@@ -42,7 +42,7 @@ var singletonDimensions = require( '@stdlib/ndarray/base/singleton-dimensions' )
 
 #### singletonDimensions( shape )
 
-Returns number of singleton dimensions.
+Returns the number of singleton dimensions.
 
 ```javascript
 var n = singletonDimensions( [ 3, 1, 3 ] );
