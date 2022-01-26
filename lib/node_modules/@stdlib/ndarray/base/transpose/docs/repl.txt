@@ -30,7 +30,7 @@
     <ndarray>
     > sh = y.shape
     [ 3, 2 ]
-    > var bool = ( x.data === y.data)
+    > var bool = ( x.data === y.data )
     true
     > bool = ( x.get( 0, 1 ) === y.get( 1, 0 ) )
     true
