@@ -26,20 +26,24 @@ import ndarray = require( './index' );
 	const shape = [ 2, 2 ];
 	const strides = [ 2, 1 ];
 
-	ndarray( 'float64', [ 1, 2, 3, 4 ], shape, strides, 0, 'row-major' ); // $ExpectType ndarray
-	new ndarray( 'float64', [ 1, 2, 3, 4 ], shape, strides, 0, 'row-major' ); // $ExpectType ndarray
+	let x = ndarray( 'float64', [ 1, 2, 3, 4 ], shape, strides, 0, 'row-major' ); // $ExpectType ndarray
+	x = new ndarray( 'float64', [ 1, 2, 3, 4 ], shape, strides, 0, 'row-major' ); // $ExpectType ndarray
 
 	const buffer = new Int32Array( [ 1, 2, 3 ] );
 	const order = 'column-major';
 
-	ndarray( 'int32', buffer, shape, strides, 0, order ); // $ExpectType ndarray
-	new ndarray( 'int32', buffer, shape, strides, 0, order ); // $ExpectType ndarray
+	x = ndarray( 'int32', buffer, shape, strides, 0, order ); // $ExpectType ndarray
+	x = new ndarray( 'int32', buffer, shape, strides, 0, order ); // $ExpectType ndarray
 
-	ndarray( 'int32', buffer, shape, strides, 0, order, { 'mode': 'clamp' } ); // $ExpectType ndarray
-	new ndarray( 'int32', buffer, shape, strides, 0, order, { 'mode': 'clamp' } ); // $ExpectType ndarray
+	x = ndarray( 'int32', buffer, shape, strides, 0, order, { 'mode': 'clamp' } ); // $ExpectType ndarray
+	x = new ndarray( 'int32', buffer, shape, strides, 0, order, { 'mode': 'clamp' } ); // $ExpectType ndarray
 
-	ndarray( 'int32', buffer, shape, strides, 0, order, { 'submode': [ 'throw' ] } ); // $ExpectType ndarray
-	new ndarray( 'int32', buffer, shape, strides, 0, order, { 'submode': [ 'throw' ] } ); // $ExpectType ndarray
+	x = ndarray( 'int32', buffer, shape, strides, 0, order, { 'submode': [ 'throw' ] } ); // $ExpectType ndarray
+	x = new ndarray( 'int32', buffer, shape, strides, 0, order, { 'submode': [ 'throw' ] } ); // $ExpectType ndarray
+
+	if ( x.shape[ 0 ] !== x.shape[ 0 ] ) {
+		throw new Error( 'unexpected error' );
+	}
 }
 
 // The function does not compile if provided a first argument which is not a recognized data type...
@@ -166,6 +170,21 @@ import ndarray = require( './index' );
 	ndarray( 'float64', buffer, shape, strides, offset, order, { 'submode': null } ); // $ExpectError
 	ndarray( 'float64', buffer, shape, strides, offset, order, { 'submode': {} } ); // $ExpectError
 	ndarray( 'float64', buffer, shape, strides, offset, order, { 'submode': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a `readonly` option which is not a boolean...
+{
+	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	const shape = [ 2, 2 ];
+	const strides = [ 2, 1 ];
+	const offset = 0;
+	const order = 'row-major';
+	ndarray( 'float64', buffer, shape, strides, offset, order, { 'readonly': 'abc' } ); // $ExpectError
+	ndarray( 'float64', buffer, shape, strides, offset, order, { 'readonly': 123 } ); // $ExpectError
+	ndarray( 'float64', buffer, shape, strides, offset, order, { 'readonly': [] } ); // $ExpectError
+	ndarray( 'float64', buffer, shape, strides, offset, order, { 'readonly': null } ); // $ExpectError
+	ndarray( 'float64', buffer, shape, strides, offset, order, { 'readonly': {} } ); // $ExpectError
+	ndarray( 'float64', buffer, shape, strides, offset, order, { 'readonly': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The function does not compile if provided and invalid number of arguments...

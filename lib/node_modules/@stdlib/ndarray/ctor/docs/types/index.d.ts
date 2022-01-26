@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ArrayLike } from '@stdlib/types/array';
-import { ndarray, DataType, Mode, Order } from '@stdlib/types/ndarray';
+import { ndarray, DataType, Mode, Order, Shape, Strides } from '@stdlib/types/ndarray';
 import { Buffer } from 'buffer';
 
 /**
@@ -37,6 +37,11 @@ interface Options {
 	* Specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw']).
 	*/
 	submode?: Array<Mode>;
+
+	/**
+	* Boolean indicating whether an array should be read-only (default: false).
+	*/
+	readonly?: boolean;
 }
 
 /**
@@ -55,6 +60,7 @@ interface Constructor {
 	* @param options - function options
 	* @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
 	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+	* @param options.readonly - specifies whether an array should be read-only (default: false)
 	* @throws `buffer` argument `get` and `set` properties must be functions
 	* @throws `shape` argument must be an array-like object containing nonnegative integers
 	* @throws `shape` argument length must equal the number of dimensions
@@ -75,7 +81,7 @@ interface Constructor {
 	*
 	* var out = new ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 	*/
-	new( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order, options?: Options ): ndarray; // tslint-disable-line max-line-length
+	new( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: Shape, strides: Strides, offset: number, order: Order, options?: Options ): ndarray; // tslint-disable-line max-line-length
 
 	/**
 	* ndarray constructor.
@@ -89,6 +95,7 @@ interface Constructor {
 	* @param options - function options
 	* @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
 	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+	* @param options.readonly - specifies whether an array should be read-only (default: false)
 	* @throws `buffer` argument `get` and `set` properties must be functions
 	* @throws `shape` argument must be an array-like object containing nonnegative integers
 	* @throws `shape` argument length must equal the number of dimensions
@@ -109,7 +116,7 @@ interface Constructor {
 	*
 	* var out = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 	*/
-	( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order, options?: Options ): ndarray; // tslint-disable-line max-line-length
+	( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: Shape, strides: Strides, offset: number, order: Order, options?: Options ): ndarray; // tslint-disable-line max-line-length
 }
 
 /**
@@ -124,6 +131,7 @@ interface Constructor {
 * @param options - function options
 * @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+* @param options.readonly - specifies whether an array should be read-only (default: false)
 * @throws `buffer` argument `get` and `set` properties must be functions
 * @throws `shape` argument must be an array-like object containing nonnegative integers
 * @throws `shape` argument length must equal the number of dimensions

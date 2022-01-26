@@ -52,6 +52,9 @@
         fewer than the number of dimensions, the function recycles modes using
         modulo arithmetic. Default: [ options.mode ].
 
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
     Returns
     -------
     ndarray: ndarray
@@ -163,7 +166,8 @@
 
 
 {{alias}}.prototype.flags
-    Information about the memory layout of the array.
+    Meta information, such as information concerning the memory layout of the
+    array.
 
     Returns
     -------
