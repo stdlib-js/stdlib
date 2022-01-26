@@ -104,7 +104,7 @@ var arr = ndarray2array( buffer, shape, strides, offset, order );
 ```javascript
 var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
 var strides2offset = require( '@stdlib/ndarray/base/strides2offset' );
-var dicreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
 
 // Create a data buffer:
@@ -131,7 +131,7 @@ console.log( 'Dims: %s', shape.join( 'x' ) );
 var arr;
 var j;
 for ( i = 0; i < 20; i++ ) {
-    j = dicreteUniform( 0, ndims-1 );
+    j = discreteUniform( 0, ndims-1 );
     strides[ j ] *= -1;
     offset = strides2offset( shape, strides );
 
