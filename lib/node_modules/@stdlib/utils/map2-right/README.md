@@ -115,7 +115,7 @@ var cnt = ctx.count;
 
 #### map2Right.assign( x, y, out, fcn\[, thisArg] )
 
-Applies a function to elements in two input arrays while iterating from right to left and assigns the results to an output array `z`.
+Applies a function to elements in two input arrays while iterating from right to left and assigns the results to an output array `out`.
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
