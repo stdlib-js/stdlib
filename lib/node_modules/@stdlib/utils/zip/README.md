@@ -86,11 +86,10 @@ If the function should interpret a single input `array` as an `array` of `arrays
 <!-- eslint-disable object-curly-newline -->
 
 ```javascript
-var zipped;
 var arr = [ [ 1, 2 ], [ 'a', 'b' ] ];
 
 // Default behavior:
-zipped = zip( arr );
+var zipped = zip( arr );
 // returns [ [ [ 1, 2 ] ], [ [ 'a', 'b' ] ] ]
 
 // Array of arrays:
