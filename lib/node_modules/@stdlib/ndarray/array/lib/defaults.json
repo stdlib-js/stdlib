@@ -5,5 +5,6 @@
 	"flatten": true,
 	"mode": "throw",
 	"ndmin": 0,
-	"order": "row-major"
+	"order": "row-major",
+  "readonly": false
 }

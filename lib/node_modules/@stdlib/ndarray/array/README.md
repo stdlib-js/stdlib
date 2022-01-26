@@ -79,11 +79,11 @@ arr = array( array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ) );
 
 The function accepts the following `options`:
 
--   `buffer`: data source. If provided along with a `buffer` argument, the argument takes precedence.
+-   **buffer**: data source. If provided along with a `buffer` argument, the argument takes precedence.
 
--   `dtype`: underlying storage [data type][@stdlib/ndarray/dtypes]. If not specified and a data source is provided, the data type is inferred from the provided data source. If an input data source is not of the same type, this option specifies the data type to which to cast the input data. For non-[`ndarray`][@stdlib/ndarray/ctor] generic array data sources, the function casts generic array data elements to the default data type. In order to prevent this cast, the `dtype` option **must** be explicitly set to `'generic'`. Any time a cast is required, the `copy` option is set to `true`, as memory must be copied from the data source to an output data buffer. Default: `'float64'`.
+-   **dtype**: underlying storage [data type][@stdlib/ndarray/dtypes]. If not specified and a data source is provided, the data type is inferred from the provided data source. If an input data source is not of the same type, this option specifies the data type to which to cast the input data. For non-[`ndarray`][@stdlib/ndarray/ctor] generic array data sources, the function casts generic array data elements to the default data type. In order to prevent this cast, the `dtype` option **must** be explicitly set to `'generic'`. Any time a cast is required, the `copy` option is set to `true`, as memory must be copied from the data source to an output data buffer. Default: `'float64'`.
 
--   `order`: specifies the memory layout of the data source as either row-major (C-style) or column-major (Fortran-style). The option may be one of the following values:
+-   **order**: specifies the memory layout of the data source as either row-major (C-style) or column-major (Fortran-style). The option may be one of the following values:
 
     -   `row-major`: the order of the returned array is row-major.
     -   `column-major`: the order of the returned array is column-major.
@@ -92,15 +92,15 @@ The function accepts the following `options`:
 
     Note that specifying an order which differs from the order of a provided data source does **not** entail a conversion from one memory layout to another. In short, this option is descriptive, not prescriptive. Default: `'row-major'`.
 
--   `shape`: array shape (dimensions). If a shape is not specified, the function attempts to infer a shape based on a provided data source. For example, if provided a nested array, the function resolves nested array dimensions. If provided a multidimensional array data source, the function uses the array's associated shape. For most use cases, such inference suffices. For the remaining use cases, specifying a shape is necessary. For example, provide a shape to create a multidimensional array view over a linear data buffer, ignoring any existing shape meta data associated with a provided data source.
+-   **shape**: array shape (dimensions). If a shape is not specified, the function attempts to infer a shape based on a provided data source. For example, if provided a nested array, the function resolves nested array dimensions. If provided a multidimensional array data source, the function uses the array's associated shape. For most use cases, such inference suffices. For the remaining use cases, specifying a shape is necessary. For example, provide a shape to create a multidimensional array view over a linear data buffer, ignoring any existing shape meta data associated with a provided data source.
 
--   `flatten`: `boolean` indicating whether to automatically flatten generic array data sources. If an array shape is not specified, the shape is inferred from the dimensions of nested arrays prior to flattening. If a use case requires partial flattening, partially flatten **prior** to invoking this function and set the option value to `false` to prevent further flattening during invocation. Default: `true`.
+-   **flatten**: `boolean` indicating whether to automatically flatten generic array data sources. If an array shape is not specified, the shape is inferred from the dimensions of nested arrays prior to flattening. If a use case requires partial flattening, partially flatten **prior** to invoking this function and set the option value to `false` to prevent further flattening during invocation. Default: `true`.
 
--   `copy`: `boolean` indicating whether to (shallow) copy source data to a new data buffer. The function does **not** perform a deep copy. To prevent undesired shared changes in state for generic arrays containing objects, perform a deep copy **prior** to invoking this function. Default: `false`.
+-   **copy**: `boolean` indicating whether to (shallow) copy source data to a new data buffer. The function does **not** perform a deep copy. To prevent undesired shared changes in state for generic arrays containing objects, perform a deep copy **prior** to invoking this function. Default: `false`.
 
--   `ndmin`: specifies the minimum number of dimensions. If an array shape has fewer dimensions than required by `ndmin`, the function **prepends** singleton dimensions to the array shape in order to satisfy the dimensions requirement. Default: `0`.
+-   **ndmin**: specifies the minimum number of dimensions. If an array shape has fewer dimensions than required by `ndmin`, the function **prepends** singleton dimensions to the array shape in order to satisfy the dimensions requirement. Default: `0`.
 
--   `casting`: specifies the casting rule used to determine acceptable casts. The option may be one of the following values:
+-   **casting**: specifies the casting rule used to determine acceptable casts. The option may be one of the following values:
 
     -   `none`: only allow casting between identical types.
     -   `equiv`: allow casting between identical and byte swapped types.
@@ -110,7 +110,7 @@ The function accepts the following `options`:
 
     Default: `'safe'`.
 
--   `mode`: specifies how to handle indices which exceed array dimensions.
+-   **mode**: specifies how to handle indices which exceed array dimensions.
 
     -   `throw`: specifies that an [`ndarray`][@stdlib/ndarray/ctor] instance should throw an error when an index exceeds array dimensions.
     -   `wrap`: specifies that an [`ndarray`][@stdlib/ndarray/ctor] instance should wrap around an index exceeding array dimensions using modulo arithmetic.
@@ -118,7 +118,9 @@ The function accepts the following `options`:
 
     Default: `'throw'`.
 
--   `submode`: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions. If provided fewer modes than dimensions, the function recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
+-   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions. If provided fewer modes than dimensions, the function recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
+
+-   **readonly**: `boolean` indicating whether an [`ndarray`][@stdlib/ndarray/ctor] instance should be **read-only**. Default: `false`.
 
 By default, an [`ndarray`][@stdlib/ndarray/ctor] instance **throws** when provided an index which exceeds array dimensions. To support alternative indexing behavior, set the `mode` option, which will affect all public methods for getting and setting array elements.
 
