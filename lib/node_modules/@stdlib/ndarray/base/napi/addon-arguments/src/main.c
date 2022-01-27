@@ -140,6 +140,10 @@ napi_status stdlib_ndarray_napi_addon_arguments( const napi_env env, const napi_
 		ptr += 8;
 		int8_t *submodes = (int8_t *)ptr;
 
+		// FIXME: the following is commented out, as we don't yet do anything with serialized flags (e.g., read-only flag, etc); once flags are supported, this comment should be removed and the following uncommented...
+		// ptr += nsubmodes * 1;
+		// int32_t *flags = (int32_t *)ptr;
+
 		// Allocate a new ndarray:
 		struct ndarray *arr = stdlib_ndarray_allocate( dtype, data, ndims, shape, strides, offset, order, imode, nsubmodes, submodes );
 		if ( arr == NULL ) {
