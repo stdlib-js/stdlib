@@ -32,7 +32,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * -   Meta data format:
 *
 *     ```text
-*     | <endianness> (1 byte) | <dtype> (2 bytes) | <ndims> (8 bytes) | <shape> (ndims*8 bytes) | <strides> (ndims*8 bytes) | <offset> (8 bytes) | <order> (1 byte) | <mode> (1 byte) | <nsubmodes> (8 bytes) | <submodes> (nsubmodes*1 bytes) |
+*     | <endianness> (1 byte) | <dtype> (2 bytes) | <ndims> (8 bytes) | <shape> (ndims*8 bytes) | <strides> (ndims*8 bytes) | <offset> (8 bytes) | <order> (1 byte) | <mode> (1 byte) | <nsubmodes> (8 bytes) | <submodes> (nsubmodes*1 bytes) | <flags> (4 bytes) |
 *     ```
 *
 *     which translates to the following `ArrayBuffer` layout:
@@ -49,6 +49,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 *         <mode>[int8],
 *         <nsubmodes>[int64],
 *         <submodes>[nsubmodes*int8]
+*         <flags>[int32]
 *     ]
 *     ```
 *
@@ -59,13 +60,13 @@ import { ndarray } from '@stdlib/types/ndarray';
 * -   Buffer length:
 *
 *     ```text
-*     1 + 2 + 8 + (ndims*8) + (ndims*8) + 8 + 1 + 1 + 8 + (nsubmodes*1) = 29 + (ndims*16) + nsubmodes
+*     1 + 2 + 8 + (ndims*8) + (ndims*8) + 8 + 1 + 1 + 8 + (nsubmodes*1) + 4 = 33 + (ndims*16) + nsubmodes
 *     ```
 *
 *     For example, consider a three-dimensional ndarray with one subscript index mode (submode):
 *
 *     ```text
-*     29 + (3*16) + 1 = 78 bytes
+*     33 + (3*16) + 1 = 82 bytes
 *     ```
 *
 * -   Views:
@@ -80,6 +81,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 *     -   mode: `Int8Array( buf, 20+(ndims*16), 1 )`
 *     -   nsubmodes: `Int64Array( buf, 21+(ndims*16), 1 )`
 *     -   submodes: `Int8Array( buf, 29+(ndims*16), nsubmodes )`
+*     -   flags: `Int32Array( buf, 29+(ndims*16)+nsubmodes, 1)`
 *
 * @param x - input ndarray
 * @returns serialized meta data

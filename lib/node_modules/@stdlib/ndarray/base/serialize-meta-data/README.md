@@ -67,7 +67,7 @@ var dv = serialize( arr );
 -   Meta data format:
 
     ```text
-    | endianness (1 byte) | <dtype> (2 bytes) | <ndims> (8 bytes) | <shape> (ndims*8 bytes) | <strides> (ndims*8 bytes) | <offset> (8 bytes) | <order> (1 byte) | <mode> (1 byte) | <nsubmodes> (8 bytes) | <submodes> (nsubmodes*1 bytes) |
+    | endianness (1 byte) | <dtype> (2 bytes) | <ndims> (8 bytes) | <shape> (ndims*8 bytes) | <strides> (ndims*8 bytes) | <offset> (8 bytes) | <order> (1 byte) | <mode> (1 byte) | <nsubmodes> (8 bytes) | <submodes> (nsubmodes*1 bytes) | <flags> (4 bytes) |
     ```
 
     which translates to the following `ArrayBuffer` layout:
@@ -83,7 +83,8 @@ var dv = serialize( arr );
         <order>[int8],
         <mode>[int8],
         <nsubmodes>[int64],
-        <submodes>[nsubmodes*int8]
+        <submodes>[nsubmodes*int8],
+        <flags>[int32]
     ]
     ```
 
@@ -94,13 +95,13 @@ var dv = serialize( arr );
 -   Buffer length:
 
     ```text
-    1 + 2 + 8 + (ndims*8) + (ndims*8) + 8 + 1 + 1 + 8 + (nsubmodes*1) = 29 + (ndims*16) + nsubmodes
+    1 + 2 + 8 + (ndims*8) + (ndims*8) + 8 + 1 + 1 + 8 + (nsubmodes*1) + 4 = 33 + (ndims*16) + nsubmodes
     ```
 
     For example, consider a three-dimensional [ndarray][@stdlib/ndarray/ctor] with one subscript index mode (submode):
 
     ```text
-    29 + (3*16) + 1 = 78 bytes
+    33 + (3*16) + 1 = 82 bytes
     ```
 
 </section>
