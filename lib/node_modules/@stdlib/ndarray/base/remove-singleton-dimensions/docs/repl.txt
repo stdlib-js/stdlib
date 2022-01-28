@@ -1,0 +1,42 @@
+
+{{alias}}( x )
+    Returns an array without singleton dimensions.
+
+    If a provided ndarray does not have any singleton dimensions, the function
+    returns the provided ndarray unchanged.
+
+    If a provided ndarray does have singleton dimensions, the function returns a
+    new ndarray view.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    Returns
+    -------
+    out: ndarray
+        Squeezed array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ], { 'ndmin': 5 } )
+    <ndarray>
+    > var sh = x.shape
+    [ 1, 1, 1, 2, 2 ]
+    > var y = {{alias}}( x )
+    <ndarray>
+    > sh = y.shape
+    [ 2, 2 ]
+    > var v = y.get( 0, 0 )
+    1
+    > v = y.get( 0, 1 )
+    2
+    > v = y.get( 1, 0 )
+    3
+    > v = y.get( 1, 1 )
+    4
+
+    See Also
+    --------
+
