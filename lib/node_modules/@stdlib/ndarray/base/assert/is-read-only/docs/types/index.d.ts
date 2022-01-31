@@ -40,7 +40,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
 *     'readonly': false
 * });
-* bool = isReadOnly( 'column-major' );
+* bool = isReadOnly( x );
 * // returns false
 */
 declare function isReadOnly( arr: ndarray ): boolean;
