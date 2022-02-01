@@ -23,7 +23,8 @@ name: standalone_keepalive
 on:
   # Rune the workflow on the first day of each month:
   schedule:
-    cron: '0 0 1 * *'
+    # * is a special character in YAML so you have to quote this string
+    - cron: '0 0 1 * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
