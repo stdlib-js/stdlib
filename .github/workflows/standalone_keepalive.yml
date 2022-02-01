@@ -21,7 +21,7 @@ name: standalone_keepalive
 
 # Workflow triggers:
 on:
-  # Rune the workflow on the first day of each month:
+  # Run the workflow on the first day of each month:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron: '0 0 1 * *'
