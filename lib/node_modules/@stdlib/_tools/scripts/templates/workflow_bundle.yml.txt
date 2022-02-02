@@ -1,0 +1,198 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: bundle
+
+# Workflow triggers:
+on:
+  workflow_dispatch:
+  push:
+
+# Workflow jobs:
+jobs:
+  deno:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Copy files to deno directory
+        run: |
+          mkdir -p deno
+          cp README.md LICENSE CONTRIBUTORS NOTICE ./deno
+
+          # Copy TypeScript definitions to deno directory:
+          if [ -d index.d.ts ]; then
+            cp index.d.ts ./deno/index.d.ts
+          fi
+          if [ -e ./docs/types/index.d.ts ]; then
+            cp ./docs/types/index.d.ts ./deno/mod.d.ts
+          fi
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+        timeout-minutes: 5
+      - name: Install production and development dependencies
+        id: install
+        run: |
+          npm install || npm install || npm install
+        timeout-minutes: 15
+      - name: Bundle package for Deno
+        id: deno-bundle
+        uses: stdlib-js/bundle-action@main
+        with:
+          target: 'deno'
+      - name: Rewrite file contents
+        run: |
+          # Replace links to other packages with links to the deno branch:
+          find ./deno -type f -name '*.md' -print0 | xargs -0 sed -Ei "/\/tree\/main/b; /^\[@stdlib[^:]+: https:\/\/github.com\/stdlib-js\// s/(.*)/\\1\/tree\/deno/";
+
+          # Replace reference to `@stdlib/types` with deno.land link:
+          find ./deno -type f -name '*.ts' -print0 | xargs -0 sed -Ei "s/\/\/\/ <reference types=\"@stdlib\/types\"\/>/\/\/\/ <reference types=\"https:\/\/deno.land\/x\/stdlib_types\/index.d.ts\"\/>/g"
+
+          # Change wording of project description to avoid reference to JavaScript and Node.js:
+          find ./deno -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/a standard library for JavaScript and Node.js, /a standard library /g"
+
+          # Rewrite all `require()`s to use jsDelivr links:
+          find ./deno -type f -name '*.md' -print0 | xargs -0 sed -Ei "/require\( '@stdlib\// {
+              s/(var|let|const)\s+([a-z0-9]+)\s+=\s*require\( '([^']+)' \);/import \2 from \'\3\';/i
+              s/@stdlib/https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js/
+              s/';/@deno\/mod.js';/
+          }"
+
+          # Remove `installation`, `cli`, and `c` sections:
+          find ./deno -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"installation\">[^<]+<\/section>//g;"
+          find ./deno -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"cli\">[\s\S]+<\!\-\- \/.cli \-\->//g"
+          find ./deno -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"c\">[\s\S]+<\!\-\- \/.c \-\->//g"
+
+      - name: Publish to deno branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deno
+          publish_branch: deno
+          keep_files: true
+          user_name: 'stdlib-bot'
+          user_email: 'noreply@stdlib.io'
+          commit_message: 'Auto-generated commit'
+          enable_jekyll: true
+  umd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Copy files to umd directory
+        run: |
+          mkdir -p umd
+          cp README.md LICENSE CONTRIBUTORS NOTICE ./umd
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+        timeout-minutes: 5
+      - name: Install production and development dependencies
+        id: install
+        run: |
+          npm install || npm install || npm install
+        timeout-minutes: 15
+      - name: Create Universal Module Definition (UMD) bundle
+        id: umd-bundle
+        uses: stdlib-js/bundle-action@main
+        with:
+          target: 'umd'
+      - name: Rewrite file contents
+        run: |
+
+          # Remove `installation`, `cli`, and `c` sections:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"installation\">[^<]+<\/section>//g;"
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"cli\">[\s\S]+<\!\-\- \/.cli \-\->//g"
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"c\">[\s\S]+<\!\-\- \/.c \-\->//g"
+
+      - name: Publish to umd branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./umd
+          publish_branch: umd
+          keep_files: true
+          user_name: 'stdlib-bot'
+          user_email: 'noreply@stdlib.io'
+          commit_message: 'Auto-generated commit'
+          enable_jekyll: true
+  esm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Copy files to umd directory
+        run: |
+          mkdir -p esm
+          cp README.md LICENSE CONTRIBUTORS NOTICE ./esm
+
+          # Copy TypeScript definitions to esm directory:
+          if [ -e ./docs/types/index.d.ts ]; then
+            cp ./docs/types/index.d.ts ./esm/index.d.ts
+          fi
+          if [ -d index.d.ts ]; then
+            cp index.d.ts ./esm/index.d.ts
+          fi
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+        timeout-minutes: 5
+      - name: Install production and development dependencies
+        id: install
+        run: |
+          npm install || npm install || npm install
+        timeout-minutes: 15
+      - name: Create ES Module (ESM) bundle
+        id: esm-bundle
+        uses: stdlib-js/bundle-action@main
+        with:
+          target: 'esm'
+      - name: Rewrite file contents
+        run: |
+
+          # Replace links to other packages with links to the esm branch:
+          find ./esm -type f -name '*.md' -print0 | xargs -0 sed -Ei "/\/tree\/main/b; /^\[@stdlib[^:]+: https:\/\/github.com\/stdlib-js\// s/(.*)/\\1\/tree\/esm/";
+
+          # Replace reference to `@stdlib/types` with esm link:
+          find ./esm -type f -name '*.ts' -print0 | xargs -0 sed -Ei "s/\/\/\/ <reference types=\"@stdlib\/types\"\/>/\/\/\/ <reference types=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/types@esm\/index.d.ts\"\/>/g"
+
+          # Change wording of project description to avoid reference to JavaScript and Node.js:
+          find ./esm -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/a standard library for JavaScript and Node.js, /a standard library /g"
+
+          # Rewrite all `require()`s to use jsDelivr links:
+          find ./esm -type f -name '*.md' -print0 | xargs -0 sed -Ei "/require\( '@stdlib\// {
+              s/(var|let|const)\s+([a-z0-9]+)\s+=\s*require\( '([^']+)' \);/import \2 from \'\3\';/i
+              s/@stdlib/https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js/
+              s/';/@esm\/index.mjs';/
+          }"
+
+          # Remove `installation`, `cli`, and `c` sections:
+          find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"installation\">[^<]+<\/section>//g;"
+          find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"cli\">[\s\S]+<\!\-\- \/.cli \-\->//g"
+          find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"c\">[\s\S]+<\!\-\- \/.c \-\->//g"
+
+      - name: Publish to esm branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./esm
+          publish_branch: esm
+          keep_files: true
+          user_name: 'stdlib-bot'
+          user_email: 'noreply@stdlib.io'
+          commit_message: 'Auto-generated commit'
+          enable_jekyll: true
