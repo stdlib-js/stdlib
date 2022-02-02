@@ -185,6 +185,9 @@ jobs:
           find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"cli\">[\s\S]+<\!\-\- \/.cli \-\->//g"
           find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"c\">[\s\S]+<\!\-\- \/.c \-\->//g"
 
+          # Rewrite examples section to be a HTML file:
+          find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\#\# Examples([\s\S]*)\`\`\`javascript([\s\S]+?)\`\`\`/\#\# Examples\1\`\`\`html\n<\!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<script type=\"module\">\n\2\n<\/script>\n<\/head>\n<\/html>\n\`\`\`/g"
+
       - name: Publish to esm branch
         uses: peaceiris/actions-gh-pages@v3
         with:
