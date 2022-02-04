@@ -138,6 +138,9 @@ jobs:
           # Rewrite all `require()`s in the examples section as `script` tags loading the respective UMD bundle:
           find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "1 while s/<script type=\"text\/javascript\">\n(var|let|const)\s+([a-zA-Z0-9_]+)\s+=\s*require\( '\@stdlib\/([^']+)' \);?/<script type=\"text\/javascript\" src=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/bundle.js\"><\/script>\n<script type=\"text\/javascript\">/g"
 
+          # Wrap contents of `<script type="text/javascript">` tag contents in an IIFE:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<script type=\"text\/javascript\">([\s\S]+?)<\/script>/<script type=\"text\/javascript\">\n\(function \(\) {\1}\)\(\)\n<\/script>/g"
+
       - name: Publish to umd branch
         uses: peaceiris/actions-gh-pages@v3
         with:
