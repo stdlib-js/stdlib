@@ -126,6 +126,15 @@ jobs:
           find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"cli\">[\s\S]+<\!\-\- \/.cli \-\->//g"
           find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"c\">[\s\S]+<\!\-\- \/.c \-\->//g"
 
+          # Rewrite first `require()` to show consumption of the UMD bundle in Observable and via a `script` tag:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`javascript\n(var|let|const)\s+([a-z0-9_]+)\s+=\s*require\( '\@stdlib\/([^']+)' \);\n\`\`\`/To use in Observable,\n\n\`\`\`javascript\n\2 = require\( 'https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/bundle.js' \)\n\`\`\`\n\nTo include the bundle in a webpage,\n\n\`\`\`html\n<script type=\"text\/javascript\" src=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/bundle.js\"><\/script>\n\`\`\`\n\nIf no recognized module system is present, access bundle contents via the global scope:\n\n\`\`\`html\n<script type=\"text\/javascript\">\n    window.\2;\n<\/script>\n\`\`\`/"
+
+          # Rewrite examples section to be a HTML file:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\#\# Examples([\s\S]*)\`\`\`javascript([\s\S]+?)\`\`\`/\#\# Examples\1\`\`\`html\n<\!DOCTYPE html>\n<html lang=\"en\">\n<body>\n<script type=\"text\/javascript\">\2\n<\/script>\n<\/body>\n<\/html>\n\`\`\`/"
+
+          # Rewrite all `require()`s in the examples section as `script` tags loading the respective UMD bundle:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "1 while s/<script type=\"text\/javascript\">\n(var|let|const)\s+([a-z0-9_]+)\s+=\s*require\( '\@stdlib\/([^']+)' \);?/<script type=\"text\/javascript\" src=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/bundle.js\"><\/script>\n<script type=\"text\/javascript\">/g"
+
       - name: Publish to umd branch
         uses: peaceiris/actions-gh-pages@v3
         with:
