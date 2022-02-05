@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Computes the hyperbolic arccosine of a number.
+
+    If `x < 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Hyperbolic arccosine (in radians).
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    0.0
+    > y = {{alias}}( 2.0 )
+    ~1.317
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+
