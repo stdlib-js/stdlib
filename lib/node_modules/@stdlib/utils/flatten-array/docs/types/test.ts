@@ -24,27 +24,28 @@ import flattenArray = require( './index' );
 // The function returns an array...
 {
 	const arr = [ 1, [2, [3, [4, [ 5 ], 6], 7], 8], 9 ];
+
 	flattenArray( arr ); // $ExpectType any[]
 }
 
-// The compiler throws an error if the function is provided a first argument which is not an array...
+// The compiler throws an error if the function is provided a first argument which is not an array-like object...
 {
-	flattenArray( 'abc' ); // $ExpectError
 	flattenArray( 123 ); // $ExpectError
 	flattenArray( null ); // $ExpectError
 	flattenArray( {} ); // $ExpectError
-	flattenArray( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an object...
 {
 	const arr = [ 1, [2, [3, [4, [ 5 ], 6], 7], 8], 9 ];
+
 	flattenArray( arr, null ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a `copy` option which is not a boolean...
 {
 	const arr = [ 1, [2, [3, [4, [ 5 ], 6], 7], 8], 9 ];
+
 	flattenArray( arr, { 'copy': '5' } ); // $ExpectError
 	flattenArray( arr, { 'copy': 123 } ); // $ExpectError
 	flattenArray( arr, { 'copy': null } ); // $ExpectError
@@ -56,6 +57,7 @@ import flattenArray = require( './index' );
 // The compiler throws an error if the function is provided a `depth` option which is not a number...
 {
 	const arr = [ 1, [2, [3, [4, [ 5 ], 6], 7], 8], 9 ];
+
 	flattenArray( arr, { 'depth': true } ); // $ExpectError
 	flattenArray( arr, { 'depth': false } ); // $ExpectError
 	flattenArray( arr, { 'depth': 'abc' } ); // $ExpectError
@@ -72,12 +74,13 @@ import flattenArray = require( './index' );
 
 // Attached to main export is a `factory` method which returns a function...
 {
-	flattenArray.factory( [ 2, 2 ] ); // $ExpectType Unary
+	flattenArray.factory( [ 2, 2 ] ); // $ExpectType FlattenFunction
 }
 
 // The `factory` method returns a function which returns an array...
 {
 	const fcn = flattenArray.factory( [ 2, 2 ] );
+
 	fcn( [ [ 1, 2 ], [ 3, 4 ] ] ); // $ExpectType any[]
 }
 
@@ -98,6 +101,7 @@ import flattenArray = require( './index' );
 // The compiler throws an error if the `factory` method is provided a `copy` option which is not a boolean...
 {
 	const dims = [ 2, 2 ];
+
 	flattenArray.factory( dims, { 'copy': '5' } ); // $ExpectError
 	flattenArray.factory( dims, { 'copy': 123 } ); // $ExpectError
 	flattenArray.factory( dims, { 'copy': null } ); // $ExpectError
@@ -109,18 +113,18 @@ import flattenArray = require( './index' );
 // The compiler throws an error if the function returned by the `factory` method is provided invalid arguments...
 {
 	const fcn = flattenArray.factory( [ 2, 2 ] );
+
 	fcn( true ); // $ExpectError
 	fcn( false ); // $ExpectError
-	fcn( '5' ); // $ExpectError
 	fcn( 123 ); // $ExpectError
 	fcn( {} ); // $ExpectError
-	fcn( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function returned by the `factory` method is provided an unsupported number of arguments...
 {
 	const arr = [ [ 1, 2 ], [ 3, 4 ] ];
 	const fcn = flattenArray.factory( [ 2, 2 ] );
+
 	fcn(); // $ExpectError
 	fcn( arr, 0 ); // $ExpectError
 }
