@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { ArrayLike } from '@stdlib/types/array';
+
 /**
 * Determines (nested) array dimensions.
 *
@@ -42,7 +46,7 @@
 * var shape = arrayShape( arr );
 * // returns [ 3 ]
 */
-declare function arrayShape( arr: Array<any> ): Array<number>;
+declare function arrayShape( arr: ArrayLike<any> ): Array<number>;
 
 
 // EXPORTS //

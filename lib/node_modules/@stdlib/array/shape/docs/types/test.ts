@@ -18,11 +18,22 @@
 
 import arrayShape = require( './index' );
 
+
 // TESTS //
 
 // The function returns an array of numbers..
 {
 	arrayShape( [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] ); // $ExpectType number[]
+}
+
+// The compiler throws an error if not provided an array-like object...
+{
+	arrayShape( 5 ); // $ExpectError
+	arrayShape( false ); // $ExpectError
+	arrayShape( true ); // $ExpectError
+	arrayShape( null ); // $ExpectError
+	arrayShape( undefined ); // $ExpectError
+	arrayShape( {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...

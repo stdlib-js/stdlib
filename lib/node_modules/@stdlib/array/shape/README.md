@@ -91,11 +91,8 @@ var shape = arrayShape( arr );
 ```javascript
 var arrayShape = require( '@stdlib/array/shape' );
 
-var shape;
-var arr;
-
-arr = [ 1, 2, 3 ];
-shape = arrayShape( arr );
+var arr = [ 1, 2, 3 ];
+var shape = arrayShape( arr );
 // returns [ 3 ]
 
 arr = [
