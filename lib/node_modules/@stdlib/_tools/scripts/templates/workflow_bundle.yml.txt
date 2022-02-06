@@ -90,6 +90,13 @@ jobs:
           user_email: 'noreply@stdlib.io'
           commit_message: 'Auto-generated commit'
           enable_jekyll: true
+      - name: Send status to Slack channel in case of failure
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
   umd:
     runs-on: ubuntu-latest
     steps:
@@ -152,6 +159,13 @@ jobs:
           user_email: 'noreply@stdlib.io'
           commit_message: 'Auto-generated commit'
           enable_jekyll: true
+      - name: Send status to Slack channel in case of failure
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
   esm:
     runs-on: ubuntu-latest
     steps:
@@ -220,3 +234,10 @@ jobs:
           user_email: 'noreply@stdlib.io'
           commit_message: 'Auto-generated commit'
           enable_jekyll: true
+      - name: Send status to Slack channel in case of failure
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
