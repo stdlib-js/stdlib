@@ -39,6 +39,9 @@ jobs:
       - name: Replace all GitHub links to individual packages with npm links
         run: |
           find . -type f -name '*.md' -print0 | xargs -0 sed -Ei '/tree\/main/b; s/@stdlib\/([^:]*)\]: https:\/\/github.com\/stdlib-js/@stdlib\/\1\]: https:\/\/www.npmjs.com\/package\/@stdlib/g'
+      - name: Replace list with links to other branches from installation section
+        run: |
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`\n\nAlternatively,[^<]+<\/section>/\`\`\`\n\n<\/section>/"
       - name: Replace all stdlib GitHub dependencies with the respective npm packages
         run: |
           find package.json -type f -print0 | xargs -0 sed -Ei 's/"github:stdlib-js[^"]*"/"^0.0.x"/g'
