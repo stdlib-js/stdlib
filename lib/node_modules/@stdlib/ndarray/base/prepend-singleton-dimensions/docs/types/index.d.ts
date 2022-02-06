@@ -26,6 +26,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * Returns an array with a specified number of prepended singleton dimensions.
 *
 * @param x - input array
+* @param n - number of singleton dimensions to prepend
 * @returns output array
 *
 * @example
