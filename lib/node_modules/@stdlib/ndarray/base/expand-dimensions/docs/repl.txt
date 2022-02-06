@@ -1,0 +1,48 @@
+
+{{alias}}( x, axis )
+    Expands the shape of an array by inserting a new dimension of size one at a
+    specified axis.
+
+    A provided axis must reside on the interval `[-N-1, N]`, where `N` is the
+    rank (i.e., number of dimensions) of the provided input array.
+
+    If provided a negative axis value, the axis position at which to insert a
+    singleton dimension is computed as `N + axis + 1`. Hence, if provided `-1`,
+    the resolved axis position is `N` (i.e., a singleton dimension is appended
+    to the input array).
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    axis: integer
+        Axis at which to insert a singleton dimension.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > var sh = x.shape
+    [ 2, 2 ]
+    > var y = {{alias}}( x, 1 )
+    <ndarray>
+    > sh = y.shape
+    [ 2, 1, 2 ]
+    > var v = y.get( 0, 0, 0 )
+    1
+    > v = y.get( 0, 0, 1 )
+    2
+    > v = y.get( 1, 0, 0 )
+    3
+    > v = y.get( 1, 0, 1 )
+    4
+
+    See Also
+    --------
+
