@@ -46,7 +46,7 @@ Returns a list of array data types.
 
 ```javascript
 var out = dtypes();
-// returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
+// e.g., returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
 ```
 
 The output `array` contains the following data types:
