@@ -2307,6 +2307,11 @@ declare module '@stdlib/types/object' {
 	type Collection = Array<any> | TypedArray | ArrayLike<any>;
 
 	/**
+	* Complex number data type.
+	*/
+	type ComplexDataType = 'complex64' | 'complex128';
+
+	/**
 	* A complex number-like object.
 	*
 	* @example
