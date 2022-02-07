@@ -2333,6 +2333,7 @@ complexarray,"var arr = complexarray()\narr = complexarray( 'complex64' )\nvar a
 complexarrayCtors,"var ctor = complexarrayCtors( 'complex64' )\nctor = complexarrayCtors( 'float32' )\n"
 complexarrayDataTypes,"var out = complexarrayDataTypes()\n"
 complexCtors,"var ctor = complexCtors( 'complex128' )\nctor = complexCtors( 'complex' )\n"
+complexDataType,"var v = new Complex128( 1.0, 2.0 );\nvar dt = complexDataType( v )\ndt = complexDataType( 'beep' )\n"
 complexDataTypes,"var out = complexDataTypes()\n"
 compose,"function a( x ) {\nreturn 2 * x;\n }\nfunction b( x ) {\nreturn x + 3;\n }\nfunction c( x ) {\nreturn x / 5;\n }\nvar f = compose( c, b, a );\nvar z = f( 6 )\n"
 composeAsync,"function a( x, next ) {\nsetTimeout( onTimeout, 0 );\nfunction onTimeout() {\n    next( null, 2*x );\n}\n };\nfunction b( x, next ) {\nsetTimeout( onTimeout, 0 );\nfunction onTimeout() {\n    next( null, x+3 );\n}\n };\nfunction c( x, next ) {\nsetTimeout( onTimeout, 0 );\nfunction onTimeout() {\n    next( null, x/5 );\n}\n };\nvar f = composeAsync( c, b, a );\nfunction done( error, result ) {\nif ( error ) {\n    throw error;\n}\nconsole.log( result );\n };\nf( 6, done )\n"

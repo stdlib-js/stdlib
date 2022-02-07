@@ -2333,6 +2333,7 @@ complexarray,"\ncomplexarray( [dtype:string] )\n    Creates a complex typed arra
 complexarrayCtors,"\ncomplexarrayCtors( dtype:string )\n    Returns a complex typed array constructor.\n"
 complexarrayDataTypes,"\ncomplexarrayDataTypes()\n    Returns a list of complex typed array data types.\n"
 complexCtors,"\ncomplexCtors( dtype:string )\n    Returns a complex number constructor.\n"
+complexDataType,"\ncomplexDataType( value:any )\n    Returns the data type of a complex number object.\n"
 complexDataTypes,"\ncomplexDataTypes()\n    Returns a list of complex number data types.\n"
 compose,"\ncompose( ...f:Function )\n    Function composition.\n"
 composeAsync,"\ncomposeAsync( ...f:Function )\n    Function composition.\n"

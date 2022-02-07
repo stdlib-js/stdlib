@@ -2341,6 +2341,7 @@ complexarray,"complexarray( buffer:ArrayBuffer[, byteOffset:integer[, length:int
 complexarrayCtors,"complexarrayCtors( dtype:string )"
 complexarrayDataTypes,"complexarrayDataTypes()"
 complexCtors,"complexCtors( dtype:string )"
+complexDataType,"complexDataType( value:any )"
 complexDataTypes,"complexDataTypes()"
 compose,"compose( ...f:Function )"
 composeAsync,"composeAsync( ...f:Function )"

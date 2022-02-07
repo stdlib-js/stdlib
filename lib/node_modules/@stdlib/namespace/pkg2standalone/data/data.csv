@@ -1314,6 +1314,7 @@
 "@stdlib/complex/ctors","@stdlib/complex-ctors"
 "@stdlib/complex/dtype","@stdlib/complex-dtype"
 "@stdlib/complex/dtypes","@stdlib/complex-dtypes"
+"@stdlib/complex/promotion-rules","@stdlib/complex-promotion-rules"
 "@stdlib/utils/compose","@stdlib/utils-compose"
 "@stdlib/utils/async/compose","@stdlib/utils-async-compose"
 "@stdlib/os/configdir","@stdlib/os-configdir"

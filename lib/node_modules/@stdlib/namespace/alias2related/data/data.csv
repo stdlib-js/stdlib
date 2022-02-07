@@ -1314,6 +1314,7 @@ complexarrayDataTypes,"arrayDataTypes,typedarrayDataTypes,realarrayDataTypes,nda
 complexCtors,"complexarrayCtors"
 complexDataType,"arrayDataType"
 complexDataTypes,"complexarrayDataTypes"
+complexPromotionRules,"arrayPromotionRules,ndarrayPromotionRules"
 compose,"composeAsync"
 composeAsync,"compose"
 configdir,"homedir,tmpdir"
