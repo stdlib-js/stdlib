@@ -72,6 +72,11 @@ declare module '@stdlib/types/array' {
 	type ComplexDataType = 'complex64' | 'complex128';
 
 	/**
+	* Data type for floating-point real or complex typed arrays.
+	*/
+	type FloatOrComplexDataType = FloatDataType | ComplexDataType;
+
+	/**
 	* Data type for real-valued or complex number typed arrays.
 	*/
 	type RealOrComplexDataType = RealDataType | ComplexDataType;
@@ -238,6 +243,14 @@ declare module '@stdlib/types/array' {
 	* const y: RealOrComplexArray = [ 1, 2, 3 ];
 	*/
 	type RealOrComplexArray = NumericArray | ComplexTypedArray;
+
+	/**
+	* A floating-point real or complex typed array.
+	*
+	* @example
+	* const x: FloatOrComplexTypedArray = new Float64Array( 10 );
+	*/
+	type FloatOrComplexTypedArray = FloatTypedArray | ComplexTypedArray;
 
 	/**
 	* A real or complex typed array.
@@ -603,7 +616,7 @@ declare module '@stdlib/types/iter' {
 * };
 */
 declare module '@stdlib/types/ndarray' {
-	import { ArrayLike, AccessorArrayLike, Complex128Array, Complex64Array, RealOrComplexTypedArray, RealTypedArray, ComplexTypedArray, IntegerTypedArray, FloatTypedArray, SignedIntegerTypedArray, UnsignedIntegerTypedArray } from '@stdlib/types/array'; // tslint:disable-line:max-line-length
+	import { ArrayLike, AccessorArrayLike, Complex128Array, Complex64Array, RealOrComplexTypedArray, FloatOrComplexTypedArray, RealTypedArray, ComplexTypedArray, IntegerTypedArray, FloatTypedArray, SignedIntegerTypedArray, UnsignedIntegerTypedArray } from '@stdlib/types/array'; // tslint:disable-line:max-line-length
 	import { ComplexLike, Complex128, Complex64 } from '@stdlib/types/object';
 
 	/**
@@ -640,6 +653,11 @@ declare module '@stdlib/types/ndarray' {
 	* Data type for complex number ndarrays.
 	*/
 	type ComplexDataType = 'complex64' | 'complex128';
+
+	/**
+	* Data type for floating-point real or complex ndarrays.
+	*/
+	type FloatOrComplexDataType = FloatDataType | ComplexDataType;
 
 	/**
 	* Data type for real-valued or complex number ndarrays.
@@ -1842,6 +1860,80 @@ declare module '@stdlib/types/ndarray' {
 		* @returns ndarray instance
 		*/
 		set( ...args: Array<number | ComplexLike> ): realcomplexndarray;
+	}
+
+	/**
+	* Interface describing an ndarray having a floating-point real or complex number data type.
+	*
+	* @example
+	* const arr: floatcomplexndarray = {
+	*     'byteLength': 24,
+	*     'BYTES_PER_ELEMENT': 8,
+	*     'data': new Float64Array( [ 1, 2, 3 ] ),
+	*     'dtype': 'float64',
+	*     'flags': {
+	*         'ROW_MAJOR_CONTIGUOUS': true,
+	*         'COLUMN_MAJOR_CONTIGUOUS': false
+	*     },
+	*     'length': 3,
+	*     'ndims': 1,
+	*     'offset': 0,
+	*     'order': 'row-major',
+	*     'shape': [ 3 ],
+	*     'strides': [ 1 ],
+	*     'get': function get( i ) {
+	*         return this.data[ i ];
+	*     },
+	*     'set': function set( i, v ) {
+	*         this.data[ i ] = v;
+	*         return this;
+	*     }
+	* };
+	*/
+	interface floatcomplexndarray extends ndarray { // tslint:disable-line:class-name
+		/**
+		* Size (in bytes) of the array.
+		*/
+		byteLength: number;
+
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: number;
+
+		/**
+		* A reference to the underlying data buffer.
+		*/
+		data: FloatOrComplexTypedArray;
+
+		/**
+		* Underlying data type.
+		*/
+		dtype: FloatOrComplexDataType;
+
+		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): number | ComplexLike | void;
+
+		/**
+		* Sets an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts and value to set
+		* @returns ndarray instance
+		*/
+		set( ...args: Array<number | ComplexLike> ): floatcomplexndarray;
 	}
 
 	/**
