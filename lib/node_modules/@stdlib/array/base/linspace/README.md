@@ -49,7 +49,7 @@ var arr = linspace( 0, 100, 6 );
 
 -   The function assumes that `length` is greater than or equal to `2`.
 
--   The output `array` is guaranteed to include the `start` and `stop` values. Beware, however, that values between the `start` and `stop` are subject to floating-point rounding errors. Hence,
+-   The output `array` is guaranteed to include the `start` and `stop` values. Beware, however, that values between `start` and `stop` are subject to floating-point rounding errors. Hence,
 
     ```javascript
     var arr = linspace( 0, 1, 3 );
