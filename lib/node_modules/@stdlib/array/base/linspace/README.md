@@ -47,19 +47,21 @@ var arr = linspace( 0, 100, 6 );
 
 ## Notes
 
--   The output `array` is guaranteed to include the `start` and `stop` values. Beware, however, that values between the `start` and `stop` are subject to floating-point errors. Hence,
+-   The function assumes that `length` is greater than or equal to `2`.
+
+-   The output `array` is guaranteed to include the `start` and `stop` values. Beware, however, that values between the `start` and `stop` are subject to floating-point rounding errors. Hence,
 
     ```javascript
     var arr = linspace( 0, 1, 3 );
     // returns [ 0, ~0.5, 1 ]
     ```
 
-    where `arr[1]` is only guaranteed to be approximately equal to `0.5`. If you desire more control over element precision, consider using [roundn][@stdlib/math/base/special/roundn]:
+    where `arr[1]` is only guaranteed to be approximately equal to `0.5`. If you desire more control over element precision, consider using [`roundn`][@stdlib/math/base/special/roundn]:
 
     ```javascript
     var roundn = require( '@stdlib/math/base/special/roundn' );
 
-    // Create an array subject to floating-point errors:
+    // Create an array subject to floating-point rounding errors:
     var arr = linspace( 0, 1, 21 );
 
     // Round each value to the nearest hundredth:
@@ -83,15 +85,19 @@ var arr = linspace( 0, 100, 6 );
 ```javascript
 var linspace = require( '@stdlib/array/base/linspace' );
 
+// Create arrays of varying lengths:
 var out = linspace( 0, 10, 10 );
-console.log( out.join( '\n' ) );
+console.log( out );
 
 out = linspace( 0, 10, 11 );
-console.log( out.join( '\n' ) );
+console.log( out );
+
+out = linspace( 0, 10, 21 );
+console.log( out );
 
 // Create an array with decremented values:
 out = linspace( 10, 0, 11 );
-console.log( out.join( '\n' ) );
+console.log( out );
 ```
 
 </section>
