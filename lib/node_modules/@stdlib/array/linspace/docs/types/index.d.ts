@@ -47,7 +47,7 @@ interface Options extends BaseOptions {
 	* ## Notes
 	*
 	* -   Must be a floating-point data type or `'generic'`.
-	* -    If both `start` and `stop` are the same type (either `'float64'`, `'complex64'`, or `'complex128'`), the default output array data type is the same type as the input values (either `'float64'`, `'complex64'`, or `'complex128'`, respectively). Otherwise, the default output array data type is `'complex128'`.
+	* -   If both `start` and `stop` are the same type (either `'float64'`, `'complex64'`, or `'complex128'`), the default output array data type is the same type as the input values (either `'float64'`, `'complex64'`, or `'complex128'`, respectively). Otherwise, the default output array data type is `'complex128'`.
 	*/
 	dtype?: DataType;
 }
