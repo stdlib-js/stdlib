@@ -70,6 +70,7 @@ base.add,"var v = base.add( -1.0, 5.0 )\nv = base.add( 2.0, 5.0 )\nv = base.add(
 base.addf,"var v = base.addf( -1.0, 5.0 )\nv = base.addf( 2.0, 5.0 )\nv = base.addf( 0.0, 5.0 )\nv = base.addf( -0.0, 0.0 )\nv = base.addf( NaN, NaN )\n"
 base.ahavercos,"var y = base.ahavercos( 0.5 )\ny = base.ahavercos( 0.0 )\n"
 base.ahaversin,"var y = base.ahaversin( 0.5 )\ny = base.ahaversin( 0.0 )\n"
+base.asech,"var y = base.asech( 1.0 )\ny = base.asech( 0.5 )\ny = base.asech( NaN )\n"
 base.asin,"var y = base.asin( 0.0 )\ny = base.asin( PI/2.0 )\ny = base.asin( -PI/6.0 )\ny = base.asin( NaN )\n"
 base.asinh,"var y = base.asinh( 0.0 )\ny = base.asinh( 2.0 )\ny = base.asinh( -2.0 )\ny = base.asinh( NaN )\ny = base.asinh( NINF )\ny = base.asinh( PINF )\n"
 base.atan,"var y = base.atan( 0.0 )\ny = base.atan( -PI/2.0 )\ny = base.atan( PI/2.0 )\ny = base.atan( NaN )\n"
