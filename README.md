@@ -229,12 +229,12 @@ graph TB
     C1 -- No --> H
     C1 -- Yes --> L
 
-    click G https://github.com/stdlib-js/stdlib#command-line-utility
-    click H https://github.com/stdlib-js/stdlib#individual-packages
-    click I https://github.com/stdlib-js/stdlib#custom-bundles
-    click J https://github.com/stdlib-js/stdlib#browser-bundles
-    click L https://github.com/stdlib-js/stdlib#namespaces
-    click K https://github.com/stdlib-js/stdlib#system-library
+    click G href "https://github.com/stdlib-js/stdlib#command-line-utility"
+    click H href "https://github.com/stdlib-js/stdlib#individual-packages"
+    click I href "https://github.com/stdlib-js/stdlib#custom-bundles"
+    click J href "https://github.com/stdlib-js/stdlib#browser-bundles"
+    click L href "https://github.com/stdlib-js/stdlib#namespaces"
+    click K href "https://github.com/stdlib-js/stdlib#system-library"
 ```
    
 <a name="install_complete_library"></a>
