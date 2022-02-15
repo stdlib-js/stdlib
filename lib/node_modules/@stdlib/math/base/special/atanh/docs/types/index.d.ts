@@ -22,7 +22,7 @@
 * Computes the hyperbolic arctangent of a number.
 *
 * @param x - input value
-* @returns hyperbolic arctangent (in radians)
+* @returns hyperbolic arctangent
 *
 * @example
 * var v = atanh( 0.0 );

@@ -22,7 +22,7 @@
 * Computes the hyperbolic arccosine of a number.
 *
 * @param x - input value
-* @returns hyperbolic arccosine (in radians)
+* @returns hyperbolic arccosine
 *
 * @example
 * var v = acosh( 1.0 );

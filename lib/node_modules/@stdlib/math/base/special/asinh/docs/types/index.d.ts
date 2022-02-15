@@ -22,7 +22,7 @@
 * Computes the hyperbolic arcsine of a number.
 *
 * @param x - input value
-* @returns hyperbolic arcsine (in radians)
+* @returns hyperbolic arcsine
 *
 * @example
 * var v = asinh( 0.0 );

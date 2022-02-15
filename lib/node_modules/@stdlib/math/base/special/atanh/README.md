@@ -32,7 +32,7 @@ var atanh = require( '@stdlib/math/base/special/atanh' );
 
 #### atanh( x )
 
-Computes the [hyperbolic arctangent][hyperbolic-arctangent] of a `number` (in radians).
+Computes the [hyperbolic arctangent][hyperbolic-arctangent] of `x`.
 
 ```javascript
 var v = atanh( 0.0 );

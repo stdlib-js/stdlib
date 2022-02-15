@@ -22,7 +22,7 @@
 * Computes the inverse hyperbolic cotangent of a number.
 *
 * @param x - input value
-* @returns inverse hyperbolic cotangent (in radians)
+* @returns inverse hyperbolic cotangent
 *
 * @example
 * var v = acoth( 2.0 );

@@ -10,7 +10,7 @@
     Returns
     -------
     y: number
-        Hyperbolic arcsine (in radians).
+        Hyperbolic arcsine.
 
     Examples
     --------

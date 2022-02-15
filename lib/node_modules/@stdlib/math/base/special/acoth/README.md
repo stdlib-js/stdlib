@@ -32,7 +32,7 @@ var acoth = require( '@stdlib/math/base/special/acoth' );
 
 #### acoth( x )
 
-Computes the [inverse hyperbolic cotangent][hyperbolic-arctangent] of a `number` (in radians).
+Computes the [inverse hyperbolic cotangent][hyperbolic-arctangent] of `x`.
 
 ```javascript
 var v = acoth( 2.0 );

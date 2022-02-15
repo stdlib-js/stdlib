@@ -32,7 +32,7 @@ var asinh = require( '@stdlib/math/base/special/asinh' );
 
 #### asinh( x )
 
-Computes the [hyperbolic arcsine][hyperbolic-arcsine] of a `number` (in radians).
+Computes the [hyperbolic arcsine][hyperbolic-arcsine] of `x`.
 
 ```javascript
 var v = asinh( 0.0 );

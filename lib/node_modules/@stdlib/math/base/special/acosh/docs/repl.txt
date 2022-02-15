@@ -12,7 +12,7 @@
     Returns
     -------
     y: number
-        Hyperbolic arccosine (in radians).
+        Hyperbolic arccosine.
 
     Examples
     --------

@@ -32,7 +32,7 @@ var cosh = require( '@stdlib/math/base/special/cosh' );
 
 #### cosh( x )
 
-Computes the [hyperbolic cosine][hyperbolic-cosine] of a `number` (in radians).
+Computes the [hyperbolic cosine][hyperbolic-cosine] of `x`.
 
 ```javascript
 var v = cosh( 0.0 );

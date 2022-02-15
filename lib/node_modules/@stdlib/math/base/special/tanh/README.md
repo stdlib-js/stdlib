@@ -32,7 +32,7 @@ var tanh = require( '@stdlib/math/base/special/tanh' );
 
 #### tanh( x )
 
-Computes the [hyperbolic tangent][hyperbolic-tangent] of a `number` (in radians).
+Computes the [hyperbolic tangent][hyperbolic-tangent] of `x`.
 
 ```javascript
 var v = tanh( 0.0 );

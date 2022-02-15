@@ -32,7 +32,7 @@ var sinh = require( '@stdlib/math/base/special/sinh' );
 
 #### sinh( x )
 
-Computes the [hyperbolic sine][hyperbolic-sine] of a `number` (in radians).
+Computes the [hyperbolic sine][hyperbolic-sine] of `x`.
 
 ```javascript
 var v = sinh( 0.0 );

@@ -32,7 +32,7 @@ var acosh = require( '@stdlib/math/base/special/acosh' );
 
 #### acosh( x )
 
-Computes the [hyperbolic arccosine][hyperbolic-arccosine] of a `number` (in radians).
+Computes the [hyperbolic arccosine][hyperbolic-arccosine] of `x`.
 
 ```javascript
 var v = acosh( 1.0 );
