@@ -187,7 +187,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   Install the project as a [system library](#install_system_library) by cloning this repository and following the [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
 
 The following flowchart provides a summary:
-   
+    
 ```mermaid
 graph LR
     Z((Start))
@@ -223,17 +223,17 @@ graph LR
     C1 -- No ---> H
     C1 -- Yes ---> L
 
-    Z --> D -----> M
+    Z --> D ----> M
     Z --> A -----> G
     Z --> F -----> K
     Z --> E -----> J
 
-    click G href "https://github.com/stdlib-js/stdlib#command-line-utility"
-    click H href "https://github.com/stdlib-js/stdlib#individual-packages"
-    click I href "https://github.com/stdlib-js/stdlib#custom-bundles"
-    click J href "https://github.com/stdlib-js/stdlib#browser-bundles"
-    click L href "https://github.com/stdlib-js/stdlib#namespaces"
-    click K href "https://github.com/stdlib-js/stdlib#system-library"
+    click G href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#command-line-utility"
+    click H href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#individual-packages"
+    click I href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#custom-bundles"
+    click J href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#browser-bundles"
+    click L href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#namespaces"
+    click K href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#system-library"
  ```
     
 <a name="install_complete_library"></a>
