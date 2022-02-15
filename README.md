@@ -187,23 +187,21 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   Install the project as a [system library](#install_system_library) by cloning this repository and following the [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
 
 The following flowchart provides a summary:
-
-![diagram](https://user-images.githubusercontent.com/1913638/154143718-3d35d438-ef47-4a64-aefa-8052dbfb0d86.svg)
-
+   
 ```mermaid
-graph TB
+graph LR
     Z((Start))
 
-    A[I want to perform data analysis]
-    B[I am building a web app]
+    A([I want to perform data analysis])
+    B([I am building a web app])
     B1{{Using a bundler like Webpack?}}
     B2{{Need to support older browsers?}}
     B3{{Want to create a custom bundle?}}
-    C[I am building a Node.js server app]
+    C([I am building a Node.js server app])
     C1{{Will you use a substantial amount of stdlib?}}
-    D[I am using Deno]
-    E[I am writing an Observable notebook]
-    F[I want to hack at stdlib]
+    D([I am using Deno])
+    E([I am writing an Observable notebook])
+    F([I want to hack at stdlib])
 
     G[Install as command-line utility]
     H[Install individual packages]
@@ -213,13 +211,7 @@ graph TB
     L[Install top-level namespaces]
     M[Load ESM from Skypack / jsDelivr]
 
-    Z ----> A --> G
-    Z ---> B --> B1
-    Z ----> C --> C1
-    Z ----> D --> M
-    Z ---> E --> J
-    Z ----> F --> K
-
+    Z --> B --> B1
     B1 -- Yes --> C1
     B1 -- No --> B2
     B2 -- No --> M
@@ -227,8 +219,14 @@ graph TB
     B3 -- Yes --> I
     B3 -- No --> J
 
-    C1 -- No --> H
-    C1 -- Yes --> L
+    Z --> C ---> C1
+    C1 -- No ---> H
+    C1 -- Yes ---> L
+
+    Z --> D -----> M
+    Z --> A -----> G
+    Z --> F -----> K
+    Z --> E -----> J
 
     click G href "https://github.com/stdlib-js/stdlib#command-line-utility"
     click H href "https://github.com/stdlib-js/stdlib#individual-packages"
@@ -236,8 +234,8 @@ graph TB
     click J href "https://github.com/stdlib-js/stdlib#browser-bundles"
     click L href "https://github.com/stdlib-js/stdlib#namespaces"
     click K href "https://github.com/stdlib-js/stdlib#system-library"
-```
-   
+ ```
+    
 <a name="install_complete_library"></a>
 
 ### Complete Library
