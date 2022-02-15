@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ import acsc = require( './index' );
 	acsc( 8 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	acsc( true ); // $ExpectError
 	acsc( false ); // $ExpectError
@@ -38,7 +38,7 @@ import acsc = require( './index' );
 	acsc( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	acsc(); // $ExpectError
 }

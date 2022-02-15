@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/acsc",
   "version": "0.0.0",
-  "description": "Compute the arcsine of a number.",
+  "description": "Compute the arccosecant of a number.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -54,16 +54,14 @@
     "stdmath",
     "mathematics",
     "math",
-    "math.acsc",
     "acsc",
     "arcsine",
+    "arccosecant",
+    "cosecant",
     "sine",
     "inverse",
     "trig",
     "trigonometry",
-    "radians",
-    "angle",
-    "polyfill",
-    "ponyfill"
+    "angle"
   ]
 }

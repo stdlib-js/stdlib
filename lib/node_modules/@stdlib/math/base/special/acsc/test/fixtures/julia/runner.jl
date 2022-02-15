@@ -2,7 +2,7 @@
 #
 # @license Apache-2.0
 #
-# Copyright (c) 2018 The Stdlib Authors.
+# Copyright (c) 2022 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -60,14 +60,10 @@ file = @__FILE__;
 # Extract the directory in which this file resides:
 dir = dirname( file );
 
-# Generate fixture data for decimal values:
-x = range( -1.0, stop = 1.0, length = 2003 );
-gen( x, "data.json" );
+# Generate fixture data for negative values:
+x = range( -1.0, stop = -1000.0, length = 2003 );
+gen( x, "negative.json" );
 
-# Generate fixture data for small negative values:
-x = range( -1e-200, stop = -1e-208, length = 2003 );
-gen( x, "small_negative.json" );
-
-# Generate fixture data for small negative values:
-x = range( 1e-300, stop = 1e-308, length = 2003 );
-gen( x, "small_positive.json" );
+# Generate fixture data for positive values:
+x = range( 1.0, stop = 1000.0, length = 2003 );
+gen( x, "positive.json" );
