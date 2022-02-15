@@ -61,6 +61,7 @@
 "@stdlib/math/base/ops/addf","@stdlib/math-base-ops-addf"
 "@stdlib/math/base/special/ahavercos","@stdlib/math-base-special-ahavercos"
 "@stdlib/math/base/special/ahaversin","@stdlib/math-base-special-ahaversin"
+"@stdlib/math/base/special/asech","@stdlib/math-base-special-asech"
 "@stdlib/math/base/special/asin","@stdlib/math-base-special-asin"
 "@stdlib/math/base/special/asinh","@stdlib/math-base-special-asinh"
 "@stdlib/math/base/special/atan","@stdlib/math-base-special-atan"

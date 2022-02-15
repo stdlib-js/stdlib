@@ -61,6 +61,7 @@ base.add
 base.addf
 base.ahavercos
 base.ahaversin
+base.asech
 base.asin
 base.asinh
 base.atan
