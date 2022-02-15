@@ -189,6 +189,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 The following flowchart provides a summary:
     
 ```mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'dark', 'flowchart': { 'nodeSpacing': 20, 'rankSpacing': 20, 'useMaxWidth': false, 'defaultRenderer': 'dagre-wrapper', 'padding': 10, 'diagramPadding': 0, 'htmlLabels': true, 'curve': 'linear' } } }%%
 graph LR
     Z((Start))
 
