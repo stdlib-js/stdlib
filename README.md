@@ -189,7 +189,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 The following flowchart provides a summary:
     
 ```mermaid
-%%{init: { 'logLevel': 'debug', 'theme': 'dark', 'flowchart': { 'nodeSpacing': 20, 'rankSpacing': 20, 'useMaxWidth': false, 'defaultRenderer': 'dagre-wrapper', 'padding': 10, 'diagramPadding': 0, 'htmlLabels': true, 'curve': 'linear' } } }%%
+%%{init: { 'logLevel': 'debug', 'theme': 'dark', 'flowchart': { 'nodeSpacing': 30, 'rankSpacing': 10, 'useMaxWidth': true, 'defaultRenderer': 'dagre-d3', 'padding': 5, 'diagramPadding': 0, 'htmlLabels': true, 'curve': 'linear' } } }%%
 graph LR
     Z((Start))
 
@@ -197,11 +197,11 @@ graph LR
     B([I am building a web app])
     B1{{Using a bundler like Webpack?}}
     B2{{Need to support older browsers?}}
-    B3{{Want to create a custom bundle?}}
+    B3{{Want custom bundle?}}
     C([I am building a Node.js server app])
-    C1{{Will you use a substantial amount of stdlib?}}
+    C1{{Using a substantial amount of stdlib?}}
     D([I am using Deno])
-    E([I am writing an Observable notebook])
+    E([I work on an Observable notebook])
     F([I want to hack at stdlib])
 
     G[Install as command-line utility]
@@ -210,7 +210,7 @@ graph LR
     J[Use UMD browser bundles]
     K[Install system library]
     L[Install top-level namespaces]
-    M[Load ESM from Skypack / jsDelivr]
+    M[Load ESM from CDN]
 
     Z --> B --> B1
     B1 -- Yes --> C1
