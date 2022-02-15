@@ -3541,6 +3541,16 @@
       "sequence"
     ]
   },
+  "https://en.wikipedia.org/wiki/Trigonometric_functions": {
+    "id": "trigonometric-functions",
+    "description": "Wikipedia entry for trigonometric functions.",
+    "short_url": "",
+    "keywords": [
+      "trigonometry",
+      "trig",
+      "math"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Truncated_normal_distribution": {
     "id": "truncated-normal-distribution",
     "description": "Wikipedia entry for the truncated normal distribution.",
