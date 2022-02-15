@@ -85,7 +85,7 @@ x = range( pi, stop = 4.0*pi, length = 1000 );
 gen( x, "small_positive.json" );
 
 # Negative medium values:
-x = range( -4.0*pi, stop = 12.0*pi, length = 1000 );
+x = range( -4.0*pi, stop = -12.0*pi, length = 1000 );
 gen( x, "medium_negative.json" );
 
 # Positive medium values:
