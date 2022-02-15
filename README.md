@@ -188,6 +188,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
 The following flowchart provides a summary:
 
+![diagram](https://user-images.githubusercontent.com/1913638/154143718-3d35d438-ef47-4a64-aefa-8052dbfb0d86.svg)
 
 ```mermaid
 graph TB
