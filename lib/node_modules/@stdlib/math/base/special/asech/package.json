@@ -54,7 +54,6 @@
     "stdmath",
     "mathematics",
     "math",
-    "math.asech",
     "asech",
     "hyperbolic",
     "inverse",
@@ -62,11 +61,10 @@
     "cos",
     "arc",
     "arccosine",
+    "secant",
+    "arcsecant",
     "trig",
     "trigonometry",
-    "radians",
-    "angle",
-    "polyfill",
-    "ponyfill"
+    "angle"
   ]
 }

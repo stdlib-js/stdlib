@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,15 +22,15 @@
 * Computes the hyperbolic arcsecant of a number.
 *
 * @param x - input value
-* @returns hyperbolic arcsecant (in radians)
+* @returns hyperbolic arcsecant
 *
 * @example
 * var v = asech( 1.0 );
 * // returns 0.0
 *
 * @example
-* var v = asech( 2.0 );
-* // returns ~1.047
+* var v = asech( 0.5 );
+* // returns ~1.317
 *
 * @example
 * var v = asech( NaN );
