@@ -456,6 +456,51 @@ Already an expert?
     $ make init
     ```
 
+<!-- Project sponsors. If sponsors are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+* * *
+
+<section class="sponsors">
+
+## Sponsors
+
+stdlib development is generously supported by the following sponsors...
+
+<div class="image" align="center">
+    <a href="https://labs.quansight.org/">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
+    </a>
+    <br>
+</div>
+
+</section>
+
+<!-- /.sponsors -->
+
+<!-- Project users. If users are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+* * *
+
+<section class="users">
+
+## Users
+
+The following organizations and key stakeholders trust and depend on stdlib...
+
+<div class="image" align="center">
+    <a href="https://www.cmu.edu/">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/misc/cmu_logo.png" alt="Carnegie Mellon University">
+    </a>
+    <br>
+    <br>
+</div>
+
+Does your organization or company use stdlib? If so, we'd love to hear from you!
+
+</section>
+
+<!-- /.users -->
+
 * * *
 
 ## License
@@ -516,50 +561,6 @@ Copyright © 2016-2022. The Stdlib [Authors][stdlib-authors].
 </section>
 
 <!-- /.badges> -->
-
-<!-- Project sponsors. If sponsors are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-* * *
-
-<section class="sponsors">
-
-## Sponsors
-
-stdlib development is generously supported by the following sponsors...
-
-<div class="image" align="center">
-    <a href="https://labs.quansight.org/">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
-    </a>
-    <br>
-</div>
-
-</section>
-
-<!-- /.sponsors -->
-
-<!-- Project users. If users are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-* * *
-
-<section class="users">
-
-## Users
-
-The following organizations and key stakeholders trust and depend on stdlib...
-
-<div class="image" align="center">
-    <a href="https://www.cmu.edu/">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/misc/cmu_logo.png" alt="Carnegie Mellon University">
-    </a>
-    <br>
-</div>
-
-Do your organization or company use stdlib? If so, we'd love to hear from you!
-
-</section>
-
-<!-- /.users -->
 
 <!-- Project acknowledgments. If section is included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
