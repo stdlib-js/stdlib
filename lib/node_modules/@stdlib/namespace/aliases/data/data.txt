@@ -125,6 +125,7 @@ base.cos
 base.cosh
 base.cosm1
 base.cospi
+base.cot
 base.covercos
 base.coversin
 base.cphase

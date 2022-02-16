@@ -70,6 +70,7 @@ base.add,"\nbase.add( x:number, y:number )\n    Computes the sum of two double-p
 base.addf,"\nbase.addf( x:number, y:number )\n    Computes the sum of two single-precision floating-point numbers `x` and `y`.\n"
 base.ahavercos,"\nbase.ahavercos( x:number )\n    Computes the inverse half-value versed cosine.\n"
 base.ahaversin,"\nbase.ahaversin( x:number )\n    Computes the inverse half-value versed sine.\n"
+base.asech,"\nbase.asech( x:number )\n    Computes the hyperbolic arcsecant of a number.\n"
 base.asin,"\nbase.asin( x:number )\n    Computes the arcsine of a number.\n"
 base.asinh,"\nbase.asinh( x:number )\n    Computes the hyperbolic arcsine of a number.\n"
 base.atan,"\nbase.atan( x:number )\n    Computes the arctangent of a number.\n"
