@@ -134,6 +134,7 @@ base.cos,"var y = base.cos( 0.0 )\ny = base.cos( PI/4.0 )\ny = base.cos( -PI/6.0
 base.cosh,"var y = base.cosh( 0.0 )\ny = base.cosh( 2.0 )\ny = base.cosh( -2.0 )\ny = base.cosh( NaN )\n"
 base.cosm1,"var y = base.cosm1( 0.0 )\ny = base.cosm1( PI/4.0 )\ny = base.cosm1( -PI/6.0 )\ny = base.cosm1( NaN )\n"
 base.cospi,"var y = base.cospi( 0.0 )\ny = base.cospi( 0.5 )\ny = base.cospi( 0.1 )\ny = base.cospi( NaN )\n"
+base.cot,"var y = base.cot( 0.0 )\ny = base.cot( -PI/4.0 )\ny = base.cot( PI/4.0 )\ny = base.cot( NaN )\n"
 base.covercos,"var y = base.covercos( 3.14 )\ny = base.covercos( -4.2 )\ny = base.covercos( -4.6 )\ny = base.covercos( 9.5 )\ny = base.covercos( -0.0 )\n"
 base.coversin,"var y = base.coversin( 3.14 )\ny = base.coversin( -4.2 )\ny = base.coversin( -4.6 )\ny = base.coversin( 9.5 )\ny = base.coversin( -0.0 )\n"
 base.cphase,"var phi = base.cphase( 5.0, 3.0 )\n"

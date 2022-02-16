@@ -126,6 +126,7 @@
 "@stdlib/math/base/special/cosm1",base.cosm1
 "@stdlib/math/base/special/cospi",base.cospi
 "@stdlib/math/base/special/cot",base.cot
+"@stdlib/math/base/special/coth",base.coth
 "@stdlib/math/base/special/covercos",base.covercos
 "@stdlib/math/base/special/coversin",base.coversin
 "@stdlib/math/base/special/cphase",base.cphase
