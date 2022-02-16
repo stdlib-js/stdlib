@@ -189,7 +189,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 The following flowchart provides a summary:
     
 ```mermaid
-%%{init: { 'logLevel': 'debug', 'theme': 'dark', 'flowchart': { 'nodeSpacing': 30, 'rankSpacing': 10, 'useMaxWidth': true, 'defaultRenderer': 'dagre-d3', 'padding': 5, 'diagramPadding': 0, 'htmlLabels': true, 'curve': 'linear' } } }%%
+%%{init: { 'logLevel': 'debug', 'theme': 'dark', securityLevel:'loose', 'flowchart': { 'nodeSpacing': 30, 'rankSpacing': 10, 'useMaxWidth': true, 'defaultRenderer': 'dagre-d3', 'padding': 5, 'diagramPadding': 0, 'htmlLabels': true, 'curve': 'linear' } } }%%
 graph LR
     Z((Start))
 
@@ -217,24 +217,26 @@ graph LR
     B1 -- No --> B2
     B2 -- No --> M
     B2 -- Yes --> B3
-    B3 -- Yes --> I
-    B3 -- No --> J
+    B3 -- Yes --> I:::a
+    B3 -- No --> J:::a
 
     Z --> C ---> C1
-    C1 -- No ---> H
-    C1 -- Yes ---> L
+    C1 -- No ---> H:::a
+    C1 -- Yes ---> L:::a
 
-    Z --> D -----> M
-    Z --> A -----> G
-    Z --> F -----> K
-    Z --> E -----> J
+    Z --> D -----> M:::a
+    Z --> A -----> G:::a
+    Z --> F -----> K:::a
+    Z --> E -----> J:::a
 
-    click G href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#command-line-utility"
-    click H href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#individual-packages"
-    click I href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#custom-bundles"
-    click J href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#browser-bundles"
-    click L href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#namespaces"
-    click K href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#system-library"
+    click G href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#command-line-utility" "Jump to section"
+    click H href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#individual-packages" "Jump to section"
+    click I href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#custom-bundles" "Jump to section"
+    click J href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#browser-bundles" "Jump to section"
+    click L href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#namespaces" "Jump to section"
+    click K href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#system-library" "Jump to section"
+    
+    classDef a color:blue,fill:lightgray
  ```
     
 <a name="install_complete_library"></a>
