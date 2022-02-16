@@ -201,7 +201,7 @@ $ npm install @stdlib/stdlib
 Once installed, stdlib packages can be individually required/imported to minimize load times and decrease bundle sizes. For example, to use `require`
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var ndarray = require( '@stdlib/ndarray/array' );
 
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
@@ -212,7 +212,7 @@ and to use `import`
 <!-- run-disable -->
 
 ```javascript
-import ndarray from '@stdlib/ndarray/ctor';
+import ndarray from '@stdlib/ndarray/array';
 
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
@@ -229,13 +229,13 @@ To install individual packages, replace forward slashes `/` after `@stdlib/` wit
 <!-- run-disable -->
 
 ```bash
-$ npm install @stdlib/ndarray-ctor
+$ npm install @stdlib/ndarray-array
 ```
 
 Once installed, individual packages can be required/imported. For example, to use `require`
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray-ctor' );
+var ndarray = require( '@stdlib/ndarray-array' );
 
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
@@ -246,7 +246,7 @@ and to use `import`
 <!-- run-disable -->
 
 ```javascript
-import ndarray from '@stdlib/ndarray-ctor';
+import ndarray from '@stdlib/ndarray-array';
 
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
