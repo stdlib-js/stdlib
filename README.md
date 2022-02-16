@@ -489,7 +489,7 @@ The following organizations and key stakeholders trust and depend on stdlib...
 
 <div class="image" align="center">
     <a href="https://www.cmu.edu/">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/misc/cmu_logo.png" alt="Carnegie Mellon University">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1c8c7dbc9d081eeb13e16c62764f27a65c6553f8/docs/assets/misc/cmu_logo.png" alt="Carnegie Mellon University">
     </a>
     <br>
     <br>
