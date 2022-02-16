@@ -2632,6 +2632,17 @@
       "classification"
     ]
   },
+  "https://en.wikipedia.org/wiki/Hyperbolic_functions": {
+    "id": "hyperbolic-functions",
+    "description": "Wikipedia entry for hyperbolic functions.",
+    "short_url": "",
+    "keywords": [
+      "trigonometry",
+      "trig",
+      "hyperbolic",
+      "angle"
+    ]
+  },
   "https://en.wikipedia.org/wiki/IEEE_floating_point": {
     "id": "ieee754",
     "description": "Wikipedia entry on the IEEE Standard for Floating-Point Arithmetic (754).",
