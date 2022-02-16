@@ -492,7 +492,6 @@ The following organizations and key stakeholders trust and depend on stdlib...
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1c8c7dbc9d081eeb13e16c62764f27a65c6553f8/docs/assets/misc/cmu_logo.png" alt="Carnegie Mellon University">
     </a>
     <br>
-    <br>
 </div>
 
 Does your organization or company use stdlib? If so, we'd love to hear from you!
