@@ -5,7 +5,7 @@
     Parameters
     ----------
     x: number
-        Input value (in radians).
+        Input value.
 
     Returns
     -------
@@ -16,7 +16,7 @@
     --------
     > var y = {{alias}}( 0.0 )
     Infinity
-    > var y = {{alias}}( -0.0 )
+    > y = {{alias}}( -0.0 )
     -Infinity
     > y = {{alias}}( 2.0 )
     ~1.0373

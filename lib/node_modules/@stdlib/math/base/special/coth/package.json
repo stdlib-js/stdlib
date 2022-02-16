@@ -54,7 +54,6 @@
     "stdmath",
     "mathematics",
     "math",
-    "math.coth",
     "cotangent",
     "cot",
     "coth",
@@ -66,8 +65,6 @@
     "trig",
     "trigonometry",
     "radians",
-    "angle",
-    "polyfill",
-    "ponyfill"
+    "angle"
   ]
 }

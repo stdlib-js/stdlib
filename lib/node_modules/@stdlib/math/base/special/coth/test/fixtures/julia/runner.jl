@@ -2,7 +2,7 @@
 #
 # @license Apache-2.0
 #
-# Copyright (c) 2021 The Stdlib Authors.
+# Copyright (c) 2022 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ Generate fixture data and write to file.
 # Examples
 
 ``` julia
-julia> x = range( -1000, stop = 1000, length = 2001 );
+julia> x = range( -1000, stop = 1000, length = 2022 );
 julia> gen( x, \"data.json\" );
 ```
 """
@@ -61,21 +61,21 @@ file = @__FILE__;
 dir = dirname( file );
 
 # Generate fixture data for decimal values:
-x = range( -5, stop = 5, length = 2003 );
+x = range( -5, stop = 5, length = 2022 );
 gen( x, "data.json" );
 
 # Tiny negative values:
-x = range( -1e-200, stop = -1e-208, length = 2003 );
+x = range( -1e-200, stop = -1e-208, length = 2022 );
 gen( x, "tiny_negative.json" );
 
 # Tiny positive values:
-x = range( 1e-300, stop = 1e-308, length = 2003 );
+x = range( 1e-300, stop = 1e-308, length = 2022 );
 gen( x, "tiny_positive.json" );
 
 # Large negative values:
-x = range( -5, stop = -5000, length = 2003 );
+x = range( -5, stop = -5000, length = 2022 );
 gen( x, "large_negative.json" );
 
 # Large positive values:
-x = range( 5, stop = 5000, length = 2003 );
+x = range( 5, stop = 5000, length = 2022 );
 gen( x, "large_positive.json" );
