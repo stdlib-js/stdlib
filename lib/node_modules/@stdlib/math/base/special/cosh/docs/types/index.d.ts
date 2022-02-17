@@ -21,7 +21,7 @@
 /**
 * Computes the hyperbolic cosine of a number.
 *
-* @param x - input value (in radians)
+* @param x - input value
 * @returns hyperbolic cosine
 *
 * @example

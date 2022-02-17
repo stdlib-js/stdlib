@@ -5,7 +5,7 @@
     Parameters
     ----------
     x: number
-        Input value (in radians).
+        Input value.
 
     Returns
     -------

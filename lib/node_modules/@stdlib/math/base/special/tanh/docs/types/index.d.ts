@@ -21,7 +21,7 @@
 /**
 * Computes the hyperbolic tangent of a number.
 *
-* @param x - input value (in radians)
+* @param x - input value
 * @returns hyperbolic tangent
 *
 * @example

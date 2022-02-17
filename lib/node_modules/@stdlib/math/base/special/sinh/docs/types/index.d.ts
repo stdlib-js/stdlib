@@ -21,7 +21,7 @@
 /**
 * Computes the hyperbolic sine of a number.
 *
-* @param x - input value (in radians)
+* @param x - input value
 * @returns hyperbolic sine
 *
 * @example
