@@ -135,6 +135,7 @@ base.cosh,"\nbase.cosh( x:number )\n    Computes the hyperbolic cosine of a numb
 base.cosm1,"\nbase.cosm1( x:number )\n    Computes the cosine of a number minus one.\n"
 base.cospi,"\nbase.cospi( x:number )\n    Computes the value of `cos(πx)`.\n"
 base.cot,"\nbase.cot( x:number )\n    Computes the cotangent of a number.\n"
+base.coth,"\nbase.coth( x:number )\n    Computes the hyperbolic cotangent of a number.\n"
 base.covercos,"\nbase.covercos( x:number )\n    Computes the coversed cosine.\n"
 base.coversin,"\nbase.coversin( x:number )\n    Computes the coversed sine.\n"
 base.cphase,"\nbase.cphase( re:number, im:number )\n    Computes the argument of a complex number in radians.\n"

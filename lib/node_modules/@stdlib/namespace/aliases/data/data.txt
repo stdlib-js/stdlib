@@ -133,6 +133,7 @@ base.cphase
 base.cpolar
 base.cround
 base.croundn
+base.csch
 base.csignum
 base.csub
 base.csubf
