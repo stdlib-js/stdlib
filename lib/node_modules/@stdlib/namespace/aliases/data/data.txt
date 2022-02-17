@@ -57,6 +57,7 @@ base.acoth
 base.acovercos
 base.acoversin
 base.acsc
+base.acsch
 base.add
 base.addf
 base.ahavercos

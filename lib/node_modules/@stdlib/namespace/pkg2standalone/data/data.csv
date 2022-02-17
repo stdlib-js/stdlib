@@ -57,6 +57,7 @@
 "@stdlib/math/base/special/acovercos","@stdlib/math-base-special-acovercos"
 "@stdlib/math/base/special/acoversin","@stdlib/math-base-special-acoversin"
 "@stdlib/math/base/special/acsc","@stdlib/math-base-special-acsc"
+"@stdlib/math/base/special/acsch","@stdlib/math-base-special-acsch"
 "@stdlib/math/base/ops/add","@stdlib/math-base-ops-add"
 "@stdlib/math/base/ops/addf","@stdlib/math-base-ops-addf"
 "@stdlib/math/base/special/ahavercos","@stdlib/math-base-special-ahavercos"

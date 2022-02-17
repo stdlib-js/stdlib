@@ -142,6 +142,7 @@ base.cphase,"\nbase.cphase( re:number, im:number )\n    Computes the argument of
 base.cpolar,"\nbase.cpolar( [out:Array|TypedArray|Object,] re:number, im:number )\n    Returns the absolute value and phase of a complex number.\n"
 base.cround,"\nbase.cround( [out:Array|TypedArray|Object,] re:number, im:number )\n    Rounds a complex number to the nearest integer.\n"
 base.croundn,"\nbase.croundn( [out:Array|TypedArray|Object,] re:number, im:number, n:integer )\n    Rounds a complex number to the nearest multiple of `10^n`.\n"
+base.csch,"\nbase.csch( x:number )\n    Computes the hyperbolic cosecant of a number.\n"
 base.csignum,"\nbase.csignum( [out:Array|TypedArray|Object,] re:number, im:number )\n    Evaluates the signum function of a complex number.\n"
 base.csub,"\nbase.csub( z1:Complex128, z2:Complex128 )\n    Subtracts two double-precision complex floating-point numbers.\n"
 base.csubf,"\nbase.csubf( z1:Complex64, z2:Complex64 )\n    Subtracts two single-precision complex floating-point numbers.\n"
