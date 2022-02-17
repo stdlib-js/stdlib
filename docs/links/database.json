@@ -2711,6 +2711,18 @@
       "function"
     ]
   },
+  "https://en.wikipedia.org/wiki/Inverse_hyperbolic_functions": {
+    "id": "inverse-hyperbolic-functions",
+    "description": "Wikipedia page for inverse hyperbolic functions.",
+    "short_url": "",
+    "keywords": [
+      "trigonometry",
+      "trig",
+      "hyperbolic",
+      "inverse",
+      "angle"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Inverse_trigonometric_functions": {
     "id": "inverse-trigonmetric",
     "description": "Wikipedia entry for inverse trigonometric functions.",
