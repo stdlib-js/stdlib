@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: standalone_publish
+name: standalone_publish_custom
 
 # Workflow triggers:
 on:
@@ -96,3 +96,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.packages }}
