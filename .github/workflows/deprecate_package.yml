@@ -1,0 +1,100 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: deprecate_package
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    inputs:
+      packages:
+        description: Space-separated list of packages to deprecate
+        required: true
+      message:
+        description: Custom deprecation message
+
+# Workflow concurrency group:
+concurrency:
+
+  # Specify a group name:
+  group: ${{ github.workflow }}
+
+  # Specify whether to cancel any currently running workflow in the same concurrency group:
+  cancel-in-progress: false
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for deprecating packages...
+  deprecate:
+
+    # Define a display name:
+    name: 'Deprecate'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+      # Deprecate the specified packages on `npm` and the respective `GitHub` repositories:
+      - name: 'Deprecate packages'
+        run: |
+          pkgs=${{ github.event.inputs.packages }}
+          npm_names=""
+          github_repos=""
+          for pkg in $pkgs; do
+            # Replace `/` with `-`:
+            pkg=$(echo $pkg | sed -e 's/\//-/g')
+            if [[ $pkg == @* ]]; then
+              npm_names+="$pkg "
+              # Replace leading `@stdlib` with `stdlib-js` for GitHub repos:
+              github_repos+="$(echo $pkg | sed 's/^@stdlib/stdlib-js/') "
+            else
+              npm_names+="@stdlib/$pkg "
+              github_repos+="stdlib-js/$pkg "
+            fi
+          done
+
+          # Construct the deprecation message:
+          msg="${{ github.event.inputs.message || 'Package no longer supported.' }}"
+
+          # Deprecate the packages on `npm`:
+          for pkg in $npm_names; do
+            echo "Deprecating $pkg..."
+            npm deprecate $pkg $msg
+          done
+
+          # Deprecate the packages on `GitHub` by adding a section to the `README.md` file:
+          for repo in $github_repos; do
+            echo "Deprecating $repo..."
+            # Get the current contents of the `README.md` file:
+            readme=$(curl -s https://raw.githubusercontent.com/$repo/master/README.md)
+
+            # Add the `msg` deprecation message to the `README.md` file in the `## Installation` section:
+            readme=$(echo "$readme" | sed -e "s/## Installation/## Installation\n\n$msg/")
+
+            # Update the `README.md` file:
+            curl -s -X PATCH -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/$repo/contents/README.md \
+              -d '{
+                "message": "Deprecated",
+                "content": "'$(echo -n "$readme" | base64)'",
+                "sha": "'$(echo -n "$readme" | base64 | awk '{print $2}')'"
+              }'
+          done
