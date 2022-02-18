@@ -96,4 +96,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.patch == 'true' && '--patch' || '' }}  ${{ github.event.inputs.dry-run == 'true' && '--skip-upload' || '' }} ${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual' || '' }} ${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel' || '' }} ${{ github.event.inputs.packages }}
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.patch == 'true' && '--patch ' || '' }}${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual ' || '' }}${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel ' || '' }}${{ github.event.inputs.packages }}
