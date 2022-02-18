@@ -28,12 +28,12 @@ on:
         type: choice
         description: Whether to skip individual or toplevel package publishing
         options:
-        -
-        - --skip-toplevel
-        - --skip-individual
+        - none
+        - skip-toplevel
+        - skip-individual
       packages:
         description: Space-separated list of packages to publish
-      skip-upload:
+      dry-run:
         type: boolean
         description: Boolean flag indicating whether to skip uploading the packages (dry run)
       patch:
@@ -96,4 +96,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.packages }}
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.patch == 'true' && '--patch' || '' }}  ${{ github.event.inputs.dry-run == 'true' && '--skip-upload' || '' }} ${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual' || '' }} ${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel' || '' }} ${{ github.event.inputs.packages }}
