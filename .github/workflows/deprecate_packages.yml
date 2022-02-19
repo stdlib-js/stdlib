@@ -79,7 +79,7 @@ jobs:
           # Deprecate the packages on `npm`:
           for pkg in $npm_names; do
             echo "Deprecating $pkg..."
-            npm deprecate $pkg '$msg'
+            npm deprecate $pkg "$msg"
           done
 
           # Deprecate the packages on `GitHub` by adding a section to the `README.md` file:
@@ -104,7 +104,7 @@ jobs:
             git commit -m "Deprecate $repo"
 
             # Push the changes:
-            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$repo.git" main
+            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/stdlib-js/$repo.git" main
 
             # Clean up:
             cd ..
