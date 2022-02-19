@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: deprecate_package
+name: deprecate_packages
 
 # Workflow triggers:
 on:
@@ -53,6 +53,13 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+        timeout-minutes: 5
+
       # Deprecate the specified packages on `npm` and the respective `GitHub` repositories:
       - name: 'Deprecate packages'
         run: |
@@ -64,13 +71,16 @@ jobs:
             pkg=$(echo $pkg | sed -e 's/\//-/g')
             if [[ $pkg == @* ]]; then
               npm_names+="$pkg "
-              # Replace leading `@stdlib` with `stdlib-js` for GitHub repos:
-              github_repos+="$(echo $pkg | sed 's/^@stdlib/stdlib-js/') "
+              # Remove leading `@stdlib` for GitHub repos:
+              github_repos+="$(echo $pkg | sed 's/^@stdlib//') "
             else
               npm_names+="@stdlib/$pkg "
-              github_repos+="stdlib-js/$pkg "
+              github_repos+="$pkg "
             fi
           done
+
+          # Write `NPM_TOKEN` to `.npmrc` file to authenticate with `npm`:
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
           # Construct the deprecation message:
           msg="${{ github.event.inputs.message || 'Package no longer supported.' }}"
@@ -84,17 +94,24 @@ jobs:
           # Deprecate the packages on `GitHub` by adding a section to the `README.md` file:
           for repo in $github_repos; do
             echo "Deprecating $repo..."
-            # Get the current contents of the `README.md` file:
-            readme=$(curl -s https://raw.githubusercontent.com/$repo/master/README.md)
 
-            # Add the `msg` deprecation message to the `README.md` file in the `## Installation` section:
-            readme=$(echo "$readme" | sed -e "s/## Installation/## Installation\n\n$msg/")
+            # Clone the repository:
+            git clone https://github.com/stdlib-js/$repo
 
-            # Update the `README.md` file:
-            curl -s -X PATCH -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/$repo/contents/README.md \
-              -d '{
-                "message": "Deprecated",
-                "content": "'$(echo -n "$readme" | base64)'",
-                "sha": "'$(echo -n "$readme" | base64 | awk '{print $2}')'"
-              }'
+            # Move to the repository root:
+            cd $repo
+
+            # Add deprecation notice to the beginning of the `README.md` file:
+            sed -i "1 i\# :warning: $msg :warning:\n" README.md
+
+            # Commit the changes:
+            git add README.md
+            git commit -m "Deprecate $repo"
+
+            # Push the changes:
+            git push origin main
+
+            # Clean up:
+            cd ..
+
           done
