@@ -74,7 +74,7 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
           # Construct the deprecation message:
-          msg='${{ github.event.inputs.message || "Package no longer supported." }}'
+          msg='${{ github.event.inputs.message || 'Package no longer supported.' }}'
 
           # Deprecate the packages on `npm`:
           for pkg in $npm_names; do
