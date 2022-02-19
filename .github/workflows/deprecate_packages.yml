@@ -98,8 +98,11 @@ jobs:
             git config --local user.email "noreply@stdlib.io"
             git config --local user.name "stdlib-bot"
 
+            # Turn `@stdlib` package names in deprecation messages into hyperlinks:
+            readme_msg=$(echo $msg | sed -e 's/`\?@stdlib\/\([^ `]*\)`\?/[@stdlib\/\1](https:\/\/github.com\/stdlib-js\/\1)/g')
+
             # Add deprecation notice to the beginning of the `README.md` file:
-            sed -i "1 i\## Attention\n\n:warning: **$msg** :warning:\n\n<br>\n\n* * *\n" README.md
+            sed -i "1 i\## Attention\n\n:warning: **$readme_msg** :warning:\n\n<br>\n\n* * *\n" README.md
 
             # Commit the changes:
             git add README.md
