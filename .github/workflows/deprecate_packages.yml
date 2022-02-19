@@ -60,16 +60,14 @@ jobs:
           npm_names=""
           github_repos=""
           for pkg in $pkgs; do
+            # Remove leading `@stdlib/` from package name:
+            pkg=$(echo $pkg | sed 's/^@stdlib\///')
+
             # Replace `/` with `-`:
             pkg=$(echo $pkg | sed -e 's/\//-/g')
-            if [[ $pkg == @* ]]; then
-              npm_names+="$pkg "
-              # Remove leading `@stdlib` for GitHub repos:
-              github_repos+="$(echo $pkg | sed 's/^@stdlib//') "
-            else
-              npm_names+="@stdlib/$pkg "
-              github_repos+="$pkg "
-            fi
+
+            npm_names+="@stdlib/$pkg "
+            github_repos+="stdlib-js/$pkg "
           done
 
           # Write `NPM_TOKEN` to `.npmrc` file to authenticate with `npm`:
