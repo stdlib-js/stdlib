@@ -99,7 +99,7 @@ jobs:
             git config --local user.name "stdlib-bot"
 
             # Add deprecation notice to the beginning of the `README.md` file:
-            sed -i "1 i\# :warning: $msg :warning:\n" README.md
+            sed -i "1 i\## Attention\n\n:warning: **$msg** :warning:\n\n<br>\n\n* * *\n" README.md
 
             # Commit the changes:
             git add README.md
@@ -107,6 +107,9 @@ jobs:
 
             # Push the changes:
             git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/stdlib-js/$repo.git" main
+
+            # Archive the repository on GitHub:
+            curl -u $GITHUB_ACTOR:$GITHUB_TOKEN -X PATCH -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/stdlib-js/$repo -d '{"archived":"true"}'
 
             # Clean up:
             cd ..
