@@ -53,13 +53,6 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-      # Configure Git:
-      - name: 'Configure Git'
-        run: |
-          git config --local user.email "noreply@stdlib.io"
-          git config --local user.name "stdlib-bot"
-        timeout-minutes: 5
-
       # Deprecate the specified packages on `npm` and the respective `GitHub` repositories:
       - name: 'Deprecate packages'
         run: |
@@ -100,6 +93,10 @@ jobs:
 
             # Move to the repository root:
             cd $repo
+
+            # Configure Git:
+            git config --local user.email "noreply@stdlib.io"
+            git config --local user.name "stdlib-bot"
 
             # Add deprecation notice to the beginning of the `README.md` file:
             sed -i "1 i\# :warning: $msg :warning:\n" README.md
