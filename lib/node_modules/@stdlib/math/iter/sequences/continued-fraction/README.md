@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterContinuedFractionSeq
 
-> Create an iterator which generates a list of all continued fraction terms which can be obtained given the precision of provided number.
+> Create an iterator which generates a list of all continued fraction terms which can be obtained given the precision of a provided number.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
