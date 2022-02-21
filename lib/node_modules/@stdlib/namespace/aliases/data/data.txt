@@ -1956,6 +1956,7 @@ iterCeil10
 iterCompositesSeq
 iterConcat
 iterConstant
+iterContinuedFractionSeq
 iterCos
 iterCosh
 iterCosineWave

@@ -1956,6 +1956,7 @@
 "@stdlib/math/iter/sequences/composites",iterCompositesSeq
 "@stdlib/iter/concat",iterConcat
 "@stdlib/iter/constant",iterConstant
+"@stdlib/math/iter/sequences/continued-fraction",iterContinuedFractionSeq
 "@stdlib/math/iter/special/cos",iterCos
 "@stdlib/math/iter/special/cosh",iterCosh
 "@stdlib/simulate/iter/cosine-wave",iterCosineWave
