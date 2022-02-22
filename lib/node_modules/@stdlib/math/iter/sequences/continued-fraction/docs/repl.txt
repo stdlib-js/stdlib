@@ -1,5 +1,5 @@
 
-{{alias}}( x, [options] )
+{{alias}}( x[, options] )
     Returns an iterator which generates a list of all continued fraction terms
     which can be obtained given the precision of `x`.
 
