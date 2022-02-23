@@ -48,7 +48,7 @@ If `a_i = 1` for all `i`, the above expression reduces to a **simple continued f
 
 <!-- </equation> -->
 
-where the integers `b_i` are called the **coefficients** or **terms** of the continued fraction.
+where the values `b_i` are called the **coefficients** or **terms** of the continued fraction.
 
 </section>
 
