@@ -15,7 +15,7 @@
         Function options.
 
     options.iter: integer (optional)
-        Number of iterations. Default: 1e308.
+        Maximum number of iterations. Default: 1e308.
 
     options.tol: number (optional)
         Tolerance at which to terminate further evaluation of the continued

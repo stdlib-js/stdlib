@@ -30,7 +30,7 @@ type Iterator = Iter | IterableIterator;
 */
 interface Options {
 	/**
-	* Number of iterations.
+	* Maximum number of iterations.
 	*/
 	iter?: number;
 
@@ -49,7 +49,7 @@ interface Options {
 *
 * @param x - input value
 * @param options - function options
-* @param options.iter - number of iterations (default: 9007199254740992)
+* @param options.iter - maximum number of iterations (default: 1e308)
 * @param options.tol - tolerance at which to terminate further evaluation of the continued fraction (default: floating-point epsilon)
 * @throws `iter` option must be a nonnegative integer
 * @throws `tol` option must be a positive finite number

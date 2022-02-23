@@ -78,3 +78,9 @@ import iterContinuedFractionSeq = require( './index' );
 	iterContinuedFractionSeq( 3.14, { 'tol': {} } ); // $ExpectError
 	iterContinuedFractionSeq( 3.14, { 'tol': ( x: number ): number => x } ); // $ExpectError
 }
+
+// The compiler throws an error if the function is provided an unsupported number of arguments...
+{
+	iterContinuedFractionSeq(); // $ExpectError
+	iterContinuedFractionSeq( 3.14, {}, {} ); // $ExpectError
+}
