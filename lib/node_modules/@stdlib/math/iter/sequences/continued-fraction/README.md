@@ -59,7 +59,7 @@ where the values `b_i` are called the **coefficients** or **terms** of the conti
 
 <!-- </equation> -->
 
-are called the **convergents**.
+are called **convergents**.
 
 </section>
 
