@@ -79,6 +79,18 @@ import iterContinuedFractionSeq = require( './index' );
 	iterContinuedFractionSeq( 3.14, { 'tol': ( x: number ): number => x } ); // $ExpectError
 }
 
+// The compiler throws an error if the function is provided a `returns` option which is not a supported value...
+{
+	iterContinuedFractionSeq( 3.14, { 'returns': '5' } ); // $ExpectError
+	iterContinuedFractionSeq( 3.14, { 'returns': 5 } ); // $ExpectError
+	iterContinuedFractionSeq( 3.14, { 'returns': true } ); // $ExpectError
+	iterContinuedFractionSeq( 3.14, { 'returns': false } ); // $ExpectError
+	iterContinuedFractionSeq( 3.14, { 'returns': null } ); // $ExpectError
+	iterContinuedFractionSeq( 3.14, { 'returns': [] } ); // $ExpectError
+	iterContinuedFractionSeq( 3.14, { 'returns': {} } ); // $ExpectError
+	iterContinuedFractionSeq( 3.14, { 'returns': ( x: number ): number => x } ); // $ExpectError
+}
+
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	iterContinuedFractionSeq(); // $ExpectError

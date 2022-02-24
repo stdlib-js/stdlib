@@ -38,6 +38,11 @@ interface Options {
 	* Tolerance at which to terminate further evaluation of the continued fraction.
 	*/
 	tol?: number;
+
+	/**
+	* Specifies the type of result to return.
+	*/
+	returns?: 'terms' | 'convergents' | '*';
 }
 
 /**
@@ -51,6 +56,7 @@ interface Options {
 * @param options - function options
 * @param options.iter - maximum number of iterations (default: 1e308)
 * @param options.tol - tolerance at which to terminate further evaluation of the continued fraction (default: floating-point epsilon)
+* @param options.returns - specifies the type of result to return (default: 'terms')
 * @throws `iter` option must be a nonnegative integer
 * @throws `tol` option must be a positive finite number
 * @returns iterator

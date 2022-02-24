@@ -21,6 +21,16 @@
         Tolerance at which to terminate further evaluation of the continued
         fraction. Default: floating-point epsilon.
 
+    options.returns: string (optional)
+        Specifies the type of result to return. Must be one of
+
+        - terms: return continued fraction terms
+        - convergents: return continued fraction convergents
+        - *: return both continued fraction terms and their associated
+          convergents as a two-element array.
+
+        Default: 'terms'.
+
     Returns
     -------
     iterator: Object
@@ -36,6 +46,7 @@
 
     Examples
     --------
+    // Return continued fraction terms...
     > var it = {{alias}}( 3.245 );
     > var v = it.next().value
     3
@@ -46,6 +57,19 @@
     > v = it.next().value
     4
     > var bool = it.next().done
+    true
+
+    // Return continued fraction convergents...
+    > it = {{alias}}( 3.245, { 'returns': 'convergents' } );
+    > v = it.next().value
+    3.0
+    > v = it.next().value
+    3.25
+    > v = it.next().value
+    ~3.2449
+    > v = it.next().value
+    3.245
+    > bool = it.next().done
     true
 
     See Also
