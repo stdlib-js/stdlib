@@ -1,0 +1,33 @@
+
+{{alias}}( iterator[, options] )
+    Evaluates the terms of a continued fraction.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    options: Object (optional)
+        Function options.
+
+    options.iter: integer (optional)
+        Maximum number of iterations. Default: 1e308.
+
+    options.tol: number (optional)
+        Tolerance at which to terminate further evaluation of the continued
+        fraction. Default: floating-point epsilon.
+
+    Returns
+    -------
+    out: number|null
+        Result.
+
+    Examples
+    --------
+    > var terms = {{alias:@stdlib/array/to-iterator}}( [ 3, 4, 12, 4 ] );
+    > var v = {{alias}}( terms )
+    ~3.245
+
+    See Also
+    --------
+

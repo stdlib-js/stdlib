@@ -1,0 +1,77 @@
+
+{{alias}}( x[, options] )
+    Returns an iterator which generates a list of all continued fraction terms
+    which can be obtained given the precision of `x`.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    options: Object (optional)
+        Function options.
+
+    options.iter: integer (optional)
+        Maximum number of iterations. Default: 1e308.
+
+    options.tol: number (optional)
+        Tolerance at which to terminate further evaluation of the continued
+        fraction. Default: floating-point epsilon.
+
+    options.returns: string (optional)
+        Specifies the type of result to return. Must be one of
+
+        - terms: return continued fraction terms
+        - convergents: return continued fraction convergents
+        - *: return both continued fraction terms and their associated
+          convergents as a two-element array.
+
+        Default: 'terms'.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    // Return continued fraction terms...
+    > var it = {{alias}}( 3.245 );
+    > var v = it.next().value
+    3
+    > v = it.next().value
+    4
+    > v = it.next().value
+    12
+    > v = it.next().value
+    4
+    > var bool = it.next().done
+    true
+
+    // Return continued fraction convergents...
+    > it = {{alias}}( 3.245, { 'returns': 'convergents' } );
+    > v = it.next().value
+    3.0
+    > v = it.next().value
+    3.25
+    > v = it.next().value
+    ~3.2449
+    > v = it.next().value
+    3.245
+    > bool = it.next().done
+    true
+
+    See Also
+    --------
+
