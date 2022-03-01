@@ -80,7 +80,9 @@ jobs:
           git commit -m "Auto-generated commit"
       - name: Push changes
         run: |
-          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/stdlib-js/$repo.git" main
+          SLUG=${{ github.repository.owner.login }}/${{ github.repository.name }}
+          echo "Pushing changes to $SLUG..."
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" main
   cancel:
     runs-on: ubuntu-latest
     timeout-minutes: 3
