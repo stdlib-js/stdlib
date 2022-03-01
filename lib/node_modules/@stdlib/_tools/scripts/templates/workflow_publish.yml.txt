@@ -59,6 +59,28 @@ jobs:
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
+  increment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v2
+        with:
+          ref: main
+      - name: Increment version in `package.json` to the version number of the tag
+        run: |
+          VERSION=$(echo ${{ github.ref }} | sed -E 's/refs\/tags\/v?([0-9]+.[0-9]+.[0-9]+).*/\1/')
+          sed -Ei "s/\"version\": \"[^\"]+\"/\"version\": \"${{ VERSION }}\"/g" package.json
+      - name: Configure git
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+      - name: Commit changes
+        run: |
+          git add package.json
+          git commit -m "Auto-generated commit"
+      - name: Push changes
+        run: |
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/stdlib-js/$repo.git" main
   cancel:
     runs-on: ubuntu-latest
     timeout-minutes: 3
