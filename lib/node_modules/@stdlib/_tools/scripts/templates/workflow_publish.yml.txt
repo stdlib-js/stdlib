@@ -69,7 +69,7 @@ jobs:
       - name: Increment version in `package.json` to the version number of the tag
         run: |
           VERSION=$(echo ${{ github.ref }} | sed -E 's/refs\/tags\/v?([0-9]+.[0-9]+.[0-9]+).*/\1/')
-          sed -Ei "s/\"version\": \"[^\"]+\"/\"version\": \"${{ VERSION }}\"/g" package.json
+          sed -Ei "s/\"version\": \"[^\"]+\"/\"version\": \"$VERSION\"/g" package.json
       - name: Configure git
         run: |
           git config --local user.email "noreply@stdlib.io"
