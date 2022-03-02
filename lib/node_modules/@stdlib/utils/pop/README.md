@@ -60,7 +60,7 @@ var lastValue = out[ 1 ];
 In contrast to [`Array.prototype.pop`][mdn-array-pop] which returns only the removed element, the function also returns the shortened collection. For [typed arrays][mdn-typed-array] having a length greater than `0`, the returned collection is a new [typed array][mdn-typed-array] view.
 
 ```javascript
-var Float64Array= require( '@stdlib/array/float64' );
+var Float64Array = require( '@stdlib/array/float64' );
 
 var arr = new Float64Array( 2 );
 arr[ 0 ] = 1.0;
@@ -104,7 +104,7 @@ var lastValue = out[ 1 ];
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Float64Array= require( '@stdlib/array/float64' );
+var Float64Array = require( '@stdlib/array/float64' );
 var pop = require( '@stdlib/utils/pop' );
 
 var arr;

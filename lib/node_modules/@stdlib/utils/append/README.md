@@ -58,7 +58,7 @@ Note that the function returns the extended collection. For [typed arrays][mdn-t
 
 ```javascript
 var ArrayBuffer = require( '@stdlib/array/buffer' );
-var Float64Array= require( '@stdlib/array/float64' );
+var Float64Array = require( '@stdlib/array/float64' );
 
 var buf = new ArrayBuffer( 3*8 ); // 8 bytes per double
 
@@ -108,7 +108,7 @@ bool = ( out.buffer === arr.buffer );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Float64Array= require( '@stdlib/array/float64' );
+var Float64Array = require( '@stdlib/array/float64' );
 var append = require( '@stdlib/utils/append' );
 
 var arr;

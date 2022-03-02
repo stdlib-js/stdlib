@@ -58,7 +58,7 @@ In contrast to [`Array.prototype.push`][mdn-array-push], the function returns th
 
 ```javascript
 var ArrayBuffer = require( '@stdlib/array/buffer' );
-var Float64Array= require( '@stdlib/array/float64' );
+var Float64Array = require( '@stdlib/array/float64' );
 
 var buf = new ArrayBuffer( 3*8 ); // 8 bytes per double
 
@@ -108,7 +108,7 @@ bool = ( out.buffer === arr.buffer );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Float64Array= require( '@stdlib/array/float64' );
+var Float64Array = require( '@stdlib/array/float64' );
 var push = require( '@stdlib/utils/push' );
 
 var arr;
