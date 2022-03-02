@@ -1,0 +1,99 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: Test loading bundles
+
+# Workflow triggers:
+on:
+  workflow_run:
+    workflows: ["bundle"]
+    types: [completed]
+  workflow_dispatch:
+
+# Workflow jobs:
+jobs:
+  test-umd:
+    runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    steps:
+      - name: Checkout branch with UMD build
+        uses: actions/checkout@v2
+        with:
+          ref: umd
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17
+      - name: Try loading UMD module
+        run: |
+          node --eval "require( './bundle.js' )" || exit $?
+      - name: Send status to Slack channel in case of failure
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
+  test-esm:
+    runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    steps:
+      - name: Checkout branch with ESM build
+        uses: actions/checkout@v2
+        with:
+          ref: esm
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17
+      - name: Try loading ESM
+        run: |
+          node --experimental-network-imports --eval "import( './index.mjs' )" || exit $?
+      - name: Send status to Slack channel in case of failure
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
+  test-deno:
+    runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    steps:
+      - name: Checkout branch with Deno build
+        uses: actions/checkout@v2
+        with:
+          ref: deno
+      - name: Install Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: vx.x.x
+      - name: Try loading Deno build
+        run: |
+          deno eval --unstable --compat "import main from './mod.js'" || exit $?
+      - name: Send status to Slack channel in case of failure
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
