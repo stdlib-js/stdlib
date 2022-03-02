@@ -83,6 +83,9 @@ jobs:
           find ./deno -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"cli\">[\s\S]+<\!\-\- \/.cli \-\->//g"
           find ./deno -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"c\">[\s\S]+<\!\-\- \/.c \-\->//g"
 
+          # Create package.json file for deno branch:
+          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "type": "module", "main": "./mod.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./deno/package.json
+
       - name: Publish to deno branch
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -151,6 +154,9 @@ jobs:
 
           # Wrap contents of `<script type="text/javascript">` tag contents in an IIFE:
           find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<script type=\"text\/javascript\">([\s\S]+?)<\/script>/<script type=\"text\/javascript\">\n\(function \(\) {\1}\)\(\)\n<\/script>/g"
+
+          # Create package.json file for umd branch:
+          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "main": "./bundle.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./deno/package.json
 
       - name: Publish to umd branch
         uses: peaceiris/actions-gh-pages@v3
@@ -226,6 +232,9 @@ jobs:
 
           # Rewrite examples section to be a HTML file:
           find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\#\# Examples([\s\S]*)\`\`\`javascript([\s\S]+?)\`\`\`/\#\# Examples\1\`\`\`html\n<\!DOCTYPE html>\n<html lang=\"en\">\n<body>\n<script type=\"module\">\n\2\n<\/script>\n<\/body>\n<\/html>\n\`\`\`/g"
+
+          # Create package.json file for esm branch:
+          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "type": "module", "main": "./index.mjs", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./deno/package.json
 
       - name: Publish to esm branch
         uses: peaceiris/actions-gh-pages@v3
