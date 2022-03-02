@@ -156,7 +156,7 @@ jobs:
           find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<script type=\"text\/javascript\">([\s\S]+?)<\/script>/<script type=\"text\/javascript\">\n\(function \(\) {\1}\)\(\)\n<\/script>/g"
 
           # Create package.json file for umd branch:
-          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "main": "./bundle.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./deno/package.json
+          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "main": "./bundle.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./umd/package.json
 
       - name: Publish to umd branch
         uses: peaceiris/actions-gh-pages@v3
@@ -234,7 +234,7 @@ jobs:
           find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\#\# Examples([\s\S]*)\`\`\`javascript([\s\S]+?)\`\`\`/\#\# Examples\1\`\`\`html\n<\!DOCTYPE html>\n<html lang=\"en\">\n<body>\n<script type=\"module\">\n\2\n<\/script>\n<\/body>\n<\/html>\n\`\`\`/g"
 
           # Create package.json file for esm branch:
-          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "type": "module", "main": "./index.mjs", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./deno/package.json
+          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "type": "module", "main": "./index.mjs", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./esm/package.json
 
       - name: Publish to esm branch
         uses: peaceiris/actions-gh-pages@v3
