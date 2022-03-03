@@ -59,5 +59,9 @@
     "dtype",
     "string"
   ],
-  "__stdlib__": {}
+  "__stdlib__": {
+    "envs": {
+      "browser": false
+    }
+  }
 }

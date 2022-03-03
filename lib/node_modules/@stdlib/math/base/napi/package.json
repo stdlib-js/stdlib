@@ -62,5 +62,10 @@
     "addon",
     "namespace",
     "ns"
-  ]
+  ],
+  "__stdlib__": {
+    "envs": {
+      "browser": false
+    }
+  }
 }

@@ -65,5 +65,9 @@
     "map",
     "transform"
   ],
-  "__stdlib__": {}
+  "__stdlib__": {
+    "envs": {
+      "browser": false
+    }
+  }
 }
