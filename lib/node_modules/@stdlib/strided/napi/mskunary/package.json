@@ -68,5 +68,9 @@
     "missing values",
     "na"
   ],
-  "__stdlib__": {}
+  "__stdlib__": {
+    "envs": {
+      "browser": false
+    }
+  }
 }
