@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# sprintf
+# format
 
 > Insert supplied variable values into a format string.
 
@@ -33,16 +33,16 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var sprintf = require( '@stdlib/string/sprintf' );
+var format = require( '@stdlib/string/format' );
 ```
 
-#### sprintf( str, ...args )
+#### format( str, ...args )
 
 Inserts supplied variable values into a format string.
 
 ```javascript
 var str = 'Hello, %s! My name is %s.';
-var out = sprintf( str, 'world', 'Bob' );
+var out = format( str, 'world', 'Bob' );
 // returns 'Hello, world! My name is Bob.'
 ```
 
@@ -76,21 +76,21 @@ The format string is a string literal containing zero or more conversion specifi
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var sprintf = require( '@stdlib/string/sprintf' );
+var format = require( '@stdlib/string/format' );
 
-var out = sprintf( '%s %s!', 'Hello', 'World' );
+var out = format( '%s %s!', 'Hello', 'World' );
 // returns 'Hello World!'
 
-out = sprintf( 'Pi: ~%.2f', 3.141592653589793 );
+out = format( 'Pi: ~%.2f', 3.141592653589793 );
 // returns 'Pi: ~3.14'
 
-out = sprintf( '%-10s %-10s', 'a', 'b' );
+out = format( '%-10s %-10s', 'a', 'b' );
 // returns 'a       b       '
 
-out = sprintf( '%10s %10s', 'a', 'b' );
+out = format( '%10s %10s', 'a', 'b' );
 // returns '       a       b'
 
-out = sprintf( '%2$s %1$s %3$s', 'b', 'a', 'c' );
+out = format( '%2$s %1$s %3$s', 'b', 'a', 'c' );
 // returns 'a b c'
 ```
 

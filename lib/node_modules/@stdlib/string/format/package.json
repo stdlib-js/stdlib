@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/string/sprintf",
+  "name": "@stdlib/string/format",
   "version": "0.0.0",
   "description": "Insert supplied variable values into a format string.",
   "license": "Apache-2.0",
