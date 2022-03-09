@@ -23,7 +23,7 @@ import id2pkg = require( './index' );
 
 // The function returns a string or null...
 {
-	id2pkg( 'Wiw' ); // $ExpectType string | null
+	id2pkg( '0H5' ); // $ExpectType string | null
 }
 
 // The compiler throws an error if the function is not provided a string...

@@ -45,7 +45,7 @@ var id2pkg = require( '@stdlib/error/tools/id2pkg' );
 Returns the package name associated with a specified error identifier prefix.
 
 ```javascript
-var v = id2pkg( 'Wiw' );
+var v = id2pkg( '0H5' );
 // returns '@stdlib/math/base/special/sin'
 ```
 
@@ -87,9 +87,9 @@ var v;
 var i;
 
 list = [
-    'Wiw',
-    'AqD',
-    'hrj'
+    '001',
+    '0A3',
+    '0Ab'
 ];
 len = list.length;
 
@@ -145,7 +145,7 @@ Options:
 ### Examples
 
 ```bash
-$ stdlib-id2pkg 'Wiw'
+$ stdlib-id2pkg '0H5'
 @stdlib/math/base/special/sin
 ```
 
@@ -167,6 +167,10 @@ $ stdlib-id2pkg 'Wiw'
 
 <!-- <license> -->
 
+## License
+
+The data files (databases) are licensed under an [Open Data Commons Public Domain Dedication & License 1.0][pddl-1.0] and their contents are licensed under [Creative Commons Zero v1.0 Universal][cc0]. The software is licensed under [Apache License, Version 2.0][apache-license].
+
 <!-- </license> -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
@@ -180,6 +184,12 @@ $ stdlib-id2pkg 'Wiw'
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[pddl-1.0]: http://opendatacommons.org/licenses/pddl/1.0/
+
+[cc0]: https://creativecommons.org/publicdomain/zero/1.0
+
+[apache-license]: https://www.apache.org/licenses/LICENSE-2.0
 
 <!-- <related-links> -->
 
