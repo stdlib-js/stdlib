@@ -1,0 +1,58 @@
+{
+  "name": "stdlib-error-database",
+  "version": "",
+  "title": "Standard library error code database.",
+  "description": "A mapping of standard library error codes to their corresponding error messages.",
+  "resources": [
+    {
+      "name": "stdlib-error-database-json",
+      "title": "Standard Library Error Code Database",
+      "description": "A mapping of standard library error codes to their corresponding error messages.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-error-database-csv",
+      "title": "Standard Library Error Code Database",
+      "description": "A mapping of standard library error codes to their corresponding error messages.",
+      "format": "csv",
+      "mediatype": "plain/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "code",
+            "title": "Error Code",
+            "description": "Error code.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "message",
+            "title": "Error Message",
+            "description": "Error message.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "stdlib",
+    "error",
+    "code",
+    "database",
+    "db",
+    "mapping",
+    "message",
+    "msg"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}
