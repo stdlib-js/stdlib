@@ -157,3 +157,21 @@
 "2W",invalid option. `%s` option must be a nonnegative number. Option: `%s`.
 "2X",invalid option. `%s` option must be a nonnegative integer. Option: `%s`.
 "2Y",invalid option. `%s` option must be a positive integer. Option: `%s`.
+"2Z",invalid argument. First argument must be a positive integer. Value: `%s`.
+"2a",invalid argument. Second argument must be a probability. Value: `%s`.
+"2b",invalid argument. First argument must be a number primitive and not `NaN`. Value: `%s`.
+"2c",invalid argument. Second argument must be a positive number. Value: `%s`.
+"2d",invalid argument. First argument must be a positive number. Value: `%s`.
+"2e",invalid argument. First argument must be a primitive integer. Value: `%s`.
+"2f",invalid argument. Second argument must be a primitive integer. Value: `%s`.
+"2g",invalid argument. Minimum support `a` must be less than or equal to maximum support `b`. Value: `[%s,%s]`.
+"2h",invalid argument. Second argument must be a number primitive and not `NaN`. Value: `%s`.
+"2i",invalid argument. Third argument must be a number primitive and not `NaN`. Value: `%s`.
+"2j",invalid arguments. The condition `a <= c <= b` must be satisfied. Value: `[%s,%s,%s]`.
+"2k",invalid argument. `%s` must be a nonnegative integer. Value: `%s`.
+"2l",invalid argument. `%s` must be less than or equal to `%s`. Value: `%s`.
+"2m",invalid argument. Minimum support `a` must be less than maximum support `b`. Value: `[%s,%s]`.
+"2n",invalid argument. First argument must be a probability. Value: `%s`.
+"2o",invalid argument. First argument must be a positive number primitive and not `NaN`. Value: `%s`.
+"2p",invalid argument. Second argument must be a positive number primitive and not `NaN`. Value: `%s`.
+"2q",invalid argument. Third argument must be a number primitive. Value: `%s`.
