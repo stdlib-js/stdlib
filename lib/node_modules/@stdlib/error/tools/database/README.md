@@ -65,7 +65,6 @@ var transformed = replace( code, RE_ERR_MSG, replacer );
 // returns 'throw new Error( formatProdErrorMessage( \'04\' ) );'
 
 function replacer( match, p1 ) {
-    console.log( p1 );
     return 'Error( formatProdErrorMessage( \'' + errorMap[ p1 ] + '\' ) )';
 }
 ```
