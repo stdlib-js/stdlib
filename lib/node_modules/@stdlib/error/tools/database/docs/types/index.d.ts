@@ -19,6 +19,14 @@
 // TypeScript Version: 2.0
 
 /**
+* Interface describing an object mapping standard library error codes to their corresponding error messages.
+*/
+interface Table {
+	// Table properties:
+	[code: string]: string;
+}
+
+/**
 * Returns a mapping of standard library error codes to their corresponding error messages.
 *
 * @returns mapping of error codes to corresponding error messages
@@ -27,7 +35,7 @@
 * var db = database();
 * // returns {...}
 */
-declare function database(): any;
+declare function database(): Table;
 
 
 // EXPORTS //

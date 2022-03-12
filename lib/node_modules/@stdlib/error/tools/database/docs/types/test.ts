@@ -21,9 +21,9 @@ import database = require( './index' );
 
 // TESTS //
 
-// The function returns an object...
+// The function returns a table...
 {
-	database(); // $ExpectType any
+	database(); // $ExpectType Table
 }
 
 // The compiler throws an error if the function is provided arguments...
