@@ -45,8 +45,6 @@ var db = database();
 
 <section class="examples">
 
-<!-- TODO: more creative example. -->
-
 ## Examples
 
 <!-- eslint no-undef: "error" -->
@@ -60,13 +58,13 @@ var db = database();
 var errorMap = invertObject( db );
 var RE_ERR_MSG = /Error\( '([^']+)' \)/;
 
-var code = 'throw new Error( \'insufficient input arguments. Must provide at least one iterator function.\' );';
-var transformed = replace( code, RE_ERR_MSG, replacer );
-// returns 'throw new Error( formatProdErrorMessage( \'04\' ) );'
-
 function replacer( match, p1 ) {
     return 'Error( formatProdErrorMessage( \'' + errorMap[ p1 ] + '\' ) )';
 }
+
+var code = 'throw new Error( \'insufficient input arguments. Must provide at least one iterator function.\' );';
+var transformed = replace( code, RE_ERR_MSG, replacer );
+// returns 'throw new Error( formatProdErrorMessage( \'04\' ) );'
 ```
 
 </section>
