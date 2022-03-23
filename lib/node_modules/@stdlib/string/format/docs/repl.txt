@@ -7,7 +7,7 @@
     str: string
         Input string.
 
-    ...args: Array<any>
+    args: ...any
         Variable values.
 
     Returns
