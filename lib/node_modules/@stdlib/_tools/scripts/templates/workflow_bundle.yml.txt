@@ -25,7 +25,7 @@ on:
   push:
     branches:
       - main
-    tags_ignore:
+    tags-ignore:
       - 'v[0-9]+\.[0-9]+\.[0-9]+'
 
 # Workflow jobs:
@@ -33,7 +33,7 @@ jobs:
   deno:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Copy files to deno directory
         run: |
           mkdir -p deno
@@ -92,7 +92,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./deno
           publish_branch: deno
-          keep_files: true
+          force_orphan: true
           user_name: 'stdlib-bot'
           user_email: 'noreply@stdlib.io'
           commit_message: 'Auto-generated commit'
@@ -107,7 +107,7 @@ jobs:
   umd:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Copy files to umd directory
         run: |
           mkdir -p umd
@@ -153,7 +153,7 @@ jobs:
           find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "1 while s/<script type=\"text\/javascript\">\n(var|let|const)\s+([a-zA-Z0-9_]+)\s+=\s*require\( '\@stdlib\/([^']+)' \);?/<script type=\"text\/javascript\" src=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/bundle.js\"><\/script>\n<script type=\"text\/javascript\">/g"
 
           # Wrap contents of `<script type="text/javascript">` tag contents in an IIFE:
-          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<script type=\"text\/javascript\">([\s\S]+?)<\/script>/<script type=\"text\/javascript\">\n\(function \(\) {\1}\)\(\)\n<\/script>/g"
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<script type=\"text\/javascript\">([\s\S]+?)<\/script>/<script type=\"text\/javascript\">\n\(function \(\) {\1}\)\(\);\n<\/script>/g"
 
           # Create package.json file for umd branch:
           jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "main": "./bundle.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./umd/package.json
@@ -164,7 +164,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./umd
           publish_branch: umd
-          keep_files: true
+          force_orphan: true
           user_name: 'stdlib-bot'
           user_email: 'noreply@stdlib.io'
           commit_message: 'Auto-generated commit'
@@ -179,7 +179,7 @@ jobs:
   esm:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Copy files to umd directory
         run: |
           mkdir -p esm
@@ -242,7 +242,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./esm
           publish_branch: esm
-          keep_files: true
+          force_orphan: true
           user_name: 'stdlib-bot'
           user_email: 'noreply@stdlib.io'
           commit_message: 'Auto-generated commit'

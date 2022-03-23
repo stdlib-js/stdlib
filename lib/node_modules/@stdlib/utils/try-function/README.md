@@ -127,14 +127,14 @@ var wrap = require( '@stdlib/utils/try-function' );
 
 function beep( str ) {
     if ( typeof str !== 'string' ) {
-        throw new TypeError( 'invalid argument. Must provide a string primitive. Value: `' + str + '`.' );
+        throw new TypeError( 'invalid argument. Must provide a string. Value: `' + str + '`.' );
     }
     return 'beep ' + str;
 }
 
 function boop( str, clbk ) {
     if ( typeof str !== 'string' ) {
-        throw new TypeError( 'invalid argument. Must provide a string primitive. Value: `' + str + '`.' );
+        throw new TypeError( 'invalid argument. Must provide a string. Value: `' + str + '`.' );
     }
     setTimeout( done, 1000 );
 
