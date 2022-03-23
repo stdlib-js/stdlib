@@ -34,7 +34,7 @@ jobs:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - name: Checkout branch with UMD build
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: umd
       - name: Setup Node.js
@@ -57,7 +57,7 @@ jobs:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - name: Checkout branch with ESM build
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: esm
       - name: Setup Node.js
@@ -80,7 +80,7 @@ jobs:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - name: Checkout branch with Deno build
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: deno
       - name: Install Deno

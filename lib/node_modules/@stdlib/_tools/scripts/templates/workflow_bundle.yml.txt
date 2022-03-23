@@ -33,7 +33,7 @@ jobs:
   deno:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Copy files to deno directory
         run: |
           mkdir -p deno
@@ -107,7 +107,7 @@ jobs:
   umd:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Copy files to umd directory
         run: |
           mkdir -p umd
@@ -179,7 +179,7 @@ jobs:
   esm:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Copy files to umd directory
         run: |
           mkdir -p esm
