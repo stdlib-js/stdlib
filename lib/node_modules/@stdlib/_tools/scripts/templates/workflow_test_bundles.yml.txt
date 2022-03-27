@@ -17,12 +17,12 @@
 #/
 
 # Workflow name:
-name: Test Loading Bundles
+name: test_bundles
 
 # Workflow triggers:
 on:
   workflow_run:
-    workflows: ["bundle"]
+    workflows: ["test"]
     types: [completed]
   workflow_dispatch:
 

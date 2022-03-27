@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: Cancel Workflow Runs
+name: cancel
 
 # Workflow triggers:
 on:

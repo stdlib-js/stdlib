@@ -17,12 +17,12 @@
 #/
 
 # Workflow name:
-name: coverage
+name: test_coverage
 
 # Workflow triggers:
 on:
   workflow_run:
-    workflows: ["build"]
+    workflows: ["test"]
     types: [completed]
   workflow_dispatch:
 
