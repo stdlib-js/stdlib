@@ -53,7 +53,6 @@ The format identifier objects have the following properties:
 | specifier | format specifier (one of 's', 'c', 'd', 'i', 'u', 'b', 'o', 'x', 'X', 'e', 'E', 'f', 'F', 'g', 'G') |
 | flags     | format flags (string with any of '0', ' ', '+', '-', '#')                                           |
 | width     | minimum field width (integer or `'*'`)                                                              |
-| hasPeriod | boolean indicating whether format identifier contains a period (`'.'`)                              |
 | precision | precision (integer or `'*'`)                                                                        |
 | mapping   | positional mapping from format specifier to argument index                                          |
 

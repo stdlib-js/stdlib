@@ -38,11 +38,6 @@ interface FormatIdentifier {
 	width: string;
 
 	/**
-	* Boolean indicating whether format identifier contains a period (`'.'`).
-	*/
-	hasPeriod: boolean;
-
-	/**
 	* Precision (integer or `'*'`).
 	*/
 	precision: string;
