@@ -48,7 +48,9 @@ var out = format( str, 'world', 'Bob' );
 
 The format string is a string literal containing zero or more conversion specifications, each of which results in a string value being inserted to the output string. A conversion specification consists of a percent sign (`%`) followed by one or more of the following flags, width, precision, and conversion type characters. It thus takes the following form:
 
-    %[flags][width][.precision]specifier
+```text
+%[flags][width][.precision]specifier
+```
 
 Arguments following the format string are used to replace the placeholders in the format string. The number of arguments following the format string should be equal to the number of placeholders in the format string.
 
@@ -60,7 +62,9 @@ var out = format( str, 'Hello', 'World' );
 
 To supply arguments in a different order than they appear in the format string, positional placeholders as indicated by a `$` character in the format string are used. In this case, the conversion specification takes the form:
 
-    %[pos$][flags][width][.precision]specifier
+```text
+%[pos$][flags][width][.precision]specifier
+```
 
 ```javascript
 var str = '%3$s %2$s %1$s';
@@ -176,7 +180,7 @@ out = format( str, 5, 2 );
 The `precision` may be specified as a decimal integer or as an asterisk character (`*`), in which case the argument preceding the conversion specification is used as the precision value. The behavior of the `precision` differs depending on the conversion type:
 
 -   For `s` specifiers, the `precision` specifies the maximum number of characters to be written to the output.
--   For floating point specifiers (`f`, `F`, `e`, `E`), the `precision` specifies the number of digits after the decimal point to be written to the output (by default, this is `6).
+-   For floating point specifiers (`f`, `F`, `e`, `E`), the `precision` specifies the number of digits after the decimal point to be written to the output (by default, this is `6`).
 -  For `g` and `G` specifiers, the `precision` specifies the maximum number of significant digits to be written to the output.
 -  For integer specifiers (`d`, `i`, `u`, `b`, `o`, `x`, `X`), the `precision` specifies the minimum number of digits to be written to the output. If the value to be written is shorter than this number, the result is padded with zeros on the left. The value is not truncated even if the result is longer. For 
 
