@@ -16,7 +16,7 @@
     Examples
     --------
     > var v = {{alias}}( '8t' )
-    'invalid option. `%s` option must be an array. Option: `%s`.'
+    <string>
 
     See Also
     --------

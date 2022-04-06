@@ -46,7 +46,7 @@ Returns a two-character error identifier corresponding to a provided error messa
 
 ```javascript
 var v = msg2id( 'invalid value. `%s` must be a number. Value: `%s`.' );
-// returns '6d'
+// e.g., returns '6d'
 ```
 
 If provided an unrecognized error message, the function returns `null`.
@@ -74,15 +74,12 @@ var v = msg2id( 'beep boop baz' );
 
 ## Examples
 
-<!-- TODO: better example -->
-
 <!-- eslint no-undef: "error" -->
 
 ```javascript
 var msg2id = require( '@stdlib/error/tools/msg2id' );
 
 var list;
-var len;
 var v;
 var i;
 
@@ -90,9 +87,8 @@ list = [
     'invalid argument. First argument must be a number and not `NaN`. Value: `%s`.',
     'invalid argument. First argument must be a positive integer. Value: `%s`.'
 ];
-len = list.length;
 
-for ( i = 0; i < len; i++ ) {
+for ( i = 0; i < list.length; i++ ) {
     v = list[ i ];
     console.log( 'msg: "%s". id: "%s".', v, msg2id( v ) );
 }

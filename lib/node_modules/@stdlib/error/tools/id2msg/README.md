@@ -46,7 +46,7 @@ Returns an error message corresponding to a provided two-character error identif
 
 ```javascript
 var v = id2msg( '8t' );
-// returns 'invalid option. `%s` option must be an array. Option: `%s`.'
+// e.g., returns 'invalid option. `%s` option must be an array. Option: `%s`.'
 ```
 
 If provided an unrecognized error identifier, the function returns `null`.
@@ -82,7 +82,6 @@ var v = id2msg( 'beep_boop' );
 var id2msg = require( '@stdlib/error/tools/id2msg' );
 
 var list;
-var len;
 var v;
 var i;
 
@@ -93,9 +92,8 @@ list = [
     '0a',
     '9W'
 ];
-len = list.length;
 
-for ( i = 0; i < len; i++ ) {
+for ( i = 0; i < list.length; i++ ) {
     v = list[ i ];
     console.log( 'id: "%s". msg: "%s".', v, id2msg( v ) );
 }
@@ -148,7 +146,7 @@ Options:
 
 ```bash
 $ stdlib-id2msg '8t'
-invalid option. `%s` option must be an array. Option: `%s`.
+<string>
 ```
 
 </section>

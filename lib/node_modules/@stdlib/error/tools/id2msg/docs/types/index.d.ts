@@ -26,7 +26,7 @@
 *
 * @example
 * var v = id2msg( '8t' );
-* // returns 'invalid option. `%s` option must be an array. Option: `%s`.'
+* // returns <string>
 */
 declare function id2msg( id: string ): string | null;
 
