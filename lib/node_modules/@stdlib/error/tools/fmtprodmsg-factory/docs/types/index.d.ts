@@ -61,7 +61,7 @@ interface Options {
 * var fcn = factory( opts );
 * // returns <Function>
 */
-declare function fmtprodmsgFactory( options: Options ): FormatProdErrorMsgFunction;
+declare function fmtprodmsgFactory( options?: Options ): FormatProdErrorMsgFunction;
 
 
 

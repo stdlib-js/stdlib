@@ -28,8 +28,8 @@ import fmtprodmsgFactory = require( './index' );
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	fmtprodmsgFactory(); // $ExpectError
 	fmtprodmsgFactory( {}, 21 ); // $ExpectError
+	fmtprodmsgFactory( {}, 'abc', 123 ); // $ExpectError
 }
 
 // The function returns a function which returns a string...
