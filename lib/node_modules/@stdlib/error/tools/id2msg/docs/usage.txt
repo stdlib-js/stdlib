@@ -1,0 +1,7 @@
+
+Usage: stdlib-id2msg [options] <id>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
