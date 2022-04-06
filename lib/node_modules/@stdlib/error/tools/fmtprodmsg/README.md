@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# formatProdErrorMessage
+# fmtprodmsg
 
 > Format an error message for production.
 
@@ -27,19 +27,27 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var formatProdErrorMessage = require( '@stdlib/error/tools/fmtprodmsg' );
+var fmtprodmsg = require( '@stdlib/error/tools/fmtprodmsg' );
 ```
 
-#### formatProdErrorMessage( code, ...args )
+#### fmtprodmsg( code, ...args )
 
 Formats an error message for production.
 
 ```javascript
-var msg = formatProdErrorMessage( '27', 'foo', 'bar' );
-// returns 'Minified stdlib error code: 27. Visit https://stdlib.io/docs/api/latest/error-decoder.html?code=27&arg[]=foo&arg[]=bar for the full message.'
+var msg = fmtprodmsg( '27', 'foo', 'bar' );
+// returns 'Error: 27. https://stdlib.io/e?code=27&arg[]=foo&arg[]=bar'
 ```
 
 <!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 
@@ -50,16 +58,16 @@ var msg = formatProdErrorMessage( '27', 'foo', 'bar' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var formatProdErrorMessage = require( '@stdlib/error/tools/fmtprodmsg' );
+var fmtprodmsg = require( '@stdlib/error/tools/fmtprodmsg' );
 
-var msg = formatProdErrorMessage( '3', 'foo' );
-// returns 'Minified stdlib error code: 3. Visit https://stdlib.io/docs/api/latest/error-decoder.html?code=3&arg[]=foo for the full message.'
+var msg = fmtprodmsg( '3', 'foo' );
+// returns 'Error: 3. https://stdlib.io/e?code=3&arg[]=foo'
 
-msg = formatProdErrorMessage( '5', 'foo', 'bar' );
-// returns 'Minified stdlib error code: 5. Visit https://stdlib.io/docs/api/latest/error-decoder.html?code=5&arg[]=foo&arg[]=bar for the full message.'
+msg = fmtprodmsg( '5', 'foo', 'bar' );
+// returns 'Error: 5. https://stdlib.io/e?code=5&arg[]=foo&arg[]=bar'
 
-msg = formatProdErrorMessage( '5', 'foo', 'bar', 123 );
-// returns 'Minified stdlib error code: 5. Visit https://stdlib.io/docs/api/latest/error-decoder.html?code=5&arg[]=foo&arg[]=bar&arg[]=123 for the full message.'
+msg = fmtprodmsg( '5', 'foo', 'bar', 123 );
+// returns 'Error: 5. https://stdlib.io/e?code=5&arg[]=foo&arg[]=bar&arg[]=123'
 ```
 
 </section>

@@ -16,18 +16,18 @@
 * limitations under the License.
 */
 
-import formatProdErrorMessage = require( './index' );
+import fmtprodmsg = require( './index' );
 
 
 // TESTS //
 
 // The function returns an string...
 {
-	formatProdErrorMessage( '1' ); // $ExpectType string
-	formatProdErrorMessage( '3', 'wrong_type' ); // $ExpectType string
+	fmtprodmsg( '1' ); // $ExpectType string
+	fmtprodmsg( '3', 'wrong_type' ); // $ExpectType string
 }
 
 // The compiler throws an error if the function is not provided at least one argument...
 {
-	formatProdErrorMessage(); // $ExpectError
+	fmtprodmsg(); // $ExpectError
 }

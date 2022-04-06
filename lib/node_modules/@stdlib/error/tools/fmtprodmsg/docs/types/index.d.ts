@@ -28,12 +28,12 @@
 * @returns formatted error message
 *
 * @example
-* var msg = formatProdErrorMessage( '3', 'wrong_type' );
+* var msg = fmtprodmsg( '3', 'wrong_type' );
 * // returns <string>
 */
-declare function formatProdErrorMessage( code: any, ...args: Array<any> ): string;
+declare function fmtprodmsg( code: any, ...args: Array<any> ): string;
 
 
 // EXPORTS //
 
-export = formatProdErrorMessage;
+export = fmtprodmsg;
