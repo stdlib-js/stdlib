@@ -26,80 +26,12 @@
 * @param code - error code
 * @param ...args - error message arguments
 * @returns formatted error message
-*/
-type FormatProdErrorMsgFunction = ( code: any, ...args: Array<any> ) => string;
-
-/**
-* Interface defining function options.
-*/
-interface Options {
-	/**
-	* Website URL for full error message.
-	*/
-	url?: string;
-
-	/**
-	* Error message template with `{{url}}` and `{{code}}` placeholders that will be replaced.
-	*/
-	message?: string;
-}
-
-/**
-* Interface for formatting error message for production.
-*/
-interface FormatProdErrorMessage {
-	/**
-	* Formats an error message for production.
-	*
-	* @param code - error code
-	* @param ...args - error message arguments
-	* @returns formatted error message
-	*
-	* @example
-	* var msg = formatProdErrorMessage( '3', 'wrong_type' );
-	* // returns <string>
-	*/
-	( code: any, ...args: Array<any> ): string;
-
-	/**
-	* Returns a function which formats an error message for production.
-	*
-	* @param options - function options
-	* @param options.url - website URL for full error message (default: `'https://stdlib.io/docs/api/latest/error-decoder.html'`)
-	* @param options.message - error message template with `{{url}}` and `{{code}}` placeholders that will be replaced (default: `'Minified stdlib error code: {{code}}. Visit {{url}} for the full message.'`)
-	* @returns error formatting function
-	*
-	* @example
-	* var opts = {
-	*     'url': 'https://stdlib.io/error-decoder.html'
-	* };
-	*
-	* var fcn = factory( opts );
-	* // returns <Function>
-	*/
-	factory( options: Options ): FormatProdErrorMsgFunction;
-}
-
-/**
-* Formats an error message for production.
-*
-* @param code - error code
-* @param ...args - error message arguments
-* @returns formatted error message
 *
 * @example
 * var msg = formatProdErrorMessage( '3', 'wrong_type' );
 * // returns <string>
-*
-* @example
-* var opts = {
-*     'url': 'https://stdlib.io/error-decoder.html'
-* };
-*
-* var fcn = formatProdErrorMessage.factory( opts );
-* // returns <Function>
 */
-declare var formatProdErrorMessage: FormatProdErrorMessage;
+declare function formatProdErrorMessage( code: any, ...args: Array<any> ): string;
 
 
 // EXPORTS //
