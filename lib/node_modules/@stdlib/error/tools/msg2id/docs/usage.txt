@@ -1,0 +1,7 @@
+
+Usage: stdlib-msg2id [options] <msg>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
