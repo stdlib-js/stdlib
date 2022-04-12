@@ -68,3 +68,27 @@ jobs:
           SLUG=${{ github.repository }}
           echo "Pushing changes to $SLUG..."
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" production --force
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: production
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+        timeout-minutes: 5
+      - name: Install production and development dependencies
+        id: install
+        run: |
+          npm install || npm install || npm install
+        timeout-minutes: 15
+      - name: Build native add-on (if present)
+        run: |
+          if [ -f "binding.gyp" ]; then
+            npm install node-gyp --no-save && ./node_modules/.bin/node-gyp rebuild
+          fi
+      - name: Run tests
+        id: tests
+        run: |
+          npm test || npm test || npm test
