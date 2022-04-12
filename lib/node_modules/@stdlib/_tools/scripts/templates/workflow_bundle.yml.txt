@@ -22,11 +22,9 @@ name: bundle
 # Workflow triggers:
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - production
-    tags-ignore:
-      - 'v[0-9]+\.[0-9]+\.[0-9]+'
+  workflow_run:
+    workflows: ["productionize"]
+    types: [completed]
 
 # Workflow jobs:
 jobs:
