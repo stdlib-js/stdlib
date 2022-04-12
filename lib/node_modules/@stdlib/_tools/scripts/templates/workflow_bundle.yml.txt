@@ -24,7 +24,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - production
     tags-ignore:
       - 'v[0-9]+\.[0-9]+\.[0-9]+'
 
@@ -34,6 +34,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: production
       - name: Copy files to deno directory
         run: |
           mkdir -p deno
@@ -108,6 +110,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: production
       - name: Copy files to umd directory
         run: |
           mkdir -p umd
@@ -180,6 +184,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: production
       - name: Copy files to umd directory
         run: |
           mkdir -p esm
