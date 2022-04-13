@@ -22,7 +22,7 @@ name: test_bundles
 # Workflow triggers:
 on:
   workflow_run:
-    workflows: ["test"]
+    workflows: ["bundle"]
     types: [completed]
   workflow_dispatch:
 
