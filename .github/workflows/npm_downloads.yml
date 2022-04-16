@@ -64,7 +64,7 @@ jobs:
       - name: 'Fetch data'
         id: download_data
         run: |
-          url="https://api.npmjs.org/downloads/range/$(date -v-1y '+%Y-%m-%d'):$(date '+%Y-%m-%d')/${{ steps.package_name.outputs.package_name }}"
+          url="https://api.npmjs.org/downloads/range/$(date --date='1 year ago' '+%Y-%m-%d'):$(date '+%Y-%m-%d')/${{ steps.package_name.outputs.package_name }}"
           echo "$url"
           data=$(curl "$url")
           mkdir ./tmp
