@@ -19,6 +19,7 @@
   "main": "./lib",
   "browser": "./lib/browser.js",
   "directories": {
+    "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",

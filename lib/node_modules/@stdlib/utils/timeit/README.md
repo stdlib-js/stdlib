@@ -257,14 +257,10 @@ var join = require( 'path' ).join;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var timeit = require( '@stdlib/utils/timeit' );
 
-var before;
-var code;
-var opts;
+var before = readFileSync( join( __dirname, 'examples', 'before.txt' ), 'utf8' );
+var code = readFileSync( join( __dirname, 'examples', 'code.txt' ), 'utf8' );
 
-before = readFileSync( join( __dirname, 'examples', 'before.txt' ), 'utf8' );
-code = readFileSync( join( __dirname, 'examples', 'code.txt' ), 'utf8' );
-
-opts = {
+var opts = {
     'iterations': 1e6,
     'repeats': 5,
     'before': before
