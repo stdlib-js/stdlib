@@ -31,7 +31,7 @@ jobs:
   cancel:
 
     # Define a display name:
-    name: 'Cancel Workflow Runs'
+    name: 'Cancel workflow runs'
 
     # Define the type of virtual host machine:
     runs-on: 'ubuntu-latest'

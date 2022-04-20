@@ -41,7 +41,7 @@ jobs:
   test-install:
 
     # Define display name:
-    name: "Test installing dependencies"
+    name: 'Test installing dependencies'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
@@ -60,7 +60,7 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
 
-      # Install Node.js
+      # Install Node.js:
       - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:

@@ -55,7 +55,7 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
 
-      # Install Node.js
+      # Install Node.js:
       - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:
@@ -69,7 +69,7 @@ jobs:
           npm install || npm install || npm install
         timeout-minutes: 15
 
-      # Build native add-on if present
+      # Build native add-on if present:
       - name: 'Build native add-on (if present)'
         run: |
           if [ -f "binding.gyp" ]; then

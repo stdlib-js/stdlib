@@ -21,73 +21,131 @@ name: publish
 
 # Workflow triggers:
 on:
+  # Run workflow when a new tag is pushed to the repository:
   push:
     tags: v[0-9]+.[0-9]+.[0-9]+
 
 # Workflow jobs:
 jobs:
+
+  # Define job to publish package to npm:
   publish:
+
+    # Define display name:
+    name: 'Publish to npm'
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define environment variables:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+    # Define the sequence of job steps...
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
         with:
           node-version: 16
         timeout-minutes: 5
-      - name: Replace all GitHub links to individual packages with npm links
+
+      # Replace GitHub links to individual packages with npm links:
+      - name: 'Replace all GitHub links to individual packages with npm links'
         run: |
           find . -type f -name '*.md' -print0 | xargs -0 sed -Ei '/tree\/main/b; s/@stdlib\/([^:]*)\]: https:\/\/github.com\/stdlib-js/@stdlib\/\1\]: https:\/\/www.npmjs.com\/package\/@stdlib/g'
-      - name: Replace list with links to other branches from installation section
+
+      # Replace list with links to other branches from installation section:
+      - name: 'Replace list with links to other branches from installation section'
         run: |
           find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`\n\nAlternatively,[^<]+<\/section>/\`\`\`\n\n<\/section>/"
-      - name: Replace all stdlib GitHub dependencies with the respective npm packages
+
+      # Replace all stdlib GitHub dependencies with the respective npm packages:
+      - name: 'Replace all stdlib GitHub dependencies with the respective npm packages'
         run: |
           find package.json -type f -print0 | xargs -0 sed -Ei 's/"github:stdlib-js[^"]*"/"^0.0.x"/g'
-      - name: Publish package to npm
+
+      # Publish package to npm:
+      - name: 'Publish package to npm'
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: public
-      - name: Discard any uncommitted changes
+
+      # Discard any uncommitted changes:
+      - name: 'Discard any uncommitted changes'
         run: |
           git reset --hard
-      - uses: act10ns/slack@v1
+
+      # Send status to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
+
+  # Define job to increment semver version and commit the changes to main branch...
   increment:
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
     steps:
-      - name: Checkout main branch
+
+      # Checkout main branch of repository:
+      - name: 'Checkout main branch'
         uses: actions/checkout@v3
         with:
           ref: main
-      - name: Increment version in `package.json` to the version number of the tag
+
+      # Increment version:
+      - name: 'Increment version in `package.json` to the version number of the tag'
         run: |
           VERSION=$(echo ${{ github.ref }} | sed -E 's/refs\/tags\/v?([0-9]+.[0-9]+.[0-9]+).*/\1/')
           sed -Ei "s/\"version\": \"[^\"]+\"/\"version\": \"$VERSION\"/g" package.json
-      - name: Configure git
+
+      # Configure git:
+      - name: 'Configure git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
-      - name: Commit changes
+
+      # Commit changes:
+      - name: 'Commit changes'
         run: |
           git add package.json
           git commit -m "Auto-generated commit"
-      - name: Push changes
+
+      # Push changes:
+      - name: 'Push changes'
         run: |
           SLUG=${{ github.repository }}
           echo "Pushing changes to $SLUG..."
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" main
+
+  # Define job to cancel any running or queued workflow runs...
   cancel:
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Time out the job after 3 minutes:
     timeout-minutes: 3
+
+    # Define the sequence of job steps...
     steps:
-      - uses: styfle/cancel-workflow-action@0.9.0
+
+      # Cancel any running or queued workflow runs:
+      - name: 'Cancel running or queued workflow runs'
+        uses: styfle/cancel-workflow-action@0.9.0
         with:
           workflow_id: >-
             benchmark.yml,

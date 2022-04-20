@@ -35,6 +35,9 @@ jobs:
   # Define a job for retrieving npm download counts...
   npm_downloads:
 
+    # Define display name:
+    name: 'Retrieve npm download counts'
+
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
 

@@ -53,7 +53,7 @@ jobs:
         with:
           ref: umd
 
-      # Install Node.js
+      # Install Node.js:
       - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:
@@ -95,7 +95,7 @@ jobs:
         with:
           ref: esm
 
-      # Install Node.js
+      # Install Node.js:
       - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:
@@ -137,7 +137,7 @@ jobs:
         with:
           ref: deno
 
-      # Install Deno
+      # Install Deno:
       - name: 'Install Deno'
         uses: denoland/setup-deno@v1
         with:

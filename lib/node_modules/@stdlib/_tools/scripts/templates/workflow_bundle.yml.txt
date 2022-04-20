@@ -21,22 +21,40 @@ name: bundle
 
 # Workflow triggers:
 on:
+  # Allow workflow to be manually run:
   workflow_dispatch:
+
+  # Run workflow upon completion of `productionize` workflow:
   workflow_run:
     workflows: ["productionize"]
     types: [completed]
 
 # Workflow jobs:
 jobs:
+
+  # Define job to create a bundle for use in Deno...
   deno:
+
+    # Define display name:
+    name: 'Create Deno bundle'
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
     steps:
-      - uses: actions/checkout@v3
-      - name: Checkout production branch
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Checkout production branch:
+      - name: 'Checkout production branch'
         run: |
           git fetch --all
           git checkout -b production origin/production
-      - name: Copy files to deno directory
+
+      # Copy files to deno directory:
+      - name: 'Copy files to deno directory'
         run: |
           mkdir -p deno
           cp README.md LICENSE CONTRIBUTORS NOTICE ./deno
@@ -48,21 +66,30 @@ jobs:
           if [ -e ./docs/types/index.d.ts ]; then
             cp ./docs/types/index.d.ts ./deno/mod.d.ts
           fi
-      - uses: actions/setup-node@v2
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
         with:
           node-version: 16
         timeout-minutes: 5
+
+      # Install dependencies:
       - name: Install production and development dependencies
         id: install
         run: |
           npm install || npm install || npm install
         timeout-minutes: 15
-      - name: Bundle package for Deno
+
+      # Bundle package for use in Deno:
+      - name: 'Bundle package for Deno'
         id: deno-bundle
         uses: stdlib-js/bundle-action@main
         with:
           target: 'deno'
-      - name: Rewrite file contents
+
+      # Rewrite file contents:
+      - name: 'Rewrite file contents'
         run: |
           # Replace links to other packages with links to the deno branch:
           find ./deno -type f -name '*.md' -print0 | xargs -0 sed -Ei "/\/tree\/main/b; /^\[@stdlib[^:]+: https:\/\/github.com\/stdlib-js\// s/(.*)/\\1\/tree\/deno/";
@@ -87,11 +114,15 @@ jobs:
 
           # Create package.json file for deno branch:
           jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "type": "module", "main": "./mod.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./deno/package.json
-      - name: Configure git
+
+      # Configure git:
+      - name: 'Configure git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
-      - name: Check if remote `deno` branch exists
+
+      # Check if remote `deno` branch exists:
+      - name: 'Check if remote branch exists'
         id: deno-branch-exists
         continue-on-error: true
         run: |
@@ -101,7 +132,9 @@ jobs:
           else
             echo "::set-output name=remote-exists::false"
           fi
-      - name: If `deno` exists, checkout branch and rebase on `main`
+
+      # If `deno` exists, checkout branch and rebase on `main`:
+      - name: 'If `deno` exists, checkout branch and rebase on `main`'
         if: steps.deno-branch-exists.outputs.remote-exists
         continue-on-error: true
         run: |
@@ -110,68 +143,106 @@ jobs:
           while [ $? -ne 0 ]; do
             git rebase --skip
           done
-      - name: If `deno` does not exist, checkout `main` and create `deno` branch
+
+      # If `deno` does not exist, checkout `main` and create `deno` branch:
+      - name: 'If `deno` does not exist, checkout `main` and create `deno` branch'
         if: ${{ steps.deno-branch-exists.outputs.remote-exists == false }}
         run: |
           git checkout main
           git checkout -b deno
-      - name: Delete everything in current directory aside from deno folder
+
+      # Delete everything in current directory aside from deno folder:
+      - name: 'Delete everything in current directory aside from deno folder'
         run: |
           find . -type 'f' | grep -v -e "deno" -e ".git/" | xargs rm
           find . -mindepth 1 -type 'd' | grep -v -e "deno" -e ".git" | xargs rm -rf
-      - name: Move deno directory to root
+
+      # Move deno directory to root:
+      - name: 'Move deno directory to root'
         run: |
           mv ./deno/* .
           rmdir ./deno
-      - name: Commit changes
+
+      # Commit changes:
+      - name: 'Commit changes'
         run: |
           git add -A
           git commit -m "Auto-generated commit"
-      - name: Push changes
+
+      # Push changes:
+      - name: 'Push changes'
         run: |
           SLUG=${{ github.repository }}
           echo "Pushing changes to $SLUG..."
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" deno --force
-      - name: Send status to Slack channel in case of failure
+
+      # Send status to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
+
+  # Define job to create a UMD bundle...
   umd:
+
+    # Define display name:
+    name: 'Create UMD bundle'
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
     steps:
-      - uses: actions/checkout@v3
-      - name: Checkout production branch
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Checkout production branch:
+      - name: 'Checkout production branch'
         run: |
           git fetch --all
           git checkout -b production origin/production
-      - name: Copy files to umd directory
+
+      # Copy files to umd directory:
+      - name: 'Copy files to umd directory'
         run: |
           mkdir -p umd
           cp README.md LICENSE CONTRIBUTORS NOTICE ./umd
-      - uses: actions/setup-node@v2
+
+      # Install Node.js
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
         with:
           node-version: 16
         timeout-minutes: 5
-      - name: Install production and development dependencies
+
+      # Install dependencies:
+      - name: 'Install production and development dependencies'
         id: install
         run: |
           npm install || npm install || npm install
         timeout-minutes: 15
-      - name: Extract alias
+
+      # Extract alias:
+      - name: 'Extract alias'
         id: extract-alias
         run: |
           alias=$(grep -E 'require\(' README.md | head -n 1 |  sed -E 's/^var ([a-zA-Z0-9_]+) = .+/\1/')
           echo "::set-output name=alias::${alias}"
-      - name: Create Universal Module Definition (UMD) bundle
+
+      # Create Universal Module Definition (UMD) bundle:
+      - name: 'Create Universal Module Definition (UMD) bundle'
         id: umd-bundle
         uses: stdlib-js/bundle-action@main
         with:
           target: 'umd'
           alias: ${{ steps.extract-alias.outputs.alias }}
-      - name: Rewrite file contents
+
+      # Rewrite file contents:
+      - name: 'Rewrite file contents'
         run: |
 
           # Replace links to other packages with links to the umd branch:
@@ -196,11 +267,15 @@ jobs:
 
           # Create package.json file for umd branch:
           jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "main": "./bundle.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./umd/package.json
-      - name: Configure git
+
+      # Configure git:
+      - name: 'Configure git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
-      - name: Check if remote `umd` branch exists
+
+      # Check if remote `umd` branch exists:
+      - name: 'Check if remote `umd` branch exists'
         id: umd-branch-exists
         continue-on-error: true
         run: |
@@ -210,7 +285,9 @@ jobs:
           else
             echo "::set-output name=remote-exists::false"
           fi
-      - name: If `umd` exists, checkout branch and rebase on `main`
+
+      # If `umd` exists, checkout branch and rebase on `main`:
+      - name: 'If `umd` exists, checkout branch and rebase on `main`'
         if: steps.umd-branch-exists.outputs.remote-exists
         continue-on-error: true
         run: |
@@ -219,44 +296,71 @@ jobs:
           while [ $? -ne 0 ]; do
             git rebase --skip
           done
-      - name: If `umd` does not exist, checkout `main` and create `umd` branch
+
+      # If `umd` does not exist, checkout `main` and create `umd` branch:
+      - name: 'If `umd` does not exist, checkout `main` and create `umd` branch'
         if: ${{ steps.umd-branch-exists.outputs.remote-exists == false }}
         run: |
           git checkout main
           git checkout -b umd
-      - name: Delete everything in current directory aside from umd folder
+
+      # Delete everything in current directory aside from umd folder:
+      - name: 'Delete everything in current directory aside from umd folder'
         run: |
           find . -type 'f' | grep -v -e "umd" -e ".git/" | xargs rm
           find . -mindepth 1 -type 'd' | grep -v -e "umd" -e ".git" | xargs rm -rf
-      - name: Move umd directory to root
+
+      # Move umd directory to root:
+      - name: 'Move umd directory to root'
         run: |
           mv ./umd/* .
           rmdir ./umd
-      - name: Commit changes
+
+      # Commit changes:
+      - name: 'Commit changes'
         run: |
           git add -A
           git commit -m "Auto-generated commit"
-      - name: Push changes
+
+      # Push changes:
+      - name: 'Push changes'
         run: |
           SLUG=${{ github.repository }}
           echo "Pushing changes to $SLUG..."
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" umd --force
-      - name: Send status to Slack channel in case of failure
+
+      # Send status to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
+
+  # Define job to create ES module build...
   esm:
+
+    # Define display name:
+    name: 'Create ES module build'
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
     steps:
-      - uses: actions/checkout@v3
-      - name: Checkout production branch
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Checkout production branch:
+      - name: 'Checkout production branch'
         run: |
           git fetch --all
           git checkout -b production origin/production
-      - name: Copy files to umd directory
+
+      # Copy files to umd directory:
+      - name: 'Copy files to umd directory'
         run: |
           mkdir -p esm
           cp README.md LICENSE CONTRIBUTORS NOTICE ./esm
@@ -268,21 +372,30 @@ jobs:
           if [ -d index.d.ts ]; then
             cp index.d.ts ./esm/index.d.ts
           fi
-      - uses: actions/setup-node@v2
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
         with:
           node-version: 16
         timeout-minutes: 5
-      - name: Install production and development dependencies
+
+      # Install dependencies:
+      - name: 'Install production and development dependencies'
         id: install
         run: |
           npm install || npm install || npm install
         timeout-minutes: 15
-      - name: Create ES Module (ESM) bundle
+
+      # Create ES Module (ESM) bundle:
+      - name: 'Create ES Module (ESM) bundle'
         id: esm-bundle
         uses: stdlib-js/bundle-action@main
         with:
           target: 'esm'
-      - name: Rewrite file contents
+
+      # Rewrite file contents:
+      - name: 'Rewrite file contents'
         run: |
 
           # Replace links to other packages with links to the esm branch:
@@ -311,11 +424,15 @@ jobs:
 
           # Create package.json file for esm branch:
           jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "type": "module", "main": "./index.mjs", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./esm/package.json
-      - name: Configure git
+
+      # Configure git:
+      - name: 'Configure git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
-      - name: Check if remote `esm` branch exists
+
+      # Check if remote `esm` branch exists:
+      - name: 'Check if remote `esm` branch exists'
         id: esm-branch-exists
         continue-on-error: true
         run: |
@@ -325,7 +442,9 @@ jobs:
           else
             echo "::set-output name=remote-exists::false"
           fi
-      - name: If `esm` exists, checkout branch and rebase on `main`
+
+      # If `esm` exists, checkout branch and rebase on `main`:
+      - name: 'If `esm` exists, checkout branch and rebase on `main`'
         if: steps.esm-branch-exists.outputs.remote-exists
         continue-on-error: true
         run: |
@@ -334,29 +453,41 @@ jobs:
           while [ $? -ne 0 ]; do
             git rebase --skip
           done
-      - name: If `esm` does not exist, checkout `main` and create `esm` branch
+
+      # If `esm` does not exist, checkout `main` and create `esm` branch:
+      - name: 'If `esm` does not exist, checkout `main` and create `esm` branch'
         if: ${{ steps.esm-branch-exists.outputs.remote-exists == false }}
         run: |
           git checkout main
           git checkout -b esm
-      - name: Delete everything in current directory aside from esm folder
+
+      # Delete everything in current directory aside from esm folder:
+      - name: 'Delete everything in current directory aside from esm folder'
         run: |
           find . -type 'f' | grep -v -e "esm" -e ".git/" | xargs rm
           find . -mindepth 1 -type 'd' | grep -v -e "esm" -e ".git" | xargs rm -rf
-      - name: Move esm directory to root
+
+      # Move esm directory to root:
+      - name: 'Move esm directory to root'
         run: |
           mv ./esm/* .
           rmdir ./esm
-      - name: Commit changes
+
+      # Commit changes:
+      - name: 'Commit changes'
         run: |
           git add -A
           git commit -m "Auto-generated commit"
-      - name: Push changes
+
+      # Push changes to `esm` branch:
+      - name: 'Push changes'
         run: |
           SLUG=${{ github.repository }}
           echo "Pushing changes to $SLUG..."
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" esm --force
-      - name: Send status to Slack channel in case of failure
+
+      # Send status to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}

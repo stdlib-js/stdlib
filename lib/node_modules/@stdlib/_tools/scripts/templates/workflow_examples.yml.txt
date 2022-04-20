@@ -31,7 +31,7 @@ jobs:
   examples:
 
     # Define display name:
-    name: 'Run Examples'
+    name: 'Run examples'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
@@ -43,7 +43,7 @@ jobs:
       - name: 'Checkout the repository'
         uses: actions/checkout@v3
 
-      # Install Node.js
+      # Install Node.js:
       - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:

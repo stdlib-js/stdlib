@@ -36,7 +36,7 @@ jobs:
   coverage:
 
     # Display name:
-    name: "Test Coverage"
+    name: 'Calculate Test Coverage'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
@@ -48,7 +48,7 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
 
-      # Install Node.js
+      # Install Node.js:
       - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:
@@ -62,7 +62,7 @@ jobs:
         timeout-minutes: 15
 
       # Build native add-on if present:
-      - name: Build native add-on (if present)
+      - name: 'Build native add-on (if present)'
         run: |
           if [ -f "binding.gyp" ]; then
             npm install node-gyp --no-save && ./node_modules/.bin/node-gyp rebuild

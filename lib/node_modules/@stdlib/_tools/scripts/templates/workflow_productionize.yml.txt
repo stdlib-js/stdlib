@@ -21,79 +21,140 @@ name: productionize
 
 # Workflow triggers:
 on:
+  # Run workflow when a new commit is pushed to the repository:
   push:
+
+  # Allow the workflow to be manually run:
   workflow_dispatch:
 
 # Workflow jobs:
 jobs:
+
+  # Define a job to create a production build...
   productionize:
-    runs-on: ubuntu-latest
+
+    # Define display name:
+    name: 'Productionize'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Define the sequence of job steps...
     steps:
-      - name: Checkout main branch
+      # Checkout main branch of repository:
+      - name: 'Checkout main branch'
         uses: actions/checkout@v3
         with:
           ref: main
-      - name: Setup Node.js
+
+      # Install Node.js:
+      - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:
           node-version: 16
         timeout-minutes: 5
-      - name: Create new `production` branch
+
+      # Create production branch:
+      - name: 'Create production branch'
         run: |
           git checkout -b production
-      - name: Transform Error Messages
+
+      # Transform error messages:
+      - name: 'Transform error messages'
         id: transform-error-messages
         uses: stdlib-js/transform-errors-action@main
-      - name: Replace double quotes with single quotes in rewritten format string error messages
+
+      # Format error messages:
+      - name: 'Replace double quotes with single quotes in rewritten format string error messages'
         run: |
           find . -name "*.js" -exec sed -E -i "s/Error\( format\( \"([a-zA-Z0-9]+)\"/Error\( format\( '\1'/g" {} \;
-      - name: Replace double quotes with single quotes in rewritten string literal error messages
+
+      # Format string literal error messages:
+      - name: 'Replace double quotes with single quotes in rewritten string literal error messages'
         run: |
           find . -name "*.js" -exec sed -E -i "s/Error\( format\(\"([a-zA-Z0-9]+)\"\)/Error\( format\( '\1' \)/g" {} \;
-      - name: Replace double quotes with single quotes in inserted `require` calls
+
+      # Format code:
+      - name: 'Replace double quotes with single quotes in inserted `require` calls'
         run: |
           find . -name "*.js" -exec sed -E -i "s/require\( ?\"@stdlib\/error-tools-fmtprodmsg\" ?\);/require\( '@stdlib\/error-tools-fmtprodmsg' \);/g" {} \;
-      - name: Change `@stdlib/string-format` to `@stdlib/error-tools-fmtprodmsg` in package.json if the former is a dependency, otherwise insert it as a dependency
+
+      # Change `@stdlib/string-format` to `@stdlib/error-tools-fmtprodmsg` in package.json if the former is a dependency, otherwise insert it as a dependency:
+      - name: 'Update dependencies in package.json'
         run: |
           if grep -q '"@stdlib/string-format"' package.json; then
             sed -i "s/\"@stdlib\/string-format\"/\"@stdlib\/error-tools-fmtprodmsg\"/g" package.json
           else
             node -e "var pkg = require( './package.json' ); pkg.dependencies[ '@stdlib/error-tools-fmtprodmsg' ] = '^0.0.x'; require( 'fs' ).writeFileSync( 'package.json', JSON.stringify( pkg, null, 2 ) );"
           fi
-      - name: Configure git
+
+      # Configure git:
+      - name: 'Configure git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
-      - name: Commit changes
+
+      # Commit changes:
+      - name: 'Commit changes'
         run: |
           git add -A
           git commit -m "Transform error messages"
-      - name: Push changes
+
+      # Push changes:
+      - name: 'Push changes'
         run: |
           SLUG=${{ github.repository }}
           echo "Pushing changes to $SLUG..."
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" production --force
+
+  # Define a job for running tests of the productionized code...
   test:
-    runs-on: ubuntu-latest
+
+    # Define a display name:
+    name: 'Run Tests'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Indicate that this job depends on the prior job finishing:
+    needs: test
+
+    # Run this job regardless of the outcome of the prior job:
+    if: always()
+
+    # Define the sequence of job steps...
     steps:
-      - uses: actions/checkout@v3
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
         with:
+          # Use the `production` branch:
           ref: production
-      - uses: actions/setup-node@v2
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
         with:
           node-version: 16
         timeout-minutes: 5
-      - name: Install production and development dependencies
+
+      # Install dependencies:
+      - name: 'Install production and development dependencies'
         id: install
         run: |
           npm install || npm install || npm install
         timeout-minutes: 15
-      - name: Build native add-on (if present)
+
+      # Build native add-on if present:
+      - name: 'Build native add-on (if present)'
         run: |
           if [ -f "binding.gyp" ]; then
             npm install node-gyp --no-save && ./node_modules/.bin/node-gyp rebuild
           fi
-      - name: Run tests
+
+      # Run tests:
+      - name: 'Run tests'
         id: tests
         run: |
           npm test || npm test || npm test
