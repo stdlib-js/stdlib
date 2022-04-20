@@ -21,39 +21,69 @@ name: test
 
 # Workflow triggers:
 on:
+  # Run workflow on a weekly schedule:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '30 1 * * 6'
+
+  # Allow the workflow to be manually run:
   workflow_dispatch:
+
+  # Run workflow on each push:
   push:
 
 # Workflow jobs:
 jobs:
+
+  # Define job to run tests...
   test:
-    runs-on: ubuntu-latest
+
+    # Define display name:
+    name: 'Run tests'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Define environment variables:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+    # Define the sequence of job steps...
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Install Node.js
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
         with:
           node-version: 16
         timeout-minutes: 5
-      - name: Install production and development dependencies
+
+      # Install dependencies:
+      - name: 'Install production and development dependencies'
         id: install
         run: |
           npm install || npm install || npm install
         timeout-minutes: 15
-      - name: Build native add-on (if present)
+
+      # Build native add-on if present
+      - name: 'Build native add-on (if present)'
         run: |
           if [ -f "binding.gyp" ]; then
             npm install node-gyp --no-save && ./node_modules/.bin/node-gyp rebuild
           fi
-      - name: Run tests
+
+      # Run tests:
+      - name: 'Run tests'
         id: tests
         run: |
           npm test || npm test || npm test
-      - name: Send status to Slack channel in case of failure
+
+      # Send status to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}

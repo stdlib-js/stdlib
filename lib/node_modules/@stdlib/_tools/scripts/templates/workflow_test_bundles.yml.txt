@@ -21,76 +21,135 @@ name: test_bundles
 
 # Workflow triggers:
 on:
+  # Run workflow upon completion of `bundle` workflow run:
   workflow_run:
     workflows: ["bundle"]
     types: [completed]
+
+  # Allow workflow to be manually run:
   workflow_dispatch:
 
 # Workflow jobs:
 jobs:
+
+  # Define job to test UMD bundles...
   test-umd:
+
+    # Define display name:
+    name: 'Test UMD Bundles'
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define environment variables:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+    # Define the sequence of job steps...
     steps:
-      - name: Checkout branch with UMD build
+      # Checkout UMD branch of the repository:
+      - name: 'Checkout branch with UMD build'
         uses: actions/checkout@v3
         with:
           ref: umd
-      - name: Setup Node.js
+
+      # Install Node.js
+      - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:
           node-version: 17
-      - name: Try loading UMD module
+
+      # Try loading the UMD bundle:
+      - name: 'Try loading UMD bundle'
         run: |
           node --eval "require( './bundle.js' )" || exit $?
-      - name: Send status to Slack channel in case of failure
+
+      # Send notification to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
+
+  # Define job to test ES modules...
   test-esm:
+
+    # Define display name:
+    name: 'Test ES Modules'
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define environment variables:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+    # Define the sequence of job steps...
     steps:
-      - name: Checkout branch with ESM build
+
+      # Checkout ES modules branch of the repository:
+      - name: 'Checkout branch with ESM build'
         uses: actions/checkout@v3
         with:
           ref: esm
-      - name: Setup Node.js
+
+      # Install Node.js
+      - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:
           node-version: 17
-      - name: Try loading ESM
+
+      # Try loading the ES module bundle:
+      - name: 'Try loading ESM'
         run: |
           node --experimental-network-imports --eval "import( './index.mjs' )" || exit $?
-      - name: Send status to Slack channel in case of failure
+
+      # Send notification to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
+
+  # Define job to test Deno bundles...
   test-deno:
+
+    # Define display name:
+    name: 'Test Deno Bundles'
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define environment variables:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+    # Define the sequence of job steps...
     steps:
-      - name: Checkout branch with Deno build
+
+      # Checkout Deno branch of the repository:
+      - name: 'Checkout branch with Deno build'
         uses: actions/checkout@v3
         with:
           ref: deno
-      - name: Install Deno
+
+      # Install Deno
+      - name: 'Install Deno'
         uses: denoland/setup-deno@v1
         with:
           deno-version: vx.x.x
-      - name: Try loading Deno build
+
+      # Try loading the Deno bundle:
+      - name: 'Try loading Deno build'
         run: |
           deno eval "import main from './mod.js'" || exit $?
-      - name: Send status to Slack channel in case of failure
+
+      # Send notification to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}

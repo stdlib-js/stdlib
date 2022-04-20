@@ -21,22 +21,42 @@ name: examples
 
 # Workflow triggers:
 on:
+  # Allow the workflow to be manually run:
   workflow_dispatch:
 
 # Workflow jobs:
 jobs:
+
+  # Define a job to run the package examples...
   examples:
+
+    # Define display name:
+    name: 'Run Examples'
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+
+      # Checkout the repository:
+      - name: 'Checkout the repository'
+        uses: actions/checkout@v3
+
+      # Install Node.js
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
         with:
           node-version: 16
         timeout-minutes: 5
-      - name: Install production and development dependencies
+
+      # Install dependencies:
+      - name: 'Install production and development dependencies'
         run: |
           npm install || npm install || npm install
         timeout-minutes: 15
-      - name: Run examples
+
+      # Run examples:
+      - name: 'Run examples'
         run: |
           npm run examples

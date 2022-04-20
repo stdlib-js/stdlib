@@ -21,32 +21,60 @@ name: test_install
 
 # Workflow triggers:
 on:
+  # Run workflow on a weekly schedule:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '30 1 * * 6'
+
+  # Run workflow upon completion of `publish` workflow run:
   workflow_run:
     workflows: ["publish"]
     types: [completed]
+
+  # Allow workflow to be manually run:
   workflow_dispatch:
 
 # Workflow jobs:
 jobs:
-  on-success:
+
+  # Define job to test installing dependencies...
+  test-install:
+
+    # Define display name:
+    name: "Test installing dependencies"
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define environment variables:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+    # Run workflow job if `publish` workflow run is successful or when the workflow is manually run:
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+
+    # Define the sequence of job steps...
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Install Node.js
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
         with:
           node-version: 16
         timeout-minutes: 5
-      - name: Install production dependencies via npm
+
+      # Install dependencies:
+      - name: 'Install production dependencies via npm'
         run: |
           npm install --only=prod || npm install --only=prod || npm install --only=prod
         timeout-minutes: 15
-      - name: Send notification to Slack in case of failure
+
+      # Send Slack notification if job fails:
+      - name: 'Send notification to Slack in case of failure'
         uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}

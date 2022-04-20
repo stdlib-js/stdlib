@@ -21,15 +21,30 @@ name: cancel
 
 # Workflow triggers:
 on:
+  # Allow the workflow to be manually run:
   workflow_dispatch:
 
 # Workflow jobs:
 jobs:
+
+  # Define a job to cancel existing workflow runs:
   cancel:
-    runs-on: ubuntu-latest
+
+    # Define a display name:
+    name: 'Cancel Workflow Runs'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Time limit:
     timeout-minutes: 3
+
+    # Define the sequence of job steps...
     steps:
-      - uses: styfle/cancel-workflow-action@0.9.0
+
+      # Cancel existing workflow runs:
+      - name: 'Cancel existing workflow runs'
+        uses: styfle/cancel-workflow-action@0.9.0
         with:
           workflow_id: >-
             benchmark.yml,

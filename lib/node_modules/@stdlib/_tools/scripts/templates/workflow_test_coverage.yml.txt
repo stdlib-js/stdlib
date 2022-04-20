@@ -21,53 +21,86 @@ name: test_coverage
 
 # Workflow triggers:
 on:
+  # Run workflow upon completion of `test` workflow run:
   workflow_run:
     workflows: ["test"]
     types: [completed]
+
+  # Allow workflow to be manually run:
   workflow_dispatch:
 
 # Workflow jobs:
 jobs:
-  test:
+
+  # Define job to run test coverage...
+  coverage:
+
+    # Display name:
+    name: "Test Coverage"
+
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Install Node.js
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
         with:
           node-version: 16
         timeout-minutes: 5
-      - name: Install production and development dependencies
+
+      # Install dependencies:
+      - name: 'Install production and development dependencies'
         run: |
           npm install || npm install || npm install
         timeout-minutes: 15
+
+      # Build native add-on if present:
       - name: Build native add-on (if present)
         run: |
           if [ -f "binding.gyp" ]; then
             npm install node-gyp --no-save && ./node_modules/.bin/node-gyp rebuild
           fi
-      - name: Calculate test coverage
+
+      # Calculate coverage:
+      - name: 'Calculate test coverage'
         run: |
           npm run test-cov || npm run test-cov || npm run test-cov
         timeout-minutes: 15
-      - name: Upload coverage to Codecov
+
+      # Upload coverage report to Codecov:
+      - name: 'Upload coverage to Codecov'
         id: upload
         uses: codecov/codecov-action@v2
         with:
           directory: reports/coverage
           flags: unittests
           fail_ci_if_error: true
-      - name: Extract coverage value and assign to output
+
+      # Extract coverage value:
+      - name: 'Extract coverage value and assign to output'
         id: extract-coverage
         run: |
           coverage=`cat reports/coverage/lcov-report/index.html | grep "fraction" | grep -oP '\d+/\d+' | printf %s "$(cat)" | jq -R -s -c 'split("\n")'`
           echo "::set-output name=coverage::$coverage"
-      - uses: act10ns/slack@v1
+
+      # Send Slack notification if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
-      - name: Send Webhook with status to stdlib backend
+
+      # Send data to events server:
+      - name: 'Post data'
         uses: distributhor/workflow-webhook@v2
         env:
           webhook_url: ${{ secrets.STDLIB_COVERAGE_URL }}
