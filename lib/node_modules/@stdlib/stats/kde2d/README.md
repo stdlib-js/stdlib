@@ -90,12 +90,12 @@ var out = kde2d( arr );
 The function accepts the following `options`:
 
 -   **h**: `NumberArray` of length 2 indicating the X and Y bandwidth values, respectively.
--   **n**: A positive `integer` indicating the number of partitions to create in the grid. Default: `25`.
--   **xMin**: A `number` indicating the lower bound of X. Must be strictly less than `xMax`. Will default to the minimum value of `X`.
--   **xMax**: A `number` indicating the lower bound of X. Must be strictly greater than `xMin`. Will default to the maximum value of `X`.
--   **yMin**: A `number` indicating the lower bound of X. Must be strictly less than `yMax`. Will default to the minimum value of `Y`.
--   **yMax**: A `number` indicating the lower bound of X. Must be strictly greater than `yMin`. Will default to the maximum value of `Y`.
--   **kernel**: A `string` or `function` indicating the kernel to be used when calculating the estimation. If a `string` is supplied then it will be matched to a pre-defined kernel function. Otherwise you may supply a function to support custom kernels. Will default to the `gaussian` kernel. 
+-   **n**: a positive `integer` indicating the number of partitions to create in the grid. Default: `25`.
+-   **xMin**: a `number` indicating the lower bound of X. Must be strictly less than `xMax`. Will default to the minimum value of `X`.
+-   **xMax**: a `number` indicating the upper bound of X. Must be strictly greater than `xMin`. Will default to the maximum value of `X`.
+-   **yMin**: a `number` indicating the lower bound of Y. Must be strictly less than `yMax`. Will default to the minimum value of `Y`.
+-   **yMax**: a `number` indicating the upper bound of Y. Must be strictly greater than `yMin`. Will default to the maximum value of `Y`.
+-   **kernel**: a `string` or `function` indicating the kernel to be used when calculating the estimation. If a `string` is supplied then it will be matched to a pre-defined kernel function. Otherwise you may supply a function to support custom kernels. Will default to the `gaussian` kernel. 
 
 By default, the bandwidth argument is set by a builtin function. To choose different bandwidth values, set the `h` option. Note that if you use a custom bandwidth for one axis, you must also use a custom bandwidth for the other axis.
 
