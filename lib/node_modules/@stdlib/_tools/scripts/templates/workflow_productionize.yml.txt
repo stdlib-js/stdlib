@@ -117,7 +117,7 @@ jobs:
     runs-on: 'ubuntu-latest'
 
     # Indicate that this job depends on the prior job finishing:
-    needs: test
+    needs: productionize
 
     # Run this job regardless of the outcome of the prior job:
     if: always()
