@@ -38,6 +38,13 @@
             "description": "Error message.",
             "type": "string",
             "format": "default"
+          },
+          {
+            "name": "type",
+            "title": "Error Type",
+            "description": "Error type.",
+            "type": "string",
+            "format": "default"
           }
         ]
       }
