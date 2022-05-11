@@ -121,4 +121,4 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Pull request ${{ steps.cpr.outputs.pull-request-number }} was successfully ${{ steps.cpr.outputs.pull-request-operation }}."
           echo ":link: [${{ steps.cpr.outputs.pull-request-url }}](${{ steps.cpr.outputs.pull-request-url }})." >> $GITHUB_STEP_SUMMARY
-          echo "Head SHA: [${{ steps.cpr.outputs.head-sha }}](${{ steps.cpr.outputs.pull-request-url }}/commits/${{ steps.cpr.outputs.pull-request-url }})." >> $GITHUB_STEP_SUMMARY
+          echo "Head SHA: [${{ steps.cpr.outputs.pull-request-head-sha }}](${{ steps.cpr.outputs.pull-request-url }}/commits/${{ steps.cpr.outputs.pull-request-head-sha }})." >> $GITHUB_STEP_SUMMARY
