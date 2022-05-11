@@ -75,6 +75,13 @@ jobs:
           echo "::set-output name=data::$data"
         timeout-minutes: 5
 
+      # Print summary of download data:
+      - name: 'Print summary'
+        run: |
+          echo "| Date | Downloads  |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|------------|" >> $GITHUB_STEP_SUMMARY
+          cat ./tmp/npm_downloads.json | jq -r ".downloads | .[-14:] | to_entries | map(\"| \(.value.day) | \(.value.downloads) |\")  |.[]" >> $GITHUB_STEP_SUMMARY
+
       # Upload the download data:
       - name: 'Upload data'
         uses: actions/upload-artifact@v2
