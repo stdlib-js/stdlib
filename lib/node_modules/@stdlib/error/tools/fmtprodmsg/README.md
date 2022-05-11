@@ -36,7 +36,7 @@ Formats an error message for production.
 
 ```javascript
 var msg = fmtprodmsg( '27', 'foo', 'bar' );
-// returns 'Error: 27. https://stdlib.io/e?code=27&arg[]=foo&arg[]=bar'
+// returns 'https://stdlib.io/e/27?arg[]=foo&arg[]=bar'
 ```
 
 <!-- /.usage -->
@@ -61,13 +61,13 @@ var msg = fmtprodmsg( '27', 'foo', 'bar' );
 var fmtprodmsg = require( '@stdlib/error/tools/fmtprodmsg' );
 
 var msg = fmtprodmsg( '3', 'foo' );
-// returns 'Error: 3. https://stdlib.io/e?code=3&arg[]=foo'
+// returns 'https://stdlib.io/e?code=3&arg[]=foo'
 
 msg = fmtprodmsg( '5', 'foo', 'bar' );
-// returns 'Error: 5. https://stdlib.io/e?code=5&arg[]=foo&arg[]=bar'
+// returns 'https://stdlib.io/e/5?arg[]=foo&arg[]=bar'
 
 msg = fmtprodmsg( '5', 'foo', 'bar', 123 );
-// returns 'Error: 5. https://stdlib.io/e?code=5&arg[]=foo&arg[]=bar&arg[]=123'
+// returns 'https://stdlib.io/e/5?arg[]=foo&arg[]=bar&arg[]=123'
 ```
 
 </section>
