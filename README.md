@@ -189,7 +189,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 The following flowchart provides a summary:
     
 ```mermaid
-%%{init: { 'logLevel': 'debug', 'theme': 'dark', 'themeVariables': { 'fontSize': '32px' }, securityLevel:'loose', 'flowchart': { 'nodeSpacing': 30, 'rankSpacing': 10, 'useMaxWidth': true, 'defaultRenderer': 'dagre-d3', 'padding': 5, 'diagramPadding': 0, 'htmlLabels': true, 'curve': 'linear' } } }%%
+%%{init: { 'logLevel': 'debug', 'theme': 'dark', 'themeVariables': {}, securityLevel:'loose', 'flowchart': { 'nodeSpacing': 5, 'rankSpacing': 5, 'useMaxWidth': true, 'diagramPadding': 20, 'htmlLabels': true, 'curve': 'linear', fontSize: '32px' } } }%%
 graph LR
     Z((Start))
 
@@ -237,6 +237,7 @@ graph LR
     click K href "https://github.com/stdlib-js/stdlib/tree/user-stories-diagram#system-library" "Jump to section"
     
     classDef a color:blue,fill:lightgray
+    classDef node font-size:22px,height:40px,text-align:center,line-height:24px,y:-20px,stroke-width:4px
  ```
     
 <a name="install_complete_library"></a>
