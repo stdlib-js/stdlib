@@ -17,6 +17,9 @@
     "library-manifest": "./bin/cli"
   },
   "main": "./lib",
+  "browser": {
+    "process": "process/"
+  },
   "directories": {
     "doc": "./docs",
     "example": "./examples",
