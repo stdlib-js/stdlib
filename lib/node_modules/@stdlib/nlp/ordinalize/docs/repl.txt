@@ -1,0 +1,39 @@
+
+{{alias}}( value[, options] )
+    Turn an integer into an ordinal string (e.g., `1st`, `2nd`, etc.).
+
+    Parameters
+    ----------
+    value: string
+        Input word.
+
+    options: Object (optional)
+        Options.
+
+    options.lang: string (optional)
+        Language code. Default: `'en'`.
+
+    options.suffixOnly: boolean (optional)
+        Boolean indicating whether to return only the suffix. Default: `false`.
+
+    options.gender: string (optional)
+       Grammatical gender (used if applicable); must be either 'masculine' or
+       'feminine'. Default: `'masculine'`.
+
+    Returns
+    -------
+    out: string
+        Ordinal string or suffix
+
+    Examples
+    --------
+    > var out = {{alias}}( '1' )
+    '1st'
+    > out = {{alias}}( 2, { 'suffixOnly': true } )
+    'nd'
+    > out = {{alias}}( '3', { 'lang': 'es' } )
+    '3ª'
+
+    See Also
+    --------
+
