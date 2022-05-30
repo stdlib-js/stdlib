@@ -62,7 +62,7 @@ jobs:
       # Try loading the UMD bundle:
       - name: 'Try loading UMD bundle'
         run: |
-          node --eval "require( './bundle.js' )" || exit $?
+          node --eval "require( './index.js' )" || exit $?
 
       # Send notification to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
