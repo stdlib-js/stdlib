@@ -233,12 +233,20 @@ jobs:
           alias=$(grep -E 'require\(' README.md | head -n 1 |  sed -E 's/^var ([a-zA-Z0-9_]+) = .+/\1/')
           echo "::set-output name=alias::${alias}"
 
-      # Create Universal Module Definition (UMD) bundle:
-      - name: 'Create Universal Module Definition (UMD) bundle'
-        id: umd-bundle
+      # Create Universal Module Definition (UMD) Node.js bundle:
+      - name: 'Create Universal Module Definition (UMD) Node.js bundle'
+        id: umd-bundle-node
         uses: stdlib-js/bundle-action@main
         with:
-          target: 'umd'
+          target: 'umd-node'
+          alias: ${{ steps.extract-alias.outputs.alias }}
+
+      # Create Universal Module Definition (UMD) browser bundle:
+      - name: 'Create Universal Module Definition (UMD) browser bundle'
+        id: umd-bundle-browser
+        uses: stdlib-js/bundle-action@main
+        with:
+          target: 'umd-browser'
           alias: ${{ steps.extract-alias.outputs.alias }}
 
       # Rewrite file contents:
@@ -254,19 +262,19 @@ jobs:
           find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"c\">[\s\S]+<\!\-\- \/.c \-\->//g"
 
           # Rewrite first `require()` to show consumption of the UMD bundle in Observable and via a `script` tag:
-          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`javascript\n(var|let|const)\s+([a-zA-Z0-9_]+)\s+=\s*require\( '\@stdlib\/([^']+)' \);\n\`\`\`/To use in Observable,\n\n\`\`\`javascript\n\2 = require\( 'https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/bundle.js' \)\n\`\`\`\n\nTo include the bundle in a webpage,\n\n\`\`\`html\n<script type=\"text\/javascript\" src=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/bundle.js\"><\/script>\n\`\`\`\n\nIf no recognized module system is present, access bundle contents via the global scope:\n\n\`\`\`html\n<script type=\"text\/javascript\">\n    window.\2;\n<\/script>\n\`\`\`/"
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`javascript\n(var|let|const)\s+([a-zA-Z0-9_]+)\s+=\s*require\( '\@stdlib\/([^']+)' \);\n\`\`\`/To use in Observable,\n\n\`\`\`javascript\n\2 = require\( 'https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/browser.js' \)\n\`\`\`\n\nTo include the bundle in a webpage,\n\n\`\`\`html\n<script type=\"text\/javascript\" src=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/browser.js\"><\/script>\n\`\`\`\n\nIf no recognized module system is present, access bundle contents via the global scope:\n\n\`\`\`html\n<script type=\"text\/javascript\">\n    window.\2;\n<\/script>\n\`\`\`/"
 
           # Rewrite examples section to be a HTML file:
           find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\#\# Examples([\s\S]*)\`\`\`javascript([\s\S]+?)\`\`\`/\#\# Examples\1\`\`\`html\n<\!DOCTYPE html>\n<html lang=\"en\">\n<body>\n<script type=\"text\/javascript\">\2\n<\/script>\n<\/body>\n<\/html>\n\`\`\`/"
 
           # Rewrite all `require()`s in the examples section as `script` tags loading the respective UMD bundle:
-          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "1 while s/<script type=\"text\/javascript\">\n(var|let|const)\s+([a-zA-Z0-9_]+)\s+=\s*require\( '\@stdlib\/([^']+)' \);?/<script type=\"text\/javascript\" src=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/bundle.js\"><\/script>\n<script type=\"text\/javascript\">/g"
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "1 while s/<script type=\"text\/javascript\">\n(var|let|const)\s+([a-zA-Z0-9_]+)\s+=\s*require\( '\@stdlib\/([^']+)' \);?/<script type=\"text\/javascript\" src=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/index.js\"><\/script>\n<script type=\"text\/javascript\">/g"
 
           # Wrap contents of `<script type="text/javascript">` tag contents in an IIFE:
           find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<script type=\"text\/javascript\">([\s\S]+?)<\/script>/<script type=\"text\/javascript\">\n\(function \(\) {\1}\)\(\);\n<\/script>/g"
 
           # Create package.json file for umd branch:
-          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "main": "./bundle.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./umd/package.json
+          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "main": "./index.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./umd/package.json
 
       # Configure git:
       - name: 'Configure git'
