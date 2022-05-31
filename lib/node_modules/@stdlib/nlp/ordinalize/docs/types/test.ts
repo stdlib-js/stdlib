@@ -36,6 +36,12 @@ import ordinalize = require( './index' );
 	ordinalize( [] ); // $ExpectError
 	ordinalize( {} ); // $ExpectError
 	ordinalize( ( x: number ): number => x ); // $ExpectError
+
+	ordinalize( true, {} ); // $ExpectError
+	ordinalize( false, {} ); // $ExpectError
+	ordinalize( [], {} ); // $ExpectError
+	ordinalize( {}, {} ); // $ExpectError
+	ordinalize( ( x: number ): number => x, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an options argument which is not an object...
