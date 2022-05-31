@@ -64,6 +64,28 @@ jobs:
         run: |
           node --eval "require( './index.js' )" || exit $?
 
+      # Install playwright for headless browser testing:
+      - name: 'Install playwright'
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      # Try loading the UMD browser bundle with playwright:
+      - name: 'Try loading UMD browser bundle with playwright'
+        run: |
+          PLAYWRIGHT_SCRIPT="\
+            const { chromium } = require( 'playwright' );\
+            (async () => {\
+              const browser = await chromium.launch();\
+              const page = await browser.newPage();\
+              page.on( 'pageerror', exception => {\
+                throw new Error( exception.message );\
+              });\
+              await page.addScriptTag({ path: './browser.js' });\
+              await browser.close();\
+            })();"
+          node --eval "$PLAYWRIGHT_SCRIPT" || exit $?
+
       # Send notification to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
         uses: act10ns/slack@v1
