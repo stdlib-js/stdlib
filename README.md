@@ -156,7 +156,13 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
     -   I would like to include stdlib functionality by just using a `script` tag.
 
-        -   Install one of the pre-built UMD [browser bundles](#install_browser_bundles) or consume one of the pre-built bundles via a CDN, such as [unpkg][unpkg].
+        -   I would like to use ES Modules.
+        
+            -   Use an individual package's ES Module [build](#install_env_builds_esm).
+            
+        -   I would like to use a pre-built bundle (possibly via a CDN, such as [unpkg][unpkg] or [jsDelivr][jsdelivr]).
+        
+            -   Install (or consume via a CDN) an individual package's pre-built UMD [browser bundle](#install_env_builds_umd).
 
     -   I am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
 
@@ -169,18 +175,22 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   I am interested in using various functionality found in stdlib.
 
         -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
+    
+    -   I would like to **vendor** stdlib functionality and avoid dependency trees.
+        
+        -   Install individual package UMD [bundles](#install_env_builds_nodejs).
 
-    -   I am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages.
+    -   I am interested in using a _substantial_ amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages.
 
         -   Install one or more top-level [namespaces](#install_namespaces). Installing the entire project is likely unnecessary and will lead to slower installation times. Installing a top-level namespace is likely to mean installing functionality which will never be used; however, installing a top-level namespace is likely to be easier and less time-consuming than installing many individual packages separately.
 
 -   I am using **Deno**.
 
-    -   Use [skypack][skypack] to import [individual packages](#install_individual_packages).
+    -   Import [individual packages](#install_env_builds_deno) using pre-built Deno builds.
 
 -   I would like to use stdlib functionality in an [Observable][observable] notebook.
 
-    -   Consume one of the pre-built [browser bundles](#install_browser_bundles) via a CDN, such as [unpkg][unpkg].
+    -   Consume one of the pre-built [browser bundles](#install_env_builds_umd) via a CDN, such as [unpkg][unpkg] or [jsDelivr][jsdelivr].
 
 -   I want to hack at stdlib, possibly even creating **customized** builds to link to platform-specific native libraries (such as Intel's MKL or some other numerical library).
 
@@ -314,11 +324,15 @@ and to run the [REPL][@stdlib/repl]
 $ stdlib repl
 ```
 
-<a name="install_browser_bundles"></a>
+<a name="install_env_builds"></a>
 
-### Browser Bundles
+### Environment Builds
 
-For pre-built distributable UMD bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
+<a name="install_env_builds_jquery"></a>
+
+#### jQuery-like Bundle
+
+For those wanting a jQuery-like bundle, one can use pre-built distributable UMD bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
 
 As an example, to include a UMD bundle exposing lower-level special [math functions][@stdlib/math/base/special] in a webpage, we can first locally install the UMD bundle package using [npm][npm]
 
@@ -345,6 +359,83 @@ If no recognized module system is present, one can access bundle contents in ano
 ```
 
 For more details and available bundles, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles]. The [guide][stdlib-bundles] includes instructions for consuming via CDNs, such as [unpkg][unpkg].
+
+<a name="install_env_builds_esm"></a>
+
+#### ES Modules
+
+To use ES Modules via a `<script>` tag, use **ES Module builds** available in each package's repository via a dedicated `esm` branch (e.g., see the [`esm`][@stdlib/math-base-special-erf-esm] branch for [`@stdlib/math-base-special-erf`][@stdlib/math-base-special-erf-esm]). For example,
+
+```html
+<script type="module">
+
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
+import erf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erf@esm/index.mjs';
+
+var x = linspace( -10.0, 10.0, 100 );
+
+var i;
+for ( i = 0; i < x.length; i++ ) {
+    console.log( 'x: %d, erf(x): %d', x[ i ], erf( x[ i ] ) );
+}
+</script>
+```
+
+<a name="install_env_builds_deno"></a>
+
+#### Deno
+
+To use individual packages in Deno, use **Deno builds** available in each package's repository via a dedicated `deno` branch (e.g., see the [`deno`][[@stdlib/ndarray-array-deno] for [`@stdlib/ndarray-array`][@stdlib/ndarray-array-deno]). For example,
+
+<!-- run-disable -->
+
+```javascript
+import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js');
+
+var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
+// returns <ndarray>
+````
+
+<a name="install_env_builds_umd"></a>
+
+#### UMD
+
+To use UMD bundles either via a `<script>` tag or in [Observable][observable], use UMD **browser builds** available in each package's repository via a dedicated `umd` branch (e.g., see the [`umd`][@stdlib/math-base-special-erf-umd] branch for [`@stdlib/math-base-special-erf`][@stdlib/math-base-special-erf-umd]). For example,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erf@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
+
+var x = linspace( -10.0, 10.0, 100 );
+
+var i;
+for ( i = 0; i < x.length; i++ ) {
+    console.log( 'x: %d, erf(x): %d', x[ i ], erf( x[ i ] ) );
+}
+
+})();
+</script>
+```
+
+<a name="install_env_builds_nodejs"></a>
+
+#### Node.js
+
+To **vendor** stdlib functionality and avoid installing dependency trees, use UMD **server builds** available in each package's repository via a dedicated `umd` branch (e.g., see the [`umd`][@stdlib/math-base-special-erf-umd] branch for [`@stdlib/math-base-special-erf`][@stdlib/math-base-special-erf-umd]). For example,
+
+```javascript
+var linspace = require( '/path/to/vendor/umd/@stdlib/array-base-linspace' );
+var erf = require( '/path/to/vendor/umd/@stdlib/math-base-special-erf' );
+
+var x = linspace( -10.0, 10.0, 100 );
+
+var i;
+for ( i = 0; i < x.length; i++ ) {
+    console.log( 'x: %d, erf(x): %d', x[ i ], erf( x[ i ] ) );
+}
+```
 
 <a name="install_custom_bundles"></a>
 
@@ -658,9 +749,9 @@ Test and build infrastructure is generously provided by the following services:
 
 [unpkg]: https://unpkg.com/#/
 
-[observable]: https://observablehq.com/
+[jsdelivr]: https://www.jsdelivr.com/
 
-[skypack]: https://www.skypack.dev/view/@stdlib/stdlib
+[observable]: https://observablehq.com/
 
 [ipa-english]: https://en.wikipedia.org/wiki/Help:IPA/English
 
@@ -705,6 +796,12 @@ Test and build infrastructure is generously provided by the following services:
 [@stdlib/bench/harness]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/bench/harness
 
 [@stdlib/repl]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/repl
+
+[@stdlib/ndarray-array-deno]: https://github.com/stdlib-js/ndarray-array/tree/deno
+
+[@stdlib/math-base-special-erf-esm]: https://github.com/stdlib-js/math-base-special-erf/tree/esm
+
+[@stdlib/math-base-special-erf-umd]: https://github.com/stdlib-js/math-base-special-erf/tree/umd
 
 </section>
 
