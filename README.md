@@ -393,7 +393,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### Deno
 
-To use individual packages in Deno, use **Deno builds** available in each package's repository via a dedicated `deno` branch (e.g., see the [`deno`][[@stdlib/ndarray-array-deno] for [`@stdlib/ndarray-array`][@stdlib/ndarray-array-deno]). For example,
+To use individual packages in Deno, use **Deno builds** available in each package's repository via a dedicated `deno` branch (e.g., see the [`deno`][@stdlib/ndarray-array-deno] for [`@stdlib/ndarray-array`][@stdlib/ndarray-array-deno]). For example,
 
 <!-- run-disable -->
 
