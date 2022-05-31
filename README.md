@@ -336,11 +336,15 @@ For those wanting a jQuery-like bundle, one can use pre-built distributable UMD 
 
 As an example, to include a UMD bundle exposing lower-level special [math functions][@stdlib/math/base/special] in a webpage, we can first locally install the UMD bundle package using [npm][npm]
 
+<!-- run-disable -->
+
 ```bash
 $ npm install @stdlib/dist-math-base-special-flat
 ```
 
 and then include the following `<script>` tag in our HTML document
+
+<!-- run-disable -->
 
 ```html
 <script type="text/javascript" src="/path/to/@stdlib/dist-math-base-special-flat/build/bundle.min.js"></script>
@@ -349,6 +353,8 @@ and then include the following `<script>` tag in our HTML document
 making sure to modify the script path based on the local installation directory.
 
 If no recognized module system is present, one can access bundle contents in another `<script>` tag via the global scope.
+
+<!-- run-disable -->
 
 ```html
 <script type="text/javascript">
@@ -365,6 +371,8 @@ For more details and available bundles, see the [`dist`][stdlib-bundles] directo
 #### ES Modules
 
 To use ES Modules via a `<script>` tag, use **ES Module builds** available in each package's repository via a dedicated `esm` branch (e.g., see the [`esm`][@stdlib/math-base-special-erf-esm] branch for [`@stdlib/math-base-special-erf`][@stdlib/math-base-special-erf-esm]). For example,
+
+<!-- run-disable -->
 
 ```html
 <script type="module">
@@ -402,6 +410,8 @@ var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 To use UMD bundles either via a `<script>` tag or in [Observable][observable], use UMD **browser builds** available in each package's repository via a dedicated `umd` branch (e.g., see the [`umd`][@stdlib/math-base-special-erf-umd] branch for [`@stdlib/math-base-special-erf`][@stdlib/math-base-special-erf-umd]). For example,
 
+<!-- run-disable -->
+
 ```html
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erf@umd/browser.js"></script>
@@ -424,6 +434,8 @@ for ( i = 0; i < x.length; i++ ) {
 #### Node.js
 
 To **vendor** stdlib functionality and avoid installing dependency trees, use UMD **server builds** available in each package's repository via a dedicated `umd` branch (e.g., see the [`umd`][@stdlib/math-base-special-erf-umd] branch for [`@stdlib/math-base-special-erf`][@stdlib/math-base-special-erf-umd]). For example,
+
+<!-- run-disable -->
 
 ```javascript
 var linspace = require( '/path/to/vendor/umd/@stdlib/array-base-linspace' );
