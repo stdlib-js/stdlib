@@ -190,7 +190,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
 -   I would like to use stdlib functionality in an [Observable][observable] notebook.
 
-    -   Consume one of the pre-built [browser bundles](#install_env_builds_umd) via a CDN, such as [unpkg][unpkg] or [jsDelivr][jsdelivr].
+    -   Consume a pre-built [browser bundles](#install_env_builds_umd) via a CDN, such as [unpkg][unpkg] or [jsDelivr][jsdelivr].
 
 -   I want to hack at stdlib, possibly even creating **customized** builds to link to platform-specific native libraries (such as Intel's MKL or some other numerical library).
 
