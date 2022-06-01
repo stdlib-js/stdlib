@@ -376,14 +376,12 @@ To use ES Modules via a `<script>` tag, use **ES Module builds** available in ea
 
 ```html
 <script type="module">
-
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
 import erf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erf@esm/index.mjs';
 
-var x = linspace( -10.0, 10.0, 100 );
+const x = linspace( -10.0, 10.0, 100 );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
+for ( let i = 0; i < x.length; i++ ) {
     console.log( 'x: %d, erf(x): %d', x[ i ], erf( x[ i ] ) );
 }
 </script>
@@ -398,7 +396,7 @@ To use individual packages in Deno, use **Deno builds** available in each packag
 <!-- run-disable -->
 
 ```javascript
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js');
+import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
 
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
