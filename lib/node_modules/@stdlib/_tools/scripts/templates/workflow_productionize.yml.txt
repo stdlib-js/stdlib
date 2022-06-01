@@ -297,12 +297,21 @@ jobs:
           git add -A
           git commit -m "Auto-generated commit"
 
-      # Push changes:
-      - name: 'Push changes'
+      # Push changes to `deno` branch or create new branch tag:
+      - name: 'Push changes to `deno` branch or create new branch tag'
         run: |
           SLUG=${{ github.repository }}
-          echo "Pushing changes to $SLUG..."
-          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" deno
+          VERSION=$(echo ${{ github.ref }} | sed -E -n 's/refs\/tags\/?(v[0-9]+.[0-9]+.[0-9]+).*/\1/p')
+          if [ -z "$VERSION" ]; then
+            echo "Workflow job was not triggered by a new tag...."
+            echo "Pushing changes to $SLUG..."
+            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" deno
+          else
+            echo "Workflow job was triggered by a new tag: $VERSION"
+            echo "Creating new bundle branch tag of the form $VERSION-deno"
+            git tag -a $VERSION-deno -m "$VERSION-deno"
+            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-deno
+          fi
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
@@ -459,12 +468,21 @@ jobs:
           git add -A
           git commit -m "Auto-generated commit"
 
-      # Push changes:
-      - name: 'Push changes'
+      # Push changes to `umd` branch or create new branch tag:
+      - name: 'Push changes to `umd` branch or create new branch tag'
         run: |
           SLUG=${{ github.repository }}
-          echo "Pushing changes to $SLUG..."
-          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" umd
+          VERSION=$(echo ${{ github.ref }} | sed -E -n 's/refs\/tags\/?(v[0-9]+.[0-9]+.[0-9]+).*/\1/p')
+          if [ -z "$VERSION" ]; then
+            echo "Workflow job was not triggered by a new tag...."
+            echo "Pushing changes to $SLUG..."
+            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" umd
+          else
+            echo "Workflow job was triggered by a new tag: $VERSION"
+            echo "Creating new bundle branch tag of the form $VERSION-umd"
+            git tag -a $VERSION-umd -m "$VERSION-umd"
+            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-umd
+          fi
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
@@ -616,7 +634,7 @@ jobs:
         run: |
           git add -A
           git commit -m "Auto-generated commit"
-          
+
       # Push changes to `esm` branch or create new branch tag:
       - name: 'Push changes to `esm` branch or create new branch tag'
         run: |
