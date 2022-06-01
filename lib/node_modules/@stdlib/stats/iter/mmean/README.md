@@ -119,11 +119,11 @@ var it = itermmean( rand, 3 );
 var v;
 while ( true ) {
     v = it.next();
-    if ( typeof v.value === 'number' ) {
-        console.log( 'Mean: %d', v.value );
-    }
     if ( v.done ) {
         break;
+    }
+    if ( typeof v.value === 'number' ) {
+        console.log( 'Mean: %d', v.value );
     }
 }
 ```
