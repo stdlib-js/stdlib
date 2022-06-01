@@ -119,11 +119,11 @@ var it = itermprod( rand, 3 );
 var v;
 while ( true ) {
     v = it.next();
-    if ( typeof v.value === 'number' ) {
-        console.log( 'product: %d', v.value );
-    }
     if ( v.done ) {
         break;
+    }
+    if ( typeof v.value === 'number' ) {
+        console.log( 'product: %d', v.value );
     }
 }
 ```
