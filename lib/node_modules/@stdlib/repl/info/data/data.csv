@@ -3272,6 +3272,7 @@ iterCeil10,"\niterCeil10( iterator:Object )\n    Returns an iterator which round
 iterCompositesSeq,"\niterCompositesSeq( [options:Object] )\n    Returns an iterator which generates a sequence of composite numbers.\n"
 iterConcat,"\niterConcat( iter0:Object, ...iterator:Object )\n    Returns an iterator which iterates over the values of two or more iterators.\n"
 iterConstant,"\niterConstant( value:any[, options:Object] )\n    Returns an iterator which always returns the same value.\n"
+iterContinuedFraction,"\niterContinuedFraction( iterator:Object[, options:Object] )\n    Evaluates the terms of a continued fraction.\n"
 iterContinuedFractionSeq,"\niterContinuedFractionSeq( x:number[, options:Object] )\n    Returns an iterator which generates a list of all continued fraction terms\n    which can be obtained given the precision of `x`.\n"
 iterCos,"\niterCos( iterator:Object )\n    Returns an iterator which iteratively computes the cosine.\n"
 iterCosh,"\niterCosh( iterator:Object )\n    Returns an iterator which iteratively computes the hyperbolic cosine.\n"

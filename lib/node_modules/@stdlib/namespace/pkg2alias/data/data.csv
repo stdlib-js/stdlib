@@ -1727,6 +1727,7 @@
 "@stdlib/assert/is-bigint64array",isBigInt64Array
 "@stdlib/assert/is-biguint64array",isBigUint64Array
 "@stdlib/assert/is-binary-string",isBinaryString
+"@stdlib/assert/is-blank-string",isBlankString
 "@stdlib/assert/is-boolean",isBoolean
 "@stdlib/assert/is-boolean-array",isBooleanArray
 "@stdlib/assert/is-boxed-primitive",isBoxedPrimitive
@@ -2274,6 +2275,7 @@
 "@stdlib/utils/omit-by",omitBy
 "@stdlib/fs/open",open
 "@stdlib/utils/open-url",openURL
+"@stdlib/nlp/ordinalize",ordinalize
 "@stdlib/datasets/pace-boston-house-prices",PACE_BOSTON_HOUSE_PRICES
 "@stdlib/string/pad",pad
 "@stdlib/stats/padjust",padjust

@@ -1727,6 +1727,7 @@ isBigInt
 isBigInt64Array
 isBigUint64Array
 isBinaryString
+isBlankString
 isBoolean
 isBooleanArray
 isBoxedPrimitive
@@ -2274,6 +2275,7 @@ omit
 omitBy
 open
 openURL
+ordinalize
 PACE_BOSTON_HOUSE_PRICES
 pad
 padjust
