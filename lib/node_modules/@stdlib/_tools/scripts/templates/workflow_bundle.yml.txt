@@ -265,12 +265,20 @@ jobs:
           alias=$(grep -E 'require\(' README.md | head -n 1 |  sed -E 's/^var ([a-zA-Z0-9_]+) = .+/\1/')
           echo "::set-output name=alias::${alias}"
 
-      # Create Universal Module Definition (UMD) bundle:
-      - name: 'Create Universal Module Definition (UMD) bundle'
-        id: umd-bundle
+      # Create Universal Module Definition (UMD) Node.js bundle:
+      - name: 'Create Universal Module Definition (UMD) Node.js bundle'
+        id: umd-bundle-node
         uses: stdlib-js/bundle-action@main
         with:
-          target: 'umd'
+          target: 'umd-node'
+          alias: ${{ steps.extract-alias.outputs.alias }}
+
+      # Create Universal Module Definition (UMD) browser bundle:
+      - name: 'Create Universal Module Definition (UMD) browser bundle'
+        id: umd-bundle-browser
+        uses: stdlib-js/bundle-action@main
+        with:
+          target: 'umd-browser'
           alias: ${{ steps.extract-alias.outputs.alias }}
 
       # Rewrite file contents:
