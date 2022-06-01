@@ -97,7 +97,7 @@
     "d3-shape": "^1.0.0",
     "d3-time-format": "^2.0.0",
     "debug": "^2.6.9",
-    "glob": "^7.0.5",
+    "glob": "^8.0.3",
     "minimist": "^1.2.0",
     "node-gyp": "^6.1.0",
     "readable-stream": "^2.1.4",
