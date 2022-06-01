@@ -21,9 +21,9 @@ name: test_bundles
 
 # Workflow triggers:
 on:
-  # Run workflow upon completion of `bundle` workflow run:
+  # Run workflow upon completion of `productionize` workflow run:
   workflow_run:
-    workflows: ["bundle"]
+    workflows: ["productionize"]
     types: [completed]
 
   # Allow workflow to be manually run:
