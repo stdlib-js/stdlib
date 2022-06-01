@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The original C code and copyright notice are from the [source implementation]{@link http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c}. The implementation has been modified according to the styles and conventions of this project.
+* The original C code and copyright notice are from the [source implementation][mt19937]. The implementation has been modified according to the styles and conventions of this project.
 *
 * ```text
 * Copyright (C) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura,
@@ -51,6 +51,8 @@
 * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * ```
+*
+* [mt19937]: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c
 */
 
 // Note: keep project includes in alphabetical order...
@@ -133,7 +135,7 @@ static const double MAX_NORMALIZED = FLOAT64_MAX_SAFE_INTEGER * FLOAT64_NORMALIZ
 */
 static const struct BasePRNG mt19937_prng = {
 	"mt19937",                                            // name
-	(uint64_t)1,                                          // min
+	(uint64_t)0,                                          // min
 	(uint64_t)MAX_UINT32,                                 // max: (2^{32}-1)
 	0.0,                                                  // min (normalized)
 	MAX_NORMALIZED,                                       // max (normalized): (2^{53}-1)/2^{53}
@@ -176,11 +178,11 @@ static inline int8_t next( struct BasePRNGObject *obj, uint64_t *out ) {
 
 	// Determine if we need to update our internal state array:
 	if ( i >= N ) {
-		twist( so->state, N );
+		twist( state, N );
 		i = 0;
 	}
 	// Get the next state value:
-	r = so->state[ i ];
+	r = state[ i ];
 
 	// Update the state index:
 	so->i = i + 1;
@@ -198,11 +200,11 @@ static inline int8_t next( struct BasePRNGObject *obj, uint64_t *out ) {
 }
 
 /**
-* Returns a pseudorandom double-precision floating-point number on the interval `[0,1)`.
+* Returns a pseudorandom double-precision floating-point number on the interval `[0, 1)`.
 *
 * ## Method
 *
-* -   When generating normalized double-precision floating-point numbers, we first generate two pseudorandom integers \\( x \\) and \\( y \\) on the interval \\( [1,2^{32}-1) \\) for a combined \\( 64 \\) random bits.
+* -   When generating normalized double-precision floating-point numbers, we first generate two pseudorandom integers \\( x \\) and \\( y \\) on the interval \\( [0, 2^{32}-1] \\) for a combined \\( 64 \\) random bits.
 *
 * -   We would like \\( 53 \\) random bits to generate a 53-bit precision integer and, thus, want to discard \\( 11 \\) of the generated bits.
 *

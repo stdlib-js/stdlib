@@ -107,11 +107,11 @@ interface NullaryFunction extends PRNG {
 }
 
 /**
-* Interface for generating pseudorandom integers on the interval `[1, 4294967295]`.
+* Interface for generating pseudorandom integers on the interval `[0, 4294967295]`.
 */
 interface Random extends PRNG {
 	/**
-	* Returns a pseudorandom integer on the interval `[1, 4294967295]`.
+	* Returns a pseudorandom integer on the interval `[0, 4294967295]`.
 	*
 	* ## Notes
 	*
@@ -153,7 +153,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Returns a pseudorandom integer on the interval `[1, 4294967295]`.
+* Returns a pseudorandom integer on the interval `[0, 4294967295]`.
 *
 * ## Notes
 *

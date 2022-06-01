@@ -32,7 +32,7 @@ var mt19937 = require( '@stdlib/random/base/mt19937' );
 
 #### mt19937()
 
-Returns a pseudorandom integer on the interval `[1, 4294967295]`.
+Returns a pseudorandom integer on the interval `[0, 4294967295]`.
 
 ```javascript
 var r = mt19937();
@@ -41,7 +41,7 @@ var r = mt19937();
 
 #### mt19937.normalized()
 
-Returns a pseudorandom number on the interval `[0,1)` with 53-bit precision.
+Returns a pseudorandom number on the interval `[0, 1)` with 53-bit precision.
 
 ```javascript
 var r = mt19937.normalized();
@@ -62,7 +62,7 @@ The function accepts the following `options`:
 -   **state**: a [`Uint32Array`][@stdlib/array/uint32] containing pseudorandom number generator state. If provided, the function ignores the `seed` option.
 -   **copy**: `boolean` indicating whether to copy a provided pseudorandom number generator state. Setting this option to `false` allows sharing state between two or more pseudorandom number generators. Setting this option to `true` ensures that a returned generator has exclusive control over its internal state. Default: `true`.
 
-By default, a random integer is used to seed the returned generator. To seed the generator, provide either an `integer` on the interval `[1, 4294967295]`
+By default, a random integer is used to seed the returned generator. To seed the generator, provide either an `integer` on the interval `[0, 4294967295]`
 
 ```javascript
 var rand = mt19937.factory({
@@ -124,7 +124,7 @@ Minimum possible value.
 
 ```javascript
 var min = mt19937.MIN;
-// returns 1
+// returns 0
 ```
 
 #### mt19937.MAX
