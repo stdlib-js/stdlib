@@ -20,7 +20,7 @@ limitations under the License.
 
 # ordinalize
 
-> Turn an integer into an ordinal string (e.g., `1st`, `2nd`, etc.).
+> Convert an integer to an ordinal string (e.g., `1st`, `2nd`, etc.).
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var ordinalize = require( '@stdlib/nlp/ordinalize' );
 
 #### ordinalize( value )
 
-Turns an integer into an ordinal string (e.g., `1st`, `2nd`, etc.).
+Converts an integer to an ordinal string (e.g., `1st`, `2nd`, etc.).
 
 ```javascript
 var out = ordinalize( '22' );
@@ -54,7 +54,7 @@ The function accepts the following `options`:
 -   **suffixOnly**: `boolean` indicating whether to return only the ordinal suffix. Default: `false`.
 -   **gender**: `string` indicating whether to use the `masculine` or `feminine` grammatical form. Default: `'masculine'`.
 
-By default, the function returns the ordinal string. To return only the ordinal suffix, set the `suffixOnly` option.
+By default, the function returns an ordinal string. To return only an ordinal suffix, set the `suffixOnly` option.
 
 ```javascript
 var out = ordinalize( '22', {
@@ -63,7 +63,7 @@ var out = ordinalize( '22', {
 // returns 'nd'
 ```
 
-By default, the function returns the ordinal string in English. To return the ordinal string in a different language, set the `lang` option.
+By default, the function returns an ordinal string in English. To return an ordinal string for a different language, set the `lang` option.
 
 ```javascript
 var out = ordinalize( '22', {
@@ -72,32 +72,45 @@ var out = ordinalize( '22', {
 // returns '22e'
 ```
 
-If the respective language differentiates between the `masculine` and `feminine` grammatical forms, the functions returns by default the ordinal string in the masculine form. To return the ordinal string in the feminine form, set the `gender` option.
+By default, if a language differentiates between masculine and feminine grammatical forms, the functions returns an ordinal string in the masculine form. To return an ordinal string in the feminine form, set the `gender` option.
 
 ```javascript
-var out = ordinalize( 7, {
-    'lang': 'es'
-};
-// returns '7ª'
-
-out = ordinalize( 7, {
+var opts = {
     'lang': 'es',
-    'gender': 'feminine'
-});
+    'gender': 'masculine'
+};
+var out = ordinalize( 7, opts );
 // returns '7º'
+
+opts.gender = 'feminine';
+out = ordinalize( 7, opts );
+// returns '7ª'
 ```
 
 </section>
 
 <!-- /.usage -->
 
-* * *
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<section class="references">
+<section class="notes">
+
+## Notes
+
+-   The following languages are supported:
+
+    -   **en**: English.
+    -   **es**: Spanish.
+    -   **fin**: Finnish.
+    -   **fr**: French.
+    -   **de**: Dutch.
+    -   **it**: Italian.
+    -   **pt**: Portuguese.
+    -   **swe**: Swedish.
 
 </section>
 
-<!-- /.references -->
+<!-- /.notes -->
 
 <section class="examples">
 
@@ -115,12 +128,12 @@ out = ordinalize( 2 );
 // returns '2nd'
 
 out = ordinalize( '3', {
-	'suffixOnly': true
+    'suffixOnly': true
 });
 // returns 'rd'
 
 out = ordinalize( '3', {
-	'lang': 'de'
+    'lang': 'de'
 });
 // returns '3.'
 ```
@@ -128,6 +141,14 @@ out = ordinalize( '3', {
 </section>
 
 <!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
