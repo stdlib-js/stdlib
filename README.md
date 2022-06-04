@@ -418,8 +418,7 @@ To use UMD bundles either via a `<script>` tag or in [Observable][observable], u
 
 var x = linspace( -10.0, 10.0, 100 );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
+for ( var i = 0; i < x.length; i++ ) {
     console.log( 'x: %d, erf(x): %d', x[ i ], erf( x[ i ] ) );
 }
 
@@ -441,8 +440,7 @@ var erf = require( '/path/to/vendor/umd/@stdlib/math-base-special-erf' );
 
 var x = linspace( -10.0, 10.0, 100 );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
+for ( var i = 0; i < x.length; i++ ) {
     console.log( 'x: %d, erf(x): %d', x[ i ], erf( x[ i ] ) );
 }
 ```
