@@ -14,7 +14,7 @@
 
     Examples
     --------
-    > var v = {{alias}}( 'Wiw' )
+    > var v = {{alias}}( '0YK' )
     '@stdlib/math/base/special/sin'
 
     See Also

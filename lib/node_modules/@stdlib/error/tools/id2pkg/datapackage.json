@@ -35,7 +35,7 @@
           {
             "name": "pkg",
             "title": "Package Name",
-            "description": "Internal package name.",
+            "description": "Package name.",
             "type": "string",
             "format": "default"
           }

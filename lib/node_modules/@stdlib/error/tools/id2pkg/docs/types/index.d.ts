@@ -25,7 +25,7 @@
 * @returns package name
 *
 * @example
-* var v = id2pkg( '0H5' );
+* var v = id2pkg( '0YK' );
 * // returns '@stdlib/math/base/special/sin'
 */
 declare function id2pkg( id: string ): string | null;
