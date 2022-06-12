@@ -202,7 +202,7 @@ jobs:
         run: |
           git checkout -b deno origin/deno
 
-          find . -type 'f' | grep -v -e ".git/" | xargs rm
+          find . -type 'f' | grep -v -e ".git/" -e "package.json" | xargs rm
           find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs rm -rf
 
           git add -A
@@ -365,7 +365,7 @@ jobs:
         run: |
           git checkout -b umd origin/umd
 
-          find . -type 'f' | grep -v -e ".git/" | xargs rm
+          find . -type 'f' | grep -v -e ".git/" -e "package.json" | xargs rm
           find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs rm -rf
 
           git add -A
@@ -536,7 +536,7 @@ jobs:
         run: |
           git checkout -b esm origin/esm
 
-          find . -type 'f' | grep -v -e ".git/" | xargs rm
+          find . -type 'f' | grep -v -e ".git/" -e "package.json" | xargs rm
           find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs rm -rf
 
           git add -A
