@@ -5,9 +5,9 @@
   "description": "A mapping between standard library package names and error identifier prefixes.",
   "resources": [
     {
-      "name": "stdlib-pkg2id-internal-json",
-      "title": "Standard Library Internal Package Names and Error Identifiers",
-      "description": "A mapping between standard library internal package names and error identifier prefixes.",
+      "name": "stdlib-pkg2id-json",
+      "title": "Standard Library Package Names and Error Identifiers",
+      "description": "A mapping from internal as well as standalone standard library package names to error identifier prefixes.",
       "format": "json",
       "mediatype": "application/json",
       "encoding": "UTF-8",
@@ -15,9 +15,9 @@
       "path": "./data/internal.json"
     },
     {
-      "name": "stdlib-pkg2id-internal-csv",
-      "title": "Standard Library Internal Package Names and Error Identifiers",
-      "description": "A mapping between standard library internal package names and error identifier prefixes.",
+      "name": "stdlib-pkg2id-csv",
+      "title": "Standard Library Package Names and Error Identifiers",
+      "description": "A mapping from internal as well as standalone standard library internal package names to error identifier prefixes.",
       "format": "csv",
       "mediatype": "plain/csv",
       "encoding": "UTF-8",
@@ -28,45 +28,7 @@
           {
             "name": "pkg",
             "title": "Package Name",
-            "description": "Internal package name.",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "identifier",
-            "title": "Identifier",
-            "description": "Error identifier.",
-            "type": "string",
-            "format": "default"
-          }
-        ]
-      }
-    },
-    {
-      "name": "stdlib-pkg2id-standalone-json",
-      "title": "Standard Library Standalone Package Names and Error Identifiers",
-      "description": "A mapping between standard library standalone package names and error identifier prefixes.",
-      "format": "json",
-      "mediatype": "application/json",
-      "encoding": "UTF-8",
-      "hash": "",
-      "path": "./data/standalone.json"
-    },
-    {
-      "name": "stdlib-pkg2id-standalone-csv",
-      "title": "Standard Library Standalone Package Names and Error Identifiers",
-      "description": "A mapping between standard library standalone package names and error identifier prefixes.",
-      "format": "csv",
-      "mediatype": "plain/csv",
-      "encoding": "UTF-8",
-      "hash": "",
-      "path": "./data/standalone.csv",
-      "schema": {
-        "fields": [
-          {
-            "name": "pkg",
-            "title": "Package Name",
-            "description": "Standalone package name.",
+            "description": "Standalone or internal package name.",
             "type": "string",
             "format": "default"
           },
