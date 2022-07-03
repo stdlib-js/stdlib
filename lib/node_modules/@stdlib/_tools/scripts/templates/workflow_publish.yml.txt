@@ -91,46 +91,6 @@ jobs:
           channel: '#npm-ci'
         if: failure()
 
-  # Define job to increment semver version and commit the changes to main branch...
-  increment:
-
-    # Define the type of virtual host machine on which to run the job:
-    runs-on: ubuntu-latest
-
-    # Define the sequence of job steps...
-    steps:
-
-      # Checkout main branch of repository:
-      - name: 'Checkout main branch'
-        uses: actions/checkout@v3
-        with:
-          ref: main
-
-      # Increment version:
-      - name: 'Increment version in `package.json` to the version number of the tag'
-        run: |
-          VERSION=$(echo ${{ github.ref }} | sed -E 's/refs\/tags\/v?([0-9]+.[0-9]+.[0-9]+).*/\1/')
-          sed -Ei "s/\"version\": \"[^\"]+\"/\"version\": \"$VERSION\"/g" package.json
-
-      # Configure git:
-      - name: 'Configure git'
-        run: |
-          git config --local user.email "noreply@stdlib.io"
-          git config --local user.name "stdlib-bot"
-
-      # Commit changes:
-      - name: 'Commit changes'
-        run: |
-          git add package.json
-          git commit -m "Auto-generated commit"
-
-      # Push changes:
-      - name: 'Push changes'
-        run: |
-          SLUG=${{ github.repository }}
-          echo "Pushing changes to $SLUG..."
-          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" main
-
   # Define job to cancel any running or queued workflow runs...
   cancel:
 
