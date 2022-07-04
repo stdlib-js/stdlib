@@ -33,6 +33,8 @@ on:
         - skip-individual
       packages:
         description: Space-separated list of packages to publish
+      pattern:
+        description: Regular expression for packages to include
       dry-run:
         type: boolean
         description: Boolean flag indicating whether to skip uploading the packages (dry run)
@@ -96,4 +98,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.packages }} ${{ github.event.inputs.patch == 'true' && '--patch ' || '' }}${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual ' || '' }}${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel ' || '' }}
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.packages }} ${{ github.event.inputs.patch == 'true' && '--patch ' || '' }}${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual ' || '' }}${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel ' || '' }}${{ github.event.inputs.pattern && format('--pattern {0}', github.event.inputs.pattern ) || '' }}
