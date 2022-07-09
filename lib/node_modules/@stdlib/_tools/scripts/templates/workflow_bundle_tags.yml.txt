@@ -31,10 +31,10 @@ on:
 jobs:
 
   # Define job to wait a minute before running the workflow...
-  wait:
+  waiting:
 
     # Define display name:
-    name: 'Waiting'
+    name: 'Waiting Period'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
@@ -57,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Indicate that this job depends on the prior job finishing:
-    needs: 'Waiting'
+    needs: waiting
 
     # Define the steps to run:
     steps:
