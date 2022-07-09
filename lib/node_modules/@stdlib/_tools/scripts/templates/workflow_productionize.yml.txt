@@ -671,7 +671,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Indicate that this job depends on the prior jobs finishing:
-    needs: [ bundle-deno, bundle-umd, bundle-esm ]
+    needs: [ deno, umd, esm ]
 
     # Define the steps to be executed:
     steps:
@@ -684,7 +684,7 @@ jobs:
           exit 0
 
       - name: 'If any bundle failed to be generated...'
-        if: always() && (needs.bundle-deno.result == 'failure' || needs.bundle-umd.result == 'failure' || needs.bundle-esm.result == 'failure')
+        if: always() && (needs.deno.result == 'failure' || needs.umd.result == 'failure' || needs.esm.result == 'failure')
         run: |
           echo "One or more bundles failed to be generated."
           echo "Failure!"
