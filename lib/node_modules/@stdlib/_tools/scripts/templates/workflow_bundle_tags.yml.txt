@@ -67,9 +67,10 @@ jobs:
         uses: lewagon/wait-on-check-action@v1.0.0
         with:
           ref: main
-          check-name: Productionize
+          check-name: 'Productionize status'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           wait-interval: 60
+          allowed-conclusions: success
 
       # Checkout the repository:
       - name: 'Checkout repository'

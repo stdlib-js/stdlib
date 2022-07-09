@@ -660,3 +660,32 @@ jobs:
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
+
+  # Define job that succeeds if all bundles were successfully built:
+  productionize-status
+
+    # Define display name:
+    name: 'Productionize status'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Indicate that this job depends on the prior jobs finishing:
+    needs: [ bundle-deno, bundle-umd, bundle-esm ]
+
+    # Define the steps to be executed:
+    steps:
+
+      - name: 'If all bundles were successfully generated...'
+        if: always() && (needs.bundle-deno.result == 'success' && needs.bundle-umd.result == 'success' && needs.bundle-esm.result == 'success')
+        run: |
+          echo "All bundles were successfully built."
+          echo "Success!"
+          exit 0
+
+      - name: 'If any bundle failed to be generated...'
+        if: always() && (needs.bundle-deno.result == 'failure' || needs.bundle-umd.result == 'failure' || needs.bundle-esm.result == 'failure')
+        run: |
+          echo "One or more bundles failed to be generated."
+          echo "Failure!"
+          exit 1
