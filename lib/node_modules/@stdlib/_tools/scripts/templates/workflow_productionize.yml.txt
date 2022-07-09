@@ -662,7 +662,7 @@ jobs:
         if: failure()
 
   # Define job that succeeds if all bundles were successfully built:
-  productionize-status
+  productionize-status:
 
     # Define display name:
     name: 'Productionize status'
