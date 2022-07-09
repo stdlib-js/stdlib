@@ -1,0 +1,101 @@
+
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: bundle_tags
+
+# Workflow triggers:
+on:
+  # Run workflow when a new tag is pushed to the repository:
+  push:
+    tags:
+      - '*'
+
+# Workflow jobs:
+jobs:
+
+  # Define job to wait a minute before running the workflow...
+  wait:
+
+    # Define display name:
+    name: 'Waiting'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Define the steps to run:
+    steps:
+
+      # Wait a minute:
+      - name: 'Wait a minute'
+        run: |
+          sleep 60s
+
+  # Define job to publish bundle tags to GitHub...
+  create-tags:
+
+    # Define display name:
+    name: 'Create bundle tags'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Indicate that this job depends on the prior job finishing:
+    needs: 'Waiting'
+
+    # Define the steps to run:
+    steps:
+
+      # Wait for the productionize workflow to succeed:
+      - name: 'Wait for productionize workflow to succeed'
+        uses: lewagon/wait-on-check-action@v1.0.0
+        with:
+          ref: main
+          check-name: productionize
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          wait-interval: 60
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Configure git:
+      - name: 'Configure git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+          git fetch --all
+
+      # Create bundle tags:
+      - name: 'Create bundle tags'
+        run: |
+          SLUG=${{ github.repository }}
+          VERSION=$(echo ${{ github.ref }} | sed -E -n 's/refs\/tags\/?(v[0-9]+.[0-9]+.[0-9]+).*/\1/p')
+
+          git checkout -b deno origin/deno
+          git tag -a $VERSION-deno -m "$VERSION-deno"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-deno
+
+          git checkout -b umd origin/umd
+          git tag -a $VERSION-umd -m "$VERSION-umd"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-umd
+
+          git checkout -b esm origin/esm
+          git tag -a $VERSION-esm -m "$VERSION-esm"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-esm

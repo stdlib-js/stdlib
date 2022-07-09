@@ -21,8 +21,10 @@ name: productionize
 
 # Workflow triggers:
 on:
-  # Run workflow when a new commit is pushed to the repository:
+  # Run workflow when a new commit is pushed to the main branch:
   push:
+    branches:
+      - main
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -309,21 +311,12 @@ jobs:
           git add -A
           git commit -m "Auto-generated commit"
 
-      # Push changes to `deno` branch or create new branch tag:
-      - name: 'Push changes to `deno` branch or create new branch tag'
+      # Push changes to `deno` branch:
+      - name: 'Push changes to `deno` branch'
         run: |
           SLUG=${{ github.repository }}
-          VERSION=$(echo ${{ github.ref }} | sed -E -n 's/refs\/tags\/?(v[0-9]+.[0-9]+.[0-9]+).*/\1/p')
-          if [ -z "$VERSION" ]; then
-            echo "Workflow job was not triggered by a new tag...."
-            echo "Pushing changes to $SLUG..."
-            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" deno
-          else
-            echo "Workflow job was triggered by a new tag: $VERSION"
-            echo "Creating new bundle branch tag of the form $VERSION-deno"
-            git tag -a $VERSION-deno -m "$VERSION-deno"
-            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-deno
-          fi
+          echo "Pushing changes to $SLUG..."
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" deno
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
@@ -482,21 +475,12 @@ jobs:
           git add -A
           git commit -m "Auto-generated commit"
 
-      # Push changes to `umd` branch or create new branch tag:
-      - name: 'Push changes to `umd` branch or create new branch tag'
+      # Push changes to `umd` branch:
+      - name: 'Push changes to `umd` branch'
         run: |
           SLUG=${{ github.repository }}
-          VERSION=$(echo ${{ github.ref }} | sed -E -n 's/refs\/tags\/?(v[0-9]+.[0-9]+.[0-9]+).*/\1/p')
-          if [ -z "$VERSION" ]; then
-            echo "Workflow job was not triggered by a new tag...."
-            echo "Pushing changes to $SLUG..."
-            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" umd
-          else
-            echo "Workflow job was triggered by a new tag: $VERSION"
-            echo "Creating new bundle branch tag of the form $VERSION-umd"
-            git tag -a $VERSION-umd -m "$VERSION-umd"
-            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-umd
-          fi
+          echo "Pushing changes to $SLUG..."
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" umd
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
@@ -661,21 +645,12 @@ jobs:
           git add -A
           git commit -m "Auto-generated commit"
 
-      # Push changes to `esm` branch or create new branch tag:
-      - name: 'Push changes to `esm` branch or create new branch tag'
+      # Push changes to `esm` branch:
+      - name: 'Push changes to `esm` branch'
         run: |
           SLUG=${{ github.repository }}
-          VERSION=$(echo ${{ github.ref }} | sed -E -n 's/refs\/tags\/?(v[0-9]+.[0-9]+.[0-9]+).*/\1/p')
-          if [ -z "$VERSION" ]; then
-            echo "Workflow job was not triggered by a new tag...."
-            echo "Pushing changes to $SLUG..."
-            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" esm
-          else
-            echo "Workflow job was triggered by a new tag: $VERSION"
-            echo "Creating new bundle branch tag of the form $VERSION-esm"
-            git tag -a $VERSION-esm -m "$VERSION-esm"
-            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-esm
-          fi
+          echo "Pushing changes to $SLUG..."
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" esm
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
