@@ -88,15 +88,19 @@ jobs:
         run: |
           SLUG=${{ github.repository }}
           VERSION=$(echo ${{ github.ref }} | sed -E -n 's/refs\/tags\/?(v[0-9]+.[0-9]+.[0-9]+).*/\1/p')
+          ESCAPED=$(echo $SLUG | sed -E 's/\//\\\//g')
 
           git checkout -b deno origin/deno
+          sed -i -E "s/$ESCAPED@deno/$ESCAPED@$VERSION-deno/g" README.md
           git tag -a $VERSION-deno -m "$VERSION-deno"
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-deno
 
           git checkout -b umd origin/umd
+          sed -i -E "s/$ESCAPED@umd/$ESCAPED@$VERSION-umd/g" README.md
           git tag -a $VERSION-umd -m "$VERSION-umd"
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-umd
 
           git checkout -b esm origin/esm
+          sed -i -E "s/$ESCAPED@esm/$ESCAPED@$VERSION-esm/g" README.md
           git tag -a $VERSION-esm -m "$VERSION-esm"
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-esm
