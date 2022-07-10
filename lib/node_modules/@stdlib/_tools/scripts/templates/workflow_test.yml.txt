@@ -29,8 +29,10 @@ on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
-  # Run workflow on each push:
+  # Run workflow on each push to the main branch:
   push:
+    branches:
+      - main
 
 # Workflow jobs:
 jobs:
