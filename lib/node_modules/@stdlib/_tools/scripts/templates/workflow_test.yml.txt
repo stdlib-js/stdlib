@@ -31,8 +31,6 @@ on:
 
   # Run workflow on each push to the main branch:
   push:
-    branches:
-      - main
 
 # Workflow jobs:
 jobs:
