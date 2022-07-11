@@ -96,7 +96,7 @@ jobs:
           git commit -m "Update README.md for Deno bundle $VERSION"
           git tag -a $VERSION-deno -m "$VERSION-deno"
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-deno
-          git reset HEAD~1
+          sed -i -E "s/$ESCAPED@$VERSION-deno/$ESCAPED@deno/g" README.md
           git add README.md
           git commit -m "Revert changes to README.md for Deno bundle $VERSION"
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" deno
@@ -107,7 +107,7 @@ jobs:
           git commit -m "Update README.md for UMD bundle $VERSION"
           git tag -a $VERSION-umd -m "$VERSION-umd"
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-umd
-          git reset HEAD~1
+          sed -i -E "s/$ESCAPED@$VERSION-umd/$ESCAPED@umd/g" README.md
           git add README.md
           git commit -m "Revert changes to README.md for UMD bundle $VERSION"
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" umd
@@ -118,7 +118,7 @@ jobs:
           git commit -m "Update README.md for ESM bundle $VERSION"
           git tag -a $VERSION-esm -m "$VERSION-esm"
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-esm
-          git reset HEAD~1
+          sed -i -E "s/$ESCAPED@$VERSION-esm/$ESCAPED@esm/g" README.md
           git add README.md
           git commit -m "Revert changes to README.md for ESM bundle $VERSION"
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" esm
