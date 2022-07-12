@@ -122,7 +122,7 @@
     "eslint": "^8.0.1",
     "eslint-plugin-node": "^11.1.0",
     "factor-bundle": "^2.5.0",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "git+https://github.com/Planeshifter/gh-pages#main",
     "istanbul": "^0.4.1",
     "jsdoc": "^3.4.0",
     "lunr": "^2.3.9",
