@@ -681,11 +681,15 @@ jobs:
     # Define the steps to be executed:
     steps:
 
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
       # Check if workflow run was triggered by a patch, minor, or major version bump:
       - name: 'Check if workflow run was triggered by a patch, minor, or major version bump'
         id: check-if-bump
         run: |
-          VERSION_CHANGE_PKG_JSON=$(git diff HEAD~1 HEAD package.json | grep "version:")
+          VERSION_CHANGE_PKG_JSON=$(git diff HEAD~1 HEAD package.json | grep '"version":')
           if [ -z "$VERSION_CHANGE_PKG_JSON" ]; then
             echo "This workflow was not triggered by a version bump."
             echo "::set-output name=bump::false"
@@ -693,11 +697,6 @@ jobs:
             echo "This workflow was triggered by a version bump."
             echo "::set-output name=bump::true"
           fi
-
-      # Checkout the repository:
-      - name: 'Checkout repository'
-        uses: actions/checkout@v3
-        if: steps.check-if-bump.outputs.bump
 
       # Configure git:
       - name: 'Configure git'
