@@ -713,8 +713,8 @@ jobs:
         if: steps.check-if-bump.outputs.bump
         run: |
           SLUG=${{ github.repository }}
-          VERSION=$(echo ${{ github.ref }} | sed -E -n 's/refs\/tags\/?(v[0-9]+.[0-9]+.[0-9]+).*/\1/p')
           ESCAPED=$(echo $SLUG | sed -E 's/\//\\\//g')
+          VERSION="v$(jq --raw-output '.version' package.json)"
 
           git checkout -b deno origin/deno
           sed -i -E "s/$ESCAPED@deno/$ESCAPED@$VERSION-deno/g" README.md
