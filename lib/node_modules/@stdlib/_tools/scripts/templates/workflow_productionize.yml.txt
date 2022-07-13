@@ -684,6 +684,8 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 3
 
       # Check if workflow run was triggered by a patch, minor, or major version bump:
       - name: 'Check if workflow run was triggered by a patch, minor, or major version bump'
