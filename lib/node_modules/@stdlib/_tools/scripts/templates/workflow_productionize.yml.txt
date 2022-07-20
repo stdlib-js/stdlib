@@ -685,11 +685,12 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
         with:
-          fetch-depth: 3
+          fetch-depth: 2
 
       # Check if workflow run was triggered by a patch, minor, or major version bump:
       - name: 'Check if workflow run was triggered by a patch, minor, or major version bump'
         id: check-if-bump
+        continue-on-error: true
         run: |
           VERSION_CHANGE_PKG_JSON=$(git diff HEAD~1 HEAD package.json | grep '"version":')
           if [ -z "$VERSION_CHANGE_PKG_JSON" ]; then

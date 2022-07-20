@@ -77,7 +77,7 @@ jobs:
       # Upload coverage report to Codecov:
       - name: 'Upload coverage to Codecov'
         id: upload
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           directory: reports/coverage
           flags: unittests
