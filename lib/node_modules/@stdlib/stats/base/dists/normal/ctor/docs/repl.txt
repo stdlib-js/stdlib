@@ -48,6 +48,10 @@
     normal.cdf: Function
         Evaluates the cumulative distribution function (CDF).
 
+    normal.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
     normal.logpdf: Function
         Evaluates the natural logarithm of the probability density function
         (PDF).
@@ -86,6 +90,8 @@
     9.0
     > normal.cdf( 0.8 )
     ~0.825
+    > normal.logcdf( 0.8 )
+    ~-0.193
     > normal.logpdf( 2.0 )
     ~-2.9
     > normal.mgf( 0.2 )

@@ -207,6 +207,17 @@ var y = normal.cdf( 0.5 );
 // returns ~0.354
 ```
 
+#### Normal.prototype.logcdf( x )
+
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF).
+
+```javascript
+var normal = new Normal( 2.0, 4.0 );
+
+var y = normal.logcdf( 0.5 );
+// returns ~-1.039
+```
+
 #### Normal.prototype.logpdf( x )
 
 Evaluates the natural logarithm of the [probability density function][pdf] (PDF).

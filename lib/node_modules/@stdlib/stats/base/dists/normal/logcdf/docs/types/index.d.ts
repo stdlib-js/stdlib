@@ -29,7 +29,7 @@ type Unary = ( x: number ) => number;
 /**
 * Interface for the natural logarithm of the cumulative distribution function (CDF) of a normal distribution.
 */
-interface logcdf {
+interface LogCDF {
 	/**
 	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a normal distribution with mean `mu` and standard deviation `sigma` at a value `x`.
 	*
@@ -111,7 +111,7 @@ interface logcdf {
 * y = mylogcdf( 10.0 );
 * // returns ~-0.693
 */
-declare var logcdf: logcdf;
+declare var logcdf: LogCDF;
 
 
 // EXPORTS //

@@ -116,6 +116,14 @@ declare class Normal {
 	cdf( x: number ): number;
 
 	/**
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF).
+	*
+	* @param x - input value
+	* @returns evaluated logCDF
+	*/
+	logcdf( x: number ): number;
+
+	/**
 	* Evaluates the natural logarithm of the probability density function (PDF).
 	*
 	* @param x - input value
