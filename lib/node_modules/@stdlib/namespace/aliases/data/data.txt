@@ -609,6 +609,7 @@ base.epsdiff
 base.erf
 base.erfc
 base.erfcinv
+base.erfcx
 base.erfinv
 base.eta
 base.evalpoly
@@ -1394,6 +1395,7 @@ everyByRightAsync
 evil
 EXEC_PATH
 exists
+expandAcronyms
 expandContractions
 extname
 fastmath.abs
