@@ -26,7 +26,7 @@ import erfcx = require( './index' );
 	erfcx( 8 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	erfcx( true ); // $ExpectError
 	erfcx( false ); // $ExpectError
