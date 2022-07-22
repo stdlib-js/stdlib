@@ -609,6 +609,7 @@
 "@stdlib/math/base/special/erf",base.erf
 "@stdlib/math/base/special/erfc",base.erfc
 "@stdlib/math/base/special/erfcinv",base.erfcinv
+"@stdlib/math/base/special/erfcx",base.erfcx
 "@stdlib/math/base/special/erfinv",base.erfinv
 "@stdlib/math/base/special/dirichlet-eta",base.eta
 "@stdlib/math/base/tools/evalpoly",base.evalpoly
@@ -1394,6 +1395,7 @@
 "@stdlib/utils/eval",evil
 "@stdlib/process/exec-path",EXEC_PATH
 "@stdlib/fs/exists",exists
+"@stdlib/nlp/expand-acronyms",expandAcronyms
 "@stdlib/nlp/expand-contractions",expandContractions
 "@stdlib/utils/extname",extname
 "@stdlib/math/base/special/fast/abs",fastmath.abs
