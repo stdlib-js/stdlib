@@ -3,8 +3,6 @@
     Computes the reciprocal cube root of a double-precision floating-point
     number.
 
-    For `x < 0`, the reciprocal cube root is not defined.
-
     Parameters
     ----------
     x: number
