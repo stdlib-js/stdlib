@@ -712,6 +712,16 @@ interface Namespace {
 	commonKeysIn: typeof commonKeysIn;
 
 	/**
+	* TODO
+	*
+	* @returns TODO
+	*
+	* @example
+	* // TODO
+	*/
+	CompactAdjacencyMatrix: typeof CompactAdjacencyMatrix;
+
+	/**
 	* Function composition.
 	*
 	* ## Notes
