@@ -715,7 +715,7 @@ interface Namespace {
 	minstdShuffle: typeof minstdShuffle;
 
 	/**
-	* Returns a pseudorandom integer on the interval `[1, 4294967295]`.
+	* Returns a pseudorandom integer on the interval `[0, 4294967295]`.
 	*
 	* ## Notes
 	*
