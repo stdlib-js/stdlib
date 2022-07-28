@@ -93,6 +93,11 @@ jobs:
           make markdown-namespace-tocs-files FILES="${{ steps.namespace_files.outputs.files }}"
           make markdown-pkg-urls-files FILES="${{ steps.namespace_files.outputs.files }}"
         timeout-minutes: 60
+        
+      # Disable git hooks:
+      - name: 'Disable git hooks'
+        run: |
+          rm -rf .git/hooks
 
       # Create a pull request with the updated tables of contents:
       - name: 'Create pull request'
