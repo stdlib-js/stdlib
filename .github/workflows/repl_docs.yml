@@ -93,6 +93,11 @@ jobs:
         run: |
           make repl-docs
 
+      # Disable git hooks:
+      - name: 'Disable git hooks'
+        run: |
+          rm -rf .git/hooks
+
       # Create a pull request with the updated documentation:
       - name: 'Create pull request'
         id: cpr
