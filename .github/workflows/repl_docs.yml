@@ -93,8 +93,8 @@ jobs:
         run: |
           make repl-docs
 
-      # Disable git hooks:
-      - name: 'Disable git hooks'
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
         run: |
           rm -rf .git/hooks
 

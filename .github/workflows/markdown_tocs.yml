@@ -93,9 +93,9 @@ jobs:
           make markdown-namespace-tocs-files FILES="${{ steps.namespace_files.outputs.files }}"
           make markdown-pkg-urls-files FILES="${{ steps.namespace_files.outputs.files }}"
         timeout-minutes: 60
-        
-      # Disable git hooks:
-      - name: 'Disable git hooks'
+
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
         run: |
           rm -rf .git/hooks
 
