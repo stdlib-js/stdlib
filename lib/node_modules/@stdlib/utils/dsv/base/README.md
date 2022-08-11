@@ -39,13 +39,7 @@ var o = base;
 // returns {...}
 ```
 
-The namespace contains the following sub-namespaces:
-
-<!-- <toc pattern="base"> -->
-
-<!-- </toc> -->
-
-The namespace contains the following packages:
+The namespace contains the following utilities:
 
 <!-- <toc pattern="*"> -->
 
