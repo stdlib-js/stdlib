@@ -38,7 +38,7 @@ interface Namespace {
 	*
 	* @example
 	* var tokens = [ 'beep ', { 'specifier': 's' } ];
-	* var out = formatInterpolate( tokens, 'boop' );
+	* var out = ns.formatInterpolate( tokens, 'boop' );
 	* // returns 'beep boop'
 	*/
 	formatInterpolate: typeof formatInterpolate;
@@ -50,14 +50,14 @@ interface Namespace {
 	* @returns tokens
 	*
 	* @example
-	* var tokens = formatTokenize( 'Hello %s!' );
+	* var tokens = ns.formatTokenize( 'Hello %s!' );
 	* // returns [ 'Hello ', {...}, '!' ]
 	*/
 	formatTokenize: typeof formatTokenize;
 }
 
 /**
-* String base packages.
+* Base (i.e., lower-level) string functions.
 */
 declare var ns: Namespace;
 

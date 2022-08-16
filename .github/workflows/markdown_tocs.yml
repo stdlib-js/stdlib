@@ -94,6 +94,11 @@ jobs:
           make markdown-pkg-urls-files FILES="${{ steps.namespace_files.outputs.files }}"
         timeout-minutes: 60
 
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
       # Create a pull request with the updated tables of contents:
       - name: 'Create pull request'
         id: cpr
