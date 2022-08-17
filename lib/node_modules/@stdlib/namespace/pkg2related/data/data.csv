@@ -1355,6 +1355,7 @@
 "@stdlib/blas/ddot","@stdlib/blas/base/ddot,@stdlib/blas/gdot,@stdlib/blas/sdot"
 "@stdlib/streams/node/debug-sink","@stdlib/streams/node/debug,@stdlib/streams/node/inspect-sink"
 "@stdlib/streams/node/debug","@stdlib/streams/node/debug-sink,@stdlib/streams/node/inspect"
+"@stdlib/utils/decorate-after",""
 "@stdlib/assert/deep-equal","@stdlib/assert/is-strict-equal,@stdlib/assert/is-same-value"
 "@stdlib/utils/deep-get","@stdlib/utils/deep-pluck,@stdlib/utils/deep-set"
 "@stdlib/assert/deep-has-own-property","@stdlib/assert/deep-has-property,@stdlib/assert/has-own-property,@stdlib/utils/deep-get,@stdlib/utils/deep-pluck,@stdlib/utils/deep-set"

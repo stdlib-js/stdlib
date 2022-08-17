@@ -1355,6 +1355,7 @@
 "@stdlib/blas/ddot","@stdlib/blas-ddot"
 "@stdlib/streams/node/debug-sink","@stdlib/streams-node-debug-sink"
 "@stdlib/streams/node/debug","@stdlib/streams-node-debug"
+"@stdlib/utils/decorate-after","@stdlib/utils-decorate-after"
 "@stdlib/assert/deep-equal","@stdlib/assert-deep-equal"
 "@stdlib/utils/deep-get","@stdlib/utils-deep-get"
 "@stdlib/assert/deep-has-own-property","@stdlib/assert-deep-has-own-property"

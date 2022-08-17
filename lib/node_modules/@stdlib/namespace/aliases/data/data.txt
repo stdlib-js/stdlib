@@ -1356,6 +1356,7 @@ daysInYear
 ddot
 debugSinkStream
 debugStream
+decorateAfter
 deepEqual
 deepGet
 deepHasOwnProp
