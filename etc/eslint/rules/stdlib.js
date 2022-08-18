@@ -4100,6 +4100,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'EvalError',
 		'Float32Array',
 		'Float64Array',
+		'Function',
 		'Int8Array',
 		'Int16Array',
 		'Int32Array',
