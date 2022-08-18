@@ -114,6 +114,32 @@ var count = ctx.count;
 // returns 2
 ```
 
+#### decorateAfter.factory( fcn, arity, after\[, thisArg] )
+
+Uses code generation to decorate a provided function such that the function's return value is provided as an argument to another function.
+
+```javascript
+var abs = require( '@stdlib/math/base/special/abs' );
+
+function negate( v ) {
+    return -v;
+}
+
+var f = decorateAfter.factory( abs, abs.length, negate );
+// returns <Function>
+
+var bool = ( abs.length === f.length );
+// returns true
+
+var v = f( -5 );
+// returns -5
+
+v = f( 5 );
+// returns -5
+```
+
+Argument behavior is the same as for `decorateAfter` above.
+
 </section>
 
 <!-- /.usage -->
@@ -125,7 +151,10 @@ var count = ctx.count;
 ## Notes
 
 -   If the `after` function returns `undefined`, the returned decorator returns the return value of the decorated function `fcn`; otherwise, the returned decorator returns the return value of `after`.
--   The returned decorator supports an `arity` less than or equal to `10` (i.e., the maximum arity of the returned function is `10`). For an arity greater than `10`, the returned function has an arity equal to `0`. While this violates strict notions of a decorator, for all practical purposes, this is unlikely to be an issue, as the vast majority of functions have fewer than `10` parameters and the need for explicitly checking function length is relatively uncommon.
+-   Code generation may be problematic in browser contexts enforcing a strict [content security policy][mdn-csp] (CSP). If running in or targeting an environment with a CSP, avoid using code generation.
+-   For non-native functions, the code generation API supports returning a decorator whose API exactly matches the API of the decorated function, including function length and parameter names. For native functions, due to how native functions serialize to strings, the code generation API generates placeholder parameter names, which are unlikely to match the canonical parameter names. Using placeholder parameter names ensures that the length of the decorator (i.e., number of parameters) matches the decorated function and, except in scenarios involving function source code inspection, will not affect runtime behavior.
+-   For the non-code generation API, the returned decorator supports an `arity` less than or equal to `10` (i.e., the maximum arity of the returned function is `10`). For an arity greater than `10`, the returned function has an arity equal to `0`. While this violates strict notions of a decorator, for all practical purposes, this is unlikely to be an issue, as the vast majority of functions have fewer than `10` parameters and the need for explicitly checking function length is relatively uncommon.
+-   The decorators returned by the code generation and non-code generation APIs should have the same performance characteristics, and, thus, neither API should have a performance advantage over the other. The main advantage of the code generation API is the ability to return a decorator whose signature exactly matches the signature of a non-native decorated function.
 -   Common use cases for decorating a function with additional actions **after** invocation include logging, capturing invocation statistics, and validating return values.
 
 </section>
@@ -204,6 +233,8 @@ var c = ctx.count;
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[mdn-csp]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
 
 <!-- <related-links> -->
 

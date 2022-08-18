@@ -77,3 +77,60 @@ import decorateAfter = require( './index' );
 	decorateAfter( ( x: number, y: number ): number => x + y, 2 ); // $ExpectError
 	decorateAfter( ( x: number, y: number ): number => x + y, 2, ( x: number ): number => x, {}, 4 ); // $ExpectError
 }
+
+// Attached to the main export is a `factory` method which returns a function...
+{
+	decorateAfter.factory<[number, number], number, number>( ( x: number, y: number ): number => x + y, 2, ( x: number ): number => x ); // $ExpectType (args_0: number, args_1: number) => number
+	decorateAfter.factory<[number, number], number, number>( ( x: number, y: number ): number => x + y, 2, ( x: number ): number => x, {} ); // $ExpectType (args_0: number, args_1: number) => number
+
+	decorateAfter.factory<[number, number], number, string>( ( x: number, y: number ): number => x + y, 2, ( x: number ): string => x.toString() ); // $ExpectType (args_0: number, args_1: number) => string
+	decorateAfter.factory<[number, number], number, string>( ( x: number, y: number ): number => x + y, 2, ( x: number ): string => x.toString(), {} ); // $ExpectType (args_0: number, args_1: number) => string
+
+	decorateAfter.factory<[number, boolean, number], number, string>( ( x: number, bool: boolean, y: number ): number => { if ( bool ) { return x + y; } return y; }, 2, ( x: number ): string => x.toString() ); // $ExpectType (args_0: number, args_1: boolean, args_2: number) => string
+	decorateAfter.factory<[number, boolean, number], number, string>( ( x: number, bool: boolean, y: number ): number => { if ( bool ) { return x + y; } return y; }, 2, ( x: number ): string => x.toString(), {} ); // $ExpectType (args_0: number, args_1: boolean, args_2: number) => string
+
+	decorateAfter.factory<[number, number], number>( ( x: number, y: number ): number => x + y, 2, ( x: number ): void => { if ( x !== x ) { return; } } ); // $ExpectType (args_0: number, args_1: number) => number
+
+	decorateAfter.factory<[number, number], number>( ( x: number, y: number ): number => x + y, 2, ( x: number ): void => { if ( x !== x ) { return; } }, {} ); // $ExpectType (args_0: number, args_1: number) => number
+}
+
+// The compiler throws an error if the `factory` method is provided a first argument which is not a function...
+{
+	decorateAfter.factory( true, 0, ( x: number ): number => x ); // $ExpectError
+	decorateAfter.factory( false, 0, ( x: number ): number => x ); // $ExpectError
+	decorateAfter.factory( 5, 0, ( x: number ): number => x ); // $ExpectError
+	decorateAfter.factory( [], 0, ( x: number ): number => x ); // $ExpectError
+	decorateAfter.factory( {}, 0, ( x: number ): number => x ); // $ExpectError
+	decorateAfter.factory( 'abc', 0, ( x: number ): number => x ); // $ExpectError
+
+	decorateAfter.factory( true, 0, ( x: number ): number => x, {} ); // $ExpectError
+	decorateAfter.factory( false, 0, ( x: number ): number => x, {} ); // $ExpectError
+	decorateAfter.factory( 5, 0, ( x: number ): number => x, {} ); // $ExpectError
+	decorateAfter.factory( [], 0, ( x: number ): number => x, {} ); // $ExpectError
+	decorateAfter.factory( {}, 0, ( x: number ): number => x, {} ); // $ExpectError
+	decorateAfter.factory( 'abc', 0, ( x: number ): number => x, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the `factory` method is provided a second argument which is not a number...
+{
+	decorateAfter.factory( ( x: number ): number => x, true, ( x: number ): number => x ); // $ExpectError
+	decorateAfter.factory( ( x: number ): number => x, false, ( x: number ): number => x ); // $ExpectError
+	decorateAfter.factory( ( x: number ): number => x, ( x: number ): number => x, ( x: number ): number => x ); // $ExpectError
+	decorateAfter.factory( ( x: number ): number => x, [], ( x: number ): number => x ); // $ExpectError
+	decorateAfter.factory( ( x: number ): number => x, {}, ( x: number ): number => x ); // $ExpectError
+	decorateAfter.factory( ( x: number ): number => x, 'abc', ( x: number ): number => x ); // $ExpectError
+
+	decorateAfter.factory( ( x: number ): number => x, true, ( x: number ): number => x, {} ); // $ExpectError
+	decorateAfter.factory( ( x: number ): number => x, false, ( x: number ): number => x, {} ); // $ExpectError
+	decorateAfter.factory( ( x: number ): number => x, ( x: number ): number => x, ( x: number ): number => x, {} ); // $ExpectError
+	decorateAfter.factory( ( x: number ): number => x, [], ( x: number ): number => x, {} ); // $ExpectError
+	decorateAfter.factory( ( x: number ): number => x, {}, ( x: number ): number => x, {} ); // $ExpectError
+	decorateAfter.factory( ( x: number ): number => x, 'abc', ( x: number ): number => x, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the `factory` method is provided an incorrect number of arguments...
+{
+	decorateAfter.factory( ( x: number, y: number ): number => x + y ); // $ExpectError
+	decorateAfter.factory( ( x: number, y: number ): number => x + y, 2 ); // $ExpectError
+	decorateAfter.factory( ( x: number, y: number ): number => x + y, 2, ( x: number ): number => x, {}, 4 ); // $ExpectError
+}
