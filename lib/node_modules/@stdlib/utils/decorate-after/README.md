@@ -169,13 +169,15 @@ Argument behavior is the same as for `decorateAfter` above.
 
 <!-- eslint no-undef: "error" -->
 
+<!-- eslint-disable no-invalid-this -->
+
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var format = require( '@stdlib/string/format' );
 var decorateAfter = require( '@stdlib/utils/decorate-after' );
 
 function count() {
-    this.count += 1; // eslint-disable-line no-invalid-this
+    this.count += 1;
 }
 
 function greet() {
