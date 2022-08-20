@@ -1,0 +1,30 @@
+
+{{alias}}( [...argNames,] body )
+    Returns a Function object.
+
+    Argument names must be strings corresponding to valid JavaScript parameters
+    (i.e., a plain identifier, or, in environments supporting such parameters, a
+    rest parameter or destructured parameter, optionally with a default).
+
+    Parameters
+    ----------
+    argNames: ...any (optional)
+        Parameter names.
+
+    body: string
+        Function body.
+
+    Returns
+    -------
+    fcn: Function
+        Function object.
+
+    Examples
+    --------
+    > var f = new {{alias}}( 'x', 'y', 'return x + y' );
+    > f( 1, 2 )
+    3
+
+    See Also
+    --------
+

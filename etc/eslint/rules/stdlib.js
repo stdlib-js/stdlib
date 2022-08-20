@@ -4100,6 +4100,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'EvalError',
 		'Float32Array',
 		'Float64Array',
+		'Function',
 		'Int8Array',
 		'Int16Array',
 		'Int32Array',
@@ -4307,12 +4308,14 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'DataView',
 		'Float32Array',
 		'Float64Array',
+		'Function',
 		'Int8Array',
 		'Int16Array',
 		'Int32Array',
 		'Number',
 		'Promise', // ES6/ES2015
 		'process', // Node.js
+		'Proxy', // ES6/2015
 		'SharedArrayBuffer',
 		'Symbol', // ES6/ES2015
 		'Uint8Array',

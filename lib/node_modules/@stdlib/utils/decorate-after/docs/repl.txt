@@ -1,0 +1,112 @@
+
+{{alias}}( fcn, arity, after[, thisArg] )
+    Decorates a provided function such that the function's return value is
+    provided as an argument to another function.
+
+    Decorators are intended to be transparent, meaning that, when interfacing
+    with an API, the decorated API should have the same signature (i.e., number
+    of parameters) as the decorated function.
+
+    Thus, a typical value for `arity` is `fcn.length`. This function does not
+    require equality, however, and the `arity` argument is allowed to diverge
+    from that of the decorated function. Specifying a differing `arity` does
+    *not* affect function evaluation behavior, as the returned function passes
+    all provided arguments to the decorated function.
+
+    If the `after` function returns `undefined`, the returned decorator returns
+    the return value of the decorated function `fcn`; otherwise, the returned
+    decorator returns the return value of `after`.
+
+    The returned decorator supports an `arity` less than or equal to `10` (i.e.,
+    the maximum arity of the returned function is `10`). For an arity greater
+    than `10`, the returned function has an arity equal to `0`. While this
+    violates strict notions of a decorator, for all practical purposes, this is
+    unlikely to be an issue, as the vast majority of functions have fewer than
+    `10` parameters and the need for explicitly checking function length is
+    relatively uncommon.
+
+    Common use cases for decorating a function with additional actions *after*
+    invocation include logging, capturing invocation statistics, and validating
+    return values.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to decorate.
+
+    arity: integer
+        Number of parameters.
+
+    after: Function
+        Function with which to invoke the return value of the decorated
+        function.
+
+    thisArg: any (optional)
+        Evaluation context for `after`.
+
+    Returns
+    -------
+    out: Function
+        Decorator function.
+
+    Examples
+    --------
+    > function f( v ) { return -v; };
+    > var fcn = {{alias}}( {{alias:@stdlib/math/base/special/abs}}, 1, f );
+    > var v = fcn( -5 )
+    -5
+    > v = fcn( 5 )
+    -5
+
+
+{{alias}}.factory( fcn, arity, after[, thisArg] )
+    Uses code generation to decorate a provided function such that the
+    function's return value is provided as an argument to another function.
+
+    Code generation may be problematic in browser contexts enforcing a strict
+    content security policy] (CSP). If running in or targeting an environment
+    with a CSP, avoid using code generation.
+
+    For non-native functions, the function supports returning a decorator whose
+    API exactly matches the API of the decorated function, including function
+    length and parameter names.
+
+    For native functions, due to how native functions serialize to strings, the
+    function generates placeholder parameter names, which are unlikely to match
+    the canonical parameter names. Using placeholder parameter names ensures
+    that the length of the decorator (i.e., number of parameters) matches the
+    decorated function and, except in scenarios involving function source code
+    inspection, will not affect runtime behavior.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to decorate.
+
+    arity: integer
+        Number of parameters.
+
+    after: Function
+        Function with which to invoke the return value of the decorated
+        function.
+
+    thisArg: any (optional)
+        Evaluation context for `after`.
+
+    Returns
+    -------
+    out: Function
+        Decorator function.
+
+    Examples
+    --------
+    > function f( v ) { return -v; };
+    > var fcn = {{alias}}.factory( {{alias:@stdlib/math/base/special/abs}}, 1, f );
+    > var v = fcn( -5 )
+    -5
+    > v = fcn( 5 )
+    -5
+
+    See Also
+    --------
+
