@@ -20,7 +20,7 @@ limitations under the License.
 
 # graphemeClusters2iterator
 
-> CCreate an iterator which iterates over [grapheme clusters][unicode-text-segmentation].
+> Create an iterator which iterates over [grapheme clusters][unicode-text-segmentation].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 

@@ -12,9 +12,9 @@
     iterable.
 
     If an environment supports Symbol.iterator, the function explicitly does not
-    not invoke a string's `@@iterator` method, regardless of whether this method
-    is defined. To convert a string to an implementation defined iterator,
-    invoke this method directly.
+    invoke a string's `@@iterator` method, regardless of whether this method is
+    defined. To convert a string to an implementation defined iterator, invoke
+    this method directly.
 
     Parameters
     ----------
