@@ -88,7 +88,7 @@ The invoked function is provided three arguments:
 
 -   **value**: [grapheme cluster][unicode-text-segmentation].
 -   **index**: iterated value index.
--   **src**: source array-like object.
+-   **src**: source string.
 
 ```javascript
 function fcn( v, i ) {
