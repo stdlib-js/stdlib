@@ -1,0 +1,34 @@
+
+{{alias}}( value )
+    Returns an object.
+
+    If provided `null` or `undefined`, the function returns an empty object.
+
+    If provided an existing object, the function returns the input value
+    unchanged.
+
+    Otherwise, if provided any other value (e.g., a number, string, etc), the
+    function will return an object of the corresponding type.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    Returns
+    -------
+    out: Object
+        Output object.
+
+    Examples
+    --------
+    > var o = new {{alias}}( null )
+    {}
+    > o = new {{alias}}( 5.0 )
+    <Number>
+    > o = new {{alias}}( 'beep' )
+    <String>
+
+    See Also
+    --------
+
