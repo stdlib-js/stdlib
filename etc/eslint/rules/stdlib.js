@@ -4313,6 +4313,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Int16Array',
 		'Int32Array',
 		'Number',
+		'Object',
 		'Promise', // ES6/ES2015
 		'process', // Node.js
 		'Proxy', // ES6/2015
