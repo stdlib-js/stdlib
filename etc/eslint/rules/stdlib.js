@@ -4304,6 +4304,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'BigInt', // ES11/ES2020
 		'BigInt64Array', // ES11/ES2020
 		'BigUint64Array', // ES11/ES2020
+		'Boolean',
 		'Buffer', // Node.js
 		'DataView',
 		'Float32Array',
