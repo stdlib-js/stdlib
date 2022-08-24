@@ -2272,6 +2272,7 @@
 "@stdlib/os/num-cpus","@stdlib/os-num-cpus"
 "@stdlib/number/ctor","@stdlib/number-ctor"
 "@stdlib/string/num-grapheme-clusters","@stdlib/string-num-grapheme-clusters"
+"@stdlib/object/ctor","@stdlib/object-ctor"
 "@stdlib/utils/entries","@stdlib/utils-entries"
 "@stdlib/utils/entries-in","@stdlib/utils-entries-in"
 "@stdlib/utils/from-entries","@stdlib/utils-from-entries"
