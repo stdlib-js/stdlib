@@ -36,8 +36,6 @@ limitations under the License.
 
 ## Usage
 
-<!-- eslint-disable stdlib/no-redeclare -->
-
 ```javascript
 var Function = require( '@stdlib/function/ctor' );
 ```
@@ -45,8 +43,6 @@ var Function = require( '@stdlib/function/ctor' );
 #### Function( \[...argNames,] body )
 
 Returns a new [function][mdn-function] object.
-
-<!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
 var greet = new Function( 'name', 'return "Hello, "+name+"!"' );
@@ -83,8 +79,6 @@ Argument names must be strings corresponding to valid JavaScript parameters (i.e
 ## Examples
 
 <!-- eslint no-undef: "error" -->
-
-<!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
 var Function = require( '@stdlib/function/ctor' );
