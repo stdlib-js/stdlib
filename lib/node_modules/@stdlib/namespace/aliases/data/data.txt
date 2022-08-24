@@ -1289,6 +1289,7 @@ bifurcateIn
 bifurcateOwn
 BigInt
 binomialTest
+Boolean
 Buffer
 buffer2json
 BYTE_ORDER

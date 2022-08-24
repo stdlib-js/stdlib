@@ -1288,6 +1288,7 @@
 "@stdlib/utils/bifurcate-own",bifurcateOwn
 "@stdlib/bigint/ctor",BigInt
 "@stdlib/stats/binomial-test",binomialTest
+"@stdlib/boolean/ctor",Boolean
 "@stdlib/buffer/ctor",Buffer
 "@stdlib/buffer/to-json",buffer2json
 "@stdlib/os/byte-order",BYTE_ORDER
