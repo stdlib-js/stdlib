@@ -37,6 +37,8 @@ Tests if a `value` is a JavaScript boxed primitive.
 <!-- eslint-disable no-new-wrappers-->
 
 ```javascript
+var Boolean = require( '@stdlib/boolean/ctor' );
+
 var bool = isBoxedPrimitive( new Boolean( false ) );
 // returns true
 
@@ -72,6 +74,7 @@ bool = isBoxedPrimitive( true );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var Boolean = require( '@stdlib/boolean/ctor' );
 var Number = require( '@stdlib/number/ctor' );
 var isBoxedPrimitive = require( '@stdlib/assert/is-boxed-primitive' );
 
