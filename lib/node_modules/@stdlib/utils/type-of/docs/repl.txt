@@ -49,13 +49,13 @@
     'regexp'
     > t = {{alias}}( new String( 'beep' ) )
     'string'
-    > t = {{alias}}( new Number( 5 ) )
+    > t = {{alias}}( new {{alias:@stdlib/number/ctor}}( 5 ) )
     'number'
-    > t = {{alias}}( new Boolean( false ) )
+    > t = {{alias}}( new {{alias:@stdlib/boolean/ctor}}( false ) )
     'boolean'
     > t = {{alias}}( new Array() )
     'array'
-    > t = {{alias}}( new Object() )
+    > t = {{alias}}( new {{alias:@stdlib/object/ctor}}() )
     'object'
     > t = {{alias}}( new {{alias:@stdlib/array/int8}}( 10 ) )
     'int8array'
