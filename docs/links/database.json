@@ -3529,6 +3529,16 @@
       "typography"
     ]
   },
+  "https://en.wikipedia.org/wiki/Thunk": {
+    "id": "thunk",
+    "description": "Wikpedia for a thunk.",
+    "short_url": "",
+    "keywords": [
+      "thunk",
+      "functional",
+      "programming"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Tikhonov_regularization": {
     "id": "tikhonov-regularization",
     "description": "Wikipedia page for Tikhonov regularization.",

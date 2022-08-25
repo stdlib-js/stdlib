@@ -1,0 +1,28 @@
+
+{{alias}}( fcn[, ...args] )
+    Returns a thunk.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to convert to a thunk.
+
+    args: ...any (optional)
+        Function arguments.
+
+    Returns
+    -------
+    out: Function
+        Thunk.
+
+    Examples
+    --------
+    > var fcn = {{alias}}( {{alias:@stdlib/math/base/ops/add}}, 2, 3 );
+    > var v = fcn()
+    5
+    > v = fcn()
+    5
+
+    See Also
+    --------
+

@@ -13,9 +13,9 @@
     iterable.
 
     If an environment supports Symbol.iterator, the function explicitly does not
-    not invoke an array's `@@iterator` method, regardless of whether this method
-    is defined. To convert an array to an implementation defined iterator,
-    invoke this method directly.
+    invoke an array's `@@iterator` method, regardless of whether this method is
+    defined. To convert an array to an implementation defined iterator, invoke
+    this method directly.
 
     Parameters
     ----------

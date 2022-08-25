@@ -1,0 +1,39 @@
+
+{{alias}}( value )
+    Returns a boolean.
+
+    When invoked without `new`,
+
+    - if provided `false`, `null`, `undefined`, `-0`, `0`, `NaN`, or an empty
+      string, the function returns `false`.
+    - if provided any other value, including an empty object, an empty array,
+      the string `'false'`, or a `Boolean` object (including a `Boolean` object
+      whose value is `false`), the function returns `true`.
+
+    When invoked with `new`, the constructor returns a `Boolean` object, which
+    is an object wrapper for a primitive boolean value. The value of the
+    returned `Boolean` object follows the same conversion semantics as when the
+    constructor is invoked without `new`.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    Returns
+    -------
+    out: boolean|Boolean
+        Boolean primitive or object.
+
+    Examples
+    --------
+    > var b = new {{alias}}( null )
+    <Boolean>
+    > b = {{alias}}( null )
+    false
+    > b = {{alias}}( [] )
+    true
+
+    See Also
+    --------
+

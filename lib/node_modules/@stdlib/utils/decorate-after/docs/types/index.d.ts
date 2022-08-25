@@ -110,6 +110,7 @@ interface Decorator {
 	* // returns 2
 	*/
 	<T extends Array<any>, U>( fcn: ( ...args: T ) => U, arity: number, after: ( v: U ) => void, thisArg?: any ): ( ...args: T ) => U; // tslint-disable-line max-line-length
+
 	/**
 	* Uses code generation to decorate a provided function such that the function's return value is provided as an argument to another function.
 	*
