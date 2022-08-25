@@ -58,6 +58,36 @@ var b = Boolean( null );
 // returns false
 ```
 
+* * *
+
+### Methods
+
+<a name="method-to-string"></a>
+
+##### Boolean.prototype.toString()
+
+Returns a string representation of the boolean value.
+
+```javascript
+var b = new Boolean( true );
+var str = b.toString();
+// returns 'true'
+```
+
+##### Boolean.prototype.valueOf()
+
+Returns the primitive value of the boolean object.
+
+```javascript
+var b = new Boolean( true );
+var val = b.valueOf();
+// returns true
+
+b = new Boolean();
+val = b.valueOf();
+// returns false
+```
+
 </section>
 
 <!-- /.usage -->
