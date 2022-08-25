@@ -46,6 +46,8 @@ Tests if a `value` is an array-like object containing **only** `boolean` primiti
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
+var Boolean = require( '@stdlib/boolean/ctor' );
+
 var bool = isBooleanArray.primitives( [ true, false ] );
 // returns true
 
@@ -60,6 +62,8 @@ Tests if a `value` is an array-like object containing **only** `Boolean` objects
 <!-- eslint-disable no-new-wrappers, max-len -->
 
 ```javascript
+var Boolean = require( '@stdlib/boolean/ctor' );
+
 var bool = isBooleanArray.objects( [ new Boolean( false ), new Boolean( true ) ] );
 // returns true
 
@@ -80,6 +84,7 @@ bool = isBooleanArray.objects( [ new Boolean( false ), true ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var Boolean = require( '@stdlib/boolean/ctor' );
 var isBooleanArray = require( '@stdlib/assert/is-boolean-array' );
 
 var bool = isBooleanArray( [ true, false ] );

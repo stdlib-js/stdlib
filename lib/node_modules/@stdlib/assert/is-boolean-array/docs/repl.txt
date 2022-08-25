@@ -38,7 +38,7 @@
     --------
     > var bool = {{alias}}.primitives( [ true, false ] )
     true
-    > bool = {{alias}}.primitives( [ false, new Boolean( true ) ] )
+    > bool = {{alias}}.primitives( [ false, new {{alias:@stdlib/boolean/ctor}}( true ) ] )
     false
 
 
@@ -58,9 +58,9 @@
 
     Examples
     --------
-    > var bool = {{alias}}.objects( [ new Boolean( false ), true ] )
+    > var bool = {{alias}}.objects( [ new {{alias:@stdlib/boolean/ctor}}( false ), true ] )
     false
-    > bool = {{alias}}.objects( [ new Boolean( false ), new Boolean( true ) ] )
+    > bool = {{alias}}.objects( [ new {{alias:@stdlib/boolean/ctor}}( false ), new {{alias:@stdlib/boolean/ctor}}( true ) ] )
     true
 
     See Also

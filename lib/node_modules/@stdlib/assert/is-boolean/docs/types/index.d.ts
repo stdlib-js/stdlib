@@ -37,10 +37,14 @@ interface IsBoolean {
 	* // returns true
 	*
 	* @example
+	* var Boolean = require( `@stdlib/boolean/ctor` );
+	*
 	* var bool = isBoolean( new Boolean( false ) );
 	* // returns true
 	*
 	* @example
+	* var Boolean = require( `@stdlib/boolean/ctor` );
+	*
 	* var bool = isBoolean( new Boolean( true ) );
 	* // returns true
 	*/
@@ -61,6 +65,8 @@ interface IsBoolean {
 	* // returns true
 	*
 	* @example
+	* var Boolean = require( `@stdlib/boolean/ctor` );
+	*
 	* var bool = isBoolean.isPrimitive( new Boolean( true ) );
 	* // returns false
 	*/
@@ -77,6 +83,8 @@ interface IsBoolean {
 	* // returns false
 	*
 	* @example
+	* var Boolean = require( `@stdlib/boolean/ctor` );
+	*
 	* var bool = isBoolean.isObject( new Boolean( false ) );
 	* // returns true
 	*/
@@ -98,10 +106,14 @@ interface IsBoolean {
 * // returns true
 *
 * @example
+* var Boolean = require( `@stdlib/boolean/ctor` );
+*
 * var bool = isBoolean.isPrimitive( new Boolean( true ) );
 * // returns false
 *
 * @example
+* var Boolean = require( `@stdlib/boolean/ctor` );
+*
 * var bool = isBoolean.isObject( new Boolean( false ) );
 * // returns true
 */
