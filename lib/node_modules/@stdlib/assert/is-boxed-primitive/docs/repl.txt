@@ -21,7 +21,7 @@
 
     Examples
     --------
-    > var bool = {{alias}}( new Boolean( false ) )
+    > var bool = {{alias}}( new {{alias:@stdlib/boolean/ctor}}( false ) )
     true
     > bool = {{alias}}( true )
     false

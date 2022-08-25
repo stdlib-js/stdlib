@@ -65,11 +65,13 @@ var bool = isPrimitive( false );
 
 ## Examples
 
-<!-- eslint-disable no-restricted-syntax, no-new-object, no-new-wrappers, no-empty-function, no-array-constructor -->
+<!-- eslint-disable no-restricted-syntax, no-new-wrappers, no-empty-function, no-array-constructor -->
 
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var Boolean = require( '@stdlib/boolean/ctor' );
+var Object = require( '@stdlib/object/ctor' );
 var isPrimitive = require( '@stdlib/assert/is-primitive' );
 
 var bool = isPrimitive( false );
