@@ -53,6 +53,118 @@ var v = greet( 'Jane' );
 
 Argument names must be strings corresponding to valid JavaScript parameters (i.e., a plain identifier, or, in environments supporting such parameters, a rest parameter or destructured parameter, optionally with a default).
 
+* * *
+
+### Properties
+
+<a name="prop-length"></a>
+
+#### Function.prototype.length
+
+A number representing the number of arguments expected by the function.
+
+```javascript
+var greet = new Function( 'name', 'return "Hello, "+name+"!"' );
+var v = greet.length;
+// returns 1
+```
+
+<a name="prop-name"></a>
+
+#### Function.prototype.name
+
+**Read-only** property representing the name of the function.
+
+```javascript
+function greet( name ) {
+    return 'Hello, '+name+'!';
+}
+v = greet.name;
+// returns 'greet'
+
+// Functions created with the Function constructor are anonymous:
+var fcn = new Function( 'name', 'return "Hello, "+name+"!"' );
+var v = fcn.name;
+// returns 'anonymous'
+```
+
+<a name="prop-prototype"></a>
+
+#### Function.prototype.prototype
+
+**Read-only** property representing the prototype of the function.
+
+```javascript
+function greet( name ) {
+    return 'Hello, '+name+'!';
+}
+var proto = greet.prototype;
+// returns {}
+```
+
+* * *
+
+### Methods
+
+<a name="method-apply"></a>
+
+#### Function.prototype.apply( thisArg, args )
+
+Calls the specified function witht he given `this` argument and arguments provided as an array-like object.
+
+```javascript
+function add( x, y ) {
+    return x + y;
+}
+var v = add.apply( null, [ 1, 2 ] );
+// returns 3
+```
+
+<a name="method-bind"></a>
+
+#### Function.prototype.bind( thisArg\[, arg1\[, arg2\[, ...]]] )
+
+Returns a new function which invokes the original function with the given `this` value and arguments.
+
+```javascript
+functiona add( x, y ) {
+    return x + y;
+}
+var add1 = add.bind( null, 1 );
+
+var v = add1( 2 );
+// returns 3
+```
+
+<a name="method-call"></a>
+
+#### Function.prototype.call( thisArg\[, arg1\[, arg2\[, ...]]] )
+
+Calls the specified function with the given `this` value and arguments.
+
+```javascript
+function add( x, y ) {
+    return x + y;
+}
+
+var v = add.call( null, 1, 2 );
+// returns 3
+```
+
+<a name="method-to-string"></a>
+
+#### Function.prototype.toString()
+
+Returns a string representing the function.
+
+```javascript
+function add( x, y ) {
+    return x + y;
+}
+var v = add.toString();
+// returns 'function add( x, y ) {\n    return x + y;\n}'
+```
+
 </section>
 
 <!-- /.usage -->
