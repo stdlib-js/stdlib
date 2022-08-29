@@ -1,0 +1,19 @@
+{
+  "dsv": "first,last,address,city,zip\nJohn,Doe,120 Any St.,\"Anytown, ST\",12345\n",
+  "json": [
+    [
+      "first",
+      "last",
+      "address",
+      "city",
+      "zip"
+    ],
+    [
+      "John",
+      "Doe",
+      "120 Any St.",
+      "Anytown, ST",
+      "12345"
+    ]
+  ]
+}
