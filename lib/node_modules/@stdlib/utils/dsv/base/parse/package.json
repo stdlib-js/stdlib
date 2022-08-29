@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/utils/base/dsv/parse",
   "version": "0.0.0",
-  "description": "Parser for delimiter-separated values (DSV).",
+  "description": "Incremental parser for delimiter-separated values (DSV).",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
