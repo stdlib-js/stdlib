@@ -88,7 +88,7 @@ The constructor accepts the following `options`:
 -   **trimComment**: `boolean` flag indicating whether to trim leading and trailing whitespace in commented lines. Default: `true`.
 -   **whitespace**: list of characters to be treated as whitespace. May also be a regular expression. Default: `[ ' ' ]`.
 
-The parser does **not** perform field conversion/transformation and, instead, is solely responsible for incrementally identifying fields and records. Further processing of fields/records is the responsibility of parser consumers who are generally expected to provide either an `onCol` callback, an `onRow` callback, or both.
+The parser does **not** perform field conversion/transformation and, instead, is solely responsible for incrementally identifying fields and records. Further processing of fields/records is the responsibility of parser consumers who are generally expected to provide either an `onColumn` callback, an `onRow` callback, or both.
 
 ```javascript
 var format = require( '@stdlib/string/format' );
