@@ -258,6 +258,8 @@ parse.next( '5,6,7,8\r\n' );
 parse.close();
 ```
 
+After closing a parser, a parser raises an exception upon receiving any additional chunks.
+
 </section>
 
 <!-- /.usage -->
