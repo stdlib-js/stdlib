@@ -22,8 +22,12 @@
 
 # Automatically normalize the line endings of any committed text files:
 * text=auto
-/lib/node_modules/@stdlib/utils/dsv/base/parse/test/fixtures/excel_copy_paste_crlf.csv eol=crlf
-/lib/node_modules/@stdlib/utils/dsv/base/parse/test/fixtures/crlf.csv eol=crlf
+
+# Override line endings for certain files:
+*.crlf.csv text eol=crlf
+
+*.png binary
+*.jpg binary
 
 # Override what is considered "vendored" by GitHub's linguist:
 /deps/** linguist-vendored=false
