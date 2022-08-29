@@ -2303,6 +2303,7 @@ bifurcateIn,"bifurcateIn( obj:Object|Array|TypedArray, [options:Object,] predica
 bifurcateOwn,"bifurcateOwn( obj:Object|Array|TypedArray, [options:Object,] predicate:Function )"
 BigInt,"BigInt( value:integer|string )"
 binomialTest,"binomialTest( x:(number|Array[, n:Array<number>][, options:Object] )"
+Boolean,"Boolean( value:any )"
 Buffer,"Buffer"
 Buffer,"Buffer( size:integer )"
 Buffer,"Buffer( buffer:Buffer )"
