@@ -13,6 +13,7 @@
     [
       "",
       "value0",
+      "",
       "{\"type\": \"Point\", \"coordinates\": [102.0, 0.5]}",
       "Point",
       "102.0",
