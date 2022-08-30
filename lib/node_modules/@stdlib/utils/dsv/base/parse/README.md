@@ -73,7 +73,7 @@ The constructor accepts the following `options`:
 -   **delimiter**: character sequence separating record fields (e.g., `','` for comma-separated values (CSV) and `\t` for tab-separated values (TSV)). Default: `','`.
 -   **doublequote**: `boolean` flag indicating how quote sequences should be escaped within a quoted field. When `true`, a quote sequence must be escaped by another quote sequence. When `false`, a quote sequence must be escaped by the escape sequence. Default: `true`.
 -   **escape**: character sequence for escaping character sequences having special meaning (i.e., the delimiter, newline, and escape sequences outside of quoted fields; the comment sequence at the beginning of a record and outside of a quoted field; and the quote sequence inside a quoted field when `doublequote` is `false`). Default: `''`.
--   **newline**: character sequence separating rows. Default: `'\r\n'`.
+-   **newline**: character sequence separating rows. Default: `'\r\n'` (see [RFC 4180][rfc-4180]).
 -   **onClose**: callback to be invoked upon closing the parser.
 -   **onColumn**: callback to be invoked upon processing a field.
 -   **onComment**: callback to be invoked upon processing a commented line.
