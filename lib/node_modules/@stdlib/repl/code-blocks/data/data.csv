@@ -2302,6 +2302,7 @@ bifurcateIn,"function Foo() { this.a = 'beep'; this.b = 'boop'; return this; };\
 bifurcateOwn,"function predicate( v ) { return v[ 0 ] === 'b'; };\nvar obj = { 'a': 'beep', 'b': 'boop', 'c': 'foo', 'd': 'bar' };\nvar out = bifurcateOwn( obj, predicate )\nvar opts = { 'returns': 'keys' };\nout = bifurcateOwn( obj, opts, predicate )\nopts = { 'returns': '*' };\nout = bifurcateOwn( obj, opts, predicate )\n"
 BigInt,"var v = ( BigInt ) ? BigInt( '1' ) : null\n"
 binomialTest,"var out = binomialTest( 682, 925 )\nout = binomialTest( [ 682, 925 - 682 ] )\nout = binomialTest( 21, 40, {\n 'p': 0.4,\n 'alternative': 'greater'\n })\n"
+Boolean,"var b = new Boolean( null )\nb = Boolean( null )\nb = Boolean( [] )\n"
 Buffer,"var b = new Buffer( 4 )\nvar b1 = new Buffer( [ 1, 2, 3, 4 ] );\nvar b2 = new Buffer( b1 )\nvar b = new Buffer( [ 1, 2, 3, 4 ] )\nvar b = new Buffer( 'beep boop' )\n"
 buffer2json,"var buf = new allocUnsafe( 2 );\nbuf[ 0 ] = 1;\nbuf[ 1 ] = 2;\nvar json = buffer2json( buf )\n"
 BYTE_ORDER,"BYTE_ORDER\n"

@@ -292,6 +292,8 @@ After closing a parser, a parser raises an exception upon receiving any addition
 
     For example, given the chunk `1,,3,4,,`, if `delimiter` is `','` and `newline` is `',,'`, is the first `,,` a field with no content or a newline? The parser cannot be certain, hence the prohibition.
 
+-   As specified in [RFC 4180][rfc-4180], special character sequences **must** be consistent across all provided chunks. Hence, providing chunks in which, e.g., line breaks vary between `\r`, `\n`, and `\r\n` is **not** supported.
+
 </section>
 
 <!-- /.notes -->

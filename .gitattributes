@@ -23,6 +23,22 @@
 # Automatically normalize the line endings of any committed text files:
 * text=auto
 
+# Override line endings for certain files on checkout:
+*.crlf.csv text eol=crlf
+
+# Denote that certain files are binary and should not be modified:
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.mp3 binary
+*.mp4 binary
+*.mov binary
+
 # Override what is considered "vendored" by GitHub's linguist:
 /deps/** linguist-vendored=false
 /lib/node_modules/** linguist-vendored=false linguist-generated=false
