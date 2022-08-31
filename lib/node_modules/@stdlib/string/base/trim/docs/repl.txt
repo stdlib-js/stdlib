@@ -1,0 +1,40 @@
+
+{{alias}}( str )
+    Trims whitespace from the beginning and end of a `string`.
+
+    "Whitespace" is defined as the following characters:
+
+    - \f
+    - \n
+    - \r
+    - \t
+    - \v
+    - \u0020
+    - \u00a0
+    - \u1680
+    - \u2000-\u200a
+    - \u2028
+    - \u2029
+    - \u202f
+    - \u205f
+    - \u3000
+    - \ufeff
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Trimmed string.
+
+    Examples
+    --------
+    > var out = {{alias}}( ' \t\t\n  Beep \r\n\t  ' )
+    'Beep'
+
+    See Also
+    --------
+
