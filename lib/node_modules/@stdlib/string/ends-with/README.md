@@ -38,7 +38,7 @@ var endsWith = require( '@stdlib/string/ends-with' );
 
 #### endsWith( str, search\[, len] )
 
-Tests if a `string` ends with the characters of another `string`.
+Tests if a string ends with the characters of another string.
 
 ```javascript
 var str = 'Remember the story I used to tell you when you were a boy?';
@@ -75,6 +75,21 @@ var bool = endsWith( str, '' );
 
 <!-- /.usage -->
 
+<section class="notes">
+
+## Notes
+
+-   In general, exercise caution when operating on substrings containing Unicode characters, as the visual character length may not equal the number of code points. For example,
+
+    ```javascript
+    var len = '🏠'.length;
+    // returns 2
+    ```
+
+</section>
+
+<!-- /.notes -->
+
 <section class="examples">
 
 ## Examples
@@ -84,12 +99,9 @@ var bool = endsWith( str, '' );
 ```javascript
 var endsWith = require( '@stdlib/string/ends-with' );
 
-var bool;
-var str;
+var str = 'Fair is foul, and foul is fair, hover through fog and filthy air';
 
-str = 'Fair is foul, and foul is fair, hover through fog and filthy air';
-
-bool = endsWith( str, 'air' );
+var bool = endsWith( str, 'air' );
 // returns true
 
 bool = endsWith( str, 'fair' );
