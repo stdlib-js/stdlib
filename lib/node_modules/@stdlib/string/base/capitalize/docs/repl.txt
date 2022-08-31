@@ -1,0 +1,24 @@
+
+{{alias}}( str )
+    Capitalizes the first character in a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Capitalized string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep' )
+    'Beep'
+    > out = {{alias}}( 'Boop' )
+    'Boop'
+
+    See Also
+    --------
+
