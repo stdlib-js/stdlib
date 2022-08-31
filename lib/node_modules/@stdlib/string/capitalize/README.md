@@ -32,7 +32,7 @@ var capitalize = require( '@stdlib/string/capitalize' );
 
 #### capitalize( str )
 
-Capitalizes the first character in a `string`.
+Capitalizes the first character in a string.
 
 ```javascript
 var out = capitalize( 'last man standing' );
@@ -55,9 +55,7 @@ out = capitalize( 'Hidden Treasures' );
 ```javascript
 var capitalize = require( '@stdlib/string/capitalize' );
 
-var str;
-
-str = capitalize( 'last man standing' );
+var str = capitalize( 'last man standing' );
 // returns 'Last man standing'
 
 str = capitalize( 'presidential election' );

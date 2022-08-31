@@ -1,6 +1,6 @@
 
 {{alias}}( str )
-    Capitalizes the first character in a `string`.
+    Capitalizes the first character in a string.
 
     Parameters
     ----------
