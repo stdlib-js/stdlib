@@ -62,6 +62,7 @@ base.add
 base.addf
 base.ahavercos
 base.ahaversin
+base.asec
 base.asech
 base.asin
 base.asinh
@@ -830,6 +831,7 @@ base.spence
 base.sqrt
 base.sqrt1pm1
 base.sqrtf
+base.sqrtpi
 base.strided.binary
 base.strided.ccopy
 base.strided.cmap

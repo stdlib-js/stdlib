@@ -1,8 +1,8 @@
 
 {{alias}}( str, search[, len] )
-    Tests if a `string` ends with the characters of another `string`.
+    Tests if a string ends with the characters of another string.
 
-    If provided an empty `search` string, the function always returns `true`.
+    If provided an empty search string, the function always returns `true`.
 
     Parameters
     ----------
@@ -21,8 +21,8 @@
     Returns
     -------
     bool: boolean
-        Boolean indicating whether a `string` ends with the characters of
-        another `string`.
+        Boolean indicating whether a string ends with the characters of another
+        string.
 
     Examples
     --------

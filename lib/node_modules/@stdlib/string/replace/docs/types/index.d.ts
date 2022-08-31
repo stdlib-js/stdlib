@@ -19,11 +19,11 @@
 // TypeScript Version: 2.0
 
 /**
-* Replace search occurrences with a replacement string.
+* Replaces search occurrences with a replacement string.
 *
 * ## Notes
 *
-* -   When provided a `string` as the `search` value, the function replaces *all* occurrences. To remove only the first match, use a regular expression.
+* -   When provided a `string` as the `search` value, the function replaces **all** occurrences. To remove only the first match, use a regular expression.
 *
 * @param str - input string
 * @param search - search expression
@@ -52,11 +52,7 @@
 * var out = replace( str, /([^\s]*)/gi, replacer);
 * // returns 'Oranges And Lemons Say The Bells Of St. Clement\'s'
 */
-declare function repeat(
-	str: string,
-	search: string | RegExp,
-	newval: string | Function
-): string;
+declare function repeat( str: string, search: string | RegExp, newval: string | Function ): string; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
