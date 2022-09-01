@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Right Trim
+# rtrim
 
 > Trim whitespace characters from the end of a string.
 
@@ -47,7 +47,23 @@ var out = rtrim( ' \t\t\n  Beep \r\n\t  ' );
 
 ## Notes
 
--   Following [Unicode 6.3.0][unicode] and later, "whitespace" is defined as the following characters: `[ \\f\\n\\r\\t\\v\\u0020\\u00a0\\u1680\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff]`.
+-   Following [Unicode 6.3.0][unicode] and later, "whitespace" is defined as the following characters:
+
+    -   `\f`
+    -   `\n`
+    -   `\r`
+    -   `\t`
+    -   `\v`
+    -   `\u0020`
+    -   `\u00a0`
+    -   `\u1680`
+    -   `\u2000-\u200a`
+    -   `\u2028`
+    -   `\u2029`
+    -   `\u202f`
+    -   `\u205f`
+    -   `\u3000`
+    -   `\ufeff`
 
 </section>
 

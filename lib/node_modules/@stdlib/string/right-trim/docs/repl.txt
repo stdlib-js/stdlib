@@ -1,6 +1,6 @@
 
 {{alias}}( str )
-    Trims whitespace from the end of a `string`.
+    Trims whitespace from the end of a string.
 
     "Whitespace" is defined as the following characters:
 
