@@ -22,7 +22,7 @@
 * Converts a string to camel case.
 *
 * @param str - string to convert
-* @returns a camel-cased string
+* @returns camel-cased string
 *
 * @example
 * var str = camelcase( 'Hello World!' );
