@@ -1,0 +1,35 @@
+{{alias}}()
+    Returns a regular expression to match a semantic version string.
+
+    Returns
+    -------
+    out: RegExp
+        Regular expression.
+
+    Examples
+    --------
+    > var RE_SEMVER = {{alias}}()
+    <RegExp>
+    > var bool = RE_SEMVER.test( '1.0.0' )
+    true
+    > bool = RE_SEMVER.test( '1.0.0-alpha.1' )
+    true
+    > bool = RE_SEMVER.test( 'abc' )
+    false
+    > bool = RE_SEMVER.test( '1.0.0-alpha.1+build.1' )
+    true
+
+
+{{alias}}.REGEXP
+    Regular expression to match a semantic version string.
+
+    Examples
+    --------
+    > var bool = {{alias}}.REGEXP.test( '1.0.0' )
+    true
+    > bool = {{alias}}.REGEXP.test( '-1.0.0-alpha.1' )
+    false
+
+
+    See Also
+    --------
