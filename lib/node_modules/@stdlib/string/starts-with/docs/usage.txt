@@ -1,5 +1,5 @@
 
-Usage: starts-with [options] --search=<string> <string>
+Usage: starts-with [options] --search=<string> [<string>]
 
 Options:
 
