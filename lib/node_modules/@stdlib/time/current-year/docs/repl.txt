@@ -1,0 +1,16 @@
+{{alias}}()
+    Returns the current year.
+
+    Returns
+    -------
+    out: integer
+        Current year.
+
+    Examples
+    --------
+    > var y = {{alias}}()
+    <number>
+
+    See Also
+    --------
+    

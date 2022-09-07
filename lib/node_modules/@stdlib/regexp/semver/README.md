@@ -1,0 +1,162 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# Semantic Version
+
+> [Regular expression][regexp] to match a [semantic version][semantic-version] string.
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var reSemVer = require( '@stdlib/regexp/semver' );
+```
+
+#### reSemVer()
+
+Return a [regular expression][regexp] to match a [semantic version][semantic-version] string. 
+
+```javascript
+var RE_SEMVER = reSemVer();
+// returns <RegExp>
+
+var parts = RE_SEMVER.exec( '1.0.0' );
+/* returns
+    [
+        '1.0.0',
+        '1',
+        '0',
+        '0',
+        undefined,
+        undefined,
+        index: 0,
+        input: '1.0.0',
+        groups: undefined
+    ]
+*/
+
+parts = RE_SEMVER.exec( '1.0.0-alpha.1' );
+/* returns
+    [
+        '1.0.0-alpha.1',
+        '1',
+        '0',
+        '0',
+        'alpha',
+        '1',
+        index: 0,
+        input: '1.0.0-alpha.1',
+        groups: undefined
+    ]
+*/
+```
+
+#### reSemVer.REGEXP
+
+[Regular expression][regexp] to match a [semantic version][semantic-version] string.
+
+```javascript
+var parts = reSemVer.REGEXP.exec( '0.2.3' );
+/* returns
+    [
+        '0.2.3',
+        '0',
+        '2',
+        '3',
+        undefined,
+        undefined,
+        index: 0,
+        input: '0.2.3',
+        groups: undefined
+    ]
+*/
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var reSemVer = require( '@stdlib/regexp/semver' );
+
+var RE_SEMVER = reSemVer();
+var version = '1.0.0';
+var bool = RE_SEMVER.test( version );
+// returns true
+
+version = '1.0.0-alpha.1';
+bool = RE_SEMVER.test( version );
+// returns true
+
+version = '1.0.0-alpha.1+build.1';
+bool = RE_SEMVER.test( version );
+// returns true
+
+version = '1.0.0-alpha.1+build.1.2.b8f12d7';
+bool = RE_SEMVER.test( version );
+// returns true
+
+version = '1.2';
+bool = RE_SEMVER.test( version );
+// returns false
+
+version = '-1.2.3';
+bool = RE_SEMVER.test( version );
+// returns false
+
+version = 'a.b.c';
+bool = RE_SEMVER.test( version );
+// returns false
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
+[semantic-version]: https://semver.org/
+
+<!-- <related-links> -->
+
+<!-- </related-links> -->
+
+</section>
+
+<!-- /.links -->
