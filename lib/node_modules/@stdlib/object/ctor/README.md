@@ -138,8 +138,7 @@ var o = Object.defineProperties( {}, {
 Defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
 
 ```javascript
-var o = {};
-Object.defineProperty( o, 'a', {
+var o = Object.defineProperty( {}, 'a', {
     'value': 1,
     'writable': true,
     'enumerable': true,
@@ -157,7 +156,7 @@ Returns an array of a given object's own enumerable string-keyed property entrie
 ```javascript
 var o = { 'a': 1, 'b': 2 };
 var arr = Object.entries( o );
-// returns [ [ 'a', 1 ], [ 'b', 2 ] ]
+// e.g., returns [ [ 'a', 1 ], [ 'b', 2 ] ]
 ```
 
 <a name="static-method-freeze"></a>
@@ -172,7 +171,7 @@ Object.freeze( o );
 // returns { 'a': 1 }
 
 o.b = 1;
-o.b
+var v = o.b;
 // returns undefined
 ```
 
@@ -209,7 +208,7 @@ Returns an array of a given object's own property names.
 ```javascript
 var o = { 'a': 1, 'b': 2 };
 var arr = Object.getOwnPropertyNames( o );
-// returns [ 'a', 'b' ]
+// e.g., returns [ 'a', 'b' ]
 ```
 
 <a name="static-method-get-own-property-symbols"></a>
@@ -245,7 +244,7 @@ Returns a boolean indicating whether an object has a property with the specified
 
 ```javascript
 var o = { 'a': 1 };
-Object.hasOwn( o, 'b' );
+var b = Object.hasOwn( o, 'b' );
 // returns false
 ```
 
@@ -257,7 +256,7 @@ Returns a boolean indicating whether an object has a property with the specified
 
 ```javascript
 var o = { 'a': 1 };
-o.hasOwnProperty( 'a' );
+var b = o.hasOwnProperty( 'a' );
 // returns true
 ```
 
@@ -268,10 +267,10 @@ o.hasOwnProperty( 'a' );
 Returns a boolean indicating whether two values are the same value.
 
 ```javascript
-Object.is( 1, 1 );
+var b = Object.is( 1, 1 );
 // returns true
 
-Object.is( 1, '1' );
+b = Object.is( 1, '1' );
 // returns false
 ```
 
@@ -283,11 +282,11 @@ Returns a boolean indicating whether an object is extensible (whether new proper
 
 ```javascript
 var o = { 'a': 1 };
-Object.isExtensible( o );
+var b = Object.isExtensible( o );
 // returns true
 
 Object.preventExtensions( o );
-Object.isExtensible( o );
+b = Object.isExtensible( o );
 // returns false
 ```
 
@@ -299,11 +298,11 @@ Returns a boolean indicating whether an object is frozen. Frozen objects can no 
 
 ```javascript
 var o = { 'a': 1 };
-Object.isFrozen( o );
+var b = Object.isFrozen( o );
 // returns false
 
 Object.freeze( o );
-Object.isFrozen( o );
+b = Object.isFrozen( o );
 // returns true
 ```
 
@@ -316,7 +315,7 @@ Returns a boolean indicating whether an object is in the prototype chain of anot
 ```javascript
 var o = { 'a': 1 };
 var p = { '__proto__': o };
-Object.prototype.isPrototypeOf( p );
+var b = Object.prototype.isPrototypeOf( p );
 // returns true
 ```
 
@@ -328,11 +327,11 @@ Returns a boolean indicating whether an object is sealed. An object is sealed if
 
 ```javascript
 var o = { 'a': 1 };
-Object.isSealed( o );
+var b = Object.isSealed( o );
 // returns false
 
 Object.seal( o );
-Object.isSealed( o );
+b = Object.isSealed( o );
 // returns true
 ```
 
@@ -345,24 +344,24 @@ Returns an array of a given object's own enumerable property names.
 ```javascript
 var o = { 'a': 1, 'b': 2 };
 var arr = Object.keys( o );
-// returns [ 'a', 'b' ]
+// e.g., returns [ 'a', 'b' ]
 ```
 
 <a name="static-method-prevent-extensions"></a>
 
 #### Object.preventExtensions( o )
 
-Returns a boolean indicating whether an object is extensible (whether new properties can be added to it).
+Prevents new properties from being added to an object.
 
 ```javascript
 var o = { 'a': 1 };
 Object.preventExtensions( o );
 o.b = 2;
-var bool = o.b === void 0;
+var b = ( o.b === void 0 );
 // returns true
 
 o.a = 3;
-bool = o.a === 3;
+b = ( o.a === 3 );
 // returns true
 ```
 
@@ -374,11 +373,11 @@ Returns a boolean indicating whether a property is enumerable.
 
 ```javascript
 var o = { 'a': 1 };
-o.propertyIsEnumerable( 'a' );
+var b = o.propertyIsEnumerable( 'a' );
 // returns true
 
 var arr = [ 1, 2, 3 ];
-arr.propertyIsEnumerable( 'length' );
+b = arr.propertyIsEnumerable( 'length' );
 // returns false
 ```
 
@@ -386,14 +385,14 @@ arr.propertyIsEnumerable( 'length' );
 
 #### Object.seal( o )
 
-Returns a boolean indicating whether an object is sealed. An object is sealed if it is not extensible and all of its properties are non-configurable.
+Seals an object, preventing new properties from being added to it (i.e., making it non extensible) and marking all existing properties as non-configurable.
 
 ```javascript
 var o = { 'a': 1 };
 Object.seal( o );
 
 o.b = 2;
-var bool = o.b === void 0
+var b = ( o.b === void 0 );
 // returns true
 ```
 
@@ -408,7 +407,7 @@ var o = { 'a': 1 };
 var p = { 'b': 2 };
 Object.setPrototypeOf( o, p );
 
-var bool = o.b === 2;
+var b = ( o.b === 2 );
 // returns true
 ```
 
@@ -443,9 +442,9 @@ var str = o.toString();
 Returns the primitive value of the specified object.
 
 ```javascript
-var num = new Number( 1 );
-var val = num.valueOf();
-// returns 1
+var o = {};
+var v = o.valueOf();
+// returns {}
 ```
 
 <a name="static-method-values"></a>
@@ -457,7 +456,7 @@ Returns an array of a given object's own enumerable property values.
 ```javascript
 var o = { 'a': 1, 'b': 2 };
 var arr = Object.values( o );
-// returns [ 1, 2 ]
+// e.g., returns [ 1, 2 ]
 ```
 
 </section>

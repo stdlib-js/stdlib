@@ -79,12 +79,12 @@ var v = greet.length;
 function greet( name ) {
     return 'Hello, '+name+'!';
 }
-v = greet.name;
+var v = greet.name;
 // returns 'greet'
 
 // Functions created with the Function constructor are anonymous:
 var fcn = new Function( 'name', 'return "Hello, "+name+"!"' );
-var v = fcn.name;
+v = fcn.name;
 // returns 'anonymous'
 ```
 
@@ -110,7 +110,7 @@ var proto = greet.prototype;
 
 #### Function.prototype.apply( thisArg, args )
 
-Calls the specified function witht he given `this` argument and arguments provided as an array-like object.
+Calls the specified function with the given `this` argument and arguments provided as an array-like object.
 
 ```javascript
 function add( x, y ) {
@@ -127,7 +127,7 @@ var v = add.apply( null, [ 1, 2 ] );
 Returns a new function which invokes the original function with the given `this` value and arguments.
 
 ```javascript
-functiona add( x, y ) {
+function add( x, y ) {
     return x + y;
 }
 var add1 = add.bind( null, 1 );
@@ -162,7 +162,7 @@ function add( x, y ) {
     return x + y;
 }
 var v = add.toString();
-// returns 'function add( x, y ) {\n    return x + y;\n}'
+// e.g., returns 'function add( x, y ) {\n    return x + y;\n}'
 ```
 
 </section>
