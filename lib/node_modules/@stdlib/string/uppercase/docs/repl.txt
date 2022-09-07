@@ -1,6 +1,6 @@
 
 {{alias}}( str )
-    Converts a `string` to uppercase.
+    Converts a string to uppercase.
 
     Parameters
     ----------

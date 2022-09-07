@@ -38,7 +38,7 @@ var uppercase = require( '@stdlib/string/uppercase' );
 
 #### uppercase( str )
 
-Converts a `string` to uppercase.
+Converts a string to uppercase.
 
 ```javascript
 var str = uppercase( 'bEEp' );
@@ -58,9 +58,7 @@ var str = uppercase( 'bEEp' );
 ```javascript
 var uppercase = require( '@stdlib/string/uppercase' );
 
-var str;
-
-str = uppercase( 'Beep' );
+var str = uppercase( 'Beep' );
 // returns 'BEEP'
 
 str = uppercase( 'BeEp' );
