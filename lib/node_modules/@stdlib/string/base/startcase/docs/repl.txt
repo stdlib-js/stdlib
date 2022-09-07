@@ -1,0 +1,22 @@
+
+{{alias}}( str )
+    Capitalizes the first letter of each word in an input string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        String containing words where each first letter is capitalized.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep boop' )
+    'Beep Boop'
+
+    See Also
+    --------
+
