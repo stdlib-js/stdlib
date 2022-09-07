@@ -22,7 +22,7 @@
 * Converts a string to kebab case.
 *
 * @param str - string to convert
-* @returns a kebab-cased string
+* @returns kebab-cased string
 *
 * @example
 * var str = kebabcase( 'fooBar' );
