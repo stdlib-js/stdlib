@@ -22,7 +22,7 @@
 * Converts a string to snake case.
 *
 * @param str - string to convert
-* @returns a snake-cased string
+* @returns snake-cased string
 *
 * @example
 * var str = snakecase( 'fooBar' );
