@@ -1,5 +1,5 @@
 
-Usage: repstr [options] [<string>] --n <repeats>
+Usage: repstr [options] --n <repeats> [<string>]
 
 Options:
 

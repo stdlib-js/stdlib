@@ -26,7 +26,7 @@ import repeat = require( './index' );
 	repeat( 'a', 2 ); // $ExpectType string
 }
 
-// The function does not compile if provided values other than a string and a number...
+// The compiler throws an error if the function is provided values other than a string and a number...
 {
 	repeat( true, 3 ); // $ExpectError
 	repeat( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import repeat = require( './index' );
 	repeat( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	repeat(); // $ExpectError
 	repeat( 3 ); // $ExpectError
