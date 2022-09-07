@@ -50,7 +50,7 @@ bool = endsWith( str, 'Boy?', str.length );
 // returns false
 ```
 
-To search for a match at the end of a substring, provide a `len` argument. If `len` is positive, the function restricts the search to a substring with length `len`, beginning with the leftmost character. If `len` is negative, `len` indicates to ignore the last `len` characters (equivalent to `str.length + len`).
+To search from a specific character position, provide a `len` argument. If `len` is positive, the function restricts the search to a substring with length `len`, beginning with the leftmost character. If `len` is negative, `len` indicates to ignore the last `len` characters (equivalent to `str.length + len`).
 
 ```javascript
 var str = 'To be, or not to be, that is the question.';
@@ -85,6 +85,12 @@ var bool = endsWith( str, '' );
     var len = '🏠'.length;
     // returns 2
     ```
+
+-   This function differs from [`String.prototype.endsWith`][mdn-string-endswith] in the following ways:
+
+    -   The function assumes string values for the first and second arguments and assumes that the `len` argument is an integer value.
+    -   The function does **not** clamp positive `len` values to the end of the input string.
+    -   Except when provided an empty `search` string, the function **always** returns `false` is a `len` resolves to a starting search position which exceeds the bounds of the input string.
 
 </section>
 
@@ -129,6 +135,8 @@ bool = endsWith( str, 'fair', -34 );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[mdn-string-endswith]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
 
 </section>
 
