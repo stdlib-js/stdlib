@@ -61,6 +61,7 @@
     "string",
     "str",
     "case",
+    "constant",
     "convert"
   ],
   "__stdlib__": {}

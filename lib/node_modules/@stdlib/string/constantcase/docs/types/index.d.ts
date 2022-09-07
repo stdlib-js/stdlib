@@ -22,7 +22,7 @@
 * Converts a string to constant case.
 *
 * @param str - string to convert
-* @returns a constant-cased string
+* @returns constant-cased string
 *
 * @example
 * var str = constantcase( 'beep' );

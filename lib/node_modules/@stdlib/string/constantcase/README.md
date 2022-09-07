@@ -20,7 +20,7 @@ limitations under the License.
 
 # constantcase
 
-> Returns a string converted to a constant case.
+> Convert a string to constant case.
 
 <!-- Package usage documentation. -->
 
