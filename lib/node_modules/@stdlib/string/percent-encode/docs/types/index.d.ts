@@ -19,7 +19,7 @@
 // TypeScript Version: 2.0
 
 /**
-* Percent-encode a UTF-16 encoded string according to [RFC 3986][1].
+* Percent-encodes a UTF-16 encoded string according to [RFC 3986][1].
 *
 * [1]: https://tools.ietf.org/html/rfc3986#section-2.1
 *
