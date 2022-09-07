@@ -38,7 +38,7 @@ var startcase = require( '@stdlib/string/startcase' );
 
 #### startcase( str )
 
-Capitalizes the first letter of each word in a `string`.
+Capitalizes the first letter of each word in a string.
 
 ```javascript
 var str = startcase( 'beep boop a foo bar' );

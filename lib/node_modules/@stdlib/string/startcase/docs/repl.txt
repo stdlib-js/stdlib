@@ -1,6 +1,6 @@
 
 {{alias}}( str )
-    Capitalizes the first letter of each word in an input `string`.
+    Capitalizes the first letter of each word in an input string.
 
     Parameters
     ----------
