@@ -1,6 +1,6 @@
 
 {{alias}}( str )
-    Lowercases the first character of a `string`.
+    Lowercases the first character of a string.
 
     Parameters
     ----------
