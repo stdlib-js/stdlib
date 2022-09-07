@@ -1,0 +1,23 @@
+
+{{alias}}( str )
+    Converts a string to constant case.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Constant-cased string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello World!' )
+    'HELLO_WORLD'
+    > out = {{alias}}( 'I am a tiny little teapot' )
+    'I_AM_A_TINY_LITTLE_TEAPOT'
+
+    See Also
+    --------
