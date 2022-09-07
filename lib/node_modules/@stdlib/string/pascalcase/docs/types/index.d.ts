@@ -22,7 +22,7 @@
 * Converts a string to Pascal case.
 *
 * @param str - string to convert
-* @returns a Pascal-cased string
+* @returns Pascal-cased string
 *
 * @example
 * var str = pascalcase( 'Hello World!' );
