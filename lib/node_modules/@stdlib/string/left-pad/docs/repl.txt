@@ -1,6 +1,6 @@
 
 {{alias}}( str, len[, pad] )
-    Left pads a `string` such that the padded `string` has a length of at least
+    Left pads a string such that the padded string has a length of at least
     `len`.
 
     An output string is not guaranteed to have a length of exactly `len`, but to
