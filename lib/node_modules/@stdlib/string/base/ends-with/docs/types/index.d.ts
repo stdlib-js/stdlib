@@ -23,7 +23,7 @@
 *
 * ## Notes
 *
-* -   The last parameter restricts the search to a substring within the input string beginning from the leftmost character. If provided a negative value, `len` indicates to ignore the last `len` characters, returning the same output as `str.length + len`.
+* -   The last parameter restricts the search to a substring within the input string beginning from the leftmost character. If provided a negative value, `len` indicates to ignore the last `len` characters, and is thus equivalent to `str.length + len`.
 *
 * @param str - input string
 * @param search - search string

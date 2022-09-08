@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Repeat
+# repeat
 
 > Repeat a string a specified number of times and return the concatenated result.
 
@@ -56,17 +56,12 @@ str = repeat( 'beep', 0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var repeat = require( '@stdlib/string/repeat' );
 
-var str = 'beep';
-var n;
 var i;
-
 for ( i = 0; i < 100; i++ ) {
-    n = round( randu()*3.0 );
-    console.log( repeat( str, n ) );
+    console.log( repeat( 'beep', discreteUniform( 0, 3 ) ) );
 }
 ```
 

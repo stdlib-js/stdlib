@@ -86,6 +86,12 @@ var bool = endsWith( str, '' );
     // returns 2
     ```
 
+-   This function differs from [`String.prototype.endsWith`][mdn-string-endswith] in the following ways:
+
+    -   The function requires string values for the first and second arguments and requires that the `len` argument is an integer value.
+    -   The function does **not** clamp positive `len` values to the end of the input string.
+    -   Except when provided an empty `search` string, the function **always** returns `false` is a `len` resolves to a starting search position which exceeds the bounds of the input string.
+
 </section>
 
 <!-- /.notes -->
@@ -221,6 +227,8 @@ true
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
 
 [mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
+[mdn-string-endswith]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
 
 <!-- <related-links> -->
 

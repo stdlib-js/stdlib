@@ -21,6 +21,10 @@
 /**
 * Tests if a string starts with the characters of another string.
 *
+* ## Notes
+*
+* -   If provided a negative `position`, the search starting position is resolved relative to the end of the string. For example, if provided the input string `'beep boop'` and a `position` equal to `-2`, the starting position resolves to `7`.
+*
 * @param str - input string
 * @param search - search string
 * @param position - position at which to start searching (default: 0)
