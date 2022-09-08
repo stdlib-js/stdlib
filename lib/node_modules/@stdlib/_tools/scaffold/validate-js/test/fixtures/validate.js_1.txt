@@ -68,19 +68,19 @@ function validate( opts, options ) {
 	if ( hasOwnProp( options, 'copy' ) ) {
 		opts.copy = options.copy;
 		if ( !isBoolean( opts.copy ) ) {
-			return new TypeError( format( 'invalid option. `%s` option must be a boolean primitive. Option: `%s`.', 'copy', opts.copy ) );
+			return new TypeError( format( 'invalid option. `%s` option must be a boolean. Option: `%s`.', 'copy', opts.copy ) );
 		}
 	}
 	if ( hasOwnProp( options, 'flattenArrays' ) ) {
 		opts.flattenArrays = options.flattenArrays;
 		if ( !isBoolean( opts.flattenArrays ) ) {
-			return new TypeError( format( 'invalid option. `%s` option must be a boolean primitive. Option: `%s`.', 'flattenArrays', opts.flattenArrays ) );
+			return new TypeError( format( 'invalid option. `%s` option must be a boolean. Option: `%s`.', 'flattenArrays', opts.flattenArrays ) );
 		}
 	}
 	if ( hasOwnProp( options, 'delimiter' ) ) {
 		opts.delimiter = options.delimiter;
 		if ( !isString( opts.delimiter ) ) {
-			return new TypeError( format( 'invalid option. `%s` option must be a string primitive. Option: `%s`.', 'delimiter', opts.delimiter ) );
+			return new TypeError( format( 'invalid option. `%s` option must be a string. Option: `%s`.', 'delimiter', opts.delimiter ) );
 		}
 	}
 	return null;
