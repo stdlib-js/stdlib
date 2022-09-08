@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Trim
+# trim
 
 > Trim whitespace characters from the beginning and end of a string.
 
