@@ -49,11 +49,18 @@ var out = codePointAt( 'last man standing', 4 );
 // returns 32
 ```
 
-The function supports providing a `boolean` argument for performing backward iteration for low surrogates.
+The function supports providing a `backward` argument for performing backward iteration for low surrogates.
 
 ```javascript
 var out = codePointAt( '🌷', 1, true );
 // returns 127799
+```
+
+The function supports providing a negative `position`.
+
+```javascript
+var out = codePointAt( 'last man standing', -13 );
+// returns 32
 ```
 
 </section>
@@ -68,7 +75,9 @@ var out = codePointAt( '🌷', 1, true );
 
 This function differs from [`String.prototype.codePointAt`][mdn-string-codepointat] in the following ways:
 
--   The function supports providing a `boolean` argument for performing backward iteration for low surrogates. [`String.prototype.codePointAt`][mdn-string-codepointat] simply returns the low surrogate value if no [UTF-16][utf-16] surrogate pair begins at the specified position. If invoked with `backward` set to `true`, this function will return the code point after aggregating with the preceding high surrogate, if the specified position does not mark the start of a surrogate pair.
+-   The function supports providing a negative `position`. If provided a negative `position`, the function determines the string position relative to the end of the string.
+-   The function supports providing a `backward` argument for performing backward iteration for low surrogates. [`String.prototype.codePointAt`][mdn-string-codepointat] simply returns the low surrogate value if no [UTF-16][utf-16] surrogate pair begins at the specified position. If invoked with `backward` set to `true`, this function will return the code point after aggregating with the preceding high surrogate, if the specified position does not mark the start of a surrogate pair.
+-   The function raises an exception if provided a `position` which exceeds the bounds of the input string.
 
 </section>
 
@@ -85,17 +94,17 @@ This function differs from [`String.prototype.codePointAt`][mdn-string-codepoint
 ```javascript
 var codePointAt = require( '@stdlib/string/code-point-at' );
 
-console.log( codePointAt( 'last man standing', 4 ) );
-// => 32
+var v = codePointAt( 'last man standing', 4 );
+// returns 32
 
-console.log( codePointAt( 'presidential election', 8, true ) );
-// => 116
+v = codePointAt( 'presidential election', 8, true );
+// returns 116
 
-console.log( codePointAt( 'अनुच्छेद', 2 ) );
-// => 2369
+v = codePointAt( 'अनुच्छेद', 2 );
+// returns 2369
 
-console.log( codePointAt( '🌷', 1, true ) );
-// => 127799
+v = codePointAt( '🌷', 1, true );
+// returns 127799
 ```
 
 </section>
@@ -117,7 +126,7 @@ console.log( codePointAt( '🌷', 1, true ) );
 ### Usage
 
 ```text
-Usage: code-point-at [options] [<string>] --pos=<index>
+Usage: code-point-at [options] --pos=<index> [<string>]
 
 Options:
 
