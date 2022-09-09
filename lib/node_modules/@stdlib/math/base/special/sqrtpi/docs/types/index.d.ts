@@ -26,7 +26,7 @@
 * -   For `x < 0`, the principal square root is not defined.
 *
 * @param x - input value
-* @returns results
+* @returns result
 *
 * @example
 * var v = sqrtpi( 4.0 );
