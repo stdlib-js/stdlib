@@ -83,7 +83,7 @@ The constructor accepts the following `options`:
 
 -   **onClose**: callback to be invoked upon closing the parser. If a parser has partially processed a record upon close, the callback is invoked with the following arguments:
 
-    -   **value**: unparsed partially processed record text.
+    -   **value**: unparsed partially processed **field** text.
     
     Otherwise, the callback is invoked without any arguments.
 
@@ -107,6 +107,8 @@ The constructor accepts the following `options`:
     -   **record**: an array-like object containing field values. If provided a `rowBuffer`, the `record` argument will be the **same** array-like object for each invocation.
     -   **row**: row number (zero-based).
     -   **ncols**: number of fields (columns).
+    
+    If a parser is closed **before** fully processing the last record, the callback is invoked with field data for all fields which have been parsed. Any remaining field data is provided to the `onClose` callback. For example, if a parser has processed two fields and closes while attempting to process a third field, the parser invokes the `onRow` callback with field data for the first two fields and invokes the `onClose` callback with the partially processed data for the third field.
 
 -   **onSkip**: callback to be invoked upon processing a skipped line. The callback is invoked with the following arguments:
 
@@ -158,7 +160,7 @@ parse.next( '5,6,7,8\r\n' ); // => [ '5', '6', '7', '8' ]
 // ...
 ```
 
-Upon closing the parser, the parser invokes an `onClose` callback with any partially processed (i.e., incomplete) field data. Note, however, that the field data may not equal the original character sequence, as escape sequences may have already been removed.
+Upon closing the parser, the parser invokes an `onClose` callback with any partially processed (i.e., incomplete) **field** data. Note, however, that the field data may **not** equal the original character sequence, as escape sequences may have already been removed.
 
 ```javascript
 var format = require( '@stdlib/string/format' );
