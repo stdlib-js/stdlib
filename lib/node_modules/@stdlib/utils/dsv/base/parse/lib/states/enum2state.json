@@ -5,6 +5,7 @@
   "error",
   "field",
   "init",
+  "invalid_quote_end",
   "quote_end",
   "quoted_escape",
   "quoted_field",
