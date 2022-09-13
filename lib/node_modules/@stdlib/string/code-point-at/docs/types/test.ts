@@ -29,7 +29,7 @@ import codePointAt = require( './index' );
 	codePointAt( '🌷', 1, true ); // $ExpectType number
 }
 
-// The function does not compile if provided incorrect arguments...
+// The compiler throws an error if the function is provided incorrect arguments...
 {
 	codePointAt( false, 3 ); // $ExpectError
 	codePointAt( {}, 3 ); // $ExpectError
@@ -44,7 +44,8 @@ import codePointAt = require( './index' );
 	codePointAt( 'string', 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	codePointAt(); // $ExpectError
+	codePointAt( 'abc' ); // $ExpectError
 }

@@ -1,5 +1,5 @@
 
-Usage: code-point-at [options] [<string>] --pos=<index>
+Usage: code-point-at [options] --pos=<index> [<string>]
 
 Options:
 
