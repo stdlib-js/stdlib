@@ -73,6 +73,53 @@ bool = isCurrentYear( null );
 
 <!-- /.examples -->
 
+* * *
+
+<section class="cli">
+
+## CLI
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: is-current-year [options] <year>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ is-current-year 2011
+false
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n 1914 | is-current-year
+false
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -84,6 +131,8 @@ bool = isCurrentYear( null );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
 
 </section>
 
