@@ -1,0 +1,37 @@
+
+{{alias}}( regexp )
+    Returns a JSON representation of a regular expression.
+
+    The returned object has the following properties:
+
+    - type: value type. The assigned value is always 'RegExp'.
+    - pattern: regular expression pattern.
+    - flags: regular expression flags.
+
+    Parameters
+    ----------
+    regexp: RegExp
+        Regular expression to serialize.
+
+    Returns
+    -------
+    out: Object
+        JSON representation.
+        
+    out.type: string
+        Value type.
+        
+    out.pattern: string
+        Regular expression pattern.
+        
+    out.flags: string
+        Regular expression flags.
+
+    Examples
+    --------
+    > var json = {{alias}}( /ab+c/ )
+    {...}
+
+    See Also
+    --------
+    
