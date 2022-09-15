@@ -16,36 +16,36 @@
 * limitations under the License.
 */
 
-import toJSON = require( './index' );
+import error2json = require( './index' );
 
 
 // TESTS //
 
 // The function returns an object...
 {
-	toJSON( new Error( 'beep' ) ); // $ExpectType any
-	toJSON( new TypeError( 'beep' ) ); // $ExpectType any
-	toJSON( new SyntaxError( 'beep' ) ); // $ExpectType any
-	toJSON( new URIError( 'beep' ) ); // $ExpectType any
-	toJSON( new ReferenceError( 'beep' ) ); // $ExpectType any
-	toJSON( new RangeError( 'beep' ) ); // $ExpectType any
-	toJSON( new EvalError( 'beep' ) ); // $ExpectType any
+	error2json( new Error( 'beep' ) ); // $ExpectType any
+	error2json( new TypeError( 'beep' ) ); // $ExpectType any
+	error2json( new SyntaxError( 'beep' ) ); // $ExpectType any
+	error2json( new URIError( 'beep' ) ); // $ExpectType any
+	error2json( new ReferenceError( 'beep' ) ); // $ExpectType any
+	error2json( new RangeError( 'beep' ) ); // $ExpectType any
+	error2json( new EvalError( 'beep' ) ); // $ExpectType any
 }
 
 // The function does not compile if provided a value other than an error object...
 {
-	toJSON( 'abc' ); // $ExpectError
-	toJSON( true ); // $ExpectError
-	toJSON( false ); // $ExpectError
-	toJSON( null ); // $ExpectError
-	toJSON( undefined ); // $ExpectError
-	toJSON( 5 ); // $ExpectError
-	toJSON( [] ); // $ExpectError
-	toJSON( {} ); // $ExpectError
-	toJSON( ( x: number ): number => x ); // $ExpectError
+	error2json( 'abc' ); // $ExpectError
+	error2json( true ); // $ExpectError
+	error2json( false ); // $ExpectError
+	error2json( null ); // $ExpectError
+	error2json( undefined ); // $ExpectError
+	error2json( 5 ); // $ExpectError
+	error2json( [] ); // $ExpectError
+	error2json( {} ); // $ExpectError
+	error2json( ( x: number ): number => x ); // $ExpectError
 }
 
 // The function does not compile if provided insufficient arguments...
 {
-	toJSON(); // $ExpectError
+	error2json(); // $ExpectError
 }
