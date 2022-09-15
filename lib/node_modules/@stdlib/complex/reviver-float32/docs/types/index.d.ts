@@ -30,12 +30,12 @@
 *
 * var str = '{"type":"Complex64","re":5,"im":3}';
 *
-* var z = parseJSON( str, reviver );
+* var z = parseJSON( str, reviveComplex64 );
 * // returns <Complex64>
 */
-declare function reviver( key: string, value: any ): any;
+declare function reviveComplex64( key: string, value: any ): any;
 
 
 // EXPORTS //
 
-export = reviver;
+export = reviveComplex64;

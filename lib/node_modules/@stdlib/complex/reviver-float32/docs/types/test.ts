@@ -16,30 +16,35 @@
 * limitations under the License.
 */
 
-import reviver = require( './index' );
+import reviveComplex64 = require( './index' );
 
 
 // TESTS //
 
-// The function can be used to revive a serialized object...
+// The function revives a serialized object...
 {
-	JSON.parse( '{"type":"Complex64","re":5,"im":3}', reviver ); // $ExpectType any
+	const o = {
+		'type': 'Complex64',
+		're': 5,
+		'im': 3
+	};
+	reviveComplex64( 'foo', o ); // $ExpectType any
 }
 
-// The function does not compile if provided a first argument that is not a string...
+// The compiler throws an error if the function is provided a first argument that is not a string...
 {
-	reviver( true, 1 ); // $ExpectError
-	reviver( false, 1 ); // $ExpectError
-	reviver( null, 1 ); // $ExpectError
-	reviver( undefined, 1 ); // $ExpectError
-	reviver( 5, 1 ); // $ExpectError
-	reviver( [], 1 ); // $ExpectError
-	reviver( {}, 1 ); // $ExpectError
-	reviver( ( x: number ): number => x, 1 ); // $ExpectError
+	reviveComplex64( true, 1 ); // $ExpectError
+	reviveComplex64( false, 1 ); // $ExpectError
+	reviveComplex64( null, 1 ); // $ExpectError
+	reviveComplex64( undefined, 1 ); // $ExpectError
+	reviveComplex64( 5, 1 ); // $ExpectError
+	reviveComplex64( [], 1 ); // $ExpectError
+	reviveComplex64( {}, 1 ); // $ExpectError
+	reviveComplex64( ( x: number ): number => x, 1 ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
-	reviver(); // $ExpectError
-	reviver( 'beep' ); // $ExpectError
+	reviveComplex64(); // $ExpectError
+	reviveComplex64( 'beep' ); // $ExpectError
 }
