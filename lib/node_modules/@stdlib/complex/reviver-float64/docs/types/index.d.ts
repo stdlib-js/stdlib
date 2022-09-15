@@ -30,12 +30,12 @@
 *
 * var str = '{"type":"Complex128","re":5,"im":3}';
 *
-* var z = parseJSON( str, reviver );
+* var z = parseJSON( str, reviveComplex128 );
 * // returns <Complex128>
 */
-declare function reviver( key: string, value: any ): any;
+declare function reviveComplex128( key: string, value: any ): any;
 
 
 // EXPORTS //
 
-export = reviver;
+export = reviveComplex128;
