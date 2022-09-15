@@ -1,3 +1,4 @@
+
 {{alias}}( value )
     Tests whether a value is an absolute URI.
 

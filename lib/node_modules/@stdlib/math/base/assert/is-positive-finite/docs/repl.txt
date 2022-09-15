@@ -1,3 +1,4 @@
+
 {{alias}}( x )
     Tests if a double-precision floating-point numeric value is a positive
     finite number.

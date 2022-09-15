@@ -1,3 +1,4 @@
+
 {{alias}}( str[, options] )
     Generates an acronym for a given string.
 

@@ -1,3 +1,4 @@
+
 {{alias}}( str, search[, fromIndex] )
     Returns the part of a string after a specified substring.
 
