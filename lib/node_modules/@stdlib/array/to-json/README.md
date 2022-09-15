@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# toJSON
+# typedarray2json
 
 > Return a [JSON][json] representation of a typed array.
 
@@ -37,10 +37,10 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var toJSON = require( '@stdlib/array/to-json' );
+var typedarray2json = require( '@stdlib/array/to-json' );
 ```
 
-#### toJSON( typedarray )
+#### typedarray2json( typedarray )
 
 Returns a [JSON][json] representation of a typed array.
 
@@ -49,7 +49,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 var arr = new Float64Array( [ 5.0, 3.0 ] );
 
-var json = toJSON( arr );
+var json = typedarray2json( arr );
 /* returns
     {
         'type': 'Float64Array',
@@ -97,7 +97,7 @@ For guidance on reviving a JSON-serialized typed array, see [`reviver()`][@stdli
 
     var arr = new CustomArray( [ 5.0, 3.0 ] );
 
-    var json = toJSON( arr );
+    var json = typedarray2json( arr );
     /* returns
         {
             'type': 'Float64Array',
@@ -130,10 +130,10 @@ var Uint8Array = require( '@stdlib/array/uint8' );
 var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex128Array = require( '@stdlib/array/complex128' );
-var toJSON = require( '@stdlib/array/to-json' );
+var typedarray2json = require( '@stdlib/array/to-json' );
 
 var arr = new Float64Array( [ 5.0, 3.0 ] );
-var json = toJSON( arr );
+var json = typedarray2json( arr );
 /* returns
     {
         'type': 'Float64Array',
@@ -142,7 +142,7 @@ var json = toJSON( arr );
 */
 
 arr = new Float32Array( [ 5.0, -3.0 ] );
-json = toJSON( arr );
+json = typedarray2json( arr );
 /* returns
     {
         'type': 'Float32Array',
@@ -151,7 +151,7 @@ json = toJSON( arr );
 */
 
 arr = new Complex128Array( [ 5.0, 3.0 ] );
-json = toJSON( arr );
+json = typedarray2json( arr );
 /* returns
     {
         'type': 'Complex128Array',
@@ -160,7 +160,7 @@ json = toJSON( arr );
 */
 
 arr = new Complex64Array( [ 5.0, 3.0 ] );
-json = toJSON( arr );
+json = typedarray2json( arr );
 /* returns
     {
         'type': 'Complex64Array',
@@ -169,7 +169,7 @@ json = toJSON( arr );
 */
 
 arr = new Int32Array( [ -5, 3 ] );
-json = toJSON( arr );
+json = typedarray2json( arr );
 /* returns
     {
         'type': 'Int32Array',
@@ -178,7 +178,7 @@ json = toJSON( arr );
 */
 
 arr = new Uint32Array( [ 5, 3 ] );
-json = toJSON( arr );
+json = typedarray2json( arr );
 /* returns
     {
         'type': 'Uint32Array',
@@ -187,7 +187,7 @@ json = toJSON( arr );
 */
 
 arr = new Int16Array( [ -5, 3 ] );
-json = toJSON( arr );
+json = typedarray2json( arr );
 /* returns
     {
         'type': 'Int16Array',
@@ -196,7 +196,7 @@ json = toJSON( arr );
 */
 
 arr = new Uint16Array( [ 5, 3 ] );
-json = toJSON( arr );
+json = typedarray2json( arr );
 /* returns
     {
         'type': 'Uint16Array',
@@ -205,7 +205,7 @@ json = toJSON( arr );
 */
 
 arr = new Int8Array( [ -5, 3 ] );
-json = toJSON( arr );
+json = typedarray2json( arr );
 /* returns
     {
         'type': 'Int8Array',
@@ -214,7 +214,7 @@ json = toJSON( arr );
 */
 
 arr = new Uint8Array( [ 5, 3 ] );
-json = toJSON( arr );
+json = typedarray2json( arr );
 /* returns
     {
         'type': 'Uint8Array',
@@ -223,7 +223,7 @@ json = toJSON( arr );
 */
 
 arr = new Uint8ClampedArray( [ 5, 3 ] );
-json = toJSON( arr );
+json = typedarray2json( arr );
 /* returns
     {
         'type': 'Uint8ClampedArray',
