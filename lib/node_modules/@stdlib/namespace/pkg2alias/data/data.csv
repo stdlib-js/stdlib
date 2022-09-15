@@ -1344,6 +1344,7 @@
 "@stdlib/buffer/from-buffer",copyBuffer
 "@stdlib/utils/count-by",countBy
 "@stdlib/utils/async/count-by",countByAsync
+"@stdlib/time/current-year",currentYear
 "@stdlib/utils/curry",curry
 "@stdlib/utils/curry-right",curryRight
 "@stdlib/process/cwd",cwd
@@ -1767,6 +1768,7 @@
 "@stdlib/assert/is-data-property-in",isDataPropertyIn
 "@stdlib/assert/is-dataview",isDataView
 "@stdlib/assert/is-date-object",isDateObject
+"@stdlib/assert/is-date-object-array",isDateObjectArray
 "@stdlib/assert/is-digit-string",isDigitString
 "@stdlib/assert/is-email-address",isEmailAddress
 "@stdlib/assert/is-empty-array",isEmptyArray
@@ -2455,6 +2457,7 @@
 "@stdlib/regexp/filename-windows",reFilenameWindows
 "@stdlib/utils/regexp-from-string",reFromString
 "@stdlib/regexp/function-name",reFunctionName
+"@stdlib/regexp/to-json",regexp2json
 "@stdlib/complex/reim",reim
 "@stdlib/complex/reimf",reimf
 "@stdlib/utils/reject-arguments",rejectArguments
@@ -2470,6 +2473,7 @@
 "@stdlib/string/replace",replace
 "@stdlib/regexp/regexp",reRegExp
 "@stdlib/utils/escape-regexp-string",rescape
+"@stdlib/regexp/semver",reSemVer
 "@stdlib/fs/resolve-parent-path",resolveParentPath
 "@stdlib/fs/resolve-parent-path-by",resolveParentPathBy
 "@stdlib/regexp/unc-path",reUncPath
@@ -2483,6 +2487,7 @@
 "@stdlib/complex/reviver-float32",reviveComplex64
 "@stdlib/complex/reviver-float64",reviveComplex128
 "@stdlib/error/reviver",reviveError
+"@stdlib/regexp/reviver",reviveRegExp
 "@stdlib/array/reviver",reviveTypedArray
 "@stdlib/regexp/whitespace",reWhitespace
 "@stdlib/string/right-pad",rpad

@@ -30,12 +30,12 @@
 * var mt19937 = require( `@stdlib/random/base/mt19937` );
 *
 * var str = JSON.stringify( mt19937 );
-* var rand = parseJSON( str, reviver );
+* var rand = parseJSON( str, reviveBasePRNG );
 * // returns <Function>
 */
-declare function reviver( key: string, value: any ): any;
+declare function reviveBasePRNG( key: string, value: any ): any;
 
 
 // EXPORTS //
 
-export = reviver;
+export = reviveBasePRNG;

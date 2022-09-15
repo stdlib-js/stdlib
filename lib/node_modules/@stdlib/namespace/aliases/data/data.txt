@@ -1345,6 +1345,7 @@ copy
 copyBuffer
 countBy
 countByAsync
+currentYear
 curry
 curryRight
 cwd
@@ -1768,6 +1769,7 @@ isDataProperty
 isDataPropertyIn
 isDataView
 isDateObject
+isDateObjectArray
 isDigitString
 isEmailAddress
 isEmptyArray
@@ -2456,6 +2458,7 @@ reFilenamePosix
 reFilenameWindows
 reFromString
 reFunctionName
+regexp2json
 reim
 reimf
 rejectArguments
@@ -2471,6 +2474,7 @@ repeat
 replace
 reRegExp
 rescape
+reSemVer
 resolveParentPath
 resolveParentPathBy
 reUncPath
@@ -2484,6 +2488,7 @@ reviveComplex
 reviveComplex64
 reviveComplex128
 reviveError
+reviveRegExp
 reviveTypedArray
 reWhitespace
 rpad

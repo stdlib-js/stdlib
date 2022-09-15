@@ -30,12 +30,12 @@
 *
 * var str = '{"type":"Buffer","data":[5,3]}';
 *
-* var buf = parseJSON( str, reviver );
+* var buf = parseJSON( str, reviveBuffer );
 * // returns <Buffer>[ 5, 3 ]
 */
-declare function reviver( key: string, value: any ): any;
+declare function reviveBuffer( key: string, value: any ): any;
 
 
 // EXPORTS //
 
-export = reviver;
+export = reviveBuffer;

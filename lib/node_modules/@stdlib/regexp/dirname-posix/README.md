@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Dirname
+# reDirnamePosix
 
 > [Regular expression][regexp] to capture a [POSIX][posix] path [dirname][dirname].
 

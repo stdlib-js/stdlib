@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import toJSON = require( './index' );
+import typedarray2json = require( './index' );
 
 
 // TESTS //
@@ -25,25 +25,25 @@ import toJSON = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	toJSON( x ); // $ExpectType JSONRepresentation
+	typedarray2json( x ); // $ExpectType JSONRepresentation
 }
 
 // The compiler throws an error if the function is provided a first argument which is not array-like...
 {
-	toJSON( 'abc' ); // $ExpectError
-	toJSON( 123 );  // $ExpectError
-	toJSON( true ); // $ExpectError
-	toJSON( false ); // $ExpectError
-	toJSON( {} ); // $ExpectError
-	toJSON( [] ); // $ExpectError
-	toJSON( null ); // $ExpectError
-	toJSON( undefined ); // $ExpectError
+	typedarray2json( 'abc' ); // $ExpectError
+	typedarray2json( 123 );  // $ExpectError
+	typedarray2json( true ); // $ExpectError
+	typedarray2json( false ); // $ExpectError
+	typedarray2json( {} ); // $ExpectError
+	typedarray2json( [] ); // $ExpectError
+	typedarray2json( null ); // $ExpectError
+	typedarray2json( undefined ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	const x = new Float64Array( 10 );
 
-	toJSON(); // $ExpectError
-	toJSON( x, 3 ); // $ExpectError
+	typedarray2json(); // $ExpectError
+	typedarray2json( x, 3 ); // $ExpectError
 }

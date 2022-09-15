@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Filename
+# reFilenameWindows
 
 > [Regular expression][mdn-regexp] to split a Windows filename.
 

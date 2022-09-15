@@ -22,7 +22,7 @@
 * Tests if a value is either an integer equal to the current year or a `Date` object representing the current year.
 *
 * @param value - value to test
-* @returns boolean indicating whether value is the current year
+* @returns boolean indicating whether a provided value is the current year
 *
 * @example
 * var bool = isCurrentYear( new Date() );
@@ -47,4 +47,3 @@ declare function isCurrentYear( value: any ): boolean;
 // EXPORTS //
 
 export = isCurrentYear;
-

@@ -54,7 +54,7 @@ interface ReDirname {
 	*
 	* @example
 	* var dir = reDirname.REGEXP_WIN32.exec( 'C:\\foo\\bar\\index.js' )[ 1 ];
-	* // returns 'C:\\foo\\bar'
+	* // returns 'C:\foo\bar'
 	*/
 	REGEXP_WIN32: RegExp;
 
@@ -86,7 +86,7 @@ interface ReDirname {
 * @example
 * var RE_DIRNAME = reDirname( 'win32' );
 * var dir = RE_DIRNAME.exec( 'C:\\foo\\bar\\index.js' )[ 1 ];
-* // returns 'C:\\foo\\bar'
+* // returns 'C:\foo\bar'
 */
 declare var reDirname: ReDirname;
 

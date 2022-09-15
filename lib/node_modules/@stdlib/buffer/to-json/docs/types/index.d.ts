@@ -35,12 +35,12 @@ import { Buffer } from 'buffer';
 * var buf = array2buffer( [ 1, 2 ] );
 * // returns <Buffer>
 *
-* var json = toJSON( buf );
+* var json = buffer2json( buf );
 * // returns { 'type': 'Buffer', 'data': [ 1, 2 ] }
 */
-declare function toJSON( buffer: Buffer ): any;
+declare function buffer2json( buffer: Buffer ): any;
 
 
 // EXPORTS //
 
-export = toJSON;
+export = buffer2json;

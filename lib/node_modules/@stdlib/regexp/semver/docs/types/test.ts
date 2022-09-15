@@ -32,7 +32,7 @@ import reSemVer = require( './index' );
 	reSemVer( [], 123 ); // $ExpectError
 }
 
-// Attached to main export is a `REGEXP` property that is a regular expression...
+// Attached to main export is a `REGEXP` property whose value is a regular expression...
 {
 	// tslint:disable-next-line:no-unused-expression
 	reSemVer.REGEXP; // $ExpectType RegExp

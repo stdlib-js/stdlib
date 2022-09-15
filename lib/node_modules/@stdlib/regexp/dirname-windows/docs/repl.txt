@@ -11,13 +11,13 @@
     --------
     > var RE = {{alias}}();
     > var dir = RE.exec( 'foo\\bar\\index.js' )[ 1 ]
-    'foo\\bar'
+    'foo\bar'
     > dir = RE.exec( 'C:\\foo\\bar\\.gitignore' )[ 1 ]
-    'C:\\foo\\bar'
+    'C:\foo\bar'
     > dir = RE.exec( 'foo\\file.pdf' )[ 1 ]
     'foo'
     > dir = RE.exec( '\\foo\\bar\\file' )[ 1 ]
-    '\\foo\\bar'
+    '\foo\bar'
     > dir = RE.exec( 'index.js' )[ 1 ]
     ''
     > dir = RE.exec( '' )[ 1 ]
@@ -29,8 +29,8 @@
 
     Examples
     --------
-    > var dir = reDirnameWindows.REGEXP.exec( 'foo\\bar\\index.js' )[ 1 ]
-    'foo\\bar'
+    > var dir = {{alias}}.REGEXP.exec( 'foo\\bar\\index.js' )[ 1 ]
+    'foo\bar'
 
     See Also
     --------

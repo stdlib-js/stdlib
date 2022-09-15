@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# UTF-16 Surrogate Pair
+# reUtf16SurrogatePair
 
 > [Regular expression][mdn-regexp] to match a [UTF-16][utf-16] surrogate pair.
 

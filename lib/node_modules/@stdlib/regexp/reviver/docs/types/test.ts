@@ -23,10 +23,19 @@ import reviver = require( './index' );
 
 // The function can be used to revive a serialized object...
 {
-	JSON.parse( '{"type":"RegExp","pattern":"ab+c","flags":""}', reviver ); // $ExpectType any
+	const o = {
+		'type': 'RegExp',
+		'pattern': 'ab+c',
+		'flags': ''
+	};
+	reviver( 'foo', o ); // $ExpectType any
+	reviver( 'foo', 4 ); // $ExpectType any
+	reviver( 'foo', 'beep' ); // $ExpectType any
+	reviver( 'foo', true ); // $ExpectType any
+	reviver( 'foo', [] ); // $ExpectType any
 }
 
-// The function does not compile if provided a first argument that is not a string...
+// The compiler throws an error if the function is provided a first argument that is not a string...
 {
 	reviver( true, 1 ); // $ExpectError
 	reviver( false, 1 ); // $ExpectError
@@ -38,7 +47,7 @@ import reviver = require( './index' );
 	reviver( ( x: number ): number => x, 1 ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	reviver(); // $ExpectError
 	reviver( 'beep' ); // $ExpectError

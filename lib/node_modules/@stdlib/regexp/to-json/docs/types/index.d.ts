@@ -41,16 +41,16 @@ interface JSONRepresentation {
 /**
 * Returns a JSON representation of a regular expression.
 *
-* @param regexp - regular expression to serialize
+* @param re - regular expression to serialize
 * @returns JSON representation
 *
 * @example
-* var json = toJSON( /ab+c/ );
+* var json = regexp2json( /ab+c/ );
 * // returns {...}
 */
-declare function toJSON( regexp: RegExp ): JSONRepresentation;
+declare function regexp2json( re: RegExp ): JSONRepresentation;
 
 
 // EXPORTS //
 
-export = toJSON;
+export = regexp2json;

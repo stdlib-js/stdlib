@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# White Space
+# reWhitespace
 
 > [Regular expression][regexp] to match a [white space][whitespace] character.
 

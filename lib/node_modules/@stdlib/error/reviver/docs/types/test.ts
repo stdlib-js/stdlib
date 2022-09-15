@@ -16,30 +16,30 @@
 * limitations under the License.
 */
 
-import reviver = require( './index' );
+import reviveError = require( './index' );
 
 
 // TESTS //
 
 // The function can be used to revive a serialized object...
 {
-	JSON.parse( '{"beep":"boop"}', reviver ); // $ExpectType any
+	JSON.parse( '{"beep":"boop"}', reviveError ); // $ExpectType any
 }
 
 // The function does not compile if provided a first argument that is not a string...
 {
-	reviver( true, 1 ); // $ExpectError
-	reviver( false, 1 ); // $ExpectError
-	reviver( null, 1 ); // $ExpectError
-	reviver( undefined, 1 ); // $ExpectError
-	reviver( 5, 1 ); // $ExpectError
-	reviver( [], 1 ); // $ExpectError
-	reviver( {}, 1 ); // $ExpectError
-	reviver( ( x: number ): number => x, 1 ); // $ExpectError
+	reviveError( true, 1 ); // $ExpectError
+	reviveError( false, 1 ); // $ExpectError
+	reviveError( null, 1 ); // $ExpectError
+	reviveError( undefined, 1 ); // $ExpectError
+	reviveError( 5, 1 ); // $ExpectError
+	reviveError( [], 1 ); // $ExpectError
+	reviveError( {}, 1 ); // $ExpectError
+	reviveError( ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The function does not compile if provided insufficient arguments...
 {
-	reviver(); // $ExpectError
-	reviver( 'beep' ); // $ExpectError
+	reviveError(); // $ExpectError
+	reviveError( 'beep' ); // $ExpectError
 }

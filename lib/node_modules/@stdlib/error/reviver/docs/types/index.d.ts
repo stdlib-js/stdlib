@@ -27,12 +27,12 @@
 *
 * @example
 * var str = '{"type":"TypeError","message":"beep"}';
-* var err = JSON.parse( str, reviver );
+* var err = JSON.parse( str, reviveError );
 * // returns <TypeError>
 */
-declare function reviver( key: string, value: any ): any;
+declare function reviveError( key: string, value: any ): any;
 
 
 // EXPORTS //
 
-export = reviver;
+export = reviveError;

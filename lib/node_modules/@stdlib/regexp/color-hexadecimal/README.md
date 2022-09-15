@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Hexadecimal Color
+# reColorHexadecimal
 
 > [Regular expression][mdn-regexp] to match a hexadecimal color.
 

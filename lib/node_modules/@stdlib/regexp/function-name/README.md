@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Function Name
+# reFunctionName
 
 > [Regular expression][regexp] to capture a function name.
 
@@ -30,7 +30,7 @@ limitations under the License.
 var reFunctionName = require( '@stdlib/regexp/function-name' );
 ```
 
-#### reFunctionName
+#### reFunctionName()
 
 Returns a [regular expression][regexp] to capture a `function` name.
 

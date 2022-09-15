@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Native Function
+# reNativeFunction
 
 > [Regular expression][regexp] to match a native function.
 

@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Filename
+# reFilenamePosix
 
 > [Regular expression][mdn-regexp] to split a [POSIX][posix] filename.
 

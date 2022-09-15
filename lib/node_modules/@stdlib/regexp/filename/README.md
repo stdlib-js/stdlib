@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Filename
+# reFilename
 
 > [Regular expression][mdn-regexp] to split a filename.
 

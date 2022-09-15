@@ -30,7 +30,7 @@ interface ReDirnameWindows {
 	* @example
 	* var RE_DIRNAME_WINDOWS = reDirnameWindows();
 	* var dir = RE_DIRNAME_WINDOWS.exec( 'foo\\bar\\index.js' )[ 1 ];
-	* // returns 'foo\\bar'
+	* // returns 'foo\bar'
 	*/
 	(): RegExp;
 
@@ -39,7 +39,7 @@ interface ReDirnameWindows {
 	*
 	* @example
 	* var dir = reDirnameWindows.REGEXP.exec( 'foo\\bar\\index.js' )[ 1 ];
-	* // returns 'foo\\bar'
+	* // returns 'foo\bar'
 	*/
 	REGEXP: RegExp;
 }
@@ -52,11 +52,11 @@ interface ReDirnameWindows {
 * @example
 * var RE_DIRNAME_WINDOWS = reDirnameWindows();
 * var dir = RE_DIRNAME_WINDOWS.exec( 'foo\\bar\\index.js' )[ 1 ];
-* // returns 'foo\\bar'
+* // returns 'foo\bar'
 *
 * @example
 * var dir = reDirnameWindows.REGEXP.exec( 'foo\\bar\\index.js' )[ 1 ];
-* // returns 'foo\\bar'
+* // returns 'foo\bar'
 */
 declare var reDirnameWindows: ReDirnameWindows;
 

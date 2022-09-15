@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Basename
+# reBasenameWindows
 
 > [Regular expression][regexp] to capture the last part of a Windows path.
 

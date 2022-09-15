@@ -36,6 +36,7 @@ Tests if a `value` is either an integer equal to the current year or a `Date` ob
 
 ```javascript
 var currentYear = require( '@stdlib/time/current-year' );
+
 var bool = isCurrentYear( currentYear() );
 // returns true
 
@@ -54,12 +55,13 @@ bool = isCurrentYear( 2021 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var currentYear = require( '@stdlib/time/current-year' );
 var isCurrentYear = require( '@stdlib/assert/is-current-year' );
 
 var bool = isCurrentYear( new Date() );
 // returns true
 
-bool = isCurrentYear( new Date().getFullYear() );
+bool = isCurrentYear( currentYear() );
 // returns true
 
 bool = isCurrentYear( 2021 );
@@ -84,7 +86,7 @@ bool = isCurrentYear( null );
 ### Usage
 
 ```text
-Usage: is-current-year [options] <year>
+Usage: is-current-year [options] [<year>]
 
 Options:
 

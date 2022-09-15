@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# UNC Path
+# reUncPath
 
 > [Regular expression][regexp] to parse a [UNC][unc] path.
 

@@ -16,30 +16,34 @@
 * limitations under the License.
 */
 
-import reviver = require( './index' );
+import reviveTypedArray = require( './index' );
 
 
 // TESTS //
 
-// The function can be used to revive a serialized object...
+// The function revives a serialized object...
 {
-	JSON.parse( '{"type":"Float64Array","data":[5,3]}', reviver ); // $ExpectType any
+	const o = {
+		'type': 'Float64Array',
+		'data': [ 5, 3 ]
+	};
+	reviveTypedArray( 'foo', o ); // $ExpectType any
 }
 
 // The function does not compile if provided a first argument that is not a string...
 {
-	reviver( true, 1 ); // $ExpectError
-	reviver( false, 1 ); // $ExpectError
-	reviver( null, 1 ); // $ExpectError
-	reviver( undefined, 1 ); // $ExpectError
-	reviver( 5, 1 ); // $ExpectError
-	reviver( [], 1 ); // $ExpectError
-	reviver( {}, 1 ); // $ExpectError
-	reviver( ( x: number ): number => x, 1 ); // $ExpectError
+	reviveTypedArray( true, 1 ); // $ExpectError
+	reviveTypedArray( false, 1 ); // $ExpectError
+	reviveTypedArray( null, 1 ); // $ExpectError
+	reviveTypedArray( undefined, 1 ); // $ExpectError
+	reviveTypedArray( 5, 1 ); // $ExpectError
+	reviveTypedArray( [], 1 ); // $ExpectError
+	reviveTypedArray( {}, 1 ); // $ExpectError
+	reviveTypedArray( ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The function does not compile if provided insufficient arguments...
 {
-	reviver(); // $ExpectError
-	reviver( 'beep' ); // $ExpectError
+	reviveTypedArray(); // $ExpectError
+	reviveTypedArray( 'beep' ); // $ExpectError
 }

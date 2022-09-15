@@ -1,16 +1,10 @@
 
-{{alias}}( regexp )
+{{alias}}( re )
     Returns a JSON representation of a regular expression.
-
-    The returned object has the following properties:
-
-    - type: value type. The assigned value is always 'RegExp'.
-    - pattern: regular expression pattern.
-    - flags: regular expression flags.
 
     Parameters
     ----------
-    regexp: RegExp
+    re: RegExp
         Regular expression to serialize.
 
     Returns
@@ -19,7 +13,7 @@
         JSON representation.
         
     out.type: string
-        Value type.
+        Value type. The assigned value is always 'RegExp'.
         
     out.pattern: string
         Regular expression pattern.

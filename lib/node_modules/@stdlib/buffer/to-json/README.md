@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# toJSON
+# buffer2json
 
 > Return a [JSON][json] representation of a [Buffer][@stdlib/buffer/ctor].
 
@@ -37,10 +37,10 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var toJSON = require( '@stdlib/buffer/to-json' );
+var buffer2json = require( '@stdlib/buffer/to-json' );
 ```
 
-#### toJSON( buffer )
+#### buffer2json( buffer )
 
 Returns a [JSON][json] representation of a [`Buffer`][@stdlib/buffer/ctor].
 
@@ -49,7 +49,7 @@ var array2buffer = require( '@stdlib/buffer/from-array' );
 
 var buf = array2buffer( [ 1, 2 ] );
 
-var json = toJSON( buf );
+var json = buffer2json( buf );
 /* returns
     {
         'type': 'Buffer',
@@ -82,18 +82,16 @@ For guidance on reviving a JSON-serialized [`Buffer`][@stdlib/buffer/ctor], see 
 
 ```javascript
 var allocUnsafe = require( '@stdlib/buffer/alloc-unsafe' );
-var randint = require( '@stdlib/random/base/discrete-uniform' );
-var toJSON = require( '@stdlib/buffer/to-json' );
+var randi = require( '@stdlib/random/base/discrete-uniform' );
+var buffer2json = require( '@stdlib/buffer/to-json' );
 
-var buf;
+var buf = allocUnsafe( 100 );
 var i;
-
-buf = allocUnsafe( 100 );
 for ( i = 0; i < buf.length; i++ ) {
-    buf[ i ] = randint( 0, 255 );
+    buf[ i ] = randi( 0, 255 );
 }
 
-console.log( toJSON( buf ) );
+console.log( buffer2json( buf ) );
 ```
 
 </section>

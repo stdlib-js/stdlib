@@ -1,3 +1,4 @@
+
 {{alias}}( value )
     Tests if a value is a semantic version string.
 
@@ -9,7 +10,8 @@
     Returns
     -------
     out: boolean
-        Boolean indicating whether value is a semantic version string.
+        Boolean indicating whether a provided value is a semantic version
+        string.
 
     Examples
     --------

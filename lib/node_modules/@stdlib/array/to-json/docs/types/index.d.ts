@@ -58,12 +58,12 @@ interface JSONRepresentation {
 * var Float64Array = require( `@stdlib/array/float64` );
 *
 * var arr = new Float64Array( [ 5.0, 3.0 ] );
-* var json = toJSON( arr );
+* var json = typedarray2json( arr );
 * // returns { 'type': 'Float64Array', 'data': [ 5.0, 3.0 ] }
 */
-declare function toJSON( arr: RealOrComplexTypedArray ): JSONRepresentation;
+declare function typedarray2json( arr: RealOrComplexTypedArray ): JSONRepresentation; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
 
-export = toJSON;
+export = typedarray2json;
