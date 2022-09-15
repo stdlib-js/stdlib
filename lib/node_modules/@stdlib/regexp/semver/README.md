@@ -104,6 +104,7 @@ var parts = reSemVer.REGEXP.exec( '0.2.3' );
 var reSemVer = require( '@stdlib/regexp/semver' );
 
 var RE_SEMVER = reSemVer();
+
 var version = '1.0.0';
 var bool = RE_SEMVER.test( version );
 // returns true
