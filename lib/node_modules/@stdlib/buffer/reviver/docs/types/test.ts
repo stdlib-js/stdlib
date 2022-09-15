@@ -21,9 +21,13 @@ import reviveBuffer = require( './index' );
 
 // TESTS //
 
-// The function can be used to revive a serialized object...
+// The function revives a serialized object...
 {
-	JSON.parse( '{"type":"Buffer","data":[5,3]}', reviveBuffer ); // $ExpectType any
+	const o = {
+		'type': 'Buffer',
+		'data': [ 5, 3 ]
+	};
+	reviveBuffer( 'foo', o ); // $ExpectType any
 }
 
 // The function does not compile if provided a first argument that is not a string...
