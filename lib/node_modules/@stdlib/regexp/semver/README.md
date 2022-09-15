@@ -20,7 +20,7 @@ limitations under the License.
 
 # Semantic Version
 
-> [Regular expression][regexp] to match a [semantic version][semantic-version] string.
+> [Regular expression][mdn-regexp] to match a [semantic version][semantic-version] string.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var reSemVer = require( '@stdlib/regexp/semver' );
 
 #### reSemVer()
 
-Return a [regular expression][regexp] to match a [semantic version][semantic-version] string. 
+Returns a [regular expression][mdn-regexp] to match a [semantic version][semantic-version] string. 
 
 ```javascript
 var RE_SEMVER = reSemVer();
@@ -71,7 +71,7 @@ parts = RE_SEMVER.exec( '1.0.0-alpha.1' );
 
 #### reSemVer.REGEXP
 
-[Regular expression][regexp] to match a [semantic version][semantic-version] string.
+[Regular expression][mdn-regexp] to match a [semantic version][semantic-version] string.
 
 ```javascript
 var parts = reSemVer.REGEXP.exec( '0.2.3' );
@@ -149,7 +149,7 @@ bool = RE_SEMVER.test( version );
 
 <section class="links">
 
-[regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 [semantic-version]: https://semver.org/
 
