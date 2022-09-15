@@ -30,12 +30,12 @@
 *
 * var str = '{"type":"Float64Array","data":[5,3]}';
 *
-* var arr = parseJSON( str, reviver );
+* var arr = parseJSON( str, reviveTypedArray );
 * // returns <Float64Array>[ 5.0, 3.0 ]
 */
-declare function reviver( key: string, value: any ): any;
+declare function reviveTypedArray( key: string, value: any ): any;
 
 
 // EXPORTS //
 
-export = reviver;
+export = reviveTypedArray;
