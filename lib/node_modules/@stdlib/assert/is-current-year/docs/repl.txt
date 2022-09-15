@@ -1,3 +1,4 @@
+
 {{alias}}( value )
     Tests if a value is the current year.
 
@@ -9,7 +10,7 @@
     Returns
     -------
     out: boolean
-        Boolean indicating whether value is the current year.
+        Boolean indicating whether a value is the current year.
 
     Examples
     --------

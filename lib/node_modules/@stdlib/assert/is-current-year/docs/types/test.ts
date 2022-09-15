@@ -37,4 +37,3 @@ import isCurrentYear = require( './index' );
 	isCurrentYear(); // $ExpectError
 	isCurrentYear( new Date(), 123 ); // $ExpectError
 }
-

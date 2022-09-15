@@ -1,5 +1,5 @@
 
-Usage: is-current-year [options] <year>
+Usage: is-current-year [options] [<year>]
 
 Options:
 
