@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Filename Extension
+# reExtname
 
 > [Regular expression][regexp] to capture a filename extension.
 

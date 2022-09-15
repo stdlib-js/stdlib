@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Basename
+# reBasenamePosix
 
 > [Regular expression][regexp] to capture the last part of a [POSIX][posix] path.
 

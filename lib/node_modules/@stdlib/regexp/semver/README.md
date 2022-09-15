@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Semantic Version
+# reSemVer
 
 > [Regular expression][mdn-regexp] to match a [semantic version][semantic-version] string.
 

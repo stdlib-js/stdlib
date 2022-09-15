@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# RegExp String
+# reRegExp
 
 > [Regular expression][regexp] to parse a [regular expression][regexp] string.
 

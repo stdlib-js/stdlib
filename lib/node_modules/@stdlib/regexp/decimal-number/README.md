@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Decimal Number
+# reDecimalNumber
 
 > [Regular expression][mdn-regexp] to match a decimal number.
 

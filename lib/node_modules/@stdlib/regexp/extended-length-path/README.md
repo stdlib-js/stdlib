@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Extended Length Path
+# reExtendedLengthPath
 
 > [Regular expression][regexp] to detect an [extended-length path][extended-length-path].
 

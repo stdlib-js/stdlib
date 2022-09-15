@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# EOL
+# reEOL
 
 > [Regular expression][mdn-regexp] to match a [newline][newline] character sequence.
 

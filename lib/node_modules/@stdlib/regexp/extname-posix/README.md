@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Filename Extension
+# reExtnamePosix
 
 > [Regular expression][regexp] to capture a [POSIX][posix] filename extension.
 

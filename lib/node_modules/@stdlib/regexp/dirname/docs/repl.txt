@@ -25,7 +25,7 @@
     '/foo/bar'
     > var RE_WIN32 = {{alias}}( 'win32' );
     > dir = RE_WIN32.exec( 'C:\\foo\\bar\\index.js' )[ 1 ]
-    'C:\\foo\\bar'
+    'C:\foo\bar'
     > var str = RE.toString();
     > var bool = ( str === RE_POSIX.toString() || str === RE_WIN32.toString() )
     true
@@ -55,7 +55,7 @@
     Examples
     --------
     > var dir = {{alias}}.REGEXP_WIN32.exec( 'C:\\foo\\bar\\index.js' )[ 1 ]
-    'C:\\foo\\bar'
+    'C:\foo\bar'
 
     See Also
     --------

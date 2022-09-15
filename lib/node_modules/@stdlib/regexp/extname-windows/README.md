@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Filename Extension
+# reExtnameWindows
 
 > [Regular expression][regexp] to capture a Windows filename extension.
 
