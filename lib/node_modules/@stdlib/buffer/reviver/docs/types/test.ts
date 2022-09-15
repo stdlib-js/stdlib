@@ -16,30 +16,30 @@
 * limitations under the License.
 */
 
-import reviver = require( './index' );
+import reviveBuffer = require( './index' );
 
 
 // TESTS //
 
 // The function can be used to revive a serialized object...
 {
-	JSON.parse( '{"type":"Buffer","data":[5,3]}', reviver ); // $ExpectType any
+	JSON.parse( '{"type":"Buffer","data":[5,3]}', reviveBuffer ); // $ExpectType any
 }
 
 // The function does not compile if provided a first argument that is not a string...
 {
-	reviver( true, 1 ); // $ExpectError
-	reviver( false, 1 ); // $ExpectError
-	reviver( null, 1 ); // $ExpectError
-	reviver( undefined, 1 ); // $ExpectError
-	reviver( 5, 1 ); // $ExpectError
-	reviver( [], 1 ); // $ExpectError
-	reviver( {}, 1 ); // $ExpectError
-	reviver( ( x: number ): number => x, 1 ); // $ExpectError
+	reviveBuffer( true, 1 ); // $ExpectError
+	reviveBuffer( false, 1 ); // $ExpectError
+	reviveBuffer( null, 1 ); // $ExpectError
+	reviveBuffer( undefined, 1 ); // $ExpectError
+	reviveBuffer( 5, 1 ); // $ExpectError
+	reviveBuffer( [], 1 ); // $ExpectError
+	reviveBuffer( {}, 1 ); // $ExpectError
+	reviveBuffer( ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The function does not compile if provided insufficient arguments...
 {
-	reviver(); // $ExpectError
-	reviver( '{"type":"Buffer","data":[5,3]}' ); // $ExpectError
+	reviveBuffer(); // $ExpectError
+	reviveBuffer( '{"type":"Buffer","data":[5,3]}' ); // $ExpectError
 }
