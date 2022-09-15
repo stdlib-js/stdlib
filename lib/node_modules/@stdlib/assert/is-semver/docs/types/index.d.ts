@@ -22,7 +22,7 @@
 * Tests if a value is a semantic version string.
 *
 * @param value - value to test
-* @returns boolean indicating whether value is a semantic version string
+* @returns boolean indicating whether a provided value is a semantic version string
 *
 * @example
 * var bool = isSemVer( '1.0.0' );
@@ -46,4 +46,3 @@ declare function isSemVer( value: any ): boolean;
 // EXPORTS //
 
 export = isSemVer;
-

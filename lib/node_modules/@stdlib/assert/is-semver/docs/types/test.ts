@@ -34,4 +34,3 @@ import isSemVer = require( './index' );
 	isSemVer(); // $ExpectError
 	isSemVer( '1.0.0', 123 ); // $ExpectError
 }
-

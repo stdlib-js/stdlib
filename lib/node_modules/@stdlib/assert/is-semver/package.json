@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/assert/is-semver",
   "version": "0.0.0",
-  "description": "Test if a value is the current year.",
+  "description": "Test if a value is a semantic version string.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -60,7 +60,6 @@
     "utils",
     "util",
     "is",
-    "is-semver",
     "semver",
     "semantic",
     "version",

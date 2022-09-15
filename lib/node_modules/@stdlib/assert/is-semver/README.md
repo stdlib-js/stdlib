@@ -87,7 +87,7 @@ bool = isSemVer( null );
 ### Usage
 
 ```text
-Usage: is-semver [options] <str>
+Usage: is-semver [options] [<str>]
 
 Options:
 
