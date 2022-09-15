@@ -1,3 +1,4 @@
+
 {{alias}}( key, value )
     Revives a JSON-serialized regular expression.
 
@@ -17,7 +18,7 @@
     Examples
     --------
     > var str = '{"type":"RegExp","pattern":"ab+c","flags":""}';
-    > var err = JSON.parse( str, {{alias}} )
+    > var v = {{alias:@stdlib/utils/parse-json}}( str, {{alias}} )
     <RegExp>
 
     See Also

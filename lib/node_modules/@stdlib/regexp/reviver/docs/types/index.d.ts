@@ -23,12 +23,23 @@
 *
 * @param key - key
 * @param value - value
-* @returns value or regular expression
+* @returns value
 *
 * @example
+* var parseJSON = require( `@stdlib/utils/parse-json` );
+*
 * var str = '{"type":"RegExp","pattern":"ab+c","flags":""}';
-* var regex = JSON.parse( str, reviver );
+*
+* var re = parseJSON( str, reviver );
 * // returns <RegExp>
+*
+* @example
+* var parseJSON = require( `@stdlib/utils/parse-json` );
+*
+* var str = '{"beep":"boop"}';
+*
+* var o = parseJSON( str, reviver );
+* // returns { 'beep': 'boop' }
 */
 declare function reviver( key: string, value: any ): any;
 
