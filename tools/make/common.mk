@@ -104,7 +104,7 @@ JAVASCRIPT_TEST_RUNNER ?= tape
 JAVASCRIPT_LINTER ?= eslint
 
 # Define the code coverage instrumentation utility:
-JAVASCRIPT_CODE_INSTRUMENTER ?= istanbul
+JAVASCRIPT_CODE_INSTRUMENTER ?= c8
 
 # Define the linter to use when linting TypeScript files:
 TYPESCRIPT_LINTER ?= tslint
@@ -113,7 +113,7 @@ TYPESCRIPT_LINTER ?= tslint
 TYPESCRIPT_DECLARATIONS_LINTER ?= dtslint
 
 # Define the browser test runner:
-BROWSER_TEST_RUNNER ?= testling
+BROWSER_TEST_RUNNER ?=
 
 # Define the analysis tool to use when analyzing JavaScript files:
 JAVASCRIPT_COMPLEXITY_TOOL ?= plato
