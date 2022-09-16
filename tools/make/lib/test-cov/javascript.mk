@@ -41,7 +41,6 @@ endif
 # @param {string} [JAVASCRIPT_CODE_INSTRUMENTER] - JavaScript code instrumenter
 # @param {*} [FAST_FAIL] - flag indicating whether to stop running tests upon encountering a test failure
 #
-#
 # @example
 # make test-javascript-cov
 #
