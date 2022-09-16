@@ -354,6 +354,8 @@ The command supports the following environment variables:
 
 <!-- Section to include notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
+* * *
+
 <section class="notes">
 
 ## Notes
