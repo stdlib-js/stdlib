@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Script to generate a coverage report name.
+# Script to generate a coverage report name when using `istanbul` for instrumenting JavaScript source files.
 #
 # This script is called with the following arguments:
 #
