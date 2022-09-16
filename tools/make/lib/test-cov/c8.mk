@@ -73,7 +73,6 @@ C8_FLAGS = \
 # @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop running tests upon encountering a test failure
 #
-#
 # @example
 # make test-c8
 #
