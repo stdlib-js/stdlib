@@ -1,3 +1,4 @@
+
 {{alias}}()
     Returns the current year.
 
@@ -13,4 +14,4 @@
 
     See Also
     --------
-    
+

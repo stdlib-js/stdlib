@@ -1,3 +1,4 @@
+
 {{alias}}( str, len[, seq] )
     Truncates a string in the middle to a specified length.
 

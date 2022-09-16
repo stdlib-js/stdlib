@@ -1,3 +1,4 @@
+
 {{alias}}( str, n[, chars] )
     Trims `n` characters from the end of a string.
 

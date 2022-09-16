@@ -1,3 +1,4 @@
+
 {{alias}}( str, search )
     Returns the part of a string before the last occurrence of a specified
     substring.
