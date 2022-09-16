@@ -96,7 +96,7 @@ else
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
 		TEST_MODE=coverage \
-		$(C8) $(C8_FLAGS) $(NODE) $$test | $(TAP_REPORTER) || echo 'Tests failed.';; \
+		$(C8) $(C8_FLAGS) $(NODE) $$test | $(TAP_REPORTER) || echo 'Tests failed.'; \
 	done
 endif
 

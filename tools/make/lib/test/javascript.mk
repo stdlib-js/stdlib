@@ -117,7 +117,7 @@ else
 		$(NODE) $(NODE_FLAGS_TEST) $(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
-		| $(TAP_REPORTER) || echo 'Tests failed.';; \
+		| $(TAP_REPORTER) || echo 'Tests failed.'; \
 	done
 endif
 
