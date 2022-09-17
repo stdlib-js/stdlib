@@ -26,8 +26,10 @@ on:
     inputs:
       command:
         description: Command to run.
+        required: true
       env:
         description: Environment variables to set.
+        required: false
 
 # Workflow jobs:
 jobs:
@@ -70,12 +72,10 @@ jobs:
         run: |
           make install
           make init
-        timeout-minutes: 5
+        timeout-minutes: 15
 
       # Run the make command:
       - name: 'Run make command'
         run: |
-          make ${{ github.event.inputs.command }}
-        env:
-          ${{ github.event.inputs.env }}
+          ${{ github.event.inputs.env }} make ${{ github.event.inputs.command }}
         timeout-minutes: 5
