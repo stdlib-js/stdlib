@@ -1,0 +1,77 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: run_make_commands
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+      command:
+        description: Command to run.
+      env:
+        description: Environment variables to set.
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for running make commands...
+  update:
+
+    # Define a display name:
+    name: 'Run make command'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v2
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies and initialize the repository:
+      - name: 'Install dependencies'
+        run: |
+          make install
+          make init
+        timeout-minutes: 5
+
+      # Run the make command:
+      - name: 'Run make command'
+        run: |
+          make ${{ github.event.inputs.command }}
+        env:
+          ${{ github.event.inputs.env }}
+        timeout-minutes: 5
