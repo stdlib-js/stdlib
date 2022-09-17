@@ -30,7 +30,7 @@ endif
 # RULES #
 
 #/
-# Runs unit tests and generates a test coverage report.
+# Runs JavaScript unit tests and generates a test coverage report.
 #
 # ## Notes
 #
