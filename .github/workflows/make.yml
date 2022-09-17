@@ -23,6 +23,7 @@ name: run_make_commands
 on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
+    inputs:
       command:
         description: Command to run.
       env:
