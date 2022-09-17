@@ -76,7 +76,7 @@ endif
 .PHONY: view-javascript-cov
 
 #/
-# Removes a JavaScript coverage directory.
+# Removes a JavaScript coverage directory (including all coverage artifacts).
 #
 # @example
 # make clean-javascript-cov

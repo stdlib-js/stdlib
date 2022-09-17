@@ -28,7 +28,6 @@ include $(TOOLS_MAKE_LIB_DIR)/test-cov/javascript.mk
 #
 # ## Notes
 #
-# -   Raw TAP output is piped to a TAP reporter.
 # -   This command is useful when wanting to glob for test files (e.g., generate a test coverage report for all tests for a particular package).
 #
 # @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)

@@ -59,6 +59,12 @@ The command supports the following environment variables:
 -   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
+<!-- run-disable -->
+
+```bash
+$ make test TESTS_FILTER='.*/blas/base/dasum/.*'
+```
+
 #### test-files
 
 Runs a specified list of files containing unit tests.
@@ -88,6 +94,12 @@ The command supports the following environment variables:
 
 -   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+
+<!-- run-disable -->
+
+```bash
+$ make test-local TESTS_FILTER='.*/blas/base/dasum/.*'
+```
 
 #### test-files-local
 
@@ -119,6 +131,12 @@ The command supports the following environment variables:
 -   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
+<!-- run-disable -->
+
+```bash
+$ make test-summary TESTS_FILTER='.*/blas/base/dasum/.*'
+```
+
 #### test-files-summary
 
 Runs, in the local environment, a specified list of files containing unit tests.
@@ -149,6 +167,12 @@ The command supports the following environment variables:
 -   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
+<!-- run-disable -->
+
+```bash
+$ make test-tap TESTS_FILTER='.*/blas/base/dasum/.*'
+```
+
 #### test-files-tap
 
 Runs, in the local environment, a specified list of files containing unit tests and generates raw TAP output.
@@ -178,6 +202,12 @@ The command supports the following environment variables:
 
 -   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+
+<!-- run-disable -->
+
+```bash
+$ make test-xunit TESTS_FILTER='.*/blas/base/dasum/.*'
+```
 
 #### test-files-xunit
 
@@ -213,6 +243,12 @@ The command supports the following environment variables:
 -   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
+<!-- run-disable -->
+
+```bash
+$ make test-javascript TESTS_FILTER='.*/blas/base/dasum/.*'
+```
+
 #### test-javascript-files
 
 Runs a specified list of files containing JavaScript unit tests.
@@ -242,6 +278,12 @@ The command supports the following environment variables:
 
 -   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+
+<!-- run-disable -->
+
+```bash
+$ make test-javascript-local TESTS_FILTER='.*/blas/base/dasum/.*'
+```
 
 #### test-javascript-files-local
 
@@ -273,6 +315,12 @@ The command supports the following environment variables:
 -   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
+<!-- run-disable -->
+
+```bash
+$ make test-javascript-summary TESTS_FILTER='.*/blas/base/dasum/.*'
+```
+
 #### test-javascript-files-summary
 
 Runs, in the local environment, a specified list of files containing JavaScript unit tests.
@@ -303,6 +351,12 @@ The command supports the following environment variables:
 -   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
+<!-- run-disable -->
+
+```bash
+$ make test-javascript-tap TESTS_FILTER='.*/blas/base/dasum/.*'
+```
+
 #### test-javascript-files-tap
 
 Runs, in the local environment, a specified list of files containing JavaScript unit tests and generates raw TAP output.
@@ -332,6 +386,12 @@ The command supports the following environment variables:
 
 -   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+
+<!-- run-disable -->
+
+```bash
+$ make test-javascript-xunit TESTS_FILTER='.*/blas/base/dasum/.*'
+```
 
 #### test-javascript-files-xunit
 
