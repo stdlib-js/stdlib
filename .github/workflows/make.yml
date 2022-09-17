@@ -18,6 +18,9 @@
 
 # Workflow name:
 name: run_make_commands
+
+# Workflow triggers:
+on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
       command:
