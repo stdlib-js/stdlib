@@ -67,12 +67,17 @@ jobs:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
 
-      # Install dependencies and initialize the repository:
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
         run: |
-          make install
-          make init
+          make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
+
+      # Initialize development environment:
+      - name: 'Initialize development environment'
+        run: |
+          make init
+        timeout-minutes: 5
 
       # Run the make command:
       - name: 'Run make command'
