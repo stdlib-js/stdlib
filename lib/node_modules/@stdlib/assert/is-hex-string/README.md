@@ -114,9 +114,9 @@ Options:
 
     ```bash
     # Not escaped...
-    $ echo -n $'0xffffff\n0123456789abcdefABCDEF | is-hex-string --split /\r?\n/
+    $ echo -n $'0xffffff\n0123456789abcdefABCDEF' | is-hex-string --split /\r?\n/
     # Escaped...
-    $ echo -n $'0xffffff\n0123456789abcdefABCDEF | is-hex-string --split /\\r?\\n/
+    $ echo -n $'0xffffff\n0123456789abcdefABCDEF' | is-hex-string --split /\\r?\\n/
     ```
 
 -   The implementation ignores trailing delimiters.

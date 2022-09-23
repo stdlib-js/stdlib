@@ -229,7 +229,7 @@ true
 By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
 
 ```bash
-$ echo -n '\\\\server\\share\\foo'\t/foo/../bar' | is-ascii --split '\t'
+$ echo -n '\\\\server\\share\\foo'\t/foo/../bar' | is-unc-path --split '\t'
 true
 false
 ```
