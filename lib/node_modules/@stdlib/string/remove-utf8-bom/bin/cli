@@ -27,9 +27,6 @@ var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var CLI = require( '@stdlib/cli/ctor' );
 var stdin = require( '@stdlib/process/read-stdin' );
 var stdinStream = require( '@stdlib/streams/node/stdin' );
-var RE_EOL = require( '@stdlib/regexp/eol' ).REGEXP;
-var isRegExpString = require( '@stdlib/assert/is-regexp-string' );
-var reFromString = require( '@stdlib/utils/regexp-from-string' );
 var removeBOM = require( './../lib' );
 
 
@@ -42,7 +39,6 @@ var removeBOM = require( './../lib' );
 * @returns {void}
 */
 function main() {
-	var split;
 	var flags;
 	var args;
 	var cli;
@@ -67,14 +63,6 @@ function main() {
 
 	// Check if we are receiving data from `stdin`...
 	if ( !stdinStream.isTTY ) {
-		if ( flags.split ) {
-			if ( !isRegExpString( flags.split ) ) {
-				flags.split = '/'+flags.split+'/';
-			}
-			split = reFromString( flags.split );
-		} else {
-			split = RE_EOL;
-		}
 		return stdin( onRead );
 	}
 	console.log( removeBOM( args[ 0 ] ) ); // eslint-disable-line no-console
@@ -88,21 +76,11 @@ function main() {
 	* @returns {void}
 	*/
 	function onRead( error, data ) {
-		var lines;
-		var i;
 		if ( error ) {
 			return cli.error( error );
 		}
-
-		lines = data.toString().split( split );
-
-		// Remove any trailing separators (e.g., trailing newline)...
-		if ( lines[ lines.length-1 ] === '' ) {
-			lines.pop();
-		}
-		for ( i = 0; i < lines.length; i++ ) {
-			console.log( removeBOM( lines[ i ] ) ); // eslint-disable-line no-console
-		}
+		data = data.toString();
+		console.log( removeBOM( data ) ); // eslint-disable-line no-console
 	}
 }
 
