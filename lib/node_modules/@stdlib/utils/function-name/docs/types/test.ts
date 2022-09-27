@@ -26,7 +26,7 @@ import functionName = require( './index' );
 	functionName( String ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a function...
+// The compiler throws an error if the function is provided a value other than a function...
 {
 	functionName( true ); // $ExpectError
 	functionName( false ); // $ExpectError
@@ -36,7 +36,7 @@ import functionName = require( './index' );
 	functionName( 'abc' ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	functionName(); // $ExpectError
 }

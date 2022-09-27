@@ -27,7 +27,7 @@ import isAllowedCast = require( './index' );
 	isAllowedCast( 'float64', 'int32', 'safe' ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a first argument which is not a string...
+// The compiler throws an error if the function is provided a first argument which is not a string...
 {
 	isAllowedCast( true, 'int32', 'safe' ); // $ExpectError
 	isAllowedCast( false, 'int32', 'safe' ); // $ExpectError
@@ -39,7 +39,7 @@ import isAllowedCast = require( './index' );
 	isAllowedCast( ( x: number ): number => x, 'int32', 'safe' ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a string...
+// The compiler throws an error if the function is provided a second argument which is not a string...
 {
 	isAllowedCast( 'float64', true, 'safe' ); // $ExpectError
 	isAllowedCast( 'float64', false, 'safe' ); // $ExpectError
@@ -51,7 +51,7 @@ import isAllowedCast = require( './index' );
 	isAllowedCast( 'float64', ( x: number ): number => x, 'safe' ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not a string...
+// The compiler throws an error if the function is provided a third argument which is not a string...
 {
 	isAllowedCast( 'float64', 'int32', true ); // $ExpectError
 	isAllowedCast( 'float64', 'int32', false ); // $ExpectError

@@ -26,7 +26,7 @@ import nonsingletonDimensions = require( './index' );
 	nonsingletonDimensions( [ 3, 2, 1 ] ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than an array-like object containing numbers...
+// The compiler throws an error if the function is provided a value other than an array-like object containing numbers...
 {
 	nonsingletonDimensions( true ); // $ExpectError
 	nonsingletonDimensions( false ); // $ExpectError
@@ -38,7 +38,7 @@ import nonsingletonDimensions = require( './index' );
 	nonsingletonDimensions( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	nonsingletonDimensions(); // $ExpectError
 }

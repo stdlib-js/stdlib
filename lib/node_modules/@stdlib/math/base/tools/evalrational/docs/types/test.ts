@@ -26,7 +26,7 @@ import evalrational = require( './index' );
 	evalrational( [ -6.0, -5.0 ], [ 3.0, 0.5 ], 6.0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not an array of numbers...
+// The compiler throws an error if the function is provided a first argument which is not an array of numbers...
 {
 	const Q = [ 3.0, 0.5 ];
 	evalrational( true, Q, 6.0 ); // $ExpectError
@@ -37,7 +37,7 @@ import evalrational = require( './index' );
 	evalrational( ( x: number ): number => x, Q, 6.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not an array of numbers...
+// The compiler throws an error if the function is provided a second argument which is not an array of numbers...
 {
 	const P = [ -6.0, -5.0 ];
 	evalrational( P, true, 6.0 ); // $ExpectError
@@ -48,7 +48,7 @@ import evalrational = require( './index' );
 	evalrational( P, ( x: number ): number => x, 6.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not a number...
+// The compiler throws an error if the function is provided a third argument which is not a number...
 {
 	const P = [ -6.0, -5.0 ];
 	const Q = [ 3.0, 0.5 ];

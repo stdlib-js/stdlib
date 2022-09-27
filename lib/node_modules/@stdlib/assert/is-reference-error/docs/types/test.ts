@@ -27,7 +27,7 @@ import isReferenceError = require( './index' );
 	isReferenceError( {} ); // $ExpectType boolean
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	isReferenceError(); // $ExpectError
 	isReferenceError( new ReferenceError( 'beep' ), 123 ); // $ExpectError

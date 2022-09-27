@@ -27,7 +27,7 @@ import incrspace = require( './index' );
 	incrspace( 0, 10 ); // $ExpectType number[]
 }
 
-// The function does not compile if provided values other than two numbers for the first two parameters...
+// The compiler throws an error if the function is provided values other than two numbers for the first two parameters...
 {
 	incrspace( true, 10 ); // $ExpectError
 	incrspace( false, 10 ); // $ExpectError
@@ -44,7 +44,7 @@ import incrspace = require( './index' );
 	incrspace( 8, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than a number for the third parameter...
+// The compiler throws an error if the function is provided a value other than a number for the third parameter...
 {
 	incrspace( 3, 20, true ); // $ExpectError
 	incrspace( 4, 20, false ); // $ExpectError
@@ -53,7 +53,7 @@ import incrspace = require( './index' );
 	incrspace( 9, 20, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	incrspace(); // $ExpectError
 	incrspace( 3 ); // $ExpectError

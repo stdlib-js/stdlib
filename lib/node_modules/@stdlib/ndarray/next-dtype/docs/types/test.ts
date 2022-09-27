@@ -28,7 +28,7 @@ import nextDataType = require( './index' );
 	nextDataType( 'float' ); // $ExpectType any
 }
 
-// The function does not compile if provided more than one argument...
+// The compiler throws an error if the function is provided more than one argument...
 {
 	nextDataType( 'float32', 123 ); // $ExpectError
 }

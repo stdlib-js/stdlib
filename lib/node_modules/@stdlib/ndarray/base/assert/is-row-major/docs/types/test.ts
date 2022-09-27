@@ -27,7 +27,7 @@ import isRowMajor = require( './index' );
 	isRowMajor( [ 1, 2 ] ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a value other than an array-like object containing numbers...
+// The compiler throws an error if the function is provided a value other than an array-like object containing numbers...
 {
 	isRowMajor( true ); // $ExpectError
 	isRowMajor( false ); // $ExpectError
@@ -39,7 +39,7 @@ import isRowMajor = require( './index' );
 	isRowMajor( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	isRowMajor(); // $ExpectError
 }

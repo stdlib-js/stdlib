@@ -46,7 +46,7 @@ import ndarray = require( './index' );
 	}
 }
 
-// The function does not compile if provided a first argument which is not a recognized data type...
+// The compiler throws an error if the function is provided a first argument which is not a recognized data type...
 {
 	const buffer = [ 1, 2, 3, 4 ];
 	const shape = [ 2, 2 ];
@@ -62,7 +62,7 @@ import ndarray = require( './index' );
 	ndarray( undefined, buffer, shape, strides, offset, order ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not an array-like object or buffer...
+// The compiler throws an error if the function is provided a second argument which is not an array-like object or buffer...
 {
 	const shape = [ 2, 2 ];
 	const strides = [ 2, 1 ];
@@ -75,7 +75,7 @@ import ndarray = require( './index' );
 	ndarray( 'float64', undefined, shape, strides, offset, order ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a third argument which is not an array-like object containing numbers...
 {
 	const buffer = [ 1, 2, 3, 4 ];
 	const strides = [ 2, 1 ];
@@ -91,7 +91,7 @@ import ndarray = require( './index' );
 	ndarray( 'float64', buffer, ( x: number ): number => x, strides, offset, order ); // $ExpectError
 }
 
-// The function does not compile if provided a fourth argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a fourth argument which is not an array-like object containing numbers...
 {
 	const buffer = [ 1, 2, 3, 4 ];
 	const shape = [ 2, 2 ];
@@ -107,7 +107,7 @@ import ndarray = require( './index' );
 	ndarray( 'float32', buffer, shape, ( x: number ): number => x, offset, order ); // $ExpectError
 }
 
-// The function does not compile if provided a fifth argument which is not a number...
+// The compiler throws an error if the function is provided a fifth argument which is not a number...
 {
 	const buffer = [ 1, 2, 3, 4 ];
 	const shape = [ 2, 2 ];
@@ -123,7 +123,7 @@ import ndarray = require( './index' );
 	ndarray( 'int32', buffer, shape, strides, ( x: number ): number => x, order ); // $ExpectError
 }
 
-// The function does not compile if provided a sixth argument which is not a known array order...
+// The compiler throws an error if the function is provided a sixth argument which is not a known array order...
 {
 	const buffer = [ 1, 2, 3, 4 ];
 	const shape = [ 2, 2 ];
@@ -187,7 +187,7 @@ import ndarray = require( './index' );
 	ndarray( 'float64', buffer, shape, strides, offset, order, { 'readonly': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided and invalid number of arguments...
+// The compiler throws an error if the function is provided and invalid number of arguments...
 {
 	const buffer = [ 1, 2, 3, 4 ];
 	const shape = [ 2, 2 ];

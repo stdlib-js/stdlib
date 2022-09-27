@@ -27,7 +27,7 @@ import isUnityProbabilityArray = require( './index' );
 	isUnityProbabilityArray( [ 2, 3 ] ); // $ExpectType boolean
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	isUnityProbabilityArray(); // $ExpectError
 	isUnityProbabilityArray( [ 0.25, 0.5, 0.25 ], 123 ); // $ExpectError

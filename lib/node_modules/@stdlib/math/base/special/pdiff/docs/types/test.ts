@@ -26,7 +26,7 @@ import pdiff = require( './index' );
 	pdiff( 8, 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	pdiff( true, 3 ); // $ExpectError
 	pdiff( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import pdiff = require( './index' );
 	pdiff( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	pdiff(); // $ExpectError
 	pdiff( 3 ); // $ExpectError

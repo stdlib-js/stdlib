@@ -28,7 +28,7 @@ import isBetween = require( './index' );
 	isBetween( 3.14, 3.14, 4.0, 'open' ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a fourth argument that is not a recognized string...
+// The compiler throws an error if the function is provided a fourth argument that is not a recognized string...
 {
 	isBetween( 3.14, 3.14, 4.0, [] ); // $ExpectError
 	isBetween( 3.14, 3.14, 4.0, {} ); // $ExpectError
@@ -39,7 +39,7 @@ import isBetween = require( './index' );
 	isBetween( 3.14, 3.14, 4.0, false ); // $ExpectError
 }
 
-// The function does not compile if provided a fifth argument that is not a recognized string...
+// The compiler throws an error if the function is provided a fifth argument that is not a recognized string...
 {
 	isBetween( 3.14, 3.14, 4.0, 'open', [] ); // $ExpectError
 	isBetween( 3.14, 3.14, 4.0, 'open', {} ); // $ExpectError
@@ -50,7 +50,7 @@ import isBetween = require( './index' );
 	isBetween( 3.14, 3.14, 4.0, 'open', false ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	isBetween(); // $ExpectError
 	isBetween( 1 ); // $ExpectError

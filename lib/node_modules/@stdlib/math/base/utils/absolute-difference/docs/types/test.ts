@@ -26,7 +26,7 @@ import absoluteDifference = require( './index' );
 	absoluteDifference( 8, 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	absoluteDifference( true, 3 ); // $ExpectError
 	absoluteDifference( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import absoluteDifference = require( './index' );
 	absoluteDifference( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	absoluteDifference(); // $ExpectError
 	absoluteDifference( 3 ); // $ExpectError

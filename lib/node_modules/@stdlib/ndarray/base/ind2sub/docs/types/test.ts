@@ -32,7 +32,7 @@ import ind2sub = require( './index' );
 	ind2sub( shape, strides, offset, order, idx, mode ); // $ExpectType number[]
 }
 
-// The function does not compile if provided a first argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a first argument which is not an array-like object containing numbers...
 {
 	const strides = [ 9, 6, 1 ];
 	const offset = 0;
@@ -49,7 +49,7 @@ import ind2sub = require( './index' );
 	ind2sub( ( x: number ): number => x, strides, offset, order, idx, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a second argument which is not an array-like object containing numbers...
 {
 	const shape = [ 3, 3, 3 ];
 	const offset = 0;
@@ -66,7 +66,7 @@ import ind2sub = require( './index' );
 	ind2sub( shape, ( x: number ): number => x, offset, order, idx, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not a number...
+// The compiler throws an error if the function is provided a third argument which is not a number...
 {
 	const shape = [ 3, 3, 3 ];
 	const strides = [ 9, 6, 1 ];
@@ -83,7 +83,7 @@ import ind2sub = require( './index' );
 	ind2sub( shape, strides, ( x: number ): number => x, order, idx, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a fourth argument which is not a known array order...
+// The compiler throws an error if the function is provided a fourth argument which is not a known array order...
 {
 	const shape = [ 3, 3, 3 ];
 	const strides = [ 9, 6, 1 ];
@@ -100,7 +100,7 @@ import ind2sub = require( './index' );
 	ind2sub( shape, strides, offset, ( x: number ): number => x, idx, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a fifth argument which is not a number...
+// The compiler throws an error if the function is provided a fifth argument which is not a number...
 {
 	const shape = [ 3, 3, 3 ];
 	const strides = [ 9, 6, 1 ];
@@ -117,7 +117,7 @@ import ind2sub = require( './index' );
 	ind2sub( shape, strides, offset, order, ( x: number ): number => x, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a sixth argument which is not a known mode...
+// The compiler throws an error if the function is provided a sixth argument which is not a known mode...
 {
 	const shape = [ 3, 3, 3 ];
 	const strides = [ 9, 6, 1 ];
@@ -134,7 +134,7 @@ import ind2sub = require( './index' );
 	ind2sub( shape, strides, offset, order, idx, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	const shape = [ 3, 3, 3 ];
 	const strides = [ 9, 6, 1 ];

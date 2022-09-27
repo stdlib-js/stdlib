@@ -31,7 +31,7 @@ import datespace = require( './index' );
 	datespace( start, stop, 30, { 'round': 'floor' } ); // $ExpectType Date[]
 }
 
-// The function does not compile if provided values other `Date` objects, Unix timestamps, JavaScript timestamps, or date strings for the first two parameters...
+// The compiler throws an error if the function is provided values other `Date` objects, Unix timestamps, JavaScript timestamps, or date strings for the first two parameters...
 {
 	const stop = '2014-12-02T07:00:54.973Z';
 	const start = new Date( stop ).getTime() - 60000;
@@ -49,7 +49,7 @@ import datespace = require( './index' );
 	datespace( start, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than a number or object for the third parameter...
+// The compiler throws an error if the function is provided a value other than a number or object for the third parameter...
 {
 	const stop = '2014-12-02T07:00:54.973Z';
 	const start = new Date( stop ).getTime() - 60000;
@@ -79,7 +79,7 @@ import datespace = require( './index' );
 	datespace( start, stop, 10, { 'round': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	datespace(); // $ExpectError
 	datespace( new Date() ); // $ExpectError

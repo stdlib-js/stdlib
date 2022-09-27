@@ -26,7 +26,7 @@ import skewness = require( './index' );
 	skewness( 10, 0.3 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	skewness( true, 0.5 ); // $ExpectError
 	skewness( false, 0.5 ); // $ExpectError
@@ -36,7 +36,7 @@ import skewness = require( './index' );
 	skewness( ( x: number ): number => x, 0.5 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	skewness( 8, true ); // $ExpectError
 	skewness( 8, false ); // $ExpectError
@@ -46,7 +46,7 @@ import skewness = require( './index' );
 	skewness( 8, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	skewness(); // $ExpectError
 	skewness( 8 ); // $ExpectError

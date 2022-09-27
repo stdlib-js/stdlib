@@ -27,7 +27,7 @@ import isSafeCast = require( './index' );
 	isSafeCast( 'float64', 'int32' ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a first argument which is not a string...
+// The compiler throws an error if the function is provided a first argument which is not a string...
 {
 	isSafeCast( true, 'int32' ); // $ExpectError
 	isSafeCast( false, 'int32' ); // $ExpectError
@@ -39,7 +39,7 @@ import isSafeCast = require( './index' );
 	isSafeCast( ( x: number ): number => x, 'int32' ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a string...
+// The compiler throws an error if the function is provided a second argument which is not a string...
 {
 	isSafeCast( 'float64', true ); // $ExpectError
 	isSafeCast( 'float64', false ); // $ExpectError

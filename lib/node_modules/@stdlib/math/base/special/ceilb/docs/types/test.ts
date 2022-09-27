@@ -26,7 +26,7 @@ import ceilb = require( './index' );
 	ceilb( 3.141592653589793, -4, 10 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than three numbers...
+// The compiler throws an error if the function is provided values other than three numbers...
 {
 	ceilb( true, 3, 2 ); // $ExpectError
 	ceilb( false, 2, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import ceilb = require( './index' );
 	ceilb( 9.343, 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	ceilb(); // $ExpectError
 	ceilb( 3 ); // $ExpectError

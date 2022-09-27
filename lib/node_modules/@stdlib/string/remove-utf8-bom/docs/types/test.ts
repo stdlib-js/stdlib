@@ -26,7 +26,7 @@ import removeUTF8BOM = require( './index' );
 	removeUTF8BOM( '\ufeffbeep' ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	removeUTF8BOM( true ); // $ExpectError
 	removeUTF8BOM( false ); // $ExpectError
@@ -38,7 +38,7 @@ import removeUTF8BOM = require( './index' );
 	removeUTF8BOM( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	removeUTF8BOM(); // $ExpectError
 }

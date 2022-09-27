@@ -64,7 +64,7 @@ function noop() {
 	doWhile( noop, {} ); // $ExpectError
 }
 
-// The function does not compile if provided fewer than two arguments...
+// The compiler throws an error if the function is provided fewer than two arguments...
 {
 	doWhile(); // $ExpectError
 	doWhile( noop ); // $ExpectError

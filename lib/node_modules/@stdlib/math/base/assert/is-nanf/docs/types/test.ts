@@ -28,7 +28,7 @@ import isnanf = require( './index' );
 	isnanf( 3 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	isnanf( true ); // $ExpectError
 	isnanf( false ); // $ExpectError

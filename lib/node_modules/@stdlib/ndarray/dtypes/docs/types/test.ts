@@ -26,7 +26,7 @@ import dtypes = require( './index' );
 	dtypes(); // $ExpectType string[]
 }
 
-// The function does not compile if provided any arguments...
+// The compiler throws an error if the function is provided any arguments...
 {
 	dtypes( 9 ); // $ExpectError
 }

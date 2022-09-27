@@ -26,7 +26,7 @@ import rad2deg = require( './index' );
 	rad2deg( 3.141592653589793 / 2.0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	rad2deg( true ); // $ExpectError
 	rad2deg( false ); // $ExpectError
@@ -38,7 +38,7 @@ import rad2deg = require( './index' );
 	rad2deg( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	rad2deg(); // $ExpectError
 }

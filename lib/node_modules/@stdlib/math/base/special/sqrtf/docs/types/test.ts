@@ -26,7 +26,7 @@ import sqrtf = require( './index' );
 	sqrtf( 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	sqrtf( true ); // $ExpectError
 	sqrtf( false ); // $ExpectError
@@ -38,7 +38,7 @@ import sqrtf = require( './index' );
 	sqrtf( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	sqrtf(); // $ExpectError
 }

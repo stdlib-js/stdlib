@@ -27,7 +27,7 @@ import ctors = require( './index' );
 	ctors( 'float' ); // $ExpectType Function | null
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	ctors( true ); // $ExpectError
 	ctors( false ); // $ExpectError
@@ -39,7 +39,7 @@ import ctors = require( './index' );
 	ctors( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	ctors(); // $ExpectError
 }

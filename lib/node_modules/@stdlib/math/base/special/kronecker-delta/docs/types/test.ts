@@ -26,7 +26,7 @@ import kroneckerDelta = require( './index' );
 	kroneckerDelta( 3.14, 3.14 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	kroneckerDelta( true, 3 ); // $ExpectError
 	kroneckerDelta( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import kroneckerDelta = require( './index' );
 	kroneckerDelta( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	kroneckerDelta(); // $ExpectError
 	kroneckerDelta( 3 ); // $ExpectError

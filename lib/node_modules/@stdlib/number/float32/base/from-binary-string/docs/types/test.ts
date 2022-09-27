@@ -26,7 +26,7 @@ import fromBinaryStringf = require( './index' );
 	fromBinaryStringf( '01000000100000000000000000000000' ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	fromBinaryStringf( true ); // $ExpectError
 	fromBinaryStringf( false ); // $ExpectError
@@ -36,7 +36,7 @@ import fromBinaryStringf = require( './index' );
 	fromBinaryStringf( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	fromBinaryStringf(); // $ExpectError
 }

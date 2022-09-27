@@ -29,7 +29,7 @@ import heaviside = require( './index' );
 	heaviside( 0, 'right-continuous' ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument other than a number...
+// The compiler throws an error if the function is provided a first argument other than a number...
 {
 	heaviside( true, 'half-maximum' ); // $ExpectError
 	heaviside( false, 'half-maximum' ); // $ExpectError
@@ -39,7 +39,7 @@ import heaviside = require( './index' );
 	heaviside( ( x: number ): number => x, 'half-maximum' ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than `left-continuous`, `left-continuous`, or `half-maximum` as its second argument...
+// The compiler throws an error if the function is provided a value other than `left-continuous`, `left-continuous`, or `half-maximum` as its second argument...
 {
 	heaviside( 0, true ); // $ExpectError
 	heaviside( 0, false ); // $ExpectError
@@ -50,7 +50,7 @@ import heaviside = require( './index' );
 	heaviside( 0, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	heaviside(); // $ExpectError
 	heaviside( 3, 'half-maximum', 8 ); // $ExpectError

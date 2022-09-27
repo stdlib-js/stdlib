@@ -39,7 +39,7 @@ import promotionRules = require( './index' );
 	promotionRules( 'bar', 'complex128' ); // $ExpectType null
 }
 
-// The function does not compile if provided a first argument that is not a string...
+// The compiler throws an error if the function is provided a first argument that is not a string...
 {
 	promotionRules( 123, 'complex128' ); // $ExpectError
 	promotionRules( true, 'complex128' ); // $ExpectError
@@ -49,7 +49,7 @@ import promotionRules = require( './index' );
 	promotionRules( ( x: number ): number => x, 'complex128' ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a string...
+// The compiler throws an error if the function is provided a second argument that is not a string...
 {
 	promotionRules( 'complex64', 123 ); // $ExpectError
 	promotionRules( 'complex64', true ); // $ExpectError
@@ -59,7 +59,7 @@ import promotionRules = require( './index' );
 	promotionRules( 'complex64', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided more than one argument...
+// The compiler throws an error if the function is provided more than one argument...
 {
 	promotionRules( 'complex128' ); // $ExpectError
 	promotionRules( 'complex128', 'complex64', {} ); // $ExpectError

@@ -32,7 +32,7 @@ import error2json = require( './index' );
 	error2json( new EvalError( 'beep' ) ); // $ExpectType any
 }
 
-// The function does not compile if provided a value other than an error object...
+// The compiler throws an error if the function is provided a value other than an error object...
 {
 	error2json( 'abc' ); // $ExpectError
 	error2json( true ); // $ExpectError
@@ -45,7 +45,7 @@ import error2json = require( './index' );
 	error2json( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	error2json(); // $ExpectError
 }

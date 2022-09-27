@@ -26,7 +26,7 @@ import isFloat32ndarrayLike = require( './index' );
 	isFloat32ndarrayLike( [] ); // $ExpectType boolean
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	isFloat32ndarrayLike(); // $ExpectError
 	isFloat32ndarrayLike( 'abc', 123 ); // $ExpectError

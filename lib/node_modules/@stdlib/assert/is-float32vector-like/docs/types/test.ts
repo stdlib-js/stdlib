@@ -26,7 +26,7 @@ import isFloat32VectorLike = require( './index' );
 	isFloat32VectorLike( [] ); // $ExpectType boolean
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	isFloat32VectorLike(); // $ExpectError
 	isFloat32VectorLike( 'abc', 123 ); // $ExpectError

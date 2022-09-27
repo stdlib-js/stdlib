@@ -28,7 +28,7 @@ import fromCodePoint = require( './index' );
 	fromCodePoint( new Uint16Array( [ 97, 98, 99 ] ) ); // $ExpectType string
 }
 
-// The function does not compile if provided neither numeric values nor an array-like object of numbers...
+// The compiler throws an error if the function is provided neither numeric values nor an array-like object of numbers...
 {
 	fromCodePoint( true ); // $ExpectError
 	fromCodePoint( false ); // $ExpectError

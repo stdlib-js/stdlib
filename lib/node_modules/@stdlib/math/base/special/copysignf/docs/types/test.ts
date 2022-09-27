@@ -27,7 +27,7 @@ import copysignf = require( './index' );
 	copysignf( 3.14, -10 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	copysignf( true, 3 ); // $ExpectError
 	copysignf( false, 2 ); // $ExpectError
@@ -50,7 +50,7 @@ import copysignf = require( './index' );
 	copysignf( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	copysignf(); // $ExpectError
 	copysignf( -3 ); // $ExpectError

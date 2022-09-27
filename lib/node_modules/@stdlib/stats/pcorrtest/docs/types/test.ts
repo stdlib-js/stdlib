@@ -31,7 +31,7 @@ import pcorrTest = require( './index' );
 	pcorrTest( x, y, { 'rho': 0.3 } ); // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is not a numeric array...
+// The compiler throws an error if the function is provided a first argument that is not a numeric array...
 {
 	const y = [ 3, 2, 4, 1, 2, 4 ];
 	pcorrTest( 'abc', y ); // $ExpectError
@@ -44,7 +44,7 @@ import pcorrTest = require( './index' );
 	pcorrTest( ( x: number ): number => x, y ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a numeric array...
+// The compiler throws an error if the function is provided a second argument that is not a numeric array...
 {
 	const x = [ 2, 4, 3, 1, 2, 3 ];
 	pcorrTest( x, 'abc' ); // $ExpectError
@@ -111,7 +111,7 @@ import pcorrTest = require( './index' );
 	pcorrTest( x, y, { 'alternative': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const x = [ 2, 4, 3, 1, 2, 3 ];
 	const y = [ 3, 2, 4, 1, 2, 4 ];

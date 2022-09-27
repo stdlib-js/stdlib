@@ -26,7 +26,7 @@ import dirname = require( './index' );
 	dirname( './foo/bar/index.js' ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	dirname( true ); // $ExpectError
 	dirname( false ); // $ExpectError

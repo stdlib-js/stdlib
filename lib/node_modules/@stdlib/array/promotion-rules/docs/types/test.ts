@@ -39,7 +39,7 @@ import promotionRules = require( './index' );
 	promotionRules( 'bar', 'float32' ); // $ExpectType null
 }
 
-// The function does not compile if provided a first argument that is not a string...
+// The compiler throws an error if the function is provided a first argument that is not a string...
 {
 	promotionRules( 123, 'float64' ); // $ExpectError
 	promotionRules( true, 'float64' ); // $ExpectError
@@ -49,7 +49,7 @@ import promotionRules = require( './index' );
 	promotionRules( ( x: number ): number => x, 'float64' ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a string...
+// The compiler throws an error if the function is provided a second argument that is not a string...
 {
 	promotionRules( 'int32', 123 ); // $ExpectError
 	promotionRules( 'int32', true ); // $ExpectError
@@ -59,7 +59,7 @@ import promotionRules = require( './index' );
 	promotionRules( 'int32', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided more than one argument...
+// The compiler throws an error if the function is provided more than one argument...
 {
 	promotionRules( 'float32' ); // $ExpectError
 	promotionRules( 'float32', 'int32', {} ); // $ExpectError

@@ -28,7 +28,7 @@ import isPow2Uint32 = require( './index' );
 	isPow2Uint32( 5 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	isPow2Uint32( true ); // $ExpectError
 	isPow2Uint32( false ); // $ExpectError

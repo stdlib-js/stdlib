@@ -28,7 +28,7 @@ import chi2test = require( './index' );
 	chi2test( [ [ 20, 30 ], [ 30, 20 ] ], { 'correct': false } ); // $ExpectType Results
 }
 
-// The function does not compile if provided a value other than an array of numeric arrays or ndarray...
+// The compiler throws an error if the function is provided a value other than an array of numeric arrays or ndarray...
 {
 	chi2test( true ); // $ExpectError
 	chi2test( false ); // $ExpectError
@@ -72,7 +72,7 @@ import chi2test = require( './index' );
 	chi2test( mat, { 'correct': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const mat = [ [ 20, 30 ], [ 30, 20 ] ];
 	chi2test(); // $ExpectError

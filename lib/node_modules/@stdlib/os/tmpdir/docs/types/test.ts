@@ -26,7 +26,7 @@ import tmpdir = require( './index' );
 	tmpdir(); // $ExpectType string
 }
 
-// The function does not compile if provided arguments...
+// The compiler throws an error if the function is provided arguments...
 {
 	tmpdir( 'appname/config' ); // $ExpectError
 	tmpdir( 'appname/config', 2 ); // $ExpectError

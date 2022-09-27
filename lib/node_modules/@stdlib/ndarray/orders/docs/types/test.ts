@@ -26,7 +26,7 @@ import orders = require( './index' );
 	orders(); // $ExpectType string[]
 }
 
-// The function does not compile if provided any arguments...
+// The compiler throws an error if the function is provided any arguments...
 {
 	orders( 9 ); // $ExpectError
 }

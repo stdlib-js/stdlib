@@ -26,7 +26,7 @@ import clampf = require( './index' );
 	clampf( -3, 0, 10 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than three numbers...
+// The compiler throws an error if the function is provided values other than three numbers...
 {
 	clampf( true, 3, 2 ); // $ExpectError
 	clampf( false, 2, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import clampf = require( './index' );
 	clampf( 9.343, 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	clampf(); // $ExpectError
 	clampf( 3 ); // $ExpectError

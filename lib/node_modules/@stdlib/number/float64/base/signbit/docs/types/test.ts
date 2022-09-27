@@ -27,7 +27,7 @@ import signbit = require( './index' );
 	signbit( -0.0 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	signbit( true ); // $ExpectError
 	signbit( false ); // $ExpectError
@@ -37,7 +37,7 @@ import signbit = require( './index' );
 	signbit( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	signbit(); // $ExpectError
 }

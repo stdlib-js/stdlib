@@ -26,7 +26,7 @@ import deg2radf = require( './index' );
 	deg2radf( 8 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	deg2radf( true ); // $ExpectError
 	deg2radf( false ); // $ExpectError
@@ -38,7 +38,7 @@ import deg2radf = require( './index' );
 	deg2radf( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	deg2radf(); // $ExpectError
 }

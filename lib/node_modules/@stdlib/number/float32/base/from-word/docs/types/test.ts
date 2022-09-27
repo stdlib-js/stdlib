@@ -26,7 +26,7 @@ import fromWordf = require( './index' );
 	fromWordf( 1068180177 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	fromWordf( true ); // $ExpectError
 	fromWordf( false ); // $ExpectError
@@ -36,7 +36,7 @@ import fromWordf = require( './index' );
 	fromWordf( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	fromWordf(); // $ExpectError
 }

@@ -29,7 +29,7 @@ import isBetweenArray = require( './index' );
 	isBetweenArray( arr, 3.14, 4.0, 'open' ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a fourth argument that is not a recognized string...
+// The compiler throws an error if the function is provided a fourth argument that is not a recognized string...
 {
 	const arr = [ 3.0, 3.14, 4.0 ];
 	isBetweenArray( arr, 3.14, 4.0, [] ); // $ExpectError
@@ -41,7 +41,7 @@ import isBetweenArray = require( './index' );
 	isBetweenArray( arr, 3.14, 4.0, false ); // $ExpectError
 }
 
-// The function does not compile if provided a fifth argument that is not a recognized string...
+// The compiler throws an error if the function is provided a fifth argument that is not a recognized string...
 {
 	const arr = [ 3.0, 3.14, 4.0 ];
 	isBetweenArray( arr, 3.14, 4.0, 'open', [] ); // $ExpectError
@@ -53,7 +53,7 @@ import isBetweenArray = require( './index' );
 	isBetweenArray( arr, 3.14, 4.0, 'open', false ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	const arr = [ 3.0, 3.14, 4.0 ];
 	isBetweenArray(); // $ExpectError

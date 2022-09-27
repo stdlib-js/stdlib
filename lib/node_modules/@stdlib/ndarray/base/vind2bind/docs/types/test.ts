@@ -31,7 +31,7 @@ import vind2bind = require( './index' );
 	vind2bind( shape, strides, offset, order, 1, mode ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a first argument which is not an array-like object containing numbers...
 {
 	const strides = [ -3, 1 ];
 	const offset = 6;
@@ -47,7 +47,7 @@ import vind2bind = require( './index' );
 	vind2bind( ( x: number ): number => x, strides, offset, order, 1, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a second argument which is not an array-like object containing numbers...
 {
 	const shape = [ 3, 3 ];
 	const offset = 6;
@@ -63,7 +63,7 @@ import vind2bind = require( './index' );
 	vind2bind( shape, ( x: number ): number => x, offset, order, 1, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not a number...
+// The compiler throws an error if the function is provided a third argument which is not a number...
 {
 	const shape = [ 3, 3 ];
 	const strides = [ -3, 1 ];
@@ -79,7 +79,7 @@ import vind2bind = require( './index' );
 	vind2bind( shape, strides, ( x: number ): number => x, order, 1, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a fourth argument which is not a recognized array order...
+// The compiler throws an error if the function is provided a fourth argument which is not a recognized array order...
 {
 	const shape = [ 3, 3 ];
 	const strides = [ -3, 1 ];
@@ -96,7 +96,7 @@ import vind2bind = require( './index' );
 	vind2bind( shape, strides, offset, ( x: number ): number => x, 1, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a fifth argument which is not a number...
+// The compiler throws an error if the function is provided a fifth argument which is not a number...
 {
 	const shape = [ 3, 3 ];
 	const strides = [ -3, 1 ];
@@ -113,7 +113,7 @@ import vind2bind = require( './index' );
 	vind2bind( shape, strides, offset, order, ( x: number ): number => x, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a sixth argument which is not a recognized mode...
+// The compiler throws an error if the function is provided a sixth argument which is not a recognized mode...
 {
 	const shape = [ 3, 3 ];
 	const strides = [ -3, 1 ];
@@ -130,7 +130,7 @@ import vind2bind = require( './index' );
 	vind2bind( shape, strides, offset, order, 1, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	const shape = [ 3, 3 ];
 	const strides = [ -3, 1 ];

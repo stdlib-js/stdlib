@@ -27,7 +27,7 @@ import format = require( './index' );
 	format( 'Hello, %s!', 'Jane' ); // $ExpectType string
 }
 
-// The function does not compile if provided a first argument other than a string...
+// The compiler throws an error if the function is provided a first argument other than a string...
 {
 	format( true ); // $ExpectError
 	format( false ); // $ExpectError
@@ -39,7 +39,7 @@ import format = require( './index' );
 	format( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	format(); // $ExpectError
 }

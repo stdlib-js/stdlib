@@ -30,7 +30,7 @@ import Number = require( './index' );
 	Number( 15 ); // $ExpectType number
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	Number( 10, 15 ); // $ExpectError
 }

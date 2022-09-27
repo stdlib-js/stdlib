@@ -27,7 +27,7 @@ import toBinaryStringf = require( './index' );
 	toBinaryStringf( -0.0 ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	toBinaryStringf( true ); // $ExpectError
 	toBinaryStringf( false ); // $ExpectError
@@ -37,7 +37,7 @@ import toBinaryStringf = require( './index' );
 	toBinaryStringf( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	toBinaryStringf(); // $ExpectError
 }

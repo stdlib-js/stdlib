@@ -56,7 +56,7 @@ import acronym = require( './index' );
 	acronym( 'beep boop', { 'stopwords': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	acronym(); // $ExpectError
 }

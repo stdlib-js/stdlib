@@ -26,7 +26,7 @@ import factorialln = require( './index' );
 	factorialln( 0.5 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	factorialln( true ); // $ExpectError
 	factorialln( false ); // $ExpectError
@@ -38,7 +38,7 @@ import factorialln = require( './index' );
 	factorialln( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	factorialln(); // $ExpectError
 }

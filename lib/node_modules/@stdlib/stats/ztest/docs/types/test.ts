@@ -29,7 +29,7 @@ import ztest = require( './index' );
 	ztest( [ 4, 4, 6, 6, 5 ], 1.0, { 'mu': 5 } ); // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is not a numeric array...
+// The compiler throws an error if the function is provided a first argument that is not a numeric array...
 {
 	ztest( 'abc', 1.0 ); // $ExpectError
 	ztest( true, 1.0 ); // $ExpectError
@@ -41,7 +41,7 @@ import ztest = require( './index' );
 	ztest( ( x: number ): number => x, 1.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a number...
+// The compiler throws an error if the function is provided a second argument that is not a number...
 {
 	const x = [ 4, 4, 6, 6, 5 ];
 	ztest( x, 'abc' ); // $ExpectError
@@ -104,7 +104,7 @@ import ztest = require( './index' );
 	ztest( x, 1.0, { 'alternative': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const x = [ 4, 4, 6, 6, 5 ];
 	ztest(); // $ExpectError

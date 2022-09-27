@@ -26,7 +26,7 @@ import lucaspoly = require( './index' );
 	lucaspoly( 6, 1.0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	lucaspoly( true, 1.0 ); // $ExpectError
 	lucaspoly( false, 1.0 ); // $ExpectError
@@ -36,7 +36,7 @@ import lucaspoly = require( './index' );
 	lucaspoly( ( x: number ): number => x, 1.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	lucaspoly( 6, true ); // $ExpectError
 	lucaspoly( 6, false ); // $ExpectError

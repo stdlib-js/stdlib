@@ -28,7 +28,7 @@ import substringBeforeLast = require( './index' );
 	substringBeforeLast( 'beep boop', '' ); // $ExpectType string
 }
 
-// The function does not compile if provided arguments having invalid types...
+// The compiler throws an error if the function is provided arguments having invalid types...
 {
 	substringBeforeLast( true, 'd' ); // $ExpectError
 	substringBeforeLast( false, 'd' ); // $ExpectError
@@ -45,7 +45,7 @@ import substringBeforeLast = require( './index' );
 	substringBeforeLast( 'abc', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	substringBeforeLast(); // $ExpectError
 	substringBeforeLast( 'abc' ); // $ExpectError
