@@ -1,0 +1,23 @@
+
+{{alias}}( value )
+    Tests if a value is a domain name.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a domain name.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'example.com' )
+    true
+    > bool = {{alias}}( 'foo@bar.com' )
+    false
+
+    See Also
+    --------
