@@ -1,0 +1,36 @@
+
+{{alias}}( x )
+    Returns a JSON representation of a number.
+
+    Parameters
+    ----------
+    x: number
+        Input value to serialize.
+
+    Returns
+    -------
+    out: Object
+        JSON representation if x is NaN or Infinity.
+
+    out.type: string
+        Value type. The assigned value is always "float64".
+
+    out.value: string
+        Value type. The assigned value can be "NaN", "+Infinity", "-Infinity".
+
+    out: number
+        In all other cases, the input value is returned.
+
+    Examples
+    --------
+    > var json = {{alias}}( NaN )
+    { 'type': 'float64', 'value': 'NaN' }
+    > json = {{alias}}( Infinity )
+    { 'type': 'float64', 'value': '+Infinity' }
+    > json = {{alias}}( -Infinity )
+    { 'type': 'float64', 'value': '-Infinity' }
+    > json = {{alias}}( 5.0 )
+    5.0
+
+    See Also
+    --------
