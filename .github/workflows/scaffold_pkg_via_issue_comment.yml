@@ -33,8 +33,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-      # Exit if comment does not contain `action: scaffold`:
-      - name: Exit if comment does not contain `action: scaffold`
+      # Exit if comment does not contain scaffolding directive:
+      - name: Exit if comment does not contain scaffolding directive
         if: ${{ !contains(github.event.comment.body, 'action: scaffold') }}
         run: exit 0
 
