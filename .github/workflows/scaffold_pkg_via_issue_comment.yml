@@ -39,7 +39,7 @@ jobs:
       # Run the command to scaffold a package:
       - name: Scaffold package
         id: scaffold
-        uses: ./
+        uses: stdlib-js/scaffold-pkg-pr-action@main
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
