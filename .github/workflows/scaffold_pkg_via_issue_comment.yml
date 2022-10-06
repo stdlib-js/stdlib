@@ -18,7 +18,7 @@
 #/
 
 # Workflow name:
-name: Scaffold Package via RFC Issue Comment
+name: scaffold_package_via_rfc_issue_comment
 
 # Workflow triggers:
 on:
@@ -33,6 +33,11 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
+      # Exit if comment does not contain `action: scaffold`:
+      - name: Exit if comment does not contain `action: scaffold`
+        if: ${{ !contains(github.event.comment.body, 'action: scaffold') }}
+        run: exit 0
+
       # Checkout the current branch:
       - uses: actions/checkout@v2
 

@@ -18,7 +18,7 @@
 #/
 
 # Workflow name:
-name: Scaffold Package via Pull Request Assignment
+name: scaffold_package_via_pull_request_assignment
 
 # Workflow triggers:
 on:
