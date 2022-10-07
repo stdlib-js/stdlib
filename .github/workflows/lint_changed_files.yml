@@ -96,7 +96,7 @@ jobs:
         run: |
           files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
-            make lint-markdown FILES="${files}"
+            make lint-markdown-files FILES="${files}"
           fi
 
       # Lint package.json files:
@@ -146,13 +146,13 @@ jobs:
           eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
 
           # Lint JavaScript source files:
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
+          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}"
           fi
 
           # Lint JavaScript command-line interfaces...
-          file=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '/bin/cli$' | tr '\n' ' ')
+          file=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ')
           if [[ -n "${file}" ]]; then
             make lint-javascript-files FILES="${file}"
           fi
