@@ -65,11 +65,7 @@ var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );
 var inheritedPropertySymbols = require( '@stdlib/utils/inherited-property-symbols' );
 
-var hasSymbols;
-var symbols;
-var obj;
-
-hasSymbols = hasSymbolSupport();
+var hasSymbols = hasSymbolSupport();
 
 function Foo() {
     if ( hasSymbols ) {
@@ -82,10 +78,9 @@ if ( hasSymbols ) {
     Foo.prototype[ Symbol( 'c' ) ] = 'd';
 }
 
-obj = new Foo();
-symbols = inheritedPropertySymbols( obj );
-
-console.log( symbols );
+var obj = new Foo();
+var symbols = inheritedPropertySymbols( obj );
+// e.g., returns [ Symbol(c) ]
 ```
 
 </section>
