@@ -74,7 +74,8 @@ jobs:
       # Get list of changed Markdown files:
       - name: Get list of changed Markdown files
         id: changed-md-files
-        files: |
+        with:
+          files: |
             **/*.md
         uses: tj-actions/changed-files@v32
 
@@ -86,7 +87,8 @@ jobs:
       # Get list of changed JavaScript files:
       - name: Get list of changed JavaScript files
         id: changed-js-files
-        files: |
+        with:
+          files: |
             **/*.js
         uses: tj-actions/changed-files@v32
 
