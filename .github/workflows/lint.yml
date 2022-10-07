@@ -86,4 +86,4 @@ jobs:
       - name: 'Lint JavaScript files'
         run: |
           FILES=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ')
-          make lint-javascript-files FILES="${{ steps.changed-files.outputs.all_changed_files }}"
+          make lint-javascript-files FILES="$FILES"
