@@ -92,12 +92,16 @@ jobs:
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
+        if: success() || failure()
         run: |
           files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ')
-          make lint-markdown-files FILES="$files"
+          if [ -n "${files}" ]; then
+            make lint-markdown FILES="${files}"
+          fi
 
       # Lint package.json files:
       - name: 'Lint package.json files'
+        if: success() || failure()
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -110,6 +114,7 @@ jobs:
 
       # Lint REPL help files...
       - name: 'Lint REPL help files'
+        if: success() || failure()
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -122,6 +127,7 @@ jobs:
 
       # Lint JavaScript files:
       - name: 'Lint JavaScript files'
+        if: success() || failure()
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -137,31 +143,106 @@ jobs:
 
           # Lint JavaScript source files:
           files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
-          make FILES="${files}" lint-javascript-files
+          if [[ -n "${files}" ]]; then
+            make lint-javascript-files FILES="${files}"
+          fi
 
           # Lint JavaScript command-line interfaces...
           file=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '/bin/cli$' | tr '\n' ' ')
+          if [[ -n "${file}" ]]; then
+            make lint-javascript-files FILES="${file}"
+          fi
 
           # Lint JavaScript example files:
           files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ')
-          make lint-javascript-files ESLINT_CONF="${eslint_examples_conf}" FILES="${files}"
+          if [[ -n "${files}" ]]; then
+            make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
+          fi
 
           # Lint JavaScript test files:
           files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ')
-          make lint-javascript-files ESLINT_CONF="${eslint_tests_conf}" FILES="${files}"
+          if [[ -n "${files}" ]]; then
+            make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
+          fi
 
           # Lint JavaScript benchmark files:
           files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ')
-          make lint-javascript-files ESLINT_CONF="${eslint_benchmarks_conf}" FILES="${files}"
+          if [[ -n "${files}" ]]; then
+            make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
+          fi
+
+      # Lint Python files:
+      - name: 'Lint Python files'
+        if: success() || failure()
+        run: |
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '\.py$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-python-files FILES="${files}"
+          fi
+
+      # Lint R files:
+      - name: 'Lint R files'
+        if: success() || failure()
+        run: |
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-r-files FILES="${files}"
+          fi
+
+      # Lint C files:
+      - name: 'Lint C files'
+        if: success() || failure()
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to cppcheck configuration file for linting examples:
+          cppcheck_examples_suppressions_list="${root}/etc/cppcheck/suppressions.examples.txt"
+
+          # Define the path to cppcheck configuration file for linting test fixtures:
+          cppcheck_tests_fixtures_suppressions_list="${root}/etc/cppcheck/suppressions.tests_fixtures.txt"
+
+          # Define the path to cppcheck configuration file for linting benchmarks:
+          cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
+
+          # Lint C source files...
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-c-files FILES="${files}"
+          fi
+
+          # Lint C example files...
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}"
+          fi
+
+          # Lint C test fixtures files...
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '/test/fixtures/.*\.c$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}"
+          fi
+
+          # Lint C benchmark files...
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '/benchmark/.*\.c$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}"
+          fi
 
       # Lint TypeScript declaration files:
       - name: 'Lint TypeScript declaration files'
+        if: success() || failure()
         run: |
           files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
-          make lint-typescript-declaration-files FILES="${files}"
+          if [[ -n "${files}" ]]; then
+            make lint-typescript-declaration-files FILES="${files}"
+          fi
 
       # Lint license headers:
       - name: 'Lint license headers'
+        if: success() || failure()
         run: |
           files=$(echo ${{ steps.changed-files.outputs.all_changed_files }})
-          make lint-license-headers FILES="$files"
+          if [[ -n "${files}" ]]; then
+            make lint-license-headers FILES="${files}"
+          fi
