@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: lint
+name: lint_changed_files
 
 # Workflow triggers:
 on:
@@ -76,13 +76,49 @@ jobs:
         id: changed-files
         uses: tj-actions/changed-files@v32
         with:
-          separator: '\n'
+          separator: ' '
+
+      # Lint file names
+      - name: Lint file names
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to a utility for linting filenames:
+          lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
+
+          # Lint filenames:
+          echo "${{ steps.changed-files.outputs.all_changed_files }}" || "${lint_filenames}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         run: |
-          FILES=$(echo ${{ steps.changed-files.outputs.all }} | grep -E '\.md$' | tr '\n' ' ')
-          make lint-markdown-files FILES="$FILES"
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ')
+          make lint-markdown-files FILES="$files"
+
+      # Lint package.json files:
+      - name: 'Lint package.json files'
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to a utility for linting package.json files:
+          lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
+
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ')
+          echo "${files}" | "${lint_package_json}"
+
+      # Lint REPL help files...
+      - name: 'Lint REPL help files'
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to a utility for linting REPL help files:
+          lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-help/bin/cli"
+
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep 'repl\.txt$' | tr '\n' ' ')
+          echo "${files}" | "${lint_repl_help}"
 
       # Lint JavaScript files:
       - name: 'Lint JavaScript files'
@@ -99,17 +135,33 @@ jobs:
           # Define the path to ESLint configuration file for linting benchmarks:
           eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
 
+          # Lint JavaScript source files:
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
+          make FILES="${files}" lint-javascript-files
+
+          # Lint JavaScript command-line interfaces...
+          file=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '/bin/cli$' | tr '\n' ' ')
+
           # Lint JavaScript example files:
-          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | grep '/examples/.*\.js$' | tr '\n' ' ')
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ')
           make lint-javascript-files ESLINT_CONF="${eslint_examples_conf}" FILES="${files}"
 
           # Lint JavaScript test files:
-          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | grep '/test/.*\.js$' | tr '\n' ' ')
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ')
           make lint-javascript-files ESLINT_CONF="${eslint_tests_conf}" FILES="${files}"
 
           # Lint JavaScript benchmark files:
-          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | grep '/benchmark/.*\.js$' | tr '\n' ' ')
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ')
           make lint-javascript-files ESLINT_CONF="${eslint_benchmarks_conf}" FILES="${files}"
 
-          # Lint JavaScript source files:
-          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
+      # Lint TypeScript declaration files:
+      - name: 'Lint TypeScript declaration files'
+        run: |
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
+          make lint-typescript-declaration-files FILES="${files}"
+
+      # Lint license headers:
+      - name: 'Lint license headers'
+        run: |
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }})
+          make lint-license-headers FILES="$files"
