@@ -75,15 +75,41 @@ jobs:
       - name: Get list of changed files
         id: changed-files
         uses: tj-actions/changed-files@v32
+        with:
+          separator: '\n'
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         run: |
-          FILES=$(echo ${{ steps.changed-files.outputs.all }} | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ')
+          FILES=$(echo ${{ steps.changed-files.outputs.all }} | grep -E '\.md$' | tr '\n' ' ')
           make lint-markdown-files FILES="$FILES"
 
       # Lint JavaScript files:
       - name: 'Lint JavaScript files'
         run: |
-          FILES=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ')
-          make lint-javascript-files FILES="$FILES"
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to ESLint configuration file for linting examples:
+          eslint_examples_conf="${root}/etc/eslint/.eslintrc.examples.js"
+
+          # Define the path to ESLint configuration file for linting tests:
+          eslint_tests_conf="${root}/etc/eslint/.eslintrc.tests.js"
+
+          # Define the path to ESLint configuration file for linting benchmarks:
+          eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
+
+          # Lint JavaScript example files:
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | grep '/examples/.*\.js$' | tr '\n' ' ')
+          make lint-javascript-files ESLINT_CONF="${eslint_examples_conf}" FILES="${files}"
+
+          # Lint JavaScript test files:
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | grep '/test/.*\.js$' | tr '\n' ' ')
+          make lint-javascript-files ESLINT_CONF="${eslint_tests_conf}" FILES="${files}"
+
+          # Lint JavaScript benchmark files:
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | grep '/benchmark/.*\.js$' | tr '\n' ' ')
+          make lint-javascript-files ESLINT_CONF="${eslint_benchmarks_conf}" FILES="${files}"
+
+          # Lint JavaScript source files:
+          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
