@@ -179,15 +179,12 @@ console.log( out.print({
 var array = require( '@stdlib/ndarray/array' );
 var chi2test = require( '@stdlib/stats/chi2test' );
 
-var table;
-var out;
-
 /*
 * Data from students in grades 4-6 on whether good grades, athletic ability, or popularity are most important to them:
 *
 * Source: Chase, M.A and Dummer, G.M. (1992), "The Role of Sports as a Social Determinant for Children"
 */
-table = array([
+var table = array([
     /* Grades Popular Sports */
     [ 63, 31, 25 ], // 4th
     [ 88, 55, 33 ], // 5th
@@ -195,7 +192,7 @@ table = array([
 ]);
 
 // Assess whether the grade level and the students' goals are independent of each other:
-out = chi2test( table );
+var out = chi2test( table );
 // returns {...}
 
 console.log( out.print() );

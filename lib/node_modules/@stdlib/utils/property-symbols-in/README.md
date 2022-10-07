@@ -63,11 +63,7 @@ var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );
 var propertySymbolsIn = require( '@stdlib/utils/property-symbols-in' );
 
-var hasSymbols;
-var symbols;
-var obj;
-
-hasSymbols = hasSymbolSupport();
+var hasSymbols = hasSymbolSupport();
 
 function Foo() {
     if ( hasSymbols ) {
@@ -80,8 +76,8 @@ if ( hasSymbols ) {
     Foo.prototype[ Symbol( 'foo' ) ] = 'bar';
 }
 
-obj = new Foo();
-symbols = propertySymbolsIn( obj );
+var obj = new Foo();
+var symbols = propertySymbolsIn( obj );
 
 console.log( symbols );
 ```
