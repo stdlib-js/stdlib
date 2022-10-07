@@ -81,7 +81,7 @@ jobs:
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         run: |
-        make lint-markdown-files FILES="${{ steps.changed-md-files.outputs.all_changed_files }}"
+          make lint-markdown-files FILES="${{ steps.changed-md-files.outputs.all_changed_files }}"
 
       # Get list of changed JavaScript files:
       - name: Get list of changed JavaScript files
@@ -93,4 +93,4 @@ jobs:
       # Lint JavaScript files:
       - name: 'Lint JavaScript files'
         run: |
-        make lint-javascript-files FILES="${{ steps.changed-js-files.outputs.all_changed_files }}"
+          make lint-javascript-files FILES="${{ steps.changed-js-files.outputs.all_changed_files }}"
