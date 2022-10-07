@@ -61,11 +61,8 @@ bool = isUNCPath( '/foo/bar/baz' );
 ```javascript
 var isUNCPath = require( '@stdlib/assert/is-unc-path' );
 
-var bool;
-var path;
-
-path = '\\\\server\\share\\foo\\bar\\baz:a:b';
-bool = isUNCPath( path );
+var path = '\\\\server\\share\\foo\\bar\\baz:a:b';
+var bool = isUNCPath( path );
 // returns true
 
 path = '\\\\server\\share\\foo\\bar\\baz::b';

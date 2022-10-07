@@ -61,15 +61,13 @@ if ( IS_WINDOWS ) {
 var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
 var PATH_SEP = require( '@stdlib/constants/path/sep' );
 
-var parts;
 var path;
-
 if ( IS_WINDOWS ) {
     path = 'foo\\bar\\baz';
 } else {
     path = 'foo/bar/baz';
 }
-parts = path.split( PATH_SEP );
+var parts = path.split( PATH_SEP );
 console.log( parts );
 // => ['foo','bar','baz']
 ```
