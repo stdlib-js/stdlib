@@ -71,28 +71,19 @@ jobs:
           make init
         timeout-minutes: 5
 
-      # Get list of changed Markdown files:
-      - name: Get list of changed Markdown files
-        id: changed-md-files
-        with:
-          files: |
-            **/*.md
+      # Get list of changed files:
+      - name: Get list of changed files
+        id: changed-files
         uses: tj-actions/changed-files@v32
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         run: |
-          make lint-markdown-files FILES="${{ steps.changed-md-files.outputs.all_changed_files }}"
-
-      # Get list of changed JavaScript files:
-      - name: Get list of changed JavaScript files
-        id: changed-js-files
-        with:
-          files: |
-            **/*.js
-        uses: tj-actions/changed-files@v32
+          FILES=$(echo ${{ steps.changed-files.outputs.all }} | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ')
+          make lint-markdown-files FILES="$FILES"
 
       # Lint JavaScript files:
       - name: 'Lint JavaScript files'
         run: |
-          make lint-javascript-files FILES="${{ steps.changed-js-files.outputs.all_changed_files }}"
+          FILES=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ')
+          make lint-javascript-files FILES="${{ steps.changed-files.outputs.all_changed_files }}"
