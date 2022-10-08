@@ -165,7 +165,7 @@ jobs:
             name="${name} -name \"*.py\""
           fi
           files=$(find lib/node_modules/@stdlib -type f \( ${name} \) |
-            grep -vE "${{ github.event.inputs.pattern }}" |
+            grep -E "${{ github.event.inputs.pattern }}" |
             shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ' ')
           echo "::set-output name=files::$files"
 
