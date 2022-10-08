@@ -185,7 +185,7 @@ jobs:
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
-        if: ${{ github.event.inputs.markdown }} && ( success() || failure() )
+        if: ${{ github.event.inputs.markdown != "false" }} && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
@@ -194,7 +194,7 @@ jobs:
 
       # Lint package.json files:
       - name: 'Lint package.json files'
-        if: ${{ github.event.inputs.json }} && ( success() || failure() )
+        if: ${{ github.event.inputs.json != "false" }} && ( success() || failure() )
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -209,7 +209,7 @@ jobs:
 
       # Lint REPL help files...
       - name: 'Lint REPL help files'
-        if: ${{ github.event.inputs.repl }} && ( success() || failure() )
+        if: ${{ github.event.inputs.repl != "false" }} && ( success() || failure() )
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -224,7 +224,7 @@ jobs:
 
       # Lint JavaScript files:
       - name: 'Lint JavaScript files'
-        if: ${{ github.event.inputs.javascript }} && ( success() || failure() )
+        if: ${{ github.event.inputs.javascript != "false" }} && ( success() || failure() )
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -270,7 +270,7 @@ jobs:
 
       # Lint Python files:
       - name: 'Lint Python files'
-        if: ${{ github.event.inputs.python }} && ( success() || failure() )
+        if: ${{ github.event.inputs.python != "false" }} && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.py$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
@@ -279,7 +279,7 @@ jobs:
 
       # Lint R files:
       - name: 'Lint R files'
-        if: ${{ github.event.inputs.r }} && ( success() || failure() )
+        if: ${{ github.event.inputs.r != "false" }} && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
@@ -288,7 +288,7 @@ jobs:
 
       # Lint C files:
       - name: 'Lint C files'
-        if: ${{ github.event.inputs.c }} && ( success() || failure() )
+        if: ${{ github.event.inputs.c != "false" }} && ( success() || failure() )
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -328,7 +328,7 @@ jobs:
 
       # Lint TypeScript declaration files:
       - name: 'Lint TypeScript declaration files'
-        if: ${{ github.event.inputs.typescript }} && ( success() || failure() )
+        if: ${{ github.event.inputs.typescript != "false" }} && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
