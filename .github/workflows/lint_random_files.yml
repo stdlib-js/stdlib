@@ -122,46 +122,46 @@ jobs:
           if [ "${{ github.event.inputs.javascript }}" != "false" ]; then
             name="${name} -name \"*.js\""
           fi
-          if [ -n "${name}" ]; then
-            name="${name} -o"
-          fi
           if [ "${{ github.event.inputs.markdown }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
             name="${name} -name \"*.md\""
           fi
-          if [ -n "${name}" ]; then
-            name="${name} -o"
-          fi
           if [ "${{ github.event.inputs.json }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
             name="${name} -name \"*.json\""
           fi
-          if [ -n "${name}" ]; then
-            name="${name} -o"
-          fi
           if [ "${{ github.event.inputs.repl }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
             name="${name} -name \"*.repl\""
           fi
-          if [ -n "${name}" ]; then
-            name="${name} -o"
-          fi
           if [ "${{ github.event.inputs.r }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
             name="${name} -name \"*.R\""
           fi
-          if [ -n "${name}" ]; then
-            name="${name} -o"
-          fi
           if [ "${{ github.event.inputs.c }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
             name="${name} -name \"*.c\""
           fi
-          if [ -n "${name}" ]; then
-            name="${name} -o"
-          fi
           if [ "${{ github.event.inputs.typescript }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
             name="${name} -name \"*.ts\""
           fi
-          if [ -n "${name}" ]; then
-            name="${name} -o"
-          fi
           if [ "${{ github.event.inputs.python }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
             name="${name} -name \"*.py\""
           fi
           files=$(find lib/node_modules/@stdlib -type f \( ${name} \) |
