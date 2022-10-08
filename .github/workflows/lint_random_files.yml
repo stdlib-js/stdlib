@@ -165,9 +165,11 @@ jobs:
             name="${name} -name '*.py'"
           fi
           echo "name: ${name}"
-          files=$(find lib/node_modules/@stdlib -type f \( ${name} \) |
-            grep -E "${{ github.event.inputs.pattern }}" |
+          command="find lib/node_modules/@stdlib -type f \( ${name} \) |
+            grep -E '${{ github.event.inputs.pattern }}' |
             shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ' ')
+          echo "command: ${command}"
+          files=$(eval ${command})
           echo "::set-output name=files::$files"
 
       # Lint file names
