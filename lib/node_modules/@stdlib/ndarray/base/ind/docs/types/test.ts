@@ -28,7 +28,7 @@ import ind = require( './index' );
 	ind( 2, 9, 'throw' ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	ind( 'abc', 9, 'clamp' ); // $ExpectError
 	ind( true, 9, 'clamp' ); // $ExpectError
@@ -40,7 +40,7 @@ import ind = require( './index' );
 	ind( ( x: number ): number => x, 9, 'clamp' ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	ind( 2, 'abc', 'clamp' ); // $ExpectError
 	ind( 2, true, 'clamp' ); // $ExpectError
@@ -52,7 +52,7 @@ import ind = require( './index' );
 	ind( 2, ( x: number ): number => x, 'clamp' ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not a known index mode...
+// The compiler throws an error if the function is provided a third argument which is not a known index mode...
 {
 	ind( 2, 9, 123 ); // $ExpectError
 	ind( 2, 9, 'abc' ); // $ExpectError
@@ -65,7 +65,7 @@ import ind = require( './index' );
 	ind( 2, 9, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	ind(); // $ExpectError
 	ind( 2 ); // $ExpectError

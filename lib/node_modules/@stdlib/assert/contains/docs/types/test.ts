@@ -30,7 +30,7 @@ import contains = require( './index' );
 	contains( [ 1, 2, 3, 4, 5, 6 ], 2, 3 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided arguments having invalid types...
+// The compiler throws an error if the function is provided arguments having invalid types...
 {
 	contains( true, 'd' ); // $ExpectError
 	contains( false, 'd' ); // $ExpectError
@@ -44,7 +44,7 @@ import contains = require( './index' );
 	contains( 'abd', 'a', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	contains(); // $ExpectError
 	contains( 'abc' ); // $ExpectError

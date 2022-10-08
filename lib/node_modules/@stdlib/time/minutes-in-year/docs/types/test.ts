@@ -28,7 +28,7 @@ import minutesInYear = require( './index' );
 	minutesInYear(); // $ExpectType number
 }
 
-// The function does not compile if provided an argument of invalid type...
+// The compiler throws an error if the function is provided an argument of invalid type...
 {
 	minutesInYear( [] ); // $ExpectError
 	minutesInYear( {} ); // $ExpectError
@@ -38,7 +38,7 @@ import minutesInYear = require( './index' );
 	minutesInYear( 'beep' ); // $ExpectError
 }
 
-// The function does not compile if provided more than one argument...
+// The compiler throws an error if the function is provided more than one argument...
 {
 	minutesInYear( 1990, 9 ); // $ExpectError
 	minutesInYear( 1990, 1, 19 ); // $ExpectError

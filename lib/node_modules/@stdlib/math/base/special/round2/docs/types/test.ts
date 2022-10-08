@@ -26,7 +26,7 @@ import round2 = require( './index' );
 	round2( 8.78 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	round2( true ); // $ExpectError
 	round2( false ); // $ExpectError
@@ -38,7 +38,7 @@ import round2 = require( './index' );
 	round2( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	round2(); // $ExpectError
 }

@@ -26,7 +26,7 @@ import rotl32 = require( './index' );
 	rotl32( 2147483649, 10 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument that is not a number...
+// The compiler throws an error if the function is provided a first argument that is not a number...
 {
 	rotl32( 'abc', 10 ); // $ExpectError
 	rotl32( true, 10 ); // $ExpectError
@@ -36,7 +36,7 @@ import rotl32 = require( './index' );
 	rotl32( ( x: number ): number => x, 10 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a number...
+// The compiler throws an error if the function is provided a second argument that is not a number...
 {
 	rotl32( 2147483649, 'abc' ); // $ExpectError
 	rotl32( 2147483649, true ); // $ExpectError
@@ -46,7 +46,7 @@ import rotl32 = require( './index' );
 	rotl32( 2147483649, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	rotl32(); // $ExpectError
 	rotl32( 2147483649 ); // $ExpectError

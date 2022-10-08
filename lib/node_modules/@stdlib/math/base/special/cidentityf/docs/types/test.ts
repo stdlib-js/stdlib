@@ -39,7 +39,7 @@ import cidentityf = require( './index' );
 	cidentityf( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	cidentityf(); // $ExpectError
 }

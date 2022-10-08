@@ -28,7 +28,7 @@ import Symbol = require( './index' );
 	Symbol( 'boop' ); // $ExpectType symbol
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	Symbol( 'beep', 'boop' ); // $ExpectError
 }

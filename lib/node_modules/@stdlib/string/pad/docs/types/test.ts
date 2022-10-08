@@ -82,7 +82,7 @@ import pad = require( './index' );
 	pad( 'abd', 10, { 'centerRight': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	pad(); // $ExpectError
 	pad( 'abc' ); // $ExpectError

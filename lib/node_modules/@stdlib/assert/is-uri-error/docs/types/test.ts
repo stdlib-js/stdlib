@@ -27,7 +27,7 @@ import isURIError = require( './index' );
 	isURIError( {} ); // $ExpectType boolean
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	isURIError(); // $ExpectError
 	isURIError( new URIError( 'beep' ), 123 ); // $ExpectError

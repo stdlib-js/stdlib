@@ -61,15 +61,13 @@ if ( IS_WINDOWS ) {
 var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
 var PATH_DELIMITER = require( '@stdlib/constants/path/delimiter' );
 
-var paths;
 var PATH;
-
 if ( IS_WINDOWS ) {
     PATH = 'C:\\Windows\\system32;C:\\Windows;C:\\Program Files\\node\\';
 } else {
     PATH = '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin';
 }
-paths = PATH.split( PATH_DELIMITER );
+var paths = PATH.split( PATH_DELIMITER );
 console.log( paths );
 // => [...]
 ```

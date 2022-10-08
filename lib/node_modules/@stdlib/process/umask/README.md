@@ -197,18 +197,15 @@ mask = umask( 0, opts );
 var lpad = require( '@stdlib/string/left-pad' );
 var umask = require( '@stdlib/process/umask' );
 
-var mask;
-var opts;
-
 // Print the process mask as an integer:
-mask = umask();
+var mask = umask();
 console.log( mask.toString() );
 
 // Print the process mask as an octal string:
 console.log( lpad( mask.toString(), 4, '0' ) );
 
 // Print the process mask using symbolic notation:
-opts = {
+var opts = {
     'symbolic': true
 };
 console.log( umask( opts ) );

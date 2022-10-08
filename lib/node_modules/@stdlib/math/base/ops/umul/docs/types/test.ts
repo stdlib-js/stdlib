@@ -26,7 +26,7 @@ import umul = require( './index' );
 	umul( 10, 4 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	umul( true, 4 ); // $ExpectError
 	umul( false, 4 ); // $ExpectError
@@ -49,7 +49,7 @@ import umul = require( './index' );
 	umul( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	umul(); // $ExpectError
 	umul( 10 ); // $ExpectError

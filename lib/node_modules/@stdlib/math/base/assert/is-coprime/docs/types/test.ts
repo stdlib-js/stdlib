@@ -26,7 +26,7 @@ import isCoprime = require( './index' );
 	isCoprime( 2, 4 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	isCoprime( true, 4 ); // $ExpectError
 	isCoprime( false, 4 ); // $ExpectError
@@ -37,7 +37,7 @@ import isCoprime = require( './index' );
 	isCoprime( ( x: number ): number => x, 4 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	isCoprime( 4, true ); // $ExpectError
 	isCoprime( 4, false ); // $ExpectError

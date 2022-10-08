@@ -70,13 +70,10 @@ bool = deepEqual( { 'a': 2 }, { 'a': [ 2 ] } );
 
 ```javascript
 var deepEqual = require( '@stdlib/assert/deep-equal' );
-var bool;
-var a;
-var b;
 
-a = [ true, false, true ];
-b = [ true, false, true ];
-bool = deepEqual( a, b );
+var a = [ true, false, true ];
+var b = [ true, false, true ];
+var bool = deepEqual( a, b );
 // returns true
 
 b.pop();

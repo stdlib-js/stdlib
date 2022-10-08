@@ -26,7 +26,7 @@ import mul = require( './index' );
 	mul( 8.0, 8.0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	mul( true, 5.0 ); // $ExpectError
 	mul( false, 5.0 ); // $ExpectError
@@ -38,7 +38,7 @@ import mul = require( './index' );
 	mul( ( x: number ): number => x, 5.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	mul( 5.0, true ); // $ExpectError
 	mul( 5.0, false ); // $ExpectError
@@ -50,7 +50,7 @@ import mul = require( './index' );
 	mul( 5.0, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	mul(); // $ExpectError
 	mul( 5.0 ); // $ExpectError

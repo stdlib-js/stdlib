@@ -26,7 +26,7 @@ import negafibonacci = require( './index' );
 	negafibonacci( -8 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	negafibonacci( true ); // $ExpectError
 	negafibonacci( false ); // $ExpectError
@@ -38,7 +38,7 @@ import negafibonacci = require( './index' );
 	negafibonacci( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	negafibonacci(); // $ExpectError
 }

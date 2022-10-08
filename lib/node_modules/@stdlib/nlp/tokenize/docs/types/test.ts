@@ -26,9 +26,8 @@ import tokenize = require( './index' );
 	tokenize( 'Hello World!' ); // $ExpectType string[]
 }
 
-// The function does not compile if provided values of invalid types...
-{
-	tokenize( true ); // $ExpectError
+// The compiler throws an error if the function is provided values of invalid types...
+rue ); // $ExpectError
 	tokenize( false ); // $ExpectError
 	tokenize( 3 ); // $ExpectError
 	tokenize( [] ); // $ExpectError
@@ -49,7 +48,7 @@ import tokenize = require( './index' );
 	tokenize( ( x: number ): number => x, true ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	tokenize(); // $ExpectError
 }

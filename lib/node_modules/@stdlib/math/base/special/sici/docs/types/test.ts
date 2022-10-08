@@ -30,7 +30,7 @@ import { Collection } from '@stdlib/types/object';
 	sici( [], 1.0 ); // $ExpectType Collection
 }
 
-// The function does not compile if provided an output array which is not a collection...
+// The compiler throws an error if the function is provided an output array which is not a collection...
 {
 	sici( 2, 1.0 ); // $ExpectError
 	sici( false, 1.0 ); // $ExpectError
@@ -38,7 +38,7 @@ import { Collection } from '@stdlib/types/object';
 	sici( {}, 1.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a last argument other than a number...
+// The compiler throws an error if the function is provided a last argument other than a number...
 {
 	sici( true ); // $ExpectError
 	sici( false ); // $ExpectError
@@ -60,7 +60,7 @@ import { Collection } from '@stdlib/types/object';
 	sici( out, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	sici(); // $ExpectError
 }

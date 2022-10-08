@@ -163,10 +163,6 @@ var randu = require( '@stdlib/random/iter/randu' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var iterForEach = require( '@stdlib/iter/for-each' );
 
-var rand;
-var it;
-var r;
-
 function assert( v ) {
     if ( isnan( v ) ) {
         throw new Error( 'should not be NaN' );
@@ -174,15 +170,16 @@ function assert( v ) {
 }
 
 // Create a seeded iterator for generating pseudorandom numbers:
-rand = randu({
+var rand = randu({
     'seed': 1234,
     'iter': 10
 });
 
 // Create an iterator which validates generated numbers:
-it = iterForEach( rand, assert );
+var it = iterForEach( rand, assert );
 
 // Perform manual iteration...
+var r;
 while ( true ) {
     r = it.next();
     if ( r.done ) {

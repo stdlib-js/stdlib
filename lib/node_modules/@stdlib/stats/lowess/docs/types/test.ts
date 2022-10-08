@@ -31,7 +31,7 @@ import lowess = require( './index' );
 	lowess( x, y, { 'sorted': true } ); // $ExpectType Output
 }
 
-// The function does not compile if provided a first argument that is not an array of numbers...
+// The compiler throws an error if the function is provided a first argument that is not an array of numbers...
 {
 	const y = [ 2.0, 3.5, 3.9 ];
 	lowess( 'abc', y ); // $ExpectError
@@ -44,7 +44,7 @@ import lowess = require( './index' );
 	lowess( ( x: number ): number => x, y ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not an array of numbers...
+// The compiler throws an error if the function is provided a second argument that is not an array of numbers...
 {
 	const x = [ 1.0, 2.0, 3.0 ];
 	lowess( x, 'abc' ); // $ExpectError
@@ -124,7 +124,7 @@ import lowess = require( './index' );
 	lowess( x, y, { 'sorted': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const x = [ 1.0, 2.0, 3.0 ];
 	const y = [ 2.0, 3.5, 3.9 ];

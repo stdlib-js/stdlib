@@ -26,7 +26,7 @@ import boxcox1p = require( './index' );
 	boxcox1p( 8, 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	boxcox1p( true, 3 ); // $ExpectError
 	boxcox1p( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import boxcox1p = require( './index' );
 	boxcox1p( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	boxcox1p(); // $ExpectError
 	boxcox1p( 3 ); // $ExpectError

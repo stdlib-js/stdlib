@@ -27,7 +27,7 @@ import float64ToFloat32 = require( './index' );
 	float64ToFloat32( 0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	float64ToFloat32( true ); // $ExpectError
 	float64ToFloat32( false ); // $ExpectError
@@ -37,7 +37,7 @@ import float64ToFloat32 = require( './index' );
 	float64ToFloat32( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	float64ToFloat32(); // $ExpectError
 }

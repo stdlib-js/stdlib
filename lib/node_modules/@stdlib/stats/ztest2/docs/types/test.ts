@@ -31,7 +31,7 @@ import ztest2 = require( './index' );
 	ztest2( x, y, 1.0, 2.0, { 'difference': 1 } ); // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is not a numeric array...
+// The compiler throws an error if the function is provided a first argument that is not a numeric array...
 {
 	const y = [ 4.88, 2.93, 2.96, 4.5, -0.0603, 4.62, 3.35, 2.98 ];
 	ztest2( 'abc', y, 1.0, 2.0 ); // $ExpectError
@@ -44,7 +44,7 @@ import ztest2 = require( './index' );
 	ztest2( ( x: number ): number => x, y, 1.0, 2.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a numeric array...
+// The compiler throws an error if the function is provided a second argument that is not a numeric array...
 {
 	const x = [ 2.66, 1.5, 3.25, 0.993, 2.31, 2.41, 1.76, 2.57, 2.62, 1.23 ];
 	ztest2( x, 'abc', 1.0, 2.0 ); // $ExpectError
@@ -57,7 +57,7 @@ import ztest2 = require( './index' );
 	ztest2( x, ( x: number ): number => x, 1.0, 2.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument that is not a number...
+// The compiler throws an error if the function is provided a third argument that is not a number...
 {
 	const x = [ 2.66, 1.5, 3.25, 0.993, 2.31, 2.41, 1.76, 2.57, 2.62, 1.23 ];
 	const y = [ 4.88, 2.93, 2.96, 4.5, -0.0603, 4.62, 3.35, 2.98 ];
@@ -71,7 +71,7 @@ import ztest2 = require( './index' );
 	ztest2( x, y, ( x: number ): number => x, 2.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a fourth argument that is not a number...
+// The compiler throws an error if the function is provided a fourth argument that is not a number...
 {
 	const x = [ 2.66, 1.5, 3.25, 0.993, 2.31, 2.41, 1.76, 2.57, 2.62, 1.23 ];
 	const y = [ 4.88, 2.93, 2.96, 4.5, -0.0603, 4.62, 3.35, 2.98 ];
@@ -139,7 +139,7 @@ import ztest2 = require( './index' );
 	ztest2( x, y, 1.0, 2.0, { 'alternative': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const x = [ 2.66, 1.5, 3.25, 0.993, 2.31, 2.41, 1.76, 2.57, 2.62, 1.23 ];
 	const y = [ 4.88, 2.93, 2.96, 4.5, -0.0603, 4.62, 3.35, 2.98 ];

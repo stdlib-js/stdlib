@@ -28,7 +28,7 @@ import subd2ind = require( './index' );
 	subd2ind( shape, 1, 2, 2, { 'order': 'row-major' } ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a first argument which is not an array-like object containing numbers...
 {
 	subd2ind( true, 1, 0 ); // $ExpectError
 	subd2ind( false, 1, 0 ); // $ExpectError
@@ -40,7 +40,7 @@ import subd2ind = require( './index' );
 	subd2ind( ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
-// The function does not compile if provided additional arguments which are not numbers followed by an optional options object...
+// The compiler throws an error if the function is provided additional arguments which are not numbers followed by an optional options object...
 {
 	const shape = [ 3, 3, 3 ];
 	subd2ind( shape, 'abc' ); // $ExpectError
@@ -77,7 +77,7 @@ import subd2ind = require( './index' );
 	subd2ind( shape, 1, 2, 2, { 'mode': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided no arguments...
+// The compiler throws an error if the function is provided no arguments...
 {
 	subd2ind(); // $ExpectError
 }

@@ -52,11 +52,8 @@ var sep = PATH_SEP_POSIX;
 ```javascript
 var PATH_SEP_POSIX = require( '@stdlib/constants/path/sep-posix' );
 
-var parts;
-var path;
-
-path = 'foo/bar/baz';
-parts = path.split( PATH_SEP_POSIX );
+var path = 'foo/bar/baz';
+var parts = path.split( PATH_SEP_POSIX );
 // returns ['foo','bar','baz']
 
 path = 'foo\\bar\\baz';

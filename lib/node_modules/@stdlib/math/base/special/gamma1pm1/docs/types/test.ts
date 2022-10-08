@@ -26,7 +26,7 @@ import gammap1m1 = require( './index' );
 	gammap1m1( 8 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	gammap1m1( true ); // $ExpectError
 	gammap1m1( false ); // $ExpectError
@@ -38,7 +38,7 @@ import gammap1m1 = require( './index' );
 	gammap1m1( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	gammap1m1(); // $ExpectError
 }

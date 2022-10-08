@@ -70,16 +70,12 @@ var bool = ( FLOAT64_HIGH_WORD_EXPONENT_MASK === 0x7ff00000 );
 var getHighWord = require( '@stdlib/number/float64/base/get-high-word' );
 var FLOAT64_HIGH_WORD_EXPONENT_MASK = require( '@stdlib/constants/float64/high-word-exponent-mask' );
 
-var out;
-var hi;
-var x;
-
-x = 11.5;
-hi = getHighWord( x ); // => 0 10000000010 01110000000000000000
+var x = 11.5;
+var hi = getHighWord( x ); // => 0 10000000010 01110000000000000000
 // returns 1076297728
 
 // Mask off all bits except for the exponent bits:
-out = hi & FLOAT64_HIGH_WORD_EXPONENT_MASK; // => 0 10000000010 00000000000000000000
+var out = hi & FLOAT64_HIGH_WORD_EXPONENT_MASK; // => 0 10000000010 00000000000000000000
 // returns 1075838976
 
 // Mask on the exponent bits and leave other bits unchanged:

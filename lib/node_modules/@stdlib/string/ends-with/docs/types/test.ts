@@ -28,7 +28,7 @@ import endsWith = require( './index' );
 	endsWith( 'abd', 'ab', 2 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided arguments having invalid types...
+// The compiler throws an error if the function is provided arguments having invalid types...
 {
 	endsWith( true, 'd' ); // $ExpectError
 	endsWith( false, 'd' ); // $ExpectError
@@ -52,7 +52,7 @@ import endsWith = require( './index' );
 	endsWith( 'abd', 'b', /[a-z]/ ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	endsWith(); // $ExpectError
 	endsWith( 'abc' ); // $ExpectError

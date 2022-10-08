@@ -71,8 +71,6 @@ var Symbol = require( '@stdlib/symbol/ctor' );
 var writableProperties = require( '@stdlib/utils/writable-properties' );
 
 var hasSymbols = hasSymbolSupport();
-var props;
-var obj;
 
 function Foo() {
     this.a = 'a';
@@ -99,11 +97,9 @@ if ( hasSymbols ) {
     Foo.prototype[ Symbol( 'c' ) ] = 'c';
 }
 
-obj = new Foo();
-props = writableProperties( obj );
-
-console.log( props );
-// e.g., => [ 'a', ... ]
+var obj = new Foo();
+var props = writableProperties( obj );
+// e.g., returns [ 'a', ... ]
 ```
 
 </section>

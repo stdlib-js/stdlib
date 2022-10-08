@@ -26,7 +26,7 @@ import median = require( './index' );
 	median( 8, 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	median( true, 3 ); // $ExpectError
 	median( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import median = require( './index' );
 	median( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	median(); // $ExpectError
 	median( 3 ); // $ExpectError

@@ -30,7 +30,7 @@ import { Collection } from '@stdlib/types/object';
 	rempio2( 128, y ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number as its first argument...
+// The compiler throws an error if the function is provided a value other than a number as its first argument...
 {
 	const y: Collection = [ 0.0, 0.0 ];
 	rempio2( true, y ); // $ExpectError
@@ -41,7 +41,7 @@ import { Collection } from '@stdlib/types/object';
 	rempio2( ( x: number ): number => x, y ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than a collection as its second argument...
+// The compiler throws an error if the function is provided a value other than a collection as its second argument...
 {
 	rempio2( 128, true ); // $ExpectError
 	rempio2( 128, false ); // $ExpectError
@@ -49,7 +49,7 @@ import { Collection } from '@stdlib/types/object';
 	rempio2( 128, {} ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	rempio2(); // $ExpectError
 	rempio2( 3 ); // $ExpectError

@@ -26,7 +26,7 @@ import sqrt = require( './index' );
 	sqrt( 9 >>> 0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	sqrt( true ); // $ExpectError
 	sqrt( false ); // $ExpectError
@@ -38,7 +38,7 @@ import sqrt = require( './index' );
 	sqrt( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	sqrt(); // $ExpectError
 }

@@ -26,7 +26,7 @@ import fromBinaryStringUint16 = require( './index' );
 	fromBinaryStringUint16( '0000000000000010' ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	fromBinaryStringUint16( true ); // $ExpectError
 	fromBinaryStringUint16( false ); // $ExpectError
@@ -36,7 +36,7 @@ import fromBinaryStringUint16 = require( './index' );
 	fromBinaryStringUint16( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	fromBinaryStringUint16(); // $ExpectError
 }

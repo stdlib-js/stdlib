@@ -28,7 +28,7 @@ import substringBefore = require( './index' );
 	substringBefore( 'beep boop', '' ); // $ExpectType string
 }
 
-// The function does not compile if provided arguments having invalid types...
+// The compiler throws an error if the function is provided arguments having invalid types...
 {
 	substringBefore( true, 'd' ); // $ExpectError
 	substringBefore( false, 'd' ); // $ExpectError
@@ -45,7 +45,7 @@ import substringBefore = require( './index' );
 	substringBefore( 'abc', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	substringBefore(); // $ExpectError
 	substringBefore( 'abc' ); // $ExpectError

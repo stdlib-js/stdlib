@@ -26,7 +26,7 @@ import mean = require( './index' );
 	mean( 0, 4, 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than three numbers...
+// The compiler throws an error if the function is provided values other than three numbers...
 {
 	mean( true, 3, 2 ); // $ExpectError
 	mean( false, 2, 1.5 ); // $ExpectError
@@ -50,7 +50,7 @@ import mean = require( './index' );
 	mean( 8, 16, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	mean(); // $ExpectError
 	mean( 3 ); // $ExpectError

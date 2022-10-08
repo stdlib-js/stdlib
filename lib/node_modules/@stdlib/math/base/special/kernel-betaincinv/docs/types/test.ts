@@ -26,7 +26,7 @@ import kernelBetaincinv = require( './index' );
 	kernelBetaincinv( 3.0, 3.0, 0.2, 0.8 ); // $ExpectType number[]
 }
 
-// The function does not compile if provided values other than four numbers...
+// The compiler throws an error if the function is provided values other than four numbers...
 {
 	kernelBetaincinv( true, 3, 0.2, 0.8 ); // $ExpectError
 	kernelBetaincinv( false, 2, 0.2, 0.8 ); // $ExpectError
@@ -57,7 +57,7 @@ import kernelBetaincinv = require( './index' );
 	kernelBetaincinv( 8, 3, 0.8, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an insufficient number of arguments...
+// The compiler throws an error if the function is provided an insufficient number of arguments...
 {
 	kernelBetaincinv(); // $ExpectError
 	kernelBetaincinv( 3 ); // $ExpectError

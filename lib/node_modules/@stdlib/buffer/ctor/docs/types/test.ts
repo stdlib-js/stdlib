@@ -31,7 +31,7 @@ import Buffer = require( './index' );
 	new Buffer( [ 1, 2, 3, 4 ] ); // $ExpectType Buffer
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	new Buffer(); // $ExpectError
 }

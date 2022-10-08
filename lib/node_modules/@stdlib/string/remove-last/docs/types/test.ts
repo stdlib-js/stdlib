@@ -26,7 +26,7 @@ import removeLast = require( './index' );
 	removeLast( 'abc' ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	removeLast( true ); // $ExpectError
 	removeLast( false ); // $ExpectError
@@ -38,7 +38,7 @@ import removeLast = require( './index' );
 	removeLast( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a number...
+// The compiler throws an error if the function is provided a second argument that is not a number...
 {
 	removeLast( 'abc', true ); // $ExpectError
 	removeLast( 'abc', false ); // $ExpectError
@@ -50,7 +50,7 @@ import removeLast = require( './index' );
 	removeLast( 'abc', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	removeLast(); // $ExpectError
 }

@@ -26,7 +26,7 @@ import mode = require( './index' );
 	mode( 0, 4, 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than three numbers...
+// The compiler throws an error if the function is provided values other than three numbers...
 {
 	mode( true, 3, 2 ); // $ExpectError
 	mode( false, 2, 1.5 ); // $ExpectError
@@ -50,7 +50,7 @@ import mode = require( './index' );
 	mode( 8, 16, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	mode(); // $ExpectError
 	mode( 3 ); // $ExpectError

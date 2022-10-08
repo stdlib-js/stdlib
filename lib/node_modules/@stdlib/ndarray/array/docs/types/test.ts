@@ -29,7 +29,7 @@ import array = require( './index' );
 	array( { 'buffer': [ [ 1, 2 ], [ 3, 4 ] ] } ); // $ExpectType ndarray
 }
 
-// The function does not compile if provided a first argument which is not an array, buffer, or options object...
+// The compiler throws an error if the function is provided a first argument which is not an array, buffer, or options object...
 {
 	array( true ); // $ExpectError
 	array( false ); // $ExpectError
@@ -38,7 +38,7 @@ import array = require( './index' );
 	array( null ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not an options object...
+// The compiler throws an error if the function is provided a second argument which is not an options object...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	array( buffer, 'abc' ); // $ExpectError
@@ -249,7 +249,7 @@ import array = require( './index' );
 	array( { 'readonly': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	array(); // $ExpectError

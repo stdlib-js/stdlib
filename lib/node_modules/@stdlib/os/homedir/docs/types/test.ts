@@ -26,7 +26,7 @@ import homedir = require( './index' );
 	homedir(); // $ExpectType string | null
 }
 
-// The function does not compile if provided arguments...
+// The compiler throws an error if the function is provided arguments...
 {
 	homedir( 'appname/config' ); // $ExpectError
 	homedir( 'appname/config', 2 ); // $ExpectError

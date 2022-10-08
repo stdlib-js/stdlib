@@ -29,7 +29,7 @@ import prevGraphemeClusterBreak = require( './index' );
 	prevGraphemeClusterBreak( '🌷', 0 ); // $ExpectType number
 }
 
-// The function does not compile if provided incorrect arguments...
+// The compiler throws an error if the function is provided incorrect arguments...
 {
 	prevGraphemeClusterBreak( false, 3 ); // $ExpectError
 	prevGraphemeClusterBreak( {}, 3 ); // $ExpectError
@@ -41,7 +41,7 @@ import prevGraphemeClusterBreak = require( './index' );
 	prevGraphemeClusterBreak( 'string', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	prevGraphemeClusterBreak(); // $ExpectError
 }

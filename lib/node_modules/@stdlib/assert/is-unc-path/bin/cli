@@ -29,6 +29,8 @@ var trim = require( '@stdlib/string/trim' );
 var stdin = require( '@stdlib/process/read-stdin' );
 var stdinStream = require( '@stdlib/streams/node/stdin' );
 var RE_EOL = require( '@stdlib/regexp/eol' ).REGEXP;
+var isRegExpString = require( '@stdlib/assert/is-regexp-string' );
+var reFromString = require( '@stdlib/utils/regexp-from-string' );
 var isUNCPath = require( './../lib' );
 
 
@@ -41,6 +43,7 @@ var isUNCPath = require( './../lib' );
 * @returns {void}
 */
 function main() {
+	var split;
 	var flags;
 	var args;
 	var cli;
@@ -65,6 +68,14 @@ function main() {
 
 	// Check if we are receiving data from `stdin`...
 	if ( !stdinStream.isTTY ) {
+		if ( flags.split ) {
+			if ( !isRegExpString( flags.split ) ) {
+				flags.split = '/'+flags.split+'/';
+			}
+			split = reFromString( flags.split );
+		} else {
+			split = RE_EOL;
+		}
 		return stdin( onRead );
 	}
 	console.log( isUNCPath( trim( args[ 0 ] ) ) ); // eslint-disable-line no-console
@@ -83,7 +94,12 @@ function main() {
 		if ( error ) {
 			return cli.error( error );
 		}
-		lines = data.toString().split( RE_EOL );
+		lines = data.toString().split( split );
+
+		// Remove any trailing separators (e.g., trailing newline)...
+		if ( lines[ lines.length-1 ] === '' ) {
+			lines.pop();
+		}
 		for ( i = 0; i < lines.length; i++ ) {
 			console.log( isUNCPath( lines[ i ] ) ); // eslint-disable-line no-console
 		}

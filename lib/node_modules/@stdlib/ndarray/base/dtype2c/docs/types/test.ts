@@ -27,7 +27,7 @@ import dtype2c = require( './index' );
 	dtype2c( 'generic' ); // $ExpectType string | null
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	dtype2c(); // $ExpectError
 }

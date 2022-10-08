@@ -70,16 +70,12 @@ var bool = ( FLOAT64_HIGH_WORD_SIGNIFICAND_MASK === 0x000fffff );
 var getHighWord = require( '@stdlib/number/float64/base/get-high-word' );
 var FLOAT64_HIGH_WORD_SIGNIFICAND_MASK = require( '@stdlib/constants/float64/high-word-significand-mask' );
 
-var out;
-var hi;
-var x;
-
-x = 11.5;
-hi = getHighWord( x ); // => 0 10000000010 01110000000000000000
+var x = 11.5;
+var hi = getHighWord( x ); // => 0 10000000010 01110000000000000000
 // returns 1076297728
 
 // Mask off all bits except for the significand bits:
-out = hi & FLOAT64_HIGH_WORD_SIGNIFICAND_MASK; // => 0 00000000000 01110000000000000000
+var out = hi & FLOAT64_HIGH_WORD_SIGNIFICAND_MASK; // => 0 00000000000 01110000000000000000
 // returns 458752
 
 // Mask on the significand bits and leave other bits unchanged:

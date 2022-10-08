@@ -30,7 +30,7 @@ import sub2ind = require( './index' );
 	sub2ind( shape, strides, offset, 1, 2, 2, mode ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a first argument which is not an array-like object containing numbers...
 {
 	const strides = [ 10, 1 ];
 	const offset = 10;
@@ -45,7 +45,7 @@ import sub2ind = require( './index' );
 	sub2ind( ( x: number ): number => x, strides, offset, 0, 0, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a second argument which is not an array-like object containing numbers...
 {
 	const shape = [ 3, 3, 3 ];
 	const offset = 10;
@@ -60,7 +60,7 @@ import sub2ind = require( './index' );
 	sub2ind( shape, ( x: number ): number => x, offset, 0, 0, mode ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not a number...
+// The compiler throws an error if the function is provided a third argument which is not a number...
 {
 	const shape = [ 10, 10 ];
 	const strides = [ 10, 1 ];
@@ -75,7 +75,7 @@ import sub2ind = require( './index' );
 	sub2ind( shape, strides, ( x: number ): number => x, 0, 0, mode ); // $ExpectError
 }
 
-// The function does not compile if provided further arguments which are not numbers followed by an array of strings...
+// The compiler throws an error if the function is provided further arguments which are not numbers followed by an array of strings...
 {
 	const shape = [ 3, 3, 3 ];
 	const strides = [ 9, 3, 1 ];
@@ -89,7 +89,7 @@ import sub2ind = require( './index' );
 	sub2ind( shape, strides, offset, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	sub2ind(); // $ExpectError
 	sub2ind( [ 10, 10 ] ); // $ExpectError

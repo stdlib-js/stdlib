@@ -27,7 +27,7 @@ import kernelTan = require( './index' );
 	kernelTan( 3.141592653589793 / 4.0, 0.0, -1 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than numbers for the first two arguments...
+// The compiler throws an error if the function is provided values other than numbers for the first two arguments...
 {
 	kernelTan( true, 3, 1 ); // $ExpectError
 	kernelTan( false, 2, 1 ); // $ExpectError
@@ -44,7 +44,7 @@ import kernelTan = require( './index' );
 	kernelTan( 8, ( x: number ): number => x, -1 ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than `-1` or `1` as its last argument...
+// The compiler throws an error if the function is provided a value other than `-1` or `1` as its last argument...
 {
 	kernelTan( 0.664, 5.288e-17, 10 ); // $ExpectError
 	kernelTan( 0.664, 5.288e-17, 'abc' ); // $ExpectError
@@ -55,7 +55,7 @@ import kernelTan = require( './index' );
 	kernelTan( 0.664, 5.288e-17, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	kernelTan(); // $ExpectError
 	kernelTan( 3 ); // $ExpectError

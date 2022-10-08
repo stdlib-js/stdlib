@@ -26,7 +26,7 @@ import floor10 = require( './index' );
 	floor10( 3.141592653589793 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	floor10( true ); // $ExpectError
 	floor10( false ); // $ExpectError
@@ -38,7 +38,7 @@ import floor10 = require( './index' );
 	floor10( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	floor10(); // $ExpectError
 }

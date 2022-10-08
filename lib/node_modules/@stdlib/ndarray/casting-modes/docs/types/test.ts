@@ -26,7 +26,7 @@ import modes = require( './index' );
 	modes(); // $ExpectType string[]
 }
 
-// The function does not compile if provided any arguments...
+// The compiler throws an error if the function is provided any arguments...
 {
 	modes( 9 ); // $ExpectError
 }

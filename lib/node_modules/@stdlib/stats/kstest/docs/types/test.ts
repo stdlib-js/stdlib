@@ -28,7 +28,7 @@ import kstest = require( './index' );
 	kstest( x, 'uniform', 0.0, 1.0, { 'alpha': 0.1 } );  // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is not a numeric array...
+// The compiler throws an error if the function is provided a first argument that is not a numeric array...
 {
 	kstest( 'abc', 'uniform', 0, 1 ); // $ExpectError
 	kstest( true, 'uniform', 0, 1 ); // $ExpectError
@@ -40,7 +40,7 @@ import kstest = require( './index' );
 	kstest( ( x: number ): number => x, 'uniform', 0, 1 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a function or string...
+// The compiler throws an error if the function is provided a second argument that is not a function or string...
 {
 	const x = [ 0.7, -1.6, -0.2, -1.2, -0.1, 3.4, 3.7, 0.8, 0.0, 2.0 ];
 	kstest( x, true ); // $ExpectError
@@ -99,7 +99,7 @@ import kstest = require( './index' );
 	kstest( x, 'normal', 0.0, 1.0, { 'sorted': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an insufficient number of arguments...
+// The compiler throws an error if the function is provided an insufficient number of arguments...
 {
 	const x = [ 0.7, -1.6, -0.2, -1.2, -0.1, 3.4, 3.7, 0.8, 0.0, 2.0 ];
 	kstest(); // $ExpectError

@@ -26,7 +26,7 @@ import risingFactorial = require( './index' );
 	risingFactorial( 0.9, 5 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	risingFactorial( true, 3 ); // $ExpectError
 	risingFactorial( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import risingFactorial = require( './index' );
 	risingFactorial( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	risingFactorial(); // $ExpectError
 	risingFactorial( 3 ); // $ExpectError

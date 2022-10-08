@@ -31,7 +31,7 @@ import ttest = require( './index' );
 	ttest( x, y, { 'alpha': 0.1 } ); // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is not a numeric array...
+// The compiler throws an error if the function is provided a first argument that is not a numeric array...
 {
 	const y = [ 5.0, 5.0, 5.5, 7.0, 5.8 ];
 	ttest( 'abc' ); // $ExpectError
@@ -53,7 +53,7 @@ import ttest = require( './index' );
 	ttest( ( x: number ): number => x, y ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is neither a numeric array nor an options object...
+// The compiler throws an error if the function is provided a second argument that is neither a numeric array nor an options object...
 {
 	const x = [ 4.0, 4.0, 6.0, 6.0, 5.0 ];
 	ttest( x, 'abc' ); // $ExpectError
@@ -146,7 +146,7 @@ import ttest = require( './index' );
 	ttest( x, y, { 'mu': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const x = [ 4.0, 4.0, 6.0, 6.0, 5.0 ];
 	const y = [ 5.0, 5.0, 5.5, 7.0, 5.8 ];
