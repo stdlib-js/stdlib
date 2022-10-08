@@ -26,8 +26,43 @@ on:
     inputs:
       num:
         type: number
-        description: Number of files to lint
+        description: Maximum number of files to lint
         default: 100
+      pattern:
+        description: Regular expression for files to include
+        default: .*
+      javascript:
+        type: boolean
+        description: Boolean flag indicating whether to lint JavaScript files
+        default: true
+      markdown:
+        type: boolean
+        description: Boolean flag indicating whether to lint Markdown files
+        default: true
+      json:
+        type: boolean
+        description: Boolean flag indicating whether to lint JSON files
+        default: true
+      repl:
+        type: boolean
+        description: Boolean flag indicating whether to lint REPL files
+        default: true
+      r:
+        type: boolean
+        description: Boolean flag indicating whether to lint R files
+        default: true
+      c:
+        type: boolean
+        description: Boolean flag indicating whether to lint C files
+        default: true
+      typescript:
+        type: boolean
+        description: Boolean flag indicating whether to lint TypeScript files
+        default: true
+      python:
+        type: boolean
+        description: Boolean flag indicating whether to lint Python files
+        default: true
 
   # Trigger the workflow every 24 hours:
   schedule:
@@ -83,7 +118,55 @@ jobs:
       - name: 'Pick random files from the `lib/node_modules/@stdlib` directory'
         id: random-files
         run: |
-          files=$(find lib/node_modules/@stdlib -type f \( -name "*.json" -o -name "*.js" \) | shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ' ')
+          name=""
+          if [ "${{ github.event.inputs.javascript }}" != "false" ]; then
+            name="${name} -name "*.js"
+          fi
+          if [ -n "${name}" ]; then
+            name="${name} -o"
+          fi
+          if [ "${{ github.event.inputs.markdown }}" != "false" ]; then
+            name="${name} -name "*.md"
+          fi
+          if [ -n "${name}" ]; then
+            name="${name} -o"
+          fi
+          if [ "${{ github.event.inputs.json }}" != "false" ]; then
+            name="${name} -name "*.json"
+          fi
+          if [ -n "${name}" ]; then
+            name="${name} -o"
+          fi
+          if [ "${{ github.event.inputs.repl }}" != "false" ]; then
+            name="${name} -name "*.repl"
+          fi
+          if [ -n "${name}" ]; then
+            name="${name} -o"
+          fi
+          if [ "${{ github.event.inputs.r }}" != "false" ]; then
+            name="${name} -name "*.R"
+          fi
+          if [ -n "${name}" ]; then
+            name="${name} -o"
+          fi
+          if [ "${{ github.event.inputs.c }}" != "false" ]; then
+            name="${name} -name "*.c"
+          fi
+          if [ -n "${name}" ]; then
+            name="${name} -o"
+          fi
+          if [ "${{ github.event.inputs.typescript }}" != "false" ]; then
+            name="${name} -name "*.ts"
+          fi
+          if [ -n "${name}" ]; then
+            name="${name} -o"
+          fi
+          if [ "${{ github.event.inputs.python }}" != "false" ]; then
+            name="${name} -name "*.py"
+          fi
+          files=$(find lib/node_modules/@stdlib -type f \( ${name} \) |
+            grep -vE "${{ github.event.inputs.pattern }}" |
+            shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ' ')
           echo "::set-output name=files::$files"
 
       # Lint file names
@@ -100,7 +183,7 @@ jobs:
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
-        if: success() || failure()
+        if: ${{ github.event.inputs.markdown }} && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
@@ -109,7 +192,7 @@ jobs:
 
       # Lint package.json files:
       - name: 'Lint package.json files'
-        if: success() || failure()
+        if: ${{ github.event.inputs.json }} && ( success() || failure() )
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -124,7 +207,7 @@ jobs:
 
       # Lint REPL help files...
       - name: 'Lint REPL help files'
-        if: success() || failure()
+        if: ${{ github.event.inputs.repl }} && ( success() || failure() )
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -139,7 +222,7 @@ jobs:
 
       # Lint JavaScript files:
       - name: 'Lint JavaScript files'
-        if: success() || failure()
+        if: ${{ github.event.inputs.javascript }} && ( success() || failure() )
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -156,36 +239,36 @@ jobs:
           # Lint JavaScript source files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FILES="${files}"
+            make lint-javascript-files FAST_FAIL=0 FILES="${files}"
           fi
 
           # Lint JavaScript command-line interfaces...
           file=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ')
           if [[ -n "${file}" ]]; then
-            make lint-javascript-files FILES="${file}"
+            make lint-javascript-files FAST_FAIL=0 FILES="${file}"
           fi
 
           # Lint JavaScript example files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
+            make lint-javascript-files FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
           fi
 
           # Lint JavaScript test files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
+            make lint-javascript-files FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
           fi
 
           # Lint JavaScript benchmark files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
+            make lint-javascript-files FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
           fi
 
       # Lint Python files:
       - name: 'Lint Python files'
-        if: success() || failure()
+        if: ${{ github.event.inputs.python }} && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.py$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
@@ -194,7 +277,7 @@ jobs:
 
       # Lint R files:
       - name: 'Lint R files'
-        if: success() || failure()
+        if: ${{ github.event.inputs.r }} && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
@@ -203,7 +286,7 @@ jobs:
 
       # Lint C files:
       - name: 'Lint C files'
-        if: success() || failure()
+        if: ${{ github.event.inputs.c }} && ( success() || failure() )
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -243,7 +326,7 @@ jobs:
 
       # Lint TypeScript declaration files:
       - name: 'Lint TypeScript declaration files'
-        if: success() || failure()
+        if: ${{ github.event.inputs.typescript }} && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
@@ -252,7 +335,7 @@ jobs:
 
       # Lint license headers:
       - name: 'Lint license headers'
-        if: success() || failure()
+        if: ${{ github.event.inputs.license }} && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}")
           if [[ -n "${files}" ]]; then
