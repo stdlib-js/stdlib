@@ -23,6 +23,11 @@ name: lint_random_files
 on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
+    inputs:
+      num:
+        type: number
+        description: Number of files to lint
+        default: 100
 
   # Trigger the workflow every 24 hours:
   schedule:
@@ -78,7 +83,7 @@ jobs:
       - name: 'Pick random files from the `lib/node_modules/@stdlib` directory'
         id: random-files
         run: |
-          files=$(find lib/node_modules/@stdlib -type f \( -name "*.json" -o -name "*.js" \) | shuf -n 50 | tr '\n' ' ')
+          files=$(find lib/node_modules/@stdlib -type f \( -name "*.json" -o -name "*.js" \) | shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ' ')
           echo "::set-output name=files::$files"
 
       # Lint file names
@@ -112,7 +117,7 @@ jobs:
           # Define the path to a utility for linting package.json files:
           lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
 
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$')
           if [ -n "${files}" ]; then
             echo "${files}" | "${lint_package_json}"
           fi
