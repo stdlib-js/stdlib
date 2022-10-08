@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: lint_random_packages
+name: lint_random_files
 
 # Workflow triggers:
 on:
@@ -78,7 +78,7 @@ jobs:
       - name: 'Pick random files from the `lib/node_modules/@stdlib` directory'
         id: random-files
         run: |
-          files=$(find lib/node_modules/@stdlib -type f \( -name "*.json" -o -name "*.js" \) | shuf -n 50)
+          files=$(find lib/node_modules/@stdlib -type f \( -name "*.json" -o -name "*.js" \) | shuf -n 50 | tr '\n' ' ')
           echo "::set-output name=files::$files"
 
       # Lint file names
@@ -91,13 +91,13 @@ jobs:
           lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
           # Lint filenames:
-          echo "${{ steps.random-files.outputs.files }}" || "${lint_filenames}"
+          echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' || "${lint_filenames}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | grep -E '\.md$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
             make lint-markdown-files FILES="${files}"
           fi
@@ -112,7 +112,7 @@ jobs:
           # Define the path to a utility for linting package.json files:
           lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
 
-          files=$(echo "${{ steps.random-files.outputs.files }}" | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
             echo "${files}" | "${lint_package_json}"
           fi
@@ -127,7 +127,7 @@ jobs:
           # Define the path to a utility for linting REPL help files:
           lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-help/bin/cli"
 
-          files=$(echo ${{ steps.random-files.outputs.files }} | grep 'repl\.txt$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep 'repl\.txt$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
             echo "${files}" | "${lint_repl_help}"
           fi
@@ -149,31 +149,31 @@ jobs:
           eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
 
           # Lint JavaScript source files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}"
           fi
 
           # Lint JavaScript command-line interfaces...
-          file=$(echo ${{ steps.random-files.outputs.files }} | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ')
+          file=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ')
           if [[ -n "${file}" ]]; then
             make lint-javascript-files FILES="${file}"
           fi
 
           # Lint JavaScript example files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | grep '/examples/.*\.js$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
           fi
 
           # Lint JavaScript test files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | grep '/test/.*\.js$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
           fi
 
           # Lint JavaScript benchmark files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
           fi
@@ -182,7 +182,7 @@ jobs:
       - name: 'Lint Python files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | grep -E '\.py$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.py$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-python-files FILES="${files}"
           fi
@@ -191,7 +191,7 @@ jobs:
       - name: 'Lint R files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | grep -E '\.R$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-r-files FILES="${files}"
           fi
@@ -213,13 +213,13 @@ jobs:
           cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
           # Lint C source files...
-          files=$(echo "${{ steps.random-files.outputs.files }}" | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}"
           fi
 
           # Lint C example files...
-          files=$(echo "${{ steps.random-files.outputs.files }}" | grep '/examples/.*\.c$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}"
           fi
