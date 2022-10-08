@@ -33,35 +33,35 @@ on:
         default: .*
       javascript:
         type: boolean
-        description: Boolean flag indicating whether to lint JavaScript files
+        description: Lint JavaScript files
         default: true
       markdown:
         type: boolean
-        description: Boolean flag indicating whether to lint Markdown files
+        description: Lint Markdown files
         default: true
       json:
         type: boolean
-        description: Boolean flag indicating whether to lint JSON files
+        description: Lint JSON files
         default: true
       repl:
         type: boolean
-        description: Boolean flag indicating whether to lint REPL files
+        description: Lint REPL files
         default: true
       r:
         type: boolean
-        description: Boolean flag indicating whether to lint R files
+        description: Lint R files
         default: true
       c:
         type: boolean
-        description: Boolean flag indicating whether to lint C files
+        description: Lint C files
         default: true
       typescript:
         type: boolean
-        description: Boolean flag indicating whether to lint TypeScript files
+        description: Lint TypeScript files
         default: true
       python:
         type: boolean
-        description: Boolean flag indicating whether to lint Python files
+        description: Lint Python files
         default: true
 
   # Trigger the workflow every 24 hours:
@@ -120,49 +120,49 @@ jobs:
         run: |
           name=""
           if [ "${{ github.event.inputs.javascript }}" != "false" ]; then
-            name="${name} -name "*.js"
+            name="${name} -name \"*.js\""
           fi
           if [ -n "${name}" ]; then
             name="${name} -o"
           fi
           if [ "${{ github.event.inputs.markdown }}" != "false" ]; then
-            name="${name} -name "*.md"
+            name="${name} -name \"*.md\""
           fi
           if [ -n "${name}" ]; then
             name="${name} -o"
           fi
           if [ "${{ github.event.inputs.json }}" != "false" ]; then
-            name="${name} -name "*.json"
+            name="${name} -name \"*.json\""
           fi
           if [ -n "${name}" ]; then
             name="${name} -o"
           fi
           if [ "${{ github.event.inputs.repl }}" != "false" ]; then
-            name="${name} -name "*.repl"
+            name="${name} -name \"*.repl\""
           fi
           if [ -n "${name}" ]; then
             name="${name} -o"
           fi
           if [ "${{ github.event.inputs.r }}" != "false" ]; then
-            name="${name} -name "*.R"
+            name="${name} -name \"*.R\""
           fi
           if [ -n "${name}" ]; then
             name="${name} -o"
           fi
           if [ "${{ github.event.inputs.c }}" != "false" ]; then
-            name="${name} -name "*.c"
+            name="${name} -name \"*.c\""
           fi
           if [ -n "${name}" ]; then
             name="${name} -o"
           fi
           if [ "${{ github.event.inputs.typescript }}" != "false" ]; then
-            name="${name} -name "*.ts"
+            name="${name} -name \"*.ts\""
           fi
           if [ -n "${name}" ]; then
             name="${name} -o"
           fi
           if [ "${{ github.event.inputs.python }}" != "false" ]; then
-            name="${name} -name "*.py"
+            name="${name} -name \"*.py\""
           fi
           files=$(find lib/node_modules/@stdlib -type f \( ${name} \) |
             grep -vE "${{ github.event.inputs.pattern }}" |
