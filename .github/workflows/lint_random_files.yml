@@ -189,7 +189,7 @@ jobs:
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
-            make lint-markdown-files FILES="${files}"
+            make lint-markdown-files FAST_FAIL=0 FILES="${files}"
           fi
 
       # Lint package.json files:
@@ -278,8 +278,14 @@ jobs:
             make install-deps-python
 
             # Lint Python files:
-            make lint-python-files FILES="${files}"
+            make lint-python-files FAST_FAIL=0 FILES="${files}"
           fi
+
+      # Setup R:
+      - name: 'Setup R'
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.2.2' # The R version to download (if necessary) and use.
 
       # Lint R files:
       - name: 'Lint R files'
@@ -291,7 +297,7 @@ jobs:
             make install-deps-r
 
             # Lint R files:
-            make lint-r-files FILES="${files}"
+            make lint-r-files FAST_FAIL=0 FILES="${files}"
           fi
 
       # Lint C files:
@@ -343,7 +349,7 @@ jobs:
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make TYPESCRIPT_DECLARATIONS_LINTER=dtslint lint-typescript-declarations-files FILES="${files}"
+            make TYPESCRIPT_DECLARATIONS_LINTER=dtslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}"
           fi
 
       # Lint license headers:
