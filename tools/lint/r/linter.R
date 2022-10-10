@@ -107,7 +107,7 @@ linters <- lintr::linters_with_defaults( default = list(),
 	trailing_blank_lines_linter = lintr::trailing_blank_lines_linter,
 
 	# Never allow trailing whitespace characters:
-	trailing_whitespace_linter = lintr::trailing_whitespace_linter
+	trailing_whitespace_linter = lintr::trailing_whitespace_linter,
 
 	# Avoid the symbols `T` and `F` for `TRUE` and `FALSE`, respectively:
 	T_and_F_symbol_linter = lintr::T_and_F_symbol_linter,
