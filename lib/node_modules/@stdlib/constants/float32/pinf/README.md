@@ -54,7 +54,7 @@ var bool = ( FLOAT32_PINF === Infinity );
 var FLOAT32_PINF = require( '@stdlib/constants/float32/pinf' );
 
 console.log( FLOAT32_PINF );
-// => +Infinity
+// => Infinity
 ```
 
 </section>

@@ -39,9 +39,9 @@ if ( n == 0 ) {
 }
 
 # Specify which linters to use...
-linters <- lintr::with_defaults( default = list(),
+linters <- lintr::linters_with_defaults( default = list(),
 	# Check that no absolute paths are used:
-	absolute_paths_linter = lintr::absolute_paths_linter,
+	absolute_path_linter = lintr::absolute_path_linter,
 
 	# Always use `<-` for assignment:
 	assignment_linter = lintr::assignment_linter,

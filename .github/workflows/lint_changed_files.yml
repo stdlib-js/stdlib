@@ -181,6 +181,10 @@ jobs:
         run: |
           files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.py$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
+            # Install Python dependencies:
+            make install-deps-python
+
+            # Lint Python files:
             make lint-python-files FILES="${files}"
           fi
 
@@ -190,6 +194,10 @@ jobs:
         run: |
           files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
+             # Install R dependencies:
+            make install-deps-r
+
+            # Lint R files:
             make lint-r-files FILES="${files}"
           fi
 
@@ -233,13 +241,13 @@ jobs:
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}"
           fi
 
-      # Lint TypeScript declaration files:
-      - name: 'Lint TypeScript declaration files'
+      # Lint TypeScript declarations files:
+      - name: 'Lint TypeScript declarations files'
         if: success() || failure()
         run: |
           files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-typescript-declaration-files FILES="${files}"
+            make lint-typescript-declarations-files FILES="${files}"
           fi
 
       # Lint license headers:

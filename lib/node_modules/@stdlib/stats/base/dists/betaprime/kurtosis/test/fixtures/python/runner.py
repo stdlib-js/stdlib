@@ -61,7 +61,7 @@ def gen(alpha, beta, name):
     filepath = os.path.join(DIR, name)
 
     # Write the data to the output filepath as JSON:
-    with open(filepath, "w") as outfile:
+    with open(filepath, "w", encoding="utf-8") as outfile:
         json.dump(data, outfile)
 
 
