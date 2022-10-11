@@ -18,12 +18,12 @@
 
 /* tslint:disable:no-unused-expression */
 
-import int32 = require( './index' );
+import ns = require( './index' );
 
 
 // TESTS //
 
 // The exported value is the expected interface...
 {
-	int32; // $ExpectType Namespace
+	ns; // $ExpectType Namespace
 }

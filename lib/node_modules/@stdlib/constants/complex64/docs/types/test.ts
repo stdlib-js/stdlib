@@ -18,12 +18,12 @@
 
 /* tslint:disable:no-unused-expression */
 
-import complex64 = require( './index' );
+import ns = require( './index' );
 
 
 // TESTS //
 
 // The exported value is the expected interface...
 {
-	complex64; // $ExpectType Namespace
+	ns; // $ExpectType Namespace
 }
