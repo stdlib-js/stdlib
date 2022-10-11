@@ -39,15 +39,12 @@ if ( n == 0 ) {
 }
 
 # Specify which linters to use...
-linters <- lintr::linters_with_defaults( default = list(),
+linters <- lintr::linters_with_defaults( defaults = list(),
 	# Check that no absolute paths are used:
 	absolute_path_linter = lintr::absolute_path_linter,
 
 	# Always use `<-` for assignment:
 	assignment_linter = lintr::assignment_linter,
-
-	# Closed curly braces should always be on their own line unless they follow an `else`:
-	closed_curly_linter = lintr::closed_curly_linter( allow_single_line = FALSE ),
 
 	# Commas must always be followed by spaces, but never have spaces before them:
 	commas_linter = lintr::commas_linter,
@@ -82,8 +79,8 @@ linters <- lintr::linters_with_defaults( default = list(),
 	# Require that closures have the proper usage using `checkUsage`:
 	object_usage_linter = lintr::object_usage_linter,
 
-	# Never allow opening curly braces to be on their own line, and require that they are always followed by a newline:
-	open_curly_linter = lintr::open_curly_linter( allow_single_line = FALSE ),
+	# Various style checks related to placement and spacing of curly braces:
+	brace_linter = lintr::brace_linter( allow_single_line = FALSE ),
 
 	# Require that each step in a pipeline is on a new line, except when the entire pipe fits on one line:
 	pipe_continuation_linter = lintr::pipe_continuation_linter,
