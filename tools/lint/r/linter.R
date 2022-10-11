@@ -116,7 +116,7 @@ linters <- lintr::linters_with_defaults( defaults = list(),
 	undesirable_operator_linter = lintr::undesirable_operator_linter,
 
 	# Ensure that the `c` function is not used without arguments or with a single constant:
-	unneeded_concatenation_linter = lintr::unneeded_concatenation_linter,
+	unneeded_concatenation_linter = lintr::unneeded_concatenation_linter
 );
 
 # Lint each file...
