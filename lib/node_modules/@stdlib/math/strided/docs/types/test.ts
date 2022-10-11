@@ -18,12 +18,12 @@
 
 /* tslint:disable:no-unused-expression */
 
-import strided = require( './index' );
+import ns = require( './index' );
 
 
 // TESTS //
 
 // The exported value is the expected interface...
 {
-	strided; // $ExpectType Namespace
+	ns; // $ExpectType Namespace
 }
