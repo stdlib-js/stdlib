@@ -1,5 +1,5 @@
 
-{{alias}}( [out,] x )
+{{alias}}( x )
     Returns a normal number and exponent satisfying `x = y * 2^exp` as an array.
 
     The first element of the returned array corresponds to `y` and the second to
@@ -7,15 +7,12 @@
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Output array.
-
     x: number
         Double-precision floating-point number.
 
     Returns
     -------
-    out: Array|TypedArray|Object
+    out: Array<number>
         An array containing `y` and `exp`.
 
     Examples
@@ -37,9 +34,37 @@
     > out = {{alias}}( NaN )
     [ NaN, 0 ]
 
-    // Provide an output array:
-    > out = new {{alias:@stdlib/array/float64}}( 2 );
-    > var v = {{alias}}( out, 3.14e-319 )
+
+{{alias}}.assign( x, out, stride, offset )
+    Returns a normal number and exponent satisfying `x = y * 2^exp` and assigns
+    results to a provided output array.
+
+    The first element of the returned array corresponds to `y` and the second to
+    `exp`.
+
+    Parameters
+    ----------
+    x: number
+        Double-precision floating-point number.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float64}}( 2 )
+    > var v = {{alias}}.assign( 3.14e-319, out, 1, 0 )
     <Float64Array>[ 1.4141234400356668e-303, -52 ]
     > bool = ( v === out )
     true

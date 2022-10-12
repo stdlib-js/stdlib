@@ -30,16 +30,9 @@ limitations under the License.
 var normalize = require( '@stdlib/number/float64/base/normalize' );
 ```
 
-#### normalize( \[out,] x )
+#### normalize( x )
 
 Returns a normal number `y` and exponent `exp` satisfying `x = y * 2^exp`.
-
-```javascript
-var out = normalize( 3.14e-319 );
-// returns [ 1.4141234400356668e-303, -52 ]
-```
-
-By default, the function returns `y` and `exp` as a two-element `array`.
 
 ```javascript
 var pow = require( '@stdlib/math/base/special/pow' );
@@ -51,20 +44,6 @@ var y = out[ 0 ];
 var exp = out[ 1 ];
 
 var bool = ( y*pow(2.0, exp) === 3.14e-319 );
-// returns true
-```
-
-To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
-
-```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-
-var out = new Float64Array( 2 );
-
-var v = normalize( out, 3.14e-319 );
-// returns <Float64Array>[ 1.4141234400356668e-303, -52 ]
-
-var bool = ( v === out );
 // returns true
 ```
 
@@ -89,6 +68,22 @@ out = normalize( NINF );
 
 out = normalize( NaN );
 // returns [ NaN, 0 ]
+```
+
+#### normalize.assign( x, out, stride, offset )
+
+Returns a normal number `y` and exponent `exp` satisfying `x = y * 2^exp` and assigns results to a provided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var out = new Float64Array( 2 );
+
+var v = normalize.assign( 3.14e-319, out, 1, 0);
+// returns <Float64Array>[ 1.4141234400356668e-303, -52 ]
+
+var bool = ( v === out );
+// returns true
 ```
 
 </section>
