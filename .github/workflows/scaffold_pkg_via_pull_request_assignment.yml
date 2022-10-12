@@ -119,6 +119,8 @@ jobs:
 
       # Copy files from forked repository to new branch on `stdlib-js/stdlib` repository:
       - name: 'Copy files from forked repository to new branch on `stdlib-js/stdlib` repository'
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
           SCAFFOLD_BRANCH="scaffold-${{ github.event.pull_request.number }}/${{ steps.extract-readme.outputs.pkg_path }}"
           SLUG='stdlib-js/stdlib'
@@ -192,6 +194,8 @@ jobs:
 
       # Push changes:
       - name: 'Push changes'
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
           SLUG=${{ github.repository }}
           echo "Pushing changes to $SLUG..."
