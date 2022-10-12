@@ -1,4 +1,3 @@
-
 #/
 # @license Apache-2.0
 #
@@ -18,13 +17,14 @@
 #/
 
 # Workflow name:
-name: Scaffold Package via Push to Branch
+name: scaffold_package_via_push_to_branch
 
 # Workflow triggers:
 on:
   push:
     branches:
       - 'scaffold/**'
+      - 'scaffold-**/**'
 
 # Workflow jobs:
 jobs:
@@ -85,4 +85,26 @@ jobs:
         run: |
           SLUG=${{ github.repository }}
           echo "Pushing changes to $SLUG..."
-          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" HEAD:scaffold/${{ steps.scaffold.outputs.path }}
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" HEAD:${{ github.event.push.head.ref }}
+
+      # Check if branch name contains an issue number:
+      - name: 'Check if branch name contains an issue number'
+        id: check-branch-name
+        run: |
+          if [[ ${{ github.event.push.head.ref }} =~ ^scaffold-([0-9]+) ]]; then
+            echo "Branch name contains an issue number: ${BASH_REMATCH[1]}"
+            echo "::set-output name=issue-number::${BASH_REMATCH[1]}"
+          fi
+
+      # Add a comment to the pull request:
+      - name: 'Add comment to pull request'
+        if: steps.check-branch-name.outputs.issue-number != ''
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ steps.check-branch-name.outputs.issue-number }}
+          body: |
+            Based off the `README.md` file, the [stdlib-bot](https://github.com/stdlib-bot) has generated contents for the [${{ steps.scaffold.outputs.alias }}](../tree/${{ steps.scaffold.outputs.path }}/${{ steps.scaffold.outputs.dir }}) package.
+
+            ## Notes
+
+            *   :warning: The stdlib-bot uses AI to generate package content. The generated content is not guaranteed to be correct, and will require manual review and editing. :warning:
