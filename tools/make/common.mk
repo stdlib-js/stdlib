@@ -47,6 +47,16 @@ else
 endif
 endif
 
+# Indicate whether to fix linting errors:
+ifndef FIX
+	FIX := false
+else
+ifeq ($(FIX), 0)
+	FIX := false
+else
+	FIX := true
+endif
+endif
 
 # ENVIRONMENTS #
 
