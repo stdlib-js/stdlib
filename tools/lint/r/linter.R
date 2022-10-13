@@ -86,7 +86,7 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	pipe_continuation_linter = lintr::pipe_continuation_linter(),
 
 	# Allow semicolons to terminate statements:
-	semicolon_terminator_linter = lintr::semicolon_terminator_linter(),
+	semicolon_linter = lintr::semicolon_linter( allow_trailing = TRUE ),
 
 	# Require that only single quotes be used to delimit strings:
 	single_quotes_linter = lintr::single_quotes_linter(),
@@ -118,7 +118,6 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	# Ensure that the `c` function is not used without arguments or with a single constant:
 	unneeded_concatenation_linter = lintr::unneeded_concatenation_linter()
 );
-lintr::lint('/mnt/c/Users/pb/Documents/GitHub/benchmark.R', linters = linters )
 
 # Lint each file...
 status <- 0;
