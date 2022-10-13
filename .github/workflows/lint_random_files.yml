@@ -33,7 +33,7 @@ on:
         default: .*
       javascript:
         type: boolean
-        description: Lint JavaScript files
+        description: Lint JavaScript and TypeScript files
         default: true
       markdown:
         type: boolean
@@ -54,10 +54,6 @@ on:
       c:
         type: boolean
         description: Lint C files
-        default: true
-      typescript:
-        type: boolean
-        description: Lint TypeScript files
         default: true
       python:
         type: boolean
@@ -156,7 +152,7 @@ jobs:
             fi
             name="${name} -name '*.c'"
           fi
-          if [ "${{ github.event.inputs.typescript }}" != "false" ]; then
+          if [ "${{ github.event.inputs.javascript }}" != "false" ]; then
             if [ -n "${name}" ]; then
               name="${name} -o"
             fi
@@ -357,7 +353,7 @@ jobs:
 
       # Lint TypeScript declarations files:
       - name: 'Lint TypeScript declarations files'
-        if: ( github.event.inputs.typescript != 'false' ) && ( success() || failure() )
+        if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
