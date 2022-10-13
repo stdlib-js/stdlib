@@ -72,14 +72,14 @@ jobs:
         timeout-minutes: 5
 
       # Get list of changed files:
-      - name: Get list of changed files
+      - name: 'Get list of changed files'
         id: changed-files
         uses: tj-actions/changed-files@v32
         with:
           separator: ' '
 
       # Lint file names
-      - name: Lint file names
+      - name: 'Lint file names'
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)

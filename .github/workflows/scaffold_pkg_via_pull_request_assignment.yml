@@ -97,7 +97,7 @@ jobs:
           git fetch --all
 
       # Get list of changed files:
-      - name: Get list of changed files
+      - name: 'Get list of changed files'
         id: changed-files
         uses: tj-actions/changed-files@v32
         with:
@@ -137,7 +137,7 @@ jobs:
           git checkout $SCAFFOLD_BRANCH
 
       # Run the command to scaffold a package:
-      - name: Scaffold package
+      - name: 'Scaffold package'
         id: scaffold
         uses: stdlib-js/scaffold-pkg-pr-action@main
         with:
@@ -146,13 +146,13 @@ jobs:
           added-files: ${{ steps.changed-files.outputs.added_files }}
 
       # Commit changes:
-      - name: Commit changes
+      - name: 'Commit changes'
         run: |
           git add -A
           git commit -m "Scaffold ${{ steps.extract-readme.outputs.pkg_path }} package files"
 
       # Push changes to `stdlib-js/stdlib` repository:
-      - name: Push changes to `stdlib-js/stdlib` repository
+      - name: 'Push changes to `stdlib-js/stdlib` repository'
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
@@ -167,10 +167,9 @@ jobs:
 
       # Add a comment to the pull request:
       - name: 'Add comment to pull request'
-        if: steps.check-branch-name.outputs.issue-number != ''
         uses: peter-evans/create-or-update-comment@v1
         with:
-          issue-number: ${{ steps.check-branch-name.outputs.issue-number }}
+          issue-number: ${{ github.event.pull_request.number }}
           body: |
             Based off the `README.md` file, the [stdlib-bot](https://github.com/stdlib-bot) has generated contents for the [${{ steps.scaffold.outputs.alias }}](../tree/${{ steps.scaffold.outputs.path }}/${{ steps.scaffold.outputs.dir }}) package.
 

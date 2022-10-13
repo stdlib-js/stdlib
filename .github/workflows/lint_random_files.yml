@@ -172,7 +172,7 @@ jobs:
           echo "::set-output name=files::$files"
 
       # Lint file names
-      - name: Lint file names
+      - name: 'Lint file names'
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
