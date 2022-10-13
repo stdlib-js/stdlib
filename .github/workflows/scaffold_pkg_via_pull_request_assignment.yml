@@ -119,8 +119,6 @@ jobs:
 
       # Copy files from forked repository to new branch on `stdlib-js/stdlib` repository:
       - name: 'Copy files from forked repository to new branch on `stdlib-js/stdlib` repository'
-        env:
-          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
           SCAFFOLD_BRANCH="scaffold-${{ github.event.pull_request.number }}/${{ steps.extract-readme.outputs.pkg_path }}"
           SLUG='stdlib-js/stdlib'
@@ -135,11 +133,50 @@ jobs:
           # Create `scaffold/<path>` branch:
           git branch $SCAFFOLD_BRANCH origin/${{ github.event.pull_request.head.ref }}
 
+          # Checkout `scaffold/<path>` branch:
+          git checkout $SCAFFOLD_BRANCH
+
+      # Run the command to scaffold a package:
+      - name: Scaffold package
+        id: scaffold
+        uses: stdlib-js/scaffold-pkg-pr-action@main
+        with:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          added-files: ${{ steps.changed-files.outputs.added_files }}
+
+      # Commit changes:
+      - name: Commit changes
+        run: |
+          git add -A
+          git commit -m "Scaffold ${{ steps.extract-readme.outputs.pkg_path }} package files"
+
+      # Push changes to `stdlib-js/stdlib` repository:
+      - name: Push changes to `stdlib-js/stdlib` repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+        run: |
+          SCAFFOLD_BRANCH="scaffold-${{ github.event.pull_request.number }}/${{ steps.extract-readme.outputs.pkg_path }}"
+          SLUG='stdlib-js/stdlib'
+
           # Rebase `scaffold/<path>` branch to develop branch of `stdlib-js/stdlib` repository:
           git rebase develop $SCAFFOLD_BRANCH --onto source/develop
 
           # Push `scaffold/<path>` branch to `stdlib-js/stdlib` repository:
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG" $SCAFFOLD_BRANCH
+
+      # Add a comment to the pull request:
+      - name: 'Add comment to pull request'
+        if: steps.check-branch-name.outputs.issue-number != ''
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ steps.check-branch-name.outputs.issue-number }}
+          body: |
+            Based off the `README.md` file, the [stdlib-bot](https://github.com/stdlib-bot) has generated contents for the [${{ steps.scaffold.outputs.alias }}](../tree/${{ steps.scaffold.outputs.path }}/${{ steps.scaffold.outputs.dir }}) package.
+
+            ## Notes
+
+            *   :warning: The stdlib-bot uses AI to generate package content. The generated content is not guaranteed to be correct, and will require manual review and editing. :warning:
 
   # Define a job for scaffolding a package based off `README.md` contents:
   scaffold-internal:
@@ -173,7 +210,6 @@ jobs:
 
       # Run the command to scaffold a package:
       - name: 'Scaffold package'
-        if: steps.check-external.outputs.external == 'false'
         id: scaffold
         uses: stdlib-js/scaffold-pkg-pr-action@main
         with:
