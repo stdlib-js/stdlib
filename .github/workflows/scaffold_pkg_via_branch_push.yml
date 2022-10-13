@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: Scaffold Package via Push to Branch
+name: scaffold_package_via_push_to_branch
 
 # Workflow triggers:
 on:
@@ -53,14 +53,14 @@ jobs:
           lfs: false
 
       # Get list of changed files:
-      - name: Get list of changed files
+      - name: 'Get list of changed files'
         id: changed-files
         uses: tj-actions/changed-files@v32
         with:
           separator: ' '
 
       # Run the command to scaffold a package:
-      - name: Scaffold package
+      - name: 'Scaffold package'
         id: scaffold
         uses: stdlib-js/scaffold-pkg-pr-action@main
         with:
