@@ -369,8 +369,9 @@ jobs:
             make lint-license-headers-files FILES="${files}"
           fi
 
-      # Create a pull request with the fixes:
+      # Create a pull request with the fixes (if applicable):
       - name: 'Create pull request'
+        if: ${{ github.event.inputs.fix }} && ( success() || failure() )
         id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
