@@ -154,7 +154,7 @@ Substantial portions of this document were adapted from the following governance
 
 ## License
 
-This document may be reused under a [Creative Commons Attribution-ShareAlike License][license].
+This document may be reused under a [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license][cc-by-sa-4.0].
 
 <section class="links">
 
@@ -166,7 +166,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [scikit-learn-governance]: https://github.com/scikit-learn/scikit-learn/blob/0c8820b6e4f9c49f55e96fcbb297073a887eb37b/doc/governance.rst
 
-[license]: https://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-4.0]: https://creativecommons.org/licenses/by-sa/4.0/
 
 [git-history]: https://github.com/stdlib-js/stdlib/commits/develop/GOVERNANCE.md
 
