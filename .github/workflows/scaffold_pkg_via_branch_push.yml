@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: Scaffold Package via Push to Branch
+name: scaffold_package_via_push_to_branch
 
 # Workflow triggers:
 on:
