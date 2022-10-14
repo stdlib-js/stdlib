@@ -49,7 +49,7 @@ ESLINT_FLAGS ?= \
 	--ignore-path $(ESLINT_IGNORE) \
 	--report-unused-disable-directives
 
-ifeq ($(FIX),true)
+ifeq ($(AUTOFIX),true)
 	ESLINT_FLAGS += --fix
 endif
 

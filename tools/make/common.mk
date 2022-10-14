@@ -49,12 +49,12 @@ endif
 
 # Indicate whether to fix linting errors:
 ifndef FIX
-	FIX := false
+	AUTOFIX := false
 else
-ifeq ($(FIX), 0)
-	FIX := false
+ifeq ($(FIX), 1)
+	AUTOFIX := true
 else
-	FIX := true
+	AUTOFIX := false
 endif
 endif
 
