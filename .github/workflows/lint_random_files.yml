@@ -376,7 +376,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           title: 'Fix lint errors'
-          add-paths: {{ steps.random-files.outputs.files  }}
+          add-paths: ${{ steps.random-files.outputs.files }}
           body: |
             This PR
 
