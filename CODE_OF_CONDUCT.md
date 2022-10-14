@@ -138,6 +138,8 @@ This Code of Conduct borrows heavily from
 
 This document may be reused under a [Creative Commons Attribution-ShareAlike License][license].
 
+<section class="links">
+
 [git-history]: https://github.com/stdlib-js/stdlib/commits/develop/CODE_OF_CONDUCT.md
 
 [npm-code-of-conduct]: https://docs.npmjs.com/policies/conduct
@@ -157,3 +159,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 [license]: https://creativecommons.org/licenses/by-sa/4.0/
 
 [reporting]: mailto:kgryte@gmail.com
+
+</section>
+
+<!-- /.links -->
