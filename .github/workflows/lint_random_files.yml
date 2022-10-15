@@ -33,7 +33,7 @@ on:
         default: .*
       javascript:
         type: boolean
-        description: Lint JavaScript files
+        description: Lint JavaScript and TypeScript files
         default: true
       markdown:
         type: boolean
@@ -55,14 +55,14 @@ on:
         type: boolean
         description: Lint C files
         default: true
-      typescript:
-        type: boolean
-        description: Lint TypeScript files
-        default: true
       python:
         type: boolean
         description: Lint Python files
         default: true
+      fix:
+        type: boolean
+        description: Automatically fix lint errors (if possible) and file a pull request
+        default: false
 
   # Trigger the workflow every 24 hours:
   schedule:
@@ -152,7 +152,7 @@ jobs:
             fi
             name="${name} -name '*.c'"
           fi
-          if [ "${{ github.event.inputs.typescript }}" != "false" ]; then
+          if [ "${{ github.event.inputs.javascript }}" != "false" ]; then
             if [ -n "${name}" ]; then
               name="${name} -o"
             fi
@@ -166,13 +166,13 @@ jobs:
           fi
           command="find lib/node_modules/@stdlib -type f \( ${name} \) |
             grep -E '${{ github.event.inputs.pattern }}' |
-            shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ' '"
+            shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ','"
           echo "command: ${command}"
           files=$(eval ${command})
           echo "::set-output name=files::$files"
 
       # Lint file names
-      - name: Lint file names
+      - name: 'Lint file names'
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -181,13 +181,13 @@ jobs:
           lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
           # Lint filenames:
-          echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' || "${lint_filenames}"
+          echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' || "${lint_filenames}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         if: ( github.event.inputs.markdown != 'false' ) && ( success() || failure() )
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.md$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
             make lint-markdown-files FAST_FAIL=0 FILES="${files}"
           fi
@@ -202,7 +202,7 @@ jobs:
           # Define the path to a utility for linting package.json files:
           lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
 
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$')
           if [ -n "${files}" ]; then
             echo "${files}" | "${lint_package_json}"
           fi
@@ -217,7 +217,7 @@ jobs:
           # Define the path to a utility for linting REPL help files:
           lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-help/bin/cli"
 
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep 'repl\.txt$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'repl\.txt$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
             echo "${files}" | "${lint_repl_help}"
           fi
@@ -238,41 +238,48 @@ jobs:
           # Define the path to ESLint configuration file for linting benchmarks:
           eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
 
+          # Set `FIX` variable to `1` to enable automatic fixing of lint errors, `0` to disable:
+          if [ "${{ github.event.inputs.fix }}" == "true" ]; then
+            FIX=1
+          else
+            FIX=0
+          fi
+
           # Lint JavaScript source files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FAST_FAIL=0 FILES="${files}"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}"
           fi
 
           # Lint JavaScript command-line interfaces...
-          file=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ')
+          file=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ')
           if [[ -n "${file}" ]]; then
-            make lint-javascript-files FAST_FAIL=0 FILES="${file}"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${file}"
           fi
 
           # Lint JavaScript example files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
           fi
 
           # Lint JavaScript test files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/test/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
           fi
 
           # Lint JavaScript benchmark files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
           fi
 
       # Lint Python files:
       - name: 'Lint Python files'
         if: ( github.event.inputs.python != 'false' ) && ( success() || failure() )
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.py$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.py$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             # Install Python dependencies:
             make install-deps-python
@@ -292,7 +299,7 @@ jobs:
       - name: 'Lint R files'
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.R$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             # Install R dependencies:
             make install-deps-r
@@ -321,34 +328,34 @@ jobs:
           cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
           # Lint C source files...
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}"
           fi
 
           # Lint C example files...
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}"
           fi
 
           # Lint C test fixtures files...
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/test/fixtures/.*\.c$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/test/fixtures/.*\.c$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}"
           fi
 
           # Lint C benchmark files...
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep '/benchmark/.*\.c$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/benchmark/.*\.c$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}"
           fi
 
       # Lint TypeScript declarations files:
       - name: 'Lint TypeScript declarations files'
-        if: ( github.event.inputs.typescript != 'false' ) && ( success() || failure() )
+        if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make TYPESCRIPT_DECLARATIONS_LINTER=dtslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}"
           fi
@@ -357,7 +364,29 @@ jobs:
       - name: 'Lint license headers'
         if: ${{ github.event.inputs.license }} && ( success() || failure() )
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}")
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
           if [[ -n "${files}" ]]; then
             make lint-license-headers-files FILES="${files}"
           fi
+
+      # Create a pull request with the fixes (if applicable):
+      - name: 'Create pull request'
+        if: ${{ github.event.inputs.fix }} && ( success() || failure() )
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: 'Fix lint errors'
+          add-paths: ${{ steps.random-files.outputs.files }}
+          body: |
+            This PR
+
+            -   fixes lint errors
+
+          commit-message: 'Fix lint errors'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
+          labels: |
+            automated-pr
+          team-reviewers: |
+            stdlib-reviewers
+          branch: 'fix-lint-errors'
+          delete-branch: true

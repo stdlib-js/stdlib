@@ -35,7 +35,7 @@ jobs:
     steps:
 
       # Greet first-time contributors:
-      - name: Greet first-time contributors
+      - name: 'Greet first-time contributors'
         uses: actions/first-interaction@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}

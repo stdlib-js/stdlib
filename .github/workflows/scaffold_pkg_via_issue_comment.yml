@@ -33,7 +33,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Exit if comment does not contain scaffolding directive:
-      - name: Exit if comment does not contain scaffolding directive
+      - name: 'Exit if comment does not contain scaffolding directive'
         if: ${{ !contains(github.event.comment.body, 'scaffold') }}
         run: exit 0
 
@@ -41,14 +41,14 @@ jobs:
       - uses: actions/checkout@v2
 
       # Run the command to scaffold a package:
-      - name: Scaffold package
+      - name: 'Scaffold package'
         id: scaffold
         uses: stdlib-js/scaffold-pkg-pr-action@main
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       # Create a pull request:
-      - name: Create pull request
+      - name: 'Create pull request'
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
