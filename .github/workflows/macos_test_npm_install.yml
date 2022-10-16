@@ -21,9 +21,9 @@ name: macos_test_npm_install
 
 # Workflow triggers:
 on:
-  push:
-    branches:
-      - develop
+  # Run nightly:
+  schedule:
+    - cron: '0 9 * * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
