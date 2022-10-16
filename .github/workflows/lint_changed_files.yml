@@ -122,7 +122,7 @@ jobs:
           root=$(git rev-parse --show-toplevel)
 
           # Define the path to a utility for linting REPL help files:
-          lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-help/bin/cli"
+          lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-txt/bin/cli"
 
           files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep 'repl\.txt$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
