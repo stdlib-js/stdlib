@@ -136,7 +136,9 @@ This Code of Conduct borrows heavily from
 
 ## License
 
-This document may be reused under a [Creative Commons Attribution-ShareAlike License][license].
+This document may be reused under a [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license][cc-by-sa-4.0].
+
+<section class="links">
 
 [git-history]: https://github.com/stdlib-js/stdlib/commits/develop/CODE_OF_CONDUCT.md
 
@@ -154,6 +156,10 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [rust-code-of-conduct]: https://www.rust-lang.org/policies/code-of-conduct
 
-[license]: https://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-4.0]: https://creativecommons.org/licenses/by-sa/4.0/
 
 [reporting]: mailto:kgryte@gmail.com
+
+</section>
+
+<!-- /.links -->
