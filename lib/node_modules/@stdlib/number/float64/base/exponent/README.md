@@ -87,6 +87,95 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float64/base/exponent.h"
+```
+
+#### stdlib_base_float64_exponent( x, \*out )
+
+Extracts the integer corresponding to the unbiased exponent of a double-precision floating-point number.
+
+```c
+#include <stdint.h>
+
+int32_t out;
+stdlib_base_float64_exponent( 3.14, &out );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **out**: `[out] int32_t*` destination for unbiased exponent.
+
+```c
+void stdlib_base_float64_exponent( const double x, int32_t *out );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float64/base/exponent.h"
+#include <stdint.h>
+#include <stdio.h>
+
+int main() {
+    double x[] = { 4.0, 0.0, -0.0, 1.0, -1.0, 3.14, -3.14, 1.0e308, -1.0e308, 1.0e-308, -1.0e-308, 1.0/0.0, -1.0/0.0, 0.0/0.0 };
+
+    int32_t out;
+    int i;
+    for ( i = 0; i < 14; i++ ) {
+        stdlib_base_float64_exponent( x[ i ], &out );
+        printf( "%lf => out: %u\n", x[ i ], out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
