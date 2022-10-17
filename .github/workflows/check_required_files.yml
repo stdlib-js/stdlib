@@ -172,6 +172,6 @@ jobs:
           body: |
             Hi @${{ github.event.pull_request.user.login }}. The pull request contains a new `README.md` file, but is missing the following required files:
 
-            - ${ { steps.check-required-files.outputs.missing_files } }
+            - ${{ steps.check-required-files.outputs.missing_files }}
 
             Please add the missing files to the pull request.
