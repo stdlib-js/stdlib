@@ -51,31 +51,42 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
-      # Exit early if the review is not requested from the `stdlib-bot` user:
-      - name: 'Exit early if review is not requested from stdlib-bot'
+      # Check if the review is requested from the `stdlib-bot` user:
+      - name: 'Check if review is requested from stdlib-bot'
+        id: check-reviewers
         run: |
-          if [[ "${{ github.event.review.requested_reviewer.login }}" != "stdlib-bot" ]]; then
-            echo "Review not requested from stdlib-bot. Exiting early."
-            exit 0
+          # Get the list of reviewers:
+          reviewers=$(jq -r '.pull_request.requested_reviewers | .[] | .login' "$GITHUB_EVENT_PATH")
+
+          # Check if the list of reviewers contains the `stdlib-bot` user:
+          if [[ $reviewers == *"stdlib-bot"* ]]; then
+            echo "::set-output name=is_stdlib_bot::true"
+          else
+            echo "::set-output name=is_stdlib_bot::false"
           fi
 
       # Get list of changed files:
       - name: 'Get list of changed files'
+        if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
         id: changed-files
         uses: tj-actions/changed-files@v32
         with:
           separator: ' '
+          base_sha: ${{ github.event.pull_request.base.sha }}
+          sha: ${{ github.event.pull_request.head.sha }}
 
-      # Check whether the pull request contains a new `README.md` file; if not, exit with a zero exit code:
+      # Check whether the pull request contains a new `README.md` file; if not, exit with a non-zero exit code:
       - name: 'Exit if pull request does not contain a new README.md file'
+        if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
         run: |
           if [[ ! "${{ steps.changed-files.outputs.added_files }}" =~ "README.md" ]]; then
             echo "Pull request does not contain a new README.md file."
-            exit 0
+            exit 1
           fi
 
       # Check whether the pull request contains files which are required to be present for all packages:
       - name: 'Check whether the pull request contains files which are required to be present for all packages'
+        if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
         id: check-required-files
         run: |
           # Define a list of required files:
@@ -91,8 +102,8 @@ jobs:
             "examples/index.js"
             "test/test.js"
           )
-          # Get path of added `README.md` file:
-          readme_path="${{ steps.changed-files.outputs.added_files }}" | grep "README.md"
+          # Get path of first added `README.md` file:
+          readme_path="${{ steps.changed-files.outputs.added_files }}" | tr ' ' '\n' | grep -E 'README.md$' | head -n 1
 
           if grep -q '## CLI' "${readme_path}"; then
             required_files+=("bin/cli")
