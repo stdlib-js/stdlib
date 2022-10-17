@@ -22,7 +22,7 @@ name: check_required_files
 # Workflow triggers:
 on:
   # Trigger the workflow when a PR review is requested:
-  pull_request:
+  pull_request_target:
     types: [review_requested]
 
 # Workflow jobs:
