@@ -71,6 +71,13 @@ jobs:
             echo "::set-output name=is_stdlib_bot::false"
           fi
 
+      # Configure git:
+      - name: 'Configure git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+          git fetch --all
+
       # Get list of changed files:
       - name: 'Get list of changed files'
         if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
