@@ -154,11 +154,13 @@ jobs:
               missing_files+=("${file}")
 
               # Add a non-ticked checkbox for the file to the Markdown list of checkboxes:
-              checkbox_list+="-   [ ] ${file}\n"
+              checkbox_list+="-   [ ] ${file}"
             else
               # Add a ticked checkbox for the file to the Markdown list of checkboxes:
-              checkbox_list+="-   [x] ${file}\n"
+              checkbox_list+="-   [x] ${file}"
             fi
+            # Add a newline to the Markdown list of checkboxes:
+            checkbox_list+=$'\n'
           done
 
           # Add the list of missing and required files to the workflow output:
@@ -167,8 +169,8 @@ jobs:
 
           # Add the Markdown list of checkboxes to the workflow output after escaping to preserve newlines:
           checkbox_list="${checkbox_list//'%'/'%25'}"
-          checkbox_list="${checkbox_list//$'\n'/'%0A'}"
-          checkbox_list="${checkbox_list//$'\r'/'%0D'}"
+          checkbox_list="${checkbox_list//$'\\n'/'%0A'}"
+          checkbox_list="${checkbox_list//$'\\r'/'%0D'}"
           echo "::set-output name=checkbox_list::${checkbox_list}"
 
         shell: bash
@@ -202,7 +204,7 @@ jobs:
 
             Use the following checklist to keep track of the required files and which ones are still missing:
 
-            - ${{ steps.check-required-files.outputs.checkbox_list }}
+            ${{ steps.check-required-files.outputs.checkbox_list }}
 
             Please add the missing files to the pull request.
 
