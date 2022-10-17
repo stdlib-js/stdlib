@@ -206,7 +206,7 @@ jobs:
           exit 0
 
       # Checkout the pull request branch:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           # Refers to the branch name of the pull request:
           ref: ${{ github.event.pull_request.head.ref }}

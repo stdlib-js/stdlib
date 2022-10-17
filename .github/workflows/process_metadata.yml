@@ -40,7 +40,7 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false

@@ -47,7 +47,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
         timeout-minutes: 5
@@ -74,7 +74,7 @@ jobs:
 
       # Upload the download data:
       - name: 'Upload data'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
           name: npm_downloads

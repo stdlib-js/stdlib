@@ -35,7 +35,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the new branch:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           # Refers to the branch name of the branch being pushed:
           ref: ${{ github.event.push.head.ref }}
