@@ -1,0 +1,166 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: check_required_files
+
+# Workflow triggers:
+on:
+  # Trigger the workflow when a PR review is requested:
+  pull_request:
+    types: [review_requested]
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for checking that pull requests contain the required files...
+  check_required_files:
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v2
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the last 25 commits:
+          fetch-depth: 25
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Exit early if the review is not requested from the `stdlib-bot` user:
+      - name: 'Exit early if review is not requested from stdlib-bot'
+        run: |
+          if [[ "${{ github.event.review.requested_reviewer.login }}" != "stdlib-bot" ]]; then
+            echo "Review not requested from stdlib-bot. Exiting early."
+            exit 0
+          fi
+
+      # Get list of changed files:
+      - name: 'Get list of changed files'
+        id: changed-files
+        uses: tj-actions/changed-files@v32
+        with:
+          separator: ' '
+
+      # Check whether the pull request contains a new `README.md` file; if not, exit with a zero exit code:
+      - name: 'Exit if pull request does not contain a new README.md file'
+        run: |
+          if [[ ! "${{ steps.changed-files.outputs.added_files }}" =~ "README.md" ]]; then
+            echo "Pull request does not contain a new README.md file."
+            exit 0
+          fi
+
+      # Check whether the pull request contains files which are required to be present for all packages:
+      - name: 'Check whether the pull request contains files which are required to be present for all packages'
+        id: check-required-files
+        run: |
+          # Define a list of required files:
+          required_files=(
+            "package.json"
+            "README.md"
+            "docs/repl.txt"
+            "docs/types/index.d.ts"
+            "docs/types/test.ts"
+            "lib/index.js"
+            "lib/main.js"
+            "benchmark/benchmark.js",
+            "examples/index.js"
+            "test/test.js"
+          )
+          # Get path of added `README.md` file:
+          readme_path="${{ steps.changed-files.outputs.added_files }}" | grep "README.md"
+
+          if grep -q '## CLI' "${readme_path}"; then
+            required_files+=("bin/cli")
+            required_files+=("docs/usage.txt")
+            required_files+=("etc/cli_opts.json")
+            required_files+=("test/test.cli.js")
+          fi
+
+          if grep -q '## C APIs' "${readme_path}"; then
+            required_files+=("manifest.json")
+            required_files+=("binding.gyp")
+            required_files+=("include.gypi")
+            required_files+=("src/Makefile")
+            required_files+=("include/stdlib")
+          fi
+
+          if grep -q '### Examples\n\n```c' "${readme_path}"; then
+            required_files+=("examples/c/example.c")
+            required_files+=("examples/c/Makefile")
+            required_files+=("benchmark/c/Makefile")
+            required_files+=("benchmark/c/benchmark.c")
+          fi
+
+          # Define a list of missing files:
+          missing_files=()
+
+          # Iterate over the list of required files:
+          for file in "${required_files[@]}"; do
+            # Check whether the file is present in the pull request:
+            if [[ ! "${{ steps.changed-files.outputs.added_files }}" =~ "${file}" ]]; then
+              # If not, add the file to the list of missing files:
+              missing_files+=("${file}")
+            fi
+          done
+
+          # Add the list of missing and required files to the workflow output:
+          echo "::set-output name=missing_files::${missing_files[*]}"
+          echo "::set-output name=required_files::${required_files[*]}"
+
+        shell: bash
+        timeout-minutes: 10
+
+      # Create a comment on the pull request informing the user that the pull request contains all required files:
+      - name: 'Create a comment on the pull request informing the user that the pull request contains all required files'
+        uses: peter-evans/create-or-update-comment@v1
+        if: steps.check-required-files.outputs.missing_files == ''
+        with:
+          # Specify the issue or pull request number:
+          issue-number: ${{ github.event.pull_request.number }}
+
+          # Specify the comment body:
+          body: |
+            ### :white_check_mark: Success
+
+            Pull request contains all required files.
+
+      # Create a comment on the pull request alerting the user that the pull request is missing required files:
+      - name: 'Create a comment on the pull request alerting the user that the pull request is missing required file'
+        uses: peter-evans/create-or-update-comment@v1
+        if: steps.check-required-files.outputs.missing_files != ''
+        with:
+          # Specify the issue or pull request number:
+          issue-number: ${{ github.event.pull_request.number }}
+
+          # Specify the comment body:
+          body: |
+            Hi @${{ github.event.pull_request.user.login }}. The pull request contains a new `README.md` file, but is missing the following required files:
+
+            - ${ { steps.check-required-files.outputs.missing_files } }
+
+            Please add the missing files to the pull request.
