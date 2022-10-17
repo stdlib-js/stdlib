@@ -96,22 +96,43 @@ jobs:
 
       # Generate SVG equations:
       - name: 'Generate SVG equations'
+        id: svg-equations
         run: |
           make markdown-svg-equations-files FILES="${{ steps.changed.outputs.files }}"
-          git add -A && git commit -m "Add SVG equations"
+
+          if [[ -z "$(git status --porcelain)" ]]; then
+            # If no files were changed, exit with a success status code:
+            echo "::set-output name=changed::false"
+            exit 0
+          else
+            # Otherwise, add changed files to the staging area and commit:
+            git add -A && git commit -m "Add SVG equations"
+            echo "::set-output name=changed::true"
+          fi
         timeout-minutes: 15
 
       # Update Markdown equation elements:
       - name: 'Update equation elements'
+        id: equation-elements
         run: |
           make markdown-img-equations-files FILES="${{ steps.changed.outputs.files }}"
           make markdown-img-equations-src-urls-files FILES="${{ steps.changed.outputs.files }}"
-          git add -A && git commit -m "Update Markdown equation elements"
+
+          if [[ -z "$(git status --porcelain)" ]]; then
+            # If no files were changed, exit with a success status code:
+            echo "::set-output name=changed::false"
+            exit 0
+          else
+            # Otherwise, add changed files to the staging area and commit:
+            git add -A && git commit -m "Update Markdown equation elements"
+            echo "::set-output name=changed::true"
+          fi
         timeout-minutes: 15
 
       # Create a pull request with the updated equations:
       - name: 'Create pull request'
         id: cpr
+        if: steps.svg-equations.outputs.changed == 'true' || steps.equation-elements.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           title: 'Update Markdown equation elements'
@@ -132,6 +153,7 @@ jobs:
 
       # Create Markdown summary of the pull request:
       - name: 'Create summary'
+        if: steps.svg-equations.outputs.changed == 'true' || steps.equation-elements.outputs.changed == 'true'
         run: |
           echo "# :tada: Pull Request created! :tada:" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY

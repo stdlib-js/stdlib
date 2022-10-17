@@ -73,6 +73,7 @@ jobs:
 
       # Configure git:
       - name: 'Configure git'
+        if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
@@ -200,6 +201,7 @@ jobs:
 
       # Create a comment on the pull request informing the user whether the pull request is missing required files:
       - name: 'Create a comment on the pull request informing the user whether the pull request is missing required files'
+        if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
         uses: peter-evans/create-or-update-comment@v1
         with:
           # Specify the issue or pull request number:
