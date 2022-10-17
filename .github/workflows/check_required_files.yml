@@ -164,6 +164,11 @@ jobs:
           # Add the list of missing and required files to the workflow output:
           echo "::set-output name=missing_files::${missing_files[*]}"
           echo "::set-output name=required_files::${required_files[*]}"
+
+          # Add the Markdown list of checkboxes to the workflow output after escaping to preserve newlines:
+          checkbox_list="${checkbox_list//'%'/'%25'}"
+          checkbox_list="${checkbox_list//$'\n'/'%0A'}"
+          checkbox_list="${checkbox_list//$'\r'/'%0D'}"
           echo "::set-output name=checkbox_list::${checkbox_list}"
 
         shell: bash
