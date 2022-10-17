@@ -98,12 +98,12 @@ jobs:
             "docs/types/test.ts"
             "lib/index.js"
             "lib/main.js"
-            "benchmark/benchmark.js",
+            "benchmark/benchmark.js"
             "examples/index.js"
             "test/test.js"
           )
           # Get path of first added `README.md` file:
-          readme_path="${{ steps.changed-files.outputs.added_files }}" | tr ' ' '\n' | grep -E 'README.md$' | head -n 1
+          readme_path=$(echo "${{ steps.changed-files.outputs.added_files }}" | tr ' ' '\n' | grep -E 'README.md$' | head -n 1)
 
           if grep -q '## CLI' "${readme_path}"; then
             required_files+=("bin/cli")
