@@ -143,18 +143,28 @@ jobs:
           # Define a list of missing files:
           missing_files=()
 
+          # Define a string with a Markdown list of checkboxes for all files:
+          checkbox_list=""
+
           # Iterate over the list of required files:
           for file in "${required_files[@]}"; do
             # Check whether the file is present in the pull request:
             if [[ ! "${{ steps.changed-files.outputs.added_files }}" =~ "${file}" ]]; then
               # If not, add the file to the list of missing files:
               missing_files+=("${file}")
+
+              # Add a non-ticked checkbox for the file to the Markdown list of checkboxes:
+              checkbox_list+="-   [ ] ${file}\n"
+            else
+              # Add a ticked checkbox for the file to the Markdown list of checkboxes:
+              checkbox_list+="-   [x] ${file}\n"
             fi
           done
 
           # Add the list of missing and required files to the workflow output:
           echo "::set-output name=missing_files::${missing_files[*]}"
           echo "::set-output name=required_files::${required_files[*]}"
+          echo "::set-output name=checkbox_list::${checkbox_list}"
 
         shell: bash
         timeout-minutes: 10
@@ -183,8 +193,12 @@ jobs:
 
           # Specify the comment body:
           body: |
-            Hi @${{ github.event.pull_request.user.login }}. The pull request contains a new `README.md` file, but is missing the following required files:
+            Hi @${{ github.event.pull_request.user.login }}. The pull request contains a new `README.md` file, but is missing some of the required files.
 
-            - ${{ steps.check-required-files.outputs.missing_files }}
+            Use the following checklist to keep track of the required files and which ones are still missing:
+
+            - ${{ steps.check-required-files.outputs.checkbox_list }}
 
             Please add the missing files to the pull request.
+
+            -- stdlib-bot
