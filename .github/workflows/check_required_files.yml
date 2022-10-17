@@ -44,8 +44,11 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
 
-          # Limit clone depth to the last 25 commits:
-          fetch-depth: 25
+          # Refers to the repository name of the pull request:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
 
           # Specify whether to download Git-LFS files:
           lfs: false
