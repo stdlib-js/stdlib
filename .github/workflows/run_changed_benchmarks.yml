@@ -84,7 +84,7 @@ jobs:
       # Run JavaScript benchmarks:
       - name: 'Run JavaScript benchmarks'
         run: |
-          files=$(echo ${{ steps.changed-files.outputs.all_changed_files | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//' }})
+          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
             make benchmark-javascript-files FILES="${files}"
           fi

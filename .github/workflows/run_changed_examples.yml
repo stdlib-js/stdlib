@@ -86,7 +86,7 @@ jobs:
       # Run JavaScript examples:
       - name: 'Run JavaScript examples'
         run: |
-          files=$(echo ${{ steps.changed-files.outputs.all_changed_files | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//' }})
+          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
             make examples-javascript-files FILES="${files}"
           fi
@@ -95,7 +95,7 @@ jobs:
       # Run examples in Markdown files:
       - name: 'Run examples in Markdown files'
         run: |
-          files=$(echo ${{ steps.changed-files.outputs.all_changed_files | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//' }})
+          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
             make markdown-examples-javascript-files FILES="${files}"
           fi
