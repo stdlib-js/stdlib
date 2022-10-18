@@ -38,5 +38,5 @@ void stdlib_base_float64_exponent( const double x, int32_t *out ) {
 	stdlib_base_float64_get_high_word( x, &high );
 
 	// Shift the higher order word to the right by `20` bits (i.e., divide by `2^20`) and mask the lower `11` bits (i.e., `0x7FF`) to extract the exponent:
-	*out = (int32_t)( ( high >> 20 ) & 0x7FF );
+	*out = (int32_t)( ( ( high >> 20 ) & 0x7FF ) - 1023 );
 }
