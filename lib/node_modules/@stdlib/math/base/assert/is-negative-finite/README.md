@@ -20,7 +20,7 @@ limitations under the License.
 
 # isNegativeFinite
 
-> Test if a numeric value is a negative finite number.
+> Test if a double-precision floating-point numeric value is a negative finite number.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var isNegativeFinite = require( '@stdlib/math/base/assert/is-negative-finite' );
 
 #### isNegativeFinite( x )
 
-Tests if a `numeric` value is a negative finite number.
+Tests if a double-precision floating-point `numeric` value is a negative finite number.
 
 ```javascript
 var bool = isNegativeFinite( -3.14 );
