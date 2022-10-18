@@ -24,7 +24,22 @@ on:
   push:
     paths:
       # List paths for which changes should trigger this workflow:
-      - 'lib/**/'
+      - 'lib/**/bin/**'
+      - 'lib/**/data/**'
+      - 'lib/**/etc/**'
+      - 'lib/**/include/**'
+      - 'lib/**/lib/**'
+      - 'lib/**/src/**'
+      - 'lib/**/test/**'
+
+      - 'lib/**/*.gyp'
+      - 'lib/**/*.gypi'
+      - 'lib/**/manifest.json'
+
+      - 'package.json'
+
+      # List paths for which changes should *not* trigger this workflow:
+      - '!lib/**/_tools/**'
 
 # Workflow jobs:
 jobs:
@@ -83,7 +98,18 @@ jobs:
       # Run JavaScript tests:
       - name: 'Run JavaScript tests'
         run: |
-          directories="${{ steps.changed-directories.outputs.all_changed_files }}"
-          echo "Changed directories: $directories"
-        timeout-minutes: 5
+          all_changed="${{ steps.changed-directories.outputs.all_changed_files }}"
 
+          # Find unique package directories:
+          directories=$(echo "${directories}" | tr ' ' '\n' | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
+
+          # Find all test files in changed packages:
+          files=$(find ${directories} -wholename '**/test/test*.js' | grep -v '/fixtures/' | tr '\n' ' ')
+
+          # Exclude files residing in test fixtures directories:
+          files=$(echo "${files}" | grep -v '/fixtures/')
+
+          if [[ -n "${file}" ]]; then
+            make test-javascript-files FILES="${files}"
+          fi
+        timeout-minutes: 15
