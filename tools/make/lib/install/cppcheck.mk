@@ -71,7 +71,7 @@ ifeq ($(OS), WINNT)
 	$(QUIET) $(UNZIP) -q $(DEPS_CPPCHECK_DOWNLOAD_OUT) -d $@
 else
 	$(QUIET) echo 'Extracting cppcheck...' >&2
-	$(QUIET) $(TAR) --xz -xvf $(DEPS_CPPCHECK_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
+	$(QUIET) $(TAR) -xvf $(DEPS_CPPCHECK_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
 	$(QUIET) mv $(deps_cppcheck_extract_out) $(DEPS_CPPCHECK_BUILD_OUT)
 endif
 

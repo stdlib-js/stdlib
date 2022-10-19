@@ -116,7 +116,10 @@ jobs:
 
           files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$')
           if [ -n "${files}" ]; then
+            echo "Linting package.json files that have changed..."
             echo "${files}" | "${lint_package_json}"
+          else
+            echo "No package.json files to lint."
           fi
 
       # Lint REPL help files...
@@ -228,6 +231,12 @@ jobs:
 
           # Define the path to cppcheck configuration file for linting benchmarks:
           cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
+
+          # Install cppcheck if C files have changed:
+          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.c$|\.h$' | tr '\n' ' ' | sed 's/ $//')
+          if [[ -n "${files}" ]]; then
+            make install-deps-cppcheck
+          fi
 
           # Lint C source files...
           files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ' | sed 's/ $//')
