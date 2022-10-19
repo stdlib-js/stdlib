@@ -53,21 +53,14 @@ jobs:
     # Wait for the `check` job to complete before running this job:
     needs: [check]
 
-    # Only run this job if the pull request originates from an external repository:
-    if: needs.check.outputs.external == 'true'
+    # Only run this job if the pull request originates from an external repository and the pull request is assigned to `stdlib-js-bot`:
+    if: needs.check.outputs.external == 'true' && github.event.pull_request.assignee.login == 'stdlib-js-bot'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-
-      # Stop if pull request is not assigned to the `stdlib-bot` user:
-      - name: 'Stop if pull request is not assigned to the `stdlib-bot` user'
-        if: ${{ github.event.assignee.login != 'stdlib-bot' }}
-        run: |
-          echo "Pull request is not assigned to the `stdlib-bot` user. Exiting..."
-          exit 0
 
       # Checkout the pull request branch:
       - name: 'Checkout the pull request branch'
@@ -190,21 +183,14 @@ jobs:
     # Wait for the `check` job to complete before running this job:
     needs: [check]
 
-    # Only run this job if the pull request originates from the `stdlib-js` organization:
-    if: needs.check.outputs.external == 'false'
+    # Only run this job if the pull request originates from the `stdlib-js` organization and the pull request is assigned to `stdlib-js-bot`:
+    if: needs.check.outputs.external == 'false' && github.event.pull_request.assignee.login == 'stdlib-js-bot'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-      # Stop if pull request is not assigned to the `stdlib-bot` user:
-      - name: 'Stop if pull request is not assigned to the `stdlib-bot` user'
-        if: ${{ github.event.assignee.login != 'stdlib-bot' }}
-        run: |
-          echo "Pull request is not assigned to the `stdlib-bot` user. Exiting..."
-          exit 0
-
       # Checkout the pull request branch:
       - uses: actions/checkout@v3
         with:
