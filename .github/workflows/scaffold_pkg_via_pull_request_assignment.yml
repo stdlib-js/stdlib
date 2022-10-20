@@ -41,7 +41,7 @@ jobs:
       - name: 'Check whether the pull request originates from `stdlib-js` organization'
         id: check-external
         run: |
-          if [ ${{ github.event.pull_request.head.repo.owner }} = "stdlib-js" ]; then
+          if [ ${{ github.event.pull_request.head.repo.owner.login }} = "stdlib-js" ]; then
             echo "::set-output name=external::false"
           else
             echo "::set-output name=external::true"
@@ -54,7 +54,7 @@ jobs:
     needs: [check]
 
     # Only run this job if the pull request originates from an external repository and the pull request is assigned to `stdlib-js-bot`:
-    if: needs.check.outputs.external == 'true' && github.event.pull_request.assignee.login == 'stdlib-js-bot'
+    if: needs.check.outputs.external == 'true' && github.event.pull_request.assignee.login == 'stdlib-bot'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
@@ -98,11 +98,11 @@ jobs:
           base_sha: ${{ github.event.pull_request.base.sha }}
           sha: ${{ github.event.pull_request.head.sha }}
 
-      # Extract file path of added `README.md` file:
-      - name: 'Extract file path of added `README.md` file'
+      # Extract file path of added or modified `README.md` file:
+      - name: 'Extract file path of added or modified `README.md` file'
         id: extract-readme
         run: |
-          pkg_path=$(echo ${{ steps.changed-files.outputs.added_files }} | tr ' ' '\n' | grep 'README.md' | head -n 1)
+          pkg_path=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep 'README.md' | head -n 1)
 
           # Keep substring after `lib/node_modules/@stdlib/` and strip trailing `README.md`:
           pkg_path=$(echo $pkg_path | sed 's/.*lib\/node_modules\/@stdlib\///g' | sed 's/\/README.md//g')
@@ -136,7 +136,7 @@ jobs:
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          added-files: ${{ steps.changed-files.outputs.added_files }}
+          added-files: ${{ steps.changed-files.outputs.all_changed_files  }}
 
       # Commit changes:
       - name: 'Commit changes'
@@ -184,7 +184,7 @@ jobs:
     needs: [check]
 
     # Only run this job if the pull request originates from the `stdlib-js` organization and the pull request is assigned to `stdlib-js-bot`:
-    if: needs.check.outputs.external == 'false' && github.event.pull_request.assignee.login == 'stdlib-js-bot'
+    if: needs.check.outputs.external == 'false' && github.event.pull_request.assignee.login == 'stdlib-bot'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
@@ -227,7 +227,7 @@ jobs:
         run: |
           SLUG=${{ github.repository }}
           echo "Pushing changes to $SLUG..."
-          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" HEAD:${{ steps.scaffold.outputs.path }}
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" HEAD:${{ github.event.pull_request.head.ref }}
 
       # Add comment to the pull request:
       - name: 'Add comment to pull request'
