@@ -169,7 +169,7 @@ jobs:
             shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ','"
           echo "command: ${command}"
           files=$(eval ${command})
-          echo "::set-output name=files::$files"
+          echo "files=$files" >> $GITHUB_OUTPUT
 
       # Lint file names
       - name: 'Lint file names'
