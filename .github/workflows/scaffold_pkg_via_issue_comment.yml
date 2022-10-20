@@ -35,13 +35,17 @@ jobs:
       # Exit if comment does not contain scaffolding directive:
       - name: 'Exit if comment does not contain scaffolding directive'
         if: ${{ !contains(github.event.comment.body, 'scaffold') }}
-        run: exit 0
+        run: |
+          echo "Comment does not contain scaffolding directive. Exiting..."
+          exit 0
 
       # Checkout the current branch:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        if: ${{ contains(github.event.comment.body, 'scaffold') }}
 
       # Run the command to scaffold a package:
       - name: 'Scaffold package'
+        if: ${{ contains(github.event.comment.body, 'scaffold') }}
         id: scaffold
         uses: stdlib-js/scaffold-pkg-pr-action@main
         with:
@@ -49,6 +53,7 @@ jobs:
 
       # Create a pull request:
       - name: 'Create pull request'
+        if: ${{ contains(github.event.comment.body, 'scaffold') }}
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

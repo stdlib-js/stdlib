@@ -35,7 +35,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the new branch:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           # Refers to the branch name of the branch being pushed:
           ref: ${{ github.event.push.head.ref }}
@@ -93,7 +93,7 @@ jobs:
         run: |
           if [[ ${{ github.event.push.head.ref }} =~ ^scaffold-([0-9]+) ]]; then
             echo "Branch name contains an issue number: ${BASH_REMATCH[1]}"
-            echo "::set-output name=issue-number::${BASH_REMATCH[1]}"
+            echo "issue-number=${BASH_REMATCH[1]}" >> $GITHUB_OUTPUT
           fi
 
       # Add a comment to the pull request:

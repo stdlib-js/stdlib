@@ -41,22 +41,22 @@ if ( n == 0 ) {
 # Specify which linters to use...
 linters <- lintr::linters_with_defaults( defaults = default_linters,
 	# Check that no absolute paths are used:
-	absolute_path_linter = lintr::absolute_path_linter,
+	absolute_path_linter = lintr::absolute_path_linter(),
 
 	# Always use `<-` for assignment:
-	assignment_linter = lintr::assignment_linter,
+	assignment_linter = lintr::assignment_linter(),
 
 	# Commas must always be followed by spaces, but never have spaces before them:
-	commas_linter = lintr::commas_linter,
+	commas_linter = lintr::commas_linter(),
 
 	# Allow commented code outside roxygen blocks:
 	commented_code_linter = NULL, # lintr::commented_code_linter,
 
 	# Require the `[[` operator is used when extracting a single element from an object, not `[` (subsetting) or `$` (interactive use):
-	extraction_operator_linter = lintr::extraction_operator_linter,
+	extraction_operator_linter = lintr::extraction_operator_linter(),
 
 	# Require that integers are explicitly typed using the form `1L` instead of `1`:
-	implicit_integer_linter = lintr::implicit_integer_linter,
+	implicit_integer_linter = lintr::implicit_integer_linter(),
 
 	# Require that all infix operators have spaces around them:
 	infix_spaces_linter = NULL, # lintr::infix_spaces_linter,
@@ -65,10 +65,10 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	line_length_linter = lintr::line_length_linter( 200L ),
 
 	# Allow tabs:
-	no_tab_linter = NULL, # lintr::no_tab_linter,
+	no_tab_linter = NULL, # lintr::no_tab_linter(),
 
 	# Require that `file.path()` is used to construct safe and portable paths:
-	nonportable_path_linter = lintr::nonportable_path_linter,
+	nonportable_path_linter = lintr::nonportable_path_linter(),
 
 	# Limit the length of function and variable names (characters):
 	object_length_linter = lintr::object_length_linter( 30L ),
@@ -77,46 +77,46 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	object_name_linter = lintr::object_name_linter( "snake_case"),
 
 	# Require that closures have the proper usage using `checkUsage`:
-	object_usage_linter = lintr::object_usage_linter,
+	object_usage_linter = lintr::object_usage_linter(),
 
 	# Various style checks related to placement and spacing of curly braces:
 	brace_linter = lintr::brace_linter( allow_single_line = FALSE ),
 
 	# Require that each step in a pipeline is on a new line, except when the entire pipe fits on one line:
-	pipe_continuation_linter = lintr::pipe_continuation_linter,
+	pipe_continuation_linter = lintr::pipe_continuation_linter(),
 
 	# Allow semicolons to terminate statements:
-	semicolon_terminator_linter = lintr::semicolon_terminator_linter,
+	semicolon_linter = lintr::semicolon_linter( allow_trailing = TRUE ),
 
 	# Require that only single quotes be used to delimit strings:
-	single_quotes_linter = lintr::single_quotes_linter,
+	single_quotes_linter = lintr::single_quotes_linter(),
 
 	# Allow spaces directly inside parentheses and square brackets:
-	spaces_inside_linter = NULL, # lintr::spaces_inside_linter,
+	spaces_inside_linter = NULL, # lintr::spaces_inside_linter(),
 
 	# Require that all left parentheses have a space before them, except for function calls: (disabled as not reliable)
-	spaces_left_parentheses_linter = NULL, # lintr::spaces_left_parentheses_linter,
+	spaces_left_parentheses_linter = NULL, # lintr::spaces_left_parentheses_linter(),
 
 	# Ensure that source code does not contain TODO comments (case-insensitive):
-	todo_comment_linter = lintr::todo_comment_linter,
+	todo_comment_linter = lintr::todo_comment_linter(),
 
 	# Never allow trailing blank lines:
-	trailing_blank_lines_linter = lintr::trailing_blank_lines_linter,
+	trailing_blank_lines_linter = lintr::trailing_blank_lines_linter(),
 
 	# Never allow trailing whitespace characters:
-	trailing_whitespace_linter = lintr::trailing_whitespace_linter,
+	trailing_whitespace_linter = lintr::trailing_whitespace_linter(),
 
 	# Avoid the symbols `T` and `F` for `TRUE` and `FALSE`, respectively:
-	T_and_F_symbol_linter = lintr::T_and_F_symbol_linter,
+	T_and_F_symbol_linter = lintr::T_and_F_symbol_linter(),
 
 	# Report the use of undesirable functions (e.g., `options` or `sapply`) and suggest an alternative:
-	undesirable_function_linter = lintr::undesirable_function_linter,
+	undesirable_function_linter = lintr::undesirable_function_linter(),
 
 	# Report the use of undesirable operators (e.g., `:::` or `<<-`) and suggest an alternative:
-	undesirable_operator_linter = lintr::undesirable_operator_linter,
+	undesirable_operator_linter = lintr::undesirable_operator_linter(),
 
 	# Ensure that the `c` function is not used without arguments or with a single constant:
-	unneeded_concatenation_linter = lintr::unneeded_concatenation_linter
+	unneeded_concatenation_linter = lintr::unneeded_concatenation_linter()
 );
 
 # Lint each file...

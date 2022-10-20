@@ -41,10 +41,10 @@ jobs:
       - name: 'Check whether the pull request originates from `stdlib-js` organization'
         id: check-external
         run: |
-          if [ ${{ github.event.pull_request.head.repo.owner }} = "stdlib-js" ]; then
-            echo "::set-output name=external::false"
+          if [ ${{ github.event.pull_request.head.repo.owner.login }} = "stdlib-js" ]; then
+            echo "external=false" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=external::true"
+            echo "external=true" >> $GITHUB_OUTPUT
           fi
 
   # Define a job for scaffolding a package based off `README.md` contents:
@@ -53,21 +53,14 @@ jobs:
     # Wait for the `check` job to complete before running this job:
     needs: [check]
 
-    # Only run this job if the pull request originates from an external repository:
-    if: needs.check.outputs.external == 'true'
+    # Only run this job if the pull request originates from an external repository and the pull request is assigned to `stdlib-js-bot`:
+    if: needs.check.outputs.external == 'true' && github.event.pull_request.assignee.login == 'stdlib-bot'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-
-      # Stop if pull request is not assigned to the `stdlib-bot` user:
-      - name: 'Stop if pull request is not assigned to the `stdlib-bot` user'
-        if: ${{ github.event.assignee.login != 'stdlib-bot' }}
-        run: |
-          echo "Pull request is not assigned to the `stdlib-bot` user. Exiting..."
-          exit 0
 
       # Checkout the pull request branch:
       - name: 'Checkout the pull request branch'
@@ -105,17 +98,17 @@ jobs:
           base_sha: ${{ github.event.pull_request.base.sha }}
           sha: ${{ github.event.pull_request.head.sha }}
 
-      # Extract file path of added `README.md` file:
-      - name: 'Extract file path of added `README.md` file'
+      # Extract file path of added or modified `README.md` file:
+      - name: 'Extract file path of added or modified `README.md` file'
         id: extract-readme
         run: |
-          pkg_path=$(echo ${{ steps.changed-files.outputs.added_files }} | tr ' ' '\n' | grep 'README.md' | head -n 1)
+          pkg_path=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep 'README.md' | head -n 1)
 
           # Keep substring after `lib/node_modules/@stdlib/` and strip trailing `README.md`:
           pkg_path=$(echo $pkg_path | sed 's/.*lib\/node_modules\/@stdlib\///g' | sed 's/\/README.md//g')
 
           # Set package path as output:
-          echo "::set-output name=pkg_path::$pkg_path"
+          echo "pkg_path=$pkg_path" >> $GITHUB_OUTPUT
 
       # Copy files from forked repository to new branch on `stdlib-js/stdlib` repository:
       - name: 'Copy files from forked repository to new branch on `stdlib-js/stdlib` repository'
@@ -143,7 +136,7 @@ jobs:
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          added-files: ${{ steps.changed-files.outputs.added_files }}
+          added-files: ${{ steps.changed-files.outputs.all_changed_files  }}
 
       # Commit changes:
       - name: 'Commit changes'
@@ -171,7 +164,14 @@ jobs:
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
-            Based off the `README.md` file, the [stdlib-bot](https://github.com/stdlib-bot) has generated contents for the [${{ steps.scaffold.outputs.alias }}](../tree/${{ steps.scaffold.outputs.path }}/${{ steps.scaffold.outputs.dir }}) package.
+            Based off the `README.md` file, the [stdlib-bot](https://github.com/stdlib-bot) has generated contents for the [${{ steps.scaffold.outputs.alias }}](../tree/scaffold-${{ github.event.pull_request.number }}/${{ steps.scaffold.outputs.path }}/${{ steps.scaffold.outputs.dir }}) package.
+
+            From your local fork, make sure you are on the pull request branch and then merge the changes from the upstream repository:
+
+            ```bash
+             git checkout {{ github.event.pull_request.head.ref }}
+             git merge upstream/scaffold-${{ github.event.pull_request.number }}/${{ steps.scaffold.outputs.path }}
+             ```
 
             ## Notes
 
@@ -183,23 +183,16 @@ jobs:
     # Wait for the `check` job to complete before running this job:
     needs: [check]
 
-    # Only run this job if the pull request originates from the `stdlib-js` organization:
-    if: needs.check.outputs.external == 'false'
+    # Only run this job if the pull request originates from the `stdlib-js` organization and the pull request is assigned to `stdlib-js-bot`:
+    if: needs.check.outputs.external == 'false' && github.event.pull_request.assignee.login == 'stdlib-bot'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-      # Stop if pull request is not assigned to the `stdlib-bot` user:
-      - name: 'Stop if pull request is not assigned to the `stdlib-bot` user'
-        if: ${{ github.event.assignee.login != 'stdlib-bot' }}
-        run: |
-          echo "Pull request is not assigned to the `stdlib-bot` user. Exiting..."
-          exit 0
-
       # Checkout the pull request branch:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           # Refers to the branch name of the pull request:
           ref: ${{ github.event.pull_request.head.ref }}
@@ -234,7 +227,7 @@ jobs:
         run: |
           SLUG=${{ github.repository }}
           echo "Pushing changes to $SLUG..."
-          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" HEAD:${{ steps.scaffold.outputs.path }}
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" HEAD:${{ github.event.pull_request.head.ref }}
 
       # Add comment to the pull request:
       - name: 'Add comment to pull request'
