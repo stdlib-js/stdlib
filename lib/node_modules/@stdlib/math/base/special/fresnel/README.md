@@ -49,7 +49,7 @@ Some sources define the Fresnel integrals using t<sup>2</sup> for the argument o
 var fresnel = require( '@stdlib/math/base/special/fresnel' );
 ```
 
-#### fresnel( \[out,] x )
+#### fresnel( x )
 
 Simultaneously computes the [Fresnel integrals][fresnel-integral] S(x) and C(x).
 
@@ -70,14 +70,16 @@ v = fresnel( NaN );
 // returns [ NaN, NaN ]
 ```
 
-By default, the function returns the S(x) and C(x) as a two-element `array`. To avoid extra memory allocation, the function supports providing an output (destination) object.
+#### fresnel.assign( x, out, stride, offset )
+
+Simultaneously computes the [Fresnel integrals][fresnel-integral] S(x) and C(x) and assigns results to a provided output array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
 var out = new Float64Array( 2 );
 
-var v = fresnel( out, 0.0 );
+var v = fresnel.assign( 0.0, out, 1, 0 );
 // returns <Float64Array>[ ~0.0, ~0.0 ]
 
 var bool = ( v === out );
