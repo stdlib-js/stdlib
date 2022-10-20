@@ -204,10 +204,10 @@ jobs:
           files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Add space-separated list of R files to output:
-            echo "::set-output name=files::${files}"
+            echo "files=${files}" >> $GITHUB_OUTPUT
           else
             # Add empty string to output:
-            echo "::set-output name=files::"
+            echo "files=" >> $GITHUB_OUTPUT
           fi
 
       # Setup R:

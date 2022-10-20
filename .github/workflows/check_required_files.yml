@@ -66,9 +66,9 @@ jobs:
 
           # Check if the list of reviewers contains the `stdlib-bot` user:
           if [[ $reviewers == *"stdlib-bot"* ]]; then
-            echo "::set-output name=is_stdlib_bot::true"
+            echo "is_stdlib_bot=true" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=is_stdlib_bot::false"
+            echo "is_stdlib_bot=false" >> $GITHUB_OUTPUT
           fi
 
       # Configure git:
@@ -166,8 +166,8 @@ jobs:
           done
 
           # Add the list of missing and required files to the workflow output:
-          echo "::set-output name=missing_files::${missing_files[*]}"
-          echo "::set-output name=required_files::${required_files[*]}"
+          echo "missing_files=${missing_files[*]}" >> $GITHUB_OUTPUT
+          echo "required_files=${required_files[*]}" >> $GITHUB_OUTPUT
 
           body=""
           if [[ "${#missing_files[@]}" -eq 0 ]]; then
@@ -194,7 +194,7 @@ jobs:
           body="${body//'%'/'%25'}"
           body="${body//$'\n'/'%0A'}"
           body="${body//$'\r'/'%0D'}"
-          echo "::set-output name=comment-body::${body}"
+          echo "comment-body=${body}" >> $GITHUB_OUTPUT
 
         shell: bash
         timeout-minutes: 10

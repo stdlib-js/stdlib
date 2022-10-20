@@ -42,9 +42,9 @@ jobs:
         id: check-external
         run: |
           if [ ${{ github.event.pull_request.head.repo.owner.login }} = "stdlib-js" ]; then
-            echo "::set-output name=external::false"
+            echo "external=false" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=external::true"
+            echo "external=true" >> $GITHUB_OUTPUT
           fi
 
   # Define a job for scaffolding a package based off `README.md` contents:
@@ -108,7 +108,7 @@ jobs:
           pkg_path=$(echo $pkg_path | sed 's/.*lib\/node_modules\/@stdlib\///g' | sed 's/\/README.md//g')
 
           # Set package path as output:
-          echo "::set-output name=pkg_path::$pkg_path"
+          echo "pkg_path=$pkg_path" >> $GITHUB_OUTPUT
 
       # Copy files from forked repository to new branch on `stdlib-js/stdlib` repository:
       - name: 'Copy files from forked repository to new branch on `stdlib-js/stdlib` repository'

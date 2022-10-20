@@ -91,7 +91,7 @@ jobs:
       # Generate list of changed Markdown files:
       - name: 'Find changed Markdown files'
         run: |
-          echo "::set-output name=files::$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .md | tr '\n' ' ')"
+          echo "files=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .md | tr '\n' ' ')" >> $GITHUB_OUTPUT
         id: changed
 
       # Generate SVG equations:
@@ -102,12 +102,12 @@ jobs:
 
           if [[ -z "$(git status --porcelain)" ]]; then
             # If no files were changed, exit with a success status code:
-            echo "::set-output name=changed::false"
+            echo "changed=false" >> $GITHUB_OUTPUT
             exit 0
           else
             # Otherwise, add changed files to the staging area and commit:
             git add -A && git commit -m "Add SVG equations"
-            echo "::set-output name=changed::true"
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 15
 
@@ -120,12 +120,12 @@ jobs:
 
           if [[ -z "$(git status --porcelain)" ]]; then
             # If no files were changed, exit with a success status code:
-            echo "::set-output name=changed::false"
+            echo "changed=false" >> $GITHUB_OUTPUT
             exit 0
           else
             # Otherwise, add changed files to the staging area and commit:
             git add -A && git commit -m "Update Markdown equation elements"
-            echo "::set-output name=changed::true"
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 15
 
