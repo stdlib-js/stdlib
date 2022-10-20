@@ -103,13 +103,27 @@ jobs:
           # Find unique package directories:
           directories=$(echo "${all_changed}" | tr ' ' '\n' | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
 
-          # Find all test files in changed packages:
+          # Extract package names from changed package directories (e.g., @stdlib/math/base/special/sin) by removing the leading 'lib/node_modules/':
+          packages=$(echo "${directories}" | sed -E 's/^lib\/node_modules\///')
+
+          # Find all package directories which `require()` one of the changed packages:
+          required_by=""
+          for package in ${packages}; do
+            echo "Finding packages which depend on '${package}'..."
+            dependents=$( dirname $(find lib/node_modules/@stdlib -type f -name '*.js' -print0 | xargs -0 grep -ol -E "require\( [']${package}['] \)") | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
+            required_by="${required_by} ${dependents}"
+          done
+
+          # Concatenate the list of changed package directories and package directories which `require()` one of the changed packages:
+          directories="${directories} ${required_by}"
+
+          # Find all test files in package directories:
           files=$(find ${directories} -wholename '**/test/test*.js' | grep -v '/fixtures/' | tr '\n' ' ')
 
           # Exclude files residing in test fixtures directories:
           files=$(echo "${files}" | grep -v '/fixtures/')
 
-          if [[ -n "${file}" ]]; then
+          if [[ -n "${files}" ]]; then
             make test-javascript-files FILES="${files}"
           fi
         timeout-minutes: 15
