@@ -60,7 +60,7 @@ jobs:
         id: package_name
         run: |
           name=`node -e 'console.log(require("./package.json").name)' | tr -d '\n'`
-          echo "::set-output name=package_name::$name"
+          echo "package_name=$name" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
       # Fetch download data:
@@ -72,7 +72,7 @@ jobs:
           data=$(curl "$url")
           mkdir ./tmp
           echo "$data" > ./tmp/npm_downloads.json
-          echo "::set-output name=data::$data"
+          echo "data=$data" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
       # Print summary of download data:

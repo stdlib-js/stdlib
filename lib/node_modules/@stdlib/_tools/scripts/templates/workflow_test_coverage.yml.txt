@@ -88,11 +88,11 @@ jobs:
         id: extract-coverage
         run: |
           coverage=`cat reports/coverage/lcov-report/index.html | grep "fraction" | grep -oP '\d+/\d+' | printf %s "$(cat)" | jq -R -s -c 'split("\n")'`
-          echo "::set-output name=coverage::$coverage"
+          echo "coverage=$coverage" >> $GITHUB_OUTPUT
 
           # Format coverage as Markdown table row:
           table=`echo $coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/; s/\]/|/'`
-          echo "::set-output name=table::$table"
+          echo "table=$table" >> $GITHUB_OUTPUT
 
       # Print coverage report to GitHub Actions log:
       - name: 'Print coverage report to GitHub Actions log'
