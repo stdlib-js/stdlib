@@ -83,7 +83,7 @@ jobs:
         id: results
         with:
           exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
-        timeout-minutes: 120
+        timeout-minutes: 240
 
       # Check whether links are included in `docs/links/database.json` and use the correct identifier:
       - name: 'Check links against database'

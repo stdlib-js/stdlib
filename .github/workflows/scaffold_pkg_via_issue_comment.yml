@@ -54,7 +54,7 @@ jobs:
       # Create a pull request:
       - name: 'Create pull request'
         if: ${{ contains(github.event.comment.body, 'scaffold') }}
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Add `${{ steps.scaffold.outputs.alias }}`

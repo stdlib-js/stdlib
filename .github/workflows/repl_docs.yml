@@ -101,7 +101,7 @@ jobs:
       # Create a pull request with the updated documentation:
       - name: 'Create pull request'
         id: cpr
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           title: 'Update REPL namespace'
           body: |
