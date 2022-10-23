@@ -1,4 +1,16 @@
 {
+  "http://asmjs.org/spec/latest/": {
+    "id": "asm",
+    "description": "Specification of asm.js, a strict subset of JavaScript that can be used as a low-level, efficient target language for compilers.",
+    "short_url": "",
+    "keywords": [
+      "asm",
+      "asm.js",
+      "asmjs",
+      "spec",
+      "specification"
+    ]
+  },
   "http://blog.izs.me/post/59142742143/designing-apis-for-asynchrony": {
     "id": "zalgo",
     "description": "Blog post by Isaac Z. Schlueter on designing asynchronous APIs and releasing Zalgo.",
@@ -6,6 +18,55 @@
     "keywords": [
       "asynchronous",
       "node.js"
+    ]
+  },
+  "http://bokeh.pydata.org/en/latest/": {
+    "id": "bokeh",
+    "description": "Bokeh is a Python interactive visualization library that targets modern web browsers for presentation.",
+    "short_url": "",
+    "keywords": [
+      "visualization",
+      "plotting",
+      "charts",
+      "graphs",
+      "data",
+      "science",
+      "python"
+    ]
+  },
+  "http://chris.beams.io/posts/git-commit/": {
+    "id": "git-seven-rules",
+    "description": "Seven rules of a great Git commit message.",
+    "short_url": "",
+    "keywords": [
+      "git",
+      "commit",
+      "message"
+    ]
+  },
+  "http://citationstyles.org/": {
+    "id": "csl",
+    "description": "Citation Style Language (CSL) citation and bibliography formatting.",
+    "short_url": "",
+    "keywords": [
+      "citation",
+      "bibliography",
+      "csl",
+      "citationstyles",
+      "citationstyles.org"
+    ]
+  },
+  "http://clang.llvm.org/": {
+    "id": "clang",
+    "description": "C language family frontend for LLVM.",
+    "short_url": "",
+    "keywords": [
+      "clang",
+      "llvm",
+      "c",
+      "c++",
+      "c-family",
+      "compiler"
     ]
   },
   "http://cppcheck.sourceforge.net/": {
@@ -33,6 +94,27 @@
       "freecontent"
     ]
   },
+  "http://curl.haxx.se/": {
+    "id": "curl",
+    "description": "Command line tool and library for transferring data with URL syntax.",
+    "short_url": "",
+    "keywords": [
+      "curl",
+      "http",
+      "https",
+      "libcurl"
+    ]
+  },
+  "http://dave.cheney.net/2014/06/07/five-things-that-make-go-fast": {
+    "id": "five-things-that-make-go-fast",
+    "description": "Dave Cheney's blog post on five things that make Go fast.",
+    "short_url": "",
+    "keywords": [
+      "go",
+      "golang",
+      "performance"
+    ]
+  },
   "http://davidcel.is/posts/stop-validating-email-addresses-with-regex/": {
     "id": "validate-email-address",
     "description": "Blog entry by David Celis arguing that one should not try to validate email addresses via regular expressions.",
@@ -41,6 +123,17 @@
       "regexp",
       "email",
       "validation"
+    ]
+  },
+  "http://docs.python-guide.org/en/latest/dev/virtualenvs/": {
+    "id": "virtualenvs",
+    "description": "Python Guide on virtual environments.",
+    "short_url": "",
+    "keywords": [
+      "python",
+      "virtualenv",
+      "virtualenvs",
+      "virtual environments"
     ]
   },
   "http://ecma-international.org/ecma-262/5.1/#sec-9.12": {
@@ -64,6 +157,27 @@
       "ide"
     ]
   },
+  "http://en.cppreference.com/w/cpp/numeric/math/fdim": {
+    "id": "fdim",
+    "description": "C++ reference for the fdim function.",
+    "short_url": "",
+    "keywords": [
+      "c++",
+      "math",
+      "fdim"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/2147483647": {
+    "id": "max-int32",
+    "description": "Wikipedia article on the maximum value of a 32-bit signed integer.",
+    "short_url": "",
+    "keywords": [
+      "int",
+      "integer",
+      "2147483647",
+      "2^31-1"
+    ]
+  },
   "http://en.wikipedia.org/wiki/Anagram": {
     "id": "anagram",
     "description": "Wikipedia entry for anagrams.",
@@ -73,6 +187,26 @@
       "anagram",
       "words",
       "letters"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Beta_function": {
+    "id": "beta-function",
+    "description": "Wikipedia entry for the beta function.",
+    "short_url": "",
+    "keywords": [
+      "beta",
+      "function",
+      "math"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Catalan%27s_constant": {
+    "id": "catalan-constant",
+    "description": "Wikipedia entry for Catalan's constant.",
+    "short_url": "",
+    "keywords": [
+      "catalan",
+      "constant",
+      "math"
     ]
   },
   "http://en.wikipedia.org/wiki/Diacritic": {
@@ -99,6 +233,75 @@
       "bit"
     ]
   },
+  "http://en.wikipedia.org/wiki/Fluent_interface": {
+    "id": "fluent-interface",
+    "description": "Wikipedia entry for fluent interfaces.",
+    "short_url": "",
+    "keywords": [
+      "fluent",
+      "interface",
+      "design",
+      "pattern"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Golden_ratio": {
+    "id": "phi",
+    "description": "Wikipedia entry for the golden ratio.",
+    "short_url": "",
+    "keywords": [
+      "phi",
+      "golden",
+      "ratio",
+      "math"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Greatest_common_divisor": {
+    "id": "gcd",
+    "description": "Wikipedia entry for the greatest common divisor.",
+    "short_url": "",
+    "keywords": [
+      "gcd",
+      "greatest",
+      "common",
+      "divisor",
+      "math"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Linear_congruential_generator#Advantages_and_disadvantages_of_LCGs": {
+    "id": "pros-cons",
+    "description": "Wikipedia entry on the pros and cons of linear congruential generators.",
+    "short_url": "",
+    "keywords": [
+      "pros",
+      "cons",
+      "linear",
+      "congruential",
+      "generator",
+      "random",
+      "numbers"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Norm_%28mathematics%29": {
+    "id": "l1norm",
+    "description": "Wikipedia entry for the L1 norm.",
+    "short_url": "",
+    "keywords": [
+      "l1",
+      "norm",
+      "math"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Pipeline_%28Unix%29": {
+    "id": "standard-stream",
+    "description": "Wikipedia entry for UNIX pipelines.",
+    "short_url": "",
+    "keywords": [
+      "standard",
+      "stream",
+      "unix",
+      "pipeline"
+    ]
+  },
   "http://en.wikipedia.org/wiki/Pythagorean_theorem": {
     "id": "hypotenuse",
     "description": "Wikipedia entry on the Pythagorean theorem and the hypotenuse of a triangle.",
@@ -110,6 +313,17 @@
       "triangle",
       "theorem",
       "hypotenuse"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Sign_function": {
+    "id": "signum",
+    "description": "Wikipedia entry for the signum function.",
+    "short_url": "",
+    "keywords": [
+      "signum",
+      "sign",
+      "function",
+      "math"
     ]
   },
   "http://en.wikipedia.org/wiki/URI_scheme": {
@@ -137,6 +351,33 @@
       "ecmascript"
     ]
   },
+  "http://gcc.gnu.org/": {
+    "id": "gcc",
+    "description": "The GNU Compiler Collection.",
+    "short_url": "",
+    "keywords": [
+      "compiler",
+      "c",
+      "c++",
+      "c++11",
+      "c++14",
+      "gnu"
+    ]
+  },
+  "http://geojson.org/": {
+    "id": "geojson",
+    "description": "GeoJSON is a format for encoding a variety of geographic data structures.",
+    "short_url": "",
+    "keywords": [
+      "geojson",
+      "geo",
+      "json",
+      "geography",
+      "geospatial",
+      "map",
+      "mapping"
+    ]
+  },
   "http://jshint.com/": {
     "id": "jshint",
     "description": "A static code analysis tool for JavaScript.",
@@ -150,6 +391,17 @@
       "js"
     ]
   },
+  "http://json-schema.org/": {
+    "id": "json-schema",
+    "description": "JSON Schema is a vocabulary that allows you to annotate and validate JSON documents.",
+    "short_url": "",
+    "keywords": [
+      "json",
+      "schema",
+      "json-schema",
+      "jsonschema"
+    ]
+  },
   "http://jupyter.org/": {
     "id": "jupyter",
     "description": "Official homepage for Jupyter, an open source project whose principal offering is the Jupyter notebook, an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.",
@@ -157,6 +409,39 @@
     "keywords": [
       "jupyter",
       "python"
+    ]
+  },
+  "http://kapadia.github.io/emscripten/2013/09/13/emscripten-pointers-and-pointers.html": {
+    "id": "emscripten-pointers",
+    "description": "Emscripten pointers and pointers blog post.",
+    "short_url": "",
+    "keywords": [
+      "emscripten",
+      "pointer",
+      "pointers",
+      "c",
+      "c++"
+    ]
+  },
+  "http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/": {
+    "id": "tab-indentation",
+    "description": "Blog post on why tabs are superior to spaces for indentation.",
+    "short_url": "",
+    "keywords": [
+      "tab",
+      "indentation",
+      "space",
+      "spaces"
+    ]
+  },
+  "http://lunrjs.com/": {
+    "id": "lunr-js",
+    "description": "Lunr.js is a simple full-text search engine for the browser.",
+    "short_url": "",
+    "keywords": [
+      "lunr",
+      "lunr.js",
+      "search"
     ]
   },
   "http://man7.org/linux/man-pages/man2/chdir.2.html": {
@@ -243,6 +528,66 @@
       "user"
     ]
   },
+  "http://mathworld.wolfram.com/Euler-MascheroniConstant.html": {
+    "id": "eulergamma",
+    "description": "Wolfram MathWorld page on the Euler-Mascheroni constant.",
+    "short_url": "",
+    "keywords": [
+      "eulergamma",
+      "euler",
+      "gamma",
+      "constant",
+      "math",
+      "mathworld"
+    ]
+  },
+  "http://mathworld.wolfram.com/HyperbolicCosine.html": {
+    "id": "hyperbolic-cosine",
+    "description": "Wolfram MathWorld page on the hyperbolic cosine function.",
+    "short_url": "",
+    "keywords": [
+      "hyperbolic",
+      "cosine",
+      "cosh",
+      "math",
+      "mathworld"
+    ]
+  },
+  "http://mathworld.wolfram.com/HyperbolicSine.html": {
+    "id": "hyperbolic-sine",
+    "description": "Wolfram MathWorld page on the hyperbolic sine function.",
+    "short_url": "",
+    "keywords": [
+      "hyperbolic",
+      "sine",
+      "sinh",
+      "math",
+      "mathworld"
+    ]
+  },
+  "http://mathworld.wolfram.com/HyperbolicTangent.html": {
+    "id": "hyperbolic-tangent",
+    "description": "Wolfram MathWorld page on the hyperbolic tangent function.",
+    "short_url": "",
+    "keywords": [
+      "hyperbolic",
+      "tangent",
+      "tanh",
+      "math",
+      "mathworld"
+    ]
+  },
+  "http://mathworld.wolfram.com/MaclaurinSeries.html": {
+    "id": "maclaurin-series",
+    "description": "Wolfram MathWorld page on the Maclaurin series.",
+    "short_url": "",
+    "keywords": [
+      "maclaurin",
+      "series",
+      "math",
+      "mathworld"
+    ]
+  },
   "http://nginx.org/en/docs/": {
     "id": "nginx",
     "description": "Official documentation for nginx, an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server.",
@@ -251,6 +596,17 @@
       "nginx",
       "server",
       "proxy"
+    ]
+  },
+  "http://nvie.com/posts/a-successful-git-branching-model/": {
+    "id": "git-flow",
+    "description": "A successful Git branching model by Vincent Driessen.",
+    "short_url": "",
+    "keywords": [
+      "git",
+      "flow",
+      "branching",
+      "model"
     ]
   },
   "http://oeis.org/A000027": {
@@ -287,6 +643,28 @@
       "sequence",
       "seq",
       "squares",
+      "integers",
+      "numbers"
+    ]
+  },
+  "http://oeis.org/A001622": {
+    "id": "phi-value",
+    "description": "The OEIS entry for the sequence of phi values.",
+    "short_url": "",
+    "keywords": [
+      "phi",
+      "sequence",
+      "seq"
+    ]
+  },
+  "http://oeis.org/A005408": {
+    "id": "oeis-a005408",
+    "description": "The OEIS entry for the sequence of odd numbers.",
+    "short_url": "",
+    "keywords": [
+      "odd",
+      "sequence",
+      "seq",
       "integers",
       "numbers"
     ]
@@ -343,6 +721,66 @@
       "pddl-1.0"
     ]
   },
+  "http://pandoc.org/": {
+    "id": "pandoc",
+    "description": "Pandoc is a tool for converting between markup formats.",
+    "short_url": "",
+    "keywords": [
+      "pandoc",
+      "markdown",
+      "html",
+      "format",
+      "convert",
+      "conversion"
+    ]
+  },
+  "http://scikit-learn.org/stable/": {
+    "id": "scikit-learn",
+    "description": "Scikit-learn is a Python module for machine learning built on top of SciPy.",
+    "short_url": "",
+    "keywords": [
+      "scikit-learn",
+      "machine",
+      "learning",
+      "python",
+      "module"
+    ]
+  },
+  "http://semver.org/": {
+    "id": "semver",
+    "description": "Semantic Versioning",
+    "short_url": "",
+    "keywords": [
+      "semver",
+      "versioning",
+      "semantic",
+      "version"
+    ]
+  },
+  "http://shiny.rstudio.com/": {
+    "id": "shiny",
+    "description": "Shiny is an R package that makes it easy to build interactive web apps straight from R.",
+    "short_url": "",
+    "keywords": [
+      "shiny",
+      "r",
+      "package",
+      "interactive",
+      "web",
+      "app"
+    ]
+  },
+  "http://sideeffect.kr/popularconvention/#javascript": {
+    "id": "popular-convention",
+    "description": "Popular conventions in JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "javascript",
+      "convention",
+      "popular",
+      "js"
+    ]
+  },
   "http://spamassassin.apache.org/old/publiccorpus/readme.html": {
     "id": "spam-assassin",
     "description": "SpamAssassin public mail corpus for testing spam filtering systems.",
@@ -369,6 +807,33 @@
       "serialize"
     ]
   },
+  "http://stackoverflow.com/questions/11392478/how-to-replace-a-string-in-multiple-files-in-linux-command-line": {
+    "id": "sed-find-and-replace",
+    "description": "Stack Overflow question on how to replace a string in multiple files in Linux command line.",
+    "short_url": "",
+    "keywords": [
+      "sed",
+      "find",
+      "replace",
+      "string",
+      "linux",
+      "command",
+      "line"
+    ]
+  },
+  "http://stackoverflow.com/research/developer-survey-2016": {
+    "id": "stackoverflow-developer-survey",
+    "description": "Stack Overflow Developer Survey 2016.",
+    "short_url": "",
+    "keywords": [
+      "survey",
+      "stackoverflow",
+      "developer",
+      "developers",
+      "stack",
+      "overflow"
+    ]
+  },
   "http://testanything.org/tap-version-13-specification.html": {
     "id": "tap",
     "description": "Test Anything Protocol, a protocol for transmission of unit testing results.",
@@ -381,6 +846,17 @@
       "perl",
       "cs",
       "unittest"
+    ]
+  },
+  "http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html": {
+    "id": "bash-profile",
+    "description": "Bash initialization files.",
+    "short_url": "",
+    "keywords": [
+      "bash",
+      "profile",
+      "bashrc",
+      "bash_profile"
     ]
   },
   "http://usejsdoc.org/": {
@@ -437,6 +913,17 @@
       "ecmascript"
     ]
   },
+  "http://www.2ality.com/2013/10/safe-integers.html": {
+    "id": "safe-integers",
+    "description": "Blog post by Dr. Axel Rauschmeyer on safe integers in JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "safe",
+      "integer",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "http://www.2ality.com/2015/09/function-names-es6.html": {
     "id": "2ality-function-names",
     "description": "Blog post by Dr. Axel Rauschmeyer on the name property of a JavaScript function.",
@@ -475,6 +962,38 @@
       "reference implementations"
     ]
   },
+  "http://www.catb.org/~esr/writings/taoup/html/ch01s06.html": {
+    "id": "unix-philosophy",
+    "description": "The Unix Philosophy.",
+    "short_url": "",
+    "keywords": [
+      "unix",
+      "philosophy",
+      "esr",
+      "eric",
+      "raymond"
+    ]
+  },
+  "http://www.cs.mtu.edu/~shene/COURSES/cs201/NOTES/F90-Subprograms.pdf": {
+    "id": "fortran-90-subprograms",
+    "description": "A PDF document slideshow on subprograms in Fortran 90.",
+    "short_url": "",
+    "keywords": [
+      "fortran",
+      "subprograms",
+      "functions",
+      "subroutines"
+    ]
+  },
+  "http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon": {
+    "id": "sentiment-lexicon",
+    "description": "A list of sentiment lexicons.",
+    "short_url": "",
+    "keywords": [
+      "sentiment",
+      "lexicon"
+    ]
+  },
   "http://www.ecma-international.org/ecma-262/5.1": {
     "id": "ecma-262",
     "description": "ECMAScript language specification.",
@@ -499,6 +1018,42 @@
       "ecma"
     ]
   },
+  "http://www.ecma-international.org/ecma-262/6.0/#sec-arraycreate": {
+    "id": "ecma-262-array-length",
+    "description": "Array length behavior according to ECMAScript specification.",
+    "short_url": "",
+    "keywords": [
+      "specification",
+      "javascript",
+      "ecmascript",
+      "array",
+      "length",
+      "ecma262",
+      "ecma-262",
+      "ecma"
+    ]
+  },
+  "http://www.ecma-international.org/ecma-262/6.0/#sec-math.round": {
+    "id": "ecma-262-math-round",
+    "description": "Math.round behavior according to ECMAScript specification.",
+    "short_url": "",
+    "keywords": [
+      "specification",
+      "javascript",
+      "ecmascript",
+      "math",
+      "round",
+      "ecma262",
+      "ecma-262",
+      "ecma"
+    ]
+  },
+  "http://www.ecma-international.org/ecma-262/6.0/#sec-tolength": {
+    "id": "ecma-262-tolength",
+    "description": "ToLength behavior according to ECMAScript specification.",
+    "short_url": "",
+    "keywords": []
+  },
   "http://www.fq.math.ca/Scanned/3-3/gould.pdf": {
     "id": "@gould:1965a",
     "description": "Gould, H.W. 1965. \"Non-Fibonacci Numbers.\" *Fibonacci Quarterly*, no. 3: 177–83.",
@@ -509,6 +1064,15 @@
       "integers",
       "sequences",
       "number theory"
+    ]
+  },
+  "http://www.freebsd.org/cgi/man.cgi?fetch%281%29": {
+    "id": "fetch",
+    "description": "The FreeBSD manual page for the fetch(1) command.",
+    "short_url": "",
+    "keywords": [
+      "fetch",
+      "freebsd"
     ]
   },
   "http://www.getty.edu/about/opencontent.html": {
@@ -522,6 +1086,15 @@
       "opencontent",
       "fairuse",
       "copyright"
+    ]
+  },
+  "http://www.gnu.org/software/wget": {
+    "id": "wget",
+    "description": "GNU Wget homepage.",
+    "short_url": "",
+    "keywords": [
+      "wget",
+      "gnu"
     ]
   },
   "http://www.json.org/": {
@@ -546,12 +1119,60 @@
       "education"
     ]
   },
+  "http://www.modulecounts.com/": {
+    "id": "module-counts",
+    "description": "A website that tracks the number of modules in the npm registry and other package managers.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "modules",
+      "package",
+      "managers",
+      "registry"
+    ]
+  },
   "http://www.moshier.net/#Cephes": {
     "id": "cephes",
     "description": "Moshier's website which provides Cephes distributions.",
     "short_url": "",
     "keywords": [
       "cephes",
+      "math"
+    ]
+  },
+  " ": {
+    "id": "blas",
+    "description": "The Basic Linear Algebra Subprograms (BLAS) website.",
+    "short_url": "",
+    "keywords": [
+      "blas",
+      "math"
+    ]
+  },
+  "http://www.netlib.org/lapack/explore-html/da/df6/group__complex__blas__level1.html": {
+    "id": "ccopy",
+    "description": "The BLAS ccopy function in the LAPACK documentation.",
+    "short_url": "",
+    "keywords": [
+      "blas",
+      "math"
+    ]
+  },
+  "http://www.netlib.org/lapack/explore-html/de/da4/group__double__blas__level1.html": {
+    "id": "dasum",
+    "description": "The BLAS dasum function in the LAPACK documentation.",
+    "short_url": "",
+    "keywords": [
+      "blas",
+      "math"
+    ]
+  },
+  "http://www.netlib.org/lapack/explore-html/df/d28/group__single__blas__level1.html": {
+    "id": "snrm2",
+    "description": "The BLAS snrm2 function in the LAPACK documentation.",
+    "short_url": "",
+    "keywords": [
+      "blas",
       "math"
     ]
   },
@@ -564,6 +1185,28 @@
       "python"
     ]
   },
+  "http://www.pcg-random.org/other-rngs.html": {
+    "id": "pcg",
+    "description": "PCG Random Number Generation for C.",
+    "short_url": "",
+    "keywords": [
+      "pcg",
+      "random",
+      "number",
+      "generation"
+    ]
+  },
+  "http://www.sitepoint.com/jquery-vs-raw-javascript-1-dom-forms/": {
+    "id": "native-dom-equivalents",
+    "description": "A comparison of native DOM methods and jQuery equivalents.",
+    "short_url": "",
+    "keywords": [
+      "jquery",
+      "dom",
+      "native",
+      "javascript"
+    ]
+  },
   "http://www.speech.cs.cmu.edu/cgi-bin/cmudict#about": {
     "id": "cmudict",
     "description": "Website for the Carnegie Mellon Pronouncing Dictionary.",
@@ -574,6 +1217,18 @@
       "dictionary",
       "nlp",
       "speech"
+    ]
+  },
+  "http://www.uncg.edu/cmp/downloads/lwsndr.html": {
+    "id": "suthaharan-multi-hop-sensor-network-data",
+    "description": "Multi-hop sensor network data from Suthaharan et al. 2006.",
+    "short_url": "",
+    "keywords": [
+      "dataset",
+      "data",
+      "sensor",
+      "network",
+      "multi-hop"
     ]
   },
   "http://www.unicode.org/reports/tr29/": {
@@ -634,6 +1289,25 @@
       "complex",
       "division",
       "algorithm"
+    ]
+  },
+  "https://blog.codinghorror.com/javascript-the-lingua-franca-of-the-web/": {
+    "id": "javascript-ubiquity",
+    "description": "Blog post by Jeff Atwood on the ubiquity of JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "javascript",
+      "ubiquity"
+    ]
+  },
+  "https://blog.izs.me/2012/08/policy-on-trolling": {
+    "id": "nodejs-irc",
+    "description": "Node.js IRC channel policy on trolling.",
+    "short_url": "",
+    "keywords": [
+      "nodejs",
+      "irc",
+      "trolling"
     ]
   },
   "https://brew.sh": {
@@ -822,6 +1496,40 @@
       "rate limit"
     ]
   },
+  "https://developer.github.com/v3/repos/": {
+    "id": "github-repos",
+    "description": "GitHub documentation for repositories.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "repository",
+      "repo"
+    ]
+  },
+  "https://developer.github.com/v3/repos/#list-organization-repositories": {
+    "id": "github-org-repos",
+    "description": "GitHub documentation for listing organization repositories.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "repository",
+      "repo",
+      "organization",
+      "org"
+    ]
+  },
+  "https://developer.github.com/v3/users/followers/": {
+    "id": "github-followers",
+    "description": "GitHub documentation for followers.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "followers"
+    ]
+  },
   "https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Generator": {
     "id": "mdn-generator-object",
     "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 generator objects.",
@@ -833,6 +1541,27 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API": {
+    "id": "canvas",
+    "description": "Mozilla Developer Network (MDN) documentation for the HTML5 Canvas API.",
+    "short_url": "",
+    "keywords": [
+      "canvas",
+      "html5",
+      "api"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model": {
+    "id": "dom",
+    "description": "Mozilla Developer Network (MDN) documentation for the Document Object Model (DOM).",
+    "short_url": "",
+    "keywords": [
+      "dom",
+      "document",
+      "object",
+      "model"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency": {
     "id": "hardware-concurrency",
     "description": "Mozilla Developer Network (MDN) documentation for the hardware concurrency API to retrieve the number of logical processors on the computer.",
@@ -842,6 +1571,37 @@
       "browser",
       "javascript",
       "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/API/Performance/now": {
+    "id": "performance-now",
+    "description": "Mozilla Developer Network (MDN) documentation for the performance.now() API to retrieve the number of milliseconds since the current document was loaded.",
+    "short_url": "",
+    "keywords": [
+      "api",
+      "browser",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/API/Transferable": {
+    "id": "mdn-transferable-objects",
+    "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 transferable objects.",
+    "short_url": "",
+    "keywords": [
+      "transferable",
+      "object",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API": {
+    "id": "webgl",
+    "description": "Mozilla Developer Network (MDN) documentation for WebGL.",
+    "short_url": "",
+    "keywords": [
+      "webgl",
+      "api"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API": {
@@ -865,6 +1625,29 @@
       "browser",
       "dom",
       "api",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/API/Worker/Worker": {
+    "id": "mdn-web-workers",
+    "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 web workers.",
+    "short_url": "",
+    "keywords": [
+      "webworker",
+      "worker",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent#mobile_tablet_or_desktop": {
+    "id": "mdn-mobile",
+    "description": "Mozilla Developer Network (MDN) documentation for detecting mobile devices.",
+    "short_url": "",
+    "keywords": [
+      "mobile",
+      "device",
+      "browser",
       "javascript",
       "ecmascript"
     ]
@@ -916,6 +1699,17 @@
     "short_url": "",
     "keywords": [
       "class",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions": {
+    "id": "mdn-arrow-function",
+    "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 arrow functions.",
+    "short_url": "",
+    "keywords": [
+      "arrow",
+      "function",
       "javascript",
       "ecmascript"
     ]
@@ -1105,6 +1899,66 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt": {
+    "id": "mdn-bigint",
+    "description": "Mozilla Developer Network (MDN) documentation for the BigInt object.",
+    "short_url": "",
+    "keywords": [
+      "bigint",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt64Array": {
+    "id": "mdn-bigint64array",
+    "description": "Mozilla Developer Network (MDN) documentation for the BigInt64Array object.",
+    "short_url": "",
+    "keywords": [
+      "bigint",
+      "typed-array",
+      "bigint64array",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigUint64Array": {
+    "id": "mdn-biguint64array",
+    "description": "Mozilla Developer Network (MDN) documentation for the BigUint64Array object.",
+    "short_url": "",
+    "keywords": [
+      "bigint",
+      "typed-array",
+      "biguint64array",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean": {
+    "id": "mdn-boolean",
+    "description": "Mozilla Developer Network (MDN) documentation for the Boolean object.",
+    "short_url": "",
+    "keywords": [
+      "boolean",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView": {
+    "id": "mdn-dataview",
+    "description": "Mozilla Developer Network (MDN) documentation for the DataView object.",
+    "short_url": "",
+    "keywords": [
+      "typed-array",
+      "dataview",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date": {
     "id": "mdn-date-object",
     "description": "Mozilla Developer Network (MDN) documentation for the JavaScript Date object.",
@@ -1114,6 +1968,18 @@
       "globals",
       "javascript",
       "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now": {
+    "id": "date",
+    "description": "Mozilla Developer Network (MDN) documentation for the Date.now() method, which returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.",
+    "short_url": "",
+    "keywords": [
+      "date",
+      "now",
+      "javascript",
+      "ecmascript",
+      "js"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error": {
@@ -1216,12 +2082,34 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify": {
+    "id": "mdn-json-stringify",
+    "description": "Mozilla Developer Network (MDN) documentation for the JSON.stringify() method.",
+    "short_url": "",
+    "keywords": [
+      "json",
+      "stringify",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map": {
     "id": "mdn-map",
     "description": "Mozilla Developer Network (MDN) documentation for Map objects.",
     "short_url": "",
     "keywords": [
       "map",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fround": {
+    "id": "math-fround",
+    "description": "Mozilla Developer Network (MDN) documentation for the Math.fround() method.",
+    "short_url": "",
+    "keywords": [
+      "math",
+      "fround",
       "javascript",
       "ecmascript"
     ]
@@ -1370,6 +2258,30 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt": {
+    "id": "mdn-string-codepointat",
+    "description": "Mozilla Developer Network (MDN) documentation for the String.prototype.codePointAt() method.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "codepointat",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith": {
+    "id": "mdn-string-endswith",
+    "description": "Mozilla Developer Network (MDN) documentation for the String.prototype.endsWith() method.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "endswith",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode": {
     "id": "mdn-string-fromcharcode",
     "description": "Mozilla Developer Network (MDN) documentation for the static method String.fromCharCode.",
@@ -1410,6 +2322,54 @@
       "string",
       "prototype",
       "globals",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart": {
+    "id": "mdn-string-padstart",
+    "description": "Mozilla Developer Network (MDN) documentation for the String.prototype.padStart() method.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "padstart",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace": {
+    "id": "mdn-string-replace",
+    "description": "Mozilla Developer Network (MDN) documentation for the String.prototype.replace() method.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "replace",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split": {
+    "id": "string-split",
+    "description": "Mozilla Developer Network (MDN) documentation for the String.prototype.split() method.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "split",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith": {
+    "id": "mdn-string-startswith",
+    "description": "Mozilla Developer Network (MDN) documentation for the String.prototype.startsWith() method.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "startswith",
+      "prototype",
       "javascript",
       "ecmascript"
     ]
@@ -1635,6 +2595,29 @@
       "es2017"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function": {
+    "id": "function-expressions",
+    "description": "MDN documentation for function expressions.",
+    "short_url": "",
+    "keywords": [
+      "function",
+      "expression",
+      "anonymous",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof": {
+    "id": "type-of",
+    "description": "MDN documentation for the `typeof` operator.",
+    "short_url": "",
+    "keywords": [
+      "typeof",
+      "operator",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function": {
     "id": "mdn-async",
     "description": "MDN entry for async functions.",
@@ -1690,6 +2673,72 @@
       "globals",
       "javascript",
       "ecmascript"
+    ]
+  },
+  "https://docs.codecov.com/docs/codecovyml-reference": {
+    "id": "codecov-yaml",
+    "description": "Codecov documentation for the codecov.yml file.",
+    "short_url": "",
+    "keywords": [
+      "codecov",
+      "codecov.yml"
+    ]
+  },
+  "https://docs.github.com/en/actions/reference/events-that-trigger-workflows": {
+    "id": "github-workflow-triggering-events",
+    "description": "GitHub API documentation for workflow triggering events.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "actions",
+      "workflow",
+      "trigger",
+      "event"
+    ]
+  },
+  "https://docs.github.com/en/rest/reference/actions#create-a-workflow-dispatch-event": {
+    "id": "github-dispatch-workflow",
+    "description": "GitHub API documentation for the dispatch workflow event.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "actions",
+      "workflow",
+      "manual",
+      "dispatch",
+      "event"
+    ]
+  },
+  "https://docs.github.com/en/rest/reference/actions#list-workflow-runs-for-a-repository": {
+    "id": "github-workflow-runs",
+    "description": "GitHub API documentation for listing workflow runs.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "actions",
+      "workflow",
+      "run",
+      "list"
+    ]
+  },
+  "https://docs.github.com/en/rest/reference/repos#create-an-organization-repository": {
+    "id": "github-create-repo",
+    "description": "GitHub API documentation for creating a repository.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "repository",
+      "create"
+    ]
+  },
+  "https://docs.github.com/en/rest/reference/repos#replace-all-repository-topics": {
+    "id": "github-topics",
+    "description": "GitHub API documentation for repository topics.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "repository",
+      "topic"
     ]
   },
   "https://docs.python.org/2/library/simplehttpserver.html": {
@@ -1778,6 +2827,17 @@
       "command-line"
     ]
   },
+  "https://en.wikipedia.org/wiki/Absolute_difference": {
+    "id": "absolute-difference",
+    "description": "Wikipedia entry for the absolute difference function.",
+    "short_url": "",
+    "keywords": [
+      "absolute",
+      "difference",
+      "math",
+      "function"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Absolute_value": {
     "id": "absolute-value",
     "description": "Wikipedia entry for the absolute value.",
@@ -1828,6 +2888,19 @@
       "hypotenuse"
     ]
   },
+  "https://en.wikipedia.org/wiki/Analytic_continuation": {
+    "id": "analytic-continuation",
+    "description": "Wikipedia entry for analytic continuation.",
+    "short_url": "",
+    "keywords": [
+      "mathematics",
+      "math",
+      "complex",
+      "analysis",
+      "function",
+      "continuation"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Anscombe%27s_quartet": {
     "id": "anscombes-quartet",
     "description": "Wikipedia entry for Anscombe's quartet.",
@@ -1847,6 +2920,22 @@
       "riemann",
       "zeta",
       "constant"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic": {
+    "id": "arbitrary-precision-arithmetic",
+    "description": "Wikipedia entry for arbitrary-precision arithmetic.",
+    "short_url": "",
+    "keywords": [
+      "arbitrary",
+      "precision",
+      "arithmetic",
+      "mathematics",
+      "math",
+      "big",
+      "integer",
+      "float",
+      "decimal"
     ]
   },
   "https://en.wikipedia.org/wiki/Arcsine_distribution": {
@@ -1973,6 +3062,17 @@
       "normal"
     ]
   },
+  "https://en.wikipedia.org/wiki/Byte_order_mark": {
+    "id": "bom",
+    "description": "Wikipedia entry for the byte order mark.",
+    "short_url": "",
+    "keywords": [
+      "byte",
+      "order",
+      "mark",
+      "bom"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Cauchy_distribution": {
     "id": "cauchy-distribution",
     "description": "Wikipedia entry for the Cauchy distribution.",
@@ -1996,6 +3096,19 @@
       "centrosymmetric",
       "symmetric",
       "linear algebra"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Charles_Joseph_Minard": {
+    "id": "minard",
+    "description": "Wikipedia entry for Charles Joseph Minard, who created the famous Napoleon's March visualization.",
+    "short_url": "",
+    "keywords": [
+      "visualization",
+      "visualize",
+      "chart",
+      "minard",
+      "napoleon",
+      "march"
     ]
   },
   "https://en.wikipedia.org/wiki/Chi-squared_distribution": {
@@ -2108,6 +3221,19 @@
       "coprime",
       "primes",
       "number theory"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Cosine": {
+    "id": "cosine",
+    "description": "Wikipedia entry for the cosine function.",
+    "short_url": "",
+    "keywords": [
+      "cos",
+      "cosine",
+      "trigonometry",
+      "trig",
+      "function",
+      "fcn"
     ]
   },
   "https://en.wikipedia.org/wiki/Covariance": {
@@ -3964,6 +5090,35 @@
       "linting"
     ]
   },
+  "https://github.com/Samsung/iotjs": {
+    "id": "iot-js",
+    "description": "GitHub repository for IoT.js, a JavaScript runtime for the Internet of Things.",
+    "short_url": "",
+    "keywords": [
+      "iot",
+      "internet",
+      "of",
+      "things",
+      "javascript",
+      "js",
+      "runtime"
+    ]
+  },
+  "https://github.com/Samsung/jerryscript": {
+    "id": "jerryscript",
+    "description": "GitHub repository for JerryScript, a lightweight JavaScript engine for the Internet of Things.",
+    "short_url": "",
+    "keywords": [
+      "javascript",
+      "js",
+      "runtime",
+      "engine",
+      "iot",
+      "internet",
+      "of",
+      "things"
+    ]
+  },
   "https://github.com/SideBarEnhancements-org/SideBarEnhancements": {
     "id": "sublime-text-sidebar-enhancements",
     "description": "Sublime Text package which provides enhancements to the Sublime Text sidebar.",
@@ -4047,6 +5202,16 @@
       "wast",
       "wat",
       "toolkit"
+    ]
+  },
+  "https://github.com/airbnb/javascript": {
+    "id": "airbnb",
+    "description": "Airbnb JavaScript Style Guide.",
+    "short_url": "",
+    "keywords": [
+      "javascript",
+      "style",
+      "guide"
     ]
   },
   "https://github.com/dzhibas/SublimePrettyJson": {
@@ -4389,6 +5554,42 @@
       "js"
     ]
   },
+  "https://npmjs.com/package/@stdlib/stdlib": {
+    "id": "npm-url",
+    "description": "The main npm package for the stdlib standard library.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "stdlib",
+      "stdlib-js",
+      "standard-library",
+      "package",
+      "node",
+      "node-js",
+      "node.js",
+      "nodejs",
+      "javascript",
+      "js"
+    ]
+  },
+  "https://observablehq.com/": {
+    "id": "observable",
+    "description": "Observable is a notebook environment for interactive computing, based on Observable Notebooks.",
+    "short_url": "",
+    "keywords": [
+      "observable",
+      "notebook",
+      "notebooks",
+      "interactive",
+      "computing",
+      "javascript",
+      "js",
+      "node",
+      "d3",
+      "d3.js",
+      "visualization"
+    ]
+  },
   "https://oeis.org/A000040": {
     "id": "oeis-a000040",
     "description": "The OEIS entry for the sequence of prime numbers.",
@@ -4605,6 +5806,23 @@
       "nodejs"
     ]
   },
+  "https://stdlib.io/docs/api": {
+    "id": "stdlib-documentation",
+    "description": "Documentation for the stdlib standard library for JavaScript and Node.js.",
+    "short_url": "",
+    "keywords": [
+      "standard",
+      "library",
+      "lib",
+      "stdlib",
+      "stdlib-js",
+      "javascript",
+      "node.js",
+      "node",
+      "node-js",
+      "nodejs"
+    ]
+  },
   "https://tools.ietf.org/html/rfc1952": {
     "id": "gzip-rfc-1952",
     "description": "RFC format for the gzip file format.",
@@ -4670,6 +5888,43 @@
       "mac"
     ]
   },
+  "https://travis-ci.org/stdlib-js/stdlib": {
+    "id": "build-url-develop",
+    "description": "Travis CI build status for the develop branch of the stdlib standard library for JavaScript and Node.js.",
+    "short_url": "",
+    "keywords": [
+      "standard",
+      "library",
+      "lib",
+      "stdlib",
+      "stdlib-js",
+      "javascript",
+      "node.js",
+      "node",
+      "node-js",
+      "nodejs"
+    ]
+  },
+  "https://twitter.com/stdlibjs": {
+    "id": "stdlib-twitter",
+    "description": "Twitter account for the stdlib standard library for JavaScript and Node.js.",
+    "short_url": "",
+    "keywords": [
+      "standard",
+      "library",
+      "lib",
+      "stdlib",
+      "stdlib-js",
+      "javascript",
+      "node.js",
+      "node",
+      "node-js",
+      "nodejs",
+      "twitter",
+      "social",
+      "media"
+    ]
+  },
   "https://unpkg.com/#/": {
     "id": "unpkg",
     "description": "A fast, global content delivery network for everything on npm.",
@@ -4690,6 +5945,44 @@
       "wasm",
       "asm",
       "binary"
+    ]
+  },
+  "https://webpack.js.org/": {
+    "id": "webpack",
+    "description": "A module bundler for JavaScript and friends.",
+    "short_url": "",
+    "keywords": [
+      "module",
+      "bundler",
+      "bundle",
+      "webpack",
+      "javascript",
+      "js",
+      "node.js",
+      "node",
+      "node-js",
+      "nodejs"
+    ]
+  },
+  "https://wordpress.org/about/privacy/": {
+    "id": "wordpress-privacy-policy",
+    "description": "WordPress privacy policy.",
+    "short_url": "",
+    "keywords": [
+      "wordpress",
+      "privacy",
+      "policy"
+    ]
+  },
+  "https://www.apache.org/foundation/voting.html": {
+    "id": "apache-foundation-voting-process",
+    "description": "Apache Foundation voting process.",
+    "short_url": "",
+    "keywords": [
+      "apache",
+      "foundation",
+      "voting",
+      "process"
     ]
   },
   "https://www.apache.org/licenses/LICENSE-2.0": {
@@ -4716,6 +6009,74 @@
       "build"
     ]
   },
+  "https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md": {
+    "id": "contributor-covenant",
+    "description": "Contributor Covenant Code of Conduct.",
+    "short_url": "",
+    "keywords": [
+      "contributor",
+      "covenant",
+      "code",
+      "conduct"
+    ]
+  },
+  "https://www.docker.com/": {
+    "id": "docker",
+    "description": "A platform for developers and sysadmins to build, ship, and run distributed applications.",
+    "short_url": "",
+    "keywords": [
+      "docker",
+      "container",
+      "containers",
+      "virtualization",
+      "virtual",
+      "vm",
+      "vms",
+      "virtual-machine",
+      "virtual-machines"
+    ]
+  },
+  "https://www.doornik.com/research/ziggurat.pdf": {
+    "id": "@doornik:2005",
+    "description": "A paper describing the advanced Ziggurat algorithm for generating random numbers from a standard normal distribution.",
+    "short_url": "",
+    "keywords": [
+      "ziggurat",
+      "algorithm",
+      "random",
+      "numbers",
+      "normal",
+      "gaussian",
+      "standard",
+      "distribution",
+      "math",
+      "mathematics",
+      "statistics",
+      "paper",
+      "research",
+      "doornik"
+    ]
+  },
+  "https://www.ecma-international.org/ecma-262/5.1/#sec-7.9": {
+    "id": "ecma-262-asi",
+    "description": "Section in ECMA-262, an ECMA standard describing the ECMAScript programming language, which describes automatic semicolon insertion.",
+    "short_url": "",
+    "keywords": [
+      "ecma",
+      "ecma-262",
+      "ecmascript",
+      "javascript",
+      "js",
+      "language",
+      "specification",
+      "spec",
+      "standard",
+      "automatic",
+      "semicolon",
+      "insertion",
+      "asi"
+    ]
+  },
   "https://www.electronjs.org/": {
     "id": "electron",
     "description": "Framework for building desktop applications with JavaScript, HTML, and CSS.",
@@ -4740,6 +6101,18 @@
       "bash",
       "gnu",
       "shell"
+    ]
+  },
+  "https://www.gnu.org/software/bash/manual/bashref.html#Programmable-Completion": {
+    "id": "bash-completion",
+    "description": "Programmable completion in GNU bash.",
+    "short_url": "",
+    "keywords": [
+      "bash",
+      "gnu",
+      "shell",
+      "completion",
+      "programmable"
     ]
   },
   "https://www.gnu.org/software/make/": {
@@ -4827,6 +6200,18 @@
       "scalable",
       "vector",
       "graphics"
+    ]
+  },
+  "https://yarnpkg.com/": {
+    "id": "yarn",
+    "description": "Yarn is a package manager that doubles down as project manager.",
+    "short_url": "",
+    "keywords": [
+      "yarn",
+      "package",
+      "manager",
+      "nodejs",
+      "javascript"
     ]
   }
 }

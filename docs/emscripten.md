@@ -118,7 +118,7 @@ In addition to the above flags, `emcc` should act as a drop-in replacement for `
 
 [planeshifter-examples]: https://github.com/Planeshifter/emscripten-examples
 
-[emscripten-mailing-list]: https://groups.google.com/forum/#!topic/emscripten-discuss/oeEg6WrZ7rg
+[emscripten-mailing-list]: https://groups.google.com/g/emscripten-discuss/c/oeEg6WrZ7rg
 
 </section>
 
