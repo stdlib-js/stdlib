@@ -27,7 +27,8 @@ import tokenize = require( './index' );
 }
 
 // The compiler throws an error if the function is provided values of invalid types...
-rue ); // $ExpectError
+{
+	tokenize( true ); // $ExpectError
 	tokenize( false ); // $ExpectError
 	tokenize( 3 ); // $ExpectError
 	tokenize( [] ); // $ExpectError
