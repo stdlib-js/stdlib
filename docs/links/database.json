@@ -1140,6 +1140,15 @@
       "math"
     ]
   },
+  "http://www.netlib.org/blas": {
+    "id": "blas",
+    "description": "The Basic Linear Algebra Subprograms (BLAS) website.",
+    "short_url": "",
+    "keywords": [
+      "blas",
+      "math"
+    ]
+  },
   "http://www.netlib.org/lapack/explore-html/da/df6/group__complex__blas__level1.html": {
     "id": "ccopy",
     "description": "The BLAS ccopy function in the LAPACK documentation.",
@@ -1361,6 +1370,18 @@
       "code",
       "open",
       "source"
+    ]
+  },
+  "https://code.visualstudio.com/docs/setup/mac": {
+    "id": "vscode-macos-setup",
+    "description": "Visual Studio Code setup instructions for MacOS.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "macos",
+      "mac",
+      "setup",
+      "editor"
     ]
   },
   "https://codecov.io/": {
@@ -2946,6 +2967,23 @@
       "settings"
     ]
   },
+  "https://doi.org/10.1080/01621459.1979.10481038": {
+    "id": "@cleveland:1979",
+    "description": "Digital Object Identifier for Cleveland, W. S. 1979. Robust Locally Weighted Regression and Smoothing Scatterplots.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "cleveland",
+      "robust",
+      "locally",
+      "weighted",
+      "regression",
+      "smoothing",
+      "scatterplot"
+    ]
+  },
   "https://doi.org/10.1086/458513": {
     "id": "@spache:1953a",
     "description": "Digital Object Identifier for Spache, George. 1953.",
@@ -2957,6 +2995,20 @@
       "school",
       "grade",
       "reading"
+    ]
+  },
+  "https://doi.org/10.1108/eb046814": {
+    "id": "@porter:1980",
+    "description": "Digital Object Identifier for Porter, M. F. 1980. An Algorithm for Suffix Stripping.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "porter",
+      "algorithm",
+      "suffix",
+      "stripping"
     ]
   },
   "https://doi.org/10.1109/32.92917": {
@@ -3128,6 +3180,20 @@
       "probability",
       "statistics",
       "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Argument_%28complex_analysis%29": {
+    "id": "complex-number-argument",
+    "description": "Wikipedia entry for the argument of a complex number.",
+    "short_url": "",
+    "keywords": [
+      "complex",
+      "number",
+      "argument",
+      "angle",
+      "phase",
+      "mathematics",
+      "math"
     ]
   },
   "https://en.wikipedia.org/wiki/Arithmetic_mean": {
@@ -3542,6 +3608,17 @@
       "ios"
     ]
   },
+  "https://en.wikipedia.org/wiki/Data_parallelism": {
+    "id": "data-parallelism",
+    "description": "Wikipedia entry for data parallelism, a form of parallelism in which each processor operates on a different piece of data.",
+    "short_url": "",
+    "keywords": [
+      "parallelism",
+      "data",
+      "parallel",
+      "concurrency"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Degenerate_distribution": {
     "id": "degenerate-distribution",
     "description": "Wikipedia entry for a degenerate distribution.",
@@ -3554,6 +3631,25 @@
       "probability",
       "discrete",
       "degenerate"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Denormal_number": {
+    "id": "subnormals",
+    "description": "Wikipedia entry for denormal or subnormal numbers, which are numbers that are too small to be represented in normalized form.",
+    "short_url": "",
+    "keywords": [
+      "denormal",
+      "subnormal",
+      "float",
+      "floating point",
+      "fp",
+      "ieee",
+      "ieee 754",
+      "ieee754",
+      "number",
+      "numbers",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/Digamma_function": {
@@ -4337,6 +4433,17 @@
       "fcn"
     ]
   },
+  "https://en.wikipedia.org/wiki/Imperative_mood": {
+    "id": "imperative-mood",
+    "description": "Wikipedia entry for the imperative mood.",
+    "short_url": "",
+    "keywords": [
+      "imperative",
+      "mood",
+      "grammar",
+      "english"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Incomplete_beta_function": {
     "id": "incomplete-beta-function",
     "description": "Wikipedia entry for the incomplete beta function.",
@@ -4373,6 +4480,19 @@
       "mean",
       "ratio",
       "dispersion"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Integer_%28computer_science%29": {
+    "id": "integer",
+    "description": "Wikipedia entry for the integer data type.",
+    "short_url": "",
+    "keywords": [
+      "integer",
+      "int",
+      "data",
+      "type",
+      "computer",
+      "science"
     ]
   },
   "https://en.wikipedia.org/wiki/Inverse-gamma_distribution": {
@@ -4448,6 +4568,21 @@
       "cotagent"
     ]
   },
+  "https://en.wikipedia.org/wiki/K-function": {
+    "id": "k-function",
+    "description": "Wikipedia entry for the K-function.",
+    "short_url": "",
+    "keywords": [
+      "k-function",
+      "statistics",
+      "stats",
+      "math",
+      "mathematics",
+      "complex",
+      "factorial",
+      "function"
+    ]
+  },
   "https://en.wikipedia.org/wiki/K-means_clustering": {
     "id": "k-means-clustering",
     "description": "Wikipedia entry for k-means clustering, an approach for partitioning a set of observations into k clusters.",
@@ -4458,6 +4593,19 @@
       "ml",
       "kmeans",
       "k-means"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Kronecker_delta": {
+    "id": "kronecker-delta",
+    "description": "Wikipedia entry for the Kronecker delta.",
+    "short_url": "",
+    "keywords": [
+      "kronecker",
+      "delta",
+      "math",
+      "mathematics",
+      "function",
+      "fcn"
     ]
   },
   "https://en.wikipedia.org/wiki/Kumaraswamy_distribution": {
@@ -6062,6 +6210,54 @@
       "survey"
     ]
   },
+  "https://gcc.gnu.org/fortran/": {
+    "id": "gfortran",
+    "description": "GNU Fortran compiler.",
+    "short_url": "",
+    "keywords": [
+      "gfortran",
+      "fortran",
+      "compiler",
+      "cs",
+      "development",
+      "dev"
+    ]
+  },
+  "https://geekfeminismdotorg.wordpress.com/about/code-of-conduct/": {
+    "id": "geek-feminism-code-of-conduct",
+    "description": "Geek Feminism Code of Conduct.",
+    "short_url": "",
+    "keywords": [
+      "code",
+      "conduct",
+      "geek",
+      "feminism"
+    ]
+  },
+  "https://gist.github.com/": {
+    "id": "github-gist",
+    "description": "GitHub Gist, a service for sharing code snippets.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "gist",
+      "code",
+      "snippet",
+      "share"
+    ]
+  },
+  "https://gist.github.com/branneman/8048520": {
+    "id": "list-of-require-hacks",
+    "description": "List of hacks to get around long require paths in Node.js require() calls.",
+    "short_url": "",
+    "keywords": [
+      "require",
+      "hacks",
+      "node",
+      "js",
+      "javascript"
+    ]
+  },
   "https://git-scm.com/": {
     "id": "git",
     "description": "The official website for Git, a free and open-source distributed version control system.",
@@ -6161,6 +6357,47 @@
       "sublime",
       "text",
       "fortran"
+    ]
+  },
+  "https://github.com/ChristianKohler/PathIntellisense": {
+    "id": "vscode-path-intellisense",
+    "description": "GitHub repository for a Visual Studio Code plugin which provides path autocompletion.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "path",
+      "intellisense",
+      "autocomplete",
+      "autocompletion"
+    ]
+  },
+  "https://github.com/Gimly/vscode-fortran": {
+    "id": "vscode-fortran",
+    "description": "GitHub repository for a Visual Studio Code plugin which provides syntax highlighting for Fortran.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "fortran"
+    ]
+  },
+  "https://github.com/Jason-Rev/vscode-spell-checker": {
+    "id": "vscode-spell-checker",
+    "description": "GitHub repository for a Visual Studio Code plugin which provides spell checking.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "spell",
+      "checker"
+    ]
+  },
+  "https://github.com/Jason-Rev/vscode-spell-checker/blob/master/client/README.md": {
+    "id": "vscode-spell-checker-readme",
+    "description": "README.md for a Visual Studio Code plugin which provides spell checking.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "spell",
+      "checker"
     ]
   },
   "https://github.com/JohnNilsson/awk-sublime": {
@@ -6612,6 +6849,17 @@
       "sublime",
       "editor",
       "plugin"
+    ]
+  },
+  "https://github.com/nodejs/Release": {
+    "id": "node-release",
+    "description": "Node.js Release Working Group.",
+    "short_url": "",
+    "keywords": [
+      "node",
+      "lts",
+      "release",
+      "working group"
     ]
   },
   "https://github.com/nodejs/node/blob/0be1c5728173ea9ac42843058e26b6268568acf0/GOVERNANCE.md": {
@@ -7098,6 +7346,133 @@
       "guidelines"
     ]
   },
+  "https://github.com/stdlib-js/stdlib/blob/develop/docs/misc/built_in_math_bugs.md": {
+    "id": "built-in-math-bugs",
+    "description": "A list of known bugs in built-in math functions.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "built-in",
+      "math",
+      "bugs"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/blob/develop/docs/policies/TERMS_OF_SERVICE.md": {
+    "id": "stdlib-terms-of-service",
+    "description": "The stdlib terms of service.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "terms",
+      "service"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/blob/develop/docs/policies/domains.md": {
+    "id": "stdlib-domains",
+    "description": "Domain names associated with stdlib.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "domains"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides": {
+    "id": "stdlib-style-guides",
+    "description": "The stdlib style guides.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "code",
+      "style",
+      "guides"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/blob/develop/lib/node_modules/@stdlib/ndarray/ctor/README.md": {
+    "id": "nd-array",
+    "description": "stdlib multidimensional array constructor.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "ndarray",
+      "nd-array",
+      "constructor",
+      "multidimensional",
+      "array"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/graphs/contributors": {
+    "id": "stdlib-authors",
+    "description": "List of stdlib contributors.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "authors",
+      "contributors"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/issues": {
+    "id": "stdlib-issues",
+    "description": "The stdlib issue tracker.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "issues",
+      "issue",
+      "tracker"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/pulls": {
+    "id": "stdlib-pull-requests",
+    "description": "GitHub pull requests for stdlib.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "pull",
+      "requests"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/releases": {
+    "id": "stdlib-github-releases",
+    "description": "GitHub releases for stdlib.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "github",
+      "releases"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/tags": {
+    "id": "tag-url",
+    "description": "GitHub tags for stdlib.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "github",
+      "tags"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/tree/develop/dist": {
+    "id": "stdlib-bundles",
+    "description": "stdlib distributible files.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "distributible",
+      "files",
+      "bundles",
+      "dist"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/tree/develop/docs": {
+    "id": "stdlib-docs",
+    "description": "stdlib project documentation.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "docs",
+      "documentation"
+    ]
+  },
   "https://github.com/stdlib-js/stdlib/tree/develop/tools/snippets": {
     "id": "stdlib-snippets",
     "description": "stdlib code snippets.",
@@ -7198,6 +7573,47 @@
       "markdown"
     ]
   },
+  "https://help.github.com/articles/about-two-factor-authentication/": {
+    "id": "github-two-factor",
+    "description": "GitHub help on two-factor authentication",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "two-factor",
+      "authentication"
+    ]
+  },
+  "https://img.shields.io/gitter/room/stdlib-js/stdlib.svg": {
+    "id": "chat-image",
+    "description": "Image for the Gitter chat room.",
+    "short_url": "",
+    "keywords": [
+      "chat",
+      "gitter",
+      "image"
+    ]
+  },
+  "https://img.shields.io/node/v/@stdlib/stdlib.svg": {
+    "id": "node-image",
+    "description": "Image for the supported Node.js versions of stdlib.",
+    "short_url": "",
+    "keywords": [
+      "image",
+      "node",
+      "node.js",
+      "stdlib"
+    ]
+  },
+  "https://img.shields.io/npm/v/@stdlib/stdlib.svg": {
+    "id": "npm-image",
+    "description": "Image for the latest npm release of stdlib.",
+    "short_url": "",
+    "keywords": [
+      "image",
+      "npm",
+      "stdlib"
+    ]
+  },
   "https://jsdelivr.com/": {
     "id": "jsdelivr",
     "description": "A content delivery network (CDN) for npm and GitHub.",
@@ -7272,6 +7688,20 @@
       "ecmascript"
     ]
   },
+  "https://nodejs.org/api/child_process.html": {
+    "id": "node-child-process",
+    "description": "Node.js documentation for the child_process module.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "child_process",
+      "child",
+      "process",
+      "module"
+    ]
+  },
   "https://nodejs.org/api/errors.html#errors_class_system_error": {
     "id": "node-system-error",
     "description": "Node.js documentation for the System Error class.",
@@ -7295,6 +7725,34 @@
       "filesystem",
       "documentation",
       "docs"
+    ]
+  },
+  "https://nodejs.org/api/http.html": {
+    "id": "http",
+    "description": "Node.js documentation for the HTTP module.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "http",
+      "https"
+    ]
+  },
+  "https://nodejs.org/api/modules.html": {
+    "id": "node-require",
+    "description": "Node.js documentation for the module and require system.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "require",
+      "module",
+      "modules",
+      "import",
+      "export",
+      "commonjs"
     ]
   },
   "https://nodejs.org/api/os.html#os_os_cpus": {
@@ -7834,6 +8292,17 @@
       "binary"
     ]
   },
+  "https://webassembly.org/docs/semantics/": {
+    "id": "web-assembly-semantics",
+    "description": "WebAssembly semantics.",
+    "short_url": "",
+    "keywords": [
+      "webassembly",
+      "wasm",
+      "asm",
+      "binary"
+    ]
+  },
   "https://webpack.js.org/": {
     "id": "webpack",
     "description": "A module bundler for JavaScript and friends.",
@@ -8029,6 +8498,21 @@
       "manager"
     ]
   },
+  "https://www.npmjs.com/package/debug": {
+    "id": "node-debug",
+    "description": "A tiny JavaScript debugging utility.",
+    "short_url": "",
+    "keywords": [
+      "node",
+      "nodejs",
+      "node.js",
+      "javascript",
+      "js",
+      "debug",
+      "debugging",
+      "utility"
+    ]
+  },
   "https://www.npmjs.com/package/repl": {
     "id": "repl-template-lib",
     "description": "A lightweight template library in NodeJS.",
@@ -8086,6 +8570,17 @@
       "stats",
       "lang",
       "language"
+    ]
+  },
+  "https://www.rust-lang.org/policies/code-of-conduct": {
+    "id": "rust-code-of-conduct",
+    "description": "The Rust Code of Conduct.",
+    "short_url": "",
+    "keywords": [
+      "rust",
+      "code",
+      "conduct",
+      "coc"
     ]
   },
   "https://www.scipy.org/scipylib/index.html": {
