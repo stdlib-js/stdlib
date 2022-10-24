@@ -1140,15 +1140,6 @@
       "math"
     ]
   },
-  " ": {
-    "id": "blas",
-    "description": "The Basic Linear Algebra Subprograms (BLAS) website.",
-    "short_url": "",
-    "keywords": [
-      "blas",
-      "math"
-    ]
-  },
   "http://www.netlib.org/lapack/explore-html/da/df6/group__complex__blas__level1.html": {
     "id": "ccopy",
     "description": "The BLAS ccopy function in the LAPACK documentation.",
@@ -1349,12 +1340,47 @@
       "mac"
     ]
   },
+  "https://cmake.org/": {
+    "id": "cmake",
+    "description": "Cross-platform build system.",
+    "short_url": "",
+    "keywords": [
+      "build",
+      "system",
+      "cmake",
+      "cross-platform"
+    ]
+  },
+  "https://code.visualstudio.com/": {
+    "id": "vscode",
+    "description": "A cross-platform open-source code editor from Microsoft.",
+    "short_url": "",
+    "keywords": [
+      "editor",
+      "microsoft",
+      "code",
+      "open",
+      "source"
+    ]
+  },
   "https://codecov.io/": {
     "id": "codecov",
     "description": "A hosted code coverage service.",
     "short_url": "",
     "keywords": [
       "codecov",
+      "coverage",
+      "unit testing"
+    ]
+  },
+  "https://codecov.io/github/stdlib-js/stdlib/branch/develop": {
+    "id": "stdlib-code-coverage",
+    "description": "Code coverage for the stdlib JavaScript library.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "javascript",
+      "library",
       "coverage",
       "unit testing"
     ]
@@ -1476,6 +1502,41 @@
       "useragent"
     ]
   },
+  "https://developer.github.com/v3/activity/starring/#star-a-repository": {
+    "id": "github-star-repo",
+    "description": "GitHub documentation for starring a repository.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "star",
+      "starring",
+      "repository"
+    ]
+  },
+  "https://developer.github.com/v3/activity/watching/": {
+    "id": "github-watching",
+    "description": "GitHub documentation for watching a repository.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "watch",
+      "watching",
+      "repository"
+    ]
+  },
+  "https://developer.github.com/v3/issues/#create-an-issue": {
+    "id": "github-create-issue",
+    "description": "GitHub documentation for creating an issue.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "issue",
+      "create"
+    ]
+  },
   "https://developer.github.com/v3/media/": {
     "id": "github-media",
     "description": "GitHub documentation for media types.",
@@ -1484,6 +1545,53 @@
       "github",
       "api",
       "media"
+    ]
+  },
+  "https://developer.github.com/v3/oauth/#scopes": {
+    "id": "github-scopes",
+    "description": "GitHub documentation for OAuth scopes.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "oauth",
+      "scope"
+    ]
+  },
+  "https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization": {
+    "id": "github-create-token",
+    "description": "GitHub documentation for creating an OAuth token.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "oauth",
+      "token",
+      "create"
+    ]
+  },
+  "https://developer.github.com/v3/oauth_authorizations/#delete-an-authorization": {
+    "id": "github-delete-token",
+    "description": "GitHub documentation for deleting an OAuth token.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "oauth",
+      "token",
+      "delete"
+    ]
+  },
+  "https://developer.github.com/v3/orgs/#organizations": {
+    "id": "github-user-orgs",
+    "description": "GitHub documentation for managing user organizations.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "user",
+      "organization",
+      "org"
     ]
   },
   "https://developer.github.com/v3/rate_limit/": {
@@ -2741,6 +2849,76 @@
       "topic"
     ]
   },
+  "https://docs.npmjs.com/files/package.json#bin": {
+    "id": "package-command",
+    "description": "npm documentation for the `bin` field in package.json.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "package.json",
+      "bin"
+    ]
+  },
+  "https://docs.npmjs.com/files/package.json#description": {
+    "id": "package-description",
+    "description": "npm documentation for the `description` field in package.json.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "package.json",
+      "description"
+    ]
+  },
+  "https://docs.npmjs.com/files/package.json#keywords": {
+    "id": "package-keywords",
+    "description": "npm documentation for the `keywords` field in package.json.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "package.json",
+      "keywords"
+    ]
+  },
+  "https://docs.npmjs.com/files/package.json#name": {
+    "id": "package-name",
+    "description": "npm documentation for the `name` field in package.json.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "package.json",
+      "name"
+    ]
+  },
+  "https://docs.npmjs.com/policies/conduct": {
+    "id": "npm-code-of-conduct",
+    "description": "npm Code of Conduct.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "code",
+      "conduct"
+    ]
+  },
+  "https://docs.npmjs.com/policies/privacy": {
+    "id": "npm-privacy-policy",
+    "description": "npm Privacy Policy.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "privacy",
+      "policy"
+    ]
+  },
+  "https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html#round%28double%29": {
+    "id": "java-math-round",
+    "description": "Java documentation for the Math.round method.",
+    "short_url": "",
+    "keywords": [
+      "java",
+      "math",
+      "round"
+    ]
+  },
   "https://docs.python.org/2/library/simplehttpserver.html": {
     "id": "python-simplehttpserver",
     "description": "Documentation for Python's SimpleHTTPServer module.",
@@ -2965,6 +3143,19 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Bernoulli_distribution": {
+    "id": "bernoulli",
+    "description": "Wikipedia entry for the Bernoulli distribution.",
+    "short_url": "",
+    "keywords": [
+      "bernoulli",
+      "distribution",
+      "dist",
+      "probability",
+      "statistics",
+      "stats"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Bernoulli_number": {
     "id": "bernoulli-number",
     "description": "Wikipedia entry for the Bernoulli numbers.",
@@ -3006,6 +3197,19 @@
       "beta"
     ]
   },
+  "https://en.wikipedia.org/wiki/Beta_function#Incomplete_beta_function": {
+    "id": "incomplete-beta",
+    "description": "Wikipedia entry for the incomplete beta function.",
+    "short_url": "",
+    "keywords": [
+      "beta",
+      "special",
+      "function",
+      "incomplete",
+      "math",
+      "mathematics"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Beta_prime_distribution": {
     "id": "betaprime-distribution",
     "description": "Wikipedia entry for the beta prime distribution.",
@@ -3032,6 +3236,17 @@
       "log",
       "binary",
       "arithmetic"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Binomial_coefficient": {
+    "id": "binomial-coefficient",
+    "description": "Wikipedia entry for the binomial coefficient.",
+    "short_url": "",
+    "keywords": [
+      "binomial",
+      "coefficient",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/Binomial_distribution": {
@@ -3193,6 +3408,28 @@
       "base 10"
     ]
   },
+  "https://en.wikipedia.org/wiki/Complex_conjugate": {
+    "id": "complex-conjugate",
+    "description": "Wikipedia entry for the complex conjugate.",
+    "short_url": "",
+    "keywords": [
+      "complex",
+      "conjugate",
+      "math",
+      "mathematics"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Complex_number": {
+    "id": "complex",
+    "description": "Wikipedia entry for complex numbers.",
+    "short_url": "",
+    "keywords": [
+      "complex",
+      "number",
+      "math",
+      "mathematics"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Constant_function": {
     "id": "constant-function",
     "description": "Wikipedia entry for a constant function (i.e., a function whose output value is the same for every input value).",
@@ -3210,6 +3447,17 @@
     "keywords": [
       "cdn",
       "content delivery network"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Continued_fraction": {
+    "id": "continued-fraction",
+    "description": "Wikipedia entry for a continued fraction, a way of representing a real number as an infinite sum of fractions.",
+    "short_url": "",
+    "keywords": [
+      "continued",
+      "fraction",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/Coprime_integers": {
@@ -3258,6 +3506,17 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Cube_root": {
+    "id": "cube-root",
+    "description": "Wikipedia entry for the cube root.",
+    "short_url": "",
+    "keywords": [
+      "cube",
+      "root",
+      "math",
+      "mathematics"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
     "id": "cdf",
     "description": "Wikipedia entry for the cumulative distribution function.",
@@ -3295,6 +3554,51 @@
       "probability",
       "discrete",
       "degenerate"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Digamma_function": {
+    "id": "digamma-function",
+    "description": "Wikipedia entry for the digamma function.",
+    "short_url": "",
+    "keywords": [
+      "digamma",
+      "psi",
+      "special",
+      "function",
+      "fcn"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Dirac_delta_function": {
+    "id": "dirac-delta-function",
+    "description": "Wikipedia entry for the Dirac delta function.",
+    "short_url": "",
+    "keywords": [
+      "dirac",
+      "delta",
+      "function",
+      "fcn"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Dirichlet_eta_function": {
+    "id": "eta-function",
+    "description": "Wikipedia entry for the Dirichlet eta function.",
+    "short_url": "",
+    "keywords": [
+      "eta",
+      "dirichlet",
+      "function",
+      "fcn"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Dirichlet_series": {
+    "id": "dirichlet-series",
+    "description": "Wikipedia entry for Dirichlet series.",
+    "short_url": "",
+    "keywords": [
+      "dirichlet",
+      "series",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/Dirname": {
@@ -3355,6 +3659,17 @@
       "calculus"
     ]
   },
+  "https://en.wikipedia.org/wiki/Empty_product": {
+    "id": "empty-product",
+    "description": "Wikipedia entry for the empty product.",
+    "short_url": "",
+    "keywords": [
+      "empty",
+      "product",
+      "math",
+      "mathematics"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
     "id": "entropy",
     "description": "Wikipedia entry for the concept of entropy from information theory.",
@@ -3404,6 +3719,73 @@
       "probability",
       "continuous",
       "erlang"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Error_function": {
+    "id": "complementary-error-function",
+    "description": "Wikipedia entry for the complementary error function.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "special",
+      "function",
+      "fcn",
+      "erf",
+      "erfc",
+      "math",
+      "mathematics"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Error_function#Inverse_functions": {
+    "id": "erfcinv",
+    "description": "Wikipedia entry for the inverse complementary error function.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "special",
+      "function",
+      "fcn",
+      "erf",
+      "erfc",
+      "math",
+      "mathematics"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Euclidean_distance": {
+    "id": "l2-norm",
+    "description": "Wikipedia entry for the Euclidean distance.",
+    "short_url": "",
+    "keywords": [
+      "distance",
+      "euclidean",
+      "l2",
+      "norm",
+      "vector",
+      "vectors",
+      "math",
+      "mathematics"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant": {
+    "id": "euler-mascheroni",
+    "description": "Wikipedia entry for the Euler-Mascheroni constant.",
+    "short_url": "",
+    "keywords": [
+      "euler",
+      "mascheroni",
+      "constant"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Even_and_odd_functions": {
+    "id": "odd-function",
+    "description": "Wikipedia entry for even and odd functions.",
+    "short_url": "",
+    "keywords": [
+      "even",
+      "odd",
+      "function",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/Expected_value": {
@@ -3461,6 +3843,17 @@
       "continuous",
       "fisher",
       "f"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Factorial": {
+    "id": "factorial-function",
+    "description": "Wikipedia entry for the factorial function.",
+    "short_url": "",
+    "keywords": [
+      "factorial",
+      "math",
+      "mathematics",
+      "function"
     ]
   },
   "https://en.wikipedia.org/wiki/Falling_and_rising_factorials": {
@@ -3523,6 +3916,19 @@
       "testing"
     ]
   },
+  "https://en.wikipedia.org/wiki/Floor_and_ceiling_functions": {
+    "id": "floor",
+    "description": "Wikipedia entry for the floor and ceiling functions.",
+    "short_url": "",
+    "keywords": [
+      "floor",
+      "ceil",
+      "ceiling",
+      "math",
+      "mathematics",
+      "function"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Florence_Nightingale": {
     "id": "nightingale",
     "description": "Wikipedia entry on social reformer and statistician Florence Nightingale.",
@@ -3580,6 +3986,19 @@
       "anscombe"
     ]
   },
+  "https://en.wikipedia.org/wiki/French_invasion_of_Russia_%281812%29": {
+    "id": "campaign-of-1812",
+    "description": "Wikipedia entry for the French invasion of Russia in 1812.",
+    "short_url": "",
+    "keywords": [
+      "1812",
+      "russia",
+      "french",
+      "invasion",
+      "war",
+      "history"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fresnel_integral": {
     "id": "fresnel-integral",
     "description": "Wikipedia entry for Fresnel integral.",
@@ -3614,6 +4033,45 @@
       "probability",
       "continuous",
       "gamma"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Gamma_function": {
+    "id": "gamma-function",
+    "description": "Wikipedia entry for the gamma function.",
+    "short_url": "",
+    "keywords": [
+      "gamma",
+      "special",
+      "function",
+      "math",
+      "special"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units": {
+    "id": "gpgpu",
+    "description": "Wikipedia entry for general-purpose computing on graphics processing units.",
+    "short_url": "",
+    "keywords": [
+      "gpgpu",
+      "gpu",
+      "graphics",
+      "processing",
+      "unit",
+      "cs",
+      "computer",
+      "science"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers#Tribonacci_numbers": {
+    "id": "tribonacci-number",
+    "description": "Wikipedia entry for Tribonacci numbers.",
+    "short_url": "",
+    "keywords": [
+      "tribonacci",
+      "fibonacci",
+      "number",
+      "tribo",
+      "trib"
     ]
   },
   "https://en.wikipedia.org/wiki/Generalized_linear_model#Link_function": {
@@ -3665,6 +4123,18 @@
       "personalname"
     ]
   },
+  "https://en.wikipedia.org/wiki/Glaisher%E2%80%93Kinkelin_constant": {
+    "id": "glaisher-constant",
+    "description": "Wikipedia entry for the Glaisher–Kinkelin constant.",
+    "short_url": "",
+    "keywords": [
+      "glaisher",
+      "kinkelin",
+      "constant",
+      "math",
+      "special"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Golden_ratio": {
     "id": "golden-ratio",
     "description": "Wikipedia entry for the golden ratio.",
@@ -3673,6 +4143,17 @@
       "golden",
       "ratio",
       "phi"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Gregorian_calendar": {
+    "id": "gregorian-calendar",
+    "description": "Wikipedia entry for the Gregorian calendar.",
+    "short_url": "",
+    "keywords": [
+      "gregorian",
+      "calendar",
+      "date",
+      "time"
     ]
   },
   "https://en.wikipedia.org/wiki/Grubbs%27_test_for_outliers": {
@@ -3713,6 +4194,22 @@
       "format"
     ]
   },
+  "https://en.wikipedia.org/wiki/Half-precision_floating-point_format": {
+    "id": "half-precision-floating-point-format",
+    "description": "Wikipedia entry for the half-precision floating point format.",
+    "short_url": "",
+    "keywords": [
+      "half",
+      "precision",
+      "float",
+      "floating",
+      "point",
+      "format",
+      "binary",
+      "ieee",
+      "754"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Harmonic_mean": {
     "id": "harmonic-mean",
     "description": "Wikipedia entry for the harmonic mean.",
@@ -3724,6 +4221,28 @@
       "average",
       "statistics",
       "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Heaviside_step_function": {
+    "id": "heaviside-function",
+    "description": "Wikipedia entry for the Heaviside step function.",
+    "short_url": "",
+    "keywords": [
+      "heaviside",
+      "step",
+      "function",
+      "step function"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Help:IPA/English": {
+    "id": "ipa-english",
+    "description": "Wikipedia entry for the International Phonetic Alphabet (IPA) for English.",
+    "short_url": "",
+    "keywords": [
+      "ipa",
+      "english",
+      "phonetic",
+      "alphabet"
     ]
   },
   "https://en.wikipedia.org/wiki/Hermite_polynomials": {
@@ -3769,6 +4288,19 @@
       "angle"
     ]
   },
+  "https://en.wikipedia.org/wiki/Hypergeometric_distribution": {
+    "id": "hypergeometric",
+    "description": "Wikipedia entry for the hypergeometric distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "hypergeometric"
+    ]
+  },
   "https://en.wikipedia.org/wiki/IEEE_floating_point": {
     "id": "ieee754",
     "description": "Wikipedia entry on the IEEE Standard for Floating-Point Arithmetic (754).",
@@ -3783,6 +4315,17 @@
       "type"
     ]
   },
+  "https://en.wikipedia.org/wiki/ISO_week_date": {
+    "id": "iso-week-date",
+    "description": "Wikipedia entry for the ISO week date.",
+    "short_url": "",
+    "keywords": [
+      "iso",
+      "week",
+      "date",
+      "calendar"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Identity_function": {
     "id": "identity-function",
     "description": "Wikipedia entry for the identity function.",
@@ -3792,6 +4335,30 @@
       "math",
       "function",
       "fcn"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Incomplete_beta_function": {
+    "id": "incomplete-beta-function",
+    "description": "Wikipedia entry for the incomplete beta function.",
+    "short_url": "",
+    "keywords": [
+      "beta",
+      "special",
+      "function",
+      "incomplete",
+      "math"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Incomplete_gamma_function": {
+    "id": "incomplete-gamma-function",
+    "description": "Wikipedia entry for the incomplete gamma function.",
+    "short_url": "",
+    "keywords": [
+      "gamma",
+      "special",
+      "function",
+      "incomplete",
+      "math"
     ]
   },
   "https://en.wikipedia.org/wiki/Index_of_dispersion": {
@@ -3810,6 +4377,22 @@
   },
   "https://en.wikipedia.org/wiki/Inverse-gamma_distribution": {
     "id": "invgamma-distribution",
+    "description": "Wikipedia entry for the inverse gamma distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "invgamma",
+      "inverse",
+      "gamma",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Inverse_gamma_distribution": {
+    "id": "inverse-gamma",
     "description": "Wikipedia entry for the inverse gamma distribution.",
     "short_url": "",
     "keywords": [
@@ -3920,6 +4503,15 @@
       "levy"
     ]
   },
+  "https://en.wikipedia.org/wiki/LLVM": {
+    "id": "llvm",
+    "description": "Wikipedia entry for LLVM, a compiler infrastructure.",
+    "short_url": "",
+    "keywords": [
+      "compiler",
+      "llvm"
+    ]
+  },
   "https://en.wikipedia.org/wiki/LaTeX": {
     "id": "latex",
     "description": "Wikipedia entry for documentation preparation system LaTeX.",
@@ -3973,6 +4565,57 @@
       "clustering"
     ]
   },
+  "https://en.wikipedia.org/wiki/Leap_year": {
+    "id": "leap-year",
+    "description": "Wikipedia entry for leap years.",
+    "short_url": "",
+    "keywords": [
+      "leap",
+      "year",
+      "calendar",
+      "gregorian",
+      "julian"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Least_common_multiple": {
+    "id": "lcm",
+    "description": "Wikipedia entry for the least common multiple.",
+    "short_url": "",
+    "keywords": [
+      "least",
+      "common",
+      "multiple",
+      "lcm",
+      "factorization",
+      "mathematics",
+      "math"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Linear_congruential_generator": {
+    "id": "lcg",
+    "description": "Wikipedia entry for linear congruential generators.",
+    "short_url": "",
+    "keywords": [
+      "random",
+      "number",
+      "generator",
+      "lcg",
+      "linear",
+      "congruential"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes": {
+    "id": "http-status-codes",
+    "description": "Wikipedia entry for HTTP status codes.",
+    "short_url": "",
+    "keywords": [
+      "http",
+      "status",
+      "code",
+      "codes",
+      "response"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Log-normal_distribution": {
     "id": "lognormal-distribution",
     "description": "Wikipedia entry for the lognormal distribution.",
@@ -4024,6 +4667,18 @@
       "logit"
     ]
   },
+  "https://en.wikipedia.org/wiki/Logit": {
+    "id": "logit",
+    "description": "Wikipedia entry for the logit function.",
+    "short_url": "",
+    "keywords": [
+      "math",
+      "sigmoid",
+      "expit",
+      "logistic",
+      "logit"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Lucas_number": {
     "id": "lucas-number",
     "description": "Wikipedia entry for Lucas numbers, an integer sequence closely related to Fibonacci numbers.",
@@ -4038,6 +4693,20 @@
       "sequence"
     ]
   },
+  "https://en.wikipedia.org/wiki/Machine_epsilon": {
+    "id": "machine-epsilon",
+    "description": "Wikipedia entry for machine epsilon.",
+    "short_url": "",
+    "keywords": [
+      "machine",
+      "epsilon",
+      "float",
+      "double",
+      "precision",
+      "rounding",
+      "error"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Marginal_distribution": {
     "id": "marginal-distribution",
     "description": "Wikipedia entry describing marginal distributions.",
@@ -4046,6 +4715,20 @@
       "marginal",
       "distribution",
       "dist",
+      "statistics",
+      "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Mean": {
+    "id": "mean",
+    "description": "Wikipedia entry for the mean, the average of a set of numbers.",
+    "short_url": "",
+    "keywords": [
+      "mean",
+      "average",
+      "arithmetic",
+      "math",
+      "mathematics",
       "statistics",
       "stats"
     ]
@@ -4143,6 +4826,21 @@
       "numbers"
     ]
   },
+  "https://en.wikipedia.org/wiki/Mid-range": {
+    "id": "mid-range",
+    "description": "Wikipedia entry for the mid-range, the average of the maximum and minimum values in a set of numbers.",
+    "short_url": "",
+    "keywords": [
+      "mid",
+      "range",
+      "average",
+      "mean",
+      "statistics",
+      "stats",
+      "math",
+      "mathematics"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Mode_%28statistics%29": {
     "id": "mode",
     "description": "Wikipedia entry for the mode.",
@@ -4157,6 +4855,21 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Moment-generating_function": {
+    "id": "mgf",
+    "description": "Wikipedia entry for the moment-generating function.",
+    "short_url": "",
+    "keywords": [
+      "moment",
+      "generating",
+      "function",
+      "mgf",
+      "statistics",
+      "stats",
+      "math",
+      "mathematics"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Moving_average": {
     "id": "moving-average",
     "description": "Wikipedia entry for a moving average.",
@@ -4169,6 +4882,19 @@
       "mean",
       "moving",
       "sliding window"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Multiplicative_inverse": {
+    "id": "multiplicative-inverse",
+    "description": "Wikipedia entry for the multiplicative inverse.",
+    "short_url": "",
+    "keywords": [
+      "multiplicative",
+      "inverse",
+      "math",
+      "mathematics",
+      "algebra",
+      "algebraic"
     ]
   },
   "https://en.wikipedia.org/wiki/NOP": {
@@ -4202,6 +4928,20 @@
       "logarithm",
       "log",
       "ln"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Nearest_integer_function": {
+    "id": "nearest-integer",
+    "description": "Wikipedia entry for the nearest integer function.",
+    "short_url": "",
+    "keywords": [
+      "math",
+      "mathematics",
+      "algebra",
+      "algebraic",
+      "integer",
+      "rounding",
+      "round"
     ]
   },
   "https://en.wikipedia.org/wiki/Negative_binomial_distribution": {
@@ -4238,6 +4978,17 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Newline": {
+    "id": "newline",
+    "description": "Wikipedia entry for the newline character.",
+    "short_url": "",
+    "keywords": [
+      "programming",
+      "newline",
+      "new line",
+      "line break"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Norm_%28mathematics%29#Euclidean_norm": {
     "id": "euclidean-norm",
     "description": "Wikipedia page for the Euclidean norm.",
@@ -4264,6 +5015,40 @@
       "continuous",
       "normal",
       "gaussian"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Nth_root": {
+    "id": "nth-root",
+    "description": "Wikipedia entry for the nth root.",
+    "short_url": "",
+    "keywords": [
+      "root",
+      "nth",
+      "math",
+      "mathematics",
+      "algebra",
+      "algebraic"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Operator_overloading": {
+    "id": "operator-overloading",
+    "description": "Wikipedia entry for operator overloading.",
+    "short_url": "",
+    "keywords": [
+      "programming",
+      "operators",
+      "overloading"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/POSIX": {
+    "id": "posix",
+    "description": "Wikipedia entry for the Portable Operating System Interface.",
+    "short_url": "",
+    "keywords": [
+      "programming",
+      "unix",
+      "linux",
+      "os"
     ]
   },
   "https://en.wikipedia.org/wiki/Pareto_distribution": {
@@ -4320,6 +5105,19 @@
       "symmetric"
     ]
   },
+  "https://en.wikipedia.org/wiki/Pi": {
+    "id": "pi",
+    "description": "Wikipedia entry for the mathematical constant Pi.",
+    "short_url": "",
+    "keywords": [
+      "pi",
+      "math",
+      "mathematics",
+      "algebra",
+      "algebraic",
+      "constant"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Poisson_distribution": {
     "id": "poisson-distribution",
     "description": "Wikipedia entry for the Poisson distribution.",
@@ -4344,6 +5142,31 @@
       "plot",
       "piechart",
       "chart"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Polygamma_function": {
+    "id": "polygamma-function",
+    "description": "Wikipedia entry for the polygamma function.",
+    "short_url": "",
+    "keywords": [
+      "polygamma",
+      "psi",
+      "digamma",
+      "trigamma",
+      "special",
+      "function",
+      "math",
+      "mathematics"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Polynomial": {
+    "id": "polynomial",
+    "description": "Wikipedia entry for polynomials.",
+    "short_url": "",
+    "keywords": [
+      "polynomial",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/Portable_Network_Graphics": {
@@ -4387,6 +5210,20 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Probability_mass_function": {
+    "id": "pmf",
+    "description": "Wikipedia entry for the probability mass function (PMF).",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "distribution",
+      "dist",
+      "pmf",
+      "mass",
+      "probability"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Quadruple-precision_floating-point_format#Double-double_arithmetic": {
     "id": "double-double-arithmetic",
     "description": "Wikipedia entry on double-double arithmetic.",
@@ -4415,6 +5252,17 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/R%C3%A9aumur_scale": {
+    "id": "reaumur-scale",
+    "description": "Wikipedia entry for the Réaumur scale.",
+    "short_url": "",
+    "keywords": [
+      "temperature",
+      "scale",
+      "reaumur",
+      "réaumur"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Raised_cosine_distribution": {
     "id": "raised-cosine-distribution",
     "description": "Wikipedia entry for the raised cosine distribution.",
@@ -4428,6 +5276,40 @@
       "continuous",
       "cosine",
       "raised"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Ramp_function": {
+    "id": "ramp-function",
+    "description": "Wikipedia entry for the ramp function.",
+    "short_url": "",
+    "keywords": [
+      "ramp",
+      "function",
+      "math",
+      "mathematics"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Range_%28statistics%29": {
+    "id": "range",
+    "description": "Wikipedia entry for the range of a set of data.",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "range",
+      "data",
+      "set"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Rational_function": {
+    "id": "rational-function",
+    "description": "Wikipedia entry for rational functions.",
+    "short_url": "",
+    "keywords": [
+      "rational",
+      "function",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/Rayleigh_distribution": {
@@ -4444,6 +5326,29 @@
       "rayleigh"
     ]
   },
+  "https://en.wikipedia.org/wiki/Real_number": {
+    "id": "real",
+    "description": "Wikipedia entry for real numbers.",
+    "short_url": "",
+    "keywords": [
+      "real",
+      "number",
+      "math",
+      "mathematics"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Relative_change_and_difference": {
+    "id": "relative-difference",
+    "description": "Wikipedia entry for relative difference.",
+    "short_url": "",
+    "keywords": [
+      "relative",
+      "difference",
+      "change",
+      "math",
+      "mathematics"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Residual_sum_of_squares": {
     "id": "residual-sum-of-squares",
     "description": "Wikipedia entry for the residual sum of squares, which is the sum of the squares of residuals.",
@@ -4456,6 +5361,18 @@
       "model",
       "statistics",
       "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Riemann_zeta_function": {
+    "id": "zeta-function",
+    "description": "Wikipedia entry for the Riemann zeta function.",
+    "short_url": "",
+    "keywords": [
+      "zeta",
+      "special",
+      "function",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/Root-mean-square_deviation": {
@@ -4483,6 +5400,86 @@
       "math"
     ]
   },
+  "https://en.wikipedia.org/wiki/Scale_parameter": {
+    "id": "scale",
+    "description": "Wikipedia entry for the scale parameter of a probability distribution.",
+    "short_url": "",
+    "keywords": [
+      "scale",
+      "parameter",
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Serial_comma": {
+    "id": "oxford-comma",
+    "description": "Wikipedia entry for the Oxford comma, also known as the serial comma.",
+    "short_url": "",
+    "keywords": [
+      "serial",
+      "comma",
+      "oxford",
+      "punctuation"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Series_%28mathematics%29": {
+    "id": "infinite-series",
+    "description": "Wikipedia entry for infinite series.",
+    "short_url": "",
+    "keywords": [
+      "series",
+      "infinite",
+      "math",
+      "mathematics"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Shape_parameter": {
+    "id": "shape",
+    "description": "Wikipedia entry for the shape parameter.",
+    "short_url": "",
+    "keywords": [
+      "shape",
+      "parameter",
+      "statistics",
+      "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Significand": {
+    "id": "significand",
+    "description": "Wikipedia entry for the significand of a floating-point number.",
+    "short_url": "",
+    "keywords": [
+      "significand",
+      "floating-point",
+      "math"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Sinc_function": {
+    "id": "sinc",
+    "description": "Wikipedia entry for the sinc function.",
+    "short_url": "",
+    "keywords": [
+      "sinc",
+      "function",
+      "math",
+      "mathematics"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Sine": {
+    "id": "sine",
+    "description": "Wikipedia entry for the sine function.",
+    "short_url": "",
+    "keywords": [
+      "sine",
+      "trigonometry",
+      "trig",
+      "math",
+      "mathematics"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Skew-symmetric_matrix": {
     "id": "skew-symmetric-matrix",
     "description": "Wikipedia entry for skew-symmetric matrices.",
@@ -4505,6 +5502,17 @@
       "statistics",
       "stats",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Spence%27s_function": {
+    "id": "spence",
+    "description": "Wikipedia entry for Spence's function.",
+    "short_url": "",
+    "keywords": [
+      "spence",
+      "function",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/Square_root": {
@@ -4558,6 +5566,19 @@
       "spread",
       "dispersion",
       "deviation",
+      "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Standard_error": {
+    "id": "standard-error",
+    "description": "Wikipedia entry for the standard error.",
+    "short_url": "",
+    "keywords": [
+      "standard",
+      "error",
+      "statistics",
+      "stats",
+      "statistic",
       "probability"
     ]
   },
@@ -4632,6 +5653,34 @@
       "t"
     ]
   },
+  "https://en.wikipedia.org/wiki/Studentized_range_distribution": {
+    "id": "studentized-range",
+    "description": "Wikipedia entry for the Studentized range distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "studentized",
+      "range"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Symmetric-key_algorithm": {
+    "id": "symmetric-ciphers",
+    "description": "Wikipedia entry for symmetric-key algorithms, which use the same key for both encryption and decryption.",
+    "short_url": "",
+    "keywords": [
+      "symmetric",
+      "ciphers",
+      "encryption",
+      "decryption",
+      "key",
+      "algorithm"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Symmetric_matrix": {
     "id": "symmetric-matrix",
     "description": "Wikipedia entry for symmetric matrix, a matrix which equals its transpose.",
@@ -4640,6 +5689,18 @@
       "linear algebra",
       "symmetric",
       "matrix"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Tangent": {
+    "id": "tangent",
+    "description": "Wikipedia entry for the tangent function.",
+    "short_url": "",
+    "keywords": [
+      "trigonometry",
+      "tangent",
+      "function",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/TeX": {
@@ -4698,6 +5759,18 @@
       "number",
       "binomial",
       "sequence"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Trigamma_function": {
+    "id": "trigamma-function",
+    "description": "Wikipedia entry for the trigamma function.",
+    "short_url": "",
+    "keywords": [
+      "trigamma",
+      "special",
+      "function",
+      "math",
+      "mathematics"
     ]
   },
   "https://en.wikipedia.org/wiki/Trigonometric_functions": {
@@ -4790,6 +5863,19 @@
       "standard"
     ]
   },
+  "https://en.wikipedia.org/wiki/Universally_unique_identifier": {
+    "id": "uuid",
+    "description": "Wikipedia entry for universally unique identifiers.",
+    "short_url": "",
+    "keywords": [
+      "uuid",
+      "unique",
+      "identifier",
+      "id",
+      "hash",
+      "random"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Unix_time": {
     "id": "unix-time",
     "description": "Wikipedia entry describing system for describing a point in time, defined as the number of seconds that have elapsed since 00:00:00 Coordinated Universal Time (UTC), Thursday, 1 January 1970, minus the number of leap seconds that have taken place since then.",
@@ -4868,6 +5954,21 @@
       "encoding",
       "cs",
       "character"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Xorshift": {
+    "id": "xorshift*",
+    "description": "Wikipedia entry for the xorshift* pseudo-random number generator.",
+    "short_url": "",
+    "keywords": [
+      "xorshift",
+      "PRNG",
+      "random",
+      "number",
+      "generator",
+      "cs",
+      "math",
+      "marsaglia"
     ]
   },
   "https://en.wikipedia.org/wiki/Z_shell": {
@@ -4983,6 +6084,75 @@
       "scripts"
     ]
   },
+  "https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes": {
+    "id": "git-remotes",
+    "description": "Git documentation describing remotes, which are named references to other repositories.",
+    "short_url": "",
+    "keywords": [
+      "git",
+      "remotes",
+      "remote",
+      "repository",
+      "repo"
+    ]
+  },
+  "https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History": {
+    "id": "git-rewriting-history",
+    "description": "Git documentation describing how to rewrite history.",
+    "short_url": "",
+    "keywords": [
+      "git",
+      "history",
+      "rewrite",
+      "rebase",
+      "amend",
+      "commit",
+      "revert"
+    ]
+  },
+  "https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Squashing-Commits": {
+    "id": "git-squash",
+    "description": "Git documentation describing how to squash commits.",
+    "short_url": "",
+    "keywords": [
+      "git",
+      "history",
+      "rewrite",
+      "rebase",
+      "amend",
+      "commit",
+      "revert",
+      "squash"
+    ]
+  },
+  "https://git-scm.com/docs/git-clone#git-clone---depthltdepthgt": {
+    "id": "git-clone-depth",
+    "description": "Git documentation describing the --depth option for git clone.",
+    "short_url": "",
+    "keywords": [
+      "git",
+      "clone",
+      "depth"
+    ]
+  },
+  "https://git-scm.com/docs/git-merge": {
+    "id": "git-merge",
+    "description": "Git documentation describing the git merge command.",
+    "short_url": "",
+    "keywords": [
+      "git",
+      "merge"
+    ]
+  },
+  "https://git-scm.com/docs/git-rebase": {
+    "id": "git-rebase",
+    "description": "Git documentation describing the git rebase command.",
+    "short_url": "",
+    "keywords": [
+      "git",
+      "rebase"
+    ]
+  },
   "https://github.com/315234/SublimeFortran": {
     "id": "sublime-text-fortran",
     "description": "GitHub repository for a Sublime Text plugin which provides syntax highlighting for Fortran.",
@@ -5017,6 +6187,20 @@
       "plugin"
     ]
   },
+  "https://github.com/JuliaEditorSupport/julia-vscode": {
+    "id": "vscode-julia",
+    "description": "GitHub repository for a Visual Studio Code plugin which provides syntax highlighting for Julia.",
+    "short_url": "",
+    "keywords": [
+      "julia",
+      "vscode",
+      "visual",
+      "studio",
+      "code",
+      "editor",
+      "plugin"
+    ]
+  },
   "https://github.com/Matt-Esch/virtual-dom": {
     "id": "virtual-dom",
     "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
@@ -5025,6 +6209,26 @@
       "vdom",
       "virtual",
       "dom"
+    ]
+  },
+  "https://github.com/Medium/medium-policy/blob/3c76f50e5e6a529c8352c85c9ed596ef95f863b7/privacy-policy.md": {
+    "id": "medium-privacy-policy",
+    "description": "The privacy policy of Medium, a blogging platform.",
+    "short_url": "",
+    "keywords": [
+      "medium",
+      "privacy",
+      "policy"
+    ]
+  },
+  "https://github.com/Medium/medium-policy/blob/3c76f50e5e6a529c8352c85c9ed596ef95f863b7/terms-of-service.md": {
+    "id": "medium-terms-of-service",
+    "description": "The terms of service of Medium, a blogging platform.",
+    "short_url": "",
+    "keywords": [
+      "medium",
+      "terms",
+      "service"
     ]
   },
   "https://github.com/Microsoft/TypeScript-Sublime-Plugin": {
@@ -5051,6 +6255,54 @@
       "definition files",
       "ts",
       "lint"
+    ]
+  },
+  "https://github.com/Microsoft/vscode-eslint": {
+    "id": "vscode-eslint",
+    "description": "GitHub repository for the ESLint extension for Visual Studio Code.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "visual",
+      "studio",
+      "code",
+      "editor",
+      "plugin",
+      "eslint"
+    ]
+  },
+  "https://github.com/Microsoft/vscode-python": {
+    "id": "vscode-python",
+    "description": "GitHub repository for the Python extension for Visual Studio Code.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "visual",
+      "studio",
+      "code",
+      "editor",
+      "plugin",
+      "python"
+    ]
+  },
+  "https://github.com/Planeshifter": {
+    "id": "philipp-burckhardt-github",
+    "description": "GitHub profile of Philipp Burckhardt",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "philipp",
+      "burckhardt"
+    ]
+  },
+  "https://github.com/Planeshifter/emscripten-examples": {
+    "id": "planeshifter-examples",
+    "description": "GitHub repository with Emscripten example code.",
+    "short_url": "",
+    "keywords": [
+      "emscripten",
+      "examples",
+      "github"
     ]
   },
   "https://github.com/PyCQA/pycodestyle": {
@@ -5191,6 +6443,16 @@
       "plugin"
     ]
   },
+  "https://github.com/WebAssembly/spec/": {
+    "id": "wasm",
+    "description": "GitHub repository for the WebAssembly specification.",
+    "short_url": "",
+    "keywords": [
+      "wasm",
+      "webassembly",
+      "specification"
+    ]
+  },
   "https://github.com/WebAssembly/wabt": {
     "id": "wabt",
     "description": "The GitHub repository for the WebAssembly Binary Toolkit (WABT), a suite of tools for developing with WebAssembly.",
@@ -5214,6 +6476,29 @@
       "guide"
     ]
   },
+  "https://github.com/creationix/nvm": {
+    "id": "nvm",
+    "description": "Node Version Manager, a simple bash script to manage multiple active Node.js versions.",
+    "short_url": "",
+    "keywords": [
+      "node",
+      "version",
+      "manager",
+      "nvm"
+    ]
+  },
+  "https://github.com/dslomov/typed-objects-es7": {
+    "id": "typed-objects-proposal",
+    "description": "Typed Objects proposal for ECMAScript 7.",
+    "short_url": "",
+    "keywords": [
+      "typed",
+      "objects",
+      "proposal",
+      "ecmascript",
+      "es7"
+    ]
+  },
   "https://github.com/dzhibas/SublimePrettyJson": {
     "id": "sublime-text-pretty-json",
     "description": "Sublime Text package for pretty printing and minifying JSON.",
@@ -5223,6 +6508,40 @@
       "text",
       "editor",
       "json"
+    ]
+  },
+  "https://github.com/editorconfig/editorconfig-vscode": {
+    "id": "vscode-editorconfig",
+    "description": "EditorConfig extension for Visual Studio Code.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "visual",
+      "studio",
+      "code",
+      "editorconfig",
+      "extension",
+      "plugin"
+    ]
+  },
+  "https://github.com/emscripten-core/emsdk": {
+    "id": "emscripten-sdk",
+    "description": "Emscripten SDK.",
+    "short_url": "",
+    "keywords": [
+      "emscripten",
+      "sdk"
+    ]
+  },
+  "https://github.com/felixrieseberg/windows-build-tools": {
+    "id": "node-windows-build-tools",
+    "description": "A set of tools to build native Windows modules for Node.js.",
+    "short_url": "",
+    "keywords": [
+      "node",
+      "windows",
+      "build",
+      "tools"
     ]
   },
   "https://github.com/feross/buffer": {
@@ -5238,6 +6557,16 @@
       "browser"
     ]
   },
+  "https://github.com/jimhester/lintr": {
+    "id": "lintr",
+    "description": "Linter for R.",
+    "short_url": "",
+    "keywords": [
+      "r",
+      "linter",
+      "lint"
+    ]
+  },
   "https://github.com/kemayo/sublime-text-git": {
     "id": "sublime-text-git",
     "description": "GitHub repository for a Sublime Text plugin which provides Git integration.",
@@ -5248,6 +6577,17 @@
       "text",
       "editor",
       "plugin"
+    ]
+  },
+  "https://github.com/kgryte": {
+    "id": "athan-reines-github",
+    "description": "Athan Reines' GitHub profile.",
+    "short_url": "",
+    "keywords": [
+      "athan",
+      "reines",
+      "github",
+      "profile"
     ]
   },
   "https://github.com/koalaman/shellcheck": {
@@ -5274,6 +6614,25 @@
       "plugin"
     ]
   },
+  "https://github.com/nodejs/node/blob/0be1c5728173ea9ac42843058e26b6268568acf0/GOVERNANCE.md": {
+    "id": "nodejs-governance",
+    "description": "Node.js project governance.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node",
+      "governance"
+    ]
+  },
+  "https://github.com/numpy/numpy/blob/6db3236cd81c107d752d8ef5fb411f26bf8b7255/doc/source/dev/governance/governance.rst": {
+    "id": "numpy-governance",
+    "description": "NumPy project governance.",
+    "short_url": "",
+    "keywords": [
+      "numpy",
+      "governance"
+    ]
+  },
   "https://github.com/pypa/pip": {
     "id": "pip",
     "description": "A Python package manager. The PyPA recommended tool for installing Python packages.",
@@ -5286,6 +6645,216 @@
       "pip",
       "pypa",
       "install"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-blockquote-indentation": {
+    "id": "remark-lint-blockquote-indentation",
+    "description": "remark-lint rule to enforce blockquote indentation.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-checkbox-character-style": {
+    "id": "remark-lint-checkbox-character-style",
+    "description": "remark-lint rule to enforce checkbox character style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-code-block-style": {
+    "id": "remark-lint-code-block-style",
+    "description": "remark-lint rule to enforce code block style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-emphasis-marker": {
+    "id": "remark-lint-emphasis-marker",
+    "description": "remark-lint rule to enforce emphasis marker style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-fenced-code-flag": {
+    "id": "remark-lint-fenced-code-flag",
+    "description": "remark-lint rule to enforce fenced code flag style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-fenced-code-marker": {
+    "id": "remark-lint-fenced-code-marker",
+    "description": "remark-lint rule to enforce fenced code marker style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-first-heading-level": {
+    "id": "remark-lint-first-heading-level",
+    "description": "remark-lint rule to enforce first heading level.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-heading-style": {
+    "id": "remark-lint-heading-style",
+    "description": "remark-lint rule to enforce heading style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-linebreak-style": {
+    "id": "remark-lint-linebreak-style",
+    "description": "remark-lint rule to enforce linebreak style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-no-heading-punctuation": {
+    "id": "remark-lint-no-heading-punctuation",
+    "description": "remark-lint rule to enforce no heading punctuation.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-no-missing-blank-lines": {
+    "id": "remark-lint-no-missing-blank-lines",
+    "description": "remark-lint rule to enforce no missing blank lines.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-no-multiple-toplevel-headings": {
+    "id": "remark-lint-multiple-toplevel-headings",
+    "description": "remark-lint rule to enforce no multiple toplevel headings.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-ordered-list-marker-style": {
+    "id": "remark-lint-ordered-list-marker-style",
+    "description": "remark-lint rule to enforce ordered list marker style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-ordered-list-marker-value": {
+    "id": "remark-lint-ordered-list-marker-value",
+    "description": "remark-lint rule to enforce ordered list marker value.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-rule-style": {
+    "id": "remark-lint-rule-style",
+    "description": "remark-lint rule to enforce rule style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-strong-marker": {
+    "id": "remark-lint-strong-marker",
+    "description": "remark-lint rule to enforce strong marker style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-table-cell-padding": {
+    "id": "remark-lint-table-cell-padding",
+    "description": "remark-lint rule to enforce table cell padding.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/19150d94f89f7a0d94d083417890236d11839641/packages/remark-lint-unordered-list-marker-style": {
+    "id": "remark-lint-unordered-list-marker-style",
+    "description": "remark-lint rule to enforce unordered list marker style.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/7727269a1088e9e9b2008465e8c1947b38a44b69/packages/remark-lint-maximum-line-length": {
+    "id": "remark-lint-maximum-line-length",
+    "description": "remark-lint rule to enforce a maximum line length.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/master/packages/remark-lint-list-item-spacing": {
+    "id": "remark-lint-list-item-spacing",
+    "description": "remark-lint rule to enforce list item spacing.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
+    ]
+  },
+  "https://github.com/remarkjs/remark-lint/tree/master/packages/remark-lint-maximum-heading-length": {
+    "id": "remark-lint-maximum-heading-length",
+    "description": "remark-lint rule to enforce a maximum heading length.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "plugin"
     ]
   },
   "https://github.com/roadhump/SublimeLinter-eslint": {
@@ -5304,6 +6873,43 @@
       "ecmascript"
     ]
   },
+  "https://github.com/rreusser": {
+    "id": "ricky-reusser-github",
+    "description": "Ricky Reusser's GitHub profile.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "profile",
+      "ricky",
+      "reusser"
+    ]
+  },
+  "https://github.com/rwaldron/johnny-five": {
+    "id": "johnny-five",
+    "description": "JavaScript Robotics and IoT programming framework, developed at Bocoup.",
+    "short_url": "",
+    "keywords": [
+      "robotics",
+      "iot",
+      "arduino",
+      "raspberry",
+      "pi",
+      "js",
+      "javascript",
+      "node",
+      "nodejs",
+      "node.js"
+    ]
+  },
+  "https://github.com/scikit-learn/scikit-learn/blob/0c8820b6e4f9c49f55e96fcbb297073a887eb37b/doc/governance.rst": {
+    "id": "scikit-learn-governance",
+    "description": "Governance of the scikit-learn project.",
+    "short_url": "",
+    "keywords": [
+      "scikit-learn",
+      "governance"
+    ]
+  },
   "https://github.com/settings/tokens/new": {
     "id": "github-token",
     "description": "Link for creating a new GitHub token.",
@@ -5315,6 +6921,27 @@
       "authorization"
     ]
   },
+  "https://github.com/signup/free": {
+    "id": "github-signup",
+    "description": "Link for creating a new GitHub account.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "signup"
+    ]
+  },
+  "https://github.com/sindresorhus/atom-editorconfig": {
+    "id": "atom-editorconfig",
+    "description": "EditorConfig plugin for Atom.",
+    "short_url": "",
+    "keywords": [
+      "atom",
+      "editorconfig",
+      "editor",
+      "config",
+      "configuration"
+    ]
+  },
   "https://github.com/sindresorhus/editorconfig-sublime": {
     "id": "sublime-text-editorconfig",
     "description": "Sublime Text package for using EditorConfig.",
@@ -5324,6 +6951,56 @@
       "editor",
       "sublime",
       "text"
+    ]
+  },
+  "https://github.com/sponsors/kgryte": {
+    "id": "github-stdlib",
+    "description": "Link to the GitHub Sponsors page for stdlib.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "sponsors",
+      "stdlib"
+    ]
+  },
+  "https://github.com/stdlib-js/math-base-special-erf/tree/esm": {
+    "id": "@stdlib/math-base-special-erf-esm",
+    "description": "ESM bundle for @stdlib/math-base-special-erf.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "math",
+      "base",
+      "special",
+      "erf",
+      "esm",
+      "bundle"
+    ]
+  },
+  "https://github.com/stdlib-js/math-base-special-erf/tree/umd": {
+    "id": "@stdlib/math-base-special-erf-umd",
+    "description": "UMD bundle for @stdlib/math-base-special-erf.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "math",
+      "base",
+      "special",
+      "erf",
+      "umd",
+      "bundle"
+    ]
+  },
+  "https://github.com/stdlib-js/ndarray-array/tree/deno": {
+    "id": "@stdlib/ndarray-array-deno",
+    "description": "Deno bundle for @stdlib/ndarray-array.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "ndarray",
+      "array",
+      "deno",
+      "bundle"
     ]
   },
   "https://github.com/stdlib-js/stdlib": {
@@ -5348,6 +7025,99 @@
       "repo"
     ]
   },
+  "https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md": {
+    "id": "stdlib-code-of-conduct",
+    "description": "The stdlib code of conduct.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "code",
+      "conduct",
+      "code of conduct"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md": {
+    "id": "stdlib-contributing",
+    "description": "The stdlib contributing guidelines.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "contributing",
+      "guidelines"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md": {
+    "id": "stdlib-faq",
+    "description": "Frequency asked questions about stdlib.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "faq",
+      "frequently",
+      "asked",
+      "questions"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/blob/develop/GOVERNANCE.md": {
+    "id": "stdlib-governance",
+    "description": "The stdlib governance structure.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "governance",
+      "structure"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/blob/develop/NOTICE": {
+    "id": "stdlib-copyright",
+    "description": "stdlib copyright notice.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "copyright",
+      "notice"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/blob/develop/PRIVACY.md": {
+    "id": "stdlib-privacy-policy",
+    "description": "The stdlib privacy policy.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "privacy",
+      "policy"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md": {
+    "id": "stdlib-development",
+    "description": "The stdlib development guidelines.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "development",
+      "guidelines"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/tree/develop/tools/snippets": {
+    "id": "stdlib-snippets",
+    "description": "stdlib code snippets.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "snippets",
+      "code"
+    ]
+  },
+  "https://github.com/stumpsyn/policies/blob/7caa4699ba74e341a46b3266d4610af477ba2c3d/citizen_code_of_conduct.md": {
+    "id": "citizen-code-of-conduct",
+    "description": "stdlib's Code of Conduct.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "code",
+      "conduct"
+    ]
+  },
   "https://github.com/substack/node-browserify": {
     "id": "browserify",
     "description": "GitHub repository for browserify, a bundler for requiring Node.js modules in browser environments.",
@@ -5362,6 +7132,38 @@
       "node-js"
     ]
   },
+  "https://github.com/substack/tape": {
+    "id": "tape",
+    "description": "GitHub repository for tape, a minimalist test framework.",
+    "short_url": "",
+    "keywords": [
+      "tape",
+      "test",
+      "framework",
+      "minimalist"
+    ]
+  },
+  "https://github.com/tc39/ecmascript_simd/": {
+    "id": "ecmascript-simd",
+    "description": "GitHub repository for ECMAScript SIMD.",
+    "short_url": "",
+    "keywords": [
+      "ecmascript",
+      "simd",
+      "specification",
+      "spec"
+    ]
+  },
+  "https://github.com/todogroup/opencodeofconduct": {
+    "id": "open-code-of-conduct",
+    "description": "GitHub repository for the Open Code of Conduct.",
+    "short_url": "",
+    "keywords": [
+      "open",
+      "code",
+      "conduct"
+    ]
+  },
   "https://github.com/umdjs/umd": {
     "id": "umd",
     "description": "GitHub repository which formalizes the design and implementation of the Universal Module Definition (UMD) API for JavaScript modules.",
@@ -5370,6 +7172,18 @@
       "umd",
       "modules",
       "javascript"
+    ]
+  },
+  "https://github.com/wooorm/rehype": {
+    "id": "rehype",
+    "description": "GitHub repository for rehype, a unified interface to transform HTML.",
+    "short_url": "",
+    "keywords": [
+      "rehype",
+      "unified",
+      "interface",
+      "transform",
+      "html"
     ]
   },
   "https://github.com/wooorm/remark": {
@@ -5515,6 +7329,43 @@
       "node",
       "stream",
       "api"
+    ]
+  },
+  "https://nodejs.org/api/stream.html#stream_class_stream_readable": {
+    "id": "readable-stream",
+    "description": "Node.js documentation for the Readable stream class.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "stream",
+      "readable"
+    ]
+  },
+  "https://nodejs.org/api/stream.html#stream_class_stream_writable": {
+    "id": "writable-stream",
+    "description": "Node.js documentation for the Writable stream class.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "stream",
+      "writable"
+    ]
+  },
+  "https://nodejs.org/api/stream.html#stream_object_mode": {
+    "id": "object-mode",
+    "description": "Node.js documentation for the objectMode option of the stream constructor.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "stream",
+      "object",
+      "mode"
     ]
   },
   "https://nodejs.org/api/stream.html#stream_writable_streams": {
@@ -5788,6 +7639,42 @@
       "package",
       "pkg",
       "manager"
+    ]
+  },
+  "https://plot.ly/matlab/": {
+    "id": "plotly",
+    "description": "Interactive, browser-based graphing with MATLAB and Plotly.",
+    "short_url": "",
+    "keywords": [
+      "plotly",
+      "plot",
+      "graph",
+      "interactive",
+      "browser",
+      "matlab"
+    ]
+  },
+  "https://raw.githubusercontent.com/stdlib-js/stdlib/develop/LICENSE": {
+    "id": "stdlib-license",
+    "description": "The license for the stdlib JavaScript library.",
+    "short_url": "",
+    "keywords": [
+      "license",
+      "stdlib",
+      "javascript",
+      "js",
+      "library"
+    ]
+  },
+  "https://semver.org/": {
+    "id": "semantic-version",
+    "description": "Semantic Versioning.",
+    "short_url": "",
+    "keywords": [
+      "semver",
+      "version",
+      "semantic",
+      "versioning"
     ]
   },
   "https://stdlib.io/": {
@@ -6127,6 +8014,21 @@
       "utility"
     ]
   },
+  "https://www.npmjs.com/": {
+    "id": "npm",
+    "description": "Dominant package manager for JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "node",
+      "nodejs",
+      "node.js",
+      "javascript",
+      "js",
+      "package",
+      "manager"
+    ]
+  },
   "https://www.npmjs.com/package/repl": {
     "id": "repl-template-lib",
     "description": "A lightweight template library in NodeJS.",
@@ -6137,6 +8039,31 @@
       "repl",
       "nodejs",
       "javascript"
+    ]
+  },
+  "https://www.npmjs.com/policies/open-source-terms": {
+    "id": "npm-open-source-terms",
+    "description": "NPM's open source terms.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "open",
+      "source",
+      "terms",
+      "license"
+    ]
+  },
+  "https://www.patreon.com/athan": {
+    "id": "patreon",
+    "description": "Athan Reines' Patreon page for supporting the development of stdlib.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "patreon",
+      "support",
+      "donate",
+      "donation",
+      "funding"
     ]
   },
   "https://www.python.org/": {
