@@ -136,6 +136,186 @@
       "virtual environments"
     ]
   },
+  "http://dx.doi.org/10.1007/BF02293108": {
+    "id": "@ahrens:1974",
+    "description": "",
+    "short_url": "",
+    "keywords": []
+  },
+  "http://dx.doi.org/10.1016/0167-6687(93)90997-4": {
+    "id": "@hormann:1993b",
+    "description": "Digital Object Identifier for Hormann, K. 1993. The transformed rejection method for generating Poisson random variables.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "hormann",
+      "poisson",
+      "random",
+      "number",
+      "rejection",
+      "transformation",
+      "transform",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.1080/00949658508810839": {
+    "id": "@kachitvichyanukul:1985",
+    "description": "Digital Object Identifier for Kachitvichyanukul, V. and Schmeiser, B. W. 1985. Computer generation of hypergeometric random variates.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "kachitvichyanukul",
+      "schmeiser",
+      "hypergeometric",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.1080/00949659308811496": {
+    "id": "@hormann:1993a",
+    "description": "Digital Object Identifier for Hormann, W. 1993. The generation of binomial random variates.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "hormann",
+      "binomial",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.1137/1006063": {
+    "id": "@marsaglia:1964a",
+    "description": "Digital Object Identifier for Marsaglia, G. and Bray, T. A. 1964. A convenient method for generating normal variables.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "marsaglia",
+      "bray",
+      "normal",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.1145/1287620.1287622": {
+    "id": "@thomas:2007",
+    "description": "Digital Object Identifier for Thomas, D. B. 2007. Gaussian random number generators.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "thomas",
+      "normal",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.1145/355666.355670": {
+    "id": "@bays:1976",
+    "description": "Digital Object Identifier for Bays, C. and Durham, S. D. 1976. Improving a poor random number generator.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "bays",
+      "durham",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.1145/358407.358414": {
+    "id": "@marsaglia:2000a",
+    "description": "Digital Object Identifier for Marsaglia, G. and Tsang, W. W. 2000. A simple method for generating gamma variables.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "marsaglia",
+      "tsang",
+      "gamma",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.1145/362946.362996": {
+    "id": "@knop:1969",
+    "description": "Digital Object Identifier for Knop, R. 1969. Remark on algorithm 334 [G5]: normal random deviates",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "knop",
+      "normal",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.1145/363397.363547": {
+    "id": "@bell:1968",
+    "description": "Digital Object Identifier for Bell, J. R. 1968. Algorithm 334: Normal random deviates.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "bell",
+      "normal",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.1145/63039.63042": {
+    "id": "@park:1988",
+    "description": "Digital Object Identifier for Park, S. K. and Miller, K. W. 1988. Random number generators: good ones are hard to find.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "park",
+      "miller",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.1214/aoms/1177706645": {
+    "id": "@box:1958",
+    "description": "Digital Object Identifier for Box, G. E. P. and Muller, M. E. 1958. A note on the generation of random normal deviates.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "box",
+      "muller",
+      "normal",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
+  "http://dx.doi.org/10.18637/jss.v005.i08": {
+    "id": "@marsaglia:2000b",
+    "description": "Digital Object Identifier for Marsaglia, G. and Tsang, W. W. 2000. 2000. The ziggurat method for generating random variables.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "marsaglia",
+      "tsang",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
   "http://ecma-international.org/ecma-262/5.1/#sec-9.12": {
     "id": "ecma-262-same-value-algorithm",
     "description": "ECMAScript 5 specification of the SameValue algorithm.",
@@ -165,179 +345,6 @@
       "c++",
       "math",
       "fdim"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/2147483647": {
-    "id": "max-int32",
-    "description": "Wikipedia article on the maximum value of a 32-bit signed integer.",
-    "short_url": "",
-    "keywords": [
-      "int",
-      "integer",
-      "2147483647",
-      "2^31-1"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Anagram": {
-    "id": "anagram",
-    "description": "Wikipedia entry for anagrams.",
-    "short_url": "",
-    "keywords": [
-      "alphabetical",
-      "anagram",
-      "words",
-      "letters"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Beta_function": {
-    "id": "beta-function",
-    "description": "Wikipedia entry for the beta function.",
-    "short_url": "",
-    "keywords": [
-      "beta",
-      "function",
-      "math"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Catalan%27s_constant": {
-    "id": "catalan-constant",
-    "description": "Wikipedia entry for Catalan's constant.",
-    "short_url": "",
-    "keywords": [
-      "catalan",
-      "constant",
-      "math"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Diacritic": {
-    "id": "diacritics",
-    "description": "Wikipedia entry on diacritics.",
-    "short_url": "",
-    "keywords": [
-      "typography",
-      "punctuation",
-      "diacritics",
-      "glyph"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Endianness": {
-    "id": "endianness",
-    "description": "Wikipedia entry for endianness, which governs how a range of bytes in computer memory is interpreted.",
-    "short_url": "",
-    "keywords": [
-      "bigendian",
-      "littleendian",
-      "memory",
-      "computer",
-      "bytes",
-      "bit"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Fluent_interface": {
-    "id": "fluent-interface",
-    "description": "Wikipedia entry for fluent interfaces.",
-    "short_url": "",
-    "keywords": [
-      "fluent",
-      "interface",
-      "design",
-      "pattern"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Greatest_common_divisor": {
-    "id": "gcd",
-    "description": "Wikipedia entry for the greatest common divisor.",
-    "short_url": "",
-    "keywords": [
-      "gcd",
-      "greatest",
-      "common",
-      "divisor",
-      "math"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Linear_congruential_generator#Advantages_and_disadvantages_of_LCGs": {
-    "id": "pros-cons",
-    "description": "Wikipedia entry on the pros and cons of linear congruential generators.",
-    "short_url": "",
-    "keywords": [
-      "pros",
-      "cons",
-      "linear",
-      "congruential",
-      "generator",
-      "random",
-      "numbers"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Norm_%28mathematics%29": {
-    "id": "l1norm",
-    "description": "Wikipedia entry for the L1 norm.",
-    "short_url": "",
-    "keywords": [
-      "l1",
-      "norm",
-      "math"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Pipeline_%28Unix%29": {
-    "id": "standard-stream",
-    "description": "Wikipedia entry for UNIX pipelines.",
-    "short_url": "",
-    "keywords": [
-      "standard",
-      "stream",
-      "unix",
-      "pipeline"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Pythagorean_theorem": {
-    "id": "hypotenuse",
-    "description": "Wikipedia entry on the Pythagorean theorem and the hypotenuse of a triangle.",
-    "short_url": "",
-    "keywords": [
-      "area",
-      "angle",
-      "pythagoras",
-      "triangle",
-      "theorem",
-      "hypotenuse"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/Sign_function": {
-    "id": "signum",
-    "description": "Wikipedia entry for the signum function.",
-    "short_url": "",
-    "keywords": [
-      "signum",
-      "sign",
-      "function",
-      "math"
-    ]
-  },
-  "https://en.wikipedia.org/wiki/URI_scheme": {
-    "id": "uri",
-    "description": "Wikipedia entry on Uniform Resource Identifiers (URIs) to identify resources in a network.",
-    "short_url": "",
-    "keywords": [
-      "internet",
-      "web",
-      "uri",
-      "standard",
-      "identifier",
-      "protocol"
-    ]
-  },
-  "https://eslint.org/": {
-    "id": "eslint",
-    "description": "A pluggable linting utility for JavaScript. Official website.",
-    "short_url": "",
-    "keywords": [
-      "lint",
-      "linting",
-      "linter",
-      "javascript",
-      "ecmascript"
     ]
   },
   "http://gcc.gnu.org/": {
@@ -421,16 +428,6 @@
       "indentation",
       "space",
       "spaces"
-    ]
-  },
-  "https://lunrjs.com": {
-    "id": "lunr-js",
-    "description": "Lunr.js is a simple full-text search engine for the browser.",
-    "short_url": "",
-    "keywords": [
-      "lunr",
-      "lunr.js",
-      "search"
     ]
   },
   "http://man7.org/linux/man-pages/man2/chdir.2.html": {
@@ -1077,6 +1074,127 @@
       "copyright"
     ]
   },
+  "http://www.getty.edu/art/collection/objects/128362/dorothea-lange-abandoned-dust-bowl-home-american-about-1935-1940/": {
+    "id": "@lange:1940a",
+    "description": "Lange, Dorothea. 1940. \"Abandoned Dust Bowl Home.\" *American*.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse",
+      "copyright"
+    ]
+  },
+  "http://www.getty.edu/art/collection/objects/134512/fedele-azari-airplane-viewed-from-above-looking-down-italian-1914-1929/": {
+    "id": "azari:1929a",
+    "description": "Azari, Fedele. 1929. \"Airplane, Viewed from Above, Looking Down.\" *Italian*.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse"
+    ]
+  },
+  "http://www.getty.edu/art/collection/objects/141994/peter-henry-emerson-a-march-pastoral-suffolk-british-1888/": {
+    "id": "@emerson:1888a",
+    "description": "Emerson, Peter Henry. 1888. \"A March Pastoral, Suffolk.\" *British*.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse"
+    ]
+  },
+  "http://www.getty.edu/art/collection/objects/241797/felice-beato-boats-in-river-nagasaki-british-about-1865/": {
+    "id": "@beato:1865a",
+    "description": "Beato, Felice. 1865. \"Boats in River, Nagasaki.\" *British*.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse"
+    ]
+  },
+  "http://www.getty.edu/art/collection/objects/35443/karl-blossfeldt-acanthus-mollis-german-1928/": {
+    "id": "@blossfeldt:1928a",
+    "description": "Blossfeldt, Karl. 1928. \"Acanthus mollis.\" *German*.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse"
+    ]
+  },
+  "http://www.getty.edu/art/collection/objects/35448/karl-blossfeldt-allium-ostrowskianum-knoblauchpflanze-german-1928/": {
+    "id": "@blossfeldt:1928b",
+    "description": "Blossfeldt, Karl. 1928. \"Allium ostrowskianum, Knoblauchpflanze.\" *German*.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse"
+    ]
+  },
+  "http://www.getty.edu/art/collection/objects/40209/timothy-h-o'sullivan-black-canon-colorado-river-from-camp-8-looking-above-american-1871/": {
+    "id": "@osullivan:1871a",
+    "description": "O'Sullivan, Timothy H. 1871. \"Black Canon, Colorado River, from Camp 8, Looking Above.\" *American*.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse"
+    ]
+  },
+  "http://www.getty.edu/art/collection/objects/40907/eadweard-j-muybridge-animal-locomotion-american-1887/": {
+    "id": "@muybridge:1887b",
+    "description": "Muybridge, Eadweard J. 1887. \"Animal Locomotion.\" *American*.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse"
+    ]
+  },
+  "http://www.getty.edu/art/collection/objects/40918/eadweard-j-muybridge-animal-locomotion-american-1887/": {
+    "id": "muybridge:1887a",
+    "description": "Muybridge, Eadweard J. 1887. \"Animal Locomotion.\" *American*.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse"
+    ]
+  },
+  "http://www.getty.edu/art/collection/objects/54324/adolphe-braun-alpine-landscape-french-1865-1870/": {
+    "id": "@braun:1870a",
+    "description": "Braun, Adolphe. 1870. \"Alpine Landscape.\" *French*.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse"
+    ]
+  },
   "http://www.gnu.org/software/wget": {
     "id": "wget",
     "description": "GNU Wget homepage.",
@@ -1163,15 +1281,6 @@
     "keywords": [
       "blas",
       "math"
-    ]
-  },
-  "https://numpy.org/": {
-    "id": "numpy",
-    "description": "Official homepage for NumPy, the fundamental package for scientific computing with Python.",
-    "short_url": "",
-    "keywords": [
-      "numpy",
-      "python"
     ]
   },
   "http://www.pcg-random.org/other-rngs.html": {
@@ -1322,6 +1431,42 @@
       "webkit",
       "javascript",
       "ecmascript"
+    ]
+  },
+  "https://bugzilla.mozilla.org/buglist.cgi?quicksearch=math": {
+    "id": "mozilla-issue-tracker",
+    "description": "Mozilla issue tracker.",
+    "short_url": "",
+    "keywords": [
+      "mozilla",
+      "bug",
+      "issue",
+      "tracker"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=1316557": {
+    "id": "@bug:mozilla:1316557",
+    "description": "Mozilla bug report related to Math.pow sometimes returning incorrect results.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "pow",
+      "power",
+      "exponentiation"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=322529": {
+    "id": "@bug:mozilla:322529",
+    "description": "Mozilla issue related to upgrading Math.random to use the better XorShift128+ algorithm.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "random",
+      "xorshift"
     ]
   },
   "https://circleci.com/": {
@@ -2956,6 +3101,276 @@
       "settings"
     ]
   },
+  "https://doi.org/10.1002/zamm.19740540106": {
+    "id": "@neumaier:1974a",
+    "description": "Digital Object Identifier for Neumaier, A. 1974. Rundungsfehleranalyse einiger Verfahren zur Summation endlicher Summen.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "neumaier",
+      "rounding",
+      "error",
+      "analysis",
+      "summation",
+      "finite",
+      "sums"
+    ]
+  },
+  "https://doi.org/10.1006/jeem.1996.0052": {
+    "id": "@gilley:1996a",
+    "description": "Digital Object Identifier for Gilley, D. and Pace, R. K. 1996. On the Harrison and Rubinfeld Data.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "gilley",
+      "harrison",
+      "rubinfeld",
+      "data"
+    ]
+  },
+  "https://doi.org/10.1007/0-387-28695-0": {
+    "id": "@wilkinson:2005a",
+    "description": "Digital Object Identifier for Wilkinson, L. 2005. The Grammar of Graphics.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "wilkinson",
+      "grammar",
+      "graphics"
+    ]
+  },
+  "https://doi.org/10.1007/3-540-44669-9_12": {
+    "id": "@ciura:2001a",
+    "description": "Digital Object Identifier for Ciura, M. 2001. Best Increments for the Average Case of Shellsort.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "ciura",
+      "increment",
+      "average",
+      "case",
+      "shellsort"
+    ]
+  },
+  "https://doi.org/10.1007/978-3-642-22309-9_5": {
+    "id": "@hansen:2011a",
+    "description": "Digital Object Identifier for Hansen, L. K. et al. 2011. Good Friends, Bad News - Affinity and Virality in Twitter.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "hansen",
+      "affinity",
+      "virality",
+      "twitter"
+    ]
+  },
+  "https://doi.org/10.1007/s00607-005-0139-x": {
+    "id": "@klein:2005a",
+    "description": "Digital Object Identifier for Klein, A. 2005. A Generalized Kahan-Babuška-Summation-Algorithm.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "klein",
+      "generalized",
+      "kahan",
+      "babuška",
+      "summation",
+      "algorithm"
+    ]
+  },
+  "https://doi.org/10.1007/s10107-010-0420-4": {
+    "id": "@shalevshwartz:2011a",
+    "description": "Digital Object Identifier for Shalev-Shwartz, S. et al. 2011. Pegasos: primal estimated sub-gradient solver for SVM.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "shalev-shwartz",
+      "pegasos",
+      "primal",
+      "estimated",
+      "sub-gradient",
+      "solver",
+      "svm"
+    ]
+  },
+  "https://doi.org/10.1007/s10569-009-9228-z": {
+    "id": "@fukushima:2009a",
+    "description": "Digital Object Identifier for Fukushima, T. 2009. Fast computation of complete elliptic integrals and Jacobian elliptic functions.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "fukushima",
+      "computation",
+      "complete",
+      "elliptic",
+      "integrals",
+      "jacobian",
+      "functions"
+    ]
+  },
+  "https://doi.org/10.1016/0021-9991(67)90047-2": {
+    "id": "@stein:1967",
+    "description": "Digital Object Identifier for Stein, J. 1967. Computational problems associated with Racah algebra.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "stein",
+      "computational",
+      "racah",
+      "algebra"
+    ]
+  },
+  "https://doi.org/10.1016/0095-0696%2878%2990006-2": {
+    "id": "@harrison:1978a",
+    "description": "Digital Object Identifier for Harrison, R. and Rubinfeld, D. 1978. Hedonic housing prices and the demand for clean air.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "harrison",
+      "rubinfeld",
+      "hedonic",
+      "housing",
+      "prices",
+      "demand",
+      "clean",
+      "air"
+    ]
+  },
+  "https://doi.org/10.1016/0196-6774(86)90001-5": {
+    "id": "@sedgewick:1986a",
+    "description": "Digital Object Identifier for Sedgewick, R. 1986. A new upper bound for shellsort.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "sedgewick",
+      "upper",
+      "bound",
+      "shellsort"
+    ]
+  },
+  "https://doi.org/10.1016/j.cam.2014.12.038": {
+    "id": "@fukushima:2015a",
+    "description": "Digital Object Identifier for Fukushima, T. 2015. Precise and fast computation of complete elliptic integrals by piecewise minimax rational function approximation.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "fukushima",
+      "computation",
+      "complete",
+      "elliptic",
+      "integrals",
+      "piecewise",
+      "minimax",
+      "rational",
+      "function",
+      "approximation"
+    ]
+  },
+  "https://doi.org/10.1023/A:1007762613901": {
+    "id": "@pace:1997a",
+    "description": "Digital Object Identifier for Pace, R. K. and Gilley, O. W. 1997. Using the Spatial Configuration of the Data to Improve Estimation.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "pace",
+      "gilley",
+      "spatial",
+      "configuration",
+      "data",
+      "improve",
+      "estimation"
+    ]
+  },
+  "https://doi.org/10.1080/00031305.1983.10483115": {
+    "id": "@chan:1983a",
+    "description": "Digital Object Identifier for Chan, T. F. et al. 1983. Algorithms for Computing the Sample Variance: Analysis and Recommendations.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "chan",
+      "algorithms",
+      "computing",
+      "sample",
+      "variance",
+      "analysis",
+      "recommendations"
+    ]
+  },
+  "https://doi.org/10.1080/00401706.1962.10490022": {
+    "id": "@welford:1962a",
+    "description": "Digital Object Identifier for Welford, B. P. 1962. Note on a Method for Calculating Corrected Sums of Squares and Products.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "welford",
+      "method",
+      "calculating",
+      "corrected",
+      "sums",
+      "squares",
+      "products"
+    ]
+  },
+  "https://doi.org/10.1080/00401706.1964.10490150": {
+    "id": "@marsaglia:1964b",
+    "description": "Digital Object Identifier for Marsaglia, G. 1964. Generating a Variable from the Tail of the Normal Distribution.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "marsaglia",
+      "generating",
+      "variable",
+      "tail",
+      "normal",
+      "gaussian",
+      "distribution"
+    ]
+  },
+  "https://doi.org/10.1080/00401706.1969.10490657": {
+    "id": "@grubbs:1969a",
+    "description": "Digital Object Identifier for Grubbs, F. E. 1969. Procedures for Detecting Outlying Observations in Samples.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "grubbs",
+      "procedures",
+      "detecting",
+      "outlying",
+      "observations",
+      "samples"
+    ]
+  },
+  "https://doi.org/10.1080/00401706.1971.10488826": {
+    "id": "@youngs:1971a",
+    "description": "Digital Object Identifier for Youngs, R. L. and Cramer, E. M. 1971. Some Results Relevant to Choice of Sum and Sum-of-Product Algorithms.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "youngs",
+      "cramer",
+      "results",
+      "relevant",
+      "choice",
+      "sum",
+      "sum-of-product",
+      "algorithms"
+    ]
+  },
+  "https://doi.org/10.1080/00401706.1972.10488948": {
+    "id": "@tietjen:1972a",
+    "description": "Digital Object Identifier for Tietjen, G. L. and Moore, R. H. 1972. Some Grubbs-Type Statistics for the Detection of Several Outliers.",
+    "short_url": "",
+    "keywords": [
+      "doi",
+      "tietjen",
+      "moore",
+      "grubbs-type",
+      "statistics",
+      "detection",
+      "several",
+      "outliers"
+    ]
+  },
   "https://doi.org/10.1080/01621459.1979.10481038": {
     "id": "@cleveland:1979",
     "description": "Digital Object Identifier for Cleveland, W. S. 1979. Robust Locally Weighted Regression and Smoothing Scatterplots.",
@@ -3014,6 +3429,325 @@
       "prng",
       "distribution",
       "dist"
+    ]
+  },
+  "https://doi.org/10.1109/TIT.1982.1056489": {
+    "id": "@lloyd:1982a",
+    "description": "Digital Object Identifier for Lloyd, S. P. 1982. Least Squares Quantization in PCM.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "lloyd",
+      "least",
+      "squares",
+      "quantization",
+      "pcm"
+    ]
+  },
+  "https://doi.org/10.1137/0914050": {
+    "id": "@higham:1993a",
+    "description": "Digital Object Identifier for Higham, Nicholas J. 1993. The Accuracy of Floating Point Summation.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "higham",
+      "accuracy",
+      "floating",
+      "point",
+      "summation"
+    ]
+  },
+  "https://doi.org/10.1145/1014052.1014073": {
+    "id": "@hu:2004a",
+    "description": "Digital Object Identifier for Hu, M. 2004. Mining and Summarizing Customer Reviews.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "hu",
+      "mining",
+      "summarizing",
+      "customer",
+      "review"
+    ]
+  },
+  "https://doi.org/10.1145/1015330.1015332": {
+    "id": "@zhang:2004a",
+    "description": "Digital Object Identifier for Zhang, T. 2004. Solving large scale linear prediction problems using stochastic gradient descent algorithms.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "zhang",
+      "large",
+      "scale",
+      "linear",
+      "prediction",
+      "problem",
+      "using",
+      "stochastic",
+      "gradient",
+      "descent",
+      "algorithm"
+    ]
+  },
+  "https://doi.org/10.1145/1039813.1039814": {
+    "id": "@priest:2004a",
+    "description": "Digital Object Identifier for Priest, D. M. 2004. Efficient scaling for complex division.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "priest",
+      "efficient",
+      "scaling",
+      "complex",
+      "division"
+    ]
+  },
+  "https://doi.org/10.1145/1060745.1060797": {
+    "id": "@liu:2005a",
+    "description": "Digital Object Identifier for Liu, B. 2005. Opinion observer: analyzing and comparing opinions on the Web.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "liu",
+      "opinion",
+      "observer",
+      "analyzing",
+      "comparing",
+      "web"
+    ]
+  },
+  "https://doi.org/10.1145/214408.214414": {
+    "id": "@stewart:1985a",
+    "description": "Digital Object Identifier for Stewart, G. W. 1985. A note on complex division.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "stewart",
+      "note",
+      "complex",
+      "division"
+    ]
+  },
+  "https://doi.org/10.1145/272991.272995": {
+    "id": "@matsumoto:1998a",
+    "description": "Digital Object Identifier for Matsumoto, M. 1998. Mersenne Twister: A 623-Dimensionally Equidistributed Uniform Pseudo-Random Number Generator.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "matsumoto",
+      "mersenne",
+      "twister",
+      "dimensionally",
+      "equidistributed",
+      "uniform",
+      "pseudo",
+      "random",
+      "number",
+      "generator"
+    ]
+  },
+  "https://doi.org/10.1145/3221269.3223036": {
+    "id": "@schubert:2018a",
+    "description": "Digital Object Identifier for Schubert, E. 2018. Numerically stable parallel computation of (co-)variance.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "schubert",
+      "numerically",
+      "stable",
+      "parallel",
+      "computation",
+      "co",
+      "variance"
+    ]
+  },
+  "https://doi.org/10.1145/355588.365103": {
+    "id": "@floyd:1964a",
+    "description": "Digital Object Identifier for Floyd, R. W. 1964. Algorithm 245: Treesort.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "floyd",
+      "algorithm",
+      "treesort"
+    ]
+  },
+  "https://doi.org/10.1145/355841.355848": {
+    "id": "@lawson:1979a",
+    "description": "Digital Object Identifier for Lawson, C. L. 1979. Basic Linear Algebra Subprograms for Fortran Usage.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "lawson",
+      "basic",
+      "linear",
+      "algebra",
+      "subprogram",
+      "fortran",
+      "usage"
+    ]
+  },
+  "https://doi.org/10.1145/362929.362961": {
+    "id": "@vanreeken:1968a",
+    "description": "Digital Object Identifier for van Reeken, A. J. 1968. Letters to the editor: Dealing with Neely's algorithms.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "vanreeken",
+      "letter",
+      "editor",
+      "dealing",
+      "neely",
+      "algorithm"
+    ]
+  },
+  "https://doi.org/10.1145/365719.365958": {
+    "id": "@neely:1966a",
+    "description": "Digital Object Identifier for Neely, P. M. 1966. Comparison of several algorithms for computation of means, standard deviations and correlation coefficients.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "neely",
+      "comparison",
+      "several",
+      "algorithm",
+      "computation",
+      "mean",
+      "standard",
+      "deviation",
+      "correlation",
+      "coefficient"
+    ]
+  },
+  "https://doi.org/10.1145/368370.368387": {
+    "id": "@shell:1959a",
+    "description": "Digital Object Identifier for Shell, K. 1959. A high-speed sorting procedure.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "shell",
+      "high",
+      "speed",
+      "sorting",
+      "procedure"
+    ]
+  },
+  "https://doi.org/10.1145/368637.368661": {
+    "id": "@smith:1962a",
+    "description": "Digital Object Identifier for Smith, R. L. 1962. Algorithm 116: Complex division.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "smith",
+      "algorithm",
+      "complex",
+      "division"
+    ]
+  },
+  "https://doi.org/10.1145/512274.512284": {
+    "id": "@williams:1964a",
+    "description": "Digital Object Identifier for Forsythe, G. E. 1964. Algorithms.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "forsythe",
+      "algorithm"
+    ]
+  },
+  "https://doi.org/10.1214/aoms/1177729885": {
+    "id": "@grubbs:1950a",
+    "description": "Digital Object Identifier for Grubbs, F. E. 1950. Sample Criteria for Testing Outlying Observations",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "grubbs",
+      "sample",
+      "criteria",
+      "testing",
+      "outlying",
+      "observation"
+    ]
+  },
+  "https://doi.org/10.2307/2286154": {
+    "id": "@ling:1974a",
+    "description": "Digital Object Identifier for Ling, R. 1974. Comparison of Several Algorithms for Computing Sample Means and Variances.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "ling",
+      "comparison",
+      "several",
+      "algorithm",
+      "computing",
+      "sample",
+      "mean",
+      "variance"
+    ]
+  },
+  "https://doi.org/10.2307/2683591": {
+    "id": "@cleveland:1981",
+    "description": "Digital Object Identifier for Cleveland, W. S. 1981. LOWESS: A Program for Smoothing Scatterplots by Robust Locally Weighted Regression",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "cleveland",
+      "lowess",
+      "program",
+      "smoothing",
+      "scatterplot",
+      "robust",
+      "locally",
+      "weighted",
+      "regression"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/2147483647": {
+    "id": "max-int32",
+    "description": "Wikipedia article on the maximum value of a 32-bit signed integer.",
+    "short_url": "",
+    "keywords": [
+      "int",
+      "integer",
+      "2147483647",
+      "2^31-1"
     ]
   },
   "https://en.wikipedia.org/wiki/ARPABET": {
@@ -3105,6 +3839,17 @@
       "root",
       "pythagoras",
       "hypotenuse"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Anagram": {
+    "id": "anagram",
+    "description": "Wikipedia entry for anagrams.",
+    "short_url": "",
+    "keywords": [
+      "alphabetical",
+      "anagram",
+      "words",
+      "letters"
     ]
   },
   "https://en.wikipedia.org/wiki/Analytic_continuation": {
@@ -3252,6 +3997,16 @@
       "beta"
     ]
   },
+  "https://en.wikipedia.org/wiki/Beta_function": {
+    "id": "beta-function",
+    "description": "Wikipedia entry for the beta function.",
+    "short_url": "",
+    "keywords": [
+      "beta",
+      "function",
+      "math"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Beta_function#Incomplete_beta_function": {
     "id": "incomplete-beta",
     "description": "Wikipedia entry for the incomplete beta function.",
@@ -3341,6 +4096,16 @@
       "order",
       "mark",
       "bom"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Catalan%27s_constant": {
+    "id": "catalan-constant",
+    "description": "Wikipedia entry for Catalan's constant.",
+    "short_url": "",
+    "keywords": [
+      "catalan",
+      "constant",
+      "math"
     ]
   },
   "https://en.wikipedia.org/wiki/Cauchy_distribution": {
@@ -3641,6 +4406,17 @@
       "mathematics"
     ]
   },
+  "https://en.wikipedia.org/wiki/Diacritic": {
+    "id": "diacritics",
+    "description": "Wikipedia entry on diacritics.",
+    "short_url": "",
+    "keywords": [
+      "typography",
+      "punctuation",
+      "diacritics",
+      "glyph"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Digamma_function": {
     "id": "digamma-function",
     "description": "Wikipedia entry for the digamma function.",
@@ -3753,6 +4529,19 @@
       "product",
       "math",
       "mathematics"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Endianness": {
+    "id": "endianness",
+    "description": "Wikipedia entry for endianness, which governs how a range of bytes in computer memory is interpreted.",
+    "short_url": "",
+    "keywords": [
+      "bigendian",
+      "littleendian",
+      "memory",
+      "computer",
+      "bytes",
+      "bit"
     ]
   },
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
@@ -4026,6 +4815,17 @@
       "nurse"
     ]
   },
+  "https://en.wikipedia.org/wiki/Fluent_interface": {
+    "id": "fluent-interface",
+    "description": "Wikipedia entry for fluent interfaces.",
+    "short_url": "",
+    "keywords": [
+      "fluent",
+      "interface",
+      "design",
+      "pattern"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Food_frequency_questionnaire": {
     "id": "ffq",
     "description": "Wikipedia entry for the food frequency questionnaire, a questionnaire used to obtain frequency and, in some cases, portion size information about food and beverage consumption over a specified period of time, typically the past month or year.",
@@ -4228,6 +5028,18 @@
       "golden",
       "ratio",
       "phi",
+      "math"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Greatest_common_divisor": {
+    "id": "gcd",
+    "description": "Wikipedia entry for the greatest common divisor.",
+    "short_url": "",
+    "keywords": [
+      "gcd",
+      "greatest",
+      "common",
+      "divisor",
       "math"
     ]
   },
@@ -4742,6 +5554,20 @@
       "congruential"
     ]
   },
+  "https://en.wikipedia.org/wiki/Linear_congruential_generator#Advantages_and_disadvantages_of_LCGs": {
+    "id": "pros-cons",
+    "description": "Wikipedia entry on the pros and cons of linear congruential generators.",
+    "short_url": "",
+    "keywords": [
+      "pros",
+      "cons",
+      "linear",
+      "congruential",
+      "generator",
+      "random",
+      "numbers"
+    ]
+  },
   "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes": {
     "id": "http-status-codes",
     "description": "Wikipedia entry for HTTP status codes.",
@@ -5127,6 +5953,16 @@
       "line break"
     ]
   },
+  "https://en.wikipedia.org/wiki/Norm_%28mathematics%29": {
+    "id": "l1norm",
+    "description": "Wikipedia entry for the L1 norm.",
+    "short_url": "",
+    "keywords": [
+      "l1",
+      "norm",
+      "math"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Norm_%28mathematics%29#Euclidean_norm": {
     "id": "euclidean-norm",
     "description": "Wikipedia page for the Euclidean norm.",
@@ -5256,6 +6092,17 @@
       "constant"
     ]
   },
+  "https://en.wikipedia.org/wiki/Pipeline_%28Unix%29": {
+    "id": "standard-stream",
+    "description": "Wikipedia entry for UNIX pipelines.",
+    "short_url": "",
+    "keywords": [
+      "standard",
+      "stream",
+      "unix",
+      "pipeline"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Poisson_distribution": {
     "id": "poisson-distribution",
     "description": "Wikipedia entry for the Poisson distribution.",
@@ -5360,6 +6207,19 @@
       "pmf",
       "mass",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Pythagorean_theorem": {
+    "id": "hypotenuse",
+    "description": "Wikipedia entry on the Pythagorean theorem and the hypotenuse of a triangle.",
+    "short_url": "",
+    "keywords": [
+      "area",
+      "angle",
+      "pythagoras",
+      "triangle",
+      "theorem",
+      "hypotenuse"
     ]
   },
   "https://en.wikipedia.org/wiki/Quadruple-precision_floating-point_format#Double-double_arithmetic": {
@@ -5583,6 +6443,17 @@
       "parameter",
       "statistics",
       "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Sign_function": {
+    "id": "signum",
+    "description": "Wikipedia entry for the signum function.",
+    "short_url": "",
+    "keywords": [
+      "signum",
+      "sign",
+      "function",
+      "math"
     ]
   },
   "https://en.wikipedia.org/wiki/Significand": {
@@ -5936,6 +6807,19 @@
       "normal"
     ]
   },
+  "https://en.wikipedia.org/wiki/URI_scheme": {
+    "id": "uri",
+    "description": "Wikipedia entry on Uniform Resource Identifiers (URIs) to identify resources in a network.",
+    "short_url": "",
+    "keywords": [
+      "internet",
+      "web",
+      "uri",
+      "standard",
+      "identifier",
+      "protocol"
+    ]
+  },
   "https://en.wikipedia.org/wiki/UTF-16": {
     "id": "utf-16",
     "description": "Wikipedia entry for UTF-16, a character encoding defined by the Unicode standard.",
@@ -6171,6 +7055,18 @@
       "letters"
     ]
   },
+  "https://eslint.org/": {
+    "id": "eslint",
+    "description": "A pluggable linting utility for JavaScript. Official website.",
+    "short_url": "",
+    "keywords": [
+      "lint",
+      "linting",
+      "linter",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://eslint.org/docs/developer-guide/working-with-rules": {
     "id": "eslint-rules",
     "description": "ESLint documentation for working with rules.",
@@ -6211,6 +7107,20 @@
       "cs",
       "development",
       "dev"
+    ]
+  },
+  "https://gcc.gnu.org/wiki/GFortranBinaries": {
+    "id": "gfortran-wiki",
+    "description": "Binaries for the GNU Fortran compiler.",
+    "short_url": "",
+    "keywords": [
+      "gfortran",
+      "fortran",
+      "compiler",
+      "cs",
+      "development",
+      "dev",
+      "binaries"
     ]
   },
   "https://geekfeminismdotorg.wordpress.com/about/code-of-conduct/": {
@@ -7563,6 +8473,91 @@
       "markdown"
     ]
   },
+  "https://github.com/xianyi/OpenBLAS": {
+    "id": "openblas",
+    "description": "GitHub repository for OpenBLAS, an optimized BLAS library based on GotoBLAS2 1.13 BSD version.",
+    "short_url": "",
+    "keywords": [
+      "openblas",
+      "blas",
+      "library",
+      "optimized",
+      "gotoblas2"
+    ]
+  },
+  "https://gitter.im/stdlib-js/stdlib/": {
+    "id": "chat-url",
+    "description": "stdlib chat room.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "chat",
+      "room"
+    ]
+  },
+  "https://golang.org/cmd/gofmt/": {
+    "id": "gofmt",
+    "description": "Go formatting tool.",
+    "short_url": "",
+    "keywords": [
+      "gofmt",
+      "go",
+      "formatting",
+      "tool"
+    ]
+  },
+  "https://golang.org/cmd/vet/": {
+    "id": "govet",
+    "description": "Go vet tool.",
+    "short_url": "",
+    "keywords": [
+      "govet",
+      "go",
+      "vet",
+      "tool"
+    ]
+  },
+  "https://golang.org/doc/effective_go.html": {
+    "id": "effective-go",
+    "description": "Effective Go.",
+    "short_url": "",
+    "keywords": [
+      "effective",
+      "go"
+    ]
+  },
+  "https://golang.org/pkg/math/big/": {
+    "id": "golang-big",
+    "description": "Go big package implementing arbitrary-precision arithmetic.",
+    "short_url": "",
+    "keywords": [
+      "golang",
+      "big",
+      "arbitrary",
+      "precision",
+      "arithmetic"
+    ]
+  },
+  "https://guides.github.com/features/mastering-markdown/": {
+    "id": "github-markdown-guide",
+    "description": "GitHub guide to mastering Markdown.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "markdown",
+      "guide",
+      "mastering"
+    ]
+  },
+  "https://gyp.gsrc.io/": {
+    "id": "gyp",
+    "description": "Gyp is a Meta-Build system: : a build system that generates other build systems.",
+    "short_url": "",
+    "keywords": [
+      "gyp",
+      "cmake"
+    ]
+  },
   "https://help.github.com/articles/about-two-factor-authentication/": {
     "id": "github-two-factor",
     "description": "GitHub help on two-factor authentication",
@@ -7624,6 +8619,16 @@
       "numeric computing",
       "language",
       "lang"
+    ]
+  },
+  "https://lunrjs.com": {
+    "id": "lunr-js",
+    "description": "Lunr.js is a simple full-text search engine for the browser.",
+    "short_url": "",
+    "keywords": [
+      "lunr",
+      "lunr.js",
+      "search"
     ]
   },
   "https://msdn.microsoft.com/en-us/library/gg465305.aspx": {
@@ -7871,6 +8876,15 @@
       "js"
     ]
   },
+  "https://numpy.org/": {
+    "id": "numpy",
+    "description": "Official homepage for NumPy, the fundamental package for scientific computing with Python.",
+    "short_url": "",
+    "keywords": [
+      "numpy",
+      "python"
+    ]
+  },
   "https://observablehq.com/": {
     "id": "observable",
     "description": "Observable is a notebook environment for interactive computing, based on Observable Notebooks.",
@@ -7949,6 +8963,19 @@
       "integers",
       "cubes",
       "numbers"
+    ]
+  },
+  "https://oeis.org/A000583": {
+    "id": "oeis-a000583",
+    "description": "The OEIS entry for fourth powers.",
+    "short_url": "",
+    "keywords": [
+      "sequence",
+      "seq",
+      "integers",
+      "numbers",
+      "fourth",
+      "powers"
     ]
   },
   "https://oeis.org/A000584": {
@@ -8471,6 +9498,84 @@
       "build",
       "development",
       "utility"
+    ]
+  },
+  "https://www.itl.nist.gov/div898/handbook/ppc/section2/ppc231.htm": {
+    "id": "anova-nist",
+    "description": "Handbook describing the analysis of variance (ANOVA) method for comparing multiple means.",
+    "short_url": "",
+    "keywords": [
+      "anova",
+      "analysis",
+      "variance",
+      "means",
+      "compare",
+      "comparing",
+      "handbook",
+      "nist",
+      "itl",
+      "math",
+      "mathematics",
+      "statistics"
+    ]
+  },
+  "https://www.khronos.org/opengl/wiki/Compute_Shader": {
+    "id": "compute-shaders",
+    "description": "A type of shader that performs general-purpose computations.",
+    "short_url": "",
+    "keywords": [
+      "opengl",
+      "khronos",
+      "shader",
+      "shaders",
+      "compute",
+      "general",
+      "purpose",
+      "computation"
+    ]
+  },
+  "https://www.math.utah.edu/software/c-with-fortran.html": {
+    "id": "c-with-fortran",
+    "description": "Document on how to call Fortran subroutines from C.",
+    "short_url": "",
+    "keywords": [
+      "c",
+      "fortran",
+      "subroutine",
+      "subroutines",
+      "call",
+      "calling",
+      "document",
+      "math",
+      "mathematics",
+      "utah",
+      "university"
+    ]
+  },
+  "https://www.math.utah.edu/~beebe/software/fortran-documentation/ftnsum.pdf": {
+    "id": "summary-of-fortran",
+    "description": "A summary of the syntax of the Fortran programming language.",
+    "short_url": "",
+    "keywords": [
+      "fortran",
+      "summary",
+      "document",
+      "math",
+      "mathematics",
+      "utah",
+      "university"
+    ]
+  },
+  "https://www.mathworks.com/help/distcomp/parfor.html": {
+    "id": "matlab-parfor",
+    "description": "Parallel for loop in MATLAB.",
+    "short_url": "",
+    "keywords": [
+      "matlab",
+      "parallel",
+      "for",
+      "loop",
+      "parfor"
     ]
   },
   "https://www.npmjs.com/": {
