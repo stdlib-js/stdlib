@@ -195,9 +195,9 @@ false
 
 <section class="links">
 
-[anagram]: http://en.wikipedia.org/wiki/Anagram
+[anagram]: https://en.wikipedia.org/wiki/Anagram
 
-[diacritics]: http://en.wikipedia.org/wiki/Diacritic
+[diacritics]: https://en.wikipedia.org/wiki/Diacritic
 
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
 

@@ -32,7 +32,7 @@ var rules = {};
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'global' ]
-* @see [strict]{@link http://eslint.org/docs/rules/strict}
+* @see [strict]{@link https://eslint.org/docs/rules/strict}
 *
 * @example
 * // Bad...

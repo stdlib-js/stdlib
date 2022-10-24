@@ -163,7 +163,7 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="links">
 
-[hypotenuse]: http://en.wikipedia.org/wiki/Pythagorean_theorem
+[hypotenuse]: https://en.wikipedia.org/wiki/Pythagorean_theorem
 
 [alpha-max-plus-beta-min]: https://en.wikipedia.org/wiki/Alpha_max_plus_beta_min_algorithm
 

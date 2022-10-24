@@ -91,7 +91,7 @@ console.log( CATALAN );
 
 <section class="links">
 
-[catalan-constant]: http://en.wikipedia.org/wiki/Catalan%27s_constant
+[catalan-constant]: https://en.wikipedia.org/wiki/Catalan%27s_constant
 
 </section>
 

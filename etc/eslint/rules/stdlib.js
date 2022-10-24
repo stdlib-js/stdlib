@@ -4083,7 +4083,7 @@ rules[ 'stdlib/no-nested-require' ] = 'error';
 * @name no-redeclare
 * @memberof rules
 * @type {Array}
-* @see [no-redeclare]{@link http://eslint.org/docs/rules/no-redeclare}
+* @see [no-redeclare]{@link https://eslint.org/docs/rules/no-redeclare}
 *
 * @example
 * // Bad...

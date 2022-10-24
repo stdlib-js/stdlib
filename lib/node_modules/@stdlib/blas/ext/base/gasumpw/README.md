@@ -202,7 +202,7 @@ console.log( v );
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[l1norm]: http://en.wikipedia.org/wiki/Norm_%28mathematics%29
+[l1norm]: https://en.wikipedia.org/wiki/Norm_%28mathematics%29
 
 [@higham:1993a]: https://doi.org/10.1137/0914050
 

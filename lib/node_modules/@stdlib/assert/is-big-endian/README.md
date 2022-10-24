@@ -118,7 +118,7 @@ $ is-big-endian
 
 <section class="links">
 
-[endianness]: http://en.wikipedia.org/wiki/Endianness
+[endianness]: https://en.wikipedia.org/wiki/Endianness
 
 <!-- <related-links> -->
 

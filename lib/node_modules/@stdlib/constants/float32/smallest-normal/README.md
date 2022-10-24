@@ -81,7 +81,7 @@ console.log( FLOAT32_SMALLEST_NORMAL );
 
 <section class="links">
 
-[ieee754]: http://en.wikipedia.org/wiki/IEEE_754-1985
+[ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
 
 <!-- <related-links> -->
 

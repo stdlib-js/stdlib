@@ -241,7 +241,7 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
 
 [git]: https://git-scm.com/
 
-[eslint]: http://eslint.org/
+[eslint]: https://eslint.org/
 
 [shellcheck]: https://github.com/koalaman/shellcheck
 

@@ -32,7 +32,7 @@ var rules = {};
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [init-declarations]{@link http://eslint.org/docs/rules/init-declarations}
+* @see [init-declarations]{@link https://eslint.org/docs/rules/init-declarations}
 *
 * @example
 * // Okay...
@@ -56,7 +56,7 @@ rules[ 'init-declarations' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-delete-var]{@link http://eslint.org/docs/rules/no-delete-var}
+* @see [no-delete-var]{@link https://eslint.org/docs/rules/no-delete-var}
 *
 * @example
 * // Bad...
@@ -72,7 +72,7 @@ rules[ 'no-delete-var' ] = 'error';
 * @memberof no-label-var
 * @type {string}
 * @default 'error'
-* @see [no-label-var]{@link http://eslint.org/docs/rules/no-label-var}
+* @see [no-label-var]{@link https://eslint.org/docs/rules/no-label-var}
 *
 * @example
 * // Bad...
@@ -96,7 +96,7 @@ rules[ 'no-label-var' ] = 'error';
 * @name no-restricted-globals
 * @memberof rules
 * @type {Array}
-* @see [no-restricted-globals]{@link http://eslint.org/docs/rules/no-restricted-globals}
+* @see [no-restricted-globals]{@link https://eslint.org/docs/rules/no-restricted-globals}
 */
 rules[ 'no-restricted-globals' ] = [ 'error', 'event', 'fdescribe' ];
 
@@ -106,7 +106,7 @@ rules[ 'no-restricted-globals' ] = [ 'error', 'event', 'fdescribe' ];
 * @name no-shadow
 * @memberof rules
 * @type {Array}
-* @see [no-shadow]{@link http://eslint.org/docs/rules/no-shadow}
+* @see [no-shadow]{@link https://eslint.org/docs/rules/no-shadow}
 *
 * @example
 * // Okay...
@@ -124,7 +124,7 @@ rules[ 'no-shadow' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-shadow-restricted-names]{@link http://eslint.org/docs/rules/no-shadow-restricted-names}
+* @see [no-shadow-restricted-names]{@link https://eslint.org/docs/rules/no-shadow-restricted-names}
 *
 * @example
 * // Bad...
@@ -141,7 +141,7 @@ rules[ 'no-shadow-restricted-names' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-undef]{@link http://eslint.org/docs/rules/no-undef}
+* @see [no-undef]{@link https://eslint.org/docs/rules/no-undef}
 *
 * @example
 * // Bad...
@@ -160,7 +160,7 @@ rules[ 'no-undef' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-undef-init]{@link http://eslint.org/docs/rules/no-undef-init}
+* @see [no-undef-init]{@link https://eslint.org/docs/rules/no-undef-init}
 *
 * @example
 * // Bad...
@@ -179,7 +179,7 @@ rules[ 'no-undef-init' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-undefined]{@link http://eslint.org/docs/rules/no-undefined}
+* @see [no-undefined]{@link https://eslint.org/docs/rules/no-undefined}
 *
 * @example
 * // Bad...
@@ -205,7 +205,7 @@ rules[ 'no-undefined' ] = 'error';
 * @name no-unused-vars
 * @memberof rules
 * @type {Array}
-* @see [no-unused-vars]{@link http://eslint.org/docs/rules/no-unused-vars}
+* @see [no-unused-vars]{@link https://eslint.org/docs/rules/no-unused-vars}
 *
 * @example
 * // Bad...
@@ -235,7 +235,7 @@ rules[ 'no-unused-vars' ] = [ 'error', {
 * @name no-use-before-define
 * @memberof rules
 * @type {Array}
-* @see [no-use-before-define]{@link http://eslint.org/docs/rules/no-use-before-define}
+* @see [no-use-before-define]{@link https://eslint.org/docs/rules/no-use-before-define}
 *
 * @example
 * // Bad...

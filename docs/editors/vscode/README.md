@@ -158,7 +158,7 @@ $ code .
 
 [vscode-runner]: https://github.com/mattn/vscode-runner
 
-[eslint]: http://eslint.org/
+[eslint]: https://eslint.org/
 
 [json]: http://www.json.org/
 

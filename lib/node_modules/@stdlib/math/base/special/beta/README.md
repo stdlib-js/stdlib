@@ -125,7 +125,7 @@ for ( x = 0; x < 10; x++ ) {
 
 <section class="links">
 
-[beta-function]: http://en.wikipedia.org/wiki/Beta_function
+[beta-function]: https://en.wikipedia.org/wiki/Beta_function
 
 [gamma-function]: https://en.wikipedia.org/wiki/Gamma_function
 

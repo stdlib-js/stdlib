@@ -323,7 +323,7 @@ for ( i = 0; i < 100; i++ ) {
 
 [lcg]: https://en.wikipedia.org/wiki/Linear_congruential_generator
 
-[pros-cons]: http://en.wikipedia.org/wiki/Linear_congruential_generator#Advantages_and_disadvantages_of_LCGs
+[pros-cons]: https://en.wikipedia.org/wiki/Linear_congruential_generator#Advantages_and_disadvantages_of_LCGs
 
 [@park:1988]: http://dx.doi.org/10.1145/63039.63042
 

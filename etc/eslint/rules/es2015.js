@@ -32,7 +32,7 @@ var rules = {};
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'always' ]
-* @see [arrow-body-style]{@link http://eslint.org/docs/rules/arrow-body-style}
+* @see [arrow-body-style]{@link https://eslint.org/docs/rules/arrow-body-style}
 *
 * @example
 * // Bad...
@@ -53,7 +53,7 @@ rules[ 'arrow-body-style' ] = [ 'error', 'always' ];
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'always' ]
-* @see [arrow-parens]{@link http://eslint.org/docs/rules/arrow-parens}
+* @see [arrow-parens]{@link https://eslint.org/docs/rules/arrow-parens}
 *
 * @example
 * // Bad...
@@ -75,7 +75,7 @@ rules[ 'arrow-parens' ] = [ 'error', 'always' ];
 * @name arrow-spacing
 * @memberof rules
 * @type {Array}
-* @see [arrow-spacing]{@link http://eslint.org/docs/rules/arrow-spacing}
+* @see [arrow-spacing]{@link https://eslint.org/docs/rules/arrow-spacing}
 *
 * @example
 * // Bad...
@@ -101,7 +101,7 @@ rules[ 'arrow-spacing' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [constructor-super]{@link http://eslint.org/docs/rules/constructor-super}
+* @see [constructor-super]{@link https://eslint.org/docs/rules/constructor-super}
 *
 * @example
 * // Good...
@@ -125,7 +125,7 @@ rules[ 'constructor-super' ] = 'error';
 * @name generator-star-spacing
 * @memberof rules
 * @type {Array}
-* @see [generator-star-spacing]{@link http://eslint.org/docs/rules/generator-star-spacing}
+* @see [generator-star-spacing]{@link https://eslint.org/docs/rules/generator-star-spacing}
 *
 * @example
 * // Bad...
@@ -160,7 +160,7 @@ rules[ 'generator-star-spacing' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-class-assign]{@link http://eslint.org/docs/rules/no-class-assign}
+* @see [no-class-assign]{@link https://eslint.org/docs/rules/no-class-assign}
 *
 * @example
 * // Bad...
@@ -175,7 +175,7 @@ rules[ 'no-class-assign' ] = 'error';
 * @name no-confusing-arrow
 * @memberof rules
 * @type {Array}
-* @see [no-confusing-arrow]{@link http://eslint.org/docs/rules/no-confusing-arrow}
+* @see [no-confusing-arrow]{@link https://eslint.org/docs/rules/no-confusing-arrow}
 */
 rules[ 'no-confusing-arrow' ] = [ 'error', {
 	'allowParens': false
@@ -188,7 +188,7 @@ rules[ 'no-confusing-arrow' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-const-assign]{@link http://eslint.org/docs/rules/no-const-assign}
+* @see [no-const-assign]{@link https://eslint.org/docs/rules/no-const-assign}
 *
 * @example
 * // Bad...
@@ -209,7 +209,7 @@ rules[ 'no-const-assign' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-duple-class-members]{@link http://eslint.org/docs/rules/no-dupe-class-members}
+* @see [no-duple-class-members]{@link https://eslint.org/docs/rules/no-dupe-class-members}
 *
 * @example
 * // Bad...
@@ -226,7 +226,7 @@ rules[ 'no-dupe-class-members' ] = 'error';
 * @name no-duplicate-imports
 * @memberof rules
 * @type {Array}
-* @see [no-duplicate-imports]{@link http://eslint.org/docs/rules/no-duplicate-imports}
+* @see [no-duplicate-imports]{@link https://eslint.org/docs/rules/no-duplicate-imports}
 */
 rules[ 'no-duplicate-imports' ] = [ 'error', {
 	'includeExports': true
@@ -239,7 +239,7 @@ rules[ 'no-duplicate-imports' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-new-symbol]{@link http://eslint.org/docs/rules/no-new-symbol}
+* @see [no-new-symbol]{@link https://eslint.org/docs/rules/no-new-symbol}
 *
 * @example
 * // Bad...
@@ -257,7 +257,7 @@ rules[ 'no-new-symbol' ] = 'error';
 * @name no-restricted-imports
 * @memberof rules
 * @type {Array}
-* @see [no-restricted-imports]{@link http://eslint.org/docs/rules/no-restricted-imports}
+* @see [no-restricted-imports]{@link https://eslint.org/docs/rules/no-restricted-imports}
 */
 rules[ 'no-restricted-imports' ] = [ 'error', {
 	'paths': [
@@ -278,7 +278,7 @@ rules[ 'no-restricted-imports' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-this-before-super]{@link http://eslint.org/docs/rules/no-this-before-super}
+* @see [no-this-before-super]{@link https://eslint.org/docs/rules/no-this-before-super}
 */
 rules[ 'no-this-before-super' ] = 'error';
 
@@ -289,7 +289,7 @@ rules[ 'no-this-before-super' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-useless-computed-key]{@link http://eslint.org/docs/rules/no-useless-computed-key}
+* @see [no-useless-computed-key]{@link https://eslint.org/docs/rules/no-useless-computed-key}
 *
 * @example
 * // Bad...
@@ -312,7 +312,7 @@ rules[ 'no-useless-computed-key' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-useless-constructor]{@link http://eslint.org/docs/rules/no-useless-constructor}
+* @see [no-useless-constructor]{@link https://eslint.org/docs/rules/no-useless-constructor}
 *
 * @example
 * // Bad...
@@ -329,7 +329,7 @@ rules[ 'no-useless-constructor' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-useless-rename]{@link http://eslint.org/docs/rules/no-useless-rename}
+* @see [no-useless-rename]{@link https://eslint.org/docs/rules/no-useless-rename}
 */
 rules[ 'no-useless-rename' ] = 'error';
 
@@ -340,7 +340,7 @@ rules[ 'no-useless-rename' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [no-var]{@link http://eslint.org/docs/rules/no-var}
+* @see [no-var]{@link https://eslint.org/docs/rules/no-var}
 *
 * @example
 * // Okay...
@@ -355,7 +355,7 @@ rules[ 'no-var' ] = 'off';
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'never' ]
-* @see [object-shorthand]{@link http://eslint.org/docs/rules/object-shorthand}
+* @see [object-shorthand]{@link https://eslint.org/docs/rules/object-shorthand}
 *
 * @example
 * // Bad...
@@ -370,7 +370,7 @@ rules[ 'object-shorthand' ] = [ 'error', 'never' ];
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [prefer-arrow-callback]{@link http://eslint.org/docs/rules/prefer-arrow-callback}
+* @see [prefer-arrow-callback]{@link https://eslint.org/docs/rules/prefer-arrow-callback}
 */
 rules[ 'prefer-arrow-callback' ] = 'off';
 
@@ -380,7 +380,7 @@ rules[ 'prefer-arrow-callback' ] = 'off';
 * @name prefer-const
 * @memberof rules
 * @type {Array}
-* @see [prefer-const]{@link http://eslint.org/docs/rules/prefer-const}
+* @see [prefer-const]{@link https://eslint.org/docs/rules/prefer-const}
 */
 rules[ 'prefer-const' ] = [ 'warn', {
 	'destructuring': 'any',
@@ -394,7 +394,7 @@ rules[ 'prefer-const' ] = [ 'warn', {
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [prefer-destructuring]{@link http://eslint.org/docs/rules/prefer-destructuring}
+* @see [prefer-destructuring]{@link https://eslint.org/docs/rules/prefer-destructuring}
 */
 rules[ 'prefer-destructuring' ] = 'off';
 
@@ -405,7 +405,7 @@ rules[ 'prefer-destructuring' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [prefer-numeric-literals]{@link http://eslint.org/docs/rules/prefer-numeric-literals}
+* @see [prefer-numeric-literals]{@link https://eslint.org/docs/rules/prefer-numeric-literals}
 *
 * @example
 * // Okay...
@@ -420,7 +420,7 @@ rules[ 'prefer-numeric-literals' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [prefer-rest-params]{@link http://eslint.org/docs/rules/prefer-rest-params}
+* @see [prefer-rest-params]{@link https://eslint.org/docs/rules/prefer-rest-params}
 */
 rules[ 'prefer-rest-params' ] = 'off';
 
@@ -431,7 +431,7 @@ rules[ 'prefer-rest-params' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [prefer-spread]{@link http://eslint.org/docs/rules/prefer-spread}
+* @see [prefer-spread]{@link https://eslint.org/docs/rules/prefer-spread}
 */
 rules[ 'prefer-spread' ] = 'off';
 
@@ -442,7 +442,7 @@ rules[ 'prefer-spread' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [prefer-template]{@link http://eslint.org/docs/rules/prefer-template}
+* @see [prefer-template]{@link https://eslint.org/docs/rules/prefer-template}
 *
 * @example
 * // Okay...
@@ -458,7 +458,7 @@ rules[ 'prefer-template' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [require-yield]{@link http://eslint.org/docs/rules/require-yield}
+* @see [require-yield]{@link https://eslint.org/docs/rules/require-yield}
 *
 * @example
 * // Bad...
@@ -482,7 +482,7 @@ rules[ 'require-yield' ] = 'error';
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'never' ]
-* @see [rest-spread-spacing]{@link http://eslint.org/docs/rules/rest-spread-spacing}
+* @see [rest-spread-spacing]{@link https://eslint.org/docs/rules/rest-spread-spacing}
 */
 rules[ 'rest-spread-spacing' ] = [ 'error', 'never' ];
 
@@ -493,7 +493,7 @@ rules[ 'rest-spread-spacing' ] = [ 'error', 'never' ];
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [sort-imports]{@link http://eslint.org/docs/rules/sort-imports}
+* @see [sort-imports]{@link https://eslint.org/docs/rules/sort-imports}
 */
 rules[ 'sort-imports' ] = 'off';
 
@@ -504,7 +504,7 @@ rules[ 'sort-imports' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [symbol-description]{@link http://eslint.org/docs/rules/symbol-description}
+* @see [symbol-description]{@link https://eslint.org/docs/rules/symbol-description}
 *
 * @example
 * // Bad...
@@ -523,7 +523,7 @@ rules[ 'symbol-description' ] = 'error';
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'never' ]
-* @see [template-curly-spacing]{@link http://eslint.org/docs/rules/template-curly-spacing}
+* @see [template-curly-spacing]{@link https://eslint.org/docs/rules/template-curly-spacing}
 *
 * @example
 * // Bad...
@@ -541,7 +541,7 @@ rules[ 'template-curly-spacing' ] = [ 'error', 'never' ];
 * @name yield-star-spacing
 * @memberof rules
 * @type {Array}
-* @see [yield-star-spacing]{@link http://eslint.org/docs/rules/yield-star-spacing}
+* @see [yield-star-spacing]{@link https://eslint.org/docs/rules/yield-star-spacing}
 *
 * @example
 * // Bad...

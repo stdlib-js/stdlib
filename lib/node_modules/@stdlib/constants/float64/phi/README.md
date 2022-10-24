@@ -91,7 +91,7 @@ console.log( PHI );
 
 <section class="links">
 
-[phi]: http://en.wikipedia.org/wiki/Golden_ratio
+[phi]: https://en.wikipedia.org/wiki/Golden_ratio
 
 [phi-value]: http://oeis.org/A001622
 

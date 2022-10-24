@@ -358,7 +358,7 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 
 [npm]: https://www.npmjs.com/
 
-[julia]: http://julialang.org/
+[julia]: https://julialang.org/
 
 [r]: https://www.r-project.org/
 
@@ -368,7 +368,7 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 
 [scipy]: https://www.scipy.org/index.html
 
-[numpy]: http://www.numpy.org/
+[numpy]: https://numpy.org/
 
 [pylint]: https://github.com/PyCQA/pylint
 

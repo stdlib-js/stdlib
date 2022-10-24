@@ -31,7 +31,7 @@ var rules = {};
 * @name accessor-pairs
 * @memberof rules
 * @type {Array}
-* @see [accessor-pairs]{@link http://eslint.org/docs/rules/accessor-pairs}
+* @see [accessor-pairs]{@link https://eslint.org/docs/rules/accessor-pairs}
 *
 * @example
 * // Bad...
@@ -59,7 +59,7 @@ rules[ 'accessor-pairs' ] = [ 'error', {
 * @name array-callback-return
 * @memberof rules
 * @type {Array}
-* @see [array-callback-return]{@link http://eslint.org/docs/rules/array-callback-return}
+* @see [array-callback-return]{@link https://eslint.org/docs/rules/array-callback-return}
 *
 * @example
 * // Bad...
@@ -87,7 +87,7 @@ rules[ 'array-callback-return' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [block-scoped-var]{@link http://eslint.org/docs/rules/block-scoped-var}
+* @see [block-scoped-var]{@link https://eslint.org/docs/rules/block-scoped-var}
 *
 * @example
 * // Bad...
@@ -117,7 +117,7 @@ rules[ 'block-scoped-var' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [class-methods-use-this]{@link http://eslint.org/docs/rules/class-methods-use-this}
+* @see [class-methods-use-this]{@link https://eslint.org/docs/rules/class-methods-use-this}
 *
 * @example
 * // Bad...
@@ -146,7 +146,7 @@ rules[ 'class-methods-use-this' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [complexity]{@link http://eslint.org/docs/rules/complexity}
+* @see [complexity]{@link https://eslint.org/docs/rules/complexity}
 */
 rules[ 'complexity' ] = 'off';
 
@@ -157,7 +157,7 @@ rules[ 'complexity' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [consistent-return]{@link http://eslint.org/docs/rules/consistent-return}
+* @see [consistent-return]{@link https://eslint.org/docs/rules/consistent-return}
 *
 * @example
 * // Okay...
@@ -177,7 +177,7 @@ rules[ 'consistent-return' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [curly]{@link http://eslint.org/docs/rules/curly}
+* @see [curly]{@link https://eslint.org/docs/rules/curly}
 *
 * @example
 * // Bad...
@@ -198,7 +198,7 @@ rules[ 'curly' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [default-case]{@link http://eslint.org/docs/rules/default-case}
+* @see [default-case]{@link https://eslint.org/docs/rules/default-case}
 *
 * @example
 * // Bad...
@@ -225,7 +225,7 @@ rules[ 'default-case' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [default-case]{@link http://eslint.org/docs/rules/default-case-last}
+* @see [default-case]{@link https://eslint.org/docs/rules/default-case-last}
 *
 * @example
 * // Bad...
@@ -254,7 +254,7 @@ rules[ 'default-case-last' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [default-param-last]{@link http://eslint.org/docs/rules/default-param-last}
+* @see [default-param-last]{@link https://eslint.org/docs/rules/default-param-last}
 *
 * @example
 * // Bad...
@@ -277,7 +277,7 @@ rules[ 'default-param-last' ] = 'error';
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'property' ]
-* @see [dot-location]{@link http://eslint.org/docs/rules/dot-location}
+* @see [dot-location]{@link https://eslint.org/docs/rules/dot-location}
 *
 * @example
 * // Bad...
@@ -311,7 +311,7 @@ rules[ 'dot-location' ] = [ 'error', 'property' ];
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [dot-notation]{@link http://eslint.org/docs/rules/dot-notation}
+* @see [dot-notation]{@link https://eslint.org/docs/rules/dot-notation}
 */
 rules[ 'dot-notation' ] = 'off'; // TODO: revisit?
 
@@ -322,7 +322,7 @@ rules[ 'dot-notation' ] = 'off'; // TODO: revisit?
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'always' ]
-* @see [eqeqeq]{@link http://eslint.org/docs/rules/eqeqeq}
+* @see [eqeqeq]{@link https://eslint.org/docs/rules/eqeqeq}
 *
 * @example
 * // Bad...
@@ -341,7 +341,7 @@ rules[ 'eqeqeq' ] = [ 'error', 'always' ];
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [guard-for-in]{@link http://eslint.org/docs/rules/guard-for-in}
+* @see [guard-for-in]{@link https://eslint.org/docs/rules/guard-for-in}
 *
 * @example
 * // Bad...
@@ -379,7 +379,7 @@ rules[ 'max-classes-per-file' ] = [ 'error', 1 ];
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-alert]{@link http://eslint.org/docs/rules/no-alert}
+* @see [no-alert]{@link https://eslint.org/docs/rules/no-alert}
 *
 * @example
 * // Bad...
@@ -394,7 +394,7 @@ rules[ 'no-alert' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-caller]{@link http://eslint.org/docs/rules/no-caller}
+* @see [no-caller]{@link https://eslint.org/docs/rules/no-caller}
 *
 * @example
 * // Bad...
@@ -411,7 +411,7 @@ rules[ 'no-caller' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-case-declarations]{@link http://eslint.org/docs/rules/no-case-declarations}
+* @see [no-case-declarations]{@link https://eslint.org/docs/rules/no-case-declarations}
 */
 rules[ 'no-case-declarations' ] = 'error';
 
@@ -422,7 +422,7 @@ rules[ 'no-case-declarations' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-div-regex]{@link http://eslint.org/docs/rules/no-div-regex}
+* @see [no-div-regex]{@link https://eslint.org/docs/rules/no-div-regex}
 *
 * @example
 * // Bad...
@@ -440,7 +440,7 @@ rules[ 'no-div-regex' ] = 'error';
 * @name no-else-return
 * @memberof rules
 * @type {Array}
-* @see [no-else-return]{@link http://eslint.org/docs/rules/no-else-return}
+* @see [no-else-return]{@link https://eslint.org/docs/rules/no-else-return}
 *
 * @example
 * // Bad...
@@ -472,7 +472,7 @@ rules[ 'no-else-return' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-empty-function]{@link http://eslint.org/docs/rules/no-empty-function}
+* @see [no-empty-function]{@link https://eslint.org/docs/rules/no-empty-function}
 *
 * @example
 * // Bad...
@@ -493,7 +493,7 @@ rules[ 'no-empty-function' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-empty-pattern]{@link http://eslint.org/docs/rules/no-empty-pattern}
+* @see [no-empty-pattern]{@link https://eslint.org/docs/rules/no-empty-pattern}
 *
 * @example
 * // Bad...
@@ -512,7 +512,7 @@ rules[ 'no-empty-pattern' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-eq-null]{@link http://eslint.org/docs/rules/no-eq-null}
+* @see [no-eq-null]{@link https://eslint.org/docs/rules/no-eq-null}
 *
 * @example
 * // Bad...
@@ -535,7 +535,7 @@ rules[ 'no-eq-null' ] = 'error';
 * @memberof rules
 * @type {Array}
 * @default 'error'
-* @see [no-eval]{@link http://eslint.org/docs/rules/no-eval}
+* @see [no-eval]{@link https://eslint.org/docs/rules/no-eval}
 *
 * @example
 * // Bad...
@@ -554,7 +554,7 @@ rules[ 'no-eval' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-extend-native]{@link http://eslint.org/docs/rules/no-extend-native}
+* @see [no-extend-native]{@link https://eslint.org/docs/rules/no-extend-native}
 *
 * @example
 * // Bad...
@@ -569,7 +569,7 @@ rules[ 'no-extend-native' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-extra-bind]{@link http://eslint.org/docs/rules/no-extra-bind}
+* @see [no-extra-bind]{@link https://eslint.org/docs/rules/no-extra-bind}
 *
 * @example
 * // Bad...
@@ -594,7 +594,7 @@ rules[ 'no-extra-bind' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-extra-label]{@link http://eslint.org/docs/rules/no-extra-label}
+* @see [no-extra-label]{@link https://eslint.org/docs/rules/no-extra-label}
 *
 * @example
 * // Bad...
@@ -611,7 +611,7 @@ rules[ 'no-extra-label' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-fallthrough]{@link http://eslint.org/docs/rules/no-fallthrough}
+* @see [no-fallthrough]{@link https://eslint.org/docs/rules/no-fallthrough}
 *
 * @example
 * // Bad...
@@ -658,7 +658,7 @@ rules[ 'no-fallthrough' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-floating-decimal]{@link http://eslint.org/docs/rules/no-floating-decimal}
+* @see [no-floating-decimal]{@link https://eslint.org/docs/rules/no-floating-decimal}
 *
 * @example
 * // Bad...
@@ -677,7 +677,7 @@ rules[ 'no-floating-decimal' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-global-assign]{@link http://eslint.org/docs/rules/no-global-assign}
+* @see [no-global-assign]{@link https://eslint.org/docs/rules/no-global-assign}
 *
 * @example
 * // Bad...
@@ -692,7 +692,7 @@ rules[ 'no-global-assign' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [no-implicit-coercion]{@link http://eslint.org/docs/rules/no-implicit-coercion}
+* @see [no-implicit-coercion]{@link https://eslint.org/docs/rules/no-implicit-coercion}
 *
 * @example
 * // Okay...
@@ -708,7 +708,7 @@ rules[ 'no-implicit-coercion' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [no-implicit-globals]{@link http://eslint.org/docs/rules/no-implicit-globals}
+* @see [no-implicit-globals]{@link https://eslint.org/docs/rules/no-implicit-globals}
 *
 * @example
 * // Okay...
@@ -723,7 +723,7 @@ rules[ 'no-implicit-globals' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-implied-eval]{@link http://eslint.org/docs/rules/no-implied-eval}
+* @see [no-implied-eval]{@link https://eslint.org/docs/rules/no-implied-eval}
 *
 * @example
 * // Bad...
@@ -738,7 +738,7 @@ rules[ 'no-implied-eval' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-invalid-this]{@link http://eslint.org/docs/rules/no-invalid-this}
+* @see [no-invalid-this]{@link https://eslint.org/docs/rules/no-invalid-this}
 *
 * @example
 * // Bad...
@@ -760,7 +760,7 @@ rules[ 'no-invalid-this' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-iterator]{@link http://eslint.org/docs/rules/no-iterator}
+* @see [no-iterator]{@link https://eslint.org/docs/rules/no-iterator}
 */
 rules[ 'no-iterator' ] = 'error';
 
@@ -770,7 +770,7 @@ rules[ 'no-iterator' ] = 'error';
 * @name no-labels
 * @memberof rules
 * @type {Array}
-* @see [no-labels]{@link http://eslint.org/docs/rules/no-labels}
+* @see [no-labels]{@link https://eslint.org/docs/rules/no-labels}
 *
 * @example
 * // Bad...
@@ -796,7 +796,7 @@ rules[ 'no-labels' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-line-blocks]{@link http://eslint.org/docs/rules/no-lone-blocks}
+* @see [no-line-blocks]{@link https://eslint.org/docs/rules/no-lone-blocks}
 *
 * @example
 * // Bad...
@@ -821,7 +821,7 @@ rules[ 'no-lone-blocks' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-loop-func]{@link http://eslint.org/docs/rules/no-loop-func}
+* @see [no-loop-func]{@link https://eslint.org/docs/rules/no-loop-func}
 *
 * @example
 * // Bad...
@@ -859,7 +859,7 @@ rules[ 'no-loop-func' ] = 'error';
 * @name no-magic-numbers
 * @memberof rules
 * @type {Array}
-* @see [no-magic-numbers]{@link http://eslint.org/docs/rules/no-magic-numbers}
+* @see [no-magic-numbers]{@link https://eslint.org/docs/rules/no-magic-numbers}
 */
 rules[ 'no-magic-numbers' ] = [ 'off', {
 	'ignoreArrayIndexes': true,
@@ -874,7 +874,7 @@ rules[ 'no-magic-numbers' ] = [ 'off', {
 * @memberof rules
 * @type {Array}
 * @default [ 'error', { 'ignoreEOLComments': true } ]
-* @see [no-multi-spaces]{@link http://eslint.org/docs/rules/no-multi-spaces}
+* @see [no-multi-spaces]{@link https://eslint.org/docs/rules/no-multi-spaces}
 *
 * @example
 * // Bad...
@@ -895,7 +895,7 @@ rules[ 'no-multi-spaces' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-multi-str]{@link http://eslint.org/docs/rules/no-multi-str}
+* @see [no-multi-str]{@link https://eslint.org/docs/rules/no-multi-str}
 *
 * @example
 * // Bad...
@@ -915,7 +915,7 @@ rules[ 'no-multi-str' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-new]{@link http://eslint.org/docs/rules/no-new}
+* @see [no-new]{@link https://eslint.org/docs/rules/no-new}
 *
 * @example
 * // Bad...
@@ -934,7 +934,7 @@ rules[ 'no-new' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-new-func]{@link http://eslint.org/docs/rules/no-new-func}
+* @see [no-new-func]{@link https://eslint.org/docs/rules/no-new-func}
 *
 * @example
 * // Bad (most of the time)...
@@ -955,7 +955,7 @@ rules[ 'no-new-func' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-new-wrappers]{@link http://eslint.org/docs/rules/no-new-wrappers}
+* @see [no-new-wrappers]{@link https://eslint.org/docs/rules/no-new-wrappers}
 *
 * @example
 * // Bad...
@@ -974,7 +974,7 @@ rules[ 'no-new-wrappers' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-octal]{@link http://eslint.org/docs/rules/no-octal}
+* @see [no-octal]{@link https://eslint.org/docs/rules/no-octal}
 *
 * @example
 * // Bad...
@@ -993,7 +993,7 @@ rules[ 'no-octal' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-octal-escape]{@link http://eslint.org/docs/rules/no-octal-escape}
+* @see [no-octal-escape]{@link https://eslint.org/docs/rules/no-octal-escape}
 *
 * @example
 * // Bad...
@@ -1012,7 +1012,7 @@ rules[ 'no-octal-escape' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [no-param-reassign]{@link http://eslint.org/docs/rules/no-param-reassign}
+* @see [no-param-reassign]{@link https://eslint.org/docs/rules/no-param-reassign}
 *
 * @example
 * // Okay...
@@ -1030,7 +1030,7 @@ rules[ 'no-param-reassign' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-proto]{@link http://eslint.org/docs/rules/no-proto}
+* @see [no-proto]{@link https://eslint.org/docs/rules/no-proto}
 *
 * @example
 * // Bad...
@@ -1051,7 +1051,7 @@ rules[ 'no-proto' ] = 'error';
 * @memberof rules
 * @type {Array}
 * @default 'off'
-* @see [no-redeclare]{@link http://eslint.org/docs/rules/no-redeclare}
+* @see [no-redeclare]{@link https://eslint.org/docs/rules/no-redeclare}
 *
 * @example
 * // Bad...
@@ -1074,7 +1074,7 @@ rules[ 'no-redeclare' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [no-restricted-properties]{@link http://eslint.org/docs/rules/no-restricted-properties}
+* @see [no-restricted-properties]{@link https://eslint.org/docs/rules/no-restricted-properties}
 */
 rules[ 'no-restricted-properties' ] = 'off';
 
@@ -1085,7 +1085,7 @@ rules[ 'no-restricted-properties' ] = 'off';
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'always' ]
-* @see [no-return-assign]{@link http://eslint.org/docs/rules/no-return-assign}
+* @see [no-return-assign]{@link https://eslint.org/docs/rules/no-return-assign}
 *
 * @example
 * // Bad...
@@ -1111,7 +1111,7 @@ rules[ 'no-return-assign' ] = [ 'error', 'always' ];
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-return-await]{@link http://eslint.org/docs/rules/no-return-await}
+* @see [no-return-await]{@link https://eslint.org/docs/rules/no-return-await}
 *
 * @example
 * // Bad...
@@ -1130,7 +1130,7 @@ rules[ 'no-return-await' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-script-url]{@link http://eslint.org/docs/rules/no-script-url}
+* @see [no-script-url]{@link https://eslint.org/docs/rules/no-script-url}
 *
 * @example
 * // Bad...
@@ -1145,7 +1145,7 @@ rules[ 'no-script-url' ] = 'error';
 * @memberof rules
 * @type {Array}
 * @default [ 'error', {'props':true} ]
-* @see [no-self-assign]{@link http://eslint.org/docs/rules/no-self-assign}
+* @see [no-self-assign]{@link https://eslint.org/docs/rules/no-self-assign}
 *
 * @example
 * // Bad...
@@ -1167,7 +1167,7 @@ rules[ 'no-self-assign' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [no-self-compare]{@link http://eslint.org/docs/rules/no-self-compare}
+* @see [no-self-compare]{@link https://eslint.org/docs/rules/no-self-compare}
 *
 * @example
 * // Okay...
@@ -1184,7 +1184,7 @@ rules[ 'no-self-compare' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-sequences]{@link http://eslint.org/docs/rules/no-sequences}
+* @see [no-sequences]{@link https://eslint.org/docs/rules/no-sequences}
 *
 * @example
 * // Bad...
@@ -1203,7 +1203,7 @@ rules[ 'no-sequences' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-throw-literal]{@link http://eslint.org/docs/rules/no-throw-literal}
+* @see [no-throw-literal]{@link https://eslint.org/docs/rules/no-throw-literal}
 *
 * @example
 * // Bad...
@@ -1222,7 +1222,7 @@ rules[ 'no-throw-literal' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [no-unmodified-loop-condition]{@link http://eslint.org/docs/rules/no-unmodified-loop-condition}
+* @see [no-unmodified-loop-condition]{@link https://eslint.org/docs/rules/no-unmodified-loop-condition}
 */
 rules[ 'no-unmodified-loop-condition' ] = 'off';
 
@@ -1232,7 +1232,7 @@ rules[ 'no-unmodified-loop-condition' ] = 'off';
 * @name no-unused-expressions
 * @memberof rules
 * @type {Array}
-* @see [no-unused-expressions]{@link http://eslint.org/docs/rules/no-unused-expressions}
+* @see [no-unused-expressions]{@link https://eslint.org/docs/rules/no-unused-expressions}
 *
 * @example
 * // Bad...
@@ -1250,7 +1250,7 @@ rules[ 'no-unused-expressions' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-unused-labels]{@link http://eslint.org/docs/rules/no-unused-labels}
+* @see [no-unused-labels]{@link https://eslint.org/docs/rules/no-unused-labels}
 *
 * @example
 * // Bad...
@@ -1273,7 +1273,7 @@ rules[ 'no-unused-labels' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-useless-backreference]{@link http://eslint.org/docs/rules/no-useless-backreference}
+* @see [no-useless-backreference]{@link https://eslint.org/docs/rules/no-useless-backreference}
 *
 * @example
 * // Bad...
@@ -1292,7 +1292,7 @@ rules[ 'no-useless-backreference' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-useless-call]{@link http://eslint.org/docs/rules/no-useless-call}
+* @see [no-useless-call]{@link https://eslint.org/docs/rules/no-useless-call}
 *
 * @example
 * // Bad...
@@ -1311,7 +1311,7 @@ rules[ 'no-useless-call' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-useless-catch]{@link http://eslint.org/docs/rules/no-useless-catch}
+* @see [no-useless-catch]{@link https://eslint.org/docs/rules/no-useless-catch}
 *
 * @example
 * // Bad...
@@ -1341,7 +1341,7 @@ rules[ 'no-useless-catch' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-useless-concat]{@link http://eslint.org/docs/rules/no-useless-concat}
+* @see [no-useless-concat]{@link https://eslint.org/docs/rules/no-useless-concat}
 *
 * @example
 * // Bad...
@@ -1360,7 +1360,7 @@ rules[ 'no-useless-concat' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-useless-escape]{@link http://eslint.org/docs/rules/no-useless-escape}
+* @see [no-useless-escape]{@link https://eslint.org/docs/rules/no-useless-escape}
 *
 * @example
 * // Bad...
@@ -1379,7 +1379,7 @@ rules[ 'no-useless-escape' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-useless-return]{@link http://eslint.org/docs/rules/no-useless-return}
+* @see [no-useless-return]{@link https://eslint.org/docs/rules/no-useless-return}
 *
 * @example
 * // Bad...
@@ -1407,7 +1407,7 @@ rules[ 'no-useless-return' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [no-void]{@link http://eslint.org/docs/rules/no-void}
+* @see [no-void]{@link https://eslint.org/docs/rules/no-void}
 *
 * @example
 * // Okay...
@@ -1423,7 +1423,7 @@ rules[ 'no-void' ] = 'off';
 * @name no-warning-comments
 * @memberof rules
 * @type {Array}
-* @see [no-warning-comments]{@link http://eslint.org/docs/rules/no-warning-comments}
+* @see [no-warning-comments]{@link https://eslint.org/docs/rules/no-warning-comments}
 */
 rules[ 'no-warning-comments' ] = [ 'warn', {
 	'terms': [
@@ -1444,7 +1444,7 @@ rules[ 'no-warning-comments' ] = [ 'warn', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-with]{@link http://eslint.org/docs/rules/no-with}
+* @see [no-with]{@link https://eslint.org/docs/rules/no-with}
 */
 rules[ 'no-with' ] = 'error';
 
@@ -1455,7 +1455,7 @@ rules[ 'no-with' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [prefer-named-capture-group]{@link http://eslint.org/docs/rules/prefer-named-capture-group}
+* @see [prefer-named-capture-group]{@link https://eslint.org/docs/rules/prefer-named-capture-group}
 */
 rules[ 'prefer-named-capture-group' ] = 'off';
 
@@ -1497,7 +1497,7 @@ rules[ 'prefer-regex-literals' ] = 'error';
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'always' ]
-* @see [radix]{@link http://eslint.org/docs/rules/radix}
+* @see [radix]{@link https://eslint.org/docs/rules/radix}
 *
 * @example
 * // Bad...
@@ -1518,7 +1518,7 @@ rules[ 'radix' ] = [ 'error', 'always' ];
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [require-await]{@link http://eslint.org/docs/rules/require-await}
+* @see [require-await]{@link https://eslint.org/docs/rules/require-await}
 *
 * @example
 * // Bad...
@@ -1547,7 +1547,7 @@ rules[ 'require-await' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [require-unicode-regexp]{@link http://eslint.org/docs/rules/require-unicode-regexp}
+* @see [require-unicode-regexp]{@link https://eslint.org/docs/rules/require-unicode-regexp}
 *
 * @example
 * // Bad...
@@ -1566,7 +1566,7 @@ rules[ 'require-unicode-regexp' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [vars-on-top]{@link http://eslint.org/docs/rules/vars-on-top}
+* @see [vars-on-top]{@link https://eslint.org/docs/rules/vars-on-top}
 *
 * @example
 * // Bad...
@@ -1597,7 +1597,7 @@ rules[ 'vars-on-top' ] = 'error';
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'inside' ]
-* @see [wrap-iife]{@link http://eslint.org/docs/rules/wrap-iife}
+* @see [wrap-iife]{@link https://eslint.org/docs/rules/wrap-iife}
 *
 * @example
 * // Bad...
@@ -1616,7 +1616,7 @@ rules[ 'wrap-iife' ] = [ 'error', 'inside' ];
 * @memberof rules
 * @type {Array}
 * @default [ 'error', 'never', {'exceptRange':true} ]
-* @see [yoda]{@link http://eslint.org/docs/rules/yoda}
+* @see [yoda]{@link https://eslint.org/docs/rules/yoda}
 *
 * @example
 * // Bad...

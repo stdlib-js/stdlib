@@ -309,7 +309,7 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 
 [stdlib-code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
 
-[stdlib-license]: https://github.com/stdlib-js/stdlib/blob/develop/LICENSE
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stdlib/develop/LICENSE
 
 [stdlib-style-guides]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides
 

@@ -167,7 +167,7 @@
       "fdim"
     ]
   },
-  "http://en.wikipedia.org/wiki/2147483647": {
+  "https://en.wikipedia.org/wiki/2147483647": {
     "id": "max-int32",
     "description": "Wikipedia article on the maximum value of a 32-bit signed integer.",
     "short_url": "",
@@ -178,7 +178,7 @@
       "2^31-1"
     ]
   },
-  "http://en.wikipedia.org/wiki/Anagram": {
+  "https://en.wikipedia.org/wiki/Anagram": {
     "id": "anagram",
     "description": "Wikipedia entry for anagrams.",
     "short_url": "",
@@ -189,7 +189,7 @@
       "letters"
     ]
   },
-  "http://en.wikipedia.org/wiki/Beta_function": {
+  "https://en.wikipedia.org/wiki/Beta_function": {
     "id": "beta-function",
     "description": "Wikipedia entry for the beta function.",
     "short_url": "",
@@ -199,7 +199,7 @@
       "math"
     ]
   },
-  "http://en.wikipedia.org/wiki/Catalan%27s_constant": {
+  "https://en.wikipedia.org/wiki/Catalan%27s_constant": {
     "id": "catalan-constant",
     "description": "Wikipedia entry for Catalan's constant.",
     "short_url": "",
@@ -209,7 +209,7 @@
       "math"
     ]
   },
-  "http://en.wikipedia.org/wiki/Diacritic": {
+  "https://en.wikipedia.org/wiki/Diacritic": {
     "id": "diacritics",
     "description": "Wikipedia entry on diacritics.",
     "short_url": "",
@@ -220,7 +220,7 @@
       "glyph"
     ]
   },
-  "http://en.wikipedia.org/wiki/Endianness": {
+  "https://en.wikipedia.org/wiki/Endianness": {
     "id": "endianness",
     "description": "Wikipedia entry for endianness, which governs how a range of bytes in computer memory is interpreted.",
     "short_url": "",
@@ -233,7 +233,7 @@
       "bit"
     ]
   },
-  "http://en.wikipedia.org/wiki/Fluent_interface": {
+  "https://en.wikipedia.org/wiki/Fluent_interface": {
     "id": "fluent-interface",
     "description": "Wikipedia entry for fluent interfaces.",
     "short_url": "",
@@ -244,18 +244,7 @@
       "pattern"
     ]
   },
-  "http://en.wikipedia.org/wiki/Golden_ratio": {
-    "id": "phi",
-    "description": "Wikipedia entry for the golden ratio.",
-    "short_url": "",
-    "keywords": [
-      "phi",
-      "golden",
-      "ratio",
-      "math"
-    ]
-  },
-  "http://en.wikipedia.org/wiki/Greatest_common_divisor": {
+  "https://en.wikipedia.org/wiki/Greatest_common_divisor": {
     "id": "gcd",
     "description": "Wikipedia entry for the greatest common divisor.",
     "short_url": "",
@@ -267,7 +256,7 @@
       "math"
     ]
   },
-  "http://en.wikipedia.org/wiki/Linear_congruential_generator#Advantages_and_disadvantages_of_LCGs": {
+  "https://en.wikipedia.org/wiki/Linear_congruential_generator#Advantages_and_disadvantages_of_LCGs": {
     "id": "pros-cons",
     "description": "Wikipedia entry on the pros and cons of linear congruential generators.",
     "short_url": "",
@@ -281,7 +270,7 @@
       "numbers"
     ]
   },
-  "http://en.wikipedia.org/wiki/Norm_%28mathematics%29": {
+  "https://en.wikipedia.org/wiki/Norm_%28mathematics%29": {
     "id": "l1norm",
     "description": "Wikipedia entry for the L1 norm.",
     "short_url": "",
@@ -291,7 +280,7 @@
       "math"
     ]
   },
-  "http://en.wikipedia.org/wiki/Pipeline_%28Unix%29": {
+  "https://en.wikipedia.org/wiki/Pipeline_%28Unix%29": {
     "id": "standard-stream",
     "description": "Wikipedia entry for UNIX pipelines.",
     "short_url": "",
@@ -302,7 +291,7 @@
       "pipeline"
     ]
   },
-  "http://en.wikipedia.org/wiki/Pythagorean_theorem": {
+  "https://en.wikipedia.org/wiki/Pythagorean_theorem": {
     "id": "hypotenuse",
     "description": "Wikipedia entry on the Pythagorean theorem and the hypotenuse of a triangle.",
     "short_url": "",
@@ -315,7 +304,7 @@
       "hypotenuse"
     ]
   },
-  "http://en.wikipedia.org/wiki/Sign_function": {
+  "https://en.wikipedia.org/wiki/Sign_function": {
     "id": "signum",
     "description": "Wikipedia entry for the signum function.",
     "short_url": "",
@@ -326,7 +315,7 @@
       "math"
     ]
   },
-  "http://en.wikipedia.org/wiki/URI_scheme": {
+  "https://en.wikipedia.org/wiki/URI_scheme": {
     "id": "uri",
     "description": "Wikipedia entry on Uniform Resource Identifiers (URIs) to identify resources in a network.",
     "short_url": "",
@@ -339,7 +328,7 @@
       "protocol"
     ]
   },
-  "http://eslint.org/": {
+  "https://eslint.org/": {
     "id": "eslint",
     "description": "A pluggable linting utility for JavaScript. Official website.",
     "short_url": "",
@@ -434,7 +423,7 @@
       "spaces"
     ]
   },
-  "http://lunrjs.com/": {
+  "https://lunrjs.com": {
     "id": "lunr-js",
     "description": "Lunr.js is a simple full-text search engine for the browser.",
     "short_url": "",
@@ -1176,7 +1165,7 @@
       "math"
     ]
   },
-  "http://www.numpy.org/": {
+  "https://numpy.org/": {
     "id": "numpy",
     "description": "Official homepage for NumPy, the fundamental package for scientific computing with Python.",
     "short_url": "",
@@ -4238,7 +4227,8 @@
     "keywords": [
       "golden",
       "ratio",
-      "phi"
+      "phi",
+      "math"
     ]
   },
   "https://en.wikipedia.org/wiki/Gregorian_calendar": {

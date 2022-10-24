@@ -94,7 +94,7 @@ In addition to the above flags, `emcc` should act as a drop-in replacement for `
 
 [emscripten]: https://github.com/kripken/emscripten
 
-[emscripten-sdk]: https://github.com/juj/emsdk
+[emscripten-sdk]: https://github.com/emscripten-core/emsdk
 
 [llvm]: https://en.wikipedia.org/wiki/LLVM
 
@@ -102,7 +102,7 @@ In addition to the above flags, `emcc` should act as a drop-in replacement for `
 
 [cmake]: https://cmake.org/
 
-[python]: https://www.python.org
+[python]: https://www.python.org/
 
 [gcc]: http://gcc.gnu.org/
 

@@ -138,7 +138,7 @@ $ make init-git-hooks
 
 [git-hooks]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 
-[eslint]: http://eslint.org/
+[eslint]: https://eslint.org/
 
 </section>
 

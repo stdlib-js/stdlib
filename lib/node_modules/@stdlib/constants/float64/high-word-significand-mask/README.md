@@ -105,7 +105,7 @@ out = hi | FLOAT64_HIGH_WORD_SIGNIFICAND_MASK; // => 0 10000000010 1111111111111
 
 <section class="links">
 
-[ieee754]: http://en.wikipedia.org/wiki/IEEE_754-1985
+[ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
 
 <!-- <related-links> -->
 
