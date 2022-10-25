@@ -347,6 +347,20 @@
       "fdim"
     ]
   },
+  "http://eudml.org/doc/175224": {
+    "id": "@joehnk:1964",
+    "description": "Joehnk, M. D. 1964. Erzeugung von betaverteilten und gammaverteilten Zufallszahlen.",
+    "short_url": "",
+    "keywords": [
+      "joehnk",
+      "beta",
+      "gamma",
+      "random",
+      "number",
+      "generation",
+      "method"
+    ]
+  },
   "http://gcc.gnu.org/": {
     "id": "gcc",
     "description": "The GNU Compiler Collection.",
@@ -679,6 +693,20 @@
       "seq",
       "positive",
       "numbers"
+    ]
+  },
+  "http://onlinelibrary.wiley.com/doi/10.1111/1467-9884.00122/": {
+    "id": "@joanes:1998",
+    "description": "Joanes, D. N. and Gill, C. A. 1998. Comparing measures of sample skewness and kurtosis.",
+    "short_url": "",
+    "keywords": [
+      "joanes",
+      "gill",
+      "skewness",
+      "kurtosis",
+      "statistics",
+      "measure",
+      "sample"
     ]
   },
   "http://opendatacommons.org/licenses/by/1.0/": {
@@ -1052,6 +1080,18 @@
       "number theory"
     ]
   },
+  "http://www.frbsf.org/economic-research/indicators-data/nominal-wage-rigidity/": {
+    "id": "@frbsf:wagerigidity",
+    "description": "Federal Reserve Bank of San Francisco Wage Rigidity Meter.",
+    "short_url": "",
+    "keywords": [
+      "wage",
+      "rigidity",
+      "unemployment",
+      "labor",
+      "economics"
+    ]
+  },
   "http://www.freebsd.org/cgi/man.cgi?fetch%281%29": {
     "id": "fetch",
     "description": "The FreeBSD manual page for the fetch(1) command.",
@@ -1408,6 +1448,29 @@
       "trolling"
     ]
   },
+  "https://books.google.com/books?id=2nbuAAAAMAAJ": {
+    "id": "@chall:1995a",
+    "description": "Challe, J. S. and Dale, E. 1995. Readability Revisited: The New Dale-Chall Readability Formula.",
+    "short_url": "",
+    "keywords": [
+      "readability",
+      "formula",
+      "dale-chall"
+    ]
+  },
+  "https://books.google.com/books?id=vC7I_gdX-A0C": {
+    "id": "@herzog:2002",
+    "description": "Herzog, T. N. and Lord, G. 2002. Applications of Monte Carlo Methods in Finance and Insurance.",
+    "short_url": "",
+    "keywords": [
+      "monte",
+      "carlo",
+      "sampling",
+      "simulation",
+      "finance",
+      "insurance"
+    ]
+  },
   "https://brew.sh": {
     "id": "homebrew",
     "description": "Package manager for MacOS.",
@@ -1419,6 +1482,301 @@
       "macintosh",
       "pkg",
       "package manager"
+    ]
+  },
+  "https://bugs.chromium.org/p/chromium/issues/detail?id=246054": {
+    "id": "@bug:chromium:246054",
+    "description": "Chromium bug report concerning use of predictable random number generators.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "chromium",
+      "random",
+      "number",
+      "generator",
+      "predictable"
+    ]
+  },
+  "https://bugs.chromium.org/p/chromium/issues/detail?id=320097": {
+    "id": "@bug:chromium:320097",
+    "description": "Chromium bug report concerning change of results of trigonometric functions.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "chromium",
+      "trigonometric",
+      "function",
+      "result"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=1101": {
+    "id": "@bug:v8:1101",
+    "description": "V8 bug report about NaN being converted to 0xfff8000000000000",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "nan"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=1975": {
+    "id": "@bug:v8:1975",
+    "description": "V8 bug report about the precision of trigonometric functions being low.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "trigonometric",
+      "function",
+      "precision"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=2890": {
+    "id": "@bug:v8:2890",
+    "description": "V8 bug report about deeopt loops involving Math.round / Math.floor.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "loop",
+      "math",
+      "round",
+      "floor"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=3006": {
+    "id": "@bug:v8:3006",
+    "description": "V8 bug report about inaccurate sin/cos values.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "sin",
+      "cos",
+      "inaccurate"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=3089": {
+    "id": "@bug:v8:3089",
+    "description": "V8 bug report about Math.sin(-x) not being equal to -Math.sin(x).",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "sin",
+      "equal"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=3266": {
+    "id": "@bug:v8:3266",
+    "description": "V8 bug report about numeric issues in hyperbolic functions.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "hyperbolic",
+      "function",
+      "numeric"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=3468": {
+    "id": "@bug:v8:3468",
+    "description": "V8 bug report about Math.exp(100) being inaccurate.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "exp",
+      "inaccurate"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=3496": {
+    "id": "@bug:v8:3496",
+    "description": "V8 bug report about Math.asinh issues.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "asinh"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=3509": {
+    "id": "@bug:v8:3509",
+    "description": "V8 bug report about Math.acosh issues.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "acosh"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=3511": {
+    "id": "@bug:v8:3511",
+    "description": "V8 bug report about Math.atanh issues.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "atanh"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=3599": {
+    "id": "@bug:v8:3599",
+    "description": "V8 bug report about Math.pow(10,308) being inaccurate.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "pow",
+      "inaccurate"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=4059": {
+    "id": "@bug:v8:4059",
+    "description": "V8 bug report about Math.ceil(0) deopt loops.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "ceil",
+      "loop"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=436": {
+    "id": "@bug:v8:436",
+    "description": "V8 bug report about inaccurate results on some systems due to x87 extended double precision.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "inaccurate",
+      "system",
+      "x87",
+      "extended",
+      "double",
+      "precision"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=4566": {
+    "id": "@bug:v8:4566",
+    "description": "V8 bug report about replacement of MWC1616 used in PRNG Math.random().",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "random",
+      "prng",
+      "mwc1616"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=5086": {
+    "id": "@bug:v8:5086",
+    "description": "V8 bug report about unifying the implementation of the various Math builtins.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "builtin"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=5157": {
+    "id": "@bug:v8:5157",
+    "description": "V8 bug report about unifying the implementation of the implementation of Math.pow.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "pow"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/detail?id=958": {
+    "id": "@bug:v8:958",
+    "description": "V8 bug report about Math.round rounding incorrectly.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "math",
+      "round",
+      "incorrect"
+    ]
+  },
+  "https://bugs.chromium.org/p/v8/issues/list?can=1&q=math&colspec=ID%20Type%20Status%20Priority%20Owner%20Summary%20HW%20OS%20Component%20Stars&num=100&start=100": {
+    "id": "v8-issue-tracker",
+    "description": "V8 issue tracker",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "v8",
+      "issue",
+      "tracker"
+    ]
+  },
+  "https://bugs.webkit.org/buglist.cgi?quicksearch=math": {
+    "id": "webkit-issue-tracker",
+    "description": "Webkit issue tracker",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "webkit",
+      "issue",
+      "tracker"
+    ]
+  },
+  "https://bugs.webkit.org/show_bug.cgi?id=151641": {
+    "id": "@bug:webkit:151641",
+    "description": "Webkit bug report about better RNG for Math.random().",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "webkit",
+      "math",
+      "random",
+      "rng"
+    ]
+  },
+  "https://bugs.webkit.org/show_bug.cgi?id=26972": {
+    "id": "@bug:webkit:26972",
+    "description": "Webkit bug report about predictable random number generators.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "webkit",
+      "random",
+      "predictable",
+      "generator"
+    ]
+  },
+  "https://bugs.webkit.org/show_bug.cgi?id=36673": {
+    "id": "@bug:webkit:36673",
+    "description": "Webkit bug report about Math.random repeating values in different workers.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "webkit",
+      "math",
+      "random",
+      "worker"
+    ]
+  },
+  "https://bugs.webkit.org/show_bug.cgi?id=40367": {
+    "id": "@bug:webkit:40367",
+    "description": "Webkit bug report about a bug under 32-bit mode.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "webkit",
+      "32-bit"
     ]
   },
   "https://bugs.webkit.org/show_bug.cgi?id=7726": {
@@ -1467,6 +1825,140 @@
       "math",
       "random",
       "xorshift"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=618251": {
+    "id": "@bug:mozilla:618251",
+    "description": "Mozilla bug report related to Math.pow accumulating error.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "pow",
+      "power",
+      "exponentiation"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=681357": {
+    "id": "@bug:mozilla:681357",
+    "description": "Mozilla bug report related to making fast math functions accessible.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "fast"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=686708": {
+    "id": "@bug:mozilla:686708",
+    "description": "Mozilla bug report about Math.round() not handling -0 and -0.5 properly.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "round"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=703611": {
+    "id": "@bug:mozilla:703611",
+    "description": "Mozilla bug report about Math.pow(-Infinity, even int < 0) not producimh the correct value.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "pow",
+      "power",
+      "exponentiation"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=717379#c5": {
+    "id": "@bug:mozilla:717379",
+    "description": "Mozilla bug report about Math.log10 return values.",
+    "short_url": "",
+    "keywords": []
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=892671": {
+    "id": "@bug:mozilla:892671",
+    "description": "Mozilla bug report about specifying the tolerance in each new ES6 Math test.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "es6"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=897634": {
+    "id": "@bug:mozilla:897634",
+    "description": "Mozilla bug report about Math.expm1 when !HAVE_EXPM1.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "expm1"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=933257": {
+    "id": "@bug:mozilla:933257",
+    "description": "Mozilla bug report about precision in new Math functions.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "precision"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=948321": {
+    "id": "@bug:mozilla:948321",
+    "description": "Mozilla bug report about different division results on x86 platforms.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "division"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=967709": {
+    "id": "@bug:mozilla:967709",
+    "description": "Mozilla bug report about V8 being 2.8x faster at sin/cos.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "sin",
+      "cos",
+      "v8",
+      "performance"
+    ]
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8": {
+    "id": "@bug:mozilla:969203",
+    "description": "Mozilla bug comment about Math function optimizations.",
+    "short_url": "",
+    "keywords": [
+      "bug",
+      "mozilla",
+      "math",
+      "optimization"
+    ]
+  },
+  "https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US": {
+    "id": "editorconfig-chrome",
+    "description": "Chrome extension for EditorConfig for GitHub.",
+    "short_url": "",
+    "keywords": [
+      "chrome",
+      "extension",
+      "editorconfig",
+      "github"
     ]
   },
   "https://circleci.com/": {
@@ -3002,6 +3494,17 @@
       "github",
       "repository",
       "topic"
+    ]
+  },
+  "https://docs.google.com/spreadsheets/d/1t2jrptAvaQetDIYPD8GKc90Dni2dT3FuHgKKFF-eJHw/edit#gid=0": {
+    "id": "@bug:esdiscuss:038525:spreadsheet",
+    "description": "Google spreadsheet showing trigonometric results across browsers.",
+    "short_url": "",
+    "keywords": [
+      "spreadsheet",
+      "trigonometry",
+      "bug",
+      "esdiscuss"
     ]
   },
   "https://docs.npmjs.com/files/package.json#bin": {
@@ -7055,6 +7558,31 @@
       "letters"
     ]
   },
+  "https://esdiscuss.org/topic/es6-accuracy-of-special-functions": {
+    "id": "@bug:esdiscuss:038525",
+    "description": "ES Discuss thread discussing the accuracy of special functions in ES6.",
+    "short_url": "",
+    "keywords": [
+      "es6",
+      "es2015",
+      "math",
+      "special",
+      "functions",
+      "accuracy",
+      "bug"
+    ]
+  },
+  "https://esdiscuss.org/topic/observability-of-nan-distinctions-is-this-a-concern": {
+    "id": "@bug:esdiscuss:2013-03-20",
+    "description": "ES Discuss thread discussing the observability of NaN distinctions.",
+    "short_url": "",
+    "keywords": [
+      "es6",
+      "es2015",
+      "math",
+      "NaN"
+    ]
+  },
   "https://eslint.org/": {
     "id": "eslint",
     "description": "A pluggable linting utility for JavaScript. Official website.",
@@ -7613,6 +8141,25 @@
       "guide"
     ]
   },
+  "https://github.com/bevacqua/js": {
+    "id": "quality-guide",
+    "description": "A guide to writing high quality JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "javascript",
+      "guide",
+      "quality"
+    ]
+  },
+  "https://github.com/buildfirst/buildfirst/tree/master/ch05/04_hoisting": {
+    "id": "hoisting",
+    "description": "Variable hoisting in JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "javascript",
+      "hoisting"
+    ]
+  },
   "https://github.com/creationix/nvm": {
     "id": "nvm",
     "description": "Node Version Manager, a simple bash script to manage multiple active Node.js versions.",
@@ -7694,6 +8241,73 @@
       "browser"
     ]
   },
+  "https://github.com/golang/go/blob/964639cc338db650ccadeafb7424bc8ebb2c0f6c/src/math/unsafe.go#L17": {
+    "id": "golang-float64bits",
+    "description": "Go's Float64bits function.",
+    "short_url": "",
+    "keywords": [
+      "golang",
+      "go",
+      "float64bits"
+    ]
+  },
+  "https://github.com/golang/go/blob/c007ce824d9a4fccb148f9204e04c23ed2984b71/src/math/frexp.go#L27": {
+    "id": "golang-frexp",
+    "description": "Go implementation of the frexp function.",
+    "short_url": "",
+    "keywords": [
+      "golang",
+      "go",
+      "frexp",
+      "math"
+    ]
+  },
+  "https://github.com/golang/lint": {
+    "id": "golint",
+    "description": "Golint is a linter for Go source code.",
+    "short_url": "",
+    "keywords": [
+      "golang",
+      "go",
+      "lint",
+      "linter"
+    ]
+  },
+  "https://github.com/gotwarlost/istanbul": {
+    "id": "istanbul",
+    "description": "Istanbul is a JavaScript code coverage tool.",
+    "short_url": "",
+    "keywords": [
+      "javascript",
+      "code",
+      "coverage",
+      "tool"
+    ]
+  },
+  "https://github.com/hybridgroup/cylon/": {
+    "id": "cylon-js",
+    "description": "Cylon.js is a JavaScript framework for robotics, physical computing, and the Internet of Things (IoT).",
+    "short_url": "",
+    "keywords": [
+      "cylon",
+      "javascript",
+      "robotics",
+      "iot",
+      "internet",
+      "of",
+      "things"
+    ]
+  },
+  "https://github.com/jgm/pandoc-citeproc": {
+    "id": "pandoc-citeproc",
+    "description": "Pandoc's citeproc library.",
+    "short_url": "",
+    "keywords": [
+      "pandoc",
+      "citeproc",
+      "library"
+    ]
+  },
   "https://github.com/jimhester/lintr": {
     "id": "lintr",
     "description": "Linter for R.",
@@ -7702,6 +8316,20 @@
       "r",
       "linter",
       "lint"
+    ]
+  },
+  "https://github.com/kangax/compat-table/issues/392": {
+    "id": "@bug:kangax:compat-table:392",
+    "description": "GitHub issue thread on the accuracy of Math.cbrt, Math.expm1, Math.log1p.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "issue",
+      "accuracy",
+      "math",
+      "cbrt",
+      "expm1",
+      "log1p"
     ]
   },
   "https://github.com/kemayo/sublime-text-git": {
@@ -7739,6 +8367,59 @@
       "static analysis"
     ]
   },
+  "https://github.com/kripken/emscripten": {
+    "id": "emscripten",
+    "description": "GitHub repository of emscripten, an LLVM-to-JavaScript compiler.",
+    "short_url": "",
+    "keywords": [
+      "emscripten",
+      "llvm",
+      "javascript",
+      "compiler"
+    ]
+  },
+  "https://github.com/ljharb/get-nans": {
+    "id": "get-nans",
+    "description": "Get an array of all distinct NaN values supported by the current JavaScript engine.",
+    "short_url": "",
+    "keywords": [
+      "nan",
+      "javascript",
+      "js",
+      "engine"
+    ]
+  },
+  "https://github.com/luggage66/vscode-awk": {
+    "id": "vscode-awk",
+    "description": "VSCode extension for AWK.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "extension",
+      "awk"
+    ]
+  },
+  "https://github.com/mattn/vscode-runner": {
+    "id": "vscode-runner",
+    "description": "VSCode extension for running code.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "extension",
+      "run",
+      "code"
+    ]
+  },
+  "https://github.com/mdn/webassembly-examples/blob/master/wasm-sobel/sobel.js": {
+    "id": "web-assembly-examples",
+    "description": "WebAssembly examples.",
+    "short_url": "",
+    "keywords": [
+      "webassembly",
+      "wasm",
+      "example"
+    ]
+  },
   "https://github.com/mvoidex/UnicodeMath": {
     "id": "sublime-text-unicode-math",
     "description": "Sublime Text package for inserting Unicode math symbols and emoji.",
@@ -7762,6 +8443,38 @@
       "working group"
     ]
   },
+  "https://github.com/nodejs/abi-stable-node/": {
+    "id": "node-napi",
+    "description": "Node.js Node-API.",
+    "short_url": "",
+    "keywords": [
+      "node",
+      "napi"
+    ]
+  },
+  "https://github.com/nodejs/nan": {
+    "id": "node-nan",
+    "description": "Native Abstractions for Node.js.",
+    "short_url": "",
+    "keywords": [
+      "node",
+      "nan"
+    ]
+  },
+  "https://github.com/nodejs/node-gyp/issues/1102": {
+    "id": "msvs-fortran-issue",
+    "description": "GitHub issue on compilation issues with respect to MSVS and Fortran.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "native",
+      "addons",
+      "windows",
+      "fortran",
+      "node",
+      "gyp"
+    ]
+  },
   "https://github.com/nodejs/node/blob/0be1c5728173ea9ac42843058e26b6268568acf0/GOVERNANCE.md": {
     "id": "nodejs-governance",
     "description": "Node.js project governance.",
@@ -7779,6 +8492,28 @@
     "keywords": [
       "numpy",
       "governance"
+    ]
+  },
+  "https://github.com/paulmillr/es6-shim/issues/314": {
+    "id": "@bug:paulmillr:es6-shim:314",
+    "description": "GitHub issue on relative error being too big for Math.expm1 and Math.log1p.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "es6",
+      "shim",
+      "math"
+    ]
+  },
+  "https://github.com/paulmillr/es6-shim/issues/334": {
+    "id": "@bug:paulmiller:es6-shim:334",
+    "description": "GitHub issue on Math.asinh and Math.atanh being imprecise.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "es6",
+      "shim",
+      "math"
     ]
   },
   "https://github.com/pypa/pip": {
@@ -8030,6 +8765,28 @@
       "profile",
       "ricky",
       "reusser"
+    ]
+  },
+  "https://github.com/rse/browserify-derequire": {
+    "id": "browserify-derequire",
+    "description": "Browserify Plugin for Renaming require() Calls.",
+    "short_url": "",
+    "keywords": [
+      "browserify",
+      "plugin",
+      "derequire",
+      "require"
+    ]
+  },
+  "https://github.com/rwaldron/idiomatic.js/": {
+    "id": "idiomatic-js",
+    "description": "Principles of Writing Consistent, Idiomatic JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "javascript",
+      "style",
+      "guide",
+      "idiomatic"
     ]
   },
   "https://github.com/rwaldron/johnny-five": {
@@ -8300,6 +9057,56 @@
       "array"
     ]
   },
+  "https://github.com/stdlib-js/stdlib/commits/develop/GOVERNANCE.md": {
+    "id": "stdlib-git-commit-log-governance",
+    "description": "The stdlib git commit log for the governance file.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "git",
+      "commit",
+      "log",
+      "governance"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/commits/develop/PRIVACY": {
+    "id": "stdlib-git-commit-log-privacy-policy",
+    "description": "The stdlib git commit log for the privacy policy.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "git",
+      "commit",
+      "log",
+      "privacy",
+      "policy"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/commits/develop/docs/policies/TERMS_OF_SERVICE.md": {
+    "id": "stdlib-git-commit-log-terms-of-service",
+    "description": "The stdlib git commit log for the terms of service.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "git",
+      "commit",
+      "log",
+      "terms",
+      "service"
+    ]
+  },
+  "https://github.com/stdlib-js/stdlib/commits/develop/docs/policies/domains.md": {
+    "id": "stdlib-git-commit-log-domains",
+    "description": "The stdlib git commit log for the domains file.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "git",
+      "commit",
+      "log",
+      "domains"
+    ]
+  },
   "https://github.com/stdlib-js/stdlib/graphs/contributors": {
     "id": "stdlib-authors",
     "description": "List of stdlib contributors.",
@@ -8418,6 +9225,19 @@
       "minimalist"
     ]
   },
+  "https://github.com/tc39/ecma262/issues/635": {
+    "id": "ecma262-635",
+    "description": "GitHub issue on whether ECMAScript implementations be allowed to canonicalize NaN when writing into an array.",
+    "short_url": "",
+    "keywords": [
+      "ecma262",
+      "ecmascript",
+      "javascript",
+      "nan",
+      "canonicalize",
+      "array"
+    ]
+  },
   "https://github.com/tc39/ecmascript_simd/": {
     "id": "ecmascript-simd",
     "description": "GitHub repository for ECMAScript SIMD.",
@@ -8427,6 +9247,17 @@
       "simd",
       "specification",
       "spec"
+    ]
+  },
+  "https://github.com/tc39/test262/pull/269": {
+    "id": "@bug:tc39:test262:269",
+    "description": "GitHub pull request adding new tests for Math built-ins.",
+    "short_url": "",
+    "keywords": [
+      "tc39",
+      "test262",
+      "math",
+      "built-ins"
     ]
   },
   "https://github.com/todogroup/opencodeofconduct": {
@@ -8447,6 +9278,33 @@
       "umd",
       "modules",
       "javascript"
+    ]
+  },
+  "https://github.com/v8/v8/commit/33b5db090258c2a2dc825659c3ad109bd02110c1": {
+    "id": "@bug:chromium:78263005",
+    "description": "GitHub commit embedding trigonometric lookup table.",
+    "short_url": "",
+    "keywords": [
+      "chromium",
+      "v8",
+      "trigonometric",
+      "lookup",
+      "table"
+    ]
+  },
+  "https://github.com/wayou/vscode-todo-highlight": {
+    "id": "vscode-todo-highlight",
+    "description": "GitHub repository for vscode-todo-highlight, a Visual Studio Code extension for highlighting TODOs, FIXMEs, and any keywords, annotations.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "visual",
+      "studio",
+      "code",
+      "todo",
+      "fixme",
+      "highlight",
+      "extension"
     ]
   },
   "https://github.com/wooorm/rehype": {
@@ -8558,14 +9416,110 @@
       "cmake"
     ]
   },
+  "https://hacks.mozilla.org/2014/10/introducing-simd-js/": {
+    "id": "mozilla-simd",
+    "description": "Mozilla blog post introducing SIMD.js.",
+    "short_url": "",
+    "keywords": [
+      "mozilla",
+      "simd",
+      "single",
+      "instruction",
+      "multiple",
+      "data",
+      "computation"
+    ]
+  },
   "https://help.github.com/articles/about-two-factor-authentication/": {
     "id": "github-two-factor",
-    "description": "GitHub help on two-factor authentication",
+    "description": "GitHub help on two-factor authentication.",
     "short_url": "",
     "keywords": [
       "github",
       "two-factor",
       "authentication"
+    ]
+  },
+  "https://help.github.com/articles/configuring-a-remote-for-a-fork/": {
+    "id": "github-remote",
+    "description": "GitHub documentation on how to configure a remote for a fork.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "fork",
+      "remote",
+      "configuration",
+      "configure"
+    ]
+  },
+  "https://help.github.com/articles/creating-a-pull-request/": {
+    "id": "github-pull-request",
+    "description": "GitHub documentation on how to create a pull request.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "pull",
+      "request",
+      "create"
+    ]
+  },
+  "https://help.github.com/articles/fork-a-repo/": {
+    "id": "github-fork",
+    "description": "GitHub documentation on how to fork a repository.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "fork",
+      "repository"
+    ]
+  },
+  "https://help.github.com/articles/syncing-a-fork/": {
+    "id": "github-fork-sync",
+    "description": "GitHub documentation on how to sync a fork.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "fork",
+      "sync"
+    ]
+  },
+  "https://help.github.com/en/articles/about-github-actions": {
+    "id": "github-actions",
+    "description": "GitHub documentation on GitHub Actions.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "actions"
+    ]
+  },
+  "https://img.shields.io/badge/stability-experimental-orange.svg": {
+    "id": "stability-image",
+    "description": "Image indicating experimental stability.",
+    "short_url": "",
+    "keywords": [
+      "stability",
+      "experimental",
+      "image"
+    ]
+  },
+  "https://img.shields.io/codecov/c/github/stdlib-js/stdlib/develop.svg": {
+    "id": "coverage-image-develop",
+    "description": "Image indicating code coverage for the develop branch.",
+    "short_url": "",
+    "keywords": [
+      "coverage",
+      "image",
+      "develop",
+      "branch"
+    ]
+  },
+  "https://img.shields.io/github/v/tag/stdlib-js/stdlib.svg": {
+    "id": "tag-image",
+    "description": "Image indicating the latest tag.",
+    "short_url": "",
+    "keywords": [
+      "tag",
+      "image"
     ]
   },
   "https://img.shields.io/gitter/room/stdlib-js/stdlib.svg": {
@@ -8621,6 +9575,17 @@
       "lang"
     ]
   },
+  "https://lostechies.com/derickbailey/2014/02/20/how-i-work-around-the-require-problem-in-nodejs/": {
+    "id": "modifying-node-path-hack",
+    "description": "Blog pot on how to work around the `require` problem in Node.js.",
+    "short_url": "",
+    "keywords": [
+      "node",
+      "node.js",
+      "require",
+      "hack"
+    ]
+  },
   "https://lunrjs.com": {
     "id": "lunr-js",
     "description": "Lunr.js is a simple full-text search engine for the browser.",
@@ -8629,6 +9594,27 @@
       "lunr",
       "lunr.js",
       "search"
+    ]
+  },
+  "https://marketplace.visualstudio.com/items?itemName=eriklynd.json-tools#overview": {
+    "id": "vscode-json-tools",
+    "description": "Visual Studio Code extension for working with JSON.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "json",
+      "extension"
+    ]
+  },
+  "https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools": {
+    "id": "vscode-cpptools",
+    "description": "Visual Studio Code extension for working with C/C++.",
+    "short_url": "",
+    "keywords": [
+      "vscode",
+      "c",
+      "c++",
+      "extension"
     ]
   },
   "https://msdn.microsoft.com/en-us/library/gg465305.aspx": {
@@ -8722,6 +9708,20 @@
       "docs"
     ]
   },
+  "https://nodejs.org/api/fs.html#fs_fs_exists_path_callback": {
+    "id": "node-fs-exists",
+    "description": "Node.js documentation for the (deprecated) fs.exists() method.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "fs",
+      "filesystem",
+      "exists",
+      "method"
+    ]
+  },
   "https://nodejs.org/api/http.html": {
     "id": "http",
     "description": "Node.js documentation for the HTTP module.",
@@ -8759,6 +9759,43 @@
       "node-js",
       "node",
       "os"
+    ]
+  },
+  "https://nodejs.org/api/path.html#path_path_resolve_paths": {
+    "id": "node-core-path-resolve",
+    "description": "Node.js documentation for the `path.resolve()` function.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "path",
+      "resolve"
+    ]
+  },
+  "https://nodejs.org/api/process.html#process_event_uncaughtexception": {
+    "id": "uncaught-exception",
+    "description": "Node.js documentation for the `uncaughtException` event.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "process",
+      "uncaught",
+      "exception"
+    ]
+  },
+  "https://nodejs.org/api/process.html#process_process_hrtime_time": {
+    "id": "process-hrtime",
+    "description": "Node.js documentation for the `process.hrtime()` function.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "process",
+      "hrtime"
     ]
   },
   "https://nodejs.org/api/process.html#process_process_platform": {
@@ -8858,6 +9895,22 @@
       "js"
     ]
   },
+  "https://nodejs.org/en/blog/announcements/foundation-advances-growth/": {
+    "id": "node-fortune-500",
+    "description": "Node.js Foundation Advances Platform with More Than Three Million Users.",
+    "short_url": "",
+    "keywords": [
+      "node",
+      "node-js",
+      "node.js",
+      "nodejs",
+      "javascript",
+      "js",
+      "foundation",
+      "fortune",
+      "500"
+    ]
+  },
   "https://npmjs.com/package/@stdlib/stdlib": {
     "id": "npm-url",
     "description": "The main npm package for the stdlib standard library.",
@@ -8883,6 +9936,18 @@
     "keywords": [
       "numpy",
       "python"
+    ]
+  },
+  "https://nutritionquest.com/assessment/list-of-questionnaires-and-screeners/": {
+    "id": "block-ffq",
+    "description": "List of questionnaires and screeners.",
+    "short_url": "",
+    "keywords": [
+      "block",
+      "ffq",
+      "food",
+      "frequency",
+      "questionnaire"
     ]
   },
   "https://observablehq.com/": {
@@ -9185,6 +10250,33 @@
       "nodejs"
     ]
   },
+  "https://support.google.com/analytics/answer/181881?hl=en&ref_topic=2919631": {
+    "id": "google-analytics-opt-out-browser-add-on",
+    "description": "Google Analytics Opt-out Browser Add-on.",
+    "short_url": "",
+    "keywords": [
+      "google",
+      "analytics",
+      "opt-out",
+      "browser",
+      "add-on",
+      "addon",
+      "extension",
+      "plugin"
+    ]
+  },
+  "https://support.google.com/analytics/answer/2700409?hl=en&utm_id=ad": {
+    "id": "google-analytics-privacy-policy",
+    "description": "Google Analytics Privacy Policy Requirements.",
+    "short_url": "",
+    "keywords": [
+      "google",
+      "analytics",
+      "privacy",
+      "policy",
+      "requirements"
+    ]
+  },
   "https://tools.ietf.org/html/rfc1952": {
     "id": "gzip-rfc-1952",
     "description": "RFC format for the gzip file format.",
@@ -9195,6 +10287,17 @@
       "compress",
       "file",
       "format"
+    ]
+  },
+  "https://tools.ietf.org/html/rfc2181": {
+    "id": "rfc-2181",
+    "description": "An RFC clarifying the DNS specification.",
+    "short_url": "",
+    "keywords": [
+      "rfc",
+      "dns",
+      "specification",
+      "clarification"
     ]
   },
   "https://tools.ietf.org/html/rfc3986": {
@@ -9296,6 +10399,19 @@
       "distributable",
       "dist",
       "cdn"
+    ]
+  },
+  "https://web.viu.ca/pughg/phdThesis/phdThesis.pdf": {
+    "id": "@pugh:2004a",
+    "description": "PhD thesis \"An Analysis Of The Lanczos Gamma Approximation\" by Glendon Ralph Pugh.",
+    "short_url": "",
+    "keywords": [
+      "phd",
+      "thesis",
+      "lanczos",
+      "gamma",
+      "approximation",
+      "analysis"
     ]
   },
   "https://webassembly.org/": {
@@ -9534,6 +10650,21 @@
       "computation"
     ]
   },
+  "https://www.khronos.org/vulkan/": {
+    "id": "vulkan",
+    "description": "Vulkan is a cross-platform industry standard enabling developers to target a wide range of devices with the same graphics API.",
+    "short_url": "",
+    "keywords": [
+      "vulkan",
+      "khronos",
+      "graphics",
+      "api",
+      "cross",
+      "platform",
+      "industry",
+      "standard"
+    ]
+  },
   "https://www.math.utah.edu/software/c-with-fortran.html": {
     "id": "c-with-fortran",
     "description": "Document on how to call Fortran subroutines from C.",
@@ -9667,6 +10798,21 @@
       "language"
     ]
   },
+  "https://www.rfc-editor.org/rfc/rfc4180": {
+    "id": "rfc-4180",
+    "description": "The RFC describing the Common Format and MIME Type for Comma-Separated Values (CSV) Files.",
+    "short_url": "",
+    "keywords": [
+      "rfc",
+      "csv",
+      "comma",
+      "separated",
+      "values",
+      "format",
+      "mime",
+      "type"
+    ]
+  },
   "https://www.rust-lang.org/policies/code-of-conduct": {
     "id": "rust-code-of-conduct",
     "description": "The Rust Code of Conduct.",
@@ -9676,6 +10822,18 @@
       "code",
       "conduct",
       "coc"
+    ]
+  },
+  "https://www.sciencedirect.com/science/article/pii/S0169207016000121": {
+    "id": "@kim:2016a",
+    "description": "Kim, S. and Kim, H. 2016. A new metric of absolute percentage error for intermittent demand forecasts.",
+    "short_url": "",
+    "keywords": [
+      "journal",
+      "paper",
+      "forecasing",
+      "forecast",
+      "maape"
     ]
   },
   "https://www.scipy.org/scipylib/index.html": {
@@ -9706,6 +10864,27 @@
       "ts",
       "docs",
       "documentation"
+    ]
+  },
+  "https://www.unicode.org/Public/13.0.0/ucd/auxiliary/GraphemeBreakProperty.txt": {
+    "id": "unicode-grapheme-break-property",
+    "description": "Unicode grapheme break property.",
+    "short_url": "",
+    "keywords": [
+      "unicode",
+      "grapheme",
+      "break",
+      "property"
+    ]
+  },
+  "https://www.unicode.org/Public/13.0.0/ucd/emoji/emoji-data.txt": {
+    "id": "unicode-emoji-property",
+    "description": "Unicode emoji property.",
+    "short_url": "",
+    "keywords": [
+      "unicode",
+      "emoji",
+      "property"
     ]
   },
   "https://www.w3.org/Graphics/SVG/": {
