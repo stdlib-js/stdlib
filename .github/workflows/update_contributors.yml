@@ -62,22 +62,37 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
-      # Configure Git:
-      - name: 'Configure Git'
-        run: |
-          git config --local user.email "noreply@stdlib.io"
-          git config --local user.name "stdlib-bot"
-        timeout-minutes: 5
-
       # Run the makefile target for updating the contributors list:
       - name: 'Update contributors list'
+        id: update-contributors
         run: |
           make update-contributors
 
           if [[ -z "$(git status --porcelain)" ]]; then
             echo "No changes to commit."
-            exit 0
+            echo "changed=false" >> $GITHUB_OUTPUT
           else
-            git add CONTRIBUTORS && git commit -m "Update contributors"
-            git push origin develop
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
+
+      # Create a pull request with the updated contributors list:
+      - name: 'Create pull request'
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
+        if: steps.update-contributors.outputs.changed == 'true'
+        with:
+          title: 'Update list of contributors'
+          body: |
+            This PR
+
+            -   updates list of contributors
+
+          commit-message: 'Update list of contributors'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
+          labels: |
+            documentation
+            automated-pr
+          team-reviewers: |
+            stdlib-reviewers
+          branch: update-contributors
+          delete-branch: true
