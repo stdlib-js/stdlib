@@ -28,7 +28,6 @@
 extern "C" {
 #endif
 
-
 /**
 * Returns an integer corresponding to the unbiased exponent of a double-precision floating-point number.
 */

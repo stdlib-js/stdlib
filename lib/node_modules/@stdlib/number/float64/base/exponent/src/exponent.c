@@ -17,6 +17,8 @@
 */
 
 #include "stdlib/number/float64/base/exponent.h"
+#include "stdlib/constants/float64/high_word_exponent_mask.h"
+#include "stdlib/constants/float64/exponent_bias.h"
 #include "stdlib/number/float64/base/get_high_word.h"
 #include <stdint.h>
 
@@ -36,6 +38,9 @@ int32_t stdlib_base_float64_exponent( const double x ) {
 	uint32_t high;
 	stdlib_base_float64_get_high_word( x, &high );
 
-	// Shift the higher order word to the right by `20` bits (i.e., divide by `2^20`) and mask the lower `11` bits (i.e., `0x7FF`) to extract the exponent:
-	return (int32_t)( ( ( high >> 20 ) & 0x7FF ) - 1023 );
+	// Apply a mask to isolate only the exponent bits and then shift off all bits which are part of the fraction:
+	high = ( high & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_EXPONENT_MASK ) >> 20;
+
+	// Remove the bias and return:
+	return (int32_t)high - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS;
 }
