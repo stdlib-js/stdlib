@@ -39,5 +39,5 @@ int8_t stdlib_base_float64_signbit( const double x ) {
 	stdlib_base_float64_get_high_word( x, &high );
 
 	// Shift off all bits which are not the sign bit and check if the sign bit is on:
-	return (int8_t)( (high >> 31) & 1 );
+	return (int8_t)( high >> 31 );
 }

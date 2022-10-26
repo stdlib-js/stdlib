@@ -28,7 +28,6 @@
 extern "C" {
 #endif
 
-
 /**
 * Returns an integer indicating whether the sign bit for a double-precision floating-point number is on (`1`) or off (`0`).
 */
