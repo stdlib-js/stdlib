@@ -55,6 +55,9 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
 
+          # Refers to the development branch:
+          ref: 'develop'
+
           # Specify whether to download Git-LFS files:
           lfs: false
         timeout-minutes: 10
