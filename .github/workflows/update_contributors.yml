@@ -55,9 +55,6 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
 
-          # Limit clone depth to the most recent commit:
-          fetch-depth: 1
-
           # Specify whether to download Git-LFS files:
           lfs: false
         timeout-minutes: 10
