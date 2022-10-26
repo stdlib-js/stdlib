@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# 1/4 times π
+# FOURTH_PI
 
 > One fourth times the mathematical constant [π][pi].
 
@@ -61,6 +61,60 @@ console.log( FOURTH_PI );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float64/fourth_pi.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT64_FOURTH_PI
+
+Macro for one fourth times the mathematical constant [π][pi].
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
