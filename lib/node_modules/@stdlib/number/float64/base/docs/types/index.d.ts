@@ -249,18 +249,22 @@ interface Namespace {
 	/**
 	* Returns a normal number `y` and exponent `exp` satisfying \\(x = y \cdot 2^\mathrm{exp}\\).
 	*
-	* The first element of the returned array corresponds to `y` and the second to `exp`.
+	* ## Notes
+	*
+	* -   The first element of the returned array corresponds to `y` and the second to `exp`.
 	*
 	* @param x - input value
 	* @returns output array
 	*
 	* @example
 	* var pow = require( `@stdlib/math/base/special/pow` );
+	*
 	* var out = ns.normalize( 3.14e-319 );
 	* // returns <Float64Array>[ 1.4141234400356668e-303, -52 ]
 	*
 	* var y = out[ 0 ];
 	* var exponent = out[ 1 ];
+	*
 	* var bool = ( y*pow(2.0, exponent) === 3.14e-319 );
 	* // returns true
 	*/
