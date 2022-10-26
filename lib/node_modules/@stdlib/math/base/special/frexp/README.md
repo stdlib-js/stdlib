@@ -30,7 +30,7 @@ limitations under the License.
 var frexp = require( '@stdlib/math/base/special/frexp' );
 ```
 
-#### frexp( \[out,] x )
+#### frexp( x )
 
 Splits a [double-precision floating-point number][ieee754] into a normalized fraction and an integer power of two.
 
@@ -55,20 +55,6 @@ var bool = ( x === frac * pow(2.0, exp) );
 // returns true
 ```
 
-To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
-
-```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-
-var out = new Float64Array( 2 );
-
-var y = frexp( out, 4.0 );
-// returns <Float64Array>[ 0.5, 3 ]
-
-var bool = ( y === out );
-// returns true
-```
-
 If provided positive or negative zero, `NaN`, or positive or negative `infinity`, the function returns a two-element `array` containing the input value and an exponent equal to `0`.
 
 ```javascript
@@ -89,6 +75,22 @@ out = frexp( -Infinity );
 ```
 
 For all other numeric input values, the [absolute value][@stdlib/math/base/special/abs] of the normalized fraction resides on the interval `[0.5,1)`.
+
+#### frexp.assign( x, out, stride, offset )
+
+Splits a [double-precision floating-point number][ieee754] into a normalized fraction and an integer power of two and assigns results to a provided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var out = new Float64Array( 2 );
+
+var y = frexp.assign( 4.0, out, 1, 0 );
+// returns <Float64Array>[ 0.5, 3 ]
+
+var bool = ( y === out );
+// returns true
+```
 
 </section>
 

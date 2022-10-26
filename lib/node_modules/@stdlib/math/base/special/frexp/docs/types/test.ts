@@ -19,7 +19,6 @@
 /// <reference types="@stdlib/types"/>
 
 import frexp = require( './index' );
-import { Collection } from '@stdlib/types/object';
 
 
 // TESTS //
@@ -27,18 +26,9 @@ import { Collection } from '@stdlib/types/object';
 // The function returns a collection...
 {
 	frexp( 4.0 ); // $ExpectType Collection
-	frexp( [], 4.0 ); // $ExpectType Collection
 }
 
-// The compiler throws an error if the function is provided an output array which is not a collection...
-{
-	frexp( 2, 4.0 ); // $ExpectError
-	frexp( false, 4.0 ); // $ExpectError
-	frexp( true, 4.0 ); // $ExpectError
-	frexp( {}, 4.0 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided a last argument other than a number...
+// The compiler throws an error if the function is provided an argument which is not a number...
 {
 	frexp( true ); // $ExpectError
 	frexp( false ); // $ExpectError
@@ -48,19 +38,76 @@ import { Collection } from '@stdlib/types/object';
 	frexp( [] ); // $ExpectError
 	frexp( {} ); // $ExpectError
 	frexp( ( x: number ): number => x ); // $ExpectError
-
-	const out: Collection = [];
-	frexp( out, true ); // $ExpectError
-	frexp( out, false ); // $ExpectError
-	frexp( out, null ); // $ExpectError
-	frexp( out undefined ); // $ExpectError
-	frexp( out, '5' ); // $ExpectError
-	frexp( out, [] ); // $ExpectError
-	frexp( out, {} ); // $ExpectError
-	frexp( out, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	frexp(); // $ExpectError
+	frexp( 1.0, 2.0 ); // $ExpectError
+}
+
+// Attached to the main export is an `assign` method which returns an array-like object containing numbers...
+{
+	const out = [ 0.0, 0 ];
+
+	frexp.assign( 3.14e-319, out, 1, 0 ); // $ExpectType Collection
+}
+
+// The compiler throws an error if the `assign` method is provided a first argument which is not a number...
+{
+	const out = [ 0.0, 0 ];
+
+	frexp.assign( true, out, 1, 0 ); // $ExpectError
+	frexp.assign( false, out, 1, 0 ); // $ExpectError
+	frexp.assign( '5', out, 1, 0 ); // $ExpectError
+	frexp.assign( null, out, 1, 0 ); // $ExpectError
+	frexp.assign( [], out, 1, 0 ); // $ExpectError
+	frexp.assign( {}, out, 1, 0 ); // $ExpectError
+	frexp.assign( ( x: number ): number => x, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a second argument which is not an array-like object...
+{
+	frexp.assign( 1.0, 1, 1, 0 ); // $ExpectError
+	frexp.assign( 1.0, true, 1, 0 ); // $ExpectError
+	frexp.assign( 1.0, false, 1, 0 ); // $ExpectError
+	frexp.assign( 1.0, null, 1, 0 ); // $ExpectError
+	frexp.assign( 1.0, {}, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a third argument which is not a number...
+{
+	const out = [ 0.0, 0.0 ];
+
+	frexp.assign( 1.0, out, '5', 0 ); // $ExpectError
+	frexp.assign( 1.0, out, true, 0 ); // $ExpectError
+	frexp.assign( 1.0, out, false, 0 ); // $ExpectError
+	frexp.assign( 1.0, out, null, 0 ); // $ExpectError
+	frexp.assign( 1.0, out, [], 0 ); // $ExpectError
+	frexp.assign( 1.0, out, {}, 0 ); // $ExpectError
+	frexp.assign( 1.0, out, ( x: number ): number => x, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a fourth argument which is not a number...
+{
+	const out = [ 0.0, 0.0 ];
+
+	frexp.assign( 1.0, out, 1, '5' ); // $ExpectError
+	frexp.assign( 1.0, out, 1, true ); // $ExpectError
+	frexp.assign( 1.0, out, 1, false ); // $ExpectError
+	frexp.assign( 1.0, out, 1, null ); // $ExpectError
+	frexp.assign( 1.0, out, 1, [] ); // $ExpectError
+	frexp.assign( 1.0, out, 1, {} ); // $ExpectError
+	frexp.assign( 1.0, out, 1, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
+{
+	const out = [ 0.0, 0.0 ];
+
+	frexp.assign(); // $ExpectError
+	frexp.assign( 1.0 ); // $ExpectError
+	frexp.assign( 1.0, out ); // $ExpectError
+	frexp.assign( 1.0, out, 1 ); // $ExpectError
+	frexp.assign( 1.0, out, 1, 0, 1 ); // $ExpectError
 }
