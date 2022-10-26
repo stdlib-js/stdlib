@@ -64,8 +64,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	status = napi_get_value_double( env, argv[ 0 ], &value );
 	assert( status == napi_ok );
 
-	int32_t out;
-	stdlib_base_float64_exponent( value, &out );
+	int32_t out = stdlib_base_float64_exponent( value );
 
 	napi_value v;
 	status = napi_create_int32( env, out, &v );

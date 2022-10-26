@@ -21,22 +21,21 @@
 #include <stdint.h>
 
 /**
-* Extracts the integer corresponding to the unbiased exponent of a double-precision floating-point number.
+* Returns the integer corresponding to the unbiased exponent of a double-precision floating-point number.
 *
 * @param x       input value
-* @param out     destination for unbiased exponent
+* @returns       unbiased exponent
 *
 * @example
 * #include <stdint.h>
 *
-* int32_t out;
-* stdlib_base_float64_exponent( 4.0, &out );
+* int32_t out = stdlib_base_float64_exponent( 4.0 );
 */
-void stdlib_base_float64_exponent( const double x, int32_t *out ) {
+int32_t stdlib_base_float64_exponent( const double x ) {
 	// Extract from the input value a higher order word (unsigned 32-bit integer) which contains the exponent:
 	uint32_t high;
 	stdlib_base_float64_get_high_word( x, &high );
 
 	// Shift the higher order word to the right by `20` bits (i.e., divide by `2^20`) and mask the lower `11` bits (i.e., `0x7FF`) to extract the exponent:
-	*out = (int32_t)( ( ( high >> 20 ) & 0x7FF ) - 1023 );
+	return (int32_t)( ( ( high >> 20 ) & 0x7FF ) - 1023 );
 }

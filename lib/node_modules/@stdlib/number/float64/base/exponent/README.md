@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Exponent
+# exponent
 
 > Return an integer corresponding to the unbiased exponent of a [double-precision floating-point number][ieee754].
 
@@ -62,8 +62,8 @@ exp = exponent( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var randu = require( '@stdlib/random/base/uniform' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var exponent = require( '@stdlib/number/float64/base/exponent' );
 
@@ -75,8 +75,8 @@ var i;
 
 // Generate random numbers and extract their exponents...
 for ( i = 0; i < 100; i++ ) {
-    frac = randu() * 10.0;
-    exp = round( randu()*646.0 ) - 323;
+    frac = randu( 0.0, 10.0 );
+    exp = discreteUniform( -323, 323 );
     x = frac * pow( 10.0, exp );
     e = exponent( x );
     console.log( 'x: %d. unbiased exponent: %d.', x, e );
@@ -113,24 +113,22 @@ for ( i = 0; i < 100; i++ ) {
 #include "stdlib/number/float64/base/exponent.h"
 ```
 
-#### stdlib_base_float64_exponent( x, \*out )
+#### stdlib_base_float64_exponent( x )
 
-Extracts the integer corresponding to the unbiased exponent of a double-precision floating-point number.
+Returns an integer corresponding to the unbiased exponent of a [double-precision floating-point number][ieee754].
 
 ```c
 #include <stdint.h>
 
-int32_t out;
-stdlib_base_float64_exponent( 3.14, &out );
+int32_t out = stdlib_base_float64_exponent( 3.14 );
 ```
 
 The function accepts the following arguments:
 
 -   **x**: `[in] double` input value.
--   **out**: `[out] int32_t*` destination for unbiased exponent.
 
 ```c
-void stdlib_base_float64_exponent( const double x, int32_t *out );
+int32_t stdlib_base_float64_exponent( const double x );
 ```
 
 </section>
@@ -155,15 +153,16 @@ void stdlib_base_float64_exponent( const double x, int32_t *out );
 #include "stdlib/number/float64/base/exponent.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
-    double x[] = { 4.0, 0.0, -0.0, 1.0, -1.0, 3.14, -3.14, 1.0e308, -1.0e308, 1.0e-308, -1.0e-308, 1.0/0.0, -1.0/0.0, 0.0/0.0 };
+    double x[] = { 4.0, 0.0, -0.0, 1.0, -1.0, 3.14, -3.14, 1.0e308, -1.0e308, 1.0/0.0, -1.0/0.0, 0.0/0.0 };
 
     int32_t out;
     int i;
-    for ( i = 0; i < 14; i++ ) {
-        stdlib_base_float64_exponent( x[ i ], &out );
-        printf( "%lf => out: %u\n", x[ i ], out );
+    for ( i = 0; i < 12; i++ ) {
+        out = stdlib_base_float64_exponent( x[ i ] );
+        printf( "%lf => out: %" PRId32 "\n", x[ i ], out );
     }
 }
 ```

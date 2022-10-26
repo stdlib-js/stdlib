@@ -102,9 +102,8 @@ double benchmark() {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( rand_double()*200.0 ) - 100.0;
-		x = pow( 10.0, x );
-		stdlib_base_float64_exponent( x, &out );
+		x = ( rand_double()*1.0e7 ) - 5.0e6;
+		out = stdlib_base_float64_exponent( x );
 		if ( out == 1024 ) {
 			printf( "unexpected result\n" );
 			break;

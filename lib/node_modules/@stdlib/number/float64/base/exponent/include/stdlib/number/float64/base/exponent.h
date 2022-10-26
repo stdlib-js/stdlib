@@ -30,9 +30,9 @@ extern "C" {
 
 
 /**
-* Extracts the integer corresponding to the unbiased exponent of a double-precision floating-point number.
+* Returns an integer corresponding to the unbiased exponent of a double-precision floating-point number.
 */
-void stdlib_base_float64_exponent( const double x, int32_t *out );
+int32_t stdlib_base_float64_exponent( const double x );
 
 #ifdef __cplusplus
 }
