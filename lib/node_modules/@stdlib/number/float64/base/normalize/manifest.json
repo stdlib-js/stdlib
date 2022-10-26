@@ -25,14 +25,19 @@
 	"confs": [
 		{
 			"src": [
-				"./src/normalize.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
 			],
 			"libraries": [],
 			"libpath": [],
-			"dependencies": []
+			"dependencies": [
+        "@stdlib/constants/float64/smallest-normal",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs"
+      ]
 		}
 	]
 }

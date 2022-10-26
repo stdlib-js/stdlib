@@ -17,9 +17,14 @@
 */
 
 #include "stdlib/number/float64/base/normalize.h"
+#include "stdlib/constants/float64/smallest_normal.h"
+#include "stdlib/math/base/assert/is_infinite.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/special/abs.h"
 #include <stdint.h>
-#include <stdlib.h>
-#include <math.h>
+
+// (1<<52)
+static const double SCALAR = 4503599627370496.0;
 
 /**
 * Extracts a normal number y and exponent exp satisfying x = y * 2^exp.
@@ -39,16 +44,12 @@
 * stdlib_base_float64_normalize( x, &y, &exp );
 */
 void stdlib_base_float64_normalize( const double x, double *y, int32_t *exp ) {
-
-	double smallest = 2.2250738585072014e-308; // 2^-1022
-	double SCALAR = 4503599627370496;
-
-	if ( x != x || x == INFINITY || x == -INFINITY ) {
+	if ( stdlib_base_is_nan( x ) || stdlib_base_is_infinite( x ) ) {
 		*y = x;
 		*exp = 0;
 		return;
 	}
-	if ( x != 0 || abs( x ) < smallest ) {
+	if ( x != 0 && stdlib_base_abs( x ) < STDLIB_CONSTANT_FLOAT64_SMALLEST_NORMAL ) {
 		*y = x * SCALAR;
 		*exp = -52;
 		return;

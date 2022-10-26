@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Normalize
+# normalize
 
 > Return a normal number `y` and exponent `exp` satisfying `x = y * 2^exp`.
 
@@ -47,7 +47,7 @@ var bool = ( y*pow(2.0, exp) === 3.14e-319 );
 // returns true
 ```
 
-The function expects a finite, non-zero `numeric` value `x`. If `x == 0`,
+The function expects a finite, non-zero numeric value `x`. If `x == 0`,
 
 ```javascript
 var out = normalize( 0.0 );
@@ -97,8 +97,8 @@ var bool = ( v === out );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var randu = require( '@stdlib/random/base/uniform' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var normalize = require( '@stdlib/number/float64/base/normalize' );
 
@@ -111,10 +111,10 @@ var i;
 // Generate denormalized numbers and then normalize them...
 for ( i = 0; i < 100; i++ ) {
     // Generate a random fraction:
-    frac = randu() * 10.0;
+    frac = randu( 0.0, 10.0 );
 
     // Generate an exponent on the interval (-308,-324):
-    exp = -309 - round( randu()*14.0 );
+    exp = discreteUniform( -323, -309 );
 
     // Create a subnormal number (~2.23e-308, ~4.94e-324):
     x = frac * pow( 10.0, exp );
@@ -172,7 +172,7 @@ stdlib_base_float64_normalize( 3.14, &y, &exp );
 The function accepts the following arguments:
 
 -   **x**: `[in] double` input value.
--   **y**: `[out] double*` destination for output value.
+-   **y**: `[out] double*` destination for normal number.
 -   **exp**: `[out] int32_t*` destination for exponent.
 
 ```c
@@ -201,16 +201,17 @@ void stdlib_base_float64_normalize( const double x, double *y, int32_t *exp );
 #include "stdlib/number/float64/base/normalize.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
-    double x[] = { 1.0, 3.14, 0.0, -0.0, 3.14e-308, 3.14e+308, 1.0/0.0, 0.0/0.0 };
+    double x[] = { 1.0, 3.14, 0.0, -0.0, 3.14e-308, 3.14e308, 1.0/0.0, 0.0/0.0 };
     int32_t exp;
     double y;
     int i;
 
     for ( i = 0; i < 8; i++ ) {
         stdlib_base_float64_normalize( x[ i ], &y, &exp );
-        printf( "%lf => y: %f, exp: %f\n", x[ i ], y, exp );
+        printf( "%lf => y: %lf, exp: %" PRId32 "\n", x[ i ], y, exp );
     }
 }
 ```

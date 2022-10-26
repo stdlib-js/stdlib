@@ -19,15 +19,16 @@
 #include "stdlib/number/float64/base/normalize.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
-	double x[] = { 1.0, 3.14, 0.0, -0.0, 3.14e-308, 3.14e+308, 1.0/0.0, 0.0/0.0 };
+	double x[] = { 1.0, 3.14, 0.0, -0.0, 3.14e-308, 3.14e308, 1.0/0.0, 0.0/0.0 };
 	int32_t exp;
 	double y;
 	int i;
 
 	for ( i = 0; i < 8; i++ ) {
 		stdlib_base_float64_normalize( x[ i ], &y, &exp );
-		printf( "%lf => y: %f, exp: %f\n", x[ i ], y, exp );
+		printf( "%lf => y: %lf, exp: %" PRId32 "\n", x[ i ], y, exp );
 	}
 }

@@ -104,7 +104,7 @@ double benchmark() {
 
 	elapsed = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( rand_double()*200.0 ) - 100.0;
+		x = ( rand_double()*1.0e7 ) - 5.0e6;
 		stdlib_base_float64_normalize( x, &y, &exp );
 		if ( y != y || exp != exp ) {
 			printf( "unexpected results\n" );
