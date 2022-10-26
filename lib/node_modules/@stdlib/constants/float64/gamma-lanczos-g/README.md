@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# G for Lanczos Approximation
+# GAMMA_LANCZOS_G
 
 > Arbitrary constant `g` to be used in Lanczos approximation functions.
 
@@ -33,15 +33,15 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var FLOAT64_GAMMA_LANCZOS_G = require( '@stdlib/constants/float64/gamma-lanczos-g' );
+var GAMMA_LANCZOS_G = require( '@stdlib/constants/float64/gamma-lanczos-g' );
 ```
 
-#### FLOAT64_GAMMA_LANCZOS_G
+#### GAMMA_LANCZOS_G
 
 Arbitrary constant `g` to be used in [Lanczos approximation][lanczos-approximation] functions.
 
 ```javascript
-var bool = ( FLOAT64_GAMMA_LANCZOS_G === 10.900511 );
+var bool = ( GAMMA_LANCZOS_G === 10.900511 );
 // returns true
 ```
 
@@ -56,15 +56,69 @@ var bool = ( FLOAT64_GAMMA_LANCZOS_G === 10.900511 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var FLOAT64_GAMMA_LANCZOS_G = require( '@stdlib/constants/float64/gamma-lanczos-g' );
+var GAMMA_LANCZOS_G = require( '@stdlib/constants/float64/gamma-lanczos-g' );
 
-console.log( FLOAT64_GAMMA_LANCZOS_G );
+console.log( GAMMA_LANCZOS_G );
 // => 10.900511
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float64/gamma_lanczos_g.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT64_GAMMA_LANCZOS_G
+
+Macro for the arbitrary constant `g` to be used in [Lanczos approximation][lanczos-approximation] functions.
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 * * *
 
