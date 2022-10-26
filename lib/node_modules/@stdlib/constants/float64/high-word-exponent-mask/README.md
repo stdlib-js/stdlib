@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Exponent Mask
+# FLOAT64_HIGH_WORD_EXPONENT_MASK
 
 > High word mask for the exponent of a [double-precision floating-point number][ieee754].
 
@@ -34,7 +34,7 @@ var FLOAT64_HIGH_WORD_EXPONENT_MASK = require( '@stdlib/constants/float64/high-w
 
 #### FLOAT64_HIGH_WORD_EXPONENT_MASK
 
-High word mask for the exponent of a [double-precision floating-point number][ieee754]. 
+High word mask for the exponent of a [double-precision floating-point number][ieee754].
 
 <!-- eslint-disable id-length -->
 
@@ -71,21 +71,75 @@ var getHighWord = require( '@stdlib/number/float64/base/get-high-word' );
 var FLOAT64_HIGH_WORD_EXPONENT_MASK = require( '@stdlib/constants/float64/high-word-exponent-mask' );
 
 var x = 11.5;
-var hi = getHighWord( x ); // => 0 10000000010 01110000000000000000
+var hi = getHighWord( x ); // 0 10000000010 01110000000000000000
 // returns 1076297728
 
 // Mask off all bits except for the exponent bits:
-var out = hi & FLOAT64_HIGH_WORD_EXPONENT_MASK; // => 0 10000000010 00000000000000000000
+var out = hi & FLOAT64_HIGH_WORD_EXPONENT_MASK; // 0 10000000010 00000000000000000000
 // returns 1075838976
 
 // Mask on the exponent bits and leave other bits unchanged:
-out = hi | FLOAT64_HIGH_WORD_EXPONENT_MASK; // => 0 11111111111 01110000000000000000
+out = hi | FLOAT64_HIGH_WORD_EXPONENT_MASK; // 0 11111111111 01110000000000000000
 // returns 2146893824
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float64/high_word_exponent_mask.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT64_HIGH_WORD_EXPONENT_MASK
+
+Macro for the high word mask for the exponent of a [double-precision floating-point number][ieee754].
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
