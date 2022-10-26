@@ -249,7 +249,7 @@ var fcns = special;
 -   <span class="signature">[`fibonacci( n )`][@stdlib/math/base/special/fibonacci]</span><span class="delimiter">: </span><span class="description">compute the nth Fibonacci number.</span>
 -   <span class="signature">[`flipsign( x, y )`][@stdlib/math/base/special/flipsign]</span><span class="delimiter">: </span><span class="description">return a double-precision floating-point number with the magnitude of `x` and the sign of `x*y`.</span>
 -   <span class="signature">[`flipsignf( x, y )`][@stdlib/math/base/special/flipsignf]</span><span class="delimiter">: </span><span class="description">return a single-precision floating-point number with the magnitude of `x` and the sign of `x*y`.</span>
--   <span class="signature">[`fresnel( [out,] x )`][@stdlib/math/base/special/fresnel]</span><span class="delimiter">: </span><span class="description">compute the Fresnel integrals S(x) and C(x).</span>
+-   <span class="signature">[`fresnel( x )`][@stdlib/math/base/special/fresnel]</span><span class="delimiter">: </span><span class="description">compute the Fresnel integrals S(x) and C(x).</span>
 -   <span class="signature">[`fresnelc( x )`][@stdlib/math/base/special/fresnelc]</span><span class="delimiter">: </span><span class="description">compute the Fresnel integral C(x).</span>
 -   <span class="signature">[`fresnels( x )`][@stdlib/math/base/special/fresnels]</span><span class="delimiter">: </span><span class="description">compute the Fresnel integral S(x).</span>
 -   <span class="signature">[`frexp( x )`][@stdlib/math/base/special/frexp]</span><span class="delimiter">: </span><span class="description">split a double-precision floating-point number into a normalized fraction and an integer power of two.</span>
