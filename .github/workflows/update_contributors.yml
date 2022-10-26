@@ -58,6 +58,9 @@ jobs:
           # Refers to the development branch:
           ref: 'develop'
 
+          # Fetch entire history:
+          fetch-depth: 0
+
           # Specify whether to download Git-LFS files:
           lfs: false
         timeout-minutes: 10
@@ -85,7 +88,7 @@ jobs:
           body: |
             This PR
 
-            -   updates list of contributors
+            -   updates the list of contributors
 
           commit-message: 'Update list of contributors'
           committer: 'stdlib-bot <noreply@stdlib.io>'
