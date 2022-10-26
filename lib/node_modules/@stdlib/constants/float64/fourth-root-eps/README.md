@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Fourth Root of Epsilon
+# FOURTH_ROOT_EPS
 
 > [Fourth root][nth-root] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
 
@@ -27,15 +27,15 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var FLOAT64_FOURTH_ROOT_EPS = require( '@stdlib/constants/float64/fourth-root-eps' );
+var FOURTH_ROOT_EPS = require( '@stdlib/constants/float64/fourth-root-eps' );
 ```
 
-#### FLOAT64_FOURTH_ROOT_EPS
+#### FOURTH_ROOT_EPS
 
 [Fourth root][nth-root] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
 
 ```javascript
-var bool = ( FLOAT64_FOURTH_ROOT_EPS === 0.0001220703125 );
+var bool = ( FOURTH_ROOT_EPS === 0.0001220703125 );
 // returns true
 ```
 
@@ -50,15 +50,69 @@ var bool = ( FLOAT64_FOURTH_ROOT_EPS === 0.0001220703125 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var FLOAT64_FOURTH_ROOT_EPS = require( '@stdlib/constants/float64/fourth-root-eps' );
+var FOURTH_ROOT_EPS = require( '@stdlib/constants/float64/fourth-root-eps' );
 
-var out = FLOAT64_FOURTH_ROOT_EPS;
+var out = FOURTH_ROOT_EPS;
 // returns 0.0001220703125
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float64/fourth_root_eps.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT64_FOURTH_ROOT_EPS
+
+Macro for the [fourth root][nth-root] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
