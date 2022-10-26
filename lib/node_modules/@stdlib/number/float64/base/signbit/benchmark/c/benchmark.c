@@ -110,7 +110,7 @@ double benchmark() {
 		}
 	}
 	elapsed = tic() - t;
-	if ( out != 0 && out !== 1 ) {
+	if ( out != 0 && out != 1 ) {
 		printf( "unexpected result\n" );
 	}
 	return elapsed;
