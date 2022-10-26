@@ -63,11 +63,12 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+        timeout-minutes: 10
 
       # Print the contributor list:
       - name: 'Print contributor list'
         run: |
-          make list-contributors
+          git shortlog -sne
 
       # Run the makefile target for updating the contributors list:
       - name: 'Update contributors list'
