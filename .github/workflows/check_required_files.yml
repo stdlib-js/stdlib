@@ -31,6 +31,9 @@ jobs:
   # Define a job for checking that pull requests contain the required files...
   check_required_files:
 
+    # Define a display name:
+    name: 'Check Required Files'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 

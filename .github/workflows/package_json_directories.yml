@@ -74,7 +74,7 @@ jobs:
       # Update `directories` fields in `package.json` files:
       - name: 'Update `directories` fields in `package.json` files'
         run: |
-          node lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories
+          node lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories lib/node_modules/@stdlib
 
       # Create a pull request with the updated `package.json` files:
       - name: 'Create pull request'

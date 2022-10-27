@@ -30,6 +30,7 @@ jobs:
 
   # Define a job for processing commit message metadata...
   process:
+
     # Define a display name:
     name: 'Process Metadata'
 

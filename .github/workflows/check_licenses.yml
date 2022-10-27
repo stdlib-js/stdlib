@@ -28,6 +28,9 @@ jobs:
   # Define a job for checking that pull requests do not introduce dependencies which fail license requirements...
   check_licenses:
 
+    # Define a display name:
+    name: 'Check Licenses'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 

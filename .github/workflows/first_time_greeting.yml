@@ -28,6 +28,9 @@ jobs:
   # Define a job for commenting on first-time contributions...
   greeting:
 
+    # Define a display name:
+    name: 'Greet First-Time Contributors'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
