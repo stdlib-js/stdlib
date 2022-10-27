@@ -28,7 +28,12 @@ on:
 
 # Workflow jobs:
 jobs:
+
   scaffold:
+
+    # Define a display name:
+    name: 'Scaffold Package via Push to Scaffolding Branch'
+
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
 

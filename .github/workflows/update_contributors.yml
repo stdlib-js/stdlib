@@ -65,11 +65,6 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
-      # Print the contributor list:
-      - name: 'Print contributor list'
-        run: |
-          git shortlog -sne
-
       # Run the makefile target for updating the contributors list:
       - name: 'Update contributors list'
         id: update-contributors

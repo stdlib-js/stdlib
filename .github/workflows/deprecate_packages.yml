@@ -46,7 +46,7 @@ jobs:
   deprecate:
 
     # Define a display name:
-    name: 'Deprecate'
+    name: 'Deprecate Packages'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
