@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Natural Logarithm of Square Root 2π
+# LN_SQRT_TWO_PI
 
 > [Natural logarithm][@stdlib/math/base/special/ln] of the [square root][@stdlib/math/base/special/sqrt] of [2π][@stdlib/constants/float64/pi].
 
@@ -61,6 +61,60 @@ console.log( LN_SQRT_TWO_PI );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float64/ln_sqrt_two_pi.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT64_LN_SQRT_TWO_PI
+
+Macro for the [natural logarithm][@stdlib/math/base/special/ln] of the [square root][@stdlib/math/base/special/sqrt] of [2π][@stdlib/constants/float64/pi].
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
