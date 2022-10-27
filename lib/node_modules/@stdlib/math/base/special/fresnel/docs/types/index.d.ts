@@ -23,24 +23,59 @@
 import { Collection } from '@stdlib/types/object';
 
 /**
-* Computes the Fresnel integrals S(x) and C(x).
-*
-* @param out - destination array
-* @param x - input value
-* @returns S(x) and C(x)
-*
-* @example
-* var Float64Array = require( `@stdlib/array/float64` );
-*
-* var out = new Float64Array( 2 );
-*
-* var v = fresnel( out, 0.0 );
-* // return <Float64Array>[ ~0.0, ~0.0 ]
-*
-* var bool = ( v === out );
-* // returns true
-*/
-declare function fresnel( out: Collection, x: number ): Collection;
+ * Interface describing `fresnel`.
+ */
+interface Fresnel {
+	/**
+	* Computes the Fresnel integrals S(x) and C(x).
+	*
+	* @param x - input value
+	* @returns S(x) and C(x)
+	*
+	* @example
+	* var v = fresnel( 0.0 );
+	* // returns [ 0.0, 0.0 ]
+	*
+	* @example
+	* var v = fresnel( 1.0 );
+	* // returns [ ~0.438, ~0.780 ]
+	*
+	* @example
+	* var v = fresnel( Infinity );
+	* // returns [ ~0.5, ~0.5 ]
+	*
+	* @example
+	* var v = fresnel( -Infinity );
+	* // returns [ ~-0.5, ~-0.5 ]
+	*
+	* @example
+	* var v = fresnel( NaN );
+	* // returns [ NaN, NaN ]
+	*/
+	( x: number ): Array<number>;
+
+	/**
+	* Computes the Fresnel integrals S(x) and C(x) and assigns results to a provided output array.
+	*
+	* @param x - input value
+	* @param out - output array
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns output array
+	*
+	* @example
+	* var Float64Array = require( `@stdlib/array/float64` );
+	*
+	* var out = new Float64Array( 2 );
+	*
+	* var v = fresnel.assign( 0.0, out, 1, 0 );
+	* // return <Float64Array>[ ~0.0, ~0.0 ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+}
 
 /**
 * Computes the Fresnel integrals S(x) and C(x).
@@ -68,7 +103,7 @@ declare function fresnel( out: Collection, x: number ): Collection;
 * var v = fresnel( NaN );
 * // returns [ NaN, NaN ]
 */
-declare function fresnel( x: number ): Collection;
+declare var fresnel: Fresnel;
 
 
 // EXPORTS //

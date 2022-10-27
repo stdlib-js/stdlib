@@ -35,7 +35,7 @@ on:
 jobs:
 
   # Define a job for running make commands...
-  update:
+  run-make:
 
     # Define a display name:
     name: 'Run make command'

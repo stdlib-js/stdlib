@@ -117,7 +117,7 @@ jobs:
           files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
             echo "Linting package.json files that have changed..."
-            echo "${files}" | "${lint_package_json}" --split=" "
+            printf "${files}" | "${lint_package_json}" --split=" "
           else
             echo "No package.json files to lint."
           fi
@@ -134,7 +134,7 @@ jobs:
 
           files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep 'repl\.txt$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
-            echo "${files}" | "${lint_repl_help}"
+            printf "${files}" | "${lint_repl_help}" --split=" "
           fi
 
       # Lint JavaScript files:
