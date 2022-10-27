@@ -21,10 +21,14 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
+
+
 /**
 * Interface describing the `base` namespace.
 */
-interface Namespace {}
+interface Namespace {
+
+}
 
 /**
 * Base (i.e., lower-level) time utilities.

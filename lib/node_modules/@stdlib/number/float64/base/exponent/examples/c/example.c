@@ -19,14 +19,15 @@
 #include "stdlib/number/float64/base/exponent.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
-	double x[] = { 4.0, 0.0, -0.0, 1.0, -1.0, 3.14, -3.14, 1.0e308, -1.0e308, 1.0e-308, -1.0e-308, 1.0/0.0, -1.0/0.0, 0.0/0.0 };
+	double x[] = { 4.0, 0.0, -0.0, 1.0, -1.0, 3.14, -3.14, 1.0e308, -1.0e308, 1.0/0.0, -1.0/0.0, 0.0/0.0 };
 
 	int32_t out;
 	int i;
-	for ( i = 0; i < 14; i++ ) {
-		stdlib_base_float64_exponent( x[ i ], &out );
-		printf( "%lf => out: %u\n", x[ i ], out );
+	for ( i = 0; i < 12; i++ ) {
+		out = stdlib_base_float64_exponent( x[ i ] );
+		printf( "%lf => out: %" PRId32 "\n", x[ i ], out );
 	}
 }

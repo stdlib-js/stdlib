@@ -19,11 +19,9 @@
   "main": "./lib",
   "directories": {
     "benchmark": "./benchmark",
-    "data": "./data",
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
-    "scripts": "./scripts",
     "test": "./test"
   },
   "types": "./docs/types",

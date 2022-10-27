@@ -1,0 +1,101 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: update_contributors
+
+# Workflow triggers:
+on:
+  pull_request:
+    branches:
+      - develop
+    types:
+      - closed
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for updating the contributors list...
+  update-contributors:
+
+    # Define a display name:
+    name: 'Update Contributors List'
+
+    # Only run this job if the pull request was merged (or the job was triggered manually):
+    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Refers to the development branch:
+          ref: 'develop'
+
+          # Fetch entire history:
+          fetch-depth: 0
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Run the makefile target for updating the contributors list:
+      - name: 'Update contributors list'
+        id: update-contributors
+        run: |
+          make update-contributors
+
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "No changes to commit."
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      # Create a pull request with the updated contributors list:
+      - name: 'Create pull request'
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
+        if: steps.update-contributors.outputs.changed == 'true'
+        with:
+          title: 'Update list of contributors'
+          body: |
+            This PR
+
+            -   updates the list of contributors
+
+          commit-message: 'Update list of contributors'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
+          labels: |
+            documentation
+            automated-pr
+          team-reviewers: |
+            stdlib-reviewers
+          branch: update-contributors
+          delete-branch: true

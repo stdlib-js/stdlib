@@ -73,6 +73,7 @@ jobs:
 
   # Define a job for linting committed code...
   process:
+
     # Define a display name:
     name: 'Lint Random Files'
 

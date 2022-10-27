@@ -46,6 +46,7 @@ jobs:
 
   # Define a job for running tests affected by changes to the repository...
   process:
+
     # Define a display name:
     name: 'Run affected tests'
 

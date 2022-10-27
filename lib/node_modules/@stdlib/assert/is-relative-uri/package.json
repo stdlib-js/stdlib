@@ -13,6 +13,9 @@
       "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
     }
   ],
+  "bin": {
+    "is-relative-uri": "./bin/cli"
+  },
   "main": "./lib",
   "directories": {
     "benchmark": "./benchmark",
@@ -20,9 +23,6 @@
     "example": "./examples",
     "lib": "./lib",
     "test": "./test"
-  },
-  "bin": {
-    "is-relative-uri": "./bin/cli"
   },
   "types": "./docs/types",
   "scripts": {},

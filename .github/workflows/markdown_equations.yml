@@ -39,8 +39,8 @@ jobs:
     # Define a display name:
     name: 'Update equations'
 
-    # Only run this job if the pull request was merged:
-    if: github.event.pull_request.merged == true
+    # Only run this job if the pull request was merged and did not have label `automated-pr`:
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'automated-pr') == false
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
