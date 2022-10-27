@@ -96,6 +96,9 @@ jobs:
           # Append `/lib/index.js` to each namespace:
           namespaces=$(echo "${namespaces}" | sed "s|$|/lib/index.js|")
 
+          # Replace newlines with spaces:
+          namespaces=$(echo "${namespaces}" | tr '\n' ' ')
+
           # Print the list of namespaces files to update:
           echo "${namespaces}"
 
