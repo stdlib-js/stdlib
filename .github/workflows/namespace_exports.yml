@@ -119,7 +119,6 @@ jobs:
           commit-message: 'Update namespace exports'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           labels: |
-            documentation
             automated-pr
           team-reviewers: |
             stdlib-reviewers
