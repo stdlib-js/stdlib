@@ -25,7 +25,7 @@
 	"confs": [
 		{
 			"src": [
-				"./src/from_words.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"

@@ -25,7 +25,7 @@
 	"confs": [
 		{
 			"src": [
-				"./src/signbit.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
