@@ -207,8 +207,8 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64 = require( `@stdlib/complex/float32` );
-	* var real = require( `@stdlib/complex/real` );
-	* var imag = require( `@stdlib/complex/imag` );
+	* var realf = require( `@stdlib/complex/realf` );
+	* var imagf = require( `@stdlib/complex/imagf` );
 	*
 	* var z1 = new Complex64( 5.0, 3.0 );
 	* // returns <Complex64>
@@ -219,10 +219,10 @@ interface Namespace {
 	* var out = ns.cmulf( z1, z2 );
 	* // returns <Complex64>
 	*
-	* var re = real( out );
+	* var re = realf( out );
 	* // returns -13.0
 	*
-	* var im = imag( out );
+	* var im = imagf( out );
 	* // returns -1.0
 	*/
 	cmulf: typeof cmulf;
