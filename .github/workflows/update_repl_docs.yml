@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: repl_docs
+name: update_repl_docs
 
 # Workflow triggers:
 on:
@@ -119,7 +119,7 @@ jobs:
           branch: update-repl-docs
           delete-branch: true
 
-      # Create Markdown summary of the pull request:
+      # Create a pull request summary:
       - name: 'Create summary'
         run: |
           echo "# :tada: Pull Request created! :tada:" >> $GITHUB_STEP_SUMMARY
