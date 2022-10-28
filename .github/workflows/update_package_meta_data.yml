@@ -36,7 +36,7 @@ jobs:
   update:
 
     # Define a display name:
-    name: 'Update package meta data'
+    name: 'Update meta data'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
