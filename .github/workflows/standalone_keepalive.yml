@@ -23,7 +23,6 @@ name: standalone_keepalive
 on:
   # Run the workflow on the first day of each month:
   schedule:
-    # * is a special character in YAML so you have to quote this string
     - cron: '0 0 1 * *'
 
   # Allow the workflow to be manually run:
@@ -45,7 +44,7 @@ jobs:
   keepalive:
 
     # Define a display name:
-    name: 'Keep Alive'
+    name: 'Keep alive'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
