@@ -57,7 +57,7 @@ ms = duration2ms( '1d2h3m4s5ms' );
     -   `m`: minutes
     -   `s`: seconds
     -   `ms`: milliseconds
-    
+
     For example, the string `1m3s10ms` is a duration string containing three time units: `1m` (1 minute), `3s` (3 seconds), and `10ms` (10 milliseconds). The string `60m` is a duration string containing a single time unit: `60m` (60 minutes).
 
 -   Duration strings are case insensitive. For example, the string `1M3S10MS` is equivalent to `1m3s10ms`.
