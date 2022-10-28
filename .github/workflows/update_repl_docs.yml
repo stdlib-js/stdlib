@@ -98,7 +98,7 @@ jobs:
         run: |
           rm -rf .git/hooks
 
-      # Create a pull request with the updated documentation:
+      # Create a pull request:
       - name: 'Create pull request'
         id: cpr
         uses: peter-evans/create-pull-request@v4

@@ -65,7 +65,7 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
-      # Run the makefile target for updating the contributors list:
+      # Update the contributors list:
       - name: 'Update contributors list'
         id: update-contributors
         run: |
@@ -78,11 +78,11 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      # Create a pull request with the updated contributors list:
+      # Create a pull request:
       - name: 'Create pull request'
-        id: cpr
-        uses: peter-evans/create-pull-request@v4
         if: steps.update-contributors.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v4
+        id: cpr
         with:
           title: 'Update list of contributors'
           body: |
@@ -99,3 +99,12 @@ jobs:
             stdlib-reviewers
           branch: update-contributors
           delete-branch: true
+
+      # Create a pull request summary:
+      - name: 'Create summary'
+        run: |
+          echo "# :tada: Pull Request created! :tada:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Pull request ${{ steps.cpr.outputs.pull-request-number }} was successfully ${{ steps.cpr.outputs.pull-request-operation }}."
+          echo ":link: [${{ steps.cpr.outputs.pull-request-url }}](${{ steps.cpr.outputs.pull-request-url }})." >> $GITHUB_STEP_SUMMARY
+          echo "Head SHA: [${{ steps.cpr.outputs.pull-request-head-sha }}](${{ steps.cpr.outputs.pull-request-url }}/commits/${{ steps.cpr.outputs.pull-request-head-sha }})." >> $GITHUB_STEP_SUMMARY
