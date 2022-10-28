@@ -289,7 +289,7 @@ var fcns = special;
 -   <span class="signature">[`zeta( s )`][@stdlib/math/base/special/riemann-zeta]</span><span class="delimiter">: </span><span class="description">riemann zeta function.</span>
 -   <span class="signature">[`rsqrt( x )`][@stdlib/math/base/special/rsqrt]</span><span class="delimiter">: </span><span class="description">compute the reciprocal of the principal square root of a double-precision floating-point number.</span>
 -   <span class="signature">[`rsqrtf( x )`][@stdlib/math/base/special/rsqrtf]</span><span class="delimiter">: </span><span class="description">compute the reciprocal of the principal square root of a single-precision floating-point number.</span>
--   <span class="signature">[`sici( [out,] x )`][@stdlib/math/base/special/sici]</span><span class="delimiter">: </span><span class="description">compute the sine and cosine integrals.</span>
+-   <span class="signature">[`sici( x )`][@stdlib/math/base/special/sici]</span><span class="delimiter">: </span><span class="description">compute the sine and cosine integrals.</span>
 -   <span class="signature">[`spence( x )`][@stdlib/math/base/special/spence]</span><span class="delimiter">: </span><span class="description">spence’s function, also known as the dilogarithm.</span>
 -   <span class="signature">[`sqrt( x )`][@stdlib/math/base/special/sqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root of a double-precision floating-point number.</span>
 -   <span class="signature">[`sqrt1pm1( x )`][@stdlib/math/base/special/sqrt1pm1]</span><span class="delimiter">: </span><span class="description">compute `sqrt( 1 + x ) - 1`.</span>
