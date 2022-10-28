@@ -40,7 +40,7 @@ jobs:
   trigger:
 
     # Define a display name:
-    name: 'Trigger Tests'
+    name: 'Trigger tests'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest

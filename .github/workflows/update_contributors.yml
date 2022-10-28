@@ -37,7 +37,7 @@ jobs:
   update-contributors:
 
     # Define a display name:
-    name: 'Update Contributors List'
+    name: 'Update contributors list'
 
     # Only run this job if the pull request was merged (or the job was triggered manually):
     if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'

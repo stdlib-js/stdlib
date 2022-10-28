@@ -38,7 +38,7 @@ jobs:
   push:
 
     # Define a display name:
-    name: 'Push Changes to Standalone Packages'
+    name: 'Push changes'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -73,14 +73,14 @@ jobs:
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
-      # Retrieve list of changed stdlib packages in a push or pull request:
+      # Retrieve list of changed packages:
       - name: 'Find changed packages'
         id: 'changed_packages'
         uses: stdlib-js/changed-packages-action@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Push changes to the packages' repositories:
+      # Push changes to the package repositories:
       - name: 'Push changes'
         if: ${{ steps.changed_packages.outputs.packages != '[]' }}
         env:
