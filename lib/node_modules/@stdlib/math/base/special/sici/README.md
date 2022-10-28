@@ -29,7 +29,7 @@ The sine integral is defined as
 <!-- <equation class="equation" label="eq:sine_integral" align="center" raw="\int_0^x \frac{\sin t}{t}\; dt" alt="Sine integral."> -->
 
 <div class="equation" align="center" data-raw-text="\int_0^x \frac{\sin t}{t}\; dt" data-equation="eq:sine_integral">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/sici/docs/img/equation_sine_integral.svg" alt="Sine integral.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d4f09dbdaca8b3dcbc05abc5c8284beefa916518/lib/node_modules/@stdlib/math/base/special/sici/docs/img/equation_sine_integral.svg" alt="Sine integral.">
     <br>
 </div>
 
@@ -40,7 +40,7 @@ and the cosine integral is defined as
 <!-- <equation class="equation" label="eq:cosine_integral" align="center" raw="\gamma + \log( x ) + \int_0^x \frac{\cos t - 1}{t}\; dt" alt="Cosine integral."> -->
 
 <div class="equation" align="center" data-raw-text="\gamma + \log( x ) + \int_0^x \frac{\cos t - 1}{t}\; dt" data-equation="eq:cosine_integral">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/sici/docs/img/equation_cosine_integral.svg" alt="Cosine integral.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d4f09dbdaca8b3dcbc05abc5c8284beefa916518/lib/node_modules/@stdlib/math/base/special/sici/docs/img/equation_cosine_integral.svg" alt="Cosine integral.">
     <br>
 </div>
 
