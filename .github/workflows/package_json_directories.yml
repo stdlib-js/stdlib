@@ -32,11 +32,11 @@ on:
 # Workflow jobs:
 jobs:
 
-  # Define a job for updating `directories` fields in `package.json` files...
-  update-package-json-directories:
+  # Define a job for updating `package.json` files...
+  update:
 
     # Define a display name:
-    name: 'Update `directories` Fields in `package.json` Files'
+    name: 'Update package meta data'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -71,8 +71,8 @@ jobs:
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
-      # Update `directories` fields in `package.json` files:
-      - name: 'Update `directories` fields in `package.json` files'
+      # Update directories:
+      - name: 'Update directories'
         run: |
           node lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories lib/node_modules/@stdlib
 
@@ -81,17 +81,17 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
-          title: 'Update `directories` fields in `package.json` files'
+          title: 'Update package meta data'
           body: |
             This PR
 
-            -   updates the `directories` fields in `package.json` files
+            -   updates package meta data
 
-          commit-message: 'Update `directories` fields in `package.json` files'
+          commit-message: 'Update package meta data'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           labels: |
             automated-pr
           team-reviewers: |
             stdlib-reviewers
-          branch: update-package-json-directories
+          branch: update-package-meta-data
           delete-branch: true
