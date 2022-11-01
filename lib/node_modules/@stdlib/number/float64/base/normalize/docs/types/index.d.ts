@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/object';
 
 /**
  * Interface describing `normalize`.
@@ -29,7 +29,9 @@ interface Normalize {
 	/**
 	* Returns a normal number `y` and exponent `exp` satisfying \\(x = y \cdot 2^\mathrm{exp}\\).
 	*
-	* The first element of the returned array corresponds to `y` and the second to `exp`.
+	* ## Notes
+	*
+	* -   The first element of the returned array corresponds to `y` and the second element to `exp`.
 	*
 	* @param x - input value
 	* @returns output array
@@ -42,6 +44,7 @@ interface Normalize {
 	*
 	* var y = out[ 0 ];
 	* var exponent = out[ 1 ];
+	*
 	* var bool = ( y*pow(2.0, exponent) === 3.14e-319 );
 	* // returns true
 	*
@@ -50,23 +53,29 @@ interface Normalize {
 	* // returns [ 0.0, 0 ]
 	*
 	* @example
-	* var out = normalize( Infinity );
+	* var PINF = require( '@stdlib/constants/float64/pinf' );
+	*
+	* var out = normalize( PINF );
 	* // returns [ Infinity, 0 ]
 	*
 	* @example
-	* var out = normalize( -Infinity );
+	* var NINF = require( '@stdlib/constants/float64/ninf' );
+	*
+	* var out = normalize( NINF );
 	* // returns [ -Infinity, 0 ]
 	*
 	* @example
 	* var out = normalize( NaN );
 	* // returns [ NaN, 0 ]
 	*/
-	( x: number ): ArrayLike<number>;
+	( x: number ): Array<number>;
 
 	/**
 	* Returns a normal number and exponent satisfying `x = y * 2^exp` and assigns results to a provided output array.
 	*
-	* The first element of the returned array corresponds to `y` and the second to `exp`.
+	* ## Notes
+	*
+	* -   The first element of the returned array corresponds to `y` and the second element to `exp`.
 	*
 	* @param x - input value
 	* @param out - output array
@@ -83,24 +92,28 @@ interface Normalize {
 	* var bool = ( v === out );
 	* // returns true
 	*/
-	assign( x: number, out: ArrayLike<any>, stride: number, offset: number ): ArrayLike<number>; // tslint-disable-line max-line-length
+	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
 }
 
 /**
 * Returns a normal number `y` and exponent `exp` satisfying \\(x = y \cdot 2^\mathrm{exp}\\).
 *
-* The first element of the returned array corresponds to `y` and the second to `exp`.
+* ## Notes
+*
+* -   The first element of the returned array corresponds to `y` and the second to `exp`.
 *
 * @param x - input value
 * @returns output array
 *
 * @example
 * var pow = require( `@stdlib/math/base/special/pow` );
+*
 * var out = normalize( 3.14e-319 );
 * // returns <Float64Array>[ 1.4141234400356668e-303, -52 ]
 *
 * var y = out[ 0 ];
 * var exponent = out[ 1 ];
+*
 * var bool = ( y*pow(2.0, exponent) === 3.14e-319 );
 * // returns true
 */

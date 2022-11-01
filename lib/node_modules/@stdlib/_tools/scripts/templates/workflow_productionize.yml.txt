@@ -56,7 +56,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
         timeout-minutes: 5
@@ -141,7 +141,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
         timeout-minutes: 5
@@ -198,9 +198,9 @@ jobs:
           git fetch --all
           git ls-remote --exit-code --heads origin deno
           if [ $? -eq 0 ]; then
-            echo "::set-output name=remote-exists::true"
+            echo "remote-exists=true" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=remote-exists::false"
+            echo "remote-exists=false" >> $GITHUB_OUTPUT
           fi
 
       # If `deno` exists, delete everything in branch and merge `production` into it
@@ -242,7 +242,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
         timeout-minutes: 5
@@ -364,9 +364,9 @@ jobs:
           git fetch --all
           git ls-remote --exit-code --heads origin umd
           if [ $? -eq 0 ]; then
-            echo "::set-output name=remote-exists::true"
+            echo "remote-exists=true" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=remote-exists::false"
+            echo "remote-exists=false" >> $GITHUB_OUTPUT
           fi
 
       # If `umd` exists, delete everything in branch and merge `production` into it
@@ -400,7 +400,7 @@ jobs:
 
       # Install Node.js
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
         timeout-minutes: 5
@@ -417,7 +417,7 @@ jobs:
         id: extract-alias
         run: |
           alias=$(grep -E 'require\(' README.md | head -n 1 |  sed -E 's/^var ([a-zA-Z0-9_]+) = .+/\1/')
-          echo "::set-output name=alias::${alias}"
+          echo "alias=${alias}" >> $GITHUB_OUTPUT
 
       # Create Universal Module Definition (UMD) Node.js bundle:
       - name: 'Create Universal Module Definition (UMD) Node.js bundle'
@@ -528,9 +528,9 @@ jobs:
           git fetch --all
           git ls-remote --exit-code --heads origin esm
           if [ $? -eq 0 ]; then
-            echo "::set-output name=remote-exists::true"
+            echo "remote-exists=true" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=remote-exists::false"
+            echo "remote-exists=false" >> $GITHUB_OUTPUT
           fi
 
       # If `esm` exists, delete everything in branch and merge `production` into it
@@ -572,7 +572,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
         timeout-minutes: 5
@@ -695,10 +695,10 @@ jobs:
           VERSION_CHANGE_PKG_JSON=$(git diff HEAD~1 HEAD package.json | grep '"version":')
           if [ -z "$VERSION_CHANGE_PKG_JSON" ]; then
             echo "This workflow was not triggered by a version bump."
-            echo "::set-output name=bump::false"
+            echo "bump=false" >> $GITHUB_OUTPUT
           else
             echo "This workflow was triggered by a version bump."
-            echo "::set-output name=bump::true"
+            echo "bump=true" >> $GITHUB_OUTPUT
           fi
 
       # Configure git:

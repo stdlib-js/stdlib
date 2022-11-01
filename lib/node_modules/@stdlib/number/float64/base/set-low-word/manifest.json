@@ -25,7 +25,7 @@
 	"confs": [
 		{
 			"src": [
-				"./src/set_low_word.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"

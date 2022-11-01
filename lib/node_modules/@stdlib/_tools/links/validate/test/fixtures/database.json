@@ -1,0 +1,35 @@
+{
+  "https://www.r-project.org/": {
+    "id": "r",
+    "description": "A free software environment for statistical computing and graphics.",
+    "short_url": "",
+    "keywords": [
+      "r",
+      "statistics",
+      "stats",
+      "lang",
+      "language"
+    ]
+  },
+  "https://www.sublimetext.com/": {
+    "id": "sublime-text",
+    "description": "Sublime Text text editor. Official website.",
+    "short_url": "",
+    "keywords": [
+      "sublime",
+      "text",
+      "editor"
+    ]
+  },
+  "https://www.w3.org/Graphics/SVG/": {
+    "id": "svg",
+    "description": "The site of the official W3C SVG working group.",
+    "short_url": "",
+    "keywords": [
+      "svg",
+      "scalable",
+      "vector",
+      "graphics"
+    ]
+  }
+}

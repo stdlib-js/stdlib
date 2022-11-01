@@ -75,7 +75,7 @@ $(stdlib_custom_eslint_rules_plugin_out)/package.json: $(stdlib_custom_eslint_ru
 #
 # -   This rule bundles a custom ESLint rules plugin as a node module and installs the plugin in the project `node_modules` directory.
 #
-# [eslint]: http://eslint.org/
+# [eslint]: https://eslint.org/
 #
 # @example
 # make init-eslint-rules-plugin
@@ -87,7 +87,7 @@ init-eslint-rules-plugin: clean-eslint-rules-plugin $(NODE_MODULES) $(stdlib_cus
 #/
 # Initializes custom [ESLint][eslint] plugins.
 #
-# [eslint]: http://eslint.org/
+# [eslint]: https://eslint.org/
 #
 # @example
 # make init-eslint-plugins
@@ -99,7 +99,7 @@ init-eslint-plugins: init-eslint-rules-plugin
 #/
 # Removes a custom [ESLint][eslint] rule plugin.
 #
-# [eslint]: http://eslint.org/
+# [eslint]: https://eslint.org/
 #
 # @example
 # make clean-eslint-rules-plugin
@@ -112,7 +112,7 @@ clean-eslint-rules-plugin:
 #/
 # Removes custom [ESLint][eslint] plugins.
 #
-# [eslint]: http://eslint.org/
+# [eslint]: https://eslint.org/
 #
 # @example
 # make clean-eslint-plugins

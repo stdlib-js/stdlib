@@ -17,19 +17,30 @@
 */
 
 #include "stdlib/math/base/ops/cmul.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
 #include <stdio.h>
-#include <complex.h>
 
 int main() {
-	// cppcheck-suppress nanInArithmeticExpression
-	double complex x[] = { 3.14+1.5*I, -3.14-1.5*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
+	stdlib_complex128_t x[] = {
+		stdlib_complex128( 3.14, 1.5 ),
+		stdlib_complex128( -3.14, 1.5 ),
+		stdlib_complex128( 0.0, -0.0 ),
+		stdlib_complex128( 0.0/0.0, 0.0/0.0 )
+	};
 
-	double complex v;
-	double complex y;
+	stdlib_complex128_t v;
+	stdlib_complex128_t y;
+	double re;
+	double im;
 	int i;
 	for ( i = 0; i < 4; i++ ) {
 		v = x[ i ];
+		stdlib_reim( v, &re, &im );
+		printf( "z = %lf + %lfi\n", re, im );
+
 		y = stdlib_base_cmul( v, v );
-		printf( "z = %lf + %lfi\ncmul(z, z) = %lf + %lfi\n", creal( v ), cimag( v ), creal( y ), cimag( y ) );
+		stdlib_reim( y, &re, &im );
+		printf( "cmul(z, z) = %lf + %lfi\n", re, im );
 	}
 }

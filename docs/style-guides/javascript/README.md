@@ -3618,9 +3618,9 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [http-status-codes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
-[jsdoc]: http://usejsdoc.org/#Getting_Started
+[jsdoc]: http://usejsdoc.org/
 
-[fluent-interface]: http://en.wikipedia.org/wiki/Fluent_interface
+[fluent-interface]: https://en.wikipedia.org/wiki/Fluent_interface
 
 [native-dom-equivalents]: http://www.sitepoint.com/jquery-vs-raw-javascript-1-dom-forms/
 

@@ -50,7 +50,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
         timeout-minutes: 5
@@ -105,7 +105,7 @@ jobs:
 
       # Cancel any running or queued workflow runs:
       - name: 'Cancel running or queued workflow runs'
-        uses: styfle/cancel-workflow-action@0.9.0
+        uses: styfle/cancel-workflow-action@0.11.0
         with:
           workflow_id: >-
             benchmark.yml,

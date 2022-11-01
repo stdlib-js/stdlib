@@ -1,0 +1,106 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: update_package_meta_data
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+  # Run the workflow on a schedule:
+  schedule:
+    # Run the workflow every week on Sunday at 00:00 UTC:
+    - cron: '0 0 * * 0'
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for updating `package.json` files...
+  update:
+
+    # Define a display name:
+    name: 'Update meta data'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Update directories:
+      - name: 'Update directories'
+        run: |
+          node lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories lib/node_modules/@stdlib
+
+      # Create a pull request with the updated `package.json` files:
+      - name: 'Create pull request'
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: 'Update package meta data'
+          body: |
+            This PR
+
+            -   updates package meta data
+
+          commit-message: 'Update package meta data'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
+          labels: |
+            automated-pr
+          team-reviewers: |
+            stdlib-reviewers
+          branch: update-package-meta-data
+          delete-branch: true
+
+      # Create a pull request summary:
+      - name: 'Create summary'
+        run: |
+          echo "# :tada: Pull Request created! :tada:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Pull request ${{ steps.cpr.outputs.pull-request-number }} was successfully ${{ steps.cpr.outputs.pull-request-operation }}."
+          echo ":link: [${{ steps.cpr.outputs.pull-request-url }}](${{ steps.cpr.outputs.pull-request-url }})." >> $GITHUB_STEP_SUMMARY
+          echo "Head SHA: [${{ steps.cpr.outputs.pull-request-head-sha }}](${{ steps.cpr.outputs.pull-request-url }}/commits/${{ steps.cpr.outputs.pull-request-head-sha }})." >> $GITHUB_STEP_SUMMARY

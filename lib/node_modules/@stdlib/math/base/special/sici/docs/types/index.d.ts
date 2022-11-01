@@ -23,24 +23,55 @@
 import { Collection } from '@stdlib/types/object';
 
 /**
-* Computes the sine and cosine integrals.
-*
-* @param out - output array
-* @param x - input value
-* @returns output array
-*
-* @example
-* var Float64Array = require( `@stdlib/array/float64` );
-*
-* var out = new Float64Array( 2 );
-*
-* var v = sici( out, 3.0 );
-* // returns <Float64Array>[ ~1.849, ~0.12 ]
-*
-* var bool = ( v === out );
-* // returns true
-*/
-declare function sici( out: Collection, x: number ): Collection;
+ * Interface describing `sici`.
+ */
+interface Sici {
+	/**
+	* Computes the sine and cosine integrals.
+	*
+	* @param x - input value
+	* @returns output array
+	*
+	* @example
+	* var v = sici( 3.0 );
+	* // returns [ ~1.849, ~0.12 ]
+	*
+	* @example
+	* var v = sici( 0.0 );
+	* // returns [ 0.0, -Infinity  ]
+	*
+	* @example
+	* var v = sici( -9.0 );
+	* // returns [ ~-1.665, ~0.055 ]
+	*
+	* @example
+	* var v = sici( NaN );
+	* // returns [ NaN, NaN ]
+	*/
+	( x: number ): Array<number>;
+
+	/**
+	* Computes the sine and cosine integrals.
+	*
+	* @param x - input value
+	* @param out - output array
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns output array
+	*
+	* @example
+	* var Float64Array = require( `@stdlib/array/float64` );
+	*
+	* var out = new Float64Array( 2 );
+	*
+	* var v = sici.assign( 3.0, out, 1, 0 );
+	* // returns <Float64Array>[ ~1.849, ~0.12 ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+}
 
 /**
 * Computes the sine and cosine integrals.
@@ -64,7 +95,7 @@ declare function sici( out: Collection, x: number ): Collection;
 * var v = sici( NaN );
 * // returns [ NaN, NaN ]
 */
-declare function sici( x: number ): Collection;
+declare var sici: Sici;
 
 
 // EXPORTS //

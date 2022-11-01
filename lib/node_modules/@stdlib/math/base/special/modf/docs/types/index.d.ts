@@ -23,24 +23,43 @@
 import { Collection } from '@stdlib/types/object';
 
 /**
-* Decomposes a double-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value.
-*
-* @param out - output array
-* @param x - input value
-* @returns output array
-*
-* @example
-* var Float64Array = require( `@stdlib/array/float64` );
-*
-* var out = new Float64Array( 2 );
-*
-* var parts = modf( out, 3.14 );
-* // returns <Float64Array>[ 3.0, 0.14000000000000012 ]
-*
-* var bool = ( parts === out );
-* // returns true
-*/
-declare function modf( out: Collection, x: number ): Collection;
+ * Interface describing `modf`.
+ */
+interface Modf {
+	/**
+	* Decomposes a double-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value.
+	*
+	* @param x - input value
+	* @returns output array
+	*
+	* @example
+	* var parts = modf( 3.14 );
+	* // returns [ 3.0, 0.14000000000000012 ]
+	*/
+	( x: number ): Array<number>;
+
+	/**
+	* Decomposes a double-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value.
+	*
+	* @param x - input value
+	* @param out - output array
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns output array
+	*
+	* @example
+	* var Float64Array = require( `@stdlib/array/float64` );
+	*
+	* var out = new Float64Array( 2 );
+	*
+	* var parts = modf.assign( 3.14, out, 1, 0 );
+	* // returns <Float64Array>[ 3.0, 0.14000000000000012 ]
+	*
+	* var bool = ( parts === out );
+	* // returns true
+	*/
+	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+}
 
 /**
 * Decomposes a double-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value.
@@ -52,7 +71,7 @@ declare function modf( out: Collection, x: number ): Collection;
 * var parts = modf( 3.14 );
 * // returns [ 3.0, 0.14000000000000012 ]
 */
-declare function modf( x: number ): Collection;
+declare var modf: Modf;
 
 
 // EXPORTS //

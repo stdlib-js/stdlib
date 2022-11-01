@@ -19,7 +19,7 @@
 #ifndef STDLIB_MATH_BASE_OPS_CMUL_H
 #define STDLIB_MATH_BASE_OPS_CMUL_H
 
-#include <complex.h>
+#include "stdlib/complex/float64.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Multiplies two double-precision complex floating-point numbers.
 */
-double complex stdlib_base_cmul( const double complex z1, const double complex z2 );
+stdlib_complex128_t stdlib_base_cmul( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
 
 #ifdef __cplusplus
 }

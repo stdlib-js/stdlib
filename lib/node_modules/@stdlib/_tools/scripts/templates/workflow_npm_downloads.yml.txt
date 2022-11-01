@@ -50,7 +50,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
         timeout-minutes: 5
@@ -60,7 +60,7 @@ jobs:
         id: package_name
         run: |
           name=`node -e 'console.log(require("./package.json").name)' | tr -d '\n'`
-          echo "::set-output name=package_name::$name"
+          echo "package_name=$name" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
       # Fetch download data:
@@ -72,7 +72,7 @@ jobs:
           data=$(curl "$url")
           mkdir ./tmp
           echo "$data" > ./tmp/npm_downloads.json
-          echo "::set-output name=data::$data"
+          echo "data=$data" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
       # Print summary of download data:
@@ -84,7 +84,7 @@ jobs:
 
       # Upload the download data:
       - name: 'Upload data'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
           name: npm_downloads
@@ -99,7 +99,7 @@ jobs:
 
       # Send data to events server:
       - name: 'Post data'
-        uses: distributhor/workflow-webhook@v2
+        uses: distributhor/workflow-webhook@v3
         env:
           webhook_url: ${{ secrets.STDLIB_NPM_DOWNLOADS_URL }}
           webhook_secret: ${{ secrets.STDLIB_WEBHOOK_SECRET }}

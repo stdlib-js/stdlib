@@ -26,42 +26,42 @@ on:
     inputs:
       num:
         type: number
-        description: Maximum number of files to lint
+        description: 'Maximum number of files to lint:'
         default: 100
       pattern:
-        description: Regular expression for files to include
+        description: 'Regular expression for files to include:'
         default: .*
       javascript:
         type: boolean
-        description: Lint JavaScript and TypeScript files
+        description: 'Lint JavaScript and TypeScript'
         default: true
       markdown:
         type: boolean
-        description: Lint Markdown files
+        description: 'Lint Markdown'
         default: true
       json:
         type: boolean
-        description: Lint JSON files
+        description: 'Lint JSON'
         default: true
       repl:
         type: boolean
-        description: Lint REPL documentation files
+        description: 'Lint REPL documentation'
         default: true
       r:
         type: boolean
-        description: Lint R files
+        description: 'Lint R'
         default: true
       c:
         type: boolean
-        description: Lint C files
+        description: 'Lint C'
         default: true
       python:
         type: boolean
-        description: Lint Python files
+        description: 'Lint Python'
         default: true
       fix:
         type: boolean
-        description: Automatically fix lint errors (if possible) and file a pull request
+        description: 'Fix lint errors and submit a PR (if possible)'
         default: false
 
   # Trigger the workflow every 24 hours:
@@ -72,7 +72,8 @@ on:
 jobs:
 
   # Define a job for linting committed code...
-  process:
+  lint:
+
     # Define a display name:
     name: 'Lint Random Files'
 
@@ -362,7 +363,7 @@ jobs:
 
       # Lint license headers:
       - name: 'Lint license headers'
-        if: ${{ github.event.inputs.license }} && ( success() || failure() )
+        if: success() || failure()
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
           if [[ -n "${files}" ]]; then
@@ -371,14 +372,15 @@ jobs:
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
+        if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         run: |
           rm -rf .git/hooks
 
       # Create a pull request with the fixes (if applicable):
       - name: 'Create pull request'
-        if: ${{ github.event.inputs.fix }} && ( success() || failure() )
+        if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         id: cpr
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           title: 'Fix lint errors'
           add-paths: ${{ steps.random-files.outputs.files }}

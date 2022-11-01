@@ -194,7 +194,7 @@ false
 
 <section class="links">
 
-[uri]: http://en.wikipedia.org/wiki/URI_scheme
+[uri]: https://en.wikipedia.org/wiki/URI_scheme
 
 [rfc-3986]: https://tools.ietf.org/html/rfc3986
 

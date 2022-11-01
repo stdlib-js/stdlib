@@ -142,7 +142,7 @@ An Institutional Partner is free to pursue funding for their work on The Project
 
 ## Changes
 
-This is a living document and may be updated over time. Refer to the [git history for this document][git-history] to view changes.
+This is a living document and may be updated over time. Refer to the [git history for this document][stdlib-git-commit-log-governance] to view changes.
 
 ## Attribution
 
@@ -168,7 +168,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike 4.0
 
 [cc-by-sa-4.0]: https://creativecommons.org/licenses/by-sa/4.0/
 
-[git-history]: https://github.com/stdlib-js/stdlib/commits/develop/GOVERNANCE.md
+[stdlib-git-commit-log-governance]: https://github.com/stdlib-js/stdlib/commits/develop/GOVERNANCE.md
 
 </section>
 

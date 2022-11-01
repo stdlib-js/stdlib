@@ -46,6 +46,7 @@ jobs:
 
   # Define a job for running tests affected by changes to the repository...
   process:
+
     # Define a display name:
     name: 'Run affected tests'
 
@@ -110,7 +111,7 @@ jobs:
           required_by=""
           for package in ${packages}; do
             echo "Finding packages which depend on '${package}'..."
-            dependents=$( dirname $(find lib/node_modules/@stdlib -type f -name '*.js' -print0 | xargs -0 grep -ol -E "require\( [']${package}['] \)") | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
+            dependents=$( dirname $(find lib/node_modules/@stdlib -type f -name '*.js' -print0 | xargs -0 grep -ol -E "require\( [']${package}['] \)") | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | sort -u)
             required_by="${required_by} ${dependents}"
           done
 
@@ -118,7 +119,7 @@ jobs:
           directories="${directories} ${required_by}"
 
           # Find all test files in package directories:
-          files=$(find ${directories} -wholename '**/test/test*.js' | grep -v '/fixtures/' | tr '\n' ' ')
+          files=$(find ${directories} -maxdepth 2 -wholename '**/test/test*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ')
 
           # Exclude files residing in test fixtures directories:
           files=$(echo "${files}" | grep -v '/fixtures/')

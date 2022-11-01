@@ -33,6 +33,8 @@
 			"libraries": [],
 			"libpath": [],
 			"dependencies": [
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/high-word-exponent-mask",
 				"@stdlib/number/float64/base/get-high-word"
 			]
 		}

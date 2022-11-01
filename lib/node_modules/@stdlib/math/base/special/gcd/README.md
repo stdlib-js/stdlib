@@ -146,7 +146,7 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="links">
 
-[gcd]: http://en.wikipedia.org/wiki/Greatest_common_divisor
+[gcd]: https://en.wikipedia.org/wiki/Greatest_common_divisor
 
 [@stein:1967]: https://doi.org/10.1016/0021-9991(67)90047-2
 

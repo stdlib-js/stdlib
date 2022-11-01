@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Euler's Number
+# E
 
 > The mathematical constant [_e_][e].
 
@@ -27,15 +27,15 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var e = require( '@stdlib/constants/float64/e' );
+var E = require( '@stdlib/constants/float64/e' );
 ```
 
-#### e
+#### E
 
 The mathematical constant [_e_][e], also known as Euler's number or Napier's constant. [_e_][e] is the base of the natural logarithm.
 
 ```javascript
-var bool = ( e === 2.718281828459045 );
+var bool = ( E === 2.718281828459045 );
 // returns true
 ```
 
@@ -52,15 +52,69 @@ var bool = ( e === 2.718281828459045 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var e = require( '@stdlib/constants/float64/e' );
+var E = require( '@stdlib/constants/float64/e' );
 
-console.log( e );
+console.log( E );
 // => 2.718281828459045
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float64/e.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT64_E
+
+Macro for Euler's number.
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

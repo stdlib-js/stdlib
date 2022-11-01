@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Square Root of Epsilon
+# SQRT_EPS
 
 > [Square root][@stdlib/math/base/special/sqrt] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
 
@@ -27,15 +27,15 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var FLOAT64_SQRT_EPSILON = require( '@stdlib/constants/float64/sqrt-eps' );
+var SQRT_EPS = require( '@stdlib/constants/float64/sqrt-eps' );
 ```
 
-#### FLOAT64_SQRT_EPSILON
+#### SQRT_EPS
 
 [Square root][@stdlib/math/base/special/sqrt] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
 
 ```javascript
-var bool = ( FLOAT64_SQRT_EPSILON === 0.14901161193847656e-7 );
+var bool = ( SQRT_EPS === 0.14901161193847656e-7 );
 // returns true
 ```
 
@@ -53,7 +53,7 @@ var bool = ( FLOAT64_SQRT_EPSILON === 0.14901161193847656e-7 );
 var abs = require( '@stdlib/math/base/special/abs' );
 var max = require( '@stdlib/math/base/special/max' );
 var randu = require( '@stdlib/random/base/randu' );
-var FLOAT64_SQRT_EPSILON = require( '@stdlib/constants/float64/sqrt-eps' );
+var SQRT_EPS = require( '@stdlib/constants/float64/sqrt-eps' );
 
 var bool;
 var a;
@@ -65,7 +65,7 @@ function isApprox( a, b ) {
     var tol;
 
     delta = abs( a - b );
-    tol = FLOAT64_SQRT_EPSILON * max( abs( a ), abs( b ) );
+    tol = SQRT_EPS * max( abs( a ), abs( b ) );
 
     return ( delta <= tol );
 }
@@ -81,6 +81,60 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float64/sqrt_eps.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT64_SQRT_EPS
+
+Macro for the [square root][@stdlib/math/base/special/sqrt] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

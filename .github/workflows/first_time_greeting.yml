@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: greeting
+name: first_time_greeting
 
 # Workflow triggers:
 on: [pull_request, issues]
@@ -27,6 +27,9 @@ jobs:
 
   # Define a job for commenting on first-time contributions...
   greeting:
+
+    # Define a display name:
+    name: 'Welcome new contributors'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
