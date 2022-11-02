@@ -160,9 +160,6 @@ jobs:
           SCAFFOLD_BRANCH="scaffold-${{ github.event.pull_request.number }}/${{ steps.extract-readme.outputs.pkg_path }}"
           SLUG='stdlib-js/stdlib'
 
-          # Rebase `scaffold/<path>` branch to develop branch of `stdlib-js/stdlib` repository:
-          git rebase develop $SCAFFOLD_BRANCH --onto source/develop
-
           # Push `scaffold/<path>` branch to `stdlib-js/stdlib` repository:
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG" $SCAFFOLD_BRANCH
 
