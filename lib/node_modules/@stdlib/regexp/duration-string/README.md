@@ -1,0 +1,160 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# reDurationString
+
+> [Regular expression][mdn-regexp] to match a duration string.
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var reDurationString = require( '@stdlib/regexp/duration-string' );
+```
+
+#### reDurationString()
+
+Returns a [regular expression][mdn-regexp] to match a duration string.
+
+```javascript
+var RE_DURATION = reDurationString();
+// returns <RegExp>
+
+var parts = RE_DURATION.exec( '3d2ms' );
+/* returns
+    [
+        '3d2ms',
+        '3d',
+        undefined,
+        undefined,
+        undefined,
+        '2ms',
+        index: 0,
+        input: '3d2ms',
+        groups: undefined
+    ]
+*/
+
+parts = RE_SEMVER.exec( '4h3m20s' );
+/* returns
+    [
+        '4h3m20s',
+        undefined,
+        '4h',
+        '3m',
+        '20s',
+        undefined,
+        index: 0,
+        input: '4h3m20s',
+        groups: undefined
+    ]
+*/
+```
+
+#### reDurationString.REGEXP
+
+[Regular expression][mdn-regexp] to match a duration string.
+
+```javascript
+var bool = reDurationString.REGEXP.test( '3d12h' );
+// returns true
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   A duration string is a string containing a sequence of time units. A time unit is a nonnegative integer followed by a unit identifier. The following unit identifiers are supported:
+
+    -   `d`: days
+    -   `h`: hours
+    -   `m`: minutes
+    -   `s`: seconds
+    -   `ms`: milliseconds
+
+    For example, the string `1m3s10ms` is a duration string containing three time units: `1m` (1 minute), `3s` (3 seconds), and `10ms` (10 milliseconds). The string `60m` is a duration string containing a single time unit: `60m` (60 minutes). Time units must be supplied in descending order of magnitude (i.e., days, hours, minutes, seconds, milliseconds).
+
+-   Duration strings are case insensitive. For example, the string `1M3S10MS` is equivalent to `1m3s10ms`.
+
+-   The regular expression captures the following groups:
+
+    1.  The days component.
+    2.  The hours component.
+    3.  The minutes component.
+    4.  The seconds component.
+    5.  The milliseconds component.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var reDurationString = require( '@stdlib/regexp/duration-string' );
+
+var RE_DURATION = reDurationString();
+
+var bool = RE_DURATION.test( '3d12h' );
+// returns true
+
+bool = RE_DURATION.test( '1M3S10MS' );
+// returns true
+
+bool = RE_DURATION.test( '1y.0w.0d' );
+// returns false
+
+bool = RE_DURATION.test( '1y3w' );
+// returns false
+
+bool = RE_DURATION.test( 'beep' );
+// returns false
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
+</section>
+
+<!-- /.links -->

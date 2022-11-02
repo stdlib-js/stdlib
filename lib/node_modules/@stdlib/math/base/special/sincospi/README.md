@@ -30,7 +30,7 @@ limitations under the License.
 var sincospi = require( '@stdlib/math/base/special/sincospi' );
 ```
 
-#### sincospi( \[out,] x )
+#### sincospi( x )
 
 Simultaneously computes the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of a `number` times [π][@stdlib/constants/float64/pi] more accurately than `sincos(pi*x)`, especially for large `x`.
 
@@ -48,14 +48,16 @@ v = sincospi( NaN );
 // returns [ NaN, NaN ]
 ```
 
-By default, the function returns a two-element `array` containing `sin(πx)` and `cos(πx)`. To avoid extra memory allocation, the function supports providing an output (destination) object.
+#### sincospi( x, out, stride, offset )
+
+Simultaneously computes the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of a `number` times [π][@stdlib/constants/float64/pi] more accurately than `sincos(pi*x)`, especially for large `x`, and assigns results to a provided output array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
 var out = new Float64Array( 2 );
 
-var v = sincospi( out, 0.0 );
+var v = sincospi.assign( 0.0, out, 1, 0 );
 // returns <Float64Array>[ 0.0, 1.0 ]
 
 var bool = ( v === out );
