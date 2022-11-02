@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Cube Root of Epsilon
+# FLOAT32_CBRT_EPS
 
 > [Cube root][@stdlib/math/base/special/cbrt] of [single-precision floating-point epsilon][@stdlib/constants/float32/eps].
 
@@ -27,15 +27,15 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var FLOAT32_CBRT_EPSILON = require( '@stdlib/constants/float32/cbrt-eps' );
+var FLOAT32_CBRT_EPS = require( '@stdlib/constants/float32/cbrt-eps' );
 ```
 
-#### FLOAT32_CBRT_EPSILON
+#### FLOAT32_CBRT_EPS
 
 [Cube root][@stdlib/math/base/special/cbrt] of [single-precision floating-point epsilon][@stdlib/constants/float32/eps].
 
 ```javascript
-var bool = ( FLOAT32_CBRT_EPSILON === 0.004921566694974899 );
+var bool = ( FLOAT32_CBRT_EPS === 0.004921566694974899 );
 // returns true
 ```
 
@@ -54,7 +54,7 @@ var abs = require( '@stdlib/math/base/special/abs' );
 var max = require( '@stdlib/math/base/special/max' );
 var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 var randu = require( '@stdlib/random/base/randu' );
-var FLOAT32_CBRT_EPSILON = require( '@stdlib/constants/float32/cbrt-eps' );
+var FLOAT32_CBRT_EPS = require( '@stdlib/constants/float32/cbrt-eps' );
 
 var bool;
 var a;
@@ -66,7 +66,7 @@ function isApprox( a, b ) {
     var tol;
 
     delta = float64ToFloat32( abs( a - b ) );
-    tol = float64ToFloat32( FLOAT32_CBRT_EPSILON * max( abs( a ), abs( b ) ) );
+    tol = float64ToFloat32( FLOAT32_CBRT_EPS * max( abs( a ), abs( b ) ) );
 
     return ( delta <= tol );
 }
@@ -82,6 +82,60 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float32/cbrt_eps.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT32_CBRT_EPS
+
+Macro for [cube root][@stdlib/math/base/special/cbrt] of [single-precision floating-point epsilon][@stdlib/constants/float32/eps].
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
