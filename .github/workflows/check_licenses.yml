@@ -29,7 +29,7 @@ jobs:
   check_licenses:
 
     # Define a display name:
-    name: 'Check Licenses'
+    name: 'Check licenses'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
