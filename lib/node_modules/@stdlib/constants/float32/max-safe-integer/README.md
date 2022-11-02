@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Max Safe Integer
+# FLOAT32_MAX_SAFE_INTEGER
 
 > Maximum safe [single-precision floating-point][ieee754] integer.
 
@@ -73,6 +73,60 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float32/max_safe_integer.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT32_MAX_SAFE_INTEGER
+
+Macro for the maximum [safe][safe-integers] [single-precision floating-point][ieee754] integer.
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
