@@ -22,6 +22,6 @@
 /**
 * Macro for the maximum single-precision floating-point number.
 */
-#define STDLIB_CONSTANT_FLOAT32_MAX 3.4028234663852886e+38
+#define STDLIB_CONSTANT_FLOAT32_MAX 3.4028234663852886e+38f
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_MAX_H

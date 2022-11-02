@@ -22,6 +22,6 @@
 /**
 * Macro for the difference between one and the smallest value greater than one that can be represented as a single-precision floating-point number..
 */
-#define STDLIB_CONSTANT_FLOAT32_EPS 1.1920928955078125e-7
+#define STDLIB_CONSTANT_FLOAT32_EPS 1.1920928955078125e-7f
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_EPS_H

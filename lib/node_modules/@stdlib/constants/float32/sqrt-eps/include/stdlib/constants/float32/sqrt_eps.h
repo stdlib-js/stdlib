@@ -22,6 +22,6 @@
 /**
 * Macro for the square root of single-precision floating-point epsilon.
 */
-#define STDLIB_CONSTANT_FLOAT32_SQRT_EPS 0.0003452669770922512
+#define STDLIB_CONSTANT_FLOAT32_SQRT_EPS 0.0003452669770922512f
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_SQRT_EPS_H

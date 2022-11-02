@@ -22,6 +22,6 @@
 /**
 * Macro for the cube root of single-precision floating-point epsilon.
 */
-#define STDLIB_CONSTANT_FLOAT32_CBRT_EPS 0.004921566694974899
+#define STDLIB_CONSTANT_FLOAT32_CBRT_EPS 0.004921566694974899f
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_CBRT_EPS_H

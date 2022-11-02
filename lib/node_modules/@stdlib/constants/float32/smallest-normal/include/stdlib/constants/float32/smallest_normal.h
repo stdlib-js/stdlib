@@ -22,6 +22,6 @@
 /**
 * Macro for the smallest positive normalized single-precision floating-point number.
 */
-#define STDLIB_CONSTANT_FLOAT32_SMALLEST_NORMAL 1.1754943508222875e-38
+#define STDLIB_CONSTANT_FLOAT32_SMALLEST_NORMAL 1.1754943508222875e-38f
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_SMALLEST_NORMAL_H
