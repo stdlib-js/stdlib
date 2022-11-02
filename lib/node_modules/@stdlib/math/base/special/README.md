@@ -100,7 +100,7 @@ var fcns = special;
 -   <span class="signature">[`risingFactorial( x, n )`][@stdlib/math/base/special/rising-factorial]</span><span class="delimiter">: </span><span class="description">compute the rising factorial.</span>
 -   <span class="signature">[`sin( x )`][@stdlib/math/base/special/sin]</span><span class="delimiter">: </span><span class="description">compute the sine of a number.</span>
 -   <span class="signature">[`sinc( x )`][@stdlib/math/base/special/sinc]</span><span class="delimiter">: </span><span class="description">compute the cardinal sine of a number.</span>
--   <span class="signature">[`sincos( [out,] x )`][@stdlib/math/base/special/sincos]</span><span class="delimiter">: </span><span class="description">simultaneously compute the sine and cosine of a number.</span>
+-   <span class="signature">[`sincos( x )`][@stdlib/math/base/special/sincos]</span><span class="delimiter">: </span><span class="description">simultaneously compute the sine and cosine of a number.</span>
 -   <span class="signature">[`sincospi( [out,] x )`][@stdlib/math/base/special/sincospi]</span><span class="delimiter">: </span><span class="description">simultaneously compute the sine and cosine of a number times π.</span>
 -   <span class="signature">[`sinh( x )`][@stdlib/math/base/special/sinh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic sine of a number.</span>
 -   <span class="signature">[`sinpi( x )`][@stdlib/math/base/special/sinpi]</span><span class="delimiter">: </span><span class="description">compute the sine of a number times π.</span>
