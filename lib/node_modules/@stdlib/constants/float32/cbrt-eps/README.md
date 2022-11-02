@@ -111,7 +111,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### STDLIB_CONSTANT_FLOAT32_CBRT_EPS
 
-Macro for [cube root][@stdlib/math/base/special/cbrt] of [single-precision floating-point epsilon][@stdlib/constants/float32/eps].
+Macro for the [cube root][@stdlib/math/base/special/cbrt] of [single-precision floating-point epsilon][@stdlib/constants/float32/eps].
 
 </section>
 
