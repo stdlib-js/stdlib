@@ -174,7 +174,7 @@ jobs:
             From your local fork, make sure you are on the pull request branch and then merge the changes from the upstream repository:
 
             ```bash
-             git checkout {{ github.event.pull_request.head.ref }}
+             git checkout ${{ github.event.pull_request.head.ref }}
              git merge upstream/scaffold-${{ github.event.pull_request.number }}/${{ steps.scaffold.outputs.path }}
              ```
 
