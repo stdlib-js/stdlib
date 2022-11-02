@@ -1,18 +1,15 @@
 
-{{alias}}( [out,] x )
+{{alias}}( x )
     Simultaneously computes the sine and cosine of a number times π.
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Destination array.
-
     x: number
         Input value.
 
     Returns
     -------
-    y: Array|TypedArray|Object
+    y: Array<number>
         Two-element array containing sin(πx) and cos(πx).
 
     Examples
@@ -26,12 +23,37 @@
     > y = {{alias}}( NaN )
     [ NaN, NaN ]
 
+
+{{alias}}.assign( x, out, stride, offset )
+    Simultaneously computes the sine and cosine of a number times π and
+    assigns results to a provided output array.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    y: Array|TypedArray|Object
+        Two-element array containing sin(πx) and cos(πx).
+
+    Examples
+    --------
     > var out = new {{alias:@stdlib/array/float64}}( 2 );
-    > var v = {{alias}}( out, 0.0 )
+    > var v = {{alias}}.assign( 0.0, out, 1, 0 )
     <Float64Array>[ 0.0, 1.0 ]
     > var bool = ( v === out )
     true
 
     See Also
     --------
-
