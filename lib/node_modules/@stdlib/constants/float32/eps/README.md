@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Epsilon
+# FLOAT32_EPS
 
 > Difference between one and the smallest value greater than one that can be represented as a [single-precision floating-point number][ieee754].
 
@@ -46,15 +46,15 @@ where `b` is the radix (base) and `p` is the precision (number of radix bits in 
 ## Usage
 
 ```javascript
-var FLOAT32_EPSILON = require( '@stdlib/constants/float32/eps' );
+var FLOAT32_EPS = require( '@stdlib/constants/float32/eps' );
 ```
 
-#### FLOAT32_EPSILON
+#### FLOAT32_EPS
 
 Difference between one and the smallest value greater than one that can be represented as a [single-precision floating-point number][ieee754].
 
 ```javascript
-var bool = ( FLOAT32_EPSILON === 1.1920928955078125e-7 );
+var bool = ( FLOAT32_EPS === 1.1920928955078125e-7 );
 // returns true
 ```
 
@@ -73,7 +73,7 @@ var abs = require( '@stdlib/math/base/special/abs' );
 var max = require( '@stdlib/math/base/special/max' );
 var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 var randu = require( '@stdlib/random/base/randu' );
-var FLOAT32_EPSILON = require( '@stdlib/constants/float32/eps' );
+var FLOAT32_EPS = require( '@stdlib/constants/float32/eps' );
 
 var bool;
 var a;
@@ -85,7 +85,7 @@ function isApprox( a, b ) {
     var tol;
 
     delta = float64ToFloat32( abs( a - b ) );
-    tol = float64ToFloat32( FLOAT32_EPSILON * max( abs( a ), abs( b ) ) );
+    tol = float64ToFloat32( FLOAT32_EPS * max( abs( a ), abs( b ) ) );
 
     return ( delta <= tol );
 }
@@ -101,6 +101,60 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float32/eps.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT32_EPS
+
+Macro for the difference between one and the smallest value greater than one that can be represented as a [single-precision floating-point number][ieee754].
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
