@@ -30,7 +30,7 @@ limitations under the License.
 var normalizef = require( '@stdlib/number/float32/base/normalize' );
 ```
 
-#### normalizef( \[out,] x )
+#### normalizef( x )
 
 Returns a normal number `y` and exponent `exp` satisfying `x = y * 2^exp`.
 
@@ -57,21 +57,6 @@ var bool = ( y*pow(2, exp) === toFloat32(1.401e-45) );
 // returns true
 ```
 
-To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
-
-```javascript
-var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
-var Float32Array = require( '@stdlib/array/float32' );
-
-var out = new Float32Array( 2 );
-
-var v = normalizef( out, toFloat32( 1.401e-45 ) );
-// returns <Float32Array>[ 1.1754943508222875e-38, -23 ]
-
-var bool = ( v === out );
-// returns true
-```
-
 The function expects a finite, non-zero [single-precision floating-point number][ieee754] `x`. If `x == 0`,
 
 ```javascript
@@ -93,6 +78,23 @@ out = normalizef( NINF );
 
 out = normalizef( NaN );
 // returns [ NaN, 0 ]
+```
+
+#### normalizef( x, out, stride, offset )
+
+Returns a normal number `y` and exponent `exp` satisfying `x = y * 2^exp` and assigns results to a provided output array.
+
+```javascript
+var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
+var Float32Array = require( '@stdlib/array/float32' );
+
+var out = new Float32Array( 2 );
+
+var v = normalizef.assign( toFloat32( 1.401e-45 ), out, 1, 0 );
+// returns <Float32Array>[ 1.1754943508222875e-38, -23 ]
+
+var bool = ( v === out );
+// returns true
 ```
 
 </section>
