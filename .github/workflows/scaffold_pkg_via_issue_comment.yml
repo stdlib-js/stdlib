@@ -54,6 +54,7 @@ jobs:
         uses: stdlib-js/scaffold-pkg-pr-action@main
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Create a pull request:
       - name: 'Create pull request'
