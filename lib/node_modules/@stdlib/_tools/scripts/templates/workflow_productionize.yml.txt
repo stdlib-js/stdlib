@@ -219,6 +219,13 @@ jobs:
           git config merge.theirs.driver 'cat %B > %A'
           GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
 
+          # Copy files from `production` branch if necessary:
+          git checkout origin/production -- .
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "Auto-generated commit"
+          fi
+
       # If `deno` does not exist, create `deno` branch:
       - name: 'If `deno` does not exist, create `deno` branch'
         if: ${{ steps.deno-branch-exists.outputs.remote-exists == false }}
@@ -385,6 +392,13 @@ jobs:
           git config merge.theirs.driver 'cat %B > %A'
           GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
 
+          # Copy files from `production` branch if necessary:
+          git checkout origin/production -- .
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "Auto-generated commit"
+          fi
+
       # If `umd` does not exist, create `umd` branch:
       - name: 'If `umd` does not exist, create `umd` branch'
         if: ${{ steps.umd-branch-exists.outputs.remote-exists == false }}
@@ -548,6 +562,13 @@ jobs:
           git config merge.theirs.name 'simulate `-s theirs`'
           git config merge.theirs.driver 'cat %B > %A'
           GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
+
+          # Copy files from `production` branch if necessary:
+          git checkout origin/production -- .
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "Auto-generated commit"
+          fi
 
       # If `esm` does not exist, create `esm` branch:
       - name: 'If `esm` does not exist, create `esm` branch'
