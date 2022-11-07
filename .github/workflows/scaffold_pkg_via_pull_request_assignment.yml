@@ -171,10 +171,27 @@ jobs:
           body: |
             Based off the `README.md` file, the [stdlib-bot](https://github.com/stdlib-bot) has generated contents for the [${{ steps.scaffold.outputs.alias }}](../tree/scaffold-${{ github.event.pull_request.number }}/${{ steps.scaffold.outputs.path }}/${{ steps.scaffold.outputs.dir }}) package.
 
-            From your local fork, make sure you are on the pull request branch and then merge the changes from the upstream repository:
+            From your local fork, make sure you are on the pull request branch:
 
             ```bash
-             git checkout ${{ github.event.pull_request.head.ref }}
+            git checkout ${{ github.event.pull_request.head.ref }}
+            ```
+
+            Make sure you have an `upstream` remote pointing to the original `stdlib-js/stdlib` repository (you may check with `git remote -v`). If not, add it as follows:
+
+            ```bash
+            git remote add upstream https://github.com/stdlib-js/stdlib.git
+            ```
+
+            Fetch the scaffold branch from the `stdlib-js/stdlib` repository:
+
+            ```bash
+            git fetch upstream scaffold-${{ github.event.pull_request.number }}/${{ steps.scaffold.outputs.path }}
+            ```
+
+            You can then merge the changes from the upstream repository into your branch as follows:
+
+            ```bash
              git merge upstream/scaffold-${{ github.event.pull_request.number }}/${{ steps.scaffold.outputs.path }}
              ```
 
