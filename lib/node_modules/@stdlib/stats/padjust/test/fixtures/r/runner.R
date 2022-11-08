@@ -153,7 +153,7 @@ main <- function() {
 
 	# Generate test fixture data:
 	pvals <- runif( 5, 0, 0.5 );
-	n <- 15;
+	n <- 15L;
 	out <- p.adjust( pvals, method = "BH", n = n );
 
 	# Convert fixture data to JSON:
@@ -170,7 +170,7 @@ main <- function() {
 
 	# Generate test fixture data:
 	pvals <- c( 0.3, 0.1, 0.1, 0.2 );
-	n <- 10;
+	n <- 10L;
 	out <- p.adjust( pvals, method = "hommel", n = n );
 
 	# Convert fixture data to JSON:
@@ -187,7 +187,7 @@ main <- function() {
 
 	# Generate test fixture data:
 	pvals <- c( 0.3, 0.1, 0.1, 0.2 );
-	n <- 10;
+	n <- 10L;
 	out <- p.adjust( pvals, method = "BY", n = n );
 
 	# Convert fixture data to JSON:
