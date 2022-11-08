@@ -227,7 +227,7 @@ jobs:
       - name: 'Lint shell script files'
         if: ( github.event.inputs.repl != 'false' ) && ( success() || failure() )
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -vE '\.(js|md|json|ts|c)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             # Install shellcheck:
             make install-deps-shellcheck
