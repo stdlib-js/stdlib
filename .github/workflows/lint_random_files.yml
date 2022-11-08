@@ -139,7 +139,7 @@ jobs:
             if [ -n "${name}" ]; then
               name="${name} -o"
             fi
-            name="${name} -name '*.repl\.txt'"
+            name="${name} -name '*.repl\.txt' -o -name '*.sh'"
           fi
           if [ "${{ github.event.inputs.r }}" != "false" ]; then
             if [ -n "${name}" ]; then
