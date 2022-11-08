@@ -41,6 +41,30 @@ on:
       # List paths for which changes should *not* trigger this workflow:
       - '!lib/**/_tools/**'
 
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    paths:
+      # List paths for which changes should trigger this workflow:
+      - 'lib/**/bin/**'
+      - 'lib/**/data/**'
+      - 'lib/**/etc/**'
+      - 'lib/**/include/**'
+      - 'lib/**/lib/**'
+      - 'lib/**/src/**'
+      - 'lib/**/test/**'
+
+      - 'lib/**/*.gyp'
+      - 'lib/**/*.gypi'
+      - 'lib/**/manifest.json'
+
+      - 'package.json'
+
+      # List paths for which changes should *not* trigger this workflow:
+      - '!lib/**/_tools/**'
+
 # Workflow jobs:
 jobs:
 
