@@ -45,7 +45,7 @@ on:
         default: true
       repl:
         type: boolean
-        description: 'Lint REPL documentation'
+        description: 'Lint REPL documentation and shell script files'
         default: true
       r:
         type: boolean
@@ -221,6 +221,15 @@ jobs:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'repl\.txt$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
             echo "${files}" | "${lint_repl_help}"
+          fi
+
+      # Lint shell script files:
+      - name: 'Lint shell script files'
+        if: ( github.event.inputs.repl != 'false' ) && ( success() || failure() )
+        run: |
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make FILES="${files}" lint-shell-files
           fi
 
       # Lint JavaScript files:
