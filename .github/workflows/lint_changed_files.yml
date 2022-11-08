@@ -105,6 +105,19 @@ jobs:
             make lint-markdown-files FILES="${files}"
           fi
 
+      # Lint shell script files:
+      - name: 'Lint shell script files'
+        if: success() || failure()
+        run: |
+          files=$(echo "${{ steps.random-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
+          if [[ -n "${files}" ]]; then
+            # Install shellcheck:
+            make install-deps-shellcheck
+
+            # Lint shell scripts:
+            make FILES="${files}" lint-shell-files
+          fi
+
       # Lint package.json files:
       - name: 'Lint package.json files'
         if: success() || failure()
