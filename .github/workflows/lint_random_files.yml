@@ -167,11 +167,9 @@ jobs:
           fi
           command="find lib/node_modules/@stdlib -type f \( ${name} \) |
             grep -E '${{ github.event.inputs.pattern }}' |
+            grep -v '/fixtures/bad/' |
             shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ','"
           files=$(eval ${command})
-
-          # Filter out files residing in `fixtures/bad` directories:
-          files=$(echo "${files}" | grep -v '/fixtures/bad/')
 
           echo "files=$files" >> $GITHUB_OUTPUT
 
