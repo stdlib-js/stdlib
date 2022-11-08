@@ -169,7 +169,8 @@ jobs:
             grep -E '${{ github.event.inputs.pattern }}' |
             shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ','"
           echo "command: ${command}"
-          files=$(eval ${command})
+          files=$(eval ${command} | grep -v '/fixtures/bad/')
+
           echo "files=$files" >> $GITHUB_OUTPUT
 
       # Lint file names
@@ -203,9 +204,9 @@ jobs:
           # Define the path to a utility for linting package.json files:
           lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
 
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
-            echo "${files}" | "${lint_package_json}"
+            echo "${files}" | "${lint_package_json}" --split=" "
           fi
 
       # Lint REPL help files...
@@ -218,9 +219,9 @@ jobs:
           # Define the path to a utility for linting REPL help files:
           lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-txt/bin/cli"
 
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'repl\.txt$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'repl\.txt$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
-            echo "${files}" | "${lint_repl_help}"
+            echo "${files}" | "${lint_repl_help}" --split=" "
           fi
 
       # Lint shell script files:
