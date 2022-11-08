@@ -76,7 +76,7 @@ jobs:
       # Retrieve list of changed packages:
       - name: 'Find changed packages'
         id: 'changed_packages'
-        uses: stdlib-js/changed-packages-action@v1
+        uses: stdlib-js/changed-packages-action@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
