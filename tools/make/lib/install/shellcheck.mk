@@ -20,9 +20,13 @@
 
 # Define the download URL...
 ifeq ($(OS), WINNT)
-	DEPS_SHELLCHECK_URL ?= https://shellcheck.storage.googleapis.com/shellcheck-v$(DEPS_SHELLCHECK_VERSION).zip
+	DEPS_SHELLCHECK_URL ?= https://github.com/koalaman/shellcheck/releases/download/v$(DEPS_SHELLCHECK_VERSION)/shellcheck-v$(DEPS_SHELLCHECK_VERSION).zip
 else
-	DEPS_SHELLCHECK_URL ?= https://shellcheck.storage.googleapis.com/shellcheck-v$(DEPS_SHELLCHECK_VERSION).linux.x86_64.tar.xz
+ifeq ($(DEPS_SHELLCHECK_PLATFORM), darwin)
+	DEPS_SHELLCHECK_URL ?= https://github.com/koalaman/shellcheck/releases/download/v$(DEPS_SHELLCHECK_VERSION)/shellcheck-v$(DEPS_SHELLCHECK_VERSION).darwin.x86_64.tar.xz
+else
+	DEPS_SHELLCHECK_URL ?= https://github.com/koalaman/shellcheck/releases/download/v$(DEPS_SHELLCHECK_VERSION)/shellcheck-v$(DEPS_SHELLCHECK_VERSION).linux.x86_64.tar.xz
+endif
 endif
 
 # Determine the basename for the download:
@@ -38,25 +42,15 @@ DEPS_SHELLCHECK_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_shellcheck_basename)
 deps_shellcheck_extract_out := $(DEPS_BUILD_DIR)/shellcheck-v$(DEPS_SHELLCHECK_VERSION)
 
 # Define the path to the `shellcheck` executable...
-ifeq ($(DEPS_SHELLCHECK_PLATFORM), darwin)
-	# We assume that `shellcheck` is installed globally:
-	SHELLCHECK ?= shellcheck
-else
 ifeq ($(DEPS_SHELLCHECK_PLATFORM), win32)
 	SHELLCHECK ?= $(DEPS_SHELLCHECK_BUILD_OUT)/shellcheck.exe
 else
 	SHELLCHECK ?= $(DEPS_SHELLCHECK_BUILD_OUT)/shellcheck
 endif
-endif
 
 # Define rule prerequisites based on the host platform...
-ifeq ($(DEPS_SHELLCHECK_PLATFORM), darwin)
-	deps_shellcheck_test_prereqs :=
-	deps_shellcheck_install_prereqs := deps-install-shellcheck-darwin deps-test-shellcheck
-else
-	deps_shellcheck_test_prereqs := $(DEPS_SHELLCHECK_BUILD_OUT)
-	deps_shellcheck_install_prereqs := deps-download-shellcheck deps-verify-shellcheck deps-extract-shellcheck deps-test-shellcheck
-endif
+deps_shellcheck_test_prereqs := $(DEPS_SHELLCHECK_BUILD_OUT)
+deps_shellcheck_install_prereqs := deps-download-shellcheck deps-verify-shellcheck deps-extract-shellcheck deps-test-shellcheck
 
 
 # RULES #
@@ -81,7 +75,7 @@ ifeq ($(OS), WINNT)
 	$(QUIET) $(UNZIP) -q $(DEPS_SHELLCHECK_DOWNLOAD_OUT) -d $@
 else
 	$(QUIET) echo 'Extracting shellcheck...' >&2
-	$(QUIET) $(TAR) --xz -xvf $(DEPS_SHELLCHECK_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
+	$(QUIET) $(TAR) -xvf $(DEPS_SHELLCHECK_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
 	$(QUIET) mv $(deps_shellcheck_extract_out) $(DEPS_SHELLCHECK_BUILD_OUT)
 endif
 
@@ -140,7 +134,7 @@ deps-test-shellcheck: $(deps_shellcheck_test_prereqs)
 .PHONY: deps-test-shellcheck
 
 #/
-# Installs ShellCheck on MacOS.
+# Installs ShellCheck (globally) on MacOS.
 #
 # ## Notes
 #
