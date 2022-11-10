@@ -20,7 +20,49 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/object';
+
+/**
+ * Interface describing `imuldw`.
+ */
+ interface Imuldw {
+	/**
+	* Performs multiplication of two signed 32-bit integers and returns an array of two signed 32-bit integers which represents the signed 64-bit integer product.
+	*
+	* ## Notes
+	*
+	* -   When computing the product of 32-bit integer values in double-precision floating-point format (the default JavaScript numeric data type), computing the double word product is necessary in order to avoid exceeding the maximum safe double-precision floating-point integer value.
+	*
+	* @param a - integer
+	* @param b - integer
+	* @returns output array
+	*
+	* @example
+	* var v = imuldw( 0xAAAAAAAA, 0x55555555 );
+	* // returns [ -477218589, 1908874354 ]
+	*/
+	( a: number, b: number ): Array<number>;
+
+	/**
+	* Performs multiplication of two signed 32-bit integers and returns an array of two signed 32-bit integers which represents the signed 64-bit integer product.
+	*
+	* ## Notes
+	*
+	* -   When computing the product of 32-bit integer values in double-precision floating-point format (the default JavaScript numeric data type), computing the double word product is necessary in order to avoid exceeding the maximum safe double-precision floating-point integer value.
+	*
+	* @param a - integer
+	* @param b - integer
+	* @param out - output array
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns output array
+	*
+	* @example
+	* var v = imuldw( 0xAAAAAAAA, 0x55555555 );
+	* // returns [ -477218589, 1908874354 ]
+	*/
+	assign( a: number, b: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+}
 
 /**
 * Performs multiplication of two signed 32-bit integers and returns an array of two signed 32-bit integers which represents the signed 64-bit integer product.
@@ -29,7 +71,6 @@ import { ArrayLike } from '@stdlib/types/array';
 *
 * -   When computing the product of 32-bit integer values in double-precision floating-point format (the default JavaScript numeric data type), computing the double word product is necessary in order to avoid exceeding the maximum safe double-precision floating-point integer value.
 *
-* @param out - output array
 * @param a - integer
 * @param b - integer
 * @returns output array
@@ -38,24 +79,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var v = imuldw( 0xAAAAAAAA, 0x55555555 );
 * // returns [ -477218589, 1908874354 ]
 */
-declare function imuldw( out: ArrayLike<number>, a: number, b: number ): ArrayLike<number>; // tslint-disable-line max-line-length
-
-/**
-* Performs multiplication of two signed 32-bit integers and returns an array of two signed 32-bit integers which represents the signed 64-bit integer product.
-*
-* ## Notes
-*
-* -   When computing the product of 32-bit integer values in double-precision floating-point format (the default JavaScript numeric data type), computing the double word product is necessary in order to avoid exceeding the maximum safe double-precision floating-point integer value.
-*
-* @param a - integer
-* @param b - integer
-* @returns output array
-*
-* @example
-* var v = imuldw( 0xAAAAAAAA, 0x55555555 );
-* // returns [ -477218589, 1908874354 ]
-*/
-declare function imuldw( a: number, b: number ): ArrayLike<number>;
+declare var imuldw: Imuldw;
 
 
 // EXPORTS //
