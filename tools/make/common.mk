@@ -567,7 +567,7 @@ DEPS_ELECTRON_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_
 DEPS_ELECTRON_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
 # Define the shellcheck version:
-DEPS_SHELLCHECK_VERSION ?= 0.5.0
+DEPS_SHELLCHECK_VERSION ?= 0.8.0
 
 # Generate a version slug:
 deps_shellcheck_version_slug := $(subst .,_,$(DEPS_SHELLCHECK_VERSION))
