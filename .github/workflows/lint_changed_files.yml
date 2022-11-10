@@ -109,7 +109,7 @@ jobs:
       - name: 'Lint shell script files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.random-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.random-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Install shellcheck:
             make install-deps-shellcheck
