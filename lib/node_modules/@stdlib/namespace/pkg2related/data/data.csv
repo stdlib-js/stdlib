@@ -612,7 +612,7 @@
 "@stdlib/math/base/special/erf","@stdlib/math/base/special/erfc,@stdlib/math/base/special/erfinv,@stdlib/math/base/special/erfcinv"
 "@stdlib/math/base/special/erfc","@stdlib/math/base/special/erf,@stdlib/math/base/special/erfinv,@stdlib/math/base/special/erfcinv,@stdlib/math/base/special/erfcx"
 "@stdlib/math/base/special/erfcinv","@stdlib/math/base/special/erf,@stdlib/math/base/special/erfc,@stdlib/math/base/special/erfinv,@stdlib/math/base/special/erfcx"
-"@stdlib/math/base/special/erfcx","@stdlib/math/base/special/erfc"
+"@stdlib/math/base/special/erfcx","@stdlib/math/base/special/erfc,@stdlib/math/base/special/erfcinv,@stdlib/math/base/special/erf,@stdlib/math/base/special/erfinv"
 "@stdlib/math/base/special/erfinv","@stdlib/math/base/special/erf,@stdlib/math/base/special/erfc,@stdlib/math/base/special/erfcinv"
 "@stdlib/math/base/special/dirichlet-eta",""
 "@stdlib/math/base/tools/evalpoly","@stdlib/math/base/tools/evalrational"
