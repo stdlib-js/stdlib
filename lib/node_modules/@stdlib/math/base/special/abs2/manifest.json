@@ -28,7 +28,7 @@
 		{
 			"task": "build",
 			"src": [
-				"./src/abs2.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
@@ -42,7 +42,7 @@
 		{
 			"task": "benchmark",
 			"src": [
-				"./src/abs2.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
@@ -54,7 +54,7 @@
 		{
 			"task": "examples",
 			"src": [
-				"./src/abs2.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
