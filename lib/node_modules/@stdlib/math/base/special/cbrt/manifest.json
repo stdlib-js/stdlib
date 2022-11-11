@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/cbrt.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -38,8 +38,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/constants/float64/high-word-sign-mask",
         "@stdlib/math/base/napi/unary",
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/high-word-sign-mask",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/number/float64/base/from-words",
@@ -50,7 +51,7 @@
     {
       "task": "benchmark",
       "src": [
-        "./src/cbrt.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -60,6 +61,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-sign-mask",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
@@ -71,7 +73,7 @@
     {
       "task": "examples",
       "src": [
-        "./src/cbrt.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -81,6 +83,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-sign-mask",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",

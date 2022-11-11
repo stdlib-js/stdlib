@@ -18,15 +18,13 @@
 
 #include "stdlib/math/base/special/cbrt.h"
 #include "stdlib/constants/float64/high_word_sign_mask.h"
+#include "stdlib/constants/float64/high_word_abs_mask.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/number/float64/base/get_high_word.h"
 #include "stdlib/number/float64/base/set_high_word.h"
 #include "stdlib/number/float64/base/from_words.h"
 #include <stdint.h>
-
-// 0x7fffffff = 2147483647 => 0 11111111111 11111111111111111111
-static const uint32_t ABS_MASK = 2147483647;
 
 // 11111111111111111111111111111111 11000000000000000000000000000000
 static const uint64_t MASK = 0xffffffffc0000000ULL;
@@ -138,13 +136,13 @@ double stdlib_base_cbrt( const double x ) {
 	}
 	stdlib_base_float64_get_high_word( x, &hx );
 	sgn = hx & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGN_MASK;
-	hx &= ABS_MASK;
+	hx &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK;
 
 	// Rough cbrt...
 	if ( hx < FLOAT64_SMALLEST_NORMAL_HIGH_WORD ) {
 		t = TWO_54 * x;
 		stdlib_base_float64_get_high_word( t, &hw );
-		hw = ( (hw&ABS_MASK)/3 ) + B2;
+		hw = ( (hw&STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK)/3 ) + B2;
 		stdlib_base_float64_from_words( sgn|hw, 0, &t );
 	} else {
 		t = 0.0;
