@@ -17,13 +17,11 @@
 */
 
 #include "stdlib/math/base/special/flipsign.h"
+#include "stdlib/constants/float64/high_word_sign_mask.h"
 #include "stdlib/number/float64/base/to_words.h"
 #include "stdlib/number/float64/base/get_high_word.h"
 #include "stdlib/number/float64/base/from_words.h"
 #include <stdint.h>
-
-// 10000000000000000000000000000000 => 2147483648 => 0x80000000
-static const uint32_t SIGN_MASK = 0x80000000;
 
 /**
 * Returns a double-precision floating-point number with the magnitude of `x` and the sign of `x*y`.
@@ -53,7 +51,7 @@ double stdlib_base_flipsign( const double x, const double y ) {
 	stdlib_base_float64_get_high_word( y, &hy );
 
 	// Leave only the sign bit of `y` turned on (if on):
-	hy &= SIGN_MASK;
+	hy &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGN_MASK;
 
 	// Flip the sign bit of `x` only when the sign bit of `y` is on:
 	hx ^= hy; // 1^1=0 (flipped), 0^1=1 (flipped), 1^0=1 (unchanged), 0^0=0 (unchanged)

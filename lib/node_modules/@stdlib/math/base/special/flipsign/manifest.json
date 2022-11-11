@@ -38,8 +38,9 @@
 			],
 			"libpath": [],
 			"dependencies": [
-				"@stdlib/math/base/napi/binary",
-        "@stdlib/number/float64/base/to-words",
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/constants/float64/high-word-sign-mask",
+				"@stdlib/number/float64/base/to-words",
         "@stdlib/number/float64/base/get-high-word",
         "@stdlib/number/float64/base/from-words"
 			]
@@ -57,6 +58,7 @@
 			],
 			"libpath": [],
 			"dependencies": [
+        "@stdlib/constants/float64/high-word-sign-mask",
         "@stdlib/number/float64/base/to-words",
         "@stdlib/number/float64/base/get-high-word",
         "@stdlib/number/float64/base/from-words"
@@ -75,6 +77,7 @@
 			],
 			"libpath": [],
 			"dependencies": [
+        "@stdlib/constants/float64/high-word-sign-mask",
         "@stdlib/number/float64/base/to-words",
         "@stdlib/number/float64/base/get-high-word",
         "@stdlib/number/float64/base/from-words"
