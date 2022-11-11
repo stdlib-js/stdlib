@@ -17,10 +17,8 @@
 */
 
 #include "stdlib/math/base/special/absf.h"
+#include "stdlib/constants/float32/abs_mask.h"
 #include "stdlib/number/float32/base/to_word.h"
-
-// 0x7fffffff = 2147483647 => 0 11111111111 11111111111111111111
-static const uint32_t ABS_MASK = 2147483647;
 
 /**
 * Computes the absolute value of a single-precision floating-point number.
@@ -35,6 +33,6 @@ static const uint32_t ABS_MASK = 2147483647;
 float stdlib_base_absf( const float x ) {
 	stdlib_base_float32_word_t w;
 	w.value = x;
-	w.word &= ABS_MASK;
+	w.word &= STDLIB_CONSTANT_FLOAT32_ABS_MASK;
 	return w.value;
 }
