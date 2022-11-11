@@ -17,16 +17,12 @@
 */
 
 #include "stdlib/math/base/special/copysign.h"
+#include "stdlib/constants/float64/high_word_sign_mask.h"
+#include "stdlib/constants/float64/high_word_abs_mask.h"
 #include "stdlib/number/float64/base/to_words.h"
 #include "stdlib/number/float64/base/get_high_word.h"
 #include "stdlib/number/float64/base/from_words.h"
 #include <stdint.h>
-
-// 10000000000000000000000000000000 => 2147483648 => 0x80000000
-static const uint32_t SIGN_MASK = 0x80000000;
-
-// 01111111111111111111111111111111 => 2147483647 => 0x7fffffff
-static const int32_t MAGNITUDE_MASK = 0x7fffffff;
 
 /**
 * Returns a double-precision floating-point number with the magnitude of `x` and the sign of `y`.
@@ -53,13 +49,13 @@ double stdlib_base_copysign( const double x, const double y ) {
 	stdlib_base_float64_to_words( x, &hx, &lx );
 
 	// Turn off the sign bit of `x`:
-	hx &= MAGNITUDE_MASK;
+	hx &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK;
 
 	// Extract the higher order word from `y`:
 	stdlib_base_float64_get_high_word( y, &hy );
 
 	// Leave only the sign bit of `y` turned on:
-	hy &= SIGN_MASK;
+	hy &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGN_MASK;
 
 	// Copy the sign bit of `y` to `x`:
 	hx |= hy;
