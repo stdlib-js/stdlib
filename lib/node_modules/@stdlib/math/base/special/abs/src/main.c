@@ -17,10 +17,8 @@
 */
 
 #include "stdlib/math/base/special/abs.h"
+#include "stdlib/constants/float64/high_word_abs_mask.h"
 #include "stdlib/number/float64/base/to_words.h"
-
-// 0x7fffffff = 2147483647 => 0 11111111111 11111111111111111111
-static const uint32_t ABS_MASK = 2147483647;
 
 /**
 * Computes the absolute value of a double-precision floating-point number.
@@ -35,6 +33,6 @@ static const uint32_t ABS_MASK = 2147483647;
 double stdlib_base_abs( const double x ) {
 	stdlib_base_float64_words_t w;
 	w.value = x;
-	w.words.high &= ABS_MASK;
+	w.words.high &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK;
 	return w.value;
 }
