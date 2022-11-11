@@ -17,15 +17,13 @@
 */
 
 #include "stdlib/math/base/special/cbrt.h"
+#include "stdlib/constants/float64/high_word_sign_mask.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/number/float64/base/get_high_word.h"
 #include "stdlib/number/float64/base/set_high_word.h"
 #include "stdlib/number/float64/base/from_words.h"
 #include <stdint.h>
-
-// 0x80000000 = 2147483648 => 1 00000000000 00000000000000000000
-static const uint32_t SIGN_MASK = 2147483648;
 
 // 0x7fffffff = 2147483647 => 0 11111111111 11111111111111111111
 static const uint32_t ABS_MASK = 2147483647;
@@ -139,7 +137,7 @@ double stdlib_base_cbrt( const double x ) {
 		return x;
 	}
 	stdlib_base_float64_get_high_word( x, &hx );
-	sgn = hx & SIGN_MASK;
+	sgn = hx & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGN_MASK;
 	hx &= ABS_MASK;
 
 	// Rough cbrt...
