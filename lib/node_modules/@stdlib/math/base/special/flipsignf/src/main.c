@@ -17,12 +17,10 @@
 */
 
 #include "stdlib/math/base/special/flipsignf.h"
+#include "stdlib/constants/float32/sign_mask.h"
 #include "stdlib/number/float32/base/to_word.h"
 #include "stdlib/number/float32/base/from_word.h"
 #include <stdint.h>
-
-// 10000000000000000000000000000000 => 2147483648 => 0x80000000
-static const uint32_t SIGN_MASK = 0x80000000;
 
 /**
 * Returns a single-precision floating-point number with the magnitude of `x` and the sign of `x*y`.
@@ -49,7 +47,7 @@ float stdlib_base_flipsignf( const float x, const float y ) {
 	stdlib_base_float32_to_word( y, &wy );
 
 	// Leave only the sign bit of `y` turned on (if on):
-	wy &= SIGN_MASK;
+	wy &= STDLIB_CONSTANT_FLOAT32_SIGN_MASK;
 
 	// Flip the sign bit of `x` only when the sign bit of `y` is on:
 	wx ^= wy; // 1^1=0 (flipped), 0^1=1 (flipped), 1^0=1 (unchanged), 0^0=0 (unchanged)
