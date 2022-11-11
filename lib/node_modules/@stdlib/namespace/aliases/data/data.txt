@@ -613,7 +613,6 @@ base.erf
 base.erfc
 base.erfcinv
 base.erfcx
-base.erfcx
 base.erfinv
 base.eta
 base.evalpoly
