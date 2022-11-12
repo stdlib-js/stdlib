@@ -92,7 +92,7 @@ sinBy( x.length, x, 1, y, 1, accessor, context );
 // y => [ 0.0, ~0.002, ~-0.002, ~-0.544, ~-0.65 ]
 
 var cnt = context.count;
-// returns 8
+// returns 5
 ```
 
 The `N` and `stride` parameters determine which elements in `x` and `y` are accessed at runtime. For example, to index every other value in `x` and to index the first `N` elements of `y` in reverse order,
