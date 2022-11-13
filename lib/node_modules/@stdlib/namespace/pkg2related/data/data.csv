@@ -2566,6 +2566,7 @@
 "@stdlib/math/strided/special/cbrt","@stdlib/math/strided/special/dcbrt,@stdlib/math/strided/special/scbrt,@stdlib/math/strided/special/sqrt"
 "@stdlib/math/strided/special/ceil","@stdlib/math/strided/special/dceil,@stdlib/math/strided/special/floor,@stdlib/math/strided/special/trunc,@stdlib/math/strided/special/sceil"
 "@stdlib/math/strided/special/deg2rad","@stdlib/math/strided/special/ddeg2rad,@stdlib/math/strided/special/sdeg2rad"
+"@stdlib/strided/dtypes",""
 "@stdlib/strided/dispatch",""
 "@stdlib/math/strided/special/floor","@stdlib/math/strided/special/ceil,@stdlib/math/strided/special/dfloor,@stdlib/math/strided/special/trunc,@stdlib/math/strided/special/sfloor"
 "@stdlib/math/strided/special/inv","@stdlib/math/strided/special/dinv,@stdlib/math/strided/special/sinv"

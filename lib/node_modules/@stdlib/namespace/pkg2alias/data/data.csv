@@ -2566,6 +2566,7 @@
 "@stdlib/math/strided/special/cbrt",strided.cbrt
 "@stdlib/math/strided/special/ceil",strided.ceil
 "@stdlib/math/strided/special/deg2rad",strided.deg2rad
+"@stdlib/strided/dtypes",strided.dataTypes
 "@stdlib/strided/dispatch",strided.dispatch
 "@stdlib/math/strided/special/floor",strided.floor
 "@stdlib/math/strided/special/inv",strided.inv

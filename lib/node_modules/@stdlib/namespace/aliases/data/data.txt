@@ -2566,6 +2566,7 @@ strided.add
 strided.cbrt
 strided.ceil
 strided.deg2rad
+strided.dataTypes
 strided.dispatch
 strided.floor
 strided.inv
