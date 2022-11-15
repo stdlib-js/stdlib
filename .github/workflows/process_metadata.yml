@@ -74,7 +74,7 @@ jobs:
       - name: 'Check metadata for workflow dispatch directives'
         id: check-workflow-dispatch
         run: |
-          inputs=$(echo ${{ steps.extract-metadata.outputs.metadata }} | jq -c '.[] | select(.type | contains("workflow_dispatch")) | first')
+          inputs=$(echo '${{ steps.extract-metadata.outputs.metadata }}' | jq -c '.[] | select(.type | contains("workflow_dispatch"))')
           name=$(echo $inputs | jq -r '.name')
           if [ -n "$inputs" ]; then
             echo "inputs=$inputs" >> $GITHUB_OUTPUT
