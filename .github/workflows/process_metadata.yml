@@ -41,6 +41,14 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
+      # Exit if the user does not have write access to the repository:
+      - name: 'Exit if user does not have write access'
+        uses: lannonbr/repo-permission-check-action@2.0.0
+        with:
+          permission: 'write'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # Checkout the repository:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
