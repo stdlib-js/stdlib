@@ -76,7 +76,7 @@ jobs:
         run: |
           inputs=$(echo '${{ steps.extract-metadata.outputs.metadata }}' | jq -c '.[] | select(.type | contains("workflow_dispatch"))')
           if [ -n "$inputs" ]; then
-            inputs=$(echo $inputs | jq -c 'map_values(tostring)')
+            inputs=$(echo $inputs | jq -c 'del(.type, .name, .author, .id, .url) | map_values(tostring)')
             name=$(echo $inputs | jq -r '.name')
             echo "inputs=$inputs" >> $GITHUB_OUTPUT
             echo "workflow=$name" >> $GITHUB_OUTPUT
