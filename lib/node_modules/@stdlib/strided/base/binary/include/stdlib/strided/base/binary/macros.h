@@ -209,7 +209,7 @@
 * #include "stdlib/complex/float64.h"
 *
 * // e.g., dd_z
-* STDLIB_STRIDED_BINARY_LOOP_CLBK_ARG_CAST_FCN( double, stdlib_complex128_t, stdlib_complex128_from_float64 )
+* STDLIB_STRIDED_BINARY_LOOP_CLBK_RET_CAST_FCN( double, stdlib_complex128_t, stdlib_complex128_from_float64 )
 */
 #define STDLIB_STRIDED_BINARY_LOOP_CLBK_RET_CAST_FCN( tin, tout, cout )   \
 	STDLIB_STRIDED_BINARY_LOOP_PREAMBLE {                                 \
