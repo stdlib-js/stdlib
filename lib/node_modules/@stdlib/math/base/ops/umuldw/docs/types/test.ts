@@ -23,8 +23,7 @@ import umuldw = require( './index' );
 
 // The function returns an array-like object of numbers...
 {
-	umuldw( 0xAAAAAAAA, 0x55555555 ); // $ExpectType ArrayLike<number>
-	umuldw( [], 0xAAAAAAAA, 0x55555555 ); // $ExpectType ArrayLike<number>
+	umuldw( 0xAAAAAAAA, 0x55555555 ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided non-numbers for the last two arguments...
@@ -44,18 +43,88 @@ import umuldw = require( './index' );
 	umuldw( ( x: number ): number => x, 0x55555555 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	umuldw( true, 0xAAAAAAAA, 0x55555555 ); // $ExpectError
-	umuldw( false, 0xAAAAAAAA, 0x55555555 ); // $ExpectError
-	umuldw( 'abc', 0xAAAAAAAA, 0x55555555 ); // $ExpectError
-	umuldw( {}, 0xAAAAAAAA, 0x55555555 ); // $ExpectError
-	umuldw( ( x: number ): number => x, 0xAAAAAAAA, 0x55555555 ); // $ExpectError
-	umuldw( 123, 0xAAAAAAAA, 0x55555555 ); // $ExpectError
-}
-
 // The compiler throws an error if the function is provided an insufficient number of arguments...
 {
 	umuldw(); // $ExpectError
 	umuldw( 1 ); // $ExpectError
+}
+
+// Attached to the main export is an `assign` method which returns an array-like object containing numbers...
+{
+	const out = [ 0, 0 ];
+
+	umuldw.assign( 1, 5, out, 1, 0 ); // $ExpectType Collection
+}
+
+// The compiler throws an error if the `assign` method is provided a first argument which is not a number...
+{
+	const out = [ 0, 0 ];
+
+	umuldw.assign( true, 4, out, 1, 0 ); // $ExpectError
+	umuldw.assign( false, 4, out, 1, 0 ); // $ExpectError
+	umuldw.assign( '5', 4, out, 1, 0 ); // $ExpectError
+	umuldw.assign( null, 4, out, 1, 0 ); // $ExpectError
+	umuldw.assign( [], 4, out, 1, 0 ); // $ExpectError
+	umuldw.assign( {}, 4, out, 1, 0 ); // $ExpectError
+	umuldw.assign( ( x: number ): number => x, 4, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a second argument which is not a number...
+{
+	const out = [ 0, 0 ];
+
+	umuldw.assign( 4, true, out, 1, 0 ); // $ExpectError
+	umuldw.assign( 4, false, out, 1, 0 ); // $ExpectError
+	umuldw.assign( 4, '5', out, 1, 0 ); // $ExpectError
+	umuldw.assign( 4, null, out, 1, 0 ); // $ExpectError
+	umuldw.assign( 4, [], out, 1, 0 ); // $ExpectError
+	umuldw.assign( 4, {}, out, 1, 0 ); // $ExpectError
+	umuldw.assign( 4, ( x: number ): number => x, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a third argument which is not an array-like object...
+{
+	umuldw.assign( 4, 1.0, 1, 1, 0 ); // $ExpectError
+	umuldw.assign( 4, 1.0, true, 1, 0 ); // $ExpectError
+	umuldw.assign( 4, 1.0, false, 1, 0 ); // $ExpectError
+	umuldw.assign( 4, 1.0, null, 1, 0 ); // $ExpectError
+	umuldw.assign( 4, 1.0, {}, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a fourth argument which is not a number...
+{
+	const out = [ 0, 0 ];
+
+	umuldw.assign( 4, 1.0, out, '5', 0 ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, true, 0 ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, false, 0 ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, null, 0 ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, [], 0 ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, {}, 0 ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, ( x: number ): number => x, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a fifth argument which is not a number...
+{
+	const out = [ 0, 0 ];
+
+	umuldw.assign( 4, 1.0, out, 1, '5' ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, 1, true ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, 1, false ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, 1, null ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, 1, [] ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, 1, {} ); // $ExpectError
+	umuldw.assign( 4, 1.0, out, 1, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
+{
+	const out = [ 0, 0 ];
+
+	umuldw.assign(); // $ExpectError
+	umuldw.assign( 1.0 ); // $ExpectError
+	umuldw.assign( 1.0, out ); // $ExpectError
+	umuldw.assign( 1.0, out, 1 ); // $ExpectError
+	umuldw.assign( 1.0, out, 1, 0 ); // $ExpectError
+	umuldw.assign( 1.0, out, 1, 0, 1, 1 ); // $ExpectError
 }
