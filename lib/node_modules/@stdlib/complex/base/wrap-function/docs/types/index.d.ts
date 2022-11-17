@@ -254,11 +254,11 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 *
 * @example
 * var Complex64 = require( `@stdlib/complex/float32` );
-* var cadd = require( `@stdlib/math/base/ops/cadd` );
+* var caddf = require( `@stdlib/math/base/ops/caddf` );
 * var realf = require( `@stdlib/complex/realf` );
 * var imagf = require( `@stdlib/complex/imagf` );
 *
-* var f = wrap( cadd, 2, Complex64 );
+* var f = wrap( caddf, 2, Complex64 );
 *
 * // ...
 *
