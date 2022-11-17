@@ -832,6 +832,8 @@
 "@stdlib/math/base/special/sqrtf",base.sqrtf
 "@stdlib/math/base/special/sqrtpi",base.sqrtpi
 "@stdlib/strided/base/binary",base.strided.binary
+"@stdlib/strided/base/binary-dtype-signatures",base.strided.binaryDtypeSignatures
+"@stdlib/strided/base/binary-signature-callbacks",base.strided.binarySignatureCallbacks
 "@stdlib/blas/base/ccopy",base.strided.ccopy
 "@stdlib/strided/base/cmap",base.strided.cmap
 "@stdlib/blas/base/cswap",base.strided.cswap
@@ -1243,6 +1245,8 @@
 "@stdlib/stats/base/svarianceyc",base.strided.svarianceyc
 "@stdlib/strided/base/ternary",base.strided.ternary
 "@stdlib/strided/base/unary",base.strided.unary
+"@stdlib/strided/base/unary-dtype-signatures",base.strided.unaryDtypeSignatures
+"@stdlib/strided/base/unary-signature-callbacks",base.strided.unarySignatureCallbacks
 "@stdlib/stats/base/variance",base.strided.variance
 "@stdlib/stats/base/variancech",base.strided.variancech
 "@stdlib/stats/base/variancepn",base.strided.variancepn

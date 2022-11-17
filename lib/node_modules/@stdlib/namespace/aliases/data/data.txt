@@ -832,6 +832,8 @@ base.sqrt1pm1
 base.sqrtf
 base.sqrtpi
 base.strided.binary
+base.strided.binaryDtypeSignatures
+base.strided.binarySignatureCallbacks
 base.strided.ccopy
 base.strided.cmap
 base.strided.cswap
@@ -1243,6 +1245,8 @@ base.strided.svariancewd
 base.strided.svarianceyc
 base.strided.ternary
 base.strided.unary
+base.strided.unaryDtypeSignatures
+base.strided.unarySignatureCallbacks
 base.strided.variance
 base.strided.variancech
 base.strided.variancepn
