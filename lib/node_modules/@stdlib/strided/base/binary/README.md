@@ -342,7 +342,7 @@ stdlib_strided_bb_b( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t, uint8_t)` function to apply provided as a `void` pointer.
@@ -383,7 +383,7 @@ stdlib_strided_bb_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t, uint8_t)` function to apply provided as a `void` pointer.
@@ -425,7 +425,7 @@ stdlib_strided_bb_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -467,7 +467,7 @@ stdlib_strided_bb_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -508,7 +508,7 @@ stdlib_strided_bb_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t, uint8_t)` function to apply provided as a `void` pointer.
@@ -549,7 +549,7 @@ stdlib_strided_bb_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -590,7 +590,7 @@ stdlib_strided_bb_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t, uint8_t)` function to apply provided as a `void` pointer.
@@ -631,7 +631,7 @@ stdlib_strided_bb_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -672,7 +672,7 @@ stdlib_strided_bb_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -713,7 +713,7 @@ stdlib_strided_bb_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t, uint8_t)` function to apply provided as a `void` pointer.
@@ -754,7 +754,7 @@ stdlib_strided_bb_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -795,7 +795,7 @@ stdlib_strided_bb_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t, uint8_t)` function to apply provided as a `void` pointer.
@@ -836,7 +836,7 @@ stdlib_strided_bb_k_as_kk_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -877,7 +877,7 @@ stdlib_strided_bb_t( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t, uint8_t)` function to apply provided as a `void` pointer.
@@ -918,7 +918,7 @@ stdlib_strided_bb_t_as_tt_t( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t, uint16_t)` function to apply provided as a `void` pointer.
@@ -959,7 +959,7 @@ stdlib_strided_bb_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t, uint8_t)` function to apply provided as a `void` pointer.
@@ -1000,7 +1000,7 @@ stdlib_strided_bb_u_as_uu_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -1041,7 +1041,7 @@ stdlib_strided_bb_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t, uint8_t)` function to apply provided as a `void` pointer.
@@ -1083,7 +1083,7 @@ stdlib_strided_bb_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -1125,7 +1125,7 @@ stdlib_strided_bc_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -1167,7 +1167,7 @@ stdlib_strided_bc_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -1209,7 +1209,7 @@ stdlib_strided_bc_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -1250,7 +1250,7 @@ stdlib_strided_bd_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -1292,7 +1292,7 @@ stdlib_strided_bd_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -1334,7 +1334,7 @@ stdlib_strided_bf_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -1376,7 +1376,7 @@ stdlib_strided_bf_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -1417,7 +1417,7 @@ stdlib_strided_bf_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -1458,7 +1458,7 @@ stdlib_strided_bf_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -1499,7 +1499,7 @@ stdlib_strided_bf_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -1541,7 +1541,7 @@ stdlib_strided_bf_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -1582,7 +1582,7 @@ stdlib_strided_bi_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -1623,7 +1623,7 @@ stdlib_strided_bi_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -1665,7 +1665,7 @@ stdlib_strided_bi_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -1707,7 +1707,7 @@ stdlib_strided_bk_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -1749,7 +1749,7 @@ stdlib_strided_bk_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -1790,7 +1790,7 @@ stdlib_strided_bk_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -1831,7 +1831,7 @@ stdlib_strided_bk_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -1872,7 +1872,7 @@ stdlib_strided_bk_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -1913,7 +1913,7 @@ stdlib_strided_bk_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -1954,7 +1954,7 @@ stdlib_strided_bk_k_as_kk_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -1996,7 +1996,7 @@ stdlib_strided_bk_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -2038,7 +2038,7 @@ stdlib_strided_bs_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -2080,7 +2080,7 @@ stdlib_strided_bs_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -2121,7 +2121,7 @@ stdlib_strided_bs_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -2162,7 +2162,7 @@ stdlib_strided_bs_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -2203,7 +2203,7 @@ stdlib_strided_bs_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -2244,7 +2244,7 @@ stdlib_strided_bs_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -2285,7 +2285,7 @@ stdlib_strided_bs_k_as_kk_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -2327,7 +2327,7 @@ stdlib_strided_bs_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -2369,7 +2369,7 @@ stdlib_strided_bt_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -2411,7 +2411,7 @@ stdlib_strided_bt_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -2452,7 +2452,7 @@ stdlib_strided_bt_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -2493,7 +2493,7 @@ stdlib_strided_bt_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -2534,7 +2534,7 @@ stdlib_strided_bt_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -2575,7 +2575,7 @@ stdlib_strided_bt_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -2616,7 +2616,7 @@ stdlib_strided_bt_t_as_tt_t( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t, uint16_t)` function to apply provided as a `void` pointer.
@@ -2657,7 +2657,7 @@ stdlib_strided_bt_u_as_uu_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -2699,7 +2699,7 @@ stdlib_strided_bt_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -2740,7 +2740,7 @@ stdlib_strided_bu_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -2781,7 +2781,7 @@ stdlib_strided_bu_u_as_uu_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -2823,7 +2823,7 @@ stdlib_strided_bu_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -2865,7 +2865,7 @@ stdlib_strided_bz_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -2907,7 +2907,7 @@ stdlib_strided_cb_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -2949,7 +2949,7 @@ stdlib_strided_cb_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -2991,7 +2991,7 @@ stdlib_strided_cb_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3033,7 +3033,7 @@ stdlib_strided_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -3075,7 +3075,7 @@ stdlib_strided_cc_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3117,7 +3117,7 @@ stdlib_strided_cc_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -3159,7 +3159,7 @@ stdlib_strided_cc_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3201,7 +3201,7 @@ stdlib_strided_cd_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3243,7 +3243,7 @@ stdlib_strided_cf_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -3285,7 +3285,7 @@ stdlib_strided_cf_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3327,7 +3327,7 @@ stdlib_strided_cf_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3369,7 +3369,7 @@ stdlib_strided_ci_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3411,7 +3411,7 @@ stdlib_strided_ck_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -3453,7 +3453,7 @@ stdlib_strided_ck_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3495,7 +3495,7 @@ stdlib_strided_ck_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3537,7 +3537,7 @@ stdlib_strided_cs_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -3579,7 +3579,7 @@ stdlib_strided_cs_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3621,7 +3621,7 @@ stdlib_strided_cs_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3663,7 +3663,7 @@ stdlib_strided_ct_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -3705,7 +3705,7 @@ stdlib_strided_ct_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3747,7 +3747,7 @@ stdlib_strided_ct_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3789,7 +3789,7 @@ stdlib_strided_cu_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3831,7 +3831,7 @@ stdlib_strided_cz_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3872,7 +3872,7 @@ stdlib_strided_db_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -3914,7 +3914,7 @@ stdlib_strided_db_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3956,7 +3956,7 @@ stdlib_strided_dc_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -3997,7 +3997,7 @@ stdlib_strided_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -4038,7 +4038,7 @@ stdlib_strided_dd_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -4080,7 +4080,7 @@ stdlib_strided_dd_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4121,7 +4121,7 @@ stdlib_strided_df_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -4163,7 +4163,7 @@ stdlib_strided_df_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4204,7 +4204,7 @@ stdlib_strided_di_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -4246,7 +4246,7 @@ stdlib_strided_di_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4287,7 +4287,7 @@ stdlib_strided_dk_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -4329,7 +4329,7 @@ stdlib_strided_dk_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4370,7 +4370,7 @@ stdlib_strided_ds_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -4412,7 +4412,7 @@ stdlib_strided_ds_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4453,7 +4453,7 @@ stdlib_strided_dt_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -4495,7 +4495,7 @@ stdlib_strided_dt_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4536,7 +4536,7 @@ stdlib_strided_du_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -4578,7 +4578,7 @@ stdlib_strided_du_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4620,7 +4620,7 @@ stdlib_strided_dz_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4662,7 +4662,7 @@ stdlib_strided_fb_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -4704,7 +4704,7 @@ stdlib_strided_fb_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4745,7 +4745,7 @@ stdlib_strided_fb_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -4786,7 +4786,7 @@ stdlib_strided_fb_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -4827,7 +4827,7 @@ stdlib_strided_fb_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -4869,7 +4869,7 @@ stdlib_strided_fb_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4911,7 +4911,7 @@ stdlib_strided_fc_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -4953,7 +4953,7 @@ stdlib_strided_fc_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -4995,7 +4995,7 @@ stdlib_strided_fc_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -5036,7 +5036,7 @@ stdlib_strided_fd_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -5078,7 +5078,7 @@ stdlib_strided_fd_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -5119,7 +5119,7 @@ stdlib_strided_ff_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -5161,7 +5161,7 @@ stdlib_strided_ff_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -5203,7 +5203,7 @@ stdlib_strided_ff_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -5244,7 +5244,7 @@ stdlib_strided_ff_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -5285,7 +5285,7 @@ stdlib_strided_ff_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -5326,7 +5326,7 @@ stdlib_strided_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -5367,7 +5367,7 @@ stdlib_strided_ff_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -5408,7 +5408,7 @@ stdlib_strided_ff_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -5450,7 +5450,7 @@ stdlib_strided_ff_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -5491,7 +5491,7 @@ stdlib_strided_fi_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -5533,7 +5533,7 @@ stdlib_strided_fi_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -5575,7 +5575,7 @@ stdlib_strided_fk_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -5617,7 +5617,7 @@ stdlib_strided_fk_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -5658,7 +5658,7 @@ stdlib_strided_fk_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -5699,7 +5699,7 @@ stdlib_strided_fk_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -5740,7 +5740,7 @@ stdlib_strided_fk_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -5782,7 +5782,7 @@ stdlib_strided_fk_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -5824,7 +5824,7 @@ stdlib_strided_fs_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -5866,7 +5866,7 @@ stdlib_strided_fs_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -5907,7 +5907,7 @@ stdlib_strided_fs_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -5948,7 +5948,7 @@ stdlib_strided_fs_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -5989,7 +5989,7 @@ stdlib_strided_fs_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -6031,7 +6031,7 @@ stdlib_strided_fs_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -6073,7 +6073,7 @@ stdlib_strided_ft_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -6115,7 +6115,7 @@ stdlib_strided_ft_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -6156,7 +6156,7 @@ stdlib_strided_ft_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -6197,7 +6197,7 @@ stdlib_strided_ft_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -6238,7 +6238,7 @@ stdlib_strided_ft_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -6280,7 +6280,7 @@ stdlib_strided_ft_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -6321,7 +6321,7 @@ stdlib_strided_fu_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -6363,7 +6363,7 @@ stdlib_strided_fu_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -6405,7 +6405,7 @@ stdlib_strided_fz_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -6446,7 +6446,7 @@ stdlib_strided_ib_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -6487,7 +6487,7 @@ stdlib_strided_ib_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -6529,7 +6529,7 @@ stdlib_strided_ib_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -6571,7 +6571,7 @@ stdlib_strided_ic_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -6612,7 +6612,7 @@ stdlib_strided_id_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -6654,7 +6654,7 @@ stdlib_strided_id_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -6695,7 +6695,7 @@ stdlib_strided_if_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -6737,7 +6737,7 @@ stdlib_strided_if_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -6778,7 +6778,7 @@ stdlib_strided_ii_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -6819,7 +6819,7 @@ stdlib_strided_ii_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -6860,7 +6860,7 @@ stdlib_strided_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -6901,7 +6901,7 @@ stdlib_strided_ii_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -6943,7 +6943,7 @@ stdlib_strided_ii_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -6984,7 +6984,7 @@ stdlib_strided_ik_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -7025,7 +7025,7 @@ stdlib_strided_ik_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -7067,7 +7067,7 @@ stdlib_strided_ik_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -7108,7 +7108,7 @@ stdlib_strided_is_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -7149,7 +7149,7 @@ stdlib_strided_is_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -7191,7 +7191,7 @@ stdlib_strided_is_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -7232,7 +7232,7 @@ stdlib_strided_it_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -7273,7 +7273,7 @@ stdlib_strided_it_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -7315,7 +7315,7 @@ stdlib_strided_it_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -7356,7 +7356,7 @@ stdlib_strided_iu_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -7398,7 +7398,7 @@ stdlib_strided_iu_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -7440,7 +7440,7 @@ stdlib_strided_iz_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -7482,7 +7482,7 @@ stdlib_strided_kb_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -7524,7 +7524,7 @@ stdlib_strided_kb_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -7565,7 +7565,7 @@ stdlib_strided_kb_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -7606,7 +7606,7 @@ stdlib_strided_kb_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -7647,7 +7647,7 @@ stdlib_strided_kb_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -7688,7 +7688,7 @@ stdlib_strided_kb_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -7729,7 +7729,7 @@ stdlib_strided_kb_k_as_kk_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -7771,7 +7771,7 @@ stdlib_strided_kb_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -7813,7 +7813,7 @@ stdlib_strided_kc_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -7855,7 +7855,7 @@ stdlib_strided_kc_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -7897,7 +7897,7 @@ stdlib_strided_kc_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -7938,7 +7938,7 @@ stdlib_strided_kd_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -7980,7 +7980,7 @@ stdlib_strided_kd_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -8022,7 +8022,7 @@ stdlib_strided_kf_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -8064,7 +8064,7 @@ stdlib_strided_kf_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -8105,7 +8105,7 @@ stdlib_strided_kf_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -8146,7 +8146,7 @@ stdlib_strided_kf_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -8187,7 +8187,7 @@ stdlib_strided_kf_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -8229,7 +8229,7 @@ stdlib_strided_kf_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -8270,7 +8270,7 @@ stdlib_strided_ki_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -8311,7 +8311,7 @@ stdlib_strided_ki_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -8353,7 +8353,7 @@ stdlib_strided_ki_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -8394,7 +8394,7 @@ stdlib_strided_kk_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -8436,7 +8436,7 @@ stdlib_strided_kk_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -8478,7 +8478,7 @@ stdlib_strided_kk_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -8519,7 +8519,7 @@ stdlib_strided_kk_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -8560,7 +8560,7 @@ stdlib_strided_kk_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -8601,7 +8601,7 @@ stdlib_strided_kk_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -8642,7 +8642,7 @@ stdlib_strided_kk_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -8683,7 +8683,7 @@ stdlib_strided_kk_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -8724,7 +8724,7 @@ stdlib_strided_kk_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -8765,7 +8765,7 @@ stdlib_strided_kk_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -8806,7 +8806,7 @@ stdlib_strided_kk_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -8847,7 +8847,7 @@ stdlib_strided_kk_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -8889,7 +8889,7 @@ stdlib_strided_kk_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -8931,7 +8931,7 @@ stdlib_strided_ks_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -8973,7 +8973,7 @@ stdlib_strided_ks_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -9014,7 +9014,7 @@ stdlib_strided_ks_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -9055,7 +9055,7 @@ stdlib_strided_ks_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -9096,7 +9096,7 @@ stdlib_strided_ks_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -9137,7 +9137,7 @@ stdlib_strided_ks_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -9178,7 +9178,7 @@ stdlib_strided_ks_k_as_kk_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -9220,7 +9220,7 @@ stdlib_strided_ks_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -9261,7 +9261,7 @@ stdlib_strided_kt_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -9302,7 +9302,7 @@ stdlib_strided_kt_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -9344,7 +9344,7 @@ stdlib_strided_kt_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -9385,7 +9385,7 @@ stdlib_strided_ku_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -9427,7 +9427,7 @@ stdlib_strided_ku_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -9469,7 +9469,7 @@ stdlib_strided_kz_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -9511,7 +9511,7 @@ stdlib_strided_sb_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -9553,7 +9553,7 @@ stdlib_strided_sb_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -9594,7 +9594,7 @@ stdlib_strided_sb_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -9635,7 +9635,7 @@ stdlib_strided_sb_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -9676,7 +9676,7 @@ stdlib_strided_sb_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -9717,7 +9717,7 @@ stdlib_strided_sb_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -9758,7 +9758,7 @@ stdlib_strided_sb_k_as_kk_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -9800,7 +9800,7 @@ stdlib_strided_sb_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -9842,7 +9842,7 @@ stdlib_strided_sc_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -9884,7 +9884,7 @@ stdlib_strided_sc_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -9926,7 +9926,7 @@ stdlib_strided_sc_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -9967,7 +9967,7 @@ stdlib_strided_sd_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -10009,7 +10009,7 @@ stdlib_strided_sd_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -10051,7 +10051,7 @@ stdlib_strided_sf_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -10093,7 +10093,7 @@ stdlib_strided_sf_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -10134,7 +10134,7 @@ stdlib_strided_sf_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -10175,7 +10175,7 @@ stdlib_strided_sf_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -10216,7 +10216,7 @@ stdlib_strided_sf_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -10258,7 +10258,7 @@ stdlib_strided_sf_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -10299,7 +10299,7 @@ stdlib_strided_si_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -10340,7 +10340,7 @@ stdlib_strided_si_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -10382,7 +10382,7 @@ stdlib_strided_si_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -10424,7 +10424,7 @@ stdlib_strided_sk_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -10466,7 +10466,7 @@ stdlib_strided_sk_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -10507,7 +10507,7 @@ stdlib_strided_sk_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -10548,7 +10548,7 @@ stdlib_strided_sk_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -10589,7 +10589,7 @@ stdlib_strided_sk_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -10630,7 +10630,7 @@ stdlib_strided_sk_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -10671,7 +10671,7 @@ stdlib_strided_sk_k_as_kk_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -10713,7 +10713,7 @@ stdlib_strided_sk_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -10754,7 +10754,7 @@ stdlib_strided_ss_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t, int8_t)` function to apply provided as a `void` pointer.
@@ -10796,7 +10796,7 @@ stdlib_strided_ss_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -10838,7 +10838,7 @@ stdlib_strided_ss_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -10879,7 +10879,7 @@ stdlib_strided_ss_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t, int8_t)` function to apply provided as a `void` pointer.
@@ -10920,7 +10920,7 @@ stdlib_strided_ss_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -10961,7 +10961,7 @@ stdlib_strided_ss_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t, int8_t)` function to apply provided as a `void` pointer.
@@ -11002,7 +11002,7 @@ stdlib_strided_ss_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -11043,7 +11043,7 @@ stdlib_strided_ss_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -11084,7 +11084,7 @@ stdlib_strided_ss_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t, int8_t)` function to apply provided as a `void` pointer.
@@ -11125,7 +11125,7 @@ stdlib_strided_ss_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -11166,7 +11166,7 @@ stdlib_strided_ss_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t, int8_t)` function to apply provided as a `void` pointer.
@@ -11207,7 +11207,7 @@ stdlib_strided_ss_k_as_kk_k( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t, int16_t)` function to apply provided as a `void` pointer.
@@ -11248,7 +11248,7 @@ stdlib_strided_ss_s( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t, int8_t)` function to apply provided as a `void` pointer.
@@ -11289,7 +11289,7 @@ stdlib_strided_ss_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t, int8_t)` function to apply provided as a `void` pointer.
@@ -11331,7 +11331,7 @@ stdlib_strided_ss_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -11372,7 +11372,7 @@ stdlib_strided_st_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -11413,7 +11413,7 @@ stdlib_strided_st_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -11455,7 +11455,7 @@ stdlib_strided_st_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -11496,7 +11496,7 @@ stdlib_strided_su_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -11538,7 +11538,7 @@ stdlib_strided_su_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -11580,7 +11580,7 @@ stdlib_strided_sz_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -11622,7 +11622,7 @@ stdlib_strided_tb_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -11664,7 +11664,7 @@ stdlib_strided_tb_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -11705,7 +11705,7 @@ stdlib_strided_tb_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -11746,7 +11746,7 @@ stdlib_strided_tb_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -11787,7 +11787,7 @@ stdlib_strided_tb_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -11828,7 +11828,7 @@ stdlib_strided_tb_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -11869,7 +11869,7 @@ stdlib_strided_tb_t_as_tt_t( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t, uint16_t)` function to apply provided as a `void` pointer.
@@ -11910,7 +11910,7 @@ stdlib_strided_tb_u_as_uu_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -11952,7 +11952,7 @@ stdlib_strided_tb_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -11994,7 +11994,7 @@ stdlib_strided_tc_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -12036,7 +12036,7 @@ stdlib_strided_tc_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -12078,7 +12078,7 @@ stdlib_strided_tc_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -12119,7 +12119,7 @@ stdlib_strided_td_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -12161,7 +12161,7 @@ stdlib_strided_td_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -12203,7 +12203,7 @@ stdlib_strided_tf_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -12245,7 +12245,7 @@ stdlib_strided_tf_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -12286,7 +12286,7 @@ stdlib_strided_tf_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -12327,7 +12327,7 @@ stdlib_strided_tf_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -12368,7 +12368,7 @@ stdlib_strided_tf_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -12410,7 +12410,7 @@ stdlib_strided_tf_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -12451,7 +12451,7 @@ stdlib_strided_ti_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -12492,7 +12492,7 @@ stdlib_strided_ti_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -12534,7 +12534,7 @@ stdlib_strided_ti_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -12575,7 +12575,7 @@ stdlib_strided_tk_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -12616,7 +12616,7 @@ stdlib_strided_tk_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -12658,7 +12658,7 @@ stdlib_strided_tk_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -12699,7 +12699,7 @@ stdlib_strided_ts_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -12740,7 +12740,7 @@ stdlib_strided_ts_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -12782,7 +12782,7 @@ stdlib_strided_ts_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -12823,7 +12823,7 @@ stdlib_strided_tt_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t, uint16_t)` function to apply provided as a `void` pointer.
@@ -12865,7 +12865,7 @@ stdlib_strided_tt_c_as_cc_c( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t, stdlib_complex64_t)` function to apply provided as a `void` pointer.
@@ -12907,7 +12907,7 @@ stdlib_strided_tt_c_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -12948,7 +12948,7 @@ stdlib_strided_tt_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t, uint16_t)` function to apply provided as a `void` pointer.
@@ -12989,7 +12989,7 @@ stdlib_strided_tt_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -13030,7 +13030,7 @@ stdlib_strided_tt_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t, uint16_t)` function to apply provided as a `void` pointer.
@@ -13071,7 +13071,7 @@ stdlib_strided_tt_f_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -13112,7 +13112,7 @@ stdlib_strided_tt_f_as_ff_f( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `float (*f)(float, float)` function to apply provided as a `void` pointer.
@@ -13153,7 +13153,7 @@ stdlib_strided_tt_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t, uint16_t)` function to apply provided as a `void` pointer.
@@ -13194,7 +13194,7 @@ stdlib_strided_tt_i_as_ii_i( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t, int32_t)` function to apply provided as a `void` pointer.
@@ -13235,7 +13235,7 @@ stdlib_strided_tt_t( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t, uint16_t)` function to apply provided as a `void` pointer.
@@ -13276,7 +13276,7 @@ stdlib_strided_tt_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t, uint16_t)` function to apply provided as a `void` pointer.
@@ -13317,7 +13317,7 @@ stdlib_strided_tt_u_as_uu_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -13358,7 +13358,7 @@ stdlib_strided_tt_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t, uint16_t)` function to apply provided as a `void` pointer.
@@ -13400,7 +13400,7 @@ stdlib_strided_tt_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -13441,7 +13441,7 @@ stdlib_strided_tu_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -13482,7 +13482,7 @@ stdlib_strided_tu_u_as_uu_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -13524,7 +13524,7 @@ stdlib_strided_tu_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -13566,7 +13566,7 @@ stdlib_strided_tz_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -13607,7 +13607,7 @@ stdlib_strided_ub_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -13648,7 +13648,7 @@ stdlib_strided_ub_u_as_uu_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -13690,7 +13690,7 @@ stdlib_strided_ub_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -13732,7 +13732,7 @@ stdlib_strided_uc_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -13773,7 +13773,7 @@ stdlib_strided_ud_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -13815,7 +13815,7 @@ stdlib_strided_ud_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -13856,7 +13856,7 @@ stdlib_strided_uf_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -13898,7 +13898,7 @@ stdlib_strided_uf_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -13939,7 +13939,7 @@ stdlib_strided_ui_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -13981,7 +13981,7 @@ stdlib_strided_ui_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14022,7 +14022,7 @@ stdlib_strided_uk_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -14064,7 +14064,7 @@ stdlib_strided_uk_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14105,7 +14105,7 @@ stdlib_strided_us_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -14147,7 +14147,7 @@ stdlib_strided_us_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14188,7 +14188,7 @@ stdlib_strided_ut_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -14229,7 +14229,7 @@ stdlib_strided_ut_u_as_uu_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -14271,7 +14271,7 @@ stdlib_strided_ut_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14312,7 +14312,7 @@ stdlib_strided_uu_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -14353,7 +14353,7 @@ stdlib_strided_uu_d_as_dd_d( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `double (*f)(double, double)` function to apply provided as a `void` pointer.
@@ -14394,7 +14394,7 @@ stdlib_strided_uu_u( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -14435,7 +14435,7 @@ stdlib_strided_uu_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t, uint32_t)` function to apply provided as a `void` pointer.
@@ -14477,7 +14477,7 @@ stdlib_strided_uu_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14519,7 +14519,7 @@ stdlib_strided_uz_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14561,7 +14561,7 @@ stdlib_strided_zb_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14603,7 +14603,7 @@ stdlib_strided_zc_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14645,7 +14645,7 @@ stdlib_strided_zd_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14687,7 +14687,7 @@ stdlib_strided_zf_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14729,7 +14729,7 @@ stdlib_strided_zi_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14771,7 +14771,7 @@ stdlib_strided_zk_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14813,7 +14813,7 @@ stdlib_strided_zs_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14855,7 +14855,7 @@ stdlib_strided_zt_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14897,7 +14897,7 @@ stdlib_strided_zu_z_as_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
@@ -14939,7 +14939,7 @@ stdlib_strided_zz_z( arrays, shape, strides, (void *)add );
 
 The function accepts the following arguments:
 
--   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+-   **arrays**: `[inout] uint8_t**` array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t, stdlib_complex128_t)` function to apply provided as a `void` pointer.
