@@ -64,5 +64,5 @@
 void stdlib_strided_c_z_as_c_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
 	typedef stdlib_complex128_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_UNARY_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex64_t, stdlib_complex128_t, stdlib_complex64_from_complex64, stdlib_complex64_from_complex128 )
+	STDLIB_STRIDED_UNARY_LOOP_CLBK_RET_NONSCALAR( stdlib_complex64_t, stdlib_complex128_t )
 }
