@@ -178,7 +178,7 @@
 *
 * ## Notes
 *
-* -   Retrieves each strided array element according to type `tin` via a pointer `ip`.
+* -   Retrieves each strided array element according to type `tin` via a pointer `ip1`.
 * -   Explicitly casts each function argument via `cin`.
 * -   Explicitly casts each function `f` invocation result via `cout`.
 * -   Stores the result in an output strided array of type `tout` via the pointer `op1`.
@@ -206,7 +206,7 @@
 *
 * ## Notes
 *
-* -   Retrieves each strided array element according to type `tin` via a pointer `ip`.
+* -   Retrieves each strided array element according to type `tin` via a pointer `ip1`.
 * -   Explicitly casts each function `f` invocation result via `cout`.
 * -   Stores the result in an output strided array of type `tout` via the pointer `op1`.
 *
