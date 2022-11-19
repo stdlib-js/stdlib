@@ -1,0 +1,40 @@
+#### stdlib_strided_mask_{{SIGNATURE}}( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
+
+```c{{INCLUDES}}
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { {{INPUT_ARRAY_BYTES_1}} };
+uint8_t m[] = { {{MASK_ARRAY_BYTES}} };
+uint8_t out[] = { {{OUTPUT_ARRAY_BYTES}} };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, m, out };
+
+// Define the strides:
+int64_t strides[] = { {{INPUT_ARRAY_STRIDE_1}}, 1, {{OUTPUT_ARRAY_STRIDE}} };
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { {{N}} };
+
+// Define a callback:
+{{CALLBACK_RETURN_TYPE}} fcn( {{CALLBACK_PARAM_TYPE_1}} x ) {
+    {{CALLBACK_BODY}}
+}
+
+// Apply the callback:
+stdlib_strided_mask_{{SIGNATURE}}( arrays, shape, strides, (void *)fcn );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array, whose second element is a pointer to a strided mask array, and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `{{CALLBACK_RETURN_TYPE}} (*f)({{CALLBACK_PARAM_TYPE_1}})` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_mask_{{SIGNATURE}}( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```

@@ -17,7 +17,7 @@
 */
 
 /**
-* Header file containing strided array macros for loops involving "unary" functions or expressions.
+* Header file containing strided array macros.
 */
 #ifndef STDLIB_STRIDED_BASE_MSKUNARY_MACROS_H
 #define STDLIB_STRIDED_BASE_MSKUNARY_MACROS_H
@@ -130,6 +130,7 @@
 * @param tout  output type
 *
 * @example
+* // e.g., d_d
 * STDLIB_STRIDED_MSKUNARY_LOOP_CLBK( double, double )
 */
 #define STDLIB_STRIDED_MSKUNARY_LOOP_CLBK( tin, tout )     \
@@ -139,6 +140,32 @@
 		}                                                  \
 		const tin x = *(tin *)ip1;                         \
 		*(tout *)op1 = (tout)f( x );                       \
+	}
+
+/**
+* Macro for a unary loop which invokes a callback which returns a non-scalar value (e.g., a `struct`).
+*
+* ## Notes
+*
+* -   Retrieves each strided array element according to type `tin` via a pointer `ip1`.
+* -   Stores the result in an output strided array of type `tout` via the pointer `op1`.
+*
+* @param tin   input type
+* @param tout  output type
+*
+* @example
+* #include "stdlib/complex/float64.h"
+*
+* // e.g., z_z
+* STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_NONSCALAR( stdlib_complex128_t, stdlib_complex128_t )
+*/
+#define STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_NONSCALAR( tin, tout )           \
+	STDLIB_STRIDED_MSKUNARY_LOOP_PREAMBLE {                                    \
+		if ( *(uint8_t *)mp1 ) {                                               \
+			continue;                                                          \
+		}                                                                      \
+		const tin x = *(tin *)ip1;                                             \
+		*(tout *)op1 = f( x );                                                 \
 	}
 
 /**
@@ -156,6 +183,7 @@
 * @param fin   callback argument type
 *
 * @example
+* // e.g., f_f_as_d_d
 * STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_ARG_CAST( float, float, double )
 */
 #define STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_ARG_CAST( tin, tout, fin )  \
@@ -165,6 +193,65 @@
 		}                                                             \
 		const tin x = *(tin *)ip1;                                    \
 		*(tout *)op1 = (tout)f( (fin)x );                             \
+	}
+
+/**
+* Macro for a unary loop which invokes a callback requiring arguments be cast to a different type via casting functions.
+*
+* ## Notes
+*
+* -   Retrieves each strided array element according to type `tin` via a pointer `ip1`.
+* -   Explicitly casts each function argument via `cin`.
+* -   Explicitly casts each function `f` invocation result via `cout`.
+* -   Stores the result in an output strided array of type `tout` via the pointer `op1`.
+*
+* @param tin   input type
+* @param tout  output type
+* @param cin   input casting function
+* @param cout  output casting function
+*
+* @example
+* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float64.h"
+*
+* // e.g., f_c_as_z_z
+* STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex128_from_float32, stdlib_complex128_to_complex64 )
+*/
+#define STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_ARG_CAST_FCN( tin, tout, cin, cout ) \
+	STDLIB_STRIDED_MSKUNARY_LOOP_PREAMBLE {                                    \
+		if ( *(uint8_t *)mp1 ) {                                               \
+			continue;                                                          \
+		}                                                                      \
+		const tin x = *(tin *)ip1;                                             \
+		*(tout *)op1 = cout( f( cin( x ) ) );                                  \
+	}
+
+/**
+* Macro for a unary loop which invokes a callback whose return value must be cast to a different type via a casting function.
+*
+* ## Notes
+*
+* -   Retrieves each strided array element according to type `tin` via a pointer `ip1`.
+* -   Explicitly casts each function `f` invocation result via `cout`.
+* -   Stores the result in an output strided array of type `tout` via the pointer `op1`.
+*
+* @param tin   input type
+* @param tout  output type
+* @param cout  output casting function
+*
+* @example
+* #include "stdlib/complex/float64.h"
+*
+* // e.g., d_z
+* STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_CAST_FCN( double, stdlib_complex128_t, stdlib_complex128_from_float64 )
+*/
+#define STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_CAST_FCN( tin, tout, cout )      \
+	STDLIB_STRIDED_MSKUNARY_LOOP_PREAMBLE {                                    \
+		if ( *(uint8_t *)mp1 ) {                                               \
+			continue;                                                          \
+		}                                                                      \
+		const tin x = *(tin *)ip1;                                             \
+		*(tout *)op1 = cout( f( x ) );                                         \
 	}
 
 #endif // !STDLIB_STRIDED_BASE_MSKUNARY_MACROS_H
