@@ -112,7 +112,7 @@ where
 
 #### dispatch.ndarray( addon, fallback )
 
-Returns a function which dispatches to a native add-on applying a unary function to an input array using alternative indexing semantics.
+Returns a function which dispatches to a native add-on applying a unary function to an input strided array using alternative indexing semantics.
 
 <!-- eslint-disable max-len -->
 
