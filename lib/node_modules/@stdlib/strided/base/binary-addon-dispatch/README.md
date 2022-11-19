@@ -123,7 +123,7 @@ where
 
 #### dispatch.ndarray( addon, fallback )
 
-Returns a function which dispatches to a native add-on applying a binary function to two input arrays using alternative indexing semantics.
+Returns a function which dispatches to a native add-on applying a binary function to two input strided arrays using alternative indexing semantics.
 
 <!-- eslint-disable max-len, max-params -->
 
