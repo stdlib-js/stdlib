@@ -25,7 +25,6 @@
 	"confs": [
 		{
 			"src": [
-				"./src/nullary.c",
 				"./src/quaternary.c",
 				"./src/quinary.c",
 				"./src/ternary.c"
