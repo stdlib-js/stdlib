@@ -256,7 +256,7 @@ function fallback( N, dx, x, sx, ox, dm, m, sm, om, dy, y, sy, oy ) {
 }
 
 // Create a dispatch function:
-var f = dispatch( addon, fallback );
+var f = dispatch.ndarray( addon, fallback );
 
 // Create strided arrays:
 var x = new Float64Array( [ 1, 2, 3, 4 ] );
