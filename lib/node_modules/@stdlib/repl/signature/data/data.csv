@@ -2262,6 +2262,7 @@ base.strided.ternary.ndarray,"base.strided.ternary.ndarray( arrays, shape, strid
 base.strided.unary,"base.strided.unary( arrays, shape, strides, fcn )"
 base.strided.unary.ndarray,"base.strided.unary.ndarray( arrays, shape, strides, offsets, fcn )"
 base.strided.unaryDtypeSignatures,"base.strided.unaryDtypeSignatures( dtypes1, dtypes2[, options] )"
+base.strided.unarySignatureCallbacks,"base.strided.unarySignatureCallbacks( table, signatures )"
 base.strided.variance,"base.strided.variance( N, correction, x, stride )"
 base.strided.variance.ndarray,"base.strided.variance.ndarray( N, correction, x, stride, offset )"
 base.strided.variancech,"base.strided.variancech( N, correction, x, stride )"

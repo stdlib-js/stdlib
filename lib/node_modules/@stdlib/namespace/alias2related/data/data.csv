@@ -1069,6 +1069,8 @@ base.strided.mskmax,"base.strided.dmskmax,base.strided.max,base.strided.mskmin,b
 base.strided.mskmin,"base.strided.dmskmin,base.strided.min,base.strided.mskmax,base.strided.nanmin,base.strided.smskmin"
 base.strided.mskrange,"base.strided.dmskrange,base.strided.range,base.strided.mskmax,base.strided.mskmin,base.strided.nanrange,base.strided.smskrange"
 base.strided.mskunary,"base.strided.dmskmap,base.strided.smskmap,base.strided.unary"
+base.strided.mskunaryDtypeSignatures,"base.strided.mskunarySignatureCallbacks"
+base.strided.mskunarySignatureCallbacks,"base.strided.mskunaryDtypeSignatures"
 base.strided.nanmax,"base.strided.dnanmax,base.strided.max,base.strided.nanmin,base.strided.snanmax"
 base.strided.nanmaxabs,"base.strided.dnanmaxabs,base.strided.maxabs,base.strided.nanmax,base.strided.nanminabs,base.strided.snanmaxabs"
 base.strided.nanmaxBy,"base.strided.dnanmax,base.strided.maxBy,base.strided.nanmax,base.strided.nanminBy,base.strided.snanmax"

@@ -1069,6 +1069,8 @@ base.strided.mskmax
 base.strided.mskmin
 base.strided.mskrange
 base.strided.mskunary
+base.strided.mskunaryDtypeSignatures
+base.strided.mskunarySignatureCallbacks
 base.strided.nanmax
 base.strided.nanmaxabs
 base.strided.nanmaxBy
