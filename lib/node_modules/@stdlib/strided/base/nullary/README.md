@@ -2053,9 +2053,190 @@ void stdlib_strided_z_as_u( uint8_t *arrays[], int64_t *shape, int64_t *strides,
 
 * * *
 
-#### TODO
+#### STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE
 
-TODO: document macros
+Macro containing the preamble for a loop which updates a strided output array.
+
+```c
+STDLIB_STRIDED_NULLARY_LOOP_PREMABLE {
+    // Loop body...
+}
+```
+
+The macro expects the following variables to be defined:
+
+-   **arrays**: `uint8_t**` array whose only element is a pointer to a strided output array.
+-   **shape**: `int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `int64_t*` array containing strides (in bytes) for each strided array.
+
+The macro defines the following variables:
+
+-   **op1**: `uint8_t*` pointer to the first indexed element of the output strided array.
+-   **os1**: `int64_t` index increment for the output strided array.
+-   **n**: `int64_t` number of indexed elements.
+-   **i**: `int64_t` loop counter.
+
+```c
+#define STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE               \
+    uint8_t *op1 = arrays[ 0 ];                            \
+    int64_t os1 = strides[ 0 ];                            \
+    int64_t n = shape[ 0 ];                                \
+    int64_t i;                                             \
+    if ( n <= 0 ) {                                        \
+        return;                                            \
+    }                                                      \
+    if ( os1 < 0 ) {                                       \
+        op1 += (1-n) * os1;                                \
+    }                                                      \
+    for ( i = 0; i < n; i++, op1 += os1 )
+```
+
+#### STDLIB_STRIDED_NULLARY_LOOP_TWO_OUT_PREAMBLE
+
+Macro containing the preamble for a loop which updates two strided output arrays.
+
+```c
+STDLIB_STRIDED_NULLARY_LOOP_TWO_OUT_PREMABLE {
+    // Loop body...
+}
+```
+
+The macro expects the following variables to be defined:
+
+-   **arrays**: `uint8_t**` array whose only element is a pointer to a strided output array.
+-   **shape**: `int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `int64_t*` array containing strides (in bytes) for each strided array.
+
+The macro defines the following variables:
+
+-   **op1**: `uint8_t*` pointer to the first indexed element of the first output strided array.
+-   **op2**: `uint8_t*` pointer to the first indexed element of the second output strided array.
+-   **os1**: `int64_t` index increment for the first output strided array.
+-   **os2**: `int64_t` index increment for the second output strided array.
+-   **n**: `int64_t` number of indexed elements.
+-   **i**: `int64_t` loop counter.
+
+```c
+#define STDLIB_STRIDED_NULLARY_LOOP_TWO_OUT_PREAMBLE       \
+    uint8_t *op1 = arrays[ 0 ];                            \
+    uint8_t *op2 = arrays[ 1 ];                            \
+    int64_t os1 = strides[ 0 ];                            \
+    int64_t os2 = strides[ 1 ];                            \
+    int64_t n = shape[ 0 ];                                \
+    int64_t i;                                             \
+    if ( n <= 0 ) {                                        \
+        return;                                            \
+    }                                                      \
+    if ( os1 < 0 ) {                                       \
+        op1 += (1-n) * os1;                                \
+    }                                                      \
+    if ( os2 < 0 ) {                                       \
+        op2 += (1-n) * os2;                                \
+    }                                                      \
+    for ( i = 0; i < n; i++, op1 += os1, op2 += os2 )
+```
+
+#### STDLIB_STRIDED_NULLARY_LOOP_INLINE( tout, expr )
+
+Macro for a nullary loop which inlines an expression.
+
+```c
+STDLIB_STRIDED_NULLARY_LOOP_INLINE( double, *out = (double)1.0 )
+```
+
+The macro expects the following arguments:
+
+-   **tout**: output strided array element type.
+-   **expr**: expression to inline.
+
+In addition to the variables defined by the `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE` macro, the macro defines the following variables:
+
+-   **out**: `<tout>*` pointer to an output strided array element.
+
+The macro expects a provided expression to store the result via `*out`.
+
+```c
+#define STDLIB_STRIDED_NULLARY_LOOP_INLINE( tout, expr )   \
+    STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                 \
+        tout *out = (tout *)op1;                           \
+        expr;                                              \
+    }
+```
+
+#### STDLIB_STRIDED_NULLARY_LOOP_CLBK( tout )
+
+Macro for a nullary loop which invokes a callback.
+
+```c
+STDLIB_STRIDED_NULLARY_LOOP_CLBK( double )
+```
+
+The macro expects the following arguments:
+
+-   **tout**: output strided array element data type.
+
+In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`, the macro expects the following variables to be defined:
+
+-   **f**: nullary callback.
+
+```c
+#define STDLIB_STRIDED_NULLARY_LOOP_CLBK( tout )           \
+    STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                 \
+        *(tout *)op1 = (tout)f();                          \
+    }
+```
+
+#### STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NONSCALAR( tout )
+
+Macro for a nullary loop which invokes a callback which returns a non-scalar value (e.g., a `struct`).
+
+```c
+#include "stdlib/complex/float64.h"
+
+STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NONSCALAR( stdlib_complex128_t )
+```
+
+The macro expects the following arguments:
+
+-   **tout**: output strided array element data type.
+
+In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`, the macro expects the following variables to be defined:
+
+-   **f**: nullary callback.
+
+```c
+#define STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NONSCALAR( tout )                 \
+    STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                                     \
+        *(tout *)op1 = f();                                                    \
+    }
+```
+
+#### STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_CAST_FCN( tout, cout )
+
+Macro for a nullary loop which invokes a callback whose return values should be cast to a different type via casting functions.
+
+```c
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float64.h"
+
+STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_CAST_FCN( stdlib_complex64_t, stdlib_complex128_to_complex64 )
+```
+
+The macro expects the following arguments:
+
+-   **tout**: output strided array element data type.
+-   **cout**: function for casting an callback's return value to the output array data type.
+
+In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`, the macro expects the following variables to be defined:
+
+-   **f**: nullary callback.
+
+```c
+#define STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_CAST_FCN( tout, cout )            \
+    STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                                     \
+        *(tout *)op1 = cout( f() );                                            \
+    }
+```
 
 <!-- ./macros -->
 
