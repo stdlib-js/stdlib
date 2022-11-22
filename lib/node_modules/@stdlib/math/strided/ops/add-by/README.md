@@ -22,7 +22,7 @@ limitations under the License.
 
 # addBy
 
-> Element-wise addition of two strided arrays via a callback function.
+> Element-wise [addition][@stdlib/math/base/ops/add] of two strided arrays via a callback function.
 
 <section class="intro">
 
@@ -40,7 +40,7 @@ var addBy = require( '@stdlib/math/strided/ops/add-by' );
 
 #### addBy( N, x, strideX, y, strideY, z, strideZ, clbk\[, thisArg] )
 
-Performs element-wise addition of two strided arrays via a callback function and assigns each result to an element in an output strided array.
+Performs element-wise [addition][@stdlib/math/base/ops/add] of two strided arrays via a callback function and assigns each result to an element in an output strided array.
 
 ```javascript
 function accessor( values ) {
@@ -137,7 +137,7 @@ addBy( 3, x1, -2, y1, 1, z1, 1, accessor );
 
 #### addBy.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, z, strideZ, offsetZ, clbk\[, thisArg] )
 
-Performs element-wise addition of two strided arrays via a callback function and assigns each result to an element in an output strided array using alternative indexing semantics.
+Performs element-wise [addition][@stdlib/math/base/ops/add] of two strided arrays via a callback function and assigns each result to an element in an output strided array using alternative indexing semantics.
 
 ```javascript
 function accessor( values ) {
@@ -152,7 +152,7 @@ addBy.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, accessor );
 // z => [ 12.0, 14.0, 16.0, 18.0, 20.0 ]
 ```
 
-The function accepts the following additional arguments:
+The function accepts the following [addition][@stdlib/math/base/ops/add]al arguments:
 
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
