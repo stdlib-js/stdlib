@@ -24,14 +24,14 @@ import { ArrayLike } from '@stdlib/types/array';
 import { Collection } from '@stdlib/types/object';
 
 /**
-* Returns an accessed value.
+* Returns accessed values.
 *
 * @returns accessed values
 */
 type NullaryCallback = () => ArrayLike<any> | void;
 
 /**
-* Returns an accessed value.
+* Returns accessed values.
 *
 * @param values - array element values
 * @returns accessed values
@@ -39,7 +39,7 @@ type NullaryCallback = () => ArrayLike<any> | void;
 type UnaryCallback = ( values: Array<any> ) => ArrayLike<any> | void;
 
 /**
-* Returns an accessed value.
+* Returns accessed values.
 *
 * @param values - array element values
 * @param idx - iteration index
@@ -48,7 +48,7 @@ type UnaryCallback = ( values: Array<any> ) => ArrayLike<any> | void;
 type BinaryCallback = ( values: Array<any>, idx: number ) => ArrayLike<any> | void; // tslint-disable-line max-line-length
 
 /**
-* Returns an accessed value.
+* Returns accessed values.
 *
 * @param values - array element values
 * @param idx - iteration index
@@ -58,7 +58,7 @@ type BinaryCallback = ( values: Array<any>, idx: number ) => ArrayLike<any> | vo
 type TernaryCallback = ( values: Array<any>, idx: number, indices: Array<number> ) => ArrayLike<any> | void; // tslint-disable-line max-line-length
 
 /**
-* Returns an accessed value.
+* Returns accessed values.
 *
 * @param values - array element values
 * @param idx - iteration index
@@ -69,7 +69,7 @@ type TernaryCallback = ( values: Array<any>, idx: number, indices: Array<number>
 type QuaternaryCallback = ( values: Array<any>, idx: number, indices: Array<number>, arrays: Array<Collection> ) => ArrayLike<any> | void; // tslint-disable-line max-line-length
 
 /**
-* Returns an accessed value.
+* Returns accessed values.
 *
 * @param values - array element values
 * @param idx - iteration index
