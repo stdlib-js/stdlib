@@ -26,133 +26,58 @@ import { Collection } from '@stdlib/types/object';
 /**
 * Returns an accessed value.
 *
-* @returns accessed value
+* @returns accessed values
 */
-type NullaryCallback = () => ArrayLike<any>;
+type NullaryCallback = () => ArrayLike<any> | void;
 
 /**
 * Returns an accessed value.
 *
-* @param vx - array element
-* @returns accessed value
+* @param values - array element values
+* @returns accessed values
 */
-type UnaryCallback = ( vx: any ) => ArrayLike<any>;
+type UnaryCallback = ( values: Array<any> ) => ArrayLike<any> | void;
 
 /**
 * Returns an accessed value.
 *
-* @param vx - array element
-* @param vy - array element
-* @returns accessed value
-*/
-type BinaryCallback = ( vx: any, vy: any ) => ArrayLike<any>;
-
-/**
-* Returns an accessed value.
-*
-* @param vx - array element
-* @param vy - array element
+* @param values - array element values
 * @param idx - iteration index
-* @returns accessed value
+* @returns accessed values
 */
-type TernaryCallback = ( vx: any, vy: any, idx: number ) => ArrayLike<any>;
+type BinaryCallback = ( values: Array<any>, idx: number ) => ArrayLike<any> | void; // tslint-disable-line max-line-length
 
 /**
 * Returns an accessed value.
 *
-* @param vx - array element
-* @param vy - array element
+* @param values - array element values
 * @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @returns accessed value
+* @param indices - strided indices (offset + idx*stride)
+* @returns accessed values
 */
-type QuaternaryCallback = ( vx: any, vy: any, idx: number, ix: number ) => ArrayLike<any>; // tslint-disable-line max-line-length
+type TernaryCallback = ( values: Array<any>, idx: number, indices: Array<number> ) => ArrayLike<any> | void; // tslint-disable-line max-line-length
 
 /**
 * Returns an accessed value.
 *
-* @param vx - array element
-* @param vy - array element
+* @param values - array element values
 * @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @param iy - strided index (offsetY + idx*strideY)
-* @returns accessed value
+* @param indices - strided indices (offset + idx*stride)
+* @param arrays - input and output arrays
+* @returns accessed values
 */
-type QuinaryCallback = ( vx: any, vy: any, idx: number, ix: number, iy: number ) => ArrayLike<any>; // tslint-disable-line max-line-length
+type QuaternaryCallback = ( values: Array<any>, idx: number, indices: Array<number>, arrays: Array<Collection> ) => ArrayLike<any> | void; // tslint-disable-line max-line-length
 
 /**
 * Returns an accessed value.
 *
-* @param vx - array element
-* @param vy - array element
+* @param values - array element values
 * @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @param iy - strided index (offsetY + idx*strideY)
-* @param iz - strided index (offsetZ + idx*strideZ)
-* @returns accessed value
+* @param indices - strided indices (offset + idx*stride)
+* @param arrays - input and output arrays
+* @returns accessed values
 */
-type SenaryCallback = ( vx: any, vy: any, idx: number, ix: number, iy: number, iz: number ) => ArrayLike<any>; // tslint-disable-line max-line-length
-
-/**
-* Returns an accessed value.
-*
-* @param vx - array element
-* @param vy - array element
-* @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @param iy - strided index (offsetY + idx*strideY)
-* @param iz - strided index (offsetZ + idx*strideZ)
-* @param x - input array
-* @returns accessed value
-*/
-type SeptenaryCallback = ( vx: any, vy: any, idx: number, ix: number, iy: number, iz: number, x: Collection ) => ArrayLike<any>; // tslint-disable-line max-line-length
-
-/**
-* Returns an accessed value.
-*
-* @param vx - array element
-* @param vy - array element
-* @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @param iy - strided index (offsetY + idx*strideY)
-* @param iz - strided index (offsetZ + idx*strideZ)
-* @param x - input array
-* @param y - input array
-* @returns accessed value
-*/
-type OctonaryCallback = ( vx: any, vy: any, idx: number, ix: number, iy: number, iz: number, x: Collection, y: Collection ) => ArrayLike<any>; // tslint-disable-line max-line-length
-
-/**
-* Returns an accessed value.
-*
-* @param vx - array element
-* @param vy - array element
-* @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @param iy - strided index (offsetY + idx*strideY)
-* @param iz - strided index (offsetZ + idx*strideZ)
-* @param x - input array
-* @param y - input array
-* @param z - output array
-* @returns accessed value
-*/
-type NovenaryCallback = ( vx: any, vy: any, idx: number, ix: number, iy: number, iz: number, x: Collection, y: Collection, z: Collection ) => ArrayLike<any>; // tslint-disable-line max-line-length
-
-/**
-* Returns an accessed value.
-*
-* @param vx - array element
-* @param vy - array element
-* @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @param iy - strided index (offsetY + idx*strideY)
-* @param iz - strided index (offsetZ + idx*strideZ)
-* @param x - input array
-* @param y - input array
-* @param z - output array
-* @returns accessed value
-*/
-type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TernaryCallback | QuaternaryCallback | QuinaryCallback | SenaryCallback | SeptenaryCallback | OctonaryCallback | NovenaryCallback; // tslint-disable-line max-line-length
+type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TernaryCallback | QuaternaryCallback; // tslint-disable-line max-line-length
 
 /**
 * Callback invoked for each pair of indexed strided array elements retrieved via a callback function.
@@ -185,8 +110,9 @@ interface Routine {
 	* @example
 	* var add = require( `@stdlib/math/base/ops/add` );
 	*
-	* function accessor( v1, v2 ) {
-	*     return [ v1*2.0, v2*2.0 ];
+	* function accessor( values ) {
+	*     values[ 0 ] *= 2.0;
+	*     values[ 1 ] *= 2.0;
 	* }
 	*
 	* var x = [ 1.0, -2.0, 3.0, -4.0, 5.0 ];
@@ -219,8 +145,9 @@ interface Routine {
 	* @example
 	* var add = require( `@stdlib/math/base/ops/add` );
 	*
-	* function accessor( v1, v2 ) {
-	*     return [ v1*2.0, v2*2.0 ];
+	* function accessor( values ) {
+	*     values[ 0 ] *= 2.0;
+	*     values[ 1 ] *= 2.0;
 	* }
 	*
 	* var x = [ 1.0, -2.0, 3.0, -4.0, 5.0 ];
@@ -251,8 +178,9 @@ interface Routine {
 * @example
 * var add = require( `@stdlib/math/base/ops/add` );
 *
-* function accessor( v1, v2 ) {
-*     return [ v1*2.0, v2*2.0 ];
+* function accessor( values ) {
+*     values[ 0 ] *= 2.0;
+*     values[ 1 ] *= 2.0;
 * }
 *
 * var x = [ 1.0, -2.0, 3.0, -4.0, 5.0 ];
@@ -265,8 +193,9 @@ interface Routine {
 * @example
 * var add = require( `@stdlib/math/base/ops/add` );
 *
-* function accessor( v1, v2 ) {
-*     return [ v1*2.0, v2*2.0 ];
+* function accessor( values ) {
+*     values[ 0 ] *= 2.0;
+*     values[ 1 ] *= 2.0;
 * }
 *
 * var x = [ 1.0, -2.0, 3.0, -4.0, 5.0 ];

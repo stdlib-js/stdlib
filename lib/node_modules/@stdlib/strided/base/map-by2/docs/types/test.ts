@@ -21,10 +21,10 @@ import mapBy2 = require( './index' );
 /**
 * Accessor callback.
 *
-* @returns accessed value
+* @returns accessed values
 */
-function accessor( v1: number, v2: number ): Array<number> {
-	return [ v1, v2 ];
+function accessor( values: Array<number> ): Array<number> {
+	return values;
 }
 
 /**

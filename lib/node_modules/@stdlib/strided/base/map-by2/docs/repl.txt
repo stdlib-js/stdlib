@@ -10,17 +10,12 @@
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    The callback function is provided nine arguments:
+    The callback function is provided four arguments:
 
-    - vx: array element
-    - vy: array element
+    - values: input array elements
     - idx: iteration index
-    - ix: strided index (offsetX + idx*sx)
-    - iy: strided index (offsetY + idx*sy)
-    - iz: strided index (offsetZ + idx*sz)
-    - x: input array
-    - y: input array
-    - z: destination array
+    - indices: strided array indices (offset + idx*stride)
+    - arrays: input and output arrays
 
     If the callback function does not return any value (or equivalently,
     explicitly returns `undefined`), the value is ignored.
@@ -72,7 +67,7 @@
     > var x = [ 1.0, -2.0, 3.0, -4.0 ];
     > var y = [ 1.0, 1.0, 2.0, 2.0 ];
     > var z = [ 0.0, 0.0, 0.0, 0.0 ];
-    > function clbk( v1, v2 ) { return [ v1*2.0, v2*2.0 ]; };
+    > function clbk( v ) { v[0] *= 2.0; v[1] *= 2.0; return v; };
     > {{alias}}( x.length, x, 1, y, 1, z, 1, {{alias:@stdlib/math/base/ops/add}}, clbk )
     [ 4.0, -2.0, 10.0, -4.0 ]
 
@@ -159,7 +154,7 @@
     > var x = [ 1.0, -2.0, 3.0, -4.0 ];
     > var y = [ 1.0, 1.0, 2.0, 2.0 ];
     > var z = [ 0.0, 0.0, 0.0, 0.0 ];
-    > function clbk( v1, v2 ) { return [ v1*2.0, v2*2.0 ]; };
+    > function clbk( v ) { v[0] *= 2.0; v[1] *= 2.0; return v; };
     > {{alias}}.ndarray( 4, x, 1, 0, y, 1, 0, z, 1, 0, {{alias:@stdlib/math/base/ops/add}}, clbk )
     [ 4.0, -2.0, 10.0, -4.0 ]
 
