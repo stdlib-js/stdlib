@@ -1069,6 +1069,8 @@
 "@stdlib/stats-base-mskmin","@stdlib/stats/base/mskmin"
 "@stdlib/stats-base-mskrange","@stdlib/stats/base/mskrange"
 "@stdlib/strided-base-mskunary","@stdlib/strided/base/mskunary"
+"@stdlib/strided-base-mskunary-dtype-signatures","@stdlib/strided/base/mskunary-dtype-signatures"
+"@stdlib/strided-base-mskunary-signature-callbacks","@stdlib/strided/base/mskunary-signature-callbacks"
 "@stdlib/stats-base-nanmax","@stdlib/stats/base/nanmax"
 "@stdlib/stats-base-nanmaxabs","@stdlib/stats/base/nanmaxabs"
 "@stdlib/stats-base-nanmax-by","@stdlib/stats/base/nanmax-by"

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -14,6 +14,10 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
 * limitations under the License.
+*/
+
+/*
+* The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
 #ifndef STDLIB_STRIDED_BASE_MSKUNARY_B_F_AS_D_D_H
@@ -29,7 +33,7 @@ extern "C" {
 #endif
 
 /**
-* Applies a unary callback accepting and returning double-precision floating-point numbers to an unsigned 8-bit integer strided input array, casts the callback's double-precision floating-point return value to a single-precision floating-point number, and assigns results to elements in a single-precision floating-point strided output array.
+* Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 */
 void stdlib_strided_mask_b_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 
