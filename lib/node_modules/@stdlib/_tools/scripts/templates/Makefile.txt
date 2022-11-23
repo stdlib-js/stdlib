@@ -239,7 +239,7 @@ JAVASCRIPT_TEST ?= $(NODE_MODULES)/tape/bin/tape
 JAVASCRIPT_TEST_FLAGS ?=
 
 # Define the path to the executable for parsing TAP output:
-TAP_REPORTER ?= $(BIN_DIR)/tap-spec
+TAP_REPORTER ?= $(BIN_DIR)/tap-min
 
 # Define the path to the Istanbul executable:
 ISTANBUL ?= $(BIN_DIR)/istanbul
