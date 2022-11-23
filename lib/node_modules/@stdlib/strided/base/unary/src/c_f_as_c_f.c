@@ -20,7 +20,7 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#include "stdlib/strided/base/unary/c_c.h"
+#include "stdlib/strided/base/unary/c_f_as_c_f.h"
 #include "stdlib/strided/base/unary/macros.h"
 #include "stdlib/complex/float32.h"
 #include <stdint.h>
@@ -34,33 +34,33 @@
 * @param fcn      callback
 *
 * @example
-* #include "stdlib/strided/base/unary/c_c.h"
+* #include "stdlib/strided/base/unary/c_f_as_c_f.h"
 * #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 *
 * // Create underlying byte arrays:
 * uint8_t x[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define a pointer to an array containing pointers to strided arrays:
 * uint8_t *arrays[] = { x, out };
 *
 * // Define the strides:
-* int64_t strides[] = { 8, 8 };
+* int64_t strides[] = { 8, 4 };
 *
 * // Define the number of elements over which to iterate:
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* stdlib_complex64_t fcn( stdlib_complex64_t x ) {
+* float fcn( stdlib_complex64_t x ) {
 *     // ...
 * }
 *
 * // Apply the callback:
-* stdlib_strided_c_c( arrays, shape, strides, (void *)fcn );
+* stdlib_strided_c_f_as_c_f( arrays, shape, strides, (void *)fcn );
 */
-void stdlib_strided_c_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
+void stdlib_strided_c_f_as_c_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+	typedef float func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_UNARY_LOOP_CLBK_RET_NOCAST( stdlib_complex64_t, stdlib_complex64_t )
+	STDLIB_STRIDED_UNARY_LOOP_CLBK_RET_NOCAST( stdlib_complex64_t, float )
 }

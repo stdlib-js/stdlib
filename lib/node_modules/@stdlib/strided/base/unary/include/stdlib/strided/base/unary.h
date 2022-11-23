@@ -60,6 +60,7 @@
 
 #include "unary/c_c.h"
 #include "unary/c_c_as_z_z.h"
+#include "unary/c_f_as_c_f.h"
 #include "unary/c_z.h"
 #include "unary/c_z_as_c_z.h"
 #include "unary/c_z_as_z_z.h"
@@ -177,6 +178,7 @@
 #include "unary/u_z_as_u_z.h"
 #include "unary/u_z_as_z_z.h"
 
+#include "unary/z_d_as_z_d.h"
 #include "unary/z_z.h"
 // END LOOPS
 
