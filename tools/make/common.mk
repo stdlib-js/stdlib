@@ -295,6 +295,17 @@ TAP_REPORTER ?= $(BIN_DIR)/tap-spec
 # [1]: https://github.com/zoubin/tap-summary
 TAP_SUMMARY ?= $(BIN_DIR)/tap-summary
 
+# Define the path to the [`tap--min`][1] executable.
+#
+# To install `tap-min`:
+#
+# ```bash
+# $ npm install tap-min
+# ```
+#
+# [1]: https://github.com/derhuerst/tap-min
+TAP_MIN ?= $(BIN_DIR)/tap-min
+
 # Define the path to the [`tap-xunit`][1] executable.
 #
 # To install `tap-xunit`:

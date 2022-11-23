@@ -214,6 +214,7 @@
     "remark-vdom": "^8.0.0",
     "semver": "^6.0.0",
     "spdx-license-ids": "^3.0.0",
+    "tap-min": "2.x.x",
     "tap-spec": "5.x.x",
     "tap-summary": "^4.0.0",
     "tap-xunit": "^2.2.0",
