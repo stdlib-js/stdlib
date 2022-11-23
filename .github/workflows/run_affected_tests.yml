@@ -149,6 +149,6 @@ jobs:
           files=$(echo "${files}" | grep -v '/fixtures/')
 
           if [[ -n "${files}" ]]; then
-            make test-javascript-files FILES="${files}"
+            make test-javascript-files-min FILES="${files}"
           fi
         timeout-minutes: 15
