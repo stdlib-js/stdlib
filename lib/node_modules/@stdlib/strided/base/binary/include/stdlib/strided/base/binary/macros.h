@@ -263,9 +263,9 @@
 * #include <stdint.h>
 *
 * // e.g., zi_z
-* STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_RET_NONSCALAR( stdlib_complex128_t, int32_t, stdlib_complex128_t )
+* STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_RET_NOCAST( stdlib_complex128_t, int32_t, stdlib_complex128_t )
 */
-#define STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_RET_NONSCALAR( tin1, tin2, tout )  \
+#define STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_RET_NOCAST( tin1, tin2, tout )     \
 	STDLIB_STRIDED_BINARY_LOOP_PREAMBLE {                                        \
 		const tin1 x = *(tin1 *)ip1;                                             \
 		const tin2 y = *(tin2 *)ip2;                                             \

@@ -62,5 +62,5 @@
 void stdlib_strided_k_z_as_k_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
 	typedef stdlib_complex128_t func_type( const int16_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_UNARY_LOOP_CLBK_RET_NONSCALAR( int16_t, stdlib_complex128_t )
+	STDLIB_STRIDED_UNARY_LOOP_CLBK_RET_NOCAST( int16_t, stdlib_complex128_t )
 }

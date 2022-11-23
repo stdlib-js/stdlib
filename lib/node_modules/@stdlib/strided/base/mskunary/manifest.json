@@ -57,6 +57,7 @@
         "./src/b_z_as_z_z.c",
         "./src/c_c.c",
         "./src/c_c_as_z_z.c",
+        "./src/c_f_as_c_f.c",
         "./src/c_z.c",
         "./src/c_z_as_c_z.c",
         "./src/c_z_as_z_z.c",
@@ -166,6 +167,7 @@
         "./src/u_z.c",
         "./src/u_z_as_u_z.c",
         "./src/u_z_as_z_z.c",
+        "./src/z_d_as_z_d.c",
         "./src/z_z.c"
       ],
       "include": [

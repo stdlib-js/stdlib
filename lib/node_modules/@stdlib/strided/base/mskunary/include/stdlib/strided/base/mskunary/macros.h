@@ -143,7 +143,7 @@
 	}
 
 /**
-* Macro for a unary loop which invokes a callback which returns a non-scalar value (e.g., a `struct`).
+* Macro for a unary loop which invokes a callback and does not cast the return callback's return value (e.g., a `struct`).
 *
 * ## Notes
 *
@@ -157,9 +157,9 @@
 * #include "stdlib/complex/float64.h"
 *
 * // e.g., z_z
-* STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_NONSCALAR( stdlib_complex128_t, stdlib_complex128_t )
+* STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_NOCAST( stdlib_complex128_t, stdlib_complex128_t )
 */
-#define STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_NONSCALAR( tin, tout )           \
+#define STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_NOCAST( tin, tout )              \
 	STDLIB_STRIDED_MSKUNARY_LOOP_PREAMBLE {                                    \
 		if ( *(uint8_t *)mp1 ) {                                               \
 			continue;                                                          \

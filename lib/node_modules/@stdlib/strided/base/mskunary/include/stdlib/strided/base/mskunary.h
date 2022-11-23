@@ -60,6 +60,7 @@
 
 #include "mskunary/c_c.h"
 #include "mskunary/c_c_as_z_z.h"
+#include "mskunary/c_f_as_c_f.h"
 #include "mskunary/c_z.h"
 #include "mskunary/c_z_as_c_z.h"
 #include "mskunary/c_z_as_z_z.h"
@@ -177,6 +178,7 @@
 #include "mskunary/u_z_as_u_z.h"
 #include "mskunary/u_z_as_z_z.h"
 
+#include "mskunary/z_d_as_z_d.h"
 #include "mskunary/z_z.h"
 // END LOOPS
 

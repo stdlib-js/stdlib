@@ -110,7 +110,7 @@
 	}
 
 /**
-* Macro for a nullary loop which invokes a callback which returns a non-scalar value (e.g., a `struct`).
+* Macro for a nullary loop which invokes a callback and does not cast the return callback's return value (e.g., a `struct`).
 *
 * ## Notes
 *
@@ -121,9 +121,9 @@
 * @example
 * #include "stdlib/complex/float64.h"
 *
-* STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NONSCALAR( stdlib_complex128_t )
+* STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NOCAST( stdlib_complex128_t )
 */
-#define STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NONSCALAR( tout )                 \
+#define STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NOCAST( tout )                    \
 	STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                                     \
 		*(tout *)op1 = f();                                                    \
 	}

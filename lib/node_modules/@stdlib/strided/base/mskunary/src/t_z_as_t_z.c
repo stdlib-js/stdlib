@@ -63,5 +63,5 @@
 void stdlib_strided_mask_t_z_as_t_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
 	typedef stdlib_complex128_t func_type( const uint16_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_NONSCALAR( uint16_t, stdlib_complex128_t )
+	STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_NOCAST( uint16_t, stdlib_complex128_t )
 }

@@ -2186,14 +2186,14 @@ In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`,
     }
 ```
 
-#### STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NONSCALAR( tout )
+#### STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NOCAST( tout )
 
-Macro for a nullary loop which invokes a callback which returns a non-scalar value (e.g., a `struct`).
+Macro for a nullary loop which invokes a callback and does not cast the return callback's return value (e.g., a `struct`).
 
 ```c
 #include "stdlib/complex/float64.h"
 
-STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NONSCALAR( stdlib_complex128_t )
+STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NOCAST( stdlib_complex128_t )
 ```
 
 The macro expects the following arguments:
@@ -2205,7 +2205,7 @@ In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`,
 -   **f**: nullary callback.
 
 ```c
-#define STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NONSCALAR( tout )                 \
+#define STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NOCAST( tout )                    \
     STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                                     \
         *(tout *)op1 = f();                                                    \
     }

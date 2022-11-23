@@ -20,48 +20,48 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#include "stdlib/strided/base/binary/cc_c.h"
-#include "stdlib/strided/base/binary/macros.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/strided/base/mskunary/z_d_as_z_d.h"
+#include "stdlib/strided/base/mskunary/macros.h"
+#include "stdlib/complex/float64.h"
 #include <stdint.h>
 
 /**
-* Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
+* Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 *
-* @param arrays   array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
+* @param arrays   array whose first element is a pointer to a strided input array, whose second element is a pointer to a strided mask array, and whose last element is a pointer to a strided output array
 * @param shape    array whose only element is the number of elements over which to iterate
 * @param strides  array containing strides (in bytes) for each strided array
 * @param fcn      callback
 *
 * @example
-* #include "stdlib/strided/base/binary/cc_c.h"
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/strided/base/mskunary/z_d_as_z_d.h"
+* #include "stdlib/complex/float64.h"
 * #include <stdint.h>
 *
 * // Create underlying byte arrays:
-* uint8_t x[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t y[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t x[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t m[] = { 0, 0, 0 };
 * uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define a pointer to an array containing pointers to strided arrays:
-* uint8_t *arrays[] = { x, y, out };
+* uint8_t *arrays[] = { x, m, out };
 *
 * // Define the strides:
-* int64_t strides[] = { 8, 8, 8 };
+* int64_t strides[] = { 16, 1, 8 };
 *
 * // Define the number of elements over which to iterate:
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* stdlib_complex64_t add( stdlib_complex64_t x, stdlib_complex64_t y ) {
+* double fcn( stdlib_complex128_t x ) {
 *     // ...
 * }
 *
 * // Apply the callback:
-* stdlib_strided_cc_c( arrays, shape, strides, (void *)add );
+* stdlib_strided_mask_z_d_as_z_d( arrays, shape, strides, (void *)fcn );
 */
-void stdlib_strided_cc_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x, const stdlib_complex64_t y );
+void stdlib_strided_mask_z_d_as_z_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+	typedef double func_type( const stdlib_complex128_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_RET_NOCAST( stdlib_complex64_t, stdlib_complex64_t, stdlib_complex64_t )
+	STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_NOCAST( stdlib_complex128_t, double )
 }
