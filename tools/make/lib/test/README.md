@@ -336,6 +336,42 @@ The command supports the following environment variables:
 -   **FILES**: list of test file paths.
 -   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
+#### test-javascript-min
+
+Runs JavaScript unit tests and minimizes aggregated TAP output.
+
+<!-- run-disable -->
+
+```bash
+$ make test-javascript-min
+```
+
+The command supports the following environment variables:
+
+-   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+-   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+
+<!-- run-disable -->
+
+```bash
+$ make test-javascript-min TESTS_FILTER='.*/blas/base/dasum/.*'
+```
+
+#### test-javascript-files-min
+
+Runs, in the local environment, a specified list of files containing JavaScript unit tests and minimizes aggregated TAP output.
+
+<!-- run-disable -->
+
+```bash
+$ make test-javascript-files-min FILES='/foo/test.js /bar/test.js'
+```
+
+The command supports the following environment variables:
+
+-   **FILES**: list of test file paths.
+-   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+
 #### test-javascript-tap
 
 Runs JavaScript unit tests and generates raw TAP output.
