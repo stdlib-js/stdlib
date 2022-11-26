@@ -1909,6 +1909,8 @@ base.strided.mskrange,"base.strided.mskrange( N:integer, x:Array|TypedArray, str
 base.strided.mskrange.ndarray,"base.strided.mskrange.ndarray( N:integer, x:Array|TypedArray, strideX:integer, offsetX:integer, mask:Array|TypedArray, strideMask:integer, offsetMask:integer )"
 base.strided.mskunary,"base.strided.mskunary( arrays:ArrayLikeObject<ArrayLikeObject>, shape:ArrayLikeObject<integer>, strides:ArrayLikeObject<integer>, fcn:Function )"
 base.strided.mskunary.ndarray,"base.strided.mskunary.ndarray( arrays:ArrayLikeObject<ArrayLikeObject>, shape:ArrayLikeObject<integer>, strides:ArrayLikeObject<integer>, offsets:ArrayLikeObject<integer>, fcn:Function )"
+base.strided.mskunaryDtypeSignatures,"base.strided.mskunaryDtypeSignatures( dtypes1:ArrayLike<any>, dtypes2:ArrayLike<any>[, options:Object] )"
+base.strided.mskunarySignatureCallbacks,"base.strided.mskunarySignatureCallbacks( table:Object, signatures:ArrayLike<any> )"
 base.strided.nanmax,"base.strided.nanmax( N:integer, x:Array|TypedArray, stride:integer )"
 base.strided.nanmax.ndarray,"base.strided.nanmax.ndarray( N:integer, x:Array|TypedArray, stride:integer, offset:integer )"
 base.strided.nanmaxabs,"base.strided.nanmaxabs( N:integer, x:Array|TypedArray, stride:integer )"

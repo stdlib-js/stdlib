@@ -1247,6 +1247,7 @@ base.strided.svariancewd
 base.strided.svarianceyc
 base.strided.ternary
 base.strided.unary
+base.strided.unaryBy
 base.strided.unaryDtypeSignatures
 base.strided.unarySignatureCallbacks
 base.strided.variance

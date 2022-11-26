@@ -1247,6 +1247,7 @@ base.strided.svariancewd,"base.strided.dvariancewd,base.strided.snanvariancewd,b
 base.strided.svarianceyc,"base.strided.dvarianceyc,base.strided.snanvarianceyc,base.strided.sstdevyc,base.strided.svariance,base.strided.varianceyc"
 base.strided.ternary,"base.strided.binary,base.strided.nullary,base.strided.quaternary,base.strided.quinary,base.strided.unary"
 base.strided.unary,"base.strided.unary,base.strided.dmap,base.strided.nullary,base.strided.quaternary,base.strided.quinary,base.strided.smap,base.strided.ternary"
+base.strided.unaryBy,"base.strided.mapBy,base.strided.unary"
 base.strided.unaryDtypeSignatures,"base.strided.unarySignatureCallbacks"
 base.strided.unarySignatureCallbacks,"base.strided.unaryDtypeSignatures"
 base.strided.variance,"base.strided.dvariance,base.strided.nanvariance,base.strided.stdev,base.strided.svariance"

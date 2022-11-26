@@ -1247,6 +1247,7 @@
 "@stdlib/stats/base/svarianceyc","@stdlib/stats/base/dvarianceyc,@stdlib/stats/base/snanvarianceyc,@stdlib/stats/base/sstdevyc,@stdlib/stats/base/svariance,@stdlib/stats/base/varianceyc"
 "@stdlib/strided/base/ternary","@stdlib/strided/base/binary,@stdlib/strided/base/nullary,@stdlib/strided/base/quaternary,@stdlib/strided/base/quinary,@stdlib/strided/base/unary"
 "@stdlib/strided/base/unary","@stdlib/strided/base/unary,@stdlib/strided/base/dmap,@stdlib/strided/base/nullary,@stdlib/strided/base/quaternary,@stdlib/strided/base/quinary,@stdlib/strided/base/smap,@stdlib/strided/base/ternary"
+"@stdlib/strided/base/unary-by","@stdlib/strided/base/map-by,@stdlib/strided/base/unary"
 "@stdlib/strided/base/unary-dtype-signatures","@stdlib/strided/base/unary-signature-callbacks"
 "@stdlib/strided/base/unary-signature-callbacks","@stdlib/strided/base/unary-dtype-signatures"
 "@stdlib/stats/base/variance","@stdlib/stats/base/dvariance,@stdlib/stats/base/nanvariance,@stdlib/stats/base/stdev,@stdlib/stats/base/svariance"
