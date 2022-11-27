@@ -2575,6 +2575,7 @@
 "@stdlib/math/strided/special/deg2rad","@stdlib/math-strided-special-deg2rad"
 "@stdlib/strided/dtypes","@stdlib/strided-dtypes"
 "@stdlib/strided/dispatch","@stdlib/strided-dispatch"
+"@stdlib/strided/dispatch-by","@stdlib/strided-dispatch-by"
 "@stdlib/math/strided/special/floor","@stdlib/math-strided-special-floor"
 "@stdlib/math/strided/special/inv","@stdlib/math-strided-special-inv"
 "@stdlib/math/strided/ops/mul","@stdlib/math-strided-ops-mul"

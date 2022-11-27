@@ -2263,6 +2263,8 @@ base.strided.ternary,"base.strided.ternary( arrays:ArrayLikeObject<ArrayLikeObje
 base.strided.ternary.ndarray,"base.strided.ternary.ndarray( arrays:ArrayLikeObject<ArrayLikeObject>, shape:ArrayLikeObject<integer>, strides:ArrayLikeObject<integer>, offsets:ArrayLikeObject<integer>, fcn:Function )"
 base.strided.unary,"base.strided.unary( arrays:ArrayLikeObject<ArrayLikeObject>, shape:ArrayLikeObject<integer>, strides:ArrayLikeObject<integer>, fcn:Function )"
 base.strided.unary.ndarray,"base.strided.unary.ndarray( arrays:ArrayLikeObject<ArrayLikeObject>, shape:ArrayLikeObject<integer>, strides:ArrayLikeObject<integer>, offsets:ArrayLikeObject<integer>, fcn:Function )"
+base.strided.unaryBy,"base.strided.unaryBy( arrays:ArrayLikeObject<ArrayLikeObject>, shape:ArrayLikeObject<integer>, strides:ArrayLikeObject<integer>, fcn:Function, clbk:Function[, thisArg:any] )"
+base.strided.unaryBy.ndarray,"base.strided.unaryBy.ndarray( arrays:ArrayLikeObject<ArrayLikeObject>, shape:ArrayLikeObject<integer>, strides:ArrayLikeObject<integer>, offsets:ArrayLikeObject<integer>, fcn:Function, clbk:Function[, thisArg:any] )"
 base.strided.unaryDtypeSignatures,"base.strided.unaryDtypeSignatures( dtypes1:ArrayLike<any>, dtypes2:ArrayLike<any>[, options:Object] )"
 base.strided.unarySignatureCallbacks,"base.strided.unarySignatureCallbacks( table:Object, signatures:ArrayLike<any> )"
 base.strided.variance,"base.strided.variance( N:integer, correction:number, x:Array|TypedArray, stride:integer )"

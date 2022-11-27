@@ -2575,6 +2575,7 @@
 "@stdlib/math/strided/special/deg2rad",strided.deg2rad
 "@stdlib/strided/dtypes",strided.dataTypes
 "@stdlib/strided/dispatch",strided.dispatch
+"@stdlib/strided/dispatch-by",strided.dispatchBy
 "@stdlib/math/strided/special/floor",strided.floor
 "@stdlib/math/strided/special/inv",strided.inv
 "@stdlib/math/strided/ops/mul",strided.mul

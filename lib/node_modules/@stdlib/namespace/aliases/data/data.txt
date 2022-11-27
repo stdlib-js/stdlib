@@ -2575,6 +2575,7 @@ strided.ceil
 strided.deg2rad
 strided.dataTypes
 strided.dispatch
+strided.dispatchBy
 strided.floor
 strided.inv
 strided.mul
