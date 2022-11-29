@@ -602,4 +602,4 @@ DEPS_CPPCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cppcheck_$(deps_cppcheck_version_sl
 DEPS_CPPCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
 # API key for the stdlib scaffolding service:
-STDLIB_SCAFFOLDING_API_KEY ?= $$STDLIB_SCAFFOLDING_API_KEY
+SCAFFOLD_API_KEY ?= $$SCAFFOLD_API_KEY

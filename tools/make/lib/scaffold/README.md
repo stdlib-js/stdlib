@@ -51,13 +51,13 @@ Scaffold required files for a new or existing package. The package directory has
 <!-- run-disable -->
 
 ```bash
-$ make scaffold PKG=<pkg>
+$ make scaffold SCAFFOLD_PKG=<pkg>
 ```
 
 The command expects the following environment variables to be set:
 
--   **PKG**: package to scaffold, e.g., `math/base/special/sin`.
--   **STDLIB_SCAFFOLDING_API_KEY**: API key for accessing the stdlib scaffolding service.
+-   **SCAFFOLD_PKG**: package to scaffold, e.g., `math/base/special/sin`.
+-   **SCAFFOLD_API_KEY**: API key for accessing the stdlib scaffolding service.
 
 </section>
 

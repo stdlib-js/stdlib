@@ -31,13 +31,13 @@ SCAFFOLD_SCRIPT ?= $(TOOLS_PKGS_DIR)/scaffold/scripts/scaffold_ai.sh
 #
 # -   The package directory has to exist and must contain at least the package's `README.md` file for the command to work.
 #
-# @param {string} PKG - package to scaffold (e.g., `math/base/special/sin`)
-# @param {string} STDLIB_SCAFFOLDING_API_KEY - API key for accessing the stdlib scaffolding service
+# @param {string} SCAFFOLD_PKG - package to scaffold (e.g., `math/base/special/sin`)
+# @param {string} SCAFFOLD_API_KEY - API key for accessing the stdlib scaffolding service
 #
 # @example
-# make scaffold PKG=math/base/special/sin
+# make scaffold SCAFFOLD_PKG=math/base/special/sin
 #/
 scaffold:
-	$(QUIET) $(STDLIB_SCAFFOLDING_API_KEY) $(SCAFFOLD_SCRIPT) $(PKG)
+	$(QUIET) $(SCAFFOLD_API_KEY) $(SCAFFOLD_SCRIPT) $(SCAFFOLD_PKG)
 
 .PHONY: scaffold
