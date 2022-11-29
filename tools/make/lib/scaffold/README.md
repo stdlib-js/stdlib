@@ -46,7 +46,7 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 #### scaffold
 
-Scaffold required files for a new or existing package. The package directory has to exist and must contain at least the package's `README.md` file for the command to work.
+Scaffold required files for a new or existing package. The command will create highly customized files when the package directory already contains at least the `README.md` file; otherwise, the command will create a default `README.md` and scaffold the remaining files using placeholder values.
 
 <!-- run-disable -->
 
