@@ -42,7 +42,7 @@ var callbacks = require( '@stdlib/strided/base/unary-signature-callbacks' );
 
 #### callbacks( table, signatures )
 
-Assigns callbacks to unary interfaces according to type type [promotion rules][@stdlib/ndarray/promotion-rules].
+Assigns callbacks to unary interfaces according to type [promotion rules][@stdlib/ndarray/promotion-rules].
 
 ```javascript
 var signatures = require( '@stdlib/strided/base/unary-dtype-signatures' );
@@ -73,7 +73,7 @@ var list = callbacks( table, sigs );
 The function accepts the following arguments:
 
 -   **table**: callback table.
--   **signatures**: options.
+-   **signatures**: strided array containing unary interface signatures.
 
 A callback `table` should have the following properties:
 
