@@ -40,6 +40,8 @@
 			"libraries": [],
 			"libpath": [],
 			"dependencies": [
+        "@stdlib/complex/float32",
+        "@stdlib/complex/float64",
 				"@stdlib/ndarray/base/bytes-per-element",
 				"@stdlib/ndarray/base/dtype-char",
 				"@stdlib/ndarray/base/ind",

@@ -20,10 +20,11 @@
 #include "stdlib/ndarray/ctor/iget_ptr.h"
 #include "stdlib/ndarray/ctor/set_ptr.h"
 #include "stdlib/ndarray/ctor/ndarray.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float64.h"
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include <complex.h>
 
 /**
 * Sets an ndarray data element located at a specified linear index.
@@ -280,7 +281,7 @@ int8_t stdlib_ndarray_iset_int8( const struct ndarray *arr, const int64_t idx, c
 * @param v    value to set
 * @return     status code
 */
-int8_t stdlib_ndarray_iset_complex128( const struct ndarray *arr, const int64_t idx, const double complex v ) {
+int8_t stdlib_ndarray_iset_complex128( const struct ndarray *arr, const int64_t idx, const stdlib_complex128_t v ) {
 	uint8_t *ind = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ind == NULL ) {
 		return -1;
@@ -302,7 +303,7 @@ int8_t stdlib_ndarray_iset_complex128( const struct ndarray *arr, const int64_t 
 * @param v    value to set
 * @return     status code
 */
-int8_t stdlib_ndarray_iset_complex64( const struct ndarray *arr, const int64_t idx, const float complex v ) {
+int8_t stdlib_ndarray_iset_complex64( const struct ndarray *arr, const int64_t idx, const stdlib_complex64_t v ) {
 	uint8_t *ind = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ind == NULL ) {
 		return -1;

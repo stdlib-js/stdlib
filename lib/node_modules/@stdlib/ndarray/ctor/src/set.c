@@ -20,10 +20,11 @@
 #include "stdlib/ndarray/ctor/set_ptr.h"
 #include "stdlib/ndarray/ctor/get_ptr.h"
 #include "stdlib/ndarray/ctor/ndarray.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float64.h"
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include <complex.h>
 
 /**
 * Sets an ndarray data element.
@@ -268,7 +269,7 @@ int8_t stdlib_ndarray_set_int8( const struct ndarray *arr, const int64_t *sub, c
 * @param v    value to set
 * @return     status code
 */
-int8_t stdlib_ndarray_set_complex128( const struct ndarray *arr, const int64_t *sub, const double complex v ) {
+int8_t stdlib_ndarray_set_complex128( const struct ndarray *arr, const int64_t *sub, const stdlib_complex128_t v ) {
 	uint8_t *idx = stdlib_ndarray_get_ptr( arr, sub );
 	if ( idx == NULL ) {
 		return -1;
@@ -289,7 +290,7 @@ int8_t stdlib_ndarray_set_complex128( const struct ndarray *arr, const int64_t *
 * @param v    value to set
 * @return     status code
 */
-int8_t stdlib_ndarray_set_complex64( const struct ndarray *arr, const int64_t *sub, const float complex v ) {
+int8_t stdlib_ndarray_set_complex64( const struct ndarray *arr, const int64_t *sub, const stdlib_complex64_t v ) {
 	uint8_t *idx = stdlib_ndarray_get_ptr( arr, sub );
 	if ( idx == NULL ) {
 		return -1;
