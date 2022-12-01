@@ -20,9 +20,10 @@
 #define STDLIB_NDARRAY_CTOR_GET_H
 
 #include "ndarray.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float64.h"
 #include <stdint.h>
 #include <stdbool.h>
-#include <complex.h>
 
 /**
 * Returns an ndarray data element.
@@ -82,12 +83,12 @@ int8_t stdlib_ndarray_get_int8( const struct ndarray *arr, const int64_t *sub, i
 /**
 * Returns a double-precision complex floating-point ndarray data element.
 */
-int8_t stdlib_ndarray_get_complex128( const struct ndarray *arr, const int64_t *sub, double complex *out );
+int8_t stdlib_ndarray_get_complex128( const struct ndarray *arr, const int64_t *sub, stdlib_complex128_t *out );
 
 /**
 * Returns a single-precision complex floating-point ndarray data element.
 */
-int8_t stdlib_ndarray_get_complex64( const struct ndarray *arr, const int64_t *sub, float complex *out );
+int8_t stdlib_ndarray_get_complex64( const struct ndarray *arr, const int64_t *sub, stdlib_complex64_t *out );
 
 /**
 * Returns a boolean ndarray data element.

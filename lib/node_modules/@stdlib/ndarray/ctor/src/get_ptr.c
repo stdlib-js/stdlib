@@ -21,10 +21,11 @@
 #include "stdlib/ndarray/dtypes.h"
 #include "stdlib/ndarray/index_modes.h"
 #include "stdlib/ndarray/base/ind.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float64.h"
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include <complex.h>
 
 /**
 * Returns a pointer to an ndarray data element in the underlying byte array.
@@ -110,10 +111,10 @@ int8_t stdlib_ndarray_get_ptr_value( const struct ndarray *arr, const uint8_t *i
 		*(int8_t *)out = *(int8_t *)idx;
 		return 0;
 	case STDLIB_NDARRAY_COMPLEX128:
-		*(double complex *)out = *(double complex *)idx;
+		*(stdlib_complex128_t *)out = *(stdlib_complex128_t *)idx;
 		return 0;
 	case STDLIB_NDARRAY_COMPLEX64:
-		*(float complex *)out = *(float complex *)idx;
+		*(stdlib_complex64_t *)out = *(stdlib_complex64_t *)idx;
 		return 0;
 	case STDLIB_NDARRAY_BOOL:
 		*(bool *)out = *(bool *)idx;
@@ -303,8 +304,8 @@ int8_t stdlib_ndarray_get_ptr_int8( const uint8_t *idx, int8_t *out ) {
 * @param out  output address
 * @return     status code
 */
-int8_t stdlib_ndarray_get_ptr_complex128( const uint8_t *idx, double complex *out ) {
-	*out = *(double complex *)idx;
+int8_t stdlib_ndarray_get_ptr_complex128( const uint8_t *idx, stdlib_complex128_t *out ) {
+	*out = *(stdlib_complex128_t *)idx;
 	return 0;
 }
 
@@ -320,8 +321,8 @@ int8_t stdlib_ndarray_get_ptr_complex128( const uint8_t *idx, double complex *ou
 * @param out  output address
 * @return     status code
 */
-int8_t stdlib_ndarray_get_ptr_complex64( const uint8_t *idx, float complex *out ) {
-	*out = *(float complex *)idx;
+int8_t stdlib_ndarray_get_ptr_complex64( const uint8_t *idx, stdlib_complex64_t *out ) {
+	*out = *(stdlib_complex64_t *)idx;
 	return 0;
 }
 

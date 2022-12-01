@@ -1883,14 +1883,14 @@ Notes:
 Returns a double-precision complex floating-point ndarray data element.
 
 ```c
-int8_t stdlib_ndarray_get_complex128( const struct ndarray *arr, const int64_t *sub, double complex *out );
+int8_t stdlib_ndarray_get_complex128( const struct ndarray *arr, const int64_t *sub, stdlib_complex128_t *out );
 ```
 
 The function accepts the following arguments:
 
 -   **arr**: `[in] struct ndarray *` input ndarray.
 -   **sub**: `[in] int64_t *` ndarray subscripts.
--   **out**: `[out] double complex *` output address.
+-   **out**: `[out] stdlib_complex128_t *` output address.
 
 Notes:
 
@@ -1902,14 +1902,14 @@ Notes:
 Returns a single-precision complex floating-point ndarray data element.
 
 ```c
-int8_t stdlib_ndarray_get_complex64( const struct ndarray *arr, const int64_t *sub, float complex *out );
+int8_t stdlib_ndarray_get_complex64( const struct ndarray *arr, const int64_t *sub, stdlib_complex64_t *out );
 ```
 
 The function accepts the following arguments:
 
 -   **arr**: `[in] struct ndarray *` input ndarray.
 -   **sub**: `[in] int64_t *` ndarray subscripts.
--   **out**: `[out] float complex *` output address.
+-   **out**: `[out] stdlib_complex64_t *` output address.
 
 Notes:
 
@@ -2153,13 +2153,13 @@ Notes:
 Returns a double-precision complex floating-point ndarray data element specified by a byte array pointer.
 
 ```c
-int8_t stdlib_ndarray_get_ptr_complex128( const uint8_t *idx, double complex *out );
+int8_t stdlib_ndarray_get_ptr_complex128( const uint8_t *idx, stdlib_complex128_t *out );
 ```
 
 The function accepts the following arguments:
 
 -   **idx**: `[in] uint8_t *` byte array pointer to an ndarray data element.
--   **out**: `[out] double complex *` output address.
+-   **out**: `[out] stdlib_complex128_t *` output address.
 
 Notes:
 
@@ -2171,13 +2171,13 @@ Notes:
 Returns a single-precision complex floating-point ndarray data element specified by a byte array pointer.
 
 ```c
-int8_t stdlib_ndarray_get_ptr_complex64( const uint8_t *idx, float complex *out );
+int8_t stdlib_ndarray_get_ptr_complex64( const uint8_t *idx, stdlib_complex64_t *out );
 ```
 
 The function accepts the following arguments:
 
 -   **idx**: `[in] uint8_t *` byte array pointer to an ndarray data element.
--   **out**: `[out] float complex *` output address.
+-   **out**: `[out] stdlib_complex64_t *` output address.
 
 Notes:
 
@@ -2430,14 +2430,14 @@ Notes:
 Returns a double-precision complex floating-point ndarray data element located at a specified linear index.
 
 ```c
-int8_t stdlib_ndarray_iget_complex128( const struct ndarray *arr, const int64_t idx, double complex *out );
+int8_t stdlib_ndarray_iget_complex128( const struct ndarray *arr, const int64_t idx, stdlib_complex128_t *out );
 ```
 
 The function accepts the following arguments:
 
 -   **arr**: `[in] struct ndarray*` input ndarray.
 -   **idx**: `[in] int64_t` linear view index.
--   **out**: `[out] double complex *` output address.
+-   **out**: `[out] stdlib_complex128_t *` output address.
 
 Notes:
 
@@ -2450,14 +2450,14 @@ Notes:
 Returns a single-precision complex floating-point ndarray data element located at a specified linear index.
 
 ```c
-int8_t stdlib_ndarray_iget_complex64( const struct ndarray *arr, const int64_t idx, float complex *out );
+int8_t stdlib_ndarray_iget_complex64( const struct ndarray *arr, const int64_t idx, stdlib_complex64_t *out );
 ```
 
 The function accepts the following arguments:
 
 -   **arr**: `[in] struct ndarray*` input ndarray.
 -   **idx**: `[in] int64_t` linear view index.
--   **out**: `[out] float complex *` output address.
+-   **out**: `[out] stdlib_complex64_t *` output address.
 
 Notes:
 
@@ -2728,14 +2728,14 @@ Notes:
 Sets a double-precision complex floating-point ndarray data element located at a specified linear index.
 
 ```c
-int8_t stdlib_ndarray_iset_complex128( const struct ndarray *arr, const int64_t idx, const double complex v );
+int8_t stdlib_ndarray_iset_complex128( const struct ndarray *arr, const int64_t idx, const stdlib_complex128_t v );
 ```
 
 The function accepts the following arguments:
 
 -   **arr**: `[in] struct ndarray*` input ndarray.
 -   **idx**: `[in] int64_t` linear view index.
--   **v**: `[in] double complex` value to set.
+-   **v**: `[in] stdlib_complex128_t` value to set.
 
 Notes:
 
@@ -2748,14 +2748,14 @@ Notes:
 Sets a single-precision complex floating-point ndarray data element located at a specified linear index.
 
 ```c
-int8_t stdlib_ndarray_iset_complex64( const struct ndarray *arr, const int64_t idx, const float complex v );
+int8_t stdlib_ndarray_iset_complex64( const struct ndarray *arr, const int64_t idx, const stdlib_complex64_t v );
 ```
 
 The function accepts the following arguments:
 
 -   **arr**: `[in] struct ndarray*` input ndarray.
 -   **idx**: `[in] int64_t` linear view index.
--   **v**: `[in] float complex` value to set.
+-   **v**: `[in] stdlib_complex64_t` value to set.
 
 Notes:
 
@@ -2998,14 +2998,14 @@ Notes
 Sets a double-precision complex floating-point ndarray data element.
 
 ```c
-int8_t stdlib_ndarray_set_complex128( const struct ndarray *arr, const int64_t *sub, const double complex v );
+int8_t stdlib_ndarray_set_complex128( const struct ndarray *arr, const int64_t *sub, const stdlib_complex128_t v );
 ```
 
 The function accepts the following arguments:
 
 -   **arr**: `[in] struct ndarray*` input ndarray.
 -   **sub**: `[in] int64_t*` ndarray subscripts.
--   **v**: `[in] double complex` value to set.
+-   **v**: `[in] stdlib_complex128_t` value to set.
 
 Notes
 
@@ -3017,14 +3017,14 @@ Notes
 Sets a single-precision complex floating-point ndarray data element.
 
 ```c
-int8_t stdlib_ndarray_set_complex64( const struct ndarray *arr, const int64_t *sub, const float complex v );
+int8_t stdlib_ndarray_set_complex64( const struct ndarray *arr, const int64_t *sub, const stdlib_complex64_t v );
 ```
 
 The function accepts the following arguments:
 
 -   **arr**: `[in] struct ndarray*` input ndarray.
 -   **sub**: `[in] int64_t*` ndarray subscripts.
--   **v**: `[in] float complex` value to set.
+-   **v**: `[in] stdlib_complex64_t` value to set.
 
 Notes
 
@@ -3255,13 +3255,13 @@ Notes:
 Sets a double-precision complex floating-point ndarray data element specified by a byte array pointer.
 
 ```c
-int8_t stdlib_ndarray_set_ptr_complex128( uint8_t *idx, const double complex v );
+int8_t stdlib_ndarray_set_ptr_complex128( uint8_t *idx, const stdlib_complex128_t v );
 ```
 
 The function accepts the following arguments:
 
 -   **idx**: `[in] uint8_t*` byte array pointer to an ndarray data element.
--   **v**: `[in] double complex` value to set.
+-   **v**: `[in] stdlib_complex128_t` value to set.
 
 Notes:
 
@@ -3273,13 +3273,13 @@ Notes:
 Sets a single-precision complex floating-point ndarray data element specified by a byte array pointer.
 
 ```c
-int8_t stdlib_ndarray_set_ptr_complex64( uint8_t *idx, const float complex v );
+int8_t stdlib_ndarray_set_ptr_complex64( uint8_t *idx, const stdlib_complex64_t v );
 ```
 
 The function accepts the following arguments:
 
 -   **idx**: `[in] uint8_t*` byte array pointer to an ndarray data element.
--   **v**: `[in] float complex` value to set.
+-   **v**: `[in] stdlib_complex64_t` value to set.
 
 Notes:
 

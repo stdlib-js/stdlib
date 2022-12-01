@@ -20,9 +20,10 @@
 #define STDLIB_NDARRAY_CTOR_ISET_H
 
 #include "ndarray.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float64.h"
 #include <stdint.h>
 #include <stdbool.h>
-#include <complex.h>
 
 /**
 * Sets an ndarray data element located at a specified linear index.
@@ -82,12 +83,12 @@ int8_t stdlib_ndarray_iset_int8( const struct ndarray *arr, const int64_t idx, c
 /**
 * Sets a double-precision complex floating-point ndarray data element located at a specified linear index.
 */
-int8_t stdlib_ndarray_iset_complex128( const struct ndarray *arr, const int64_t idx, const double complex v );
+int8_t stdlib_ndarray_iset_complex128( const struct ndarray *arr, const int64_t idx, const stdlib_complex128_t v );
 
 /**
 * Sets a single-precision complex floating-point ndarray data element located at a specified linear index.
 */
-int8_t stdlib_ndarray_iset_complex64( const struct ndarray *arr, const int64_t idx, const float complex v );
+int8_t stdlib_ndarray_iset_complex64( const struct ndarray *arr, const int64_t idx, const stdlib_complex64_t v );
 
 /**
 * Sets a boolean ndarray data element located at a specified linear index.

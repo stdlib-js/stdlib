@@ -21,14 +21,14 @@
 #include "stdlib/ndarray/index_modes.h"
 #include "stdlib/ndarray/orders.h"
 #include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64.h"
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <complex.h>
 #include <inttypes.h>
 
 void print_ndarray_contents( const struct ndarray *x ) {
-	double complex v;
+	stdlib_complex128_t v;
 	int64_t i;
 	int8_t s;
 
@@ -38,7 +38,7 @@ void print_ndarray_contents( const struct ndarray *x ) {
 			fprintf( stderr, "Unable to resolve data element.\n" );
 			exit( EXIT_FAILURE );
 		}
-		fprintf( stdout, "data[%"PRId64"] = %lf + %lfi\n", i, creal( v ), cimag( v ) );
+		fprintf( stdout, "data[%"PRId64"] = %lf + %lfi\n", i, v.re, v.im );
 	}
 }
 
