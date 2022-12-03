@@ -27,7 +27,7 @@
 static const float SCALAR = 8388608.0f;
 
 /**
-* Extracts a normal number y and exponent exp satisfying x = y * 2^exp.
+* Extracts a normal number `y` and exponent `exp` satisfying `x = y * 2^exp`.
 *
 * @param x        input value
 * @param y        destination for normal number
@@ -36,7 +36,7 @@ static const float SCALAR = 8388608.0f;
 * @example
 * #include <stdint.h>
 *
-* float x = 1.0;
+* float x = 1.0f;
 * float y;
 * int32_t exp;
 *
