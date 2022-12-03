@@ -22,6 +22,6 @@
 /**
 * Macro for the mask for the exponent of a single-precision floating-point number.
 */
-#define STDLIB_CONSTANT_FLOAT_EXPONENT_MASK 0x7f800000
+#define STDLIB_CONSTANT_FLOAT32_EXPONENT_MASK 0x7f800000
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_EXPONENT_MASK_H
