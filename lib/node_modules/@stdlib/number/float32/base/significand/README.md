@@ -91,6 +91,95 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float32/base/significand.h"
+```
+
+#### stdlib_base_float32_significand( x )
+
+Returns an integer `y` corresponding to the significand of a single-precision floating-point number `x`.
+
+```c
+#include <stdint.h>
+
+int32_t y;
+stdlib_base_float32_significand( 3.14f );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` input value.
+
+```c
+int32_t stdlib_base_float32_significand( const float x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float32/base/significand.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <inttypes.h>
+
+int main() {
+    float x[] = { 4.0f, 0.0f, -0.0f, 1.0f, -1.0f, 3.14f, -3.14f, 1.0e38f, -1.0e38f, 1.0f/0.0f, -1.0f/0.0f, 0.0f/0.0f };
+
+    int32_t out;
+    int i;
+    for ( i = 0; i < 12; i++ ) {
+        out = stdlib_base_float32_significand( x[ i ] );
+        printf( "%f => %" PRId32 "\n", x[ i ], out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
