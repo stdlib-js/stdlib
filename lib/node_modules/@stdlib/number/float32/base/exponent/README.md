@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Exponent
+# exponentf
 
 > Return an integer corresponding to the unbiased exponent of a [single-precision floating-point number][ieee754].
 
@@ -32,7 +32,7 @@ var exponentf = require( '@stdlib/number/float32/base/exponent' );
 
 #### exponentf( x )
 
-Returns an `integer` corresponding to the unbiased exponent of a [single-precision floating-point number][ieee754].
+Returns an integer corresponding to the unbiased exponent of a [single-precision floating-point number][ieee754].
 
 ```javascript
 var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
