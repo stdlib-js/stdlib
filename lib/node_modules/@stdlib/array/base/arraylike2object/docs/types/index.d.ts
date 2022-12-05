@@ -52,17 +52,12 @@ interface ArrayObject {
 	/**
 	* Boolean indicating whether the data buffer uses accessors for getting and setting elements.
 	*/
-	accessors: boolean;
+	accessorProtocol: boolean;
 
 	/**
-	* Accessor for retrieving a data buffer element.
+	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
 	*/
-	getter: Getter;
-
-	/**
-	* Accessor for setting a data buffer element.
-	*/
-	setter: Setter;
+	accessors: [ Getter, Setter ];
 }
 
 /**
