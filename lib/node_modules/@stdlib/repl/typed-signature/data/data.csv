@@ -4159,6 +4159,7 @@ strided.deg2rad,"strided.deg2rad( N:integer, dtypeX:any, x:ArrayLikeObject, stri
 strided.deg2rad.ndarray,"strided.deg2rad.ndarray( N:integer, dtypeX:any, x:ArrayLikeObject, strideX:integer, offsetX:integer, dtypeY:any, y:ArrayLikeObject, strideY:integer, offsetY:integer )"
 strided.dataTypes,"strided.dataTypes()"
 strided.dispatch,"strided.dispatch( fcns:Function|ArrayLikeObject<Function>, types:ArrayLikeObject, data:ArrayLikeObject|null, nargs:integer, nin:integer, nout:integer )"
+strided.dispatchBy,"strided.dispatchBy( fcns:Function|ArrayLikeObject<Function>, types:ArrayLikeObject, data:ArrayLikeObject|null, nargs:integer, nin:integer, nout:integer )"
 strided.floor,"strided.floor( N:integer, dtypeX:any, x:ArrayLikeObject, strideX:integer, dtypeY:any, y:ArrayLikeObject, strideY:integer )"
 strided.floor.ndarray,"strided.floor.ndarray( N:integer, dtypeX:any, x:ArrayLikeObject, strideX:integer, offsetX:integer, dtypeY:any, y:ArrayLikeObject, strideY:integer, offsetY:integer )"
 strided.inv,"strided.inv( N:integer, dtypeX:any, x:ArrayLikeObject, strideX:integer, dtypeY:any, y:ArrayLikeObject, strideY:integer )"

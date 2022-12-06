@@ -1727,6 +1727,7 @@
 "@stdlib/assert/is-web-worker",IS_WEB_WORKER
 "@stdlib/assert/is-windows",IS_WINDOWS
 "@stdlib/assert/is-absolute-path",isAbsolutePath
+"@stdlib/assert/is-accessor-array",isAccessorArray
 "@stdlib/assert/is-accessor-property",isAccessorProperty
 "@stdlib/assert/is-accessor-property-in",isAccessorPropertyIn
 "@stdlib/assert/is-alphagram",isAlphagram
