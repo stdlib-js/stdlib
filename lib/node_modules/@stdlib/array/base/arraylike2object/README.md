@@ -61,18 +61,18 @@ var obj = arraylike2object( [ 1, 2, 3, 4 ] );
 
 -   The returned object has the following properties:
 
-    -   **data**: data buffer.
+    -   **data**: reference to input array.
     -   **accessorProtocol**: `boolean` indicating whether the data buffer uses accessors for getting and setting elements.
     -   **accessors**: a two-element array whose first element is an accessor for retrieving an array element (i.e., a getter) and whose second element is an accessor for setting an array element (i.e., a setter).
 
 -   The getter accessor accepts two arguments:
 
-    -   **data**: data buffer.
+    -   **data**: input array.
     -   **idx**: element index.
 
 -   The setter accessor accepts three arguments:
 
-    -   **data**: data buffer.
+    -   **data**: input array.
     -   **idx**: element index.
     -   **value**: value to set.
 
