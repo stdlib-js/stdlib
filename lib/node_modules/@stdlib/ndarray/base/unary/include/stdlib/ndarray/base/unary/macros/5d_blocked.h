@@ -121,7 +121,7 @@
 	/* Cache byte offsets to the first indexed elements... */                  \
 	ox1 = stdlib_ndarray_offset( x1 );                                         \
 	ox2 = stdlib_ndarray_offset( x2 );                                         \
-	/* Cache offset increments for the innermost loop ... */                   \
+	/* Cache offset increments for the innermost loop... */                    \
 	d0x1 = sx1[0];                                                             \
 	d0x2 = sx2[0];                                                             \
 	/* Iterate over blocks... */                                               \
