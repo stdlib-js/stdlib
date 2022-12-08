@@ -27,7 +27,7 @@ import { Collection } from '@stdlib/types/object';
 *
 * ## Notes
 *
-* -   If one or more input arrays are empty, the function returns an empty array.
+* -   If provided one or more empty arrays, the function returns an empty array.
 *
 * @param x1 - first input array
 * @param x2 - second input array

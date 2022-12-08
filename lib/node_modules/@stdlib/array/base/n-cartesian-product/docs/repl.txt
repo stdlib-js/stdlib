@@ -2,7 +2,7 @@
 {{alias}}( x1, x2[, ...xN] )
     Returns the n-fold Cartesian product.
 
-    If one or more input arrays are empty, the function returns an empty array.
+    If provided one or more empty arrays, the function returns an empty array.
 
     Parameters
     ----------
