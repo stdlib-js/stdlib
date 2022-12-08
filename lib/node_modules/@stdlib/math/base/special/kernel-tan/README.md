@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2022 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -119,6 +119,105 @@ for ( i = 0; i < x.length; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/kernel_tan.h"
+```
+
+#### stdlib_base_kernel_tan( x, y, k)
+
+Computes the [tangent][tangent] of a `number` on `[-π/4, π/4]`. For increased accuracy, the number for which the [tangent][tangent] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
+
+```c
+double out = stdlib_base_kernel_tan( 3.141592653589793/4.0, 0.0, 1 );
+// returns ~1.0
+
+out = stdlib_base_kernel_tan( 3.141592653589793/6.0, 0.0, 1 );
+// returns ~0.577
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double`  input value (in radians, assumed to be bounded by `~pi/4` in magnitude).
+-   **y**: `[in] double`  tail of `x`.
+-   **k**: `[in] int32_t` if `k = 1`, the function returns `tan(x+y)`. To return the negative inverse `-1/tan(x+y)`, set `k = -1`.
+
+```c
+double stdlib_base_kernel_tan( const double x, const double y, const int32_t k );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/kernel_tan.h"
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <math.h>
+#include <inttypes.h>
+
+int main() {
+    double out;
+    double x[] = { -0.7853981633974483, -0.6108652381980153, -0.4363323129985824, -0.26179938779914946, -0.08726646259971649, 0.08726646259971649,
+    0.26179938779914935, 0.43633231299858233, 0.6108652381980153, 0.7853981633974483 };
+    double y;
+    int32_t k;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        y = 0.0;
+        k = 1;
+        out = stdlib_base_kernel_tan( x[ i ], y, k );
+        printf( "tan( %lf ) = %lf\n", x[ i ], out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
