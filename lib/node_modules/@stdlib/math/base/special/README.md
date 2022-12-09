@@ -274,7 +274,7 @@ var fcns = special;
 -   <span class="signature">[`lucas( n )`][@stdlib/math/base/special/lucas]</span><span class="delimiter">: </span><span class="description">compute the nth Lucas number.</span>
 -   <span class="signature">[`max( [x[, y[, ...args]]] )`][@stdlib/math/base/special/max]</span><span class="delimiter">: </span><span class="description">return the maximum value.</span>
 -   <span class="signature">[`min( [x[, y[, ...args]]] )`][@stdlib/math/base/special/min]</span><span class="delimiter">: </span><span class="description">return the minimum value.</span>
--   <span class="signature">[`minmax( [out,] x[, y[, ...args]] )`][@stdlib/math/base/special/minmax]</span><span class="delimiter">: </span><span class="description">return the minimum and maximum values.</span>
+-   <span class="signature">[`minmax( x[, y[, ...args]] )`][@stdlib/math/base/special/minmax]</span><span class="delimiter">: </span><span class="description">return the minimum and maximum values.</span>
 -   <span class="signature">[`modf( x )`][@stdlib/math/base/special/modf]</span><span class="delimiter">: </span><span class="description">decompose a double-precision floating-point number into integral and fractional parts.</span>
 -   <span class="signature">[`negafibonacci( n )`][@stdlib/math/base/special/negafibonacci]</span><span class="delimiter">: </span><span class="description">compute the nth negaFibonacci number.</span>
 -   <span class="signature">[`negalucas( n )`][@stdlib/math/base/special/negalucas]</span><span class="delimiter">: </span><span class="description">compute the nth negaLucas number.</span>
