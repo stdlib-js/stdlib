@@ -23,23 +23,51 @@
 import { Collection } from '@stdlib/types/object';
 
 /**
-* Returns the minimum and maximum values.
-*
-* @param out - output object
-* @param x - first number
-* @param y - second number
-* @param args - numbers
-* @returns minimum and maximum values
-*
-* @example
-* var out = [ 0.0, 0.0 ];
-* var v = minmax( out, 5.9, 3.14, 4.2 );
-* // returns [ 3.14, 5.9 ]
-*
-* var bool = ( v === out );
-* // returns true
-*/
-declare function minmax( out: Collection, x: number, y?: number, ...args: Array<number> ): Collection; // tslint-disable-line max-line-length
+ * Interface describing `minmax`.
+ */
+ interface MinMax {
+	/**
+	* Returns the minimum and maximum values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param args - numbers
+	* @returns minimum and maximum values
+	*
+	* @example
+	* var v = minmax( 3.14, 4.2 );
+	* // returns [ 3.14, 4.2 ]
+	*
+	* var v = minmax( 3.14, NaN );
+	* // returns [ NaN, NaN ]
+	*
+	* @example
+	* var v = minmax( +0.0, -0.0 );
+	* // returns [ -0.0, 0.0 ]
+	*/
+	( x: number, y?: number, ...args: Array<number> ): Array<number>;
+
+	/**
+	* Returns the minimum and maximum values and assigns results to a provided output array.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param args - numbers
+	* @param out - output object
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns minimum and maximum values
+	*
+	* @example
+	* var out = [ 0.0, 0.0 ];
+	* var v = minmax( 5.9, 3.14, 4.2, out, 1, 0 );
+	* // returns [ 3.14, 5.9 ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( x: number, y?: number, ...args: Array<number>, out: ArrayLike<any>, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+}
 
 /**
 * Returns the minimum and maximum values.
@@ -60,7 +88,7 @@ declare function minmax( out: Collection, x: number, y?: number, ...args: Array<
 * var v = minmax( +0.0, -0.0 );
 * // returns [ -0.0, 0.0 ]
 */
-declare function minmax( x: number, y?: number, ...args: Array<number> ): Collection; // tslint-disable-line max-line-length
+declare var minmax: MinMax;
 
 
 // EXPORTS //
