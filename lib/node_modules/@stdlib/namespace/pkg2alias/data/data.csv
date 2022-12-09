@@ -732,10 +732,12 @@
 "@stdlib/math/base/tools/lucaspoly",base.lucaspoly
 "@stdlib/math/base/special/max",base.max
 "@stdlib/math/base/special/maxabs",base.maxabs
+"@stdlib/math/base/special/maxn",base.maxn
 "@stdlib/math/base/special/min",base.min
 "@stdlib/math/base/special/minabs",base.minabs
 "@stdlib/math/base/special/minmax",base.minmax
 "@stdlib/math/base/special/minmaxabs",base.minmaxabs
+"@stdlib/math/base/special/minn",base.minn
 "@stdlib/math/base/special/modf",base.modf
 "@stdlib/math/base/ops/mul",base.mul
 "@stdlib/math/base/ops/mulf",base.mulf

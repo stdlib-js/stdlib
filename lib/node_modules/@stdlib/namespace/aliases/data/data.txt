@@ -732,10 +732,12 @@ base.lucas
 base.lucaspoly
 base.max
 base.maxabs
+base.maxn
 base.min
 base.minabs
 base.minmax
 base.minmaxabs
+base.minn
 base.modf
 base.mul
 base.mulf
