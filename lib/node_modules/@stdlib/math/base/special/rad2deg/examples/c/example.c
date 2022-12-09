@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/math/base/special/rad2deg.h"
-#include "stdlib/constants/float64/pi.h"
+#include "stdlib/constants/float64/two_pi.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -27,7 +27,7 @@ int main() {
     int i;
 
     for ( i = 0; i < 100; i++ ) {
-		x = (double)rand() / (double)RAND_MAX * 2.0 * STDLIB_CONSTANT_FLOAT64_PI;
+		x = (double)rand() / (double)RAND_MAX * STDLIB_CONSTANT_FLOAT64_TWO_PI;
         d = stdlib_base_rad2deg( x );
         printf( "radians: %lf => degrees: %lf\n", x, d );
     }

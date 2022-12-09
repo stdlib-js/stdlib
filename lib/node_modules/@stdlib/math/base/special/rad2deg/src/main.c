@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/special/rad2deg.h"
 
+// 180.0 / π
 static const double CONST_180_DIV_PI = 57.29577951308232;
 
 /**
