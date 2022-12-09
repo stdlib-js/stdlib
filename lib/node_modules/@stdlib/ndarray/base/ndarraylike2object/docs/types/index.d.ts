@@ -23,8 +23,10 @@
 import { ndarray } from '@stdlib/types/ndarray';
 import { Collection } from '@stdlib/types/object';
 
+// FIXME: we can improve specificity here by retaining type information from the wrapped ndarray. See `@stdlib/array/base/arraylike2object` which types specialized objects depending on the input array data type.
+
 /**
-* Returns an ndarray element.
+* Returns an ndarray buffer element.
 *
 * @param buf - ndarray data buffer
 * @param idx - element index
@@ -33,7 +35,7 @@ import { Collection } from '@stdlib/types/object';
 type Getter = ( buf: ndarray['data'], idx: number ) => any;
 
 /**
-* Sets an ndarray element.
+* Sets an ndarray buffer element.
 *
 * @param buf - ndarray data buffer
 * @param idx - element index
@@ -86,19 +88,14 @@ interface ndarrayObject { // tslint:disable-line:class-name
 	order: ndarray['order'];
 
 	/**
-	* Boolean indicating whether the data buffer uses accessors for getting and setting elements.
+	* Boolean indicating whether the data buffer supports the get/set protocol (i.e., uses accessors for getting and setting elements).
 	*/
-	accessors: boolean;
+	accessorProtocol: boolean;
 
 	/**
-	* Accessor for retrieving a data buffer element.
+	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
 	*/
-	getter: Getter;
-
-	/**
-	* Accessor for setting a data buffer element.
-	*/
-	setter: Setter;
+	accessors: [ Getter, Setter ];
 }
 
 /**

@@ -72,9 +72,8 @@ var obj = ndarraylike2object( arr );
     -   **strides**: array strides.
     -   **offset**: index offset.
     -   **order**: order.
-    -   **accessors**: `boolean` indicating whether the data buffer uses accessors for getting and setting elements.
-    -   **getter**: accessor for retrieving a data buffer element.
-    -   **setter**: accessor for setting a data buffer element.
+    -   **accessorProtocol**: `boolean` indicating whether the data buffer supports the get/set protocol (i.e., uses accessors for getting and setting elements).
+    -   **accessors**: a two-element array whose first element is an accessor for retrieving an ndarray element and whose second element is an accessor for setting an ndarray element.
 
 -   The getter accessor accepts two arguments:
 
@@ -120,7 +119,7 @@ console.log( 'shape: [ %s ]', obj.shape.join( ', ' ) );
 console.log( 'strides: [ %s ]', obj.strides.join( ', ' ) );
 console.log( 'offset: %d', obj.offset );
 console.log( 'order: %s', obj.order );
-console.log( 'accessors: %s', obj.accessors );
+console.log( 'accessor protocol: %s', obj.accessorProtocol );
 ```
 
 </section>
