@@ -32,7 +32,7 @@ var ldexp = require( '@stdlib/math/base/special/ldexp' );
 
 #### ldexp( frac, exp )
 
-Multiplies a [double-precision floating-point number][ieee754] by an `integer` power of two; i.e., `x = frac * 2^exp`.
+Multiplies a [double-precision floating-point number][ieee754] by an `integer` power of two (i.e., `x = frac * 2^exp`).
 
 ```javascript
 var x = ldexp( 0.5, 3 ); // => 0.5 * 2^3 = 0.5 * 8
@@ -42,7 +42,7 @@ x = ldexp( 4.0, -2 ); // => 4 * 2^(-2) = 4 * (1/4)
 // returns 1.0
 ```
 
-If `frac` equals positive or negative `zero`, `NaN`, or positive or negative `infinity`, the function returns a value equal to `frac`.
+If `frac` equals positive or negative zero, `NaN`, or positive or negative `infinity`, the function returns a value equal to `frac`.
 
 ```javascript
 var x = ldexp( 0.0, 20 );
@@ -94,21 +94,21 @@ var f;
 var v;
 var i;
 
-/*
-* 1) Generate random numbers.
-* 2) Break each number into a normalized fraction and an integer power of two.
-* 3) Reconstitute the original number.
-*/
 for ( i = 0; i < 100; i++ ) {
     if ( randu() < 0.5 ) {
         sign = -1.0;
     } else {
         sign = 1.0;
     }
+    // Generate a random number:
     frac = randu() * 10.0;
     exp = round( randu()*616.0 ) - 308;
     x = sign * frac * pow( 10.0, exp );
+
+    // Break the number into a normalized fraction and an integer power of two:
     f = frexp( x );
+
+    // Reconstitute the original number:
     v = ldexp( f[ 0 ], f[ 1 ] );
     console.log( '%d = %d * 2^%d = %d', x, f[ 0 ], f[ 1 ], v );
 }
@@ -182,22 +182,44 @@ double stdlib_base_ldexp( const double frac, const int32_t exp );
 
 ```c
 #include "stdlib/math/base/special/ldexp.h"
+#include "stdlib/math/base/special/frexp.h"
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <inttypes.h>
+#include <math.h>
+
+static double rand_double() {
+    int r = rand();
+    return (double)r / ( (double)RAND_MAX + 1.0 );
+}
 
 int main() {
+    double sign;
     double frac;
     int32_t exp;
-    double out;
+    double x;
+    double v;
     int i;
 
     for ( i = 0; i < 100; i++ ) {
-        frac = (double) rand() / (double) RAND_MAX;
-        exp = (int32_t) rand() - (int32_t) (RAND_MAX/2);
-        out = stdlib_base_ldexp( frac, exp );
-        printf( "frac: %lf, exp: %" PRId32 ", out: %lf\n", frac, exp, out );
+        if ( rand_double() < 0.5 ) {
+            sign = -1.0;
+        } else {
+            sign = 1.0;
+        }
+        // Generate a random number:
+        frac = rand_double() * 10.0;
+        exp = (int32_t)( rand_double()*616.0 ) - 308;
+        x = sign * frac * pow( 10.0, exp );
+
+        // Break the number into a normalized fraction and an integer power of two:
+        stdlib_base_frexp( x, &frac, &exp );
+
+        // Reconstitute the original number:
+        v = stdlib_base_ldexp( frac, exp );
+
+        printf( "%e = %lf * 2^%" PRId32 " = %e\n", x, frac, exp, v );
     }
 }
 ```
