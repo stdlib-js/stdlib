@@ -23,27 +23,17 @@ import min = require( './index' );
 
 // The function returns a number...
 {
-	min(); // $ExpectType number
-	min( -0.2 ); // $ExpectType number
-	min( 3, -0.2 ); // $ExpectType number
-	min( 3, -0.2, -1.2, -4.0 ); // $ExpectType number
+	min( 3.0, -0.2 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided non-number arguments...
 {
-	min( true ); // $ExpectError
-	min( false ); // $ExpectError
-	min( [] ); // $ExpectError
-	min( {} ); // $ExpectError
-	min( 'abc' ); // $ExpectError
-	min( ( x: number ): number => x ); // $ExpectError
-
-	min( true, 3 ); // $ExpectError
-	min( false, 3 ); // $ExpectError
-	min( [], 3 ); // $ExpectError
-	min( {}, 3 ); // $ExpectError
-	min( 'abc', 3 ); // $ExpectError
-	min( ( x: number ): number => x, 3 ); // $ExpectError
+	min( true, 3.0 ); // $ExpectError
+	min( false, 3.0 ); // $ExpectError
+	min( [], 3.0 ); // $ExpectError
+	min( {}, 3.0 ); // $ExpectError
+	min( 'abc', 3.0 ); // $ExpectError
+	min( ( x: number ): number => x, 3.0 ); // $ExpectError
 
 	min( 1.2, true ); // $ExpectError
 	min( 1.2, false ); // $ExpectError
@@ -51,11 +41,11 @@ import min = require( './index' );
 	min( 1.2, {} ); // $ExpectError
 	min( 1.2, 'abc' ); // $ExpectError
 	min( 1.2, ( x: number ): number => x ); // $ExpectError
+}
 
-	min( 1.2, 3, true ); // $ExpectError
-	min( 1.2, 3, false ); // $ExpectError
-	min( 1.2, 3, [] ); // $ExpectError
-	min( 1.2, 3, {} ); // $ExpectError
-	min( 1.2, 3, 'abc' ); // $ExpectError
-	min( 1.2, 3, ( x: number ): number => x ); // $ExpectError
+// The compiler throws an error if the function is provided an unsupported number of arguments...
+{
+	min(); // $ExpectError
+	min( 3.0 ); // $ExpectError
+	min( 3.0, 2.0, 1.0 ); // $ExpectError
 }
