@@ -21,12 +21,15 @@ import minmax = require( './index' );
 
 // TESTS //
 
-// The function returns a collection...
+// The function returns an array of numbers...
 {
-	minmax( -0.2 ); // $ExpectType Collection
-	minmax( 3, -0.2 ); // $ExpectType Collection
-	minmax( 3, -0.2, -1.2, -4.0 ); // $ExpectType Collection
-	minmax( -4.0 ); // $ExpectType Collection
+	minmax(); // $ExpectType number[]
+	minmax( -0.2 ); // $ExpectType number[]
+	minmax( 3.0, -0.2 ); // $ExpectType number[]
+	minmax( 3.0, -0.2, 1.0 ); // $ExpectType number[]
+	minmax( 3.0, -0.2, -1.2, -4.0 ); // $ExpectType number[]
+	minmax( 3.0, -0.2, -1.2, -4.0, 5.0 ); // $ExpectType number[]
+	minmax( 3.0, -0.2, -1.2, -4.0, 5.0, 6.0 ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided an argument which is not a number...
@@ -45,17 +48,40 @@ import minmax = require( './index' );
 	minmax( 1.2, 'abc' ); // $ExpectError
 	minmax( 1.2, ( x: number ): number => x ); // $ExpectError
 
-	minmax( 1.2, 3, true ); // $ExpectError
-	minmax( 1.2, 3, false ); // $ExpectError
-	minmax( 1.2, 3, [] ); // $ExpectError
-	minmax( 1.2, 3, {} ); // $ExpectError
-	minmax( 1.2, 3, 'abc' ); // $ExpectError
-	minmax( 1.2, 3, ( x: number ): number => x ); // $ExpectError
-}
+	minmax( 1.2, 3.0, true ); // $ExpectError
+	minmax( 1.2, 3.0, false ); // $ExpectError
+	minmax( 1.2, 3.0, [] ); // $ExpectError
+	minmax( 1.2, 3.0, {} ); // $ExpectError
+	minmax( 1.2, 3.0, 'abc' ); // $ExpectError
+	minmax( 1.2, 3.0, ( x: number ): number => x ); // $ExpectError
 
-// The compiler throws an error if the function is provided an unsupported number of arguments...
-{
-	minmax(); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, true ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, false ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, [] ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, {} ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 'abc' ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, ( x: number ): number => x ); // $ExpectError
+
+	minmax( 1.2, 3.0, 4.0, 5.0, true ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, false ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, [] ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, {} ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 'abc' ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, ( x: number ): number => x ); // $ExpectError
+
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, true ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, false ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, [] ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, {} ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, 'abc' ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, ( x: number ): number => x ); // $ExpectError
+
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, 7.0, true ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, 7.0, false ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, 7.0, [] ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, 7.0, {} ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, 7.0, 'abc' ); // $ExpectError
+	minmax( 1.2, 3.0, 4.0, 5.0, 6.0, 7.0, ( x: number ): number => x ); // $ExpectError
 }
 
 // Attached to the main export is an `assign` method which returns an array-like object containing numbers...
@@ -106,37 +132,37 @@ import minmax = require( './index' );
 
 // The compiler throws an error if the `assign` method is provided a fourth argument which is not an array-like object of numbers...
 {
-	minmax.assign( 1, 2, [3, 4], false, 1, 0 ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], true, 1, 0 ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], null, 1, 0 ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], {}, 1, 0 ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], ( x: number ): number => x, 1, 0 ); // $ExpectError
+	minmax.assign( 1, 2, false, 1, 0 ); // $ExpectError
+	minmax.assign( 1, 2, true, 1, 0 ); // $ExpectError
+	minmax.assign( 1, 2, null, 1, 0 ); // $ExpectError
+	minmax.assign( 1, 2, {}, 1, 0 ); // $ExpectError
+	minmax.assign( 1, 2, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided a fifth argument which is not a number...
 {
 	const out = [ 0.0, 0.0 ];
 
-	minmax.assign( 1, 2, [3, 4], out, false, 0 ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, true, 0 ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, '2', 0 ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, null, 0 ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, ['out'], 0 ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, {}, 0 ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, ( x: number ): number => x, 0 ); // $ExpectError
+	minmax.assign( 1, 2, out, false, 0 ); // $ExpectError
+	minmax.assign( 1, 2, out, true, 0 ); // $ExpectError
+	minmax.assign( 1, 2, out, '2', 0 ); // $ExpectError
+	minmax.assign( 1, 2, out, null, 0 ); // $ExpectError
+	minmax.assign( 1, 2, out, ['out'], 0 ); // $ExpectError
+	minmax.assign( 1, 2, out, {}, 0 ); // $ExpectError
+	minmax.assign( 1, 2, out, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided a sixth argument which is not a number...
 {
 	const out = [ 0.0, 0.0 ];
 
-	minmax.assign( 1, 2, [3, 4], out, 1, false ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, 1, true ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, 1, '2' ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, 1, null ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, 1, ['out'] ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, 1, {} ); // $ExpectError
-	minmax.assign( 1, 2, [3, 4], out, 1, ( x: number ): number => x ); // $ExpectError
+	minmax.assign( 1, 2, out, 1, false ); // $ExpectError
+	minmax.assign( 1, 2, out, 1, true ); // $ExpectError
+	minmax.assign( 1, 2, out, 1, '2' ); // $ExpectError
+	minmax.assign( 1, 2, out, 1, null ); // $ExpectError
+	minmax.assign( 1, 2, out, 1, ['out'] ); // $ExpectError
+	minmax.assign( 1, 2, out, 1, {} ); // $ExpectError
+	minmax.assign( 1, 2, out, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
