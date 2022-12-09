@@ -28,6 +28,6 @@ int main() {
     int i;
     for ( i = 0; i < 10; i++ ) {
         out = stdlib_base_kernel_sin( x[ i ], 0.0 );
-        printf ( "x[ i ]: %lf, y: %lf, out: %lf\n", x[ i ], 0.0, out );
+        printf ( "x: %lf, y: %lf, out: %lf\n", x[ i ], 0.0, out );
     }
 }

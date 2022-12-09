@@ -14,6 +14,19 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
 * limitations under the License.
+*
+* ## Notice
+*
+* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/9.3.0/lib/msun/src/k_sin.c}. The implementation follows the original, but has been modified for JavaScript.
+*
+* ```text
+* Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
+*
+* Developed at SunPro, a Sun Microsystems, Inc. business.
+* Permission to use, copy, modify, and distribute this
+* software is freely granted, provided that this notice
+* is preserved.
+* ```
 */
 
 #include "stdlib/math/base/special/kernel_sin.h"
@@ -26,14 +39,51 @@ static const double S5 = -2.50507602534068634195e-08; // 0xBE5AE5E6, 0x8A2B9CEB
 static const double S6 = 1.58969099521155010221e-10;  // 0x3DE5D93A, 0x5ACFD57C
 
 /**
-* Computes the sine of a number on [-π/4, π/4].
+* Computes the sine on \\( \approx \[-\pi/4, \pi/4] \\) (except on \\(-0\\)), where \\( \pi/4 \approx 0.7854 \\).
+*
+* ## Method
+*
+* -   Since \\( \sin(-x) = -\sin(x) \\), we need only to consider positive \\(x\\).
+*
+* -   Callers must return \\( \sin(-0) = -0 \\) without calling here since our odd polynomial is not evaluated in a way that preserves \\(-0\\). Callers may do the optimization \\( \sin(x) \approx x \\) for tiny \\(x\\).
+*
+* -   \\( \sin(x) \\) is approximated by a polynomial of degree \\(13\\) on \\( \left\[0,\tfrac{pi}{4}\right] \\)
+*
+*     ```tex
+*     \sin(x) \approx x + S_1 \cdot x^3 + \ldots + S_6 \cdot x^{13}
+*     ```
+*
+*     where
+*
+*     ```tex
+*     \left| \frac{\sin(x)}{x} \left( 1 + S_1 \cdot x + S_2 \cdot x + S_3 \cdot x + S_4 \cdot x + S_5 \cdot x + S_6 \cdot x \right) \right| \le 2^{-58}
+*     ```
+*
+* -   We have
+*
+*     ```tex
+*     \sin(x+y) = \sin(x) + \sin'(x') \cdot y \approx \sin(x) + (1-x*x/2) \cdot y
+*     ```
+*
+*     For better accuracy, let
+*
+*     ```tex
+*     r = x^3 * \left( S_2 + x^2 \cdot \left( S_3 + x^2 * \left( S_4 + x^2 \cdot ( S_5+x^2 \cdot S_6 ) \right) \right) \right)
+*     ```
+*
+*     then
+*
+*     ```tex
+*     \sin(x) = x + \left( S_1 \cdot x + ( x \cdot (r-y/2) + y ) \right)
+*     ```
 *
 * @param x    input value (in radians, assumed to be bounded by `~pi/4` in magnitude)
 * @param y    tail of `x`
-* @return	  sine value
+* @return	  sine
 *
 * @example
-* double out = stdlib_base_kernel_sin( 0.5, 0.0 );
+* double out = stdlib_base_kernel_sin( 3.141592653589793/6.0, 0.0 );
+* // returns ~0.5
 */
 double stdlib_base_kernel_sin( const double x, const double y ) {
 	double z;

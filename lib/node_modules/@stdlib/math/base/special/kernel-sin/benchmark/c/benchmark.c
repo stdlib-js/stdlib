@@ -95,7 +95,6 @@ double rand_double() {
 double benchmark() {
 	double elapsed;
 	double x;
-	double y;
 	double z;
 	double t;
 	int i;
@@ -103,8 +102,7 @@ double benchmark() {
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		x = ( ( rand_double() * 2.0 ) - 1.0 ) * 0.7853981633974483;
-		y = 0.0;
-		z = stdlib_base_kernel_sin( x, y );
+		z = stdlib_base_kernel_sin( x, 0.0 );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;
