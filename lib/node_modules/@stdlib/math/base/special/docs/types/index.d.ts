@@ -4670,13 +4670,8 @@ interface Namespace {
 	/**
 	* Returns the maximum value.
 	*
-	* ## Notes
-	*
-	* -   When an empty set is considered a subset of the extended reals (all real numbers, including positive and negative infinity), negative infinity is the least upper bound. Similar to zero being the identity element for the sum of an empty set and to one being the identity element for the product of an empty set, negative infinity is the identity element for the maximum, and thus, if not provided any arguments, the function returns negative infinity.
-	*
 	* @param x - first number
 	* @param y - second number
-	* @param args - numbers
 	* @returns maximum value
 	*
 	* @example
@@ -4684,7 +4679,7 @@ interface Namespace {
 	* // returns 4.2
 	*
 	* @example
-	* var v = ns.max( 5.9, 3.14, 4.2 );
+	* var v = ns.max( 5.9, 3.14 );
 	* // returns 5.9
 	*
 	* @example
@@ -4730,21 +4725,12 @@ interface Namespace {
 	/**
 	* Returns the minimum value.
 	*
-	* ## Notes
-	*
-	* -   When an empty set is considered a subset of the extended reals (all real numbers, including positive and negative infinity), positive infinity is the greatest lower bound. Similar to zero being the identity element for the sum of an empty set and to one being the identity element for the product of an empty set, positive infinity is the identity element for the minimum, and thus, if not provided any arguments, the function returns positive infinity.
-	*
 	* @param x - first number
 	* @param y - second number
-	* @param args - numbers
 	* @returns minimum value
 	*
 	* @example
 	* var v = ns.min( 3.14, 4.2 );
-	* // returns 3.14
-	*
-	* @example
-	* var v = ns.min( 5.9, 3.14, 4.2 );
 	* // returns 3.14
 	*
 	* @example
