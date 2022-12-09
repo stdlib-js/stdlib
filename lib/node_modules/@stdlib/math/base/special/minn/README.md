@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# min
+# minn
 
 > Return the minimum value.
 
@@ -37,29 +37,39 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var min = require( '@stdlib/math/base/special/min' );
+var minn = require( '@stdlib/math/base/special/minn' );
 ```
 
-#### min( x, y )
+#### minn( \[x\[, y\[, ...args]]] )
 
 Returns the minimum value.
 
 ```javascript
-var v = min( 4.2, 3.14 );
+var v = minn( 4.2, 3.14 );
 // returns 3.14
 
-v = min( +0.0, -0.0 );
+v = minn( +0.0, -0.0 );
 // returns -0.0
+
+v = minn( 4.2, 3.14, -1.0, 6.8 );
+// returns -1.0
 ```
 
 If any argument is `NaN`, the function returns `NaN`.
 
 ```javascript
-var v = min( 4.2, NaN );
+var v = minn( 4.2, NaN );
 // returns NaN
 
-v = min( NaN, 3.14 );
+v = minn( NaN, 3.14 );
 // returns NaN
+```
+
+If not provided any arguments, the function returns `+infinity`.
+
+```javascript
+var v = minn();
+// returns Infinity
 ```
 
 </section>
@@ -69,6 +79,10 @@ v = min( NaN, 3.14 );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   When an empty set is considered a subset of the extended reals (all real numbers, including positive and negative infinity), positive infinity is the greatest lower bound. Similar to zero being the identity element for the sum of an empty set and to one being the identity element for the product of an empty set, positive infinity is the identity element for the minimum, and thus, the minimum is `+infinity`.
 
 </section>
 
@@ -84,7 +98,7 @@ v = min( NaN, 3.14 );
 
 ```javascript
 var minstd = require( '@stdlib/random/base/minstd-shuffle' );
-var min = require( '@stdlib/math/base/special/min' );
+var minn = require( '@stdlib/math/base/special/minn' );
 
 var x;
 var y;
@@ -94,7 +108,7 @@ var i;
 for ( i = 0; i < 100; i++ ) {
     x = minstd();
     y = minstd();
-    v = min( x, y );
+    v = minn( x, y );
     console.log( 'min(%d,%d) = %d', x, y, v );
 }
 ```
