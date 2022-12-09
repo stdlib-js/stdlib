@@ -47,7 +47,7 @@ import { Collection } from '@stdlib/types/object';
 	* var v = minmax( 3.14 );
 	* // returns [ 3.14, 3.14 ]
 	*/
-	( x: number ): Array<number>;
+	( x: number ): Array<number>; // tslint:disable-line unified-signatures
 	/**
 	* Returns the minimum and maximum values.
 	*
@@ -66,7 +66,7 @@ import { Collection } from '@stdlib/types/object';
 	* var v = minmax( +0.0, -0.0 );
 	* // returns [ -0.0, 0.0 ]
 	*/
-	( x: number, y: number ): Array<number>;
+	( x: number, y: number ): Array<number>; // tslint:disable-line unified-signatures
 
 	/**
 	* Returns the minimum and maximum values.
@@ -80,7 +80,7 @@ import { Collection } from '@stdlib/types/object';
 	* var v = minmax( 3.14, 4.2, -1.0 );
 	* // returns [ -1.0, 4.2 ]
 	*/
-	( x: number, y: number, z: number ): Array<number>;
+	( x: number, y: number, z: number ): Array<number>; // tslint:disable-line unified-signatures
 
 	/**
 	* Returns the minimum and maximum values.
@@ -95,7 +95,7 @@ import { Collection } from '@stdlib/types/object';
 	* var v = minmax( 3.14, 4.2, -1.0, 2.0 );
 	* // returns [ -1.0, 4.2 ]
 	*/
-	( x: number, y: number, z: number, w: number ): Array<number>;
+	( x: number, y: number, z: number, w: number ): Array<number>; // tslint:disable-line unified-signatures
 
 	/**
 	* Returns the minimum and maximum values.
@@ -111,7 +111,7 @@ import { Collection } from '@stdlib/types/object';
 	* var v = minmax( 3.14, 4.2, -1.0, 2.0, 1.0 );
 	* // returns [ -1.0, 4.2 ]
 	*/
-	( x: number, y: number, z: number, w: number, v: number ): Array<number>;
+	( x: number, y: number, z: number, w: number, v: number ): Array<number>; // tslint:disable-line unified-signatures
 
 	/**
 	* Returns the minimum and maximum values.
@@ -132,7 +132,7 @@ import { Collection } from '@stdlib/types/object';
 	* var v = minmax( +0.0, -0.0 );
 	* // returns [ -0.0, 0.0 ]
 	*/
-	( x: number, y: number, ...args: Array<number> ): Array<number>;
+	( x: number, y: number, ...args: Array<number> ): Array<number>; // tslint:disable-line unified-signatures
 
 	/**
 	* Returns the minimum and maximum values and assigns results to a provided output array.
