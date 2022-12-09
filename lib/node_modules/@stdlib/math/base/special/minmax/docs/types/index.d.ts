@@ -23,9 +23,96 @@
 import { Collection } from '@stdlib/types/object';
 
 /**
- * Interface describing `minmax`.
+ * Interface describing an interface for computing minimum and maximum values.
  */
  interface MinMax {
+	/**
+	* Returns the minimum and maximum values.
+	*
+	* @returns minimum and maximum values
+	*
+	* @example
+	* var v = minmax();
+	* // returns [ Infinity, -Infinity ]
+	*/
+	(): Array<number>;
+
+	/**
+	* Returns the minimum and maximum values.
+	*
+	* @param x - first number
+	* @returns minimum and maximum values
+	*
+	* @example
+	* var v = minmax( 3.14 );
+	* // returns [ 3.14, 3.14 ]
+	*/
+	( x: number ): Array<number>;
+	/**
+	* Returns the minimum and maximum values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @returns minimum and maximum values
+	*
+	* @example
+	* var v = minmax( 3.14, 4.2 );
+	* // returns [ 3.14, 4.2 ]
+	*
+	* var v = minmax( 3.14, NaN );
+	* // returns [ NaN, NaN ]
+	*
+	* @example
+	* var v = minmax( +0.0, -0.0 );
+	* // returns [ -0.0, 0.0 ]
+	*/
+	( x: number, y: number ): Array<number>;
+
+	/**
+	* Returns the minimum and maximum values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param z - third number
+	* @returns minimum and maximum values
+	*
+	* @example
+	* var v = minmax( 3.14, 4.2, -1.0 );
+	* // returns [ -1.0, 4.2 ]
+	*/
+	( x: number, y: number, z: number ): Array<number>;
+
+	/**
+	* Returns the minimum and maximum values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param z - third number
+	* @param w - fourth number
+	* @returns minimum and maximum values
+	*
+	* @example
+	* var v = minmax( 3.14, 4.2, -1.0, 2.0 );
+	* // returns [ -1.0, 4.2 ]
+	*/
+	( x: number, y: number, z: number, w: number ): Array<number>;
+
+	/**
+	* Returns the minimum and maximum values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param z - third number
+	* @param w - fourth number
+	* @param v - fifth number
+	* @returns minimum and maximum values
+	*
+	* @example
+	* var v = minmax( 3.14, 4.2, -1.0, 2.0, 1.0 );
+	* // returns [ -1.0, 4.2 ]
+	*/
+	( x: number, y: number, z: number, w: number, v: number ): Array<number>;
+
 	/**
 	* Returns the minimum and maximum values.
 	*
@@ -45,7 +132,7 @@ import { Collection } from '@stdlib/types/object';
 	* var v = minmax( +0.0, -0.0 );
 	* // returns [ -0.0, 0.0 ]
 	*/
-	( x: number, y?: number, ...args: Array<number> ): Array<number>;
+	( x: number, y: number, ...args: Array<number> ): Array<number>;
 
 	/**
 	* Returns the minimum and maximum values and assigns results to a provided output array.
