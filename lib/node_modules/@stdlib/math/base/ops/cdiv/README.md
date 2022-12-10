@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# divide
+# cdiv
 
-> Divide two complex numbers.
+> Divide two double-precision complex floating-point numbers.
 
 <section class="intro">
 
@@ -36,27 +36,26 @@ limitations under the License.
 var cdiv = require( '@stdlib/math/base/ops/cdiv' );
 ```
 
-#### cdiv( \[out,] re1, im1, re2, im2 )
+#### cdiv( z1, z2 )
 
-Divides two `complex` numbers where each `complex` number is comprised of a **real** component `re` and an **imaginary** component `im`.
-
-```javascript
-var v = cdiv( -13.0, -1.0, -2.0, 1.0 );
-// returns [ 5.0, 3.0 ]
-```
-
-By default, the function returns real and imaginary components as a two-element `array`. To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
+Divides two double-precision complex floating-point numbers.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var Complex128 = require( '@stdlib/complex/float64' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
 
-var out = new Float64Array( 2 );
+var z1 = new Complex128( -13.0, -1.0 );
+var z2 = new Complex128( -2.0, 1.0 );
 
-var v = cdiv( out, -13.0, -1.0, -2.0, 1.0 );
-// returns <Float64Array>[ 5.0, 3.0 ]
+var v = cdiv( z1, z2 );
+// returns <Complex128>
 
-var bool = ( v === out );
-// returns true
+var re = real( v );
+// returns 5.0
+
+var im = imag( v );
+// returns 3.0
 ```
 
 </section>
@@ -71,32 +70,25 @@ var bool = ( v === out );
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64' );
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
 var cdiv = require( '@stdlib/math/base/ops/cdiv' );
 
-var re;
-var im;
+function randomComplex() {
+    var re = discreteUniform( -50, 50 );
+    var im = discreteUniform( -50, 50 );
+    return new Complex128( re, im );
+}
+
 var z1;
 var z2;
 var z3;
-var o;
 var i;
-
 for ( i = 0; i < 100; i++ ) {
-    re = round( randu()*100.0 ) - 50.0;
-    im = round( randu()*100.0 ) - 50.0;
-    z1 = new Complex128( re, im );
-
-    re = round( randu()*100.0 ) - 50.0;
-    im = round( randu()*100.0 ) - 50.0;
-    z2 = new Complex128( re, im );
-
-    o = cdiv( real(z1), imag(z1), real(z2), imag(z2) );
-    z3 = new Complex128( o[ 0 ], o[ 1 ] );
-
+    z1 = randomComplex();
+    z2 = randomComplex();
+    z3 = cdiv( z1, z2 );
     console.log( '(%s) / (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
 }
 ```
