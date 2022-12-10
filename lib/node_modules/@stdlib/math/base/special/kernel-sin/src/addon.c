@@ -18,7 +18,6 @@
 
 #include "stdlib/math/base/special/kernel_sin.h"
 #include <node_api.h>
-#include <stdint.h>
 #include <assert.h>
 
 /**
