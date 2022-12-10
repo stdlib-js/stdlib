@@ -19,7 +19,6 @@
 #include "stdlib/math/base/special/frexp.h"
 #include <node_api.h>
 #include <stdint.h>
-#include <stdbool.h>
 #include <assert.h>
 
 /**
