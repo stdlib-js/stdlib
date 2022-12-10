@@ -17,7 +17,7 @@
 *
 * ## Notice
 *
-* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/9.3.0/lib/msun/src/k_sin.c}. The implementation follows the original, but has been modified for JavaScript.
+* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/9.3.0/lib/msun/src/k_sin.c}. The implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
