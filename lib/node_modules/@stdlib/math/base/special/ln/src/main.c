@@ -61,11 +61,11 @@ static const int32_t HIGH_BIASED_EXP_0 = 0x3ff00000;
 * // returns ~0.693
 */
 double stdlib_base_ln( const double x ) {
+	double hfsq;
 	uint32_t hx;
 	int32_t k;
 	int32_t i;
 	int32_t j;
-	double hfsq;
 	double t1;
 	double t2;
 	double xc;
@@ -81,8 +81,8 @@ double stdlib_base_ln( const double x ) {
 	if ( stdlib_base_is_nan( x ) || x < 0.0 ) {
 		return 0.0/0.0; // NaN
 	}
+	stdlib_base_float64_get_high_word( x, &hx );
 	xc = x;
-	stdlib_base_float64_get_high_word( xc, &hx );
 	k = 0;
 	if ( hx < HIGH_MIN_NORMAL_EXP ) {
 		// Case: 0 < x < 2**-1022
@@ -93,7 +93,7 @@ double stdlib_base_ln( const double x ) {
 		stdlib_base_float64_get_high_word( xc, &hx );
 	}
 	if ( hx >= HIGH_MAX_NORMAL_EXP ) {
-		return xc + xc;
+		return x + x;
 	}
 	k += ( ( hx>>20 ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS );
 	hx &= HIGH_SIGNIFICAND_MASK;
