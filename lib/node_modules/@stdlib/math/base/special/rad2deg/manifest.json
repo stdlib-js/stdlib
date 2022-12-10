@@ -35,6 +35,20 @@
       ],
       "libraries": [],
       "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
       "dependencies": []
     },
     {
@@ -50,18 +64,6 @@
       "dependencies": [
         "@stdlib/constants/float64/two-pi"
       ]
-    },
-    {
-      "task": "benchmark",
-      "src": [
-        "./src/main.c"
-      ],
-      "include": [
-        "./include"
-      ],
-      "libraries": [],
-      "libpath": [],
-      "dependencies": []
     }
   ]
 }

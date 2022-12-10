@@ -17,73 +17,7 @@
 */
 
 #include "stdlib/math/base/special/rad2deg.h"
-#include <node_api.h>
-#include <assert.h>
+#include "stdlib/math/base/napi/unary.h"
 
-/**
-* Receives JavaScript callback invocation data.
-*
-* @private
-* @param env    environment under which the function is invoked
-* @param info   callback data
-* @return       Node-API value
-*/
-static napi_value addon( napi_env env, napi_callback_info info ) {
-	napi_status status;
-
-	// Get callback arguments:
-	size_t argc = 1;
-	napi_value argv[ 1 ];
-	status = napi_get_cb_info( env, info, &argc, argv, NULL, NULL );
-	assert( status == napi_ok );
-
-	// Check whether we were provided the correct number of arguments:
-	if ( argc < 1 ) {
-		status = napi_throw_error( env, NULL, "invalid invocation. Insufficient arguments." );
-		assert( status == napi_ok );
-		return NULL;
-	}
-	if ( argc > 1 ) {
-		status = napi_throw_error( env, NULL, "invalid invocation. Too many arguments." );
-		assert( status == napi_ok );
-		return NULL;
-	}
-
-	napi_valuetype vtype0;
-	status = napi_typeof( env, argv[ 0 ], &vtype0 );
-	assert( status == napi_ok );
-	if ( vtype0 != napi_number ) {
-		status = napi_throw_type_error( env, NULL, "invalid argument. First argument must be a number." );
-		assert( status == napi_ok );
-		return NULL;
-	}
-
-	double x;
-	status = napi_get_value_double( env, argv[ 0 ], &x );
-	assert( status == napi_ok );
-
-	double out = stdlib_base_rad2deg( x );
-
-	napi_value v;
-	status = napi_create_double( env, out, &v );
-	assert( status == napi_ok );
-
-	return v;
-}
-
-/**
-* Initializes a Node-API module.
-*
-* @private
-* @param env      environment under which the function is invoked
-* @param exports  exports object
-* @return         main export
-*/
-static napi_value init( napi_env env, napi_value exports ) {
-	napi_value fcn;
-	napi_status status = napi_create_function( env, "exports", NAPI_AUTO_LENGTH, addon, NULL, &fcn );
-	assert( status == napi_ok );
-	return fcn;
-}
-
-NAPI_MODULE( NODE_GYP_MODULE_NAME, init )
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_rad2deg )
