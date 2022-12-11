@@ -1,0 +1,9 @@
+/**
+* Evaluates a polynomial.
+*
+* @param x    value at which to evaluate the polynomial
+* @return     evaluated polynomial
+*/
+static {{dtype}} {{fname}}() {
+	return {{coefficient}}{{dtype_suffix}};
+}
