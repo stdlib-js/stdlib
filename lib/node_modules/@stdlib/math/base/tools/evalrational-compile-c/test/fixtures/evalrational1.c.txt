@@ -13,6 +13,7 @@
 */
 static double evalrational( const double x ) {
 	double ax;
+	double ix;
 	double s1;
 	double s2;
 	if ( x == 0.0 ) {
@@ -27,9 +28,9 @@ static double evalrational( const double x ) {
 		s1 = 1.0 + (x * (2.5 + (x * (3.14 + (x * -1.0)))));
 		s2 = 4.0 + (x * (-3.5 + (x * (2.2 + (x * 1.25)))));
 	} else {
-		x = 1.0 / x;
-		s1 = -1.0 + (x * (3.14 + (x * (2.5 + (x * 1.0)))));
-		s2 = 1.25 + (x * (2.2 + (x * (-3.5 + (x * 4.0)))));
+		ix = 1.0 / x;
+		s1 = -1.0 + (ix * (3.14 + (ix * (2.5 + (ix * 1.0)))));
+		s2 = 1.25 + (ix * (2.2 + (ix * (-3.5 + (ix * 4.0)))));
 	}
 	return s1 / s2;
 }

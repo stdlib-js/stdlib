@@ -13,6 +13,7 @@
 */
 static {{dtype}} {{fname}}( const {{dtype}} x ) {
 	{{dtype}} ax;
+	{{dtype}} ix;
 	{{dtype}} s1;
 	{{dtype}} s2;
 	if ( x == 0.0{{dtype_suffix}} ) {
@@ -27,7 +28,7 @@ static {{dtype}} {{fname}}( const {{dtype}} x ) {
 		s1 = {{P_ASCENDING}};
 		s2 = {{Q_ASCENDING}};
 	} else {
-		x = 1.0{{dtype_suffix}} / x;
+		ix = 1.0{{dtype_suffix}} / x;
 		s1 = {{P_DESCENDING}};
 		s2 = {{Q_DESCENDING}};
 	}

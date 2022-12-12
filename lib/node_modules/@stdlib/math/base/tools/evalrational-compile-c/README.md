@@ -71,6 +71,7 @@ In the example above, the output string would correspond to the following functi
 */
 static double evalrational( const double x ) {
     double ax;
+    double ix;
     double s1;
     double s2;
     if ( x == 0.0 ) {
@@ -85,9 +86,9 @@ static double evalrational( const double x ) {
         s1 = 3.0 + (x * (2.0 + (x * 1.0)));
         s2 = -1.0 + (x * (-2.0 + (x * -3.0)));
     } else {
-        x = 1.0 / x;
-        s1 = 1.0 + (x * (2.0 + (x * 3.0)));
-        s2 = -3.0 + (x * (-2.0 + (x * -1.0)));
+        ix = 1.0 / x;
+        s1 = 1.0 + (ix * (2.0 + (ix * 3.0)));
+        s2 = -3.0 + (ix * (-2.0 + (ix * -1.0)));
     }
     return s1 / s2;
 }
@@ -125,6 +126,7 @@ For the previous example, the output string would correspond to the following fu
 */
 static float rational123( const float x ) {
     float ax;
+    float ix;
     float s1;
     float s2;
     if ( x == 0.0f ) {
@@ -139,9 +141,9 @@ static float rational123( const float x ) {
         s1 = 3.0f + (x * (2.0f + (x * 1.0f)));
         s2 = -1.0f + (x * (-2.0f + (x * -3.0f)));
     } else {
-        x = 1.0f / x;
-        s1 = 1.0f + (x * (2.0f + (x * 3.0f)));
-        s2 = -3.0f + (x * (-2.0f + (x * -1.0f)));
+        ix = 1.0f / x;
+        s1 = 1.0f + (ix * (2.0f + (ix * 3.0f)));
+        s2 = -3.0f + (ix * (-2.0f + (ix * -1.0f)));
     }
     return s1 / s2;
 }

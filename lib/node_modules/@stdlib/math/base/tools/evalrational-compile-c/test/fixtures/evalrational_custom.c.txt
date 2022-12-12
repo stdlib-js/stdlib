@@ -13,6 +13,7 @@
 */
 static float rational123( const float x ) {
 	float ax;
+	float ix;
 	float s1;
 	float s2;
 	if ( x == 0.0f ) {
@@ -27,9 +28,9 @@ static float rational123( const float x ) {
 		s1 = 1.0f + (x * (2.5f + (x * (3.14f + (x * -1.0f)))));
 		s2 = 4.0f + (x * (-3.5f + (x * (2.2f + (x * 1.25f)))));
 	} else {
-		x = 1.0f / x;
-		s1 = -1.0f + (x * (3.14f + (x * (2.5f + (x * 1.0f)))));
-		s2 = 1.25f + (x * (2.2f + (x * (-3.5f + (x * 4.0f)))));
+		ix = 1.0f / x;
+		s1 = -1.0f + (ix * (3.14f + (ix * (2.5f + (ix * 1.0f)))));
+		s2 = 1.25f + (ix * (2.2f + (ix * (-3.5f + (ix * 4.0f)))));
 	}
 	return s1 / s2;
 }
