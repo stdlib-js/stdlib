@@ -23,21 +23,11 @@ import maxabs = require( './index' );
 
 // The function returns a number...
 {
-	maxabs(); // $ExpectType number
-	maxabs( -0.2 ); // $ExpectType number
 	maxabs( 3, -0.2 ); // $ExpectType number
-	maxabs( 3, -0.2, -1.2, -4.0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided non-number arguments...
 {
-	maxabs( true ); // $ExpectError
-	maxabs( false ); // $ExpectError
-	maxabs( [] ); // $ExpectError
-	maxabs( {} ); // $ExpectError
-	maxabs( 'abc' ); // $ExpectError
-	maxabs( ( x: number ): number => x ); // $ExpectError
-
 	maxabs( true, 3 ); // $ExpectError
 	maxabs( false, 3 ); // $ExpectError
 	maxabs( [], 3 ); // $ExpectError
@@ -51,11 +41,11 @@ import maxabs = require( './index' );
 	maxabs( 1.2, {} ); // $ExpectError
 	maxabs( 1.2, 'abc' ); // $ExpectError
 	maxabs( 1.2, ( x: number ): number => x ); // $ExpectError
+}
 
-	maxabs( 1.2, 3, true ); // $ExpectError
-	maxabs( 1.2, 3, false ); // $ExpectError
-	maxabs( 1.2, 3, [] ); // $ExpectError
-	maxabs( 1.2, 3, {} ); // $ExpectError
-	maxabs( 1.2, 3, 'abc' ); // $ExpectError
-	maxabs( 1.2, 3, ( x: number ): number => x ); // $ExpectError
+// The compiler throws an error if provided an unsupported number of arguments...
+{
+	maxabs(); // $ExpectError
+	maxabs( -0.2 ); // $ExpectError
+	maxabs( 3, -0.2, -1.2, -4.0 ); // $ExpectError
 }
