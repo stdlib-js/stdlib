@@ -1,5 +1,5 @@
 
-{{alias}}( x[, y[, ...args]] )
+{{alias}}( x, y )
     Returns the minimum and maximum values.
 
     If any argument is `NaN`, the function returns `NaN` for both the minimum
@@ -10,11 +10,8 @@
     x: number
         First number.
 
-    y: number (optional)
+    y: number
         Second number.
-
-    args: ...number (optional)
-        Numbers.
 
     Returns
     -------
@@ -25,17 +22,13 @@
     --------
     > var v = {{alias}}( 3.14, 4.2 )
     [ 3.14, 4.2 ]
-    > v = {{alias}}( 5.9, 3.14, 4.2 )
-    [ 3.14, 5.9 ]
     > v = {{alias}}( 3.14, NaN )
     [ NaN, NaN ]
     > v = {{alias}}( +0.0, -0.0 )
     [ -0.0, +0.0 ]
-    > v = {{alias}}( 3.14 )
-    [ 3.14, 3.14 ]
 
 
-{{alias}}.assign( x[, y[, ...args]], out, stride, offset )
+{{alias}}.assign( x, y, out, stride, offset )
     Returns the minimum and maximum values and assigns results to a provided
     output array.
 
@@ -47,11 +40,8 @@
     x: number
         First number.
 
-    y: number (optional)
+    y: number
         Second number.
-
-    args: ...number (optional)
-        Numbers.
 
     out: Array|TypedArray|Object
         Output object.
