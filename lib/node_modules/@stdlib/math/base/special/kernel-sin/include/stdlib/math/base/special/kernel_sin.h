@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the sine of a number on [-π/4, π/4].
+* Computes the sine of a double-precision floating-point number on [-π/4, π/4].
 */
 double stdlib_base_kernel_sin( const double x, const double y );
 

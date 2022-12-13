@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# Kernel Sine
+# kernelSin
 
-> Compute the [sine][sine] of a number on `[-π/4, π/4]`.
+> Compute the [sine][sine] of a double-precision floating-point number on `[-π/4, π/4]`.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var kernelSin = require( '@stdlib/math/base/special/kernel-sin' );
 
 #### kernelSin( x, y )
 
-Computes the [sine][sine] of a number on `[-π/4, π/4]`.
+Computes the [sine][sine] of a double-precision floating-point number on `[-π/4, π/4]`.
 
 ```javascript
 var v = kernelSin( 0.0, 0.0 );
@@ -132,7 +132,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_kernel_sin( x, y )
 
-Computes the [sine][sine] of a number on `[-π/4, π/4]`.
+Computes the [sine][sine] of a double-precision floating-point number on `[-π/4, π/4]`.
 
 ```c
 double out = stdlib_base_kernel_sin( 0.0, 0.0 );
