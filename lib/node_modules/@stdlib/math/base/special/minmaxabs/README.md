@@ -40,7 +40,7 @@ limitations under the License.
 var minmaxabs = require( '@stdlib/math/base/special/minmaxabs' );
 ```
 
-#### minmaxabs( \[out,] x\[, y\[, ...args]] )
+#### minmaxabs( x\[, y\[, ...args]] )
 
 Returns the minimum and maximum absolute values in a single pass.
 
@@ -65,14 +65,16 @@ v = minmaxabs( NaN, 3.14 );
 // returns [ NaN, NaN ]
 ```
 
-By default, the function returns minimum and maximum absolute values as a two-element `array`. To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
+#### minmaxabs.assign( x\[, y\[, ...args]], out, stride, offset )
+
+Returns the minimum and maximum absolute values in a single pass and assigns results to a provided output array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
 var out = new Float64Array( 2 );
 
-var v = minmaxabs( out, 5.0, 3.0, -2.0, 1.0 );
+var v = minmaxabs.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 );
 // returns <Float64Array>[ 1.0, 5.0 ]
 
 var bool = ( v === out );
