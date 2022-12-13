@@ -32,7 +32,7 @@ var sqrtpi = require( '@stdlib/math/base/special/sqrtpi' );
 
 #### sqrtpi( x )
 
-Computes the principal [square root][@stdlib/math/base/special/sqrt] of the product of π and a positive number.
+Computes the principal [square root][@stdlib/math/base/special/sqrt] of the product of π and a positive double-precision floating-point number.
 
 ```javascript
 var v = sqrtpi( 4.0 );
@@ -110,7 +110,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_sqrtpi( x )
 
-Computes the principal [square root][@stdlib/math/base/special/sqrt] of the product of π and a positive number.
+Computes the principal [square root][@stdlib/math/base/special/sqrt] of the product of π and a positive double-precision floating-point number.
 
 ```c
 double x = stdlib_base_sqrtpi( 4.0 );
