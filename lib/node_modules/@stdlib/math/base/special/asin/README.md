@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2022 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -74,6 +74,95 @@ for ( i = 0; i < x.length; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/asin.h"
+```
+
+#### stdlib_base_asin( x )
+
+Computes the [arcsine][arcsine] of a number (in radians).
+
+```c
+double out = stdlib_base_asin( 0.0 );
+// returns 0.0
+
+out = stdlib_base_asin( -3.141592653589793/6.0 );
+// returns ~-0.551
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value (in radians).
+
+```c
+double stdlib_base_asin( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/asin.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    double x[] = { -1.0, -0.78, -0.56, -0.33, -0.11, 0.11, 0.33, 0.56, 0.78, 1.0 };
+    double v;
+    int i;
+    
+    for ( i = 0; i < 10; i++ ) {
+        v = stdlib_base_asin( x[ i ] );
+        printf( "asin(%lf) = %lf\n", x[ i ], v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
