@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the arcsine of a number.
+* Computes the arcsine of a double-precision floating-point number.
 */
 double stdlib_base_asin( const double x );
 
