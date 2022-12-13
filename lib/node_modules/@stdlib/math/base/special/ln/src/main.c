@@ -99,7 +99,7 @@ static double polyval_q( const double x ) {
 /* End auto-generated functions. */
 
 /**
-* Evaluates the natural-logarithm.
+* Evaluates the natural-logarithm of a double-precision floating-point number.
 *
 * @param x    input value
 * @return     natural logarithm

@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the natural logarithm.
+* Evaluates the natural logarithm of a double-precision floating-point number.
 */
 double stdlib_base_ln( const double x );
 

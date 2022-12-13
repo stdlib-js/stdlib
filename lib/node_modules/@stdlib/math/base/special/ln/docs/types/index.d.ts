@@ -19,7 +19,7 @@
 // TypeScript Version: 2.0
 
 /**
-* Evaluates the natural logarithm.
+* Evaluates the natural logarithm of a double-precision floating-point number.
 *
 * @param x - input value
 * @returns function value
