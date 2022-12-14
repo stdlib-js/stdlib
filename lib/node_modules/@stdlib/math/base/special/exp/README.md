@@ -127,6 +127,7 @@ Evaluates the natural [exponential function][exponential-function].
 ```c
 double out = stdlib_base_exp( 4.0 );
 // returns ~54.5982
+
 out = stdlib_base_exp( -9.0 );
 // returns ~1.234e-4
 ```
@@ -161,6 +162,7 @@ double stdlib_base_exp( const double x );
 #include "stdlib/math/base/special/exp.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 int main() {
     double x;
     double v;
