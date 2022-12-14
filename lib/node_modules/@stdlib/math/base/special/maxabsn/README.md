@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# maxabs
+# maxabsn
 
 > Return the maximum absolute value.
 
@@ -37,29 +37,39 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var maxabs = require( '@stdlib/math/base/special/maxabs' );
+var maxabsn = require( '@stdlib/math/base/special/maxabsn' );
 ```
 
-#### maxabs( x, y )
+#### maxabsn( \[x\[, y\[, ...args]]] )
 
 Returns the maximum absolute value.
 
 ```javascript
-var v = maxabs( -4.2, 3.14 );
+var v = maxabsn( -4.2, 3.14 );
 // returns 4.2
 
-v = maxabs( +0.0, -0.0 );
+v = maxabsn( +0.0, -0.0 );
 // returns +0.0
+
+v = maxabsn( 4.2, 3.14, -1.0, 6.8 );
+// returns 6.8
 ```
 
 If any argument is `NaN`, the function returns `NaN`.
 
 ```javascript
-var v = maxabs( 4.2, NaN );
+var v = maxabsn( 4.2, NaN );
 // returns NaN
 
-v = maxabs( NaN, 3.14 );
+v = maxabsn( NaN, 3.14 );
 // returns NaN
+```
+
+If not provided any arguments, the function returns `+infinity`.
+
+```javascript
+var v = maxabsn();
+// returns Infinity
 ```
 
 </section>
@@ -69,6 +79,10 @@ v = maxabs( NaN, 3.14 );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   When an empty set is considered a subset of the extended reals (all real numbers, including positive and negative infinity), negative infinity is the least upper bound. Similar to zero being the identity element for the sum of an empty set and to one being the identity element for the product of an empty set, negative infinity is the identity element for the maximum, and thus, the function returns `+infinity` (i.e., the absolute value of negative infinity).
 
 </section>
 
@@ -84,7 +98,7 @@ v = maxabs( NaN, 3.14 );
 
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );
-var maxabs = require( '@stdlib/math/base/special/maxabs' );
+var maxabsn = require( '@stdlib/math/base/special/maxabsn' );
 
 var x;
 var y;
@@ -94,7 +108,7 @@ var i;
 for ( i = 0; i < 100; i++ ) {
     x = ( randu()*1000.0 ) - 500.0;
     y = ( randu()*1000.0 ) - 500.0;
-    v = maxabs( x, y );
+    v = maxabsn( x, y );
     console.log( 'maxabs(%d,%d) = %d', x, y, v );
 }
 ```

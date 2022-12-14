@@ -27,23 +27,28 @@
 *
 * @param x - first number
 * @param y - second number
+* @param args - numbers
 * @returns maximum absolute value
 *
 * @example
-* var v = maxabs( 3.14, -4.2 );
+* var v = maxabsn( 3.14, -4.2 );
 * // returns 4.2
 *
 * @example
-* var v = maxabs( 3.14, NaN );
+* var v = maxabsn( 5.9, 3.14, 4.2 );
+* // returns 5.9
+*
+* @example
+* var v = maxabsn( 3.14, NaN );
 * // returns NaN
 *
 * @example
-* var v = maxabs( +0.0, -0.0 );
+* var v = maxabsn( +0.0, -0.0 );
 * // returns +0.0
 */
-declare function maxabs( x: number, y: number ): number;
+declare function maxabsn( x?: number, y?: number, ...args: Array<number> ): number; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
 
-export = maxabs;
+export = maxabsn;
