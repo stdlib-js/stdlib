@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Natural Exponential Function
+# exp
 
 > Natural [exponential function][exponential-function].
 
