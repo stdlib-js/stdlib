@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the hyperbolic arccosine of `x`.
+* Computes the hyperbolic arccosine of double-precision floating-point number.
 */
 double stdlib_base_acosh( const double x );
 

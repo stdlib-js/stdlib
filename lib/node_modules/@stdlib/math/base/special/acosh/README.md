@@ -20,7 +20,7 @@ limitations under the License.
 
 # acosh
 
-> Compute the [hyperbolic arccosine][hyperbolic-arccosine] of a number.
+> Compute the [hyperbolic arccosine][hyperbolic-arccosine] of a double-precision floating-point number.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var acosh = require( '@stdlib/math/base/special/acosh' );
 
 #### acosh( x )
 
-Computes the [hyperbolic arccosine][hyperbolic-arccosine] of `x`.
+Computes the [hyperbolic arccosine][hyperbolic-arccosine] of double-precision floating-point number.
 
 ```javascript
 var v = acosh( 1.0 );
@@ -106,11 +106,12 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_acosh( x )
 
-Computes the [hyperbolic arccosine][hyperbolic-arccosine] of `x`.
+Computes the [hyperbolic arccosine][hyperbolic-arccosine] of double-precision floating-point number.
 
 ```c
 double out = stdlib_base_acosh( 1.0 );
 // returns 0.0
+
 out = stdlib_base_acosh( 2.0 );
 // returns ~1.317
 ```
@@ -145,8 +146,9 @@ double stdlib_base_acosh( const double x );
 #include "stdlib/math/base/special/acosh.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 int main() {
-    double x[] = { 1, 1.45, 1.89, 2.33, 2.78, 3.22, 3.66, 4.11, 4.55, 5 };
+    double x[] = { 1.0, 1.45, 1.89, 2.33, 2.78, 3.22, 3.66, 4.11, 4.55, 5.0 };
     double v;
     int i;
     

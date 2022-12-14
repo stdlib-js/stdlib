@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/9.3.0/lib/msun/src/e_acosh.c?view=markup}. The implementation follows the original, but has been modified for JavaScript.
+* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/12.2.0/lib/msun/src/e_acosh.c?view=markup}. The implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * Copyright (C) 2004 by Sun Microsystems, Inc. All rights reserved.
@@ -41,7 +41,33 @@
 static const double HUGE = 1 << 28; // 2**28
 
 /**
-*  Computes the hyperbolic arccosine of `x`.
+*  Computes the hyperbolic arccosine of double-precision floating-point number.
+*
+* ## Method
+*
+* Based on
+*
+* ```tex
+* \operatorname{acosh}(x) = \log \left[ x + \sqrt{ x^2 - 1 } \right]
+* ```
+*
+* we have
+*
+* ```tex
+* \operatorname{acosh}(x) = \begin{cases}
+* \log(x) + \tfrac{\ln}{2} & \text{ if x is large } \\
+* \log \left( 2x-\tfrac{1}{\sqrt{x^2-1}+x} \right) & \text{ if } x > 2 \\
+* \operatorname{log1p}\left( x - 1 + \sqrt{ 2 \cdot (x-1) + (x-1)^2 } \right) & \text{ otherwise }
+* \end{cases}
+* ```
+*
+* ## Special Cases
+*
+* ```tex
+* \begin{align*}
+* \operatorname{acosh}(x) &= \mathrm{NaN}\ \text{ if } x < 1 \\
+* \end{align*}
+* ```
 *
 * @param x    input value
 * @return	  output value
@@ -52,10 +78,7 @@ static const double HUGE = 1 << 28; // 2**28
 */
 double stdlib_base_acosh( const double x ) {
 	double t;
-	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
-	}
-	if ( x < 1.0 ) {
+	if ( stdlib_base_is_nan( x ) || x < 1.0 ) {
 		return 0.0 / 0.0; // NaN
 	}
 	if ( x == 1.0 ) {
