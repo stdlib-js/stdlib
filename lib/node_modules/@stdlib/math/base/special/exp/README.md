@@ -29,7 +29,7 @@ The natural [exponential function][exponential-function] is defined as
 <!-- <equation class="equation" label="eq:natural_exponential_function" align="center" raw="y = e^x" alt="Natural exponential function definition"> -->
 
 <div class="equation" align="center" data-raw-text="y = e^x" data-equation="eq:natural_exponential_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/exp/docs/img/equation_natural_exponential_function.svg" alt="Natural exponential function definition">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c9b06d85e7bc13ba3f7f88b2ff92e3e2f35c6c85/lib/node_modules/@stdlib/math/base/special/exp/docs/img/equation_natural_exponential_function.svg" alt="Natural exponential function definition">
     <br>
 </div>
 
