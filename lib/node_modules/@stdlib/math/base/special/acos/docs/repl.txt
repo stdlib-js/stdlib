@@ -1,6 +1,6 @@
 
 {{alias}}( x )
-    Compute the arccosine of a number.
+    Compute the arccosine of a double-precision floating-point number.
 
     Parameters
     ----------

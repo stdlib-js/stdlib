@@ -20,7 +20,7 @@ limitations under the License.
 
 # acos
 
-> Compute the [arccosine][arccosine] of a number.
+> Compute the [arccosine][arccosine] of a double-precision floating-point number.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var acos = require( '@stdlib/math/base/special/acos' );
 
 #### acos( x )
 
-Computes the [arccosine][arccosine] of a `number` (in radians).
+Computes the [arccosine][arccosine] of a double-precision floating-point number (in radians).
 
 ```javascript
 var v = acos( 1.0 );
@@ -109,7 +109,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_acos( x )
 
-Computes the [arccosine][arccosine] of a number (in radians).
+Computes the [arccosine][arccosine] of a double-precision floating-point number (in radians).
 
 ```c
 double out = stdlib_base_acos( 1.0 );
