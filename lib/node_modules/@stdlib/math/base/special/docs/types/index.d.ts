@@ -361,7 +361,7 @@ interface Namespace {
 	absf: typeof absf;
 
 	/**
-	* Computes the arccosine of a number.
+	* Computes the arccosine of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns arccosine (in radians)
@@ -381,7 +381,7 @@ interface Namespace {
 	acos: typeof acos;
 
 	/**
-	* Computes the hyperbolic arccosine of a number.
+	* Computes the hyperbolic arccosine of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns hyperbolic arccosine
@@ -641,7 +641,7 @@ interface Namespace {
 	asech: typeof asech;
 
 	/**
-	* Computes the arcsine of a number.
+	* Computes the arcsine of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns arcsine (in radians)
@@ -665,7 +665,7 @@ interface Namespace {
 	asin: typeof asin;
 
 	/**
-	* Computes the hyperbolic arcsine of a number.
+	* Computes the hyperbolic arcsine of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns hyperbolic arcsine
@@ -4122,7 +4122,7 @@ interface Namespace {
 	kernelCos: typeof kernelCos;
 
 	/**
-	* Computes the sine of a number on `[-π/4, π/4]`.
+	* Computes the sine of a double-precision floating-point number on `[-π/4, π/4]`.
 	*
 	* ## Notes
 	*
@@ -4349,7 +4349,7 @@ interface Namespace {
 	ldexp: typeof ldexp;
 
 	/**
-	* Evaluates the natural logarithm.
+	* Evaluates the natural logarithm of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns function value
@@ -4703,16 +4703,11 @@ interface Namespace {
 	*
 	* @param x - first number
 	* @param y - second number
-	* @param args - numbers
 	* @returns maximum absolute value
 	*
 	* @example
 	* var v = ns.maxabs( 3.14, -4.2 );
 	* // returns 4.2
-	*
-	* @example
-	* var v = ns.maxabs( 5.9, 3.14, 4.2 );
-	* // returns 5.9
 	*
 	* @example
 	* var v = ns.maxabs( 3.14, NaN );
@@ -6029,7 +6024,7 @@ interface Namespace {
 	sqrtf: typeof sqrtf;
 
 	/**
-	* Computes the principal square root of the product of π and a positive number.
+	* Computes the principal square root of the product of π and a positive double-precision floating-point number.
 	*
 	* ## Notes
 	*
