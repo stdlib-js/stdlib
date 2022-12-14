@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the hyperbolic arcsine of `x`.
+* Computes the hyperbolic arcsine of double-precision floating-point number.
 */
 double stdlib_base_asinh( const double x );
 

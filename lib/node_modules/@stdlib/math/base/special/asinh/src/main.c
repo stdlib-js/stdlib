@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/9.3.0/lib/msun/src/s_asinh.c?view=markup}. The implementation follows the original, but has been modified for JavaScript.
+* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/12.2.0/lib/msun/src/s_asinh.c?view=markup}. The implementation follows the original, but has been modified for JavaScript.
 *
 * ```text
 * Copyright (C) 2004 by Sun Microsystems, Inc. All rights reserved.
@@ -43,7 +43,26 @@ static const double NEAR_ZERO = 1.0 / (1 << 28); // 2**-28
 static const double HUGE = 1 << 28; // 2**28
 
 /**
-* Computes the hyperbolic arcsine of `x`.
+* Computes the hyperbolic arcsine of double-precision floating-point number.
+*
+* ## Method
+*
+* Based on
+*
+* ```tex
+* \operatorname{asinh}(x) = \operatorname{sgn}(x) \cdot \log \left( |x| + \sqrt{x^2 + 1} \right)
+* ```
+*
+* we have
+*
+* ```tex
+* \operatorname{asinh}(x) = \begin{cases}
+* x  & \text{ if }  1+x^2 =1, \\
+* \operatorname{sgn}(x) \cdot \left( \log(x) + \tfrac{\ln}{2} \right) & \text{ if large } |x| \\
+* \operatorname{sgn}(x) \cdot \log\left( 2 |x| + 1 / ( |x|+ \sqrt{x^2+1} ) \right) & \text{ if } |x| > 2 \\
+* \operatorname{sgn}(x) \cdot \operatorname{log1p}\left( |x| + \tfrac{x^2}{1 + \sqrt{1+x^2}} \right) & \text{otherwise}
+* \end{cases}
+* ```
 *
 * @param x    input value
 * @return	  output value

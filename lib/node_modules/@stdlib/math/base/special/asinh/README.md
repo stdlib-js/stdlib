@@ -20,7 +20,7 @@ limitations under the License.
 
 # asinh
 
-> Compute the [hyperbolic arcsine][hyperbolic-arcsine] of a number.
+> Compute the [hyperbolic arcsine][hyperbolic-arcsine] of a double-precision floating-point number.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var asinh = require( '@stdlib/math/base/special/asinh' );
 
 #### asinh( x )
 
-Computes the [hyperbolic arcsine][hyperbolic-arcsine] of `x`.
+Computes the [hyperbolic arcsine][hyperbolic-arcsine] of a double-precision floating-point number.
 
 ```javascript
 var v = asinh( 0.0 );
@@ -111,7 +111,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_asinh( x )
 
-Computes the [hyperbolic arcsine][hyperbolic-arcsine] of `x`.
+Computes the [hyperbolic arcsine][hyperbolic-arcsine] of a double-precision floating-point number.
 
 ```c
 double out = stdlib_base_asinh( 2.0 );
@@ -151,8 +151,9 @@ double stdlib_base_asinh( const double x );
 #include "stdlib/math/base/special/asinh.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 int main() {
-    double x[] = { -5, -3.89, -2.78, -1.67, -0.55, 0.55, 1.67, 2.78, 3.89, 5 };
+    double x[] = { -5.0, -3.89, -2.78, -1.67, -0.55, 0.55, 1.67, 2.78, 3.89, 5.0 };
     double v;
     int i;
     
