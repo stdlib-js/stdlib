@@ -17,7 +17,7 @@
 *
 * ## Notice
 *
-* The following copyright, license, and long comment were part of the original implementation available as part of [FDLIBM]{@link http://www.netlib.org/fdlibm/s_expm1.c}. The implementation follows the original, but has been modified for JavaScript.
+* The following copyright, license, and long comment were part of the original implementation available as part of [FDLIBM]{@link http://www.netlib.org/fdlibm/s_expm1.c} and [FreeBSD]{@link https://svnweb.freebsd.org/base/release/12.2.0/lib/msun/src/s_expm1.c}. The implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * Copyright (C) 2004 by Sun Microsystems, Inc. All rights reserved.
@@ -33,6 +33,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/number/float64/base/get_high_word.h"
 #include "stdlib/number/float64/base/set_high_word.h"
+#include "stdlib/number/float64/base/from_words.h"
 #include "stdlib/constants/float64/ninf.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/exponent_bias.h"
@@ -81,6 +82,147 @@ static double polyval_q( const double x ) {
 /**
 * Computes `exp(x) - 1`.
 *
+* ## Method
+*
+* 1.  Given \\(x\\), we use argument reduction to find \\(r\\) and an integer \\(k\\) such that
+*
+*     ```tex
+*     x = k \cdot \ln(2) + r
+*     ```
+*
+*     where
+*
+*     ```tex
+*     |r| \leq \frac{\ln(2)}{2} \approx 0.34658
+*     ```
+*
+*     <!-- <note> -->
+*
+*     A correction term \\(c\\) will need to be computed to compensate for the error in \\(r\\) when rounded to a floating-point number.
+*
+*     <!-- </note> -->
+*
+* 2.  To approximate \\(\operatorname{expm1}(r)\\), we use a special rational function on the interval \\(\[0,0.34658]\\). Since
+*
+*     ```tex
+*     r \frac{e^r + 1}{e^r - 1} = 2 + \frac{r^2}{6} - \frac{r^4}{360} + \ldots
+*     ```
+*
+*     we define \\(\operatorname{R1}(r^2)\\) by
+*
+*     ```tex
+*     r \frac{e^r + 1}{e^r - 1} = 2 + \frac{r^2}{6} \operatorname{R1}(r^2)
+*     ```
+*
+*     That is,
+*
+*     ```tex
+*     \begin{align*}
+*     \operatorname{R1}(r^2) &= \frac{6}{r} \biggl(\frac{e^r+1}{e^r-1} - \frac{2}{r}\biggr) \\
+*     &= \frac{6}{r} \biggl( 1 + 2 \biggl(\frac{1}{e^r-1} - \frac{1}{r}\biggr)\biggr) \\
+*     &= 1 - \frac{r^2}{60} + \frac{r^4}{2520} - \frac{r^6}{100800} + \ldots
+*     \end{align*}
+*     ```
+*
+*     We use a special Remes algorithm on \\(\[0,0.347]\\) to generate a polynomial of degree \\(5\\) in \\(r^2\\) to approximate \\(\mathrm{R1}\\). The maximum error of this polynomial approximation is bounded by \\(2^{-61}\\). In other words,
+*
+*     ```tex
+*     \operatorname{R1}(z) \approx 1 + \mathrm{Q1} \cdot z + \mathrm{Q2} \cdot z^2 + \mathrm{Q3} \cdot z^3 + \mathrm{Q4} \cdot z^4 + \mathrm{Q5} \cdot z^5
+*     ```
+*
+*     where
+*
+*     ```tex
+*     \begin{align*}
+*     \mathrm{Q1} &= -1.6666666666666567384\mbox{e-}2 \\
+*     \mathrm{Q2} &= 3.9682539681370365873\mbox{e-}4 \\
+*     \mathrm{Q3} &= -9.9206344733435987357\mbox{e-}6 \\
+*     \mathrm{Q4} &= 2.5051361420808517002\mbox{e-}7 \\
+*     \mathrm{Q5} &= -6.2843505682382617102\mbox{e-}9
+*     \end{align*}
+*     ```
+*
+*     where \\(z = r^2\\) and the values of \\(\mathrm{Q1}\\) to \\(\mathrm{Q5}\\) are listed in the source. The error is bounded by
+*
+*     ```tex
+*     \biggl| 1 + \mathrm{Q1} \cdot z + \ldots + \mathrm{Q5} \cdot z - \operatorname{R1}(z) \biggr| \leq 2^{-61}
+*     ```
+*
+*     \\(\operatorname{expm1}(r) = e^r - 1\\) is then computed by the following specific way which minimizes the accumulated rounding error
+*
+*     ```tex
+*     \operatorname{expm1}(r) = r + \frac{r^2}{2} + \frac{r^3}{2} \biggl( \frac{3 - (\mathrm{R1} + \mathrm{R1} \cdot \frac{r}{2})}{6 - r ( 3 - \mathrm{R1} \cdot \frac{r}{2})} \biggr)
+*     ```
+*
+*     To compensate for the error in the argument reduction, we use
+*
+*     ```tex
+*     \begin{align*}
+*     \operatorname{expm1}(r+c) &= \operatorname{expm1}(r) + c + \operatorname{expm1}(r) \cdot c \\
+*     &\approx \operatorname{expm1}(r) + c + rc
+*     \end{align*}
+*     ```
+*
+*     Thus, \\(c + rc\\) will be added in as the correction terms for \\(\operatorname{expm1}(r+c)\\). Now, we can rearrange the term to avoid optimization screw up.
+*
+*     ```tex
+*     \begin{align*}
+*     \operatorname{expm1}(r+c) &\approx r - \biggl( \biggl( r + \biggl( \frac{r^2}{2} \biggl( \frac{\mathrm{R1} - (3 - \mathrm{R1} \cdot \frac{r}{2})}{6 - r (3 - \mathrm{R1} \cdot \frac{r}{2})} \biggr) - c \biggr) - c \biggr) - \frac{r^2}{2} \biggr) \\
+*     &= r - \mathrm{E}
+*     \end{align*}
+*     ```
+*
+* 3.  To scale back to obtain \\(\operatorname{expm1}(x)\\), we have (from step 1)
+*
+*     ```tex
+*     \operatorname{expm1}(x) = \begin{cases}
+*     2^k  (\operatorname{expm1}(r) + 1) - 1 \\
+*     2^k (\operatorname{expm1}(r) + (1-2^{-k}))
+*     \end{cases}
+*     ```
+*
+* ## Special Cases
+*
+* ```tex
+* \begin{align*}
+* \operatorname{expm1}(\infty) &= \infty \\
+* \operatorname{expm1}(-\infty) &= -1 \\
+* \operatorname{expm1}(\mathrm{NaN}) &= \mathrm{NaN}
+* \end{align*}
+* ```
+*
+*
+* ## Notes
+*
+* -   For finite arguments, only \\(\operatorname{expm1}(0) = 0\\) is exact.
+*
+* -   To save one multiplication, we scale the coefficient \\(\mathrm{Qi}\\) to \\(\mathrm{Qi} \cdot {2^i}\\) and replace \\(z\\) by \\(\frac{x^2}{2}\\).
+*
+* -   To achieve maximum accuracy, we compute \\(\operatorname{expm1}(x)\\) by
+*
+*     -   if \\(x < -56 \cdot \ln(2)\\), return \\(-1.0\\) (raise inexact if \\(x\\) does not equal \\(\infty\\))
+*
+*     -   if \\(k = 0\\), return \\(r-\mathrm{E}\\)
+*
+*     -   if \\(k = -1\\), return \\(\frac{(r-\mathrm{E})-1}{2}\\)
+*
+*     -   if \\(k = 1\\),
+*
+*         -   if \\(r < -0.25\\), return \\(2((r+0.5)- \mathrm{E})\\)
+*         -   else return \\(1+2(r-\mathrm{E})\\)
+*
+*     -   if \\(k < -2\\) or \\(k > 56\\), return \\(2^k(1-(\mathrm{E}-r)) - 1\\) (or \\(e^x-1\\))
+*
+*     -   if \\(k \leq 20\\), return \\(2^k((1-2^{-k})-(\mathrm{E}-r))\\)
+*
+*     -   else return \\(2^k(1-((\mathrm{E}+2^{-k})-r))\\)
+*
+* -   For IEEE 754 double, if \\(x > 7.09782712893383973096\mbox{e+}02\\), then \\(\operatorname{expm1}(x)\\) will overflow.
+*
+* -   The hexadecimal values listed in the source are the intended ones for the implementation constants. Decimal values may be used, provided that the compiler will convert from decimal to binary accurately enough to produce the intended hexadecimal values.
+*
+* -   According to an error analysis, the error is always less than \\(1\\) ulp (unit in the last place).
+*
 * @param x    input value
 * @return	  output value
 *
@@ -90,36 +232,37 @@ static double polyval_q( const double x ) {
 */
 double stdlib_base_expm1( const double x ) {
 	double halfX;
-	int sign;
-	double lo;
-	double hi;
+	double twopk;
 	uint32_t hy;
 	uint32_t hx;
+	int32_t k;
+	double lo;
+	double hi;
 	double r1;
-	double xc = x;
+	double xc;
 	double y;
 	double z;
 	double c;
 	double t;
 	double e;
-	int32_t k;
+	int sign;
 
-	if ( xc == STDLIB_CONSTANT_FLOAT64_PINF || stdlib_base_is_nan( xc ) ) {
-		return xc;
+	if ( x == STDLIB_CONSTANT_FLOAT64_PINF || stdlib_base_is_nan( x ) ) {
+		return x;
 	}
-	if ( xc == STDLIB_CONSTANT_FLOAT64_NINF ) {
+	if ( x == STDLIB_CONSTANT_FLOAT64_NINF ) {
 		return -1.0;
 	}
-	if ( xc == 0.0 ) {
-		return xc; // handles +-0
+	if ( x == 0.0 ) {
+		return x; // handles +-0
 	}
 	// Set y = |x|:
-	if ( xc < 0.0 ) {
+	if ( x < 0.0 ) {
 		sign = 1;
-		y = -xc;
+		y = -x;
 	} else {
 		sign = 0;
-		y = xc;
+		y = x;
 	}
 	// Filter out huge and non-finite arguments...
 	if ( y >= LN2x56 ) { // if |x| >= 56*ln(2)
@@ -130,6 +273,8 @@ double stdlib_base_expm1( const double x ) {
 			return STDLIB_CONSTANT_FLOAT64_PINF;
 		}
 	}
+	xc = x;
+
 	// Extract the more significant bits from |x|:
 	stdlib_base_float64_get_high_word( y, &hx );
 
@@ -175,6 +320,8 @@ double stdlib_base_expm1( const double x ) {
 	if ( k == 0 ) {
 		return xc - ( ( xc * e ) - z ); // c is 0
 	}
+	stdlib_base_float64_from_words( ((uint32_t)( STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS+k ))<<20, 0, &twopk ); // 2^k
+
 	e = ( xc * ( e - c ) ) - c;
 	e -= z;
 	if ( k == -1 ) {
@@ -188,18 +335,20 @@ double stdlib_base_expm1( const double x ) {
 	}
 	if ( k <= -2 || k > 56 ) { // suffice to return exp(x)-1
 		y = 1.0 - ( e - xc );
-
-		// Add k to y's exponent:
-		stdlib_base_float64_get_high_word( y, &hy );
-		hy += ( k << 20 );
-		stdlib_base_float64_set_high_word( hy, &y );
-
+		if ( k == 1024 ) { // NOTE: msun does `y = y*2.0*0x1p1023;` here (see https://svnweb.freebsd.org/base/release/12.2.0/lib/msun/src/s_expm1.c?view=markup#l201), but depending on order of operation, this may overflow, which I am not sure is desired, so kept the previous logic from FDLIBM.
+			// Add k to y's exponent:
+			stdlib_base_float64_get_high_word( y, &hy );
+			hy += ( k << 20 );
+			stdlib_base_float64_set_high_word( hy, &y );
+		} else {
+			y *= twopk;
+		}
 		return y - 1.0;
 	}
 	t = 1.0;
 	if ( k < 20 ) {
-		// 0x3ff00000 - (0x200000>>k) = 1072693248 - (0x200000>>k) => 0x200000 = 0 00000000010 00000000000000000000
-		hy = 1072693248 - ( 0x200000 >> k );
+		// 0x3ff00000 - (0x200000>>k) = 1072693248 - (0x200000>>k) => 0x3ff00000 = 00111111111100000000000000000000 and 0x200000 = 0 00000000010 00000000000000000000
+		hy = 1072693248 - ( 0x200000 >> k ); // cppcheck-suppress shiftNegative
 		stdlib_base_float64_set_high_word( hy, &t ); // t=1-2^-k
 		y = t - ( e - xc );
 	} else {
@@ -208,9 +357,6 @@ double stdlib_base_expm1( const double x ) {
 		y = xc - ( e + t );
 		y += 1.0;
 	}
-	// Add k to y's exponent:
-	stdlib_base_float64_get_high_word( y, &hy );
-	hy += ( k << 20 );
-	stdlib_base_float64_set_high_word( hy, &y );
+	y *= twopk;
 	return y;
 }
