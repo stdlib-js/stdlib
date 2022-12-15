@@ -29,6 +29,10 @@ import { Collection } from '@stdlib/types/object';
 	/**
 	* Returns the minimum and maximum values.
 	*
+	* ## Notes
+	*
+	* -   When an empty set is considered a subset of the extended reals (all real numbers, including positive and negative infinity), positive infinity is the greatest lower bound and negative infinity is the least upper bound. Similar to zero being the identity element for the sum of an empty set and to one being the identity element for the product of an empty set, positive infinity is the identity element for the minimum and negative infinity is the identity element for the maximum, and thus, if not provided any arguments, the function returns positive infinity for the minimum value and negative infinity for the maximum value.
+	*
 	* @returns minimum and maximum values
 	*
 	* @example
