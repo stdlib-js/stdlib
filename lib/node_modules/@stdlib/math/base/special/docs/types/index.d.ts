@@ -4779,15 +4779,10 @@ interface Namespace {
 	*
 	* @param x - first number
 	* @param y - second number
-	* @param args - numbers
 	* @returns minimum absolute value
 	*
 	* @example
 	* var v = ns.minabs( -3.14, 4.2 );
-	* // returns 3.14
-	*
-	* @example
-	* var v = ns.minabs( 5.9, 3.14, 4.2 );
 	* // returns 3.14
 	*
 	* @example
@@ -4805,7 +4800,6 @@ interface Namespace {
 	*
 	* @param x - first number
 	* @param y - second number
-	* @param args - numbers
 	* @returns minimum and maximum values
 	*
 	* @example
