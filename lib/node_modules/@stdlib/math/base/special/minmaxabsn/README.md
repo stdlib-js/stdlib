@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# minmaxabs
+# minmaxabsn
 
 > Return the minimum and maximum absolute values.
 
@@ -37,32 +37,35 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var minmaxabs = require( '@stdlib/math/base/special/minmaxabs' );
+var minmaxabsn = require( '@stdlib/math/base/special/minmaxabsn' );
 ```
 
-#### minmaxabs( x, y )
+#### minmaxabsn( \[x\[, y\[, ...args]]] )
 
 Returns the minimum and maximum absolute values in a single pass.
 
 ```javascript
-var v = minmaxabs( 4.2, 3.14 );
+var v = minmaxabsn( 4.2, 3.14 );
 // returns [ 3.14, 4.2 ]
 
-v = minmaxabs( +0.0, -0.0 );
+v = minmaxabsn( +0.0, -0.0 );
 // returns [ 0.0, 0.0 ]
+
+v = minmaxabsn( 4.2, 3.14, -1.0, -6.8 );
+// returns [ 1.0, 6.8 ]
 ```
 
 If any argument is `NaN`, the function returns `NaN` for both the minimum value and the maximum value.
 
 ```javascript
-var v = minmaxabs( 4.2, NaN );
+var v = minmaxabsn( 4.2, NaN );
 // returns [ NaN, NaN ]
 
-v = minmaxabs( NaN, 3.14 );
+v = minmaxabsn( NaN, 3.14 );
 // returns [ NaN, NaN ]
 ```
 
-#### minmaxabs.assign( x, y, out, stride, offset )
+#### minmaxabsn.assign( \[x\[, y\[, ...args]]], out, stride, offset )
 
 Returns the minimum and maximum absolute values in a single pass and assigns results to a provided output array.
 
@@ -71,7 +74,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 var out = new Float64Array( 2 );
 
-var v = minmaxabs.assign( 5.0, -1.0, out, 1, 0 );
+var v = minmaxabsn.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 );
 // returns <Float64Array>[ 1.0, 5.0 ]
 
 var bool = ( v === out );
@@ -85,6 +88,10 @@ var bool = ( v === out );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   When an empty set is considered a subset of the extended reals (all real numbers, including positive and negative infinity), positive infinity is the greatest lower bound and negative infinity is the least upper bound. Similar to zero being the identity element for the sum of an empty set and to one being the identity element for the product of an empty set, positive infinity is the identity element for the minimum and negative infinity is the identity element for the maximum, and thus, if not provided any arguments, the function returns positive infinity for both the minimum and maximum absolute values.
 
 </section>
 
@@ -100,7 +107,7 @@ var bool = ( v === out );
 
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );
-var minmaxabs = require( '@stdlib/math/base/special/minmaxabs' );
+var minmaxabsn = require( '@stdlib/math/base/special/minmaxabsn' );
 
 var x;
 var y;
@@ -110,7 +117,7 @@ var i;
 for ( i = 0; i < 100; i++ ) {
     x = ( randu()*100.0 ) - 50.0;
     y = ( randu()*100.0 ) - 50.0;
-    v = minmaxabs( x, y );
+    v = minmaxabsn( x, y );
     console.log( 'minmaxabs(%d,%d) = [%d, %d]', x, y, v[0], v[1] );
 }
 ```
