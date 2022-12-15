@@ -20,7 +20,7 @@ limitations under the License.
 
 # atan
 
-> Compute the [arctangent][arctangent] of a number.
+> Compute the [arctangent][arctangent] of a double-precision floating-point number.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var atan = require( '@stdlib/math/base/special/atan' );
 
 #### atan( x )
 
-Computes the [arctangent][arctangent] of a `number`.
+Computes the [arctangent][arctangent] of a double-precision floating-point number.
 
 ```javascript
 var v = atan( 0.0 );
@@ -102,11 +102,12 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_atan( x )
 
-Computes the [arctangent][arctangent] of a `number`.
+Computes the [arctangent][arctangent] of a double-precision floating-point number.
 
 ```c
 double out = stdlib_base_atan( 0.0 );
 // returns ~0.0
+
 out = stdlib_base_atan( -3.141592653589793/2.0 );
 // returns ~-1.004
 ```
@@ -141,8 +142,9 @@ double stdlib_base_atan( const double x );
 #include "stdlib/math/base/special/atan.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 int main() {
-    double x[] = { -1000, -777.78, -555.56, -333.33, -111.11,  111.11, 333.33,  555.56, 777.78, 1000 };
+    double x[] = { -1000.0, -777.78, -555.56, -333.33, -111.11,  111.11, 333.33,  555.56, 777.78, 1000.0 };
     double v;
     int i;
     

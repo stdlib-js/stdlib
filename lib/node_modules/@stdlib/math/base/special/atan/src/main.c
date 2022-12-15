@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The original C code, long comment, copyright, license, and constants are from [Cephes]{@link http://www.netlib.org/cephes}. The implementation follows the original, but has been modified for JavaScript.
+* The original C code, long comment, copyright, license, and constants are from [Cephes]{@link http://www.netlib.org/cephes}. The implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * Copyright 1984, 1995, 2000 by Stephen L. Moshier
@@ -86,56 +86,74 @@ static double polyval_q( const double x ) {
 /* End auto-generated functions. */
 
 /**
-* Evaluates the natural logarithm of \\(1+x\\).
+* Computes the arctangent of a double-precision floating-point number.
+*
+* ## Method
+*
+* -   Range reduction is from three intervals into the interval from 0 to 0.66. The approximant uses a rational function of degree 4/5 of the form
+*
+*     ```tex
+*     x + x^3 \frac{P(x)}{Q(x)}
+*     ```
+*
+* ## Notes
+*
+* -   Relative error:
+*
+*     | arithmetic | domain  | # trials | peak    | rms     |
+*     |:-----------|:--------|:---------|:--------|:--------|
+*     | DEC        | -10, 10 | 50000    | 2.4e-17 | 8.3e-18 |
+*     | IEEE       | -10, 10 | 10^6     | 1.8e-16 | 5.0e-17 |
 *
 * @param x    input value
-* @return	  output value
+* @return	  arctangent (in radians)
 *
 * @example
 * double out = stdlib_base_atan( 0.0 );
-* // returns 0.0
+* // returns ~0.0
 */
 double stdlib_base_atan( const double x ) {
-	int32_t flg = 0;
-	int32_t sgn = 0;
-	double xc = x;
+	int32_t flg;
+	int32_t sgn;
+	double ax;
 	double y;
 	double z;
 
-	if ( stdlib_base_is_nan( xc ) || xc == 0.0 ) {
-		return xc;
+	if ( stdlib_base_is_nan( x ) || x == 0.0 ) {
+		return x;
 	}
-	if ( xc == STDLIB_CONSTANT_FLOAT64_PINF ) {
+	if ( x == STDLIB_CONSTANT_FLOAT64_PINF ) {
 		return STDLIB_CONSTANT_FLOAT64_HALF_PI;
 	}
-	if ( xc == STDLIB_CONSTANT_FLOAT64_NINF ) {
+	if ( x == STDLIB_CONSTANT_FLOAT64_NINF ) {
 		return -STDLIB_CONSTANT_FLOAT64_HALF_PI;
 	}
-	if ( xc < 0.0 ) {
+	if ( x < 0.0 ) {
 		sgn = 1;
-		xc = -x;
+		ax = -x;
+	} else {
+		sgn = 0;
+		ax = x;
 	}
-	// Range reduction:
+	// Range reduction...
 	flg = 0;
-	if ( xc > T3P8 ) {
+	if ( ax > T3P8 ) {
 		y = STDLIB_CONSTANT_FLOAT64_HALF_PI;
 		flg = 1;
-		xc = -( 1.0 / xc );
-	} else if ( xc <= 0.66 ) {
+		ax = -( 1.0 / ax );
+	} else if ( ax <= 0.66 ) {
 		y = 0.0;
-	}
-	else {
+	} else {
 		y = STDLIB_CONSTANT_FLOAT64_FOURTH_PI;
 		flg = 2;
-		xc = ( xc - 1.0 ) / ( xc + 1.0 );
+		ax = ( ax - 1.0 ) / ( ax + 1.0 );
 	}
-	z = xc * xc;
+	z = ax * ax;
 	z = z * polyval_p( z ) / polyval_q( z );
-	z = ( xc * z ) + xc;
+	z = ( ax * z ) + ax;
 	if ( flg == 2 ) {
 		z += 0.5 * MOREBITS;
-	}
-	else if ( flg == 1 ) {
+	} else if ( flg == 1 ) {
 		z += MOREBITS;
 	}
 	y += z;

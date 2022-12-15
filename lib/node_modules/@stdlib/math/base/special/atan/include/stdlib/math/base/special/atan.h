@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the arctangent of a number.
+* Computes the arctangent of a double-precision floating-point number.
 */
 double stdlib_base_atan( const double x );
 
