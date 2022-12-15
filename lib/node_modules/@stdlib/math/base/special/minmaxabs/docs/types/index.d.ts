@@ -22,24 +22,262 @@
 
 import { Collection } from '@stdlib/types/object';
 
-/**
-* Returns the minimum and maximum absolute values.
-*
-* @param out - output object
-* @param x - first number
-* @param y - second number
-* @param args - numbers
-* @returns minimum and maximum absolute values
-*
-* @example
-* var out = [ 0.0, 0.0 ];
-* var v = minmaxabs( out, -5.9, 3.14, 4.2 );
-* // returns [ 3.14, 5.9 ]
-*
-* var bool = ( v === out );
-* // returns true
-*/
-declare function minmaxabs( out: Collection, x: number, y?: number, ...args: Array<number> ): Collection; // tslint-disable-line max-line-length
+interface MinMaxAbs {
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var v = minmaxabs();
+	* // returns [ Infinity, Infinity ]
+	*/
+	(): Array<number>;
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var v = minmaxabs( 3.14 );
+	* // returns [ 3.14, 3.14 ]
+	*/
+	( x: number ): Array<number>; // tslint:disable-line unified-signatures
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var v = minmaxabs( 3.14, 4.2 );
+	* // returns [ 3.14, 4.2 ]
+	*
+	* @example
+	* var v = minmaxabs( 3.14, NaN );
+	* // returns [ NaN, NaN ]
+	*
+	* @example
+	* var v = minmaxabs( +0.0, -0.0 );
+	* // returns [ 0.0, 0.0 ]
+	*/
+	( x: number, y: number ): Array<number>; // tslint:disable-line unified-signatures
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param z - third number
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var v = minmaxabs( 3.14, 4.2, -3.8 );
+	* // returns [ 3.14, 4.2 ]
+	*/
+	( x: number, y: number, z: number ): Array<number>; // tslint:disable-line unified-signatures
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param z - third number
+	* @param w - fourth number
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var v = minmaxabs( 3.14, 4.2, -3.8, 3.9 );
+	* // returns [ 3.14, 4.2 ]
+	*/
+	( x: number, y: number, z: number, w: number ): Array<number>; // tslint:disable-line unified-signatures
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param z - third number
+	* @param w - fourth number
+	* @param v - fifth number
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var v = minmaxabs( 3.14, 4.2, -3.8, 3.9, 3.6 );
+	* // returns [ 3.14, 4.2 ]
+	*/
+	( x: number, y: number, z: number, w: number, v: number ): Array<number>; // tslint:disable-line unified-signatures
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param args - numbers
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var v = minmaxabs( 3.14, 4.2 );
+	* // returns [ 3.14, 4.2 ]
+	*
+	* @example
+	* var v = minmaxabs( 3.14, NaN );
+	* // returns [ NaN, NaN ]
+	*
+	* @example
+	* var v = minmaxabs( +0.0, -0.0 );
+	* // returns [ 0.0, 0.0 ]
+	*/
+	( x: number, y: number, ...args: Array<number> ): Array<number>; // tslint:disable-line unified-signatures
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param out - output object
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var out = [ 0.0, 0.0 ];
+	* var v = minmaxabs( out, 1, 0 );
+	* // returns [ Infinity, -Infinity ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( out: Collection, stride: number, offset: number ): Collection;
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param out - output object
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var out = [ 0.0, 0.0 ];
+	* var v = minmaxabs( 3.14, out, 1, 0 );
+	* // returns [ 3.14, 3.14 ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param out - output object
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var out = [ 0.0, 0.0 ];
+	* var v = minmaxabs( 3.14, -8.0, out, 1, 0 );
+	* // returns [ 3.14, 8.0 ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( x: number, y: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param z - third number
+	* @param out - output object
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var out = [ 0.0, 0.0 ];
+	* var v = minmaxabs( 3.14, -8.0, 6.5, out, 1, 0 );
+	* // returns [ 3.14, 8.0 ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( x: number, y: number, z: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param z - third number
+	* @param w - fourth number
+	* @param out - output object
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var out = [ 0.0, 0.0 ];
+	* var v = minmaxabs( 3.14, -8.0, 6.5, 7.2, out, 1, 0 );
+	* // returns [ 3.14, 8.0 ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( x: number, y: number, z: number, w: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param z - third number
+	* @param w - fourth number
+	* @param v - fifth number
+	* @param out - output object
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var out = [ 0.0, 0.0 ];
+	* var v = minmaxabs( 3.14, -8.0, 6.5, 7.2, 5.2, out, 1, 0 );
+	* // returns [ 3.14, 8.0 ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( x: number, y: number, z: number, w: number, v: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+
+	/**
+	* Returns the minimum and maximum absolute values.
+	*
+	* @param x - first number
+	* @param y - second number
+	* @param args - numbers
+	* @param out - output object
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns minimum and maximum absolute values
+	*
+	* @example
+	* var out = [ 0.0, 0.0 ];
+	* var v = minmaxabs( 3.14, -8.0, 6.5, 7.2, 5.2, -5.4, out, 1, 0 );
+	* // returns [ 3.14, 8.0 ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( x: number, y: number, ...args: Array<number|Collection> ): Collection; // tslint-disable-line max-line-length
+}
 
 /**
 * Returns the minimum and maximum absolute values.
@@ -61,7 +299,7 @@ declare function minmaxabs( out: Collection, x: number, y?: number, ...args: Arr
 * var v = minmaxabs( +0.0, -0.0 );
 * // returns [ 0.0, 0.0 ]
 */
-declare function minmaxabs( x: number, y?: number, ...args: Array<number> ): Collection; // tslint-disable-line max-line-length
+declare var minmaxabs: MinMaxAbs;
 
 
 // EXPORTS //
