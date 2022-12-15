@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# minabs
+# minabsn
 
 > Return the minimum absolute value.
 
@@ -37,29 +37,39 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var minabs = require( '@stdlib/math/base/special/minabs' );
+var minabsn = require( '@stdlib/math/base/special/minabsn' );
 ```
 
-#### minabs( x, y )
+#### minabsn( \[x\[, y\[, ...args]]] )
 
 Returns the minimum absolute value.
 
 ```javascript
-var v = minabs( -4.2, 3.14 );
+var v = minabsn( -4.2, 3.14 );
 // returns 3.14
 
-v = minabs( +0.0, -0.0 );
+v = minabsn( +0.0, -0.0 );
 // returns +0.0
+
+v = minabsn( 4.2, 3.14, -1.0, 6.8 );
+// returns 1.0
 ```
 
 If any argument is `NaN`, the function returns `NaN`.
 
 ```javascript
-var v = minabs( 4.2, NaN );
+var v = minabsn( 4.2, NaN );
 // returns NaN
 
-v = minabs( NaN, 3.14 );
+v = minabsn( NaN, 3.14 );
 // returns NaN
+```
+
+If not provided any arguments, the function returns `+infinity`.
+
+```javascript
+var v = minabsn();
+// returns Infinity
 ```
 
 </section>
@@ -69,6 +79,10 @@ v = minabs( NaN, 3.14 );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   When an empty set is considered a subset of the extended reals (all real numbers, including positive and negative infinity), positive infinity is the greatest lower bound. Similar to zero being the identity element for the sum of an empty set and to one being the identity element for the product of an empty set, positive infinity is the identity element for the minimum, and thus, the function returns `+infinity`.
 
 </section>
 
@@ -84,7 +98,7 @@ v = minabs( NaN, 3.14 );
 
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );
-var minabs = require( '@stdlib/math/base/special/minabs' );
+var minabsn = require( '@stdlib/math/base/special/minabsn' );
 
 var x;
 var y;
@@ -94,7 +108,7 @@ var i;
 for ( i = 0; i < 100; i++ ) {
     x = ( randu()*1000.0 ) - 500.0;
     y = ( randu()*1000.0 ) - 500.0;
-    v = minabs( x, y );
+    v = minabsn( x, y );
     console.log( 'minabs(%d,%d) = %d', x, y, v );
 }
 ```

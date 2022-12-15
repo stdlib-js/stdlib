@@ -27,23 +27,28 @@
 *
 * @param x - first number
 * @param y - second number
+* @param args - numbers
 * @returns minimum absolute value
 *
 * @example
-* var v = minabs( -3.14, 4.2 );
+* var v = minabsn( -3.14, 4.2 );
 * // returns 3.14
 *
 * @example
-* var v = minabs( 3.14, NaN );
+* var v = minabsn( 5.9, 3.14, 4.2 );
+* // returns 3.14
+*
+* @example
+* var v = minabsn( 3.14, NaN );
 * // returns NaN
 *
 * @example
-* var v = minabs( +0.0, -0.0 );
+* var v = minabsn( +0.0, -0.0 );
 * // returns +0.0
 */
-declare function minabs( x: number, y: number ): number;
+declare function minabsn( x?: number, y?: number, ...args: Array<number> ): number; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
 
-export = minabs;
+export = minabsn;
