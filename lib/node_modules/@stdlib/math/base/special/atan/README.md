@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2022 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -73,6 +73,93 @@ for ( i = 0; i < x.length; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/atan.h"
+```
+
+#### stdlib_base_atan( x )
+
+Computes the [arctangent][arctangent] of a `number`.
+
+```c
+double out = stdlib_base_atan( 0.0 );
+// returns ~0.0
+out = stdlib_base_atan( -3.141592653589793/2.0 );
+// returns ~-1.004
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_atan( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/atan.h"
+#include <stdlib.h>
+#include <stdio.h>
+int main() {
+    double x[] = { -1000, -777.78, -555.56, -333.33, -111.11,  111.11, 333.33,  555.56, 777.78, 1000 };
+    double v;
+    int i;
+    
+    for ( i = 0; i < 10; i++ ) {
+        v = stdlib_base_atan( x[ i ] );
+        printf( "atan(%lf) = %lf\n", x[ i ], v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
