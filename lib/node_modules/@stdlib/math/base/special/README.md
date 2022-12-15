@@ -51,7 +51,7 @@ var fcns = special;
 -   <span class="signature">[`expit( x )`][@stdlib/math/base/special/expit]</span><span class="delimiter">: </span><span class="description">compute the standard logistic function.</span>
 -   <span class="signature">[`expm1( x )`][@stdlib/math/base/special/expm1]</span><span class="delimiter">: </span><span class="description">compute `exp(x) - 1`.</span>
 -   <span class="signature">[`expm1rel( x )`][@stdlib/math/base/special/expm1rel]</span><span class="delimiter">: </span><span class="description">compute the relative error exponential.</span>
--   <span class="signature">[`ln( x )`][@stdlib/math/base/special/ln]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm.</span>
+-   <span class="signature">[`ln( x )`][@stdlib/math/base/special/ln]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of a double-precision floating-point number.</span>
 -   <span class="signature">[`log( x, b )`][@stdlib/math/base/special/log]</span><span class="delimiter">: </span><span class="description">compute the base `b` logarithm.</span>
 -   <span class="signature">[`log10( x )`][@stdlib/math/base/special/log10]</span><span class="delimiter">: </span><span class="description">evaluate the common logarithm.</span>
 -   <span class="signature">[`log1mexp( x )`][@stdlib/math/base/special/log1mexp]</span><span class="delimiter">: </span><span class="description">evaluates the natural logarithm of `1-exp(-|x|)`.</span>
@@ -74,14 +74,14 @@ var fcns = special;
 
 <div class="namespace-toc">
 
--   <span class="signature">[`acos( x )`][@stdlib/math/base/special/acos]</span><span class="delimiter">: </span><span class="description">compute the arccosine of a number.</span>
--   <span class="signature">[`acosh( x )`][@stdlib/math/base/special/acosh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arccosine of a number.</span>
+-   <span class="signature">[`acos( x )`][@stdlib/math/base/special/acos]</span><span class="delimiter">: </span><span class="description">compute the arccosine of a double-precision floating-point number.</span>
+-   <span class="signature">[`acosh( x )`][@stdlib/math/base/special/acosh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arccosine of a double-precision floating-point number.</span>
 -   <span class="signature">[`acovercos( x )`][@stdlib/math/base/special/acovercos]</span><span class="delimiter">: </span><span class="description">compute the inverse coversed cosine.</span>
 -   <span class="signature">[`acoversin( x )`][@stdlib/math/base/special/acoversin]</span><span class="delimiter">: </span><span class="description">compute the inverse coversed sine.</span>
 -   <span class="signature">[`ahavercos( x )`][@stdlib/math/base/special/ahavercos]</span><span class="delimiter">: </span><span class="description">compute the inverse half-value versed cosine.</span>
 -   <span class="signature">[`ahaversin( x )`][@stdlib/math/base/special/ahaversin]</span><span class="delimiter">: </span><span class="description">compute the inverse half-value versed sine.</span>
--   <span class="signature">[`asin( x )`][@stdlib/math/base/special/asin]</span><span class="delimiter">: </span><span class="description">compute the arcsine of a number.</span>
--   <span class="signature">[`asinh( x )`][@stdlib/math/base/special/asinh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arcsine of a number.</span>
+-   <span class="signature">[`asin( x )`][@stdlib/math/base/special/asin]</span><span class="delimiter">: </span><span class="description">compute the arcsine of a double-precision floating-point number.</span>
+-   <span class="signature">[`asinh( x )`][@stdlib/math/base/special/asinh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arcsine of a double-precision floating-point number.</span>
 -   <span class="signature">[`atan( x )`][@stdlib/math/base/special/atan]</span><span class="delimiter">: </span><span class="description">compute the arctangent of a number.</span>
 -   <span class="signature">[`atan2( y, x )`][@stdlib/math/base/special/atan2]</span><span class="delimiter">: </span><span class="description">compute the angle in the plane (in radians) between the positive x-axis and the ray from `(0,0)` to the point `(x,y)`.</span>
 -   <span class="signature">[`atanh( x )`][@stdlib/math/base/special/atanh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arctangent of a number.</span>
@@ -167,7 +167,7 @@ var fcns = special;
 -   <span class="signature">[`floorn( x, n )`][@stdlib/math/base/special/floorn]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of 10^n toward negative infinity.</span>
 -   <span class="signature">[`floorsd( x, n[, b] )`][@stdlib/math/base/special/floorsd]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest number toward negative infinity with N significant figures.</span>
 -   <span class="signature">[`labs( x )`][@stdlib/math/base/special/labs]</span><span class="delimiter">: </span><span class="description">compute an absolute value of a signed 32-bit integer.</span>
--   <span class="signature">[`maxabs( [x[, y[, ...args]]] )`][@stdlib/math/base/special/maxabs]</span><span class="delimiter">: </span><span class="description">return the maximum absolute value.</span>
+-   <span class="signature">[`maxabs( x, y )`][@stdlib/math/base/special/maxabs]</span><span class="delimiter">: </span><span class="description">return the maximum absolute value.</span>
 -   <span class="signature">[`minabs( [x[, y[, ...args]]] )`][@stdlib/math/base/special/minabs]</span><span class="delimiter">: </span><span class="description">return the minimum absolute value.</span>
 -   <span class="signature">[`minmaxabs( [out,] x[, y[, ...args]] )`][@stdlib/math/base/special/minmaxabs]</span><span class="delimiter">: </span><span class="description">return the minimum and maximum absolute values.</span>
 -   <span class="signature">[`round( x )`][@stdlib/math/base/special/round]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest integer.</span>
@@ -326,7 +326,7 @@ Finally, the namespace exports the following kernel functions, which are mainly 
 -   <span class="signature">[`kernelBetainc( x, a, b, regularized, upper )`][@stdlib/math/base/special/kernel-betainc]</span><span class="delimiter">: </span><span class="description">incomplete beta function and its first derivative.</span>
 -   <span class="signature">[`kernelBetaincinv( a, b, p, q )`][@stdlib/math/base/special/kernel-betaincinv]</span><span class="delimiter">: </span><span class="description">inverse of the lower incomplete beta function.</span>
 -   <span class="signature">[`kernelCos( x, y )`][@stdlib/math/base/special/kernel-cos]</span><span class="delimiter">: </span><span class="description">compute the cosine of a number on `[-π/4, π/4]`.</span>
--   <span class="signature">[`kernelSin( x, y )`][@stdlib/math/base/special/kernel-sin]</span><span class="delimiter">: </span><span class="description">compute the sine of a number on `[-π/4, π/4]`.</span>
+-   <span class="signature">[`kernelSin( x, y )`][@stdlib/math/base/special/kernel-sin]</span><span class="delimiter">: </span><span class="description">compute the sine of a double-precision floating-point number on `[-π/4, π/4]`.</span>
 -   <span class="signature">[`kernelTan( x, y, k )`][@stdlib/math/base/special/kernel-tan]</span><span class="delimiter">: </span><span class="description">compute the tangent of a number on `[-π/4, π/4]`.</span>
 -   <span class="signature">[`rempio2( x, y )`][@stdlib/math/base/special/rempio2]</span><span class="delimiter">: </span><span class="description">compute `x - nπ/2 = r`.</span>
 
