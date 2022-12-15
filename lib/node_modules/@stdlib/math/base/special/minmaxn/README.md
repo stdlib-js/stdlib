@@ -40,7 +40,7 @@ limitations under the License.
 var minmaxn = require( '@stdlib/math/base/special/minmaxn' );
 ```
 
-#### minmaxn( x\[, y\[, ...args]] )
+#### minmaxn( \[x\[, y\[, ...args]]] )
 
 Returns the minimum and maximum values in a single pass.
 
@@ -65,7 +65,7 @@ v = minmaxn( NaN, 3.14 );
 // returns [ NaN, NaN ]
 ```
 
-#### minmaxn.assign( x\[, y\[, ...args]], out, stride, offset )
+#### minmaxn.assign( \[x\[, y\[, ...args]]], out, stride, offset )
 
 Returns the minimum and maximum values in a single pass and assigns results to a provided output array.
 
@@ -88,6 +88,10 @@ var bool = ( v === out );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   When an empty set is considered a subset of the extended reals (all real numbers, including positive and negative infinity), positive infinity is the greatest lower bound and negative infinity is the least upper bound. Similar to zero being the identity element for the sum of an empty set and to one being the identity element for the product of an empty set, positive infinity is the identity element for the minimum and negative infinity is the identity element for the maximum, and thus, if not provided any arguments, the function returns positive infinity for the minimum value and negative infinity for the maximum value.
 
 </section>
 
