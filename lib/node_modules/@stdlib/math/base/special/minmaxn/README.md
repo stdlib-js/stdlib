@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# minmax
+# minmaxn
 
 > Return the minimum and maximum values.
 
@@ -37,32 +37,35 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var minmax = require( '@stdlib/math/base/special/minmax' );
+var minmaxn = require( '@stdlib/math/base/special/minmaxn' );
 ```
 
-#### minmax( x, y )
+#### minmaxn( x\[, y\[, ...args]] )
 
 Returns the minimum and maximum values in a single pass.
 
 ```javascript
-var v = minmax( 4.2, 3.14 );
+var v = minmaxn( 4.2, 3.14 );
 // returns [ 3.14, 4.2 ]
 
-v = minmax( +0.0, -0.0 );
+v = minmaxn( +0.0, -0.0 );
 // returns [ -0.0, +0.0 ]
+
+v = minmaxn( 4.2, 3.14, -1.0, 6.8 );
+// returns [ -1.0, 6.8 ]
 ```
 
 If any argument is `NaN`, the function returns `NaN` for both the minimum value and the maximum value.
 
 ```javascript
-var v = minmax( 4.2, NaN );
+var v = minmaxn( 4.2, NaN );
 // returns [ NaN, NaN ]
 
-v = minmax( NaN, 3.14 );
+v = minmaxn( NaN, 3.14 );
 // returns [ NaN, NaN ]
 ```
 
-#### minmax.assign( x, y, out, stride, offset )
+#### minmaxn.assign( x\[, y\[, ...args]], out, stride, offset )
 
 Returns the minimum and maximum values in a single pass and assigns results to a provided output array.
 
@@ -71,7 +74,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 var out = new Float64Array( 2 );
 
-var v = minmax.assign( 5.0, -2.0, out, 1, 0 );
+var v = minmaxn.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 );
 // returns <Float64Array>[ -2.0, 5.0 ]
 
 var bool = ( v === out );
@@ -100,7 +103,7 @@ var bool = ( v === out );
 
 ```javascript
 var minstd = require( '@stdlib/random/base/minstd-shuffle' );
-var minmax = require( '@stdlib/math/base/special/minmax' );
+var minmaxn = require( '@stdlib/math/base/special/minmaxn' );
 
 var x;
 var y;
@@ -110,7 +113,7 @@ var i;
 for ( i = 0; i < 100; i++ ) {
     x = minstd();
     y = minstd();
-    v = minmax( x, y );
+    v = minmaxn( x, y );
     console.log( 'minmax(%d,%d) = [%d, %d]', x, y, v[0], v[1] );
 }
 ```
