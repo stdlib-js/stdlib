@@ -79,34 +79,34 @@ static const double NEAR_ZERO = 1.0 / (1 << 28); // 2**-28
 * // returns ~1.472
 */
 double stdlib_base_atanh( const double x ) {
-	int32_t sgn = 0;
-	double xc = x;
+	int32_t sgn;
+	double ax;
 	double t;
-	if ( stdlib_base_is_nan( xc ) ) {
+	if ( stdlib_base_is_nan( x ) || x < -1.0 || x > 1.0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( xc < -1.0 || xc > 1.0 ) {
-		return 0.0 / 0.0; // NaN
-	}
-	if ( xc == 1.0 ) {
+	if ( x == 1.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;
 	}
-	if ( xc == -1.0 ) {
+	if ( x == -1.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
 	}
-	if ( xc < 0.0 ) {
+	if ( x < 0.0 ) {
 		sgn = 1;
-		xc = -xc;
+		ax = -x;
+	} else {
+		sgn = 0;
+		ax = x;
 	}
 	// Case: |x| < 2**-28
-	if ( xc < NEAR_ZERO ) {
-		return ( sgn == 1 ) ? -xc : xc;
+	if ( ax < NEAR_ZERO ) {
+		return ( sgn == 1 ) ? -ax : ax;
 	}
-	if ( xc < 0.5 ) {
-		t = xc + xc;
-		t = 0.5 * stdlib_base_log1p( t + ( t * xc / ( 1 - xc ) ) );
+	if ( ax < 0.5 ) {
+		t = ax + ax;
+		t = 0.5 * stdlib_base_log1p( t + ( t * ax / ( 1 - ax ) ) );
 	} else {
-		t = 0.5 * stdlib_base_log1p( ( xc + xc ) / ( 1 - xc ) );
+		t = 0.5 * stdlib_base_log1p( ( ax + ax ) / ( 1 - ax ) );
 	}
 	return ( sgn == 1 ) ? -t : t;
 }
