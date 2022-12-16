@@ -332,38 +332,38 @@ static double rational_p5q5( const double x ) {
 */
 double stdlib_base_erfcinv( const double x ) {
 	int32_t sign;
-	double xc = x;
+	double xc;
 	double qs;
 	double q;
 	double g;
 	double r;
 
 	// Special case: NaN
-	if ( stdlib_base_is_nan( xc ) ) {
+	if ( stdlib_base_is_nan( x ) ) {
 		return 0.0 / 0.0; // NaN
 	}
 	// Special case: 0
-	if ( xc == 0.0 ) {
+	if ( x == 0.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;
 	}
 	// Special case: 2
-	if ( xc == 2.0 ) {
+	if ( x == 2.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
 	}
 	// Special case: 1
-	if ( xc == 1.0 ) {
+	if ( x == 1.0 ) {
 		return 0.0;
 	}
-	if ( xc > 2.0 || xc < 0.0 ) {
+	if ( x > 2.0 || x < 0.0 ) {
 		return 0.0 / 0.0; // NaN
 	}
 	// Argument reduction (reduce to interval [0,1]). If `x` is outside [0,1], we can take advantage of the complementary error function reflection formula: `erfc(-z) = 2 - erfc(z)`, by negating the result once finished.
-	if ( xc > 1.0 ) {
+	if ( x > 1.0 ) {
 		sign = -1.0;
-		q = 2.0 - xc;
+		q = 2.0 - x;
 	} else {
 		sign = 1.0;
-		q = xc;
+		q = x;
 	}
 	xc = 1.0 - q;
 
