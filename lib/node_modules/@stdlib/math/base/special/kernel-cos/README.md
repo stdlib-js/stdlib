@@ -20,7 +20,7 @@ limitations under the License.
 
 # Kernel Cosine
 
-> Compute the [cosine][cosine] of a number on `[-π/4, π/4]`.
+> Compute the [cosine][cosine] of a double-precision floating-point number on `[-π/4, π/4]`.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var kernelCos = require( '@stdlib/math/base/special/kernel-cos' );
 
 #### kernelCos( x, y )
 
-Computes the [cosine][cosine] of a `number` on `[-π/4, π/4]`. For increased accuracy, the number for which the [cosine][cosine] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
+Computes the [cosine][cosine] of a double-precision floating-point number on `[-π/4, π/4]`.
 
 ```javascript
 var v = kernelCos( 0.0, 0.0 );
@@ -55,6 +55,8 @@ v = kernelCos( NaN, 0.0 );
 <section class="notes">
 
 ## Notes
+
+-   For increased accuracy, the number for which the [cosine][cosine] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
 
 -   As components of a [double-double number][double-double-arithmetic], the two [double-precision floating-point numbers][ieee754] `x` and `y` must satisfy 
 
@@ -124,11 +126,12 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_kernel_cos( x, y )
 
-Computes the [cosine][cosine] of a `number` on `[-π/4, π/4]`. For increased accuracy, the number for which the [cosine][cosine] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
+Computes the [cosine][cosine] of a double-precision floating-point number on `[-π/4, π/4]`.
 
 ```c
 var v = stdlib_base_kernel_cos( 0.0, 0.0 );
 // returns ~0.0
+
 v = stdlib_base_kernel_cos( 3.141592653589793/6.0, 0.0 );
 // returns ~0.866
 ```
@@ -150,6 +153,10 @@ double stdlib_base_kernel_cos( const double x, const double y );
 
 <section class="notes">
 
+### Notes
+
+-   For increased accuracy, the number for which the [cosine][cosine] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
+
 </section>
 
 <!-- /.notes -->
@@ -163,20 +170,16 @@ double stdlib_base_kernel_cos( const double x, const double y );
 ```c
 #include "stdlib/math/base/special/kernel_cos.h"
 #include <stdlib.h>
-#include <stdint.h>
 #include <stdio.h>
-#include <math.h>
-#include <inttypes.h>
 
 int main() {
+    double x[] = { -0.7853981633974483, -0.6108652381980153, -0.4363323129985824, -0.26179938779914946, -0.08726646259971649, 0.08726646259971649, 0.26179938779914935, 0.43633231299858233, 0.6108652381980153, 0.7853981633974483 };
+    
     double out;
-    double x[] = { -0.7853981633974483, -0.6108652381980153, -0.4363323129985824, -0.26179938779914946, -0.08726646259971649, 0.08726646259971649,
-    0.26179938779914935, 0.43633231299858233, 0.6108652381980153, 0.7853981633974483 };
-    double y = 0.0;
     int i;
     for ( i = 0; i < 10; i++ ) {
-        out = stdlib_base_kernel_cos( x[ i ], y );
-        printf ( "x[ i ]: %lf, y: %lf, out: %lf\n", x[ i ], y, out );
+        out = stdlib_base_kernel_cos( x[ i ], 0.0 );
+        printf ( "x[ i ]: %lf, y: %lf, out: %lf\n", x[ i ], 0.0, out );
     }
 }
 ```

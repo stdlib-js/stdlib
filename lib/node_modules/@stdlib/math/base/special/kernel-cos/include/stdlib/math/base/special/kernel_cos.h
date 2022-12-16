@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the cosine of a number on [-π/4, π/4].
+* Computes the cosine of a double-precision floating-point number on [-π/4, π/4].
 */
 double stdlib_base_kernel_cos( const double x, const double y );
 
