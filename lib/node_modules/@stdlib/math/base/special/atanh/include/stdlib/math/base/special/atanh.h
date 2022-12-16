@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the hyperbolic arctangent of a number.
+* Computes the hyperbolic arctangent of a double-precision floating-point number.
 */
 double stdlib_base_atanh( const double x );
 

@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/9.3.0/lib/msun/src/e_atanh.c?view=markup}. The implementation follows the original, but has been modified for JavaScript.
+* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/12.2.0/lib/msun/src/e_atanh.c?view=markup}. The implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * Copyright (C) 2004 by Sun Microsystems, Inc. All rights reserved.
@@ -40,7 +40,33 @@
 static const double NEAR_ZERO = 1.0 / (1 << 28); // 2**-28
 
 /**
-* Computes the hyperbolic arctangent of a number.
+* Computes the hyperbolic arctangent of a double-precision floating-point number.
+*
+* ## Method
+*
+* 1.  Reduce \\( x \\) to positive by \\( \operatorname{atanh}(-x) = -\operatorname{atanh}(x) \\)
+*
+* 2.  For \\( x \ge 0.5 \\), we calculate
+*
+*     ```tex
+*     \operatorname{atanh}(x) = \frac{1}{2} \cdot \log\left( 1 + \tfrac{2x}{1-x} \right) = \frac{1}{2} \cdot \operatorname{log1p}\left( 2 \tfrac{x}{1-x} \right)
+*     ```
+*
+*     For \\( x < 0.5 \\), we have
+*
+*     ```tex
+*     \operatorname{atanh}(x) = \frac{1}{2} \cdot \operatorname{log1p}\left( 2x + \tfrac{2x^2}{1-x} \right)
+*     ```
+*
+* ## Special Cases
+*
+* ```tex
+* \begin{align*}
+* \operatorname{atanh}(\mathrm{NaN}) &= \mathrm{NaN}\\
+* \operatorname{atanh}(1.0) &= \infty \\
+* \operatorname{atanh}(-1.0) &= -\infty \\
+* \end{align*}
+* ```
 *
 * @param x    input value
 * @return     output value
@@ -48,6 +74,9 @@ static const double NEAR_ZERO = 1.0 / (1 << 28); // 2**-28
 * @example
 * double out = stdlib_base_atanh( 0.0 );
 * // returns 0.0
+*
+* out = stdlib_base_atanh( 0.9 );
+* // returns ~1.472
 */
 double stdlib_base_atanh( const double x ) {
 	int32_t sgn = 0;

@@ -20,7 +20,7 @@ limitations under the License.
 
 # atanh
 
-> Compute the [hyperbolic arctangent][hyperbolic-arctangent] of a number.
+> Compute the [hyperbolic arctangent][hyperbolic-arctangent] of a double-precision floating-point number.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var atanh = require( '@stdlib/math/base/special/atanh' );
 
 #### atanh( x )
 
-Computes the [hyperbolic arctangent][hyperbolic-arctangent] of `x`.
+Computes the [hyperbolic arctangent][hyperbolic-arctangent] of a double-precision floating-point number.
 
 ```javascript
 var v = atanh( 0.0 );
@@ -115,7 +115,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_atanh( x )
 
-Computes the [hyperbolic arctangent][hyperbolic-arctangent] of x.
+Computes the [hyperbolic arctangent][hyperbolic-arctangent] of double-precision floating-point number.
 
 ```c
 double out = stdlib_base_atanh( 0.0 );
@@ -127,7 +127,7 @@ out = stdlib_base_atanh( -0.0 );
 
 The function accepts the following arguments:
 
--   **x**: `[in] double` input value (in radians).
+-   **x**: `[in] double` input value.
 
 ```c
 double stdlib_base_atanh( const double x );
