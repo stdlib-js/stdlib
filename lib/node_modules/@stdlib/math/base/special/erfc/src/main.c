@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/9.3.0/lib/msun/src/s_erf.c}. The implementation follows the original, but has been modified for JavaScript.
+* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/12.2.0/lib/msun/src/s_erf.c}. The implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
@@ -223,6 +223,217 @@ static double polyval_sb( const double x ) {
 
 /**
 * Evaluates the complementary error function.
+*
+* ```tex
+* \operatorname{erf}(x) = \frac{2}{\sqrt{\pi}} \int^{x}_{0} e^{-t^2}\ \mathrm{dt}
+* ```
+*
+* Note that
+*
+* ```tex
+* \begin{align*}
+* \operatorname{erfc}(x) &= 1 - \operatorname{erf}(x) \\
+* \operatorname{erf}(-x) &= -\operatorname{erf}(x) \\
+* \operatorname{erfc}(-x) &= 2 - \operatorname{erfc}(x)
+* \end{align*}
+* ```
+*
+* ## Method
+*
+* 1.  For \\(|x| \in [0, 0.84375)\\),
+*
+*     ```tex
+*     \operatorname{erf}(x) = x + x \cdot \operatorname{R}(x^2)
+*     ```
+*
+*     and
+*
+*     ```tex
+*     \operatorname{erfc}(x) = \begin{cases}
+*     1 - \operatorname{erf}(x) & \textrm{if}\ x \in (-.84375,0.25) \\
+*     0.5 + ((0.5-x)-x \mathrm{R}) & \textrm{if}\ x \in [0.25,0.84375)
+*     \end{cases}
+*     ```
+*
+*     where \\(R = P/Q\\) and where \\(P\\) is an odd polynomial of degree \\(8\\) and \\(Q\\) is an odd polynomial of degree \\(10\\).
+*
+*     ```tex
+*     \biggl| \mathrm{R} - \frac{\operatorname{erf}(x)-x}{x} \biggr| \leq 2^{-57.90}
+*     ```
+*
+*     <!-- <note> -->
+*
+*     The formula is derived by noting
+*
+*     ```tex
+*     \operatorname{erf}(x) = \frac{2}{\sqrt{\pi}}\biggl(x - \frac{x^3}{3} + \frac{x^5}{10} - \frac{x^7}{42} + \ldots \biggr)
+*     ```
+*
+*     and that
+*
+*     ```tex
+*     \frac{2}{\sqrt{\pi}} = 1.128379167095512573896158903121545171688
+*     ```
+*
+*     is close to unity. The interval is chosen because the fix point of \\(\operatorname{erf}(x)\\) is near \\(0.6174\\) (i.e., \\(\operatorname{erf(x)} = x\\) when \\(x\\) is near \\(0.6174\\)), and, by some experiment, \\(0.84375\\) is chosen to guarantee the error is less than one ulp for \\(\operatorname{erf}(x)\\).
+*
+*     <!-- </note> -->
+*
+* 2.  For \\(|x| \in [0.84375,1.25)\\), let \\(s = |x|-1\\), and \\(c = 0.84506291151\\) rounded to single (\\(24\\) bits)
+*
+*     ```tex
+*     \operatorname{erf}(x) = \operatorname{sign}(x) \cdot \biggl(c + \frac{\operatorname{P1}(s)}{\operatorname{Q1}(s)}\biggr)
+*     ```
+*
+*     and
+*
+*     ```tex
+*     \operatorname{erfc}(x) = \begin{cases}
+*     (1-c) - \frac{\operatorname{P1}(s)}{\operatorname{Q1}(s)} & \textrm{if}\ x > 0 \\
+*     1 + \biggl(c + \frac{\operatorname{P1}(s)}{\operatorname{Q1}(s)}\biggr) & \textrm{if}\ x < 0
+*     \end{cases}
+*     ```
+*
+*     where
+*
+*     ```tex
+*     \biggl|\frac{\mathrm{P1}}{\mathrm{Q1}} - (\operatorname{erf}(|x|)-c)\biggr| \leq 2^{-59.06}
+*     ```
+*
+*     <!-- <note> -->
+*
+*     Here, we use the Taylor series expansion at \\(x = 1\\)
+*
+*     ```tex
+*     \begin{align*}
+*     \operatorname{erf}(1+s) &= \operatorname{erf}(1) + s\cdot \operatorname{poly}(s) \\
+*     &= 0.845.. + \frac{\operatorname{P1}(s)}{\operatorname{Q1}(s)}
+*     \end{align*}
+*     ```
+*
+*     using a rational approximation to approximate
+*
+*     ```tex
+*     \operatorname{erf}(1+s) - (c = (\mathrm{single})0.84506291151)
+*     ```
+*
+*     <!-- </note> -->
+*
+*     Note that, for \\(x \in [0.84375,1.25)\\), \\(|\mathrm{P1}/\mathrm{Q1}| < 0.078\\), where
+*
+*     -   \\(\operatorname{P1}(s)\\) is a degree \\(6\\) polynomial in \\(s\\)
+*     -   \\(\operatorname{Q1}(s)\\) is a degree \\(6\\) polynomial in \\(s\\)
+*
+* 3.  For \\(x \in [1.25,1/0.35)\\),
+*
+*     ```tex
+*     \begin{align*}
+*     \operatorname{erfc}(x) &= \frac{1}{x}e^{-x^2-0.5625+(\mathrm{R1}/\mathrm{S1})} \\
+*     \operatorname{erf}(x) &= 1 - \operatorname{erfc}(x)
+*     \end{align*}
+*     ```
+*
+*     where
+*
+*     -   \\(\operatorname{R1}(z)\\) is a degree \\(7\\) polynomial in \\(z\\), where \\(z = 1/x^2\\)
+*     -   \\(\operatorname{S1}(z)\\) is a degree \\(8\\) polynomial in \\(z\\)
+*
+* 4.  For \\(x \in [1/0.35,28)\\),
+*
+*     ```tex
+*     \operatorname{erfc}(x) = \begin{cases}
+*     \frac{1}{x} e^{-x^2-0.5625+(\mathrm{R2}/\mathrm{S2})} & \textrm{if}\ x > 0 \\
+*     2.0 - \frac{1}{x} e^{-x^2-0.5625+(\mathrm{R2}/\mathrm{S2})} & \textrm{if}\ -6 < x < 0 \\
+*     2.0 - \mathrm{tiny} & \textrm{if}\ x \leq -6
+*     \end{cases}
+*     ```
+*
+*     and
+*
+*     ```tex
+*     \operatorname{erf}(x) = \begin{cases}
+*     \operatorname{sign}(x) \cdot (1.0 - \operatorname{erfc}(x)) & \textrm{if}\ x < 6 \\
+*     \operatorname{sign}(x) \cdot (1.0 - \mathrm{tiny}) & \textrm{otherwise}
+*     \end{cases}
+*     ```
+*
+*     where
+*
+*     -   \\(\operatorname{R2}(z)\\) is a degree \\(6\\) polynomial in \\(z\\), where \\(z = 1/x^2\\)
+*     -   \\(\operatorname{S2}(z)\\) is a degree \\(7\\) polynomial in \\(z\\)
+*
+* 5.  For \\(x \in [28, \infty)\\),
+*
+*     ```tex
+*     \begin{align*}
+*     \operatorname{erf}(x) &= \operatorname{sign}(x) \cdot (1 - \mathrm{tiny}) & \textrm{(raise inexact)}
+*     \end{align*}
+*     ```
+*
+*     and
+*
+*     ```tex
+*     \operatorname{erfc}(x) = \begin{cases}
+*     \mathrm{tiny} \cdot \mathrm{tiny} & \textrm{if}\ x > 0\ \textrm{(raise underflow)} \\
+*     2 - \mathrm{tiny} & \textrm{if}\ x < 0
+*     \end{cases}
+*     ```
+*
+*
+* ## Special Cases
+*
+* ```tex
+* \begin{align*}
+* \operatorname{erf}(0) &= 0 \\
+* \operatorname{erf}(-0) &= -0 \\
+* \operatorname{erf}(\infty) &= 1 \\
+* \operatorname{erf}(-\infty) &= -1 \\
+* \operatorname{erfc}(0) &= 1 \\
+* \operatorname{erfc}(\infty) &= 0 \\
+* \operatorname{erfc}(-\infty) &= 2 \\
+* \operatorname{erf}(\mathrm{NaN}) &= \mathrm{NaN} \\
+* \operatorname{erfc}(\mathrm{NaN}) &= \mathrm{NaN}
+* \end{align*}
+* ```
+*
+*
+* ## Notes
+*
+* -   To compute \\(\exp(-x^2-0.5625+(\mathrm{R}/\mathrm{S}))\\), let \\(s\\) be a single precision number and \\(s := x\\); then
+*
+*     ```tex
+*     -x^2 = -s^2 + (s-x)(s+x)
+*     ```
+*
+*     and
+*
+*     ```tex
+*     e^{-x^2-0.5626+(\mathrm{R}/\mathrm{S})} = e^{-s^2-0.5625} e^{(s-x)(s+x)+(\mathrm{R}/\mathrm{S})}
+*     ```
+*
+* -   `#4` and `#5` make use of the asymptotic series
+*
+*     ```tex
+*     \operatorname{erfc}(x) \approx \frac{e^{-x^2}}{x\sqrt{\pi}} (1 + \operatorname{poly}(1/x^2))
+*     ```
+*
+*     We use a rational approximation to approximate
+*
+*     ```tex
+*     g(s) = f(1/x^2) = \ln(\operatorname{erfc}(x) \cdot x) - x^2 + 0.5625
+*     ```
+*
+* -   The error bound for \\(\mathrm{R1}/\mathrm{S1}\\) is
+*
+*     ```tex
+*     |\mathrm{R1}/\mathrm{S1} - f(x)| < 2^{-62.57}
+*     ```
+*
+*     and for \\(\mathrm{R2}/\mathrm{S2}\\) is
+*
+*     ```tex
+*     |\mathrm{R2}/\mathrm{S2} - f(x)| < 2^{-61.52}
+*     ```
 *
 * @param x    input value
 * @return     output value
