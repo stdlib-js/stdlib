@@ -32,45 +32,45 @@ type NullaryCallback = () => any;
 /**
 * Returns the accessed value.
 *
-* @param values - array element value
+* @param value - array element value
 * @returns accessed value
 */
-type UnaryCallback = ( values: any ) => any;
+type UnaryCallback = ( value: any ) => any;
 
 /**
 * Returns the accessed value.
 *
-* @param values - array element value
+* @param value - array element value
 * @param idx - iteration index
 * @returns accessed value
 */
-type BinaryCallback = ( values: any, idx: number ) => any;
+type BinaryCallback = ( value: any, idx: number ) => any;
 
 /**
 * Returns the accessed value.
 *
-* @param values - array element value
+* @param value - array element value
 * @param idx - iteration index
 * @param indices - strided indices (offset + idx*stride)
 * @returns accessed value
 */
-type TernaryCallback = ( values: any, idx: number, indices: Array<number> ) => any; // tslint-disable-line max-line-length
+type TernaryCallback = ( value: any, idx: number, indices: Array<number> ) => any; // tslint-disable-line max-line-length
 
 /**
 * Returns the accessed value.
 *
-* @param values - array element value
+* @param value - array element value
 * @param idx - iteration index
 * @param indices - strided indices (offset + idx*stride)
 * @param arrays - input and output arrays
 * @returns accessed value
 */
-type QuaternaryCallback = ( values: any, idx: number, indices: Array<number>, arrays: Array<Collection> ) => any; // tslint-disable-line max-line-length
+type QuaternaryCallback = ( value: any, idx: number, indices: Array<number>, arrays: Array<Collection> ) => any; // tslint-disable-line max-line-length
 
 /**
 * Returns the accessed value.
 *
-* @param values - array element value
+* @param value - array element value
 * @param idx - iteration index
 * @param indices - strided indices (offset + idx*stride)
 * @param arrays - input and output arrays
