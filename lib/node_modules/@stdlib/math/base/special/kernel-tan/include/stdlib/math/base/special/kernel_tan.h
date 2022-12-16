@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the tangent of a number on [-π/4, π/4].
+* Computes the tangent of a double-precision floating-point number on [-π/4, π/4].
 */
 double stdlib_base_kernel_tan( const double x, const double y, const int32_t k );
 

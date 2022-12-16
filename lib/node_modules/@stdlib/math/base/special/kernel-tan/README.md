@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# Kernel Tangent
+# kernelTan
 
-> Compute the [tangent][tangent] of a number on `[-π/4, π/4]`.
+> Compute the [tangent][tangent] of a double-precision floating-point number on `[-π/4, π/4]`.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var kernelTan = require( '@stdlib/math/base/special/kernel-tan' );
 
 #### kernelTan( x, y, k )
 
-Computes the [tangent][tangent] of a `number` on `[-π/4, π/4]`. For increased accuracy, the number for which the [tangent][tangent] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
+Computes the [tangent][tangent] of a double-precision floating-point number on `[-π/4, π/4]`.
 
 ```javascript
 var out = kernelTan( 3.141592653589793/4.0, 0.0, 1 );
@@ -72,6 +72,8 @@ out = kernelTan( NaN, NaN, 1 );
 <section class="notes">
 
 ## Notes
+
+-   For increased accuracy, the number for which the [tangent][tangent] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
 
 -   As components of a [double-double number][double-double-arithmetic], the two [double-precision floating-point numbers][ieee754] `x` and `y` must satisfy 
 
@@ -148,7 +150,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_kernel_tan( x, y, k)
 
-Computes the [tangent][tangent] of a `number` on `[-π/4, π/4]`. For increased accuracy, the number for which the [tangent][tangent] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
+Computes the [tangent][tangent] of a double-precision floating-point number on `[-π/4, π/4]`.
 
 ```c
 double out = stdlib_base_kernel_tan( 3.141592653589793/4.0, 0.0, 1 );
@@ -160,9 +162,9 @@ out = stdlib_base_kernel_tan( 3.141592653589793/6.0, 0.0, 1 );
 
 The function accepts the following arguments:
 
--   **x**: `[in] double`  input value (in radians, assumed to be bounded by `~pi/4` in magnitude).
--   **y**: `[in] double`  tail of `x`.
--   **k**: `[in] int32_t` if `k = 1`, the function returns `tan(x+y)`. To return the negative inverse `-1/tan(x+y)`, set `k = -1`.
+-   **x**: `[in] double` input value (in radians, assumed to be bounded by `~pi/4` in magnitude).
+-   **y**: `[in] double` tail of `x`.
+-   **k**: `[in] int32_t` indicates whether `tan(x+y)` (if `k = 1`) or `-1/tan(x+y)` (if `k = -1`) is returned.
 
 ```c
 double stdlib_base_kernel_tan( const double x, const double y, const int32_t k );
@@ -175,6 +177,10 @@ double stdlib_base_kernel_tan( const double x, const double y, const int32_t k )
 <!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+### Notes
+
+-   For increased accuracy, the number for which the [tangent][tangent] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
 
 </section>
 
@@ -189,24 +195,16 @@ double stdlib_base_kernel_tan( const double x, const double y, const int32_t k )
 ```c
 #include "stdlib/math/base/special/kernel_tan.h"
 #include <stdlib.h>
-#include <stdint.h>
 #include <stdio.h>
-#include <math.h>
-#include <inttypes.h>
 
 int main() {
-    double out;
-    double x[] = { -0.7853981633974483, -0.6108652381980153, -0.4363323129985824, -0.26179938779914946, -0.08726646259971649, 0.08726646259971649,
-    0.26179938779914935, 0.43633231299858233, 0.6108652381980153, 0.7853981633974483 };
-    double y;
-    int32_t k;
-    int i;
+    double x[] = { -0.7853981633974483, -0.6108652381980153, -0.4363323129985824, -0.26179938779914946, -0.08726646259971649, 0.08726646259971649, 0.26179938779914935, 0.43633231299858233, 0.6108652381980153, 0.7853981633974483 };
 
+    double out;
+    int i;
     for ( i = 0; i < 10; i++ ) {
-        y = 0.0;
-        k = 1;
-        out = stdlib_base_kernel_tan( x[ i ], y, k );
-        printf( "tan( %lf ) = %lf\n", x[ i ], out );
+        out = stdlib_base_kernel_tan( x[ i ], 0.0, 1 );
+        printf( "tan(%lf) = %lf\n", x[ i ], out );
     }
 }
 ```

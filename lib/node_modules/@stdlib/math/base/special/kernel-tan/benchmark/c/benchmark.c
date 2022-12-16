@@ -93,10 +93,8 @@ double rand_double() {
 * @return elapsed time in seconds
 */
 double benchmark() {
-	int32_t k;
 	double elapsed;
 	double x;
-	double y;
 	double z;
 	double t;
 	int i;
@@ -104,9 +102,7 @@ double benchmark() {
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		x = ( ( rand_double() * 2.0 ) - 1.0 ) * 0.7853981633974483;
-		y = 0.0;
-		k = 1;
-		z = stdlib_base_kernel_tan( x, y, k );
+		z = stdlib_base_kernel_tan( x, 0.0, 1 );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;

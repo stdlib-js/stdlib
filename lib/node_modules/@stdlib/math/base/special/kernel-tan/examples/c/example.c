@@ -19,23 +19,15 @@
 
 #include "stdlib/math/base/special/kernel_tan.h"
 #include <stdlib.h>
-#include <stdint.h>
 #include <stdio.h>
-#include <math.h>
-#include <inttypes.h>
 
 int main() {
-    double out;
-    double x[] = { -0.7853981633974483, -0.6108652381980153, -0.4363323129985824, -0.26179938779914946, -0.08726646259971649, 0.08726646259971649,
-    0.26179938779914935, 0.43633231299858233, 0.6108652381980153, 0.7853981633974483 };
-    double y;
-    int32_t k;
-    int i;
+	double x[] = { -0.7853981633974483, -0.6108652381980153, -0.4363323129985824, -0.26179938779914946, -0.08726646259971649, 0.08726646259971649, 0.26179938779914935, 0.43633231299858233, 0.6108652381980153, 0.7853981633974483 };
 
-    for ( i = 0; i < 10; i++ ) {
-        y = 0.0;
-        k = 1;
-        out = stdlib_base_kernel_tan( x[ i ], y, k );
-        printf( "tan( %lf ) = %lf\n", x[ i ], out );
-    }
+	double out;
+	int i;
+	for ( i = 0; i < 10; i++ ) {
+		out = stdlib_base_kernel_tan( x[ i ], 0.0, 1 );
+		printf( "tan(%lf) = %lf\n", x[ i ], out );
+	}
 }
