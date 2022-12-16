@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Kernel Cosine
+# kernelCos
 
 > Compute the [cosine][cosine] of a double-precision floating-point number on `[-π/4, π/4]`.
 
