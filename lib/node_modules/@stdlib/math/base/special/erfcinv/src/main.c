@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The original C++ code and copyright notice are from the [Boost library]{@link http://www.boost.org/doc/libs/1_48_0/boost/math/special_functions/detail/erf_inv.hpp}. This implementation follows the original, but has been modified for JavaScript.
+* The original C++ code and copyright notice are from the [Boost library]{@link http://www.boost.org/doc/libs/1_81_0/boost/math/special_functions/detail/erf_inv.hpp}. This implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * (C) Copyright John Maddock 2006.
@@ -254,6 +254,74 @@ static double rational_p5q5( const double x ) {
 
 /**
 * Evaluates the inverse complementary error function.
+*
+* Note that
+*
+* ```tex
+* \operatorname{erfc^{-1}}(1-z) = \operatorname{erf^{-1}}(z)
+* ```
+*
+* ## Method
+*
+* 1.  For \\(|x| \leq 0.5\\), we evaluate the inverse error function using the rational approximation
+*
+*     ```tex
+*     \operatorname{erf^{-1}}(x) = x(x+10)(\mathrm{Y} + \operatorname{R}(x))
+*     ```
+*
+*     where \\(Y\\) is a constant and \\(\operatorname{R}(x)\\) is optimized for a low absolute error compared to \\(|Y|\\).
+*
+*     <!-- <note> -->
+*
+*     Max error \\(2.001849\mbox{e-}18\\). Maximum deviation found (error term at infinite precision) \\(8.030\mbox{e-}21\\).
+*
+*     <!-- </note> -->
+*
+* 2.  For \\(0.5 > 1-|x| \geq 0\\), we evaluate the inverse error function using the rational approximation
+*
+*     ```tex
+*     \operatorname{erf^{-1}} = \frac{\sqrt{-2 \cdot \ln(1-x)}}{\mathrm{Y} + \operatorname{R}(1-x)}
+*     ```
+*
+*     where \\(Y\\) is a constant, and \\(\operatorname{R}(q)\\) is optimized for a low absolute error compared to \\(Y\\).
+*
+*     <!-- <note> -->
+*
+*     Max error \\(7.403372\mbox{e-}17\\). Maximum deviation found (error term at infinite precision) \\(4.811\mbox{e-}20\\).
+*
+*     <!-- </note> -->
+*
+* 3.  For \\(1-|x| < 0.25\\), we have a series of rational approximations all of the general form
+*
+*     ```tex
+*     p = \sqrt{-\ln(1-x)}
+*     ```
+*
+*     Accordingly, the result is given by
+*
+*     ```tex
+*     \operatorname{erf^{-1}}(x) = p(\mathrm{Y} + \operatorname{R}(p-B))
+*     ```
+*
+*     where \\(Y\\) is a constant, \\(B\\) is the lowest value of \\(p\\) for which the approximation is valid, and \\(\operatorname{R}(x-B)\\) is optimized for a low absolute error compared to \\(Y\\).
+*
+*     <!-- <note> -->
+*
+*     Almost all code will only go through the first or maybe second approximation.  After that we are dealing with very small input values.
+*
+*     -   If \\(p < 3\\), max error \\(1.089051\mbox{e-}20\\).
+*     -   If \\(p < 6\\), max error \\(8.389174\mbox{e-}21\\).
+*     -   If \\(p < 18\\), max error \\(1.481312\mbox{e-}19\\).
+*     -   If \\(p < 44\\), max error \\(5.697761\mbox{e-}20\\).
+*     -   If \\(p \geq 44\\), max error \\(1.279746\mbox{e-}20\\).
+*
+*     <!-- </note> -->
+*
+*     <!-- <note> -->
+*
+*     The Boost library can accommodate \\(80\\) and \\(128\\) bit long doubles. JavaScript only supports a \\(64\\) bit double (IEEE 754). Accordingly, the smallest \\(p\\) (in JavaScript at the time of this writing) is \\(\sqrt{-\ln(\sim5\mbox{e-}324)} = 27.284429111150214\\).
+*
+*     <!-- </note> -->
 *
 * @param x    input value
 * @return     output value
