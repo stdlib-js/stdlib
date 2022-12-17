@@ -156,7 +156,7 @@ static double scale( const double x ) {
 // ...
 
 // Register a Node-API module:
-STDLIB_STRIDED_NAPI_MODULE_DMAP( scale );
+STDLIB_STRIDED_NAPI_MODULE_DMAP( scale )
 ```
 
 The macro expects the following arguments:
