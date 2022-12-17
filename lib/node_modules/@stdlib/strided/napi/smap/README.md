@@ -156,7 +156,7 @@ static float scale( const float x ) {
 // ...
 
 // Register a Node-API module:
-STDLIB_STRIDED_NAPI_MODULE_SMAP( scale );
+STDLIB_STRIDED_NAPI_MODULE_SMAP( scale )
 ```
 
 The macro expects the following arguments:
