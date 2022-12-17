@@ -254,6 +254,7 @@ var filledarray = require( '@stdlib/array/filled' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var abs = require( '@stdlib/math/base/special/abs' );
 var sqrt = require( '@stdlib/math/base/special/sqrt' );
+var naryFunction = require( '@stdlib/utils/nary-function' );
 var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
 var unaryBy = require( '@stdlib/ndarray/base/unary-by' );
@@ -276,7 +277,7 @@ var y = {
     'order': 'column-major'
 };
 
-unaryBy( [ x, y ], sqrt, abs );
+unaryBy( [ x, y ], sqrt, naryFunction( abs, 1 ) );
 console.log( ndarray2array( x.data, x.shape, x.strides, x.offset, x.order ) );
 console.log( ndarray2array( y.data, y.shape, y.strides, y.offset, y.order ) );
 ```
