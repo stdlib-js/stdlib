@@ -761,7 +761,7 @@ interface Namespace {
 	atan2: typeof atan2;
 
 	/**
-	* Computes the hyperbolic arctangent of a number.
+	* Computes the hyperbolic arctangent of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns hyperbolic arctangent
@@ -4095,7 +4095,7 @@ interface Namespace {
 	kernelBetaincinv: typeof kernelBetaincinv;
 
 	/**
-	* Computes the cosine of a number on `[-π/4, π/4]`.
+	* Computes the cosine of a double-precision floating-point number on `[-π/4, π/4]`.
 	*
 	* ## Notes
 	*
@@ -4163,7 +4163,7 @@ interface Namespace {
 	kernelSin: typeof kernelSin;
 
 	/**
-	* Computes the tangent of a number on `[-π/4, π/4]`.
+	* Computes the tangent of a double-precision floating-point number on `[-π/4, π/4]`.
 	*
 	* ## Notes
 	*
