@@ -155,17 +155,31 @@ interface Namespace {
 	caddf: typeof caddf;
 
 	/**
-	* Divides two complex numbers.
+	* Divides two double-precision complex floating-point numbers.
 	*
-	* @param re1 - real component
-	* @param im1 - imaginary component
-	* @param re2 - real component
-	* @param im2 - imaginary component
-	* @returns real and imaginary components
+	* @param z1 - complex number
+	* @param z2 - complex number
+	* @returns result
 	*
 	* @example
-	var v = ns.cdiv( -13.0, -1.0, -2.0, 1.0 );
-	// returns [ 5.0, 3.0 ]
+	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var z1 = new Complex128( -13.0, -1.0 );
+	* // returns <Complex128>
+	*
+	* var z2 = new Complex128( -2.0, 1.0 );
+	* // returns <Complex128>
+	*
+	* var out = ns.cdiv( z1, z2 );
+	* // returns <Complex128>
+	*
+	* var re = real( out );
+	* // returns 5.0
+	*
+	* var im = imag( out );
+	* // returns 3.0
 	*/
 	cdiv: typeof cdiv;
 

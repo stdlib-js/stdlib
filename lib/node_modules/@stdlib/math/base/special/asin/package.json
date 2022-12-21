@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/asin",
   "version": "0.0.0",
-  "description": "Compute the arcsine of a number.",
+  "description": "Compute the arcsine of a double-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -18,8 +18,10 @@
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
+    "include": "./include",
     "lib": "./lib",
     "scripts": "./scripts",
+    "src": "./src",
     "test": "./test"
   },
   "types": "./docs/types",

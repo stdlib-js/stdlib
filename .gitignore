@@ -19,6 +19,7 @@
 # Files #
 #########
 package.json.copy
+.stdlibrc
 
 # Directories #
 ###############

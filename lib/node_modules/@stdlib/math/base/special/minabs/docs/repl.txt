@@ -1,5 +1,5 @@
 
-{{alias}}( [x[, y[, ...args]]] )
+{{alias}}( x, y )
     Returns the minimum absolute value.
 
     If any argument is `NaN`, the function returns `NaN`.
@@ -13,14 +13,11 @@
 
     Parameters
     ----------
-    x: number (optional)
+    x: number
         First number.
 
-    y: number (optional)
+    y: number
         Second number.
-
-    args: ...number (optional)
-        Numbers.
 
     Returns
     -------
@@ -30,8 +27,6 @@
     Examples
     --------
     > var v = {{alias}}( 3.14, -4.2 )
-    3.14
-    > v = {{alias}}( 5.9, 3.14, 4.2 )
     3.14
     > v = {{alias}}( 3.14, NaN )
     NaN

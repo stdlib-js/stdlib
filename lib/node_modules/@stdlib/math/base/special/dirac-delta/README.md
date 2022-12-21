@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2022 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -100,6 +100,95 @@ for ( i = 0; i < x.length; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/dirac_delta.h"
+```
+
+#### stdlib_base_dirac_delta( x )
+
+Evaluates the [Dirac delta function][dirac-delta-function].
+
+```c
+double x = stdlib_base_dirac_delta( 0.0 );
+// returns Infinity
+
+x = stdlib_base_dirac_delta( 3.14 );
+// returns 0.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_dirac_delta( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/dirac_delta.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    double x[] = { -1.0, -0.5, 0.0, 0.5, 1.0, 3.14, 2.0 };
+    double v;
+    int i;
+
+    for ( i = 0; i < 7; i++ ) {
+        v = stdlib_base_dirac_delta( x[ i ] );
+        printf( "dirac(%lf) = %lf\n", x[ i ], v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

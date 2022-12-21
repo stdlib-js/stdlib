@@ -19,7 +19,7 @@
 // TypeScript Version: 2.0
 
 /**
-* Computes the arccosine of a number.
+* Computes the arccosine of a double-precision floating-point number.
 *
 * @param x - input value
 * @returns arccosine (in radians)

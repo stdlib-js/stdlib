@@ -1,6 +1,6 @@
 
 {{alias}}( x )
-    Evaluates the natural logarithm.
+    Evaluates the natural logarithm of a double-precision floating-point number.
 
     For negative numbers, the natural logarithm is not defined.
 
