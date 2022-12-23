@@ -135,8 +135,11 @@ jobs:
           required_by=""
           for package in ${packages}; do
             echo "Finding packages which depend on '${package}'..."
-            dependents=$( dirname $(find lib/node_modules/@stdlib -type f -name '*.js' -print0 | xargs -0 grep -ol -E "require\( [']${package}['] \)") | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | sort -u)
-            required_by="${required_by} ${dependents}"
+            dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -print0 | xargs -0 grep -ol -E "require\( [']${package}['] \)")
+            if [ -n "${dependents}" ]; then
+              dependents=$(dirname $dependents | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | sort -u)
+              required_by="${required_by} ${dependents}"
+            fi
           done
 
           # Concatenate the list of changed package directories and package directories which `require()` one of the changed packages:

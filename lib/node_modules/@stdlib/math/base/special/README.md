@@ -84,7 +84,7 @@ var fcns = special;
 -   <span class="signature">[`asinh( x )`][@stdlib/math/base/special/asinh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arcsine of a double-precision floating-point number.</span>
 -   <span class="signature">[`atan( x )`][@stdlib/math/base/special/atan]</span><span class="delimiter">: </span><span class="description">compute the arctangent of a double-precision floating-point number.</span>
 -   <span class="signature">[`atan2( y, x )`][@stdlib/math/base/special/atan2]</span><span class="delimiter">: </span><span class="description">compute the angle in the plane (in radians) between the positive x-axis and the ray from `(0,0)` to the point `(x,y)`.</span>
--   <span class="signature">[`atanh( x )`][@stdlib/math/base/special/atanh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arctangent of a number.</span>
+-   <span class="signature">[`atanh( x )`][@stdlib/math/base/special/atanh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arctangent of a double-precision floating-point number.</span>
 -   <span class="signature">[`avercos( x )`][@stdlib/math/base/special/avercos]</span><span class="delimiter">: </span><span class="description">compute the inverse versed cosine.</span>
 -   <span class="signature">[`aversin( x )`][@stdlib/math/base/special/aversin]</span><span class="delimiter">: </span><span class="description">compute the inverse versed sine.</span>
 -   <span class="signature">[`cos( x )`][@stdlib/math/base/special/cos]</span><span class="delimiter">: </span><span class="description">compute the cosine of a number.</span>
@@ -328,9 +328,9 @@ Finally, the namespace exports the following kernel functions, which are mainly 
 
 -   <span class="signature">[`kernelBetainc( x, a, b, regularized, upper )`][@stdlib/math/base/special/kernel-betainc]</span><span class="delimiter">: </span><span class="description">incomplete beta function and its first derivative.</span>
 -   <span class="signature">[`kernelBetaincinv( a, b, p, q )`][@stdlib/math/base/special/kernel-betaincinv]</span><span class="delimiter">: </span><span class="description">inverse of the lower incomplete beta function.</span>
--   <span class="signature">[`kernelCos( x, y )`][@stdlib/math/base/special/kernel-cos]</span><span class="delimiter">: </span><span class="description">compute the cosine of a number on `[-π/4, π/4]`.</span>
+-   <span class="signature">[`kernelCos( x, y )`][@stdlib/math/base/special/kernel-cos]</span><span class="delimiter">: </span><span class="description">compute the cosine of a double-precision floating-point number on `[-π/4, π/4]`.</span>
 -   <span class="signature">[`kernelSin( x, y )`][@stdlib/math/base/special/kernel-sin]</span><span class="delimiter">: </span><span class="description">compute the sine of a double-precision floating-point number on `[-π/4, π/4]`.</span>
--   <span class="signature">[`kernelTan( x, y, k )`][@stdlib/math/base/special/kernel-tan]</span><span class="delimiter">: </span><span class="description">compute the tangent of a number on `[-π/4, π/4]`.</span>
+-   <span class="signature">[`kernelTan( x, y, k )`][@stdlib/math/base/special/kernel-tan]</span><span class="delimiter">: </span><span class="description">compute the tangent of a double-precision floating-point number on `[-π/4, π/4]`.</span>
 -   <span class="signature">[`rempio2( x, y )`][@stdlib/math/base/special/rempio2]</span><span class="delimiter">: </span><span class="description">compute `x - nπ/2 = r`.</span>
 
 </div>
