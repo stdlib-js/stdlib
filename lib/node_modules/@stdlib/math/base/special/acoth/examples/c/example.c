@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/math/base/special/acoth.h"
-#include <stdlib.h>
 #include <stdio.h>
 
 int main() {
