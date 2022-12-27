@@ -131,7 +131,6 @@ double stdlib_base_acot( const double x );
 
 ```c
 #include "stdlib/math/base/special/acot.h"
-#include <stdlib.h>
 #include <stdio.h>
 
 int main() {
