@@ -20,7 +20,7 @@ limitations under the License.
 
 # acot
 
-> Compute the [inverse cotangent][arccotangent] of a number.
+> Compute the [inverse cotangent][arccotangent] of a double-precision floating-point number.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var acot = require( '@stdlib/math/base/special/acot' );
 
 #### acot( x )
 
-Computes the [inverse cotangent][arccotangent] of a `number` (in radians).
+Computes the [inverse cotangent][arccotangent] of a double-precision floating-point number (in radians).
 
 ```javascript
 var v = acot( 2.0 );
@@ -96,7 +96,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_acot( x )
 
-Computes the [inverse cotangent][arccotangent] of a `number` (in radians).
+Computes the [inverse cotangent][arccotangent] of a double-precision floating-point number (in radians).
 
 ```c
 double out = stdlib_base_acot( 2.0 );

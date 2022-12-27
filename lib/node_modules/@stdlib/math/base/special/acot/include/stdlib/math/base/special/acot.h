@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the inverse cotangent of a number.
+* Computes the inverse cotangent of a double-precision floating-point number.
 */
 double stdlib_base_acot( const double x );
 
