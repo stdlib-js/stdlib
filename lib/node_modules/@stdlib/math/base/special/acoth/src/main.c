@@ -20,7 +20,7 @@
 #include "stdlib/math/base/special/atanh.h"
 
 /**
-* Computes the inverse hyperbolic cotangent of a number.
+* Computes the inverse hyperbolic cotangent of a double-precision floating-point number.
 *
 * @param x    input value
 * @return	  output value

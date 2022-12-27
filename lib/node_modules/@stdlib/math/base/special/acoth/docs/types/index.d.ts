@@ -19,7 +19,7 @@
 // TypeScript Version: 2.0
 
 /**
-* Computes the inverse hyperbolic cotangent of a number.
+* Computes the inverse hyperbolic cotangent of a double-precision floating-point number.
 *
 * @param x - input value
 * @returns inverse hyperbolic cotangent

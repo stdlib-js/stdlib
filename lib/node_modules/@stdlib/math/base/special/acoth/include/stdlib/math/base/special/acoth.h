@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the inverse hyperbolic cotangent of a number.
+* Computes the inverse hyperbolic cotangent of a double-precision floating-point number.
 */
 double stdlib_base_acoth( const double x );
 

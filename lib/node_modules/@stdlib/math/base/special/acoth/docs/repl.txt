@@ -1,6 +1,7 @@
 
 {{alias}}( x )
-    Computes the inverse hyperbolic cotangent of a number.
+    Computes the inverse hyperbolic cotangent of a double-precision floating-
+    point number.
 
     The domain of the inverse hyperbolic cotangent is the union of the intervals
     (-inf,-1] and [1,inf).
