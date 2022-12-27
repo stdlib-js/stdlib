@@ -32,7 +32,7 @@ var isInteger = require( '@stdlib/math/base/assert/is-integer' );
 
 #### isInteger( x )
 
-Tests if a finite [double-precision floating-point number][ieee754] is an `integer`.
+Tests if a finite [double-precision floating-point number][ieee754] is an integer.
 
 ```javascript
 var bool = isInteger( 1.0 );
@@ -47,7 +47,7 @@ var bool = isInteger( 1.0 );
 
 ## Notes
 
--   The function assumes a **finite** `number`. If provided positive or negative `infinity`, the function will return `true`, when, in fact, the result is undefined. If `x` can be `infinite`, wrap the implementation as follows:
+-   The function assumes a **finite** number. If provided positive or negative `infinity`, the function will return `true`, when, in fact, the result is undefined. If `x` can be `infinite`, wrap the implementation as follows:
 
     ```javascript
     function check( x ) {
@@ -120,7 +120,7 @@ bool = isInteger( NaN );
 
 #### stdlib_base_is_integer( x )
 
-Tests if a finite [double-precision floating-point number][ieee754] is an `integer`.
+Tests if a finite [double-precision floating-point number][ieee754] is an integer.
 
 ```c
 bool out = stdlib_base_is_integer( 1.0 );
