@@ -20,7 +20,7 @@
 #include <stdbool.h>
 
 /**
-* Tests if a numeric value is a probability.
+* Tests if a double-precision floating-point number is a probability.
 *
 * @param x    input value
 * @return	  output value
@@ -30,6 +30,9 @@
 *
 * bool out = stdlib_base_is_probability( 0.5 );
 * // returns true
+*
+* out = stdlib_base_is_probability( 1.5 );
+* // returns false
 */
 bool stdlib_base_is_probability( const double x ) {
     return ( x >= 0.0 && x <= 1.0 );

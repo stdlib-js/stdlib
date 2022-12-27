@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Header file containing function declarations.
-*/
 #ifndef STDLIB_MATH_BASE_ASSERT_IS_PROBABILITY_H
 #define STDLIB_MATH_BASE_ASSERT_IS_PROBABILITY_H
 
@@ -32,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Tests if a numeric value is a probability.
+* Tests if a double-precision floating-point number is a probability.
 */
 bool stdlib_base_is_probability( const double x );
 
