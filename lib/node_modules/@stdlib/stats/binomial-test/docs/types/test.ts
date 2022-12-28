@@ -29,7 +29,7 @@ import binomialTest = require( './index' );
 	binomialTest( [ 682, 243 ], { 'p': 0.75 } ); // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is neither a number nor a two-element number array...
+// The compiler throws an error if the function is provided a first argument that is neither a number nor a two-element number array...
 {
 	binomialTest( 'abc' ); // $ExpectError
 	binomialTest( true ); // $ExpectError
@@ -42,7 +42,7 @@ import binomialTest = require( './index' );
 	binomialTest( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a first argument that is a number and a second argument that is not a number...
+// The compiler throws an error if the function is provided a first argument that is a number and a second argument that is not a number...
 {
 	binomialTest( 682, 'abc' ); // $ExpectError
 	binomialTest( 682, true ); // $ExpectError
@@ -109,7 +109,7 @@ import binomialTest = require( './index' );
 	binomialTest( 682, 925, { 'p': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	binomialTest(); // $ExpectError
 	binomialTest( 682, 925, {}, {} ); // $ExpectError

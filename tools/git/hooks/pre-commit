@@ -176,7 +176,7 @@ run_lint() {
 	if [[ -z "${SKIP_LINT_JAVASCRIPT_SRC}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make FILES="${files}" lint-javascript-files > /dev/null >&2
+			make FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				echo '' >&2
 				echo 'JavaScript lint errors for source files.' >&2
@@ -188,7 +188,7 @@ run_lint() {
 	if [[ -z "${SKIP_LINT_JAVASCRIPT_CLI}" ]]; then
 		files=$(echo "${changed_files}" | grep '/bin/cli$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make FILES="${files}" lint-javascript-files > /dev/null >&2
+			make FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				echo '' >&2
 				echo 'JavaScript lint errors for command-line interface files.' >&2
@@ -200,7 +200,7 @@ run_lint() {
 	if [[ -z "${SKIP_LINT_JAVASCRIPT_EXAMPLES}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_examples_conf}" FILES="${files}" lint-javascript-files > /dev/null >&2
+			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_examples_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				echo '' >&2
 				echo 'JavaScript lint errors for example files.' >&2
@@ -212,7 +212,7 @@ run_lint() {
 	if [[ -z "${SKIP_LINT_JAVASCRIPT_TESTS}" ]]; then
 		files=$(echo "${changed_files}" | grep '/test/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_tests_conf}" FILES="${files}" lint-javascript-files > /dev/null >&2
+			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_tests_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				echo '' >&2
 				echo 'JavaScript lint errors for test files.' >&2
@@ -224,7 +224,7 @@ run_lint() {
 	if [[ -z "${SKIP_LINT_JAVASCRIPT_BENCHMARKS}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_benchmarks_conf}" FILES="${files}" lint-javascript-files > /dev/null >&2
+			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_benchmarks_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				echo '' >&2
 				echo 'JavaScript lint errors for benchmark files.' >&2
@@ -378,6 +378,10 @@ run_lint() {
 	fi
 
 	# TODO: if datapackage.json, validate via schema
+
+	# Re-add files that may have been fixed by linting...
+	git add ${changed_files}
+
 
 	return 0
 }

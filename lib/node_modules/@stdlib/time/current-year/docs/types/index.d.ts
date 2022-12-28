@@ -33,4 +33,3 @@ declare function currentYear(): number;
 // EXPORTS //
 
 export = currentYear;
-

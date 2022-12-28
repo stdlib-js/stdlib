@@ -16,7 +16,6 @@
   "bin": {},
   "main": "./lib",
   "directories": {
-    "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",

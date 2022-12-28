@@ -53,7 +53,7 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -67,7 +67,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -86,7 +86,7 @@ jobs:
       # Create a pull request with the updated declarations:
       - name: 'Create pull request'
         id: cpr
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           title: 'Update namespace TypeScript declarations'
           body: |

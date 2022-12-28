@@ -25,10 +25,10 @@ on:
   workflow_dispatch:
     inputs:
       packages:
-        description: Space-separated list of packages to deprecate
+        description: 'List of packages (space separated):'
         required: true
       message:
-        description: Custom deprecation message
+        description: 'Custom deprecation message:'
 
 # Workflow concurrency group:
 concurrency:
@@ -46,14 +46,14 @@ jobs:
   deprecate:
 
     # Define a display name:
-    name: 'Deprecate'
+    name: 'Deprecate packages'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-      # Deprecate the specified packages on `npm` and the respective `GitHub` repositories:
+      # Deprecate the specified packages on npm and the respective GitHub repositories:
       - name: 'Deprecate packages'
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
@@ -72,19 +72,19 @@ jobs:
             github_repos+="$pkg "
           done
 
-          # Write `NPM_TOKEN` to `.npmrc` file to authenticate with `npm`:
+          # Setup configuration for authenticating with npm:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
-          # Construct the deprecation message:
+          # Define a deprecation message:
           msg='${{ github.event.inputs.message || 'Package no longer supported.' }}'
 
-          # Deprecate the packages on `npm`:
+          # Deprecate the packages on npm:
           for pkg in $npm_names; do
             echo "Deprecating $pkg..."
             npm deprecate $pkg "$msg"
           done
 
-          # Deprecate the packages on `GitHub` by adding a section to the `README.md` file:
+          # Deprecate the packages on GitHub by adding a section to the README:
           for repo in $github_repos; do
             echo "Deprecating $repo..."
 

@@ -38,8 +38,10 @@
 			],
 			"libpath": [],
 			"dependencies": [
-				"@stdlib/math/base/napi/binary",
-        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/sign-mask",
+				"@stdlib/number/float32/base/to-word",
         "@stdlib/number/float32/base/from-word"
 			]
 		},
@@ -56,6 +58,8 @@
 			],
 			"libpath": [],
 			"dependencies": [
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/sign-mask",
         "@stdlib/number/float32/base/to-word",
         "@stdlib/number/float32/base/from-word"
 			]
@@ -73,6 +77,8 @@
 			],
 			"libpath": [],
 			"dependencies": [
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/sign-mask",
         "@stdlib/number/float32/base/to-word",
         "@stdlib/number/float32/base/from-word"
 			]

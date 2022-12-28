@@ -30,7 +30,7 @@ endif
 # RULES #
 
 #/
-# Runs unit tests and generates a test coverage report.
+# Runs JavaScript unit tests and generates a test coverage report.
 #
 # ## Notes
 #
@@ -76,7 +76,7 @@ endif
 .PHONY: view-javascript-cov
 
 #/
-# Removes a JavaScript coverage directory.
+# Removes a JavaScript coverage directory (including all coverage artifacts).
 #
 # @example
 # make clean-javascript-cov

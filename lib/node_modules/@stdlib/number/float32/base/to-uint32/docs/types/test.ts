@@ -27,7 +27,7 @@ import float32ToUint32 = require( './index' );
 	float32ToUint32( -3.14 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	float32ToUint32( true ); // $ExpectError
 	float32ToUint32( false ); // $ExpectError
@@ -37,7 +37,7 @@ import float32ToUint32 = require( './index' );
 	float32ToUint32( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	float32ToUint32(); // $ExpectError
 }

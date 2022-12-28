@@ -18,12 +18,12 @@
 
 /* tslint:disable:no-unused-expression */
 
-import poisson = require( './index' );
+import ns = require( './index' );
 
 
 // TESTS //
 
 // The exported value is the expected interface...
 {
-	poisson; // $ExpectType Namespace
+	ns; // $ExpectType Namespace
 }

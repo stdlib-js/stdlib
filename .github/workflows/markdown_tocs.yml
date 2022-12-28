@@ -50,7 +50,7 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -64,7 +64,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -84,7 +84,7 @@ jobs:
       # Generate list of namespace READMEs:
       - name: 'Generate list of namespace READMEs'
         run: |
-          echo "::set-output name=files::$( make list-pkgs-namespace-readmes | tr '\n' ' ' )"
+          echo "files=$( make list-pkgs-namespace-readmes | tr '\n' ' ' )" >> $GITHUB_OUTPUT
         id: namespace_files
 
       # Update namespace table of contents:
@@ -102,7 +102,7 @@ jobs:
       # Create a pull request with the updated tables of contents:
       - name: 'Create pull request'
         id: cpr
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           title: 'Update namespace table of contents'
           body: |

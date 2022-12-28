@@ -28,6 +28,9 @@ jobs:
   # Define a job for checking that pull requests do not introduce dependencies which fail license requirements...
   check_licenses:
 
+    # Define a display name:
+    name: 'Check licenses'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -50,7 +53,7 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -71,7 +74,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -117,7 +120,7 @@ jobs:
 
       # Upload the log file:
       - name: 'Upload log file'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           # Define a name for the uploaded artifact:

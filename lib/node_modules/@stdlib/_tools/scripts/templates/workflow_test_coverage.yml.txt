@@ -50,7 +50,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
         timeout-minutes: 5
@@ -88,11 +88,11 @@ jobs:
         id: extract-coverage
         run: |
           coverage=`cat reports/coverage/lcov-report/index.html | grep "fraction" | grep -oP '\d+/\d+' | printf %s "$(cat)" | jq -R -s -c 'split("\n")'`
-          echo "::set-output name=coverage::$coverage"
+          echo "coverage=$coverage" >> $GITHUB_OUTPUT
 
           # Format coverage as Markdown table row:
           table=`echo $coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/; s/\]/|/'`
-          echo "::set-output name=table::$table"
+          echo "table=$table" >> $GITHUB_OUTPUT
 
       # Print coverage report to GitHub Actions log:
       - name: 'Print coverage report to GitHub Actions log'
@@ -115,7 +115,7 @@ jobs:
 
       # Send data to events server:
       - name: 'Post data'
-        uses: distributhor/workflow-webhook@v2
+        uses: distributhor/workflow-webhook@v3
         env:
           webhook_url: ${{ secrets.STDLIB_COVERAGE_URL }}
           webhook_secret: ${{ secrets.STDLIB_WEBHOOK_SECRET }}

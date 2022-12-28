@@ -19,7 +19,7 @@
 // TypeScript Version: 2.0
 
 /**
-* Computes the principal square root of the product of π and a positive number.
+* Computes the principal square root of the product of π and a positive double-precision floating-point number.
 *
 * ## Notes
 *

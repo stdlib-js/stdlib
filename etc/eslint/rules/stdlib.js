@@ -1157,6 +1157,16 @@ rules[ 'stdlib/jsdoc-leading-description-sentence' ] = [ 'error', {
 }];
 
 /**
+* Enforce that the copyright year in a stdlib license year matches the year the file was created.
+*
+* @name jsdoc-license-header-year
+* @memberof rules
+* @type {string}
+* @default 'error'
+*/
+rules[ 'stdlib/jsdoc-license-header-year' ] = 'off';
+
+/**
 * Require Unix linebreaks.
 *
 * @name jsdoc-jsdoc-linebreak-style
@@ -4073,7 +4083,7 @@ rules[ 'stdlib/no-nested-require' ] = 'error';
 * @name no-redeclare
 * @memberof rules
 * @type {Array}
-* @see [no-redeclare]{@link http://eslint.org/docs/rules/no-redeclare}
+* @see [no-redeclare]{@link https://eslint.org/docs/rules/no-redeclare}
 *
 * @example
 * // Bad...
@@ -4326,6 +4336,25 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Uint32Array'
 	]
 }];
+
+/**
+* Disallow `require()` calls of relative paths which do not begin with a leading `./`.
+*
+* @name require-leading-slash
+* @memberof rules
+* @type {string}
+*
+* @example
+* // Bad...
+* var foo = require( 'foo/bar.js' );
+* var baz = require( '../baz.js' );
+*
+* @example
+* // Good...
+* var foo = require( './foo/bar.js' );
+* var baz = require( './../baz.js' );
+*/
+rules[ 'stdlib/require-leading-slash' ] = 'error';
 
 /**
 * Enforce that `require()` calls follow a specified order.

@@ -180,7 +180,7 @@ limitations under the License.
 
 [kgryte]: https://github.com/kgryte
 
-[planeshifter]: https://github.com/planeshifter
+[planeshifter]: https://github.com/Planeshifter
 
 </section>
 

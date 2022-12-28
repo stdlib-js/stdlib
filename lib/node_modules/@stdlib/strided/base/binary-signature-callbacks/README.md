@@ -42,7 +42,7 @@ var callbacks = require( '@stdlib/strided/base/binary-signature-callbacks' );
 
 #### callbacks( table, signatures )
 
-Assigns callbacks to binary interfaces according to type type [promotion rules][@stdlib/ndarray/promotion-rules].
+Assigns callbacks to binary interfaces according to type [promotion rules][@stdlib/ndarray/promotion-rules].
 
 ```javascript
 var signatures = require( '@stdlib/strided/base/binary-dtype-signatures' );
@@ -73,7 +73,7 @@ var list = callbacks( table, sigs );
 The function accepts the following arguments:
 
 -   **table**: callback table.
--   **signatures**: options.
+-   **signatures**: strided array containing binary interface signatures.
 
 A callback `table` should have the following properties:
 

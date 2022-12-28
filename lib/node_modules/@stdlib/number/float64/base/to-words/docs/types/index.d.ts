@@ -20,27 +20,46 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/object';
 
 /**
-* Splits a double-precision floating-point number into a higher order word (unsigned 32-bit integer) and a lower order word (unsigned 32-bit integer).
-*
-* @param out - output array
-* @param x - input value
-* @returns output array
-*
-* @example
-* var Uint32Array = require( `@stdlib/array/uint32` );
-*
-* var out = new Uint32Array( 2 );
-*
-* var w = toWords( out, 3.14e201 );
-* // returns <Uint32Array>[ 1774486211, 2479577218 ]
-*
-* var bool = ( w === out );
-* // returns true
-*/
-declare function toWords( out: ArrayLike<number>, x: number ): ArrayLike<number>; // tslint-disable-line max-line-length
+ * Interface describing `toWords`.
+ */
+interface ToWords {
+	/**
+	* Splits a double-precision floating-point number into a higher order word (unsigned 32-bit integer) and a lower order word (unsigned 32-bit integer).
+	*
+	* @param x - input value
+	* @returns output array
+	*
+	* @example
+	* var w = toWords( 3.14e201 );
+	* // returns [ 1774486211, 2479577218 ]
+	*/
+	( x: number ): Array<number>;
+
+	/**
+	* Splits a double-precision floating-point number into a higher order word (unsigned 32-bit integer) and a lower order word (unsigned 32-bit integer) and assigns results to a provided output array.
+	*
+	* @param x - input value
+	* @param out - output array
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns output array
+	*
+	* @example
+	* var Uint32Array = require( `@stdlib/array/uint32` );
+	*
+	* var out = new Uint32Array( 2 );
+	*
+	* var w = toWords.assign( 3.14e201, out, 1, 0 );
+	* // returns <Uint32Array>[ 1774486211, 2479577218 ]
+	*
+	* var bool = ( w === out );
+	* // returns true
+	*/
+	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+}
 
 /**
 * Splits a double-precision floating-point number into a higher order word (unsigned 32-bit integer) and a lower order word (unsigned 32-bit integer).
@@ -52,7 +71,7 @@ declare function toWords( out: ArrayLike<number>, x: number ): ArrayLike<number>
 * var w = toWords( 3.14e201 );
 * // returns [ 1774486211, 2479577218 ]
 */
-declare function toWords( x: number ): ArrayLike<number>;
+declare var toWords: ToWords;
 
 
 // EXPORTS //

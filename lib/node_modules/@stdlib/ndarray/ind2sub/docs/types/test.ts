@@ -29,7 +29,7 @@ import ind2sub = require( './index' );
 	ind2sub( shape, idx, { 'order': 'row-major' } ); // $ExpectType number[]
 }
 
-// The function does not compile if provided a first argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a first argument which is not an array-like object containing numbers...
 {
 	const idx = 17;
 	ind2sub( true, idx ); // $ExpectError
@@ -42,7 +42,7 @@ import ind2sub = require( './index' );
 	ind2sub( ( x: number ): number => x, idx ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	const shape = [ 3, 3, 3 ];
 	ind2sub( shape, 'abc' ); // $ExpectError
@@ -55,7 +55,7 @@ import ind2sub = require( './index' );
 	ind2sub( shape, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not an options object...
+// The compiler throws an error if the function is provided a third argument which is not an options object...
 {
 	const shape = [ 3, 3, 3 ];
 	const idx = 17;
@@ -96,7 +96,7 @@ import ind2sub = require( './index' );
 	ind2sub( shape, idx, { 'mode': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const shape = [ 3, 3, 3 ];
 	const idx = 17;

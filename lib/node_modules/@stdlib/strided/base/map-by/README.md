@@ -67,14 +67,12 @@ The function accepts the following arguments:
 -   **clbk**: callback function.
 -   **thisArg**: execution context (_optional_).
 
-The invoked callback function is provided six arguments:
+The invoked callback function is provided four arguments:
 
 -   **value**: input array element.
 -   **idx**: iteration index (zero-based).
--   **ix**: input array strided index (`offsetX + idx*strideX`).
--   **iy**: output array strided index (`offsetY + idx*strideY`).
--   **x**: input array/collection.
--   **y**: output array/collection.
+-   **indices**: input and output array strided indices `[ix, iy]` (computed according to `offset + idx*stride`).
+-   **arrays**: input and output arrays/collections `[x, y]`.
 
 To set the callback execution context, provide a `thisArg`.
 

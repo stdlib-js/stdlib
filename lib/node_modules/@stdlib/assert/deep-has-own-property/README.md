@@ -205,10 +205,7 @@ var bool = has( obj );
 ```javascript
 var deepHasOwnProp = require( '@stdlib/assert/deep-has-own-property' );
 
-var bool;
-var has;
-
-bool = deepHasOwnProp( { 'a': { 'b': { 'c': 'd' } } }, 'a.b.c' );
+var bool = deepHasOwnProp( { 'a': { 'b': { 'c': 'd' } } }, 'a.b.c' );
 // returns true
 
 bool = deepHasOwnProp( { 'a': { 'b': { 'c': 'd' } } }, [ 'a', 'b', 'c' ] );
@@ -231,7 +228,7 @@ bool = deepHasOwnProp( { 'a': { 'b': { 'c': 'd' } } }, 'a/b/c/d/e', {
 // returns false
 
 // Create a customized function:
-has = deepHasOwnProp.factory( 'a_b_c', {
+var has = deepHasOwnProp.factory( 'a_b_c', {
     'sep': '_'
 });
 

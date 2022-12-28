@@ -26,7 +26,7 @@ import expandAcronyms = require( './index' );
 	expandAcronyms( 'LOL, this is so much fun!' ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	expandAcronyms( true ); // $ExpectError
 	expandAcronyms( false ); // $ExpectError
@@ -38,7 +38,7 @@ import expandAcronyms = require( './index' );
 	expandAcronyms( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	expandAcronyms(); // $ExpectError
 }

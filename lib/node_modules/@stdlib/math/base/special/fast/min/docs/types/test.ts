@@ -26,7 +26,7 @@ import min = require( './index' );
 	min( 8, 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	min( true, 3 ); // $ExpectError
 	min( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import min = require( './index' );
 	min( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	min(); // $ExpectError
 	min( 3 ); // $ExpectError

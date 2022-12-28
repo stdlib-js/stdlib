@@ -28,7 +28,7 @@ import sameKindCasts = require( './index' );
 	sameKindCasts( 'float' ); // $ExpectType any
 }
 
-// The function does not compile if provided more than one argument...
+// The compiler throws an error if the function is provided more than one argument...
 {
 	sameKindCasts( 'float32', 123 ); // $ExpectError
 }

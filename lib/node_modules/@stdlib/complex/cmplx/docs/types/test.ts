@@ -28,7 +28,7 @@ import complex = require( './index' );
 	complex( 5.0, 3.0, 'float32' ); // $ExpectType Complex
 }
 
-// The function does not compile if provided a first argument that is not a number...
+// The compiler throws an error if the function is provided a first argument that is not a number...
 {
 	complex( true, 3.0 ); // $ExpectError
 	complex( false, 3.0 ); // $ExpectError
@@ -38,7 +38,7 @@ import complex = require( './index' );
 	complex( ( x: number ): number => x, 3.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a number...
+// The compiler throws an error if the function is provided a second argument that is not a number...
 {
 	complex( 5.0, true ); // $ExpectError
 	complex( 5.0, false ); // $ExpectError
@@ -48,7 +48,7 @@ import complex = require( './index' );
 	complex( 5.0, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument that is not a recognized data type...
+// The compiler throws an error if the function is provided a third argument that is not a recognized data type...
 {
 	complex( 5.0, 3.0, 'abc' ); // $ExpectError
 	complex( 5.0, 3.0, 123 ); // $ExpectError
@@ -59,7 +59,7 @@ import complex = require( './index' );
 	complex( 5.0, 3.0, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	complex(); // $ExpectError
 	complex( 3 ); // $ExpectError

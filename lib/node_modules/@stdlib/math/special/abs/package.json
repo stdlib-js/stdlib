@@ -21,6 +21,7 @@
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
+    "scripts": "./scripts",
     "src": "./src",
     "test": "./test"
   },

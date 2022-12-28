@@ -27,7 +27,7 @@ import int32ToUint32 = require( './index' );
 	int32ToUint32( 131 | 0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	int32ToUint32( true ); // $ExpectError
 	int32ToUint32( false ); // $ExpectError
@@ -37,7 +37,7 @@ import int32ToUint32 = require( './index' );
 	int32ToUint32( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	int32ToUint32(); // $ExpectError
 }

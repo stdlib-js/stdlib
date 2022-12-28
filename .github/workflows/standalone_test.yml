@@ -40,7 +40,7 @@ jobs:
   trigger:
 
     # Define a display name:
-    name: 'Trigger Tests'
+    name: 'Trigger tests'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -50,7 +50,7 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -64,7 +64,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5

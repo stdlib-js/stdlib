@@ -26,7 +26,7 @@ import hermitepoly = require( './index' );
 	hermitepoly( 6, 1.0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	hermitepoly( true, 1.0 ); // $ExpectError
 	hermitepoly( false, 1.0 ); // $ExpectError
@@ -36,7 +36,7 @@ import hermitepoly = require( './index' );
 	hermitepoly( ( x: number ): number => x, 1.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	hermitepoly( 6, true ); // $ExpectError
 	hermitepoly( 6, false ); // $ExpectError

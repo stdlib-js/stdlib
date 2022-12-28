@@ -21,27 +21,9 @@ name: linux_test
 
 # Workflow triggers:
 on:
-  push:
-    branches:
-      - develop
-    paths:
-      # List paths for which changes should trigger this workflow:
-      - 'lib/**/bin/**'
-      - 'lib/**/data/**'
-      - 'lib/**/etc/**'
-      - 'lib/**/include/**'
-      - 'lib/**/lib/**'
-      - 'lib/**/src/**'
-      - 'lib/**/test/**'
-
-      - 'lib/**/*.gyp'
-      - 'lib/**/*.gypi'
-      - 'lib/**/manifest.json'
-
-      - 'package.json'
-
-      # List paths for which changes should *not* trigger this workflow:
-      - '!lib/**/_tools/**'
+  # Run nightly:
+  schedule:
+    - cron: '0 9 * * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -145,7 +127,7 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -187,7 +169,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.NODE_VERSION }}
         timeout-minutes: 5
@@ -257,7 +239,7 @@ jobs:
 
       # Upload the log file:
       - name: 'Upload log file'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):

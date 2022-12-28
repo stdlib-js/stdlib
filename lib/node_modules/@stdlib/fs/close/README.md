@@ -96,11 +96,10 @@ var openSync = require( '@stdlib/fs/open' ).sync;
 var close = require( '@stdlib/fs/close' );
 
 var err;
-var fd;
 
 /* Sync */
 
-fd = openSync( join( __dirname, 'package.json' ), 'r+' );
+var fd = openSync( join( __dirname, 'package.json' ), 'r+' );
 if ( fd instanceof Error ) {
     console.error( fd.message );
 } else {

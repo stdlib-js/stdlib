@@ -1,18 +1,15 @@
 
-{{alias}}( [out,] x )
+{{alias}}( x )
     Computes the sine and cosine integrals.
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Output array.
-
     x: number
         Input value.
 
     Returns
     -------
-    out: Array|TypedArray|Object
+    out: Array<number>
         Sine and cosine integrals.
 
     Examples
@@ -26,13 +23,37 @@
     > y = {{alias}}( NaN )
     [ NaN, NaN ]
 
-    // Provide an output array:
+
+{{alias}}.assign( x, out, stride, offset )
+    Computes the sine and cosine integrals and assigns results to a provided
+    output array.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Sine and cosine integrals.
+
+    Examples
+    --------
     > var out = new {{alias:@stdlib/array/float64}}( 2 );
-    > y = {{alias}}( out, 3.0 )
+    > var y = {{alias}}.assign( 3.0, out, 1, 0 )
     <Float64Array>[ ~1.849, ~0.12 ]
     > var bool = ( y === out )
     true
 
     See Also
     --------
-

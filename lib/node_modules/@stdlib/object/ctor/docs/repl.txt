@@ -29,6 +29,564 @@
     > o = new {{alias}}( 'beep' )
     <String>
 
+{{alias}}.assign( target, ...sources )
+    Assigns enumerable and own properties from source objects to a target
+    object.
+
+    Parameters
+    ----------
+    target: Object
+        Target object.
+
+    sources: ...Object
+        Source objects.
+
+    Returns
+    -------
+    out: Object
+        Target object.
+
+    Examples
+    --------
+    > var o = {{alias}}.assign( {}, { 'a': 1 }, { 'b': 2 } )
+    { 'a': 1, 'b': 2 }
+
+{{alias}}.create( prototype, properties )
+    Creates a new object with a specified prototype object and properties.
+
+    Parameters
+    ----------
+    prototype: Object
+        Prototype object.
+
+    properties: Object
+        Properties object.
+
+    Returns
+    -------
+    out: Object
+        New object.
+
+    Examples
+    --------
+    > var o = {{alias}}.create( {}, { 'a': { 'value': 1 } } )
+    { 'a': 1 }
+
+{{alias}}.defineProperties( obj, properties )
+    Defines properties for an object.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    properties: Object
+        Properties object.
+
+    Returns
+    -------
+    out: Object
+        Object.
+
+    Examples
+    --------
+    > var o = {{alias}}.defineProperties( {}, { 'a': { 'value': 1 } } )
+    { 'a': 1 }
+
+{{alias}}.defineProperty( obj, key, descriptor )
+    Defines a property for an object.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    key: string
+        Property key.
+
+    descriptor: Object
+        Property descriptor.
+
+    Returns
+    -------
+    out: Object
+        Object.
+
+    Examples
+    --------
+    > var o = {{alias}}.defineProperty( {}, 'a', {
+        'value': 1,
+        'enumerable': true,
+        'configurable': true,
+        'writable': false
+    })
+    { 'a': 1 }
+
+{{alias}}.entries( obj )
+    Returns an array of an object's own enumerable string-keyed property
+    [key, value] pairs.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: Array
+        Array of [key, value] pairs.
+
+    Examples
+    --------
+    > var o = {{alias}}.entries( { 'a': 1, 'b': 2 } )
+    [ [ 'a', 1 ], [ 'b', 2 ] ]
+
+{{alias}}.freeze( obj )
+    Freezes an object.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: Object
+        Object.
+
+    Examples
+    --------
+    > var o = {{alias}}.freeze( { 'a': 1 } )
+    { 'a': 1 }
+
+{{alias}}.getOwnPropertyDescriptor( obj, key )
+    Returns an object's own property descriptor.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    key: string
+        Property key.
+
+    Returns
+    -------
+    out: Object
+        Property descriptor.
+
+    Examples
+    --------
+    > var o = {{alias}}.getOwnPropertyDescriptor( { 'a': 1 }, 'a' )
+    { 'value': 1, 'enumerable': true, 'configurable': true, 'writable': true }
+
+{{alias}}.getOwnPropertyDescriptors( obj )
+    Returns an object's own property descriptors.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: Object
+        Property descriptors.
+
+    Examples
+    --------
+    > var o = {{alias}}.getOwnPropertyDescriptors( { 'a': 1, 'b': 2 } )
+    {
+        'a': {
+            'value': 1,
+            'enumerable': true,
+            'configurable': true,
+            'writable': true
+        },
+        'b': {
+            'value': 2,
+            'enumerable': true,
+            'configurable': true,
+            'writable': true
+        }
+    }
+
+{{alias}}.getOwnPropertyNames( obj )
+    Returns an array of an object's own enumerable and non-enumerable
+    property names.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: Array
+        Array of property names.
+
+    Examples
+    --------
+    > var o = {{alias}}.getOwnPropertyNames( { 'a': 1, 'b': 2 } )
+    [ 'a', 'b' ]
+
+{{alias}}.getOwnPropertySymbols( obj )
+    Returns an array of an object's own enumerable and non-enumerable
+    symbol property names.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: Array
+        Array of symbol property names.
+
+    Examples
+    --------
+    > var o = {{alias}}.getOwnPropertySymbols( { 'a': 1, 'b': 2 } )
+    []
+
+{{alias}}.getPrototypeOf( obj )
+    Returns an object's prototype.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: Object
+        Prototype.
+
+    Examples
+    --------
+    > var o = {{alias}}.getPrototypeOf( { 'a': 1, 'b': 2 } )
+    <Object>
+
+{{alias}}.hasOwn( obj, p )
+    Returns a boolean indicating whether an object has a property with the
+    specified name.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    p: string
+        Property name.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an object has a property with the specified
+        name.
+
+    Examples
+    --------
+    > var o = {{alias}}.hasOwn( { 'a': 1, 'b': 2 }, 'a' )
+    true
+
+{{alias}}.is( value1, value2 )
+    Returns a boolean indicating whether two values are the same value.
+
+    Parameters
+    ----------
+    value1: any
+        First value.
+
+    value2: any
+        Second value.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether two values are the same value.
+
+    Examples
+    --------
+    > var o = {{alias}}.is( 1, 1 )
+    true
+    > var o = {{alias}}.is( 1, '1' )
+    false
+
+{{alias}}.isExtensible( obj )
+    Returns a boolean indicating whether an object is extensible.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an object is extensible.
+
+    Examples
+    --------
+    > var o = {{alias}}.isExtensible( { 'a': 1 } )
+    true
+
+{{alias}}.isFrozen( obj )
+    Returns a boolean indicating whether an object is frozen.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an object is frozen.
+
+    Examples
+    --------
+    > var o = {{alias}}.isFrozen( { 'a': 1 } )
+    false
+    > var o = {{alias}}.isFrozen( {{alias}}.freeze( { 'a': 1 } ) )
+    true
+
+{{alias}}.isSealed( obj )
+    Returns a boolean indicating whether an object is sealed.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an object is sealed.
+
+    Examples
+    --------
+    > var o = {{alias}}.isSealed( { 'a': 1 } )
+    false
+    > var o = {{alias}}.isSealed( {{alias}}.seal( { 'a': 1 } ) )
+    true
+
+{{alias}}.keys( obj )
+    Returns an array of an object's own enumerable string-keyed property
+    names.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: Array
+        Array of property names.
+
+    Examples
+    --------
+    > var o = {{alias}}.keys( { 'a': 1, 'b': 2 } )
+    [ 'a', 'b' ]
+
+{{alias}}.preventExtensions( obj )
+    Prevents the addition of new properties to an object.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: Object
+        Object.
+
+    Examples
+    --------
+    > var o = {{alias}}.preventExtensions( { 'a': 1 } )
+    { 'a': 1 }
+    > o.b = 2;
+    > o
+    { 'a': 1 }
+
+{{alias}}.seal( obj )
+    Prevents the addition of new properties to an object and marks all
+    existing properties as non-configurable.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: Object
+        Object.
+
+    Examples
+    --------
+    > var o = {{alias}}.seal( { 'a': 1 } )
+    { 'a': 1 }
+    > o.b = 2;
+    > o
+    { 'a': 1 }
+    > delete o.a;
+    > o
+    { 'a': 1 }
+
+{{alias}}.setPrototypeOf( obj, proto )
+    Sets an object's prototype.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    proto: Object
+        Prototype.
+
+    Returns
+    -------
+    out: Object
+        Object.
+
+    Examples
+    --------
+    > var o = {{alias}}.setPrototypeOf( { 'a': 1 }, { 'b': 2 } )
+    { 'a': 1 }
+    > o.b
+    2
+
+{{alias}}.values( obj )
+    Returns an array of an object's own enumerable property values.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: Array
+        Array of property values.
+
+    Examples
+    --------
+    > var o = {{alias}}.values( { 'a': 1, 'b': 2 } )
+    [ 1, 2 ]
+
+{{alias}}.prototype.toLocaleString()
+    Returns a string representing the object.
+
+    Returns
+    -------
+    out: string
+        String representing the object.
+
+    Examples
+    --------
+    > var o = {{alias}}.prototype.toLocaleString.call( { 'a': 1, 'b': 2 } )
+    <string>
+
+{{alias}}.prototype.toString()
+    Returns a string representing the object.
+
+    Returns
+    -------
+    out: string
+        String representing the object.
+
+    Examples
+    --------
+    > var o = {{alias}}.prototype.toString.call( { 'a': 1, 'b': 2 } )
+    <string>
+
+{{alias}}.prototype.valueOf()
+    Returns the primitive value of the object.
+
+    Returns
+    -------
+    out: any
+        Primitive value of the object.
+
+    Examples
+    --------
+    > var o = {{alias}}.prototype.valueOf.call( { 'a': 1, 'b': 2 } )
+    {}
+
+{{alias}}.prototype.hasOwnProperty( p )
+    Returns a boolean indicating whether an object has a property with the
+    specified name.
+
+    Parameters
+    ----------
+    p: string
+        Property name.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an object has a property with the specified
+        name.
+
+    Examples
+    --------
+    > var o = {{alias}}.prototype.hasOwnProperty.call( { 'a': 1, 'b': 2 }, 'a' )
+    true
+
+{{alias}}.prototype.isPrototypeOf( obj )
+    Returns a boolean indicating whether an object exists in another object's
+    prototype chain.
+
+    Parameters
+    ----------
+    obj: Object
+        Object.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an object exists in another object's
+        prototype chain.
+
+    Examples
+    --------
+    > var p = { 'a': 1 };
+    > var o = { '__proto__': p };
+    > var b = o.isPrototypeOf( p );
+    true
+
+{{alias}}.prototype.propertyIsEnumerable( p )
+    Returns a boolean indicating whether an object's property is enumerable.
+
+    Parameters
+    ----------
+    p: string
+        Property name.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an object's property is enumerable.
+
+    Examples
+    --------
+    > var o = { 'a': 1, 'b': 2 };
+    > var bool = {{alias}}.prototype.propertyIsEnumerable.call( o, 'a' )
+    true
+
+{{alias}}.prototype.constructor
+    Property whose value is a reference to the constructor function that
+    created the instance object.
+
+    Examples
+    --------
+    > var o = new Object( null );
+    > var ctr = o.constructor;
+    <Object>
+
     See Also
     --------
 

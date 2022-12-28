@@ -26,7 +26,7 @@ import fromWords = require( './index' );
 	fromWords( 1774486211, 2479577218 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument that is not a number...
+// The compiler throws an error if the function is provided a first argument that is not a number...
 {
 	fromWords( 'abc', 2479577218 ); // $ExpectError
 	fromWords( true, 2479577218 ); // $ExpectError
@@ -36,7 +36,7 @@ import fromWords = require( './index' );
 	fromWords( ( x: number ): number => x, 2479577218 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a number...
+// The compiler throws an error if the function is provided a second argument that is not a number...
 {
 	fromWords( 1774486211, 'abc' ); // $ExpectError
 	fromWords( 1774486211, true ); // $ExpectError
@@ -46,7 +46,7 @@ import fromWords = require( './index' );
 	fromWords( 1774486211, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	fromWords(); // $ExpectError
 	fromWords( 1774486211 ); // $ExpectError

@@ -26,7 +26,7 @@ import ldexp = require( './index' );
 	ldexp( 0.5, 3 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	ldexp( true, 3 ); // $ExpectError
 	ldexp( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import ldexp = require( './index' );
 	ldexp( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	ldexp(); // $ExpectError
 	ldexp( 3 ); // $ExpectError

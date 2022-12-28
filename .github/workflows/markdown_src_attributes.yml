@@ -57,7 +57,7 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -108,7 +108,7 @@ jobs:
 
       # Upload the log files:
       - name: 'Upload log files'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           # Define a name for the uploaded artifact:

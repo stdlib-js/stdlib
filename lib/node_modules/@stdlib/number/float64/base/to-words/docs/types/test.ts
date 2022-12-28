@@ -23,9 +23,7 @@ import toWords = require( './index' );
 
 // The function returns an array...
 {
-	toWords( 3.14e201 ); // $ExpectType ArrayLike<number>
-	const out = [ 0, 0 ];
-	toWords( out, 3.14e201 ); // $ExpectType ArrayLike<number>
+	toWords( 3.14e201 ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided a last argument that is not a number...
@@ -36,27 +34,75 @@ import toWords = require( './index' );
 	toWords( null ); // $ExpectError
 	toWords( {} ); // $ExpectError
 	toWords( ( x: number ): number => x ); // $ExpectError
-
-	const out = [ 0, 0 ];
-	toWords( out, '5' ); // $ExpectError
-	toWords( out, true ); // $ExpectError
-	toWords( out, false ); // $ExpectError
-	toWords( out, null ); // $ExpectError
-	toWords( out, {} ); // $ExpectError
-	toWords( out, ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an output array that is not an array-like object of numbers...
-{
-	toWords( '5', 3.14e201 ); // $ExpectError
-	toWords( true, 3.14e201 ); // $ExpectError
-	toWords( false, 3.14e201 ); // $ExpectError
-	toWords( null, 3.14e201 ); // $ExpectError
-	toWords( {}, 3.14e201 ); // $ExpectError
-	toWords( ( x: number ): number => x, 3.14e201 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	toWords(); // $ExpectError
+}
+
+// Attached to the main export is an `assign` method which returns an array-like object containing numbers...
+{
+	const out = [ 0.0, 0.0 ];
+
+	toWords.assign( 3.14e-319, out, 1, 0 ); // $ExpectType Collection
+}
+
+// The compiler throws an error if the `assign` method is provided a first argument which is not a number...
+{
+	const out = [ 0.0, 0.0 ];
+
+	toWords.assign( true, out, 1, 0 ); // $ExpectError
+	toWords.assign( false, out, 1, 0 ); // $ExpectError
+	toWords.assign( '5', out, 1, 0 ); // $ExpectError
+	toWords.assign( null, out, 1, 0 ); // $ExpectError
+	toWords.assign( [], out, 1, 0 ); // $ExpectError
+	toWords.assign( {}, out, 1, 0 ); // $ExpectError
+	toWords.assign( ( x: number ): number => x, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a second argument which is not an array-like object...
+{
+	toWords.assign( 1.0, 1, 1, 0 ); // $ExpectError
+	toWords.assign( 1.0, true, 1, 0 ); // $ExpectError
+	toWords.assign( 1.0, false, 1, 0 ); // $ExpectError
+	toWords.assign( 1.0, null, 1, 0 ); // $ExpectError
+	toWords.assign( 1.0, {}, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a third argument which is not a number...
+{
+	const out = [ 0.0, 0.0 ];
+
+	toWords.assign( 1.0, out, '5', 0 ); // $ExpectError
+	toWords.assign( 1.0, out, true, 0 ); // $ExpectError
+	toWords.assign( 1.0, out, false, 0 ); // $ExpectError
+	toWords.assign( 1.0, out, null, 0 ); // $ExpectError
+	toWords.assign( 1.0, out, [], 0 ); // $ExpectError
+	toWords.assign( 1.0, out, {}, 0 ); // $ExpectError
+	toWords.assign( 1.0, out, ( x: number ): number => x, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a fourth argument which is not a number...
+{
+	const out = [ 0.0, 0.0 ];
+
+	toWords.assign( 1.0, out, 1, '5' ); // $ExpectError
+	toWords.assign( 1.0, out, 1, true ); // $ExpectError
+	toWords.assign( 1.0, out, 1, false ); // $ExpectError
+	toWords.assign( 1.0, out, 1, null ); // $ExpectError
+	toWords.assign( 1.0, out, 1, [] ); // $ExpectError
+	toWords.assign( 1.0, out, 1, {} ); // $ExpectError
+	toWords.assign( 1.0, out, 1, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
+{
+	const out = [ 0.0, 0.0 ];
+
+	toWords.assign(); // $ExpectError
+	toWords.assign( 1.0 ); // $ExpectError
+	toWords.assign( 1.0, out ); // $ExpectError
+	toWords.assign( 1.0, out, 1 ); // $ExpectError
+	toWords.assign( 1.0, out, 1, 0, 1 ); // $ExpectError
 }

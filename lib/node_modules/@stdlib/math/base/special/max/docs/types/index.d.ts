@@ -21,13 +21,8 @@
 /**
 * Returns the maximum value.
 *
-* ## Notes
-*
-* -   When an empty set is considered a subset of the extended reals (all real numbers, including positive and negative infinity), negative infinity is the least upper bound. Similar to zero being the identity element for the sum of an empty set and to one being the identity element for the product of an empty set, negative infinity is the identity element for the maximum, and thus, if not provided any arguments, the function returns negative infinity.
-*
 * @param x - first number
 * @param y - second number
-* @param args - numbers
 * @returns maximum value
 *
 * @example
@@ -35,7 +30,7 @@
 * // returns 4.2
 *
 * @example
-* var v = max( 5.9, 3.14, 4.2 );
+* var v = max( 5.9, 3.14 );
 * // returns 5.9
 *
 * @example
@@ -46,7 +41,7 @@
 * var v = max( +0.0, -0.0 );
 * // returns +0.0
 */
-declare function max( x?: number, y?: number, ...args: Array<number> ): number;
+declare function max( x: number, y: number ): number;
 
 
 // EXPORTS //

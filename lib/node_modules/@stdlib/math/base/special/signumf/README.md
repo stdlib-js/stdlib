@@ -221,7 +221,7 @@ int main() {
 
 <section class="links">
 
-[signum]: http://en.wikipedia.org/wiki/Sign_function
+[signum]: https://en.wikipedia.org/wiki/Sign_function
 
 <!-- <related-links> -->
 

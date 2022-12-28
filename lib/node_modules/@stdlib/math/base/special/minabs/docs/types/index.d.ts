@@ -27,15 +27,10 @@
 *
 * @param x - first number
 * @param y - second number
-* @param args - numbers
 * @returns minimum absolute value
 *
 * @example
 * var v = minabs( -3.14, 4.2 );
-* // returns 3.14
-*
-* @example
-* var v = minabs( 5.9, 3.14, 4.2 );
 * // returns 3.14
 *
 * @example
@@ -46,7 +41,7 @@
 * var v = minabs( +0.0, -0.0 );
 * // returns +0.0
 */
-declare function minabs( x?: number, y?: number, ...args: Array<number> ): number; // tslint-disable-line max-line-length
+declare function minabs( x: number, y: number ): number;
 
 
 // EXPORTS //

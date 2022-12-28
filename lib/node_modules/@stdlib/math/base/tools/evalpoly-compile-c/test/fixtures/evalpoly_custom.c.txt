@@ -1,0 +1,15 @@
+/**
+* Evaluates a polynomial.
+*
+* ## Notes
+*
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the polynomial
+* @return     evaluated polynomial
+*/
+static float polyval123( const float x ) {
+	return 1.0f + (x * (2.5f + (x * (3.14f + (x * -1.0f)))));
+}

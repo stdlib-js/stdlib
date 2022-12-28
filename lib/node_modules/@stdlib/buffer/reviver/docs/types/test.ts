@@ -30,7 +30,7 @@ import reviveBuffer = require( './index' );
 	reviveBuffer( 'foo', o ); // $ExpectType any
 }
 
-// The function does not compile if provided a first argument that is not a string...
+// The compiler throws an error if the function is provided a first argument that is not a string...
 {
 	reviveBuffer( true, 1 ); // $ExpectError
 	reviveBuffer( false, 1 ); // $ExpectError
@@ -42,7 +42,7 @@ import reviveBuffer = require( './index' );
 	reviveBuffer( ( x: number ): number => x, 1 ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	reviveBuffer(); // $ExpectError
 	reviveBuffer( '{"type":"Buffer","data":[5,3]}' ); // $ExpectError

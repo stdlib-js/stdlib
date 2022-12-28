@@ -37,7 +37,7 @@ void print_ndarray_contents( const struct ndarray *x ) {
 			fprintf( stderr, "Unable to resolve data element.\n" );
 			exit( EXIT_FAILURE );
 		}
-		fprintf( stdout, "data[%"PRId64"] = %lu\n", i, v );
+		fprintf( stdout, "data[%"PRId64"] = %u\n", i, v );
 	}
 }
 

@@ -26,7 +26,7 @@ import tribonacci = require( './index' );
 	tribonacci( 7 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	tribonacci( true ); // $ExpectError
 	tribonacci( false ); // $ExpectError
@@ -38,7 +38,7 @@ import tribonacci = require( './index' );
 	tribonacci( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	tribonacci(); // $ExpectError
 }

@@ -26,7 +26,7 @@ import evalpoly = require( './index' );
 	evalpoly( [ 3.0, 2.0, 1.0 ], 10.0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not an array of numbers...
+// The compiler throws an error if the function is provided a first argument which is not an array of numbers...
 {
 	evalpoly( true, 10.0 ); // $ExpectError
 	evalpoly( false, 10.0 ); // $ExpectError
@@ -36,7 +36,7 @@ import evalpoly = require( './index' );
 	evalpoly( ( x: number ): number => x, 10.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	const c = [ 3.0, 2.0, 1.0 ];
 	evalpoly( c, true ); // $ExpectError

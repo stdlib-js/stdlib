@@ -26,7 +26,7 @@ import abs2 = require( './index' );
 	abs2( 8 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	abs2( true ); // $ExpectError
 	abs2( false ); // $ExpectError
@@ -38,7 +38,7 @@ import abs2 = require( './index' );
 	abs2( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	abs2(); // $ExpectError
 }

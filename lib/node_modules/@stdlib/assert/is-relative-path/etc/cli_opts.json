@@ -1,6 +1,7 @@
 {
 	"string": [
-		"platform"
+		"platform",
+		"split"
 	],
 	"boolean": [
 		"help",

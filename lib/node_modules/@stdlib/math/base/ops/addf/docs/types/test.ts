@@ -26,7 +26,7 @@ import addf = require( './index' );
 	addf( 8.0, 8.0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	addf( true, 5.0 ); // $ExpectError
 	addf( false, 5.0 ); // $ExpectError
@@ -38,7 +38,7 @@ import addf = require( './index' );
 	addf( ( x: number ): number => x, 5.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	addf( 5.0, true ); // $ExpectError
 	addf( 5.0, false ); // $ExpectError
@@ -50,7 +50,7 @@ import addf = require( './index' );
 	addf( 5.0, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	addf(); // $ExpectError
 	addf( 5.0 ); // $ExpectError

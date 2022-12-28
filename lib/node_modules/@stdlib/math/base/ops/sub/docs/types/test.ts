@@ -26,7 +26,7 @@ import sub = require( './index' );
 	sub( 8.0, 8.0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	sub( true, 5.0 ); // $ExpectError
 	sub( false, 5.0 ); // $ExpectError
@@ -38,7 +38,7 @@ import sub = require( './index' );
 	sub( ( x: number ): number => x, 5.0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	sub( 5.0, true ); // $ExpectError
 	sub( 5.0, false ); // $ExpectError
@@ -50,7 +50,7 @@ import sub = require( './index' );
 	sub( 5.0, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	sub(); // $ExpectError
 	sub( 5.0 ); // $ExpectError

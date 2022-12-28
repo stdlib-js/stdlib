@@ -52,11 +52,8 @@ var sep = PATH_SEP_WIN32;
 ```javascript
 var PATH_SEP_WIN32 = require( '@stdlib/constants/path/sep-win32' );
 
-var parts;
-var path;
-
-path = 'foo\\bar\\baz';
-parts = path.split( PATH_SEP_WIN32 );
+var path = 'foo\\bar\\baz';
+var parts = path.split( PATH_SEP_WIN32 );
 // returns ['foo','bar','baz']
 
 path = 'foo/bar/baz';

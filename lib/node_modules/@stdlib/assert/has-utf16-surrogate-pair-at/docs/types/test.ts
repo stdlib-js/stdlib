@@ -27,7 +27,7 @@ import hasUTF16SurrogatePairAt = require( './index' );
 	hasUTF16SurrogatePairAt( '🌷', 1 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided incorrect arguments...
+// The compiler throws an error if the function is provided incorrect arguments...
 {
 	hasUTF16SurrogatePairAt( false, 3 ); // $ExpectError
 	hasUTF16SurrogatePairAt( {}, 3 ); // $ExpectError

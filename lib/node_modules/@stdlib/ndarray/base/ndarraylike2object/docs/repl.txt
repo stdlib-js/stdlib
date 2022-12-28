@@ -12,10 +12,11 @@
     - strides: array strides.
     - offset: index offset.
     - order: order.
-    - accessors: boolean indicating whether the data buffer uses accessors for
-      getting and setting elements.
-    - getter: accessor for retrieving a data buffer element.
-    - setter: accessor for setting a data buffer element.
+    - accessorProtocol: boolean indicating whether the data buffer uses
+      accessors for getting and setting elements.
+    - accessors: a two-element array whose first element is an accessor for
+      retrieving an ndarray element and whose second element is an accessor for
+      setting an ndarray element.
 
     The getter accessor accepts two arguments:
 
@@ -37,6 +38,39 @@
     -------
     out: Object
         Object containing ndarray meta data.
+
+    out.ref: ndarray
+        Reference to input array.
+
+    out.dtype: string
+        Underlying data type.
+
+    out.data: ArrayLikeObject
+        Data buffer.
+
+    out.length: integer
+        Number of elements.
+
+    out.shape: ArrayLikeObject<integer>
+        Array dimensions.
+
+    out.strides: ArrayLikeObject<integer>
+        Array strides.
+
+    out.offset: integer
+        Index offset.
+
+    out.order: string
+        Layout order.
+
+    out.accessorProtocol: boolean
+        Boolean indicating whether the input array use accessors for getting and
+        setting elements.
+
+    out.accessors: Array<Function>
+        A two-element array whose first element is an accessor for retrieving an
+        ndarray element and whose second element is an accessor for setting an
+        ndarray element.
 
     Examples
     --------

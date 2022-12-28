@@ -26,7 +26,7 @@ import removeFirst = require( './index' );
 	removeFirst( 'abc' ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	removeFirst( true ); // $ExpectError
 	removeFirst( false ); // $ExpectError
@@ -38,7 +38,7 @@ import removeFirst = require( './index' );
 	removeFirst( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a number...
+// The compiler throws an error if the function is provided a second argument that is not a number...
 {
 	removeFirst( 'abc', true ); // $ExpectError
 	removeFirst( 'abc', false ); // $ExpectError
@@ -50,7 +50,7 @@ import removeFirst = require( './index' );
 	removeFirst( 'abc', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	removeFirst(); // $ExpectError
 }

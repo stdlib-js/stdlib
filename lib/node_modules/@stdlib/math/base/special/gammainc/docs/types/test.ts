@@ -28,7 +28,7 @@ import gammainc = require( './index' );
 	gammainc( 3.5, 2, false, true ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than numbers for the first two parameters...
+// The compiler throws an error if the function is provided values other than numbers for the first two parameters...
 {
 	gammainc( true, 3 ); // $ExpectError
 	gammainc( false, 2 ); // $ExpectError
@@ -45,7 +45,7 @@ import gammainc = require( './index' );
 	gammainc( 8, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than a boolean as the third argument...
+// The compiler throws an error if the function is provided a value other than a boolean as the third argument...
 {
 	gammainc( 3.5, 2, '5' ); // $ExpectError
 	gammainc( 3.5, 2, 123 ); // $ExpectError
@@ -54,7 +54,7 @@ import gammainc = require( './index' );
 	gammainc( 3.5, 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than a boolean as the fourth argument...
+// The compiler throws an error if the function is provided a value other than a boolean as the fourth argument...
 {
 	gammainc( 3.5, 2, true, '5' ); // $ExpectError
 	gammainc( 3.5, 2, true, 123 ); // $ExpectError
@@ -63,7 +63,7 @@ import gammainc = require( './index' );
 	gammainc( 3.5, 2, true, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	gammainc(); // $ExpectError
 	gammainc( 3 ); // $ExpectError

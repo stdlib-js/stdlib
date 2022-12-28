@@ -26,7 +26,7 @@ import ahavercos = require( './index' );
 	ahavercos( 8 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	ahavercos( true ); // $ExpectError
 	ahavercos( false ); // $ExpectError
@@ -38,7 +38,7 @@ import ahavercos = require( './index' );
 	ahavercos( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	ahavercos(); // $ExpectError
 }

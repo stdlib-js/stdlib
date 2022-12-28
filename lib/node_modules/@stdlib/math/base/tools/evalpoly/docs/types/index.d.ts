@@ -57,7 +57,7 @@ interface EvalPoly {
 	*
 	* -   The compiled function uses [Horner's rule][horners-method] for efficient computation.
 	*
-	* [horners-method]: http://en.wikipedia.org/wiki/Horner%27s_method
+	* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
 	*
 	*
 	* @param c - polynomial coefficients sorted in ascending degree

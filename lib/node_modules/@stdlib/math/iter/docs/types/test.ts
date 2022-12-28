@@ -18,12 +18,12 @@
 
 /* tslint:disable:no-unused-expression */
 
-import iter = require( './index' );
+import ns = require( './index' );
 
 
 // TESTS //
 
 // The exported value is the expected interface...
 {
-	iter; // $ExpectType Namespace
+	ns; // $ExpectType Namespace
 }

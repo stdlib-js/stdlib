@@ -31,7 +31,7 @@ import wilcoxon = require( './index' );
 	wilcoxon( x, y, { 'correction': false } ); // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is not an array of numbers...
+// The compiler throws an error if the function is provided a first argument that is not an array of numbers...
 {
 	const y = [ 0.878, 0.647, 0.598, 2.05, 1.06, 1.29, 1.06, 3.14, 1.29 ];
 	wilcoxon( 'abc' ); // $ExpectError
@@ -53,7 +53,7 @@ import wilcoxon = require( './index' );
 	wilcoxon( ( x: number ): number => x, y ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not an array of numbers or options object...
+// The compiler throws an error if the function is provided a second argument that is not an array of numbers or options object...
 {
 	const x = [ 6, 8, 14, 16, 23, 24, 28, 29, 41, -48, 49, 56, 60, -67, 75 ];
 	wilcoxon( x, 'abc' ); // $ExpectError
@@ -156,7 +156,7 @@ import wilcoxon = require( './index' );
 	wilcoxon( x, y, { 'mu': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const x = [ 1.83, 0.50, 1.62, 2.48, 1.68, 1.88, 1.55, 3.06, 1.30 ];
 	const y = [ 0.878, 0.647, 0.598, 2.05, 1.06, 1.29, 1.06, 3.14, 1.29 ];

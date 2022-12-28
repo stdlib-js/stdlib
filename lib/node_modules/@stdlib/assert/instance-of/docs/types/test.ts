@@ -27,7 +27,7 @@ import instanceOf = require( './index' );
 	instanceOf( {}, Object ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a second argument that is not a function...
+// The compiler throws an error if the function is provided a second argument that is not a function...
 {
 	instanceOf( [], [] ); // $ExpectError
 	instanceOf( [], {} ); // $ExpectError
@@ -38,7 +38,7 @@ import instanceOf = require( './index' );
 	instanceOf( [], false ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	instanceOf(); // $ExpectError
 	instanceOf( [] ); // $ExpectError

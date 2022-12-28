@@ -26,7 +26,7 @@ import isPrototypeOf = require( './index' );
 	isPrototypeOf( 3.12, Number.prototype ); // $ExpectType boolean
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	isPrototypeOf(); // $ExpectError
 	isPrototypeOf( 3.12 ); // $ExpectError

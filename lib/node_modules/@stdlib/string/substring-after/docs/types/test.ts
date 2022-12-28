@@ -29,7 +29,7 @@ import substringAfter = require( './index' );
 	substringAfter( 'beep boop', 'b', 5 ); // $ExpectType string
 }
 
-// The function does not compile if provided arguments having invalid types...
+// The compiler throws an error if the function is provided arguments having invalid types...
 {
 	substringAfter( true, 'd', 0 ); // $ExpectError
 	substringAfter( false, 'd', 0 ); // $ExpectError
@@ -53,7 +53,7 @@ import substringAfter = require( './index' );
 	substringAfter( 'abc', 'd', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	substringAfter(); // $ExpectError
 	substringAfter( 'abc' ); // $ExpectError

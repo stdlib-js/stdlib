@@ -233,12 +233,9 @@ out = mysample();
 ```javascript
 var sample = require( '@stdlib/random/sample' );
 
-var out;
-var x;
-
 // By default, sample uniformly with replacement:
-x = [ 'a', 'b', 'c', 'd' ];
-out = sample( x, {
+var x = [ 'a', 'b', 'c', 'd' ];
+var out = sample( x, {
     'size': 10
 });
 // e.g., returns [ 'd', 'c', 'b', 'b', 'b', 'd', 'c', 'c', 'b', 'd' ]

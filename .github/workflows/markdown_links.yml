@@ -57,7 +57,7 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -83,7 +83,18 @@ jobs:
         id: results
         with:
           exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
-        timeout-minutes: 120
+        timeout-minutes: 240
+
+      # Check whether links are included in `docs/links/database.json` and use the correct identifier:
+      - name: 'Check links against database'
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to a utility for validating links:
+          validate="${root}/lib/node_modules/@stdlib/_tools/links/validate/bin/cli"
+
+          ${validate} '${{ steps.results.outputs.all_links }}'
 
       # Log the results:
       - name: 'Log results'
@@ -108,7 +119,7 @@ jobs:
 
       # Upload the log files:
       - name: 'Upload log files'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           # Define a name for the uploaded artifact:

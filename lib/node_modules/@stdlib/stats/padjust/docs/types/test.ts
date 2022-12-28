@@ -28,7 +28,7 @@ import padjust = require( './index' );
 	padjust( pvalues, 'hommel', 8 ); // $ExpectType number[]
 }
 
-// The function does not compile if provided a value other than an array of numbers...
+// The compiler throws an error if the function is provided a value other than an array of numbers...
 {
 	padjust( 'abc', 'bh' ); // $ExpectError
 	padjust( true, 'bh' ); // $ExpectError
@@ -65,7 +65,7 @@ import padjust = require( './index' );
 	padjust( pvalues, 'bh', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const pvalues = [ 0.008, 0.03, 0.123, 0.6, 0.2 ];
 	padjust(); // $ExpectError

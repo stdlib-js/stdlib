@@ -27,7 +27,7 @@ import isNegativeFinite = require( './index' );
 	isNegativeFinite( 3.0 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	isNegativeFinite( true ); // $ExpectError
 	isNegativeFinite( false ); // $ExpectError
@@ -38,7 +38,7 @@ import isNegativeFinite = require( './index' );
 	isNegativeFinite( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	isNegativeFinite(); // $ExpectError
 }

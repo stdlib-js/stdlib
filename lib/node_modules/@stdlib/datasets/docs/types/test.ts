@@ -26,7 +26,7 @@ import datasets = require( './index' );
 	datasets( 'emoji' ); // $ExpectType any
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	datasets( true ); // $ExpectError
 	datasets( false ); // $ExpectError
@@ -38,7 +38,7 @@ import datasets = require( './index' );
 	datasets( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	datasets(); // $ExpectError
 }

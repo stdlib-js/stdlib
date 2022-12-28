@@ -32,7 +32,7 @@ import char2dtype = require( './index' );
 	char2dtype( 'f' ); // $ExpectType string | null
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	char2dtype( true ); // $ExpectError
 	char2dtype( false ); // $ExpectError

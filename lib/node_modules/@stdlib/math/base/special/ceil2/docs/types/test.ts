@@ -26,7 +26,7 @@ import ceil2 = require( './index' );
 	ceil2( 8 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	ceil2( true ); // $ExpectError
 	ceil2( false ); // $ExpectError
@@ -38,7 +38,7 @@ import ceil2 = require( './index' );
 	ceil2( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	ceil2(); // $ExpectError
 }

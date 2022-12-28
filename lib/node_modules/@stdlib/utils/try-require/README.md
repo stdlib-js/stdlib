@@ -89,9 +89,7 @@ if ( x instanceof Error ) {
 ```javascript
 var tryRequire = require( '@stdlib/utils/try-require' );
 
-var out;
-
-out = tryRequire( '_abcdefghijklmnopqrstuvwxyz123456789_' );
+var out = tryRequire( '_abcdefghijklmnopqrstuvwxyz123456789_' );
 if ( out instanceof Error ) {
     console.error( out.message );
 } else {

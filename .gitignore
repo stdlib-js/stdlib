@@ -19,6 +19,7 @@
 # Files #
 #########
 package.json.copy
+.stdlibrc
 
 # Directories #
 ###############
@@ -176,3 +177,8 @@ acs-*.bib
 #################
 .vscode/
 jsconfig.json
+
+# Sublime Text #
+################
+*.sublime-workspace
+*.sublime-project

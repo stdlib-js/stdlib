@@ -143,19 +143,16 @@ var bool = it.next().done;
 var randu = require( '@stdlib/random/iter/randu' );
 var iterSlice = require( '@stdlib/iter/slice' );
 
-var rand;
-var it;
-var r;
-
 // Create a seeded iterator for generating pseudorandom numbers:
-rand = randu({
+var rand = randu({
     'seed': 1234
 });
 
 // Create an iterator which returns a subsequence of 10 generated numbers:
-it = iterSlice( rand, 10, 20 );
+var it = iterSlice( rand, 10, 20 );
 
 // Perform manual iteration...
+var r;
 while ( true ) {
     r = it.next();
     if ( r.done ) {

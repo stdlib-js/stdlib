@@ -10,14 +10,12 @@
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    The callback function is provided six arguments:
+    The callback function is provided four arguments:
 
     - value: array element
     - idx: iteration index
-    - ix: strided index (offsetX + idx*sx)
-    - iy: strided index (offsetY + idx*sy)
-    - x: the input array
-    - y: the destination array
+    - indices: strided indices (offset + idx*stride)
+    - arrays: input and output arrays
 
     If the callback function does not return any value (or equivalently,
     explicitly returns `undefined`), the value is ignored.

@@ -28,7 +28,7 @@ import convertPath = require( './index' );
 	convertPath( 'C:\\foo\\bar\\beep.c', 'posix' ); // $ExpectType string
 }
 
-// The function does not compile if provided arguments having invalid types...
+// The compiler throws an error if the function is provided arguments having invalid types...
 {
 	convertPath( true, 'win32' ); // $ExpectError
 	convertPath( false, 'win32' ); // $ExpectError
@@ -45,7 +45,7 @@ import convertPath = require( './index' );
 	convertPath( '/c/foo/bar/beep.c', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	convertPath(); // $ExpectError
 	convertPath( 'abc' ); // $ExpectError

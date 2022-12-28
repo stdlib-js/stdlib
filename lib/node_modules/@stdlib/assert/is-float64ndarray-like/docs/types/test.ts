@@ -26,7 +26,7 @@ import isFloat64ndarrayLike = require( './index' );
 	isFloat64ndarrayLike( [] ); // $ExpectType boolean
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	isFloat64ndarrayLike(); // $ExpectError
 	isFloat64ndarrayLike( 'abc', 123 ); // $ExpectError

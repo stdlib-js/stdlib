@@ -24,7 +24,7 @@ This directory contains parser options for [ESLint][eslint].
 
 <section class="links">
 
-[eslint]: http://eslint.org/
+[eslint]: https://eslint.org/
 
 </section>
 

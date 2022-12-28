@@ -27,7 +27,7 @@ import betaincinv = require( './index' );
 	betaincinv( 0.2, 1.5, 1.5, true ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than three numbers for the first three parameters...
+// The compiler throws an error if the function is provided values other than three numbers for the first three parameters...
 {
 	betaincinv( true, 3, 2 ); // $ExpectError
 	betaincinv( false, 2, 2 ); // $ExpectError
@@ -50,7 +50,7 @@ import betaincinv = require( './index' );
 	betaincinv( 9.343, 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than a boolean as the fourth argument...
+// The compiler throws an error if the function is provided a value other than a boolean as the fourth argument...
 {
 	betaincinv( 0.2, 1.5, 1.5, '5' ); // $ExpectError
 	betaincinv( 0.2, 1.5, 1.5, 123 ); // $ExpectError
@@ -59,7 +59,7 @@ import betaincinv = require( './index' );
 	betaincinv( 0.2, 1.5, 1.5, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	betaincinv(); // $ExpectError
 	betaincinv( 3 ); // $ExpectError

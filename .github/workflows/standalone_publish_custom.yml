@@ -26,21 +26,23 @@ on:
     inputs:
       skip:
         type: choice
-        description: Whether to skip individual or toplevel package publishing
+        description: 'Skip individual or toplevel package publishing?'
         options:
         - none
         - skip-toplevel
         - skip-individual
       packages:
-        description: Space-separated list of packages to publish
+        description: 'List of packages to publish (space separated):'
       pattern:
-        description: Regular expression for packages to include
+        description: 'Regular expression for packages to include:'
       dry-run:
         type: boolean
-        description: Boolean flag indicating whether to skip uploading the packages (dry run)
+        description: 'Skip uploading packages to npm (dry run):'
+        default: false
       patch:
         type: boolean
-        description: Boolean flag indicating whether to create a patch release for the packages
+        description: 'Create a patch release'
+        default: false
 
 # Workflow concurrency group:
 concurrency:
@@ -68,7 +70,7 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -82,7 +84,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5

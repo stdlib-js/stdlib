@@ -33,7 +33,7 @@ import kde2d = require( './index' );
 	kde2d( x, y, { 'kernel': 'gaussian' } ); // $ExpectType Output
 }
 
-// The function does not compile if provided a first argument that is not an array of numbers...
+// The compiler throws an error if the function is provided a first argument that is not an array of numbers...
 {
 	const y = [ -0.0468, 0.8012, 1.6492, 2.4973, 3.3454, 4.1934, 5.0415, 5.8896, 6.7376, 7.5857 ];
 	kde2d( 'abc', y ); // $ExpectError
@@ -46,7 +46,7 @@ import kde2d = require( './index' );
 	kde2d( ( x: number ): number => x, y ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not an array of numbers...
+// The compiler throws an error if the function is provided a second argument that is not an array of numbers...
 {
 	const x = [ 0.6333, 0.8643, 1.0952, 1.3262, 1.5571, 1.7881, 2.019, 2.25, 2.481, 2.7119 ];
 	kde2d( x, 'abc' ); // $ExpectError
@@ -163,7 +163,7 @@ import kde2d = require( './index' );
 	kde2d( x, y, { 'kernel': {} } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const x = [ 0.6333, 0.8643, 1.0952, 1.3262, 1.5571, 1.7881, 2.019, 2.25, 2.481, 2.7119 ];
 	const y = [ -0.0468, 0.8012, 1.6492, 2.4973, 3.3454, 4.1934, 5.0415, 5.8896, 6.7376, 7.5857 ];

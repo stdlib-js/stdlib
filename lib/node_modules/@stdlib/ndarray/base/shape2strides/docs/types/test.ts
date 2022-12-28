@@ -26,7 +26,7 @@ import shape2strides = require( './index' );
 	shape2strides( [ 3, 2, 1 ], 'row-major' ); // $ExpectType number[]
 }
 
-// The function does not compile if provided a first argument that is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a first argument that is not an array-like object containing numbers...
 {
 	shape2strides( true, 'row-major' ); // $ExpectError
 	shape2strides( false, 'row-major' ); // $ExpectError
@@ -38,7 +38,7 @@ import shape2strides = require( './index' );
 	shape2strides( ( x: number ): number => x, 'row-major' ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a recognized order...
+// The compiler throws an error if the function is provided a second argument that is not a recognized order...
 {
 	shape2strides( [ 2, 3 ], true ); // $ExpectError
 	shape2strides( [ 2, 3 ], false ); // $ExpectError
@@ -50,7 +50,7 @@ import shape2strides = require( './index' );
 	shape2strides( [ 2, 3 ], ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	shape2strides(); // $ExpectError
 	shape2strides( [ 3, 2 ] ); // $ExpectError

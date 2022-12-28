@@ -102,6 +102,12 @@ var overrides = [
 		}
 	},
 	{
+		'files': [ '**/scripts/*.js' ],
+		'rules': {
+			'node/shebang': 'off'
+		}
+	},
+	{
 		'files': [ '**/test/*.js' ],
 		'rules': {
 			'no-empty-function': 'off',

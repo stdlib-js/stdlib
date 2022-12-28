@@ -23,7 +23,6 @@ name: standalone_keepalive
 on:
   # Run the workflow on the first day of each month:
   schedule:
-    # * is a special character in YAML so you have to quote this string
     - cron: '0 0 1 * *'
 
   # Allow the workflow to be manually run:
@@ -45,7 +44,7 @@ jobs:
   keepalive:
 
     # Define a display name:
-    name: 'Keep Alive'
+    name: 'Keep alive'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -55,7 +54,7 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -69,7 +68,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5

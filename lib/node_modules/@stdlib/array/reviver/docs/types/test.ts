@@ -30,7 +30,7 @@ import reviveTypedArray = require( './index' );
 	reviveTypedArray( 'foo', o ); // $ExpectType any
 }
 
-// The function does not compile if provided a first argument that is not a string...
+// The compiler throws an error if the function is provided a first argument that is not a string...
 {
 	reviveTypedArray( true, 1 ); // $ExpectError
 	reviveTypedArray( false, 1 ); // $ExpectError
@@ -42,7 +42,7 @@ import reviveTypedArray = require( './index' );
 	reviveTypedArray( ( x: number ): number => x, 1 ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	reviveTypedArray(); // $ExpectError
 	reviveTypedArray( 'beep' ); // $ExpectError

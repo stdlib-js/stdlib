@@ -31,7 +31,7 @@ import vartest = require( './index' );
 	vartest( x, y, { 'ratio': 2 } ); // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is not a numeric array...
+// The compiler throws an error if the function is provided a first argument that is not a numeric array...
 {
 	const y = [ 560, 550, 580, 550, 560, 590, 550, 590 ];
 	vartest( 'abc', y ); // $ExpectError
@@ -44,7 +44,7 @@ import vartest = require( './index' );
 	vartest( ( x: number ): number => x, y ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a numeric array...
+// The compiler throws an error if the function is provided a second argument that is not a numeric array...
 {
 	const x = [ 610, 610, 550, 590, 565, 570 ];
 	vartest( x, 'abc' ); // $ExpectError
@@ -111,7 +111,7 @@ import vartest = require( './index' );
 	vartest( x, y, { 'alternative': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const x = [ 610, 610, 550, 590, 565, 570 ];
 	const y = [ 560, 550, 580, 550, 560, 590, 550, 590 ];

@@ -785,12 +785,12 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	const u = new Float64Array( w.length );
 
 	const f = dispatch( strided, types, data, 16, 4, 1 );
-	f( x.length, 'float64', 10, 1, y, 1, z, 1, w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', true, 1, y, 1, z, 1, w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', false, 1, y, 1, z, 1, w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', null, 1, y, 1, z, 1, w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', undefined, 1, y, 1, z, 1, w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', {}, 1, y, 1, z, 1, w, 1, u, 1 ); // $ExpectError
+	f( x.length, 'float64', 10, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', true, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', false, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', null, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', undefined, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', {}, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a fourth argument which is not a number (5 strided arrays)...
@@ -889,14 +889,14 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	const u = new Float64Array( w.length );
 
 	const f = dispatch( strided, types, data, 16, 4, 1 );
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, '10', w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, true, w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, false, w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, null, w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, undefined, w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, [ '1' ], w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, {}, w, 1, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, ( x: number ): number => x, w, 1, u, 1 ); // $ExpectError
+	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, '10', 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, true, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, false, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, null, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, undefined, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, [ '1' ], 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, {}, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
+	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, ( x: number ): number => x, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a twelfth argument which is not an array-like object (5 strided arrays)...
@@ -1818,7 +1818,7 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, undefined, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, [ '1' ], 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, {}, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, ( x: number ): number => x, z, 1, 0, w, 1, 0, u, 1, 0 ); // $ExpectError
+	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, ( x: number ): number => x, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function supporting offsets is provided an eleventh argument which is not an array-like object (5 strided arrays)...

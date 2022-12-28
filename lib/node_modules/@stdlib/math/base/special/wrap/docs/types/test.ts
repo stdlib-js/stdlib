@@ -26,7 +26,7 @@ import wrap = require( './index' );
 	wrap( -3, 0, 10 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than three numbers...
+// The compiler throws an error if the function is provided values other than three numbers...
 {
 	wrap( true, 3, 2 ); // $ExpectError
 	wrap( false, 2, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import wrap = require( './index' );
 	wrap( 9.343, 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	wrap(); // $ExpectError
 	wrap( 3 ); // $ExpectError

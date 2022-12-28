@@ -26,7 +26,7 @@ import expandContractions = require( './index' );
 	expandContractions( 'I won\'t be able to get y\'all out of this one.' ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	expandContractions( true ); // $ExpectError
 	expandContractions( false ); // $ExpectError
@@ -38,7 +38,7 @@ import expandContractions = require( './index' );
 	expandContractions( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	expandContractions(); // $ExpectError
 }

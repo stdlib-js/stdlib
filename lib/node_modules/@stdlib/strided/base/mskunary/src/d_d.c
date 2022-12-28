@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,12 +16,16 @@
 * limitations under the License.
 */
 
+/*
+* The following is auto-generated. Do not manually edit. See scripts/loops.js.
+*/
+
 #include "stdlib/strided/base/mskunary/d_d.h"
 #include "stdlib/strided/base/mskunary/macros.h"
 #include <stdint.h>
 
 /**
-* Applies a unary callback accepting and returning double-precision floating-point numbers to a double-precision floating-point strided input array and assigns results to elements in a double-precision floating-point strided output array.
+* Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 *
 * @param arrays   array whose first element is a pointer to a strided input array, whose second element is a pointer to a strided mask array, and whose last element is a pointer to a strided output array
 * @param shape    array whose only element is the number of elements over which to iterate
@@ -34,25 +38,25 @@
 *
 * // Create underlying byte arrays:
 * uint8_t x[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t m[] = { 0, 1, 0 };
+* uint8_t m[] = { 0, 0, 0 };
 * uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define a pointer to an array containing pointers to strided arrays:
 * uint8_t *arrays[] = { x, m, out };
 *
 * // Define the strides:
-* int64_t strides[] = { 8, 1, 8 }; // 8 bytes per double, 1 byte per uint8
+* int64_t strides[] = { 8, 1, 8 };
 *
 * // Define the number of elements over which to iterate:
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* double scale( const double x ) {
-*     return x + 10.0;
+* double fcn( double x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* stdlib_strided_mask_d_d( arrays, shape, strides, (void *)scale );
+* stdlib_strided_mask_d_d( arrays, shape, strides, (void *)fcn );
 */
 void stdlib_strided_mask_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
 	typedef double func_type( const double x );

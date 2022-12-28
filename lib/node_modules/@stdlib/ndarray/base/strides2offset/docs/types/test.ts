@@ -26,7 +26,7 @@ import strides2offset = require( './index' );
 	strides2offset( [ 2, 3, 10 ], [ 30, -10, 1 ] ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two array-like objects of numbers...
+// The compiler throws an error if the function is provided values other than two array-like objects of numbers...
 {
 	const shape = [ 2, 3, 10 ];
 	const strides = [ 30, -10, 1 ];
@@ -51,7 +51,7 @@ import strides2offset = require( './index' );
 	strides2offset( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	strides2offset(); // $ExpectError
 	strides2offset( 3 ); // $ExpectError

@@ -26,7 +26,7 @@ import reviveError = require( './index' );
 	JSON.parse( '{"beep":"boop"}', reviveError ); // $ExpectType any
 }
 
-// The function does not compile if provided a first argument that is not a string...
+// The compiler throws an error if the function is provided a first argument that is not a string...
 {
 	reviveError( true, 1 ); // $ExpectError
 	reviveError( false, 1 ); // $ExpectError
@@ -38,7 +38,7 @@ import reviveError = require( './index' );
 	reviveError( ( x: number ): number => x, 1 ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	reviveError(); // $ExpectError
 	reviveError( 'beep' ); // $ExpectError

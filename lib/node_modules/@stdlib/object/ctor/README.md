@@ -315,7 +315,7 @@ Returns a boolean indicating whether an object is in the prototype chain of anot
 ```javascript
 var o = { 'a': 1 };
 var p = { '__proto__': o };
-var b = Object.prototype.isPrototypeOf( p );
+var b = o.isPrototypeOf( p );
 // returns true
 ```
 
@@ -439,7 +439,7 @@ var str = o.toString();
 
 #### Object.prototype.valueOf()
 
-Returns the primitive value of the specified object.
+Returns the primitive value of the object.
 
 ```javascript
 var o = {};

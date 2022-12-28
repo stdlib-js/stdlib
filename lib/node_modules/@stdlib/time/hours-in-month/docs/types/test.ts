@@ -29,7 +29,7 @@ import hoursInMonth = require( './index' );
 	hoursInMonth( new Date() ) ; // $ExpectType number
 }
 
-// The function does not compile if provided arguments of invalid types...
+// The compiler throws an error if the function is provided arguments of invalid types...
 {
 	hoursInMonth( [], 2016 ); // $ExpectError
 	hoursInMonth( {}, 2016 ); // $ExpectError
@@ -45,7 +45,7 @@ import hoursInMonth = require( './index' );
 	hoursInMonth( 2, 'beep' ); // $ExpectError
 }
 
-// The function does not compile if provided more than two arguments...
+// The compiler throws an error if the function is provided more than two arguments...
 {
 	hoursInMonth( 1, 15, 1990 ); // $ExpectError
 }

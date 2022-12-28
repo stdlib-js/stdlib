@@ -1,6 +1,6 @@
 
 {{alias}}( x )
-    Computes the arcsine of a number.
+    Computes the arcsine of a double-precision floating-point number.
 
     If `|x| > 1`, the function returns `NaN`.
 
@@ -18,8 +18,6 @@
     --------
     > var y = {{alias}}( 0.0 )
     0.0
-    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/2.0 )
-    ~1.0
     > y = {{alias}}( -{{alias:@stdlib/constants/float64/pi}}/6.0 )
     ~-0.551
     > y = {{alias}}( NaN )

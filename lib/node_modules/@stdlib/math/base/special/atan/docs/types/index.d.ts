@@ -19,7 +19,7 @@
 // TypeScript Version: 2.0
 
 /**
-* Computes the arctangent of a number.
+* Computes the arctangent of a double-precision floating-point number.
 *
 * @param x - input value
 * @returns arctangent (in radians)

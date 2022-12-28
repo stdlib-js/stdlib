@@ -21,30 +21,44 @@
 include $(TOOLS_MAKE_LIB_DIR)/test-cov/javascript.mk
 
 
-# TARGETS #
+# RULES #
 
-# Run units and generate a test coverage report.
+#/
+# Runs unit tests and generates a test coverage report.
 #
-# This target instruments source code, runs unit tests, and outputs a test coverage report.
-
+# ## Notes
+#
+# -   This command is useful when wanting to glob for test files (e.g., generate a test coverage report for all tests for a particular package).
+#
+# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop running tests upon encountering a test failure
+#
+# @example
+# make test-cov
+#
+# @example
+# make test-cov TESTS_FILTER=".*/blas/base/dasum/.*"
+#/
 test-cov: test-javascript-cov
 
 .PHONY: test-cov
 
-
-# View a test coverage report.
+#/
+# Opens an HTML test coverage report in a local web browser.
 #
-# This target opens an HTML coverage report in a local web browser.
-
+# @example
+# make view-cov
+#/
 view-cov: view-javascript-cov
 
 .PHONY: view-cov
 
-
-# Remove coverage artifacts.
+#/
+# Removes coverage artifacts, such as reports and HTML pages.
 #
-# This target deletes coverage artifacts, such as coverage reports and associated HTML pages.
-
+# @example
+# make clean-cov
+#/
 clean-cov: clean-javascript-cov
 
 .PHONY: clean-cov

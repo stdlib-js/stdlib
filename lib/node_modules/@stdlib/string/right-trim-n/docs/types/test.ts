@@ -27,7 +27,7 @@ import rtrimN = require( './index' );
 	rtrimN( '~~~abc~~~', 3, '~' ); // $ExpectType
 }
 
-// The function does not compile if provided arguments having invalid types...
+// The compiler throws an error if the function is provided arguments having invalid types...
 {
 	rtrimN( true, 6 ); // $ExpectError
 	rtrimN( false, 6 ); // $ExpectError
@@ -50,7 +50,7 @@ import rtrimN = require( './index' );
 	rtrimN( 'abd', 6, /[a-z]/ ); // $ExpectError
 }
 
-// The function does not compile if provided an a third argument which is not a string or an array of strings...
+// The compiler throws an error if the function is provided an a third argument which is not a string or an array of strings...
 {
 	rtrimN( 'abc', 3, true ); // $ExpectError
 	rtrimN( 'abc', 3, false ); // $ExpectError
@@ -60,7 +60,7 @@ import rtrimN = require( './index' );
 	rtrimN( 'abc', 3, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	rtrimN(); // $ExpectError
 	rtrimN( 'abc' ); // $ExpectError

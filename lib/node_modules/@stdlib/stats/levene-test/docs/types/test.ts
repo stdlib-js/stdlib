@@ -34,7 +34,7 @@ import leveneTest = require( './index' );
 	leveneTest( x, y, z, { 'alpha': 0.1 } ); // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is not a numeric array...
+// The compiler throws an error if the function is provided a first argument that is not a numeric array...
 {
 	const y = [ 3.8, 2.7, 4.0, 2.4 ];
 	leveneTest( 'abc', y ); // $ExpectError
@@ -83,7 +83,7 @@ import leveneTest = require( './index' );
 	leveneTest( x, { 'groups': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an insufficient number of arguments...
+// The compiler throws an error if the function is provided an insufficient number of arguments...
 {
 	leveneTest(); // $ExpectError
 }

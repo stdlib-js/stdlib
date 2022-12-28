@@ -36,7 +36,7 @@ limitations under the License.
 var imuldw = require( '@stdlib/math/base/ops/imuldw' );
 ```
 
-#### imuldw( \[out,] a, b )
+#### imuldw( a, b )
 
 Multiplies two signed 32-bit integers and returns an `array` of two signed 32-bit integers which represents the signed 64-bit integer product.
 
@@ -46,6 +46,20 @@ var v = imuldw( 1, 10 );
 
 v = imuldw( 0x80000000|0, 0x40000000|0 ); // -(2^31) * 2^30 = -2305843009213694000 => 32-bit integer overflow
 // returns [ -536870912, 0 ]
+```
+
+#### imuldw.assign( a, b, out, stride, offset )
+
+Multiplies two signed 32-bit integers and assigns results representing the signed 64-bit integer product to a provided output array.
+
+```javascript
+var out = [ 0, 0 ];
+
+var v = imuldw.assign( 1, 10, out, 1, 0 );
+// returns [ 0, 10 ]
+
+var bool = ( v === out );
+// returns true
 ```
 
 </section>

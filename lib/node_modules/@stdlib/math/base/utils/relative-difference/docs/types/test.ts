@@ -29,7 +29,7 @@ import relativeDifference = require( './index' );
 	relativeDifference( 8.0, 2.0, scale ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	relativeDifference( true, 3 ); // $ExpectError
 	relativeDifference( false, 2 ); // $ExpectError
@@ -52,7 +52,7 @@ import relativeDifference = require( './index' );
 	relativeDifference( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not a recognized scale function name or custom scale function...
+// The compiler throws an error if the function is provided a third argument which is not a recognized scale function name or custom scale function...
 {
 	relativeDifference( 2.0, 5.0, 'abc' ); // $ExpectError
 	relativeDifference( 2.0, 5.0, 123 ); // $ExpectError
@@ -63,7 +63,7 @@ import relativeDifference = require( './index' );
 	relativeDifference( 2.0, 5.0, ( wrong: string ): string => wrong ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	relativeDifference(); // $ExpectError
 	relativeDifference( 3 ); // $ExpectError

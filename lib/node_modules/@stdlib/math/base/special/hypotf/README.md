@@ -216,7 +216,7 @@ int main() {
 
 <section class="links">
 
-[hypotenuse]: http://en.wikipedia.org/wiki/Pythagorean_theorem
+[hypotenuse]: https://en.wikipedia.org/wiki/Pythagorean_theorem
 
 <!-- <related-links> -->
 

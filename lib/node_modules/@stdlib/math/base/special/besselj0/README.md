@@ -49,7 +49,7 @@ var j0 = require( '@stdlib/math/base/special/besselj0' );
 
 #### j0( x )
 
-Compute the [Bessel function of the first kind][bessel-first-kind] of order zero at `x`.
+Computes the [Bessel function of the first kind][bessel-first-kind] of order zero at `x`.
 
 ```javascript
 var v = j0( 0.0 );

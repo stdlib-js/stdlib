@@ -26,7 +26,7 @@ import compile = require( './index' );
 	compile( [ 3.0, 2.0, 1.0 ] ); // $ExpectType string
 }
 
-// The function does not compile if provided a first argument which is not an array of numbers...
+// The compiler throws an error if the function is provided a first argument which is not an array of numbers...
 {
 	compile( true ); // $ExpectError
 	compile( false ); // $ExpectError

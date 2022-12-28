@@ -16,49 +16,41 @@
 # limitations under the License.
 #/
 
-# Customize the test machine:
-machine:
-
-  # Environment variables for all build commands:
-  environment:
-    NODE_PATH: "$HOME/$CIRCLE_PROJECT_REPONAME/lib/node_modules"
-
-  # Version of Node.js to use:
-  node:
-    version: 12
-
-
-# Customize the environment after repository checkout:
-checkout:
-  post:
-    - 'git init'
-
-    # Monitor process resource usage:
-    - 'chmod +x ./tools/ci/circle/process_metrics && ./tools/ci/circle/process_metrics':
-        background: true
-
-    # Monitor system resource usage:
-    - 'chmod +x ./tools/ci/circle/system_metrics && ./tools/ci/circle/system_metrics':
-        background: true
-
-
-# Custom environment dependencies:
-dependencies:
-  override:
-    - 'nvm install node && nvm use node && npm update -g npm'
-    - 'make --version'
-    - 'gcc --version'
-    - 'gfortran --version'
-    - 'git --version'
-    - 'node --version'
-    - 'npm --version'
-
-
-# Custom test commands:
-test:
-  override:
-    - 'chmod +x ./tools/ci/circle/script && ./tools/ci/circle/script':
-        parallel: true
-  post:
-    - 'chmod +x ./tools/ci/circle/after_script && ./tools/ci/circle/after_script':
-        parallel: true
+version: 2
+jobs:
+  build:
+    working_directory: ${CIRCLE_WORKING_DIRECTORY}
+    docker:
+      - image: circleci/node:12
+    environment:
+      NODE_PATH: "$HOME/$CIRCLE_PROJECT_REPONAME/lib/node_modules"
+    steps:
+      - checkout
+      - run:
+          name: Customize the environment after repository checkout
+          command: |
+            git init
+            chmod +x ./tools/ci/circle/process_metrics && ./tools/ci/circle/process_metrics
+            chmod +x ./tools/ci/circle/system_metrics && ./tools/ci/circle/system_metrics
+      - run:
+          name: Install dependencies
+          command: |
+            nvm install node
+            nvm use node
+            npm update -g npm
+            make --version
+            gcc --version
+            gfortran --version
+            git --version
+            node --version
+            npm --version
+      - run:
+          name: Run tests
+          command: |
+            chmod +x ./tools/ci/circle/script
+            ./tools/ci/circle/script
+      - run:
+          name: Run after_script
+          command: |
+            chmod +x ./tools/ci/circle/after_script
+            ./tools/ci/circle/after_script

@@ -27,7 +27,7 @@ import isSameKindCast = require( './index' );
 	isSameKindCast( 'float64', 'int32' ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a first argument which is not a string...
+// The compiler throws an error if the function is provided a first argument which is not a string...
 {
 	isSameKindCast( true, 'int32' ); // $ExpectError
 	isSameKindCast( false, 'int32' ); // $ExpectError
@@ -39,7 +39,7 @@ import isSameKindCast = require( './index' );
 	isSameKindCast( ( x: number ): number => x, 'int32' ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not a string...
+// The compiler throws an error if the function is provided a second argument which is not a string...
 {
 	isSameKindCast( 'float64', true ); // $ExpectError
 	isSameKindCast( 'float64', false ); // $ExpectError

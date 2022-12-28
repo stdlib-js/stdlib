@@ -26,7 +26,7 @@ import commonKeys = require( './index' );
 	commonKeys( { 'a': 0, 'b': 1 }, { 'a': 0 } ); // $ExpectType string[]
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	commonKeys(); // $ExpectError
 	commonKeys( {} ); // $ExpectError

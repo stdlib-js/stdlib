@@ -30,7 +30,7 @@ import chi2gof = require( './index' );
 	chi2gof( x, 'discrete-uniform', 0, 99 ); // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is not a numeric array or ndarray...
+// The compiler throws an error if the function is provided a first argument that is not a numeric array or ndarray...
 {
 	const p = [ 0.40, 0.20, 0.20, 0.15, 0.05 ];
 	chi2gof( 'abc', p ); // $ExpectError
@@ -52,7 +52,7 @@ import chi2gof = require( './index' );
 	chi2gof( ( x: number ): number => x, 'discrete-uniform', 0, 99 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a numeric array, ndarray, or string...
+// The compiler throws an error if the function is provided a second argument that is not a numeric array, ndarray, or string...
 {
 	const x = [ 89, 37, 30, 28, 2 ];
 	chi2gof( x, true ); // $ExpectError
@@ -127,7 +127,7 @@ import chi2gof = require( './index' );
 	chi2gof( x, p, { 'simulate': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an insufficient number of arguments...
+// The compiler throws an error if the function is provided an insufficient number of arguments...
 {
 	const x = [ 89, 37, 30, 28, 2 ];
 	chi2gof(); // $ExpectError

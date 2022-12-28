@@ -39,7 +39,7 @@ var ns = string;
 // returns {...}
 ```
 
-The namespace has the following sub-namespaces:
+The namespace contains the following functions:
 
 <!-- <toc pattern="*"> -->
 

@@ -80,7 +80,7 @@ console.log( INT32_MAX );
 
 <section class="links">
 
-[max-int32]: http://en.wikipedia.org/wiki/2147483647
+[max-int32]: https://en.wikipedia.org/wiki/2147483647
 
 <!-- <related-links> -->
 

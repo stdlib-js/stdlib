@@ -26,7 +26,7 @@ import setLowWord = require( './index' );
 	setLowWord( 3.14e201, 5 >>> 0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a first argument that is not a number...
+// The compiler throws an error if the function is provided a first argument that is not a number...
 {
 	setLowWord( 'abc', 5 >>> 0 ); // $ExpectError
 	setLowWord( true, 5 >>> 0 ); // $ExpectError
@@ -36,7 +36,7 @@ import setLowWord = require( './index' );
 	setLowWord( ( x: number ): number => x, 5 >>> 0 ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not a number...
+// The compiler throws an error if the function is provided a second argument that is not a number...
 {
 	setLowWord( 3.14e201, 'abc' ); // $ExpectError
 	setLowWord( 3.14e201, true ); // $ExpectError
@@ -46,7 +46,7 @@ import setLowWord = require( './index' );
 	setLowWord( 3.14e201, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	setLowWord(); // $ExpectError
 	setLowWord( 3.14e201 ); // $ExpectError

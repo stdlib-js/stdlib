@@ -18,12 +18,12 @@
 
 /* tslint:disable:no-unused-expression */
 
-import triangular = require( './index' );
+import ns = require( './index' );
 
 
 // TESTS //
 
 // The exported value is the expected interface...
 {
-	triangular; // $ExpectType Namespace
+	ns; // $ExpectType Namespace
 }

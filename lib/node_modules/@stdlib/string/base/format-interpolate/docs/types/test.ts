@@ -27,7 +27,7 @@ import formatInterpolate = require( './index' );
 	formatInterpolate( [] ); // $ExpectType string
 }
 
-// The function does not compile if provided a first argument other than an array...
+// The compiler throws an error if the function is provided a first argument other than an array...
 {
 	formatInterpolate( 'abc' ); // $ExpectError
 	formatInterpolate( true ); // $ExpectError
@@ -39,7 +39,7 @@ import formatInterpolate = require( './index' );
 	formatInterpolate( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	formatInterpolate(); // $ExpectError
 }

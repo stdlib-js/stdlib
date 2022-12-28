@@ -26,7 +26,7 @@ import variance = require( './index' );
 	variance( 0.3 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	variance( true ); // $ExpectError
 	variance( false ); // $ExpectError
@@ -38,7 +38,7 @@ import variance = require( './index' );
 	variance( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	variance(); // $ExpectError
 }

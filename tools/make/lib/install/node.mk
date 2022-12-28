@@ -35,7 +35,7 @@ include $(TOOLS_MAKE_LIB_DIR)/install/modules.mk
 # @example
 # make install-node
 #/
-install-node: install-node-modules install-node-addons
+install-node: install-node-modules
 
 .PHONY: install-node
 
@@ -49,6 +49,6 @@ install-node: install-node-modules install-node-addons
 # @example
 # make clean-node
 #/
-clean-node: clean-node-addons clean-node-modules
+clean-node: clean-node-modules
 
 .PHONY: clean-node

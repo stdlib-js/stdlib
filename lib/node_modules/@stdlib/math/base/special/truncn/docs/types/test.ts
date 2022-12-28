@@ -26,7 +26,7 @@ import truncn = require( './index' );
 	truncn( 3.141592653589793, -4 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	truncn( true, 3 ); // $ExpectError
 	truncn( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import truncn = require( './index' );
 	truncn( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	truncn(); // $ExpectError
 	truncn( 3 ); // $ExpectError

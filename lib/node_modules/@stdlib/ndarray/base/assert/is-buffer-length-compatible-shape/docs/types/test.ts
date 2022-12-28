@@ -27,7 +27,7 @@ import isBufferLengthCompatibleShape = require( './index' );
 	isBufferLengthCompatibleShape( 3, [ 2, 2 ] ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	const shape = [ 2, 2 ];
 	isBufferLengthCompatibleShape( true, shape ); // $ExpectError
@@ -40,7 +40,7 @@ import isBufferLengthCompatibleShape = require( './index' );
 	isBufferLengthCompatibleShape( ( x: number ): number => x, shape ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a second argument which is not an array-like object containing numbers...
 {
 	isBufferLengthCompatibleShape( 4, true ); // $ExpectError
 	isBufferLengthCompatibleShape( 4, false ); // $ExpectError
@@ -52,7 +52,7 @@ import isBufferLengthCompatibleShape = require( './index' );
 	isBufferLengthCompatibleShape( 4, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	isBufferLengthCompatibleShape(); // $ExpectError
 	isBufferLengthCompatibleShape( 4 ); // $ExpectError

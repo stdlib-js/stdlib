@@ -27,7 +27,7 @@ import isInfinitef = require( './index' );
 	isInfinitef( 3 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	isInfinitef( true ); // $ExpectError
 	isInfinitef( false ); // $ExpectError

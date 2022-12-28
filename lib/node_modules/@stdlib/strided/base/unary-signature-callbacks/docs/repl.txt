@@ -1,0 +1,43 @@
+
+{{alias}}( table, signatures )
+    Assigns callbacks to unary interfaces according to type promotion rules.
+
+    Parameters
+    ----------
+    table: Object
+        Object mapping callbacks to data types.
+
+    table.default: Function
+        Default callback.
+
+    table.complex64: Function
+        Callback to be invoked when input arrays promote to single-precision
+        complex floating-point numbers.
+
+    table.complex128: Function
+        Callback to be invoked when input arrays promote to double precision
+        complex floating-point numbers.
+
+    signatures: ArrayLike<any>
+        Strided array containing unary interface signatures.
+
+    Returns
+    -------
+    out: Array<Function>
+        List of callbacks, one per signature.
+
+    Examples
+    --------
+    > var dt = {{alias:@stdlib/strided/dtypes}}();
+    > var sigs = {{alias:@stdlib/strided/base/unary-dtype-signatures}}( dt, dt );
+    > var t = {
+    ...     'default': {{alias:@stdlib/math/base/special/identity}},
+    ...     'complex64': {{alias:@stdlib/math/base/special/cidentityf}},
+    ...     'complex128': {{alias:@stdlib/math/base/special/cidentity}}
+    ... };
+    > var out = {{alias}}( t, sigs )
+    [...]
+
+    See Also
+    --------
+

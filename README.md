@@ -601,6 +601,10 @@ Does your organization or company use stdlib? If so, we'd love to hear from you!
 
 * * *
 
+## Governance
+
+For information about the governance of the stdlib project, see [GOVERNANCE.md][stdlib-governance].
+
 ## License
 
 See [LICENSE][stdlib-license].
@@ -770,6 +774,8 @@ Test and build infrastructure is generously provided by the following services:
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stdlib/develop/LICENSE
+
+[stdlib-governance]: https://raw.githubusercontent.com/stdlib-js/stdlib/develop/GOVERNANCE.md
 
 [stdlib-homepage]: https://stdlib.io
 

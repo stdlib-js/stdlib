@@ -47,7 +47,7 @@ import indexOf = require( './index' );
 	indexOf( arr, 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const arr = [ 1, 2, 3, 4, 5, 2, 6 ];
 	indexOf(); // $ExpectError

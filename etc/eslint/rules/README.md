@@ -24,7 +24,7 @@ This directory contains configurations for [ESLint][eslint] rules.
 
 <section class="links">
 
-[eslint]: http://eslint.org/
+[eslint]: https://eslint.org/
 
 </section>
 

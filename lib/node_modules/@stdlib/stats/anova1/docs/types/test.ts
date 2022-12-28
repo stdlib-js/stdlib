@@ -29,7 +29,7 @@ import anova1 = require( './index' );
 	anova1( x, f, { 'alpha': 0.1 } ); // $ExpectType Results
 }
 
-// The function does not compile if provided a first argument that is not a numeric array...
+// The compiler throws an error if the function is provided a first argument that is not a numeric array...
 {
 	const f = [ 'D', 'A', 'B', 'C', 'D', 'A', 'B', 'C', 'D', 'A', 'B', 'C' ];
 	anova1( 'abc', f ); // $ExpectError
@@ -42,7 +42,7 @@ import anova1 = require( './index' );
 	anova1( ( x: number ): number => x, f ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument that is not an array...
+// The compiler throws an error if the function is provided a second argument that is not an array...
 {
 	const x = [ 1, 3, 5, 2, 4, 6, 8, 7, 10, 11, 12, 15 ];
 	anova1( x, 'abc' ); // $ExpectError
@@ -81,7 +81,7 @@ import anova1 = require( './index' );
 	anova1( x, f, { 'alpha': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const x = [ 1, 3, 5, 2, 4, 6, 8, 7, 10, 11, 12, 15 ];
 	const f = [ 'D', 'A', 'B', 'C', 'D', 'A', 'B', 'C', 'D', 'A', 'B', 'C' ];

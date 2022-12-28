@@ -29,7 +29,7 @@ import ranks = require( './index' );
 	ranks( [ 1.1, 2.0, 3.5, 0.0, 2.4 ], { 'method': 'min' } ); // $ExpectType number[]
 }
 
-// The function does not compile if provided a value other than a collection...
+// The compiler throws an error if the function is provided a value other than a collection...
 {
 	ranks( true ); // $ExpectError
 	ranks( false ); // $ExpectError
@@ -88,7 +88,7 @@ import ranks = require( './index' );
 	ranks( arr, { 'encoding': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const arr = [ 1.1, 2.0, 3.5, 0.0, 2.4 ] ;
 	ranks(); // $ExpectError

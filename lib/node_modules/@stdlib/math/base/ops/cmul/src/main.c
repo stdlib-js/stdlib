@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/math/base/ops/cmul.h"
-#include <complex.h>
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
 
 /**
 * Multiplies two double-precision complex floating-point numbers.
@@ -27,14 +28,34 @@
 * @return         result
 *
 * @example
-* #include <complex.h>
+* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/real.h"
+* #include "stdlib/complex/imag.h"
 *
-* double complex z1 = 5.0 + 3.0*I;
-* double complex z2 = -2.0 + 1.0*I;
+* stdlib_complex128_t z1 = stdlib_complex128( 5.0, 3.0 );
+* stdlib_complex128_t z2 = stdlib_complex128( -2.0, 1.0 );
 *
-* double complex out = stdlib_base_cmul( z1, z2 );
-* // returns -13.0-1.0*I
+* stdlib_complex128_t out = stdlib_base_cmul( z1, z2 );
+*
+* double re = stdlib_real( out );
+* // returns -13.0
+*
+* double im = stdlib_imag( out );
+* // returns -1.0
 */
-double complex stdlib_base_cmul( const double complex z1, const double complex z2 ) {
-	return z1 * z2;
+stdlib_complex128_t stdlib_base_cmul( const stdlib_complex128_t z1, const stdlib_complex128_t z2 ) {
+	double re1;
+	double re2;
+	double im1;
+	double im2;
+	double re;
+	double im;
+
+	stdlib_reim( z1, &re1, &im1 );
+	stdlib_reim( z2, &re2, &im2 );
+
+	re = (re1*re2) - (im1*im2);
+	im = (re1*im2) + (im1*re2);
+
+	return stdlib_complex128( re, im );
 }

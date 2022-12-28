@@ -26,7 +26,7 @@ import roundb = require( './index' );
 	roundb( 3.141592653589793, -4, 10 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than three numbers...
+// The compiler throws an error if the function is provided values other than three numbers...
 {
 	roundb( true, 3, 2 ); // $ExpectError
 	roundb( false, 2, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import roundb = require( './index' );
 	roundb( 9.343, 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	roundb(); // $ExpectError
 	roundb( 3 ); // $ExpectError

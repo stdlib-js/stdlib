@@ -1,0 +1,279 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to deprecate packages on npm and GitHub.
+#
+# Usage: deprecate_packages pkg1 [pkg2 pkg3 ...]
+#
+# Arguments:
+#
+#   pkg1        Package name.
+#   pkg2        Package name.
+#   pkg3        Package name.
+#
+#
+# Environment variables:
+#
+#   NPM_TOKEN      Authentication token.
+#   GITHUB_TOKEN   Authentication token.
+#   GITHUB_USER    GitHub username.
+#   MSG            Deprecation message.
+#   LOG_FILE       Log file.
+#
+
+# shellcheck disable=SC2181,SC2153,SC2129
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Get the list of packages to deprecate:
+pkgs="$*"
+
+# Get the deprecation message (convert `@stdlib` package names in deprecation messages into hyperlinks):
+deprecation_message="${MSG:-'Package no longer supported.'}"
+
+# shellcheck disable=SC2016
+deprecation_message=$(echo "${deprecation_message}" | sed -e 's/`\?@stdlib\/\([^ `]*\)`\?/[@stdlib\/\1](https:\/\/github.com\/stdlib-js\/\1)/g')
+
+# Get the npm authentication token:
+npm_token="${NPM_TOKEN}"
+
+# Get the GitHub authentication token:
+github_token="${GITHUB_TOKEN}"
+
+# Get the GitHub username:
+github_user="${GITHUB_USER}"
+
+# Get the path to a log file as the third argument to the build script:
+log_file="${LOG_FILE}"
+
+# Define a heartbeat interval to periodically print messages in order to prevent CI from prematurely ending a build due to long running commands:
+heartbeat_interval='30s'
+
+# Declare a variable for storing the heartbeat process id:
+heartbeat_pid=""
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	stop_heartbeat
+}
+
+# Starts a heartbeat.
+#
+# $1 - heartbeat interval
+start_heartbeat() {
+	echo 'Starting heartbeat...' >&2
+
+	# Create a heartbeat and send to background:
+	heartbeat "$1" &
+
+	# Capture the heartbeat pid:
+	heartbeat_pid=$!
+	echo "Heartbeat pid: ${heartbeat_pid}" >&2
+}
+
+# Runs an infinite print loop.
+#
+# $1 - heartbeat interval
+heartbeat() {
+	while true; do
+		echo "$(date) - heartbeat..." >&2;
+		sleep "$1";
+	done
+}
+
+# Stops the heartbeat print loop.
+stop_heartbeat() {
+	echo 'Stopping heartbeat...' >&2
+	kill "${heartbeat_pid}"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Configures npm.
+#
+# $1 - npm authentication token
+# $2 - log file
+configure_npm() {
+	echo 'Configuring npm...' >> "$2" 2>&1
+
+	# Create a configuration file to allow authenticating with npm:
+	echo "//registry.npmjs.org/:_authToken=$1" > .npmrc
+
+	echo 'Successfully configured npm.' >> "$2" 2>&1
+	return 0
+}
+
+# Configures Git.
+#
+# $1 - log file
+configure_git() {
+	echo 'Configuring Git...' >> "$1" 2>&1
+	git config --local user.email "noreply@stdlib.io"
+	git config --local user.name "stdlib-bot"
+	echo 'Successfully configured Git.' >> "$1" 2>&1
+	return 0
+}
+
+# Normalizes a package name.
+#
+# $1 - package name
+normalize_package_name() {
+	local pkg
+
+	# Remove leading `@stdlib/` and convert to a standalone packge name:
+	pkg=$(echo "$1" | sed 's/^@stdlib\///' | sed -e 's/\//-/g')
+
+	echo "${pkg}"
+}
+
+# Deprecates a package on npm.
+#
+# $1 - package name
+# $2 - deprecation message
+# $3 - log file
+npm_deprecate() {
+	echo "Deprecating package: $1..." >> "$3" 2>&1
+	npm deprecate "$1" "$2" >> "$3" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when deprecating package." >> "$3" 2>&1
+		return 1
+	fi
+	echo "Successfully deprecated package." >> "$3" 2>&1
+	return 0
+}
+
+# Deprecates a package on GitHub.
+#
+# $1 - repo slug
+# $2 - deprecation message
+# $3 - GitHub username
+# $4 - GitHub authentication token
+# $5 - log file
+github_deprecate() {
+	echo "Deprecating repository: $1..." >> "$5" 2>&1
+
+	echo "Cloning repository..." >> "$5" 2>&1
+	git clone "https://github.com/$1" "deprecate_repo_dir" >> "$5" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when cloning repository." >> "$5" 2>&1
+		return 1
+	fi
+	echo "Successfully cloned repository." >> "$5" 2>&1
+
+	# Navigate to the repository directory:
+	cd "deprecate_repo_dir" || return 1
+
+	# Configure Git for the repository:
+	configure_git "$5"
+
+	echo "Updating repository README..." >> "$5" 2>&1
+
+	# Add deprecation notice to the beginning of the repository's README:
+	sed -i "1 i\## Attention\n\n:warning: **$2** :warning:\n\n<br>\n\n* * *\n" README.md
+
+	# Commit the changes:
+	git add README.md && git commit -m "Deprecate package" >> "$5" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when updating repository README." >> "$5" 2>&1
+		return 1
+	fi
+	# Push the changes:
+	git push "https://$3:$4@github.com/$1.git" main >> "$5" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when updating repository README." >> "$5" 2>&1
+		return 1
+	fi
+	echo "Successfully updated repository README." >> "$5" 2>&1
+
+	echo "Archiving repository..." >> "$5" 2>&1
+
+	# Archive the repository on GitHub:
+	curl -u "$3:$4" -X PATCH -H 'Accept: application/vnd.github.v3+json' "https://api.github.com/repos/$1" -d '{"archived":"true"}' >> "$5" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when archiving repository." >> "$5" 2>&1
+		return 1
+	fi
+	echo "Successfully archived repository." >> "$5" 2>&1
+
+	# Return to parent directory:
+	cd .. || return 1
+
+	# Remove the cloned repository:
+	rm -rf "./deprecate_repo_dir"
+
+	echo "Successfully deprecated repository." >> "$5" 2>&1
+	return 0
+}
+
+# Main execution sequence.
+main() {
+	start_heartbeat "${heartbeat_interval}"
+
+	# Configure npm:
+	configure_npm "${npm_token}" "${log_file}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	# Deprecate packages...
+	for pkg in $pkgs; do
+		# Normalize the package name to allow for both npm and GitHub deprecation:
+		pkg=$(normalize_package_name "${pkg}")
+
+		# Deprecate the package on npm:
+		npm_deprecate "@stdlib/${pkg}" "${deprecation_message}" "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+
+		# Deprecate the package on GitHub:
+		github_deprecate "stdlib-js/${pkg}" "${deprecation_message}" "${github_user}" "${github_token}" "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	done
+
+	cleanup
+	print_success
+	exit 0
+}
+
+# Set an error handler to print captured output and perform any clean-up tasks:
+trap 'on_error' ERR
+
+# Run main:
+main

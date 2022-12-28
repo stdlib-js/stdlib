@@ -27,7 +27,7 @@ import betainc = require( './index' );
 	betainc( 0.5, 1.5, 1.5, true ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than three numbers for the first three parameters...
+// The compiler throws an error if the function is provided values other than three numbers for the first three parameters...
 {
 	betainc( true, 3, 2 ); // $ExpectError
 	betainc( false, 2, 2 ); // $ExpectError
@@ -50,7 +50,7 @@ import betainc = require( './index' );
 	betainc( 9.343, 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than a boolean as the fourth argument...
+// The compiler throws an error if the function is provided a value other than a boolean as the fourth argument...
 {
 	betainc( 0.5, 1.5, 1.5, '5' ); // $ExpectError
 	betainc( 0.5, 1.5, 1.5, 123 ); // $ExpectError
@@ -59,7 +59,7 @@ import betainc = require( './index' );
 	betainc( 0.5, 1.5, 1.5, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than a boolean as the fifth argument...
+// The compiler throws an error if the function is provided a value other than a boolean as the fifth argument...
 {
 	betainc( 0.5, 1.5, 1.5, true, '5' ); // $ExpectError
 	betainc( 0.5, 1.5, 1.5, true, 123 ); // $ExpectError
@@ -68,7 +68,7 @@ import betainc = require( './index' );
 	betainc( 0.5, 1.5, 1.5, true, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	betainc(); // $ExpectError
 	betainc( 3 ); // $ExpectError

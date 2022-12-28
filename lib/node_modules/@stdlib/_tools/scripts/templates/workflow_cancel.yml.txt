@@ -44,7 +44,7 @@ jobs:
 
       # Cancel existing workflow runs:
       - name: 'Cancel existing workflow runs'
-        uses: styfle/cancel-workflow-action@0.9.0
+        uses: styfle/cancel-workflow-action@0.11.0
         with:
           workflow_id: >-
             benchmark.yml,

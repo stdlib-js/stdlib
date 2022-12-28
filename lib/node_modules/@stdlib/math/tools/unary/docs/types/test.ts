@@ -156,7 +156,7 @@ function stridedArrayFunctionWithOffsets( N: number, x: ArrayLike<number>, strid
 	dispatch( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a table resolution object having an invalid `scalar` field...
+// The compiler throws an error if the function is provided a table resolution object having an invalid `scalar` field...
 {
 	dispatch( { 'scalar': 5 } ); // $ExpectError
 	dispatch( { 'scalar': true } ); // $ExpectError
@@ -168,7 +168,7 @@ function stridedArrayFunctionWithOffsets( N: number, x: ArrayLike<number>, strid
 	dispatch( { 'scalar': [ '5', ( x: string ): string => x ] } ); // $ExpectError
 }
 
-// The function does not compile if provided a table resolution object having an invalid `array` field...
+// The compiler throws an error if the function is provided a table resolution object having an invalid `array` field...
 {
 	dispatch( { 'array': 5 } ); // $ExpectError
 	dispatch( { 'array': true } ); // $ExpectError
@@ -180,7 +180,7 @@ function stridedArrayFunctionWithOffsets( N: number, x: ArrayLike<number>, strid
 	dispatch( { 'array': [ '5', ( x: string ): string => x ] } ); // $ExpectError
 }
 
-// The function does not compile if provided a table resolution object having an invalid `ndarray` field...
+// The compiler throws an error if the function is provided a table resolution object having an invalid `ndarray` field...
 {
 	dispatch( { 'ndarray': 5 } ); // $ExpectError
 	dispatch( { 'ndarray': true } ); // $ExpectError

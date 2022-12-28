@@ -23,87 +23,60 @@
 import { Collection } from '@stdlib/types/object';
 
 /**
-* Returns an accessed value.
+* Returns the accessed value.
 *
 * @returns accessed value
 */
 type NullaryCallback = () => any;
 
 /**
-* Returns an accessed value.
+* Returns the accessed value.
 *
-* @param value - array element
+* @param values - array element value
 * @returns accessed value
 */
-type UnaryCallback = ( value: any ) => any;
+type UnaryCallback = ( values: any ) => any;
 
 /**
-* Returns an accessed value.
+* Returns the accessed value.
 *
-* @param value - array element
+* @param values - array element value
 * @param idx - iteration index
 * @returns accessed value
 */
-type BinaryCallback = ( value: any, idx: number ) => any;
+type BinaryCallback = ( values: any, idx: number ) => any;
 
 /**
-* Returns an accessed value.
+* Returns the accessed value.
 *
-* @param value - array element
+* @param values - array element value
 * @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
+* @param indices - strided indices (offset + idx*stride)
 * @returns accessed value
 */
-type TernaryCallback = ( value: any, idx: number, ix: number ) => any;
+type TernaryCallback = ( values: any, idx: number, indices: Array<number> ) => any; // tslint-disable-line max-line-length
 
 /**
-* Returns an accessed value.
+* Returns the accessed value.
 *
-* @param value - array element
+* @param values - array element value
 * @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @param iy - strided index (offsetY + idx*strideY)
+* @param indices - strided indices (offset + idx*stride)
+* @param arrays - input and output arrays
 * @returns accessed value
 */
-type QuaternaryCallback = ( value: any, idx: number, ix: number, iy: number ) => any; // tslint-disable-line max-line-length
+type QuaternaryCallback = ( values: any, idx: number, indices: Array<number>, arrays: Array<Collection> ) => any; // tslint-disable-line max-line-length
 
 /**
-* Returns an accessed value.
+* Returns the accessed value.
 *
-* @param value - array element
+* @param values - array element value
 * @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @param iy - strided index (offsetY + idx*strideY)
-* @param x - input array
+* @param indices - strided indices (offset + idx*stride)
+* @param arrays - input and output arrays
 * @returns accessed value
 */
-type QuinaryCallback = ( value: any, idx: number, ix: number, iy: number, x: Collection ) => any; // tslint-disable-line max-line-length
-
-/**
-* Returns an accessed value.
-*
-* @param value - array element
-* @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @param iy - strided index (offsetY + idx*strideY)
-* @param x - input array
-* @param y - output array
-* @returns accessed value
-*/
-type SenaryCallback = ( value: any, idx: number, ix: number, iy: number, x: Collection, y: Collection ) => any; // tslint-disable-line max-line-length
-
-/**
-* Returns an accessed value.
-*
-* @param value - array element
-* @param idx - iteration index
-* @param ix - strided index (offsetX + idx*strideX)
-* @param iy - strided index (offsetY + idx*strideY)
-* @param x - input array
-* @param y - output array
-* @returns accessed value
-*/
-type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TernaryCallback | QuaternaryCallback | QuinaryCallback | SenaryCallback; // tslint-disable-line max-line-length
+type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TernaryCallback | QuaternaryCallback; // tslint-disable-line max-line-length
 
 /**
 * Callback invoked for each indexed strided array element retrieved via a callback function.

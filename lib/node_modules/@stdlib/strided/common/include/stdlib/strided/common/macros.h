@@ -23,7 +23,6 @@
 #define STDLIB_STRIDED_COMMON_MACROS_H
 
 // Note: keep in alphabetical order...
-#include "nullary_macros.h"
 #include "quaternary_macros.h"
 #include "quinary_macros.h"
 #include "ternary_macros.h"

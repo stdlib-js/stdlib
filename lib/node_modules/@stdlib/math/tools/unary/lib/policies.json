@@ -1,4 +1,6 @@
 [
 	"same",
-	"float"
+	"floating-point",
+  "real floating-point",
+  "complex floating-point"
 ]

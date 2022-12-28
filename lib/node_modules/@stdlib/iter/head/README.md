@@ -94,19 +94,16 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 var randu = require( '@stdlib/random/iter/randu' );
 var iterHead = require( '@stdlib/iter/head' );
 
-var rand;
-var it;
-var r;
-
 // Create a seeded iterator for generating pseudorandom numbers:
-rand = randu({
+var rand = randu({
     'seed': 1234
 });
 
 // Create an iterator which returns the first 10 generated numbers:
-it = iterHead( rand, 10 );
+var it = iterHead( rand, 10 );
 
 // Perform manual iteration...
+var r;
 while ( true ) {
     r = it.next();
     if ( r.done ) {

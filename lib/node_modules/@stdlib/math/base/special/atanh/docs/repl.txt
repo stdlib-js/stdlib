@@ -1,6 +1,7 @@
 
 {{alias}}( x )
-    Computes the hyperbolic arctangent of a number.
+    Computes the hyperbolic arctangent of a double-precision floating-point
+    number.
 
     If `|x| > 1`, the function returns `NaN`.
 

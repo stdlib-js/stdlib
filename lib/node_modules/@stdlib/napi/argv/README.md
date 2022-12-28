@@ -1,0 +1,204 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# argv
+
+> C utilities for retrieving Node-API add-on callback arguments.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var headerDir = require( '@stdlib/assert/napi/equal-types' );
+```
+
+#### headerDir
+
+Absolute file path for the directory containing header files for C APIs.
+
+```javascript
+var dir = headerDir;
+// returns <string>
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+```javascript
+var headerDir = require( '@stdlib/assert/napi/equal-types' );
+
+console.log( headerDir );
+// => <string>
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/napi/argv.h"
+```
+
+#### STDLIB_NAPI_ARGV( env, info, argv, argc, nargs )
+
+Macro for retrieving add-on callback arguments.
+
+```c
+#include <node_api.h>
+
+// ...
+
+static napi_value addon( napi_env env, napi_callback_info info ) {
+    // Retrieve callback arguments:
+    STDLIB_NAPI_ARGV( env, info, argv, argc, 6 );
+
+    // ...
+}
+```
+
+The macro expects the following arguments:
+
+-   **env**: environment under which the callback is invoked.
+-   **info**: callback data.
+-   **argv**: variable name for storing argument values.
+-   **argc**: variable name for storing the number of provided arguments.
+-   **nargs**: expected number of arguments.
+
+If the number of provided arguments does **not** equal the expected number of arguments, the macro's generated code raises an exception.
+
+#### STDLIB_NAPI_ARGV_INDEX2ORDINAL( index )
+
+Macro for converting an index to an ordinal numeral.
+
+```c
+STDLIB_NAPI_ARGV_INDEX2ORDINAL( 2 )
+```
+
+The macro expects the following arguments:
+
+-   **index**: argument index value.
+
+The first few ordinal numerals are as follows:
+
+-   `STDLIB_NAPI_ARGV_INDEX2ORDINAL( 0 )`: "First".
+-   `STDLIB_NAPI_ARGV_INDEX2ORDINAL( 1 )`: "Second".
+-   `STDLIB_NAPI_ARGV_INDEX2ORDINAL( 2 )`: "Third".
+-   `STDLIB_NAPI_ARGV_INDEX2ORDINAL( 3 )`: "Fourth".
+-   `STDLIB_NAPI_ARGV_INDEX2ORDINAL( 4 )`: "Fifth".
+-   ...
+-   `STDLIB_NAPI_ARGV_INDEX2ORDINAL( 29 )`: "Thirtieth".
+
+This macro can be useful when generating error messages which state which argument is invalid (e.g., "invalid argument. **First** argument must be a number." ).
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

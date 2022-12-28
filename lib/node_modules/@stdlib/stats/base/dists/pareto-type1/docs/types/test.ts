@@ -18,12 +18,12 @@
 
 /* tslint:disable:no-unused-expression */
 
-import paretoType1 = require( './index' );
+import ns = require( './index' );
 
 
 // TESTS //
 
 // The exported value is the expected interface...
 {
-	paretoType1; // $ExpectType Namespace
+	ns; // $ExpectType Namespace
 }

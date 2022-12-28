@@ -26,7 +26,7 @@ import compile = require( './index' );
 	compile( [ -6.0, -5.0 ], [ 3.0, 0.5 ] ); // $ExpectType string
 }
 
-// The function does not compile if provided a first argument which is not an array of numbers...
+// The compiler throws an error if the function is provided a first argument which is not an array of numbers...
 {
 	const Q = [ 3.0, 0.5 ];
 	compile( true, Q ); // $ExpectError
@@ -37,7 +37,7 @@ import compile = require( './index' );
 	compile( ( x: number ): number => x, Q ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not an array of numbers...
+// The compiler throws an error if the function is provided a second argument which is not an array of numbers...
 {
 	const P = [ -6.0, -5.0 ];
 	compile( P, true ); // $ExpectError

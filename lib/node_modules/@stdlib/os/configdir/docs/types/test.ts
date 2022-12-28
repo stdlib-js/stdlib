@@ -27,7 +27,7 @@ import configdir = require( './index' );
 	configdir( 'appname/config' ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	configdir( true ); // $ExpectError
 	configdir( false ); // $ExpectError
@@ -37,7 +37,7 @@ import configdir = require( './index' );
 	configdir( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided more than one argument...
+// The compiler throws an error if the function is provided more than one argument...
 {
 	configdir( 'appname/config', 2 ); // $ExpectError
 }

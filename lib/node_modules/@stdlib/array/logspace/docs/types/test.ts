@@ -27,7 +27,7 @@ import logspace = require( './index' );
 	logspace( 0, 10 ); // $ExpectType number[]
 }
 
-// The function does not compile if provided values other than two numbers for the first two parameters...
+// The compiler throws an error if the function is provided values other than two numbers for the first two parameters...
 {
 	logspace( true, 10 ); // $ExpectError
 	logspace( false, 10 ); // $ExpectError
@@ -44,7 +44,7 @@ import logspace = require( './index' );
 	logspace( 8, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than a number for the third parameter...
+// The compiler throws an error if the function is provided a value other than a number for the third parameter...
 {
 	logspace( 3, 20, true ); // $ExpectError
 	logspace( 4, 20, false ); // $ExpectError
@@ -53,7 +53,7 @@ import logspace = require( './index' );
 	logspace( 9, 20, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	logspace(); // $ExpectError
 	logspace( 3 ); // $ExpectError

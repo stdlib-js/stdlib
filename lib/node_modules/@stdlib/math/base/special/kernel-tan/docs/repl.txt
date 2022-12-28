@@ -1,6 +1,7 @@
 
 {{alias}}( x, y, k )
-    Computes the tangent of a number on `[-π/4, π/4]`.
+    Computes the tangent of a double-precision floating-point number on the
+    interval [-π/4, π/4].
 
     For increased accuracy, the number for which the tangent should be evaluated
     can be supplied as a double-double number (i.e., a non-evaluated sum of two

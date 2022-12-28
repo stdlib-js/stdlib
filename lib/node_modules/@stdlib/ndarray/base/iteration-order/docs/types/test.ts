@@ -26,7 +26,7 @@ import iterationOrder = require( './index' );
 	iterationOrder( [ 2, 1 ] ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than an array-like object containing numbers...
+// The compiler throws an error if the function is provided a value other than an array-like object containing numbers...
 {
 	iterationOrder( true ); // $ExpectError
 	iterationOrder( false ); // $ExpectError
@@ -38,7 +38,7 @@ import iterationOrder = require( './index' );
 	iterationOrder( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	iterationOrder(); // $ExpectError
 }

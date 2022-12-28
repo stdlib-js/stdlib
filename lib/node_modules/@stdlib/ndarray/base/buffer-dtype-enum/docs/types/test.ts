@@ -27,7 +27,7 @@ import dtypeEnum = require( './index' );
 	dtypeEnum( 'beep' ); // $ExpectType number | null
 }
 
-// The function does not compile if provided an argument which is not a collection...
+// The compiler throws an error if the function is provided an argument which is not a collection...
 {
 	dtypeEnum( 2 ); // $ExpectError
 	dtypeEnum( false ); // $ExpectError

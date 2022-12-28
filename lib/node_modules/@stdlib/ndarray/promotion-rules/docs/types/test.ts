@@ -29,7 +29,7 @@ import promotionRules = require( './index' );
 	promotionRules( 'float32', 'foo' ); // $ExpectType string | number | null
 }
 
-// The function does not compile if provided more than one argument...
+// The compiler throws an error if the function is provided more than one argument...
 {
 	promotionRules( 'float32' ); // $ExpectError
 	promotionRules( 'float32', 'int32', {} ); // $ExpectError

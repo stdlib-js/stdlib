@@ -26,7 +26,7 @@ import log = require( './index' );
 	log( 8, 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	log( true, 3 ); // $ExpectError
 	log( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import log = require( './index' );
 	log( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	log(); // $ExpectError
 	log( 3 ); // $ExpectError

@@ -26,7 +26,7 @@ import isContiguous = require( './index' );
 	isContiguous( [ 10, 10 ], [ 10, 1 ], 10 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a first argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a first argument which is not an array-like object containing numbers...
 {
 	const strides = [ 10, 1 ];
 	const offset = 10;
@@ -40,7 +40,7 @@ import isContiguous = require( './index' );
 	isContiguous( ( x: number ): number => x, strides, offset ); // $ExpectError
 }
 
-// The function does not compile if provided a second argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a second argument which is not an array-like object containing numbers...
 {
 	const shape = [ 10, 10 ];
 	const offset = 10;
@@ -54,7 +54,7 @@ import isContiguous = require( './index' );
 	isContiguous( shape, ( x: number ): number => x, offset ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not a number...
+// The compiler throws an error if the function is provided a third argument which is not a number...
 {
 	const shape = [ 10, 10 ];
 	const strides = [ 10, 1 ];
@@ -68,7 +68,7 @@ import isContiguous = require( './index' );
 	isContiguous( shape, strides, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	isContiguous(); // $ExpectError
 	isContiguous( [ 10, 10 ] ); // $ExpectError

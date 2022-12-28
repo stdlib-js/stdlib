@@ -1,6 +1,6 @@
 
 {{alias}}( x )
-    Computes the hyperbolic arcsine of a number.
+    Computes the hyperbolic arcsine of a double-precision floating-point number.
 
     Parameters
     ----------

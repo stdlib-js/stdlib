@@ -47,6 +47,16 @@ else
 endif
 endif
 
+# Indicate whether to fix linting errors:
+ifndef FIX
+	AUTOFIX := false
+else
+ifeq ($(FIX), 1)
+	AUTOFIX := true
+else
+	AUTOFIX := false
+endif
+endif
 
 # ENVIRONMENTS #
 
@@ -284,6 +294,17 @@ TAP_REPORTER ?= $(BIN_DIR)/tap-spec
 #
 # [1]: https://github.com/zoubin/tap-summary
 TAP_SUMMARY ?= $(BIN_DIR)/tap-summary
+
+# Define the path to the [`tap--min`][1] executable.
+#
+# To install `tap-min`:
+#
+# ```bash
+# $ npm install tap-min
+# ```
+#
+# [1]: https://github.com/derhuerst/tap-min
+TAP_MIN ?= $(BIN_DIR)/tap-min
 
 # Define the path to the [`tap-xunit`][1] executable.
 #
@@ -557,7 +578,7 @@ DEPS_ELECTRON_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_
 DEPS_ELECTRON_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
 # Define the shellcheck version:
-DEPS_SHELLCHECK_VERSION ?= 0.5.0
+DEPS_SHELLCHECK_VERSION ?= 0.8.0
 
 # Generate a version slug:
 deps_shellcheck_version_slug := $(subst .,_,$(DEPS_SHELLCHECK_VERSION))
@@ -579,3 +600,6 @@ DEPS_CPPCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cppcheck_$(deps_cppcheck_version_sl
 
 # Host platform:
 DEPS_CPPCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
+
+# API key for the stdlib scaffolding service:
+SCAFFOLD_API_KEY ?= $$SCAFFOLD_API_KEY

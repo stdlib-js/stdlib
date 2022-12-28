@@ -24,7 +24,6 @@
 
 // Note: keep in alphabetical order...
 #include "macros.h"
-#include "nullary.h"
 #include "quaternary.h"
 #include "quinary.h"
 #include "ternary.h"

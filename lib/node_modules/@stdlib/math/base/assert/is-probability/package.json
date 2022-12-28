@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/assert/is-probability",
   "version": "0.0.0",
-  "description": "Test if a numeric value is a probability.",
+  "description": "Test if a double-precision floating-point number is a probability.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

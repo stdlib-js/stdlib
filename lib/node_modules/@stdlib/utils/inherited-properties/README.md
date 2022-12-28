@@ -67,11 +67,7 @@ var Symbol = require( '@stdlib/symbol/ctor' );
 var defineProperty = require( '@stdlib/utils/define-property' );
 var inheritedProperties = require( '@stdlib/utils/inherited-properties' );
 
-var hasSymbols;
-var props;
-var obj;
-
-hasSymbols = hasSymbolSupport();
+var hasSymbols = hasSymbolSupport();
 
 function Foo() {
     this.a = 'b';
@@ -110,11 +106,9 @@ if ( hasSymbols ) {
     });
 }
 
-obj = new Foo();
-props = inheritedProperties( obj );
-
-console.log( props );
-// => [ ..., 'c', 'bip', ... ]
+var obj = new Foo();
+var props = inheritedProperties( obj );
+// returns [ ..., 'c', 'bip', ... ]
 ```
 
 </section>
