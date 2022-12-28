@@ -21,6 +21,10 @@
 /**
 * Inserts array element values into a format string and prints the result.
 *
+* ## Notes
+*
+* -   If an interpolated argument is not a collection, the argument is broadcasted for each iteration.
+*
 * @param str - format string
 * @param args - collections or values
 * @throws {RangeError} provided collections must have the same length
