@@ -404,7 +404,7 @@ interface Namespace {
 	acosh: typeof acosh;
 
 	/**
-	* Computes the inverse cotangent of a number.
+	* Computes the inverse cotangent of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns inverse cotangent (in radians)
@@ -436,7 +436,7 @@ interface Namespace {
 	acot: typeof acot;
 
 	/**
-	* Computes the inverse hyperbolic cotangent of a number.
+	* Computes the inverse hyperbolic cotangent of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns inverse hyperbolic cotangent
