@@ -24,7 +24,7 @@
 * @param N        number of elements to copy
 * @param X        input array
 * @param strideX  X stride length
-* @param Y        destination array
+* @param Y        output array
 * @param strideY  Y stride length
 */
 void c_ccopy( const int N, const void *X, const int strideX, void *Y, const int strideY ) {
