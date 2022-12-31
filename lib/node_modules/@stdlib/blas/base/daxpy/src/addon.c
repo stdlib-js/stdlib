@@ -17,6 +17,11 @@
 */
 
 #include "stdlib/blas/base/daxpy.h"
+#include "stdlib/napi/export.h"
+#include "stdlib/napi/argv.h"
+#include "stdlib/napi/argv_double.h"
+#include "stdlib/napi/argv_int64.h"
+#include "stdlib/napi/argv_strided_float64array.h"
 #include <node_api.h>
 
 /**
@@ -28,15 +33,15 @@
 * @return       Node-API value
 */
 static napi_value addon( napi_env env, napi_callback_info info ) {
-	STDLIB_STRIDED_NAPI_ARGV( argv, argc, 6 );
-	STDLIB_STRIDED_NAPI_ARGV_INT64( N, argv, 0 );
-	STDLIB_STRIDED_NAPI_ARGV_DOUBLE( alpha, argv, 1 );
-	STDLIB_STRIDED_NAPI_ARGV_INT64( strideX, argv, 3 );
-	STDLIB_STRIDED_NAPI_ARGV_INT64( strideY, argv, 5 );
-	STDLIB_STRIDED_NAPI_ARGV_STRIDED_FLOAT64ARRAY( X, N, strideX, argv, 2 );
-	STDLIB_STRIDED_NAPI_ARGV_STRIDED_FLOAT64ARRAY( Y, N, strideY, argv, 4 );
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 6 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_DOUBLE( env, alpha, argv, 1 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
+	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 5 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, strideY, argv, 4 );
 	c_daxpy( N, alpha, X, strideX, Y, strideY );
 	return NULL;
 }
 
-STDLIB_STRIDED_NAPI_MODULE_EXPORT_FCN( addon )
+STDLIB_NAPI_MODULE_EXPORT_FCN( addon )
