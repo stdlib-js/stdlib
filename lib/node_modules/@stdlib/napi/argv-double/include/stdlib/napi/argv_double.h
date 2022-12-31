@@ -55,11 +55,11 @@
 * }
 */
 #define STDLIB_NAPI_ARGV_DOUBLE( env, name, argv, index )                      \
-	napi_value __STDLIB_NAPI_ARGV_DOUBLE_ERR;                                  \
+	napi_value __STDLIB_NAPI_ARGV_DOUBLE_ERR_ ## name;                         \
 	double name;                                                               \
-	stdlib_napi_argv_double( env, argv[ index ], &name, "invalid argument. " STDLIB_NAPI_ARGV_INDEX2ORDINAL( index ) " argument must be a number.", &__STDLIB_NAPI_ARGV_DOUBLE_ERR ); \
-	if ( __STDLIB_NAPI_ARGV_DOUBLE_ERR != NULL ) {                             \
-		STDLIB_ASSERT_NAPI_STATUS_OK_RET_NULL( env, napi_throw( env, __STDLIB_NAPI_ARGV_DOUBLE_ERR ), "" ) \
+	stdlib_napi_argv_double( env, argv[ index ], &name, "invalid argument. " STDLIB_NAPI_ARGV_INDEX2ORDINAL( index ) " argument must be a number.", &__STDLIB_NAPI_ARGV_DOUBLE_ERR_ ## name ); \
+	if ( __STDLIB_NAPI_ARGV_DOUBLE_ERR_ ## name != NULL ) {                    \
+		STDLIB_ASSERT_NAPI_STATUS_OK_RET_NULL( env, napi_throw( env, __STDLIB_NAPI_ARGV_DOUBLE_ERR_ ## name ), "" ) \
 		return NULL;                                                           \
 	}
 
