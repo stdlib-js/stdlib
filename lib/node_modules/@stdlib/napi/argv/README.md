@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var headerDir = require( '@stdlib/assert/napi/equal-types' );
+var headerDir = require( '@stdlib/napi/argv' );
 ```
 
 #### headerDir
@@ -68,7 +68,7 @@ var dir = headerDir;
 ## Examples
 
 ```javascript
-var headerDir = require( '@stdlib/assert/napi/equal-types' );
+var headerDir = require( '@stdlib/napi/argv' );
 
 console.log( headerDir );
 // => <string>
