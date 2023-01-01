@@ -1,0 +1,63 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/napi/argv",
+				"@stdlib/napi/argv-complex64array",
+				"@stdlib/napi/argv-complex128array",
+				"@stdlib/napi/argv-double",
+				"@stdlib/napi/argv-float",
+				"@stdlib/napi/argv-float32array",
+				"@stdlib/napi/argv-float64array",
+				"@stdlib/napi/argv-int8array",
+				"@stdlib/napi/argv-int16array",
+				"@stdlib/napi/argv-int32",
+				"@stdlib/napi/argv-int32array",
+				"@stdlib/napi/argv-int64",
+				"@stdlib/napi/argv-strided-complex64array",
+				"@stdlib/napi/argv-strided-complex128array",
+				"@stdlib/napi/argv-strided-float32array",
+				"@stdlib/napi/argv-strided-float64array",
+				"@stdlib/napi/argv-strided-int8array",
+				"@stdlib/napi/argv-strided-int16array",
+				"@stdlib/napi/argv-strided-int32array",
+				"@stdlib/napi/argv-strided-uint8array",
+				"@stdlib/napi/argv-strided-uint16array",
+				"@stdlib/napi/argv-strided-uint32array",
+				"@stdlib/napi/argv-uint8array",
+				"@stdlib/napi/argv-uint16array",
+				"@stdlib/napi/argv-uint32",
+				"@stdlib/napi/argv-uint32array"
+			]
+		}
+	]
+}

@@ -115,7 +115,7 @@ jobs:
       # Get list of changed directories:
       - name: 'Get list of changed directories'
         id: changed-directories
-        uses: tj-actions/changed-files@v32
+        uses: tj-actions/changed-files@v35
         with:
           separator: ' '
           dir_names: 'true'
