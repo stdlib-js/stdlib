@@ -46,5 +46,6 @@
 #include "stdlib/napi/argv_uint16array.h"
 #include "stdlib/napi/argv_uint32.h"
 #include "stdlib/napi/argv_uint32array.h"
+#include "stdlib/napi/export.h"
 
 #endif // !STDLIB_NAPI_H

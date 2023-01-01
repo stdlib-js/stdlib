@@ -56,7 +56,8 @@
 				"@stdlib/napi/argv-uint8array",
 				"@stdlib/napi/argv-uint16array",
 				"@stdlib/napi/argv-uint32",
-				"@stdlib/napi/argv-uint32array"
+				"@stdlib/napi/argv-uint32array",
+        "@stdlib/napi/export"
 			]
 		}
 	]
