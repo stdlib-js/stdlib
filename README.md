@@ -715,11 +715,11 @@ Test and build infrastructure is generously provided by the following services:
 
 [dependencies-image]: https://img.shields.io/david/stdlib-js/stdlib
 
-[dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop
+[dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies
 
 [dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib
 
-[dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop?type=dev -->
+[dev-dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 

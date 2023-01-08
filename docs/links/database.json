@@ -873,7 +873,7 @@
       "bash_profile"
     ]
   },
-  "http://usejsdoc.org/": {
+  "https://jsdoc.app/": {
     "id": "jsdoc",
     "description": "The official website of JSDoc.",
     "short_url": "",
@@ -884,7 +884,7 @@
       "javascript"
     ]
   },
-  "http://usejsdoc.org/tags-typedef.html": {
+  "https://jsdoc.app/tags-typedef.html": {
     "id": "jsdoc-typedef",
     "description": "JSDoc documentation for defining custom types (type definitions).",
     "short_url": "",
@@ -1018,7 +1018,7 @@
       "ecmascript"
     ]
   },
-  "http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4": {
+  "https://262.ecma-international.org/5.1/#sec-12.6.4": {
     "id": "ecma-262-for-in",
     "description": "For-in behavior according to ECMAScript specification.",
     "short_url": "",
