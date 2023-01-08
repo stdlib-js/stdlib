@@ -103,7 +103,7 @@ jobs:
           echo "${namespaces}"
 
           # Lint and fix namespace exports:
-          make FILES="${namespaces}" FIX=1 lint-javascript-files
+          make FILES="${namespaces}" FIX=1 FIX_TYPE="suggestion" lint-javascript-files
 
       # Create a pull request with the updated namespace exports:
       - name: 'Create pull request'
