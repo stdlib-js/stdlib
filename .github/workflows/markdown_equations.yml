@@ -91,7 +91,7 @@ jobs:
       # Generate list of changed Markdown files:
       - name: 'Find changed Markdown files'
         run: |
-          echo "files=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .md | tr '\n' ' ')" >> $GITHUB_OUTPUT
+          echo "files=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -G '<equation' | grep .md | tr '\n' ' ')" >> $GITHUB_OUTPUT
         id: changed
 
       # Generate SVG equations:
