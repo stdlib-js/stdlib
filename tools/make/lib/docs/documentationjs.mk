@@ -60,7 +60,7 @@ DOCUMENTATIONJS_JSON_FLAGS ?= --format json
 # $ npm install documentation
 # ```
 #
-# [1]: http://usejsdoc.org/
+# [1]: https://jsdoc.app/
 # [2]: https://github.com/documentationjs/documentation
 
 documentationjs-html: $(NODE_MODULES)
@@ -81,7 +81,7 @@ documentationjs-html: $(NODE_MODULES)
 # $ npm install documentation
 # ```
 #
-# [1]: http://usejsdoc.org/
+# [1]: https://jsdoc.app/
 # [2]: https://github.com/documentationjs/documentation
 
 documentationjs-json: $(NODE_MODULES)
@@ -122,7 +122,7 @@ clean-documentationjs:
 # $ npm install documentation
 # ```
 #
-# [1]: http://usejsdoc.org/
+# [1]: https://jsdoc.app/
 # [2]: https://github.com/documentationjs/documentation
 
 rebuild-documentationjs-html:

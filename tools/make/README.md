@@ -547,7 +547,7 @@ and does not include targets declared via variables. Excluded targets could be i
 
 [make]: https://www.gnu.org/software/make/manual/make.html#Introduction
 
-[jsdoc]: http://usejsdoc.org/
+[jsdoc]: https://jsdoc.app/
 
 [nvm]: https://github.com/creationix/nvm
 

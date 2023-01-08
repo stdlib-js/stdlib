@@ -112,7 +112,7 @@ console.log( values );
 
 <section class="links">
 
-[spec-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+[spec-for-in]: https://262.ecma-international.org/5.1/#sec-12.6.4
 
 <!-- <related-links> -->
 

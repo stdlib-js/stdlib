@@ -76,7 +76,7 @@ JSDOC_JSON_FLAGS ?= \
 # $ npm install jsdoc
 # ```
 #
-# [1]: http://usejsdoc.org/
+# [1]: https://jsdoc.app/
 
 jsdoc-html: $(NODE_MODULES)
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(JSDOC_HTML_OUT)
@@ -96,7 +96,7 @@ jsdoc-html: $(NODE_MODULES)
 # $ npm install jsdoc
 # ```
 #
-# [1]: http://usejsdoc.org/
+# [1]: https://jsdoc.app/
 
 jsdoc-json: $(NODE_MODULES)
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(JSDOC_JSON)
@@ -136,7 +136,7 @@ clean-jsdoc:
 # $ npm install jsdoc
 # ```
 #
-# [1]: http://usejsdoc.org/
+# [1]: https://jsdoc.app/
 
 rebuild-jsdoc-html:
 	$(QUIET) $(MAKE) -f $(this_file) clean-jsdoc

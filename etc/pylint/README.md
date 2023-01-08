@@ -24,7 +24,7 @@ This directory contains [pylint][pylint] configuration files.
 
 <section class="links">
 
-[pylint]: http://pylint.com/
+[pylint]: https://pylint.pycqa.org/en/latest/
 
 </section>
 
