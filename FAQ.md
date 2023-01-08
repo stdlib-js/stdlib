@@ -817,7 +817,7 @@ See the [contributing guide][contributing-guide].
 <!--
 [mdn-web-workers]: https://developer.mozilla.org/en-US/docs/Web/API/Worker/Worker
 
-[mdn-transferable-objects]: https://developer.mozilla.org/en-US/docs/Web/API/Transferable
+[mdn-transferable-objects]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Transferable_objects
 -->
 
 [built-in-math-bugs]: https://github.com/stdlib-js/stdlib/blob/develop/docs/misc/built_in_math_bugs.md
