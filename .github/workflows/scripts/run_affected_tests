@@ -131,6 +131,13 @@ main() {
 		fi
 	done
 
+	if [[ -z "${directories}" && -z "${required_by}" ]]; then
+		echo 'No directories to test.' >&2
+		cleanup
+		print_success
+		exit 0
+	fi
+
 	# Concatenate the list of changed package directories and package directories which `require()` one of the changed packages:
 	directories="${directories} ${required_by}"
 
