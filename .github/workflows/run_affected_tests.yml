@@ -123,40 +123,5 @@ jobs:
       # Run JavaScript tests:
       - name: 'Run JavaScript tests'
         run: |
-          all_changed="${{ steps.changed-directories.outputs.all_changed_files }}"
-
-          # Only keep files which reside in package directories:
-          all_changed=$(echo "${all_changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib')
-
-          # Find unique package directories:
-          directories=$(echo "${all_changed}" | tr ' ' '\n' | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
-
-          # Extract package names from changed package directories (e.g., @stdlib/math/base/special/sin) by removing the leading 'lib/node_modules/':
-          packages=$(echo "${directories}" | sed -E 's/^lib\/node_modules\///')
-
-          # Find all package directories which `require()` one of the changed packages:
-          required_by=""
-          for package in ${packages}; do
-            echo "Finding packages which depend on '${package}'..."
-            dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -print0 | xargs -0 grep -ol -E "require\( [']${package}['] \)")
-            echo "Found: ${dependents}"
-            if [ -n "${dependents}" ]; then
-              dependents=$(dirname $dependents | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | sort -u)
-              echo "List of dependents: ${dependents}"
-              required_by="${required_by} ${dependents}"
-            fi
-          done
-
-          # Concatenate the list of changed package directories and package directories which `require()` one of the changed packages:
-          directories="${directories} ${required_by}"
-
-          # Find all test files in package directories:
-          files=$(find ${directories} -maxdepth 2 -wholename '**/test/test*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ')
-
-          # Exclude files residing in test fixtures directories:
-          files=$(echo "${files}" | grep -v '/fixtures/')
-
-          if [[ -n "${files}" ]]; then
-            make test-javascript-files-min FILES="${files}"
-          fi
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_tests" ${{ steps.changed-directories.outputs.all_changed_files }}
         timeout-minutes: 15
