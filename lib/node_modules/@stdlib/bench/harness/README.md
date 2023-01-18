@@ -1557,9 +1557,9 @@ ok 6 benchmark finished
 
 <section class="links">
 
-[tap]: http://testanything.org/tap-version-13-specification.html
+[tap]: https://testanything.org/tap-version-13-specification.html
 
-[yaml]: http://www.yaml.org/
+[yaml]: https://yaml.org/
 
 [nodejs-stream]: https://nodejs.org/api/stream.html
 

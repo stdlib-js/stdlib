@@ -848,7 +848,7 @@
       "overflow"
     ]
   },
-  "http://testanything.org/tap-version-13-specification.html": {
+  "https://testanything.org/tap-version-13-specification.html": {
     "id": "tap",
     "description": "Test Anything Protocol, a protocol for transmission of unit testing results.",
     "short_url": "",
@@ -1381,7 +1381,7 @@
       "nlp"
     ]
   },
-  "http://www.yaml.org/": {
+  "https://www.yaml.org/": {
     "id": "yaml",
     "description": "Human friendly data serialization standard.",
     "short_url": "",
@@ -9214,7 +9214,7 @@
       "node-js"
     ]
   },
-  "https://github.com/substack/tape": {
+  "https://github.com/ljharb/tape": {
     "id": "tape",
     "description": "GitHub repository for tape, a minimalist test framework.",
     "short_url": "",

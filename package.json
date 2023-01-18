@@ -117,7 +117,6 @@
     "chai": "^3.5.0",
     "cheerio": "^1.0.0-rc.12",
     "common-shakeify": "^0.6.0",
-    "david": "^12.0.0",
     "doctrine": "^3.0.0",
     "dtslint": "^3.3.0",
     "envify": "^4.0.0",
