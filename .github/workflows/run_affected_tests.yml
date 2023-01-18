@@ -131,7 +131,7 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         id: changed-files-user-input
         run: |
-          echo "::set-output name=all_changed_files::${{ github.event.inputs.files }}"
+          echo "all_changed_files=${{ github.event.inputs.files }}" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
       # Run JavaScript tests:

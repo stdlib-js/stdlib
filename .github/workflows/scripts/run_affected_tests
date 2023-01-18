@@ -121,7 +121,8 @@ main() {
 	required_by=""
 	for package in ${packages}; do
 		echo "Finding packages which depend on '${package}'..."
-		dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -print0 | xargs -0 grep -ol -E "require\( [']${package}['] \)")
+		escaped_package=$(echo "$package" | sed 's/[\/&]/\\&/g')
+		dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -print0 | xargs -0 grep -ol -E "require\( [']${escaped_package}['] \)")
 		echo "Found: ${dependents}"
 		if [ -n "${dependents}" ]; then
 		dependents=$(dirname $dependents | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | sort -u)
