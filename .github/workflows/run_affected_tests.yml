@@ -65,6 +65,10 @@ on:
       # List paths for which changes should *not* trigger this workflow:
       - '!lib/**/_tools/**'
 
+  workflow_dispatch:
+    files:
+        description: 'List of changed files for which to run affected tests (space separated):'
+
 # Workflow jobs:
 jobs:
 
@@ -112,16 +116,30 @@ jobs:
           make init
         timeout-minutes: 5
 
-      # Get list of changed directories:
-      - name: 'Get list of changed directories'
-        id: changed-directories
+      # Get list of changed files from PR and push events:
+      - name: 'Get list of changed files'
+        if: github.event_name != 'workflow_dispatch'
+        id: changed-files
         uses: tj-actions/changed-files@v35
         with:
           separator: ' '
           dir_names: 'true'
 
+      # Get list of changed files from workflow dispatch event:
+      - name: 'Get list of changed files (from user input)'
+        if: github.event_name == 'workflow_dispatch'
+        id: changed-files-user-input
+        run: |
+          echo "::set-output name=all_changed_files::${{ github.event.inputs.files }}"
+        timeout-minutes: 5
+
       # Run JavaScript tests:
       - name: 'Run JavaScript tests'
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_tests" ${{ steps.changed-directories.outputs.all_changed_files }}
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            all_changed_files="${{ steps.changed-files-user-input.outputs.all_changed_files }}"
+          else
+            all_changed_files="${{ steps.changed-files.outputs.all_changed_files }}"
+          fi
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_tests" "$all_changed_files"
         timeout-minutes: 15
