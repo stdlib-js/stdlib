@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ interface Routine {
 	/**
 	* Interchanges two double-precision floating-point vectors.
 	*
-	* @param N - number of values to swap
+	* @param N - number of values
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -47,7 +47,7 @@ interface Routine {
 	/**
 	* Interchanges two double-precision floating-point vectors using alternative indexing semantics.
 	*
-	* @param N - number of values to swap
+	* @param N - number of values
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting index for `x`

@@ -1,6 +1,6 @@
 # @license Apache-2.0
 #
-# Copyright (c) 2018 The Stdlib Authors.
+# Copyright (c) 2023 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -52,7 +52,7 @@
 
     # Source files:
     'src_files': [
-      '<(src_dir)/addon.cpp',
+      '<(src_dir)/addon.c',
       '<!@(node -e "var arr = require(\'@stdlib/utils/library-manifest\')(\'./manifest.json\',{\'os\':\'<(OS)\',\'blas\':\'<(blas)\'},{\'basedir\':process.cwd(),\'paths\':\'posix\'}).src; for ( var i = 0; i < arr.length; i++ ) { console.log( arr[ i ] ); }")',
     ],
 
