@@ -114,6 +114,13 @@ main() {
 	# Find unique package directories:
 	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
 
+	if [ -z "${directories}" ]; then
+		echo 'No packages to test.' >&2
+		cleanup
+		print_success
+		exit 0
+	fi
+
 	# Extract package names from changed package directories (e.g., @stdlib/math/base/special/sin) by removing the leading 'lib/node_modules/':
 	packages=$(echo "${directories}" | sed -E 's/^lib\/node_modules\///')
 
@@ -131,15 +138,10 @@ main() {
 		fi
 	done
 
-	if [[ -z "${directories}" && -z "${required_by}" ]]; then
-		echo 'No directories to test.' >&2
-		cleanup
-		print_success
-		exit 0
-	fi
-
 	# Concatenate the list of changed package directories and package directories which `require()` one of the changed packages:
-	directories="${directories} ${required_by}"
+	if [ -n "${required_by}" ]; then
+		directories="${directories} ${required_by}"
+	fi
 
 	# Find all test files in package directories:
 	files=$(find ${directories} -maxdepth 2 -wholename '**/test/test*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ')
