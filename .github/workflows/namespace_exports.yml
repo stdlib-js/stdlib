@@ -118,6 +118,7 @@ jobs:
 
           commit-message: 'Update namespace exports'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             automated-pr
           team-reviewers: |

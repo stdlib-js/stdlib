@@ -96,6 +96,7 @@ jobs:
 
           commit-message: 'Update namespace TypeScript declarations'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             documentation
             automated-pr
