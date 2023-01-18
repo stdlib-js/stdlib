@@ -83,6 +83,11 @@ jobs:
         run: |
           make list-pkgs-namespaces | node lib/node_modules/@stdlib/_tools/scripts/create_namespace_types.js
 
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
       # Create a pull request with the updated declarations:
       - name: 'Create pull request'
         id: cpr
