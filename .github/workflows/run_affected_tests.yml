@@ -66,7 +66,8 @@ on:
       - '!lib/**/_tools/**'
 
   workflow_dispatch:
-    files:
+    inputs:
+      files:
         description: 'List of changed files for which to run affected tests (space separated):'
 
 # Workflow jobs:
