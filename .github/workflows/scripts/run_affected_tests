@@ -129,7 +129,7 @@ main() {
 	for package in ${packages}; do
 		echo "Finding packages which depend on '${package}'..."
 		escaped_package=$(echo "$package" | sed 's/[\/&]/\\&/g')
-		dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -exec grep -ol -E "require\( [']${escaped_package}['] \)" {} +)
+		dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -exec grep -ol -E "require\( [']${escaped_package}['] \)" {} +) || true
 		echo "Found: ${dependents}"
 		if [ -n "${dependents}" ]; then
 			dependents=$(dirname $dependents | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | sort -u)
