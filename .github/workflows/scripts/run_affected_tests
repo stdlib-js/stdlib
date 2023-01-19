@@ -109,7 +109,7 @@ main() {
 	start_heartbeat "${heartbeat_interval}"
 
 	# Only keep files which reside in package directories:
-	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib')
+	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
 
 	# Find unique package directories:
 	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
@@ -144,10 +144,10 @@ main() {
 	fi
 
 	# Find all test files in package directories:
-	files=$(find ${directories} -maxdepth 2 -wholename '**/test/test*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ')
+	files=$(find ${directories} -maxdepth 2 -wholename '**/test/test*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
 
 	# Exclude files residing in test fixtures directories:
-	files=$(echo "${files}" | grep -v '/fixtures/')
+	files=$(echo "${files}" | grep -v '/fixtures/') || true
 
 	if [[ -n "${files}" ]]; then
 		make test-javascript-files-min FILES="${files}"
