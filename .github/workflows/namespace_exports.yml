@@ -39,8 +39,8 @@ jobs:
     # Define a display name:
     name: 'Update Namespace Exports'
 
-    # Only run this job if the pull request was merged (or the job was triggered manually):
-    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
+    # Only run this job if the pull request was merged and did not have label `automated-pr` (or the job was triggered manually):
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'automated-pr') == false || github.event_name == 'workflow_dispatch'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
