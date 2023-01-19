@@ -97,6 +97,7 @@ jobs:
             # Get changed files by comparing the current commit to the commit before the push event:
             files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
           fi
+          files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
       # Lint file names
