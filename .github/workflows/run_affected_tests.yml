@@ -67,8 +67,8 @@ on:
 
   workflow_dispatch:
     inputs:
-      files:
-        description: 'List of changed files for which to run affected tests (space separated):'
+      directories:
+        description: 'List of changed directories for which to run affected tests (space separated):'
 
 # Workflow jobs:
 jobs:
@@ -117,30 +117,45 @@ jobs:
           make init
         timeout-minutes: 5
 
-      # Get list of changed files from PR and push events:
-      - name: 'Get list of changed files'
+      # Get list of changed directories from PR and push events:
+      - name: 'Get list of changed directories'
         if: github.event_name != 'workflow_dispatch'
-        id: changed-files
-        uses: tj-actions/changed-files@v35
-        with:
-          separator: ' '
-          dir_names: 'true'
-
-      # Get list of changed files from workflow dispatch event:
-      - name: 'Get list of changed files (from user input)'
-        if: github.event_name == 'workflow_dispatch'
-        id: changed-files-user-input
+        id: changed-directories
         run: |
-          echo "all_changed_files=${{ github.event.inputs.files }}" >> $GITHUB_OUTPUT
+          if [ -n "${{ github.event.pull_request.number }}" ]; then
+            # Get the list of changed files in pull request via the GitHub API:
+            page=1
+            files=""
+            while true; do
+                new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ github.event.pull_request.number }}/files?page=$page&per_page=100" | jq -r '.[] | .filename')
+                if [ -z "$new_files" ]; then
+                    break
+                fi
+                files="$files $new_files"
+                page=$((page+1))
+            done
+          else
+            # Get changed files by comparing the current commit to the commit before the push event:
+            files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
+          fi
+          directories=$(for file in $files; do dirname $file; done | uniq | tr '\n' ' ' | sed 's/ $//')
+          echo "directories=${directories}" >> $GITHUB_OUTPUT
+
+      # Get list of changed directories from workflow dispatch event:
+      - name: 'Get list of changed directories (from user input)'
+        if: github.event_name == 'workflow_dispatch'
+        id: changed-directories-user-input
+        run: |
+          echo "directories=${{ github.event.inputs.directories }}" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
       # Run JavaScript tests:
       - name: 'Run JavaScript tests'
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            all_changed_files="${{ steps.changed-files-user-input.outputs.all_changed_files }}"
+            directories="${{ steps.changed-directories-user-input.outputs.directories }}"
           else
-            all_changed_files="${{ steps.changed-files.outputs.all_changed_files }}"
+            directories="${{ steps.changed-directories.outputs.directories }}"
           fi
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_tests" "$all_changed_files"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_tests" "$directories"
         timeout-minutes: 15

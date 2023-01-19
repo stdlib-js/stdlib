@@ -87,17 +87,31 @@ jobs:
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
-        uses: tj-actions/changed-files@v35
-        with:
-          separator: ' '
-          files: |
-            **/examples/**
-            **/README.md
+        run: |
+          if [ -n "${{ github.event.pull_request.number }}" ]; then
+            # Get the list of changed files in pull request via the GitHub API:
+            page=1
+            files=""
+            while true; do
+                new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ github.event.pull_request.number }}/files?page=$page&per_page=100" | jq -r '.[] | .filename')
+                if [ -z "$new_files" ]; then
+                    break
+                fi
+                files="$files $new_files"
+                page=$((page+1))
+            done
+          else
+            # Get changed files by comparing the current commit to the commit before the push event:
+            files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
+          fi
+          # Keep only examples and `README.md` files:
+          files=$(echo "$files" | grep -E 'examples/|README.md') | tr '\n' ' ' | sed 's/ $//')
+          echo "files=${files}" >> $GITHUB_OUTPUT
 
       # Run JavaScript examples:
       - name: 'Run JavaScript examples'
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
             make examples-javascript-files FILES="${files}"
           fi
@@ -106,7 +120,7 @@ jobs:
       # Run examples in Markdown files:
       - name: 'Run examples in Markdown files'
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
             make markdown-examples-javascript-files FILES="${files}"
           fi
