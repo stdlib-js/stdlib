@@ -3,8 +3,8 @@
     Copies values from one complex single-precision floating-point vector to
     another complex single-precision floating-point vector.
 
-    The `N` and strides parameters determine how values from `x` are copied
-    into `y`.
+    The `N` and stride parameters determine how values from `x` are copied into
+    `y`.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.

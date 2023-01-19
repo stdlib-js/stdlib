@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,10 +22,10 @@
 /**
 * Copies values from `X` into `Y`.
 *
-* @param N        number of elements to copy
+* @param N        number of elements
 * @param X        input array
 * @param strideX  X stride length
-* @param Y        destination array
+* @param Y        output array
 * @param strideY  Y stride length
 */
 void c_scopy( const int N, const float *X, const int strideX, float *Y, const int strideY ) {
