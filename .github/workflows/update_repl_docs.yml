@@ -111,6 +111,7 @@ jobs:
 
           commit-message: 'Update REPL namespace'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             documentation
             automated-pr

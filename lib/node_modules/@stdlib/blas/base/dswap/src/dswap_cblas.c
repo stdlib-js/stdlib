@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@
 /**
 * Interchanges two double-precision floating-point vectors.
 *
-* @param N        number of elements to swap
+* @param N        number of elements
 * @param X        first input array
 * @param strideX  X stride length
 * @param Y        second input array

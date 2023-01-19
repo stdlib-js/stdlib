@@ -53,6 +53,7 @@ ifeq ($(AUTOFIX),true)
 	ESLINT_FLAGS += --fix
 endif
 
+FIX_TYPE ?=
 ifneq ($(FIX_TYPE),)
 	ESLINT_FLAGS += --fix-type $(FIX_TYPE)
 endif

@@ -562,7 +562,7 @@ else
 endif
 endif
 
-# Define the Electron version (NOTE: whenever updated, update the `david` configuration file):
+# Define the Electron version:
 DEPS_ELECTRON_VERSION ?= 6.0.10
 
 # Generate a version slug:
@@ -590,7 +590,7 @@ DEPS_SHELLCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/shellcheck_$(deps_shellcheck_vers
 DEPS_SHELLCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
 # Define the cppcheck version:
-DEPS_CPPCHECK_VERSION ?= 2.5
+DEPS_CPPCHECK_VERSION ?= 2.9
 
 # Generate a version slug:
 deps_cppcheck_version_slug := $(subst .,_,$(DEPS_CPPCHECK_VERSION))

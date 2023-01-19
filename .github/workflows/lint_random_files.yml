@@ -405,6 +405,7 @@ jobs:
 
           commit-message: 'Fix lint errors'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             automated-pr
           team-reviewers: |

@@ -33,7 +33,6 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/repl_help.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/shell/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/toposort.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/lint/updates.mk
 
 
 # RULES #

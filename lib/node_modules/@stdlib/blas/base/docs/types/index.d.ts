@@ -57,9 +57,9 @@ interface Namespace {
 	* @param N - number of values to copy
 	* @param x - input array
 	* @param strideX - `x` stride length
-	* @param y - destination array
+	* @param y - output array
 	* @param strideY - `y` stride length
-	* @returns `y`
+	* @returns output array
 	*
 	* @example
 	* var Complex64Array = require( `@stdlib/array/complex64` );
@@ -202,9 +202,9 @@ interface Namespace {
 	* @param alpha - constant
 	* @param x - input array
 	* @param strideX - `x` stride length
-	* @param y - destination array
+	* @param y - output array
 	* @param strideY - `y` stride length
-	* @returns `y`
+	* @returns output array
 	*
 	* @example
 	* var Float64Array = require( `@stdlib/array/float64` );
@@ -232,9 +232,9 @@ interface Namespace {
 	* @param N - number of values to copy
 	* @param x - input array
 	* @param strideX - `x` stride length
-	* @param y - destination array
+	* @param y - output array
 	* @param strideY - `y` stride length
-	* @returns `y`
+	* @returns output array
 	*
 	* @example
 	* var Float64Array = require( `@stdlib/array/float64` );
@@ -608,9 +608,9 @@ interface Namespace {
 	* @param alpha - constant
 	* @param x - input array
 	* @param strideX - `x` stride length
-	* @param y - destination array
+	* @param y - output array
 	* @param strideY - `y` stride length
-	* @returns `y`
+	* @returns output array
 	*
 	* @example
 	* var Float32Array = require( `@stdlib/array/float32` );

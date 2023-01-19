@@ -30,7 +30,7 @@
 #     $ npm install tape
 #     ```
 #
-# [1]: https://github.com/substack/tape
+# [1]: https://github.com/ljharb/tape
 JAVASCRIPT_TEST ?= $(NODE_MODULES)/tape/bin/tape
 
 # Define any command-line options to use when invoking the `tape` executable:

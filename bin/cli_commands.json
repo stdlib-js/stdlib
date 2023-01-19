@@ -386,7 +386,7 @@
 	{
 		"command": "js-eval",
 		"description": "Evaluate a JavaScript string.",
-		"path": "@stdlib/utils/js-eval",
+		"path": "@stdlib/utils/eval",
 		"group": "utilities"
 	},
 	{

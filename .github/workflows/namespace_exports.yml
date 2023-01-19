@@ -105,6 +105,11 @@ jobs:
           # Lint and fix namespace exports:
           make FILES="${namespaces}" FIX=1 FIX_TYPE="suggestion" lint-javascript-files
 
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
       # Create a pull request with the updated namespace exports:
       - name: 'Create pull request'
         id: cpr
@@ -118,6 +123,7 @@ jobs:
 
           commit-message: 'Update namespace exports'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             automated-pr
           team-reviewers: |
