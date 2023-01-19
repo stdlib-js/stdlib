@@ -105,7 +105,7 @@ jobs:
             files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
           fi
           # Keep only examples and `README.md` files:
-          files=$(echo "$files" | grep -E 'examples/|README.md') | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$files" | grep -E 'examples/|README.md' | tr '\n' ' ' | sed 's/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
       # Run JavaScript examples:
