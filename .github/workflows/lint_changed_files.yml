@@ -82,8 +82,17 @@ jobs:
         id: changed-files
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
-            # Get the list of changed files in pull request via the GitHub API. We use `awk` to get the value of the link header with the URL for the next page of results, and keep requesting next pages until all the files are retrieved:
-            files=$(curl -s -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ github.event.pull_request.number }}/files?page=1&per_page=100" -D - | awk '{if (match($0, "Link:")){print}}' | awk '{print $2}' | tr -d '<>' | tr -d ',' | xargs -I {} curl -s -H "Accept: application/vnd.github.v3+json" {} | jq -r '.[] | .filename')
+            # Get the list of changed files in pull request via the GitHub API:
+            page=1
+            files=""
+            while true; do
+                new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ github.event.pull_request.number }}/files?page=$page&per_page=100" | jq -r '.[] | .filename')
+                if [ -z "$new_files" ]; then
+                    break
+                fi
+                files="$files $new_files"
+                page=$((page+1))
+            done
           else
             # Get changed files by comparing the current commit to the commit before the push event:
             files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
