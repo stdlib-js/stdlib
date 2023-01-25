@@ -51,17 +51,32 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
-      # Create content of tracking issue for TODO and FIXME comments:
-      - name: 'Create content of tracking issue for TODO and FIXME comments'
+      # Create content of tracking issue for TODO comments:
+      - name: 'Create content of tracking issue for TODO comments'
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/track_todos" > tracking_issue.md
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/track_todos" > tracking_issue_todos.md
 
-      # Create an issue from the output file:
-      - name: 'Create an issue from the output file'
+      # Create content of tracking issue for FIXME comments:
+      - name: 'Create content of tracking issue for FIXME comments'
+        run: |
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/track_fixmes" > tracking_issue_fixmes.md
+
+      # Create issue for TODO comments:
+      - name: 'Create issue for TODO comments'
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 'TODO and FIXME comments'
-          content-filepath: ./tracking_issue.md
+          title: 'TODO comments'
+          content-filepath: ./tracking_issue_todos.md
+          labels: |
+            report
+            automated-issue
+
+      # Create issue for FIXME comments:
+      - name: 'Create issue for FIXME comments'
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: 'FIXME comments'
+          content-filepath: ./tracking_issue_fixmes.md
           labels: |
             report
             automated-issue
