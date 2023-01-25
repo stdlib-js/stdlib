@@ -34,6 +34,7 @@ for file in $(find bin dist docs tools etc examples lib test tools -type f); do
             fi
             lineNumber=$(echo $fixme | cut -d ":" -f 1)
             lineContent=$(awk "NR==$lineNumber" $file)
+            lineContent=$(echo $lineContent | sed -e 's/<!--/\\<!--/g' -e 's/-->/\\-->/g')
             comment="$comment
 -   [$file#L$lineNumber](https://github.com/stdlib-js/stdlib/blob/develop/$file#L$lineNumber): $lineContent"
         fi
