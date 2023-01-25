@@ -36,7 +36,7 @@ limitations under the License.
 var ordinalize = require( '@stdlib/nlp/ordinalize' );
 ```
 
-#### ordinalize( value )
+#### ordinalize( value\[, options] )
 
 Converts an integer to an ordinal string (e.g., `1st`, `2nd`, etc.).
 
