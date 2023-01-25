@@ -34,7 +34,7 @@ for file in $(find . -type f); do
         lineNumber=$(echo $todo | cut -d ":" -f 1)
         lineContent=$(echo $todo | cut -d ":" -f 2-)
         comment="$comment
-- [ ] [$file](https://github.com/stdlib-js/stdlib/blob/develop/$file#L$lineNumber): $lineContent"
+-   [$file](https://github.com/stdlib-js/stdlib/blob/develop/$file#L$lineNumber): $lineContent"
     fi
 done
 
