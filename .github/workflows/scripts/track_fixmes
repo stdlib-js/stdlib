@@ -21,6 +21,10 @@ fixmes=""
 
 # Search for FIXME annotations in the codebase:
 for file in $(find . -type f); do
+    # A maximum of 65535 characters can be included in a GitHub comment body. If we exceed this limit, we stop searching for annotations:
+    if [ ${#fixmes} -gt 65535 ]; then
+        break
+    fi
     fixme=$(grep -i -n "FIXME:" $file) || true
     if [ -n "$fixme" ]; then
         lineNumber=$(echo $fixme | cut -d ":" -f 1)
