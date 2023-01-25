@@ -21,15 +21,15 @@ fixmes=""
 todos=""
 
 # Search for FIXME and TODO annotations in all files in the current directory:
-for file in $(find lib/node_modules/@stdlib -type f); do
-    fixme=$(grep -i -n "FIXME:" $file)
+for file in $(find . -type f); do
+    fixme=$(grep -i -n "FIXME:" $file) || true
     if [ -n "$fixme" ]; then
         lineNumber=$(echo $fixme | cut -d ":" -f 1)
         lineContent=$(echo $fixme | cut -d ":" -f 2-)
         fixmes="$fixmes
 - [ ] [$file](https://github.com/stdlib-js/stdlib/blob/develop/$file#L$lineNumber): $lineContent"
     fi
-    todo=$(grep -i -n "TODO:" $file)
+    todo=$(grep -i -n "TODO:" $file) || true
     if [ -n "$todo" ]; then
         lineNumber=$(echo $todo | cut -d ":" -f 1)
         lineContent=$(echo $todo | cut -d ":" -f 2-)
