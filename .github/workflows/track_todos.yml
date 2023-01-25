@@ -66,22 +66,24 @@ jobs:
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/track_fixmes" > tracking_issue_fixmes.md
 
-      # Create issue for TODO comments:
-      - name: 'Create issue for TODO comments'
+      # Create or update issue for TODO comments:
+      - name: 'Create or update issue for TODO comments'
         uses: peter-evans/create-issue-from-file@v4
         with:
           title: 'TODO comments'
           content-filepath: ./tracking_issue_todos.md
+          issue-number: 803
           labels: |
             report
             automated-issue
 
-      # Create issue for FIXME comments:
-      - name: 'Create issue for FIXME comments'
+      # Create or update issue for FIXME comments:
+      - name: 'Create or update issue for FIXME comments'
         uses: peter-evans/create-issue-from-file@v4
         with:
           title: 'FIXME comments'
           content-filepath: ./tracking_issue_fixmes.md
+          issue-number: 804
           labels: |
             report
             automated-issue

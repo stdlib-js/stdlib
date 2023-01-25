@@ -29,11 +29,11 @@ for file in $(find bin dist docs tools etc examples lib test tools -type f); do
     for todo in $todos; do
         if [ -n "$todo" ]; then
             # Since a maximum of 65,535 characters can be included in a GitHub comment body, we break out of the loop if the comment body would exceed this limit.
-            if [ $(( ${#comment} + ${#todo} )) -gt 3000 ]; then
+            if [ $(( ${#comment} + ${#todo} )) -gt 65535 ]; then
                 break
             fi
             lineNumber=$(echo $todo | cut -d ":" -f 1)
-            lineContent=$(echo $todo | cut -d ":" -f 2)
+            lineContent=$(awk "NR==$lineNumber" $file)
             comment="$comment
 -   [$file#L$lineNumber](https://github.com/stdlib-js/stdlib/blob/develop/$file#L$lineNumber): $lineContent"
         fi
