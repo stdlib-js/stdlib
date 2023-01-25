@@ -60,11 +60,13 @@ jobs:
       - name: 'Create content of tracking issue for TODO comments'
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/track_todos" > tracking_issue_todos.md
+          cat tracking_issue_todos.md >> $GITHUB_STEP_SUMMARY
 
       # Create content of tracking issue for FIXME comments:
       - name: 'Create content of tracking issue for FIXME comments'
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/track_fixmes" > tracking_issue_fixmes.md
+          cat tracking_issue_fixmes.md >> $GITHUB_STEP_SUMMARY
 
       # Create or update issue for TODO comments:
       - name: 'Create or update issue for TODO comments'
