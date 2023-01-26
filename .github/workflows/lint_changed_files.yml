@@ -86,7 +86,7 @@ jobs:
             page=1
             files=""
             while true; do
-                new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ github.event.pull_request.number }}/files?page=$page&per_page=100" | jq -r '.[] | .filename')
+                new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ github.event.pull_request.number }}/files?page=$page&per_page=100" | jq -r '.[] | select(.status == "modified" or .status == "added") | .filename')
                 if [ -z "$new_files" ]; then
                     break
                 fi
@@ -95,7 +95,7 @@ jobs:
             done
           else
             # Get changed files by comparing the current commit to the commit before the push event:
-            files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
+            files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
           fi
           files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT

@@ -61,7 +61,7 @@ jobs:
       - name: 'Get list of changed files'
         id: changed-files
         run: |
-          files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
+          files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
           files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
