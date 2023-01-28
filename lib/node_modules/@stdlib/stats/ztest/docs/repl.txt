@@ -72,7 +72,7 @@
     Examples
     --------
     // One-sample z-test:
-    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory( 0.0, 2.0, { 'seed': 212 });
+    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory( 0.0, 2.0, { 'seed': 212 } );
     > var x = new Array( 100 );
     > for ( var i = 0; i < x.length; i++ ) {
     ...     x[ i ] = rnorm();
@@ -89,7 +89,7 @@
 
     // Choose custom significance level and print output:
     > arr = [ 2, 4, 3, 1, 0 ];
-    > out = {{alias}}( arr, 2.0, { 'alpha': 0.01 });
+    > out = {{alias}}( arr, 2.0, { 'alpha': 0.01 } );
     > table = out.print()
     One-sample z-test
 
@@ -105,7 +105,7 @@
 
     // Test for a mean equal to five:
     > var arr = [ 4, 4, 6, 6, 5 ];
-    > out = {{alias}}( arr, 1.0, { 'mu': 5 })
+    > out = {{alias}}( arr, 1.0, { 'mu': 5 } )
     {
         rejected: false,
         pValue: 1,
@@ -116,7 +116,7 @@
 
     // Perform one-sided tests:
     > arr = [ 4, 4, 6, 6, 5 ];
-    > out = {{alias}}( arr, 1.0, { 'alternative': 'less' })
+    > out = {{alias}}( arr, 1.0, { 'alternative': 'less' } )
     {
         alpha: 0.05,
         rejected: false,
@@ -125,7 +125,7 @@
         ci: [ -Infinity, 5.735600904580115 ],
         // ...
     }
-    > out = {{alias}}( arr, 1.0, { 'alternative': 'greater' })
+    > out = {{alias}}( arr, 1.0, { 'alternative': 'greater' } )
     {
         alpha: 0.05,
         rejected: true,
