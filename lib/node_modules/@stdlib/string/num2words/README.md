@@ -33,7 +33,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var num2words = require( '@stdlib/string/number-to-words' );
+var num2words = require( '@stdlib/string/num2words' );
 ```
 
 #### num2words( value\[, options] )
@@ -95,7 +95,7 @@ out = num2words( 0.53, {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var num2words = require( '@stdlib/string/number-to-words' );
+var num2words = require( '@stdlib/string/num2words' );
 
 var out = num2words( 29 );
 // returns 'twenty-nine'

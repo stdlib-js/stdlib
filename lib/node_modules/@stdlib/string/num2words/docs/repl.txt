@@ -31,7 +31,7 @@
     > out = {{alias}}( 16.31 )
     'sixteen point three one'
 
-    > out = {{alias}}( 123, { 'lang': 'de' })
+    > out = {{alias}}( 123, { 'lang': 'de' } )
     'einhundertdreiundzwanzig'
 
     See Also

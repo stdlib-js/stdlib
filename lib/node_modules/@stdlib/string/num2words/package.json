@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/string/number-to-words",
+  "name": "@stdlib/string/num2words",
   "version": "0.0.0",
   "description": "Convert a number to a word representation.",
   "license": "Apache-2.0",

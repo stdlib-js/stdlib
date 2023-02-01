@@ -42,8 +42,6 @@ interface Options {
 * @param num - number to convert
 * @param options - options
 * @param options.lang - language code (default: 'en')
-* @throws must provide an integer
-* @throws must provide a safe integer
 * @returns string representation of a number
 *
 * @example
