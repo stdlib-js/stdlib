@@ -40,7 +40,7 @@ set -o pipefail
 
 # VARIABLES #
 
-# Get the list of packages to deprecate:
+# Get the list of changed files:
 changed="$*"
 
 # Get the path to a log file as the third argument to the build script:
@@ -109,7 +109,7 @@ main() {
 	start_heartbeat "${heartbeat_interval}"
 
 	# Only keep files which reside in package directories:
-	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib')
+	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
 
 	# Find unique package directories:
 	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
@@ -129,7 +129,7 @@ main() {
 	for package in ${packages}; do
 		echo "Finding packages which depend on '${package}'..."
 		escaped_package=$(echo "$package" | sed 's/[\/&]/\\&/g')
-		dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -print0 | xargs -0 -L 200 grep -ol -E "require\( [']${escaped_package}['] \)")
+		dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -exec grep -ol -E "require\( [']${escaped_package}['] \)" {} +) || true
 		echo "Found: ${dependents}"
 		if [ -n "${dependents}" ]; then
 			dependents=$(dirname $dependents | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | sort -u)
@@ -144,10 +144,10 @@ main() {
 	fi
 
 	# Find all test files in package directories:
-	files=$(find ${directories} -maxdepth 2 -wholename '**/test/test*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ')
+	files=$(find ${directories} -maxdepth 2 -wholename '**/test/test*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
 
 	# Exclude files residing in test fixtures directories:
-	files=$(echo "${files}" | grep -v '/fixtures/')
+	files=$(echo "${files}" | grep -v '/fixtures/') || true
 
 	if [[ -n "${files}" ]]; then
 		make test-javascript-files-min FILES="${files}"

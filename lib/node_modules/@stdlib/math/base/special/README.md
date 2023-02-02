@@ -198,8 +198,8 @@ var fcns = special;
 
 <div class="namespace-toc">
 
--   <span class="signature">[`acot( x )`][@stdlib/math/base/special/acot]</span><span class="delimiter">: </span><span class="description">compute the inverse cotangent of a number.</span>
--   <span class="signature">[`acoth( x )`][@stdlib/math/base/special/acoth]</span><span class="delimiter">: </span><span class="description">compute the inverse hyperbolic cotangent of a number.</span>
+-   <span class="signature">[`acot( x )`][@stdlib/math/base/special/acot]</span><span class="delimiter">: </span><span class="description">compute the inverse cotangent of a double-precision floating-point number.</span>
+-   <span class="signature">[`acoth( x )`][@stdlib/math/base/special/acoth]</span><span class="delimiter">: </span><span class="description">compute the inverse hyperbolic cotangent of a double-precision floating-point number.</span>
 -   <span class="signature">[`acsc( x )`][@stdlib/math/base/special/acsc]</span><span class="delimiter">: </span><span class="description">compute the arccosecant of a number.</span>
 -   <span class="signature">[`acsch( x )`][@stdlib/math/base/special/acsch]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arccosecant of a number.</span>
 -   <span class="signature">[`asec( x )`][@stdlib/math/base/special/asec]</span><span class="delimiter">: </span><span class="description">compute the inverse (arc) secant of a number.</span>

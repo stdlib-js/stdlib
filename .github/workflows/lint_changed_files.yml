@@ -80,9 +80,25 @@ jobs:
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
-        uses: tj-actions/changed-files@v35
-        with:
-          separator: ' '
+        run: |
+          if [ -n "${{ github.event.pull_request.number }}" ]; then
+            # Get the list of changed files in pull request via the GitHub API:
+            page=1
+            files=""
+            while true; do
+                new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ github.event.pull_request.number }}/files?page=$page&per_page=100" | jq -r '.[] | select(.status == "modified" or .status == "added") | .filename')
+                if [ -z "$new_files" ]; then
+                    break
+                fi
+                files="$files $new_files"
+                page=$((page+1))
+            done
+          else
+            # Get changed files by comparing the current commit to the commit before the push event:
+            files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
+          fi
+          files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
+          echo "files=${files}" >> $GITHUB_OUTPUT
 
       # Lint file names
       - name: 'Lint file names'
@@ -94,13 +110,13 @@ jobs:
           lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
           # Lint filenames:
-          echo "${{ steps.changed-files.outputs.all_changed_files }}" || "${lint_filenames}"
+          echo "${{ steps.changed-files.outputs.files }}" || "${lint_filenames}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
             make lint-markdown-files FILES="${files}"
           fi
@@ -109,7 +125,7 @@ jobs:
       - name: 'Lint shell script files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.random-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Install shellcheck:
             make install-deps-shellcheck
@@ -128,7 +144,7 @@ jobs:
           # Define the path to a utility for linting package.json files:
           lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
 
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
             echo "Linting package.json files that have changed..."
             printf "${files}" | "${lint_package_json}" --split=" "
@@ -146,7 +162,7 @@ jobs:
           # Define the path to a utility for linting REPL help files:
           lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-txt/bin/cli"
 
-          files=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep 'repl\.txt$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo ${{ steps.changed-files.outputs.files }} | tr ' ' '\n' | grep 'repl\.txt$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
             printf "${files}" | "${lint_repl_help}" --split=" "
           fi
@@ -168,31 +184,31 @@ jobs:
           eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
 
           # Lint JavaScript source files:
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}"
           fi
 
           # Lint JavaScript command-line interfaces...
-          file=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ' | sed 's/ $//')
+          file=$(echo ${{ steps.changed-files.outputs.files }} | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${file}" ]]; then
             make lint-javascript-files FILES="${file}"
           fi
 
           # Lint JavaScript example files:
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
           fi
 
           # Lint JavaScript test files:
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
           fi
 
           # Lint JavaScript benchmark files:
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
           fi
@@ -201,7 +217,7 @@ jobs:
       - name: 'Lint Python files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.py$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.py$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Install Python dependencies:
             make install-deps-python
@@ -215,7 +231,7 @@ jobs:
         if: success() || failure()
         id: check-r-files
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Add space-separated list of R files to output:
             echo "files=${files}" >> $GITHUB_OUTPUT
@@ -258,31 +274,31 @@ jobs:
           cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
           # Install cppcheck if C files have changed:
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.c$|\.h$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$|\.h$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make install-deps-cppcheck
           fi
 
           # Lint C source files...
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}"
           fi
 
           # Lint C example files...
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}"
           fi
 
           # Lint C test fixtures files...
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep '/test/fixtures/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/test/fixtures/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}"
           fi
 
           # Lint C benchmark files...
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep '/benchmark/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/benchmark/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}"
           fi
@@ -291,7 +307,7 @@ jobs:
       - name: 'Lint TypeScript declarations files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-typescript-declarations-files FILES="${files}"
           fi
@@ -300,7 +316,7 @@ jobs:
       - name: 'Lint license headers'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}")
+          files=$(echo "${{ steps.changed-files.outputs.files }}")
           if [[ -n "${files}" ]]; then
             make lint-license-headers-files FILES="${files}"
           fi

@@ -61,7 +61,7 @@
     ...     'b', 'b', 'b', 'b',
     ...     'c', 'c', 'c', 'c', 'c'
     ... ];
-    > out = {{alias}}( arr, { 'groups': groups })
+    > out = {{alias}}( arr, { 'groups': groups } )
 
     See Also
     --------

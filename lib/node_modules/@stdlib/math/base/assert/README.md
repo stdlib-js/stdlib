@@ -69,7 +69,7 @@ var o = ns;
 -   <span class="signature">[`isPositiveZero( x )`][@stdlib/math/base/assert/is-positive-zero]</span><span class="delimiter">: </span><span class="description">test if a double-precision floating-point numeric value is positive zero.</span>
 -   <span class="signature">[`isPositiveZerof( x )`][@stdlib/math/base/assert/is-positive-zerof]</span><span class="delimiter">: </span><span class="description">test if a single-precision floating-point numeric value is positive zero.</span>
 -   <span class="signature">[`isPrime( x )`][@stdlib/math/base/assert/is-prime]</span><span class="delimiter">: </span><span class="description">test if a number is a prime.</span>
--   <span class="signature">[`isProbability( x )`][@stdlib/math/base/assert/is-probability]</span><span class="delimiter">: </span><span class="description">test if a numeric value is a probability.</span>
+-   <span class="signature">[`isProbability( x )`][@stdlib/math/base/assert/is-probability]</span><span class="delimiter">: </span><span class="description">test if a double-precision floating-point number is a probability.</span>
 -   <span class="signature">[`isSafeInteger( x )`][@stdlib/math/base/assert/is-safe-integer]</span><span class="delimiter">: </span><span class="description">test if a finite double-precision floating-point number is a safe integer.</span>
 -   <span class="signature">[`isPow2Uint32( x )`][@stdlib/math/base/assert/uint32-is-pow2]</span><span class="delimiter">: </span><span class="description">test whether an unsigned integer is a power of 2.</span>
 
