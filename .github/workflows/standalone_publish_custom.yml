@@ -45,7 +45,7 @@ on:
         default: false
       onlyUnpublished:
         type: boolean
-        description: 'Only publish packages that have not been published'
+        description: 'Only publish packages that have not yet been published'
         default: false
 
 # Workflow concurrency group:
@@ -104,4 +104,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.packages }} ${{ github.event.inputs.patch == 'true' && '--patch ' || '' }}${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual ' || '' }}${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel ' || '' }}${{ github.event.inputs.pattern && format('--pattern {0}', github.event.inputs.pattern ) || '' }}${{ github.event.inputs.onlyUnpublished == 'true' && '--only-unpublished ' || '' }}
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.packages }} ${{ github.event.inputs.patch == 'true' && '--patch ' || '' }}${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual ' || '' }}${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel ' || '' }}${{ github.event.inputs.onlyUnpublished == 'true' && '--only-unpublished ' || '' }}${{ github.event.inputs.pattern && format('--pattern {0}', github.event.inputs.pattern ) || '' }}
