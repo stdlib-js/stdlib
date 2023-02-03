@@ -2285,6 +2285,7 @@
 "@stdlib/utils/noop",noop
 "@stdlib/time/now",now
 "@stdlib/os/num-cpus",NUM_CPUS
+"@stdlib/string/num2words",num2words
 "@stdlib/number/ctor",Number
 "@stdlib/string/num-grapheme-clusters",numGraphemeClusters
 "@stdlib/object/ctor",Object
