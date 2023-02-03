@@ -20,6 +20,8 @@
 * Benchmark `csubf`.
 */
 #include "stdlib/math/base/ops/csubf.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/reimf.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -100,28 +102,29 @@ double benchmark() {
 	double t;
 	int i;
 
-	float complex z1;
-	float complex z2;
-	float complex z3;
+	stdlib_complex64_t z1;
+	stdlib_complex64_t z2;
+	stdlib_complex64_t z3;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		re = ( 1000.0f*rand_float() ) - 500.0f;
 		im = ( 1000.0f*rand_float() ) - 500.0f;
-		z1 = re + im*I;
+		z1 = stdlib_complex64( re, im );
 
 		re = ( 1000.0f*rand_float() ) - 500.0f;
 		im = ( 1000.0f*rand_float() ) - 500.0f;
-		z2 = re + im*I;
+		z2 = stdlib_complex64( re, im );
 
 		z3 = stdlib_base_csubf( z1, z2 );
-		if ( z3 != z3 ) {
+		stdlib_reimf( z3, &re, &im );
+		if ( re != re ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( z3 != z3 ) {
+	if ( im != im ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;
