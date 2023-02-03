@@ -2285,6 +2285,7 @@ nonIndexKeys
 noop
 now
 NUM_CPUS
+num2words
 Number
 numGraphemeClusters
 Object
