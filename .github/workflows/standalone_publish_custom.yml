@@ -37,7 +37,7 @@ on:
         description: 'Regular expression for packages to include:'
       dry-run:
         type: boolean
-        description: 'Skip uploading packages to npm (dry run):'
+        description: 'Skip uploading packages (dry run):'
         default: false
       patch:
         type: boolean
