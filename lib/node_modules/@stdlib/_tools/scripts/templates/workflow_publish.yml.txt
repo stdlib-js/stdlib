@@ -114,7 +114,26 @@ jobs:
       # Replace all stdlib GitHub dependencies with the respective npm packages:
       - name: 'Replace all stdlib GitHub dependencies with the respective npm packages'
         run: |
-          find package.json -type f -print0 | xargs -0 sed -Ei 's/"github:stdlib-js[^"]*"/"^0.0.x"/g'
+          for dep in $(jq -r '.dependencies | keys | .[]' package.json); do
+            if [[ "$dep" != "@stdlib"* ]]; then
+              continue
+            fi
+            # Trim leading and trailing whitespace:
+            dep=$(echo "$dep" | xargs)
+            version="^$(npm view $dep version)"
+            jq -r --arg dep "$dep" --arg version "$version" '.dependencies[$dep] = $version' package.json > package.json.tmp
+            mv package.json.tmp package.json
+          done
+          for dep in $(jq -r '.devDependencies | keys | .[]' package.json); do
+            if [[ "$dep" != "@stdlib"* ]]; then
+              continue
+            fi
+            # Trim leading and trailing whitespace:
+            dep=$(echo "$dep" | xargs)
+            version="^$(npm view $dep version)"
+            jq -r --arg dep "$dep" --arg version "$version" '.devDependencies[$dep] = $version' package.json > package.json.tmp
+            mv package.json.tmp package.json
+          done
 
       # Publish package to npm:
       - name: 'Publish package to npm'
