@@ -635,12 +635,12 @@ interface Namespace {
 	/**
 	* Copies values from `x` into `y`.
 	*
-	* @param N - number of values to copy
+	* @param N - number of values
 	* @param x - input array
 	* @param strideX - `x` stride length
-	* @param y - destination array
+	* @param y - output array
 	* @param strideY - `y` stride length
-	* @returns `y`
+	* @returns output array
 	*
 	* @example
 	* var Float32Array = require( `@stdlib/array/float32` );
