@@ -71,7 +71,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 // Initial arrays...
 var a0 = new Float64Array( [ 0.0, 0.0, 0.0, 2.0, 2.0, 2.0 ] );
-var b0 = new Float64Array( [ 1.0, 1.0, 1.0, 5.0, 5.0, 5.0 ] );
+var b0 = new Float64Array( [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ] );
 
 // Create offset views...
 var a1 = new Float64Array( a0.buffer, a0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
