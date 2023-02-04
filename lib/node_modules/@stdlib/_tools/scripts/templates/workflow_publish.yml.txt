@@ -101,6 +101,38 @@ jobs:
           SLUG=${{ github.repository }}
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" --follow-tags
 
+      # Remove CLI:
+      - name: 'Remove CLI
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: |
+          rm -rf ./bin/cli
+          rm test/test.cli.js
+          rm etc/cli_opts.json
+          rm docs/usage.txt
+
+          # For all dependencies, check in all *.js files if they are still used; if not, remove them:
+          jq -r '.dependencies | keys[]' ./package.json | while read -r dep; do
+            dep=$(echo "$dep" | xargs)
+            if ! grep -q "$dep" lib/**; then
+              jq --indent 2 "del(.dependencies[\"$dep\"])" ./package.json > ./package.json.tmp
+              mv ./package.json.tmp ./package.json
+            fi
+          done
+          jq -r '.devDependencies | keys[]' ./package.json | while read -r dep; do
+            if [[ "$dep" != "@stdlib"* ]]; then
+              continue
+            fi
+            dep=$(echo "$dep" | xargs)
+            if ! grep -q "$dep" ./lib/**; then
+              jq --indent 2 "del(.devDependencies[\"$dep\"])" ./package.json > ./package.json.tmp
+              mv ./package.json.tmp ./package.json
+            fi
+          done
+
+          # Remove CLI from package.json:
+          jq -r 'del(.bin)' package.json > package.json.tmp
+          mv package.json.tmp package.json
+
       # Replace GitHub links to individual packages with npm links:
       - name: 'Replace all GitHub links to individual packages with npm links'
         run: |
