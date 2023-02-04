@@ -102,7 +102,7 @@ jobs:
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" --follow-tags
 
       # Remove CLI:
-      - name: 'Remove CLI
+      - name: 'Remove CLI'
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           rm -rf ./bin/cli
