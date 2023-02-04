@@ -814,7 +814,7 @@ jobs:
           find ./cli -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/###/##/g"
 
           # Append -cli to package name unless it already ends with -cli:
-          find ./cli -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/($escapedPkg)(?!-cli)/$pkg-cli/"
+          find ./cli -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/($escapedPkg)(?!-cli)/\1-cli/g"
 
           # Insert a link to the main package:
           find ./cli -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"related\">(?:\n\n\* \* \*\n\n## See Also)?/<section class=\"related\">\n\n## See Also\n\n*   <span class=\"package-name\">[\`$escapedPkg\`][main-url]<\/span><span class=\"delimiter\">: <\/span><span class=\"description\">$pkgDescription<\/span>\n/"
