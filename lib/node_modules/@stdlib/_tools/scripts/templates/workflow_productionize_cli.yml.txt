@@ -817,7 +817,7 @@ jobs:
           find ./cli -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/($escapedPkg)/\1-cli/g"
 
           # Insert a link to the main package:
-          find ./cli -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"related\">/<section class=\"related\">\n\n## Related\n\n*   <span class=\"package-name\">[\`$escapedPkg\`][main-url]<\/span><span class=\"delimiter\">: <\/span><span class=\"description\">$pkgDescription<\/span>\n/"
+          find ./cli -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"related\">(?:\n\n\* \* \*\n\n## See Also)?/<section class=\"related\">\n\n## See Also\n\n*   <span class=\"package-name\">[\`$escapedPkg\`][main-url]<\/span><span class=\"delimiter\">: <\/span><span class=\"description\">$pkgDescription<\/span>\n/"
 
           # Create package.json file for cli branch:
           jq --indent 2 '.name = .name + "-cli" | {"name": .name, "version": .version, "description": .description, "license": .license, "author": .author, "contributors": .contributors, "bin": .bin, "homepage": .homepage, "repository": .repository, "bugs": .bugs, "dependencies": .dependencies, "devDependencies": .devDependencies, "keywords": .keywords, "funding": .funding}' package.json > ./cli/package.json
