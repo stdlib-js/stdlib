@@ -31,7 +31,7 @@ jobs:
     name: 'Respond to question'
 
     # Define the conditions under which the job should run:
-    if : github.event.discussion.category.name == 'stdlib-bot Q&A'
+    if: github.event.discussion.category.name == 'stdlib-bot Q&A'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest

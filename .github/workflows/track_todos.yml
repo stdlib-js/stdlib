@@ -76,7 +76,7 @@ jobs:
           content-filepath: ./tracking_issue_todos.md
           issue-number: 803
           labels: |
-            report
+            todos
             automated-issue
 
       # Create or update issue for FIXME comments:
@@ -87,5 +87,5 @@ jobs:
           content-filepath: ./tracking_issue_fixmes.md
           issue-number: 804
           labels: |
-            report
+            fixmes
             automated-issue
