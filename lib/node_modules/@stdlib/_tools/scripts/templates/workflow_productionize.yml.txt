@@ -34,6 +34,12 @@ on:
         type: boolean
         default: true
 
+  # Run workflow upon completion of `publish` workflow run:
+  workflow_run:
+    workflows: ["publish"]
+    types: [completed]
+
+
 # Concurrency group to prevent multiple concurrent executions:
 concurrency:
   group: productionize

@@ -17,18 +17,30 @@
 */
 
 #include "stdlib/math/base/ops/csubf.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/reimf.h"
 #include <stdio.h>
-#include <complex.h>
 
 int main() {
-	float complex x[] = { 3.14f+1.5f*I, -3.14f-1.5f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
+	stdlib_complex64_t x[] = {
+		stdlib_complex64( 3.14f, 1.5f ),
+		stdlib_complex64( -3.14f, 1.5f ),
+		stdlib_complex64( 0.0f, -0.0f ),
+		stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f )
+	};
 
-	float complex v;
-	float complex y;
+	stdlib_complex64_t v;
+	stdlib_complex64_t y;
+	float re;
+	float im;
 	int i;
 	for ( i = 0; i < 4; i++ ) {
 		v = x[ i ];
+		stdlib_reimf( v, &re, &im );
+		printf( "z = %f + %fi\n", re, im );
+
 		y = stdlib_base_csubf( v, v );
-		printf( "z = %f + %fi\ncsubf(z, z) = %f + %fi\n", crealf( v ), cimagf( v ), crealf( y ), cimagf( y ) );
+		stdlib_reimf( y, &re, &im );
+		printf( "csubf(z, z) = %f + %fi\n", re, im );
 	}
 }

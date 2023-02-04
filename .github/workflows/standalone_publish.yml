@@ -79,7 +79,11 @@ jobs:
       - name: 'Publish packages'
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
+          # Save NPM_TOKEN to user's .npmrc:
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+
           node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js --patch --skip-toplevel
 
       # Archive list of to be published packages:

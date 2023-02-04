@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/math/base/ops/csubf.h"
-#include <complex.h>
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/reimf.h"
 
 /**
 * Subtracts two single-precision complex floating-point numbers.
@@ -27,14 +28,35 @@
 * @return         result
 *
 * @example
-* #include <complex.h>
+* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/realf.h"
+* #include "stdlib/complex/imagf.h"
 *
-* float complex z1 = 5.0f + 3.0f*I;
-* float complex z2 = -2.0f + 1.0f*I;
+* stdlib_complex64_t z1 = stdlib_complex64( 5.0f, 3.0f );
 *
-* float complex out = stdlib_base_csubf( z1, z2 );
-* // returns 7.0f+2.0f*I
+* stdlib_complex64_t z2 = stdlib_complex64( -2.0f, 1.0f );
+*
+* stdlib_complex64_t out = stdlib_base_csubf( z1, z2 );
+*
+* float re = stdlib_realf( out );
+* // returns 7.0f
+*
+* float im = stdlib_imagf( out );
+* // returns 2.0f
 */
-float complex stdlib_base_csubf( const float complex z1, const float complex z2 ) {
-	return z1 - z2;
+stdlib_complex64_t stdlib_base_csubf( const stdlib_complex64_t z1, const stdlib_complex64_t z2 ) {
+	float re1;
+	float re2;
+	float im1;
+	float im2;
+	float re;
+	float im;
+
+	stdlib_reimf( z1, &re1, &im1 );
+	stdlib_reimf( z2, &re2, &im2 );
+
+	re = re1 - re2;
+	im = im1 - im2;
+
+	return stdlib_complex64( re, im );
 }
