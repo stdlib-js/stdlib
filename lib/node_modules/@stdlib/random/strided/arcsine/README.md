@@ -41,7 +41,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 var out = new Float64Array( 10 );
 
 // Fill the array with pseudorandom numbers:
-arcsine( out.length, [ 0.0 ], 0, [ 1.0 ], 0, out, 1 );
+arcsine( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 ```
 
 The function has the following parameters:
@@ -59,7 +59,7 @@ The `N` and stride parameters determine which strided array elements are accesse
 ```javascript
 var out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
-arcsine( 3, [ 0.0 ], 0, [ 1.0 ], 0, out, 2 );
+arcsine( 3, [ 2.0 ], 0, [ 5.0 ], 0, out, 2 );
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -102,7 +102,7 @@ var opts = {
 };
 
 var out = new Float64Array( 10 );
-arcsine( out.length, [ 0.0 ], 0, [ 1.0 ], 0, out, 1, opts );
+arcsine( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1, opts );
 ```
 
 To seed the underlying pseudorandom number generator, set the `seed` option.
@@ -115,7 +115,7 @@ var opts = {
 };
 
 var out = new Float64Array( 10 );
-arcsine( out.length, [ 0.0 ], 0, [ 1.0 ], 0, out, 1, opts );
+arcsine( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1, opts );
 ```
 
 #### arcsine.ndarray( N, a, sa, oa, b, sb, ob, out, so, oo\[, options] )
@@ -129,7 +129,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 var out = new Float64Array( 10 );
 
 // Fill the array with pseudorandom numbers:
-arcsine.ndarray( out.length, [ 0.0 ], 0, 0, [ 1.0 ], 0, 0, out, 1, 0 );
+arcsine.ndarray( out.length, [ 2.0 ], 0, 0, [ 5.0 ], 0, 0, out, 1, 0 );
 ```
 
 The function has the following additional parameters:
@@ -143,7 +143,7 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
-arcsine.ndarray( 3, [ 0.0 ], 0, 0, [ 1.0 ], 0, 0, out, 2, 1 );
+arcsine.ndarray( 3, [ 2.0 ], 0, 0, [ 5.0 ], 0, 0, out, 2, 1 );
 ```
 
 The function accepts the same `options` as documented above for `arcsine()`.
@@ -187,13 +187,13 @@ var x1 = zeros( 10, 'float64' );
 var idx = zeroTo( x1.length );
 
 // Fill the array with pseudorandom numbers:
-arcsine( x1.length, [ 0.0 ], 0, [ 1.0 ], 0, x1, 1, opts );
+arcsine( x1.length, [ 2.0 ], 0, [ 5.0 ], 0, x1, 1, opts );
 
 // Create a second array:
 var x2 = zeros( 10, 'generic' );
 
 // Fill the array with the same pseudorandom numbers:
-arcsine( x2.length, [ 0.0 ], 0, [ 1.0 ], 0, x2, 1, opts );
+arcsine( x2.length, [ 2.0 ], 0, [ 5.0 ], 0, x2, 1, opts );
 
 // Print the array contents:
 logEach( 'x1[%d] = %.2f; x2[%d] = %.2f', idx, x1, idx, x2 );
