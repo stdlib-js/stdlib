@@ -54,14 +54,12 @@ The function has the following parameters:
 -   **out**: output array.
 -   **so**: index increment for `out`.
 
-The `N` and stride parameters determine which strided array elements are accessed at runtime. For example, to access every other value in `a` and the first `N` elements of `b`,
+The `N` and stride parameters determine which strided array elements are accessed at runtime. For example, to access every other value in `out`,
 
 ```javascript
-var a = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
-var b = [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ];
 var out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
-arcsine( 3, a, -2, b, 1, out, 1 );
+arcsine( 3, [ 0.0 ], 0, [ 1.0 ], 0, out, 2 );
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -72,8 +70,8 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 var Float64Array = require( '@stdlib/array/float64' );
 
 // Initial arrays...
-var a0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-var b0 = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+var a0 = new Float64Array( [ 0.0, 0.0, 0.0, 2.0, 2.0, 2.0 ] );
+var b0 = new Float64Array( [ 1.0, 1.0, 1.0, 5.0, 5.0, 5.0 ] );
 
 // Create offset views...
 var a1 = new Float64Array( a0.buffer, a0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
@@ -140,16 +138,12 @@ The function has the following additional parameters:
 -   **ob**: starting index for `b`.
 -   **oo**: starting index for `out`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to access every other value in `a` starting from the second value and the last `N` elements in `b`,
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to access every other value in `out` starting from the second value,
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
-var a = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-var b = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-
-var out = new Float64Array( 3 );
-arcsine.ndarray( out.length, a, 2, 1, b, -1, b.length-1, out, 1, 0 );
+arcsine.ndarray( 3, [ 0.0 ], 0, 0, [ 1.0 ], 0, 0, out, 2, 1 );
 ```
 
 The function accepts the same `options` as documented above for `arcsine()`.
