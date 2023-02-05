@@ -142,10 +142,12 @@ jobs:
 
           # Add entry for CLI package to See Also section of README.md:
           cliPkgName=$(jq -r '.name' package.json)-cli
-          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"related\">(?:\n\n\* \* \*\n\n## See Also\n\n)?/<section class=\"related\">\n\n## See Also\n\n-   <span class=\"package-name\">[\`$cliPkgName\`][$cliPkgName]<\/span><span class=\"delimiter\">: <\/span><span class=\"description\">CLI package for use as a command-line utility<\/span>\n/"
+          escapedPkg=$(echo "$cliPkgName" | sed -e 's/\//\\\//g')
+          escapedPkg=$(echo "$escapedPkg" | sed -e 's/\@/\\\@/g')
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"related\">(?:\n\n\* \* \*\n\n## See Also\n\n)?/<section class=\"related\">\n\n## See Also\n\n-   <span class=\"package-name\">[\`$escapedPkg\`][$escapedPkg]<\/span><span class=\"delimiter\">: <\/span><span class=\"description\">CLI package for use as a command-line utility<\/span>\n/"
 
           # Add link definition for CLI package to README.md:
-          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"links\">/<section class=\"links\">\n\n[$cliPkgName]: https:\/\/www.npmjs.com\/package\/$cliPkgName/"
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"links\">/<section class=\"links\">\n\n[$escapedPkg]: https:\/\/www.npmjs.com\/package\/$escapedPkg/"
 
       # Replace GitHub links to individual packages with npm links:
       - name: 'Replace all GitHub links to individual packages with npm links'
