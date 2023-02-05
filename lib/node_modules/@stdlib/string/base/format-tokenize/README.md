@@ -76,7 +76,7 @@ out = formatTokenize( 'Pi: ~%.2f' );
 // returns [ 'Pi: ~', {...} ]
 
 out = formatTokenize( 'Multiple flags: %#+s' );
-// returns [ 'Foo ', {...} ]
+// returns [ 'Multiple flags: ', {...} ]
 ```
 
 </section>
