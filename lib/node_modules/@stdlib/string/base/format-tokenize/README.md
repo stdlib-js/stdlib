@@ -48,13 +48,13 @@ var out = formatTokenize( str );
 
 The format identifier objects have the following properties:
 
-| property  | description                                                                                         |
-| --------- | --------------------------------------------------------------------------------------------------- |
-| specifier | format specifier (one of 's', 'c', 'd', 'i', 'u', 'b', 'o', 'x', 'X', 'e', 'E', 'f', 'F', 'g', 'G') |
-| flags     | format flags (string with any of '0', ' ', '+', '-', '#')                                           |
-| width     | minimum field width (integer or `'*'`)                                                              |
-| precision | precision (integer or `'*'`)                                                                        |
-| mapping   | positional mapping from format specifier to argument index                                          |
+| property  | description                                                           |
+| --------- | --------------------------------------------------------------------- |
+| specifier | format specifier (single alphabetical character, lower- or uppercase) |
+| flags     | format flags (string with any of '0', ' ', '+', '-', '#')             |
+| width     | minimum field width (integer or `'*'`)                                |
+| precision | precision (integer or `'*'`)                                          |
+| mapping   | positional mapping from format specifier to argument index            |
 
 </section>
 
