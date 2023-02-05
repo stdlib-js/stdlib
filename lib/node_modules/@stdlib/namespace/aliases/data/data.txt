@@ -9,6 +9,7 @@ alias2related
 alias2standalone
 aliases
 allocUnsafe
+anans
 anova1
 ANSCOMBES_QUARTET
 any

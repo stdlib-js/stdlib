@@ -3654,6 +3654,7 @@ nonIndexKeys,"function Foo() { this.beep = 'boop'; this[0] = 3.14; return this; 
 noop,"noop();\n"
 now,"var ts = now()\n"
 NUM_CPUS,"NUM_CPUS\n"
+num2words,"var out = num2words( 123 )\nout = num2words( 16.31 )\nout = num2words( 123, { 'lang': 'de' } )\n"
 Number,"var v = new Number( 5 )\n"
 numGraphemeClusters,"var out = numGraphemeClusters( 'beep' )\nout = numGraphemeClusters( '🌷' )\n"
 Object,"var o = new Object( null )\no = new Object( 5.0 )\no = new Object( 'beep' )\n"

@@ -9,6 +9,7 @@
 "@stdlib/namespace/alias2standalone",alias2standalone
 "@stdlib/namespace/aliases",aliases
 "@stdlib/buffer/alloc-unsafe",allocUnsafe
+"@stdlib/array/nans",anans
 "@stdlib/stats/anova1",anova1
 "@stdlib/datasets/anscombes-quartet",ANSCOMBES_QUARTET
 "@stdlib/utils/any",any

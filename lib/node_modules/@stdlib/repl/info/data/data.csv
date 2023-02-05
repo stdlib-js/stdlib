@@ -3654,6 +3654,7 @@ nonIndexKeys,"\nnonIndexKeys( obj:any )\n    Returns an array of an object's own
 noop,"\nnoop()\n    A function which does nothing.\n"
 now,"\nnow()\n    Returns the time in seconds since the epoch.\n"
 NUM_CPUS,"\nNUM_CPUS\n    Number of CPUs.\n"
+num2words,"\nnum2words( value:integer[, options:Object] )\n    Converts a number to a word representation.\n"
 Number,"\nNumber( value:number )\n    Returns a Number object.\n"
 numGraphemeClusters,"\nnumGraphemeClusters( str:string )\n    Returns the number of grapheme clusters in a string.\n"
 Object,"\nObject( value:any )\n    Returns an object.\n"
