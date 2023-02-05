@@ -107,6 +107,10 @@ jobs:
       - name: 'Replace all GitHub links to individual packages with npm links'
         run: |
           find . -type f -name '*.md' -print0 | xargs -0 sed -Ei '/tree\/main/b; s/@stdlib\/([^:]*)\]: https:\/\/github.com\/stdlib-js/@stdlib\/\1\]: https:\/\/www.npmjs.com\/package\/@stdlib/g'
+          SLUG=${{ github.repository }}
+          ESCAPED_SLUG=${SLUG//\//\\\/}
+          REPO=${SLUG#*/}
+          find . -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/https:\/\/github.com\/${ESCAPED_SLUG}\/tree\/main/https:\/\/www.npmjs.com\/package\/@stdlib\/${REPO}/g"
 
       # Publish package to npm:
       - name: 'Publish package to npm'

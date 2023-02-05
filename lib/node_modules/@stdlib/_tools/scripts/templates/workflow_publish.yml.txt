@@ -105,6 +105,10 @@ jobs:
       - name: 'Remove CLI'
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
+          # Exit if the package does not have a CLI:
+          if ! grep -q '"bin":' package.json; then
+            exit 0
+          fi
           rm -rf ./bin/cli
           rm test/test.cli.js
           rm etc/cli_opts.json
@@ -113,7 +117,7 @@ jobs:
           # For all dependencies, check in all *.js files if they are still used; if not, remove them:
           jq -r '.dependencies | keys[]' ./package.json | while read -r dep; do
             dep=$(echo "$dep" | xargs)
-            if ! grep -q "$dep" lib/**; then
+            if ! grep -q "$dep" lib/** && ! grep -q -s "$dep" manifest.json && ! grep -q -s "$dep" include.gypi; then
               jq --indent 2 "del(.dependencies[\"$dep\"])" ./package.json > ./package.json.tmp
               mv ./package.json.tmp ./package.json
             fi
@@ -123,7 +127,7 @@ jobs:
               continue
             fi
             dep=$(echo "$dep" | xargs)
-            if ! grep -q "$dep" ./lib/**; then
+            if ! grep -q "$dep" lib/** && ! grep -q -s "$dep" manifest.json && ! grep -q -s "$dep" include.gypi; then
               jq --indent 2 "del(.devDependencies[\"$dep\"])" ./package.json > ./package.json.tmp
               mv ./package.json.tmp ./package.json
             fi
@@ -135,6 +139,15 @@ jobs:
           # Remove CLI from package.json:
           jq -r 'del(.bin)' package.json > package.json.tmp
           mv package.json.tmp package.json
+
+          # Add entry for CLI package to See Also section of README.md:
+          cliPkgName=$(jq -r '.name' package.json)-cli
+          escapedPkg=$(echo "$cliPkgName" | sed -e 's/\//\\\//g')
+          escapedPkg=$(echo "$escapedPkg" | sed -e 's/\@/\\\@/g')
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"related\">(?:\n\n\* \* \*\n\n## See Also\n\n)?/<section class=\"related\">\n\n## See Also\n\n-   <span class=\"package-name\">[\`$escapedPkg\`][$escapedPkg]<\/span><span class=\"delimiter\">: <\/span><span class=\"description\">CLI package for use as a command-line utility.<\/span>\n/"
+
+          # Add link definition for CLI package to README.md:
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"links\">/<section class=\"links\">\n\n[$escapedPkg]: https:\/\/www.npmjs.com\/package\/$escapedPkg/"
 
       # Replace GitHub links to individual packages with npm links:
       - name: 'Replace all GitHub links to individual packages with npm links'
