@@ -91,7 +91,7 @@ var v = arr.get( 0 );
 
 #### AccessorArray.prototype.set( v\[, i] )
 
-Sets one or more array elements.
+Set an array element.
 
 ```javascript
 var arr = new AccessorArray( [ 1, 2, 3 ] );
