@@ -52,7 +52,7 @@ logEach( '%d < %d ', x, y );
 // e.g., => '1 < 4\n2 < 5\n3 < 6\n'
 ```
 
-If an interpolated argument is not a collection, the argument is broadcasted for each iteration.
+If an interpolated argument is not an array-like object, the argument is broadcasted for each iteration.
 
 ```javascript
 var x = [ 1, 2, 3 ];
@@ -72,7 +72,8 @@ logEach( '%d < %d', x, y );
 
 ## Notes
 
--   If the function is provided collections of unequal lengths, the function throws an error.
+-   If the function is provided array-like objects of unequal lengths, the function throws an error.
+-   The function supports array-like objects supporting the accessor protocol (e.g., [`Complex128Array`][@stdlib/array/complex128], [`Complex64Array`][@stdlib/array/complex64], etc).
 
 </section>
 
@@ -124,6 +125,10 @@ logEach( 'abs(%d) = %d', x, y );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/array/complex128]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/array/complex64]: https://github.com/stdlib-js/stdlib
 
 </section>
 
