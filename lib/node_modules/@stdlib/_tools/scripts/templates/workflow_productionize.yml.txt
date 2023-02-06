@@ -100,10 +100,11 @@ jobs:
       # Change `@stdlib/string-format` to `@stdlib/error-tools-fmtprodmsg` in package.json if the former is a dependency, otherwise insert it as a dependency:
       - name: 'Update dependencies in package.json'
         run: |
+          PKG_VERSION=$(npm view @stdlib/error-tools-fmtprodmsg version)
           if grep -q '"@stdlib/string-format"' package.json; then
-            sed -i "s/\"@stdlib\/string-format\"/\"@stdlib\/error-tools-fmtprodmsg\"/g" package.json
+            sed -i "s/\"@stdlib\/string-format\": \"^.*\"/\"@stdlib\/error-tools-fmtprodmsg\": \"^$PKG_VERSION\"/g" package.json
           else
-            node -e "var pkg = require( './package.json' ); pkg.dependencies[ '@stdlib/error-tools-fmtprodmsg' ] = '^0.0.x'; require( 'fs' ).writeFileSync( 'package.json', JSON.stringify( pkg, null, 2 ) );"
+            node -e "var pkg = require( './package.json' ); pkg.dependencies[ '@stdlib/error-tools-fmtprodmsg' ] = '^$PKG_VERSION'; require( 'fs' ).writeFileSync( 'package.json', JSON.stringify( pkg, null, 2 ) );"
           fi
 
       # Configure git:
