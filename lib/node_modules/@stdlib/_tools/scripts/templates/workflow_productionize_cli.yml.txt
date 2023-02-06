@@ -796,9 +796,12 @@ jobs:
         run: |
           # Define variable for package name:
           pkg="$(jq -r '.name' ./package.json)"
-          pkgDescription="$(jq -r '.description' ./package.json)"
           escapedPkg=$(echo "$pkg" | sed -e 's/\//\\\//g')
           escapedPkg=$(echo "$escapedPkg" | sed -e 's/\@/\\\@/g')
+
+          # Define variable for package description:
+          pkgDescription="$(jq -r '.description' ./package.json)"
+          pkgDescription="$(echo "$pkgDescription" | sed -e 's/^\([A-Z]\)/\L\1/')"
 
           # Remove sections:
           find ./cli -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"installation\">[^<]+<\/section>//;"
