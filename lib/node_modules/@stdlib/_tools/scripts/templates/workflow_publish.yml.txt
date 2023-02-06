@@ -159,6 +159,12 @@ jobs:
         run: |
           find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`\n\nAlternatively,[^<]+<\/section>/\`\`\`\n\n<\/section>/"
 
+      # Remove unnecessary files:
+      - name: 'Remove unnecessary files'
+        run: |
+          rm docs/repl.txt
+          rm docs/types/test.ts
+
       # Replace all stdlib GitHub dependencies with the respective npm packages:
       - name: 'Replace all stdlib GitHub dependencies with the respective npm packages'
         run: |
