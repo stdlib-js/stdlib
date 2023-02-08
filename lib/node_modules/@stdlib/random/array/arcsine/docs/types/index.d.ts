@@ -114,11 +114,11 @@ interface PRNG {
 }
 
 /**
-* Interface for generating arcsine distributed pseudorandom numbers with pre-specified parameter values.
+* Interface for generating pseudorandom numbers drawn from an arcsine distribution with pre-specified parameter values.
 */
 interface UnaryFunction extends PRNG {
 	/**
-	* Returns an array containing arcsine distributed pseudorandom numbers with minimum support `a` and maximum support `b`.
+	* Returns an array containing pseudorandom numbers drawn from an arcsine distribution with minimum support `a` and maximum support `b`.
 	*
 	* @param len - array length
 	* @param options - function options
@@ -128,11 +128,11 @@ interface UnaryFunction extends PRNG {
 }
 
 /**
-* Interface for generating arcsine distributed pseudorandom numbers without pre-specified parameter values.
+* Interface for generating pseudorandom numbers drawn from an arcsine distribution without pre-specified parameter values.
 */
 interface TernaryFunction extends PRNG {
 	/**
-	* Returns an array containing arcsine distributed pseudorandom numbers with minimum support `a` and maximum support `b`.
+	* Returns an array containing pseudorandom numbers drawn from an arcsine distribution with minimum support `a` and maximum support `b`.
 	*
 	* @param len - array length
 	* @param a - minimum support
@@ -148,7 +148,7 @@ interface TernaryFunction extends PRNG {
 */
 interface Random extends PRNG {
 	/**
-	* Returns an array containing arcsine distributed pseudorandom numbers with minimum support `a` and maximum support `b`.
+	* Returns an array containing pseudorandom numbers drawn from an arcsine distribution with minimum support `a` and maximum support `b`.
 	*
 	* @param len - array length
 	* @param a - minimum support
@@ -163,7 +163,7 @@ interface Random extends PRNG {
 	( len: number, a: number, b: number, options?: Options ): RandomArray;
 
 	/**
-	* Returns a function for creating arrays containing arcsine distributed pseudorandom numbers.
+	* Returns a function for creating arrays containing pseudorandom numbers drawn from an arcsine distribution.
 	*
 	* ## Notes
 	*
@@ -192,7 +192,7 @@ interface Random extends PRNG {
 	factory( a: number, b: number, options?: FactoryOptions ): UnaryFunction;
 
 	/**
-	* Returns a function for creating arrays containing arcsine distributed pseudorandom numbers.
+	* Returns a function for creating arrays containing pseudorandom numbers drawn from an arcsine distribution.
 	*
 	* ## Notes
 	*
@@ -219,7 +219,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Returns an array containing arcsine distributed pseudorandom numbers with minimum support `a` and maximum support `b`.
+* Returns an array containing pseudorandom numbers drawn from an arcsine distribution with minimum support `a` and maximum support `b`.
 *
 * @param len - array length
 * @param a - minimum support
