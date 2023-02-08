@@ -85,10 +85,10 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param a - minimum support
 	* @param sa - `a` stride length
-	* @param oa - starting index for `x`
+	* @param oa - starting index for `a`
 	* @param b - maximum support
 	* @param sb - `b` stride length
-	* @param ob - starting index for `y`
+	* @param ob - starting index for `b`
 	* @param out - output array
 	* @param so - `out` stride length
 	* @param oo - starting index for `out`
