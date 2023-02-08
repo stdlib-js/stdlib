@@ -2353,6 +2353,7 @@ Proxy
 push
 quarterOfYear
 random.array.arcsine
+random.array.discreteUniform
 random.array.normal
 random.array.uniform
 random.iterators.arcsine

@@ -2353,6 +2353,7 @@
 "@stdlib/utils-push","@stdlib/utils/push"
 "@stdlib/time-quarter-of-year","@stdlib/time/quarter-of-year"
 "@stdlib/random-array-arcsine","@stdlib/random/array/arcsine"
+"@stdlib/random-array-discrete-uniform","@stdlib/random/array/discrete-uniform"
 "@stdlib/random-array-normal","@stdlib/random/array/normal"
 "@stdlib/random-array-uniform","@stdlib/random/array/uniform"
 "@stdlib/random-iter-arcsine","@stdlib/random/iter/arcsine"
