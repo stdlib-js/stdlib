@@ -72,7 +72,7 @@
     > var a = {{alias:@stdlib/array/linspace}}( 0.0, 1.0, 5 );
     > var b = {{alias:@stdlib/array/linspace}}( 2.0, 5.0, 5 );
     > var out = {{alias:@stdlib/array/zeros}}( 5, 'generic' );
-    > {{alias}}( a.length, a, 1, b, 1, out, 1 )
+    > {{alias}}( out.length, a, 1, b, 1, out, 1 )
     [...]
 
     // Advanced indexing:
@@ -160,7 +160,7 @@
     > var a = {{alias:@stdlib/array/linspace}}( 0.0, 1.0, 5 );
     > var b = {{alias:@stdlib/array/linspace}}( 2.0, 5.0, 5 );
     > var out = {{alias:@stdlib/array/zeros}}( 5, 'generic' );
-    > {{alias}}.ndarray( a.length, a, 1, 0, b, 1, 0, out, 1, 0 )
+    > {{alias}}.ndarray( out.length, a, 1, 0, b, 1, 0, out, 1, 0 )
     [...]
 
     // Advanced indexing:
