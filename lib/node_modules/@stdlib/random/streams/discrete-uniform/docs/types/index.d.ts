@@ -89,7 +89,7 @@ declare class RandomStream extends Readable {
 	* @param a - minimum support
 	* @param b - maximum support
 	* @param options - stream options
-	* @throws `a` must be less than `b`
+	* @throws `a` must be less than or equal to `b`
 	* @throws must provide valid options
 	* @throws must provide a valid state
 	* @returns stream instance
