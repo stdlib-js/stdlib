@@ -2353,6 +2353,7 @@ Proxy
 push
 quarterOfYear
 random.array.arcsine
+random.array.normal
 random.array.uniform
 random.iterators.arcsine
 random.iterators.bernoulli
@@ -2437,6 +2438,7 @@ random.streams.triangular
 random.streams.uniform
 random.streams.weibull
 random.strided.arcsine
+random.strided.normal
 random.strided.uniform
 ranks
 readDir
