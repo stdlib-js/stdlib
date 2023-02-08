@@ -2437,6 +2437,7 @@ random.streams.triangular
 random.streams.uniform
 random.streams.weibull
 random.strided.arcsine
+random.strided.uniform
 ranks
 readDir
 readFile

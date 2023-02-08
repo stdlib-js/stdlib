@@ -2437,6 +2437,7 @@
 "@stdlib/random/streams/uniform",random.streams.uniform
 "@stdlib/random/streams/weibull",random.streams.weibull
 "@stdlib/random/strided/arcsine",random.strided.arcsine
+"@stdlib/random/strided/uniform",random.strided.uniform
 "@stdlib/stats/ranks",ranks
 "@stdlib/fs/read-dir",readDir
 "@stdlib/fs/read-file",readFile
