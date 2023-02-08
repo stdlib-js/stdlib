@@ -20,18 +20,18 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { FloatDataType, FloatTypedArray } from '@stdlib/types/array';
+import { RealDataType, RealTypedArray } from '@stdlib/types/array';
 import * as random from '@stdlib/types/random';
 
 /**
 * Supported data types.
 */
-type DataType = FloatDataType | 'generic';
+type DataType = RealDataType | 'generic';
 
 /**
 * Output array.
 */
-type RandomArray = FloatTypedArray | Array<number>;
+type RandomArray = RealTypedArray | Array<number>;
 
 /**
 * Interface defining PRNG options.
@@ -157,7 +157,7 @@ interface Random extends PRNG {
 	* @returns output array
 	*
 	* @example
-	* var out = uniform( 10, -10, 10 );
+	* var out = discreteUniform( 10, -10, 10 );
 	* // returns <Float64Array>
 	*/
 	( len: number, a: number, b: number, options?: Options ): RandomArray;
@@ -177,13 +177,13 @@ interface Random extends PRNG {
 	* @returns function for creating arrays
 	*
 	* @example
-	* var random = uniform.factory( -10, 10 );
+	* var random = discreteUniform.factory( -10, 10 );
 	*
 	* var out = random( 10 );
 	* // returns <Float64Array>
 	*
 	* @example
-	* var random = uniform.factory( -10, 10, {
+	* var random = discreteUniform.factory( -10, 10, {
 	*     'seed': 297
 	* });
 	* var out = random( 10 );
@@ -203,13 +203,13 @@ interface Random extends PRNG {
 	* @returns function for creating arrays
 	*
 	* @example
-	* var random = uniform.factory();
+	* var random = discreteUniform.factory();
 	*
 	* var out = random( 10, -10, 10 );
 	* // returns <Float64Array>
 	*
 	* @example
-	* var random = uniform.factory({
+	* var random = discreteUniform.factory({
 	*     'seed': 297
 	* });
 	* var out = random( 10, -10, 10 );
@@ -228,18 +228,18 @@ interface Random extends PRNG {
 * @returns output array
 *
 * @example
-* var out = uniform( 10, -10, 10 );
+* var out = discreteUniform( 10, -10, 10 );
 * // returns <Float64Array>
 *
 * @example
-* var random = uniform.factory( -10, 10 );
+* var random = discreteUniform.factory( -10, 10 );
 *
 * var out = random( 10 );
 * // returns <Float64Array>
 */
-declare var uniform: Random;
+declare var discreteUniform: Random;
 
 
 // EXPORTS //
 
-export = uniform;
+export = discreteUniform;
