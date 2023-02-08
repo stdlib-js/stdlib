@@ -2352,6 +2352,8 @@
 "@stdlib/proxy/ctor",Proxy
 "@stdlib/utils/push",push
 "@stdlib/time/quarter-of-year",quarterOfYear
+"@stdlib/random/array/arcsine",random.array.arcsine
+"@stdlib/random/array/uniform",random.array.uniform
 "@stdlib/random/iter/arcsine",random.iterators.arcsine
 "@stdlib/random/iter/bernoulli",random.iterators.bernoulli
 "@stdlib/random/iter/beta",random.iterators.beta
@@ -2434,6 +2436,7 @@
 "@stdlib/random/streams/triangular",random.streams.triangular
 "@stdlib/random/streams/uniform",random.streams.uniform
 "@stdlib/random/streams/weibull",random.streams.weibull
+"@stdlib/random/strided/arcsine",random.strided.arcsine
 "@stdlib/stats/ranks",ranks
 "@stdlib/fs/read-dir",readDir
 "@stdlib/fs/read-file",readFile

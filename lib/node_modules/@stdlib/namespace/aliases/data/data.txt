@@ -2352,6 +2352,8 @@ propertySymbolsIn
 Proxy
 push
 quarterOfYear
+random.array.arcsine
+random.array.uniform
 random.iterators.arcsine
 random.iterators.bernoulli
 random.iterators.beta
@@ -2434,6 +2436,7 @@ random.streams.t
 random.streams.triangular
 random.streams.uniform
 random.streams.weibull
+random.strided.arcsine
 ranks
 readDir
 readFile
