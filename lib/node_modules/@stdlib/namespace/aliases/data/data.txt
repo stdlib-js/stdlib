@@ -2439,6 +2439,7 @@ random.streams.triangular
 random.streams.uniform
 random.streams.weibull
 random.strided.arcsine
+random.strided.discreteUniform
 random.strided.normal
 random.strided.uniform
 ranks
