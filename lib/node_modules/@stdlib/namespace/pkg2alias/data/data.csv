@@ -2354,6 +2354,7 @@
 "@stdlib/time/quarter-of-year",quarterOfYear
 "@stdlib/random/array/arcsine",random.array.arcsine
 "@stdlib/random/array/discrete-uniform",random.array.discreteUniform
+"@stdlib/random/array/lognormal",random.array.lognormal
 "@stdlib/random/array/normal",random.array.normal
 "@stdlib/random/array/uniform",random.array.uniform
 "@stdlib/random/iter/arcsine",random.iterators.arcsine
