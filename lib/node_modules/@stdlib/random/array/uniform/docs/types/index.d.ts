@@ -114,7 +114,7 @@ interface PRNG {
 }
 
 /**
-* Interface for generating uniformly distributed pseudorandom numbers with pre-specified parameter values.
+* Interface for generating pseudorandom numbers drawn from a continuous uniform distribution with pre-specified parameter values.
 */
 interface UnaryFunction extends PRNG {
 	/**
@@ -128,7 +128,7 @@ interface UnaryFunction extends PRNG {
 }
 
 /**
-* Interface for generating uniformly distributed pseudorandom numbers without pre-specified parameter values.
+* Interface for generating pseudorandom numbers drawn from a continuous uniform distribution without pre-specified parameter values.
 */
 interface TernaryFunction extends PRNG {
 	/**

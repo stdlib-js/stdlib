@@ -16,253 +16,253 @@
 * limitations under the License.
 */
 
-import uniform = require( './index' );
+import random = require( './index' );
 
 
 // TESTS //
 
 // The function returns an array...
 {
-	uniform( 10, 2, 3 ); // $ExpectType RandomArray
-	uniform( 10, 1, 2 ); // $ExpectType RandomArray
-	uniform( 10, 1, 2, {} ); // $ExpectType RandomArray
+	random( 10, 2, 3 ); // $ExpectType RandomArray
+	random( 10, 1, 2 ); // $ExpectType RandomArray
+	random( 10, 1, 2, {} ); // $ExpectType RandomArray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
 {
-	uniform( '5', 2.0, 5.0 ); // $ExpectError
-	uniform( true, 2.0, 5.0 ); // $ExpectError
-	uniform( false, 2.0, 5.0 ); // $ExpectError
-	uniform( null, 2.0, 5.0 ); // $ExpectError
-	uniform( [], 2.0, 5.0 ); // $ExpectError
-	uniform( {}, 2.0, 5.0 ); // $ExpectError
-	uniform( ( x: number ): number => x, 2.0, 5.0 ); // $ExpectError
+	random( '5', 2.0, 5.0 ); // $ExpectError
+	random( true, 2.0, 5.0 ); // $ExpectError
+	random( false, 2.0, 5.0 ); // $ExpectError
+	random( null, 2.0, 5.0 ); // $ExpectError
+	random( [], 2.0, 5.0 ); // $ExpectError
+	random( {}, 2.0, 5.0 ); // $ExpectError
+	random( ( x: number ): number => x, 2.0, 5.0 ); // $ExpectError
 
-	uniform( '5', 2.0, 5.0, {} ); // $ExpectError
-	uniform( true, 2.0, 5.0, {} ); // $ExpectError
-	uniform( false, 2.0, 5.0, {} ); // $ExpectError
-	uniform( null, 2.0, 5.0, {} ); // $ExpectError
-	uniform( [], 2.0, 5.0, {} ); // $ExpectError
-	uniform( {}, 2.0, 5.0, {} ); // $ExpectError
-	uniform( ( x: number ): number => x, 2.0, 5.0, {} ); // $ExpectError
+	random( '5', 2.0, 5.0, {} ); // $ExpectError
+	random( true, 2.0, 5.0, {} ); // $ExpectError
+	random( false, 2.0, 5.0, {} ); // $ExpectError
+	random( null, 2.0, 5.0, {} ); // $ExpectError
+	random( [], 2.0, 5.0, {} ); // $ExpectError
+	random( {}, 2.0, 5.0, {} ); // $ExpectError
+	random( ( x: number ): number => x, 2.0, 5.0, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a number...
 {
-	uniform( 10, '5', 5.0 ); // $ExpectError
-	uniform( 10, true, 5.0 ); // $ExpectError
-	uniform( 10, false, 5.0 ); // $ExpectError
-	uniform( 10, null, 5.0 ); // $ExpectError
-	uniform( 10, [], 5.0 ); // $ExpectError
-	uniform( 10, {}, 5.0 ); // $ExpectError
-	uniform( 10, ( x: number ): number => x, 5.0 ); // $ExpectError
+	random( 10, '5', 5.0 ); // $ExpectError
+	random( 10, true, 5.0 ); // $ExpectError
+	random( 10, false, 5.0 ); // $ExpectError
+	random( 10, null, 5.0 ); // $ExpectError
+	random( 10, [], 5.0 ); // $ExpectError
+	random( 10, {}, 5.0 ); // $ExpectError
+	random( 10, ( x: number ): number => x, 5.0 ); // $ExpectError
 
-	uniform( 10, '5', 5.0, {} ); // $ExpectError
-	uniform( 10, true, 5.0, {} ); // $ExpectError
-	uniform( 10, false, 5.0, {} ); // $ExpectError
-	uniform( 10, null, 5.0, {} ); // $ExpectError
-	uniform( 10, [], 5.0, {} ); // $ExpectError
-	uniform( 10, {}, 5.0, {} ); // $ExpectError
-	uniform( 10, ( x: number ): number => x, 5.0, {} ); // $ExpectError
+	random( 10, '5', 5.0, {} ); // $ExpectError
+	random( 10, true, 5.0, {} ); // $ExpectError
+	random( 10, false, 5.0, {} ); // $ExpectError
+	random( 10, null, 5.0, {} ); // $ExpectError
+	random( 10, [], 5.0, {} ); // $ExpectError
+	random( 10, {}, 5.0, {} ); // $ExpectError
+	random( 10, ( x: number ): number => x, 5.0, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
 {
-	uniform( 10, 2.0, '5' ); // $ExpectError
-	uniform( 10, 2.0, true ); // $ExpectError
-	uniform( 10, 2.0, false ); // $ExpectError
-	uniform( 10, 2.0, null ); // $ExpectError
-	uniform( 10, 2.0, [] ); // $ExpectError
-	uniform( 10, 2.0, {} ); // $ExpectError
-	uniform( 10, 2.0, ( x: number ): number => x ); // $ExpectError
+	random( 10, 2.0, '5' ); // $ExpectError
+	random( 10, 2.0, true ); // $ExpectError
+	random( 10, 2.0, false ); // $ExpectError
+	random( 10, 2.0, null ); // $ExpectError
+	random( 10, 2.0, [] ); // $ExpectError
+	random( 10, 2.0, {} ); // $ExpectError
+	random( 10, 2.0, ( x: number ): number => x ); // $ExpectError
 
-	uniform( 10, 2.0, '5', {} ); // $ExpectError
-	uniform( 10, 2.0, true, {} ); // $ExpectError
-	uniform( 10, 2.0, false, {} ); // $ExpectError
-	uniform( 10, 2.0, null, {} ); // $ExpectError
-	uniform( 10, 2.0, [], {} ); // $ExpectError
-	uniform( 10, 2.0, {}, {} ); // $ExpectError
-	uniform( 10, 2.0, ( x: number ): number => x, {} ); // $ExpectError
+	random( 10, 2.0, '5', {} ); // $ExpectError
+	random( 10, 2.0, true, {} ); // $ExpectError
+	random( 10, 2.0, false, {} ); // $ExpectError
+	random( 10, 2.0, null, {} ); // $ExpectError
+	random( 10, 2.0, [], {} ); // $ExpectError
+	random( 10, 2.0, {}, {} ); // $ExpectError
+	random( 10, 2.0, ( x: number ): number => x, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an options argument which is not a valid object...
 {
-	uniform( 10, 2.0, 5.0, '5' ); // $ExpectError
-	uniform( 10, 2.0, 5.0, 5 ); // $ExpectError
-	uniform( 10, 2.0, 5.0, true ); // $ExpectError
-	uniform( 10, 2.0, 5.0, false ); // $ExpectError
-	uniform( 10, 2.0, 5.0, [] ); // $ExpectError
-	uniform( 10, 2.0, 5.0, ( x: number ): number => x ); // $ExpectError
+	random( 10, 2.0, 5.0, '5' ); // $ExpectError
+	random( 10, 2.0, 5.0, 5 ); // $ExpectError
+	random( 10, 2.0, 5.0, true ); // $ExpectError
+	random( 10, 2.0, 5.0, false ); // $ExpectError
+	random( 10, 2.0, 5.0, [] ); // $ExpectError
+	random( 10, 2.0, 5.0, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a `dtype` option which is not a supported data type...
 {
-	uniform( 10, 2.0, 5.0, { 'dtype': 123 } ); // $ExpectError
-	uniform( 10, 2.0, 5.0, { 'dtype': 'abc' } ); // $ExpectError
-	uniform( 10, 2.0, 5.0, { 'dtype': null } ); // $ExpectError
-	uniform( 10, 2.0, 5.0, { 'dtype': [] } ); // $ExpectError
-	uniform( 10, 2.0, 5.0, { 'dtype': {} } ); // $ExpectError
-	uniform( 10, 2.0, 5.0, { 'dtype': ( x: number ): number => x } ); // $ExpectError
+	random( 10, 2.0, 5.0, { 'dtype': 123 } ); // $ExpectError
+	random( 10, 2.0, 5.0, { 'dtype': 'abc' } ); // $ExpectError
+	random( 10, 2.0, 5.0, { 'dtype': null } ); // $ExpectError
+	random( 10, 2.0, 5.0, { 'dtype': [] } ); // $ExpectError
+	random( 10, 2.0, 5.0, { 'dtype': {} } ); // $ExpectError
+	random( 10, 2.0, 5.0, { 'dtype': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	uniform(); // $ExpectError
-	uniform( 10 ); // $ExpectError
-	uniform( 10, 2.0 ); // $ExpectError
-	uniform( 10, 2.0, 5.0, {}, {} ); // $ExpectError
+	random(); // $ExpectError
+	random( 10 ); // $ExpectError
+	random( 10, 2.0 ); // $ExpectError
+	random( 10, 2.0, 5.0, {}, {} ); // $ExpectError
 }
 
 // Attached to main export is a `factory` method which returns a function...
 {
-	uniform.factory( 2.0, 5.0 ); // $ExpectType UnaryFunction
-	uniform.factory( 2.0, 5.0, { 'copy': false } ); // $ExpectType UnaryFunction
+	random.factory( 2.0, 5.0 ); // $ExpectType UnaryFunction
+	random.factory( 2.0, 5.0, { 'copy': false } ); // $ExpectType UnaryFunction
 
-	uniform.factory(); // $ExpectType TernaryFunction
-	uniform.factory( { 'copy': false } ); // $ExpectType TernaryFunction
+	random.factory(); // $ExpectType TernaryFunction
+	random.factory( { 'copy': false } ); // $ExpectType TernaryFunction
 }
 
 // The `factory` method returns a function which returns an array...
 {
-	const fcn1 = uniform.factory( 2.0, 5.0 );
+	const fcn1 = random.factory( 2.0, 5.0 );
 	fcn1( 10, ); // $ExpectType RandomArray
 
-	const fcn2 = uniform.factory();
+	const fcn2 = random.factory();
 	fcn2( 10, 2.0, 5.0 ); // $ExpectType RandomArray
 }
 
 // The compiler throws an error if the `factory` method is provided invalid arguments...
 {
-	uniform.factory( '5', 5.0 ); // $ExpectError
-	uniform.factory( true, 5.0 ); // $ExpectError
-	uniform.factory( false, 5.0 ); // $ExpectError
-	uniform.factory( [], 5.0 ); // $ExpectError
-	uniform.factory( {}, 5.0 ); // $ExpectError
-	uniform.factory( ( x: number ): number => x, 5.0 ); // $ExpectError
+	random.factory( '5', 5.0 ); // $ExpectError
+	random.factory( true, 5.0 ); // $ExpectError
+	random.factory( false, 5.0 ); // $ExpectError
+	random.factory( [], 5.0 ); // $ExpectError
+	random.factory( {}, 5.0 ); // $ExpectError
+	random.factory( ( x: number ): number => x, 5.0 ); // $ExpectError
 
-	uniform.factory( '5', 5.0, {} ); // $ExpectError
-	uniform.factory( true, 5.0, {} ); // $ExpectError
-	uniform.factory( false, 5.0, {} ); // $ExpectError
-	uniform.factory( [], 5.0, {} ); // $ExpectError
-	uniform.factory( {}, 5.0, {} ); // $ExpectError
-	uniform.factory( ( x: number ): number => x, 5.0, {} ); // $ExpectError
+	random.factory( '5', 5.0, {} ); // $ExpectError
+	random.factory( true, 5.0, {} ); // $ExpectError
+	random.factory( false, 5.0, {} ); // $ExpectError
+	random.factory( [], 5.0, {} ); // $ExpectError
+	random.factory( {}, 5.0, {} ); // $ExpectError
+	random.factory( ( x: number ): number => x, 5.0, {} ); // $ExpectError
 
-	uniform.factory( 2.0, '5' ); // $ExpectError
-	uniform.factory( 2.0, true ); // $ExpectError
-	uniform.factory( 2.0, false ); // $ExpectError
-	uniform.factory( 2.0, [] ); // $ExpectError
-	uniform.factory( 2.0, {} ); // $ExpectError
-	uniform.factory( 2.0, ( x: number ): number => x ); // $ExpectError
+	random.factory( 2.0, '5' ); // $ExpectError
+	random.factory( 2.0, true ); // $ExpectError
+	random.factory( 2.0, false ); // $ExpectError
+	random.factory( 2.0, [] ); // $ExpectError
+	random.factory( 2.0, {} ); // $ExpectError
+	random.factory( 2.0, ( x: number ): number => x ); // $ExpectError
 
-	uniform.factory( 2.0, '5', {} ); // $ExpectError
-	uniform.factory( 2.0, true, {} ); // $ExpectError
-	uniform.factory( 2.0, false, {} ); // $ExpectError
-	uniform.factory( 2.0, [], {} ); // $ExpectError
-	uniform.factory( 2.0, {}, {} ); // $ExpectError
-	uniform.factory( 2.0, ( x: number ): number => x, {} ); // $ExpectError
+	random.factory( 2.0, '5', {} ); // $ExpectError
+	random.factory( 2.0, true, {} ); // $ExpectError
+	random.factory( 2.0, false, {} ); // $ExpectError
+	random.factory( 2.0, [], {} ); // $ExpectError
+	random.factory( 2.0, {}, {} ); // $ExpectError
+	random.factory( 2.0, ( x: number ): number => x, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided an options argument which is not a valid object...
 {
-	uniform.factory( null ); // $ExpectError
-	uniform.factory( 2.0, 5.0, null ); // $ExpectError
+	random.factory( null ); // $ExpectError
+	random.factory( 2.0, 5.0, null ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `prng` option which is not a pseudorandom number generator...
 {
-	uniform.factory( 2.0, 5.0, { 'prng': 123 } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'prng': 'abc' } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'prng': null } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'prng': [] } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'prng': {} } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'prng': true ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'prng': 123 } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'prng': 'abc' } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'prng': null } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'prng': [] } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'prng': {} } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'prng': true ); // $ExpectError
 
-	uniform.factory( { 'prng': 123 } ); // $ExpectError
-	uniform.factory( { 'prng': 'abc' } ); // $ExpectError
-	uniform.factory( { 'prng': null } ); // $ExpectError
-	uniform.factory( { 'prng': [] } ); // $ExpectError
-	uniform.factory( { 'prng': {} } ); // $ExpectError
-	uniform.factory( { 'prng': true ); // $ExpectError
+	random.factory( { 'prng': 123 } ); // $ExpectError
+	random.factory( { 'prng': 'abc' } ); // $ExpectError
+	random.factory( { 'prng': null } ); // $ExpectError
+	random.factory( { 'prng': [] } ); // $ExpectError
+	random.factory( { 'prng': {} } ); // $ExpectError
+	random.factory( { 'prng': true ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
 {
-	uniform.factory( 2.0, 5.0, { 'seed': true } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'seed': 'abc' } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'seed': null } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'seed': [ 'a' ] } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'seed': {} } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'seed': ( x: number ): number => x } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'seed': true } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'seed': 'abc' } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'seed': null } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'seed': [ 'a' ] } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'seed': {} } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'seed': ( x: number ): number => x } ); // $ExpectError
 
-	uniform.factory( { 'seed': true } ); // $ExpectError
-	uniform.factory( { 'seed': 'abc' } ); // $ExpectError
-	uniform.factory( { 'seed': null } ); // $ExpectError
-	uniform.factory( { 'seed': [ 'a' ] } ); // $ExpectError
-	uniform.factory( { 'seed': {} } ); // $ExpectError
-	uniform.factory( { 'seed': ( x: number ): number => x } ); // $ExpectError
+	random.factory( { 'seed': true } ); // $ExpectError
+	random.factory( { 'seed': 'abc' } ); // $ExpectError
+	random.factory( { 'seed': null } ); // $ExpectError
+	random.factory( { 'seed': [ 'a' ] } ); // $ExpectError
+	random.factory( { 'seed': {} } ); // $ExpectError
+	random.factory( { 'seed': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `state` option which is not a valid state...
 {
-	uniform.factory( 2.0, 5.0, { 'state': 123 } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'state': 'abc' } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'state': null } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'state': [] } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'state': {} } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'state': true ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'state': ( x: number ): number => x } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'state': 123 } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'state': 'abc' } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'state': null } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'state': [] } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'state': {} } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'state': true ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'state': ( x: number ): number => x } ); // $ExpectError
 
-	uniform.factory( { 'state': 123 } ); // $ExpectError
-	uniform.factory( { 'state': 'abc' } ); // $ExpectError
-	uniform.factory( { 'state': null } ); // $ExpectError
-	uniform.factory( { 'state': [] } ); // $ExpectError
-	uniform.factory( { 'state': {} } ); // $ExpectError
-	uniform.factory( { 'state': true ); // $ExpectError
-	uniform.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
+	random.factory( { 'state': 123 } ); // $ExpectError
+	random.factory( { 'state': 'abc' } ); // $ExpectError
+	random.factory( { 'state': null } ); // $ExpectError
+	random.factory( { 'state': [] } ); // $ExpectError
+	random.factory( { 'state': {} } ); // $ExpectError
+	random.factory( { 'state': true ); // $ExpectError
+	random.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `copy` option which is not a boolean...
 {
-	uniform.factory( 2.0, 5.0, { 'copy': 123 } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'copy': 'abc' } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'copy': null } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'copy': [] } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'copy': {} } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'copy': ( x: number ): number => x } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'copy': 123 } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'copy': 'abc' } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'copy': null } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'copy': [] } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'copy': {} } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'copy': ( x: number ): number => x } ); // $ExpectError
 
-	uniform.factory( { 'copy': 123 } ); // $ExpectError
-	uniform.factory( { 'copy': 'abc' } ); // $ExpectError
-	uniform.factory( { 'copy': null } ); // $ExpectError
-	uniform.factory( { 'copy': [] } ); // $ExpectError
-	uniform.factory( { 'copy': {} } ); // $ExpectError
-	uniform.factory( { 'copy': ( x: number ): number => x } ); // $ExpectError
+	random.factory( { 'copy': 123 } ); // $ExpectError
+	random.factory( { 'copy': 'abc' } ); // $ExpectError
+	random.factory( { 'copy': null } ); // $ExpectError
+	random.factory( { 'copy': [] } ); // $ExpectError
+	random.factory( { 'copy': {} } ); // $ExpectError
+	random.factory( { 'copy': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `dtype` option which is not a supported data type...
 {
-	uniform.factory( 2.0, 5.0, { 'dtype': 123 } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'dtype': 'abc' } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'dtype': null } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'dtype': [] } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'dtype': {} } ); // $ExpectError
-	uniform.factory( 2.0, 5.0, { 'dtype': ( x: number ): number => x } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'dtype': 123 } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'dtype': 'abc' } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'dtype': null } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'dtype': [] } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'dtype': {} } ); // $ExpectError
+	random.factory( 2.0, 5.0, { 'dtype': ( x: number ): number => x } ); // $ExpectError
 
-	uniform.factory( { 'dtype': 123 } ); // $ExpectError
-	uniform.factory( { 'dtype': 'abc' } ); // $ExpectError
-	uniform.factory( { 'dtype': null } ); // $ExpectError
-	uniform.factory( { 'dtype': [] } ); // $ExpectError
-	uniform.factory( { 'dtype': {} } ); // $ExpectError
-	uniform.factory( { 'dtype': ( x: number ): number => x } ); // $ExpectError
+	random.factory( { 'dtype': 123 } ); // $ExpectError
+	random.factory( { 'dtype': 'abc' } ); // $ExpectError
+	random.factory( { 'dtype': null } ); // $ExpectError
+	random.factory( { 'dtype': [] } ); // $ExpectError
+	random.factory( { 'dtype': {} } ); // $ExpectError
+	random.factory( { 'dtype': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided more than three arguments...
 {
-	uniform.factory( 2.0, 5.0, {}, {} ); // $ExpectError
+	random.factory( 2.0, 5.0, {}, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function returned by the `factory` method is provided invalid arguments...
 {
-	const fcn1 = uniform.factory( 2.0, 5.0 );
+	const fcn1 = random.factory( 2.0, 5.0 );
 	fcn1( '5' ); // $ExpectError
 	fcn1( true ); // $ExpectError
 	fcn1( false ); // $ExpectError
@@ -279,7 +279,7 @@ import uniform = require( './index' );
 	fcn1( {}, {} ); // $ExpectError
 	fcn1( ( x: number ): number => x, {} ); // $ExpectError
 
-	const fcn2 = uniform.factory();
+	const fcn2 = random.factory();
 	fcn2( true, 2.0, 5.0 ); // $ExpectError
 	fcn2( false, 2.0, 5.0 ); // $ExpectError
 	fcn2( '5', 2.0, 5.0 ); // $ExpectError
@@ -325,7 +325,7 @@ import uniform = require( './index' );
 
 // The compiler throws an error if the function returned by the `factory` method is provided a `dtype` option which is not a supported data type...
 {
-	const fcn1 = uniform.factory();
+	const fcn1 = random.factory();
 	fcn1( 2.0, 5.0, { 'dtype': 123 } ); // $ExpectError
 	fcn1( 2.0, 5.0, { 'dtype': 'abc' } ); // $ExpectError
 	fcn1( 2.0, 5.0, { 'dtype': null } ); // $ExpectError
@@ -333,7 +333,7 @@ import uniform = require( './index' );
 	fcn1( 2.0, 5.0, { 'dtype': {} } ); // $ExpectError
 	fcn1( 2.0, 5.0, { 'dtype': ( x: number ): number => x } ); // $ExpectError
 
-	const fcn2 = uniform.factory( 2.0, 5.0 );
+	const fcn2 = random.factory( 2.0, 5.0 );
 	fcn2( { 'dtype': 123 } ); // $ExpectError
 	fcn2( { 'dtype': 'abc' } ); // $ExpectError
 	fcn2( { 'dtype': null } ); // $ExpectError
@@ -344,11 +344,11 @@ import uniform = require( './index' );
 
 // The compiler throws an error if the function returned by the `factory` method is provided an unsupported number of arguments...
 {
-	const fcn1 = uniform.factory( 2.0, 5.0 );
+	const fcn1 = random.factory( 2.0, 5.0 );
 	fcn1(); // $ExpectError
 	fcn1( 1, 1, 1 ); // $ExpectError
 
-	const fcn2 = uniform.factory();
+	const fcn2 = random.factory();
 	fcn2(); // $ExpectError
 	fcn2( 1 ); // $ExpectError
 	fcn2( 1, 1, 1, 1 ); // $ExpectError
