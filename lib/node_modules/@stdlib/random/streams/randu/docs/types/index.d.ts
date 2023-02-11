@@ -61,12 +61,12 @@ interface Options {
 	/**
 	* Pseudorandom number generator seed.
 	*/
-	seed?: random.PRNGSeedMT19937;
+	seed?: random.PRNGSeedMT19937 | random.PRNGSeedMINSTD;
 
 	/**
 	* Pseudorandom number generator state.
 	*/
-	state?: random.PRNGStateMT19937;
+	state?: random.PRNGStateMT19937 | random.PRNGStateMINSTD;
 
 	/**
 	* Specifies whether to copy a provided pseudorandom number generator state (default: `true`).
