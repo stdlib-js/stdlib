@@ -125,7 +125,7 @@ import random = require( './index' );
 // The `factory` method returns a function which returns an array...
 {
 	const fcn1 = random.factory( 2.0, 5.0 );
-	fcn1( 10, ); // $ExpectType RandomArray
+	fcn1( 10 ); // $ExpectType RandomArray
 
 	const fcn2 = random.factory();
 	fcn2( 10, 2.0, 5.0 ); // $ExpectType RandomArray
