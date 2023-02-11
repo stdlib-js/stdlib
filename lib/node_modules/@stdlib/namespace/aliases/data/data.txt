@@ -2357,6 +2357,7 @@ random.array.beta
 random.array.discreteUniform
 random.array.lognormal
 random.array.normal
+random.array.randu
 random.array.uniform
 random.iterators.arcsine
 random.iterators.bernoulli

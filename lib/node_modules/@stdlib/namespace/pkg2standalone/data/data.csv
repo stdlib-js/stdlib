@@ -2357,6 +2357,7 @@
 "@stdlib/random/array/discrete-uniform","@stdlib/random-array-discrete-uniform"
 "@stdlib/random/array/lognormal","@stdlib/random-array-lognormal"
 "@stdlib/random/array/normal","@stdlib/random-array-normal"
+"@stdlib/random/array/randu","@stdlib/random-array-randu"
 "@stdlib/random/array/uniform","@stdlib/random-array-uniform"
 "@stdlib/random/iter/arcsine","@stdlib/random-iter-arcsine"
 "@stdlib/random/iter/bernoulli","@stdlib/random-iter-bernoulli"
