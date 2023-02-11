@@ -35,12 +35,12 @@ interface Options {
 	/**
 	* Pseudorandom number generator seed.
 	*/
-	seed?: any;
+	seed?: random.PRNGSeedMT19937 | random.PRNGSeedMINSTD;
 
 	/**
 	* Pseudorandom number generator state.
 	*/
-	state?: any;
+	state?: random.PRNGStateMT19937 | random.PRNGStateMINSTD;
 
 	/**
 	* Boolean indicating whether to copy a provided pseudorandom number generator state (default: true).
@@ -65,7 +65,7 @@ interface RandIter extends Iterator {
 	/**
 	* Pseudorandom number generator seed.
 	*/
-	readonly seed: any;
+	readonly seed: random.PRNGSeedMT19937 | random.PRNGSeedMINSTD;
 
 	/**
 	* Length of generator seed.
@@ -75,7 +75,7 @@ interface RandIter extends Iterator {
 	/**
 	* Generator state.
 	*/
-	state: any;
+	state: random.PRNGStateMT19937 | random.PRNGStateMINSTD;
 
 	/**
 	* Length of generator state.
