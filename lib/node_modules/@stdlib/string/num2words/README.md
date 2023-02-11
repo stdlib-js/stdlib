@@ -116,6 +116,83 @@ out = num2words( 47, {
 
 <!-- /.examples -->
 
+* * *
+
+<section class="cli">
+
+## CLI
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: num2words [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
+         --lang lang           Language. Default: 'en'.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+### Notes
+
+-   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
+
+    ```bash
+    # Not escaped...
+    $ echo -n $'15\n23' | num2words --split /\r?\n/
+
+    # Escaped...
+    $ echo -n $'15\n23' | num2words --split /\\r?\\n/
+    ```
+
+-   The implementation ignores trailing delimiters.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ num2words '10'
+ten
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n '23' | num2words
+twenty-three
+```
+
+By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
+
+```bash
+$ echo -n '10.3\t23.1' | num2words --split '\t'
+ten point three
+twenty-three point one
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
@@ -135,6 +212,10 @@ out = num2words( 47, {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 </section>
 
