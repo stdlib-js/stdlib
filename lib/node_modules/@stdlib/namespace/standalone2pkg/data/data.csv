@@ -2446,6 +2446,7 @@
 "@stdlib/random-strided-discrete-uniform","@stdlib/random/strided/discrete-uniform"
 "@stdlib/random-strided-lognormal","@stdlib/random/strided/lognormal"
 "@stdlib/random-strided-normal","@stdlib/random/strided/normal"
+"@stdlib/random-strided-randu","@stdlib/random/strided/randu"
 "@stdlib/random-strided-uniform","@stdlib/random/strided/uniform"
 "@stdlib/stats-ranks","@stdlib/stats/ranks"
 "@stdlib/fs-read-dir","@stdlib/fs/read-dir"
