@@ -117,7 +117,7 @@
     > var out = fcn( 3, -10, 10 )
     <Float64Array>
 
-    // Provide `a` and `b`:
+    // Provide distribution parameters:
     > fcn = {{alias}}.factory( -10, 10 );
     > out = fcn( 3 )
     <Float64Array>
