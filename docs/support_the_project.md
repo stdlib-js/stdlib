@@ -31,13 +31,13 @@ You can help in the following ways:
 
 If you want to be a sponsor 🤗, you can donate to one or more of the following:
 
--   Athan's [Patreon][patreon-stdlib]: <https://www.patreon.com/athan>
--   Athan's [GitHub][github-stdlib]: <https://github.com/sponsors/kgryte>
+-   [Open Collective][open-collective-stdlib]: <https://opencollective.com/stdlib>
+-   [GitHub Sponsors][github-sponsors-stdlib]: <https://github.com/sponsors/stdlib-js>
 
 Thank you for your support!
 
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
 
-[patreon-stdlib]: https://www.patreon.com/athan
+[open-collective-stdlib]: https://opencollective.com/stdlib
 
-[github-stdlib]: https://github.com/sponsors/kgryte
+[github-sponsors-stdlib]: https://github.com/sponsors/stdlib-js
