@@ -101,8 +101,12 @@ jobs:
                 page=$((page+1))
             done
           else
-            # Get changed files by comparing the current commit to the commit before the push event:
-            files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
+            # Get changed files by comparing the current commit to the commit before the push event or with its parent:
+            if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then
+              files=$(git diff --diff-filter=AM --name-only HEAD~ ${{ github.event.after }})
+            else
+              files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
+            fi
           fi
           # Keep only examples and `README.md` files:
           files=$(echo "$files" | grep -E 'examples/|README.md' | tr '\n' ' ' | sed 's/ $//')
