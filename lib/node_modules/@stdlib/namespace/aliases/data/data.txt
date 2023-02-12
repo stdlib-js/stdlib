@@ -2355,6 +2355,7 @@ quarterOfYear
 random.array.arcsine
 random.array.beta
 random.array.discreteUniform
+random.array.exponential
 random.array.lognormal
 random.array.normal
 random.array.randu

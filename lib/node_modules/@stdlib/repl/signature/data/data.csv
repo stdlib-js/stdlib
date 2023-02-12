@@ -4018,6 +4018,8 @@ random.strided.lognormal,"random.strided.lognormal( N, mu, sm, sigma, ss, out, s
 random.strided.lognormal.ndarray,"random.strided.lognormal.ndarray( N, mu, sm, om, sigma, ss, os, out, so, oo[, options] )"
 random.strided.normal,"random.strided.normal( N, mu, sm, sigma, ss, out, so[, options] )"
 random.strided.normal.ndarray,"random.strided.normal.ndarray( N, mu, sm, om, sigma, ss, os, out, so, oo[, options] )"
+random.strided.randu,"random.strided.randu( N, out, so[, options] )"
+random.strided.randu.ndarray,"random.strided.randu.ndarray( N, out, so, oo[, options] )"
 random.strided.uniform,"random.strided.uniform( N, a, sa, b, sb, out, so[, options] )"
 random.strided.uniform.ndarray,"random.strided.uniform.ndarray( N, a, sa, oa, b, sb, ob, out, so, oo[, options] )"
 ranks,"ranks( arr[, options] )"

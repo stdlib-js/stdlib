@@ -4018,6 +4018,8 @@ random.strided.lognormal,"random.strided.lognormal( N:integer, mu:ArrayLikeObjec
 random.strided.lognormal.ndarray,"random.strided.lognormal.ndarray( N:integer, mu:ArrayLikeObject, sm:integer, om:integer, sigma:ArrayLikeObject, ss:integer, os:integer, out:ArrayLikeObject, so:integer, oo:integer[, options:Object] )"
 random.strided.normal,"random.strided.normal( N:integer, mu:ArrayLikeObject, sm:integer, sigma:ArrayLikeObject, ss:integer, out:ArrayLikeObject, so:integer[, options:Object] )"
 random.strided.normal.ndarray,"random.strided.normal.ndarray( N:integer, mu:ArrayLikeObject, sm:integer, om:integer, sigma:ArrayLikeObject, ss:integer, os:integer, out:ArrayLikeObject, so:integer, oo:integer[, options:Object] )"
+random.strided.randu,"random.strided.randu( N:integer, out:ArrayLikeObject, so:integer[, options:Object] )"
+random.strided.randu.ndarray,"random.strided.randu.ndarray( N:integer, out:ArrayLikeObject, so:integer, oo:integer[, options:Object] )"
 random.strided.uniform,"random.strided.uniform( N:integer, a:ArrayLikeObject, sa:integer, b:ArrayLikeObject, sb:integer, out:ArrayLikeObject, so:integer[, options:Object] )"
 random.strided.uniform.ndarray,"random.strided.uniform.ndarray( N:integer, a:ArrayLikeObject, sa:integer, oa:integer, b:ArrayLikeObject, sb:integer, ob:integer, out:ArrayLikeObject, so:integer, oo:integer[, options:Object] )"
 ranks,"ranks( arr:Array<number>[, options:Object] )"

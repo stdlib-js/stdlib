@@ -2355,6 +2355,7 @@
 "@stdlib/random/array/arcsine",random.array.arcsine
 "@stdlib/random/array/beta",random.array.beta
 "@stdlib/random/array/discrete-uniform",random.array.discreteUniform
+"@stdlib/random/array/exponential",random.array.exponential
 "@stdlib/random/array/lognormal",random.array.lognormal
 "@stdlib/random/array/normal",random.array.normal
 "@stdlib/random/array/randu",random.array.randu
