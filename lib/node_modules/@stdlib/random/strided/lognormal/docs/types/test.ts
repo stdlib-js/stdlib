@@ -447,23 +447,23 @@ import random = require( './index' );
 	const x2 = new Float64Array( 10 );
 	const out = new Float64Array( 10 );
 
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, '10' ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, true ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, false ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, null ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, undefined ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, [] ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, {} ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, ( x: number ): number => x ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, '10' ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, true ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, false ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, null ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, undefined ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, [] ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, {} ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, ( x: number ): number => x ); // $ExpectError
 
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, '10', {} ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, true, {} ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, false, {} ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, null, {} ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, undefined, {} ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, [], {} ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, {}, {} ); // $ExpectError
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, out, 1, ( x: number ): number => x, {} ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, '10', {} ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, true, {} ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, false, {} ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, null, {} ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, undefined, {} ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, [], {} ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, {}, {} ); // $ExpectError
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, ( x: number ): number => x, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an invalid option...
