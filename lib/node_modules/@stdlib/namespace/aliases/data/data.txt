@@ -2445,6 +2445,7 @@ random.streams.weibull
 random.strided.arcsine
 random.strided.beta
 random.strided.discreteUniform
+random.strided.exponential
 random.strided.lognormal
 random.strided.normal
 random.strided.randu

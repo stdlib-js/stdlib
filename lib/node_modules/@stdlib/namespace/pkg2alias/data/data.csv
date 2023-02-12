@@ -2445,6 +2445,7 @@
 "@stdlib/random/strided/arcsine",random.strided.arcsine
 "@stdlib/random/strided/beta",random.strided.beta
 "@stdlib/random/strided/discrete-uniform",random.strided.discreteUniform
+"@stdlib/random/strided/exponential",random.strided.exponential
 "@stdlib/random/strided/lognormal",random.strided.lognormal
 "@stdlib/random/strided/normal",random.strided.normal
 "@stdlib/random/strided/randu",random.strided.randu
