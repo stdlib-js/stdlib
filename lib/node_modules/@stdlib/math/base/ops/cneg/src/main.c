@@ -21,7 +21,7 @@
 #include "stdlib/complex/reim.h"
 
 /**
-* Negate a double-precision complex floating-point number.
+* Negates a double-precision complex floating-point number.
 *
 * @param z        input value
 * @return         result
@@ -44,8 +44,6 @@
 stdlib_complex128_t stdlib_base_cneg( const stdlib_complex128_t z ) {
 	double re;
 	double im;
-
 	stdlib_reim( z, &re, &im );
-
 	return stdlib_complex128( -re, -im );
 }
