@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -17,27 +17,7 @@
 */
 
 #include "stdlib/math/base/special/cabs.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/reim.h"
-#include <stdio.h>
+#include "stdlib/math/base/napi/unary.h"
 
-int main() {
-	const stdlib_complex128_t x[] = {
-		stdlib_complex128( 3.14, 1.0 ),
-		stdlib_complex128( -3.14, -1.0 ),
-		stdlib_complex128( 0.0, 0.0 ),
-		stdlib_complex128( 0.0/0.0, 0.0/0.0 )
-	};
-
-	stdlib_complex128_t v;
-	double re;
-	double im;
-	double y;
-	int i;
-	for ( i = 0; i < 4; i++ ) {
-		v = x[ i ];
-		y = stdlib_base_cabs( v );
-		stdlib_reim( v, &re, &im );
-		printf( "f(%lf + %lf) = %lf\n", re, im, y );
-	}
-}
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_Z_D( stdlib_base_cabs )

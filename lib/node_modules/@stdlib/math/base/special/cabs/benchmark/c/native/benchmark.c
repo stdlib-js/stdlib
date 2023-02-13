@@ -20,7 +20,8 @@
 * Benchmark `cabs`.
 */
 #include "stdlib/math/base/special/cabs.h"
-#include <complex.h>
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -94,7 +95,6 @@ double rand_double() {
 * @return elapsed time in seconds
 */
 double benchmark() {
-	double complex z;
 	double elapsed;
 	double re;
 	double im;
@@ -102,11 +102,13 @@ double benchmark() {
 	double t;
 	int i;
 
+	stdlib_complex128_t z;
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		re = ( 1000.0*rand_double() ) - 500.0;
 		im = ( 1000.0*rand_double() ) - 500.0;
-		z = re + im*I;
+		z = stdlib_complex128( re, im );
 		y = stdlib_base_cabs( z );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
