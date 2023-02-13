@@ -1,34 +1,27 @@
 
-{{alias}}( [out,] re, im )
-    Negates a complex number.
+{{alias}}( z )
+    Negates a double-precision complex floating-point number.
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Output array.
-
-    re: number
-        Real component.
-
-    im: number
-        Imaginary component.
+    z: Complex128
+       Complex number.
 
     Returns
     -------
-    out: Array|TypedArray|Object
-        Negated components.
+    out: Complex128
+        Result.
 
     Examples
     --------
-    > var out = {{alias}}( -4.2, 5.5 )
-    [ 4.2, -5.5 ]
-
-    // Provide an output array:
-    > out = new {{alias:@stdlib/array/float64}}( 2 );
-    > var v = {{alias}}( out, -4.2, 5.5 )
-    <Float64Array>[ 4.2, -5.5 ]
-    > var bool = ( v === out )
-    true
+    > var z = new {{alias:@stdlib/complex/float64}}( -4.2, 5.5 )
+    <Complex128>
+    > var v = {{alias}}( z )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/real}}( v )
+    4.2
+    > var im = {{alias:@stdlib/complex/imag}}( v )
+    -5.5
 
     See Also
     --------

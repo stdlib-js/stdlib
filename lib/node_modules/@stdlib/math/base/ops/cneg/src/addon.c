@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,24 +16,8 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/ops/cneg.h"
+#include "stdlib/math/base/napi/unary.h"
 
-var Complex128 = require( '@stdlib/complex/float64' );
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var cneg = require( './../lib' );
-
-function randomComplex() {
-	var re = discreteUniform( -50, 50 );
-	var im = discreteUniform( -50, 50 );
-	return new Complex128( re, im );
-}
-
-var z;
-var o;
-var i;
-
-for ( i = 0; i < 100; i++ ) {
-	z = randomComplex();
-	o = cneg( z );
-	console.log( 'negate(%s) = %s', z.toString(), o.toString() );
-}
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_Z_Z( stdlib_base_cneg )

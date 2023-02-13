@@ -20,49 +20,66 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
-* Negates a complex number.
+* Negates a double-precision complex floating-point number.
 *
-* @param out - output array
-* @param re - real component
-* @param im - imaginary component
-* @returns real and imaginary components
+* @param z - complex number
+* @returns result
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
 *
-* var out = new Float32Array( 2 );
+* var z1 = new Complex128( -4.2, 5.5 );
+* // returns <Complex128>
 *
-* var v = cneg( out, -4.2, 5.5 );
-* // returns <Float32Array>[ 4.2, -5.5 ]
+* var out = cneg( z1 );
+* // returns <Complex128>
 *
-* var bool = ( v === out );
-* // returns true
+* var re = real( out );
+* // returns 4.2
+*
+* var im = imag( out );
+* // returns -5.5
+*
+* @example
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
+*
+* var z2 = new Complex128( 0.0, 0.0 );
+* // returns <Complex128>
+*
+* var out = cneg( z2 );
+* // returns <Complex128>
+*
+* var re = real( out );
+* // returns -0.0
+*
+* var im = imag( out );
+* // returns -0.0
+*
+* @example
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
+*
+* var z3 = new Complex128( NaN, NaN );
+* // returns <Complex128>
+*
+* var out = cneg( z3 );
+* // returns <Complex128>
+*
+* var re = real( out );
+* // returns NaN
+*
+* var im = imag( out );
+* // returns NaN
 */
-declare function cneg( out: ArrayLike<number>, re: number, im: number ): ArrayLike<number>; // tslint-disable-line max-line-length
-
-/**
-* Negates a complex number.
-*
-* @param re - real component
-* @param im - imaginary component
-* @returns real and imaginary components
-*
-* @example
-* var v = cneg( -4.2, 5.5 );
-* // returns [ 4.2, -5.5 ]
-*
-* @example
-* var v = cneg( 0.0, 0.0 );
-* // returns [ -0.0, -0.0 ]
-*
-* @example
-* var v = cneg( NaN, NaN );
-* // returns [ NaN, NaN ]
-*/
-declare function cneg( re: number, im: number ): ArrayLike<number>;
+declare function cneg( z: Complex128 ): Complex128;
 
 
 // EXPORTS //

@@ -16,53 +16,36 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import cneg = require( './index' );
 
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns a double-precision complex floating-point number...
 {
-	cneg( -4, 3 ); // $ExpectType ArrayLike<number>
-	cneg( [], 5, 3 ); // $ExpectType ArrayLike<number>
+	const z = new Complex128( 1.0, 1.0 );
+
+	cneg( z ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the function is provided an argument which is not a complex number...
 {
-	cneg( true, 3 ); // $ExpectError
-	cneg( false, 3 ); // $ExpectError
-	cneg( null, 3 ); // $ExpectError
-	cneg( undefined, 3 ); // $ExpectError
-	cneg( '5', 3 ); // $ExpectError
-	cneg( [], 3 ); // $ExpectError
-	cneg( {}, 3 ); // $ExpectError
-	cneg( ( x: number ): number => x, 3 ); // $ExpectError
+	cneg( true ); // $ExpectError
+	cneg( false ); // $ExpectError
+	cneg( null ); // $ExpectError
+	cneg( undefined ); // $ExpectError
+	cneg( '5' ); // $ExpectError
+	cneg( [] ); // $ExpectError
+	cneg( {} ); // $ExpectError
+	cneg( ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided an imaginary component which is not a number...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	cneg( 5, true ); // $ExpectError
-	cneg( 5, false ); // $ExpectError
-	cneg( 5, null ); // $ExpectError
-	cneg( 5, undefined ); // $ExpectError
-	cneg( 5, '5' ); // $ExpectError
-	cneg( 5, [] ); // $ExpectError
-	cneg( 5, {} ); // $ExpectError
-	cneg( 5, ( x: number ): number => x ); // $ExpectError
-}
+	const z = new Complex128( 1.0, 1.0 );
 
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	cneg( true, 5, 3 ); // $ExpectError
-	cneg( false, 5, 3 ); // $ExpectError
-	cneg( 'abc', 5, 3 ); // $ExpectError
-	cneg( {}, 5, 3 ); // $ExpectError
-	cneg( ( x: number ): number => x, 5, 3 ); // $ExpectError
-	cneg( 123, 5, 3 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided insufficient arguments...
-{
 	cneg(); // $ExpectError
-	cneg( 2 ); // $ExpectError
+	cneg( z, z ); // $ExpectError
+	cneg( z, z, z ); // $ExpectError
 }
