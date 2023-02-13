@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/ops/cneg",
   "version": "0.0.0",
-  "description": "Negate a complex number.",
+  "description": "Negate a double-precision complex floating-point number.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -14,6 +14,7 @@
     }
   ],
   "main": "./lib",
+  "gypfile": true,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",

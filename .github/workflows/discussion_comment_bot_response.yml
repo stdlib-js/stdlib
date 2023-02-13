@@ -38,10 +38,6 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-      # Checkout the repository with LFS caching:
-      - name: 'Checkout repository'
-        uses: nschloe/action-cached-lfs-checkout@v1
-
       # Run the chatbot action:
       - name: 'Run chatbot action'
         uses: stdlib-js/stdlib-chat-bot@main
