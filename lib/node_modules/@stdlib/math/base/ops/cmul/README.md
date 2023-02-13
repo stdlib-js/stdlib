@@ -173,7 +173,7 @@ stdlib_complex128_t stdlib_base_cmul( const stdlib_complex128_t z1, const stdlib
 #include <stdio.h>
 
 int main() {
-    stdlib_complex128_t x[] = {
+    const stdlib_complex128_t x[] = {
         stdlib_complex128( 3.14, 1.5 ),
         stdlib_complex128( -3.14, 1.5 ),
         stdlib_complex128( 0.0, -0.0 ),
