@@ -93,10 +93,34 @@ The namespace contains the following functions:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var objectKeys = require( '@stdlib/utils/keys' );
 var ns = require( '@stdlib/string/base' );
 
-console.log( objectKeys( ns ) );
+// Generate a Pascal case string...
+var str = ns.pascalcase( 'beep boop' );
+// returns 'BeepBoop'
+
+// Tokenize a string into an array of string parts and format identifier objects...
+str = 'The %d %s foxes jumped over the %d %s dogs.';
+var tokens = ns.formatTokenize( str );
+// returns [ 'The ', {...}, ' ', {...}, ' foxes jumped over the ', {...}, ' ', {...}, ' dogs.' ]
+
+// Generate a string from a token array by interpolating values...
+str = ns.formatInterpolate( tokens, 3, 'quick', 4, 'lazy' );
+// returns 'The 3 quick foxes jumped over the 4 lazy dogs.'
+
+// Test whether a string starts with the characters of another string...
+str = 'Lorem ipsum dolor sit amet';
+var bool = ns.startsWith( str, 'Lorem' );
+// returns true
+
+// Test whether a string ends with the characters of another string...
+bool = ns.endsWith( str, 'amet' );
+// returns true
+
+// Trim whitespace characters from the beginning and end of a string...
+str = '   \t\n Lorem ipsum dolor sit amet   \n\t  ';
+str = ns.trim( str );
+// returns 'Lorem ipsum dolor sit amet'
 ```
 
 </section>
