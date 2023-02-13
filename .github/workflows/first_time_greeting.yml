@@ -20,7 +20,7 @@
 name: first_time_greeting
 
 # Workflow triggers:
-on: [pull_request, issues]
+on: [pull_request_target, issues]
 
 # Workflow jobs:
 jobs:
