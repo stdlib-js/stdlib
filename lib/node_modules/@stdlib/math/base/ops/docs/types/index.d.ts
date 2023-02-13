@@ -242,23 +242,61 @@ interface Namespace {
 	cmulf: typeof cmulf;
 
 	/**
-	* Negates a complex number.
+	* Negates a double-precision complex floating-point number.
 	*
-	* @param re - real component
-	* @param im - imaginary component
-	* @returns real and imaginary components
-	*
-	* @example
-	* var v = ns.cneg( -4.2, 5.5 );
-	* // returns [ 4.2, -5.5 ]
+	* @param z - complex number
+	* @returns result
 	*
 	* @example
-	* var v = ns.cneg( 0.0, 0.0 );
-	* // returns [ -0.0, -0.0 ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var z1 = new Complex128( -4.2, 5.5 );
+	* // returns <Complex128>
+	*
+	* var out = ns.cneg( z1 );
+	* // returns <Complex128>
+	*
+	* var re = real( out );
+	* // returns 4.2
+	*
+	* var im = imag( out );
+	* // returns -5.5
 	*
 	* @example
-	* var v = ns.cneg( NaN, NaN );
-	* // returns [ NaN, NaN ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var z2 = new Complex128( 0.0, 0.0 );
+	* // returns <Complex128>
+	*
+	* var out = ns.cneg( z2 );
+	* // returns <Complex128>
+	*
+	* var re = real( out );
+	* // returns -0.0
+	*
+	* var im = imag( out );
+	* // returns -0.0
+	*
+	* @example
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var z3 = new Complex128( NaN, NaN );
+	* // returns <Complex128>
+	*
+	* var out = ns.cneg( z3 );
+	* // returns <Complex128>
+	*
+	* var re = real( out );
+	* // returns NaN
+	*
+	* var im = imag( out );
+	* // returns NaN
 	*/
 	cneg: typeof cneg;
 
