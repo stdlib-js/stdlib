@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the hyperbolic cosine of a number.
+* Computes the hyperbolic cosine of a double-precision floating-point number.
 */
 double stdlib_base_cosh( const double x );
 

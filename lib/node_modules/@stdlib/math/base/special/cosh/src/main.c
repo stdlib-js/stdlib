@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The original C code, long comment, copyright, license, and constants are from [Cephes]{@link http://www.netlib.org/cephes}. The implementation follows the original, but has been modified for JavaScript.
+* The original C code, long comment, copyright, license, and constants are from [Cephes]{@link http://www.netlib.org/cephes}. The implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * Copyright 1985, 1995, 2000 by Stephen L. Moshier
@@ -35,7 +35,22 @@
 #include "stdlib/math/base/special/exp.h"
 
 /**
-* Computes the hyperbolic cosine of a number.
+* Computes the hyperbolic cosine of a double-precision floating-point number.
+*
+* ## Method
+*
+* ```tex
+* \operatorname{cosh}(x) = \frac{ \exp(x) + \exp(-x) }{2}
+* ```
+*
+* ## Notes
+*
+* -   Relative error:
+*
+*     | arithmetic | domain   | # trials | peak    | rms     |
+*     |:----------:|:--------:|:--------:|:-------:|:-------:|
+*     | DEC        | +- 88    | 50000    | 4.0e-17 | 7.7e-18 |
+*     | IEEE       | +-MAXLOG | 30000    | 2.6e-16 | 5.7e-17 |
 *
 * @param x    input value
 * @return     output value
@@ -45,12 +60,14 @@
 * // returns 1.0
 */
 double stdlib_base_cosh( const double x ) {
-	double xc = x;
-	if ( stdlib_base_is_nan( xc ) ) {
-		return xc;
+	double xc;
+	if ( stdlib_base_is_nan( x ) ) {
+		return x;
 	}
-	if ( xc < 0.0 ) {
-		xc = -xc;
+	if ( x < 0.0 ) {
+		xc = -x;
+	} else {
+		xc = x;
 	}
 	if ( xc > 21.0 ) {
 		return stdlib_base_exp( xc ) / 2.0;
