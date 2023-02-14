@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2022 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -136,6 +136,94 @@ for ( i = 0; i < 79; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/fibonacci.h"
+```
+
+#### stdlib_base_fibonacci( n )
+
+Computes the nth [Fibonacci number][fibonacci-number].
+
+```c
+double out = stdlib_base_fibonacci( 0 );
+// returns 0
+
+out = stdlib_base_fibonacci( 1 );
+// returns 1
+```
+
+The function accepts the following arguments:
+
+-   **n**: `[in] int32_t` input value.
+
+```c
+double stdlib_base_fibonacci( const int32_t n );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/fibonacci.h"
+#include <stdio.h>
+#include <stdint.h>
+
+int main() {
+    int32_t i;
+    double v;
+
+    for ( i = 0; i < 79; i++ ) {
+        v = stdlib_base_fibonacci( i );
+        printf( "fibonacci(%d) = %lf\n", i, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
