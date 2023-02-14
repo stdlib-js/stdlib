@@ -20,7 +20,7 @@ limitations under the License.
 
 # tanh
 
-> Compute the [hyperbolic tangent][hyperbolic-tangent] of a number.
+> Compute the [hyperbolic tangent][hyperbolic-tangent] of a double-precision floating-point number.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var tanh = require( '@stdlib/math/base/special/tanh' );
 
 #### tanh( x )
 
-Computes the [hyperbolic tangent][hyperbolic-tangent] of `x`.
+Computes the [hyperbolic tangent][hyperbolic-tangent] of double-precision floating-point number `x`.
 
 ```javascript
 var v = tanh( 0.0 );
@@ -105,7 +105,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_tanh( x )
 
-Computes the [hyperbolic tangent][hyperbolic-tangent] of `x`.
+Computes the [hyperbolic tangent][hyperbolic-tangent] of double-precision floating-point number `x`.
 
 ```c
 double out = stdlib_base_tanh( 2.0 );
@@ -146,7 +146,7 @@ double stdlib_base_tanh( const double x );
 #include <stdio.h>
 
 int main() {
-    double x[] = { -4.0, -3.11, -2.22, -1.33, -0.44, 0.44, 1.33, 2.22, 3.11, 4.0 };
+    const double x[] = { -4.0, -3.11, -2.22, -1.33, -0.44, 0.44, 1.33, 2.22, 3.11, 4.0 };
     double v;
     int i;
     

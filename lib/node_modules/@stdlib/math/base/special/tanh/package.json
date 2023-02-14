@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/tanh",
   "version": "0.0.0",
-  "description": "Compute the hyperbolic tangent of a number.",
+  "description": "Compute the hyperbolic tangent of a double-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

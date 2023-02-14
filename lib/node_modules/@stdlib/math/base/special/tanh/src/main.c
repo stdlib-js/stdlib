@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The original C code, long comment, copyright, license, and constants are from [Cephes]{@link http://www.netlib.org/cephes}. The implementation follows the original, but has been modified for JavaScript.
+* The original C code, long comment, copyright, license, and constants are from [Cephes]{@link http://www.netlib.org/cephes}. The implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * Copyright 1984, 1995, 2000 by Stephen L. Moshier
@@ -83,7 +83,33 @@ static double rational_pq( const double x ) {
 /* End auto-generated functions. */
 
 /**
-* Computes the hyperbolic tangent of a number.
+* Computes the hyperbolic tangent of a double-precision floating-point number.
+*
+* ## Method
+*
+* For \\( |x| < 0.625 \\), we use a rational function of the form (Cody and Waite)
+*
+* ```tex
+* x + x^3 \frac{\mathrm{P}(x)}{\mathrm{Q}(x)}
+* ```
+*
+* Otherwise,
+*
+* ```tex
+* \begin{align*}
+* \operatorname{tanh}(x) &= \frac{\operatorname{sinh}(x)}{\operatorname{cosh(x)}} \\
+* &= 1 - \frac{2}{e^{2x} + 1}
+* \end{align*}
+* ```
+*
+* ## Notes
+*
+* -   Relative error:
+*
+*     | arithmetic | domain | # trials | peak    | rms     |
+*     |:----------:|:------:|:--------:|:-------:|:-------:|
+*     | DEC        | -2,2   | 50000    | 3.3e-17 | 6.4e-18 |
+*     | IEEE       | -2,2   | 30000    | 2.5e-16 | 5.8e-17 |
 *
 * @param x    input value
 * @return     output value

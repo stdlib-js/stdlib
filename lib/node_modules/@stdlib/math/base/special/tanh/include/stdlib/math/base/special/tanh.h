@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the hyperbolic tangent of a number.
+* Computes the hyperbolic tangent of a double-precision floating-point number.
 */
 double stdlib_base_tanh( const double x );
 
