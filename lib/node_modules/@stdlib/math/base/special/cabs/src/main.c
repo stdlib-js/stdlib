@@ -38,8 +38,6 @@
 double stdlib_base_cabs( const stdlib_complex128_t z ) {
 	double re;
 	double im;
-
 	stdlib_reim( z, &re, &im );
-
 	return stdlib_base_hypot( re, im );
 }
