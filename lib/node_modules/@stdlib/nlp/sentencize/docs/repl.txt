@@ -1,0 +1,25 @@
+
+{{alias}}( str )
+    Splits a string into an array of sentences.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: Array
+        Array of sentences.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello Mrs. Maple, could you call me back?' )
+    [ 'Hello Mrs. Maple, could you call me back?' ]
+
+    > out = {{alias}}( 'Hello World! How are you?' )
+    [ 'Hello World!', 'How are you?' ]
+
+    See Also
+    --------
+
