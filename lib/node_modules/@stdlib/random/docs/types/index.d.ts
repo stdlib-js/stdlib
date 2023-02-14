@@ -96,7 +96,7 @@ interface Namespace {
 	streams: typeof streams;
 
 	/**
-	* todo.
+	* Pseudorandom number generator strided array functions.
 	*/
 	strided: typeof strided;
 }
