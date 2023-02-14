@@ -406,7 +406,7 @@ static double scale( const int32_t x ) {
 * @return       Node-API value
 */
 napi_value addon( napi_env env, napi_callback_info info ) {
-    return stdlib_math_base_napi_i_d( env, info, identity );
+    return stdlib_math_base_napi_i_d( env, info, scale );
 }
 
 // ...
