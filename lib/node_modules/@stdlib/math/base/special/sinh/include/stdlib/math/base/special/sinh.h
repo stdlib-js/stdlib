@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the hyperbolic sine of a number.
+* Computes the hyperbolic sine of a double-precision floating-point number.
 */
 double stdlib_base_sinh( const double x );
 

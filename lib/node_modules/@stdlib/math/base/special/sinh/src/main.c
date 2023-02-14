@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The original C code, long comment, copyright, license, and constants are from [Cephes]{@link http://www.netlib.org/cephes}. The implementation follows the original, but has been modified for JavaScript.
+* The original C code, long comment, copyright, license, and constants are from [Cephes]{@link http://www.netlib.org/cephes}. The implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * Copyright 1984, 1995, 2000 by Stephen L. Moshier
@@ -38,8 +38,13 @@
 #include "stdlib/constants/float64/ln_two.h"
 #include <stdint.h>
 
+// MAXLOG + LN2 = ln(2^1024) + LN2
 static const double POS_OVERFLOW = 7.09782712893383996843e2 + STDLIB_CONSTANT_FLOAT64_LN2;
+
+// MINLOG - LN2 = ln(2^-1022) - LN2
 static const double NEG_OVERFLOW = -7.08396418532264106224e2 - STDLIB_CONSTANT_FLOAT64_LN2;
+
+// MAXLOG - LN2 = ln(2^1024) - LN2
 static const double LARGE = 7.09782712893383996843e2 - STDLIB_CONSTANT_FLOAT64_LN2;
 
 /* Begin auto-generated functions. The following functions are auto-generated. Do not edit directly. */
@@ -88,7 +93,30 @@ static double rational_pq( const double x ) {
 /* End auto-generated functions. */
 
 /**
-* Computes the hyperbolic sine of a number.
+* Computes the hyperbolic sine of a double-precision floating-point number.
+*
+* ## Method
+*
+* The range is partitioned into two segments. If \\( |x| \le 1 \\), we use a rational function of the form
+*
+* ```tex
+* x + x^3 \frac{\mathrm{P}(x)}{\mathrm{Q}(x)}
+* ```
+*
+* Otherwise, the calculation is
+*
+* ```tex
+* \operatorname{sinh}(x) = \frac{ e^x - e^{-x} }{2}.
+* ```
+*
+* ## Notes
+*
+* -   Relative error:
+*
+*     | arithmetic | domain   | # trials | peak    | rms     |
+*     |:----------:|:--------:|:--------:|:-------:|:-------:|
+*     | DEC        | +- 88    | 50000    | 4.0e-17 | 7.7e-18 |
+*     | IEEE       | +-MAXLOG | 30000    | 2.6e-16 | 5.7e-17 |
 *
 * @param x    input value
 * @return     output value
@@ -96,32 +124,36 @@ static double rational_pq( const double x ) {
 * @example
 * double out = stdlib_base_sinh( 0.0 );
 * // returns 0.0
+*
+* @example
+* double out = stdlib_base_sinh( 2.0 );
+* // returns ~3.627
 */
 double stdlib_base_sinh( const double x ) {
-    double a;
-    if ( x == 0.0 ) {
-        return x; // handles `+-0`
-    }
-    a = stdlib_base_abs( x );
-    if ( x > POS_OVERFLOW || x < NEG_OVERFLOW ) {
-        return ( x > 0.0 ) ? STDLIB_CONSTANT_FLOAT64_PINF : STDLIB_CONSTANT_FLOAT64_NINF;
-    }
-    if ( a > 1.0 ) {
-        if ( a >= LARGE ) {
-            a = stdlib_base_exp( 0.5 * a );
-            a *= 0.5 * a;
-            if ( x < 0.0 ) {
-                a = -a;
-            }
-            return a;
-        }
-        a = stdlib_base_exp( a );
-        a = ( 0.5 * a ) - ( 0.5 / a );
-        if ( x < 0.0 ) {
-            a = -a;
-        }
-        return a;
-    }
-    a *= a;
-    return x + ( x * a * rational_pq( a ) );
+	double a;
+	if ( x == 0.0 ) {
+		return x; // handles `+-0`
+	}
+	if ( x > POS_OVERFLOW || x < NEG_OVERFLOW ) {
+		return ( x > 0.0 ) ? STDLIB_CONSTANT_FLOAT64_PINF : STDLIB_CONSTANT_FLOAT64_NINF;
+	}
+	a = stdlib_base_abs( x );
+	if ( a > 1.0 ) {
+		if ( a >= LARGE ) {
+			a = stdlib_base_exp( 0.5*a );
+			a *= 0.5 * a;
+			if ( x < 0.0 ) {
+				a = -a;
+			}
+			return a;
+		}
+		a = stdlib_base_exp( a );
+		a = ( 0.5*a ) - ( 0.5/a );
+		if ( x < 0.0 ) {
+			a = -a;
+		}
+		return a;
+	}
+	a *= a;
+	return x + ( x * a * rational_pq( a ) );
 }

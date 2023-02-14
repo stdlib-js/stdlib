@@ -20,7 +20,7 @@ limitations under the License.
 
 # sinh
 
-> Compute the [hyperbolic sine][hyperbolic-sine] of a number.
+> Compute the [hyperbolic sine][hyperbolic-sine] of a double-precision floating-point number.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var sinh = require( '@stdlib/math/base/special/sinh' );
 
 #### sinh( x )
 
-Computes the [hyperbolic sine][hyperbolic-sine] of `x`.
+Computes the [hyperbolic sine][hyperbolic-sine] of double-precision floating-point number `x`.
 
 ```javascript
 var v = sinh( 0.0 );
@@ -105,7 +105,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_sinh( x )
 
-Computes the [hyperbolic sine][hyperbolic-sine] of `x`.
+Computes the [hyperbolic sine][hyperbolic-sine] of double-precision floating-point number `x`.
 
 ```c
 double out = stdlib_base_sinh( 2.0 );
@@ -146,7 +146,7 @@ double stdlib_base_sinh( const double x );
 #include <stdio.h>
 
 int main() {
-    double x[] = { -5.0, -3.89, -2.78, -1.67, -0.56, 0.56, 1.67, 2.78, 3.89, 5.0 };
+    const double x[] = { -5.0, -3.89, -2.78, -1.67, -0.56, 0.56, 1.67, 2.78, 3.89, 5.0 };
     double v;
     int i;
     
