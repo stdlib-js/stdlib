@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The original C code, long comment, copyright, license, and constants are from [Cephes]{@link http://www.netlib.org/cephes}. The implementation follows the original, but has been modified for JavaScript.
+* The original C code, long comment, copyright, license, and constants are from [Cephes]{@link http://www.netlib.org/cephes}. The implementation follows the original, but has been modified according to project conventions.
 *
 * ```text
 * Copyright 1984, 1991, 2000 by Stephen L. Moshier
@@ -90,6 +90,25 @@ static double polyval_q( const double x ) {
 /**
 * Returns `10` raised to the `x` power.
 *
+* ## Method
+*
+* -   Range reduction is accomplished by expressing the argument as \\( 10^x = 2^n 10^f \\), with \\( |f| < 0.5 log_{10}(2) \\). The Pade' form
+*
+*     ```tex
+*     1 + 2x \frac{P(x^2)}{Q(x^2) - P(x^2)}
+*     ```
+*
+*     is used to approximate \\( 10^f \\).
+*
+*
+* ## Notes
+*
+* -   Relative error:
+*
+*     | arithmetic | domain      | # trials | peak    | rms     |
+*     |:----------:|:-----------:|:--------:|:-------:|:-------:|
+*     | IEEE       | -307,+307   |  30000   | 2.2e-16 | 5.5e-17 |
+*
 * @param x    input value
 * @return	  output value
 *
@@ -98,33 +117,33 @@ static double polyval_q( const double x ) {
 * // returns 100.0
 */
 double stdlib_base_exp10( const double x ) {
-    double xc = x;
-    double px;
-    double xx;
-    int32_t n;
+	double xc;
+	double px;
+	double xx;
+	int32_t n;
 
-    if ( stdlib_base_is_nan( xc ) ) {
-        return 0.0 / 0.0; // NaN
-    }
-    if ( xc > STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) {
-        return STDLIB_CONSTANT_FLOAT64_PINF;
-    }
-    if ( xc < STDLIB_CONSTANT_FLOAT64_MIN_BASE10_EXPONENT ) {
-        return 0.0;
-    }
+	if ( stdlib_base_is_nan( x ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( x > STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) {
+		return STDLIB_CONSTANT_FLOAT64_PINF;
+	}
+	if ( x < STDLIB_CONSTANT_FLOAT64_MIN_BASE10_EXPONENT ) {
+		return 0.0;
+	}
+	// Express 10^x = 10^g 2^n = 10^g 10^( n log10(2) ) = 10^( g + n log10(2) )
+	px = stdlib_base_floor( ( LOG210 * x ) + 0.5 );
+	n = (int32_t)px;
+	xc = x;
+	xc -= px * LG102A;
+	xc -= px * LG102B;
 
-    // Express 10^x = 10^g 2^n = 10^g 10^( n log10(2) ) = 10^( g + n log10(2) )
-    px = stdlib_base_floor( ( LOG210 * xc ) + 0.5 );
-    n = (int32_t)px;
-    xc -= px * LG102A;
-    xc -= px * LG102B;
+	// Rational approximation for exponential of the fractional part: 10^x = 1 + 2x P(x^2)/( Q(x^2) - P(x^2) )
+	xx = xc * xc;
+	px = xc * polyval_p( xx );
+	xc = px / ( polyval_q( xx ) - px );
+	xc = 1.0 + stdlib_base_ldexp( xc, 1 );
 
-    // Rational approximation for exponential of the fractional part: 10^x = 1 + 2x P(x^2)/( Q(x^2) - P(x^2) )
-    xx = xc * xc;
-    px = xc * polyval_p( xx );
-    xc = px / ( polyval_q( xx ) - px );
-    xc = 1.0 + stdlib_base_ldexp( xc, 1 );
-
-    // Multiply by power of 2:
-    return stdlib_base_ldexp( xc, n );
+	// Multiply by power of 2:
+	return stdlib_base_ldexp( xc, n );
 }
