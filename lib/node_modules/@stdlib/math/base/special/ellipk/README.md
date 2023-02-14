@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2019 The Stdlib Authors.
+Copyright (c) 2022 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -109,6 +109,96 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/ellipk.h"
+```
+
+#### stdlib_base_ellipk( m )
+
+Computes the [complete elliptic integral of the first kind][elliptic-integral].
+
+```c
+double out = stdlib_base_ellipk( 0.5 );
+// returns ~1.854
+
+out = stdlib_base_ellipk( -1.0 );
+// returns ~1.311
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_ellipk( const double m );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/ellipk.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    double m;
+    double v;
+    int i;
+    
+    for ( i = 0; i < 100; i++ ) {
+        m = -1.0 + ( ( (double)rand() / (double)RAND_MAX ) * 2.0 );
+        v = stdlib_base_ellipk( m );
+        printf( "ellipk(%lf) = %lf\n", m, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 * * *
 
