@@ -88,7 +88,7 @@ var fcns = special;
 -   <span class="signature">[`avercos( x )`][@stdlib/math/base/special/avercos]</span><span class="delimiter">: </span><span class="description">compute the inverse versed cosine.</span>
 -   <span class="signature">[`aversin( x )`][@stdlib/math/base/special/aversin]</span><span class="delimiter">: </span><span class="description">compute the inverse versed sine.</span>
 -   <span class="signature">[`cos( x )`][@stdlib/math/base/special/cos]</span><span class="delimiter">: </span><span class="description">compute the cosine of a number.</span>
--   <span class="signature">[`cosh( x )`][@stdlib/math/base/special/cosh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic cosine of a number.</span>
+-   <span class="signature">[`cosh( x )`][@stdlib/math/base/special/cosh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic cosine of a double-precision floating-point number.</span>
 -   <span class="signature">[`cosm1( x )`][@stdlib/math/base/special/cosm1]</span><span class="delimiter">: </span><span class="description">compute `cos(x) - 1`.</span>
 -   <span class="signature">[`cospi( x )`][@stdlib/math/base/special/cospi]</span><span class="delimiter">: </span><span class="description">compute the cosine of a number times π.</span>
 -   <span class="signature">[`covercos( x )`][@stdlib/math/base/special/covercos]</span><span class="delimiter">: </span><span class="description">compute the coversed cosine.</span>
