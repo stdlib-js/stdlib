@@ -104,7 +104,7 @@ static const int64_t fibonacci_value[ 79 ] = {
 /**
 * Computes the nth Fibonacci number.
 *
-* @param x    input value
+* @param n    input value
 * @return	  output value
 *
 * @example

@@ -1,6 +1,6 @@
 
 {{alias}}( x )
-    Computes the hyperbolic tangent of a number.
+    Computes the hyperbolic tangent of a double-precision floating-point number.
 
     Parameters
     ----------
