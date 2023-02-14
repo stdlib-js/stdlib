@@ -351,7 +351,7 @@ interface Namespace {
 	* @param options.iter - number of iterations
 	* @throws `a` must be an integer
 	* @throws `b` must be an integer
-	* @throws `a` must be less than `b`
+	* @throws `a` must be less than or equal to `b`
 	* @throws must provide valid options
 	* @returns iterator
 	*
