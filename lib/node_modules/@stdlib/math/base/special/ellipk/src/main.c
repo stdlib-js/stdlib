@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The original Julia code and copyright notice are from the [Julia library]{@link https://github.com/JuliaMath/SpecialFunctions.jl/blob/master/src/ellip.jl}. The implementation has been modified for JavaScript.
+* The original Julia code and copyright notice are from the [Julia library]{@link https://github.com/JuliaMath/SpecialFunctions.jl/blob/master/src/ellip.jl}. The implementation has been modified according to project conventions.
 *
 * ```text
 * The MIT License (MIT)
@@ -303,6 +303,33 @@ static double poly_p12( const double x ) {
 /**
 * Computes the complete elliptic integral of the first kind.
 *
+* ## Method
+*
+* -   The function computes the complete elliptic integral of the first kind in terms of parameter \\( m \\), instead of the elliptic modulus \\( k \\).
+*
+*     ```tex
+*     K(m) = \int_0^{\pi/2} \frac{1}{\sqrt{1 - m sin^2\theta}} d\theta
+*     ```
+*
+* -   The function uses a piecewise approximation polynomial as given in Fukushima (2009).
+*
+* -   For \\( m < 0 \\), the implementation follows Fukushima (2015). Namely, we use Equation 17.4.17 from the _Handbook of Mathematical Functions_ (Abramowitz and Stegun) to compute the function for \\( m < 0 \\) in terms of the piecewise polynomial representation of \\( m > 0 )).
+*
+*     ```tex
+*     F(\phi|-m) = (1+m)^(-1/2) K(m/(1+m)) - (1+m)^(-1/2) F(\pi/2-\phi|m/(1+m))
+*     ```
+*
+*     Since \\( K(m) \\) is equivalent to \\( F(\phi|m) \\), the above reduces to
+*
+*     ```tex
+*     F(\phi|-m) = (1+m)^(-1/2) K(m/(1+m))
+*     ```
+*
+* ## References
+*
+* -   Fukushima, Toshio. 2009. "Fast computation of complete elliptic integrals and Jacobian elliptic functions." _Celestial Mechanics and Dynamical Astronomy_ 105 (4): 305. doi:[10.1007/s10569-009-9228-z](https://doi.org/10.1007/s10569-009-9228-z).
+* -   Fukushima, Toshio. 2015. "Precise and fast computation of complete elliptic integrals by piecewise minimax rational function approximation." _Journal of Computational and Applied Mathematics_ 282 (July): 71–76. doi:[10.1016/j.cam.2014.12.038](https://doi.org/10.1016/j.cam.2014.12.038).
+*
 * @param x    input value
 * @return     output value
 *
@@ -311,17 +338,18 @@ static double poly_p12( const double x ) {
 * // returns ~1.854
 */
 double stdlib_base_ellipk( const double m ) {
-    int8_t FLG = 0;
+    int8_t FLG;
     double kdm;
     double td;
     double qd;
     double t;
     double x;
 
+    FLG = 0;
     x = m;
     if ( m < 0.0 ) {
         x = m / ( m - 1.0 );
-        FLG = 1;
+        FLG += 1;
     }
     if ( x == 0.0 ) {
         return STDLIB_CONSTANT_FLOAT64_HALF_PI;
