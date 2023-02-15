@@ -2084,7 +2084,7 @@ interface Namespace {
 	cos: typeof cos;
 
 	/**
-	* Computes the hyperbolic cosine of a number.
+	* Computes the hyperbolic cosine of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns hyperbolic cosine
@@ -6001,7 +6001,7 @@ interface Namespace {
 	sincospi: typeof sincospi;
 
 	/**
-	* Computes the hyperbolic sine of a number.
+	* Computes the hyperbolic sine of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns hyperbolic sine
@@ -6229,7 +6229,7 @@ interface Namespace {
 	tan: typeof tan;
 
 	/**
-	* Computes the hyperbolic tangent of a number.
+	* Computes the hyperbolic tangent of a double-precision floating-point number.
 	*
 	* @param x - input value
 	* @returns hyperbolic tangent

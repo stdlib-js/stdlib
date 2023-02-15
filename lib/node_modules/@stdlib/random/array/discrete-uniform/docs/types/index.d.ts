@@ -73,7 +73,7 @@ interface FactoryOptions extends PRNGOptions {
 */
 interface Options {
 	/**
-	* Default output array data type. Default: 'float64'.
+	* Output array data type.
 	*/
 	dtype?: DataType;
 }

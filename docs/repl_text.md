@@ -174,7 +174,7 @@ lowercase( str )
     ...
 ```
 
-Do **not** write the description in the declarative mood. For example, avoid
+Do **not** write the description in the imperative mood. For example, avoid
 
 ```text
 lowercase( str )
