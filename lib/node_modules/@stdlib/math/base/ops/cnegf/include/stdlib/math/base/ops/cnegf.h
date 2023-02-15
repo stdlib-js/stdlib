@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Negate a single-precision complex floating-point number.
+* Negates a single-precision complex floating-point number.
 */
 stdlib_complex64_t stdlib_base_cnegf( const stdlib_complex64_t z );
 

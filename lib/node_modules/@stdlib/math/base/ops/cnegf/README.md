@@ -49,9 +49,9 @@ var Complex64 = require( '@stdlib/complex/float32' );
 var realf = require( '@stdlib/complex/realf' );
 var imagf = require( '@stdlib/complex/imagf' );
 
-var z1 = new Complex64( -4.0, 5.0 );
+var z = new Complex64( -4.0, 5.0 );
 
-var out = cnegf( z1 );
+var out = cnegf( z );
 // returns <Complex64>
 
 var re = realf( out );
@@ -60,9 +60,9 @@ var re = realf( out );
 var im = imagf( out );
 // returns -5.0
 
-var z2 = new Complex64( 0.0, 0.0 );
+z = new Complex64( 0.0, 0.0 );
 
-out = cnegf( z2 );
+out = cnegf( z );
 // returns <Complex64>
 
 re = realf( out );
@@ -71,9 +71,9 @@ re = realf( out );
 im = imagf( out );
 // returns -0.0
 
-var z3 = new Complex64( NaN, NaN );
+z = new Complex64( NaN, NaN );
 
-out = cnegf( z3 );
+out = cnegf( z );
 // returns <Complex64>
 
 re = realf( out );
@@ -165,7 +165,6 @@ Negates a single-precision complex floating-point number.
 #include "stdlib/complex/imagf.h"
 
 stdlib_complex64_t z = stdlib_complex64( 3.0f, -2.0f );
-
 stdlib_complex64_t out = stdlib_base_cnegf( z );
 
 float re = stdlib_realf( out );

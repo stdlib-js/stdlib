@@ -33,10 +33,10 @@ import { Complex64 } from '@stdlib/types/object';
 * var realf = require( `@stdlib/complex/realf` );
 * var imagf = require( `@stdlib/complex/imagf` );
 *
-* var z1 = new Complex64( -4.2, 5.5 );
+* var z = new Complex64( -4.2, 5.5 );
 * // returns <Complex64>
 *
-* var out = cnegf( z1 );
+* var out = cnegf( z );
 * // returns <Complex64>
 *
 * var re = realf( out );
@@ -50,10 +50,10 @@ import { Complex64 } from '@stdlib/types/object';
 * var realf = require( `@stdlib/complex/realf` );
 * var imagf = require( `@stdlib/complex/imagf` );
 *
-* var z2 = new Complex64( 0.0, 0.0 );
+* var z = new Complex64( 0.0, 0.0 );
 * // returns <Complex64>
 *
-* var out = cnegf( z2 );
+* var out = cnegf( z );
 * // returns <Complex64>
 *
 * var re = realf( out );
@@ -67,10 +67,10 @@ import { Complex64 } from '@stdlib/types/object';
 * var realf = require( `@stdlib/complex/realf` );
 * var imagf = require( `@stdlib/complex/imagf` );
 *
-* var z3 = new Complex64( NaN, NaN );
+* var z = new Complex64( NaN, NaN );
 * // returns <Complex64>
 *
-* var out = cnegf( z3 );
+* var out = cnegf( z );
 * // returns <Complex64>
 *
 * var re = realf( out );

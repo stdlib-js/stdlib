@@ -32,7 +32,6 @@
 * #include "stdlib/complex/imagf.h"
 *
 * stdlib_complex64_t z = stdlib_complex64( 3.0f, -2.0f );
-*
 * stdlib_complex64_t out = stdlib_base_cnegf( z );
 *
 * float re = stdlib_realf( out );

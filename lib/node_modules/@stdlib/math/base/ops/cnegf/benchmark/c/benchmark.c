@@ -77,13 +77,13 @@ double tic() {
 }
 
 /**
-* Generates a random double on the interval [0,1].
+* Generates a random number on the interval [0,1].
 *
-* @return random double
+* @return random number
 */
-double rand_double() {
+float rand_float() {
 	int r = rand();
-	return (double)r / ( (double)RAND_MAX + 1.0 );
+	return (float)r / ( (float)RAND_MAX + 1.0f );
 }
 
 /**
@@ -93,18 +93,18 @@ double rand_double() {
 */
 double benchmark() {
 	double elapsed;
-	double re;
-	double im;
 	double t;
+	float re;
+	float im;
 	int i;
 
-	double complex z;
-	double complex y;
+	float complex z;
+	float complex y;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		re = ( 1000.0*rand_double() ) - 500.0;
-		im = ( 1000.0*rand_double() ) - 500.0;
+		re = ( 1000.0f*rand_float() ) - 500.0f;
+		im = ( 1000.0f*rand_float() ) - 500.0f;
 		z = re + im*I;
 		y = -crealf(z) - ( cimagf(z) )*I;
 		if ( y != y ) {

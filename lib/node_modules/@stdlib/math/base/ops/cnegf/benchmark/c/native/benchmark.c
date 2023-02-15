@@ -21,7 +21,7 @@
 */
 #include "stdlib/math/base/ops/cnegf.h"
 #include "stdlib/complex/float32.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/reimf.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -84,9 +84,9 @@ double tic() {
 *
 * @return random number
 */
-double rand_double() {
+float rand_float() {
 	int r = rand();
-	return (double)r / ( (double)RAND_MAX + 1.0 );
+	return (float)r / ( (float)RAND_MAX + 1.0f );
 }
 
 /**
@@ -96,9 +96,9 @@ double rand_double() {
 */
 double benchmark() {
 	double elapsed;
-	double re;
-	double im;
 	double t;
+	float re;
+	float im;
 	int i;
 
 	stdlib_complex64_t z1;
@@ -106,12 +106,12 @@ double benchmark() {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		re = ( 1000.0*rand_double() ) - 500.0;
-		im = ( 1000.0*rand_double() ) - 500.0;
+		re = ( 1000.0f*rand_float() ) - 500.0f;
+		im = ( 1000.0f*rand_float() ) - 500.0f;
 		z1 = stdlib_complex64( re, im );
 
 		z2 = stdlib_base_cnegf( z1 );
-		stdlib_reim( z2, &re, &im );
+		stdlib_reimf( z2, &re, &im );
 		if ( re != re ) {
 			printf( "should not return NaN\n" );
 			break;

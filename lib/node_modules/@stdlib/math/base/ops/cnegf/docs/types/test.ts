@@ -17,7 +17,7 @@
 */
 
 import Complex64 = require( '@stdlib/complex/float32' );
-import cneg = require( './index' );
+import cnegf = require( './index' );
 
 
 // TESTS //
@@ -26,26 +26,26 @@ import cneg = require( './index' );
 {
 	const z = new Complex64( 1.0, 1.0 );
 
-	cneg( z ); // $ExpectType Complex64
+	cnegf( z ); // $ExpectType Complex64
 }
 
 // The compiler throws an error if the function is provided an argument which is not a complex number...
 {
-	cneg( true ); // $ExpectError
-	cneg( false ); // $ExpectError
-	cneg( null ); // $ExpectError
-	cneg( undefined ); // $ExpectError
-	cneg( '5' ); // $ExpectError
-	cneg( [] ); // $ExpectError
-	cneg( {} ); // $ExpectError
-	cneg( ( x: number ): number => x ); // $ExpectError
+	cnegf( true ); // $ExpectError
+	cnegf( false ); // $ExpectError
+	cnegf( null ); // $ExpectError
+	cnegf( undefined ); // $ExpectError
+	cnegf( '5' ); // $ExpectError
+	cnegf( [] ); // $ExpectError
+	cnegf( {} ); // $ExpectError
+	cnegf( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	const z = new Complex64( 1.0, 1.0 );
 
-	cneg(); // $ExpectError
-	cneg( z, z ); // $ExpectError
-	cneg( z, z, z ); // $ExpectError
+	cnegf(); // $ExpectError
+	cnegf( z, z ); // $ExpectError
+	cnegf( z, z, z ); // $ExpectError
 }
