@@ -182,3 +182,7 @@ jsconfig.json
 ################
 *.sublime-workspace
 *.sublime-project
+
+# Other editor files #
+######################
+.idea/

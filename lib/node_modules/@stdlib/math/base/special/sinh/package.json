@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/sinh",
   "version": "0.0.0",
-  "description": "Compute the hyperbolic sine of a number.",
+  "description": "Compute the hyperbolic sine of a double-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

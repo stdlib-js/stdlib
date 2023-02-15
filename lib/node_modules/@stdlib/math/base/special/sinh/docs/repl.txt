@@ -1,6 +1,6 @@
 
 {{alias}}( x )
-    Computes the hyperbolic sine of a number.
+    Computes the hyperbolic sine of a double-precision floating-point number.
 
     Parameters
     ----------
