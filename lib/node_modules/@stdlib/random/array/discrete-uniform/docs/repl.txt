@@ -45,7 +45,7 @@
 
     Returns
     -------
-    out: Array<number>|Float64Array|Float32Array
+    out: Array<number>|TypedArray
         Output array.
 
     Examples
