@@ -279,7 +279,7 @@ guidance was too restrictive.
 
 ## Discussion
 
-The [Conventional Commits][conventional-commits] specification requires contributors to categorize changes according to a limited number of commit types. Inevitably, situations will arise in which a relevant commit type is not obvious. While choosing an appropriate commit type is important, choosing a commit type is only the first step in writing a commit message. When in doubt, a contributor should choose the highest-priority type which is applicable, and then write a detailed commit message body explaining the full complexity the change.
+The [Conventional Commits][conventional-commits] specification requires contributors to categorize changes according to a limited number of commit types. Inevitably, situations will arise in which a relevant commit type is not obvious. While choosing an appropriate commit type is important, choosing a commit type is only the first step in writing a commit message. When in doubt, a contributor should choose the highest-priority type which is applicable, and then write a detailed commit message body explaining the full complexity of the change.
 
 **squash! or fixup! vs temp**: use Git's [`squash!`][git-commit-squash] or [`fixup!`][git-commit-fixup] when a commit is temporary, but you intend to squash the commit into another commit. Use **temp** when a change is temporary, but you intend for the change to be preserved in the commit history.
 
