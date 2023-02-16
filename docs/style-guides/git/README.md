@@ -76,7 +76,7 @@ The **type** field labels a commit and indicates the category of change introduc
 
 -   **build**: anything to do with building and releasing the project, including changes to automation and continuous integration configuration files and scripts (e.g., GitHub actions, CircleCI, Azure, etc).
 
--   **chore**: neither a fix, feature, or refactor; a repetitive mechanical task, such as updating package meta data or updating external dependencies.
+-   **chore**: neither a fix, a feature, nor a refactor; a repetitive mechanical task, such as updating package meta data or updating external dependencies.
 
 -   **deprecate**: a change that deprecates an existing feature. This type correlates with `MINOR` in [Semantic Versioning][semver].
 
@@ -88,7 +88,7 @@ The **type** field labels a commit and indicates the category of change introduc
 
 -   **perf**: a change that improves performance.
 
--   **refactor**: neither a fix or a feature; a change that does not change behavior from the perspective of downstream consumers of the project. If refactoring improves performance, **perf** takes higher priority.
+-   **refactor**: neither a fix nor a feature; a change that does not change behavior from the perspective of downstream consumers of the project. If refactoring improves performance, **perf** takes higher priority.
 
 -   **remove**: removes a feature. This type correlates with `MAJOR` in [Semantic Versioning][semver].
 
