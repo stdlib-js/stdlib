@@ -2448,6 +2448,7 @@
 "@stdlib/random/strided/discrete-uniform",random.strided.discreteUniform
 "@stdlib/random/strided/exponential",random.strided.exponential
 "@stdlib/random/strided/lognormal",random.strided.lognormal
+"@stdlib/random/strided/mt19937",random.strided.mt19937
 "@stdlib/random/strided/normal",random.strided.normal
 "@stdlib/random/strided/randu",random.strided.randu
 "@stdlib/random/strided/uniform",random.strided.uniform
