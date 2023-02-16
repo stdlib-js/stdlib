@@ -271,7 +271,8 @@ For example,
 ```text
 revert: chore: update README
 
-This reverts commit b3befad91a6e39288ea53d540a4a483b0898fb49.
+This reverts commit b3befad91a6e39288ea53d540a4a483b0898fb49. The previous
+guidance was too restrictive.
 ```
 
 * * *
