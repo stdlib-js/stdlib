@@ -24,7 +24,7 @@ limitations under the License.
 
 ## Overview
 
-Commits should be clearly documented for how they affect consumers of and contributors to this project. To this end, we adhere to the [Conventional Commits][conventional-commits] specification, which details structured commit messages for clarifying the impact of each commit.
+Commits should be clearly documented for how they affect consumers of and contributors to this project. To this end, the project adheres to the [Conventional Commits][conventional-commits] specification, which details structured commit messages for clarifying the impact of each commit.
 
 ## Motivation
 
@@ -36,7 +36,7 @@ Commit messages are the closest text to the change itself. The more information-
 
 ## Specification
 
-This project adheres to the [Conventional Commits][conventional-commits] specification, with our own specific requirements. We have very precise rules over how our Git commit messages must be formatted. This format leads to a commit history which is easier to read and easier to consume as part of automated build processes.
+This project adheres to the [Conventional Commits][conventional-commits] specification, with additional project-specific requirements. The project has very precise rules over how Git commit messages must be formatted. This format leads to a commit history which is easier to read and easier to consume as part of automated build processes.
 
 Each commit message consists of three parts: a **header**, a **body** (optional), and a **footer** (optional). Each part **must** be separated from the other parts by a **blank line**.
 
@@ -70,7 +70,7 @@ The **type** and **short summary** fields are **mandatory**, and the **scope** f
 
 #### type
 
-The **type** field labels a commit and indicates the category of change introduced by a commit. We use the following commit types:
+The **type** field labels a commit and indicates the category of change introduced by a commit. The project uses the following commit types:
 
 -   **bench**: benchmark-only changes, such as adding missing benchmarks or correcting existing benchmarks. This type has lower precedence than other types, and, thus, benchmarks accompanying other types of changes can be categorized according to those other types. 
 
@@ -80,7 +80,7 @@ The **type** field labels a commit and indicates the category of change introduc
 
 -   **deprecate**: a change that deprecates an existing feature. This type correlates with `MINOR` in [Semantic Versioning][semver].
 
--   **docs**: documentation-only changes. Documentation changes include changes to the following: READMEs, JSDoc/Doxygen-style comments, annotations, comments, and examples (including examples files). Note that changes to TypeScript declarations files are **not** documentation-only changes, as TypeScript declarations are part of a package's public API and are consumed by downstream project consumers.
+-   **docs**: documentation-only changes. Documentation changes include changes to the following: READMEs, JSDoc/Doxygen-style comments, annotations, source comments, and examples (including examples files). Note that changes to TypeScript declarations files are **not** documentation-only changes, as TypeScript declarations are part of a package's public API and are consumed by downstream project consumers.
 
 -   **feat**: a new feature. This type typically correlates with `MINOR` in [Semantic Versioning][semver]; however, a new feature may introduce a breaking change and thus correlate with `MAJOR` in [Semantic Versioning][semver] (e.g., if an existing user-facing API is completely changed to support new behaviors and existing behaviors are not preserved).
 
@@ -101,7 +101,7 @@ The **type** field labels a commit and indicates the category of change introduc
     the revert commit **header** would be
 
     ```text
-    revert(tools): address race condition when iterating over files
+    revert: fix(tools): address race condition when iterating over files
     ```
 
 -   **style**: a change which improves code style (e.g., whitespace, formatting, semicolons, etc) and does not affect the meaning of code.
@@ -197,7 +197,7 @@ The project does **not** enforce a hard limit on commit message body character l
 
 Breaking changes especially should include detailed information about the impact of the change, implications, and alternatives, and should be accompanied by a `BREAKING CHANGE` footer.
 
-In the commit message body, a contributor may include references and links to supporting information, such as public GitHub issues (although these may be better placed in the commit message footer). However, the body should be sufficient for understanding the commit. Links to private issues should **not** be included in the commit message body and should instead be included in the commit message footer using the [Git trailer format][git-trailer-format], as documented below in the [commit message footer](#commit-message-footer) format. In general, contributors should prefer linking to public issues, rather than private issues.
+In the commit message body, a contributor may include references and links to supporting information, such as public GitHub issues (although these may be better placed in the commit message footer). However, the body alone should be sufficient for understanding the commit. Links to private issues should **not** be included in the commit message body and should instead be included in the commit message footer using the [Git trailer format][git-trailer-format], as documented below in the [commit message footer](#commit-message-footer) format. In general, contributors should prefer linking to public issues, rather than private issues.
 
 Commit message lines should be wrapped at **72** characters (except for long URLs).
 
@@ -278,9 +278,9 @@ This reverts commit b3befad91a6e39288ea53d540a4a483b0898fb49.
 
 ## Discussion
 
-The [Conventional Commits][conventional-commits] specification requires contributors to categorize changes according to a limited number of commit types. Inevitably, situations will arise in which a relevant commit type is not obvious. While choosing an appropriate commit type is important, choosing a commit type is only the first step of writing a commit message. When in doubt, a contributor should choose the highest-priority type which is applicable, and then write a detailed commit message body explaining the full complexity the change.
+The [Conventional Commits][conventional-commits] specification requires contributors to categorize changes according to a limited number of commit types. Inevitably, situations will arise in which a relevant commit type is not obvious. While choosing an appropriate commit type is important, choosing a commit type is only the first step in writing a commit message. When in doubt, a contributor should choose the highest-priority type which is applicable, and then write a detailed commit message body explaining the full complexity the change.
 
-**squash!/fixup! vs temp**: use Git's [`squash!`][git-commit-squash] or [`fixup!`][git-commit-fixup] when a commit is temporary, but you intend to squash the commit into another commit. Use **temp** when a change is temporary, but you intend for the change to be preserved in the commit history.
+**squash! or fixup! vs temp**: use Git's [`squash!`][git-commit-squash] or [`fixup!`][git-commit-fixup] when a commit is temporary, but you intend to squash the commit into another commit. Use **temp** when a change is temporary, but you intend for the change to be preserved in the commit history.
 
 **Merge commits**: Git generated commits, such as merge commits, do not follow the above guidelines, but this does not mean that these commits should be avoided. When analyzing commit history (e.g., as part of automation and changelog generation), Git generated commits will be ignored.
 
