@@ -18,17 +18,15 @@ limitations under the License.
 
 -->
 
-# Git Style Guide
+# Git Commit Messages
 
-> Style guide for [Git][git].
+> Guide for writing [Git][git] commit messages.
 
-## Commits
-
-### Overview
+## Overview
 
 Commits should be clearly documented for how they affect consumers of and contributors to this project. To this end, we adhere to the [Conventional Commits][conventional-commits] specification, which details structured commit messages for clarifying the impact of each commit.
 
-### Motivation
+## Motivation
 
 Contributors to this project should describe the changes they make. Detailed descriptions are valuable to various stakeholders, including other contributors, downstream consumers, library authors, individuals needing to deploy and/or integrate the project, and others. Commit authors are best positioned to accurately describe their work and its implications.
 
@@ -36,7 +34,7 @@ The closer to the change one captures information pertaining to a change's conte
 
 Commit messages are the closest text to the change itself. The more information-rich a commit message is, the more useful it will be.
 
-### Specification
+## Specification
 
 This project adheres to the [Conventional Commits][conventional-commits] specification, with our own specific requirements. We have very precise rules over how our Git commit messages must be formatted. This format leads to a commit history which is easier to read and easier to consume as part of automated build processes.
 
@@ -56,7 +54,7 @@ The **body** is **mandatory** for all non-trivial commits. When present, the bod
 
 The **footer** is **optional**. When present, the footer must conform to the [commit message footer](#commit-message-footer) format.
 
-#### Commit Message Header
+### Commit Message Header
 
 ```text
 <type>(<scope>): <short summary>
@@ -70,7 +68,7 @@ The **footer** is **optional**. When present, the footer must conform to the [co
 
 The **type** and **short summary** fields are **mandatory**, and the **scope** field is **optional**.
 
-##### type
+#### type
 
 The **type** field labels a commit and indicates the category of change introduced by a commit. We use the following commit types:
 
@@ -139,11 +137,11 @@ If a commit mixes types, contributors should use the most important type label i
 13. **chore**
 14. **temp**
 
-##### Scope
+#### Scope
 
 The [Conventional Commits][conventional-commits] specification includes support for an optional parenthesized scope following the commit type. A contributor may choose to include a scope in order to provide additional contextual information, if doing so helps clarify a commit. If provided, a scope **must** be a noun describing the section of the codebase affected by the commit.
 
-##### Short Summary
+#### Short Summary
 
 The short summary **must** provide a succinct description of a change and adhere to the following conventions:
 
@@ -174,7 +172,7 @@ A short summary should be short enough to fit on a single line. While this proje
 
 Do **not** include GitHub issue numbers in the short summary. Links to issue trackers should be included in the commit message body or in the commit message footer. In general, the short summary should only contain words.
 
-#### Commit Message Body
+### Commit Message Body
 
 For significant changes to the codebase, the short summary is unlikely to provide enough information to fully understand the commit. Use the commit message body to more fully explain the motivation for the change and include comparisons of previous behavior with new behavior in order to illustrate the impact of the change. The commit message body should explain the _what_ and _why_, and not the _how_.
 
@@ -203,7 +201,7 @@ In the commit message body, a contributor may include references and links to su
 
 Commit message lines should be wrapped at **72** characters (except for long URLs).
 
-#### Commit Message Footer
+### Commit Message Footer
 
 The commit message footer may include information about breaking changes and deprecations and is the place to reference GitHub issues and related PRs (including any issues that a commit closes). For example,
 
@@ -256,7 +254,7 @@ Each token may be repeated; however, only one token is allowed per line. Tokens 
 
 The only exceptions to the restrictions on token case and inclusion of whitespace are `BREAKING CHANGE`, which must be in uppercase and include a single whitespace character, and `DEPRECATED`, which must be in uppercase. Both `BREAKING CHANGE` and `DEPRECATED` **must** come before all other tokens.
 
-### Revert Commits
+## Revert Commits
 
 If a commit reverts a previous commit, the commit type **must** be **revert**, followed by the header of the reverted commit. The commit message body should contain:
 
@@ -276,7 +274,9 @@ revert: chore: update README
 This reverts commit b3befad91a6e39288ea53d540a4a483b0898fb49.
 ```
 
-### Discussion
+* * *
+
+## Discussion
 
 The [Conventional Commits][conventional-commits] specification requires contributors to categorize changes according to a limited number of commit types. Inevitably, situations will arise in which a relevant commit type is not obvious. While choosing an appropriate commit type is important, choosing a commit type is only the first step of writing a commit message. When in doubt, a contributor should choose the highest-priority type which is applicable, and then write a detailed commit message body explaining the full complexity the change.
 
