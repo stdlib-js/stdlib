@@ -236,7 +236,7 @@ where `<branch>` is the name of your branch.
 
 #### Step 8: Pull Request
 
-Once your contribution is ready to be incorporated in the `upstream` repository, open a [pull request][github-pull-request] against the `develop` branch. One ore more project contributors will review the contribution, provide feedback, and potentially request changes.
+Once your contribution is ready to be incorporated in the `upstream` repository, open a [pull request][github-pull-request] against the `develop` branch. One or more project contributors will review the contribution, provide feedback, and potentially request changes.
 
 > Receiving feedback is the most **important**, and often the most **valuable**, part of the submission process. Don't get disheartened!
 
