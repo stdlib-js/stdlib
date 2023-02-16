@@ -32,6 +32,8 @@ This project follows the branching model articulated in ["A successful Git branc
 
 -   Each commit on the `master` branch should have an associated tag.
 
+    <!-- run-disable -->
+
     ```bash
     $ git tag -a v2.0.0
     $ git push origin --tags
@@ -48,6 +50,8 @@ This project follows the branching model articulated in ["A successful Git branc
 -   A feature branch should use the naming convention: `feature/<name>`.
 
 -   A feature branch should branch from the `develop` branch.
+
+    <!-- run-disable -->
 
     ```bash
     $ git checkout -b feature/<name> develop
@@ -67,6 +71,8 @@ This project follows the branching model articulated in ["A successful Git branc
 
 -   A release branch should branch from the `develop` branch.
 
+    <!-- run-disable -->
+
     ```bash
     $ git checkout -b release-2.0.0 develop
     ```
@@ -84,6 +90,8 @@ This project follows the branching model articulated in ["A successful Git branc
 -   A hotfix branch should use the naming convention: `hotfix/<name>`.
 
 -   The purpose of a hotfix branch is to immediately patch a bug on the `master` branch. Accordingly, a hotfix branch should branch from the `master` branch.
+
+    <!-- run-disable -->
 
     ```bash
     $ git checkout -b hotfix/<name> master
