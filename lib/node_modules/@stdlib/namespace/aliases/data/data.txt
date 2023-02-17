@@ -2357,6 +2357,7 @@ random.array.beta
 random.array.discreteUniform
 random.array.exponential
 random.array.lognormal
+random.array.minstd
 random.array.mt19937
 random.array.normal
 random.array.randu

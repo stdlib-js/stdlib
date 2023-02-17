@@ -2357,6 +2357,7 @@
 "@stdlib/random/array/discrete-uniform","@stdlib/random-array-discrete-uniform"
 "@stdlib/random/array/exponential","@stdlib/random-array-exponential"
 "@stdlib/random/array/lognormal","@stdlib/random-array-lognormal"
+"@stdlib/random/array/minstd","@stdlib/random-array-minstd"
 "@stdlib/random/array/mt19937","@stdlib/random-array-mt19937"
 "@stdlib/random/array/normal","@stdlib/random-array-normal"
 "@stdlib/random/array/randu","@stdlib/random-array-randu"
