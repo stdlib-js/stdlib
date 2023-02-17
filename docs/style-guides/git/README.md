@@ -252,7 +252,7 @@ A commit message footer may include other structured information using the [Git 
 
 Each token may be repeated; however, only one token is allowed per line. Tokens **must** begin with a capital letter followed by all lowercase letters, a colon `:`, and a space. A token **must** not include whitespace, and individual words **must** be separated by a hyphen `-` (e.g., `Reviewed-by`, not `Reviewed by`).
 
-The only exceptions to the restrictions on token case and inclusion of whitespace are `BREAKING CHANGE`, which must be in uppercase and include a single whitespace character, and `DEPRECATED`, which must be in uppercase. Both `BREAKING CHANGE` and `DEPRECATED` **must** come before all other tokens.
+The only exceptions to the restrictions on token case and inclusion of whitespace are `BREAKING CHANGE`, which **must** be in uppercase and include a single whitespace character, and `DEPRECATED`, which **must** be in uppercase. Both `BREAKING CHANGE` and `DEPRECATED` **must** come before all other tokens.
 
 ## Revert Commits
 
