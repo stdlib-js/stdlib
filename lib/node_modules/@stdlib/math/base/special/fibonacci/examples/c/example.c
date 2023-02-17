@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/fibonacci.h"
+#include <stdio.h>
 
 int main() {
     double v;

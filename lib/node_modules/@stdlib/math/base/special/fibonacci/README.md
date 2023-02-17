@@ -203,6 +203,7 @@ double stdlib_base_fibonacci( const int32_t n );
 
 ```c
 #include "stdlib/math/base/special/fibonacci.h"
+#include <stdio.h>
 
 int main() {
     double v;
