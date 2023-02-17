@@ -24,6 +24,6 @@ int main() {
 
     for ( i = 0; i < 79; i++ ) {
         v = stdlib_base_fibonacci( i );
-        printf( "fibonacci(%i) = %lf\n", i, v );
+        printf( "fibonacci(%d) = %lf\n", i, v );
     }
 }
