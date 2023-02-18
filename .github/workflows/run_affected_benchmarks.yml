@@ -117,4 +117,4 @@ jobs:
           if [ -n "$files" ]; then
             make benchmark-javascript-files FILES="${files}"
           fi
-        timeout-minutes: 5
+        timeout-minutes: 15
