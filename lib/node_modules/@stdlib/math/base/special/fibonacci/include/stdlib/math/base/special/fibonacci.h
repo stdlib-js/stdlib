@@ -19,10 +19,11 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_FIBONACCI_H
 #define STDLIB_MATH_BASE_SPECIAL_FIBONACCI_H
 
+#include <stdint.h>
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
-#include <stdint.h>
 #ifdef __cplusplus
 extern "C" {
 #endif
