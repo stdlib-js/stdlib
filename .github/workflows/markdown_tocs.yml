@@ -110,7 +110,7 @@ jobs:
 
             -   updates namespace table of contents
 
-          commit-message: 'Update namespace table of contents'
+          commit-message: 'docs: update namespace table of contents'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |

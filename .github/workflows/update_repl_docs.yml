@@ -109,7 +109,7 @@ jobs:
 
             -   updates the REPL namespace
 
-          commit-message: 'Update REPL namespace'
+          commit-message: 'feat: update REPL namespace'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |

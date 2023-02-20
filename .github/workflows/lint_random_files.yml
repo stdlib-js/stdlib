@@ -403,7 +403,7 @@ jobs:
 
             -   fixes lint errors
 
-          commit-message: 'Fix lint errors'
+          commit-message: 'style: resolve lint errors'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |

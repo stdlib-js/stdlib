@@ -141,7 +141,7 @@ jobs:
 
             -   updates equation elements found in Markdown files
 
-          commit-message: 'Update Markdown equation elements'
+          commit-message: 'docs: update Markdown equation elements'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |

@@ -121,7 +121,7 @@ jobs:
 
             -   updates namespace exports
 
-          commit-message: 'Update namespace exports'
+          commit-message: 'feat: update namespace exports'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
