@@ -26,7 +26,7 @@ on:
       # List paths for which changes should trigger this workflow:
       - 'lib/**/benchmark/**'
 
-  pull_request_target:
+  pull_request:
     types:
       - opened
       - synchronize
@@ -53,6 +53,7 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
         with:
+
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
 
