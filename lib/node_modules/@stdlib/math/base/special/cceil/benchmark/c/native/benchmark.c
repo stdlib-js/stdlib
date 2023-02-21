@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,8 +19,9 @@
 /**
 * Benchmark `cceil`.
 */
-#include "stdlib/math/base/special/ceil.h"
-#include <complex.h>
+#include "stdlib/math/base/special/cceil.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -94,25 +95,29 @@ double rand_double() {
 * @return elapsed time in seconds
 */
 double benchmark() {
-	double complex x;
-	double complex y;
 	double elapsed;
+    double re;
+    double im;
 	double t;
 	double v;
 	int i;
 
+    stdlib_complex128_t x;
+    stdlib_complex128_t y;
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		v = ( 1000.0*rand_double() ) - 500.0;
-		x = v + v*I;
-		y = stdlib_base_ceil( creal( x ) ) + stdlib_base_ceil( cimag( x ) )*I;
-		if ( creal( y ) != creal( y ) ) {
+		x = stdlib_complex128( v, v );
+		y = stdlib_base_cceil( x );
+        stdlib_reim( y, &re, &im );
+		if ( re != re ) {
 			printf( "unexpected result\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( cimag( y ) != cimag( y ) ) {
+	if ( im != im ) {
 		printf( "unexpected result\n" );
 	}
 	return elapsed;
