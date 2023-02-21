@@ -82,7 +82,7 @@
     Examples
     --------
     // One-sample t-test:
-    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory( 0.0, 2.0, { 'seed': 5776 });
+    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory( 0.0, 2.0, { 'seed': 5776 } );
     > var x = new Array( 100 );
     > for ( var i = 0; i < x.length; i++ ) {
     ...     x[ i ] = rnorm();
@@ -97,7 +97,7 @@
     }
 
     // Paired t-test:
-    > rnorm = {{alias:@stdlib/random/base/normal}}.factory( 1.0, 2.0, { 'seed': 786 });
+    > rnorm = {{alias:@stdlib/random/base/normal}}.factory( 1.0, 2.0, { 'seed': 786 } );
     > x = new Array( 100 );
     > var y = new Array( 100 );
     > for ( i = 0; i < x.length; i++ ) {
@@ -129,7 +129,7 @@
 
     // Choose custom significance level:
     > arr = [ 2, 4, 3, 1, 0 ];
-    > out = {{alias}}( arr, { 'alpha': 0.01 });
+    > out = {{alias}}( arr, { 'alpha': 0.01 } );
     > table = out.print()
     One-sample t-test
 
@@ -145,7 +145,7 @@
 
     // Test for a mean equal to five:
     > var arr = [ 4, 4, 6, 6, 5 ];
-    > out = {{alias}}( arr, { 'mu': 5 })
+    > out = {{alias}}( arr, { 'mu': 5 } )
     {
         rejected: false,
         pValue: 1,
@@ -156,7 +156,7 @@
 
     // Perform one-sided tests:
     > arr = [ 4, 4, 6, 6, 5 ];
-    > out = {{alias}}( arr, { 'alternative': 'less' });
+    > out = {{alias}}( arr, { 'alternative': 'less' } );
     > table = out.print()
     One-sample t-test
 
@@ -170,7 +170,7 @@
     Test Decision: Fail to reject null in favor of alternative at 5%
     significance level
 
-    > out = {{alias}}( arr, { 'alternative': 'greater' });
+    > out = {{alias}}( arr, { 'alternative': 'greater' } );
     > table = out.print()
     One-sample t-test
 

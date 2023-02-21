@@ -48,6 +48,9 @@ out = pascalcase( 'Hello World!' );
 
 out = pascalcase( '--foo-bar--' );
 // returns 'FooBar'
+
+out = pascalcase( 'fooBar' );
+// returns 'FooBar'
 ```
 
 </section>

@@ -23,21 +23,11 @@ import minabs = require( './index' );
 
 // The function returns a number...
 {
-	minabs(); // $ExpectType number
-	minabs( -0.2 ); // $ExpectType number
 	minabs( 3, -0.2 ); // $ExpectType number
-	minabs( 3, -0.2, -1.2, -4.0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided non-number arguments...
 {
-	minabs( true ); // $ExpectError
-	minabs( false ); // $ExpectError
-	minabs( [] ); // $ExpectError
-	minabs( {} ); // $ExpectError
-	minabs( 'abc' ); // $ExpectError
-	minabs( ( x: number ): number => x ); // $ExpectError
-
 	minabs( true, 3 ); // $ExpectError
 	minabs( false, 3 ); // $ExpectError
 	minabs( [], 3 ); // $ExpectError
@@ -51,11 +41,11 @@ import minabs = require( './index' );
 	minabs( 1.2, {} ); // $ExpectError
 	minabs( 1.2, 'abc' ); // $ExpectError
 	minabs( 1.2, ( x: number ): number => x ); // $ExpectError
+}
 
-	minabs( 1.2, 3, true ); // $ExpectError
-	minabs( 1.2, 3, false ); // $ExpectError
-	minabs( 1.2, 3, [] ); // $ExpectError
-	minabs( 1.2, 3, {} ); // $ExpectError
-	minabs( 1.2, 3, 'abc' ); // $ExpectError
-	minabs( 1.2, 3, ( x: number ): number => x ); // $ExpectError
+// The compiler throws an error if the function is provided an unsupported number of arguments...
+{
+	minabs(); // $ExpectError
+	minabs( -0.2 ); // $ExpectError
+	minabs( 3, -0.2, -1.2, -4.0 ); // $ExpectError
 }

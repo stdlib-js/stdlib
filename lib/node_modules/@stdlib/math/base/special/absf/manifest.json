@@ -28,7 +28,7 @@
 		{
 			"task": "build",
 			"src": [
-				"./src/absf.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
@@ -37,14 +37,14 @@
 			"libpath": [],
 			"dependencies": [
 				"@stdlib/math/base/napi/unary",
-				"@stdlib/number/float32/base/to-word"
-
+				"@stdlib/constants/float32/abs-mask",
+        "@stdlib/number/float32/base/to-word"
 			]
 		},
 		{
 			"task": "benchmark",
 			"src": [
-				"./src/absf.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
@@ -52,14 +52,14 @@
 			"libraries": [],
 			"libpath": [],
 			"dependencies": [
-				"@stdlib/number/float32/base/to-word"
-
+				"@stdlib/constants/float32/abs-mask",
+        "@stdlib/number/float32/base/to-word"
 			]
 		},
 		{
 			"task": "examples",
 			"src": [
-				"./src/absf.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
@@ -67,8 +67,8 @@
 			"libraries": [],
 			"libpath": [],
 			"dependencies": [
-				"@stdlib/number/float32/base/to-word"
-
+				"@stdlib/constants/float32/abs-mask",
+        "@stdlib/number/float32/base/to-word"
 			]
 		}
 	]

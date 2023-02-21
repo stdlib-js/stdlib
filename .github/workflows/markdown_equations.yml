@@ -21,7 +21,7 @@ name: markdown_equations
 
 # Workflow triggers:
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - develop
     types:
@@ -91,7 +91,7 @@ jobs:
       # Generate list of changed Markdown files:
       - name: 'Find changed Markdown files'
         run: |
-          echo "files=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .md | tr '\n' ' ')" >> $GITHUB_OUTPUT
+          echo "files=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -G '<equation' | grep .md | tr '\n' ' ')" >> $GITHUB_OUTPUT
         id: changed
 
       # Generate SVG equations:
@@ -141,8 +141,9 @@ jobs:
 
             -   updates equation elements found in Markdown files
 
-          commit-message: 'Update Markdown equation elements'
+          commit-message: 'docs: update Markdown equation elements'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             documentation
             automated-pr

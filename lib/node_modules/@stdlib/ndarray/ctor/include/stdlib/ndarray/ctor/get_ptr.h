@@ -20,9 +20,10 @@
 #define STDLIB_NDARRAY_CTOR_GET_PTR_H
 
 #include "ndarray.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float64.h"
 #include <stdint.h>
 #include <stdbool.h>
-#include <complex.h>
 
 /**
 * Returns a pointer to an ndarray data element in the underlying byte array.
@@ -87,12 +88,12 @@ int8_t stdlib_ndarray_get_ptr_int8( const uint8_t *idx, int8_t *out );
 /**
 * Returns a double-precision complex floating-point ndarray data element specified by a byte array pointer.
 */
-int8_t stdlib_ndarray_get_ptr_complex128( const uint8_t *idx, double complex *out );
+int8_t stdlib_ndarray_get_ptr_complex128( const uint8_t *idx, stdlib_complex128_t *out );
 
 /**
 * Returns a single-precision complex floating-point ndarray data element specified by a byte array pointer.
 */
-int8_t stdlib_ndarray_get_ptr_complex64( const uint8_t *idx, float complex *out );
+int8_t stdlib_ndarray_get_ptr_complex64( const uint8_t *idx, stdlib_complex64_t *out );
 
 /**
 * Returns a boolean ndarray data element specified by a byte array pointer.

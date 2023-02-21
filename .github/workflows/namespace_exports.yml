@@ -21,7 +21,7 @@ name: namespace_exports
 
 # Workflow triggers:
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - develop
     types:
@@ -39,8 +39,8 @@ jobs:
     # Define a display name:
     name: 'Update Namespace Exports'
 
-    # Only run this job if the pull request was merged (or the job was triggered manually):
-    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
+    # Only run this job if the pull request was merged and did not have label `automated-pr` (or the job was triggered manually):
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'automated-pr') == false || github.event_name == 'workflow_dispatch'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -103,7 +103,12 @@ jobs:
           echo "${namespaces}"
 
           # Lint and fix namespace exports:
-          make FILES="${namespaces}" FIX=1 lint-javascript-files
+          make FILES="${namespaces}" FIX=1 FIX_TYPE="suggestion" lint-javascript-files
+
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
 
       # Create a pull request with the updated namespace exports:
       - name: 'Create pull request'
@@ -116,8 +121,9 @@ jobs:
 
             -   updates namespace exports
 
-          commit-message: 'Update namespace exports'
+          commit-message: 'feat: update namespace exports'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             automated-pr
           team-reviewers: |

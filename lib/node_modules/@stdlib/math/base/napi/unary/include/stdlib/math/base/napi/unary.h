@@ -333,6 +333,48 @@
 	};                                                                         \
 	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_i_i_init )
 
+/**
+* Macro for registering a Node-API module exporting an interface invoking a unary function accepting a signed 32-bit integer and returning a double-precision floating-point number.
+*
+* @param fcn   unary function
+*
+* @example
+* #include <stdint.h>
+*
+* static double scale( const int32_t x ) {
+*     return x * 10.0;
+* }
+*
+* // ...
+*
+* // Register a Node-API module:
+* STDLIB_MATH_BASE_NAPI_MODULE_I_D( scale );
+*/
+#define STDLIB_MATH_BASE_NAPI_MODULE_I_D( fcn )                                \
+	static napi_value stdlib_math_base_napi_i_d_wrapper(                       \
+		napi_env env,                                                          \
+		napi_callback_info info                                                \
+	) {                                                                        \
+		return stdlib_math_base_napi_i_d( env, info, fcn );                    \
+	};                                                                         \
+	static napi_value stdlib_math_base_napi_i_d_init(                          \
+		napi_env env,                                                          \
+		napi_value exports                                                     \
+	) {                                                                        \
+		napi_value fcn;                                                        \
+		napi_status status = napi_create_function(                             \
+			env,                                                               \
+			"exports",                                                         \
+			NAPI_AUTO_LENGTH,                                                  \
+			stdlib_math_base_napi_i_d_wrapper,                                 \
+			NULL,                                                              \
+			&fcn                                                               \
+		);                                                                     \
+		assert( status == napi_ok );                                           \
+		return fcn;                                                            \
+	};                                                                         \
+	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_i_d_init )
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -371,9 +413,14 @@ napi_value stdlib_math_base_napi_c_c( napi_env env, napi_callback_info info, std
 napi_value stdlib_math_base_napi_c_f( napi_env env, napi_callback_info info, float (*fcn)( stdlib_complex64_t ) );
 
 /**
-* Invokes a unary function accepting and returning 32-bit signed integers.
+* Invokes a unary function accepting and returning signed 32-bit integers.
 */
 napi_value stdlib_math_base_napi_i_i( napi_env env, napi_callback_info info, int32_t (*fcn)( int32_t ) );
+
+/**
+* Invokes a unary function accepting a signed 32-bit integer and returning a single-precision floating-point number.
+*/
+napi_value stdlib_math_base_napi_i_d( napi_env env, napi_callback_info info, double (*fcn)( int32_t ) );
 
 #ifdef __cplusplus
 }

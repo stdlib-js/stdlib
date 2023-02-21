@@ -51,7 +51,7 @@
 ! @param {real} alpha - scalar
 ! @param {Array<real>} sx - input array
 ! @param {integer} strideX - `sx` stride length
-! @param {Array<real>} sy - destination array
+! @param {Array<real>} sy - output array
 ! @param {integer} strideY - `sy` stride length
 !<
 subroutine saxpy( N, alpha, sx, strideX, sy, strideY )

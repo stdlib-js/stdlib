@@ -23,7 +23,6 @@
 #define STDLIB_STRIDED_COMMON_TYPEDEFS_H
 
 // Note: keep project includes in alphabetical order...
-#include "nullary_typedefs.h"
 #include "quaternary_typedefs.h"
 #include "quinary_typedefs.h"
 #include "ternary_typedefs.h"

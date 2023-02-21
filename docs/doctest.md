@@ -20,7 +20,7 @@ limitations under the License.
 
 # doctest
 
-> A guide for writing documentation tests (aka **doctests**).
+> A guide for writing documentation tests (a.k.a. **doctests**).
 
 Documentation tests (**doctests**) are comment annotations which indicate expected behavior. In the spirit of "literate testing" or "executable documentation", doctests serve three primary purposes:
 
@@ -91,6 +91,8 @@ Markers may be prefixed with `e.g.,` to indicate that an annotation is exemplary
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var arr = foo();
 // e.g., returns [ 1, 3, 2 ]
@@ -101,6 +103,8 @@ indicates that `foo()` returns an `array` containing the values `1`, `2`, and `3
 When doctests are evaluated, annotations prefixed with `e.g.,` should be **skipped**. While we could have used a more general annotation
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var arr = foo();
@@ -130,6 +134,8 @@ indicates that the two-element array to which `x` refers has been mutated after 
 The `e.g.,` and `{var} =>` prefixes can be used in combination. For example,
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 foo( x );
@@ -168,7 +174,7 @@ console.log( x );
 // => 3.141592653589793
 ```
 
-asserts that the value `3.141592653589793` is printed to an output destination, e.g., `stdout`.
+asserts that the value `3.141592653589793` is printed to an output destination (e.g., `stdout`).
 
 #### Approximate Equality
 
@@ -194,7 +200,7 @@ console.log( npi( 2 ) );
 // => ~6.28
 ```
 
-asserts that a value approximately equal to `6.28` will be printed to an output destination, e.g., `stdout`.
+asserts that a value approximately equal to `6.28` will be printed to an output destination (e.g., `stdout`).
 
 > **Note**: doctest implementations should use functionality equivalent to [`roundn`][@stdlib/math/base/special/roundn] for deriving actual (approximate) values against which to test.
 
@@ -204,6 +210,8 @@ Equality assertions are extended to more complex natively supported data structu
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var o = foo();
 // returns { 'a': [ 1, 2, 3 ] }
@@ -212,6 +220,8 @@ var o = foo();
 indicates that `foo()` returns a JavaScript `object` with known contents. While single-line comment syntax is preferred, doctests asserting deep equality can be used with multi-line comment syntax. For example,
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var o = foo();
@@ -233,6 +243,8 @@ Asserting approximately equality is extended to complex data structures. For exa
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var o = foo();
 // returns { 'a': [ ~1.1, ~2.2, ~3.3 ] }
@@ -241,6 +253,8 @@ var o = foo();
 indicates that `foo()` returns a JavaScript `object` containing a nested array with approximate values `1.1`, `2.2`, and `3.3`. Similarly,
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var o = foo();
@@ -261,6 +275,8 @@ For example,
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var str = foo();
 // returns <string>
@@ -275,6 +291,8 @@ asserts that `foo()` returns a value having the type `string`. Type annotations 
 To support the particular use case of homogeneously typed arrays, the array value type should be followed by square brackets `[]`. For example,
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var str = foo();
@@ -293,6 +311,8 @@ For example,
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var re = foo();
 // returns <RegExp>
@@ -301,6 +321,8 @@ var re = foo();
 indicates that `foo()` returns a value which is an "instance of" `RegExp` (i.e., a JavaScript regular expression).
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var z = new Complex128( 1.0, -1.0 );
@@ -341,6 +363,8 @@ In a similar manner, deep approximate equality can be combined with instance equ
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var x = foo();
 // returns <Float64Array>[ ~1.0, ~2.0, ~3.0 ]
@@ -354,6 +378,8 @@ In special circumstances, authors may want to express two or more possible retur
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var v = foo();
 // returns <number> || null
@@ -364,6 +390,8 @@ indicates that `foo()` may return either a value of type `number` **or** the val
 Similarly, although expected to be a **rare** use case, conditional equality can be applied to printed output. For example,
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var v = foo();
@@ -380,6 +408,8 @@ To support abbreviated output, doctest annotations can use ellipsis to indicate 
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var v = foo();
 // returns ...
@@ -388,6 +418,8 @@ var v = foo();
 indicates that `foo()` returns a value of undefined/unspecified type (i.e., a value of "any" type).
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var s = foo();
@@ -398,6 +430,8 @@ indicates that `foo()` returns a **non-empty** `string` with undefined/unspecifi
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var arr = foo();
 // returns [...]
@@ -406,6 +440,8 @@ var arr = foo();
 indicates that `foo()` returns a **non-empty** `array` with undefined/unspecified contents.
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var arr = foo();
@@ -416,6 +452,8 @@ indicates that `foo()` returns an `array` whose length is at least `2`, whose fi
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var arr = foo();
 // returns [ ~1.1, ..., ~10.5 ]
@@ -424,6 +462,8 @@ var arr = foo();
 indicates that `foo()` returns an `array` whose length is at least `2`, whose first element is approximately `1.1`, and whose last element is approximately `10.5`.
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var arr = foo();
@@ -438,6 +478,8 @@ To indicate continued output, especially for larger data structures such as arra
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var arr = foo();
 // returns [ 1, 2, ... ]
@@ -446,6 +488,8 @@ var arr = foo();
 indicates that `foo()` returns an `array` whose length is at least `2`, whose first element is `1`, and whose second element is `2`.
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var arr = foo();
@@ -524,9 +568,11 @@ stdlib extends doctest annotations to accommodate data structures commonly used 
 
 #### matrices
 
-For matrices (and, more generally, ndarrays), stdlib uses a "slice" syntax to indicate matrix contents. For example, 
+For matrices (and, more generally, ndarrays), stdlib uses a "slice" syntax to indicate matrix contents. For example,
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var mat = foo();
@@ -543,6 +589,8 @@ Less commonly, one may want to assert a sub-matrix. For example,
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var mat = foo();
 /* returns
@@ -558,6 +606,8 @@ Additionally, matrices can include wildcards. For example,
 
 <!-- run-disable -->
 
+<!-- eslint-disable stdlib/doctest -->
+
 ```javascript
 var mat = foo();
 /* returns
@@ -570,9 +620,11 @@ var mat = foo();
 
 indicates that `foo()` returns a matrix having at least `2` rows and at least `2` columns and whose  contents include the values `1.14`, `-3.14`, `0.00`, and `0.50`.
 
-Lastly, similar to other complex data structures, approximate values are demarcated with a tilde `~`. For example, 
+Lastly, similar to other complex data structures, approximate values are demarcated with a tilde `~`. For example,
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var mat = foo();
@@ -588,6 +640,8 @@ var mat = foo();
 ndarrays extend the conventions for matrices to arbitrary dimensions. For example,
 
 <!-- run-disable -->
+
+<!-- eslint-disable stdlib/doctest -->
 
 ```javascript
 var x = foo();

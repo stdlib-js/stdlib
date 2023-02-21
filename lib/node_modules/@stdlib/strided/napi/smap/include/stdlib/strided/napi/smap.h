@@ -35,7 +35,7 @@
 * // ...
 *
 * // Register a Node-API module:
-* STDLIB_STRIDED_NAPI_MODULE_SMAP( scale );
+* STDLIB_STRIDED_NAPI_MODULE_SMAP( scale )
 */
 #define STDLIB_STRIDED_NAPI_MODULE_SMAP( clbk )                                \
 	static napi_value stdlib_strided_napi_smap_wrapper(                        \

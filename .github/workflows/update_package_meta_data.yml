@@ -87,8 +87,9 @@ jobs:
 
             -   updates package meta data
 
-          commit-message: 'Update package meta data'
+          commit-message: 'chore: update package meta data'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             automated-pr
           team-reviewers: |

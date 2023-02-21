@@ -378,12 +378,37 @@
 * @param tout  output type
 *
 * @example
+* // e.g., d_d
 * STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK( double, double )
 */
 #define STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK( tin, tout )                         \
 	STDLIB_NDARRAY_UNARY_9D_LOOP_PREAMBLE {                                    \
 		const tin x = *(tin *)px1;                                             \
 		*(tout *)px2 = (tout)f( x );                                           \
+	}                                                                          \
+	STDLIB_NDARRAY_UNARY_9D_LOOP_EPILOGUE
+
+/**
+* Macro for a unary nine-dimensional loop which invokes a callback and does not cast the return callback's return value (e.g., a `struct`).
+*
+* ## Notes
+*
+* -   Retrieves each ndarray element according to type `tin` via a pointer `px1`.
+* -   Stores the result in an output ndarray of type `tout` via the pointer `px2`.
+*
+* @param tin   input type
+* @param tout  output type
+*
+* @example
+* #include "stdlib/complex/float64.h"
+*
+* // e.g., z_z
+* STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_RET_NOCAST( stdlib_complex128_t, stdlib_complex128_t )
+*/
+#define STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_RET_NOCAST( tin, tout )              \
+	STDLIB_NDARRAY_UNARY_9D_LOOP_PREAMBLE {                                    \
+		const tin x = *(tin *)px1;                                             \
+		*(tout *)px2 = f( x );                                                 \
 	}                                                                          \
 	STDLIB_NDARRAY_UNARY_9D_LOOP_EPILOGUE
 
@@ -402,12 +427,68 @@
 * @param fin   callback argument type
 *
 * @example
+* // e.g., f_f_as_d_d
 * STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_ARG_CAST( float, float, double )
 */
 #define STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_ARG_CAST( tin, tout, fin )           \
 	STDLIB_NDARRAY_UNARY_9D_LOOP_PREAMBLE {                                    \
 		const tin x = *(tin *)px1;                                             \
 		*(tout *)px2 = (tout)f( (fin)x );                                      \
+	}                                                                          \
+	STDLIB_NDARRAY_UNARY_9D_LOOP_EPILOGUE
+
+/**
+* Macro for a unary nine-dimensional ndarray loop which invokes a callback requiring arguments be cast to a different type via casting functions.
+*
+* ## Notes
+*
+* -   Retrieves each ndarray element according to type `tin` via a pointer `px1`.
+* -   Explicitly casts each function argument via `cin`.
+* -   Explicitly casts each function `f` invocation result via `cout`.
+* -   Stores the result in an output ndarray of type `tout` via the pointer `px2`.
+*
+* @param tin   input type
+* @param tout  output type
+* @param cin   input casting function
+* @param cout  output casting function
+*
+* @example
+* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float64.h"
+*
+* // e.g., f_c_as_z_z
+* STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex128_from_float32, stdlib_complex128_to_complex64 )
+*/
+#define STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_ARG_CAST_FCN( tin, tout, cin, cout ) \
+	STDLIB_NDARRAY_UNARY_9D_LOOP_PREAMBLE {                                    \
+		const tin x = *(tin *)px1;                                             \
+		*(tout *)px2 = cout( f( cin( x ) ) );                                  \
+	}                                                                          \
+	STDLIB_NDARRAY_UNARY_9D_LOOP_EPILOGUE
+
+/**
+* Macro for a unary nine-dimensional ndarray loop which invokes a callback whose return value must be cast to a different type via a casting function.
+*
+* ## Notes
+*
+* -   Retrieves each ndarray element according to type `tin` via a pointer `px1`.
+* -   Explicitly casts each function `f` invocation result via `cout`.
+* -   Stores the result in an output ndarray of type `tout` via the pointer `px2`.
+*
+* @param tin   input type
+* @param tout  output type
+* @param cout  output casting function
+*
+* @example
+* #include "stdlib/complex/float64.h"
+*
+* // e.g., d_z
+* STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_RET_CAST_FCN( double, stdlib_complex128_t, stdlib_complex128_from_float64 )
+*/
+#define STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_RET_CAST_FCN( tin, tout, cout )      \
+	STDLIB_NDARRAY_UNARY_9D_LOOP_PREAMBLE {                                    \
+		const tin x = *(tin *)px1;                                             \
+		*(tout *)px2 = cout( f( x ) );                                         \
 	}                                                                          \
 	STDLIB_NDARRAY_UNARY_9D_LOOP_EPILOGUE
 

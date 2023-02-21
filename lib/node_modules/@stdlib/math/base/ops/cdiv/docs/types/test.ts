@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import cdiv = require( './index' );
 
 
@@ -23,72 +24,44 @@ import cdiv = require( './index' );
 
 // The function returns an array of numbers...
 {
-	cdiv( 5, 3, -2, 1 ); // $ExpectType ArrayLike<number>
-	cdiv( [], 5, 3, -2, 1 ); // $ExpectType ArrayLike<number>
+	const z = new Complex128( 1.0, 1.0 );
+
+	cdiv( z, z ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a first real component which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a complex number...
 {
-	cdiv( true, 3, -2, 1 ); // $ExpectError
-	cdiv( false, 3, -2, 1 ); // $ExpectError
-	cdiv( null, 3, -2, 1 ); // $ExpectError
-	cdiv( undefined, 3, -2, 1 ); // $ExpectError
-	cdiv( '5', 3, -2, 1 ); // $ExpectError
-	cdiv( [], 3, -2, 1 ); // $ExpectError
-	cdiv( {}, 3, -2, 1 ); // $ExpectError
-	cdiv( ( x: number ): number => x, 3, -2, 1 ); // $ExpectError
+	const z = new Complex128( 1.0, 1.0 );
+
+	cdiv( true, z ); // $ExpectError
+	cdiv( false, z ); // $ExpectError
+	cdiv( null, z ); // $ExpectError
+	cdiv( undefined, z ); // $ExpectError
+	cdiv( '5', z ); // $ExpectError
+	cdiv( [], z ); // $ExpectError
+	cdiv( {}, z ); // $ExpectError
+	cdiv( ( x: number ): number => x, z ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a first imaginary component which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a complex number...
 {
-	cdiv( 5, true, -2, 1 ); // $ExpectError
-	cdiv( 5, false, -2, 1 ); // $ExpectError
-	cdiv( 5, null, -2, 1 ); // $ExpectError
-	cdiv( 5, undefined, -2, 1 ); // $ExpectError
-	cdiv( 5, '5', -2, 1 ); // $ExpectError
-	cdiv( 5, [], -2, 1 ); // $ExpectError
-	cdiv( 5, {}, -2, 1 ); // $ExpectError
-	cdiv( 5, ( x: number ): number => x, -2, 1 ); // $ExpectError
+	const z = new Complex128( 1.0, 1.0 );
+
+	cdiv( z, true ); // $ExpectError
+	cdiv( z, false ); // $ExpectError
+	cdiv( z, null ); // $ExpectError
+	cdiv( z, undefined ); // $ExpectError
+	cdiv( z, '5' ); // $ExpectError
+	cdiv( z, [] ); // $ExpectError
+	cdiv( z, {} ); // $ExpectError
+	cdiv( z, ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second real component which is not a number...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	cdiv( 5, 3, true, 1 ); // $ExpectError
-	cdiv( 5, 3, false, 1 ); // $ExpectError
-	cdiv( 5, 3, null, 1 ); // $ExpectError
-	cdiv( 5, 3, undefined, 1 ); // $ExpectError
-	cdiv( 5, 3, '5', 1 ); // $ExpectError
-	cdiv( 5, 3, [], 1 ); // $ExpectError
-	cdiv( 5, 3, {}, 1 ); // $ExpectError
-	cdiv( 5, 3, ( x: number ): number => x, 1 ); // $ExpectError
-}
+	const z = new Complex128( 1.0, 1.0 );
 
-// The compiler throws an error if the function is provided a second imaginary component which is not a number...
-{
-	cdiv( 5, 3, -2, true ); // $ExpectError
-	cdiv( 5, 3, -2, false ); // $ExpectError
-	cdiv( 5, 3, -2, null ); // $ExpectError
-	cdiv( 5, 3, -2, undefined ); // $ExpectError
-	cdiv( 5, 3, -2, '5' ); // $ExpectError
-	cdiv( 5, 3, -2, [] ); // $ExpectError
-	cdiv( 5, 3, -2, {} ); // $ExpectError
-	cdiv( 5, 3, -2, ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	cdiv( true, 5, 3, -2, 1 ); // $ExpectError
-	cdiv( false, 5, 3, -2, 1 ); // $ExpectError
-	cdiv( 'abc', 5, 3, -2, 1 ); // $ExpectError
-	cdiv( {}, 5, 3, -2, 1 ); // $ExpectError
-	cdiv( ( x: number ): number => x, 5, 3, -2, 1 ); // $ExpectError
-	cdiv( 123, 5, 3, -2, 1 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided insufficient arguments...
-{
 	cdiv(); // $ExpectError
-	cdiv( 2 ); // $ExpectError
-	cdiv( 2, 3 ); // $ExpectError
-	cdiv( 2, 3, 4 ); // $ExpectError
+	cdiv( z ); // $ExpectError
+	cdiv( z, z, z ); // $ExpectError
 }

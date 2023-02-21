@@ -28,7 +28,7 @@
 		{
 			"task": "build",
 			"src": [
-				"./src/abs.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
@@ -37,13 +37,14 @@
 			"libpath": [],
 			"dependencies": [
 				"@stdlib/math/base/napi/unary",
-				"@stdlib/number/float64/base/to-words"
+				"@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/number/float64/base/to-words"
 			]
 		},
 		{
 			"task": "benchmark",
 			"src": [
-				"./src/abs.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
@@ -51,13 +52,14 @@
 			"libraries": [],
 			"libpath": [],
 			"dependencies": [
-				"@stdlib/number/float64/base/to-words"
+				"@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/number/float64/base/to-words"
 			]
 		},
 		{
 			"task": "examples",
 			"src": [
-				"./src/abs.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
@@ -65,7 +67,8 @@
 			"libraries": [],
 			"libpath": [],
 			"dependencies": [
-				"@stdlib/number/float64/base/to-words"
+				"@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/number/float64/base/to-words"
 			]
 		}
 	]

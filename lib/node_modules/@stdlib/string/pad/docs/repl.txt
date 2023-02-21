@@ -40,11 +40,11 @@
     'a    '
 
     // Left pad:
-    > out = {{alias}}( 'a', 10, { 'lpad': 'b' })
+    > out = {{alias}}( 'a', 10, { 'lpad': 'b' } )
     'bbbbbbbbba'
 
     // Right pad:
-    > out = {{alias}}( 'a', 12, { 'rpad': 'b' })
+    > out = {{alias}}( 'a', 12, { 'rpad': 'b' } )
     'abbbbbbbbbbb'
 
     // Center an input string:

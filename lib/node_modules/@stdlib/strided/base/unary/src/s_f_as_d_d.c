@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,14 +16,18 @@
 * limitations under the License.
 */
 
+/*
+* The following is auto-generated. Do not manually edit. See scripts/loops.js.
+*/
+
 #include "stdlib/strided/base/unary/s_f_as_d_d.h"
 #include "stdlib/strided/base/unary/macros.h"
 #include <stdint.h>
 
 /**
-* Applies a unary callback accepting and returning double-precision floating-point numbers to a signed 8-bit integer strided input array, casts the callback's double-precision floating-point return value to a single-precision floating-point number, and assigns results to elements in a single-precision floating-point strided output array.
+* Applies a unary callback to strided input array elements and assigns results to elements in a strided output array.
 *
-* @param arrays   array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array
+* @param arrays   array whose first element is a pointer to a strided input array and whose second element is a pointer to a strided output array
 * @param shape    array whose only element is the number of elements over which to iterate
 * @param strides  array containing strides (in bytes) for each strided array
 * @param fcn      callback
@@ -40,18 +44,18 @@
 * uint8_t *arrays[] = { x, out };
 *
 * // Define the strides:
-* int64_t strides[] = { 1, 4 }; // 1 byte per int8, 4 bytes per float
+* int64_t strides[] = { 1, 4 };
 *
 * // Define the number of elements over which to iterate:
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* double scale( const double x ) {
-*     return x + 10.0;
+* double fcn( double x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* stdlib_strided_s_f_as_d_d( arrays, shape, strides, (void *)scale );
+* stdlib_strided_s_f_as_d_d( arrays, shape, strides, (void *)fcn );
 */
 void stdlib_strided_s_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
 	typedef double func_type( const double x );

@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2022 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -113,6 +113,96 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/expm1rel.h"
+```
+
+#### stdlib_base_exmp1rel( x )
+
+Computes the relative error exponential.
+
+```c
+double out = stdlib_base_expm1rel( 0.0 );
+// returns 1.0
+
+out = stdlib_base_expm1rel( 1.0 );
+// returns ~1.718
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_expm1rel( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/expm1rel.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    double x;
+    double v;
+    int i;
+    
+    for ( i = 0; i < 100; i++ ) {
+        x = ( ( (double)rand() / (double)RAND_MAX ) * 100.0 ) - 50.0;
+        v = stdlib_base_expm1rel( x );
+        printf( "(e^%lf - 1)/%lf = %lf\n", x, x, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

@@ -174,7 +174,7 @@ lowercase( str )
     ...
 ```
 
-Do **not** write the description in the declarative mood. For example, avoid
+Do **not** write the description in the imperative mood. For example, avoid
 
 ```text
 lowercase( str )
@@ -308,6 +308,7 @@ The following parameter types are supported:
 -   `Uint8ClampedArray`: if a parameter must be a `Uint8ClampedArray`.
 -   `ArrayBuffer`: if a parameter must be an `ArrayBuffer`.
 -   `SharedArrayBuffer`: if a parameter must be a `SharedArrayBuffer`.
+-   `ndarray`: if a parameter must be an `ndarray`.
 
 For parameters which may be more than one type, use a `|` separator.
 
@@ -323,7 +324,7 @@ foo( value )
     ...
 ```
 
-In general, avoid specialized and/or uncommon value types; e.g., `NonNegativeInteger`, `Probability`, etc. Users are unable to discern the meaning of specialized types without access to external (possibly out-of-band) documentation.
+In general, avoid specialized and/or uncommon value types (e.g., `NonNegativeInteger`, `Probability`, etc). Users are unable to discern the meaning of specialized types without access to external (possibly out-of-band) documentation.
 
 A few notes:
 
@@ -364,6 +365,20 @@ For return values which can be more than one type, use a `|` separator.
     -------
     out: Buffer|Error
         A short description.
+
+    ...
+```
+
+For constructors returning class instances, the class name may be used as the return type.
+
+```text
+Foo()
+    Returns a new instance.
+
+    Returns
+    -------
+    out: Foo
+        A new instance.
 
     ...
 ```

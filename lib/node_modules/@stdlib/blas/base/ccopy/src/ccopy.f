@@ -50,7 +50,7 @@
 ! @param {integer} N - number of values to copy
 ! @param {Array<complex>} cx - input array
 ! @param {integer} strideX - `cx` stride length
-! @param {Array<complex>} cy - destination array
+! @param {Array<complex>} cy - output array
 ! @param {integer} strideY - `cy` stride length
 !<
 subroutine ccopy( N, cx, strideX, cy, strideY )

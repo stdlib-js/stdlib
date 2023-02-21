@@ -19,7 +19,7 @@
 // TypeScript Version: 2.0
 
 /**
-* Computes the hyperbolic cosine of a number.
+* Computes the hyperbolic cosine of a double-precision floating-point number.
 *
 * @param x - input value
 * @returns hyperbolic cosine

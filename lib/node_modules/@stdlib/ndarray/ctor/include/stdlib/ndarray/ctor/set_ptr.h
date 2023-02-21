@@ -20,9 +20,10 @@
 #define STDLIB_NDARRAY_CTOR_SET_PTR_H
 
 #include "ndarray.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float64.h"
 #include <stdint.h>
 #include <stdbool.h>
-#include <complex.h>
 
 /**
 * Sets an ndarray data element specified by a byte array pointer.
@@ -82,12 +83,12 @@ int8_t stdlib_ndarray_set_ptr_int8( uint8_t *idx, const int8_t v );
 /**
 * Sets a double-precision complex floating-point ndarray data element specified by a byte array pointer.
 */
-int8_t stdlib_ndarray_set_ptr_complex128( uint8_t *idx, const double complex v );
+int8_t stdlib_ndarray_set_ptr_complex128( uint8_t *idx, const stdlib_complex128_t v );
 
 /**
 * Sets a single-precision complex floating-point ndarray data element specified by a byte array pointer.
 */
-int8_t stdlib_ndarray_set_ptr_complex64( uint8_t *idx, const float complex v );
+int8_t stdlib_ndarray_set_ptr_complex64( uint8_t *idx, const stdlib_complex64_t v );
 
 /**
 * Sets a boolean ndarray data element specified by a byte array pointer.

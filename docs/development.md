@@ -35,15 +35,25 @@ So, without further ado, let's get you started!
 Developing and running stdlib **requires** the following prerequisites:
 
 -   [Git][git]: version control
+
 -   [GNU make][make]: development utility and task runner
+
 -   [GNU bash][bash]: an sh-compatible shell
+
 -   [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
+
 -   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`; although the latest stable version is **strongly** recommended)
--   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`; if Node `< 10.x.x`, version `> 2.7.0` and `< 6.0.0`)
+
+-   [npm][npm]: package manager
+
+    -   version `> 2.7.0`
+    -   if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`
+    -   if Node `< 10.x.x`, version `> 2.7.0` and `< 6.0.0`
+    -   if Node `< 14.17.0`, version `> 2.7.0` and `< 9.0.0`
 
 While not required to run stdlib, the following dependencies **may** be required for testing, benchmarking, and general development:
 
--   [Julia][julia]: language for technical computing (version `>= 0.5` and `<= 0.7`)
+-   [Julia][julia]: language for technical computing (version `>= 1.0`)
 -   [R][r]: language for statistical computing (version `>= 3.4.0`)
 -   [Python][python]: general purpose language (version `>=2.7.x`)
 -   [pip][pip]: Python package manager (version `>= 9.0.0`; **required** for automatically installing Python packages, such as lint tools)
@@ -55,14 +65,14 @@ While not required to run stdlib, the following dependencies **may** be required
 
 Assuming the requisite language is present on the host machine, the following language libraries can be automatically downloaded and installed using `make` (see [installation](#installation)):
 
--   [NumPy][numpy]: general purpose array-processing library for Python (version `>= 1.8.2`)
--   [SciPy][scipy]: Python library containing numerical routines (version `>= 0.17.0`)
--   [Pylint][pylint]: Python source code analyzer (version `>= 1.7.1`)
--   [pycodestyle][pycodestyle]: Python style guide checker against PEP 8 (version `>= 2.3.1`)
--   [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.0.0`)
--   [lintr][lintr]: static code analysis for R (version `>= 1.0.0`)
--   [shellcheck][shellcheck]: static code analysis for shell scripts (version `>= 0.5.0`; to install on OS X, either install [Homebrew][homebrew] as a prerequisite or install [shellcheck][shellcheck] manually)
--   [cppcheck][cppcheck]: C/C++ static code analysis (version `>= 2.5`).
+-   [NumPy][numpy]: general purpose array-processing library for Python
+-   [SciPy][scipy]: Python library containing numerical routines
+-   [Pylint][pylint]: Python source code analyzer
+-   [pycodestyle][pycodestyle]: Python style guide checker against PEP 8
+-   [pydocstyle][pydocstyle]: Python docstring checker against PEP 257
+-   [lintr][lintr]: static code analysis for R
+-   [shellcheck][shellcheck]: static code analysis for shell scripts
+-   [cppcheck][cppcheck]: C/C++ static code analysis
 
 The following external libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
@@ -99,7 +109,7 @@ If you are wanting to contribute to stdlib, first [fork][github-fork] the reposi
 $ git clone https://github.com/<username>/stdlib.git
 ```
 
-where `<username>` is your GitHub username (assuming you are using GitHub to manage public repositories). The repository has a large commit history, leading to slow download times. If you are not interested in code archeology, you can reduce the download time by limiting the clone [depth][git-clone-depth].
+where `<username>` is your GitHub username (assuming you are using GitHub to manage public repositories). The repository has a large commit history, leading to slow download times. You can reduce the download time by limiting the clone [depth][git-clone-depth].
 
 <!-- run-disable -->
 
@@ -107,7 +117,7 @@ where `<username>` is your GitHub username (assuming you are using GitHub to man
 $ git clone --depth=<depth> https://github.com/<username>/stdlib.git
 ```
 
-where `<depth>` refers to the number of commits you want to download (as few as `1` and as many as the entire project history).
+where `<depth>` refers to the number of commits you want to download (as few as `1` and as many as the entire project history). **However, limiting clone depth can cause difficulties later when attempting to rebase a pull request on the latest development branch.** For simple pull requests, limiting clone depth is likely to work out fine; however, for more complex pull requests, including those depending on upstream changes, limiting clone depth may be a source of Git errors (e.g., due to unrelated Git histories), and, thus, you may be forced to re-clone the repository and start over.
 
 If you are behind a firewall, you may need to use the `https` protocol, rather than the `git` protocol.
 
@@ -184,8 +194,7 @@ If you are working with a [forked][github-fork] repository and wish to [sync][gi
 <!-- run-disable -->
 
 ```bash
-$ git fetch upstream
-$ git merge upstream/<branch>
+$ git pull --ff upstream <branch>
 ```
 
 where `upstream` is the remote name and `<branch>` refers to the branch you want to merge into your local copy.
@@ -257,7 +266,7 @@ workshops  workshops
 
 ## Editors
 
--   This repository uses [EditorConfig][editorconfig] to maintain consistent coding styles between different editors and IDEs, including [browsers][editorconfig-chrome].
+-   This repository uses [EditorConfig][editorconfig] to maintain consistent coding styles between different editors and IDEs, including [browsers][editorconfig-chrome]. You should be sure to download and setup [EditorConfig][editorconfig] to ensure that files are automatically configured to use expected indentation and line endings.
 
 ## Testing
 

@@ -60,9 +60,10 @@ jobs:
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
-        uses: tj-actions/changed-files@v32
-        with:
-          separator: ' '
+        run: |
+          files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
+          files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
+          echo "files=${files}" >> $GITHUB_OUTPUT
 
       # Run the command to scaffold a package:
       - name: 'Scaffold package'
@@ -71,7 +72,7 @@ jobs:
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          added-files: ${{ steps.changed-files.outputs.added_files }}
+          added-files: ${{ steps.changed-files.outputs.files }}
 
       # Configure git:
       - name: 'Configure git'

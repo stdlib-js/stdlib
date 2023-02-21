@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2023 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -52,18 +52,15 @@ The function has the following parameters:
 -   **y**: destination [`Float64Array`][mdn-float64array].
 -   **strideY**: index increment for `y`.
 
-The `N` and `stride` parameters determine how values from `x` are copied into `y`. For example, to copy in reverse order every other value in `x` into the first `N` elements of `y`,
+The `N` and stride parameters determine how values from `x` are copied into `y`. For example, to copy in reverse order every other value in `x` into the first `N` elements of `y`,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 
-var N = floor( x.length / 2 );
-
-dcopy( N, x, -2, y, 1 );
+dcopy( 3, x, -2, y, 1 );
 // y => <Float64Array>[ 5.0, 3.0, 1.0, 10.0, 11.0, 12.0 ]
 ```
 
@@ -73,7 +70,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial arrays...
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -83,10 +79,8 @@ var y0 = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
-var N = floor( x0.length / 2 );
-
 // Copy in reverse order every other value from `x1` into `y1`...
-dcopy( N, x1, -2, y1, 1 );
+dcopy( 3, x1, -2, y1, 1 );
 // y0 => <Float64Array>[ 7.0, 8.0, 9.0, 6.0, 4.0, 2.0 ]
 ```
 
@@ -109,18 +103,15 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offsetX` and `offsetY` parameters support indexing semantics based on starting indices. For example, to copy every other value in `x` starting from the second value into the last `N` elements in `y` where `x[i] = y[n]`, `x[i+2] = y[n-1]`,...,
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to copy every other value in `x` starting from the second value into the last `N` elements in `y` where `x[i] = y[n]`, `x[i+2] = y[n-1]`,...,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 
-var N = floor( x.length / 2 );
-
-dcopy.ndarray( N, x, 2, 1, y, -1, y.length-1 );
+dcopy.ndarray( 3, x, 2, 1, y, -1, y.length-1 );
 // y => <Float64Array>[ 7.0, 8.0, 9.0, 6.0, 4.0, 2.0 ]
 ```
 
@@ -146,22 +137,14 @@ dcopy.ndarray( N, x, 2, 1, y, -1, y.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var Float64Array = require( '@stdlib/array/float64' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dcopy = require( '@stdlib/blas/base/dcopy' );
 
-var x;
-var y;
-var i;
-
-x = new Float64Array( 10 );
-y = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = round( randu()*500.0 );
-    y[ i ] = round( randu()*255.0 );
-}
+var x = filledarrayBy( 10, 'float64', discreteUniform( 0, 500 ) );
 console.log( x );
+
+var y = filledarrayBy( x.length, 'float64', discreteUniform( 0, 255 ) );
 console.log( y );
 
 // Copy elements from `x` into `y` starting from the end of `y`:

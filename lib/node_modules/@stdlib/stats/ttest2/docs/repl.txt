@@ -112,7 +112,7 @@
     significance level
 
     // Choose a different significance level than `0.05`:
-    > out = {{alias}}( x, y, { 'alpha': 0.1 });
+    > out = {{alias}}( x, y, { 'alpha': 0.1 } );
     > table = out.print()
     Welch two-sample t-test
 
@@ -125,7 +125,7 @@
     Test Decision: Reject null in favor of alternative at 10% significance level
 
     // Perform one-sided tests:
-    > out = {{alias}}( x, y, { 'alternative': 'less' });
+    > out = {{alias}}( x, y, { 'alternative': 'less' } );
     > table = out.print()
     Welch two-sample t-test
 
@@ -138,7 +138,7 @@
 
     Test Decision: Reject null in favor of alternative at 5% significance level
 
-    > out = {{alias}}( x, y, { 'alternative': 'greater' });
+    > out = {{alias}}( x, y, { 'alternative': 'greater' } );
     > table = out.print()
     Welch two-sample t-test
 
@@ -155,7 +155,7 @@
     // Run tests with equal variances assumption:
     > x = [ 2, 3, 1, 4 ];
     > y = [ 1, 2, 3, 1, 2, 5, 3, 4 ];
-    > out = {{alias}}( x, y, { 'variance': 'equal' });
+    > out = {{alias}}( x, y, { 'variance': 'equal' } );
     > table = out.print()
     Two-sample t-test
 
@@ -170,7 +170,7 @@
     significance level
 
     // Test for a difference in means besides zero:
-    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory({ 'seed': 372 });
+    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory({ 'seed': 372 } );
     > x = new Array( 100 );
     > for ( i = 0; i < x.length; i++ ) {
     ...     x[ i ] = rnorm( 2.0, 3.0 );
@@ -179,7 +179,7 @@
     > for ( i = 0; i < x.length; i++ ) {
     ...     y[ i ] = rnorm( 1.0, 3.0 );
     ... }
-    > out = {{alias}}( x, y, { 'difference': 1.0, 'variance': 'equal' })
+    > out = {{alias}}( x, y, { 'difference': 1.0, 'variance': 'equal' } )
     {
         rejected: false,
         pValue: ~0.642,

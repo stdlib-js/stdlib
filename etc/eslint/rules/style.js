@@ -693,7 +693,7 @@ rules[ 'line-comment-position' ] = 'off';
 rules[ 'linebreak-style' ] = [ 'error', 'unix' ];
 
 /**
-* Prefer empty lines before comments. NOTE: disable to allow some discretion in terms of readability, clarity, and terseness.
+* Prefer empty lines before comments.
 *
 * @name lines-around-comment
 * @memberof rules
@@ -713,7 +713,7 @@ rules[ 'linebreak-style' ] = [ 'error', 'unix' ];
 * // Line comment:
 * var y = 10;
 */
-rules[ 'lines-around-comment' ] = [ 'off', {
+rules[ 'lines-around-comment' ] = [ 'off', { // NOTE: disabled to allow some discretion in terms of readability, clarity, and terseness.
 	'beforeBlockComment': true,
 	'afterBlockComment': false,
 	'beforeLineComment': true,
@@ -776,7 +776,7 @@ rules[ 'max-depth' ] = [ 'error', {
 * @type {Array}
 * @see [max-len]{@link https://eslint.org/docs/rules/max-len}
 */
-rules[ 'max-len' ] = [ 'error', {
+rules[ 'max-len' ] = [ 'warn', {
 	'code': 80,
 	'tabWidth': 4,
 	'ignoreComments': true,

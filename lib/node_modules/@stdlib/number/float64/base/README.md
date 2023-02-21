@@ -58,7 +58,7 @@ var o = ns;
 -   <span class="signature">[`float64ToInt32( x )`][@stdlib/number/float64/base/to-int32]</span><span class="delimiter">: </span><span class="description">convert a double-precision floating-point number to a signed 32-bit integer.</span>
 -   <span class="signature">[`float64ToInt64Bytes( x )`][@stdlib/number/float64/base/to-int64-bytes]</span><span class="delimiter">: </span><span class="description">convert an integer-valued double-precision floating-point number to a signed 64-bit integer byte array according to host byte order (endianness).</span>
 -   <span class="signature">[`float64ToUint32( x )`][@stdlib/number/float64/base/to-uint32]</span><span class="delimiter">: </span><span class="description">convert a double-precision floating-point number to an unsigned 32-bit integer.</span>
--   <span class="signature">[`toWords( [out,] x )`][@stdlib/number/float64/base/to-words]</span><span class="delimiter">: </span><span class="description">split a double-precision floating-point number into a higher order word and a lower order word.</span>
+-   <span class="signature">[`toWords( x )`][@stdlib/number/float64/base/to-words]</span><span class="delimiter">: </span><span class="description">split a double-precision floating-point number into a higher order word and a lower order word.</span>
 
 </div>
 

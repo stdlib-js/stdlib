@@ -33,7 +33,7 @@ endif
 #
 # This target generates source HTML documentation from [JSDoc][1]-style comments.
 #
-# [1]: http://usejsdoc.org/
+# [1]: https://jsdoc.app/
 
 src-docs:
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)
@@ -83,7 +83,7 @@ endif
 #
 # This target removes any current documentation and regenerates source HTML documentation from [JSDoc][1]-style comments.
 #
-# [1]: http://usejsdoc.org/
+# [1]: https://jsdoc.app/
 
 rebuild-src-docs:
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)

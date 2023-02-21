@@ -22,13 +22,11 @@
 /**
 * Multiplies a vector `X` by a constant and adds the result to `Y`.
 *
-* Arguments are passed by reference to a Fortran subroutine implementing `saxpy`.
-*
 * @param N        number of elements
 * @param alpha    scalar
 * @param X        input array
 * @param strideX  X stride length
-* @param Y        destination array
+* @param Y        output array
 * @param strideY  Y stride length
 */
 void c_saxpy( const int N, const float alpha, const float *X, const int strideX, float *Y, const int strideY ) {

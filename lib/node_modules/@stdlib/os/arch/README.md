@@ -20,7 +20,7 @@ limitations under the License.
 
 # Architecture
 
-> Operating system CPU architecture.
+> Operating system CPU architecture for which the JavaScript runtime binary was compiled.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ARCH = require( '@stdlib/os/arch' );
 
 #### ARCH
 
-Operating system CPU architecture.
+Operating system CPU architecture for which the JavaScript runtime binary was compiled.
 
 ```javascript
 console.log( ARCH );
@@ -42,6 +42,16 @@ console.log( ARCH );
 </section>
 
 <!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   In general, the target build architecture of the JavaScript runtime binary should match the host architecture; however, this is **not** guaranteed to always be true (e.g., if attempting to run an x64 build of Node.js on an arm64 host machine).
+
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 

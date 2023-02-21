@@ -63,5 +63,5 @@
 void stdlib_strided_cc_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x, const stdlib_complex64_t y );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_RET_NONSCALAR( stdlib_complex64_t, stdlib_complex64_t, stdlib_complex64_t )
+	STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_RET_NOCAST( stdlib_complex64_t, stdlib_complex64_t, stdlib_complex64_t )
 }

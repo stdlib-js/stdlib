@@ -17,7 +17,7 @@
 # limitations under the License.
 
 # Set the precision to 16 digits:
-options( digits = 16 );
+options( digits = 16L );
 
 # Set the PRNG seed:
 set.seed( 200 );

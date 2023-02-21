@@ -5,7 +5,6 @@
     "allowUnusedLabels": false,
     "alwaysStrict": true,
     "baseUrl": ".",
-    "charset": "utf8",
     "forceConsistentCasingInFileNames": true,
     "keyofStringsOnly": false,
     "lib": [

@@ -17,7 +17,7 @@
 # limitations under the License.
 
 # Set the precision to 16 digits:
-options( digits = 16 );
+options( digits = 16L );
 
 # Temporarily turn off warnings:
 setting <- getOption( "warn" );
@@ -31,7 +31,7 @@ main <- function() {
 	# Define benchmark parameters:
 	name <- "betainc";
 	iterations <- 10000L;
-	repeats <- 3;
+	repeats <- 3L;
 
 	#' Print the TAP version.
 	#'

@@ -53,7 +53,7 @@ var parts = RE_DURATION.exec( '3d2ms' );
     ]
 */
 
-parts = RE_SEMVER.exec( '4h3m20s' );
+parts = RE_DURATION.exec( '4h3m20s' );
 /* returns
     [
         '4h3m20s',

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,6 +16,10 @@
 * limitations under the License.
 */
 
+/*
+* The following is auto-generated. Do not manually edit. See scripts/loops.js.
+*/
+
 #include "stdlib/ndarray/base/unary/s_k_as_i_i.h"
 #include "stdlib/ndarray/base/unary/typedefs.h"
 #include "stdlib/ndarray/base/unary/macros.h"
@@ -25,7 +29,7 @@
 #include <stdint.h>
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a zero-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a zero-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a zero-dimensional input ndarray and assigns results to elements in a zero-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -50,8 +54,8 @@
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1 };
-* uint8_t ybuf[] = { 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0 };
+* uint8_t ybuf[] = { 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 0;
@@ -85,7 +89,7 @@
 * }
 *
 * // Create an output ndarray:
-* struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
+* struct ndarray *y = stdlib_ndarray_allocate( xydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
 * if ( y == NULL ) {
 *     fprintf( stderr, "Error allocating memory.\n" );
 *     exit( EXIT_FAILURE );
@@ -95,12 +99,12 @@
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_0d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_0d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -128,7 +132,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_0d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a one-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a one-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a one-dimensional input ndarray and assigns results to elements in a one-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -153,14 +157,14 @@ int8_t stdlib_ndarray_s_k_as_i_i_0d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 1;
 *
 * // Define the array shapes:
-* int64_t shape[] = { 2 };
+* int64_t shape[] = { 3 };
 *
 * // Define the strides:
 * int64_t sx[] = { 1 };
@@ -198,12 +202,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_0d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_1d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_1d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -223,7 +227,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_1d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a two-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a two-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a two-dimensional input ndarray and assigns results to elements in a two-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -248,8 +252,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_1d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -293,12 +297,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_1d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_2d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_2d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -318,7 +322,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_2d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a two-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a two-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a two-dimensional input ndarray and assigns results to elements in a two-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -343,8 +347,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_2d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -388,12 +392,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_2d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_2d_blocked( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_2d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -413,7 +417,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_2d_blocked( struct ndarray *arrays[], void *fcn
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a three-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a three-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a three-dimensional input ndarray and assigns results to elements in a three-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -438,7 +442,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_2d_blocked( struct ndarray *arrays[], void *fcn
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -483,12 +487,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_2d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_3d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_3d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -508,7 +512,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_3d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a three-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a three-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a three-dimensional input ndarray and assigns results to elements in a three-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -533,7 +537,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_3d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -578,12 +582,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_3d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_3d_blocked( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_3d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -603,7 +607,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_3d_blocked( struct ndarray *arrays[], void *fcn
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a four-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a four-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a four-dimensional input ndarray and assigns results to elements in a four-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -628,7 +632,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_3d_blocked( struct ndarray *arrays[], void *fcn
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -638,8 +642,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_3d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -673,12 +677,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_3d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_4d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_4d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -698,7 +702,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_4d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a four-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a four-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a four-dimensional input ndarray and assigns results to elements in a four-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -723,7 +727,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_4d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -733,8 +737,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_4d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -768,12 +772,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_4d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_4d_blocked( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_4d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -793,7 +797,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_4d_blocked( struct ndarray *arrays[], void *fcn
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a five-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a five-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a five-dimensional input ndarray and assigns results to elements in a five-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -818,7 +822,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_4d_blocked( struct ndarray *arrays[], void *fcn
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -828,8 +832,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_4d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -863,12 +867,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_4d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_5d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_5d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -888,7 +892,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_5d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a five-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a five-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a five-dimensional input ndarray and assigns results to elements in a five-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -913,7 +917,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_5d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -923,8 +927,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_5d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -958,12 +962,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_5d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_5d_blocked( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_5d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -983,7 +987,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_5d_blocked( struct ndarray *arrays[], void *fcn
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a six-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a six-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a six-dimensional input ndarray and assigns results to elements in a six-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1008,7 +1012,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_5d_blocked( struct ndarray *arrays[], void *fcn
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -1018,8 +1022,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_5d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1053,12 +1057,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_5d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_6d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_6d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1078,7 +1082,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_6d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a six-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a six-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a six-dimensional input ndarray and assigns results to elements in a six-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1103,7 +1107,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_6d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -1113,8 +1117,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_6d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1148,12 +1152,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_6d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_6d_blocked( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_6d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1173,7 +1177,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_6d_blocked( struct ndarray *arrays[], void *fcn
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a seven-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a seven-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a seven-dimensional input ndarray and assigns results to elements in a seven-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1198,7 +1202,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_6d_blocked( struct ndarray *arrays[], void *fcn
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -1208,8 +1212,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_6d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1243,12 +1247,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_6d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_7d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_7d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1268,7 +1272,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_7d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a seven-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a seven-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a seven-dimensional input ndarray and assigns results to elements in a seven-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1293,7 +1297,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_7d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -1303,8 +1307,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_7d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1338,12 +1342,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_7d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_7d_blocked( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_7d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1363,7 +1367,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_7d_blocked( struct ndarray *arrays[], void *fcn
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to an eight-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in an eight-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to an eight-dimensional input ndarray and assigns results to elements in an eight-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1388,7 +1392,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_7d_blocked( struct ndarray *arrays[], void *fcn
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -1398,8 +1402,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_7d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 16, 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1433,12 +1437,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_7d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_8d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_8d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1458,7 +1462,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_8d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to an eight-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in an eight-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to an eight-dimensional input ndarray and assigns results to elements in an eight-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1483,7 +1487,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_8d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -1493,8 +1497,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_8d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 16, 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1528,12 +1532,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_8d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_8d_blocked( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_8d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1553,7 +1557,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_8d_blocked( struct ndarray *arrays[], void *fcn
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a nine-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a nine-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a nine-dimensional input ndarray and assigns results to elements in a nine-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1578,7 +1582,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_8d_blocked( struct ndarray *arrays[], void *fcn
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -1588,8 +1592,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_8d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 4, 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 8, 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 16, 16, 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1623,12 +1627,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_8d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_9d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_9d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1648,7 +1652,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_9d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a nine-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a nine-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a nine-dimensional input ndarray and assigns results to elements in a nine-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1673,7 +1677,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_9d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -1683,8 +1687,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_9d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 4, 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 8, 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 16, 16, 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1718,12 +1722,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_9d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_9d_blocked( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_9d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1743,7 +1747,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_9d_blocked( struct ndarray *arrays[], void *fcn
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a ten-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a ten-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a ten-dimensional input ndarray and assigns results to elements in a ten-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1768,7 +1772,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_9d_blocked( struct ndarray *arrays[], void *fcn
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -1778,8 +1782,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_9d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 4, 4, 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 8, 8, 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 16, 16, 16, 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1813,12 +1817,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_9d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_10d( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_10d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1838,7 +1842,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_10d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a ten-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a ten-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to a ten-dimensional input ndarray and assigns results to elements in a ten-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1863,7 +1867,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_10d( struct ndarray *arrays[], void *fcn ) {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -1873,8 +1877,8 @@ int8_t stdlib_ndarray_s_k_as_i_i_10d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 4, 4, 4, 4, 4, 4, 4, 2, 1 };
-* int64_t sy[] = { 8, 8, 8, 8, 8, 8, 8, 8, 4, 2 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 16, 16, 16, 16, 16, 16, 16, 8, 4, 2 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1908,12 +1912,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_10d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_10d_blocked( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_10d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1933,7 +1937,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_10d_blocked( struct ndarray *arrays[], void *fc
 }
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to an n-dimensional signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in an n-dimensional signed 16-bit integer output ndarray.
+* Applies a unary callback to an n-dimensional input ndarray and assigns results to elements in an n-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1958,7 +1962,7 @@ int8_t stdlib_ndarray_s_k_as_i_i_10d_blocked( struct ndarray *arrays[], void *fc
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 * uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
@@ -2003,12 +2007,12 @@ int8_t stdlib_ndarray_s_k_as_i_i_10d_blocked( struct ndarray *arrays[], void *fc
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i_nd( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i_nd( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -2072,7 +2076,7 @@ static const struct ndarrayUnaryDispatchObject obj = {
 };
 
 /**
-* Applies a unary callback accepting and returning signed 32-bit integers to a signed 8-bit integer input ndarray, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a signed 16-bit integer output ndarray.
+* Applies a unary callback to an input ndarray and assigns results to elements in an output ndarray.
 *
 * ## Notes
 *
@@ -2097,8 +2101,8 @@ static const struct ndarrayUnaryDispatchObject obj = {
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_INT16;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -2142,12 +2146,12 @@ static const struct ndarrayUnaryDispatchObject obj = {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* int32_t abs2( const int32_t x ) {
-*     return x * x;
+* int32_t fcn( const int32_t x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_s_k_as_i_i( arrays, (void *)abs2 );
+* int8_t status = stdlib_ndarray_s_k_as_i_i( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );

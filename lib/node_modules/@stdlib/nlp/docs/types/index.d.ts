@@ -41,7 +41,7 @@ interface Namespace {
 	* @example
 	* var str = 'LOL, this is fun. I am ROFL.';
 	* var out = ns.expandAcronyms( str );
-	* // returns 'laughing out loud, this is fun. I am rolling on the floor laughing.' 
+	* // returns 'laughing out loud, this is fun. I am rolling on the floor laughing.'
 	*
 	* @example
 	* var str = 'brb, I need to check my mail. thx!';

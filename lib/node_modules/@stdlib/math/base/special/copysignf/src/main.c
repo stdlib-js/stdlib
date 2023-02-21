@@ -17,15 +17,11 @@
 */
 
 #include "stdlib/math/base/special/copysignf.h"
+#include "stdlib/constants/float32/sign_mask.h"
+#include "stdlib/constants/float32/abs_mask.h"
 #include "stdlib/number/float32/base/to_word.h"
 #include "stdlib/number/float32/base/from_word.h"
 #include <stdint.h>
-
-// 10000000000000000000000000000000 => 2147483648 => 0x80000000
-static const uint32_t SIGN_MASK = 0x80000000;
-
-// 01111111111111111111111111111111 => 2147483647 => 0x7fffffff
-static const int32_t MAGNITUDE_MASK = 0x7fffffff;
 
 /**
 * Returns a single-precision floating-point number with the magnitude of `x` and the sign of `y`.
@@ -51,13 +47,13 @@ float stdlib_base_copysignf( const float x, const float y ) {
 	stdlib_base_float32_to_word( x, &wx );
 
 	// Turn off the sign bit of `x`:
-	wx &= MAGNITUDE_MASK;
+	wx &= STDLIB_CONSTANT_FLOAT32_ABS_MASK;
 
 	// Convert `y` to an unsigned integer:
 	stdlib_base_float32_to_word( y, &wy );
 
 	// Leave only the sign bit of `y` turned on:
-	wy &= SIGN_MASK;
+	wy &= STDLIB_CONSTANT_FLOAT32_SIGN_MASK;
 
 	// Copy the sign bit of `y` to `x`:
 	wx |= wy;

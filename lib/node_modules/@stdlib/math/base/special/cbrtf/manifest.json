@@ -28,7 +28,7 @@
 		{
 			"task": "build",
 			"src": [
-				"./src/cbrtf.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
@@ -45,7 +45,7 @@
 		{
 			"task": "benchmark",
 			"src": [
-				"./src/cbrtf.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
@@ -61,7 +61,7 @@
 		{
 			"task": "examples",
 			"src": [
-				"./src/cbrtf.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"

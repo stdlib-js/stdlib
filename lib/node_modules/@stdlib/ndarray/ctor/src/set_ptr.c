@@ -19,9 +19,10 @@
 #include "stdlib/ndarray/ctor/set_ptr.h"
 #include "stdlib/ndarray/ctor/ndarray.h"
 #include "stdlib/ndarray/dtypes.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float64.h"
 #include <stdint.h>
 #include <stdbool.h>
-#include <complex.h>
 
 /**
 * Sets an ndarray data element specified by a byte array pointer.
@@ -73,10 +74,10 @@ int8_t stdlib_ndarray_set_ptr_value( const struct ndarray *arr, uint8_t *idx, co
 		*(int8_t *)idx = *(int8_t *)v;
 		return 0;
 	case STDLIB_NDARRAY_COMPLEX128:
-		*(double complex *)idx = *(double complex *)v;
+		*(stdlib_complex128_t *)idx = *(stdlib_complex128_t *)v;
 		return 0;
 	case STDLIB_NDARRAY_COMPLEX64:
-		*(float complex *)idx = *(float complex *)v;
+		*(stdlib_complex64_t *)idx = *(stdlib_complex64_t *)v;
 		return 0;
 	case STDLIB_NDARRAY_BOOL:
 		*(bool *)idx = *(bool *)v;
@@ -266,8 +267,8 @@ int8_t stdlib_ndarray_set_ptr_int8( uint8_t *idx, const int8_t v ) {
 * @param v    value to set
 * @return     status code
 */
-int8_t stdlib_ndarray_set_ptr_complex128( uint8_t *idx, const double complex v ) {
-	*(double complex *)idx = v;
+int8_t stdlib_ndarray_set_ptr_complex128( uint8_t *idx, const stdlib_complex128_t v ) {
+	*(stdlib_complex128_t *)idx = v;
 	return 0;
 }
 
@@ -283,8 +284,8 @@ int8_t stdlib_ndarray_set_ptr_complex128( uint8_t *idx, const double complex v )
 * @param v    value to set
 * @return     status code
 */
-int8_t stdlib_ndarray_set_ptr_complex64( uint8_t *idx, const float complex v ) {
-	*(float complex *)idx = v;
+int8_t stdlib_ndarray_set_ptr_complex64( uint8_t *idx, const stdlib_complex64_t v ) {
+	*(stdlib_complex64_t *)idx = v;
 	return 0;
 }
 

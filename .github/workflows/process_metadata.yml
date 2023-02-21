@@ -24,11 +24,13 @@ on:
   push:
     branches:
       - develop
+  issue_comment:
+    types: [created, edited]
 
 # Workflow jobs:
 jobs:
 
-  # Define a job for processing commit message metadata...
+  # Define a job for processing commit message and issue comment metadata...
   process:
 
     # Define a display name:
@@ -39,6 +41,14 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
+      # Exit if the user does not have write access to the repository:
+      - name: 'Exit if user does not have write access'
+        uses: lannonbr/repo-permission-check-action@2.0.0
+        with:
+          permission: 'write'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # Checkout the repository:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
@@ -53,12 +63,12 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
-      # Extract commit message metadata:
+      # Extract commit message and issue comment metadata:
       - name: 'Extract metadata'
         id: extract-metadata
-        uses: stdlib-js/commit-metadata-action@v1
+        uses: stdlib-js/metadata-action@v2
 
-      # Check the commit message metadata for directives to send tweets:
+      # Check the metadata for directives to send tweets:
       - name: 'Send tweets'
         uses: stdlib-js/metadata-tweet-action@v1
         with:
@@ -67,3 +77,26 @@ jobs:
           TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
           TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+
+      # Check the metadata for directives to dispatch workflows:
+      - name: 'Check metadata for workflow dispatch directives'
+        id: check-workflow-dispatch
+        run: |
+          inputs=$(echo '${{ steps.extract-metadata.outputs.metadata }}' | jq -c '.[] | select(.type | contains("workflow_dispatch"))')
+          if [ -n "$inputs" ]; then
+            name=$(echo $inputs | jq -r '.name')
+            inputs=$(echo $inputs | jq -c 'del(.type, .name, .author, .id, .url) | map_values(tostring)')
+            echo "inputs=$inputs" >> $GITHUB_OUTPUT
+            echo "workflow=$name" >> $GITHUB_OUTPUT
+            echo "dispatch=true" >> $GITHUB_OUTPUT
+          else
+            echo "dispatch=false" >> $GITHUB_OUTPUT
+          fi
+
+      # Dispatch first found workflow (if applicable):
+      - name: 'Dispatch workflow with inputs'
+        uses: benc-uk/workflow-dispatch@v1
+        if: steps.check-workflow-dispatch.outputs.dispatch == 'true'
+        with:
+          workflow: ${{ steps.check-workflow-dispatch.outputs.workflow }}
+          inputs: ${{ steps.check-workflow-dispatch.outputs.inputs }}

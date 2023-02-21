@@ -1,0 +1,113 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/number/float64/base/normalize",
+        "@stdlib/number/float64/base/exponent",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/min-base2-exponent-subnormal",
+        "@stdlib/constants/float64/max-base2-exponent",
+        "@stdlib/constants/float64/max-base2-exponent-subnormal",
+        "@stdlib/constants/float64/exponent-bias"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/number/float64/base/normalize",
+        "@stdlib/number/float64/base/exponent",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/min-base2-exponent-subnormal",
+        "@stdlib/constants/float64/max-base2-exponent",
+        "@stdlib/constants/float64/max-base2-exponent-subnormal",
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/math/base/special/frexp"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/number/float64/base/normalize",
+        "@stdlib/number/float64/base/exponent",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/min-base2-exponent-subnormal",
+        "@stdlib/constants/float64/max-base2-exponent",
+        "@stdlib/constants/float64/max-base2-exponent-subnormal",
+        "@stdlib/constants/float64/exponent-bias"
+      ]
+    }
+  ]
+}

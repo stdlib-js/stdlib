@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,17 +16,21 @@
 * limitations under the License.
 */
 
+/*
+* The following is auto-generated. Do not manually edit. See scripts/loops.js.
+*/
+
 #include "stdlib/ndarray/base/unary/f_c_as_c_c.h"
 #include "stdlib/ndarray/base/unary/typedefs.h"
 #include "stdlib/ndarray/base/unary/macros.h"
 #include "stdlib/ndarray/base/unary/dispatch_object.h"
 #include "stdlib/ndarray/base/unary/dispatch.h"
 #include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float32.h"
 #include <stdint.h>
-#include <complex.h>
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a zero-dimensional single-precision floating-point input ndarray and assigns results to elements in a zero-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a zero-dimensional input ndarray and assigns results to elements in a zero-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -42,10 +46,10 @@
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -87,7 +91,7 @@
 * }
 *
 * // Create an output ndarray:
-* struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
+* struct ndarray *y = stdlib_ndarray_allocate( xydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
 * if ( y == NULL ) {
 *     fprintf( stderr, "Error allocating memory.\n" );
 *     exit( EXIT_FAILURE );
@@ -97,14 +101,12 @@
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_0d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_0d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -122,9 +124,9 @@ int8_t stdlib_ndarray_f_c_as_c_c_0d( struct ndarray *arrays[], void *fcn ) {
 	if ( status != 0 ) {
 		return -1;
 	}
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	status = stdlib_ndarray_iset_complex64( arrays[ 1 ], 0, f( (float complex)v ) );
+	status = stdlib_ndarray_iset_complex64( arrays[ 1 ], 0, stdlib_complex64_from_complex64( f( stdlib_complex64_from_float32( v ) ) ) );
 	if ( status != 0 ) {
 		return -1;
 	}
@@ -132,7 +134,7 @@ int8_t stdlib_ndarray_f_c_as_c_c_0d( struct ndarray *arrays[], void *fcn ) {
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a one-dimensional single-precision floating-point input ndarray and assigns results to elements in a one-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a one-dimensional input ndarray and assigns results to elements in a one-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -148,24 +150,24 @@ int8_t stdlib_ndarray_f_c_as_c_c_0d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_COMPLEX64;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 1;
 *
 * // Define the array shapes:
-* int64_t shape[] = { 2 };
+* int64_t shape[] = { 3 };
 *
 * // Define the strides:
 * int64_t sx[] = { 4 };
@@ -203,14 +205,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_0d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_1d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_1d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -223,14 +223,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_0d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_1d( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_1D_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_1D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a two-dimensional single-precision floating-point input ndarray and assigns results to elements in a two-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a two-dimensional input ndarray and assigns results to elements in a two-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -246,18 +246,18 @@ int8_t stdlib_ndarray_f_c_as_c_c_1d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_COMPLEX64;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -301,14 +301,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_1d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_2d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_2d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -321,14 +319,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_1d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_2d( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_2D_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_2D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a two-dimensional single-precision floating-point input ndarray and assigns results to elements in a two-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a two-dimensional input ndarray and assigns results to elements in a two-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -344,18 +342,18 @@ int8_t stdlib_ndarray_f_c_as_c_c_2d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_COMPLEX64;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -399,14 +397,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_2d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_2d_blocked( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_2d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -419,14 +415,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_2d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_2d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_2D_BLOCKED_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_2D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a three-dimensional single-precision floating-point input ndarray and assigns results to elements in a three-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a three-dimensional input ndarray and assigns results to elements in a three-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -442,10 +438,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_2d_blocked( struct ndarray *arrays[], void *fcn
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -497,14 +493,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_2d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_3d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_3d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -517,14 +511,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_2d_blocked( struct ndarray *arrays[], void *fcn
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_3d( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_3D_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_3D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a three-dimensional single-precision floating-point input ndarray and assigns results to elements in a three-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a three-dimensional input ndarray and assigns results to elements in a three-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -540,10 +534,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_3d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -595,14 +589,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_3d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_3d_blocked( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_3d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -615,14 +607,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_3d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_3d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_3D_BLOCKED_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_3D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a four-dimensional single-precision floating-point input ndarray and assigns results to elements in a four-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a four-dimensional input ndarray and assigns results to elements in a four-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -638,10 +630,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_3d_blocked( struct ndarray *arrays[], void *fcn
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -658,8 +650,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_3d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -693,14 +685,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_3d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_4d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_4d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -713,14 +703,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_3d_blocked( struct ndarray *arrays[], void *fcn
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_4d( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_4D_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_4D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a four-dimensional single-precision floating-point input ndarray and assigns results to elements in a four-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a four-dimensional input ndarray and assigns results to elements in a four-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -736,10 +726,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_4d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -756,8 +746,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_4d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -791,14 +781,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_4d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_4d_blocked( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_4d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -811,14 +799,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_4d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_4d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_4D_BLOCKED_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_4D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a five-dimensional single-precision floating-point input ndarray and assigns results to elements in a five-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a five-dimensional input ndarray and assigns results to elements in a five-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -834,10 +822,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_4d_blocked( struct ndarray *arrays[], void *fcn
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -854,8 +842,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_4d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -889,14 +877,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_4d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_5d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_5d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -909,14 +895,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_4d_blocked( struct ndarray *arrays[], void *fcn
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_5d( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_5D_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_5D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a five-dimensional single-precision floating-point input ndarray and assigns results to elements in a five-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a five-dimensional input ndarray and assigns results to elements in a five-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -932,10 +918,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_5d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -952,8 +938,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_5d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -987,14 +973,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_5d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_5d_blocked( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_5d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1007,14 +991,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_5d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_5d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_5D_BLOCKED_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_5D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a six-dimensional single-precision floating-point input ndarray and assigns results to elements in a six-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a six-dimensional input ndarray and assigns results to elements in a six-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1030,10 +1014,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_5d_blocked( struct ndarray *arrays[], void *fcn
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -1050,8 +1034,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_5d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1085,14 +1069,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_5d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_6d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_6d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1105,14 +1087,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_5d_blocked( struct ndarray *arrays[], void *fcn
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_6d( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_6D_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_6D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a six-dimensional single-precision floating-point input ndarray and assigns results to elements in a six-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a six-dimensional input ndarray and assigns results to elements in a six-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1128,10 +1110,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_6d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -1148,8 +1130,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_6d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1183,14 +1165,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_6d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_6d_blocked( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_6d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1203,14 +1183,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_6d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_6d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_6D_BLOCKED_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_6D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a seven-dimensional single-precision floating-point input ndarray and assigns results to elements in a seven-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a seven-dimensional input ndarray and assigns results to elements in a seven-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1226,10 +1206,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_6d_blocked( struct ndarray *arrays[], void *fcn
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -1246,8 +1226,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_6d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1281,14 +1261,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_6d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_7d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_7d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1301,14 +1279,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_6d_blocked( struct ndarray *arrays[], void *fcn
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_7d( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_7D_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_7D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a seven-dimensional single-precision floating-point input ndarray and assigns results to elements in a seven-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a seven-dimensional input ndarray and assigns results to elements in a seven-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1324,10 +1302,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_7d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -1344,8 +1322,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_7d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1379,14 +1357,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_7d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_7d_blocked( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_7d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1399,14 +1375,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_7d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_7d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_7D_BLOCKED_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_7D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to an eight-dimensional single-precision floating-point input ndarray and assigns results to elements in an eight-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to an eight-dimensional input ndarray and assigns results to elements in an eight-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1422,10 +1398,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_7d_blocked( struct ndarray *arrays[], void *fcn
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -1442,8 +1418,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_7d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 64, 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1477,14 +1453,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_7d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_8d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_8d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1497,14 +1471,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_7d_blocked( struct ndarray *arrays[], void *fcn
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_8d( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_8D_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_8D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to an eight-dimensional single-precision floating-point input ndarray and assigns results to elements in an eight-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to an eight-dimensional input ndarray and assigns results to elements in an eight-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1520,10 +1494,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_8d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -1540,8 +1514,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_8d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 64, 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1575,14 +1549,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_8d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_8d_blocked( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_8d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1595,14 +1567,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_8d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_8d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_8D_BLOCKED_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_8D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a nine-dimensional single-precision floating-point input ndarray and assigns results to elements in a nine-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a nine-dimensional input ndarray and assigns results to elements in a nine-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1618,10 +1590,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_8d_blocked( struct ndarray *arrays[], void *fcn
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -1638,8 +1610,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_8d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 32, 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 64, 64, 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1673,14 +1645,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_8d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_9d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_9d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1693,14 +1663,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_8d_blocked( struct ndarray *arrays[], void *fcn
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_9d( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a nine-dimensional single-precision floating-point input ndarray and assigns results to elements in a nine-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a nine-dimensional input ndarray and assigns results to elements in a nine-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1716,10 +1686,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_9d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -1736,8 +1706,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_9d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 32, 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 64, 64, 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1771,14 +1741,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_9d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_9d_blocked( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_9d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1791,14 +1759,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_9d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_9d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_9D_BLOCKED_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_9D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a ten-dimensional single-precision floating-point input ndarray and assigns results to elements in a ten-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a ten-dimensional input ndarray and assigns results to elements in a ten-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1814,10 +1782,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_9d_blocked( struct ndarray *arrays[], void *fcn
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -1834,8 +1802,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_9d_blocked( struct ndarray *arrays[], void *fcn
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 32, 32, 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 64, 64, 64, 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1869,14 +1837,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_9d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_10d( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_10d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1889,14 +1855,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_9d_blocked( struct ndarray *arrays[], void *fcn
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_10d( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_10D_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_10D_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a ten-dimensional single-precision floating-point input ndarray and assigns results to elements in a ten-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to a ten-dimensional input ndarray and assigns results to elements in a ten-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1912,10 +1878,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_10d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -1932,8 +1898,8 @@ int8_t stdlib_ndarray_f_c_as_c_c_10d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 16, 16, 16, 8, 4 };
-* int64_t sy[] = { 32, 32, 32, 32, 32, 32, 32, 32, 16, 8 };
+* int64_t sx[] = { 32, 32, 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sy[] = { 64, 64, 64, 64, 64, 64, 64, 32, 16, 8 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1967,14 +1933,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_10d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_10d_blocked( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_10d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1987,14 +1951,14 @@ int8_t stdlib_ndarray_f_c_as_c_c_10d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_10d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_10D_BLOCKED_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_10D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to an n-dimensional single-precision floating-point input ndarray and assigns results to elements in an n-dimensional single-precision complex floating-point output ndarray.
+* Applies a unary callback to an n-dimensional input ndarray and assigns results to elements in an n-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -2010,10 +1974,10 @@ int8_t stdlib_ndarray_f_c_as_c_c_10d_blocked( struct ndarray *arrays[], void *fc
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
@@ -2065,14 +2029,12 @@ int8_t stdlib_ndarray_f_c_as_c_c_10d_blocked( struct ndarray *arrays[], void *fc
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c_nd( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c_nd( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -2085,9 +2047,9 @@ int8_t stdlib_ndarray_f_c_as_c_c_10d_blocked( struct ndarray *arrays[], void *fc
 * stdlib_ndarray_free( y );
 */
 int8_t stdlib_ndarray_f_c_as_c_c_nd( struct ndarray *arrays[], void *fcn ) {
-	typedef float complex func_type( const float complex x );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_ND_LOOP_CLBK_ARG_CAST( float, float complex, float complex )
+	STDLIB_NDARRAY_UNARY_ND_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -2136,7 +2098,7 @@ static const struct ndarrayUnaryDispatchObject obj = {
 };
 
 /**
-* Applies a unary callback accepting and returning single-precision complex floating-point numbers to a single-precision floating-point input ndarray and assigns results to elements in a single-precision complex floating-point output ndarray.
+* Applies a unary callback to an input ndarray and assigns results to elements in an output ndarray.
 *
 * ## Notes
 *
@@ -2152,18 +2114,18 @@ static const struct ndarrayUnaryDispatchObject obj = {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include <complex.h>
 *
 * // Define the ndarray data types:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
 * enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_COMPLEX64;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -2207,14 +2169,12 @@ static const struct ndarrayUnaryDispatchObject obj = {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* float complex scale( const float complex x ) {
-*     float re = crealf( x );
-*     float im = cimagf( x );
-*     return ( re+10.0f ) + ( im+10.0f )*I;
+* stdlib_complex64_t fcn( const stdlib_complex64_t x ) {
+*     // ...
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_c_as_c_c( arrays, (void *)scale );
+* int8_t status = stdlib_ndarray_f_c_as_c_c( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );

@@ -1,0 +1,85 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/set-high-word",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/exponent-bias"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/set-high-word",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/exponent-bias"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/set-high-word",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/exponent-bias"
+      ]
+    }
+  ]
+}
+

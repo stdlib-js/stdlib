@@ -26,7 +26,7 @@
 * @param alpha    scalar
 * @param X        input array
 * @param strideX  X stride length
-* @param Y        destination array
+* @param Y        output array
 * @param strideY  Y stride length
 */
 void c_daxpy( const int N, const double alpha, const double *X, const int strideX, double *Y, const int strideY ) {

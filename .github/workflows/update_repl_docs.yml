@@ -21,7 +21,7 @@ name: update_repl_docs
 
 # Workflow triggers:
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - develop
     types:
@@ -109,8 +109,9 @@ jobs:
 
             -   updates the REPL namespace
 
-          commit-message: 'Update REPL namespace'
+          commit-message: 'feat: update REPL namespace'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             documentation
             automated-pr

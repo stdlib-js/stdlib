@@ -76,7 +76,7 @@
     Examples
     --------
     // Verify that data is drawn from a normal distribution:
-    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory({ 'seed': 4839 });
+    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory({ 'seed': 4839 } );
     > var x = new Array( 100 );
     > for ( var i = 0; i < 100; i++ ) { x[ i ] = rnorm( 3.0, 1.0 ); }
 
@@ -89,7 +89,7 @@
     { pValue: 0.6282, statistic: 0.0733, ... }
 
     // Verify that data is drawn from a uniform distribution:
-    > runif = {{alias:@stdlib/random/base/uniform}}.factory( 0.0, 1.0, { 'seed': 8798 })
+    > runif = {{alias:@stdlib/random/base/uniform}}.factory( 0.0, 1.0, { 'seed': 8798 } )
     > x = new Array( 100 );
     > for ( i = 0; i < x.length; i++ ) { x[ i ] = runif(); }
     > out = {{alias}}( x, 'uniform', 0.0, 1.0 )
@@ -108,21 +108,21 @@
     significance level
 
     // Set custom significance level:
-    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'alpha': 0.1 })
+    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'alpha': 0.1 } )
     { pValue: ~0.7039, statistic: ~0.069, ... }
 
     // Carry out one-sided hypothesis tests:
-    > runif = {{alias:@stdlib/random/base/uniform}}.factory( 0.0, 1.0, { 'seed': 8798 });
+    > runif = {{alias:@stdlib/random/base/uniform}}.factory( 0.0, 1.0, { 'seed': 8798 } );
     > x = new Array( 100 );
     > for ( i = 0; i < x.length; i++ ) { x[ i ] = runif(); }
-    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'alternative': 'less' })
+    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'alternative': 'less' } )
     { pValue: ~0.358, statistic: ~0.07, ... }
-    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'alternative': 'greater' })
+    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'alternative': 'greater' } )
     { pValue: ~0.907, statistic: ~0.02, ... }
 
     // Set `sorted` option to true when data is in increasing order:
     > x = [ 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ];
-    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'sorted': true })
+    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'sorted': true } )
     { pValue: ~1, statistic: 0.1, ... }
 
     See Also

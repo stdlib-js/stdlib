@@ -17,7 +17,7 @@
 # limitations under the License.
 
 # Set the precision to 16 digits:
-options( digits = 16 );
+options( digits = 16L );
 
 #' Run benchmarks.
 #'
@@ -27,7 +27,7 @@ main <- function() {
 	# Define benchmark parameters:
 	name <- "dist-levy-pdf";
 	iterations <- 1000000L;
-	repeats <- 3;
+	repeats <- 3L;
 
 	#' Print the TAP version.
 	#'

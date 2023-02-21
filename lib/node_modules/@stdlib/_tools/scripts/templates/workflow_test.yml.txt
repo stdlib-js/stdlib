@@ -32,6 +32,11 @@ on:
   # Run workflow on each push to the main branch:
   push:
 
+  # Run workflow upon completion of `publish` workflow run:
+  workflow_run:
+    workflows: ["publish"]
+    types: [completed]
+
 # Workflow jobs:
 jobs:
 

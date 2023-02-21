@@ -16,7 +16,7 @@ This directory contains utilities for parsing, transforming, and using [JSDoc][j
 
 <section class="links">
 
-[jsdoc]: http://usejsdoc.org/
+[jsdoc]: https://jsdoc.app/
 
 </section>
 

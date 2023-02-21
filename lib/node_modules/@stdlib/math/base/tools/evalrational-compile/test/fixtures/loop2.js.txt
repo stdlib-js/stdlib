@@ -1019,7 +1019,7 @@ var END = P.length - 1;
 // MAIN //
 
 /**
-* Evaluates a rational function, i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\).
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
 *
 * ## Notes
 *

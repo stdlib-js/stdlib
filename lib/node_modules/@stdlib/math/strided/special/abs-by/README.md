@@ -198,8 +198,9 @@ absBy.ndarray( 3, x, 2, 1, y, -1, y.length-1, accessor );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var absBy = require( '@stdlib/math/strided/special/abs-by' );
 
 function accessor( v, i ) {
@@ -210,14 +211,10 @@ function accessor( v, i ) {
     return v;
 }
 
-var x = filledarray( 0.0, 10, 'generic' );
-var y = filledarray( null, 10, 'generic' );
-
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = discreteUniform( -100, 100 );
-}
+var x = filledarrayBy( 10, 'generic', uniform( -100.0, 100.0 ) );
 console.log( x );
+
+var y = filledarray( null, 10, 'generic' );
 console.log( y );
 
 absBy.ndarray( x.length, x, 1, 0, y, -1, y.length-1, accessor );

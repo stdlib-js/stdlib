@@ -21,7 +21,7 @@ name: namespace_declarations
 
 # Workflow triggers:
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - develop
     types:
@@ -42,8 +42,8 @@ jobs:
     # Define a display name:
     name: 'Update TypeScript Declarations'
 
-    # Only run this job if the pull request was merged (or the job was triggered manually):
-    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
+    # Only run this job if the pull request was merged and did not have label `automated-pr` (or the job was triggered manually):
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'automated-pr') == false || github.event_name == 'workflow_dispatch'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -83,6 +83,11 @@ jobs:
         run: |
           make list-pkgs-namespaces | node lib/node_modules/@stdlib/_tools/scripts/create_namespace_types.js
 
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
       # Create a pull request with the updated declarations:
       - name: 'Create pull request'
         id: cpr
@@ -94,8 +99,9 @@ jobs:
 
             -   updates namespace TypeScript declarations
 
-          commit-message: 'Update namespace TypeScript declarations'
+          commit-message: 'feat: update namespace TypeScript declarations'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             documentation
             automated-pr

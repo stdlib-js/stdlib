@@ -45,7 +45,7 @@ on:
         default: true
       repl:
         type: boolean
-        description: 'Lint REPL documentation'
+        description: 'Lint REPL documentation and shell script files'
         default: true
       r:
         type: boolean
@@ -139,7 +139,7 @@ jobs:
             if [ -n "${name}" ]; then
               name="${name} -o"
             fi
-            name="${name} -name '*.repl\.txt'"
+            name="${name} -name '*.repl\.txt' -o -name '*.sh'"
           fi
           if [ "${{ github.event.inputs.r }}" != "false" ]; then
             if [ -n "${name}" ]; then
@@ -167,9 +167,10 @@ jobs:
           fi
           command="find lib/node_modules/@stdlib -type f \( ${name} \) |
             grep -E '${{ github.event.inputs.pattern }}' |
+            grep -v '/fixtures/bad/' |
             shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ','"
-          echo "command: ${command}"
           files=$(eval ${command})
+
           echo "files=$files" >> $GITHUB_OUTPUT
 
       # Lint file names
@@ -203,9 +204,9 @@ jobs:
           # Define the path to a utility for linting package.json files:
           lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
 
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
-            echo "${files}" | "${lint_package_json}"
+            printf "${files}" | "${lint_package_json}" --split=" "
           fi
 
       # Lint REPL help files...
@@ -216,11 +217,24 @@ jobs:
           root=$(git rev-parse --show-toplevel)
 
           # Define the path to a utility for linting REPL help files:
-          lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-help/bin/cli"
+          lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-txt/bin/cli"
 
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'repl\.txt$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'repl\.txt$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
-            echo "${files}" | "${lint_repl_help}"
+            printf "${files}" | "${lint_repl_help}" --split=" "
+          fi
+
+      # Lint shell script files:
+      - name: 'Lint shell script files'
+        if: ( github.event.inputs.repl != 'false' ) && ( success() || failure() )
+        run: |
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            # Install shellcheck:
+            make install-deps-shellcheck
+
+            # Lint shell scripts:
+            make FILES="${files}" lint-shell-files
           fi
 
       # Lint JavaScript files:
@@ -389,8 +403,9 @@ jobs:
 
             -   fixes lint errors
 
-          commit-message: 'Fix lint errors'
+          commit-message: 'style: resolve lint errors'
           committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             automated-pr
           team-reviewers: |

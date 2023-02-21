@@ -3618,7 +3618,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [http-status-codes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
-[jsdoc]: http://usejsdoc.org/
+[jsdoc]: https://jsdoc.app/
 
 [fluent-interface]: https://en.wikipedia.org/wiki/Fluent_interface
 

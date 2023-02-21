@@ -14,7 +14,7 @@ To update [Electron][electron], perform the following steps:
 
     If updating [Electron][electron] **will** introduce breaking changes, assess the implications to the project and determine whether the changes affect internal project usage or will cause downstream effects for project consumers. If the former, assess whether refactoring to accommodate the changes is possible. In both scenarios, consult with a project lead to determine an update strategy.
 
-2.  Update the configuration file found in `/etc` for [David][david], a service which monitors npm for new releases, to use the desired [Electron][electron] version.
+2.  Update the configuration file found in `/etc` for David, a package which monitors npm for new releases, to use the desired [Electron][electron] version.
 
 3.  Update the default `DEPS_ELECTRON_VERSION` Makefile environment variable value to the desired [Electron][electron] version.
 
@@ -71,8 +71,6 @@ To update `node_modules` dependencies, perform the following steps:
 <section class="links">
 
 [electron]: https://www.electronjs.org/
-
-[david]: https://david-dm.org/
 
 </section>
 

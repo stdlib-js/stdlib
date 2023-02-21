@@ -19,7 +19,7 @@
 // TypeScript Version: 2.0
 
 /**
-* Computes the sine of a number on `[-π/4, π/4]`.
+* Computes the sine of a double-precision floating-point number on `[-π/4, π/4]`.
 *
 * ## Notes
 *

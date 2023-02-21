@@ -114,7 +114,7 @@
     significance level
 
     // Choose a different significance level than `0.05`:
-    > out = {{alias}}( x, y, 2.0, 2.0, { 'alpha': 0.4 });
+    > out = {{alias}}( x, y, 2.0, 2.0, { 'alpha': 0.4 } );
     > table = out.print()
     Two-sample z-test
 
@@ -127,7 +127,7 @@
     Test Decision: Reject null in favor of alternative at 40% significance level
 
     // Perform one-sided tests:
-    > out = {{alias}}( x, y, 2.0, 2.0, { 'alternative': 'less' });
+    > out = {{alias}}( x, y, 2.0, 2.0, { 'alternative': 'less' } );
     > table = out.print()
     Two-sample z-test
 
@@ -141,7 +141,7 @@
     significance level
 
 
-    > out = {{alias}}( x, y, 2.0, 2.0, { 'alternative': 'greater' });
+    > out = {{alias}}( x, y, 2.0, 2.0, { 'alternative': 'greater' } );
     > table = out.print()
     Two-sample z-test
 
@@ -155,7 +155,7 @@
     significance level
 
     // Test for a difference in means besides zero:
-    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory({ 'seed': 372 });
+    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory({ 'seed': 372 } );
     > x = new Array( 100 );
     > for ( i = 0; i < x.length; i++ ) {
     ...     x[ i ] = rnorm( 2.0, 1.0 );
@@ -164,7 +164,7 @@
     ... for ( i = 0; i < x.length; i++ ) {
     ...     y[ i ] = rnorm( 0.0, 2.0 );
     ... }
-    > out = {{alias}}( x, y, 1.0, 2.0, { 'difference': 2.0 })
+    > out = {{alias}}( x, y, 1.0, 2.0, { 'difference': 2.0 } )
     {
         rejected: false,
         pValue: ~0.35,

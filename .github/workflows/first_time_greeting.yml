@@ -20,7 +20,7 @@
 name: first_time_greeting
 
 # Workflow triggers:
-on: [pull_request, issues]
+on: [pull_request_target, issues]
 
 # Workflow jobs:
 jobs:
@@ -41,7 +41,7 @@ jobs:
       - name: 'Greet first-time contributors'
         uses: actions/first-interaction@v1
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           issue-message: |
             :tada: Welcome! :tada:
 

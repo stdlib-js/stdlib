@@ -24,7 +24,7 @@ This directory contains [JSDoc][jsdoc] configuration files.
 
 <section class="links">
 
-[jsdoc]: http://usejsdoc.org/
+[jsdoc]: https://jsdoc.app/
 
 </section>
 
