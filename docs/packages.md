@@ -76,7 +76,7 @@ The [documentation][stdlib-snippets] folder includes all documentation beside th
 
 ### lib
 
-The [`lib`][stdlib-snippets] folder contains the package implementation. Every `lib` folder should have an `index.js` file, which defines the main package exports, which may be dynamically determined based on the host environment. Typically, the `index.js` does not contain the main implementation, but rather imports the implementation from a separate file.
+The [`lib`][stdlib-snippets] folder contains the package implementation. Every `lib` folder should have an `index.js` file, which defines the main package exports, which may be dynamically determined based on the host environment. Typically, the `index.js` does not contain the main implementation, but rather imports the implementation from a separate file (most commonly named `main.js`).
 
 ### test
 
@@ -96,8 +96,9 @@ Once you are ready to begin creating a new package, we recommend the following o
 4.  **Write the implementation**. While some will argue that tests should come before the implementation, our experience is that writing an implementation against the example is nearly as effective and requires less upfront investment when ideas are still being formed. We too often write tests and then write an implementation against those tests, only to realize that the approach is flawed, necessitating two refactorings, rather than one. Accordingly, our general recommendation is README/example driven development, but you are free to pursue the approach which bests suits your tastes and workflow.
 5.  **Write benchmarks**. Benchmarks typically require less work than unit tests, but they often help flag potential performance cliffs and a need to rethink a particular approach and implementation. In our experience, writing benchmarks before tests helps minimize the number, and extent, of refactorings.
 6.  **Write tests**. Tests are your opportunity to challenge and verify your assumptions and intended behavior. Tests should be thorough and complete and **always** achieve `100%` coverage. Tests should include edge cases and option combinations and confirm that the implementation provides adequate guards against unintended inputs.
-7.  **Write the `repl.txt`**. After solidifying an implementation, write the REPL text according to the REPL text [guide][stdlib-docs]. The stdlib REPL will use this file to display relevant help information during a REPL session.
-8.  **Additional tasks**. Additional tasks may include implementing a command-line interface, ensuring that a command-line interface works as intended, generating equation SVGs, and writing build scripts to support package maintenance (e.g., if a package file needs to be regenerated when a data source updates).
+7.  **Write the `repl.txt`**. After solidifying an implementation, write the REPL text according to the REPL text [guide][stdlib-repl-text]. The stdlib REPL will use this file to display relevant help information during a REPL session.
+8.  **Write TypeScript declarations**. TypeScript declarations assist users who consume stdlib when writing TypeScript. An `index.d.ts` file should contain all declarations relevant to a package. All declarations should be accompanied by a `test.ts` file which tests type expectations (i.e., think of the `test.ts` as a set of unit tests for a package's TypeScript declarations). While JSDoc comments included in the implementation may provide some inspiration for defining TypeScript types, note that the correspondence is not 1-to-1. Be sure to consult other packages to see how JSDoc parameter types map to TypeScript types and vice versa.
+9.  **Additional tasks**. Additional tasks may include implementing a command-line interface, ensuring that a command-line interface works as intended, generating equation SVGs, and writing build scripts to support package maintenance (e.g., if a package file needs to be regenerated when a data source updates).
 
 Throughout the development process, you should use the following commands to run tasks:
 
@@ -113,7 +114,7 @@ Once a package is complete and tested, you are ready to request that your contri
 
 [stdlib-snippets]: https://github.com/stdlib-js/stdlib/tree/develop/tools/snippets
 
-[stdlib-docs]: https://github.com/stdlib-js/stdlib/tree/develop/docs
+[stdlib-repl-text]: https://github.com/stdlib-js/stdlib/tree/develop/docs/repl_text.md
 
 </section>
 

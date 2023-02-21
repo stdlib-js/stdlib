@@ -32,7 +32,7 @@ var mt19937 = require( '@stdlib/random/array/mt19937' );
 
 #### mt19937( len\[, options] )
 
-Returns an array containing pseudorandom integers on the interval `[0, 4294967295]`..
+Returns an array containing pseudorandom integers on the interval `[0, 4294967295]`.
 
 ```javascript
 var out = mt19937( 10 );
