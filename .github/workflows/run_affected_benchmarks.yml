@@ -26,7 +26,7 @@ on:
       # List paths for which changes should trigger this workflow:
       - 'lib/**/benchmark/**'
 
-  pull_request:
+  pull_request_target:
     types:
       - opened
       - synchronize

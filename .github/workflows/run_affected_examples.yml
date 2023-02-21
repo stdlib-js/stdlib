@@ -27,7 +27,7 @@ on:
       - 'lib/**/examples/**'
       - 'lib/**/README.md'
 
-  pull_request:
+  pull_request_target:
     types:
       - opened
       - synchronize
