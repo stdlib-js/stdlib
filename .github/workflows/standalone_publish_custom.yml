@@ -39,10 +39,15 @@ on:
         type: boolean
         description: 'Skip uploading packages (dry run):'
         default: false
-      patch:
-        type: boolean
-        description: 'Create a patch release'
-        default: false
+      release-type:
+        type: choice
+        description: 'Type of release to create'
+        default: 'none'
+        options:
+        - none
+        - patch
+        - minor
+        - major
       only-unpublished:
         type: boolean
         description: 'Only publish packages that have not yet been published'
@@ -109,4 +114,4 @@ jobs:
           # Save NPM_TOKEN to user's .npmrc:
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.packages }} ${{ github.event.inputs.patch == 'true' && '--patch ' || '' }}${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual ' || '' }}${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel ' || '' }}${{ github.event.inputs.only-unpublished == 'true' && '--only-unpublished ' || '' }}${{ github.event.inputs.pattern && format('--pattern {0}', github.event.inputs.pattern ) || '' }}
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.packages }} --release-type ${{ github.event.inputs.release-type }} ${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual ' || '' }}${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel ' || '' }}${{ github.event.inputs.only-unpublished == 'true' && '--only-unpublished ' || '' }}${{ github.event.inputs.pattern && format('--pattern {0}', github.event.inputs.pattern ) || '' }}
