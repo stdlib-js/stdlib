@@ -53,6 +53,7 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
         with:
+
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
 
@@ -87,17 +88,9 @@ jobs:
         id: changed-files
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
-            # Get the list of changed files in pull request via the GitHub API:
-            page=1
-            files=""
-            while true; do
-                new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ github.event.pull_request.number }}/files?page=$page&per_page=100" | jq -r '.[] | select(.status == "modified" or .status == "added") | .filename')
-                if [ -z "$new_files" ]; then
-                    break
-                fi
-                files="$files $new_files"
-                page=$((page+1))
-            done
+            # Get the list of changed files in pull request:
+            ancestor_commit=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+            files=$(git diff --diff-filter=AM --name-only $ancestor_commit ${{ github.event.pull_request.head.sha }})
           else
             # Get changed files by comparing the current commit to the commit before the push event or with its parent:
             if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then

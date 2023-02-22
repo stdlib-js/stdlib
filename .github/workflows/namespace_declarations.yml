@@ -99,7 +99,7 @@ jobs:
 
             -   updates namespace TypeScript declarations
 
-          commit-message: 'Update namespace TypeScript declarations'
+          commit-message: 'feat: update namespace TypeScript declarations'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |

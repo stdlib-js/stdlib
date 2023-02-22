@@ -90,7 +90,7 @@ jobs:
 
             -   updates the list of contributors
 
-          commit-message: 'Update list of contributors'
+          commit-message: 'docs: update list of contributors'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
