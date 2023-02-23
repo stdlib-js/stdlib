@@ -19,7 +19,7 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_CABS2_H
 #define STDLIB_MATH_BASE_SPECIAL_CABS2_H
 
-#include <complex.h>
+#include "stdlib/complex/float64.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Computes the squared absolute value of a double-precision complex floating-point number.
 */
-double stdlib_base_cabs2( const double complex z );
+double stdlib_base_cabs2( const stdlib_complex128_t z );
 
 #ifdef __cplusplus
 }
