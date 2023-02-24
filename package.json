@@ -3,7 +3,10 @@
   "version": "0.0.96",
   "description": "Standard library.",
   "license": "Apache-2.0 AND BSL-1.0",
-  "author": "The Stdlib Authors (https://github.com/stdlib-js/stdlib/graphs/contributors)",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [
     "The Stdlib Authors (https://github.com/stdlib-js/stdlib/graphs/contributors)"
   ],
@@ -12,17 +15,17 @@
     "url": "https://opencollective.com/stdlib"
   },
   "bin": {
-    "stdlib": "bin/cli"
+    "stdlib": "./bin/cli"
   },
   "main": "./lib",
   "browser": {
     "process": "process/"
   },
   "directories": {
-    "doc": "docs",
-    "example": "examples",
-    "lib": "lib",
-    "test": "test"
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
   },
   "types": "./docs/types",
   "scripts": {
@@ -117,7 +120,7 @@
     "eslint": "^8.0.1",
     "eslint-plugin-node": "^11.1.0",
     "factor-bundle": "^2.5.0",
-    "gh-pages": "git+https://github.com/Planeshifter/gh-pages.git#main",
+    "gh-pages": "git+https://github.com/Planeshifter/gh-pages#main",
     "jsdoc": "^3.4.0",
     "lunr": "^2.3.9",
     "mathjax-node": "^2.0.1",
