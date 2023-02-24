@@ -22,10 +22,9 @@
     Examples
     --------
     > var str = 'beep boop';
-    > var replacement = 'foo';
-    > var out = {{alias}}( str, ' ', replacement )
+    > var out = {{alias}}( str, ' ', 'foo' )
     'foo boop'
-    > out = {{alias}}( str, 'o', replacement )
+    > out = {{alias}}( str, 'o', 'foo' )
     'foooop'
 
     See Also

@@ -42,6 +42,8 @@ var replaceBefore = require( './../lib' );
 * @returns {void}
 */
 function main() {
+	var replacement;
+	var search;
 	var split;
 	var flags;
 	var args;
@@ -62,10 +64,18 @@ function main() {
 	if ( flags.help || flags.version ) {
 		return;
 	}
-
+	if ( flags.search ) {
+		search = flags.search;
+	} else {
+		search = '';
+	}
+	if ( flags.replacement ) {
+		replacement = flags.replacement;
+	} else {
+		replacement = '';
+	}
 	// Get any provided command-line arguments:
 	args = cli.args();
-
 	if ( args.length ) {
 		str = args[ 0 ];
 	} else {
@@ -84,7 +94,7 @@ function main() {
 		}
 		return stdin( onRead );
 	}
-	console.log( replaceBefore( str, flags.search || '', flags.replacement || '' ) );
+	console.log( replaceBefore( str, search, replacement ) ); // eslint-disable-line no-console
 
 	/**
 	* Callback invoked upon reading from `stdin`.
@@ -107,7 +117,7 @@ function main() {
 			lines.pop();
 		}
 		for ( i = 0; i < lines.length; i++ ) {
-			console.log( replaceBefore( lines[ i ], flags.search || '', flags.replacement || '' ) ); // eslint-disable-line max-len
+			console.log( replaceBefore( lines[ i ], search, replacement ) ); // eslint-disable-line no-console
 		}
 	}
 }

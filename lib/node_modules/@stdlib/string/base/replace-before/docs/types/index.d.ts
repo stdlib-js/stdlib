@@ -18,15 +18,13 @@
 
 // TypeScript Version: 2.0
 
-/// <reference types="@stdlib/types"/>
-
 /**
 * Replaces the substring before the first occurrence of a specified search string.
 *
 * @param str - input string
 * @param search - search string
 * @param replacement - replacement string
-* @returns substring
+* @returns output string
 *
 * @example
 * var out = replaceBefore( 'beep boop', ' ', 'foo' );
@@ -41,7 +39,7 @@
 * // returns 'Hello world!'
 *
 * @example
-* var out = replaceBefore( 'Hello World!', 'XYZ', 'foo' );
+* var out = replaceBefore( 'Hello World!', 'xyz', 'foo' );
 * // returns 'Hello World!'
 */
 declare function replaceBefore( str: string,  search: string, replacement: string ): string; // tslint:disable-line:max-line-length
