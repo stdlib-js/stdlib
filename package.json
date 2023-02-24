@@ -8,7 +8,10 @@
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
   },
   "contributors": [
-    "The Stdlib Authors (https://github.com/stdlib-js/stdlib/graphs/contributors)"
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
   ],
   "funding": {
     "type": "opencollective",
