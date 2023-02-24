@@ -17,19 +17,30 @@
 */
 
 #include "stdlib/math/base/special/cceil.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
 #include <stdio.h>
-#include <complex.h>
 
 int main() {
-	// cppcheck-suppress nanInArithmeticExpression
-	double complex x[] = { 3.14+1.5*I, -3.14-1.5*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
+	const stdlib_complex128_t x[] = {
+		stdlib_complex128( 3.14, 1.5 ),
+		stdlib_complex128( -3.14, -1.5 ),
+		stdlib_complex128( 0.0, 0.0 ),
+		stdlib_complex128( 0.0/0.0, 0.0/0.0 )
+	};
 
-	double complex v;
-	double complex y;
+	stdlib_complex128_t v;
+	stdlib_complex128_t y;
+	double re1;
+	double im1;
+	double re2;
+	double im2;
 	int i;
 	for ( i = 0; i < 4; i++ ) {
 		v = x[ i ];
 		y = stdlib_base_cceil( v );
-		printf( "cceil(%lf + %lfi) = %lf + %lfi\n", creal( v ), cimag( v ), creal( y ), cimag( y ) );
+		stdlib_reim( v, &re1, &im1 );
+		stdlib_reim( y, &re2, &im2 );
+		printf( "cceil(%lf + %lfi) = %lf + %lfi\n", re1, im1, re2, im2 );
 	}
 }
