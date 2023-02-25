@@ -2455,6 +2455,7 @@ random.strided.discreteUniform
 random.strided.exponential
 random.strided.lognormal
 random.strided.minstd
+random.strided.minstdShuffle
 random.strided.mt19937
 random.strided.normal
 random.strided.randu
