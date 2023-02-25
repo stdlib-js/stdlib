@@ -135,18 +135,20 @@ for ( i = 0; i < 100; i++ ) {
 Computes the squared [absolute value][absolute-value] of a double-precision complex floating-point number.
 
 ```c
-#include <complex.h>
+#include "stdlib/complex/float64.h"
 
-double y = stdlib_base_cabs2( 5.0+3.0*I );
+stdlib_complex128_t z = stdlib_complex128( 5.0, 3.0 );
+
+double y = stdlib_base_cabs2( z );
 // returns 34.0
 ```
 
 The function accepts the following arguments:
 
--   **z**: `[in] double complex` input value.
+-   **z**: `[in] stdlib_complex128_t` input value.
 
 ```c
-double stdlib_base_cabs2( const double complex z );
+double stdlib_base_cabs2( const stdlib_complex128_t z );
 ```
 
 </section>
@@ -169,19 +171,28 @@ double stdlib_base_cabs2( const double complex z );
 
 ```c
 #include "stdlib/math/base/special/cabs2.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
 #include <stdio.h>
-#include <complex.h>
 
 int main() {
-    double complex x[] = { 3.14+1.0*I, -3.14-1.0*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
+    const stdlib_complex128_t x[] = {
+        stdlib_complex128( 3.14, 1.0 ),
+        stdlib_complex128( -3.14, -1.0 ),
+        stdlib_complex128( 0.0, 0.0 ),
+        stdlib_complex128( 0.0/0.0, 0.0/0.0 )
+    };
 
-    double complex v;
+    stdlib_complex128_t v;
+    double re;
+    double im;
     double y;
     int i;
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
         y = stdlib_base_cabs2( v );
-        printf( "f(%lf + %lf) = %lf\n", creal( v ), cimag( v ), y );
+        stdlib_reim( v, &re, &im );
+        printf( "f(%lf + %lf) = %lf\n", re, im, y );
     }
 }
 ```

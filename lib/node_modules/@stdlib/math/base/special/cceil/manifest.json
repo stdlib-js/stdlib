@@ -1,5 +1,7 @@
 {
-	"options": {},
+	"options": {
+		"task": "build"
+	},
 	"fields": [
 		{
 			"field": "src",
@@ -24,17 +26,54 @@
 	],
 	"confs": [
 		{
-			"src": [
-				"./src/main.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [],
-			"libpath": [],
-			"dependencies": [
-        "@stdlib/math/base/special/ceil"
-      ]
+		  "task": "build",
+		  "src": [
+			"./src/main.c"
+		  ],
+		  "include": [
+			"./include"
+		  ],
+		  "libraries": [],
+		  "libpath": [],
+		  "dependencies": [
+			"@stdlib/math/base/napi/unary",
+			"@stdlib/complex/float64",
+			"@stdlib/complex/reim",
+			"@stdlib/math/base/special/ceil"
+		  ]
+		},
+		{
+		  "task": "benchmark",
+		  "src": [
+			"./src/main.c"
+		  ],
+		  "include": [
+			"./include"
+		  ],
+		  "libraries": [],
+		  "libpath": [],
+		  "dependencies": [
+			"@stdlib/complex/float64",
+			"@stdlib/complex/reim",
+			"@stdlib/math/base/special/ceil"
+		  ]
+		},
+		{
+		  "task": "examples",
+		  "src": [
+			"./src/main.c"
+		  ],
+		  "include": [
+			"./include"
+		  ],
+		  "libraries": [],
+		  "libpath": [],
+		  "dependencies": [
+			"@stdlib/complex/float64",
+			"@stdlib/complex/reim",
+			"@stdlib/math/base/special/ceil"
+		  ]
 		}
-	]
+	  ]
 }
+
