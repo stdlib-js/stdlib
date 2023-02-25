@@ -1,0 +1,10 @@
+
+Usage: replace-before [options] --search=<string> --replacement=<string> [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --search string       Search string.
+         --replacement string  Replacement string.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
