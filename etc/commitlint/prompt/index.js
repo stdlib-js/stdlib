@@ -39,27 +39,27 @@ config.questions[ 'type' ] = {
 	'description': 'Select the type of change that you\'re committing',
 	'enum': {
 		'feat': {
-			'description': 'A new feature',
+			'description': 'New feature',
 			'title': 'Features',
 			'emoji': '✨'
 		},
 		'fix': {
-			'description': 'A bug fix, including changes to the behavior of existing features and including changes that remove or mitigate security vulnerabilities',
+			'description': 'Bug fix, including changes to the behavior of existing features and including changes that remove or mitigate security vulnerabilities',
 			'title': 'Bug Fixes',
 			'emoji': '🐛'
 		},
 		'remove': {
-			'description': 'A change that removes a feature',
+			'description': 'Remove feature',
 			'title': 'Removed Features',
 			'emoji': '🗑'
 		},
 		'deprecate': {
-			'description': 'A change that deprecates an existing feature',
+			'description': 'Deprecate feature',
 			'title': 'Deprecations',
 			'emoji': '⚠️'
 		},
 		'perf': {
-			'description': 'A change that improves performance',
+			'description': 'Improve performance',
 			'title': 'Performance Improvements',
 			'emoji': '🚀'
 		},
@@ -69,7 +69,7 @@ config.questions[ 'type' ] = {
 			'emoji': '📚'
 		},
 		'test': {
-			'description': 'Test-only change (e.g., adding missing tests or correcting existing tests)',
+			'description': 'Test-only change, including adding missing tests or correcting existing tests',
 			'title': 'Tests',
 			'emoji': '🚨'
 		},
@@ -79,32 +79,32 @@ config.questions[ 'type' ] = {
 			'emoji': '⏱'
 		},
 		'build': {
-			'description': 'A change affecting how the project is built and released, including changes to automation and CI configuration files and scripts',
+			'description': 'Update how the project is built and released, including changes to automation and CI configuration files and scripts',
 			'title': 'Build Changes',
 			'emoji': '🛠'
 		},
 		'refactor': {
-			'description': 'A change that is neither a fix nor a feature (i.e., a change which does not affect behavior as experienced by downstream consumers',
+			'description': 'Neither a fix nor a feature (i.e., a change which does not affect behavior as experienced by downstream consumers',
 			'title': 'Code Refactoring',
 			'emoji': '🚧'
 		},
 		'style': {
-			'description': 'A change that improves code style (e.g., whitespace, formatting, semilcolons, etc) and does not affect the meaning of code',
+			'description': 'Improve code style, including changes to whitespace, formatting, semicolons, etc, which do not affect the meaning of code',
 			'title': 'Style Updates',
 			'emoji': '💎'
 		},
 		'chore': {
-			'description': 'A change that is neither a fix, a feature, nor a refactor (i.e., a repetitive mechanical task, such as updating package meta data or updating external dependencies)',
+			'description': 'Neither a fix, a feature, nor a refactor (i.e., a repetitive mechanical task, such as updating package meta data or updating external dependencies)',
 			'title': 'Chores',
 			'emoji': '🧺'
 		},
 		'temp': {
-			'description': 'A temporary, experimental, or exploratory change that is not intended to be permanent (e.g., as may be desired when debugging CI or when ad-hoc debugging on live systems)',
+			'description': 'Temporary, experimental, or exploratory change that is not intended to be permanent (e.g., as may be desired when debugging CI or when ad-hoc debugging on live systems)',
 			'title': 'Temporary Changes',
 			'emoji': '💡'
 		},
 		'revert': {
-			'description': 'Reverts a previous commit',
+			'description': 'Revert previous commit',
 			'title': 'Reverted Changes',
 			'emoji': '♻️'
 		}

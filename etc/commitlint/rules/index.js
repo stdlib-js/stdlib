@@ -80,7 +80,7 @@ rules[ 'body-max-line-length' ] = [ 1, 'always', 72 ];
 * @memberof rules
 * @type {Array}
 */
-rules[ 'body-min-length' ] = [ 2, 'always', 20 ];
+rules[ 'body-min-length' ] = [ 0, 'always', 20 ]; // NOTE: disabled due to commitzen not respecting the rule allowing the commit message body to be empty
 
 /**
 * Allow the commit message body to be in any case.
