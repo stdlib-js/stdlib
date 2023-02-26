@@ -28,6 +28,15 @@
 var config = {};
 
 /**
+* Link to commit guidance.
+*
+* @name helpUrl
+* @memberof config
+* @type {string}
+*/
+config[ 'helpUrl' ] = 'https://github.com/stdlib-js/stdlib/tree/develop/docs/style-guides/git';
+
+/**
 * Commit message parser.
 *
 * @name parserPreset
