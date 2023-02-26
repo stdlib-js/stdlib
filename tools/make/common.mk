@@ -143,6 +143,12 @@ SHELL_LINTER ?= shellcheck
 # Define the linter to use when linting C files:
 C_LINTER ?= cppcheck
 
+# Define the linter to use when linting Git commit messages:
+GIT_COMMIT_LINTER ?= commitlint
+
+# Define the tool for providing an interactive Git prompt for entering commit messages:
+GIT_COMMIT_PROMPT ?= commitizen
+
 
 # COMMANDS #
 
