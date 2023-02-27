@@ -52,7 +52,7 @@ COMMITLINT_FLAGS ?= \
 #/
 commitlint: $(NODE_MODULES)
 	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(COMMITLINT)" $(COMMITLINT_FLAGS) --edit || ( mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1 )
+	$(QUIET) "$(COMMITLINT)" $(COMMITLINT_FLAGS) --edit || ( mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1 )
 	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
 
 .PHONY: commitlint
@@ -71,7 +71,7 @@ commitlint: $(NODE_MODULES)
 #/
 commitlint-message: $(NODE_MODULES)
 	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
-	$(QUIET) ( printf "$(GIT_COMMIT_MESSAGE)" | NODE_PATH="$(NODE_PATH)" $(NODE) "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || ( mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1 )
+	$(QUIET) ( printf "$(GIT_COMMIT_MESSAGE)" | "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || ( mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1 )
 	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
 
 .PHONY: commitlint-message
@@ -97,13 +97,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting commit message:"; \
-		( cat $$file | grep -v '^#' | $(NODE) "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || ( mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1 ); \
+		( cat $$file | grep -v '^#' | "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || ( mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1 ); \
 	done
 else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting commit message"; \
-		( cat $$file | grep -v '^#' | $(NODE) "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || echo 'Linting failed.'; \
+		( cat $$file | grep -v '^#' | "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || echo 'Linting failed.'; \
 	done
 endif
 	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
