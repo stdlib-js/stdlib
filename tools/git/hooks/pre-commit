@@ -380,7 +380,8 @@ run_lint() {
 	# TODO: if datapackage.json, validate via schema
 
 	# Re-add files that may have been fixed by linting:
-	git add "${changed_files}"
+	# shellcheck disable=SC2086
+	git add ${changed_files}
 
 	return 0
 }
