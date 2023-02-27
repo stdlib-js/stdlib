@@ -26,24 +26,24 @@
 # VARIABLES #
 
 # Resolve environment variables:
-skip_lint_filenames=${SKIP_LINT_FILENAMES}
-skip_lint_markdown=${SKIP_LINT_MARKDOWN}
-skip_lint_package_json=${SKIP_LINT_PACKAGE_JSON}
-skip_lint_repl_help=${SKIP_LINT_REPL_HELP}
-skip_lint_javascript_src=${SKIP_LINT_JAVASCRIPT_SRC}
-skip_lint_javascript_cli=${SKIP_LINT_JAVASCRIPT_CLI}
-skip_lint_javascript_examples=${SKIP_LINT_JAVASCRIPT_EXAMPLES}
-skip_lint_javascript_tests=${SKIP_LINT_JAVASCRIPT_TESTS}
-skip_lint_javascript_benchmarks=${SKIP_LINT_JAVASCRIPT_BENCHMARKS}
-skip_lint_python=${SKIP_LINT_PYTHON}
-skip_lint_r=${SKIP_LINT_R}
-skip_lint_c_src=${SKIP_LINT_C_SRC}
-skip_lint_c_examples=${SKIP_LINT_C_EXAMPLES}
-skip_lint_c_benchmarks=${SKIP_LINT_C_BENCHMARKS}
-skip_lint_c_tests_fixtures=${SKIP_LINT_TESTS_FIXTURES}
-skip_lint_shell=${SKIP_LINT_SHELL}
-skip_lint_typescript_declarations=${SKIP_LINT_TYPESCRIPT_DECLARATIONS}
-skip_lint_license_headers=${SKIP_LINT_LICENSE_HEADERS}
+skip_filenames="${SKIP_LINT_FILENAMES}"
+skip_markdown="${SKIP_LINT_MARKDOWN}"
+skip_package_json="${SKIP_LINT_PACKAGE_JSON}"
+skip_repl_help="${SKIP_LINT_REPL_HELP}"
+skip_javascript_src="${SKIP_LINT_JAVASCRIPT_SRC}"
+skip_javascript_cli="${SKIP_LINT_JAVASCRIPT_CLI}"
+skip_javascript_examples="${SKIP_LINT_JAVASCRIPT_EXAMPLES}"
+skip_javascript_tests="${SKIP_LINT_JAVASCRIPT_TESTS}"
+skip_javascript_benchmarks="${SKIP_LINT_JAVASCRIPT_BENCHMARKS}"
+skip_python="${SKIP_LINT_PYTHON}"
+skip_r="${SKIP_LINT_R}"
+skip_c_src="${SKIP_LINT_C_SRC}"
+skip_c_examples="${SKIP_LINT_C_EXAMPLES}"
+skip_c_benchmarks="${SKIP_LINT_C_BENCHMARKS}"
+skip_c_tests_fixtures="${SKIP_LINT_C_TESTS_FIXTURES}"
+skip_shell="${SKIP_LINT_SHELL}"
+skip_typescript_declarations="${SKIP_LINT_TYPESCRIPT_DECLARATIONS}"
+skip_license_headers="${SKIP_LINT_LICENSE_HEADERS}"
 
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
@@ -128,7 +128,7 @@ run_lint() {
 	changed_files=$(git diff --name-only --cached --diff-filter ACMR)
 
 	# Lint filenames:
-	if [[ -z "${SKIP_LINT_FILENAMES}" ]]; then
+	if [[ -z "${skip_filenames}" ]]; then
 		echo "${changed_files}" | "${lint_filenames}"
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
@@ -137,7 +137,7 @@ run_lint() {
 		fi
 	fi
 	# Lint Markdown files...
-	if [[ -z "${SKIP_LINT_MARKDOWN}" ]]; then
+	if [[ -z "${skip_markdown}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.md$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-markdown-files > /dev/null >&2
@@ -149,7 +149,7 @@ run_lint() {
 		fi
 	fi
 	# Lint package.json files...
-	if [[ -z "${SKIP_LINT_PACKAGE_JSON}" ]]; then
+	if [[ -z "${skip_package_json}" ]]; then
 		files=$(echo "${changed_files}" | grep 'package\.json$' | grep -v 'datapackage\.json$' )
 		if [[ -n "${files}" ]]; then
 			echo "${files}" | "${lint_package_json}" >&2
@@ -161,7 +161,7 @@ run_lint() {
 		fi
 	fi
 	# Lint REPL help files...
-	if [[ -z "${SKIP_LINT_REPL_HELP}" ]]; then
+	if [[ -z "${skip_repl_help}" ]]; then
 		files=$(echo "${changed_files}" | grep 'repl\.txt$' )
 		if [[ -n "${files}" ]]; then
 			echo "${files}" | "${lint_repl_help}" >&2
@@ -173,7 +173,7 @@ run_lint() {
 		fi
 	fi
 	# Lint JavaScript source files...
-	if [[ -z "${SKIP_LINT_JAVASCRIPT_SRC}" ]]; then
+	if [[ -z "${skip_javascript_src}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
@@ -185,7 +185,7 @@ run_lint() {
 		fi
 	fi
 	# Lint JavaScript command-line interfaces...
-	if [[ -z "${SKIP_LINT_JAVASCRIPT_CLI}" ]]; then
+	if [[ -z "${skip_javascript_cli}" ]]; then
 		files=$(echo "${changed_files}" | grep '/bin/cli$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
@@ -197,7 +197,7 @@ run_lint() {
 		fi
 	fi
 	# Lint JavaScript examples files...
-	if [[ -z "${SKIP_LINT_JAVASCRIPT_EXAMPLES}" ]]; then
+	if [[ -z "${skip_javascript_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_examples_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
@@ -209,7 +209,7 @@ run_lint() {
 		fi
 	fi
 	# Lint JavaScript test files...
-	if [[ -z "${SKIP_LINT_JAVASCRIPT_TESTS}" ]]; then
+	if [[ -z "${skip_javascript_tests}" ]]; then
 		files=$(echo "${changed_files}" | grep '/test/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_tests_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
@@ -221,7 +221,7 @@ run_lint() {
 		fi
 	fi
 	# Lint JavaScript benchmark files...
-	if [[ -z "${SKIP_LINT_JAVASCRIPT_BENCHMARKS}" ]]; then
+	if [[ -z "${skip_javascript_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_benchmarks_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
@@ -233,7 +233,7 @@ run_lint() {
 		fi
 	fi
 	# Lint Python files...
-	if [[ -z "${SKIP_LINT_PYTHON}" ]]; then
+	if [[ -z "${skip_python}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.py$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-python-linters > /dev/null >&2
@@ -251,7 +251,7 @@ run_lint() {
 		fi
 	fi
 	# Lint R files...
-	if [[ -z "${SKIP_LINT_R}" ]]; then
+	if [[ -z "${skip_r}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.R$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-r-files > /dev/null >&2
@@ -263,7 +263,7 @@ run_lint() {
 		fi
 	fi
 	# Lint C source files...
-	if [[ -z "${SKIP_LINT_C_SRC}" ]]; then
+	if [[ -z "${skip_c_src}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-c-linters > /dev/null >&2
@@ -281,7 +281,7 @@ run_lint() {
 		fi
 	fi
 	# Lint C examples files...
-	if [[ -z "${SKIP_LINT_C_EXAMPLES}" ]]; then
+	if [[ -z "${skip_c_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.c$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-c-linters > /dev/null >&2
@@ -299,7 +299,7 @@ run_lint() {
 		fi
 	fi
 	# Lint C benchmark files...
-	if [[ -z "${SKIP_LINT_C_BENCHMARKS}" ]]; then
+	if [[ -z "${skip_c_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.c$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-c-linters > /dev/null >&2
@@ -317,7 +317,7 @@ run_lint() {
 		fi
 	fi
 	# Lint C test fixtures files...
-	if [[ -z "${SKIP_LINT_TESTS_FIXTURES}" ]]; then
+	if [[ -z "${skip_c_tests_fixtures}" ]]; then
 		files=$(echo "${changed_files}" | grep '/test/fixtures/.*\.c$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-c-linters > /dev/null >&2
@@ -335,7 +335,7 @@ run_lint() {
 		fi
 	fi
 	# Lint shell script files...
-	if [[ -z "${SKIP_LINT_SHELL}" ]]; then
+	if [[ -z "${skip_shell}" ]]; then
 		files=$(echo "${changed_files}" | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-shell-linters > /dev/null >&2
@@ -353,7 +353,7 @@ run_lint() {
 		fi
 	fi
 	# Lint TypeScript declaration files...
-	if [[ -z "${SKIP_LINT_TYPESCRIPT_DECLARATIONS}" ]]; then
+	if [[ -z "${skip_typescript_declarations}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.d\.ts$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make TYPESCRIPT_DECLARATIONS_LINTER=dtslint FILES="${files}" lint-typescript-declarations-files > /dev/null >&2
@@ -365,7 +365,7 @@ run_lint() {
 		fi
 	fi
 	# Lint license headers...
-	if [[ -z "${SKIP_LINT_LICENSE_HEADERS}" ]]; then
+	if [[ -z "${skip_license_headers}" ]]; then
 		files=$(echo "${changed_files}" | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-license-headers-files > /dev/null >&2
@@ -379,9 +379,8 @@ run_lint() {
 
 	# TODO: if datapackage.json, validate via schema
 
-	# Re-add files that may have been fixed by linting...
-	git add ${changed_files}
-
+	# Re-add files that may have been fixed by linting:
+	git add "${changed_files}"
 
 	return 0
 }

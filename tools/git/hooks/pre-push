@@ -20,8 +20,8 @@
 #
 # This hook is called with the following arguments:
 #
-# * `$1` - name of the remote to which the push is being done
-# * `$2` - URL to which the push is being done
+# -   `$1` - name of the remote to which the push is being done
+# -   `$2` - URL to which the push is being done
 #
 # If pushing without using a named remote, these arguments will be equal.
 #
@@ -37,18 +37,18 @@
 # VARIABLES #
 
 # Resolve environment variables:
-skip_run_javscript_examples=${SKIP_RUN_JAVASCRIPT_EXAMPLES}
-skip_run_javscript_readme_examples=${SKIP_RUN_JAVASCRIPT_README_EXAMPLES}
-skip_run_javscript_benchmarks=${SKIP_RUN_JAVASCRIPT_BENCHMARKS}
-skip_run_javscript_tests=${SKIP_RUN_JAVASCRIPT_TESTS}
-skip_run_c_examples=${SKIP_RUN_C_EXAMPLES}
-skip_run_c_benchmarks=${SKIP_RUN_C_BENCHMARKS}
-skip_run_cpp_examples=${SKIP_RUN_CPP_EXAMPLES}
-skip_run_cpp_benchmarks=${SKIP_RUN_CPP_BENCHMARKS}
-skip_run_fortran_benchmarks=${SKIP_RUN_FORTRAN_BENCHMARKS}
-skip_run_julia_benchmarks=${SKIP_RUN_JULIA_BENCHMARKS}
-skip_run_python_benchmarks=${SKIP_RUN_PYTHON_BENCHMARKS}
-skip_run_r_benchmarks=${SKIP_RUN_R_BENCHMARKS}
+skip_javascript_examples=${SKIP_RUN_JAVASCRIPT_EXAMPLES}
+skip_javascript_readme_examples=${SKIP_RUN_JAVASCRIPT_README_EXAMPLES}
+skip_javascript_benchmarks=${SKIP_RUN_JAVASCRIPT_BENCHMARKS}
+skip_javascript_tests=${SKIP_RUN_JAVASCRIPT_TESTS}
+skip_c_examples=${SKIP_RUN_C_EXAMPLES}
+skip_c_benchmarks=${SKIP_RUN_C_BENCHMARKS}
+skip_cpp_examples=${SKIP_RUN_CPP_EXAMPLES}
+skip_cpp_benchmarks=${SKIP_RUN_CPP_BENCHMARKS}
+skip_fortran_benchmarks=${SKIP_RUN_FORTRAN_BENCHMARKS}
+skip_julia_benchmarks=${SKIP_RUN_JULIA_BENCHMARKS}
+skip_python_benchmarks=${SKIP_RUN_PYTHON_BENCHMARKS}
+skip_r_benchmarks=${SKIP_RUN_R_BENCHMARKS}
 
 # Resolve the remote:
 remote="$1"
@@ -128,7 +128,7 @@ main() {
 	changed_files=$(git diff --name-only --cached --diff-filter ACMR "${remote}/${GIT_CURRENT_BRANCH}" | sed -e "s#^#${root}\\/#")
 
 	# Run JavaScript example files:
-	if [[ -z "${SKIP_RUN_JAVASCRIPT_EXAMPLES}" ]]; then
+	if [[ -z "${skip_javascript_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | grep -v '/examples/fixtures/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running JavaScript example files...' >&2
@@ -141,7 +141,7 @@ main() {
 		fi
 	fi
 	# Run C example files...
-	if [[ -z "${SKIP_RUN_C_EXAMPLES}" ]]; then
+	if [[ -z "${skip_c_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.c$' | grep -v '/examples/fixtures/.*\.c$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running C example files...' >&2
@@ -154,7 +154,7 @@ main() {
 		fi
 	fi
 	# Run C++ example files...
-	if [[ -z "${SKIP_RUN_CPP_EXAMPLES}" ]]; then
+	if [[ -z "${skip_cpp_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.cpp$' | grep -v '/examples/fixtures/.*\.cpp$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running C++ example files...' >&2
@@ -167,7 +167,7 @@ main() {
 		fi
 	fi
 	# Run JavaScript examples in README files:
-	if [[ -z "${SKIP_RUN_JAVASCRIPT_README_EXAMPLES}" ]]; then
+	if [[ -z "${skip_javascript_readme_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep 'README.md$' | grep -v '^tools/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running README JavaScript examples...' >&2
@@ -183,7 +183,7 @@ main() {
 	# TODO: run CLI examples found in Markdown files
 
 	# Run C benchmark files...
-	if [[ -z "${SKIP_RUN_C_BENCHMARKS}" ]]; then
+	if [[ -z "${skip_c_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.c$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running C benchmark files...' >&2
@@ -196,7 +196,7 @@ main() {
 		fi
 	fi
 	# Run C++ benchmark files...
-	if [[ -z "${SKIP_RUN_CPP_BENCHMARKS}" ]]; then
+	if [[ -z "${skip_cpp_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.cpp$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running C++ benchmark files...' >&2
@@ -209,7 +209,7 @@ main() {
 		fi
 	fi
 	# Run Fortran benchmark files...
-	if [[ -z "${SKIP_RUN_FORTRAN_BENCHMARKS}" ]]; then
+	if [[ -z "${skip_fortran_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.f$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running Fortran benchmark files...' >&2
@@ -222,7 +222,7 @@ main() {
 		fi
 	fi
 	# Run JavaScript benchmark files...
-	if [[ -z "${SKIP_RUN_JAVASCRIPT_BENCHMARKS}" ]]; then
+	if [[ -z "${skip_javascript_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running JavaScript benchmark files...' >&2
@@ -235,7 +235,7 @@ main() {
 		fi
 	fi
 	# Run Julia benchmark files...
-	if [[ -z "${SKIP_RUN_JULIA_BENCHMARKS}" ]]; then
+	if [[ -z "${skip_julia_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.jl$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running Julia benchmark files...' >&2
@@ -248,7 +248,7 @@ main() {
 		fi
 	fi
 	# Run Python benchmark files...
-	if [[ -z "${SKIP_RUN_PYTHON_BENCHMARKS}" ]]; then
+	if [[ -z "${skip_python_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.py$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running Python benchmark files...' >&2
@@ -261,7 +261,7 @@ main() {
 		fi
 	fi
 	# Run R benchmark files...
-	if [[ -z "${SKIP_RUN_R_BENCHMARKS}" ]]; then
+	if [[ -z "${skip_r_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.R$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running R benchmark files...' >&2
@@ -274,7 +274,7 @@ main() {
 		fi
 	fi
 	# Run JavaScript test files...
-	if [[ -z "${SKIP_RUN_JAVASCRIPT_TESTS}" ]]; then
+	if [[ -z "${skip_javascript_tests}" ]]; then
 		files=$(echo "${changed_files}" | grep '/test/.*\.js$' | grep -v '/test/fixtures/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running JavaScript test files...' >&2
