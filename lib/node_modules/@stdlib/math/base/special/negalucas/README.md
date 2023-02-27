@@ -148,6 +148,94 @@ for ( i = 0; i > -77; i-- ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/negalucas.h"
+```
+
+#### stdlib_base_negalucas( n )
+
+Computes the nth [negaLucas number][lucas-number].
+
+```c
+double out = stdlib_base_negalucas( 0 );
+// returns 0
+
+out = stdlib_base_negalucas( -1 );
+// returns -1
+```
+
+The function accepts the following arguments:
+
+-   **n**: `[in] int32_t` input value.
+
+```c
+double stdlib_base_negalucas( const int32_t n );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/negalucas.h"
+#include <stdio.h>
+#include <stdint.h>
+
+int main() {
+    int32_t i;
+    double v;
+
+    for ( i = 0; i > -77; i-- ) {
+        v = stdlib_base_negalucas( i );
+        printf( "negalucas(%d) = %lf\n", i, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+    
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
