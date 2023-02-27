@@ -36,3 +36,34 @@ ifeq ($(GIT_COMMIT_LINTER), commitlint)
 endif
 
 .PHONY: lint-commit
+
+#/
+# Lints a commit message.
+#
+# @param {string} GIT_COMMIT_MESSAGE - Git commit message text
+#
+# @example
+# make lint-commit-message
+#/
+lint-commit-message:
+ifeq ($(GIT_COMMIT_LINTER), commitlint)
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" GIT_COMMIT_MESSAGE="$(GIT_COMMIT_MESSAGE)" $(MAKE) -f $(this_file) commitlint-message
+endif
+
+.PHONY: lint-commit-message
+
+#/
+# Lints a list of files, each containing a commit message.
+#
+# @param {string} FILES - list of file paths
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-commit-files FILES='/foo/commit.txt'
+#/
+lint-commit-files:
+ifeq ($(GIT_COMMIT_LINTER), commitlint)
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) commitlint-files
+endif
+
+.PHONY: lint-commit-files
