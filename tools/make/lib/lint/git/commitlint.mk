@@ -39,49 +39,69 @@ COMMITLINT_FLAGS ?= \
 # RULES #
 
 #/
-# Lints a commit.
+# Performs linting initialization tasks.
 #
 # ## Notes
 #
 # -   We have to temporarily move the `tsconfig` file, as `commitlint` (erroneously) attempts to use the file for compiling TypeScript.
+#
+# @private
+#
+# @example
+# make commitlint-init
+#/
+commitlint-init:
+ifneq ("$(wildcard $(ROOT_DIR)/tsconfig.json)", "")
+	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
+endif
+
+.PHONY: commitlint-init
+
+#/
+# Performs linting clean-up tasks.
+#
+# @private
+#
+# @example
+# make commitlint-cleanup
+#/
+commitlint-cleanup:
+ifneq ("$(wildcard $(ROOT_DIR)/tsconfig.json.tmp)", "")
+	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
+endif
+
+.PHONY: commitlint-cleanup
+
+#/
+# Lints a commit.
 #
 # @private
 #
 # @example
 # make commitlint
 #/
-commitlint: $(NODE_MODULES)
-	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
-	$(QUIET) "$(COMMITLINT)" $(COMMITLINT_FLAGS) --edit || ( mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1 )
-	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
+commitlint: $(NODE_MODULES) commitlint-init
+	$(QUIET) "$(COMMITLINT)" $(COMMITLINT_FLAGS) --edit || ( $(MAKE) -f $(this_file) commitlint-cleanup && exit 1 )
+	$(QUIET) $(MAKE) -f $(this_file) commitlint-cleanup
 
 .PHONY: commitlint
 
 #/
 # Lints a commit message.
 #
-# ## Notes
-#
-# -   We have to temporarily move the `tsconfig` file, as `commitlint` (erroneously) attempts to use the file for compiling TypeScript.
-#
 # @private
 #
 # @example
 # make commitlint-message
 #/
-commitlint-message: $(NODE_MODULES)
-	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
-	$(QUIET) ( printf "$(GIT_COMMIT_MESSAGE)" | "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || ( mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1 )
-	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
+commitlint-message: $(NODE_MODULES) commitlint-init
+	$(QUIET) ( printf "$(GIT_COMMIT_MESSAGE)" | "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || ( $(MAKE) -f $(this_file) commitlint-cleanup && exit 1 )
+	$(QUIET) $(MAKE) -f $(this_file) commitlint-cleanup
 
 .PHONY: commitlint-message
 
 #/
 # Lints a list of files, each containing a commit message.
-#
-# ## Notes
-#
-# -   We have to temporarily move the `tsconfig` file, as `commitlint` (erroneously) attempts to use the file for compiling TypeScript.
 #
 # @private
 #
@@ -91,13 +111,12 @@ commitlint-message: $(NODE_MODULES)
 # @example
 # make commitlint-files FILES='/foo/commit.txt'
 #/
-commitlint-files: $(NODE_MODULES)
-	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
+commitlint-files: $(NODE_MODULES) commitlint-init
 ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting commit message:"; \
-		( cat $$file | grep -v '^#' | "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || ( mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1 ); \
+		( cat $$file | grep -v '^#' | "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || ( $(MAKE) -f $(this_file) commitlint-cleanup && exit 1 ); \
 	done
 else
 	$(QUIET) for file in $(FILES); do \
@@ -106,6 +125,6 @@ else
 		( cat $$file | grep -v '^#' | "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || echo 'Linting failed.'; \
 	done
 endif
-	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
+	$(QUIET) $(MAKE) -f $(this_file) commitlint-cleanup
 
 .PHONY: commitlint-files
