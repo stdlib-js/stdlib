@@ -2355,6 +2355,7 @@ quarterOfYear
 random.array.arcsine
 random.array.beta
 random.array.betaprime
+random.array.cosine
 random.array.discreteUniform
 random.array.exponential
 random.array.gamma
@@ -2451,8 +2452,11 @@ random.streams.weibull
 random.strided.arcsine
 random.strided.beta
 random.strided.betaprime
+random.strided.cosine
 random.strided.discreteUniform
 random.strided.exponential
+random.strided.gamma
+random.strided.invgamma
 random.strided.lognormal
 random.strided.minstd
 random.strided.minstdShuffle

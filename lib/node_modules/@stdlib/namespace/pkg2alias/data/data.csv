@@ -2355,6 +2355,7 @@
 "@stdlib/random/array/arcsine",random.array.arcsine
 "@stdlib/random/array/beta",random.array.beta
 "@stdlib/random/array/betaprime",random.array.betaprime
+"@stdlib/random/array/cosine",random.array.cosine
 "@stdlib/random/array/discrete-uniform",random.array.discreteUniform
 "@stdlib/random/array/exponential",random.array.exponential
 "@stdlib/random/array/gamma",random.array.gamma
@@ -2451,8 +2452,11 @@
 "@stdlib/random/strided/arcsine",random.strided.arcsine
 "@stdlib/random/strided/beta",random.strided.beta
 "@stdlib/random/strided/betaprime",random.strided.betaprime
+"@stdlib/random/strided/cosine",random.strided.cosine
 "@stdlib/random/strided/discrete-uniform",random.strided.discreteUniform
 "@stdlib/random/strided/exponential",random.strided.exponential
+"@stdlib/random/strided/gamma",random.strided.gamma
+"@stdlib/random/strided/invgamma",random.strided.invgamma
 "@stdlib/random/strided/lognormal",random.strided.lognormal
 "@stdlib/random/strided/minstd",random.strided.minstd
 "@stdlib/random/strided/minstd-shuffle",random.strided.minstdShuffle
