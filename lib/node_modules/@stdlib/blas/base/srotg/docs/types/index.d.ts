@@ -44,10 +44,10 @@ interface Routine {
 	*
 	* @param a - rotational elimination parameter
 	* @param b - rotational elimination parameter
-	* @param out - destination array
+	* @param out - output array
 	* @param stride - index increment
 	* @param offset - starting index
-	* @returns destination array
+	* @returns output array
 	*
 	* @example
 	* var Float32Array = require( `@stdlib/array/float32` );
@@ -80,6 +80,9 @@ interface Routine {
 * var out = new Float32Array( 4 );
 * var y = srotg.assign( 0.0, 2.0, out, 1, 0 );
 * // returns <Float32Array>[ 2.0, 1.0, 0.0, 1.0 ]
+*
+* var bool = ( y === out );
+* // returns true
 */
 declare var srotg: Routine;
 

@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-/// <reference types="@stdlib/types"/>
-
 import srotg = require( './index' );
 
 
@@ -30,14 +28,6 @@ import srotg = require( './index' );
 
 // The compiler throws an error if the function is provided an argument which is not a number...
 {
-	srotg( 0.0, true ); // $ExpectError
-	srotg( 0.0, false ); // $ExpectError
-	srotg( 0.0, null ); // $ExpectError
-	srotg( 0.0, undefined ); // $ExpectError
-	srotg( 0.0, '5' ); // $ExpectError
-	srotg( 0.0, [] ); // $ExpectError
-	srotg( 0.0, {} ); // $ExpectError
-
 	srotg( true, 2.0 ); // $ExpectError
 	srotg( false, 2.0 ); // $ExpectError
 	srotg( null, 2.0 ); // $ExpectError
@@ -45,11 +35,20 @@ import srotg = require( './index' );
 	srotg( '5', 2.0 ); // $ExpectError
 	srotg( [], 2.0 ); // $ExpectError
 	srotg( {}, 2.0 ); // $ExpectError
+
+	srotg( 0.0, true ); // $ExpectError
+	srotg( 0.0, false ); // $ExpectError
+	srotg( 0.0, null ); // $ExpectError
+	srotg( 0.0, undefined ); // $ExpectError
+	srotg( 0.0, '5' ); // $ExpectError
+	srotg( 0.0, [] ); // $ExpectError
+	srotg( 0.0, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	srotg(); // $ExpectError
+	srotg( 1.0 ); // $ExpectError
 	srotg( 1.0, 2.0, 3.0 ); // $ExpectError
 }
 
@@ -64,14 +63,6 @@ import srotg = require( './index' );
 {
 	const out = new Float32Array( 4 );
 
-	srotg.assign( 0.0, true, out, 1, 0 ); // $ExpectError
-	srotg.assign( 0.0, false, out, 1, 0 ); // $ExpectError
-	srotg.assign( 0.0, null, out, 1, 0 ); // $ExpectError
-	srotg.assign( 0.0, undefined, out, 1, 0 ); // $ExpectError
-	srotg.assign( 0.0, '5', out, 1, 0 ); // $ExpectError
-	srotg.assign( 0.0, [], out, 1, 0 ); // $ExpectError
-	srotg.assign( 0.0, {}, out, 1, 0 ); // $ExpectError
-
 	srotg.assign( true, 2.0, out, 1, 0 ); // $ExpectError
 	srotg.assign( false, 2.0, out, 1, 0 ); // $ExpectError
 	srotg.assign( null, 2.0, out, 1, 0 ); // $ExpectError
@@ -79,6 +70,14 @@ import srotg = require( './index' );
 	srotg.assign( '5', 2.0, out, 1, 0 ); // $ExpectError
 	srotg.assign( [], 2.0, out, 1, 0 ); // $ExpectError
 	srotg.assign( {}, 2.0, out, 1, 0 ); // $ExpectError
+
+	srotg.assign( 0.0, true, out, 1, 0 ); // $ExpectError
+	srotg.assign( 0.0, false, out, 1, 0 ); // $ExpectError
+	srotg.assign( 0.0, null, out, 1, 0 ); // $ExpectError
+	srotg.assign( 0.0, undefined, out, 1, 0 ); // $ExpectError
+	srotg.assign( 0.0, '5', out, 1, 0 ); // $ExpectError
+	srotg.assign( 0.0, [], out, 1, 0 ); // $ExpectError
+	srotg.assign( 0.0, {}, out, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided a third argument which is not a Float32Array...

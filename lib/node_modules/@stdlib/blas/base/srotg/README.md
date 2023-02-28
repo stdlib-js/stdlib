@@ -32,7 +32,7 @@ var srotg = require( '@stdlib/blas/base/srotg' );
 
 #### srotg( a, b )
 
-Constructs a Givens plane rotation for single-precision floating-point values `a` and `b`.
+Constructs a Givens plane rotation provided two single-precision floating-point values `a` and `b`.
 
 ```javascript
 var out = srotg( 0.0, 2.0 );
@@ -46,7 +46,7 @@ The function has the following parameters:
 
 #### srotg.assign( a, b, out, stride, offset )
 
-Constructs a Givens plane rotation for single-precision floating-point values `a` and `b` and assigns results to an output array.
+Constructs a Givens plane rotation provided two single-precision floating-point values `a` and `b` and assigns results to an output array.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -81,14 +81,9 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var srotg = require( '@stdlib/blas/base/srotg' );
 
 var out;
-var a;
-var b;
 var i;
-
 for ( i = 0; i < 100; i++ ) {
-    a = discreteUniform( -5, 5 );
-    b = discreteUniform( -5, 5 );
-    out = srotg( a, b );
+    out = srotg( discreteUniform( -5, 5 ), discreteUniform( -5, 5 ) );
     console.log( out );
 }
 ```

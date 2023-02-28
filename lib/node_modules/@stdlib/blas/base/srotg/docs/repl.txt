@@ -1,7 +1,7 @@
 
 {{alias}}( a, b )
-    Constructs a Givens rotation from two single-precision 
-    floating-point numbers.
+    Constructs a Givens plane rotation from two single-precision floating-point
+    numbers.
 
     Parameters
     ----------
@@ -23,9 +23,8 @@
 
 
 {{alias}}.assign( a, b, out, stride, offset )
-    Constructs a Givens rotation from two single-precision 
-    floating-point numbers and assigns the results to an output
-    array.
+    Constructs a Givens plane rotation from two single-precision floating-point
+    numbers and assigns the results to an output array.
 
     Parameters
     ----------
