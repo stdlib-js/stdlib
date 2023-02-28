@@ -69,10 +69,6 @@ endif
 #/
 # Provides an interactive prompt for entering commit message information in accordance with project Git commit conventions.
 #
-# ## Notes
-#
-# -   We have to temporarily move the `tsconfig` file, as `commitlint` (erroneously) attempts to use the file for compiling TypeScript.
-#
 # @private
 #
 # @example
@@ -86,10 +82,6 @@ commitizen-commit: $(NODE_MODULES) $(COMMITIZEN) commitizen-init
 
 #/
 # Retries a previous commit entered using Commitizen.
-#
-# ## Notes
-#
-# -   We have to temporarily move the `tsconfig` file, as `commitlint` (erroneously) attempts to use the file for compiling TypeScript.
 #
 # @private
 #
