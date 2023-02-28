@@ -32,7 +32,7 @@ include $(TOOLS_MAKE_LIB_DIR)/git/commitizen.mk
 #/
 commit: $(NODE_MODULES)
 ifeq ($(GIT_COMMIT_PROMPT), commitizen)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) commitizen-commit
+	$(QUIET) $(MAKE) -f $(this_file) commitizen-commit
 endif
 
 .PHONY: commit
@@ -45,7 +45,7 @@ endif
 #/
 retry-commit: $(NODE_MODULES)
 ifeq ($(GIT_COMMIT_PROMPT), commitizen)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) commitizen-retry-commit
+	$(QUIET) $(MAKE) -f $(this_file) commitizen-retry-commit
 endif
 
 .PHONY: retry-commit

@@ -46,7 +46,7 @@ COMMITIZEN ?= $(BIN_DIR)/cz
 #/
 commitizen-commit: $(NODE_MODULES) $(COMMITIZEN)
 	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(COMMITIZEN)" || (mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1)
+	$(QUIET) "$(COMMITIZEN)" || (mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1)
 	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
 
 .PHONY: commitizen-commit
@@ -65,7 +65,7 @@ commitizen-commit: $(NODE_MODULES) $(COMMITIZEN)
 #/
 commitizen-retry-commit: $(NODE_MODULES) $(COMMITIZEN)
 	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(COMMITIZEN)" --retry || (mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1)
+	$(QUIET) "$(COMMITIZEN)" --retry || (mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1)
 	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
 
 .PHONY: commitizen-retry-commit
