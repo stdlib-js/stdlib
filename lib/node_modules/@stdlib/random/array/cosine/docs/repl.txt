@@ -61,8 +61,8 @@
     If provided `mu` and `s`, the returned function returns random variates
     drawn from the specified distribution.
 
-    If not provided `mu` and `s`, the returned function requires that both
-    `mu` and `s` be provided at each invocation.
+    If not provided `mu` and `s`, the returned function requires that both`mu`
+    and `s` be provided at each invocation.
 
     The returned function accepts the following options:
 
