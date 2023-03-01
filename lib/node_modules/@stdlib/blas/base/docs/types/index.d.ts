@@ -727,7 +727,7 @@ interface Namespace {
 	/**
 	* Computes the L2-norm of a single-precision floating-point vector.
 	*
-	* @param N - number of values over which to compute the L2-norm
+	* @param N - number of values
 	* @param x - input array
 	* @param stride - stride length
 	* @returns L2-norm
