@@ -2290,7 +2290,7 @@ int main() {
     // Print the contents of the output array:
     uint8_t *op1 = out;
     for ( int64_t i = 0; i < shape[0]; i++, op1 += strides[0] ) {
-        const double v = *(double *)op1; // cppcheck-suppress invalidPointerCast
+        const double v = *(double *)op1;
         printf( "out[ %"PRId64" ] = %lf\n", i, v );
     }
 }
