@@ -29,7 +29,7 @@ interface Routine {
 	/**
 	* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
 	*
-	* @param N - number of values to copy
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param y - output array
@@ -60,7 +60,7 @@ interface Routine {
 	/**
 	* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector using alternative indexing semantics.
 	*
-	* @param N - number of values to copy
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting index for `x`
@@ -94,7 +94,7 @@ interface Routine {
 /**
 * Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
 *
-* @param N - number of values to copy
+* @param N - number of indexed elements
 * @param x - input array
 * @param strideX - `x` stride length
 * @param y - output array

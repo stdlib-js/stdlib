@@ -62,7 +62,7 @@ var sum = sasum( x.length, x, 1 );
 
 The function has the following parameters:
 
--   **N**: number of elements to sum.
+-   **N**: number of indexed elements.
 -   **x**: input [`Float32Array`][mdn-float32array].
 -   **stride**: index increment.
 

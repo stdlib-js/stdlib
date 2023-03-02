@@ -60,7 +60,7 @@ var sum = gasum( x.length, x, 1 );
 
 The function has the following parameters:
 
--   **N**: number of elements to sum.
+-   **N**: number of indexed elements.
 -   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **stride**: index increment.
 

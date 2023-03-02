@@ -22,7 +22,7 @@
 /**
 * Computes the dot product of two single-precision floating-point vectors.
 *
-* @param N        number of values
+* @param N        number of indexed elements
 * @param X        first array
 * @param strideX  X stride length
 * @param Y        second array

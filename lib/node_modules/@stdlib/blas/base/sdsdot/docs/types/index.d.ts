@@ -25,7 +25,7 @@ interface Routine {
 	/**
 	* Computes the dot product of two single-precision floating-point vectors with extended accumulation.
 	*
-	* @param N - number of values
+	* @param N - number of indexed elements
 	* @param scalar - scalar constant added to dot product
 	* @param x - first input array
 	* @param strideX - `x` stride length
@@ -47,7 +47,7 @@ interface Routine {
 	/**
 	* Computes the dot product of two single-precision floating-point vectors using alternative indexing semantics and with extended accumulation.
 	*
-	* @param N - number of values
+	* @param N - number of indexed elements
 	* @param scalar - scalar constant added to dot product
 	* @param x - first input array
 	* @param strideX - `x` stride length
@@ -72,7 +72,7 @@ interface Routine {
 /**
 * Computes the dot product of two single-precision floating-point vectors with extended accumulation.
 *
-* @param N - number of values
+* @param N - number of indexed elements
 * @param scalar - scalar constant added to dot product
 * @param x - first input array
 * @param strideX - `x` stride length

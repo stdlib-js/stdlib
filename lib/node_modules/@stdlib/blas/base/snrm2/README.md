@@ -67,7 +67,7 @@ The function has the following parameters:
 -   **x**: input [`Float32Array`][@stdlib/array/float32].
 -   **stride**: index increment for `x`.
 
-The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the [L2-norm][l2-norm] of every other element in `x`,
+The `N` and `stride` parameters determine which elements in the strided array are accessed at runtime. For example, to compute the [L2-norm][l2-norm] of every other element in `x`,
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );

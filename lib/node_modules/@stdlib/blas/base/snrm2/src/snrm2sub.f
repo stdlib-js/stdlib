@@ -18,7 +18,7 @@
 
 !> Wraps `snrm2` as a subroutine.
 !
-! @param {integer} N - number of values
+! @param {integer} N - number of indexed elements
 ! @param {Array<real>} sx - input array
 ! @param {integer} stride - stride length
 ! @param {real} nrm2 - output variable reference

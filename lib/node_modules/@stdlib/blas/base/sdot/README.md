@@ -69,7 +69,7 @@ The function has the following parameters:
 -   **y**: input [`Float32Array`][@stdlib/array/float32].
 -   **strideY**: index increment for `y`.
 
-The `N` and stride parameters determine which elements in `x` and `y` are accessed at runtime. For example, to calculate the dot product of every other value in `x` and the first `N` elements of `y` in reverse order,
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to calculate the dot product of every other value in `x` and the first `N` elements of `y` in reverse order,
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );

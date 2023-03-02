@@ -22,7 +22,7 @@
 /**
 * Computes the dot product of two single-precision floating-point vectors with extended accumulation.
 *
-* @param N        number of values
+* @param N        number of indexed elements
 * @param scalar   scalar constant added to the dot product
 * @param X        first array
 * @param strideX  X stride length

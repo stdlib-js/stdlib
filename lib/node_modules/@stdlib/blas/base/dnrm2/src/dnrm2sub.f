@@ -18,7 +18,7 @@
 
 !> Wraps `dnrm2` as a subroutine.
 !
-! @param {integer} N - number of values over which to compute the norm
+! @param {integer} N - number of indexed elements
 ! @param {Array<double>} dx - input array
 ! @param {integer} stride - stride length
 ! @param {double} nrm2 - output variable reference

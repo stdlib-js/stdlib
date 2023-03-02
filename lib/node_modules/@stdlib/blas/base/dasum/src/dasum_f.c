@@ -22,7 +22,7 @@
 /**
 * Computes the sum of absolute values.
 *
-* @param N       number of elements to sum
+* @param N       number of indexed elements
 * @param X       input array
 * @param stride  stride length
 * @return        sum of absolute values

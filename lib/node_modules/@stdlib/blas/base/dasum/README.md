@@ -62,7 +62,7 @@ var sum = dasum( x.length, x, 1 );
 
 The function has the following parameters:
 
--   **N**: number of elements to sum.
+-   **N**: number of indexed elements.
 -   **x**: input [`Float64Array`][mdn-float64array].
 -   **stride**: index increment.
 

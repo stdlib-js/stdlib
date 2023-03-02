@@ -2,7 +2,7 @@
 {{alias}}( N, x, strideX, y, strideY )
     Interchanges two single-precision floating-point vectors.
 
-    The `N` and `stride` parameters determine how values from `x` are swapped
+    The `N` and stride parameters determine how values from `x` are swapped
     with values from `y`.
 
     Indexing is relative to the first index. To introduce an offset, use typed
@@ -13,7 +13,7 @@
     Parameters
     ----------
     N: integer
-        Number of values.
+        Number of indexed elements.
 
     x: Float32Array
         First input array.
@@ -68,7 +68,7 @@
     Parameters
     ----------
     N: integer
-        Number of values.
+        Number of indexed elements.
 
     x: Float32Array
         First input array.

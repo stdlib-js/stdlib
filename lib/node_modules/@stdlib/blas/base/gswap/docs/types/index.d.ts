@@ -29,7 +29,7 @@ interface Routine {
 	/**
 	* Interchanges vectors `x` and `y`.
 	*
-	* @param N - number of values to swap
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -49,7 +49,7 @@ interface Routine {
 	/**
 	* Interchanges vectors `x` and `y` using alternative indexing semantics.
 	*
-	* @param N - number of values to swap
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting index for `x`
@@ -72,7 +72,7 @@ interface Routine {
 /**
 * Interchanges vectors `x` and `y`.
 *
-* @param N - number of values to swap
+* @param N - number of indexed elements
 * @param x - first input array
 * @param strideX - `x` stride length
 * @param y - second input array

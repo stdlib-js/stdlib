@@ -21,7 +21,7 @@
 /**
 * Interchanges two complex single-precision floating-point vectors.
 *
-* @param N        number of elements to swap
+* @param N        number of indexed elements
 * @param X        first input array
 * @param strideX  X stride length
 * @param Y        second input array

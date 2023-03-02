@@ -18,7 +18,7 @@
 
 !> Wraps `sdsdot` as a subroutine.
 !
-! @param {integer} N - number of values
+! @param {integer} N - number of indexed elements
 ! @param {real} sb - scalar constant added to the dot product
 ! @param {Array<real>} sx - first array
 ! @param {integer} strideX - `sx` stride length

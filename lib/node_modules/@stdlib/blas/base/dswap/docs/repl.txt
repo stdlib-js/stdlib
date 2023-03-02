@@ -13,7 +13,7 @@
     Parameters
     ----------
     N: integer
-        Number of values.
+        Number of indexed elements.
 
     x: Float64Array
         First input array.
@@ -68,7 +68,7 @@
     Parameters
     ----------
     N: integer
-        Number of values.
+        Number of indexed elements.
 
     x: Float64Array
         First input array.

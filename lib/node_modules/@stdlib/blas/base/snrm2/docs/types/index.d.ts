@@ -25,7 +25,7 @@ interface Routine {
 	/**
 	* Computes the L2-norm of a single-precision floating-point vector.
 	*
-	* @param N - number of values
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @returns L2-norm
@@ -43,7 +43,7 @@ interface Routine {
 	/**
 	* Computes the L2-norm of a single-precision floating-point vector using alternative indexing semantics.
 	*
-	* @param N - number of values
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @param offset - starting index
@@ -63,7 +63,7 @@ interface Routine {
 /**
 * Computes the L2-norm of a single-precision floating-point vector.
 *
-* @param N - number of values
+* @param N - number of indexed elements
 * @param x - input array
 * @param stride - stride length
 * @returns L2-norm

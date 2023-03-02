@@ -15,7 +15,7 @@
     Parameters
     ----------
     N: integer
-        Number of elements to sum.
+        Number of indexed elements.
 
     x: Float64Array
         Input array.
@@ -32,20 +32,17 @@
     --------
     // Standard usage:
     > var x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0 ] );
-    > var sum = {{alias}}( x.length, x, 1 )
+    > var s = {{alias}}( x.length, x, 1 )
     15.0
 
     // Sum every other value:
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > var stride = 2;
-    > sum = {{alias}}( N, x, stride )
+    > s = {{alias}}( 3, x, 2 )
     9.0
 
     // Use view offset; e.g., starting at 2nd element:
     > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > sum = {{alias}}( N, x1, stride )
+    > s = {{alias}}( 3, x1, 2 )
     12.0
 
 
@@ -59,7 +56,7 @@
     Parameters
     ----------
     N: integer
-        Number of elements to sum.
+        Number of indexed elements.
 
     x: Float64Array
         Input array.
@@ -79,12 +76,12 @@
     --------
     // Standard usage:
     > var x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0 ] );
-    > var sum = {{alias}}.ndarray( x.length, x, 1, 0 )
+    > var s = {{alias}}.ndarray( x.length, x, 1, 0 )
     15.0
 
     // Sum the last three elements:
     > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
-    > sum = {{alias}}.ndarray( 3, x, -1, x.length-1 )
+    > s = {{alias}}.ndarray( 3, x, -1, x.length-1 )
     15.0
 
     See Also

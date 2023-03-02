@@ -47,7 +47,7 @@
 ! >
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
-! @param {integer} N - number of values to swap
+! @param {integer} N - number of indexed elements
 ! @param {Array<complex>} cx - first input array
 ! @param {integer} strideX - `cx` stride length
 ! @param {Array<complex>} cy - second input array

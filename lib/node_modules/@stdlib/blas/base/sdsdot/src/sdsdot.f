@@ -60,7 +60,7 @@
 ! >
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
-! @param {integer} N - number of values
+! @param {integer} N - number of indexed elements
 ! @param {real} sb - scalar constant added to the dot product
 ! @param {Array<real>} sx - first array
 ! @param {integer} strideX - `sx` stride length

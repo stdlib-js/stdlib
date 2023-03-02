@@ -18,7 +18,7 @@
 
 !> Wraps `sdot` as a subroutine.
 !
-! @param {integer} N - number of values
+! @param {integer} N - number of indexed elements
 ! @param {Array<real>} sx - first array
 ! @param {integer} strideX - `sx` stride length
 ! @param {Array<real>} sy - second array

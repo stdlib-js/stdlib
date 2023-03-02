@@ -47,7 +47,7 @@ sswap( x.length, x, 1, y, 1 );
 
 The function has the following parameters:
 
--   **N**: number of values to swap.
+-   **N**: number of indexed elements.
 -   **x**: first input [`Float32Array`][mdn-float32array].
 -   **strideX**: index increment for `x`.
 -   **y**: second input [`Float32Array`][mdn-float32array].

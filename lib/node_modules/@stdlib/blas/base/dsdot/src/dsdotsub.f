@@ -18,7 +18,7 @@
 
 !> Wraps `dsdot` as a subroutine.
 !
-! @param {integer} N - number of values over which to compute the dot product
+! @param {integer} N - number of indexed elements
 ! @param {Array<real>} sx - first array
 ! @param {integer} strideX - `sx` stride length
 ! @param {Array<real>} sy - second array

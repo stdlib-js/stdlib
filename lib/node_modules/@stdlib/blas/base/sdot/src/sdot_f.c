@@ -29,7 +29,7 @@
 *
 * Arguments are passed by reference to a Fortran subroutine implementing `sdot`.
 *
-* @param N        number of values
+* @param N        number of indexed elements
 * @param X        first array
 * @param strideX  X stride length
 * @param Y        second array
