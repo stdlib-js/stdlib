@@ -55,7 +55,7 @@ interface Namespace {
 	/**
 	* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
 	*
-	* @param N - number of values to copy
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param y - output array
@@ -105,7 +105,7 @@ interface Namespace {
 	/**
 	* Interchanges two complex single-precision floating-point vectors.
 	*
-	* @param N - number of values to copy
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -173,7 +173,7 @@ interface Namespace {
 	/**
 	* Computes the sum of the absolute values.
 	*
-	* @param N - number of values to sum
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @returns sum of absolute values
@@ -230,7 +230,7 @@ interface Namespace {
 	/**
 	* Copies values from `x` into `y`.
 	*
-	* @param N - number of values to copy
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param y - output array
@@ -260,7 +260,7 @@ interface Namespace {
 	/**
 	* Computes the dot product of `x` and `y`.
 	*
-	* @param N - number of values over which to compute the dot product
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -290,7 +290,7 @@ interface Namespace {
 	/**
 	* Computes the L2-norm of a double-precision floating-point vector.
 	*
-	* @param N - number of values over which to compute the L2-norm
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @returns L2-norm
@@ -343,7 +343,7 @@ interface Namespace {
 	/**
 	* Computes the dot product of `x` and `y` with extended accumulation and result.
 	*
-	* @param N - number of values over which to compute the dot product
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -373,7 +373,7 @@ interface Namespace {
 	/**
 	* Interchanges two double-precision floating-point vectors.
 	*
-	* @param N - number of values to swap
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -405,7 +405,7 @@ interface Namespace {
 	/**
 	* Computes the sum of the absolute values.
 	*
-	* @param N - number of values to sum
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @returns sum of absolute values
@@ -454,7 +454,7 @@ interface Namespace {
 	/**
 	* Copies values from `x` into `y`.
 	*
-	* @param N - number of values to copy
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param y - destination array
@@ -480,7 +480,7 @@ interface Namespace {
 	/**
 	* Computes the dot product of two vectors.
 	*
-	* @param N - number of values over which to compute the dot product
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -506,7 +506,7 @@ interface Namespace {
 	/**
 	* Computes the L2-norm of a vector.
 	*
-	* @param N - number of values over which to compute the L2-norm
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @returns L2-norm
@@ -551,7 +551,7 @@ interface Namespace {
 	/**
 	* Interchanges vectors `x` and `y`.
 	*
-	* @param N - number of values to swap
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -579,7 +579,7 @@ interface Namespace {
 	/**
 	* Computes the sum of the absolute values.
 	*
-	* @param N - number of values to sum
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @returns sum of absolute values
@@ -636,7 +636,7 @@ interface Namespace {
 	/**
 	* Copies values from `x` into `y`.
 	*
-	* @param N - number of values
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param y - output array
@@ -666,7 +666,7 @@ interface Namespace {
 	/**
 	* Computes the dot product of `x` and `y`.
 	*
-	* @param N - number of values
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -696,13 +696,13 @@ interface Namespace {
 	/**
 	* Computes the dot product of two single-precision floating-point vectors with extended accumulation.
 	*
-	* @param N - number of values over which to compute the dot product
+	* @param N - number of indexed elements
 	* @param scalar - scalar constant added to dot product
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
 	* @param strideY - `y` stride length
-	* @returns dot product of `x` and `y`
+	* @returns dot product
 	*
 	* @example
 	* var Float32Array = require( `@stdlib/array/float32` );
@@ -727,7 +727,7 @@ interface Namespace {
 	/**
 	* Computes the L2-norm of a single-precision floating-point vector.
 	*
-	* @param N - number of values
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @returns L2-norm
@@ -803,7 +803,7 @@ interface Namespace {
 	/**
 	* Interchanges two single-precision floating-point vectors.
 	*
-	* @param N - number of values to swap
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
