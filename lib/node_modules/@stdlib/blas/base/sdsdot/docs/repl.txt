@@ -64,8 +64,7 @@
     using alternative indexing semantics and with extended accumulation.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offsetX` and `offsetY` parameters support indexing based on a
-    starting index.
+    buffer, the offset parameters support indexing based on a starting index.
 
     Parameters
     ----------
