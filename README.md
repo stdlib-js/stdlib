@@ -723,7 +723,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [make]: https://www.gnu.org/software/make/
 

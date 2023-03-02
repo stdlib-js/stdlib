@@ -39,7 +39,13 @@
 			],
 			"libraries": [],
 			"libpath": [],
-			"dependencies": []
+			"dependencies": [
+				"@stdlib/napi/export",
+				"@stdlib/napi/argv",
+				"@stdlib/napi/argv-int64",
+				"@stdlib/napi/argv-strided-float32array",
+				"@stdlib/napi/argv-float"
+			]
 		},
 		{
 			"os": "linux",
@@ -55,7 +61,13 @@
 				"-lpthread"
 			],
 			"libpath": [],
-			"dependencies": []
+			"dependencies": [
+				"@stdlib/napi/export",
+				"@stdlib/napi/argv",
+				"@stdlib/napi/argv-int64",
+				"@stdlib/napi/argv-strided-float32array",
+				"@stdlib/napi/argv-float"
+			]
 		},
 		{
 			"os": "mac",
@@ -70,7 +82,13 @@
 			],
 			"libraries": [],
 			"libpath": [],
-			"dependencies": []
+			"dependencies": [
+				"@stdlib/napi/export",
+				"@stdlib/napi/argv",
+				"@stdlib/napi/argv-int64",
+				"@stdlib/napi/argv-strided-float32array",
+				"@stdlib/napi/argv-float"
+			]
 		},
 		{
 			"os": "mac",
@@ -85,7 +103,13 @@
 				"-lblas"
 			],
 			"libpath": [],
-			"dependencies": []
+			"dependencies": [
+				"@stdlib/napi/export",
+				"@stdlib/napi/argv",
+				"@stdlib/napi/argv-int64",
+				"@stdlib/napi/argv-strided-float32array",
+				"@stdlib/napi/argv-float"
+			]
 		},
 		{
 			"os": "mac",
@@ -101,7 +125,13 @@
 				"-lpthread"
 			],
 			"libpath": [],
-			"dependencies": []
+			"dependencies": [
+				"@stdlib/napi/export",
+				"@stdlib/napi/argv",
+				"@stdlib/napi/argv-int64",
+				"@stdlib/napi/argv-strided-float32array",
+				"@stdlib/napi/argv-float"
+			]
 		},
 		{
 			"os": "win",
@@ -114,7 +144,13 @@
 			],
 			"libraries": [],
 			"libpath": [],
-			"dependencies": []
+			"dependencies": [
+				"@stdlib/napi/export",
+				"@stdlib/napi/argv",
+				"@stdlib/napi/argv-int64",
+				"@stdlib/napi/argv-strided-float32array",
+				"@stdlib/napi/argv-float"
+			]
 		}
 	]
 }
