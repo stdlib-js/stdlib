@@ -110,9 +110,9 @@ jobs:
             exit 0
           fi
           rm -rf ./bin/cli
-          rm test/test.cli.js
-          rm etc/cli_opts.json
-          rm docs/usage.txt
+          rm -f test/test.cli.js
+          rm -f etc/cli_opts.json
+          rm -f docs/usage.txt
 
           # For all dependencies, check in all *.js files if they are still used; if not, remove them:
           jq -r '.dependencies | keys[]' ./package.json | while read -r dep; do
@@ -162,8 +162,8 @@ jobs:
       # Remove unnecessary files:
       - name: 'Remove unnecessary files'
         run: |
-          rm docs/repl.txt
-          rm docs/types/test.ts
+          rm -f docs/repl.txt
+          rm -f docs/types/test.ts
 
       # Replace all stdlib GitHub dependencies with the respective npm packages:
       - name: 'Replace all stdlib GitHub dependencies with the respective npm packages'
