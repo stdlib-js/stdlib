@@ -82,15 +82,15 @@ int main() {
 	// Create an input ndarray:
 	struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shape, sx, ox, order, imode, nsubmodes, submodes );
 	if ( x == NULL ) {
-	    fprintf( stderr, "Error allocating memory.\n" );
-	    exit( EXIT_FAILURE );
+		fprintf( stderr, "Error allocating memory.\n" );
+		exit( EXIT_FAILURE );
 	}
 
 	// Create an output ndarray:
 	struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
 	if ( y == NULL ) {
-	    fprintf( stderr, "Error allocating memory.\n" );
-	    exit( EXIT_FAILURE );
+		fprintf( stderr, "Error allocating memory.\n" );
+		exit( EXIT_FAILURE );
 	}
 
 	// Define an array containing the ndarrays:
@@ -99,8 +99,8 @@ int main() {
 	// Apply the callback:
 	int8_t status = stdlib_ndarray_d_z( arrays, (void *)scale );
 	if ( status != 0 ) {
-	    fprintf( stderr, "Error during computation.\n" );
-	    exit( EXIT_FAILURE );
+		fprintf( stderr, "Error during computation.\n" );
+		exit( EXIT_FAILURE );
 	}
 
 	// Print the results:
