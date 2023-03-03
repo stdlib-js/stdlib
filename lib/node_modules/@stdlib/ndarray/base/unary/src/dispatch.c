@@ -335,7 +335,7 @@ int8_t stdlib_ndarray_unary_dispatch( const struct ndarrayUnaryDispatchObject *o
 	io2 = stdlib_ndarray_iteration_order( ndims, s2 ); // +/-1
 
 	// Determine whether we can avoid blocked iteration...
-	if ( io1 != 0 && io2 != 0 && stdlib_ndarray_order( x1 ) == stdlib_ndarray_order( x2 )) {
+	if ( io1 != 0 && io2 != 0 && stdlib_ndarray_order( x1 ) == stdlib_ndarray_order( x2 ) ) {
 		// Determine the minimum and maximum linear byte indices which are accessible by the array views:
 		mib1 = stdlib_ndarray_offset( x1 ); // byte offset
 		mab1 = mib1;
