@@ -89,7 +89,7 @@
 * }
 *
 * // Create an output ndarray:
-* struct ndarray *y = stdlib_ndarray_allocate( xydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
+* struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
 * if ( y == NULL ) {
 *     fprintf( stderr, "Error allocating memory.\n" );
 *     exit( EXIT_FAILURE );
