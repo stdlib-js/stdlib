@@ -51,7 +51,7 @@ We require a minimal reproduction to save maintainers' time and ultimately to fi
 
 Unfortunately, we are not able to investigate or fix bugs without a minimal reproduction. If a bug report does not include a minimal reproduction, the issue will be automatically closed.
 
-When filing an [issues][stdlib-issues], provide the following, where possible:
+When filing an [issue][stdlib-issues], provide the following, where possible:
 
 -   A description of the issue.
 -   Links to any related issues.
