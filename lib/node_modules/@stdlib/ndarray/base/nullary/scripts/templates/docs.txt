@@ -11,7 +11,7 @@ Applies a nullary callback and assigns results to elements in an output ndarray.
 #include <stdlib.h>
 #include <stdio.h>
 
-// Define the ndarray data types:
+// Define the ndarray data type:
 enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_{{OUTPUT_NDARRAY_DTYPE_UPPER}};
 
 // Create an underlying byte array:
