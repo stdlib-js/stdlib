@@ -49,22 +49,22 @@
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 0;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = {};
 *
 * // Define the strides:
 * int64_t sx[] = { 0 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -135,22 +135,22 @@ int8_t stdlib_ndarray_t_as_b_0d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 1;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 3 };
 *
 * // Define the strides:
 * int64_t sx[] = { 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -218,22 +218,22 @@ int8_t stdlib_ndarray_t_as_b_1d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -301,22 +301,22 @@ int8_t stdlib_ndarray_t_as_b_2d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -384,22 +384,22 @@ int8_t stdlib_ndarray_t_as_b_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 3;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -467,22 +467,22 @@ int8_t stdlib_ndarray_t_as_b_3d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 3;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -550,22 +550,22 @@ int8_t stdlib_ndarray_t_as_b_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 4;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -633,22 +633,22 @@ int8_t stdlib_ndarray_t_as_b_4d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 4;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -716,22 +716,22 @@ int8_t stdlib_ndarray_t_as_b_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 5;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -799,22 +799,22 @@ int8_t stdlib_ndarray_t_as_b_5d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 5;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -882,22 +882,22 @@ int8_t stdlib_ndarray_t_as_b_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 6;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -965,22 +965,22 @@ int8_t stdlib_ndarray_t_as_b_6d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 6;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -1048,22 +1048,22 @@ int8_t stdlib_ndarray_t_as_b_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 7;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -1131,22 +1131,22 @@ int8_t stdlib_ndarray_t_as_b_7d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 7;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -1214,22 +1214,22 @@ int8_t stdlib_ndarray_t_as_b_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 8;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 16, 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -1297,22 +1297,22 @@ int8_t stdlib_ndarray_t_as_b_8d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 8;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 16, 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -1380,22 +1380,22 @@ int8_t stdlib_ndarray_t_as_b_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 9;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 16, 16, 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -1463,22 +1463,22 @@ int8_t stdlib_ndarray_t_as_b_9d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 9;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 16, 16, 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -1546,22 +1546,22 @@ int8_t stdlib_ndarray_t_as_b_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 10;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 16, 16, 16, 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -1629,22 +1629,22 @@ int8_t stdlib_ndarray_t_as_b_10d( struct ndarray *arrays[], void *fcn ) {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 10;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 16, 16, 16, 16, 16, 16, 16, 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -1712,22 +1712,22 @@ int8_t stdlib_ndarray_t_as_b_10d_blocked( struct ndarray *arrays[], void *fcn ) 
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 3;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 2, 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 8, 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:
@@ -1839,22 +1839,22 @@ static const struct ndarrayNullaryDispatchObject obj = {
 * #include <stdlib.h>
 * #include <stdio.h>
 *
-* // Define the ndarray data types:
+* // Define the ndarray data type:
 * enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
 *
-* // Create underlying byte arrays:
+* // Create an underlying byte array:
 * uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
 *
-* // Define the array shapes:
+* // Define the array shape:
 * int64_t shape[] = { 2, 2 };
 *
 * // Define the strides:
 * int64_t sx[] = { 4, 2 };
 *
-* // Define the offsets:
+* // Define the index offset:
 * int64_t ox = 0;
 *
 * // Define the array order:

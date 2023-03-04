@@ -20,7 +20,7 @@ uint8_t xbuf[] = { {{OUTPUT_NDARRAY_BYTES_2D}} };
 // Define the number of dimensions:
 int64_t ndims = 2;
 
-// Define the array shapes:
+// Define the array shape:
 int64_t shape[] = { {{NDARRAY_SHAPE_2D}} };
 
 // Define the strides:
