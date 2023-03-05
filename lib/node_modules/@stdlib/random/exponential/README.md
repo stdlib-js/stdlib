@@ -77,7 +77,7 @@ The function accepts the following `options`:
 
 -   **dtype**: output array data type. Must be a [real-valued floating-point data type][@stdlib/array/typed-real-float-dtypes] or "generic". Default: `'float64'`.
 -   **order**: array order (i.e., memory layout), which is either `row-major` (C-style) or `column-major` (Fortran-style). Default: `'row-major'`.
--   **mode**: specifies how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). Default: `'throw'`.
+-   **mode**: specifies how to handle indices which exceed array dimensions. For a list of supported modes, see [`ndarray`][@stdlib/ndarray/ctor]. Default: `'throw'`.
 -   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions. If provided fewer modes than dimensions, the returned function recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
 -   **readonly**: `boolean` indicating whether an array should be **read-only**. Default: `false`.
 
@@ -153,7 +153,7 @@ The function accepts the following `options`:
 -   **copy**: `boolean` indicating whether to copy a provided pseudorandom number generator state. Setting this option to `false` allows sharing state between two or more pseudorandom number generators. Setting this option to `true` ensures that an underlying generator has exclusive control over its internal state. Default: `true`.
 -   **dtype**: default output array data type. Must be a [real-valued floating-point data type][@stdlib/array/typed-real-float-dtypes] or "generic". Default: `'float64'`.
 -   **order**: default array order (i.e., memory layout), which is either `row-major` (C-style) or `column-major` (Fortran-style). Default: `'row-major'`.
--   **mode**: default specifying how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). Default: `'throw'`.
+-   **mode**: default specifying how to handle indices which exceed array dimensions. For a list of supported modes, see [`ndarray`][@stdlib/ndarray/ctor]. Default: `'throw'`.
 -   **submode**: default specifying for each dimension how to handle subscripts which exceed array dimensions. If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
 -   **readonly**: default indicating whether an array should be **read-only**. Default: `false`.
 
@@ -187,7 +187,7 @@ The returned function accepts the following `options`, each of which overrides t
 
 -   **dtype**: output array data type. Must be a [real-valued floating-point data type][@stdlib/array/typed-real-float-dtypes] or "generic".
 -   **order**: array order (i.e., memory layout), which is either `row-major` (C-style) or `column-major` (Fortran-style).
--   **mode**: specifies how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]).
+-   **mode**: specifies how to handle indices which exceed array dimensions. For a list of supported modes, see [`ndarray`][@stdlib/ndarray/ctor].
 -   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions. If provided fewer modes than dimensions, the returned function recycles modes using modulo arithmetic.
 -   **readonly**: `boolean` indicating whether an array should be **read-only**.
 
