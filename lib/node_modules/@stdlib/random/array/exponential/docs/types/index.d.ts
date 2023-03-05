@@ -136,7 +136,6 @@ interface BinaryFunction extends PRNG {
 	*
 	* @param len - array length
 	* @param lambda - rate parameter
-	* @param sigma - scale parameter
 	* @param options - function options
 	* @returns output array
 	*/
