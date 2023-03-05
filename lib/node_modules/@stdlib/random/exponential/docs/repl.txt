@@ -36,7 +36,7 @@
         array dimensions using modulo arithmetic. If equal to 'clamp', an
         ndarray instance sets a subscript exceeding array dimensions to either
         `0` (minimum index) or the maximum index. If the number of modes is
-        fewer than the number of dimensions, an ndarray instance recycles modes
+        less than the number of dimensions, an ndarray instance recycles modes
         using modulo arithmetic. Default: [ options.mode ].
 
     options.readonly: boolean (optional)
@@ -145,7 +145,7 @@
         subscripts exceeding array dimensions using modulo arithmetic. If equal
         to 'clamp', an ndarray instance sets a subscript exceeding array
         dimensions to either `0` (minimum index) or the maximum index. If the
-        number of modes is fewer than the number of dimensions, an ndarray
+        number of modes is less than the number of dimensions, an ndarray
         instance recycles modes using modulo arithmetic. Default:
         [options.mode].
 
