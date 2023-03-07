@@ -30,10 +30,14 @@ The [median][median] for an [arcsine][arcsine-distribution] random variable is
 
 <!-- <equation class="equation" label="eq:arcsine_median" align="center" raw="\operatorname{Median}\left( X \right) = \frac{1}{2} \cdot ( a + b )" alt="Median for an arcsine distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \frac{1}{2} \cdot ( a + b )" data-equation="eq:arcsine_median">
+```math
+\operatorname{Median}\left( X \right) = \frac{1}{2} \cdot ( a + b )
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \frac{1}{2} \cdot ( a + b )" data-equation="eq:arcsine_median">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/arcsine/median/docs/img/equation_arcsine_median.svg" alt="Median for an arcsine distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

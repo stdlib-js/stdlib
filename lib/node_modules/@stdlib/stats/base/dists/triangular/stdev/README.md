@@ -30,10 +30,14 @@ The [standard deviation][standard-deviation] for a [triangular][triangular-distr
 
 <!-- <equation class="equation" label="eq:triangular_stdev" align="center" raw="\sigma = \sqrt{ \frac{a^{2}+b^{2}+c^{2}-ab-ac-bc}{18} }" alt="Standard deviation for a triangular distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma = \sqrt{ \frac{a^{2}+b^{2}+c^{2}-ab-ac-bc}{18} }" data-equation="eq:triangular_stdev">
+```math
+\sigma = \sqrt{ \frac{a^{2}+b^{2}+c^{2}-ab-ac-bc}{18} }
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma = \sqrt{ \frac{a^{2}+b^{2}+c^{2}-ab-ac-bc}{18} }" data-equation="eq:triangular_stdev">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/triangular/stdev/docs/img/equation_triangular_stdev.svg" alt="Standard deviation for a triangular distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -30,10 +30,14 @@ The [mode][mode] for a [Weibull][weibull-distribution] random variable is
 
 <!-- <equation class="equation" label="eq:weibull_mode" align="center" raw="\operatorname{mode}\left( X \right) = {\displaystyle {\begin{cases}\lambda \left({\frac {k-1}{k}}\right)^{\frac {1}{k}}\,&k>1\\0&k\leq 1\end{cases}}}" alt="Mode for a Weibull distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = {\displaystyle {\begin{cases}\lambda \left({\frac {k-1}{k}}\right)^{\frac {1}{k}}\,&amp;k&gt;1\\0&amp;k\leq 1\end{cases}}}" data-equation="eq:weibull_mode">
+```math
+\operatorname{mode}\left( X \right) = {\displaystyle {\begin{cases}\lambda \left({\frac {k-1}{k}}\right)^{\frac {1}{k}}\,&k>1\\0&k\leq 1\end{cases}}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = {\displaystyle {\begin{cases}\lambda \left({\frac {k-1}{k}}\right)^{\frac {1}{k}}\,&amp;k&gt;1\\0&amp;k\leq 1\end{cases}}}" data-equation="eq:weibull_mode">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/weibull/mode/docs/img/equation_weibull_mode.svg" alt="Mode for a Weibull distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

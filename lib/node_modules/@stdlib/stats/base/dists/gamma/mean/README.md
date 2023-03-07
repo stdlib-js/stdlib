@@ -30,10 +30,14 @@ The [expected value][expected-value] for a [gamma][gamma-distribution] random va
 
 <!-- <equation class="equation" label="eq:gamma_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \frac{\alpha}{\beta}" alt="Expected value for a gamma distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{\alpha}{\beta}" data-equation="eq:gamma_expectation">
+```math
+\mathbb{E}\left[ X \right] = \frac{\alpha}{\beta}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{\alpha}{\beta}" data-equation="eq:gamma_expectation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/gamma/mean/docs/img/equation_gamma_expectation.svg" alt="Expected value for a gamma distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

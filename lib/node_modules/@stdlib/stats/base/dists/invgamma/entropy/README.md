@@ -30,10 +30,14 @@ The [differential entropy][entropy] (in [nats][nats]) for an [inverse gamma][inv
 
 <!-- <equation class="equation" label="eq:invgamma_entropy" align="center" raw="h\left( X \right) = \alpha \!+\!\ln(\beta \, \Gamma (\alpha ))\!-\!(1\!+\!\alpha )\Psi (\alpha )" alt="Differential entropy for an inverse gamma distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = \alpha \!+\!\ln(\beta \, \Gamma (\alpha ))\!-\!(1\!+\!\alpha )\Psi (\alpha )" data-equation="eq:invgamma_entropy">
+```math
+h\left( X \right) = \alpha \!+\!\ln(\beta \, \Gamma (\alpha ))\!-\!(1\!+\!\alpha )\Psi (\alpha )
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = \alpha \!+\!\ln(\beta \, \Gamma (\alpha ))\!-\!(1\!+\!\alpha )\Psi (\alpha )" data-equation="eq:invgamma_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/invgamma/entropy/docs/img/equation_invgamma_entropy.svg" alt="Differential entropy for an inverse gamma distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

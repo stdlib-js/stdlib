@@ -30,10 +30,14 @@ The [entropy][entropy] (in [nats][nats]) for a [Poisson][poisson-distribution] r
 
 <!-- <equation class="equation" label="eq:poisson_entropy" align="center" raw="H\left( X \right) = \lambda [1-\log(\lambda )]+e^{-\lambda }\sum_{k=0}^{\infty }{\frac{\lambda ^{k}\log(k!)}{k!}}" alt="Entropy for a Poisson distribution."> -->
 
-<div class="equation" align="center" data-raw-text="H\left( X \right) = \lambda [1-\log(\lambda )]+e^{-\lambda }\sum_{k=0}^{\infty }{\frac{\lambda ^{k}\log(k!)}{k!}}" data-equation="eq:poisson_entropy">
+```math
+H\left( X \right) = \lambda [1-\log(\lambda )]+e^{-\lambda }\sum_{k=0}^{\infty }{\frac{\lambda ^{k}\log(k!)}{k!}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="H\left( X \right) = \lambda [1-\log(\lambda )]+e^{-\lambda }\sum_{k=0}^{\infty }{\frac{\lambda ^{k}\log(k!)}{k!}}" data-equation="eq:poisson_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/poisson/entropy/docs/img/equation_poisson_entropy.svg" alt="Entropy for a Poisson distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -30,10 +30,14 @@ The [mode][mode] for a [negative-binomial][negative-binomial-distribution] rando
 
 <!-- <equation class="equation" label="eq:negative_binomial_mode" align="center" raw="\operatorname{mode}\left( X \right) = \begin{cases}{\big \lfloor }{\frac{p(r-1)}{1-p}}{\big \rfloor } & \text{ if }\ r>1\\ 0 & \text{ if } \ r\leq 1\end{cases}" alt="Mode for a negative-binomial distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \begin{cases}{\big \lfloor }{\frac{p(r-1)}{1-p}}{\big \rfloor } &amp; \text{ if }\ r&gt;1\\ 0 &amp; \text{ if } \ r\leq 1\end{cases}" data-equation="eq:negative_binomial_mode">
+```math
+\operatorname{mode}\left( X \right) = \begin{cases}{\big \lfloor }{\frac{p(r-1)}{1-p}}{\big \rfloor } & \text{ if }\ r>1\\ 0 & \text{ if } \ r\leq 1\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \begin{cases}{\big \lfloor }{\frac{p(r-1)}{1-p}}{\big \rfloor } &amp; \text{ if }\ r&gt;1\\ 0 &amp; \text{ if } \ r\leq 1\end{cases}" data-equation="eq:negative_binomial_mode">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/negative-binomial/mode/docs/img/equation_negative_binomial_mode.svg" alt="Mode for a negative-binomial distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

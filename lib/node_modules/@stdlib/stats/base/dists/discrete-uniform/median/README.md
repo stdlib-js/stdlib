@@ -30,10 +30,14 @@ The [median][median] for a [discrete uniform][discrete-uniform-distribution] ran
 
 <!-- <equation class="equation" label="eq:discrete_uniform_median" align="center" raw="\operatorname{Median}\left[ X \right] = 0.5 \cdot ( a + b )" alt="Median for a discrete uniform distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Median}\left[ X \right] = 0.5 \cdot ( a + b )" data-equation="eq:discrete_uniform_median">
+```math
+\operatorname{Median}\left[ X \right] = 0.5 \cdot ( a + b )
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left[ X \right] = 0.5 \cdot ( a + b )" data-equation="eq:discrete_uniform_median">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/discrete-uniform/median/docs/img/equation_discrete_uniform_median.svg" alt="Median for a discrete uniform distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

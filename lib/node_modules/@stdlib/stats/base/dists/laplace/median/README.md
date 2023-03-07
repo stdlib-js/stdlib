@@ -30,10 +30,14 @@ The [median][median] for a [Laplace][laplace-distribution] random variable with 
 
 <!-- <equation class="equation" label="eq:laplace_median" align="center" raw="\operatorname{Median}\left( X \right) = \mu" alt="Median for a Laplace distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu" data-equation="eq:laplace_median">
+```math
+\operatorname{Median}\left( X \right) = \mu
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu" data-equation="eq:laplace_median">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/laplace/median/docs/img/equation_laplace_median.svg" alt="Median for a Laplace distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

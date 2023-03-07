@@ -30,10 +30,14 @@ The [variance][variance] for a [Laplace][laplace-distribution] random variable w
 
 <!-- <equation class="equation" label="eq:laplace_variance" align="center" raw="\operatorname{Var}\left( X \right) = 2 b^2" alt="Variance for a Laplace distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = 2 b^2" data-equation="eq:laplace_variance">
+```math
+\operatorname{Var}\left( X \right) = 2 b^2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = 2 b^2" data-equation="eq:laplace_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/laplace/variance/docs/img/equation_laplace_variance.svg" alt="Variance for a Laplace distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

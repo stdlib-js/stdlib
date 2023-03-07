@@ -30,10 +30,14 @@ The [expected value][expected-value] for a [Poisson][poisson-distribution] rando
 
 <!-- <equation class="equation" label="eq:poisson_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \lambda" alt="Expected value for a Poisson distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \lambda" data-equation="eq:poisson_expectation">
+```math
+\mathbb{E}\left[ X \right] = \lambda
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \lambda" data-equation="eq:poisson_expectation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/poisson/mean/docs/img/equation_poisson_expectation.svg" alt="Expected value for a Poisson distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

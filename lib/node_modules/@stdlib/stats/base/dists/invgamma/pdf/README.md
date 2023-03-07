@@ -28,10 +28,14 @@ The [probability density function][pdf] (PDF) for an [inverse gamma][inverse-gam
 
 <!-- <equation class="equation" label="eq:invgamma_pdf" align="center" raw="{\displaystyle f(x;\alpha ,\beta )={\frac {\beta ^{\alpha }}{\Gamma (\alpha )}}x^{-\alpha -1}\exp \left(-{\frac {\beta }{x}}\right)}" alt="Probability density function (PDF) for an inverse gamma distribution."> -->
 
-<div class="equation" align="center" data-raw-text="{\displaystyle f(x;\alpha ,\beta )={\frac {\beta ^{\alpha }}{\Gamma (\alpha )}}x^{-\alpha -1}\exp \left(-{\frac {\beta }{x}}\right)}" data-equation="eq:invgamma_pdf">
+```math
+{\displaystyle f(x;\alpha ,\beta )={\frac {\beta ^{\alpha }}{\Gamma (\alpha )}}x^{-\alpha -1}\exp \left(-{\frac {\beta }{x}}\right)}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="{\displaystyle f(x;\alpha ,\beta )={\frac {\beta ^{\alpha }}{\Gamma (\alpha )}}x^{-\alpha -1}\exp \left(-{\frac {\beta }{x}}\right)}" data-equation="eq:invgamma_pdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/invgamma/pdf/docs/img/equation_invgamma_pdf.svg" alt="Probability density function (PDF) for an inverse gamma distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

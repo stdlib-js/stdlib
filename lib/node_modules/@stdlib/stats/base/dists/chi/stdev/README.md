@@ -30,10 +30,14 @@ The [standard deviation][stdev] for a [chi][chi-distribution] random variable is
 
 <!-- <equation class="equation" label="eq:chi_stdev" align="center" raw="\sigma = \sqrt{ k - \mathbb{E}\left[ X \right]^2 }" alt="Standard deviation for a chi distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma = \sqrt{ k - \mathbb{E}\left[ X \right]^2 }" data-equation="eq:chi_stdev">
+```math
+\sigma = \sqrt{ k - \mathbb{E}\left[ X \right]^2 }
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma = \sqrt{ k - \mathbb{E}\left[ X \right]^2 }" data-equation="eq:chi_stdev">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/chi/stdev/docs/img/equation_chi_stdev.svg" alt="Standard deviation for a chi distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

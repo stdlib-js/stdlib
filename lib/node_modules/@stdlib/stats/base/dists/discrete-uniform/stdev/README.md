@@ -30,10 +30,14 @@ The [standard deviation][standard-deviation] for a [discrete uniform][discrete-u
 
 <!-- <equation class="equation" label="eq:discrete_uniform_standard_deviation" align="center" raw="\operatorname{SD}\left( X \right) = \sqrt{ \frac{\left( b - a + 1 \right)^2 - 1}{12} }" alt="Standard deviation for a discrete uniform distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{SD}\left( X \right) = \sqrt{ \frac{\left( b - a + 1 \right)^2 - 1}{12} }" data-equation="eq:discrete_uniform_standard_deviation">
+```math
+\operatorname{SD}\left( X \right) = \sqrt{ \frac{\left( b - a + 1 \right)^2 - 1}{12} }
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{SD}\left( X \right) = \sqrt{ \frac{\left( b - a + 1 \right)^2 - 1}{12} }" data-equation="eq:discrete_uniform_standard_deviation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/discrete-uniform/stdev/docs/img/equation_discrete_uniform_standard_deviation.svg" alt="Standard deviation for a discrete uniform distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

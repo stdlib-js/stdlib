@@ -30,10 +30,14 @@ The [mode][mode] for a [logistic][logistic-distribution] random variable with lo
 
 <!-- <equation class="equation" label="eq:logistic_mode" align="center" raw="\operatorname{mode}\left( X \right) = \mu" alt="Mode for a logistic distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \mu" data-equation="eq:logistic_mode">
+```math
+\operatorname{mode}\left( X \right) = \mu
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \mu" data-equation="eq:logistic_mode">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/logistic/mode/docs/img/equation_logistic_mode.svg" alt="Mode for a logistic distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

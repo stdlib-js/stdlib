@@ -30,10 +30,14 @@ Imagine a scenario with a population of size `N`, of which a subpopulation of si
 
 <!-- <equation class="equation" label="eq:hypergeometric_variance" align="center" raw="\operatorname{Var}\left( X \right) = n{K \over N}{(N-K) \over N}{N-n \over N-1}" alt="Variance for a hypergeometric distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = n{K \over N}{(N-K) \over N}{N-n \over N-1}" data-equation="eq:hypergeometric_variance">
+```math
+\operatorname{Var}\left( X \right) = n{K \over N}{(N-K) \over N}{N-n \over N-1}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = n{K \over N}{(N-K) \over N}{N-n \over N-1}" data-equation="eq:hypergeometric_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/hypergeometric/variance/docs/img/equation_hypergeometric_variance.svg" alt="Variance for a hypergeometric distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

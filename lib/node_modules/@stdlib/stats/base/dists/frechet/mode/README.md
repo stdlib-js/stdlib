@@ -30,10 +30,14 @@ The [mode][mode] for a [Fréchet][frechet-distribution] random variable shape `�
 
 <!-- <equation class="equation" label="eq:frechet_mode" align="center" raw="\operatorname{mode} = m+s\left({\frac{\alpha}{1+\alpha }}\right)^{{1/\alpha }}" alt="Mode for a Fréchet distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{mode} = m+s\left({\frac{\alpha}{1+\alpha }}\right)^{{1/\alpha }}" data-equation="eq:frechet_mode">
+```math
+\operatorname{mode} = m+s\left({\frac{\alpha}{1+\alpha }}\right)^{{1/\alpha }}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{mode} = m+s\left({\frac{\alpha}{1+\alpha }}\right)^{{1/\alpha }}" data-equation="eq:frechet_mode">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/frechet/mode/docs/img/equation_frechet_mode.svg" alt="Mode for a Fréchet distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

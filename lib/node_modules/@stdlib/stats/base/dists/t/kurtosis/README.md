@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for a [Student's t][t-distribution] random varia
 
 <!-- <equation class="equation" label="eq:t_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \begin{cases} \frac{6}{\nu-4} & \text{ for } \nu > 2 \\ \infty & \text{ for } 2 < \nu \le 4 \end{cases}" alt="Excess kurtosis for a Student's t distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \begin{cases} \frac{6}{\nu-4} &amp; \text{ for } \nu &gt; 2 \\ \infty &amp; \text{ for } 2 &lt; \nu \le 4 \end{cases}" data-equation="eq:t_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = \begin{cases} \frac{6}{\nu-4} & \text{ for } \nu > 2 \\ \infty & \text{ for } 2 < \nu \le 4 \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \begin{cases} \frac{6}{\nu-4} &amp; \text{ for } \nu &gt; 2 \\ \infty &amp; \text{ for } 2 &lt; \nu \le 4 \end{cases}" data-equation="eq:t_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/t/kurtosis/docs/img/equation_t_kurtosis.svg" alt="Excess kurtosis for a Student's t distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

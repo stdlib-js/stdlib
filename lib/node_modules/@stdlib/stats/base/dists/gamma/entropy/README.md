@@ -30,10 +30,14 @@ The [differential entropy][entropy] (in [nats][nats]) for a [gamma][gamma-distri
 
 <!-- <equation class="equation" label="eq:gamma_entropy" align="center" raw="h\left( X \right) = \alpha \,-\, \ln \beta \,+\, \ln[\Gamma(\alpha)] \,+\, (1 \,-\, \alpha)\psi(\alpha)" alt="Differential entropy for a gamma distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = \alpha \,-\, \ln \beta \,+\, \ln[\Gamma(\alpha)] \,+\, (1 \,-\, \alpha)\psi(\alpha)" data-equation="eq:gamma_entropy">
+```math
+h\left( X \right) = \alpha \,-\, \ln \beta \,+\, \ln[\Gamma(\alpha)] \,+\, (1 \,-\, \alpha)\psi(\alpha)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = \alpha \,-\, \ln \beta \,+\, \ln[\Gamma(\alpha)] \,+\, (1 \,-\, \alpha)\psi(\alpha)" data-equation="eq:gamma_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/gamma/entropy/docs/img/equation_gamma_entropy.svg" alt="Differential entropy for a gamma distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

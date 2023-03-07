@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for an [exponential][exponential-distribution] r
 
 <!-- <equation class="equation" label="eq:exponential_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 6" alt="Excess kurtosis for an exponential distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 6" data-equation="eq:exponential_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = 6
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 6" data-equation="eq:exponential_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/exponential/kurtosis/docs/img/equation_exponential_kurtosis.svg" alt="Excess kurtosis for an exponential distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -30,10 +30,14 @@ The [entropy][entropy] (in [nats][nats]) for a [degenerate][degenerate-distribut
 
 <!-- <equation class="equation" label="eq:degenerate_entropy" align="center" raw="H\left( X \right) = 0" alt="Entropy for a degenerate distribution."> -->
 
-<div class="equation" align="center" data-raw-text="H\left( X \right) = 0" data-equation="eq:degenerate_entropy">
+```math
+H\left( X \right) = 0
+```
+
+<!-- <div class="equation" align="center" data-raw-text="H\left( X \right) = 0" data-equation="eq:degenerate_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e1fbdee688c5409e4cc6b0cd06d90b1cd2abd67c/lib/node_modules/@stdlib/stats/base/dists/degenerate/entropy/docs/img/equation_degenerate_entropy.svg" alt="Entropy for a degenerate distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

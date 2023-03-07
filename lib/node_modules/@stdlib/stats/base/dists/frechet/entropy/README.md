@@ -30,10 +30,14 @@ The [differential entropy][entropy] for a [Fréchet][frechet-distribution] rando
 
 <!-- <equation class="equation" label="eq:frechet_entropy" align="center" raw="h\left( X \right) = 1+{\frac{\gamma }{\alpha }}+\gamma +\ln \left({\frac{s}{\alpha }}\right)" alt="Differential entropy for a Fréchet distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = 1+{\frac{\gamma }{\alpha }}+\gamma +\ln \left({\frac{s}{\alpha }}\right)" data-equation="eq:frechet_entropy">
+```math
+h\left( X \right) = 1+{\frac{\gamma }{\alpha }}+\gamma +\ln \left({\frac{s}{\alpha }}\right)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = 1+{\frac{\gamma }{\alpha }}+\gamma +\ln \left({\frac{s}{\alpha }}\right)" data-equation="eq:frechet_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/frechet/entropy/docs/img/equation_frechet_entropy.svg" alt="Differential entropy for a Fréchet distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

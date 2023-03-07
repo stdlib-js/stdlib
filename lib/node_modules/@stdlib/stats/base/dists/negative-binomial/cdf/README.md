@@ -28,10 +28,14 @@ The [cumulative distribution function][cdf] for a [negative binomial][negative-b
 
 <!-- <equation class="equation" label="eq:negative_binomial_cdf" align="center" raw="F(x;r,p)=1-I_p(x+1,r)" alt="Cumulative distribution function for a negative binomial distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x;r,p)=1-I_p(x+1,r)" data-equation="eq:negative_binomial_cdf">
+```math
+F(x;r,p)=1-I_p(x+1,r)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x;r,p)=1-I_p(x+1,r)" data-equation="eq:negative_binomial_cdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/negative-binomial/cdf/docs/img/equation_negative_binomial_cdf.svg" alt="Cumulative distribution function for a negative binomial distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

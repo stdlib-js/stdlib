@@ -30,10 +30,14 @@ The [skewness][skewness] for a [Fréchet][frechet-distribution] random variable 
 
 <!-- <equation class="equation" label="eq:frechet_skewness" align="center" raw="\operatorname{skew} = \begin{cases} {\frac{\Gamma \left(1-{\frac{3}{\alpha }}\right)-3\Gamma \left(1-{\frac{2}{\alpha }}\right)\Gamma \left(1-{\frac{1}{\alpha }}\right)+2\Gamma^{3}\left(1-{\frac{1}{\alpha }}\right)}{{\sqrt{\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\Gamma^{2}\left(1-{\frac{1}{\alpha }}\right)\right)^{3}}}}} & \text{ for }\alpha > 3\\\ \infty & \text{ otherwise }\end{cases}" alt="Skewness for a Fréchet distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{skew} = \begin{cases} {\frac{\Gamma \left(1-{\frac{3}{\alpha }}\right)-3\Gamma \left(1-{\frac{2}{\alpha }}\right)\Gamma \left(1-{\frac{1}{\alpha }}\right)+2\Gamma^{3}\left(1-{\frac{1}{\alpha }}\right)}{{\sqrt{\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\Gamma^{2}\left(1-{\frac{1}{\alpha }}\right)\right)^{3}}}}} &amp; \text{ for }\alpha &gt; 3\\\ \infty &amp; \text{ otherwise }\end{cases}" data-equation="eq:frechet_skewness">
+```math
+\operatorname{skew} = \begin{cases} {\frac{\Gamma \left(1-{\frac{3}{\alpha }}\right)-3\Gamma \left(1-{\frac{2}{\alpha }}\right)\Gamma \left(1-{\frac{1}{\alpha }}\right)+2\Gamma^{3}\left(1-{\frac{1}{\alpha }}\right)}{{\sqrt{\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\Gamma^{2}\left(1-{\frac{1}{\alpha }}\right)\right)^{3}}}}} & \text{ for }\alpha > 3\\\ \infty & \text{ otherwise }\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{skew} = \begin{cases} {\frac{\Gamma \left(1-{\frac{3}{\alpha }}\right)-3\Gamma \left(1-{\frac{2}{\alpha }}\right)\Gamma \left(1-{\frac{1}{\alpha }}\right)+2\Gamma^{3}\left(1-{\frac{1}{\alpha }}\right)}{{\sqrt{\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\Gamma^{2}\left(1-{\frac{1}{\alpha }}\right)\right)^{3}}}}} &amp; \text{ for }\alpha &gt; 3\\\ \infty &amp; \text{ otherwise }\end{cases}" data-equation="eq:frechet_skewness">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/frechet/skewness/docs/img/equation_frechet_skewness.svg" alt="Skewness for a Fréchet distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

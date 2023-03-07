@@ -30,10 +30,14 @@ The [differential entropy][entropy] (in [nats][nats]) for a [normal][normal-dist
 
 <!-- <equation class="equation" label="eq:normal_entropy" align="center" raw="h\left( X \right) = \tfrac{1}{2}\ln(2\pi \,e\,\sigma ^{2})" alt="Differential entropy for a normal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = \tfrac{1}{2}\ln(2\pi \,e\,\sigma ^{2})" data-equation="eq:normal_entropy">
+```math
+h\left( X \right) = \tfrac{1}{2}\ln(2\pi \,e\,\sigma ^{2})
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = \tfrac{1}{2}\ln(2\pi \,e\,\sigma ^{2})" data-equation="eq:normal_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/normal/entropy/docs/img/equation_normal_entropy.svg" alt="Differential entropy for a normal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

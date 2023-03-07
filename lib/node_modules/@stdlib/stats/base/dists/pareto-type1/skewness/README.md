@@ -30,10 +30,14 @@ The [skewness][skewness] for a [Pareto (Type I)][pareto-distribution] random var
 
 <!-- <equation class="equation" label="eq:pareto_type1_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{2(1+\alpha)}{\alpha-3}\,\sqrt{\frac{\alpha-2}{\alpha}}" alt="Skewness for a Pareto (Type I) distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{2(1+\alpha)}{\alpha-3}\,\sqrt{\frac{\alpha-2}{\alpha}}" data-equation="eq:pareto_type1_skewness">
+```math
+\operatorname{skew}\left( X \right) = \frac{2(1+\alpha)}{\alpha-3}\,\sqrt{\frac{\alpha-2}{\alpha}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{2(1+\alpha)}{\alpha-3}\,\sqrt{\frac{\alpha-2}{\alpha}}" data-equation="eq:pareto_type1_skewness">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/pareto-type1/skewness/docs/img/equation_pareto_type1_skewness.svg" alt="Skewness for a Pareto (Type I) distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

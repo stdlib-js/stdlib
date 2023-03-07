@@ -30,10 +30,14 @@ The [median][median] for a [triangular][triangular-distribution] random variable
 
 <!-- <equation class="equation" label="eq:triangular_median" align="center" raw="\operatorname{Median}\left( X \right) = \begin{cases}a+{\sqrt {\frac {(b-a)(c-a)}{2}}}&{\text{ for }}c\geq {\frac {a+b}{2}}\\[6pt]b-{\sqrt {\frac {(b-a)(b-c)}{2}}}&{\text{ for }}c\leq {\frac{a+b}{2}}\end{cases}" alt="Median for a triangular distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \begin{cases}a+{\sqrt {\frac {(b-a)(c-a)}{2}}}&amp;{\text{ for }}c\geq {\frac {a+b}{2}}\\[6pt]b-{\sqrt {\frac {(b-a)(b-c)}{2}}}&amp;{\text{ for }}c\leq {\frac{a+b}{2}}\end{cases}" data-equation="eq:triangular_median">
+```math
+\operatorname{Median}\left( X \right) = \begin{cases}a+{\sqrt {\frac {(b-a)(c-a)}{2}}}&{\text{ for }}c\geq {\frac {a+b}{2}}\\[6pt]b-{\sqrt {\frac {(b-a)(b-c)}{2}}}&{\text{ for }}c\leq {\frac{a+b}{2}}\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \begin{cases}a+{\sqrt {\frac {(b-a)(c-a)}{2}}}&amp;{\text{ for }}c\geq {\frac {a+b}{2}}\\[6pt]b-{\sqrt {\frac {(b-a)(b-c)}{2}}}&amp;{\text{ for }}c\leq {\frac{a+b}{2}}\end{cases}" data-equation="eq:triangular_median">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/triangular/median/docs/img/equation_triangular_median.svg" alt="Median for a triangular distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

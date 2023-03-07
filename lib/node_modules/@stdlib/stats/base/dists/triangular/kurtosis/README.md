@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for a [triangular][triangular-distribution] rand
 
 <!-- <equation class="equation" label="eq:triangular_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = -\frac{3}{5}" alt="Excess kurtosis for a triangular distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = -\frac{3}{5}" data-equation="eq:triangular_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = -\frac{3}{5}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = -\frac{3}{5}" data-equation="eq:triangular_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@556e0ebc42f54244079cecc91c0883bb6c442244/lib/node_modules/@stdlib/stats/base/dists/triangular/kurtosis/docs/img/equation_triangular_kurtosis.svg" alt="Excess kurtosis for a triangular distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

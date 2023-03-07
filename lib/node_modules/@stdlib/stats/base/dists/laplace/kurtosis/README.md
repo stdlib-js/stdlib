@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for a [Laplace][laplace-distribution] random var
 
 <!-- <equation class="equation" label="eq:laplace_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 3" alt="Excess kurtosis for a Laplace distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 3" data-equation="eq:laplace_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = 3
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 3" data-equation="eq:laplace_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/laplace/kurtosis/docs/img/equation_laplace_kurtosis.svg" alt="Excess kurtosis for a Laplace distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

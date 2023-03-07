@@ -29,10 +29,14 @@ The [probability density function][pdf] (PDF) for a [truncated normal][truncated
 
 <!-- <equation class="equation" label="eq:truncated_normal_pdf" align="center" raw="f(x;\mu,\sigma,a,b) =  \begin{cases} \frac{\frac{1}{\sigma}\phi(\frac{x - \mu}{\sigma})}{\Phi(\frac{b - \mu}{\sigma}) - \Phi(\frac{a - \mu}{\sigma}) } & \text{ if } a < x < b \\ 0 & \text{ otherwise } \end{cases}" alt="Probability density function (PDF) for a truncated normal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="f(x;\mu,\sigma,a,b) =  \begin{cases} \frac{\frac{1}{\sigma}\phi(\frac{x - \mu}{\sigma})}{\Phi(\frac{b - \mu}{\sigma}) - \Phi(\frac{a - \mu}{\sigma}) } &amp; \text{ if } a &lt; x &lt; b \\ 0 &amp; \text{ otherwise } \end{cases}" data-equation="eq:truncated_normal_pdf">
+```math
+f(x;\mu,\sigma,a,b) =  \begin{cases} \frac{\frac{1}{\sigma}\phi(\frac{x - \mu}{\sigma})}{\Phi(\frac{b - \mu}{\sigma}) - \Phi(\frac{a - \mu}{\sigma}) } & \text{ if } a < x < b \\ 0 & \text{ otherwise } \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(x;\mu,\sigma,a,b) =  \begin{cases} \frac{\frac{1}{\sigma}\phi(\frac{x - \mu}{\sigma})}{\Phi(\frac{b - \mu}{\sigma}) - \Phi(\frac{a - \mu}{\sigma}) } &amp; \text{ if } a &lt; x &lt; b \\ 0 &amp; \text{ otherwise } \end{cases}" data-equation="eq:truncated_normal_pdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/truncated-normal/pdf/docs/img/equation_truncated_normal_pdf.svg" alt="Probability density function (PDF) for a truncated normal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

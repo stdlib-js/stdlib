@@ -30,10 +30,14 @@ Imagine a scenario with a population of size `N`, of which a subpopulation of si
 
 <!-- <equation class="equation" label="eq:hypergeometric_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{(N-1) N^{2} \left[ N(N+1)-6K(N-K)-6n(N-n) \right]+6nK(N-K)(N-n)(5N-6)}{nK(N-K)(N-n)(N-2)(N-3)}" alt="Excess kurtosis for a hypergeometric distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{(N-1) N^{2} \left[ N(N+1)-6K(N-K)-6n(N-n) \right]+6nK(N-K)(N-n)(5N-6)}{nK(N-K)(N-n)(N-2)(N-3)}" data-equation="eq:hypergeometric_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = \frac{(N-1) N^{2} \left[ N(N+1)-6K(N-K)-6n(N-n) \right]+6nK(N-K)(N-n)(5N-6)}{nK(N-K)(N-n)(N-2)(N-3)}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{(N-1) N^{2} \left[ N(N+1)-6K(N-K)-6n(N-n) \right]+6nK(N-K)(N-n)(5N-6)}{nK(N-K)(N-n)(N-2)(N-3)}" data-equation="eq:hypergeometric_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/hypergeometric/kurtosis/docs/img/equation_hypergeometric_kurtosis.svg" alt="Excess kurtosis for a hypergeometric distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

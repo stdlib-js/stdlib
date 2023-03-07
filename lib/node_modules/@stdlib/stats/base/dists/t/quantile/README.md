@@ -28,10 +28,14 @@ The [quantile function][quantile-function] for a [Student's t][t-distribution] r
 
 <!-- <equation class="equation" label="eq:t_quantile_function" align="center" raw="Q(p;\nu)\,=\,\inf\left\{ x\in \mathbb{R} : p \le F(x;\nu) \right\}" alt="Quantile function for a Student's t distribution."> -->
 
-<div class="equation" align="center" data-raw-text="Q(p;\nu)\,=\,\inf\left\{ x\in \mathbb{R} : p \le F(x;\nu) \right\}" data-equation="eq:t_quantile_function">
+```math
+Q(p;\nu)\,=\,\inf\left\{ x\in \mathbb{R} : p \le F(x;\nu) \right\}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="Q(p;\nu)\,=\,\inf\left\{ x\in \mathbb{R} : p \le F(x;\nu) \right\}" data-equation="eq:t_quantile_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/t/quantile/docs/img/equation_t_quantile_function.svg" alt="Quantile function for a Student's t distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

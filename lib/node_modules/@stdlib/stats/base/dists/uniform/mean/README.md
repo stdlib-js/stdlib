@@ -30,10 +30,14 @@ The [expected value][expected-value] for a [uniform][uniform-distribution] rando
 
 <!-- <equation class="equation" label="eq:uniform_expectation" align="center" raw="\mathbb{E}\left[ X \right] = 0.5 \cdot ( a + b )" alt="Expected value for a uniform distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = 0.5 \cdot ( a + b )" data-equation="eq:uniform_expectation">
+```math
+\mathbb{E}\left[ X \right] = 0.5 \cdot ( a + b )
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = 0.5 \cdot ( a + b )" data-equation="eq:uniform_expectation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/uniform/mean/docs/img/equation_uniform_expectation.svg" alt="Expected value for a uniform distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

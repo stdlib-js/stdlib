@@ -28,10 +28,14 @@ The [quantile function][quantile-function] for a [degenerate][degenerate-distrib
 
 <!-- <equation class="equation" label="eq:degenerate_quantile_function" align="center" raw="Q(p;\mu) = \inf \left\{x \in {\mathbb {R}}:p \leq F(x;\mu)\right\} = \mu" alt="Quantile function for a degenerate distribution."> -->
 
-<div class="equation" align="center" data-raw-text="Q(p;\mu) = \inf \left\{x \in {\mathbb {R}}:p \leq F(x;\mu)\right\} = \mu" data-equation="eq:degenerate_quantile_function">
+```math
+Q(p;\mu) = \inf \left\{x \in {\mathbb {R}}:p \leq F(x;\mu)\right\} = \mu
+```
+
+<!-- <div class="equation" align="center" data-raw-text="Q(p;\mu) = \inf \left\{x \in {\mathbb {R}}:p \leq F(x;\mu)\right\} = \mu" data-equation="eq:degenerate_quantile_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e1fbdee688c5409e4cc6b0cd06d90b1cd2abd67c/lib/node_modules/@stdlib/stats/base/dists/degenerate/quantile/docs/img/equation_degenerate_quantile_function.svg" alt="Quantile function for a degenerate distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

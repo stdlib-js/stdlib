@@ -30,10 +30,14 @@ The [moment-generating function][mgf] for a [logistic][logistic-distribution] ra
 
 <!-- <equation class="equation" label="eq:logistic_mgf_function" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = e^{\mu t}\operatorname{B}(1-st, 1+st)" alt="Moment-generating function (MGF) for a logistic distribution."> -->
 
-<div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = e^{\mu t}\operatorname{B}(1-st, 1+st)" data-equation="eq:logistic_mgf_function">
+```math
+M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = e^{\mu t}\operatorname{B}(1-st, 1+st)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = e^{\mu t}\operatorname{B}(1-st, 1+st)" data-equation="eq:logistic_mgf_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/logistic/mgf/docs/img/equation_logistic_mgf_function.svg" alt="Moment-generating function (MGF) for a logistic distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

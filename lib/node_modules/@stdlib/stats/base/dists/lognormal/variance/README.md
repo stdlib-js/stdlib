@@ -30,10 +30,14 @@ The [variance][variance] for a [lognormal][lognormal-distribution] random variab
 
 <!-- <equation class="equation" label="eq:lognormal_variance" align="center" raw="\operatorname{Var}\left( X \right) = [\exp({\sigma^{2}})-1] \cdot \exp({2\mu +\sigma^{2}})" alt="Variance for a lognormal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = [\exp({\sigma^{2}})-1] \cdot \exp({2\mu +\sigma^{2}})" data-equation="eq:lognormal_variance">
+```math
+\operatorname{Var}\left( X \right) = [\exp({\sigma^{2}})-1] \cdot \exp({2\mu +\sigma^{2}})
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = [\exp({\sigma^{2}})-1] \cdot \exp({2\mu +\sigma^{2}})" data-equation="eq:lognormal_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/lognormal/variance/docs/img/equation_lognormal_variance.svg" alt="Variance for a lognormal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -30,10 +30,14 @@ The [mode][mode] for a [Poisson][poisson-distribution] random variable is
 
 <!-- <equation class="equation" label="eq:poisson_mode" align="center" raw="\operatorname{mode}\left( X \right) = \lfloor \lambda \rfloor" alt="Mode for a Poisson distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \lfloor \lambda \rfloor" data-equation="eq:poisson_mode">
+```math
+\operatorname{mode}\left( X \right) = \lfloor \lambda \rfloor
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \lfloor \lambda \rfloor" data-equation="eq:poisson_mode">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/poisson/mode/docs/img/equation_poisson_mode.svg" alt="Mode for a Poisson distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

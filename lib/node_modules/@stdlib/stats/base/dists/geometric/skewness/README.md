@@ -30,10 +30,14 @@ The [skewness][skewness] for a [geometric][geometric-distribution] random variab
 
 <!-- <equation class="equation" label="eq:geometric_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{2-p}{\sqrt{1-p}}" alt="Skewness for a geometric distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{2-p}{\sqrt{1-p}}" data-equation="eq:geometric_skewness">
+```math
+\operatorname{skew}\left( X \right) = \frac{2-p}{\sqrt{1-p}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{2-p}{\sqrt{1-p}}" data-equation="eq:geometric_skewness">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/geometric/skewness/docs/img/equation_geometric_skewness.svg" alt="Skewness for a geometric distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

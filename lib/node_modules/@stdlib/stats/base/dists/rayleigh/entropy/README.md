@@ -30,10 +30,14 @@ The [differential entropy][entropy] (in [nats][nats]) for a [Rayleigh][rayleigh-
 
 <!-- <equation class="equation" label="eq:rayleigh_entropy" align="center" raw="h\left( X \right) = 1+\ln \left({\frac {\sigma }{\sqrt {2}}}\right)+{\frac {\gamma }{2}}" alt="Differential entropy for a Rayleigh distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = 1+\ln \left({\frac {\sigma }{\sqrt {2}}}\right)+{\frac {\gamma }{2}}" data-equation="eq:rayleigh_entropy">
+```math
+h\left( X \right) = 1+\ln \left({\frac {\sigma }{\sqrt {2}}}\right)+{\frac {\gamma }{2}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = 1+\ln \left({\frac {\sigma }{\sqrt {2}}}\right)+{\frac {\gamma }{2}}" data-equation="eq:rayleigh_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/rayleigh/entropy/docs/img/equation_rayleigh_entropy.svg" alt="Differential entropy for a Rayleigh distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

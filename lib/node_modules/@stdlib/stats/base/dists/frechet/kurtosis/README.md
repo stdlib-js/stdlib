@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for a [Fréchet][frechet-distribution] random va
 
 <!-- <equation class="equation" label="eq:frechet_kurtosis" align="center" raw="\operatorname{Kurt} = \begin{cases} -6+{\frac{\Gamma \left(1-{\frac{4}{\alpha }}\right)-4\Gamma \left(1-{\frac{3}{\alpha }}\right)\Gamma \left(1-{\frac{1}{\alpha }}\right)+3\Gamma^{2}\left(1-{\frac{2}{\alpha }}\right)}{\left[\Gamma \left(1-{\frac{2}{\alpha }}\right)-\Gamma^{2}\left(1-{\frac{1}{\alpha }}\right)\right]^{2}}} & {\text{ for }}\alpha >4\\\ \infty & \text{ otherwise }\end{cases}" alt="Kurtosis for a Fréchet distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt} = \begin{cases} -6+{\frac{\Gamma \left(1-{\frac{4}{\alpha }}\right)-4\Gamma \left(1-{\frac{3}{\alpha }}\right)\Gamma \left(1-{\frac{1}{\alpha }}\right)+3\Gamma^{2}\left(1-{\frac{2}{\alpha }}\right)}{\left[\Gamma \left(1-{\frac{2}{\alpha }}\right)-\Gamma^{2}\left(1-{\frac{1}{\alpha }}\right)\right]^{2}}} &amp; {\text{ for }}\alpha &gt;4\\\ \infty &amp; \text{ otherwise }\end{cases}" data-equation="eq:frechet_kurtosis">
+```math
+\operatorname{Kurt} = \begin{cases} -6+{\frac{\Gamma \left(1-{\frac{4}{\alpha }}\right)-4\Gamma \left(1-{\frac{3}{\alpha }}\right)\Gamma \left(1-{\frac{1}{\alpha }}\right)+3\Gamma^{2}\left(1-{\frac{2}{\alpha }}\right)}{\left[\Gamma \left(1-{\frac{2}{\alpha }}\right)-\Gamma^{2}\left(1-{\frac{1}{\alpha }}\right)\right]^{2}}} & {\text{ for }}\alpha >4\\\ \infty & \text{ otherwise }\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt} = \begin{cases} -6+{\frac{\Gamma \left(1-{\frac{4}{\alpha }}\right)-4\Gamma \left(1-{\frac{3}{\alpha }}\right)\Gamma \left(1-{\frac{1}{\alpha }}\right)+3\Gamma^{2}\left(1-{\frac{2}{\alpha }}\right)}{\left[\Gamma \left(1-{\frac{2}{\alpha }}\right)-\Gamma^{2}\left(1-{\frac{1}{\alpha }}\right)\right]^{2}}} &amp; {\text{ for }}\alpha &gt;4\\\ \infty &amp; \text{ otherwise }\end{cases}" data-equation="eq:frechet_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/frechet/kurtosis/docs/img/equation_frechet_kurtosis.svg" alt="Kurtosis for a Fréchet distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

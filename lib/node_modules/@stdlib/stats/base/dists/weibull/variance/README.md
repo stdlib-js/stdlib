@@ -30,10 +30,14 @@ The [variance][variance] for a [Weibull][weibull-distribution] random variable i
 
 <!-- <equation class="equation" label="eq:weibull_variance" align="center" raw="\operatorname{Var}\left( X \right) = \lambda^2\left[\Gamma\left(1+\frac{2}{k}\right) - \left(\Gamma\left(1+\frac{1}{k}\right)\right)^2\right]" alt="Variance for a Weibull distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \lambda^2\left[\Gamma\left(1+\frac{2}{k}\right) - \left(\Gamma\left(1+\frac{1}{k}\right)\right)^2\right]" data-equation="eq:weibull_variance">
+```math
+\operatorname{Var}\left( X \right) = \lambda^2\left[\Gamma\left(1+\frac{2}{k}\right) - \left(\Gamma\left(1+\frac{1}{k}\right)\right)^2\right]
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \lambda^2\left[\Gamma\left(1+\frac{2}{k}\right) - \left(\Gamma\left(1+\frac{1}{k}\right)\right)^2\right]" data-equation="eq:weibull_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/weibull/variance/docs/img/equation_weibull_variance.svg" alt="Variance for a Weibull distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

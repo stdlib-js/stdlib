@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for a [beta prime][betaprime-distribution] rando
 
 <!-- <equation class="equation" label="eq:betaprime_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 6{\frac{\alpha (\alpha +\beta -1)(5\beta -11)+(\beta -1)^{2}(\beta -2)}{\alpha (\alpha +\beta -1)(\beta -3)(\beta -4)}}" alt="Kurtosis for a beta prime distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 6{\frac{\alpha (\alpha +\beta -1)(5\beta -11)+(\beta -1)^{2}(\beta -2)}{\alpha (\alpha +\beta -1)(\beta -3)(\beta -4)}}" data-equation="eq:betaprime_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = 6{\frac{\alpha (\alpha +\beta -1)(5\beta -11)+(\beta -1)^{2}(\beta -2)}{\alpha (\alpha +\beta -1)(\beta -3)(\beta -4)}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 6{\frac{\alpha (\alpha +\beta -1)(5\beta -11)+(\beta -1)^{2}(\beta -2)}{\alpha (\alpha +\beta -1)(\beta -3)(\beta -4)}}" data-equation="eq:betaprime_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/betaprime/kurtosis/docs/img/equation_betaprime_kurtosis.svg" alt="Kurtosis for a beta prime distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

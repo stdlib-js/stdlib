@@ -30,10 +30,14 @@ The [mode][mode] for a [lognormal][lognormal-distribution] random variable is
 
 <!-- <equation class="equation" label="eq:lognormal_mode" align="center" raw="\operatorname{mode}\left( X \right) = \exp({\mu -\sigma^{2}})" alt="Mode for a lognormal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \exp({\mu -\sigma^{2}})" data-equation="eq:lognormal_mode">
+```math
+\operatorname{mode}\left( X \right) = \exp({\mu -\sigma^{2}})
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \exp({\mu -\sigma^{2}})" data-equation="eq:lognormal_mode">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/lognormal/mode/docs/img/equation_lognormal_mode.svg" alt="Mode for a lognormal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -30,10 +30,14 @@ The [mean][mean] for a [Kumaraswamy's double bounded][kumaraswamy-distribution] 
 
 <!-- <equation class="equation" label="eq:kumaraswamy_mean" align="center" raw="\mathbb{E} \left[ X \right] = {b\Gamma(1+{\tfrac {1}{a}})\Gamma(b)}{\Gamma(1+{\tfrac{1}{a}}+b)}" alt="Mean for a Kumaraswamy's double bounded distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbb{E} \left[ X \right] = {b\Gamma(1+{\tfrac {1}{a}})\Gamma(b)}{\Gamma(1+{\tfrac{1}{a}}+b)}" data-equation="eq:kumaraswamy_mean">
+```math
+\mathbb{E} \left[ X \right] = {b\Gamma(1+{\tfrac {1}{a}})\Gamma(b)}{\Gamma(1+{\tfrac{1}{a}}+b)}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbb{E} \left[ X \right] = {b\Gamma(1+{\tfrac {1}{a}})\Gamma(b)}{\Gamma(1+{\tfrac{1}{a}}+b)}" data-equation="eq:kumaraswamy_mean">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/kumaraswamy/mean/docs/img/equation_kumaraswamy_mean.svg" alt="Mean for a Kumaraswamy's double bounded distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

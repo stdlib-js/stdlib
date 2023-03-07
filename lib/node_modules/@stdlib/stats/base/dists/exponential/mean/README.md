@@ -30,10 +30,14 @@ The [expected value][expected-value] for an [exponential][exponential-distributi
 
 <!-- <equation class="equation" label="eq:exponential_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \frac{1}{\lambda}" alt="Expected value for an exponential distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{1}{\lambda}" data-equation="eq:exponential_expectation">
+```math
+\mathbb{E}\left[ X \right] = \frac{1}{\lambda}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{1}{\lambda}" data-equation="eq:exponential_expectation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/exponential/mean/docs/img/equation_exponential_expectation.svg" alt="Expected value for an exponential distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

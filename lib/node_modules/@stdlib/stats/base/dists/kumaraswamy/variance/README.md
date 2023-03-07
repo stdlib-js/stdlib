@@ -30,10 +30,14 @@ The [variance][variance] for a [Kumaraswamy's double bounded][kumaraswamy-distri
 
 <!-- <equation class="equation" label="eq:kumaraswamy_variance" align="center" raw="\operatorname{Var}\left( X \right) = m_2 - m_1^2" alt="Variance for a Kumaraswamy's double bounded distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = m_2 - m_1^2" data-equation="eq:kumaraswamy_variance">
+```math
+\operatorname{Var}\left( X \right) = m_2 - m_1^2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = m_2 - m_1^2" data-equation="eq:kumaraswamy_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/kumaraswamy/variance/docs/img/equation_kumaraswamy_variance.svg" alt="Variance for a Kumaraswamy's double bounded distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,10 +45,14 @@ where the raw moments of the distribution are given by
 
 <!-- <equation class="equation" label="eq:kumaraswamy_raw_moments" align="center" raw="m_n = b \, B\left(1+\tfrac{n}{a}, b \right)" alt="Raw moments for a Kumaraswamy's double bounded distribution."> -->
 
-<div class="equation" align="center" data-raw-text="m_n = b \, B\left(1+\tfrac{n}{a}, b \right)" data-equation="eq:kumaraswamy_raw_moments">
+```math
+m_n = b \, B\left(1+\tfrac{n}{a}, b \right)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="m_n = b \, B\left(1+\tfrac{n}{a}, b \right)" data-equation="eq:kumaraswamy_raw_moments">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/kumaraswamy/variance/docs/img/equation_kumaraswamy_raw_moments.svg" alt="Raw moments for a Kumaraswamy's double bounded distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
