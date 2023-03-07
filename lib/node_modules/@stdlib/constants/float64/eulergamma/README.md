@@ -28,10 +28,14 @@ The [Euler-Mascheroni][eulergamma] constant `gamma` (also known as "Euler's cons
 
 <!-- <equation class="equation" label="eq:eulergamma_constant" align="center" raw="\gamma = \lim_{n\to\infty} \left( \sum_{k=1}^n \frac{1}{k} - \ln n \right)" alt="Equation for the Euler-Mascheroni constant."> -->
 
-<div class="equation" align="center" data-raw-text="\gamma = \lim_{n\to\infty} \left( \sum_{k=1}^n \frac{1}{k} - \ln n \right)" data-equation="eq:eulergamma_constant">
+```math
+\gamma = \lim_{n\to\infty} \left( \sum_{k=1}^n \frac{1}{k} - \ln n \right)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\gamma = \lim_{n\to\infty} \left( \sum_{k=1}^n \frac{1}{k} - \ln n \right)" data-equation="eq:eulergamma_constant">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6e1cf583c4854b3d982f22f361f53a30c9f552dc/lib/node_modules/@stdlib/constants/float64/eulergamma/docs/img/equation_eulergamma_constant.svg" alt="Equation for the Euler-Mascheroni constant.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
