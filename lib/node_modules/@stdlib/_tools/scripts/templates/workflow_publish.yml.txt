@@ -149,6 +149,12 @@ jobs:
           # Add link definition for CLI package to README.md:
           find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"links\">/<section class=\"links\">\n\n[$escapedPkg]: https:\/\/www.npmjs.com\/package\/$escapedPkg/"
 
+      # Replace GitHub MathJax equations with SVGs:
+      - name: 'Replace GitHub MathJax equations with SVGs'
+        run: |
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe 's/```math\n([\s\S]+?)\n```\n\n//g'
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe 's/<!-- <div class="equation"(.*)(<\/div>\s*-->)/<div class="equation"$1<\/div>/sg'
+
       # Replace GitHub links to individual packages with npm links:
       - name: 'Replace all GitHub links to individual packages with npm links'
         run: |
