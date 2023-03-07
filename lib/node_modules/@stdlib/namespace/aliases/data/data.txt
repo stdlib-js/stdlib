@@ -2255,6 +2255,7 @@ namedtypedtuple
 naryFunction
 nativeClass
 ndarray
+ndarray2array
 ndarrayCastingModes
 ndarrayDataTypes
 ndarrayDispatch

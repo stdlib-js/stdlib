@@ -836,7 +836,7 @@ declare module '@stdlib/types/ndarray' {
 	* Interface describing an ndarray having a generic data type.
 	*
 	* @example
-	* const arr: genericndarray = {
+	* const arr: genericndarray<any> = {
 	*     'byteLength': null,
 	*     'BYTES_PER_ELEMENT': null,
 	*     'data': [ 1, 2, 3 ],
@@ -860,7 +860,7 @@ declare module '@stdlib/types/ndarray' {
 	*     }
 	* };
 	*/
-	interface genericndarray extends ndarray { // tslint:disable-line:class-name
+	interface genericndarray<T> extends ndarray { // tslint:disable-line:class-name
 		/**
 		* Size (in bytes) of the array.
 		*/
@@ -879,7 +879,7 @@ declare module '@stdlib/types/ndarray' {
 		/**
 		* A reference to the underlying data buffer.
 		*/
-		data: ArrayLike<any>;
+		data: ArrayLike<T>;
 
 		/**
 		* Returns an array element specified according to provided subscripts.
@@ -891,7 +891,7 @@ declare module '@stdlib/types/ndarray' {
 		* @param args - subscripts
 		* @returns array element
 		*/
-		get( ...args: Array<number> ): any;
+		get( ...args: Array<number> ): T;
 
 		/**
 		* Sets an array element specified according to provided subscripts.
@@ -903,7 +903,7 @@ declare module '@stdlib/types/ndarray' {
 		* @param args - subscripts and value to set
 		* @returns ndarray instance
 		*/
-		set( ...args: Array<any> ): genericndarray;
+		set( ...args: Array<number|T> ): genericndarray<T>;
 	}
 
 	/**

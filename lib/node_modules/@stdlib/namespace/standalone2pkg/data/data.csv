@@ -2255,6 +2255,7 @@
 "@stdlib/utils-nary-function","@stdlib/utils/nary-function"
 "@stdlib/utils-native-class","@stdlib/utils/native-class"
 "@stdlib/ndarray-ctor","@stdlib/ndarray/ctor"
+"@stdlib/ndarray-to-array","@stdlib/ndarray/to-array"
 "@stdlib/ndarray-casting-modes","@stdlib/ndarray/casting-modes"
 "@stdlib/ndarray-dtypes","@stdlib/ndarray/dtypes"
 "@stdlib/ndarray-dispatch","@stdlib/ndarray/dispatch"

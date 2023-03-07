@@ -2255,6 +2255,7 @@
 "@stdlib/utils/nary-function","@stdlib/utils/mask-arguments,@stdlib/utils/pick-arguments"
 "@stdlib/utils/native-class","@stdlib/utils/constructor-name,@stdlib/utils/type-of"
 "@stdlib/ndarray/ctor","@stdlib/ndarray/array"
+"@stdlib/ndarray/to-array","@stdlib/ndarray/array,@stdlib/ndarray/ctor"
 "@stdlib/ndarray/casting-modes","@stdlib/ndarray/array,@stdlib/ndarray/ctor"
 "@stdlib/ndarray/dtypes","@stdlib/array/dtypes,@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/array/typed-dtypes"
 "@stdlib/ndarray/dispatch","@stdlib/ndarray/array,@stdlib/ndarray/ctor"
