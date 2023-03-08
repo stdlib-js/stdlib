@@ -28,10 +28,14 @@ For a window of size `W`, the [mean arctangent absolute percentage error][@kim:2
 
 <!-- <equation class="equation" label="eq:mean_arctangent_absolute_percentage_error" align="center" raw="\operatorname{MAAPE}  = \frac{1}{W} \sum_{i=0}^{W-1} \operatorname{arctan}\biggl( \biggl| \frac{a_i - f_i}{a_i} \biggr| \biggr)" alt="Equation for the mean arctangent absolute percentage error."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{MAAPE}  = \frac{1}{W} \sum_{i=0}^{W-1} \operatorname{arctan} \biggl( \biggl| \frac{a_i - f_i}{a_i} \biggr| \biggr)" data-equation="eq:mean_arctangent_absolute_percentage_error">
+```math
+\operatorname{MAAPE}  = \frac{1}{W} \sum_{i=0}^{W-1} \operatorname{arctan}\biggl( \biggl| \frac{a_i - f_i}{a_i} \biggr| \biggr)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{MAAPE}  = \frac{1}{W} \sum_{i=0}^{W-1} \operatorname{arctan} \biggl( \biggl| \frac{a_i - f_i}{a_i} \biggr| \biggr)" data-equation="eq:mean_arctangent_absolute_percentage_error">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@677f6828831c61cabc84859897a5ee7e079d6ddf/lib/node_modules/@stdlib/stats/incr/mmaape/docs/img/equation_mean_arctangent_absolute_percentage_error.svg" alt="Equation for the mean arctangent absolute percentage error.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

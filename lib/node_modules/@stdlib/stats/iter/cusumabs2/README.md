@@ -28,10 +28,14 @@ The cumulative sum of squared absolute values is defined as
 
 <!-- <equation class="equation" label="eq:cumulative_sum_of_squared_absolute_values" align="center" raw="\begin{align*} s_0 &= x_0^2 \\ s_1 &= x_1^2 + s_0 \\ s_2 &= x_2^2 + s_1 \\ s_n &= x_n^2 + s_{n-1} = x_n^2 + \sum_{i=0}^{n-1} x_i^2 \end{align*}" alt="Equation for the cumulative sum of squared absolute values."> -->
 
-<div class="equation" align="center" data-raw-text="\begin{align*} s_0 &amp;= x_0^2 \\ s_1 &amp;= x_1^2 + s_0 \\ s_2 &amp;= x_2^2 + s_1 \\ s_n &amp;= x_n^2 + s_{n-1} = x_n^2 + \sum_{i=0}^{n-1} x_i^2 \end{align*}" data-equation="eq:cumulative_sum_of_squared_absolute_values">
+```math
+\begin{align*} s_0 &= x_0^2 \\ s_1 &= x_1^2 + s_0 \\ s_2 &= x_2^2 + s_1 \\ s_n &= x_n^2 + s_{n-1} = x_n^2 + \sum_{i=0}^{n-1} x_i^2 \end{align*}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\begin{align*} s_0 &amp;= x_0^2 \\ s_1 &amp;= x_1^2 + s_0 \\ s_2 &amp;= x_2^2 + s_1 \\ s_n &amp;= x_n^2 + s_{n-1} = x_n^2 + \sum_{i=0}^{n-1} x_i^2 \end{align*}" data-equation="eq:cumulative_sum_of_squared_absolute_values">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@daba99f62ed8ff3f49cf13b209c692fd9ccb6c6f/lib/node_modules/@stdlib/stats/iter/cusumabs2/docs/img/equation_cumulative_sum_of_squared_absolute_values.svg" alt="Equation for the cumulative sum of squared absolute values.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

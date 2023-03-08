@@ -28,10 +28,14 @@ For a window of size `W`, the moving sum is defined as
 
 <!-- <equation class="equation" label="eq:moving_sum" align="center" raw="s = \sum_{i=0}^{W-1} x_i" alt="Equation for the moving sum."> -->
 
-<div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{W-1} x_i" data-equation="eq:moving_sum">
+```math
+s = \sum_{i=0}^{W-1} x_i
+```
+
+<!-- <div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{W-1} x_i" data-equation="eq:moving_sum">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@649f1d940ae76f02c3c2fc97e52f59b452e2e15f/lib/node_modules/@stdlib/stats/iter/msum/docs/img/equation_moving_sum.svg" alt="Equation for the moving sum.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
