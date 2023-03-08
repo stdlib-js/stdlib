@@ -28,10 +28,14 @@ The [_L1_ norm][l1norm] is defined as
 
 <!-- <equation class="equation" label="eq:l1norm" align="center" raw="\|\mathbf{x}\|_1 = \sum_{i=0}^{n-1} \vert x_i \vert" alt="L1 norm definition."> -->
 
-<div class="equation" align="center" data-raw-text="\|\mathbf{x}\|_1 = \sum_{i=0}^{n-1} \vert x_i \vert" data-equation="eq:l1norm">
+```math
+\|\mathbf{x}\|_1 = \sum_{i=0}^{n-1} \vert x_i \vert
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\|\mathbf{x}\|_1 = \sum_{i=0}^{n-1} \vert x_i \vert" data-equation="eq:l1norm">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c403cb0cbb15d9b7b453e3cea34ca2379500ddd4/lib/node_modules/@stdlib/blas/base/dasum/docs/img/equation_l1norm.svg" alt="L1 norm definition.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

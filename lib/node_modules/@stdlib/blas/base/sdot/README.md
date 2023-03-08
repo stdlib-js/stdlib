@@ -28,10 +28,14 @@ The [dot product][dot-product] (or scalar product) is defined as
 
 <!-- <equation class="equation" label="eq:dot_product" align="center" raw="\mathbf{x}\cdot\mathbf{y} = \sum_{i=0}^{N-1} x_i y_i = x_0 y_0 + x_1 y_1 + \ldots + x_{N-1} y_{N-1}" alt="Dot product definition."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbf{x}\cdot\mathbf{y} = \sum_{i=0}^{N-1} x_i y_i = x_0 y_0 + x_1 y_1 + \ldots + x_{N-1} y_{N-1}" data-equation="eq:dot_product">
+```math
+\mathbf{x}\cdot\mathbf{y} = \sum_{i=0}^{N-1} x_i y_i = x_0 y_0 + x_1 y_1 + \ldots + x_{N-1} y_{N-1}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{x}\cdot\mathbf{y} = \sum_{i=0}^{N-1} x_i y_i = x_0 y_0 + x_1 y_1 + \ldots + x_{N-1} y_{N-1}" data-equation="eq:dot_product">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bbd8a9cd5e54e99d210d9bb51a897445752dcc93/lib/node_modules/@stdlib/blas/base/sdot/docs/img/equation_dot_product.svg" alt="Dot product definition.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
