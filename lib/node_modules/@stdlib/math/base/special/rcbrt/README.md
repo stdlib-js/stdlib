@@ -28,10 +28,14 @@ The reciprocal of the principal [cube root][cube-root] is defined as
 
 <!-- <equation class="equation" label="eq:reciprocal_cube_root" align="center" raw="\operatorname{rcbrt}(x)=\frac{1}{\sqrt[3]{x}}" alt="Reciprocal cube root"> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{rcbrt}(x)=\frac{1}{\sqrt[3]{x}}" data-equation="eq:reciprocal_cube_root">
+```math
+\operatorname{rcbrt}(x)=\frac{1}{\sqrt[3]{x}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{rcbrt}(x)=\frac{1}{\sqrt[3]{x}}" data-equation="eq:reciprocal_cube_root">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b569df0e375cb7d535781320bf5e2299a0fbff25/lib/node_modules/@stdlib/math/base/special/rcbrt/docs/img/equation_reciprocal_cube_root.svg" alt="Reciprocal cube root">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -28,10 +28,14 @@ The [versed sine][versed-sine] is defined as
 
 <!-- <equation class="equation" label="eq:versine" align="center" raw="\operatorname{versin}(\theta) = 1 - \cos \theta" alt="Versed sine."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{versin}(\theta) = 1 - \cos \theta" data-equation="eq:versine">
+```math
+\operatorname{versin}(\theta) = 1 - \cos \theta
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{versin}(\theta) = 1 - \cos \theta" data-equation="eq:versine">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/versin/docs/img/equation_versine.svg" alt="Versed sine.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

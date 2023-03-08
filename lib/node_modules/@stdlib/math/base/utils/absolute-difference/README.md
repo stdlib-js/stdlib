@@ -28,10 +28,14 @@ The [absolute difference][absolute-difference] of two real `numbers` is defined 
 
 <!-- <equation class="equation" label="eq:absolute_difference" align="center" raw="|\Delta| = | x - y |" alt="Absolute difference"> -->
 
-<div class="equation" align="center" data-raw-text="|\Delta| = | x - y |" data-equation="eq:absolute_difference">
+```math
+|\Delta| = | x - y |
+```
+
+<!-- <div class="equation" align="center" data-raw-text="|\Delta| = | x - y |" data-equation="eq:absolute_difference">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/utils/absolute-difference/docs/img/equation_absolute_difference.svg" alt="Absolute difference">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

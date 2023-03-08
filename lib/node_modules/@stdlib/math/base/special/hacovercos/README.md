@@ -28,10 +28,14 @@ The half-value [coversed cosine][coversed-cosine] is defined as
 
 <!-- <equation class="equation" label="eq:hacovercosine" align="center" raw="\operatorname{hacovercos}(\theta) = \frac{1 + \sin \theta}{2}" alt="Half-value coversed cosine."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{hacovercos}(\theta) = \frac{1 + \sin \theta}{2}" data-equation="eq:hacovercosine">
+```math
+\operatorname{hacovercos}(\theta) = \frac{1 + \sin \theta}{2}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{hacovercos}(\theta) = \frac{1 + \sin \theta}{2}" data-equation="eq:hacovercosine">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/hacovercos/docs/img/equation_hacovercosine.svg" alt="Half-value coversed cosine.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

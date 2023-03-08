@@ -28,10 +28,14 @@ The principal [square root][@stdlib/math/base/special/sqrt] is defined as
 
 <!-- <equation class="equation" label="eq:principal_square_root" align="center" raw="\sqrt{x^2} = \begin{matrix} x, & \textrm{if}\ x \geq 0\end{matrix}" alt="Principal square root"> -->
 
-<div class="equation" align="center" data-raw-text="\sqrt{x^2} = \begin{matrix} x, &amp; \textrm{if}\ x \geq 0\end{matrix}" data-equation="eq:principal_square_root">
+```math
+\sqrt{x^2} = \begin{matrix} x, & \textrm{if}\ x \geq 0\end{matrix}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sqrt{x^2} = \begin{matrix} x, &amp; \textrm{if}\ x \geq 0\end{matrix}" data-equation="eq:principal_square_root">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5de0e834d1b5b074d6df210b9cb492c75c9953a2/lib/node_modules/@stdlib/math/strided/special/sqrt/docs/img/equation_principal_square_root.svg" alt="Principal square root">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

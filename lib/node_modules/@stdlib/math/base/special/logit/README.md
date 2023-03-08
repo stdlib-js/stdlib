@@ -28,10 +28,14 @@ The [logit][logit] function is defined as the logarithm of the odds `p / (1-p)`;
 
 <!-- <equation class="equation" label="eq:logit_function" align="center" raw="\operatorname{logit}(p)=\log \left({\frac {p}{1-p}}\right)" alt="Logit function."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{logit}(p)=\log \left({\frac {p}{1-p}}\right)" data-equation="eq:logit_function">
+```math
+\operatorname{logit}(p)=\log \left({\frac {p}{1-p}}\right)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{logit}(p)=\log \left({\frac {p}{1-p}}\right)" data-equation="eq:logit_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/logit/docs/img/equation_logit_function.svg" alt="Logit function.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

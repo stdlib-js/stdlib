@@ -28,10 +28,14 @@ The [identity-function][identity-function] is defined as
 
 <!-- <equation class="equation" label="eq:identity_function" align="center" raw="f(z) = z" alt="Identity function"> -->
 
-<div class="equation" align="center" data-raw-text="f(z) = z" data-equation="eq:identity_function">
+```math
+f(z) = z
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(z) = z" data-equation="eq:identity_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3ac3ef7b03afae265d5c85a664dc22e0a373c0c2/lib/node_modules/@stdlib/math/base/special/cidentity/docs/img/equation_identity_function.svg" alt="Identity function">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

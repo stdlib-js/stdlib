@@ -30,10 +30,14 @@ The [triangular numbers][triangular-number] are the integer sequence
 
 <!-- <equation class="equation" label="eq:triangular_numbers_sequence" align="center" raw="0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, \ldots" alt="Triangular number sequence"> -->
 
-<div class="equation" align="center" data-raw-text="0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, \ldots" data-equation="eq:triangular_numbers_sequence">
+```math
+0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, \ldots
+```
+
+<!-- <div class="equation" align="center" data-raw-text="0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, \ldots" data-equation="eq:triangular_numbers_sequence">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7000a1b5cd08bb73f2dfe04976524042ab3b580d/lib/node_modules/@stdlib/math/iter/sequences/triangular/docs/img/equation_triangular_numbers_sequence.svg" alt="Triangular number sequence">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,10 +47,14 @@ starting at the 0th [triangular number][triangular-number].
 
 <!-- <equation class="equation" label="eq:triangular_numbers" align="center" raw="T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}" alt="Triangular number formulas"> -->
 
-<div class="equation" align="center" data-raw-text="T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}" data-equation="eq:triangular_numbers">
+```math
+T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}" data-equation="eq:triangular_numbers">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7000a1b5cd08bb73f2dfe04976524042ab3b580d/lib/node_modules/@stdlib/math/iter/sequences/triangular/docs/img/equation_triangular_numbers.svg" alt="Triangular number formulas">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

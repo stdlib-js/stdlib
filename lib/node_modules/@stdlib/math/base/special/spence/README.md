@@ -28,10 +28,14 @@ The dilogarithm is defined as
 
 <!-- <equation class="equation" label="eq:dilogarithm" align="center" raw="\operatorname{Li}_{2}(z) = -\int_{0}^{z}{\ln(1-u) \over u}\,du{\text{, }}z\in \mathbb {C}" alt="Dilogarithm."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Li}_{2}(z) = -\int_{0}^{z}{\ln(1-u) \over u}\,du{\text{, }}z\in \mathbb {C}" data-equation="eq:dilogarithm">
+```math
+\operatorname{Li}_{2}(z) = -\int_{0}^{z}{\ln(1-u) \over u}\,du{\text{, }}z\in \mathbb {C}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Li}_{2}(z) = -\int_{0}^{z}{\ln(1-u) \over u}\,du{\text{, }}z\in \mathbb {C}" data-equation="eq:dilogarithm">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ea8657e10f42753f63de0b5c7dd8b13b4879409a/lib/node_modules/@stdlib/math/base/special/spence/docs/img/equation_dilogarithm.svg" alt="Dilogarithm.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -39,10 +43,14 @@ or also alternatively as
 
 <!-- <equation class="equation" label="eq:dilogarithm_alt" align="center" raw="\int _{1}^{v}{\frac {\ln t}{1-t}}dt=\operatorname {Li} _{2}(1-v)." alt="Alternative definition of dilogarithm."> -->
 
-<div class="equation" align="center" data-raw-text="\int _{1}^{v}{\frac {\ln t}{1-t}}dt=\operatorname {Li} _{2}(1-v)." data-equation="eq:dilogarithm_alt">
+```math
+\int _{1}^{v}{\frac {\ln t}{1-t}}dt=\operatorname {Li} _{2}(1-v).
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\int _{1}^{v}{\frac {\ln t}{1-t}}dt=\operatorname {Li} _{2}(1-v)." data-equation="eq:dilogarithm_alt">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ea8657e10f42753f63de0b5c7dd8b13b4879409a/lib/node_modules/@stdlib/math/base/special/spence/docs/img/equation_dilogarithm_alt.svg" alt="Alternative definition of dilogarithm.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

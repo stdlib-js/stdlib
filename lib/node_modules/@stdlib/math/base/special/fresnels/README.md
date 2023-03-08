@@ -28,10 +28,14 @@ The [Fresnel integral][fresnel-integral] S(x) is defined as
 
 <!-- <equation class="equation" label="eq:fresnel_integral" align="center" raw="S(x) = \int_0^x \sin\left(\frac{\pi}{2} t^2\right)\,\mathrm{d}t." alt="Fresnel integral S(x)"> -->
 
-<div class="equation" align="center" data-raw-text="S(x) = \int_0^x \sin\left(\frac{\pi}{2} t^2\right)\,\mathrm{d}t." data-equation="eq:fresnel_integral">
+```math
+S(x) = \int_0^x \sin\left(\frac{\pi}{2} t^2\right)\,\mathrm{d}t.
+```
+
+<!-- <div class="equation" align="center" data-raw-text="S(x) = \int_0^x \sin\left(\frac{\pi}{2} t^2\right)\,\mathrm{d}t." data-equation="eq:fresnel_integral">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/math/base/special/fresnels/docs/img/equation_fresnel_integral.svg" alt="Fresnel integral S(x)">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
