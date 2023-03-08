@@ -30,10 +30,14 @@ A square waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:square_waveform" align="center" raw="f(t; \tau, a_{\textrm{min}}, a_{\textrm{max}}, \varphi) = \begin{cases} a_{\textrm{max}} & (t-\varphi) \mod (\tau/2) \\ a_{\textrm{min}} & \textrm{otherwise} \end{cases}" alt="Equation for a square waveform."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; \tau, a_{\textrm{min}}, a_{\textrm{max}}, \varphi) = \begin{cases} a_{\textrm{max}} &amp; (t-\varphi) \mod (\tau/2) \\ a_{\textrm{min}} &amp; \textrm{otherwise} \end{cases}" data-equation="eq:square_waveform">
+```math
+f(t; \tau, a_{\textrm{min}}, a_{\textrm{max}}, \varphi) = \begin{cases} a_{\textrm{max}} & (t-\varphi) \mod (\tau/2) \\ a_{\textrm{min}} & \textrm{otherwise} \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; \tau, a_{\textrm{min}}, a_{\textrm{max}}, \varphi) = \begin{cases} a_{\textrm{max}} &amp; (t-\varphi) \mod (\tau/2) \\ a_{\textrm{min}} &amp; \textrm{otherwise} \end{cases}" data-equation="eq:square_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5827c258000edcb03496265cdfd372d686b4c656/lib/node_modules/@stdlib/simulate/iter/square-wave/docs/img/equation_square_waveform.svg" alt="Equation for a square waveform.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

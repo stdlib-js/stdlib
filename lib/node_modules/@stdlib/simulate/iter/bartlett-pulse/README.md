@@ -30,10 +30,14 @@ A Bartlett pulse waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:bartlett_pulse_waveform" align="center" raw="f(t; T, \tau, a, \varphi) = \begin{cases}1 - \biggl|\frac{2(t-\varphi)}{\tau-1} - 1\biggr| & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}" alt="Equation for a Bartlett pulse waveform."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; T, \tau, a, \varphi) = \begin{cases}1 - \biggl|\frac{2(t-\varphi)}{\tau-1} - 1\biggr| &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:bartlett_pulse_waveform">
+```math
+f(t; T, \tau, a, \varphi) = \begin{cases}1 - \biggl|\frac{2(t-\varphi)}{\tau-1} - 1\biggr| & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; T, \tau, a, \varphi) = \begin{cases}1 - \biggl|\frac{2(t-\varphi)}{\tau-1} - 1\biggr| &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:bartlett_pulse_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d8910751300fc12f81545175e5b0dbcbf4a67efa/lib/node_modules/@stdlib/simulate/iter/bartlett-pulse/docs/img/equation_bartlett_pulse_waveform.svg" alt="Equation for a Bartlett pulse waveform.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

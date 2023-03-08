@@ -30,10 +30,14 @@ A triangle waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:triangle_waveform" align="center" raw="f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arcsin} \sin \frac{2\pi(t-\varphi)}{\tau}" alt="Equation for a triangle waveform."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arcsin} \sin \frac{2\pi(t-\varphi)}{\tau}" data-equation="eq:triangle_waveform">
+```math
+f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arcsin} \sin \frac{2\pi(t-\varphi)}{\tau}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arcsin} \sin \frac{2\pi(t-\varphi)}{\tau}" data-equation="eq:triangle_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5827c258000edcb03496265cdfd372d686b4c656/lib/node_modules/@stdlib/simulate/iter/triangle-wave/docs/img/equation_triangle_waveform.svg" alt="Equation for a triangle waveform.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
