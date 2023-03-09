@@ -60,13 +60,13 @@ where `m_4` is the sample fourth central moment and `m_2` is the sample second c
 
 The previous equation is, however, a biased estimator of the population excess kurtosis. An alternative estimator which is unbiased under normality is
 
-<!-- <equation class="equation" label="eq:corrected_sample_excess_kurtosis" align="center" raw="G_2 = \frac{(n+1)n}{(n-1)(n-2)(n-3)} \frac{\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})^4}{\biggl(\sum_{i=0}^{n-1} (x_i - \bar{x})^2\biggr)^2} - 3 \frac{(n-1)^2}{(n-2)(n-3)}" alt="Equation for the corrected sample excess kurtosis."> -->
+<!-- <equation class="equation" label="eq:corrected_sample_excess_kurtosis" align="center" raw="G_2 = \frac{(n+1)n}{(n-1)(n-2)(n-3)} \frac{\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})^4}{\biggl(\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})^2\biggr)^2} - 3 \frac{(n-1)^2}{(n-2)(n-3)}" alt="Equation for the corrected sample excess kurtosis."> -->
 
 ```math
-G_2 = \frac{(n+1)n}{(n-1)(n-2)(n-3)} \frac{\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})^4}{\biggl(\sum_{i=0}^{n-1} (x_i - \bar{x})^2\biggr)^2} - 3 \frac{(n-1)^2}{(n-2)(n-3)}
+G_2 = \frac{(n+1)n}{(n-1)(n-2)(n-3)} \frac{\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})^4}{\biggl(\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})^2\biggr)^2} - 3 \frac{(n-1)^2}{(n-2)(n-3)}
 ```
 
-<!-- <div class="equation" align="center" data-raw-text="G_2 = \frac{(n+1)n}{(n-1)(n-2)(n-3)} \frac{\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})^4}{\biggl(\sum_{i=0}^{n-1} (x_i - \bar{x})^2\biggr)^2} - 3 \frac{(n-1)^2}{(n-2)(n-3)}" data-equation="eq:corrected_sample_excess_kurtosis">
+<!-- <div class="equation" align="center" data-raw-text="G_2 = \frac{(n+1)n}{(n-1)(n-2)(n-3)} \frac{\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})^4}{\biggl(\displaystyle\sum_{i=0}^{n-1} (x_i - \bar{x})^2\biggr)^2} - 3 \frac{(n-1)^2}{(n-2)(n-3)}" data-equation="eq:corrected_sample_excess_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@49d8cabda84033d55d7b8069f19ee3dd8b8d1496/lib/node_modules/@stdlib/stats/incr/kurtosis/docs/img/equation_corrected_sample_excess_kurtosis.svg" alt="Equation for the corrected sample excess kurtosis.">
     <br>
 </div> -->
