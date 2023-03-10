@@ -25,9 +25,9 @@ on:
   workflow_dispatch:
     inputs:
       num:
-        type: number
+        type: string
         description: 'Maximum number of files to lint:'
-        default: 100
+        default: '100'
       pattern:
         description: 'Regular expression for files to include:'
         default: .*
