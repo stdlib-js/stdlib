@@ -19,7 +19,7 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_CIDENTITY_H
 #define STDLIB_MATH_BASE_SPECIAL_CIDENTITY_H
 
-#include <complex.h>
+#include "stdlib/complex/float64.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Evaluates the identity function for a double-precision complex floating-point number.
 */
-double complex stdlib_base_cidentity( const double complex z );
+stdlib_complex128_t stdlib_base_cidentity( const stdlib_complex128_t z );
 
 #ifdef __cplusplus
 }
