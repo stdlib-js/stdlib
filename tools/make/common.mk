@@ -424,6 +424,9 @@ DEPS_OPENBLAS_CFLAGS ?=
 # Fortran compiler flags:
 DEPS_OPENBLAS_FFLAGS ?= -O3 $(fPIC)
 
+# Flag indicating whether to use clang:
+DEPS_OPENBLAS_USE_CLANG ?=
+
 # Specify stack alignment on Windows.
 #
 # [1]: https://gcc.gnu.org/onlinedocs/gcc-4.5.3/gcc/i386-and-x86_002d64-Options.html
