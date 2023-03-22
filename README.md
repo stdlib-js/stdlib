@@ -28,7 +28,7 @@ limitations under the License.
 
 **All internship projects will focus on contributing to open source software. stdlib is one of the potential projects! If you are new to open source, interested in kickstarting your software development career, and interested in contributing to stdlib, you are encouraged to apply! 🎉**
 
-**When applying, feel free to mention stdlib in your cover letter. 😃**
+**When applying, feel free to mention stdlib in your cover letter. Application deadline: 4 April 2023. 😃**
 
 </section>
 
