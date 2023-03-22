@@ -3622,6 +3622,7 @@ ndarray.prototype.set,"var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );\nvar 
 ndarray.prototype.iset,"var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );\nvar d = [ 2, 2 ];\nvar s = [ 2, 1 ];\nvar o = 0;\nvar arr = ndarray( 'float64', b, d, s, o, 'row-major' );\narr.iset( 3, -4.0 );\narr.iget( 3 )\n"
 ndarray.prototype.toString,"var b = [ 1, 2, 3, 4 ];\nvar d = [ 2, 2 ];\nvar s = [ 2, 1 ];\nvar o = 0;\nvar arr = ndarray( 'generic', b, d, s, o, 'row-major' );\narr.toString()\n"
 ndarray.prototype.toJSON,"var b = [ 1, 2, 3, 4 ];\nvar d = [ 2, 2 ];\nvar s = [ 2, 1 ];\nvar o = 0;\nvar arr = ndarray( 'generic', b, d, s, o, 'row-major' );\narr.toJSON()\n"
+ndarray2array,"var arr = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar out = ndarray2array( arr )\n"
 ndarrayCastingModes,"var out = ndarrayCastingModes()\n"
 ndarrayDataTypes,"var out = ndarrayDataTypes()\n"
 ndarrayDispatch,"var t = [ 'float64', 'float64', 'float32', 'float32' ];\nvar d = [ base.abs, base.absf ];\nvar f = ndarrayDispatch( base.ndarrayUnary, t, d, 2, 1, 1 );\nvar xbuf = new Float64Array( [ -1.0, -2.0, -3.0, -4.0 ] );\nvar x = ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );\nvar ybuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0 ] );\nvar y = ndarray( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );\nf( x, y );\nybuf\n"
