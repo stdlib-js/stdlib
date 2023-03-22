@@ -20,41 +20,29 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
-* Computes the inverse of a complex number.
+* Computes the inverse of a double-precision complex floating-point number.
 *
-* @param out - output array
-* @param re - real component
-* @param im - imaginary component
-* @returns real and imaginary components
+* @param z - input value
+* @returns result
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
 *
-* var out = new Float32Array( 2 );
+* var v = cinv( new Complex128( 2.0, 4.0 ) );
+* // returns <Complex128>
 *
-* var v = cinv( out, 2.0, 4.0 );
-* // returns <Float32Array>[ 0.1, -0.2 ]
+* var re = real( v );
+* // returns 0.1
 *
-* var bool = ( v === out );
-* // returns true
+* var im = imag( v );
+* // returns -0.2
 */
-declare function cinv( out: ArrayLike<number>, re: number, im: number ): ArrayLike<number>; // tslint-disable-line max-line-length
-
-/**
-* Computes the inverse of a complex number.
-*
-* @param re - real component
-* @param im - imaginary component
-* @returns real and imaginary components
-*
-* @example
-* var v = cinv( 2.0, 4.0 );
-* // returns [ 0.1, -0.2 ]
-*/
-declare function cinv( re: number, im: number ): ArrayLike<number>;
+declare function cinv( z: Complex128 ): Complex128;
 
 
 // EXPORTS //
