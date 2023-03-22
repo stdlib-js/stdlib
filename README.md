@@ -26,7 +26,7 @@ limitations under the License.
 
 **📣 Announcement: [Quansight Labs](https://labs.quansight.org) is running another edition of its paid [internship program](https://boards.greenhouse.io/quansight/jobs/4011005005). The program runs for 3 months from mid-June/mid-July through September and entails a 25-40 hrs/wk time commitment.**
 
-**All internship projects will focus on contributing to open source software. stdlib is one of the potential projects! If you are new to open source, interested in kickstarting your software development career, and interested in contributing to stdlib, you are encouraged to apply! 🎉**
+**All internship projects will focus on contributing to open source software. stdlib is one of the potential projects! If you are new to open source, interested in kickstarting your software development career, and/or interested in contributing to stdlib, you are encouraged to apply! 🎉**
 
 **When applying, feel free to mention stdlib in your cover letter. Application deadline: 4 April 2023. 😃**
 
