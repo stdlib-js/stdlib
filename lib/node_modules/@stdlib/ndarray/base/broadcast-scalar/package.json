@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/ndarray/base/broadcast-scalar",
   "version": "0.0.0",
-  "description": "Broadcast a scalar value to an ndarray to a specified shape.",
+  "description": "Broadcast a scalar value to an ndarray having a specified shape.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
