@@ -117,7 +117,7 @@ declare function scalar2ndarray( value: number | ComplexLike, dtype: 'complex128
 * @returns zero-dimensional ndarray
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float64` );
+* var Complex64 = require( `@stdlib/complex/float32` );
 * var realf = require( '@stdlib/complex/realf' );
 * var imagf = require( '@stdlib/complex/imagf' );
 *
