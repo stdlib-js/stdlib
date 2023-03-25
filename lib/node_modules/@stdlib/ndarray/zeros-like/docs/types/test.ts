@@ -160,6 +160,43 @@ import zerosLike = require( './index' );
 	zerosLike( x, { 'shape': ( x: number ): number => x } ); // $ExpectError
 }
 
+// The compiler throws an error if the function is provided a `mode` option which is not a valid mode...
+{
+	const x = zeros( 'generic', [ 2, 2 ], 'row-major' );
+
+	zerosLike( x, { 'mode': '5' } ); // $ExpectError
+	zerosLike( x, { 'mode': 5 } ); // $ExpectError
+	zerosLike( x, { 'mode': false } ); // $ExpectError
+	zerosLike( x, { 'mode': true } ); // $ExpectError
+	zerosLike( x, { 'mode': [ '5' ] } ); // $ExpectError
+	zerosLike( x, { 'mode': {} } ); // $ExpectError
+	zerosLike( x, { 'mode': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a `submode` option which is not valid...
+{
+	const x = zeros( 'generic', [ 2, 2 ], 'row-major' );
+
+	zerosLike( x, { 'submode': '5' } ); // $ExpectError
+	zerosLike( x, { 'submode': 5 } ); // $ExpectError
+	zerosLike( x, { 'submode': false } ); // $ExpectError
+	zerosLike( x, { 'submode': true } ); // $ExpectError
+	zerosLike( x, { 'submode': [ '5' ] } ); // $ExpectError
+	zerosLike( x, { 'submode': {} } ); // $ExpectError
+	zerosLike( x, { 'submode': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a `readonly` option which is not a boolean...
+{
+	const x = zeros( 'generic', [ 2, 2 ], 'row-major' );
+
+	zerosLike( x, { 'readonly': '5' } ); // $ExpectError
+	zerosLike( x, { 'readonly': 5 } ); // $ExpectError
+	zerosLike( x, { 'readonly': [ '5' ] } ); // $ExpectError
+	zerosLike( x, { 'readonly': {} } ); // $ExpectError
+	zerosLike( x, { 'readonly': ( x: number ): number => x } ); // $ExpectError
+}
+
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	zerosLike(); // $ExpectError
