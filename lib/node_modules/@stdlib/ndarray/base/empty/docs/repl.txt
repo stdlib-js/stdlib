@@ -1,0 +1,40 @@
+
+{{alias}}( dtype, shape, order )
+    Returns an uninitialized ndarray having a specified shape and data type.
+
+    In browser environments, the function always returns zero-filled ndarrays.
+
+    If `dtype` is 'generic', the function always returns a zero-filled ndarray.
+
+    For returned ndarrays whose underlying memory is *not* initialized, memory
+    contents are unknown and may contain *sensitive* data.
+
+    Parameters
+    ----------
+    dtype: string
+        Underlying data type.
+
+    shape: ArrayLikeObject<integer>
+        Array shape.
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 'float64', [ 2, 2 ], 'row-major' )
+    <ndarray>
+    > var sh = arr.shape
+    [ 2, 2 ]
+    > var dt = arr.dtype
+    'float64'
+
+    See Also
+    --------
+
