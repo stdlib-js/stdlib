@@ -2268,6 +2268,7 @@
 "@stdlib/ndarray-safe-casts","@stdlib/ndarray/safe-casts"
 "@stdlib/ndarray-same-kind-casts","@stdlib/ndarray/same-kind-casts"
 "@stdlib/ndarray-empty","@stdlib/ndarray/empty"
+"@stdlib/ndarray-empty-like","@stdlib/ndarray/empty-like"
 "@stdlib/ndarray-zeros","@stdlib/ndarray/zeros"
 "@stdlib/ndarray-zeros-like","@stdlib/ndarray/zeros-like"
 "@stdlib/string-next-grapheme-cluster-break","@stdlib/string/next-grapheme-cluster-break"

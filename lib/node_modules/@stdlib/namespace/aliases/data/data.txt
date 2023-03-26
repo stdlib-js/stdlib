@@ -2268,6 +2268,7 @@ ndarrayPromotionRules
 ndarraySafeCasts
 ndarraySameKindCasts
 ndempty
+ndemptyLike
 ndzeros
 ndzerosLike
 nextGraphemeClusterBreak
