@@ -28,10 +28,14 @@ For a window of size `W`, the [mean percentage error][mean-percentage-error] is 
 
 <!-- <equation class="equation" label="eq:mean_percentage_error" align="center" raw="\operatorname{MPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \frac{a_i - f_i}{a_i}" alt="Equation for the mean percentage error."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{MPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \frac{a_i - f_i}{a_i}" data-equation="eq:mean_percentage_error">
+```math
+\operatorname{MPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \frac{a_i - f_i}{a_i}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{MPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \frac{a_i - f_i}{a_i}" data-equation="eq:mean_percentage_error">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d97022bce00ceb9db681cb6cc8fb6c87ad86287f/lib/node_modules/@stdlib/stats/incr/mmpe/docs/img/equation_mean_percentage_error.svg" alt="Equation for the mean percentage error.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

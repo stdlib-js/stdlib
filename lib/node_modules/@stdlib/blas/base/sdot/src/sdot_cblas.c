@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@
 /**
 * Computes the dot product of two single-precision floating-point vectors.
 *
-* @param N        number of values over which to compute the dot product
+* @param N        number of indexed elements
 * @param X        first array
 * @param strideX  X stride length
 * @param Y        second array

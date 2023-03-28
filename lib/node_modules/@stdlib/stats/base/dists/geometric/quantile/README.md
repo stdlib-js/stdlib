@@ -28,10 +28,14 @@ The [quantile function][quantile-function] for a [geometric][geometric-distribut
 
 <!-- <equation class="equation" label="eq:geometric_quantile_function" align="center" raw="Q(r;p)=\left\lceil \frac{\ln(1-r)}{\ln(1-p)} \right\rceil" alt="Quantile function for a geometric distribution."> -->
 
-<div class="equation" align="center" data-raw-text="Q(r;p)=\left\lceil \frac{\ln(1-r)}{\ln(1-p)} \right\rceil" data-equation="eq:geometric_quantile_function">
+```math
+Q(r;p)=\left\lceil \frac{\ln(1-r)}{\ln(1-p)} \right\rceil
+```
+
+<!-- <div class="equation" align="center" data-raw-text="Q(r;p)=\left\lceil \frac{\ln(1-r)}{\ln(1-p)} \right\rceil" data-equation="eq:geometric_quantile_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/geometric/quantile/docs/img/equation_geometric_quantile_function.svg" alt="Quantile function for a geometric distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

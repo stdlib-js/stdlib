@@ -13,7 +13,7 @@
     Parameters
     ----------
     N: integer
-        Number of values to copy.
+        Number of indexed elements.
 
     x: Float32Array
         Input array.
@@ -61,13 +61,13 @@
     Copies values from `x` into `y` using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameters support indexing semantics based on starting
+    buffer, the offset parameters support indexing semantics based on starting
     indices.
 
     Parameters
     ----------
     N: integer
-        Number of values to copy.
+        Number of indexed elements.
 
     x: Float32Array
         Input array.

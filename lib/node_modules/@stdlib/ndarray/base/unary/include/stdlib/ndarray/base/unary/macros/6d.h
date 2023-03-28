@@ -147,6 +147,7 @@
 	int64_t *shape = stdlib_ndarray_shape( x1 );                               \
 	int64_t *sx1 = stdlib_ndarray_strides( x1 );                               \
 	int64_t *sx2 = stdlib_ndarray_strides( x2 );                               \
+	int64_t *sx3 = stdlib_ndarray_strides( x3 );                               \
 	uint8_t *px1 = stdlib_ndarray_data( x1 );                                  \
 	uint8_t *px2 = stdlib_ndarray_data( x2 );                                  \
 	uint8_t *px3 = stdlib_ndarray_data( x3 );                                  \

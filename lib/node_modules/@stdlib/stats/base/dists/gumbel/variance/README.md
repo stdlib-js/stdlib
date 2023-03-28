@@ -30,10 +30,14 @@ The [variance][variance] for a [Gumbel][gumbel-distribution] random variable wit
 
 <!-- <equation class="equation" label="eq:gumbel_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{\pi^{2}}{6}\,\beta^{2}" alt="Variance for a Gumbel distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{\pi^{2}}{6}\,\beta^{2}" data-equation="eq:gumbel_variance">
+```math
+\operatorname{Var}\left( X \right) = \frac{\pi^{2}}{6}\,\beta^{2}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{\pi^{2}}{6}\,\beta^{2}" data-equation="eq:gumbel_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/gumbel/variance/docs/img/equation_gumbel_variance.svg" alt="Variance for a Gumbel distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

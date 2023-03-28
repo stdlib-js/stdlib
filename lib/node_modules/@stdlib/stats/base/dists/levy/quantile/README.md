@@ -28,10 +28,14 @@ The [quantile function][quantile-function] for a [Lévy][levy-distribution] rand
 
 <!-- <equation class="equation" label="eq:levy_quantile_function" align="center" raw="Q(p;\mu,c)= \mu + \frac{c}{2 \cdot \operatorname{erfcinv}(p)^2}" alt="Quantile function for a Lévy distribution."> -->
 
-<div class="equation" align="center" data-raw-text="Q(p;\mu,c)= \mu + \frac{c}{2 \cdot \operatorname{erfcinv}(p)^2}" data-equation="eq:levy_quantile_function">
+```math
+Q(p;\mu,c)= \mu + \frac{c}{2 \cdot \operatorname{erfcinv}(p)^2}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="Q(p;\mu,c)= \mu + \frac{c}{2 \cdot \operatorname{erfcinv}(p)^2}" data-equation="eq:levy_quantile_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/levy/quantile/docs/img/equation_levy_quantile_function.svg" alt="Quantile function for a Lévy distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -13,7 +13,7 @@
     Parameters
     ----------
     N: integer
-        Number of values to swap.
+        Number of indexed elements.
 
     x: Complex64Array
         First input array.
@@ -95,7 +95,7 @@
     Parameters
     ----------
     N: integer
-        Number of values to swap.
+        Number of indexed elements.
 
     x: Complex64Array
         First input array.

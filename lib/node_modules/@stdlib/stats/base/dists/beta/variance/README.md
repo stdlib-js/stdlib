@@ -30,10 +30,14 @@ The [variance][variance] for a [beta][beta-distribution] random variable is
 
 <!-- <equation class="equation" label="eq:beta_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}" alt="Variance for a beta distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}" data-equation="eq:beta_variance">
+```math
+\operatorname{Var}\left( X \right) = \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}" data-equation="eq:beta_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/beta/variance/docs/img/equation_beta_variance.svg" alt="Variance for a beta distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -30,10 +30,14 @@ The [expected value][expected-value] for a [Pareto (Type I)][pareto-distribution
 
 <!-- <equation class="equation" label="eq:pareto_type1_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \begin{cases} \infty & \text{for }\alpha\le 1 \\ \frac{\alpha\,\beta}{\alpha-1} & \text{for }\alpha>1 \end{cases}" alt="Expected value for a Pareto (Type I) distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \begin{cases} \infty &amp; \text{for }\alpha\le 1 \\ \frac{\alpha\,\beta}{\alpha-1} &amp; \text{for }\alpha&gt;1 \end{cases}" data-equation="eq:pareto_type1_expectation">
+```math
+\mathbb{E}\left[ X \right] = \begin{cases} \infty & \text{for }\alpha\le 1 \\ \frac{\alpha\,\beta}{\alpha-1} & \text{for }\alpha>1 \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \begin{cases} \infty &amp; \text{for }\alpha\le 1 \\ \frac{\alpha\,\beta}{\alpha-1} &amp; \text{for }\alpha&gt;1 \end{cases}" data-equation="eq:pareto_type1_expectation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/pareto-type1/mean/docs/img/equation_pareto_type1_expectation.svg" alt="Expected value for a Pareto (Type I) distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

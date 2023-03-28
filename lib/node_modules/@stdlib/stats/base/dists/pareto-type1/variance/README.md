@@ -30,10 +30,14 @@ The [variance][variance] for a [Pareto (Type I)][pareto-distribution] random var
 
 <!-- <equation class="equation" label="eq:pareto_type1_variance" align="center" raw="\operatorname{Var}\left( X \right) = \begin{cases} \infty & \text{for }\alpha\in(0,2] \\ \frac{\beta^2\alpha}{(\alpha-1)^2(\alpha-2)} & \text{for }\alpha>2 \end{cases}" alt="Variance for a Pareto (Type I) distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \begin{cases} \infty &amp; \text{for }\alpha\in(0,2] \\ \frac{\beta^2\alpha}{(\alpha-1)^2(\alpha-2)} &amp; \text{for }\alpha&gt;2 \end{cases}" data-equation="eq:pareto_type1_variance">
+```math
+\operatorname{Var}\left( X \right) = \begin{cases} \infty & \text{for }\alpha\in(0,2] \\ \frac{\beta^2\alpha}{(\alpha-1)^2(\alpha-2)} & \text{for }\alpha>2 \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \begin{cases} \infty &amp; \text{for }\alpha\in(0,2] \\ \frac{\beta^2\alpha}{(\alpha-1)^2(\alpha-2)} &amp; \text{for }\alpha&gt;2 \end{cases}" data-equation="eq:pareto_type1_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/pareto-type1/variance/docs/img/equation_pareto_type1_variance.svg" alt="Variance for a Pareto (Type I) distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

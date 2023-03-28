@@ -30,10 +30,14 @@ To carry out the test, the rank sums `S_h` of the individual groups are calculat
 
 <!-- <equation class="equation" label="eq:kruskal_test_statistic" align="center" raw="H = \frac{\tfrac{12}{N(N+1)}\sum_h\tfrac{S_h^2}{n_h}-3(N+1)}{1-\tfrac{1}{(N^3-N)} \sum t_{r(i)}^3 - t_{r(i)}}" alt="Equation for the Kruskal-Wallis test statistic."> -->
 
-<div class="equation" align="center" data-raw-text="H = \frac{\tfrac{12}{N(N+1)}\sum_h\tfrac{S_h^2}{n_h}-3(N+1)}{1-\tfrac{1}{(N^3-N)} \sum t_{r(i)}^3 - t_{r(i)}}" data-equation="eq:kruskal_test_statistic">
+```math
+H = \frac{\tfrac{12}{N(N+1)}\sum_h\tfrac{S_h^2}{n_h}-3(N+1)}{1-\tfrac{1}{(N^3-N)} \sum t_{r(i)}^3 - t_{r(i)}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="H = \frac{\tfrac{12}{N(N+1)}\sum_h\tfrac{S_h^2}{n_h}-3(N+1)}{1-\tfrac{1}{(N^3-N)} \sum t_{r(i)}^3 - t_{r(i)}}" data-equation="eq:kruskal_test_statistic">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e1fbdee688c5409e4cc6b0cd06d90b1cd2abd67c/lib/node_modules/@stdlib/stats/kruskal-test/docs/img/equation_kruskal_test_statistic.svg" alt="Equation for the Kruskal-Wallis test statistic.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

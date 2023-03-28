@@ -28,10 +28,14 @@ For a window of size `W`, the [mean directional accuracy][mean-directional-accur
 
 <!-- <equation class="equation" label="eq:mean_directional_accuracy" align="center" raw="\operatorname{MDA} = \begin{cases} 1 & \textrm{if}\ W = 1 \\ \frac{1}{W} \sum_{i=1}^{W} \delta_{\operatorname{sgn}(\Delta f_{i,i-1}),\ \operatorname{sgn}(\Delta a_{i,i-1})} & \textrm{if}\ W > 1 \end{cases}" alt="Equation for the mean directional accuracy."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{MDA} = \begin{cases} 1 & \textrm{if}\ W = 1 \\\frac{1}{W} \sum_{i=1}^{W} \delta_{\operatorname{sgn}(\Delta f_{i,i-1}),\ \operatorname{sgn}(\Delta a_{i,i-1})} & \textrm{if}\ W > 1 \end{cases}" data-equation="eq:mean_directional_accuracy">
+```math
+\operatorname{MDA} = \begin{cases} 1 & \textrm{if}\ W = 1 \\ \frac{1}{W} \sum_{i=1}^{W} \delta_{\operatorname{sgn}(\Delta f_{i,i-1}),\ \operatorname{sgn}(\Delta a_{i,i-1})} & \textrm{if}\ W > 1 \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{MDA} = \begin{cases} 1 & \textrm{if}\ W = 1 \\\frac{1}{W} \sum_{i=1}^{W} \delta_{\operatorname{sgn}(\Delta f_{i,i-1}),\ \operatorname{sgn}(\Delta a_{i,i-1})} & \textrm{if}\ W > 1 \end{cases}" data-equation="eq:mean_directional_accuracy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@99730afbace8256ce53cfbc0714c7f3cac92466a/lib/node_modules/@stdlib/stats/incr/mmda/docs/img/equation_mean_directional_accuracy.svg" alt="Equation for the mean directional accuracy.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -33,39 +33,63 @@ COMMITIZEN ?= $(BIN_DIR)/cz
 # RULES #
 
 #/
-# Provides an interactive prompt for entering commit message information in accordance with project Git commit conventions.
+# Performs initialization tasks.
 #
 # ## Notes
 #
 # -   We have to temporarily move the `tsconfig` file, as `commitlint` (erroneously) attempts to use the file for compiling TypeScript.
+#
+# @private
+#
+# @example
+# make commitlint-init
+#/
+commitizen-init:
+ifneq ("$(wildcard $(ROOT_DIR)/tsconfig.json)", "")
+	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
+endif
+
+.PHONY: commitizen-init
+
+#/
+# Performs clean-up tasks.
+#
+# @private
+#
+# @example
+# make commitizen-cleanup
+#/
+commitizen-cleanup:
+ifneq ("$(wildcard $(ROOT_DIR)/tsconfig.json.tmp)", "")
+	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
+endif
+
+.PHONY: commitizen-cleanup
+
+#/
+# Provides an interactive prompt for entering commit message information in accordance with project Git commit conventions.
 #
 # @private
 #
 # @example
 # make commitizen-commit
 #/
-commitizen-commit: $(NODE_MODULES) $(COMMITIZEN)
-	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(COMMITIZEN)" || (mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1)
-	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
+commitizen-commit: $(NODE_MODULES) $(COMMITIZEN) commitizen-init
+	$(QUIET) "$(COMMITIZEN)" || ($(MAKE) -f $(this_file) commitizen-cleanup && exit 1)
+	$(QUIET) $(MAKE) -f $(this_file) commitizen-cleanup
 
 .PHONY: commitizen-commit
 
 #/
 # Retries a previous commit entered using Commitizen.
 #
-# ## Notes
-#
-# -   We have to temporarily move the `tsconfig` file, as `commitlint` (erroneously) attempts to use the file for compiling TypeScript.
-#
 # @private
 #
 # @example
 # make commitizen-retry-commit
 #/
-commitizen-retry-commit: $(NODE_MODULES) $(COMMITIZEN)
-	$(QUIET) mv $(ROOT_DIR)/tsconfig.json $(ROOT_DIR)/tsconfig.json.tmp
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(COMMITIZEN)" --retry || (mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json && exit 1)
-	$(QUIET) mv $(ROOT_DIR)/tsconfig.json.tmp $(ROOT_DIR)/tsconfig.json
+commitizen-retry-commit: $(NODE_MODULES) $(COMMITIZEN) commitizen-init
+	$(QUIET) "$(COMMITIZEN)" --retry || ($(MAKE) -f $(this_file) commitizen-cleanup && exit 1)
+	$(QUIET) $(MAKE) -f $(this_file) commitizen-cleanup
 
 .PHONY: commitizen-retry-commit

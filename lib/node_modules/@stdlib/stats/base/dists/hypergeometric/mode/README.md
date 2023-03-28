@@ -30,10 +30,14 @@ Imagine a scenario with a population of size `N`, of which a subpopulation of si
 
 <!-- <equation class="equation" label="eq:hypergeometric_mode" align="center" raw="\operatorname{mode}\left( X \right) = \left\lfloor {\frac{(n+1)(K+1)}{N+2}}\right\rfloor" alt="Mode for a hypergeometric distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \left\lfloor {\frac{(n+1)(K+1)}{N+2}}\right\rfloor" data-equation="eq:hypergeometric_mode">
+```math
+\operatorname{mode}\left( X \right) = \left\lfloor {\frac{(n+1)(K+1)}{N+2}}\right\rfloor
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \left\lfloor {\frac{(n+1)(K+1)}{N+2}}\right\rfloor" data-equation="eq:hypergeometric_mode">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/hypergeometric/mode/docs/img/equation_hypergeometric_mode.svg" alt="Mode for a hypergeometric distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

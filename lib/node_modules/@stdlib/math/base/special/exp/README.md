@@ -28,10 +28,14 @@ The natural [exponential function][exponential-function] is defined as
 
 <!-- <equation class="equation" label="eq:natural_exponential_function" align="center" raw="y = e^x" alt="Natural exponential function definition"> -->
 
-<div class="equation" align="center" data-raw-text="y = e^x" data-equation="eq:natural_exponential_function">
+```math
+y = e^x
+```
+
+<!-- <div class="equation" align="center" data-raw-text="y = e^x" data-equation="eq:natural_exponential_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@117273e7c4f27b0835723c2940d9675af0e14cb7/lib/node_modules/@stdlib/math/base/special/exp/docs/img/equation_natural_exponential_function.svg" alt="Natural exponential function definition">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

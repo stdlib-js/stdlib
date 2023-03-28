@@ -28,10 +28,14 @@ The [probability density function][pdf] (PDF) for a [triangular][triangular-dist
 
 <!-- <equation class="equation" label="eq:triangular_pdf" align="center" raw="f(x;a,b,c)=\begin{cases} 0 & \text{for } x < a \\ \frac{2(x-a)}{(b-a)(c-a)} & \text{for } a \le x < c \\ \frac{2}{b-a} & \text{for } x = c \\ \frac{2(b-x)}{(b-a)(b-c)} & \text{for } c < x \le b \\ 0 & \text{for } b < x \end{cases}" alt="Probability density function (PDF) for a triangular distribution."> -->
 
-<div class="equation" align="center" data-raw-text="f(x;a,b,c)=\begin{cases} 0 &amp; \text{for } x &lt; a \\ \frac{2(x-a)}{(b-a)(c-a)} &amp; \text{for } a \le x &lt; c \\ \frac{2}{b-a} &amp; \text{for } x = c \\ \frac{2(b-x)}{(b-a)(b-c)} &amp; \text{for } c &lt; x \le b \\ 0 &amp; \text{for } b &lt; x \end{cases}" data-equation="eq:triangular_pdf">
+```math
+f(x;a,b,c)=\begin{cases} 0 & \text{for } x < a \\ \frac{2(x-a)}{(b-a)(c-a)} & \text{for } a \le x < c \\ \frac{2}{b-a} & \text{for } x = c \\ \frac{2(b-x)}{(b-a)(b-c)} & \text{for } c < x \le b \\ 0 & \text{for } b < x \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(x;a,b,c)=\begin{cases} 0 &amp; \text{for } x &lt; a \\ \frac{2(x-a)}{(b-a)(c-a)} &amp; \text{for } a \le x &lt; c \\ \frac{2}{b-a} &amp; \text{for } x = c \\ \frac{2(b-x)}{(b-a)(b-c)} &amp; \text{for } c &lt; x \le b \\ 0 &amp; \text{for } b &lt; x \end{cases}" data-equation="eq:triangular_pdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/triangular/logpdf/docs/img/equation_triangular_pdf.svg" alt="Probability density function (PDF) for a triangular distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

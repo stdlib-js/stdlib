@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for a [logistic][logistic-distribution] random v
 
 <!-- <equation class="equation" label="eq:logistic_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 1.2" alt="Excess kurtosis for a logistic distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 1.2" data-equation="eq:logistic_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = 1.2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 1.2" data-equation="eq:logistic_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/logistic/kurtosis/docs/img/equation_logistic_kurtosis.svg" alt="Excess kurtosis for a logistic distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

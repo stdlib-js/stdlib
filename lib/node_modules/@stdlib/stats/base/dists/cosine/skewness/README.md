@@ -30,10 +30,14 @@ The [skewness][skewness] for a [raised cosine][cosine-distribution] random varia
 
 <!-- <equation class="equation" label="eq:cosine_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 0" alt="Skewness for a raised cosine distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:cosine_skewness">
+```math
+\operatorname{skew}\left( X \right) = 0
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:cosine_skewness">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/cosine/skewness/docs/img/equation_cosine_skewness.svg" alt="Skewness for a raised cosine distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

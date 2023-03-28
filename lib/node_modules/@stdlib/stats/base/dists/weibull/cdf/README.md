@@ -28,10 +28,14 @@ The [cumulative distribution function][cdf] for a [Weibull][weibull-distribution
 
 <!-- <equation class="equation" label="eq:weibull_cdf" align="center" raw="F(x;\lambda, k) =\begin{cases}1- e^{-(x/\lambda)^k} & x \geq 0 \\ 0 & x<0\end{cases}" alt="Cumulative distribution function for a Weibull distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x;\lambda, k) =\begin{cases}1- e^{-(x/\lambda)^k} &amp; x \geq 0 \\ 0 &amp; x&lt;0\end{cases}" data-equation="eq:weibull_cdf">
+```math
+F(x;\lambda, k) =\begin{cases}1- e^{-(x/\lambda)^k} & x \geq 0 \\ 0 & x<0\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x;\lambda, k) =\begin{cases}1- e^{-(x/\lambda)^k} &amp; x \geq 0 \\ 0 &amp; x&lt;0\end{cases}" data-equation="eq:weibull_cdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/weibull/cdf/docs/img/equation_weibull_cdf.svg" alt="Cumulative distribution function for a Weibull distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

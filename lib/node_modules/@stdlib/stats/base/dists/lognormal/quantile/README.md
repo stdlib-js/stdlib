@@ -28,10 +28,14 @@ The [quantile function][quantile-function] for a [lognormal][lognormal-distribut
 
 <!-- <equation class="equation" label="eq:quantile_function" align="center" raw="Q(p;\mu,\sigma)=\exp\left( \mu + \sigma \Phi^{-1}(p) \right )" alt="Quantile function for a lognormal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="Q(p;\mu,\sigma)=\exp\left( \mu + \sigma \Phi^{-1}(p) \right )" data-equation="eq:quantile_function">
+```math
+Q(p;\mu,\sigma)=\exp\left( \mu + \sigma \Phi^{-1}(p) \right )
+```
+
+<!-- <div class="equation" align="center" data-raw-text="Q(p;\mu,\sigma)=\exp\left( \mu + \sigma \Phi^{-1}(p) \right )" data-equation="eq:quantile_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/lognormal/quantile/docs/img/equation_quantile_function.svg" alt="Quantile function for a lognormal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

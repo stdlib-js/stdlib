@@ -28,10 +28,14 @@ The cumulative product is defined as
 
 <!-- <equation class="equation" label="eq:cumulative_product" align="center" raw="\begin{align*} p_0 &= x_0 \\ p_1 &= x_1 \cdot p_0 \\ p_2 &= x_2 \cdot p_1 \\ p_n &= x_n \cdot p_{n-1} = x_n \cdot \prod_{i=0}^{n-1} x_i \end{align*}" alt="Equation for the cumulative product."> -->
 
-<div class="equation" align="center" data-raw-text="\begin{align*} p_0 &amp;= x_0 \\ p_1 &amp;= x_1 \cdot p_0 \\ p_2 &amp;= x_2 \cdot p_1 \\ p_n &amp;= x_n \cdot p_{n-1} = x_n \cdot \prod_{i=0}^{n-1} x_i \end{align*}" data-equation="eq:cumulative_product">
+```math
+\begin{align*} p_0 &= x_0 \\ p_1 &= x_1 \cdot p_0 \\ p_2 &= x_2 \cdot p_1 \\ p_n &= x_n \cdot p_{n-1} = x_n \cdot \prod_{i=0}^{n-1} x_i \end{align*}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\begin{align*} p_0 &amp;= x_0 \\ p_1 &amp;= x_1 \cdot p_0 \\ p_2 &amp;= x_2 \cdot p_1 \\ p_n &amp;= x_n \cdot p_{n-1} = x_n \cdot \prod_{i=0}^{n-1} x_i \end{align*}" data-equation="eq:cumulative_product">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e70489fe2d16d2496f77b516c791cf5c0c078ae1/lib/node_modules/@stdlib/stats/iter/cuprod/docs/img/equation_cumulative_product.svg" alt="Equation for the cumulative product.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

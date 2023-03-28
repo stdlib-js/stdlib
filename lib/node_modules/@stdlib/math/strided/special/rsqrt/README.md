@@ -28,10 +28,14 @@ The reciprocal of the principal [square root][@stdlib/math/base/special/rsqrt] i
 
 <!-- <equation class="equation" label="eq:reciprocal_square_root" align="center" raw="\operatorname{rsqrt}(x)=\frac{1}{\sqrt{x}}" alt="Reciprocal square root"> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{rsqrt}(x)=\frac{1}{\sqrt{x}}" data-equation="eq:reciprocal_square_root">
+```math
+\operatorname{rsqrt}(x)=\frac{1}{\sqrt{x}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{rsqrt}(x)=\frac{1}{\sqrt{x}}" data-equation="eq:reciprocal_square_root">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@aef240872db6f1b5417518bfaa8248004af4ffba/lib/node_modules/@stdlib/math/strided/special/rsqrt/docs/img/equation_reciprocal_square_root.svg" alt="Reciprocal square root">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

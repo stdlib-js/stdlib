@@ -28,10 +28,14 @@ The [Heaviside function][heaviside-function] is defined as
 
 <!-- <equation class="equation" label="eq:heaviside_function" align="center" raw="H(x) = \begin{cases} 1 & \textrm{if}\ x \gt 0 \\ 0 & \textrm{if}\ x \lt 0\end{cases}" alt="Heaviside function."> -->
 
-<div class="equation" align="center" data-raw-text="H(x) = \begin{cases} 1 &amp; \textrm{if}\ x \gt 0 \\ 0 &amp; \textrm{if}\ x \lt 0\end{cases}" data-equation="eq:heaviside_function">
+```math
+H(x) = \begin{cases} 1 & \textrm{if}\ x \gt 0 \\ 0 & \textrm{if}\ x \lt 0\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="H(x) = \begin{cases} 1 &amp; \textrm{if}\ x \gt 0 \\ 0 &amp; \textrm{if}\ x \lt 0\end{cases}" data-equation="eq:heaviside_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/heaviside/docs/img/equation_heaviside_function.svg" alt="Heaviside function.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -39,10 +43,14 @@ and is discontinuous at `0`. Depending on the context, the [Heaviside function][
 
 <!-- <equation class="equation" label="eq:heaviside_function_half_maximum" align="center" raw="H(x) = \begin{cases} x & \textrm{if}\ x \gt 0 \\ \frac{1}{2} & \textrm{if}\ x = 0 \\ 0 & \textrm{if}\ x \lt 0\end{cases}" alt="Heaviside function half-maximum."> -->
 
-<div class="equation" align="center" data-raw-text="H(x) = \begin{cases} x &amp; \textrm{if}\ x \gt 0 \\ \frac{1}{2} &amp; \textrm{if}\ x = 0 \\ 0 &amp; \textrm{if}\ x \lt 0\end{cases}" data-equation="eq:heaviside_function_half_maximum">
+```math
+H(x) = \begin{cases} x & \textrm{if}\ x \gt 0 \\ \frac{1}{2} & \textrm{if}\ x = 0 \\ 0 & \textrm{if}\ x \lt 0\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="H(x) = \begin{cases} x &amp; \textrm{if}\ x \gt 0 \\ \frac{1}{2} &amp; \textrm{if}\ x = 0 \\ 0 &amp; \textrm{if}\ x \lt 0\end{cases}" data-equation="eq:heaviside_function_half_maximum">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/heaviside/docs/img/equation_heaviside_function_half_maximum.svg" alt="Heaviside function half-maximum.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -50,10 +58,14 @@ To define the [Heaviside function][heaviside-function] as a left-continuous func
 
 <!-- <equation class="equation" label="eq:heaviside_function_left_continuous" align="center" raw="H(x) = \begin{cases} x & \textrm{if}\ x \gt 0 \\ 0 & \textrm{if}\ x \leq 0\end{cases}" alt="Heaviside function left-continuous."> -->
 
-<div class="equation" align="center" data-raw-text="H(x) = \begin{cases} x &amp; \textrm{if}\ x \gt 0 \\ 0 &amp; \textrm{if}\ x \leq 0\end{cases}" data-equation="eq:heaviside_function_left_continuous">
+```math
+H(x) = \begin{cases} x & \textrm{if}\ x \gt 0 \\ 0 & \textrm{if}\ x \leq 0\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="H(x) = \begin{cases} x &amp; \textrm{if}\ x \gt 0 \\ 0 &amp; \textrm{if}\ x \leq 0\end{cases}" data-equation="eq:heaviside_function_left_continuous">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/heaviside/docs/img/equation_heaviside_function_left_continuous.svg" alt="Heaviside function left-continuous.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -61,10 +73,14 @@ To define the [Heaviside function][heaviside-function] as a right-continuous fun
 
 <!-- <equation class="equation" label="eq:heaviside_function_right_continuous" align="center" raw="H(x) = \begin{cases} x & \textrm{if}\ x \geq 0 \\ 0 & \textrm{if}\ x \lt 0\end{cases}" alt="Heaviside function right-continuous."> -->
 
-<div class="equation" align="center" data-raw-text="H(x) = \begin{cases} x &amp; \textrm{if}\ x \geq 0 \\ 0 &amp; \textrm{if}\ x \lt 0\end{cases}" data-equation="eq:heaviside_function_right_continuous">
+```math
+H(x) = \begin{cases} x & \textrm{if}\ x \geq 0 \\ 0 & \textrm{if}\ x \lt 0\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="H(x) = \begin{cases} x &amp; \textrm{if}\ x \geq 0 \\ 0 &amp; \textrm{if}\ x \lt 0\end{cases}" data-equation="eq:heaviside_function_right_continuous">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/heaviside/docs/img/equation_heaviside_function_right_continuous.svg" alt="Heaviside function right-continuous.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

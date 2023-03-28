@@ -30,10 +30,14 @@ A Lanczos pulse waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:lanczos_pulse_waveform" align="center" raw="f(t; T, \tau, a, \varphi) = \begin{cases}\operatorname{sinc}\biggl( \frac{2(t-\varphi)}{\tau-1} - 1\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}" alt="Equation for a Lanczos pulse waveform."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; T, \tau, a, \varphi) = \begin{cases}\operatorname{sinc}\biggl( \frac{2(t-\varphi)}{\tau-1} - 1\biggr) &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:lanczos_pulse_waveform">
+```math
+f(t; T, \tau, a, \varphi) = \begin{cases}\operatorname{sinc}\biggl( \frac{2(t-\varphi)}{\tau-1} - 1\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; T, \tau, a, \varphi) = \begin{cases}\operatorname{sinc}\biggl( \frac{2(t-\varphi)}{\tau-1} - 1\biggr) &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:lanczos_pulse_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@4fa8f0c0d831199775879b44805649a741cf37ce/lib/node_modules/@stdlib/simulate/iter/lanczos-pulse/docs/img/equation_lanczos_pulse_waveform.svg" alt="Equation for a Lanczos pulse waveform.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

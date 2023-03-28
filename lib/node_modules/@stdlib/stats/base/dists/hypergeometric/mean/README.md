@@ -30,10 +30,14 @@ Imagine a scenario with a population of size `N`, of which a subpopulation of si
 
 <!-- <equation class="equation" label="eq:hypergeometric_mean" align="center" raw="\mathbb{E} \left[ X \right] = n{K \over N}" alt="Mean for a hypergeometric distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbb{E} \left[ X \right] = n{K \over N}" data-equation="eq:hypergeometric_mean">
+```math
+\mathbb{E} \left[ X \right] = n{K \over N}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbb{E} \left[ X \right] = n{K \over N}" data-equation="eq:hypergeometric_mean">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/hypergeometric/mean/docs/img/equation_hypergeometric_mean.svg" alt="Mean for a hypergeometric distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

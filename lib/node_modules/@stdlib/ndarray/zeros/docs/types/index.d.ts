@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType } from '@stdlib/types/ndarray';
+import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType, Mode } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing function options.
@@ -34,6 +34,21 @@ interface Options {
 	* -   If provided, this option overrides the input array's inferred order.
 	*/
 	order?: Order;
+
+	/**
+	* Specifies how to handle a linear index which exceeds array dimensions (default: 'throw').
+	*/
+	mode?: Mode;
+
+	/**
+	* Specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw']).
+	*/
+	submode?: Array<Mode>;
+
+	/**
+	* Boolean indicating whether an array should be read-only (default: false).
+	*/
+	readonly?: boolean;
 }
 
 /**
@@ -211,6 +226,9 @@ interface OptionsWithDType extends Options {
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -234,6 +252,9 @@ declare function zeros( shape: Shape | number, options: Float64Options ): float6
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -257,6 +278,9 @@ declare function zeros( shape: Shape | number, options: Float32Options ): float3
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -280,6 +304,9 @@ declare function zeros( shape: Shape | number, options: Complex128Options ): com
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -303,6 +330,9 @@ declare function zeros( shape: Shape | number, options: Complex64Options ): comp
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -326,6 +356,9 @@ declare function zeros( shape: Shape | number, options: Int32Options ): int32nda
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -349,6 +382,9 @@ declare function zeros( shape: Shape | number, options: Int16Options ): int16nda
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -372,6 +408,9 @@ declare function zeros( shape: Shape | number, options: Int8Options ): int8ndarr
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -395,6 +434,9 @@ declare function zeros( shape: Shape | number, options: Uint32Options ): uint32n
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -418,6 +460,9 @@ declare function zeros( shape: Shape | number, options: Uint16Options ): uint16n
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -441,6 +486,9 @@ declare function zeros( shape: Shape | number, options: Uint8Options ): uint8nda
 * @param options - options
 * @param options.dtype - underlying data type
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -464,6 +512,9 @@ declare function zeros( shape: Shape | number, options: Uint8COptions ): uint8cn
 * @param options - options
 * @param options.dtype - underlying data type (default: 'float64')
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -485,6 +536,9 @@ declare function zeros( shape: Shape | number, options?: Options ): float64ndarr
 * @param options - options
 * @param options.dtype - underlying data type (default: 'float64')
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example

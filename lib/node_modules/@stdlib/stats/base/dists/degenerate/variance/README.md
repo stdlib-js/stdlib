@@ -30,10 +30,14 @@ The [variance][variance] for a [degenerate][degenerate-distribution] random vari
 
 <!-- <equation class="equation" label="eq:degenerate_variance" align="center" raw="\operatorname{Var}\left( X \right) = 0" alt="Variance for a degenerate distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = 0" data-equation="eq:degenerate_variance">
+```math
+\operatorname{Var}\left( X \right) = 0
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = 0" data-equation="eq:degenerate_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e1fbdee688c5409e4cc6b0cd06d90b1cd2abd67c/lib/node_modules/@stdlib/stats/base/dists/degenerate/variance/docs/img/equation_degenerate_variance.svg" alt="Variance for a degenerate distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

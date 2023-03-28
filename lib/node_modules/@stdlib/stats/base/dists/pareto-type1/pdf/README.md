@@ -28,10 +28,14 @@ The [probability density function][pdf] (PDF) for a [Pareto (Type I)][pareto-dis
 
 <!-- <equation class="equation" label="eq:pareto_type1_pdf" align="center" raw="f(x;\alpha,\beta) = \begin{cases} \frac{\alpha\,\beta^\alpha}{x^{\alpha+1}} & \text{ for }x\ge \beta \\ 0 & \text{otherwise} \end{cases}" alt="Probability density function (PDF) for a Pareto (Type I) distribution."> -->
 
-<div class="equation" align="center" data-raw-text="f(x;\alpha,\beta) = \begin{cases} \frac{\alpha\,\beta^\alpha}{x^{\alpha+1}} &amp; \text{ for }x\ge \beta \\ 0 &amp; \text{otherwise} \end{cases}" data-equation="eq:pareto_type1_pdf">
+```math
+f(x;\alpha,\beta) = \begin{cases} \frac{\alpha\,\beta^\alpha}{x^{\alpha+1}} & \text{ for }x\ge \beta \\ 0 & \text{otherwise} \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(x;\alpha,\beta) = \begin{cases} \frac{\alpha\,\beta^\alpha}{x^{\alpha+1}} &amp; \text{ for }x\ge \beta \\ 0 &amp; \text{otherwise} \end{cases}" data-equation="eq:pareto_type1_pdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/pareto-type1/pdf/docs/img/equation_pareto_type1_pdf.svg" alt="Probability density function (PDF) for a Pareto (Type I) distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

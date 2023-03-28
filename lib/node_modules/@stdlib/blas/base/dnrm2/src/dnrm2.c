@@ -22,7 +22,7 @@
 /**
 * Computes the L2-norm of a double-precision floating-point vector.
 *
-* @param N       number of values over which to compute the norm
+* @param N       number of indexed elements
 * @param X       input array
 * @param stride  stride length
 * @return        output value

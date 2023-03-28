@@ -28,10 +28,14 @@ The [mean error][mean-absolute-error] is defined as
 
 <!-- <equation class="equation" label="eq:mean_error" align="center" raw="\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)" alt="Equation for the mean error."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)" data-equation="eq:mean_error">
+```math
+\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)" data-equation="eq:mean_error">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7d6e6319f451be0997d35a6cf491b08e1f2cb5cf/lib/node_modules/@stdlib/stats/incr/me/docs/img/equation_mean_error.svg" alt="Equation for the mean error.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

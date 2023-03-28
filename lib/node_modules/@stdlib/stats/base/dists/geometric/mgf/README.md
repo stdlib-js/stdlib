@@ -30,10 +30,14 @@ The [moment-generating function][mgf] for a [geometric][geometric-distribution] 
 
 <!-- <equation class="equation" label="eq:geometric_mgf_function" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{pe^t}{1-(1-p) e^t} \text{ for } t<-\ln(1-p)" alt="Moment-generating function (MGF) for a geometric distribution."> -->
 
-<div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{pe^t}{1-(1-p) e^t} \text{ for } t&lt;-\ln(1-p)" data-equation="eq:geometric_mgf_function">
+```math
+M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{pe^t}{1-(1-p) e^t} \text{ for } t<-\ln(1-p)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{pe^t}{1-(1-p) e^t} \text{ for } t&lt;-\ln(1-p)" data-equation="eq:geometric_mgf_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/geometric/mgf/docs/img/equation_geometric_mgf_function.svg" alt="Moment-generating function (MGF) for a geometric distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

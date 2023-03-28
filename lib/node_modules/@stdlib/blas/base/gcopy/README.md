@@ -44,13 +44,13 @@ gcopy( x.length, x, 1, y, 1 );
 
 The function has the following parameters:
 
--   **N**: number of values to copy.
+-   **N**: number of indexed elements.
 -   **x**: input array.
 -   **strideX**: index increment for `x`.
 -   **y**: destination array.
 -   **strideY**: index increment for `y`.
 
-The `N` and `stride` parameters determine how values from `x` are copied into `y`. For example, to copy in reverse order every other value in `x` into the first `N` elements of `y`,
+The `N` and stride parameters determine how values from `x` are copied into `y`. For example, to copy in reverse order every other value in `x` into the first `N` elements of `y`,
 
 ```javascript
 var x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
@@ -97,7 +97,7 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offsetX` and `offsetY` parameters support indexing semantics based on starting indices. For example, to copy every other value in `x` starting from the second value into the last `N` elements in `y` where `x[i] = y[n]`, `x[i+2] = y[n-1]`,...,
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to copy every other value in `x` starting from the second value into the last `N` elements in `y` where `x[i] = y[n]`, `x[i+2] = y[n-1]`,...,
 
 ```javascript
 var x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];

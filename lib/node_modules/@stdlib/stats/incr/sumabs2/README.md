@@ -28,10 +28,14 @@ The sum of squared absolute values is defined as
 
 <!-- <equation class="equation" label="eq:sum_squared_absolute_values" align="center" raw="s = \sum_{i=0}^{n-1} x_i^2" alt="Equation for the sum of squared absolute values."> -->
 
-<div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{n-1} x_i^2" data-equation="eq:sum_squared_absolute_values">
+```math
+s = \sum_{i=0}^{n-1} x_i^2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{n-1} x_i^2" data-equation="eq:sum_squared_absolute_values">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5278c8e8327430b39dd12985f7dac6d5f8033d34/lib/node_modules/@stdlib/stats/incr/sumabs2/docs/img/equation_sum_squared_absolute_values.svg" alt="Equation for the sum of squared absolute values.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -28,10 +28,14 @@ For a window of size `W`, the [mean error][mean-absolute-error] is defined as
 
 <!-- <equation class="equation" label="eq:mean_error" align="center" raw="\operatorname{ME} = \frac{1}{W} \sum_{i=0}^{W-1} (y_i - x_i)" alt="Equation for the mean error."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{ME} = \frac{1}{W} \sum_{i=0}^{W-1} (y_i - x_i)" data-equation="eq:mean_error">
+```math
+\operatorname{ME} = \frac{1}{W} \sum_{i=0}^{W-1} (y_i - x_i)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{ME} = \frac{1}{W} \sum_{i=0}^{W-1} (y_i - x_i)" data-equation="eq:mean_error">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@634ac3689760e2f57fd51085f387d8dc5bb3b927/lib/node_modules/@stdlib/stats/incr/mme/docs/img/equation_mean_error.svg" alt="Equation for the mean error.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

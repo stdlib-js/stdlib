@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for a [raised cosine][cosine-distribution] rando
 
 <!-- <equation class="equation" label="eq:cosine_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{6(90-\pi^{4})}{5(\pi^{2}-6)^{2}}" alt="Excess kurtosis for a raised cosine distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{6(90-\pi^{4})}{5(\pi^{2}-6)^{2}}" data-equation="eq:cosine_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = \frac{6(90-\pi^{4})}{5(\pi^{2}-6)^{2}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{6(90-\pi^{4})}{5(\pi^{2}-6)^{2}}" data-equation="eq:cosine_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/cosine/kurtosis/docs/img/equation_cosine_kurtosis.svg" alt="Excess kurtosis for a raised cosine distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -90,7 +90,7 @@
 * }
 *
 * // Create an output ndarray:
-* struct ndarray *y = stdlib_ndarray_allocate( xydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
+* struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
 * if ( y == NULL ) {
 *     fprintf( stderr, "Error allocating memory.\n" );
 *     exit( EXIT_FAILURE );

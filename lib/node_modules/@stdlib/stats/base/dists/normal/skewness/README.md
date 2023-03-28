@@ -30,10 +30,14 @@ The [skewness][skewness] for a [normal][normal-distribution] random variable wit
 
 <!-- <equation class="equation" label="eq:normal_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 0" alt="Skewness for a normal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:normal_skewness">
+```math
+\operatorname{skew}\left( X \right) = 0
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:normal_skewness">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/normal/skewness/docs/img/equation_normal_skewness.svg" alt="Skewness for a normal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

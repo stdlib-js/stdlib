@@ -30,10 +30,14 @@ A sine waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:sine_waveform" align="center" raw="f(t; \tau, a, \varphi) = a \sin \frac{2\pi(t-\varphi)}{\tau}" alt="Equation for a sine waveform."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; \tau, a, \varphi) = a \sin \frac{2\pi(t-\varphi)}{\tau}" data-equation="eq:sine_waveform">
+```math
+f(t; \tau, a, \varphi) = a \sin \frac{2\pi(t-\varphi)}{\tau}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; \tau, a, \varphi) = a \sin \frac{2\pi(t-\varphi)}{\tau}" data-equation="eq:sine_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5827c258000edcb03496265cdfd372d686b4c656/lib/node_modules/@stdlib/simulate/iter/sine-wave/docs/img/equation_sine_waveform.svg" alt="Equation for a sine waveform.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

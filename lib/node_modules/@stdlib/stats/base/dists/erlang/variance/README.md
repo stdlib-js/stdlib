@@ -30,10 +30,14 @@ The [variance][variance] for an [Erlang][erlang-distribution] random variable is
 
 <!-- <equation class="equation" label="eq:erlang_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{k}{\lambda^{2}}" alt="Variance for an Erlang distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{k}{\lambda^{2}}" data-equation="eq:erlang_variance">
+```math
+\operatorname{Var}\left( X \right) = \frac{k}{\lambda^{2}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{k}{\lambda^{2}}" data-equation="eq:erlang_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/erlang/variance/docs/img/equation_erlang_variance.svg" alt="Variance for an Erlang distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

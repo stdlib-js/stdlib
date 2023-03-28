@@ -30,10 +30,14 @@ The [differential entropy][entropy] (in [nats][nats]) for a [Weibull][weibull-di
 
 <!-- <equation class="equation" label="eq:weibull_entropy" align="center" raw="h\left( X \right) = \gamma(1-1/k)+\ln(\lambda/k)+1" alt="Differential entropy for a Weibull distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = \gamma(1-1/k)+\ln(\lambda/k)+1" data-equation="eq:weibull_entropy">
+```math
+h\left( X \right) = \gamma(1-1/k)+\ln(\lambda/k)+1
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = \gamma(1-1/k)+\ln(\lambda/k)+1" data-equation="eq:weibull_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/weibull/entropy/docs/img/equation_weibull_entropy.svg" alt="Differential entropy for a Weibull distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

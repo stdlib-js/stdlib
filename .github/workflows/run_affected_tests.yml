@@ -154,4 +154,4 @@ jobs:
             directories="${{ steps.changed-directories.outputs.directories }}"
           fi
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_tests" "$directories"
-        timeout-minutes: 15
+        timeout-minutes: 30

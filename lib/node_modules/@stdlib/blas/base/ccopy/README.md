@@ -56,7 +56,7 @@ var im = imagf( z );
 
 The function has the following parameters:
 
--   **N**: number of values to copy.
+-   **N**: number of indexed elements.
 -   **x**: input [`Complex64Array`][@stdlib/array/complex64].
 -   **strideX**: index increment for `x`.
 -   **y**: destination [`Complex64Array`][@stdlib/array/complex64].

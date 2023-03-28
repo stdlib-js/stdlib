@@ -30,10 +30,14 @@ The [mode][mode] for a [binomial][binomial-distribution] random variable is
 
 <!-- <equation class="equation" label="eq:binomial_mode" align="center" raw="\operatorname{mode}\left( X \right) = \lfloor (n+1)p \rfloor" alt="Mode for a binomial distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \lfloor (n+1)p \rfloor" data-equation="eq:binomial_mode">
+```math
+\operatorname{mode}\left( X \right) = \lfloor (n+1)p \rfloor
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \lfloor (n+1)p \rfloor" data-equation="eq:binomial_mode">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/binomial/mode/docs/img/equation_binomial_mode.svg" alt="Mode for a binomial distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

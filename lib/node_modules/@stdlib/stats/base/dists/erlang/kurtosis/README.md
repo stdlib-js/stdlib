@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for an [Erlang][erlang-distribution] random vari
 
 <!-- <equation class="equation" label="eq:erlang_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{6}{k}" alt="Excess kurtosis for an Erlang distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{6}{k}" data-equation="eq:erlang_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = \frac{6}{k}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{6}{k}" data-equation="eq:erlang_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/erlang/kurtosis/docs/img/equation_erlang_kurtosis.svg" alt="Excess kurtosis for an Erlang distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

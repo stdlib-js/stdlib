@@ -30,10 +30,14 @@ The [moment-generating function][mgf] for a [degenerate][degenerate] random vari
 
 <!-- <equation class="equation" label="eq:degenerate_mgf" align="center" raw="M_X(t) := e^{\mu t}" alt="Moment-generating function (MGF) of a degenerate distribution."> -->
 
-<div class="equation" align="center" data-raw-text="M_X(t) := e^{\mu t}" data-equation="eq:degenerate_mgf">
+```math
+M_X(t) := e^{\mu t}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="M_X(t) := e^{\mu t}" data-equation="eq:degenerate_mgf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/degenerate/mgf/docs/img/equation_degenerate_mgf.svg" alt="Moment-generating function (MGF) of a degenerate distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

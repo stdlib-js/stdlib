@@ -30,10 +30,14 @@ The [median][median] for a [normal][normal-distribution] random variable with me
 
 <!-- <equation class="equation" label="eq:normal_median" align="center" raw="\operatorname{Median}\left( X \right) = \mu" alt="Median for a normal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu" data-equation="eq:normal_median">
+```math
+\operatorname{Median}\left( X \right) = \mu
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu" data-equation="eq:normal_median">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/normal/median/docs/img/equation_normal_median.svg" alt="Median for a normal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

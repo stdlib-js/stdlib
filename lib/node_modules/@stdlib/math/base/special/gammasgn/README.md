@@ -28,10 +28,14 @@ The sign of the [gamma-function][@stdlib/math/base/special/gamma] is defined as
 
 <!-- <equation class="equation" label="eq:gamma_sign_function" align="center" raw="\operatorname{gammasgn} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 1 \\ -1 & \textrm{if}\ \Gamma < 1 \\ 0 & \textrm{otherwise}\ \end{cases}" alt="Sign of the gamma function"> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{gammasgn} ( x ) = \begin{cases} 1 &amp; \textrm{if}\ \Gamma &gt; 1 \\ -1 &amp; \textrm{if}\ \Gamma &lt; 1 \\ 0 &amp; \textrm{otherwise}\ \end{cases}" data-equation="eq:gamma_sign_function">
+```math
+\operatorname{gammasgn} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 1 \\ -1 & \textrm{if}\ \Gamma < 1 \\ 0 & \textrm{otherwise}\ \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{gammasgn} ( x ) = \begin{cases} 1 &amp; \textrm{if}\ \Gamma &gt; 1 \\ -1 &amp; \textrm{if}\ \Gamma &lt; 1 \\ 0 &amp; \textrm{otherwise}\ \end{cases}" data-equation="eq:gamma_sign_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@50b141156b147529227e2eb4247eda81c781dec9/lib/node_modules/@stdlib/math/base/special/gammasgn/docs/img/equation_gamma_sign_function.svg" alt="Sign of the gamma function">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -75,7 +79,7 @@ v = gammasgn( NaN );
 
 ## Notes
 
--    The [gamma function][@stdlib/math/base/special/gamma] is not defined for negative integer values (i.e., `gamma(x) === NaN` when `x` is a negative integer). The [natural logarithm of the gamma function][@stdlib/math/base/special/gammaln] is defined for negative integer values (i.e., `gammaln(x) === Infinity` when `x` is a negative integer). Accordingly, in order for the equality `gamma(x) === gammasgn(x) * exp(gammaln(x))` to hold (i.e., return `NaN`), `gammasgn` needs to either return `NaN` or `0`. By convention, this function returns `0`.
+-   The [gamma function][@stdlib/math/base/special/gamma] is not defined for negative integer values (i.e., `gamma(x) === NaN` when `x` is a negative integer). The [natural logarithm of the gamma function][@stdlib/math/base/special/gammaln] is defined for negative integer values (i.e., `gammaln(x) === Infinity` when `x` is a negative integer). Accordingly, in order for the equality `gamma(x) === gammasgn(x) * exp(gammaln(x))` to hold (i.e., return `NaN`), `gammasgn` needs to either return `NaN` or `0`. By convention, this function returns `0`.
 
 </section>
 

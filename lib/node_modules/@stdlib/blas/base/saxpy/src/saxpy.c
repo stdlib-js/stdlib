@@ -21,7 +21,7 @@
 /**
 * Multiplies a vector `X` by a constant and adds the result to `Y`.
 *
-* @param N        number of elements
+* @param N        number of indexed elements
 * @param alpha    scalar
 * @param X        input array
 * @param strideX  X stride length

@@ -30,10 +30,14 @@ The [differential entropy][entropy] for a [gumbel][gumbel-distribution] random v
 
 <!-- <equation class="equation" label="eq:gumbel_entropy" align="center" raw="h\left( X \right) = \ln(\beta )+\gamma+1" alt="Differential entropy for a gumbel distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = \ln(\beta )+\gamma+1" data-equation="eq:gumbel_entropy">
+```math
+h\left( X \right) = \ln(\beta )+\gamma+1
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = \ln(\beta )+\gamma+1" data-equation="eq:gumbel_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/gumbel/entropy/docs/img/equation_gumbel_entropy.svg" alt="Differential entropy for a gumbel distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

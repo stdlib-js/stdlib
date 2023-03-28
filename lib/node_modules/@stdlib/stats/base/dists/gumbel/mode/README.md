@@ -30,10 +30,14 @@ The [mode][mode] for a [Gumbel][gumbel-distribution] random variable with locati
 
 <!-- <equation class="equation" label="eq:gumbel_mode" align="center" raw="\operatorname{mode}\left( X \right) = \mu" alt="Mode for a Gumbel distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \mu" data-equation="eq:gumbel_mode">
+```math
+\operatorname{mode}\left( X \right) = \mu
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \mu" data-equation="eq:gumbel_mode">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/gumbel/mode/docs/img/equation_gumbel_mode.svg" alt="Mode for a Gumbel distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

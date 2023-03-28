@@ -30,10 +30,14 @@ The [skewness][skewness] for an [exponential][exponential-distribution] random v
 
 <!-- <equation class="equation" label="eq:exponential_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 2" alt="Skewness for an exponential distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 2" data-equation="eq:exponential_skewness">
+```math
+\operatorname{skew}\left( X \right) = 2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 2" data-equation="eq:exponential_skewness">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/exponential/skewness/docs/img/equation_exponential_skewness.svg" alt="Skewness for an exponential distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

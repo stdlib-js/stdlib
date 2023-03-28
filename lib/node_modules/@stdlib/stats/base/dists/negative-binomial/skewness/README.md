@@ -30,10 +30,14 @@ The [skewness][skewness] for a [negative binomial][negative-binomial-distributio
 
 <!-- <equation class="equation" label="eq:negative_binomial_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{1+p}{\sqrt{pr}}" alt="Skewness for a negative binomial distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{1+p}{\sqrt{pr}}" data-equation="eq:negative_binomial_skewness">
+```math
+\operatorname{skew}\left( X \right) = \frac{1+p}{\sqrt{pr}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{1+p}{\sqrt{pr}}" data-equation="eq:negative_binomial_skewness">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/negative-binomial/skewness/docs/img/equation_negative_binomial_skewness.svg" alt="Skewness for a negative binomial distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -30,10 +30,14 @@ The [variance][variance] for a [Lévy][levy-distribution] random variable with l
 
 <!-- <equation class="equation" label="eq:levy_variance" align="center" raw="\operatorname{Var}\left( X \right) = \infty" alt="Variance for a Lévy distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \infty" data-equation="eq:levy_variance">
+```math
+\operatorname{Var}\left( X \right) = \infty
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \infty" data-equation="eq:levy_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/levy/variance/docs/img/equation_levy_variance.svg" alt="Variance for a Lévy distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

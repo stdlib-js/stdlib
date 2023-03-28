@@ -28,10 +28,14 @@ For a window of size `W`, the [residual sum of squares][residual-sum-of-squares]
 
 <!-- <equation class="equation" label="eq:residual_sum_of_squares" align="center" raw="\operatorname{RSS} = \sum_{i=0}^{W-1} (y_i - x_i)^2" alt="Equation for the residual sum of squares."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{RSS} = \sum_{i=0}^{W-1} (y_i - x_i)^2" data-equation="eq:residual_sum_of_squares">
+```math
+\operatorname{RSS} = \sum_{i=0}^{W-1} (y_i - x_i)^2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{RSS} = \sum_{i=0}^{W-1} (y_i - x_i)^2" data-equation="eq:residual_sum_of_squares">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@df44d1456cc422c38a368a47b586b7eaffb19cc8/lib/node_modules/@stdlib/stats/incr/mrss/docs/img/equation_residual_sum_of_squares.svg" alt="Equation for the residual sum of squares.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

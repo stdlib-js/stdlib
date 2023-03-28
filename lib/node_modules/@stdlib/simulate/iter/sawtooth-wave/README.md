@@ -30,10 +30,14 @@ A sawtooth waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:sawtooth_waveform" align="center" raw="f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arctan} \tan \frac{\pi(t-\varphi)}{\tau}" alt="Equation for a sawtooth waveform."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arctan} \tan \frac{\pi(t-\varphi)}{\tau}" data-equation="eq:sawtooth_waveform">
+```math
+f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arctan} \tan \frac{\pi(t-\varphi)}{\tau}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arctan} \tan \frac{\pi(t-\varphi)}{\tau}" data-equation="eq:sawtooth_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5827c258000edcb03496265cdfd372d686b4c656/lib/node_modules/@stdlib/simulate/iter/sawtooth-wave/docs/img/equation_sawtooth_waveform.svg" alt="Equation for a sawtooth waveform.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for a [uniform][uniform-distribution] random var
 
 <!-- <equation class="equation" label="eq:uniform_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = -{\tfrac{6}{5}}" alt="Excess kurtosis for a uniform distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = -{\tfrac{6}{5}}" data-equation="eq:uniform_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = -{\tfrac{6}{5}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = -{\tfrac{6}{5}}" data-equation="eq:uniform_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/uniform/kurtosis/docs/img/equation_uniform_kurtosis.svg" alt="Excess kurtosis for a uniform distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

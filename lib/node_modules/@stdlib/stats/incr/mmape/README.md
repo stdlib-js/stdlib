@@ -28,10 +28,14 @@ For a window of size `W`, the [mean absolute percentage error][mean-absolute-per
 
 <!-- <equation class="equation" label="eq:mean_absolute_percentage_error" align="center" raw="\operatorname{MAPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" alt="Equation for the mean absolute percentage error."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{MAPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" data-equation="eq:mean_absolute_percentage_error">
+```math
+\operatorname{MAPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{MAPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" data-equation="eq:mean_absolute_percentage_error">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f13330c8d3bb837438b30381f6cd70dbccd4837c/lib/node_modules/@stdlib/stats/incr/mmape/docs/img/equation_mean_absolute_percentage_error.svg" alt="Equation for the mean absolute percentage error.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

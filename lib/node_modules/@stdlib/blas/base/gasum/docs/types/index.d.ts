@@ -29,7 +29,7 @@ interface Routine {
 	/**
 	* Computes the sum of the absolute values.
 	*
-	* @param N - number of values to sum
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @returns sum of absolute values
@@ -45,7 +45,7 @@ interface Routine {
 	/**
 	* Computes the sum of the absolute values using alternative indexing semantics.
 	*
-	* @param N - number of values to sum
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @param offset - starting index
@@ -63,7 +63,7 @@ interface Routine {
 /**
 * Computes the sum of the absolute values.
 *
-* @param N - number of values to sum
+* @param N - number of indexed elements
 * @param x - input array
 * @param stride - stride length
 * @returns sum of absolute values

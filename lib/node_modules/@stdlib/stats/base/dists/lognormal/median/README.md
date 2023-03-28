@@ -30,10 +30,14 @@ The [median][median] for a [lognormal][lognormal-distribution] random variable w
 
 <!-- <equation class="equation" label="eq:lognormal_median" align="center" raw="\operatorname{Median}\left( X \right) = \exp(\mu)" alt="Median for a lognormal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \exp(\mu)" data-equation="eq:lognormal_median">
+```math
+\operatorname{Median}\left( X \right) = \exp(\mu)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \exp(\mu)" data-equation="eq:lognormal_median">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/lognormal/median/docs/img/equation_lognormal_median.svg" alt="Median for a lognormal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

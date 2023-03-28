@@ -48,7 +48,7 @@
 ! >
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
-! @param {integer} N - number of values to sum
+! @param {integer} N - number of indexed elements
 ! @param {Array<double>} dx - input array
 ! @param {integer} stride - stride length
 ! @returns {double} sum of absolute values

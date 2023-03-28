@@ -30,10 +30,14 @@ The [skewness][skewness] for a [logistic][logistic-distribution] random variable
 
 <!-- <equation class="equation" label="eq:logistic_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 0" alt="Skewness for a logistic distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:logistic_skewness">
+```math
+\operatorname{skew}\left( X \right) = 0
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:logistic_skewness">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/logistic/skewness/docs/img/equation_logistic_skewness.svg" alt="Skewness for a logistic distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

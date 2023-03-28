@@ -28,10 +28,14 @@ The [Bessel function of the second kind][bessel-second-kind] of order one is def
 
 <!-- <equation class="equation" label="eq:bessel_second_kind_order_one" align="center" raw="Y_1(x) = \frac{1}{\pi} \int_0^\pi \sin(x \sin\theta - \theta) \, d\theta -\frac{1}{\pi} \int_0^\infty  \left[ e^t - e^{-t} \right]  e^{-x \sinh t} \, dt" alt="Bessel function of the second kind of order one"> -->
 
-<div class="equation" align="center" data-raw-text="Y_1(x) = \frac{1}{\pi} \int_0^\pi \sin(x \sin\theta - \theta) \, d\theta -\frac{1}{\pi} \int_0^\infty  \left[ e^t - e^{-t} \right]  e^{-x \sinh t} \, dt" data-equation="eq:bessel_second_kind_order_one">
+```math
+Y_1(x) = \frac{1}{\pi} \int_0^\pi \sin(x \sin\theta - \theta) \, d\theta -\frac{1}{\pi} \int_0^\infty  \left[ e^t - e^{-t} \right]  e^{-x \sinh t} \, dt
+```
+
+<!-- <div class="equation" align="center" data-raw-text="Y_1(x) = \frac{1}{\pi} \int_0^\pi \sin(x \sin\theta - \theta) \, d\theta -\frac{1}{\pi} \int_0^\infty  \left[ e^t - e^{-t} \right]  e^{-x \sinh t} \, dt" data-equation="eq:bessel_second_kind_order_one">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/math/base/special/bessely1/docs/img/equation_bessel_second_kind_order_one.svg" alt="Bessel function of the second kind of order one">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -30,10 +30,14 @@ The [standard deviation][stdev] for a [chi-squared][chisquare-distribution] rand
 
 <!-- <equation class="equation" label="eq:stdev" align="center" raw="\sigma = \sqrt{2k}" alt="Standard deviation for a chi-squared distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma = \sqrt{2k}" data-equation="eq:stdev">
+```math
+\sigma = \sqrt{2k}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma = \sqrt{2k}" data-equation="eq:stdev">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/chisquare/stdev/docs/img/equation_stdev.svg" alt="Standard deviation for a chi-squared distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

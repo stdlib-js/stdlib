@@ -28,10 +28,14 @@ The [cumulative distribution function][cdf] for a [lognormal][lognormal-distribu
 
 <!-- <equation class="equation" label="eq:cdf" align="center" raw="F(x;\mu,\sigma)=\frac12 + \frac12\,\operatorname{erf}\left[\frac{\ln x-\mu}{\sqrt{2}\sigma}\right]" alt="Cumulative distribution function for a lognormal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x;\mu,\sigma)=\frac12 + \frac12\,\operatorname{erf}\left[\frac{\ln x-\mu}{\sqrt{2}\sigma}\right]" data-equation="eq:cdf">
+```math
+F(x;\mu,\sigma)=\frac12 + \frac12\,\operatorname{erf}\left[\frac{\ln x-\mu}{\sqrt{2}\sigma}\right]
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x;\mu,\sigma)=\frac12 + \frac12\,\operatorname{erf}\left[\frac{\ln x-\mu}{\sqrt{2}\sigma}\right]" data-equation="eq:cdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/lognormal/cdf/docs/img/equation_cdf.svg" alt="Cumulative distribution function for a lognormal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

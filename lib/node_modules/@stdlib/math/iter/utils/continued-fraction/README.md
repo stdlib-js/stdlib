@@ -28,10 +28,14 @@ A **generalized continued fraction** has the form
 
 <!-- <equation class="equation" label="eq:continued_fraction" align="center" raw="x = b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4+\ldots}}}}" alt="Continued fraction"> -->
 
-<div class="equation" align="center" data-raw-text="x = b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4+\ldots}}}}" data-equation="eq:continued_fraction">
+```math
+x = b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4+\ldots}}}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="x = b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4+\ldots}}}}" data-equation="eq:continued_fraction">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d3cef42cbeb8499623814933ed4d906a345cec32/lib/node_modules/@stdlib/math/iter/utils/continued-fraction/docs/img/equation_continued_fraction.svg" alt="Continued fraction">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -39,10 +43,14 @@ If `a_i = 1` for all `i`, the above expression reduces to a **simple continued f
 
 <!-- <equation class="equation" label="eq:simple_continued_fraction" align="center" raw="x = b_0 + \frac{1}{b_1+\frac{1}{b_2+\frac{1}{b_3+\frac{1}{b_4+\ldots}}}}" alt="Simple continued fraction"> -->
 
-<div class="equation" align="center" data-raw-text="x = b_0 + \frac{1}{b_1+\frac{1}{b_2+\frac{1}{b_3+\frac{1}{b_4+\ldots}}}}" data-equation="eq:simple_continued_fraction">
+```math
+x = b_0 + \frac{1}{b_1+\frac{1}{b_2+\frac{1}{b_3+\frac{1}{b_4+\ldots}}}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="x = b_0 + \frac{1}{b_1+\frac{1}{b_2+\frac{1}{b_3+\frac{1}{b_4+\ldots}}}}" data-equation="eq:simple_continued_fraction">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d3cef42cbeb8499623814933ed4d906a345cec32/lib/node_modules/@stdlib/math/iter/utils/continued-fraction/docs/img/equation_simple_continued_fraction.svg" alt="Simple continued fraction">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

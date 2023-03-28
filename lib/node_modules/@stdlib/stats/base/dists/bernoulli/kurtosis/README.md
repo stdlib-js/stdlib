@@ -30,10 +30,14 @@ The [excess kurtosis][kurtosis] for a [Bernoulli][bernoulli-distribution] random
 
 <!-- <equation class="equation" label="eq:bernoulli_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{1}{pq} - 6" alt="Excess kurtosis for a Bernoulli distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{1}{pq} - 6" data-equation="eq:bernoulli_kurtosis">
+```math
+\operatorname{Kurt}\left( X \right) = \frac{1}{pq} - 6
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{1}{pq} - 6" data-equation="eq:bernoulli_kurtosis">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/bernoulli/kurtosis/docs/img/equation_bernoulli_kurtosis.svg" alt="Excess kurtosis for a Bernoulli distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

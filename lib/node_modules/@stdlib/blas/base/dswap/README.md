@@ -47,7 +47,7 @@ dswap( x.length, x, 1, y, 1 );
 
 The function has the following parameters:
 
--   **N**: number of values to swap.
+-   **N**: number of indexed elements.
 -   **x**: first input [`Float64Array`][mdn-float64array].
 -   **strideX**: index increment for `x`.
 -   **y**: second input [`Float64Array`][mdn-float64array].

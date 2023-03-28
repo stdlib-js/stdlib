@@ -94,6 +94,37 @@ import zeros = require( './index' );
 	zeros( [ 2, 2 ], { 'order': ( x: number ): number => x } ); // $ExpectError
 }
 
+// The compiler throws an error if the function is provided a `mode` option which is not a valid mode...
+{
+	zeros( [ 2, 2 ], { 'mode': '5' } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'mode': 5 } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'mode': false } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'mode': true } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'mode': [ '5' ] } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'mode': {} } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'mode': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a `submode` option which is not valid...
+{
+	zeros( [ 2, 2 ], { 'submode': '5' } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'submode': 5 } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'submode': false } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'submode': true } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'submode': [ '5' ] } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'submode': {} } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'submode': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a `readonly` option which is not a boolean...
+{
+	zeros( [ 2, 2 ], { 'readonly': '5' } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'readonly': 5 } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'readonly': [ '5' ] } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'readonly': {} } ); // $ExpectError
+	zeros( [ 2, 2 ], { 'readonly': ( x: number ): number => x } ); // $ExpectError
+}
+
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	zeros(); // $ExpectError

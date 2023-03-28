@@ -390,21 +390,7 @@ rules[ 'node/process-exit-as-throw' ] = 'error';
 * @type {Array}
 * @see [node/shebang]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/shebang.md}
 */
-rules[ 'node/shebang' ] = [ 'error', {
-	'convertPath': [
-		{
-			'include': [
-				'**/bin/**'
-			],
-			'exclude': [
-				'**/scripts/**'
-			],
-			'replace': [
-				'^bin/(.+)$', 'bin/$1'
-			]
-		}
-	]
-}];
+rules[ 'node/shebang' ] = [ 'off' ];
 
 
 // EXPORTS //

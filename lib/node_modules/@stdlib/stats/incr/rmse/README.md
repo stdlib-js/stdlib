@@ -28,10 +28,14 @@ The [**root mean squared error**][root-mean-squared-error] (also known as the **
 
 <!-- <equation class="equation" label="eq:root_mean_squared_error" align="center" raw="\operatorname{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2 }" alt="Equation for the root mean squared error."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2 }" data-equation="eq:root_mean_squared_error">
+```math
+\operatorname{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2 }
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2 }" data-equation="eq:root_mean_squared_error">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@831e7903fe8f57ea6c3ccab4bf697bc45c3c1934/lib/node_modules/@stdlib/stats/incr/rmse/docs/img/equation_root_mean_squared_error.svg" alt="Equation for the root mean squared error.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

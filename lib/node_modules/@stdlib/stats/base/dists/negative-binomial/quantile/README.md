@@ -28,10 +28,14 @@ The [quantile function][quantile-function] for a [negative binomial][negative-bi
 
 <!-- <equation class="equation" label="eq:negative_binomial_quantile_function" align="center" raw="F(x-1;r,p) < k \le F(x;r,p)" alt="Quantile for a negative binomial distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x-1;r,p) &lt; k \le F(x;r,p)" data-equation="eq:negative_binomial_quantile_function">
+```math
+F(x-1;r,p) < k \le F(x;r,p)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x-1;r,p) &lt; k \le F(x;r,p)" data-equation="eq:negative_binomial_quantile_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/negative-binomial/quantile/docs/img/equation_negative_binomial_quantile_function.svg" alt="Quantile for a negative binomial distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

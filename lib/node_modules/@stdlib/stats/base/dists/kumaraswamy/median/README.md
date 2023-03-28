@@ -30,10 +30,14 @@ The [median][median] for a [Kumaraswamy's double bounded][kumaraswamy-distributi
 
 <!-- <equation class="equation" label="eq:kumaraswamy_median" align="center" raw="\operatorname{Median}\left( X \right) = \left(1-2^{{-1/b}}\right)^{1/a}" alt="Median for a Kumaraswamy's double bounded distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \left(1-2^{{-1/b}}\right)^{1/a}" data-equation="eq:kumaraswamy_median">
+```math
+\operatorname{Median}\left( X \right) = \left(1-2^{{-1/b}}\right)^{1/a}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \left(1-2^{{-1/b}}\right)^{1/a}" data-equation="eq:kumaraswamy_median">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/kumaraswamy/median/docs/img/equation_kumaraswamy_median.svg" alt="Median for a Kumaraswamy's double bounded distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -28,10 +28,14 @@ The [cumulative distribution function][cdf] for a [degenerate][degenerate-distri
 
 <!-- <equation class="equation" label="eq:degenerate_cdf" align="center" raw="F(x;\mu)={\begin{cases}1, & x \geq \mu,\\0,& x < \mu.\end{cases}}" alt="Cumulative distribution function for a degenerate distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x;\mu)={\begin{cases}1, &amp; x \geq \mu,\\0,&amp; x &lt; \mu.\end{cases}}" data-equation="eq:degenerate_cdf">
+```math
+F(x;\mu)={\begin{cases}1, & x \geq \mu,\\0,& x < \mu.\end{cases}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x;\mu)={\begin{cases}1, &amp; x \geq \mu,\\0,&amp; x &lt; \mu.\end{cases}}" data-equation="eq:degenerate_cdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/degenerate/cdf/docs/img/equation_degenerate_cdf.svg" alt="Cumulative distribution function for a degenerate distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
