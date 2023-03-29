@@ -216,6 +216,186 @@
 	};                                                                         \
 	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_cc_c_init )
 
+/**
+* Macro for registering a Node-API module exporting an interface invoking a binary function accepting a double-precision floating-point number and a signed 32-bit integer and returning a double-precision floating-point number.
+*
+* @param fcn   binary function
+*
+* @example
+* #include <stdint.h>
+*
+* static double mul( const double x, const int32_t n ) {
+*     return x * n;
+* }
+*
+* // ...
+*
+* // Register a Node-API module:
+* STDLIB_MATH_BASE_NAPI_MODULE_DI_D( mul );
+*/
+#define STDLIB_MATH_BASE_NAPI_MODULE_DI_D( fcn )                               \
+	static napi_value stdlib_math_base_napi_di_d_wrapper(                      \
+		napi_env env,                                                          \
+		napi_callback_info info                                                \
+	) {                                                                        \
+		return stdlib_math_base_napi_di_d( env, info, fcn );                   \
+	};                                                                         \
+	static napi_value stdlib_math_base_napi_di_d_init(                         \
+		napi_env env,                                                          \
+		napi_value exports                                                     \
+	) {                                                                        \
+		napi_value fcn;                                                        \
+		napi_status status = napi_create_function(                             \
+			env,                                                               \
+			"exports",                                                         \
+			NAPI_AUTO_LENGTH,                                                  \
+			stdlib_math_base_napi_di_d_wrapper,                                \
+			NULL,                                                              \
+			&fcn                                                               \
+		);                                                                     \
+		assert( status == napi_ok );                                           \
+		return fcn;                                                            \
+	};                                                                         \
+	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_di_d_init )
+
+/**
+* Macro for registering a Node-API module exporting an interface invoking a binary function accepting a single-precision floating-point number and a signed 32-bit integer and returning a single-precision floating-point number.
+*
+* @param fcn   binary function
+*
+* @example
+* #include <stdint.h>
+*
+* static float mulf( const float x, const int32_t n ) {
+*     return x * n;
+* }
+*
+* // ...
+*
+* // Register a Node-API module:
+* STDLIB_MATH_BASE_NAPI_MODULE_FI_F( mulf );
+*/
+#define STDLIB_MATH_BASE_NAPI_MODULE_FI_F( fcn )                               \
+	static napi_value stdlib_math_base_napi_fi_f_wrapper(                      \
+		napi_env env,                                                          \
+		napi_callback_info info                                                \
+	) {                                                                        \
+		return stdlib_math_base_napi_fi_f( env, info, fcn );                   \
+	};                                                                         \
+	static napi_value stdlib_math_base_napi_fi_f_init(                         \
+		napi_env env,                                                          \
+		napi_value exports                                                     \
+	) {                                                                        \
+		napi_value fcn;                                                        \
+		napi_status status = napi_create_function(                             \
+			env,                                                               \
+			"exports",                                                         \
+			NAPI_AUTO_LENGTH,                                                  \
+			stdlib_math_base_napi_fi_f_wrapper,                                \
+			NULL,                                                              \
+			&fcn                                                               \
+		);                                                                     \
+		assert( status == napi_ok );                                           \
+		return fcn;                                                            \
+	};                                                                         \
+	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_fi_f_init )
+
+/**
+* Macro for registering a Node-API module exporting an interface invoking a binary function accepting a double-precision complex floating-point number and a signed 32-bit and returning a double-precision complex floating-point number.
+*
+* @param fcn   binary function
+*
+* @example
+* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/reim.h"
+* #include <stdint.h>
+*
+* static stdlib_complex128_t mul( const stdlib_complex128_t x, const int32_t n ) {
+*     double re;
+*     double im;
+*
+*     stdlib_reim( x, &re, &im );
+*     return stdlib_complex128( re*n, im*n );
+* }
+*
+* // ...
+*
+* // Register a Node-API module:
+* STDLIB_MATH_BASE_NAPI_MODULE_ZI_Z( mul );
+*/
+#define STDLIB_MATH_BASE_NAPI_MODULE_ZI_Z( fcn )                               \
+	static napi_value stdlib_math_base_napi_zi_z_wrapper(                      \
+		napi_env env,                                                          \
+		napi_callback_info info                                                \
+	) {                                                                        \
+		return stdlib_math_base_napi_zi_z( env, info, fcn );                   \
+	};                                                                         \
+	static napi_value stdlib_math_base_napi_zi_z_init(                         \
+		napi_env env,                                                          \
+		napi_value exports                                                     \
+	) {                                                                        \
+		napi_value fcn;                                                        \
+		napi_status status = napi_create_function(                             \
+			env,                                                               \
+			"exports",                                                         \
+			NAPI_AUTO_LENGTH,                                                  \
+			stdlib_math_base_napi_zi_z_wrapper,                                \
+			NULL,                                                              \
+			&fcn                                                               \
+		);                                                                     \
+		assert( status == napi_ok );                                           \
+		return fcn;                                                            \
+	};                                                                         \
+	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_zi_z_init )
+
+/**
+* Macro for registering a Node-API module exporting an interface invoking a binary function accepting a single-precision complex floating-point number and a signed 32-bit integer and returning a single-precision complex floating-point number.
+*
+* @param fcn   binary function
+*
+* @example
+* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/reimf.h"
+* #include <stdint.h>
+*
+* static stdlib_complex64_t mul( const stdlib_complex64_t x, const int32_t n ) {
+*     float re;
+*     float im;
+*
+*     stdlib_reimf( x, &re, &im );
+*     return stdlib_complex64( re*n, im*n );
+* }
+*
+* // ...
+*
+* // Register a Node-API module:
+* STDLIB_MATH_BASE_NAPI_MODULE_CI_C( mul );
+*/
+#define STDLIB_MATH_BASE_NAPI_MODULE_CI_C( fcn )                               \
+	static napi_value stdlib_math_base_napi_ci_c_wrapper(                      \
+		napi_env env,                                                          \
+		napi_callback_info info                                                \
+	) {                                                                        \
+		return stdlib_math_base_napi_ci_c( env, info, fcn );                   \
+	};                                                                         \
+	static napi_value stdlib_math_base_napi_ci_c_init(                         \
+		napi_env env,                                                          \
+		napi_value exports                                                     \
+	) {                                                                        \
+		napi_value fcn;                                                        \
+		napi_status status = napi_create_function(                             \
+			env,                                                               \
+			"exports",                                                         \
+			NAPI_AUTO_LENGTH,                                                  \
+			stdlib_math_base_napi_ci_c_wrapper,                                \
+			NULL,                                                              \
+			&fcn                                                               \
+		);                                                                     \
+		assert( status == napi_ok );                                           \
+		return fcn;                                                            \
+	};                                                                         \
+	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_ci_c_init )
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -242,6 +422,26 @@ napi_value stdlib_math_base_napi_zz_z( napi_env env, napi_callback_info info, st
 * Invokes a binary function accepting and returning single-precision complex floating-point numbers.
 */
 napi_value stdlib_math_base_napi_cc_c( napi_env env, napi_callback_info info, stdlib_complex64_t (*fcn)( stdlib_complex64_t, stdlib_complex64_t ) );
+
+/**
+* Invokes a binary function accepting a double-precision floating-point number and a signed 32-bit integer and returning a double-precision floating-point number.
+*/
+napi_value stdlib_math_base_napi_di_d( napi_env env, napi_callback_info info, double (*fcn)( double, int32_t ) );
+
+/**
+* Invokes a binary function accepting a single-precision floating-point number and a signed 32-bit integer and returning a single-precision floating-point number.
+*/
+napi_value stdlib_math_base_napi_fi_f( napi_env env, napi_callback_info info, float (*fcn)( float, int32_t ) );
+
+/**
+* Invokes a binary function accepting a double-precision complex floating-point number and a signed 32-bit integer and returning a double-precision complex floating-point number.
+*/
+napi_value stdlib_math_base_napi_zi_z( napi_env env, napi_callback_info info, stdlib_complex128_t (*fcn)( stdlib_complex128_t, int32_t ) );
+
+/**
+* Invokes a binary function accepting a single-precision complex floating-point number and a signed 32-bit integer and returning a single-precision complex floating-point number.
+*/
+napi_value stdlib_math_base_napi_ci_c( napi_env env, napi_callback_info info, stdlib_complex64_t (*fcn)( stdlib_complex64_t, int32_t ) );
 
 #ifdef __cplusplus
 }

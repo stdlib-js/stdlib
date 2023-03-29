@@ -63,8 +63,7 @@ markdown-related: $(NODE_MODULES)
 	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
+		"$(REMARK)" \
 			$$file \
 			$(REMARK_RELATED_FLAGS) \
 			$(REMARK_RELATED_PLUGIN_FLAGS) \
@@ -90,8 +89,7 @@ markdown-related-files: $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
+		"$(REMARK)" \
 			$$file \
 			$(REMARK_RELATED_FLAGS) \
 			$(REMARK_RELATED_PLUGIN_FLAGS) \
