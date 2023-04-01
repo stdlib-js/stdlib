@@ -1,0 +1,25 @@
+
+{{alias}}( policy )
+    Returns the policy string associated with a supported data type policy
+    value.
+
+    Parameters
+    ----------
+    policy: any
+        Policy value.
+
+    Returns
+    -------
+    out: string|null
+        Policy string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'same' )
+    'same'
+    > out = {{alias}}( {{alias:@stdlib/ndarray/base/output-policy-str2enum}}( 'same' ) )
+    'same'
+
+    See Also
+    --------
+
