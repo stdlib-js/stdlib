@@ -1,0 +1,12 @@
+[
+  "same",
+  "promoted",
+  "bool",
+	"signed_integer",
+  "unsigned_integer",
+  "integral",
+  "floating_point",
+  "real_floating_point",
+  "complex_floating_point",
+  "numeric"
+]
