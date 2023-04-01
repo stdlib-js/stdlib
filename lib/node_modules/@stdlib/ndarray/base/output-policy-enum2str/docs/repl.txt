@@ -1,0 +1,23 @@
+
+{{alias}}( policy )
+    Returns the policy string associated with an output ndarray data type policy
+    enumeration constant.
+
+    Parameters
+    ----------
+    policy: integer
+        Policy enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Policy string.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ndarray/base/output-policy-str2enum}}( 'same' ) )
+    'same'
+
+    See Also
+    --------
+

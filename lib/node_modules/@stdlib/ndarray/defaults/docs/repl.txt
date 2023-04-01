@@ -1,0 +1,69 @@
+
+{{alias}}()
+    Returns default ndarray settings.
+
+    Returns
+    -------
+    out: Object
+        Default settings.
+
+    out.dtypes: Object
+        Default data types.
+
+    out.dtypes.default: string
+        Default data type.
+
+    out.dtypes.floating_point: string
+        Default floating-point data type.
+
+    out.dtypes.real_floating_point: string
+        Default real-valued floating-point data type.
+
+    out.dtypes.complex_floating_point: string
+        Default complex-valued floating-point data type.
+
+    out.dtypes.integral: string
+        Default integer data type.
+
+    out.dtypes.signed_integer: string
+        Default signed integer data type.
+
+    out.dtypes.unsigned_integer: string
+        Default unsigned integer data type.
+
+    out.order: string
+        Default memory layout.
+
+    out.casting: string
+        Default casting mode.
+
+    out.index_mode: string
+        Default indexing mode.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    {...}
+
+
+{{alias}}.get( name )
+    Returns a default setting.
+
+    Parameters
+    ----------
+    name: string
+        Setting name.
+
+    Returns
+    -------
+    out: any
+        Setting value.
+
+    Examples
+    --------
+    > var v = {{alias}}.get( 'order' )
+    <string>
+
+    See Also
+    --------
+
