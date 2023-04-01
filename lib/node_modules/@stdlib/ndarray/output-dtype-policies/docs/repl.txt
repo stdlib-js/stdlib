@@ -1,0 +1,30 @@
+
+{{alias}}()
+    Returns a list of output ndarray data type policies.
+
+    The output array contains the following data type policies:
+
+    - same: return the same data type.
+    - promoted: return a promoted data type.
+    - bool: return a boolean data type.
+    - signed_integer: return a signed integer data type.
+    - unsigned_integer: return an unsigned integer data type.
+    - integral: return an integer data type (i.e., either signed or unsigned).
+    - floating_point: return a floating-point data type (i.e., either real-
+      valued or complex-valued).
+    - real_floating_point: return a real-valued floating-point data type.
+    - complex_floating_point: return a complex-valued floating-point data type.
+
+    Returns
+    -------
+    out: Array<string>
+        List of ndarray data type policies.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    <Array>
+
+    See Also
+    --------
+
