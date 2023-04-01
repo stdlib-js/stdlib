@@ -20,6 +20,22 @@ limitations under the License.
 
 <!-- lint disable first-heading-level -->
 
+<!-- Section to include announcements. If section is included, add a horizontal rule *after* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="announcement">
+
+**📣 Announcement: [Quansight Labs](https://labs.quansight.org) is running another edition of its paid [internship program](https://boards.greenhouse.io/quansight/jobs/4011005005). The program runs for 3 months from mid-June/mid-July through September and entails a 25-40 hrs/wk time commitment.**
+
+**All internship projects will focus on contributing to open source software. stdlib is one of the potential projects! If you are new to open source, interested in kickstarting your software development career, and/or interested in contributing to stdlib, you are encouraged to [apply](https://boards.greenhouse.io/quansight/jobs/4011005005)! 🎉**
+
+**When applying, feel free to mention stdlib in your cover letter. Application deadline: [4 April 2023](https://boards.greenhouse.io/quansight/jobs/4011005005). 😃**
+
+</section>
+
+<!-- /.announcement -->
+
+* * *
+
 <!-- Section to include assets such as the project logo, etc. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="banner">

@@ -291,6 +291,190 @@ The function accepts the following arguments:
 void stdlib_math_base_napi_cc_c( napi_env env, napi_callback_info info, stdlib_complex64_t (*fcn)( stdlib_complex64_t, stdlib_complex64_t ) );
 ```
 
+#### stdlib_math_base_napi_di_d( env, info, fcn )
+
+Invokes a binary function accepting a double-precision floating-point number and a signed 32-bit integer and returning a double-precision floating-point number.
+
+```c
+#include <node_api.h>
+#include <stdint.h>
+
+// ...
+
+static double mul( const double x, const int32_t y ) {
+    return x * y;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_di_d( env, info, mul );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] double (*fcn)( double, int32_t )` binary function.
+
+```c
+void stdlib_math_base_napi_di_d( napi_env env, napi_callback_info info, double (*fcn)( double, int32_t ) );
+```
+
+#### stdlib_math_base_napi_fi_f( env, info, fcn )
+
+Invokes a binary function accepting a single-precision floating-point number and a signed 32-bit integer and returning a single-precision floating-point number.
+
+```c
+#include <node_api.h>
+#include <stdint.h>
+
+// ...
+
+static float mulf( const float x, const int32_t y ) {
+    return x * y;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_fi_f( env, info, mulf );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] float (*fcn)( float, int32_t )` binary function.
+
+```c
+void stdlib_math_base_napi_fi_f( napi_env env, napi_callback_info info, float (*fcn)( float, int32_t ) );
+```
+
+#### stdlib_math_base_napi_zi_z( env, info, fcn )
+
+Invokes a binary function accepting a double-precision complex floating-point number and a signed 32-bit integer and returning a double-precision complex floating-point number.
+
+```c
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
+#include <node_api.h>
+#include <stdint.h>
+
+// ...
+
+static stdlib_complex128_t mul( const stdlib_complex128_t x, const int32_t y ) {
+    double xre;
+    double xim;
+    double re;
+    double im;
+
+    stdlib_reim( x, &xre, &xim );
+
+    re = xre * y;
+    im = xim * y;
+
+    return stdlib_complex128( re, im );
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_zi_z( env, info, mul );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] stdlib_complex128_t (*fcn)( stdlib_complex128_t, int32_t )` binary function.
+
+```c
+void stdlib_math_base_napi_zi_z( napi_env env, napi_callback_info info, stdlib_complex128_t (*fcn)( stdlib_complex128_t, int32_t ) );
+```
+
+#### stdlib_math_base_napi_ci_c( env, info, fcn )
+
+Invokes a binary function accepting a single-precision complex floating-point number and a signed 32-bit integer and returning a single-precision complex floating-point number.
+
+```c
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reimf.h"
+#include <node_api.h>
+#include <stdint.h>
+
+// ...
+
+static stdlib_complex64_t mul( const stdlib_complex64_t x, const int32_t y ) {
+    float xre;
+    float xim;
+    float re;
+    float im;
+
+    stdlib_reimf( x, &xre, &xim );
+
+    re = xre * y;
+    im = xim * y;
+
+    return stdlib_complex64( re, im );
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_ci_c( env, info, mul );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] stdlib_complex64_t (*fcn)( stdlib_complex64_t, int32_t )` binary function.
+
+```c
+void stdlib_math_base_napi_ci_c( napi_env env, napi_callback_info info, stdlib_complex64_t (*fcn)( stdlib_complex64_t, int32_t ) );
+```
+
 #### STDLIB_MATH_BASE_NAPI_MODULE_DD_D( fcn )
 
 Macro for registering a Node-API module exporting an interface for invoking a binary function accepting and returning double-precision floating-point numbers.
@@ -404,6 +588,122 @@ STDLIB_MATH_BASE_NAPI_MODULE_CC_C( add );
 The macro expects the following arguments:
 
 -   **fcn**: `stdlib_complex64_t (*fcn)( stdlib_complex64_t, stdlib_complex64_t )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_DI_D( fcn )
+
+Macro for registering a Node-API module exporting an interface invoking a binary function accepting a double-precision floating-point number and a signed 32-bit integer and returning a double-precision floating-point number.
+
+```c
+#include <stdint.h>
+
+static double mul( const double x, const int32_t y ) {
+    return x * y;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_DI_D( mul );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `double (*fcn)( double, int32_t )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_FI_F( fcn )
+
+Macro for registering a Node-API module exporting an interface invoking a binary function accepting a single-precision floating-point number and a signed 32-bit integer and returning a single-precision floating-point number.
+
+```c
+#include <stdint.h>
+
+static float mulf( const float x, const int32_t y ) {
+    return x * y;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_FI_F( mulf );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `float (*fcn)( float, int32_t )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_ZI_Z( fcn )
+
+Macro for registering a Node-API module exporting an interface invoking a binary function accepting a double-precision complex floating-point number and a signed 32-bit and returning a double-precision complex floating-point number.
+
+```c
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
+#include <stdint.h>
+
+static stdlib_complex128_t mul( const stdlib_complex128_t x, const int32_t y ) {
+    double xre;
+    double xim;
+    double re;
+    double im;
+
+    stdlib_reim( x, &xre, &xim );
+
+    re = xre * y;
+    im = xim * y;
+
+    return stdlib_complex128( re, im );
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_ZI_Z( mul );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `stdlib_complex128_t (*fcn)( stdlib_complex128_t, int32_t )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_CI_C( fcn )
+
+Macro for registering a Node-API module exporting an interface invoking a binary function accepting a single-precision complex floating-point number and a signed 32-bit integer and returning a single-precision complex floating-point number.
+
+```c
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/reimf.h"
+#include <stdint.h>
+
+static stdlib_complex64_t add( const stdlib_complex64_t x, const int32_t y ) {
+    float xre;
+    float xim;
+    float re;
+    float im;
+
+    stdlib_reimf( x, &xre, &xim );
+
+    re = xre * y;
+    im = xim * y;
+
+    return stdlib_complex64( re, im );
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_CI_C( add );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `stdlib_complex64_t (*fcn)( stdlib_complex64_t, int32_t )` binary function.
 
 When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
 
