@@ -80,6 +80,7 @@ The function supports the following data type kinds:
 -   `integral`: integer data types.
 -   `signed_integer`: signed integer data types.
 -   `unsigned_integer`: unsigned integer data types.
+-   `real`: real-valued data types.
 -   `numeric`: numeric data types.
 -   `all`: all data types.
 
