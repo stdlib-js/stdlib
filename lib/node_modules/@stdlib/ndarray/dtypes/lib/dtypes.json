@@ -28,7 +28,7 @@
     "complex64",
     "complex128"
   ],
-  "integral": [
+  "integer": [
     "int16",
     "int32",
     "int8",

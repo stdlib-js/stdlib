@@ -55,7 +55,7 @@ interface DataTypes {
 	/**
 	* Default integer data type.
 	*/
-	integral: 'int32';
+	integer: 'int32';
 
 	/**
 	* Default signed integer data type.

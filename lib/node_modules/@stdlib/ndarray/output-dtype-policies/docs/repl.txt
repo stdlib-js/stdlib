@@ -11,7 +11,7 @@
     - real: return a real-valued data type.
     - signed_integer: return a signed integer data type.
     - unsigned_integer: return an unsigned integer data type.
-    - integral: return an integer data type (i.e., either signed or unsigned).
+    - integer: return an integer data type (i.e., either signed or unsigned).
     - floating_point: return a floating-point data type (i.e., either real-
       valued or complex-valued).
     - real_floating_point: return a real-valued floating-point data type.
