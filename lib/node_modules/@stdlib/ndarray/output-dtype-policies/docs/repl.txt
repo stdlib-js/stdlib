@@ -7,6 +7,8 @@
     - same: return the same data type.
     - promoted: return a promoted data type.
     - bool: return a boolean data type.
+    - numeric: return numeric data type.
+    - real: return a real-valued data type.
     - signed_integer: return a signed integer data type.
     - unsigned_integer: return an unsigned integer data type.
     - integral: return an integer data type (i.e., either signed or unsigned).
