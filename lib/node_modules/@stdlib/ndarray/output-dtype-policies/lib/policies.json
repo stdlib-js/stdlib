@@ -9,5 +9,6 @@
   "real_floating_point",
   "complex_floating_point",
   "real",
-  "numeric"
+  "numeric",
+  "default"
 ]

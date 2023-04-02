@@ -36,6 +36,7 @@
 *     -   `floating_point`: return a floating-point data type (i.e., either real-valued or complex-valued).
 *     -   `real_floating_point`: return a real-valued floating-point data type.
 *     -   `complex_floating_point`: return a complex-valued floating-point data type.
+*     -   `default`: return the default data type.
 *
 * @returns list of data type policies
 *

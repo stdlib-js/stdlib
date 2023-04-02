@@ -16,6 +16,7 @@
       valued or complex-valued).
     - real_floating_point: return a real-valued floating-point data type.
     - complex_floating_point: return a complex-valued floating-point data type.
+    - default: return the default data type.
 
     Returns
     -------

@@ -62,6 +62,7 @@ The output `array` contains the following data type policies:
 -   `complex_floating_point`: return a complex-valued floating-point data type.
 -   `real`: return a real-valued data type.
 -   `numeric`: return a numeric data type.
+-   `default`: return the default data type.
 
 </section>
 

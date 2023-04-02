@@ -41,6 +41,7 @@ enum STDLIB_NDARRAY_OUTPUT_DTYPE_POLICY {
 	STDLIB_NDARRAY_OUTPUT_POLICY_COMPLEX_FLOATING_POINT,
 	STDLIB_NDARRAY_OUTPUT_POLICY_REAL,
 	STDLIB_NDARRAY_OUTPUT_POLICY_NUMERIC,
+	STDLIB_NDARRAY_OUTPUT_POLICY_DEFAULT,
 
 	// "Compute" the number of data type policies (this works because of how `enum` works: the value is automatically set to the last enumerated type plus 1):
 	STDLIB_NDARRAY_NPOLICIES,
