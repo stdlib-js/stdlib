@@ -13,6 +13,12 @@
     out.dtypes.default: string
         Default data type.
 
+    out.dtypes.numeric: string
+        Default numeric data type.
+
+    out.dtypes.real: string
+        Default real-valued data type.
+
     out.dtypes.floating_point: string
         Default floating-point data type.
 

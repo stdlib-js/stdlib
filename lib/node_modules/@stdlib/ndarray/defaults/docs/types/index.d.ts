@@ -28,6 +28,16 @@ interface DataTypes {
 	default: 'float64';
 
 	/**
+	* Default numeric data type.
+	*/
+	numeric: 'float64';
+
+	/**
+	* Default real-valued data type.
+	*/
+	real: 'float64';
+
+	/**
 	* Default floating-point data type.
 	*/
 	floating_point: 'float64';

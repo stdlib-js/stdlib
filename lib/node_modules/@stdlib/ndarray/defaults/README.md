@@ -54,6 +54,8 @@ The returned object has the following properties:
 -   **dtypes**: default data types.
 
     -   **default**: default data type.
+    -   **numeric**: default numeric data type.
+    -   **real**: default real-valued data type.
     -   **floating_point**: default floating-point data type.
     -   **real_floating_point**: default real-valued floating-point data type.
     -   **complex_floating_point**: default complex-valued floating-point data type.
