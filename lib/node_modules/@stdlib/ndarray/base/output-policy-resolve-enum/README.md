@@ -94,7 +94,7 @@ var v = resolve( 'same' );
 v = resolve( 'promoted' );
 // returns <number>
 
-v = resolve( 'integral' );
+v = resolve( 'integer' );
 // returns <number>
 
 v = resolve( 'floating_point' );

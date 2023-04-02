@@ -104,7 +104,7 @@ v = str2enum( 'unsigned_integer' );
 v = str2enum( 'complex_floating_point' );
 // returns <number>
 
-v = str2enum( 'integral' );
+v = str2enum( 'integer' );
 // returns <number>
 ```
 

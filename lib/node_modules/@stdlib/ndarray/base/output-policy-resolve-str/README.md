@@ -100,8 +100,8 @@ v = resolve( str2enum( 'unsigned_integer' ) );
 v = resolve( str2enum( 'floating_point' ) );
 // returns 'floating_point'
 
-v = resolve( str2enum( 'integral' ) );
-// returns 'integral'
+v = resolve( str2enum( 'integer' ) );
+// returns 'integer'
 
 v = resolve( str2enum( 'real_floating_point' ) );
 // returns 'real_floating_point'

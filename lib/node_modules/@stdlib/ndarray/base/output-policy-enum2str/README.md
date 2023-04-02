@@ -97,8 +97,8 @@ str = enum2str( str2enum( 'signed_integer' ) );
 str = enum2str( str2enum( 'unsigned_integer' ) );
 // returns 'unsigned_integer'
 
-str = enum2str( str2enum( 'integral' ) );
-// returns 'integral'
+str = enum2str( str2enum( 'integer' ) );
+// returns 'integer'
 
 str = enum2str( str2enum( 'promoted' ) );
 // returns 'promoted'
