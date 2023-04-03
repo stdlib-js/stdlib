@@ -665,9 +665,9 @@ declare module '@stdlib/types/ndarray' {
 	type RealOrComplexDataType = RealDataType | ComplexDataType;
 
 	/**
-	* Output data type policies.
+	* Output data type policy.
 	*/
-	type OutputPolicies = 'default' | 'same' | 'promoted' | 'bool' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer'; // tslint:disable-line:max-line-length
+	type OutputPolicy = 'default' | 'same' | 'promoted' | 'bool' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer'; // tslint:disable-line:max-line-length
 
 	/**
 	* Array order.
