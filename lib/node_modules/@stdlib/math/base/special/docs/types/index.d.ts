@@ -1785,19 +1785,38 @@ interface Namespace {
 	ceilsd: typeof ceilsd;
 
 	/**
-	* Computes the exponential function of a complex number.
+	* Evaluates the exponential function for a double-precision complex floating-point number.
 	*
-	* @param re - real component
-	* @param im - imaginary component
-	* @returns real and imaginary components
-	*
-	* @example
-	* var v = ns.cexp( 0.0, 0.0 );
-	* // returns [ 1.0, 0.0 ]
+	* @param z - complex number
+	* @returns result
 	*
 	* @example
-	* var v = ns.cexp( 1.0, 0.0 );
-	* // returns [ ~2.718, 0.0 ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var v = ns.cexp( new Complex128( 0.0, 0.0 ) );
+	* // returns <Complex128>
+	*
+	* var re = real( v );
+	* // returns 1.0
+	*
+	* var im = imag( v );
+	* // returns 0.0
+	*
+	* @example
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var v = ns.cexp( new Complex128( 1.0, 0.0 ) );
+	* // returns <Complex128>
+	*
+	* var re = real( v );
+	* // returns ~2.718
+	*
+	* var im = imag( v );
+	* // returns 0.0
 	*/
 	cexp: typeof cexp;
 
