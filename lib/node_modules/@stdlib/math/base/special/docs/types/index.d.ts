@@ -1848,15 +1848,24 @@ interface Namespace {
 	cflipsignf: typeof cflipsignf;
 
 	/**
-	* Rounds a complex number toward negative infinity.
+	* Rounds a double-precision complex floating-point number toward negative infinity.
 	*
-	* @param re - real component
-	* @param im - imaginary component
-	* @returns real and imaginary components
+	* @param z - input value
+	* @returns result
 	*
 	* @example
-	* var out = ns.cfloor( 5.5, 3.3 );
-	* // returns [ 5.0, 3.0 ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var v = ns.cfloor( new Complex128( 5.5, 3.3 ) );
+	* // returns <Complex128>
+	*
+	* var re = real( v );
+	* // returns 5.0
+	*
+	* var im = imag( v );
+	* // returns 3.0
 	*/
 	cfloor: typeof cfloor;
 
