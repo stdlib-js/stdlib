@@ -21,7 +21,7 @@ jobs:
   build:
     working_directory: ${CIRCLE_WORKING_DIRECTORY}
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:18
     environment:
       NODE_PATH: "$HOME/$CIRCLE_PROJECT_REPONAME/lib/node_modules"
     steps:
