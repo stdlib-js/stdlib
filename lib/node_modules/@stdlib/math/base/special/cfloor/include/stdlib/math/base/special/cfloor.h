@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,35 +16,25 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+#ifndef STDLIB_MATH_BASE_SPECIAL_CFLOOR_H
+#define STDLIB_MATH_BASE_SPECIAL_CFLOOR_H
 
-/// <reference types="@stdlib/types"/>
+#include "stdlib/complex/float64.h"
 
-import { Complex128 } from '@stdlib/types/object';
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
 * Rounds a double-precision complex floating-point number toward negative infinity.
-*
-* @param z - input value
-* @returns result
-*
-* @example
-* var Complex128 = require( `@stdlib/complex/float64` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
-*
-* var v = cfloor( new Complex128( 5.5, 3.3 ) );
-* // returns <Complex128>
-*
-* var re = real( v );
-* // returns 5.0
-*
-* var im = imag( v );
-* // returns 3.0
 */
-declare function cfloor( z: Complex128 ): Complex128;
+stdlib_complex128_t stdlib_base_cfloor( const stdlib_complex128_t z );
 
+#ifdef __cplusplus
+}
+#endif
 
-// EXPORTS //
-
-export = cfloor;
+#endif // !STDLIB_MATH_BASE_SPECIAL_CFLOOR_H

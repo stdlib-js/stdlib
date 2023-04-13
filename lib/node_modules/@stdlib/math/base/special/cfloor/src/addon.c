@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,22 +16,8 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/cfloor.h"
+#include "stdlib/math/base/napi/unary.h"
 
-var Complex128 = require( '@stdlib/complex/float64' );
-var randu = require( '@stdlib/random/base/randu' );
-var cfloor = require( './../lib' );
-
-var re;
-var im;
-var z;
-var w;
-var i;
-
-for ( i = 0; i < 100; i++ ) {
-	re = ( randu()*100.0 ) - 50.0;
-	im = ( randu()*100.0 ) - 50.0;
-	z = new Complex128( re, im );
-	w = cfloor( z );
-	console.log( 'floor(%s) = %s', z.toString(), w.toString() );
-}
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_Z_Z( stdlib_base_cfloor )
