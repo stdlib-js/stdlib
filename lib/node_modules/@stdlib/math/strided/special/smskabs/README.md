@@ -256,7 +256,7 @@ void stdlib_strided_smskabs( const int64_t N, const float *X, const int64_t stri
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     float X[] = { -2.0, 1.0, -3.0, -5.0, 4.0, 0.0, -1.0, -3.0 };
 

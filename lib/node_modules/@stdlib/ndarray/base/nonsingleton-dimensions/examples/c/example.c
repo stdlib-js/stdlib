@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
 	int64_t shape[] = { 10, 3, 1, 1, 5 };
 
 	int64_t n = stdlib_ndarray_nonsingleton_dimensions( 5, shape );

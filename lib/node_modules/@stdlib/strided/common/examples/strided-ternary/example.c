@@ -26,7 +26,7 @@ static uint8_t add3( uint8_t x, uint8_t y, uint8_t z ) {
 	return x + y + z;
 }
 
-int main() {
+int main( void ) {
 	// Create underlying byte arrays:
 	uint8_t x[] = { 1, 4, 7 };
 	uint8_t y[] = { 2, 5, 8 };

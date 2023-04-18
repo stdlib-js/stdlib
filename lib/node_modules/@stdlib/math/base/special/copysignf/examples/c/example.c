@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/copysignf.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	float x[] = { 3.0f, -3.0f, 0.0f, 0.0f/0.0f };
 
 	float y;

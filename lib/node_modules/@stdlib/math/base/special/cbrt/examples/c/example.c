@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/cbrt.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	double x[] = { 3.14, 9.0, 0.0, 0.0/0.0 };
 
 	double y;

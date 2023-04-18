@@ -366,7 +366,7 @@ int8_t stdlib_ndarray_ind2sub( int64_t ndims, int64_t *shape, int64_t *strides, 
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
     int64_t ndims = 2;
     int64_t shape[] = { 3, 3 };
     int64_t strides[] = { -3, 1 };

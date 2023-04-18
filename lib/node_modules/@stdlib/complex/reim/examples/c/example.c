@@ -20,7 +20,7 @@
 #include "stdlib/complex/float64.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	stdlib_complex128_t x[] = {
 		stdlib_complex128( 5.0, 2.0 ),
 		stdlib_complex128( -2.0, 1.0 ),

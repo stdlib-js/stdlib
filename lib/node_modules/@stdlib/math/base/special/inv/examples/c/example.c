@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/inv.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	double x[] = { 3.0, 4.0, 5.0, 12.0 };
 
 	double y;

@@ -229,7 +229,7 @@ double stdlib_base_negalucas( const int32_t n );
 #include <stdio.h>
 #include <stdint.h>
 
-int main() {
+int main( void ) {
     int32_t i;
     double v;
 

@@ -233,7 +233,7 @@ void stdlib_strided_dcbrt( const int64_t N, const double *X, const int64_t strid
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     double X[] = { 0.0, 1.0, 8.0, 27.0, 64.0, 125.0, 216.0, 343.0 };
 

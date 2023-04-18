@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <complex.h>
 
-int main() {
+int main( void ) {
 	// cppcheck-suppress nanInArithmeticExpression
 	double complex x[] = { 3.14+1.0*I, -3.14-1.0*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
 

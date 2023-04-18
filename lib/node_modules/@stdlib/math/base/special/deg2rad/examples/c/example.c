@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/deg2rad.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	double x[] = { 45.0, 90.0, 0.0, 0.0/0.0 };
 
 	double y;

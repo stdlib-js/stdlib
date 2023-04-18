@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/deg2radf.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	float x[] = { 45.0f, 90.0f, 0.0f, 0.0f/0.0f };
 
 	float y;

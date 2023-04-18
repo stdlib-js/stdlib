@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/kronecker_deltaf.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	float x[] = { 3.0f, 4.0f, 5.0f, 5.0f };
 
 	float y;

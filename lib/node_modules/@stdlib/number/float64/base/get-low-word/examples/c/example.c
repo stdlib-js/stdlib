@@ -20,7 +20,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
 
 	uint32_t low;

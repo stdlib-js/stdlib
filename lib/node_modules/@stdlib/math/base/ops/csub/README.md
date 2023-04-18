@@ -172,8 +172,8 @@ stdlib_complex128_t stdlib_base_csub( const stdlib_complex128_t z1, const stdlib
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 
-int main() {
-    stdlib_complex128_t x[] = {
+int main( void ) {
+    const stdlib_complex128_t x[] = {
         stdlib_complex128( 3.14, 1.5 ),
         stdlib_complex128( -3.14, 1.5 ),
         stdlib_complex128( 0.0, -0.0 ),

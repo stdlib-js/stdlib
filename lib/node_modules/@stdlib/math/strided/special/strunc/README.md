@@ -233,7 +233,7 @@ void stdlib_strided_strunc( const int64_t N, const float *X, const int64_t strid
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     float X[] = { 1.1, 2.5, -3.5, 4.0, -5.9, 6.4, -7.0, 8.2 };
 
