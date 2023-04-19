@@ -22,13 +22,13 @@
 
 int main( void ) {
 	// Create a strided array:
-	float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+	const float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 
 	// Specify the number of elements:
-	int64_t N = 4;
+	const int64_t N = 4;
 
 	// Specify the stride length:
-	int64_t stride = 2;
+	const int64_t stride = 2;
 
 	// Compute the sum:
 	float v = stdlib_strided_ssumkbn( N, x, stride );
