@@ -21,7 +21,7 @@
 #include <stdio.h>
 
 int main( void ) {
-	int32_t x[] = { 3, -3, 0, -10 };
+	const int32_t x[] = { 3, -3, 0, -10 };
 
 	int32_t y;
 	int i;

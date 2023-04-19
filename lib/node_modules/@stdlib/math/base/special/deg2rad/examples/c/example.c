@@ -20,7 +20,7 @@
 #include <stdio.h>
 
 int main( void ) {
-	double x[] = { 45.0, 90.0, 0.0, 0.0/0.0 };
+	const double x[] = { 45.0, 90.0, 0.0, 0.0/0.0 };
 
 	double y;
 	int i;

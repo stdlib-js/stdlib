@@ -20,7 +20,7 @@
 #include <stdio.h>
 
 int main( void ) {
-	float x[] = { 3.0f, 4.0f, 6.0f, 5.0f };
+	const float x[] = { 3.0f, 4.0f, 6.0f, 5.0f };
 
 	float y;
 	int i;

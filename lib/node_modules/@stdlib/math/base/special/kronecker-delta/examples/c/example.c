@@ -20,7 +20,7 @@
 #include <stdio.h>
 
 int main( void ) {
-	double x[] = { 3.0, 4.0, 5.0, 5.0 };
+	const double x[] = { 3.0, 4.0, 5.0, 5.0 };
 
 	double y;
 	int i;
