@@ -35,7 +35,7 @@ extern "C" {
 /**
 * Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 */
-void stdlib_strided_mask_{{SIGNATURE}}( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_mask_{{SIGNATURE}}( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 
 #ifdef __cplusplus
 }
