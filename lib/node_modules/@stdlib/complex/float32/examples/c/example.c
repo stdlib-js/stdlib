@@ -57,7 +57,7 @@ static float imag( const stdlib_complex64_t z ) {
 }
 
 int main( void ) {
-	stdlib_complex64_t x[] = {
+	const stdlib_complex64_t x[] = {
 		stdlib_complex64( 5.0f, 2.0f ),
 		stdlib_complex64( -2.0f, 1.0f ),
 		stdlib_complex64( 0.0f, -0.0f ),
