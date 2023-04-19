@@ -23,13 +23,13 @@
 
 int main( void ) {
 	// Create a strided array:
-	double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 0.0/0.0, 0.0/0.0 };
+	const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 0.0/0.0, 0.0/0.0 };
 
 	// Specify the number of elements:
-	int64_t N = 5;
+	const int64_t N = 5;
 
 	// Specify the stride length:
-	int64_t stride = 2;
+	const int64_t stride = 2;
 
 	// Initialize a variable for storing the number of non-NaN elements:
 	int64_t n = 0;

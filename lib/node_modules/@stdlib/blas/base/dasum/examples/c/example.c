@@ -21,13 +21,13 @@
 
 int main( void ) {
 	// Create a strided array:
-	double x[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
+	const double x[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
 
 	// Specify the number of elements:
-	int N = 8;
+	const int N = 8;
 
 	// Specify a stride:
-	int strideX = 1;
+	const int strideX = 1;
 
 	// Compute the sum of absolute values:
 	double sum = c_dasum( N, x, strideX );
