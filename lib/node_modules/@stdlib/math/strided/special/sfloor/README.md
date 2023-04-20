@@ -233,7 +233,7 @@ void stdlib_strided_sfloor( const int64_t N, const float *X, const int64_t strid
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     float X[] = { -1.5, 2.3, -3.9, 4.2, -5.0, -6.0, 7.9, -8.1 };
 

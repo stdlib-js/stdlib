@@ -165,8 +165,8 @@ double stdlib_base_inv( const double x );
 #include "stdlib/math/base/special/inv.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { 3.0, 4.0, 5.0, 12.0 };
+int main( void ) {
+    const double x[] = { 3.0, 4.0, 5.0, 12.0 };
 
     double y;
     int i;

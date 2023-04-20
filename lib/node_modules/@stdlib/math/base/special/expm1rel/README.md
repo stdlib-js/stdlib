@@ -187,7 +187,7 @@ double stdlib_base_expm1rel( const double x );
 #include <stdlib.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     double x;
     double v;
     int i;

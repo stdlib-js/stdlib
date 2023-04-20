@@ -145,11 +145,11 @@ double stdlib_base_tanh( const double x );
 #include "stdlib/math/base/special/tanh.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     const double x[] = { -4.0, -3.11, -2.22, -1.33, -0.44, 0.44, 1.33, 2.22, 3.11, 4.0 };
+    
     double v;
     int i;
-    
     for ( i = 0; i < 10; i++ ) {
         v = stdlib_base_tanh( x[ i ] );
         printf( "tanh(%lf) = %lf\n", x[ i ], v );

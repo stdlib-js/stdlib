@@ -26,7 +26,7 @@ static float scale( const float x ) {
 	return x * 10.0f;
 }
 
-int main() {
+int main( void ) {
 	// Create an input strided array:
 	float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
 

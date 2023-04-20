@@ -250,7 +250,7 @@ interface Namespace {
 	/**
 	* Copies the elements of an array-like object to a new "generic" array.
 	*
-	* @param x - array length
+	* @param x - input array
 	* @returns output array
 	*
 	* @example

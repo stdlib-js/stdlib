@@ -99,7 +99,7 @@
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -202,7 +202,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_0d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -297,7 +297,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_1d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -392,7 +392,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_2d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -487,7 +487,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_2d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -582,7 +582,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_3d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -677,7 +677,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_3d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -772,7 +772,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_4d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -867,7 +867,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_4d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -962,7 +962,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_5d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -1057,7 +1057,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_5d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -1152,7 +1152,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_6d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -1247,7 +1247,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_6d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -1342,7 +1342,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_7d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -1437,7 +1437,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_7d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -1532,7 +1532,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_8d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -1627,7 +1627,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_8d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -1722,7 +1722,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_9d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -1817,7 +1817,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_9d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -1912,7 +1912,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_10d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -2007,7 +2007,7 @@ int8_t stdlib_ndarray_t_u_as_u_u_10d_blocked( struct ndarray *arrays[], void *fc
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *
@@ -2146,7 +2146,7 @@ static const struct ndarrayUnaryDispatchObject obj = {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* uint32_t fcn( const uint32_t x ) {
+* static uint32_t fcn( const uint32_t x ) {
 *     return x;
 * }
 *

@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import cfloor = require( './index' );
 
 
@@ -23,46 +24,23 @@ import cfloor = require( './index' );
 
 // The function returns an array of numbers...
 {
-	cfloor( 5, 3 ); // $ExpectType ArrayLike<number>
-	cfloor( [], 5, 3 ); // $ExpectType ArrayLike<number>
+	cfloor( new Complex128( 1.0, 2.0 ) ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the function is provided a value other than a complex number...
 {
-	cfloor( true, 3 ); // $ExpectError
-	cfloor( false, 3 ); // $ExpectError
-	cfloor( null, 3 ); // $ExpectError
-	cfloor( undefined, 3 ); // $ExpectError
-	cfloor( '5', 3 ); // $ExpectError
-	cfloor( [], 3 ); // $ExpectError
-	cfloor( {}, 3 ); // $ExpectError
-	cfloor( ( x: number ): number => x, 3 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an imaginary component which is not a number...
-{
-	cfloor( 5, true ); // $ExpectError
-	cfloor( 5, false ); // $ExpectError
-	cfloor( 5, null ); // $ExpectError
-	cfloor( 5, undefined ); // $ExpectError
-	cfloor( 5, '5' ); // $ExpectError
-	cfloor( 5, [] ); // $ExpectError
-	cfloor( 5, {} ); // $ExpectError
-	cfloor( 5, ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	cfloor( true, 5, 3 ); // $ExpectError
-	cfloor( false, 5, 3 ); // $ExpectError
-	cfloor( 'abc', 5, 3 ); // $ExpectError
-	cfloor( {}, 5, 3 ); // $ExpectError
-	cfloor( ( x: number ): number => x, 5, 3 ); // $ExpectError
-	cfloor( 123, 5, 3 ); // $ExpectError
+	cfloor( 2 ); // $ExpectError
+	cfloor( true ); // $ExpectError
+	cfloor( false ); // $ExpectError
+	cfloor( null ); // $ExpectError
+	cfloor( undefined ); // $ExpectError
+	cfloor( '5' ); // $ExpectError
+	cfloor( [] ); // $ExpectError
+	cfloor( {} ); // $ExpectError
+	cfloor( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	cfloor(); // $ExpectError
-	cfloor( 2 ); // $ExpectError
 }

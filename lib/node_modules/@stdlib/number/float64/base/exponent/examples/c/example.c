@@ -21,7 +21,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
 	double x[] = { 4.0, 0.0, -0.0, 1.0, -1.0, 3.14, -3.14, 1.0e308, -1.0e308, 1.0/0.0, -1.0/0.0, 0.0/0.0 };
 
 	int32_t out;

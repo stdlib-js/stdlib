@@ -203,7 +203,7 @@ void stdlib_base_float64_normalize( const double x, double *y, int32_t *exp );
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
     double x[] = { 1.0, 3.14, 0.0, -0.0, 3.14e-308, 3.14e308, 1.0/0.0, 0.0/0.0 };
     int32_t exp;
     double y;

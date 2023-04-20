@@ -149,14 +149,13 @@ double stdlib_base_asinh( const double x );
 
 ```c
 #include "stdlib/math/base/special/asinh.h"
-#include <stdlib.h>
 #include <stdio.h>
 
-int main() {
-    double x[] = { -5.0, -3.89, -2.78, -1.67, -0.55, 0.55, 1.67, 2.78, 3.89, 5.0 };
+int main( void ) {
+    const double x[] = { -5.0, -3.89, -2.78, -1.67, -0.55, 0.55, 1.67, 2.78, 3.89, 5.0 };
+    
     double v;
     int i;
-    
     for ( i = 0; i < 10; i++ ) {
         v = stdlib_base_asinh( x[ i ] );
         printf( "asinh(%lf) = %lf\n", x[ i ], v );

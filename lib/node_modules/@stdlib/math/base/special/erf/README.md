@@ -169,14 +169,13 @@ double stdlib_base_erf( const double x );
 
 ```c
 #include "stdlib/math/base/special/erf.h"
-#include <stdlib.h>
 #include <stdio.h>
 
-int main() {
-    double x[] = { -10.0, -7.78, -5.56, -3.33, -1.11, 1.11, 3.33, 5.56, 7.78, 10.0 };
+int main( void ) {
+    const double x[] = { -10.0, -7.78, -5.56, -3.33, -1.11, 1.11, 3.33, 5.56, 7.78, 10.0 };
+    
     double v;
     int i;
-    
     for ( i = 0; i < 10; i++ ) {
         v = stdlib_base_erf( x[ i ] );
         printf( "x: %lf, erf(x): %lf\n", x[ i ], v );

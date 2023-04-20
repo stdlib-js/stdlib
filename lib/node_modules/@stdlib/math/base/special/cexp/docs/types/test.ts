@@ -16,53 +16,31 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import cexp = require( './index' );
 
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns a complex number...
 {
-	cexp( 5, 3 ); // $ExpectType ArrayLike<number>
-	cexp( [], 5, 3 ); // $ExpectType ArrayLike<number>
+	cexp( new Complex128( 1.0, 2.0 ) ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the function is provided a value other than a complex number...
 {
-	cexp( true, 3 ); // $ExpectError
-	cexp( false, 3 ); // $ExpectError
-	cexp( null, 3 ); // $ExpectError
-	cexp( undefined, 3 ); // $ExpectError
-	cexp( '5', 3 ); // $ExpectError
-	cexp( [], 3 ); // $ExpectError
-	cexp( {}, 3 ); // $ExpectError
-	cexp( ( x: number ): number => x, 3 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an imaginary component which is not a number...
-{
-	cexp( 5, true ); // $ExpectError
-	cexp( 5, false ); // $ExpectError
-	cexp( 5, null ); // $ExpectError
-	cexp( 5, undefined ); // $ExpectError
-	cexp( 5, '5' ); // $ExpectError
-	cexp( 5, [] ); // $ExpectError
-	cexp( 5, {} ); // $ExpectError
-	cexp( 5, ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	cexp( true, 5, 3 ); // $ExpectError
-	cexp( false, 5, 3 ); // $ExpectError
-	cexp( 'abc', 5, 3 ); // $ExpectError
-	cexp( {}, 5, 3 ); // $ExpectError
-	cexp( ( x: number ): number => x, 5, 3 ); // $ExpectError
-	cexp( 123, 5, 3 ); // $ExpectError
+	cexp( 2 ); // $ExpectError
+	cexp( true ); // $ExpectError
+	cexp( false ); // $ExpectError
+	cexp( null ); // $ExpectError
+	cexp( undefined ); // $ExpectError
+	cexp( '5' ); // $ExpectError
+	cexp( [] ); // $ExpectError
+	cexp( {} ); // $ExpectError
+	cexp( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	cexp(); // $ExpectError
-	cexp( 2 ); // $ExpectError
 }

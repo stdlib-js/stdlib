@@ -22,7 +22,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
 	uint64_t v;
 	int32_t i;
 

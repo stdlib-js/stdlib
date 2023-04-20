@@ -153,14 +153,13 @@ double stdlib_base_atanh( const double x );
 
 ```c
 #include "stdlib/math/base/special/atanh.h"
-#include <stdlib.h>
 #include <stdio.h>
 
-int main() {
-    double x[] = { -1.0, -0.78, -0.56, -0.33, -0.11, 0.11, 0.33, 0.56, 0.78, 1.0 };
+int main( void ) {
+    const double x[] = { -1.0, -0.78, -0.56, -0.33, -0.11, 0.11, 0.33, 0.56, 0.78, 1.0 };
+    
     double v;
     int i;
-    
     for ( i = 0; i < 10; i++ ) {
         v = stdlib_base_atanh( x[ i ] );
         printf( "atanh(%lf) = %lf\n", x[ i ], v );

@@ -143,7 +143,7 @@ void stdlib_base_float64_get_high_word( const double x, uint32_t *high );
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
 
     uint32_t high;

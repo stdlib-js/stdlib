@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main() {
+int main( void ) {
 	float x[] = { 3.14f, -3.14f, 1.0f/0.0f, 0.0f/0.0f };
 
 	bool b;

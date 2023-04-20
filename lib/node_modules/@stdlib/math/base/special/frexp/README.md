@@ -241,8 +241,8 @@ void stdlib_base_frexp( const double x, double *frac, int32_t *exp );
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
-    double x[] = { 4.0, 0.0, -0.0, 1.0, -1.0, 3.14, -3.14, 1.0e308, -1.0e308, 1.0/0.0, -1.0/0.0, 0.0/0.0 };
+int main( void ) {
+    const double x[] = { 4.0, 0.0, -0.0, 1.0, -1.0, 3.14, -3.14, 1.0e308, -1.0e308, 1.0/0.0, -1.0/0.0, 0.0/0.0 };
 
     double frac;
     int32_t exp;

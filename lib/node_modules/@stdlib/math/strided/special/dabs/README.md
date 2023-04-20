@@ -243,7 +243,7 @@ void stdlib_strided_dabs( const int64_t N, const double *X, const int64_t stride
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     double X[] = { -1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0 };
 

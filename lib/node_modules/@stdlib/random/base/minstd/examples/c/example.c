@@ -22,7 +22,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
 	int8_t status;
 	int32_t seed;
 	uint64_t v;

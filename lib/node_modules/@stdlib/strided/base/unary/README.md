@@ -303,7 +303,7 @@ int64_t strides[] = { 1, 1 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint8_t fcn( uint8_t x ) {
+static uint8_t fcn( uint8_t x ) {
     return x;
 }
 
@@ -319,7 +319,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_b( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_b( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_b_as_u_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -343,7 +343,7 @@ int64_t strides[] = { 1, 1 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint32_t fcn( uint32_t x ) {
+static uint32_t fcn( uint32_t x ) {
     return x;
 }
 
@@ -359,7 +359,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_b_as_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_b_as_u_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -383,7 +383,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint8_t fcn( uint8_t x ) {
+static uint8_t fcn( uint8_t x ) {
     return x;
 }
 
@@ -399,7 +399,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_c_as_b_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -424,7 +424,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( uint8_t x ) {
+static stdlib_complex64_t fcn( uint8_t x ) {
     // ...
 }
 
@@ -440,7 +440,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_c_as_b_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_c_as_b_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_c_as_c_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -465,7 +465,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( stdlib_complex64_t x ) {
+static stdlib_complex64_t fcn( stdlib_complex64_t x ) {
     // ...
 }
 
@@ -481,7 +481,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_c_as_c_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_c_as_c_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_c_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -506,7 +506,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -522,7 +522,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_c_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_c_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -546,7 +546,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint8_t fcn( uint8_t x ) {
+static uint8_t fcn( uint8_t x ) {
     return x;
 }
 
@@ -562,7 +562,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_d_as_b_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -586,7 +586,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( uint8_t x ) {
+static double fcn( uint8_t x ) {
     // ...
 }
 
@@ -602,7 +602,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_d_as_b_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_d_as_b_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_d_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -626,7 +626,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -642,7 +642,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_d_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -666,7 +666,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint8_t fcn( uint8_t x ) {
+static uint8_t fcn( uint8_t x ) {
     return x;
 }
 
@@ -682,7 +682,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_f_as_b_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -706,7 +706,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( uint8_t x ) {
+static float fcn( uint8_t x ) {
     // ...
 }
 
@@ -722,7 +722,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_f_as_b_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_f_as_b_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_f_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -746,7 +746,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -762,7 +762,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_f_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_f_as_f_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -786,7 +786,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( float x ) {
+static float fcn( float x ) {
     return x;
 }
 
@@ -802,7 +802,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_f_as_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_f_as_f_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -826,7 +826,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint8_t fcn( uint8_t x ) {
+static uint8_t fcn( uint8_t x ) {
     return x;
 }
 
@@ -842,7 +842,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_i_as_b_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -866,7 +866,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( uint8_t x ) {
+static int32_t fcn( uint8_t x ) {
     // ...
 }
 
@@ -882,7 +882,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_i_as_b_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_i_as_b_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_i_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -906,7 +906,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -922,7 +922,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_i_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_i_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_k( \*arrays[], \*shape, \*strides, \*fcn )
@@ -946,7 +946,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint8_t fcn( uint8_t x ) {
+static uint8_t fcn( uint8_t x ) {
     return x;
 }
 
@@ -962,7 +962,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_k( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_k_as_b_k( \*arrays[], \*shape, \*strides, \*fcn )
@@ -986,7 +986,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( uint8_t x ) {
+static int16_t fcn( uint8_t x ) {
     // ...
 }
 
@@ -1002,7 +1002,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_k_as_b_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_k_as_b_k( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_k_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1026,7 +1026,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -1042,7 +1042,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_k_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_k_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_k_as_k_k( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1066,7 +1066,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int16_t x ) {
+static int16_t fcn( int16_t x ) {
     return x;
 }
 
@@ -1082,7 +1082,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_k_as_k_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_k_as_k_k( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_t( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1106,7 +1106,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint8_t fcn( uint8_t x ) {
+static uint8_t fcn( uint8_t x ) {
     return x;
 }
 
@@ -1122,7 +1122,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_t( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_t_as_b_t( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1146,7 +1146,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint16_t fcn( uint8_t x ) {
+static uint16_t fcn( uint8_t x ) {
     // ...
 }
 
@@ -1162,7 +1162,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_t_as_b_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_t_as_b_t( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_t_as_t_t( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1186,7 +1186,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint16_t fcn( uint16_t x ) {
+static uint16_t fcn( uint16_t x ) {
     return x;
 }
 
@@ -1202,7 +1202,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_t_as_t_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_t_as_t_t( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_t_as_u_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1226,7 +1226,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint32_t fcn( uint32_t x ) {
+static uint32_t fcn( uint32_t x ) {
     return x;
 }
 
@@ -1242,7 +1242,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_t_as_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_t_as_u_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1266,7 +1266,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint8_t fcn( uint8_t x ) {
+static uint8_t fcn( uint8_t x ) {
     return x;
 }
 
@@ -1282,7 +1282,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_u_as_b_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1306,7 +1306,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint32_t fcn( uint8_t x ) {
+static uint32_t fcn( uint8_t x ) {
     // ...
 }
 
@@ -1322,7 +1322,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_u_as_b_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_u_as_b_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_u_as_u_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1346,7 +1346,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint32_t fcn( uint32_t x ) {
+static uint32_t fcn( uint32_t x ) {
     return x;
 }
 
@@ -1362,7 +1362,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_u_as_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_u_as_u_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1386,7 +1386,7 @@ int64_t strides[] = { 1, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint8_t fcn( uint8_t x ) {
+static uint8_t fcn( uint8_t x ) {
     return x;
 }
 
@@ -1402,7 +1402,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_z_as_b_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1427,7 +1427,7 @@ int64_t strides[] = { 1, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( uint8_t x ) {
+static stdlib_complex128_t fcn( uint8_t x ) {
     // ...
 }
 
@@ -1443,7 +1443,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_z_as_b_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_z_as_b_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_z_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1468,7 +1468,7 @@ int64_t strides[] = { 1, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -1484,7 +1484,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_b_z_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_b_z_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_c_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1509,7 +1509,7 @@ int64_t strides[] = { 8, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( stdlib_complex64_t x ) {
+static stdlib_complex64_t fcn( stdlib_complex64_t x ) {
     // ...
 }
 
@@ -1525,7 +1525,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_c_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_c_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_c_c_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1550,7 +1550,7 @@ int64_t strides[] = { 8, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -1566,7 +1566,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_c_c_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_c_c_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_c_f_as_c_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1591,7 +1591,7 @@ int64_t strides[] = { 8, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( stdlib_complex64_t x ) {
+static float fcn( stdlib_complex64_t x ) {
     // ...
 }
 
@@ -1607,7 +1607,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(stdlib_complex64_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_c_f_as_c_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_c_f_as_c_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_c_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1632,7 +1632,7 @@ int64_t strides[] = { 8, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( stdlib_complex64_t x ) {
+static stdlib_complex64_t fcn( stdlib_complex64_t x ) {
     // ...
 }
 
@@ -1648,7 +1648,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_c_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_c_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_c_z_as_c_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1674,7 +1674,7 @@ int64_t strides[] = { 8, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex64_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex64_t x ) {
     // ...
 }
 
@@ -1690,7 +1690,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex64_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_c_z_as_c_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_c_z_as_c_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_c_z_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1715,7 +1715,7 @@ int64_t strides[] = { 8, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -1731,7 +1731,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_c_z_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_c_z_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1755,7 +1755,7 @@ int64_t strides[] = { 8, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -1771,7 +1771,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_d_i_as_d_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1795,7 +1795,7 @@ int64_t strides[] = { 8, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( double x ) {
+static int32_t fcn( double x ) {
     // ...
 }
 
@@ -1811,7 +1811,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_d_i_as_d_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_d_i_as_d_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_d_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1835,7 +1835,7 @@ int64_t strides[] = { 8, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -1851,7 +1851,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_d_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_d_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_d_z_as_d_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1876,7 +1876,7 @@ int64_t strides[] = { 8, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( double x ) {
+static stdlib_complex128_t fcn( double x ) {
     // ...
 }
 
@@ -1892,7 +1892,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_d_z_as_d_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_d_z_as_d_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_d_z_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1917,7 +1917,7 @@ int64_t strides[] = { 8, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -1933,7 +1933,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_d_z_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_d_z_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1957,7 +1957,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( float x ) {
+static float fcn( float x ) {
     return x;
 }
 
@@ -1973,7 +1973,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_c_as_c_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1998,7 +1998,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( stdlib_complex64_t x ) {
+static stdlib_complex64_t fcn( stdlib_complex64_t x ) {
     // ...
 }
 
@@ -2014,7 +2014,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_c_as_c_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_c_as_c_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_c_as_f_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2039,7 +2039,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( float x ) {
+static stdlib_complex64_t fcn( float x ) {
     // ...
 }
 
@@ -2055,7 +2055,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_c_as_f_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_c_as_f_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_c_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2080,7 +2080,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -2096,7 +2096,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_c_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_c_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2120,7 +2120,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( float x ) {
+static float fcn( float x ) {
     return x;
 }
 
@@ -2136,7 +2136,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_d_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2160,7 +2160,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -2176,7 +2176,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_d_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_d_as_f_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2200,7 +2200,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( float x ) {
+static double fcn( float x ) {
     // ...
 }
 
@@ -2216,7 +2216,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_d_as_f_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_d_as_f_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2240,7 +2240,7 @@ int64_t strides[] = { 4, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( float x ) {
+static float fcn( float x ) {
     return x;
 }
 
@@ -2256,7 +2256,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_f_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2280,7 +2280,7 @@ int64_t strides[] = { 4, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -2296,7 +2296,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_f_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_i_as_f_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2320,7 +2320,7 @@ int64_t strides[] = { 4, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( float x ) {
+static int32_t fcn( float x ) {
     // ...
 }
 
@@ -2336,7 +2336,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_i_as_f_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_i_as_f_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2360,7 +2360,7 @@ int64_t strides[] = { 4, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( float x ) {
+static float fcn( float x ) {
     return x;
 }
 
@@ -2376,7 +2376,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_z_as_f_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2401,7 +2401,7 @@ int64_t strides[] = { 4, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( float x ) {
+static stdlib_complex128_t fcn( float x ) {
     // ...
 }
 
@@ -2417,7 +2417,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_z_as_f_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_z_as_f_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_f_z_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2442,7 +2442,7 @@ int64_t strides[] = { 4, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -2458,7 +2458,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_f_z_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_f_z_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_i_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2482,7 +2482,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -2498,7 +2498,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_i_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_i_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_i_d_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2522,7 +2522,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -2538,7 +2538,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_i_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_i_d_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_i_d_as_i_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2562,7 +2562,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( int32_t x ) {
+static double fcn( int32_t x ) {
     // ...
 }
 
@@ -2578,7 +2578,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_i_d_as_i_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_i_d_as_i_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2602,7 +2602,7 @@ int64_t strides[] = { 4, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -2618,7 +2618,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_i_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2642,7 +2642,7 @@ int64_t strides[] = { 4, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -2658,7 +2658,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_i_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_i_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_i_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2682,7 +2682,7 @@ int64_t strides[] = { 4, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -2698,7 +2698,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_i_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_i_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_i_z_as_i_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2723,7 +2723,7 @@ int64_t strides[] = { 4, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( int32_t x ) {
+static stdlib_complex128_t fcn( int32_t x ) {
     // ...
 }
 
@@ -2739,7 +2739,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_i_z_as_i_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_i_z_as_i_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_i_z_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2764,7 +2764,7 @@ int64_t strides[] = { 4, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -2780,7 +2780,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_i_z_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_i_z_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2804,7 +2804,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int16_t x ) {
+static int16_t fcn( int16_t x ) {
     return x;
 }
 
@@ -2820,7 +2820,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_c_as_c_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2845,7 +2845,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( stdlib_complex64_t x ) {
+static stdlib_complex64_t fcn( stdlib_complex64_t x ) {
     // ...
 }
 
@@ -2861,7 +2861,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_c_as_c_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_c_as_c_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_c_as_k_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2886,7 +2886,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( int16_t x ) {
+static stdlib_complex64_t fcn( int16_t x ) {
     // ...
 }
 
@@ -2902,7 +2902,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_c_as_k_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_c_as_k_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_c_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2927,7 +2927,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -2943,7 +2943,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_c_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_c_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2967,7 +2967,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int16_t x ) {
+static int16_t fcn( int16_t x ) {
     return x;
 }
 
@@ -2983,7 +2983,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_d_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3007,7 +3007,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -3023,7 +3023,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_d_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_d_as_k_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3047,7 +3047,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( int16_t x ) {
+static double fcn( int16_t x ) {
     // ...
 }
 
@@ -3063,7 +3063,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_d_as_k_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_d_as_k_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3087,7 +3087,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int16_t x ) {
+static int16_t fcn( int16_t x ) {
     return x;
 }
 
@@ -3103,7 +3103,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_f_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3127,7 +3127,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -3143,7 +3143,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_f_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_f_as_f_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3167,7 +3167,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( float x ) {
+static float fcn( float x ) {
     return x;
 }
 
@@ -3183,7 +3183,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_f_as_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_f_as_f_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_f_as_k_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3207,7 +3207,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( int16_t x ) {
+static float fcn( int16_t x ) {
     // ...
 }
 
@@ -3223,7 +3223,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_f_as_k_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_f_as_k_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3247,7 +3247,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int16_t x ) {
+static int16_t fcn( int16_t x ) {
     return x;
 }
 
@@ -3263,7 +3263,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_i_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3287,7 +3287,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -3303,7 +3303,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_i_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_i_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_i_as_k_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3327,7 +3327,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int16_t x ) {
+static int32_t fcn( int16_t x ) {
     // ...
 }
 
@@ -3343,7 +3343,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_i_as_k_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_i_as_k_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_k( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3367,7 +3367,7 @@ int64_t strides[] = { 2, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int16_t x ) {
+static int16_t fcn( int16_t x ) {
     return x;
 }
 
@@ -3383,7 +3383,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_k( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_k_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3407,7 +3407,7 @@ int64_t strides[] = { 2, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -3423,7 +3423,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_k_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_k_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_t( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3447,7 +3447,7 @@ int64_t strides[] = { 2, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int16_t x ) {
+static int16_t fcn( int16_t x ) {
     return x;
 }
 
@@ -3463,7 +3463,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_t( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_t_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3487,7 +3487,7 @@ int64_t strides[] = { 2, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -3503,7 +3503,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_t_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_t_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3527,7 +3527,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int16_t x ) {
+static int16_t fcn( int16_t x ) {
     return x;
 }
 
@@ -3543,7 +3543,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_u_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3567,7 +3567,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -3583,7 +3583,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_u_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_u_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3607,7 +3607,7 @@ int64_t strides[] = { 2, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int16_t x ) {
+static int16_t fcn( int16_t x ) {
     return x;
 }
 
@@ -3623,7 +3623,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_z_as_k_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3648,7 +3648,7 @@ int64_t strides[] = { 2, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( int16_t x ) {
+static stdlib_complex128_t fcn( int16_t x ) {
     // ...
 }
 
@@ -3664,7 +3664,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_z_as_k_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_z_as_k_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_z_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3689,7 +3689,7 @@ int64_t strides[] = { 2, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -3705,7 +3705,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_k_z_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_k_z_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_b( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3729,7 +3729,7 @@ int64_t strides[] = { 1, 1 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int8_t fcn( int8_t x ) {
+static int8_t fcn( int8_t x ) {
     return x;
 }
 
@@ -3745,7 +3745,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_b( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_b( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3769,7 +3769,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int8_t fcn( int8_t x ) {
+static int8_t fcn( int8_t x ) {
     return x;
 }
 
@@ -3785,7 +3785,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_c_as_c_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3810,7 +3810,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( stdlib_complex64_t x ) {
+static stdlib_complex64_t fcn( stdlib_complex64_t x ) {
     // ...
 }
 
@@ -3826,7 +3826,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_c_as_c_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_c_as_c_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_c_as_s_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3851,7 +3851,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( int8_t x ) {
+static stdlib_complex64_t fcn( int8_t x ) {
     // ...
 }
 
@@ -3867,7 +3867,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_c_as_s_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_c_as_s_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_c_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3892,7 +3892,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -3908,7 +3908,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_c_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_c_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3932,7 +3932,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int8_t fcn( int8_t x ) {
+static int8_t fcn( int8_t x ) {
     return x;
 }
 
@@ -3948,7 +3948,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_d_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -3972,7 +3972,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -3988,7 +3988,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_d_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_d_as_s_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4012,7 +4012,7 @@ int64_t strides[] = { 1, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( int8_t x ) {
+static double fcn( int8_t x ) {
     // ...
 }
 
@@ -4028,7 +4028,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_d_as_s_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_d_as_s_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4052,7 +4052,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int8_t fcn( int8_t x ) {
+static int8_t fcn( int8_t x ) {
     return x;
 }
 
@@ -4068,7 +4068,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_f_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4092,7 +4092,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -4108,7 +4108,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_f_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_f_as_f_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4132,7 +4132,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( float x ) {
+static float fcn( float x ) {
     return x;
 }
 
@@ -4148,7 +4148,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_f_as_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_f_as_f_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_f_as_s_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4172,7 +4172,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( int8_t x ) {
+static float fcn( int8_t x ) {
     // ...
 }
 
@@ -4188,7 +4188,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_f_as_s_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_f_as_s_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4212,7 +4212,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int8_t fcn( int8_t x ) {
+static int8_t fcn( int8_t x ) {
     return x;
 }
 
@@ -4228,7 +4228,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_i_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4252,7 +4252,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -4268,7 +4268,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_i_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_i_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_i_as_s_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4292,7 +4292,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int8_t x ) {
+static int32_t fcn( int8_t x ) {
     // ...
 }
 
@@ -4308,7 +4308,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_i_as_s_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_i_as_s_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_k( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4332,7 +4332,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int8_t fcn( int8_t x ) {
+static int8_t fcn( int8_t x ) {
     return x;
 }
 
@@ -4348,7 +4348,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_k( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_k_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4372,7 +4372,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -4388,7 +4388,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_k_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_k_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_k_as_k_k( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4412,7 +4412,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int16_t x ) {
+static int16_t fcn( int16_t x ) {
     return x;
 }
 
@@ -4428,7 +4428,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_k_as_k_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_k_as_k_k( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_k_as_s_k( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4452,7 +4452,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int16_t fcn( int8_t x ) {
+static int16_t fcn( int8_t x ) {
     // ...
 }
 
@@ -4468,7 +4468,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int16_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_k_as_s_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_k_as_s_k( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_s( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4492,7 +4492,7 @@ int64_t strides[] = { 1, 1 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int8_t fcn( int8_t x ) {
+static int8_t fcn( int8_t x ) {
     return x;
 }
 
@@ -4508,7 +4508,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_s( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_s( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_s_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4532,7 +4532,7 @@ int64_t strides[] = { 1, 1 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -4548,7 +4548,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_s_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_s_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_t( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4572,7 +4572,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int8_t fcn( int8_t x ) {
+static int8_t fcn( int8_t x ) {
     return x;
 }
 
@@ -4588,7 +4588,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_t( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_t_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4612,7 +4612,7 @@ int64_t strides[] = { 1, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -4628,7 +4628,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_t_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_t_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4652,7 +4652,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int8_t fcn( int8_t x ) {
+static int8_t fcn( int8_t x ) {
     return x;
 }
 
@@ -4668,7 +4668,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_u_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4692,7 +4692,7 @@ int64_t strides[] = { 1, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -4708,7 +4708,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_u_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_u_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4732,7 +4732,7 @@ int64_t strides[] = { 1, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int8_t fcn( int8_t x ) {
+static int8_t fcn( int8_t x ) {
     return x;
 }
 
@@ -4748,7 +4748,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_z_as_s_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4773,7 +4773,7 @@ int64_t strides[] = { 1, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( int8_t x ) {
+static stdlib_complex128_t fcn( int8_t x ) {
     // ...
 }
 
@@ -4789,7 +4789,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_z_as_s_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_z_as_s_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_z_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4814,7 +4814,7 @@ int64_t strides[] = { 1, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -4830,7 +4830,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_s_z_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_z_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4854,7 +4854,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint16_t fcn( uint16_t x ) {
+static uint16_t fcn( uint16_t x ) {
     return x;
 }
 
@@ -4870,7 +4870,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_c_as_c_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4895,7 +4895,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( stdlib_complex64_t x ) {
+static stdlib_complex64_t fcn( stdlib_complex64_t x ) {
     // ...
 }
 
@@ -4911,7 +4911,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(stdlib_complex64_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_c_as_c_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_c_as_c_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_c_as_t_c( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4936,7 +4936,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex64_t fcn( uint16_t x ) {
+static stdlib_complex64_t fcn( uint16_t x ) {
     // ...
 }
 
@@ -4952,7 +4952,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex64_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_c_as_t_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_c_as_t_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_c_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -4977,7 +4977,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -4993,7 +4993,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_c_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_c_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5017,7 +5017,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint16_t fcn( uint16_t x ) {
+static uint16_t fcn( uint16_t x ) {
     return x;
 }
 
@@ -5033,7 +5033,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_d_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5057,7 +5057,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -5073,7 +5073,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_d_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_d_as_t_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5097,7 +5097,7 @@ int64_t strides[] = { 2, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( uint16_t x ) {
+static double fcn( uint16_t x ) {
     // ...
 }
 
@@ -5113,7 +5113,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_d_as_t_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_d_as_t_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5137,7 +5137,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint16_t fcn( uint16_t x ) {
+static uint16_t fcn( uint16_t x ) {
     return x;
 }
 
@@ -5153,7 +5153,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_f_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5177,7 +5177,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -5193,7 +5193,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_f_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_f_as_f_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5217,7 +5217,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( float x ) {
+static float fcn( float x ) {
     return x;
 }
 
@@ -5233,7 +5233,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_f_as_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_f_as_f_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_f_as_t_f( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5257,7 +5257,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-float fcn( uint16_t x ) {
+static float fcn( uint16_t x ) {
     // ...
 }
 
@@ -5273,7 +5273,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `float (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_f_as_t_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_f_as_t_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5297,7 +5297,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint16_t fcn( uint16_t x ) {
+static uint16_t fcn( uint16_t x ) {
     return x;
 }
 
@@ -5313,7 +5313,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_i_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5337,7 +5337,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( int32_t x ) {
+static int32_t fcn( int32_t x ) {
     return x;
 }
 
@@ -5353,7 +5353,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_i_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_i_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_i_as_t_i( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5377,7 +5377,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-int32_t fcn( uint16_t x ) {
+static int32_t fcn( uint16_t x ) {
     // ...
 }
 
@@ -5393,7 +5393,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `int32_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_i_as_t_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_i_as_t_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_t( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5417,7 +5417,7 @@ int64_t strides[] = { 2, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint16_t fcn( uint16_t x ) {
+static uint16_t fcn( uint16_t x ) {
     return x;
 }
 
@@ -5433,7 +5433,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_t( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_t_as_u_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5457,7 +5457,7 @@ int64_t strides[] = { 2, 2 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint32_t fcn( uint32_t x ) {
+static uint32_t fcn( uint32_t x ) {
     return x;
 }
 
@@ -5473,7 +5473,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_t_as_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_t_as_u_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5497,7 +5497,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint16_t fcn( uint16_t x ) {
+static uint16_t fcn( uint16_t x ) {
     return x;
 }
 
@@ -5513,7 +5513,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_u_as_t_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5537,7 +5537,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint32_t fcn( uint16_t x ) {
+static uint32_t fcn( uint16_t x ) {
     // ...
 }
 
@@ -5553,7 +5553,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_u_as_t_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_u_as_t_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_u_as_u_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5577,7 +5577,7 @@ int64_t strides[] = { 2, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint32_t fcn( uint32_t x ) {
+static uint32_t fcn( uint32_t x ) {
     return x;
 }
 
@@ -5593,7 +5593,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_u_as_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_u_as_u_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5617,7 +5617,7 @@ int64_t strides[] = { 2, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint16_t fcn( uint16_t x ) {
+static uint16_t fcn( uint16_t x ) {
     return x;
 }
 
@@ -5633,7 +5633,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_z_as_t_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5658,7 +5658,7 @@ int64_t strides[] = { 2, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( uint16_t x ) {
+static stdlib_complex128_t fcn( uint16_t x ) {
     // ...
 }
 
@@ -5674,7 +5674,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_z_as_t_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_z_as_t_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_z_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5699,7 +5699,7 @@ int64_t strides[] = { 2, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -5715,7 +5715,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_t_z_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_t_z_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_u_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5739,7 +5739,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint32_t fcn( uint32_t x ) {
+static uint32_t fcn( uint32_t x ) {
     return x;
 }
 
@@ -5755,7 +5755,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_u_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_u_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_u_d_as_d_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5779,7 +5779,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( double x ) {
+static double fcn( double x ) {
     return x;
 }
 
@@ -5795,7 +5795,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_u_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_u_d_as_d_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_u_d_as_u_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5819,7 +5819,7 @@ int64_t strides[] = { 4, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( uint32_t x ) {
+static double fcn( uint32_t x ) {
     // ...
 }
 
@@ -5835,7 +5835,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_u_d_as_u_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_u_d_as_u_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_u_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5859,7 +5859,7 @@ int64_t strides[] = { 4, 4 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint32_t fcn( uint32_t x ) {
+static uint32_t fcn( uint32_t x ) {
     return x;
 }
 
@@ -5875,7 +5875,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_u_u( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_u_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5899,7 +5899,7 @@ int64_t strides[] = { 4, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-uint32_t fcn( uint32_t x ) {
+static uint32_t fcn( uint32_t x ) {
     return x;
 }
 
@@ -5915,7 +5915,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_u_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_u_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_u_z_as_u_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5940,7 +5940,7 @@ int64_t strides[] = { 4, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( uint32_t x ) {
+static stdlib_complex128_t fcn( uint32_t x ) {
     // ...
 }
 
@@ -5956,7 +5956,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_u_z_as_u_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_u_z_as_u_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_u_z_as_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -5981,7 +5981,7 @@ int64_t strides[] = { 4, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -5997,7 +5997,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_u_z_as_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_u_z_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_z_d_as_z_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -6022,7 +6022,7 @@ int64_t strides[] = { 16, 8 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-double fcn( stdlib_complex128_t x ) {
+static double fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -6038,7 +6038,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `double (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_z_d_as_z_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_z_d_as_z_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_z_z( \*arrays[], \*shape, \*strides, \*fcn )
@@ -6063,7 +6063,7 @@ int64_t strides[] = { 16, 16 };
 int64_t shape[] = { 3 };
 
 // Define a callback:
-stdlib_complex128_t fcn( stdlib_complex128_t x ) {
+static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
     // ...
 }
 
@@ -6079,7 +6079,7 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `stdlib_complex128_t (*f)(stdlib_complex128_t)` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_z_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 <!-- ./loops -->
@@ -6307,7 +6307,7 @@ static double scale( const double x ) {
     return x * 10.0;
 }
 
-int main() {
+int main( void ) {
     // Create underlying byte arrays:
     uint8_t x[] = { 1, 4, 7 };
     uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };

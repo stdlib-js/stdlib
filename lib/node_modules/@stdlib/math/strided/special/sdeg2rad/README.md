@@ -233,7 +233,7 @@ void stdlib_strided_sdeg2rad( const int64_t N, const float *X, const int64_t str
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     float X[] = { 0.0, 30.0, 45.0, 60.0, 90.0, 120.0, 150.0, 180.0 };
 

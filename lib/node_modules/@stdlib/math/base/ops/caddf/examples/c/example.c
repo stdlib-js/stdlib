@@ -21,7 +21,7 @@
 #include "stdlib/complex/reimf.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	stdlib_complex64_t x[] = {
 		stdlib_complex64( 3.14f, 1.5f ),
 		stdlib_complex64( -3.14f, 1.5f ),

@@ -99,11 +99,13 @@
     "debug": "^2.6.9",
     "glob": "^7.0.5",
     "minimist": "^1.2.0",
-    "node-gyp": "^6.1.0",
     "readable-stream": "^2.1.4",
     "resolve": "^1.1.7",
     "vdom-to-html": "^2.3.0",
     "virtual-dom": "^2.1.1"
+  },
+  "optionalDependencies": {
+    "node-gyp": "^9.3.1"
   },
   "devDependencies": {
     "0x": "^4.10.2",

@@ -166,9 +166,9 @@ double stdlib_base_sub( const double x, const double y );
 #include "stdlib/math/base/ops/sub.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
-    double y[] = { 3.14, -3.14, -0.0, 0.0/0.0 };
+int main( void ) {
+    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+    const double y[] = { 3.14, -3.14, -0.0, 0.0/0.0 };
 
     double z;
     int i;

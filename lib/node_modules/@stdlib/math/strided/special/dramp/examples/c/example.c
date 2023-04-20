@@ -20,7 +20,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	// Create an input strided array:
 	double x[] = { 1.1, 2.5, -3.5, 4.0, -5.9, 6.4, -7.0, 8.2 };
 

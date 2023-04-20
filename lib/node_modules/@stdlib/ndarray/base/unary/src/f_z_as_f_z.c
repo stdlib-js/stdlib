@@ -101,7 +101,7 @@
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -205,7 +205,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_0d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -301,7 +301,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_1d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -397,7 +397,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_2d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -493,7 +493,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_2d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -589,7 +589,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_3d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -685,7 +685,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_3d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -781,7 +781,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_4d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -877,7 +877,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_4d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -973,7 +973,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_5d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -1069,7 +1069,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_5d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -1165,7 +1165,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_6d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -1261,7 +1261,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_6d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -1357,7 +1357,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_7d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -1453,7 +1453,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_7d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -1549,7 +1549,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_8d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -1645,7 +1645,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_8d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -1741,7 +1741,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_9d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -1837,7 +1837,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_9d_blocked( struct ndarray *arrays[], void *fcn
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -1933,7 +1933,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_10d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -2029,7 +2029,7 @@ int8_t stdlib_ndarray_f_z_as_f_z_10d_blocked( struct ndarray *arrays[], void *fc
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *
@@ -2169,7 +2169,7 @@ static const struct ndarrayUnaryDispatchObject obj = {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( const float x ) {
+* static stdlib_complex128_t fcn( const float x ) {
 *     // ...
 * }
 *

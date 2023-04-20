@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -52,14 +52,14 @@
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* float fcn( stdlib_complex64_t x ) {
+* static float fcn( stdlib_complex64_t x ) {
 *     // ...
 * }
 *
 * // Apply the callback:
 * stdlib_strided_c_f_as_c_f( arrays, shape, strides, (void *)fcn );
 */
-void stdlib_strided_c_f_as_c_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_c_f_as_c_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	typedef float func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_UNARY_LOOP_CLBK_RET_NOCAST( stdlib_complex64_t, float )

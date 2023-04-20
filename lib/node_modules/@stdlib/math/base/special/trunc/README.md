@@ -149,8 +149,8 @@ double stdlib_base_trunc( const double x );
 #include "stdlib/math/base/special/trunc.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+int main( void ) {
+    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
 
     double y;
     int i;
