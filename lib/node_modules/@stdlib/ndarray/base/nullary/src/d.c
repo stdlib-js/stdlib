@@ -88,7 +88,7 @@
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -105,7 +105,7 @@
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_0d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	int8_t status = stdlib_ndarray_iset_float64( arrays[ 0 ], 0, f() );
 	if ( status != 0 ) {
@@ -174,7 +174,7 @@ int8_t stdlib_ndarray_d_0d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -191,7 +191,7 @@ int8_t stdlib_ndarray_d_0d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_1d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_1D_LOOP_CLBK( double )
 	return 0;
@@ -257,7 +257,7 @@ int8_t stdlib_ndarray_d_1d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -274,7 +274,7 @@ int8_t stdlib_ndarray_d_1d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_2d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_2D_LOOP_CLBK( double )
 	return 0;
@@ -340,7 +340,7 @@ int8_t stdlib_ndarray_d_2d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -357,7 +357,7 @@ int8_t stdlib_ndarray_d_2d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_2d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_2D_BLOCKED_LOOP_CLBK( double )
 	return 0;
@@ -423,7 +423,7 @@ int8_t stdlib_ndarray_d_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -440,7 +440,7 @@ int8_t stdlib_ndarray_d_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_3d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_3D_LOOP_CLBK( double )
 	return 0;
@@ -506,7 +506,7 @@ int8_t stdlib_ndarray_d_3d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -523,7 +523,7 @@ int8_t stdlib_ndarray_d_3d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_3d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_3D_BLOCKED_LOOP_CLBK( double )
 	return 0;
@@ -589,7 +589,7 @@ int8_t stdlib_ndarray_d_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -606,7 +606,7 @@ int8_t stdlib_ndarray_d_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_4d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_4D_LOOP_CLBK( double )
 	return 0;
@@ -672,7 +672,7 @@ int8_t stdlib_ndarray_d_4d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -689,7 +689,7 @@ int8_t stdlib_ndarray_d_4d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_4d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_4D_BLOCKED_LOOP_CLBK( double )
 	return 0;
@@ -755,7 +755,7 @@ int8_t stdlib_ndarray_d_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -772,7 +772,7 @@ int8_t stdlib_ndarray_d_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_5d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_5D_LOOP_CLBK( double )
 	return 0;
@@ -838,7 +838,7 @@ int8_t stdlib_ndarray_d_5d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -855,7 +855,7 @@ int8_t stdlib_ndarray_d_5d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_5d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_5D_BLOCKED_LOOP_CLBK( double )
 	return 0;
@@ -921,7 +921,7 @@ int8_t stdlib_ndarray_d_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -938,7 +938,7 @@ int8_t stdlib_ndarray_d_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_6d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_6D_LOOP_CLBK( double )
 	return 0;
@@ -1004,7 +1004,7 @@ int8_t stdlib_ndarray_d_6d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -1021,7 +1021,7 @@ int8_t stdlib_ndarray_d_6d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_6d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_6D_BLOCKED_LOOP_CLBK( double )
 	return 0;
@@ -1087,7 +1087,7 @@ int8_t stdlib_ndarray_d_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -1104,7 +1104,7 @@ int8_t stdlib_ndarray_d_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_7d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_7D_LOOP_CLBK( double )
 	return 0;
@@ -1170,7 +1170,7 @@ int8_t stdlib_ndarray_d_7d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -1187,7 +1187,7 @@ int8_t stdlib_ndarray_d_7d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_7d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_7D_BLOCKED_LOOP_CLBK( double )
 	return 0;
@@ -1253,7 +1253,7 @@ int8_t stdlib_ndarray_d_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -1270,7 +1270,7 @@ int8_t stdlib_ndarray_d_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_8d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_8D_LOOP_CLBK( double )
 	return 0;
@@ -1336,7 +1336,7 @@ int8_t stdlib_ndarray_d_8d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -1353,7 +1353,7 @@ int8_t stdlib_ndarray_d_8d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_8d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_8D_BLOCKED_LOOP_CLBK( double )
 	return 0;
@@ -1419,7 +1419,7 @@ int8_t stdlib_ndarray_d_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -1436,7 +1436,7 @@ int8_t stdlib_ndarray_d_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_9d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_9D_LOOP_CLBK( double )
 	return 0;
@@ -1502,7 +1502,7 @@ int8_t stdlib_ndarray_d_9d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -1519,7 +1519,7 @@ int8_t stdlib_ndarray_d_9d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_9d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_9D_BLOCKED_LOOP_CLBK( double )
 	return 0;
@@ -1585,7 +1585,7 @@ int8_t stdlib_ndarray_d_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -1602,7 +1602,7 @@ int8_t stdlib_ndarray_d_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_10d( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_10D_LOOP_CLBK( double )
 	return 0;
@@ -1668,7 +1668,7 @@ int8_t stdlib_ndarray_d_10d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -1685,7 +1685,7 @@ int8_t stdlib_ndarray_d_10d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_10d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_10D_BLOCKED_LOOP_CLBK( double )
 	return 0;
@@ -1751,7 +1751,7 @@ int8_t stdlib_ndarray_d_10d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *
@@ -1768,7 +1768,7 @@ int8_t stdlib_ndarray_d_10d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_d_nd( struct ndarray *arrays[], void *fcn ) {
-	typedef double func_type();
+	typedef double func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_ND_LOOP_CLBK( double )
 	return 0;
@@ -1878,7 +1878,7 @@ static const struct ndarrayNullaryDispatchObject obj = {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* double fcn() {
+* static double fcn( void ) {
 *     return 10.0;
 * }
 *

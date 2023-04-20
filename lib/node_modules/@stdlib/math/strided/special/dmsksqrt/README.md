@@ -256,7 +256,7 @@ void stdlib_strided_dmsksqrt( const int64_t N, const double *X, const int64_t st
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     double X[] = { 0.0, 4.0, 9.0, 12.0, 24.0, 64.0, 81.0, 101.0 };
 

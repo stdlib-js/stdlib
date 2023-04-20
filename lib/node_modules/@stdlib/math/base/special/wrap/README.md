@@ -194,13 +194,12 @@ double stdlib_base_wrap( const double v, const double min, const double max )
 
 ```c
 #include "stdlib/math/base/special/wrap.h"
-#include <stdlib.h>
 #include <stdio.h>
 
-int main() {
-    double min[] = { 0.0, 0.0, 0.0, 0.0, -3.14 };
-    double max[] = { 5.0, 5.0, 5.0, 5.0, -0.0 };
-    double v[] = { 3.14, -3.14, 10.0, -0.0, 0.0 };
+int main( void ) {
+    const double min[] = { 0.0, 0.0, 0.0, 0.0, -3.14 };
+    const double max[] = { 5.0, 5.0, 5.0, 5.0, -0.0 };
+    const double v[] = { 3.14, -3.14, 10.0, -0.0, 0.0 };
 
     double out;
     int i;

@@ -146,8 +146,8 @@ double stdlib_base_cbrt( const double x );
 #include "stdlib/math/base/special/cbrt.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { 3.14, 9.00, 0.0, 0.0/0.0 };
+int main( void ) {
+    const double x[] = { 3.14, 9.00, 0.0, 0.0/0.0 };
 
     double y;
     int i;

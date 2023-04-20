@@ -233,7 +233,7 @@ void stdlib_strided_sinv( const int64_t N, const float *X, const int64_t strideX
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     float X[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
 

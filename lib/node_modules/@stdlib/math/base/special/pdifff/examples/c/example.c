@@ -19,8 +19,8 @@
 #include "stdlib/math/base/special/pdifff.h"
 #include <stdio.h>
 
-int main() {
-	float x[] = { 3.0f, 4.0f, 6.0f, 5.0f };
+int main( void ) {
+	const float x[] = { 3.0f, 4.0f, 6.0f, 5.0f };
 
 	float y;
 	int i;

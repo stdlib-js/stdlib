@@ -22,12 +22,21 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType } from '@stdlib/types/ndarray';
+import { Shape, Order, ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType, Mode } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing function options.
 */
 interface Options {
+	/**
+	* Array shape.
+	*
+	* ## Notes
+	*
+	* -   If provided, this option overrides the input array's inferred shape.
+	*/
+	shape?: Shape | number;
+
 	/**
 	* Array order (either 'row-major' (C-style) or 'column-major' (Fortran-style)).
 	*
@@ -38,13 +47,19 @@ interface Options {
 	order?: Order;
 
 	/**
-	* Array shape.
-	*
-	* ## Notes
-	*
-	* -   If provided, this option overrides the input array's inferred shape.
+	* Specifies how to handle a linear index which exceeds array dimensions (default: 'throw').
 	*/
-	shape?: Shape | number;
+	mode?: Mode;
+
+	/**
+	* Specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw']).
+	*/
+	submode?: Array<Mode>;
+
+	/**
+	* Boolean indicating whether an array should be read-only (default: false).
+	*/
+	readonly?: boolean;
 }
 
 /**
@@ -222,6 +237,9 @@ interface OptionsWithDType extends Options {
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -256,6 +274,9 @@ declare function zerosLike( x: float64ndarray, options?: Options ): float64ndarr
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -290,6 +311,9 @@ declare function zerosLike( x: float32ndarray, options?: Options ): float32ndarr
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -324,6 +348,9 @@ declare function zerosLike( x: complex128ndarray, options?: Options ): complex12
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -358,6 +385,9 @@ declare function zerosLike( x: complex64ndarray, options?: Options ): complex64n
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -392,6 +422,9 @@ declare function zerosLike( x: int32ndarray, options?: Options ): int32ndarray;
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -426,6 +459,9 @@ declare function zerosLike( x: int16ndarray, options?: Options ): int16ndarray;
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -460,6 +496,9 @@ declare function zerosLike( x: int8ndarray, options?: Options ): int8ndarray;
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -494,6 +533,9 @@ declare function zerosLike( x: uint32ndarray, options?: Options ): uint32ndarray
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -528,6 +570,9 @@ declare function zerosLike( x: uint16ndarray, options?: Options ): uint16ndarray
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -562,6 +607,9 @@ declare function zerosLike( x: uint8ndarray, options?: Options ): uint8ndarray;
 * @param options - options
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -597,6 +645,9 @@ declare function zerosLike( x: uint8cndarray, options?: Options ): uint8cndarray
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -634,6 +685,9 @@ declare function zerosLike( x: ndarray, options: Float64Options ): float64ndarra
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -671,6 +725,9 @@ declare function zerosLike( x: ndarray, options: Float32Options ): float32ndarra
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -708,6 +765,9 @@ declare function zerosLike( x: ndarray, options: Complex128Options ): complex128
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -745,6 +805,9 @@ declare function zerosLike( x: ndarray, options: Complex64Options ): complex64nd
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -782,6 +845,9 @@ declare function zerosLike( x: ndarray, options: Int32Options ): int32ndarray;
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -819,6 +885,9 @@ declare function zerosLike( x: ndarray, options: Int16Options ): int16ndarray;
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -856,6 +925,9 @@ declare function zerosLike( x: ndarray, options: Int8Options ): int8ndarray;
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -893,6 +965,9 @@ declare function zerosLike( x: ndarray, options: Uint32Options ): uint32ndarray;
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -930,6 +1005,9 @@ declare function zerosLike( x: ndarray, options: Uint16Options ): uint16ndarray;
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -967,6 +1045,9 @@ declare function zerosLike( x: ndarray, options: Uint8Options ): uint8ndarray;
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example
@@ -1004,6 +1085,9 @@ declare function zerosLike( x: ndarray, options: Uint8COptions ): uint8cndarray;
 * @param options.dtype - output array data type
 * @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
 * @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @returns zero-filled array
 *
 * @example

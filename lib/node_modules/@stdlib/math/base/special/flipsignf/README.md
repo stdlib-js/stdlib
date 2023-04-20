@@ -165,8 +165,8 @@ float stdlib_base_flipsignf( const float x, const float y );
 #include "stdlib/math/base/special/flipsignf.h"
 #include <stdio.h>
 
-int main() {
-    float x[] = { 3.0f, -3.0f, 0.0f, 0.0f/0.0f };
+int main( void ) {
+    const float x[] = { 3.0f, -3.0f, 0.0f, 0.0f/0.0f };
 
     float y;
     int i;

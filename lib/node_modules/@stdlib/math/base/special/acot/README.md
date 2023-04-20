@@ -133,11 +133,11 @@ double stdlib_base_acot( const double x );
 #include "stdlib/math/base/special/acot.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { -5.0, -3.89, -2.78, -1.67, -0.56, 0.56, 1.67, 2.78, 3.89, 5.0 };
+int main( void ) {
+    const double x[] = { -5.0, -3.89, -2.78, -1.67, -0.56, 0.56, 1.67, 2.78, 3.89, 5.0 };
+    
     double v;
     int i;
-    
     for ( i = 0; i < 10; i++ ) {
         v = stdlib_base_acot( x[ i ] );
         printf( "acot(%lf) = %lf\n", x[ i ], v );

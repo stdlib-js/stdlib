@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -51,14 +51,14 @@
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* double add( double x, double y ) {
+* static double add( double x, double y ) {
 *     return x + y;
 * }
 *
 * // Apply the callback:
 * stdlib_strided_tt_d_as_dd_d( arrays, shape, strides, (void *)add );
 */
-void stdlib_strided_tt_d_as_dd_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_tt_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	typedef double func_type( const double x, const double y );
 	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_ARG_CAST( uint16_t, uint16_t, double, double, double )

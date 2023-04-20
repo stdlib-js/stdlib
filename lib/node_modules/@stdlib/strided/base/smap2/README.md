@@ -265,7 +265,7 @@ static float addf( const float x, const float y ) {
     return x + y;
 }
 
-int main() {
+int main( void ) {
     // Create input strided arrays:
     float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
     float Y[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };

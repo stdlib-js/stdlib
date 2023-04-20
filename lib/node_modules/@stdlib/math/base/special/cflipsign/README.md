@@ -169,8 +169,8 @@ double complex stdlib_base_cflipsign( const double complex z, const double y );
 #include <stdio.h>
 #include <complex.h>
 
-int main() {
-    double complex x[] = { 3.14+1.5*I, -3.14-1.5*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
+int main( void ) {
+    const double complex x[] = { 3.14+1.5*I, -3.14-1.5*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
 
     double complex v;
     double complex y;

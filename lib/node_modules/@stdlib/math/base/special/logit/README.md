@@ -171,7 +171,7 @@ double stdlib_base_logit( const double p );
 #include <stdlib.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     double x;
     double v;
     int i;

@@ -99,7 +99,7 @@
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -202,7 +202,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_0d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -297,7 +297,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_1d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -392,7 +392,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_2d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -487,7 +487,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_2d_blocked( struct ndarray *arrays[], void *
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -582,7 +582,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_3d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -677,7 +677,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_3d_blocked( struct ndarray *arrays[], void *
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -772,7 +772,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_4d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -867,7 +867,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_4d_blocked( struct ndarray *arrays[], void *
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -962,7 +962,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_5d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -1057,7 +1057,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_5d_blocked( struct ndarray *arrays[], void *
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -1152,7 +1152,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_6d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -1247,7 +1247,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_6d_blocked( struct ndarray *arrays[], void *
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -1342,7 +1342,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_7d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -1437,7 +1437,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_7d_blocked( struct ndarray *arrays[], void *
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -1532,7 +1532,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_8d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -1627,7 +1627,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_8d_blocked( struct ndarray *arrays[], void *
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -1722,7 +1722,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_9d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -1817,7 +1817,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_9d_blocked( struct ndarray *arrays[], void *
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -1912,7 +1912,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_10d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -2007,7 +2007,7 @@ int8_t stdlib_ndarray_{{SIGNATURE}}_10d_blocked( struct ndarray *arrays[], void 
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *
@@ -2146,7 +2146,7 @@ static const struct ndarrayUnaryDispatchObject obj = {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+* static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
 *     {{CALLBACK_BODY}}
 * }
 *

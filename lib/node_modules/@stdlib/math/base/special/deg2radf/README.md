@@ -139,8 +139,8 @@ float stdlib_base_deg2radf( const float x );
 #include "stdlib/math/base/special/deg2radf.h"
 #include <stdio.h>
 
-int main() {
-    float x[] = { 45.0f, 90.0f, 0.0f, 0.0f/0.0f };
+int main( void ) {
+    const float x[] = { 45.0f, 90.0f, 0.0f, 0.0f/0.0f };
 
     float y;
     int i;

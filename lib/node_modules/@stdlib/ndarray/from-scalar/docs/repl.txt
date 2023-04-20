@@ -1,9 +1,9 @@
 
-{{alias}}( value[, dtype] )
+{{alias}}( value[, options] )
     Returns a zero-dimensional ndarray containing a provided scalar value.
 
-    If `value` is a number and `dtype` is a complex number data type, the
-    function returns a zero-dimensional ndarray containing a complex number
+    If `value` is a number and `options.dtype` is a complex number data type,
+    the function returns a zero-dimensional ndarray containing a complex number
     whose real component equals the provided scalar value and whose imaginary
     component is zero.
 
@@ -12,12 +12,22 @@
     value: any
         Scalar value.
 
-    dtype: string (optional)
+    options: Object (optional)
+        Options.
+
+    options.dtype: string (optional)
         Data type. If not provided and `value`
 
         - is a number, the default data type is 'float64'.
         - is a complex number object, the default data type is 'complex128'.
         - is any other value type, the default data type is 'generic'.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
 
     Returns
     -------

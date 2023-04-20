@@ -279,7 +279,7 @@ static double scale( const double x ) {
     return x * 10.0;
 }
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
 

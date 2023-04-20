@@ -27,7 +27,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-void print_ndarray_contents( const struct ndarray *x ) {
+static void print_ndarray_contents( const struct ndarray *x ) {
 	stdlib_complex64_t v;
 	int64_t i;
 	int8_t s;
@@ -42,11 +42,11 @@ void print_ndarray_contents( const struct ndarray *x ) {
 	}
 }
 
-stdlib_complex64_t scale( const stdlib_complex64_t x ) {
+static stdlib_complex64_t scale( const stdlib_complex64_t x ) {
 	return stdlib_complex64( x.re+10.0f, x.im+10.0f );
 }
 
-int main() {
+int main( void ) {
 	// Define the ndarray data type:
 	enum STDLIB_NDARRAY_DTYPE dtype = STDLIB_NDARRAY_COMPLEX64;
 

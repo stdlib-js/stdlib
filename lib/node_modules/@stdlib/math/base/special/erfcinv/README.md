@@ -177,14 +177,13 @@ double stdlib_base_erfcinv( const double x );
 
 ```c
 #include "stdlib/math/base/special/erfcinv.h"
-#include <stdlib.h>
 #include <stdio.h>
 
-int main() {
-    double x[] = { 0.0, 0.22, 0.44, 0.67, 0.89, 1.11, 1.33, 1.56, 1.78, 2.0 };
+int main( void ) {
+    const double x[] = { 0.0, 0.22, 0.44, 0.67, 0.89, 1.11, 1.33, 1.56, 1.78, 2.0 };
+    
     double v;
     int i;
-    
     for ( i = 0; i < 10; i++ ) {
         v = stdlib_base_erfcinv( x[ i ] );
         printf( "x: %lf, erfcinv(x): %lf\n", x[ i ], v );

@@ -424,6 +424,9 @@ DEPS_OPENBLAS_CFLAGS ?=
 # Fortran compiler flags:
 DEPS_OPENBLAS_FFLAGS ?= -O3 $(fPIC)
 
+# Flag indicating whether to use clang:
+DEPS_OPENBLAS_USE_CLANG ?=
+
 # Specify stack alignment on Windows.
 #
 # [1]: https://gcc.gnu.org/onlinedocs/gcc-4.5.3/gcc/i386-and-x86_002d64-Options.html
@@ -591,6 +594,9 @@ deps_shellcheck_version_slug := $(subst .,_,$(DEPS_SHELLCHECK_VERSION))
 
 # Define the output path when building shellcheck:
 DEPS_SHELLCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/shellcheck_$(deps_shellcheck_version_slug)
+
+# Host architecture:
+DEPS_SHELLCHECK_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_ARCH))
 
 # Host platform:
 DEPS_SHELLCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))

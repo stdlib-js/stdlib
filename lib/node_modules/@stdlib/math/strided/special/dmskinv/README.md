@@ -256,7 +256,7 @@ void stdlib_strided_dmskinv( const int64_t N, const double *X, const int64_t str
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     double X[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
 

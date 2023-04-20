@@ -20,6 +20,14 @@ limitations under the License.
 
 <!-- lint disable first-heading-level -->
 
+<!-- Section to include announcements. If section is included, add a horizontal rule *after* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="announcement">
+
+</section>
+
+<!-- /.announcement -->
+
 <!-- Section to include assets such as the project logo, etc. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="banner">
