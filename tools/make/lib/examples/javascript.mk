@@ -70,3 +70,27 @@ examples-javascript-files: $(NODE_MODULES)
 	done
 
 .PHONY: examples-javascript-files
+
+#/
+# Runs random JavaScript examples consecutively.
+#
+# @param {string} [PACKAGES_PATTERN='package.json'] - filename pattern for identifying packages
+# @param {string} [PACKAGES_FILTER='.*/.*'] - filepath pattern for finding packages
+# @param {string} [RANDOM_SELECTION_SIZE=100] - number of packages
+#
+# @example
+# make examples-random-javascript
+#
+# @example
+# make examples-random-javascript RANDOM_SELECTION_SIZE=10
+#/
+examples-random-javascript: $(NODE_MODULES)
+	$(QUIET) make list-random-lib-pkgs | while read -r pkg; do \
+		echo ""; \
+		echo "Running example: $$pkg"; \
+		NODE_ENV="$(NODE_ENV_EXAMPLES)" \
+		NODE_PATH="$(NODE_PATH_EXAMPLES)" \
+		make examples-javascript EXAMPLES_FILTER="$$pkg/.*" || exit 1; \
+	done
+
+.PHONY: examples-random-javascript
