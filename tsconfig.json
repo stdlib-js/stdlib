@@ -12,7 +12,6 @@
     "lib": [
       "es6"
     ],
-    "locale": "en",
     "module": "commonjs",
     "moduleResolution": "node",
     "newLine": "lf",
