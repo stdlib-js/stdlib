@@ -23,8 +23,8 @@ import constantFunction = require( './index' );
 
 // The function returns a function...
 {
-	constantFunction(); // $ExpectType Function
-	constantFunction( 3.12 ); // $ExpectType Function
+	constantFunction(); // $ExpectType () => undefined
+	constantFunction( 3.12 ); // $ExpectType () => number
 }
 
 // The compiler throws an error if the function is provided more than one argument...

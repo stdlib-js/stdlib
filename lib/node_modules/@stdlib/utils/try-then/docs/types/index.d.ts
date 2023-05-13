@@ -23,7 +23,7 @@
 *
 * @returns return value of `trythen` function
 */
-type Nullary = () => any;
+type Nullary<T> = () => T;
 
 /**
 * Function invoked if initial function throws an error.
@@ -31,7 +31,7 @@ type Nullary = () => any;
 * @param err - the error thrown by `x`
 * @returns return value of `trythen` function
 */
-type Unary = ( err: Error ) => any;
+type Unary<T> = ( err: Error ) => T;
 
 /**
 * Function invoked if initial function throws an error.
@@ -39,7 +39,7 @@ type Unary = ( err: Error ) => any;
 * @param err - the error thrown by `x`
 * @returns return value of `trythen` function
 */
-type ErrorHandler = Nullary | Unary;
+type ErrorHandler<T> = Nullary<T> | Unary<T>;
 
 
 /**
@@ -72,7 +72,7 @@ type ErrorHandler = Nullary | Unary;
 * var z = trythen( x, y );
 * // returns <number>
 */
-declare function trythen( x: Function, y: ErrorHandler ): any;
+declare function trythen<T>( x: () => T, y: ErrorHandler<T> ): T;
 
 
 // EXPORTS //
