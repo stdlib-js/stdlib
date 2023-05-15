@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,17 +16,8 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/cround.h"
+#include "stdlib/math/base/napi/unary.h"
 
-var uniform = require( '@stdlib/random/base/uniform' ).factory;
-var Complex128 = require( '@stdlib/complex/float64' );
-var cround = require( './../lib' );
-
-var rand = uniform( -50.0, 50.0 );
-
-var z;
-var i;
-for ( i = 0; i < 100; i++ ) {
-	z = new Complex128( rand(), rand() );
-	console.log( 'cround(%s) = %s', z, cround( z ) );
-}
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_Z_Z( stdlib_base_cround )
