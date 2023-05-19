@@ -28,7 +28,7 @@
 * var v = identity( 3.14 );
 * // returns 3.14
 */
-declare function identity( x: any ): any;
+declare function identity<T>( x: T ): T;
 
 
 // EXPORTS //

@@ -41,8 +41,8 @@ function zero(): number {
 
 // The function returns the return value of either the `x` or `y` function...
 {
-	ifthen( true, zero, one ); // $ExpectType any
-	ifthen( false, zero, one ); // $ExpectType any
+	ifthen( true, zero, one ); // $ExpectType number
+	ifthen( false, zero, one ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is not provided a function as its first argument...

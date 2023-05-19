@@ -40,7 +40,7 @@
 * var z = ifthen( randu() > 0.5, x, y );
 * // returns <number>
 */
-declare function ifthen( bool: boolean, x: Function, y: Function ): any;
+declare function ifthen<T, U>( bool: boolean, x: () => T, y: () => U ): T | U;
 
 
 // EXPORTS //
