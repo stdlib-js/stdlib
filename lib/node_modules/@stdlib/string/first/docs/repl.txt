@@ -1,0 +1,29 @@
+
+{{alias}}( str[, n] )
+    Returns the first visual character(s) of a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    n: integer (optional)
+        Number of characters to return. Default: 1.
+
+    Returns
+    -------
+    out: string
+        Updated string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep' )
+    'b'
+    > out = {{alias}}( 'Boop' )
+    'B'
+    > out = {{alias}}( 'foo bar', 5 )
+    'foo b'
+
+    See Also
+    --------
+

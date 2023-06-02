@@ -1,0 +1,9 @@
+
+Usage: first [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --n num               Number of characters to return. Default: 1.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
