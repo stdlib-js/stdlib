@@ -148,7 +148,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
 ### User Stories
 
--   I want to perform **data analysis** and/or **data science** related tasks in JavaScript and Node.js, similar to how I might use IPython, Julia, R, and/or MATLAB.
+-   I want to perform **data analysis** and **data science** tasks in JavaScript and Node.js, similar to how I might use Python, Julia, R, and MATLAB.
 
     -   Install the entire project as a [command-line utility](#install_command_line_utility).
 
