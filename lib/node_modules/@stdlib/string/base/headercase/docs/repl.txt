@@ -1,0 +1,23 @@
+
+{{alias}}( str )
+    Converts a string to Header case.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Header-cased string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello World!' )
+    'Hello-World'
+    > out = {{alias}}( 'beep boop' )
+    'Beep-Boop'
+
+    See Also
+    --------
