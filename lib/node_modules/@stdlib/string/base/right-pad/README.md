@@ -59,6 +59,9 @@ str = rpad( 'boop', 12, 'beep' );
     var str = rpad( 'boop', 10, 'beep' ); // => length 12
     // returns 'boopbeepbeep'
 
+    str = str.substring( 0, 10 ); // => length 10
+    // returns 'boopbeepbe'
+
     str = str.substring( str.length-10 ); // => length 10
     // returns 'opbeepbeep'
     ```
@@ -74,14 +77,28 @@ str = rpad( 'boop', 12, 'beep' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var papply = require( '@stdlib/utils/papply' );
+var papplyRight = require( '@stdlib/utils/papply-right' );
+var naryFunction = require( '@stdlib/utils/nary-function' );
+var map = require( '@stdlib/utils/map' );
+var logEach = require( '@stdlib/console/log-each' );
 var rpad = require( '@stdlib/string/base/right-pad' );
 
+// Define a string to pad:
 var str = 'beep';
-var i;
-for ( i = 0; i < 100; i++ ) {
-    console.log( rpad( str, discreteUniform( str.length, str.length+10 ), 'b' ) );
-}
+
+// Generate random lengths:
+var lens = discreteUniform( 10, str.length, str.length+10 );
+
+// Create a function for creating padded strings:
+var fcn = naryFunction( papply( papplyRight( rpad, 'b' ), str ), 1 );
+
+// Generate padded strings:
+var out = map( lens, fcn );
+
+// Print results:
+logEach( '%s', out );
 ```
 
 </section>
