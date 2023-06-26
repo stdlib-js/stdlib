@@ -18,7 +18,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Module containing array definitions.
@@ -2399,9 +2399,9 @@ declare module '@stdlib/types/object' {
 	* A collection, which is defined as either an array, typed array, or an array-like object (excluding strings and functions).
 	*
 	* @example
-	* const arr: Collection = [ 1, 2, 3 ];
+	* const arr: Collection<number> = [ 1, 2, 3 ];
 	*/
-	type Collection = Array<any> | TypedArray | ArrayLike<any>;
+	type Collection<T = any> = Array<T> | TypedArray | ArrayLike<T>;
 
 	/**
 	* Complex number data type.
