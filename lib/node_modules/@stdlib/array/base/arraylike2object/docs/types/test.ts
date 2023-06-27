@@ -69,7 +69,7 @@ function arrayLike(): ArrayLike<number> {
 // The function returns an array object...
 {
 	const x1 = [ 1, 2, 3, 4, 5, 6 ];
-	arraylike2object( x1 ); // $ExpectType GenericAccessorObject<any>
+	arraylike2object( x1 ); // $ExpectType GenericAccessorObject<number>
 
 	const x2 = new Float64Array( [ 1, 2, 3, 4, 5, 6 ] );
 	arraylike2object( x2 ); // $ExpectType Float64AccessorObject
@@ -105,10 +105,10 @@ function arrayLike(): ArrayLike<number> {
 	arraylike2object( x12 ); // $ExpectType Complex64AccessorObject
 
 	const x13 = accessorArray();
-	arraylike2object( x13 ); // $ExpectType GetSetAccessorObject<any>
+	arraylike2object( x13 ); // $ExpectType GetSetAccessorObject<number>
 
 	const x14 = arrayLike();
-	arraylike2object( x14 ); // $ExpectType IndexedAccessorObject
+	arraylike2object( x14 ); // $ExpectType IndexedAccessorObject<number>
 }
 
 // The compiler throws an error if the function is not provided an array-like object...
