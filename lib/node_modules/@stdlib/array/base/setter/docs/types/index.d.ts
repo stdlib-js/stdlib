@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -110,7 +110,7 @@ type SetUint8c = ( arr: Uint8ClampedArray, idx: number, value: number ) => void;
 * @param idx - element index
 * @param value - value to set
 */
-type SetGeneric = ( arr: Array<any>, idx: number, value: any ) => void;
+type SetGeneric<T> = ( arr: Array<T>, idx: number, value: T ) => void;
 
 /**
 * Sets an element in an indexed array-like object.
@@ -119,7 +119,7 @@ type SetGeneric = ( arr: Array<any>, idx: number, value: any ) => void;
 * @param idx - element index
 * @param value - value to set
 */
-type SetArrayLike = ( arr: Collection, idx: number, value: any ) => void;
+type SetArrayLike<T> = ( arr: Collection<T>, idx: number, value: T ) => void;
 
 /**
 * Returns an accessor function for setting an element in a `Float64Array`.
@@ -307,7 +307,7 @@ declare function setter( dtype: 'uint8c' ): SetUint8c;
 * var v = arr[ 2 ];
 * // returns 3
 */
-declare function setter( dtype: 'generic' ): SetGeneric;
+declare function setter( dtype: 'generic' ): SetGeneric<any>;
 
 /**
 * Returns an accessor function for setting an element in an indexed array-like object.
@@ -326,7 +326,7 @@ declare function setter( dtype: 'generic' ): SetGeneric;
 * var v = arr[ 2 ];
 * // returns 3
 */
-declare function setter( dtype: string ): SetArrayLike;
+declare function setter( dtype: string ): SetArrayLike<any>;
 
 
 // EXPORTS //
