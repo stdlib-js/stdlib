@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -35,31 +35,22 @@ interface Options {
 /**
 * Three-element array holding a unique value, the value count, and the frequency percentage.
 */
-type TableEntry = [ any, number, number ];
+type TableEntry<T> = [ T, number, number ];
 
 /**
 * Specifies which group an element in the input collection belongs to.
 *
 * @returns frequency table value
 */
-type Nullary = () => string | symbol;
-
-/**
-* Specifies which group an element in the input collection belongs to.
-*
-* @param value - collection value
-* @returns frequency table value
-*/
-type Unary = ( value: any ) => string | symbol;
+type Nullary = () => string | symbol | number;
 
 /**
 * Specifies which group an element in the input collection belongs to.
 *
 * @param value - collection value
-* @param index - collection index
 * @returns frequency table value
 */
-type Binary = ( value: any, index: number ) => string | symbol;
+type Unary<T> = ( value: T ) => string | symbol | number;
 
 /**
 * Specifies which group an element in the input collection belongs to.
@@ -68,7 +59,16 @@ type Binary = ( value: any, index: number ) => string | symbol;
 * @param index - collection index
 * @returns frequency table value
 */
-type Indicator = Nullary | Unary | Binary;
+type Binary<T> = ( value: T, index: number ) => string | symbol | number;
+
+/**
+* Specifies which group an element in the input collection belongs to.
+*
+* @param value - collection value
+* @param index - collection index
+* @returns frequency table value
+*/
+type Indicator<T> = Nullary | Unary<T> | Binary<T>;
 
 /**
 * Generates a frequency table according to a provided function.
@@ -103,12 +103,10 @@ type Indicator = Nullary | Unary | Binary;
 * var out = tabulateBy( arr, indicator );
 * // returns [ [ 'b', 3, 0.75 ], [ 'f', 1, 0.25 ] ]
 */
-declare function tabulateBy( collection: Collection, indicator: Indicator ): Array<TableEntry>; // tslint-disable-line max-line-length
+declare function tabulateBy<T = any>( collection: Collection<T>, indicator: Indicator<T> ): Array<TableEntry<T>>; // tslint-disable-line max-line-length
 
 /**
 * Generates a frequency table according to a provided function.
-*
-* ## Notes
 *
 * ## Notes
 *
@@ -145,7 +143,7 @@ declare function tabulateBy( collection: Collection, indicator: Indicator ): Arr
 * var out = tabulateBy( arr, opts, indicator );
 * // returns [ [ 'b', 3, 0.75 ], [ 'f', 1, 0.25 ] ]
 */
-declare function tabulateBy( collection: Collection, options: Options, indicator: Indicator ): Array<TableEntry>; // tslint-disable-line max-line-length
+declare function tabulateBy<T = any>( collection: Collection<T>, options: Options, indicator: Indicator<T> ): Array<TableEntry<T>>; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
