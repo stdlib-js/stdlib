@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -62,7 +62,7 @@ interface Float64ToInt64Bytes {
 	* var bytes = float64ToInt64Bytes.assign( 1.0, out, 2, 1 );
 	* // returns <Uint8Array>
 	*/
-	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+	assign<T = any>( x: number, out: Collection<T>, stride: number, offset: number ): Collection<T>; // tslint-disable-line max-line-length
 }
 
 /**
