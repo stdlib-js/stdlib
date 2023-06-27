@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -35,7 +35,7 @@ type NullaryPredicate = () => boolean;
 * @param value - collection value
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type UnaryPredicate = ( value: any ) => boolean;
+type UnaryPredicate<T> = ( value: T ) => boolean;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -44,17 +44,7 @@ type UnaryPredicate = ( value: any ) => boolean;
 * @param index - collection index
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type BinaryPredicate = ( value: any, index: number ) => boolean;
-
-/**
-* Checks whether an element in a collection passes a test.
-*
-* @param value - collection value
-* @param index - collection index
-* @param collection - input collection
-* @returns boolean indicating whether an element in a collection passes a test
-*/
-type TernaryPredicate = ( value: any, index: number, collection: Collection ) => boolean; // tslint-disable-line max-line-length
+type BinaryPredicate<T> = ( value: T, index: number ) => boolean;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -64,7 +54,17 @@ type TernaryPredicate = ( value: any, index: number, collection: Collection ) =>
 * @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Predicate = NullaryPredicate | UnaryPredicate | BinaryPredicate | TernaryPredicate; // tslint-disable-line max-line-length
+type TernaryPredicate<T> = ( value: T, index: number, collection: Collection<T> ) => boolean; // tslint-disable-line max-line-length
+
+/**
+* Checks whether an element in a collection passes a test.
+*
+* @param value - collection value
+* @param index - collection index
+* @param collection - input collection
+* @returns boolean indicating whether an element in a collection passes a test
+*/
+type Predicate<T> = NullaryPredicate | UnaryPredicate<T> | BinaryPredicate<T> | TernaryPredicate<T>; // tslint-disable-line max-line-length
 
 /**
 * Function invoked for each collection element passing a test.
@@ -76,7 +76,7 @@ type Nullary = () => void;
 *
 * @param value - collection value
 */
-type Unary = ( value: any ) => void;
+type Unary<T> = ( value: T ) => void;
 
 /**
 * Function invoked for each collection element passing a test.
@@ -84,16 +84,7 @@ type Unary = ( value: any ) => void;
 * @param value - collection value
 * @param index - collection index
 */
-type Binary = ( value: any, index: number ) => void;
-
-/**
-* Function invoked for each collection element passing a test.
-*
-* @param value - collection value
-* @param index - collection index
-* @param collection - input collection
-*/
-type Ternary = ( value: any, index: number, collection: Collection ) => void;
+type Binary<T> = ( value: T, index: number ) => void;
 
 /**
 * Function invoked for each collection element passing a test.
@@ -102,7 +93,16 @@ type Ternary = ( value: any, index: number, collection: Collection ) => void;
 * @param index - collection index
 * @param collection - input collection
 */
-type Callback = Nullary | Unary | Binary | Ternary;
+type Ternary<T> = ( value: T, index: number, collection: Collection<T> ) => void; // tslint-disable-line max-line-length
+
+/**
+* Function invoked for each collection element passing a test.
+*
+* @param value - collection value
+* @param index - collection index
+* @param collection - input collection
+*/
+type Callback<T> = Nullary | Unary<T> | Binary<T> | Ternary<T>;
 
 /**
 * While a test condition is true, invokes a function once for each element in a collection.
@@ -134,7 +134,7 @@ type Callback = Nullary | Unary | Binary | Ternary;
 *
 * whileEach( arr, predicate, log );
 */
-declare function whileEach( collection: Collection, predicate: Predicate, fcn: Callback, thisArg?: any ): Collection; // tslint-disable-line max-line-length
+declare function whileEach<T = any>( collection: Collection<T>, predicate: Predicate<T>, fcn: Callback<T>, thisArg?: any ): Collection<T>; // tslint-disable-line max-line-length
 
 
 // EXPORTS //

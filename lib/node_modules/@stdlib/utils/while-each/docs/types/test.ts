@@ -18,54 +18,72 @@
 
 import whileEach = require( './index' );
 
-const log = ( v: any, index: number ): void => {
-	console.log( `${index}: ${v}` );
-};
+/**
+* Test function.
+*
+* @param v - value
+* @param index - index
+*/
+function fcn( v: number, index: number ): void {
+	if ( v !== v ) {
+		throw new Error( 'beep' );
+	}
+	if ( index !== index ) {
+		throw new Error( 'beep' );
+	}
+}
 
-const isNotNaN = ( v: number ): boolean => {
-	return ( v === v );
-};
+/**
+* Test function.
+*
+* @param v - value
+* @returns result
+*/
+function isnan( v: number ): boolean {
+	return ( v !== v );
+}
+
 
 // TESTS //
 
 // The function returns the input collection...
 {
-	whileEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, log ); // $ExpectType Collection
-	whileEach( [ -1, 1, 2 ], isNotNaN, log, {} ); // $ExpectType Collection
+	whileEach( [ 0, 1, 1, NaN, 2 ], isnan, fcn ); // $ExpectType Collection<number>
+	whileEach( [ -1, 1, 2 ], isnan, fcn, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
 {
-	whileEach( 2, isNotNaN, log ); // $ExpectError
-	whileEach( false, isNotNaN, log ); // $ExpectError
-	whileEach( true, isNotNaN, log ); // $ExpectError
-	whileEach( {}, isNotNaN, log ); // $ExpectError
+	whileEach( 2, isnan, fcn ); // $ExpectError
+	whileEach( false, isnan, fcn ); // $ExpectError
+	whileEach( true, isnan, fcn ); // $ExpectError
+	whileEach( {}, isnan, fcn ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a function...
 {
-	whileEach( [ 0, 1, 1, NaN, 2 ], 2, log ); // $ExpectError
-	whileEach( [ 0, 1, 1, NaN, 2 ], false, log ); // $ExpectError
-	whileEach( [ 0, 1, 1, NaN, 2 ], true, log ); // $ExpectError
-	whileEach( [ 0, 1, 1, NaN, 2 ], 'abc', log ); // $ExpectError
-	whileEach( [ 0, 1, 1, NaN, 2 ], {}, log ); // $ExpectError
-	whileEach( [ 0, 1, 1, NaN, 2 ], [], log ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], 2, fcn ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], false, fcn ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], true, fcn ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], 'abc', fcn ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], {}, fcn ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], [], fcn ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a function...
 {
-	whileEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, 2 ); // $ExpectError
-	whileEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, false ); // $ExpectError
-	whileEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, true ); // $ExpectError
-	whileEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, 'abc' ); // $ExpectError
-	whileEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, {} ); // $ExpectError
-	whileEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, [] ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], isnan, 2 ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], isnan, false ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], isnan, true ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], isnan, 'abc' ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], isnan, {} ); // $ExpectError
+	whileEach( [ 0, 1, 1, NaN, 2 ], isnan, [] ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	whileEach(); // $ExpectError
 	whileEach( [ 1, 2, 3 ] ); // $ExpectError
-	whileEach( [ 1, 2, 3 ], isNotNaN ); // $ExpectError
-	whileEach( [ 1, 2, 3 ], isNotNaN, log, {}, 3 ); // $ExpectError
+	whileEach( [ 1, 2, 3 ], isnan ); // $ExpectError
+	whileEach( [ 1, 2, 3 ], isnan, fcn, {}, 3 ); // $ExpectError
 }
