@@ -16,11 +16,37 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
 import { Collection } from '@stdlib/types/object';
+
+/**
+* Interface defining an array-like object supporting the accessor (get/set) protocol.
+*/
+interface AccessorArray {
+	/**
+	* Number of elements.
+	*/
+	length: number;
+
+	/**
+	* Returns an array element.
+	*
+	* @param i - element index
+	* @returns array element
+	*/
+	get( i: number ): any;
+
+	/**
+	* Sets an array element.
+	*
+	* @param value - value(s)
+	* @param i - element index at which to start writing values (default: 0)
+	*/
+	set( value: any, i?: number ): void;
+}
 
 /**
 * Tests if an array-like object supports the accessor (get/set) protocol.
@@ -39,7 +65,7 @@ import { Collection } from '@stdlib/types/object';
 * var bool = isAccessorArray( [] );
 * // returns false
 */
-declare function isAccessorArray( value: Collection ): boolean;
+declare function isAccessorArray( value: Collection | AccessorArray ): value is AccessorArray; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
