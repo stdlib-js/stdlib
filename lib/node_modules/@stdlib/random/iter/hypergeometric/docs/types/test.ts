@@ -23,9 +23,9 @@ import iterator = require( './index' );
 
 // The function returns an iterator...
 {
-	iterator( 10, 5, 3 ); // $ExpectType RandIter
-	iterator( 10, 5, 3, {} ); // $ExpectType RandIter
-	iterator( 10, 5, 3, { 'iter': 10 } ); // $ExpectType RandIter
+	iterator( 10, 5, 3 ); // $ExpectType Iterator<number>
+	iterator( 10, 5, 3, {} ); // $ExpectType Iterator<number>
+	iterator( 10, 5, 3, { 'iter': 10 } ); // $ExpectType Iterator<number>
 }
 
 // The compiler throws an error if the function is provided invalid input arguments...
