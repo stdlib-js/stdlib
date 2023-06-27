@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/object';
 
 /**
 * Returns the Cartesian square.
@@ -38,7 +38,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var out = cartesianSquare( x );
 * // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 */
-declare function cartesianSquare<T>( x: ArrayLike<T> ): Array<Array<T>>;
+declare function cartesianSquare<T = any>( x: Collection<T> ): Array<Array<T>>;
 
 
 // EXPORTS //
