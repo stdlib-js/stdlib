@@ -23,7 +23,7 @@ import last = require( './index' );
 
 // The function returns the last element in array...
 {
-	last( [ 1, 2, 3 ] ); // $ExpectType any
+	last( [ 1, 2, 3 ] ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided an argument which is not a collection...

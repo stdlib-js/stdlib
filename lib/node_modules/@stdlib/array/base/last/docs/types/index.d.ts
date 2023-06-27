@@ -34,7 +34,7 @@ import { Collection } from '@stdlib/types/object';
 * var out = last( x );
 * // returns 3
 */
-declare function last( arr: Collection ): any;
+declare function last<T = any>( arr: Collection<T> ): T;
 
 
 // EXPORTS //
