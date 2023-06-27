@@ -18,18 +18,31 @@
 
 import whileEachRight = require( './index' );
 
-const fcn = ( v: number, index: number ): void => {
+/**
+* Test function.
+*
+* @param v - value
+* @param index - index
+*/
+function fcn( v: number, index: number ): void {
 	if ( v !== v ) {
 		throw new Error( 'beep' );
 	}
 	if ( index !== index ) {
 		throw new Error( 'beep' );
 	}
-};
+}
 
-const isnan = ( v: number ): boolean => {
+/**
+* Test function.
+*
+* @param v - value
+* @returns result
+*/
+function isnan( v: number ): boolean {
 	return ( v !== v );
-};
+}
+
 
 // TESTS //
 
