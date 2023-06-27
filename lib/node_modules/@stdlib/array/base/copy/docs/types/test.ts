@@ -23,7 +23,7 @@ import copy = require( './index' );
 
 // The function returns an array...
 {
-	copy( [ 1, 2, 3 ] ); // $ExpectType any[]
+	copy( [ 1, 2, 3 ] ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided an argument which is not a collection...
