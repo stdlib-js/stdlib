@@ -55,7 +55,7 @@ function accessorArray(): AccessorArrayLike<number> {
 {
 	setter( 'complex128' ); // $ExpectType SetComplex128
 	setter( 'complex64' ); // $ExpectType SetComplex64
-	setter( 'foo' ); // $ExpectType SetArrayLike
+	setter( 'foo' ); // $ExpectType SetArrayLike<any>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...
