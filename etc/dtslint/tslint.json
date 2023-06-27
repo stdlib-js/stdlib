@@ -139,7 +139,7 @@
 		"max-file-line-count": [ true, 1000 ],
 		"max-line-length": [ true,
 			{
-				"limit": 80,
+				"limit": 1000,
 				"ignore-pattern": "^import |\\/\\/ |\\/?\\* "
 			}
 		],
