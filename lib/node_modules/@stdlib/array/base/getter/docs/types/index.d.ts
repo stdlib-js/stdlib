@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -110,7 +110,7 @@ type GetUint8c = ( arr: Uint8ClampedArray, idx: number ) => number | void;
 * @param idx - element index
 * @returns element value
 */
-type GetGeneric = ( arr: Array<any>, idx: number ) => any;
+type GetGeneric<T> = ( arr: Array<T>, idx: number ) => T | void;
 
 /**
 * Returns an element from an indexed array-like object.
@@ -119,7 +119,7 @@ type GetGeneric = ( arr: Array<any>, idx: number ) => any;
 * @param idx - element index
 * @returns element value
 */
-type GetArrayLike = ( arr: Collection, idx: number ) => any;
+type GetArrayLike<T> = ( arr: Collection<T>, idx: number ) => T | void;
 
 /**
 * Returns an accessor function for retrieving an element from a `Float64Array`.
@@ -287,7 +287,7 @@ declare function getter( dtype: 'uint8c' ): GetUint8c;
 * var v = get( arr, 2 );
 * // returns 3
 */
-declare function getter( dtype: 'generic' ): GetGeneric;
+declare function getter( dtype: 'generic' ): GetGeneric<any>;
 
 /**
 * Returns an accessor function for retrieving an element from an indexed array-like object.
@@ -304,7 +304,7 @@ declare function getter( dtype: 'generic' ): GetGeneric;
 * var v = get( arr, 2 );
 * // returns 3
 */
-declare function getter( dtype: string ): GetArrayLike;
+declare function getter( dtype: string ): GetArrayLike<any>;
 
 
 // EXPORTS //
