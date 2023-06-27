@@ -49,7 +49,7 @@ type GetComplex64 = ( arr: Complex64Array, idx: number ) => Complex64 | void;
 * @param idx - element index
 * @returns element value
 */
-type GetArrayLike = ( arr: AccessorArrayLike<any>, idx: number ) => any;
+type GetArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number ) => T;
 
 /**
 * Returns an accessor function for retrieving an element from a `Complex128Array`.
@@ -125,7 +125,7 @@ declare function getter( dtype: 'complex64' ): GetComplex64;
 * var v = get( arr, 2 );
 * // returns 3
 */
-declare function getter( dtype: string ): GetArrayLike;
+declare function getter( dtype: string ): GetArrayLike<any>;
 
 
 // EXPORTS //
