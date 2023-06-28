@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -44,7 +44,7 @@ import { Collection } from '@stdlib/types/object';
 * var out = bar( 1, 2, 3 );
 * // returns [ 1, 3 ]
 */
-declare function maskArguments( fcn: Function, mask: Collection, thisArg?: any ): Function; // tslint-disable-line max-line-length
+declare function maskArguments( fcn: Function, mask: Collection, thisArg?: any ): Function;
 
 
 // EXPORTS //

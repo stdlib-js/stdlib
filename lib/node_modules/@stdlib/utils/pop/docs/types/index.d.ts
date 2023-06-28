@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -49,7 +49,7 @@ import { Collection } from '@stdlib/types/object';
 * var out = pop( arr );
 * // returns [ <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ], 5.0 ]
 */
-declare function pop( collection: Collection ): [Collection, any];
+declare function pop<T = any>( collection: Collection<T> ): [Collection<T>, T];
 
 
 // EXPORTS //
