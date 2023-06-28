@@ -49,7 +49,7 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **k**: scale parameter.
 -   **sk**: index increment for `k`.
--   **lambda**:shape parameter.
+-   **lambda**: shape parameter.
 -   **sl**: index increment for `lambda`.
 -   **out**: output array.
 -   **so**: index increment for `out`.
