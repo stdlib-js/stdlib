@@ -36,7 +36,7 @@ interface IsNegativeIntegerArray {
 	* var bool = isNegativeIntegerArray( [ -3.0, '-3.0' ] );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is ArrayLike<number | Number>;
 
 	/**
 	* Tests if a value is an array-like object containing only negative primitive integer values.
@@ -56,7 +56,7 @@ interface IsNegativeIntegerArray {
 	* var bool = isNegativeIntegerArray.primitives( [ -3.0, new Number(-1.0) ] );
 	* // returns false
 	*/
-	primitives( value: any ): boolean;
+	primitives( value: any ): value is ArrayLike<number>;
 
 	/**
 	* Tests if a value is an array-like object containing only number objects having negative integer values.
@@ -76,7 +76,7 @@ interface IsNegativeIntegerArray {
 	* var bool = isNegativeIntegerArray.objects( [ -3.0, new Number(-1.0) ] );
 	* // returns false
 	*/
-	objects( value: any ): boolean;
+	objects( value: any ): value is ArrayLike<Number>;
 }
 
 /**

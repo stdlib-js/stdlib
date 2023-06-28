@@ -36,7 +36,7 @@ interface IsNaNArray {
 	* var bool = isNaNArray( [NaN,2] );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is ArrayLike<number | Number>;
 
 	/**
 	* Tests if a value is an array-like object containing only primitive NaN values.
@@ -52,7 +52,7 @@ interface IsNaNArray {
 	* var bool = isNaNArray.primitives( [NaN,NaN,NaN] );
 	* // returns true
 	*/
-	primitives( value: any ): boolean;
+	primitives( value: any ): value is ArrayLike<number>;
 
 	/**
 	* Tests if a value is an array-like object containing only number objects having NaN values.
@@ -71,7 +71,7 @@ interface IsNaNArray {
 	* @example
 	* var bool = isNaNArray.objects( [NaN,NaN,NaN] );
 	*/
-	objects( value: any ): boolean;
+	objects( value: any ): value is ArrayLike<Number>;
 }
 
 /**
