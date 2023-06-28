@@ -48,7 +48,7 @@
 * var out = isAlphagram( 123 );
 * // returns false
 */
-declare function isAlphagram( value: any ): boolean;
+declare function isAlphagram( value: any ): value is string;
 
 
 // EXPORTS //

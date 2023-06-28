@@ -36,7 +36,7 @@
 * var bool = isArrayLike( {'length':10} );
 * // returns true
 */
-declare function isArrayLike( value: any ): boolean;
+declare function isArrayLike( value: any ): value is ArrayLike<any>;
 
 
 // EXPORTS //
