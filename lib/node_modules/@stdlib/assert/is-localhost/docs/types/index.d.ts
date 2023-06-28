@@ -50,7 +50,7 @@
 * var bool = isLocalhost( null );
 * // returns false
 */
-declare function isLocalhost( value: any ): boolean;
+declare function isLocalhost( value: any ): value is string;
 
 
 // EXPORTS //
