@@ -40,10 +40,9 @@
 * var bool = isKebabcase( 1 );
 * // returns false
 */
-declare function isKebabcase( value: any ): boolean;
+declare function isKebabcase( value: any ): value is string;
 
 
 // EXPORTS //
 
 export = isKebabcase;
-
