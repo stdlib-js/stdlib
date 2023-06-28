@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -75,7 +75,7 @@ interface Routine {
 	* // Fill the array with pseudorandom numbers:
 	* exponential( out.length, [ 2.0 ], 0, out, 1 );
 	*/
-	( N: number, lambda: Collection, sl: number, out: Collection, so: number, options?: Options ): Collection; // tslint:disable-line:max-line-length
+	<T = any>( N: number, lambda: Collection, sl: number, out: Collection<T>, so: number, options?: Options ): Collection<T>;
 
 	/**
 	* Fills a strided array with pseudorandom numbers drawn from an exponential distribution using alternative indexing semantics.
@@ -102,7 +102,7 @@ interface Routine {
 	* // Fill the array with pseudorandom numbers:
 	* exponential.ndarray( out.length, [ 2.0 ], 0, 0, out, 1, 0 );
 	*/
-	ndarray( N: number, lambda: Collection, sl: number, ol: number, out: Collection, so: number, oo: number, options?: Options ): Collection; // tslint:disable-line:max-line-length
+	ndarray<T = any>( N: number, lambda: Collection, sl: number, ol: number, out: Collection<T>, so: number, oo: number, options?: Options ): Collection<T>;
 }
 
 /**
