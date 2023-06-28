@@ -32,7 +32,7 @@
 * var bool = isPlainObject( null );
 * // returns false
 */
-declare function isPlainObject( value: any ): boolean;
+declare function isPlainObject( value: any ): value is object;
 
 
 // EXPORTS //

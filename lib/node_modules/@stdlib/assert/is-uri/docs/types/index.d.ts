@@ -119,7 +119,7 @@
 * var bool = isURI( 'http://example.w3.org/%at' );
 * // returns false
 */
-declare function isURI( value: any ): boolean;
+declare function isURI( value: any ): value is string;
 
 
 // EXPORTS //

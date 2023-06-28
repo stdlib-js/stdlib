@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { NumericArray } from '@stdlib/types/array';
+
 /**
 * Tests if a value is a numeric array.
 *
@@ -34,7 +38,7 @@
 * bool = isNumericArray( [ '1', '2', '3' ] );
 * // returns false
 */
-declare function isNumericArray( v: any ): boolean;
+declare function isNumericArray( v: any ): v is NumericArray;
 
 
 // EXPORTS //

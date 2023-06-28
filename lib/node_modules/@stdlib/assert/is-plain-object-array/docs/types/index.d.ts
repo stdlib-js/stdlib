@@ -34,7 +34,7 @@
 * bool = isPlainObjectArray( [ {}, '3.0' ] );
 * // returns false
 */
-declare function isPlainObjectArray( value: any ): boolean;
+declare function isPlainObjectArray( value: any ): value is ArrayLike<object>;
 
 
 // EXPORTS //

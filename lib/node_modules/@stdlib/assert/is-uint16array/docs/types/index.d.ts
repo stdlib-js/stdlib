@@ -32,7 +32,7 @@
 * var bool = isUint16Array( [] );
 * // returns false
 */
-declare function isUint16Array( value: any ): boolean;
+declare function isUint16Array( value: any ): value is Uint16Array;
 
 
 // EXPORTS //

@@ -36,7 +36,7 @@ interface IsProbabilityArray {
 	* var bool = isProbabilityArray( [ 0.3, '0.3' ] );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is ArrayLike<number | Number>;
 
 	/**
 	* Tests if a value is an array-like object containing only primitive probabilities.
@@ -52,7 +52,7 @@ interface IsProbabilityArray {
 	* var bool = isProbabilityArray.primitives( [ 0.3, new Number(0.1) ] );
 	* // returns false
 	*/
-	primitives( value: any ): boolean;
+	primitives( value: any ): value is ArrayLike<number>;
 
 	/**
 	* Tests if a value is an array-like object containing only number objects having probability values.
@@ -68,7 +68,7 @@ interface IsProbabilityArray {
 	* var bool = isProbabilityArray.objects( [ 0.1, 0.2, 0.3 ] );
 	* // returns false
 	*/
-	objects( value: any ): boolean;
+	objects( value: any ): value is ArrayLike<Number>;
 }
 
 /**

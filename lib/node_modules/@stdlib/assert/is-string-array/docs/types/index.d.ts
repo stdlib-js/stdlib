@@ -36,7 +36,7 @@ interface IsStringArray {
 	* var bool = isStringArray( [ 'abc', 123 ] );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is ArrayLike<string | String>;
 
 	/**
 	* Tests if a value is an array containing only string primitives.
@@ -52,7 +52,7 @@ interface IsStringArray {
 	* var bool = isStringArray.primitives( [ 'abc', new String( 'def' ) ] );
 	* // returns false
 	*/
-	primitives( value: any ): boolean;
+	primitives( value: any ): value is ArrayLike<string>;
 
 	/**
 	* Tests if a value is an array containing only `String` objects.
@@ -68,7 +68,7 @@ interface IsStringArray {
 	* var bool = isStringArray.objects( [ new String( 'abc' ), 'def' ] );
 	* // returns false
 	*/
-	objects( value: any ): boolean;
+	objects( value: any ): value is ArrayLike<String>;
 }
 
 /**
