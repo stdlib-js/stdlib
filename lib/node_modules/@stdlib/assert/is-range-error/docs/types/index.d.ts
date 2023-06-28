@@ -36,7 +36,7 @@
 * var bool = isRangeError( {} );
 * // returns false
 */
-declare function isRangeError( value: any ): boolean;
+declare function isRangeError( value: any ): value is RangeError;
 
 
 // EXPORTS //
