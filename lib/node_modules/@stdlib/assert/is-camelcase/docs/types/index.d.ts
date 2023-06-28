@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.9
+// TypeScript Version: 2.0
 
 /**
 * Tests if a value is a camelcase string.
@@ -40,7 +40,7 @@
 * var bool = isCamelcase( 'hello world' );
 * // returns false
 */
-declare function isCamelcase( value: any ): boolean;
+declare function isCamelcase( value: any ): value is string;
 
 
 // EXPORTS //

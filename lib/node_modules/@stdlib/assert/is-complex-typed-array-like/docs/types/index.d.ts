@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { ComplexArrayLike } from '@stdlib/types/array';
+
 /**
 * Tests if a value is complex-typed-array-like.
 *
@@ -58,7 +62,7 @@
 * var val = isComplexTypedArrayLike( 'beep' );
 * // returns false
 */
-declare function isComplexTypedArrayLike( value: any ): boolean;
+declare function isComplexTypedArrayLike( value: any ): value is ComplexArrayLike;
 
 
 // EXPORTS //
