@@ -32,7 +32,7 @@
 * var bool = isUint32Array( [] );
 * // returns false
 */
-declare function isUint32Array( value: any ): boolean;
+declare function isUint32Array( value: any ): value is Uint32Array;
 
 
 // EXPORTS //
