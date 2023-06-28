@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -49,7 +49,7 @@ import { Collection } from '@stdlib/types/object';
 * arr = prepend( arr, [ 6.0, 7.0 ] );
 * // returns <Float64Array>[ 6.0, 7.0, 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function prepend( collection1: Collection, collection2: Collection ): Collection; // tslint-disable-line max-line-length
+declare function prepend<T = any, U = any>( collection1: Collection<T>, collection2: Collection<U> ): Collection<T | U>;
 
 
 // EXPORTS //
