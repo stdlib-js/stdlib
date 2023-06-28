@@ -46,7 +46,7 @@
 * var bool = isPropertyKey( [] );
 * // returns false
 */
-declare function isPropertyKey( value: any ): boolean;
+declare function isPropertyKey( value: any ): value is PropertyKey;
 
 
 // EXPORTS //
