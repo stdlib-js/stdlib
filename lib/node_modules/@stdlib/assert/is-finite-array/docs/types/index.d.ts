@@ -36,7 +36,7 @@ interface IsFiniteArray {
 	* var bool = isFiniteArray( [ -3.0, 1.0/0.0 ] );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is ArrayLike<number | Number>;
 
 	/**
 	* Tests if a value is an array-like object containing only primitive finite numbers.
@@ -56,7 +56,7 @@ interface IsFiniteArray {
 	* var bool = isFiniteArray.primitives( [ -3.0, new Number(-1.0) ] );
 	* // returns false
 	*/
-	primitives( value: any ): boolean;
+	primitives( value: any ): value is ArrayLike<number>;
 
 	/**
 	* Tests if a value is an array-like object containing only number objects having finite values.
@@ -76,7 +76,7 @@ interface IsFiniteArray {
 	* var bool = isFiniteArray.objects( [ 3.0, new Number(-1.0) ] );
 	* // returns false
 	*/
-	objects( value: any ): boolean;
+	objects( value: any ): value is ArrayLike<Number>;
 }
 
 /**

@@ -44,7 +44,7 @@ interface IsFinite {
 	* var bool = isFinite( null );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is number | Number;
 
 	/**
 	* Tests if a value is a number primitive having a finite value.
@@ -60,7 +60,7 @@ interface IsFinite {
 	* var bool = isFinite.isPrimitive( new Number( -3.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is number;
 
 	/**
 	* Tests if a value is a number object having a finite value.
@@ -76,7 +76,7 @@ interface IsFinite {
 	* var bool = isFinite.isObject( new Number( 3.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is Number;
 }
 
 /**
