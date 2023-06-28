@@ -36,7 +36,7 @@
 * var bool = isTypeError( {} );
 * // returns false
 */
-declare function isTypeError( value: any ): boolean;
+declare function isTypeError( value: any ): value is TypeError;
 
 
 // EXPORTS //

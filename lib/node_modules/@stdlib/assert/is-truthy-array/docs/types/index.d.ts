@@ -34,7 +34,7 @@
 * bool = isTruthyArray( [] );
 * // returns false
 */
-declare function isTruthyArray( value: any ): boolean;
+declare function isTruthyArray( value: any ): value is ArrayLike<any>;
 
 
 // EXPORTS //

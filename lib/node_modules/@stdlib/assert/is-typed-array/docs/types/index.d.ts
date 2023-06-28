@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { TypedArray } from '@stdlib/types/array';
+
 /**
 * Tests if a value is a typed array.
 *
@@ -30,7 +34,7 @@
 * var bool = isTypedArray( new Int8Array( 10 ) );
 * // returns true
 */
-declare function isTypedArray( value: any ): boolean;
+declare function isTypedArray( value: any ): value is TypedArray;
 
 
 // EXPORTS //
