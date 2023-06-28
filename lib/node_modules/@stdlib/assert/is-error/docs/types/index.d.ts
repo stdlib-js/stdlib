@@ -32,7 +32,7 @@
 * var bool = isError( {} );
 * // returns false
 */
-declare function isError( value: any ): boolean;
+declare function isError( value: any ): value is Error;
 
 
 // EXPORTS //

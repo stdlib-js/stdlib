@@ -36,7 +36,7 @@
 * var bool = isEvalError( {} );
 * // returns false
 */
-declare function isEvalError( value: any ): boolean;
+declare function isEvalError( value: any ): value is EvalError;
 
 
 // EXPORTS //

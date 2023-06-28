@@ -52,7 +52,7 @@ interface IsEven {
 	* var bool = isEven( null );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is number | Number;
 
 	/**
 	* Tests if a value is a number primitive that is an even number.
@@ -68,7 +68,7 @@ interface IsEven {
 	* var bool = isEven.isPrimitive( new Number( -4.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is number;
 
 	/**
 	* Tests if a value is a number object that is an even number.
@@ -84,7 +84,7 @@ interface IsEven {
 	* var bool = isEven.isObject( new Number( 4.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is Number;
 }
 
 /**

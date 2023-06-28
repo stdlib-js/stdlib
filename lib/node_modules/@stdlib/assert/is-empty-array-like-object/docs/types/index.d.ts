@@ -40,7 +40,7 @@
 * var bool = isEmptyArrayLikeObject( '' );
 * // returns false
 */
-declare function isEmptyArrayLikeObject( value: any ): boolean;
+declare function isEmptyArrayLikeObject( value: any ): value is ArrayLike<any>;
 
 
 // EXPORTS //

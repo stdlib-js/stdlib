@@ -36,7 +36,7 @@
 * var bool = isEmptyArray( {} );
 * // returns false
 */
-declare function isEmptyArray( value: any ): boolean;
+declare function isEmptyArray( value: any ): value is Array<any>;
 
 
 // EXPORTS //
