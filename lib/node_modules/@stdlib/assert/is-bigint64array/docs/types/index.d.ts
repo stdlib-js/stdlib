@@ -32,7 +32,7 @@
 * var bool = isBigInt64Array( [] );
 * // returns false
 */
-declare function isBigInt64Array( value: any ): boolean;
+declare function isBigInt64Array( value: any ): value is BigInt64Array;
 
 
 // EXPORTS //

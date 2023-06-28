@@ -36,7 +36,7 @@ interface IsBooleanArray {
 	* var bool = isBooleanArray( [ true, 'abc', false ] );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is Array<boolean|Boolean>;
 
 	/**
 	* Tests if a value is an array-like object containing only boolean primitives.
@@ -54,7 +54,7 @@ interface IsBooleanArray {
 	* var bool = isBooleanArray.primitives( [ false, new Boolean( true ) ] );
 	* // returns false
 	*/
-	primitives( value: any ): boolean;
+	primitives( value: any ): value is Array<boolean>;
 
 	/**
 	* Tests if a value is an array-like object containing only Boolean objects.
@@ -74,7 +74,7 @@ interface IsBooleanArray {
 	* var bool = isBooleanArray.objects( [ new Boolean( false ), true ] );
 	* // returns false
 	*/
-	objects( value: any ): boolean;
+	objects( value: any ): value is Array<Boolean>;
 }
 
 /**

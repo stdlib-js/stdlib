@@ -44,7 +44,7 @@
 * var bool = isBlankString( 'beep' );
 * // returns false
 */
-declare function isBlankString( value: any ): boolean;
+declare function isBlankString( value: any ): value is string;
 
 
 // EXPORTS //
