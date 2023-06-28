@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -72,7 +72,7 @@ interface Routine {
 	* // Fill the array with pseudorandom numbers:
 	* randu( out.length, out, 1 );
 	*/
-	( N: number, out: Collection, so: number, options?: Options ): Collection;
+	<T = any>( N: number, out: Collection<T>, so: number, options?: Options ): Collection<T>;
 
 	/**
 	* Fills a strided array with uniformly distributed pseudorandom numbers between `0` and `1` using alternative indexing semantics.
@@ -95,7 +95,7 @@ interface Routine {
 	* // Fill the array with pseudorandom numbers:
 	* randu.ndarray( out.length, out, 1, 0 );
 	*/
-	ndarray( N: number, out: Collection, so: number, oo: number, options?: Options ): Collection; // tslint:disable-line:max-line-length
+	ndarray<T = any>( N: number, out: Collection<T>, so: number, oo: number, options?: Options ): Collection<T>;
 }
 
 /**
