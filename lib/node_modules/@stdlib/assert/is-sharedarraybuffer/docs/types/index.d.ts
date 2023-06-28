@@ -38,7 +38,7 @@
 * var bool = isSharedArrayBuffer( [] );
 * // returns false
 */
-declare function isSharedArrayBuffer( value: any ): boolean;
+declare function isSharedArrayBuffer( value: any ): value is SharedArrayBuffer;
 
 
 // EXPORTS //

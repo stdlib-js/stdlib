@@ -36,7 +36,7 @@
 * var bool = isSyntaxError( {} );
 * // returns false
 */
-declare function isSyntaxError( value: any ): boolean;
+declare function isSyntaxError( value: any ): value is SyntaxError;
 
 
 // EXPORTS //
