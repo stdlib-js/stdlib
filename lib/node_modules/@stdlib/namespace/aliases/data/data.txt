@@ -1,6 +1,7 @@
 abs
 acronym
 aempty
+aemptyLike
 AFINN_96
 AFINN_111
 afull

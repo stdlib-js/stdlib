@@ -1,6 +1,7 @@
 "@stdlib/math/special/abs","@stdlib/math-special-abs"
 "@stdlib/string/acronym","@stdlib/string-acronym"
 "@stdlib/array/empty","@stdlib/array-empty"
+"@stdlib/array/empty-like","@stdlib/array-empty-like"
 "@stdlib/datasets/afinn-96","@stdlib/datasets-afinn-96"
 "@stdlib/datasets/afinn-111","@stdlib/datasets-afinn-111"
 "@stdlib/array/full","@stdlib/array-full"
