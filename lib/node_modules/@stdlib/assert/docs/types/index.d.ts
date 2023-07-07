@@ -1337,15 +1337,15 @@ interface Namespace {
 	* @returns boolean indicating if a value is an array-like object
 	*
 	* @example
-	* var bool = ns.isArrayLikeObjectObject( [] );
+	* var bool = ns.isArrayLikeObject( [] );
 	* // returns true
 	*
 	* @example
-	* var bool = ns.isArrayLikeObjectObject( { 'length':10 } );
+	* var bool = ns.isArrayLikeObject( { 'length':10 } );
 	* // returns true
 	*
 	* @example
-	* var bool = ns.isArrayLikeObjectObject( 'beep' );
+	* var bool = ns.isArrayLikeObject( 'beep' );
 	* // returns false
 	*/
 	isArrayLikeObject: typeof isArrayLikeObject;
@@ -3709,19 +3709,19 @@ interface Namespace {
 	* @returns boolean indicating whether value is an array-like object containing only NaN values
 	*
 	* @example
-	* var bool = ns.isNaNArray( [NaN,NaN,NaN] );
+	* var bool = ns.isNaNArray( [ NaN, NaN, NaN ] );
 	* // returns true
 	*
 	* @example
-	* var bool = ns.isNaNArray( [NaN,2] );
+	* var bool = ns.isNaNArray( [ NaN, 2 ] );
 	* // returns false
 	*
 	* @example
-	* var bool = ns.isNaNArray.primitives( [NaN,NaN,NaN] );
+	* var bool = ns.isNaNArray.primitives( [ NaN, NaN, NaN ] );
 	* // returns true
 	*
 	* @example
-	* var bool = ns.isNaNArray.objects( [new Number( NaN ),new Number( NaN )] );
+	* var bool = ns.isNaNArray.objects( [ new Number( NaN ), new Number( NaN ) ] );
 	* // returns true
 	*/
 	isNaNArray: typeof isNaNArray;

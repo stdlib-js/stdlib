@@ -5534,8 +5534,6 @@ interface Namespace {
 	*
 	* ## Notes
 	*
-	* ## Notes
-	*
 	* -   When invoked, the indicator function is provided two arguments:
 	*
 	*     - `value`: collection value
