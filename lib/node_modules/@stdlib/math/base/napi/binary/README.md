@@ -707,6 +707,74 @@ The macro expects the following arguments:
 
 When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
 
+#### STDLIB_MATH_BASE_NAPI_MODULE_ZD_Z( fcn )
+
+Macro for registering a Node-API module exporting an interface invoking a binary function accepting a double-precision complex floating-point number and a double-precision floating-point number and returning a double-precision complex floating-point number.
+
+```c
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
+
+static stdlib_complex128_t mul( const stdlib_complex128_t x, const double y ) {
+    double xre;
+    double xim;
+    double re;
+    double im;
+
+    stdlib_reim( x, &xre, &xim );
+
+    re = xre * y;
+    im = xim * y;
+
+    return stdlib_complex128( re, im );
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_ZD_Z( mul );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `stdlib_complex128_t (*fcn)( stdlib_complex128_t, double )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_CF_C( fcn )
+
+Macro for registering a Node-API module exporting an interface invoking a binary function accepting a single-precision complex floating-point number and a single-precision floating-point number and returning a single-precision complex floating-point number.
+
+```c
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/reimf.h"
+
+static stdlib_complex64_t add( const stdlib_complex64_t x, const float y ) {
+    float xre;
+    float xim;
+    float re;
+    float im;
+
+    stdlib_reimf( x, &xre, &xim );
+
+    re = xre * y;
+    im = xim * y;
+
+    return stdlib_complex64( re, im );
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_CF_C( add );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `stdlib_complex64_t (*fcn)( stdlib_complex64_t, float )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
 </section>
 
 <!-- /.usage -->
