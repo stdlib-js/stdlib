@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# phase
+# cphase
 
 > Compute the [argument][complex-number-argument] of a complex number in radians.
 
