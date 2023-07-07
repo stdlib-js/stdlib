@@ -17,31 +17,7 @@
 */
 
 #include "stdlib/math/base/special/cflipsign.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/reim.h"
-#include <stdio.h>
+#include "stdlib/math/base/napi/binary.h"
 
-
-int main( void ) {
-	const stdlib_complex128_t x[] = {
-		stdlib_complex128( 3.14, 1.5 ),
-		stdlib_complex128( -3.14, -1.5 ),
-		stdlib_complex128( 0.0, 0.0 ),
-		stdlib_complex128( 0.0/0.0, 0.0/0.0 )
-	};
-
-	stdlib_complex128_t v;
-	stdlib_complex128_t y;
-	double re1;
-	double im1;
-	double re2;
-	double im2;
-	int i;
-	for ( i = 0; i < 4; i++ ) {
-		v = x[ i ];
-		y = stdlib_base_cflipsign( v, -1.0 );
-		stdlib_reim( v, &re1, &im1 );
-		stdlib_reim( y, &re2, &im2 );
-		printf( "cflipsign(%lf + %lfi, %lf) = %lf + %lfi\n", re1, im1, -1.0, re2, im2 );
-	}
-}
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_ZD_Z( stdlib_base_cflipsign )
