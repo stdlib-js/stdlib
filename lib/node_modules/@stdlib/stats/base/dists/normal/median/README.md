@@ -31,7 +31,7 @@ The [median][median] for a [normal][normal-distribution] random variable with me
 <!-- <equation class="equation" label="eq:normal_median" align="center" raw="\operatorname{Median}\left( X \right) = \mu" alt="Median for a normal distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \mu
+\mathop{\mathrm{Median}}\left( X \right) = \mu
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu" data-equation="eq:normal_median">

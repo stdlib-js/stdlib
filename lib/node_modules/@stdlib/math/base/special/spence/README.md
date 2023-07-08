@@ -29,7 +29,7 @@ The dilogarithm is defined as
 <!-- <equation class="equation" label="eq:dilogarithm" align="center" raw="\operatorname{Li}_{2}(z) = -\int_{0}^{z}{\ln(1-u) \over u}\,du{\text{, }}z\in \mathbb {C}" alt="Dilogarithm."> -->
 
 ```math
-\operatorname{Li}_{2}(z) = -\int_{0}^{z}{\ln(1-u) \over u}\,du{\text{, }}z\in \mathbb {C}
+\mathop{\mathrm{Li}}_{2}(z) = -\int_{0}^{z}{\ln(1-u) \over u}\,du{\text{, }}z\in \mathbb {C}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Li}_{2}(z) = -\int_{0}^{z}{\ln(1-u) \over u}\,du{\text{, }}z\in \mathbb {C}" data-equation="eq:dilogarithm">

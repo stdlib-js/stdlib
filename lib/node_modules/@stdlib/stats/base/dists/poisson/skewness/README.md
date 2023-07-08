@@ -31,7 +31,7 @@ The [skewness][skewness] for a [Poisson][poisson-distribution] random variable i
 <!-- <equation class="equation" label="eq:poisson_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \lambda^{-1/2}" alt="Skewness for a Poisson distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \lambda^{-1/2}
+\mathop{\mathrm{skew}}\left( X \right) = \lambda^{-1/2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \lambda^{-1/2}" data-equation="eq:poisson_skewness">

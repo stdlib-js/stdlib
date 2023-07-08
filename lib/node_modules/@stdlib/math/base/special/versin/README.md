@@ -29,7 +29,7 @@ The [versed sine][versed-sine] is defined as
 <!-- <equation class="equation" label="eq:versine" align="center" raw="\operatorname{versin}(\theta) = 1 - \cos \theta" alt="Versed sine."> -->
 
 ```math
-\operatorname{versin}(\theta) = 1 - \cos \theta
+\mathop{\mathrm{versin}}(\theta) = 1 - \cos \theta
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{versin}(\theta) = 1 - \cos \theta" data-equation="eq:versine">

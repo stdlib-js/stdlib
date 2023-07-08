@@ -31,7 +31,7 @@ The [median][median] for a [Fréchet][frechet-distribution] random variable shap
 <!-- <equation class="equation" label="eq:frechet_median" align="center" raw="\operatorname{Median} = m+{\frac {s}{{\sqrt[ {\alpha }]{\ln(2)}}}}" alt="Median for a Fréchet distribution."> -->
 
 ```math
-\operatorname{Median} = m+{\frac {s}{{\sqrt[ {\alpha }]{\ln(2)}}}}
+\mathop{\mathrm{Median}} = m+{\frac {s}{{\sqrt[ {\alpha }]{\ln(2)}}}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median} = m+{\frac {s}{{\sqrt[ {\alpha }]{\ln(2)}}}}" data-equation="eq:frechet_median">

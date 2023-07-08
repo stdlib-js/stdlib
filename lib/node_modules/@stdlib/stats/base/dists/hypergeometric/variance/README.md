@@ -31,7 +31,7 @@ Imagine a scenario with a population of size `N`, of which a subpopulation of si
 <!-- <equation class="equation" label="eq:hypergeometric_variance" align="center" raw="\operatorname{Var}\left( X \right) = n{K \over N}{(N-K) \over N}{N-n \over N-1}" alt="Variance for a hypergeometric distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = n{K \over N}{(N-K) \over N}{N-n \over N-1}
+\mathop{\mathrm{Var}}\left( X \right) = n{K \over N}{(N-K) \over N}{N-n \over N-1}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = n{K \over N}{(N-K) \over N}{N-n \over N-1}" data-equation="eq:hypergeometric_variance">

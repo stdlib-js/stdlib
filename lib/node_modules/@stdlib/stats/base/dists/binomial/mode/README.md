@@ -31,7 +31,7 @@ The [mode][mode] for a [binomial][binomial-distribution] random variable is
 <!-- <equation class="equation" label="eq:binomial_mode" align="center" raw="\operatorname{mode}\left( X \right) = \lfloor (n+1)p \rfloor" alt="Mode for a binomial distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \lfloor (n+1)p \rfloor
+\mathop{\mathrm{mode}}\left( X \right) = \lfloor (n+1)p \rfloor
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \lfloor (n+1)p \rfloor" data-equation="eq:binomial_mode">

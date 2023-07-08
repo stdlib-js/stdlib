@@ -31,7 +31,7 @@ The [standard deviation][standard-deviation] for a [discrete uniform][discrete-u
 <!-- <equation class="equation" label="eq:discrete_uniform_standard_deviation" align="center" raw="\operatorname{SD}\left( X \right) = \sqrt{ \frac{\left( b - a + 1 \right)^2 - 1}{12} }" alt="Standard deviation for a discrete uniform distribution."> -->
 
 ```math
-\operatorname{SD}\left( X \right) = \sqrt{ \frac{\left( b - a + 1 \right)^2 - 1}{12} }
+\mathop{\mathrm{SD}}\left( X \right) = \sqrt{ \frac{\left( b - a + 1 \right)^2 - 1}{12} }
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{SD}\left( X \right) = \sqrt{ \frac{\left( b - a + 1 \right)^2 - 1}{12} }" data-equation="eq:discrete_uniform_standard_deviation">

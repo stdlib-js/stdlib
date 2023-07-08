@@ -31,7 +31,7 @@ The [variance][variance] for a [triangular][triangular-distribution] random vari
 <!-- <equation class="equation" label="eq:triangular_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{a^{2}+b^{2}+c^{2}-ab-ac-bc}{18}" alt="Variance for a triangular distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \frac{a^{2}+b^{2}+c^{2}-ab-ac-bc}{18}
+\mathop{\mathrm{Var}}\left( X \right) = \frac{a^{2}+b^{2}+c^{2}-ab-ac-bc}{18}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{a^{2}+b^{2}+c^{2}-ab-ac-bc}{18}" data-equation="eq:triangular_variance">

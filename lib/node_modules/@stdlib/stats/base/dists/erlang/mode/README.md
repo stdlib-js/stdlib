@@ -31,7 +31,7 @@ The [mode][mode] for an [Erlang][erlang-distribution] random variable is
 <!-- <equation class="equation" label="eq:erlang_mode" align="center" raw="\operatorname{mode}\left( X \right) = \frac{1}{\lambda}(k - 1)" alt="Mode for an Erlang distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \frac{1}{\lambda}(k - 1)
+\mathop{\mathrm{mode}}\left( X \right) = \frac{1}{\lambda}(k - 1)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \frac{1}{\lambda}(k - 1)" data-equation="eq:erlang_mode">

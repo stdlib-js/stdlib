@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [uniform][uniform-distribution] random var
 <!-- <equation class="equation" label="eq:uniform_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = -{\tfrac{6}{5}}" alt="Excess kurtosis for a uniform distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = -{\tfrac{6}{5}}
+\mathop{\mathrm{Kurt}}\left( X \right) = -{\tfrac{6}{5}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = -{\tfrac{6}{5}}" data-equation="eq:uniform_kurtosis">

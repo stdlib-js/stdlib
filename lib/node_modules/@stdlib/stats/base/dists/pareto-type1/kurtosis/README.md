@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [Pareto (Type I)][pareto-distribution] ran
 <!-- <equation class="equation" label="eq:pareto_type1_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{6(\alpha^3+\alpha^2-6\alpha-2)}{\alpha(\alpha-3)(\alpha-4)}" alt="Excess kurtosis for a Pareto (Type I) distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \frac{6(\alpha^3+\alpha^2-6\alpha-2)}{\alpha(\alpha-3)(\alpha-4)}
+\mathop{\mathrm{Kurt}}\left( X \right) = \frac{6(\alpha^3+\alpha^2-6\alpha-2)}{\alpha(\alpha-3)(\alpha-4)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{6(\alpha^3+\alpha^2-6\alpha-2)}{\alpha(\alpha-3)(\alpha-4)}" data-equation="eq:pareto_type1_kurtosis">

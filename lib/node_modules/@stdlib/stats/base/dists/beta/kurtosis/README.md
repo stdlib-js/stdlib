@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [beta][beta-distribution] random variable 
 <!-- <equation class="equation" label="eq:beta_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{6[(\alpha - \beta)^2 (\alpha +\beta + 1) - \alpha \beta (\alpha + \beta + 2)]}{\alpha \beta (\alpha + \beta + 2) (\alpha + \beta + 3)}" alt="Excess kurtosis for a beta distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \frac{6[(\alpha - \beta)^2 (\alpha +\beta + 1) - \alpha \beta (\alpha + \beta + 2)]}{\alpha \beta (\alpha + \beta + 2) (\alpha + \beta + 3)}
+\mathop{\mathrm{Kurt}}\left( X \right) = \frac{6[(\alpha - \beta)^2 (\alpha +\beta + 1) - \alpha \beta (\alpha + \beta + 2)]}{\alpha \beta (\alpha + \beta + 2) (\alpha + \beta + 3)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{6[(\alpha - \beta)^2 (\alpha +\beta + 1) - \alpha \beta (\alpha + \beta + 2)]}{\alpha \beta (\alpha + \beta + 2) (\alpha + \beta + 3)}" data-equation="eq:beta_kurtosis">

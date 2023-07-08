@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [geometric][geometric-distribution] random
 <!-- <equation class="equation" label="eq:geometric_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 6+{\frac{p^{2}}{1-p}}" alt="Excess kurtosis for a geometric distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = 6+{\frac{p^{2}}{1-p}}
+\mathop{\mathrm{Kurt}}\left( X \right) = 6+{\frac{p^{2}}{1-p}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 6+{\frac{p^{2}}{1-p}}" data-equation="eq:geometric_kurtosis">

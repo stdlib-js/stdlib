@@ -29,7 +29,7 @@ The [**root mean squared error**][root-mean-squared-error] (also known as the **
 <!-- <equation class="equation" label="eq:root_mean_squared_error" align="center" raw="\operatorname{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2 }" alt="Equation for the root mean squared error."> -->
 
 ```math
-\operatorname{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2 }
+\mathop{\mathrm{RMSE}} = \sqrt{ \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2 }
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2 }" data-equation="eq:root_mean_squared_error">

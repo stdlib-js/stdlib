@@ -31,7 +31,7 @@ The [variance][variance] for a [beta prime][betaprime-distribution] random varia
 <!-- <equation class="equation" label="eq:betaprime_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{\alpha(\alpha +\beta -1)}{(\beta-2)(\beta-1)^{2}}" alt="Variance for a beta prime distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \frac{\alpha(\alpha +\beta -1)}{(\beta-2)(\beta-1)^{2}}
+\mathop{\mathrm{Var}}\left( X \right) = \frac{\alpha(\alpha +\beta -1)}{(\beta-2)(\beta-1)^{2}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{\alpha(\alpha +\beta -1)}{(\beta-2)(\beta-1)^{2}}" data-equation="eq:betaprime_variance">

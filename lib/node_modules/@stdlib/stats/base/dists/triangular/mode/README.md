@@ -31,7 +31,7 @@ The [mode][mode] for a [triangular][triangular-distribution] random variable wit
 <!-- <equation class="equation" label="eq:triangular_mode" align="center" raw="\operatorname{mode}\left( X \right) = c" alt="Mode for a triangular distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = c
+\mathop{\mathrm{mode}}\left( X \right) = c
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = c" data-equation="eq:triangular_mode">

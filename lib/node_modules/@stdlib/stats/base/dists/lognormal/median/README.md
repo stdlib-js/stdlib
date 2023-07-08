@@ -31,7 +31,7 @@ The [median][median] for a [lognormal][lognormal-distribution] random variable w
 <!-- <equation class="equation" label="eq:lognormal_median" align="center" raw="\operatorname{Median}\left( X \right) = \exp(\mu)" alt="Median for a lognormal distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \exp(\mu)
+\mathop{\mathrm{Median}}\left( X \right) = \exp(\mu)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \exp(\mu)" data-equation="eq:lognormal_median">

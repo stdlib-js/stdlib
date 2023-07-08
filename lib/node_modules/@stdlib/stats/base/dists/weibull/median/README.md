@@ -31,7 +31,7 @@ The [median][median] for a [Weibull][weibull-distribution] random variable is
 <!-- <equation class="equation" label="eq:weibull_median" align="center" raw="\operatorname{Median}\left( X \right) = \lambda(\ln(2))^{1/k}" alt="Median for a Weibull distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \lambda(\ln(2))^{1/k}
+\mathop{\mathrm{Median}}\left( X \right) = \lambda(\ln(2))^{1/k}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \lambda(\ln(2))^{1/k}" data-equation="eq:weibull_median">

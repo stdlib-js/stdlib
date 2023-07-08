@@ -31,7 +31,7 @@ The [variance][variance] for a [lognormal][lognormal-distribution] random variab
 <!-- <equation class="equation" label="eq:lognormal_variance" align="center" raw="\operatorname{Var}\left( X \right) = [\exp({\sigma^{2}})-1] \cdot \exp({2\mu +\sigma^{2}})" alt="Variance for a lognormal distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = [\exp({\sigma^{2}})-1] \cdot \exp({2\mu +\sigma^{2}})
+\mathop{\mathrm{Var}}\left( X \right) = [\exp({\sigma^{2}})-1] \cdot \exp({2\mu +\sigma^{2}})
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = [\exp({\sigma^{2}})-1] \cdot \exp({2\mu +\sigma^{2}})" data-equation="eq:lognormal_variance">

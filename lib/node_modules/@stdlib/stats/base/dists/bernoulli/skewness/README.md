@@ -31,7 +31,7 @@ The [skewness][skewness] for a [Bernoulli][bernoulli-distribution] random variab
 <!-- <equation class="equation" label="eq:bernoulli_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{1-2p}{\sqrt{p(1-p)}}" alt="Skewness for a Bernoulli distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{1-2p}{\sqrt{p(1-p)}}
+\mathop{\mathrm{skew}}\left( X \right) = \frac{1-2p}{\sqrt{p(1-p)}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{1-2p}{\sqrt{p(1-p)}}" data-equation="eq:bernoulli_skewness">

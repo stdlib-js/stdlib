@@ -29,7 +29,7 @@ The [coversed sine][coversed-sine] is defined as
 <!-- <equation class="equation" label="eq:coversine" align="center" raw="\operatorname{coversin}(\theta) = 1 - \sin \theta" alt="Coversed sine."> -->
 
 ```math
-\operatorname{coversin}(\theta) = 1 - \sin \theta
+\mathop{\mathrm{coversin}}(\theta) = 1 - \sin \theta
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{coversin}(\theta) = 1 - \sin \theta" data-equation="eq:coversine">

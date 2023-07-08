@@ -31,7 +31,7 @@ The [mode][mode] for a [chi][chi-distribution] random variable is
 <!-- <equation class="equation" label="eq:chi_mode" align="center" raw="\operatorname{mode}\left( X \right) = \sqrt{k-1}" alt="Mode for a chi distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \sqrt{k-1}
+\mathop{\mathrm{mode}}\left( X \right) = \sqrt{k-1}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \sqrt{k-1}" data-equation="eq:chi_mode">

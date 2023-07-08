@@ -31,7 +31,7 @@ The [mode][mode] for a [Gumbel][gumbel-distribution] random variable with locati
 <!-- <equation class="equation" label="eq:gumbel_mode" align="center" raw="\operatorname{mode}\left( X \right) = \mu" alt="Mode for a Gumbel distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \mu
+\mathop{\mathrm{mode}}\left( X \right) = \mu
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \mu" data-equation="eq:gumbel_mode">

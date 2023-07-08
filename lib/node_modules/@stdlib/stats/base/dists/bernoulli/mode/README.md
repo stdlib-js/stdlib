@@ -31,7 +31,7 @@ The [mode][mode] for a [Bernoulli][bernoulli-distribution] random variable is
 <!-- <equation class="equation" label="eq:bernoulli_mode" align="center" raw="\operatorname{Mode}\left( X \right) = \begin{cases} 0 & \text{if } p < 1/2 \\ 0, 1 &\text{if } p = 1/2 \\ 1 & \text{if } p > 1/2 \end{cases}" alt="Mode for a Bernoulli distribution."> -->
 
 ```math
-\operatorname{Mode}\left( X \right) = \begin{cases} 0 & \text{if } p < 1/2 \\ 0, 1 &\text{if } p = 1/2 \\ 1 & \text{if } p > 1/2 \end{cases}
+\mathop{\mathrm{Mode}}\left( X \right) = \begin{cases} 0 & \text{if } p < 1/2 \\ 0, 1 &\text{if } p = 1/2 \\ 1 & \text{if } p > 1/2 \end{cases}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Mode}\left( X \right) = \begin{cases} 0 &amp; \text{if } p &lt; 1/2 \\ 0, 1 &amp;\text{if } p = 1/2 \\ 1 &amp; \text{if } p &gt; 1/2 \end{cases}" data-equation="eq:bernoulli_mode">

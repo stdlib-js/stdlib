@@ -31,7 +31,7 @@ The [median][median] for a [Cauchy][cauchy-distribution] random variable with lo
 <!-- <equation class="equation" label="eq:cauchy_median" align="center" raw="\operatorname{Median}\left( X \right) = x_0" alt="Median for a Cauchy distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = x_0
+\mathop{\mathrm{Median}}\left( X \right) = x_0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = x_0" data-equation="eq:cauchy_median">

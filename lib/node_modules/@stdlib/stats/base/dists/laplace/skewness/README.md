@@ -31,7 +31,7 @@ The [skewness][skewness] for a [Laplace][laplace-distribution] random variable w
 <!-- <equation class="equation" label="eq:laplace_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 0" alt="Skewness for a Laplace distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = 0
+\mathop{\mathrm{skew}}\left( X \right) = 0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:laplace_skewness">

@@ -31,7 +31,7 @@ The [mode][mode] for an [inverse gamma][invgamma-distribution] random variable i
 <!-- <equation class="equation" label="eq:invgamma_mode" align="center" raw="\operatorname{mode}\left( X \right) = \frac{\beta}{\alpha+1}" alt="Mode for an inverse gamma distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \frac{\beta}{\alpha+1}
+\mathop{\mathrm{mode}}\left( X \right) = \frac{\beta}{\alpha+1}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \frac{\beta}{\alpha+1}" data-equation="eq:invgamma_mode">

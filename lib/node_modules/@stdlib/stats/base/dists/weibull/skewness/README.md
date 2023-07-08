@@ -31,7 +31,7 @@ The [skewness][skewness] for a [Weibull][weibull-distribution] random variable i
 <!-- <equation class="equation" label="eq:weibull_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{\Gamma(1+3/k)\lambda^3-3\mu\sigma^2-\mu^3}{\sigma^3}" alt="Skewness for a Weibull distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{\Gamma(1+3/k)\lambda^3-3\mu\sigma^2-\mu^3}{\sigma^3}
+\mathop{\mathrm{skew}}\left( X \right) = \frac{\Gamma(1+3/k)\lambda^3-3\mu\sigma^2-\mu^3}{\sigma^3}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{\Gamma(1+3/k)\lambda^3-3\mu\sigma^2-\mu^3}{\sigma^3}" data-equation="eq:weibull_skewness">

@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [gamma][gamma-distribution] random variabl
 <!-- <equation class="equation" label="eq:gamma_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{6}{\alpha}" alt="Excess kurtosis for a gamma distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \frac{6}{\alpha}
+\mathop{\mathrm{Kurt}}\left( X \right) = \frac{6}{\alpha}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{6}{\alpha}" data-equation="eq:gamma_kurtosis">

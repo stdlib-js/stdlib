@@ -29,7 +29,7 @@ The [cis][cis] function is defined as
 <!-- <equation class="equation" label="eq:cis_function" align="center" raw="\operatorname{cis}(z) = e^{iz} = \cos(z) + i \sin(z)" alt="cis function"> -->
 
 ```math
-\operatorname{cis}(z) = e^{iz} = \cos(z) + i \sin(z)
+\mathop{\mathrm{cis}}(z) = e^{iz} = \cos(z) + i \sin(z)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{cis}(z) = e^{iz} = \cos(z) + i \sin(z)" data-equation="eq:cis_function">

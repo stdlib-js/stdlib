@@ -32,7 +32,7 @@ the regularized incomplete beta function `I(α,β)` is equal to `0.5`, i.e.
 <!-- <equation class="equation" label="eq:beta_median" align="center" raw="\operatorname{Median}\left[ X \right] = I_{\frac{1}{2}}^{[-1]}(\alpha,\beta)" alt="Median for a beta distribution."> -->
 
 ```math
-\operatorname{Median}\left[ X \right] = I_{\frac{1}{2}}^{[-1]}(\alpha,\beta)
+\mathop{\mathrm{Median}}\left[ X \right] = I_{\frac{1}{2}}^{[-1]}(\alpha,\beta)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left[ X \right] = I_{\frac{1}{2}}^{[-1]}(\alpha,\beta)" data-equation="eq:beta_median">

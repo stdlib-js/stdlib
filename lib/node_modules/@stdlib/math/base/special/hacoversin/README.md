@@ -29,7 +29,7 @@ The half-value [coversed sine][coversed-sine] is defined as
 <!-- <equation class="equation" label="eq:hacoversine" align="center" raw="\operatorname{hacoversin}(\theta) = \frac{1 - \sin \theta}{2}" alt="Half-value coversed sine."> -->
 
 ```math
-\operatorname{hacoversin}(\theta) = \frac{1 - \sin \theta}{2}
+\mathop{\mathrm{hacoversin}}(\theta) = \frac{1 - \sin \theta}{2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{hacoversin}(\theta) = \frac{1 - \sin \theta}{2}" data-equation="eq:hacoversine">

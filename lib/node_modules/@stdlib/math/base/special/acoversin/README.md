@@ -29,7 +29,7 @@ The [inverse coversed sine][inverse-coversed-sine] is defined as
 <!-- <equation class="equation" label="eq:arccoversine" align="center" raw="\operatorname{acoversin}(\theta) = \arcsin(1-\theta)" alt="Inverse coversed sine."> -->
 
 ```math
-\operatorname{acoversin}(\theta) = \arcsin(1-\theta)
+\mathop{\mathrm{acoversin}}(\theta) = \arcsin(1-\theta)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{acoversin}(\theta) = \arcsin(1-\theta)" data-equation="eq:arccoversine">

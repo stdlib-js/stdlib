@@ -29,7 +29,7 @@ The normalized [cardinal sine][sinc] function is defined as
 <!-- <equation class="equation" label="eq:sinc_function" align="center" raw="\operatorname{sinc}(x) := \begin{cases} \frac {\sin(\pi x)}{\pi x} & \textrm{if}\ x \neq 0 \\ 1 & \textrm{if}\ x = 0 \end{cases}" alt="Sinc function"> -->
 
 ```math
-\operatorname{sinc}(x) := \begin{cases} \frac {\sin(\pi x)}{\pi x} & \textrm{if}\ x \neq 0 \\ 1 & \textrm{if}\ x = 0 \end{cases}
+\mathop{\mathrm{sinc}}(x) := \begin{cases} \frac {\sin(\pi x)}{\pi x} & \textrm{if}\ x \neq 0 \\ 1 & \textrm{if}\ x = 0 \end{cases}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{sinc}(x) := \begin{cases} \frac {\sin(\pi x)}{\pi x} &amp; \textrm{if}\ x \neq 0 \\ 1 &amp; \textrm{if}\ x = 0 \end{cases}" data-equation="eq:sinc_function">

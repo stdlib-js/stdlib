@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [chi-squared][chisquare-distribution] rand
 <!-- <equation class="equation" label="eq:chisquare_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{12}{k}" alt="Excess kurtosis for a chi-squared distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \frac{12}{k}
+\mathop{\mathrm{Kurt}}\left( X \right) = \frac{12}{k}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{12}{k}" data-equation="eq:chisquare_kurtosis">

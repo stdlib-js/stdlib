@@ -31,7 +31,7 @@ A Lanczos pulse waveform is represented by the following equation
 <!-- <equation class="equation" label="eq:lanczos_pulse_waveform" align="center" raw="f(t; T, \tau, a, \varphi) = \begin{cases}\operatorname{sinc}\biggl( \frac{2(t-\varphi)}{\tau-1} - 1\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}" alt="Equation for a Lanczos pulse waveform."> -->
 
 ```math
-f(t; T, \tau, a, \varphi) = \begin{cases}\operatorname{sinc}\biggl( \frac{2(t-\varphi)}{\tau-1} - 1\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}
+f(t; T, \tau, a, \varphi) = \begin{cases}\mathop{\mathrm{sinc}}\biggl( \frac{2(t-\varphi)}{\tau-1} - 1\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="f(t; T, \tau, a, \varphi) = \begin{cases}\operatorname{sinc}\biggl( \frac{2(t-\varphi)}{\tau-1} - 1\biggr) &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:lanczos_pulse_waveform">

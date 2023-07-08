@@ -31,7 +31,7 @@ The [skewness][skewness] for a [F][f-distribution] random variable with numerato
 <!-- <equation class="equation" label="eq:f_skewness" align="center" raw="\operatorname{skew}\left( X \right) =  \frac{(2d_{1}+d_{2}-2){\sqrt{8(d_{2}-4)}}}{(d_{2}-6){\sqrt{d_{1}(d_{1}+d_{2}-2)}}}" alt="Skewness for an F distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) =  \frac{(2d_{1}+d_{2}-2){\sqrt{8(d_{2}-4)}}}{(d_{2}-6){\sqrt{d_{1}(d_{1}+d_{2}-2)}}}
+\mathop{\mathrm{skew}}\left( X \right) =  \frac{(2d_{1}+d_{2}-2){\sqrt{8(d_{2}-4)}}}{(d_{2}-6){\sqrt{d_{1}(d_{1}+d_{2}-2)}}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) =  \frac{(2d_{1}+d_{2}-2){\sqrt{8(d_{2}-4)}}}{(d_{2}-6){\sqrt{d_{1}(d_{1}+d_{2}-2)}}}" data-equation="eq:f_skewness">

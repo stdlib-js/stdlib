@@ -31,7 +31,7 @@ The [skewness][skewness] for a [geometric][geometric-distribution] random variab
 <!-- <equation class="equation" label="eq:geometric_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{2-p}{\sqrt{1-p}}" alt="Skewness for a geometric distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{2-p}{\sqrt{1-p}}
+\mathop{\mathrm{skew}}\left( X \right) = \frac{2-p}{\sqrt{1-p}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{2-p}{\sqrt{1-p}}" data-equation="eq:geometric_skewness">

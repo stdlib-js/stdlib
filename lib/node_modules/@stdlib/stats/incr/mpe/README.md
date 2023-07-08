@@ -29,7 +29,7 @@ The [mean percentage error][mean-percentage-error] is defined as
 <!-- <equation class="equation" label="eq:mean_percentage_error" align="center" raw="\operatorname{MPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \frac{a_i - f_i}{a_i}" alt="Equation for the mean percentage error."> -->
 
 ```math
-\operatorname{MPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \frac{a_i - f_i}{a_i}
+\mathop{\mathrm{MPE}}  = \frac{100}{n} \sum_{i=0}^{n-1} \frac{a_i - f_i}{a_i}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{MPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \frac{a_i - f_i}{a_i}" data-equation="eq:mean_percentage_error">

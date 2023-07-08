@@ -31,7 +31,7 @@ The [mode][mode] for a [degenerate][degenerate-distribution] random variable is
 <!-- <equation class="equation" label="eq:degenerate_mode" align="center" raw="\operatorname{Mode}\left( X \right) = \mu" alt="Mode for a degenerate distribution."> -->
 
 ```math
-\operatorname{Mode}\left( X \right) = \mu
+\mathop{\mathrm{Mode}}\left( X \right) = \mu
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Mode}\left( X \right) = \mu" data-equation="eq:degenerate_mode">

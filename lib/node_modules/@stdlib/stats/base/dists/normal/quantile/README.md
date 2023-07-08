@@ -29,7 +29,7 @@ The [quantile function][quantile-function] for a [normal][normal-distribution] r
 <!-- <equation class="equation" label="eq:normal_quantile_function" align="center" raw="Q(p;\mu,\sigma) = \mu+\sigma\sqrt{2}\,\operatorname{erf}^{-1}(2p-1)" alt="Quantile function for a Normal distribution."> -->
 
 ```math
-Q(p;\mu,\sigma) = \mu+\sigma\sqrt{2}\,\operatorname{erf}^{-1}(2p-1)
+Q(p;\mu,\sigma) = \mu+\sigma\sqrt{2}\,\mathop{\mathrm{erf}}^{-1}(2p-1)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="Q(p;\mu,\sigma) = \mu+\sigma\sqrt{2}\,\operatorname{erf}^{-1}(2p-1)" data-equation="eq:normal_quantile_function">

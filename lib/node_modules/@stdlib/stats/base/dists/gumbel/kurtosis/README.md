@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [Gumbel][gumbel-distribution] random varia
 <!-- <equation class="equation" label="eq:gumbel_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{12}{5}" alt="Excess kurtosis for a Gumbel distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \frac{12}{5}
+\mathop{\mathrm{Kurt}}\left( X \right) = \frac{12}{5}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{12}{5}" data-equation="eq:gumbel_kurtosis">

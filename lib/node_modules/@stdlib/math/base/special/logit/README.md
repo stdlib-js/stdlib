@@ -29,7 +29,7 @@ The [logit][logit] function is defined as the logarithm of the odds `p / (1-p)`;
 <!-- <equation class="equation" label="eq:logit_function" align="center" raw="\operatorname{logit}(p)=\log \left({\frac {p}{1-p}}\right)" alt="Logit function."> -->
 
 ```math
-\operatorname{logit}(p)=\log \left({\frac {p}{1-p}}\right)
+\mathop{\mathrm{logit}}(p)=\log \left({\frac {p}{1-p}}\right)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{logit}(p)=\log \left({\frac {p}{1-p}}\right)" data-equation="eq:logit_function">

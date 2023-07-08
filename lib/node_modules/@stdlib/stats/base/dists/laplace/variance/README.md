@@ -31,7 +31,7 @@ The [variance][variance] for a [Laplace][laplace-distribution] random variable w
 <!-- <equation class="equation" label="eq:laplace_variance" align="center" raw="\operatorname{Var}\left( X \right) = 2 b^2" alt="Variance for a Laplace distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = 2 b^2
+\mathop{\mathrm{Var}}\left( X \right) = 2 b^2
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = 2 b^2" data-equation="eq:laplace_variance">
