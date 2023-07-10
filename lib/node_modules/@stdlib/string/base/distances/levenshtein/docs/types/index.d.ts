@@ -33,7 +33,6 @@
 * var dist = levenshteinDistance( 'algorithm', 'altruistic' );
 * // returns 6
 *
-*
 * @example
 * var dist = levenshteinDistance( 'hippo', 'elephant' );
 * // returns 7
