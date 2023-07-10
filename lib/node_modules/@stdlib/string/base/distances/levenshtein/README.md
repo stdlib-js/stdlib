@@ -20,7 +20,7 @@ limitations under the License.
 
 # levenshteinDistance
 
-> Calculates the [Levenshtein][levenshtein] (edit) distance between two strings.
+> Calculate the [Levenshtein][levenshtein] (edit) distance between two strings.
 
 <!-- Package usage documentation. -->
 
@@ -34,9 +34,7 @@ var levenshteinDistance = require( '@stdlib/string/base/distances/levenshtein' )
 
 #### levenshteinDistance( s1, s2 )
 
-Calculates the [Levenshtein][levenshtein] (edit) distance between two strings. 
-
-The Levenstein (edit) distance is a popular metric for quantifying the difference between two strings. It is used in a variety of applications, including spell checking, natural language processing, and text mining.
+Calculates the [Levenshtein][levenshtein] (edit) distance between two strings.
 
 ```javascript
 var dist = levenshteinDistance( 'frog', 'from' );
@@ -68,30 +66,17 @@ dist = levenshteinDistance( '1638452297', '2311638451' );
 ```javascript
 var levenshteinDistance = require( '@stdlib/string/base/distances/levenshtein' );
 
-var str1 = 'algorithm';
-var str2 = 'altruistic';
-var out = levenshteinDistance( str1, str2 );
+var dist = levenshteinDistance( 'algorithm', 'altruistic' );
 // returns 6
 
-str1 = 'elephant';
-str2 = 'hippo';
-out = levenshteinDistance( str1, str2 );
+dist = levenshteinDistance( 'elephant', 'hippo' );
 // returns 7
 
-str1 = 'javascript';
-str2 = 'typescript';
-out = levenshteinDistance( str1, str2 );
+dist = levenshteinDistance( 'javascript', 'typescript' );
 // returns 4
 
-str1 = 'levenshtein';
-str2 = 'leviathan';
-out = levenshteinDistance( str1, str2 );
+dist = levenshteinDistance( 'levenshtein', 'leviathan' );
 // returns 6
-
-str1 = 'sacrifice';
-str2 = 'paradise';
-out = levenshteinDistance( str1, str2 );
-// returns 5
 ```
 
 </section>
