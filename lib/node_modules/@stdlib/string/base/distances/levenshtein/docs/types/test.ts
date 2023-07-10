@@ -26,7 +26,7 @@ import levenshteinDistance = require( './index' );
 	levenshteinDistance( '', '' ); // $ExpectType number
 }
 
-// The compiler throws an error if the function is provided a first argument other than a string...
+// The compiler throws an error if the function is provided a first argument which is not a string...
 {
 	levenshteinDistance( true, '' ); // $ExpectError
 	levenshteinDistance( false, '' ); // $ExpectError
@@ -38,7 +38,7 @@ import levenshteinDistance = require( './index' );
 	levenshteinDistance( ( x: number ): number => x, '' ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument other than a string...
+// The compiler throws an error if the function is provided a second argument which is not a string...
 {
 	levenshteinDistance( '', true ); // $ExpectError
 	levenshteinDistance( '', false ); // $ExpectError
@@ -50,7 +50,7 @@ import levenshteinDistance = require( './index' );
 	levenshteinDistance( '', ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided insufficient arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	levenshteinDistance(); // $ExpectError
 	levenshteinDistance( '' ); // $ExpectError
