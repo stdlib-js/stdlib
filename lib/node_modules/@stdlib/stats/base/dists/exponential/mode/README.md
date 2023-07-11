@@ -31,7 +31,7 @@ The [mode][mode] for an [exponential][exponential-distribution] random variable 
 <!-- <equation class="equation" label="eq:exponential_mode" align="center" raw="\operatorname{mode}\left( X \right) = 0" alt="Mode for an exponential distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = 0
+\mathop{\mathrm{mode}}\left( X \right) = 0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = 0" data-equation="eq:exponential_mode">

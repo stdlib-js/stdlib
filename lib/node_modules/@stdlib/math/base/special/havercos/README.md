@@ -29,7 +29,7 @@ The half-value [versed cosine][versed-cosine] is defined as
 <!-- <equation class="equation" label="eq:havercosine" align="center" raw="\operatorname{havercos}(\theta) = \frac{1 + \cos \theta}{2}" alt="Haversed cosine."> -->
 
 ```math
-\operatorname{havercos}(\theta) = \frac{1 + \cos \theta}{2}
+\mathop{\mathrm{havercos}}(\theta) = \frac{1 + \cos \theta}{2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{havercos}(\theta) = \frac{1 + \cos \theta}{2}" data-equation="eq:havercosine">

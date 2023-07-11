@@ -29,7 +29,7 @@ The [quantile function][quantile-function] for a [Lévy][levy-distribution] rand
 <!-- <equation class="equation" label="eq:levy_quantile_function" align="center" raw="Q(p;\mu,c)= \mu + \frac{c}{2 \cdot \operatorname{erfcinv}(p)^2}" alt="Quantile function for a Lévy distribution."> -->
 
 ```math
-Q(p;\mu,c)= \mu + \frac{c}{2 \cdot \operatorname{erfcinv}(p)^2}
+Q(p;\mu,c)= \mu + \frac{c}{2 \cdot \mathop{\mathrm{erfcinv}}(p)^2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="Q(p;\mu,c)= \mu + \frac{c}{2 \cdot \operatorname{erfcinv}(p)^2}" data-equation="eq:levy_quantile_function">

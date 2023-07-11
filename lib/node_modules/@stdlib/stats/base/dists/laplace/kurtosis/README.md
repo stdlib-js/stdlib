@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [Laplace][laplace-distribution] random var
 <!-- <equation class="equation" label="eq:laplace_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 3" alt="Excess kurtosis for a Laplace distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = 3
+\mathop{\mathrm{Kurt}}\left( X \right) = 3
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 3" data-equation="eq:laplace_kurtosis">

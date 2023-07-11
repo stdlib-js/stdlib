@@ -29,7 +29,7 @@ The [error function][error-function] is defined as
 <!-- <equation class="equation" label="eq:error_function" align="center" raw="\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt" alt="Error function."> -->
 
 ```math
-\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt
+\mathop{\mathrm{erf}}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt" data-equation="eq:error_function">

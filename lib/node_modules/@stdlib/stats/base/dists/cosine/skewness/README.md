@@ -31,7 +31,7 @@ The [skewness][skewness] for a [raised cosine][cosine-distribution] random varia
 <!-- <equation class="equation" label="eq:cosine_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 0" alt="Skewness for a raised cosine distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = 0
+\mathop{\mathrm{skew}}\left( X \right) = 0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:cosine_skewness">

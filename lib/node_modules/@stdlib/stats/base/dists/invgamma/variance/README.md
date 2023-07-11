@@ -31,7 +31,7 @@ The [variance][variance] for an [inverse gamma][invgamma-distribution] random va
 <!-- <equation class="equation" label="eq:invgamma_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{\beta^{2}}{(\alpha-1)^{2}(\alpha-2)}" alt="Variance for an inverse gamma distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \frac{\beta^{2}}{(\alpha-1)^{2}(\alpha-2)}
+\mathop{\mathrm{Var}}\left( X \right) = \frac{\beta^{2}}{(\alpha-1)^{2}(\alpha-2)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{\beta^{2}}{(\alpha-1)^{2}(\alpha-2)}" data-equation="eq:invgamma_variance">

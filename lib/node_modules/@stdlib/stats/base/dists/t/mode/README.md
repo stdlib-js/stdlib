@@ -31,7 +31,7 @@ The [mode][mode] for a [Student's t][t-distribution] random variable with degree
 <!-- <equation class="equation" label="eq:t_mode" align="center" raw="\operatorname{mode}\left( X \right) = 0" alt="Mode for a Student's t distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = 0
+\mathop{\mathrm{mode}}\left( X \right) = 0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = 0" data-equation="eq:t_mode">

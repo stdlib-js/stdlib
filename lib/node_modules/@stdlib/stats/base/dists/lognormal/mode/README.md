@@ -31,7 +31,7 @@ The [mode][mode] for a [lognormal][lognormal-distribution] random variable is
 <!-- <equation class="equation" label="eq:lognormal_mode" align="center" raw="\operatorname{mode}\left( X \right) = \exp({\mu -\sigma^{2}})" alt="Mode for a lognormal distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \exp({\mu -\sigma^{2}})
+\mathop{\mathrm{mode}}\left( X \right) = \exp({\mu -\sigma^{2}})
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \exp({\mu -\sigma^{2}})" data-equation="eq:lognormal_mode">

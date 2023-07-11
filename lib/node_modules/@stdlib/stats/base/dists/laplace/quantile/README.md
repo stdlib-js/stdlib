@@ -29,7 +29,7 @@ The [quantile function][quantile-function] for a [Laplace][laplace-distribution]
 <!-- <equation class="equation" label="eq:laplace_quantile_function" align="center" raw="Q(p) = \mu - b\,\operatorname{sgn}(p-0.5)\,\ln(1 - 2|p-0.5|)" alt="Quantile function for a Laplace distribution."> -->
 
 ```math
-Q(p) = \mu - b\,\operatorname{sgn}(p-0.5)\,\ln(1 - 2|p-0.5|)
+Q(p) = \mu - b\,\mathop{\mathrm{sgn}}(p-0.5)\,\ln(1 - 2|p-0.5|)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="Q(p) = \mu - b\,\operatorname{sgn}(p-0.5)\,\ln(1 - 2|p-0.5|)" data-equation="eq:laplace_quantile_function">

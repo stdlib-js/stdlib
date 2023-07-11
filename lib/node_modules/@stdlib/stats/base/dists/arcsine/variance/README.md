@@ -31,7 +31,7 @@ The [variance][variance] for an [arcsine][arcsine-distribution] random variable 
 <!-- <equation class="equation" label="eq:arcsine_variance" align="center" raw="\operatorname{Var}\left( X \right) = {\tfrac {1}{8}}(b-a)^{2}" alt="Variance for an arcsine distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = {\tfrac {1}{8}}(b-a)^{2}
+\mathop{\mathrm{Var}}\left( X \right) = {\tfrac {1}{8}}(b-a)^{2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = {\tfrac {1}{8}}(b-a)^{2}" data-equation="eq:arcsine_variance">

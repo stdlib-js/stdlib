@@ -29,7 +29,7 @@ For a window of size `W`, the [mean directional accuracy][mean-directional-accur
 <!-- <equation class="equation" label="eq:mean_directional_accuracy" align="center" raw="\operatorname{MDA} = \begin{cases} 1 & \textrm{if}\ W = 1 \\ \frac{1}{W} \sum_{i=1}^{W} \delta_{\operatorname{sgn}(\Delta f_{i,i-1}),\ \operatorname{sgn}(\Delta a_{i,i-1})} & \textrm{if}\ W > 1 \end{cases}" alt="Equation for the mean directional accuracy."> -->
 
 ```math
-\operatorname{MDA} = \begin{cases} 1 & \textrm{if}\ W = 1 \\ \frac{1}{W} \sum_{i=1}^{W} \delta_{\operatorname{sgn}(\Delta f_{i,i-1}),\ \operatorname{sgn}(\Delta a_{i,i-1})} & \textrm{if}\ W > 1 \end{cases}
+\mathop{\mathrm{MDA}} = \begin{cases} 1 & \textrm{if}\ W = 1 \\ \frac{1}{W} \sum_{i=1}^{W} \delta_{\mathop{\mathrm{sgn}}(\Delta f_{i,i-1}),\ \mathop{\mathrm{sgn}}(\Delta a_{i,i-1})} & \textrm{if}\ W > 1 \end{cases}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{MDA} = \begin{cases} 1 & \textrm{if}\ W = 1 \\\frac{1}{W} \sum_{i=1}^{W} \delta_{\operatorname{sgn}(\Delta f_{i,i-1}),\ \operatorname{sgn}(\Delta a_{i,i-1})} & \textrm{if}\ W > 1 \end{cases}" data-equation="eq:mean_directional_accuracy">

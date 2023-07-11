@@ -31,7 +31,7 @@ The [skewness][skewness] for a [triangular][triangular-distribution] random vari
 <!-- <equation class="equation" label="eq:triangular_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{{\sqrt 2}(a\!+\!b\!-\!2c)(2a\!-\!b\!-\!c)(a\!-\!2b\!+\!c)}{5(a^{2}\!+\!b^{2}\!+\!c^{2}\!-\!ab\!-\!ac\!-\!bc)^{{\frac{3}{2}}}}" alt="Skewness for a triangular distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{{\sqrt 2}(a\!+\!b\!-\!2c)(2a\!-\!b\!-\!c)(a\!-\!2b\!+\!c)}{5(a^{2}\!+\!b^{2}\!+\!c^{2}\!-\!ab\!-\!ac\!-\!bc)^{{\frac{3}{2}}}}
+\mathop{\mathrm{skew}}\left( X \right) = \frac{{\sqrt 2}(a\!+\!b\!-\!2c)(2a\!-\!b\!-\!c)(a\!-\!2b\!+\!c)}{5(a^{2}\!+\!b^{2}\!+\!c^{2}\!-\!ab\!-\!ac\!-\!bc)^{{\frac{3}{2}}}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{{\sqrt 2}(a\!+\!b\!-\!2c)(2a\!-\!b\!-\!c)(a\!-\!2b\!+\!c)}{5(a^{2}\!+\!b^{2}\!+\!c^{2}\!-\!ab\!-\!ac\!-\!bc)^{{\frac{3}{2}}}}" data-equation="eq:triangular_skewness">

@@ -31,7 +31,7 @@ The [mode][mode] for a [geometric][geometric-distribution] random variable with 
 <!-- <equation class="equation" label="eq:geometric_mode" align="center" raw="\operatorname{mode}\left( X \right) = 0" alt="Mode for a geometric distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = 0
+\mathop{\mathrm{mode}}\left( X \right) = 0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = 0" data-equation="eq:geometric_mode">

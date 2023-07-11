@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [logistic][logistic-distribution] random v
 <!-- <equation class="equation" label="eq:logistic_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 1.2" alt="Excess kurtosis for a logistic distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = 1.2
+\mathop{\mathrm{Kurt}}\left( X \right) = 1.2
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 1.2" data-equation="eq:logistic_kurtosis">

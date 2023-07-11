@@ -29,7 +29,7 @@ The reciprocal of the principal [square root][square-root] is defined as
 <!-- <equation class="equation" label="eq:reciprocal_square_root" align="center" raw="\operatorname{rsqrt}(x)=\frac{1}{\sqrt{x}}" alt="Reciprocal square root"> -->
 
 ```math
-\operatorname{rsqrt}(x)=\frac{1}{\sqrt{x}}
+\mathop{\mathrm{rsqrt}}(x)=\frac{1}{\sqrt{x}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{rsqrt}(x)=\frac{1}{\sqrt{x}}" data-equation="eq:reciprocal_square_root">

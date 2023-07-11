@@ -31,7 +31,7 @@ The [skewness][skewness] for a [beta][beta-distribution] random variable is
 <!-- <equation class="equation" label="eq:beta_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{1-2p}{\sqrt{np(1-p)}}" alt="Skewness for a beta distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{1-2p}{\sqrt{np(1-p)}}
+\mathop{\mathrm{skew}}\left( X \right) = \frac{1-2p}{\sqrt{np(1-p)}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{1-2p}{\sqrt{np(1-p)}}" data-equation="eq:beta_skewness">

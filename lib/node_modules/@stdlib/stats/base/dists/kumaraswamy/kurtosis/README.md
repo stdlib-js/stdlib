@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [Kumaraswamy's double bounded][kumaraswamy
 <!-- <equation class="equation" label="eq:kumaraswamy_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{ m_4 - ( 4.0 \cdot m_3 \cdot m_1 ) + ( 6.0 \cdot m_2 \cdot m_1^2 ) - ( 3.0 \cdot m_1^4 ) ) }{\left( m_2 - m_1^2 \right)^2}" alt="Excess kurtosis for a Kumaraswamy's double bounded distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \frac{ m_4 - ( 4.0 \cdot m_3 \cdot m_1 ) + ( 6.0 \cdot m_2 \cdot m_1^2 ) - ( 3.0 \cdot m_1^4 ) ) }{\left( m_2 - m_1^2 \right)^2}
+\mathop{\mathrm{Kurt}}\left( X \right) = \frac{ m_4 - ( 4.0 \cdot m_3 \cdot m_1 ) + ( 6.0 \cdot m_2 \cdot m_1^2 ) - ( 3.0 \cdot m_1^4 ) ) }{\left( m_2 - m_1^2 \right)^2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{ m_4 - ( 4.0 \cdot m_3 \cdot m_1 ) + ( 6.0 \cdot m_2 \cdot m_1^2 ) - ( 3.0 \cdot m_1^4 ) ) }{\left( m_2 - m_1^2 \right)^2}" data-equation="eq:kumaraswamy_kurtosis">

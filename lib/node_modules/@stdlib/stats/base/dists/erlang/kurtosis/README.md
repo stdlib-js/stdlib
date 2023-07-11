@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for an [Erlang][erlang-distribution] random vari
 <!-- <equation class="equation" label="eq:erlang_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{6}{k}" alt="Excess kurtosis for an Erlang distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \frac{6}{k}
+\mathop{\mathrm{Kurt}}\left( X \right) = \frac{6}{k}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{6}{k}" data-equation="eq:erlang_kurtosis">

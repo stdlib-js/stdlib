@@ -29,7 +29,7 @@ The [inverse half-value versed cosine][archavercosine] is defined as
 <!-- <equation class="equation" label="eq:archavercosine" align="center" raw="\operatorname{ahavercos}(\theta) = 2 \cdot \arccos(\sqrt{\theta})" alt="Inverse half-value versed cosine."> -->
 
 ```math
-\operatorname{ahavercos}(\theta) = 2 \cdot \arccos(\sqrt{\theta})
+\mathop{\mathrm{ahavercos}}(\theta) = 2 \cdot \arccos(\sqrt{\theta})
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{ahavercos}(\theta) = 2 \cdot \arccos(\sqrt{\theta})" data-equation="eq:archavercosine">

@@ -31,7 +31,7 @@ The [variance][variance] for a [Poisson][poisson-distribution] random variable i
 <!-- <equation class="equation" label="eq:poisson_variance" align="center" raw="\operatorname{Var}\left( X \right) = \lambda" alt="Variance for a Poisson distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \lambda
+\mathop{\mathrm{Var}}\left( X \right) = \lambda
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \lambda" data-equation="eq:poisson_variance">

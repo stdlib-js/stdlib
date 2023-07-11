@@ -31,7 +31,7 @@ The [median][median] for a [geometric][geometric-distribution] random variable i
 <!-- <equation class="equation" label="eq:geometric_median" align="center" raw="\operatorname{Median}\left( X \right) = \left\lceil {\frac {-1}{\log _{2}(1-p)}}\right\rceil \!-1" alt="Median for a geometric distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \left\lceil {\frac {-1}{\log _{2}(1-p)}}\right\rceil \!-1
+\mathop{\mathrm{Median}}\left( X \right) = \left\lceil {\frac {-1}{\log _{2}(1-p)}}\right\rceil \!-1
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \left\lceil {\frac {-1}{\log _{2}(1-p)}}\right\rceil \!-1" data-equation="eq:geometric_median">

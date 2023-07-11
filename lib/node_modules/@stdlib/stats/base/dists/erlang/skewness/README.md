@@ -31,7 +31,7 @@ The [skewness][skewness] for an [Erlang][erlang-distribution] random variable wi
 <!-- <equation class="equation" label="eq:erlang_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{2}{\sqrt{k}}" alt="Skewness for an Erlang distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{2}{\sqrt{k}}
+\mathop{\mathrm{skew}}\left( X \right) = \frac{2}{\sqrt{k}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{2}{\sqrt{k}}" data-equation="eq:erlang_skewness">

@@ -29,7 +29,7 @@ The [inverse versed cosine][inverse-versed-cosine] is defined as
 <!-- <equation class="equation" label="eq:arcvercosine" align="center" raw="\operatorname{avercos}(\theta) = \arccos(1+\theta)" alt="Inverse versed cosine."> -->
 
 ```math
-\operatorname{avercos}(\theta) = \arccos(1+\theta)
+\mathop{\mathrm{avercos}}(\theta) = \arccos(1+\theta)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{avercos}(\theta) = \arccos(1+\theta)" data-equation="eq:arcvercosine">

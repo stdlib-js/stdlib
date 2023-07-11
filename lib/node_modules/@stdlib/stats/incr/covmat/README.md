@@ -29,7 +29,7 @@ A [covariance matrix][covariance-matrix] is an M-by-M matrix whose elements spec
 <!-- <equation class="equation" label="eq:unbiased_sample_covariance_unknown_means" align="center" raw="\operatorname{cov_{jkn}} = \frac{1}{n-1} \sum_{i=0}^{n-1} (x_{ij} - \bar{x}_{jn})(x_{ik} - \bar{x}_{kn})" alt="Equation for the unbiased sample covariance for unknown population means."> -->
 
 ```math
-\operatorname{cov_{jkn}} = \frac{1}{n-1} \sum_{i=0}^{n-1} (x_{ij} - \bar{x}_{jn})(x_{ik} - \bar{x}_{kn})
+\mathop{\mathrm{cov_{jkn}}} = \frac{1}{n-1} \sum_{i=0}^{n-1} (x_{ij} - \bar{x}_{jn})(x_{ik} - \bar{x}_{kn})
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{cov_{jkn}} = \frac{1}{n-1} \sum_{i=0}^{n-1} (x_{ij} - \bar{x}_{jn})(x_{ik} - \bar{x}_{kn})" data-equation="eq:unbiased_sample_covariance_unknown_means">
@@ -44,7 +44,7 @@ For known population means, the [unbiased sample covariance][covariance-matrix] 
 <!-- <equation class="equation" label="eq:unbiased_sample_covariance_known_means" align="center" raw="\operatorname{cov_{jkn}} = \frac{1}{n} \sum_{i=0}^{n-1} (x_{ij} - \mu_{j})(x_{ik} - \mu_{k})" alt="Equation for the unbiased sample covariance for known population means."> -->
 
 ```math
-\operatorname{cov_{jkn}} = \frac{1}{n} \sum_{i=0}^{n-1} (x_{ij} - \mu_{j})(x_{ik} - \mu_{k})
+\mathop{\mathrm{cov_{jkn}}} = \frac{1}{n} \sum_{i=0}^{n-1} (x_{ij} - \mu_{j})(x_{ik} - \mu_{k})
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{cov_{jkn}} = \frac{1}{n} \sum_{i=0}^{n-1} (x_{ij} - \mu_{j})(x_{ik} - \mu_{k})" data-equation="eq:unbiased_sample_covariance_known_means">

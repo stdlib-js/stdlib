@@ -31,7 +31,7 @@ The [mode][mode] for a [logistic][logistic-distribution] random variable with lo
 <!-- <equation class="equation" label="eq:logistic_mode" align="center" raw="\operatorname{mode}\left( X \right) = \mu" alt="Mode for a logistic distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \mu
+\mathop{\mathrm{mode}}\left( X \right) = \mu
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \mu" data-equation="eq:logistic_mode">

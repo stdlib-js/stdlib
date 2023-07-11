@@ -29,7 +29,7 @@ The [inverse complementary error function][erfcinv] is defined as
 <!-- <equation class="equation" label="eq:inverse_complementary_error_function" align="center" raw="\operatorname{erfc}^{-1}(1-z) = \operatorname{erf}^{-1}(z)" alt="Inverse complementary error function."> -->
 
 ```math
-\operatorname{erfc}^{-1}(1-z) = \operatorname{erf}^{-1}(z)
+\mathop{\mathrm{erfc}}^{-1}(1-z) = \mathop{\mathrm{erf}}^{-1}(z)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{erfc}^{-1}(1-z) = \operatorname{erf}^{-1}(z)" data-equation="eq:inverse_complementary_error_function">

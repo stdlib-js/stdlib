@@ -29,7 +29,7 @@ The half-value [versed sine][versed-sine] is defined as
 <!-- <equation class="equation" label="eq:haversine" align="center" raw="\operatorname{haversin}(\theta) = \frac{1 - \cos \theta}{2}" alt="Haversed sine."> -->
 
 ```math
-\operatorname{haversin}(\theta) = \frac{1 - \cos \theta}{2}
+\mathop{\mathrm{haversin}}(\theta) = \frac{1 - \cos \theta}{2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{haversin}(\theta) = \frac{1 - \cos \theta}{2}" data-equation="eq:haversine">

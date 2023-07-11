@@ -31,7 +31,7 @@ The [mode][mode] for a [Rayleigh][rayleigh-distribution] random variable is
 <!-- <equation class="equation" label="eq:rayleigh_mode" align="center" raw="\operatorname{mode}\left( X \right) = \sigma" alt="Mode for a Rayleigh distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \sigma
+\mathop{\mathrm{mode}}\left( X \right) = \sigma
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \sigma" data-equation="eq:rayleigh_mode">

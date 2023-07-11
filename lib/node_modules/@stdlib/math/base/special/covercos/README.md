@@ -29,7 +29,7 @@ The [coversed cosine][coversed-cosine] is defined as
 <!-- <equation class="equation" label="eq:covercosine" align="center" raw="\operatorname{covercos}(\theta) = 1 + \sin \theta" alt="Coversed cosine."> -->
 
 ```math
-\operatorname{covercos}(\theta) = 1 + \sin \theta
+\mathop{\mathrm{covercos}}(\theta) = 1 + \sin \theta
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{covercos}(\theta) = 1 + \sin \theta" data-equation="eq:covercosine">

@@ -31,7 +31,7 @@ The [mode][mode] for a [beta][beta-distribution] random variable is
 <!-- <equation class="equation" label="eq:beta_mode" align="center" raw="\operatorname{mode}\left( X \right) = \frac{\alpha-1}{\alpha+\beta-2}" alt="Mode for a beta distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \frac{\alpha-1}{\alpha+\beta-2}
+\mathop{\mathrm{mode}}\left( X \right) = \frac{\alpha-1}{\alpha+\beta-2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \frac{\alpha-1}{\alpha+\beta-2}" data-equation="eq:beta_mode">

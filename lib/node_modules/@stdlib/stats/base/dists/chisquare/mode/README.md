@@ -31,7 +31,7 @@ The [mode][mode] for a [chi-squared][chisquare-distribution] random variable is
 <!-- <equation class="equation" label="eq:chisquare_mode" align="center" raw="\operatorname{mode}\left( X \right) = \max(k-2,0)" alt="Mode for a chi-squared distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \max(k-2,0)
+\mathop{\mathrm{mode}}\left( X \right) = \max(k-2,0)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \max(k-2,0)" data-equation="eq:chisquare_mode">

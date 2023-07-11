@@ -31,7 +31,7 @@ The [variance][variance] for a [Rayleigh][rayleigh-distribution] random variable
 <!-- <equation class="equation" label="eq:rayleigh_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{4-\pi }{2}\sigma^{2}" alt="Variance for a Rayleigh distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \frac{4-\pi }{2}\sigma^{2}
+\mathop{\mathrm{Var}}\left( X \right) = \frac{4-\pi }{2}\sigma^{2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{4-\pi }{2}\sigma^{2}" data-equation="eq:rayleigh_variance">

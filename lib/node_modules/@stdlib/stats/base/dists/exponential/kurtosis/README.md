@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for an [exponential][exponential-distribution] r
 <!-- <equation class="equation" label="eq:exponential_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 6" alt="Excess kurtosis for an exponential distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = 6
+\mathop{\mathrm{Kurt}}\left( X \right) = 6
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 6" data-equation="eq:exponential_kurtosis">

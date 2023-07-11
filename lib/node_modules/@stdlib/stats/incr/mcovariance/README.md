@@ -29,7 +29,7 @@ For unknown population means, the [unbiased sample covariance][covariance] for a
 <!-- <equation class="equation" label="eq:unbiased_sample_covariance_unknown_means" align="center" raw="\operatorname{cov_n} = \frac{1}{n-1} \sum_{i=j}^{j+W-1} (x_i - \bar{x}_n)(y_i - \bar{y}_n)" alt="Equation for the unbiased sample covariance for unknown population means."> -->
 
 ```math
-\operatorname{cov_n} = \frac{1}{n-1} \sum_{i=j}^{j+W-1} (x_i - \bar{x}_n)(y_i - \bar{y}_n)
+\mathop{\mathrm{cov_n}} = \frac{1}{n-1} \sum_{i=j}^{j+W-1} (x_i - \bar{x}_n)(y_i - \bar{y}_n)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{cov_n} = \frac{1}{n-1} \sum_{i=j}^{j+W-1} (x_i - \bar{x}_n)(y_i - \bar{y}_n)" data-equation="eq:unbiased_sample_covariance_unknown_means">
@@ -46,7 +46,7 @@ For known population means, the [unbiased sample covariance][covariance] for a w
 <!-- <equation class="equation" label="eq:unbiased_sample_covariance_known_means" align="center" raw="\operatorname{cov_n} = \frac{1}{n} \sum_{i=j}^{j+W-1} (x_i - \mu_x)(y_i - \mu_y)" alt="Equation for the unbiased sample covariance for known population means."> -->
 
 ```math
-\operatorname{cov_n} = \frac{1}{n} \sum_{i=j}^{j+W-1} (x_i - \mu_x)(y_i - \mu_y)
+\mathop{\mathrm{cov_n}} = \frac{1}{n} \sum_{i=j}^{j+W-1} (x_i - \mu_x)(y_i - \mu_y)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{cov_n} = \frac{1}{n} \sum_{i=j}^{j+W-1} (x_i - \mu_x)(y_i - \mu_y)" data-equation="eq:unbiased_sample_covariance_known_means">

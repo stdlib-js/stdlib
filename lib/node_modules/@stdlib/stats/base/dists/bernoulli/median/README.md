@@ -31,7 +31,7 @@ The [median][median] for a [Bernoulli][bernoulli-distribution] random variable i
 <!-- <equation class="equation" label="eq:bernoulli_median" align="center" raw="\operatorname{Median}\left( X \right) = \begin{cases} 0 & \text{if } p \le 0.5 \\ 1 &  \text{if } p > 0.5 \end{cases}" alt="Median for a Bernoulli distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \begin{cases} 0 & \text{if } p \le 0.5 \\ 1 &  \text{if } p > 0.5 \end{cases}
+\mathop{\mathrm{Median}}\left( X \right) = \begin{cases} 0 & \text{if } p \le 0.5 \\ 1 &  \text{if } p > 0.5 \end{cases}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \begin{cases} 0 &amp; \text{if } p \le 0.5 \\ 1 &amp;  \text{if } p &gt; 0.5 \end{cases}" data-equation="eq:bernoulli_median">

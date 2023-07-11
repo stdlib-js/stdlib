@@ -31,7 +31,7 @@ The [mode][mode] for a [Laplace][laplace-distribution] random variable with loca
 <!-- <equation class="equation" label="eq:laplace_mode" align="center" raw="\operatorname{mode}\left( X \right) = \mu" alt="Mode for a Laplace distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \mu
+\mathop{\mathrm{mode}}\left( X \right) = \mu
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \mu" data-equation="eq:laplace_mode">

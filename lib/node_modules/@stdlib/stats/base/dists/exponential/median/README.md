@@ -31,7 +31,7 @@ The [median][median] for an [exponential][exponential-distribution] random varia
 <!-- <equation class="equation" label="eq:exponential_median" align="center" raw="\operatorname{Median}\left( X \right) = \lambda^{−1} \ln(2)" alt="Median for an exponential distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \lambda^{−1} \ln(2)
+\mathop{\mathrm{Median}}\left( X \right) = \lambda^{−1} \ln(2)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \lambda^{−1} \ln(2)" data-equation="eq:exponential_median">

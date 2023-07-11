@@ -31,7 +31,7 @@ The [variance][variance] for a [binomial][binomial-distribution] random variable
 <!-- <equation class="equation" label="eq:binomial_variance" align="center" raw="\operatorname{Var}\left[ X \right] = n p (1-p)" alt="Variance for a binomial distribution."> -->
 
 ```math
-\operatorname{Var}\left[ X \right] = n p (1-p)
+\mathop{\mathrm{Var}}\left[ X \right] = n p (1-p)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left[ X \right] = n p (1-p)" data-equation="eq:binomial_variance">

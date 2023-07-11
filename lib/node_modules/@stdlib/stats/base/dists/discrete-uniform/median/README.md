@@ -31,7 +31,7 @@ The [median][median] for a [discrete uniform][discrete-uniform-distribution] ran
 <!-- <equation class="equation" label="eq:discrete_uniform_median" align="center" raw="\operatorname{Median}\left[ X \right] = 0.5 \cdot ( a + b )" alt="Median for a discrete uniform distribution."> -->
 
 ```math
-\operatorname{Median}\left[ X \right] = 0.5 \cdot ( a + b )
+\mathop{\mathrm{Median}}\left[ X \right] = 0.5 \cdot ( a + b )
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left[ X \right] = 0.5 \cdot ( a + b )" data-equation="eq:discrete_uniform_median">

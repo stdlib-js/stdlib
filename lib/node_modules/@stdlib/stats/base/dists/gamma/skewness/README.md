@@ -31,7 +31,7 @@ The [skewness][skewness] for a [gamma][gamma-distribution] random variable with 
 <!-- <equation class="equation" label="eq:gamma_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{2}{\sqrt{\alpha}}" alt="Skewness for a gamma distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{2}{\sqrt{\alpha}}
+\mathop{\mathrm{skew}}\left( X \right) = \frac{2}{\sqrt{\alpha}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{2}{\sqrt{\alpha}}" data-equation="eq:gamma_skewness">

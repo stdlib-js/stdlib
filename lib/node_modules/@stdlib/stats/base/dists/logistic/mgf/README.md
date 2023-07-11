@@ -31,7 +31,7 @@ The [moment-generating function][mgf] for a [logistic][logistic-distribution] ra
 <!-- <equation class="equation" label="eq:logistic_mgf_function" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = e^{\mu t}\operatorname{B}(1-st, 1+st)" alt="Moment-generating function (MGF) for a logistic distribution."> -->
 
 ```math
-M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = e^{\mu t}\operatorname{B}(1-st, 1+st)
+M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = e^{\mu t}\mathop{\mathrm{B}}(1-st, 1+st)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = e^{\mu t}\operatorname{B}(1-st, 1+st)" data-equation="eq:logistic_mgf_function">

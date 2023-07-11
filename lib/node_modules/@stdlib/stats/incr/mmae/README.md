@@ -29,7 +29,7 @@ For a window of size `W`, the [mean absolute error][mean-absolute-error] is defi
 <!-- <equation class="equation" label="eq:mean_absolute_error" align="center" raw="\operatorname{MAE} = \frac{1}{W} \sum_{i=0}^{W-1} |y_i - x_i|" alt="Equation for the mean absolute error."> -->
 
 ```math
-\operatorname{MAE} = \frac{1}{W} \sum_{i=0}^{W-1} |y_i - x_i|
+\mathop{\mathrm{MAE}} = \frac{1}{W} \sum_{i=0}^{W-1} |y_i - x_i|
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{MAE} = \frac{1}{W} \sum_{i=0}^{W-1} |y_i - x_i|" data-equation="eq:mean_absolute_error">

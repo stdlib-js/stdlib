@@ -29,7 +29,7 @@ The [inverse half-value versed sine][archaversine] is defined as
 <!-- <equation class="equation" label="eq:archaversine" align="center" raw="\operatorname{ahaversin}(\theta) = 2 \cdot \arcsin(\sqrt{\theta})" alt="Inverse half-value versed sine."> -->
 
 ```math
-\operatorname{ahaversin}(\theta) = 2 \cdot \arcsin(\sqrt{\theta})
+\mathop{\mathrm{ahaversin}}(\theta) = 2 \cdot \arcsin(\sqrt{\theta})
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{ahaversin}(\theta) = 2 \cdot \arcsin(\sqrt{\theta})" data-equation="eq:archaversine">

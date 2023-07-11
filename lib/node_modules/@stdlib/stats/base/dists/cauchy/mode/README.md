@@ -31,7 +31,7 @@ The [mode][mode] for a [Cauchy][cauchy-distribution] random variable with locati
 <!-- <equation class="equation" label="eq:cauchy_mode" align="center" raw="\operatorname{mode}\left( X \right) = x_0" alt="Mode for a Cauchy distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = x_0
+\mathop{\mathrm{mode}}\left( X \right) = x_0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = x_0" data-equation="eq:cauchy_mode">

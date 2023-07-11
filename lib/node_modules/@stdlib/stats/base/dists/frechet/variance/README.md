@@ -31,7 +31,7 @@ The [variance][variance] for a [Fréchet][frechet-distribution] random variable 
 <!-- <equation class="equation" label="eq:frechet_variance" align="center" raw="\operatorname{Var}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) & {\text {for }}\alpha > 2\\\ \infty & \text{ otherwise } \end{cases}" alt="Variance for a Fréchet distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) & {\text {for }}\alpha > 2\\\ \infty & \text{ otherwise } \end{cases}
+\mathop{\mathrm{Var}}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) & {\text {for }}\alpha > 2\\\ \infty & \text{ otherwise } \end{cases}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \begin{cases} s^{2}\left(\Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2}\right) &amp; {\text {for }}\alpha &gt; 2\\\ \infty &amp; \text{ otherwise } \end{cases}" data-equation="eq:frechet_variance">

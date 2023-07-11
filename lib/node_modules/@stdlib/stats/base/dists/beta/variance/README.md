@@ -31,7 +31,7 @@ The [variance][variance] for a [beta][beta-distribution] random variable is
 <!-- <equation class="equation" label="eq:beta_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}" alt="Variance for a beta distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}
+\mathop{\mathrm{Var}}\left( X \right) = \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}" data-equation="eq:beta_variance">

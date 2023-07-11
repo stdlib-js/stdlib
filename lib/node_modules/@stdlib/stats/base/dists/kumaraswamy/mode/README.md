@@ -31,7 +31,7 @@ The [mode][mode] for a [Kumaraswamy's double bounded][kumaraswamy-distribution] 
 <!-- <equation class="equation" label="eq:kumaraswamy_mode" align="center" raw="\operatorname{mode}\left( X \right) = \left(\frac{a-1}{ab-1}\right)^{1/a}" alt="Mode for a Kumaraswamy's double bounded distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \left(\frac{a-1}{ab-1}\right)^{1/a}
+\mathop{\mathrm{mode}}\left( X \right) = \left(\frac{a-1}{ab-1}\right)^{1/a}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \left(\frac{a-1}{ab-1}\right)^{1/a}" data-equation="eq:kumaraswamy_mode">

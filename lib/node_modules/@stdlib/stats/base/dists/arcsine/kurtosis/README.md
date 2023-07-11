@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for an [arcsine][arcsine-distribution] random va
 <!-- <equation class="equation" label="eq:arcsine_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = -{\frac {3}{5}}" alt="Excess kurtosis for an arcsine distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = -{\frac {3}{5}}
+\mathop{\mathrm{Kurt}}\left( X \right) = -{\frac {3}{5}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = -{\frac {3}{5}}" data-equation="eq:arcsine_kurtosis">

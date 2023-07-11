@@ -31,7 +31,7 @@ The [median][median] for a [degenerate][degenerate-distribution] random variable
 <!-- <equation class="equation" label="eq:degenerate_median" align="center" raw="\operatorname{Median}\left( X \right) = \mu" alt="Median for a degenerate distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \mu
+\mathop{\mathrm{Median}}\left( X \right) = \mu
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu" data-equation="eq:degenerate_median">
