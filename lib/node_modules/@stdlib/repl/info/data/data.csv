@@ -2,6 +2,7 @@ abs,"\nabs( x:ndarray|ArrayLikeObject|number[, options:Object] )\n    Computes t
 abs.assign,"\nabs.assign( x:ndarray|ArrayLikeObject, y:ndarray|ArrayLikeObject )\n    Computes the absolute value and assigns results to a provided output array.\n"
 acronym,"\nacronym( str:string[, options:Object] )\n    Generates an acronym for a given string.\n"
 aempty,"\naempty( length:integer[, dtype:string] )\n    Creates an uninitialized array having a specified length.\n"
+aemptyLike,"\naemptyLike( x:TypedArray|Array[, dtype:string] )\n    Creates an uninitialized array having the same length and data type as a\n    provided input array.\n"
 AFINN_96,"\nAFINN_96()\n    Returns a list of English words rated for valence.\n"
 AFINN_111,"\nAFINN_111()\n    Returns a list of English words rated for valence.\n"
 afull,"\nafull( length:integer, value:any[, dtype:string] )\n    Returns a filled array having a specified length.\n"

@@ -2,6 +2,7 @@ abs,"var y = abs( -1.0 )\nvar x = new Float64Array( [ -1.0, -2.0 ] );\ny = abs( 
 abs.assign,"var x = new Float64Array( [ -1.0, -2.0 ] );\nvar y = new Float64Array( x.length );\nvar out = abs.assign( x, y )\nvar bool = ( out === y )\nx = [ -1.0, -2.0 ];\ny = [ 0.0, 0.0 ];\nout = abs.assign( x, y )\nbool = ( out === y )\nx = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );\ny = array( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );\nout = abs.assign( x, y )\nout.get( 0, 1 )\nbool = ( out === y )\n"
 acronym,"var out = acronym( 'the quick brown fox' )\nout = acronym( 'Hard-boiled eggs' )\n"
 aempty,"var arr = aempty( 2 )\narr = aempty( 2, 'float32' )\n"
+aemptyLike,"var x = new Float64Array( 2 );\nvar arr = aemptyLike( x )\narr = aemptyLike( x, 'float32' )\n"
 AFINN_96,"var list = AFINN_96()\n"
 AFINN_111,"var list = AFINN_111()\n"
 afull,"var arr = afull( 2, 1.0 )\narr = afull( 2, 1.0, 'float32' )\n"

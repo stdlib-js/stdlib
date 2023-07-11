@@ -1383,6 +1383,7 @@
 "@stdlib/utils/define-properties",defineProperties
 "@stdlib/utils/define-property",defineProperty
 "@stdlib/utils/dirname",dirname
+"@stdlib/string/dotcase",dotcase
 "@stdlib/utils/doubly-linked-list",DoublyLinkedList
 "@stdlib/utils/do-until",doUntil
 "@stdlib/utils/async/do-until",doUntilAsync

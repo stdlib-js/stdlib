@@ -1383,6 +1383,7 @@
 "@stdlib/utils/define-properties","@stdlib/utils-define-properties"
 "@stdlib/utils/define-property","@stdlib/utils-define-property"
 "@stdlib/utils/dirname","@stdlib/utils-dirname"
+"@stdlib/string/dotcase","@stdlib/string-dotcase"
 "@stdlib/utils/doubly-linked-list","@stdlib/utils-doubly-linked-list"
 "@stdlib/utils/do-until","@stdlib/utils-do-until"
 "@stdlib/utils/async/do-until","@stdlib/utils-async-do-until"

@@ -1383,6 +1383,7 @@
 "@stdlib/utils/define-properties","@stdlib/utils/define-property,@stdlib/utils/define-read-only-property"
 "@stdlib/utils/define-property","@stdlib/utils/define-properties,@stdlib/utils/define-read-only-property"
 "@stdlib/utils/dirname","@stdlib/utils/extname"
+"@stdlib/string/dotcase","@stdlib/string/camelcase,@stdlib/string/kebabcase,@stdlib/string/pascalcase,@stdlib/string/snakecase"
 "@stdlib/utils/doubly-linked-list","@stdlib/utils/linked-list,@stdlib/utils/stack"
 "@stdlib/utils/do-until","@stdlib/utils/async/do-until,@stdlib/utils/do-until-each,@stdlib/utils/do-while,@stdlib/utils/until,@stdlib/utils/while"
 "@stdlib/utils/async/do-until","@stdlib/utils/do-until,@stdlib/utils/async/do-while,@stdlib/utils/async/until,@stdlib/utils/async/while"

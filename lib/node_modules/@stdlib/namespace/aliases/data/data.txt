@@ -1383,6 +1383,7 @@ defineMemoizedProperty
 defineProperties
 defineProperty
 dirname
+dotcase
 DoublyLinkedList
 doUntil
 doUntilAsync
