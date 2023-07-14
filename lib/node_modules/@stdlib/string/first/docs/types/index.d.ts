@@ -18,8 +18,69 @@
 
 // TypeScript Version: 2.0
 
+// tslint:disable:unified-signatures
+
 /**
-* Removes the first visual character(s) of a string.
+* Interface describing function options.
+*/
+interface Options {
+	/**
+	* Specifies the type of characters to return (default: 'grapheme').
+	*
+	* ## Notes
+	*
+	* -   The following option values are supported:
+	*
+	*     -   `'grapheme'`: grapheme clusters. Appropriate for strings containing visual characters which can span multiple Unicode code points (e.g., emoji).
+	*     -   `'code_point'`: Unicode code points. Appropriate for strings containing visual characters which are comprised of more than one Unicode code units.
+	*     -   `'code_unit'`: UTF-16 code units. Appropriate for strings containing visual characters drawn from the basic multilingual plane (BMP) (e.g., common characters, such as those from the Latin, Greek, and Cyrillic alphabets).
+	*/
+	mode?: 'grapheme' | 'code_point' | 'code_unit';
+}
+
+/**
+* Returns the first `n` characters of a string.
+*
+* @param str - input string
+* @param n - number of characters to return
+* @param options - options
+* @returns updated string
+*
+* @example
+* var out = first( 'last man standing', 2 );
+* // returns 'la'
+*
+* @example
+* var out = first( '🐶🐮🐷🐰🐸', 2, {
+*    'mode': 'grapheme'
+* });
+* // returns '🐶🐮'
+*/
+declare function first( str: string, n: number, options?: Options ): string;
+
+/**
+* Returns the first character of a string.
+*
+* @param str - input string
+* @param options - options
+* @returns updated string
+*
+* @example
+* var out = first( 'last man standing', {
+*     'mode': 'code_unit'
+* });
+* // returns 'l'
+*
+* @example
+* var out = first( '🐶🐮🐷🐰🐸', {
+*    'mode': 'grapheme'
+* });
+* // returns '🐶🐮'
+*/
+declare function first( str: string, options?: Options ): string;
+
+/**
+* Returns the first character(s) of a string.
 *
 * @param str - input string
 * @param n - number of characters to return (default: 1)

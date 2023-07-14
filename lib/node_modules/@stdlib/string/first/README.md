@@ -20,7 +20,7 @@ limitations under the License.
 
 # first
 
-> Return the first visual character(s) of a string.
+> Return the first character(s) of a string.
 
 <section class="usage">
 
@@ -30,9 +30,9 @@ limitations under the License.
 var first = require( '@stdlib/string/first' );
 ```
 
-#### first( str\[, n] )
+#### first( str\[, n]\[, options] )
 
-Returns the first visual character of a string.
+Returns the first character(s) of a string.
 
 ```javascript
 var out = first( 'last man standing' );
@@ -42,7 +42,17 @@ out = first( 'Hidden Treasures' );
 // returns 'H'
 ```
 
-If provided a second argument, the function returns the first `n` visual characters.
+The function supports the following options:
+
+-   **mode**: type of characters to return. Must be one of the following:
+
+    -   `'grapheme'`: grapheme clusters. Appropriate for strings containing visual characters which can span multiple Unicode code points (e.g., emoji).
+    -   `'code_point'`: Unicode code points. Appropriate for strings containing visual characters which are comprised of more than one Unicode code units.
+    -   `'code_unit'`: UTF-16 code units. Appropriate for strings containing visual characters drawn from the basic multilingual plane (BMP) (e.g., common characters, such as those from the Latin, Greek, and Cyrillic alphabets).
+    
+    Default: `'grapheme'`.
+
+By default, the function returns the first character. To return the first `n` characters, provide a second argument specifying the number of characters to return.
 
 ```javascript
 var out = first( 'foo bar', 5 );
@@ -55,6 +65,19 @@ out = first( 'foo bar', 10 );
 </section>
 
 <!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+## Notes
+
+-   By default, the function assumes the general case in which an input string may contain an arbitrary number of grapheme clusters. This assumption comes with a performance cost. Accordingly, if an input string is known to only contain visual characters of a particular type (e.g., only alphanumeric), one can achieve better performance by specifying the appropriate `mode` option.
+
+</section>
+
+<!-- /.notes -->
+
 
 <section class="examples">
 
@@ -110,6 +133,7 @@ Options:
   -V,    --version             Print the package version.
          --n num               Number of characters to return. Default: 1.
          --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
+         --mode mode           Type of character to return. Default: 'grapheme'.
 ```
 
 </section>

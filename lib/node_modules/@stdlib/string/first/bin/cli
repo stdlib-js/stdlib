@@ -45,6 +45,7 @@ function main() {
 	var split;
 	var flags;
 	var args;
+	var opts;
 	var cli;
 	var n;
 
@@ -67,6 +68,10 @@ function main() {
 	} else {
 		n = 1;
 	}
+	opts = {};
+	if ( flags.mode ) {
+		opts.mode = flags.mode;
+	}
 
 	// Get any provided command-line arguments:
 	args = cli.args();
@@ -83,7 +88,11 @@ function main() {
 		}
 		return stdin( onRead );
 	}
-	console.log( first( args[ 0 ], n ) ); // eslint-disable-line no-console
+	try {
+		console.log( first( args[ 0 ], n, opts ) ); // eslint-disable-line no-console
+	} catch ( error ) {
+		return cli.error( error );
+	}
 
 	/**
 	* Callback invoked upon reading from `stdin`.
@@ -105,8 +114,15 @@ function main() {
 		if ( lines[ lines.length-1 ] === '' ) {
 			lines.pop();
 		}
-		for ( i = 0; i < lines.length; i++ ) {
-			console.log( first( lines[ i ], n ) ); // eslint-disable-line no-console
+		if ( lines.length ) {
+			try {
+				console.log( first( lines[ 0 ], n, opts ) ); // eslint-disable-line no-console
+			} catch ( error ) {
+				return cli.error( error );
+			}
+			for ( i = 1; i < lines.length; i++ ) {
+				console.log( first( lines[ i ], n, opts ) ); // eslint-disable-line no-console
+			}
 		}
 	}
 }

@@ -24,9 +24,12 @@ import first = require( './index' );
 // The function returns a string...
 {
 	first( 'abc' ); // $ExpectType string
+	first( 'abc', 1 ); // $ExpectType string
+	first( 'abc', {} ); // $ExpectType string
+	first( 'abc', 1, {} ); // $ExpectType string
 }
 
-// The compiler throws an error if the function is provided a value other than a string...
+// The compiler throws an error if the function is provided a first argument which is not a string...
 {
 	first( true ); // $ExpectError
 	first( false ); // $ExpectError
@@ -36,20 +39,73 @@ import first = require( './index' );
 	first( [] ); // $ExpectError
 	first( {} ); // $ExpectError
 	first( ( x: number ): number => x ); // $ExpectError
+
+	first( true, 1 ); // $ExpectError
+	first( false, 1 ); // $ExpectError
+	first( null, 1 ); // $ExpectError
+	first( undefined, 1 ); // $ExpectError
+	first( 5, 1 ); // $ExpectError
+	first( [], 1 ); // $ExpectError
+	first( {}, 1 ); // $ExpectError
+	first( ( x: number ): number => x, 1 ); // $ExpectError
+
+	first( true, {} ); // $ExpectError
+	first( false, {} ); // $ExpectError
+	first( null, {} ); // $ExpectError
+	first( undefined, {} ); // $ExpectError
+	first( 5, {} ); // $ExpectError
+	first( [], {} ); // $ExpectError
+	first( {}, {} ); // $ExpectError
+	first( ( x: number ): number => x, {} ); // $ExpectError
+
+	first( true, 1, {} ); // $ExpectError
+	first( false, 1, {} ); // $ExpectError
+	first( null, 1, {} ); // $ExpectError
+	first( undefined, 1, {} ); // $ExpectError
+	first( 5, 1, {} ); // $ExpectError
+	first( [], 1, {} ); // $ExpectError
+	first( {}, 1, {} ); // $ExpectError
+	first( ( x: number ): number => x, 1, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument that is not a number...
+// The compiler throws an error if the function is provided an invalid second argument...
 {
 	first( 'abc', true ); // $ExpectError
 	first( 'abc', false ); // $ExpectError
 	first( 'abc', null ); // $ExpectError
-	first( 'abc', 'abc' ); // $ExpectError
+	first( 'abc', '' ); // $ExpectError
 	first( 'abc', [] ); // $ExpectError
-	first( 'abc', {} ); // $ExpectError
 	first( 'abc', ( x: number ): number => x ); // $ExpectError
+
+	first( 'abc', true, {} ); // $ExpectError
+	first( 'abc', false, {} ); // $ExpectError
+	first( 'abc', null, {} ); // $ExpectError
+	first( 'abc', '', {} ); // $ExpectError
+	first( 'abc', [], {} ); // $ExpectError
+	first( 'abc', {}, {} ); // $ExpectError
+	first( 'abc', ( x: number ): number => x, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided insufficient arguments...
+// The compiler throws an error if the function is provided an invalid `mode` option...
+{
+	first( 'abc', { 'mode': true } ); // $ExpectError
+	first( 'abc', { 'mode': false } ); // $ExpectError
+	first( 'abc', { 'mode': null } ); // $ExpectError
+	first( 'abc', { 'mode': '' } ); // $ExpectError
+	first( 'abc', { 'mode': [] } ); // $ExpectError
+	first( 'abc', { 'mode': ( x: number ): number => x } ); // $ExpectError
+
+	first( 'abc', 1, { 'mode': true } ); // $ExpectError
+	first( 'abc', 1, { 'mode': false } ); // $ExpectError
+	first( 'abc', 1, { 'mode': null } ); // $ExpectError
+	first( 'abc', 1, { 'mode': '' } ); // $ExpectError
+	first( 'abc', 1, { 'mode': [] } ); // $ExpectError
+	first( 'abc', 1, { 'mode': {} } ); // $ExpectError
+	first( 'abc', 1, { 'mode': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	first(); // $ExpectError
+	first( 'abc', 1, {}, {} ); // $ExpectError
 }
