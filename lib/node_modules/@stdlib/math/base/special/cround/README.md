@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# Round
+# cround
 
-> Round a complex number to the nearest integer.
+> Round each component of a double-precision complex floating-point number to the nearest integer.
 
 <section class="usage">
 
@@ -30,36 +30,50 @@ limitations under the License.
 var cround = require( '@stdlib/math/base/special/cround' );
 ```
 
-#### cround( \[out,] re, im )
+#### cround( z )
 
-Rounds a `complex` number comprised of a **real** component `re` and an **imaginary** component `im` to the nearest integer.
-
-```javascript
-var v = cround( -4.2, 5.5 );
-// returns [ -4.0, 6.0 ]
-
-v = cround( 9.99999, 0.1 );
-// returns [ 10.0, 0.0 ]
-
-v = cround( 0.0, 0.0 );
-// returns [ 0.0, 0.0 ]
-
-v = cround( NaN, NaN );
-// returns [ NaN, NaN ]
-```
-
-By default, the function returns real and imaginary components as a two-element `array`. To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
+Rounds each component of a double-precision complex floating-point number to the nearest integer.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var Complex128 = require( '@stdlib/complex/float64' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
 
-var out = new Float64Array( 2 );
+var v = cround( new Complex128( -4.2, 5.5 ) );
+// returns <Complex128>
 
-var v = cround( out, -4.2, 5.5 );
-// returns <Float64Array>[ -4.0, 6.0 ]
+var re = real( v );
+// returns -4.0
 
-var bool = ( v === out );
-// returns true
+var im = imag( v );
+// returns 6.0
+
+v = cround( new Complex128( 9.99999, 0.1 ) );
+// returns <Complex128>
+
+re = real( v );
+// returns 10.0
+
+im = imag( v );
+// returns 0.0
+
+v = cround( new Complex128( 0.0, 0.0 ) );
+// returns <Complex128>
+
+re = real( v );
+// returns 0.0
+
+im = imag( v );
+// returns 0.0
+
+v = cround( new Complex128( NaN, NaN ) );
+// returns <Complex128>
+
+re = real( v );
+// returns NaN
+
+im = imag( v );
+// returns NaN
 ```
 
 </section>
@@ -73,32 +87,134 @@ var bool = ( v === out );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var Complex128 = require( '@stdlib/complex/float64' );
-var randu = require( '@stdlib/random/base/randu' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
 var cround = require( '@stdlib/math/base/special/cround' );
 
-var re;
-var im;
-var z;
-var o;
-var w;
-var i;
+var rand = uniform( -50.0, 50.0 );
 
+var z;
+var i;
 for ( i = 0; i < 100; i++ ) {
-    re = ( randu()*100.0 ) - 50.0;
-    im = ( randu()*100.0 ) - 50.0;
-    z = new Complex128( re, im );
-    o = cround( real(z), imag(z) );
-    w = new Complex128( o[ 0 ], o[ 1 ] );
-    console.log( 'round(%s) = %s', z.toString(), w.toString() );
+    z = new Complex128( rand(), rand() );
+    console.log( 'cround(%s) = %s', z, cround( z ) );
 }
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/cround.h"
+```
+
+#### stdlib_base_cround( z )
+
+Rounds each component of a double-precision complex floating-point number to the nearest integer.
+
+```c
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/real.h"
+#include "stdlib/complex/imag.h"
+
+stdlib_complex128_t z = stdlib_complex128( -4.2, 5.5 );
+
+stdlib_complex128_t out = stdlib_base_cround( z );
+
+double re = stdlib_real( out );
+// returns -4.0
+
+double im = stdlib_imag( out );
+// returns 6.0
+```
+
+The function accepts the following arguments:
+
+-   **z**: `[in] stdlib_complex128_t` input value.
+
+```c
+stdlib_complex128_t stdlib_base_cround( const stdlib_complex128_t z );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/cround.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
+#include <stdio.h>
+
+int main( void ) {
+    const stdlib_complex128_t x[] = {
+        stdlib_complex128( 3.14, 1.5 ),
+        stdlib_complex128( -3.14, -1.5 ),
+        stdlib_complex128( 0.0, 0.0 ),
+        stdlib_complex128( 0.0/0.0, 0.0/0.0 )
+    };
+
+    stdlib_complex128_t v;
+    stdlib_complex128_t y;
+    double re1;
+    double im1;
+    double re2;
+    double im2;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = x[ i ];
+        y = stdlib_base_cround( v );
+        stdlib_reim( v, &re1, &im1 );
+        stdlib_reim( y, &re2, &im2 );
+        printf( "cround(%lf + %lfi) = %lf + %lfi\n", re1, im1, re2, im2 );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
