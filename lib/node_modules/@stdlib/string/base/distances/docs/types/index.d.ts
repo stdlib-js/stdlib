@@ -42,7 +42,6 @@ interface Namespace {
 	* var dist = ns.levenshteinDistance( 'algorithm', 'altruistic' );
 	* // returns 6
 	*
-	*
 	* @example
 	* var dist = ns.levenshteinDistance( 'hippo', 'elephant' );
 	* // returns 7
