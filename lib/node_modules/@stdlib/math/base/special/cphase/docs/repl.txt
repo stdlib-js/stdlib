@@ -1,6 +1,7 @@
 
-{{alias}}( re, im )
-    Computes the argument of a complex number in radians.
+{{alias}}( z )
+    Computes the argument of a double-precision complex floating-point number
+    in radians.
 
     The argument of a complex number, also known as the phase, is the angle of
     the radius extending from the origin to the complex number plotted in the
@@ -8,11 +9,8 @@
 
     Parameters
     ----------
-    re: number
-        Real component.
-
-    im: number
-        Imaginary component.
+    z: Complex128
+        Complex number.
 
     Returns
     -------
@@ -21,7 +19,7 @@
 
     Examples
     --------
-    > var phi = {{alias}}( 5.0, 3.0 )
+    > var phi = {{alias}}( new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 ) )
     ~0.5404
 
     See Also

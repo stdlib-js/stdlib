@@ -2284,18 +2284,19 @@ interface Namespace {
 	coversin: typeof coversin;
 
 	/**
-	* Computes the argument of a complex number in radians.
+	* Computes the argument of a double-precision complex floating-point number in radians.
 	*
 	* ## Notes
 	*
 	* -   The argument of a complex number, also known as the phase, is the angle of the radius extending from the origin to the complex number plotted in the complex plane and the positive real axis.
 	*
-	* @param re - real component
-	* @param im - imaginary component
+	* @param z - complex number
 	* @returns argument
 	*
 	* @example
-	* var phi = ns.cphase( 5.0, 3.0 );
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	*
+	* var phi = ns.cphase( new Complex128( 5.0, 3.0 ) );
 	* // returns ~0.5404
 	*/
 	cphase: typeof cphase;
@@ -2314,15 +2315,24 @@ interface Namespace {
 	cpolar: typeof cpolar;
 
 	/**
-	* Rounds a complex number to the nearest integer.
+	* Rounds each component of a double-precision complex floating-point number to the nearest integer.
 	*
-	* @param re - real component
-	* @param im - imaginary component
-	* @returns real and imaginary components
+	* @param z - input value
+	* @returns result
 	*
 	* @example
-	* var out = ns.cround( 5.5, 3.3 );
-	* // returns [ 6.0, 3.0 ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var v = cceil( new Complex128( -4.2, 5.5 ) );
+	* // returns <Complex128>
+	*
+	* var re = real( v );
+	* // returns -4.0
+	*
+	* var im = imag( v );
+	* // returns 6.0
 	*/
 	cround: typeof cround;
 
@@ -2369,23 +2379,24 @@ interface Namespace {
 	csch: typeof csch;
 
 	/**
-	* Evaluates the signum function of a complex number.
+	* Evaluates the signum function of a double-precision complex floating-point number.
 	*
-	* @param re - real component
-	* @param im - imaginary component
-	* @returns real and imaginary components
-	*
-	* @example
-	* var v = ns.csignum( -4.2, 5.5 );
-	* // returns [ -0.6069136033622302, 0.79476781392673 ]
+	* @param z - input value
+	* @returns result
 	*
 	* @example
-	* var v = ns.csignum( 0.0, 0.0 );
-	* // returns [ 0.0, 0.0 ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
 	*
-	* @example
-	* var v = ns.csignum( NaN, NaN );
-	* // returns [ NaN, NaN ]
+	* var v = cceil( new Complex128( -4.2, 5.5 ) );
+	* // returns <Complex128>
+	*
+	* var re = real( v );
+	* // returns -0.6069136033622302
+	*
+	* var im = imag( v );
+	* // returns 0.79476781392673
 	*/
 	csignum: typeof csignum;
 

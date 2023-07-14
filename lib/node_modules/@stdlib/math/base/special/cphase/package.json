@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/cphase",
   "version": "0.0.0",
-  "description": "Compute the argument of a complex number in radians.",
+  "description": "Compute the argument of a double-precision complex floating-point number in radians.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -14,6 +14,7 @@
     }
   ],
   "main": "./lib",
+  "gypfile": true,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",

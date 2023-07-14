@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Identity Function
+# cidentity
 
 > Evaluate the [identity function][identity-function] of a double-precision [complex][@stdlib/complex/float64] floating-point number.
 
@@ -132,18 +132,26 @@ for ( i = 0; i < 100; i++ ) {
 Evaluates the identity function for a double-precision complex floating-point number.
 
 ```c
-#include <complex.h>
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/real.h"
+#include "stdlib/complex/imag.h"
 
-double complex y = stdlib_base_cidentity( 2.0+2.0*I );
-// returns 2.0+2.0*I
+stdlib_complex128_t z = stdlib_complex128( 2.5, -1.5 );
+stdlib_complex128_t out = stdlib_base_cidentity( z );
+
+double re = stdlib_real( out );
+// returns 2.5
+
+double im = stdlib_imag( out );
+// returns -1.5
 ```
 
 The function accepts the following arguments:
 
--   **z**: `[in] double complex` input value.
+-   **z**: `[in] stdlib_complex128_t` input value.
 
 ```c
-double complex stdlib_base_cidentity( const double complex z );
+stdlib_complex128_t stdlib_base_cidentity( const stdlib_complex128_t z );
 ```
 
 </section>
@@ -166,19 +174,31 @@ double complex stdlib_base_cidentity( const double complex z );
 
 ```c
 #include "stdlib/math/base/special/cidentity.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
 #include <stdio.h>
-#include <complex.h>
 
-int main( void ) {
-    const double complex x[] = { 3.14+1.0*I, -3.14-1.0*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
+int main() {
+    const stdlib_complex128_t x[] = {
+        stdlib_complex128( 3.14, 1.5 ),
+        stdlib_complex128( -3.14, -1.5 ),
+        stdlib_complex128( 0.0, 0.0 ),
+        stdlib_complex128( 0.0/0.0, 0.0/0.0 )
+    };
 
-    double complex v;
-    double complex y;
+    stdlib_complex128_t v;
+    stdlib_complex128_t y;
+    double re1;
+    double im1;
+    double re2;
+    double im2;
     int i;
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
         y = stdlib_base_cidentity( v );
-        printf( "f(%lf + %lf) = %lf + %lf\n", creal( v ), cimag( v ), creal( y ), cimag( y ) );
+        stdlib_reim( v, &re1, &im1 );
+        stdlib_reim( y, &re2, &im2 );
+        printf( "cidentity(%lf + %lfi) = %lf + %lfi\n", re1, im1, re2, im2 );
     }
 }
 ```

@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import cphase = require( './index' );
 
 
@@ -23,31 +24,19 @@ import cphase = require( './index' );
 
 // The function returns a number...
 {
-	cphase( 5, 3 ); // $ExpectType number
+	cphase( new Complex128( 5.0, 3.0 ) ); // $ExpectType number
 }
 
-// The compiler throws an error if the function is provided a first argument which is not a number...
+// The compiler throws an error if the function is not provided a complex number...
 {
-	cphase( true, 3 ); // $ExpectError
-	cphase( false, 3 ); // $ExpectError
-	cphase( null, 3 ); // $ExpectError
-	cphase( undefined, 3 ); // $ExpectError
-	cphase( '5', 3 ); // $ExpectError
-	cphase( [], 3 ); // $ExpectError
-	cphase( {}, 3 ); // $ExpectError
-	cphase( ( x: number ): number => x, 3 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided a second argument which is not a number...
-{
-	cphase( 5, true ); // $ExpectError
-	cphase( 5, false ); // $ExpectError
-	cphase( 5, null ); // $ExpectError
-	cphase( 5, undefined ); // $ExpectError
-	cphase( 5, '5' ); // $ExpectError
-	cphase( 5, [] ); // $ExpectError
-	cphase( 5, {} ); // $ExpectError
-	cphase( 5, ( x: number ): number => x ); // $ExpectError
+	cphase( true ); // $ExpectError
+	cphase( false ); // $ExpectError
+	cphase( null ); // $ExpectError
+	cphase( undefined ); // $ExpectError
+	cphase( '5' ); // $ExpectError
+	cphase( [] ); // $ExpectError
+	cphase( {} ); // $ExpectError
+	cphase( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
