@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,8 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/cphase.h"
+#include "stdlib/math/base/napi/unary.h"
 
-var Complex128 = require( '@stdlib/complex/float64' );
-var uniform = require( '@stdlib/random/base/uniform' );
-var cphase = require( './../lib' );
-
-var z;
-var i;
-
-for ( i = 0; i < 100; i++ ) {
-	z = new Complex128( uniform( -500.0, 500.0 ), uniform( -500.0, 500.0 ) );
-	console.log( 'arg(%s) = %d', z.toString(), cphase( z ) );
-}
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_Z_D( stdlib_base_cphase )
