@@ -45,7 +45,7 @@ The namespace contains the following functions:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`levenshteinDistance( s1, s2 )`][@stdlib/string/base/distances/levenshtein]</span><span class="delimiter">: </span><span class="description">calculates the Levenshtein (edit) distance between two strings.</span>
+-   <span class="signature">[`levenshteinDistance( s1, s2 )`][@stdlib/string/base/distances/levenshtein]</span><span class="delimiter">: </span><span class="description">calculate the Levenshtein (edit) distance between two strings.</span>
 
 </div>
 
