@@ -97,6 +97,119 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/ops/cdiv.h"
+```
+
+#### stdlib_base_cdiv( z1, z2 )
+
+Divides two double-precision complex floating-point numbers.
+
+```c
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/real.h"
+#include "stdlib/complex/imag.h"
+
+stdlib_complex128_t z1 = stdlib_complex128( -13.0, -1.0 );
+stdlib_complex128_t z2 = stdlib_complex128( -2.0, 1.0 );
+
+stdlib_complex128_t out = stdlib_base_cdiv( z1, z2 );
+
+double re = stdlib_real( out );
+// returns 5.0
+
+double im = stdlib_imag( out );
+// returns 3.0
+```
+
+The function accepts the following arguments:
+
+-   **z1**: `[in] stdlib_complex128_t` input value.
+-   **z2**: `[in] stdlib_complex128_t` input value.
+
+```c
+stdlib_complex128_t stdlib_base_cdiv( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/ops/cdiv.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
+#include <stdio.h>
+
+int main() {
+    const stdlib_complex128_t x[] = {
+        stdlib_complex128( 3.14, 1.5 ),
+        stdlib_complex128( -3.14, 1.5 ),
+        stdlib_complex128( 0.0, -0.0 ),
+        stdlib_complex128( 0.0/0.0, 0.0/0.0 )
+    };
+
+    stdlib_complex128_t v;
+    stdlib_complex128_t y;
+    double re;
+    double im;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = x[ i ];
+        stdlib_reim( v, &re, &im );
+        printf( "z = %lf + %lfi\n", re, im );
+
+        y = stdlib_base_cdiv( v, v );
+        stdlib_reim( y, &re, &im );
+        printf( "cdiv(z, z) = %lf + %lfi\n", re, im );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 * * *
 
 <section class="references">
