@@ -71,7 +71,7 @@ var str = removeFirst( 'last man standing' );
 str = removeFirst( 'presidential election' );
 // returns 'residential election'
 
-str = removeFirst( 'javaScript' );
+str = removeFirst( 'JavaScript' );
 // returns 'avaScript'
 
 str = removeFirst( 'Hidden Treasures' );

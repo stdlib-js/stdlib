@@ -34,7 +34,7 @@
 * // returns 'residential election'
 *
 * @example
-* var out = removeFirst( 'javaScript' );
+* var out = removeFirst( 'JavaScript' );
 * // returns 'avaScript'
 *
 * @example

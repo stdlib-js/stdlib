@@ -43,7 +43,6 @@ import removeFirst = require( './index' );
 	removeFirst( 'abc', true ); // $ExpectError
 	removeFirst( 'abc', false ); // $ExpectError
 	removeFirst( 'abc', null ); // $ExpectError
-	removeFirst( 'abc', undefined ); // $ExpectError
 	removeFirst( 'abc', 'abc' ); // $ExpectError
 	removeFirst( 'abc', [] ); // $ExpectError
 	removeFirst( 'abc', {} ); // $ExpectError
