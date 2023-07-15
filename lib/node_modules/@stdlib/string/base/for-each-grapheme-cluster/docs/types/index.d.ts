@@ -37,7 +37,7 @@ type Unary = ( value: string ) => any;
 * Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
 *
 * @param value - grapheme cluster
-* @param index - string grapheme cluster index
+* @param index - starting grapheme cluster index
 * @returns result
 */
 type Binary = ( value: string, index: number ) => any;
@@ -46,7 +46,7 @@ type Binary = ( value: string, index: number ) => any;
 * Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
 *
 * @param value - grapheme cluster
-* @param index - string grapheme cluster index
+* @param index - starting grapheme cluster index
 * @param str - input string
 * @returns result
 */
