@@ -19,6 +19,24 @@
 // TypeScript Version: 2.0
 
 /**
+* Interface describing function options.
+*/
+interface Options {
+	/**
+	* Specifies the type of characters over which to iterate (default: 'grapheme').
+	*
+	* ## Notes
+	*
+	* -   The following option values are supported:
+	*
+	*     -   `'grapheme'`: grapheme clusters. Appropriate for strings containing visual characters which can span multiple Unicode code points (e.g., emoji).
+	*     -   `'code_point'`: Unicode code points. Appropriate for strings containing visual characters which are comprised of more than one Unicode code units.
+	*     -   `'code_unit'`: UTF-16 code units. Appropriate for strings containing visual characters drawn from the basic multilingual plane (BMP) (e.g., common characters, such as those from the Latin, Greek, and Cyrillic alphabets).
+	*/
+	mode?: 'grapheme' | 'code_point' | 'code_unit';
+}
+
+/**
 * Callback invoked for each character in a string.
 *
 * @returns result
@@ -86,6 +104,35 @@ type Callback = Nullary | Unary | Binary | Ternary;
 * forEach( 'Hello, World!', log );
 */
 declare function forEach( str: string, clbk: Callback, thisArg?: any ): string;
+
+/**
+* Invokes a function for each character in a string.
+*
+* ## Notes
+*
+* -   When invoked, the provided function is provided three arguments:
+*
+*     -   **value**: character.
+*     -   **index**: starting character index.
+*     -   **str**: input string.
+*
+* @param str - input string
+* @param options - options
+* @param clbk - function to invoke
+* @param thisArg - execution context
+* @returns input string
+*
+* @example
+* function log( value, index ) {
+*     console.log( '%d: %s', index, value );
+* }
+*
+* var opts = {
+*     'mode': 'code_point'
+* };
+* forEach( 'Hello, World!', opts, log );
+*/
+declare function forEach( str: string, options: Options, clbk: Callback, thisArg?: any ): string;
 
 
 // EXPORTS //

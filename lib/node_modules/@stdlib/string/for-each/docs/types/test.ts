@@ -35,6 +35,9 @@ function clbk( v: string ): string {
 {
 	forEach( 'presidential election', clbk ); // $ExpectType string
 	forEach( 'Iñtërnâtiônàlizætiøn', clbk, {} ); // $ExpectType string
+
+	forEach( 'presidential election', {}, clbk ); // $ExpectType string
+	forEach( 'Iñtërnâtiônàlizætiøn', {}, clbk, {} ); // $ExpectType string
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...
@@ -54,9 +57,63 @@ function clbk( v: string ): string {
 	forEach( [], clbk, {} ); // $ExpectError
 	forEach( {}, clbk, {} ); // $ExpectError
 	forEach( ( x: number ): number => x, clbk, {} ); // $ExpectError
+
+	forEach( 1, {}, clbk ); // $ExpectError
+	forEach( false, {}, clbk ); // $ExpectError
+	forEach( true, {}, clbk ); // $ExpectError
+	forEach( null, {}, clbk ); // $ExpectError
+	forEach( [], {}, clbk ); // $ExpectError
+	forEach( {}, {}, clbk ); // $ExpectError
+	forEach( ( x: number ): number => x, {}, clbk ); // $ExpectError
+
+	forEach( 1, {}, clbk, {} ); // $ExpectError
+	forEach( false, {}, clbk, {} ); // $ExpectError
+	forEach( true, {}, clbk, {} ); // $ExpectError
+	forEach( null, {}, clbk, {} ); // $ExpectError
+	forEach( [], {}, clbk, {} ); // $ExpectError
+	forEach( {}, {}, clbk, {} ); // $ExpectError
+	forEach( ( x: number ): number => x, {}, clbk, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a function having a supported signature...
+// The compiler throws an error if the function is provided an options argument which is not a valid object...
+{
+	forEach( 'presidential election', '', clbk ); // $ExpectError
+	forEach( 'presidential election', 1, clbk ); // $ExpectError
+	forEach( 'presidential election', false, clbk ); // $ExpectError
+	forEach( 'presidential election', true, clbk ); // $ExpectError
+	forEach( 'presidential election', null, clbk ); // $ExpectError
+	forEach( 'presidential election', [], clbk ); // $ExpectError
+	forEach( 'presidential election', ( x: number ): number => x, clbk ); // $ExpectError
+
+	forEach( 'presidential election', '', clbk, {} ); // $ExpectError
+	forEach( 'presidential election', 1, clbk, {} ); // $ExpectError
+	forEach( 'presidential election', false, clbk, {} ); // $ExpectError
+	forEach( 'presidential election', true, clbk, {} ); // $ExpectError
+	forEach( 'presidential election', null, clbk, {} ); // $ExpectError
+	forEach( 'presidential election', [], clbk, {} ); // $ExpectError
+	forEach( 'presidential election', ( x: number ): number => x, clbk, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an invalid `mode` option...
+{
+	forEach( 'presidential election', { 'mode': '' }, clbk ); // $ExpectError
+	forEach( 'presidential election', { 'mode': 1 }, clbk ); // $ExpectError
+	forEach( 'presidential election', { 'mode': false }, clbk ); // $ExpectError
+	forEach( 'presidential election', { 'mode': true }, clbk ); // $ExpectError
+	forEach( 'presidential election', { 'mode': null }, clbk ); // $ExpectError
+	forEach( 'presidential election', { 'mode': [] }, clbk ); // $ExpectError
+	forEach( 'presidential election', { 'mode': ( x: number ): number => x }, clbk ); // $ExpectError
+
+	forEach( 'presidential election', { 'mode': '' }, clbk, {} ); // $ExpectError
+	forEach( 'presidential election', { 'mode': 1 }, clbk, {} ); // $ExpectError
+	forEach( 'presidential election', { 'mode': false }, clbk, {} ); // $ExpectError
+	forEach( 'presidential election', { 'mode': true }, clbk, {} ); // $ExpectError
+	forEach( 'presidential election', { 'mode': null }, clbk, {} ); // $ExpectError
+	forEach( 'presidential election', { 'mode': [] }, clbk, {} ); // $ExpectError
+	forEach( 'presidential election', { 'mode': ( x: number ): number => x }, clbk, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a callback argument which is not a function having a supported signature...
 {
 	forEach( 'presidential election', 'abc' ); // $ExpectError
 	forEach( 'presidential election', 2 ); // $ExpectError
@@ -76,11 +133,32 @@ function clbk( v: string ): string {
 
 	forEach( 'presidential election', ( x: number ): number => x ); // $ExpectError
 	forEach( 'presidential election', ( x: number ): number => x, {} ); // $ExpectError
+
+	forEach( 'presidential election', {}, 'abc' ); // $ExpectError
+	forEach( 'presidential election', {}, 2 ); // $ExpectError
+	forEach( 'presidential election', {}, true ); // $ExpectError
+	forEach( 'presidential election', {}, false ); // $ExpectError
+	forEach( 'presidential election', {}, null ); // $ExpectError
+	forEach( 'presidential election', {}, {} ); // $ExpectError
+	forEach( 'presidential election', {}, [] ); // $ExpectError
+
+	forEach( 'presidential election', {}, 'abc', {} ); // $ExpectError
+	forEach( 'presidential election', {}, 2, {} ); // $ExpectError
+	forEach( 'presidential election', {}, true, {} ); // $ExpectError
+	forEach( 'presidential election', {}, false, {} ); // $ExpectError
+	forEach( 'presidential election', {}, null, {} ); // $ExpectError
+	forEach( 'presidential election', {}, {}, {} ); // $ExpectError
+	forEach( 'presidential election', {}, [], {} ); // $ExpectError
+
+	forEach( 'presidential election', {}, ( x: number ): number => x ); // $ExpectError
+	forEach( 'presidential election', {}, ( x: number ): number => x, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	forEach(); // $ExpectError
 	forEach( 'presidential election' ); // $ExpectError
+	forEach( 'presidential election', {} ); // $ExpectError
 	forEach( 'presidential election', clbk, {}, 3 ); // $ExpectError
+	forEach( 'presidential election', {}, clbk, {}, 3 ); // $ExpectError
 }

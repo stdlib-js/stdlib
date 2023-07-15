@@ -40,7 +40,7 @@ limitations under the License.
 var forEach = require( '@stdlib/string/for-each' );
 ```
 
-#### forEach( str, clbk\[, thisArg ] )
+#### forEach( str, \[options,] clbk\[, thisArg ] )
 
 Invokes a function for each character in a string.
 
@@ -84,6 +84,16 @@ var bool = ( str.length === ctx.count );
 // returns true
 ```
 
+The function supports the following options:
+
+-   **mode**: type of characters over which to iterate. Must be one of the following:
+
+    -   `'grapheme'`: grapheme clusters. Appropriate for strings containing visual characters which can span multiple Unicode code points (e.g., emoji).
+    -   `'code_point'`: Unicode code points. Appropriate for strings containing visual characters which are comprised of more than one Unicode code units.
+    -   `'code_unit'`: UTF-16 code units. Appropriate for strings containing visual characters drawn from the basic multilingual plane (BMP) (e.g., common characters, such as those from the Latin, Greek, and Cyrillic alphabets).
+    
+    Default: `'grapheme'`.
+
 </section>
 
 <!-- /.usage -->
@@ -91,6 +101,10 @@ var bool = ( str.length === ctx.count );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   By default, the function assumes the general case in which an input string may contain an arbitrary number of grapheme clusters. This assumption comes with a performance cost. Accordingly, if an input string is known to only contain visual characters of a particular type (e.g., only alphanumeric), one can achieve better performance by specifying the appropriate `mode` option.
 
 </section>
 
