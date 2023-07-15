@@ -635,6 +635,9 @@ base.fallingFactorial
 base.fibonacci
 base.fibonacciIndex
 base.fibpoly
+base.firstCodePoint
+base.firstCodeUnit
+base.firstGraphemeCluster
 base.flipsign
 base.flipsignf
 base.float32ToInt32
@@ -1436,6 +1439,7 @@ filledarray
 filledarrayBy
 filterArguments
 find
+firstChar
 FIVETHIRTYEIGHT_FFQ
 flattenArray
 flattenObject
