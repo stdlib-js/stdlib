@@ -18,38 +18,68 @@
 
 import forEach = require( './index' );
 
-/* tslint:disable:no-empty */
-function noop() {}
+/**
+* Callback function.
+*
+* @param v - argument
+* @returns result
+*/
+function clbk( v: string ): string {
+	return v;
+}
 
 // TESTS //
 
 // The function returns a string...
 {
-	forEach( 'presidential election', noop ); // $ExpectType string
-	forEach( 'Iñtërnâtiônàlizætiøn', noop, {} ); // $ExpectType string
+	forEach( 'presidential election', clbk ); // $ExpectType string
+	forEach( 'Iñtërnâtiônàlizætiøn', clbk, {} ); // $ExpectType string
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...
 {
-	forEach( [], noop ); // $ExpectError
-	forEach( false, noop ); // $ExpectError
-	forEach( true, noop ); // $ExpectError
-	forEach( {}, noop ); // $ExpectError
+	forEach( 1, clbk ); // $ExpectError
+	forEach( false, clbk ); // $ExpectError
+	forEach( true, clbk ); // $ExpectError
+	forEach( null, clbk ); // $ExpectError
+	forEach( [], clbk ); // $ExpectError
+	forEach( {}, clbk ); // $ExpectError
+	forEach( ( x: number ): number => x, clbk ); // $ExpectError
+
+	forEach( 1, clbk, {} ); // $ExpectError
+	forEach( false, clbk, {} ); // $ExpectError
+	forEach( true, clbk, {} ); // $ExpectError
+	forEach( null, clbk, {} ); // $ExpectError
+	forEach( [], clbk, {} ); // $ExpectError
+	forEach( {}, clbk, {} ); // $ExpectError
+	forEach( ( x: number ): number => x, clbk, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the second argument is not a function...
+// The compiler throws an error if the function is provided a second argument which is not a function having a supported signature...
 {
-	forEach( 'presidential election', 2 ); // $ExpectError
-	forEach( 'presidential election', false ); // $ExpectError
 	forEach( 'presidential election', 'abc' ); // $ExpectError
+	forEach( 'presidential election', 2 ); // $ExpectError
+	forEach( 'presidential election', true ); // $ExpectError
+	forEach( 'presidential election', false ); // $ExpectError
+	forEach( 'presidential election', null ); // $ExpectError
 	forEach( 'presidential election', {} ); // $ExpectError
 	forEach( 'presidential election', [] ); // $ExpectError
-	forEach( 'presidential election', null ); // $ExpectError
+
+	forEach( 'presidential election', 'abc', {} ); // $ExpectError
+	forEach( 'presidential election', 2, {} ); // $ExpectError
+	forEach( 'presidential election', true, {} ); // $ExpectError
+	forEach( 'presidential election', false, {} ); // $ExpectError
+	forEach( 'presidential election', null, {} ); // $ExpectError
+	forEach( 'presidential election', {}, {} ); // $ExpectError
+	forEach( 'presidential election', [], {} ); // $ExpectError
+
+	forEach( 'presidential election', ( x: number ): number => x ); // $ExpectError
+	forEach( 'presidential election', ( x: number ): number => x, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	forEach(); // $ExpectError
 	forEach( 'presidential election' ); // $ExpectError
-	forEach( 'presidential election', noop, {}, 3 ); // $ExpectError
+	forEach( 'presidential election', clbk, {}, 3 ); // $ExpectError
 }

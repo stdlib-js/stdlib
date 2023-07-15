@@ -18,19 +18,60 @@
 
 // TypeScript Version: 2.0
 
-/* tslint:disable:max-line-length */
-/* tslint:disable:max-file-line-count */
+/**
+* Callback invoked for each character in a string.
+*
+* @returns result
+*/
+type Nullary = () => any;
 
 /**
-* Invokes a callback once for each (visual) character of a string.
+* Callback invoked for each character in a string.
+*
+* @param value - character
+* @returns result
+*/
+type Unary = ( value: string ) => any;
+
+/**
+* Callback invoked for each character in a string.
+*
+* @param value - character
+* @param index - string character index
+* @returns result
+*/
+type Binary = ( value: string, index: number ) => any;
+
+/**
+* Callback invoked for each character in a string.
+*
+* @param value - character
+* @param index - string character index
+* @param str - input string
+* @returns result
+*/
+type Ternary = ( value: string, index: number, str: string ) => any;
+
+/**
+* Callback invoked for each character in a string.
+*
+* @param value - character
+* @param index - starting character index
+* @param str - input string
+* @returns result
+*/
+type Callback = Nullary | Unary | Binary | Ternary;
+
+/**
+* Invokes a function for each character in a string.
 *
 * ## Notes
 *
-* -   When invoked, the input function is provided three arguments:
+* -   When invoked, the provided function is provided three arguments:
 *
-*     -   `value`: visual character
-*     -   `index`: starting character index
-*     -   `inpStr`: input string
+*     -   **value**: character.
+*     -   **index**: starting character index.
+*     -   **str**: input string.
 *
 * @param str - input string
 * @param clbk - function to invoke
@@ -38,15 +79,13 @@
 * @returns input string
 *
 * @example
-* function log( value, index, inpStr ) {
-*     console.log( '%s: %d', index, value );
+* function log( value, index ) {
+*     console.log( '%d: %s', index, value );
 * }
 *
-* var testStr = 'presidential election';
-*
-* forEach( testStr, log );
+* forEach( 'Hello, World!', log );
 */
-declare function forEach( str: string, clbk: Function, thisArg?: any ): string;
+declare function forEach( str: string, clbk: Callback, thisArg?: any ): string;
 
 
 // EXPORTS //
