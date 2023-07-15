@@ -37,7 +37,7 @@ type Unary = ( value: string ) => any;
 * Callback invoked for each character in a string.
 *
 * @param value - character
-* @param index - string character index
+* @param index - starting character index
 * @returns result
 */
 type Binary = ( value: string, index: number ) => any;
@@ -46,7 +46,7 @@ type Binary = ( value: string, index: number ) => any;
 * Callback invoked for each character in a string.
 *
 * @param value - character
-* @param index - string character index
+* @param index - starting character index
 * @param str - input string
 * @returns result
 */
