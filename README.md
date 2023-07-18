@@ -67,6 +67,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 ### External Resources
 
+-   [**Open Collective**][open-collective-stdlib]
 -   [**Twitter**][stdlib-twitter]
 -   [**Gitter**][stdlib-gitter]
 
@@ -580,6 +581,8 @@ stdlib development is generously supported by the following sponsors...
     <br>
 </div>
 
+Are you interested in supporting stdlib? If so, join our [Open Collective][open-collective-stdlib]!
+
 </section>
 
 <!-- /.sponsors -->
@@ -796,6 +799,8 @@ Test and build infrastructure is generously provided by the following services:
 [stdlib-bundles]: https://github.com/stdlib-js/stdlib/tree/develop/dist
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
+
+[open-collective-stdlib]: https://opencollective.com/stdlib
 
 [stdlib-twitter]: https://twitter.com/stdlibjs
 
