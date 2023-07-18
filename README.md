@@ -575,9 +575,11 @@ Already an expert?
 stdlib development is generously supported by the following sponsors...
 
 <div class="image" align="center">
+    <br>
     <a href="https://labs.quansight.org/">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
     </a>
+    <br>
     <br>
 </div>
 
@@ -598,9 +600,11 @@ Are you interested in supporting stdlib? If so, join our [Open Collective][open-
 The following organizations and key stakeholders trust and depend on stdlib...
 
 <div class="image" align="center">
+    <br>
     <a href="https://www.cmu.edu/">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1c8c7dbc9d081eeb13e16c62764f27a65c6553f8/docs/assets/misc/cmu_logo.png" alt="Carnegie Mellon University">
     </a>
+    <br>
     <br>
 </div>
 
