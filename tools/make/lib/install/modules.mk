@@ -16,24 +16,7 @@
 # limitations under the License.
 #/
 
-# VARIABLES #
-
-# Define a path to a utility for printing the list of node module dependencies to install:
-print_npm_install_deps := $(TOOLS_PKGS_DIR)/scripts/print_npm_install_deps
-
-# Define the file path for storing the list of node module dependencies to install:
-npm_install_deps_file := $(CONFIG_DIR)/npm/deps.txt
-
-
 # RULES #
-
-#/
-# Generates a file containing a list of node module dependencies to install.
-#
-# @private
-#/
-$(npm_install_deps_file): $(ROOT_PACKAGE_JSON) $(print_npm_install_deps)
-	$(QUIET) $(NODE) $(print_npm_install_deps) > $(npm_install_deps_file)
 
 #/
 # Installs node module dependencies.
@@ -45,10 +28,8 @@ $(npm_install_deps_file): $(ROOT_PACKAGE_JSON) $(print_npm_install_deps)
 # @example
 # make install-node-modules
 #/
-install-node-modules: $(npm_install_deps_file)
-	$(QUIET) $(MV) "$(ROOT_PACKAGE_JSON)" "$(ROOT_PACKAGE_JSON).copy"
-	$(QUIET) echo '{"name":"@stdlib/stdlib","version":"0.0.0"}' > "$(ROOT_PACKAGE_JSON)"
-	$(QUIET) { $(CAT) $(npm_install_deps_file) | xargs $(NPM) install --no-save && $(MV) -f "$(ROOT_PACKAGE_JSON).copy" "$(ROOT_PACKAGE_JSON)"; } || { $(MV) -f "$(ROOT_PACKAGE_JSON).copy" "$(ROOT_PACKAGE_JSON)" && exit 1; }
+install-node-modules: $(ROOT_PACKAGE_JSON)
+	$(QUIET) $(NPM) install --no-save
 
 .PHONY: install-node-modules
 
