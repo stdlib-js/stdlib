@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/string/base/first",
   "version": "0.0.0",
-  "description": "Return the first UTF-16 code units of a string.",
+  "description": "Return the first UTF-16 code unit of a string.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
