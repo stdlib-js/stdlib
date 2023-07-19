@@ -40,32 +40,32 @@ function noop() {
 
 // The function does not return a value...
 {
-	whilst( noop, predicate ); // $ExpectType void
-	whilst( noop, predicate, {} ); // $ExpectType void
+	whilst( predicate, noop ); // $ExpectType void
+	whilst( predicate, noop, {} ); // $ExpectType void
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a function...
 {
-	whilst( 'abc', predicate ); // $ExpectError
-	whilst( 5, predicate ); // $ExpectError
-	whilst( true, predicate ); // $ExpectError
-	whilst( false, predicate ); // $ExpectError
-	whilst( [], predicate ); // $ExpectError
-	whilst( {}, predicate ); // $ExpectError
+	whilst( 'abc', noop ); // $ExpectError
+	whilst( 5, noop ); // $ExpectError
+	whilst( true, noop ); // $ExpectError
+	whilst( false, noop ); // $ExpectError
+	whilst( [], noop ); // $ExpectError
+	whilst( {}, noop ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a function...
 {
-	whilst( noop, 'abc' ); // $ExpectError
-	whilst( noop, 5 ); // $ExpectError
-	whilst( noop, true ); // $ExpectError
-	whilst( noop, false ); // $ExpectError
-	whilst( noop, [] ); // $ExpectError
-	whilst( noop, {} ); // $ExpectError
+	whilst( predicate, 'abc' ); // $ExpectError
+	whilst( predicate, 5 ); // $ExpectError
+	whilst( predicate, true ); // $ExpectError
+	whilst( predicate, false ); // $ExpectError
+	whilst( predicate, [] ); // $ExpectError
+	whilst( predicate, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided fewer than two arguments...
 {
 	whilst(); // $ExpectError
-	whilst( noop ); // $ExpectError
+	whilst( predicate ); // $ExpectError
 }
