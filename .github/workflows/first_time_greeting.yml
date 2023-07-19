@@ -43,10 +43,10 @@ jobs:
         with:
           repo-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           issue-message: |
-            :tada: Welcome! :tada:
+            :wave: Hi there! :wave:
 
             And thank you for opening your first issue! We will get back to you shortly. :runner: :dash:
           pr-message: |
-            :tada: Welcome! :tada:
+            :wave: Hi there! :wave:
 
             And thank you for opening your first pull request! We will review it shortly. :runner: :dash:
