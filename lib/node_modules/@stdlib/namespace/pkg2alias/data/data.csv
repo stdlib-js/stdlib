@@ -1573,6 +1573,7 @@
 "@stdlib/assert/has-weakmap-support",hasWeakMapSupport
 "@stdlib/assert/has-weakset-support",hasWeakSetSupport
 "@stdlib/assert/has-wasm-support",hasWebAssemblySupport
+"@stdlib/string/headercase",headercase
 "@stdlib/datasets/herndon-venus-semidiameters",HERNDON_VENUS_SEMIDIAMETERS
 "@stdlib/os/homedir",homedir
 "@stdlib/constants/time/hours-in-day",HOURS_IN_DAY

@@ -1573,6 +1573,7 @@ hasUTF16SurrogatePairAt
 hasWeakMapSupport
 hasWeakSetSupport
 hasWebAssemblySupport
+headercase
 HERNDON_VENUS_SEMIDIAMETERS
 homedir
 HOURS_IN_DAY
