@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Checks whether an iterated property passes a test.
@@ -31,7 +31,7 @@ type Nullary = () => boolean;
 * @param key - iteration key
 * @returns boolean indicating whether an iterated property passes a test
 */
-type Unary = ( key: any ) => boolean;
+type Unary<T = unknown> = ( key: T ) => boolean;
 
 /**
 * Checks whether an iterated property passes a test.
@@ -40,7 +40,7 @@ type Unary = ( key: any ) => boolean;
 * @param value - property value
 * @returns boolean indicating whether an iterated property passes a test
 */
-type Binary = ( key: any, value: any ) => boolean;
+type Binary<T = unknown, U = unknown> = ( key: T, value: U ) => boolean;
 
 /**
 * Checks whether an iterated value passes a test.
@@ -49,7 +49,7 @@ type Binary = ( key: any, value: any ) => boolean;
 * @param value - property value
 * @returns boolean indicating whether an iterated property passes a test
 */
-type Predicate = Nullary | Unary | Binary;
+type Predicate<T = unknown, U = unknown> = Nullary | Unary<T> | Binary<T, U>;
 
 /**
 * Returns a partial object copy containing properties for which a predicate returns a truthy value.
@@ -71,7 +71,7 @@ type Predicate = Nullary | Unary | Binary;
 * var obj2 = pickBy( obj1, predicate );
 * // returns { 'b': 2 }
 */
-declare function pickBy( obj: any, predicate: Predicate ): Object;
+declare function pickBy<T extends object, K extends keyof T>( obj: T, predicate: Predicate<K, T[K]> ): Partial<T>; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
