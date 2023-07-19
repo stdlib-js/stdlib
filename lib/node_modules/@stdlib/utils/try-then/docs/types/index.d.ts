@@ -72,7 +72,7 @@ type ErrorHandler<T> = Nullary<T> | Unary<T>;
 * var z = trythen( x, y );
 * // returns <number>
 */
-declare function trythen<T>( x: () => T, y: ErrorHandler<T> ): T;
+declare function trythen<T, U>( x: () => T, y: ErrorHandler<U> ): T | U;
 
 
 // EXPORTS //
