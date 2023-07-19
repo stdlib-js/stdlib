@@ -16,11 +16,34 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
 import { Collection } from '@stdlib/types/object';
+
+/**
+* Function invoked for each collection element returning a key.
+*
+* @param value - collection value
+*/
+type Unary<T, V> = ( this: T, value: V ) => string;
+
+/**
+* Function invoked for each collection element returning a key.
+*
+* @param value - collection value
+* @param index - collection index
+*/
+type Binary<T, V> = ( this: T, value: V, index: number ) => string;
+
+/**
+* Function invoked for each collection element returning a key.
+*
+* @param value - collection value
+* @param index - collection index
+*/
+type Callback<T, V> = Unary<T, V> | Binary<T, V>;
 
 /**
 * Converts a collection to an object whose keys are determined by a provided function and whose values are the collection values.
@@ -55,7 +78,7 @@ import { Collection } from '@stdlib/types/object';
 * var obj = keyBy( collection, toKey );
 * // returns { 'beep': { 'name': 'beep', 'a': 1 }, 'boop': { 'name': 'boop', 'b': 2 } }
 */
-declare function keyBy( collection: Collection, fcn: Function, thisArg?: any ): any; // tslint-disable-line max-line-length
+declare function keyBy<T, V>( collection: Collection<V>, fcn: Callback<T, V>, thisArg?: ThisParameterType<Callback<T, V>> ): Record<string, V>; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
