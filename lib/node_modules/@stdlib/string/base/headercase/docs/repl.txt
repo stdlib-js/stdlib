@@ -1,6 +1,6 @@
 
 {{alias}}( str )
-    Converts a string to Header case.
+    Converts a string to HTTP header case.
 
     Parameters
     ----------
@@ -10,7 +10,7 @@
     Returns
     -------
     out: string
-        Header-cased string.
+        HTTP header-cased string.
 
     Examples
     --------

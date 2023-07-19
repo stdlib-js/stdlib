@@ -20,7 +20,7 @@ limitations under the License.
 
 # headercase
 
-> Convert a string to Header case.
+> Convert a string to HTTP header case.
 
 <!-- Package usage documentation. -->
 
@@ -34,7 +34,7 @@ var headercase = require( '@stdlib/string/base/headercase' );
 
 #### headercase( str )
 
-Converts a string to Header case.
+Converts a string to HTTP header case.
 
 ```javascript
 var out = headercase( 'foo bar' );

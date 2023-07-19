@@ -19,10 +19,10 @@
 // TypeScript Version: 2.0
 
 /**
-* Converts a string to Header case.
+* Converts a string to HTTP header case.
 *
 * @param str - string to convert
-* @returns Header-cased string
+* @returns HTTP header-cased string
 *
 * @example
 * var str = headercase( 'Hello World!' );
