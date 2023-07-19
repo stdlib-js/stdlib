@@ -1,0 +1,163 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: markdown_equations
+
+# Workflow triggers:
+on:
+  pull_request_target:
+    branches:
+      - develop
+    types:
+      - closed
+    paths:
+      # List paths for which changes should trigger this workflow:
+      - 'lib/**/*.md'
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for updating equations in Markdown files...
+  update:
+
+    # Define a display name:
+    name: 'Update equations'
+
+    # Only run this job if the pull request was merged and did not have label `automated-pr`:
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'automated-pr') == false
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent 100 commits:
+          fetch-depth: 100
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Initialize development environment:
+      - name: 'Initialize development environment'
+        run: |
+          make init
+        timeout-minutes: 5
+
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+        timeout-minutes: 5
+
+      # Generate list of changed Markdown files:
+      - name: 'Find changed Markdown files'
+        run: |
+          echo "files=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -G '<equation' | grep .md | tr '\n' ' ')" >> $GITHUB_OUTPUT
+        id: changed
+
+      # Generate SVG equations:
+      - name: 'Generate SVG equations'
+        id: svg-equations
+        run: |
+          make markdown-svg-equations-files FILES="${{ steps.changed.outputs.files }}"
+
+          if [[ -z "$(git status --porcelain)" ]]; then
+            # If no files were changed, exit with a success status code:
+            echo "changed=false" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            # Otherwise, add changed files to the staging area and commit:
+            git add -A && git commit -m "Add SVG equations"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+        timeout-minutes: 15
+
+      # Update Markdown equation elements:
+      - name: 'Update equation elements'
+        id: equation-elements
+        run: |
+          make markdown-img-equations-files FILES="${{ steps.changed.outputs.files }}"
+          make markdown-img-equations-src-urls-files FILES="${{ steps.changed.outputs.files }}"
+
+          if [[ -z "$(git status --porcelain)" ]]; then
+            # If no files were changed, exit with a success status code:
+            echo "changed=false" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            # Otherwise, add changed files to the staging area and commit:
+            git add -A && git commit -m "Update Markdown equation elements"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+        timeout-minutes: 15
+
+      # Create a pull request with the updated equations:
+      - name: 'Create pull request'
+        id: cpr
+        if: steps.svg-equations.outputs.changed == 'true' || steps.equation-elements.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: 'Update Markdown equation elements'
+          body: |
+            This PR
+
+            -   updates equation elements found in Markdown files
+
+          commit-message: 'docs: update Markdown equation elements'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          labels: |
+            documentation
+            automated-pr
+          team-reviewers: |
+            stdlib-reviewers
+          branch: markdown-insert-equations
+          delete-branch: true
+
+      # Create Markdown summary of the pull request:
+      - name: 'Create summary'
+        if: steps.svg-equations.outputs.changed == 'true' || steps.equation-elements.outputs.changed == 'true'
+        run: |
+          echo "# :tada: Pull Request created! :tada:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Pull request ${{ steps.cpr.outputs.pull-request-number }} was successfully ${{ steps.cpr.outputs.pull-request-operation }}."
+          echo ":link: [${{ steps.cpr.outputs.pull-request-url }}](${{ steps.cpr.outputs.pull-request-url }})." >> $GITHUB_STEP_SUMMARY
+          echo "Head SHA: [${{ steps.cpr.outputs.pull-request-head-sha }}](${{ steps.cpr.outputs.pull-request-url }}/commits/${{ steps.cpr.outputs.pull-request-head-sha }})." >> $GITHUB_STEP_SUMMARY

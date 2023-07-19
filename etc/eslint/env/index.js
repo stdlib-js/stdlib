@@ -32,7 +32,7 @@ var env = {};
 * @memberof env
 * @type {boolean}
 * @default true
-* @see [browser]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [browser]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'browser' ] = true;
 
@@ -43,7 +43,7 @@ env[ 'browser' ] = true;
 * @memberof env
 * @type {boolean}
 * @default true
-* @see [node]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [node]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'node' ] = true;
 
@@ -54,7 +54,7 @@ env[ 'node' ] = true;
 * @memberof env
 * @type {boolean}
 * @default true
-* @see [commonjs]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [commonjs]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'commonjs' ] = true;
 
@@ -65,7 +65,7 @@ env[ 'commonjs' ] = true;
 * @memberof env
 * @type {boolean}
 * @default true
-* @see [shared-node-browser]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [shared-node-browser]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'shared-node-browser' ] = true;
 
@@ -76,7 +76,7 @@ env[ 'shared-node-browser' ] = true;
 * @memberof env
 * @type {boolean}
 * @default true
-* @see [es6]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [es6]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'es6' ] = true;
 
@@ -87,7 +87,7 @@ env[ 'es6' ] = true;
 * @memberof env
 * @type {boolean}
 * @default true
-* @see [worker]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [worker]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'worker' ] = true;
 
@@ -98,7 +98,7 @@ env[ 'worker' ] = true;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [amd]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [amd]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'amd' ] = false;
 
@@ -109,7 +109,7 @@ env[ 'amd' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [mocha]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [mocha]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'mocha' ] = false;
 
@@ -120,7 +120,7 @@ env[ 'mocha' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [jasmine]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [jasmine]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'jasmine' ] = false;
 
@@ -131,7 +131,7 @@ env[ 'jasmine' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [jest]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [jest]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'jest' ] = false;
 
@@ -142,7 +142,7 @@ env[ 'jest' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [phantomjs]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [phantomjs]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'phantomjs' ] = false;
 
@@ -153,7 +153,7 @@ env[ 'phantomjs' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [protractor]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [protractor]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'protractor' ] = false;
 
@@ -164,7 +164,7 @@ env[ 'protractor' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [qunit]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [qunit]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'qunit' ] = false;
 
@@ -175,7 +175,7 @@ env[ 'qunit' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [jquery]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [jquery]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'jquery' ] = false;
 
@@ -186,7 +186,7 @@ env[ 'jquery' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [prototypejs]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [prototypejs]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'prototypejs' ] = false;
 
@@ -197,7 +197,7 @@ env[ 'prototypejs' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [shelljs]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [shelljs]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'shelljs' ] = false;
 
@@ -208,7 +208,7 @@ env[ 'shelljs' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [meteor]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [meteor]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'meteor' ] = false;
 
@@ -219,7 +219,7 @@ env[ 'meteor' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [mongo]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [mongo]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'mongo' ] = false;
 
@@ -230,7 +230,7 @@ env[ 'mongo' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [applescript]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [applescript]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'applescript' ] = false;
 
@@ -241,7 +241,7 @@ env[ 'applescript' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [nashorn]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [nashorn]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'nashorn' ] = false;
 
@@ -252,7 +252,7 @@ env[ 'nashorn' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [serviceworker]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [serviceworker]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'serviceworker' ] = false;
 
@@ -263,7 +263,7 @@ env[ 'serviceworker' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [atomtest]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [atomtest]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'atomtest' ] = false;
 
@@ -274,7 +274,7 @@ env[ 'atomtest' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [embertest]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [embertest]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'embertest' ] = false;
 
@@ -285,7 +285,7 @@ env[ 'embertest' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [webextensions]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [webextensions]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'webextensions' ] = false;
 
@@ -296,7 +296,7 @@ env[ 'webextensions' ] = false;
 * @memberof env
 * @type {boolean}
 * @default false
-* @see [greasemonkey]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
+* @see [greasemonkey]{@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
 env[ 'greasemonkey' ] = false;
 

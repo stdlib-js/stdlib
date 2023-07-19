@@ -1,0 +1,798 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: productionize
+
+# Workflow triggers:
+on:
+  # Run workflow when a new commit is pushed to the main branch:
+  push:
+    branches:
+      - main
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    inputs:
+      require-passing-tests:
+        description: 'Require passing tests for creating bundles'
+        type: boolean
+        default: true
+
+  # Run workflow upon completion of `publish` workflow run:
+  workflow_run:
+    workflows: ["publish"]
+    types: [completed]
+
+
+# Concurrency group to prevent multiple concurrent executions:
+concurrency:
+  group: productionize
+  cancel-in-progress: true
+
+# Workflow jobs:
+jobs:
+
+  # Define a job to create a production build...
+  productionize:
+
+    # Define display name:
+    name: 'Productionize'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout main branch of repository:
+      - name: 'Checkout main branch'
+        uses: actions/checkout@v3
+        with:
+          ref: main
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+        timeout-minutes: 5
+
+      # Create production branch:
+      - name: 'Create production branch'
+        run: |
+          git checkout -b production
+
+      # Transform error messages:
+      - name: 'Transform error messages'
+        id: transform-error-messages
+        uses: stdlib-js/transform-errors-action@main
+
+      # Format error messages:
+      - name: 'Replace double quotes with single quotes in rewritten format string error messages'
+        run: |
+          find . -name "*.js" -exec sed -E -i "s/Error\( format\( \"([a-zA-Z0-9]+)\"/Error\( format\( '\1'/g" {} \;
+
+      # Format string literal error messages:
+      - name: 'Replace double quotes with single quotes in rewritten string literal error messages'
+        run: |
+          find . -name "*.js" -exec sed -E -i "s/Error\( format\(\"([a-zA-Z0-9]+)\"\)/Error\( format\( '\1' \)/g" {} \;
+
+      # Format code:
+      - name: 'Replace double quotes with single quotes in inserted `require` calls'
+        run: |
+          find . -name "*.js" -exec sed -E -i "s/require\( ?\"@stdlib\/error-tools-fmtprodmsg\" ?\);/require\( '@stdlib\/error-tools-fmtprodmsg' \);/g" {} \;
+
+      # Change `@stdlib/string-format` to `@stdlib/error-tools-fmtprodmsg` in package.json if the former is a dependency, otherwise insert it as a dependency:
+      - name: 'Update dependencies in package.json'
+        run: |
+          PKG_VERSION=$(npm view @stdlib/error-tools-fmtprodmsg version)
+          if grep -q '"@stdlib/string-format"' package.json; then
+            sed -i "s/\"@stdlib\/string-format\": \"^.*\"/\"@stdlib\/error-tools-fmtprodmsg\": \"^$PKG_VERSION\"/g" package.json
+          else
+            node -e "var pkg = require( './package.json' ); pkg.dependencies[ '@stdlib/error-tools-fmtprodmsg' ] = '^$PKG_VERSION'; require( 'fs' ).writeFileSync( 'package.json', JSON.stringify( pkg, null, 2 ) );"
+          fi
+
+      # Configure git:
+      - name: 'Configure git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+
+      # Commit changes:
+      - name: 'Commit changes'
+        run: |
+          git add -A
+          git commit -m "Transform error messages"
+
+      # Push changes:
+      - name: 'Push changes'
+        run: |
+          SLUG=${{ github.repository }}
+          echo "Pushing changes to $SLUG..."
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" production --force
+
+  # Define a job for running tests of the productionized code...
+  test:
+
+    # Define a display name:
+    name: 'Run Tests'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Indicate that this job depends on the prior job finishing:
+    needs: productionize
+
+    # Run this job regardless of the outcome of the prior job:
+    if: always()
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        if: ${{ github.event.inputs.require-passing-tests == 'true' }}
+        uses: actions/checkout@v3
+        with:
+          # Use the `production` branch:
+          ref: production
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        if: ${{ github.event.inputs.require-passing-tests == 'true' }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+        timeout-minutes: 5
+
+      # Install dependencies:
+      - name: 'Install production and development dependencies'
+        if: ${{ github.event.inputs.require-passing-tests == 'true' }}
+        id: install
+        run: |
+          npm install || npm install || npm install
+        timeout-minutes: 15
+
+      # Build native add-on if present:
+      - name: 'Build native add-on (if present)'
+        if: ${{ github.event.inputs.require-passing-tests == 'true' }}
+        run: |
+          if [ -f "binding.gyp" ]; then
+            npm install node-gyp --no-save && ./node_modules/.bin/node-gyp rebuild
+          fi
+
+      # Run tests:
+      - name: 'Run tests'
+        if: ${{ github.event.inputs.require-passing-tests == 'true' }}
+        id: tests
+        run: |
+          npm test || npm test || npm test
+
+  # Define job to create a bundle for use in Deno...
+  deno:
+
+    # Define display name:
+    name: 'Create Deno bundle'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Indicate that this job depends on the test job finishing:
+    needs: test
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Configure git:
+      - name: 'Configure git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+
+      # Check if remote `deno` branch exists:
+      - name: 'Check if remote `deno` branch exists'
+        id: deno-branch-exists
+        continue-on-error: true
+        run: |
+          git fetch --all
+          git ls-remote --exit-code --heads origin deno
+          if [ $? -eq 0 ]; then
+            echo "remote-exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "remote-exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      # If `deno` exists, delete everything in branch and merge `production` into it
+      - name: 'If `deno` exists, delete everything in branch and merge `production` into it'
+        if: steps.deno-branch-exists.outputs.remote-exists
+        run: |
+          git checkout -b deno origin/deno
+
+          find . -type 'f' | grep -v -e ".git/" -e "package.json" -e "README.md" -e "LICENSE"  -e "CONTRIBUTORS" -e "NOTICE" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs -r rm -rf
+
+          git add -A
+          git commit -m "Remove files" --allow-empty
+
+          git config merge.theirs.name 'simulate `-s theirs`'
+          git config merge.theirs.driver 'cat %B > %A'
+          GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
+
+          # Copy files from `production` branch if necessary:
+          git checkout origin/production -- .
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "Auto-generated commit"
+          fi
+
+      # If `deno` does not exist, create `deno` branch:
+      - name: 'If `deno` does not exist, create `deno` branch'
+        if: ${{ steps.deno-branch-exists.outputs.remote-exists == false }}
+        run: |
+          git checkout production
+          git checkout -b deno
+
+      # Copy files to deno directory:
+      - name: 'Copy files to deno directory'
+        run: |
+          mkdir -p deno
+          cp README.md LICENSE CONTRIBUTORS NOTICE ./deno
+
+          # Copy TypeScript definitions to deno directory:
+          if [ -d index.d.ts ]; then
+            cp index.d.ts ./deno/index.d.ts
+          fi
+          if [ -e ./docs/types/index.d.ts ]; then
+            cp ./docs/types/index.d.ts ./deno/mod.d.ts
+          fi
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+        timeout-minutes: 5
+
+      # Install dependencies:
+      - name: Install production and development dependencies
+        id: install
+        run: |
+          npm install || npm install || npm install
+        timeout-minutes: 15
+
+      # Bundle package for use in Deno:
+      - name: 'Bundle package for Deno'
+        id: deno-bundle
+        uses: stdlib-js/bundle-action@main
+        with:
+          target: 'deno'
+
+      # Rewrite file contents:
+      - name: 'Rewrite file contents'
+        run: |
+          # Replace links to other packages with links to the deno branch:
+          find ./deno -type f -name '*.md' -print0 | xargs -0 sed -Ei "/\/tree\/main/b; /^\[@stdlib[^:]+: https:\/\/github.com\/stdlib-js\// s/(.*)/\\1\/tree\/deno/";
+
+          # Replace reference to `@stdlib/types` with CDN link:
+          find ./deno -type f -name '*.ts' -print0 | xargs -0 sed -Ei "s/\/\/\/ <reference types=\"@stdlib\/types\"\/>/\/\/\/ <reference types=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/types@main\/index.d.ts\"\/>/g"
+
+          # Change wording of project description to avoid reference to JavaScript and Node.js:
+          find ./deno -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/a standard library for JavaScript and Node.js, /a standard library /g"
+
+          # Rewrite all `require()`s to use jsDelivr links:
+          find ./deno -type f -name '*.md' -print0 | xargs -0 sed -Ei "/require\( '@stdlib\// {
+              s/(var|let|const)\s+([a-z0-9_]+)\s+=\s*require\( '([^']+)' \);/import \2 from \'\3\';/i
+              s/@stdlib/https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js/
+              s/';/@deno\/mod.js';/
+          }"
+
+          # Rewrite first `import` to show importing of named exports if available:
+          exports=$(cat lib/index.js | \
+            grep -E 'setReadOnly\(.*,.*,.*\)' | \
+            sed -E 's/setReadOnly\((.*),(.*),(.*)\);/\2/' | \
+            sed -E "s/'//g" | \
+            sort)
+          if [ -n "$exports" ]; then
+            find ./deno -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`javascript\nimport\s+([a-zA-Z0-9_]+)\s+from\s*'([^']+)';\n\`\`\`/\`\`\`javascript\nimport \1 from '\2';\n\`\`\`\n\nYou can also import the following named exports from the package:\n\n\`\`\`javascript\nimport { $(echo $exports | sed -E 's/ /, /g') } from '\2';\n\`\`\`/"
+          fi
+
+          # Remove `installation`, `cli`, and `c` sections:
+          find ./deno -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"installation\">[^<]+<\/section>//g;"
+          find ./deno -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"cli\">[\s\S]+<\!\-\- \/.cli \-\->//g"
+          find ./deno -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"c\">[\s\S]+<\!\-\- \/.c \-\->//g"
+
+          # Create package.json file for deno branch:
+          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "type": "module", "main": "./mod.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./deno/package.json
+
+      # Delete everything in current directory aside from deno folder:
+      - name: 'Delete everything in current directory aside from deno folder'
+        run: |
+          find . -type 'f' | grep -v -e "deno" -e ".git/" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e "deno" -e ".git" | xargs -r rm -rf
+
+      # Move deno directory to root:
+      - name: 'Move deno directory to root'
+        run: |
+          mv ./deno/* .
+          rmdir ./deno
+
+      # Commit changes:
+      - name: 'Commit changes'
+        run: |
+          git add -A
+          git commit -m "Auto-generated commit"
+
+      # Push changes to `deno` branch:
+      - name: 'Push changes to `deno` branch'
+        run: |
+          SLUG=${{ github.repository }}
+          echo "Pushing changes to $SLUG..."
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" deno
+
+      # Send status to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
+
+  # Define job to create a UMD bundle...
+  umd:
+
+    # Define display name:
+    name: 'Create UMD bundle'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Indicate that this job depends on the test job finishing:
+    needs: test
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Configure git:
+      - name: 'Configure git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+
+      # Check if remote `umd` branch exists:
+      - name: 'Check if remote `umd` branch exists'
+        id: umd-branch-exists
+        continue-on-error: true
+        run: |
+          git fetch --all
+          git ls-remote --exit-code --heads origin umd
+          if [ $? -eq 0 ]; then
+            echo "remote-exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "remote-exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      # If `umd` exists, delete everything in branch and merge `production` into it
+      - name: 'If `umd` exists, delete everything in branch and merge `production` into it'
+        if: steps.umd-branch-exists.outputs.remote-exists
+        run: |
+          git checkout -b umd origin/umd
+
+          find . -type 'f' | grep -v -e ".git/" -e "package.json" -e "README.md" -e "LICENSE"  -e "CONTRIBUTORS" -e "NOTICE" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs -r rm -rf
+
+          git add -A
+          git commit -m "Remove files" --allow-empty
+
+          git config merge.theirs.name 'simulate `-s theirs`'
+          git config merge.theirs.driver 'cat %B > %A'
+          GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
+
+          # Copy files from `production` branch if necessary:
+          git checkout origin/production -- .
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "Auto-generated commit"
+          fi
+
+      # If `umd` does not exist, create `umd` branch:
+      - name: 'If `umd` does not exist, create `umd` branch'
+        if: ${{ steps.umd-branch-exists.outputs.remote-exists == false }}
+        run: |
+          git checkout production
+          git checkout -b umd
+
+      # Copy files to umd directory:
+      - name: 'Copy files to umd directory'
+        run: |
+          mkdir -p umd
+          cp README.md LICENSE CONTRIBUTORS NOTICE ./umd
+
+      # Install Node.js
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+        timeout-minutes: 5
+
+      # Install dependencies:
+      - name: 'Install production and development dependencies'
+        id: install
+        run: |
+          npm install || npm install || npm install
+        timeout-minutes: 15
+
+      # Extract alias:
+      - name: 'Extract alias'
+        id: extract-alias
+        run: |
+          alias=$(grep -E 'require\(' README.md | head -n 1 |  sed -E 's/^var ([a-zA-Z0-9_]+) = .+/\1/')
+          echo "alias=${alias}" >> $GITHUB_OUTPUT
+
+      # Create Universal Module Definition (UMD) Node.js bundle:
+      - name: 'Create Universal Module Definition (UMD) Node.js bundle'
+        id: umd-bundle-node
+        uses: stdlib-js/bundle-action@main
+        with:
+          target: 'umd-node'
+          alias: ${{ steps.extract-alias.outputs.alias }}
+
+      # Create Universal Module Definition (UMD) browser bundle:
+      - name: 'Create Universal Module Definition (UMD) browser bundle'
+        id: umd-bundle-browser
+        uses: stdlib-js/bundle-action@main
+        with:
+          target: 'umd-browser'
+          alias: ${{ steps.extract-alias.outputs.alias }}
+
+      # Rewrite file contents:
+      - name: 'Rewrite file contents'
+        run: |
+
+          # Replace links to other packages with links to the umd branch:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 sed -Ei "/\/tree\/main/b; /^\[@stdlib[^:]+: https:\/\/github.com\/stdlib-js\// s/(.*)/\\1\/tree\/umd/";
+
+          # Remove `installation`, `cli`, and `c` sections:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"installation\">[^<]+<\/section>//g;"
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"cli\">[\s\S]+<\!\-\- \/.cli \-\->//g"
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"c\">[\s\S]+<\!\-\- \/.c \-\->//g"
+
+          # Rewrite first `require()` to show consumption of the UMD bundle in Observable and via a `script` tag:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`javascript\n(var|let|const)\s+([a-zA-Z0-9_]+)\s+=\s*require\( '\@stdlib\/([^']+)' \);\n\`\`\`/To use in Observable,\n\n\`\`\`javascript\n\2 = require\( 'https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/browser.js' \)\n\`\`\`\n\nTo vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:\n\n\`\`\`javascript\nvar \2 = require\( 'path\/to\/vendor\/umd\/\3\/index.js' \)\n\`\`\`\n\nTo include the bundle in a webpage,\n\n\`\`\`html\n<script type=\"text\/javascript\" src=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/browser.js\"><\/script>\n\`\`\`\n\nIf no recognized module system is present, access bundle contents via the global scope:\n\n\`\`\`html\n<script type=\"text\/javascript\">\n    window.\2;\n<\/script>\n\`\`\`/"
+
+          # Rewrite examples section to be a HTML file:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\#\# Examples([\s\S]*)\`\`\`javascript([\s\S]+?)\`\`\`/\#\# Examples\1\`\`\`html\n<\!DOCTYPE html>\n<html lang=\"en\">\n<body>\n<script type=\"text\/javascript\">\2\n<\/script>\n<\/body>\n<\/html>\n\`\`\`/"
+
+          # Rewrite all `require()`s in the examples section as `script` tags loading the respective UMD bundle:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "1 while s/<script type=\"text\/javascript\">\n(var|let|const)\s+([a-zA-Z0-9_]+)\s+=\s*require\( '\@stdlib\/([^']+)' \);?/<script type=\"text\/javascript\" src=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/\3\@umd\/browser.js\"><\/script>\n<script type=\"text\/javascript\">/g"
+
+          # Wrap contents of `<script type="text/javascript">` tag contents in an IIFE:
+          find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<script type=\"text\/javascript\">([\s\S]+?)<\/script>/<script type=\"text\/javascript\">\n\(function \(\) {\1}\)\(\);\n<\/script>/g"
+
+          # Create package.json file for umd branch:
+          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "main": "./index.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./umd/package.json
+
+      # Delete everything in current directory aside from umd folder:
+      - name: 'Delete everything in current directory aside from umd folder'
+        run: |
+          find . -type 'f' | grep -v -e "umd" -e ".git/" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e "umd" -e ".git" | xargs -r rm -rf
+
+      # Move umd directory to root:
+      - name: 'Move umd directory to root'
+        run: |
+          mv ./umd/* .
+          rmdir ./umd
+
+      # Commit changes:
+      - name: 'Commit changes'
+        run: |
+          git add -A
+          git commit -m "Auto-generated commit"
+
+      # Push changes to `umd` branch:
+      - name: 'Push changes to `umd` branch'
+        run: |
+          SLUG=${{ github.repository }}
+          echo "Pushing changes to $SLUG..."
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" umd
+
+      # Send status to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
+
+  # Define job to create ES module build...
+  esm:
+
+    # Define display name:
+    name: 'Create ES module build'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Indicate that this job depends on the test job finishing:
+    needs: test
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Configure git:
+      - name: 'Configure git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+
+      # Check if remote `esm` branch exists:
+      - name: 'Check if remote `esm` branch exists'
+        id: esm-branch-exists
+        continue-on-error: true
+        run: |
+          git fetch --all
+          git ls-remote --exit-code --heads origin esm
+          if [ $? -eq 0 ]; then
+            echo "remote-exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "remote-exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      # If `esm` exists, delete everything in branch and merge `production` into it
+      - name: 'If `esm` exists, delete everything in branch and merge `production` into it'
+        if: steps.esm-branch-exists.outputs.remote-exists
+        run: |
+          git checkout -b esm origin/esm
+
+          find . -type 'f' | grep -v -e ".git/" -e "package.json" -e "README.md" -e "LICENSE"  -e "CONTRIBUTORS" -e "NOTICE" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs -r rm -rf
+
+          git add -A
+          git commit -m "Remove files" --allow-empty
+
+          git config merge.theirs.name 'simulate `-s theirs`'
+          git config merge.theirs.driver 'cat %B > %A'
+          GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
+
+          # Copy files from `production` branch if necessary:
+          git checkout origin/production -- .
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "Auto-generated commit"
+          fi
+
+      # If `esm` does not exist, create `esm` branch:
+      - name: 'If `esm` does not exist, create `esm` branch'
+        if: ${{ steps.esm-branch-exists.outputs.remote-exists == false }}
+        run: |
+          git checkout production
+          git checkout -b esm
+
+      # Copy files to esm directory:
+      - name: 'Copy files to esm directory'
+        run: |
+          mkdir -p esm
+          cp README.md LICENSE CONTRIBUTORS NOTICE ./esm
+
+          # Copy TypeScript definitions to esm directory:
+          if [ -e ./docs/types/index.d.ts ]; then
+            cp ./docs/types/index.d.ts ./esm/index.d.ts
+          fi
+          if [ -d index.d.ts ]; then
+            cp index.d.ts ./esm/index.d.ts
+          fi
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+        timeout-minutes: 5
+
+      # Install dependencies:
+      - name: 'Install production and development dependencies'
+        id: install
+        run: |
+          npm install || npm install || npm install
+        timeout-minutes: 15
+
+      # Create ES Module (ESM) bundle:
+      - name: 'Create ES Module (ESM) bundle'
+        id: esm-bundle
+        uses: stdlib-js/bundle-action@main
+        with:
+          target: 'esm'
+
+      # Rewrite file contents:
+      - name: 'Rewrite file contents'
+        run: |
+
+          # Replace links to other packages with links to the esm branch:
+          find ./esm -type f -name '*.md' -print0 | xargs -0 sed -Ei "/\/tree\/main/b; /^\[@stdlib[^:]+: https:\/\/github.com\/stdlib-js\// s/(.*)/\\1\/tree\/esm/";
+
+          # Replace reference to `@stdlib/types` with esm link:
+          find ./esm -type f -name '*.ts' -print0 | xargs -0 sed -Ei "s/\/\/\/ <reference types=\"@stdlib\/types\"\/>/\/\/\/ <reference types=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/types@esm\/index.d.ts\"\/>/g"
+
+          # Change wording of project description to avoid reference to JavaScript and Node.js:
+          find ./esm -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/a standard library for JavaScript and Node.js, /a standard library /g"
+
+          # Rewrite all `require()`s to use jsDelivr links:
+          find ./esm -type f -name '*.md' -print0 | xargs -0 sed -Ei "/require\( '@stdlib\// {
+              s/(var|let|const)\s+([a-z0-9_]+)\s+=\s*require\( '([^']+)' \);/import \2 from \'\3\';/i
+              s/@stdlib/https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js/
+              s/';/@esm\/index.mjs';/
+          }"
+
+          # Rewrite first `import` to show importing of named exports if available:
+          exports=$(cat lib/index.js | \
+            grep -E 'setReadOnly\(.*,.*,.*\)' | \
+            sed -E 's/setReadOnly\((.*),(.*),(.*)\);/\2/' | \
+            sed -E "s/'//g" | \
+            sort)
+          if [ -n "$exports" ]; then
+            find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`javascript\nimport\s+([a-zA-Z0-9_]+)\s+from\s*'([^']+)';\n\`\`\`/\`\`\`javascript\nimport \1 from '\2';\n\`\`\`\n\nYou can also import the following named exports from the package:\n\n\`\`\`javascript\nimport { $(echo $exports | sed -E 's/ /, /g') } from '\2';\n\`\`\`/"
+          fi
+
+          # Remove `installation`, `cli`, and `c` sections:
+          find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"installation\">[^<]+<\/section>//g;"
+          find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"cli\">[\s\S]+<\!\-\- \/.cli \-\->//g"
+          find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"c\">[\s\S]+<\!\-\- \/.c \-\->//g"
+
+          # Rewrite examples section to be a HTML file:
+          find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\#\# Examples([\s\S]*)\`\`\`javascript([\s\S]+?)\`\`\`/\#\# Examples\1\`\`\`html\n<\!DOCTYPE html>\n<html lang=\"en\">\n<body>\n<script type=\"module\">\n\2\n<\/script>\n<\/body>\n<\/html>\n\`\`\`/g"
+
+          # Create package.json file for esm branch:
+          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "type": "module", "main": "./index.mjs", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./esm/package.json
+
+      # Delete everything in current directory aside from esm folder:
+      - name: 'Delete everything in current directory aside from esm folder'
+        run: |
+          find . -type 'f' | grep -v -e "esm" -e ".git/" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e "esm" -e ".git" | xargs -r rm -rf
+
+      # Move esm directory to root:
+      - name: 'Move esm directory to root'
+        run: |
+          mv ./esm/* .
+          rmdir ./esm
+
+      # Commit changes:
+      - name: 'Commit changes'
+        run: |
+          git add -A
+          git commit -m "Auto-generated commit"
+
+      # Push changes to `esm` branch:
+      - name: 'Push changes to `esm` branch'
+        run: |
+          SLUG=${{ github.repository }}
+          echo "Pushing changes to $SLUG..."
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" esm
+
+      # Send status to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
+
+  # Define job that succeeds if all bundles were successfully built:
+  create-tag-bundles:
+
+    # Define display name:
+    name: 'Create tag bundles'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Indicate that this job depends on the bundle jobs finishing:
+    needs: [ deno, umd, esm ]
+
+    # Define the steps to be executed:
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      # Check if workflow run was triggered by a patch, minor, or major version bump:
+      - name: 'Check if workflow run was triggered by a patch, minor, or major version bump'
+        id: check-if-bump
+        continue-on-error: true
+        run: |
+          VERSION_CHANGE_PKG_JSON=$(git diff HEAD~1 HEAD package.json | grep '"version":')
+          if [ -z "$VERSION_CHANGE_PKG_JSON" ]; then
+            echo "This workflow was not triggered by a version bump."
+            echo "bump=false" >> $GITHUB_OUTPUT
+          else
+            echo "This workflow was triggered by a version bump."
+            echo "bump=true" >> $GITHUB_OUTPUT
+          fi
+
+      # Configure git:
+      - name: 'Configure git'
+        if: steps.check-if-bump.outputs.bump
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+          git fetch --all
+
+      # Create bundle tags:
+      - name: 'Create bundle tags'
+        if: steps.check-if-bump.outputs.bump
+        run: |
+          SLUG=${{ github.repository }}
+          ESCAPED=$(echo $SLUG | sed -E 's/\//\\\//g')
+          VERSION="v$(jq --raw-output '.version' package.json)"
+
+          git checkout -b deno origin/deno
+          sed -i -E "s/$ESCAPED@deno/$ESCAPED@$VERSION-deno/g" README.md
+          git add README.md
+          git commit -m "Update README.md for Deno bundle $VERSION"
+          git tag -a $VERSION-deno -m "$VERSION-deno"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-deno
+          sed -i -E "s/$ESCAPED@$VERSION-deno/$ESCAPED@deno/g" README.md
+
+          perl -0777 -i -pe "s/\`\`\`javascript\nimport\s+([a-zA-Z0-9_]+)\s+from\s*'([^']+)';\n\`\`\`/\`\`\`javascript\nimport \1 from '\2';\n\`\`\`\n\The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the \[tagged bundles\]\(https:\/\/github.com\/$ESCAPED\/tags\). For example,\n\n\`\`\`javascript\nimport \1 from 'https:\/\/cdn\.jsdelivr\.net\/gh\/$ESCAPED\@$VERSION-deno\/mod\.js';\n\`\`\`/" README.md
+
+          git add README.md
+          git commit -m "Auto-generated commit"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" deno
+
+          git checkout -b umd origin/umd
+          sed -i -E "s/$ESCAPED@umd/$ESCAPED@$VERSION-umd/g" README.md
+          git add README.md
+          git commit -m "Update README.md for UMD bundle $VERSION"
+          git tag -a $VERSION-umd -m "$VERSION-umd"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-umd
+          sed -i -E "s/$ESCAPED@$VERSION-umd/$ESCAPED@umd/g" README.md
+
+          perl -0777 -i -pe "s/\`\`\`javascript\n([a-zA-Z0-9_]+)\s+=\s*require\(\s*'([^']+)'\s*\)\n\`\`\`/\`\`\`javascript\n\1 = require\( '\2' \)\n\`\`\`\n\The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the \[tagged bundles\]\(https:\/\/github.com\/$ESCAPED\/tags\). For example,\n\n\`\`\`javascript\n\1 = require\( 'https:\/\/cdn\.jsdelivr\.net\/gh\/$ESCAPED\@$VERSION-umd\/browser\.js' \)\n\`\`\`/" README.md
+
+          git add README.md
+          git commit -m "Auto-generated commit"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" umd
+
+          git checkout -b esm origin/esm
+          sed -i -E "s/$ESCAPED@esm/$ESCAPED@$VERSION-esm/g" README.md
+          git add README.md
+          git commit -m "Update README.md for ESM bundle $VERSION"
+          git tag -a $VERSION-esm -m "$VERSION-esm"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" $VERSION-esm
+          sed -i -E "s/$ESCAPED@$VERSION-esm/$ESCAPED@esm/g" README.md
+
+          perl -0777 -i -pe "s/\`\`\`javascript\nimport\s+([a-zA-Z0-9_]+)\s+from\s*'([^']+)';\n\`\`\`/\`\`\`javascript\nimport \1 from '\2';\n\`\`\`\n\The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the \[tagged bundles\]\(https:\/\/github.com\/$ESCAPED\/tags\). For example,\n\n\`\`\`javascript\nimport \1 from 'https:\/\/cdn\.jsdelivr\.net\/gh\/$ESCAPED\@$VERSION-esm\/index\.mjs';\n\`\`\`/" README.md
+
+          git add README.md
+          git commit -m "Auto-generated commit"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" esm

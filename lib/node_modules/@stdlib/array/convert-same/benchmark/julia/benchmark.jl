@@ -174,7 +174,9 @@ function main()
 		Int8,
 		UInt32,
 		UInt16,
-		UInt8
+		UInt8,
+		ComplexF64,
+		ComplexF32
 	];
 	n = 1;
 	while n < 1e7

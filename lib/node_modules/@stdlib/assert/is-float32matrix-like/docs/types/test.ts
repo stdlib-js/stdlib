@@ -26,7 +26,7 @@ import isFloat32MatrixLike = require( './index' );
 	isFloat32MatrixLike( [] ); // $ExpectType boolean
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	isFloat32MatrixLike(); // $ExpectError
 	isFloat32MatrixLike( 'abc', 123 ); // $ExpectError

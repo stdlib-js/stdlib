@@ -5,13 +5,11 @@
     "allowUnusedLabels": false,
     "alwaysStrict": true,
     "baseUrl": ".",
-    "charset": "utf8",
     "forceConsistentCasingInFileNames": true,
     "keyofStringsOnly": false,
     "lib": [
       "es6"
     ],
-    "locale": "en",
     "module": "commonjs",
     "moduleResolution": "node",
     "newLine": "lf",

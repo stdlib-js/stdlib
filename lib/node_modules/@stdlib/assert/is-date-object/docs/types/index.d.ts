@@ -32,7 +32,7 @@
 * var bool = isDateObject( '2017-01-01' );
 * // returns false
 */
-declare function isDateObject( value: any ): boolean;
+declare function isDateObject( value: any ): value is Date;
 
 
 // EXPORTS //

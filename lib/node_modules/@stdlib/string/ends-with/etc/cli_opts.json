@@ -5,7 +5,8 @@
 	],
 	"string": [
 		"search",
-		"len"
+		"len",
+		"split"
 	],
 	"alias": {
 		"help": [

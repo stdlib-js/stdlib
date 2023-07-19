@@ -27,7 +27,7 @@ import isError = require( './index' );
 	isError( {} ); // $ExpectType boolean
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	isError(); // $ExpectError
 	isError( new Error( 'beep' ), 123 ); // $ExpectError

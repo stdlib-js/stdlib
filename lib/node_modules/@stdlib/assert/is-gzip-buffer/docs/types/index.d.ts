@@ -18,6 +18,8 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@types/node"/>
+
 /**
 * Tests if a value is a gzip buffer (or Uint8Array).
 *
@@ -44,7 +46,7 @@
 * var bool = isgzipBuffer( [] );
 * // returns false
 */
-declare function isgzipBuffer( value: any ): boolean;
+declare function isgzipBuffer( value: any ): value is Uint8Array | Buffer;
 
 
 // EXPORTS //

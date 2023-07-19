@@ -1,0 +1,29 @@
+
+{{alias}}( policy )
+    Returns the enumeration constant associated with a supported data type
+    policy value.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `SAME == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    policy: any
+        Policy value.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'same' )
+    <number>
+    > out = {{alias}}( {{alias:@stdlib/ndarray/base/output-policy-str2enum}}( 'same' ) )
+    <number>
+
+    See Also
+    --------
+

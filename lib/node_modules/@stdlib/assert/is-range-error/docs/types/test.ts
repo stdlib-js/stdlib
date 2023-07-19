@@ -27,7 +27,7 @@ import isRangeError = require( './index' );
 	isRangeError( {} ); // $ExpectType boolean
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	isRangeError(); // $ExpectError
 	isRangeError( new RangeError( 'beep' ), 123 ); // $ExpectError

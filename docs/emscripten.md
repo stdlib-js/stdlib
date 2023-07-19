@@ -94,7 +94,7 @@ In addition to the above flags, `emcc` should act as a drop-in replacement for `
 
 [emscripten]: https://github.com/kripken/emscripten
 
-[emscripten-sdk]: https://github.com/juj/emsdk
+[emscripten-sdk]: https://github.com/emscripten-core/emsdk
 
 [llvm]: https://en.wikipedia.org/wiki/LLVM
 
@@ -102,15 +102,15 @@ In addition to the above flags, `emcc` should act as a drop-in replacement for `
 
 [cmake]: https://cmake.org/
 
-[python]: https://www.python.org
+[python]: https://www.python.org/
 
 [gcc]: http://gcc.gnu.org/
 
-[web-assembly]: http://webassembly.org/
+[web-assembly]: https://webassembly.org/
 
 [asm-js]: http://asmjs.org/spec/latest/
 
-[web-assembly-semantics]: http://webassembly.org/docs/semantics/
+[web-assembly-semantics]: https://webassembly.org/docs/semantics/
 
 [web-assembly-examples]: https://github.com/mdn/webassembly-examples/blob/master/wasm-sobel/sobel.js
 
@@ -118,7 +118,7 @@ In addition to the above flags, `emcc` should act as a drop-in replacement for `
 
 [planeshifter-examples]: https://github.com/Planeshifter/emscripten-examples
 
-[emscripten-mailing-list]: https://groups.google.com/forum/#!topic/emscripten-discuss/oeEg6WrZ7rg
+[emscripten-mailing-list]: https://groups.google.com/g/emscripten-discuss/c/oeEg6WrZ7rg
 
 </section>
 

@@ -26,7 +26,7 @@ import floorb = require( './index' );
 	floorb( 3.141592653589793, -4, 10 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than three numbers...
+// The compiler throws an error if the function is provided values other than three numbers...
 {
 	floorb( true, 3, 2 ); // $ExpectError
 	floorb( false, 2, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import floorb = require( './index' );
 	floorb( 9.343, 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	floorb(); // $ExpectError
 	floorb( 3 ); // $ExpectError

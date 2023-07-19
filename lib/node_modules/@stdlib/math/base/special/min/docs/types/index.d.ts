@@ -21,21 +21,12 @@
 /**
 * Returns the minimum value.
 *
-* ## Notes
-*
-* -   When an empty set is considered a subset of the extended reals (all real numbers, including positive and negative infinity), positive infinity is the greatest lower bound. Similar to zero being the identity element for the sum of an empty set and to one being the identity element for the product of an empty set, positive infinity is the identity element for the minimum, and thus, if not provided any arguments, the function returns positive infinity.
-*
 * @param x - first number
 * @param y - second number
-* @param args - numbers
 * @returns minimum value
 *
 * @example
 * var v = min( 3.14, 4.2 );
-* // returns 3.14
-*
-* @example
-* var v = min( 5.9, 3.14, 4.2 );
 * // returns 3.14
 *
 * @example
@@ -46,7 +37,7 @@
 * var v = min( +0.0, -0.0 );
 * // returns -0.0
 */
-declare function min( x?: number, y?: number, ...args: Array<number> ): number;
+declare function min( x: number, y: number ): number;
 
 
 // EXPORTS //

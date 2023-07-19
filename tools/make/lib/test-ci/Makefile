@@ -20,19 +20,19 @@
 
 ifeq ($(CI_SERVICE), travis)
 	include $(TOOLS_MAKE_LIB_DIR)/test-ci/travis.mk
-else
-ifeq ($(CI_SERVICE), appveyor)
-	include $(TOOLS_MAKE_LIB_DIR)/test-ci/appveyor.mk
-endif
 endif
 
 
-# TARGETS #
+# RULES #
 
-# Run CI tests.
+#/
+# Runs continuous integration tests, which may include unit tests, browser tests, and/or UI tests.
 #
-# This target runs continuous integration tests, which may include unit tests, browser tests, and/or UI tests.
-
+# @private
+#
+# @example
+# make test-ci
+#/
 # test-ci: test test-browsers
 test-ci: test
 

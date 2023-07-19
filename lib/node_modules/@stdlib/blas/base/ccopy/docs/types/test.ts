@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import Complex64Array = require( '@stdlib/array/complex64' );
 import ccopy = require( './index' );
 
 

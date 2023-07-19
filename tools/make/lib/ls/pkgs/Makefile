@@ -18,18 +18,23 @@
 
 # DEPENDENCIES #
 
+# Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/addons.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/browser_compatible.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/clis.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/cmds.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/includes.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/installed.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/lib.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/names.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/namespace_readmes.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/namespaces.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/pkgs.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/readmes.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/repl_help.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/standalones.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/tools.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/toposort.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/tree.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/types.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/wasm.mk

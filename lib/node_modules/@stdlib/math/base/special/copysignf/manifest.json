@@ -1,0 +1,87 @@
+{
+	"options": {
+		"task": "build"
+	},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"task": "build",
+			"src": [
+				"./src/main.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lm"
+			],
+			"libpath": [],
+			"dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/sign-mask",
+				"@stdlib/number/float32/base/to-word",
+        "@stdlib/number/float32/base/from-word"
+			]
+		},
+		{
+			"task": "benchmark",
+			"src": [
+				"./src/main.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lm"
+			],
+			"libpath": [],
+			"dependencies": [
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/number/float32/base/from-word"
+			]
+		},
+		{
+			"task": "examples",
+			"src": [
+				"./src/main.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lm"
+			],
+			"libpath": [],
+			"dependencies": [
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/number/float32/base/from-word"
+			]
+		}
+	]
+}

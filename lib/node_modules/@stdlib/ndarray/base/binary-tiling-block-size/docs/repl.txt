@@ -1,0 +1,30 @@
+
+{{alias}}( dtypeX, dtypeY, dtypeZ )
+    Returns a loop block size for multi-dimensional array tiled loops.
+
+    Parameters
+    ----------
+    dtypeX: string
+        First input array data type.
+
+    dtypeY: string
+        Second input array data type.
+
+    dtypeZ: string
+        Output array data type.
+
+    Returns
+    -------
+    out: integer
+        Block size.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float64', 'float64', 'float64' )
+    <number>
+    > out = {{alias}}( 'int32', 'float64', 'float64' )
+    <number>
+
+    See Also
+    --------
+

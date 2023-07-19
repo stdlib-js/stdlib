@@ -66,7 +66,6 @@ double stdlib_strided_dnannsumkbn2( const int64_t N, const double *X, const int6
 	} else {
 		ix = 0;
 	}
-	sum = 0.0;
 	ccs = 0.0; // second order correction term for lost lower order bits
 	cs = 0.0; // first order correction term for lost low order bits
 	for ( i = 0; i < N; i++ ) {

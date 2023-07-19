@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -25,6 +25,7 @@ var exec = require( 'child_process' ).exec;
 var tape = require( 'tape' );
 var IS_BROWSER = require( '@stdlib/assert/is-browser' );
 var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
+var EXEC_PATH = require( '@stdlib/process/exec-path' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 
 
@@ -56,7 +57,7 @@ tape( 'when invoked with a `--help` flag, the command-line interface prints the 
 		'encoding': 'utf8'
 	});
 	cmd = [
-		process.execPath,
+		EXEC_PATH,
 		fpath,
 		'--help'
 	];
@@ -82,7 +83,7 @@ tape( 'when invoked with a `-h` flag, the command-line interface prints the help
 		'encoding': 'utf8'
 	});
 	cmd = [
-		process.execPath,
+		EXEC_PATH,
 		fpath,
 		'-h'
 	];
@@ -102,7 +103,7 @@ tape( 'when invoked with a `-h` flag, the command-line interface prints the help
 
 tape( 'when invoked with a `--version` flag, the command-line interface prints the version to `stderr`', opts, function test( t ) {
 	var cmd = [
-		process.execPath,
+		EXEC_PATH,
 		fpath,
 		'--version'
 	];
@@ -122,7 +123,7 @@ tape( 'when invoked with a `--version` flag, the command-line interface prints t
 
 tape( 'when invoked with a `-V` flag, the command-line interface prints the version to `stderr`', opts, function test( t ) {
 	var cmd = [
-		process.execPath,
+		EXEC_PATH,
 		fpath,
 		'-V'
 	];

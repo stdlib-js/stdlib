@@ -1,0 +1,28 @@
+
+{{alias}}( arr )
+    Tests if an ndarray is read-only.
+
+    Parameters
+    ----------
+    arr: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an ndarray is read-only.
+
+    Examples
+    --------
+    > var opts = { 'readonly': true };
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1, 2, 3, 4 ], opts );
+    > var bool = {{alias}}( x )
+    true
+    > opts.readonly = false;
+    > x = {{alias:@stdlib/ndarray/array}}( [ 1, 2, 3, 4 ], opts );
+    > bool = {{alias}}( x )
+    false
+
+    See Also
+    --------
+

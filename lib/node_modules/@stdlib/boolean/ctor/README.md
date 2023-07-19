@@ -1,0 +1,173 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# Boolean
+
+> [Boolean][mdn-boolean] constructor.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var Boolean = require( '@stdlib/boolean/ctor' );
+```
+
+#### Boolean( value )
+
+Returns a `Boolean` object, which is an object wrapper for a primitive boolean value.
+
+<!-- eslint-disable no-new-wrappers -->
+
+```javascript
+var b = new Boolean( null );
+// returns <Boolean>
+```
+
+When invoked without `new`, the function converts an input value to a primitive boolean value.
+
+```javascript
+var b = Boolean( null );
+// returns false
+```
+
+* * *
+
+### Methods
+
+<a name="method-to-string"></a>
+
+##### Boolean.prototype.toString()
+
+Returns a string representation of the boolean value.
+
+```javascript
+var b = new Boolean( true );
+var str = b.toString();
+// returns 'true'
+```
+
+##### Boolean.prototype.valueOf()
+
+Returns the primitive value of the boolean object.
+
+```javascript
+var b = new Boolean( true );
+var val = b.valueOf();
+// returns true
+
+b = new Boolean();
+val = b.valueOf();
+// returns false
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+## Notes
+
+-   When invoked without `new`,
+
+    -   if provided `false`, `null`, `undefined`, `-0`, `0`, `NaN`, or an empty string, the function returns `false`.
+    -   if provided any other value, including an empty object, an empty array, the string `'false'`, or a `Boolean` object (including a `Boolean` object whose value is `false`), the function returns `true`.
+
+-   When invoked with `new`, the value of the returned `Boolean` object adheres to the same conversion semantics as when the constructor is invoked without `new`.
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+<!-- eslint-disable new-cap -->
+
+```javascript
+var format = require( '@stdlib/string/format' );
+var Bool = require( '@stdlib/boolean/ctor' );
+
+var values = [
+    '5',
+    5,
+    0,
+    NaN,
+    true,
+    false,
+    null,
+    void 0,
+    [],
+    {}
+];
+
+var i;
+for ( i = 0; i < values.length; i++ ) {
+    console.log( format( '%s => %s', JSON.stringify( values[ i ] ), ( Bool( values[ i ] ) ) ? 'true' : 'false' ) );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[mdn-boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+</section>
+
+<!-- /.links -->

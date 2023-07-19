@@ -1,0 +1,143 @@
+
+{{alias}}( [...argNames,] body )
+    Returns a Function object.
+
+    Argument names must be strings corresponding to valid JavaScript parameters
+    (i.e., a plain identifier, or, in environments supporting such parameters, a
+    rest parameter or destructured parameter, optionally with a default).
+
+    Parameters
+    ----------
+    argNames: ...any (optional)
+        Parameter names.
+
+    body: string
+        Function body.
+
+    Returns
+    -------
+    fcn: Function
+        Function object.
+
+    Examples
+    --------
+    > var f = new {{alias}}( 'x', 'y', 'return x + y' );
+    > f( 1, 2 )
+    3
+
+
+{{alias}}.prototype.apply( thisArg, args )
+    Calls a function with a given `this` value and arguments provided as an
+    array (or array-like object).
+
+    Parameters
+    ----------
+    thisArg: any
+        Value to use as `this` when executing the function.
+
+    args: Array
+        Array of arguments to pass to the function.
+
+    Returns
+    -------
+    out: any
+        Function return value.
+
+    Examples
+    --------
+    > var f = new {{alias}}( 'x', 'y', 'return x + y' );
+    > f.apply( null, [ 1, 2 ] )
+    3
+
+{{alias}}.prototype.call( thisArg, ...args )
+    Calls a function with a given `this` value and arguments provided
+    individually.
+
+    Parameters
+    ----------
+    thisArg: any
+        Value to use as `this` when executing the function.
+
+    args: ...any
+        Arguments to pass to the function.
+
+    Returns
+    -------
+    out: any
+        Function return value.
+
+    Examples
+    --------
+    > var f = new {{alias}}( 'x', 'y', 'return x + y' );
+    > f.call( null, 1, 2 )
+    3
+
+{{alias}}.prototype.bind( thisArg, ...args )
+    Creates a new function which, when called, has its `this` keyword set to the
+    provided value, with a given sequence of arguments preceding any provided
+    when the new function is called.
+
+    Parameters
+    ----------
+    thisArg: any
+        Value to use as `this` when executing the function.
+
+    args: ...any
+        Arguments to pass to the function.
+
+    Returns
+    -------
+    fcn: Function
+        Bound function.
+
+    Examples
+    --------
+    > var f = new {{alias}}( 'x', 'y', 'return x + y' );
+    > var g = f.bind( null, 1 );
+    > g( 2 )
+    3
+
+{{alias}}.prototype.toString()
+    Returns a string representation of the function.
+
+    Examples
+    --------
+    > var f = new {{alias}}( 'x', 'y', 'return x + y' );
+    > f.toString()
+    'function anonymous( x, y ) { return x + y; }'
+
+{{alias}}.prototype.length
+    The number of arguments expected by the function.
+
+    Examples
+    --------
+    > var f = new {{alias}}( 'x', 'y', 'return x + y' );
+    > f.length
+    2
+
+{{alias}}.prototype.name
+    The name of the function.
+
+    Examples
+    --------
+    > var f = new {{alias}}( 'x', 'y', 'return x + y' );
+    > f.name
+    'anonymous'
+
+    > var f = new {{alias}}( 'x', 'y', 'return x + y' );
+    > f.name = 'add';
+    > f.name
+    'add'
+
+{{alias}}.prototype.prototype
+    The prototype of the function.
+
+    Examples
+    --------
+    > var f = new {{alias}}( 'x', 'y', 'return x + y' );
+    > f.prototype
+    {}
+
+    See Also
+    --------
+

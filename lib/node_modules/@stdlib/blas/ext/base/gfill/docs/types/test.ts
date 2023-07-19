@@ -21,11 +21,11 @@ import gfill = require( './index' );
 
 // TESTS //
 
-// The function returns a numeric array...
+// The function returns a collection...
 {
 	const x = new Float64Array( 10 );
 
-	gfill( x.length, 5.0, x, 1 ); // $ExpectType NumericArray
+	gfill( x.length, 5.0, x, 1 ); // $ExpectType Collection
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -42,33 +42,16 @@ import gfill = require( './index' );
 	gfill( ( x: number ): number => x, 5.0, x, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a number...
-{
-	const x = new Float64Array( 10 );
-
-	gfill( x.length, '10', x, 1 ); // $ExpectError
-	gfill( x.length, true, x, 1 ); // $ExpectError
-	gfill( x.length, false, x, 1 ); // $ExpectError
-	gfill( x.length, null, x, 1 ); // $ExpectError
-	gfill( x.length, undefined, x, 1 ); // $ExpectError
-	gfill( x.length, [], x, 1 ); // $ExpectError
-	gfill( x.length, {}, x, 1 ); // $ExpectError
-	gfill( x.length, ( x: number ): number => x, x, 1 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided a third argument which is not a numeric array...
+// The compiler throws an error if the function is provided a third argument which is not a collection...
 {
 	const x = new Float64Array( 10 );
 
 	gfill( x.length, 5.0, 10, 1 ); // $ExpectError
-	gfill( x.length, 5.0, '10', 1 ); // $ExpectError
 	gfill( x.length, 5.0, true, 1 ); // $ExpectError
 	gfill( x.length, 5.0, false, 1 ); // $ExpectError
 	gfill( x.length, 5.0, null, 1 ); // $ExpectError
 	gfill( x.length, 5.0, undefined, 1 ); // $ExpectError
-	gfill( x.length, 5.0, [ '1' ], 1 ); // $ExpectError
 	gfill( x.length, 5.0, {}, 1 ); // $ExpectError
-	gfill( x.length, 5.0, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a number...
@@ -96,11 +79,11 @@ import gfill = require( './index' );
 	gfill( x.length, 5.0, x, 1, 10 ); // $ExpectError
 }
 
-// Attached to main export is an `ndarray` method which returns a numeric array...
+// Attached to main export is an `ndarray` method which returns a collection...
 {
 	const x = new Float64Array( 10 );
 
-	gfill.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType NumericArray
+	gfill.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType Collection
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
@@ -117,33 +100,16 @@ import gfill = require( './index' );
 	gfill.ndarray( ( x: number ): number => x, 5.0, x, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a second argument which is not a number...
-{
-	const x = new Float64Array( 10 );
-
-	gfill.ndarray( x.length, '10', x, 1, 0 ); // $ExpectError
-	gfill.ndarray( x.length, true, x, 1, 0 ); // $ExpectError
-	gfill.ndarray( x.length, false, x, 1, 0 ); // $ExpectError
-	gfill.ndarray( x.length, null, x, 1, 0 ); // $ExpectError
-	gfill.ndarray( x.length, undefined, x, 1, 0 ); // $ExpectError
-	gfill.ndarray( x.length, [], x, 1, 0 ); // $ExpectError
-	gfill.ndarray( x.length, {}, x, 1, 0 ); // $ExpectError
-	gfill.ndarray( x.length, ( x: number ): number => x, x, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the `ndarray` method is provided a third argument which is not a numeric array...
+// The compiler throws an error if the `ndarray` method is provided a third argument which is not a collection...
 {
 	const x = new Float64Array( 10 );
 
 	gfill.ndarray( x.length, 5.0, 10, 1, 0 ); // $ExpectError
-	gfill.ndarray( x.length, 5.0, '10', 1, 0 ); // $ExpectError
 	gfill.ndarray( x.length, 5.0, true, 1, 0 ); // $ExpectError
 	gfill.ndarray( x.length, 5.0, false, 1, 0 ); // $ExpectError
 	gfill.ndarray( x.length, 5.0, null, 1, 0 ); // $ExpectError
 	gfill.ndarray( x.length, 5.0, undefined, 1, 0 ); // $ExpectError
-	gfill.ndarray( x.length, 5.0, [ '1' ], 1, 0 ); // $ExpectError
 	gfill.ndarray( x.length, 5.0, {}, 1, 0 ); // $ExpectError
-	gfill.ndarray( x.length, 5.0, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...

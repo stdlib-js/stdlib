@@ -1,0 +1,184 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/cli/ctor' );
+var ENV = require( '@stdlib/process/env' );
+var cwd = require( '@stdlib/process/cwd' );
+var stdin = require( '@stdlib/process/read-stdin' );
+var httpServer = require( './../lib' );
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var fpath;
+	var flags;
+	var file;
+	var opts;
+	var cli;
+	var err;
+	var v;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+	opts = {};
+
+	v = flags.port || ENV.PORT;
+	if ( v ) {
+		opts.port = parseInt( v, 10 );
+	}
+	v = flags.maxport || ENV.MAXPORT;
+	if ( v ) {
+		opts.maxport = parseInt( v, 10 );
+	}
+	v = flags.hostname || ENV.HOSTNAME;
+	if ( v ) {
+		opts.hostname = v;
+	}
+	v = flags.address || ENV.ADDRESS;
+	if ( v ) {
+		opts.address = v;
+	}
+	if ( flags.open ) {
+		opts.open = true;
+	}
+
+	// Load an HTML file...
+	if ( flags.html ) {
+		fpath = resolve( cwd(), flags.html );
+		file = readFileSync( fpath );
+		if ( file instanceof Error ) {
+			return cli.error( file );
+		}
+		opts.html = file;
+	}
+	// Load a JavaScript file...
+	if ( flags.javascript ) {
+		fpath = resolve( cwd(), flags.javascript );
+		file = readFileSync( fpath );
+		if ( file instanceof Error ) {
+			return cli.error( file );
+		}
+		opts.javascript = file;
+	}
+	// Determine if we need to read data from `stdin`...
+	if ( flags.stdin ) {
+		if ( flags.stdin === 'html' ) {
+			return stdin( html );
+		}
+		if (
+			flags.stdin === 'javascript' ||
+			flags.stdin === 'js'
+		) {
+			return stdin( javascript );
+		}
+		err = new Error( 'invalid flag. Unrecognized/unsupported `stdin` type: '+flags.stdin+'.' );
+		return cli.error( err );
+	}
+	// If the `stdin` flag has not been set and we're receiving data (i.e., not running in a terminal context), assume a content type based on either an `--html` or `--javascript` flag being set...
+	if ( !process.stdin.isTTY ) {
+		if ( flags.html ) {
+			return stdin( javascript );
+		}
+		if ( flags.javascript ) {
+			return stdin( html );
+		}
+		// Neither `--html` or `--javascript` was set...
+		err = new Error( 'invalid invocation. Must specify a `stdin` content type.' );
+		return cli.error( err );
+	}
+
+	return process.nextTick( next );
+
+	/**
+	* Callback invoked after attempting to read HTML from `stdin`.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {Buffer} data - `stdin` data
+	* @returns {void}
+	*/
+	function html( error, data ) {
+		if ( error ) {
+			return cli.error( error );
+		}
+		if ( data.toString() === '' ) {
+			error = new Error( 'no input data. Provide either a path to an HTML file or provide HTML via `stdin`.' );
+			return cli.error( error );
+		}
+		opts.html = data;
+		next();
+	}
+
+	/**
+	* Callback invoked after attempting to read JavaScript from `stdin`.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {Buffer} data - `stdin` data
+	* @returns {void}
+	*/
+	function javascript( error, data ) {
+		if ( error ) {
+			return cli.error( error );
+		}
+		if ( data.toString() === '' ) {
+			error = new Error( 'no input data. Provide either a path to a JavaScript file or provide JavaScript via `stdin`.' );
+			return cli.error( error );
+		}
+		opts.javascript = data;
+		next();
+	}
+
+	/**
+	* Callback invoked once ready to run an HTTP server.
+	*
+	* @private
+	*/
+	function next() {
+		httpServer( opts );
+	}
+}
+
+main();

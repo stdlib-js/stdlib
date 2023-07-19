@@ -28,7 +28,7 @@ import startsWith = require( './index' );
 	startsWith( 'abd', 'ab', 1 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided arguments having invalid types...
+// The compiler throws an error if the function is provided arguments having invalid types...
 {
 	startsWith( true, 'd' ); // $ExpectError
 	startsWith( false, 'd' ); // $ExpectError
@@ -52,7 +52,7 @@ import startsWith = require( './index' );
 	startsWith( 'abd', 'b', /[a-z]/ ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	startsWith(); // $ExpectError
 	startsWith( 'abc' ); // $ExpectError

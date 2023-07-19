@@ -24,7 +24,7 @@
 #include <assert.h>
 
 /**
-* Invokes a strided array interface which applies a unary callback accepting and returning single-precision floating-point numbers to each element in a single-precision floating-point strided input array and assigns results to elements in a single-precision floating-point strided output array.
+* Invokes a strided array interface which applies a unary callback to a single-precision floating-point strided input array and assigns results to a single-precision floating-point strided output array.
 *
 * ## Notes
 *

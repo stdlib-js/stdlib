@@ -54,7 +54,7 @@ type Binary = ( value: any, aidx: number ) => number | void;
 * @param sidx - strided index (offset + aidx*stride)
 * @returns accessed value
 */
-type Tertiary = ( value: any, aidx: number, sidx: number ) => number | void;
+type Ternary = ( value: any, aidx: number, sidx: number ) => number | void;
 
 /**
 * Returns an accessed value.
@@ -76,7 +76,7 @@ type Quaternary = ( value: any, aidx: number, sidx: number, array: Collection ) 
 * @param array - input array
 * @returns accessed value
 */
-type Callback = Nullary | Unary | Binary | Tertiary | Quaternary;
+type Callback = Nullary | Unary | Binary | Ternary | Quaternary;
 
 /**
 * Interface describing `nanrangeBy`.

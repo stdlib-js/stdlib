@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Returns the data type of a complex number object.
+
+    If provided an argument having an unknown or unsupported type, the function
+    returns `null`.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    Returns
+    -------
+    out: string|null
+        Data type.
+
+    Examples
+    --------
+    > var v = new {{alias:@stdlib/complex/float64}}( 1.0, 2.0 );
+    > var dt = {{alias}}( v )
+    'complex128'
+    > dt = {{alias}}( 'beep' )
+    null
+
+    See Also
+    --------
+

@@ -27,7 +27,7 @@ import float32ToInt32 = require( './index' );
 	float32ToInt32( -3.14 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	float32ToInt32( true ); // $ExpectError
 	float32ToInt32( false ); // $ExpectError
@@ -37,7 +37,7 @@ import float32ToInt32 = require( './index' );
 	float32ToInt32( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	float32ToInt32(); // $ExpectError
 }

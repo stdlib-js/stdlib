@@ -48,7 +48,7 @@ interface IsTriangularNumber {
 	* var bool = isTriangularNumber( null );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is number | Number;
 
 	/**
 	* Tests if a value is a number primitive having a value which is a triangular number.
@@ -64,7 +64,7 @@ interface IsTriangularNumber {
 	* var bool = isTriangularNumber.isPrimitive( new Number( 36.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is number;
 
 	/**
 	* Tests if a value is a number object having a value which is a triangular number.
@@ -80,7 +80,7 @@ interface IsTriangularNumber {
 	* var bool = isTriangularNumber.isObject( new Number( 36.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is Number;
 }
 
 /**

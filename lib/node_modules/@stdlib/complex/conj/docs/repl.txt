@@ -1,15 +1,16 @@
 
 {{alias}}( z )
-    Returns the complex conjugate of a complex number.
+    Returns the complex conjugate of a double-precision complex floating-point
+    number.
 
     Parameters
     ----------
-    z: Complex
+    z: Complex128
         Complex number.
 
     Returns
     -------
-    out: Complex
+    out: Complex128
         Complex conjugate.
 
     Examples

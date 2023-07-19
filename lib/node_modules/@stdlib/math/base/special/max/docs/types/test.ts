@@ -23,39 +23,29 @@ import max = require( './index' );
 
 // The function returns a number...
 {
-	max(); // $ExpectType number
-	max( 5 ); // $ExpectType number
-	max( 3, -0.2 ); // $ExpectType number
-	max( 3, -0.2, -1.2, -4.0 ); // $ExpectType number
+	max( 3.0, -0.2 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided non-number arguments...
 {
-	max( true ); // $ExpectError
-	max( false ); // $ExpectError
-	max( [] ); // $ExpectError
-	max( {} ); // $ExpectError
-	max( 'abc' ); // $ExpectError
-	max( ( x: number ): number => x ); // $ExpectError
+	max( true, 3.0 ); // $ExpectError
+	max( false, 3.0 ); // $ExpectError
+	max( [], 3.0 ); // $ExpectError
+	max( {}, 3.0 ); // $ExpectError
+	max( 'abc', 3.0 ); // $ExpectError
+	max( ( x: number ): number => x, 3.0 ); // $ExpectError
 
-	max( true, 3 ); // $ExpectError
-	max( false, 3 ); // $ExpectError
-	max( [], 3 ); // $ExpectError
-	max( {}, 3 ); // $ExpectError
-	max( 'abc', 3 ); // $ExpectError
-	max( ( x: number ): number => x, 3 ); // $ExpectError
+	max( 2.0, true ); // $ExpectError
+	max( 2.0, false ); // $ExpectError
+	max( 2.0, [] ); // $ExpectError
+	max( 2.0, {} ); // $ExpectError
+	max( 2.0, 'abc' ); // $ExpectError
+	max( 2.0, ( x: number ): number => x ); // $ExpectError
+}
 
-	max( 1.2, true ); // $ExpectError
-	max( 1.2, false ); // $ExpectError
-	max( 1.2, [] ); // $ExpectError
-	max( 1.2, {} ); // $ExpectError
-	max( 1.2, 'abc' ); // $ExpectError
-	max( 1.2, ( x: number ): number => x ); // $ExpectError
-
-	max( 1.2, 3, true ); // $ExpectError
-	max( 1.2, 3, false ); // $ExpectError
-	max( 1.2, 3, [] ); // $ExpectError
-	max( 1.2, 3, {} ); // $ExpectError
-	max( 1.2, 3, 'abc' ); // $ExpectError
-	max( 1.2, 3, ( x: number ): number => x ); // $ExpectError
+// The compiler throws an error if provided an unsupported number of arguments...
+{
+	max(); // $ExpectError
+	max( 1.0 ); // $ExpectError
+	max( 1.0, 2.0, 3.0 ); // $ExpectError
 }

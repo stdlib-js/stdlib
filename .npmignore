@@ -18,9 +18,16 @@
 
 # Files #
 #########
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+CONTRIBUTORS
+FAQ.md
 TODO.md
 ROADMAP.md
-.postinstall.json
+package.json.copy
+
+# TODO: once we start compiling native add-ons, we need to remove this exclusion...
+Makefile
 
 # Directories #
 ###############
@@ -28,23 +35,30 @@ ROADMAP.md
 .github/
 **/benchmark/
 **/build/
+**/dist/
 **/examples/
 reports/
 support/
+**/test/
 **/tmp/
 workshops/
 
-# Ignore test directories, except for testing dependency installation:
-**/test/
-!/deps/test/
+# Ignore dev dependency directories:
+/deps/*
+/deps/checksums/*
+/deps/test/*
 
-# Ignore top-level tools directory, except for scripts:
-/tools/*
-!/tools/scripts/
+!/deps/checksums/electron_*
+!/deps/checksums/openblas_*
+
+!/deps/test/electron*
+!/deps/test/openblas*
 
 # Only top-level directories:
 /etc/
-/docs/
+/docs/*
+!/docs/types/*
+/tools/
 
 # Compiled source #
 ###################
@@ -87,9 +101,6 @@ workshops/
 *.tar
 *.zip
 
-# Make an exception for compressed distributable files:
-!dist/*.gz
-
 # Logs and databases #
 ######################
 *.log
@@ -115,9 +126,7 @@ Desktop.ini
 # Node.js #
 ###########
 .npmignore
-
-# Only top-level node_modules:
-/node_modules/
+**/node_modules/
 
 # TypeScript #
 ##############
@@ -210,17 +219,19 @@ jsconfig.json
 .eslintrc*
 .eslintignore
 
+.remarkignore
+
 .pylintrc
 .pycodestyle
 .pydocstyle
 
-.travis.yml
-circle.yml
 appveyor.yml
 azure-pipelines.yml
-
-.editorconfig
+circle.yml
 .codeclimate.yml
 .codecov.yml
+.travis.yml
+
+.editorconfig
 
 .rtlintrc

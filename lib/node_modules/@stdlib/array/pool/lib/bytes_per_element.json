@@ -7,5 +7,7 @@
 	"uint16": 2,
 	"uint32": 4,
 	"uint8": 1,
-	"uint8c": 1
+	"uint8c": 1,
+  "complex64": 8,
+  "complex128": 16
 }

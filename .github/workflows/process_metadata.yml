@@ -1,0 +1,102 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: process_metadata
+
+# Workflow triggers:
+on:
+  push:
+    branches:
+      - develop
+  issue_comment:
+    types: [created, edited]
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for processing commit message and issue comment metadata...
+  process:
+
+    # Define a display name:
+    name: 'Process Metadata'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+      # Exit if the user does not have write access to the repository:
+      - name: 'Exit if user does not have write access'
+        uses: lannonbr/repo-permission-check-action@2.0.0
+        with:
+          permission: 'write'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent 100 commits:
+          fetch-depth: 100
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Extract commit message and issue comment metadata:
+      - name: 'Extract metadata'
+        id: extract-metadata
+        uses: stdlib-js/metadata-action@v2
+
+      # Check the metadata for directives to send tweets:
+      - name: 'Send tweets'
+        uses: stdlib-js/metadata-tweet-action@v1
+        with:
+          metadata: ${{ steps.extract-metadata.outputs.metadata }}
+          TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
+          TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+
+      # Check the metadata for directives to dispatch workflows:
+      - name: 'Check metadata for workflow dispatch directives'
+        id: check-workflow-dispatch
+        run: |
+          inputs=$(echo '${{ steps.extract-metadata.outputs.metadata }}' | jq -c '.[] | select(.type | contains("workflow_dispatch"))')
+          if [ -n "$inputs" ]; then
+            name=$(echo $inputs | jq -r '.name')
+            inputs=$(echo $inputs | jq -c 'del(.type, .name, .author, .id, .url) | map_values(tostring)')
+            echo "inputs=$inputs" >> $GITHUB_OUTPUT
+            echo "workflow=$name" >> $GITHUB_OUTPUT
+            echo "dispatch=true" >> $GITHUB_OUTPUT
+          else
+            echo "dispatch=false" >> $GITHUB_OUTPUT
+          fi
+
+      # Dispatch first found workflow (if applicable):
+      - name: 'Dispatch workflow with inputs'
+        uses: benc-uk/workflow-dispatch@v1
+        if: steps.check-workflow-dispatch.outputs.dispatch == 'true'
+        with:
+          workflow: ${{ steps.check-workflow-dispatch.outputs.workflow }}
+          inputs: ${{ steps.check-workflow-dispatch.outputs.inputs }}

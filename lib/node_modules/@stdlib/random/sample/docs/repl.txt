@@ -46,23 +46,23 @@
     e.g., [ 3, 'abc', null, 3, null ]
 
     // Set sample size:
-    > out = {{alias}}( [ 3, 6, 9 ], { 'size': 10 })
+    > out = {{alias}}( [ 3, 6, 9 ], { 'size': 10 } )
     e.g., [ 6, 3, 9, 9, 9, 6, 9, 6, 9, 3 ]
-    > out = {{alias}}( [ 0, 1 ], { 'size': 20 })
+    > out = {{alias}}( [ 0, 1 ], { 'size': 20 } )
     e.g., [ 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0 ]
 
     // Draw without replacement:
-    > out = {{alias}}( [ 1, 2, 3, 4, 5, 6 ], { 'replace': false, 'size': 3 })
+    > out = {{alias}}( [ 1, 2, 3, 4, 5, 6 ], { 'replace': false, 'size': 3 } )
     e.g., [ 6, 1, 5 ]
-    > out = {{alias}}( [ 0, 1 ], { 'replace': false })
+    > out = {{alias}}( [ 0, 1 ], { 'replace': false } )
     e.g., [ 0, 1 ]
 
     // Assigning non-uniform element probabilities:
     > var x = [ 1, 2, 3, 4, 5, 6 ];
     > var probs = [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.5 ];
-    > out = {{alias}}( x, { 'probs': probs })
+    > out = {{alias}}( x, { 'probs': probs } )
     e.g., [ 5, 6, 6, 5, 6, 4 ]
-    > out = {{alias}}( x, { 'probs': probs, 'size': 3, 'replace': false })
+    > out = {{alias}}( x, { 'probs': probs, 'size': 3, 'replace': false } )
     e.g., [ 6, 4, 1 ]
 
 
@@ -106,13 +106,13 @@
     Examples
     --------
     // Set a seed:
-    > var mysample = {{alias}}.factory({ 'seed': 232 });
+    > var mysample = {{alias}}.factory({ 'seed': 232 } );
     > var out = mysample( 'abcdefg' )
     e.g., [ 'g', 'd', 'g', 'f', 'c', 'e', 'f' ]
 
     // Provide `pool` and set a seed plus a default sample size:
     > var pool = [ 1, 2, 3, 4, 5, 6 ];
-    > mysample = {{alias}}.factory( pool, { 'seed': 232, 'size': 2 });
+    > mysample = {{alias}}.factory( pool, { 'seed': 232, 'size': 2 } );
     > out = mysample()
     e.g., [ 6, 4 ]
     > out = mysample()
@@ -130,14 +130,14 @@
     null
 
     // Override default `size` parameter when invoking created function:
-    > mysample = {{alias}}.factory( [ 0, 1 ], { 'size': 2 });
+    > mysample = {{alias}}.factory( [ 0, 1 ], { 'size': 2 } );
     > out = mysample()
     e.g., [ 1, 1 ]
     > out = mysample({ 'size': 10 })
     e.g, [ 0, 1, 1, 1, 0, 1, 0, 0, 1, 1 ]
 
     // Sample with and without replacement:
-    > mysample = {{alias}}.factory( [ 0, 1 ], { 'size': 2 });
+    > mysample = {{alias}}.factory( [ 0, 1 ], { 'size': 2 } );
     > out = mysample()
     e.g., [ 1, 1 ]
     > out = mysample({ 'replace': false })

@@ -1,0 +1,138 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: standalone_test
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow concurrency group:
+concurrency:
+
+  # Specify a group name:
+  group: ${{ github.workflow }}
+
+  # Specify whether to cancel any currently running workflow in the same concurrency group:
+  cancel-in-progress: true
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for triggering test workflows for standalone packages...
+  trigger:
+
+    # Define a display name:
+    name: 'Trigger tests'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Trigger standalone package tests:
+      - name: 'Trigger tests'
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+        run: |
+          node lib/node_modules/@stdlib/_tools/scripts/trigger_workflow_events.js
+
+  # Define a job for sending notifications to Slack...
+  slack:
+
+    # Define a display name:
+    name: 'Slack notification'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Indicate that this job depends on the prior job finishing:
+    needs: trigger
+
+    # Run this job regardless of the outcome of the prior job:
+    if: always()
+
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Resolve notification data:
+      - name: 'Resolve notification data'
+        run: |
+          echo 'NOTIFICATION_STATUS=${{ needs.trigger.result}}' >> $GITHUB_ENV
+          if [[ "${{ needs.trigger.result }}" = "success" ]]; then
+            echo 'NOTIFICATION_TEXT=**standalone_test** workflow succeeded' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
+          elif [[ "${{ needs.trigger.result }}" = "failure" ]]; then
+            echo 'NOTIFICATION_TEXT=**standalone_test** workflow failed' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
+          elif [[ "${{ needs.trigger.result }}" = "cancelled" ]]; then
+            echo 'NOTIFICATION_TEXT=**standalone_test** workflow was canceled' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
+          else
+            exit 1
+          fi
+        timeout-minutes: 5
+
+      # Send notification to Slack:
+      - name: 'Send notification'
+        uses: 8398a7/action-slack@v3
+        if: success()
+        with:
+          status: "${{ env.NOTIFICATION_STATUS }}"
+          fields: repo,commit,message
+          text: "${{ env.NOTIFICATION_TEXT }}"
+          author_name: "${{ env.NOTIFICATION_AUTHOR_NAME }}"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+        timeout-minutes: 5

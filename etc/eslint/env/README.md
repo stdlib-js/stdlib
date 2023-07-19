@@ -24,7 +24,7 @@ This directory contains [ESLint][eslint] settings for lint environments.
 
 <section class="links">
 
-[eslint]: http://eslint.org/
+[eslint]: https://eslint.org/
 
 </section>
 

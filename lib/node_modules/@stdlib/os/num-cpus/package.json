@@ -19,7 +19,6 @@
   "main": "./lib",
   "browser": "./lib/browser.js",
   "directories": {
-    "bin": "./bin",
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",

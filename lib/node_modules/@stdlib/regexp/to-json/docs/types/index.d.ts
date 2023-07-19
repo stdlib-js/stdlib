@@ -1,0 +1,56 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2022 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/**
+* JSON representation of a regular expression.
+*/
+interface JSONRepresentation {
+	/**
+	* Value type.
+	*/
+	type: 'RegExp';
+
+	/**
+	* Regular expression pattern.
+	*/
+	pattern: string;
+
+	/**
+	* Regular expression flags.
+	*/
+	flags: string;
+}
+
+/**
+* Returns a JSON representation of a regular expression.
+*
+* @param re - regular expression to serialize
+* @returns JSON representation
+*
+* @example
+* var json = regexp2json( /ab+c/ );
+* // returns {...}
+*/
+declare function regexp2json( re: RegExp ): JSONRepresentation;
+
+
+// EXPORTS //
+
+export = regexp2json;

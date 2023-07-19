@@ -26,7 +26,7 @@ import stdev = require( './index' );
 	stdev( 16, 12, 5 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than three numbers...
+// The compiler throws an error if the function is provided values other than three numbers...
 {
 	stdev( true, 3, 2 ); // $ExpectError
 	stdev( false, 4, 2 ); // $ExpectError
@@ -50,7 +50,7 @@ import stdev = require( './index' );
 	stdev( 80, 16, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	stdev(); // $ExpectError
 	stdev( 30 ); // $ExpectError

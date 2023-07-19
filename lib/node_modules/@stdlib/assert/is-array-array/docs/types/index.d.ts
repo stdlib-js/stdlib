@@ -34,7 +34,7 @@
 * bool = isArrayArray( [] );
 * // returns false
 */
-declare function isArrayArray( value: any ): boolean;
+declare function isArrayArray( value: any ): value is Array<Array<any>>;
 
 
 // EXPORTS //

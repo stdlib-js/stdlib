@@ -19,28 +19,40 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_TYPES ?= $(TOOLS_PKGS_DIR)/pkgs/types/bin/cli
+LIST_PKGS_TYPES ?= $(TOOLS_PKGS_DIR)/pkgs/types/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_TYPES_FLAGS ?=
+LIST_PKGS_TYPES_FLAGS ?=
+
+# Define the directory from which to search for packages:
+LIST_PKGS_TYPES_DIR ?= $(SRC_DIR)
 
 
-# TARGETS #
+# RULES #
 
-# List all packages containing TypeScript declarations.
+#/
+# Prints a list of all packages containing TypeScript declarations.
 #
-# This target prints a list of all packages containing TypeScript declarations.
-
-list-pkgs-types: $(LIST_PACKAGE_TYPES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_TYPES) $(LIST_PACKAGE_TYPES_FLAGS) $(SRC_DIR)
+# @param {string} [LIST_PKGS_TYPES_DIR] - absolute path of the directory from which to search (default: source directory)
+#
+# @example
+# make list-pkgs-types
+#
+# @example
+# make list-pkgs-types LIST_PKGS_TYPES_DIR="$PWD/lib/node_modules/\@stdlib/utils"
+#/
+list-pkgs-types: $(LIST_PKGS_TYPES) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_TYPES)" $(LIST_PKGS_TYPES_FLAGS) "$(LIST_PKGS_TYPES_DIR)"
 
 .PHONY: list-pkgs-types
 
-# List all packages without TypeScript declarations.
+#/
+# Prints a newline-delimited list of all packages without TypeScript declarations.
 #
-# This target prints a newline-delimited list of all packages without TypeScript declarations.
-
-list-pkgs-without-types:
+# @example
+# make list-pkgs-no-types
+#/
+list-pkgs-no-types:
 	$(QUIET) comm -23 <($(MAKE) -f $(this_file) list-lib-pkgs | sort) <($(MAKE) -f $(this_file) list-pkgs-types | sort)
 
-.PHONY: list-pkgs-without-types
+.PHONY: list-pkgs-no-types

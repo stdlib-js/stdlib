@@ -27,7 +27,7 @@ CODECOV_CONF ?= $(ROOT_DIR)/.codecov.yml
 #/
 # Lints a [Codecov][1] configuration file.
 #
-# [1]: https://github.com/codecov/support/wiki/Codecov-Yaml
+# [1]: https://docs.codecov.com/docs/codecovyml-reference
 #
 # @example
 # make lint-conf-codecov

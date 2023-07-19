@@ -26,7 +26,7 @@ import keysIn = require( './index' );
 	keysIn( { 'beep': 'boop', 'foo': 3.14 } ); // $ExpectType string[]
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	keysIn(); // $ExpectError
 }

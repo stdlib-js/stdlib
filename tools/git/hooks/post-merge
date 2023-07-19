@@ -20,7 +20,7 @@
 #
 # This hook is called with the following arguments:
 #
-# * `$1` - status flag specifying whether or not the merge being done is a squash merge
+# -   `$1` - status flag specifying whether or not the merge being done is a squash merge
 #
 # This hook cannot does __not__ affect the outcome of `git merge` and is not executed if merge fails due to conflicts.
 
@@ -63,12 +63,6 @@ check_node_deps() {
 	return 0
 }
 
-# Cleans Node.js module dependencies.
-clean_node_deps() {
-	echo 'Removing Node.js module dependencies...' >&2
-	make clean-node
-}
-
 # Installs Node.js module dependencies.
 install_node_deps() {
 	echo 'Installing Node.js module dependencies...' >&2
@@ -85,7 +79,6 @@ init() {
 main() {
 	check_node_deps
 	if [[ "$?" -ne 0 ]]; then
-		clean_node_deps
 		install_node_deps
 	fi
 	init

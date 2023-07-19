@@ -13,6 +13,8 @@
     - Int8Array
     - Uint8Array
     - Uint8ClampedArray
+    - Complex64Array
+    - Complex128Array
 
     The returned JSON object has the following properties:
 

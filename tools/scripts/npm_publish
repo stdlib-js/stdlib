@@ -1,0 +1,692 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# shellcheck disable=SC2181
+
+# Publishes a new version of the project to the npm package registry.
+#
+# A `release` argument must be one of the following:
+#
+# -   `patch`
+# -   `minor`
+# -   `major`
+# -   `premajor`
+# -   `preminor`
+# -   `prepatch`
+# -   `prerelease`
+#
+# Usage: npm_publish <release> <message>
+#
+# Arguments:
+#
+#   release     release type.
+#   message     commit message.
+#
+
+# VARIABLES #
+
+# Set the release type:
+release="$1"
+
+# Set the release commit message:
+message="$2"
+
+# Determine the root directory:
+root_dir="$(git rev-parse --show-toplevel)"
+
+# Get the current commit hash:
+git_hash="$(git rev-parse HEAD)"
+
+# Get the current Git branch:
+git_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+# Specify the path to the root package.json:
+package_json="${root_dir}/package.json"
+
+# Get the current project version:
+script1="var pkg = require( '${package_json}' ); console.log( pkg.version );"
+current_version=$(node -e "${script1}" | tr -d '\n' )
+
+# Determine the new project version:
+script2="var semver = require( 'semver' ); console.log( semver.inc( '${current_version}', '${release}' ) );"
+release_version=$(node -e "${script2}" | tr -d '\n' )
+
+# Specify the project source code directory:
+base_dir="${root_dir}/lib/node_modules"
+
+# Specify the path to a script for updating package directories meta data:
+update_directories="${base_dir}/@stdlib/_tools/package-json/scripts/update_directories"
+
+# Specify the output build directory when generating a gzipped archive:
+npm_tarball_build_out="${root_dir}/build/npm"
+
+# Define the gzipped archive basename:
+npm_tarball_basename="stdlib-stdlib-${release_version}.tgz"
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	rm -rf "${npm_tarball_build_out}"
+
+}
+
+# Prints a success message.
+print_success() {
+	echo '' >&2
+	echo 'Success!' >&2
+	echo '' >&2
+}
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: npm_publish <release> <message>' >&2
+	echo '' >&2
+	echo 'Arguments:' >&2
+	echo '' >&2
+	echo '  release     release type (patch, minor, major, etc).' >&2
+	echo '  message     commit message.' >&2
+	echo '' >&2
+}
+
+# Reverts changes, resetting repository to its prior state.
+revert_changes() {
+	echo 'Reverting changes...' >&2
+	git reset --hard "${git_hash}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to reverting changes.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully reverted changes.' >&2
+	echo '' >&2
+	return 0
+}
+
+# Performs checks to prevent unintended behavior when attempting to publish to npm.
+check() {
+	echo 'Performing checks...' >&2
+	if [[ "${git_branch}" != 'develop' ]]; then
+		echo '' >&2
+		echo 'Error: invalid operation. Releasing new versions should only be performed on the develop branch.' >&2
+		echo '' >&2
+		return 1
+	fi
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Error: invalid operation. Working directory must be clean.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully performed checks.' >&2
+	echo '' >&2
+	return 0
+}
+
+# Pulls the latest changes from a remote repository.
+update_repository() {
+	echo 'Pulling the latest changes...' >&2
+	git pull origin "${git_branch}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Pulling the latest changes failed. Check for merge conflicts.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully pulled latest changes.' >&2
+	echo '' >&2
+	return 0
+}
+
+# Initializes the development environment.
+init() {
+	echo 'Initializing development environment...' >&2
+	make init
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Unable to initialize development environment.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully initialized development environment.' >&2
+	echo '' >&2
+	return 0
+}
+
+# Checks licenses of dependencies.
+check_licenses() {
+	echo 'Checking dependency licenses...' >&2
+	make check-licenses-production >/dev/null
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Potential incompatible dependency license. Please resolve before publishing. Command: make check-licenses-production.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'No detected licensing issues.' >&2
+	echo '' >&2
+	return 0
+}
+
+# Checks that the project can be sorted topologically.
+check_toposort() {
+	echo 'Performing a topological sort...' >&2
+	make list-pkgs-toposort >/dev/null
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Unable to perform a topological sort. This is likely due to a dependency cycle. Please resolve before publishing. Command: make list-pkgs-toposort.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully performed a topological sort.' >&2
+	echo '' >&2
+	return 0
+}
+
+# Updates package meta data.
+update_package_meta_data() {
+	echo 'Updating package meta data...' >&2
+
+	echo '' >&2
+	echo 'Updating directories...' >&2
+	node "${update_directories}" "${base_dir}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating directories meta data.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated directories.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m 'Update directories meta data'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+
+	return 0
+}
+
+# Updates namespace table of contents.
+update_namespace_tocs() {
+	local files
+
+	echo 'Updating namespace table of contents...' >&2
+
+	echo '' >&2
+	echo 'Resolving list of namespace READMEs...' >&2
+	files=$(make list-pkgs-namespace-readmes | tr '\n' ' ')
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when resolving a list of namespace READMEs.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully resolved namespace READMEs.' >&2
+
+	echo '' >&2
+	echo 'Updating READMEs...' >&2
+	make FILES="${files}" markdown-namespace-tocs-files
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating namespace README table of contents.' >&2
+		echo '' >&2
+		return 1
+	fi
+	make FILES="${files}" markdown-pkg-urls-files
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating namespace README package URLs.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated READMEs.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m 'Update namespace ToCs'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+
+	return 0
+}
+
+# Updates related package sections in Markdown files.
+update_markdown_related() {
+	echo 'Updating related package sections in Markdown files...' >&2
+	make markdown-related MARKDOWN_FILTER='.*/lib/node_modules/@stdlib/.*'
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating related packages sections in Markdown files.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated Markdown files.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m 'Update related packages'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+
+	return 0
+}
+
+# Updates package URLs in Markdown files.
+update_markdown_package_urls() {
+	echo 'Updating package URLs in Markdown files...' >&2
+	make markdown-pkg-urls MARKDOWN_FILTER='.*/lib/node_modules/@stdlib/.*'
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating package URLs in Markdown files.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated Markdown files.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m 'Update package URLs'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+
+	return 0
+}
+
+# Updates REPL documentation.
+update_repl_docs() {
+	echo 'Updating REPL documentation...' >&2
+	make repl-docs
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating REPL documentation.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated REPL documentation.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m 'Update REPL docs'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+
+	return 0
+}
+
+# Updates the version in the root package.json.
+update_version() {
+	echo 'Updating project version...' >&2
+	echo "Current version: ${current_version}" >&2
+	echo "Release version: ${release_version}" >&2
+	if [[ "$OSTYPE" == "darwin"* ]]; then
+		sed -i '' "s/${current_version}/${release_version}/" "${package_json}"
+	else
+		sed -i "s/${current_version}/${release_version}/" "${package_json}"
+	fi
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating project version.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated version.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m "${message}"
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+	return 0
+}
+
+# Updates the `@stdlib` dependencies in the root package.json to their latest versions.
+update_internal_dependencies() {
+	echo 'Updating `@stdlib` dependency versions...' >&2
+	echo 'Getting list of `@stdlib` dependencies...' >&2
+	script="var pkg = require( '${package_json}' ); var keys = Object.keys( pkg.dependencies ); for ( var i = 0; i < keys.length; i++ ) { if ( /^@stdlib/.test( keys[ i ] ) ) { console.log( keys[ i ] ); } }"
+	dependencies="$(node -e "${script}")"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when getting list of `@stdlib` dependencies.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Retrieving latest versions for `@stdlib` dependencies...' >&2
+	for dependency in ${dependencies}; do
+		pkgVersion="$(npm view "${dependency}" version)"
+		echo "Updating ${dependency} to ${pkgVersion} in ${package_json}..." >&2
+		echo "s/\"${dependency}\":[^,]*/\"${dependency}\": \"${pkgVersion}\"/"	>&2
+		if [[ "$OSTYPE" == "darwin"* ]]; then
+			sed -i '' "s%\"${dependency}\":[^,]*%\"${dependency}\": \"${pkgVersion}\"%" "${package_json}"
+		else
+			sed -i "s%\"${dependency}\":[^,]*%\"${dependency}\": \"${pkgVersion}\"%" "${package_json}"
+		fi
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo "Error: unexpected error. Encountered an error when updating ${dependency}." >&2
+			echo '' >&2
+			return 1
+		fi
+		echo "Updated version for ${dependency}: ${pkgVersion}" >&2
+	done
+	echo 'Successfully updated dependency versions.' >&2
+}
+
+# Generates and publishes distributable bundles.
+publish_bundles() {
+	echo 'Publishing distributable bundles...' >&2
+	make dist-bundles-publish
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to publish distributable bundles.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully published distributable bundles.' >&2
+
+	echo '' >&2
+	echo 'Removing bundle artifacts...' >&2
+	make clean-dist-bundles
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to remove bundle artifacts.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully removed bundled artifacts.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m 'Update dist versions'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+
+	return 0
+}
+
+# Creates (and pushes) a new Git tag.
+create_tag() {
+	echo 'Creating a new tag...' >&2
+	git tag -a "v${release_version}" -m "${message}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to create a new tag.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully created tag.' >&2
+	echo '' >&2
+	return 0
+}
+
+# Generates a gzipped archive for publishing to npm.
+create_tarball() {
+	echo 'Generating a gzipped archive for publishing to npm...' >&2
+
+	mkdir -p "${npm_tarball_build_out}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Unable to create output build directory.' >&2
+		echo '' >&2
+		return 1
+	fi
+	npm pack "${root_dir}" >/dev/null
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Unable to create a gzipped archive.' >&2
+		echo '' >&2
+		return 1
+	fi
+	mv "${root_dir}/${npm_tarball_basename}" "${npm_tarball_build_out}/${npm_tarball_basename}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Unable to move gzipped archive to build directory.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully generated a gzipped archive.' >&2
+	echo '' >&2
+
+	return 0
+}
+
+# Publishes a tarball to the npm package registry.
+publish() {
+	echo 'Publishing tarball to npm...' >&2
+	npm publish "${npm_tarball_build_out}/${npm_tarball_basename}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Unable to publish to npm.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully published to npm.' >&2
+	echo '' >&2
+	return 0
+}
+
+# Updates a remote repository.
+update_remote_repository() {
+	echo 'Pushing tags to remote repository...' >&2
+	git push origin "v${release_version}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to push tags to remote repository.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully pushed tags.' >&2
+
+	echo '' >&2
+	echo 'Pushing commits to remote repository...' >&2
+	git push origin "${git_branch}"
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Failed to push commits. Pulling down any recent changes...' >&2
+		git pull origin "${git_branch}"
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Pulling the latest changes failed. Check for merge conflicts.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully pulled latest changes.' >&2
+
+		git push origin "${git_branch}"
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Encountered an error when attempting to push commits to remote repository.' >&2
+			echo '' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully pushed commits.' >&2
+	echo '' >&2
+
+	return 0
+}
+
+
+# MAIN #
+
+# Main execution sequence.
+main() {
+	echo '' >&2
+	check
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	update_repository
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	init
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	check_licenses
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	check_toposort
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	update_package_meta_data
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_namespace_tocs
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_markdown_related
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_markdown_package_urls
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_repl_docs
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_version
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_internal_dependencies
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+
+	# WARNING: at this point, we are at the point of no return and, from this point forward, cannot easily revert changes to the local repository as packages may already be published...
+
+	publish_bundles
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	create_tag
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	create_tarball
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	publish
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	update_remote_repository
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	print_success
+	cleanup
+	exit 0
+}
+
+# Handle arguments...
+if [[ "$#" -eq 0 ]]; then
+	usage
+	exit 0
+elif [[ "$#" -gt 2 ]]; then
+	echo '' >&2
+	echo 'Error: unrecognized arguments. Must specify a version and message.' >&2
+	echo '' >&2
+	exit 1
+fi
+
+# Run main:
+main

@@ -37,15 +37,17 @@ ifneq ($(OS), Darwin)
 endif
 
 # Define the executable for generating a coverage report name:
-COVERAGE_REPORT_NAME ?= $(TOOLS_DIR)/test-cov/scripts/coverage_report_name
+COVERAGE_REPORT_NAME ?= $(TOOLS_DIR)/test-cov/scripts/istanbul_coverage_report_name
 
 # Define the path to the Istanbul executable.
 #
-# To install Istanbul:
+# ## Notes
 #
-# ```bash
-# $ npm install istanbul
-# ```
+# -   To install Istanbul:
+#
+#     ```bash
+#     $ npm install istanbul@0.4.5
+#     ```
 #
 # [1]: https://github.com/gotwarlost/istanbul
 ISTANBUL ?= $(BIN_DIR)/istanbul
@@ -123,19 +125,36 @@ endif
 
 # FUNCTIONS #
 
+#/
 # Macro to retrieve a list of test directories for Istanbul instrumented source code.
 #
+# @private
+#
+# @example
 # $(call get-istanbul-test-dirs)
-
+#/
 get-istanbul-test-dirs = $(shell find $(find_kernel_prefix) $(ISTANBUL_INSTRUMENT_OUT) $(FIND_ISTANBUL_TEST_DIRS_FLAGS))
 
 
-# TARGETS #
+# RULES #
 
+#/
 # Instruments source code.
 #
-# This target instruments source code.
-
+# ## Notes
+#
+# -   This recipe does the following:
+#
+#     1.  Instruments all package source files and writes the instrumented files to a specified directory (e.g., a `build` directory).
+#     2.  Copies all non-instrumented package files to the instrumentation directory. This is necessary as files such as `*.json` files are not instrumented, and thus, the files are not copied over by Istanbul.
+#
+#     In short, we need to effectively recreate the project source tree in the instrumentation directory in order for tests to properly run.
+#
+# @private
+#
+# @example
+# make test-istanbul-instrument
+#/
 test-istanbul-instrument: $(NODE_MODULES) clean-istanbul-instrument
 	$(QUIET) $(MKDIR_RECURSIVE) $(ISTANBUL_INSTRUMENT_OUT)
 	$(QUIET) $(ISTANBUL_INSTRUMENT) $(ISTANBUL_INSTRUMENT_FLAGS) $(SRC_DIR)
@@ -146,11 +165,25 @@ test-istanbul-instrument: $(NODE_MODULES) clean-istanbul-instrument
 
 .PHONY: test-istanbul-instrument
 
-
-# Run unit tests and generate a test coverage report.
+#/
+# Runs unit tests and generates a test coverage report.
 #
-# This target instruments source code, runs unit tests, and outputs a test coverage report.
-
+# ## Notes
+#
+# -   Raw TAP output is piped to a TAP reporter.
+# -   This command is useful when wanting to glob for JavaScript test files (e.g., generate a test coverage report for all JavaScript tests for a particular package).
+#
+#
+# @private
+# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop running tests upon encountering a test failure
+#
+# @example
+# make test-istanbul
+#
+# @example
+# make test-istanbul TESTS_FILTER=".*/blas/base/dasum/.*"
+#/
 test-istanbul: $(NODE_MODULES) test-istanbul-instrument
 	$(QUIET) $(MKDIR_RECURSIVE) $(COVERAGE_DIR)
 	$(QUIET) $(MAKE_EXECUTABLE) $(COVERAGE_REPORT_NAME)
@@ -171,43 +204,60 @@ test-istanbul: $(NODE_MODULES) test-istanbul-instrument
 
 .PHONY: test-istanbul
 
-
-# Generate a test coverage report.
+#/
+# Generates a single test coverage report from one or more JSON coverage files.
 #
-# This target generates a test coverage report from JSON coverage files.
-
+# @private
+#
+# @example
+# make test-istanbul-report
+#/
 test-istanbul-report: $(NODE_MODULES)
 	$(QUIET) $(ISTANBUL_REPORT) $(ISTANBUL_REPORT_FLAGS) $(ISTANBUL_REPORT_FORMAT)
 
 .PHONY: test-istanbul-report
 
-
-# Run unit tests and generate a test coverage report.
+#/
+# Runs unit tests and generates a test coverage report.
 #
-# This target instruments source code, runs unit tests, and outputs a test coverage report.
-
+# ## Notes
+#
+# -   This recipe implements the "classic" approach for using Istanbul to generate a code coverage report using the `cover` command. For certain situations, this recipe can still be used, but, in general, when using Istanbul, we instrument, backfill package files, and generate a coverage report from the instrumentation directory.
+#
+# @private
+#
+# @example
+# make test-istanbul-cover
+#/
 test-istanbul-cover: $(NODE_MODULES)
 	$(QUIET) NODE_ENV="$(NODE_ENV_TEST)" \
 	NODE_PATH="$(NODE_PATH_TEST)" \
+	TEST_MODE=coverage \
 	$(ISTANBUL_COVER) $(ISTANBUL_COVER_FLAGS) $(JAVASCRIPT_TEST) -- $(JAVASCRIPT_TEST_FLAGS) $(TESTS)
 
 .PHONY: test-istanbul-cover
 
-
-# View a test coverage report.
+#/
+# Opens an HTML test coverage report in a local web browser.
 #
-# This target opens an HTML coverage report in a local web browser.
-
+# @private
+#
+# @example
+# make view-istanbul-report
+#/
 view-istanbul-report:
 	$(QUIET) $(OPEN) $(ISTANBUL_HTML_REPORT)
 
 .PHONY: view-istanbul-report
 
-
+#/
 # Removes instrumented files.
 #
-# This targets removes previously instrumented files by removing the instrumented source code directory entirely.
-
+# @private
+#
+# @example
+# make clean-istanbul-instrument
+#/
 clean-istanbul-instrument:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(COVERAGE_INSTRUMENTATION_DIR)
 

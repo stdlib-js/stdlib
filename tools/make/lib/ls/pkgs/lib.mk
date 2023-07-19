@@ -36,14 +36,43 @@ FIND_LIB_PACKAGES_CMD ?= find $(find_kernel_prefix) $(SRC_DIR) $(FIND_LIB_PACKAG
 # Define the list of packages:
 LIB_PACKAGES ?= $(shell $(FIND_LIB_PACKAGES_CMD))
 
+# Define the default number of random packages
+RANDOM_SELECTION_SIZE ?= 100
 
-# TARGETS #
 
-# List all packages.
+# RULES #
+
+#/
+# Prints a list of all packages.
 #
-# This target prints a list of all packages.
-
+# @param {string} [PACKAGES_PATTERN='package.json'] - filename pattern for identifying packages
+# @param {string} [PACKAGES_FILTER='.*/.*'] - filepath pattern for finding packages
+#
+# @example
+# make list-lib-pkgs
+#
+# @example
+# make list-lib-pkgs PACKAGES_FILTER='.*/math/base/special/.*'
+#/
 list-lib-pkgs:
-	$(QUIET) find $(find_kernel_prefix) $(SRC_DIR) $(FIND_LIB_PACKAGES_FLAGS) | xargs printf '%s\n'
+	$(QUIET) find $(find_kernel_prefix) "$(SRC_DIR)" $(FIND_LIB_PACKAGES_FLAGS) | xargs printf '%s\n'
 
 .PHONY: list-lib-pkgs
+
+#/
+# Prints a random list of packages.
+#
+# @param {string} [PACKAGES_PATTERN='package.json'] - filename pattern for identifying packages
+# @param {string} [PACKAGES_FILTER='.*/.*'] - filepath pattern for finding packages
+# @param {string} [RANDOM_SELECTION_SIZE=100] - number of packages
+#
+# @example
+# make list-random-lib-pkgs
+#
+# @example
+# make list-random-lib-pkgs RANDOM_SELECTION_SIZE=10
+#/
+list-random-lib-pkgs:
+	$(QUIET) make list-lib-pkgs | sort -R | head -n $(RANDOM_SELECTION_SIZE)
+
+.PHONY: list-random-lib-pkgs

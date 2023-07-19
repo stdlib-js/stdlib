@@ -41,7 +41,7 @@ benchmark-javascript: $(NODE_MODULES)
 		echo "Running benchmark: $$file"; \
 		NODE_ENV="$(NODE_ENV_BENCHMARK)" \
 		NODE_PATH="$(NODE_PATH_BENCHMARK)" \
-		$(NODE) $$file || exit 1; \
+		$(NODE) $(NODE_FLAGS_BENCHMARK) $$file || exit 1; \
 	done
 
 .PHONY: benchmark-javascript
@@ -66,7 +66,7 @@ benchmark-javascript-files: $(NODE_MODULES)
 		echo "Running benchmark: $$file"; \
 		NODE_ENV="$(NODE_ENV_BENCHMARK)" \
 		NODE_PATH="$(NODE_PATH_BENCHMARK)" \
-		$(NODE) $$file || exit 1; \
+		$(NODE) $(NODE_FLAGS_BENCHMARK) $$file || exit 1; \
 	done
 
 .PHONY: benchmark-javascript-files

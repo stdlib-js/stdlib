@@ -1,0 +1,110 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# replace
+
+> Replace search occurrences with a replacement string.
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var replace = require( '@stdlib/string/base/replace' );
+```
+
+#### replace( str, search, newval )
+
+Replaces search occurrences with a replacement string.
+
+```javascript
+var out = replace( 'beep', /e/g, 'o' );
+// returns 'boop'
+```
+
+If provided a function as the third argument, the function is invoked for each match, and the function's return value is used as the replacement string.
+
+```javascript
+function replacer( match, p1 ) {
+    return '/' + p1 + '/';
+}
+var str = 'Oranges and lemons';
+var out = replace( str, /([^\s]+)/gi, replacer );
+// returns '/Oranges/ /and/ /lemons/'
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   The function assumes that the `search` argument is a [regular expression][mdn-regexp]. Accordingly, the function should **not** be used as a general drop-in replacement for [`String.prototype.replace`][mdn-string-replace].
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var capitalize = require( '@stdlib/string/base/capitalize' );
+var replace = require( '@stdlib/string/base/replace' );
+
+var out = replace( 'Hello World', /world/i, 'Mr. President' );
+// returns 'Hello Mr. President'
+
+function replacer( match, p1 ) {
+    return capitalize( p1 );
+}
+var str = 'Oranges and lemons say the bells of St. Clement\'s';
+out = replace( str, /([^\s]*)/gi, replacer );
+// returns 'Oranges And Lemons Say The Bells Of St. Clement\'s'
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[mdn-string-replace]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+
+</section>
+
+<!-- /.links -->

@@ -19,19 +19,29 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_CMDS ?= $(TOOLS_PKGS_DIR)/pkgs/cmds/bin/cli
+LIST_PKGS_CMDS ?= $(TOOLS_PKGS_DIR)/pkgs/cmds/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_CMDS_FLAGS ?=
+LIST_PKGS_CMDS_FLAGS ?=
+
+# Define the directory from which to search for packages:
+LIST_PKGS_CMDS_DIR ?= $(SRC_DIR)
 
 
-# TARGETS #
+# RULES #
 
-# List all package command-line interface commands.
+#/
+# Prints a list of all package command-line interface commands.
 #
-# This target prints a list of all package command-line interface commands.
-
-list-pkgs-cmds: $(LIST_PACKAGE_CMDS) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_CMDS) $(LIST_PACKAGE_CMDS_FLAGS) $(SRC_DIR)
+# @param {string} [LIST_PKGS_CMDS_DIR] - absolute path of the directory from which to search (default: source directory)
+#
+# @example
+# make list-pkgs-cmds
+#
+# @example
+# make list-pkgs-cmds LIST_PKGS_CMDS_DIR="$PWD/lib/node_modules/\@stdlib/utils"
+#/
+list-pkgs-cmds: $(LIST_PKGS_CMDS) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_CMDS)" $(LIST_PKGS_CMDS_FLAGS) "$(LIST_PKGS_CMDS_DIR)"
 
 .PHONY: list-pkgs-cmds

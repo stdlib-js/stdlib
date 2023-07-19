@@ -98,7 +98,7 @@ Copyright © The Stdlib [Authors][stdlib-authors].
 
 [wordpress-privacy-policy]: https://wordpress.org/about/privacy/
 
-[npm-privacy-policy]: https://www.npmjs.com/policies/privacy
+[npm-privacy-policy]: https://docs.npmjs.com/policies/privacy
 
 [medium-privacy-policy]: https://github.com/Medium/medium-policy/blob/3c76f50e5e6a529c8352c85c9ed596ef95f863b7/privacy-policy.md
 

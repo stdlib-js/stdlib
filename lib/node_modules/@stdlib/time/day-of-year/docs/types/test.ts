@@ -29,7 +29,7 @@ import dayOfYear = require( './index' );
 	dayOfYear( new Date() ) ; // $ExpectType number
 }
 
-// The function does not compile if provided arguments of invalid types...
+// The compiler throws an error if the function is provided arguments of invalid types...
 {
 	dayOfYear( 2, [], 1990 ); // $ExpectError
 	dayOfYear( 2, {}, 1990 ); // $ExpectError
@@ -52,7 +52,7 @@ import dayOfYear = require( './index' );
 	dayOfYear( 2, 9, 'beep' ); // $ExpectError
 }
 
-// The function does not compile if provided more than three arguments...
+// The compiler throws an error if the function is provided more than three arguments...
 {
 	dayOfYear( 1, 15, 1990, 1990 ); // $ExpectError
 }

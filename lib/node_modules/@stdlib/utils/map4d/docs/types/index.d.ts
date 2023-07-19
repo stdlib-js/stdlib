@@ -1,0 +1,61 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/// <reference types="@stdlib/types"/>
+
+import { ArrayLike } from '@stdlib/types/array';
+
+/**
+* Applies a function to each nested element in a four-dimensional nested array and assigns the result to a nested element in a new four-dimensional nested array.
+*
+* ## Notes
+*
+* -   The applied function is provided the following arguments:
+*
+*     -   **value**: array element.
+*     -   **i0**: index of the first dimension.
+*     -   **i1**: index of the second dimension.
+*     -   **i2**: index of the third dimension.
+*     -   **i3**: index of the fourth dimension.
+*     -   **arr**: input array.
+*
+* @param arr - four-dimensional nested array
+* @param fcn - function to apply
+* @param thisArg - input function context
+* @returns four-dimensional nested array
+*
+* @example
+* var naryFunction = require( `@stdlib/utils/nary-function` );
+* var abs = require( `@stdlib/math/base/special/abs` );
+*
+* var arr = [
+*     [ [ [ -1, -2, -3 ] ] ],
+*     [ [ [ -4, -5, -6 ] ] ]
+* ];
+*
+* var out = map4d( arr, naryFunction( abs, 1 ) );
+* // returns [ [ [ [ 1, 2, 3 ] ] ], [ [ [ 4, 5, 6 ] ] ] ]
+*/
+declare function map4d( arr: ArrayLike<ArrayLike<ArrayLike<ArrayLike<any>>>>, fcn: Function, thisArg?: any ): Array<Array<Array<Array<any>>>>; // tslint-disable-line max-line-length
+
+
+// EXPORTS //
+
+export = map4d;

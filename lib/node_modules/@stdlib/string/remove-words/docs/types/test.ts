@@ -27,7 +27,7 @@ import removeWords = require( './index' );
 	removeWords( 'beep boop Foo bar', [ 'foo', 'bar' ], true ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string as its first argument...
+// The compiler throws an error if the function is provided a value other than a string as its first argument...
 {
 	const words = [ 'foo', 'bar' ];
 	removeWords( true, words ); // $ExpectError
@@ -40,7 +40,7 @@ import removeWords = require( './index' );
 	removeWords( ( x: number ): number => x, words, false ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than an array of strings as its second argument...
+// The compiler throws an error if the function is provided a value other than an array of strings as its second argument...
 {
 	removeWords( 'beep boop Foo bar', 'abc' ); // $ExpectError
 	removeWords( 'beep boop Foo bar', 123 ); // $ExpectError
@@ -50,7 +50,7 @@ import removeWords = require( './index' );
 	removeWords( 'beep boop Foo bar', ( x: number ): number => x, true ); // $ExpectError
 }
 
-// The function does not compile if provided a value other than a boolean as its third argument...
+// The compiler throws an error if the function is provided a value other than a boolean as its third argument...
 {
 	const words = [ 'foo', 'bar' ];
 	removeWords( 'beep boop Foo bar', words, 'abc' ); // $ExpectError
@@ -60,7 +60,7 @@ import removeWords = require( './index' );
 	removeWords( 'beep boop Foo bar', words, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an insufficient number of arguments...
+// The compiler throws an error if the function is provided an insufficient number of arguments...
 {
 	removeWords(); // $ExpectError
 	removeWords( 'beep boop Foo bar' ); // $ExpectError

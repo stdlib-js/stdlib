@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -39,9 +39,9 @@ function createBenchmark( len ) {
 	var x;
 	var i;
 
-	x = new Array( len );
+	x = [];
 	for ( i = 0; i < len; i++ ) {
-		x[ i ] = null; // TODO: set values
+		x.push( null ); // TODO: set values
 	}
 	return benchmark;
 

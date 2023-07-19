@@ -25,7 +25,7 @@ interface Routine {
 	/**
 	* Computes the dot product of `x` and `y` with extended accumulation and result.
 	*
-	* @param N - number of values over which to compute the dot product
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -46,7 +46,7 @@ interface Routine {
 	/**
 	* Computes the dot product of `x` and `y` using alternative indexing semantics and with extended accumulation and result.
 	*
-	* @param N - number of values over which to compute the dot product
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting index for `x`
@@ -70,7 +70,7 @@ interface Routine {
 /**
 * Computes the dot product of `x` and `y` with extended accumulation and result.
 *
-* @param N - number of values over which to compute the dot product
+* @param N - number of indexed elements
 * @param x - first input array
 * @param strideX - `x` stride length
 * @param y - second input array

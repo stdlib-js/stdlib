@@ -109,6 +109,7 @@ double benchmark( int iterations, int len ) {
 		x[ i ] = ( rand_double()*20000.0 ) - 10000.0;
 		y[ i ] = ( rand_double()*20000.0 ) - 10000.0;
 	}
+	z = 0.0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		z = c_ddot( len, x, 1, y, 1 );

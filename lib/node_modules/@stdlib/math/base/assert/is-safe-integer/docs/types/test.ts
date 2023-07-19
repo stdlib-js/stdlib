@@ -27,7 +27,7 @@ import isSafeInteger = require( './index' );
 	isSafeInteger( 3.12 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	isSafeInteger( true ); // $ExpectError
 	isSafeInteger( false ); // $ExpectError

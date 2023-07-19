@@ -22,8 +22,8 @@ ones,(planned)
 rand,@stdlib/random/base/*
 copy,@stdlib/utils/copy
 identity,(planned)
-seq,@stdlib/math/utils/linspace
-arange,@stdlib/math/utils/incrspace
+seq,@stdlib/array/linspace
+arange,@stdlib/array/incrspace
 clear,(planned)
 symmetric,(planned)
 calcRdx,N/A

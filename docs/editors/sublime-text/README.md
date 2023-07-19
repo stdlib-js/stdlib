@@ -26,7 +26,7 @@ limitations under the License.
 
 ## Installation
 
-Pre-built binaries are available for download on the Sublime Text [homepage][sublime-text]. We recommend installing **Sublime Text 3**.
+Pre-built binaries are available for download on the Sublime Text [homepage][sublime-text]. We recommend installing the latest Sublime Text version.
 
 To use [Sublime Text][sublime-text] as a command-line utility, you may need to create a symbolic link to the [Sublime Text][sublime-text] command-line tool. For example, on MacOS, assuming that [Sublime Text][sublime-text] is installed in the applications folder,
 
@@ -123,9 +123,9 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
     }
     ```
 
--   [**SublimeLinter3**][sublime-text-sublimelinter3]: package which provides an interactive linting framework for [Sublime Text 3][sublime-text]. The framework does **not** contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
+-   [**SublimeLinter**][sublime-text-sublimelinter]: package which provides an interactive linting framework for [Sublime Text][sublime-text]. The framework does **not** contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
 
-    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files and to set the `NODE_PATH` environment variable upon invoking [ESLint][eslint]:
+    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter][sublime-text-sublimelinter] to use the project [ESLint][eslint] configuration files and to set the `NODE_PATH` environment variable upon invoking [ESLint][eslint]:
 
         ```text
                 ...
@@ -161,7 +161,7 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
         },
         ```
 
-    -   [**SublimeLinter-annotations**][sublime-text-sublimelinter-annotations]: plugin which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to mark project annotations.
+    -   [**SublimeLinter-annotations**][sublime-text-sublimelinter-annotations]: plugin which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you need to configure [SublimeLinter][sublime-text-sublimelinter] to mark project annotations.
 
         ```text
                 ...
@@ -185,10 +185,10 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
         ```
 
     -   [**SublimeLinter-json**][sublime-text-sublimelinter-json]: plugin which lints [JSON][json].
-    
+
     -   [**SublimeLinter-shellcheck**][sublime-text-sublimelinter-shellcheck]: plugin which provides an interface to [shellcheck][shellcheck] for linting files having "Shell-Unix-Generic" syntax (aka Shell Script).
-   
-        If [shellcheck][shellcheck] was installed as a local project dependency (e.g., `make install-deps` on non-MacOS platforms per the project development guide), you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to search the top-level `deps` directory for locally installed linter executables. For example, on Linux,
+
+        If [shellcheck][shellcheck] was installed as a local project dependency (e.g., `make install-deps` on non-MacOS platforms per the project development guide), you need to configure [SublimeLinter][sublime-text-sublimelinter] to search the top-level `deps` directory for locally installed linter executables. For example, on Linux,
 
         ```text
                 ...
@@ -211,7 +211,7 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
 
 [sublime-text-git]: https://github.com/kemayo/sublime-text-git
 
-[sublime-text-sublimelinter3]: https://github.com/SublimeLinter/SublimeLinter3
+[sublime-text-sublimelinter]: https://github.com/SublimeLinter/SublimeLinter3
 
 [sublime-text-sublimelinter-eslint]: https://github.com/roadhump/SublimeLinter-eslint
 
@@ -241,7 +241,7 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
 
 [git]: https://git-scm.com/
 
-[eslint]: http://eslint.org/
+[eslint]: https://eslint.org/
 
 [shellcheck]: https://github.com/koalaman/shellcheck
 

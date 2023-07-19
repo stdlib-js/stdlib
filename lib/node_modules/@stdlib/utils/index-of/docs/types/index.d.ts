@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -78,7 +78,7 @@ import { Collection } from '@stdlib/types/object';
 * var idx = indexOf( str, 'o' );
 * // returns 3
 */
-declare function indexOf( arr: Collection, searchElement: any, fromIndex?: number ): number; // tslint-disable-line max-line-length
+declare function indexOf( arr: Collection, searchElement: any, fromIndex?: number ): number;
 
 
 // EXPORTS //

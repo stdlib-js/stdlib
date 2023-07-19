@@ -26,7 +26,7 @@ import polygamma = require( './index' );
 	polygamma( 2, 1.2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	polygamma( true, 3 ); // $ExpectError
 	polygamma( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import polygamma = require( './index' );
 	polygamma( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	polygamma(); // $ExpectError
 	polygamma( 3 ); // $ExpectError

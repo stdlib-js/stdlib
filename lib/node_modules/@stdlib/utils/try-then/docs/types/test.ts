@@ -39,7 +39,7 @@ function y(): number {
 
 // The function returns a value...
 {
-	trythen( x, y ); // $ExpectType any
+	trythen( x, y ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument other than a function...

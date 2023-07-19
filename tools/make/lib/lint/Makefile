@@ -18,9 +18,11 @@
 
 # DEPENDENCIES #
 
-# Note: keep in alphabetical order
+# Note: keep in alphabetical order...
+include $(TOOLS_MAKE_LIB_DIR)/lint/c/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/conf/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/git/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/julia/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/Makefile
@@ -30,6 +32,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/python/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/r/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/repl_help.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/shell/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/lint/toposort.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/Makefile
 
 
@@ -46,7 +49,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/Makefile
 # @example
 # make lint
 #/
-lint: lint-filenames lint-javascript lint-markdown lint-python lint-julia lint-r lint-shell lint-typescript lint-conf lint-pkg-json lint-repl-help lint-license-headers
+lint: lint-filenames lint-javascript lint-markdown lint-c lint-python lint-julia lint-r lint-shell lint-typescript lint-conf lint-pkg-json lint-repl-help lint-license-headers
 
 .PHONY: lint
 
@@ -61,7 +64,7 @@ lint: lint-filenames lint-javascript lint-markdown lint-python lint-julia lint-r
 # @example
 # make lint-src
 #/
-lint-src: lint-javascript-src
+lint-src: lint-javascript-src lint-c-src
 
 .PHONY: lint-src
 
@@ -91,7 +94,7 @@ lint-tests: lint-javascript-tests
 # @example
 # make lint-examples
 #/
-lint-examples: lint-javascript-examples
+lint-examples: lint-javascript-examples lint-c-examples
 
 .PHONY: lint-examples
 
@@ -106,6 +109,6 @@ lint-examples: lint-javascript-examples
 # @example
 # make lint-benchmarks
 #/
-lint-benchmarks: lint-javascript-benchmarks lint-python-benchmarks lint-julia-benchmarks lint-r-benchmarks
+lint-benchmarks: lint-javascript-benchmarks lint-c-benchmarks lint-python-benchmarks lint-julia-benchmarks lint-r-benchmarks
 
 .PHONY: lint-benchmarks

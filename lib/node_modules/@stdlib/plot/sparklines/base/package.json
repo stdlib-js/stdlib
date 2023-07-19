@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/plot/sparklines/base",
   "version": "0.0.0",
-  "description": "Standard library base sparkline functionality.",
+  "description": "Base (i.e., lower-level) sparkline functionality.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

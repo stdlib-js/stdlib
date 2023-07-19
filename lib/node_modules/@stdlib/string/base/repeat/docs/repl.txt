@@ -1,0 +1,29 @@
+
+{{alias}}( str, n )
+    Repeats a string `n` times and returns the concatenated result.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    n: integer
+        Number of repetitions.
+
+    Returns
+    -------
+    out: string
+        Repeated string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'a', 5 )
+    'aaaaa'
+    > out = {{alias}}( '', 100 )
+    ''
+    > out = {{alias}}( 'beep', 0 )
+    ''
+
+    See Also
+    --------
+

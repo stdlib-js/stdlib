@@ -19,19 +19,29 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_READMES ?= $(TOOLS_PKGS_DIR)/pkgs/readmes/bin/cli
+LIST_PKGS_READMES ?= $(TOOLS_PKGS_DIR)/pkgs/readmes/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_READMES_FLAGS ?=
+LIST_PKGS_READMES_FLAGS ?=
+
+# Define the directory from which to search for packages:
+LIST_PKGS_READMES_DIR ?= $(SRC_DIR)
 
 
-# TARGETS #
+# RULES #
 
-# List all package READMEs.
+#/
+# Prints a list of all package READMEs.
 #
-# This target prints a list of all package READMEs.
-
-list-pkgs-readmes: $(LIST_PACKAGE_READMES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_READMES) $(LIST_PACKAGE_READMES_FLAGS) $(SRC_DIR)
+# @param {string} [LIST_PKGS_READMES_DIR] - absolute path of the directory from which to search (default: source directory)
+#
+# @example
+# make list-pkgs-readmes
+#
+# @example
+# make list-pkgs-readmes LIST_PKGS_READMES_DIR="$PWD/lib/node_modules/\@stdlib/utils"
+#/
+list-pkgs-readmes: $(LIST_PKGS_READMES) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_READMES)" $(LIST_PKGS_READMES_FLAGS) "$(LIST_PKGS_READMES_DIR)"
 
 .PHONY: list-pkgs-readmes

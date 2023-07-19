@@ -29,7 +29,7 @@ interface Routine {
 	/**
 	* Computes the dot product of two vectors.
 	*
-	* @param N - number of values over which to compute the dot product
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param y - second input array
@@ -48,7 +48,7 @@ interface Routine {
 	/**
 	* Computes the dot product of two vectors using alternative indexing semantics.
 	*
-	* @param N - number of values over which to compute the dot product
+	* @param N - number of indexed elements
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting index for `x`
@@ -70,7 +70,7 @@ interface Routine {
 /**
 * Computes the dot product of two vectors.
 *
-* @param N - number of values over which to compute the dot product
+* @param N - number of indexed elements
 * @param x - first input array
 * @param strideX - `x` stride length
 * @param y - second input array

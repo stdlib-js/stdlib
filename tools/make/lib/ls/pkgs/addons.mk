@@ -19,19 +19,29 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_ADDONS ?= $(TOOLS_PKGS_DIR)/pkgs/addons/bin/cli
+LIST_PKGS_ADDONS ?= $(TOOLS_PKGS_DIR)/pkgs/addons/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_ADDONS_FLAGS ?= --ignore=**/_tools/scaffold/**
+LIST_PKGS_ADDONS_FLAGS ?= --ignore=**/_tools/scaffold/**
+
+# Define the directory from which to search for packages:
+LIST_PKGS_ADDONS_DIR ?= $(SRC_DIR)
 
 
-# TARGETS #
+# RULES #
 
-# List all add-ons.
+#/
+# Prints a list of all packages containing Node.js native add-ons.
 #
-# This target prints a list of all add-ons.
-
-list-pkgs-addons: $(LIST_PACKAGE_ADDONS) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_ADDONS) $(LIST_PACKAGE_ADDONS_FLAGS) $(SRC_DIR)
+# @param {string} [LIST_PKGS_ADDONS_DIR] - absolute path of the directory from which to search (default: source directory)
+#
+# @example
+# make list-pkgs-addons
+#
+# @example
+# make list-pkgs-addons LIST_PKGS_ADDONS_DIR="$PWD/lib/node_modules/\@stdlib/blas"
+#/
+list-pkgs-addons: $(LIST_PKGS_ADDONS) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_ADDONS)" $(LIST_PKGS_ADDONS_FLAGS) "$(LIST_PKGS_ADDONS_DIR)"
 
 .PHONY: list-pkgs-addons

@@ -4,7 +4,8 @@
 		"version"
 	],
 	"string": [
-		"n"
+		"n",
+		"split"
 	],
 	"alias": {
 		"help": [

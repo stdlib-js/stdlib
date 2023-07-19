@@ -138,6 +138,16 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 <!-- </license> -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="links">
 
 [pddl-1.0]: http://opendatacommons.org/licenses/pddl/1.0/

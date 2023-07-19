@@ -57,7 +57,7 @@ TMP_DIR ?= $(ROOT_DIR)/tmp
 # Define the root configuration directory:
 CONFIG_DIR ?= $(ROOT_DIR)/etc
 
-# Define the directory for writing reports, including code coverage:
+# Define the directories for writing reports, including code coverage:
 REPORTS_DIR ?= $(ROOT_DIR)/reports
 COVERAGE_DIR ?= $(REPORTS_DIR)/coverage
 COMPLEXITY_DIR ?= $(REPORTS_DIR)/complexity
@@ -202,6 +202,22 @@ else
 	NODE_ENV_REPL ?= repl
 	NODE_ENV_TEST ?= test
 	NODE_ENV_WORKSHOPS ?= workshop
+endif
+
+# Define command-line flags when invoking the Node executable:
+ifdef NODE_FLAGS
+	NODE_FLAGS_BENCHMARK := $(NODE_FLAGS)
+	NODE_FLAGS_EXAMPLES := $(NODE_FLAGS)
+	NODE_FLAGS_REPL := $(NODE_FLAGS)
+	NODE_FLAGS_TEST := $(NODE_FLAGS)
+	NODE_FLAGS_WORKSHOPS := $(NODE_FLAGS)
+else
+	NODE_FLAGS ?=
+	NODE_FLAGS_BENCHMARK ?=
+	NODE_FLAGS_EXAMPLES ?=
+	NODE_FLAGS_REPL ?=
+	NODE_FLAGS_TEST ?=
+	NODE_FLAGS_WORKSHOPS ?=
 endif
 
 

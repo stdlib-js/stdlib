@@ -16,16 +16,16 @@
 * limitations under the License.
 */
 
-import reviver = require( './index' );
+import reviveBasePRNG = require( './index' );
 
 
 // TESTS //
 
 // The compiler throws an error if the function is provided a first argument which is not a string...
 {
-	reviver( 123, 2 ); // $ExpectError
-	reviver( true, 2 ); // $ExpectError
-	reviver( false, 2 ); // $ExpectError
-	reviver( {}, 2 ); // $ExpectError
-	reviver( ( x: number ): number => x, 2 ); // $ExpectError
+	reviveBasePRNG( 123, 2 ); // $ExpectError
+	reviveBasePRNG( true, 2 ); // $ExpectError
+	reviveBasePRNG( false, 2 ); // $ExpectError
+	reviveBasePRNG( {}, 2 ); // $ExpectError
+	reviveBasePRNG( ( x: number ): number => x, 2 ); // $ExpectError
 }

@@ -19,19 +19,29 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_WASM ?= $(TOOLS_PKGS_DIR)/pkgs/wasm/bin/cli
+LIST_PKGS_WASM ?= $(TOOLS_PKGS_DIR)/pkgs/wasm/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_WASM_FLAGS ?=
+LIST_PKGS_WASM_FLAGS ?=
+
+# Define the directory from which to search for packages:
+LIST_PKGS_WASM_DIR ?= $(SRC_DIR)
 
 
-# TARGETS #
+# RULES #
 
-# List all packages containing WebAssembly.
+#/
+# Prints a list of all packages containing WebAssembly.
 #
-# This target prints a list of all packages containing WebAssembly.
-
-list-pkgs-wasm: $(LIST_PACKAGE_WASM) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_WASM) $(LIST_PACKAGE_WASM_FLAGS) $(SRC_DIR)
+# @param {string} [LIST_PKGS_WASM_DIR] - absolute path of the directory from which to search (default: source directory)
+#
+# @example
+# make list-pkgs-wasm
+#
+# @example
+# make list-pkgs-wasm LIST_PKGS_WASM_DIR="$PWD/lib/node_modules/\@stdlib/utils"
+#/
+list-pkgs-wasm: $(LIST_PKGS_WASM) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_WASM)" $(LIST_PKGS_WASM_FLAGS) "$(LIST_PKGS_WASM_DIR)"
 
 .PHONY: list-pkgs-wasm

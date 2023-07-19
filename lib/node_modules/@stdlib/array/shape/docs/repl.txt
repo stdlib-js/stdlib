@@ -4,7 +4,7 @@
 
     Parameters
     ----------
-    arr: Array
+    arr: ArrayLikeObject
         Input array.
 
     Returns

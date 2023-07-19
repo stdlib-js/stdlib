@@ -19,19 +19,29 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_CLIS ?= $(TOOLS_PKGS_DIR)/pkgs/clis/bin/cli
+LIST_PKGS_CLIS ?= $(TOOLS_PKGS_DIR)/pkgs/clis/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_CLIS_FLAGS ?=
+LIST_PKGS_CLIS_FLAGS ?=
+
+# Define the directory from which to search for packages:
+LIST_PKGS_CLIS_DIR ?= $(SRC_DIR)
 
 
-# TARGETS #
+# RULES #
 
-# List all package command-line interfaces.
+#/
+# Prints a list of all packages containing command-line interfaces.
 #
-# This target prints a list of all package command-line interfaces.
-
-list-pkgs-clis: $(LIST_PACKAGE_CLIS) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_CLIS) $(LIST_PACKAGE_CLIS_FLAGS) $(SRC_DIR)
+# @param {string} [LIST_PKGS_CLIS_DIR] - absolute path of the directory from which to search (default: source directory)
+#
+# @example
+# make list-pkgs-clis
+#
+# @example
+# make list-pkgs-clis LIST_PKGS_CLIS_DIR="$PWD/lib/node_modules/\@stdlib/utils"
+#/
+list-pkgs-clis: $(LIST_PKGS_CLIS) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_CLIS)" $(LIST_PKGS_CLIS_FLAGS) "$(LIST_PKGS_CLIS_DIR)"
 
 .PHONY: list-pkgs-clis

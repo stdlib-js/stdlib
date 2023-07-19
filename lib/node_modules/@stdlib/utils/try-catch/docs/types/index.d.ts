@@ -37,7 +37,7 @@
 * var z = trycatch( x, -1.0 );
 * // returns <number>
 */
-declare function trycatch( x: Function, y: any ): any;
+declare function trycatch<T, U>( x: () => T, y: U ): T | U;
 
 
 // EXPORTS //

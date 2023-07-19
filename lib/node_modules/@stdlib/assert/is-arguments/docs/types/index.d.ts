@@ -36,7 +36,7 @@
 * var bool = isArguments( [] );
 * // returns false
 */
-declare function isArguments( value: any ): boolean;
+declare function isArguments( value: any ): value is IArguments;
 
 
 // EXPORTS //

@@ -26,7 +26,7 @@ import xlog1py = require( './index' );
 	xlog1py( 8, 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	xlog1py( true, 3 ); // $ExpectError
 	xlog1py( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import xlog1py = require( './index' );
 	xlog1py( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	xlog1py(); // $ExpectError
 	xlog1py( 3 ); // $ExpectError

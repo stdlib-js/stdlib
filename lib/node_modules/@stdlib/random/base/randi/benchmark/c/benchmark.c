@@ -19,14 +19,14 @@
 /**
 * Benchmark `randi`.
 */
+#include "stdlib/random/base/randi.h"
+#include "stdlib/random/base.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
-#include "stdlib/random/base.h"
-#include "stdlib/random/base/randi.h"
 
 #define NAME "base/randi"
 #define ITERATIONS 1000000
@@ -95,7 +95,6 @@ double rand_double() {
 * @return elapsed time in seconds
 */
 double benchmark1() {
-	uint32_t seed[1];
 	double elapsed;
 	double t;
 	int i;
@@ -104,7 +103,6 @@ double benchmark1() {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		seed[ 0 ] = i + 1;
 		obj = stdlib_base_random_randi_allocate( 0 );
 		if ( obj == NULL || stdlib_base_prng_min( obj ) != 1 ) {
 			printf( "unexpected result\n" );

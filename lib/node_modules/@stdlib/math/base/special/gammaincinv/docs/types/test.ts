@@ -27,7 +27,7 @@ import gammaincinv = require( './index' );
 	gammaincinv( 0.75, 3.0, true ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than numbers for the first two arguments...
+// The compiler throws an error if the function is provided values other than numbers for the first two arguments...
 {
 	gammaincinv( true, 2.0 ); // $ExpectError
 	gammaincinv( false, 2.0 ); // $ExpectError
@@ -44,7 +44,7 @@ import gammaincinv = require( './index' );
 	gammaincinv( 0.5, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided a third argument which is not a boolean...
+// The compiler throws an error if the function is provided a third argument which is not a boolean...
 {
 	gammaincinv( 0.75, 3.0, 'abc' ); // $ExpectError
 	gammaincinv( 0.75, 3.0, 123 ); // $ExpectError
@@ -53,7 +53,7 @@ import gammaincinv = require( './index' );
 	gammaincinv( 0.75, 3.0, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	gammaincinv(); // $ExpectError
 	gammaincinv( 3 ); // $ExpectError

@@ -48,7 +48,7 @@ interface IsComposite {
 	* var bool = isComposite( null );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is number | Number;
 
 	/**
 	* Tests if a value is a number primitive having a value which is a composite number.
@@ -64,7 +64,7 @@ interface IsComposite {
 	* var bool = isComposite.isPrimitive( new Number( 4.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is number;
 
 	/**
 	* Tests if a value is a number object having a value which is a composite number.
@@ -80,7 +80,7 @@ interface IsComposite {
 	* var bool = isComposite.isObject( new Number( 4.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is Number;
 }
 
 /**

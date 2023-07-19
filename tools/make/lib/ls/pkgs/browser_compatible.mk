@@ -19,19 +19,29 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_BROWSER_COMPATIBLE_PACKAGE_NAMES ?= $(TOOLS_PKGS_DIR)/pkgs/browser-compatible/bin/cli
+LIST_PKGS_BROWSER_COMPATIBLE ?= $(TOOLS_PKGS_DIR)/pkgs/browser-compatible/bin/cli
 
 # Define the command flags:
-LIST_BROWSER_COMPATIBLE_PACKAGE_NAMES_FLAGS ?=
+LIST_PKGS_BROWSER_COMPATIBLE_FLAGS ?=
+
+# Define the directory from which to search for packages:
+LIST_PKGS_BROWSER_COMPATIBLE_DIR ?= $(SRC_DIR)
 
 
-# TARGETS #
+# RULES #
 
-# List browser compatible packages.
+#/
+# Prints a list of all packages which are compatible with browser environments.
 #
-# This target prints a list of all packages which are compatible with browser environments.
-
-list-pkgs-browser-compatible: $(LIST_BROWSER_COMPATIBLE_PACKAGE_NAMES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_BROWSER_COMPATIBLE_PACKAGE_NAMES) $(LIST_BROWSER_COMPATIBLE_PACKAGE_NAMES_FLAGS) $(SRC_DIR)
+# @param {string} [LIST_PKGS_BROWSER_COMPATIBLE_DIR] - absolute path of the directory from which to search (default: source directory)
+#
+# @example
+# make list-pkgs-browser-compatible
+#
+# @example
+# make list-pkgs-browser-compatible LIST_PKGS_BROWSER_COMPATIBLE_DIR="$PWD/lib/node_modules/\@stdlib/utils"
+#/
+list-pkgs-browser-compatible: $(LIST_PKGS_BROWSER_COMPATIBLE) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_BROWSER_COMPATIBLE)" $(LIST_PKGS_BROWSER_COMPATIBLE_FLAGS) "$(LIST_PKGS_BROWSER_COMPATIBLE_DIR)"
 
 .PHONY: list-pkgs-browser-compatible

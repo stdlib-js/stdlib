@@ -3618,9 +3618,9 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [http-status-codes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
-[jsdoc]: http://usejsdoc.org/#Getting_Started
+[jsdoc]: https://jsdoc.app/
 
-[fluent-interface]: http://en.wikipedia.org/wiki/Fluent_interface
+[fluent-interface]: https://en.wikipedia.org/wiki/Fluent_interface
 
 [native-dom-equivalents]: http://www.sitepoint.com/jquery-vs-raw-javascript-1-dom-forms/
 
@@ -3632,7 +3632,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [quality-guide]: https://github.com/bevacqua/js
 
-[unix-philosophy]: http://www.faqs.org/docs/artu/ch01s06.html
+[unix-philosophy]: http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
 
 [license]: https://creativecommons.org/licenses/by-sa/4.0/
 

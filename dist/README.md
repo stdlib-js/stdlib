@@ -120,7 +120,7 @@ If no recognized module system is present, access bundle contents via the global
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
-[@stdlib/namespace]: https://github.com/stdlib-js/stdlib
+[@stdlib/namespace]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/namespace
 
 </section>
 

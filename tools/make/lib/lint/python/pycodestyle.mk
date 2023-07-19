@@ -71,14 +71,14 @@ endif
 # -   This rule is useful when wanting to glob for Python source files (e.g., lint all Python source files for a particular package).
 #
 # @private
-# @param {string} [PYTHON_SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make pycodestyle-src
 #
 # @example
-# make pycodestyle-src PYTHON_SOURCES_FILTER=".*/math/base/special/abs/.*"
+# make pycodestyle-src SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 pycodestyle-src:
 ifeq ($(FAIL_FAST), true)
@@ -112,7 +112,7 @@ endif
 # make pycodestyle-tests-fixtures
 #
 # @example
-# make pycodestyle-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
+# make pycodestyle-tests-fixtures TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 pycodestyle-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
@@ -139,14 +139,14 @@ endif
 # -   This rule is useful when wanting to glob for Python examples files (e.g., lint all Python examples files for a particular package).
 #
 # @private
-# @param {string} [PYTHON_EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make pycodestyle-examples
 #
 # @example
-# make pycodestyle-examples PYTHON_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
+# make pycodestyle-examples EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 pycodestyle-examples:
 ifeq ($(FAIL_FAST), true)
@@ -173,14 +173,14 @@ endif
 # -   This rule is useful when wanting to glob for Python benchmark files (e.g., lint all Python benchmark files for a particular package).
 #
 # @private
-# @param {string} [PYTHON_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make pycodestyle-benchmarks
 #
 # @example
-# make pycodestyle-benchmarks PYTHON_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
+# make pycodestyle-benchmarks BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 pycodestyle-benchmarks:
 ifeq ($(FAIL_FAST), true)

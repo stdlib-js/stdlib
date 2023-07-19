@@ -25,9 +25,8 @@
     N: integer
         Number of indexed elements.
 
-    x: Array|TypedArray|Object
-        Input array/collection. If provided an object, the object must be array-
-        like (excluding strings and functions).
+    x: ArrayLikeObject
+        Input array.
 
     stride: integer
         Index increment for `x`.
@@ -40,8 +39,8 @@
 
     Returns
     -------
-    x: Array|TypedArray|Object
-        Input array/collection `x`.
+    x: ArrayLikeObject
+        Input array `x`.
 
     Examples
     --------
@@ -66,6 +65,7 @@
     > x0
     <Float64Array>[ 1.0, 5.0, 3.0, 5.0, 5.0, 5.0 ]
 
+
 {{alias}}.ndarray( N, x, stride, offset, clbk[, thisArg] )
     Fills a strided array according to a provided callback function and using
     alternative indexing semantics.
@@ -79,9 +79,8 @@
     N: integer
         Number of indexed elements.
 
-    x: Array|TypedArray|Object
-        Input array/collection. If provided an object, the object must be array-
-        like (excluding strings and functions).
+    x: ArrayLikeObject
+        Input array.
 
     stride: integer
         Index increment for `x`.
@@ -97,8 +96,8 @@
 
     Returns
     -------
-    x: Array|TypedArray|Object
-        Input array/collection `x`.
+    x: ArrayLikeObject
+        Input array `x`.
 
     Examples
     --------

@@ -2,8 +2,8 @@
 {{alias}}( N, alpha, x, strideX, y, strideY )
     Multiplies a vector `x` by a constant `alpha` and adds the result to `y`.
 
-    The `N` and `stride` parameters determine which elements in `x` and `y` are
-    accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
@@ -25,7 +25,7 @@
         Index increment for `x`.
 
     y: Float64Array
-        Destination array.
+        Output array.
 
     strideY: integer
         Index increment for `y`.
@@ -33,7 +33,7 @@
     Returns
     -------
     y: Float64Array
-        Input array `y`.
+        Output array.
 
     Examples
     --------
@@ -44,11 +44,10 @@
     > {{alias}}( x.length, alpha, x, 1, y, 1 )
     <Float64Array>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}( N, alpha, x, 2, y, -1 )
+    > {{alias}}( 3, alpha, x, 2, y, -1 )
     <Float64Array>[ 26.0, 16.0, 6.0, 1.0, 1.0, 1.0 ]
 
     // Using view offsets:
@@ -56,8 +55,7 @@
     > var y0 = new {{alias:@stdlib/array/float64}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
     > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*3 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, 5.0, x1, -2, y1, 1 )
+    > {{alias}}( 3, 5.0, x1, -2, y1, 1 )
     <Float64Array>[ 40.0, 31.0, 22.0 ]
     > y0
     <Float64Array>[ 7.0, 8.0, 9.0, 40.0, 31.0, 22.0 ]
@@ -68,8 +66,8 @@
     using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offsetX` and `offsetY` parameters support indexing semantics
-    based on starting indices.
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
 
     Parameters
     ----------
@@ -89,7 +87,7 @@
         Starting index for `x`.
 
     y: Float64Array
-        Destination array.
+        Output array.
 
     strideY: integer
         Index increment for `y`.
@@ -100,7 +98,7 @@
     Returns
     -------
     y: Float64Array
-        Input array `y`.
+        Output array.
 
     Examples
     --------
@@ -114,8 +112,7 @@
     // Advanced indexing:
     > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > y = new {{alias:@stdlib/array/float64}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, alpha, x, 2, 1, y, -1, y.length-1 )
+    > {{alias}}.ndarray( 3, alpha, x, 2, 1, y, -1, y.length-1 )
     <Float64Array>[ 7.0, 8.0, 9.0, 40.0, 31.0, 22.0 ]
 
     See Also

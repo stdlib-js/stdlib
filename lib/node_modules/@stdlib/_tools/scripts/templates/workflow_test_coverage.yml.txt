@@ -1,0 +1,123 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: test_coverage
+
+# Workflow triggers:
+on:
+  # Run workflow upon completion of `test` workflow run:
+  workflow_run:
+    workflows: ["test"]
+    types: [completed]
+
+  # Allow workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow jobs:
+jobs:
+
+  # Define job to run test coverage...
+  coverage:
+
+    # Display name:
+    name: 'Calculate Test Coverage'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+        timeout-minutes: 5
+
+      # Install dependencies:
+      - name: 'Install production and development dependencies'
+        run: |
+          npm install || npm install || npm install
+        timeout-minutes: 15
+
+      # Build native add-on if present:
+      - name: 'Build native add-on (if present)'
+        run: |
+          if [ -f "binding.gyp" ]; then
+            npm install node-gyp --no-save && ./node_modules/.bin/node-gyp rebuild
+          fi
+
+      # Calculate coverage:
+      - name: 'Calculate test coverage'
+        run: |
+          npm run test-cov || npm run test-cov || npm run test-cov
+        timeout-minutes: 15
+
+      # Upload coverage report to Codecov:
+      - name: 'Upload coverage to Codecov'
+        id: upload
+        uses: codecov/codecov-action@v3
+        with:
+          directory: reports/coverage
+          flags: unittests
+          fail_ci_if_error: true
+
+      # Extract coverage value:
+      - name: 'Extract coverage value and assign to output'
+        id: extract-coverage
+        run: |
+          coverage=`cat reports/coverage/lcov-report/index.html | grep "fraction" | grep -oP '\d+/\d+' | printf %s "$(cat)" | jq -R -s -c 'split("\n")'`
+          echo "coverage=$coverage" >> $GITHUB_OUTPUT
+
+          # Format coverage as Markdown table row:
+          table=`echo $coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/; s/\]/|/'`
+          echo "table=$table" >> $GITHUB_OUTPUT
+
+      # Print coverage report to GitHub Actions log:
+      - name: 'Print coverage report to GitHub Actions log'
+        run: |
+          echo "## Coverage Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Statements | Branches | Functions | Lines | " >> $GITHUB_STEP_SUMMARY
+          echo "| ---------- | -------- | --------- | ----- | " >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.extract-coverage.outputs.table }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+      # Send Slack notification if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
+
+      # Send data to events server:
+      - name: 'Post data'
+        uses: distributhor/workflow-webhook@v3
+        env:
+          webhook_url: ${{ secrets.STDLIB_COVERAGE_URL }}
+          webhook_secret: ${{ secrets.STDLIB_WEBHOOK_SECRET }}
+          data: '{ "coverage": ${{ steps.extract-coverage.outputs.coverage }}, "run_id": "${{ github.run_id }}" }'
+        if: ${{ false }}

@@ -3,7 +3,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -24,9 +24,10 @@
 
 var resolve = require( 'path' ).resolve;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
-var CLI = require( '@stdlib/tools/cli' );
+var CLI = require( '@stdlib/cli/ctor' );
 var stdin = require( '@stdlib/process/read-stdin' );
-var RE_EOL = require( '@stdlib/regexp/eol' );
+var stdinStream = require( '@stdlib/streams/node/stdin' );
+var reEOL = require( '@stdlib/regexp/eol' );
 var isRegExpString = require( '@stdlib/assert/is-regexp-string' );
 var reFromString = require( '@stdlib/utils/regexp-from-string' );
 var TODO = require( './../lib' );
@@ -66,14 +67,14 @@ function main() {
 
 	// Check if we are receiving data from `stdin`...
 	opts = {};
-	if ( !process.stdin.isTTY ) {
+	if ( !stdinStream.isTTY ) {
 		if ( flags.split ) {
 			if ( !isRegExpString( flags.split ) ) {
 				flags.split = '/'+flags.split+'/';
 			}
 			opts.split = reFromString( flags.split );
 		} else {
-			opts.split = RE_EOL;
+			opts.split = reEOL();
 		}
 		return stdin( onRead );
 	}

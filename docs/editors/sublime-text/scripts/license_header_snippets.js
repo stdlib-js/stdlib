@@ -18,6 +18,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable node/shebang */
+
 'use strict';
 
 // MODULES //
@@ -29,6 +31,7 @@ var objectKeys = require( '@stdlib/utils/keys' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var writeFileSync = require( '@stdlib/fs/write-file' ).sync;
 var replace = require( '@stdlib/string/replace' );
+var currentYear = require( '@stdlib/time/current-year' );
 var licenseHeader = require( '@stdlib/_tools/licenses/header' );
 
 
@@ -154,7 +157,7 @@ var OUT_DIR = resolve( __dirname, '..', 'snippets' );
 
 // License header options:
 var OPTS = {
-	'year': ( new Date() ).getFullYear(),
+	'year': currentYear(),
 	'copyright': 'The Stdlib Authors'
 };
 

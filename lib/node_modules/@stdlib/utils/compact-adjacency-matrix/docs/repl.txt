@@ -1,0 +1,374 @@
+
+{{alias}}( N )
+    Compact adjacency matrix constructor.
+
+    Parameters
+    ----------
+    N: integer
+        Number of vertices.
+
+    Returns
+    -------
+    adj: Object
+        Compact adjacency matrix.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > adj.addEdge( 1, 2 );
+    > adj.addEdge( 2, 3 );
+    > adj.edges
+    [ [ 0, 1 ], [ 1, 2 ], [ 2, 3 ] ]
+
+
+{{alias}}.fromAdjacencyList( list[, clbk[, thisArg]] )
+    Creates a compact adjacency matrix from an adjacency list.
+
+    A callback function is provided two arguments:
+
+    - value: list element.
+    - i: list element index.
+
+    A callback function must return a list of vertices.
+
+    Parameters
+    ----------
+    list: ArrayLikeObject|Iterable
+        Adjacency list.
+
+    clbk: Function (optional)
+        Callback to invoke for each list element.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    adj: Object
+        Compact adjacency matrix.
+
+    Examples
+    --------
+    > var list = [ [ 1, 2 ], [ 2 ], [ 3 ], [] ];
+    > var adj = {{alias}}.fromAdjacencyList( list );
+    > adj.edges
+    [ [ 0, 1 ], [ 0, 2 ], [ 1, 2 ], [ 2, 3 ] ]
+
+
+{{alias}}.fromEdges( N, edges[, clbk[, thisArg]] )
+    Creates a compact adjacency matrix from a list of edges.
+
+    A callback function is provided two arguments:
+
+    - value: list element.
+    - i: list element index.
+
+    A callback function must return a list of vertices specifying a directed
+    edge.
+
+    Parameters
+    ----------
+    N: integer
+        Number of vertices.
+
+    edges: ArrayLikeObject
+        List of edges.
+
+    clbk: Function (optional)
+        Callback to invoke for each list element.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    adj: Object
+        Compact adjacency matrix.
+
+    Examples
+    --------
+    > var edges = [ [ 0, 1 ], [ 0, 2 ], [ 1, 2 ], [ 2, 3 ] ];
+    > var adj = {{alias}}.fromEdges( 4, edges );
+    > var bool = adj.hasEdge( 0, 2 )
+    true
+
+
+{{alias}}.prototype.addEdge( i, j )
+    Adds a directed edge between two vertices.
+
+    Parameters
+    ----------
+    i: integer
+        Starting vertex.
+
+    j: integer
+        Ending vertex.
+
+    Returns
+    -------
+    adj: Object
+        Adjacency matrix instance.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+
+
+{{alias}}.prototype.edges
+    Returns the list of all edges.
+
+    Returns
+    -------
+    list: Array<Array>
+        List of edges.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > adj.addEdge( 0, 2 );
+    > adj.addEdge( 1, 2 );
+    > adj.edges
+    [ [ 0, 1 ], [ 0, 2 ], [ 1, 2 ] ]
+
+
+{{alias}}.prototype.hasEdge( i, j )
+    Checks whether a directed edge exists between two vertices.
+
+    Parameters
+    ----------
+    i: integer
+        Starting vertex.
+
+    j: integer
+        Ending vertex.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an edge exists.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > var bool = adj.hasEdge( 0, 1 )
+    true
+
+
+{{alias}}.prototype.inDegree( i )
+    Returns the indegree of a vertex (i.e., number of edges ending at a vertex).
+
+    Parameters
+    ----------
+    i: integer
+        Vertex.
+
+    Returns
+    -------
+    v: integer
+        Indegree.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > adj.addEdge( 0, 2 );
+    > adj.addEdge( 1, 2 );
+    > adj.addEdge( 2, 3 );
+    > var v = adj.inDegree( 2 )
+    2
+
+
+{{alias}}.prototype.inEdges( i )
+    Returns a list of vertices having edges ending at a specified vertex.
+
+    Parameters
+    ----------
+    i: integer
+        Vertex.
+
+    Returns
+    -------
+    out: Array<integer>
+        List of vertices.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > adj.addEdge( 0, 2 );
+    > adj.addEdge( 1, 2 );
+    > adj.addEdge( 2, 3 );
+    > var out = adj.inEdges( 2 )
+    [ 0, 1 ]
+
+
+{{alias}}.prototype.nedges
+    Returns the total number of edges.
+
+    Returns
+    -------
+    v: integer
+        Total number of edges.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > adj.addEdge( 0, 2 );
+    > adj.addEdge( 1, 2 );
+    > var out = adj.nedges
+    3
+
+
+{{alias}}.prototype.nvertices
+    Returns the total number of vertices.
+
+    Returns
+    -------
+    v: integer
+        Total number of vertices.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > adj.addEdge( 0, 2 );
+    > adj.addEdge( 1, 2 );
+    > var out = adj.nvertices
+    4
+
+
+{{alias}}.prototype.outDegree( i )
+    Returns the outdegree of a vertex (i.e., number of edges starting at a
+    vertex).
+
+    Parameters
+    ----------
+    i: integer
+        Vertex.
+
+    Returns
+    -------
+    v: integer
+        Outdegree.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > adj.addEdge( 0, 2 );
+    > adj.addEdge( 1, 2 );
+    > adj.addEdge( 2, 3 );
+    > var v = adj.outDegree( 2 )
+    1
+
+
+{{alias}}.prototype.outEdges( i )
+    Returns a list of vertices having edges starting at a specified vertex.
+
+    Parameters
+    ----------
+    i: integer
+        Vertex.
+
+    Returns
+    -------
+    out: Array<integer>
+        List of vertices.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > adj.addEdge( 0, 2 );
+    > adj.addEdge( 1, 2 );
+    > adj.addEdge( 2, 3 );
+    > var out = adj.outEdges( 2 )
+    [ 3 ]
+
+
+{{alias}}.prototype.removeEdge( i, j )
+    Removes a directed edge between two vertices.
+
+    Parameters
+    ----------
+    i: integer
+        Starting vertex.
+
+    j: integer
+        Ending vertex.
+
+    Returns
+    -------
+    adj: Object
+        Adjacency matrix instance.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > adj.edges
+
+
+{{alias}}.prototype.toAdjacencyList()
+    Returns an adjacency list representation.
+
+    Returns
+    -------
+    out: Array<Array>
+        Adjacency list.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 0, 1 );
+    > adj.addEdge( 0, 2 );
+    > adj.addEdge( 1, 2 );
+    > adj.addEdge( 2, 3 );
+    > var out = adj.toAdjacencyList()
+    [ [ 1, 2 ], [ 2 ], [ 3 ], [] ]
+
+
+{{alias}}.prototype.toposort()
+    Returns a topological ordering of the directed graph.
+
+    The function returns a two-element array.
+
+    If the function is able to compute a topological ordering, the first array
+    element is the topological ordering and the second element is `null`.
+
+    If a topological ordering cannot be achieved (e.g., due to the graph not
+    being a directed acyclic graph (DAG)), the first array element is `null` and
+    the second element is the first encountered cycle.
+
+    Returns
+    -------
+    out: Array
+        Results.
+
+    Examples
+    --------
+    > var adj = {{alias}}( 4 );
+    > adj.addEdge( 1, 0 );
+    > adj.addEdge( 1, 2 );
+    > adj.addEdge( 0, 2 );
+    > adj.addEdge( 2, 3 );
+    > var results = adj.toposort();
+    > var o = results[ 0 ]
+    [ 1, 0, 2, 3 ]
+    > var c = results[ 1 ]
+    null
+    > adj.addEdge( 3, 1 );
+    > results = adj.toposort();
+    > o = results[ 0 ]
+    null
+    > var c = results[ 1 ]
+    [ 0, 1, 3, 2, 0 ]
+
+    See Also
+    --------
+

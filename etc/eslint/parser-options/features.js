@@ -32,7 +32,7 @@ var features = {};
 * @memberof features
 * @type {boolean}
 * @default false
-* @see [globalReturn]{@link http://eslint.org/docs/user-guide/configuring#specifying-parser-options}
+* @see [globalReturn]{@link https://eslint.org/docs/user-guide/configuring#specifying-parser-options}
 */
 features.globalReturn = false;
 
@@ -43,7 +43,7 @@ features.globalReturn = false;
 * @memberof features
 * @type {boolean}
 * @default false
-* @see [impliedStrict]{@link http://eslint.org/docs/user-guide/configuring#specifying-parser-options}
+* @see [impliedStrict]{@link https://eslint.org/docs/user-guide/configuring#specifying-parser-options}
 */
 features.impliedStrict = false;
 
@@ -54,7 +54,7 @@ features.impliedStrict = false;
 * @memberof features
 * @type {boolean}
 * @default false
-* @see [jsx]{@link http://eslint.org/docs/user-guide/configuring#specifying-parser-options}
+* @see [jsx]{@link https://eslint.org/docs/user-guide/configuring#specifying-parser-options}
 */
 features.jsx = false;
 

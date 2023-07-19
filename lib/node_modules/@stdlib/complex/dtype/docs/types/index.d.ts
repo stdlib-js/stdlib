@@ -1,0 +1,82 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2022 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/// <reference types="@stdlib/types"/>
+
+import { Complex64, Complex128, ComplexDataType } from '@stdlib/types/object';
+
+/**
+* Complex number data type.
+*/
+type DataType = ComplexDataType;
+
+/**
+* Returns the data type of a complex number.
+*
+* @param value - input value
+* @returns data type
+*
+* @example
+* var Complex128 = require( `@stdlib/complex/float64` );
+*
+* var dt = dtype( new Complex128( 1.0, 2.0 ) );
+* // returns 'complex128'
+*/
+declare function dtype( value: Complex128 ): 'complex128';
+
+/**
+* Returns the data type of a complex number.
+*
+* @param value - input value
+* @returns data type
+*
+* @example
+* var Complex64 = require( `@stdlib/complex/float32` );
+*
+* var dt = dtype( new Complex64( 1.0, 2.0 ) );
+* // returns 'complex64'
+*/
+declare function dtype( value: Complex64 ): 'complex64';
+
+/**
+* Returns the data type of a complex number.
+*
+* ## Notes
+*
+* -   If provided an argument having an unknown or unsupported type, the function returns `null`.
+*
+* @param value - input value
+* @returns data type
+*
+* @example
+* var Complex64 = require( `@stdlib/complex/float32` );
+*
+* var dt = dtype( new Complex64( 1.0, 2.0 ) );
+* // returns 'complex64'
+*
+* var dt = dtype( 'beep' );
+* // returns null
+*/
+declare function dtype( value: any ): DataType | null;
+
+
+// EXPORTS //
+
+export = dtype;

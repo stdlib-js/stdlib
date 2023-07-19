@@ -1,7 +1,7 @@
 #/
 # @license Apache-2.0
 #
-# Copyright (c) 2017 The Stdlib Authors.
+# Copyright (c) 2021 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,45 +18,33 @@
 
 # After changing this file, check it on:
 #
-#   http://lint.travis-ci.org/
-#
-# Known lint bugs:
-#
-# -   add-ons: https://github.com/travis-ci/travis-yaml/issues/58
-# -   osx: https://github.com/travis-ci/travis-yaml/issues/95
+#   https://config.travis-ci.com/explore
 
+# Specify the programming language:
 language: node_js
 
-# Is `sudo` required? If not, jobs are run on container-based infrastructure.
-sudo: true
+# Specify the host operating system:
+os: linux
 
+# Specify the Linux distribution:
+dist: xenial
+
+# Specify the list of Node.js versions on which we want to build:
 node_js:
   # Node.js
-  - 'node'
-  - '13'
-  - '12'
-  - '11'
-  - '10'
-  - '9'
-  - '8'
-  - '7'
-  - '6'
-  - '5'
-  - '4'
-  # io.js
-  - '3'
-  - '2'
-  - '1'
-  # Node.js
-  - '0.12'
-  - '0.10'
+  - '16'
 
+# Specify which branches should trigger builds:
+branches:
+  only:
+    - develop
 
-os:
-  - linux
-  # - osx
+# Configure Git:
+git:
+  # Set the clone depth, making sure to account for queued builds:
+  depth: 100
 
-# Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5. Add-ons are Linux-specific. Electron requires a virtual display server (xvfb) on Linux.
+# Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5. Electron requires a virtual display server (xvfb) on Linux.
 addons:
   apt:
     sources:
@@ -72,7 +60,7 @@ addons:
       - xvfb
       - unzip
 
-
+# Specify environment variables:
 env:
   # Environment variables common to all jobs:
   global:
@@ -86,36 +74,21 @@ env:
     - NODE_PATH="$TRAVIS_BUILD_DIR/lib/node_modules"
 
   # Environment variables used to construct the build matrix:
-  matrix:
+  jobs:
     - BUILD_TASK='test-npm-install'
-    - BUILD_TASK='test'
-    - BUILD_TASK='benchmark'
-    - BUILD_TASK='examples'
-    - BUILD_TASK='test-coverage'
 
-
-matrix:
+# Configure the build matrix:
+jobs:
   # Flag to immediately finish a build if any one of the jobs fails:
   fast_finish: true
 
-
-# Set the clone depth:
-git:
-  depth: 100
-
-
+# Define steps to be performed before running installation steps:
 before_install:
   # Perform platform-specific initialization:
-  - if [[ $TRAVIS_OS_NAME = "linux" ]]; then
-      mkdir -p $HOME/bin;
-      ln -s /usr/bin/gcc-9 $HOME/bin/gcc;
-      ln -s /usr/bin/g++-9 $HOME/bin/g++;
-      ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran;
-    else
-      brew cask uninstall oclint;
-      brew update;
-      brew install -v gcc;
-    fi
+  - mkdir -p $HOME/bin;
+    ln -s /usr/bin/gcc-9 $HOME/bin/gcc;
+    ln -s /usr/bin/g++-9 $HOME/bin/g++;
+    ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran;
 
   # Configure the virtual display server (needed for electron):
   - export DISPLAY=':99.0'
@@ -139,23 +112,22 @@ before_install:
   - chmod +x ./tools/ci/travis/before_install
   - "./tools/ci/travis/before_install"
 
-
+# Define installation steps:
 install:
   # Run install tasks via `travis_retry` to address occasional `npm install` failures (see https://docs.travis-ci.com/user/common-build-problems/#travis_retry):
   - "travis_retry make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install"
 
-
+# Define the build steps:
 script:
   - chmod +x ./tools/ci/travis/script
   - "./tools/ci/travis/script $BUILD_TASK"
 
-
+# Define the steps to run after completing the build steps:
 after_script:
   - chmod +x ./tools/ci/travis/after_script
   - "./tools/ci/travis/after_script"
 
-
+# Define notifications:
 notifications:
   slack:
-    rooms:
-      secure: "RvY7XdxrvM3clWcnCIDYym+NerUVqpFS8Xekg7owYHgIm159zdpg5aIQAXvCuW4n82cK4bl932Cws6fzlXlnqS/0mjP1VTB1cQ32gL3TG2KpWAGJhtcl2gKEqM5KOZIKOW3171j0rsMQUODmke/N2316ACvgYoOUJbQXoOdaFIkWEMqgVxyq2sl9sC+4mPW3TmZEXNzn9Kt+OphunbfgEBrbkAL1QjiXYZnhhYT4SQ/QwaHtvI0MmYQ3B5GLXXMx+NkXrG3qcXx7XLxbw61rTKxY+vWqAh9w4MznlVptf8NiPCd0MX+2VyRPVow9wqZ68yWFAOHYt4zlW+uGlqr9cT31sQjuCH4WNjSPx+5YMrD4a7oBRAmxpIa7v7yRIhXR6Ia/0YO5S0kkV2MaSj+SiCcGSehWbV8NdlGzu5eD8JYzHQUykqCoKkfRC21F4ppvVL+rC8odkMLtLVOwA6+oDngqSuhXCRI8miac1YEmtu8Cj+JOVxgTudVQUkzcdgr7apUFRI3SblPQZnT0k/2eU0/U818z44tsDk5CcbCVXUCyre7vHNRrGGu8JaN7czxRKjEvbN//qGVixxm0tldQKgV1p3s0NVHPQJeuPX0hy3qHaQnzzPoJtNQvqjeOdPZsCArGjhQoWrP3QkIE0s8ZYFQnuQ1DqH3Pcqgvf45vjq0="
+    secure: YEAbWYmphiLPgeG1eTG07nulUlxI7s2qIGYECX0GM/OxtR+uQSQCKR5dBhW67ng1sILiUh3vy/elAbdtSKGNmue50MD5h1zY9l2CgYrspZ/b8Q0jryaYfxdkX4QKKj75dak5dD+Ax+tdUpCPQIXCyDN6xT7G7eSmHNeWL4IjCrNGy1T+pflp7QFHLia6CdxIlTj5PE8OoGwcMrPNIC3dmy+rFWxHMx+3GfZkd3UCgCwAmaYLgharQ5NJN3Ucuw/m+/TK8jxTqLoe4mroQDLfZIzgqkwE0Jty9hd/TxhMI8X8AWEfY8xTRKe3pN4fnv2W37ICG2Oru9FPJ8xb3yeJl7AMTHZSFeLTR2HJldQ7Y7u0HRFyqNxKVfzfX0hRhlHyV4REtXd3uJcHuiQqlYJHQHfQ0Z00eYIHolYnXAlO1s8OiW8L+6RYCy8VwgLMlM0o37PfcwWFpj1pZXx3ZjndBemRmS3lxyokp+bfwkVWRIdBC9b27HVTV8lDSPZCLcmuR3GaaE8WGFdyjGyKiEfjT4/utHMT7SenICkqiJNInX69os5M/TOqDESeI6g6t7cYCNEystL5+sAzwAxyud28m336F58nC1e8UiwyGF1Kv57i7Lvgtryn4MhGMEzLRmlnyMs0jlU3gH2VORL9Uoqc5FASN1+XJhsqWJ0dzzHHQKA=

@@ -23,7 +23,7 @@
 # This target runs JavaScript unit tests using a specified test runner and pipes TAP output to a reporter.
 
 tools-test-javascript:
-	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" FILES="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-javascript-files
+	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" NODE_FLAGS_TEST="$(NODE_FLAGS_TEST)" FILES="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-javascript-files
 
 .PHONY: tools-test-javascript
 
@@ -33,7 +33,7 @@ tools-test-javascript:
 # This target runs JavaScript unit tests and aggregates TAP output as a test summary.
 
 tools-test-javascript-summary:
-	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" FILES="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-javascript-files-summary
+	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" NODE_FLAGS_TEST="$(NODE_FLAGS_TEST)" FILES="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-javascript-files-summary
 
 .PHONY: tools-test-javascript-summary
 
@@ -45,6 +45,6 @@ tools-test-javascript-summary:
 # TODO: update once `test-node-versions` has been updated to accepting a `$FILES` list.
 
 tools-test-node-versions:
-	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" TESTS="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-node-versions
+	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" NODE_FLAGS_TEST="$(NODE_FLAGS_TEST)" TESTS="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-node-versions
 
 .PHONY: tools-test-node-versions

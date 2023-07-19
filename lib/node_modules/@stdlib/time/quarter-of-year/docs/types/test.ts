@@ -29,7 +29,7 @@ import quarterOfYear = require( './index' );
 	quarterOfYear( new Date() ) ; // $ExpectType number
 }
 
-// The function does not compile if provided an argument of invalid type...
+// The compiler throws an error if the function is provided an argument of invalid type...
 {
 	quarterOfYear( [] ); // $ExpectError
 	quarterOfYear( {} ); // $ExpectError
@@ -38,7 +38,7 @@ import quarterOfYear = require( './index' );
 	quarterOfYear( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided more than one argument...
+// The compiler throws an error if the function is provided more than one argument...
 {
 	quarterOfYear( 1, 15 ); // $ExpectError
 }

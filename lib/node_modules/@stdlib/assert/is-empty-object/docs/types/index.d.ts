@@ -36,7 +36,7 @@
 * var bool = isEmptyObject( [] );
 * // returns false
 */
-declare function isEmptyObject( value: any ): boolean;
+declare function isEmptyObject( value: any ): value is object;
 
 
 // EXPORTS //

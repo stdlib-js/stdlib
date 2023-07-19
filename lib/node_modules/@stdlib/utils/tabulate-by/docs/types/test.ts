@@ -18,19 +18,27 @@
 
 import tabulateBy = require( './index' );
 
-const indicator = ( v: string ): string => v[ 0 ];
+/**
+* Indicator function.
+*
+* @param v - value
+* @returns result
+*/
+function indicator( v: string ): string {
+	return v[ 0 ];
+}
 
 
 // TESTS //
 
 // The function returns an object...
 {
-	tabulateBy( [ 'beep', 'boop', 'foo', 'bar' ], indicator ); // $ExpectType [any, number, number][]
-	tabulateBy( [], indicator ); // $ExpectType [any, number, number][]
+	tabulateBy( [ 'beep', 'boop', 'foo', 'bar' ], indicator ); // $ExpectType TableEntry<string>[]
+	tabulateBy( [], indicator ); // $ExpectType TableEntry<string>[]
 	const opts = {
 		'thisArg': {}
 	};
-	tabulateBy( [ 'beep', 'boop', 'foo', 'bar' ], opts, indicator ); // $ExpectType [any, number, number][]
+	tabulateBy( [ 'beep', 'boop', 'foo', 'bar' ], opts, indicator ); // $ExpectType TableEntry<string>[]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...

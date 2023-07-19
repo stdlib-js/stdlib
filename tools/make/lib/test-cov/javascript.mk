@@ -20,39 +20,67 @@
 
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
 	include $(TOOLS_MAKE_LIB_DIR)/test-cov/istanbul.mk
+else
+ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), c8)
+	include $(TOOLS_MAKE_LIB_DIR)/test-cov/c8.mk
+endif
 endif
 
 
-# TARGETS #
+# RULES #
 
-# Run unit tests and generate a test coverage report.
+#/
+# Runs JavaScript unit tests and generates a test coverage report.
 #
-# This target instruments JavaScript source code, runs unit tests, and outputs a test coverage report.
-
+# ## Notes
+#
+# -   Raw TAP output is piped to a TAP reporter.
+# -   This command is useful when wanting to glob for JavaScript test files (e.g., generate a test coverage report for all JavaScript tests for a particular package).
+#
+# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [JAVASCRIPT_CODE_INSTRUMENTER] - JavaScript code instrumenter
+# @param {*} [FAST_FAIL] - flag indicating whether to stop running tests upon encountering a test failure
+#
+# @example
+# make test-javascript-cov
+#
+# @example
+# make test-javascript-cov TESTS_FILTER=".*/blas/base/dasum/.*"
+#/
 test-javascript-cov: clean-javascript-cov
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
 	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" $(MAKE) -f $(this_file) test-istanbul
+else
+ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), c8)
+	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" $(MAKE) -f $(this_file) test-c8
+endif
 endif
 
 .PHONY: test-javascript-cov
 
-
-# View a test coverage report.
+#/
+# Opens an HTML test coverage report in a local web browser.
 #
-# This target opens an HTML JavaScript coverage report in a local web browser.
-
+# @example
+# make view-javascript-cov
+#/
 view-javascript-cov:
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
 	$(QUIET) $(MAKE) -f $(this_file) view-istanbul-report
+else
+ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), c8)
+	$(QUIET) $(MAKE) -f $(this_file) view-c8-report
+endif
 endif
 
 .PHONY: view-javascript-cov
 
-
-# Remove a coverage directory.
+#/
+# Removes a JavaScript coverage directory (including all coverage artifacts).
 #
-# This target cleans up a JavaScript coverage directory by removing it entirely.
-
+# @example
+# make clean-javascript-cov
+#/
 clean-javascript-cov:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(COVERAGE_DIR)
 

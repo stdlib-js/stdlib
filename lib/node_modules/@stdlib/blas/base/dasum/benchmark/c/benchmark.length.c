@@ -107,6 +107,7 @@ double benchmark( int iterations, int len ) {
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_double()*20000.0 ) - 10000.0;
 	}
+	y = 0.0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		y = c_dasum( len, x, 1 );

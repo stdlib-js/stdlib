@@ -211,7 +211,6 @@ console.log( y );
 
 </section>
 
-
 <section class="links">
 
 [mdn-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array

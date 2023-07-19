@@ -28,7 +28,7 @@ import lpad = require( './index' );
 	lpad( 'abd', 10 ); // $ExpectType string
 }
 
-// The function does not compile if provided arguments having invalid types...
+// The compiler throws an error if the function is provided arguments having invalid types...
 {
 	lpad( true, 6 ); // $ExpectError
 	lpad( false, 6 ); // $ExpectError
@@ -52,7 +52,7 @@ import lpad = require( './index' );
 	lpad( 'abd', 6, /[a-z]/ ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	lpad(); // $ExpectError
 	lpad( 'abc' ); // $ExpectError

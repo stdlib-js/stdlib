@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import * as random from '@stdlib/types/random';
-import { Iterator } from '@stdlib/types/iter';
+import { TypedIterator } from '@stdlib/types/iter';
 
 /**
 * Interface defining function options.
@@ -56,7 +56,7 @@ interface Options {
 /**
 * Interface for iterators of pseudorandom numbers drawn from an F distribution.
 */
-interface RandIter extends Iterator {
+interface Iterator<T> extends TypedIterator<T> {
 	/**
 	* Underlying PRNG.
 	*/
@@ -114,7 +114,7 @@ interface RandIter extends Iterator {
 *
 * // ...
 */
-declare function iterator( d1: number, d2: number, options?: Options ): RandIter; // tslint:disable-line:max-line-length
+declare function iterator( d1: number, d2: number, options?: Options ): Iterator<number>;
 
 
 // EXPORTS //

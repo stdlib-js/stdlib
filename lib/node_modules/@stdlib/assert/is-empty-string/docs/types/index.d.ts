@@ -40,7 +40,7 @@ interface IsEmptyString {
 	* var bool = isEmptyString( [] );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is string | String;
 
 	/**
 	* Tests if a value is an empty string primitive.
@@ -60,7 +60,7 @@ interface IsEmptyString {
 	* var bool = isEmptyString.isPrimitive( [] );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is string;
 
 	/**
 	* Tests if a value is an empty string object.
@@ -80,7 +80,7 @@ interface IsEmptyString {
 	* var bool = isEmptyString.isObject( [] );
 	* // returns false
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is String;
 }
 
 /**

@@ -1,0 +1,28 @@
+
+{{alias}}( x, offset )
+    Returns a Float32Array view of a Complex64Array.
+
+    Parameters
+    ----------
+    x: Complex64Array
+        Input array.
+
+    offset: integer
+        Starting index of the view relative to the Complex64Array.
+
+    Returns
+    -------
+    out: Float32Array
+        Float32Array view.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/complex64}}( 10 );
+    > var out = {{alias}}( x, 0 )
+    <Float32Array>
+    > var bool = ( out.buffer === x.buffer )
+    true
+
+    See Also
+    --------
+

@@ -20,8 +20,8 @@
 #
 # This hook is called with the following arguments:
 #
-# * `$1` - name of the remote to which the push is being done
-# * `$2` - URL to which the push is being done
+# -   `$1` - name of the remote to which the push is being done
+# -   `$2` - URL to which the push is being done
 #
 # If pushing without using a named remote, these arguments will be equal.
 #
@@ -36,10 +36,25 @@
 
 # VARIABLES #
 
+# Resolve environment variables:
+skip_javascript_examples=${SKIP_RUN_JAVASCRIPT_EXAMPLES}
+skip_javascript_readme_examples=${SKIP_RUN_JAVASCRIPT_README_EXAMPLES}
+skip_javascript_benchmarks=${SKIP_RUN_JAVASCRIPT_BENCHMARKS}
+skip_javascript_tests=${SKIP_RUN_JAVASCRIPT_TESTS}
+skip_c_examples=${SKIP_RUN_C_EXAMPLES}
+skip_c_benchmarks=${SKIP_RUN_C_BENCHMARKS}
+skip_cpp_examples=${SKIP_RUN_CPP_EXAMPLES}
+skip_cpp_benchmarks=${SKIP_RUN_CPP_BENCHMARKS}
+skip_fortran_benchmarks=${SKIP_RUN_FORTRAN_BENCHMARKS}
+skip_julia_benchmarks=${SKIP_RUN_JULIA_BENCHMARKS}
+skip_python_benchmarks=${SKIP_RUN_PYTHON_BENCHMARKS}
+skip_r_benchmarks=${SKIP_RUN_R_BENCHMARKS}
+
+# Resolve the remote:
 remote="$1"
 
 # Determine the current branch:
-GIT_CURRENT_BRANCH=$(git name-rev --name-only HEAD)
+GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
@@ -109,152 +124,166 @@ main() {
 		on_error 1
 	fi
 
-	# Get the set of changed files (added and modified):
-	changed_files=$(git diff --name-only --cached --diff-filter AM "${remote}/${GIT_CURRENT_BRANCH}" | sed -e "s#^#${root}\\/#")
+	# Get the set of changed files (added, copied, modified, and renamed):
+	changed_files=$(git diff --name-only --cached --diff-filter ACMR "${remote}/${GIT_CURRENT_BRANCH}" | sed -e "s#^#${root}\\/#")
 
 	# Run JavaScript example files:
-	files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | grep -v '/examples/fixtures/.*\.js$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running JavaScript example files...' >&2
-		make FILES="${files}" examples-javascript-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running JavaScript examples.' >&2
-			on_error 1
+	if [[ -z "${skip_javascript_examples}" ]]; then
+		files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | grep -v '/examples/fixtures/.*\.js$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running JavaScript example files...' >&2
+			make FILES="${files}" examples-javascript-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running JavaScript examples.' >&2
+				on_error 1
+			fi
 		fi
 	fi
-
 	# Run C example files...
-	files=$(echo "${changed_files}" | grep '/examples/.*\.c$' | grep -v '/examples/fixtures/.*\.c$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running C example files...' >&2
-		make FILES="${files}" examples-c-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running C examples.' >&2
-			on_error 1
+	if [[ -z "${skip_c_examples}" ]]; then
+		files=$(echo "${changed_files}" | grep '/examples/.*\.c$' | grep -v '/examples/fixtures/.*\.c$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running C example files...' >&2
+			make FILES="${files}" examples-c-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running C examples.' >&2
+				on_error 1
+			fi
 		fi
 	fi
-
 	# Run C++ example files...
-	files=$(echo "${changed_files}" | grep '/examples/.*\.cpp$' | grep -v '/examples/fixtures/.*\.cpp$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running C++ example files...' >&2
-		make FILES="${files}" examples-cpp-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running C++ examples.' >&2
-			on_error 1
+	if [[ -z "${skip_cpp_examples}" ]]; then
+		files=$(echo "${changed_files}" | grep '/examples/.*\.cpp$' | grep -v '/examples/fixtures/.*\.cpp$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running C++ example files...' >&2
+			make FILES="${files}" examples-cpp-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running C++ examples.' >&2
+				on_error 1
+			fi
 		fi
 	fi
-
 	# Run JavaScript examples in README files:
-	files=$(echo "${changed_files}" | grep 'README.md$' | grep -v '^tools/' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running README JavaScript examples...' >&2
-		make FILES="${files}" markdown-examples-javascript-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running README JavaScript examples.' >&2
-			on_error 1
+	if [[ -z "${skip_javascript_readme_examples}" ]]; then
+		files=$(echo "${changed_files}" | grep 'README.md$' | grep -v '^tools/' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running README JavaScript examples...' >&2
+			make FILES="${files}" markdown-examples-javascript-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running README JavaScript examples.' >&2
+				on_error 1
+			fi
 		fi
 	fi
 
 	# TODO: run CLI examples found in Markdown files
 
 	# Run C benchmark files...
-	files=$(echo "${changed_files}" | grep '/benchmark/.*\.c$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running C benchmark files...' >&2
-		make FILES="${files}" benchmark-c-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running C benchmarks.' >&2
-			on_error 1
+	if [[ -z "${skip_c_benchmarks}" ]]; then
+		files=$(echo "${changed_files}" | grep '/benchmark/.*\.c$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running C benchmark files...' >&2
+			make FILES="${files}" benchmark-c-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running C benchmarks.' >&2
+				on_error 1
+			fi
 		fi
 	fi
-
 	# Run C++ benchmark files...
-	files=$(echo "${changed_files}" | grep '/benchmark/.*\.cpp$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running C++ benchmark files...' >&2
-		make FILES="${files}" benchmark-cpp-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running C++ benchmarks.' >&2
-			on_error 1
+	if [[ -z "${skip_cpp_benchmarks}" ]]; then
+		files=$(echo "${changed_files}" | grep '/benchmark/.*\.cpp$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running C++ benchmark files...' >&2
+			make FILES="${files}" benchmark-cpp-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running C++ benchmarks.' >&2
+				on_error 1
+			fi
 		fi
 	fi
-
 	# Run Fortran benchmark files...
-	files=$(echo "${changed_files}" | grep '/benchmark/.*\.f$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running Fortran benchmark files...' >&2
-		make FILES="${files}" benchmark-fortran-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running Fortran benchmarks.' >&2
-			on_error 1
+	if [[ -z "${skip_fortran_benchmarks}" ]]; then
+		files=$(echo "${changed_files}" | grep '/benchmark/.*\.f$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running Fortran benchmark files...' >&2
+			make FILES="${files}" benchmark-fortran-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running Fortran benchmarks.' >&2
+				on_error 1
+			fi
 		fi
 	fi
-
 	# Run JavaScript benchmark files...
-	files=$(echo "${changed_files}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running JavaScript benchmark files...' >&2
-		make FILES="${files}" benchmark-javascript-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running JavaScript benchmarks.' >&2
-			on_error 1
+	if [[ -z "${skip_javascript_benchmarks}" ]]; then
+		files=$(echo "${changed_files}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running JavaScript benchmark files...' >&2
+			make FILES="${files}" benchmark-javascript-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running JavaScript benchmarks.' >&2
+				on_error 1
+			fi
 		fi
 	fi
-
 	# Run Julia benchmark files...
-	files=$(echo "${changed_files}" | grep '/benchmark/.*\.jl$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running Julia benchmark files...' >&2
-		make FILES="${files}" benchmark-julia-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running Julia benchmarks.' >&2
-			on_error 1
+	if [[ -z "${skip_julia_benchmarks}" ]]; then
+		files=$(echo "${changed_files}" | grep '/benchmark/.*\.jl$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running Julia benchmark files...' >&2
+			make FILES="${files}" benchmark-julia-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running Julia benchmarks.' >&2
+				on_error 1
+			fi
 		fi
 	fi
-
 	# Run Python benchmark files...
-	files=$(echo "${changed_files}" | grep '/benchmark/.*\.py$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running Python benchmark files...' >&2
-		make FILES="${files}" benchmark-python-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running Python benchmarks.' >&2
-			on_error 1
+	if [[ -z "${skip_python_benchmarks}" ]]; then
+		files=$(echo "${changed_files}" | grep '/benchmark/.*\.py$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running Python benchmark files...' >&2
+			make FILES="${files}" benchmark-python-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running Python benchmarks.' >&2
+				on_error 1
+			fi
 		fi
 	fi
-
 	# Run R benchmark files...
-	files=$(echo "${changed_files}" | grep '/benchmark/.*\.R$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running R benchmark files...' >&2
-		make FILES="${files}" benchmark-r-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running R benchmarks.' >&2
-			on_error 1
+	if [[ -z "${skip_r_benchmarks}" ]]; then
+		files=$(echo "${changed_files}" | grep '/benchmark/.*\.R$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running R benchmark files...' >&2
+			make FILES="${files}" benchmark-r-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running R benchmarks.' >&2
+				on_error 1
+			fi
 		fi
 	fi
-
 	# Run JavaScript test files...
-	files=$(echo "${changed_files}" | grep '/test/.*\.js$' | grep -v '/test/fixtures/.*\.js$' | tr '\n' ' ')
-	if [[ -n "${files}" ]]; then
-		echo 'Running JavaScript test files...' >&2
-		make FILES="${files}" test-javascript-files > /dev/null >&2
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Encountered an error when running JavaScript tests.' >&2
-			on_error 1
+	if [[ -z "${skip_javascript_tests}" ]]; then
+		files=$(echo "${changed_files}" | grep '/test/.*\.js$' | grep -v '/test/fixtures/.*\.js$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			echo 'Running JavaScript test files...' >&2
+			make FILES="${files}" test-javascript-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Encountered an error when running JavaScript tests.' >&2
+				on_error 1
+			fi
 		fi
 	fi
 

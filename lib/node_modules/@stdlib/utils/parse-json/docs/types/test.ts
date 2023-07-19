@@ -48,7 +48,7 @@ import parseJSON = require( './index' );
 	parseJSON( '{"beep":"boop"}', 'baz' ); // $ExpectError
 }
 
-// The function does not compile if provided an unsupported number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	parseJSON(); // $ExpectError
 	parseJSON( '{"beep":"boop"}', 'baz', 'boz' ); // $ExpectError

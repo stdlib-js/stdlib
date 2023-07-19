@@ -22,7 +22,7 @@
 * Capitalizes the first letter of each word in an input string.
 *
 * @param str - string to convert
-* @returns start case string
+* @returns start-cased string
 *
 * @example
 * var str = startcase( 'beep boop foo bar' );

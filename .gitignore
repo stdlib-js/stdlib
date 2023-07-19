@@ -18,7 +18,8 @@
 
 # Files #
 #########
-.postinstall.json
+package.json.copy
+.stdlibrc
 
 # Directories #
 ###############
@@ -69,9 +70,6 @@ tmp/
 *.rar
 *.tar
 *.zip
-
-# Make an exception for compressed distributable files:
-!dist/*.gz
 
 # Logs and databases #
 ######################
@@ -179,3 +177,12 @@ acs-*.bib
 #################
 .vscode/
 jsconfig.json
+
+# Sublime Text #
+################
+*.sublime-workspace
+*.sublime-project
+
+# Other editor files #
+######################
+.idea/

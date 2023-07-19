@@ -1,0 +1,25 @@
+
+{{alias}}( z )
+    Computes the squared absolute value of a single-precision complex floating-
+    point number.
+
+    The absolute value of a complex number is its distance from zero.
+
+    Parameters
+    ----------
+    z: Complex64
+        Complex number.
+
+    Returns
+    -------
+    y: number
+        Squared absolute value.
+
+    Examples
+    --------
+    > var y = {{alias}}( new {{alias:@stdlib/complex/float32}}( 5.0, 3.0 ) )
+    34.0
+
+    See Also
+    --------
+

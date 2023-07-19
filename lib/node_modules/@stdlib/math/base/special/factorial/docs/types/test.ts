@@ -26,7 +26,7 @@ import factorial = require( './index' );
 	factorial( 0.5 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	factorial( true ); // $ExpectError
 	factorial( false ); // $ExpectError
@@ -38,7 +38,7 @@ import factorial = require( './index' );
 	factorial( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	factorial(); // $ExpectError
 }

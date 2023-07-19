@@ -73,14 +73,14 @@ endif
 # -   This rule is useful when wanting to glob for Python source files (e.g., lint all Python source files for a particular package).
 #
 # @private
-# @param {string} [PYTHON_SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make pylint-src
 #
 # @example
-# make pylint-src PYTHON_SOURCES_FILTER=".*/math/base/special/abs/.*"
+# make pylint-src SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 pylint-src:
 ifeq ($(FAIL_FAST), true)
@@ -114,7 +114,7 @@ endif
 # make pylint-tests-fixtures
 #
 # @example
-# make pylint-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
+# make pylint-tests-fixtures TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 pylint-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
@@ -141,14 +141,14 @@ endif
 # -   This rule is useful when wanting to glob for Python examples files (e.g., lint all Python examples files for a particular package).
 #
 # @private
-# @param {string} [PYTHON_EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make pylint-examples
 #
 # @example
-# make pylint-examples PYTHON_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
+# make pylint-examples EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 pylint-examples:
 ifeq ($(FAIL_FAST), true)
@@ -175,14 +175,14 @@ endif
 # -   This rule is useful when wanting to glob for Python benchmark files (e.g., lint all Python benchmark files for a particular package).
 #
 # @private
-# @param {string} [PYTHON_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make pylint-benchmarks
 #
 # @example
-# make pylint-benchmarks PYTHON_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
+# make pylint-benchmarks BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 pylint-benchmarks:
 ifeq ($(FAIL_FAST), true)

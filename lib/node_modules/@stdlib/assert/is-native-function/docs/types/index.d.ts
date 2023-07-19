@@ -35,7 +35,7 @@
 * bool = isNativeFunction( Date );
 * // returns true
 */
-declare function isNativeFunction( value: any ): boolean;
+declare function isNativeFunction( value: any ): value is Function;
 
 
 // EXPORTS //

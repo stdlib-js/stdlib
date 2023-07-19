@@ -28,7 +28,7 @@ import isNonNegativeInteger = require( './index' );
 	isNonNegativeInteger( -2 ); // $ExpectType boolean
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	isNonNegativeInteger( true ); // $ExpectError
 	isNonNegativeInteger( false ); // $ExpectError

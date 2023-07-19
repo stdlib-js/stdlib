@@ -33,8 +33,7 @@ REPL_HELP_LINTER_FLAGS ?=
 # @example
 # make lint-repl-help
 #/
-lint-repl-help:
-	$(QUIET) $(MAKE_EXECUTABLE) $(REPL_HELP_LINTER)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REPL_HELP_LINTER) $(REPL_HELP_LINTER_FLAGS) $(ROOT_DIR)
+lint-repl-help: $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(REPL_HELP_LINTER)" $(REPL_HELP_LINTER_FLAGS) "$(ROOT_DIR)"
 
 .PHONY: lint-repl-help

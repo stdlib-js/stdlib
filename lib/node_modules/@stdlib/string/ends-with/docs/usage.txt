@@ -7,3 +7,4 @@ Options:
   -V,    --version             Print the package version.
          --search string       Search string.
          --len int             Substring length.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

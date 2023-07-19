@@ -1,6 +1,6 @@
 
 {{alias}}()
-    Returns a pseudorandom integer on the interval `[1, 4294967295]`.
+    Returns a pseudorandom integer on the interval `[0, 4294967295]`.
 
     This pseudorandom number generator (PRNG) is a 32-bit Mersenne Twister
     pseudorandom number generator.
@@ -89,7 +89,7 @@
     Examples
     --------
     > var v = {{alias}}.MIN
-    1
+    0
 
 
 {{alias}}.MAX

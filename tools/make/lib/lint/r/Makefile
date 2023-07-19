@@ -35,17 +35,17 @@ R_LINTER_FLAGS ?=
 # -   This rule supports the environment variables supported by each context-specific (`lint-r-<context>`) prerequisite.
 # -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained R files.
 #
-# @param {string} [R_SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [R_TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [R_EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [R_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-r
 #
 # @example
-# make lint-r R_SOURCES_FILTER=".*/blas/base/dasum/.*" R_TESTS_FILTER=".*/blas/base/dasum/.*" R_EXAMPLES_FILTER=".*/blas/base/dasum/.*" R_BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
+# make lint-r SOURCES_FILTER=".*/blas/base/dasum/.*" TESTS_FIXTURES_FILTER=".*/blas/base/dasum/.*" EXAMPLES_FILTER=".*/blas/base/dasum/.*" BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-r: lint-r-src lint-r-tests-fixtures lint-r-examples lint-r-benchmarks
 
@@ -58,14 +58,14 @@ lint-r: lint-r-src lint-r-tests-fixtures lint-r-examples lint-r-benchmarks
 #
 # -   This rule is useful when wanting to glob for R source files (e.g., lint all R source files for a particular package).
 #
-# @param {string} [R_SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-r-src
 #
 # @example
-# make lint-r-src R_SOURCES_FILTER=".*/math/base/special/abs/.*"
+# make lint-r-src SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-r-src:
 ifeq ($(FAIL_FAST), true)
@@ -98,7 +98,7 @@ endif
 # make lint-r-tests-fixtures
 #
 # @example
-# make lint-r-tests-fixtures R_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
+# make lint-r-tests-fixtures TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-r-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
@@ -124,14 +124,14 @@ endif
 #
 # -   This rule is useful when wanting to glob for R examples files (e.g., lint all R examples files for a particular package).
 #
-# @param {string} [R_EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-r-examples
 #
 # @example
-# make lint-r-examples R_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
+# make lint-r-examples EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-r-examples:
 ifeq ($(FAIL_FAST), true)
@@ -157,14 +157,14 @@ endif
 #
 # -   This rule is useful when wanting to glob for R benchmark files (e.g., lint all R benchmark files for a particular package).
 #
-# @param {string} [R_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-r-benchmarks
 #
 # @example
-# make lint-r-benchmarks R_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
+# make lint-r-benchmarks BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-r-benchmarks:
 ifeq ($(FAIL_FAST), true)

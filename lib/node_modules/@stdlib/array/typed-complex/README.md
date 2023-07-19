@@ -1,0 +1,206 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# Complex Typed Arrays
+
+> Create a complex number typed array.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var complexarray = require( '@stdlib/array/typed-complex' );
+```
+
+#### complexarray( \[dtype] )
+
+Creates a complex number typed array having a specified data type `dtype`.
+
+```javascript
+var arr = complexarray();
+// returns <Complex128Array>
+```
+
+The function recognizes the following data types:
+
+-   `complex128`: double-precision complex floating-point numbers
+-   `complex64`: single-precision complex floating-point numbers
+
+By default, the output complex number typed array data type is `complex128`. To specify an alternative data type, provide a `dtype` argument.
+
+```javascript
+var arr = complexarray( 'complex64' );
+// returns <Complex64Array>
+```
+
+#### complexarray( length\[, dtype] )
+
+Returns a complex number typed array having a specified `length`.
+
+```javascript
+var arr1 = complexarray( 5 );
+// returns <Complex128Array>
+
+var arr2 = complexarray( 5, 'complex64' );
+// returns <Complex64Array>
+```
+
+#### complexarray( complexarray\[, dtype] )
+
+Creates a complex number typed array from another complex number typed array.
+
+```javascript
+var arr1 = complexarray( [ 5.0, -3.0, 2.0, 1.0 ] );
+// returns <Complex128Array>
+
+var arr2 = complexarray( arr1 );
+// returns <Complex128Array>
+
+var arr3 = complexarray( arr1, 'complex64' );
+// returns <Complex64Array>
+```
+
+#### complexarray( obj\[, dtype] )
+
+Creates a complex number typed array from an array-like object or iterable.
+
+```javascript
+var arr1 = complexarray( [ 0.5, 0.5, 0.5, 0.5 ] );
+// returns <Complex128Array>
+
+var arr2 = complexarray( [ 0.5, 0.5, 0.5, 0.5 ], 'complex64' );
+// returns <Complex64Array>
+```
+
+If a provided array-like object contains interleaved real and imaginary components, the array-like object must have a length which is a multiple of two.
+
+#### complexarray( buffer\[, byteOffset\[, length]]\[, dtype] )
+
+Returns a complex number typed array view of an [`ArrayBuffer`][mdn-arraybuffer].
+
+```javascript
+var ArrayBuffer = require( '@stdlib/array/buffer' );
+var buf = new ArrayBuffer( 64 );
+
+var arr1 = complexarray( buf );
+// returns <Complex128Array>
+
+var arr2 = complexarray( buf, 'complex64' );
+// returns <Complex64Array>
+
+var arr3 = complexarray( buf, 32 );
+// returns <Complex128Array>
+
+var arr4 = complexarray( buf, 32, 'complex64' );
+// returns <Complex64Array>
+
+var arr5 = complexarray( buf, 32, 1 );
+// returns <Complex128Array>
+
+var arr6 = complexarray( buf, 24, 4, 'complex64' );
+// returns <Complex64Array>
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
+var Complex128 = require( '@stdlib/complex/float64' );
+var reinterpret128 = require( '@stdlib/strided/base/reinterpret-complex128' );
+var complexarray = require( '@stdlib/array/typed-complex' );
+
+function rand() {
+    var re = discreteUniform( -10, 10 );
+    var im = discreteUniform( -10, 10 );
+    return new Complex128( re, im );
+}
+
+// Create a new complex number typed array:
+var arr = complexarray( 100, 'complex128' );
+
+// Fill the array with random complex numbers:
+gfillBy( arr.length, arr, 1, rand );
+
+// Reinterpret the complex number array as a `Float64Array`:
+var view = reinterpret128( arr, 0 );
+
+// View the results:
+console.log( view );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[mdn-arraybuffer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
+
+</section>
+
+<!-- /.links -->

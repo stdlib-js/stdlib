@@ -1,0 +1,33 @@
+
+{{alias}}( s1, s2 )
+    Calculates the Levenshtein (edit) distance between two input strings.
+
+    Parameters
+    ----------
+    s1: string
+        First input string.
+
+    s2: string
+        Second input string.
+
+    Returns
+    -------
+    dist: number
+        Levenshtein (edit) distance between two strings.
+
+    Examples
+    --------
+    > var dist = {{alias}}( 'algorithm', 'altruistic' )
+    6
+    > dist = {{alias}}( 'elephant', 'hippo' )
+    7
+    > dist = {{alias}}( 'javascript', 'typescript' )
+    4
+    > dist = {{alias}}( 'levenshtein', 'leviathan' )
+    6
+    > dist = {{alias}}( 'sacrifice', 'paradise' )
+    5
+
+    See Also
+    --------
+

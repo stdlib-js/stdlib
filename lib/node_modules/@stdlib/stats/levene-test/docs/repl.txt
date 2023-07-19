@@ -1,0 +1,71 @@
+
+{{alias}}( x[, ...y[, options]] )
+    Computes Levene's test for equal variances.
+
+    Parameters
+    ----------
+    x: Array<number>
+        Measured values.
+
+    y: ...Array<number> (optional)
+        Measured values.
+
+    options: Object (optional)
+        Options.
+
+    options.alpha: number (optional)
+        Number in the interval `[0,1]` giving the significance level of the
+        hypothesis test. Default: `0.05`.
+
+    options.groups: Array (optional)
+        Array of group indicators.
+
+    Returns
+    -------
+    out: Object
+        Test result object.
+
+    out.alpha: number
+        Significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        p-value of the test.
+
+    out.statistic: number
+        Value of test statistic.
+
+    out.method: string
+        Name of test.
+
+    out.df: Array
+        Degrees of freedom.
+
+    out.print: Function
+        Function to print formatted output.
+
+    Examples
+    --------
+    // Data from Hollander & Wolfe (1973), p. 116:
+    > var x = [ 2.9, 3.0, 2.5, 2.6, 3.2 ];
+    > var y = [ 3.8, 2.7, 4.0, 2.4 ];
+    > var z = [ 2.8, 3.4, 3.7, 2.2, 2.0 ];
+
+    > var out = {{alias}}( x, y, z )
+
+    > var arr = [ 2.9, 3.0, 2.5, 2.6, 3.2,
+    ...     3.8, 2.7, 4.0, 2.4,
+    ...     2.8, 3.4, 3.7, 2.2, 2.0
+    ... ];
+    > var groups = [
+    ...     'a', 'a', 'a', 'a', 'a',
+    ...     'b', 'b', 'b', 'b',
+    ...     'c', 'c', 'c', 'c', 'c'
+    ... ];
+    > out = {{alias}}( arr, { 'groups': groups } )
+
+    See Also
+    --------
+

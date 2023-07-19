@@ -35,17 +35,17 @@ JULIA_LINTER_FLAGS ?=
 # -   This rule supports the environment variables supported by each context-specific (`lint-julia-<context>`) prerequisite.
 # -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained Julia files.
 #
-# @param {string} [JULIA_SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [JULIA_TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [JULIA_EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [JULIA_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-julia
 #
 # @example
-# make lint-julia JULIA_SOURCES_FILTER=".*/blas/base/dasum/.*" JULIA_TESTS_FILTER=".*/blas/base/dasum/.*" JULIA_EXAMPLES_FILTER=".*/blas/base/dasum/.*" JULIA_BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
+# make lint-julia SOURCES_FILTER=".*/blas/base/dasum/.*" TESTS_FIXTURES_FILTER=".*/blas/base/dasum/.*" EXAMPLES_FILTER=".*/blas/base/dasum/.*" BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-julia: lint-julia-src lint-julia-tests-fixtures lint-julia-examples lint-julia-benchmarks
 
@@ -58,14 +58,14 @@ lint-julia: lint-julia-src lint-julia-tests-fixtures lint-julia-examples lint-ju
 #
 # -   This rule is useful when wanting to glob for Julia source files (e.g., lint all Julia source files for a particular package).
 #
-# @param {string} [JULIA_SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-julia-src
 #
 # @example
-# make lint-julia-src JULIA_SOURCES_FILTER=".*/math/base/special/abs/.*"
+# make lint-julia-src SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-julia-src:
 ifeq ($(FAIL_FAST), true)
@@ -98,7 +98,7 @@ endif
 # make lint-julia-tests-fixtures
 #
 # @example
-# make lint-julia-tests-fixtures JULIA_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
+# make lint-julia-tests-fixtures TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-julia-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
@@ -124,14 +124,14 @@ endif
 #
 # -   This rule is useful when wanting to glob for Julia examples files (e.g., lint all Julia examples files for a particular package).
 #
-# @param {string} [JULIA_EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-julia-examples
 #
 # @example
-# make lint-julia-examples JULIA_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
+# make lint-julia-examples EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-julia-examples:
 ifeq ($(FAIL_FAST), true)
@@ -157,14 +157,14 @@ endif
 #
 # -   This rule is useful when wanting to glob for Julia benchmark files (e.g., lint all Julia benchmark files for a particular package).
 #
-# @param {string} [JULIA_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-julia-benchmarks
 #
 # @example
-# make lint-julia-benchmarks JULIA_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
+# make lint-julia-benchmarks BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-julia-benchmarks:
 ifeq ($(FAIL_FAST), true)

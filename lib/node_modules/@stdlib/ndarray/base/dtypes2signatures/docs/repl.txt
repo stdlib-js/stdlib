@@ -4,7 +4,7 @@
 
     Parameters
     ----------
-    dtypes: Array<string>
+    dtypes: ArrayLike
         List of array argument data types.
 
     nin: integer

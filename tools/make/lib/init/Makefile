@@ -35,6 +35,6 @@ include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 # @example
 # make init
 #/
-init: init-git-hooks init-stdlib-custom-eslint-plugins
+init: init-git-hooks init-eslint-plugins
 
 .PHONY: init

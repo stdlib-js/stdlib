@@ -49,7 +49,7 @@ type Closure = ( v: any ) => any;
 * var sum = f( 2 )( 3 );
 * // returns 5
 */
-declare function curry( fcn: Function, arity?: number, thisArg?: any ): Closure;
+declare function curry( fcn: Function, arity: number, thisArg?: any ): Closure;
 
 /**
 * Transforms a function into a sequence of functions each accepting a single argument.

@@ -36,9 +36,9 @@ julia> gen( x, \"data.json\" );
 ```
 """
 function gen( x, name )
-	y = Array{Float32}( undef, length(x) );
+	y = Array{Float64}( undef, length(x) );
 	for i in eachindex(x)
-		y[ i ] = 1.0 / sqrt( Float64( Float32( x[ i ] ) ) );
+		y[ i ] = Float32( 1.0 / Float32( sqrt( Float32( x[ i ] ) ) ) );
 	end
 
 	# Store data to be written to file as a collection:

@@ -19,9 +19,10 @@
 # VARIABLES #
 
 # Define the command to create a disposable HTTP server:
-repl_tmp_http_server := $(NODE) $(SRC_DIR)/@stdlib/tools/disposable-http-server/bin/cli
+repl_tmp_http_server := $(NODE) $(SRC_DIR)/@stdlib/net/disposable-http-server/bin/cli
 
 # Define the source file to bundle:
+# FIXME: this has gone away. We need to regenerate the bundle if it does not exist. See make/lib/dist/bundles.mk.
 REPL_BROWSER_BUNDLE ?= $(DIST_DIR)/stdlib-repl.min.js
 
 

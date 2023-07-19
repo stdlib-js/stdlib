@@ -1,0 +1,33 @@
+
+{{alias}}( a, b )
+    Tests if two arguments have the same type.
+
+    The function uses the `typeof` operator to test for the same type.
+
+    Parameters
+    ----------
+    a: any
+        First input value.
+
+    b: any
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments have the same type.
+
+    Examples
+    --------
+    > var bool = {{alias}}( true, true )
+    true
+    > bool = {{alias}}( {}, [] )
+    true
+    > bool = {{alias}}( 3.12, -3.12 )
+    true
+    > bool = {{alias}}( 0.0, '0.0' )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,85 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/// <reference types="@stdlib/types"/>
+
+import { RealDataType, ComplexDataType, DataType } from '@stdlib/types/array';
+import { ComplexLike } from '@stdlib/types/object';
+
+/**
+* Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.
+*
+* ## Notes
+*
+* -   The function does *not* provide precision guarantees for non-integer-valued real numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
+*
+* @param value - scalar value
+* @returns array data type
+*
+* @example
+* var dt = minDataType( 3.141592653589793 );
+* // returns 'float32'
+*
+* @example
+* var dt = minDataType( 3 );
+* // returns 'uint8'
+*/
+declare function minDataType( value: number ): RealDataType;
+
+/**
+* Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.
+*
+* ## Notes
+*
+* -   The function does *not* provide precision guarantees for non-integer-valued real numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
+*
+* @param value - scalar value
+* @returns array data type
+*
+* @example
+* var z = {
+*     're': 3.141592653589793,
+*     'im': 1.0
+* };
+* var dt = minDataType( z );
+* // returns 'complex64'
+*/
+declare function minDataType( value: ComplexLike ): ComplexDataType;
+
+/**
+* Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.
+*
+* ## Notes
+*
+* -   The function does *not* provide precision guarantees for non-integer-valued real numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
+*
+* @param value - scalar value
+* @returns array data type
+*
+* @example
+* var dt = minDataType( 'beep' );
+* // returns 'generic'
+*/
+declare function minDataType( value: any ): 'generic';
+
+
+// EXPORTS //
+
+export = minDataType;

@@ -1,6 +1,6 @@
 
 {{alias}}( x )
-    Computes the inverse cotangent of a number.
+    Computes the inverse cotangent of a double-precision floating-point number.
 
     Parameters
     ----------

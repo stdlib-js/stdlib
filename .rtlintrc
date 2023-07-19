@@ -3,6 +3,7 @@
 	"@stdlib/_tools/repl-txt/rules/code-semicolons": "error",
 	"@stdlib/_tools/repl-txt/rules/has-parameters-section": "error",
 	"@stdlib/_tools/repl-txt/rules/has-alias-signature": "error",
+	"@stdlib/_tools/repl-txt/rules/interface-spacing": [ "error", 2 ],
 	"@stdlib/_tools/repl-txt/rules/line-length": [ "error", 80 ],
 	"@stdlib/_tools/repl-txt/rules/match-signature": "error",
 	"@stdlib/_tools/repl-txt/rules/resolvable-aliases": "error",

@@ -1,0 +1,117 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: standalone_publish_custom
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    inputs:
+      skip:
+        type: choice
+        description: 'Skip individual or toplevel package publishing?'
+        options:
+        - none
+        - skip-toplevel
+        - skip-individual
+      packages:
+        description: 'List of packages to publish (space separated):'
+      pattern:
+        description: 'Regular expression for packages to include:'
+      dry-run:
+        type: boolean
+        description: 'Skip uploading packages (dry run):'
+        default: false
+      release-type:
+        type: choice
+        description: 'Type of release to create'
+        default: 'none'
+        options:
+        - none
+        - patch
+        - minor
+        - major
+      only-unpublished:
+        type: boolean
+        description: 'Only publish packages that have not yet been published'
+        default: false
+
+# Workflow concurrency group:
+concurrency:
+
+  # Specify a group name:
+  group: ${{ github.workflow }}
+
+  # Specify whether to cancel any currently running workflow in the same concurrency group:
+  cancel-in-progress: false
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for publishing standalone packages...
+  publish:
+
+    # Define a display name:
+    name: 'Publish'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Publish standalone packages:
+      - name: 'Publish packages'
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          DEBUG: ${{ env.ACTIONS_STEP_DEBUG && 'scripts:publish-packages' || '' }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          # Save NPM_TOKEN to user's .npmrc:
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.packages }} --release-type ${{ github.event.inputs.release-type }} ${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual ' || '' }}${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel ' || '' }}${{ github.event.inputs.only-unpublished == 'true' && '--only-unpublished ' || '' }}${{ github.event.inputs.pattern && format('--pattern {0}', github.event.inputs.pattern ) || '' }}

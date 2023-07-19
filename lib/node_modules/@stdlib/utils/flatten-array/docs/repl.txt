@@ -4,7 +4,7 @@
 
     Parameters
     ----------
-    arr: Array
+    arr: ArrayLikeObject
         Input array.
 
     options: Object (optional)
@@ -50,7 +50,7 @@
 
     Parameters
     ----------
-    dims: Array<integer>
+    dims: ArrayLike<integer>
         Dimensions.
 
     options: Object (optional)

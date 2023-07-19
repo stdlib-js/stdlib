@@ -26,7 +26,7 @@ import removePunctuation = require( './index' );
 	removePunctuation( 'Sun Tzu said: "A leader leads by example not by force."' ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	removePunctuation( true ); // $ExpectError
 	removePunctuation( false ); // $ExpectError
@@ -38,7 +38,7 @@ import removePunctuation = require( './index' );
 	removePunctuation( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	removePunctuation(); // $ExpectError
 }

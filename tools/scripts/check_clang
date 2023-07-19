@@ -42,7 +42,7 @@ if [[ -x "${CLANG}" ]] && "${CLANG}" --version >/dev/null; then
 	echo 'clang is installed.' >&2
 	exit 0
 else
-	echo 'ERROR: missing dependency. Please download clang version >= 3.5 (http://clang.llvm.org/). Once installed, run the command again.' >&2
+	echo 'ERROR: missing dependency. Please download clang version >= 3.5 (https://clang.llvm.org/). Once installed, run the command again.' >&2
 	exit 1
 fi
 

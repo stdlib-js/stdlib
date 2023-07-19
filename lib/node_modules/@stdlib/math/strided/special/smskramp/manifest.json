@@ -1,0 +1,75 @@
+{
+	"options": {
+		"task": "build"
+	},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"task": "build",
+			"src": [
+				"./src/smskramp.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/rampf",
+				"@stdlib/strided/base/smskmap",
+				"@stdlib/strided/napi/smskmap"
+			]
+		},
+		{
+			"task": "examples",
+			"src": [
+				"./src/smskramp.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/rampf",
+				"@stdlib/strided/base/smskmap"
+			]
+		},
+		{
+			"task": "benchmark",
+			"src": [
+				"./src/smskramp.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/rampf",
+				"@stdlib/strided/base/smskmap"
+			]
+		}
+	]
+}

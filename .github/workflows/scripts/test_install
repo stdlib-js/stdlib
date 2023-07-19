@@ -1,0 +1,435 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Build script to run installation tests on [GitHub][1].
+#
+# [1]: https://help.github.com/en/articles/about-github-actions
+
+# shellcheck disable=SC2181,SC2129
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Get the name of the desired package manager as the first argument to the build script:
+pm="$1"
+
+# Get the path to the local installation directory as the second argument to the build script:
+install_dir="$2"
+
+# Get the path to a log file as the third argument to the build script:
+log_file="$3"
+
+# Define the package to install:
+pkg_name='@stdlib/stdlib'
+
+# Define the package repository:
+pkg_github_url='git+https://git@github.com/stdlib-js/stdlib.git'
+
+# Define the repository tag/commit/branch to install:
+pkg_github_tag='develop'
+
+# Define the package version to install:
+pkg_version='latest'
+
+# Define a heartbeat interval to periodically print messages in order to prevent CI from prematurely ending a build due to long running commands:
+heartbeat_interval='30s'
+
+# Declare a variable for storing the heartbeat process id:
+heartbeat_pid=""
+
+# Get the current working directory:
+working_dir=$(pwd)
+
+# Get the Node.js major version:
+node_major_version=$(node -e 'var proc = ( typeof process !== "undefined" ) ? process : require( "process" ); console.log( proc.version.substring( 1 ).split( "." )[ 0 ] );' | tr -d '\n')
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	stop_heartbeat
+}
+
+# Starts a heartbeat.
+#
+# $1 - heartbeat interval
+start_heartbeat() {
+	echo 'Starting heartbeat...' >&2
+
+	# Create a heartbeat and send to background:
+	heartbeat "$1" &
+
+	# Capture the heartbeat pid:
+	heartbeat_pid=$!
+	echo "Heartbeat pid: ${heartbeat_pid}" >&2
+}
+
+# Runs an infinite print loop.
+#
+# $1 - heartbeat interval
+heartbeat() {
+	while true; do
+		echo "$(date) - heartbeat..." >&2;
+		sleep "$1";
+	done
+}
+
+# Stops the heartbeat print loop.
+stop_heartbeat() {
+	echo 'Stopping heartbeat...' >&2
+	kill "${heartbeat_pid}"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Performs local installation initialization tasks.
+install_init() {
+	echo "Creating installation directory: ${install_dir}..." >> "${log_file}" 2>&1
+	mkdir -p "${install_dir}" || return 1
+
+	echo 'Navigating to installation directory...' >> "${log_file}" 2>&1
+	cd "${install_dir}" || return 1
+
+	echo 'Creating package.json...' >> "${log_file}" 2>&1
+	echo '{"name":"test-install","version":"0.0.0","private":true}' > "${install_dir}/package.json"
+	echo 'package.json:' >> "${log_file}" 2>&1
+	cat "${install_dir}/package.json" >> "${log_file}" 2>&1
+
+	return 0
+}
+
+# Tests that a local installation works as expected.
+install_test() {
+	echo 'Testing installation...' >> "${log_file}" 2>&1
+
+	echo 'Creating test script (require global namespace)...' >> "${log_file}" 2>&1
+	echo 'var stdlib = require( "@stdlib/stdlib" ); console.log( stdlib.math.base.special.sin( 3.14 ) );' > "${install_dir}/script.js"
+	echo 'script:' >> "${log_file}" 2>&1
+	cat "${install_dir}/script.js" >> "${log_file}" 2>&1
+
+	echo 'Running test script...' >> "${log_file}" 2>&1
+	node "${install_dir}/script.js" >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when running test script." >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo '' >> "${log_file}" 2>&1
+	echo 'Successfully ran test script.' >> "${log_file}" 2>&1
+
+	echo 'Creating test script (require individual package)...' >> "${log_file}" 2>&1
+	echo 'var sin = require( "@stdlib/math/base/special/sin" ); console.log( sin( 3.14 ) );' > "${install_dir}/script.js"
+	echo 'script:' >> "${log_file}" 2>&1
+	cat "${install_dir}/script.js" >> "${log_file}" 2>&1
+
+	echo 'Running test script...' >> "${log_file}" 2>&1
+	node "${install_dir}/script.js" >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when running test script." >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo '' >> "${log_file}" 2>&1
+	echo 'Successfully ran test script.' >> "${log_file}" 2>&1
+
+	# Test `import` syntax on more recent Node.js versions which support ES modules without having to set flags to enable experimental support...
+	if [[ "${node_major_version}" -gt 13 ]]; then
+		echo 'Creating test script (import global namespace)...' >> "${log_file}" 2>&1
+		echo 'import stdlib from "@stdlib/stdlib"; console.log( stdlib.math.base.special.sin( 3.14 ) );' > "${install_dir}/script.mjs"
+		echo 'script:' >> "${log_file}" 2>&1
+		cat "${install_dir}/script.mjs" >> "${log_file}" 2>&1
+
+		echo 'Running test script...' >> "${log_file}" 2>&1
+		node "${install_dir}/script.mjs" >> "${log_file}" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo "Encountered an error when running test script." >> "${log_file}" 2>&1
+			return 1
+		fi
+		echo '' >> "${log_file}" 2>&1
+		echo 'Successfully ran test script.' >> "${log_file}" 2>&1
+
+		# FIMXE: uncomment once we've figured out our package.json `exports` strategy...
+		# echo 'Creating test script (import individual package)...' >> "${log_file}" 2>&1
+		# echo 'import sin from "@stdlib/math/base/special/sin"; console.log( sin( 3.14 ) );' > "${install_dir}/script.mjs"
+		# echo 'script:' >> "${log_file}" 2>&1
+		# cat "${install_dir}/script.mjs" >> "${log_file}" 2>&1
+
+		# echo 'Running test script...' >> "${log_file}" 2>&1
+		# node "${install_dir}/script.mjs" >> "${log_file}" 2>&1
+		# if [[ "$?" -ne 0 ]]; then
+		# 	echo "Encountered an error when running test script." >> "${log_file}" 2>&1
+		# 	return 1
+		# fi
+		# echo '' >> "${log_file}" 2>&1
+		# echo 'Successfully ran test script.' >> "${log_file}" 2>&1
+	fi
+	return 0
+}
+
+# Performs local installation cleanup tasks.
+install_clean() {
+	echo "Returning to original directory: ${working_dir}..." >> "${log_file}" 2>&1
+	cd "${working_dir}" || return 1
+
+	echo "Removing installation directory: ${install_dir}..." >> "${log_file}" 2>&1
+	rm -rf "${install_dir}" || return 1
+
+	return 0
+}
+
+# Installs a package via `npm`.
+npm_install() {
+	install_init
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when performing pre-install initialization tasks." >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo "Installing ${pkg_name}@${pkg_version}..." >> "${log_file}" 2>&1
+	npm install "${pkg_name}@${pkg_version}" >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when installing ${pkg_name}@${pkg_version} via npm." >> "${log_file}" 2>&1
+		cat "${working_dir}/npm-debug.log" >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo "Successfully installed ${pkg_name}@${pkg_version}." >> "${log_file}" 2>&1
+
+	install_test
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when testing installation." >> "${log_file}" 2>&1
+		return 1
+	fi
+	install_clean
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when performing post-install cleanup tasks." >> "${log_file}" 2>&1
+		return 1
+	fi
+	return 0
+}
+
+# Installs a package via `npm` from GitHub.
+npm_install_from_github() {
+	install_init
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when performing pre-install initialization tasks." >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo "Installing ${pkg_github_url}#${pkg_github_tag}..." >> "${log_file}" 2>&1
+	npm install "${pkg_github_url}#${pkg_github_tag}" >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when installing ${pkg_github_url}#${pkg_github_tag} via npm." >> "${log_file}" 2>&1
+		cat "${working_dir}/npm-debug.log" >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo "Successfully installed ${pkg_github_url}#${pkg_github_tag}." >> "${log_file}" 2>&1
+
+	install_test
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when testing installation." >> "${log_file}" 2>&1
+		return 1
+	fi
+	install_clean
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when performing post-install cleanup tasks." >> "${log_file}" 2>&1
+		return 1
+	fi
+	return 0
+}
+
+# Installs a package globally via `npm`.
+npm_install_global() {
+	echo "Installing ${pkg_name}@${pkg_version} as a global package..." >> "${log_file}" 2>&1
+	npm install -g "${pkg_name}@${pkg_version}" >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when installing ${pkg_name}@${pkg_version} as a global package via npm." >> "${log_file}" 2>&1
+		cat "${working_dir}/npm-debug.log" >> "${log_file}" 2>&1
+		return 1
+	fi
+	npm list -g --depth=0 >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when attempting to list globally installed packages via npm." >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo "Successfully installed ${pkg_name}@${pkg_version}." >> "${log_file}" 2>&1
+
+	echo 'Testing global installation...' >> "${log_file}" 2>&1
+	stdlib --help >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when testing installation." >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo 'Successfully tested global installation...' >> "${log_file}" 2>&1
+
+	echo 'Removing global installation...' >> "${log_file}" 2>&1
+	npm uninstall -g "${pkg_name}" >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when performing post-install cleanup tasks." >> "${log_file}" 2>&1
+		return 1
+	fi
+	npm list -g --depth=0 >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when attempting to list globally installed packages via npm." >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo 'Successfully removed global installation...' >> "${log_file}" 2>&1
+	return 0
+}
+
+# Installs a package globally via `npm` from GitHub.
+npm_install_global_github() {
+	echo "Installing ${pkg_github_url}#${pkg_github_tag} as a global package..." >> "${log_file}" 2>&1
+	npm install "${pkg_github_url}#${pkg_github_tag}" >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when installing ${pkg_github_url}#${pkg_github_tag} as a global package via npm." >> "${log_file}" 2>&1
+		cat "${working_dir}/npm-debug.log" >> "${log_file}" 2>&1
+		return 1
+	fi
+	npm list -g --depth=0 >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when attempting to list globally installed packages via npm." >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo "Successfully installed ${pkg_github_url}#${pkg_github_tag}." >> "${log_file}" 2>&1
+
+	echo 'Testing global installation...' >> "${log_file}" 2>&1
+	stdlib --help >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when testing installation." >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo 'Successfully tested global installation...' >> "${log_file}" 2>&1
+
+	echo 'Removing global installation...' >> "${log_file}" 2>&1
+	npm uninstall -g "${pkg_name}" >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when performing post-install cleanup tasks." >> "${log_file}" 2>&1
+		return 1
+	fi
+	npm list -g --depth=0 >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when attempting to list globally installed packages via npm." >> "${log_file}" 2>&1
+		return 1
+	fi
+	echo 'Successfully removed global installation...' >> "${log_file}" 2>&1
+	return 0
+}
+
+# Tests whether the project successfully installs via `npm`.
+test_npm_install() {
+	echo 'Testing npm install...' >&2
+	npm_install
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Testing npm install...' >&2
+		npm_install
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Installation failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully installed.' >&2
+
+	echo 'Testing npm install (via GitHub)...' >&2
+	npm_install_from_github
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation (via GitHub) failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Testing npm install (via GitHub)...' >&2
+		npm_install_from_github
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Installation (via GitHub) failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully installed (via GitHub).' >&2
+
+	echo 'Testing npm install (global)...' >&2
+	npm_install_global
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation (global) failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Testing npm install (global)...' >&2
+		npm_install_global
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Installation (global) failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully installed (global).' >&2
+
+	echo 'Testing npm install (global via GitHub)...' >&2
+	npm_install_global_github
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation (global via GitHub) failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Testing npm install (global via GitHub)...' >&2
+		npm_install_global_github
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Installation (global via GitHub) failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully installed (global via GitHub).' >&2
+
+	return 0
+}
+
+# Main execution sequence.
+main() {
+	start_heartbeat "${heartbeat_interval}"
+
+	echo "Package manager: ${pm}." >&2
+
+	# Note: please keep the list of package managers in alphabetical order...
+	if [[ "${pm}" = "npm" ]]; then
+		test_npm_install
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	else
+		echo "ERROR: unknown package manager: ${pm}." >&2
+		on_error 1
+	fi
+	cleanup
+	print_success
+	exit 0
+}
+
+# Set an error handler to print captured output and perform any clean-up tasks:
+trap 'on_error' ERR
+
+# Run main:
+main

@@ -40,9 +40,9 @@
 * var bool = isArrayLikeObject( 'beep' );
 * // returns false
 */
-declare function isArrayLike( value: any ): boolean;
+declare function isArrayLikeObject( value: any ): value is ArrayLike<any>;
 
 
 // EXPORTS //
 
-export = isArrayLike;
+export = isArrayLikeObject;

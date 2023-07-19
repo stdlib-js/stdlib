@@ -44,7 +44,7 @@
 * var out = isAlphaNumeric( 123 );
 * // returns false
 */
-declare function isAlphaNumeric( value: any ): boolean;
+declare function isAlphaNumeric( value: any ): value is string;
 
 
 // EXPORTS //

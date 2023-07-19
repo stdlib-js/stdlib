@@ -107,6 +107,7 @@ double benchmark( int iterations, int len ) {
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_float() * 20000.0f ) - 10000.0f;
 	}
+	z = 0.0f;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		z = c_snrm2( len, x, 1 );

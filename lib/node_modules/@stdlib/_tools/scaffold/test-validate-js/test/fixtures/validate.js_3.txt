@@ -25,6 +25,7 @@ var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var format = require( '@stdlib/string/format' );
 
 
 // MAIN //
@@ -54,24 +55,24 @@ var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 */
 function validate( opts, options ) {
 	if ( !isObject( options ) ) {
-		return new TypeError( 'invalid argument. Options argument must be an object. Value: `' + options + '`.' );
+		return new TypeError( format( 'invalid argument. Options argument must be an object. Value: `%s`.', options ) );
 	}
 	if ( hasOwnProp( options, 'html' ) ) {
 		opts.html = options.html;
 		if ( !isBuffer( opts.html ) && !isString( opts.html ) ) {
-			return new TypeError( 'invalid option. `html` option must be either a `buffer` or a primitive string. Option: `' + opts.html + '`.' );
+			return new TypeError( format( 'invalid option. `%s` option must be either a `buffer` or a primitive string. Option: `%s`.', 'html', opts.html ) );
 		}
 	}
 	if ( hasOwnProp( options, 'javascript' ) ) {
 		opts.javascript = options.javascript;
 		if ( !isBuffer( opts.javascript ) && !isString( opts.javascript ) ) {
-			return new TypeError( 'invalid option. `javascript` option must be either a `buffer` or a primitive string. Option: `' + opts.javascript + '`.' );
+			return new TypeError( format( 'invalid option. `%s` option must be either a `buffer` or a primitive string. Option: `%s`.', 'javascript', opts.javascript ) );
 		}
 	}
 	if ( hasOwnProp( options, 'open' ) ) {
 		opts.open = options.open;
 		if ( !isBoolean( opts.open ) ) {
-			return new TypeError( 'invalid option. `open` option must be a primitive boolean. Option: `' + opts.open + '`.' );
+			return new TypeError( format( 'invalid option. `%s` option must be a boolean primitive. Option: `%s`.', 'open', opts.open ) );
 		}
 	}
 	return null;

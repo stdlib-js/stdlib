@@ -26,7 +26,7 @@ import startcase = require( './index' );
 	startcase( 'Last man standing' ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	startcase( true ); // $ExpectError
 	startcase( false ); // $ExpectError
@@ -38,7 +38,7 @@ import startcase = require( './index' );
 	startcase( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	startcase(); // $ExpectError
 }

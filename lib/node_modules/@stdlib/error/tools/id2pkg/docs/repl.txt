@@ -1,0 +1,21 @@
+
+{{alias}}( id )
+    Returns the package name associated with a provided error identifier prefix.
+
+    Parameters
+    ----------
+    id: string
+        Identifier prefix.
+
+    Returns
+    -------
+    out: string|null
+        Package name.
+
+    Examples
+    --------
+    > var v = {{alias}}( '0YK' )
+    '@stdlib/math/base/special/sin'
+
+    See Also
+    --------

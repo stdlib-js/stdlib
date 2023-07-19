@@ -120,10 +120,11 @@ static StridedArrayFcn functions[] = {
 	stdlib_strided_k_f,
 	stdlib_strided_k_d,
 
-	// int8 (8)
+	// int8 (9)
 	stdlib_strided_s_s,
 	stdlib_strided_s_k,
 	stdlib_strided_s_i,
+	stdlib_strided_s_b,
 	stdlib_strided_s_b,
 	stdlib_strided_s_t,
 	stdlib_strided_s_u,
@@ -141,9 +142,20 @@ static StridedArrayFcn functions[] = {
 	stdlib_strided_t_f,
 	stdlib_strided_t_d,
 
-	// uint8 (7)
+	// uint8 (8)
 	stdlib_strided_b_k,
 	stdlib_strided_b_i,
+	stdlib_strided_b_b,
+	stdlib_strided_b_b,
+	stdlib_strided_b_t,
+	stdlib_strided_b_u,
+	stdlib_strided_b_f,
+	stdlib_strided_b_d,
+
+	// uint8c (8)
+	stdlib_strided_b_k,
+	stdlib_strided_b_i,
+	stdlib_strided_b_b,
 	stdlib_strided_b_b,
 	stdlib_strided_b_t,
 	stdlib_strided_b_u,
@@ -173,11 +185,12 @@ static int32_t types[] = {
 	STDLIB_STRIDED_INT16, STDLIB_STRIDED_FLOAT32,
 	STDLIB_STRIDED_INT16, STDLIB_STRIDED_FLOAT64,
 
-	// int8 (8)
+	// int8 (9)
 	STDLIB_STRIDED_INT8, STDLIB_STRIDED_INT8,
 	STDLIB_STRIDED_INT8, STDLIB_STRIDED_INT16,
 	STDLIB_STRIDED_INT8, STDLIB_STRIDED_INT32,
 	STDLIB_STRIDED_INT8, STDLIB_STRIDED_UINT8,
+	STDLIB_STRIDED_INT8, STDLIB_STRIDED_UINT8C,
 	STDLIB_STRIDED_INT8, STDLIB_STRIDED_UINT16,
 	STDLIB_STRIDED_INT8, STDLIB_STRIDED_UINT32,
 	STDLIB_STRIDED_INT8, STDLIB_STRIDED_FLOAT32,
@@ -194,14 +207,25 @@ static int32_t types[] = {
 	STDLIB_STRIDED_UINT16, STDLIB_STRIDED_FLOAT32,
 	STDLIB_STRIDED_UINT16, STDLIB_STRIDED_FLOAT64,
 
-	// uint8 (7)
+	// uint8 (8)
 	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_INT16,
 	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_INT32,
 	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_UINT8,
+	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_UINT8C,
 	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_UINT16,
 	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_UINT32,
 	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_FLOAT32,
-	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_FLOAT64
+	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_FLOAT64,
+
+	// uint8 (8)
+	STDLIB_STRIDED_UINT8C, STDLIB_STRIDED_INT16,
+	STDLIB_STRIDED_UINT8C, STDLIB_STRIDED_INT32,
+	STDLIB_STRIDED_UINT8C, STDLIB_STRIDED_UINT8,
+	STDLIB_STRIDED_UINT8C, STDLIB_STRIDED_UINT8C,
+	STDLIB_STRIDED_UINT8C, STDLIB_STRIDED_UINT16,
+	STDLIB_STRIDED_UINT8C, STDLIB_STRIDED_UINT32,
+	STDLIB_STRIDED_UINT8C, STDLIB_STRIDED_FLOAT32,
+	STDLIB_STRIDED_UINT8C, STDLIB_STRIDED_FLOAT64
 };
 
 // Define a list of strided array function "data" (in this case, callbacks):
@@ -226,7 +250,8 @@ static void *data[] = {
 	(void *)ramp_k,
 	(void *)ramp_k,
 
-	// int8 (8)
+	// int8 (9)
+	(void *)ramp_s,
 	(void *)ramp_s,
 	(void *)ramp_s,
 	(void *)ramp_s,
@@ -247,7 +272,18 @@ static void *data[] = {
 	(void *)identity_t,
 	(void *)identity_t,
 
-	// uint8 (7)
+	// uint8 (8)
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+
+	// uint8c (8)
+	(void *)identity_b,
 	(void *)identity_b,
 	(void *)identity_b,
 	(void *)identity_b,
@@ -275,7 +311,7 @@ static const struct StridedFunctionObject obj = {
 	functions,
 
 	// Number of strided array functions:
-	34,
+	44,
 
 	// Array of type "numbers" (as enumerated elsewhere), where the total number of types equals `narrays * nfunctions` and where each set of `narrays` consecutive types (non-overlapping) corresponds to the set of strided array argument types for a corresponding strided array function:
 	types,

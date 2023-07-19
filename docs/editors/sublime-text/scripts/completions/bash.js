@@ -18,10 +18,13 @@
 * limitations under the License.
 */
 
+/* eslint-disable node/shebang */
+
 'use strict';
 
 // MODULES //
 
+var currentYear = require( '@stdlib/time/current-year' );
 var licenseHeader = require( '@stdlib/_tools/licenses/header' );
 
 
@@ -32,7 +35,7 @@ var spdx = 'Apache-2.0';
 
 // License header options:
 var opts = {
-	'year': ( new Date() ).getFullYear(),
+	'year': currentYear(),
 	'copyright': 'The Stdlib Authors'
 };
 

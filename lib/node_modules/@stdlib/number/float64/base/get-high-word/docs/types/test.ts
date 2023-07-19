@@ -27,7 +27,7 @@ import getHighWord = require( './index' );
 	getHighWord( 0 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	getHighWord( true ); // $ExpectError
 	getHighWord( false ); // $ExpectError
@@ -37,7 +37,7 @@ import getHighWord = require( './index' );
 	getHighWord( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	getHighWord(); // $ExpectError
 }

@@ -1157,6 +1157,16 @@ rules[ 'stdlib/jsdoc-leading-description-sentence' ] = [ 'error', {
 }];
 
 /**
+* Enforce that the copyright year in a stdlib license year matches the year the file was created.
+*
+* @name jsdoc-license-header-year
+* @memberof rules
+* @type {string}
+* @default 'error'
+*/
+rules[ 'stdlib/jsdoc-license-header-year' ] = 'off';
+
+/**
 * Require Unix linebreaks.
 *
 * @name jsdoc-jsdoc-linebreak-style
@@ -3759,6 +3769,16 @@ rules[ 'stdlib/jsdoc-main-export' ] = 'error';
 rules[ 'stdlib/module-exports-last' ] = 'error';
 
 /**
+* Enforce that a namespace `index.js` exports all packages in the respective namespace directory.
+*
+* @name namespace-export-all
+* @memberof rules
+* @type {string}
+* @default 'warn'
+*/
+rules[ 'stdlib/namespace-export-all' ] = 'warn';
+
+/**
 * Enforce that packages in a namespace `index.js` file are listed in alphabetical order.
 *
 * @name namespace-index-order
@@ -4063,7 +4083,7 @@ rules[ 'stdlib/no-nested-require' ] = 'error';
 * @name no-redeclare
 * @memberof rules
 * @type {Array}
-* @see [no-redeclare]{@link http://eslint.org/docs/rules/no-redeclare}
+* @see [no-redeclare]{@link https://eslint.org/docs/rules/no-redeclare}
 *
 * @example
 * // Bad...
@@ -4090,6 +4110,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'EvalError',
 		'Float32Array',
 		'Float64Array',
+		'Function',
 		'Int8Array',
 		'Int16Array',
 		'Int32Array',
@@ -4262,7 +4283,7 @@ rules[ 'stdlib/repl-namespace-order' ] = 'off';
 *
 * var debug = require( 'debug/src/browser.js' );
 */
-rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all @stdlib/tools packages are moved to @stdlib/_tools
+rules[ 'stdlib/require-file-extensions' ] = [ 'error', {
 	'extensionsWhitelist': [
 		'.js',
 		'.json',
@@ -4290,23 +4311,50 @@ rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all 
 rules[ 'stdlib/require-globals' ] = [ 'error', {
 	'globals': [
 		'ArrayBuffer',
+		'BigInt', // ES11/ES2020
+		'BigInt64Array', // ES11/ES2020
+		'BigUint64Array', // ES11/ES2020
+		'Boolean',
 		'Buffer', // Node.js
 		'DataView',
 		'Float32Array',
 		'Float64Array',
+		'Function',
 		'Int8Array',
 		'Int16Array',
 		'Int32Array',
 		'Number',
+		'Object',
+		'Promise', // ES6/ES2015
 		'process', // Node.js
+		'Proxy', // ES6/2015
 		'SharedArrayBuffer',
-		'Symbol',
+		'Symbol', // ES6/ES2015
 		'Uint8Array',
 		'Uint8ClampedArray',
 		'Uint16Array',
 		'Uint32Array'
 	]
 }];
+
+/**
+* Disallow `require()` calls of relative paths which do not begin with a leading `./`.
+*
+* @name require-leading-slash
+* @memberof rules
+* @type {string}
+*
+* @example
+* // Bad...
+* var foo = require( 'foo/bar.js' );
+* var baz = require( '../baz.js' );
+*
+* @example
+* // Good...
+* var foo = require( './foo/bar.js' );
+* var baz = require( './../baz.js' );
+*/
+rules[ 'stdlib/require-leading-slash' ] = 'error';
 
 /**
 * Enforce that `require()` calls follow a specified order.

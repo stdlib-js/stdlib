@@ -19,19 +19,29 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_REPL_HELP_FILES ?= $(TOOLS_PKGS_DIR)/pkgs/repl-help/bin/cli
+LIST_PKGS_REPL_HELP_FILES ?= $(TOOLS_PKGS_DIR)/pkgs/repl-help/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_REPL_HELP_FILES_FLAGS ?=
+LIST_PKGS_REPL_HELP_FILES_FLAGS ?=
+
+# Define the directory from which to search for packages:
+LIST_PKGS_REPL_HELP_FILES_DIR ?= $(SRC_DIR)
 
 
-# TARGETS #
+# RULES #
 
-# List all package REPL help files.
+#/
+# Prints a list of all package REPL help files.
 #
-# This target prints a list of all package REPL help files.
-
-list-pkgs-repl-help-files: $(LIST_PACKAGE_REPL_HELP_FILES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_REPL_HELP_FILES) $(LIST_PACKAGE_REPL_HELP_FILES_FLAGS) $(SRC_DIR)
+# @param {string} [LIST_PKGS_REPL_HELP_FILES_DIR] - absolute path of the directory from which to search (default: source directory)
+#
+# @example
+# make list-pkgs-repl-help-files
+#
+# @example
+# make list-pkgs-repl-help-files LIST_PKGS_REPL_HELP_FILES_DIR="$PWD/lib/node_modules/\@stdlib/utils"
+#/
+list-pkgs-repl-help-files: $(LIST_PKGS_REPL_HELP_FILES) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_REPL_HELP_FILES)" $(LIST_PKGS_REPL_HELP_FILES_FLAGS) "$(LIST_PKGS_REPL_HELP_FILES_DIR)"
 
 .PHONY: list-pkgs-repl-help-files

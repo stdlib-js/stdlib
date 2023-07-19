@@ -40,7 +40,7 @@
 * v = fcn();
 * // returns 3.14
 */
-declare function constantFunction( value?: any ): Function;
+declare function constantFunction<T = undefined>( value?: T ): () => T;
 
 
 // EXPORTS //

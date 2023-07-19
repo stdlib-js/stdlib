@@ -26,7 +26,7 @@ import entropy = require( './index' );
 	entropy( 0.3 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	entropy( true ); // $ExpectError
 	entropy( false ); // $ExpectError
@@ -38,7 +38,7 @@ import entropy = require( './index' );
 	entropy( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	entropy(); // $ExpectError
 }

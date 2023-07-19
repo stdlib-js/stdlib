@@ -67,7 +67,6 @@ var data = dataset();
 
 ## Notes
 
-
 -   Humidity and temperature measurements were collected at `5` second intervals over a six hour period on July 10, 2010.
 
 -   Temperature is in degrees Celsius.

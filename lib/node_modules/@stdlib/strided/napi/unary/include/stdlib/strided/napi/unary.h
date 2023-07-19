@@ -24,7 +24,7 @@
 #include <assert.h>
 
 /**
-* Macro for registering an N-API module exporting a strided array interface for applying a unary callback to an input strided array.
+* Macro for registering a Node-API module exporting a strided array interface for applying a unary callback to an input strided array.
 *
 * @param obj   strided function object
 *
@@ -39,7 +39,7 @@
 *
 * // ...
 *
-* // Register an N-API module:
+* // Register a Node-API module:
 * STDLIB_STRIDED_NAPI_MODULE_UNARY( obj );
 */
 #define STDLIB_STRIDED_NAPI_MODULE_UNARY( obj )                                \

@@ -1,0 +1,190 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: markdown_links
+
+# Workflow triggers:
+on:
+  schedule:
+    # Run the workflow once a month on the 1st day of every month:
+    - cron:  "0 0 1 * *"
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for detecting broken links in Markdown files...
+  markdown_links:
+
+    # Define a display name:
+    name: 'Check links'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define environment variables:
+    env:
+      LOG_DIR: "${{ github.workspace }}/tmp/var/log"
+      LOG_FILE_FAILURES: "${{ github.workspace }}/tmp/var/log/failures.json"
+      LOG_FILE_WARNINGS: "${{ github.workspace }}/tmp/var/log/warnings.json"
+
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Initialize log files:
+      - name: 'Initialize log files'
+        run: |
+          mkdir -p "${{ env.LOG_DIR }}"
+          touch "${{ env.LOG_FILE_FAILURES }}"
+          touch "${{ env.LOG_FILE_WARNINGS }}"
+        timeout-minutes: 2
+
+      # Check for broken links:
+      - name: 'Check links'
+        uses: stdlib-js/check-markdown-link-definitions-action@main
+        id: results
+        with:
+          exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
+        timeout-minutes: 240
+
+      # Check whether links are included in `docs/links/database.json` and use the correct identifier:
+      - name: 'Check links against database'
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to a utility for validating links:
+          validate="${root}/lib/node_modules/@stdlib/_tools/links/validate/bin/cli"
+
+          ${validate} '${{ steps.results.outputs.all_links }}'
+
+      # Log the results:
+      - name: 'Log results'
+        run: |
+          echo ${{ steps.results.outputs.failures }} >> "${{ env.LOG_FILE_FAILURES }}"
+          echo ${{ steps.results.outputs.warnings }} >> "${{ env.LOG_FILE_WARNINGS }}"
+        timeout-minutes: 2
+
+      # Fail the workflow if the status is not "success":
+      - name: 'Check status'
+        if: ${{ steps.results.outputs.status }} != 'success'
+        run: |
+          exit 1
+
+      # View the log file if the previous step fails:
+      - name: 'View log file'
+        if: failure()
+        run: |
+          echo "Printing the list of failures..."
+          cat "${{ env.LOG_FILE_FAILURES }}"
+        timeout-minutes: 5
+
+      # Upload the log files:
+      - name: 'Upload log files'
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          # Define a name for the uploaded artifact:
+          name: results
+
+          # Specify the paths to upload:
+          path: |
+            ${{ env.LOG_FILE_FAILURES }}
+            ${{ env.LOG_FILE_WARNINGS }}
+
+          # Specify the number of days to retain the artifact (default is 90 days):
+          retention-days: 10
+        timeout-minutes: 10
+
+  # Define a job for sending notifications to Slack...
+  slack:
+
+    # Define a display name:
+    name: 'Slack notification'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Indicate that this job depends on the prior job finishing:
+    needs: markdown_links
+
+    # Run this job regardless of the outcome of the prior job:
+    if: always()
+
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Resolve notification data:
+      - name: 'Resolve notification data'
+        run: |
+          echo 'NOTIFICATION_STATUS=${{ needs.markdown_links.result}}' >> $GITHUB_ENV
+          if [[ "${{ needs.markdown_links.result }}" = "success" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_links** workflow succeeded' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
+          elif [[ "${{ needs.markdown_links.result }}" = "failure" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_links** workflow failed' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
+          elif [[ "${{ needs.markdown_links.result }}" = "cancelled" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_links** workflow was canceled' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
+          else
+            exit 1
+          fi
+        timeout-minutes: 5
+
+      # Send notification to Slack:
+      - name: 'Send notification'
+        uses: 8398a7/action-slack@v3
+        if: success()
+        with:
+          status: "${{ env.NOTIFICATION_STATUS }}"
+          fields: repo,commit,message
+          text: "${{ env.NOTIFICATION_TEXT }}"
+          author_name: "${{ env.NOTIFICATION_AUTHOR_NAME }}"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+        timeout-minutes: 5

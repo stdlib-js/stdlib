@@ -2,6 +2,8 @@
 {{alias}}( pkg )
     Returns the alias associated with a specified package name.
 
+    The function supports both internal and standalone package names.
+
     Parameters
     ----------
     pkg: string
@@ -15,6 +17,9 @@
     Examples
     --------
     > var v = {{alias}}( '@stdlib/math/base/special/sin' )
+    <string>
+    > v = {{alias}}( '@stdlib/math-base-special-sin' )
+    <string>
 
     See Also
     --------

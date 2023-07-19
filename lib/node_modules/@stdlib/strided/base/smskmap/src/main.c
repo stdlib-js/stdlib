@@ -20,7 +20,7 @@
 #include <stdint.h>
 
 /**
-* Applies a unary function accepting and returning single-precision floating-point numbers to each element in a single-precision floating-point strided input array according to a corresponding element in a strided mask array and assigns each result to an element in a single-precision floating-point strided output array.
+* Applies a unary function to a single-precision floating-point strided input array according to a strided mask array and assigns results to a single-precision floating-point strided output array.
 *
 * @param N           number of indexed elements
 * @param X           input array

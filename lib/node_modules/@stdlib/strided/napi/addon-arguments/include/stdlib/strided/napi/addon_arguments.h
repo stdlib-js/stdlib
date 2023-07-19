@@ -30,7 +30,7 @@ extern "C" {
 #endif
 
 /**
-* Validates, extracts, and transforms (to native C types) function arguments provided to a strided array N-API add-on interface.
+* Validates, extracts, and transforms (to native C types) function arguments provided to a strided array Node-API add-on interface.
 */
 napi_status stdlib_strided_napi_addon_arguments( const napi_env env, const napi_value *argv, const int64_t nargs, const int64_t nin, uint8_t *arrays[], int64_t *shape, int64_t *strides, int32_t *types, napi_value *err );
 

@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if a value is an empty array-like object.
+
+    If provided a string, the function returns `false`.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an empty array-like object.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [] )
+    true
+    > bool = {{alias}}( { 'length': 0 } )
+    true
+    > bool = {{alias}}( '' )
+    false
+
+    See Also
+    --------
+

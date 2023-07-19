@@ -2,8 +2,8 @@
 {{alias}}( N, x, strideX, y, strideY )
     Computes the dot product of two vectors.
 
-    The `N`, `strideX`, and `strideY` parameters determine which elements in `x`
-    and `y` are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -56,13 +56,13 @@
     > dot = {{alias}}( N, x1, -2, y1, 1 )
     128.0
 
+
 {{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
     Computes the dot product of two vectors using alternative indexing
     semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offsetX` and `offsetY` parameters support indexing based on a
-    starting index.
+    buffer, the offset parameters support indexing based on a starting index.
 
     Parameters
     ----------

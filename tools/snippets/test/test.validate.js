@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,6 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
+var format = require( '@stdlib/string/format' );
 var validate = require( './../lib/validate.js' );
 
 
@@ -51,7 +52,7 @@ tape( 'the function returns an error if provided an `options` argument which is 
 
 	for ( i = 0; i < values.length; i++ ) {
 		err = validate( {}, values[ i ] );
-		t.strictEqual( err instanceof TypeError, true, 'returns a type error when provided '+values[i] );
+		t.strictEqual( err instanceof TypeError, true, format( 'returns an error when provided %s', values[i] ) );
 	}
 	t.end();
 });
@@ -67,7 +68,7 @@ tape( 'the function returns `null` if all options are valid', function test( t )
 	options = {}; // TODO: add options
 
 	err = validate( opts, options );
-	t.strictEqual( err, null, 'returns null' );
+	t.strictEqual( err, null, 'returns expected value' );
 	t.deepEqual( opts, options, 'sets options' );
 
 	t.end();
@@ -85,7 +86,7 @@ tape( 'the function will ignore unrecognized options', function test( t ) {
 	};
 
 	err = validate( opts, options );
-	t.strictEqual( err, null, 'returns null' );
+	t.strictEqual( err, null, 'returns expected value' );
 	t.deepEqual( opts, {}, 'ignores unrecognized options' );
 
 	t.end();

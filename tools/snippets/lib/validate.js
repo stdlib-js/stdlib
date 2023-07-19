@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@
 
 var isPlainObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var format = require( '@stdlib/string/format' );
 
 
 // MAIN //
@@ -44,12 +45,12 @@ var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 */
 function validate( opts, options ) {
 	if ( !isPlainObject( options ) ) {
-		return new TypeError( 'invalid argument. Options must be an object. Value: `' + options + '`.' );
+		return new TypeError( format( 'invalid argument. Options argument must be an object. Value: `%s`.', options ) );
 	}
 	if ( hasOwnProp( options, 'TODO' ) ) {
 		opts.TODO = options.TODO;
 		if ( !isPlainObject( opts.TODO ) ) {
-			return new TypeError( 'invalid option. `TODO` option must be a TODO. Option: `' + opts.TODO + '`.' );
+			return new TypeError( format( 'invalid option. `%s` option must be a TODO. Option: `%s`.', 'TODO', opts.TODO ) );
 		}
 	}
 	return null;

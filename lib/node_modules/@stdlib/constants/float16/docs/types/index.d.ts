@@ -1,0 +1,168 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/* tslint:disable:max-line-length */
+/* tslint:disable:max-file-line-count */
+
+import CBRT_EPS = require( '@stdlib/constants/float16/cbrt-eps' );
+import EPS = require( '@stdlib/constants/float16/eps' );
+import EXPONENT_BIAS = require( '@stdlib/constants/float16/exponent-bias' );
+import MAX = require( '@stdlib/constants/float16/max' );
+import MAX_SAFE_INTEGER = require( '@stdlib/constants/float16/max-safe-integer' );
+import MIN_SAFE_INTEGER = require( '@stdlib/constants/float16/min-safe-integer' );
+import NINF = require( '@stdlib/constants/float16/ninf' );
+import NUM_BYTES = require( '@stdlib/constants/float16/num-bytes' );
+import PINF = require( '@stdlib/constants/float16/pinf' );
+import PRECISION = require( '@stdlib/constants/float16/precision' );
+import SMALLEST_NORMAL = require( '@stdlib/constants/float16/smallest-normal' );
+import SMALLEST_SUBNORMAL = require( '@stdlib/constants/float16/smallest-subnormal' );
+import SQRT_EPS = require( '@stdlib/constants/float16/sqrt-eps' );
+
+/**
+* Interface describing the `float16` namespace.
+*/
+interface Namespace {
+	/**
+	* Cube root of half-precision floating-point epsilon.
+	*
+	* @example
+	* var eps = ns.CBRT_EPS;
+	* // returns 0.09921256574801247
+	*/
+	CBRT_EPS: typeof CBRT_EPS;
+
+	/**
+	* Difference between one and the smallest value greater than one that can be represented as a half-precision floating-point number.
+	*
+	* @example
+	* var eps = ns.EPSILON;
+	* // returns 0.0009765625
+	*/
+	EPS: typeof EPS;
+
+	/**
+	* The bias of a half-precision floating-point number's exponent.
+	*
+	* @example
+	* var bias = ns.EXPONENT_BIAS;
+	* // returns 15
+	*/
+	EXPONENT_BIAS: typeof EXPONENT_BIAS;
+
+	/**
+	* Maximum half-precision floating-point number.
+	*
+	* @example
+	* var max = ns.MAX;
+	* // returns 65504.0
+	*/
+	MAX: typeof MAX;
+
+	/**
+	* Maximum safe half-precision floating-point integer.
+	*
+	* @example
+	* var max = ns.MAX_SAFE_INTEGER;
+	* // returns 2047
+	*/
+	MAX_SAFE_INTEGER: typeof MAX_SAFE_INTEGER;
+
+	/**
+	* Minimum safe half-precision floating-point integer.
+	*
+	* @example
+	* var min = ns.MIN_SAFE_INTEGER;
+	* // returns -2047
+	*/
+	MIN_SAFE_INTEGER: typeof MIN_SAFE_INTEGER;
+
+	/**
+	* Half-precision floating-point negative infinity.
+	*
+	* @example
+	* var ninf = ns.NINF;
+	* // returns -infinity
+	*/
+	NINF: typeof NINF;
+
+	/**
+	* Size (in bytes) of a half-precision floating-point number.
+	*
+	* @example
+	* var bytes = ns.NUM_BYTES;
+	* // returns 2
+	*/
+	NUM_BYTES: typeof NUM_BYTES;
+
+	/**
+	* Half-precision floating-point positive infinity.
+	*
+	* @example
+	* var pinf = ns.PINF;
+	* // returns +infinity
+	*/
+	PINF: typeof PINF;
+
+	/**
+	* Effective number of bits in the significand of a half-precision floating-point number.
+	*
+	* @example
+	* var precision = ns.PRECISION;
+	* // returns 11
+	*/
+	PRECISION: typeof PRECISION;
+
+	/**
+	* Smallest positive half-precision floating-point normal number.
+	*
+	* @example
+	* var smallest = ns.SMALLEST_NORMAL;
+	* // returns 6.103515625e-5
+	*/
+	SMALLEST_NORMAL: typeof SMALLEST_NORMAL;
+
+	/**
+	* Smallest positive half-precision floating-point subnormal number.
+	*
+	* @example
+	* var smallest = ns.SMALLEST_SUBNORMAL;
+	* // returns 5.960464477539063e-8
+	*/
+	SMALLEST_SUBNORMAL: typeof SMALLEST_SUBNORMAL;
+
+	/**
+	* Square root of half-precision floating-point epsilon.
+	*
+	* @example
+	* var eps = ns.SQRT_EPS;
+	* // returns 0.03125
+	*/
+	SQRT_EPS: typeof SQRT_EPS;
+}
+
+/**
+* Half-precision floating-point mathematical constants.
+*/
+declare var ns: Namespace;
+
+
+// EXPORTS //
+
+export = ns;

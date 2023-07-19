@@ -14,7 +14,10 @@
     }
   ],
   "main": "./lib",
-  "browser": "./lib/polyfill.js",
+  "browser": {
+    "./lib": "./lib/polyfill.js",
+    "process": "process/"
+  },
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",

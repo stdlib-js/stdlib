@@ -43,7 +43,7 @@ typedef struct {
 /**
 * Returns a pointer to a dynamically allocated PRNG.
 */
-struct BasePRNGObject * stdlib_base_random_mt19937_allocate( const uint32_t *seed, const int64_t seed_length );
+struct BasePRNGObject * stdlib_base_random_mt19937_allocate( const uint32_t *seed, const int64_t len );
 
 /**
 * Frees a PRNG's allocated memory.
@@ -53,7 +53,7 @@ void stdlib_base_random_mt19937_free( struct BasePRNGObject *obj );
 /**
 * Returns the PRNG seed length.
 */
-int8_t stdlib_base_random_mt19937_seed_length( const struct BasePRNGObject *obj, int64_t *seed_length );
+int8_t stdlib_base_random_mt19937_seed_length( const struct BasePRNGObject *obj, int64_t *len );
 
 /**
 * Returns a PRNG seed.

@@ -1,0 +1,96 @@
+{
+  "options": {},
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "src": [
+        "./src/b.c",
+        "./src/c.c",
+        "./src/c_as_b.c",
+        "./src/c_as_f.c",
+        "./src/c_as_k.c",
+        "./src/c_as_s.c",
+        "./src/c_as_t.c",
+        "./src/c_as_z.c",
+        "./src/d.c",
+        "./src/d_as_b.c",
+        "./src/d_as_f.c",
+        "./src/d_as_i.c",
+        "./src/d_as_k.c",
+        "./src/d_as_s.c",
+        "./src/d_as_t.c",
+        "./src/d_as_u.c",
+        "./src/f.c",
+        "./src/f_as_b.c",
+        "./src/f_as_d.c",
+        "./src/f_as_k.c",
+        "./src/f_as_s.c",
+        "./src/f_as_t.c",
+        "./src/i.c",
+        "./src/i_as_b.c",
+        "./src/i_as_k.c",
+        "./src/i_as_s.c",
+        "./src/i_as_t.c",
+        "./src/k.c",
+        "./src/k_as_b.c",
+        "./src/k_as_s.c",
+        "./src/s.c",
+        "./src/t.c",
+        "./src/t_as_b.c",
+        "./src/u.c",
+        "./src/u_as_b.c",
+        "./src/u_as_t.c",
+        "./src/z.c",
+        "./src/z_as_b.c",
+        "./src/z_as_c.c",
+        "./src/z_as_d.c",
+        "./src/z_as_f.c",
+        "./src/z_as_i.c",
+        "./src/z_as_k.c",
+        "./src/z_as_s.c",
+        "./src/z_as_t.c",
+        "./src/z_as_u.c",
+        "./src/dispatch.c",
+        "./src/internal/permute.c",
+        "./src/internal/range.c",
+        "./src/internal/sort2ins.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32",
+        "@stdlib/complex/float64",
+        "@stdlib/ndarray/base/bytes-per-element",
+        "@stdlib/ndarray/base/iteration-order",
+        "@stdlib/ndarray/base/vind2bind",
+        "@stdlib/ndarray/ctor",
+        "@stdlib/ndarray/index-modes",
+        "@stdlib/ndarray/orders"
+      ]
+    }
+  ]
+}

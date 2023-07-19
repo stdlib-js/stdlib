@@ -1,0 +1,34 @@
+
+{{alias}}( str, search, newval )
+    Replaces search occurrences with a replacement string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    search: RegExp
+        Search expression.
+
+    newval: string|Function
+        Replacement value or function.
+
+    Returns
+    -------
+    out: string
+        String containing replacement(s).
+
+    Examples
+    --------
+    > function replacer( match, p1 ) { return '/'+p1+'/'; };
+    > var str = 'Oranges and lemons';
+    > var out = {{alias}}( str, /([^\s]+)/gi, replacer )
+    '/Oranges/ /and/ /lemons/'
+
+    // Replace only first match:
+    > out = {{alias}}( 'beep', /e/, 'o' )
+    'boep'
+
+    See Also
+    --------
+

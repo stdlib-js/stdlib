@@ -136,24 +136,30 @@ This Code of Conduct borrows heavily from
 
 ## License
 
-This document may be reused under a [Creative Commons Attribution-ShareAlike License][license].
+This document may be reused under a [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license][cc-by-sa-4.0].
 
-[git-history]: https://github.com/stdlib-js/stdlib/commits/master/CODE_OF_CONDUCT.md
+<section class="links">
 
-[npm-code-of-conduct]: https://www.npmjs.com/policies/conduct
+[git-history]: https://github.com/stdlib-js/stdlib/commits/develop/CODE_OF_CONDUCT.md
 
-[nodejs-irc]: http://blog.izs.me/post/30036893703/policy-on-trolling
+[npm-code-of-conduct]: https://docs.npmjs.com/policies/conduct
 
-[citizen-code-of-conduct]: http://citizencodeofconduct.org/
+[nodejs-irc]: https://blog.izs.me/2012/08/policy-on-trolling
 
-[geek-feminism-code-of-conduct]: https://geekfeminism.org/about/code-of-conduct/
+[citizen-code-of-conduct]: https://github.com/stumpsyn/policies/blob/7caa4699ba74e341a46b3266d4610af477ba2c3d/citizen_code_of_conduct.md
 
-[contributor-covenant]: http://contributor-covenant.org/version/1/4/code_of_conduct.md
+[geek-feminism-code-of-conduct]: https://geekfeminismdotorg.wordpress.com/about/code-of-conduct/
 
-[open-code-of-conduct]: http://todogroup.org/opencodeofconduct/
+[contributor-covenant]: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
 
-[rust-code-of-conduct]: https://www.rust-lang.org/conduct.html
+[open-code-of-conduct]: https://github.com/todogroup/opencodeofconduct
 
-[license]: https://creativecommons.org/licenses/by-sa/4.0/
+[rust-code-of-conduct]: https://www.rust-lang.org/policies/code-of-conduct
+
+[cc-by-sa-4.0]: https://creativecommons.org/licenses/by-sa/4.0/
 
 [reporting]: mailto:kgryte@gmail.com
+
+</section>
+
+<!-- /.links -->

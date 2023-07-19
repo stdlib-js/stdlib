@@ -1,11 +1,14 @@
 
-{{alias}}( str )
-    Removes the last character of a `string`.
+{{alias}}( str[, n] )
+    Removes the last character(s) of a `string`.
 
     Parameters
     ----------
     str: string
         Input string.
+
+    n: integer (optional)
+        Number of characters to remove. Default: 1.
 
     Returns
     -------
@@ -18,6 +21,8 @@
     'bee'
     > out = {{alias}}( 'Boop' )
     'Boo'
+    > out = {{alias}}( 'foo bar', 4 )
+    'foo'
 
     See Also
     --------

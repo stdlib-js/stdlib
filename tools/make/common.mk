@@ -28,7 +28,7 @@ endif
 # GENERAL VARIABLES #
 
 # Define supported Node.js versions:
-NODE_VERSIONS ?= '0.10 0.12 1 2 3 4 5 6 7 8 9 10 11 12 13 14 node'
+NODE_VERSIONS ?= '0.10 0.12 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 node'
 
 # Define a license SPDX identifier whitelist:
 LICENSES_WHITELIST ?= 'Apache-2.0,Artistic-2.0,BSD-2-Clause,BSD-3-Clause,BSL-1.0,CC0-1.0,ISC,MIT,MPL-2.0,Unlicense,WTFPL'
@@ -47,6 +47,16 @@ else
 endif
 endif
 
+# Indicate whether to fix linting errors:
+ifndef FIX
+	AUTOFIX := false
+else
+ifeq ($(FIX), 1)
+	AUTOFIX := true
+else
+	AUTOFIX := false
+endif
+endif
 
 # ENVIRONMENTS #
 
@@ -104,7 +114,7 @@ JAVASCRIPT_TEST_RUNNER ?= tape
 JAVASCRIPT_LINTER ?= eslint
 
 # Define the code coverage instrumentation utility:
-JAVASCRIPT_CODE_INSTRUMENTER ?= istanbul
+JAVASCRIPT_CODE_INSTRUMENTER ?= c8
 
 # Define the linter to use when linting TypeScript files:
 TYPESCRIPT_LINTER ?= tslint
@@ -113,7 +123,7 @@ TYPESCRIPT_LINTER ?= tslint
 TYPESCRIPT_DECLARATIONS_LINTER ?= dtslint
 
 # Define the browser test runner:
-BROWSER_TEST_RUNNER ?= testling
+BROWSER_TEST_RUNNER ?=
 
 # Define the analysis tool to use when analyzing JavaScript files:
 JAVASCRIPT_COMPLEXITY_TOOL ?= plato
@@ -129,6 +139,15 @@ MARKDOWN_LINTER ?= remark
 
 # Define the linter to use when linting shell script files:
 SHELL_LINTER ?= shellcheck
+
+# Define the linter to use when linting C files:
+C_LINTER ?= cppcheck
+
+# Define the linter to use when linting Git commit messages:
+GIT_COMMIT_LINTER ?= commitlint
+
+# Define the tool for providing an interactive Git prompt for entering commit messages:
+GIT_COMMIT_PROMPT ?= commitizen
 
 
 # COMMANDS #
@@ -167,6 +186,9 @@ CAT ?= cat
 # Define the command to copy files:
 CP ?= cp
 
+# Define the command to move files:
+MV ?= mv
+
 # Define the command to recursively sync directories:
 RSYNC_RECURSIVE ?= rsync -r
 
@@ -201,9 +223,6 @@ NODE ?= node
 
 # Define the command for `npm`:
 NPM ?= npm
-
-# Define the command for generating an npm gzipped archive:
-NPM_PACK ?= npm pack
 
 # Define the command for `julia`:
 JULIA ?= julia
@@ -281,6 +300,17 @@ TAP_REPORTER ?= $(BIN_DIR)/tap-spec
 #
 # [1]: https://github.com/zoubin/tap-summary
 TAP_SUMMARY ?= $(BIN_DIR)/tap-summary
+
+# Define the path to the [`tap--min`][1] executable.
+#
+# To install `tap-min`:
+#
+# ```bash
+# $ npm install tap-min
+# ```
+#
+# [1]: https://github.com/derhuerst/tap-min
+TAP_MIN ?= $(BIN_DIR)/tap-min
 
 # Define the path to the [`tap-xunit`][1] executable.
 #
@@ -393,6 +423,9 @@ DEPS_OPENBLAS_CFLAGS ?=
 
 # Fortran compiler flags:
 DEPS_OPENBLAS_FFLAGS ?= -O3 $(fPIC)
+
+# Flag indicating whether to use clang:
+DEPS_OPENBLAS_USE_CLANG ?=
 
 # Specify stack alignment on Windows.
 #
@@ -538,7 +571,7 @@ else
 endif
 endif
 
-# Define the Electron version (NOTE: whenever updated, update the `david` configuration file):
+# Define the Electron version:
 DEPS_ELECTRON_VERSION ?= 6.0.10
 
 # Generate a version slug:
@@ -554,7 +587,7 @@ DEPS_ELECTRON_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_
 DEPS_ELECTRON_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
 # Define the shellcheck version:
-DEPS_SHELLCHECK_VERSION ?= 0.5.0
+DEPS_SHELLCHECK_VERSION ?= 0.8.0
 
 # Generate a version slug:
 deps_shellcheck_version_slug := $(subst .,_,$(DEPS_SHELLCHECK_VERSION))
@@ -562,5 +595,26 @@ deps_shellcheck_version_slug := $(subst .,_,$(DEPS_SHELLCHECK_VERSION))
 # Define the output path when building shellcheck:
 DEPS_SHELLCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/shellcheck_$(deps_shellcheck_version_slug)
 
+# Host architecture:
+DEPS_SHELLCHECK_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_ARCH))
+
 # Host platform:
 DEPS_SHELLCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
+
+# Define the cppcheck version:
+DEPS_CPPCHECK_VERSION ?= 2.9
+
+# Generate a version slug:
+deps_cppcheck_version_slug := $(subst .,_,$(DEPS_CPPCHECK_VERSION))
+
+# Define the output path when building cppcheck:
+DEPS_CPPCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cppcheck_$(deps_cppcheck_version_slug)
+
+# Host platform:
+DEPS_CPPCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
+
+# API key for the stdlib scaffolding service:
+ifneq ($(wildcard .stdlibrc),)
+	include .stdlibrc
+	export SCAFFOLD_API_KEY
+endif

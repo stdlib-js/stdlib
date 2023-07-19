@@ -1,0 +1,180 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: test_bundles
+
+# Workflow triggers:
+on:
+  # Run workflow upon completion of `productionize` workflow run:
+  workflow_run:
+    workflows: ["productionize"]
+    types: [completed]
+
+  # Allow workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow jobs:
+jobs:
+
+  # Define job to test UMD bundles...
+  test-umd:
+
+    # Define display name:
+    name: 'Test UMD Bundles'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Define environment variables:
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout UMD branch of the repository:
+      - name: 'Checkout branch with UMD build'
+        uses: actions/checkout@v3
+        with:
+          ref: umd
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 17
+
+      # Try loading the UMD bundle:
+      - name: 'Try loading UMD bundle'
+        run: |
+          node --eval "require( './index.js' )" || exit $?
+
+      # Install playwright for headless browser testing:
+      - name: 'Install playwright'
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      # Try loading the UMD browser bundle with playwright:
+      - name: 'Try loading UMD browser bundle with playwright'
+        run: |
+          PLAYWRIGHT_SCRIPT="\
+            const { chromium } = require( 'playwright' );\
+            (async () => {\
+              const browser = await chromium.launch();\
+              const page = await browser.newPage();\
+              page.on( 'pageerror', exception => {\
+                throw new Error( exception.message );\
+              });\
+              await page.addScriptTag({ path: './browser.js' });\
+              await browser.close();\
+            })();"
+          node --eval "$PLAYWRIGHT_SCRIPT" || exit $?
+
+      # Send notification to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
+
+  # Define job to test ES modules...
+  test-esm:
+
+    # Define display name:
+    name: 'Test ES Modules'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Define environment variables:
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout ES modules branch of the repository:
+      - name: 'Checkout branch with ESM build'
+        uses: actions/checkout@v3
+        with:
+          ref: esm
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 17
+
+      # Try loading the ES module bundle:
+      - name: 'Try loading ESM'
+        run: |
+          node --experimental-network-imports --eval "import( './index.mjs' )" || exit $?
+
+      # Send notification to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
+
+  # Define job to test Deno bundles...
+  test-deno:
+
+    # Define display name:
+    name: 'Test Deno Bundles'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Define environment variables:
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout Deno branch of the repository:
+      - name: 'Checkout branch with Deno build'
+        uses: actions/checkout@v3
+        with:
+          ref: deno
+
+      # Install Deno:
+      - name: 'Install Deno'
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: vx.x.x
+
+      # Try loading the Deno bundle:
+      - name: 'Try loading Deno build'
+        run: |
+          deno eval "import main from './mod.js'" || exit $?
+
+      # Send notification to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()

@@ -1,0 +1,87 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/max-base10-exponent",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/constants/float64/min-base10-exponent"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/max-base10-exponent",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/constants/float64/min-base10-exponent"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/max-base10-exponent",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/constants/float64/min-base10-exponent"
+      ]
+    }
+  ]
+}

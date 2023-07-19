@@ -1,0 +1,23 @@
+
+{{alias}}( arr )
+    Converts an ndarray to a generic array.
+
+    Parameters
+    ----------
+    arr: ndarray
+        Input array.
+
+    Returns
+    -------
+    out: Array|Array<Array>
+        Generic array (which may include nested arrays).
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var out = {{alias}}( arr )
+    [ [ 1, 2 ], [ 3, 4 ] ]
+
+    See Also
+    --------
+

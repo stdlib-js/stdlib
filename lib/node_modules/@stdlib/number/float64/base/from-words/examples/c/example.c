@@ -20,7 +20,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	uint32_t high = 1074339512;
 	uint32_t low[] = { 0, 10000, 1000000, 1374389535 };
 

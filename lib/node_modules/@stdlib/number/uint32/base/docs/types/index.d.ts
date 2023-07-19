@@ -1,0 +1,173 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/* tslint:disable:max-line-length */
+/* tslint:disable:max-file-line-count */
+
+import fromBinaryStringUint32 = require( '@stdlib/number/uint32/base/from-binary-string' );
+import rotl32 = require( '@stdlib/number/uint32/base/rotl' );
+import rotr32 = require( '@stdlib/number/uint32/base/rotr' );
+import toBinaryStringUint32 = require( '@stdlib/number/uint32/base/to-binary-string' );
+import uint32ToInt32 = require( '@stdlib/number/uint32/base/to-int32' );
+
+/**
+* Interface describing the `base` namespace.
+*/
+interface Namespace {
+	/**
+	* Creates an unsigned 32-bit integer from a literal bit representation.
+	*
+	* @param bstr - string which is a literal bit representation
+	* @throws must provide a string with a length equal to `32`
+	* @returns unsigned 32-bit integer
+	*
+	* @example
+	* var bstr = '01010101010101010101010101010101';
+	* var val = ns.fromBinaryStringUint32( bstr );
+	* // returns 1431655765
+	*
+	* @example
+	* var bstr = '00000000000000000000000000000000';
+	* var val = ns.fromBinaryStringUint32( bstr );
+	* // returns 0
+	*
+	* @example
+	* var bstr = '00000000000000000000000000000010';
+	* var val = ns.fromBinaryStringUint32( bstr );
+	* // returns 2
+	*
+	* @example
+	* var bstr = '11111111111111111111111111111111';
+	* var val = ns.fromBinaryStringUint32( bstr );
+	* // returns 4294967295
+	*/
+	fromBinaryStringUint32: typeof fromBinaryStringUint32;
+
+	/**
+	* Performs a bitwise rotation to the left.
+	*
+	* ## References
+	*
+	* -   [Safe, Efficient, and Portable Rotate in C/C++](http://blog.regehr.org/archives/1063)
+	* -   [Best practices for rotates in C/C++](https://stackoverflow.com/a/776523/224132)
+	* -   [Near constant time rotate that does not violate the standards](https://stackoverflow.com/a/31488147/224132)
+	*
+	*
+	* @param x - unsigned integer
+	* @param shift - number of bits to shift
+	* @returns shifted integer
+	*
+	* @example
+	* var toBinaryStringUint32 = require( `@stdlib/number/uint32/base/to-binary-string` );
+	*
+	* var bstr = toBinaryStringUint32( 2147483649 );
+	* // returns '10000000000000000000000000000001'
+	*
+	* var x = ns.rotl32( 2147483649, 10 );
+	* // returns 1536
+	*
+	* bstr = toBinaryStringUint32( x );
+	* // returns '00000000000000000000011000000000'
+	*/
+	rotl32: typeof rotl32;
+
+	/**
+	* Performs a bitwise rotation to the right.
+	*
+	* ## References
+	*
+	* -   [Safe, Efficient, and Portable Rotate in C/C++](http://blog.regehr.org/archives/1063)
+	* -   [Best practices for rotates in C/C++](https://stackoverflow.com/a/776523/224132)
+	* -   [Near constant time rotate that does not violate the standards](https://stackoverflow.com/a/31488147/224132)
+	*
+	*
+	* @param x - unsigned integer
+	* @param shift - number of bits to shift
+	* @returns shifted integer
+	*
+	* @example
+	* var toBinaryStringUint32 = require( `@stdlib/number/uint32/base/to-binary-string` );
+	*
+	* var bstr = toBinaryStringUint32( 2147483649 );
+	* // returns '10000000000000000000000000000001'
+	*
+	* var x = ns.rotr32( 2147483649, 10 );
+	* // returns 6291456
+	*
+	* bstr = toBinaryStringUint32( x );
+	* // returns '00000000011000000000000000000000'
+	*/
+	rotr32: typeof rotr32;
+
+	/**
+	* Returns a string giving the literal bit representation of an unsigned 32-bit integer.
+	*
+	* ## Notes
+	*
+	* -    Except for typed arrays, JavaScript does not provide native user support for unsigned 32-bit integers. According to the ECMAScript standard, `number` values correspond to double-precision floating-point numbers. While this function is intended for unsigned 32-bit integers, the function will accept floating-point values and represent the values as if they are unsigned 32-bit integers. Accordingly, care should be taken to ensure that only nonnegative integer values less than `4,294,967,296` (`2^32`) are provided.
+	*
+	* @param x - input value
+	* @returns bit representation
+	*
+	* @example
+	* var a = new Uint32Array( [ 1 ] );
+	* var str = ns.toBinaryStringUint32( a[0] );
+	* // returns '00000000000000000000000000000001'
+	*
+	* @example
+	* var a = new Uint32Array( [ 4 ] );
+	* var str = ns.toBinaryStringUint32( a[0] );
+	* // returns '00000000000000000000000000000100'
+	*
+	* @example
+	* var a = new Uint32Array( [ 9 ] );
+	* var str = ns.toBinaryStringUint32( a[0] );
+	* // returns '00000000000000000000000000001001'
+	*/
+	toBinaryStringUint32: typeof toBinaryStringUint32;
+
+	/**
+	* Converts an unsigned 32-bit integer to a signed 32-bit integer.
+	*
+	* @param x - unsigned 32-bit integer
+	* @returns signed 32-bit integer
+	*
+	* @example
+	* var float64ToUint32 = require( `@stdlib/number/float64/base/to-uint32` );
+	* var y = ns.uint32ToInt32( float64ToUint32( 4294967295 ) );
+	* // returns -1
+	*
+	* @example
+	* var float64ToUint32 = require( `@stdlib/number/float64/base/to-uint32` );
+	* var y = ns.uint32ToInt32( float64ToUint32( 3 ) );
+	* // returns 3
+	*/
+	uint32ToInt32: typeof uint32ToInt32;
+}
+
+/**
+* Base utilities for unsigned 32-bit integers.
+*/
+declare var ns: Namespace;
+
+
+// EXPORTS //
+
+export = ns;

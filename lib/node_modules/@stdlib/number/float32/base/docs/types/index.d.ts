@@ -1,0 +1,365 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/* tslint:disable:max-line-length */
+/* tslint:disable:max-file-line-count */
+
+import exponentf = require( '@stdlib/number/float32/base/exponent' );
+import fromBinaryStringf = require( '@stdlib/number/float32/base/from-binary-string' );
+import fromWordf = require( '@stdlib/number/float32/base/from-word' );
+import normalizef = require( '@stdlib/number/float32/base/normalize' );
+import signbitf = require( '@stdlib/number/float32/base/signbit' );
+import significandf = require( '@stdlib/number/float32/base/significand' );
+import toBinaryStringf = require( '@stdlib/number/float32/base/to-binary-string' );
+import float32ToInt32 = require( '@stdlib/number/float32/base/to-int32' );
+import float32ToUint32 = require( '@stdlib/number/float32/base/to-uint32' );
+import toWordf = require( '@stdlib/number/float32/base/to-word' );
+
+/**
+* Interface describing the `base` namespace.
+*/
+interface Namespace {
+	/**
+	* Returns an integer corresponding to the unbiased exponent of a single-precision floating-point number.
+	*
+	* @param x - single-precision floating-point number
+	* @returns unbiased exponent
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var exp = ns.exponentf( toFloat32( 3.14e34 ) ); // => 2**114 ~ 2.08e34
+	* // returns 114
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var exp = ns.exponentf( toFloat32( 3.14e-34 ) ); // => 2**-112 ~ 1.93e-34
+	* // returns -112
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var exp = ns.exponentf( toFloat32( -3.14 ) );
+	* // returns 1
+	*
+	* @example
+	* var exp = ns.exponentf( 0.0 );
+	* // returns -127
+	*
+	* @example
+	* var exp = ns.exponentf( NaN );
+	* // returns 128
+	*/
+	exponentf: typeof exponentf;
+
+	/**
+	* Creates a single-precision floating-point number from an IEEE 754 literal bit representation.
+	*
+	* @param bstr - string which is a literal bit representation
+	* @throws must provide a string with a length equal to `32`
+	* @returns single-precision floating-point number
+	*
+	* @example
+	* var bstr = '01000000100000000000000000000000';
+	* var v = ns.fromBinaryStringf( bstr );
+	* // returns 4.0
+	*
+	* @example
+	* var bstr = '01000000010010010000111111011011';
+	* var v = ns.fromBinaryStringf( bstr );
+	* // returns ~3.14
+	*
+	* @example
+	* var bstr = '11111111011011000011101000110011';
+	* var v = ns.fromBinaryStringf( bstr );
+	* // returns ~-3.14e+38
+	*
+	* @example
+	* var bstr = '00000000000000000000000000000000';
+	* var v =  ns.fromBinaryStringf( bstr );
+	* // returns 0.0
+	*
+	* @example
+	* var bstr = '10000000000000000000000000000000';
+	* var v = ns.fromBinaryStringf( bstr );
+	* // returns -0.0
+	*/
+	fromBinaryStringf: typeof fromBinaryStringf;
+
+	/**
+	* Creates a single-precision floating-point number from an unsigned integer corresponding to an IEEE 754 binary representation.
+	*
+	* @param word - unsigned integer
+	* @returns single-precision floating-point number
+	*
+	* @example
+	* var word = 1068180177; // => 0 01111111 01010110010001011010001
+	*
+	* var f32 = ns.fromWordf( word ); // when printed, implicitly promoted to float64
+	* // returns 1.3370000123977661
+	*/
+	fromWordf: typeof fromWordf;
+
+	/**
+	* Returns a normal number `y` and exponent `exp` satisfying \\(x = y \cdot 2^\mathrm{exp}\\).
+	*
+	* @param x - single-precision floating-point number
+	* @returns output array
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	*
+	* var v = ns.normalizef( toFloat32( 1.401e-45 ) );
+	* // returns [ 1.1754943508222875e-38, -23 ]
+	*
+	* @example
+	* var v = ns.normalizef( 0.0 );
+	* // returns [ 0.0, 0 ]
+	*
+	* @example
+	* var PINF = require( `@stdlib/constants/float32/pinf` );
+	*
+	* var v = ns.normalizef( PINF );
+	* // returns [ +Infinity, 0 ]
+	*
+	* @example
+	* var NINF = require( `@stdlib/constants/float32/ninf` );
+	*
+	* var v = ns.normalizef( NINF );
+	* // returns [ -Infinity, 0 ]
+	*
+	* @example
+	* var v = ns.normalizef( NaN );
+	* // returns [ NaN, 0 ]
+	*/
+	normalizef: typeof normalizef;
+
+	/**
+	* Returns a boolean indicating if the sign bit is on (true) or off (false).
+	*
+	* @param x - single-precision floating-point number
+	* @returns boolean indicating if sign bit is on or off
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var bool = ns.signbitf( toFloat32( 4.0 ) );
+	* // returns false
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var bool = ns.signbitf( toFloat32( -9.14e-34 ) );
+	* // returns true
+	*
+	* @example
+	* var bool = ns.signbitf( 0.0 );
+	* // returns false
+	*
+	* @example
+	* var bool = ns.signbitf( -0.0 );
+	* // returns true
+	*/
+	signbitf: typeof signbitf;
+
+	/**
+	* Returns an integer corresponding to the significand of a single-precision floating-point number.
+	*
+	* @param x - single-precision floating-point number
+	* @returns significand
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var s = ns.significandf( toFloat32( 3.14e34 ) ); // => 10000011000010001110111
+	* // returns 4293751
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var s = ns.significandf( toFloat32( 3.14e-34 ) ); // => 10100001011000001010101
+	* // returns 5288021
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var s = ns.significandf( toFloat32( -3.14 ) ); // => 10010001111010111000011
+	* // returns 4781507
+	*
+	* @example
+	* var s = ns.significandf( 0.0 ); // => 00000000000000000000000
+	* // returns 0
+	*
+	* @example
+	* var s = ns.significandf( NaN ); // => 10000000000000000000000
+	* // returns 4194304
+	*/
+	significandf: typeof significandf;
+
+	/**
+	* Returns a string giving the literal bit representation of a single-precision floating-point number.
+	*
+	* @param x - input value
+	* @returns bit representation
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var str = ns.toBinaryStringf( toFloat32( 4.0 ) );
+	* // returns '01000000100000000000000000000000'
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var str = ns.toBinaryStringf( toFloat32( 3.141592653589793 ) );
+	* // returns '01000000010010010000111111011011'
+	*
+	* @example
+	* var str = ns.toBinaryStringf( toFloat32( -1e38 ) );
+	* // returns '11111110100101100111011010011001'
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var str = ns.toBinaryStringf( toFloat32( -3.14e-39 ) );
+	* // returns '10000000001000100011000100001011'
+	*
+	* @example
+	* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var str = ns.toBinaryStringf( toFloat32( 1.4e-45 ) );
+	* // returns '00000000000000000000000000000001'
+	*
+	* @example
+	* var str = ns.toBinaryStringf( 0.0 );
+	* // returns '00000000000000000000000000000000'
+	*
+	* @example
+	* var str = ns.toBinaryStringf( -0.0 );
+	* // returns '10000000000000000000000000000000'
+	*
+	* @example
+	* var str = ns.toBinaryStringf( NaN );
+	* // returns '01111111110000000000000000000000'
+	*
+	* @example
+	* var PINF = require( `@stdlib/constants/float32/pinf` );
+	* var str = ns.toBinaryStringf( PINF );
+	* // returns '01111111100000000000000000000000'
+	*
+	* @example
+	* var NINF = require( `@stdlib/constants/float32/ninf` );
+	* var str = ns.toBinaryStringf( NINF );
+	* // returns '11111111100000000000000000000000'
+	*/
+	toBinaryStringf: typeof toBinaryStringf;
+
+	/**
+	* Converts a single-precision floating-point number to a signed 32-bit integer.
+	*
+	* @param x - single-precision floating-point number
+	* @returns signed 32-bit integer
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToInt32( float64ToFloat32( 4294967295.0 ) );
+	* // returns 0
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToInt32( float64ToFloat32( 3.14 ) );
+	* // returns 3
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToInt32( float64ToFloat32( -3.14 ) );
+	* // returns -3
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToInt32( float64ToFloat32( NaN ) );
+	* // returns 0
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToInt32( float64ToFloat32( Infinity ) );
+	* // returns 0
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToInt32( float64ToFloat32( -Infinity ) );
+	* // returns 0
+	*/
+	float32ToInt32: typeof float32ToInt32;
+
+	/**
+	* Converts a single-precision floating-point number to an unsigned 32-bit integer.
+	*
+	* @param x - single-precision floating-point number
+	* @returns unsigned 32-bit integer
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToUint32( float64ToFloat32( 4294967297.0 ) );
+	* // returns 0
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToUint32( float64ToFloat32( 3.14 ) );
+	* // returns 3
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToUint32( float64ToFloat32( -3.14 ) );
+	* // returns 4294967293
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToUint32( float64ToFloat32( NaN ) );
+	* // returns 0
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToUint32( float64ToFloat32( Infinity ) );
+	* // returns 0
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	* var y = ns.float32ToUint32( float64ToFloat32( -Infinity ) );
+	* // returns 0
+	*/
+	float32ToUint32: typeof float32ToUint32;
+
+	/**
+	* Returns an unsigned 32-bit integer corresponding to the IEEE 754 binary representation of a single-precision floating-point number.
+	*
+	* @param x - single-precision floating-point number
+	* @returns unsigned 32-bit integer
+	*
+	* @example
+	* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+	*
+	* var f32 = float64ToFloat32( 1.337 );
+	* // returns 1.3370000123977661
+	*
+	* var w = ns.toWordf( f32 ); // => 0 01111111 01010110010001011010001
+	* // returns 1068180177
+	*/
+	toWordf: typeof toWordf;
+}
+
+/**
+* Base utilities for single-precision floating-point numbers.
+*/
+declare var ns: Namespace;
+
+
+// EXPORTS //
+
+export = ns;

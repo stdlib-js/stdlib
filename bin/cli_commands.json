@@ -386,13 +386,13 @@
 	{
 		"command": "js-eval",
 		"description": "Evaluate a JavaScript string.",
-		"path": "@stdlib/utils/js-eval",
+		"path": "@stdlib/utils/eval",
 		"group": "utilities"
 	},
 	{
 		"command": "library-manifest",
 		"description": "Load a manifest for compiling source files.",
-		"path": "@stdlib/tools/library-manifest",
+		"path": "@stdlib/utils/library-manifest",
 		"group": "meta"
 	},
 	{
@@ -656,7 +656,7 @@
 	{
 		"command": "random-Rayleigh",
 		"description": "Rayleigh distributed pseudorandom numbers.",
-		"path": "@stdlib/random/streams/Rayleigh",
+		"path": "@stdlib/random/streams/rayleigh",
 		"group": "random"
 	},
 	{
@@ -878,7 +878,7 @@
 	{
 		"command": "temp-http-server",
 		"description": "Create a temporary HTTP server.",
-		"path": "@stdlib/tools/disposable-http-server",
+		"path": "@stdlib/net/disposable-http-server",
 		"group": "utilities"
 	},
 	{

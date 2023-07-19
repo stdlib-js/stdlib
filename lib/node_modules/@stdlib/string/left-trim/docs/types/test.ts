@@ -26,7 +26,7 @@ import ltrim = require( './index' );
 	ltrim( '   Whitespace   ' ); // $ExpectType string
 }
 
-// The function does not compile if provided a value other than a string...
+// The compiler throws an error if the function is provided a value other than a string...
 {
 	ltrim( true ); // $ExpectError
 	ltrim( false ); // $ExpectError
@@ -38,7 +38,7 @@ import ltrim = require( './index' );
 	ltrim( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	ltrim(); // $ExpectError
 }

@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for native `BigUint64Array` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has `BigUint64Array` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

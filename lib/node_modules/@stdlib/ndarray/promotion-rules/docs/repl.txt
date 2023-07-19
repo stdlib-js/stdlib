@@ -12,11 +12,11 @@
 
     Parameters
     ----------
-    dtype1: string (optional)
-        ndarray data type.
+    dtype1: any (optional)
+        ndarray data type value.
 
-    dtype2: string (optional)
-        ndarray data type.
+    dtype2: any (optional)
+        ndarray data type value.
 
     Returns
     -------

@@ -9,8 +9,8 @@
 
     Parameters
     ----------
-    dtype: string (optional)
-        ndarray data type.
+    dtype: any (optional)
+        ndarray data type value.
 
     Returns
     -------

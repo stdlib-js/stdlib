@@ -1,0 +1,96 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/* tslint:disable:max-line-length */
+/* tslint:disable:max-file-line-count */
+
+import fromBinaryStringUint16 = require( '@stdlib/number/uint16/base/from-binary-string' );
+import toBinaryStringUint16 = require( '@stdlib/number/uint16/base/to-binary-string' );
+
+/**
+* Interface describing the `base` namespace.
+*/
+interface Namespace {
+	/**
+	* Creates an unsigned 16-bit integer from a literal bit representation.
+	*
+	* @param bstr - string which is a literal bit representation
+	* @throws must provide a string with a length equal to `16`
+	* @returns unsigned 16-bit integer
+	*
+	* @example
+	* var bstr = '0101010101010101';
+	* var val = ns.fromBinaryStringUint16( bstr );
+	* // returns 21845
+	*
+	* @example
+	* var bstr = '0000000000000000';
+	* var val = ns.fromBinaryStringUint16( bstr );
+	* // returns 0
+	*
+	* @example
+	* var bstr = '0000000000000010';
+	* var val = ns.fromBinaryStringUint16( bstr );
+	* // returns 2
+	*
+	* @example
+	* var bstr = '1111111111111111';
+	* var val = ns.fromBinaryStringUint16( bstr );
+	* // returns 65535
+	*/
+	fromBinaryStringUint16: typeof fromBinaryStringUint16;
+
+	/**
+	* Returns a string giving the literal bit representation of an unsigned 16-bit integer.
+	*
+	* ## Notes
+	*
+	* -   Except for typed arrays, JavaScript does not provide native user support for unsigned 16-bit integers. According to the ECMAScript standard, `number` values correspond to double-precision floating-point numbers. While this function is intended for unsigned 16-bit integers, the function will accept floating-point values and represent the values as if they are unsigned 16-bit integers. Accordingly, care should be taken to ensure that only nonnegative integer values less than `65536` (`2^16`) are provided.
+	*
+	* @param x - input value
+	* @returns bit representation
+	*
+	* @example
+	* var a = new Uint16Array( [ 1 ] );
+	* var str = ns.toBinaryStringUint16( a[0] );
+	* // returns '0000000000000001'
+	*
+	* @example
+	* var a = new Uint16Array( [ 4 ] );
+	* var str = ns.toBinaryStringUint16( a[0] );
+	* // returns '0000000000000100'
+	*
+	* @example
+	* var a = new Uint16Array( [ 9 ] );
+	* var str = ns.toBinaryStringUint16( a[0] );
+	* // returns '0000000000001001'
+	*/
+	toBinaryStringUint16: typeof toBinaryStringUint16;
+}
+
+/**
+* Base utilities for unsigned 16-bit integers.
+*/
+declare var ns: Namespace;
+
+
+// EXPORTS //
+
+export = ns;

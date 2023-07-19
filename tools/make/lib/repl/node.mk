@@ -41,6 +41,6 @@ repl-node: $(NODE_MODULES) $(STDLIB)
 	$(QUIET) cd $(REPL_DIR); \
 	NODE_ENV="$(NODE_ENV_REPL)" \
 	NODE_PATH="$(NODE_PATH_REPL)" \
-	$(NODE) $(STDLIB) $(REPL) -- $(REPL_FLAGS)
+	$(NODE) $(NODE_FLAGS_REPL) $(STDLIB) $(REPL) -- $(REPL_FLAGS)
 
 .PHONY: repl-node

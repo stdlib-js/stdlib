@@ -19,19 +19,29 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_TREE ?= $(TOOLS_PKGS_DIR)/pkgs/tree/bin/cli
+LIST_PKGS_TREE ?= $(TOOLS_PKGS_DIR)/pkgs/tree/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_TREE_FLAGS ?=
+LIST_PKGS_TREE_FLAGS ?=
+
+# Define the directory from which to search for packages:
+LIST_PKGS_TREE_DIR ?= $(SRC_DIR)
 
 
-# TARGETS #
+# RULES #
 
-# List all packages.
+#/
+# Prints a list of all packages as a tree.
 #
-# This target prints a list of all packages as a tree.
-
-list-pkgs-tree: $(LIST_PACKAGE_TREE) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_TREE) $(LIST_PACKAGE_TREE_FLAGS) $(SRC_DIR)
+# @param {string} [LIST_PKGS_TREE_DIR] - absolute path of the directory from which to search (default: source directory)
+#
+# @example
+# make list-pkgs-tree
+#
+# @example
+# make list-pkgs-tree LIST_PKGS_TREE_DIR="$PWD/lib/node_modules/\@stdlib/utils"
+#/
+list-pkgs-tree: $(LIST_PKGS_TREE) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_TREE)" $(LIST_PKGS_TREE_FLAGS) "$(LIST_PKGS_TREE_DIR)"
 
 .PHONY: list-pkgs-tree

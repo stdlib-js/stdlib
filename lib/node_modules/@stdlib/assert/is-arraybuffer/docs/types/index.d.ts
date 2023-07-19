@@ -34,7 +34,7 @@
 * var bool = isArrayBuffer( [] );
 * // returns false
 */
-declare function isArrayBuffer( value: any ): boolean;
+declare function isArrayBuffer( value: any ): value is ArrayBuffer;
 
 
 // EXPORTS //

@@ -8,10 +8,11 @@
         Input string.
 
     idx: integer
-        Position.
+        Position. If less than `0`, the string position is determined relative
+        to the end of the input string.
 
     backward: boolean (optional)
-        Backward iteration for low surrogates.
+        Backward iteration for low surrogates. Default: false.
 
     Returns
     -------

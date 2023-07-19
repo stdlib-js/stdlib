@@ -31,19 +31,27 @@ ifneq ($(OS), Darwin)
 endif
 
 # Define a command for listing packages:
-FIND_TOOLS_PACKAGES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TOOLS_PACKAGES_FLAGS)
+FIND_TOOLS_PACKAGES_CMD ?= find $(find_kernel_prefix) "$(ROOT_DIR)" $(FIND_TOOLS_PACKAGES_FLAGS)
 
 # Define the list of packages:
 TOOLS_PACKAGES ?= $(shell $(FIND_TOOLS_PACKAGES_CMD))
 
 
-# TARGETS #
+# RULES #
 
-# List all packages.
+#/
+# Prints a list of all project tools packages.
 #
-# This target prints a list of all packages.
-
+# @param {string} [PACKAGES_PATTERN='package.json'] - filename pattern for identifying packages
+# @param {string} [PACKAGES_FILTER='.*/.*'] - filepath pattern for finding packages
+#
+# @example
+# make list-tools-pkgs
+#
+# @example
+# make list-tools-pkgs PACKAGES_FILTER='.*/pkgs/.*'
+#/
 list-tools-pkgs:
-	$(QUIET) find $(find_kernel_prefix) $(TOOLS_DIR) $(TOOLS_PKGS_DIR) $(FIND_TOOLS_PACKAGES_FLAGS) | xargs printf '%s\n'
+	$(QUIET) find $(find_kernel_prefix) "$(TOOLS_PKGS_DIR)" $(FIND_TOOLS_PACKAGES_FLAGS) | xargs printf '%s\n'
 
 .PHONY: list-tools-pkgs

@@ -7,7 +7,8 @@
 	"string": [
 		"len",
 		"lpad",
-		"rpad"
+		"rpad",
+		"split"
 	],
 	"alias": {
 		"help": [

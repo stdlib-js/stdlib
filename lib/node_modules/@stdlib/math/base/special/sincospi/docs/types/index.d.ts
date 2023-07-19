@@ -23,24 +23,55 @@
 import { Collection } from '@stdlib/types/object';
 
 /**
-* Simultaneously computes the sine and cosine of a number times π.
-*
-* @param out - destination array
-* @param x - input value
-* @returns two-element array containing sin(πx) and cos(πx)
-*
-* @example
-* var Float64Array = require( `@stdlib/array/float64` );
-*
-* var out = new Float64Array( 2 );
-*
-* var v = sincospi( out, 0.0 );
-* // returns <Float64Array>[ 0.0, 1.0 ]
-*
-* var bool = ( v === out );
-* // returns true
-*/
-declare function sincospi( out: Collection, x: number ): Collection;
+ * Inteface describing `sincospi`.
+ */
+interface SinCosPi {
+	/**
+	* Simultaneously computes the sine and cosine of a number times π.
+	*
+	* @param x - input value
+	* @returns two-element array containing sin(πx) and cos(πx)
+	*
+	* @example
+	* var v = sincospi( 0.0 );
+	* // returns [ 0.0, 1.0 ]
+	*
+	* @example
+	* var v = sincospi( 0.5 );
+	* // returns [ 1.0, 0.0 ]
+	*
+	* @example
+	* var v = sincospi( 0.1 );
+	* // returns [ ~0.309, ~0.951 ]
+	*
+	* @example
+	* var v = sincospi( NaN );
+	* // returns [ NaN, NaN ]
+	*/
+	( x: number ): Array<number>;
+
+	/**
+	* Simultaneously computes the sine and cosine of a number times π.
+	*
+	* @param x - input value
+	* @param out - output array
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns two-element array containing sin(πx) and cos(πx)
+	*
+	* @example
+	* var Float64Array = require( `@stdlib/array/float64` );
+	*
+	* var out = new Float64Array( 2 );
+	*
+	* var v = sincospi( 0.0, out, 1, 0 );
+	* // returns <Float64Array>[ 0.0, 1.0 ]
+	*
+	* var bool = ( v === out );
+	* // returns true
+	*/
+	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+}
 
 /**
 * Simultaneously computes the sine and cosine of a number times π.
@@ -64,7 +95,7 @@ declare function sincospi( out: Collection, x: number ): Collection;
 * var v = sincospi( NaN );
 * // returns [ NaN, NaN ]
 */
-declare function sincospi( x: number ): Collection;
+declare var sincospi: SinCosPi;
 
 
 // EXPORTS //

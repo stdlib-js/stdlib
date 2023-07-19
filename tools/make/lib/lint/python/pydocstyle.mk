@@ -71,14 +71,14 @@ endif
 # -   This rule is useful when wanting to glob for Python source files (e.g., lint all Python source files for a particular package).
 #
 # @private
-# @param {string} [PYTHON_SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make pydocstyle-src
 #
 # @example
-# make pydocstyle-src PYTHON_SOURCES_FILTER=".*/math/base/special/abs/.*"
+# make pydocstyle-src SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 pydocstyle-src:
 ifeq ($(FAIL_FAST), true)
@@ -112,7 +112,7 @@ endif
 # make pydocstyle-tests-fixtures
 #
 # @example
-# make pydocstyle-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
+# make pydocstyle-tests-fixtures TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 pydocstyle-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
@@ -139,14 +139,14 @@ endif
 # -   This rule is useful when wanting to glob for Python examples files (e.g., lint all Python examples files for a particular package).
 #
 # @private
-# @param {string} [PYTHON_EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make pydocstyle-examples
 #
 # @example
-# make pydocstyle-examples PYTHON_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
+# make pydocstyle-examples EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 pydocstyle-examples:
 ifeq ($(FAIL_FAST), true)
@@ -173,14 +173,14 @@ endif
 # -   This rule is useful when wanting to glob for Python benchmark files (e.g., lint all Python benchmark files for a particular package).
 #
 # @private
-# @param {string} [PYTHON_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make pydocstyle-benchmarks
 #
 # @example
-# make pydocstyle-benchmarks PYTHON_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
+# make pydocstyle-benchmarks BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 pydocstyle-benchmarks:
 ifeq ($(FAIL_FAST), true)

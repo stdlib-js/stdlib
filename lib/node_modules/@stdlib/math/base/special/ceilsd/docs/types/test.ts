@@ -27,7 +27,7 @@ import ceilsd = require( './index' );
 	ceilsd( 3.141592653589793, -4 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than numbers...
+// The compiler throws an error if the function is provided values other than numbers...
 {
 	ceilsd( true, 3 ); // $ExpectError
 	ceilsd( false, 2 ); // $ExpectError
@@ -64,7 +64,7 @@ import ceilsd = require( './index' );
 	ceilsd( 9.343, 2, ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	ceilsd(); // $ExpectError
 	ceilsd( 3 ); // $ExpectError

@@ -28,7 +28,7 @@ import replace = require( './index' );
 	replace( 'abd', /[a-z]/, (): string => 'z' ); // $ExpectType string
 }
 
-// The function does not compile if provided arguments of invalid types...
+// The compiler throws an error if the function is provided arguments having invalid types...
 {
 	replace( true, 'd', 'a' ); // $ExpectError
 	replace( false, 'd', 'a' ); // $ExpectError
@@ -52,7 +52,7 @@ import replace = require( './index' );
 	replace( 'abd', 'd', /[a-z]/ ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	replace(); // $ExpectError
 	replace( 'abc' ); // $ExpectError

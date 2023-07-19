@@ -1,0 +1,14 @@
+{
+	"meta": {
+		"total": 3,
+		"success": 2,
+		"failure": 1
+	},
+	"data": {
+		"kgryte/beep": "boop",
+		"kgryte/boop": "beep"
+	},
+	"failures": {
+		"kgryte/bop": "Not Found"
+	}
+}

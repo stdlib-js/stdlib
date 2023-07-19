@@ -706,7 +706,7 @@ $ make lint-header-filenames
 
 [make]: https://www.gnu.org/software/make/
 
-[codecov-yaml]: https://github.com/codecov/support/wiki/Codecov-Yaml
+[codecov-yaml]: https://docs.codecov.com/docs/codecovyml-reference
 
 [travis-ci-conf]: https://docs.travis-ci.com/user/customizing-the-build
 

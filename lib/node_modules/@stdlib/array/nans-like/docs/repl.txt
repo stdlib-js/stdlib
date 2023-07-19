@@ -1,0 +1,38 @@
+
+{{alias}}( x[, dtype] )
+    Returns an array filled with NaNs and having the same length and data type
+    as a provided input array.
+
+    The function supports the following data types:
+
+    - float64: double-precision floating-point numbers (IEEE 754)
+    - float32: single-precision floating-point numbers (IEEE 754)
+    - complex128: double-precision complex floating-point numbers
+    - complex64: single-precision complex floating-point numbers
+    - generic: generic JavaScript values
+
+    Parameters
+    ----------
+    x: TypedArray|Array
+        Input array.
+
+    dtype: string (optional)
+        Data type. If not provided, the output array data type is inferred from
+        the input array.
+
+    Returns
+    -------
+    out: TypedArray|Array
+        Output array.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( 2 );
+    > var y = {{alias}}( x )
+    <Float64Array>[ NaN, NaN ]
+    > y = {{alias}}( x, 'float32' )
+    <Float32Array>[ NaN, NaN ]
+
+    See Also
+    --------
+

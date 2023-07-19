@@ -1,0 +1,67 @@
+
+{{alias}}( arrays, fcn )
+    Applies a unary callback to elements in an input ndarray and assigns results
+    to elements in an output ndarray.
+
+    Each provided "ndarray" should be an `object` with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or column-major
+    (Fortran-style).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing one input ndarray and one output ndarray.
+
+    fcn: Function
+        Unary callback.
+
+    Examples
+    --------
+    // Define ndarray data and meta data...
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0, -3.0, -4.0 ] );
+    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var dtype = 'float64';
+    > var shape = [ 2, 2 ];
+    > var sx = [ 2, 1 ];
+    > var sy = [ 2, 1 ];
+    > var ox = 0;
+    > var oy = 0;
+    > var order = 'row-major';
+
+    // Using ndarrays...
+    > var x = {{alias:@stdlib/ndarray/ctor}}( dtype, xbuf, shape, sx, ox, order );
+    > var y = {{alias:@stdlib/ndarray/ctor}}( dtype, ybuf, shape, sy, oy, order );
+    > {{alias}}( [ x, y ], {{alias:@stdlib/math/base/special/abs}} );
+    > y.data
+    <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
+
+    // Using minimal ndarray-like objects...
+    > x = {
+    ...     'dtype': dtype,
+    ...     'data': xbuf,
+    ...     'shape': shape,
+    ...     'strides': sx,
+    ...     'offset': ox,
+    ...     'order': order
+    ... };
+    > y = {
+    ...     'dtype': dtype,
+    ...     'data': ybuf,
+    ...     'shape': shape,
+    ...     'strides': sy,
+    ...     'offset': oy,
+    ...     'order': order
+    ... };
+    > {{alias}}( [ x, y ], {{alias:@stdlib/math/base/special/abs}} );
+    > y.data
+    <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------
+

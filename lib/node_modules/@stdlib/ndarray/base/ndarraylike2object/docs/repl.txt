@@ -1,0 +1,83 @@
+
+{{alias}}( x )
+    Converts an ndarray-like to an object likely to have the same "shape".
+
+    The returned object has the following properties:
+
+    - ref: reference to the original ndarray-like object.
+    - dtype: underlying data type.
+    - data: data buffer.
+    - length: number of elements.
+    - shape: array dimensions.
+    - strides: array strides.
+    - offset: index offset.
+    - order: order.
+    - accessorProtocol: boolean indicating whether the data buffer uses
+      accessors for getting and setting elements.
+    - accessors: a two-element array whose first element is an accessor for
+      retrieving an ndarray element and whose second element is an accessor for
+      setting an ndarray element.
+
+    The getter accessor accepts two arguments:
+
+    - data: data buffer.
+    - idx: element index.
+
+    The setter accessor accepts three arguments:
+
+    - data: data buffer.
+    - idx: element index.
+    - value: value to set.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    out: Object
+        Object containing ndarray meta data.
+
+    out.ref: ndarray
+        Reference to input array.
+
+    out.dtype: string
+        Underlying data type.
+
+    out.data: ArrayLikeObject
+        Data buffer.
+
+    out.length: integer
+        Number of elements.
+
+    out.shape: ArrayLikeObject<integer>
+        Array dimensions.
+
+    out.strides: ArrayLikeObject<integer>
+        Array strides.
+
+    out.offset: integer
+        Index offset.
+
+    out.order: string
+        Layout order.
+
+    out.accessorProtocol: boolean
+        Boolean indicating whether the input array use accessors for getting and
+        setting elements.
+
+    out.accessors: Array<Function>
+        A two-element array whose first element is an accessor for retrieving an
+        ndarray element and whose second element is an accessor for setting an
+        ndarray element.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var out = {{alias}}( arr )
+    {...}
+
+    See Also
+    --------
+

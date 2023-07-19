@@ -16,7 +16,7 @@
     --------
     > var bool = {{alias}}( false )
     true
-    > bool = {{alias}}( new Boolean( false ) )
+    > bool = {{alias}}( new {{alias:@stdlib/boolean/ctor}}( false ) )
     true
 
 
@@ -39,7 +39,7 @@
     true
     > bool = {{alias}}.isPrimitive( false )
     true
-    > bool = {{alias}}.isPrimitive( new Boolean( true ) )
+    > bool = {{alias}}.isPrimitive( new {{alias:@stdlib/boolean/ctor}}( true ) )
     false
 
 
@@ -60,7 +60,7 @@
     --------
     > var bool = {{alias}}.isObject( true )
     false
-    > bool = {{alias}}.isObject( new Boolean( false ) )
+    > bool = {{alias}}.isObject( new {{alias:@stdlib/boolean/ctor}}( false ) )
     true
 
     See Also

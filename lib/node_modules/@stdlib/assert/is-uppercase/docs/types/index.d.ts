@@ -40,7 +40,7 @@
 * var bool = isUppercase( 'salt and light' );
 * // returns false
 */
-declare function isUppercase( value: any ): boolean;
+declare function isUppercase( value: any ): value is string;
 
 
 // EXPORTS //

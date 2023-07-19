@@ -146,7 +146,7 @@ resolve_includes() {
 	opts="{'task':'examples'}"
 
 	# Generate the script for resolving `include` directories:
-	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
 
 	# Resolve `include` directories:
 	includes=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
@@ -165,7 +165,7 @@ resolve_source_files() {
 	opts="{'task':'examples'}"
 
 	# Generate the script for resolving source files:
-	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += p+' ';}; console.log(str.substring(0, str.length-1));"'"'
 
 	# Resolve files:
 	source_files=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
@@ -184,7 +184,7 @@ resolve_libraries() {
 	opts="{'task':'examples'}"
 
 	# Generate the script for resolving libraries:
-	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libraries; var str = ''; for (var i = 0; i < arr.length; i++){str += arr[i]+' ';}; console.log(str.substring(0, str.length-1));"'"'
+	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libraries; var str = ''; for (var i = 0; i < arr.length; i++){str += arr[i]+' ';}; console.log(str.substring(0, str.length-1));"'"'
 
 	# Resolve libraries:
 	libraries=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
@@ -203,7 +203,7 @@ resolve_libpaths() {
 	opts="{'task':'examples'}"
 
 	# Generate the script for resolving library paths:
-	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libpath; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-L '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libpath; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-L '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
 
 	# Resolve library paths:
 	libpath=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")

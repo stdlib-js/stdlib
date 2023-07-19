@@ -72,5 +72,8 @@
     "double",
     "float64array",
     "typed array"
-  ]
+  ],
+  "__stdlib__": {
+    "wasm": false
+  }
 }

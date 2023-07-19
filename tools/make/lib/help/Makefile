@@ -16,57 +16,10 @@
 # limitations under the License.
 #/
 
-# VARIABLES #
+# DEPENDENCIES #
 
-# Define the path to the Makefile usage text file for displaying help information:
-MAKE_USAGE ?= $(TOOLS_MAKE_DIR)/usage.txt
-
-
-# RULES #
-
-#/
-# Prints a `Makefile` help message which includes a list of common commands.
-#
-# @example
-# make help
-#/
-help:
-	$(QUIET) $(CAT) $(MAKE_USAGE)
-
-.PHONY: help
-
-#/
-# Prints a sorted list of `Makefile` rules.
-#
-# ## Notes
-#
-# -   The list of rules is **not** exhaustive, as the list does **not** include rules which have not been explicitly declared PHONY targets and does **not** include rules declared via variables. These rules could be included by dumping the Makefile database `make -qp`, but this is not seen as necessary due to predominant use of `.PHONY`.
-#
-# @example
-# make list-rules
-#/
-list-rules:
-	$(QUIET) $(FIND_TOOLS_MAKEFILES_CMD) \
-	| xargs grep '^.PHONY: ' \
-	| awk '{print $$2}' \
-	| sort
-
-.PHONY: list-rules
-
-#/
-# Prints a sorted list of `Makefile` rules for computing project statistics.
-#
-# ## Notes
-#
-# -   The list of rules is **not** exhaustive, as the list does **not** include rules which have not been explicitly declared PHONY targets and does **not** include rules declared via variables. These rules could be included by dumping the Makefile database `make -qp`, but this is not seen as necessary due to predominant use of `.PHONY`.
-#
-# @example
-# make list-stats-rules
-#/
-list-stats-rules:
-	$(QUIET) $(FIND_TOOLS_MAKEFILES_CMD) \
-	| xargs grep '^.PHONY: stats-' \
-	| awk '{print $$2}' \
-	| sort
-
-.PHONY: list-stats-rules
+# Note: keep in alphabetical order...
+include $(TOOLS_MAKE_LIB_DIR)/help/assert.mk
+include $(TOOLS_MAKE_LIB_DIR)/help/debug.mk
+include $(TOOLS_MAKE_LIB_DIR)/help/diagnostics.mk
+include $(TOOLS_MAKE_LIB_DIR)/help/help.mk

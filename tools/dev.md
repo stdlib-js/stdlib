@@ -127,7 +127,7 @@ $ find ./search/directory -type f | xargs perl -pi -w -e 's/search/replace/g;'
 If running a search from the top-level directory, be sure to exclude any hidden directories (including `.git`), the top-level `node_modules` directory, and the `./deps` directory from the search. This may require using absolute file paths.
 
 ```bash
-$ find "$PWD" -type f -not -path "$PWD/.*" -not -path "$PWD/deps/*" -not -path "$PWD/node_modules/*" | xargs perl -pi -w -e 's/search/replace/g;'
+$ find "$PWD" -type f '!' -path "$PWD/.*" '!' -path "$PWD/deps/*" '!' -path "$PWD/node_modules/*" | xargs perl -pi -w -e 's/search/replace/g;'
 ```
 
 A few comments:

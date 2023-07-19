@@ -26,7 +26,7 @@ import j0 = require( './index' );
 	j0( 8 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	j0( true ); // $ExpectError
 	j0( false ); // $ExpectError
@@ -38,7 +38,7 @@ import j0 = require( './index' );
 	j0( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	j0(); // $ExpectError
 }

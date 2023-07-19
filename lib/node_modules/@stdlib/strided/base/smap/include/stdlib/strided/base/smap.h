@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Applies a unary function accepting and returning single-precision floating-point numbers to each element in a single-precision floating-point strided input array and assigns each result to an element in a single-precision floating-point strided output array.
+* Applies a unary function to a single-precision floating-point strided input array and assigns results to a single-precision floating-point strided output array.
 */
 void stdlib_strided_smap( const int64_t N, const float *X, const int64_t strideX, float *Y, const int64_t strideY, float (*fcn)( float ) );
 

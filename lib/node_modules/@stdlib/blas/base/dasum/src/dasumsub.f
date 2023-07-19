@@ -18,7 +18,7 @@
 
 !> Wraps `dasum` as a subroutine.
 !
-! @param {integer} N - number of values to sum
+! @param {integer} N - number of indexed elements
 ! @param {Array<double>} dx - input array
 ! @param {integer} stride - stride length
 ! @param {double} sum - output variable reference

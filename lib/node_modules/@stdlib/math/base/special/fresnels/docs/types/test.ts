@@ -26,7 +26,7 @@ import fresnels = require( './index' );
 	fresnels( 0.3 ); // $ExpectType number
 }
 
-// The function does not compile if provided a value other than a number...
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	fresnels( true ); // $ExpectError
 	fresnels( false ); // $ExpectError
@@ -38,7 +38,7 @@ import fresnels = require( './index' );
 	fresnels( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	fresnels(); // $ExpectError
 }

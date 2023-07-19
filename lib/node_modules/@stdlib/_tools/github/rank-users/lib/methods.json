@@ -1,0 +1,21 @@
+{
+	"followers": {
+		"key": "followers"
+	},
+	"following": {
+		"key": "following"
+	},
+	"ffratio": {
+		"key1": "followers",
+		"key2": "following"
+	},
+	"created": {
+		"key": "id"
+	},
+	"repos": {
+		"key": "public_repos"
+	},
+	"gists": {
+		"key": "public_gists"
+	}
+}

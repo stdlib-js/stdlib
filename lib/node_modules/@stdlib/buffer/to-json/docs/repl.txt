@@ -2,11 +2,6 @@
 {{alias}}( buffer )
     Returns a JSON representation of a buffer.
 
-    The returned JSON object has the following properties:
-
-    - type: value type
-    - data: buffer data as a generic array
-
     Parameters
     ----------
     buffer: Buffer
@@ -16,6 +11,12 @@
     -------
     out: Object
         JSON representation.
+
+    out.type: string
+        Value type. The assigned value is always "Buffer".
+
+    out.data: Array
+        Buffer data.
 
     Examples
     --------

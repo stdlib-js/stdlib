@@ -1,0 +1,10 @@
+
+Usage: substring-after-last [options] --search=<string> [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --search string       Search string.
+         --from-index int      Index at which to start the search.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

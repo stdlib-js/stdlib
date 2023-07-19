@@ -15,10 +15,10 @@
     N: integer
         Number of indexed elements.
 
-    alpha: number
+    alpha: any
         Constant.
 
-    x: Array<number>|TypedArray
+    x: ArrayLikeObject
         Input array.
 
     stride: integer
@@ -26,7 +26,7 @@
 
     Returns
     -------
-    x: Array<number>|TypedArray
+    x: ArrayLikeObject
         Input array `x`.
 
     Examples
@@ -51,6 +51,7 @@
     > x0
     <Float64Array>[ 1.0, 5.0, 3.0, 5.0, 5.0, 5.0 ]
 
+
 {{alias}}.ndarray( N, alpha, x, stride, offset )
     Fills a strided array with a specified scalar value using alternative
     indexing semantics.
@@ -64,10 +65,10 @@
     N: integer
         Number of indexed elements.
 
-    alpha: number
+    alpha: any
         Constant.
 
-    x: Array<number>|TypedArray
+    x: ArrayLikeObject
         Input array.
 
     stride: integer
@@ -78,7 +79,7 @@
 
     Returns
     -------
-    x: Array<number>|TypedArray
+    x: ArrayLikeObject
         Input array `x`.
 
     Examples

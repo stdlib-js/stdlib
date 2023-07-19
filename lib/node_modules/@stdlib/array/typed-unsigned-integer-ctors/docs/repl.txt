@@ -1,0 +1,31 @@
+
+{{alias}}( dtype )
+    Returns an unsigned integer typed array constructor.
+
+    The function returns constructors for the following data types:
+
+    - uint16: unsigned 16-bit integers.
+    - uint32: unsigned 32-bit integers.
+    - uint8: unsigned 8-bit integers.
+    - uint8c: unsigned clamped 8-bit integers.
+
+    Parameters
+    ----------
+    dtype: string
+        Data type.
+
+    Returns
+    -------
+    out: Function|null
+        Typed array constructor.
+
+    Examples
+    --------
+    > var ctor = {{alias}}( 'uint32' )
+    <Function>
+    > ctor = {{alias}}( 'uint' )
+    null
+
+    See Also
+    --------
+

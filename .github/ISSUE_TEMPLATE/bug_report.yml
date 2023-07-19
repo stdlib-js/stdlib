@@ -1,0 +1,121 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+name: 🐛 Bug Report
+description: Something isn't working as I expected. 🤔
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Description of the issue.
+      value: "Encountered an error when "
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues
+      description: Does this issue have any related issues?
+      value: "Related issues # , # , and # ."
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions
+      description: Any questions for reviewers?
+      value: No.
+  - type: input
+    id: demo
+    attributes:
+      label: Demo
+      description: If relevant, provide a link to a live demo.
+      placeholder: For a live demo of the issue, see
+    validations:
+      required: false
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: What steps are required to reproduce the unexpected output?
+      value: |
+        - a
+        - b
+        - c
+      render: shell
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Results
+      description: What are the expected results?
+      placeholder: Insert expected results here
+      render: shell
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Results
+      description: What are the actual results?
+      placeholder: Insert actual results here
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of `stdlib` are you running?
+  - type: dropdown
+    id: environments
+    attributes:
+      label: Environments
+      description: What environments are affected?
+      multiple: true
+      options:
+        - N/A
+        - Node.js
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Internet Explorer
+        - Other Browser
+    validations:
+      required: true
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser Version
+      description: If applicable, what browser version(s)?
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js / npm Version
+      description: If applicable, what Node.js / npm version(s)?
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: If applicable, what operating system(s)?
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please ensure the following tasks are completed before filing a bug report.
+      options:
+        - label: Read and understood the [Code of Conduct](https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md).
+          required: true
+        - label:  Searched for existing issues and pull requests.
+          required: true

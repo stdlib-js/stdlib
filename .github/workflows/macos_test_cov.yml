@@ -1,0 +1,298 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: macos_test_cov
+
+# Workflow triggers:
+on:
+  workflow_run:
+    workflows:
+      - macos_test
+    types:
+      - completed
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow concurrency group:
+concurrency:
+
+  # Specify a group name:
+  group: ${{ github.workflow }}
+
+  # Specify whether to cancel any currently running workflow in the same concurrency group:
+  cancel-in-progress: true
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for determining test coverage on macOS...
+  test_cov:
+
+    # Define a display name:
+    name: "Node.js v${{ matrix.NODE_VERSION }}"
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ${{ matrix.OS }}
+
+    # Ensure that this job only runs if the antecedent workflow is successful:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    # Define environment variables:
+    env:
+      FC: 'gfortran'
+      FORTRAN_COMPILER: 'gfortran'
+      CC: 'gcc'
+      C_COMPILER: 'gcc'
+      CXX: 'g++'
+      CXX_COMPILER: 'g++'
+      LINKER: 'g++'
+      GITHUB: 'true'
+      LOG_DIR: "${{ github.workspace }}/tmp/var/log"
+      LOG_FILE_INSTALL: "${{ github.workspace }}/tmp/var/log/install.log"
+      LOG_FILE_BUILD_TASK: "${{ github.workspace }}/tmp/var/log/${{ matrix.BUILD_TASK }}.log"
+      LOG_NUM_LINES: 5000
+
+    # Define the build matrix strategy...
+    strategy:
+
+      # Specify whether to cancel all in-progress jobs if any matrix job fails:
+      fail-fast: false
+
+      # Define the build matrix:
+      matrix:
+
+        # Define the list of build tasks:
+        BUILD_TASK: ['test-coverage']
+
+        # Define the list of Node.js versions:
+        NODE_VERSION: ['16', '14', '12']
+
+        # Define the list of operating systems:
+        OS: ['macOS-latest']
+
+        # Define configuration options for each Node.js version:
+        include:
+          - OS: 'macOS-latest'
+            PLATFORM: 'macos'
+
+          - NODE_VERSION: '16'
+            NPM_VERSION: '>2.7.0'
+
+          - NODE_VERSION: '14'
+            NPM_VERSION: '>2.7.0'
+
+          - NODE_VERSION: '12'
+            NPM_VERSION: '>2.7.0'
+
+          # - NODE_VERSION: '10'
+          #   NPM_VERSION: '>2.7.0 <7.0.0'
+
+          # - NODE_VERSION: '8'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
+
+          # - NODE_VERSION: '6'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
+
+          # - NODE_VERSION: '4'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
+
+          # - NODE_VERSION: '0.12'
+          #   NPM_VERSION: '>2.7.0 <4.0.0'
+
+          # - NODE_VERSION: '0.10'
+          #   NPM_VERSION: '>2.7.0 <4.0.0'
+
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent 100 commits:
+          fetch-depth: 100
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Initialize log files:
+      - name: 'Initialize log files'
+        run: |
+          mkdir -p "${{ env.LOG_DIR }}"
+          touch "${{ env.LOG_FILE_INSTALL }}"
+          touch "${{ env.LOG_FILE_BUILD_TASK }}"
+        timeout-minutes: 2
+
+      # Install compilers:
+      - name: 'Install compilers'
+        run: |
+          brew update
+          brew reinstall gcc
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.NODE_VERSION }}
+        timeout-minutes: 5
+
+      # Print debug info:
+      - name: 'Print debug info'
+        run: |
+          echo 'PATH:'
+          echo $PATH
+          echo ''
+          echo 'gcc:'
+          gcc --version
+          echo ''
+          echo 'g++:'
+          g++ --version
+          echo ''
+          echo 'gfortran:'
+          gfortran --version
+          echo ''
+          echo 'Git:'
+          git --version
+          echo ''
+          echo 'Node.js:'
+          file $(which node)
+          node --version
+          node -p 'process.platform + "@" + process.arch'
+          echo ''
+          echo 'npm:'
+          npm --version
+          npm config get registry
+        timeout-minutes: 2
+
+      # Update the npm client (older clients cannot handle scoped modules):
+      - name: 'Update npm'
+        run: |
+          npm install -g npm@"${{ matrix.NPM_VERSION }}"
+          npm --version
+        timeout-minutes: 5
+
+      # Perform install sequence:
+      - name: 'Perform install sequence'
+        run: |
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" install "${{ env.LOG_FILE_INSTALL }}"
+        timeout-minutes: 30
+
+      # View the log file if the previous step fails:
+      - name: 'View log file'
+        if: failure()
+        run: |
+          echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
+          tail -${{ env.LOG_NUM_LINES }} "${{ env.LOG_FILE_INSTALL }}"
+        timeout-minutes: 5
+
+      # Run the build task:
+      - name: 'Run build task'
+        run: |
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
+        timeout-minutes: 360
+
+      # View the log file if the previous step fails:
+      - name: 'View log file'
+        if: failure()
+        run: |
+          echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
+          tail -${{ env.LOG_NUM_LINES }} "${{ env.LOG_FILE_BUILD_TASK }}"
+        timeout-minutes: 5
+
+      # Upload the log file:
+      - name: 'Upload log file'
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          # Define a name for the uploaded artifact (ensuring a unique name for each job):
+          name: ${{ matrix.BUILD_TASK }}_log_nodejs_v${{ matrix.NODE_VERSION }}_${{ matrix.PLATFORM }}
+
+          # Specify the path to the file to upload:
+          path: ${{ env.LOG_FILE_BUILD_TASK }}
+
+          # Specify the number of days to retain the artifact (default is 90 days):
+          retention-days: 5
+        timeout-minutes: 10
+
+  # Define a job for sending notifications to Slack...
+  slack:
+
+    # Define a display name:
+    name: 'Slack notification'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Indicate that this job depends on the prior job finishing:
+    needs: test_cov
+
+    # Run this job regardless of the outcome of the prior job:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Resolve notification data:
+      - name: 'Resolve notification data'
+        run: |
+          echo 'NOTIFICATION_STATUS=${{ needs.test_cov.result}}' >> $GITHUB_ENV
+          if [[ "${{ needs.test_cov.result }}" = "success" ]]; then
+            echo 'NOTIFICATION_TEXT=**test_cov** workflow succeeded (macOS)' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
+          elif [[ "${{ needs.test_cov.result }}" = "failure" ]]; then
+            echo 'NOTIFICATION_TEXT=**test_cov** workflow failed (macOS)' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
+          elif [[ "${{ needs.test_cov.result }}" = "cancelled" ]]; then
+            echo 'NOTIFICATION_TEXT=**test_cov** workflow was canceled (macOS)' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
+          else
+            exit 1
+          fi
+        timeout-minutes: 5
+
+      # Send notification to Slack:
+      - name: 'Send notification'
+        uses: 8398a7/action-slack@v3
+        if: success()
+        with:
+          status: "${{ env.NOTIFICATION_STATUS }}"
+          fields: repo,commit,message
+          text: "${{ env.NOTIFICATION_TEXT }}"
+          author_name: "${{ env.NOTIFICATION_AUTHOR_NAME }}"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+        timeout-minutes: 5

@@ -1,0 +1,22 @@
+
+{{alias}}( msg )
+    Returns a two-character error identifier corresponding to a provided error
+    message.
+
+    Parameters
+    ----------
+    msg: string
+        Error message.
+
+    Returns
+    -------
+    out: string|null
+        Error identifier.
+
+    Examples
+    --------
+    > var v = {{alias}}( 'invalid argument. First argument must be a positive integer. Value: `%s`.' )
+    '4o'
+
+    See Also
+    --------

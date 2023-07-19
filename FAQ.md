@@ -354,7 +354,7 @@ NOTE: addressed by BigInt
 
 1.  **Big numbers**: add support for big [integers][julia-bigint], [rationals][golang-big], and [floats][julia-bigfloat]. In addition to cryptography and computing irrational numbers, arbitrary precision arithmetic is useful for algorithms involving double-precision floating-point numbers. Currently, lack of efficient, and relatively performant, big number support limits the scope and types of implemented algorithms, including for basic transcendental functions.
 
-1.  **SIMD**: add support for long SIMD. Currently, [proposals][ecmascript-simd] for [SIMD][mdn-simd-js] in JavaScript have focused on [short SIMD][mozilla-simd], which is well-suited for graphics applications. However, [short SIMD][mozilla-simd] is **not** particularly well-suited for large vector operations, which are common in numerical computing (e.g., BLAS).
+1.  **SIMD**: add support for long SIMD. Currently, [proposals][ecmascript-simd] for [SIMD][ecmascript-simd] in JavaScript have focused on [short SIMD][mozilla-simd], which is well-suited for graphics applications. However, [short SIMD][mozilla-simd] is **not** particularly well-suited for large vector operations, which are common in numerical computing (e.g., BLAS).
 
     **Aside:** JavaScript may never have native SIMD support. Instead, SIMD is currently only possible only via [WebAssembly][wasm]. Lack of native JavaScript SIMD support would be unfortunate, as plenty of applications exist (e.g., scripting for purposes of analysis and data manipulation), which would benefit from SIMD operations without requiring a context switch to a lower-level language and additional compilation steps.
 
@@ -443,7 +443,7 @@ From time to time, interfaces may change in incompatible and breaking ways. Soft
 
 This project has every intent on maintaining backward compatibility with older Node.js engines, including those which have reached their end-of-life (EOL) and including those which are pre-ES2015 beginning with Node.js **v0.10.x**. Accordingly, interface changes and new features should **never** break this compatibility. The reasons for maintaining compatibility are as follows:
 
-1.  With regard to the Node.js [long-term release schedule][node-lts], simply because a Node.js version has reached its end-of-life (EOL), this does not mean that a) the Node.js version is no longer used or b) library authors ought to stop supporting that version. As long as libraries use the simplest, lowest level abstraction, the question as to whether a library should support a legacy Node.js version should never arise. The only time where dropping legacy support may be justified is when supporting native [add-ons][node-add-ons], as maintenance costs can be significantly higher.
+1.  With regard to the Node.js [long-term release schedule][node-release], simply because a Node.js version has reached its end-of-life (EOL), this does not mean that a) the Node.js version is no longer used or b) library authors ought to stop supporting that version. As long as libraries use the simplest, lowest level abstraction, the question as to whether a library should support a legacy Node.js version should never arise. The only time where dropping legacy support may be justified is when supporting native [add-ons][node-add-ons], as maintenance costs can be significantly higher.
 2.  Functionality should not only enable the future, but also allow probing the past. In an ideal world, everyone would use the latest and greatest engine; however, in the real world, not everyone can. Legacy systems abound for very valid and practical reasons; that they will continue to exist is not going to change. To achieve the greatest possible reach, functionality should account for these environments. The best approach for doing so is to use the simplest possible primitives which are most likely to be supported across the widest range of environments.
 3.  Consumers should have control over their migration schedules. In general, library developers are far too quick to drop support for legacy environments, citing maintenance costs, often as a thinly veiled desire to force consumers to upgrade. This parental and cavalier attitude fails to acknowledge the practical realities that many consumers face when building real-world applications. Once real-world applications are deployed in production environments, they assume lives of their own, becoming critical zero downtime components without concern for a library author's desire for evolution. All too frequently, a developer's desire for modernity (and trendiness) creates needless downstream effects, especially in those instances where the cost of maintenance is effectively zero.
 
@@ -664,6 +664,8 @@ In general, far too many developers are oblivious to the module resolution [algo
 
 where `g.js`
 
+<!-- eslint-disable -->
+
 ```javascript
 var beep = require( 'beep' );
 var debug = require( 'debug' );
@@ -729,7 +731,7 @@ You can support the project by
 -   advocating for standards committees to add features at the specification level to better enable numerical computing in JavaScript
 -   helping promote the project on social media, at your company, and within your networks
 -   providing build and infrastructure support
--   providing financial support ([Patreon][patreon-stdlib])
+-   providing financial support ([Open Collective][open-collective-stdlib])
 
 If you have additional ideas, get in touch, and we'll do our best to help!
 
@@ -812,12 +814,10 @@ See the [contributing guide][contributing-guide].
 
 [mdn-math]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
-[mdn-simd-js]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SIMD
-
 <!--
 [mdn-web-workers]: https://developer.mozilla.org/en-US/docs/Web/API/Worker/Worker
 
-[mdn-transferable-objects]: https://developer.mozilla.org/en-US/docs/Web/API/Transferable
+[mdn-transferable-objects]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Transferable_objects
 -->
 
 [built-in-math-bugs]: https://github.com/stdlib-js/stdlib/blob/develop/docs/misc/built_in_math_bugs.md
@@ -834,7 +834,7 @@ See the [contributing guide][contributing-guide].
 
 [msvs-fortran-issue]: https://github.com/nodejs/node-gyp/issues/1102
 
-[numpy]: http://www.numpy.org/
+[numpy]: https://numpy.org/
 
 [scipy]: https://www.scipy.org/scipylib/index.html
 
@@ -844,7 +844,7 @@ See the [contributing guide][contributing-guide].
 
 [semver]: http://semver.org/
 
-[node-lts]: https://github.com/nodejs/LTS
+[node-release]: https://github.com/nodejs/Release
 
 [node-add-ons]: https://nodejs.org/api/addons.html
 
@@ -926,6 +926,6 @@ See the [contributing guide][contributing-guide].
 [matlab-parfor]: https://www.mathworks.com/help/distcomp/parfor.html
 -->
 
-[patreon-stdlib]: https://www.patreon.com/athan
+[open-collective-stdlib]: https://opencollective.com/stdlib
 
 <!-- </definitions> -->

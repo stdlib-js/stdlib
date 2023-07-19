@@ -22,13 +22,16 @@
 
 // MODULES //
 
-var resolve = require( 'path' ).resolve;
+var path = require( 'path' );
 var spawn = require( 'child_process' ).spawn;
-var readFileSync = require( './../lib/node_modules/@stdlib/fs/read-file' ).sync;
-var cwd = require( './../lib/node_modules/@stdlib/process/cwd' );
-var ENV = require( './../lib/node_modules/@stdlib/process/env' );
-var CLI = require( './../lib/node_modules/@stdlib/tools/cli' );
-var getKeys = require( './../lib/node_modules/@stdlib/utils/keys' );
+var CLI = require( '@stdlib/cli/ctor' );
+var parentPath = require( '@stdlib/fs/resolve-parent-path' ).sync;
+var readFile = require( '@stdlib/fs/read-file' ).sync;
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var objectKeys = require( '@stdlib/utils/keys' );
+var dirname = require( '@stdlib/utils/dirname' );
+var cwd = require( '@stdlib/process/cwd' );
+var ENV = require( '@stdlib/process/env' );
 var COMMANDS = require( './cli_commands.json' );
 
 
@@ -55,16 +58,40 @@ function findCommand( cmd ) {
 * Resolves a CLI file path.
 *
 * @private
-* @param {string} path - package name/path
+* @param {string} pkgPath - package name/path
+* @throws {Error} unable to resolve CLI
 * @returns {string} file path
 */
-function getPath( path ) {
-	if ( /^@stdlib/.test( path ) ) {
-		// WARNING: we assume that CLIs follow the `./bin/cli` convention
-		return resolve( __dirname, '..', 'lib', 'node_modules', path, 'bin', 'cli' );
+function getPath( pkgPath ) {
+	var mpath;
+	var cmds;
+	var pkg;
+
+	if ( /^@stdlib/.test( pkgPath ) ) {
+		// Resolve a package's main entry point:
+		mpath = require.resolve( pkgPath );
+
+		// Resolve a dependency's path by finding the dependency's `package.json`:
+		mpath = parentPath( 'package.json', {
+			'dir': dirname( mpath )
+		});
+
+		// Read the package meta data:
+		pkg = require( mpath ); // eslint-disable-line stdlib/no-dynamic-require
+
+		// Resolve a `bin` field:
+		if ( !hasOwnProp( pkg, 'bin' ) ) {
+			throw new Error( 'unexpected error. Unable to resolve command.' );
+		}
+		cmds = objectKeys( pkg.bin );
+		if ( cmds.length === 0 ) {
+			throw new Error( 'unexpected error. Unable to resolve command.' );
+		}
+		// NOTE: assume that the first command is the desired command:
+		return path.join( dirname( mpath ), pkg.bin[ cmds[ 0 ] ] );
 	}
 	// Assume we are given a path relative to the root directory:
-	return resolve( __dirname, '..', path );
+	return path.resolve( __dirname, '..', pkgPath );
 }
 
 
@@ -92,7 +119,7 @@ function main() {
 	cli = new CLI({
 		'pkg': require( './../package.json' ),
 		'options': require( './cli_opts.json' ),
-		'help': readFileSync( resolve( __dirname, 'usage.txt' ), {
+		'help': readFile( path.resolve( __dirname, 'usage.txt' ), {
 			'encoding': 'utf8'
 		})
 	});
@@ -128,7 +155,7 @@ function main() {
 		for ( i = 1; i < args.length; i++ ) {
 			subargs.push( args[ i ] );
 		}
-		keys = getKeys( flags );
+		keys = objectKeys( flags );
 		for ( i = 0; i < keys.length; i++ ) {
 			key = keys[ i ];
 			if (

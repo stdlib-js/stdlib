@@ -1,0 +1,6 @@
+{
+	"basic": [ "basic" ],
+	"constant": [ "constant", 0.02 ],
+	"invscaling": [ "invscaling", 0.02, 0.5 ],
+	"pegasos": [ "pegasos" ]
+}

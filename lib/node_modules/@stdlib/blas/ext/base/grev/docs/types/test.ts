@@ -21,11 +21,11 @@ import grev = require( './index' );
 
 // TESTS //
 
-// The function returns a numeric array...
+// The function returns a collection...
 {
 	const x = new Float64Array( 10 );
 
-	grev( x.length, x, 1 ); // $ExpectType NumericArray
+	grev( x.length, x, 1 ); // $ExpectType Collection
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -42,19 +42,16 @@ import grev = require( './index' );
 	grev( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a numeric array...
+// The compiler throws an error if the function is provided a second argument which is not a collection...
 {
 	const x = new Float64Array( 10 );
 
 	grev( x.length, 10, 1 ); // $ExpectError
-	grev( x.length, '10', 1 ); // $ExpectError
 	grev( x.length, true, 1 ); // $ExpectError
 	grev( x.length, false, 1 ); // $ExpectError
 	grev( x.length, null, 1 ); // $ExpectError
 	grev( x.length, undefined, 1 ); // $ExpectError
-	grev( x.length, [ '1' ], 1 ); // $ExpectError
 	grev( x.length, {}, 1 ); // $ExpectError
-	grev( x.length, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -81,11 +78,11 @@ import grev = require( './index' );
 	grev( x.length, x, 1, 10 ); // $ExpectError
 }
 
-// Attached to main export is an `ndarray` method which returns a numeric array...
+// Attached to main export is an `ndarray` method which returns a collection...
 {
 	const x = new Float64Array( 10 );
 
-	grev.ndarray( x.length, x, 1, 0 ); // $ExpectType NumericArray
+	grev.ndarray( x.length, x, 1, 0 ); // $ExpectType Collection
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
@@ -102,19 +99,16 @@ import grev = require( './index' );
 	grev.ndarray( ( x: number ): number => x, x, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a second argument which is not a numeric array...
+// The compiler throws an error if the `ndarray` method is provided a second argument which is not a collection...
 {
 	const x = new Float64Array( 10 );
 
 	grev.ndarray( x.length, 10, 1, 0 ); // $ExpectError
-	grev.ndarray( x.length, '10', 1, 0 ); // $ExpectError
 	grev.ndarray( x.length, true, 1, 0 ); // $ExpectError
 	grev.ndarray( x.length, false, 1, 0 ); // $ExpectError
 	grev.ndarray( x.length, null, 1, 0 ); // $ExpectError
 	grev.ndarray( x.length, undefined, 1, 0 ); // $ExpectError
-	grev.ndarray( x.length, [ '1' ], 1, 0 ); // $ExpectError
 	grev.ndarray( x.length, {}, 1, 0 ); // $ExpectError
-	grev.ndarray( x.length, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...

@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { ArrayLike } from '@stdlib/types/array';
+
 interface Options {
 	/**
 	* Boolean indicating whether to deep copy array elements.
@@ -43,7 +47,7 @@ interface FactoryOptions {
 * @param arr - array to flatten
 * @returns flattened array
 */
-type Unary = ( arr: Array<any> ) => Array<any>;
+type FlattenFunction = ( arr: ArrayLike<any> ) => Array<any>;
 
 /**
 * Interface for the flattenArray function.
@@ -64,7 +68,7 @@ interface FlattenArray {
 	* var out = flattenArray( arr );
 	* // returns [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
 	*/
-	( arr: Array<any>, options?: Options ): Array<any>;
+	( arr: ArrayLike<any>, options?: Options ): Array<any>;
 
 	/**
 	* Returns a function for flattening arrays having specified dimensions.
@@ -89,7 +93,7 @@ interface FlattenArray {
 	* out = flatten( [[5,6],[7,8]] );
 	* // returns [ 5, 6, 7, 8 ]
 	*/
-	factory( dims: Array<number>, options?: FactoryOptions ): Unary;
+	factory( dims: ArrayLike<number>, options?: FactoryOptions ): FlattenFunction;
 }
 
 /**

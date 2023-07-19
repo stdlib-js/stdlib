@@ -1,0 +1,132 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# log
+
+> Output a message to the debugger console.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var log = require( '@stdlib/console/log' );
+```
+
+#### log( \[data]\[,..args] )
+
+Outputs a message to the debugger console.
+
+```javascript
+log( 'Hello, World!' );
+```
+
+If the first argument is a string, the argument is the primary message and may include zero or more substitution strings.
+
+```javascript
+log( 'Hello, %s!', 'World' );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+## Notes
+
+-   In general, prefer formatting with [`@stdlib/string/format`][@stdlib/string/format], as string substitution support is not consistent across JavaScript environments.
+
+    ```javascript
+    var format = require( '@stdlib/string/format' );
+
+    log( format( '%s: %.2f', 'Foo', 3.14 ) );
+    ```
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint-disable object-curly-newline -->
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var log = require( '@stdlib/console/log' );
+
+log( 'Hello, World!' );
+log( 'Hello, %s!', 'World' );
+log( '%d', 1 );
+log( '%.2d', 1.1 );
+log( '%i', 2 );
+log( '%.2i', 2.2 );
+log( '%f', 3.14 );
+log( '%.2f', 4.13 );
+log( '%o', { 'foo': 'bar' } );
+log( '%O', [ 1, 2, 3, 4 ] );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[@stdlib/string/format]: https://github.com/stdlib-js/stdlib
+
+</section>
+
+<!-- /.links -->

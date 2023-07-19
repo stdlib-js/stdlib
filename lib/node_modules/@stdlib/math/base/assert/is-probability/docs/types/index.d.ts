@@ -19,11 +19,11 @@
 // TypeScript Version: 2.0
 
 /**
-* Tests if a numeric value is a probability.
+* Tests if a double-precision floating-point number is a probability.
 *
 * ## Notes
 *
-* -   A probability is defined as a numeric value on the closed interval `[0,1]`.
+* -   A probability is defined as a number on the closed interval `[0,1]`.
 *
 * @param x - value to test
 * @returns boolean indicating whether the value is a probability

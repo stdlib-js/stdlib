@@ -1,0 +1,137 @@
+
+{{alias}}( [dtype] )
+    Creates a complex typed array.
+
+    The function supports the following data types:
+
+    - complex128: double-precision complex floating-point numbers
+    - complex64: single-precision complex floating-point numbers
+
+    The default typed array data type is `complex128`.
+
+    Parameters
+    ----------
+    dtype: string (optional)
+        Data type. Default: 'complex128'.
+
+    Returns
+    -------
+    out: ComplexArray
+        A complex number typed array.
+
+    Examples
+    --------
+    > var arr = {{alias}}()
+    <Complex128Array>
+    > arr = {{alias}}( 'complex64' )
+    <Complex64Array>
+
+
+{{alias}}( length[, dtype] )
+    Returns a complex number typed array having a specified length.
+
+    Parameters
+    ----------
+    length: integer
+        Array length.
+
+    dtype: string (optional)
+        Data type. Default: 'complex128'.
+
+    Returns
+    -------
+    out: ComplexArray
+        A complex number typed array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 5 )
+    <Complex128Array>
+    > arr = {{alias}}( 5, 'complex64' )
+    <Complex64Array>
+
+
+{{alias}}( complexarray[, dtype] )
+    Creates a complex number typed array from another complex number typed
+    array.
+
+    Parameters
+    ----------
+    complexarray: ComplexArray
+        Complex number typed array from which to generate another complex number
+        typed array.
+
+    dtype: string (optional)
+        Data type. Default: 'complex128'.
+
+    Returns
+    -------
+    out: ComplexArray
+        A complex number typed array.
+
+    Examples
+    --------
+    > var arr1 = {{alias}}( [ 0.5, 0.5, 0.5, 0.5 ] );
+    > var arr2 = {{alias}}( arr1, 'complex64' )
+    <Complex64Array>
+
+
+{{alias}}( obj[, dtype] )
+    Creates a complex number typed array from an array-like object or iterable.
+
+    If an array-like object contains interleaved real and imaginary components,
+    the array-like object must have a length which is a multiple of two.
+
+    Parameters
+    ----------
+    obj: Object
+        Array-like object or iterable from which to generate an array.
+
+    dtype: string (optional)
+        Data type. Default: 'complex128'.
+
+    Returns
+    -------
+    out: ComplexArray
+        A complex number typed array.
+
+    Examples
+    --------
+    > var arr1 = [ 0.5, 0.5, 0.5, 0.5 ];
+    > var arr2 = {{alias}}( arr1, 'complex64' )
+    <Complex64Array>
+
+
+{{alias}}( buffer[, byteOffset[, length]][, dtype] )
+    Returns a complex number typed array view of an ArrayBuffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the first array element.
+        Default: 0.
+
+    length: integer (optional)
+        View length. If not provided, the view spans from the byteOffset to
+        the end of the underlying ArrayBuffer.
+
+    dtype: string (optional)
+        Data type. Default: 'complex128'.
+
+    Returns
+    -------
+    out: ComplexArray
+        A complex number typed array.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 64 );
+    > var arr = {{alias}}( buf, 0, 8, 'complex64' )
+    <Complex64Array>
+
+    See Also
+    --------
+

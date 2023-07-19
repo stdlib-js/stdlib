@@ -1,0 +1,19 @@
+{
+	"string": [
+		"search",
+		"from-index",
+		"split"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

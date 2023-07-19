@@ -1,0 +1,27 @@
+
+{{alias}}( str )
+    Expands acronyms in a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        String with expanded acronyms.
+
+    Examples
+    --------
+    > var str = 'LOL, this is fun. I am ROFL.';
+    > var out = {{alias}}( str )
+    'laughing out loud, this is fun. I am rolling on the floor laughing.'
+
+    > str = 'brb, I need to check my mail. thx!';
+    > out = {{alias}}( str )
+    'be right back, I need to check my mail. thanks!'
+
+    See Also
+    --------
+

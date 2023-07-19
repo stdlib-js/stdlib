@@ -1,0 +1,312 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: linux_benchmark
+
+# Workflow triggers:
+on:
+  workflow_run:
+    workflows:
+      - linux_test
+    types:
+      - completed
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow concurrency group:
+concurrency:
+
+  # Specify a group name:
+  group: ${{ github.workflow }}
+
+  # Specify whether to cancel any currently running workflow in the same concurrency group:
+  cancel-in-progress: true
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for running benchmarks on Linux...
+  benchmark:
+
+    # Define a display name:
+    name: "Node.js v${{ matrix.NODE_VERSION }}"
+
+    # Define the type of virtual host machine:
+    runs-on: ${{ matrix.OS }}
+
+    # Ensure that this job only runs if the antecedent workflow is successful:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    # Define environment variables:
+    env:
+      FC: 'gfortran'
+      FORTRAN_COMPILER: 'gfortran'
+      CC: 'gcc'
+      C_COMPILER: 'gcc'
+      CXX: 'g++'
+      CXX_COMPILER: 'g++'
+      LINKER: 'g++'
+      GITHUB: 'true'
+      DISPLAY: ':99'
+      LOG_DIR: "${{ github.workspace }}/tmp/var/log"
+      LOG_FILE_INSTALL: "${{ github.workspace }}/tmp/var/log/install.log"
+      LOG_FILE_BUILD_TASK: "${{ github.workspace }}/tmp/var/log/${{ matrix.BUILD_TASK }}.log"
+      LOG_NUM_LINES: 5000
+
+    # Define the build matrix strategy...
+    strategy:
+
+      # Specify whether to cancel all in-progress jobs if any matrix job fails:
+      fail-fast: false
+
+      # Define the build matrix:
+      matrix:
+
+        # Define the list of build tasks:
+        BUILD_TASK: ['benchmark']
+
+        # Define the list of Node.js versions on which to run this job:
+        NODE_VERSION: ['16', '14', '12']
+
+        # Define the list of operating systems on which to run this job:
+        OS: ['ubuntu-latest']
+
+        # Define configuration options for each Node.js version:
+        include:
+          - OS: 'ubuntu-latest'
+            PLATFORM: 'linux'
+
+          - NODE_VERSION: '16'
+            NPM_VERSION: '>2.7.0'
+
+          - NODE_VERSION: '14'
+            NPM_VERSION: '>2.7.0'
+
+          - NODE_VERSION: '12'
+            NPM_VERSION: '>2.7.0'
+
+          # - NODE_VERSION: '10'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
+
+          # - NODE_VERSION: '8'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
+
+          # - NODE_VERSION: '6'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
+
+          # - NODE_VERSION: '4'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
+
+          # - NODE_VERSION: '0.12'
+          #   NPM_VERSION: '>2.7.0 <4.0.0'
+
+          # - NODE_VERSION: '0.10'
+          #   NPM_VERSION: '>2.7.0 <4.0.0'
+
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent 100 commits:
+          fetch-depth: 100
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Initialize log files:
+      - name: 'Initialize log files'
+        run: |
+          mkdir -p "${{ env.LOG_DIR }}"
+          touch "${{ env.LOG_FILE_INSTALL }}"
+          touch "${{ env.LOG_FILE_BUILD_TASK }}"
+        timeout-minutes: 2
+
+      # Install compilers:
+      - name: 'Install compilers'
+        run: |
+          sudo -E apt-add-repository -y "ppa:ubuntu-toolchain-r/test"
+          sudo -E apt-get update -q
+          sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install binutils gcc-9 gcc-9-multilib g++-9 g++-9-multilib gfortran-9 gfortran-9-multilib
+          mkdir -p $HOME/bin
+          echo "$HOME/bin" >> $GITHUB_PATH
+          ln -s /usr/bin/gcc-9 $HOME/bin/gcc
+          ln -s /usr/bin/g++-9 $HOME/bin/g++
+          ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran
+        timeout-minutes: 10
+
+      # Configure a virtual display server (needed for electron):
+      - name: 'Configure virtual display server'
+        run: |
+          sudo apt-get install -y xvfb libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xinput0 libxcb-xfixes0
+          sudo /usr/bin/Xvfb "${{ env.DISPLAY }}" -screen 0 1280x768x24 > /dev/null 2>&1 &
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.NODE_VERSION }}
+        timeout-minutes: 5
+
+      # Print debug info:
+      - name: 'Print debug info'
+        run: |
+          echo 'PATH:'
+          echo $PATH
+          echo ''
+          echo 'gcc:'
+          gcc --version
+          echo ''
+          echo 'g++:'
+          g++ --version
+          echo ''
+          echo 'gfortran:'
+          gfortran --version
+          echo ''
+          echo 'Git:'
+          git --version
+          echo ''
+          echo 'Node.js:'
+          file $(which node)
+          node --version
+          node -p 'process.platform + "@" + process.arch'
+          echo ''
+          echo 'npm:'
+          npm --version
+          npm config get registry
+        timeout-minutes: 2
+
+      # Update the npm client (older clients cannot handle scoped modules):
+      - name: 'Update npm'
+        run: |
+          npm install -g npm@"${{ matrix.NPM_VERSION }}"
+          npm --version
+        timeout-minutes: 5
+
+      # Perform install sequence:
+      - name: 'Perform install sequence'
+        run: |
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" install "${{ env.LOG_FILE_INSTALL }}"
+        timeout-minutes: 30
+
+      # View the log file if the previous step fails:
+      - name: 'View log file'
+        if: failure()
+        run: |
+          echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
+          tail -${{ env.LOG_NUM_LINES }} "${{ env.LOG_FILE_INSTALL }}"
+        timeout-minutes: 5
+
+      # Run the build task:
+      - name: 'Run build task'
+        run: |
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
+        timeout-minutes: 360
+
+      # View the log file if the previous step fails:
+      - name: 'View log file'
+        if: failure()
+        run: |
+          echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
+          tail -${{ env.LOG_NUM_LINES }} "${{ env.LOG_FILE_BUILD_TASK }}"
+        timeout-minutes: 5
+
+      # Upload the log file:
+      - name: 'Upload log file'
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          # Define a name for the uploaded artifact (ensuring a unique name for each job):
+          name: ${{ matrix.BUILD_TASK }}_log_nodejs_v${{ matrix.NODE_VERSION }}_${{ matrix.PLATFORM }}
+
+          # Specify the path to the file to upload:
+          path: ${{ env.LOG_FILE_BUILD_TASK }}
+
+          # Specify the number of days to retain the artifact (default is 90 days):
+          retention-days: 5
+        timeout-minutes: 10
+
+  # Define a job for sending notifications to Slack...
+  slack:
+
+    # Define a display name:
+    name: 'Slack notification'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Indicate that this job depends on the prior job finishing:
+    needs: benchmark
+
+    # Run this job regardless of the outcome of the prior job:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Resolve notification data:
+      - name: 'Resolve notification data'
+        run: |
+          echo 'NOTIFICATION_STATUS=${{ needs.benchmark.result}}' >> $GITHUB_ENV
+          if [[ "${{ needs.benchmark.result }}" = "success" ]]; then
+            echo 'NOTIFICATION_TEXT=**benchmark** workflow succeeded (linux)' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
+          elif [[ "${{ needs.benchmark.result }}" = "failure" ]]; then
+            echo 'NOTIFICATION_TEXT=**benchmark** workflow failed (linux)' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
+          elif [[ "${{ needs.benchmark.result }}" = "cancelled" ]]; then
+            echo 'NOTIFICATION_TEXT=**benchmark** workflow was canceled (linux)' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
+          else
+            exit 1
+          fi
+        timeout-minutes: 5
+
+      # Send notification to Slack:
+      - name: 'Send notification'
+        uses: 8398a7/action-slack@v3
+        if: success()
+        with:
+          status: "${{ env.NOTIFICATION_STATUS }}"
+          fields: repo,commit,message
+          text: "${{ env.NOTIFICATION_TEXT }}"
+          author_name: "${{ env.NOTIFICATION_AUTHOR_NAME }}"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+        timeout-minutes: 5

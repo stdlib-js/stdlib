@@ -129,7 +129,7 @@ interface Random extends PRNG {
 	*
 	* ## Notes
 	*
-	* -   If `a >= b`, the function returns `NaN`.
+	* -   If `a > b`, the function returns `NaN`.
 	* -   If `a` or `b` is not an integer value, the function returns `NaN`.
 	*
 	* @param a - minimum support
@@ -158,7 +158,7 @@ interface Random extends PRNG {
 	* @param options.copy - boolean indicating whether to copy a provided pseudorandom number generator state (default: true)
 	* @throws `a` must be an integer
 	* @throws `b` must be an integer
-	* @throws `a` must be less than `b`
+	* @throws `a` must be less than or equal to `b`
 	* @throws must provide a valid state
 	* @returns pseudorandom number generator
 	*
@@ -213,7 +213,7 @@ interface Random extends PRNG {
 *
 * ## Notes
 *
-* -   If `a >= b`, the function returns `NaN`.
+* -   If `a > b`, the function returns `NaN`.
 * -   If `a` or `b` is not an integer value, the function returns `NaN`.
 *
 * @param a - minimum support

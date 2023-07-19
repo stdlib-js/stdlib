@@ -1,0 +1,33 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object supporting the accessor (get/set)
+    protocol.
+
+    An accessor array is defined as an array, typed array, or an array-like
+    object (excluding strings and functions) having `get` and `set` methods for
+    accessing array elements.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an accessor array.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new {{alias:@stdlib/array/complex64}}( 10 ) )
+    true
+    > bool = {{alias}}( [] )
+    false
+    > bool = {{alias}}( { 'length': 0 } )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,74 @@
+
+{{alias}}( a, b )
+    Multiplies two signed 32-bit integers and returns an array of two signed 32-
+    bit integers which represents the signed 64-bit integer product.
+
+    When computing the product of 32-bit integer values in double-precision
+    floating-point format (the default JavaScript numeric data type), computing
+    the double word product is necessary in order to avoid exceeding the maximum
+    safe double-precision floating-point integer value.
+
+    Parameters
+    ----------
+    a: integer
+        Signed 32-bit integer.
+
+    b: integer
+        Signed 32-bit integer.
+
+    Returns
+    -------
+    out: Array<number>
+        Double word product (in big endian order; i.e., the first element
+        corresponds to the most significant bits and the second element to the
+        least significant bits).
+
+    Examples
+    --------
+    > var v = {{alias}}( 1, 10 )
+    [ 0, 10 ]
+
+
+{{alias}}.assign( a, b, out, stride, offset )
+    Multiplies two signed 32-bit integers and assigns results representing the
+    signed 64-bit integer product to a provided output array.
+
+    When computing the product of 32-bit integer values in double-precision
+    floating-point format (the default JavaScript numeric data type), computing
+    the double word product is necessary in order to avoid exceeding the maximum
+    safe double-precision floating-point integer value.
+
+    Parameters
+    ----------
+    a: integer
+        Signed 32-bit integer.
+
+    b: integer
+        Signed 32-bit integer.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Double word product (in big endian order; i.e., the first element
+        corresponds to the most significant bits and the second element to the
+        least significant bits).
+
+    Examples
+    --------
+    > var out = [ 0, 0 ];
+    > var v = {{alias}}.assign( 1, 10, out, 1, 0 )
+    [ 0, 10 ]
+    > var bool = ( v === out )
+    true
+
+    See Also
+    --------

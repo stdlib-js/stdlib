@@ -18,10 +18,12 @@
 * limitations under the License.
 */
 
+/* eslint-disable node/shebang */
+
 'use strict';
 
 // Generate license header snippets:
-require( './license_header_snippets.js' );
+require( './license_header_snippets.js' ); // eslint-disable-line stdlib/no-unassigned-require
 
 // Generate completions files:
-require( './sublime_completions.js' );
+require( './sublime_completions.js' ); // eslint-disable-line stdlib/no-unassigned-require

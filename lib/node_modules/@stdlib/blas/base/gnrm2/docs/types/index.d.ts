@@ -29,7 +29,7 @@ interface Routine {
 	/**
 	* Computes the L2-norm of a vector.
 	*
-	* @param N - number of values over which to compute the L2-norm
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @returns L2-norm
@@ -45,7 +45,7 @@ interface Routine {
 	/**
 	* Computes the L2-norm of a vector using alternative indexing semantics.
 	*
-	* @param N - number of values over which to compute the L2-norm
+	* @param N - number of indexed elements
 	* @param x - input array
 	* @param stride - stride length
 	* @param offset - starting index
@@ -63,7 +63,7 @@ interface Routine {
 /**
 * Computes the L2-norm of a vector.
 *
-* @param N - number of values over which to compute the L2-norm
+* @param N - number of indexed elements
 * @param x - input array
 * @param stride - stride length
 * @returns L2-norm

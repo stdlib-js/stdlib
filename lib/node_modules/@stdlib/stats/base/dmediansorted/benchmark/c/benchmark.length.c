@@ -107,6 +107,7 @@ double benchmark( int iterations, int len ) {
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = i;
 	}
+	v = 0.0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		v = stdlib_strided_dmediansorted( len, x, 1 );

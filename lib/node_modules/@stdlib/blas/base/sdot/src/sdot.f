@@ -1,7 +1,7 @@
 !>
 ! @license Apache-2.0
 !
-! Copyright (c) 2019 The Stdlib Authors.
+! Copyright (c) 2023 The Stdlib Authors.
 !
 ! Licensed under the Apache License, Version 2.0 (the "License");
 ! you may not use this file except in compliance with the License.
@@ -47,7 +47,7 @@
 ! >
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
-! @param {integer} N - number of values over which to compute the dot product
+! @param {integer} N - number of indexed elements
 ! @param {Array<real>} sx - first array
 ! @param {integer} strideX - `sx` stride length
 ! @param {Array<real>} sy - second array

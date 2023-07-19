@@ -1,0 +1,39 @@
+
+{{alias}}( value[, options] )
+    Converts a number to a word representation.
+
+    Parameters
+    ----------
+    value: integer
+        Input value.
+
+    options: Object (optional)
+        Options.
+
+    options.lang: string (optional)
+        Language code. Supported languages:
+
+        - en: English.
+        - de: German.
+
+        Default: `'en'`.
+
+    Returns
+    -------
+    out: string
+        Word representation of number.
+
+    Examples
+    --------
+    > var out = {{alias}}( 123 )
+    'one hundred twenty-three'
+
+    > out = {{alias}}( 16.31 )
+    'sixteen point three one'
+
+    > out = {{alias}}( 123, { 'lang': 'de' } )
+    'einhundertdreiundzwanzig'
+
+    See Also
+    --------
+

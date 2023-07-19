@@ -24,14 +24,24 @@ LIST_PACKAGE_NAMESPACES ?= $(TOOLS_PKGS_DIR)/pkgs/namespaces/bin/cli
 # Define the command flags:
 LIST_PACKAGE_NAMESPACES_FLAGS ?=
 
+# Define the directory from which to search for namespaces:
+LIST_PACKAGE_NAMESPACES_DIR ?= $(SRC_DIR)
 
-# TARGETS #
 
-# List all package namespaces.
+# RULES #
+
+#/
+# Prints a list of all package namespaces.
 #
-# This target prints a list of all package namespaces.
-
+# @param {string} [LIST_PKGS_NAMESPACES_DIR] - absolute path of the directory from which to search (default: source directory)
+#
+# @example
+# make list-pkgs-namespaces
+#
+# @example
+# make list-pkgs-namespaces LIST_PACKAGE_NAMESPACES_DIR="$PWD/lib/node_modules/\@stdlib/utils"
+#/
 list-pkgs-namespaces: $(LIST_PACKAGE_NAMESPACES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_NAMESPACES) $(LIST_PACKAGE_NAMESPACES_FLAGS) $(SRC_DIR)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PACKAGE_NAMESPACES)" $(LIST_PACKAGE_NAMESPACES_FLAGS) "$(LIST_PACKAGE_NAMESPACES_DIR)"
 
 .PHONY: list-pkgs-namespaces

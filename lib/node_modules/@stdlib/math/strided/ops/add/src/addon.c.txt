@@ -1,0 +1,142 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) {{YEAR}} {{COPYRIGHT}}.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/* {{NOTE}} */
+
+#include "stdlib/math/base/ops/{{FCN_BASENAME}}.h"
+#include "stdlib/math/base/ops/{{FCN_BASENAME}}f.h"
+#include "stdlib/math/base/ops/c{{FCN_BASENAME}}.h"
+#include "stdlib/math/base/ops/c{{FCN_BASENAME}}f.h"
+#include "stdlib/strided/dtypes.h"
+#include "stdlib/strided/base/function_object.h"
+#include "stdlib/strided/base/binary.h"
+#include "stdlib/strided/napi/binary.h"
+#include <stdint.h>
+
+/**
+* {{FCN_DESCRIPTION}}
+*
+* @param x   input value
+* @param y   input value
+* @return    result
+*/
+static uint32_t {{FCN_BASENAME}}u( const uint32_t x, const uint32_t y ) {
+	{{FCN_BODY}}
+}
+
+/**
+* {{FCN_DESCRIPTION}}
+*
+* @param x   input value
+* @param y   input value
+* @return    result
+*/
+static int32_t {{FCN_BASENAME}}i( const int32_t x, const int32_t y ) {
+	{{FCN_BODY}}
+}
+
+/**
+* {{FCN_DESCRIPTION}}
+*
+* @param x   input value
+* @param y   input value
+* @return    result
+*/
+static uint16_t {{FCN_BASENAME}}t( const uint16_t x, const uint16_t y ) {
+	{{FCN_BODY}}
+}
+
+/**
+* {{FCN_DESCRIPTION}}
+*
+* @param x   input value
+* @param y   input value
+* @return    result
+*/
+static int16_t {{FCN_BASENAME}}k( const int16_t x, const int16_t y ) {
+	{{FCN_BODY}}
+}
+
+/**
+* {{FCN_DESCRIPTION}}
+*
+* @param x   input value
+* @param y   input value
+* @return    result
+*/
+static uint8_t {{FCN_BASENAME}}b( const uint8_t x, const uint8_t y ) {
+	{{FCN_BODY}}
+}
+
+/**
+* {{FCN_DESCRIPTION}}
+*
+* @param x   input value
+* @param y   input value
+* @return    result
+*/
+static int8_t {{FCN_BASENAME}}s( const int8_t x, const int8_t y ) {
+	{{FCN_BODY}}
+}
+
+// Define an interface name:
+static const char name[] = "stdlib_strided_{{FCN_BASENAME}}";
+
+// Define a list of strided array functions:
+static StridedArrayFcn functions[] = {
+	{{FUNCTIONS}}
+};
+
+// Define the **strided array** argument types for each strided array function:
+static int32_t types[] = {
+	{{TYPES}}
+};
+
+// Define a list of strided array function "data" (in this case, callbacks):
+static void *data[] = {
+	{{DATA}}
+};
+
+// Create a strided array function object:
+static const struct StridedFunctionObject obj = {
+	// Strided array function name:
+	name,
+
+	// Number of input strided arrays:
+	2,
+
+	// Number of output strided arrays:
+	1,
+
+	// Total number of strided array arguments (nin + nout):
+	3,
+
+	// Array containing strided array functions:
+	functions,
+
+	// Number of strided array functions:
+	{{NUM_FUNCTIONS}},
+
+	// Array of type "numbers" (as enumerated elsewhere), where the total number of types equals `narrays * nfunctions` and where each set of `narrays` consecutive types (non-overlapping) corresponds to the set of strided array argument types for a corresponding strided array function:
+	types,
+
+	// Array of void pointers corresponding to the "data" (e.g., callbacks) which should be passed to a respective strided array function (note: the number of pointers should match the number of strided array functions):
+	data
+};
+
+STDLIB_STRIDED_NAPI_MODULE_BINARY( obj )

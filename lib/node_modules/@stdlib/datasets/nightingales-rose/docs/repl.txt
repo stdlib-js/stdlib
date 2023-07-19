@@ -16,7 +16,8 @@
     ----------
     - Nightingale, Florence. 1859. *A contribution to the sanitary history of
     the British army during the late war with Russia*. London, United Kingdom:
-    John W. Parker and Son. <http://ocp.hul.harvard.edu/dl/contagion/010164675>.
+    John W. Parker and Son.<https://curiosity.lib.harvard.edu/contagion/
+    catalog/36-990101646750203941>.
 
     See Also
     --------

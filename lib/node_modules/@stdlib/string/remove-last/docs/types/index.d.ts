@@ -19,9 +19,10 @@
 // TypeScript Version: 2.0
 
 /**
-* Removes the last character of a string.
+* Removes the last character(s) of a string.
 *
 * @param str - input string
+* @param n - number of characters to remove (default: 1)
 * @returns updated string
 *
 * @example
@@ -39,8 +40,12 @@
 * @example
 * var out = removeLast( 'Hidden Treasures' );
 * // returns 'Hidden Treasure'
+*
+* @example
+* var out = removeLast( 'leader', 2 );
+* // returns 'lead'
 */
-declare function removeLast( str: string ): string;
+declare function removeLast( str: string, n?: number ): string;
 
 
 // EXPORTS //

@@ -9,7 +9,7 @@
     `2047`, a significand greater than `0`, and a sign bit equal to either `1`
     or `0`. In which case, `NaN` may not correspond to just one but many binary
     representations. Accordingly, care should be taken to ensure that `y` is not
-    `NaN`, else behavior may be indeterminate.
+    `NaN`; otherwise, behavior may be indeterminate.
 
     Parameters
     ----------
@@ -26,14 +26,14 @@
 
     Examples
     --------
-    > var z = {{alias}}( -3.14, 10.0 )
-    -3.14
-    > z = {{alias}}( -3.14, -1.0 )
-    3.14
+    > var z = {{alias}}( -3.0, 10.0 )
+    -3.0
+    > z = {{alias}}( -3.0, -1.0 )
+    3.0
     > z = {{alias}}( 1.0, -0.0 )
     -1.0
-    > z = {{alias}}( -3.14, -0.0 )
-    3.14
+    > z = {{alias}}( -3.0, -0.0 )
+    3.0
     > z = {{alias}}( -0.0, 1.0 )
     -0.0
     > z = {{alias}}( 0.0, -1.0 )

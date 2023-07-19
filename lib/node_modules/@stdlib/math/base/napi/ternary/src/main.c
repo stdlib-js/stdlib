@@ -35,7 +35,7 @@
 * @param env    environment under which the function is invoked
 * @param info   callback data
 * @param fcn    ternary function
-* @return       function return value as an N-API double-precision floating-point number
+* @return       function return value as a Node-API double-precision floating-point number
 */
 napi_value stdlib_math_base_napi_ddd_d( napi_env env, napi_callback_info info, double (*fcn)( double, double, double ) ) {
 	napi_status status;
@@ -111,7 +111,7 @@ napi_value stdlib_math_base_napi_ddd_d( napi_env env, napi_callback_info info, d
 * @param env    environment under which the function is invoked
 * @param info   callback data
 * @param fcn    ternary function
-* @return       function return value as an N-API double-precision floating-point number
+* @return       function return value as a Node-API double-precision floating-point number
 */
 napi_value stdlib_math_base_napi_fff_f( napi_env env, napi_callback_info info, float (*fcn)( float, float, float ) ) {
 	napi_status status;

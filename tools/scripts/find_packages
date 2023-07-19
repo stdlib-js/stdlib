@@ -72,9 +72,9 @@ main() {
 
 	# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 	if [[ "${kernel}" == "Darwin" ]]; then
-		pkgs=$(find -E "${root_dir}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${tools_dir}/*" -not -path "${tools_pkgs_dir}/*" -not -path "${deps_dir}/*" -not -path "${docs_dir}/*" -not -path "${build_dir}/*" -not -path "${dist_dir}/*" -not -path "${reports_dir}/*" -regex "${packages_filter}" -name "${packages_file}" -exec dirname {} \;)
+		pkgs=$(find -E "${root_dir}" '!' -path "${root_dir}/.*" '!' -path "${node_modules}/*" '!' -path "${tools_dir}/*" '!' -path "${tools_pkgs_dir}/*" '!' -path "${deps_dir}/*" '!' -path "${docs_dir}/*" '!' -path "${build_dir}/*" '!' -path "${dist_dir}/*" '!' -path "${reports_dir}/*" -regex "${packages_filter}" -name "${packages_file}" -exec dirname {} \;)
 	else
-		pkgs=$(find "${root_dir}" -regextype posix-extended -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${tools_dir}/*" -not -path "${tools_pkgs_dir}/*" -not -path "${deps_dir}/*" -not -path "${docs_dir}/*" -not -path "${build_dir}/*" -not -path "${dist_dir}/*" -not -path "${reports_dir}/*" -regex "${packages_filter}" -name "${packages_file}" -exec dirname {} \;)
+		pkgs=$(find "${root_dir}" -regextype posix-extended '!' -path "${root_dir}/.*" '!' -path "${node_modules}/*" '!' -path "${tools_dir}/*" '!' -path "${tools_pkgs_dir}/*" '!' -path "${deps_dir}/*" '!' -path "${docs_dir}/*" '!' -path "${build_dir}/*" '!' -path "${dist_dir}/*" '!' -path "${reports_dir}/*" -regex "${packages_filter}" -name "${packages_file}" -exec dirname {} \;)
 	fi
 	echo "${pkgs}"
 }

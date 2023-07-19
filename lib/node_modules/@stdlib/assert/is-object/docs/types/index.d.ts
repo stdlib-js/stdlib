@@ -32,7 +32,7 @@
 * var bool = isObject( null );
 * // returns false
 */
-declare function isObject( value: any ): boolean;
+declare function isObject( value: any ): value is Object;
 
 
 // EXPORTS //

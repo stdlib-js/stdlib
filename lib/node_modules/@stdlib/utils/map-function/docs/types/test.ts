@@ -54,7 +54,7 @@ function identity( x: any ): any {
 	mapFun( identity, {} ); // $ExpectError
 }
 
-// The function does not compile if provided fewer than two arguments...
+// The compiler throws an error if the function is provided fewer than two arguments...
 {
 	mapFun(); // $ExpectError
 	mapFun( identity ); // $ExpectError

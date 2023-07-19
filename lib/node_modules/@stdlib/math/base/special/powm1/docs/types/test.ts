@@ -26,7 +26,7 @@ import powm1 = require( './index' );
 	powm1( 8, 2 ); // $ExpectType number
 }
 
-// The function does not compile if provided values other than two numbers...
+// The compiler throws an error if the function is provided values other than two numbers...
 {
 	powm1( true, 3 ); // $ExpectError
 	powm1( false, 2 ); // $ExpectError
@@ -49,7 +49,7 @@ import powm1 = require( './index' );
 	powm1( '5', ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided insufficient arguments...
 {
 	powm1(); // $ExpectError
 	powm1( 3 ); // $ExpectError

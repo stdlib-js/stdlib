@@ -38,7 +38,7 @@
 * bool = isFunctionArray( [] );
 * // returns false
 */
-declare function isFunctionArray( value: any ): boolean;
+declare function isFunctionArray( value: any ): value is Array<Function>;
 
 
 // EXPORTS //

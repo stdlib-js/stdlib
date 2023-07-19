@@ -1,0 +1,33 @@
+
+{{alias}}( x )
+    Tests if a double-precision floating-point numeric value is a nonnegative
+    finite number.
+
+    Parameters
+    ----------
+    x: number
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the value is a nonnegative finite number.
+
+    Examples
+    --------
+    > var out = {{alias}}( 5.0 )
+    true
+    > out = {{alias}}( 3.14 )
+    true
+    > out = {{alias}}( 0.0 )
+    true
+    > out = {{alias}}( Infinity )
+    false
+    > out = {{alias}}( -3.14 )
+    false
+    > out = {{alias}}( NaN )
+    false
+
+    See Also
+    --------
+

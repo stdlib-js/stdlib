@@ -31,7 +31,7 @@
 * bool = isNullArray( [NaN,2,null] );
 * // returns false
 */
-declare function isNullArray( value: any ): boolean;
+declare function isNullArray( value: any ): value is ArrayLike<null>;
 
 
 // EXPORTS //

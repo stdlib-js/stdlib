@@ -1,0 +1,227 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Files #
+#########
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+CONTRIBUTORS
+TODO.md
+ROADMAP.md
+branches.md
+.postinstall.json
+Makefile
+
+# Ignore `binding.gyp` file to avoid compilation of native addon when installing package:
+binding.gyp
+
+# Directories #
+###############
+.circleci/
+.github/
+**/benchmark/
+**/build/
+**/examples/
+reports/
+support/
+scripts/
+**/tmp/
+workshops/
+
+# Ignore test directories, except for testing dependency installation:
+**/test/
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.o
+*.so
+*.slo
+*.lo
+*.obj
+*.dylib
+*.lai
+*.la
+*.a
+*.lib
+*.ko
+*.elf
+*.node
+
+# Precompiled headers #
+#######################
+*.gch
+*.pch
+
+# Executables #
+###############
+*.exe
+*.out
+*.app
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Make an exception for compressed distributable files:
+!dist/*.gz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary files #
+###################
+*~
+
+# Node.js #
+###########
+.npmignore
+
+# Only top-level node_modules:
+/node_modules/
+
+# TypeScript #
+##############
+tsconfig.json
+tslint.json
+*.tsbuildinfo
+
+# Matlab #
+##########
+*.asv
+*.mex*
+
+# Fortran #
+###########
+*.mod
+
+# R #
+#####
+.Rhistory
+.Rapp.history
+.Rproj.user/
+
+# Python #
+##########
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.ipynb_checkpoints
+setup.cfg
+setup.py
+
+# TeX #
+#######
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.dvi
+*-converted-to.*
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+*.run.xml
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.alg
+*.loa
+acs-*.bib
+*.thm
+*.nav
+*.snm
+*.vrb
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*-concordance.tex
+*.tikz
+*-tikzDictionary
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# Git #
+#######
+.git*
+.mailmap
+
+# Visual Studio #
+#################
+.vscode/
+jsconfig.json
+
+# Utilities #
+#############
+.jshintrc
+.jshintignore
+.eslintrc*
+.eslintignore
+
+.pylintrc
+.pycodestyle
+.pydocstyle
+
+.travis.yml
+circle.yml
+appveyor.yml
+azure-pipelines.yml
+
+.editorconfig
+.codeclimate.yml
+.codecov.yml
+
+.rtlintrc

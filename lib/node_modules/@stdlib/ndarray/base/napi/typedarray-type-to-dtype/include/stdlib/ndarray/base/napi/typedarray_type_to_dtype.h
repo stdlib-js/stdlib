@@ -30,7 +30,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the ndarray data type corresponding to an N-API typed array type.
+* Returns the ndarray data type corresponding to a Node-API typed array type.
 */
 enum STDLIB_NDARRAY_DTYPE stdlib_ndarray_napi_typedarray_type_to_dtype( napi_typedarray_type vtype );
 

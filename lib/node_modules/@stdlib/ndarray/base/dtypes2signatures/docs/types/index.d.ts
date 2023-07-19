@@ -28,7 +28,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * @param dtypes - list of array argument data types
 * @param nin - number of input array arguments
 * @param nout - number of output array arguments
-* @throws first argument must be an array-like object containing strings
+* @throws first argument must be an array-like object
 * @throws second argument must be a nonnegative integer
 * @throws third argument must be a nonnegative integer
 * @throws first argument must have at least one element
@@ -44,7 +44,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var sigs = dtypes2signatures( dtypes, 1, 1 );
 * // returns [ '(float64) => (float64)', '(float32) => (float32)' ]
 */
-declare function dtypes2signatures( dtypes: ArrayLike<string>, nin: number, nout: number ): ArrayLike<string>; // tslint:disable-line:max-line-length
+declare function dtypes2signatures( dtypes: ArrayLike<any>, nin: number, nout: number ): ArrayLike<string>; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //

@@ -1,0 +1,165 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: publish_cli
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    # Workflow inputs:
+    inputs:
+      version:
+        description: 'Version Increment'
+        type: choice
+        default: 'none'
+        options:
+          - 'none'
+          - 'major'
+          - 'minor'
+          - 'patch'
+          - 'premajor'
+          - 'preminor'
+          - 'prepatch'
+          - 'prerelease'
+
+# Workflow jobs:
+jobs:
+
+  # Define job to publish package to npm:
+  publish:
+
+    # Define display name:
+    name: 'Publish CLI package to npm'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Define environment variables:
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout cli branch:
+      - name: 'Checkout cli branch'
+        uses: actions/checkout@v3
+        with:
+          ref: cli
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+        timeout-minutes: 5
+
+      # Configure git:
+      - name: 'Configure git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+
+      # Increment package version (if requested):
+      - name: 'Increment package version (if requested)'
+        if: ${{ github.event.inputs.version != 'none' }}
+        run: |
+          # Save NPM_TOKEN to user's .npmrc:
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+
+          # Increment package version:
+          npm version ${{ github.event.inputs.version }} --no-git-tag-version
+
+          # Define variable for new version:
+          NEW_VERSION=$(node -p "require('./package.json').version")
+
+          # Replace branch in README.md link definitions for badges with the new version:
+          find . -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/branch([=:])[^ ]+/branch\1v${NEW_VERSION}/g"
+
+          # Create a new commit and tag:
+          git add package.json README.md
+          git commit -m "Release v${NEW_VERSION}"
+          git tag -a "v${NEW_VERSION}-cli" -m "Release v${NEW_VERSION}"
+
+          # Push changes to GitHub:
+          SLUG=${{ github.repository }}
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" --follow-tags
+
+      # Replace GitHub MathJax equations with SVGs:
+      - name: 'Replace GitHub MathJax equations with SVGs'
+        run: |
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe 's/```math\n([\s\S]+?)\n```\n\n//g'
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe 's/<!-- <div class="equation"(.*)(<\/div>\s*-->)/<div class="equation"$1<\/div>/sg'
+
+      # Replace GitHub links to individual packages with npm links:
+      - name: 'Replace all GitHub links to individual packages with npm links'
+        run: |
+          find . -type f -name '*.md' -print0 | xargs -0 sed -Ei '/tree\/main/b; s/@stdlib\/([^:]*)\]: https:\/\/github.com\/stdlib-js/@stdlib\/\1\]: https:\/\/www.npmjs.com\/package\/@stdlib/g'
+          SLUG=${{ github.repository }}
+          ESCAPED_SLUG=${SLUG//\//\\\/}
+          REPO=${SLUG#*/}
+          find . -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/https:\/\/github.com\/${ESCAPED_SLUG}\/tree\/main/https:\/\/www.npmjs.com\/package\/@stdlib\/${REPO}/g"
+
+      # Publish package to npm:
+      - name: 'Publish package to npm'
+        uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          access: public
+
+      # Discard any uncommitted changes:
+      - name: 'Discard any uncommitted changes'
+        run: |
+          git reset --hard
+
+      # Send status to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()
+
+  # Define job to cancel any running or queued workflow runs...
+  cancel:
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Time out the job after 3 minutes:
+    timeout-minutes: 3
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Cancel any running or queued workflow runs:
+      - name: 'Cancel running or queued workflow runs'
+        uses: styfle/cancel-workflow-action@0.11.0
+        with:
+          workflow_id: >-
+            benchmark.yml,
+            examples.yml,
+            test.yml,
+            test_coverage.yml,
+            test_install.yml,
+            publish.yml
+          access_token: ${{ github.token }}

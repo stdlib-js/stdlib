@@ -1,0 +1,188 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/* tslint:disable:max-line-length */
+/* tslint:disable:max-file-line-count */
+
+import HOURS_IN_DAY = require( '@stdlib/constants/time/hours-in-day' );
+import HOURS_IN_WEEK = require( '@stdlib/constants/time/hours-in-week' );
+import MILLISECONDS_IN_DAY = require( '@stdlib/constants/time/milliseconds-in-day' );
+import MILLISECONDS_IN_HOUR = require( '@stdlib/constants/time/milliseconds-in-hour' );
+import MILLISECONDS_IN_MINUTE = require( '@stdlib/constants/time/milliseconds-in-minute' );
+import MILLISECONDS_IN_SECOND = require( '@stdlib/constants/time/milliseconds-in-second' );
+import MILLISECONDS_IN_WEEK = require( '@stdlib/constants/time/milliseconds-in-week' );
+import MINUTES_IN_DAY = require( '@stdlib/constants/time/minutes-in-day' );
+import MINUTES_IN_HOUR = require( '@stdlib/constants/time/minutes-in-hour' );
+import MINUTES_IN_WEEK = require( '@stdlib/constants/time/minutes-in-week' );
+import MONTHS_IN_YEAR = require( '@stdlib/constants/time/months-in-year' );
+import SECONDS_IN_DAY = require( '@stdlib/constants/time/seconds-in-day' );
+import SECONDS_IN_HOUR = require( '@stdlib/constants/time/seconds-in-hour' );
+import SECONDS_IN_MINUTE = require( '@stdlib/constants/time/seconds-in-minute' );
+import SECONDS_IN_WEEK = require( '@stdlib/constants/time/seconds-in-week' );
+
+/**
+* Interface describing the `time` namespace.
+*/
+interface Namespace {
+	/**
+	* Number of hours in a day.
+	*
+	* @example
+	* var num = ns.HOURS_IN_DAY;
+	* // returns 24
+	*/
+	HOURS_IN_DAY: typeof HOURS_IN_DAY;
+
+	/**
+	* Number of hours in a week.
+	*
+	* @example
+	* var num = ns.HOURS_IN_WEEK;
+	* // returns 168
+	*/
+	HOURS_IN_WEEK: typeof HOURS_IN_WEEK;
+
+	/**
+	* Number of milliseconds in a day.
+	*
+	* @example
+	* var num = ns.MILLISECONDS_IN_DAY;
+	* // returns 86400000
+	*/
+	MILLISECONDS_IN_DAY: typeof MILLISECONDS_IN_DAY;
+
+	/**
+	* Number of milliseconds in an hour.
+	*
+	* @example
+	* var num = ns.MILLISECONDS_IN_HOUR;
+	* // returns 3600000
+	*/
+	MILLISECONDS_IN_HOUR: typeof MILLISECONDS_IN_HOUR;
+
+	/**
+	* Number of milliseconds in a minute.
+	*
+	* @example
+	* var num = ns.MILLISECONDS_IN_MINUTE;
+	* // returns 60000
+	*/
+	MILLISECONDS_IN_MINUTE: typeof MILLISECONDS_IN_MINUTE;
+
+	/**
+	* Number of milliseconds in a second.
+	*
+	* @example
+	* var num = ns.MILLISECONDS_IN_SECOND;
+	* // returns 1000
+	*/
+	MILLISECONDS_IN_SECOND: typeof MILLISECONDS_IN_SECOND;
+
+	/**
+	* Number of milliseconds in a week.
+	*
+	* @example
+	* var num = ns.MILLISECONDS_IN_WEEK;
+	* // returns 604800000
+	*/
+	MILLISECONDS_IN_WEEK: typeof MILLISECONDS_IN_WEEK;
+
+	/**
+	* Number of minutes in a day.
+	*
+	* @example
+	* var num = ns.MINUTES_IN_DAY;
+	* // returns 1440
+	*/
+	MINUTES_IN_DAY: typeof MINUTES_IN_DAY;
+
+	/**
+	* Number of minutes in an hour.
+	*
+	* @example
+	* var num = ns.MINUTES_IN_HOUR;
+	* // returns 60
+	*/
+	MINUTES_IN_HOUR: typeof MINUTES_IN_HOUR;
+
+	/**
+	* Number of minutes in a week.
+	*
+	* @example
+	* var num = ns.MINUTES_IN_WEEK;
+	* // returns 10080
+	*/
+	MINUTES_IN_WEEK: typeof MINUTES_IN_WEEK;
+
+	/**
+	* Number of months in a year.
+	*
+	* @example
+	* var num = ns.MONTHS_IN_YEAR;
+	* // returns 12
+	*/
+	MONTHS_IN_YEAR: typeof MONTHS_IN_YEAR;
+
+	/**
+	* Number of seconds in a day.
+	*
+	* @example
+	* var num = ns.SECONDS_IN_DAY;
+	* // returns 86400
+	*/
+	SECONDS_IN_DAY: typeof SECONDS_IN_DAY;
+
+	/**
+	* Number of seconds in an hour.
+	*
+	* @example
+	* var num = ns.SECONDS_IN_HOUR;
+	* // returns 3600
+	*/
+	SECONDS_IN_HOUR: typeof SECONDS_IN_HOUR;
+
+	/**
+	* Number of seconds in a minute.
+	*
+	* @example
+	* var num = ns.SECONDS_IN_MINUTE;
+	* // returns 60
+	*/
+	SECONDS_IN_MINUTE: typeof SECONDS_IN_MINUTE;
+
+	/**
+	* Number of seconds in a week.
+	*
+	* @example
+	* var num = ns.SECONDS_IN_WEEK;
+	* // returns 604800
+	*/
+	SECONDS_IN_WEEK: typeof SECONDS_IN_WEEK;
+}
+
+/**
+* Time constants.
+*/
+declare var ns: Namespace;
+
+
+// EXPORTS //
+
+export = ns;

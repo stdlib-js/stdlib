@@ -25,72 +25,80 @@ LIST_INSTALLED_PACKAGES ?= $(TOOLS_PKGS_DIR)/pkgs/installed/bin/cli
 LIST_INSTALLED_PACKAGES_FLAGS ?=
 
 
-# TARGETS #
+# RULES #
 
-# List installed package dependencies.
+#/
+# Prints a list of all installed package dependencies.
 #
-# This target prints a list of all installed package dependencies.
-
+# @example
+# make list-pkgs-installed
+#/
 list-pkgs-installed: $(NODE_MODULES) $(LIST_INSTALLED_PACKAGES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_INSTALLED_PACKAGES) $(LIST_INSTALLED_PACKAGES_FLAGS) $(ROOT_DIR)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_INSTALLED_PACKAGES)" $(LIST_INSTALLED_PACKAGES_FLAGS) "$(ROOT_DIR)"
 
 .PHONY: list-pkgs-installed
 
-
-# List installed package dependencies.
+#/
+# Prints the logical dependency tree for all installed package dependencies.
 #
-# This target prints the logical dependency tree for all installed package dependencies.
-
+# @example
+# make list-pkgs-installed-logical-tree
+#/
 list-pkgs-installed-logical-tree: $(NODE_MODULES)
 	$(QUIET) $(NPM) ls
 
 .PHONY: list-pkgs-installed-logical-tree
 
-
-# List installed production package dependencies.
+#/
+# Prints the logical dependency tree for installed package dependencies list in the `dependencies` tree of the root `package.json`.
 #
-# This target prints the logical dependency tree for installed package dependencies list in the `dependencies` tree of the root `package.json`.
-
+# @example
+# make list-pkgs-installed-logical-tree-prod
+#/
 list-pkgs-installed-logical-tree-prod: $(NODE_MODULES)
 	$(QUIET) $(NPM) ls --prod
 
 .PHONY: list-pkgs-installed-logical-tree-prod
 
-
-# List installed development package dependencies.
+#/
+# Prints the logical dependency tree for installed package dependencies list in the `devDependencies` tree of the root `package.json`.
 #
-# This target prints the logical dependency tree for installed package dependencies list in the `devDependencies` tree of the root `package.json`.
-
+# @example
+# make list-pkgs-installed-logical-tree-dev
+#/
 list-pkgs-installed-logical-tree-dev: $(NODE_MODULES)
 	$(QUIET) $(NPM) ls --dev
 
 .PHONY: list-pkgs-installed-logical-tree-dev
 
-
-# List installed package dependencies.
+#/
+# Prints the logical dependency tree for all installed package dependencies as JSON.
 #
-# This target prints the logical dependency tree for all installed package dependencies as JSON.
-
+# @example
+# make list-pkgs-installed-logical-tree-json
+#/
 list-pkgs-installed-logical-tree-json: $(NODE_MODULES)
 	$(QUIET) $(NPM) ls --json
 
 .PHONY: list-pkgs-installed-logical-tree-json
 
-
-# List installed production package dependencies.
+#/
+# Prints the logical dependency tree as JSON for installed package dependencies list in the `dependencies` tree of the root `package.json`.
 #
-# This target prints the logical dependency tree as JSON for installed package dependencies list in the `dependencies` tree of the root `package.json`.
-
+# @example
+# make list-pkgs-installed-logical-tree-prod-json
+#/
 list-pkgs-installed-logical-tree-prod-json: $(NODE_MODULES)
 	$(QUIET) $(NPM) ls --prod --json
 
 .PHONY: list-pkgs-installed-logical-tree-prod-json
 
-
-# List installed development package dependencies.
+#/
+# Prints the logical dependency tree as JSON for installed package dependencies list in the `devDependencies` tree of the root `package.json`.
 #
-# This target prints the logical dependency tree as JSON for installed package dependencies list in the `devDependencies` tree of the root `package.json`.
-
+# @example
+# make list-pkgs-installed-logical-tree-dev-json
+#/
 list-pkgs-installed-logical-tree-dev-json: $(NODE_MODULES)
 	$(QUIET) $(NPM) ls --dev --json
 

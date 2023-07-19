@@ -24,10 +24,8 @@
 * @param str - input string
 * @param idx - position
 * @param backward - backward iteration for low surrogates (default: false)
-* @throws first argument must be a string
-* @throws second argument must be a nonnegative integer
-* @throws third argument must be a boolean
-* @throws position must be a valid index in string
+* @throws second argument must be an integer
+* @throws second argument must be a valid index
 * @returns code point
 *
 * @example

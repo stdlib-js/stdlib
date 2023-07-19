@@ -1,0 +1,132 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: namespace_exports
+
+# Workflow triggers:
+on:
+  pull_request_target:
+    branches:
+      - develop
+    types:
+      - closed
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for updating namespace exports...
+  update:
+
+    # Define a display name:
+    name: 'Update Namespace Exports'
+
+    # Only run this job if the pull request was merged and did not have label `automated-pr` (or the job was triggered manually):
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'automated-pr') == false || github.event_name == 'workflow_dispatch'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Initialize development environment:
+      - name: 'Initialize development environment'
+        run: |
+          make init
+        timeout-minutes: 5
+
+      # Update namespace exports:
+      - name: 'Update namespace exports'
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Get list of namespaces (e.g., '@stdlib/math/base' or '@stdlib/string'):
+          namespaces=$(make list-pkgs-namespaces)
+
+          # Prepend `${root}/lib/node_modules/` to each namespace:
+          namespaces=$(echo "${namespaces}" | sed "s|^|${root}/lib/node_modules/|")
+
+          # Append `/lib/index.js` to each namespace:
+          namespaces=$(echo "${namespaces}" | sed "s|$|/lib/index.js|")
+
+          # Replace newlines with spaces:
+          namespaces=$(echo "${namespaces}" | tr '\n' ' ')
+
+          # Print the list of namespaces files to update:
+          echo "${namespaces}"
+
+          # Lint and fix namespace exports:
+          make FILES="${namespaces}" FIX=1 FIX_TYPE="suggestion" lint-javascript-files
+
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
+      # Create a pull request with the updated namespace exports:
+      - name: 'Create pull request'
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: 'Update namespace exports'
+          body: |
+            This PR
+
+            -   updates namespace exports
+
+          commit-message: 'feat: update namespace exports'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          labels: |
+            automated-pr
+          team-reviewers: |
+            stdlib-reviewers
+          branch: update-namespace-exports
+          delete-branch: true

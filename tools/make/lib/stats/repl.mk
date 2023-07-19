@@ -18,18 +18,20 @@
 
 # VARIABLES #
 
-# Define the path to the script for generating REPL language stats:
-REPL_LANG_STATS ?= $(TOOLS_DIR)/scripts/repl_lang_stats
+# Define the path to the script for printing a statistical summary of the REPL namespace:
+REPL_STATS ?= $(TOOLS_PKGS_DIR)/scripts/repl_lang_stats
 
 
-# TARGETS #
+# RULES #
 
-# Compute REPL language stats.
+#/
+# Prints a statistical summary of the REPL namespace.
 #
-# This target computes REPL language statistics.
+# @example
+# make stats-repl
+#/
+stats-repl: $(REPL_STATS)
+	$(QUIET) $(MAKE_EXECUTABLE) $(REPL_STATS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REPL_STATS)
 
-stats-repl-lang: $(REPL_LANG_STATS)
-	$(QUIET) $(MAKE_EXECUTABLE) $(REPL_LANG_STATS)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REPL_LANG_STATS)
-
-.PHONY: stats-repl-lang
+.PHONY: stats-repl

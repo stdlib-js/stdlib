@@ -1,0 +1,147 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# filledBy
+
+> Create a filled "generic" array according to a provided callback function.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var filledBy = require( '@stdlib/array/base/filled-by' );
+```
+
+#### filledBy( len, clbk\[, thisArg] )
+
+Returns a filled "generic" array according to a provided callback function.
+
+```javascript
+function clbk( i ) {
+    return i;
+}
+
+var out = filledBy( 3, clbk );
+// returns [ 0, 1, 2 ]
+```
+
+When invoked, a callback function is provided a single argument:
+
+-   **index**: the current array index.
+
+To set the callback execution context, provide a `thisArg`.
+
+<!-- eslint-disable no-invalid-this -->
+
+```javascript
+function clbk( i ) {
+    this.count += 1;
+    return i;
+}
+
+var ctx = {
+    'count': 0
+};
+
+var out = filledBy( 3, clbk, ctx );
+// returns [ 0, 1, 2 ];
+
+var cnt = ctx.count;
+// returns 3
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var constantFunction = require( '@stdlib/utils/constant-function' );
+var filledBy = require( '@stdlib/array/base/filled-by' );
+
+var out = filledBy( 3, constantFunction( 0.0 ) );
+// returns [ 0.0, 0.0, 0.0 ]
+
+out = filledBy( 3, constantFunction( 'beep' ) );
+// returns [ 'beep', 'beep', 'beep' ]
+
+out = filledBy( 3, constantFunction( null ) );
+// returns [ null, null, null ]
+
+out = filledBy( 3, constantFunction( true ) );
+// returns [ true, true, true ]
+
+out = filledBy( 3, constantFunction( void 0 ) );
+// returns [ undefined, undefined, undefined ]
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

@@ -69,7 +69,7 @@ type Binary = ( value: any, index: number ) => boolean;
 * @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Tertiary = ( value: any, index: number, collection: Collection ) => boolean; // tslint-disable-line max-line-length
+type Ternary = ( value: any, index: number, collection: Collection ) => boolean; // tslint-disable-line max-line-length
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -79,7 +79,7 @@ type Tertiary = ( value: any, index: number, collection: Collection ) => boolean
 * @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Callback = Nullary | Unary | Binary | Tertiary;
+type Callback = Nullary | Unary | Binary | Ternary;
 
 /**
 * Finds elements in an array-like object that satisfy a test condition.

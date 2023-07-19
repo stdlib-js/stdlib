@@ -1,0 +1,139 @@
+
+{{alias}}( [dtype] )
+    Creates a typed array.
+
+    The function supports the following data types:
+
+    - float64: double-precision floating-point numbers (IEEE 754)
+    - float32: single-precision floating-point numbers (IEEE 754)
+    - int32: 32-bit two's complement signed integers
+    - uint32: 32-bit unsigned integers
+    - int16: 16-bit two's complement signed integers
+    - uint16: 16-bit unsigned integers
+    - int8: 8-bit two's complement signed integers
+    - uint8: 8-bit unsigned integers
+    - uint8c: 8-bit unsigned integers clamped to 0-255
+
+    The default typed array data type is `float64`.
+
+    Parameters
+    ----------
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray
+        A typed array.
+
+    Examples
+    --------
+    > var arr = {{alias}}()
+    <Float64Array>
+    > arr = {{alias}}( 'float32' )
+    <Float32Array>
+
+
+{{alias}}( length[, dtype] )
+    Returns a typed array having a specified length.
+
+    Parameters
+    ----------
+    length: integer
+        Typed array length.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray
+        A typed array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 5 )
+    <Float64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0 ]
+    > arr = {{alias}}( 5, 'int32' )
+    <Int32Array>[ 0, 0, 0, 0, 0 ]
+
+
+{{alias}}( typedarray[, dtype] )
+    Creates a typed array from another typed array.
+
+    Parameters
+    ----------
+    typedarray: TypedArray
+        Typed array from which to generate another typed array.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray
+        A typed array.
+
+    Examples
+    --------
+    > var arr1 = {{alias}}( [ 0.5, 0.5, 0.5 ] );
+    > var arr2 = {{alias}}( arr1, 'float32' )
+    <Float32Array>[ 0.5, 0.5, 0.5 ]
+
+
+{{alias}}( obj[, dtype] )
+    Creates a typed array from an array-like object or iterable.
+
+    Parameters
+    ----------
+    obj: Object
+        Array-like object or iterable from which to generate a typed array.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray
+        A typed array.
+
+    Examples
+    --------
+    > var arr1 = [ 0.5, 0.5, 0.5 ];
+    > var arr2 = {{alias}}( arr1, 'float32' )
+    <Float32Array>[ 0.5, 0.5, 0.5 ]
+
+
+{{alias}}( buffer[, byteOffset[, length]][, dtype] )
+    Returns a typed array view of an ArrayBuffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the first typed array
+        element. Default: 0.
+
+    length: integer (optional)
+        View length. If not provided, the view spans from the byteOffset to
+        the end of the underlying ArrayBuffer.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray
+        A typed array.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 16 );
+    > var arr = {{alias}}( buf, 0, 4, 'float32' )
+    <Float32Array>[ 0.0, 0.0, 0.0, 0.0 ]
+
+    See Also
+    --------
+
