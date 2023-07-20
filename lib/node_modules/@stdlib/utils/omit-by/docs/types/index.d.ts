@@ -31,7 +31,7 @@ type Nullary = () => boolean;
 * @param key - iteration key
 * @returns boolean indicating whether an iterated property passes a test
 */
-type Unary = ( key: any ) => boolean;
+type Unary<K> = ( key: K ) => boolean;
 
 /**
 * Checks whether an iterated property passes a test.
@@ -40,7 +40,7 @@ type Unary = ( key: any ) => boolean;
 * @param value - property value
 * @returns boolean indicating whether an iterated property passes a test
 */
-type Binary = ( key: any, value: any ) => boolean;
+type Binary<K, V> = ( key: K, value: V ) => boolean;
 
 /**
 * Checks whether an iterated value passes a test.
@@ -49,7 +49,7 @@ type Binary = ( key: any, value: any ) => boolean;
 * @param value - property value
 * @returns boolean indicating whether an iterated property passes a test
 */
-type Predicate = Nullary | Unary | Binary;
+type Predicate<K, V> = Nullary | Unary<K> | Binary<K, V>;
 
 /**
 * Returns a partial object copy excluding properties for which a predicate returns a truthy value.
@@ -76,7 +76,10 @@ type Predicate = Nullary | Unary | Binary;
 * var obj2 = omitBy( obj1, predicate );
 * // returns { 'a': 1 }
 */
-declare function omitBy( obj: any, predicate: Predicate ): Object;
+declare function omitBy<T extends object>(
+	obj: T,
+	predicate: Predicate<keyof T, T[keyof T]>
+): Partial<T>;
 
 
 // EXPORTS //

@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Checks whether an iteration number passes a test.
@@ -51,7 +51,7 @@ type Predicate = ( i: number ) => boolean;
 *
 * whilst( predicate, beep );
 */
-declare function whilst( fcn: Function, predicate: Predicate, thisArg?: any ): void; // tslint:disable-line: max-line-length
+declare function whilst<T extends Function>( predicate: Predicate, fcn: T, thisArg?: ThisParameterType<T> ): void; // tslint:disable-line: max-line-length
 
 
 // EXPORTS //
