@@ -1,79 +1,78 @@
 {
-    "options": {
-        "task": "build"
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
     },
-    "fields": [
-        {
-            "field": "src",
-            "resolve": true,
-            "relative": true
-        },
-        {
-            "field": "include",
-            "resolve": true,
-            "relative": true
-        },
-        {
-            "field": "libraries",
-            "resolve": false,
-            "relative": false
-        },
-        {
-            "field": "libpath",
-            "resolve": true,
-            "relative": false
-        }
-    ],
-    "confs": [
-        {
-          "task": "build",
-          "src": [
-            "./src/main.c"
-          ],
-          "include": [
-            "./include"
-          ],
-          "libraries": [],
-          "libpath": [],
-          "dependencies": [
-            "@stdlib/math/base/napi/unary",
-            "@stdlib/complex/float64",
-            "@stdlib/complex/reim",
-            "@stdlib/math/base/special/cabs"
-          ]
-        },
-        {
-          "task": "benchmark",
-          "src": [
-            "./src/main.c"
-          ],
-          "include": [
-            "./include"
-          ],
-          "libraries": [],
-          "libpath": [],
-          "dependencies": [
-            "@stdlib/complex/float64",
-            "@stdlib/complex/reim",
-            "@stdlib/math/base/special/cabs"
-          ]
-        },
-        {
-          "task": "examples",
-          "src": [
-            "./src/main.c"
-          ],
-          "include": [
-            "./include"
-          ],
-          "libraries": [],
-          "libpath": [],
-          "dependencies": [
-            "@stdlib/complex/float64",
-            "@stdlib/complex/reim",
-            "@stdlib/math/base/special/cabs"
-          ]
-        }
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/complex/float64",
+        "@stdlib/complex/reim",
+        "@stdlib/math/base/special/cabs"
       ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64",
+        "@stdlib/complex/reim",
+        "@stdlib/math/base/special/cabs"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64",
+        "@stdlib/complex/reim",
+        "@stdlib/math/base/special/cabs"
+      ]
+    }
+  ]
 }
-
