@@ -1,0 +1,34 @@
+
+{{alias}}( x, shape, colexicographic )
+    Flattens an n-dimensional nested array.
+
+    The function assumes that all nested arrays have the same length (i.e., the
+    input array is *not* a ragged array).
+
+    Parameters
+    ----------
+    x: Array
+        Input array.
+
+    shape: Array<integer>
+        Array shape.
+
+    colexicographic: boolean
+        Specifies whether to flatten array values in colexicographic order.
+
+    Returns
+    -------
+    out: Array
+        Flattened array.
+
+    Examples
+    --------
+    > var x = [ [ 1, 2 ], [ 3, 4 ] ];
+    > var out = {{alias}}( x, [ 2, 2 ], false )
+    [ 1, 2, 3, 4 ]
+    > out = {{alias}}( x, [ 2, 2 ], true )
+    [ 1, 3, 2, 4 ]
+
+    See Also
+    --------
+
