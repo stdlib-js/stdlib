@@ -1,78 +1,78 @@
 {
-    "options": {
-        "task": "build"
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
     },
-    "fields": [
-        {
-            "field": "src",
-            "resolve": true,
-            "relative": true
-        },
-        {
-            "field": "include",
-            "resolve": true,
-            "relative": true
-        },
-        {
-            "field": "libraries",
-            "resolve": false,
-            "relative": false
-        },
-        {
-            "field": "libpath",
-            "resolve": true,
-            "relative": false
-        }
-    ],
-    "confs": [
-        {
-          "task": "build",
-          "src": [
-            "./src/main.c"
-          ],
-          "include": [
-            "./include"
-          ],
-          "libraries": [],
-          "libpath": [],
-          "dependencies": [
-            "@stdlib/math/base/napi/binary",
-            "@stdlib/complex/float64",
-            "@stdlib/complex/reim",
-            "@stdlib/math/base/assert/is-negative-zero"
-          ]
-        },
-        {
-          "task": "benchmark",
-          "src": [
-            "./src/main.c"
-          ],
-          "include": [
-            "./include"
-          ],
-          "libraries": [],
-          "libpath": [],
-          "dependencies": [
-            "@stdlib/complex/float64",
-            "@stdlib/complex/reim",
-            "@stdlib/math/base/assert/is-negative-zero"
-          ]
-        },
-        {
-          "task": "examples",
-          "src": [
-            "./src/main.c"
-          ],
-          "include": [
-            "./include"
-          ],
-          "libraries": [],
-          "libpath": [],
-          "dependencies": [
-            "@stdlib/complex/float64",
-            "@stdlib/complex/reim",
-            "@stdlib/math/base/assert/is-negative-zero"
-          ]
-        }
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/complex/float64",
+        "@stdlib/complex/reim",
+        "@stdlib/math/base/assert/is-negative-zero"
       ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64",
+        "@stdlib/complex/reim",
+        "@stdlib/math/base/assert/is-negative-zero"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64",
+        "@stdlib/complex/reim",
+        "@stdlib/math/base/assert/is-negative-zero"
+      ]
+    }
+  ]
 }

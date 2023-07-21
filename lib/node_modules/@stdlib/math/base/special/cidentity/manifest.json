@@ -44,33 +44,32 @@
     {
       "task": "benchmark",
       "src": [
-          "./src/main.c"
+        "./src/main.c"
       ],
       "include": [
-          "./include"
+        "./include"
       ],
       "libraries": [],
       "libpath": [],
       "dependencies": [
-          "@stdlib/complex/float64",
-          "@stdlib/complex/reim"
+        "@stdlib/complex/float64",
+        "@stdlib/complex/reim"
       ]
     },
     {
       "task": "examples",
       "src": [
-          "./src/main.c"
+        "./src/main.c"
       ],
       "include": [
-          "./include"
+        "./include"
       ],
       "libraries": [],
       "libpath": [],
       "dependencies": [
-          "@stdlib/complex/float64",
-          "@stdlib/complex/reim"
+        "@stdlib/complex/float64",
+        "@stdlib/complex/reim"
       ]
     }
   ]
 }
-

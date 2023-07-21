@@ -60,7 +60,7 @@ The namespace contains the following functions:
 -   <span class="signature">[`forEach( str, clbk[, thisArg ] )`][@stdlib/string/base/for-each]</span><span class="delimiter">: </span><span class="description">invokes a function for each UTF-16 code unit in a string.</span>
 -   <span class="signature">[`formatInterpolate( tokens, ...args )`][@stdlib/string/base/format-interpolate]</span><span class="delimiter">: </span><span class="description">generate string from a token array by interpolating values.</span>
 -   <span class="signature">[`formatTokenize( str )`][@stdlib/string/base/format-tokenize]</span><span class="delimiter">: </span><span class="description">tokenize a string into an array of string parts and format identifier objects.</span>
--   <span class="signature">[`headercase( str )`][@stdlib/string/base/headercase]</span><span class="delimiter">: </span><span class="description">convert a string to Header case.</span>
+-   <span class="signature">[`headercase( str )`][@stdlib/string/base/headercase]</span><span class="delimiter">: </span><span class="description">convert a string to HTTP header case.</span>
 -   <span class="signature">[`invcase( str )`][@stdlib/string/base/invcase]</span><span class="delimiter">: </span><span class="description">convert a string to inverse case.</span>
 -   <span class="signature">[`kebabcase( str )`][@stdlib/string/base/kebabcase]</span><span class="delimiter">: </span><span class="description">convert a string to kebab case.</span>
 -   <span class="signature">[`lpad( str, len, pad )`][@stdlib/string/base/left-pad]</span><span class="delimiter">: </span><span class="description">left pad a string.</span>
