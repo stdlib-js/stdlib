@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,19 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+#ifndef STDLIB_MATH_BASE_SPECIAL_CINV_H
+#define STDLIB_MATH_BASE_SPECIAL_CINV_H
 
-var Complex128 = require( '@stdlib/complex/float64' );
-var uniform = require( '@stdlib/random/base/uniform' );
-var cinv = require( './../lib' );
+#include "stdlib/complex/float64.h"
 
-var z1;
-var z2;
-var i;
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-for ( i = 0; i < 100; i++ ) {
-	z1 = new Complex128( uniform( -50.0, 50.0 ), uniform( -50.0, 50.0 ) );
-	z2 = cinv( z1 );
+/**
+* Computes the inverse of a double-precision complex floating-point number.
+*/
+stdlib_complex128_t stdlib_base_cinv( const stdlib_complex128_t z );
 
-	console.log( '1.0 / (%s) = %s', z1.toString(), z2.toString() );
+#ifdef __cplusplus
 }
+#endif
+
+#endif // !STDLIB_MATH_BASE_SPECIAL_CINV_H

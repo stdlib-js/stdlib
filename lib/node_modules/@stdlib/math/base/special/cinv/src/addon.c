@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,19 +16,8 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/cinv.h"
+#include "stdlib/math/base/napi/unary.h"
 
-var Complex128 = require( '@stdlib/complex/float64' );
-var uniform = require( '@stdlib/random/base/uniform' );
-var cinv = require( './../lib' );
-
-var z1;
-var z2;
-var i;
-
-for ( i = 0; i < 100; i++ ) {
-	z1 = new Complex128( uniform( -50.0, 50.0 ), uniform( -50.0, 50.0 ) );
-	z2 = cinv( z1 );
-
-	console.log( '1.0 / (%s) = %s', z1.toString(), z2.toString() );
-}
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_Z_Z( stdlib_base_cinv )
