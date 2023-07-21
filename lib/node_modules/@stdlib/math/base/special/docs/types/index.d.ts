@@ -1597,19 +1597,43 @@ interface Namespace {
 	cceiln: typeof cceiln;
 
 	/**
-	* Computes the cis function of a complex number.
+	* Evaluates the cis function for a double-precision complex floating-point number.
 	*
-	* @param re - real component
-	* @param im - imaginary component
-	* @returns real and imaginary components
-	*
-	* @example
-	* var v = ns.ccis( 0.0, 0.0 );
-	* // returns [ 1.0, 0.0 ]
+	* @param z - complex number
+	* @returns result
 	*
 	* @example
-	* var v = ns.ccis( 1.0, 0.0 );
-	* // returns [ ~0.540, ~0.841 ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var z = new Complex128( 0.0, 0.0 );
+	* // returns <Complex128>
+	*
+	* var out = cccis( z );
+	* // returns <Complex128>
+	*
+	* var re = real( out );
+	* // returns 1.0
+	*
+	* var im = imag( out );
+	* // returns 0.0
+	* @example
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var z = new Complex128( 1.0, 0.0 );
+	* // returns <Complex128>
+	*
+	* var out = cccis( z );
+	* // returns <Complex128>
+	*
+	* var re = real( out );
+	* // returns ~0.540
+	*
+	* var im = imag( out );
+	* // returns ~0.841
 	*/
 	ccis: typeof ccis;
 
@@ -1947,15 +1971,24 @@ interface Namespace {
 	cidentityf: typeof cidentityf;
 
 	/**
-	* Computes the inverse of a complex number.
+	* Computes the inverse of a double-precision complex floating-point number.
 	*
-	* @param re - real component
-	* @param im - imaginary component
-	* @returns real and imaginary components
+	* @param z - input value
+	* @returns result
 	*
 	* @example
-	* var v = ns.cinv( 2.0, 4.0 );
-	* // returns [ 0.1, -0.2 ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var v = ns.cinv( new Complex128( 2.0, 4.0 ) );
+	* // returns <Complex128>
+	*
+	* var re = real( v );
+	* // returns 0.1
+	*
+	* var im = imag( v );
+	* // returns -0.2
 	*/
 	cinv: typeof cinv;
 
