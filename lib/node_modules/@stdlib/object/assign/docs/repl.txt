@@ -1,0 +1,31 @@
+{{alias}}( target, ...source )
+    Copies own enumerable properties from one or more source objects to a target
+    object.
+
+    If a property key is present in multiple sources, the property from the last
+    source that defines the key prevails.
+
+    The target object is mutated.
+
+    Parameters
+    ----------
+    target: Object
+        Target object.
+
+    source: ...Object
+        Source object(s).
+
+    Returns
+    -------
+    out: Object
+        Target object.
+
+    Examples
+    --------
+    > var obj1 = { 'name': 'John', 'age': 30 }
+    > var obj2 = { 'country': 'US', 'city': 'San Francisco' }
+    > var result = {{alias}}( obj1, obj2 )
+    { 'name': 'John', 'age': 30, 'country': 'US', 'city': 'San Francisco' }
+
+    See Also
+    --------
