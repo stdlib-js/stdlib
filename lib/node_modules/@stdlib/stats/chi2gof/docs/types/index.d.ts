@@ -83,14 +83,14 @@ interface Results {
 	method: string;
 
 	/**
-	* Prints formatted output.
+	* Serializes results as formatted test output.
 	*/
-	toString: Function;
+	toString: Function; // FIXME: provide better type
 
 	/**
 	* Serializes results as JSON.
 	*/
-	toJSON: Function;
+	toJSON: Function; // FIXME: provide better type
 }
 
 
@@ -116,7 +116,7 @@ interface Results {
 * var o = out.toJSON();
 * // returns { 'pValue': ~0.0406, 'statistic': ~9.9901, ... }
 */
-declare function chi2gof( x: NumericArray | ndarray, y: NumericArray | ndarray | string, ...args: Array<number | Options> ): Results; // tslint-disable-line max-line-length
+declare function chi2gof( x: NumericArray | ndarray, y: NumericArray | ndarray | string, ...args: Array<number | Options> ): Results;
 
 
 // EXPORTS //
