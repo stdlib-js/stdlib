@@ -4425,6 +4425,39 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 rules[ 'stdlib/section-headers' ] = 'error';
 
 /**
+* Ensure that a tape file starts with the expected test.
+*
+* @name tape-first-test
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* var tape = require( 'tape' );
+* var identity = require( './../lib' );
+*
+* tape( 'the function works correctly', function test( t ) {
+*     t.strictEqual( identity( true ), true, 'returns true' );
+*     t.end();
+* });
+*
+* @example
+* // Good...
+*
+* var tape = require( 'tape' );
+* var identity = require( './../lib' );
+*
+* tape( 'main export is a function', function test( t ) {
+*     t.ok( true, __filename );
+*     t.strictEqual( typeof identity, 'function', 'main export is a function' );
+*     t.end();
+* });
+*/
+rules[ 'stdlib/tape-first-test' ] = 'error';
+
+/**
 * Require parentheses around ternary conditions.
 *
 * @name ternary-condition-parentheses
