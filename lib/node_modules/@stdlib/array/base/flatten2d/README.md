@@ -78,7 +78,7 @@ y = flatten2d.assign( x, [ 2, 2 ], true, out, 1, 0 );
 
 ## Notes
 
--   The function assumes that all nested arrays have the same length (i.e., the input array is **not** a ragged array).
+-   Both functions assume that all nested arrays have the same length (i.e., the input array is **not** a ragged array).
 
 </section>
 
