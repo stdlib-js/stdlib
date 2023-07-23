@@ -30,7 +30,7 @@ import assign = require( './index' );
 {
 	const obj1 = { 'name': 'John' };
 	const obj2 = { 'country': 'US' };
-	assign( obj1, obj2 ); // $ExpectType object
+	assign( obj1, obj2 ); // $ExpectType { name: string; } & { country: string; }
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an object...
