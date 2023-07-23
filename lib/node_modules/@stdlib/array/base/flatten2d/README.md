@@ -52,7 +52,7 @@ var out = flatten2d( x, [ 2, 2 ], true );
 
 #### flatten2d.assign( x, shape, colexicographic, out, stride, offset )
 
-Flattens a two-dimensional nested array and assigns elements to a provide output array.
+Flattens a two-dimensional nested array and assigns elements to a provided output array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
