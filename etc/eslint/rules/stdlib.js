@@ -4427,7 +4427,7 @@ rules[ 'stdlib/section-headers' ] = 'error';
 /**
 * Ensure that a tape file starts with the expected test.
 *
-* @name tape-first-test
+* @name first-unit-test
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -4455,7 +4455,7 @@ rules[ 'stdlib/section-headers' ] = 'error';
 *     t.end();
 * });
 */
-rules[ 'stdlib/tape-first-test' ] = 'error';
+rules[ 'stdlib/first-unit-test' ] = 'error';
 
 /**
 * Require parentheses around ternary conditions.
