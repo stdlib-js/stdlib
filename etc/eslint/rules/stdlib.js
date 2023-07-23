@@ -1028,7 +1028,6 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -1203,7 +1202,6 @@ rules[ 'stdlib/jsdoc-linebreak-style' ] = [ 'error', 'unix' ];
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -1249,7 +1247,6 @@ rules[ 'stdlib/jsdoc-maximum-heading-length' ] = [ 'error', 80 ];
 * function beep() {
 *     return 'boop';
 * }
-*
 *
 * @example
 * // Good...
@@ -2007,7 +2004,6 @@ rules[ 'stdlib/jsdoc-no-duplicate-tags' ] = 'error';
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -2054,7 +2050,6 @@ rules[ 'stdlib/jsdoc-no-emphasis-as-heading' ] = 'error';
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -2100,7 +2095,6 @@ rules[ 'stdlib/jsdoc-no-empty-url' ] = 'error';
 * function beep() {
 *     return 'boop';
 * }
-*
 *
 * @example
 * // Good...
@@ -2152,7 +2146,6 @@ rules[ 'stdlib/jsdoc-no-heading-content-indent' ] = 'error';
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -2203,7 +2196,6 @@ rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -2253,7 +2245,6 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 * function beep() {
 *     return 'boop';
 * }
-*
 *
 * @example
 * // Good...
@@ -2346,7 +2337,6 @@ rules[ 'stdlib/jsdoc-no-html' ] = 'error';
 * function beep() {
 *     return 'boop';
 * }
-*
 *
 * @example
 * // Good...
@@ -2483,9 +2473,53 @@ rules[ 'stdlib/jsdoc-no-missing-blank-lines' ] = [ 'error', {
 }];
 
 /**
+* Disallow multiple blank lines in JSDoc comments.
+*
+* @name jsdoc-no-multiple-blank-lines
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* *
+* * @returns {string} a value
+* *
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-multiple-blank-lines' ] = 'error';
+
+/**
 * Allow multiple top-level headings.
 *
-* @name jsdoc-no-multiple-toplevel-heading
+* @name jsdoc-no-multiple-toplevel-headings
 * @memberof rules
 * @type {string}
 * @default 'off'
@@ -2540,7 +2574,6 @@ rules[ 'stdlib/jsdoc-no-multiple-toplevel-headings' ] = 'off';
 * function beep() {
 *     return 'boop';
 * }
-*
 *
 * @example
 * // Good...
@@ -3796,7 +3829,6 @@ rules[ 'stdlib/namespace-export-all' ] = 'warn';
 *
 * var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 *
-*
 * // MAIN //
 *
 * var ns = {};
@@ -3824,7 +3856,6 @@ rules[ 'stdlib/namespace-export-all' ] = 'warn';
 * // MODULES //
 *
 * var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
-*
 *
 * // MAIN //
 *
@@ -3969,12 +4000,10 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 *
 * // MAIN //
 *
-*
 * function xlogy( x, y ) {
 *   if ( x === 0.0 && !isnan( y ) ) {
 *     return 0.0;
 *   }
-*
 *
 *   return x * ln( y );
 * }
@@ -4027,7 +4056,6 @@ rules[ 'stdlib/no-builtin-math' ] = 'error';
 * var normal = require( '@stdlib/random/base/normal' );
 * var beta = require( '@stdlib/random/base/beta' );
 *
-*
 * // EXPORTS //
 *
 * module.exports = {
@@ -4040,14 +4068,12 @@ rules[ 'stdlib/no-builtin-math' ] = 'error';
 * var normal = require( '@stdlib/random/base/normal' );
 * var beta = require( '@stdlib/random/base/beta' );
 *
-*
 * // VARIABLES //
 *
 * var ns = {
 *     'normal': normal,
 *     'beta': beta
 * };
-*
 *
 * // EXPORTS //
 *
