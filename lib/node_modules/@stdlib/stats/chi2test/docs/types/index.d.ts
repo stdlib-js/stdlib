@@ -20,7 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { Collection } from '@stdlib/types/object';
+import { Matrix } from '@stdlib/types/ndarray';
 
 /**
 * Interface defining function options.
@@ -38,7 +39,7 @@ interface Options {
 }
 
 /**
-* Test result.
+* Test result object.
 */
 interface Results {
 	/**
@@ -67,9 +68,9 @@ interface Results {
 	df: number;
 
 	/**
-	* Expected cell counts.
+	* Expected frequencies.
 	*/
-	expected: ndarray;
+	expected: Matrix<number>;
 
 	/**
 	* Name of test.
@@ -77,29 +78,32 @@ interface Results {
 	method: string;
 
 	/**
-	* Function to print formatted output.
+	* Serializes results as formatted test output.
 	*/
-	print: Function;
+	toString: Function; // FIXME: provide better type
+
+	/**
+	* Serializes results as JSON.
+	*/
+	toJSON: Function; // FIXME: provide better type
 }
 
 /**
 * Performs a chi-square independence test.
 *
-* @param x - two-way table of cell counts
+* @param x - two-way table of observed frequencies
 * @param options - function options
-* @param options.alpha - significance level (default: 0.05)
-* @param options.correct - boolean indicating whether to use Yates' continuity correction when provided a 2x2 contingency table (default: true)
-* @throws first argument must be an array of arrays or ndarray-like object with dimension two
 * @returns test results
 *
 * @example
-*
-* @example
 * var x = [ [ 20, 30 ], [ 30, 20 ] ];
+*
 * var out = chi2test( x );
+*
+* var o = out.toJSON();
 * // returns { 'rejected': false, 'alpha': 0.05, 'pValue': ~0.072, ... }
 */
-declare function chi2test( x: ndarray | Array<Array<number>>, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function chi2test( x: Matrix<number> | Array<Collection<number>>, options?: Options ): Results;
 
 
 // EXPORTS //
