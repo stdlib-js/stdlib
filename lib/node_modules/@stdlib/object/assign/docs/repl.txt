@@ -22,8 +22,8 @@
 
     Examples
     --------
-    > var obj1 = { 'name': 'John', 'age': 30 }
-    > var obj2 = { 'country': 'US', 'city': 'San Francisco' }
+    > var obj1 = { 'name': 'John', 'age': 30 };
+    > var obj2 = { 'country': 'US', 'city': 'San Francisco' };
     > var result = {{alias}}( obj1, obj2 )
     { 'name': 'John', 'age': 30, 'country': 'US', 'city': 'San Francisco' }
 

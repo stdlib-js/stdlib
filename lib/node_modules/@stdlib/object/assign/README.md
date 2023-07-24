@@ -54,6 +54,9 @@ var y = {
 
 var z = assign( x, y );
 
+var v = z.b;
+// returns 'boop'
+
 var bool = ( z === x );
 // returns true
 ```
