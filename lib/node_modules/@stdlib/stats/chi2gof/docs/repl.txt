@@ -88,7 +88,7 @@
         Test name.
 
     out.toString: Function
-        Prints formatted output.
+        Serializes results as formatted output.
 
     out.toJSON: Function
         Serializes results as JSON.
