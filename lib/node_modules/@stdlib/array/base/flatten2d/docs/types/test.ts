@@ -175,14 +175,14 @@ import flatten2d = require( './index' );
 	const x = [ [ 1, 2 ], [ 3, 4 ] ];
 	const out = [ 0, 0, 0, 0 ];
 
-	flatten2d.assign( x, [ 2, 2 ], false, out, 1, '1'; // $ExpectError
-	flatten2d.assign( x, [ 2, 2 ], false, out, 1, true; // $ExpectError
-	flatten2d.assign( x, [ 2, 2 ], false, out, 1, false; // $ExpectError
-	flatten2d.assign( x, [ 2, 2 ], false, out, 1, null; // $ExpectError
-	flatten2d.assign( x, [ 2, 2 ], false, out, 1, void 0; // $ExpectError
-	flatten2d.assign( x, [ 2, 2 ], false, out, 1, {}; // $ExpectError
-	flatten2d.assign( x, [ 2, 2 ], false, out, 1, []; // $ExpectError
-	flatten2d.assign( x, [ 2, 2 ], false, out, 1, ( x: number ): number => x; // $ExpectError
+	flatten2d.assign( x, [ 2, 2 ], false, out, 1, '1' ); // $ExpectError
+	flatten2d.assign( x, [ 2, 2 ], false, out, 1, true ); // $ExpectError
+	flatten2d.assign( x, [ 2, 2 ], false, out, 1, false ); // $ExpectError
+	flatten2d.assign( x, [ 2, 2 ], false, out, 1, null ); // $ExpectError
+	flatten2d.assign( x, [ 2, 2 ], false, out, 1, void 0 ); // $ExpectError
+	flatten2d.assign( x, [ 2, 2 ], false, out, 1, {} ); // $ExpectError
+	flatten2d.assign( x, [ 2, 2 ], false, out, 1, [] ); // $ExpectError
+	flatten2d.assign( x, [ 2, 2 ], false, out, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
