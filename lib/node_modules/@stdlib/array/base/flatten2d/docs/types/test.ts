@@ -193,6 +193,7 @@ import flatten2d = require( './index' );
 	flatten2d.assign(); // $ExpectError
 	flatten2d.assign( x ); // $ExpectError
 	flatten2d.assign( x, [ 2, 2 ] ); // $ExpectError
+	flatten2d.assign( x, [ 2, 2 ], false ); // $ExpectError
 	flatten2d.assign( x, [ 2, 2 ], false, out ); // $ExpectError
 	flatten2d.assign( x, [ 2, 2 ], false, out, 1 ); // $ExpectError
 	flatten2d.assign( x, [ 2, 2 ], false, out, 1, 0, {} ); // $ExpectError
