@@ -157,7 +157,7 @@
             done
 
             # Format coverage as Markdown table row:
-            table_body=`echo $coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/; s/\]/|/'`
+            table_body=`echo $coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/; s/\]/|/g'`
             table_header="| Package | Statements | Branches | Functions | Lines |\n| --------- | ------------ | ---------- | ----------- | ----- |"
             table="${table_header}${table_body}"
 
