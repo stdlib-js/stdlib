@@ -29,6 +29,52 @@
     > out = {{alias}}( x, [ 2, 1, 2 ], true )
     [ 1, 3, 2, 4 ]
 
+
+{{alias}}.assign( x, shape, colexicographic, out, stride, offset )
+    Flattens a three-dimensional nested array and assigns elements to a provided
+    output array.
+
+    The function assumes that all nested arrays have the same length (i.e., the
+    input array is *not* a ragged array).
+
+    Parameters
+    ----------
+    x: Array
+        Input array.
+
+    shape: Array<integer>
+        Array shape.
+
+    colexicographic: boolean
+        Specifies whether to flatten array values in colexicographic order.
+
+    out: Collection
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var x = [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ];
+    > var out = [ 0, 0, 0, 0 ];
+    > var v = {{alias}}.assign( x, [ 2, 1, 2 ], false, out, 1, 0 )
+    [ 1, 2, 3, 4 ]
+    > var bool = ( v === out )
+    true
+    > out = [ 0, 0, 0, 0 ];
+    > {{alias}}.assign( x, [ 2, 1, 2 ], true, out, 1, 0 );
+    > out
+    [ 1, 3, 2, 4 ]
+
     See Also
     --------
 
