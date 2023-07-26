@@ -3993,6 +3993,36 @@ rules[ 'stdlib/new-cap-regexp' ] = 'error';
 rules[ 'stdlib/no-dynamic-require' ] = 'error';
 
 /**
+* Require that comments are not empty.
+*
+* @name no-empty-comments
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* function square( x ) {
+*     var out;
+*
+*     //
+*     out = x*x;
+*     return out;
+* }
+*
+* @example
+* // Good...
+* function square( x ) {
+*     var out;
+*
+*     // Square the number:
+*     out = x*x;
+*     return out;
+* }
+*/
+rules[ 'stdlib/no-empty-comments' ] = 'error';
+
+/**
 * Enforce that `require()` expressions are not immediately invoked.
 *
 * @name no-immediate-require
