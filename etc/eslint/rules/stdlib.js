@@ -2786,6 +2786,48 @@ rules[ 'stdlib/jsdoc-no-shortcut-reference-image' ] = 'error';
 rules[ 'stdlib/jsdoc-no-shortcut-reference-link' ] = 'error';
 
 /**
+* Prevent space-aligned asterisks for JSDoc comments.
+*
+* @name
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+*  * Beep boop.
+*  *
+*  * @returns {string} a value
+*  *
+*  * @example
+*  * var str = beep();
+*  * // returns 'boop'
+*  *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep boop.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-space-aligned-asterisks' ] = 'error';
+
+/**
 * Prevent unnecessary indentation before tables.
 *
 * @name jsdoc-no-table-indentation
