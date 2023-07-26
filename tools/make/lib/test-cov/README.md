@@ -65,6 +65,21 @@ The command supports the following environment variables:
 $ make test-cov TESTS_FILTER='.*/blas/base/dasum/.*'
 ```
 
+#### test-cov-files
+
+Runs a specified list of files containing unit tests and generates a test coverage report.
+
+<!-- run-disable -->
+
+```bash
+$ make test-cov-files FILES='/foo/test.js /bar/test.js'
+```
+
+The command supports the following environment variables:
+
+-   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+-   **FILES**: list of test file paths.
+
 #### view-cov
 
 Opens an HTML test coverage report in a local web browser.
@@ -109,6 +124,21 @@ The command supports the following environment variables:
 ```bash
 $ make test-javascript-cov TESTS_FILTER='.*/blas/base/dasum/.*'
 ```
+
+#### test-javascript-cov-files
+
+Runs a specified list of files containing JavaScript unit tests and generates a test coverage report.
+
+<!-- run-disable -->
+
+```bash
+$ make test-javascript-cov-files FILES='/foo/test.js /bar/test.js'
+```
+
+The command supports the following environment variables:
+
+-   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+-   **FILES**: list of test file paths.
 
 #### view-javascript-cov
 

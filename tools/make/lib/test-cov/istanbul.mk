@@ -262,3 +262,35 @@ clean-istanbul-instrument:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(COVERAGE_INSTRUMENTATION_DIR)
 
 .PHONY: clean-istanbul-instrument
+
+#/
+# Runs unit tests and generates a test coverage report for a list of JavaScript test files.
+#
+# @param {string} [FILES] - space-separated list of JavaScript test files
+# @param {*} [FAST_FAIL] - flag indicating whether to stop running tests upon encountering a test failure
+#
+# @private
+#
+# @example
+# make test-istanbul-files FILES='./lib/foo.js ./lib/bar.js'
+#/
+test-istanbul-files: $(NODE_MODULES) test-istanbul-instrument
+	$(QUIET) $(MKDIR_RECURSIVE) $(COVERAGE_DIR)
+	$(QUIET) $(MAKE_EXECUTABLE) $(COVERAGE_REPORT_NAME)
+	$(QUIET) for file in $(FILES); do \
+		test_dir=$(ISTANBUL_INSTRUMENT_OUT)/$$(dirname $$file); \
+		echo ''; \
+		echo "Running tests for file: $$file"; \
+		echo ''; \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
+		TEST_MODE=coverage \
+		$(ISTANBUL_TEST_RUNNER) \
+			$(ISTANBUL_TEST_RUNNER_FLAGS) \
+			--output $$($(COVERAGE_REPORT_NAME) $(ISTANBUL_INSTRUMENT_OUT) $$test_dir $(COVERAGE_DIR)) \
+			"$$test_dir/**/$(basename $$file)" \
+		| $(TAP_REPORTER) || exit 1; \
+	done
+	$(QUIET) $(MAKE) -f $(this_file) test-istanbul-report
+
+.PHONY: test-istanbul-files

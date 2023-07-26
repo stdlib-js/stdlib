@@ -62,3 +62,16 @@ view-cov: view-javascript-cov
 clean-cov: clean-javascript-cov
 
 .PHONY: clean-cov
+
+#/
+# Runs a specified list of files containing unit tests and generates a test coverage report.
+#
+# @param {string} FILES - list of test file paths
+# @param {*} [FAST_FAIL] - flag indicating whether to stop running tests upon encountering a test failure
+#
+# @example
+# make test-cov-files FILES='/foo/test.js /bar/test.js'
+#/
+test-cov-files: test-javascript-cov-files
+
+.PHONY: test-cov-files

@@ -114,3 +114,40 @@ view-c8-report:
 	$(QUIET) $(OPEN) $(C8_HTML_REPORT)
 
 .PHONY: view-c8-report
+
+#/
+# Runs specified unit tests and generates a test coverage report.
+#
+# ## Notes
+#
+# -   Raw TAP output is piped to a TAP reporter.
+# -   This command is useful when wanting to specify JavaScript test files.
+#
+#
+# @private
+# @param {string} [FILES] - space separated list of test files
+# @param {*} [FAST_FAIL] - flag indicating whether to stop running tests upon encountering a test failure
+#
+# @example
+# make test-c8-files FILES="test/one.js test/two.js"
+#/
+test-c8-files: $(NODE_MODULES)
+ifeq ($(FAIL_FAST), true)
+	$(foreach file, $(FILES), \
+		echo "Running test: $(file)"; \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
+		TEST_MODE=coverage \
+		$(C8) $(C8_FLAGS) $(NODE) $(file) | $(TAP_REPORTER) || exit 1; \
+	)
+else
+	$(foreach file, $(FILES), \
+		echo "Running test: $(file)"; \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
+		TEST_MODE=coverage \
+		$(C8) $(C8_FLAGS) $(NODE) $(file) | $(TAP_REPORTER) || echo 'Tests failed.'; \
+	)
+endif
+
+.PHONY: test-c8-files
