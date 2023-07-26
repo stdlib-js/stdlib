@@ -18,7 +18,7 @@
 
 # Script to calculate package test coverage for a given list of changed files.
 #
-# Usage: run_affected_tests_coverage file1 [file2 file3 ...]
+# Usage: run_tests_coverage file1 [file2 file3 ...]
 #
 # Arguments:
 #

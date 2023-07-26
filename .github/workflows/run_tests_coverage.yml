@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-  name: run_affected_tests_coverage.yml
+  name: run_tests_coverage.yml
 
   # Workflow triggers:
   on:
@@ -48,7 +48,7 @@
     workflow_dispatch:
       inputs:
         directories:
-          description: 'List of changed directories for which to run affected tests (space separated):'
+          description: 'List of changed directories for which to run tests (space separated):'
 
   # Workflow jobs:
   jobs:
@@ -57,7 +57,7 @@
     coverage:
 
       # Define a display name:
-      name: 'Calculate test coverage for affected packages'
+      name: 'Calculate test coverage for packages'
 
       # Define the type of virtual host machine:
       runs-on: ubuntu-latest
@@ -133,7 +133,7 @@
             else
               directories="${{ steps.changed-directories.outputs.directories }}"
             fi
-            . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_tests_coverage" "$directories"
+            . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage" "$directories"
           timeout-minutes: 30
 
         # Extract coverage values and assign to output:
