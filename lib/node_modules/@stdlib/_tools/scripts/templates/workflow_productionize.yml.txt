@@ -349,7 +349,7 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v1
+        uses: act10ns/slack@v2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -520,7 +520,7 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v1
+        uses: act10ns/slack@v2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -697,7 +697,7 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v1
+        uses: act10ns/slack@v2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}

@@ -75,7 +75,7 @@ jobs:
 
       # Send Slack notification if job fails:
       - name: 'Send notification to Slack in case of failure'
-        uses: act10ns/slack@v1
+        uses: act10ns/slack@v2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
