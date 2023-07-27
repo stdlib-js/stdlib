@@ -73,6 +73,6 @@ list-lib-pkgs:
 # make list-random-lib-pkgs RANDOM_SELECTION_SIZE=10
 #/
 list-random-lib-pkgs:
-	$(QUIET) make list-lib-pkgs | shuf -n $(RANDOM_SELECTION_SIZE)
+	$(QUIET) output=$$(make list-lib-pkgs); echo "$$output" | shuf -n $(RANDOM_SELECTION_SIZE)
 
 .PHONY: list-random-lib-pkgs
