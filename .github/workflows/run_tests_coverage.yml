@@ -40,11 +40,31 @@
 
         # List paths for which changes should *not* trigger this workflow:
         - '!lib/**/_tools/**'
+
     pull_request:
       types:
         - opened
         - synchronize
         - reopened
+      paths:
+        # List paths for which changes should trigger this workflow:
+        - 'lib/**/bin/**'
+        - 'lib/**/data/**'
+        - 'lib/**/etc/**'
+        - 'lib/**/include/**'
+        - 'lib/**/lib/**'
+        - 'lib/**/src/**'
+        - 'lib/**/test/**'
+
+        - 'lib/**/*.gyp'
+        - 'lib/**/*.gypi'
+        - 'lib/**/manifest.json'
+
+        - 'package.json'
+
+        # List paths for which changes should *not* trigger this workflow:
+        - '!lib/**/_tools/**'
+
     workflow_dispatch:
       inputs:
         directories:
@@ -146,7 +166,8 @@
               directories="${{ steps.changed-directories.outputs.directories }}"
             fi
             directories=$(echo "${directories}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
-            directories=$(echo "${directories}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|src|test)\/?$//' | uniq)
+            directories=$(echo "${directories}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|src|test)(\/.*)?$//')
+            directories=$(echo "${directories}" | uniq)
 
             # For each package, extract coverage value from the respective coverage report:
             coverage=''
