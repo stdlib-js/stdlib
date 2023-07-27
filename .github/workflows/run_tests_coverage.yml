@@ -174,9 +174,9 @@
             for package in $directories; do
               pkg=`echo $package | sed -E 's/^.*stdlib\///'`
               pkg_cov=`cat reports/coverage/lcov-report/$pkg/lib/index.html | grep "fraction" | grep -oP '\d+/\d+' | printf %s "$(cat)" | jq -R -s -c 'split("\n")'`
-              pkg_url="https://github.com/${{ github.repository }}/tree/${{ github.ref }}/$pkg"
-              pkg_md_link="[$pkg]($pkg_url)"
-              coverage="$coverage\n| $pkg_md_link $pkg_cov"
+              pkg_url="https://github.com/${{ github.repository }}/tree/${{ github.ref }}/$package"
+              pkg_link="<a href="$pkg_url">$pkg</a>"
+              coverage="$coverage\n| $pkg_link $pkg_cov"
             done
 
             # Format coverage as Markdown table row:
