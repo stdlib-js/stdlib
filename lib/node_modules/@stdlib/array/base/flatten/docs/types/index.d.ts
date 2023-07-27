@@ -78,6 +78,70 @@ type Array10D<T> = Array<Array9D<T>>;
 type ArrayND<T> = Array1D<T> | Array2D<T> | Array3D<T> | Array4D<T> | Array5D<T> | Array6D<T> | Array7D<T> | Array8D<T> | Array9D<T> | Array10D<T>; // WARNING: arbitrarily limited to 10 dimensions, which should be fine for most practical purposes
 
 /**
+* Interface describing `flatten`.
+*/
+interface Flatten {
+	/**
+	* Flattens an n-dimensional nested array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that all nested arrays have the same length (i.e., the input array is **not** a ragged array).
+	*
+	* @param x - input array
+	* @param shape - array shape
+	* @param colexicographic - specifies whether to flatten array values in colexicographic order
+	* @returns flattened array
+	*
+	* @example
+	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	*
+	* var out = flatten( x, [ 2, 2 ], false );
+	* // returns [ 1, 2, 3, 4 ]
+	*
+	* @example
+	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	*
+	* var out = flatten( x, [ 2, 2 ], true );
+	* // returns [ 1, 3, 2, 4 ]
+	*/
+	<T = unknown>( x: ArrayND<T>, shape: Collection<number>, colexicographic: boolean ): Array<T>;
+
+	/**
+	* Flattens an n-dimensional nested array and assigns elements to a provided output array.
+	*
+	* ## Notes
+	*
+	* -   The function assumes that all nested arrays have the same length (i.e., the input array is **not** a ragged array).
+	*
+	* @param x - input array
+	* @param shape - array shape
+	* @param colexicographic - specifies whether to flatten array values in colexicographic order
+	* @param out - output array
+	* @param stride - output array stride
+	* @param offset - output array index offset
+	* @returns output array
+	*
+	* @example
+	* var Float64Array = require( `@stdlib/array/float64` );
+	*
+	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	*
+	* var out = flatten.assign( x, [ 2, 2 ], false, new Float64Array( 4 ), 1, 0 );
+	* // returns <Float64Array>[ 1, 2, 3, 4 ]
+	*
+	* @example
+	* var Float64Array = require( `@stdlib/array/float64` );
+	*
+	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
+	*
+	* var out = flatten.assign( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0 );
+	* // returns <Float64Array>[ 1, 3, 2, 4 ]
+	*/
+	assign<T = unknown, U = unknown>( x: ArrayND<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
+}
+
+/**
 * Flattens an n-dimensional nested array.
 *
 * ## Notes
@@ -101,7 +165,7 @@ type ArrayND<T> = Array1D<T> | Array2D<T> | Array3D<T> | Array4D<T> | Array5D<T>
 * var out = flatten( x, [ 2, 2 ], true );
 * // returns [ 1, 3, 2, 4 ]
 */
-declare function flatten<T = unknown>( x: ArrayND<T>, shape: Collection<number>, colexicographic: boolean ): Array<T>;
+declare var flatten: Flatten;
 
 
 // EXPORTS //

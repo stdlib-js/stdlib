@@ -50,6 +50,26 @@ var out = flatten( x, [ 2, 2 ], true );
 // returns [ 1, 3, 2, 4 ]
 ```
 
+#### flatten.assign( x, shape, colexicographic, out, stride, offset )
+
+Flattens an n-dimensional nested array and assigns elements to a provided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var x = [ [ 1, 2 ], [ 3, 4 ] ];
+var out = new Float64Array( 4 );
+
+var y = flatten.assign( x, [ 2, 2 ], false, out, 1, 0 );
+// returns <Float64Array>[ 1, 2, 3, 4 ]
+
+var bool = ( y === out );
+// returns true
+
+y = flatten.assign( x, [ 2, 2 ], true, out, 1, 0 );
+// returns <Float64Array>[ 1, 3, 2, 4 ]
+```
+
 </section>
 
 <!-- /.usage -->
@@ -58,7 +78,7 @@ var out = flatten( x, [ 2, 2 ], true );
 
 ## Notes
 
--   The function assumes that all nested arrays have the same length (i.e., the input array is **not** a ragged array).
+-   Both functions assume that all nested arrays have the same length (i.e., the input array is **not** a ragged array).
 
 </section>
 
