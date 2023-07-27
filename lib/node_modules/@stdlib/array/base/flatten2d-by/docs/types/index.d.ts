@@ -66,7 +66,7 @@ type Ternary<T, U> = ( value: T, indices: Array<number>, arr: Array2D<T> ) => U;
 *
 * @param value - array element
 * @param indices - element indices
-* @param arry - input array
+* @param arr - input array
 * @returns result
 */
 type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
