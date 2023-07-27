@@ -184,7 +184,17 @@
             table_header="| Package | Statements | Branches | Functions | Lines |\n| --------- | ------------ | ---------- | ----------- | ----- |"
             table="${table_header}${table_body}"
 
-            report="## Coverage Report\n\n${table}"
+            if [ "${{ github.event_name }}" == "pull_request" ]; then
+              compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"
+              compare_txt="The above coverage report was generated for the [changes in this PR]($compare_url)."
+            else if [ "${{ github.event_name }}" == "push" ]; then
+              compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.before }}...${{ github.event.after }}"
+              compare_txt="The above coverage report was generated for the [changes in this push]($compare_url)."
+            else
+              compare_txt=""
+            fi
+
+            report="## Coverage Report\n\n${table}\n\n${compare_txt}"
             echo "report=$report" >> $GITHUB_OUTPUT
 
         # Post report as comment to PR:
