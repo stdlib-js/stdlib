@@ -57,7 +57,6 @@ interface Flatten2d {
 	*/
 	<T = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean ): Array<T>;
 
-
 	/**
 	* Flattens a two-dimensional nested array and assigns elements to a provided output array.
 	*
