@@ -44,8 +44,8 @@
 
 
 {{alias}}.assign( x, shape, colex, out, stride, offset, clbk[, thisArg] )
-    Flattens a two-dimensional nested array and assigns elements to a provided
-    output array.
+    Flattens a two-dimensional nested array according to a callback function
+    and assigns elements to a provided output array.
 
     The function assumes that all nested arrays have the same length (i.e., the
     input array is *not* a ragged array).
