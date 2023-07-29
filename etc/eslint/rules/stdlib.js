@@ -3993,7 +3993,7 @@ rules[ 'stdlib/new-cap-regexp' ] = 'error';
 rules[ 'stdlib/no-dynamic-require' ] = 'error';
 
 /**
-* Require that comments are not empty.
+* Disallow empty comments.
 *
 * @name no-empty-comments
 * @memberof rules
