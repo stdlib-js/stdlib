@@ -211,8 +211,17 @@
         - name: 'Checkout coverage repository'
           uses: actions/checkout@v3
           with:
+            # Code coverage repository:
             repository: 'stdlib-js/www-test-code-coverage'
-            path: './www-test-code-coverage' # Specify path to checkout to
+
+            # File path to checkout to:
+            path: './www-test-code-coverage'
+
+            # Specify whether to remove untracked files before checking out the repository:
+            clean: false
+
+            # Limit clone depth to the most recent commit:
+            fetch-depth: 1
 
         # Copy artifacts to the repository:
         - name: 'Copy artifacts to the repository'
@@ -229,5 +238,5 @@
             git config --local user.email "noreply@stdlib.io"
             git config --local user.name "stdlib-bot"
             git commit -m "Update artifacts"
-            git push "https://$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage"
+            git push "https://$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git"
 
