@@ -223,6 +223,9 @@
             # Limit clone depth to the most recent commit:
             fetch-depth: 1
 
+            # Token for accessing the repository:
+            token: ${{ secrets.REPO_GITHUB_TOKEN }}
+
         # Copy artifacts to the repository:
         - name: 'Copy artifacts to the repository'
           run: |
@@ -232,11 +235,12 @@
         - name: 'Commit and push changes'
           env:
             REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+            USER_NAME: stdlib-bot
           run: |
             cd ./www-test-code-coverage
             git add .
             git config --local user.email "noreply@stdlib.io"
             git config --local user.name "stdlib-bot"
             git commit -m "Update artifacts"
-            git push "https://$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git"
+            git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" main
 
