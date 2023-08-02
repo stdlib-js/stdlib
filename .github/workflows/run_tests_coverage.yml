@@ -214,12 +214,6 @@
             repository: 'stdlib-js/www-test-code-coverage'
             path: './www-test-code-coverage' # Specify path to checkout to
 
-        # Configure git:
-        - name: 'Configure git'
-          run: |
-            git config --local user.email "noreply@stdlib.io"
-            git config --local user.name "stdlib-bot"
-
         # Copy artifacts to the repository:
         - name: 'Copy artifacts to the repository'
           run: |
@@ -230,6 +224,8 @@
           run: |
             cd ./www-test-code-coverage
             git add .
+            git config --local user.email "noreply@stdlib.io"
+            git config --local user.name "stdlib-bot"
             git commit -m "Update artifacts"
             git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage"
 
