@@ -221,6 +221,8 @@
 
         # Commit and push changes:
         - name: 'Commit and push changes'
+          env:
+            GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
           run: |
             cd ./www-test-code-coverage
             git add .
