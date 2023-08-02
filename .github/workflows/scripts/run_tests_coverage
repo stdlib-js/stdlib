@@ -29,6 +29,8 @@
 #
 # Environment variables:
 #
+#   GITHUB_REPO    GitHub repository.
+#   GITHUB_REF     GitHub branch or tag.
 #   LOG_FILE       Log file.
 #
 
@@ -42,6 +44,12 @@ set -o pipefail
 
 # Get the list of changed files:
 changed="$*"
+
+# Get the GitHub repository:
+github_repo="${GITHUB_REPO}"
+
+# Get the GitHub branch or tag:
+github_ref="${GITHUB_REF}"
 
 # Get the path to a log file as the third argument to the build script:
 log_file="${LOG_FILE}"
@@ -121,15 +129,24 @@ main() {
 		exit 0
 	fi
 
-	# Find all test files in package directories:
-	files=$(find ${directories} -maxdepth 2 -wholename '**/test/test*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+	coverage=''
+	for package in ${directories}; do
+		make test-javascript-cov TESTS_FILTER=".*/${package}/.*"
 
-	# Exclude files residing in test fixtures directories:
-	files=$(echo "${files}" | grep -v '/fixtures/') || true
+		# For each package, extract coverage value from the respective coverage report:
+		pkg=`echo $package | sed -E 's/^.*stdlib\///'`
+		pkg_cov=`cat reports/coverage/lcov-report/$pkg/lib/index.html | grep "fraction" | grep -oP '\d+/\d+' | printf %s "$(cat)" | jq -R -s -c 'split("\n")'`
+		pkg_url="https://github.com/${github_repo}/tree/${github_ref}/${package}"
+		pkg_link="<a href="$pkg_url">$pkg</a>"
+		coverage="$coverage\n| $pkg_link $pkg_cov"
+	done
 
-	if [[ -n "${files}" ]]; then
-		make test-javascript-cov-files FILES="${files}"
-	fi
+	# Format coverage as Markdown table row:
+	table_body=`echo $coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/g; s/\]/|/g'`
+	table_header="| Package | Statements | Branches | Functions | Lines |\n| --------- | ------------ | ---------- | ----------- | ----- |"
+	table="${table_header}${table_body}"
+
+	echo "table=$table" >> $GITHUB_OUTPUT
 
 	cleanup
 	print_success

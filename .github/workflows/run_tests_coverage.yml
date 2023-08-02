@@ -147,6 +147,10 @@
 
         # Run JavaScript tests:
         - name: 'Run JavaScript tests'
+          id: extract-coverage
+          env:
+            GITHUB_REPO: ${{ github.repository }}
+            GITHUB_REF: ${{ github.ref }}
           run: |
             if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
               directories="${{ steps.changed-directories-user-input.outputs.directories }}"
@@ -156,38 +160,16 @@
             . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage" "$directories"
           timeout-minutes: 30
 
-        # Extract coverage values and assign to output:
-        - name: 'Extract coverage values and assign to output'
-          id: extract-coverage
+        # Create final coverage report:
+        - name: 'Create final coverage report'
+          id: create-report
           run: |
-            if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-              directories="${{ steps.changed-directories-user-input.outputs.directories }}"
-            else
-              directories="${{ steps.changed-directories.outputs.directories }}"
-            fi
-            directories=$(echo "${directories}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
-            directories=$(echo "${directories}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|src|test)(\/.*)?$//')
-            directories=$(echo "${directories}" | uniq)
-
-            # For each package, extract coverage value from the respective coverage report:
-            coverage=''
-            for package in $directories; do
-              pkg=`echo $package | sed -E 's/^.*stdlib\///'`
-              pkg_cov=`cat reports/coverage/lcov-report/$pkg/lib/index.html | grep "fraction" | grep -oP '\d+/\d+' | printf %s "$(cat)" | jq -R -s -c 'split("\n")'`
-              pkg_url="https://github.com/${{ github.repository }}/tree/${{ github.ref }}/$package"
-              pkg_link="<a href="$pkg_url">$pkg</a>"
-              coverage="$coverage\n| $pkg_link $pkg_cov"
-            done
-
-            # Format coverage as Markdown table row:
-            table_body=`echo $coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/g; s/\]/|/g'`
-            table_header="| Package | Statements | Branches | Functions | Lines |\n| --------- | ------------ | ---------- | ----------- | ----- |"
-            table="${table_header}${table_body}"
+            table="${{ steps.extract-coverage.outputs.table }}"
 
             if [ "${{ github.event_name }}" == "pull_request" ]; then
               compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"
               compare_txt="The above coverage report was generated for the [changes in this PR]($compare_url)."
-            else if [ "${{ github.event_name }}" == "push" ]; then
+            elif [ "${{ github.event_name }}" == "push" ]; then
               compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.before }}...${{ github.event.after }}"
               compare_txt="The above coverage report was generated for the [changes in this push]($compare_url)."
             else
@@ -208,7 +190,7 @@
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: '${{ steps.extract-coverage.outputs.report }}'
+                body: '${{ steps.create-report.outputs.report }}'
               })
 
         # Post report as comment to commit:
@@ -222,5 +204,5 @@
                 commit_sha: context.sha,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: '${{ steps.extract-coverage.outputs.report }}'
+                body: '${{ steps.create-report.outputs.report }}'
               })
