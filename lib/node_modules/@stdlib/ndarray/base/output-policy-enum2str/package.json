@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/ndarray/base/dtype-enum2str",
+  "name": "@stdlib/ndarray/base/output-policy-enum2str",
   "version": "0.0.0",
   "description": "Return the data type string associated with an ndarray data type enumeration constant.",
   "license": "Apache-2.0",
