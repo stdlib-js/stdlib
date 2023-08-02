@@ -222,12 +222,12 @@
         # Commit and push changes:
         - name: 'Commit and push changes'
           env:
-            GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+            REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
           run: |
             cd ./www-test-code-coverage
             git add .
             git config --local user.email "noreply@stdlib.io"
             git config --local user.name "stdlib-bot"
             git commit -m "Update artifacts"
-            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage"
+            git push "https://$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage"
 
