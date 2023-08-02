@@ -136,13 +136,13 @@ main() {
 
 		# For each package, extract coverage value from the respective coverage report:
 		pkg=`echo $package | sed -E 's/^.*stdlib\///'`
-		pkg_cov=`cat reports/coverage/lcov-report/$pkg/lib/index.html | grep "fraction" | grep -oP '\d+/\d+' | printf %s "$(cat)" | jq -R -s -c 'split("\n")'`
+		pkg_cov=$(cat reports/coverage/lcov-report/$pkg/lib/index.html | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{if ($1<$2) print "$\\color{red}" $0 "$"; else print "$\\color{green}" $0 "$"}' | jq -R -s -c 'split("\n")')
 		pkg_url="https://github.com/${github_repo}/tree/${github_ref}/${package}"
 		pkg_link="<a href="$pkg_url">$pkg</a>"
 		coverage="$coverage\n| $pkg_link $pkg_cov"
 
 		# Copy coverage report of the package to artifacts directory:
-		cp -r reports/coverage/lcov-report/$pkg artifacts/
+		mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report/${pkg}"/* "artifacts/${pkg}/"
 	done
 
 	# Format coverage as Markdown table row:
