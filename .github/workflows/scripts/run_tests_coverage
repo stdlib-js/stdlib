@@ -129,6 +129,7 @@ main() {
 		exit 0
 	fi
 
+	mkdir -p artifacts
 	coverage=''
 	for package in ${directories}; do
 		make test-javascript-cov TESTS_FILTER=".*/${package}/.*"
@@ -139,6 +140,9 @@ main() {
 		pkg_url="https://github.com/${github_repo}/tree/${github_ref}/${package}"
 		pkg_link="<a href="$pkg_url">$pkg</a>"
 		coverage="$coverage\n| $pkg_link $pkg_cov"
+
+		# Copy coverage report of the package to artifacts directory:
+		cp -r reports/coverage/lcov-report/$pkg artifacts/
 	done
 
 	# Format coverage as Markdown table row:

@@ -206,3 +206,30 @@
                 repo: context.repo.repo,
                 body: '${{ steps.create-report.outputs.report }}'
               })
+
+        # Checkout coverage repository:
+        - name: 'Checkout coverage repository'
+          uses: actions/checkout@v3
+          with:
+            repository: 'stdlib-js/www-test-code-coverage'
+            path: './www-test-code-coverage' # Specify path to checkout to
+
+        # Configure git:
+        - name: 'Configure git'
+          run: |
+            git config --local user.email "noreply@stdlib.io"
+            git config --local user.name "stdlib-bot"
+
+        # Copy artifacts to the repository:
+        - name: 'Copy artifacts to the repository'
+          run: |
+              cp -R ./artifacts/* ./www-test-code-coverage
+
+        # Commit and push changes:
+        - name: 'Commit and push changes'
+          run: |
+            cd ./www-test-code-coverage
+            git add .
+            git commit -m "Update artifacts"
+            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage"
+
