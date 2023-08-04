@@ -24,6 +24,9 @@ import removeFirst = require( './index' );
 // The function returns a string...
 {
 	removeFirst( 'abc' ); // $ExpectType string
+	removeFirst( 'abc', 1 ); // $ExpectType string
+	removeFirst( 'abc', {} ); // $ExpectType string
+	removeFirst( 'abc', 1, {} ); // $ExpectType string
 }
 
 // The compiler throws an error if the function is provided a value other than a string...
@@ -36,17 +39,69 @@ import removeFirst = require( './index' );
 	removeFirst( [] ); // $ExpectError
 	removeFirst( {} ); // $ExpectError
 	removeFirst( ( x: number ): number => x ); // $ExpectError
+
+	removeFirst( true, 1 ); // $ExpectError
+	removeFirst( false, 1 ); // $ExpectError
+	removeFirst( null, 1 ); // $ExpectError
+	removeFirst( undefined, 1 ); // $ExpectError
+	removeFirst( 5, 1 ); // $ExpectError
+	removeFirst( [], 1 ); // $ExpectError
+	removeFirst( {}, 1 ); // $ExpectError
+	removeFirst( ( x: number ): number => x, 1 ); // $ExpectError
+
+	removeFirst( true, {} ); // $ExpectError
+	removeFirst( false, {} ); // $ExpectError
+	removeFirst( null, {} ); // $ExpectError
+	removeFirst( undefined, {} ); // $ExpectError
+	removeFirst( 5, {} ); // $ExpectError
+	removeFirst( [], {} ); // $ExpectError
+	removeFirst( {}, {} ); // $ExpectError
+	removeFirst( ( x: number ): number => x, {} ); // $ExpectError
+
+	removeFirst( true, 1, {} ); // $ExpectError
+	removeFirst( false, 1, {} ); // $ExpectError
+	removeFirst( null, 1, {} ); // $ExpectError
+	removeFirst( undefined, 1, {} ); // $ExpectError
+	removeFirst( 5, 1, {} ); // $ExpectError
+	removeFirst( [], 1, {} ); // $ExpectError
+	removeFirst( {}, 1, {} ); // $ExpectError
+	removeFirst( ( x: number ): number => x, 1, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument that is not a number...
+// The compiler throws an error if the function is provided an invalid second argument...
 {
 	removeFirst( 'abc', true ); // $ExpectError
 	removeFirst( 'abc', false ); // $ExpectError
 	removeFirst( 'abc', null ); // $ExpectError
 	removeFirst( 'abc', 'abc' ); // $ExpectError
 	removeFirst( 'abc', [] ); // $ExpectError
-	removeFirst( 'abc', {} ); // $ExpectError
 	removeFirst( 'abc', ( x: number ): number => x ); // $ExpectError
+
+	removeFirst( 'abc', true, {} ); // $ExpectError
+	removeFirst( 'abc', false, {} ); // $ExpectError
+	removeFirst( 'abc', null, {} ); // $ExpectError
+	removeFirst( 'abc', '', {} ); // $ExpectError
+	removeFirst( 'abc', [], {} ); // $ExpectError
+	removeFirst( 'abc', {}, {} ); // $ExpectError
+	removeFirst( 'abc', ( x: number ): number => x, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an invalid `mode` option...
+{
+	removeFirst( 'abc', { 'mode': true } ); // $ExpectError
+	removeFirst( 'abc', { 'mode': false } ); // $ExpectError
+	removeFirst( 'abc', { 'mode': null } ); // $ExpectError
+	removeFirst( 'abc', { 'mode': '' } ); // $ExpectError
+	removeFirst( 'abc', { 'mode': [] } ); // $ExpectError
+	removeFirst( 'abc', { 'mode': ( x: number ): number => x } ); // $ExpectError
+
+	removeFirst( 'abc', 1, { 'mode': true } ); // $ExpectError
+	removeFirst( 'abc', 1, { 'mode': false } ); // $ExpectError
+	removeFirst( 'abc', 1, { 'mode': null } ); // $ExpectError
+	removeFirst( 'abc', 1, { 'mode': '' } ); // $ExpectError
+	removeFirst( 'abc', 1, { 'mode': [] } ); // $ExpectError
+	removeFirst( 'abc', 1, { 'mode': {} } ); // $ExpectError
+	removeFirst( 'abc', 1, { 'mode': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
