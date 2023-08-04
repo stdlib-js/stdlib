@@ -112,6 +112,31 @@ print_success() {
 	echo 'Success!' >&2
 }
 
+# Calculates the percentage change in code coverage and prints a formatted string.
+#
+# $1 - previous coverage value as a decimal (e.g., 0.85 for 85% coverage)
+# $2 - new coverage value as a decimal
+compare_cov() {
+	old_cov_value="$1"
+	new_cov_value="$2"
+
+	if [ "$old_cov_value" == 0 ]; then
+		new_cov_percentage=$(awk "BEGIN {printf \"%.1f\", $new_cov_value*100}")
+		echo "\$\\\\color{green}+$new_cov_percentage\\\\%\$"
+	else
+		percentage_change=$(awk "BEGIN {printf \"%.1f\", (($new_cov_value - $old_cov_value) / $old_cov_value) * 100}")
+		color="green"
+		sign=""
+		if [ $(awk "BEGIN {if ($percentage_change > 0) print 1; else print 0}") -eq 1 ]; then
+			sign="+"
+		elif [ $(awk "BEGIN {if ($percentage_change < 0) print 1; else print 0}") -eq 1 ]; then
+			sign="-"
+			color="red"
+		fi
+		echo "\$\\\\color{$color}$sign$percentage_change\\\\%\$"
+	fi
+}
+
 # Main execution sequence.
 main() {
 	start_heartbeat "${heartbeat_interval}"
@@ -134,9 +159,43 @@ main() {
 	for package in ${directories}; do
 		make test-javascript-cov TESTS_FILTER=".*/${package}/.*"
 
-		# For each package, extract coverage value from the respective coverage report:
+		# For each package, extract coverage values from the respective coverage report:
 		pkg=`echo $package | sed -E 's/^.*stdlib\///'`
-		pkg_cov=$(cat reports/coverage/lcov-report/$pkg/lib/index.html | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{if ($1<$2) print "$\\\\color{red}" $0 "$"; else print "$\\\\color{green}" $0 "$"}' | jq -R -s -c 'split("\n")')
+		pkg_cov_values=($(cat reports/coverage/lcov-report/$pkg/lib/index.html | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{print $1/$2}'))
+		pkg_statements_cov=${pkg_cov_values[0]}
+		pkg_branches_cov=${pkg_cov_values[1]}
+		pkg_functions_cov=${pkg_cov_values[2]}
+		pkg_lines_cov=${pkg_cov_values[3]}
+
+		pkg_cov_fractions=($(cat reports/coverage/lcov-report/$pkg/lib/index.html | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{if ($1<$2) print "$\\\\color{red}" $0 "$"; else print "$\\\\color{green}" $0 "$"}'))
+		pkg_statements_cov_fraction=${pkg_cov_fractions[0]}
+		pkg_branches_cov_fraction=${pkg_cov_fractions[1]}
+		pkg_functions_cov_fraction=${pkg_cov_fractions[2]}
+		pkg_lines_cov_fraction=${pkg_cov_fractions[3]}
+
+		old_cov_report=$(curl -s --fail "https://coverage.stdlib.io/${pkg}/lib/index.html" 2>/dev/null)
+		status=$?
+		if [ $status -ne 0 ]; then
+			old_statements_cov=0
+			old_branches_cov=0
+			old_functions_cov=0
+			old_lines_cov=0
+		else
+			old_cov_values=$(echo "$old_cov_report" | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{print $1/$2}')
+			old_statements_cov=${old_cov_values[0]}
+			old_branches_cov=${old_cov_values[1]}
+			old_functions_cov=${old_cov_values[2]}
+			old_lines_cov=${old_cov_values[3]}
+		fi
+
+		cov_change_statements=$(compare_cov "$old_statements_cov" "$pkg_statements_cov")
+		cov_change_branches=$(compare_cov "$old_branches_cov" "$pkg_branches_cov")
+		cov_change_functions=$(compare_cov "$old_functions_cov" "$pkg_functions_cov")
+		cov_change_lines=$(compare_cov "$old_lines_cov" "$pkg_lines_cov")
+
+		echo $pkg_statements_cov_fraction
+		pkg_cov="| $pkg_statements_cov_fraction (Δ $cov_change_statements) | $pkg_branches_cov_fraction (Δ $cov_change_branches) | $pkg_functions_cov_fraction (Δ $cov_change_functions) | $pkg_lines_cov_fraction (Δ $cov_change_lines) |"
+
 		pkg_url="https://github.com/${github_repo}/tree/${github_ref}/${package}"
 		pkg_link="<a href="$pkg_url">$pkg</a>"
 		coverage="$coverage\n| $pkg_link $pkg_cov"
