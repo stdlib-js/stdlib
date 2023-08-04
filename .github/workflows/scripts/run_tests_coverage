@@ -121,10 +121,10 @@ compare_cov() {
 	new_cov_value="$2"
 
 	if [ "$old_cov_value" == 0 ]; then
-		new_cov_percentage=$(awk "BEGIN {printf \"%.1f\", $new_cov_value*100}")
+		new_cov_percentage=$(awk "BEGIN {printf \"%.2f\", $new_cov_value*100}")
 		echo "\$\\\\color{green}+$new_cov_percentage\\\\%\$"
 	else
-		percentage_change=$(awk "BEGIN {printf \"%.1f\", (($new_cov_value - $old_cov_value) / $old_cov_value) * 100}")
+		percentage_change=$(awk "BEGIN {printf \"%.2f\", (($new_cov_value - $old_cov_value) / $old_cov_value) * 100}")
 		color="green"
 		sign=""
 		if [ $(awk "BEGIN {if ($percentage_change > 0) print 1; else print 0}") -eq 1 ]; then
@@ -192,7 +192,7 @@ main() {
 		cov_change_functions=$(compare_cov "$old_functions_cov" "$pkg_functions_cov")
 		cov_change_lines=$(compare_cov "$old_lines_cov" "$pkg_lines_cov")
 
-		pkg_cov="| $pkg_statements_cov_fraction (Δ $cov_change_statements) | $pkg_branches_cov_fraction (Δ $cov_change_branches) | $pkg_functions_cov_fraction (Δ $cov_change_functions) | $pkg_lines_cov_fraction (Δ $cov_change_lines) |"
+		pkg_cov="| $pkg_statements_cov_fraction <br> $cov_change_statements | $pkg_branches_cov_fraction <br> $cov_change_branches | $pkg_functions_cov_fraction <br> $cov_change_functions | $pkg_lines_cov_fraction <br> $cov_change_lines |"
 
 		pkg_url="https://github.com/${github_repo}/tree/${github_ref}/${package}"
 		pkg_link="<a href="$pkg_url">$pkg</a>"
