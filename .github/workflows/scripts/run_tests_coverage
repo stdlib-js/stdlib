@@ -173,15 +173,14 @@ main() {
 		pkg_functions_cov_fraction=${pkg_cov_fractions[2]}
 		pkg_lines_cov_fraction=${pkg_cov_fractions[3]}
 
-		old_cov_report=$(curl -s --fail "https://coverage.stdlib.io/${pkg}/lib/index.html" 2>/dev/null)
-		status=$?
-		if [ $status -ne 0 ]; then
+		old_cov_report=$(curl -s --fail "https://coverage.stdlib.io/${pkg}/lib/index.html" 2>/dev/null || true)
+		if [ -z "$old_cov_report" ]; then
 			old_statements_cov=0
 			old_branches_cov=0
 			old_functions_cov=0
 			old_lines_cov=0
 		else
-			old_cov_values=$(echo "$old_cov_report" | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{print $1/$2}')
+			old_cov_values=($(echo "$old_cov_report" | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{print $1/$2}'))
 			old_statements_cov=${old_cov_values[0]}
 			old_branches_cov=${old_cov_values[1]}
 			old_functions_cov=${old_cov_values[2]}
@@ -193,7 +192,6 @@ main() {
 		cov_change_functions=$(compare_cov "$old_functions_cov" "$pkg_functions_cov")
 		cov_change_lines=$(compare_cov "$old_lines_cov" "$pkg_lines_cov")
 
-		echo $pkg_statements_cov_fraction
 		pkg_cov="| $pkg_statements_cov_fraction (Δ $cov_change_statements) | $pkg_branches_cov_fraction (Δ $cov_change_branches) | $pkg_functions_cov_fraction (Δ $cov_change_functions) | $pkg_lines_cov_fraction (Δ $cov_change_lines) |"
 
 		pkg_url="https://github.com/${github_repo}/tree/${github_ref}/${package}"
