@@ -85,24 +85,3 @@ clean-javascript-cov:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(COVERAGE_DIR)
 
 .PHONY: clean-javascript-cov
-
-#/
-# Runs a specified list of files containing JavaScript unit tests and generates a test coverage report.
-#
-# @param {string} FILES - list of JavaScript test file paths
-# @param {string} [JAVASCRIPT_CODE_INSTRUMENTER] - JavaScript code instrumenter
-# @param {*} [FAST_FAIL] - flag indicating whether to stop running tests upon encountering a test failure
-#
-# @example
-# make test-javascript-cov-files FILES='/foo/test.js /bar/test.js'
-#/
-test-javascript-cov-files: clean-javascript-cov
-ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
-	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" FILES="$(FILES)" $(MAKE) -f $(this_file) test-istanbul-files
-else
-ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), c8)
-	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" FILES="$(FILES)" $(MAKE) -f $(this_file) test-c8-files
-endif
-endif
-
-.PHONY: test-javascript-cov-files
