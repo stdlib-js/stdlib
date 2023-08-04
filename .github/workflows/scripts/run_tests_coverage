@@ -122,18 +122,18 @@ compare_cov() {
 
 	if [ "$old_cov_value" == 0 ]; then
 		new_cov_percentage=$(awk "BEGIN {printf \"%.2f\", $new_cov_value*100}")
-		echo "\$\\\\\\\\color{green}+$new_cov_percentage\\\\\\\\%\$"
+		echo "\$\\\\\\\\color{green}+$new_cov_percentage\\\\\\\\\\\\\\\\%\$"
 	else
 		percentage_change=$(awk "BEGIN {printf \"%.2f\", (($new_cov_value - $old_cov_value) / $old_cov_value) * 100}")
 		color="green"
 		sign=""
-		if [ $(awk "BEGIN {if ($percentage_change > 0) print 1; else print 0}") -eq 1 ]; then
+		if [ $(awk "BEGIN {if ($percentage_change >= 0) print 1; else print 0}") -eq 1 ]; then
 			sign="+"
 		elif [ $(awk "BEGIN {if ($percentage_change < 0) print 1; else print 0}") -eq 1 ]; then
 			sign="-"
 			color="red"
 		fi
-		echo "\$\\\\\\\\color{$color}$sign$percentage_change\\\\\\\\%\$"
+		echo "\$\\\\\\\\color{$color}$sign$percentage_change\\\\\\\\\\\\\\\\%\$"
 	fi
 }
 
