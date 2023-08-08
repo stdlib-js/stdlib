@@ -5,7 +5,8 @@
 	],
 	"string": [
 		"n",
-		"split"
+		"split",
+		"mode"
 	],
 	"alias": {
 		"help": [

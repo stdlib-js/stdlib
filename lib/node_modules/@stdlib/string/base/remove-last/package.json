@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/string/base/remove-first-code-point",
+  "name": "@stdlib/string/base/remove-last",
   "version": "0.0.0",
-  "description": "Remove the first Unicode code point of a string.",
+  "description": "Remove the last UTF-16 code unit of a string.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -58,10 +58,10 @@
     "string",
     "str",
     "base",
-    "first",
+    "last",
     "character",
     "char",
-    "codepoint",
+    "codeunit",
     "unicode"
   ]
 }

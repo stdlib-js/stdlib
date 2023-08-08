@@ -1,0 +1,29 @@
+
+{{alias}}( str, n )
+    Removes the last `n` Unicode code points of a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    n: integer
+        Number of Unicode code points to remove.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep', 1 )
+    'bee'
+    > out = {{alias}}( 'Boop', 1 )
+    'Boo'
+    > out = {{alias}}( 'foo bar', 5 )
+    'fo'
+
+    See Also
+    --------
+
