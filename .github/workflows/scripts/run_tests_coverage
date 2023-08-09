@@ -157,17 +157,27 @@ main() {
 	mkdir -p artifacts
 	coverage=''
 	for package in ${directories}; do
-		make test-javascript-cov TESTS_FILTER=".*/${package}/.*"
-
 		# For each package, extract coverage values from the respective coverage report:
 		pkg=`echo $package | sed -E 's/^.*stdlib\///'`
-		pkg_cov_values=($(cat reports/coverage/lcov-report/$pkg/lib/index.html | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{print $1/$2}'))
+		
+		make test-javascript-cov TESTS_FILTER=".*/${pkg}/.*"
+
+		if [ -f reports/coverage/lcov-report/index.html ]; then
+			# Reports for packages with no dependencies are stored in the `lcov-report` directory
+			coverage_path="reports/coverage/lcov-report/index.html"
+			top_level_report=true
+		else
+			# Reports for packages with dependencies are stored in `lcov-report/<pkg>/lib`:
+			coverage_path="reports/coverage/lcov-report/${pkg}/lib/index.html"
+			top_level_report=false
+		fi
+		pkg_cov_values=($(cat $coverage_path | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{print $1/$2}'))
 		pkg_statements_cov=${pkg_cov_values[0]}
 		pkg_branches_cov=${pkg_cov_values[1]}
 		pkg_functions_cov=${pkg_cov_values[2]}
 		pkg_lines_cov=${pkg_cov_values[3]}
 
-		pkg_cov_fractions=($(cat reports/coverage/lcov-report/$pkg/lib/index.html | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{if ($1<$2) print "$\\\\\\\\color{red}" $0 "$"; else print "$\\\\\\\\color{green}" $0 "$"}'))
+		pkg_cov_fractions=($(cat $coverage_path | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{if ($1<$2) print "$\\\\\\\\color{red}" $0 "$"; else print "$\\\\\\\\color{green}" $0 "$"}'))
 		pkg_statements_cov_fraction=${pkg_cov_fractions[0]}
 		pkg_branches_cov_fraction=${pkg_cov_fractions[1]}
 		pkg_functions_cov_fraction=${pkg_cov_fractions[2]}
@@ -199,7 +209,14 @@ main() {
 		coverage="$coverage\n| $pkg_link $pkg_cov"
 
 		# Copy coverage report of the package to artifacts directory:
-		mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report/${pkg}"/* "artifacts/${pkg}/"
+		if [ "$top_level_report" = true ]; then
+			mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report"/* "artifacts/${pkg}/"
+		else
+			mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report/${pkg}/lib"/* "artifacts/${pkg}/lib/"
+		fi
+		
+		# Cleanup coverage reports for next package:
+		rm -rf reports/coverage/lcov-report/*
 	done
 
 	# Format coverage as Markdown table row:
