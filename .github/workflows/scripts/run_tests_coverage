@@ -145,7 +145,7 @@ main() {
 	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
 
 	# Find unique package directories:
-	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
+	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|src|test)\/?$//' | uniq)
 
 	if [ -z "${directories}" ]; then
 		echo 'No packages to test.' >&2
