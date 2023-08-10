@@ -162,7 +162,7 @@ main() {
 		
 		make test-javascript-cov TESTS_FILTER=".*/${pkg}/.*"
 
-		if [ -f reports/coverage/lcov-report/index.html ]; then
+		if [ ! -f reports/coverage/lcov-report/${pkg}/lib/index.html ]; then
 			# Reports for packages with no dependencies are stored in the `lcov-report` directory
 			coverage_path="reports/coverage/lcov-report/index.html"
 			top_level_report=true
