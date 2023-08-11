@@ -89,6 +89,12 @@ jobs:
 
           # Extract added lines from the diff and append them to the Markdown table:
           while IFS= read -r line; do
+            # Check if the table length exceeds a maximum length:
+            if [ ${#table} -gt 65000 ]; then
+              table+="| ... | ... | ... |\nThis table has been truncated due to GitHub's comment character limit.\n"
+              break
+            fi
+
             # Check if the line starts with '+', indicating it's an added line:
             if [[ $line == +* ]]; then
               # Remove the '+' symbol:
