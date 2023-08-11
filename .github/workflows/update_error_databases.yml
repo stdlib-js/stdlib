@@ -77,9 +77,9 @@ jobs:
           node lib/node_modules/@stdlib/error/tools/pkg2id/scripts/build.js
           node lib/node_modules/@stdlib/error/tools/id2pkg/scripts/build.js
           
-      # Generate Markdown table of added error codes:
-      - name: 'Generate Markdown table of added error codes'
-        id: generate-markdown-table
+      # Generate comment with Markdown table of added error codes:
+      - name: 'Generate comment body with Markdown table of added error codes'
+        id: generate-comment-body
         run: |
           # Get the diff of the CSV file:
           git_diff=$(git diff lib/node_modules/@stdlib/error/tools/database/data/data.csv)
@@ -113,6 +113,15 @@ jobs:
 
           # Assign the table to an output variable:
           echo "table=${table}" >> $GITHUB_OUTPUT
+          
+          # Generate a comment body:
+          body="This PR\n\n-   updates the error databases\n\nThe following error codes were added:\n\n${table}"
+          
+          # Add the comment body to the workflow output after escaping to preserve newlines:
+          body="${body//'%'/'%25'}"
+          body="${body//$'\n'/'%0A'}"
+          body="${body//$'\r'/'%0D'}"
+          echo "body=${body}" >> $GITHUB_OUTPUT
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
@@ -125,15 +134,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           title: 'Update error databases'
-          body: |
-            This PR
-
-            -   updates the error databases
-            
-            The following error codes were added:
-              
-            ${{ steps.generate-markdown-table.outputs.table }}
-
+          body: ${{ steps.generate-comment-body.outputs.body }}
           commit-message: 'feat: update error databases'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
@@ -141,6 +142,6 @@ jobs:
             documentation
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: update-error-databases
           delete-branch: true

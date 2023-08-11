@@ -106,7 +106,7 @@ jobs:
             documentation
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: update-namespace-declarations
           delete-branch: true
 

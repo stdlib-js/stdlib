@@ -148,7 +148,7 @@ jobs:
             documentation
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: markdown-insert-equations
           delete-branch: true
 

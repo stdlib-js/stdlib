@@ -97,7 +97,7 @@ jobs:
             documentation
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: update-contributors
           delete-branch: true
 

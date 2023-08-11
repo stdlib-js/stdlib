@@ -116,7 +116,7 @@ jobs:
             documentation
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: update-repl-docs
           delete-branch: true
 

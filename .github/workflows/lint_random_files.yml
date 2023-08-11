@@ -409,6 +409,6 @@ jobs:
           labels: |
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: 'fix-lint-errors'
           delete-branch: true

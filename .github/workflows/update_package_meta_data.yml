@@ -93,7 +93,7 @@ jobs:
           labels: |
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: update-package-meta-data
           delete-branch: true
 

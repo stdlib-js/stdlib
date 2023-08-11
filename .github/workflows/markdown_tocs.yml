@@ -117,7 +117,7 @@ jobs:
             documentation
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: update-namespace-tocs
           delete-branch: true
 
