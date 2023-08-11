@@ -212,7 +212,7 @@ main() {
 		if [ "$top_level_report" = true ]; then
 			mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report"/* "artifacts/${pkg}/"
 		else
-			mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report/${pkg}/lib"/* "artifacts/${pkg}/lib/"
+			mkdir -p "artifacts/${pkg}/lib/" && cp -r "reports/coverage/lcov-report/${pkg}/lib"/* "artifacts/${pkg}/lib/"
 		fi
 		
 		# Cleanup coverage reports for next package:
