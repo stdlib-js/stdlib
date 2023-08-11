@@ -76,6 +76,37 @@ jobs:
           node lib/node_modules/@stdlib/error/tools/database/scripts/build.js
           node lib/node_modules/@stdlib/error/tools/pkg2id/scripts/build.js
           node lib/node_modules/@stdlib/error/tools/id2pkg/scripts/build.js
+          
+      # Generate Markdown table of added error codes:
+      - name: 'Generate Markdown table of added error codes'
+        id: generate-markdown-table
+        run: |
+          # Get the diff of the CSV file:
+          git_diff=$(git diff lib/node_modules/@stdlib/error/tools/database/data/data.csv)
+
+          # Create the Markdown table header:
+          table="| Code | Error Message | Type |\n|--------|---------------|------|\n"
+
+          # Extract added lines from the diff and append them to the Markdown table:
+          while IFS= read -r line; do
+            # Check if the line starts with '+', indicating it's an added line:
+            if [[ $line == +* ]]; then
+              # Remove the '+' symbol:
+              line="${line#+}"
+              # Check if the line is not part of the CSV header:
+              if [[ $line != \"Code\"* ]]; then
+                # Split the CSV row into fields and format it as a Markdown table row:
+                IFS=',' read -ra fields <<< "$line"
+                table+="| ${fields[0]} | ${fields[1]} | ${fields[2]} |\n"
+              fi
+            fi
+          done <<< "$git_diff"
+          
+          # Remove double quotes from the Markdown table:
+          table="${table//\"/}"
+
+          # Assign the table to an output variable:
+          echo "table=${table}" >> $GITHUB_OUTPUT
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
@@ -92,6 +123,10 @@ jobs:
             This PR
 
             -   updates the error databases
+            
+            The following error codes were added:
+              
+            ${{ steps.generate-markdown-table.outputs.table }}
 
           commit-message: 'feat: update error databases'
           committer: 'stdlib-bot <noreply@stdlib.io>'
