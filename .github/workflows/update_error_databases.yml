@@ -79,7 +79,6 @@ jobs:
           
       # Generate comment with Markdown table of added error codes:
       - name: 'Generate comment body with Markdown table of added error codes'
-        id: generate-comment-body
         run: |
           # Get the diff of the CSV file:
           git_diff=$(git diff lib/node_modules/@stdlib/error/tools/database/data/data.csv)
@@ -111,18 +110,12 @@ jobs:
           # Remove double quotes from the Markdown table:
           table="${table//\"/}"
 
-          # Assign the table to an output variable:
-          echo "table=${table}" >> $GITHUB_OUTPUT
-          
           # Generate a comment body:
           body="This PR\n\n-   updates the error databases\n\nThe following error codes were added:\n\n${table}"
           
-          # Add the comment body to the workflow output after escaping to render newlines:
-          body="${body//\\n/$'\n'}"
-          body="${body//'%'/'%25'}"
-          body="${body//$'\n'/'%0A'}"
-          body="${body//$'\r'/'%0D'}"
-          echo "body=${body}" >> $GITHUB_OUTPUT
+          # Write the comment body to a temporary file:
+          printf "$body" > /tmp/body.md
+        shell: bash
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
@@ -132,10 +125,10 @@ jobs:
       # Create a pull request with the updated declarations:
       - name: 'Create pull request'
         id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
-          title: 'Update error databases'
-          body: ${{ steps.generate-comment-body.outputs.body }}
+          title: 'feat: update error databases'
+          body-path: /tmp/body.md
           commit-message: 'feat: update error databases'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
