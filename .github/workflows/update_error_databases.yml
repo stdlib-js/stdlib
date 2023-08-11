@@ -117,10 +117,8 @@ jobs:
           # Generate a comment body:
           body="This PR\n\n-   updates the error databases\n\nThe following error codes were added:\n\n${table}"
           
-          # Add the comment body to the workflow output after escaping to preserve newlines:
-          body="${body//'%'/'%25'}"
-          body="${body//$'\n'/'%0A'}"
-          body="${body//$'\r'/'%0D'}"
+          # Add the comment body to the workflow output after escaping to render newlines:
+          body="${body//\\n/'%0A'}"
           echo "body=${body}" >> $GITHUB_OUTPUT
 
       # Disable Git hooks:
