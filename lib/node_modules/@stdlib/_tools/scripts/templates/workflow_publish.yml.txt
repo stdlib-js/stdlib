@@ -149,6 +149,11 @@ jobs:
           # Add link definition for CLI package to README.md:
           find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"links\">/<section class=\"links\">\n\n[$escapedPkg]: https:\/\/www.npmjs.com\/package\/$escapedPkg/"
 
+      # Replace LICENSE comments with abbreviated ones:
+      - name: 'Replace LICENSE comments with abbreviated ones'
+        run: |
+          find . -name "*.js" -type f -exec perl -i -p0e 's|/\*\*\n\*\s\@license\sApache-2.0\n\*\n\*\sCopyright\s\(c\)\s\d{4}\sThe\sStdlib\sAuthors\.\n(.*?)\n\*\slimitations\sunder\sthe\sLicense\.\n\*/|// Copyright (c) 2023 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0|s' {} \;
+
       # Replace GitHub MathJax equations with SVGs:
       - name: 'Replace GitHub MathJax equations with SVGs'
         run: |
