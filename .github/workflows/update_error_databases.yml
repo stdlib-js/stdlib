@@ -81,13 +81,13 @@ jobs:
       - name: 'Generate comment body with Markdown table of added error codes'
         run: |
           # Save the added lines from the diff to a temporary file: 
-          git diff lib/node_modules/@stdlib/error/tools/database/data/data.csv | grep '^+' | grep -v '^\+\+' | sed 's/^+//' > /tmp/diff.csv
+          git diff lib/node_modules/@stdlib/error/tools/database/data/data.csv | grep '^+' | sed 's/^+//' > /tmp/diff.csv
           
           # Convert the CSV file to a TSV file (and drop first line and double quotes):
           awk -F '",' 'NR > 1 && !/^++/ { gsub(/^"|"$/, "", $1); gsub(/^"|"$/, "", $2); gsub(/^"|"$/, "", $3); print $1 "\t" $2 "\t" $3 }' /tmp/diff.csv > /tmp/diff.tsv
 
           # Create the Markdown table header:
-          table="| Code | Error Message | Type |\n|--------|---------------|------|\n"
+          table="| Code | Error Message | Type |\n|------|---------------|------|\n"
 
           # Extract added lines from the diff and append them to the Markdown table:
           while IFS=$'\t' read -r code error_message type; do
