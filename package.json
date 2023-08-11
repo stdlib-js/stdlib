@@ -135,6 +135,7 @@
     "factor-bundle": "^2.5.0",
     "gh-pages": "git+https://github.com/Planeshifter/gh-pages.git#main",
     "inquirer": "^8.0.0",
+    "jscodeshift": "^0.15.0",
     "jsdoc": "^3.4.0",
     "lunr": "^2.3.9",
     "mathjax-node": "^2.0.1",
