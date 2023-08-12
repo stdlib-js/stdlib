@@ -253,5 +253,5 @@
             git config --local user.email "noreply@stdlib.io"
             git config --local user.name "stdlib-bot"
             git commit -m "Update artifacts"
-            git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" main
+            git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" $BRANCH_NAME
 
