@@ -5,7 +5,7 @@
 
     The callback function is provided one argument:
 
-    - indices: element indices.
+    - indices: current array element indices.
 
     Parameters
     ----------
