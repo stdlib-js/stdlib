@@ -55,7 +55,7 @@ var out = filled2dBy( [ 1, 3 ], clbk );
 
 When invoked, a callback function is provided a single argument:
 
--   **indices**: array element indices.
+-   **indices**: current array element indices.
 
 To set the callback execution context, provide a `thisArg`.
 
