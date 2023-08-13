@@ -145,7 +145,7 @@ main() {
 	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
 
 	# Find unique package directories:
-	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|src|test)\/?$//' | uniq)
+	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?\/?$//' | uniq)
 
 	if [ -z "${directories}" ]; then
 		echo 'No packages to test.' >&2
@@ -162,7 +162,7 @@ main() {
 		
 		make test-javascript-cov TESTS_FILTER=".*/${pkg}/.*"
 
-		if [ -f reports/coverage/lcov-report/index.html ]; then
+		if [ ! -f reports/coverage/lcov-report/${pkg}/lib/index.html ]; then
 			# Reports for packages with no dependencies are stored in the `lcov-report` directory
 			coverage_path="reports/coverage/lcov-report/index.html"
 			top_level_report=true
@@ -204,15 +204,15 @@ main() {
 
 		pkg_cov="| $pkg_statements_cov_fraction <br> $cov_change_statements | $pkg_branches_cov_fraction <br> $cov_change_branches | $pkg_functions_cov_fraction <br> $cov_change_functions | $pkg_lines_cov_fraction <br> $cov_change_lines |"
 
-		pkg_url="https://github.com/${github_repo}/tree/${github_ref}/${package}"
-		pkg_link="<a href="$pkg_url">$pkg</a>"
+		pkg_url="https://coverage.stdlib.io/${pkg}"
+		pkg_link="<a href='"$pkg_url"'>$pkg</a>"
 		coverage="$coverage\n| $pkg_link $pkg_cov"
 
 		# Copy coverage report of the package to artifacts directory:
 		if [ "$top_level_report" = true ]; then
 			mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report"/* "artifacts/${pkg}/"
 		else
-			mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report/${pkg}/lib"/* "artifacts/${pkg}/lib/"
+			mkdir -p "artifacts/${pkg}/lib/" && cp -r "reports/coverage/lcov-report/${pkg}/lib"/* "artifacts/${pkg}/lib/"
 		fi
 		
 		# Cleanup coverage reports for next package:
