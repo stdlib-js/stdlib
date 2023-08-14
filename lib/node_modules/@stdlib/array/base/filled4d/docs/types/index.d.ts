@@ -30,11 +30,11 @@ import { Collection } from '@stdlib/types/object';
 * @returns output array
 *
 * @example
-* var out = filled4d( 0.0, [ 1, 1, 3 ] );
+* var out = filled4d( 0.0, [ 1, 1, 1, 3 ] );
 * // returns [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ]
 *
 * @example
-* var out = filled4d( 'beep', [ 1, 1, 3 ] );
+* var out = filled4d( 'beep', [ 1, 1, 1, 3 ] );
 * // returns [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ]
 */
 declare function filled4d<T = unknown>( value: T, shape: Collection<number> ): Array<Array<Array<Array<T>>>>;
