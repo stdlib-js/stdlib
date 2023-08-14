@@ -227,6 +227,19 @@
 
             # Token for accessing the repository:
             token: ${{ secrets.REPO_GITHUB_TOKEN }}
+            
+        # Checkout coverage repository branch:
+        - name: 'Checkout coverage repository branch'
+          run: |
+            cd ./www-test-code-coverage
+
+            if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+              BRANCH_NAME="pr-${{ github.event.pull_request.number }}"
+              git fetch origin $BRANCH_NAME || true
+              git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME
+            else
+              BRANCH_NAME="main"
+            fi
 
         # Copy artifacts to the repository:
         - name: 'Copy artifacts to the repository'
@@ -239,19 +252,9 @@
             REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
             USER_NAME: stdlib-bot
           run: |
-            cd ./www-test-code-coverage
-
-            if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-              BRANCH_NAME="pr-${{ github.event.pull_request.number }}"
-              git fetch origin $BRANCH_NAME || true
-              git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME
-            else
-              BRANCH_NAME="main"
-            fi
-
-            git add .
             git config --local user.email "noreply@stdlib.io"
             git config --local user.name "stdlib-bot"
+            git add .
             git commit -m "Update artifacts"
             git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" $BRANCH_NAME
 
