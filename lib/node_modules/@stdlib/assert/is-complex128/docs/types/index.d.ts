@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex128 } from '@stdlib/types/object';
+import { Complex128 } from '@stdlib/types/complex';
 
 /**
 * Tests if a value is a 128-bit complex number.

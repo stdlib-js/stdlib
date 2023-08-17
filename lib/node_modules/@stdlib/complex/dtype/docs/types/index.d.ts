@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex64, Complex128, ComplexDataType } from '@stdlib/types/object';
+import { Complex64, Complex128, ComplexDataType } from '@stdlib/types/complex';
 
 /**
 * Complex number data type.

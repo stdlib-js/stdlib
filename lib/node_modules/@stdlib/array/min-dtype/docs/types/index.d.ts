@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { RealDataType, ComplexDataType, DataType } from '@stdlib/types/array';
-import { ComplexLike } from '@stdlib/types/object';
+import { ComplexLike } from '@stdlib/types/complex';
 
 /**
 * Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.

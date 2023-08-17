@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { FloatOrComplexDataType as DataType, ArrayLike, FloatOrComplexTypedArray, Complex64Array, Complex128Array } from '@stdlib/types/array';
-import { ComplexLike, Complex64, Complex128 } from '@stdlib/types/object';
+import { ComplexLike, Complex64, Complex128 } from '@stdlib/types/complex';
 
 /**
 * Interface describing function options.

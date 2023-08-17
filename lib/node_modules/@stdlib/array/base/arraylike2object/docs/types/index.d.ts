@@ -21,7 +21,8 @@
 /// <reference types="@stdlib/types"/>
 
 import { Complex64Array, Complex128Array, AccessorArrayLike } from '@stdlib/types/array';
-import { Collection, Complex64, Complex128, ComplexLike } from '@stdlib/types/object';
+import { Complex64, Complex128, ComplexLike } from '@stdlib/types/complex';
+import { Collection } from '@stdlib/types/object';
 
 /**
 * Returns an element from a `Float64Array`.

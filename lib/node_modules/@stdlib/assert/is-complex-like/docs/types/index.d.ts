@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike } from '@stdlib/types/object';
+import { ComplexLike } from '@stdlib/types/complex';
 
 /**
 * Tests if a value is a complex number-like object.

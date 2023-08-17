@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex128 } from '@stdlib/types/object';
+import { Complex128 } from '@stdlib/types/complex';
 
 /**
 * Returns the real component of a double-precision complex floating-point number.

@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex64 } from '@stdlib/types/object';
+import { Complex64 } from '@stdlib/types/complex';
 
 /**
 * Returns the real and imaginary components of a single-precision complex floating-point number.

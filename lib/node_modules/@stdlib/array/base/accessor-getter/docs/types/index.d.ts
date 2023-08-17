@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex64, Complex128 } from '@stdlib/types/object';
+import { Complex64, Complex128 } from '@stdlib/types/complex';
 import { Complex64Array, Complex128Array, AccessorArrayLike } from '@stdlib/types/array';
 
 /**

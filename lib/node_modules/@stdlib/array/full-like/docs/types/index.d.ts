@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { Complex128Array, Complex64Array, AnyArray, DataType } from '@stdlib/types/array';
-import { ComplexLike } from '@stdlib/types/object';
+import { ComplexLike } from '@stdlib/types/complex';
 
 /**
 * Creates a filled array having the same length as a provided input array.
