@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { TypedIterator, TypedIterableIterator } from '@stdlib/types/iter';
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 // Define a union type representing both iterable and non-iterable iterators:
 type Iterator<T> = TypedIterator<T> | TypedIterableIterator<T>;
@@ -91,7 +91,7 @@ type MapFunction<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>
 * var arr = iterator2arrayviewRight( iter, new Float64Array( 20 ) );
 * // returns <Float64Array>
 */
-declare function iterator2arrayviewRight<T = any, U = T>( iterator: Iterator<T>, out: Collection<U>, mapFcn?: MapFunction<T, U>, thisArg?: any ): Collection<U>;
+declare function iterator2arrayviewRight<T = unknown, U = T>( iterator: Iterator<T>, out: Collection<U>, mapFcn?: MapFunction<T, U>, thisArg?: ThisParameterType<MapFunction<T, U>> ): Collection<U>;
 
 /**
 * Fills an array-like object view from right to left with values returned from an iterator.
@@ -115,7 +115,7 @@ declare function iterator2arrayviewRight<T = any, U = T>( iterator: Iterator<T>,
 * var arr = iterator2arrayviewRight( iter, new Float64Array( 20 ), 5 );
 * // returns <Float64Array>
 */
-declare function iterator2arrayviewRight<T = any, U = T>( iterator: Iterator<T>, out: Collection<U>, begin: number, mapFcn?: MapFunction<T, U>, thisArg?: any ): Collection<U>;
+declare function iterator2arrayviewRight<T = unknown, U = T>( iterator: Iterator<T>, out: Collection<U>, begin: number, mapFcn?: MapFunction<T, U>, thisArg?: ThisParameterType<MapFunction<T, U>> ): Collection<U>;
 
 /**
 * Fills an array-like object view from right to left with values returned from an iterator.
@@ -141,7 +141,7 @@ declare function iterator2arrayviewRight<T = any, U = T>( iterator: Iterator<T>,
 * var arr = iterator2arrayviewRight( iter, new Float64Array( 20 ), 5, 8 );
 * // returns <Float64Array>
 */
-declare function iterator2arrayviewRight<T = any, U = T>( iterator: Iterator<T>, out: Collection<U>, begin: number, end: number, mapFcn?: MapFunction<T, U>, thisArg?: any ): Collection<U>;
+declare function iterator2arrayviewRight<T = unknown, U = T>( iterator: Iterator<T>, out: Collection<U>, begin: number, end: number, mapFcn?: MapFunction<T, U>, thisArg?: ThisParameterType<MapFunction<T, U>> ): Collection<U>;
 
 
 // EXPORTS //
