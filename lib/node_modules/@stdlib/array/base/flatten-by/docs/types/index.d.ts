@@ -22,7 +22,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 // FIXME: shapes should be collections of a defined length
 

@@ -20,8 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { AnyArray, Complex128Array, Complex64Array } from '@stdlib/types/array';
-import { Collection } from '@stdlib/types/object';
+import { AnyArray, Collection, Complex128Array, Complex64Array } from '@stdlib/types/array';
 
 /**
 * Converts an array to the same data type as a `Float64Array`.

@@ -20,8 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealOrComplexTypedArray, DataType } from '@stdlib/types/array';
-import { Collection } from '@stdlib/types/object';
+import { Collection, RealOrComplexTypedArray, DataType } from '@stdlib/types/array';
 import { IterableIterator } from '@stdlib/types/iter';
 
 /**
