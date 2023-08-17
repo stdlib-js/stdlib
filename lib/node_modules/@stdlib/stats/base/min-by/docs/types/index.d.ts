@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Returns an accessed value.
@@ -35,7 +35,7 @@ type Nullary = () => number | void;
 * @param value - array element
 * @returns accessed value
 */
-type Unary = ( value: any ) => number | void;
+type Unary<T> = ( value: T ) => number | void;
 
 /**
 * Returns an accessed value.
@@ -44,17 +44,7 @@ type Unary = ( value: any ) => number | void;
 * @param aidx - array index
 * @returns accessed value
 */
-type Binary = ( value: any, aidx: number ) => number | void;
-
-/**
-* Returns an accessed value.
-*
-* @param value - array element
-* @param aidx - array index
-* @param sidx - strided index (offset + aidx*stride)
-* @returns accessed value
-*/
-type Ternary = ( value: any, aidx: number, sidx: number ) => number | void;
+type Binary<T> = ( value: T, aidx: number ) => number | void;
 
 /**
 * Returns an accessed value.
@@ -62,10 +52,9 @@ type Ternary = ( value: any, aidx: number, sidx: number ) => number | void;
 * @param value - array element
 * @param aidx - array index
 * @param sidx - strided index (offset + aidx*stride)
-* @param array - input array
 * @returns accessed value
 */
-type Quaternary = ( value: any, aidx: number, sidx: number, array: Collection ) => number | void; // tslint-disable-line max-line-length
+type Ternary<T> = ( value: T, aidx: number, sidx: number ) => number | void;
 
 /**
 * Returns an accessed value.
@@ -76,7 +65,18 @@ type Quaternary = ( value: any, aidx: number, sidx: number, array: Collection ) 
 * @param array - input array
 * @returns accessed value
 */
-type Callback = Nullary | Unary | Binary | Ternary | Quaternary;
+type Quaternary<T> = ( value: T, aidx: number, sidx: number, array: Collection<T> ) => number | void;
+
+/**
+* Returns an accessed value.
+*
+* @param value - array element
+* @param aidx - array index
+* @param sidx - strided index (offset + aidx*stride)
+* @param array - input array
+* @returns accessed value
+*/
+type Callback<T> = Nullary | Unary<T> | Binary<T> | Ternary<T> | Quaternary<T>;
 
 /**
 * Interface describing `minBy`.
@@ -113,7 +113,7 @@ interface Routine {
 	* var v = minBy( x.length, x, 1, accessor );
 	* // returns -10.0
 	*/
-	( N: number, x: Collection, stride: number, clbk: Callback, thisArg?: any ): number; // tslint:disable-line:max-line-length
+	<T = unknown>( N: number, x: Collection<T>, stride: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): number;
 
 	/**
 	* Calculates the minimum value of a strided array via a callback function and using alternative indexing semantics.
@@ -147,7 +147,7 @@ interface Routine {
 	* var v = minBy.ndarray( x.length, x, 1, 0, accessor );
 	* // returns -10.0
 	*/
-	ndarray( N: number, x: Collection, stride: number, offset: number, clbk: Callback, thisArg?: any ): number; // tslint:disable-line:max-line-length
+	ndarray<T = unknown>( N: number, x: Collection<T>, stride: number, offset: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): number;
 }
 
 /**

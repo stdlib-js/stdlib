@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Interface defining function options.
@@ -76,7 +76,7 @@ interface Options {
 * out = ranks( arr );
 * // returns [ 6, 2.5, 2.5, 1, 5, 4, 7 ,8 ]
 */
-declare function ranks( x: Collection, options?: Options ): Array<number>;
+declare function ranks( x: Collection<number>, options?: Options ): Array<number>;
 
 
 // EXPORTS //
