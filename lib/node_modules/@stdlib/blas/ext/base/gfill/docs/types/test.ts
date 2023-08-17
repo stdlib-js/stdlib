@@ -25,7 +25,7 @@ import gfill = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	gfill( x.length, 5.0, x, 1 ); // $ExpectType Collection
+	gfill( x.length, 5.0, x, 1 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -83,7 +83,7 @@ import gfill = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	gfill.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType Collection
+	gfill.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

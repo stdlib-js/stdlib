@@ -26,7 +26,7 @@ import gswap = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	gswap( x.length, x, 1, y, 1 ); // $ExpectType Collection
+	gswap( x.length, x, 1, y, 1 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -117,7 +117,7 @@ import gswap = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	gswap.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType Collection
+	gswap.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

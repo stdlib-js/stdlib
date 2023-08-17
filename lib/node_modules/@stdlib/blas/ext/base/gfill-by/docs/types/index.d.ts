@@ -20,41 +20,31 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Returns a fill value.
 *
 * @returns fill value
 */
-type Nullary = () => any;
-
-/**
-* Returns a fill value.
-*
-* @param value - array element
-* @returns fill value
-*/
-type Unary = ( value: any ) => any;
+type Nullary<U> = () => U;
 
 /**
 * Returns a fill value.
 *
 * @param value - array element
-* @param aidx - array index
 * @returns fill value
 */
-type Binary = ( value: any, aidx: number ) => any;
+type Unary<T, U> = ( value: T ) => U;
 
 /**
 * Returns a fill value.
 *
 * @param value - array element
 * @param aidx - array index
-* @param sidx - strided index (offset + aidx*stride)
 * @returns fill value
 */
-type Ternary = ( value: any, aidx: number, sidx: number ) => any;
+type Binary<T, U> = ( value: T, aidx: number ) => U;
 
 /**
 * Returns a fill value.
@@ -62,10 +52,9 @@ type Ternary = ( value: any, aidx: number, sidx: number ) => any;
 * @param value - array element
 * @param aidx - array index
 * @param sidx - strided index (offset + aidx*stride)
-* @param array - input array
 * @returns fill value
 */
-type Quaternary = ( value: any, aidx: number, sidx: number, array: Collection ) => any; // tslint-disable-line max-line-length
+type Ternary<T, U> = ( value: T, aidx: number, sidx: number ) => U;
 
 /**
 * Returns a fill value.
@@ -76,7 +65,18 @@ type Quaternary = ( value: any, aidx: number, sidx: number, array: Collection ) 
 * @param array - input array
 * @returns fill value
 */
-type Callback = Nullary | Unary | Binary | Ternary | Quaternary;
+type Quaternary<T, U, V> = ( value: T, aidx: number, sidx: number, array: Collection<V> ) => U;
+
+/**
+* Returns a fill value.
+*
+* @param value - array element
+* @param aidx - array index
+* @param sidx - strided index (offset + aidx*stride)
+* @param array - input array
+* @returns fill value
+*/
+type Callback<T, U, V> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U> | Quaternary<T, U, V>;
 
 /**
 * Interface describing `gfillBy`.
@@ -113,7 +113,7 @@ interface Routine {
 	* gfillBy( x.length, x, 1, fill );
 	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	( N: number, x: Collection, stride: number, clbk: Callback, thisArg?: any ): Collection; // tslint:disable-line:max-line-length
+	<T = unknown, U = unknown, V = unknown>( N: number, x: Collection<V>, stride: number, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Collection<U | V>;
 
 	/**
 	* Fills a strided array according to a provided callback function and using alternative indexing semantics.
@@ -147,7 +147,7 @@ interface Routine {
 	* gfillBy.ndarray( x.length, x, 1, 0, fill );
 	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	ndarray( N: number, x: Collection, stride: number, offset: number, clbk: Callback, thisArg?: any ): Collection; // tslint:disable-line:max-line-length
+	ndarray<T = unknown, U = unknown, V = unknown>( N: number, x: Collection<V>, stride: number, offset: number, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Collection<U | V>;
 }
 
 /**
