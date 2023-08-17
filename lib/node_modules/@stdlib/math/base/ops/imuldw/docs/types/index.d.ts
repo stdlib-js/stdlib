@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
  * Interface describing `imuldw`.
@@ -61,7 +61,7 @@ import { Collection } from '@stdlib/types/object';
 	* var v = imuldw( 0xAAAAAAAA, 0x55555555 );
 	* // returns [ -477218589, 1908874354 ]
 	*/
-	assign( a: number, b: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+	assign<T = unknown>( a: number, b: number, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
 }
 
 /**
