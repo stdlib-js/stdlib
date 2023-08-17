@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
  * Interface describing `fresnel`.
@@ -74,7 +74,7 @@ interface Fresnel {
 	* var bool = ( v === out );
 	* // returns true
 	*/
-	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+	assign<T = unknown>( x: number, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
 }
 
 /**
