@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import * as random from '@stdlib/types/random';
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Interface defining function options.
@@ -77,7 +77,7 @@ interface Routine {
 	* // Fill the array with pseudorandom numbers:
 	* weibull( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*/
-	<T = any>( N: number, k: Collection, sk: number, lambda: Collection, sl: number, out: Collection<T>, so: number, options?: Options ): Collection<T>;
+	<T = unknown>( N: number, k: Collection, sk: number, lambda: Collection, sl: number, out: Collection<T>, so: number, options?: Options ): Collection<T | number>;
 
 	/**
 	* Fills a strided array with pseudorandom numbers drawn from a Weibull distribution using alternative indexing semantics.
@@ -107,7 +107,7 @@ interface Routine {
 	* // Fill the array with pseudorandom numbers:
 	* weibull.ndarray( out.length, [ 2.0 ], 0, 0, [ 5.0 ], 0, 0, out, 1, 0 );
 	*/
-	ndarray<T = any>( N: number, k: Collection, sk: number, ok: number, lambda: Collection, sl: number, ol: number, out: Collection<T>, so: number, oo: number, options?: Options ): Collection<T>;
+	ndarray<T = unknown>( N: number, k: Collection, sk: number, ok: number, lambda: Collection, sl: number, ol: number, out: Collection<T>, so: number, oo: number, options?: Options ): Collection<T | number>;
 }
 
 /**

@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import * as random from '@stdlib/types/random';
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Interface defining function options.
@@ -72,7 +72,7 @@ interface Routine {
 	* // Fill the array with pseudorandom numbers:
 	* randu( out.length, out, 1 );
 	*/
-	<T = any>( N: number, out: Collection<T>, so: number, options?: Options ): Collection<T>;
+	<T = unknown>( N: number, out: Collection<T>, so: number, options?: Options ): Collection<T | number>;
 
 	/**
 	* Fills a strided array with uniformly distributed pseudorandom numbers between `0` and `1` using alternative indexing semantics.
@@ -95,7 +95,7 @@ interface Routine {
 	* // Fill the array with pseudorandom numbers:
 	* randu.ndarray( out.length, out, 1, 0 );
 	*/
-	ndarray<T = any>( N: number, out: Collection<T>, so: number, oo: number, options?: Options ): Collection<T>;
+	ndarray<T = unknown>( N: number, out: Collection<T>, so: number, oo: number, options?: Options ): Collection<T | number>;
 }
 
 /**
