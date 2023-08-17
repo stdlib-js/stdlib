@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Interface describing `float64ToInt64Bytes`.
@@ -62,7 +62,7 @@ interface Float64ToInt64Bytes {
 	* var bytes = float64ToInt64Bytes.assign( 1.0, out, 2, 1 );
 	* // returns <Uint8Array>
 	*/
-	assign<T = any>( x: number, out: Collection<T>, stride: number, offset: number ): Collection<T>; // tslint-disable-line max-line-length
+	assign<T = unknown>( x: number, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
 }
 
 /**

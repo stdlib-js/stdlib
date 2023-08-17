@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
  * Interface describing `normalizef`.
@@ -81,7 +81,7 @@ interface Normalizef {
 	* var bool = ( v === out );
 	* // returns true
 	*/
-	assign<T = any>( x: number, out: Collection<T>, stride: number, offset: number ): Collection<T>; // tslint-disable-line max-line-length
+	assign<T = unknown>( x: number, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
 }
 
 /**
