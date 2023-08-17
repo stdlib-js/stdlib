@@ -22,7 +22,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { Readable } from 'stream';
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Interface defining stream options.
