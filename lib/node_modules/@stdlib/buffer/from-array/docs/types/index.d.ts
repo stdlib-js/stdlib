@@ -22,7 +22,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { Buffer } from 'buffer';
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Allocates a buffer using an octet array.
@@ -36,7 +36,7 @@ import { Collection } from '@stdlib/types/object';
 * var buf = fromArray( [ 1, 2, 3, 4 ] );
 * // returns <Buffer>
 */
-declare function fromArray( arr: Collection ): Buffer;
+declare function fromArray( arr: Collection<number> ): Buffer;
 
 
 // EXPORTS //
