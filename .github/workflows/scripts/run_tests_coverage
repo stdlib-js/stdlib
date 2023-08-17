@@ -160,6 +160,10 @@ main() {
 		# For each package, extract coverage values from the respective coverage report:
 		pkg=`echo $package | sed -E 's/^.*stdlib\///'`
 		
+		if [ -f "lib/node_modules/@stdlib/${pkg}/binding.gyp" ]; then
+			NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
+		fi
+		
 		make test-javascript-cov TESTS_FILTER=".*/${pkg}/test/.*"
 
 		if [ ! -f reports/coverage/lcov-report/${pkg}/lib/index.html ]; then
