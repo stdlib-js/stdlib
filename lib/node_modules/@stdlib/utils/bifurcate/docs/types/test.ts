@@ -23,11 +23,12 @@ import bifurcate = require( './index' );
 
 // The function returns an array of arrays...
 {
-	bifurcate( [ 'beep', 'boop', 'foo', 'bar' ], [ true, true, false, true ] ); // $ExpectType any[] | any[][]
+	bifurcate( [ 'beep', 'boop', 'foo', 'bar' ], [ true, true, false, true ] ); // $ExpectType string[][]
+
 	const opts = {
 		'returns': 'indices' as 'indices'
 	};
-	bifurcate( [ 'beep', 'boop', 'foo', 'bar' ], opts, [ true, true, false, true ] ); // $ExpectType any[] | any[][]
+	bifurcate( [ 'beep', 'boop', 'foo', 'bar' ], opts, [ true, true, false, true ] ); // $ExpectType string[][]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
@@ -40,6 +41,7 @@ import bifurcate = require( './index' );
 // The compiler throws an error if the function is provided a last argument which is not a collection...
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
+
 	bifurcate( arr, false ); // $ExpectError
 	bifurcate( arr, true ); // $ExpectError
 	bifurcate( arr, 32 ); // $ExpectError
@@ -55,6 +57,7 @@ import bifurcate = require( './index' );
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
 	const filter = [ true, true, false, true ];
+
 	bifurcate( arr, null, filter ); // $ExpectError
 }
 
@@ -62,6 +65,7 @@ import bifurcate = require( './index' );
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
 	const filter = [ true, true, false, true ];
+
 	bifurcate( arr, { 'returns': '5' }, filter ); // $ExpectError
 	bifurcate( arr, { 'returns': 123 }, filter ); // $ExpectError
 	bifurcate( arr, { 'returns': [] }, filter ); // $ExpectError
@@ -73,6 +77,7 @@ import bifurcate = require( './index' );
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
 	const filter = [ true, true, false, true ];
+
 	bifurcate(); // $ExpectError
 	bifurcate( arr ); // $ExpectError
 	bifurcate( arr, {}, filter, 16 ); // $ExpectError
