@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Tests whether at least one element in a collection is truthy.
