@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Adds one or more elements to the beginning of a collection.
@@ -49,7 +49,7 @@ import { Collection } from '@stdlib/types/object';
 * arr = unshift( arr, 6.0, 7.0 );
 * // returns <Float64Array>[ 6.0, 7.0, 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function unshift<T = any, U = any>( collection: Collection<T>, ...items: Array<U> ): Collection<T | U>; // tslint-disable-line max-line-length
+declare function unshift<T = unknown, U = unknown>( collection: Collection<T>, ...items: Array<U> ): Collection<T | U>;
 
 
 // EXPORTS //
