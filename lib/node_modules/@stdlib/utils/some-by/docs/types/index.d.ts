@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -35,7 +35,7 @@ type Nullary = () => boolean;
 * @param value - collection value
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Unary = ( value: any ) => boolean;
+type Unary<T> = ( value: T ) => boolean;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -44,17 +44,7 @@ type Unary = ( value: any ) => boolean;
 * @param index - collection index
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Binary = ( value: any, index: number ) => boolean;
-
-/**
-* Checks whether an element in a collection passes a test.
-*
-* @param value - collection value
-* @param index - collection index
-* @param collection - input collection
-* @returns boolean indicating whether an element in a collection passes a test
-*/
-type Ternary = ( value: any, index: number, collection: Collection ) => boolean;
+type Binary<T> = ( value: T, index: number ) => boolean;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -64,7 +54,17 @@ type Ternary = ( value: any, index: number, collection: Collection ) => boolean;
 * @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Predicate = Nullary | Unary | Binary | Ternary;
+type Ternary<T> = ( value: T, index: number, collection: Collection<T> ) => boolean;
+
+/**
+* Checks whether an element in a collection passes a test.
+*
+* @param value - collection value
+* @param index - collection index
+* @param collection - input collection
+* @returns boolean indicating whether an element in a collection passes a test
+*/
+type Predicate<T> = Nullary | Unary<T> | Binary<T> | Ternary<T>;
 
 /**
 * Tests whether a collection contains at least `n` elements which pass a test implemented by a predicate function.
@@ -98,7 +98,7 @@ type Predicate = Nullary | Unary | Binary | Ternary;
 * var bool = someBy( arr, 2, isNegative );
 * // returns true
 */
-declare function someBy( collection: Collection, n: number, predicate: Predicate, thisArg?: any ): boolean; // tslint-disable-line max-line-length
+declare function someBy<T = unknown>( collection: Collection<T>, n: number, predicate: Predicate<T>, thisArg?: ThisParameterType<Predicate<T>> ): boolean;
 
 
 // EXPORTS //
