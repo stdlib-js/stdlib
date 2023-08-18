@@ -20,21 +20,46 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
-* Interface defining function options.
+* Interface defining base function options.
 */
-interface Options {
+interface BaseOptions<T> {
 	/**
 	* Execution context.
 	*/
-	thisArg?: any;
+	thisArg?: ThisParameterType<Indicator<T>>;
+}
 
+/**
+* Interface defining function options when returning indices.
+*/
+interface IndicesOptions<T> extends BaseOptions<T> {
 	/**
-	* If `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned.
+	* Specifies that indices should be returned.
 	*/
-	returns?: 'values' | 'indices' | '*';
+	returns: 'indices';
+}
+
+/**
+* Interface defining function options when returning values.
+*/
+interface ValuesOptions<T> extends BaseOptions<T> {
+	/**
+	* Specifies that values should be returned.
+	*/
+	returns: 'values';
+}
+
+/**
+* Interface defining function options when returning indices and values.
+*/
+interface IndicesAndValuesOptions<T> extends BaseOptions<T> {
+	/**
+	* Specifies that indices and values should be returned.
+	*/
+	returns: '*';
 }
 
 /**
@@ -42,7 +67,7 @@ interface Options {
 *
 * @returns object key
 */
-type Nullary = () => string | symbol;
+type Nullary = () => string | symbol | number;
 
 /**
 * Specifies which group an element in the input collection belongs to.
@@ -50,16 +75,7 @@ type Nullary = () => string | symbol;
 * @param value - collection value
 * @returns object key
 */
-type Unary = ( value: any ) => string | symbol;
-
-/**
-* Specifies which group an element in the input collection belongs to.
-*
-* @param value - collection value
-* @param index - collection index
-* @returns object key
-*/
-type Binary = ( value: any, index: number ) => string | symbol;
+type Unary<T> = ( value: T ) => string | symbol | number;
 
 /**
 * Specifies which group an element in the input collection belongs to.
@@ -68,7 +84,46 @@ type Binary = ( value: any, index: number ) => string | symbol;
 * @param index - collection index
 * @returns object key
 */
-type Indicator = Nullary | Unary | Binary;
+type Binary<T> = ( value: T, index: number ) => string | symbol | number;
+
+/**
+* Specifies which group an element in the input collection belongs to.
+*
+* @param value - collection value
+* @param index - collection index
+* @returns object key
+*/
+type Indicator<T> = Nullary | Unary<T> | Binary<T>;
+
+/**
+* Interface describing returned indices results.
+*/
+interface IndicesResults {
+	/**
+	* Object properties.
+	*/
+	[key: string | symbol | number]: Array<number>;
+}
+
+/**
+* Interface describing returned values results.
+*/
+interface ValuesResults<T> {
+	/**
+	* Object properties.
+	*/
+	[key: string | symbol | number]: Array<T>;
+}
+
+/**
+* Interface describing returned indices and values results.
+*/
+interface IndicesAndValuesResults<T> {
+	/**
+	* Object properties.
+	*/
+	[key: string | symbol | number]: Array<[ number, T ]>;
+}
 
 /**
 * Groups values according to an indicator function.
@@ -97,7 +152,7 @@ type Indicator = Nullary | Unary | Binary;
 * var out = groupBy( arr, indicator );
 * // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
 */
-declare function groupBy( collection: Collection, indicator: Indicator ): any; // tslint-disable-line max-line-length
+declare function groupBy<T = unknown>( collection: Collection<T>, indicator: Indicator<T> ): ValuesResults<T>;
 
 /**
 * Groups values according to an indicator function.
@@ -131,6 +186,64 @@ declare function groupBy( collection: Collection, indicator: Indicator ): any; /
 * };
 * var out = groupBy( arr, opts, indicator );
 * // returns { 'b': [ 0, 1, 3 ], 'f': [ 2 ] }
+*/
+declare function groupBy<T = unknown>( collection: Collection<T>, options: IndicesOptions<T>, indicator: Indicator<T> ): IndicesResults;
+
+/**
+* Groups values according to an indicator function.
+*
+* ## Notes
+*
+* -   When invoked, the indicator function is provided two arguments:
+*
+*     -   `value`: collection value
+*     -   `index`: collection index
+*
+* -   The value returned by an indicator function should be a value which can be serialized as an object key.
+*
+* -   If provided an empty collection, the function returns an empty object.
+*
+* @param collection - collection to group
+* @param options - function options
+* @param options.thisArg - execution context
+* @param options.returns - if `values`, values are returned; if `indices`, indices are returned; if `*`, both indices and values are returned (default: 'values')
+* @param indicator - indicator function specifying which group an element in the input collection belongs to
+* @returns group results
+*
+* @example
+* function indicator( v ) {
+*     return v[ 0 ];
+* }
+* var arr = [ 'beep', 'boop', 'foo', 'bar' ];
+*
+* var opts = {
+*     'returns': 'values'
+* };
+* var out = groupBy( arr, opts, indicator );
+* // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
+*/
+declare function groupBy<T = unknown>( collection: Collection<T>, options: ValuesOptions<T>, indicator: Indicator<T> ): ValuesResults<T>;
+
+/**
+* Groups values according to an indicator function.
+*
+* ## Notes
+*
+* -   When invoked, the indicator function is provided two arguments:
+*
+*     -   `value`: collection value
+*     -   `index`: collection index
+*
+* -   The value returned by an indicator function should be a value which can be serialized as an object key.
+*
+* -   If provided an empty collection, the function returns an empty object.
+*
+* @param collection - collection to group
+* @param options - function options
+* @param options.thisArg - execution context
+* @param options.returns - if `values`, values are returned; if `indices`, indices are returned; if `*`, both indices and values are returned (default: 'values')
+* @param indicator - indicator function specifying which group an element in the input collection belongs to
+* @returns group results
 *
 * @example
 * function indicator( v ) {
@@ -144,7 +257,7 @@ declare function groupBy( collection: Collection, indicator: Indicator ): any; /
 * var out = groupBy( arr, opts, indicator );
 * // returns { 'b': [ [ 0, 'beep' ], [ 1, 'boop' ], [ 3, 'bar' ] ], 'f': [ [ 2, 'foo' ] ] }
 */
-declare function groupBy( collection: Collection, options: Options, indicator: Indicator ): any; // tslint-disable-line max-line-length
+declare function groupBy<T = unknown>( collection: Collection<T>, options: IndicesAndValuesOptions<T>, indicator: Indicator<T> ): IndicesAndValuesResults<T>;
 
 
 // EXPORTS //
