@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Removes and returns the first element of a collection.
@@ -49,7 +49,7 @@ import { Collection } from '@stdlib/types/object';
 * var out = shift( arr );
 * // returns [ <Float64Array>[ 2.0, 3.0, 4.0, 5.0 ], 1.0 ]
 */
-declare function shift<T = any>( collection: Collection<T> ): [Collection<T>, T];
+declare function shift<T = unknown>( collection: Collection<T> ): [Collection<T>, T];
 
 
 // EXPORTS //
