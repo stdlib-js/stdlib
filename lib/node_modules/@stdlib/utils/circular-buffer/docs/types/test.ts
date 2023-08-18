@@ -21,11 +21,14 @@
 import CircularBuffer = require( './index' );
 
 
+// FIXME: add tests
+
+
 // TESTS //
 
 // The function returns a circular buffer instance...
 {
-	new CircularBuffer( 3 ); // $ExpectType CircularBuffer
+	new CircularBuffer( 3 ); // $ExpectType CircularBuffer<unknown>
 }
 
 // The compiler throws an error if the constructor function is provided an invalid number of arguments...
