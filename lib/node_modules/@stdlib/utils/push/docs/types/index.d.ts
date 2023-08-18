@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Adds one or more elements to the end of a collection.
@@ -49,7 +49,7 @@ import { Collection } from '@stdlib/types/object';
 * arr = push( arr, 6.0, 7.0 );
 * // returns <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0 ]
 */
-declare function push<T = any, U = T>( collection: Collection<T>, ...items: Array<U> ): Collection<T | U>;
+declare function push<T = unknown, U = T>( collection: Collection<T>, ...items: Array<U> ): Collection<T | U>;
 
 
 // EXPORTS //
