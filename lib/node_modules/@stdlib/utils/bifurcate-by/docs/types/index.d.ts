@@ -20,21 +20,46 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
-* Interface defining function options.
+* Interface defining base function options.
 */
-interface Options {
+interface BaseOptions<T> {
 	/**
 	* Execution context.
 	*/
-	thisArg?: any;
+	thisArg?: ThisParameterType<Predicate<T>>;
+}
 
+/**
+* Interface defining function options when returning indices.
+*/
+interface IndicesOptions<T> extends BaseOptions<T> {
 	/**
-	* If `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned.
+	* Specifies that indices should be returned.
 	*/
-	returns?: 'values' | 'indices' | '*';
+	returns: 'indices';
+}
+
+/**
+* Interface defining function options when returning values.
+*/
+interface ValuesOptions<T> extends BaseOptions<T> {
+	/**
+	* Specifies that values should be returned.
+	*/
+	returns: 'values';
+}
+
+/**
+* Interface defining function options when returning indices and values.
+*/
+interface IndicesAndValuesOptions<T> extends BaseOptions<T> {
+	/**
+	* Specifies that indices and values should be returned.
+	*/
+	returns: '*';
 }
 
 /**
@@ -50,7 +75,7 @@ type Nullary = () => boolean;
 * @param value - collection value
 * @returns boolean indicating whether an element in a collection should be placed in the first or second group
 */
-type Unary = ( value: any ) => boolean;
+type Unary<T> = ( value: T ) => boolean;
 
 /**
 * Returns a boolean indicating which group an element in an collection belongs to.
@@ -59,7 +84,7 @@ type Unary = ( value: any ) => boolean;
 * @param index - collection index
 * @returns boolean indicating whether an element in a collection should be placed in the first or second group
 */
-type Binary = ( value: any, index: number ) => boolean;
+type Binary<T> = ( value: T, index: number ) => boolean;
 
 /**
 * Returns a boolean indicating which group an element in an collection belongs to.
@@ -68,7 +93,7 @@ type Binary = ( value: any, index: number ) => boolean;
 * @param index - collection index
 * @returns boolean indicating whether an element in a collection should be placed in the first or second group
 */
-type Predicate = Nullary | Unary | Binary;
+type Predicate<T> = Nullary | Unary<T> | Binary<T>;
 
 /**
 * Splits values into two groups according to a predicate function.
@@ -83,7 +108,6 @@ type Predicate = Nullary | Unary | Binary;
 * -   If a predicate function returns a truthy value, a collection value is placed in the first group; otherwise, a collection value is placed in the second group.
 *
 * -   If provided an empty collection, the function returns an empty array.
-*
 *
 * @param collection - input collection
 * @param predicate - predicate function indicating which group an element in the input collection belongs to
@@ -98,7 +122,7 @@ type Predicate = Nullary | Unary | Binary;
 * var out = bifurcateBy( arr, predicate );
 * // returns [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
 */
-declare function bifurcateBy( collection: Collection, predicate: Predicate ): Array<Array<any>>; // tslint-disable-line max-line-length
+declare function bifurcateBy<T = unknown>( collection: Collection<T>, predicate: Predicate<T> ): [ Array<T>, Array<T> ];
 
 /**
 * Splits values into two groups according to a predicate function.
@@ -113,7 +137,6 @@ declare function bifurcateBy( collection: Collection, predicate: Predicate ): Ar
 * -   If a predicate function returns a truthy value, a collection value is placed in the first group; otherwise, a collection value is placed in the second group.
 *
 * -   If provided an empty collection, the function returns an empty array.
-*
 *
 * @param collection - input collection
 * @param options - function options
@@ -133,6 +156,64 @@ declare function bifurcateBy( collection: Collection, predicate: Predicate ): Ar
 * };
 * var out = bifurcateBy( arr, opts, predicate );
 * // returns [ [ 0, 1, 3 ], [ 2 ] ]
+*/
+declare function bifurcateBy<T = unknown>( collection: Collection<T>, options: IndicesOptions<T>, predicate: Predicate<T> ): [ Array<number>, Array<number> ];
+
+/**
+* Splits values into two groups according to a predicate function.
+*
+* ## Notes
+*
+* -   When invoked, the predicate function is provided two arguments:
+*
+*     -   `value`: collection value
+*     -   `index`: collection index
+*
+* -   If a predicate function returns a truthy value, a collection value is placed in the first group; otherwise, a collection value is placed in the second group.
+*
+* -   If provided an empty collection, the function returns an empty array.
+*
+* @param collection - input collection
+* @param options - function options
+* @param options.thisArg - execution context
+* @param options.returns - if `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned (default: 'values')
+* @param predicate - predicate function indicating which group an element in the input collection belongs to
+* @returns group results
+*
+* @example
+* function predicate( v ) {
+*     return v[ 0 ] === 'b';
+* }
+* var arr = [ 'beep', 'boop', 'foo', 'bar' ];
+*
+* var opts = {
+*     'returns': 'values'
+* };
+* var out = bifurcateBy( arr, opts, predicate );
+* // returns [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
+*/
+declare function bifurcateBy<T = unknown>( collection: Collection<T>, options: ValuesOptions<T>, predicate: Predicate<T> ): [ Array<T>, Array<T> ];
+
+/**
+* Splits values into two groups according to a predicate function.
+*
+* ## Notes
+*
+* -   When invoked, the predicate function is provided two arguments:
+*
+*     -   `value`: collection value
+*     -   `index`: collection index
+*
+* -   If a predicate function returns a truthy value, a collection value is placed in the first group; otherwise, a collection value is placed in the second group.
+*
+* -   If provided an empty collection, the function returns an empty array.
+*
+* @param collection - input collection
+* @param options - function options
+* @param options.thisArg - execution context
+* @param options.returns - if `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned (default: 'values')
+* @param predicate - predicate function indicating which group an element in the input collection belongs to
+* @returns group results
 *
 * @example
 * function predicate( v ) {
@@ -146,7 +227,7 @@ declare function bifurcateBy( collection: Collection, predicate: Predicate ): Ar
 * var out = bifurcateBy( arr, opts, predicate );
 * // returns [ [ [ 0, 'beep' ], [ 1, 'boop' ], [ 3, 'bar' ] ], [ [ 2, 'foo' ] ] ]
 */
-declare function bifurcateBy( collection: Collection, options: Options, predicate: Predicate ): Array<Array<any>>; // tslint-disable-line max-line-length
+declare function bifurcateBy<T = unknown>( collection: Collection<T>, options: IndicesAndValuesOptions<T>, predicate: Predicate<T> ): [ Array<[ number, T ]>, Array<[ number, T ]> ];
 
 
 // EXPORTS //
