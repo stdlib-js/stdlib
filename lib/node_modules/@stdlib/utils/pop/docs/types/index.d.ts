@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Removes and returns the last element of a collection.
@@ -49,7 +49,7 @@ import { Collection } from '@stdlib/types/object';
 * var out = pop( arr );
 * // returns [ <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ], 5.0 ]
 */
-declare function pop<T = any>( collection: Collection<T> ): [Collection<T>, T];
+declare function pop<T = unknown>( collection: Collection<T> ): [Collection<T>, T];
 
 
 // EXPORTS //
