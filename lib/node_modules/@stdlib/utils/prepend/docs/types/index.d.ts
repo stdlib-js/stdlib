@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Adds elements from one collection to the beginning of another collection.
@@ -49,7 +49,7 @@ import { Collection } from '@stdlib/types/object';
 * arr = prepend( arr, [ 6.0, 7.0 ] );
 * // returns <Float64Array>[ 6.0, 7.0, 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function prepend<T = any, U = any>( collection1: Collection<T>, collection2: Collection<U> ): Collection<T | U>;
+declare function prepend<T = unknown, U = unknown>( collection1: Collection<T>, collection2: Collection<U> ): Collection<T | U>;
 
 
 // EXPORTS //
