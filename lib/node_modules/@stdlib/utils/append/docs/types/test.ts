@@ -23,10 +23,10 @@ import append = require( './index' );
 
 // The function returns a collection...
 {
-	append( [ 0, 0 ], [ 1, 1 ] ); // $ExpectType Collection
-	append( [ false, true ], [ 0, 1 ] ); // $ExpectType Collection
-	append( [ 'abc', 'abc' ], [ 0, 1 ] ); // $ExpectType Collection
-	append( [ true, true ], [ false, false ] ); // $ExpectType Collection
+	append( [ 0, 0 ], [ 1, 1 ] ); // $ExpectType Collection<number>
+	append( [ false, true ], [ 0, 1 ] ); // $ExpectType Collection<number | boolean>
+	append( [ 'abc', 'abc' ], [ 0, 1 ] ); // $ExpectType Collection<string | number>
+	append( [ true, true ], [ false, false ] ); // $ExpectType Collection<boolean>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
