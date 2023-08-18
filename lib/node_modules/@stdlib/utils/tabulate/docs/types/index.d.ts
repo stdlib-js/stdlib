@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Three-element array holding a unique value, the value count, and the frequency percentage.
@@ -49,7 +49,7 @@ type TableEntry<T> = [ T, number, number ];
 * var out = tabulate( arr );
 * // returns [ [ 'beep', 2, 0.5 ], [ 'boop', 1, 0.25 ], [ 'foo', 1, 0.25 ] ]
 */
-declare function tabulate<T = any>( collection: Collection<T> ): Array<TableEntry<T>>; // tslint-disable-line max-line-length
+declare function tabulate<T = unknown>( collection: Collection<T> ): Array<TableEntry<T>>;
 
 
 // EXPORTS //
