@@ -192,7 +192,7 @@ declare function bifurcateBy<T = unknown>( collection: Collection<T>, options: I
 * var out = bifurcateBy( arr, opts, predicate );
 * // returns [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
 */
-declare function bifurcateBy<T = unknown>( collection: Collection<T>, options: ValuesOptions<T>, predicate: Predicate<T> ): [ Array<T>, Array<T> ];
+declare function bifurcateBy<T = unknown>( collection: Collection<T>, options: ValuesOptions<T> | BaseOptions<T>, predicate: Predicate<T> ): [ Array<T>, Array<T> ];
 
 /**
 * Splits values into two groups according to a predicate function.
