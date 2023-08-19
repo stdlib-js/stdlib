@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Returns the positive difference between `x` and `y` if `x > y`; otherwise, returns `0`.
