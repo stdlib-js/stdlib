@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Tests if a value is a blank string (i.e., an empty string or a string consisting only of whitespace characters).
