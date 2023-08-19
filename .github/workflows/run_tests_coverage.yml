@@ -244,19 +244,19 @@ jobs:
       # Copy artifacts to the repository:
       - name: 'Copy artifacts to the repository'
         run: |
-            cp -R ./artifacts/* ./www-test-code-coverage
+          cp -R ./artifacts/* ./www-test-code-coverage
 
-            # Get commit SHA and timestamp:
-            commit_sha=$(git rev-parse HEAD)
-            commit_timestamp=$(git show -s --format=%ci $commit_sha)
+          # Get commit SHA and timestamp:
+          commit_sha=$(git rev-parse HEAD)
+          commit_timestamp=$(git show -s --format=%ci $commit_sha)
 
-            # Append coverage to ndjson files:
-            files=$(find ./artifacts -name 'index.html')
-            for file in $files; do
-              sed -i 's/\/artifacts\//\/www-test-code-coverage\//g' $file
-              coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" $file | awk -F/ '{ print $1 "," $2 "," ($1/$2)*100 }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
-              echo $coverage >> $(dirname $file)/coverage.ndjson
-            done
+          # Append coverage to ndjson files:
+          files=$(find ./artifacts -name 'index.html')
+          for file in $files; do
+            file=${file//artifacts/www-test-code-coverage}
+            coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" $file | awk -F/ { if ($2 != 0) print $1 "," $2 "," ($1/$2)*100; else print $1 "," $2 ",100" }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
+            echo $coverage >> $(dirname $file)/coverage.ndjson
+          done
 
       # Commit and push changes:
       - name: 'Commit and push changes'
@@ -270,4 +270,3 @@ jobs:
           git add .
           git commit -m "Update artifacts"
           git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" $BRANCH_NAME
-
