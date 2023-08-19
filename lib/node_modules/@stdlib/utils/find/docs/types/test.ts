@@ -18,7 +18,15 @@
 
 import find = require( './index' );
 
-const condition = ( val: number ): boolean => val > 20;
+/**
+* Condition function.
+*
+* @param v - value
+* @returns boolean result
+*/
+function condition( v: number ): boolean {
+	return ( v > 20 );
+}
 
 
 // TESTS //
@@ -26,11 +34,23 @@ const condition = ( val: number ): boolean => val > 20;
 // The function returns an array of indices, element values, or arrays of index-value pairs...
 {
 	const arr = [ 30, 20, 50, 60, 10 ];
-	find( arr, condition ); // $ExpectType any[] | [number, any][]
-	const opts = {
+
+	find( arr, condition ); // $ExpectType number[]
+
+	const opts1 = {
 		'returns': 'indices' as 'indices'
 	};
-	find( arr, opts, condition ); // $ExpectType any[] | [number, any][]
+	find( arr, opts1, condition ); // $ExpectType number[]
+
+	const opts2 = {
+		'returns': 'values' as 'values'
+	};
+	find( arr, opts2, condition ); // $ExpectType number[]
+
+	const opts3 = {
+		'returns': '*' as '*'
+	};
+	find( arr, opts3, condition ); // $ExpectType [number, number][]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
@@ -43,6 +63,7 @@ const condition = ( val: number ): boolean => val > 20;
 // The compiler throws an error if the function is provided a last argument which is not a function...
 {
 	const arr = [ 30, 20, 50, 60, 10 ];
+
 	find( arr, false ); // $ExpectError
 	find( arr, true ); // $ExpectError
 	find( arr, 32 ); // $ExpectError
@@ -61,12 +82,14 @@ const condition = ( val: number ): boolean => val > 20;
 // The compiler throws an error if the function is provided an options argument which is not an object...
 {
 	const arr = [ 30, 20, 50, 60, 10 ];
+
 	find( arr, null, condition ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a `returns` option which is not one of 'indices', 'values', or '*'...
 {
 	const arr = [ 30, 20, 50, 60, 10 ];
+
 	find( arr, { 'returns': '5' }, condition ); // $ExpectError
 	find( arr, { 'returns': 123 }, condition ); // $ExpectError
 	find( arr, { 'returns': [] }, condition ); // $ExpectError
@@ -77,6 +100,7 @@ const condition = ( val: number ): boolean => val > 20;
 // The compiler throws an error if the function is provided a `k` option which is not a number...
 {
 	const arr = [ 30, 20, 50, 60, 10 ];
+
 	find( arr, { 'k': '5' }, condition ); // $ExpectError
 	find( arr, { 'k': false }, condition ); // $ExpectError
 	find( arr, { 'k': true }, condition ); // $ExpectError
@@ -88,6 +112,7 @@ const condition = ( val: number ): boolean => val > 20;
 // The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const arr = [ 30, 20, 50, 60, 10 ];
+
 	find(); // $ExpectError
 	find( arr ); // $ExpectError
 	find( arr, {}, condition, 16 ); // $ExpectError
