@@ -254,7 +254,7 @@ jobs:
           files=$(find ./artifacts -name 'index.html')
           for file in $files; do
             file=${file//artifacts/www-test-code-coverage}
-            coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" $file | awk -F/ { if ($2 != 0) print $1 "," $2 "," ($1/$2)*100; else print $1 "," $2 ",100" }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
+            coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" $file | awk -F/ '{ if ($2 != 0) print $1 "," $2 "," ($1/$2)*100; else print $1 "," $2 ",100" }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
             echo $coverage >> $(dirname $file)/coverage.ndjson
           done
 
