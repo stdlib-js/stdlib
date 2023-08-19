@@ -222,7 +222,7 @@ declare function groupBy<T = unknown>( collection: Collection<T>, options: Indic
 * var out = groupBy( arr, opts, indicator );
 * // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
 */
-declare function groupBy<T = unknown>( collection: Collection<T>, options: ValuesOptions<T>, indicator: Indicator<T> ): ValuesResults<T>;
+declare function groupBy<T = unknown>( collection: Collection<T>, options: ValuesOptions<T> | BaseOptions<T>, indicator: Indicator<T> ): ValuesResults<T>;
 
 /**
 * Groups values according to an indicator function.
