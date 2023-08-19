@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Interface defining function options.
@@ -103,7 +103,7 @@ type Indicator<T> = Nullary | Unary<T> | Binary<T>;
 * var out = tabulateBy( arr, indicator );
 * // returns [ [ 'b', 3, 0.75 ], [ 'f', 1, 0.25 ] ]
 */
-declare function tabulateBy<T = any>( collection: Collection<T>, indicator: Indicator<T> ): Array<TableEntry<T>>; // tslint-disable-line max-line-length
+declare function tabulateBy<T = unknown>( collection: Collection<T>, indicator: Indicator<T> ): Array<TableEntry<T>>;
 
 /**
 * Generates a frequency table according to a provided function.
@@ -143,7 +143,7 @@ declare function tabulateBy<T = any>( collection: Collection<T>, indicator: Indi
 * var out = tabulateBy( arr, opts, indicator );
 * // returns [ [ 'b', 3, 0.75 ], [ 'f', 1, 0.25 ] ]
 */
-declare function tabulateBy<T = any>( collection: Collection<T>, options: Options, indicator: Indicator<T> ): Array<TableEntry<T>>; // tslint-disable-line max-line-length
+declare function tabulateBy<T = unknown>( collection: Collection<T>, options: Options, indicator: Indicator<T> ): Array<TableEntry<T>>;
 
 
 // EXPORTS //
