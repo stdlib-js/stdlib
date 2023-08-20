@@ -51,7 +51,7 @@ interface Namespace {
 	*
 	* @param str - format string
 	* @param args - collections or values
-	* @throws {RangeError} provided collections must have the same length
+	* @throws provided collections must have the same length
 	*
 	* @example
 	* var ns.logEach = require( `@stdlib/console/log-each` );

@@ -27,7 +27,7 @@
 *
 * @param str - format string
 * @param args - collections or values
-* @throws {RangeError} provided collections must have the same length
+* @throws provided collections must have the same length
 *
 * @example
 * var logEach = require( `@stdlib/console/log-each` );

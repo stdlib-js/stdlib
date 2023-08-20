@@ -23,7 +23,7 @@ import dsvariance = require( './index' );
 
 // The function returns a number...
 {
-	const x = new Float64Array( 10 );
+	const x = new Float32Array( 10 );
 
 	dsvariance( x.length, 1, x, 1 ); // $ExpectType number
 }
