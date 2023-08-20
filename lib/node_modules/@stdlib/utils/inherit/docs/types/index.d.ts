@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Implements prototypical inheritance by replacing the prototype of one constructor with the prototype of another constructor.
