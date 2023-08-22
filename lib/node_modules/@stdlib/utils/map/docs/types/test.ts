@@ -25,27 +25,27 @@ import map = require( './index' );
 * @param v - argument
 * @returns result
 */
-function clbk( v: any ): any {
+function clbk( v: number ): number {
 	return v;
 }
 
 
 // TESTS //
 
-// The function returns a collection when provided a collection...
+// The function returns an array when provided a collection...
 {
 	const arr = [ 1, 2, 3, 4, 5, 6 ];
 
-	map( arr, clbk ); // $ExpectType Collection
-	map( arr, clbk, {} ); // $ExpectType Collection
+	map( arr, clbk ); // $ExpectType number[]
+	map( arr, clbk, {} ); // $ExpectType number[]
 }
 
 // The function returns an ndarray when provided an ndarray...
 {
-	const arr = array( [ 1, 2, 3, 4, 5, 6 ] );
+	const arr = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
 
-	map( arr, clbk ); // $ExpectType ndarray
-	map( arr, clbk, {} ); // $ExpectType ndarray
+	map( arr, clbk ); // $ExpectType typedndarray<number>
+	map( arr, clbk, {} ); // $ExpectType typedndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument other than a collection or ndarray...
@@ -128,17 +128,17 @@ function clbk( v: any ): any {
 	const arr = [ 1, 2, 3, 4, 5, 6 ];
 	const out = [ 0, 0, 0, 0, 0, 0 ];
 
-	map.assign( arr, out, clbk ); // $ExpectType Collection
-	map.assign( arr, out, clbk, {} ); // $ExpectType Collection
+	map.assign( arr, out, clbk ); // $ExpectType Collection<number>
+	map.assign( arr, out, clbk, {} ); // $ExpectType Collection<number>
 }
 
 // The `assign` method returns an ndarray when provided an ndarray...
 {
-	const arr = array( [ 1, 2, 3, 4, 5, 6 ] );
-	const out = array( [ 0, 0, 0, 0, 0, 0 ] );
+	const arr = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
+	const out = array<number>( [ 0, 0, 0, 0, 0, 0 ] );
 
-	map.assign( arr, out, clbk ); // $ExpectType ndarray
-	map.assign( arr, out, clbk, {} ); // $ExpectType ndarray
+	map.assign( arr, out, clbk ); // $ExpectType typedndarray<number>
+	map.assign( arr, out, clbk, {} ); // $ExpectType typedndarray<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument other than a collection or ndarray...
