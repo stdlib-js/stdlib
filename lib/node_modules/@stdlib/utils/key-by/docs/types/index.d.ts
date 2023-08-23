@@ -20,25 +20,30 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
-* Function invoked for each collection element returning a key.
+* Object key.
+*/
+type Key = string | symbol | number;
+
+/**
+* Function which returns a key for each collection element.
 *
 * @param value - collection value
 */
-type Unary<T, V> = ( this: T, value: V ) => string;
+type Unary<T, V> = ( this: V, value: T ) => Key;
 
 /**
-* Function invoked for each collection element returning a key.
+* Function which returns a key for each collection element.
 *
 * @param value - collection value
 * @param index - collection index
 */
-type Binary<T, V> = ( this: T, value: V, index: number ) => string;
+type Binary<T, V> = ( this: V, value: T, index: number ) => Key;
 
 /**
-* Function invoked for each collection element returning a key.
+* Function which returns a key for each collection element.
 *
 * @param value - collection value
 * @param index - collection index
@@ -78,7 +83,7 @@ type Callback<T, V> = Unary<T, V> | Binary<T, V>;
 * var obj = keyBy( collection, toKey );
 * // returns { 'beep': { 'name': 'beep', 'a': 1 }, 'boop': { 'name': 'boop', 'b': 2 } }
 */
-declare function keyBy<T, V>( collection: Collection<V>, fcn: Callback<T, V>, thisArg?: ThisParameterType<Callback<T, V>> ): Record<string, V>; // tslint-disable-line max-line-length
+declare function keyBy<T = unknown, V = unknown>( collection: Collection<T>, fcn: Callback<T, V>, thisArg?: ThisParameterType<Callback<T, V>> ): Record<Key, T>;
 
 
 // EXPORTS //
