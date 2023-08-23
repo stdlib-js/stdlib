@@ -16,11 +16,39 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
+
+/**
+* Object key.
+*/
+type Key = string | symbol | number;
+
+/**
+* Function which returns a key for each collection element.
+*
+* @param value - collection value
+*/
+type Unary<T, V> = ( this: V, value: T ) => Key;
+
+/**
+* Function which returns a key for each collection element.
+*
+* @param value - collection value
+* @param index - collection index
+*/
+type Binary<T, V> = ( this: V, value: T, index: number ) => Key;
+
+/**
+* Function which returns a key for each collection element.
+*
+* @param value - collection value
+* @param index - collection index
+*/
+type Callback<T, V> = Unary<T, V> | Binary<T, V>;
 
 /**
 * Converts a collection to an object whose keys are determined by a provided function and whose values are the collection values, iterating from right to left.
@@ -55,7 +83,7 @@ import { Collection } from '@stdlib/types/object';
 * var obj = keyByRight( collection, toKey );
 * // returns { 'boop': { 'name': 'boop', 'b': 2 }, 'beep': { 'name': 'beep', 'a': 1 } }
 */
-declare function keyByRight( collection: Collection, fcn: Function, thisArg?: any ): any; // tslint-disable-line max-line-length
+declare function keyByRight<T = unknown, V = unknown>( collection: Collection<T>, fcn: Callback<T, V>, thisArg?: ThisParameterType<Callback<T, V>> ): Record<Key, T>;
 
 
 // EXPORTS //
