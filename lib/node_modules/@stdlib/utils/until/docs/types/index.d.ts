@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Checks whether an iteration number passes a test.
@@ -51,7 +51,7 @@ type Predicate = ( i: number ) => boolean;
 *
 * until( predicate, beep );
 */
-declare function until( fcn: Function, predicate: Predicate, thisArg?: any ): void; // tslint:disable-line: max-line-length
+declare function until<T extends Function>( fcn: T, predicate: Predicate, thisArg?: ThisParameterType<T> ): void;
 
 
 // EXPORTS //
