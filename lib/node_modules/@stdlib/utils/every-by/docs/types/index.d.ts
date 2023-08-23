@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -27,7 +27,7 @@ import { Collection } from '@stdlib/types/array';
 *
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Nullary = () => boolean;
+type Nullary<U> = ( this: U ) => boolean;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -35,26 +35,16 @@ type Nullary = () => boolean;
 * @param value - collection value
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Unary<T> = ( value: T ) => boolean;
-
-/**
-* Checks whether an element in a collection passes a test.
-*
-* @param value - collection value
-* @param index - collection index
-* @returns boolean indicating whether an element in a collection passes a test
-*/
-type Binary<T> = ( value: T, index: number ) => boolean;
+type Unary<T, U> = ( this: U, value: T ) => boolean;
 
 /**
 * Checks whether an element in a collection passes a test.
 *
 * @param value - collection value
 * @param index - collection index
-* @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Ternary<T> = ( value: T, index: number, collection: Collection<T> ) => boolean;
+type Binary<T, U> = ( this: U, value: T, index: number ) => boolean;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -64,7 +54,17 @@ type Ternary<T> = ( value: T, index: number, collection: Collection<T> ) => bool
 * @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Predicate<T> = Nullary | Unary<T> | Binary<T> | Ternary<T>;
+type Ternary<T, U> = ( this: U, value: T, index: number, collection: Collection<T> ) => boolean;
+
+/**
+* Checks whether an element in a collection passes a test.
+*
+* @param value - collection value
+* @param index - collection index
+* @param collection - input collection
+* @returns boolean indicating whether an element in a collection passes a test
+*/
+type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
 * Tests whether all elements in a collection pass a test implemented by a predicate function.
@@ -96,7 +96,7 @@ type Predicate<T> = Nullary | Unary<T> | Binary<T> | Ternary<T>;
 * var bool = everyBy( arr, isPositive );
 * // returns true
 */
-declare function everyBy<T = unknown>( collection: Collection<T>, predicate: Predicate<T>, thisArg?: ThisParameterType<Predicate<T>> ): boolean;
+declare function everyBy<T = unknown, U = unknown>( collection: Collection<T>, predicate: Predicate<T, U>, thisArg?: ThisParameterType<Predicate<T, U>> ): boolean;
 
 
 // EXPORTS //
