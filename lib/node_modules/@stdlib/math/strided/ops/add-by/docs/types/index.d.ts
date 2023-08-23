@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -27,7 +27,7 @@ import { Collection, ArrayLike } from '@stdlib/types/array';
 *
 * @returns accessed values
 */
-type Nullary = () => ArrayLike<number> | void;
+type Nullary<W> = ( this: W ) => ArrayLike<number> | void;
 
 /**
 * Returns accessed values.
@@ -35,26 +35,16 @@ type Nullary = () => ArrayLike<number> | void;
 * @param values - array element values
 * @returns accessed values
 */
-type Unary<T, U> = ( values: [ T, U ] ) => ArrayLike<number> | void;
-
-/**
-* Returns accessed values.
-*
-* @param values - array element values
-* @param idx - iteration index
-* @returns accessed values
-*/
-type Binary<T, U> = ( values: [ T, U ], idx: number ) => ArrayLike<number> | void;
+type Unary<T, U, W> = ( this: W, values: [ T, U ] ) => ArrayLike<number> | void;
 
 /**
 * Returns accessed values.
 *
 * @param values - array element values
 * @param idx - iteration index
-* @param indices - strided indices (offset + idx*stride)
 * @returns accessed values
 */
-type Ternary<T, U> = ( values: [ T, U ], idx: number, indices: Array<number> ) => ArrayLike<number> | void;
+type Binary<T, U, W> = ( this: W, values: [ T, U ], idx: number ) => ArrayLike<number> | void;
 
 /**
 * Returns accessed values.
@@ -62,10 +52,9 @@ type Ternary<T, U> = ( values: [ T, U ], idx: number, indices: Array<number> ) =
 * @param values - array element values
 * @param idx - iteration index
 * @param indices - strided indices (offset + idx*stride)
-* @param arrays - input and output arrays
 * @returns accessed values
 */
-type Quaternary<T, U, V> = ( values: [ T, U ], idx: number, indices: Array<number>, arrays: [ Collection<T>, Collection<U>, Collection<V> ] ) => ArrayLike<number> | void;
+type Ternary<T, U, W> = ( this: W, values: [ T, U ], idx: number, indices: Array<number> ) => ArrayLike<number> | void;
 
 /**
 * Returns accessed values.
@@ -76,7 +65,18 @@ type Quaternary<T, U, V> = ( values: [ T, U ], idx: number, indices: Array<numbe
 * @param arrays - input and output arrays
 * @returns accessed values
 */
-type Callback<T, U, V> = Nullary | Unary<T, U> | Binary<T, U> | Ternary<T, U> | Quaternary<T, U, V>;
+type Quaternary<T, U, V, W> = ( this: W, values: [ T, U ], idx: number, indices: Array<number>, arrays: [ Collection<T>, Collection<U>, Collection<V> ] ) => ArrayLike<number> | void;
+
+/**
+* Returns accessed values.
+*
+* @param values - array element values
+* @param idx - iteration index
+* @param indices - strided indices (offset + idx*stride)
+* @param arrays - input and output arrays
+* @returns accessed values
+*/
+type Callback<T, U, V, W> = Nullary<W> | Unary<T, U, W> | Binary<T, U, W> | Ternary<T, U, W> | Quaternary<T, U, V, W>;
 
 /**
 * Interface describing `addBy`.
@@ -108,7 +108,7 @@ interface Routine {
 	* addBy( x.length, x, 1, y, 1, z, 1, accessor );
 	* // z => [ 12.0, 14.0, 16.0, 18.0, 20.0 ]
 	*/
-	<T = unknown, U = unknown, V = unknown>( N: number, x: Collection<T>, strideX: number, y: Collection<U>, strideY: number, z: Collection<V>, strideZ: number, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Collection<V | number>;
+	<T = unknown, U = unknown, V = unknown, W = unknown>( N: number, x: Collection<T>, strideX: number, y: Collection<U>, strideY: number, z: Collection<V>, strideZ: number, clbk: Callback<T, U, V, W>, thisArg?: ThisParameterType<Callback<T, U, V, W>> ): Collection<V | number>;
 
 	/**
 	* Performs element-wise addition of two strided arrays via a callback function and assigns each result to an element in an output strided array using alternative indexing semantics.
@@ -139,7 +139,7 @@ interface Routine {
 	* addBy.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, accessor );
 	* // z => [ 12.0, 14.0, 16.0, 18.0, 20.0 ]
 	*/
-	ndarray<T = unknown, U = unknown, V = unknown>( N: number, x: Collection<T>, strideX: number, offsetX: number, y: Collection<U>, strideY: number, offsetY: number, z: Collection<V>, strideZ: number, offsetZ: number, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Collection<V | number>;
+	ndarray<T = unknown, U = unknown, V = unknown, W = unknown>( N: number, x: Collection<T>, strideX: number, offsetX: number, y: Collection<U>, strideY: number, offsetY: number, z: Collection<V>, strideZ: number, offsetZ: number, clbk: Callback<T, U, V, W>, thisArg?: ThisParameterType<Callback<T, U, V, W>> ): Collection<V | number>;
 }
 
 /**
