@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -27,7 +27,7 @@ import { Collection } from '@stdlib/types/array';
 *
 * @returns accessed value
 */
-type Nullary = () => number | void;
+type Nullary<V> = ( this: V ) => number | void;
 
 /**
 * Returns an accessed value.
@@ -35,26 +35,16 @@ type Nullary = () => number | void;
 * @param value - array element
 * @returns accessed value
 */
-type Unary<T> = ( value: T ) => number | void;
-
-/**
-* Returns an accessed value.
-*
-* @param value - array element
-* @param idx - iteration index
-* @returns accessed value
-*/
-type Binary<T> = ( value: T, idx: number ) => number | void;
+type Unary<T, V> = ( this: V, value: T ) => number | void;
 
 /**
 * Returns an accessed value.
 *
 * @param value - array element
 * @param idx - iteration index
-* @param xi - strided index (offsetX + idx*strideX)
 * @returns accessed value
 */
-type Ternary<T> = ( value: T, idx: number, xi: number ) => number | void;
+type Binary<T, V> = ( this: V, value: T, idx: number ) => number | void;
 
 /**
 * Returns an accessed value.
@@ -62,10 +52,10 @@ type Ternary<T> = ( value: T, idx: number, xi: number ) => number | void;
 * @param value - array element
 * @param idx - iteration index
 * @param xi - strided index (offsetX + idx*strideX)
-* @param yi - strided index (offsetY + idx*strideY)
 * @returns accessed value
 */
-type Quaternary<T> = ( value: T, idx: number, xi: number, yi: number ) => number | void;
+type Ternary<T, V> = ( this: V, value: T, idx: number, xi: number ) => number | void;
+
 /**
 * Returns an accessed value.
 *
@@ -73,10 +63,9 @@ type Quaternary<T> = ( value: T, idx: number, xi: number, yi: number ) => number
 * @param idx - iteration index
 * @param xi - strided index (offsetX + idx*strideX)
 * @param yi - strided index (offsetY + idx*strideY)
-* @param x - input array
 * @returns accessed value
 */
-type Quinary<T> = ( value: T, idx: number, xi: number, yi: number, x: Collection<T> ) => number | void;
+type Quaternary<T, V> = ( this: V, value: T, idx: number, xi: number, yi: number ) => number | void;
 /**
 * Returns an accessed value.
 *
@@ -85,10 +74,9 @@ type Quinary<T> = ( value: T, idx: number, xi: number, yi: number, x: Collection
 * @param xi - strided index (offsetX + idx*strideX)
 * @param yi - strided index (offsetY + idx*strideY)
 * @param x - input array
-* @param y - output array
 * @returns accessed value
 */
-type Senary<T, U> = ( value: T, idx: number, xi: number, yi: number, x: Collection<T>, y: Collection<U> ) => number | void;
+type Quinary<T, V> = ( this: V, value: T, idx: number, xi: number, yi: number, x: Collection<T> ) => number | void;
 /**
 * Returns an accessed value.
 *
@@ -100,7 +88,19 @@ type Senary<T, U> = ( value: T, idx: number, xi: number, yi: number, x: Collecti
 * @param y - output array
 * @returns accessed value
 */
-type Callback<T, U> = Nullary | Unary<T> | Binary<T> | Ternary<T> | Quaternary<T> | Quinary<T> | Senary<T, U>;
+type Senary<T, U, V> = ( this: V, value: T, idx: number, xi: number, yi: number, x: Collection<T>, y: Collection<U> ) => number | void;
+/**
+* Returns an accessed value.
+*
+* @param value - array element
+* @param idx - iteration index
+* @param xi - strided index (offsetX + idx*strideX)
+* @param yi - strided index (offsetY + idx*strideY)
+* @param x - input array
+* @param y - output array
+* @returns accessed value
+*/
+type Callback<T, U, V> = Nullary<V> | Unary<T, V> | Binary<T, V> | Ternary<T, V> | Quaternary<T, V> | Quinary<T, V> | Senary<T, U, V>;
 
 /**
 * Interface describing `absBy`.
@@ -129,7 +129,7 @@ interface Routine {
 	* absBy( x.length, x, 1, y, 1, accessor );
 	* // y => [ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 	*/
-	<T = unknown, U = unknown>( N: number, x: Collection<T>, strideX: number, y: Collection<U>, strideY: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Collection<U | number>;
+	<T = unknown, U = unknown, V = unknown>( N: number, x: Collection<T>, strideX: number, y: Collection<U>, strideY: number, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Collection<U | number>;
 
 	/**
 	* Computes the absolute value of each element retrieved from a strided input array `x` via a callback function and assigns each result to an element in a strided output array `y` using alternative indexing semantics.
@@ -156,7 +156,7 @@ interface Routine {
 	* absBy.ndarray( x.length, x, 1, 0, y, 1, 0, accessor );
 	* // y => [ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 	*/
-	ndarray<T = unknown, U = unknown>( N: number, x: Collection<T>, strideX: number, offsetX: number, y: Collection<U>, strideY: number, offsetY: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Collection<U | number>;
+	ndarray<T = unknown, U = unknown, V = unknown>( N: number, x: Collection<T>, strideX: number, offsetX: number, y: Collection<U>, strideY: number, offsetY: number, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Collection<U | number>;
 }
 
 /**
