@@ -51,7 +51,7 @@ type Predicate = ( i: number ) => boolean;
 *
 * whilst( predicate, beep );
 */
-declare function whilst<T extends Function>( predicate: Predicate, fcn: T, thisArg?: ThisParameterType<T> ): void; // tslint:disable-line: max-line-length
+declare function whilst<T extends Function>( predicate: Predicate, fcn: T, thisArg?: ThisParameterType<T> ): void;
 
 
 // EXPORTS //
