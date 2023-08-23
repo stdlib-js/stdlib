@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -25,11 +25,11 @@ import { Collection } from '@stdlib/types/array';
 /**
 * Interface defining function options.
 */
-interface Options<T> {
+interface Options<T, U> {
 	/**
 	* Execution context.
 	*/
-	thisArg?: ThisParameterType<Indicator<T>>;
+	thisArg?: ThisParameterType<Indicator<T, U>>;
 }
 
 /**
@@ -37,7 +37,7 @@ interface Options<T> {
 *
 * @returns object key
 */
-type Nullary = () => string | symbol | number;
+type Nullary<U> = ( this: U ) => string | symbol | number;
 
 /**
 * Specifies which group an element in the input collection belongs to.
@@ -45,16 +45,7 @@ type Nullary = () => string | symbol | number;
 * @param value - collection value
 * @returns object key
 */
-type Unary<T> = ( value: T ) => string | symbol | number;
-
-/**
-* Specifies which group an element in the input collection belongs to.
-*
-* @param value - collection value
-* @param index - collection index
-* @returns object key
-*/
-type Binary<T> = ( value: T, index: number ) => string | symbol | number;
+type Unary<T, U> = ( this: U, value: T ) => string | symbol | number;
 
 /**
 * Specifies which group an element in the input collection belongs to.
@@ -63,7 +54,16 @@ type Binary<T> = ( value: T, index: number ) => string | symbol | number;
 * @param index - collection index
 * @returns object key
 */
-type Indicator<T> = Nullary | Unary<T> | Binary<T>;
+type Binary<T, U> = ( this: U, value: T, index: number ) => string | symbol | number;
+
+/**
+* Specifies which group an element in the input collection belongs to.
+*
+* @param value - collection value
+* @param index - collection index
+* @returns object key
+*/
+type Indicator<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U>;
 
 /**
 * Interface describing returned results.
@@ -102,7 +102,7 @@ interface Results<T> {
 * var out = countBy( arr, indicator );
 * // returns { 'b': 3, 'f': 1 }
 */
-declare function countBy<T = unknown>( collection: Collection<T>, indicator: Indicator<T> ): Results<T>;
+declare function countBy<T = unknown, U = unknown>( collection: Collection<T>, indicator: Indicator<T, U> ): Results<T>; // tslint:disable-line:no-unnecessary-generics
 
 /**
 * Groups values according to an indicator function and returns group counts.
@@ -133,7 +133,7 @@ declare function countBy<T = unknown>( collection: Collection<T>, indicator: Ind
 * var out = countBy( arr, indicator );
 * // returns { 'b': 3, 'f': 1 }
 */
-declare function countBy<T = unknown>( collection: Collection<T>, options: Options<T>, indicator: Indicator<T> ): Results<T>;
+declare function countBy<T = unknown, U = unknown>( collection: Collection<T>, options: Options<T, U>, indicator: Indicator<T, U> ): Results<T>;
 
 
 // EXPORTS //
