@@ -23,7 +23,7 @@ import zeros3d = require( './index' );
 
 // The function returns a nested array...
 {
-	zeros3d( [ 1, 1, 3 ] ); // $ExpectType number[][][]
+	zeros3d( [ 1, 1, 3 ] ); // $ExpectType Array3D<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of numbers...

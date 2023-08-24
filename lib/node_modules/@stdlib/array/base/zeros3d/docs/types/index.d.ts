@@ -21,6 +21,12 @@
 /// <reference types="@stdlib/types"/>
 
 import { Collection } from '@stdlib/types/array';
+import { Shape3D } from '@stdlib/types/ndarray';
+
+/**
+* Three-dimensional nested array.
+*/
+type Array3D<T> = Array<Array<Array<T>>>;
 
 /**
 * Returns a zero-filled three-dimensional nested array.
@@ -32,7 +38,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = zeros3d( [ 1, 1, 3 ] );
 * // returns [ [ [ 0.0, 0.0, 0.0 ] ] ]
 */
-declare function zeros3d( shape: Collection<number> ): Array<Array<Array<number>>>;
+declare function zeros3d( shape: Shape3D ): Array3D<number>;
 
 
 // EXPORTS //
