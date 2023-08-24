@@ -148,7 +148,7 @@ type GetIndexedArrayLike<T> = ( arr: Collection<T>, idx: number ) => T | void;
 * @param idx - element index
 * @returns element value
 */
-type GetAccessorArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number ) => T | void; // tslint:disable-line:max-line-length
+type GetAccessorArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number ) => T | void;
 
 /**
 * Sets an element in a `Float64Array`.
@@ -238,7 +238,7 @@ type SetUint8c = ( arr: Uint8ClampedArray, idx: number, value: number ) => void;
 * @param idx - element index
 * @param value - value to set
 */
-type SetComplex128 = ( arr: Complex128Array, idx: number, value: ComplexLike ) => void; // tslint:disable-line:max-line-length
+type SetComplex128 = ( arr: Complex128Array, idx: number, value: ComplexLike ) => void;
 
 /**
 * Sets an element in a `Complex64Array`.
@@ -247,7 +247,7 @@ type SetComplex128 = ( arr: Complex128Array, idx: number, value: ComplexLike ) =
 * @param idx - element index
 * @param value - value to set
 */
-type SetComplex64 = ( arr: Complex64Array, idx: number, value: ComplexLike ) => void; // tslint:disable-line:max-line-length
+type SetComplex64 = ( arr: Complex64Array, idx: number, value: ComplexLike ) => void;
 
 /**
 * Sets an element in a generic `Array`.
@@ -265,7 +265,7 @@ type SetGeneric<T> = ( arr: Array<T>, idx: number, value: T ) => void;
 * @param idx - element index
 * @param value - value to set
 */
-type SetIndexedArrayLike<T> = ( arr: Collection<T>, idx: number, value: T ) => void; // tslint:disable-line:max-line-length
+type SetIndexedArrayLike<T> = ( arr: Collection<T>, idx: number, value: T ) => void;
 
 /**
 * Sets an element in an array-like object supporting the get/set protocol.
@@ -274,7 +274,7 @@ type SetIndexedArrayLike<T> = ( arr: Collection<T>, idx: number, value: T ) => v
 * @param idx - element index
 * @param value - value to set
 */
-type SetAccessorArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number, value: T ) => void; // tslint:disable-line:max-line-length
+type SetAccessorArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number, value: T ) => void;
 
 /**
 * Interface describing the output object for a `Float64Array`.
@@ -830,7 +830,7 @@ declare function accessors( x: Complex64Array ): Complex64AccessorObject;
 * var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
-declare function accessors<T = any>( x: AccessorArrayLike<T> ): GetSetAccessorObject<T>; // tslint:disable-line:max-line-length
+declare function accessors<T = unknown>( x: AccessorArrayLike<T> ): GetSetAccessorObject<T>;
 
 /**
 * Returns element accessors for a provided "generic" array.
@@ -856,7 +856,7 @@ declare function accessors<T = any>( x: AccessorArrayLike<T> ): GetSetAccessorOb
 * var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
-declare function accessors<T = any>( x: Array<T> ): GenericAccessorObject<T>;
+declare function accessors<T = unknown>( x: Array<T> ): GenericAccessorObject<T>;
 
 /**
 * Returns element accessors for a provided array-like object.
@@ -888,7 +888,7 @@ declare function accessors<T = any>( x: Array<T> ): GenericAccessorObject<T>;
 * var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
-declare function accessors<T = any>( x: Collection<T> ): IndexedAccessorObject<T>; // tslint:disable-line:max-line-length
+declare function accessors<T = unknown>( x: Collection<T> ): IndexedAccessorObject<T>;
 
 
 // EXPORTS //
