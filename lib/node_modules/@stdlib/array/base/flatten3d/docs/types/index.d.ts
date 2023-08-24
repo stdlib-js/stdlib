@@ -20,12 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
-/**
-* Three-dimensional nested array.
-*/
-type Array3D<T> = Array<Array<Collection<T>>>;
+import { Collection, Array3D } from '@stdlib/types/array';
+import { Shape3D } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing `flatten3d`.
@@ -55,7 +51,7 @@ interface Flatten3d {
 	* var out = flatten3d( x, [ 2, 1, 2 ], true );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown>( x: Array3D<T>, shape: Collection<number>, colexicographic: boolean ): Array<T>;
+	<T = unknown>( x: Array3D<T>, shape: Shape3D, colexicographic: boolean ): Array<T>;
 
 	/**
 	* Flattens a three-dimensional nested array and assigns elements to a provided output array.
@@ -88,7 +84,7 @@ interface Flatten3d {
 	* var out = flatten3d.assign( x, [ 2, 1, 2 ], true, new Float64Array( 4 ), 1, 0 );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown>( x: Array3D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
+	assign<T = unknown, U = unknown>( x: Array3D<T>, shape: Shape3D, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
 }
 
 /**
