@@ -47,7 +47,7 @@ type Unary<T, V> = ( this: V, indices: Array<number> ) => T;
 type Callback<T, V> = Nullary<T, V> | Unary<T, V>;
 
 /**
-* Five-dimensional array.
+* Five-dimensional nested array.
 */
 type Array5D<T> = Array<Array<Array<Array<Array<T>>>>>;
 
