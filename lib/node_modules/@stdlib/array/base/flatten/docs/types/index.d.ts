@@ -20,57 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
-/**
-* One-dimensional array.
-*/
-type Array1D<T> = Collection<T>;
-
-/**
-* Two-dimensional array.
-*/
-type Array2D<T> = Array<Array1D<T>>;
-
-/**
-* Three-dimensional array.
-*/
-type Array3D<T> = Array<Array2D<T>>;
-
-/**
-* Four-dimensional array.
-*/
-type Array4D<T> = Array<Array3D<T>>;
-
-/**
-* Five-dimensional array.
-*/
-type Array5D<T> = Array<Array4D<T>>;
-
-/**
-* Six-dimensional array.
-*/
-type Array6D<T> = Array<Array5D<T>>;
-
-/**
-* Seven-dimensional array.
-*/
-type Array7D<T> = Array<Array6D<T>>;
-
-/**
-* Eight-dimensional array.
-*/
-type Array8D<T> = Array<Array7D<T>>;
-
-/**
-* Nine-dimensional array.
-*/
-type Array9D<T> = Array<Array8D<T>>;
-
-/**
-* Ten-dimensional array.
-*/
-type Array10D<T> = Array<Array9D<T>>;
+import { Collection, Array1D, Array2D, Array3D, Array4D, Array5D, Array6D, Array7D, Array8D, Array9D, Array10D } from '@stdlib/types/array';
+import { Shape } from '@stdlib/types/ndarray';
 
 /**
 * n-dimensional nested array.
@@ -105,7 +56,7 @@ interface Flatten {
 	* var out = flatten( x, [ 2, 2 ], true );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown>( x: ArrayND<T>, shape: Collection<number>, colexicographic: boolean ): Array<T>;
+	<T = unknown>( x: ArrayND<T>, shape: Shape, colexicographic: boolean ): Array<T>;
 
 	/**
 	* Flattens an n-dimensional nested array and assigns elements to a provided output array.
@@ -138,7 +89,7 @@ interface Flatten {
 	* var out = flatten.assign( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0 );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown>( x: ArrayND<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
+	assign<T = unknown, U = unknown>( x: ArrayND<T>, shape: Shape, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
 }
 
 /**
