@@ -33,8 +33,8 @@ function clbk( i: number ): number {
 
 // The function returns an array...
 {
-	filledBy( 3, clbk ); // $ExpectType any[]
-	filledBy( 3, clbk, {} ); // $ExpectType any[]
+	filledBy( 3, clbk ); // $ExpectType number[]
+	filledBy( 3, clbk, {} ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
