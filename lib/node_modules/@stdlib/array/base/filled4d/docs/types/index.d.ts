@@ -21,6 +21,12 @@
 /// <reference types="@stdlib/types"/>
 
 import { Collection } from '@stdlib/types/array';
+import { Shape4D } from '@stdlib/types/ndarray';
+
+/**
+* Four-dimensional nested array.
+*/
+type Array4D<T> = Array<Array<Array<T>>>;
 
 /**
 * Returns a filled four-dimensional nested array.
@@ -37,7 +43,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = filled4d( 'beep', [ 1, 1, 1, 3 ] );
 * // returns [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ]
 */
-declare function filled4d<T = unknown>( value: T, shape: Collection<number> ): Array<Array<Array<Array<T>>>>;
+declare function filled4d<T = unknown>( value: T, shape: Shape4D ): Array4D<T>;
 
 
 // EXPORTS //
