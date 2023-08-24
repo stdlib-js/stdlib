@@ -900,7 +900,7 @@ declare function arraylike2object( x: Complex64Array ): Complex64AccessorObject;
 * var v = fcns[ 0 ]( x.data, 2 );
 * // returns 3
 */
-declare function arraylike2object<T = any>( x: AccessorArrayLike<T> ): GetSetAccessorObject<T>; // tslint:disable-line:max-line-length
+declare function arraylike2object<T = unknown>( x: AccessorArrayLike<T> ): GetSetAccessorObject<T>; // tslint:disable-line:max-line-length
 
 /**
 * Converts a one-dimensional array-like object to an object likely to have the same "shape".
@@ -926,7 +926,7 @@ declare function arraylike2object<T = any>( x: AccessorArrayLike<T> ): GetSetAcc
 * var v = fcns[ 0 ]( x.data, 2 );
 * // returns 3
 */
-declare function arraylike2object<T = any>( x: Array<T> ): GenericAccessorObject<T>; // tslint:disable-line:max-line-length
+declare function arraylike2object<T = unknown>( x: Array<T> ): GenericAccessorObject<T>; // tslint:disable-line:max-line-length
 
 /**
 * Converts a one-dimensional array-like object to an object likely to have the same "shape".
@@ -958,7 +958,7 @@ declare function arraylike2object<T = any>( x: Array<T> ): GenericAccessorObject
 * var v = fcns[ 0 ]( x.data, 2 );
 * // returns 3
 */
-declare function arraylike2object<T = any>( x: Collection<T> ): IndexedAccessorObject<T>; // tslint:disable-line:max-line-length
+declare function arraylike2object<T = unknown>( x: Collection<T> ): IndexedAccessorObject<T>; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
