@@ -20,12 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
-/**
-* Five-dimensional nested array.
-*/
-type Array5D<T> = Array<Array<Array<Array<Collection<T>>>>>;
+import { Collection, Array5D } from '@stdlib/types/array';
+import { Shape5D } from '@stdlib/types/ndarray';
 
 /**
 * Nullary callback function.
@@ -109,7 +105,7 @@ interface Flatten5dBy {
 	* var out = flatten5dBy( x, [ 2, 1, 1, 1, 2 ], true, scale );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown, U = unknown, V = unknown>( x: Array5D<T>, shape: Collection<number>, colexicographic: boolean, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array<U>;
+	<T = unknown, U = unknown, V = unknown>( x: Array5D<T>, shape: Shape5D, colexicographic: boolean, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array<U>;
 
 	/**
 	* Flattens a five-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -152,7 +148,7 @@ interface Flatten5dBy {
 	* var out = flatten5dBy.assign( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array5D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U, W>, thisArg?: ThisParameterType<Callback<T, U, W>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array5D<T>, shape: Shape5D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U, W>, thisArg?: ThisParameterType<Callback<T, U, W>> ): Collection<U | V>;
 }
 
 /**
