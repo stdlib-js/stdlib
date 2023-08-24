@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -25,17 +25,17 @@ import { Collection } from '@stdlib/types/array';
 /**
 * Interface defining base function options.
 */
-interface BaseOptions<T> {
+interface BaseOptions<T, U> {
 	/**
 	* Execution context.
 	*/
-	thisArg?: ThisParameterType<Indicator<T>>;
+	thisArg?: ThisParameterType<Indicator<T, U>>;
 }
 
 /**
 * Interface defining function options when returning indices.
 */
-interface IndicesOptions<T> extends BaseOptions<T> {
+interface IndicesOptions<T, U> extends BaseOptions<T, U> {
 	/**
 	* Specifies that indices should be returned.
 	*/
@@ -45,7 +45,7 @@ interface IndicesOptions<T> extends BaseOptions<T> {
 /**
 * Interface defining function options when returning values.
 */
-interface ValuesOptions<T> extends BaseOptions<T> {
+interface ValuesOptions<T, U> extends BaseOptions<T, U> {
 	/**
 	* Specifies that values should be returned.
 	*/
@@ -55,7 +55,7 @@ interface ValuesOptions<T> extends BaseOptions<T> {
 /**
 * Interface defining function options when returning indices and values.
 */
-interface IndicesAndValuesOptions<T> extends BaseOptions<T> {
+interface IndicesAndValuesOptions<T, U> extends BaseOptions<T, U> {
 	/**
 	* Specifies that indices and values should be returned.
 	*/
@@ -63,11 +63,16 @@ interface IndicesAndValuesOptions<T> extends BaseOptions<T> {
 }
 
 /**
+* Object key.
+*/
+type Key = string | symbol | number;
+
+/**
 * Specifies which group an element in the input collection belongs to.
 *
 * @returns object key
 */
-type Nullary = () => string | symbol | number;
+type Nullary<U> = ( this: U ) => Key;
 
 /**
 * Specifies which group an element in the input collection belongs to.
@@ -75,7 +80,7 @@ type Nullary = () => string | symbol | number;
 * @param value - collection value
 * @returns object key
 */
-type Unary<T> = ( value: T ) => string | symbol | number;
+type Unary<T, U> = ( this: U, value: T ) => Key;
 
 /**
 * Specifies which group an element in the input collection belongs to.
@@ -84,7 +89,7 @@ type Unary<T> = ( value: T ) => string | symbol | number;
 * @param index - collection index
 * @returns object key
 */
-type Binary<T> = ( value: T, index: number ) => string | symbol | number;
+type Binary<T, U> = ( this: U, value: T, index: number ) => Key;
 
 /**
 * Specifies which group an element in the input collection belongs to.
@@ -93,7 +98,7 @@ type Binary<T> = ( value: T, index: number ) => string | symbol | number;
 * @param index - collection index
 * @returns object key
 */
-type Indicator<T> = Nullary | Unary<T> | Binary<T>;
+type Indicator<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U>;
 
 /**
 * Interface describing returned indices results.
@@ -102,7 +107,7 @@ interface IndicesResults {
 	/**
 	* Object properties.
 	*/
-	[key: string | symbol | number]: Array<number>;
+	[key: Key]: Array<number>;
 }
 
 /**
@@ -112,7 +117,7 @@ interface ValuesResults<T> {
 	/**
 	* Object properties.
 	*/
-	[key: string | symbol | number]: Array<T>;
+	[key: Key]: Array<T>;
 }
 
 /**
@@ -122,7 +127,7 @@ interface IndicesAndValuesResults<T> {
 	/**
 	* Object properties.
 	*/
-	[key: string | symbol | number]: Array<[ number, T ]>;
+	[key: Key]: Array<[ number, T ]>;
 }
 
 /**
@@ -152,7 +157,7 @@ interface IndicesAndValuesResults<T> {
 * var out = groupBy( arr, indicator );
 * // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
 */
-declare function groupBy<T = unknown>( collection: Collection<T>, indicator: Indicator<T> ): ValuesResults<T>;
+declare function groupBy<T = unknown, U = unknown>( collection: Collection<T>, indicator: Indicator<T, U> ): ValuesResults<T>; // tslint:disable-line:no-unnecessary-generics
 
 /**
 * Groups values according to an indicator function.
@@ -187,7 +192,7 @@ declare function groupBy<T = unknown>( collection: Collection<T>, indicator: Ind
 * var out = groupBy( arr, opts, indicator );
 * // returns { 'b': [ 0, 1, 3 ], 'f': [ 2 ] }
 */
-declare function groupBy<T = unknown>( collection: Collection<T>, options: IndicesOptions<T>, indicator: Indicator<T> ): IndicesResults;
+declare function groupBy<T = unknown, U = unknown>( collection: Collection<T>, options: IndicesOptions<T, U>, indicator: Indicator<T, U> ): IndicesResults;
 
 /**
 * Groups values according to an indicator function.
@@ -222,7 +227,7 @@ declare function groupBy<T = unknown>( collection: Collection<T>, options: Indic
 * var out = groupBy( arr, opts, indicator );
 * // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
 */
-declare function groupBy<T = unknown>( collection: Collection<T>, options: ValuesOptions<T> | BaseOptions<T>, indicator: Indicator<T> ): ValuesResults<T>;
+declare function groupBy<T = unknown, U = unknown>( collection: Collection<T>, options: ValuesOptions<T, U> | BaseOptions<T, U>, indicator: Indicator<T, U> ): ValuesResults<T>;
 
 /**
 * Groups values according to an indicator function.
@@ -257,7 +262,7 @@ declare function groupBy<T = unknown>( collection: Collection<T>, options: Value
 * var out = groupBy( arr, opts, indicator );
 * // returns { 'b': [ [ 0, 'beep' ], [ 1, 'boop' ], [ 3, 'bar' ] ], 'f': [ [ 2, 'foo' ] ] }
 */
-declare function groupBy<T = unknown>( collection: Collection<T>, options: IndicesAndValuesOptions<T>, indicator: Indicator<T> ): IndicesAndValuesResults<T>;
+declare function groupBy<T = unknown, U = unknown>( collection: Collection<T>, options: IndicesAndValuesOptions<T, U>, indicator: Indicator<T, U> ): IndicesAndValuesResults<T>;
 
 
 // EXPORTS //
