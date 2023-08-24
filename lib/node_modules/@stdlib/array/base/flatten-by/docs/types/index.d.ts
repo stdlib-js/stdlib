@@ -22,59 +22,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
-// FIXME: shapes should be collections of a defined length
-
-/**
-* One-dimensional array.
-*/
-type Array1D<T> = Collection<T>;
-
-/**
-* Two-dimensional array.
-*/
-type Array2D<T> = Array<Array1D<T>>;
-
-/**
-* Three-dimensional array.
-*/
-type Array3D<T> = Array<Array2D<T>>;
-
-/**
-* Four-dimensional array.
-*/
-type Array4D<T> = Array<Array3D<T>>;
-
-/**
-* Five-dimensional array.
-*/
-type Array5D<T> = Array<Array4D<T>>;
-
-/**
-* Six-dimensional array.
-*/
-type Array6D<T> = Array<Array5D<T>>;
-
-/**
-* Seven-dimensional array.
-*/
-type Array7D<T> = Array<Array6D<T>>;
-
-/**
-* Eight-dimensional array.
-*/
-type Array8D<T> = Array<Array7D<T>>;
-
-/**
-* Nine-dimensional array.
-*/
-type Array9D<T> = Array<Array8D<T>>;
-
-/**
-* Ten-dimensional array.
-*/
-type Array10D<T> = Array<Array9D<T>>; // WARNING: arbitrarily limited to 10 dimensions, which should be fine for most practical purposes
+import { Collection, Array1D, Array2D, Array3D, Array4D, Array5D, Array6D, Array7D, Array8D, Array9D, Array10D } from '@stdlib/types/array';
 
 /**
 * One-dimensional array shape.
