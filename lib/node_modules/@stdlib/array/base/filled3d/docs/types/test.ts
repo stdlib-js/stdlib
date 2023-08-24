@@ -23,7 +23,7 @@ import filled3d = require( './index' );
 
 // The function returns a nested array...
 {
-	filled3d( 0.0, [ 1, 1, 3 ] ); // $ExpectType number[][][]
+	filled3d( 0.0, [ 1, 1, 3 ] ); // $ExpectType Array3D<number>
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an array of numbers...

@@ -21,6 +21,12 @@
 /// <reference types="@stdlib/types"/>
 
 import { Collection } from '@stdlib/types/array';
+import { Shape3D } from '@stdlib/types/ndarray';
+
+/**
+* Three-dimensional nested array.
+*/
+type Array3D<T> = Array<Array<Array<T>>>;
 
 /**
 * Returns a filled three-dimensional nested array.
@@ -37,7 +43,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = filled3d( 'beep', [ 1, 1, 3 ] );
 * // returns [ [ [ 'beep', 'beep', 'beep' ] ] ]
 */
-declare function filled3d<T = unknown>( value: T, shape: Collection<number> ): Array<Array<Array<T>>>;
+declare function filled3d<T = unknown>( value: T, shape: Shape3D ): Array3D<T>;
 
 
 // EXPORTS //
