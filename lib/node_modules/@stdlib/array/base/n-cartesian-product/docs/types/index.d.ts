@@ -40,7 +40,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = nCartesianProduct( x1, x2 );
 * // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
-declare function nCartesianProduct<T = any, U = any>( x1: Collection<T>, x2: Collection<U> ): Array<[T, U]>; // tslint:disable-line:max-line-length
+declare function nCartesianProduct<T = unknown, U = unknown>( x1: Collection<T>, x2: Collection<U> ): Array<[T, U]>;
 
 /**
 * Returns the n-fold Cartesian product.
@@ -62,7 +62,7 @@ declare function nCartesianProduct<T = any, U = any>( x1: Collection<T>, x2: Col
 * var out = nCartesianProduct( x1, x2, x3 );
 * // returns [ [ 1, 4, 6 ], [ 1, 5, 6 ], [ 2, 4, 6 ], [ 2, 5, 6 ], [ 3, 4, 6 ], [ 3, 5, 6 ] ]
 */
-declare function nCartesianProduct<T = any, U = any, V = any>( x1: Collection<T>, x2: Collection<U>, x3: Collection<V> ): Array<[T, U, V]>; // tslint:disable-line:max-line-length
+declare function nCartesianProduct<T = unknown, U = unknown, V = unknown>( x1: Collection<T>, x2: Collection<U>, x3: Collection<V> ): Array<[T, U, V]>;
 
 /**
 * Returns the n-fold Cartesian product.
@@ -83,7 +83,7 @@ declare function nCartesianProduct<T = any, U = any, V = any>( x1: Collection<T>
 * var out = nCartesianProduct( x1, x2 );
 * // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
-declare function nCartesianProduct<T = any, U = any, V = any>( x1: Collection<T>, x2: Collection<U>, ...xN: Array<Collection<V>> ): Array<Array<T | U | V>>; // tslint:disable-line:max-line-length
+declare function nCartesianProduct<T = unknown, U = unknown, V = unknown>( x1: Collection<T>, x2: Collection<U>, ...xN: Array<Collection<V>> ): Array<Array<T | U | V>>;
 
 
 // EXPORTS //
