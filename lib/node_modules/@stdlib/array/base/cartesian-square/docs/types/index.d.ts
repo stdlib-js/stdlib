@@ -38,7 +38,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = cartesianSquare( x );
 * // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 */
-declare function cartesianSquare<T = any>( x: Collection<T> ): Array<Array<T>>;
+declare function cartesianSquare<T = unknown>( x: Collection<T> ): Array<Array<T>>;
 
 
 // EXPORTS //
