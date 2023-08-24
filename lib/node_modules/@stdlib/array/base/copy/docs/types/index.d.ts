@@ -34,7 +34,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = copy( x );
 * // returns [ 1, 2, 3 ]
 */
-declare function copy<T = any>( x: Collection<T> ): Array<T>;
+declare function copy<T = unknown>( x: Collection<T> ): Array<T>;
 
 
 // EXPORTS //
