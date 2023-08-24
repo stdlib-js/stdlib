@@ -20,7 +20,13 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, Array2D } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/array';
+import { Shape2D } from '@stdlib/types/ndarray';
+
+/**
+* Two-dimensional nested array.
+*/
+type Array2D<T> = Array<Array<T>>;
 
 /**
 * Returns a two-dimensional nested array filled with ones.
@@ -32,7 +38,7 @@ import { Collection, Array2D } from '@stdlib/types/array';
 * var out = ones2d( [ 1, 3 ] );
 * // returns [ [ 1.0, 1.0, 1.0 ] ]
 */
-declare function ones2d( shape: Collection<number> ): Array2D<number>;
+declare function ones2d( shape: Shape2D ): Array2D<number>;
 
 
 // EXPORTS //
