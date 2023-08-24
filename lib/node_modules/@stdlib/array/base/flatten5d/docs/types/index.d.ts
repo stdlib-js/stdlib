@@ -20,12 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
-/**
-* Five-dimensional nested array.
-*/
-type Array5D<T> = Array<Array<Array<Array<Collection<T>>>>>;
+import { Collection, Array5D } from '@stdlib/types/array';
+import { Shape5D } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing `flatten5d`.
@@ -55,7 +51,7 @@ interface Flatten5d {
 	* var out = flatten5d( x, [ 2, 1, 1, 1, 2 ], true );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown>( x: Array5D<T>, shape: Collection<number>, colexicographic: boolean ): Array<T>;
+	<T = unknown>( x: Array5D<T>, shape: Shape5D, colexicographic: boolean ): Array<T>;
 
 	/**
 	* Flattens a five-dimensional nested array and assigns elements to a provided output array.
@@ -88,7 +84,7 @@ interface Flatten5d {
 	* var out = flatten5d.assign( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0 );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown>( x: Array5D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
+	assign<T = unknown, U = unknown>( x: Array5D<T>, shape: Shape5D, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
 }
 
 /**
