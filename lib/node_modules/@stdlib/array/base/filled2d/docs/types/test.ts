@@ -23,7 +23,7 @@ import filled2d = require( './index' );
 
 // The function returns an array of arrays...
 {
-	filled2d( 0.0, [ 1, 3 ] ); // $ExpectType number[][]
+	filled2d( 0.0, [ 1, 3 ] ); // $ExpectType Array2D<number>
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an array of numbers...
