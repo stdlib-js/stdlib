@@ -21,13 +21,12 @@
 /// <reference types="@stdlib/types"/>
 
 import { Collection } from '@stdlib/types/array';
-
-// FIXME: shapes should be collections of a defined length
+import { Shape } from '@stdlib/types/ndarray';
 
 /**
 * One-dimensional array.
 */
-type Array1D<T> = Collection<T>;
+type Array1D<T> = Array<T>;
 
 /**
 * One-dimensional array shape.
@@ -252,7 +251,7 @@ declare function zerosnd( shape: Shape10D ): Array10D<number>;
 * var out = zerosnd( [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ] );
 * // returns [ [ [ [ [ [ [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ] ] ] ] ] ]
 */
-declare function zerosnd( shape: Collection<number> ): Array<any>;
+declare function zerosnd<T = unknown>( shape: Shape ): Array<T>; // tslint:disable-line:no-unnecessary-generics
 
 
 // EXPORTS //
