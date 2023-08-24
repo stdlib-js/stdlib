@@ -23,7 +23,7 @@ import zeros2d = require( './index' );
 
 // The function returns an array of arrays...
 {
-	zeros2d( [ 1, 3 ] ); // $ExpectType number[][]
+	zeros2d( [ 1, 3 ] ); // $ExpectType Array2D<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of numbers...
