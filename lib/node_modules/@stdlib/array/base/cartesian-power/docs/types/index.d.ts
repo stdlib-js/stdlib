@@ -40,7 +40,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = cartesianPower( x, 2 );
 * // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 */
-declare function cartesianPower<T = any>( x: Collection<T>, n: number ): Array<Array<T>>; // tslint:disable-line:max-line-length
+declare function cartesianPower<T = unknown>( x: Collection<T>, n: number ): Array<Array<T>>;
 
 
 // EXPORTS //
