@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ArrayLike } from '@stdlib/types/array';
-import { DataType, ndarray, Mode, Order, Shape } from '@stdlib/types/ndarray';
+import { DataType, typedndarray, Mode, Order, Shape } from '@stdlib/types/ndarray';
 
 /**
 * Interface defining function options.
@@ -164,7 +164,7 @@ interface ExtendedOptions extends Options {
 * var v = arr.get( 0 );
 * // returns [ 1, 2 ]
 */
-declare function array( options: OptionsWithShape | OptionsWithBuffer ): ndarray; // tslint:disable-line:max-line-length
+declare function array<T = unknown>( options: OptionsWithShape | OptionsWithBuffer ): typedndarray<T>; // tslint:disable-line:no-unnecessary-generics
 
 /**
 * Returns a multidimensional array.
@@ -220,7 +220,7 @@ declare function array( options: OptionsWithShape | OptionsWithBuffer ): ndarray
 * var v = arr.get( 0, 0 );
 * // returns 1.0
 */
-declare function array( buffer: ArrayLike<any>, options?: ExtendedOptions ): ndarray; // tslint:disable-line:max-line-length
+declare function array<T = unknown>( buffer: ArrayLike<any>, options?: ExtendedOptions ): typedndarray<T>; // tslint:disable-line:no-unnecessary-generics
 
 
 // EXPORTS //

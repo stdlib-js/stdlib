@@ -27,7 +27,7 @@ import { Collection } from '@stdlib/types/array';
 *
 * @returns fill value
 */
-type Nullary<T> = () => T;
+type Nullary<T, V> = ( this: V ) => T;
 
 /**
 * Unary callback function.
@@ -35,7 +35,7 @@ type Nullary<T> = () => T;
 * @param indices - current array element indices
 * @returns fill value
 */
-type Unary<T> = ( indices: Array<number> ) => T;
+type Unary<T, V> = ( this: V, indices: Array<number> ) => T;
 
 /**
 * Callback function.
@@ -43,7 +43,7 @@ type Unary<T> = ( indices: Array<number> ) => T;
 * @param indices - current array element indices
 * @returns fill value
 */
-type Callback<T> = Nullary<T> | Unary<T>;
+type Callback<T, V> = Nullary<T, V> | Unary<T, V>;
 
 /**
 * Returns a filled two-dimensional nested array according to a provided callback function.
@@ -59,7 +59,7 @@ type Callback<T> = Nullary<T> | Unary<T>;
 * var arr = filled2dBy( [ 1, 5 ], constantFunction( 1.0 ) );
 * // returns [ [ 1.0, 1.0, 1.0, 1.0, 1.0 ] ]
 */
-declare function filled2dBy<T = unknown>( shape: Collection<number>, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): Array<Array<T>>;
+declare function filled2dBy<T = unknown, V = unknown>( shape: Collection<number>, clbk: Callback<T, V>, thisArg?: ThisParameterType<Callback<T, V>> ): Array<Array<T>>;
 
 
 // EXPORTS //

@@ -18,6 +18,9 @@
 
 import keyBy = require( './index' );
 
+/**
+* Dummy interface.
+*/
 interface Foo {
 	/**
 	* String indicating the name.
@@ -35,10 +38,19 @@ interface Foo {
 	b?: number;
 }
 
-const toKey = ( value: Foo ) => {
+/**
+* Dummy function.
+*
+* @param value - input value
+* @returns key
+*/
+function toKey( value: Foo ): string {
 	return value.name;
-};
+}
 
+/**
+* Dummy object.
+*/
 const funcs = {
 	'count': 0,
 	'toKey': function toKey( this: { count: number; }, value: Foo ): string {
@@ -52,9 +64,14 @@ const funcs = {
 
 // The function returns an object...
 {
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], toKey ); // $ExpectType Record<string, { name: string; a: number; b?: undefined; } | { name: string; b: number; a?: undefined; }>
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], toKey, {} ); // $ExpectType Record<string, { name: string; a: number; b?: undefined; } | { name: string; b: number; a?: undefined; }>
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], funcs.toKey, { 'count': 0 } ); // $ExpectType Record<string, { name: string; a: number; b?: undefined; } | { name: string; b: number; a?: undefined; }>
+	const arr = [
+		{ 'name': 'beep', 'a': 1 },
+		{ 'name': 'boop', 'b': 2 }
+	];
+
+	keyBy( arr, toKey ); // $ExpectType Record<Key, { name: string; a: number; b?: undefined; } | { name: string; b: number; a?: undefined; }>
+	keyBy( arr, toKey, {} ); // $ExpectType Record<Key, { name: string; a: number; b?: undefined; } | { name: string; b: number; a?: undefined; }>
+	keyBy( arr, funcs.toKey, { 'count': 0 } ); // $ExpectType Record<Key, { name: string; a: number; b?: undefined; } | { name: string; b: number; a?: undefined; }>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
@@ -67,17 +84,27 @@ const funcs = {
 
 // The compiler throws an error if the function is provided a second argument which is not a function...
 {
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], 2 ); // $ExpectError
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], false ); // $ExpectError
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], true ); // $ExpectError
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], 'abc' ); // $ExpectError
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], {} ); // $ExpectError
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], [] ); // $ExpectError
+	const arr = [
+		{ 'name': 'beep', 'a': 1 },
+		{ 'name': 'boop', 'b': 2 }
+	];
+
+	keyBy( arr, 2 ); // $ExpectError
+	keyBy( arr, false ); // $ExpectError
+	keyBy( arr, true ); // $ExpectError
+	keyBy( arr, 'abc' ); // $ExpectError
+	keyBy( arr, {} ); // $ExpectError
+	keyBy( arr, [] ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid number of arguments...
 {
+	const arr = [
+		{ 'name': 'beep', 'a': 1 },
+		{ 'name': 'boop', 'b': 2 }
+	];
+
 	keyBy(); // $ExpectError
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ] ); // $ExpectError
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ]], toKey, {}, 3 ); // $ExpectError
+	keyBy( arr ); // $ExpectError
+	keyBy( arr, toKey, {}, 3 ); // $ExpectError
 }

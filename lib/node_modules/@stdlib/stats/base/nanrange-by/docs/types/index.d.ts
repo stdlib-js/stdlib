@@ -27,7 +27,7 @@ import { Collection } from '@stdlib/types/array';
 *
 * @returns accessed value
 */
-type Nullary = () => number | void;
+type Nullary<U> = ( this: U ) => number | void;
 
 /**
 * Returns an accessed value.
@@ -35,26 +35,16 @@ type Nullary = () => number | void;
 * @param value - array element
 * @returns accessed value
 */
-type Unary<T> = ( value: T ) => number | void;
-
-/**
-* Returns an accessed value.
-*
-* @param value - array element
-* @param aidx - array index
-* @returns accessed value
-*/
-type Binary<T> = ( value: T, aidx: number ) => number | void;
+type Unary<T, U> = ( this: U, value: T ) => number | void;
 
 /**
 * Returns an accessed value.
 *
 * @param value - array element
 * @param aidx - array index
-* @param sidx - strided index (offset + aidx*stride)
 * @returns accessed value
 */
-type Ternary<T> = ( value: T, aidx: number, sidx: number ) => number | void;
+type Binary<T, U> = ( this: U, value: T, aidx: number ) => number | void;
 
 /**
 * Returns an accessed value.
@@ -62,10 +52,9 @@ type Ternary<T> = ( value: T, aidx: number, sidx: number ) => number | void;
 * @param value - array element
 * @param aidx - array index
 * @param sidx - strided index (offset + aidx*stride)
-* @param array - input array
 * @returns accessed value
 */
-type Quaternary<T> = ( value: T, aidx: number, sidx: number, array: Collection<T> ) => number | void;
+type Ternary<T, U> = ( this: U, value: T, aidx: number, sidx: number ) => number | void;
 
 /**
 * Returns an accessed value.
@@ -76,7 +65,18 @@ type Quaternary<T> = ( value: T, aidx: number, sidx: number, array: Collection<T
 * @param array - input array
 * @returns accessed value
 */
-type Callback<T> = Nullary | Unary<T> | Binary<T> | Ternary<T> | Quaternary<T>;
+type Quaternary<T, U> = ( this: U, value: T, aidx: number, sidx: number, array: Collection<T> ) => number | void;
+
+/**
+* Returns an accessed value.
+*
+* @param value - array element
+* @param aidx - array index
+* @param sidx - strided index (offset + aidx*stride)
+* @param array - input array
+* @returns accessed value
+*/
+type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U> | Quaternary<T, U>;
 
 /**
 * Interface describing `nanrangeBy`.
@@ -117,7 +117,7 @@ interface Routine {
 	* var v = nanrangeBy( x.length, x, 1, accessor );
 	* // returns 18.0
 	*/
-	<T = unknown>( N: number, x: Collection<T>, stride: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): number;
+	<T = unknown, U = unknown>( N: number, x: Collection<T>, stride: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): number;
 
 	/**
 	* Calculates the range of a strided array via a callback function, ignoring `NaN` values and using alternative indexing semantics.
@@ -155,7 +155,7 @@ interface Routine {
 	* var v = nanrangeBy.ndarray( x.length, x, 1, 0, accessor );
 	* // returns 18.0
 	*/
-	ndarray<T = unknown>( N: number, x: Collection<T>, stride: number, offset: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): number;
+	ndarray<T = unknown, U = unknown>( N: number, x: Collection<T>, stride: number, offset: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): number;
 }
 
 /**

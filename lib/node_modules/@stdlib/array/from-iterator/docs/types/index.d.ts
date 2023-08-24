@@ -31,7 +31,7 @@ type Iterator<T> = Iter<T> | IterableIterator<T>;
 *
 * @returns iterator value
 */
-type Nullary<U> = () => U;
+type Nullary<U, V> = ( this: V ) => U;
 
 /**
 * Map function invoked for each iterated value.
@@ -39,16 +39,7 @@ type Nullary<U> = () => U;
 * @param value - iterated value
 * @returns iterator value
 */
-type Unary<T, U> = ( value: T ) => U;
-
-/**
-* Map function invoked for each iterated value.
-*
-* @param value - iterated value
-* @param index - iterated value index
-* @returns iterator value
-*/
-type Binary<T, U> = ( value: T, index: number ) => U;
+type Unary<T, U, V> = ( this: V, value: T ) => U;
 
 /**
 * Map function invoked for each iterated value.
@@ -57,7 +48,16 @@ type Binary<T, U> = ( value: T, index: number ) => U;
 * @param index - iterated value index
 * @returns iterator value
 */
-type MapFunction<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U>;
+type Binary<T, U, V> = ( this: V, value: T, index: number ) => U;
+
+/**
+* Map function invoked for each iterated value.
+*
+* @param value - iterated value
+* @param index - iterated value index
+* @returns iterator value
+*/
+type MapFunction<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V>;
 
 /**
 * Creates an array from an iterator.
@@ -99,7 +99,7 @@ declare function iterator2array<T = unknown>( iterator: Iterator<T> ): Array<T>;
 * var arr = iterator2array( iter, scale );
 * // returns <Array>
 */
-declare function iterator2array<T = unknown, U = unknown>( iterator: Iterator<T>, mapFcn: MapFunction<T, U>, thisArg?: ThisParameterType<MapFunction<T, U>> ): Array<U>;
+declare function iterator2array<T = unknown, U = unknown, W = unknown>( iterator: Iterator<T>, mapFcn: MapFunction<T, U, W>, thisArg?: ThisParameterType<MapFunction<T, U, W>> ): Array<U>;
 
 /**
 * Fills an array from an iterator.
@@ -147,7 +147,7 @@ declare function iterator2array<T = unknown, U = unknown>( iterator: Iterator<T>
 * var arr = iterator2array( iter, out, scale );
 * // returns <Array>
 */
-declare function iterator2array<T = unknown, U = unknown, V = unknown>( iterator: Iterator<T>, out: Collection<V>, mapFcn: MapFunction<T, U>, thisArg?: ThisParameterType<MapFunction<T, U>> ): Collection<U | V>;
+declare function iterator2array<T = unknown, U = unknown, V = unknown, W = unknown>( iterator: Iterator<T>, out: Collection<V>, mapFcn: MapFunction<T, U, W>, thisArg?: ThisParameterType<MapFunction<T, U, W>> ): Collection<U | V>;
 
 
 // EXPORTS //

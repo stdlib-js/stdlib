@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -54,7 +54,7 @@ type BinaryPredicate<T> = ( value: T, index: number ) => boolean;
 * @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type TernaryPredicate<T> = ( value: T, index: number, collection: Collection<T> ) => boolean; // tslint-disable-line max-line-length
+type TernaryPredicate<T> = ( value: T, index: number, collection: Collection<T> ) => boolean;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -64,36 +64,27 @@ type TernaryPredicate<T> = ( value: T, index: number, collection: Collection<T> 
 * @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Predicate<T> = NullaryPredicate | UnaryPredicate<T> | BinaryPredicate<T> | TernaryPredicate<T>; // tslint-disable-line max-line-length
+type Predicate<T> = NullaryPredicate | UnaryPredicate<T> | BinaryPredicate<T> | TernaryPredicate<T>;
 
 /**
 * Function invoked for each collection element until test condition is true.
 */
-type Nullary = () => void;
-
-/**
-* Function invoked for each collection element until test condition is true.
-*
-* @param value - collection value
-*/
-type Unary<T> = ( value: T ) => void;
+type Nullary<U> = ( this: U ) => void;
 
 /**
 * Function invoked for each collection element until test condition is true.
 *
 * @param value - collection value
-* @param index - collection index
 */
-type Binary<T> = ( value: T, index: number ) => void;
+type Unary<T, U> = ( this: U, value: T ) => void;
 
 /**
 * Function invoked for each collection element until test condition is true.
 *
 * @param value - collection value
 * @param index - collection index
-* @param collection - input collection
 */
-type Ternary<T> = ( value: T, index: number, collection: Collection<T> ) => void; // tslint-disable-line max-line-length
+type Binary<T, U> = ( this: U, value: T, index: number ) => void;
 
 /**
 * Function invoked for each collection element until test condition is true.
@@ -102,7 +93,16 @@ type Ternary<T> = ( value: T, index: number, collection: Collection<T> ) => void
 * @param index - collection index
 * @param collection - input collection
 */
-type Callback<T> = Nullary | Unary<T> | Binary<T> | Ternary<T>;
+type Ternary<T, U> = ( this: U, value: T, index: number, collection: Collection<T> ) => void;
+
+/**
+* Function invoked for each collection element until test condition is true.
+*
+* @param value - collection value
+* @param index - collection index
+* @param collection - input collection
+*/
+type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
 * Until a test condition is true, invokes a function once for each element in a collection.
@@ -134,7 +134,7 @@ type Callback<T> = Nullary | Unary<T> | Binary<T> | Ternary<T>;
 *
 * untilEach( arr, predicate, log );
 */
-declare function untilEach<T = any>( collection: Collection<T>, predicate: Predicate<T>, fcn: Callback<T>, thisArg?: any ): Collection<T>; // tslint-disable-line max-line-length
+declare function untilEach<T = unknown, U = unknown>( collection: Collection<T>, predicate: Predicate<T>, fcn: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Collection<T>;
 
 
 // EXPORTS //

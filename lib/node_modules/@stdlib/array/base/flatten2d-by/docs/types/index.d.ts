@@ -32,7 +32,7 @@ type Array2D<T> = Array<Collection<T>>;
 *
 * @returns result
 */
-type Nullary<U> = () => U;
+type Nullary<U, V> = ( this: V ) => U;
 
 /**
 * Unary callback function.
@@ -40,7 +40,7 @@ type Nullary<U> = () => U;
 * @param value - array element
 * @returns result
 */
-type Unary<T, U> = ( value: T ) => U;
+type Unary<T, U, V> = ( this: V, value: T ) => U;
 
 /**
 * Binary callback function.
@@ -49,7 +49,7 @@ type Unary<T, U> = ( value: T ) => U;
 * @param indices - element indices
 * @returns result
 */
-type Binary<T, U> = ( value: T, indices: Array<number> ) => U;
+type Binary<T, U, V> = ( this: V, value: T, indices: Array<number> ) => U;
 
 /**
 * Ternary callback function.
@@ -59,7 +59,7 @@ type Binary<T, U> = ( value: T, indices: Array<number> ) => U;
 * @param arr - input array
 * @returns result
 */
-type Ternary<T, U> = ( value: T, indices: Array<number>, arr: Array2D<T> ) => U;
+type Ternary<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array2D<T> ) => U;
 
 /**
 * Callback function.
@@ -69,7 +69,7 @@ type Ternary<T, U> = ( value: T, indices: Array<number>, arr: Array2D<T> ) => U;
 * @param arr - input array
 * @returns result
 */
-type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
+type Callback<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary<T, U, V>;
 
 /**
 * Interface describing `flatten2dBy`.
@@ -109,7 +109,7 @@ interface Flatten2dBy {
 	* var out = flatten2dBy( x, [ 2, 2 ], true, scale );
 	* // returns [ 2, 6, 4, 8 ]
 	*/
-	<T = unknown, U = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Array<U>;
+	<T = unknown, U = unknown, V = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array<U>;
 
 
 	/**
@@ -153,7 +153,7 @@ interface Flatten2dBy {
 	* var out = flatten2dBy( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 2, 6, 4, 8 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U, W>, thisArg?: ThisParameterType<Callback<T, U, W>> ): Collection<U | V>;
 }
 
 /**

@@ -131,7 +131,7 @@ type Shape10D = [ number, number, number, number, number, number, number, number
 *
 * @returns result
 */
-type Nullary<U> = () => U;
+type Nullary<U, V> = ( this: V ) => U;
 
 /**
 * Unary callback function.
@@ -139,7 +139,7 @@ type Nullary<U> = () => U;
 * @param value - array element
 * @returns result
 */
-type Unary<T, U> = ( value: T ) => U;
+type Unary<T, U, V> = ( this: V, value: T ) => U;
 
 /**
 * Binary callback function.
@@ -148,7 +148,7 @@ type Unary<T, U> = ( value: T ) => U;
 * @param indices - element indices
 * @returns result
 */
-type Binary<T, U> = ( value: T, indices: Array<number> ) => U; // TODO: could consider whether to make indices a tuple of fixed length, but would require Binary1D, Binary2D, etc, etc.
+type Binary<T, U, V> = ( this: V, value: T, indices: Array<number> ) => U; // TODO: could consider whether to make indices a tuple of fixed length, but would require Binary1D, Binary2D, etc, etc.
 
 /**
 * Ternary callback function.
@@ -158,7 +158,7 @@ type Binary<T, U> = ( value: T, indices: Array<number> ) => U; // TODO: could co
 * @param arr - input array
 * @returns result
 */
-type Ternary1D<T, U> = ( value: T, indices: Array<number>, arr: Array1D<T> ) => U;
+type Ternary1D<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array1D<T> ) => U;
 
 /**
 * Ternary callback function.
@@ -168,7 +168,7 @@ type Ternary1D<T, U> = ( value: T, indices: Array<number>, arr: Array1D<T> ) => 
 * @param arr - input array
 * @returns result
 */
-type Ternary2D<T, U> = ( value: T, indices: Array<number>, arr: Array2D<T> ) => U;
+type Ternary2D<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array2D<T> ) => U;
 
 /**
 * Ternary callback function.
@@ -178,7 +178,7 @@ type Ternary2D<T, U> = ( value: T, indices: Array<number>, arr: Array2D<T> ) => 
 * @param arr - input array
 * @returns result
 */
-type Ternary3D<T, U> = ( value: T, indices: Array<number>, arr: Array3D<T> ) => U;
+type Ternary3D<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array3D<T> ) => U;
 
 /**
 * Ternary callback function.
@@ -188,7 +188,7 @@ type Ternary3D<T, U> = ( value: T, indices: Array<number>, arr: Array3D<T> ) => 
 * @param arr - input array
 * @returns result
 */
-type Ternary4D<T, U> = ( value: T, indices: Array<number>, arr: Array4D<T> ) => U;
+type Ternary4D<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array4D<T> ) => U;
 
 /**
 * Ternary callback function.
@@ -198,7 +198,7 @@ type Ternary4D<T, U> = ( value: T, indices: Array<number>, arr: Array4D<T> ) => 
 * @param arr - input array
 * @returns result
 */
-type Ternary5D<T, U> = ( value: T, indices: Array<number>, arr: Array5D<T> ) => U;
+type Ternary5D<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array5D<T> ) => U;
 
 /**
 * Ternary callback function.
@@ -208,7 +208,7 @@ type Ternary5D<T, U> = ( value: T, indices: Array<number>, arr: Array5D<T> ) => 
 * @param arr - input array
 * @returns result
 */
-type Ternary6D<T, U> = ( value: T, indices: Array<number>, arr: Array6D<T> ) => U;
+type Ternary6D<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array6D<T> ) => U;
 
 /**
 * Ternary callback function.
@@ -218,7 +218,7 @@ type Ternary6D<T, U> = ( value: T, indices: Array<number>, arr: Array6D<T> ) => 
 * @param arr - input array
 * @returns result
 */
-type Ternary7D<T, U> = ( value: T, indices: Array<number>, arr: Array7D<T> ) => U;
+type Ternary7D<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array7D<T> ) => U;
 
 /**
 * Ternary callback function.
@@ -228,7 +228,7 @@ type Ternary7D<T, U> = ( value: T, indices: Array<number>, arr: Array7D<T> ) => 
 * @param arr - input array
 * @returns result
 */
-type Ternary8D<T, U> = ( value: T, indices: Array<number>, arr: Array8D<T> ) => U;
+type Ternary8D<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array8D<T> ) => U;
 
 /**
 * Ternary callback function.
@@ -238,7 +238,7 @@ type Ternary8D<T, U> = ( value: T, indices: Array<number>, arr: Array8D<T> ) => 
 * @param arr - input array
 * @returns result
 */
-type Ternary9D<T, U> = ( value: T, indices: Array<number>, arr: Array9D<T> ) => U;
+type Ternary9D<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array9D<T> ) => U;
 
 /**
 * Ternary callback function.
@@ -248,7 +248,7 @@ type Ternary9D<T, U> = ( value: T, indices: Array<number>, arr: Array9D<T> ) => 
 * @param arr - input array
 * @returns result
 */
-type Ternary10D<T, U> = ( value: T, indices: Array<number>, arr: Array10D<T> ) => U;
+type Ternary10D<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array10D<T> ) => U;
 
 /**
 * Callback function.
@@ -258,7 +258,7 @@ type Ternary10D<T, U> = ( value: T, indices: Array<number>, arr: Array10D<T> ) =
 * @param arr - input array
 * @returns result
 */
-type Callback1D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary1D<T, U>;
+type Callback1D<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary1D<T, U, V>;
 
 /**
 * Callback function.
@@ -268,7 +268,7 @@ type Callback1D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary1D<T, U
 * @param arr - input array
 * @returns result
 */
-type Callback2D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary2D<T, U>;
+type Callback2D<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary2D<T, U, V>;
 
 /**
 * Callback function.
@@ -278,7 +278,7 @@ type Callback2D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary2D<T, U
 * @param arr - input array
 * @returns result
 */
-type Callback3D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary3D<T, U>;
+type Callback3D<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary3D<T, U, V>;
 
 /**
 * Callback function.
@@ -288,7 +288,7 @@ type Callback3D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary3D<T, U
 * @param arr - input array
 * @returns result
 */
-type Callback4D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary4D<T, U>;
+type Callback4D<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary4D<T, U, V>;
 
 /**
 * Callback function.
@@ -298,7 +298,7 @@ type Callback4D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary4D<T, U
 * @param arr - input array
 * @returns result
 */
-type Callback5D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary5D<T, U>;
+type Callback5D<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary5D<T, U, V>;
 
 /**
 * Callback function.
@@ -308,7 +308,7 @@ type Callback5D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary5D<T, U
 * @param arr - input array
 * @returns result
 */
-type Callback6D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary6D<T, U>;
+type Callback6D<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary6D<T, U, V>;
 
 /**
 * Callback function.
@@ -318,7 +318,7 @@ type Callback6D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary6D<T, U
 * @param arr - input array
 * @returns result
 */
-type Callback7D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary7D<T, U>;
+type Callback7D<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary7D<T, U, V>;
 
 /**
 * Callback function.
@@ -328,7 +328,7 @@ type Callback7D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary7D<T, U
 * @param arr - input array
 * @returns result
 */
-type Callback8D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary8D<T, U>;
+type Callback8D<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary8D<T, U, V>;
 
 /**
 * Callback function.
@@ -338,7 +338,7 @@ type Callback8D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary8D<T, U
 * @param arr - input array
 * @returns result
 */
-type Callback9D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary9D<T, U>;
+type Callback9D<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary9D<T, U, V>;
 
 /**
 * Callback function.
@@ -348,7 +348,7 @@ type Callback9D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary9D<T, U
 * @param arr - input array
 * @returns result
 */
-type Callback10D<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary10D<T, U>;
+type Callback10D<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary10D<T, U, V>;
 
 /**
 * Interface describing `flattenBy`.
@@ -384,7 +384,7 @@ interface FlattenBy {
 	* var out = flattenBy( x, [ 2 ], true, scale );
 	* // returns [ 2, 4 ]
 	*/
-	<T = unknown, U = unknown>( x: Array1D<T>, shape: Shape1D, colexicographic: boolean, clbk: Callback1D<T, U>, thisArg?: ThisParameterType<Callback1D<T, U>> ): Array<U>;
+	<T = unknown, U = unknown, V = unknown>( x: Array1D<T>, shape: Shape1D, colexicographic: boolean, clbk: Callback1D<T, U, V>, thisArg?: ThisParameterType<Callback1D<T, U, V>> ): Array<U>;
 
 	/**
 	* Flattens a two-dimensional nested array according to a callback function.
@@ -420,7 +420,7 @@ interface FlattenBy {
 	* var out = flattenBy( x, [ 2, 2 ], true, scale );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown, U = unknown>( x: Array2D<T>, shape: Shape2D, colexicographic: boolean, clbk: Callback2D<T, U>, thisArg?: ThisParameterType<Callback2D<T, U>> ): Array<T>;
+	<T = unknown, U = unknown, V = unknown>( x: Array2D<T>, shape: Shape2D, colexicographic: boolean, clbk: Callback2D<T, U, V>, thisArg?: ThisParameterType<Callback2D<T, U, V>> ): Array<T>;
 
 	/**
 	* Flattens a three-dimensional nested array according to a callback function.
@@ -456,7 +456,7 @@ interface FlattenBy {
 	* var out = flattenBy( x, [ 1, 2, 2 ], true, scale );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown, U = unknown>( x: Array3D<T>, shape: Shape3D, colexicographic: boolean, clbk: Callback3D<T, U>, thisArg?: ThisParameterType<Callback3D<T, U>> ): Array<T>;
+	<T = unknown, U = unknown, V = unknown>( x: Array3D<T>, shape: Shape3D, colexicographic: boolean, clbk: Callback3D<T, U, V>, thisArg?: ThisParameterType<Callback3D<T, U, V>> ): Array<T>;
 
 	/**
 	* Flattens a four-dimensional nested array according to a callback function.
@@ -492,7 +492,7 @@ interface FlattenBy {
 	* var out = flattenBy( x, [ 1, 1, 2, 2 ], true, scale );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown, U = unknown>( x: Array4D<T>, shape: Shape4D, colexicographic: boolean, clbk: Callback4D<T, U>, thisArg?: ThisParameterType<Callback4D<T, U>> ): Array<T>;
+	<T = unknown, U = unknown, V = unknown>( x: Array4D<T>, shape: Shape4D, colexicographic: boolean, clbk: Callback4D<T, U, V>, thisArg?: ThisParameterType<Callback4D<T, U, V>> ): Array<T>;
 
 	/**
 	* Flattens a five-dimensional nested array according to a callback function.
@@ -528,7 +528,7 @@ interface FlattenBy {
 	* var out = flattenBy( x, [ 1, 1, 1, 2, 2 ], true, scale );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown, U = unknown>( x: Array5D<T>, shape: Shape5D, colexicographic: boolean, clbk: Callback5D<T, U>, thisArg?: ThisParameterType<Callback5D<T, U>> ): Array<T>;
+	<T = unknown, U = unknown, V = unknown>( x: Array5D<T>, shape: Shape5D, colexicographic: boolean, clbk: Callback5D<T, U, V>, thisArg?: ThisParameterType<Callback5D<T, U, V>> ): Array<T>;
 
 	/**
 	* Flattens a six-dimensional nested array according to a callback function.
@@ -564,7 +564,7 @@ interface FlattenBy {
 	* var out = flattenBy( x, [ 1, 1, 1, 1, 2, 2 ], true, scale );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown, U = unknown>( x: Array6D<T>, shape: Shape6D, colexicographic: boolean, clbk: Callback6D<T, U>, thisArg?: ThisParameterType<Callback6D<T, U>> ): Array<T>;
+	<T = unknown, U = unknown, V = unknown>( x: Array6D<T>, shape: Shape6D, colexicographic: boolean, clbk: Callback6D<T, U, V>, thisArg?: ThisParameterType<Callback6D<T, U, V>> ): Array<T>;
 
 	/**
 	* Flattens a seven-dimensional nested array according to a callback function.
@@ -600,7 +600,7 @@ interface FlattenBy {
 	* var out = flattenBy( x, [ 1, 1, 1, 1, 1, 2, 2 ], true, scale );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown, U = unknown>( x: Array7D<T>, shape: Shape7D, colexicographic: boolean, clbk: Callback7D<T, U>, thisArg?: ThisParameterType<Callback7D<T, U>> ): Array<T>;
+	<T = unknown, U = unknown, V = unknown>( x: Array7D<T>, shape: Shape7D, colexicographic: boolean, clbk: Callback7D<T, U, V>, thisArg?: ThisParameterType<Callback7D<T, U, V>> ): Array<T>;
 
 	/**
 	* Flattens an eight-dimensional nested array according to a callback function.
@@ -636,7 +636,7 @@ interface FlattenBy {
 	* var out = flattenBy( x, [ 1, 1, 1, 1, 1, 1, 2, 2 ], true, scale );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown, U = unknown>( x: Array8D<T>, shape: Shape8D, colexicographic: boolean, clbk: Callback8D<T, U>, thisArg?: ThisParameterType<Callback8D<T, U>> ): Array<T>;
+	<T = unknown, U = unknown, V = unknown>( x: Array8D<T>, shape: Shape8D, colexicographic: boolean, clbk: Callback8D<T, U, V>, thisArg?: ThisParameterType<Callback8D<T, U, V>> ): Array<T>;
 
 	/**
 	* Flattens a nine-dimensional nested array according to a callback function.
@@ -672,7 +672,7 @@ interface FlattenBy {
 	* var out = flattenBy( x, [ 1, 1, 1, 1, 1, 1, 1, 2, 2 ], true, scale );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown, U = unknown>( x: Array9D<T>, shape: Shape9D, colexicographic: boolean, clbk: Callback9D<T, U>, thisArg?: ThisParameterType<Callback9D<T, U>> ): Array<T>;
+	<T = unknown, U = unknown, V = unknown>( x: Array9D<T>, shape: Shape9D, colexicographic: boolean, clbk: Callback9D<T, U, V>, thisArg?: ThisParameterType<Callback9D<T, U, V>> ): Array<T>;
 
 	/**
 	* Flattens a ten-dimensional nested array according to a callback function.
@@ -708,7 +708,7 @@ interface FlattenBy {
 	* var out = flattenBy( x, [ 1, 1, 1, 1, 1, 1, 1, 1, 2, 2 ], true, scale );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown, U = unknown>( x: Array10D<T>, shape: Shape10D, colexicographic: boolean, clbk: Callback10D<T, U>, thisArg?: ThisParameterType<Callback10D<T, U>> ): Array<T>;
+	<T = unknown, U = unknown, V = unknown>( x: Array10D<T>, shape: Shape10D, colexicographic: boolean, clbk: Callback10D<T, U, V>, thisArg?: ThisParameterType<Callback10D<T, U, V>> ): Array<T>;
 
 	/**
 	* Flattens a one-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -747,7 +747,7 @@ interface FlattenBy {
 	* var out = flattenBy.assign( x, [ 2 ], true, new Float64Array( 2 ), 1, 0, scale );
 	* // returns <Float64Array>[ 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array1D<T>, shape: Shape1D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback1D<T, U>, thisArg?: ThisParameterType<Callback1D<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array1D<T>, shape: Shape1D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback1D<T, U, W>, thisArg?: ThisParameterType<Callback1D<T, U, W>> ): Collection<U | V>;
 
 	/**
 	* Flattens a two-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -790,7 +790,7 @@ interface FlattenBy {
 	* var out = flattenBy.assign( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array2D<T>, shape: Shape2D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback2D<T, U>, thisArg?: ThisParameterType<Callback2D<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array2D<T>, shape: Shape2D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback2D<T, U, W>, thisArg?: ThisParameterType<Callback2D<T, U, W>> ): Collection<U | V>;
 
 	/**
 	* Flattens a three-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -833,7 +833,7 @@ interface FlattenBy {
 	* var out = flattenBy.assign( x, [ 1, 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array3D<T>, shape: Shape3D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback3D<T, U>, thisArg?: ThisParameterType<Callback3D<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array3D<T>, shape: Shape3D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback3D<T, U, W>, thisArg?: ThisParameterType<Callback3D<T, U, W>> ): Collection<U | V>;
 
 	/**
 	* Flattens a four-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -876,7 +876,7 @@ interface FlattenBy {
 	* var out = flattenBy.assign( x, [ 1, 1, 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array4D<T>, shape: Shape4D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback4D<T, U>, thisArg?: ThisParameterType<Callback4D<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array4D<T>, shape: Shape4D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback4D<T, U, W>, thisArg?: ThisParameterType<Callback4D<T, U, W>> ): Collection<U | V>;
 
 	/**
 	* Flattens a five-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -919,7 +919,7 @@ interface FlattenBy {
 	* var out = flattenBy.assign( x, [ 1, 1, 1, 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array5D<T>, shape: Shape5D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback5D<T, U>, thisArg?: ThisParameterType<Callback5D<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array5D<T>, shape: Shape5D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback5D<T, U, W>, thisArg?: ThisParameterType<Callback5D<T, U, W>> ): Collection<U | V>;
 
 	/**
 	* Flattens a six-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -962,7 +962,7 @@ interface FlattenBy {
 	* var out = flattenBy.assign( x, [ 1, 1, 1, 1, 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array6D<T>, shape: Shape6D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback6D<T, U>, thisArg?: ThisParameterType<Callback6D<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array6D<T>, shape: Shape6D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback6D<T, U, W>, thisArg?: ThisParameterType<Callback6D<T, U, W>> ): Collection<U | V>;
 
 	/**
 	* Flattens a seven-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -1005,7 +1005,7 @@ interface FlattenBy {
 	* var out = flattenBy.assign( x, [ 1, 1, 1, 1, 1, 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array7D<T>, shape: Shape7D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback7D<T, U>, thisArg?: ThisParameterType<Callback7D<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array7D<T>, shape: Shape7D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback7D<T, U, W>, thisArg?: ThisParameterType<Callback7D<T, U, W>> ): Collection<U | V>;
 
 	/**
 	* Flattens an eight-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -1048,7 +1048,7 @@ interface FlattenBy {
 	* var out = flattenBy.assign( x, [ 1, 1, 1, 1, 1, 1, 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array8D<T>, shape: Shape8D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback8D<T, U>, thisArg?: ThisParameterType<Callback8D<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array8D<T>, shape: Shape8D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback8D<T, U, W>, thisArg?: ThisParameterType<Callback8D<T, U, W>> ): Collection<U | V>;
 
 	/**
 	* Flattens a nine-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -1091,7 +1091,7 @@ interface FlattenBy {
 	* var out = flattenBy.assign( x, [ 1, 1, 1, 1, 1, 1, 1, 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array9D<T>, shape: Shape9D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback9D<T, U>, thisArg?: ThisParameterType<Callback9D<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array9D<T>, shape: Shape9D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback9D<T, U, W>, thisArg?: ThisParameterType<Callback9D<T, U, W>> ): Collection<U | V>;
 
 	/**
 	* Flattens a ten-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -1134,7 +1134,7 @@ interface FlattenBy {
 	* var out = flattenBy.assign( x, [ 1, 1, 1, 1, 1, 1, 1, 1, 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Array10D<T>, shape: Shape10D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback10D<T, U>, thisArg?: ThisParameterType<Callback10D<T, U>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array10D<T>, shape: Shape10D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback10D<T, U, W>, thisArg?: ThisParameterType<Callback10D<T, U, W>> ): Collection<U | V>;
 }
 
 /**

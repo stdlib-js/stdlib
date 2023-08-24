@@ -31,7 +31,7 @@ type Iterator<T> = TypedIterator<T> | TypedIterableIterator<T>;
 *
 * @returns iterator value
 */
-type Nullary<U> = () => U;
+type Nullary<U, V> = ( this: V ) => U;
 
 /**
 * Map function invoked for each iterated value.
@@ -39,26 +39,16 @@ type Nullary<U> = () => U;
 * @param value - iterated value
 * @returns iterator value
 */
-type Unary<T, U> = ( value: T ) => U;
-
-/**
-* Map function invoked for each iterated value.
-*
-* @param value - iterated value
-* @param index - iterated value index
-* @returns iterator value
-*/
-type Binary<T, U> = ( value: T, index: number ) => U;
+type Unary<T, U, V> = ( this: V, value: T ) => U;
 
 /**
 * Map function invoked for each iterated value.
 *
 * @param value - iterated value
 * @param index - iterated value index
-* @param src - source array-like object
 * @returns iterator value
 */
-type Ternary<T, U> = ( value: T, index: number, src: Collection<U> ) => U;
+type Binary<T, U, V> = ( this: V, value: T, index: number ) => U;
 
 /**
 * Map function invoked for each iterated value.
@@ -68,7 +58,17 @@ type Ternary<T, U> = ( value: T, index: number, src: Collection<U> ) => U;
 * @param src - source array-like object
 * @returns iterator value
 */
-type MapFunction<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
+type Ternary<T, U, V> = ( this: V, value: T, index: number, src: Collection<U> ) => U;
+
+/**
+* Map function invoked for each iterated value.
+*
+* @param value - iterated value
+* @param index - iterated value index
+* @param src - source array-like object
+* @returns iterator value
+*/
+type MapFunction<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary<T, U, V>;
 
 /**
 * Fills an array-like object view with values returned from an iterator.
@@ -90,7 +90,7 @@ type MapFunction<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>
 * var arr = iterator2arrayview( iter, new Float64Array( 20 ) );
 * // returns <Float64Array>
 */
-declare function iterator2arrayview<T = unknown, U = T>( iterator: Iterator<T>, out: Collection<U>, mapFcn?: MapFunction<T, U>, thisArg?: ThisParameterType<MapFunction<T, U>> ): Collection<U>;
+declare function iterator2arrayview<T = unknown, U = unknown, V = unknown>( iterator: Iterator<T>, out: Collection<U>, mapFcn?: MapFunction<T, U, V>, thisArg?: ThisParameterType<MapFunction<T, U, V>> ): Collection<U>;
 
 /**
 * Fills an array-like object view with values returned from an iterator.
@@ -113,7 +113,7 @@ declare function iterator2arrayview<T = unknown, U = T>( iterator: Iterator<T>, 
 * var arr = iterator2arrayview( iter, new Float64Array( 20 ), 5 );
 * // returns <Float64Array>
 */
-declare function iterator2arrayview<T = unknown, U = T>( iterator: Iterator<T>, out: Collection<U>, begin: number, mapFcn?: MapFunction<T, U>, thisArg?: ThisParameterType<MapFunction<T, U>> ): Collection<U>;
+declare function iterator2arrayview<T = unknown, U = unknown, V = unknown>( iterator: Iterator<T>, out: Collection<U>, begin: number, mapFcn?: MapFunction<T, U, V>, thisArg?: ThisParameterType<MapFunction<T, U, V>> ): Collection<U>;
 
 /**
 * Fills an array-like object view with values returned from an iterator.
@@ -137,7 +137,7 @@ declare function iterator2arrayview<T = unknown, U = T>( iterator: Iterator<T>, 
 * var arr = iterator2arrayview( iter, new Float64Array( 20 ), 5, 8 );
 * // returns <Float64Array>
 */
-declare function iterator2arrayview<T = unknown, U = T>( iterator: Iterator<T>, out: Collection<U>, begin: number, end: number, mapFcn?: MapFunction<T, U>, thisArg?: ThisParameterType<MapFunction<T, U>> ): Collection<U>;
+declare function iterator2arrayview<T = unknown, U = unknown, V = unknown>( iterator: Iterator<T>, out: Collection<U>, begin: number, end: number, mapFcn?: MapFunction<T, U, V>, thisArg?: ThisParameterType<MapFunction<T, U, V>> ): Collection<U>;
 
 
 // EXPORTS //
