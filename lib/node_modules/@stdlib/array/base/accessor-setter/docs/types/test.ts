@@ -55,7 +55,7 @@ function accessorArray(): AccessorArrayLike<number> {
 {
 	setter( 'complex128' ); // $ExpectType SetComplex128
 	setter( 'complex64' ); // $ExpectType SetComplex64
-	setter( 'foo' ); // $ExpectType SetArrayLike<any>
+	setter<number>( 'foo' ); // $ExpectType SetArrayLike<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...
@@ -77,7 +77,7 @@ function accessorArray(): AccessorArrayLike<number> {
 
 // The function returns a function which sets an array element...
 {
-	const set1 = setter( 'foo' );
+	const set1 = setter<number>( 'foo' );
 	const x1 = accessorArray();
 	set1( x1, 2, 10 ); // $ExpectType void
 

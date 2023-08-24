@@ -30,7 +30,7 @@ import { Complex64Array, Complex128Array, AccessorArrayLike } from '@stdlib/type
 * @param idx - element index
 * @param value - value to set
 */
-type SetComplex128 = ( arr: Complex128Array, idx: number, value: ComplexLike ) => void; // tslint:disable-line:max-line-length
+type SetComplex128 = ( arr: Complex128Array, idx: number, value: ComplexLike ) => void;
 
 /**
 * Sets an element in a `Complex64Array`.
@@ -39,7 +39,7 @@ type SetComplex128 = ( arr: Complex128Array, idx: number, value: ComplexLike ) =
 * @param idx - element index
 * @param value - value to set
 */
-type SetComplex64 = ( arr: Complex64Array, idx: number, value: ComplexLike ) => void; // tslint:disable-line:max-line-length
+type SetComplex64 = ( arr: Complex64Array, idx: number, value: ComplexLike ) => void;
 
 /**
 * Sets an element in an array-like object supporting the get/set protocol.
@@ -48,7 +48,7 @@ type SetComplex64 = ( arr: Complex64Array, idx: number, value: ComplexLike ) => 
 * @param idx - element index
 * @param value - value to set
 */
-type SetArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number, value: T ) => void; // tslint:disable-line:max-line-length
+type SetArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number, value: T ) => void;
 
 /**
 * Returns an accessor function for setting an element in a `Complex128Array`.
@@ -132,7 +132,7 @@ declare function setter( dtype: 'complex64' ): SetComplex64;
 * var v = arr.get( 2 );
 * // returns 3
 */
-declare function setter( dtype: string ): SetArrayLike<any>;
+declare function setter<T = unknown>( dtype: string ): SetArrayLike<T>; // tslint:disable-line:no-unnecessary-generics
 
 
 // EXPORTS //
