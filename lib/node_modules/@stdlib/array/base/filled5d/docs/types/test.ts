@@ -23,7 +23,7 @@ import filled5d = require( './index' );
 
 // The function returns a nested array...
 {
-	filled5d( 0.0, [ 1, 1, 1, 1, 3 ] ); // $ExpectType number[][][][][]
+	filled5d( 0.0, [ 1, 1, 1, 1, 3 ] ); // $ExpectType Array5D<number>
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an array of numbers...

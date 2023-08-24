@@ -21,6 +21,12 @@
 /// <reference types="@stdlib/types"/>
 
 import { Collection } from '@stdlib/types/array';
+import { Shape5D } from '@stdlib/types/ndarray';
+
+/**
+* Five-dimensional nested array.
+*/
+type Array5D<T> = Array<Array<Array<Array<Array<T>>>>>;
 
 /**
 * Returns a filled five-dimensional nested array.
@@ -37,7 +43,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = filled5d( 'beep', [ 1, 1, 1, 1, 3 ] );
 * // returns [ [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ] ]
 */
-declare function filled5d<T = unknown>( value: T, shape: Collection<number> ): Array<Array<Array<Array<Array<T>>>>>;
+declare function filled5d<T = unknown>( value: T, shape: Shape5D ): Array5D<T>;
 
 
 // EXPORTS //
