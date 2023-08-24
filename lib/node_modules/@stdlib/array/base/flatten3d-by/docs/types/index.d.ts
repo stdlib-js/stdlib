@@ -20,12 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
-/**
-* Three-dimensional nested array.
-*/
-type Array3D<T> = Array<Array<Collection<T>>>;
+import { Collection, Array3D } from '@stdlib/types/array';
+import { Shape3D } from '@stdlib/types/ndarray';
 
 /**
 * Nullary callback function.
@@ -109,7 +105,7 @@ interface Flatten3dBy {
 	* var out = flatten3dBy( x, [ 2, 1, 2 ], true, scale );
 	* // returns [ 2, 6, 4, 8 ]
 	*/
-	<T = unknown, U = unknown, V = unknown>( x: Array3D<T>, shape: Collection<number>, colexicographic: boolean, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array<T>;
+	<T = unknown, U = unknown, V = unknown>( x: Array3D<T>, shape: Shape3D, colexicographic: boolean, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array<T>;
 
 	/**
 	* Flattens a three-dimensional nested array according to a callback function and assigns elements to a provided output array.
@@ -152,7 +148,7 @@ interface Flatten3dBy {
 	* var out = flatten3dBy.assign( x, [ 2, 1, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 2, 6, 4, 8 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array3D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U, W>, thisArg?: ThisParameterType<Callback<T, U, W>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array3D<T>, shape: Shape3D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U, W>, thisArg?: ThisParameterType<Callback<T, U, W>> ): Collection<U | V>;
 }
 
 /**
