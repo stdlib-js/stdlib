@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Takes element from an array.
@@ -39,7 +39,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var y = take( x, [ 1, 3 ] );
 * // returns [ 2, 4 ]
 */
-declare function take<T>( x: ArrayLike<T>, indices: ArrayLike<number> ): Array<T>; // tslint:disable-line:max-line-length
+declare function take<T>( x: Collection<T>, indices: Collection<number> ): Array<T>;
 
 
 // EXPORTS //
