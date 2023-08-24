@@ -20,12 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
-/**
-* Two-dimensional nested array.
-*/
-type Array2D<T> = Array<Collection<T>>;
+import { Collection, Array2D } from '@stdlib/types/array';
+import { Shape2D } from '@stdlib/types/ndarray';
 
 /**
 * Nullary callback function.
@@ -109,7 +105,7 @@ interface Flatten2dBy {
 	* var out = flatten2dBy( x, [ 2, 2 ], true, scale );
 	* // returns [ 2, 6, 4, 8 ]
 	*/
-	<T = unknown, U = unknown, V = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array<U>;
+	<T = unknown, U = unknown, V = unknown>( x: Array2D<T>, shape: Shape2D, colexicographic: boolean, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array<U>;
 
 
 	/**
@@ -153,7 +149,7 @@ interface Flatten2dBy {
 	* var out = flatten2dBy( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 2, 6, 4, 8 ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U, W>, thisArg?: ThisParameterType<Callback<T, U, W>> ): Collection<U | V>;
+	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array2D<T>, shape: Shape2D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U, W>, thisArg?: ThisParameterType<Callback<T, U, W>> ): Collection<U | V>;
 }
 
 /**
