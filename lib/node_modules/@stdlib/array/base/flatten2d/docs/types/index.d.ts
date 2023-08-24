@@ -20,12 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
-/**
-* Two-dimensional nested array.
-*/
-type Array2D<T> = Array<Collection<T>>;
+import { Collection, Array2D } from '@stdlib/types/array';
+import { Shape2D } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing `flatten2d`.
@@ -55,7 +51,7 @@ interface Flatten2d {
 	* var out = flatten2d( x, [ 2, 2 ], true );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean ): Array<T>;
+	<T = unknown>( x: Array2D<T>, shape: Shape2D, colexicographic: boolean ): Array<T>;
 
 	/**
 	* Flattens a two-dimensional nested array and assigns elements to a provided output array.
@@ -88,7 +84,7 @@ interface Flatten2d {
 	* var out = flatten2d.assign( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0 );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown>( x: Array2D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
+	assign<T = unknown, U = unknown>( x: Array2D<T>, shape: Shape2D, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
 }
 
 /**
