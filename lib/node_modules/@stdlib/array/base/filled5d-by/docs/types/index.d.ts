@@ -28,7 +28,7 @@ import { Shape5D } from '@stdlib/types/ndarray';
 *
 * @returns fill value
 */
-type Nullary<T, U> = ( this: U ) => T;
+type Nullary<T, V> = ( this: V ) => T;
 
 /**
 * Unary callback function.
@@ -36,7 +36,7 @@ type Nullary<T, U> = ( this: U ) => T;
 * @param indices - current array element indices
 * @returns fill value
 */
-type Unary<T, U> = ( this: U, indices: Array<number> ) => T;
+type Unary<T, V> = ( this: V, indices: Array<number> ) => T;
 
 /**
 * Callback function.
@@ -44,7 +44,7 @@ type Unary<T, U> = ( this: U, indices: Array<number> ) => T;
 * @param indices - current array element indices
 * @returns fill value
 */
-type Callback<T, U> = Nullary<T, U> | Unary<T, U>;
+type Callback<T, V> = Nullary<T, V> | Unary<T, V>;
 
 /**
 * Five-dimensional array.
@@ -65,7 +65,7 @@ type Array5D<T> = Array<Array<Array<Array<Array<T>>>>>;
 * var arr = filled5dBy( [ 1, 1, 1, 1, 5 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ [ 1.0, 1.0, 1.0, 1.0, 1.0 ] ] ] ] ]
 */
-declare function filled5dBy<T = unknown, U = unknown>( shape: Shape5D, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Array5D<T>;
+declare function filled5dBy<T = unknown, V = unknown>( shape: Shape5D, clbk: Callback<T, V>, thisArg?: ThisParameterType<Callback<T, V>> ): Array5D<T>;
 
 
 // EXPORTS //
