@@ -23,7 +23,7 @@ import zeros5d = require( './index' );
 
 // The function returns a nested array...
 {
-	zeros5d( [ 1, 1, 1, 1, 3 ] ); // $ExpectType number[][][][][]
+	zeros5d( [ 1, 1, 1, 1, 3 ] ); // $ExpectType Array5D<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of numbers...
