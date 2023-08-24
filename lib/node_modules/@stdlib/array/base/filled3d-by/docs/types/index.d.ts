@@ -21,6 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { Collection } from '@stdlib/types/array';
+import { Shape3D } from '@stdlib/types/ndarray';
 
 /**
 * Nullary callback function.
@@ -46,6 +47,11 @@ type Unary<T, V> = ( this: V, indices: Array<number> ) => T;
 type Callback<T, V> = Nullary<T, V> | Unary<T, V>;
 
 /**
+* Three-dimensional nested array.
+*/
+type Array3D<T> = Array<Array<Array<T>>>;
+
+/**
 * Returns a filled three-dimensional nested array according to a provided callback function.
 *
 * @param shape - array shape
@@ -59,7 +65,7 @@ type Callback<T, V> = Nullary<T, V> | Unary<T, V>;
 * var arr = filled3dBy( [ 1, 1, 5 ], constantFunction( 1.0 ) );
 * // returns [ [ [ 1.0, 1.0, 1.0, 1.0, 1.0 ] ] ]
 */
-declare function filled3dBy<T = unknown, V = unknown>( shape: Collection<number>, clbk: Callback<T, V>, thisArg?: ThisParameterType<Callback<T, V>> ): Array<Array<Array<T>>>;
+declare function filled3dBy<T = unknown, V = unknown>( shape: Shape3D, clbk: Callback<T, V>, thisArg?: ThisParameterType<Callback<T, V>> ): Array3D<T>;
 
 
 // EXPORTS //
