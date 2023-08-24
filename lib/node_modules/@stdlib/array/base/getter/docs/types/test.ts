@@ -32,8 +32,8 @@ import getter = require( './index' );
 	getter( 'uint16' ); // $ExpectType GetUint16
 	getter( 'uint8' ); // $ExpectType GetUint8
 	getter( 'uint8c' ); // $ExpectType GetUint8c
-	getter( 'generic' ); // $ExpectType GetGeneric<any>
-	getter( 'foo' ); // $ExpectType GetArrayLike<any>
+	getter<any>( 'generic' ); // $ExpectType GetGeneric<any>
+	getter<number>( 'foo' ); // $ExpectType GetArrayLike<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...
@@ -55,9 +55,9 @@ import getter = require( './index' );
 
 // The function returns a function which returns an array element...
 {
-	const get1 = getter( 'generic' );
+	const get1 = getter<number>( 'generic' );
 	const x1 = [ 1, 2, 3, 4 ];
-	get1( x1, 2 ); // $ExpectType any
+	get1( x1, 2 ); // $ExpectType number | void
 
 	const get2 = getter( 'float64' );
 	const x2 = new Float64Array( [ 1, 2, 3, 4 ] );
@@ -97,7 +97,7 @@ import getter = require( './index' );
 
 	const get11 = getter( 'foo' );
 	const x11 = [ 1, 2, 3, 4 ];
-	get11( x11, 2 ); // $ExpectType any
+	get11( x11, 2 ); // $ExpectType unknown
 }
 
 // The compiler throws an error if the returned function is provided a first argument which is not a collection...

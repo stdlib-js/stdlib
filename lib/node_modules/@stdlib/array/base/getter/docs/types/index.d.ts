@@ -287,7 +287,7 @@ declare function getter( dtype: 'uint8c' ): GetUint8c;
 * var v = get( arr, 2 );
 * // returns 3
 */
-declare function getter( dtype: 'generic' ): GetGeneric<any>;
+declare function getter<T = unknown>( dtype: 'generic' ): GetGeneric<T>; // tslint:disable-line:no-unnecessary-generics
 
 /**
 * Returns an accessor function for retrieving an element from an indexed array-like object.
@@ -304,7 +304,7 @@ declare function getter( dtype: 'generic' ): GetGeneric<any>;
 * var v = get( arr, 2 );
 * // returns 3
 */
-declare function getter( dtype: string ): GetArrayLike<any>;
+declare function getter<T = unknown>( dtype: string ): GetArrayLike<T>; // tslint:disable-line:no-unnecessary-generics
 
 
 // EXPORTS //
