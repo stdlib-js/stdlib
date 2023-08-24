@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 type PoliticalParty = 'Democratic' | 'Republican' | 'Democratic-Republican' | 'Federalist' | 'National Union' | 'Whig' | 'Whig & Democratic' | 'none'; // tslint-disable-line max-line-length
 

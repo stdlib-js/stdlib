@@ -18,6 +18,7 @@
 
 import isNonPositiveFinite = require( './index' );
 
+// The function returns a boolean...
 {
 	isNonPositiveFinite( -3.14 ); // $ExpectType boolean
 	isNonPositiveFinite( 0.0 ); // $ExpectType boolean
@@ -25,6 +26,8 @@ import isNonPositiveFinite = require( './index' );
 	isNonPositiveFinite( 3.14 ); // $ExpectType boolean
 	isNonPositiveFinite( NaN ); // $ExpectType boolean
 }
+
+// The compiler throws an error if the function is provided a value other than a number...
 {
 	isNonPositiveFinite( true ); // $ExpectError
 	isNonPositiveFinite( false ); // $ExpectError
@@ -32,6 +35,8 @@ import isNonPositiveFinite = require( './index' );
 	isNonPositiveFinite( [] ); // $ExpectError
 	isNonPositiveFinite( {} ); // $ExpectError
 }
+
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	isNonPositiveFinite(); // $ExpectError
 	isNonPositiveFinite( null ); // $ExpectError

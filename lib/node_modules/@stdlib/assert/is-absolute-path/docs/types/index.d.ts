@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Interface defining `isAbsolutePath` with methods for testing POSIX and Windows paths, respectively.

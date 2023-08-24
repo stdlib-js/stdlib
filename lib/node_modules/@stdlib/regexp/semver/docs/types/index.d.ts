@@ -82,4 +82,3 @@ declare var reSemVer: ReSemVer;
 // EXPORTS //
 
 export = reSemVer;
-
