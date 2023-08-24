@@ -22,12 +22,10 @@
 
 import { Collection } from '@stdlib/types/array';
 
-// FIXME: shapes should be collections of a defined length
-
 /**
 * One-dimensional array.
 */
-type Array1D<T> = Collection<T>;
+type Array1D<T> = Array<T>;
 
 /**
 * One-dimensional array shape.
@@ -252,7 +250,7 @@ declare function onesnd( shape: Shape10D ): Array10D<number>;
 * var out = onesnd( [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ] );
 * // returns [ [ [ [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ] ] ]
 */
-declare function onesnd( shape: Collection<number> ): Array<any>;
+declare function onesnd<T = unknown>( shape: Collection<number> ): Array<T>; // tslint:disable-line:no-unnecessary-generics
 
 
 // EXPORTS //
