@@ -1,0 +1,28 @@
+
+{{alias}}( n )
+    Generates a linearly spaced numeric array whose elements increment by 1
+    starting from one.
+
+    If `n` is a non-integer value greater than zero, the function returns an
+    array having `ceil(n)` elements.
+
+    If `n` is less than or equal to zero, the function returns an empty array.
+
+    Parameters
+    ----------
+    n: number
+        Number of elements.
+
+    Returns
+    -------
+    out: Array
+        Linearly spaced numeric array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 6 )
+    [ 1, 2, 3, 4, 5, 6 ]
+
+    See Also
+    --------
+
