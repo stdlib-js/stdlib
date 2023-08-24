@@ -32,8 +32,8 @@ import setter = require( './index' );
 	setter( 'uint16' ); // $ExpectType SetUint16
 	setter( 'uint8' ); // $ExpectType SetUint8
 	setter( 'uint8c' ); // $ExpectType SetUint8c
-	setter( 'generic' ); // $ExpectType SetGeneric<any>
-	setter( 'foo' ); // $ExpectType SetArrayLike<any>
+	setter<number>( 'generic' ); // $ExpectType SetGeneric<number>
+	setter( 'foo' ); // $ExpectType SetArrayLike<unknown>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...
@@ -55,7 +55,7 @@ import setter = require( './index' );
 
 // The function returns a function which sets an array element...
 {
-	const set1 = setter( 'generic' );
+	const set1 = setter<number>( 'generic' );
 	const x1 = [ 1, 2, 3, 4 ];
 	set1( x1, 2, 3 ); // $ExpectType void
 
@@ -95,7 +95,7 @@ import setter = require( './index' );
 	const x10 = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
 	set10( x10, 2, 3 ); // $ExpectType void
 
-	const set11 = setter( 'foo' );
+	const set11 = setter<number>( 'foo' );
 	const x11 = [ 1, 2, 3, 4 ];
 	set11( x11, 2, 3 ); // $ExpectType void
 }

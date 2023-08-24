@@ -307,7 +307,7 @@ declare function setter( dtype: 'uint8c' ): SetUint8c;
 * var v = arr[ 2 ];
 * // returns 3
 */
-declare function setter( dtype: 'generic' ): SetGeneric<any>;
+declare function setter<T = unknown>( dtype: 'generic' ): SetGeneric<T>; // tslint:disable-line:no-unnecessary-generics
 
 /**
 * Returns an accessor function for setting an element in an indexed array-like object.
@@ -326,7 +326,7 @@ declare function setter( dtype: 'generic' ): SetGeneric<any>;
 * var v = arr[ 2 ];
 * // returns 3
 */
-declare function setter( dtype: string ): SetArrayLike<any>;
+declare function setter<T = unknown>( dtype: string ): SetArrayLike<T>; // tslint:disable-line:no-unnecessary-generics
 
 
 // EXPORTS //
