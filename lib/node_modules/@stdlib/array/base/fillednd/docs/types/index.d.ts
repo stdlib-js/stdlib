@@ -20,14 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
-// FIXME: shapes should be collections of a defined length
+import { Shape } from '@stdlib/types/ndarray';
 
 /**
 * One-dimensional array.
 */
-type Array1D<T> = Collection<T>;
+type Array1D<T> = Array<T>;
 
 /**
 * One-dimensional array shape.
@@ -307,7 +305,7 @@ declare function fillednd<T = unknown>( value: T, shape: Shape10D ): Array10D<T>
 * var out = fillednd( 'beep', [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ] );
 * // returns [ [ [ [ [ [ [ [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ] ] ] ] ] ] ]
 */
-declare function fillednd( value: any, shape: Collection<number> ): Array<any>;
+declare function fillednd( value: any, shape: Shape ): Array<any>;
 
 
 // EXPORTS //
