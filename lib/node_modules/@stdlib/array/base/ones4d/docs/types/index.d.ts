@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { Collection, Array4D } from '@stdlib/types/array';
 
 /**
 * Returns a four-dimensional nested array filled with ones.
@@ -32,7 +32,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = ones4d( [ 1, 1, 1, 3 ] );
 * // returns [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ]
 */
-declare function ones4d( shape: Collection<number> ): Array<Array<Array<Array<number>>>>;
+declare function ones4d( shape: Collection<number> ): Array4D<number>;
 
 
 // EXPORTS //
