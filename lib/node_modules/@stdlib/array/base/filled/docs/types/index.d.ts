@@ -33,7 +33,7 @@
 * var out = filled( 'beep', 3 );
 * // returns [ 'beep', 'beep', 'beep' ]
 */
-declare function filled( value: any, len: number ): Array<any>;
+declare function filled<T = unknown>( value: T, len: number ): Array<T>;
 
 
 // EXPORTS //
