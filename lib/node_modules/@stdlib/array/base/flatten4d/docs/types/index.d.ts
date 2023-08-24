@@ -20,12 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
-/**
-* Four-dimensional nested array.
-*/
-type Array4D<T> = Array<Array<Array<Collection<T>>>>;
+import { Collection, Array4D } from '@stdlib/types/array';
+import { Shape4D } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing `flatten4d`.
@@ -55,7 +51,7 @@ interface Flatten4d {
 	* var out = flatten4d( x, [ 2, 1, 1, 2 ], true );
 	* // returns [ 1, 3, 2, 4 ]
 	*/
-	<T = unknown>( x: Array4D<T>, shape: Collection<number>, colexicographic: boolean ): Array<T>;
+	<T = unknown>( x: Array4D<T>, shape: Shape4D, colexicographic: boolean ): Array<T>;
 
 	/**
 	* Flattens a four-dimensional nested array and assigns elements to a provided output array.
@@ -88,7 +84,7 @@ interface Flatten4d {
 	* var out = flatten4d.assign( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0 );
 	* // returns <Float64Array>[ 1, 3, 2, 4 ]
 	*/
-	assign<T = unknown, U = unknown>( x: Array4D<T>, shape: Collection<number>, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
+	assign<T = unknown, U = unknown>( x: Array4D<T>, shape: Shape4D, colexicographic: boolean, out: Collection<U>, stride: number, offset: number ): Collection<T | U>;
 }
 
 /**
