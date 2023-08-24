@@ -53,7 +53,7 @@ function accessorArray(): AccessorArrayLike<number> {
 {
 	getter( 'complex128' ); // $ExpectType GetComplex128
 	getter( 'complex64' ); // $ExpectType GetComplex64
-	getter( 'foo' ); // $ExpectType GetArrayLike<any>
+	getter( 'foo' ); // $ExpectType GetArrayLike<unknown>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...
@@ -75,9 +75,9 @@ function accessorArray(): AccessorArrayLike<number> {
 
 // The function returns a function which returns an array element...
 {
-	const get1 = getter( 'foo' );
+	const get1 = getter<number>( 'foo' );
 	const x1 = accessorArray();
-	get1( x1, 2 ); // $ExpectType any
+	get1( x1, 2 ); // $ExpectType number
 
 	const get2 = getter( 'complex128' );
 	const x2 = new Complex128Array( [ 1, 2, 3, 4 ] );
