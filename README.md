@@ -60,7 +60,7 @@ What sets stdlib apart is its fully decomposable architecture, allowing you to s
 
 When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.
 
-Want to join us in bringing numerical computing to the web? Start by starring the project. :star2:
+Want to join us in bringing numerical computing to the web? **Start by starring the project.** :star2:
 
 Explore this GitHub repository for stdlib's source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
 
