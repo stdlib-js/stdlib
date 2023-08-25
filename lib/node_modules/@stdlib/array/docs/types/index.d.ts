@@ -524,7 +524,7 @@ interface Namespace {
 	Float64Array: typeof Float64Array;
 
 	/**
-	* Creates (or fills) an array from an iterator.
+	* Fills an array from an iterator.
 	*
 	* @param iterator - source iterator
 	* @param out - output array
@@ -536,12 +536,16 @@ interface Namespace {
 	* var Float64Array = require( `@stdlib/array/float64` );
 	* var randu = require( `@stdlib/random/iter/randu` );
 	*
+	* function scale( v ) {
+	*     return v * 2.0;
+	* }
+	*
 	* var iter = randu({
 	*     'iter': 10
 	* });
 	*
 	* var out = new Float64Array( 10 );
-	* var arr = ns.iterator2array( iter, out );
+	* var arr = ns.iterator2array( iter, out, scale );
 	* // returns <Array>
 	*/
 	iterator2array: typeof iterator2array;
