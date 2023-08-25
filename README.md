@@ -52,9 +52,19 @@ limitations under the License.
 
 <section class="intro">
 
-stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing applications. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib.
 
-This is the GitHub repository of stdlib source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
+stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+
+What sets stdlib apart is its fully decomposable architecture, allowing you to swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.
+
+When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.
+
+Want to join us in bringing numerical computing to the web? Start by starring the project. :star2:
+
+Explore this GitHub repository for stdlib's source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
+
+Thank you for being a part of our community! Your support is invaluable to us!
 
 ## Resources
 
