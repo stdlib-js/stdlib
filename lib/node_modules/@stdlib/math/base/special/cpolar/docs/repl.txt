@@ -1,17 +1,41 @@
 
-{{alias}}( [out,] re, im )
-    Returns the absolute value and phase of a complex number.
+{{alias}}( z )
+    Returns the absolute value and phase of a double-precision complex
+    floating-point number.
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Output array.
+    z: Complex128
+        Complex number.
 
-    re: number
-        Real component.
+    Returns
+    -------
+    out: Array<number>
+        Absolute value and phase, respectively.
 
-    im: number
-        Imaginary component.
+    Examples
+    --------
+    > var out = {{alias}}( new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 ) )
+    [ ~5.83, ~0.5404 ]
+
+
+{{alias}}.assign( z, out, stride, offset )
+    Returns the absolute value and phase of a double-precision complex
+    floating-point number and assigns results to a provided output array.
+
+    Parameters
+    ----------
+    z: Complex128
+        Complex number.
+
+    out: Array|TypedArray|Object
+        Destination array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
 
     Returns
     -------
@@ -20,16 +44,11 @@
 
     Examples
     --------
-    > var out = {{alias}}( 5.0, 3.0 )
-    [ ~5.83, ~0.5404 ]
-
-    // Provide an output array:
-    > out = new {{alias:@stdlib/array/float64}}( 2 );
-    > var v = {{alias}}( out, 5.0, 3.0 )
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > var v = {{alias}}.assign( new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 ), out, 1, 0 )
     <Float64Array>[ ~5.83, ~0.5404 ]
     > var bool = ( v === out )
     true
 
     See Also
     --------
-
