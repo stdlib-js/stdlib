@@ -139,7 +139,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
     </div>
 
--   Every function is accompanied by [TypeScript][typescript] declaration files, ensuring type safety and allowing for  intelligent code completion in IDEs.
+-   Every function is accompanied by [TypeScript][typescript] declaration files, ensuring type safety and facilitating intelligent code completion in IDEs.
 
     <div class="image" align="center">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f5f1f915a7178d9bc76a95d34afd799e6092ec3a/docs/assets/readme/typescript.png" alt="Demo showcasing TypeScript declaration files" >
