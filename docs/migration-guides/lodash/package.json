@@ -18,7 +18,9 @@
   "directories": {
     "benchmark": "./benchmark"
   },
-  "scripts": {},
+  "scripts": {
+    "bench": "NODE_PATH=./../../../lib/node_modules/ node ./benchmark/benchmark.for_each.js"
+  },
   "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {
     "type": "git",
