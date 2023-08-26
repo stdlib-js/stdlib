@@ -25,8 +25,7 @@ var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
-var base = require( '@stdlib/math/base/special/abs' );
-var abs = require( '@stdlib/math/special/abs' );
+var base = require( '@stdlib/math/base/special/exp' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
 
@@ -41,7 +40,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/base/special/abs:value=number', opts, function benchmark( b ) {
+bench( pkg+'::stdlib:math/base/special/exp:value=number', opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -63,7 +62,9 @@ bench( pkg+'::stdlib:math/base/special/abs:value=number', opts, function benchma
 	b.end();
 });
 
-bench( pkg+'::stdlib:math/special/abs:value=number', opts, function benchmark( b ) {
+// TODO: add math/special/exp benchmarks
+
+bench( pkg+'::mathjs:exp:value=number', opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -72,29 +73,7 @@ bench( pkg+'::stdlib:math/special/abs:value=number', opts, function benchmark( b
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		y = abs( x[ i%x.length ] );
-		if ( y !== y ) {
-			b.fail( 'should not return NaN' );
-		}
-	}
-	b.toc();
-	if ( isnan( y ) ) {
-		b.fail( 'should not return NaN' );
-	}
-	b.pass( 'benchmark finished' );
-	b.end();
-});
-
-bench( pkg+'::mathjs:abs:value=number', opts, function benchmark( b ) {
-	var x;
-	var y;
-	var i;
-
-	x = filledBy( 100, uniform( -100.0, 100.0 ) );
-
-	b.tic();
-	for ( i = 0; i < b.iterations; i++ ) {
-		y = mathjs.abs( x[ i%x.length ] );
+		y = mathjs.exp( x[ i%x.length ] );
 		if ( y !== y ) {
 			b.fail( 'should not return NaN' );
 		}
