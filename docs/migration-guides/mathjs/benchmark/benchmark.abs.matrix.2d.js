@@ -68,7 +68,7 @@ bench( pkg+'::stdlib:math/special/abs:value=ndarray,dtype=generic,size=100,shape
 	b.end();
 });
 
-bench( pkg+'::stdlib:math/special/abs:value=nested_array,dtype=generic,size=100,shape=(10,10)', opts, function benchmark( b ) {
+bench( pkg+'::stdlib:array/base/unary2d:value=nested_array,dtype=generic,size=100,shape=(10,10)', opts, function benchmark( b ) {
 	var sh;
 	var x;
 	var y;
