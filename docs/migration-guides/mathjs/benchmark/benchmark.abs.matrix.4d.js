@@ -41,7 +41,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/special/abs:value=matrix,dtype=generic,size=100,shape=(2,5,2,5)', opts, function benchmark( b ) {
+bench( pkg+'::stdlib:math/special/abs:value=ndarray,dtype=generic,size=100,shape=(2,5,2,5)', opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
