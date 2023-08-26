@@ -24,8 +24,7 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var Complex128 = require( '@stdlib/complex/float64' );
-var base = require( '@stdlib/math/base/special/cabs' );
-var abs = require( '@stdlib/math/special/abs' );
+var base = require( '@stdlib/math/base/special/cabs2' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
 
@@ -40,7 +39,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/base/special/cabs:value=complex_number', opts, function benchmark( b ) {
+bench( pkg+'::stdlib:math/base/special/cabs2:value=complex_number', opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -68,37 +67,9 @@ bench( pkg+'::stdlib:math/base/special/cabs:value=complex_number', opts, functio
 	b.end();
 });
 
-bench( pkg+'::stdlib:math/special/abs:value=complex_number', {
-	'skip': true
-}, function benchmark( b ) { // FIXME: update once complex supported in top-level abs
-	var x;
-	var y;
-	var i;
+// TODO: add math/special/abs2 benchmarks
 
-	x = [
-		new Complex128( 5.0, 3.0 ),
-		new Complex128( -5.0, 3.0 ),
-		new Complex128( 5.0, -3.0 ),
-		new Complex128( -5.0, -3.0 ),
-		new Complex128( 3.0, -4.0 )
-	];
-
-	b.tic();
-	for ( i = 0; i < b.iterations; i++ ) {
-		y = abs( x[ i%x.length ] );
-		if ( y !== y ) {
-			b.fail( 'should not return NaN' );
-		}
-	}
-	b.toc();
-	if ( isnan( y ) ) {
-		b.fail( 'should not return NaN' );
-	}
-	b.pass( 'benchmark finished' );
-	b.end();
-});
-
-bench( pkg+'::mathjs:abs:value=complex_number', opts, function benchmark( b ) {
+bench( pkg+'::mathjs:square:value=complex_number', opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -113,7 +84,7 @@ bench( pkg+'::mathjs:abs:value=complex_number', opts, function benchmark( b ) {
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		y = mathjs.abs( x[ i%x.length ] );
+		y = mathjs.square( x[ i%x.length ] );
 		if ( y !== y ) {
 			b.fail( 'should not return NaN' );
 		}
