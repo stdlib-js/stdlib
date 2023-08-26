@@ -19,7 +19,7 @@
     "benchmark": "./benchmark"
   },
   "scripts": {
-    "bench": "NODE_PATH=./../../../lib/node_modules/ node ./benchmark/*"
+    "bench": "make benchmark"
   },
   "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {
