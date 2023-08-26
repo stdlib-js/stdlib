@@ -14,7 +14,7 @@
       "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
     }
   ],
-  "main": "./benchmark/benchmark.js",
+  "main": "./package.json",
   "directories": {
     "benchmark": "./benchmark"
   },
@@ -33,10 +33,7 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {},
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">2.7.0"
-  },
+  "engines": {},
   "os": [
     "aix",
     "darwin",
