@@ -2335,14 +2335,15 @@ interface Namespace {
 	cphase: typeof cphase;
 
 	/**
-	* Computes the absolute value and the phase of a complex number.
+	* Computes the absolute value and the phase of a double-precision complex floating-point number.
 	*
-	* @param re - real component
-	* @param im - imaginary component
+	* @param z - complex number
 	* @returns absolute value and phase, respectively
 	*
 	* @example
-	* var v = ns.cpolar( 5.0, 3.0 );
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	*
+	* var v = ns.cpolar( new Complex128( 5.0, 3.0 ) );
 	* // returns [ ~5.83, ~0.5404 ]
 	*/
 	cpolar: typeof cpolar;
@@ -2370,20 +2371,29 @@ interface Namespace {
 	cround: typeof cround;
 
 	/**
-	* Rounds a complex number to the nearest multiple of `10^n`.
+	* Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n`.
 	*
 	* ## Notes
 	*
 	* - When operating on floating-point numbers in bases other than `2`, rounding to specified digits can be inexact.
 	*
-	* @param re - real component
-	* @param im - imaginary component
+	* @param z - input value
 	* @param n - integer power of 10
-	* @returns real and imaginary components
+	* @returns result
 	*
 	* @example
-	* var out = ns.croundn( 5.555, -3.333, -2 );
-	* // returns [ 5.56, -3.34 ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var v = cceil( new Complex128( 5.555, -3.333 ) );
+	* // returns <Complex128>
+	*
+	* var re = real( v );
+	* // returns 5.56
+	*
+	* var im = imag( v );
+	* // returns -3.34
 	*/
 	croundn: typeof croundn;
 
