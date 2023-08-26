@@ -26,8 +26,8 @@ var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
 var zeros = require( '@stdlib/array/zeros' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
-var strided = require( '@stdlib/math/strided/special/abs' );
-var abs = require( '@stdlib/math/special/abs' );
+var strided = require( '@stdlib/math/strided/special/abs2' );
+var dabs2 = require( '@stdlib/math/strided/special/dabs2' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
 
@@ -42,17 +42,17 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/strided/special/abs:value=array,dtype=generic,len=100', opts, function benchmark( b ) {
+bench( pkg+'::stdlib:math/strided/special/abs2:value=array,dtype=float64,len=100', opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
 
-	x = filledBy( 100, 'generic', uniform( -100.0, 100.0 ) );
-	y = zeros( x.length, 'generic' );
+	x = filledBy( 100, 'float64', uniform( -100.0, 100.0 ) );
+	y = zeros( x.length, 'float64' );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		strided( x.length, 'generic', x, 1, 'generic', y, 1 );
+		strided( x.length, 'float64', x, 1, 'float64', y, 1 );
 		if ( isnan( y[ 0 ] ) || isnan( y[ y.length-1 ] ) ) {
 			b.fail( 'should not return NaN' );
 		}
@@ -65,16 +65,17 @@ bench( pkg+'::stdlib:math/strided/special/abs:value=array,dtype=generic,len=100'
 	b.end();
 });
 
-bench( pkg+'::stdlib:math/special/abs:value=array,dtype=generic,len=100', opts, function benchmark( b ) {
+bench( pkg+'::stdlib:math/strided/special/dabs2:value=array,dtype=float64,len=100', opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
 
-	x = filledBy( 100, 'generic', uniform( -100.0, 100.0 ) );
+	x = filledBy( 100, 'float64', uniform( -100.0, 100.0 ) );
+	y = zeros( x.length, 'float64' );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		y = abs( x );
+		dabs2( x.length, x, 1, y, 1 );
 		if ( isnan( y[ 0 ] ) || isnan( y[ y.length-1 ] ) ) {
 			b.fail( 'should not return NaN' );
 		}
@@ -87,16 +88,22 @@ bench( pkg+'::stdlib:math/special/abs:value=array,dtype=generic,len=100', opts, 
 	b.end();
 });
 
-bench( pkg+'::mathjs:abs:value=array,dtype=generic,len=100', opts, function benchmark( b ) {
+// TODO: add math/special/abs2 benchmarks
+
+// NOTE: Math.js does not seem to accept typed arrays for element-wise functions
+opts = {
+	'skip': true
+};
+bench( pkg+'::mathjs:square:value=array,dtype=float64,len=100', opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
 
-	x = filledBy( 100, 'generic', uniform( -100.0, 100.0 ) );
+	x = filledBy( 100, 'float64', uniform( -100.0, 100.0 ) );
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		y = mathjs.abs( x );
+		y = mathjs.square( x );
 		if ( isnan( y[ 0 ] ) || isnan( y[ y.length-1 ] ) ) {
 			b.fail( 'should not return NaN' );
 		}
