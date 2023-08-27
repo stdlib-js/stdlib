@@ -24,8 +24,11 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filled4dBy = require( '@stdlib/array/base/filled4d-by' );
+var unary4d = require( '@stdlib/array/base/unary4d' );
+var zeros4d = require( '@stdlib/array/base/zeros4d' );
 var array = require( '@stdlib/ndarray/array' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
+var base = require( '@stdlib/math/base/special/abs' );
 var abs = require( '@stdlib/math/special/abs' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
@@ -59,6 +62,31 @@ bench( pkg+'::stdlib:math/special/abs:value=ndarray,dtype=generic,size=100,shape
 	}
 	b.toc();
 	if ( isnan( y.get( 0, 0, 0, 0 ) ) || isnan( y.get( 1, 4, 1, 4 ) ) ) {
+		b.fail( 'should not return NaN' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( pkg+'::stdlib:array/base/unary4d:value=nested_array,dtype=generic,size=100,shape=(2,5,2,5)', opts, function benchmark( b ) {
+	var sh;
+	var x;
+	var y;
+	var i;
+
+	sh = [ 2, 5, 2, 5 ];
+	x = filled4dBy( sh, uniform( -100.0, 100.0 ) );
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		y = zeros4d( sh );
+		unary4d( [ x, y ], sh, base );
+		if ( isnan( y[ 0 ][ 0 ][ 0 ][ 0 ] ) || isnan( y[ 1 ][ 4 ][ 1 ][ 4 ] ) ) { // eslint-disable-line max-len
+			b.fail( 'should not return NaN' );
+		}
+	}
+	b.toc();
+	if ( isnan( y[ 1 ][ 1 ][ 1 ][ 1 ] ) || isnan( y[ 0 ][ 3 ][ 0 ][ 3 ] ) ) {
 		b.fail( 'should not return NaN' );
 	}
 	b.pass( 'benchmark finished' );
