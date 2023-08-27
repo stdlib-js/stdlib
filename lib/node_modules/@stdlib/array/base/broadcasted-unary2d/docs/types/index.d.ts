@@ -24,27 +24,12 @@ import { Array1D, Array2D } from '@stdlib/types/array';
 import { Shape1D, Shape2D } from '@stdlib/types/ndarray';
 
 /**
-* Nullary callback.
-*
-* @returns result
-*/
-type Nullary<U> = () => U;
-
-/**
 * Unary callback.
 *
 * @param value - input value
 * @returns result
 */
 type Unary<T, U> = ( value: T ) => U;
-
-/**
-* Callback function.
-*
-* @param value - input value
-* @returns result
-*/
-type Callback<T, U> = Nullary<U> | Unary<T, U>;
 
 /**
 * Applies a unary callback to elements in a broadcasted nested input array and assigns results to elements in a two-dimensional nested output array.
@@ -78,7 +63,7 @@ type Callback<T, U> = Nullary<U> | Unary<T, U>;
 * console.log( y );
 * // => [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
 */
-declare function bunary2d<T = unknown, U = unknown>( arrays: [ Array1D<T> | Array2D<T>, Array2D<U> ], shapes: [ Shape1D | Shape2D, Shape2D ], fcn: Callback<T, U> ): void;
+declare function bunary2d<T = unknown, U = unknown>( arrays: [ Array1D<T> | Array2D<T>, Array2D<U> ], shapes: [ Shape1D | Shape2D, Shape2D ], fcn: Unary<T, U> ): void;
 
 
 // EXPORTS //
