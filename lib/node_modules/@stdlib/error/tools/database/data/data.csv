@@ -907,3 +907,4 @@
 "Ec","invalid argument. Output argument must be a one-dimensional ndarray. Value: `%s`.","TypeError"
 "Ed","invalid argument. Must provide a two-dimensional ndarray. Value: `%s`.","TypeError"
 "Ee","invalid argument. Number of matrix columns must match centroid dimensions. Expected: `%u`. Actual: `%u`.","Error"
+
