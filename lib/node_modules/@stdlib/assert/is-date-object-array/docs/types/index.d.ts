@@ -35,7 +35,7 @@
 * // returns false
 */
 
-declare function isDateObjectArray( value: any ): boolean;
+declare function isDateObjectArray( value: any ): value is Array<Date>;
 
 
 // EXPORTS //

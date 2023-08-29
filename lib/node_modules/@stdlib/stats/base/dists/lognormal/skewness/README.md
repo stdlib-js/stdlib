@@ -31,7 +31,7 @@ The [skewness][skewness] for a [lognormal][lognormal-distribution] random variab
 <!-- <equation class="equation" label="eq:lognormal_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \left(\exp(\sigma^{2}\right)\!\!+2){\sqrt{\exp(\sigma ^{2})\!\!-1}}" alt="Skewness for a lognormal distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \left(\exp(\sigma^{2}\right)\!\!+2){\sqrt{\exp(\sigma ^{2})\!\!-1}}
+\mathop{\mathrm{skew}}\left( X \right) = \left(\exp(\sigma^{2}\right)\!\!+2){\sqrt{\exp(\sigma ^{2})\!\!-1}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \left(\exp(\sigma^{2}\right)\!\!+2){\sqrt{\exp(\sigma ^{2})\!\!-1}}" data-equation="eq:lognormal_skewness">

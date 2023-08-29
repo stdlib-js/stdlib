@@ -31,7 +31,7 @@ The [variance][standard-deviation] for a [degenerate][degenerate-distribution] r
 <!-- <equation class="equation" label="eq:degenerate_stdev" align="center" raw="\operatorname{SD}\left( X \right) = 0" alt="Standard deviation for a degenerate distribution."> -->
 
 ```math
-\operatorname{SD}\left( X \right) = 0
+\mathop{\mathrm{SD}}\left( X \right) = 0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{SD}\left( X \right) = 0" data-equation="eq:degenerate_stdev">

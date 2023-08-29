@@ -48,7 +48,7 @@ type SetComplex64 = ( arr: Complex64Array, idx: number, value: ComplexLike ) => 
 * @param idx - element index
 * @param value - value to set
 */
-type SetArrayLike = ( arr: AccessorArrayLike<any>, idx: number, value: any ) => void; // tslint:disable-line:max-line-length
+type SetArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number, value: T ) => void; // tslint:disable-line:max-line-length
 
 /**
 * Returns an accessor function for setting an element in a `Complex128Array`.
@@ -132,7 +132,7 @@ declare function setter( dtype: 'complex64' ): SetComplex64;
 * var v = arr.get( 2 );
 * // returns 3
 */
-declare function setter( dtype: string ): SetArrayLike;
+declare function setter( dtype: string ): SetArrayLike<any>;
 
 
 // EXPORTS //

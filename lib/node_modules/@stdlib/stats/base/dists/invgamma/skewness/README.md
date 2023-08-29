@@ -31,7 +31,7 @@ The [skewness][skewness] for an [inverse gamma][invgamma-distribution] random va
 <!-- <equation class="equation" label="eq:invgamma_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{4\sqrt{\alpha-2}}{\alpha-3}" alt="Skewness for an inverse gamma distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{4\sqrt{\alpha-2}}{\alpha-3}
+\mathop{\mathrm{skew}}\left( X \right) = \frac{4\sqrt{\alpha-2}}{\alpha-3}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{4\sqrt{\alpha-2}}{\alpha-3}" data-equation="eq:invgamma_skewness">

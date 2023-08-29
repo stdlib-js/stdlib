@@ -165,8 +165,8 @@ float stdlib_base_inv( const float x );
 #include "stdlib/math/base/special/invf.h"
 #include <stdio.h>
 
-int main() {
-    float x[] = { 3.0f, 4.0f, 5.0f, 12.0f };
+int main( void ) {
+    const float x[] = { 3.0f, 4.0f, 5.0f, 12.0f };
 
     float y;
     int i;

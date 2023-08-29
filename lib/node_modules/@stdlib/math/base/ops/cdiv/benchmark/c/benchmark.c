@@ -25,7 +25,7 @@
 #include <complex.h>
 #include <sys/time.h>
 
-#define NAME "divide"
+#define NAME "cdiv"
 #define ITERATIONS 1000000
 #define REPEATS 3
 

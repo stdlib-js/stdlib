@@ -31,7 +31,7 @@ The [skewness][skewness] for a [Kumaraswamy's double bounded][kumaraswamy-distri
 <!-- <equation class="equation" label="eq:kumaraswamy_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{ m_3 - 3m_1\sigma^2 - m_1^3 }{ \left( \sigma^2 \right)^{3/2} }" alt="Skewness for a Kumaraswamy's double bounded distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{ m_3 - 3m_1\sigma^2 - m_1^3 }{ \left( \sigma^2 \right)^{3/2} }
+\mathop{\mathrm{skew}}\left( X \right) = \frac{ m_3 - 3m_1\sigma^2 - m_1^3 }{ \left( \sigma^2 \right)^{3/2} }
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{ m_3 - 3m_1\sigma^2 - m_1^3 }{ \left( \sigma^2 \right)^{3/2} }" data-equation="eq:kumaraswamy_skewness">

@@ -23,10 +23,10 @@ import pop = require( './index' );
 
 // The function returns the input collection and the removed element...
 {
-	pop( [ 2, 3 ] ); // $ExpectType [Collection, any]
-	pop( [ 'a', 'b', 'c' ] ); // $ExpectType [Collection, any]
-	pop( [ true, false ] ); // $ExpectType [Collection, any]
-	pop( [ true, true ] ); // $ExpectType [Collection, any]
+	pop( [ 2, 3 ] ); // $ExpectType [Collection<number>, number]
+	pop( [ 'a', 'b', 'c' ] ); // $ExpectType [Collection<string>, string]
+	pop( [ true, false ] ); // $ExpectType [Collection<boolean>, boolean]
+	pop( [ true, true ] ); // $ExpectType [Collection<boolean>, boolean]
 }
 
 // The compiler throws an error if the function is provided a value other than a collection...

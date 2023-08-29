@@ -48,7 +48,7 @@ interface IsProbability {
 	* var bool = isProbability( null );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is number | Number;
 
 	/**
 	* Tests if a value is a number primitive having a value which is a probability.
@@ -64,7 +64,7 @@ interface IsProbability {
 	* var bool = isProbability.isPrimitive( new Number( 0.66 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is number;
 
 	/**
 	* Tests if a value is a number object having a value which is a probability.
@@ -80,7 +80,7 @@ interface IsProbability {
 	* var bool = isProbability.isObject( new Number( 0.5 ) );
 	* // returns true
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is Number;
 }
 
 /**

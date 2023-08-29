@@ -31,7 +31,7 @@ The [variance][variance] for a [degenerate][degenerate-distribution] random vari
 <!-- <equation class="equation" label="eq:degenerate_variance" align="center" raw="\operatorname{Var}\left( X \right) = 0" alt="Variance for a degenerate distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = 0
+\mathop{\mathrm{Var}}\left( X \right) = 0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = 0" data-equation="eq:degenerate_variance">

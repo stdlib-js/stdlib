@@ -31,7 +31,7 @@ The [mode][mode] for a [gamma][gamma-distribution] random variable is
 <!-- <equation class="equation" label="eq:gamma_mode" align="center" raw="\operatorname{mode}\left( X \right) = \frac{\alpha \,-\,1}{\beta }" alt="Mode for a gamma distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \frac{\alpha \,-\,1}{\beta }
+\mathop{\mathrm{mode}}\left( X \right) = \frac{\alpha \,-\,1}{\beta }
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \frac{\alpha \,-\,1}{\beta }" data-equation="eq:gamma_mode">

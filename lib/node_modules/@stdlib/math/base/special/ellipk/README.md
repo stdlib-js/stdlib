@@ -183,7 +183,7 @@ double stdlib_base_ellipk( const double m );
 #include <stdlib.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     double m;
     double v;
     int i;

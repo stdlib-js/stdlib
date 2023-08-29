@@ -32,8 +32,8 @@ import setter = require( './index' );
 	setter( 'uint16' ); // $ExpectType SetUint16
 	setter( 'uint8' ); // $ExpectType SetUint8
 	setter( 'uint8c' ); // $ExpectType SetUint8c
-	setter( 'generic' ); // $ExpectType SetGeneric
-	setter( 'foo' ); // $ExpectType SetArrayLike
+	setter( 'generic' ); // $ExpectType SetGeneric<any>
+	setter( 'foo' ); // $ExpectType SetArrayLike<any>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...

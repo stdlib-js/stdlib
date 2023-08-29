@@ -29,7 +29,7 @@ The [kurtosis][sample-excess-kurtosis] for a random variable `X` is defined as
 <!-- <equation class="equation" label="eq:kurtosis" align="center" raw="\operatorname{Kurtosis}[X] = \mathrm{E}\biggl[ \biggl( \frac{X - \mu}{\sigma} \biggr)^4 \biggr]" alt="Equation for the kurtosis."> -->
 
 ```math
-\operatorname{Kurtosis}[X] = \mathrm{E}\biggl[ \biggl( \frac{X - \mu}{\sigma} \biggr)^4 \biggr]
+\mathop{\mathrm{Kurtosis}}[X] = \mathrm{E}\biggl[ \biggl( \frac{X - \mu}{\sigma} \biggr)^4 \biggr]
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurtosis}[X] = \mathrm{E}\biggl[ \biggl( \frac{X - \mu}{\sigma} \biggr)^4 \biggr]" data-equation="eq:kurtosis">

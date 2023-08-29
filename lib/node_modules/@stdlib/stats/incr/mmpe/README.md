@@ -29,7 +29,7 @@ For a window of size `W`, the [mean percentage error][mean-percentage-error] is 
 <!-- <equation class="equation" label="eq:mean_percentage_error" align="center" raw="\operatorname{MPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \frac{a_i - f_i}{a_i}" alt="Equation for the mean percentage error."> -->
 
 ```math
-\operatorname{MPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \frac{a_i - f_i}{a_i}
+\mathop{\mathrm{MPE}}  = \frac{100}{W} \sum_{i=0}^{W-1} \frac{a_i - f_i}{a_i}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{MPE}  = \frac{100}{W} \sum_{i=0}^{W-1} \frac{a_i - f_i}{a_i}" data-equation="eq:mean_percentage_error">

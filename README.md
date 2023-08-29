@@ -24,17 +24,9 @@ limitations under the License.
 
 <section class="announcement">
 
-**📣 Announcement: [Quansight Labs](https://labs.quansight.org) is running another edition of its paid [internship program](https://boards.greenhouse.io/quansight/jobs/4011005005). The program runs for 3 months from mid-June/mid-July through September and entails a 25-40 hrs/wk time commitment.**
-
-**All internship projects will focus on contributing to open source software. stdlib is one of the potential projects! If you are new to open source, interested in kickstarting your software development career, and/or interested in contributing to stdlib, you are encouraged to [apply](https://boards.greenhouse.io/quansight/jobs/4011005005)! 🎉**
-
-**When applying, feel free to mention stdlib in your cover letter. Application deadline: [4 April 2023](https://boards.greenhouse.io/quansight/jobs/4011005005). 😃**
-
 </section>
 
 <!-- /.announcement -->
-
-* * *
 
 <!-- Section to include assets such as the project logo, etc. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -75,6 +67,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 ### External Resources
 
+-   [**Open Collective**][open-collective-stdlib]
 -   [**Twitter**][stdlib-twitter]
 -   [**Gitter**][stdlib-gitter]
 
@@ -156,7 +149,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
 ### User Stories
 
--   I want to perform **data analysis** and/or **data science** related tasks in JavaScript and Node.js, similar to how I might use IPython, Julia, R, and/or MATLAB.
+-   I want to perform **data analysis** and **data science** tasks in JavaScript and Node.js, similar to how I might use Python, Julia, R, and MATLAB.
 
     -   Install the entire project as a [command-line utility](#install_command_line_utility).
 
@@ -582,11 +575,15 @@ Already an expert?
 stdlib development is generously supported by the following sponsors...
 
 <div class="image" align="center">
+    <br>
     <a href="https://labs.quansight.org/">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
     </a>
     <br>
+    <br>
 </div>
+
+Are you interested in supporting stdlib? If so, join our [Open Collective][open-collective-stdlib]!
 
 </section>
 
@@ -603,9 +600,11 @@ stdlib development is generously supported by the following sponsors...
 The following organizations and key stakeholders trust and depend on stdlib...
 
 <div class="image" align="center">
+    <br>
     <a href="https://www.cmu.edu/">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1c8c7dbc9d081eeb13e16c62764f27a65c6553f8/docs/assets/misc/cmu_logo.png" alt="Carnegie Mellon University">
     </a>
+    <br>
     <br>
 </div>
 
@@ -804,6 +803,8 @@ Test and build infrastructure is generously provided by the following services:
 [stdlib-bundles]: https://github.com/stdlib-js/stdlib/tree/develop/dist
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
+
+[open-collective-stdlib]: https://opencollective.com/stdlib
 
 [stdlib-twitter]: https://twitter.com/stdlibjs
 

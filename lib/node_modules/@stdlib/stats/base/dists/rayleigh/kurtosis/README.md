@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [Rayleigh][rayleigh-distribution] random v
 <!-- <equation class="equation" label="eq:rayleigh_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \sigma \sqrt{2 \ln(2)}" alt="Excess kurtosis for a Rayleigh distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \sigma \sqrt{2 \ln(2)}
+\mathop{\mathrm{Kurt}}\left( X \right) = \sigma \sqrt{2 \ln(2)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \sigma \sqrt{2 \ln(2)}" data-equation="eq:rayleigh_kurtosis">

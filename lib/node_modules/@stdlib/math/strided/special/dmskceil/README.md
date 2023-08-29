@@ -256,7 +256,7 @@ void stdlib_strided_dmskceil( const int64_t N, const double *X, const int64_t st
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     double X[] = { 1.1, 2.5, -3.5, 4.0, -5.9, 6.4, -7.0, 8.2 };
 

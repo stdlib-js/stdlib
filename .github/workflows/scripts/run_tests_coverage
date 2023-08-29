@@ -1,0 +1,238 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to calculate package test coverage for a given list of changed files.
+#
+# Usage: run_tests_coverage file1 [file2 file3 ...]
+#
+# Arguments:
+#
+#   file1        File name.
+#   file2        File name.
+#   file3        File name.
+#
+#
+# Environment variables:
+#
+#   GITHUB_REPO    GitHub repository.
+#   GITHUB_REF     GitHub branch or tag.
+#   LOG_FILE       Log file.
+#
+
+# shellcheck disable=SC2181,SC2153,SC2129
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Get the list of changed files:
+changed="$*"
+
+# Get the GitHub repository:
+github_repo="${GITHUB_REPO}"
+
+# Get the GitHub branch or tag:
+github_ref="${GITHUB_REF}"
+
+# Get the path to a log file as the third argument to the build script:
+log_file="${LOG_FILE}"
+
+# Define a heartbeat interval to periodically print messages in order to prevent CI from prematurely ending a build due to long running commands:
+heartbeat_interval='30s'
+
+# Declare a variable for storing the heartbeat process id:
+heartbeat_pid=""
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	stop_heartbeat
+}
+
+# Starts a heartbeat.
+#
+# $1 - heartbeat interval
+start_heartbeat() {
+	echo 'Starting heartbeat...' >&2
+
+	# Create a heartbeat and send to background:
+	heartbeat "$1" &
+
+	# Capture the heartbeat pid:
+	heartbeat_pid=$!
+	echo "Heartbeat pid: ${heartbeat_pid}" >&2
+}
+
+# Runs an infinite print loop.
+#
+# $1 - heartbeat interval
+heartbeat() {
+	while true; do
+		echo "$(date) - heartbeat..." >&2;
+		sleep "$1";
+	done
+}
+
+# Stops the heartbeat print loop.
+stop_heartbeat() {
+	echo 'Stopping heartbeat...' >&2
+	kill "${heartbeat_pid}"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Calculates the percentage change in code coverage and prints a formatted string.
+#
+# $1 - previous coverage value as a decimal (e.g., 0.85 for 85% coverage)
+# $2 - new coverage value as a decimal
+compare_cov() {
+	old_cov_value="$1"
+	new_cov_value="$2"
+
+	if [ "$old_cov_value" == 0 ]; then
+		new_cov_percentage=$(awk "BEGIN {printf \"%.2f\", $new_cov_value*100}")
+		echo "\$\\\\\\\\color{green}+$new_cov_percentage\\\\\\\\\\\\\\\\%\$"
+	else
+		percentage_change=$(awk "BEGIN {printf \"%.2f\", (($new_cov_value - $old_cov_value) / $old_cov_value) * 100}")
+		color="green"
+		sign=""
+		if [ $(awk "BEGIN {if ($percentage_change >= 0) print 1; else print 0}") -eq 1 ]; then
+			sign="+"
+		elif [ $(awk "BEGIN {if ($percentage_change < 0) print 1; else print 0}") -eq 1 ]; then
+			sign="-"
+			color="red"
+		fi
+		echo "\$\\\\\\\\color{$color}$sign$percentage_change\\\\\\\\\\\\\\\\%\$"
+	fi
+}
+
+# Main execution sequence.
+main() {
+	start_heartbeat "${heartbeat_interval}"
+
+	# Only keep files which reside in package directories:
+	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
+
+	# Find unique package directories:
+	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?\/?$//' | uniq)
+
+	if [ -z "${directories}" ]; then
+		echo 'No packages to test.' >&2
+		cleanup
+		print_success
+		exit 0
+	fi
+
+	mkdir -p artifacts
+	coverage=''
+	for package in ${directories}; do
+		# For each package, extract coverage values from the respective coverage report:
+		pkg=`echo $package | sed -E 's/^.*stdlib\///'`
+		
+		make test-javascript-cov TESTS_FILTER=".*/${pkg}/test/.*"
+
+		if [ ! -f reports/coverage/lcov-report/${pkg}/lib/index.html ]; then
+			# Reports for packages with no dependencies are stored in the `lcov-report` directory
+			coverage_path="reports/coverage/lcov-report/index.html"
+			top_level_report=true
+		else
+			# Reports for packages with dependencies are stored in `lcov-report/<pkg>/lib`:
+			coverage_path="reports/coverage/lcov-report/${pkg}/lib/index.html"
+			top_level_report=false
+		fi
+		pkg_cov_values=($(cat $coverage_path | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{if ($2 != 0) print $1/$2; else print 1}'))
+		pkg_statements_cov=${pkg_cov_values[0]}
+		pkg_branches_cov=${pkg_cov_values[1]}
+		pkg_functions_cov=${pkg_cov_values[2]}
+		pkg_lines_cov=${pkg_cov_values[3]}
+
+		pkg_cov_fractions=($(cat $coverage_path | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{if ($1<$2) print "$\\\\\\\\color{red}" $0 "$"; else print "$\\\\\\\\color{green}" $0 "$"}'))
+		pkg_statements_cov_fraction=${pkg_cov_fractions[0]}
+		pkg_branches_cov_fraction=${pkg_cov_fractions[1]}
+		pkg_functions_cov_fraction=${pkg_cov_fractions[2]}
+		pkg_lines_cov_fraction=${pkg_cov_fractions[3]}
+
+		old_cov_report=$(curl -s --fail "https://coverage.stdlib.io/${pkg}/lib/index.html" 2>/dev/null || true)
+		if [ -z "$old_cov_report" ]; then
+			old_statements_cov=0
+			old_branches_cov=0
+			old_functions_cov=0
+			old_lines_cov=0
+		else
+			old_cov_values=($(echo "$old_cov_report" | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{if ($2 != 0) print $1/$2; else print 1}'))
+			old_statements_cov=${old_cov_values[0]}
+			old_branches_cov=${old_cov_values[1]}
+			old_functions_cov=${old_cov_values[2]}
+			old_lines_cov=${old_cov_values[3]}
+		fi
+
+		cov_change_statements=$(compare_cov "$old_statements_cov" "$pkg_statements_cov")
+		cov_change_branches=$(compare_cov "$old_branches_cov" "$pkg_branches_cov")
+		cov_change_functions=$(compare_cov "$old_functions_cov" "$pkg_functions_cov")
+		cov_change_lines=$(compare_cov "$old_lines_cov" "$pkg_lines_cov")
+
+		pkg_cov="| $pkg_statements_cov_fraction <br> $cov_change_statements | $pkg_branches_cov_fraction <br> $cov_change_branches | $pkg_functions_cov_fraction <br> $cov_change_functions | $pkg_lines_cov_fraction <br> $cov_change_lines |"
+
+		pkg_url="https://coverage.stdlib.io/${pkg}/index.html"
+		pkg_link="<a href="$pkg_url">$pkg</a>"
+		coverage="$coverage\n| $pkg_link $pkg_cov"
+
+		# Copy coverage report of the package to artifacts directory:
+		if [ "$top_level_report" = true ]; then
+			mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report"/* "artifacts/${pkg}/"
+		else
+			mkdir -p "artifacts/${pkg}/lib/" && cp -r "reports/coverage/lcov-report/${pkg}/lib"/* "artifacts/${pkg}/"
+		fi
+
+		# Cleanup coverage reports for next package:
+		rm -rf reports/coverage/lcov-report/*
+	done
+
+	# Format coverage as Markdown table row:
+	table_body=`echo $coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/g; s/\]/|/g'`
+	table_header="| Package | Statements | Branches | Functions | Lines |\n| --------- | ------------ | ---------- | ----------- | ----- |"
+	table="${table_header}${table_body}"
+
+	echo "table=$table" >> $GITHUB_OUTPUT
+
+	cleanup
+	print_success
+	exit 0
+}
+
+# Set an error handler to print captured output and perform any clean-up tasks:
+trap 'on_error' ERR
+
+# Run main:
+main

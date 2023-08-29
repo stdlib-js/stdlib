@@ -29,7 +29,7 @@ The [mean squared error][mean-squared-error] is defined as
 <!-- <equation class="equation" label="eq:mean_squared_error" align="center" raw="\operatorname{MSE} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2" alt="Equation for the mean squared error."> -->
 
 ```math
-\operatorname{MSE} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2
+\mathop{\mathrm{MSE}} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{MSE} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)^2" data-equation="eq:mean_squared_error">

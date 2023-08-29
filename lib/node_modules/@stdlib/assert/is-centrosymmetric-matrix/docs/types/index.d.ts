@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { ndarray } from '@stdlib/types/ndarray';
+
 /**
 * Tests if a value is a centrosymmetric matrix.
 *
@@ -40,7 +44,7 @@
 * bool = isCentrosymmetricMatrix( [] );
 * // returns false
 */
-declare function isCentrosymmetricMatrix( v: any ): boolean;
+declare function isCentrosymmetricMatrix( v: any ): v is ndarray;
 
 
 // EXPORTS //

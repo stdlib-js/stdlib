@@ -44,7 +44,7 @@ interface IsInfinite {
 	* var bool = isInfinite( null );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is number | Number;
 
 	/**
 	* Tests if a value is a number primitive having an infinite value.
@@ -60,7 +60,7 @@ interface IsInfinite {
 	* var bool = isInfinite.isPrimitive( new Number( -1.0/0.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is number;
 
 	/**
 	* Tests if a value is a number object having an infinite value.
@@ -76,7 +76,7 @@ interface IsInfinite {
 	* var bool = isInfinite.isObject( new Number( 1.0/0.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is Number;
 }
 
 /**

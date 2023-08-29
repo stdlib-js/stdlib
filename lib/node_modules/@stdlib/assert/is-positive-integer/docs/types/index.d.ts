@@ -52,7 +52,7 @@ interface IsPositiveInteger {
 	* var bool = isPositiveInteger( null );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is number | Number;
 
 	/**
 	* Tests if a value is a number primitive having a positive integer value.
@@ -68,7 +68,7 @@ interface IsPositiveInteger {
 	* var bool = isPositiveInteger.isPrimitive( new Number( 3.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is number;
 
 	/**
 	* Tests if a value is a number object having a positive integer value.
@@ -84,7 +84,7 @@ interface IsPositiveInteger {
 	* var bool = isPositiveInteger.isObject( new Number( 3.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is Number;
 }
 
 /**

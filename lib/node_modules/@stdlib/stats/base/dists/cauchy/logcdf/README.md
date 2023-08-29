@@ -29,7 +29,7 @@ The [cumulative distribution function][cdf] for a [Cauchy][cauchy-distribution] 
 <!-- <equation class="equation" label="eq:cauchy_cdf" align="center" raw="F(x; x_0,\gamma)=\frac{1}{\pi} \operatorname{arctan} \left(\frac{x-x_0}{\gamma}\right)+\frac{1}{2}" alt="Cumulative distribution function for a Cauchy distribution."> -->
 
 ```math
-F(x; x_0,\gamma)=\frac{1}{\pi} \operatorname{arctan} \left(\frac{x-x_0}{\gamma}\right)+\frac{1}{2}
+F(x; x_0,\gamma)=\frac{1}{\pi} \mathop{\mathrm{arctan}} \left(\frac{x-x_0}{\gamma}\right)+\frac{1}{2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="F(x; x_0,\gamma)=\frac{1}{\pi} \operatorname{arctan} \left(\frac{x-x_0}{\gamma}\right)+\frac{1}{2}" data-equation="eq:cauchy_cdf">

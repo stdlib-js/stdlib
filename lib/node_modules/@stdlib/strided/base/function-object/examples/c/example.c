@@ -28,7 +28,7 @@ static double scale( const double x ) {
 	return x * 10.0;
 }
 
-int main() {
+int main( void ) {
 	// Manually create a strided array function object...
 	struct StridedFunctionObject *obj = malloc( sizeof( struct StridedFunctionObject ) );
 	if ( obj == NULL ) {

@@ -40,7 +40,7 @@
 * var out = isWhitespace( 123 );
 * // returns false
 */
-declare function isWhitespace( x: any ): boolean;
+declare function isWhitespace( x: any ): x is string;
 
 
 // EXPORTS //

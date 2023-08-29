@@ -19,8 +19,8 @@
 #include "stdlib/math/base/special/rsqrt.h"
 #include <stdio.h>
 
-int main() {
-	double x[] = { 3.14, 9.0, 0.0, 0.0/0.0 };
+int main( void ) {
+	const double x[] = { 3.14, 9.0, 0.0, 0.0/0.0 };
 
 	double y;
 	int i;

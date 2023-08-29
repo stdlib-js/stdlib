@@ -256,7 +256,7 @@ void stdlib_strided_dmskabs2( const int64_t N, const double *X, const int64_t st
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create an input strided array:
     double X[] = { -2.0, 1.0, -3.0, -5.0, 4.0, 0.0, -1.0, -3.0 };
 

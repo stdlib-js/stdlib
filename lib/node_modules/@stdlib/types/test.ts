@@ -484,7 +484,7 @@ function cmplx128Array(): array.Complex128Array {
 		throw new Error( 'something went wrong' );
 	}
 
-	const arr: obj.Collection = [ 1, 2, 3 ];
+	const arr: obj.Collection<number> = [ 1, 2, 3 ];
 	if ( arr.length !== 3 ) {
 		throw new Error( 'something went wrong' );
 	}

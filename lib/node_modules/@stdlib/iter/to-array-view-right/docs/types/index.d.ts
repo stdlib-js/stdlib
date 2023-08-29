@@ -16,50 +16,39 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
-import { ArrayLike } from '@stdlib/types/array';
+import { TypedIterator, TypedIterableIterator } from '@stdlib/types/iter';
 import { Collection } from '@stdlib/types/object';
 
 // Define a union type representing both iterable and non-iterable iterators:
-type Iterator = Iter | IterableIterator;
+type Iterator<T> = TypedIterator<T> | TypedIterableIterator<T>;
 
 /**
 * Map function invoked for each iterated value.
 *
 * @returns iterator value
 */
-type Nullary = () => any;
-
-/**
-* Map function invoked for each iterated value.
-*
-* @param value - iterated value
-* @returns iterator value
-*/
-type Unary = ( value: any ) => any;
+type Nullary<U> = () => U;
 
 /**
 * Map function invoked for each iterated value.
 *
 * @param value - iterated value
-* @param index - iterated value index
 * @returns iterator value
 */
-type Binary = ( value: any, index: number ) => any;
+type Unary<T, U> = ( value: T ) => U;
 
 /**
 * Map function invoked for each iterated value.
 *
 * @param value - iterated value
 * @param index - iterated value index
-* @param src - source array-like object
 * @returns iterator value
 */
-type Ternary = ( value: any, index: number, src: ArrayLike<any> ) => any;
+type Binary<T, U> = ( value: T, index: number ) => U;
 
 /**
 * Map function invoked for each iterated value.
@@ -69,7 +58,17 @@ type Ternary = ( value: any, index: number, src: ArrayLike<any> ) => any;
 * @param src - source array-like object
 * @returns iterator value
 */
-type MapFunction = Nullary | Unary | Binary | Ternary;
+type Ternary<T, U> = ( value: T, index: number, src: Collection<U> ) => U;
+
+/**
+* Map function invoked for each iterated value.
+*
+* @param value - iterated value
+* @param index - iterated value index
+* @param src - source array-like object
+* @returns iterator value
+*/
+type MapFunction<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
 * Fills an array-like object view from right to left with values returned from an iterator.
@@ -92,7 +91,7 @@ type MapFunction = Nullary | Unary | Binary | Ternary;
 * var arr = iterator2arrayviewRight( iter, new Float64Array( 20 ) );
 * // returns <Float64Array>
 */
-declare function iterator2arrayviewRight( iterator: Iterator, out: Collection, mapFcn?: MapFunction, thisArg?: any ): Collection; // tslint:disable-line:max-line-length
+declare function iterator2arrayviewRight<T = any, U = T>( iterator: Iterator<T>, out: Collection<U>, mapFcn?: MapFunction<T, U>, thisArg?: any ): Collection<U>;
 
 /**
 * Fills an array-like object view from right to left with values returned from an iterator.
@@ -116,7 +115,7 @@ declare function iterator2arrayviewRight( iterator: Iterator, out: Collection, m
 * var arr = iterator2arrayviewRight( iter, new Float64Array( 20 ), 5 );
 * // returns <Float64Array>
 */
-declare function iterator2arrayviewRight( iterator: Iterator, out: Collection, begin: number, mapFcn?: MapFunction, thisArg?: any ): Collection; // tslint:disable-line:max-line-length
+declare function iterator2arrayviewRight<T = any, U = T>( iterator: Iterator<T>, out: Collection<U>, begin: number, mapFcn?: MapFunction<T, U>, thisArg?: any ): Collection<U>;
 
 /**
 * Fills an array-like object view from right to left with values returned from an iterator.
@@ -142,7 +141,7 @@ declare function iterator2arrayviewRight( iterator: Iterator, out: Collection, b
 * var arr = iterator2arrayviewRight( iter, new Float64Array( 20 ), 5, 8 );
 * // returns <Float64Array>
 */
-declare function iterator2arrayviewRight( iterator: Iterator, out: Collection, begin: number, end: number, mapFcn?: MapFunction, thisArg?: any ): Collection; // tslint:disable-line:max-line-length
+declare function iterator2arrayviewRight<T = any, U = T>( iterator: Iterator<T>, out: Collection<U>, begin: number, end: number, mapFcn?: MapFunction<T, U>, thisArg?: any ): Collection<U>;
 
 
 // EXPORTS //

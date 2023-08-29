@@ -31,7 +31,7 @@ The [variance][variance] for an [Erlang][erlang-distribution] random variable is
 <!-- <equation class="equation" label="eq:erlang_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{k}{\lambda^{2}}" alt="Variance for an Erlang distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \frac{k}{\lambda^{2}}
+\mathop{\mathrm{Var}}\left( X \right) = \frac{k}{\lambda^{2}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{k}{\lambda^{2}}" data-equation="eq:erlang_variance">

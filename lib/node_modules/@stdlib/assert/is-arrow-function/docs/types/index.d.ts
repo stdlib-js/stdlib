@@ -37,7 +37,7 @@
 * var bool = isArrowFunction( beep );
 * // returns false
 */
-declare function isArrowFunction( value: any ): boolean;
+declare function isArrowFunction( value: any ): value is ( () => any );
 
 
 // EXPORTS //

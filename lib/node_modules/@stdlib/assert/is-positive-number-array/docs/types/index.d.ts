@@ -36,7 +36,7 @@ interface IsPositiveNumberArray {
 	* var bool = isPositiveNumberArray( [ 3.0, '3.0' ] );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is ArrayLike<number | Number>;
 
 	/**
 	* Tests if a value is an array-like object containing only positive primitive number values.
@@ -52,7 +52,7 @@ interface IsPositiveNumberArray {
 	* var bool = isPositiveNumberArray.primitives( [ 3.0, new Number(1.0) ] );
 	* // returns false
 	*/
-	primitives( value: any ): boolean;
+	primitives( value: any ): value is ArrayLike<number>;
 
 	/**
 	* Tests if a value is an array-like object containing only number objects having positive number values.
@@ -68,7 +68,7 @@ interface IsPositiveNumberArray {
 	* var bool = isPositiveNumberArray.objects( [ 1.0, 2.7, 10.0 ] );
 	* // returns false
 	*/
-	objects( value: any ): boolean;
+	objects( value: any ): value is ArrayLike<Number>;
 }
 
 /**

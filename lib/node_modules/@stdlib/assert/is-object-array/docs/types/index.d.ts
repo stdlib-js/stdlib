@@ -34,7 +34,7 @@
 * bool = isObjectArray( [ {}, '3.0' ] );
 * // returns false
 */
-declare function isObjectArray( value: any ): boolean;
+declare function isObjectArray( value: any ): value is ArrayLike<Object>;
 
 
 // EXPORTS //

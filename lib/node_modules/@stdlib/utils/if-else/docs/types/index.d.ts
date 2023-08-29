@@ -32,7 +32,7 @@
 * var z = ifelse( randu() > 0.5, 1.0, -1.0 );
 * // returns <number>
 */
-declare function ifelse( bool: boolean, x: any, y: any ): any;
+declare function ifelse<T, U>( bool: boolean, x: T, y: U ): T | U;
 
 
 // EXPORTS //

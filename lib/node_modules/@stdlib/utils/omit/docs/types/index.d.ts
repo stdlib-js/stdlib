@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Returns a partial object copy excluding specified keys.
@@ -40,7 +40,8 @@
 * var obj2 = omit( obj1, 'b' );
 * // returns { 'a': 1 }
 */
-declare function omit( obj: any, keys: string | Array<string> ): Object;
+declare function omit<T extends object, K extends keyof T>( obj: T, keys: Array<K> | K ): Omit<T, K>; // tslint-disable-line max-line-length
+declare function omit<T extends object>( obj: T, keys: Array<string> | string ): Partial<T>; // tslint-disable-line max-line-length
 
 
 // EXPORTS //

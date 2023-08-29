@@ -32,7 +32,7 @@
 * var bool = isFunction( beep );
 * // returns true
 */
-declare function isFunction( value: any ): boolean;
+declare function isFunction( value: any ): value is Function;
 
 
 // EXPORTS //

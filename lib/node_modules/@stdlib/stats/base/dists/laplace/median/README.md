@@ -31,7 +31,7 @@ The [median][median] for a [Laplace][laplace-distribution] random variable with 
 <!-- <equation class="equation" label="eq:laplace_median" align="center" raw="\operatorname{Median}\left( X \right) = \mu" alt="Median for a Laplace distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \mu
+\mathop{\mathrm{Median}}\left( X \right) = \mu
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu" data-equation="eq:laplace_median">

@@ -31,7 +31,7 @@ The [variance][variance] for a [chi][chi-distribution] random variable is
 <!-- <equation class="equation" label="eq:chi_variance" align="center" raw="\operatorname{Var}\left( X \right) = k - \mathbb{E}\left[ X \right]^2" alt="Variance for a chi distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = k - \mathbb{E}\left[ X \right]^2
+\mathop{\mathrm{Var}}\left( X \right) = k - \mathbb{E}\left[ X \right]^2
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = k - \mathbb{E}\left[ X \right]^2" data-equation="eq:chi_variance">

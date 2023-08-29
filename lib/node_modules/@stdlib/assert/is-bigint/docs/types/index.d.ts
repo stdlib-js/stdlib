@@ -44,7 +44,7 @@ interface IsBigInt {
 	* var bool = isBigInt( {} );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is bigint | BigInt;
 
 	/**
 	* Tests if a value is a BigInt primitive.
@@ -68,7 +68,7 @@ interface IsBigInt {
 	* var bool = isBigInt.isPrimitive( {} );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is bigint;
 
 	/**
 	* Tests if a value is a BigInt object.
@@ -92,7 +92,7 @@ interface IsBigInt {
 	* var bool = isBigInt.isObject( {} );
 	* // returns false
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is BigInt;
 }
 
 /**

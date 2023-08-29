@@ -36,7 +36,7 @@
 * var bool = isReferenceError( {} );
 * // returns false
 */
-declare function isReferenceError( value: any ): boolean;
+declare function isReferenceError( value: any ): value is ReferenceError;
 
 
 // EXPORTS //

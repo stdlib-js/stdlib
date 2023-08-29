@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [negative binomial][negative-binomial-dist
 <!-- <equation class="equation" label="eq:negative_binomial_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{6}{r} + \frac{(1-p)^{2}}{pr}" alt="Excess kurtosis for a negative binomial distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \frac{6}{r} + \frac{(1-p)^{2}}{pr}
+\mathop{\mathrm{Kurt}}\left( X \right) = \frac{6}{r} + \frac{(1-p)^{2}}{pr}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{6}{r} + \frac{(1-p)^{2}}{pr}" data-equation="eq:negative_binomial_kurtosis">

@@ -394,7 +394,7 @@ jobs:
       - name: 'Create pull request'
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           title: 'Fix lint errors'
           add-paths: ${{ steps.random-files.outputs.files }}
@@ -409,6 +409,6 @@ jobs:
           labels: |
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: 'fix-lint-errors'
           delete-branch: true

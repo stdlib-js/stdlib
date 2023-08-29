@@ -32,7 +32,7 @@
 * var bool = isInt16Array( [] );
 * // returns false
 */
-declare function isInt16Array( value: any ): boolean;
+declare function isInt16Array( value: any ): value is Int16Array;
 
 
 // EXPORTS //

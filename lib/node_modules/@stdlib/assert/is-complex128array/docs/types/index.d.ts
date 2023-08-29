@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { Complex128Array } from '@stdlib/types/array';
+
 /**
 * Tests if a value is a Complex128Array.
 *
@@ -32,7 +36,7 @@
 * var bool = isComplex128Array( [] );
 * // returns false
 */
-declare function isComplex128Array( value: any ): boolean;
+declare function isComplex128Array( value: any ): value is Complex128Array;
 
 
 // EXPORTS //

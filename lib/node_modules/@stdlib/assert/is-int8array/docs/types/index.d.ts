@@ -32,7 +32,7 @@
 * var bool = isInt8Array( [] );
 * // returns false
 */
-declare function isInt8Array( value: any ): boolean;
+declare function isInt8Array( value: any ): value is Int8Array;
 
 
 // EXPORTS //

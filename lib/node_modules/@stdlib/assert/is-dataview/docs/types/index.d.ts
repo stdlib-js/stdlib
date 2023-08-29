@@ -35,7 +35,7 @@
 * var bool = isDataView( [] );
 * // returns false
 */
-declare function isDataView( value: any ): boolean;
+declare function isDataView( value: any ): value is DataView;
 
 
 // EXPORTS //

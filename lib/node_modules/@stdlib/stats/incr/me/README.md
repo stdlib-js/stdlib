@@ -29,7 +29,7 @@ The [mean error][mean-absolute-error] is defined as
 <!-- <equation class="equation" label="eq:mean_error" align="center" raw="\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)" alt="Equation for the mean error."> -->
 
 ```math
-\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)
+\mathop{\mathrm{ME}} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{ME} = \frac{1}{n} \sum_{i=0}^{n-1} (y_i - x_i)" data-equation="eq:mean_error">

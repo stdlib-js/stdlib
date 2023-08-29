@@ -31,7 +31,7 @@ The [skewness][skewness] for a [beta prime][betaprime-distribution] random varia
 <!-- <equation class="equation" label="eq:betaprime_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{2(2\alpha + \beta - 1)}{\beta - 3}{\sqrt{\frac{\beta - 2}{\alpha (\alpha + \beta - 1)}}}" alt="Skewness for a beta prime distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{2(2\alpha + \beta - 1)}{\beta - 3}{\sqrt{\frac{\beta - 2}{\alpha (\alpha + \beta - 1)}}}
+\mathop{\mathrm{skew}}\left( X \right) = \frac{2(2\alpha + \beta - 1)}{\beta - 3}{\sqrt{\frac{\beta - 2}{\alpha (\alpha + \beta - 1)}}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{2(2\alpha + \beta - 1)}{\beta - 3}{\sqrt{\frac{\beta - 2}{\alpha (\alpha + \beta - 1)}}}" data-equation="eq:betaprime_skewness">

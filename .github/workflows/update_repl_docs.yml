@@ -101,7 +101,7 @@ jobs:
       # Create a pull request:
       - name: 'Create pull request'
         id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           title: 'Update REPL namespace'
           body: |
@@ -116,7 +116,7 @@ jobs:
             documentation
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: update-repl-docs
           delete-branch: true
 

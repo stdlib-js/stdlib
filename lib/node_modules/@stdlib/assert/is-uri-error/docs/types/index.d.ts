@@ -36,7 +36,7 @@
 * var bool = isURIError( {} );
 * // returns false
 */
-declare function isURIError( value: any ): boolean;
+declare function isURIError( value: any ): value is URIError;
 
 
 // EXPORTS //

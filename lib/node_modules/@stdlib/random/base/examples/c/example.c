@@ -21,7 +21,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
 	// Create a PRNG:
 	const struct BasePRNG prng = {
 		"minstd",

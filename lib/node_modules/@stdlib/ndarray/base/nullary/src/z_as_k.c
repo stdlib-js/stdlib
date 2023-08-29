@@ -89,7 +89,7 @@
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -106,7 +106,7 @@
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_0d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	int8_t status = stdlib_ndarray_iset_complex128( arrays[ 0 ], 0, stdlib_complex128_from_int16( f() ) );
 	if ( status != 0 ) {
@@ -175,7 +175,7 @@ int8_t stdlib_ndarray_z_as_k_0d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -192,7 +192,7 @@ int8_t stdlib_ndarray_z_as_k_0d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_1d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_1D_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -258,7 +258,7 @@ int8_t stdlib_ndarray_z_as_k_1d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -275,7 +275,7 @@ int8_t stdlib_ndarray_z_as_k_1d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_2d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_2D_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -341,7 +341,7 @@ int8_t stdlib_ndarray_z_as_k_2d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -358,7 +358,7 @@ int8_t stdlib_ndarray_z_as_k_2d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_2d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_2D_BLOCKED_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -424,7 +424,7 @@ int8_t stdlib_ndarray_z_as_k_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -441,7 +441,7 @@ int8_t stdlib_ndarray_z_as_k_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_3d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_3D_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -507,7 +507,7 @@ int8_t stdlib_ndarray_z_as_k_3d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -524,7 +524,7 @@ int8_t stdlib_ndarray_z_as_k_3d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_3d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_3D_BLOCKED_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -590,7 +590,7 @@ int8_t stdlib_ndarray_z_as_k_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -607,7 +607,7 @@ int8_t stdlib_ndarray_z_as_k_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_4d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_4D_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -673,7 +673,7 @@ int8_t stdlib_ndarray_z_as_k_4d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -690,7 +690,7 @@ int8_t stdlib_ndarray_z_as_k_4d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_4d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_4D_BLOCKED_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -756,7 +756,7 @@ int8_t stdlib_ndarray_z_as_k_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -773,7 +773,7 @@ int8_t stdlib_ndarray_z_as_k_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_5d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_5D_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -839,7 +839,7 @@ int8_t stdlib_ndarray_z_as_k_5d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -856,7 +856,7 @@ int8_t stdlib_ndarray_z_as_k_5d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_5d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_5D_BLOCKED_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -922,7 +922,7 @@ int8_t stdlib_ndarray_z_as_k_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -939,7 +939,7 @@ int8_t stdlib_ndarray_z_as_k_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_6d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_6D_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1005,7 +1005,7 @@ int8_t stdlib_ndarray_z_as_k_6d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -1022,7 +1022,7 @@ int8_t stdlib_ndarray_z_as_k_6d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_6d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_6D_BLOCKED_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1088,7 +1088,7 @@ int8_t stdlib_ndarray_z_as_k_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -1105,7 +1105,7 @@ int8_t stdlib_ndarray_z_as_k_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_7d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_7D_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1171,7 +1171,7 @@ int8_t stdlib_ndarray_z_as_k_7d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -1188,7 +1188,7 @@ int8_t stdlib_ndarray_z_as_k_7d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_7d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_7D_BLOCKED_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1254,7 +1254,7 @@ int8_t stdlib_ndarray_z_as_k_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -1271,7 +1271,7 @@ int8_t stdlib_ndarray_z_as_k_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_8d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_8D_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1337,7 +1337,7 @@ int8_t stdlib_ndarray_z_as_k_8d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -1354,7 +1354,7 @@ int8_t stdlib_ndarray_z_as_k_8d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_8d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_8D_BLOCKED_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1420,7 +1420,7 @@ int8_t stdlib_ndarray_z_as_k_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -1437,7 +1437,7 @@ int8_t stdlib_ndarray_z_as_k_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_9d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_9D_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1503,7 +1503,7 @@ int8_t stdlib_ndarray_z_as_k_9d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -1520,7 +1520,7 @@ int8_t stdlib_ndarray_z_as_k_9d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_9d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_9D_BLOCKED_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1586,7 +1586,7 @@ int8_t stdlib_ndarray_z_as_k_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -1603,7 +1603,7 @@ int8_t stdlib_ndarray_z_as_k_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_10d( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_10D_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1669,7 +1669,7 @@ int8_t stdlib_ndarray_z_as_k_10d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -1686,7 +1686,7 @@ int8_t stdlib_ndarray_z_as_k_10d( struct ndarray *arrays[], void *fcn ) {
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_10d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_10D_BLOCKED_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1752,7 +1752,7 @@ int8_t stdlib_ndarray_z_as_k_10d_blocked( struct ndarray *arrays[], void *fcn ) 
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *
@@ -1769,7 +1769,7 @@ int8_t stdlib_ndarray_z_as_k_10d_blocked( struct ndarray *arrays[], void *fcn ) 
 * stdlib_ndarray_free( x );
 */
 int8_t stdlib_ndarray_z_as_k_nd( struct ndarray *arrays[], void *fcn ) {
-	typedef int16_t func_type();
+	typedef int16_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_ND_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_int16 )
 	return 0;
@@ -1879,7 +1879,7 @@ static const struct ndarrayNullaryDispatchObject obj = {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* int16_t fcn() {
+* static int16_t fcn( void ) {
 *     return 10;
 * }
 *

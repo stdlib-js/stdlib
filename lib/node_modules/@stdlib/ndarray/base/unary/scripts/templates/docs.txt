@@ -61,7 +61,7 @@ if ( y == NULL ) {
 struct ndarray *arrays[] = { x, y };
 
 // Define a callback:
-{{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
+static {{CALLBACK_RETURN_DTYPE}} fcn( const {{CALLBACK_PARAM_1_DTYPE}} x ) {
     {{CALLBACK_BODY}}
 }
 

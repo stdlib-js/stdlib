@@ -29,7 +29,7 @@ The [mean absolute percentage error][mean-absolute-percentage-error] is defined 
 <!-- <equation class="equation" label="eq:mean_absolute_percentage_error" align="center" raw="\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" alt="Equation for the mean absolute percentage error."> -->
 
 ```math
-\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|
+\mathop{\mathrm{MAPE}}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" data-equation="eq:mean_absolute_percentage_error">

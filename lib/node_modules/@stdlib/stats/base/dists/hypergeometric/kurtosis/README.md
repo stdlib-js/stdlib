@@ -31,7 +31,7 @@ Imagine a scenario with a population of size `N`, of which a subpopulation of si
 <!-- <equation class="equation" label="eq:hypergeometric_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{(N-1) N^{2} \left[ N(N+1)-6K(N-K)-6n(N-n) \right]+6nK(N-K)(N-n)(5N-6)}{nK(N-K)(N-n)(N-2)(N-3)}" alt="Excess kurtosis for a hypergeometric distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \frac{(N-1) N^{2} \left[ N(N+1)-6K(N-K)-6n(N-n) \right]+6nK(N-K)(N-n)(5N-6)}{nK(N-K)(N-n)(N-2)(N-3)}
+\mathop{\mathrm{Kurt}}\left( X \right) = \frac{(N-1) N^{2} \left[ N(N+1)-6K(N-K)-6n(N-n) \right]+6nK(N-K)(N-n)(5N-6)}{nK(N-K)(N-n)(N-2)(N-3)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{(N-1) N^{2} \left[ N(N+1)-6K(N-K)-6n(N-n) \right]+6nK(N-K)(N-n)(5N-6)}{nK(N-K)(N-n)(N-2)(N-3)}" data-equation="eq:hypergeometric_kurtosis">

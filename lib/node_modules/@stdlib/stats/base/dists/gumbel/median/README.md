@@ -31,7 +31,7 @@ The [median][median] for a [gumbel][gumbel-distribution] random variable is
 <!-- <equation class="equation" label="eq:gumbel_median" align="center" raw="\operatorname{Median}\left( X \right) = \mu -\beta \,\ln(\ln(2))" alt="Median for a gumbel distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \mu -\beta \,\ln(\ln(2))
+\mathop{\mathrm{Median}}\left( X \right) = \mu -\beta \,\ln(\ln(2))
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu -\beta \,\ln(\ln(2))" data-equation="eq:gumbel_median">

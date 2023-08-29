@@ -29,7 +29,7 @@ The sign of the [gamma-function][@stdlib/math/base/special/gamma] is defined as
 <!-- <equation class="equation" label="eq:gamma_sign_function" align="center" raw="\operatorname{gammasgn} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 1 \\ -1 & \textrm{if}\ \Gamma < 1 \\ 0 & \textrm{otherwise}\ \end{cases}" alt="Sign of the gamma function"> -->
 
 ```math
-\operatorname{gammasgn} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 1 \\ -1 & \textrm{if}\ \Gamma < 1 \\ 0 & \textrm{otherwise}\ \end{cases}
+\mathop{\mathrm{gammasgn}} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 1 \\ -1 & \textrm{if}\ \Gamma < 1 \\ 0 & \textrm{otherwise}\ \end{cases}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{gammasgn} ( x ) = \begin{cases} 1 &amp; \textrm{if}\ \Gamma &gt; 1 \\ -1 &amp; \textrm{if}\ \Gamma &lt; 1 \\ 0 &amp; \textrm{otherwise}\ \end{cases}" data-equation="eq:gamma_sign_function">

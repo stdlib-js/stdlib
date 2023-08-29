@@ -18,6 +18,8 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@types/node"/>
+
 /**
 * Tests if a value is a Buffer instance.
 *
@@ -40,7 +42,7 @@
 * var v = isBuffer( [] );
 * // returns false
 */
-declare function isBuffer( value: any ): boolean;
+declare function isBuffer( value: any ): value is Buffer;
 
 
 // EXPORTS //

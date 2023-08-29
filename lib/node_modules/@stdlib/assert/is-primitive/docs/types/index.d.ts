@@ -32,7 +32,7 @@
 * var bool = isPrimitive( {} );
 * // returns false
 */
-declare function isPrimitive( value: any ): boolean;
+declare function isPrimitive( value: any ): value is null | undefined | string | boolean | number | symbol;
 
 
 // EXPORTS //

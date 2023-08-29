@@ -48,7 +48,7 @@
 * var bool = isAbsoluteHttpURI( null );
 * // returns false
 */
-declare function isAbsoluteHttpURI( value: any ): boolean;
+declare function isAbsoluteHttpURI( value: any ): value is string;
 
 
 // EXPORTS //

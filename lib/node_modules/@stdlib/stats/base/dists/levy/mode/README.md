@@ -31,7 +31,7 @@ The [mode][mode] for a [Lévy][levy-distribution] random variable with location 
 <!-- <equation class="equation" label="eq:levy_expectation" align="center" raw="\operatorname{mode}\left( X \right) = \mu + \frac{c}{3}" alt="Mode for a Lévy distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \mu + \frac{c}{3}
+\mathop{\mathrm{mode}}\left( X \right) = \mu + \frac{c}{3}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \mu + \frac{c}{3}" data-equation="eq:levy_expectation">

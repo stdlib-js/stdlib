@@ -164,7 +164,7 @@ double stdlib_base_cabs( const stdlib_complex128_t complex z );
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     const stdlib_complex128_t x[] = {
         stdlib_complex128( 3.14, 1.0 ),
         stdlib_complex128( -3.14, -1.0 ),

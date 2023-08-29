@@ -42,7 +42,7 @@ void print_ndarray_contents( const struct ndarray *x ) {
 	}
 }
 
-int main() {
+int main( void ) {
 	// Manually create an ndarray (WARNING: this is for illustration purposes only, as the fields of an ndarray are subject to change; for ABI compatibility, use utility functions for accessing ndarray data)...
 	struct ndarray *x1 = malloc( sizeof( struct ndarray ) );
 	if ( x1 == NULL ) {

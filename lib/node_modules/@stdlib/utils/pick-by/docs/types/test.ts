@@ -23,7 +23,8 @@ import pickBy = require( './index' );
 
 // The function returns an object...
 {
-	pickBy( { 'a': 1, 'b': 2 }, ( _: number, value: number ): boolean => value > 1 ); // $ExpectType Object
+	pickBy( { 'a': 1, 'b': 2 }, ( _: string, value: number ): boolean => value > 1 ); // $ExpectType Partial<{ a: number; b: number; }>
+	pickBy( { 'a': 1, 'b': 2 }, () => true ); // $ExpectType Partial<{ a: number; b: number; }>
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a predicate function...

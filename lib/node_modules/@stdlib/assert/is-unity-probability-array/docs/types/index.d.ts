@@ -40,7 +40,7 @@
 * var bool = isUnityProbabilityArray( [ 3.14, 0.0 ] );
 * // returns false
 */
-declare function isUnityProbabilityArray( v: any ): boolean;
+declare function isUnityProbabilityArray( v: any ): v is ArrayLike<number>;
 
 
 // EXPORTS //

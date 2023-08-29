@@ -32,8 +32,8 @@ import getter = require( './index' );
 	getter( 'uint16' ); // $ExpectType GetUint16
 	getter( 'uint8' ); // $ExpectType GetUint8
 	getter( 'uint8c' ); // $ExpectType GetUint8c
-	getter( 'generic' ); // $ExpectType GetGeneric
-	getter( 'foo' ); // $ExpectType GetArrayLike
+	getter( 'generic' ); // $ExpectType GetGeneric<any>
+	getter( 'foo' ); // $ExpectType GetArrayLike<any>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...

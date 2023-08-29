@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main() {
+int main( void ) {
 	double x[] = { 3.14, -3.14, 1.0/0.0, 0.0/0.0 };
 
 	bool b;

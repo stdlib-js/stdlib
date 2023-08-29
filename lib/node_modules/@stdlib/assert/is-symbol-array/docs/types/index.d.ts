@@ -40,7 +40,7 @@ interface IsSymbolArray {
 	* var bool = isSymbolArray( [ Symbol( 'abc' ), 'def' ] );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is ArrayLike<symbol | Symbol>;
 
 	/**
 	*  Tests if a value is an array-like object containing only `symbol` primitives.
@@ -60,7 +60,7 @@ interface IsSymbolArray {
 	* var bool = isSymbolArray.primitives( [ Symbol( 'abc' ), Object( Symbol( 'def' ) ) ] );
 	* // returns false
 	*/
-	primitives( value: any ): boolean;
+	primitives( value: any ): value is ArrayLike<symbol>;
 
 	/**
 	* Tests if a value is an array-like object containing only `Symbol` objects.
@@ -81,7 +81,7 @@ interface IsSymbolArray {
 	* var bool = isSymbolArray.objects( [ Symbol( 'abc' ), Symbol( 'def' ) ] );
 	* // returns false
 	*/
-	objects( value: any ): boolean;
+	objects( value: any ): value is ArrayLike<Symbol>;
 }
 
 /**

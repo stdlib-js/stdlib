@@ -39,7 +39,7 @@ interface IsAbsolutePath {
 	*     // returns true
 	* }
 	*/
-	( value: any ): boolean;
+	( value: any ): value is string;
 
 	/**
 	* Tests if a value is a POSIX absolute path.
@@ -55,7 +55,7 @@ interface IsAbsolutePath {
 	* var bool = isAbsolutePath.posix( 'foo/bar/baz' );
 	* // returns false
 	*/
-	posix( value: any ): boolean;
+	posix( value: any ): value is string;
 
 	/**
 	* Tests if a value is a Windows absolute path.
@@ -71,7 +71,7 @@ interface IsAbsolutePath {
 	* var bool = isAbsolutePath.win32( 'foo\\bar\\baz' );
 	* // returns false
 	*/
-	win32( value: any ): boolean;
+	win32( value: any ): value is string;
 }
 
 /**

@@ -31,7 +31,7 @@ The [variance][variance] for a [Lévy][levy-distribution] random variable with l
 <!-- <equation class="equation" label="eq:levy_variance" align="center" raw="\operatorname{Var}\left( X \right) = \infty" alt="Variance for a Lévy distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \infty
+\mathop{\mathrm{Var}}\left( X \right) = \infty
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \infty" data-equation="eq:levy_variance">

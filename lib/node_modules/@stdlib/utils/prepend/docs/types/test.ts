@@ -23,10 +23,10 @@ import prepend = require( './index' );
 
 // The function returns a collection...
 {
-	prepend( [ 0, 0 ], [ 1, 1 ] ); // $ExpectType Collection
-	prepend( [ false, true ], [ 0, 1 ] ); // $ExpectType Collection
-	prepend( [ 'abc', 'abc' ], [ 0, 1 ] ); // $ExpectType Collection
-	prepend( [ true, true ], [ false, false ] ); // $ExpectType Collection
+	prepend( [ 0, 0 ], [ 1, 1 ] ); // $ExpectType Collection<number>
+	prepend( [ false, true ], [ 0, 1 ] ); // $ExpectType Collection<number | boolean>
+	prepend( [ 'abc', 'abc' ], [ 0, 1 ] ); // $ExpectType Collection<string | number>
+	prepend( [ true, true ], [ false, false ] ); // $ExpectType Collection<boolean>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...

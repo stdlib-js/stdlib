@@ -146,8 +146,8 @@ float stdlib_base_cbrtf( const float x );
 #include "stdlib/math/base/special/cbrtf.h"
 #include <stdio.h>
 
-int main() {
-    float x[] = { 3.14f, 9.00f, 0.0f, 0.0f/0.0f };
+int main( void ) {
+    const float x[] = { 3.14f, 9.00f, 0.0f, 0.0f/0.0f };
 
     float y;
     int i;

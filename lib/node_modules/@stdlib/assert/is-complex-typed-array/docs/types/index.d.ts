@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { Complex64Array, Complex128Array } from '@stdlib/types/array';
+
 /**
 * Tests if a value is a complex typed array.
 *
@@ -30,7 +34,7 @@
 * var bool = isComplexTypedArray( new Complex128Array( 10 ) );
 * // returns true
 */
-declare function isComplexTypedArray( value: any ): boolean;
+declare function isComplexTypedArray( value: any ): value is Complex64Array | Complex128Array; // tslint-disable-line max-line-length
 
 
 // EXPORTS //

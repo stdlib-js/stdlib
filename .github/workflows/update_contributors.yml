@@ -81,7 +81,7 @@ jobs:
       # Create a pull request:
       - name: 'Create pull request'
         if: steps.update-contributors.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         id: cpr
         with:
           title: 'Update list of contributors'
@@ -97,7 +97,7 @@ jobs:
             documentation
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: update-contributors
           delete-branch: true
 

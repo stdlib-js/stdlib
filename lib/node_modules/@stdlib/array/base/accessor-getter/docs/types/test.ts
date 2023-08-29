@@ -53,7 +53,7 @@ function accessorArray(): AccessorArrayLike<number> {
 {
 	getter( 'complex128' ); // $ExpectType GetComplex128
 	getter( 'complex64' ); // $ExpectType GetComplex64
-	getter( 'foo' ); // $ExpectType GetArrayLike
+	getter( 'foo' ); // $ExpectType GetArrayLike<any>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a string...

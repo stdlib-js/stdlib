@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [Bernoulli][bernoulli-distribution] random
 <!-- <equation class="equation" label="eq:bernoulli_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{1}{pq} - 6" alt="Excess kurtosis for a Bernoulli distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \frac{1}{pq} - 6
+\mathop{\mathrm{Kurt}}\left( X \right) = \frac{1}{pq} - 6
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{1}{pq} - 6" data-equation="eq:bernoulli_kurtosis">

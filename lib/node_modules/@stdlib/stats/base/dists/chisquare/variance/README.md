@@ -31,7 +31,7 @@ The [variance][variance] for a [chi-squared][chisquare-distribution] random vari
 <!-- <equation class="equation" label="eq:variance" align="center" raw="\operatorname{Var}\left( X \right) = 2k" alt="Variance for a chi-squared distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = 2k
+\mathop{\mathrm{Var}}\left( X \right) = 2k
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = 2k" data-equation="eq:variance">

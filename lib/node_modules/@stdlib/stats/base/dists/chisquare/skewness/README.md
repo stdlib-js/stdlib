@@ -31,7 +31,7 @@ The [skewness][skewness] for a [chi-squared][chisquare-distribution] random vari
 <!-- <equation class="equation" label="eq:skewness" align="center" raw="\operatorname{skew}\left( X \right) = \sqrt{8/k}" alt="Skewness for a chi-squared distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \sqrt{8/k}
+\mathop{\mathrm{skew}}\left( X \right) = \sqrt{8/k}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \sqrt{8/k}" data-equation="eq:skewness">

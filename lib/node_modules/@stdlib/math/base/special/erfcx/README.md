@@ -29,7 +29,7 @@ The scaled [complementary error function][complementary-error-function] is defin
 <!-- <equation class="equation" label="eq:scaled_complementary_error_function" align="center" raw="\operatorname{erfcx}(x) = e^{x^2} \operatorname{erfc}(x)" alt="Scaled complementary error function."> -->
 
 ```math
-\operatorname{erfcx}(x) = e^{x^2} \operatorname{erfc}(x)
+\mathop{\mathrm{erfcx}}(x) = e^{x^2} \mathop{\mathrm{erfc}}(x)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{erfcx}(x) = e^{x^2} \operatorname{erfc}(x)" data-equation="eq:scaled_complementary_error_function">

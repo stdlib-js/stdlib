@@ -32,7 +32,7 @@
 * var bool = isFloat32Array( [] );
 * // returns false
 */
-declare function isFloat32Array( value: any ): boolean;
+declare function isFloat32Array( value: any ): value is Float32Array;
 
 
 // EXPORTS //

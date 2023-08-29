@@ -32,7 +32,7 @@
 * var bool = isUNCPath( '/foo/bar/baz' );
 * // returns false
 */
-declare function isUNCPath( value: any ): boolean;
+declare function isUNCPath( value: any ): value is string;
 
 
 // EXPORTS //

@@ -1,0 +1,47 @@
+
+{{alias}}( x, value )
+    Tests if an array contains a provided search value.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    value: any
+        Search value.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating if an array contains a search value.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3 ], 2 )
+    true
+
+
+{{alias}}.factory( x )
+    Returns a function which tests if an array contains a provided search value.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    fcn: Function
+        Function which tests if an array contains a provided search value.
+
+    Examples
+    --------
+    > var f = {{alias}}.factory( [ 1, 2, 3 ] );
+    > f( 2 )
+    true
+    > f( 4 )
+    false
+
+    See Also
+    --------
+

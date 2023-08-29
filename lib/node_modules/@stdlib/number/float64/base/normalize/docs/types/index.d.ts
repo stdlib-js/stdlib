@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -92,7 +92,7 @@ interface Normalize {
 	* var bool = ( v === out );
 	* // returns true
 	*/
-	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+	assign<T = any>( x: number, out: Collection<T>, stride: number, offset: number ): Collection<T>; // tslint-disable-line max-line-length
 }
 
 /**

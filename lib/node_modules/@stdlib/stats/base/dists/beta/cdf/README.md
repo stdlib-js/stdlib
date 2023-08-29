@@ -29,7 +29,7 @@ The [cumulative distribution function][cdf] for a [beta][beta-distribution] rand
 <!-- <equation class="equation" label="eq:beta_cdf" align="center" raw="F(x;\alpha,\beta) = \frac{\operatorname{Beta}(x;\alpha,\beta)}{\operatorname{Beta}(\alpha,\beta)}" alt="Cumulative distribution function for a beta distribution."> -->
 
 ```math
-F(x;\alpha,\beta) = \frac{\operatorname{Beta}(x;\alpha,\beta)}{\operatorname{Beta}(\alpha,\beta)}
+F(x;\alpha,\beta) = \frac{\mathop{\mathrm{Beta}}(x;\alpha,\beta)}{\mathop{\mathrm{Beta}}(\alpha,\beta)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="F(x;\alpha,\beta) = \frac{\operatorname{Beta}(x;\alpha,\beta)}{\operatorname{Beta}(\alpha,\beta)}" data-equation="eq:beta_cdf">

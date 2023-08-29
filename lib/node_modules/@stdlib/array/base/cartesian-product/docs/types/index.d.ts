@@ -40,7 +40,7 @@ import { Collection } from '@stdlib/types/object';
 * var out = cartesianProduct( x1, x2 );
 * // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
-declare function cartesianProduct( x1: Collection, x2: Collection ): Array<Array<any>>; // tslint:disable-line:max-line-length
+declare function cartesianProduct<T = any, U = any>( x1: Collection<T>, x2: Collection<U> ): Array<[T, U]>; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //

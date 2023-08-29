@@ -31,7 +31,7 @@ The [mode][mode] for a [negative-binomial][negative-binomial-distribution] rando
 <!-- <equation class="equation" label="eq:negative_binomial_mode" align="center" raw="\operatorname{mode}\left( X \right) = \begin{cases}{\big \lfloor }{\frac{p(r-1)}{1-p}}{\big \rfloor } & \text{ if }\ r>1\\ 0 & \text{ if } \ r\leq 1\end{cases}" alt="Mode for a negative-binomial distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \begin{cases}{\big \lfloor }{\frac{p(r-1)}{1-p}}{\big \rfloor } & \text{ if }\ r>1\\ 0 & \text{ if } \ r\leq 1\end{cases}
+\mathop{\mathrm{mode}}\left( X \right) = \begin{cases}{\big \lfloor }{\frac{p(r-1)}{1-p}}{\big \rfloor } & \text{ if }\ r>1\\ 0 & \text{ if } \ r\leq 1\end{cases}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \begin{cases}{\big \lfloor }{\frac{p(r-1)}{1-p}}{\big \rfloor } &amp; \text{ if }\ r&gt;1\\ 0 &amp; \text{ if } \ r\leq 1\end{cases}" data-equation="eq:negative_binomial_mode">

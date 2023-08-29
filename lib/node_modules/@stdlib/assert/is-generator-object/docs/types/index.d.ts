@@ -43,7 +43,7 @@
 * var bool = isGeneratorObject( null );
 * // returns false
 */
-declare function isGeneratorObject( value: any ): boolean;
+declare function isGeneratorObject( value: any ): value is Generator;
 
 
 // EXPORTS //

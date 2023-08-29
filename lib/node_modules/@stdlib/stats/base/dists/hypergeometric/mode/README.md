@@ -31,7 +31,7 @@ Imagine a scenario with a population of size `N`, of which a subpopulation of si
 <!-- <equation class="equation" label="eq:hypergeometric_mode" align="center" raw="\operatorname{mode}\left( X \right) = \left\lfloor {\frac{(n+1)(K+1)}{N+2}}\right\rfloor" alt="Mode for a hypergeometric distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \left\lfloor {\frac{(n+1)(K+1)}{N+2}}\right\rfloor
+\mathop{\mathrm{mode}}\left( X \right) = \left\lfloor {\frac{(n+1)(K+1)}{N+2}}\right\rfloor
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \left\lfloor {\frac{(n+1)(K+1)}{N+2}}\right\rfloor" data-equation="eq:hypergeometric_mode">

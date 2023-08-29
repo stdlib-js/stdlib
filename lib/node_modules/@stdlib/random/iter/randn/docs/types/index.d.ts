@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import * as random from '@stdlib/types/random';
-import { Iterator } from '@stdlib/types/iter';
+import { TypedIterator } from '@stdlib/types/iter';
 
 /**
 * Interface defining function options.
@@ -61,7 +61,7 @@ interface Options {
 /**
 * Interface for iterators of pseudorandom numbers having integer values.
 */
-interface RandIter extends Iterator {
+interface Iterator<T> extends TypedIterator<T> {
 	/**
 	* Underlying pseudorandom number generator.
 	*/
@@ -120,7 +120,7 @@ interface RandIter extends Iterator {
 *
 * // ...
 */
-declare function iterator( options?: Options ): RandIter;
+declare function iterator( options?: Options ): Iterator<number>;
 
 
 // EXPORTS //

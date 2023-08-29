@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { Collection } from '@stdlib/types/object';
+
 /**
 * Tests if a value is a collection.
 *
@@ -32,7 +36,7 @@
 * var bool = isCollection( {} );
 * // returns false
 */
-declare function isCollection( value: any ): boolean;
+declare function isCollection( value: any ): value is Collection;
 
 
 // EXPORTS //

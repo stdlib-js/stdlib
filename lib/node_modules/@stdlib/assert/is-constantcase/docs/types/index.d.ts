@@ -46,7 +46,7 @@
 * bool = isConstantcase( null );
 * // returns false
 */
-declare function isConstantcase( value: any ): boolean;
+declare function isConstantcase( value: any ): value is string;
 
 
 // EXPORTS //

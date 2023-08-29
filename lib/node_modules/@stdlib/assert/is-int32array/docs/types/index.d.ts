@@ -32,7 +32,7 @@
 * var bool = isInt32Array( [] );
 * // returns false
 */
-declare function isInt32Array( value: any ): boolean;
+declare function isInt32Array( value: any ): value is Int32Array;
 
 
 // EXPORTS //

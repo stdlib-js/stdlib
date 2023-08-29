@@ -39,7 +39,7 @@
 * var bool = isAccessorArray( {} );
 * // returns false
 */
-declare function isAccessorArray( value: any ): boolean;
+declare function isAccessorArray( value: any ): value is ArrayLike<any>;
 
 
 // EXPORTS //

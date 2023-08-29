@@ -20,49 +20,29 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
-* Evaluates the signum function of a complex number.
+* Evaluates the signum function of a double-precision complex floating-point number.
 *
-* @param out - output array
-* @param re - real component
-* @param im - imaginary component
-* @returns real and imaginary components
+* @param z - input value
+* @returns result
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
 *
-* var out = new Float32Array( 2 );
+* var v = cceil( new Complex128( -4.2, 5.5 ) );
+* // returns <Complex128>
 *
-* var v = csignum( out, -4.2, 5.5 );
-* // returns <Float32Array>[ -0.6069136033622302, 0.79476781392673 ]
+* var re = real( v );
+* // returns -0.6069136033622302
 *
-* var bool = ( v === out );
-* // returns true
+* var im = imag( v );
+* // returns 0.79476781392673
 */
-declare function csignum( out: ArrayLike<number>, re: number, im: number ): ArrayLike<number>; // tslint-disable-line max-line-length
-
-/**
-* Evaluates the signum function of a complex number.
-*
-* @param re - real component
-* @param im - imaginary component
-* @returns real and imaginary components
-*
-* @example
-* var v = csignum( -4.2, 5.5 );
-* // returns [ -0.6069136033622302, 0.79476781392673 ]
-*
-* @example
-* var v = csignum( 0.0, 0.0 );
-* // returns [ 0.0, 0.0 ]
-*
-* @example
-* var v = csignum( NaN, NaN );
-* // returns [ NaN, NaN ]
-*/
-declare function csignum( re: number, im: number ): ArrayLike<number>;
+declare function csignum( z: Complex128 ): Complex128;
 
 
 // EXPORTS //

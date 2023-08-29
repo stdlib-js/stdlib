@@ -48,7 +48,7 @@ interface IsBoolean {
 	* var bool = isBoolean( new Boolean( true ) );
 	* // returns true
 	*/
-	( value: any ): boolean;
+	( value: any ): value is boolean | Boolean;
 
 	/**
 	* Tests if a value is a boolean primitive.
@@ -70,7 +70,7 @@ interface IsBoolean {
 	* var bool = isBoolean.isPrimitive( new Boolean( true ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is boolean;
 
 	/**
 	* Tests if a value is a boolean object.
@@ -88,7 +88,7 @@ interface IsBoolean {
 	* var bool = isBoolean.isObject( new Boolean( false ) );
 	* // returns true
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is Boolean;
 }
 
 /**

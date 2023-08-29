@@ -31,7 +31,7 @@ The [skewness][skewness] for a [chi][chi-distribution] random variable with degr
 <!-- <equation class="equation" label="eq:chi_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{\mu}{\sigma^{3}}\,(1 - 2 \sigma^{2})" alt="Skewness for a chi distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{\mu}{\sigma^{3}}\,(1 - 2 \sigma^{2})
+\mathop{\mathrm{skew}}\left( X \right) = \frac{\mu}{\sigma^{3}}\,(1 - 2 \sigma^{2})
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{\mu}{\sigma^{3}}\,(1 - 2 \sigma^{2})" data-equation="eq:chi_skewness">

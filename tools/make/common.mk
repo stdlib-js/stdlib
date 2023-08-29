@@ -572,7 +572,7 @@ endif
 endif
 
 # Define the Electron version:
-DEPS_ELECTRON_VERSION ?= 6.0.10
+DEPS_ELECTRON_VERSION ?= 25.3.1
 
 # Generate a version slug:
 deps_electron_version_slug := $(subst .,_,$(DEPS_ELECTRON_VERSION))
@@ -595,6 +595,9 @@ deps_shellcheck_version_slug := $(subst .,_,$(DEPS_SHELLCHECK_VERSION))
 # Define the output path when building shellcheck:
 DEPS_SHELLCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/shellcheck_$(deps_shellcheck_version_slug)
 
+# Host architecture:
+DEPS_SHELLCHECK_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_ARCH))
+
 # Host platform:
 DEPS_SHELLCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
@@ -611,4 +614,7 @@ DEPS_CPPCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cppcheck_$(deps_cppcheck_version_sl
 DEPS_CPPCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
 # API key for the stdlib scaffolding service:
-SCAFFOLD_API_KEY ?= $$SCAFFOLD_API_KEY
+ifneq ($(wildcard .stdlibrc),)
+	include .stdlibrc
+	export SCAFFOLD_API_KEY
+endif

@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -34,7 +34,7 @@ import { Collection } from '@stdlib/types/object';
 * var out = copy( x );
 * // returns [ 1, 2, 3 ]
 */
-declare function copy( x: Collection ): Array<any>;
+declare function copy<T = any>( x: Collection<T> ): Array<T>;
 
 
 // EXPORTS //

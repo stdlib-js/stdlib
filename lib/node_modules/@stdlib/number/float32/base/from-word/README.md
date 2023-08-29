@@ -160,7 +160,7 @@ void stdlib_base_float32_from_word( const uint32_t word, float *x );
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     uint32_t word = 1078523331;
 
     float x;

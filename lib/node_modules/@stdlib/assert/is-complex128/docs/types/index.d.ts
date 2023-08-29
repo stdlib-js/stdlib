@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { Complex128 } from '@stdlib/types/object';
+
 /**
 * Tests if a value is a 128-bit complex number.
 *
@@ -32,7 +36,7 @@
 * var bool = isComplex128( x );
 * // returns true
 */
-declare function isComplex128( value: any ): boolean;
+declare function isComplex128( value: any ): value is Complex128;
 
 
 // EXPORTS //

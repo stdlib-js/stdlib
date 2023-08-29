@@ -23,7 +23,9 @@ import nCartesianProduct = require( './index' );
 
 // The function returns an array of arrays...
 {
-	nCartesianProduct( [ 1, 2, 3, 4 ], [ 1, 3 ] ); // $ExpectType any[][]
+	nCartesianProduct( [ 1, 2, 3, 4 ], [ 1, 3 ] ); // $ExpectType [number, number][]
+	nCartesianProduct( [ 1, 2, 3, 4 ], [ 1, 3 ], [ 6 ] ); // $ExpectType [number, number, number][]
+	nCartesianProduct( [ 1, 2, 3, 4 ], [ 1, 3 ], [ 6 ], [ 7 ] ); // $ExpectType number[][]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like object...

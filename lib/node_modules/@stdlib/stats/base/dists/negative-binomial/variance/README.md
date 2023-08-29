@@ -31,7 +31,7 @@ The [variance][variance] for a [negative binomial][negative-binomial-distributio
 <!-- <equation class="equation" label="eq:negative_binomial_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{pr}{(1-p)^{2}}" alt="Variance for a negative binomial distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \frac{pr}{(1-p)^{2}}
+\mathop{\mathrm{Var}}\left( X \right) = \frac{pr}{(1-p)^{2}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{pr}{(1-p)^{2}}" data-equation="eq:negative_binomial_variance">

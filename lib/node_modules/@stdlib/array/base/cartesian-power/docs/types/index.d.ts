@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/object';
 
 /**
 * Returns the Cartesian power.
@@ -40,7 +40,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var out = cartesianPower( x, 2 );
 * // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 */
-declare function cartesianPower<T>( x: ArrayLike<T>, n: number ): Array<Array<T>>; // tslint:disable-line:max-line-length
+declare function cartesianPower<T = any>( x: Collection<T>, n: number ): Array<Array<T>>; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //

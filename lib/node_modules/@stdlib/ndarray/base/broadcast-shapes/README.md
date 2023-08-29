@@ -344,7 +344,7 @@ If successful, the function returns `0`; otherwise, the function returns `-1` (e
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
     int64_t N1 = 4;
     int64_t sh1[] = { 8, 1, 6, 1 };
 

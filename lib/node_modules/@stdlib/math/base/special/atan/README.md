@@ -140,11 +140,10 @@ double stdlib_base_atan( const double x );
 
 ```c
 #include "stdlib/math/base/special/atan.h"
-#include <stdlib.h>
 #include <stdio.h>
 
-int main() {
-    double x[] = { -1000.0, -777.78, -555.56, -333.33, -111.11,  111.11, 333.33,  555.56, 777.78, 1000.0 };
+int main( void ) {
+    const double x[] = { -1000.0, -777.78, -555.56, -333.33, -111.11,  111.11, 333.33,  555.56, 777.78, 1000.0 };
     double v;
     int i;
     

@@ -31,7 +31,7 @@ The [mode][mode] for an [arcsine][arcsine-distribution] random variable with wit
 <!-- <equation class="equation" label="eq:arcsine_mode" align="center" raw="\operatorname{mode}\left( X \right) = \{ a, b \}" alt="Mode for an arcsine distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \{ a, b \}
+\mathop{\mathrm{mode}}\left( X \right) = \{ a, b \}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \{ a, b \}" data-equation="eq:arcsine_mode">

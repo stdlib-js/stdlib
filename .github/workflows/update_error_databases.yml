@@ -1,0 +1,135 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: update_error_databases
+
+# Workflow triggers:
+on:
+  schedule:
+    # Run the workflow once a week (Sunday at midnight):
+    - cron: '0 0 * * 0'
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for updating the error databases:
+  update:
+
+    # Define a display name:
+    name: 'Update Error Databases'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Update the error databases:
+      - name: 'Update error databases'
+        run: |
+          node lib/node_modules/@stdlib/error/tools/database/scripts/build.js
+          node lib/node_modules/@stdlib/error/tools/pkg2id/scripts/build.js
+          node lib/node_modules/@stdlib/error/tools/id2pkg/scripts/build.js
+          
+      # Generate comment with Markdown table of added error codes:
+      - name: 'Generate comment body with Markdown table of added error codes'
+        run: |
+          # Save the added lines from the diff to a temporary file: 
+          git diff lib/node_modules/@stdlib/error/tools/database/data/data.csv | grep '^+' | sed 's/^+//' > /tmp/diff.csv
+          
+          # Convert the CSV file to a TSV file (and drop first line and double quotes):
+          awk -F '",' 'NR > 1 && !/^++/ { gsub(/^"|"$/, "", $1); gsub(/^"|"$/, "", $2); gsub(/^"|"$/, "", $3); print $1 "\t" $2 "\t" $3 }' /tmp/diff.csv > /tmp/diff.tsv
+
+          # Create the Markdown table header:
+          table="| Code | Error Message | Type |\n|------|---------------|------|\n"
+
+          # Extract added lines from the diff and append them to the Markdown table:
+          while IFS=$'\t' read -r code error_message type; do
+            # Check if the table length exceeds a maximum length:
+            if [ ${#table} -gt 65000 ]; then
+              table+="| ... | ... | ... |\nThis table has been truncated due to GitHub's comment character limit.\n"
+              break
+            fi
+          
+            # Append the TSV row to the Markdown table:
+            table+="| ${code} | ${error_message} | ${type} |\n"
+          done < /tmp/diff.tsv
+
+          # Generate a comment body:
+          body="This PR\n\n-   updates the error databases\n\nThe following error codes were added:\n\n${table}"
+          
+          # Escape '%' characters, which are interpreted as format specifiers by `printf`:
+          body="${body//%/%%}"
+          
+          # Write the comment body to a temporary file:
+          printf "$body" > /tmp/body.md
+        shell: bash
+
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
+      # Create a pull request with the updated declarations:
+      - name: 'Create pull request'
+        id: cpr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: 'feat: update error databases'
+          body-path: /tmp/body.md
+          commit-message: 'feat: update error databases'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          labels: |
+            documentation
+            automated-pr
+          team-reviewers: |
+            reviewers
+          branch: update-error-databases
+          delete-branch: true

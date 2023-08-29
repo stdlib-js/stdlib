@@ -31,7 +31,7 @@ The [median][median] for a [Student's t][t-distribution] random variable with de
 <!-- <equation class="equation" label="eq:t_median" align="center" raw="\operatorname{Median}\left( X \right) = 0" alt="Median for a Student's t distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = 0
+\mathop{\mathrm{Median}}\left( X \right) = 0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = 0" data-equation="eq:t_median">

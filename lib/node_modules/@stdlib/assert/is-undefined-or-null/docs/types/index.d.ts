@@ -34,7 +34,7 @@
 * bool = isUndefinedOrNull( false );
 * // returns false
 */
-declare function isUndefinedOrNull( value: any ): boolean;
+declare function isUndefinedOrNull( value: any ): value is null | undefined;
 
 
 // EXPORTS //

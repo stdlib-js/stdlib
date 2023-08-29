@@ -32,7 +32,7 @@
 * var bool = isUint8ClampedArray( [] );
 * // returns false
 */
-declare function isUint8ClampedArray( value: any ): boolean;
+declare function isUint8ClampedArray( value: any ): value is Uint8ClampedArray;
 
 
 // EXPORTS //

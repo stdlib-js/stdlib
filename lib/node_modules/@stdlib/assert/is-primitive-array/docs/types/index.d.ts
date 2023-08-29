@@ -34,7 +34,7 @@
 * bool = isPrimitiveArray( [ new String('abc'), '3.0' ] );
 * // returns false
 */
-declare function isPrimitiveArray( value: any ): boolean;
+declare function isPrimitiveArray( value: any ): value is Array<any>;
 
 
 // EXPORTS //

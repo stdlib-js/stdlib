@@ -20,45 +20,43 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
-* Computes the exponential function of a complex number.
+* Evaluates the exponential function for a double-precision complex floating-point number.
 *
-* @param out - output array
-* @param re - real component
-* @param im - imaginary component
-* @returns real and imaginary components
+* @param z - complex number
+* @returns result
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
 *
-* var out = new Float32Array( 2 );
+* var v = cexp( new Complex128( 0.0, 0.0 ) );
+* // returns <Complex128>
 *
-* var v = cexp( out, 0.0, 1.0 );
-* // returns <Float32Array>[ ~0.540, ~0.841 ]
+* var re = real( v );
+* // returns 1.0
 *
-* var bool = ( v === out );
-* // returns true
+* var im = imag( v );
+* // returns 0.0
+*
+* @example
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
+*
+* var v = cexp( new Complex128( 1.0, 0.0 ) );
+* // returns <Complex128>
+*
+* var re = real( v );
+* // returns ~2.718
+*
+* var im = imag( v );
+* // returns 0.0
 */
-declare function cexp( out: ArrayLike<number>, re: number, im: number ): ArrayLike<number>; // tslint-disable-line max-line-length
-
-/**
-* Computes the exponential function of a complex number.
-*
-* @param re - real component
-* @param im - imaginary component
-* @returns real and imaginary components
-*
-* @example
-* var v = cexp( 0.0, 0.0 );
-* // returns [ 1.0, 0.0 ]
-*
-* @example
-* var v = cexp( 1.0, 0.0 );
-* // returns [ ~2.718, 0.0 ]
-*/
-declare function cexp( re: number, im: number ): ArrayLike<number>;
+declare function cexp( z: Complex128 ): Complex128;
 
 
 // EXPORTS //

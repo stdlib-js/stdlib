@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { ComplexLike } from '@stdlib/types/object';
+
 /**
 * Tests if a value is a complex number-like object.
 *
@@ -36,7 +40,7 @@
 * bool = isComplexLike( x );
 * // returns true
 */
-declare function isComplexLike( value: any ): boolean;
+declare function isComplexLike( value: any ): value is ComplexLike;
 
 
 // EXPORTS //

@@ -44,7 +44,7 @@ interface IsSymbol {
 	* var bool = isSymbol( {} );
 	* // returns false
 	*/
-	( value: any ): boolean;
+	( value: any ): value is symbol | Symbol;
 
 	/**
 	* Tests if a value is a symbol primitive.
@@ -68,7 +68,7 @@ interface IsSymbol {
 	* var bool = isSymbol.isPrimitive( {} );
 	* // returns false
 	*/
-	isPrimitive( value: any ): boolean;
+	isPrimitive( value: any ): value is symbol;
 
 	/**
 	* Tests if a value is a symbol object.
@@ -92,7 +92,7 @@ interface IsSymbol {
 	* var bool = isSymbol.isObject( {} );
 	* // returns false
 	*/
-	isObject( value: any ): boolean;
+	isObject( value: any ): value is Symbol;
 }
 
 /**

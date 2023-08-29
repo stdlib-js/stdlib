@@ -286,7 +286,7 @@ static double add( const double x, const double y ) {
     return x + y;
 }
 
-int main() {
+int main( void ) {
     // Create input strided arrays:
     double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
     double Y[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };

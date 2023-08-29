@@ -32,7 +32,7 @@
 * var bool = isRegExp( {} );
 * // returns false
 */
-declare function isRegExp( value: any ): boolean;
+declare function isRegExp( value: any ): value is RegExp;
 
 
 // EXPORTS //

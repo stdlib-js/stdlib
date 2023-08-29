@@ -140,8 +140,8 @@ double stdlib_base_ceil( const double x );
 #include "stdlib/math/base/special/ceil.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+int main( void ) {
+    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
 
     double y;
     int i;

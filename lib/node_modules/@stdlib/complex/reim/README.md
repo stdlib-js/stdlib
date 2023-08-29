@@ -173,8 +173,8 @@ void stdlib_reim( const stdlib_complex128_t z, double *re, double *im );
 #include "stdlib/complex/float64.h"
 #include <stdio.h>
 
-int main() {
-    stdlib_complex128_t x[] = {
+int main( void ) {
+    const stdlib_complex128_t x[] = {
         stdlib_complex128( 5.0, 2.0 ),
         stdlib_complex128( -2.0, 1.0 ),
         stdlib_complex128( 0.0, -0.0 ),

@@ -31,7 +31,7 @@ Imagine a scenario with a population of size `N`, of which a subpopulation of si
 <!-- <equation class="equation" label="eq:hypergeometric_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{(N-2K)(N-1)^{\frac{1}{2}}(N-2n)}{[nK(N-K)(N-n)]^{\frac{1}{2}}(N-2)}" alt="Skewness for a hypergeometric distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = \frac{(N-2K)(N-1)^{\frac{1}{2}}(N-2n)}{[nK(N-K)(N-n)]^{\frac{1}{2}}(N-2)}
+\mathop{\mathrm{skew}}\left( X \right) = \frac{(N-2K)(N-1)^{\frac{1}{2}}(N-2n)}{[nK(N-K)(N-n)]^{\frac{1}{2}}(N-2)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{(N-2K)(N-1)^{\frac{1}{2}}(N-2n)}{[nK(N-K)(N-n)]^{\frac{1}{2}}(N-2)}" data-equation="eq:hypergeometric_skewness">

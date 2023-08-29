@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [Poisson][poisson-distribution] random var
 <!-- <equation class="equation" label="eq:poisson_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \lambda^{-1}" alt="Excess kurtosis for a Poisson distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = \lambda^{-1}
+\mathop{\mathrm{Kurt}}\left( X \right) = \lambda^{-1}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \lambda^{-1}" data-equation="eq:poisson_kurtosis">

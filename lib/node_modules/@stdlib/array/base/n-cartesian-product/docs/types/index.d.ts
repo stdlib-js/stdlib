@@ -16,11 +16,53 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
 import { Collection } from '@stdlib/types/object';
+
+/**
+* Returns the n-fold Cartesian product.
+*
+* ## Notes
+*
+* -   If provided one or more empty arrays, the function returns an empty array.
+*
+* @param x1 - first input array
+* @param x2 - second input array
+* @returns Cartesian product
+*
+* @example
+* var x1 = [ 1, 2, 3 ];
+* var x2 = [ 4, 5 ];
+*
+* var out = nCartesianProduct( x1, x2 );
+* // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
+*/
+declare function nCartesianProduct<T = any, U = any>( x1: Collection<T>, x2: Collection<U> ): Array<[T, U]>; // tslint:disable-line:max-line-length
+
+/**
+* Returns the n-fold Cartesian product.
+*
+* ## Notes
+*
+* -   If provided one or more empty arrays, the function returns an empty array.
+*
+* @param x1 - first input array
+* @param x2 - second input array
+* @param x3 - third input array
+* @returns Cartesian product
+*
+* @example
+* var x1 = [ 1, 2, 3 ];
+* var x2 = [ 4, 5 ];
+* var x3 = [ 6 ];
+*
+* var out = nCartesianProduct( x1, x2, x3 );
+* // returns [ [ 1, 4, 6 ], [ 1, 5, 6 ], [ 2, 4, 6 ], [ 2, 5, 6 ], [ 3, 4, 6 ], [ 3, 5, 6 ] ]
+*/
+declare function nCartesianProduct<T = any, U = any, V = any>( x1: Collection<T>, x2: Collection<U>, x3: Collection<V> ): Array<[T, U, V]>; // tslint:disable-line:max-line-length
 
 /**
 * Returns the n-fold Cartesian product.
@@ -41,7 +83,7 @@ import { Collection } from '@stdlib/types/object';
 * var out = nCartesianProduct( x1, x2 );
 * // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
-declare function nCartesianProduct( x1: Collection, x2: Collection, ...xN: Array<Collection> ): Array<Array<any>>; // tslint:disable-line:max-line-length
+declare function nCartesianProduct<T = any, U = any, V = any>( x1: Collection<T>, x2: Collection<U>, ...xN: Array<Collection<V>> ): Array<Array<T | U | V>>; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //

@@ -31,7 +31,7 @@ The [mode][mode] for a [Poisson][poisson-distribution] random variable is
 <!-- <equation class="equation" label="eq:poisson_mode" align="center" raw="\operatorname{mode}\left( X \right) = \lfloor \lambda \rfloor" alt="Mode for a Poisson distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \lfloor \lambda \rfloor
+\mathop{\mathrm{mode}}\left( X \right) = \lfloor \lambda \rfloor
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \lfloor \lambda \rfloor" data-equation="eq:poisson_mode">

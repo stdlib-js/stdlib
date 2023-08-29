@@ -28,53 +28,66 @@ import chi2test = require( './index' );
 	chi2test( [ [ 20, 30 ], [ 30, 20 ] ], { 'correct': false } ); // $ExpectType Results
 }
 
-// The compiler throws an error if the function is provided a value other than an array of numeric arrays or ndarray...
+// The compiler throws an error if the function is provided an invalid first argument...
 {
+	chi2test( '' ); // $ExpectError
 	chi2test( true ); // $ExpectError
 	chi2test( false ); // $ExpectError
 	chi2test( null ); // $ExpectError
 	chi2test( undefined ); // $ExpectError
 	chi2test( 5 ); // $ExpectError
 	chi2test( {} ); // $ExpectError
+
+	chi2test( '', {} ); // $ExpectError
+	chi2test( true, {} ); // $ExpectError
+	chi2test( false, {} ); // $ExpectError
+	chi2test( null, {} ); // $ExpectError
+	chi2test( undefined, {} ); // $ExpectError
+	chi2test( 5, {} ); // $ExpectError
+	chi2test( {}, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not an options object...
+// The compiler throws an error if the function is provided an invalid second argument...
 {
-	const mat = [ [ 20, 30 ], [ 30, 20 ] ];
-	chi2test( mat, true ); // $ExpectError
-	chi2test( mat, false ); // $ExpectError
-	chi2test( mat, null ); // $ExpectError
-	chi2test( mat, 5 ); // $ExpectError
-	chi2test( mat, 'abc' ); // $ExpectError
-	chi2test( mat, ( x: number ): number => x ); // $ExpectError
+	const x = [ [ 20, 30 ], [ 30, 20 ] ];
+
+	chi2test( x, true ); // $ExpectError
+	chi2test( x, false ); // $ExpectError
+	chi2test( x, null ); // $ExpectError
+	chi2test( x, 5 ); // $ExpectError
+	chi2test( x, 'abc' ); // $ExpectError
+	chi2test( x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an `alpha` option which is not a number...
 {
-	const mat = [ [ 20, 30 ], [ 30, 20 ] ];
-	chi2test( mat, { 'alpha': 'abc' } ); // $ExpectError
-	chi2test( mat, { 'alpha': true } ); // $ExpectError
-	chi2test( mat, { 'alpha': false } ); // $ExpectError
-	chi2test( mat, { 'alpha': null } ); // $ExpectError
-	chi2test( mat, { 'alpha': [] } ); // $ExpectError
-	chi2test( mat, { 'alpha': {} } ); // $ExpectError
-	chi2test( mat, { 'alpha': ( x: number ): number => x } ); // $ExpectError
+	const x = [ [ 20, 30 ], [ 30, 20 ] ];
+
+	chi2test( x, { 'alpha': 'abc' } ); // $ExpectError
+	chi2test( x, { 'alpha': true } ); // $ExpectError
+	chi2test( x, { 'alpha': false } ); // $ExpectError
+	chi2test( x, { 'alpha': null } ); // $ExpectError
+	chi2test( x, { 'alpha': [] } ); // $ExpectError
+	chi2test( x, { 'alpha': {} } ); // $ExpectError
+	chi2test( x, { 'alpha': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a `correct` option which is not a boolean...
 {
-	const mat = [ [ 20, 30 ], [ 30, 20 ] ];
-	chi2test( mat, { 'correct': 'abc' } ); // $ExpectError
-	chi2test( mat, { 'correct': 123 } ); // $ExpectError
-	chi2test( mat, { 'correct': null } ); // $ExpectError
-	chi2test( mat, { 'correct': [] } ); // $ExpectError
-	chi2test( mat, { 'correct': {} } ); // $ExpectError
-	chi2test( mat, { 'correct': ( x: number ): number => x } ); // $ExpectError
+	const x = [ [ 20, 30 ], [ 30, 20 ] ];
+
+	chi2test( x, { 'correct': 'abc' } ); // $ExpectError
+	chi2test( x, { 'correct': 123 } ); // $ExpectError
+	chi2test( x, { 'correct': null } ); // $ExpectError
+	chi2test( x, { 'correct': [] } ); // $ExpectError
+	chi2test( x, { 'correct': {} } ); // $ExpectError
+	chi2test( x, { 'correct': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided an invalid number of arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	const mat = [ [ 20, 30 ], [ 30, 20 ] ];
+	const x = [ [ 20, 30 ], [ 30, 20 ] ];
+
 	chi2test(); // $ExpectError
-	chi2test( mat, {}, {} ); // $ExpectError
+	chi2test( x, {}, {} ); // $ExpectError
 }

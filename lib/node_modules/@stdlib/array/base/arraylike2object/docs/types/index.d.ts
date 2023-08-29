@@ -130,7 +130,7 @@ type GetComplex64 = ( arr: Complex64Array, idx: number ) => Complex64 | void;
 * @param idx - element index
 * @returns element value
 */
-type GetGeneric = ( arr: Array<any>, idx: number ) => any;
+type GetGeneric<T> = ( arr: Array<T>, idx: number ) => T | void;
 
 /**
 * Returns an element from an indexed array-like object.
@@ -139,7 +139,7 @@ type GetGeneric = ( arr: Array<any>, idx: number ) => any;
 * @param idx - element index
 * @returns element value
 */
-type GetIndexedArrayLike = ( arr: Collection, idx: number ) => any;
+type GetIndexedArrayLike<T> = ( arr: Collection<T>, idx: number ) => T | void;
 
 /**
 * Returns an element from an array-like object supporting the get/set protocol.
@@ -148,7 +148,7 @@ type GetIndexedArrayLike = ( arr: Collection, idx: number ) => any;
 * @param idx - element index
 * @returns element value
 */
-type GetAccessorArrayLike = ( arr: AccessorArrayLike<any>, idx: number ) => any;
+type GetAccessorArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number ) => T | void; // tslint:disable-line:max-line-length
 
 /**
 * Sets an element in a `Float64Array`.
@@ -256,7 +256,7 @@ type SetComplex64 = ( arr: Complex64Array, idx: number, value: ComplexLike ) => 
 * @param idx - element index
 * @param value - value to set
 */
-type SetGeneric = ( arr: Array<any>, idx: number, value: any ) => void;
+type SetGeneric<T> = ( arr: Array<T>, idx: number, value: T ) => void;
 
 /**
 * Sets an element in an indexed array-like object.
@@ -265,7 +265,7 @@ type SetGeneric = ( arr: Array<any>, idx: number, value: any ) => void;
 * @param idx - element index
 * @param value - value to set
 */
-type SetIndexedArrayLike = ( arr: Collection, idx: number, value: any ) => void;
+type SetIndexedArrayLike<T> = ( arr: Collection<T>, idx: number, value: T ) => void; // tslint:disable-line:max-line-length
 
 /**
 * Sets an element in an array-like object supporting the get/set protocol.
@@ -274,7 +274,7 @@ type SetIndexedArrayLike = ( arr: Collection, idx: number, value: any ) => void;
 * @param idx - element index
 * @param value - value to set
 */
-type SetAccessorArrayLike = ( arr: AccessorArrayLike<any>, idx: number, value: any ) => void; // tslint:disable-line:max-line-length
+type SetAccessorArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number, value: T ) => void; // tslint:disable-line:max-line-length
 
 /**
 * Interface describing the output object for a `Float64Array`.
@@ -513,17 +513,17 @@ interface GenericAccessorObject<T> {
 	/**
 	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
 	*/
-	accessors: [ GetGeneric, SetGeneric ];
+	accessors: [ GetGeneric<T>, SetGeneric<T> ];
 }
 
 /**
 * Interface describing the output object for an indexed array-like object.
 */
-interface IndexedAccessorObject {
+interface IndexedAccessorObject<T> {
 	/**
 	* Reference to the original array-like object.
 	*/
-	data: Collection;
+	data: Collection<T>;
 
 	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
@@ -533,7 +533,7 @@ interface IndexedAccessorObject {
 	/**
 	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
 	*/
-	accessors: [ GetIndexedArrayLike, SetIndexedArrayLike ];
+	accessors: [ GetIndexedArrayLike<T>, SetIndexedArrayLike<T> ];
 }
 
 /**
@@ -553,7 +553,7 @@ interface GetSetAccessorObject<T> {
 	/**
 	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
 	*/
-	accessors: [ GetAccessorArrayLike, SetAccessorArrayLike ];
+	accessors: [ GetAccessorArrayLike<T>, SetAccessorArrayLike<T> ];
 }
 
 /**
@@ -900,7 +900,7 @@ declare function arraylike2object( x: Complex64Array ): Complex64AccessorObject;
 * var v = fcns[ 0 ]( x.data, 2 );
 * // returns 3
 */
-declare function arraylike2object( x: AccessorArrayLike<any> ): GetSetAccessorObject<any>; // tslint:disable-line:max-line-length
+declare function arraylike2object<T = any>( x: AccessorArrayLike<T> ): GetSetAccessorObject<T>; // tslint:disable-line:max-line-length
 
 /**
 * Converts a one-dimensional array-like object to an object likely to have the same "shape".
@@ -926,7 +926,7 @@ declare function arraylike2object( x: AccessorArrayLike<any> ): GetSetAccessorOb
 * var v = fcns[ 0 ]( x.data, 2 );
 * // returns 3
 */
-declare function arraylike2object( x: Array<any> ): GenericAccessorObject<any>;
+declare function arraylike2object<T = any>( x: Array<T> ): GenericAccessorObject<T>; // tslint:disable-line:max-line-length
 
 /**
 * Converts a one-dimensional array-like object to an object likely to have the same "shape".
@@ -958,7 +958,7 @@ declare function arraylike2object( x: Array<any> ): GenericAccessorObject<any>;
 * var v = fcns[ 0 ]( x.data, 2 );
 * // returns 3
 */
-declare function arraylike2object( x: Collection ): IndexedAccessorObject;
+declare function arraylike2object<T = any>( x: Collection<T> ): IndexedAccessorObject<T>; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //

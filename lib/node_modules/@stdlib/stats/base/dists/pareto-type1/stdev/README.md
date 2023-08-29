@@ -31,7 +31,7 @@ The [standard deviation][standard-deviation] for a [Pareto (Type I)][pareto-dist
 <!-- <equation class="equation" label="eq:pareto_type1_stdev" align="center" raw="\operatorname{SD}\left( X \right) = \begin{cases} \infty & \text{for }\alpha\in(0,2] \\ \sqrt{ \frac{\beta^2\alpha}{(\alpha-1)^2(\alpha-2)} } & \text{for }\alpha>2 \end{cases}" alt="Standard deviation for a Pareto (Type I) distribution."> -->
 
 ```math
-\operatorname{SD}\left( X \right) = \begin{cases} \infty & \text{for }\alpha\in(0,2] \\ \sqrt{ \frac{\beta^2\alpha}{(\alpha-1)^2(\alpha-2)} } & \text{for }\alpha>2 \end{cases}
+\mathop{\mathrm{SD}}\left( X \right) = \begin{cases} \infty & \text{for }\alpha\in(0,2] \\ \sqrt{ \frac{\beta^2\alpha}{(\alpha-1)^2(\alpha-2)} } & \text{for }\alpha>2 \end{cases}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{SD}\left( X \right) = \begin{cases} \infty &amp; \text{for }\alpha\in(0,2] \\ \sqrt{ \frac{\beta^2\alpha}{(\alpha-1)^2(\alpha-2)} } &amp; \text{for }\alpha&gt;2 \end{cases}" data-equation="eq:pareto_type1_stdev">

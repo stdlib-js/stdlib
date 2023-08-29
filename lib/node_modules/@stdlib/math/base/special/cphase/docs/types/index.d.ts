@@ -18,22 +18,27 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { Complex128 } from '@stdlib/types/object';
+
 /**
-* Computes the argument of a complex number in radians.
+* Computes the argument of a double-precision complex floating-point number in radians.
 *
 * ## Notes
 *
 * -   The argument of a complex number, also known as the phase, is the angle of the radius extending from the origin to the complex number plotted in the complex plane and the positive real axis.
 *
-* @param re - real component
-* @param im - imaginary component
+* @param z - complex number
 * @returns argument
 *
 * @example
-* var phi = cphase( 5.0, 3.0 );
+* var Complex128 = require( `@stdlib/complex/float64` );
+*
+* var phi = cphase( new Complex128( 5.0, 3.0 ) );
 * // returns ~0.5404
 */
-declare function cphase( re: number, im: number ): number;
+declare function cphase( z: Complex128 ): number;
 
 
 // EXPORTS //

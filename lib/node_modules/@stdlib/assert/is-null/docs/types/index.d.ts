@@ -31,7 +31,7 @@
 * bool = isNull( true );
 * // returns false
 */
-declare function isNull( value: any ): boolean;
+declare function isNull( value: any ): value is null;
 
 
 // EXPORTS //

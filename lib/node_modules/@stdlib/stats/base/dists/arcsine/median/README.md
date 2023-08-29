@@ -31,7 +31,7 @@ The [median][median] for an [arcsine][arcsine-distribution] random variable is
 <!-- <equation class="equation" label="eq:arcsine_median" align="center" raw="\operatorname{Median}\left( X \right) = \frac{1}{2} \cdot ( a + b )" alt="Median for an arcsine distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \frac{1}{2} \cdot ( a + b )
+\mathop{\mathrm{Median}}\left( X \right) = \frac{1}{2} \cdot ( a + b )
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \frac{1}{2} \cdot ( a + b )" data-equation="eq:arcsine_median">

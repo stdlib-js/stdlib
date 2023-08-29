@@ -44,7 +44,7 @@
 * var bool = isSnakecase( null );
 * // returns false
 */
-declare function isSnakecase( value: any ): boolean;
+declare function isSnakecase( value: any ): value is string;
 
 
 // EXPORTS //

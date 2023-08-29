@@ -31,7 +31,7 @@ The [mode][mode] for a [Weibull][weibull-distribution] random variable is
 <!-- <equation class="equation" label="eq:weibull_mode" align="center" raw="\operatorname{mode}\left( X \right) = {\displaystyle {\begin{cases}\lambda \left({\frac {k-1}{k}}\right)^{\frac {1}{k}}\,&k>1\\0&k\leq 1\end{cases}}}" alt="Mode for a Weibull distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = {\displaystyle {\begin{cases}\lambda \left({\frac {k-1}{k}}\right)^{\frac {1}{k}}\,&k>1\\0&k\leq 1\end{cases}}}
+\mathop{\mathrm{mode}}\left( X \right) = {\displaystyle {\begin{cases}\lambda \left({\frac {k-1}{k}}\right)^{\frac {1}{k}}\,&k>1\\0&k\leq 1\end{cases}}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = {\displaystyle {\begin{cases}\lambda \left({\frac {k-1}{k}}\right)^{\frac {1}{k}}\,&amp;k&gt;1\\0&amp;k\leq 1\end{cases}}}" data-equation="eq:weibull_mode">

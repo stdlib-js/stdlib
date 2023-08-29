@@ -39,12 +39,22 @@ const toKey = ( value: Foo ) => {
 	return value.name;
 };
 
+const funcs = {
+	'count': 0,
+	'toKey': function toKey( this: { count: number; }, value: Foo ): string {
+		this.count += 1;
+		return value.name;
+	}
+};
+
+
 // TESTS //
 
 // The function returns an object...
 {
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], toKey ); // $ExpectType any
-	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], toKey, {} ); // $ExpectType any
+	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], toKey ); // $ExpectType Record<string, { name: string; a: number; b?: undefined; } | { name: string; b: number; a?: undefined; }>
+	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], toKey, {} ); // $ExpectType Record<string, { name: string; a: number; b?: undefined; } | { name: string; b: number; a?: undefined; }>
+	keyBy( [ { 'name': 'beep', 'a': 1 }, { 'name': 'boop', 'b': 2 } ], funcs.toKey, { 'count': 0 } ); // $ExpectType Record<string, { name: string; a: number; b?: undefined; } | { name: string; b: number; a?: undefined; }>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...

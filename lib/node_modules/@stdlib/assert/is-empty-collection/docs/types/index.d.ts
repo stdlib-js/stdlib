@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { Collection } from '@stdlib/types/object';
+
 /**
 * Tests if a value is an empty collection.
 *
@@ -40,7 +44,7 @@
 * var bool = isEmptyCollection( {} );
 * // returns false
 */
-declare function isEmptyCollection( value: any ): boolean;
+declare function isEmptyCollection( value: any ): value is Collection;
 
 
 // EXPORTS //

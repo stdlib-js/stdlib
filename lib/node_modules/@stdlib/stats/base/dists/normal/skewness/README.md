@@ -31,7 +31,7 @@ The [skewness][skewness] for a [normal][normal-distribution] random variable wit
 <!-- <equation class="equation" label="eq:normal_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 0" alt="Skewness for a normal distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = 0
+\mathop{\mathrm{skew}}\left( X \right) = 0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:normal_skewness">

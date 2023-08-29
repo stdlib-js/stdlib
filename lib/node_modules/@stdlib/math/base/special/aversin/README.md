@@ -29,7 +29,7 @@ The [inverse versed sine][inverse-versed-sine] is defined as
 <!-- <equation class="equation" label="eq:arcversine" align="center" raw="\operatorname{aversin}(\theta) = \arccos(1-\theta)" alt="Inverse versed sine."> -->
 
 ```math
-\operatorname{aversin}(\theta) = \arccos(1-\theta)
+\mathop{\mathrm{aversin}}(\theta) = \arccos(1-\theta)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{aversin}(\theta) = \arccos(1-\theta)" data-equation="eq:arcversine">

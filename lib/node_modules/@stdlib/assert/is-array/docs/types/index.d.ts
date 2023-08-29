@@ -32,7 +32,7 @@
 * var bool = isArray( {} );
 * // returns false
 */
-declare function isArray( value: any ): boolean;
+declare function isArray( value: any ): value is Array<any>;
 
 
 // EXPORTS //

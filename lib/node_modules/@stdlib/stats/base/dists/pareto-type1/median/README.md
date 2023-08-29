@@ -31,7 +31,7 @@ The [median][median] for a [Pareto (Type I)][pareto-distribution] random variabl
 <!-- <equation class="equation" label="eq:pareto_type1_median" align="center" raw="\operatorname{Median}\left( X \right) = \beta \sqrt[\alpha]{2}" alt="Median for a Pareto (Type I) distribution."> -->
 
 ```math
-\operatorname{Median}\left( X \right) = \beta \sqrt[\alpha]{2}
+\mathop{\mathrm{Median}}\left( X \right) = \beta \sqrt[\alpha]{2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \beta \sqrt[\alpha]{2}" data-equation="eq:pareto_type1_median">

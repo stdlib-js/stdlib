@@ -27,8 +27,8 @@ import random = require( './index' );
 	const x2 = new Float64Array( 10 );
 	const out = new Float64Array( 10 );
 
-	random( x1.length, x1, 1, x2, 1, out, 1 ); // $ExpectType Collection
-	random( x1.length, x1, 1, x2, 1, out, 1, {} ); // $ExpectType Collection
+	random( x1.length, x1, 1, x2, 1, out, 1 ); // $ExpectType Collection<number>
+	random( x1.length, x1, 1, x2, 1, out, 1, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -226,8 +226,8 @@ import random = require( './index' );
 	const x2 = new Float64Array( 10 );
 	const out = new Float64Array( 10 );
 
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, 0 ); // $ExpectType Collection
-	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, 0, {} ); // $ExpectType Collection
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, 0 ); // $ExpectType Collection<number>
+	random.ndarray( x1.length, x1, 1, 0, x2, 1, 0, out, 1, 0, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

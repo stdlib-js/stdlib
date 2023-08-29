@@ -40,7 +40,7 @@
 * var out = isHexString( 123 );
 * // returns false
 */
-declare function isHexString( value: any ): boolean;
+declare function isHexString( value: any ): value is string;
 
 
 // EXPORTS //

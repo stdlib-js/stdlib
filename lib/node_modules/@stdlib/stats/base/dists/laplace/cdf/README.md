@@ -29,7 +29,7 @@ The [cumulative distribution function][cdf] for a [Laplace][laplace-distribution
 <!-- <equation class="equation" label="eq:laplace_cdf" align="center" raw="F(x;\mu,b) =\tfrac{1}{2} + \tfrac{1}{2} \operatorname{sgn}(x-\mu) \left(1-\exp \left(-\frac{|x-\mu|}{b} \right ) \right )" alt="Cumulative distribution function for a Laplace distribution."> -->
 
 ```math
-F(x;\mu,b) =\tfrac{1}{2} + \tfrac{1}{2} \operatorname{sgn}(x-\mu) \left(1-\exp \left(-\frac{|x-\mu|}{b} \right ) \right )
+F(x;\mu,b) =\tfrac{1}{2} + \tfrac{1}{2} \mathop{\mathrm{sgn}}(x-\mu) \left(1-\exp \left(-\frac{|x-\mu|}{b} \right ) \right )
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="F(x;\mu,b) =\tfrac{1}{2} + \tfrac{1}{2} \operatorname{sgn}(x-\mu) \left(1-\exp \left(-\frac{|x-\mu|}{b} \right ) \right )" data-equation="eq:laplace_cdf">

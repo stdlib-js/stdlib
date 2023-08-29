@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [beta prime][betaprime-distribution] rando
 <!-- <equation class="equation" label="eq:betaprime_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 6{\frac{\alpha (\alpha +\beta -1)(5\beta -11)+(\beta -1)^{2}(\beta -2)}{\alpha (\alpha +\beta -1)(\beta -3)(\beta -4)}}" alt="Kurtosis for a beta prime distribution."> -->
 
 ```math
-\operatorname{Kurt}\left( X \right) = 6{\frac{\alpha (\alpha +\beta -1)(5\beta -11)+(\beta -1)^{2}(\beta -2)}{\alpha (\alpha +\beta -1)(\beta -3)(\beta -4)}}
+\mathop{\mathrm{Kurt}}\left( X \right) = 6{\frac{\alpha (\alpha +\beta -1)(5\beta -11)+(\beta -1)^{2}(\beta -2)}{\alpha (\alpha +\beta -1)(\beta -3)(\beta -4)}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 6{\frac{\alpha (\alpha +\beta -1)(5\beta -11)+(\beta -1)^{2}(\beta -2)}{\alpha (\alpha +\beta -1)(\beta -3)(\beta -4)}}" data-equation="eq:betaprime_kurtosis">

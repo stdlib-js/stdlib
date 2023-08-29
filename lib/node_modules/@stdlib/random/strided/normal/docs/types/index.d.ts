@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -77,7 +77,7 @@ interface Routine {
 	* // Fill the array with pseudorandom numbers:
 	* normal( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*/
-	( N: number, mu: Collection, sm: number, sigma: Collection, ss: number, out: Collection, so: number, options?: Options ): Collection; // tslint:disable-line:max-line-length
+	<T = any>( N: number, mu: Collection, sm: number, sigma: Collection, ss: number, out: Collection<T>, so: number, options?: Options ): Collection<T>;
 
 	/**
 	* Fills a strided array with pseudorandom numbers drawn from a normal distribution using alternative indexing semantics.
@@ -107,7 +107,7 @@ interface Routine {
 	* // Fill the array with pseudorandom numbers:
 	* normal.ndarray( out.length, [ 2.0 ], 0, 0, [ 5.0 ], 0, 0, out, 1, 0 );
 	*/
-	ndarray( N: number, mu: Collection, sm: number, om: number, sigma: Collection, ss: number, os: number, out: Collection, so: number, oo: number, options?: Options ): Collection; // tslint:disable-line:max-line-length
+	ndarray<T = any>( N: number, mu: Collection, sm: number, om: number, sigma: Collection, ss: number, os: number, out: Collection<T>, so: number, oo: number, options?: Options ): Collection<T>;
 }
 
 /**

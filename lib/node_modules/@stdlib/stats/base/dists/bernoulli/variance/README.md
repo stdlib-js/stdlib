@@ -31,7 +31,7 @@ The [variance][variance] for a [Bernoulli][bernoulli-distribution] random variab
 <!-- <equation class="equation" label="eq:bernoulli_variance" align="center" raw="\operatorname{Var}\left( X \right) = p \left( 1 - p \right)" alt="Variance for a Bernoulli distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = p \left( 1 - p \right)
+\mathop{\mathrm{Var}}\left( X \right) = p \left( 1 - p \right)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = p \left( 1 - p \right)" data-equation="eq:bernoulli_variance">

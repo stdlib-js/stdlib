@@ -34,7 +34,7 @@
 * var bool = isFloat64Array( [] );
 * // returns false
 */
-declare function isFloat64Array( value: any ): boolean;
+declare function isFloat64Array( value: any ): value is Float64Array;
 
 
 // EXPORTS //

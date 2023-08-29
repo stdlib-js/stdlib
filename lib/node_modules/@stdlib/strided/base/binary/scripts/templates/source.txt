@@ -51,14 +51,14 @@
 * int64_t shape[] = { {{N}} };
 *
 * // Define a callback:
-* {{CALLBACK_RETURN_TYPE}} add( {{CALLBACK_PARAM_TYPE_1}} x, {{CALLBACK_PARAM_TYPE_2}} y ) {
+* static {{CALLBACK_RETURN_TYPE}} add( {{CALLBACK_PARAM_TYPE_1}} x, {{CALLBACK_PARAM_TYPE_2}} y ) {
 *     {{CALLBACK_BODY}}
 * }
 *
 * // Apply the callback:
 * stdlib_strided_{{SIGNATURE}}( arrays, shape, strides, (void *)add );
 */
-void stdlib_strided_{{SIGNATURE}}( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_{{SIGNATURE}}( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	typedef {{CALLBACK_RETURN_TYPE}} func_type( const {{CALLBACK_PARAM_TYPE_1}} x, const {{CALLBACK_PARAM_TYPE_2}} y );
 	func_type *f = (func_type *)fcn;
 	{{LOOP_MACRO}}( {{LOOP_MACRO_ARGUMENTS}} )

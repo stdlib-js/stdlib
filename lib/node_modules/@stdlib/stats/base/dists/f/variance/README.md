@@ -31,7 +31,7 @@ The [variance][variance] for a [F][f-distribution] random variable is
 <!-- <equation class="equation" label="eq:f_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{2\,d_{2}^{2}\,(d_{1}+d_{2}-2)}{d_{1}(d_{2}-2)^{2}(d_{2}-4)}" alt="Variance for an F distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = \frac{2\,d_{2}^{2}\,(d_{1}+d_{2}-2)}{d_{1}(d_{2}-2)^{2}(d_{2}-4)}
+\mathop{\mathrm{Var}}\left( X \right) = \frac{2\,d_{2}^{2}\,(d_{1}+d_{2}-2)}{d_{1}(d_{2}-2)^{2}(d_{2}-4)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{2\,d_{2}^{2}\,(d_{1}+d_{2}-2)}{d_{1}(d_{2}-2)^{2}(d_{2}-4)}" data-equation="eq:f_variance">

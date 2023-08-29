@@ -41,7 +41,7 @@
 * var bool = isCurrentYear( null );
 * // returns false
 */
-declare function isCurrentYear( value: any ): boolean;
+declare function isCurrentYear( value: any ): value is Date | number;
 
 
 // EXPORTS //

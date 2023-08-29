@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/strided/base/unary-addon-dispatch",
+  "name": "@stdlib/strided/base/mskunary-addon-dispatch",
   "version": "0.0.0",
-  "description": "Dispatch to a native add-on applying a unary function to an input strided array.",
+  "description": "Dispatch to a native add-on applying a unary function to an input strided array according to a mask strided array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -56,7 +56,10 @@
     "dispatch",
     "addon",
     "add-on",
-    "native"
+    "native",
+    "masked",
+    "mask",
+    "missing"
   ],
   "__stdlib__": {}
 }

@@ -33,7 +33,7 @@
 * var bool = isArrayBufferView( [] );
 * // returns false
 */
-declare function isArrayBufferView( value: any ): boolean;
+declare function isArrayBufferView( value: any ): value is ArrayBufferView;
 
 
 // EXPORTS //

@@ -44,7 +44,7 @@ or, alternatively, in terms of the `max` function
 <!-- <equation class="equation" label="eq:ramp_function_alternative_defn" align="center" raw="R(x) = \operatorname{max}( x, 0 )" alt="Ramp function alternative definition."> -->
 
 ```math
-R(x) = \operatorname{max}( x, 0 )
+R(x) = \mathop{\mathrm{max}}( x, 0 )
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="R(x) = \operatorname{max}( x, 0 )" data-equation="eq:ramp_function_alternative_defn">

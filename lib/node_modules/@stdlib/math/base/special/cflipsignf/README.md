@@ -169,8 +169,8 @@ float complex stdlib_base_cflipsignf( const float complex z, const float y );
 #include <stdio.h>
 #include <complex.h>
 
-int main() {
-    float complex x[] = { 3.14f+1.5f*I, -3.14f-1.5f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
+int main( void ) {
+    const float complex x[] = { 3.14f+1.5f*I, -3.14f-1.5f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
 
     float complex v;
     float complex y;

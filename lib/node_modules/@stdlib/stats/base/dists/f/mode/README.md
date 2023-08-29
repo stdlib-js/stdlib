@@ -31,7 +31,7 @@ The [mode][mode] for a [F][f-distribution] random variable with numerator degree
 <!-- <equation class="equation" label="eq:f_mode" align="center" raw="\operatorname{mode}\left( X \right) = \frac{d_{1}-2}{d_{1}} \; \frac{d_{2}}{d_{2}+2}" alt="Mode for an F distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \frac{d_{1}-2}{d_{1}} \; \frac{d_{2}}{d_{2}+2}
+\mathop{\mathrm{mode}}\left( X \right) = \frac{d_{1}-2}{d_{1}} \; \frac{d_{2}}{d_{2}+2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \frac{d_{1}-2}{d_{1}} \; \frac{d_{2}}{d_{2}+2}" data-equation="eq:f_mode">

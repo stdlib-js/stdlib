@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
@@ -37,7 +37,7 @@ interface Options {
 	missing?: 'first' | 'last' | 'remove';
 
 	/**
-	* Array of values encoding missing values (default: [null,NaN]).
+	* Array of values encoding missing values (default: [null, NaN]).
 	*/
 	encoding?: Array<any>;
 }

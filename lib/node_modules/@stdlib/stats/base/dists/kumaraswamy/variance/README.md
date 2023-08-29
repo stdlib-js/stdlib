@@ -31,7 +31,7 @@ The [variance][variance] for a [Kumaraswamy's double bounded][kumaraswamy-distri
 <!-- <equation class="equation" label="eq:kumaraswamy_variance" align="center" raw="\operatorname{Var}\left( X \right) = m_2 - m_1^2" alt="Variance for a Kumaraswamy's double bounded distribution."> -->
 
 ```math
-\operatorname{Var}\left( X \right) = m_2 - m_1^2
+\mathop{\mathrm{Var}}\left( X \right) = m_2 - m_1^2
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = m_2 - m_1^2" data-equation="eq:kumaraswamy_variance">
