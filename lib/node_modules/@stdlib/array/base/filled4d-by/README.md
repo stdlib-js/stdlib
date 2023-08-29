@@ -40,7 +40,7 @@ limitations under the License.
 var filled4dBy = require( '@stdlib/array/base/filled4d-by' );
 ```
 
-#### filled4dBy( len, clbk\[, thisArg] )
+#### filled4dBy( shape, clbk\[, thisArg] )
 
 Returns a filled four-dimensional nested array according to a provided callback function.
 
