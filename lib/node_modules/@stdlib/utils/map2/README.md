@@ -82,8 +82,7 @@ The applied function is provided the following arguments:
 -   **v1**: element from first input array.
 -   **v2**: element from second input array.
 -   **idx**: element index.
--   **x**: first input array.
--   **y**: second input array.
+-   **arrays**: input arrays.
 
 To set the `this` context when invoking the input function, provide a `thisArg`.
 

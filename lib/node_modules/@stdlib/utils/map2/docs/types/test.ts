@@ -38,17 +38,17 @@ function clbk( v1: number, v2: number ): number {
 	const x = [ 1, 2, 3, 4, 5, 6 ];
 	const y = [ 1, 1, 1, 1, 1, 1 ];
 
-	map2( x, y, clbk ); // $ExpectType Collection
-	map2( x, y, clbk, {} ); // $ExpectType Collection
+	map2( x, y, clbk ); // $ExpectType Collection<number>
+	map2( x, y, clbk, {} ); // $ExpectType Collection<number>
 }
 
 // The function returns an ndarray when provided ndarrays...
 {
-	const x = array( [ 1, 2, 3, 4, 5, 6 ] );
-	const y = array( [ 1, 1, 1, 1, 1, 1 ] );
+	const x = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
+	const y = array<number>( [ 1, 1, 1, 1, 1, 1 ] );
 
-	map2( x, y, clbk ); // $ExpectType ndarray
-	map2( x, y, clbk, {} ); // $ExpectType ndarray
+	map2( x, y, clbk ); // $ExpectType typedndarray<number>
+	map2( x, y, clbk, {} ); // $ExpectType typedndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument other than a collection or ndarray...
@@ -109,8 +109,8 @@ function clbk( v1: number, v2: number ): number {
 	map2( x1, y1, ( x: number, y: number, z: number, w: number ): number => x + y + z + w ); // $ExpectError
 	map2( x1, y1, ( x: number, y: number, z: number, w: number ): number => x + y + z + w, {} ); // $ExpectError
 
-	const x2 = array( [ 1, 2, 3, 4, 5, 6 ] );
-	const y2 = array( [ 1, 1, 1, 1, 1, 1 ] );
+	const x2 = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
+	const y2 = array<number>( [ 1, 1, 1, 1, 1, 1 ] );
 
 	map2( x2, y2, '5' ); // $ExpectError
 	map2( x2, y2, true ); // $ExpectError
@@ -142,8 +142,8 @@ function clbk( v1: number, v2: number ): number {
 	map2( x1, y1 ); // $ExpectError
 	map2( x1, y1, clbk, {}, 4 ); // $ExpectError
 
-	const x2 = array( [ 1, 2, 3, 4, 5, 6 ] );
-	const y2 = array( [ 1, 1, 1, 1, 1, 1 ] );
+	const x2 = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
+	const y2 = array<number>( [ 1, 1, 1, 1, 1, 1 ] );
 
 	map2(); // $ExpectError
 	map2( x2 ); // $ExpectError
@@ -157,18 +157,18 @@ function clbk( v1: number, v2: number ): number {
 	const y = [ 1, 1, 1, 1, 1, 1 ];
 	const out = [ 0, 0, 0, 0, 0, 0 ];
 
-	map2.assign( x, y, out, clbk ); // $ExpectType Collection
-	map2.assign( x, y, out, clbk, {} ); // $ExpectType Collection
+	map2.assign( x, y, out, clbk ); // $ExpectType Collection<number>
+	map2.assign( x, y, out, clbk, {} ); // $ExpectType Collection<number>
 }
 
 // The `assign` method returns an ndarray when provided ndarrays...
 {
-	const x = array( [ 1, 2, 3, 4, 5, 6 ] );
-	const y = array( [ 1, 1, 1, 1, 1, 1 ] );
-	const out = array( [ 0, 0, 0, 0, 0, 0 ] );
+	const x = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
+	const y = array<number>( [ 1, 1, 1, 1, 1, 1 ] );
+	const out = array<number>( [ 0, 0, 0, 0, 0, 0 ] );
 
-	map2.assign( x, y, out, clbk ); // $ExpectType ndarray
-	map2.assign( x, y, out, clbk, {} ); // $ExpectType ndarray
+	map2.assign( x, y, out, clbk ); // $ExpectType typedndarray<number>
+	map2.assign( x, y, out, clbk, {} ); // $ExpectType typedndarray<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument other than a collection or ndarray...
@@ -188,8 +188,8 @@ function clbk( v1: number, v2: number ): number {
 	map2.assign( null, y1, out1, clbk, {} ); // $ExpectError
 	map2.assign( {}, y1, out1, clbk, {} ); // $ExpectError
 
-	const y2 = array( [ 1, 1, 1, 1, 1, 1 ] );
-	const out2 = array( [ 0, 0, 0, 0, 0, 0 ] );
+	const y2 = array<number>( [ 1, 1, 1, 1, 1, 1 ] );
+	const out2 = array<number>( [ 0, 0, 0, 0, 0, 0 ] );
 
 	map2.assign( 5, y2, out2, clbk ); // $ExpectError
 	map2.assign( true, y2, out2, clbk ); // $ExpectError
@@ -221,8 +221,8 @@ function clbk( v1: number, v2: number ): number {
 	map2.assign( x1, null, out1, clbk, {} ); // $ExpectError
 	map2.assign( x1, {}, out1, clbk, {} ); // $ExpectError
 
-	const x2 = array( [ 1, 2, 3, 4, 5, 6 ] );
-	const out2 = array( [ 0, 0, 0, 0, 0, 0 ] );
+	const x2 = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
+	const out2 = array<number>( [ 0, 0, 0, 0, 0, 0 ] );
 
 	map2.assign( x2, 5, out2, clbk ); // $ExpectError
 	map2.assign( x2, true, out2, clbk ); // $ExpectError
@@ -254,8 +254,8 @@ function clbk( v1: number, v2: number ): number {
 	map2.assign( x1, y1, null, clbk, {} ); // $ExpectError
 	map2.assign( x1, y1, {}, clbk, {} ); // $ExpectError
 
-	const x2 = array( [ 0, 0, 0, 0, 0, 0 ] );
-	const y2 = array( [ 1, 1, 1, 1, 1, 1 ] );
+	const x2 = array<number>( [ 0, 0, 0, 0, 0, 0 ] );
+	const y2 = array<number>( [ 1, 1, 1, 1, 1, 1 ] );
 
 	map2.assign( x2, y2, 5, clbk ); // $ExpectError
 	map2.assign( x2, y2, true, clbk ); // $ExpectError
@@ -295,9 +295,9 @@ function clbk( v1: number, v2: number ): number {
 	map2.assign( x1, y1, out1, ( x: number, y: number, z: number, w: number ): number => x + y + z + w ); // $ExpectError
 	map2.assign( x1, y1, out1, ( x: number, y: number, z: number, w: number ): number => x + y + z + w, {} ); // $ExpectError
 
-	const x2 = array( [ 1, 2, 3, 4, 5, 6 ] );
-	const y2 = array( [ 1, 1, 1, 1, 1, 1 ] );
-	const out2 = array( [ 0, 0, 0, 0, 0, 0 ] );
+	const x2 = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
+	const y2 = array<number>( [ 1, 1, 1, 1, 1, 1 ] );
+	const out2 = array<number>( [ 0, 0, 0, 0, 0, 0 ] );
 
 	map2.assign( x2, y2, out2, '5' ); // $ExpectError
 	map2.assign( x2, y2, out2, true ); // $ExpectError
@@ -331,9 +331,9 @@ function clbk( v1: number, v2: number ): number {
 	map2.assign( x1, y1, out1 ); // $ExpectError
 	map2.assign( x1, y1, out1, clbk, {}, 4 ); // $ExpectError
 
-	const x2 = array( [ 1, 2, 3, 4, 5, 6 ] );
-	const y2 = array( [ 1, 1, 1, 1, 1, 1 ] );
-	const out2 = array( [ 0, 0, 0, 0, 0, 0 ] );
+	const x2 = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
+	const y2 = array<number>( [ 1, 1, 1, 1, 1, 1 ] );
+	const out2 = array<number>( [ 0, 0, 0, 0, 0, 0 ] );
 
 	map2.assign(); // $ExpectError
 	map2.assign( x2 ); // $ExpectError
