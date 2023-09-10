@@ -24,7 +24,7 @@ import map4d = require( './index' );
 * @param v - argument
 * @returns result
 */
-function clbk( v: any ): any {
+function clbk( v: number ): number {
 	return v;
 }
 
@@ -38,8 +38,8 @@ function clbk( v: any ): any {
 		[ [ [ 4, 5, 6 ] ] ]
 	];
 
-	map4d( arr, clbk ); // $ExpectType any[][][][]
-	map4d( arr, clbk, {} ); // $ExpectType any[][][][]
+	map4d( arr, clbk ); // $ExpectType number[][][][]
+	map4d( arr, clbk, {} ); // $ExpectType number[][][][]
 }
 
 // The compiler throws an error if the function is provided a first argument other than a four-dimensional nested array...
