@@ -49,6 +49,12 @@ function predicate( value, next ) {
     setTimeout( onTimeout, value );
     function onTimeout() {
         console.log( value );
+        /* =>
+            1000
+            2500
+            3000
+        */
+
         next( null, false );
     }
 }
@@ -58,17 +64,12 @@ function done( error, bool ) {
         throw error;
     }
     console.log( bool );
+    // => false
 }
 
 var arr = [ 1000, 2500, 3000 ];
 
 anyByRightAsync( arr, predicate, done );
-/* =>
-    1000
-    2500
-    3000
-    false
-*/
 ```
 
 If a `predicate` function calls the `next` callback with a truthy test argument, the function stops processing any additional `collection` elements and returns `true` for the test result.
@@ -89,19 +90,19 @@ function done( error, bool ) {
         throw error;
     }
     console.log( bool );
+    // => true
 }
 
 var arr = [ 1000, 2500, 3000 ];
 
 anyByRightAsync( arr, predicate, done );
-// => true
 ```
 
 The function accepts the following `options`:
 
 -   `limit`: the maximum number of pending invocations at any one time. Default: `infinity`.
 -   `series`: `boolean` indicating whether to sequentially invoke the `predicate` function for each `collection` element. If `true`, the function sets `options.limit=1`. Default: `false`.
--   `thisArg`: the execution context for `fcn`.
+-   `thisArg`: the execution context for `predicate`.
 
 By default, all elements are processed concurrently, which means that the function does **not** guarantee completion order. To process each `collection` element sequentially, set the `series` option to `true`.
 
@@ -110,6 +111,11 @@ function predicate( value, next ) {
     setTimeout( onTimeout, value );
     function onTimeout() {
         console.log( value );
+        /* =>
+            3000
+            2500
+            1000
+        */
         next( null, false );
     }
 }
@@ -119,6 +125,7 @@ function done( error, bool ) {
         throw error;
     }
     console.log( bool );
+    // => false
 }
 
 var arr = [ 1000, 2500, 3000 ];
@@ -128,12 +135,6 @@ var opts = {
 };
 
 anyByRightAsync( arr, opts, predicate, done );
-/* =>
-    3000
-    2500
-    1000
-    false
-*/
 ```
 
 To limit the maximum number of pending function invocations, set the `limit` option.
@@ -143,6 +144,12 @@ function predicate( value, next ) {
     setTimeout( onTimeout, value );
     function onTimeout() {
         console.log( value );
+        /* =>
+            2500
+            3000
+            1000
+        */
+
         next( null, false );
     }
 }
@@ -152,6 +159,7 @@ function done( error, bool ) {
         throw error;
     }
     console.log( bool );
+    // => false
 }
 
 var arr = [ 1000, 2500, 3000 ];
@@ -161,12 +169,6 @@ var opts = {
 };
 
 anyByRightAsync( arr, opts, predicate, done );
-/* =>
-    2500
-    3000
-    1000
-    false
-*/
 ```
 
 To set the execution context of the `predicate` function, set the `thisArg` option.
@@ -216,9 +218,20 @@ The actual number of provided arguments depends on function `length`. If the `pr
 ```javascript
 function predicate( value, i, collection, next ) {
     console.log( 'collection: %s. %d: %d', collection.join( ',' ), i, value );
+    /* =>
+        collection: 3000,2500,1000. 2: 3000
+        collection: 3000,2500,1000. 1: 2500
+        collection: 3000,2500,1000. 0: 1000
+    */
     setTimeout( onTimeout, value );
     function onTimeout() {
         console.log( value );
+        /* =>
+            1000
+            2500
+            3000
+        */
+
         next( null, false );
     }
 }
@@ -228,20 +241,12 @@ function done( error, bool ) {
         throw error;
     }
     console.log( bool );
+    // => false
 }
 
 var arr = [ 1000, 2500, 3000 ];
 
 anyByRightAsync( arr, predicate, done );
-/* =>
-    collection: 3000,2500,1000. 2: 3000
-    collection: 3000,2500,1000. 1: 2500
-    collection: 3000,2500,1000. 0: 1000
-    1000
-    2500
-    3000
-    false
-*/
 ```
 
 #### anyByRightAsync.factory( \[options,] predicate )
@@ -269,7 +274,7 @@ var f = anyByRightAsync.factory( predicate );
 var arr1 = [ 1000, 2500, 3000 ];
 
 f( arr1, done );
-/* =>
+/* e.g., =>
     1000
     2500
     3000
@@ -279,7 +284,7 @@ f( arr1, done );
 var arr2 = [ 100, 250, 300 ];
 
 f( arr2, done );
-/* =>
+/* e.g., =>
     100
     250
     300
