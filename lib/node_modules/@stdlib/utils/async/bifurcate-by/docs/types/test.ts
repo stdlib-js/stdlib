@@ -79,8 +79,8 @@ const done = ( error: Error | null, result: Array<Array<any>> ) => {
 
 // Attached to main export is a `factory` method which returns a function...
 {
-	bifurcateByAsync.factory( isPositive ); // $ExpectType FactoryFunction
-	bifurcateByAsync.factory( { 'series': true }, isPositive ); // $ExpectType FactoryFunction
+	bifurcateByAsync.factory( isPositive ); // $ExpectType FactoryFunction<number>
+	bifurcateByAsync.factory( { 'series': true }, isPositive ); // $ExpectType FactoryFunction<number>
 }
 
 // The compiler throws an error if the `factory` method is provided an options argument which is not an object...
