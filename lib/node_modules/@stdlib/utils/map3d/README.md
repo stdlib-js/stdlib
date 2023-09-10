@@ -60,9 +60,7 @@ var out = map3d( arr, naryFunction( abs, 1 ) );
 The applied function is provided the following arguments:
 
 -   **value**: array element.
--   **i**: index of the first dimension.
--   **j**: index of the second dimension.
--   **k**: index of the third dimension.
+-   **indices**: current array element indices.
 -   **arr**: input array.
 
 To set the `this` context when invoking the input function, provide a `thisArg`.
