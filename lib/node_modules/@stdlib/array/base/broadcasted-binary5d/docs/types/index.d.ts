@@ -52,7 +52,7 @@ type OutputArray<T> = Array5D<T>;
 type OutputArrayShape = Shape5D;
 
 /**
-* Applies a binary callback to elements in broadcasted input arrays and assigns results to elements in a five-dimensional nested output array.
+* Applies a binary callback to elements in two broadcasted input arrays and assigns results to elements in a five-dimensional nested output array.
 *
 * ## Notes
 *

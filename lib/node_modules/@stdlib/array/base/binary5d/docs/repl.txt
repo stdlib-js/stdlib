@@ -1,6 +1,6 @@
 
 {{alias}}( arrays, shape, fcn )
-    Applies a binary callback to elements in five-dimensional nested input
+    Applies a binary callback to elements in two five-dimensional nested input
     arrays and assigns results to elements in a five-dimensional nested output
     array.
 

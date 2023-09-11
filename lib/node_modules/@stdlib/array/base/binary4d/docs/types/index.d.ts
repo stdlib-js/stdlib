@@ -32,7 +32,7 @@ import { Shape4D } from '@stdlib/types/ndarray';
 type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 
 /**
-* Applies a binary callback to elements in four-dimensional nested input arrays and assigns results to elements in a four-dimensional nested output array.
+* Applies a binary callback to elements in two four-dimensional nested input arrays and assigns results to elements in a four-dimensional nested output array.
 *
 * ## Notes
 *

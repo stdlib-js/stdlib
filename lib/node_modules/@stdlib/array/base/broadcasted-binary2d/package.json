@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/array/base/broadcasted-binary2d",
   "version": "0.0.0",
-  "description": "Apply a binary callback to elements in broadcasted input arrays and assign results to elements in a two-dimensional nested output array.",
+  "description": "Apply a binary callback to elements in two broadcasted input arrays and assign results to elements in a two-dimensional nested output array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

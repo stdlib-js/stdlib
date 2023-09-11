@@ -32,7 +32,7 @@ import { Shape, Shape1D, Shape2D, Shape3D, Shape4D, Shape5D, Shape6D, Shape7D, S
 type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 
 /**
-* Applies a binary callback to elements in one-dimensional nested input arrays and assigns results to elements in a one-dimensional nested output array.
+* Applies a binary callback to elements in two one-dimensional nested input arrays and assigns results to elements in a one-dimensional nested output array.
 *
 * ## Notes
 *
@@ -61,7 +61,7 @@ type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Array1D<T>, Array1D<U>, Array1D<V> ], shape: Shape1D, fcn: Binary<T, U, V> ): void;
 
 /**
-* Applies a binary callback to elements in two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
+* Applies a binary callback to elements in two two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
 *
 * ## Notes
 *
@@ -90,7 +90,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Array2D<T>, Array2D<U>, Array2D<V> ], shape: Shape2D, fcn: Binary<T, U, V> ): void;
 
 /**
-* Applies a binary callback to elements in three-dimensional nested input arrays and assigns results to elements in a three-dimensional nested output array.
+* Applies a binary callback to elements in two three-dimensional nested input arrays and assigns results to elements in a three-dimensional nested output array.
 *
 * ## Notes
 *
@@ -119,7 +119,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Array3D<T>, Array3D<U>, Array3D<V> ], shape: Shape3D, fcn: Binary<T, U, V> ): void;
 
 /**
-* Applies a binary callback to elements in four-dimensional nested input arrays and assigns results to elements in a four-dimensional nested output array.
+* Applies a binary callback to elements in two four-dimensional nested input arrays and assigns results to elements in a four-dimensional nested output array.
 *
 * ## Notes
 *
@@ -148,7 +148,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Array4D<T>, Array4D<U>, Array4D<V> ], shape: Shape4D, fcn: Binary<T, U, V> ): void;
 
 /**
-* Applies a binary callback to elements in five-dimensional nested input arrays and assigns results to elements in a five-dimensional nested output array.
+* Applies a binary callback to elements in two five-dimensional nested input arrays and assigns results to elements in a five-dimensional nested output array.
 *
 * ## Notes
 *
@@ -177,7 +177,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Array5D<T>, Array5D<U>, Array5D<V> ], shape: Shape5D, fcn: Binary<T, U, V> ): void;
 
 /**
-* Applies a binary callback to elements in six-dimensional nested input arrays and assigns results to elements in a six-dimensional nested output array.
+* Applies a binary callback to elements in two six-dimensional nested input arrays and assigns results to elements in a six-dimensional nested output array.
 *
 * ## Notes
 *
@@ -206,7 +206,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Array6D<T>, Array6D<U>, Array6D<V> ], shape: Shape6D, fcn: Binary<T, U, V> ): void;
 
 /**
-* Applies a binary callback to elements in seven-dimensional nested input arrays and assigns results to elements in a seven-dimensional nested output array.
+* Applies a binary callback to elements in two seven-dimensional nested input arrays and assigns results to elements in a seven-dimensional nested output array.
 *
 * ## Notes
 *
@@ -235,7 +235,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Array7D<T>, Array7D<U>, Array7D<V> ], shape: Shape7D, fcn: Binary<T, U, V> ): void;
 
 /**
-* Applies a binary callback to elements in eight-dimensional nested input arrays and assigns results to elements in an eight-dimensional nested output array.
+* Applies a binary callback to elements in two eight-dimensional nested input arrays and assigns results to elements in an eight-dimensional nested output array.
 *
 * ## Notes
 *
@@ -264,7 +264,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Array8D<T>, Array8D<U>, Array8D<V> ], shape: Shape8D, fcn: Binary<T, U, V> ): void;
 
 /**
-* Applies a binary callback to elements in nine-dimensional nested input arrays and assigns results to elements in a nine-dimensional nested output array.
+* Applies a binary callback to elements in two nine-dimensional nested input arrays and assigns results to elements in a nine-dimensional nested output array.
 *
 * ## Notes
 *
@@ -293,7 +293,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Array9D<T>, Array9D<U>, Array9D<V> ], shape: Shape9D, fcn: Binary<T, U, V> ): void;
 
 /**
-* Applies a binary callback to elements in ten-dimensional nested input arrays and assigns results to elements in a ten-dimensional nested output array.
+* Applies a binary callback to elements in two ten-dimensional nested input arrays and assigns results to elements in a ten-dimensional nested output array.
 *
 * ## Notes
 *
@@ -322,7 +322,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Array10D<T>, Array10D<U>, Array10D<V> ], shape: Shape10D, fcn: Binary<T, U, V> ): void;
 
 /**
-* Applies a binary callback to elements in n-dimensional nested input arrays and assigns results to elements in an n-dimensional nested output array.
+* Applies a binary callback to elements in two n-dimensional nested input arrays and assigns results to elements in an n-dimensional nested output array.
 *
 * ## Notes
 *

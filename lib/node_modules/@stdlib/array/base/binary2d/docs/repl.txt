@@ -1,7 +1,8 @@
 
 {{alias}}( arrays, shape, fcn )
-    Applies a binary callback to elements in two-dimensional nested input arrays
-    and assigns results to elements in a two-dimensional nested output array.
+    Applies a binary callback to elements in two two-dimensional nested input
+    arrays and assigns results to elements in a two-dimensional nested output
+    array.
 
     Parameters
     ----------

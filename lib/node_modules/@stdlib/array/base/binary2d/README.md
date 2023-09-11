@@ -20,7 +20,7 @@ limitations under the License.
 
 # binary2d
 
-> Apply a binary callback to elements in two-dimensional nested input arrays and assign results to elements in a two-dimensional nested output array.
+> Apply a binary callback to elements in two two-dimensional nested input arrays and assign results to elements in a two-dimensional nested output array.
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var binary2d = require( '@stdlib/array/base/binary2d' );
 
 #### binary2d( arrays, shape, fcn )
 
-Applies a binary callback to elements in two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
+Applies a binary callback to elements in two two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
 
 ```javascript
 var add = require( '@stdlib/math/base/ops/add' );

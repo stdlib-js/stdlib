@@ -20,7 +20,7 @@ limitations under the License.
 
 # binarynd
 
-> Apply a binary callback to elements in n-dimensional nested input arrays and assign results to elements in an n-dimensional nested output array.
+> Apply a binary callback to elements in two n-dimensional nested input arrays and assign results to elements in an n-dimensional nested output array.
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var binarynd = require( '@stdlib/array/base/binarynd' );
 
 #### binarynd( arrays, shape, fcn )
 
-Applies a binary callback to elements in n-dimensional nested input arrays and assigns results to elements in an n-dimensional nested output array.
+Applies a binary callback to elements in two n-dimensional nested input arrays and assigns results to elements in an n-dimensional nested output array.
 
 ```javascript
 var add = require( '@stdlib/math/base/ops/add' );

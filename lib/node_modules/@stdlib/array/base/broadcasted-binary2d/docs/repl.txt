@@ -1,6 +1,6 @@
 
 {{alias}}( arrays, shapes, fcn )
-    Applies a binary callback to elements in broadcasted input arrays and
+    Applies a binary callback to elements in two broadcasted input arrays and
     assigns results to elements in a two-dimensional nested output array.
 
     Parameters

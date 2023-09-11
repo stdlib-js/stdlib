@@ -32,7 +32,7 @@ import { Shape3D } from '@stdlib/types/ndarray';
 type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 
 /**
-* Applies a binary callback to elements in three-dimensional nested input arrays and assigns results to elements in a three-dimensional nested output array.
+* Applies a binary callback to elements in two three-dimensional nested input arrays and assigns results to elements in a three-dimensional nested output array.
 *
 * ## Notes
 *

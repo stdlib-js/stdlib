@@ -52,7 +52,7 @@ type OutputArray<T> = Array3D<T>;
 type OutputArrayShape = Shape3D;
 
 /**
-* Applies a binary callback to elements in broadcasted input arrays and assigns results to elements in a three-dimensional nested output array.
+* Applies a binary callback to elements in two broadcasted input arrays and assigns results to elements in a three-dimensional nested output array.
 *
 * ## Notes
 *

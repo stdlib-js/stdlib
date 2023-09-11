@@ -52,7 +52,7 @@ type OutputArray<T> = Array4D<T>;
 type OutputArrayShape = Shape4D;
 
 /**
-* Applies a binary callback to elements in broadcasted input arrays and assigns results to elements in a four-dimensional nested output array.
+* Applies a binary callback to elements in two broadcasted input arrays and assigns results to elements in a four-dimensional nested output array.
 *
 * ## Notes
 *
