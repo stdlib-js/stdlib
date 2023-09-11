@@ -36,12 +36,11 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 	const strides = [ 1, 1 ];
 
-	unaryBy( arrays, shape, strides, identity, identity ); // $ExpectType void
-	unaryBy( arrays, shape, strides, identity, identity, {} ); // $ExpectType void
+	unaryBy( [ x, y ], shape, strides, identity, identity ); // $ExpectType void
+	unaryBy( [ x, y ], shape, strides, identity, identity, {} ); // $ExpectType void
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like object containing array-like objects...
@@ -73,28 +72,27 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const strides = [ 1, 1 ];
 
-	unaryBy( arrays, '10', strides, identity, identity ); // $ExpectError
-	unaryBy( arrays, 10, strides, identity, identity ); // $ExpectError
-	unaryBy( arrays, true, strides, identity, identity ); // $ExpectError
-	unaryBy( arrays, false, strides, identity, identity ); // $ExpectError
-	unaryBy( arrays, null, strides, identity, identity ); // $ExpectError
-	unaryBy( arrays, undefined, strides, identity, identity ); // $ExpectError
-	unaryBy( arrays, [ '1' ], strides, identity, identity ); // $ExpectError
-	unaryBy( arrays, {}, strides, identity, identity ); // $ExpectError
-	unaryBy( arrays, ( x: number ): number => x, strides, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], '10', strides, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], 10, strides, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], true, strides, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], false, strides, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], null, strides, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], undefined, strides, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], [ '1' ], strides, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], {}, strides, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], ( x: number ): number => x, strides, identity, identity ); // $ExpectError
 
-	unaryBy( arrays, '10', strides, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, 10, strides, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, true, strides, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, false, strides, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, null, strides, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, undefined, strides, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, [ '1' ], strides, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, {}, strides, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, ( x: number ): number => x, strides, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], '10', strides, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], 10, strides, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], true, strides, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], false, strides, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], null, strides, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], undefined, strides, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], [ '1' ], strides, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], {}, strides, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], ( x: number ): number => x, strides, identity, identity, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not an array-like object containing numbers...
@@ -102,28 +100,27 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 
-	unaryBy( arrays, shape, '10', identity, identity ); // $ExpectError
-	unaryBy( arrays, shape, 5, identity, identity ); // $ExpectError
-	unaryBy( arrays, shape, true, identity, identity ); // $ExpectError
-	unaryBy( arrays, shape, false, identity, identity ); // $ExpectError
-	unaryBy( arrays, shape, null, identity, identity ); // $ExpectError
-	unaryBy( arrays, shape, undefined, identity, identity ); // $ExpectError
-	unaryBy( arrays, shape, [ '1' ], identity, identity ); // $ExpectError
-	unaryBy( arrays, shape, {}, identity, identity ); // $ExpectError
-	unaryBy( arrays, shape, ( x: number ): number => x, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, '10', identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, 5, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, true, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, false, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, null, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, undefined, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, [ '1' ], identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, {}, identity, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, ( x: number ): number => x, identity, identity ); // $ExpectError
 
-	unaryBy( arrays, shape, '10', identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, 5, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, true, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, false, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, null, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, undefined, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, [ '1' ], identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, {}, identity, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, ( x: number ): number => x, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, '10', identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, 5, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, true, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, false, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, null, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, undefined, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, [ '1' ], identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, {}, identity, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, ( x: number ): number => x, identity, identity, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a unary function...
@@ -131,27 +128,26 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 	const strides = [ 1, 1 ];
 
-	unaryBy( arrays, shape, strides, '10', identity ); // $ExpectError
-	unaryBy( arrays, shape, strides, 5, identity ); // $ExpectError
-	unaryBy( arrays, shape, strides, true, identity ); // $ExpectError
-	unaryBy( arrays, shape, strides, false, identity ); // $ExpectError
-	unaryBy( arrays, shape, strides, null, identity ); // $ExpectError
-	unaryBy( arrays, shape, strides, undefined, identity ); // $ExpectError
-	unaryBy( arrays, shape, strides, [], identity ); // $ExpectError
-	unaryBy( arrays, shape, strides, {}, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, '10', identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, 5, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, true, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, false, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, null, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, undefined, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, [], identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, {}, identity ); // $ExpectError
 
-	unaryBy( arrays, shape, strides, '10', identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, 5, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, true, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, false, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, null, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, undefined, identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, [], identity, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, {}, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, '10', identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, 5, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, true, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, false, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, null, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, undefined, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, [], identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, {}, identity, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fifth argument which is not a function...
@@ -159,27 +155,26 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 	const strides = [ 1, 1 ];
 
-	unaryBy( arrays, shape, strides, identity, '10' ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, 5 ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, true ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, false ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, null ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, undefined ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, [] ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, '10' ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, 5 ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, true ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, false ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, null ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, undefined ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, [] ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, {} ); // $ExpectError
 
-	unaryBy( arrays, shape, strides, identity, '10', {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, 5, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, true, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, false, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, null, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, undefined, {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, [], {} ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, {}, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, '10', {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, 5, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, true, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, false, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, null, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, undefined, {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, [], {} ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, {}, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -187,16 +182,15 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 	const strides = [ 1, 1 ];
 
 	unaryBy(); // $ExpectError
-	unaryBy( arrays ); // $ExpectError
-	unaryBy( arrays, shape ); // $ExpectError
-	unaryBy( arrays, shape, strides ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity ); // $ExpectError
-	unaryBy( arrays, shape, strides, identity, identity, identity, 10 ); // $ExpectError
+	unaryBy( [ x, y ] ); // $ExpectError
+	unaryBy( [ x, y ], shape ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity ); // $ExpectError
+	unaryBy( [ x, y ], shape, strides, identity, identity, identity, 10 ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns `undefined`...
@@ -204,13 +198,12 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 	const strides = [ 1, 1 ];
 	const offsets = [ 0, 0 ];
 
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, identity ); // $ExpectType void
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, identity, {} ); // $ExpectType void
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, identity ); // $ExpectType void
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, identity, {} ); // $ExpectType void
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not an array-like object containing array-like objects...
@@ -243,29 +236,28 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const strides = [ 1, 1 ];
 	const offsets = [ 0, 0 ];
 
-	unaryBy.ndarray( arrays, '10', strides, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, 10, strides, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, true, strides, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, false, strides, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, null, strides, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, undefined, strides, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, [ '1' ], strides, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, {}, strides, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, ( x: number ): number => x, strides, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], '10', strides, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], 10, strides, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], true, strides, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], false, strides, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], null, strides, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], undefined, strides, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], [ '1' ], strides, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], {}, strides, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], ( x: number ): number => x, strides, offsets, identity, identity ); // $ExpectError
 
-	unaryBy.ndarray( arrays, '10', strides, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, 10, strides, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, true, strides, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, false, strides, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, null, strides, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, undefined, strides, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, [ '1' ], strides, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, {}, strides, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, ( x: number ): number => x, strides, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], '10', strides, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], 10, strides, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], true, strides, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], false, strides, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], null, strides, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], undefined, strides, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], [ '1' ], strides, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], {}, strides, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], ( x: number ): number => x, strides, offsets, identity, identity, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not an array-like object containing numbers...
@@ -273,29 +265,28 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 	const offsets = [ 0, 0 ];
 
-	unaryBy.ndarray( arrays, shape, '10', offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, 5, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, true, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, false, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, null, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, undefined, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, [ '1' ], offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, {}, offsets, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, ( x: number ): number => x, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, '10', offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, 5, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, true, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, false, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, null, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, undefined, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, [ '1' ], offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, {}, offsets, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, ( x: number ): number => x, offsets, identity, identity ); // $ExpectError
 
-	unaryBy.ndarray( arrays, shape, '10', offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, 5, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, true, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, false, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, null, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, undefined, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, [ '1' ], offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, {}, offsets, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, ( x: number ): number => x, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, '10', offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, 5, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, true, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, false, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, null, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, undefined, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, [ '1' ], offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, {}, offsets, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, ( x: number ): number => x, offsets, identity, identity, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not an array-like object containing numbers...
@@ -303,29 +294,28 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 	const strides = [ 1, 1 ];
 
-	unaryBy.ndarray( arrays, shape, strides, '10', identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, 5, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, true, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, false, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, null, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, undefined, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, [ '1' ], identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, {}, identity, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, ( x: number ): number => x, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, '10', identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, 5, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, true, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, false, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, null, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, undefined, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, [ '1' ], identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, {}, identity, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, ( x: number ): number => x, identity, identity ); // $ExpectError
 
-	unaryBy.ndarray( arrays, shape, strides, '10', identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, 5, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, true, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, false, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, null, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, undefined, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, [ '1' ], identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, {}, identity, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, ( x: number ): number => x, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, '10', identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, 5, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, true, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, false, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, null, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, undefined, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, [ '1' ], identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, {}, identity, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, ( x: number ): number => x, identity, identity, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a unary function...
@@ -333,28 +323,27 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 	const strides = [ 1, 1 ];
 	const offsets = [ 0, 0 ];
 
-	unaryBy.ndarray( arrays, shape, strides, offsets, '10', identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, 5, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, true, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, false, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, null, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, undefined, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, [], identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, {}, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, '10', identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, 5, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, true, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, false, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, null, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, undefined, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, [], identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, {}, identity ); // $ExpectError
 
-	unaryBy.ndarray( arrays, shape, strides, offsets, '10', identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, 5, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, true, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, false, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, null, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, undefined, identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, [], identity, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, {}, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, '10', identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, 5, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, true, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, false, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, null, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, undefined, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, [], identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, {}, identity, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a sixth argument which is not a function...
@@ -362,28 +351,27 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 	const strides = [ 1, 1 ];
 	const offsets = [ 0, 0 ];
 
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, '10' ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, 5 ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, true ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, false ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, null ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, undefined ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, [] ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, '10' ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, 5 ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, true ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, false ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, null ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, undefined ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, [] ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, {} ); // $ExpectError
 
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, '10', {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, 5, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, true, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, false, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, null, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, undefined, {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, [], {} ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, {}, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, '10', {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, 5, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, true, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, false, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, null, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, undefined, {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, [], {} ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, {}, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
@@ -391,16 +379,15 @@ function identity( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	const arrays = [ x, y ];
 	const shape = [ 10 ];
 	const strides = [ 1, 1 ];
 	const offsets = [ 0, 0 ];
 
 	unaryBy.ndarray(); // $ExpectError
-	unaryBy.ndarray( arrays ); // $ExpectError
-	unaryBy.ndarray( arrays, shape ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity ); // $ExpectError
-	unaryBy.ndarray( arrays, shape, strides, offsets, identity, identity, identity, 10 ); // $ExpectError
+	unaryBy.ndarray( [ x, y ] ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity ); // $ExpectError
+	unaryBy.ndarray( [ x, y ], shape, strides, offsets, identity, identity, identity, 10 ); // $ExpectError
 }

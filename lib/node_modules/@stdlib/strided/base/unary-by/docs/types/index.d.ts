@@ -20,41 +20,32 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
+import { Shape1D } from '@stdlib/types/ndarray';
 
 /**
 * Returns the accessed value.
 *
 * @returns accessed value
 */
-type NullaryCallback = () => any;
-
-/**
-* Returns the accessed value.
-*
-* @param value - array element value
-* @returns accessed value
-*/
-type UnaryCallback = ( value: any ) => any;
+type NullaryCallback<U, W> = ( this: W ) => U;
 
 /**
 * Returns the accessed value.
 *
 * @param value - array element value
-* @param idx - iteration index
 * @returns accessed value
 */
-type BinaryCallback = ( value: any, idx: number ) => any;
+type UnaryCallback<T, U, W> = ( this: W, value: T ) => U;
 
 /**
 * Returns the accessed value.
 *
 * @param value - array element value
 * @param idx - iteration index
-* @param indices - strided indices (offset + idx*stride)
 * @returns accessed value
 */
-type TernaryCallback = ( value: any, idx: number, indices: Array<number> ) => any; // tslint-disable-line max-line-length
+type BinaryCallback<T, U, W> = ( this: W, value: T, idx: number ) => U;
 
 /**
 * Returns the accessed value.
@@ -62,10 +53,9 @@ type TernaryCallback = ( value: any, idx: number, indices: Array<number> ) => an
 * @param value - array element value
 * @param idx - iteration index
 * @param indices - strided indices (offset + idx*stride)
-* @param arrays - input and output arrays
 * @returns accessed value
 */
-type QuaternaryCallback = ( value: any, idx: number, indices: Array<number>, arrays: Array<Collection> ) => any; // tslint-disable-line max-line-length
+type TernaryCallback<T, U, W> = ( this: W, value: T, idx: number, indices: Array<number> ) => U;
 
 /**
 * Returns the accessed value.
@@ -76,7 +66,18 @@ type QuaternaryCallback = ( value: any, idx: number, indices: Array<number>, arr
 * @param arrays - input and output arrays
 * @returns accessed value
 */
-type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TernaryCallback | QuaternaryCallback; // tslint-disable-line max-line-length
+type QuaternaryCallback<T, U, V, W> = ( this: W, value: T, idx: number, indices: Array<number>, arrays: [ Collection<T>, Collection<V> ] ) => U;
+
+/**
+* Returns the accessed value.
+*
+* @param value - array element value
+* @param idx - iteration index
+* @param indices - strided indices (offset + idx*stride)
+* @param arrays - input and output arrays
+* @returns accessed value
+*/
+type Callback<T, U, V, W> = NullaryCallback<U, W>  | UnaryCallback<T, U, W> | BinaryCallback<T, U, W> | TernaryCallback<T, U, W> | QuaternaryCallback<T, U, V, W>;
 
 /**
 * Callback invoked for each indexed strided array element retrieved via a callback function.
@@ -84,7 +85,7 @@ type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TernaryCallba
 * @param value - strided array element
 * @returns result
 */
-type Unary = ( value: any ) => any;
+type Unary<U, V> = ( value: U ) => V;
 
 /**
 * Interface describing `unaryBy`.
@@ -116,7 +117,7 @@ interface Routine {
 	* unaryBy( [ x, y ], shape, strides, abs, accessor );
 	* // y => [ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 	*/
-	( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, fcn: Unary, clbk: Callback, thisArg?: any ): void; // tslint:disable-line:max-line-length
+	<T = unknown, U = unknown, V = unknown, W = unknown>( arrays: [ Collection<T>, Collection<V> ], shape: Shape1D, strides: Collection<number>, fcn: Unary<U, V>, clbk: Callback<T, U, V, W>, thisArg?: ThisParameterType<Callback<T, U, V, W>> ): void;
 
 	/**
 	* Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns results to a strided output array using alternative indexing semantics.
@@ -146,7 +147,7 @@ interface Routine {
 	* unaryBy.ndarray( x.length, x, 1, 0, y, 1, 0, abs, accessor );
 	* // y => [ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 	*/
-	ndarray( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, offsets: ArrayLike<number>, fcn: Unary, clbk: Callback, thisArg?: any ): void; // tslint:disable-line:max-line-length
+	ndarray<T = unknown, U = unknown, V = unknown, W = unknown>( arrays: [ Collection<T>, Collection<V> ], shape: Shape1D, strides: Collection<number>, offsets: Collection<number>, fcn: Unary<U, V>, clbk: Callback<T, U, V, W>, thisArg?: ThisParameterType<Callback<T, U, V, W>> ): void;
 }
 
 /**
