@@ -20,7 +20,7 @@ limitations under the License.
 
 # unary2dBy
 
-> Apply a unary callback to each element retrieved from a two-dimensional nested input array according to a callback function and assign results to elements in a two-dimensional nested output array.
+> Apply a unary function to each element retrieved from a two-dimensional nested input array according to a callback function and assign results to elements in a two-dimensional nested output array.
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var unary2dBy = require( '@stdlib/array/base/unary2d-by' );
 
 #### unary2dBy( arrays, shape, fcn, clbk\[, thisArg] )
 
-Applies a unary callback to each element retrieved from a two-dimensional nested input array according to a callback function and assigns results to elements in a two-dimensional nested output array.
+Applies a unary function to each element retrieved from a two-dimensional nested input array according to a callback function and assigns results to elements in a two-dimensional nested output array.
 
 ```javascript
 var abs = require( '@stdlib/math/base/special/abs' );
@@ -58,7 +58,9 @@ The function accepts the following arguments:
 
 -   **arrays**: array-like object containing one input nested array and one output nested array.
 -   **shape**: array shape.
--   **fcn**: unary function to apply.
+-   **fcn**: unary function to apply to callback return values
+-   **clbk**: callback function.
+-   **thisArg**: callback function execution context (optional).
 
 The invoked callback function is provided the following arguments:
 

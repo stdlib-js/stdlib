@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/array/base/unary2d-by",
   "version": "0.0.0",
-  "description": "Apply a unary callback to each element retrieved from a two-dimensional nested input array according to a callback function and assign results to elements in a two-dimensional nested output array.",
+  "description": "Apply a unary function to each element retrieved from a two-dimensional nested input array according to a callback function and assign results to elements in a two-dimensional nested output array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
