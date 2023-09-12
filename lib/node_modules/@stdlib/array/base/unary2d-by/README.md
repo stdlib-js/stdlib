@@ -58,7 +58,7 @@ The function accepts the following arguments:
 
 -   **arrays**: array-like object containing one input nested array and one output nested array.
 -   **shape**: array shape.
--   **fcn**: unary function to apply to callback return values
+-   **fcn**: unary function to apply to callback return values.
 -   **clbk**: callback function.
 -   **thisArg**: callback function execution context (optional).
 
