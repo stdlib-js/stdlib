@@ -1,0 +1,28 @@
+
+{{alias}}( str )
+    Parses a string-serialized MultiSlice object.
+
+    The function returns `null` if provided in invalid string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    s: MultiSlice|null
+        MultiSlice instance (or null).
+
+    Examples
+    --------
+    > var s = new {{alias}}( 'MultiSlice(null,null,null)' );
+    > s.data
+    [ null, null, null ]
+    > s = new {{alias}}( 'MultiSlice(10,Slice(0,10,1),null)' );
+    > s.data
+    [ 10, <Slice>, null ]
+
+    See Also
+    --------
+
