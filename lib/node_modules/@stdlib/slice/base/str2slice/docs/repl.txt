@@ -1,0 +1,36 @@
+
+{{alias}}( str )
+    Parses a string-serialized Slice object.
+
+    The function returns `null` if provided in invalid string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    s: Slice|null
+        Slice instance (or null).
+
+    Examples
+    --------
+    > var s = new {{alias}}( 'Slice(1,10,1)' );
+    > s.start
+    1
+    > s.stop
+    10
+    > s.step
+    1
+    > s = new {{alias}}( 'Slice(2,5,2)' );
+    > s.start
+    2
+    > s.stop
+    5
+    > s.step
+    2
+
+    See Also
+    --------
+
