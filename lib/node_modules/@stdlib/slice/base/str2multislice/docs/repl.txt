@@ -2,7 +2,7 @@
 {{alias}}( str )
     Parses a string-serialized MultiSlice object.
 
-    The function returns `null` if provided in invalid string.
+    The function returns `null` if provided an invalid string.
 
     Parameters
     ----------
