@@ -31,6 +31,7 @@ limitations under the License.
 A **FancyArray** is an [`ndarray`][@stdlib/ndarray/ctor] which supports slicing via indexing expressions.
 
 ```javascript
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var FancyArray = require( '@stdlib/ndarray/fancy' );
 
 var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -41,21 +42,21 @@ var x = new FancyArray( 'generic', buffer, [ 6 ], [ 1 ], 0, 'row-major' );
 var y = x[ ':3' ];
 // returns <FancyArray>
 
-var arr = toArray( y );
+var arr = ndarray2array( y );
 // returns [ 1, 2, 3 ]
 
 // Select every other element, starting with the second element:
 y = x[ '1::2' ];
 // returns <FancyArray>
 
-arr = toArray( y );
+arr = ndarray2array( y );
 // returns [ 2, 4, 6 ]
 
 // Reverse the array, starting with last element and skipping every other element:
 y = x[ '::-2' ];
 // returns <FancyArray>
 
-arr = toArray( y );
+arr = ndarray2array( y );
 // returns [ 6, 4, 2 ]
 ```
 
