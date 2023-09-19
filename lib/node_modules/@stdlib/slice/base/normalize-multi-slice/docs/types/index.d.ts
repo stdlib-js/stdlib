@@ -30,7 +30,7 @@ interface ErrorObject {
 	/**
 	* Error code.
 	*/
-	code: 'ERR_OUT_OF_BOUNDS';
+	code: 'ERR_SLICE_OUT_OF_BOUNDS';
 }
 
 /**

@@ -106,12 +106,12 @@ var MultiSlice = require( '@stdlib/slice/multi' );
 
 var s1 = new MultiSlice( new Slice( -20, 20, 1 ) );
 var s2 = normalizeMultiSlice( s1, [ 10 ], true );
-// returns { 'code': 'ERR_OUT_OF_BOUNDS' }
+// returns { 'code': 'ERR_SLICE_OUT_OF_BOUNDS' }
 ```
 
 A returned error object may have one of the following error codes:
 
--   **ERR_OUT_OF_BOUNDS**: a slice exceeds index bounds.
+-   **ERR_SLICE_OUT_OF_BOUNDS**: a slice exceeds index bounds.
 
 </section>
 

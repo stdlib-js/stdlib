@@ -68,12 +68,12 @@ When `strict` is `true`, the function returns an error object if an input slice 
 var Slice = require( '@stdlib/slice/ctor' );
 
 var s = normalizeSlice( new Slice( -20, 20, 1 ), 10, true );
-// returns { 'code': 'ERR_OUT_OF_BOUNDS' }
+// returns { 'code': 'ERR_SLICE_OUT_OF_BOUNDS' }
 ```
 
 A returned error object may have one of the following error codes:
 
--   **ERR_OUT_OF_BOUNDS**: a slice exceeds index bounds.
+-   **ERR_SLICE_OUT_OF_BOUNDS**: a slice exceeds index bounds.
 
 </section>
 

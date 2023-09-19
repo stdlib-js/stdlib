@@ -11,7 +11,7 @@
 
     A returned error object may have one of the following error codes:
 
-    - ERR_OUT_OF_BOUNDS: a slice exceeds index bounds.
+    - ERR_SLICE_OUT_OF_BOUNDS: a slice exceeds index bounds.
 
     Parameters
     ----------
