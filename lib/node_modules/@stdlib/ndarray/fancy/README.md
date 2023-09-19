@@ -644,9 +644,9 @@ The method does **not** serialize data outside of the buffer region defined by t
 
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-* * *
-
 <section class="notes">
+
+* * *
 
 ## Notes
 
