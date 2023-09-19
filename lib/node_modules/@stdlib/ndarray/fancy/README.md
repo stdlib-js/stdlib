@@ -75,7 +75,7 @@ var FancyArray = require( '@stdlib/ndarray/fancy' );
 
 <a name="main"></a>
 
-#### new FancyArray( dtype, buffer, shape, strides, offset, order\[, options] )
+#### FancyArray( dtype, buffer, shape, strides, offset, order\[, options] )
 
 Returns a `FancyArray` instance.
 
