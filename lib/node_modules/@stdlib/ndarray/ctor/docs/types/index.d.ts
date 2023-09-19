@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/array';
 import { ndarray, DataType, Mode, Order, Shape, Strides } from '@stdlib/types/ndarray';
 import { Buffer } from 'buffer';
 
@@ -81,7 +81,7 @@ interface Constructor {
 	*
 	* var out = new ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 	*/
-	new( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: Shape, strides: Strides, offset: number, order: Order, options?: Options ): ndarray; // tslint-disable-line max-line-length
+	new ( dtype: DataType, buffer: Collection | Buffer, shape: Shape, strides: Strides, offset: number, order: Order, options?: Options ): ndarray;
 
 	/**
 	* ndarray constructor.
@@ -116,7 +116,7 @@ interface Constructor {
 	*
 	* var out = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 	*/
-	( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: Shape, strides: Strides, offset: number, order: Order, options?: Options ): ndarray; // tslint-disable-line max-line-length
+	( dtype: DataType, buffer: Collection | Buffer, shape: Shape, strides: Strides, offset: number, order: Order, options?: Options ): ndarray;
 }
 
 /**
