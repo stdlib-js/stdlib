@@ -1426,6 +1426,7 @@
 "@stdlib/nlp/expand-acronyms",expandAcronyms
 "@stdlib/nlp/expand-contractions",expandContractions
 "@stdlib/utils/extname",extname
+"@stdlib/ndarray/fancy",FancyArray
 "@stdlib/math/base/special/fast/abs",fastmath.abs
 "@stdlib/math/base/special/fast/acosh",fastmath.acosh
 "@stdlib/math/base/special/fast/alpha-max-plus-beta-min",fastmath.ampbm

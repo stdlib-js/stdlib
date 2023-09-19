@@ -1426,6 +1426,7 @@ exists
 expandAcronyms
 expandContractions
 extname
+FancyArray
 fastmath.abs
 fastmath.acosh
 fastmath.ampbm
