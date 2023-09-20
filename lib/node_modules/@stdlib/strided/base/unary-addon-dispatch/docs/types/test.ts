@@ -18,7 +18,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 import dispatch = require( './index' );
 
 
@@ -35,7 +35,7 @@ import dispatch = require( './index' );
 * @param y - output array
 * @param strideY - `y` stride length
 */
-function addon( N: number, dtypeX: number, x: Collection, strideX: number, dtypeY: number, y: Collection, strideY: number ): void { // tslint:disable-line:max-line-length
+function addon( N: number, dtypeX: number, x: Collection<number>, strideX: number, dtypeY: number, y: Collection<number>, strideY: number ): void {
 	let i;
 	if ( dtypeX !== dtypeY ) {
 		throw new Error( 'beep' );
@@ -56,7 +56,7 @@ function addon( N: number, dtypeX: number, x: Collection, strideX: number, dtype
 * @param y - output array
 * @param strideY - `y` stride length
 */
-function fallback( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number ): void { // tslint:disable-line:max-line-length
+function fallback( N: number, dtypeX: any, x: Collection<number>, strideX: number, dtypeY: any, y: Collection<number>, strideY: number ): void {
 	let i;
 	if ( dtypeX !== dtypeY ) {
 		throw new Error( 'beep' );
@@ -79,7 +79,7 @@ function fallback( N: number, dtypeX: any, x: Collection, strideX: number, dtype
 * @param strideY - `y` stride length
 * @param offsetY - starting `y` index
 */
-function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number ): void { // tslint:disable-line:max-line-length
+function fallbackWithOffsets( N: number, dtypeX: any, x: Collection<number>, strideX: number, offsetX: number, dtypeY: any, y: Collection<number>, strideY: number, offsetY: number ): void {
 	let i;
 	if ( dtypeX !== dtypeY ) {
 		throw new Error( 'beep' );
@@ -94,7 +94,7 @@ function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: nu
 
 // The function returns a dispatch function...
 {
-	dispatch( addon, fallback ); // $ExpectType Dispatcher
+	dispatch( addon, fallback ); // $ExpectType Dispatcher<number, number>
 }
 
 // The compiler throws an error if not provided a first argument which is an add-on function...
@@ -130,7 +130,7 @@ function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: nu
 
 	const f = dispatch( addon, fallback );
 
-	f( x.length, 'float64', x, 1, 'float64', y, 1 ); // $ExpectType Collection
+	f( x.length, 'float64', x, 1, 'float64', y, 1 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the returned function is not provided a first argument which is a number...
@@ -214,7 +214,7 @@ function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: nu
 
 // Attached to the main export is an `ndarray` method which returns a dispatch function...
 {
-	dispatch.ndarray( addon, fallbackWithOffsets ); // $ExpectType DispatcherWithOffsets
+	dispatch.ndarray( addon, fallbackWithOffsets ); // $ExpectType DispatcherWithOffsets<number, number>
 }
 
 // The compiler throws an error if the `ndarray` method is not provided a first argument which is an add-on function...
@@ -250,7 +250,7 @@ function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: nu
 
 	const f = dispatch.ndarray( addon, fallbackWithOffsets );
 
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectType Collection
+	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the returned function is not provided a first argument which is a number...
