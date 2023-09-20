@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Add-on function.
@@ -35,7 +35,7 @@ import { Collection } from '@stdlib/types/object';
 *     // Call into native add-on...
 * }
 */
-type AddonFcn = ( N: number, dtypeX: number, x: Collection, strideX: number ) => any; // tslint:disable-line:max-line-length
+type AddonFcn<T, U> = ( N: number, dtypeX: number, x: Collection<T>, strideX: number ) => U;
 
 /**
 * Fallback function.
@@ -50,7 +50,7 @@ type AddonFcn = ( N: number, dtypeX: number, x: Collection, strideX: number ) =>
 *     // Fallback JavaScript implementation...
 * }
 */
-type FallbackFcn = ( N: number, dtypeX: any, x: Collection, strideX: number ) => any; // tslint:disable-line:max-line-length
+type FallbackFcn<T, U> = ( N: number, dtypeX: any, x: Collection<T>, strideX: number ) => U;
 
 /**
 * Fallback function supporting alternative indexing semantics.
@@ -66,7 +66,7 @@ type FallbackFcn = ( N: number, dtypeX: any, x: Collection, strideX: number ) =>
 *     // Fallback JavaScript implementation...
 * }
 */
-type FallbackFcnWithOffsets = ( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number ) => any; // tslint:disable-line:max-line-length
+type FallbackFcnWithOffsets<T, U> = ( N: number, dtypeX: any, x: Collection<T>, strideX: number, offsetX: number ) => U;
 
 /**
 * Dispatches to a native add-on.
@@ -77,7 +77,7 @@ type FallbackFcnWithOffsets = ( N: number, dtypeX: any, x: Collection, strideX: 
 * @param strideX - `x` stride length
 * @returns `x`
 */
-type Dispatcher = ( N: number, dtypeX: any, x: Collection, strideX: number ) => Collection; // tslint:disable-line:max-line-length
+type Dispatcher<T> = ( N: number, dtypeX: any, x: Collection<T>, strideX: number ) => Collection<T>;
 
 /**
 * Dispatches to a native add-on.
@@ -89,7 +89,7 @@ type Dispatcher = ( N: number, dtypeX: any, x: Collection, strideX: number ) => 
 * @param offsetX - starting `x` index
 * @returns `x`
 */
-type DispatcherWithOffsets = ( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number ) => Collection; // tslint:disable-line:max-line-length
+type DispatcherWithOffsets<T> = ( N: number, dtypeX: any, x: Collection<T>, strideX: number, offsetX: number ) => Collection<T>;
 
 /**
 * Interface for creating a native add-on dispatcher.
@@ -119,7 +119,7 @@ interface Dispatch {
 	* // Invoke the dispatch function with strided array arguments:
 	* f( 2, 'generic', [ 1, 2 ], 1 );
 	*/
-	( addon: AddonFcn, fallback: FallbackFcn ): Dispatcher;
+	<T = unknown, U = unknown>( addon: AddonFcn<T, U>, fallback: FallbackFcn<T, U> ): Dispatcher<T>;
 
 	/**
 	* Returns a function which dispatches to a native add-on applying a nullary function using alternative indexing semantics.
@@ -145,7 +145,7 @@ interface Dispatch {
 	* // Invoke the dispatch function with strided array arguments:
 	* f( 2, 'generic', [ 1, 2 ], 1, 0 );
 	*/
-	ndarray( addon: AddonFcn, fallback: FallbackFcnWithOffsets ): DispatcherWithOffsets; // tslint:disable-line:max-line-length
+	ndarray<T = unknown, U = unknown>( addon: AddonFcn<T, U>, fallback: FallbackFcnWithOffsets<T, U> ): DispatcherWithOffsets<T>;
 }
 
 /**
