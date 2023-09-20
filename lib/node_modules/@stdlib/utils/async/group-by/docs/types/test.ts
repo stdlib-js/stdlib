@@ -117,8 +117,12 @@ const done = ( error: Error | null, result: any ) => {
 
 // Attached to main export is a `factory` method which returns a function...
 {
-	groupByAsync.factory( indicator ); // $ExpectType FactoryFunction
-	groupByAsync.factory( { 'series': true }, indicator ); // $ExpectType FactoryFunction
+	groupByAsync.factory( indicator ); // $ExpectType ValuesFactoryFunction<number>
+	groupByAsync.factory( { 'series': true }, indicator ); // $ExpectType ValuesFactoryFunction<number>
+
+	groupByAsync.factory( { 'returns': 'values' }, indicator ); // $ExpectType ValuesFactoryFunction<number>
+	groupByAsync.factory( { 'returns': 'indices' }, indicator ); // $ExpectType IndicesFactoryFunction<number>
+	groupByAsync.factory( { 'returns': '*' }, indicator ); // $ExpectType IndicesAndValuesFactoryFunction<number>
 }
 
 // The compiler throws an error if the `factory` method is provided an options argument which is not an object...
