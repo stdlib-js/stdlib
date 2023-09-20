@@ -101,7 +101,7 @@ function identity( ...values: Array<any> ): Array<any> {
 * @param clbk - callback
 * @param thisArg - callback execution context
 */
-function strided( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, fcn: ( x: any ) => any, clbk: ( ...args: Array<any> ) => any, thisArg?: any ): void { // tslint:disable-line:max-line-length
+function strided( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, fcn: ( x: any ) => any, clbk: ( ...args: Array<any> ) => any, thisArg?: any ): void {
 	let sx;
 	let sy;
 	let ix;
@@ -140,7 +140,7 @@ function strided( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: 
 * @param clbk - callback
 * @param thisArg - callback execution context
 */
-function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, offsets: Array<number>, fcn: ( x: any ) => any, clbk: ( ...args: Array<any> ) => any, thisArg?: any ): void { // tslint:disable-line:max-line-length
+function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, offsets: Array<number>, fcn: ( x: any ) => any, clbk: ( ...args: Array<any> ) => any, thisArg?: any ): void {
 	let sx;
 	let sy;
 	let ix;
