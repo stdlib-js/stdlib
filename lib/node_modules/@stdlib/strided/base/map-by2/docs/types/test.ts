@@ -23,7 +23,7 @@ import mapBy2 = require( './index' );
 *
 * @returns accessed values
 */
-function accessor( values: Array<number> ): Array<number> {
+function accessor( values: [ number, number ] ): [ number, number ] {
 	return values;
 }
 
@@ -47,8 +47,8 @@ function binary( x: number, y: number ): number {
 	const y = new Float64Array( 10 );
 	const z = new Float64Array( 10 );
 
-	mapBy2( x.length, x, 1, y, 1, z, 1, binary, accessor ); // $ExpectType Collection
-	mapBy2( x.length, x, 1, y, 1, z, 1, binary, accessor, {} ); // $ExpectType Collection
+	mapBy2( x.length, x, 1, y, 1, z, 1, binary, accessor ); // $ExpectType Collection<number>
+	mapBy2( x.length, x, 1, y, 1, z, 1, binary, accessor, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -211,8 +211,8 @@ function binary( x: number, y: number ): number {
 	const y = new Float64Array( 10 );
 	const z = new Float64Array( 10 );
 
-	mapBy2.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, binary, accessor ); // $ExpectType Collection
-	mapBy2.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, binary, accessor, {} ); // $ExpectType Collection
+	mapBy2.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, binary, accessor ); // $ExpectType Collection<number>
+	mapBy2.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, binary, accessor, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
