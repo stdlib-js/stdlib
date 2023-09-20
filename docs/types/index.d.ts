@@ -47,6 +47,7 @@ import proxy = require( '@stdlib/proxy' );
 import random = require( '@stdlib/random' );
 import regexp = require( '@stdlib/regexp' );
 import simulate = require( '@stdlib/simulate' );
+import slice = require( '@stdlib/slice' );
 import stats = require( '@stdlib/stats' );
 import streams = require( '@stdlib/streams' );
 import strided = require( '@stdlib/strided' );
@@ -192,6 +193,11 @@ interface Namespace {
 	* Standard library simulation utilities.
 	*/
 	simulate: typeof simulate;
+
+	/**
+	* Standard library slice utilities.
+	*/
+	slice: typeof slice;
 
 	/**
 	* Standard library statistical functions.

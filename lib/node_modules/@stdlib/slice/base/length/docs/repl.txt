@@ -1,0 +1,23 @@
+
+{{alias}}( slice )
+    Returns the number of elements in a normalized slice.
+
+    Parameters
+    ----------
+    slice: Slice
+        Input normalized slice object.
+
+    Returns
+    -------
+    len: integer
+        Number of elements.
+
+    Examples
+    --------
+    > var s = new {{alias:@stdlib/slice/ctor}}( 1, 10, 1 );
+    > {{alias}}( s )
+    9
+
+    See Also
+    --------
+

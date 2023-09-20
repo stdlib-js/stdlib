@@ -40,7 +40,7 @@ limitations under the License.
 var filled3dBy = require( '@stdlib/array/base/filled3d-by' );
 ```
 
-#### filled3dBy( len, clbk\[, thisArg] )
+#### filled3dBy( shape, clbk\[, thisArg] )
 
 Returns a filled three-dimensional nested array according to a provided callback function.
 

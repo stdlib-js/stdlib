@@ -233,7 +233,7 @@
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "to-vfile": "^6.0.0",
     "typedoc": "^0.16.11",
-    "uglify-es": "^3.1.1",
+    "uglify-js": "^3.17.4",
     "uglifyify": "^5.0.0",
     "unified-lint-rule": "^1.0.1",
     "unist-util-visit": "^2.0.0",

@@ -1,0 +1,30 @@
+
+{{alias}}( arrays, shapes, fcn )
+    Applies a binary callback to elements in two broadcasted input arrays and
+    assigns results to elements in a five-dimensional nested output array.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject
+        Array-like object containing two input nested arrays and one output
+        nested array.
+
+    shapes: Array<Array<integer>>
+        Array shapes.
+
+    fcn: Function
+        Binary callback.
+
+    Examples
+    --------
+    > var x = [ 1.0, 2.0 ];
+    > var y = [ [ 3.0 ], [ 4.0 ] ];
+    > var z = [ [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ] ];
+    > var shapes = [ [ 2 ], [ 2, 1 ], [ 1, 1, 1, 2, 2 ] ];
+    > {{alias}}( [ x, y, z ], shapes, {{alias:@stdlib/math/base/ops/add}} );
+    > z
+    [ [ [ [ [ 4.0, 5.0 ], [ 5.0, 6.0 ] ] ] ] ]
+
+    See Also
+    --------
+

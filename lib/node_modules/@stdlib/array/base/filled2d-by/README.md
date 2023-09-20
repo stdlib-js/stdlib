@@ -40,7 +40,7 @@ limitations under the License.
 var filled2dBy = require( '@stdlib/array/base/filled2d-by' );
 ```
 
-#### filled2dBy( len, clbk\[, thisArg] )
+#### filled2dBy( shape, clbk\[, thisArg] )
 
 Returns a filled two-dimensional nested array according to a provided callback function.
 
