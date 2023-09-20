@@ -90,8 +90,8 @@ const done = ( error: Error | null, acc: any ) => {
 
 // Attached to main export is a `factory` method which returns a function...
 {
-	reduceAsync.factory( reducer ); // $ExpectType FactoryFunction
-	reduceAsync.factory( { 'series': true }, reducer ); // $ExpectType FactoryFunction
+	reduceAsync.factory( reducer ); // $ExpectType FactoryFunction<number, any>
+	reduceAsync.factory( { 'series': true }, reducer ); // $ExpectType FactoryFunction<number, any>
 }
 
 // The compiler throws an error if the `factory` method is provided an options argument which is not an object...

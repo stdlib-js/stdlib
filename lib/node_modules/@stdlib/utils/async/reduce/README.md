@@ -42,7 +42,7 @@ var reduceAsync = require( '@stdlib/utils/async/reduce' );
 
 #### reduceAsync( collection, initial, \[options,] reducer, done )
 
-Applies a `function` against an accumulator and each element in a `collection` and returns the accumulated result.
+Applies a function against an accumulator and each element in a `collection` and returns the accumulated result.
 
 ```javascript
 function reducer( acc, value, index, next ) {
@@ -102,9 +102,9 @@ reduceAsync( arr, acc, reducer, done );
 
 The function accepts the following `options`:
 
--   `limit`: the maximum number of pending invocations at any one time. If provided, the function sets `options.series=false`. Default: `infinity`.
--   `series`: `boolean` indicating whether to sequentially invoke `reducer` for each `collection` element. If `true`, the function sets `options.limit=1`. Default: `true`.
--   `thisArg`: the execution context for `reducer`.
+-   **limit**: the maximum number of pending invocations at any one time. If provided, the function sets `options.series=false`. Default: `infinity`.
+-   **series**: boolean indicating whether to sequentially invoke `reducer` for each `collection` element. If `true`, the function sets `options.limit=1`. Default: `true`.
+-   **thisArg**: the execution context for `reducer`.
 
 By default, all elements are processed **sequentially**, which means that the function **does** guarantee completion order. To process each `collection` element concurrently, set the `series` option to `false`.
 
@@ -224,11 +224,11 @@ function done( error, acc ) {
 
 When invoked, `reducer` is provided a maximum of five arguments:
 
--   `accumulator`: accumulated value.
--   `value`: collection value.
--   `index`: collection index.
--   `collection`: the input `collection`.
--   `next`: a callback which should be called once `reducer` has finished processing a collection `value`.
+-   **accumulator**: accumulated value.
+-   **value**: collection value.
+-   **index**: collection index.
+-   **collection**: the input `collection`.
+-   **next**: a callback which should be called once `reducer` has finished processing a collection `value`.
 
 The actual number of provided arguments depends on function `length`. If `reducer` accepts three arguments, `reducer` is provided `accumulator`, `value` and `next`. If `reducer` accepts four arguments, `reducer` is provided `accumulator`, `value`, `index`, and `next`. For every other `reducer` signature, `reducer` is provided all five arguments.
 
@@ -270,7 +270,7 @@ reduceAsync( arr, acc, reducer, done );
 
 #### reduceAsync.factory( \[options,] reducer )
 
-Returns a `function` which invokes a function once for each element in a `collection`.
+Returns a function which invokes a function once for each element in a `collection`.
 
 ```javascript
 function reducer( acc, value, index, next ) {
