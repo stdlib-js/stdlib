@@ -43,7 +43,6 @@ import removeLast = require( './index' );
 	removeLast( 'abc', true ); // $ExpectError
 	removeLast( 'abc', false ); // $ExpectError
 	removeLast( 'abc', null ); // $ExpectError
-	removeLast( 'abc', undefined ); // $ExpectError
 	removeLast( 'abc', 'abc' ); // $ExpectError
 	removeLast( 'abc', [] ); // $ExpectError
 	removeLast( 'abc', {} ); // $ExpectError
