@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Dispatch
+# dispatchBy
 
 > Create an [ndarray][@stdlib/ndarray/ctor] function interface which performs multiple dispatch.
 
@@ -33,78 +33,17 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var dispatch = require( '@stdlib/ndarray/dispatch' );
+var dispatchBy = require( '@stdlib/ndarray/dispatch-by' );
 ```
 
-#### dispatch( fcns, types, data, nargs, nin, nout )
+#### dispatchBy( fcns, types, data, nargs, nin, nout )
 
 Returns an [ndarray][@stdlib/ndarray/ctor] function interface which performs multiple dispatch.
 
 <!-- eslint-disable array-element-newline -->
 
 ```javascript
-var unary = require( '@stdlib/ndarray/base/unary' );
-var Float64Array = require( '@stdlib/array/float64' );
-var Float32Array = require( '@stdlib/array/float32' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
-
-function foo( x ) {
-    return x * 10.0;
-}
-
-function bar( x ) {
-    return x * 5.0;
-}
-
-// Define a list of ndarray functions for applying a unary callback:
-var fcns = [
-    unary,
-    unary
-];
-
-// Define a one-dimensional list of input and output array types:
-var types = [
-    'float64', 'float64', // input, output
-    'float32', 'float32'  // input, output
-];
-
-// Define a list of callbacks which should be applied based on the provided array types:
-var data = [
-    foo,
-    bar
-];
-
-// Define the total number of input arguments:
-var nargs = 2; // input_array + output_array
-
-// Define the number of input ndarrays:
-var nin = 1;
-
-// Define the number of output ndarrays:
-var nout = 1;
-
-// Create an ndarray function interface:
-var fcn = dispatch( fcns, types, data, nargs, nin, nout );
-
-// ...
-
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0 ] );
-var ybuf = new Float64Array( xbuf.length );
-
-var x = ndarray( 'float64', xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
-var y = ndarray( 'float64', ybuf, [ 3 ], [ 1 ], 0, 'row-major' );
-
-fcn( x, y );
-// ybuf => <Float64Array>[ 10.0, 20.0, 30.0 ]
-
-xbuf = new Float32Array( [ 1.0, 2.0, 3.0 ] );
-ybuf = new Float32Array( xbuf.length );
-
-x = ndarray( 'float32', xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
-y = ndarray( 'float32', ybuf, [ 3 ], [ 1 ], 0, 'row-major' );
-
-fcn( x, y );
-// ybuf => <Float32Array>[ 5.0, 10.0, 15.0 ]
+console.log( 'TODO' );
 ```
 
 The function accepts the following arguments:
@@ -154,7 +93,7 @@ The function accepts the following arguments:
     <!-- eslint-disable array-element-newline -->
 
     ```javascript
-    var unary = require( '@stdlib/ndarray/base/unary' );
+    var unary = require( '@stdlib/ndarray/base/unary-by' );
 
     function foo( x ) {
         return x * 10.0;
@@ -177,7 +116,7 @@ The function accepts the following arguments:
         bar
     ];
 
-    var fcn = dispatch( fcns, types, data, 2, 1, 1 );
+    var fcn = dispatchBy( fcns, types, data, 2, 1, 1 );
     ```
 
     is equivalent to
@@ -185,7 +124,7 @@ The function accepts the following arguments:
     <!-- eslint-disable array-element-newline -->
 
     ```javascript
-    var unary = require( '@stdlib/ndarray/base/unary' );
+    var unary = require( '@stdlib/ndarray/base/unary-by' );
 
     function foo( x ) {
         return x * 10.0;
@@ -204,7 +143,7 @@ The function accepts the following arguments:
         bar
     ];
 
-    var fcn = dispatch( unary, types, data, 2, 1, 1 );
+    var fcn = dispatchBy( unary, types, data, 2, 1, 1 );
     ```
 
 </section>
@@ -218,29 +157,7 @@ The function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var unary = require( '@stdlib/ndarray/base/unary' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
-var abs = require( '@stdlib/math/base/special/abs' );
-var Float64Array = require( '@stdlib/array/float64' );
-var dispatch = require( '@stdlib/ndarray/dispatch' );
-
-var types = [ 'float64', 'float64' ];
-
-var data = [
-    abs
-];
-
-var absolute = dispatch( unary, types, data, 2, 1, 1 );
-
-var xbuf = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
-var ybuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-
-var x = ndarray( 'float64', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-var y = ndarray( 'float64', ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
-
-absolute( x, y );
-console.log( ybuf );
-// => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
+console.log( 'TODO' );
 ```
 
 </section>
