@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/string/base/first-grapheme-cluster",
+  "name": "@stdlib/string/base/remove-first-grapheme-cluster",
   "version": "0.0.0",
   "description": "Remove the first grapheme cluster (i.e., user-perceived character) of a string.",
   "license": "Apache-2.0",

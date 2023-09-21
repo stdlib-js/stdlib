@@ -61,8 +61,7 @@ The applied function is provided the following arguments:
 
 -   **accumulator**: accumulated value.
 -   **value**: array element.
--   **i**: index of the first dimension.
--   **j**: index of the second dimension.
+-   **indices**: current array element indices.
 -   **arr**: input array.
 
 To set the `this` context when invoking the input function, provide a `thisArg`.

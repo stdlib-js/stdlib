@@ -9,8 +9,7 @@
 
     - accumulator: accumulated value.
     - value: array element.
-    - i: index of the first dimension.
-    - j: index of the second dimension.
+    - indices: current array element indices.
     - arr: input array.
 
     Parameters

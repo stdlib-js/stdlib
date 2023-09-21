@@ -22,42 +22,31 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
-import { Collection } from '@stdlib/types/object';
+import { ArrayLike, Collection } from '@stdlib/types/array';
 
 /**
 * Returns the accessed value.
 *
 * @returns accessed value
 */
-type NullaryCallback = () => any;
-
-/**
-* Returns the accessed value.
-*
-* @param values - array element value
-* @returns accessed value
-*/
-type UnaryCallback = ( values: any ) => any;
+type NullaryCallback<T> = ( this: T ) => any;
 
 /**
 * Returns the accessed value.
 *
 * @param values - array element value
-* @param idx - iteration index
 * @returns accessed value
 */
-type BinaryCallback = ( values: any, idx: number ) => any;
+type UnaryCallback<T> = ( this: T, values: any ) => any;
 
 /**
 * Returns the accessed value.
 *
 * @param values - array element value
 * @param idx - iteration index
-* @param indices - strided indices (offset + idx*stride)
 * @returns accessed value
 */
-type TernaryCallback = ( values: any, idx: number, indices: Array<number> ) => any; // tslint-disable-line max-line-length
+type BinaryCallback<T> = ( this: T, values: any, idx: number ) => any;
 
 /**
 * Returns the accessed value.
@@ -65,10 +54,9 @@ type TernaryCallback = ( values: any, idx: number, indices: Array<number> ) => a
 * @param values - array element value
 * @param idx - iteration index
 * @param indices - strided indices (offset + idx*stride)
-* @param arrays - input and output arrays
 * @returns accessed value
 */
-type QuaternaryCallback = ( values: any, idx: number, indices: Array<number>, arrays: Array<Collection> ) => any; // tslint-disable-line max-line-length
+type TernaryCallback<T> = ( this: T, values: any, idx: number, indices: Array<number> ) => any;
 
 /**
 * Returns the accessed value.
@@ -79,7 +67,18 @@ type QuaternaryCallback = ( values: any, idx: number, indices: Array<number>, ar
 * @param arrays - input and output arrays
 * @returns accessed value
 */
-type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TernaryCallback | QuaternaryCallback; // tslint-disable-line max-line-length
+type QuaternaryCallback<T> = ( this: T, values: any, idx: number, indices: Array<number>, arrays: Array<Collection> ) => any;
+
+/**
+* Returns the accessed value.
+*
+* @param values - array element value
+* @param idx - iteration index
+* @param indices - strided indices (offset + idx*stride)
+* @param arrays - input and output arrays
+* @returns accessed value
+*/
+type Callback<T> = NullaryCallback<T> | UnaryCallback<T> | BinaryCallback<T> | TernaryCallback<T> | QuaternaryCallback<T>;
 
 /**
 * Strided array function.
@@ -130,7 +129,7 @@ type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TernaryCallba
 *     }
 * }
 */
-type StridedArrayFcnNoData = ( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, clbk: Callback, thisArg?: any ) => void; // tslint:disable-line:max-line-length
+type StridedArrayFcnNoData<T> = ( arrays: Array<Collection>, shape: Array<number>, strides: Array<number>, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ) => void;
 
 /**
 * Strided array function.
@@ -182,7 +181,7 @@ type StridedArrayFcnNoData = ( arrays: Array<ArrayLike<any>>, shape: Array<numbe
 *     }
 * }
 */
-type StridedArrayFcnWithData = ( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, data: any, clbk: Callback, thisArg?: any ) => void; // tslint:disable-line:max-line-length
+type StridedArrayFcnWithData<T> = ( arrays: Array<Collection>, shape: Array<number>, strides: Array<number>, data: any, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ) => void;
 
 /**
 * Strided array function.
@@ -194,7 +193,7 @@ type StridedArrayFcnWithData = ( arrays: Array<ArrayLike<any>>, shape: Array<num
 * @param clbk - callback function
 * @param thisArg - execution context
 */
-type StridedArrayFcn = StridedArrayFcnNoData | StridedArrayFcnWithData;
+type StridedArrayFcn<T> = StridedArrayFcnNoData<T> | StridedArrayFcnWithData<T>;
 
 /**
 * Strided array function using alternative indexing semantics.
@@ -238,7 +237,7 @@ type StridedArrayFcn = StridedArrayFcnNoData | StridedArrayFcnWithData;
 *     }
 * }
 */
-type StridedArrayFcnWithOffsetsNoData = ( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, offsets: Array<number>, clbk: Callback, thisArg?: any ) => void; // tslint:disable-line:max-line-length
+type StridedArrayFcnWithOffsetsNoData<T> = ( arrays: Array<Collection>, shape: Array<number>, strides: Array<number>, offsets: Array<number>, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ) => void;
 
 /**
 * Strided array function using alternative indexing semantics.
@@ -283,7 +282,7 @@ type StridedArrayFcnWithOffsetsNoData = ( arrays: Array<ArrayLike<any>>, shape: 
 *     }
 * }
 */
-type StridedArrayFcnWithOffsetsData = ( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, offsets: Array<number>, data: any, clbk: Callback, thisArg?: any ) => void; // tslint:disable-line:max-line-length
+type StridedArrayFcnWithOffsetsData<T> = ( arrays: Array<Collection>, shape: Array<number>, strides: Array<number>, offsets: Array<number>, data: any, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ) => void;
 
 /**
 * Strided array function.
@@ -296,7 +295,7 @@ type StridedArrayFcnWithOffsetsData = ( arrays: Array<ArrayLike<any>>, shape: Ar
 * @param clbk - callback function
 * @param thisArg - execution context
 */
-type StridedArrayFcnWithOffsets = StridedArrayFcnWithOffsetsNoData | StridedArrayFcnWithOffsetsData; // tslint:disable-line:max-line-length
+type StridedArrayFcnWithOffsets<T> = StridedArrayFcnWithOffsetsNoData<T> | StridedArrayFcnWithOffsetsData<T>;
 
 /**
 * Interface describing a strided array function dispatcher.
@@ -342,7 +341,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, noop );
 	* // x => <Float64Array>[ 3.14, 3.14, 3.14, 3.14, 3.14 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, clbk: Callback, thisArg?: any ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data type(s) using alternative indexing semantics.
@@ -387,7 +386,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, noop );
 	* // x => <Float64Array>[ 3.14, 3.14, 3.14, 3.14, 3.14 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, clbk: Callback, thisArg?: any ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void; // tslint:disable-line:unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -430,7 +429,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, identity );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, clbk: Callback, thisArg?: any ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -477,7 +476,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, identity );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, clbk: Callback, thisArg?: any ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -530,7 +529,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, identity );
 	* // z => <Float64Array>[ 2.0, 4.0, 6.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, clbk: Callback, thisArg?: any ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number, dtypeZ: any, z: Collection, strideZ: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -588,7 +587,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, identity );
 	* // z => <Float64Array>[ 2.0, 4.0, 6.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number, clbk: Callback, thisArg?: any ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number, dtypeZ: any, z: Collection, strideZ: number, offsetZ: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -645,7 +644,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, identity );
 	* // w => <Float64Array>[ 3.0, 6.0, 9.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, clbk: Callback, thisArg?: any ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number, dtypeZ: any, z: Collection, strideZ: number, dtypeW: any, w: Collection, strideW: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -708,7 +707,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, identity );
 	* // w => <Float64Array>[ 3.0, 6.0, 9.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, offsetW: number, clbk: Callback, thisArg?: any ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number, dtypeZ: any, z: Collection, strideZ: number, offsetZ: number, dtypeW: any, w: Collection, strideW: number, offsetW: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -770,7 +769,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1, 'float64', v, 1, identity );
 	* // v => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, dtypeU: any, u: ArrayLike<any>, strideU: number, clbk: Callback, thisArg?: any ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number, dtypeZ: any, z: Collection, strideZ: number, dtypeW: any, w: Collection, strideW: number, dtypeU: any, u: Collection, strideU: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void; // tslint:disable-line:unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -835,7 +834,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0, 'float64', v, 1, 0, identity );
 	* // v => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, offsetW: number, dtypeU: any, u: ArrayLike<any>, strideU: number, offsetU: number, clbk: Callback, thisArg?: any ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number, dtypeZ: any, z: Collection, strideZ: number, offsetZ: number, dtypeW: any, w: Collection, strideW: number, offsetW: number, dtypeU: any, u: Collection, strideU: number, offsetU: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void; // tslint:disable-line:unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -896,7 +895,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1, 'float64', v, 1, identity );
 	* // v => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, dtypeU: any, u: ArrayLike<any>, strideU: number, ...args: Array<any> ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number, dtypeZ: any, z: Collection, strideZ: number, dtypeW: any, w: Collection, strideW: number, dtypeU: any, u: Collection, strideU: number, ...args: Array<any> ): ArrayLike<any> | void; // tslint:disable-line:unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -962,7 +961,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0, 'float64', v, 1, 0, identity );
 	* // v => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, offsetW: number, dtypeU: any, u: ArrayLike<any>, strideU: number, offsetU: number, ...args: Array<any> ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number, dtypeZ: any, z: Collection, strideZ: number, offsetZ: number, dtypeW: any, w: Collection, strideW: number, offsetW: number, dtypeU: any, u: Collection, strideU: number, offsetU: number, ...args: Array<any> ): ArrayLike<any> | void; // tslint:disable-line:unified-signatures
 }
 
 /**
@@ -1010,7 +1009,7 @@ interface Dispatcher {
 * strided( x.length, 'float64', x, 1, 'float64', y, 1, identity );
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function dispatchBy( fcns: StridedArrayFcn | ArrayLike<StridedArrayFcn>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:max-line-length
+declare function dispatchBy<T = unknown>( fcns: StridedArrayFcn<T> | ArrayLike<StridedArrayFcn<T>>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher;
 
 /**
 * Returns a strided array function interface which accepts a callback function and performs multiple dispatch while supporting alternative indexing semantics.
@@ -1057,7 +1056,7 @@ declare function dispatchBy( fcns: StridedArrayFcn | ArrayLike<StridedArrayFcn>,
 * strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, identity );
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function dispatchBy( fcns: StridedArrayFcnWithOffsets | ArrayLike<StridedArrayFcnWithOffsets>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:max-line-length unified-signatures
+declare function dispatchBy<T = unknown>( fcns: StridedArrayFcnWithOffsets<T> | ArrayLike<StridedArrayFcnWithOffsets<T>>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:unified-signatures
 
 
 // EXPORTS //

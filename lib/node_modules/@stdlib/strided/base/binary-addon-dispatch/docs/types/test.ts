@@ -18,7 +18,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 import dispatch = require( './index' );
 
 
@@ -38,13 +38,13 @@ import dispatch = require( './index' );
 * @param z - output array
 * @param strideZ - `z` stride length
 */
-function addon( N: number, dtypeX: number, x: Collection, strideX: number, dtypeY: number, y: Collection, strideY: number, dtypeZ: number, z: Collection, strideZ: number ): void { // tslint:disable-line:max-line-length
+function addon( N: number, dtypeX: number, x: Collection<number>, strideX: number, dtypeY: number, y: Collection<number>, strideY: number, dtypeZ: number, z: Collection<number>, strideZ: number ): void {
 	let i;
 	if ( dtypeX !== dtypeY || dtypeY !== dtypeZ ) {
 		throw new Error( 'beep' );
 	}
 	for ( i = 0; i < N; i += 1 ) {
-		z[ i * strideZ ] = x[ i * strideX ] + y[ i * strideY ]; // tslint:disable-line:restrict-plus-operands no-unsafe-any
+		z[ i * strideZ ] = x[ i * strideX ] + y[ i * strideY ];
 	}
 }
 
@@ -62,13 +62,13 @@ function addon( N: number, dtypeX: number, x: Collection, strideX: number, dtype
 * @param z - output array
 * @param strideZ - `z` stride length
 */
-function fallback( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number, dtypeZ: number, z: Collection, strideZ: number ): void { // tslint:disable-line:max-line-length
+function fallback( N: number, dtypeX: any, x: Collection<number>, strideX: number, dtypeY: any, y: Collection<number>, strideY: number, dtypeZ: number, z: Collection<number>, strideZ: number ): void {
 	let i;
 	if ( dtypeX !== dtypeY || dtypeY !== dtypeZ ) {
 		throw new Error( 'beep' );
 	}
 	for ( i = 0; i < N; i += 1 ) {
-		z[ i * strideZ ] = x[ i * strideX ] + y[ i * strideY ]; // tslint:disable-line:restrict-plus-operands no-unsafe-any
+		z[ i * strideZ ] = x[ i * strideX ] + y[ i * strideY ];
 	}
 }
 
@@ -89,13 +89,13 @@ function fallback( N: number, dtypeX: any, x: Collection, strideX: number, dtype
 * @param strideZ - `z` stride length
 * @param offsetZ - starting `z` index
 */
-function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number, dtypeZ: any, z: Collection, strideZ: number, offsetZ: number ): void { // tslint:disable-line:max-line-length
+function fallbackWithOffsets( N: number, dtypeX: any, x: Collection<number>, strideX: number, offsetX: number, dtypeY: any, y: Collection<number>, strideY: number, offsetY: number, dtypeZ: any, z: Collection<number>, strideZ: number, offsetZ: number ): void {
 	let i;
 	if ( dtypeX !== dtypeY || dtypeY !== dtypeZ ) {
 		throw new Error( 'beep' );
 	}
 	for ( i = 0; i < N; i += 1 ) {
-		z[ offsetZ + ( i * strideZ ) ] = x[ offsetX + ( i * strideX ) ] + y[ offsetY + ( i * strideY ) ]; // tslint:disable-line:max-line-length restrict-plus-operands no-unsafe-any
+		z[ offsetZ + ( i * strideZ ) ] = x[ offsetX + ( i * strideX ) ] + y[ offsetY + ( i * strideY ) ];
 	}
 }
 
@@ -104,7 +104,7 @@ function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: nu
 
 // The function returns a dispatch function...
 {
-	dispatch( addon, fallback ); // $ExpectType Dispatcher
+	dispatch( addon, fallback ); // $ExpectType Dispatcher<number, number, number>
 }
 
 // The compiler throws an error if not provided a first argument which is an add-on function...
@@ -141,7 +141,7 @@ function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: nu
 
 	const f = dispatch( addon, fallback );
 
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectType Collection
+	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the returned function is not provided a first argument which is a number...
@@ -263,7 +263,7 @@ function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: nu
 
 // Attached to the main export is an `ndarray` method which returns a dispatch function...
 {
-	dispatch.ndarray( addon, fallbackWithOffsets ); // $ExpectType DispatcherWithOffsets
+	dispatch.ndarray( addon, fallbackWithOffsets ); // $ExpectType DispatcherWithOffsets<number, number, number>
 }
 
 // The compiler throws an error if the `ndarray` method is not provided a first argument which is an add-on function...
@@ -300,7 +300,7 @@ function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: nu
 
 	const f = dispatch.ndarray( addon, fallbackWithOffsets );
 
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectType Collection
+	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the returned function is not provided a first argument which is a number...

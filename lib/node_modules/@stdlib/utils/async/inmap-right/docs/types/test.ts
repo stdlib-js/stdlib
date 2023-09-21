@@ -76,8 +76,8 @@ const done = ( error: Error | null ) => {
 
 // Attached to main export is a `factory` method which returns a function...
 {
-	inmapRightAsync.factory( fcn ); // $ExpectType FactoryFunction
-	inmapRightAsync.factory( { 'series': true }, fcn ); // $ExpectType FactoryFunction
+	inmapRightAsync.factory( fcn ); // $ExpectType FactoryFunction<number, unknown>
+	inmapRightAsync.factory( { 'series': true }, fcn ); // $ExpectType FactoryFunction<number, unknown>
 }
 
 // The compiler throws an error if the `factory` method is provided an options argument which is not an object...

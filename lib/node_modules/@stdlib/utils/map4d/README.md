@@ -60,10 +60,7 @@ var out = map4d( arr, naryFunction( abs, 1 ) );
 The applied function is provided the following arguments:
 
 -   **value**: array element.
--   **i0**: index of the first dimension.
--   **i1**: index of the second dimension.
--   **i2**: index of the third dimension.
--   **i3**: index of the fourth dimension.
+-   **indices**: current array element indices.
 -   **arr**: input array.
 
 To set the `this` context when invoking the input function, provide a `thisArg`.

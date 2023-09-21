@@ -45,18 +45,18 @@ function reducer( acc: number, value: number ): number {
 
 // The function returns the accumulated value when provided a collection...
 {
-	mapReduce( [ 0, 1, 1, NaN, 2 ], 0, mapper, reducer ); // $ExpectType any
-	mapReduce( [ -1, 1, 2 ], 100, mapper, reducer ); // $ExpectType any
-	mapReduce( [ -1, 1, 2 ], 0, mapper, reducer, {} ); // $ExpectType any
+	mapReduce( [ 0, 1, 1, NaN, 2 ], 0, mapper, reducer ); // $ExpectType number
+	mapReduce( [ -1, 1, 2 ], 100, mapper, reducer ); // $ExpectType number
+	mapReduce( [ -1, 1, 2 ], 0, mapper, reducer, {} ); // $ExpectType number
 }
 
 // The function returns the accumulated value when provided an ndarray...
 {
-	const arr = array( [ 1, 2, 3, 4, 5, 6 ] );
+	const arr = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
 
-	mapReduce( arr, 0, mapper, reducer ); // $ExpectType any
-	mapReduce( arr, 100, mapper, reducer ); // $ExpectType any
-	mapReduce( arr, 0, mapper, reducer, {} ); // $ExpectType any
+	mapReduce( arr, 0, mapper, reducer ); // $ExpectType number
+	mapReduce( arr, 100, mapper, reducer ); // $ExpectType number
+	mapReduce( arr, 0, mapper, reducer, {} ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection or ndarray...
