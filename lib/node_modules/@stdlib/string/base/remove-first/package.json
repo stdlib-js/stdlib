@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/string/base/first",
+  "name": "@stdlib/string/base/remove-first",
   "version": "0.0.0",
   "description": "Remove the first UTF-16 code unit of a string.",
   "license": "Apache-2.0",
