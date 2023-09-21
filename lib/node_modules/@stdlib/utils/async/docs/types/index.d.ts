@@ -66,7 +66,6 @@ interface Namespace {
 	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
 	*
-	*
 	* @param collection - input collection
 	* @param options - function options
 	* @param options.thisArg - execution context
@@ -121,7 +120,6 @@ interface Namespace {
 	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
 	*
-	*
 	* @param collection - input collection
 	* @param options - function options
 	* @param options.thisArg - execution context
@@ -174,7 +172,6 @@ interface Namespace {
 	* ## Notes
 	*
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
-	*
 	*
 	* @param collection - input collection
 	* @param options - function options
@@ -273,7 +270,6 @@ interface Namespace {
 	* ## Notes
 	*
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
-	*
 	*
 	* @param collection - input collection
 	* @param options - function options
@@ -387,7 +383,6 @@ interface Namespace {
 	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
 	*
-	*
 	* @param collection - input collection
 	* @param options - function options
 	* @param options.thisArg - execution context
@@ -441,7 +436,6 @@ interface Namespace {
 	*
 	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
-	*
 	*
 	* @param collection - input collection
 	* @param options - function options
@@ -497,7 +491,6 @@ interface Namespace {
 	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
 	*
-	*
 	* @param collection - input collection
 	* @param options - function options
 	* @param options.thisArg - execution context
@@ -548,7 +541,6 @@ interface Namespace {
 	*
 	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
-	*
 	*
 	* @param collection - input collection
 	* @param options - function options
@@ -643,7 +635,6 @@ interface Namespace {
 	* ## Notes
 	*
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
-	*
 	*
 	* @param collection - input collection
 	* @param options - function options
@@ -766,7 +757,6 @@ interface Namespace {
 	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling. Note, however, that the function may have mutated an input collection during prior invocations, resulting in a partially mutated collection.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
 	*
-	*
 	* @param collection - input collection
 	* @param options - function options
 	* @param options.thisArg - execution context
@@ -816,7 +806,6 @@ interface Namespace {
 	*
 	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling. Note, however, that the function may have mutated an input collection during prior invocations, resulting in a partially mutated collection.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
-	*
 	*
 	* @param collection - input collection
 	* @param options - function options
@@ -1024,7 +1013,6 @@ interface Namespace {
 	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
 	*
-	*
 	* @param collection - input collection
 	* @param options - function options
 	* @param options.thisArg - execution context
@@ -1078,7 +1066,6 @@ interface Namespace {
 	*
 	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
-	*
 	*
 	* @param collection - input collection
 	* @param options - function options
@@ -1134,7 +1121,6 @@ interface Namespace {
 	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
 	*
-	*
 	* @param collection - input collection
 	* @param initial - initial value
 	* @param options - function options
@@ -1188,7 +1174,6 @@ interface Namespace {
 	*
 	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
-	*
 	*
 	* @param collection - input collection
 	* @param initial - initial value
@@ -1275,7 +1260,6 @@ interface Namespace {
 	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
 	*
-	*
 	* @param collection - input collection
 	* @param n - number of elements
 	* @param options - function options
@@ -1331,7 +1315,6 @@ interface Namespace {
 	*
 	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
-	*
 	*
 	* @param collection - input collection
 	* @param n - number of elements
@@ -1393,7 +1376,6 @@ interface Namespace {
 	*     -   0: unique value
 	*     -   1: value count
 	*     -   2: frequency percentage
-	*
 	*
 	* @param collection - input collection
 	* @param options - function options

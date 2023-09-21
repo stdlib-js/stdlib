@@ -3604,8 +3604,7 @@ interface Namespace {
 	*     -   **v1**: element from first input array.
 	*     -   **v2**: element from second input array.
 	*     -   **idx**: element index.
-	*     -   **x**: first input array.
-	*     -   **y**: second input array.
+	*     -   **arrays**: input arrays.
 	*
 	* @param x - first input array
 	* @param y - second input array
@@ -3683,8 +3682,7 @@ interface Namespace {
 	*     -   **v1**: element from first input array.
 	*     -   **v2**: element from second input array.
 	*     -   **idx**: element index.
-	*     -   **x**: first input array.
-	*     -   **y**: second input array.
+	*     -   **arrays**: input arrays.
 	*
 	* @param x - first input array
 	* @param y - second input array
@@ -3760,8 +3758,7 @@ interface Namespace {
 	* -   The applied function is provided the following arguments:
 	*
 	*     -   **value**: array element.
-	*     -   **i**: index of the first dimension.
-	*     -   **j**: index of the second dimension.
+	*     -   **indices**: current array element indices.
 	*     -   **arr**: input array.
 	*
 	* @param arr - array of arrays
@@ -3791,9 +3788,7 @@ interface Namespace {
 	* -   The applied function is provided the following arguments:
 	*
 	*     -   **value**: array element.
-	*     -   **i**: index of the first dimension.
-	*     -   **j**: index of the second dimension.
-	*     -   **k**: index of the third dimension.
+	*     -   **indices**: current array element indices.
 	*     -   **arr**: input array.
 	*
 	* @param arr - three-dimensional nested array
@@ -3823,10 +3818,7 @@ interface Namespace {
 	* -   The applied function is provided the following arguments:
 	*
 	*     -   **value**: array element.
-	*     -   **i0**: index of the first dimension.
-	*     -   **i1**: index of the second dimension.
-	*     -   **i2**: index of the third dimension.
-	*     -   **i3**: index of the fourth dimension.
+	*     -   **indices**: current array element indices.
 	*     -   **arr**: input array.
 	*
 	* @param arr - four-dimensional nested array
@@ -3856,11 +3848,7 @@ interface Namespace {
 	* -   The applied function is provided the following arguments:
 	*
 	*     -   **value**: array element.
-	*     -   **i0**: index of the first dimension.
-	*     -   **i1**: index of the second dimension.
-	*     -   **i2**: index of the third dimension.
-	*     -   **i3**: index of the fourth dimension.
-	*     -   **i4**: index of the fifth dimension.
+	*     -   **indices**: current array element indices.
 	*     -   **arr**: input array.
 	*
 	* @param arr - five-dimensional nested array
@@ -5115,8 +5103,7 @@ interface Namespace {
 	*
 	*     -   **accumulator**: accumulated value.
 	*     -   **value**: array element.
-	*     -   **i**: index of the first dimension.
-	*     -   **j**: index of the second dimension.
+	*     -   **indices**: current array element indices.
 	*     -   **arr**: input array.
 	*
 	* @param arr - array of arrays
