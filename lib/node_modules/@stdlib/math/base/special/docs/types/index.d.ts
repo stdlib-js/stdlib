@@ -1584,16 +1584,25 @@ interface Namespace {
 	cceilf: typeof cceilf;
 
 	/**
-	* Rounds a complex number to the nearest multiple of `10^n` toward positive infinity.
+	* Rounds each component of a double-precision complex number to the nearest multiple of `10^n` toward positive infinity.
 	*
-	* @param re - real component
-	* @param im - imaginary component
+	* @param z - input value
 	* @param n - integer power of 10
-	* @returns real and imaginary components
+	* @returns result
 	*
 	* @example
-	* var out = ns.cceiln( 5.555, -3.333, -2 );
-	* // returns [ 5.56, -3.33 ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var v = ns.cceiln( new Complex128( 5.555, -3.333 ), -2 );
+	* // returns <Complex128>
+	*
+	* var re = real( v );
+	* // returns 5.56
+	*
+	* var im = imag( v );
+	* // returns -3.33
 	*/
 	cceiln: typeof cceiln;
 
@@ -1914,16 +1923,25 @@ interface Namespace {
 	cfloor: typeof cfloor;
 
 	/**
-	* Rounds a complex number to the nearest multiple of `10^n` toward negative infinity.
+	* Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n` toward negative infinity.
 	*
-	* @param re - real component
-	* @param im - imaginary component
+	* @param z - input value
 	* @param n - integer power of 10
-	* @returns real and imaginary components
+	* @returns result
 	*
 	* @example
-	* var out = ns.cfloorn( 5.555, -3.333, -2 );
-	* // returns [ 5.55, -3.34 ]
+	* var Complex128 = require( `@stdlib/complex/float64` );
+	* var real = require( `@stdlib/complex/real` );
+	* var imag = require( `@stdlib/complex/imag` );
+	*
+	* var v = cfloor( new Complex128( 5.555, -3.333 ), -2 );
+	* // returns <Complex128>
+	*
+	* var re = real( v );
+	* // returns 5.55
+	*
+	* var im = imag( v );
+	* // returns -3.34
 	*/
 	cfloorn: typeof cfloorn;
 
@@ -3363,7 +3381,7 @@ interface Namespace {
 	floorf: typeof floorf;
 
 	/**
-	* Rounds a numeric value to the nearest multiple of `10^n` toward negative infinity.
+	* Rounds a double-precision floating-point number to the nearest multiple of `10^n` toward negative infinity.
 	*
 	* ## Notes
 	*
