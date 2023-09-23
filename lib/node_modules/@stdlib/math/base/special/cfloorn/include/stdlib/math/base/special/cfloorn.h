@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,36 +16,25 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+#ifndef STDLIB_MATH_BASE_SPECIAL_CFLOORN_H
+#define STDLIB_MATH_BASE_SPECIAL_CFLOORN_H
 
-/// <reference types="@stdlib/types"/>
+#include "stdlib/complex/float64.h"
 
-import { Complex128 } from '@stdlib/types/complex';
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
 * Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n` toward negative infinity.
-*
-* @param z - input value
-* @param n - integer power of 10
-* @returns result
-*
-* @example
-* var Complex128 = require( `@stdlib/complex/float64` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
-*
-* var v = cfloor( new Complex128( 5.555, -3.333 ), -2 );
-* // returns <Complex128>
-*
-* var re = real( v );
-* // returns 5.55
-*
-* var im = imag( v );
-* // returns -3.34
 */
-declare function cfloorn( z: Complex128, n: number ): Complex128;
+stdlib_complex128_t stdlib_base_cfloorn( const stdlib_complex128_t z, const int32_t n );
 
+#ifdef __cplusplus
+}
+#endif
 
-// EXPORTS //
-
-export = cfloorn;
+#endif // !STDLIB_MATH_BASE_SPECIAL_CFLOORN_H
