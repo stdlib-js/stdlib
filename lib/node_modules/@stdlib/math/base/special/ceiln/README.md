@@ -98,6 +98,101 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/ceiln.h"
+```
+
+#### stdlib_base_ceiln( x, n )
+
+Rounds a double-precision floating-point number to the nearest multiple of `10^n` toward positive infinity.
+
+```c
+// Round a value to 2 decimal places:
+double y = stdlib_base_ceiln( 3.141592653589793, -2 );
+// returns 3.15
+
+// If n = 0, `ceiln` behaves like `ceil`:
+double y = stdlib_base_ceiln( 3.141592653589793, 0 );
+// returns 4.0
+
+// Round a value to the nearest thousand:
+double y = stdlib_base_ceiln( 12368.0, 3 );
+// returns 13000.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **n**: `[in] int32_t` integer power of 10.
+
+```c
+double stdlib_base_ceiln( const double x, const int32_t n );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/ceiln.h"
+#include <stdio.h>
+
+int main() {
+    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_ceiln( x[ i ], -2 );
+        printf( "ceiln(%lf, -2) = %lf\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
