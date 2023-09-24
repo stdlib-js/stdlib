@@ -915,3 +915,8 @@
 "Ek","invalid argument. A subsequence string must have a non-zero increment. Value: `%s`.","RangeError"
 "El","invalid argument. The subsequence string resolves to a slice which exceeds index bounds. Value: `%s`.","RangeError"
 "Em","invalid argument. Provided arguments must be either a Slice, integer, null, or undefined. Argument: `%d`. Value: `%s`.","TypeError"
+"En","invalid operation. Unsupported slice operation. Value: `%s`.","Error"
+"Eo","invalid operation. Number of array dimensions does not match the number of slice dimensions. Array shape: (%s). Slice dimensions: %u.","RangeError"
+"Ep","invalid operation. Slice exceeds array bounds. Array shape: (%s).","RangeError"
+"Eq","invalid operation. A subsequence increment must be a non-zero integer. Value: `%s`.","Error"
+"Er","invalid operation. A subsequence may only include a single ellipsis. Value: `%s`.","Error"
