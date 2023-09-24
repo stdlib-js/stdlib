@@ -32,6 +32,7 @@ import { MultiSlice } from '@stdlib/types/slice';
 * @param str - input string
 * @returns MultiSlice object (or null)
 *
+* @example
 * var s = str2multislice( 'MultiSlice(null,null,null)' );
 * // returns <MultiSlice>
 *
