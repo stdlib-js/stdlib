@@ -23,6 +23,28 @@ name: standalone_publish
 on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
+    inputs:
+      release-type:
+        type: choice
+        description: 'Type of release to create'
+        default: 'none'
+        options:
+        - none
+        - patch
+        - minor
+        - major
+      dry-run:
+        type: boolean
+        description: 'Skip uploading packages (dry run):'
+        default: false
+      start-index:
+        type: number
+        description: 'Index of first package to publish'
+        default: 0
+      end-index:
+        type: number
+        description: 'Index of last package to publish'
+        default: 9999
 
 # Workflow concurrency group:
 concurrency:
@@ -84,7 +106,7 @@ jobs:
           # Save NPM_TOKEN to user's .npmrc:
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js --patch --skip-toplevel
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js --skip-toplevel --release-type=${{ github.event.inputs.release-type }} --start-index=${{ github.event.inputs.start-index }} --end-index=${{ github.event.inputs.end-index }} ${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}
 
       # Archive list of to be published packages:
       - name: 'Archive package list'

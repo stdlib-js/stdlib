@@ -20,7 +20,7 @@ limitations under the License.
 
 # floorn
 
-> Round a numeric value to the nearest multiple of 10^n toward negative infinity.
+> Round a double-precision floating-point number to the nearest multiple of 10^n toward negative infinity.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var floorn = require( '@stdlib/math/base/special/floorn' );
 
 #### floorn( x, n )
 
-Rounds a `numeric` value to the nearest multiple of `10^n` toward negative infinity.
+Rounds a double-precision floating-point number to the nearest multiple of `10^n` toward negative infinity.
 
 ```javascript
 // Round a value to 4 decimal places:
@@ -97,6 +97,96 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/floorn.h"
+```
+
+#### stdlib_base_floorn( x, n )
+
+Rounds a double-precision floating-point number to the nearest multiple of `10^n` toward negative infinity.
+
+```c
+double y = stdlib_base_floorn( 3.141592653589793, -4 );
+// returns 3.1415
+
+// If n = 0, `floorn` behaves like `floor`:
+double y = stdlib_base_floorn( 3.141592653589793, 0 );
+// returns 3.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **n**: `[in] int32_t` integer power of 10.
+
+```c
+double stdlib_base_floorn( const double x, const int32_t n );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/floorn.h"
+#include <stdio.h>
+
+int main() {
+    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_floorn( x[ i ], -2 );
+        printf( "floorn(%lf, -2) = %lf\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

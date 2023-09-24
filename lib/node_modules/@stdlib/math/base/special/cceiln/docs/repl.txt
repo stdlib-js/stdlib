@@ -1,38 +1,29 @@
 
-{{alias}}( [out,] re, im, n )
-    Rounds a complex number to the nearest multiple of `10^n` toward positive
-    infinity.
+{{alias}}( z, n )
+    Rounds each component of a double-precision complex number to the nearest
+    multiple of `10^n` toward positive infinity.
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Output array.
-
-    re: number
-        Real component.
-
-    im: number
-        Imaginary component.
+    z: Complex128
+        Complex number.
 
     n: integer
         Integer power of 10.
 
     Returns
     -------
-    out: Array|TypedArray|Object
+    out: Complex128
         Real and imaginary components.
 
     Examples
     --------
-    > var out = {{alias}}( 5.555, -3.333, -2 )
-    [ 5.56, -3.33 ]
-
-    // Provide an output array:
-    > out = new {{alias:@stdlib/array/float64}}( 2 );
-    > var v = {{alias}}( out, 5.555, -3.333, -2 )
-    <Float64Array>[ 5.56, -3.33 ]
-    > var bool = ( v === out )
-    true
+    > var out = {{alias}}( new {{alias:@stdlib/complex/float64}}( 5.555, -3.333 ), -2 )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/real}}( out )
+    5.56
+    > var im = {{alias:@stdlib/complex/imag}}( out )
+    -3.33
 
     See Also
     --------

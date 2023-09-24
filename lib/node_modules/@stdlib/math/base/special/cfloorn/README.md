@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# floorn
+# cfloorn
 
-> Round a complex number to the nearest multiple of `10^n` toward negative infinity.
+> Round each component of a double-precision complex floating-point number to the nearest multiple of `10^n` toward negative infinity.
 
 <section class="usage">
 
@@ -30,39 +30,53 @@ limitations under the License.
 var cfloorn = require( '@stdlib/math/base/special/cfloorn' );
 ```
 
-#### cfloorn( \[out,] re, im, n )
+#### cfloorn( z, n )
 
-Rounds a `complex` number comprised of a **real** component `re` and an **imaginary** component `im` to the nearest multiple of `10^n` toward negative infinity.
+Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n` toward negative infinity.
 
 ```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
 // Round components to 2 decimal places:
-var v = cfloorn( -3.141592653589793, 3.141592653589793, -2 );
-// returns [ -3.15, 3.14 ]
+var v = cfloorn( new Complex128( -3.141592653589793, 3.141592653589793 ), -2 );
+// returns <Complex128>
+
+var re = real( v );
+// returns -3.15
+
+var im = imag( v );
+// returns 3.14
 
 // If n = 0, `cfloorn` behaves like `cfloor`:
-v = cfloorn( -3.141592653589793, 3.141592653589793, 0 );
-// returns [ -4.0, 3.0 ]
+v = cfloorn( new Complex128( -3.141592653589793, 3.141592653589793 ), 0 );
+// returns <Complex128>
+
+re = real( v );
+// returns -4.0
+
+im = imag( v );
+// returns 3.0
 
 // Round components to the nearest thousand:
-v = cfloorn( -12368.0, 12368.0, 3 );
-// returns [ -13000.0, 12000.0 ]
+v = cfloorn( new Complex128( -12368.0, 12368.0 ), 3 );
+// returns <Complex128>
 
-v = cfloorn( NaN, NaN, 0 );
-// returns [ NaN, NaN ]
-```
+re = real( v );
+// returns -13000.0
 
-By default, the function returns real and imaginary components as a two-element `array`. To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
+im = imag( v );
+// returns 12000.0
 
-```javascript
-var Float32Array = require( '@stdlib/array/float32' );
+v = cfloorn( new Complex128( NaN, NaN ), 0 );
+// returns <Complex128>
 
-var out = new Float32Array( 2 );
+re = real( v );
+// returns NaN
 
-var v = cfloorn( out, -4.2, 5.5, 0 );
-// returns <Float32Array>[ -5.0, 5.0 ]
-
-var bool = ( v === out );
-// returns true
+im = imag( v );
+// returns NaN
 ```
 
 </section>
@@ -76,12 +90,22 @@ var bool = ( v === out );
 -   When operating on [floating-point numbers][ieee754] in bases other than `2`, rounding to specified digits can be **inexact**. For example,
 
     ```javascript
+    var Complex128 = require( '@stdlib/complex/float64' );
+    var real = require( '@stdlib/complex/real' );
+    var imag = require( '@stdlib/complex/imag' );
+
     var x = -0.2 - 0.1;
     // returns -0.30000000000000004
 
     // Should round components to 0.3:
-    var v = cfloorn( x, x, -16 );
-    // returns [ -0.3000000000000001, -0.3000000000000001 ]
+    var v = cfloorn( new Complex128( x, x ), -16 );
+    // returns <Complex128>
+
+    var re = real( v );
+    // returns -0.3000000000000001
+
+    var im = imag( v );
+    // returns -0.3000000000000001
     ```
 
 </section>
@@ -97,27 +121,21 @@ var bool = ( v === out );
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64' );
 var randu = require( '@stdlib/random/base/randu' );
-var ceil = require( '@stdlib/math/base/special/ceil' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var uniform = require( '@stdlib/random/base/uniform' );
+var floor = require( '@stdlib/math/base/special/floor' );
 var cfloorn = require( '@stdlib/math/base/special/cfloorn' );
+var randint = require( '@stdlib/random/base/discrete-uniform' );
 
-var re;
-var im;
 var z;
-var o;
 var w;
 var n;
 var i;
 
 for ( i = 0; i < 100; i++ ) {
-    re = ( randu()*100.0 ) - 50.0;
-    im = ( randu()*100.0 ) - 50.0;
-    z = new Complex128( re, im );
+    z = new Complex128( uniform( -50.0, 50.0 ), uniform( -50.0, 50.0 ) );
 
-    n = ceil( randu()*5.0 );
-    o = cfloorn( real(z), imag(z), -n );
-    w = new Complex128( o[ 0 ], o[ 1 ] );
+    n = randint( -5.0, 0.0 );
+    w = cfloorn( z, n );
 
     console.log( 'floorn(%s,%s) = %s', z.toString(), n.toString(), w.toString() );
 }
@@ -126,6 +144,117 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/cfloorn.h"
+```
+
+#### stdlib_base_cfloorn( z, n )
+
+Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n` toward negative infinity.
+
+```c
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/real.h"
+#include "stdlib/complex/imag.h"
+
+stdlib_complex128_t z = stdlib_complex128( -3.141592653589793, 3.141592653589793 );
+stdlib_complex128_t out = stdlib_base_cfloorn( z, -2 );
+
+double re = stdlib_real( out );
+// returns -3.15
+
+double im = stdlib_imag( out );
+// returns 3.14
+```
+
+The function accepts the following arguments:
+
+-   **z**: `[in] stdlib_complex128_t` input value.
+-   **n**: `[in] int32_t` integer power of 10.
+
+```c
+stdlib_complex128_t stdlib_base_cfloorn( const stdlib_complex128_t z, const int32_t n );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/cfloorn.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
+#include <stdio.h>
+
+int main() {
+    const stdlib_complex128_t x[] = {
+        stdlib_complex128( 3.14, 1.5 ),
+        stdlib_complex128( -3.14, -1.5 ),
+        stdlib_complex128( 0.0, 0.0 ),
+        stdlib_complex128( 0.0/0.0, 0.0/0.0 )
+    };
+
+    stdlib_complex128_t v;
+    stdlib_complex128_t y;
+    double re1;
+    double im1;
+    double re2;
+    double im2;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = x[ i ];
+        y = stdlib_base_cfloorn( v, -2 );
+        stdlib_reim( v, &re1, &im1 );
+        stdlib_reim( y, &re2, &im2 );
+        printf( "cfloorn(%lf + %lfi, -2) = %lf + %lfi\n", re1, im1, re2, im2 );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
