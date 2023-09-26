@@ -1,0 +1,38 @@
+
+{{alias}}( x, slice, strict )
+    Returns a read-only view of an input ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    slice: MultiSlice
+        Multi-slice object.
+
+    strict: boolean
+        Boolean indicating whether to enforce strict bounds checking.
+
+    Returns
+    -------
+    out: ndarray
+        Output array view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > x.shape
+    [ 2, 2 ]
+    > var s = new {{alias:@stdlib/slice/multi}}( null, 1 )
+    <MultiSlice>
+    > var y = {{alias}}( x, s, false )
+    <ndarray>
+    > y.shape
+    [ 2 ]
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ 2, 4 ]
+
+    See Also
+    --------
+
