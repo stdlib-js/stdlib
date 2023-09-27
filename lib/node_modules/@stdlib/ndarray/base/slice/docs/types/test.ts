@@ -91,7 +91,6 @@ import slice = require( './index' );
 	slice( x, {}, false ); // $ExpectError
 	slice( x, ( x: number ): number => x, false ); // $ExpectError
 
-
 	slice( x, '5', true ); // $ExpectError
 	slice( x, 5, true ); // $ExpectError
 	slice( x, false, true ); // $ExpectError
