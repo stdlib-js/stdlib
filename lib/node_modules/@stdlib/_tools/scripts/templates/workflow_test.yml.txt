@@ -92,7 +92,7 @@ jobs:
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
         # Pin action to full length commit SHA corresponding to v2.0.0
-        uses: actions/setup-node@ed1309ab9862e57e9e583e51c7889486b9a00b0f
+        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
