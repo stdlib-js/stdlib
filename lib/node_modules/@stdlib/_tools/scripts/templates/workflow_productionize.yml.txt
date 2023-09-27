@@ -61,13 +61,15 @@ jobs:
     steps:
       # Checkout main branch of repository:
       - name: 'Checkout main branch'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           ref: main
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: 16
         timeout-minutes: 5
@@ -132,7 +134,8 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         if: ${{ github.event.inputs.require-passing-tests == 'true' }}
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           # Use the `production` branch:
           ref: production
@@ -140,7 +143,8 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         if: ${{ github.event.inputs.require-passing-tests == 'true' }}
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: 16
         timeout-minutes: 5
@@ -184,7 +188,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
 
       # Configure git:
       - name: 'Configure git'
@@ -251,7 +256,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: 16
         timeout-minutes: 5
@@ -334,7 +340,8 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v2
+        # Pin action to full length commit SHA corresponding to v2.0.0
+        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -357,7 +364,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
 
       # Configure git:
       - name: 'Configure git'
@@ -416,7 +424,8 @@ jobs:
 
       # Install Node.js
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: 16
         timeout-minutes: 5
@@ -505,7 +514,8 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v2
+        # Pin action to full length commit SHA corresponding to v2.0.0
+        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -528,7 +538,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
 
       # Configure git:
       - name: 'Configure git'
@@ -595,7 +606,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: 16
         timeout-minutes: 5
@@ -682,7 +694,8 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v2
+        # Pin action to full length commit SHA corresponding to v2.0.0
+        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -706,7 +719,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           fetch-depth: 2
 

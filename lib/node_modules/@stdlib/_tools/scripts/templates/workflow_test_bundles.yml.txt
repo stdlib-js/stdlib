@@ -49,13 +49,15 @@ jobs:
     steps:
       # Checkout UMD branch of the repository:
       - name: 'Checkout branch with UMD build'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           ref: umd
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: 17
 
@@ -88,7 +90,8 @@ jobs:
 
       # Send notification to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v2
+        # Pin action to full length commit SHA corresponding to v2.0.0
+        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -113,13 +116,15 @@ jobs:
 
       # Checkout ES modules branch of the repository:
       - name: 'Checkout branch with ESM build'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           ref: esm
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: 17
 
@@ -130,7 +135,8 @@ jobs:
 
       # Send notification to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v2
+        # Pin action to full length commit SHA corresponding to v2.0.0
+        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -155,13 +161,15 @@ jobs:
 
       # Checkout Deno branch of the repository:
       - name: 'Checkout branch with Deno build'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           ref: deno
 
       # Install Deno:
       - name: 'Install Deno'
-        uses: denoland/setup-deno@v1
+        # Pin action to full length commit SHA corresponding to v1.1.2
+        uses: denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31
         with:
           deno-version: vx.x.x
 
@@ -172,7 +180,8 @@ jobs:
 
       # Send notification to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v2
+        # Pin action to full length commit SHA corresponding to v2.0.0
+        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}

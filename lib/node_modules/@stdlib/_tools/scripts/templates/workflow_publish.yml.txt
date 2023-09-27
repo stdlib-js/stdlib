@@ -61,11 +61,13 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: 16
         timeout-minutes: 5
@@ -197,7 +199,8 @@ jobs:
 
       # Publish package to npm:
       - name: 'Publish package to npm'
-        uses: JS-DevTools/npm-publish@v2
+        # Pin action to full length commit SHA corresponding to v2.2.2
+        uses: JS-DevTools/npm-publish@fe72237be0920f7a0cafd6a966c9b929c9466e9b
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: public
@@ -209,7 +212,8 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v2
+        # Pin action to full length commit SHA corresponding to v2.0.0
+        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -230,7 +234,8 @@ jobs:
 
       # Cancel any running or queued workflow runs:
       - name: 'Cancel running or queued workflow runs'
-        uses: styfle/cancel-workflow-action@0.11.0
+        # Pin action to full length commit SHA corresponding to v0.11.0
+        uses: styfle/cancel-workflow-action@b173b6ec0100793626c2d9e6b90435061f4fc3e5
         with:
           workflow_id: >-
             benchmark.yml,
