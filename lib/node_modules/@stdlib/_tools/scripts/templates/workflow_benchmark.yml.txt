@@ -41,11 +41,13 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: 16
         timeout-minutes: 5
