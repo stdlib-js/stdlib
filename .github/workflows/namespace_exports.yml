@@ -50,7 +50,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -64,7 +65,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -113,7 +115,8 @@ jobs:
       # Create a pull request with the updated namespace exports:
       - name: 'Create pull request'
         id: cpr
-        uses: peter-evans/create-pull-request@v5
+        # Pin action to full length commit SHA corresponding to v5.0.2
+        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
         with:
           title: 'Update namespace exports'
           body: |

@@ -45,7 +45,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -59,7 +60,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -76,13 +78,13 @@ jobs:
           node lib/node_modules/@stdlib/error/tools/database/scripts/build.js
           node lib/node_modules/@stdlib/error/tools/pkg2id/scripts/build.js
           node lib/node_modules/@stdlib/error/tools/id2pkg/scripts/build.js
-          
+
       # Generate comment with Markdown table of added error codes:
       - name: 'Generate comment body with Markdown table of added error codes'
         run: |
-          # Save the added lines from the diff to a temporary file: 
+          # Save the added lines from the diff to a temporary file:
           git diff lib/node_modules/@stdlib/error/tools/database/data/data.csv | grep '^+' | sed 's/^+//' > /tmp/diff.csv
-          
+
           # Convert the CSV file to a TSV file (and drop first line and double quotes):
           awk -F '",' 'NR > 1 && !/^++/ { gsub(/^"|"$/, "", $1); gsub(/^"|"$/, "", $2); gsub(/^"|"$/, "", $3); print $1 "\t" $2 "\t" $3 }' /tmp/diff.csv > /tmp/diff.tsv
 
@@ -96,17 +98,17 @@ jobs:
               table+="| ... | ... | ... |\nThis table has been truncated due to GitHub's comment character limit.\n"
               break
             fi
-          
+
             # Append the TSV row to the Markdown table:
             table+="| ${code} | ${error_message} | ${type} |\n"
           done < /tmp/diff.tsv
 
           # Generate a comment body:
           body="This PR\n\n-   updates the error databases\n\nThe following error codes were added:\n\n${table}"
-          
+
           # Escape '%' characters, which are interpreted as format specifiers by `printf`:
           body="${body//%/%%}"
-          
+
           # Write the comment body to a temporary file:
           printf "$body" > /tmp/body.md
         shell: bash
@@ -119,7 +121,8 @@ jobs:
       # Create a pull request with the updated declarations:
       - name: 'Create pull request'
         id: cpr
-        uses: peter-evans/create-pull-request@v5
+        # Pin action to full length commit SHA corresponding to v5.0.2
+        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
         with:
           title: 'feat: update error databases'
           body-path: /tmp/body.md

@@ -44,7 +44,9 @@ jobs:
           exit 0
 
       # Checkout the current branch:
-      - uses: actions/checkout@v3
+      - name: 'Checkout current branch'
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         if: ${{ contains(github.event.comment.body, 'scaffold') }}
 
       # Run the command to scaffold a package:
@@ -59,7 +61,8 @@ jobs:
       # Create a pull request:
       - name: 'Create pull request'
         if: ${{ contains(github.event.comment.body, 'scaffold') }}
-        uses: peter-evans/create-pull-request@v5
+        # Pin action to full length commit SHA corresponding to v5.0.2
+        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
         with:
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           commit-message: 'feat: add `${{ steps.scaffold.outputs.alias }}`'

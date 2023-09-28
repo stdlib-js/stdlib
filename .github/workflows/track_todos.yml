@@ -44,7 +44,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -70,7 +71,8 @@ jobs:
 
       # Create or update issue for TODO comments:
       - name: 'Create or update issue for TODO comments'
-        uses: peter-evans/create-issue-from-file@v4
+        # Pin action to full length commit SHA corresponding to v4.0.1
+        uses: peter-evans/create-issue-from-file@433e51abf769039ee20ba1293a088ca19d573b7f
         with:
           title: 'TODO comments'
           content-filepath: ./tracking_issue_todos.md
@@ -81,7 +83,8 @@ jobs:
 
       # Create or update issue for FIXME comments:
       - name: 'Create or update issue for FIXME comments'
-        uses: peter-evans/create-issue-from-file@v4
+        # Pin action to full length commit SHA corresponding to v4.0.1
+        uses: peter-evans/create-issue-from-file@433e51abf769039ee20ba1293a088ca19d573b7f
         with:
           title: 'FIXME comments'
           content-filepath: ./tracking_issue_fixmes.md
