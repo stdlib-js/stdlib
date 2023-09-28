@@ -88,7 +88,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -102,7 +103,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -184,11 +186,12 @@ jobs:
       # Post report as comment to PR:
       - name: 'Post report as comment to PR'
         if: github.event_name == 'pull_request'
-        uses: actions/github-script@v4
+        # Pin action to full length commit SHA corresponding to v6.4.1
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
-            github.issues.createComment({
+            github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -198,11 +201,12 @@ jobs:
       # Post report as comment to commit:
       - name: 'Post report as comment to commit'
         if: github.event_name == 'push'
-        uses: actions/github-script@v4
+        # Pin action to full length commit SHA corresponding to v6.4.1
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
-            github.repos.createCommitComment({
+            github.rest.issues.createCommitComment({
               commit_sha: context.sha,
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -211,7 +215,8 @@ jobs:
 
       # Checkout coverage repository:
       - name: 'Checkout coverage repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
         with:
           # Code coverage repository:
           repository: 'stdlib-js/www-test-code-coverage'
@@ -227,7 +232,7 @@ jobs:
 
           # Token for accessing the repository:
           token: ${{ secrets.REPO_GITHUB_TOKEN }}
-          
+
       # Checkout coverage repository branch:
       - name: 'Checkout coverage repository branch'
         run: |
