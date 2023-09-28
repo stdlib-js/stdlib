@@ -42,7 +42,7 @@ var slice = require( '@stdlib/ndarray/slice' );
 
 #### slice( x, ...s\[, options] )
 
-Returns a **read-only** view of an input ndarray.
+Returns a **read-only** view of an input [`ndarray`][@stdlib/ndarray/ctor].
 
 ```javascript
 var Slice = require( '@stdlib/slice/ctor' );
