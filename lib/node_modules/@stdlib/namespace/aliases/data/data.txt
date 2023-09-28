@@ -2285,6 +2285,7 @@ ndarraySafeCasts
 ndarraySameKindCasts
 ndempty
 ndemptyLike
+ndslice
 ndzeros
 ndzerosLike
 nextGraphemeClusterBreak
