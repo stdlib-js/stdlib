@@ -40,7 +40,7 @@ limitations under the License.
 var slice = require( '@stdlib/ndarray/slice' );
 ```
 
-#### slice( x, ...slice\[, options] )
+#### slice( x, ...s\[, options] )
 
 Returns a **read-only** view of an input ndarray.
 
@@ -82,7 +82,7 @@ arr = ndarray2array( y );
 The function accepts the following arguments:
 
 -   **x**: input ndarray.
--   **slice**: a [`MultiSlice`][@stdlib/slice/multi] instance, an array of slice arguments, or slice arguments as separate arguments.
+-   **s**: a [`MultiSlice`][@stdlib/slice/multi] instance, an array of slice arguments, or slice arguments as separate arguments.
 -   **options**: function options.
 
 The function supports three (mutually exclusive) means for providing slice arguments:
