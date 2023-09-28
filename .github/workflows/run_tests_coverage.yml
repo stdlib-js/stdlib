@@ -206,7 +206,7 @@ jobs:
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
-            github.rest.issues.createCommitComment({
+            github.rest.repos.createCommitComment({
               commit_sha: context.sha,
               owner: context.repo.owner,
               repo: context.repo.repo,
