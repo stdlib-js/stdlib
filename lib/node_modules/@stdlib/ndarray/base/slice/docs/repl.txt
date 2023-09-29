@@ -1,6 +1,6 @@
 
-{{alias}}( x, slice, strict )
-    Returns a read-only view of an input ndarray.
+{{alias}}( x, slice, strict, mutable )
+    Returns a view of an input ndarray.
 
     Parameters
     ----------
@@ -12,6 +12,9 @@
 
     strict: boolean
         Boolean indicating whether to enforce strict bounds checking.
+
+    mutable: boolean
+        Boolean indicating whether a returned array should be mutable.
 
     Returns
     -------
@@ -26,7 +29,7 @@
     [ 2, 2 ]
     > var s = new {{alias:@stdlib/slice/multi}}( null, 1 )
     <MultiSlice>
-    > var y = {{alias}}( x, s, false )
+    > var y = {{alias}}( x, s, false, false )
     <ndarray>
     > y.shape
     [ 2 ]

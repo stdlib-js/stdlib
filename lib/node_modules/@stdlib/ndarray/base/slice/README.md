@@ -20,7 +20,7 @@ limitations under the License.
 
 # slice
 
-> Return a read-only view of an input ndarray.
+> Return a view of an input ndarray.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -40,9 +40,9 @@ limitations under the License.
 var slice = require( '@stdlib/ndarray/base/slice' );
 ```
 
-#### slice( x, slice, strict )
+#### slice( x, slice, strict, mutable )
 
-Returns a **read-only** view of an input ndarray.
+Returns a view of an input ndarray.
 
 ```javascript
 var Slice = require( '@stdlib/slice/ctor' );
@@ -69,7 +69,7 @@ var s1 = new Slice( null, null, -1 );
 var s = new MultiSlice( s0, s1 );
 // returns <MultiSlice>
 
-var y = slice( x, s, false );
+var y = slice( x, s, false, false );
 // returns <ndarray>
 
 sh = y.shape;
@@ -84,6 +84,7 @@ The function accepts the following arguments:
 -   **x**: input ndarray.
 -   **slice**: a [`MultiSlice`][@stdlib/slice/multi] instance.
 -   **strict**: boolean indicating whether to enforce strict bounds checking.
+-   **mutable**: boolean indicating whether a returned ndarray should be mutable.
 
 </section>
 
@@ -128,21 +129,21 @@ var x = array( buf, {
 
 // Get each matrix...
 var s1 = E( 0, _, _ );
-var y1 = slice( x, s1, false );
+var y1 = slice( x, s1, false, false );
 // returns <ndarray>
 
 var a1 = ndarray2array( y1 );
 // returns [ [ 0, 1, 2 ], [ 3, 4, 5 ], [ 6, 7, 8 ] ]
 
 var s2 = E( 1, _, _ );
-var y2 = slice( x, s2, false );
+var y2 = slice( x, s2, false, false );
 // returns <ndarray>
 
 var a2 = ndarray2array( y2 );
 // returns [ [ 9, 10, 11 ], [ 12, 13, 14 ], [ 15, 16, 17 ] ]
 
 var s3 = E( 2, _, _ );
-var y3 = slice( x, s3, false );
+var y3 = slice( x, s3, false, false );
 // returns <ndarray>
 
 var a3 = ndarray2array( y3 );
@@ -151,7 +152,7 @@ var a3 = ndarray2array( y3 );
 // Reverse all elements:
 var s = S( _, _, -1 );
 var s4 = E( s, s, s );
-var y4 = slice( x, s4, false );
+var y4 = slice( x, s4, false, false );
 // returns <ndarray>
 
 var a4 = ndarray2array( y4 );
@@ -159,7 +160,7 @@ var a4 = ndarray2array( y4 );
 
 // Get the second rows from each matrix:
 var s5 = E( _, 1, _ );
-var y5 = slice( x, s5, false );
+var y5 = slice( x, s5, false, false );
 // returns <ndarray>
 
 var a5 = ndarray2array( y5 );
@@ -167,7 +168,7 @@ var a5 = ndarray2array( y5 );
 
 // Get the second columns from each matrix:
 var s6 = E( _, _, 1 );
-var y6 = slice( x, s6, false );
+var y6 = slice( x, s6, false, false );
 // returns <ndarray>
 
 var a6 = ndarray2array( y6 );
