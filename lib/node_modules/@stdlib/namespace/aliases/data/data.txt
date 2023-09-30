@@ -2286,6 +2286,7 @@ ndarraySameKindCasts
 ndempty
 ndemptyLike
 ndslice
+ndsliceAssign
 ndzeros
 ndzerosLike
 nextGraphemeClusterBreak

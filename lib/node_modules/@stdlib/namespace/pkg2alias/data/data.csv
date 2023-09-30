@@ -2286,6 +2286,7 @@
 "@stdlib/ndarray/empty",ndempty
 "@stdlib/ndarray/empty-like",ndemptyLike
 "@stdlib/ndarray/slice",ndslice
+"@stdlib/ndarray/slice-assign",ndsliceAssign
 "@stdlib/ndarray/zeros",ndzeros
 "@stdlib/ndarray/zeros-like",ndzerosLike
 "@stdlib/string/next-grapheme-cluster-break",nextGraphemeClusterBreak
