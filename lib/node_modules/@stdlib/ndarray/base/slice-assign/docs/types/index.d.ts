@@ -42,7 +42,7 @@ import { MultiSlice } from '@stdlib/types/slice';
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -103,7 +103,7 @@ declare function sliceAssign( x: ndarray, y: float64ndarray, s: MultiSlice, stri
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -164,7 +164,7 @@ declare function sliceAssign( x: ndarray, y: float32ndarray, s: MultiSlice, stri
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -225,7 +225,7 @@ declare function sliceAssign( x: ndarray, y: int32ndarray, s: MultiSlice, strict
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -286,7 +286,7 @@ declare function sliceAssign( x: ndarray, y: int16ndarray, s: MultiSlice, strict
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -347,7 +347,7 @@ declare function sliceAssign( x: ndarray, y: int8ndarray, s: MultiSlice, strict:
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -408,7 +408,7 @@ declare function sliceAssign( x: ndarray, y: uint32ndarray, s: MultiSlice, stric
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -469,7 +469,7 @@ declare function sliceAssign( x: ndarray, y: uint16ndarray, s: MultiSlice, stric
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -530,7 +530,7 @@ declare function sliceAssign( x: ndarray, y: uint8ndarray, s: MultiSlice, strict
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -591,7 +591,7 @@ declare function sliceAssign( x: ndarray, y: uint8cndarray, s: MultiSlice, stric
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -646,7 +646,7 @@ declare function sliceAssign( x: ndarray, y: complex128ndarray, s: MultiSlice, s
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -701,7 +701,7 @@ declare function sliceAssign( x: ndarray, y: complex64ndarray, s: MultiSlice, st
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
@@ -762,7 +762,7 @@ declare function sliceAssign<T = unknown>( x: ndarray, y: genericndarray<T>, s: 
 * var MultiSlice = require( `@stdlib/slice/multi` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * // Define an input array:
