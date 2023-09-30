@@ -29,7 +29,7 @@ import { MultiSlice } from '@stdlib/types/slice';
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -65,7 +65,7 @@ import { MultiSlice } from '@stdlib/types/slice';
 * arr = ndarray2array( y );
 * // returns [ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 */
-declare function slice( x: float64ndarray, s: MultiSlice, strict: boolean, mutable: boolean ): float64ndarray;
+declare function slice( x: float64ndarray, s: MultiSlice, strict: boolean, writable: boolean ): float64ndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -73,7 +73,7 @@ declare function slice( x: float64ndarray, s: MultiSlice, strict: boolean, mutab
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -109,7 +109,7 @@ declare function slice( x: float64ndarray, s: MultiSlice, strict: boolean, mutab
 * arr = ndarray2array( y );
 * // returns [ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 */
-declare function slice( x: float32ndarray, s: MultiSlice, strict: boolean, mutable: boolean ): float32ndarray;
+declare function slice( x: float32ndarray, s: MultiSlice, strict: boolean, writable: boolean ): float32ndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -117,7 +117,7 @@ declare function slice( x: float32ndarray, s: MultiSlice, strict: boolean, mutab
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -153,7 +153,7 @@ declare function slice( x: float32ndarray, s: MultiSlice, strict: boolean, mutab
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: int32ndarray, s: MultiSlice, strict: boolean, mutable: boolean ): int32ndarray;
+declare function slice( x: int32ndarray, s: MultiSlice, strict: boolean, writable: boolean ): int32ndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -161,7 +161,7 @@ declare function slice( x: int32ndarray, s: MultiSlice, strict: boolean, mutable
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -197,7 +197,7 @@ declare function slice( x: int32ndarray, s: MultiSlice, strict: boolean, mutable
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: int16ndarray, s: MultiSlice, strict: boolean, mutable: boolean ): int16ndarray;
+declare function slice( x: int16ndarray, s: MultiSlice, strict: boolean, writable: boolean ): int16ndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -205,7 +205,7 @@ declare function slice( x: int16ndarray, s: MultiSlice, strict: boolean, mutable
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -241,7 +241,7 @@ declare function slice( x: int16ndarray, s: MultiSlice, strict: boolean, mutable
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: int8ndarray, s: MultiSlice, strict: boolean, mutable: boolean ): int8ndarray;
+declare function slice( x: int8ndarray, s: MultiSlice, strict: boolean, writable: boolean ): int8ndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -249,7 +249,7 @@ declare function slice( x: int8ndarray, s: MultiSlice, strict: boolean, mutable:
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -285,7 +285,7 @@ declare function slice( x: int8ndarray, s: MultiSlice, strict: boolean, mutable:
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: uint32ndarray, s: MultiSlice, strict: boolean, mutable: boolean ): uint32ndarray;
+declare function slice( x: uint32ndarray, s: MultiSlice, strict: boolean, writable: boolean ): uint32ndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -293,7 +293,7 @@ declare function slice( x: uint32ndarray, s: MultiSlice, strict: boolean, mutabl
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -329,7 +329,7 @@ declare function slice( x: uint32ndarray, s: MultiSlice, strict: boolean, mutabl
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: uint16ndarray, s: MultiSlice, strict: boolean, mutable: boolean ): uint16ndarray;
+declare function slice( x: uint16ndarray, s: MultiSlice, strict: boolean, writable: boolean ): uint16ndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -337,7 +337,7 @@ declare function slice( x: uint16ndarray, s: MultiSlice, strict: boolean, mutabl
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -373,7 +373,7 @@ declare function slice( x: uint16ndarray, s: MultiSlice, strict: boolean, mutabl
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: uint8ndarray, s: MultiSlice, strict: boolean, mutable: boolean ): uint8ndarray;
+declare function slice( x: uint8ndarray, s: MultiSlice, strict: boolean, writable: boolean ): uint8ndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -381,7 +381,7 @@ declare function slice( x: uint8ndarray, s: MultiSlice, strict: boolean, mutable
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -417,7 +417,7 @@ declare function slice( x: uint8ndarray, s: MultiSlice, strict: boolean, mutable
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: uint8cndarray, s: MultiSlice, strict: boolean, mutable: boolean ): uint8cndarray;
+declare function slice( x: uint8cndarray, s: MultiSlice, strict: boolean, writable: boolean ): uint8cndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -425,7 +425,7 @@ declare function slice( x: uint8cndarray, s: MultiSlice, strict: boolean, mutabl
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -455,7 +455,7 @@ declare function slice( x: uint8cndarray, s: MultiSlice, strict: boolean, mutabl
 * sh = y.shape;
 * // returns [ 2, 2 ]
 */
-declare function slice( x: complex128ndarray, s: MultiSlice, strict: boolean, mutable: boolean ): complex128ndarray;
+declare function slice( x: complex128ndarray, s: MultiSlice, strict: boolean, writable: boolean ): complex128ndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -463,7 +463,7 @@ declare function slice( x: complex128ndarray, s: MultiSlice, strict: boolean, mu
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -493,7 +493,7 @@ declare function slice( x: complex128ndarray, s: MultiSlice, strict: boolean, mu
 * sh = y.shape;
 * // returns [ 2, 2 ]
 */
-declare function slice( x: complex64ndarray, s: MultiSlice, strict: boolean, mutable: boolean ): complex64ndarray;
+declare function slice( x: complex64ndarray, s: MultiSlice, strict: boolean, writable: boolean ): complex64ndarray;
 
 /**
 * Returns a view of an input ndarray.
@@ -501,7 +501,7 @@ declare function slice( x: complex64ndarray, s: MultiSlice, strict: boolean, mut
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -537,7 +537,7 @@ declare function slice( x: complex64ndarray, s: MultiSlice, strict: boolean, mut
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, strict: boolean, mutable: boolean ): genericndarray<T>;
+declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, strict: boolean, writable: boolean ): genericndarray<T>;
 
 /**
 * Returns a view of an input ndarray.
@@ -545,7 +545,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, strict
 * @param x - input array
 * @param s - multi-slice object
 * @param strict - boolean indicating whether to enforce strict bounds checking
-* @param mutable - boolean indicating whether a returned array should be mutable
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -581,7 +581,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, strict
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice<T = unknown>( x: typedndarray<T>, s: MultiSlice, strict: boolean, mutable: boolean ): typedndarray<T>;
+declare function slice<T = unknown>( x: typedndarray<T>, s: MultiSlice, strict: boolean, writable: boolean ): typedndarray<T>;
 
 
 // EXPORTS //
