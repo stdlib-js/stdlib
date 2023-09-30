@@ -34,7 +34,7 @@
         assigned to corresponding elements in a 'float32' output array).
 
     y: ndarray
-        Output array.
+        Output array. The output array must be writable.
 
     s: ...MultiSlice|Slice|null|undefined|integer|ArrayLike
         Slice arguments.

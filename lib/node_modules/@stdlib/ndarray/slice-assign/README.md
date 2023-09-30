@@ -194,6 +194,7 @@ var arr = ndarray2array( y );
 
 ## Notes
 
+-   An output [`ndarray`][@stdlib/ndarray/ctor] **must** be writable. If provided a **read-only** [`ndarray`][@stdlib/ndarray/ctor], the function throws an error.
 -   A **slice argument** must be either a [`Slice`][@stdlib/slice/ctor], an integer, `null`, or `undefined`.
 -   The number of slice dimensions must match the number of output array dimensions. Hence, if `y` is a zero-dimensional [`ndarray`][@stdlib/ndarray/ctor], then, if `s` is a [`MultiSlice`][@stdlib/slice/multi], `s` should be empty, and, if `s` is an array, `s` should not contain any slice arguments. Similarly, if `y` is a one-dimensional [`ndarray`][@stdlib/ndarray/ctor], then, if `s` is a [`MultiSlice`][@stdlib/slice/multi], `s` should have one slice dimension, and, if `s` is an array, `s` should contain a single slice argument. And so on and so forth.
 -   The input [`ndarray`][@stdlib/ndarray/ctor] **must** be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] with the output [`ndarray`][@stdlib/ndarray/ctor] view.
