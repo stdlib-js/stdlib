@@ -2285,6 +2285,7 @@ ndarraySafeCasts
 ndarraySameKindCasts
 ndempty
 ndemptyLike
+nditer2arrayEach
 nditerColumns
 nditerRows
 ndslice

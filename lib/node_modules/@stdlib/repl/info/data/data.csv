@@ -3677,6 +3677,8 @@ ndarraySafeCasts,"\nndarraySafeCasts( [dtype:any] )\n    Returns a list of ndarr
 ndarraySameKindCasts,"\nndarraySameKindCasts( [dtype:any] )\n    Returns a list of ndarray data types to which a provided ndarray data type\n    can be safely cast or cast within the same \"kind\".\n"
 ndempty,"\nndempty( shape:ArrayLikeObject<integer>|integer[, options:Object] )\n    Returns an uninitialized ndarray having a specified shape and data type.\n"
 ndemptyLike,"\nndemptyLike( x:ndarray[, options:Object] )\n    Returns an uninitialized ndarray having the same shape and data type as a\n    provided input ndarray.\n"
+nditerColumns,"\nnditerColumns( x:ndarray[, options:Object] )\n    Returns an iterator which iterates over each column in a matrix (or stack of\n    matrices).\n"
+nditerRows,"\nnditerRows( x:ndarray[, options:Object] )\n    Returns an iterator which iterates over each row in a matrix (or stack of\n    matrices).\n"
 ndslice,"\nndslice( x:ndarray, ...s:MultiSlice|Slice|null|undefined|integer|ArrayLike[, \n  options:Object] )\n    Returns a read-only view of an input ndarray.\n"
 ndsliceAssign,"\nndsliceAssign( x:ndarray, y:ndarray, \n  ...s:MultiSlice|Slice|null|undefined|integer|ArrayLike[, options:Object] )\n    Assigns element values from a broadcasted input ndarray to corresponding\n    elements in an output ndarray view.\n"
 ndzeros,"\nndzeros( shape:ArrayLikeObject<integer>|integer[, options:Object] )\n    Returns a zero-filled ndarray having a specified shape and data type.\n"
