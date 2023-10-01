@@ -6614,3 +6614,17 @@
 "@stdlib/string-base-remove-last-grapheme-cluster",1jL
 "@stdlib/string/base/remove-last",1jM
 "@stdlib/string-base-remove-last",1jN
+"@stdlib/ndarray/base/slice-assign",1jO
+"@stdlib/ndarray-base-slice-assign",1jP
+"@stdlib/ndarray/base/slice",1jQ
+"@stdlib/ndarray-base-slice",1jR
+"@stdlib/ndarray/slice-assign",1jS
+"@stdlib/ndarray-slice-assign",1jT
+"@stdlib/ndarray/slice",1jU
+"@stdlib/ndarray-slice",1jV
+"@stdlib/slice/base/nonreduced-dimensions",1jW
+"@stdlib/slice-base-nonreduced-dimensions",1jX
+"@stdlib/slice/base/reduced-dimensions",1jY
+"@stdlib/slice-base-reduced-dimensions",1jZ
+"@stdlib/slice/base/sargs2multislice",1ja
+"@stdlib/slice-base-sargs2multislice",1jb
