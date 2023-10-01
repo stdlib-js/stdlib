@@ -2285,6 +2285,8 @@
 "@stdlib/ndarray-same-kind-casts","@stdlib/ndarray/same-kind-casts"
 "@stdlib/ndarray-empty","@stdlib/ndarray/empty"
 "@stdlib/ndarray-empty-like","@stdlib/ndarray/empty-like"
+"@stdlib/ndarray-iter-columns","@stdlib/ndarray/iter/columns"
+"@stdlib/ndarray-iter-rows","@stdlib/ndarray/iter/rows"
 "@stdlib/ndarray-slice","@stdlib/ndarray/slice"
 "@stdlib/ndarray-slice-assign","@stdlib/ndarray/slice-assign"
 "@stdlib/ndarray-zeros","@stdlib/ndarray/zeros"

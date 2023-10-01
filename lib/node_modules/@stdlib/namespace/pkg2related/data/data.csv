@@ -2285,6 +2285,8 @@
 "@stdlib/ndarray/same-kind-casts","@stdlib/ndarray/casting-modes,@stdlib/ndarray/dtypes,@stdlib/ndarray/safe-casts"
 "@stdlib/ndarray/empty","@stdlib/ndarray/empty-like,@stdlib/ndarray/zeros"
 "@stdlib/ndarray/empty-like","@stdlib/ndarray/empty,@stdlib/ndarray/zeros-like"
+"@stdlib/ndarray/iter/columns","@stdlib/ndarray/iter/rows,@stdlib/ndarray/slice"
+"@stdlib/ndarray/iter/rows","@stdlib/ndarray/iter/columns,@stdlib/ndarray/slice"
 "@stdlib/ndarray/slice","@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/ndarray/slice-assign"
 "@stdlib/ndarray/slice-assign","@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/ndarray/slice"
 "@stdlib/ndarray/zeros","@stdlib/ndarray/empty,@stdlib/ndarray/zeros-like"

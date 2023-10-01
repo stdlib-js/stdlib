@@ -2285,6 +2285,8 @@ ndarraySafeCasts
 ndarraySameKindCasts
 ndempty
 ndemptyLike
+nditerColumns
+nditerRows
 ndslice
 ndsliceAssign
 ndzeros

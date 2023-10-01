@@ -3678,6 +3678,7 @@ ndarraySameKindCasts,"\nndarraySameKindCasts( [dtype:any] )\n    Returns a list 
 ndempty,"\nndempty( shape:ArrayLikeObject<integer>|integer[, options:Object] )\n    Returns an uninitialized ndarray having a specified shape and data type.\n"
 ndemptyLike,"\nndemptyLike( x:ndarray[, options:Object] )\n    Returns an uninitialized ndarray having the same shape and data type as a\n    provided input ndarray.\n"
 ndslice,"\nndslice( x:ndarray, ...s:MultiSlice|Slice|null|undefined|integer|ArrayLike[, \n  options:Object] )\n    Returns a read-only view of an input ndarray.\n"
+ndsliceAssign,"\nndsliceAssign( x:ndarray, y:ndarray, \n  ...s:MultiSlice|Slice|null|undefined|integer|ArrayLike[, options:Object] )\n    Assigns element values from a broadcasted input ndarray to corresponding\n    elements in an output ndarray view.\n"
 ndzeros,"\nndzeros( shape:ArrayLikeObject<integer>|integer[, options:Object] )\n    Returns a zero-filled ndarray having a specified shape and data type.\n"
 ndzerosLike,"\nndzerosLike( x:ndarray[, options:Object] )\n    Returns a zero-filled ndarray having the same shape and data type as a\n    provided input ndarray.\n"
 nextGraphemeClusterBreak,"\nnextGraphemeClusterBreak( str:string[, fromIndex:integer] )\n    Returns the next extended grapheme cluster break in a string after a\n    specified position.\n"
