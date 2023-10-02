@@ -1311,6 +1311,7 @@
 "@stdlib/bigint/ctor","@stdlib/bigint-ctor"
 "@stdlib/stats/binomial-test","@stdlib/stats-binomial-test"
 "@stdlib/boolean/ctor","@stdlib/boolean-ctor"
+"@stdlib/ndarray/broadcast-array","@stdlib/ndarray-broadcast-array"
 "@stdlib/buffer/ctor","@stdlib/buffer-ctor"
 "@stdlib/buffer/to-json","@stdlib/buffer-to-json"
 "@stdlib/os/byte-order","@stdlib/os-byte-order"

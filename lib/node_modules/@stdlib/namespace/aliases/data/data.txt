@@ -1311,6 +1311,7 @@ bifurcateOwn
 BigInt
 binomialTest
 Boolean
+broadcastArray
 Buffer
 buffer2json
 BYTE_ORDER
