@@ -75,7 +75,7 @@ interface Options {
 *
 * // ...
 */
-declare function nditerColumns( src: ndarray, options?: Options ): Iterator<ndarray>;
+declare function nditerColumns( x: ndarray, options?: Options ): Iterator<ndarray>;
 
 
 // EXPORTS //
