@@ -2342,6 +2342,7 @@ binomialTest,"binomialTest( x:(number|Array[, n:Array<number>][, options:Object]
 Boolean,"Boolean( value:any )"
 Boolean.prototype.toString,"Boolean.prototype.toString()"
 Boolean.prototype.valueOf,"Boolean.prototype.valueOf()"
+broadcastArray,"broadcastArray( x:ndarray, shape:ArrayLikeObject )"
 Buffer,"Buffer"
 Buffer,"Buffer( size:integer )"
 Buffer,"Buffer( buffer:Buffer )"

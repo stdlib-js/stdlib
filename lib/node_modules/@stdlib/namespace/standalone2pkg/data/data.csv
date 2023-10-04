@@ -2288,6 +2288,7 @@
 "@stdlib/ndarray-empty-like","@stdlib/ndarray/empty-like"
 "@stdlib/ndarray-iter-to-array-each","@stdlib/ndarray/iter/to-array-each"
 "@stdlib/ndarray-iter-columns","@stdlib/ndarray/iter/columns"
+"@stdlib/ndarray-iter-indices","@stdlib/ndarray/iter/indices"
 "@stdlib/ndarray-iter-rows","@stdlib/ndarray/iter/rows"
 "@stdlib/ndarray-slice","@stdlib/ndarray/slice"
 "@stdlib/ndarray-slice-assign","@stdlib/ndarray/slice-assign"

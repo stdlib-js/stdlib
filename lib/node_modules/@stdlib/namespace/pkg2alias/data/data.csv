@@ -2288,6 +2288,7 @@
 "@stdlib/ndarray/empty-like",ndemptyLike
 "@stdlib/ndarray/iter/to-array-each",nditer2arrayEach
 "@stdlib/ndarray/iter/columns",nditerColumns
+"@stdlib/ndarray/iter/indices",nditerIndices
 "@stdlib/ndarray/iter/rows",nditerRows
 "@stdlib/ndarray/slice",ndslice
 "@stdlib/ndarray/slice-assign",ndsliceAssign
