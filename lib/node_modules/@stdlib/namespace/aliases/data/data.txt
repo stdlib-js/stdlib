@@ -2288,6 +2288,7 @@ ndempty
 ndemptyLike
 nditer2arrayEach
 nditerColumns
+nditerEntries
 nditerIndices
 nditerRows
 ndslice
