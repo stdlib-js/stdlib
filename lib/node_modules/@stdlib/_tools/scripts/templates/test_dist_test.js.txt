@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var main = require( './../lib' );
+var main = require( './../../dist' );
 
 
 // TESTS //
