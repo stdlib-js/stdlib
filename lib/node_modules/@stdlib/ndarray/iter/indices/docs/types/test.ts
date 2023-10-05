@@ -30,7 +30,7 @@ import nditerIndices = require( './index' );
 	nditerIndices( x.shape, {} ); // $ExpectType Iterator<number[]>
 }
 
-// The compiler throws an error if the function is provided a first argument which is not an ndarray...
+// The compiler throws an error if the function is provided a first argument which is not an ndarray shape...
 {
 	nditerIndices( '123' ); // $ExpectError
 	nditerIndices( 123 );  // $ExpectError
