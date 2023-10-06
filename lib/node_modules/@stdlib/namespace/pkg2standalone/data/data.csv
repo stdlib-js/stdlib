@@ -2291,6 +2291,7 @@
 "@stdlib/ndarray/iter/entries","@stdlib/ndarray-iter-entries"
 "@stdlib/ndarray/iter/indices","@stdlib/ndarray-iter-indices"
 "@stdlib/ndarray/iter/rows","@stdlib/ndarray-iter-rows"
+"@stdlib/ndarray/iter/values","@stdlib/ndarray-iter-values"
 "@stdlib/ndarray/slice","@stdlib/ndarray-slice"
 "@stdlib/ndarray/slice-assign","@stdlib/ndarray-slice-assign"
 "@stdlib/ndarray/zeros","@stdlib/ndarray-zeros"

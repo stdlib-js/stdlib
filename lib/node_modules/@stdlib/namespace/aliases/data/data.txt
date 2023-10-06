@@ -2291,6 +2291,7 @@ nditerColumns
 nditerEntries
 nditerIndices
 nditerRows
+nditerValues
 ndslice
 ndsliceAssign
 ndzeros
