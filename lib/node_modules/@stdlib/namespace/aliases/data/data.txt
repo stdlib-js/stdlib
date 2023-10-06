@@ -2319,6 +2319,7 @@ now
 NUM_CPUS
 num2words
 Number
+numel
 numGraphemeClusters
 Object
 objectEntries

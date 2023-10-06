@@ -2319,6 +2319,7 @@
 "@stdlib/os/num-cpus",""
 "@stdlib/string/num2words",""
 "@stdlib/number/ctor",""
+"@stdlib/ndarray/numel","@stdlib/ndarray/array,@stdlib/ndarray/ctor"
 "@stdlib/string/num-grapheme-clusters","@stdlib/string/next-grapheme-cluster-break"
 "@stdlib/object/ctor",""
 "@stdlib/utils/entries","@stdlib/utils/entries-in,@stdlib/utils/from-entries,@stdlib/utils/keys,@stdlib/utils/values"

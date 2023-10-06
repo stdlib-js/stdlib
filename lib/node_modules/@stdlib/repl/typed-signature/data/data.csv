@@ -3658,6 +3658,7 @@ mapValuesAsync.factory,"mapValuesAsync.factory( [options:Object,] transform:Func
 maskArguments,"maskArguments( fcn:Function, mask:ArrayLikeObject[, thisArg:any] )"
 MAX_ARRAY_LENGTH,"MAX_ARRAY_LENGTH"
 MAX_TYPED_ARRAY_LENGTH,"MAX_TYPED_ARRAY_LENGTH"
+maybeBroadcastArray,"maybeBroadcastArray( x:ndarray, shape:ArrayLikeObject )"
 memoize,"memoize( fcn:Function[, hashFunction:Function] )"
 merge,"merge( target:Object, ...source:Object )"
 merge.factory,"merge.factory( options:Object )"

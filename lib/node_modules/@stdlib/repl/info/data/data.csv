@@ -3621,6 +3621,7 @@ mapValuesAsync.factory,"\nmapValuesAsync.factory( [options:Object,] transform:Fu
 maskArguments,"\nmaskArguments( fcn:Function, mask:ArrayLikeObject[, thisArg:any] )\n    Returns a function that applies arguments to a provided function according\n    to a specified mask.\n"
 MAX_ARRAY_LENGTH,"\nMAX_ARRAY_LENGTH\n    Maximum length for a generic array.\n"
 MAX_TYPED_ARRAY_LENGTH,"\nMAX_TYPED_ARRAY_LENGTH\n    Maximum length for a typed array.\n"
+maybeBroadcastArray,"\nmaybeBroadcastArray( x:ndarray, shape:ArrayLikeObject )\n    Broadcasts an ndarray to a specified shape if and only if the specified\n    shape differs from the provided ndarray's shape.\n"
 memoize,"\nmemoize( fcn:Function[, hashFunction:Function] )\n    Returns a memoized function.\n"
 merge,"\nmerge( target:Object, ...source:Object )\n    Merges objects into a target object.\n"
 merge.factory,"\nmerge.factory( options:Object )\n    Returns a function for merging and extending objects.\n"
