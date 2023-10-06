@@ -32,6 +32,10 @@ type Iterator<T> = TypedIterator<T> | TypedIterableIterator<T>;
 interface Options {
 	/**
 	* Boolean indicating whether returned views should be read-only (default: true).
+	*
+	* ## Notes
+	*
+	* -   If the input array is read-only, setting this option to `false` raises an exception.
 	*/
 	readonly?: boolean;
 }
