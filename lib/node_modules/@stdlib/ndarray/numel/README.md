@@ -42,7 +42,7 @@ var numel = require( '@stdlib/ndarray/numel' );
 
 #### numel( x )
 
-Returns number of elements in an [ndarray][@stdlib/ndarray/ctor].
+Returns the number of elements in an [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
 var zeros = require( '@stdlib/ndarray/zeros' );
