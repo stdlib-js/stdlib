@@ -2287,6 +2287,7 @@
 "@stdlib/ndarray/same-kind-casts",ndarraySameKindCasts
 "@stdlib/ndarray/empty",ndempty
 "@stdlib/ndarray/empty-like",ndemptyLike
+"@stdlib/ndarray/ndims",ndims
 "@stdlib/ndarray/iter/to-array-each",nditer2arrayEach
 "@stdlib/ndarray/iter/columns",nditerColumns
 "@stdlib/ndarray/iter/entries",nditerEntries
