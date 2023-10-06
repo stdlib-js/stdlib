@@ -40,7 +40,7 @@ limitations under the License.
 var maybeBroadcastArray = require( '@stdlib/ndarray/maybe-broadcast-array' );
 ```
 
-#### maybeBroadcastArray( arr, shape )
+#### maybeBroadcastArray( x, shape )
 
 Broadcasts an [ndarray][@stdlib/ndarray/ctor] to a specified `shape` if and only if the specified `shape` differs from the provided [ndarray][@stdlib/ndarray/ctor]'s shape.
 
