@@ -3685,6 +3685,7 @@ nditerEntries,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerEntries(
 nditerIndices,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerIndices( x.shape );\nvar v = it.next().value\nv = it.next().value\n"
 nditerRows,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerRows( x );\nvar v = it.next().value;\nndarray2array( v )\nv = it.next().value;\nndarray2array( v )\n"
 nditerValues,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerValues( x );\nvar v = it.next().value\nv = it.next().value\n"
+ndshape,"var out = ndshape( ndzeros( [ 3, 3, 3 ] ) )\n"
 ndslice,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar s = new MultiSlice( null, 1 )\nvar y = ndslice( x, s )\ny.shape\nndarray2array( y )\n"
 ndsliceAssign,"var y = ndzeros( [ 2, 2 ] )\nvar x = scalar2ndarray( 3.0 )\nvar s = new MultiSlice( null, 1 )\nvar out = ndsliceAssign( x, y, s )\nvar bool = ( out === y )\nndarray2array( y )\n"
 ndzeros,"var arr = ndzeros( [ 2, 2 ] )\nvar sh = arr.shape\nvar dt = arr.dtype\n"

@@ -3685,6 +3685,7 @@ nditerEntries,"\nnditerEntries( x:ndarray[, options:Object] )\n    Returns an it
 nditerIndices,"\nnditerIndices( shape:Array<integer>[, options:Object] )\n    Returns an iterator which returns indices for use indexing into an ndarray\n    having a specified shape.\n"
 nditerRows,"\nnditerRows( x:ndarray[, options:Object] )\n    Returns an iterator which iterates over each row in a matrix (or stack of\n    matrices).\n"
 nditerValues,"\nnditerValues( x:ndarray[, options:Object] )\n    Returns an iterator which returns individual elements from a provided\n    ndarray.\n"
+ndshape,"\nndshape( x:ndarray )\n    Returns the shape of a provided ndarray.\n"
 ndslice,"\nndslice( x:ndarray, ...s:MultiSlice|Slice|null|undefined|integer|ArrayLike[, \n  options:Object] )\n    Returns a read-only view of an input ndarray.\n"
 ndsliceAssign,"\nndsliceAssign( x:ndarray, y:ndarray, \n  ...s:MultiSlice|Slice|null|undefined|integer|ArrayLike[, options:Object] )\n    Assigns element values from a broadcasted input ndarray to corresponding\n    elements in an output ndarray view.\n"
 ndzeros,"\nndzeros( shape:ArrayLikeObject<integer>|integer[, options:Object] )\n    Returns a zero-filled ndarray having a specified shape and data type.\n"

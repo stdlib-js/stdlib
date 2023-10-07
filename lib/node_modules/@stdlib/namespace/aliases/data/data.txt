@@ -2294,9 +2294,11 @@ nditerEntries
 nditerIndices
 nditerRows
 nditerValues
+ndoffset
 ndshape
 ndslice
 ndsliceAssign
+ndstrides
 ndzeros
 ndzerosLike
 nextGraphemeClusterBreak

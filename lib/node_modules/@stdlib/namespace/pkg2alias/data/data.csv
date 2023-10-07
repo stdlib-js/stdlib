@@ -2294,9 +2294,11 @@
 "@stdlib/ndarray/iter/indices",nditerIndices
 "@stdlib/ndarray/iter/rows",nditerRows
 "@stdlib/ndarray/iter/values",nditerValues
+"@stdlib/ndarray/offset",ndoffset
 "@stdlib/ndarray/shape",ndshape
 "@stdlib/ndarray/slice",ndslice
 "@stdlib/ndarray/slice-assign",ndsliceAssign
+"@stdlib/ndarray/strides",ndstrides
 "@stdlib/ndarray/zeros",ndzeros
 "@stdlib/ndarray/zeros-like",ndzerosLike
 "@stdlib/string/next-grapheme-cluster-break",nextGraphemeClusterBreak
