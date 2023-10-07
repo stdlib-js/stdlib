@@ -2294,6 +2294,7 @@ nditerEntries
 nditerIndices
 nditerRows
 nditerValues
+ndshape
 ndslice
 ndsliceAssign
 ndzeros

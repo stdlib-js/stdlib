@@ -3679,6 +3679,7 @@ ndarraySafeCasts,"\nndarraySafeCasts( [dtype:any] )\n    Returns a list of ndarr
 ndarraySameKindCasts,"\nndarraySameKindCasts( [dtype:any] )\n    Returns a list of ndarray data types to which a provided ndarray data type\n    can be safely cast or cast within the same \"kind\".\n"
 ndempty,"\nndempty( shape:ArrayLikeObject<integer>|integer[, options:Object] )\n    Returns an uninitialized ndarray having a specified shape and data type.\n"
 ndemptyLike,"\nndemptyLike( x:ndarray[, options:Object] )\n    Returns an uninitialized ndarray having the same shape and data type as a\n    provided input ndarray.\n"
+ndims,"\nndims( x:ndarray )\n    Returns the number of ndarray dimensions.\n"
 nditerColumns,"\nnditerColumns( x:ndarray[, options:Object] )\n    Returns an iterator which iterates over each column in a matrix (or stack of\n    matrices).\n"
 nditerEntries,"\nnditerEntries( x:ndarray[, options:Object] )\n    Returns an iterator which returns [index, value] pairs for each element in a\n    provided ndarray.\n"
 nditerIndices,"\nnditerIndices( shape:Array<integer>[, options:Object] )\n    Returns an iterator which returns indices for use indexing into an ndarray\n    having a specified shape.\n"
