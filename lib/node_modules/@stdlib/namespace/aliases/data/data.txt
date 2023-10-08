@@ -2276,6 +2276,7 @@ nativeClass
 ndarray
 ndarray2array
 ndarrayCastingModes
+ndarrayDataType
 ndarrayDataTypes
 ndarrayDispatch
 ndarrayIndexModes
