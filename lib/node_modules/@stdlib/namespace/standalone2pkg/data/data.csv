@@ -2276,6 +2276,7 @@
 "@stdlib/ndarray-ctor","@stdlib/ndarray/ctor"
 "@stdlib/ndarray-to-array","@stdlib/ndarray/to-array"
 "@stdlib/ndarray-casting-modes","@stdlib/ndarray/casting-modes"
+"@stdlib/ndarray-data-buffer","@stdlib/ndarray/data-buffer"
 "@stdlib/ndarray-dtype","@stdlib/ndarray/dtype"
 "@stdlib/ndarray-dtypes","@stdlib/ndarray/dtypes"
 "@stdlib/ndarray-dispatch","@stdlib/ndarray/dispatch"
