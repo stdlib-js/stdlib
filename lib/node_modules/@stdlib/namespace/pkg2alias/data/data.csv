@@ -2282,10 +2282,14 @@
 "@stdlib/ndarray/index-modes",ndarrayIndexModes
 "@stdlib/ndarray/min-dtype",ndarrayMinDataType
 "@stdlib/ndarray/next-dtype",ndarrayNextDataType
+"@stdlib/ndarray/offset",ndarrayOffset
+"@stdlib/ndarray/order",ndarrayOrder
 "@stdlib/ndarray/orders",ndarrayOrders
 "@stdlib/ndarray/promotion-rules",ndarrayPromotionRules
 "@stdlib/ndarray/safe-casts",ndarraySafeCasts
 "@stdlib/ndarray/same-kind-casts",ndarraySameKindCasts
+"@stdlib/ndarray/shape",ndarrayShape
+"@stdlib/ndarray/strides",ndarrayStrides
 "@stdlib/ndarray/empty",ndempty
 "@stdlib/ndarray/empty-like",ndemptyLike
 "@stdlib/ndarray/ndims",ndims
@@ -2295,11 +2299,8 @@
 "@stdlib/ndarray/iter/indices",nditerIndices
 "@stdlib/ndarray/iter/rows",nditerRows
 "@stdlib/ndarray/iter/values",nditerValues
-"@stdlib/ndarray/offset",ndoffset
-"@stdlib/ndarray/shape",ndshape
 "@stdlib/ndarray/slice",ndslice
 "@stdlib/ndarray/slice-assign",ndsliceAssign
-"@stdlib/ndarray/strides",ndstrides
 "@stdlib/ndarray/zeros",ndzeros
 "@stdlib/ndarray/zeros-like",ndzerosLike
 "@stdlib/string/next-grapheme-cluster-break",nextGraphemeClusterBreak

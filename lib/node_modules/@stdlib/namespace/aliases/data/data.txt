@@ -2282,10 +2282,14 @@ ndarrayDispatch
 ndarrayIndexModes
 ndarrayMinDataType
 ndarrayNextDataType
+ndarrayOffset
+ndarrayOrder
 ndarrayOrders
 ndarrayPromotionRules
 ndarraySafeCasts
 ndarraySameKindCasts
+ndarrayShape
+ndarrayStrides
 ndempty
 ndemptyLike
 ndims
@@ -2295,11 +2299,8 @@ nditerEntries
 nditerIndices
 nditerRows
 nditerValues
-ndoffset
-ndshape
 ndslice
 ndsliceAssign
-ndstrides
 ndzeros
 ndzerosLike
 nextGraphemeClusterBreak
