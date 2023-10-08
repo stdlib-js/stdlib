@@ -930,3 +930,7 @@
 "Ez","invalid argument. Slice exceeds array bounds. Array shape: (%s).","RangeError"
 "F0","invalid argument. Input array values cannot be safely cast to the output array data type. Data types: [%s, %s].","TypeError"
 "F1","invalid argument. Second argument must be an ndarray. Value: `%s`.","TypeError"
+"F2","invalid argument. First argument must be an ndarray having at least two dimensions.","TypeError"
+"F3","invalid argument. Second argument must be an array of nonnegative integers. Value: `%s`.","TypeError"
+"F4","invalid option. Cannot write to read-only array.","Error"
+"F5","invalid argument. First argument must be an array of nonnegative integers. Value: `%s`.","TypeError"
