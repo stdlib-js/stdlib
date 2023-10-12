@@ -1,0 +1,51 @@
+
+{{alias}}( x, dim, slice[, options] )
+    Returns a read-only view of an input ndarray when sliced along a specified
+    dimension.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    dim: integer
+        Index of dimension to slice. If less than zero, the index is resolved
+        relative to the last dimension, with the last dimension corresponding to
+        the value `-1`.
+
+    slice: Slice|integer|null|undefined
+        Slice object or an integer. If provided `null` or `undefined`, the
+        returned view includes all elements along a specified dimension. If
+        provided an integer less than zero, the corresponding element along the
+        specified dimension is resolved relative to the last element along that
+        dimension. For negative integers, the last element corresponds to the
+        value `-1`.
+
+    options: Object (optional)
+        Options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking.
+        Default: true.
+
+    Returns
+    -------
+    out: ndarray
+        Output array view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > x.shape
+    [ 2, 2 ]
+    > var y = {{alias}}( x, 1, 1 )
+    <ndarray>
+    > y.shape
+    [ 2 ]
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ 2, 4 ]
+
+    See Also
+    --------
+
