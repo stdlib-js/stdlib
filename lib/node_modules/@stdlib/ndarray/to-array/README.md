@@ -40,7 +40,7 @@ limitations under the License.
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 ```
 
-#### ndarray2array( arr )
+#### ndarray2array( x )
 
 Converts an [ndarray][@stdlib/ndarray/ctor] to a generic array (which may include nested arrays).
 
@@ -53,10 +53,10 @@ var order = 'row-major';
 var strides = [ 2, 1 ];
 var offset = 0;
 
-var arr = ndarray( 'generic', buffer, shape, strides, offset, order );
+var x = ndarray( 'generic', buffer, shape, strides, offset, order );
 // returns <ndarray>
 
-var out = ndarray2array( arr );
+var out = ndarray2array( x );
 // returns [ [ 1, 2 ], [ 3, 4 ] ]
 ```
 

@@ -25,7 +25,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 /**
 * Converts an ndarray to a generic array (which may include nested arrays).
 *
-* @param arr - input ndarray
+* @param x - input ndarray
 * @returns array (which may include nested arrays)
 *
 * @example
@@ -35,7 +35,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var out = ndarray2array( arr );
 * // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function ndarray2array( array: ndarray ): Array<any>;
+declare function ndarray2array( x: ndarray ): Array<any>;
 
 
 // EXPORTS //

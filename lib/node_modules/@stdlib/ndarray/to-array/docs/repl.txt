@@ -1,10 +1,10 @@
 
-{{alias}}( arr )
+{{alias}}( x )
     Converts an ndarray to a generic array.
 
     Parameters
     ----------
-    arr: ndarray
+    x: ndarray
         Input array.
 
     Returns
