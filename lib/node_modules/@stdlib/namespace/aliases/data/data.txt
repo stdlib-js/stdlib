@@ -2302,6 +2302,7 @@ nditerRows
 nditerValues
 ndslice
 ndsliceAssign
+ndsliceDimension
 ndzeros
 ndzerosLike
 nextGraphemeClusterBreak

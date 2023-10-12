@@ -2302,6 +2302,7 @@
 "@stdlib/ndarray/iter/values",nditerValues
 "@stdlib/ndarray/slice",ndslice
 "@stdlib/ndarray/slice-assign",ndsliceAssign
+"@stdlib/ndarray/slice-dimension",ndsliceDimension
 "@stdlib/ndarray/zeros",ndzeros
 "@stdlib/ndarray/zeros-like",ndzerosLike
 "@stdlib/string/next-grapheme-cluster-break",nextGraphemeClusterBreak
