@@ -129,13 +129,13 @@ import sliceDimension = require( './index' );
 	const x = empty( 'float64', [ 2, 2 ], 'row-major' );
 	const s = new Slice( null );
 
-	sliceDimension( x, s, '5', false ); // $ExpectError
-	sliceDimension( x, s, 5, false ); // $ExpectError
-	sliceDimension( x, s, null, false ); // $ExpectError
-	sliceDimension( x, s, undefined, false ); // $ExpectError
-	sliceDimension( x, s, [ '5' ], false ); // $ExpectError
-	sliceDimension( x, s, {}, false ); // $ExpectError
-	sliceDimension( x, s, ( x: number ): number => x, false ); // $ExpectError
+	sliceDimension( x, 1, s, '5', false ); // $ExpectError
+	sliceDimension( x, 1, s, 5, false ); // $ExpectError
+	sliceDimension( x, 1, s, null, false ); // $ExpectError
+	sliceDimension( x, 1, s, undefined, false ); // $ExpectError
+	sliceDimension( x, 1, s, [ '5' ], false ); // $ExpectError
+	sliceDimension( x, 1, s, {}, false ); // $ExpectError
+	sliceDimension( x, 1, s, ( x: number ): number => x, false ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fifth argument which is not a boolean...
