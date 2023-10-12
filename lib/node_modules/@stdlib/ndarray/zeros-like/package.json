@@ -59,6 +59,7 @@
     "matrix",
     "fill",
     "filled",
-    "zeros"
+    "zeros",
+    "numpy.zeros_like"
   ]
 }
