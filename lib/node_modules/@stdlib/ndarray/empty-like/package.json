@@ -57,6 +57,7 @@
     "vector",
     "ndarray",
     "matrix",
-    "empty"
+    "empty",
+    "numpy.empty_like"
   ]
 }
