@@ -447,7 +447,7 @@ declare function sliceDimension( x: uint8cndarray, dim: number, s: Slice | numbe
 * // returns [ 3, 2 ]
 *
 * var s = new Slice( null, null, -1 );
-* // returns <MultiSlice>
+* // returns <Slice>
 *
 * var y = sliceDimension( x, 0, s, false, false );
 * // returns <ndarray>
@@ -485,7 +485,7 @@ declare function sliceDimension( x: complex128ndarray, dim: number, s: Slice | n
 * // returns [ 3, 2 ]
 *
 * var s = new Slice( null, null, -1 );
-* // returns <MultiSlice>
+* // returns <Slice>
 *
 * var y = sliceDimension( x, 0, s, false, false );
 * // returns <ndarray>
