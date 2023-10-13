@@ -218,7 +218,7 @@ x[ i ] = (float)out;
 
 <!-- loops -->
 
-#### stdlib_ndarray_b( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_b( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -296,7 +296,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_b( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_c( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_c( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -375,7 +375,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_c( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_c_as_b( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_c_as_b( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -453,7 +453,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_c_as_b( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_c_as_f( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_c_as_f( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -531,7 +531,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_c_as_f( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_c_as_k( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_c_as_k( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -609,7 +609,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_c_as_k( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_c_as_s( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_c_as_s( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -687,7 +687,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_c_as_s( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_c_as_t( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_c_as_t( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -765,7 +765,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_c_as_t( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_c_as_z( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_c_as_z( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -844,7 +844,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_c_as_z( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_d( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_d( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -922,7 +922,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_d( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_d_as_b( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_d_as_b( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1000,7 +1000,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_d_as_b( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_d_as_f( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_d_as_f( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1078,7 +1078,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_d_as_f( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_d_as_i( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_d_as_i( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1156,7 +1156,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_d_as_i( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_d_as_k( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_d_as_k( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1234,7 +1234,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_d_as_k( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_d_as_s( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_d_as_s( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1312,7 +1312,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_d_as_s( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_d_as_t( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_d_as_t( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1390,7 +1390,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_d_as_t( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_d_as_u( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_d_as_u( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1468,7 +1468,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_d_as_u( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_f( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_f( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1546,7 +1546,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_f( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_f_as_b( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_f_as_b( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1624,7 +1624,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_f_as_b( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_f_as_d( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_f_as_d( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1702,7 +1702,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_f_as_d( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_f_as_k( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_f_as_k( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1780,7 +1780,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_f_as_k( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_f_as_s( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_f_as_s( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1858,7 +1858,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_f_as_s( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_f_as_t( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_f_as_t( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -1936,7 +1936,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_f_as_t( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_i( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_i( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2014,7 +2014,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_i( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_i_as_b( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_i_as_b( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2092,7 +2092,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_i_as_b( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_i_as_k( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_i_as_k( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2170,7 +2170,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_i_as_k( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_i_as_s( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_i_as_s( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2248,7 +2248,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_i_as_s( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_i_as_t( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_i_as_t( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2326,7 +2326,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_i_as_t( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_k( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_k( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2404,7 +2404,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_k( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_k_as_b( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_k_as_b( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2482,7 +2482,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_k_as_b( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_k_as_s( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_k_as_s( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2560,7 +2560,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_k_as_s( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_s( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_s( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2638,7 +2638,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_s( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_t( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_t( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2716,7 +2716,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_t( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_t_as_b( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_t_as_b( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2794,7 +2794,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_t_as_b( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_u( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_u( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2872,7 +2872,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_u( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_u_as_b( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_u_as_b( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -2950,7 +2950,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_u_as_b( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_u_as_t( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_u_as_t( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -3028,7 +3028,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_u_as_t( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_z( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_z( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -3107,7 +3107,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_z( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_z_as_b( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_z_as_b( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -3185,7 +3185,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_z_as_b( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_z_as_c( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_z_as_c( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -3264,7 +3264,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_z_as_c( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_z_as_d( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_z_as_d( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -3342,7 +3342,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_z_as_d( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_z_as_f( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_z_as_f( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -3420,7 +3420,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_z_as_f( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_z_as_i( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_z_as_i( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -3498,7 +3498,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_z_as_i( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_z_as_k( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_z_as_k( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -3576,7 +3576,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_z_as_k( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_z_as_s( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_z_as_s( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -3654,7 +3654,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_z_as_s( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_z_as_t( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_z_as_t( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 
@@ -3732,7 +3732,7 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_z_as_t( struct ndarray *arrays[], void *fcn );
 ```
 
-#### stdlib_ndarray_z_as_u( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_z_as_u( \*arrays[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 

@@ -191,7 +191,7 @@ static int8_t stdlib_ndarray_unary_1d_flatten( const ndarrayUnaryFcn f, const in
 *     stdlib_ndarray_b_b_nd
 * };
 *
-* // Define a list of unary ndarray functions using loop blocking...
+* // Define a list of unary ndarray functions using loop blocking:
 * ndarrayUnaryFcn blocked_functions[] = {
 *     stdlib_ndarray_b_b_2d_blocked,
 *     stdlib_ndarray_b_b_3d_blocked,
@@ -207,16 +207,21 @@ static int8_t stdlib_ndarray_unary_1d_flatten( const ndarrayUnaryFcn f, const in
 * // Create a unary function dispatch object:
 * struct ndarrayUnaryDispatchObject obj = {
 *     // Array containing unary ndarray functions:
-*     unary,
+*     functions,
 *
 *     // Number of unary ndarray functions:
 *     12,
 *
 *     // Array containing unary ndarray functions using loop blocking:
-*     blocked_unary,
+*     blocked_functions,
 *
 *     // Number of unary ndarray functions using loop blocking:
 *     9
+* }
+*
+* // Define a function which performs dispatch:
+* int8_t stdlib_ndarray_b_b( struct ndarray *arrays[], void *fcn ) {
+*     return stdlib_ndarray_unary_dispatch( &obj, arrays, fcn );
 * }
 *
 * // ...

@@ -180,6 +180,11 @@ static int8_t stdlib_ndarray_nullary_1d_flatten( const ndarrayNullaryFcn f, cons
 *     9
 * }
 *
+* // Define a function which performs dispatch:
+* int8_t stdlib_ndarray_b( struct ndarray *arrays[], void *fcn ) {
+*     return stdlib_ndarray_nullary_dispatch( &obj, arrays, fcn );
+* }
+*
 * // ...
 *
 * // Create an ndarray:

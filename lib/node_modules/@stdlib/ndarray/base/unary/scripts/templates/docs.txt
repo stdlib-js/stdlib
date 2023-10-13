@@ -1,4 +1,4 @@
-#### stdlib_ndarray_{{SIGNATURE}}( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_ndarray_{{SIGNATURE}}( \*arrays[], \*fcn )
 
 Applies a unary callback to an input ndarray and assigns results to elements in an output ndarray.
 
