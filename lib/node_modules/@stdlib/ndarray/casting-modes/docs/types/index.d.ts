@@ -28,6 +28,7 @@
 *     -   'none': only allow casting between identical types
 *     -   'equiv': allow casting between identical and byte swapped types
 *     -   'safe': only allow "safe" casts
+*     -   'mostly-safe': allow "safe" casts and, for floating-point data types, downcasts
 *     -   'same-kind': allow "safe" casts and casts within the same kind (e.g.,
 *    between signed integers or between floats)
 *     -   'unsafe': allow casting between all types (including between integers and
@@ -37,7 +38,7 @@
 *
 * @example
 * var list = modes();
-* // returns [ 'none', 'equiv', 'safe', 'same-kind', 'unsafe' ]
+* // returns [ 'none', 'equiv', 'safe', 'mostly-safe', 'same-kind', 'unsafe' ]
 */
 declare function modes(): Array<string>;
 

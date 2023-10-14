@@ -46,7 +46,7 @@ Returns a list of ndarray casting modes.
 
 ```javascript
 var out = modes();
-// returns [ 'none', 'equiv', 'safe', 'same-kind', 'unsafe' ]
+// returns [ 'none', 'equiv', 'safe', 'mostly-safe', 'same-kind', 'unsafe' ]
 ```
 
 The output `array` contains the following modes:
@@ -54,6 +54,7 @@ The output `array` contains the following modes:
 -   `none`: only allow casting between identical types.
 -   `equiv`: allow casting between identical and byte swapped types.
 -   `safe`: only allow "safe" casts.
+-   `mostly-safe`: allow "safe" casts and, for floating-point data types, downcasts.
 -   `same-kind`: allow "safe" casts and casts within the same kind (e.g., between signed integers or between floats).
 -   `unsafe`: allow casting between all types (including between integers and floats).
 
@@ -98,6 +99,9 @@ bool = isMode( 'equiv' );
 // returns true
 
 bool = isMode( 'safe' );
+// returns true
+
+bool = isMode( 'mostly-safe' );
 // returns true
 
 bool = isMode( 'same-kind' );
