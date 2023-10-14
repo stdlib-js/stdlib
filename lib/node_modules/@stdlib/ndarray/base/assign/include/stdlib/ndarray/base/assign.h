@@ -45,7 +45,9 @@
 #include "assign/c_c.h"
 #include "assign/c_z.h"
 
+#include "assign/d_c.h"
 #include "assign/d_d.h"
+#include "assign/d_f.h"
 #include "assign/d_z.h"
 
 #include "assign/f_c.h"
@@ -90,6 +92,7 @@
 #include "assign/u_u.h"
 #include "assign/u_z.h"
 
+#include "assign/z_c.h"
 #include "assign/z_z.h"
 // END LOOPS
 

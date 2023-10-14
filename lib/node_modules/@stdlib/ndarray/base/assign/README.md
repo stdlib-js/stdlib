@@ -1143,6 +1143,90 @@ The function accepts the following arguments:
 int8_t stdlib_ndarray_assign_c_z( struct ndarray *arrays[] );
 ```
 
+#### stdlib_ndarray_assign_d_c( \*arrays[] )
+
+Assigns elements in an input ndarray to elements in an output ndarray.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT64;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_COMPLEX64;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shape[] = { 2, 2 };
+
+// Define the strides:
+int64_t sx[] = { 16, 8 };
+int64_t sy[] = { 16, 8 };
+
+// Define the offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shape, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Copy elements:
+int8_t status = stdlib_ndarray_assign_d_c( arrays );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+
+```c
+int8_t stdlib_ndarray_assign_d_c( struct ndarray *arrays[] );
+```
+
 #### stdlib_ndarray_assign_d_d( \*arrays[] )
 
 Assigns elements in an input ndarray to elements in an output ndarray.
@@ -1225,6 +1309,90 @@ The function accepts the following arguments:
 
 ```c
 int8_t stdlib_ndarray_assign_d_d( struct ndarray *arrays[] );
+```
+
+#### stdlib_ndarray_assign_d_f( \*arrays[] )
+
+Assigns elements in an input ndarray to elements in an output ndarray.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT64;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT32;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shape[] = { 2, 2 };
+
+// Define the strides:
+int64_t sx[] = { 16, 8 };
+int64_t sy[] = { 8, 4 };
+
+// Define the offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shape, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Copy elements:
+int8_t status = stdlib_ndarray_assign_d_f( arrays );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+
+```c
+int8_t stdlib_ndarray_assign_d_f( struct ndarray *arrays[] );
 ```
 
 #### stdlib_ndarray_assign_d_z( \*arrays[] )
@@ -4333,6 +4501,90 @@ The function accepts the following arguments:
 
 ```c
 int8_t stdlib_ndarray_assign_u_z( struct ndarray *arrays[] );
+```
+
+#### stdlib_ndarray_assign_z_c( \*arrays[] )
+
+Assigns elements in an input ndarray to elements in an output ndarray.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_COMPLEX128;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_COMPLEX64;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shape[] = { 2, 2 };
+
+// Define the strides:
+int64_t sx[] = { 32, 16 };
+int64_t sy[] = { 16, 8 };
+
+// Define the offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shape, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, ndims, shape, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Copy elements:
+int8_t status = stdlib_ndarray_assign_z_c( arrays );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+
+```c
+int8_t stdlib_ndarray_assign_z_c( struct ndarray *arrays[] );
 ```
 
 #### stdlib_ndarray_assign_z_z( \*arrays[] )
