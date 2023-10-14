@@ -105,6 +105,7 @@ The function accepts the following `options`:
     -   `none`: only allow casting between identical types.
     -   `equiv`: allow casting between identical and byte swapped types.
     -   `safe`: only allow "safe" casts.
+    -   `mostly-safe`: allow "safe" casts and, for floating-point data types, downcasts.
     -   `same-kind`: allow "safe" casts and casts within the same kind (e.g., between signed integers or between floats).
     -   `unsafe`: allow casting between all types (including between integers and floats).
 
@@ -230,7 +231,7 @@ var str = arr.toString();
 
 // Serialize the array as JSON:
 str = JSON.stringify( arr.toJSON() );
-// returns '{"type":"ndarray","dtype":"float32","flags":{},"order":"row-major","shape":[3,3,3,3],"strides":[27,9,3,1],"data":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}'
+// e.g., returns '{"type":"ndarray","dtype":"float32","flags":{},"order":"row-major","shape":[3,3,3,3],"strides":[27,9,3,1],"data":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}'
 ```
 
 </section>
