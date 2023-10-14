@@ -2282,6 +2282,7 @@
 "@stdlib/ndarray/dispatch","@stdlib/ndarray/array,@stdlib/ndarray/ctor"
 "@stdlib/ndarray/index-modes","@stdlib/ndarray/array,@stdlib/ndarray/ctor"
 "@stdlib/ndarray/min-dtype","@stdlib/ndarray/dtypes,@stdlib/ndarray/promotion-rules,@stdlib/ndarray/safe-casts"
+"@stdlib/ndarray/mostly-safe-casts","@stdlib/ndarray/casting-modes,@stdlib/ndarray/dtypes,@stdlib/ndarray/safe-casts,@stdlib/ndarray/same-kind-casts"
 "@stdlib/ndarray/next-dtype","@stdlib/ndarray/dtypes,@stdlib/ndarray/promotion-rules,@stdlib/ndarray/safe-casts"
 "@stdlib/ndarray/offset","@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/ndarray/shape,@stdlib/ndarray/strides"
 "@stdlib/ndarray/order","@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/ndarray/orders,@stdlib/ndarray/shape,@stdlib/ndarray/strides"

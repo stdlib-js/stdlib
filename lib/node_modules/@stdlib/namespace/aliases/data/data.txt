@@ -2282,6 +2282,7 @@ ndarrayDataTypes
 ndarrayDispatch
 ndarrayIndexModes
 ndarrayMinDataType
+ndarrayMostlySafeCasts
 ndarrayNextDataType
 ndarrayOffset
 ndarrayOrder

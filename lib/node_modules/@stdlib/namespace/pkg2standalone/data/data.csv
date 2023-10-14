@@ -2282,6 +2282,7 @@
 "@stdlib/ndarray/dispatch","@stdlib/ndarray-dispatch"
 "@stdlib/ndarray/index-modes","@stdlib/ndarray-index-modes"
 "@stdlib/ndarray/min-dtype","@stdlib/ndarray-min-dtype"
+"@stdlib/ndarray/mostly-safe-casts","@stdlib/ndarray-mostly-safe-casts"
 "@stdlib/ndarray/next-dtype","@stdlib/ndarray-next-dtype"
 "@stdlib/ndarray/offset","@stdlib/ndarray-offset"
 "@stdlib/ndarray/order","@stdlib/ndarray-order"
