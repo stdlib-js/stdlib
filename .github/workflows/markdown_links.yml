@@ -95,7 +95,17 @@ jobs:
           # Define the path to a utility for validating links:
           validate="${root}/lib/node_modules/@stdlib/_tools/links/validate/bin/cli"
 
-          ${validate} '${{ steps.results.outputs.all_links }}'
+          output=$(echo '${{ steps.results.outputs.all_links }}' | ${validate})
+          if [[ "${output}" != "All links are valid." ]]; then
+            echo "| Error | ID | URL |" >> $GITHUB_STEP_SUMMARY
+            echo "| ----- | -- | --- |" >> $GITHUB_STEP_SUMMARY
+
+            echo "$output" | jq -r '.[] | [.error, .id, .url] | @tsv' | while IFS=$'\t' read -r error id url; do
+              echo "| $error | $id | $url |" >> $GITHUB_STEP_SUMMARY
+            done
+          else
+            echo "$output"
+          fi
 
       # Log the results:
       - name: 'Log results'
