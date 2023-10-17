@@ -70,6 +70,26 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        with:
+          node-version: '16' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Initialize development environment:
+      - name: 'Initialize development environment'
+        run: |
+          make init
+        timeout-minutes: 5
+
       # Initialize log files:
       - name: 'Initialize log files'
         run: |
