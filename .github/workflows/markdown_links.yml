@@ -70,6 +70,22 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
+      # Initialize log files:
+      - name: 'Initialize log files'
+        run: |
+          mkdir -p "${{ env.LOG_DIR }}"
+          touch "${{ env.LOG_FILE_FAILURES }}"
+          touch "${{ env.LOG_FILE_WARNINGS }}"
+        timeout-minutes: 2
+
+      # Check for broken links:
+      - name: 'Check links'
+        uses: stdlib-js/check-markdown-link-definitions-action@main
+        id: results
+        with:
+          exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
+        timeout-minutes: 240
+
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA corresponding to v3.8.1
@@ -89,22 +105,6 @@ jobs:
         run: |
           make init
         timeout-minutes: 5
-
-      # Initialize log files:
-      - name: 'Initialize log files'
-        run: |
-          mkdir -p "${{ env.LOG_DIR }}"
-          touch "${{ env.LOG_FILE_FAILURES }}"
-          touch "${{ env.LOG_FILE_WARNINGS }}"
-        timeout-minutes: 2
-
-      # Check for broken links:
-      - name: 'Check links'
-        uses: stdlib-js/check-markdown-link-definitions-action@main
-        id: results
-        with:
-          exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
-        timeout-minutes: 240
 
       # Check whether links are included in `docs/links/database.json` and use the correct identifier:
       - name: 'Check links against database'
