@@ -85,7 +85,6 @@ jobs:
             This PR changes the permissions of project `cli` scripts to be executable.
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
-            documentation
             automated-pr
           team-reviewers: |
             reviewers
