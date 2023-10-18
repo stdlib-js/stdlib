@@ -123,7 +123,7 @@ jobs:
             echo "| --- | -- | ----- |" >> $GITHUB_STEP_SUMMARY
 
             echo "$output" | jq -r '.[] | [.error, .id, .url] | @tsv' | while IFS=$'\t' read -r error id url; do
-              echo "| $url | $id | $error |" >> $GITHUB_STEP_SUMMARY
+              echo "| $url | \`$id\` | $error |" >> $GITHUB_STEP_SUMMARY
             done
           else
             echo "$output"
