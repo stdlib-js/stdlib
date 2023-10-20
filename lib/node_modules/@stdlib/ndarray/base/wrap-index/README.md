@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Wrap Index
+# wrapIndex
 
 > Wrap an index on the interval `[0,max]`.
 
