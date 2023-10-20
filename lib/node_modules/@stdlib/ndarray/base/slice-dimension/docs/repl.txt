@@ -13,7 +13,7 @@
         the value `-1`.
 
     slice: Slice|integer
-        Slice object or an integer. If provided an integer less than zero, the
+        Slice object or an integer. If an integer less than zero, the
         corresponding element along the specified dimension is resolved relative
         to the last element along that dimension. For negative integers, the
         last element corresponds to the value `-1`.
