@@ -699,7 +699,6 @@ declare function sliceAssign( x: ndarray, y: complex64ndarray, s: MultiSlice, st
 * @example
 * var Slice = require( `@stdlib/slice/ctor` );
 * var MultiSlice = require( `@stdlib/slice/multi` );
-* var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -760,7 +759,6 @@ declare function sliceAssign<T = unknown>( x: ndarray, y: genericndarray<T>, s: 
 * @example
 * var Slice = require( `@stdlib/slice/ctor` );
 * var MultiSlice = require( `@stdlib/slice/multi` );
-* var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndzeros = require( `@stdlib/ndarray/zeros` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
