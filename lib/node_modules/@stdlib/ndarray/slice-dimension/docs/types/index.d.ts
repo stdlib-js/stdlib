@@ -522,7 +522,6 @@ declare function sliceDimension( x: complex64ndarray, dim: number, s: SliceArgum
 *
 * @example
 * var Slice = require( `@stdlib/slice/ctor` );
-* var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
@@ -566,7 +565,6 @@ declare function sliceDimension<T = unknown>( x: genericndarray<T>, dim: number,
 *
 * @example
 * var Slice = require( `@stdlib/slice/ctor` );
-* var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
