@@ -507,7 +507,6 @@ declare function slice( x: complex64ndarray, s: MultiSlice, strict: boolean, wri
 * @example
 * var Slice = require( `@stdlib/slice/ctor` );
 * var MultiSlice = require( `@stdlib/slice/multi` );
-* var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
@@ -551,7 +550,6 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, strict
 * @example
 * var Slice = require( `@stdlib/slice/ctor` );
 * var MultiSlice = require( `@stdlib/slice/multi` );
-* var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
