@@ -1,0 +1,31 @@
+
+{{alias}}( idx, max )
+    Normalizes an index to the interval [0,max].
+
+    If an index exceeds index bounds, the function returns -1.
+
+    Parameters
+    ----------
+    idx: integer
+        Index to normalize.
+
+    max: integer
+        Maximum index value.
+
+    Returns
+    -------
+    out: integer
+        Normalized index.
+
+    Examples
+    --------
+    > var idx = {{alias}}( 2, 10 )
+    2
+    > idx = {{alias}}( -5, 10 )
+    6
+    > idx = {{alias}}( 15, 10 )
+    -1
+
+    See Also
+    --------
+
