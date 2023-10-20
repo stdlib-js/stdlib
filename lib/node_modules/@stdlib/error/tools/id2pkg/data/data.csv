@@ -3136,6 +3136,8 @@
 "0hl",@stdlib/ndarray-base-assert-is-index-mode
 "1cm",@stdlib/ndarray/base/assert/is-integer-data-type
 "1cn",@stdlib/ndarray-base-assert-is-integer-data-type
+"1kE",@stdlib/ndarray/base/assert/is-mostly-safe-data-type-cast
+"1kF",@stdlib/ndarray-base-assert-is-mostly-safe-data-type-cast
 "1co",@stdlib/ndarray/base/assert/is-numeric-data-type
 "1cp",@stdlib/ndarray-base-assert-is-numeric-data-type
 "0hm",@stdlib/ndarray/base/assert/is-order
@@ -3162,6 +3164,8 @@
 "1cx",@stdlib/ndarray-base-assert-is-unsigned-integer-data-type
 "0i0",@stdlib/ndarray/base/assert
 "0i1",@stdlib/ndarray-base-assert
+"1kG",@stdlib/ndarray/base/assign
+"1kH",@stdlib/ndarray-base-assign
 "1cy",@stdlib/ndarray/base/binary-loop-interchange-order
 "1cz",@stdlib/ndarray-base-binary-loop-interchange-order
 "1d0",@stdlib/ndarray/base/binary-tiling-block-size
@@ -3190,6 +3194,8 @@
 "0iL",@stdlib/ndarray-base-clamp-index
 "0iM",@stdlib/ndarray/base/ctor
 "0iN",@stdlib/ndarray-base-ctor
+"1kI",@stdlib/ndarray/base/data-buffer
+"1kJ",@stdlib/ndarray-base-data-buffer
 "0iO",@stdlib/ndarray/base/dtype-char
 "0iP",@stdlib/ndarray-base-dtype-char
 "0iQ",@stdlib/ndarray/base/dtype-desc
@@ -3202,6 +3208,8 @@
 "0iX",@stdlib/ndarray-base-dtype-resolve-str
 "0iY",@stdlib/ndarray/base/dtype-str2enum
 "0iZ",@stdlib/ndarray-base-dtype-str2enum
+"1kK",@stdlib/ndarray/base/dtype
+"1kL",@stdlib/ndarray-base-dtype
 "0ia",@stdlib/ndarray/base/dtype2c
 "0ib",@stdlib/ndarray-base-dtype2c
 "0ic",@stdlib/ndarray/base/dtypes2signatures
@@ -3260,6 +3268,8 @@
 "0jF",@stdlib/ndarray-base-numel
 "1jg",@stdlib/ndarray/base/offset
 "1jh",@stdlib/ndarray-base-offset
+"1kM",@stdlib/ndarray/base/order
+"1kN",@stdlib/ndarray-base-order
 "1dE",@stdlib/ndarray/base/output-policy-enum2str
 "1dF",@stdlib/ndarray-base-output-policy-enum2str
 "1dG",@stdlib/ndarray/base/output-policy-resolve-enum
@@ -3274,6 +3284,8 @@
 "0jJ",@stdlib/ndarray-base-prepend-singleton-dimensions
 "0jK",@stdlib/ndarray/base/remove-singleton-dimensions
 "0jL",@stdlib/ndarray-base-remove-singleton-dimensions
+"1kO",@stdlib/ndarray/base/reverse
+"1kP",@stdlib/ndarray-base-reverse
 "0jM",@stdlib/ndarray/base/serialize-meta-data
 "0jN",@stdlib/ndarray-base-serialize-meta-data
 "1ji",@stdlib/ndarray/base/shape
@@ -3284,6 +3296,8 @@
 "0jR",@stdlib/ndarray-base-singleton-dimensions
 "1jO",@stdlib/ndarray/base/slice-assign
 "1jP",@stdlib/ndarray-base-slice-assign
+"1kQ",@stdlib/ndarray/base/slice-dimension
+"1kR",@stdlib/ndarray-base-slice-dimension
 "1jQ",@stdlib/ndarray/base/slice
 "1jR",@stdlib/ndarray-base-slice
 "1jk",@stdlib/ndarray/base/strides
@@ -3322,12 +3336,16 @@
 "0jn",@stdlib/ndarray-casting-modes
 "0jo",@stdlib/ndarray/ctor
 "0jp",@stdlib/ndarray-ctor
+"1kS",@stdlib/ndarray/data-buffer
+"1kT",@stdlib/ndarray-data-buffer
 "1dU",@stdlib/ndarray/defaults
 "1dV",@stdlib/ndarray-defaults
 "1dW",@stdlib/ndarray/dispatch-by
 "1dX",@stdlib/ndarray-dispatch-by
 "0jq",@stdlib/ndarray/dispatch
 "0jr",@stdlib/ndarray-dispatch
+"1kU",@stdlib/ndarray/dtype
+"1kV",@stdlib/ndarray-dtype
 "0js",@stdlib/ndarray/dtypes
 "0jt",@stdlib/ndarray-dtypes
 "1dY",@stdlib/ndarray/empty-like
@@ -3360,6 +3378,8 @@
 "1k3",@stdlib/ndarray-maybe-broadcast-array
 "0k0",@stdlib/ndarray/min-dtype
 "0k1",@stdlib/ndarray-min-dtype
+"1kW",@stdlib/ndarray/mostly-safe-casts
+"1kX",@stdlib/ndarray-mostly-safe-casts
 "1k4",@stdlib/ndarray/ndims
 "1k5",@stdlib/ndarray-ndims
 "0k2",@stdlib/ndarray/next-dtype
@@ -3368,6 +3388,8 @@
 "1k7",@stdlib/ndarray-numel
 "1k8",@stdlib/ndarray/offset
 "1k9",@stdlib/ndarray-offset
+"1kY",@stdlib/ndarray/order
+"1kZ",@stdlib/ndarray-order
 "0k4",@stdlib/ndarray/orders
 "0k5",@stdlib/ndarray-orders
 "1dc",@stdlib/ndarray/output-dtype-policies
@@ -3383,6 +3405,8 @@
 "1kB",@stdlib/ndarray-shape
 "1jS",@stdlib/ndarray/slice-assign
 "1jT",@stdlib/ndarray-slice-assign
+"1ka",@stdlib/ndarray/slice-dimension
+"1kb",@stdlib/ndarray-slice-dimension
 "1jU",@stdlib/ndarray/slice
 "1jV",@stdlib/ndarray-slice
 "1kC",@stdlib/ndarray/strides
@@ -4053,6 +4077,8 @@
 "0ta",@stdlib/simulate/iter/triangle-wave
 "0tb",@stdlib/simulate-iter-triangle-wave
 "0td",@stdlib/simulate
+"1kc",@stdlib/slice/base/args2multislice
+"1kd",@stdlib/slice-base-args2multislice
 "1j8",@stdlib/slice/base/length
 "1j9",@stdlib/slice-base-length
 "1jW",@stdlib/slice/base/nonreduced-dimensions

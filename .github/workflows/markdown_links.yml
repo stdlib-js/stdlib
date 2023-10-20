@@ -86,6 +86,26 @@ jobs:
           exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
         timeout-minutes: 240
 
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        with:
+          node-version: '16' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Initialize development environment:
+      - name: 'Initialize development environment'
+        run: |
+          make init
+        timeout-minutes: 5
+
       # Check whether links are included in `docs/links/database.json` and use the correct identifier:
       - name: 'Check links against database'
         run: |
@@ -95,7 +115,19 @@ jobs:
           # Define the path to a utility for validating links:
           validate="${root}/lib/node_modules/@stdlib/_tools/links/validate/bin/cli"
 
-          ${validate} '${{ steps.results.outputs.all_links }}'
+          echo "## Link Validation" >> $GITHUB_STEP_SUMMARY
+
+          output=$(echo '${{ steps.results.outputs.all_links }}' | ${validate})
+          if [[ "${output}" != "All links are valid." ]]; then
+            echo "| URL | ID | Error |" >> $GITHUB_STEP_SUMMARY
+            echo "| --- | -- | ----- |" >> $GITHUB_STEP_SUMMARY
+
+            echo "$output" | jq -r '.[] | [.error, .id, .url] | @tsv' | while IFS=$'\t' read -r error id url; do
+              echo "| $url | \`$id\` | $error |" >> $GITHUB_STEP_SUMMARY
+            done
+          else
+            echo "$output"
+          fi
 
       # Log the results:
       - name: 'Log results'

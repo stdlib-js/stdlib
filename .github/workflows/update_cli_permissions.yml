@@ -1,0 +1,92 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: update_cli_permissions
+
+# Workflow triggers:
+on:
+  schedule:
+    # Run the workflow once a week (Sunday at midnight):
+    - cron: '0 0 * * 0'
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for making CLI scripts executable:
+  update:
+
+    # Define a display name:
+    name: 'Update CLI Permissions'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Make CLI scripts executable:
+      - name: 'Make CLI scripts executable'
+        run: |
+          files=$(find lib/node_modules/@stdlib -type d -name 'bin' -exec find {} -type f -name 'cli' \;)
+
+          for file in $files; do
+            chmod +x "$file"
+          done
+
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
+      # Create a pull request with the updated files:
+      - name: 'Create pull request'
+        id: cpr
+        # Pin action to full length commit SHA corresponding to v5.0.2
+        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
+        with:
+          title: 'fix: make CLI scripts executable'
+          commit-message: 'fix: make CLI scripts executable'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
+          body: |
+            This PR changes the permissions of project `cli` scripts to be executable.
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          labels: |
+            automated-pr
+          team-reviewers: |
+            reviewers
+          branch: update-cli-permissions
+          delete-branch: true
