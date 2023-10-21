@@ -3674,6 +3674,7 @@ ndarrayDataTypes,"var out = ndarrayDataTypes()\nout = ndarrayDataTypes( 'floatin
 ndarrayDispatch,"var t = [ 'float64', 'float64', 'float32', 'float32' ];\nvar d = [ base.abs, base.absf ];\nvar f = ndarrayDispatch( base.ndarrayUnary, t, d, 2, 1, 1 );\nvar xbuf = new Float64Array( [ -1.0, -2.0, -3.0, -4.0 ] );\nvar x = ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );\nvar ybuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0 ] );\nvar y = ndarray( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );\nf( x, y );\nybuf\n"
 ndarrayIndexModes,"var out = ndarrayIndexModes()\n"
 ndarrayMinDataType,"var dt = ndarrayMinDataType( 3.141592653589793 )\ndt = ndarrayMinDataType( 3 )\ndt = ndarrayMinDataType( -3 )\ndt = ndarrayMinDataType( '-3' )\n"
+ndarrayMostlySafeCasts,"var out = ndarrayMostlySafeCasts( 'float32' )\n"
 ndarrayNextDataType,"var out = ndarrayNextDataType( 'float32' )\n"
 ndarrayOffset,"var n = ndarrayOffset( ndzeros( [ 3, 3, 3 ] ) )\n"
 ndarrayOrder,"var opts = { 'order': 'row-major' };\nvar dt = ndarrayOrder( ndzeros( [ 3, 3, 3 ], opts ) )\n"
