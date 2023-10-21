@@ -2304,6 +2304,7 @@
 "@stdlib/ndarray/slice","@stdlib/ndarray-slice"
 "@stdlib/ndarray/slice-assign","@stdlib/ndarray-slice-assign"
 "@stdlib/ndarray/slice-dimension","@stdlib/ndarray-slice-dimension"
+"@stdlib/ndarray/slice-dimension-from","@stdlib/ndarray-slice-dimension-from"
 "@stdlib/ndarray/slice-dimension-to","@stdlib/ndarray-slice-dimension-to"
 "@stdlib/ndarray/zeros","@stdlib/ndarray-zeros"
 "@stdlib/ndarray/zeros-like","@stdlib/ndarray-zeros-like"
