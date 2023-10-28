@@ -37,7 +37,7 @@
 
 Always abide by the **Law of Code Style Consistency**, or, in other words, _when in Rome, do as the Romans do_. 
 
-While the code base to which you want to contribute may be a horrific mess in terms of aesthetic appearance and style, style consistency takes precedent over personal preference and canon. The more consistent a code base is in terms of style, the more readers of the code can focus on what the code does rather than deciphering changes in style.
+While the code base to which you want to contribute may be a horrific mess in terms of aesthetic appearance and style, style consistency takes precedence over personal preference and canon. The more consistent a code base is in terms of style, the more readers of the code can focus on what the code does rather than deciphering changes in style.
 
 So, even if your peers commit various _faux pas_ outlined below, as long as you are contributing to their code base, abide by their conventions.
 
