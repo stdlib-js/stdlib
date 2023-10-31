@@ -6,3 +6,4 @@ Options:
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
          --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
+         --mode mode           Type of character to reverse. Default: 'grapheme'.

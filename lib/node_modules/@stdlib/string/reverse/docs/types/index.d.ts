@@ -19,28 +19,43 @@
 // TypeScript Version: 4.1
 
 /**
+* Interface describing function options.
+*/
+interface Options {
+	/**
+	* Specifies the type of characters to reverse (default: 'grapheme').
+	*
+	* ## Notes
+	*
+	* -   The following modes are supported:
+	*
+	*     -   `'grapheme'`: grapheme clusters. Appropriate for strings containing visual characters which can span multiple Unicode code points (e.g., emoji).
+	*     -   `'code_point'`: Unicode code points. Appropriate for strings containing visual characters which are comprised of more than one Unicode code unit (e.g., ideographic symbols and punctuation and mathematical alphanumerics).
+	*     -   `'code_unit'`: UTF-16 code units. Appropriate for strings containing visual characters drawn from the basic multilingual plane (BMP) (e.g., common characters, such as those from the Latin, Greek, and Cyrillic alphabets).
+	*/
+	mode?: 'grapheme' | 'code_point' | 'code_unit';
+}
+
+/**
 * Reverses a string.
 *
 * @param str - input string
+* @param options - options
 * @returns reversed string
 *
 * @example
-* var out = reverseString( 'last man standing' );
+* var out = reverseString( 'last man standing', {
+*     'mode': 'code_unit'
+* });
 * // returns 'gnidnats nam tsal'
 *
 * @example
-* var out = reverseString( 'presidential election' );
-* // returns 'noitcele laitnediserp'
-*
-* @example
-* var out = reverseString( 'javaScript' );
-* // returns 'tpircSavaj'
-*
-* @example
-* var out = reverseString( 'Hidden Treasures' );
-* // returns 'serusaerT neddiH'
+* var out = reverseString( '🐶🐮🐷🐰🐸', {
+*     'mode': 'grapheme'
+* });
+* // returns '🐸🐰🐷🐮🐶'
 */
-declare function reverseString( str: string ): string;
+declare function reverseString( str: string, options?: Options ): string;
 
 
 // EXPORTS //
