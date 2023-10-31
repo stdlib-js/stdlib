@@ -3695,6 +3695,7 @@ nditerValues,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerValues( x
 ndslice,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar s = new MultiSlice( null, 1 )\nvar y = ndslice( x, s )\ny.shape\nndarray2array( y )\n"
 ndsliceAssign,"var y = ndzeros( [ 2, 2 ] )\nvar x = scalar2ndarray( 3.0 )\nvar s = new MultiSlice( null, 1 )\nvar out = ndsliceAssign( x, y, s )\nvar bool = ( out === y )\nndarray2array( y )\n"
 ndsliceDimension,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar y = ndsliceDimension( x, 1, 1 )\ny.shape\nndarray2array( y )\n"
+ndsliceDimensionFrom,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar y = ndsliceDimensionFrom( x, 1, 1 )\ny.shape\nndarray2array( y )\n"
 ndsliceDimensionTo,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar y = ndsliceDimensionTo( x, 1, 1 )\ny.shape\nndarray2array( y )\n"
 ndzeros,"var arr = ndzeros( [ 2, 2 ] )\nvar sh = arr.shape\nvar dt = arr.dtype\n"
 ndzerosLike,"var x = base.ndzeros( 'float64', [ 2, 2 ], 'row-major' )\nvar sh = x.shape\nvar dt = x.dtype\nvar y = ndzerosLike( x )\nsh = y.shape\ndt = y.dtype\n"
