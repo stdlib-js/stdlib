@@ -855,23 +855,20 @@ interface Namespace {
 	* Reverses a string.
 	*
 	* @param str - input string
+	* @param options - options
 	* @returns reversed string
 	*
 	* @example
-	* var out = ns.reverseString( 'last man standing' );
+	* var out = ns.reverseString( 'last man standing', {
+	*     'mode': 'code_unit'
+	* });
 	* // returns 'gnidnats nam tsal'
 	*
 	* @example
-	* var out = ns.reverseString( 'presidential election' );
-	* // returns 'noitcele laitnediserp'
-	*
-	* @example
-	* var out = ns.reverseString( 'javaScript' );
-	* // returns 'tpircSavaj'
-	*
-	* @example
-	* var out = ns.reverseString( 'Hidden Treasures' );
-	* // returns 'serusaerT neddiH'
+	* var out = ns.reverseString( '🐶🐮🐷🐰🐸', {
+	*     'mode': 'grapheme'
+	* });
+	* // returns '🐸🐰🐷🐮🐶'
 	*/
 	reverseString: typeof reverseString;
 
