@@ -37,7 +37,5 @@
     "**/docs/types/*.d.ts",
     "**/@stdlib/types/*.d.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": []
 }

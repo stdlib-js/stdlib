@@ -19,7 +19,7 @@
 # DEPENDENCIES #
 
 # Note: keep in alphabetical order...
-include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/dtslint.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/eslint.mk
 
 
 # RULES #
@@ -65,8 +65,8 @@ lint-typescript: lint-typescript-src lint-typescript-tests lint-typescript-examp
 # make lint-typescript-src TYPESCRIPT_SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-typescript-src:
-ifeq ($(TYPESCRIPT_LINTER), tslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) tslint-src
+ifeq ($(TYPESCRIPT_LINTER), eslint)
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-src
 endif
 
 .PHONY: lint-typescript-src
@@ -88,34 +88,11 @@ endif
 # make lint-typescript-tests TYPESCRIPT_TESTS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-typescript-tests:
-ifeq ($(TYPESCRIPT_LINTER), tslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) tslint-tests
+ifeq ($(TYPESCRIPT_LINTER), eslint)
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-ts-tests
 endif
 
 .PHONY: lint-typescript-tests
-
-#/
-# Lints TypeScript examples files.
-#
-# ## Notes
-#
-# -   This rule is useful when wanting to glob for TypeScript examples files (e.g., lint all TypeScript examples files for a particular package).
-#
-# @param {string} [TYPESCRIPT_EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
-#
-# @example
-# make lint-typescript-examples
-#
-# @example
-# make lint-typescript-examples TYPESCRIPT_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
-#/
-lint-typescript-examples:
-ifeq ($(TYPESCRIPT_LINTER), tslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) tslint-examples
-endif
-
-.PHONY: lint-typescript-examples
 
 #/
 # Lints TypeScript declaration files.
@@ -134,8 +111,8 @@ endif
 # make lint-typescript-declarations TYPESCRIPT_DECLARATIONS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-typescript-declarations:
-ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), dtslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) dtslint-declarations
+ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), eslint)
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-ts-src
 endif
 
 .PHONY: lint-typescript-declarations
@@ -155,7 +132,7 @@ endif
 #/
 lint-typescript-files:
 ifeq ($(TYPESCRIPT_LINTER), tslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) tslint-files
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) eslint-ts-files
 endif
 
 .PHONY: lint-typescript-files
@@ -174,8 +151,8 @@ endif
 # make lint-typescript-declarations-files FILES='/foo/index.js /bar/index.js'
 #/
 lint-typescript-declarations-files:
-ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), dtslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) dtslint-files
+ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), eslint)
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) eslint-ts-files
 endif
 
 .PHONY: lint-typescript-declarations-files

@@ -117,10 +117,10 @@ JAVASCRIPT_LINTER ?= eslint
 JAVASCRIPT_CODE_INSTRUMENTER ?= c8
 
 # Define the linter to use when linting TypeScript files:
-TYPESCRIPT_LINTER ?= tslint
+TYPESCRIPT_LINTER ?= eslint
 
 # Define the linter to use when linting TypeScript declaration files:
-TYPESCRIPT_DECLARATIONS_LINTER ?= dtslint
+TYPESCRIPT_DECLARATIONS_LINTER ?= eslint
 
 # Define the browser test runner:
 BROWSER_TEST_RUNNER ?=
