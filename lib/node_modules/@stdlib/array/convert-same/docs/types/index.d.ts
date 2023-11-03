@@ -182,7 +182,7 @@ declare function convertSame( x: Collection, y: Uint8Array ): Uint8Array;
 * var out = convertSame( x, y );
 * // returns <Uint8ClampedArray>[ 1, 2, 3, 4 ]
 */
-declare function convertSame( x: Collection, y: Uint8ClampedArray ): Uint8ClampedArray; // tslint:disable-line:max-line-length
+declare function convertSame( x: Collection, y: Uint8ClampedArray ): Uint8ClampedArray;
 
 /**
 * Converts an array to a `Complex128Array`.
@@ -200,7 +200,7 @@ declare function convertSame( x: Collection, y: Uint8ClampedArray ): Uint8Clampe
 * var out = convertSame( x, y );
 * // returns <Complex128Array>
 */
-declare function convertSame( x: Collection, y: Complex128Array ): Complex128Array; // tslint:disable-line:max-line-length
+declare function convertSame( x: Collection, y: Complex128Array ): Complex128Array;
 
 /**
 * Converts an array to a `Complex64Array`.
@@ -218,7 +218,7 @@ declare function convertSame( x: Collection, y: Complex128Array ): Complex128Arr
 * var out = convertSame( x, y );
 * // returns <Complex64Array>
 */
-declare function convertSame( x: Collection, y: Complex64Array ): Complex64Array; // tslint:disable-line:max-line-length
+declare function convertSame( x: Collection, y: Complex64Array ): Complex64Array;
 
 /**
 * Converts an array to a generic `Array`.

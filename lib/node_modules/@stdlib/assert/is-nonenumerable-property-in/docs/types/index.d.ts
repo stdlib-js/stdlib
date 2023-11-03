@@ -45,7 +45,7 @@
 * bool = isNonEnumerablePropertyIn( obj, 'beep' );
 * // returns true
 */
-declare function isNonEnumerablePropertyIn( value: any, property: any ): boolean; // tslint:disable-line:max-line-length
+declare function isNonEnumerablePropertyIn( value: any, property: any ): boolean;
 
 
 // EXPORTS //

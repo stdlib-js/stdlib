@@ -347,7 +347,7 @@ declare function onesLike( x: Float32Array, dtype?: DataType ): Float32Array;
 * var y = onesLike( x );
 * // returns <Complex128Array>
 */
-declare function onesLike( x: Complex128Array, dtype?: DataType ): Complex128Array; // tslint:disable-line:max-line-length
+declare function onesLike( x: Complex128Array, dtype?: DataType ): Complex128Array;
 
 /**
 * Creates an array filled with ones and having the same length and data type as a provided input array.
@@ -384,7 +384,7 @@ declare function onesLike( x: Complex128Array, dtype?: DataType ): Complex128Arr
 * var y = onesLike( x );
 * // returns <Complex64Array>
 */
-declare function onesLike( x: Complex64Array, dtype?: DataType ): Complex64Array; // tslint:disable-line:max-line-length
+declare function onesLike( x: Complex64Array, dtype?: DataType ): Complex64Array;
 
 /**
 * Creates an array filled with ones and having the same length and data type as a provided input array.
@@ -615,7 +615,7 @@ declare function onesLike( x: Uint8Array, dtype?: DataType ): Uint8Array;
 * var y = onesLike( x );
 * // returns <Uint8ClampedArray>[ 1, 1 ]
 */
-declare function onesLike( x: Uint8ClampedArray, dtype?: DataType ): Uint8ClampedArray; // tslint:disable-line:max-line-length
+declare function onesLike( x: Uint8ClampedArray, dtype?: DataType ): Uint8ClampedArray;
 
 /**
 * Creates an array filled with ones and having the same length and data type as a provided input array.

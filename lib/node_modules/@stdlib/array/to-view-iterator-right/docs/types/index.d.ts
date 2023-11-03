@@ -94,7 +94,7 @@ type MapFunction = Nullary | Unary | Binary | Ternary;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function arrayview2iteratorRight( src: ArrayLike<any>, mapFcn?: MapFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function arrayview2iteratorRight( src: ArrayLike<any>, mapFcn?: MapFunction, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which iterates from right to left over each element in an array-like object view.
@@ -117,7 +117,7 @@ declare function arrayview2iteratorRight( src: ArrayLike<any>, mapFcn?: MapFunct
 * var bool = iter.next().done;
 * // returns false
 */
-declare function arrayview2iteratorRight( src: ArrayLike<any>, begin: number, mapFcn?: MapFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function arrayview2iteratorRight( src: ArrayLike<any>, begin: number, mapFcn?: MapFunction, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which iterates from right to left over each element in an array-like object view.
@@ -141,7 +141,7 @@ declare function arrayview2iteratorRight( src: ArrayLike<any>, begin: number, ma
 * var bool = iter.next().done;
 * // returns true
 */
-declare function arrayview2iteratorRight( src: ArrayLike<any>, begin: number, end: number, mapFcn?: MapFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function arrayview2iteratorRight( src: ArrayLike<any>, begin: number, end: number, mapFcn?: MapFunction, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

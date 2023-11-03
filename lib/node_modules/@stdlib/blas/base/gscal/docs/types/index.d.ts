@@ -59,7 +59,7 @@ interface Routine {
 	* gscal.ndarray( x.length, 5.0, x, 1, 0 );
 	* // x => [ -10.0, 5.0, 15.0, -25.0, 20.0, 0.0, -5.0, -15.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: NumericArray, stride: number, offset: number ): NumericArray; // tslint:disable-line:max-line-length
+	ndarray( N: number, alpha: number, x: NumericArray, stride: number, offset: number ): NumericArray;
 }
 
 /**

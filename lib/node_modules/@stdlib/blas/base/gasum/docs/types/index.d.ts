@@ -57,7 +57,7 @@ interface Routine {
 	* var z = gasum.ndarray( x.length, x, 1, 0 );
 	* // returns 21.0
 	*/
-	ndarray( N: number, x: NumericArray, stride: number, offset: number ): number; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: NumericArray, stride: number, offset: number ): number;
 }
 
 /**

@@ -45,7 +45,7 @@
 * bool = isNonConfigurablePropertyIn( obj, 'beep' );
 * // returns true
 */
-declare function isNonConfigurablePropertyIn( value: any, property: any ): boolean; // tslint:disable-line:max-line-length
+declare function isNonConfigurablePropertyIn( value: any, property: any ): boolean;
 
 
 // EXPORTS //

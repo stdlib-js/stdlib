@@ -67,7 +67,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var bool = contains( 'Hidden Treasures', '' );
 * // returns true
 */
-declare function contains( val: ArrayLike<any>, searchValue: any, position?: number ): boolean; // tslint:disable-line:max-line-length
+declare function contains( val: ArrayLike<any>, searchValue: any, position?: number ): boolean;
 
 
 // EXPORTS //

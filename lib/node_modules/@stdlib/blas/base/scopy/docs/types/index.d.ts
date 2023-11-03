@@ -41,7 +41,7 @@ interface Routine {
 	* scopy( x.length, x, 1, y, 1 );
 	* // y => <Float32Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array;
 
 	/**
 	* Copies values from `x` into `y` using alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* scopy.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // y => <Float32Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array;
 }
 
 /**

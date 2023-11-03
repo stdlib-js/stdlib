@@ -96,7 +96,7 @@ type MapFunction = Nullary | Unary | Binary | Ternary;
 *
 * // ...
 */
-declare function array2iteratorRight( src: ArrayLike<any>, mapFcn?: MapFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function array2iteratorRight( src: ArrayLike<any>, mapFcn?: MapFunction, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

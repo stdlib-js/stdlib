@@ -75,7 +75,7 @@ declare function filledarray( dtype?: DataType ): ArrayOrTypedArray;
 * var arr = filledarray( 1.0, 5, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, length: number, dtype?: DataType ): ArrayOrTypedArray; // tslint:disable-line:max-line-length
+declare function filledarray( value: any, length: number, dtype?: DataType ): ArrayOrTypedArray;
 
 /**
 * Creates a filled array from another `array`.
@@ -93,7 +93,7 @@ declare function filledarray( value: any, length: number, dtype?: DataType ): Ar
 * var arr = filledarray( 1.0, [ 5.0, -3.0, 2.0 ], 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, array: Collection, dtype?: DataType ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarray( value: any, array: Collection, dtype?: DataType ): ArrayOrTypedArray; unified-signatures
 
 /**
 * Creates a filled array from an iterable.
@@ -121,7 +121,7 @@ declare function filledarray( value: any, array: Collection, dtype?: DataType ):
 * var arr = filledarray( 1.0, it, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, iterable: IterableIterator, dtype?: DataType ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarray( value: any, iterable: IterableIterator, dtype?: DataType ): ArrayOrTypedArray; unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -151,7 +151,7 @@ declare function filledarray( value: any, iterable: IterableIterator, dtype?: Da
 * var arr = filledarray( 1.0, buf, 8, 2, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, length: number, dtype?: DataType ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length
+declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, length: number, dtype?: DataType ): RealOrComplexTypedArray;
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -180,7 +180,7 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * var arr = filledarray( 1.0, buf, 8, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, dtype?: DataType ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length
+declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, dtype?: DataType ): RealOrComplexTypedArray;
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -208,7 +208,7 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * var arr = filledarray( 1.0, buf, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, dtype?: DataType ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarray( value: any, buffer: ArrayBuffer, dtype?: DataType ): RealOrComplexTypedArray; unified-signatures
 
 
 // EXPORTS //

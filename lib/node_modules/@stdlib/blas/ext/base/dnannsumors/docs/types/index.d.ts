@@ -41,7 +41,7 @@ interface Routine {
 	* var v = dnannsumors( x.length, x, 1, out, 1 );
 	* // returns <Float64Array>[ 1.0, 3 ]
 	*/
-	( N: number, x: Float64Array, strideX: number, out: Float64Array, strideOut: number ): Float64Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float64Array, strideX: number, out: Float64Array, strideOut: number ): Float64Array;
 
 	/**
 	* Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using ordinary recursive summation and alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* var v = dnannsumors( x.length, x, 1, 0, out, 1, 0 );
 	* // returns <Float64Array>[ 1.0, 3 ]
 	*/
-	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, out: Float64Array, strideOut: number, offsetOut: number ): Float64Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, out: Float64Array, strideOut: number, offsetOut: number ): Float64Array;
 }
 
 /**

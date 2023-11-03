@@ -42,7 +42,7 @@ interface Routine {
 	* var z = sdsdot( x.length, 0.0, x, 1, y, 1 );
 	* // returns -5.0
 	*/
-	( N: number, scalar: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): number; // tslint:disable-line:max-line-length
+	( N: number, scalar: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): number;
 
 	/**
 	* Computes the dot product of two single-precision floating-point vectors using alternative indexing semantics and with extended accumulation.
@@ -66,7 +66,7 @@ interface Routine {
 	* var z = sdsdot.ndarray( x.length, 0.0, x, 1, 0, y, 1, 0 );
 	* // returns -5.0
 	*/
-	ndarray( N: number, scalar: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): number; // tslint:disable-line:max-line-length
+	ndarray( N: number, scalar: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): number;
 }
 
 /**

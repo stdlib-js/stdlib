@@ -59,7 +59,7 @@ interface Routine {
 	* dsortins.ndarray( x.length, 1, x, 1, 0 );
 	* // x => <Float64Array>[ -4.0, -2.0, 1.0, 3.0 ]
 	*/
-	ndarray( N: number, order: number, x: Float64Array, stride: number, offset: number ): Float64Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, order: number, x: Float64Array, stride: number, offset: number ): Float64Array;
 }
 
 /**

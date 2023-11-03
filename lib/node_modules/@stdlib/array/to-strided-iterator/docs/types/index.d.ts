@@ -69,7 +69,7 @@ type Ternary = ( value: any, index: number, n: number ) => any;
 * @param src - source array-like object
 * @returns iterator value
 */
-type Quaternary = ( value: any, index: number, n: number, src: ArrayLike<any> ) => any; // tslint:disable-line:max-line-length
+type Quaternary = ( value: any, index: number, n: number, src: ArrayLike<any> ) => any;
 
 /**
 * Map function invoked for each iterated value.
@@ -116,7 +116,7 @@ type MapFunction = Nullary | Unary | Binary | Ternary | Quaternary;
 *
 * // ...
 */
-declare function stridedarray2iterator( N: number, src: ArrayLike<any>, stride: number, offset: number, mapFcn?: MapFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function stridedarray2iterator( N: number, src: ArrayLike<any>, stride: number, offset: number, mapFcn?: MapFunction, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

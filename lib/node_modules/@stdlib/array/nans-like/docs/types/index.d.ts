@@ -205,7 +205,7 @@ declare function nansLike( x: Float32Array, dtype?: DataType ): Float32Array;
 * var y = nansLike( x );
 * // returns <Complex128Array>
 */
-declare function nansLike( x: Complex128Array, dtype?: DataType ): Complex128Array; // tslint:disable-line:max-line-length
+declare function nansLike( x: Complex128Array, dtype?: DataType ): Complex128Array;
 
 /**
 * Creates an array filled with NaNs and having the same length and data type as a provided input array.
@@ -235,7 +235,7 @@ declare function nansLike( x: Complex128Array, dtype?: DataType ): Complex128Arr
 * var y = nansLike( x );
 * // returns <Complex64Array>
 */
-declare function nansLike( x: Complex64Array, dtype?: DataType ): Complex64Array; // tslint:disable-line:max-line-length
+declare function nansLike( x: Complex64Array, dtype?: DataType ): Complex64Array;
 
 /**
 * Creates an array filled with NaNs and having the same length and data type as a provided input array.

@@ -52,7 +52,7 @@ type PromotionRule = DataType | number;
 * var dt = promotionRules( 'float32', 'foo' );
 * // returns null
 */
-declare function promotionRules( dtype1: DataType, dtype2: DataType ): PromotionRule; // tslint:disable-line:max-line-length
+declare function promotionRules( dtype1: DataType, dtype2: DataType ): PromotionRule;
 
 /**
 * Returns the array data type with the smallest size and closest "kind" to which array data types can be safely cast.

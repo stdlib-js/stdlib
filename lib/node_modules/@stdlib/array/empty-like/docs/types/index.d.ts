@@ -405,7 +405,7 @@ declare function emptyLike( x: Float32Array, dtype?: DataType ): Float32Array;
 * var arr = emptyLike( x );
 * // returns <Complex128Array>
 */
-declare function emptyLike( x: Complex128Array, dtype?: DataType ): Complex128Array; // tslint:disable-line:max-line-length
+declare function emptyLike( x: Complex128Array, dtype?: DataType ): Complex128Array;
 
 /**
 * Creates an uninitialized array having the same length and data type as a provided input array.
@@ -443,7 +443,7 @@ declare function emptyLike( x: Complex128Array, dtype?: DataType ): Complex128Ar
 * var arr = emptyLike( x );
 * // returns <Complex64Array>
 */
-declare function emptyLike( x: Complex64Array, dtype?: DataType ): Complex64Array; // tslint:disable-line:max-line-length
+declare function emptyLike( x: Complex64Array, dtype?: DataType ): Complex64Array;
 
 /**
 * Creates an uninitialized array having the same length and data type as a provided input array.
@@ -709,7 +709,7 @@ declare function emptyLike( x: Uint8Array, dtype?: DataType ): Uint8Array;
 * var arr = emptyLike( x );
 * // returns <Uint8ClampedArray>
 */
-declare function emptyLike( x: Uint8ClampedArray, dtype?: DataType ): Uint8ClampedArray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: Uint8ClampedArray, dtype?: DataType ): Uint8ClampedArray;
 
 /**
 * Creates an uninitialized array having the same length and data type as a provided input array.

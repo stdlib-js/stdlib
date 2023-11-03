@@ -35,7 +35,7 @@ import { ComplexLike } from '@stdlib/types/complex';
 * var arr = full( 2, 1.0, 'float64' );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 */
-declare function full( length: number, value: number, dtype: 'float64' ): Float64Array; // tslint:disable-line:max-line-length
+declare function full( length: number, value: number, dtype: 'float64' ): Float64Array;
 
 /**
 * Creates a filled array having a specified length.
@@ -49,7 +49,7 @@ declare function full( length: number, value: number, dtype: 'float64' ): Float6
 * var arr = full( 2, 1.0, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function full( length: number, value: number, dtype: 'float32' ): Float32Array; // tslint:disable-line:max-line-length
+declare function full( length: number, value: number, dtype: 'float32' ): Float32Array;
 
 /**
 * Creates a filled array having a specified length.
@@ -65,7 +65,7 @@ declare function full( length: number, value: number, dtype: 'float32' ): Float3
 * var arr = full( 2, new Complex128( 1.0, 2.0 ), 'complex128' );
 * // returns <Complex128Array>
 */
-declare function full( length: number, value: ComplexLike, dtype: 'complex128' ): Complex128Array; // tslint:disable-line:max-line-length
+declare function full( length: number, value: ComplexLike, dtype: 'complex128' ): Complex128Array;
 
 /**
 * Creates a filled array having a specified length.
@@ -81,7 +81,7 @@ declare function full( length: number, value: ComplexLike, dtype: 'complex128' )
 * var arr = full( 2, new Complex64( 1.0, 2.0 ), 'complex64' );
 * // returns <Complex64Array>
 */
-declare function full( length: number, value: ComplexLike, dtype: 'complex64' ): Complex64Array; // tslint:disable-line:max-line-length
+declare function full( length: number, value: ComplexLike, dtype: 'complex64' ): Complex64Array;
 
 /**
 * Creates a filled array having a specified length.
@@ -95,7 +95,7 @@ declare function full( length: number, value: ComplexLike, dtype: 'complex64' ):
 * var arr = full( 2, 1, 'int32' );
 * // returns <Int32Array>[ 1, 1 ]
 */
-declare function full( length: number, value: number, dtype: 'int32' ): Int32Array; // tslint:disable-line:max-line-length
+declare function full( length: number, value: number, dtype: 'int32' ): Int32Array;
 
 /**
 * Creates a filled array having a specified length.
@@ -109,7 +109,7 @@ declare function full( length: number, value: number, dtype: 'int32' ): Int32Arr
 * var arr = full( 2, 1, 'int16' );
 * // returns <Int16Array>[ 1, 1 ]
 */
-declare function full( length: number, value: number, dtype: 'int16' ): Int16Array; // tslint:disable-line:max-line-length
+declare function full( length: number, value: number, dtype: 'int16' ): Int16Array;
 
 /**
 * Creates a filled array having a specified length.
@@ -123,7 +123,7 @@ declare function full( length: number, value: number, dtype: 'int16' ): Int16Arr
 * var arr = full( 2, 1, 'int8' );
 * // returns <Int8Array>[ 1, 1 ]
 */
-declare function full( length: number, value: number, dtype: 'int8' ): Int8Array; // tslint:disable-line:max-line-length
+declare function full( length: number, value: number, dtype: 'int8' ): Int8Array;
 
 /**
 * Creates a filled array having a specified length.
@@ -137,7 +137,7 @@ declare function full( length: number, value: number, dtype: 'int8' ): Int8Array
 * var arr = full( 2, 1, 'uint32' );
 * // returns <Uint32Array>[ 1, 1 ]
 */
-declare function full( length: number, value: number, dtype: 'uint32' ): Uint32Array; // tslint:disable-line:max-line-length
+declare function full( length: number, value: number, dtype: 'uint32' ): Uint32Array;
 
 /**
 * Creates a filled array having a specified length.
@@ -151,7 +151,7 @@ declare function full( length: number, value: number, dtype: 'uint32' ): Uint32A
 * var arr = full( 2, 1, 'uint16' );
 * // returns <Uint16Array>[ 1, 1 ]
 */
-declare function full( length: number, value: number, dtype: 'uint16' ): Uint16Array; // tslint:disable-line:max-line-length
+declare function full( length: number, value: number, dtype: 'uint16' ): Uint16Array;
 
 /**
 * Creates a filled array having a specified length.
@@ -165,7 +165,7 @@ declare function full( length: number, value: number, dtype: 'uint16' ): Uint16A
 * var arr = full( 2, 1, 'uint8' );
 * // returns <Uint8Array>[ 1, 1 ]
 */
-declare function full( length: number, value: number, dtype: 'uint8' ): Uint8Array; // tslint:disable-line:max-line-length
+declare function full( length: number, value: number, dtype: 'uint8' ): Uint8Array;
 
 /**
 * Creates a filled array having a specified length.
@@ -179,7 +179,7 @@ declare function full( length: number, value: number, dtype: 'uint8' ): Uint8Arr
 * var arr = full( 2, 1, 'uint8c' );
 * // returns <Uint8ClampedArray>[ 1, 1 ]
 */
-declare function full( length: number, value: number, dtype: 'uint8c' ): Uint8ClampedArray; // tslint:disable-line:max-line-length
+declare function full( length: number, value: number, dtype: 'uint8c' ): Uint8ClampedArray;
 
 /**
 * Creates a filled array having a specified length.
@@ -193,7 +193,7 @@ declare function full( length: number, value: number, dtype: 'uint8c' ): Uint8Cl
 * var arr = full( 2, 1, 'generic' );
 * // returns [ 1, 1 ]
 */
-declare function full( length: number, value: any, dtype: 'generic' ): Array<any>; // tslint:disable-line:max-line-length
+declare function full( length: number, value: any, dtype: 'generic' ): Array<any>;
 
 /**
 * Creates a filled array having a specified length.

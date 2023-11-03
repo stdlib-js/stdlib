@@ -205,7 +205,7 @@ declare function dtype( value: Array<any> ): 'generic';
 * var dt = dtype( 'beep' );
 * // returns null
 */
-declare function dtype( value: Array<any> | RealOrComplexTypedArray ): DataType | null; // tslint:disable-line:max-line-length
+declare function dtype( value: Array<any> | RealOrComplexTypedArray ): DataType | null;
 
 
 // EXPORTS //

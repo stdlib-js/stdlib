@@ -44,7 +44,7 @@ interface Routine {
 	* gaxpy( x.length, 5.0, x, 1, y, 1 );
 	* // y => [ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 	*/
-	( N: number, alpha: number, x: NumericArray, strideX: number, y: NumericArray, strideY: number ): NumericArray; // tslint:disable-line:max-line-length
+	( N: number, alpha: number, x: NumericArray, strideX: number, y: NumericArray, strideY: number ): NumericArray;
 
 	/**
 	* Multiplies `x` by a constant `alpha` and adds the result to `y` using alternative indexing semantics.
@@ -66,7 +66,7 @@ interface Routine {
 	* gaxpy.ndarray( x.length, 5.0, x, 1, 0, y, 1, 0 );
 	* // y => [ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: NumericArray, strideX: number, offsetX: number, y: NumericArray, strideY: number, offsetY: number ): NumericArray; // tslint:disable-line:max-line-length
+	ndarray( N: number, alpha: number, x: NumericArray, strideX: number, offsetX: number, y: NumericArray, strideY: number, offsetY: number ): NumericArray;
 }
 
 /**

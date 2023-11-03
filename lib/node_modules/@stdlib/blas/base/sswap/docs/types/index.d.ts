@@ -42,7 +42,7 @@ interface Routine {
 	* // x => <Float32Array>[ 6.0, 7.0, 8.0, 9.0, 10.0 ]
 	* // y => <Float32Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array;
 
 	/**
 	* Interchanges two single-precision floating-point vectors using alternative indexing semantics.
@@ -66,7 +66,7 @@ interface Routine {
 	* // x => <Float32Array>[ 6.0, 7.0, 8.0, 9.0, 10.0 ]
 	* // y => <Float32Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array;
 }
 
 /**

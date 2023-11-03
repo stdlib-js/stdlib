@@ -42,7 +42,7 @@ interface Routine {
 	* saxpy( x.length, 5.0, x, 1, y, 1 );
 	* // y => <Float32Array>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 	*/
-	( N: number, alpha: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, alpha: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array;
 
 	/**
 	* Multiplies a vector `x` by a constant `alpha` and adds the result to `y` using alternative indexing semantics.
@@ -66,7 +66,7 @@ interface Routine {
 	* saxpy.ndarray( x.length, 5.0, x, 1, 0, y, 1, 0 );
 	* // y => <Float32Array>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, alpha: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array;
 }
 
 /**

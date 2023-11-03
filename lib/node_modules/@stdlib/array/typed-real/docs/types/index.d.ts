@@ -83,7 +83,7 @@ declare function realarray( length: number, dtype?: DataType ): TypedArray;
 * var arr2 = realarray( arr1, 'uint32' );
 * // returns <Uint32Array>[ 5, 3 ]
 */
-declare function realarray( realarray: TypedArray, dtype?: DataType ): TypedArray; // tslint:disable-line:max-line-length
+declare function realarray( realarray: TypedArray, dtype?: DataType ): TypedArray;
 
 /**
 * Creates a typed array.
@@ -100,7 +100,7 @@ declare function realarray( realarray: TypedArray, dtype?: DataType ): TypedArra
 * var arr = realarray( [ 5, -3 ], 'int32' );
 * // returns <Int32Array>[ 5, -3 ]
 */
-declare function realarray( obj: ArrayLike<number> | Iterable<any>, dtype?: DataType ): TypedArray; // tslint:disable-line:max-line-length
+declare function realarray( obj: ArrayLike<number> | Iterable<any>, dtype?: DataType ): TypedArray;
 
 /**
 * Creates a typed array.
@@ -123,7 +123,7 @@ declare function realarray( obj: ArrayLike<number> | Iterable<any>, dtype?: Data
 * var arr = realarray( buf, 'float32' );
 * // returns <Float32Array>[ 0.0, 0.0, 0.0, 0.0 ]
 */
-declare function realarray( buffer: ArrayBuffer, dtype?: DataType ): TypedArray; // tslint:disable-line:max-line-length
+declare function realarray( buffer: ArrayBuffer, dtype?: DataType ): TypedArray;
 
 /**
 * Creates a typed array.
@@ -147,7 +147,7 @@ declare function realarray( buffer: ArrayBuffer, dtype?: DataType ): TypedArray;
 * var arr = realarray( buf, 8, 'float32' );
 * // returns <Float32Array>[ 0.0, 0.0 ]
 */
-declare function realarray( buffer: ArrayBuffer, byteOffset?: number, dtype?: DataType ): TypedArray; // tslint:disable-line:max-line-length
+declare function realarray( buffer: ArrayBuffer, byteOffset?: number, dtype?: DataType ): TypedArray;
 
 /**
 * Creates a typed array.
@@ -172,7 +172,7 @@ declare function realarray( buffer: ArrayBuffer, byteOffset?: number, dtype?: Da
 * var arr = realarray( buf, 8, 2, 'int32' );
 * // returns <Int32Array>[ 0, 0 ]
 */
-declare function realarray( buffer: ArrayBuffer, byteOffset?: number, length?: number, dtype?: DataType ): TypedArray; // tslint:disable-line:max-line-length
+declare function realarray( buffer: ArrayBuffer, byteOffset?: number, length?: number, dtype?: DataType ): TypedArray;
 
 
 // EXPORTS //

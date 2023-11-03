@@ -55,7 +55,7 @@ interface Routine {
 	* var im = imagf( z );
 	* // returns 2.0
 	*/
-	( N: number, x: Complex64Array, strideX: number, y: Complex64Array, strideY: number ): Complex64Array; // tslint:disable-line:max-line-length
+	( N: number, x: Complex64Array, strideX: number, y: Complex64Array, strideY: number ): Complex64Array;
 
 	/**
 	* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector using alternative indexing semantics.
@@ -88,7 +88,7 @@ interface Routine {
 	* var im = imagf( z );
 	* // returns 2.0
 	*/
-	ndarray( N: number, x: Complex64Array, strideX: number, offsetX: number, y: Complex64Array, strideY: number, offsetY: number ): Complex64Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Complex64Array, strideX: number, offsetX: number, y: Complex64Array, strideY: number, offsetY: number ): Complex64Array;
 }
 
 /**

@@ -57,7 +57,7 @@ interface Routine {
 	* var z = dnrm2.ndarray( x.length, x, 1, 0 );
 	* // returns 3.0
 	*/
-	ndarray( N: number, x: Float64Array, stride: number, offset: number ): number; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float64Array, stride: number, offset: number ): number;
 }
 
 /**

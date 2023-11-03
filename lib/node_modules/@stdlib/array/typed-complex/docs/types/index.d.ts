@@ -56,7 +56,7 @@ declare function complexarray( dtype?: DataType ): ComplexTypedArray;
 * var arr = complexarray( 2, 'complex64' );
 * // returns <Complex64Array>
 */
-declare function complexarray( length: number, dtype?: DataType ): ComplexTypedArray; // tslint:disable-line:max-line-length
+declare function complexarray( length: number, dtype?: DataType ): ComplexTypedArray;
 
 /**
 * Creates a complex number typed array.
@@ -73,7 +73,7 @@ declare function complexarray( length: number, dtype?: DataType ): ComplexTypedA
 * var arr = complexarray( new Complex128Array( 2 ), 'complex64' );
 * // returns <Complex64Array>
 */
-declare function complexarray( complexarray: ComplexTypedArray, dtype?: DataType ): ComplexTypedArray; // tslint:disable-line:max-line-length
+declare function complexarray( complexarray: ComplexTypedArray, dtype?: DataType ): ComplexTypedArray;
 
 /**
 * Creates a complex number typed array.
@@ -91,7 +91,7 @@ declare function complexarray( complexarray: ComplexTypedArray, dtype?: DataType
 * var arr = complexarray( [ 5, -3 ], 'complex64' );
 * // returns <Complex64Array>
 */
-declare function complexarray( obj: ArrayLike<number> | Iterable<any>, dtype?: DataType ): ComplexTypedArray; // tslint:disable-line:max-line-length
+declare function complexarray( obj: ArrayLike<number> | Iterable<any>, dtype?: DataType ): ComplexTypedArray;
 
 /**
 * Creates a complex number typed array.
@@ -114,7 +114,7 @@ declare function complexarray( obj: ArrayLike<number> | Iterable<any>, dtype?: D
 * var arr = complexarray( buf, 'complex64' );
 * // returns <Complex64Array>
 */
-declare function complexarray( buffer: ArrayBuffer, dtype?: DataType ): ComplexTypedArray; // tslint:disable-line:max-line-length
+declare function complexarray( buffer: ArrayBuffer, dtype?: DataType ): ComplexTypedArray;
 
 /**
 * Creates a complex number typed array.
@@ -138,7 +138,7 @@ declare function complexarray( buffer: ArrayBuffer, dtype?: DataType ): ComplexT
 * var arr = complexarray( buf, 16, 'complex64' );
 * // returns <Complex64Array>
 */
-declare function complexarray( buffer: ArrayBuffer, byteOffset?: number, dtype?: DataType ): ComplexTypedArray; // tslint:disable-line:max-line-length
+declare function complexarray( buffer: ArrayBuffer, byteOffset?: number, dtype?: DataType ): ComplexTypedArray;
 
 /**
 * Creates a complex number typed array.
@@ -163,7 +163,7 @@ declare function complexarray( buffer: ArrayBuffer, byteOffset?: number, dtype?:
 * var arr = complexarray( buf, 16, 2, 'complex64' );
 * // returns <Complex64Array>
 */
-declare function complexarray( buffer: ArrayBuffer, byteOffset?: number, length?: number, dtype?: DataType ): ComplexTypedArray; // tslint:disable-line:max-line-length
+declare function complexarray( buffer: ArrayBuffer, byteOffset?: number, length?: number, dtype?: DataType ): ComplexTypedArray;
 
 
 // EXPORTS //

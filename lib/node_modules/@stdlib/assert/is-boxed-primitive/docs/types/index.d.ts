@@ -50,7 +50,7 @@
 * var bool = isBoxedPrimitive( Symbol( 'beep' ) );
 * // returns false
 */
-declare function isBoxedPrimitive( value: any ): value is String | Number | Boolean | Symbol; // tslint:disable-line:max-line-length
+declare function isBoxedPrimitive( value: any ): value is String | Number | Boolean | Symbol;
 
 
 // EXPORTS //

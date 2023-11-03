@@ -25,7 +25,7 @@ import { RealOrComplexTypedArray } from '@stdlib/types/array';
 /**
 * Typed array data type.
 */
-type dtype = 'Float64Array' | 'Float32Array' | 'Int32Array' | 'Uint32Array' | 'Int16Array' | 'Uint16Array' | 'Int8Array' | 'Uint8Array' | 'Uint8ClampedArray' | 'Complex64Array' | 'Complex128Array'; // tslint:disable-line:max-line-length
+type dtype = 'Float64Array' | 'Float32Array' | 'Int32Array' | 'Uint32Array' | 'Int16Array' | 'Uint16Array' | 'Int8Array' | 'Uint8Array' | 'Uint8ClampedArray' | 'Complex64Array' | 'Complex128Array';
 
 /**
 * JSON representation of typed array.
@@ -61,7 +61,7 @@ interface JSONRepresentation {
 * var json = typedarray2json( arr );
 * // returns { 'type': 'Float64Array', 'data': [ 5.0, 3.0 ] }
 */
-declare function typedarray2json( arr: RealOrComplexTypedArray ): JSONRepresentation; // tslint:disable-line:max-line-length
+declare function typedarray2json( arr: RealOrComplexTypedArray ): JSONRepresentation;
 
 
 // EXPORTS //

@@ -335,7 +335,7 @@ declare function zerosLike( x: Float32Array, dtype?: DataType ): Float32Array;
 * var y = zerosLike( x );
 * // returns <Complex128Array>
 */
-declare function zerosLike( x: Complex128Array, dtype?: DataType ): Complex128Array; // tslint:disable-line:max-line-length
+declare function zerosLike( x: Complex128Array, dtype?: DataType ): Complex128Array;
 
 /**
 * Creates a zero-filled array having the same length and data type as a provided input array.
@@ -368,7 +368,7 @@ declare function zerosLike( x: Complex128Array, dtype?: DataType ): Complex128Ar
 * var y = zerosLike( x );
 * // returns <Complex64Array>
 */
-declare function zerosLike( x: Complex64Array, dtype?: DataType ): Complex64Array; // tslint:disable-line:max-line-length
+declare function zerosLike( x: Complex64Array, dtype?: DataType ): Complex64Array;
 
 /**
 * Creates a zero-filled array having the same length and data type as a provided input array.
@@ -599,7 +599,7 @@ declare function zerosLike( x: Uint8Array, dtype?: DataType ): Uint8Array;
 * var y = zerosLike( x );
 * // returns <Uint8ClampedArray>[ 0, 0 ]
 */
-declare function zerosLike( x: Uint8ClampedArray, dtype?: DataType ): Uint8ClampedArray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: Uint8ClampedArray, dtype?: DataType ): Uint8ClampedArray;
 
 /**
 * Creates a zero-filled array having the same length and data type as a provided input array.

@@ -59,7 +59,7 @@ interface Routine {
 	* var v = dapxsumors.ndarray( x.length, 5.0, x, 1, 0 );
 	* // returns 16.0
 	*/
-	ndarray( N: number, alpha: number, x: Float64Array, stride: number, offset: number ): number; // tslint:disable-line:max-line-length
+	ndarray( N: number, alpha: number, x: Float64Array, stride: number, offset: number ): number;
 }
 
 /**

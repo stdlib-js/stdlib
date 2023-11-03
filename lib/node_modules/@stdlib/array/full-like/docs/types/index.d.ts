@@ -40,7 +40,7 @@ import { ComplexLike } from '@stdlib/types/complex';
 * var y = fullLike( x, 1.0, 'float64' );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 */
-declare function fullLike( x: AnyArray, value: number, dtype: 'float64' ): Float64Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number, dtype: 'float64' ): Float64Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -59,7 +59,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'float64' ): Float
 * var y = fullLike( x, 1.0, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function fullLike( x: AnyArray, value: number, dtype: 'float32' ): Float32Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number, dtype: 'float32' ): Float32Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -82,7 +82,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'float32' ): Float
 * var y = fullLike( x, 1.0, 'complex128' );
 * // returns <Complex128Array>
 */
-declare function fullLike( x: AnyArray, value: number | ComplexLike, dtype: 'complex128' ): Complex128Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number | ComplexLike, dtype: 'complex128' ): Complex128Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -105,7 +105,7 @@ declare function fullLike( x: AnyArray, value: number | ComplexLike, dtype: 'com
 * var y = fullLike( x, 1.0, 'complex64' );
 * // returns <Complex64Array>
 */
-declare function fullLike( x: AnyArray, value: number | ComplexLike, dtype: 'complex64' ): Complex64Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number | ComplexLike, dtype: 'complex64' ): Complex64Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -124,7 +124,7 @@ declare function fullLike( x: AnyArray, value: number | ComplexLike, dtype: 'com
 * var y = fullLike( x, 1, 'int32' );
 * // returns <Int32Array>[ 1, 1 ]
 */
-declare function fullLike( x: AnyArray, value: number, dtype: 'int32' ): Int32Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number, dtype: 'int32' ): Int32Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -143,7 +143,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'int32' ): Int32Ar
 * var y = fullLike( x, 1, 'int16' );
 * // returns <Int16Array>[ 1, 1 ]
 */
-declare function fullLike( x: AnyArray, value: number, dtype: 'int16' ): Int16Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number, dtype: 'int16' ): Int16Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -162,7 +162,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'int16' ): Int16Ar
 * var y = fullLike( x, 1, 'int8' );
 * // returns <Int8Array>[ 1, 1 ]
 */
-declare function fullLike( x: AnyArray, value: number, dtype: 'int8' ): Int8Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number, dtype: 'int8' ): Int8Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -181,7 +181,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'int8' ): Int8Arra
 * var y = fullLike( x, 1, 'uint32' );
 * // returns <Uint32Array>[ 1, 1 ]
 */
-declare function fullLike( x: AnyArray, value: number, dtype: 'uint32' ): Uint32Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number, dtype: 'uint32' ): Uint32Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -200,7 +200,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'uint32' ): Uint32
 * var y = fullLike( x, 1, 'uint16' );
 * // returns <Uint16Array>[ 1, 1 ]
 */
-declare function fullLike( x: AnyArray, value: number, dtype: 'uint16' ): Uint16Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number, dtype: 'uint16' ): Uint16Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -219,7 +219,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'uint16' ): Uint16
 * var y = fullLike( x, 1, 'uint8' );
 * // returns <Uint8Array>[ 1, 1 ]
 */
-declare function fullLike( x: AnyArray, value: number, dtype: 'uint8' ): Uint8Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number, dtype: 'uint8' ): Uint8Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -238,7 +238,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'uint8' ): Uint8Ar
 * var y = fullLike( x, 1, 'uint8c' );
 * // returns <Uint8ClampedArray>[ 1, 1 ]
 */
-declare function fullLike( x: AnyArray, value: number, dtype: 'uint8c' ): Uint8ClampedArray; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: number, dtype: 'uint8c' ): Uint8ClampedArray;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -257,7 +257,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'uint8c' ): Uint8C
 * var y = fullLike( x, 1.0, 'generic' );
 * // returns [ 1.0, 1.0 ]
 */
-declare function fullLike( x: AnyArray, value: any, dtype: 'generic' ): Array<any>; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: any, dtype: 'generic' ): Array<any>;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -291,7 +291,7 @@ declare function fullLike( x: AnyArray, value: any, dtype: 'generic' ): Array<an
 * var y = fullLike( x, 1.0 );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 */
-declare function fullLike( x: Float64Array, value: number, dtype?: DataType ): Float64Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Float64Array, value: number, dtype?: DataType ): Float64Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -325,7 +325,7 @@ declare function fullLike( x: Float64Array, value: number, dtype?: DataType ): F
 * var y = fullLike( x, 1.0 );
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function fullLike( x: Float32Array, value: number, dtype?: DataType ): Float32Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Float32Array, value: number, dtype?: DataType ): Float32Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -363,7 +363,7 @@ declare function fullLike( x: Float32Array, value: number, dtype?: DataType ): F
 * var y = fullLike( x, 1.0 );
 * // returns <Complex128Array>
 */
-declare function fullLike( x: Complex128Array, value: number | ComplexLike, dtype?: DataType ): Complex128Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Complex128Array, value: number | ComplexLike, dtype?: DataType ): Complex128Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -401,7 +401,7 @@ declare function fullLike( x: Complex128Array, value: number | ComplexLike, dtyp
 * var y = fullLike( x, 1.0 );
 * // returns <Complex64Array>
 */
-declare function fullLike( x: Complex64Array, value: number | ComplexLike, dtype?: DataType ): Complex64Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Complex64Array, value: number | ComplexLike, dtype?: DataType ): Complex64Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -435,7 +435,7 @@ declare function fullLike( x: Complex64Array, value: number | ComplexLike, dtype
 * var y = fullLike( x, 1 );
 * // returns <Int32Array>[ 1, 1 ]
 */
-declare function fullLike( x: Int32Array, value: number, dtype?: DataType ): Int32Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Int32Array, value: number, dtype?: DataType ): Int32Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -469,7 +469,7 @@ declare function fullLike( x: Int32Array, value: number, dtype?: DataType ): Int
 * var y = fullLike( x, 1 );
 * // returns <Int16Array>[ 1, 1 ]
 */
-declare function fullLike( x: Int16Array, value: number, dtype?: DataType ): Int16Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Int16Array, value: number, dtype?: DataType ): Int16Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -503,7 +503,7 @@ declare function fullLike( x: Int16Array, value: number, dtype?: DataType ): Int
 * var y = fullLike( x, 1 );
 * // returns <Int8Array>[ 1, 1 ]
 */
-declare function fullLike( x: Int8Array, value: number, dtype?: DataType ): Int8Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Int8Array, value: number, dtype?: DataType ): Int8Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -537,7 +537,7 @@ declare function fullLike( x: Int8Array, value: number, dtype?: DataType ): Int8
 * var y = fullLike( x, 1 );
 * // returns <Uint32Array>[ 1, 1 ]
 */
-declare function fullLike( x: Uint32Array, value: number, dtype?: DataType ): Uint32Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Uint32Array, value: number, dtype?: DataType ): Uint32Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -571,7 +571,7 @@ declare function fullLike( x: Uint32Array, value: number, dtype?: DataType ): Ui
 * var y = fullLike( x, 1 );
 * // returns <Uint16Array>[ 1, 1 ]
 */
-declare function fullLike( x: Uint16Array, value: number, dtype?: DataType ): Uint16Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Uint16Array, value: number, dtype?: DataType ): Uint16Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -605,7 +605,7 @@ declare function fullLike( x: Uint16Array, value: number, dtype?: DataType ): Ui
 * var y = fullLike( x, 1 );
 * // returns <Uint8Array>[ 1, 1 ]
 */
-declare function fullLike( x: Uint8Array, value: number, dtype?: DataType ): Uint8Array; // tslint:disable-line:max-line-length
+declare function fullLike( x: Uint8Array, value: number, dtype?: DataType ): Uint8Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -639,7 +639,7 @@ declare function fullLike( x: Uint8Array, value: number, dtype?: DataType ): Uin
 * var y = fullLike( x, 1 );
 * // returns <Uint8ClampedArray>[ 1, 1 ]
 */
-declare function fullLike( x: Uint8ClampedArray, value: number, dtype?: DataType ): Uint8ClampedArray; // tslint:disable-line:max-line-length
+declare function fullLike( x: Uint8ClampedArray, value: number, dtype?: DataType ): Uint8ClampedArray;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -673,7 +673,7 @@ declare function fullLike( x: Uint8ClampedArray, value: number, dtype?: DataType
 * var y = fullLike( x, 1.0 );
 * // returns [ 1.0, 1.0 ]
 */
-declare function fullLike( x: Array<any>, value: any, dtype?: DataType ): Array<any>; // tslint:disable-line:max-line-length
+declare function fullLike( x: Array<any>, value: any, dtype?: DataType ): Array<any>;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
@@ -716,7 +716,7 @@ declare function fullLike( x: Array<any>, value: any, dtype?: DataType ): Array<
 * var y = fullLike( x, 1.0, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function fullLike( x: AnyArray, value: any, dtype?: DataType ): AnyArray; // tslint:disable-line:max-line-length
+declare function fullLike( x: AnyArray, value: any, dtype?: DataType ): AnyArray;
 
 
 // EXPORTS //

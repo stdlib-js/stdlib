@@ -90,7 +90,7 @@ type MapFunction = Nullary | Unary | Binary | Ternary;
 * v = iter.next().value;
 * // returns 4
 */
-declare function sparsearray2iterator( src: ArrayLike<any>, mapFcn?: MapFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function sparsearray2iterator( src: ArrayLike<any>, mapFcn?: MapFunction, thisArg?: any ): Iterator;
 
 
 // EXPORTS //
