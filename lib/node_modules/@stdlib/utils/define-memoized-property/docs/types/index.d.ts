@@ -70,7 +70,7 @@ interface PropertyDescriptor extends DataPropertyDescriptor {
 * var v = obj.foo;
 * // returns 'bar'
 */
-declare function defineMemoizedProperty( obj: any, prop: PropertyName, desc: PropertyDescriptor ): void; // tslint:disable-line: max-line-length
+declare function defineMemoizedProperty( obj: any, prop: PropertyName, desc: PropertyDescriptor ): void;
 
 
 // EXPORTS //

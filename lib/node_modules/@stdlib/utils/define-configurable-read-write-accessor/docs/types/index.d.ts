@@ -70,7 +70,7 @@ type Setter = ( x: any ) => void;
 * v = obj.foo;
 * // returns 'beep foo'
 */
-declare function setConfigurableReadWriteAccessor( obj: any, prop: PropertyName, getter: Getter, setter: Setter ): void; // tslint:disable-line: max-line-length
+declare function setConfigurableReadWriteAccessor( obj: any, prop: PropertyName, getter: Getter, setter: Setter ): void;
 
 
 // EXPORTS //

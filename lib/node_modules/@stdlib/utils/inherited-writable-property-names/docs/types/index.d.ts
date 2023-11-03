@@ -34,7 +34,7 @@
 * @example
 * var keys = inheritedWritablePropertyNames( {} );
 */
-declare function inheritedWritablePropertyNames( value: any, level?: number ): Array<string>; // tslint:disable-line: max-line-length
+declare function inheritedWritablePropertyNames( value: any, level?: number ): Array<string>;
 
 
 // EXPORTS //

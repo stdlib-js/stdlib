@@ -140,7 +140,7 @@ interface TernaryFunction extends PRNG {
 	* @param options - function options
 	* @returns output array
 	*/
-	( len: number, alpha: number, beta: number, options?: Options ): RandomArray; // tslint:disable-line: max-line-length
+	( len: number, alpha: number, beta: number, options?: Options ): RandomArray;
 }
 
 /**
@@ -160,7 +160,7 @@ interface Random extends PRNG {
 	* var out = gamma( 10, 2.0, 5.0 );
 	* // returns <Float64Array>
 	*/
-	( len: number, alpha: number, beta: number, options?: Options ): RandomArray; // tslint:disable-line: max-line-length
+	( len: number, alpha: number, beta: number, options?: Options ): RandomArray;
 
 	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from a gamma distribution.
@@ -190,7 +190,7 @@ interface Random extends PRNG {
 	* var out = random( 10 );
 	* // returns <Float64Array>
 	*/
-	factory( alpha: number, beta: number, options?: FactoryOptions ): UnaryFunction; // tslint:disable-line: max-line-length
+	factory( alpha: number, beta: number, options?: FactoryOptions ): UnaryFunction;
 
 	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from a gamma distribution.

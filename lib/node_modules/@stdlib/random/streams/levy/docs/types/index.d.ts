@@ -284,7 +284,7 @@ interface Constructor {
 	*     streams.push( createStream() );
 	* }
 	*/
-	factory( mu: number, c: number, options?: Options ): ( ...args: Array<any> ) => RandomStream; // tslint:disable-line: max-line-length
+	factory( mu: number, c: number, options?: Options ): ( ...args: Array<any> ) => RandomStream;
 
 	/**
 	* Returns a function for creating readable streams which generate pseudorandom numbers drawn from a Lévy distribution.

@@ -51,7 +51,7 @@ type Predicate = ( i: number ) => boolean;
 *
 * doWhile( beep, predicate );
 */
-declare function doWhile( fcn: Function, predicate: Predicate, thisArg?: any ): void; // tslint:disable-line: max-line-length
+declare function doWhile( fcn: Function, predicate: Predicate, thisArg?: any ): void;
 
 
 // EXPORTS //

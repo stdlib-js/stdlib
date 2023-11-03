@@ -281,7 +281,7 @@ interface Constructor {
 	*     streams.push( createStream() );
 	* }
 	*/
-	factory( k: number, options?: Options ): ( ...args: Array<any> ) => RandomStream; // tslint:disable-line: max-line-length
+	factory( k: number, options?: Options ): ( ...args: Array<any> ) => RandomStream;
 
 	/**
 	* Returns a function for creating readable streams which generate pseudorandom numbers drawn from a chi distribution.

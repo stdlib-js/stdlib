@@ -287,7 +287,7 @@ interface Constructor {
 	*     streams.push( createStream() );
 	* }
 	*/
-	factory( a: number, b: number, options?: Options ): ( ...args: Array<any> ) => RandomStream; // tslint:disable-line: max-line-length
+	factory( a: number, b: number, options?: Options ): ( ...args: Array<any> ) => RandomStream;
 
 	/**
 	* Returns a function for creating readable streams which generate pseudorandom numbers drawn from Kumaraswamy's double bounded distribution.
@@ -312,7 +312,7 @@ interface Constructor {
 	*     streams.push( createStream( 2.0, 5.0 ) );
 	* }
 	*/
-	factory( options?: Options ): ( a: number, b: number ) => RandomStream; // tslint:disable-line: max-line-length
+	factory( options?: Options ): ( a: number, b: number ) => RandomStream;
 
 	/**
 	* Returns an "objectMode" readable stream for generating a stream of pseudorandom numbers drawn from Kumaraswamy's double bounded distribution.

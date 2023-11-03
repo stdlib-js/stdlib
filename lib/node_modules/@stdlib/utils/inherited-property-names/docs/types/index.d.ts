@@ -34,7 +34,7 @@
 * @example
 * var keys = inheritedPropertyNames( [] );
 */
-declare function inheritedPropertyNames( value: any, level?: number ): Array<string>; // tslint:disable-line: max-line-length
+declare function inheritedPropertyNames( value: any, level?: number ): Array<string>;
 
 
 // EXPORTS //

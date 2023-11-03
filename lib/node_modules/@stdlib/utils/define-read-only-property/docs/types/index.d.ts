@@ -44,7 +44,7 @@ import { PropertyName } from '@stdlib/types/object';
 *     console.error( err.message );
 * }
 */
-declare function setReadOnly( obj: any, prop: PropertyName, value: any ): void; // tslint:disable-line: max-line-length
+declare function setReadOnly( obj: any, prop: PropertyName, value: any ): void;
 
 
 // EXPORTS //

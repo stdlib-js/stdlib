@@ -52,7 +52,7 @@ type Setter = ( x: any ) => void;
 *
 * obj.foo = 'beep';
 */
-declare function setConfigurableWriteOnlyAccessor( obj: any, prop: PropertyName, setter: Setter ): void; // tslint:disable-line: max-line-length
+declare function setConfigurableWriteOnlyAccessor( obj: any, prop: PropertyName, setter: Setter ): void;
 
 
 // EXPORTS //

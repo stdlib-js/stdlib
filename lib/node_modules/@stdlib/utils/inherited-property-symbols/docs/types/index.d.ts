@@ -33,7 +33,7 @@
 * @example
 * var symbols = inheritedPropertySymbols( [] );
 */
-declare function inheritedPropertySymbols( value: any, level?: number ): Array<symbol>; // tslint:disable-line: max-line-length
+declare function inheritedPropertySymbols( value: any, level?: number ): Array<symbol>;
 
 
 // EXPORTS //

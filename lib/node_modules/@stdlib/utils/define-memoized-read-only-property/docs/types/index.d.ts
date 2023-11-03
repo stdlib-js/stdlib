@@ -52,7 +52,7 @@ type Getter = () => any;
 * var v = obj.foo;
 * // returns 'bar'
 */
-declare function setMemoizedReadOnly( obj: any, prop: PropertyName, fcn: Getter ): void; // tslint:disable-line: max-line-length
+declare function setMemoizedReadOnly( obj: any, prop: PropertyName, fcn: Getter ): void;
 
 
 // EXPORTS //

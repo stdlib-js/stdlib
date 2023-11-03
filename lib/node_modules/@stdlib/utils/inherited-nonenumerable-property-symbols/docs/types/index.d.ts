@@ -34,7 +34,7 @@
 * @example
 * var symbols = inheritedNonEnumerablePropertySymbols( [] );
 */
-declare function inheritedNonEnumerablePropertySymbols( value: any, level?: number ): Array<symbol>; // tslint:disable-line: max-line-length
+declare function inheritedNonEnumerablePropertySymbols( value: any, level?: number ): Array<symbol>;
 
 
 // EXPORTS //

@@ -35,7 +35,7 @@
 * var desc = inheritedPropertyDescriptors( [] );
 * // returns {...}
 */
-declare function inheritedPropertyDescriptors( value: any, level?: number ): Object;  // tslint:disable-line: max-line-length
+declare function inheritedPropertyDescriptors( value: any, level?: number ): Object;
 
 
 // EXPORTS //

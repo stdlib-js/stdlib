@@ -51,7 +51,7 @@ type Predicate = ( i: number ) => boolean;
 *
 * doUntil( beep, predicate );
 */
-declare function doUntil( fcn: Function, predicate: Predicate, thisArg?: any ): void; // tslint:disable-line: max-line-length
+declare function doUntil( fcn: Function, predicate: Predicate, thisArg?: any ): void;
 
 
 // EXPORTS //

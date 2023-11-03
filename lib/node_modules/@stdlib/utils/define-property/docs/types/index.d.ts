@@ -44,7 +44,7 @@ import { PropertyName, PropertyDescriptor } from '@stdlib/types/object';
 * var str = obj.foo;
 * // returns 'bar'
 */
-declare function defineProperty( obj: any, prop: PropertyName, descriptor: PropertyDescriptor ): any; // tslint:disable-line: max-line-length
+declare function defineProperty( obj: any, prop: PropertyName, descriptor: PropertyDescriptor ): any;
 
 
 // EXPORTS //

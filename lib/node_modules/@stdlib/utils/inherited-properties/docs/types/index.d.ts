@@ -34,7 +34,7 @@
 * var props = inheritedProperties( [] );
 * // returns [...]
 */
-declare function inheritedProperties( value: any, level?: number ): Array<string|symbol>; // tslint:disable-line: max-line-length
+declare function inheritedProperties( value: any, level?: number ): Array<string|symbol>;
 
 
 // EXPORTS //

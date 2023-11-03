@@ -55,7 +55,7 @@ type Getter = () => any;
 *     console.error( err.message );
 * }
 */
-declare function setConfigurableReadOnlyAccessor( obj: any, prop: PropertyName, getter: Getter ): void; // tslint:disable-line: max-line-length
+declare function setConfigurableReadOnlyAccessor( obj: any, prop: PropertyName, getter: Getter ): void;
 
 
 // EXPORTS //

@@ -46,7 +46,7 @@ import { PropertyName } from '@stdlib/types/object';
 * var keys = objectKeys( obj );
 * // returns []
 */
-declare function setNonEnumerableProperty( obj: any, prop: PropertyName, value: any ): void; // tslint:disable-line: max-line-length
+declare function setNonEnumerableProperty( obj: any, prop: PropertyName, value: any ): void;
 
 
 // EXPORTS //

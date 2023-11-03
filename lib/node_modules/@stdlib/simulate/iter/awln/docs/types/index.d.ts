@@ -147,7 +147,7 @@ type ExtendedIterator = ExtendedIter | ExtendedIterableIterator;
 *
 * // ...
 */
-declare function iterawln( iterator: Iterator, sigma: number, options?: Options ): ExtendedIterator; // tslint:disable-line: max-line-length
+declare function iterawln( iterator: Iterator, sigma: number, options?: Options ): ExtendedIterator;
 
 
 // EXPORTS //

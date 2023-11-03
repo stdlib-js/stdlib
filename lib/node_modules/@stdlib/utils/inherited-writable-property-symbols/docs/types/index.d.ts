@@ -34,7 +34,7 @@
 * @example
 * var symbols = inheritedWritablePropertySymbols( [] );
 */
-declare function inheritedWritablePropertySymbols( value: any, level?: number ): Array<symbol>; // tslint:disable-line: max-line-length
+declare function inheritedWritablePropertySymbols( value: any, level?: number ): Array<symbol>;
 
 
 // EXPORTS //

@@ -34,7 +34,7 @@
 * @example
 * var keys = inheritedKeys( {} );
 */
-declare function inheritedKeys( value: any, level?: number ): Array<string>; // tslint:disable-line: max-line-length
+declare function inheritedKeys( value: any, level?: number ): Array<string>;
 
 
 // EXPORTS //

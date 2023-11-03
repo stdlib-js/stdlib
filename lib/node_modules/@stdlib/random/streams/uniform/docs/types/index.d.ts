@@ -284,7 +284,7 @@ interface Constructor {
 	*     streams.push( createStream() );
 	* }
 	*/
-	factory( a: number, b: number, options?: Options ): ( ...args: Array<any> ) => RandomStream; // tslint:disable-line: max-line-length
+	factory( a: number, b: number, options?: Options ): ( ...args: Array<any> ) => RandomStream;
 
 	/**
 	* Returns a function for creating readable streams which generate pseudorandom numbers drawn from a uniform distribution.

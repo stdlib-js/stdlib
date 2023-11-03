@@ -287,7 +287,7 @@ interface Constructor {
 	*     streams.push( createStream() );
 	* }
 	*/
-	factory( n: number, p: number, options?: Options ): ( ...args: Array<any> ) => RandomStream; // tslint:disable-line: max-line-length
+	factory( n: number, p: number, options?: Options ): ( ...args: Array<any> ) => RandomStream;
 
 	/**
 	* Returns a function for creating readable streams which generate pseudorandom numbers drawn from a binomial distribution.
@@ -312,7 +312,7 @@ interface Constructor {
 	*     streams.push( createStream( 20, 0.3 ) );
 	* }
 	*/
-	factory( options?: Options ): ( n: number, p: number ) => RandomStream; // tslint:disable-line: max-line-length
+	factory( options?: Options ): ( n: number, p: number ) => RandomStream;
 
 	/**
 	* Returns an "objectMode" readable stream for generating a stream of pseudorandom numbers drawn from a binomial distribution.

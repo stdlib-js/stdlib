@@ -139,7 +139,7 @@ interface BinaryFunction extends PRNG {
 	* @param options - function options
 	* @returns output array
 	*/
-	( len: number, p: number, options?: Options ): RandomArray; // tslint:disable-line: max-line-length
+	( len: number, p: number, options?: Options ): RandomArray;
 }
 
 /**
@@ -158,7 +158,7 @@ interface Random extends PRNG {
 	* var out = geometric( 10, 0.01 );
 	* // returns <Float64Array>
 	*/
-	( len: number, p: number, options?: Options ): RandomArray; // tslint:disable-line: max-line-length
+	( len: number, p: number, options?: Options ): RandomArray;
 
 	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from a geometric distribution.
@@ -186,7 +186,7 @@ interface Random extends PRNG {
 	* var out = random( 10 );
 	* // returns <Float64Array>
 	*/
-	factory( p: number, options?: FactoryOptions ): UnaryFunction; // tslint:disable-line: max-line-length
+	factory( p: number, options?: FactoryOptions ): UnaryFunction;
 
 	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from a geometric distribution.

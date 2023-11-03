@@ -34,7 +34,7 @@
 * @example
 * var props = inheritedWritableProperties( {} );
 */
-declare function inheritedWritableProperties( value: any, level?: number ): Array<string|symbol>; // tslint:disable-line: max-line-length
+declare function inheritedWritableProperties( value: any, level?: number ): Array<string|symbol>;
 
 
 // EXPORTS //

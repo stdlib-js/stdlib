@@ -284,7 +284,7 @@ interface Constructor {
 	*     streams.push( createStream() );
 	* }
 	*/
-	factory( x0: number, gamma: number, options?: Options ): ( ...args: Array<any> ) => RandomStream; // tslint:disable-line: max-line-length
+	factory( x0: number, gamma: number, options?: Options ): ( ...args: Array<any> ) => RandomStream;
 
 	/**
 	* Returns a function for creating readable streams which generate pseudorandom numbers drawn from a Cauchy distribution.
@@ -309,7 +309,7 @@ interface Constructor {
 	*     streams.push( createStream( 2.0, 5.0 ) );
 	* }
 	*/
-	factory( options?: Options ): ( x0: number, gamma: number ) => RandomStream; // tslint:disable-line: max-line-length
+	factory( options?: Options ): ( x0: number, gamma: number ) => RandomStream;
 
 	/**
 	* Returns an "objectMode" readable stream for generating a stream of pseudorandom numbers drawn from a Cauchy distribution.

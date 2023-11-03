@@ -34,7 +34,7 @@
 * @example
 * var props = inheritedEnumerableProperties( {} );
 */
-declare function inheritedEnumerableProperties( value: any, level?: number ): Array<string|symbol>; // tslint:disable-line: max-line-length
+declare function inheritedEnumerableProperties( value: any, level?: number ): Array<string|symbol>;
 
 
 // EXPORTS //
