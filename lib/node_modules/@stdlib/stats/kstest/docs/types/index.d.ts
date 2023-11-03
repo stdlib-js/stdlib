@@ -96,7 +96,7 @@ interface Results {
 * var out = kstest( [ 2.0, 1.0, 5.0, -5.0, 3.0, 0.5, 6.0 ], 'normal', 0.0, 1.0 );
 * // returns { 'pValue': ~0.015, 'statistic': ~0.556, ... }
 */
-declare function kstest( x: NumericArray, y: Function | string, ...params: Array<number | Options> ): Results; // tslint-disable-line max-line-length
+declare function kstest( x: NumericArray, y: Function | string, ...params: Array<number | Options> ): Results;
 
 
 // EXPORTS //

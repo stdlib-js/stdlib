@@ -21,7 +21,7 @@
 /**
 * Data type kind.
 */
-type Kind = 'all' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer'; // tslint-disable-line max-line-length
+type Kind = 'all' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer';
 
 /**
 * Returns a list of ndarray data types.

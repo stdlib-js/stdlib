@@ -34,7 +34,7 @@ import { Complex64Array, Complex128Array } from '@stdlib/types/array';
 * var bool = isComplexTypedArray( new Complex128Array( 10 ) );
 * // returns true
 */
-declare function isComplexTypedArray( value: any ): value is Complex64Array | Complex128Array; // tslint-disable-line max-line-length
+declare function isComplexTypedArray( value: any ): value is Complex64Array | Complex128Array;
 
 
 // EXPORTS //

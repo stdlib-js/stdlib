@@ -120,7 +120,7 @@ type VariadicFunction = ( ...args: Array<any> ) => void;
 *
 * f( 6, done );
 */
-declare function composeAsync( f0: BinaryFunction, f1: VariadicFunction, ...f: Array<VariadicFunction> ): CompositeFunction; // tslint-disable-line max-line-length
+declare function composeAsync( f0: BinaryFunction, f1: VariadicFunction, ...f: Array<VariadicFunction> ): CompositeFunction;
 
 
 // EXPORTS //

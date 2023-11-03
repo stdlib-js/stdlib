@@ -41,7 +41,7 @@ type ArrayOrBufferOrTypedArray = Array<any> | TypedArray | Buffer | null;
 * var buf = buffer( 'float64', 3 );
 * // returns <Float64Array>[ 0.0, 0.0, 0.0 ]
 */
-declare function buffer( dtype: DataType, size: number ): ArrayOrBufferOrTypedArray; // tslint-disable-line max-line-length
+declare function buffer( dtype: DataType, size: number ): ArrayOrBufferOrTypedArray;
 
 
 // EXPORTS //

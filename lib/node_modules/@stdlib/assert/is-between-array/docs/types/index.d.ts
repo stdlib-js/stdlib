@@ -58,7 +58,7 @@ type Comparison = 'open' | 'closed';
 * var bool = isBetweenArray( arr, 3.0, 4.0, 'closed', 'open' );
 * // returns false
 */
-declare function isBetweenArray( value: any, a: any, b: any, left?: Comparison, right?: Comparison ): value is ArrayLike<number>; // tslint-disable-line max-line-length
+declare function isBetweenArray( value: any, a: any, b: any, left?: Comparison, right?: Comparison ): value is ArrayLike<number>;
 
 
 // EXPORTS //

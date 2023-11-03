@@ -57,7 +57,7 @@ type Comparison = 'open' | 'closed';
 * var bool = isBetween( 3.14, 3.0, 3.14, 'closed', 'open' );
 * // returns false
 */
-declare function isBetween( value: any, a: any, b: any, left?: Comparison, right?: Comparison ): value is number; // tslint-disable-line max-line-length
+declare function isBetween( value: any, a: any, b: any, left?: Comparison, right?: Comparison ): value is number;
 
 
 // EXPORTS //

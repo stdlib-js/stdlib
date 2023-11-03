@@ -87,7 +87,7 @@ type Predicate = ( clbk: PredicateCallback ) => void;
 * }
 * ifelseAsync( predicate, 1.0, -1.0, done );
 */
-declare function ifelseAsync( predicate: Predicate, x: any, y: any, done: Callback ): void; // tslint-disable-line max-line-length
+declare function ifelseAsync( predicate: Predicate, x: any, y: any, done: Callback ): void;
 
 
 // EXPORTS //

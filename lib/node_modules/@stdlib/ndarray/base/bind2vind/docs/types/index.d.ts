@@ -46,7 +46,7 @@ import { Mode, Order } from '@stdlib/types/ndarray';
 * var ind = bind2vind( shape, strides, offset, order, 7, mode );
 * // returns 1
 */
-declare function bind2vind( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order, idx: number, mode: Mode ): number; // tslint-disable-line max-line-length
+declare function bind2vind( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order, idx: number, mode: Mode ): number;
 
 
 // EXPORTS //

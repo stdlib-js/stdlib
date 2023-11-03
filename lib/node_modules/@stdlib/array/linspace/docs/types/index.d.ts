@@ -128,7 +128,7 @@ interface Linspace {
 	* var arr = linspace( 0.0, 100.0, 6, opts );
 	* // returns <Float64Array>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
-	( start: number, stop: number, len: number, options?: BaseOptions | Float64Options ): Float64Array; // tslint-disable-line max-line-length
+	( start: number, stop: number, len: number, options?: BaseOptions | Float64Options ): Float64Array;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -148,7 +148,7 @@ interface Linspace {
 	* var arr = linspace( 0.0, 100.0, 6 );
 	* // returns <Float32Array>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
-	( start: number, stop: number, len: number, options: Float32Options ): Float32Array; // tslint-disable-line max-line-length
+	( start: number, stop: number, len: number, options: Float32Options ): Float32Array;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -168,7 +168,7 @@ interface Linspace {
 	* var arr = linspace( 0.0, 100.0, 6 );
 	* // returns [ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
-	( start: number, stop: number, len: number, options: GenericOptions ): Array<number>; // tslint-disable-line max-line-length
+	( start: number, stop: number, len: number, options: GenericOptions ): Array<number>;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -202,7 +202,7 @@ interface Linspace {
 	* var arr = linspace( start, stop, 6, opts );
 	* // returns <Complex64Array>
 	*/
-	( start: Complex64, stop: Complex64, len: number, options?: Complex64Options ): Complex64Array; // tslint-disable-line max-line-length
+	( start: Complex64, stop: Complex64, len: number, options?: Complex64Options ): Complex64Array;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -227,7 +227,7 @@ interface Linspace {
 	* var arr = linspace( start, stop, 6, opts );
 	* // returns <Complex64Array>
 	*/
-	( start: number | ComplexLike, stop: number | ComplexLike, len: number, options: Complex64Options ): Complex64Array; // tslint-disable-line max-line-length
+	( start: number | ComplexLike, stop: number | ComplexLike, len: number, options: Complex64Options ): Complex64Array;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -252,7 +252,7 @@ interface Linspace {
 	* var arr = linspace( start, stop, 6, opts );
 	* // returns [...]
 	*/
-	( start: Complex64, stop: Complex64, len: number, options: GenericOptions ): Array<Complex64>; // tslint-disable-line max-line-length
+	( start: Complex64, stop: Complex64, len: number, options: GenericOptions ): Array<Complex64>;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -277,7 +277,7 @@ interface Linspace {
 	* var arr = linspace( start, stop, 6, opts );
 	* // returns [...]
 	*/
-	( start: ComplexLike, stop: number | ComplexLike, len: number, options: GenericOptions ): Array<Complex128>; // tslint-disable-line max-line-length
+	( start: ComplexLike, stop: number | ComplexLike, len: number, options: GenericOptions ): Array<Complex128>;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -302,7 +302,7 @@ interface Linspace {
 	* var arr = linspace( start, stop, 6, opts );
 	* // returns [...]
 	*/
-	( start: number | ComplexLike, stop: ComplexLike, len: number, options: GenericOptions ): Array<Complex128>; // tslint-disable-line max-line-length
+	( start: number | ComplexLike, stop: ComplexLike, len: number, options: GenericOptions ): Array<Complex128>;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -336,7 +336,7 @@ interface Linspace {
 	* var arr = linspace( start, stop, 6, opts );
 	* // returns <Complex128Array>
 	*/
-	( start: ComplexLike, stop: number | ComplexLike, len: number, options?: Complex128Options ): Complex128Array; // tslint-disable-line max-line-length
+	( start: ComplexLike, stop: number | ComplexLike, len: number, options?: Complex128Options ): Complex128Array;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -370,7 +370,7 @@ interface Linspace {
 	* var arr = linspace( start, stop, 6, opts );
 	* // returns <Complex128Array>
 	*/
-	( start: number | ComplexLike, stop: ComplexLike, len: number, options?: Complex128Options ): Complex128Array; // tslint-disable-line max-line-length
+	( start: number | ComplexLike, stop: ComplexLike, len: number, options?: Complex128Options ): Complex128Array;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -393,7 +393,7 @@ interface Linspace {
 	* var arr = linspace( start, stop, 6, opts );
 	* // returns <Complex128Array>
 	*/
-	( start: number, stop: number, len: number, options: Complex128Options ): Complex128Array; // tslint-disable-line max-line-length
+	( start: number, stop: number, len: number, options: Complex128Options ): Complex128Array;
 
 	/**
 	* Generates a linearly spaced array over a specified interval.
@@ -410,7 +410,7 @@ interface Linspace {
 	* var arr = linspace( 0.0, 100.0, 6 );
 	* // returns <Float64Array>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
-	( start: number | ComplexLike, stop: number | ComplexLike, len: number, options?: Options ): FloatOrComplexTypedArray; // tslint-disable-line max-line-length
+	( start: number | ComplexLike, stop: number | ComplexLike, len: number, options?: Options ): FloatOrComplexTypedArray;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -429,7 +429,7 @@ interface Linspace {
 	* var arr = linspace.assign( 0.0, 100.0, out );
 	* // returns <Float64Array>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
-	assign( start: number, stop: number, out: Float64Array, options?: BaseOptions ): Float64Array; // tslint-disable-line max-line-length
+	assign( start: number, stop: number, out: Float64Array, options?: BaseOptions ): Float64Array;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -448,7 +448,7 @@ interface Linspace {
 	* var arr = linspace.assign( 0.0, 100.0, out );
 	* // returns <Float32Array>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
-	assign( start: number, stop: number, out: Float32Array, options?: BaseOptions ): Float32Array; // tslint-disable-line max-line-length
+	assign( start: number, stop: number, out: Float32Array, options?: BaseOptions ): Float32Array;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -465,7 +465,7 @@ interface Linspace {
 	* var arr = linspace.assign( 0.0, 100.0, out );
 	* // returns [ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
-	assign( start: number, stop: number, out: Array<number>, options?: BaseOptions ): Array<number>; // tslint-disable-line max-line-length
+	assign( start: number, stop: number, out: Array<number>, options?: BaseOptions ): Array<number>;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -487,7 +487,7 @@ interface Linspace {
 	* var arr = linspace.assign( start, stop, out );
 	* // returns [...]
 	*/
-	assign( start: Complex64, stop: Complex64, out: Array<any>, options?: BaseOptions ): Array<Complex64>; // tslint-disable-line max-line-length
+	assign( start: Complex64, stop: Complex64, out: Array<any>, options?: BaseOptions ): Array<Complex64>;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -509,7 +509,7 @@ interface Linspace {
 	* var arr = linspace.assign( start, stop, out );
 	* // returns [...]
 	*/
-	assign( start: ComplexLike, stop: number | ComplexLike, out: Array<any>, options?: BaseOptions ): Array<Complex128>; // tslint-disable-line max-line-length
+	assign( start: ComplexLike, stop: number | ComplexLike, out: Array<any>, options?: BaseOptions ): Array<Complex128>;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -531,7 +531,7 @@ interface Linspace {
 	* var arr = linspace.assign( start, stop, out );
 	* // returns [...]
 	*/
-	assign( start: number | ComplexLike, stop: ComplexLike, out: Array<any>, options?: BaseOptions ): Array<Complex128>; // tslint-disable-line max-line-length
+	assign( start: number | ComplexLike, stop: ComplexLike, out: Array<any>, options?: BaseOptions ): Array<Complex128>;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -550,7 +550,7 @@ interface Linspace {
 	* var arr = linspace.assign( 0.0, 100.0, out );
 	* // returns <Complex128Array>
 	*/
-	assign( start: number | ComplexLike, stop: number | ComplexLike, out: Complex128Array, options?: BaseOptions ): Complex128Array; // tslint-disable-line max-line-length
+	assign( start: number | ComplexLike, stop: number | ComplexLike, out: Complex128Array, options?: BaseOptions ): Complex128Array;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -569,7 +569,7 @@ interface Linspace {
 	* var arr = linspace.assign( 0.0, 100.0, out );
 	* // returns <Complex64Array>
 	*/
-	assign( start: number | ComplexLike, stop: number | ComplexLike, out: Complex64Array, options?: BaseOptions ): Complex64Array; // tslint-disable-line max-line-length
+	assign( start: number | ComplexLike, stop: number | ComplexLike, out: Complex64Array, options?: BaseOptions ): Complex64Array;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -588,7 +588,7 @@ interface Linspace {
 	* var arr = linspace.assign( 0.0, 100.0, out );
 	* // returns <Float64Array>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
-	assign( start: number, stop: number, out: ArrayLike<any>, options?: BaseOptions ): ArrayLike<number>; // tslint-disable-line max-line-length
+	assign( start: number, stop: number, out: ArrayLike<any>, options?: BaseOptions ): ArrayLike<number>;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -611,7 +611,7 @@ interface Linspace {
 	* var arr = linspace.assign( start, stop, out );
 	* // returns [...]
 	*/
-	assign( start: ComplexLike, stop: number | ComplexLike, out: ArrayLike<any>, options?: BaseOptions ): ArrayLike<ComplexLike>; // tslint-disable-line max-line-length
+	assign( start: ComplexLike, stop: number | ComplexLike, out: ArrayLike<any>, options?: BaseOptions ): ArrayLike<ComplexLike>;
 
 	/**
 	* Generates a linearly spaced sequence over a specified interval and assigns results to a provided output array.
@@ -634,7 +634,7 @@ interface Linspace {
 	* var arr = linspace.assign( start, stop, out );
 	* // returns [...]
 	*/
-	assign( start: number | ComplexLike, stop: ComplexLike, out: ArrayLike<any>, options?: BaseOptions ): ArrayLike<ComplexLike>; // tslint-disable-line max-line-length
+	assign( start: number | ComplexLike, stop: ComplexLike, out: ArrayLike<any>, options?: BaseOptions ): ArrayLike<ComplexLike>;
 }
 
 /**

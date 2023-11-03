@@ -119,7 +119,7 @@ type Fcn = ( i: number, next: Function ) => void;
 *
 * untilAsync( predicate, fcn, done );
 */
-declare function untilAsync( predicate: Predicate, fcn: Fcn, done: DoneCallback, thisArg?: any ): void; // tslint-disable-line max-line-length
+declare function untilAsync( predicate: Predicate, fcn: Fcn, done: DoneCallback, thisArg?: any ): void;
 
 
 // EXPORTS //

@@ -41,7 +41,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var bool = isBufferLengthCompatibleShape( 3, shape );
 * // returns false
 */
-declare function isBufferLengthCompatibleShape( len: number, shape: ArrayLike<number> ): boolean; // tslint-disable-line max-line-length
+declare function isBufferLengthCompatibleShape( len: number, shape: ArrayLike<number> ): boolean;
 
 
 // EXPORTS //

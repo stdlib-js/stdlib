@@ -125,7 +125,7 @@ interface ReadFileList {
 	* }
 	* console.dir( files );
 	*/
-	sync( list: Array<string>, options?: Options | string ): Array<File> | Error; // tslint-disable-line max-line-length
+	sync( list: Array<string>, options?: Options | string ): Array<File> | Error;
 }
 
 /**

@@ -40,7 +40,7 @@ type accumulator = ( x?: number, y?: number ) => number | null;
 * @example
 * var accumulator = incrmapcorr( 3, -2.0, 10.0 );
 */
-declare function incrmapcorr( W: number, meanx: number, meany: number ): accumulator; // tslint-disable-line max-line-length
+declare function incrmapcorr( W: number, meanx: number, meany: number ): accumulator;
 
 /**
 * Returns an accumulator function which incrementally computes a moving sample absolute Pearson product-moment correlation coefficient.

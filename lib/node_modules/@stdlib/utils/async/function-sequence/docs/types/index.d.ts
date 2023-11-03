@@ -116,7 +116,7 @@ type PipelineFunction = ( ...args: Array<any> ) => void;
 *
 * f( 6, done );
 */
-declare function funseqAsync( f0: VariadicFunction, f1: BinaryFunction, ...f: Array<BinaryFunction> ): PipelineFunction; // tslint-disable-line max-line-length
+declare function funseqAsync( f0: VariadicFunction, f1: BinaryFunction, ...f: Array<BinaryFunction> ): PipelineFunction;
 
 
 // EXPORTS //

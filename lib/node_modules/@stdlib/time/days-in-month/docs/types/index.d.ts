@@ -49,7 +49,7 @@
 * var num = daysInMonth( 2, 2017 );
 * // returns 28
 */
-declare function daysInMonth( month?: string | number | Date, year?: number ): number; // tslint-disable-line max-line-length
+declare function daysInMonth( month?: string | number | Date, year?: number ): number;
 
 
 // EXPORTS //

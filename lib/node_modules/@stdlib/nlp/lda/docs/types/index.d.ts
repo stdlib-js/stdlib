@@ -82,7 +82,7 @@ interface Model {
 * @throws must provide valid options
 * @returns model object
 */
-declare function lda( documents: Array<string>, K: number, options?: Options ): Model; // tslint-disable-line max-line-length
+declare function lda( documents: Array<string>, K: number, options?: Options ): Model;
 
 
 // EXPORTS //

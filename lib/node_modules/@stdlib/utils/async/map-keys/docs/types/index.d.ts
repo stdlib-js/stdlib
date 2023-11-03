@@ -119,7 +119,7 @@ type TernaryTransform = ( value: any, index: number, next: Callback ) => void;
 * @param obj - the input object
 * @param next - a callback to be invoked after processing an object `value`
 */
-type QuaternaryTransform = ( value: any, index: number, obj: any, next: Callback ) => void; // tslint-disable-line max-line-length
+type QuaternaryTransform = ( value: any, index: number, obj: any, next: Callback ) => void;
 
 /**
 * Transform function.
@@ -129,7 +129,7 @@ type QuaternaryTransform = ( value: any, index: number, obj: any, next: Callback
 * @param obj - the input object
 * @param next - a callback to be invoked after processing an object `value`
 */
-type Transform = Unary | BinaryTransform | TernaryTransform | QuaternaryTransform; // tslint-disable-line max-line-length
+type Transform = Unary | BinaryTransform | TernaryTransform | QuaternaryTransform;
 
 /**
 * Maps keys from one object to a new object having the same values.
@@ -201,7 +201,7 @@ interface MapKeysAsync {
 	* // Process each file in `files`:
 	* mapKeysAsync( files, opts, read, done );
 	*/
-	( obj: any, options: Options, transform: Transform, done: DoneCallback ): void; // tslint-disable-line max-line-length
+	( obj: any, options: Options, transform: Transform, done: DoneCallback ): void;
 
 	/**
 	* Maps keys from one object to a new object having the same values.

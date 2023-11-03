@@ -30,7 +30,7 @@
 * var arr = incrspace( 0, 11, 2 );
 * // returns [ 0, 2, 4, 6, 8, 10 ]
 */
-declare function incrspace( x1: number, x2: number, increment: number ): Array<number>; // tslint-disable-line max-line-length
+declare function incrspace( x1: number, x2: number, increment: number ): Array<number>;
 
 
 // EXPORTS //

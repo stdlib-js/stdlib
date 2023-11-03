@@ -154,7 +154,7 @@ declare function httpServer( requestListener?: RequestListener ): createServer;
 * }
 * var createServer = httpServer( opts, onRequest );
 */
-declare function httpServer( options: Options, requestListener?: RequestListener ): createServer; // tslint-disable-line max-line-length
+declare function httpServer( options: Options, requestListener?: RequestListener ): createServer;
 
 
 // EXPORTS //

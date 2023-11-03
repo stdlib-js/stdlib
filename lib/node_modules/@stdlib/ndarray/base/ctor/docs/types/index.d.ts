@@ -60,7 +60,7 @@ interface Constructor {
 	*
 	* var out = new ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 	*/
-	new( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: Shape, strides: Strides, offset: number, order: Order ): ndarray; // tslint-disable-line max-line-length
+	new( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: Shape, strides: Strides, offset: number, order: Order ): ndarray;
 
 	/**
 	* ndarray constructor.
@@ -94,7 +94,7 @@ interface Constructor {
 	*
 	* var out = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 	*/
-	( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: Shape, strides: Strides, offset: number, order: Order ): ndarray; // tslint-disable-line max-line-length
+	( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: Shape, strides: Strides, offset: number, order: Order ): ndarray;
 }
 
 /**

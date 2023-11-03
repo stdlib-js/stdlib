@@ -95,7 +95,7 @@ interface LoopOrderObject {
 * var ssz = o.sz;
 * // returns [ 6, -2, 1 ]
 */
-declare function binaryLoopOrder( shape: ArrayLike<number>, stridesX: ArrayLike<number>, stridesY: ArrayLike<number>, stridesZ: ArrayLike<number> ): LoopOrderObject; // tslint-disable-line max-line-length
+declare function binaryLoopOrder( shape: ArrayLike<number>, stridesX: ArrayLike<number>, stridesY: ArrayLike<number>, stridesZ: ArrayLike<number> ): LoopOrderObject;
 
 
 // EXPORTS //

@@ -39,7 +39,7 @@
 * var out = unzip( arr, [ 0, 2 ] );
 * // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function unzip( arr: Array<Array<any>>, idx?: Array<number> ): Array<Array<any>>; // tslint-disable-line max-line-length
+declare function unzip( arr: Array<Array<any>>, idx?: Array<number> ): Array<Array<any>>;
 
 
 // EXPORTS //

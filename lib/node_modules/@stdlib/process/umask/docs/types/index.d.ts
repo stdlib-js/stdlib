@@ -47,7 +47,7 @@ interface Options {
 * var mask = umask();
 * // returns <number>
 */
-declare function umask( mask: number | string, options?: Options ): number | string; // tslint-disable-line max-line-length
+declare function umask( mask: number | string, options?: Options ): number | string;
 
 /**
 * Get/set the process mask.

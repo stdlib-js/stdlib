@@ -53,7 +53,7 @@ interface Open {
 	* }
 	* open( __filename, 'r+', 438, onOpen );
 	*/
-	( path: string | Buffer, flags: string | number, mode: number, clbk: Callback ): void; // tslint-disable-line max-line-length
+	( path: string | Buffer, flags: string | number, mode: number, clbk: Callback ): void;
 
 	/**
 	* Asynchronously opens a file.
@@ -111,7 +111,7 @@ interface Open {
 	* }
 	* closeSync( fd );
 	*/
-	sync( path: string | Buffer, flags?: string | number, mode?: number ): number | Error; // tslint-disable-line max-line-length
+	sync( path: string | Buffer, flags?: string | number, mode?: number ): number | Error;
 }
 
 /**

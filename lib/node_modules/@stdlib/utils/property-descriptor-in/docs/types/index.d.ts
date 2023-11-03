@@ -39,7 +39,7 @@
 * var desc = propertyDescriptorIn( obj, 'foo' );
 * // returns {'configurable':true,'enumerable':true,'writable':true,'value':3.14}
 */
-declare function propertyDescriptorIn( value: any, property: string | symbol ): TypedPropertyDescriptor<any> | null; // tslint-disable-line max-line-length
+declare function propertyDescriptorIn( value: any, property: string | symbol ): TypedPropertyDescriptor<any> | null;
 
 
 // EXPORTS //

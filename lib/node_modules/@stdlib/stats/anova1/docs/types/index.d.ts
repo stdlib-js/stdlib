@@ -142,7 +142,7 @@ interface Results {
 * var out = anova1( x, f );
 * // returns {...}
 */
-declare function anova1( x: NumericArray, y: Array<any>, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function anova1( x: NumericArray, y: Array<any>, options?: Options ): Results;
 
 
 // EXPORTS //

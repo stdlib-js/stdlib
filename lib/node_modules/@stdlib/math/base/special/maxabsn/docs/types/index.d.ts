@@ -46,7 +46,7 @@
 * var v = maxabsn( +0.0, -0.0 );
 * // returns +0.0
 */
-declare function maxabsn( x?: number, y?: number, ...args: Array<number> ): number; // tslint-disable-line max-line-length
+declare function maxabsn( x?: number, y?: number, ...args: Array<number> ): number;
 
 
 // EXPORTS //

@@ -144,7 +144,7 @@ interface Accumulator {
 * var yhat = accumulator.predict( x );
 * // returns <ndarray>
 */
-declare function incrBinaryClassification( N: number, options?: Options ): Accumulator; // tslint-disable-line max-line-length
+declare function incrBinaryClassification( N: number, options?: Options ): Accumulator;
 
 
 // EXPORTS //

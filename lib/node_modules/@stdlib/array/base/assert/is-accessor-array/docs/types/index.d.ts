@@ -65,7 +65,7 @@ interface AccessorArray {
 * var bool = isAccessorArray( [] );
 * // returns false
 */
-declare function isAccessorArray( value: Collection | AccessorArray ): value is AccessorArray; // tslint-disable-line max-line-length
+declare function isAccessorArray( value: Collection | AccessorArray ): value is AccessorArray;
 
 
 // EXPORTS //

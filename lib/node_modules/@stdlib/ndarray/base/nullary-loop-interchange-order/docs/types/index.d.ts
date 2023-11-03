@@ -69,7 +69,7 @@ interface LoopOrderObject {
 * var ssx = o.sx;
 * // returns [ 1, 4, 12 ]
 */
-declare function nullaryLoopOrder( shape: ArrayLike<number>, stridesX: ArrayLike<number> ): LoopOrderObject; // tslint-disable-line max-line-length
+declare function nullaryLoopOrder( shape: ArrayLike<number>, stridesX: ArrayLike<number> ): LoopOrderObject;
 
 
 // EXPORTS //

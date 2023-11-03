@@ -46,7 +46,7 @@ type Closure = ( ...args: Array<any> ) => any;
 * str = toGrace( 'Thank you' );
 * // returns 'Thank you, Grace Hopper.'
 */
-declare function papplyRight( fcn: Function, ...args: Array<any> ): Closure; // tslint-disable-line max-line-length
+declare function papplyRight( fcn: Function, ...args: Array<any> ): Closure;
 
 
 // EXPORTS //

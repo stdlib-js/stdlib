@@ -30,7 +30,7 @@
 * var bsize = binaryBlockSize( 'float64', 'float64', 'float64' );
 * // returns <number>
 */
-declare function binaryBlockSize( dtypeX: string, dtypeY: string, dtypeZ: string ): number; // tslint-disable-line max-line-length
+declare function binaryBlockSize( dtypeX: string, dtypeY: string, dtypeZ: string ): number;
 
 
 // EXPORTS //

@@ -49,7 +49,7 @@
 * var num = minutesInMonth( 2, 2017 );
 * // returns 40320
 */
-declare function minutesInMonth( month?: string | number | Date, year?: number ): number; // tslint-disable-line max-line-length
+declare function minutesInMonth( month?: string | number | Date, year?: number ): number;
 
 
 // EXPORTS //

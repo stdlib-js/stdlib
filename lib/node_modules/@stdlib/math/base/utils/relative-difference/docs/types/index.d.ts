@@ -43,7 +43,7 @@ type ScaleFunction = ( x: number, y: number ) => number;
 *     -   'x': `x` (*noncommutative*).
 *     -   'y': `y` (*noncommutative*).
 */
-type ScaleNames = 'max-abs' | 'max' | 'min-abs' | 'min' | 'mean-abs' | 'mean' | 'x' | 'y'; // tslint-disable-line max-line-length
+type ScaleNames = 'max-abs' | 'max' | 'min-abs' | 'min' | 'mean-abs' | 'mean' | 'x' | 'y';
 
 /**
 * Computes the relative difference of two real numbers.
@@ -110,7 +110,7 @@ type ScaleNames = 'max-abs' | 'max' | 'min-abs' | 'min' | 'mean-abs' | 'mean' | 
 * var d = relativeDifference( 5.0, -2.0, 'y' ); // => |7/-2|
 * // returns 3.5
 */
-declare function relativeDifference( x: number, y: number, scale?: ScaleFunction | ScaleNames ): number; // tslint-disable-line max-line-length
+declare function relativeDifference( x: number, y: number, scale?: ScaleFunction | ScaleNames ): number;
 
 
 // EXPORTS //

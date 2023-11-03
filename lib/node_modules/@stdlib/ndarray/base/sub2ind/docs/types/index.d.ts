@@ -122,7 +122,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var idx = sub2ind( shape, strides, offset, 1, 2, 2, mode );
 * // returns 17
 */
-declare function sub2ind( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, ...args: Array<number | Array<string>> ): number; // tslint-disable-line max-line-length
+declare function sub2ind( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, ...args: Array<number | Array<string>> ): number;
 
 
 // EXPORTS //

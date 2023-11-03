@@ -67,7 +67,7 @@ interface ReadFile {
 	* }
 	* readFile( __filename, onFile );
 	*/
-	( file: string | Buffer | number, options: Options | string, clbk: Callback ): void; // tslint-disable-line max-line-length
+	( file: string | Buffer | number, options: Options | string, clbk: Callback ): void;
 
 	/**
 	* Asynchronously reads the entire contents of a file.
@@ -102,7 +102,7 @@ interface ReadFile {
 	* }
 	* console.log( out );
 	*/
-	sync( file: string | Buffer | number, options?: Options | string ): Buffer | string | Error; // tslint-disable-line max-line-length
+	sync( file: string | Buffer | number, options?: Options | string ): Buffer | string | Error;
 }
 
 /**

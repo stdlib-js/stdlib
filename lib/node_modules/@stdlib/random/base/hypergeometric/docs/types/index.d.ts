@@ -183,7 +183,7 @@ interface Random extends PRNG {
 	* var v = rand();
 	* // returns <number>
 	*/
-	factory( N: number, K: number, n: number, options?: Options ): NullaryFunction; // tslint-disable-line max-line-length
+	factory( N: number, K: number, n: number, options?: Options ): NullaryFunction;
 
 	/**
 	* Returns a pseudorandom number generator for generating random numbers from a hypergeometric distribution.

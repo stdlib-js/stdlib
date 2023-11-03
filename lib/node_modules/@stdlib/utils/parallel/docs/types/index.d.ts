@@ -133,7 +133,7 @@ declare function parallel( files: Array<string>, clbk: Callback ): void;
 *
 * parallel( files, opts, done );
 */
-declare function parallel( files: Array<string>, options: Options, clbk: Callback ): void; // tslint-disable-line max-line-length
+declare function parallel( files: Array<string>, options: Options, clbk: Callback ): void;
 
 
 // EXPORTS //

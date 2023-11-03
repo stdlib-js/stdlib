@@ -87,7 +87,7 @@ interface Options {
 * var out = deepPluck( arr, 'a|b|c', {'sep':'|'} );
 * // returns [ 1, 2 ]
 */
-declare function deepPluck( arr: Array<any>, path: Array<any> | string, options?: Options ): Array<any>; // tslint-disable-line max-line-length
+declare function deepPluck( arr: Array<any>, path: Array<any> | string, options?: Options ): Array<any>;
 
 
 // EXPORTS //

@@ -45,7 +45,7 @@
 * var bool = moveProperty( obj1, 'c', obj2 );
 * // returns false
 */
-declare function moveProperty( source: any, prop: string, target: any ): boolean; // tslint-disable-line max-line-length
+declare function moveProperty( source: any, prop: string, target: any ): boolean;
 
 
 // EXPORTS //

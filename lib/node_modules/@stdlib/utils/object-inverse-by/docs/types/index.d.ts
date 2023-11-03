@@ -152,7 +152,7 @@ declare function invertBy( obj: any, transform: Transform ): any;
 * var out = invertBy( obj, opts, transform );
 * // returns { 'beep': 'c', 'boop': 'b' }
 */
-declare function invertBy( obj: any, options: Options, transform: Transform ): any; // tslint-disable-line max-line-length
+declare function invertBy( obj: any, options: Options, transform: Transform ): any;
 
 
 // EXPORTS //

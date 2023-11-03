@@ -69,7 +69,7 @@ interface FactoryOptions {
 * var bool = ( data === out );
 * // returns true
 */
-type ShuffleFunction = ( arr: ArrayLike<any>, options?: Options ) => ArrayLike<any>; // tslint-disable-line max-line-length
+type ShuffleFunction = ( arr: ArrayLike<any>, options?: Options ) => ArrayLike<any>;
 
 /**
 * Interface for generating random permutations of elements in an array.

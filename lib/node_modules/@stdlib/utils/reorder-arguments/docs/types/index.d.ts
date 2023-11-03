@@ -37,7 +37,7 @@
 * var out = bar( 1, 2, 3 );
 * // returns [ 3, 1, 2 ]
 */
-declare function reorderArguments( fcn: Function, indices: Array<number>, thisArg?: any ): Function; // tslint-disable-line max-line-length
+declare function reorderArguments( fcn: Function, indices: Array<number>, thisArg?: any ): Function;
 
 
 // EXPORTS //

@@ -61,7 +61,7 @@ type PipelineFunction = ( iterator: Iterator ) => any;
 * var bool = p( randu() );
 * // returns <boolean>
 */
-declare function iterPipeline( iterFcn0: Function | Array<Function>, ...iterFcn: Array<Function> ): PipelineFunction; // tslint-disable-line max-line-length
+declare function iterPipeline( iterFcn0: Function | Array<Function>, ...iterFcn: Array<Function> ): PipelineFunction;
 
 
 // EXPORTS //

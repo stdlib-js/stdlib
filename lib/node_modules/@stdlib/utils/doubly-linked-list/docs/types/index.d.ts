@@ -173,7 +173,7 @@ declare class DoublyLinkedList {
 	* len = list.length;
 	* // returns 4
 	*/
-	insert( node: Node, value: any, location?: 'before' | 'after' ): DoublyLinkedList; // tslint-disable-line max-line-length
+	insert( node: Node, value: any, location?: 'before' | 'after' ): DoublyLinkedList;
 
 	/**
 	* Returns an iterator for iterating over a list.

@@ -46,7 +46,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var bool = isSingleSegmentCompatible( shape, strides, offset );
 * // returns false
 */
-declare function isSingleSegmentCompatible( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number ): boolean; // tslint-disable-line max-line-length
+declare function isSingleSegmentCompatible( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number ): boolean;
 
 
 // EXPORTS //

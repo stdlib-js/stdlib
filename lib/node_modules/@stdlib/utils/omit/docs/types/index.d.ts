@@ -40,8 +40,8 @@
 * var obj2 = omit( obj1, 'b' );
 * // returns { 'a': 1 }
 */
-declare function omit<T extends object, K extends keyof T>( obj: T, keys: Array<K> | K ): Omit<T, K>; // tslint-disable-line max-line-length
-declare function omit<T extends object>( obj: T, keys: Array<string> | string ): Partial<T>; // tslint-disable-line max-line-length
+declare function omit<T extends object, K extends keyof T>( obj: T, keys: Array<K> | K ): Omit<T, K>;
+declare function omit<T extends object>( obj: T, keys: Array<string> | string ): Partial<T>;
 
 
 // EXPORTS //

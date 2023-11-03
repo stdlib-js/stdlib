@@ -49,7 +49,7 @@
 * var out = bar( 1, 2, 3 );
 * // returns [ 1, 3 ]
 */
-declare function rejectArguments( fcn: Function, predicate: Function, thisArg?: any ): Function; // tslint-disable-line max-line-length
+declare function rejectArguments( fcn: Function, predicate: Function, thisArg?: any ): Function;
 
 
 // EXPORTS //

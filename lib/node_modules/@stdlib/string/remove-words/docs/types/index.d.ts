@@ -36,7 +36,7 @@
 * var out = removeWords( str, [ 'boop', 'foo' ], true );
 * // returns 'beep   bar'
 */
-declare function removeWords( str: string, words: Array<string>, ignoreCase?: boolean ): string; // tslint-disable-line max-line-length
+declare function removeWords( str: string, words: Array<string>, ignoreCase?: boolean ): string;
 
 
 // EXPORTS //

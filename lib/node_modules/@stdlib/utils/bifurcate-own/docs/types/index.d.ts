@@ -118,7 +118,7 @@ type Predicate = Nullary | Unary | Binary;
 * var out = bifurcateOwn( obj, opts, predicate );
 * // e.g., returns [ [ [ 'a', 'beep' ], [ 'b', 'boop' ], [ 'd', 'bar' ] ], [ [ 'c', 'foo' ] ] ]
 */
-declare function bifurcateOwn( obj: any, predicate: Predicate ): Array<Array<any>>; // tslint-disable-line max-line-length
+declare function bifurcateOwn( obj: any, predicate: Predicate ): Array<Array<any>>;
 
 /**
 * Splits an object's own property values into two groups according to a predicate function.
@@ -175,7 +175,7 @@ declare function bifurcateOwn( obj: any, predicate: Predicate ): Array<Array<any
 * var out = bifurcateOwn( obj, opts, predicate );
 * // e.g., returns [ [ [ 'a', 'beep' ], [ 'b', 'boop' ], [ 'd', 'bar' ] ], [ [ 'c', 'foo' ] ] ]
 */
-declare function bifurcateOwn( obj: any, options: Options, predicate: Predicate ): Array<Array<any>>; // tslint-disable-line max-line-length
+declare function bifurcateOwn( obj: any, options: Options, predicate: Predicate ): Array<Array<any>>;
 
 
 // EXPORTS //

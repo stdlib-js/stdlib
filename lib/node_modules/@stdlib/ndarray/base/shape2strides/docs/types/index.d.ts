@@ -37,7 +37,7 @@ import { Order } from '@stdlib/types/ndarray';
 * s = shape2strides( [ 3, 2 ], 'column-major' );
 * // returns [ 1, 3 ]
 */
-declare function shape2strides( shape: ArrayLike<number>, order: Order ): Array<number>; // tslint-disable-line max-line-length
+declare function shape2strides( shape: ArrayLike<number>, order: Order ): Array<number>;
 
 
 // EXPORTS //

@@ -117,7 +117,7 @@ interface Results {
 * var y = [ 3, 2, 4, 1, 2, 4 ];
 * var out = pcorrTest( x, y );
 */
-declare function pcorrTest( x: NumericArray, y: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function pcorrTest( x: NumericArray, y: NumericArray, options?: Options ): Results;
 
 
 // EXPORTS //

@@ -33,7 +33,7 @@
 * bool = isAllowedCast( 'float64', 'int32', 'safe' );
 * // returns false
 */
-declare function isAllowedCast( from: string, to: string, casting: string ): boolean; // tslint-disable-line max-line-length
+declare function isAllowedCast( from: string, to: string, casting: string ): boolean;
 
 
 // EXPORTS //

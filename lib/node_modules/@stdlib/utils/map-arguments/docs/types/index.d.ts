@@ -47,7 +47,7 @@
 * var out = bar( 1, 2, 3 );
 * // returns [ 2, 4, 6 ]
 */
-declare function mapArguments( fcn: Function, clbk: Function, thisArg?: any ): Function; // tslint-disable-line max-line-length
+declare function mapArguments( fcn: Function, clbk: Function, thisArg?: any ): Function;
 
 
 // EXPORTS //

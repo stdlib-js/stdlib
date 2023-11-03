@@ -51,7 +51,7 @@
 * var day = dayOfYear( 12, 31, 2016 );
 * // returns 366
 */
-declare function dayOfYear( month?: string | number | Date, day?: number, year?: number ): number; // tslint-disable-line max-line-length
+declare function dayOfYear( month?: string | number | Date, day?: number, year?: number ): number;
 
 
 // EXPORTS //

@@ -128,7 +128,7 @@ interface Results {
 *
 * var table = out.print();
 */
-declare function ztest2( x: NumericArray, y: NumericArray, sigmax: number, sigmay: number, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function ztest2( x: NumericArray, y: NumericArray, sigmax: number, sigmay: number, options?: Options ): Results;
 
 
 // EXPORTS //

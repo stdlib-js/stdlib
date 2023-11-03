@@ -45,7 +45,7 @@
 * day = dayOfQuarter( 12, 31, 2017 );
 * // returns 92
 */
-declare function dayOfQuarter( month?: string | number | Date, day?: number, year?: number ): number; // tslint-disable-line max-line-length
+declare function dayOfQuarter( month?: string | number | Date, day?: number, year?: number ): number;
 
 
 // EXPORTS //

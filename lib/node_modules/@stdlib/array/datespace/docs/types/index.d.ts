@@ -54,7 +54,7 @@ interface Options {
 * var arr = datespace( 1417503655000, 1417503655001, 3, { 'round': 'round' } );
 * // returns [...]
 */
-declare function datespace( start: Date | number | string, stop: Date | number | string, options?: Options ): Array<Date>; // tslint-disable-line max-line-length
+declare function datespace( start: Date | number | string, stop: Date | number | string, options?: Options ): Array<Date>;
 
 /**
 * Generates an array of linearly spaced dates.
@@ -84,7 +84,7 @@ declare function datespace( start: Date | number | string, stop: Date | number |
 * var arr = datespace( 1417503655000, 1417503655001, 3, { 'round': 'round' } );
 * // returns [...]
 */
-declare function datespace( start: Date | number | string, stop: Date | number | string, length: number, options?: Options ): Array<Date>; // tslint-disable-line max-line-length
+declare function datespace( start: Date | number | string, stop: Date | number | string, length: number, options?: Options ): Array<Date>;
 
 
 // EXPORTS //

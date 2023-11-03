@@ -46,7 +46,7 @@ import { Buffer } from 'buffer';
 * var out = ndarray2array( buffer, shape, strides, offset, order );
 * // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function ndarray2array( buffer: ArrayLike<any> | Buffer, shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order ): Array<any>; // tslint-disable-line max-line-length
+declare function ndarray2array( buffer: ArrayLike<any> | Buffer, shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order ): Array<any>;
 
 
 // EXPORTS //

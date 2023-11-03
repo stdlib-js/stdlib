@@ -18,7 +18,7 @@
 
 // TypeScript Version: 4.1
 
-type PoliticalParty = 'Democratic' | 'Republican' | 'Democratic-Republican' | 'Federalist' | 'National Union' | 'Whig' | 'Whig & Democratic' | 'none'; // tslint-disable-line max-line-length
+type PoliticalParty = 'Democratic' | 'Republican' | 'Democratic-Republican' | 'Federalist' | 'National Union' | 'Whig' | 'Whig & Democratic' | 'none';
 
 type YearRange = [ number, number ];
 

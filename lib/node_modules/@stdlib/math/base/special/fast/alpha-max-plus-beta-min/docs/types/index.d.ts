@@ -60,7 +60,7 @@ interface Hypot {
 	* var h = hypot( -5.0, 12.0 );
 	* // returns 14.5
 	*/
-	factory( alpha: number, beta: number, nonnegative?: boolean, ints?: boolean ): HypotFunction; // tslint-disable-line max-line-length
+	factory( alpha: number, beta: number, nonnegative?: boolean, ints?: boolean ): HypotFunction;
 }
 
 /**

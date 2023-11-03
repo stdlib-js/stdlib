@@ -61,7 +61,7 @@ interface Options {
 * var fcn = factory( opts );
 * // returns <Function>
 */
-declare function fmtprodmsgFactory( options?: Options ): FormatProdErrorMsgFunction; // tslint-disable-line max-line-length
+declare function fmtprodmsgFactory( options?: Options ): FormatProdErrorMsgFunction;
 
 
 // EXPORTS //

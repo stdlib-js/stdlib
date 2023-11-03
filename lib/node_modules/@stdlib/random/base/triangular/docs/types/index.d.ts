@@ -179,7 +179,7 @@ interface Random extends PRNG {
 	* var v = rand();
 	* // returns <number>
 	*/
-	factory( a: number, b: number, c: number, options?: Options ): NullaryFunction; // tslint-disable-line max-line-length
+	factory( a: number, b: number, c: number, options?: Options ): NullaryFunction;
 
 	/**
 	* Returns a pseudorandom number generator for generating random numbers from a triangular distribution.

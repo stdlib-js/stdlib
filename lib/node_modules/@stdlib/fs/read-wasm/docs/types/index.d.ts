@@ -109,7 +109,7 @@ interface ReadWASM {
 	* }
 	* console.log( out );
 	*/
-	sync( file: string | Buffer | number, options?: Options ): Uint8Array | Error; // tslint-disable-line max-line-length
+	sync( file: string | Buffer | number, options?: Options ): Uint8Array | Error;
 }
 
 /**

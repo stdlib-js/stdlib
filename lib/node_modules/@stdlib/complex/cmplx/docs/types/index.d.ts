@@ -36,7 +36,7 @@ type DataType = 'float64' | 'float32';
 * var z = complex( 5.0, 3.0, 'float64' );
 * // returns <Complex128>
 */
-declare function complex( real: number, imag: number, dtype?: DataType ): Complex; // tslint-disable-line max-line-length
+declare function complex( real: number, imag: number, dtype?: DataType ): Complex;
 
 
 // EXPORTS //

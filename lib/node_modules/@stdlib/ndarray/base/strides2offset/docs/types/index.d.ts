@@ -36,7 +36,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var offset = strides2offset( shape, strides );
 * // returns 20
 */
-declare function strides2offset( shape: ArrayLike<number>, strides: ArrayLike<number> ): number; // tslint-disable-line max-line-length
+declare function strides2offset( shape: ArrayLike<number>, strides: ArrayLike<number> ): number;
 
 
 // EXPORTS //

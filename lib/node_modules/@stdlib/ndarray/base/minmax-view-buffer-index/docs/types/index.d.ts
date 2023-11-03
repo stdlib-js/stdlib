@@ -62,7 +62,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var idx = minmaxViewBufferIndex( shape, strides, offset );
 * // returns [ 0, 99 ]
 */
-declare function minmaxViewBufferIndex( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number ): Array<number>; // tslint-disable-line max-line-length
+declare function minmaxViewBufferIndex( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number ): Array<number>;
 
 
 // EXPORTS //

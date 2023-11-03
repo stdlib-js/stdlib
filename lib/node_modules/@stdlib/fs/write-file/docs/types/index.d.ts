@@ -71,7 +71,7 @@ interface WriteFile {
 	* var opts = { 'flag': 'r' };
 	* writeFile( './beep/boop.txt', 'beep boop\n', opts, onWrite );
 	*/
-	( file: string | Buffer | number, data: string | Buffer, options: Options | string, clbk: Callback ): void; // tslint-disable-line max-line-length
+	( file: string | Buffer | number, data: string | Buffer, options: Options | string, clbk: Callback ): void;
 
 	/**
 	* Asynchronously writes data to a file.
@@ -89,7 +89,7 @@ interface WriteFile {
 	*
 	* writeFile( './beep/boop.txt', 'beep boop\n', onWrite );
 	*/
-	( file: string | Buffer | number, data: string | Buffer, clbk: Callback ): void; // tslint-disable-line max-line-length
+	( file: string | Buffer | number, data: string | Buffer, clbk: Callback ): void;
 
 	/**
 	* Synchronously writes data to a file.
@@ -105,7 +105,7 @@ interface WriteFile {
 	*     throw err;
 	* }
 	*/
-	sync( file: string | Buffer | number, data: string | Buffer, options?: Options | string ): Error | null; // tslint-disable-line max-line-length
+	sync( file: string | Buffer | number, data: string | Buffer, options?: Options | string ): Error | null;
 }
 
 /**

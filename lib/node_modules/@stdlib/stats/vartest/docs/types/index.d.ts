@@ -131,7 +131,7 @@ interface Results {
 *
 * var out = vartest( x, y );
 */
-declare function vartest( x: NumericArray, y: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function vartest( x: NumericArray, y: NumericArray, options?: Options ): Results;
 
 
 // EXPORTS //

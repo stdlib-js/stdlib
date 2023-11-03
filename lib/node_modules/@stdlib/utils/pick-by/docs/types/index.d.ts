@@ -71,7 +71,7 @@ type Predicate<T = unknown, U = unknown> = Nullary | Unary<T> | Binary<T, U>;
 * var obj2 = pickBy( obj1, predicate );
 * // returns { 'b': 2 }
 */
-declare function pickBy<T extends object, K extends keyof T>( obj: T, predicate: Predicate<K, T[K]> ): Partial<T>; // tslint-disable-line max-line-length
+declare function pickBy<T extends object, K extends keyof T>( obj: T, predicate: Predicate<K, T[K]> ): Partial<T>;
 
 
 // EXPORTS //

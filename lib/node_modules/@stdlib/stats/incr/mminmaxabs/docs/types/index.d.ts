@@ -68,7 +68,7 @@ type accumulator = ( x?: number ) => ArrayLike<number> | null;
 * mm = accumulator();
 * // returns [ 3.0, 5.0 ]
 */
-declare function incrmminmaxabs( out: ArrayLike<number>, window: number ): accumulator; // tslint-disable-line max-line-length
+declare function incrmminmaxabs( out: ArrayLike<number>, window: number ): accumulator;
 
 /**
 * Returns an accumulator function which incrementally computes moving minimum and maximum absolute values.

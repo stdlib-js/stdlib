@@ -28,7 +28,7 @@ import { TypedArray } from '@stdlib/types/array';
 // Define a union type representing both iterable and non-iterable iterators:
 type Iterator = Iter | IterableIterator;
 
-type DType = 'float64' | 'float32' | 'int32' | 'uint32' | 'int16' | 'uint16' | 'int8' | 'uint8' | 'uint8c'; // tslint-disable-line max-line-length
+type DType = 'float64' | 'float32' | 'int32' | 'uint32' | 'int16' | 'uint16' | 'int8' | 'uint8' | 'uint8c';
 
 /**
 * Interface defining options.
@@ -82,7 +82,7 @@ type Ternary = ( value: number, index: number, field: string ) => void;
 * @param field - tuple field name
 * @param tuple - tuple on which the method is invoked
 */
-type Quaternary = ( value: any, index: number, field: string, tuple: Tuple ) => void; // tslint-disable-line max-line-length
+type Quaternary = ( value: any, index: number, field: string, tuple: Tuple ) => void;
 
 /**
 * Function invoked for each tuple element.
@@ -126,7 +126,7 @@ type BinaryPredicate = ( value: number, index: number ) => boolean;
 * @param field - tuple field name
 * @returns boolean indicating whether tuple element passes a test
 */
-type TernaryPredicate = ( value: number, index: number, field: string ) => boolean; // tslint-disable-line max-line-length
+type TernaryPredicate = ( value: number, index: number, field: string ) => boolean;
 
 /**
 * Predicate function which tests tuple elements.
@@ -137,7 +137,7 @@ type TernaryPredicate = ( value: number, index: number, field: string ) => boole
 * @param tuple - tuple on which the method is invoked
 * @returns boolean indicating whether tuple element passes a test
 */
-type QuaternaryPredicate = ( value: any, index: number, field: string, tuple: Tuple ) => boolean; // tslint-disable-line max-line-length
+type QuaternaryPredicate = ( value: any, index: number, field: string, tuple: Tuple ) => boolean;
 
 /**
 * Predicate function which tests tuple elements.
@@ -148,7 +148,7 @@ type QuaternaryPredicate = ( value: any, index: number, field: string, tuple: Tu
 * @param tuple - tuple on which the method is invoked
 * @returns boolean indicating whether tuple element passes a test
 */
-type PredicateFunction = NullaryPredicate | UnaryPredicate | BinaryPredicate | TernaryPredicate | QuaternaryPredicate; // tslint-disable-line max-line-length
+type PredicateFunction = NullaryPredicate | UnaryPredicate | BinaryPredicate | TernaryPredicate | QuaternaryPredicate;
 
 /**
 * Function applied against an accumulator.
@@ -193,7 +193,7 @@ type TernaryReducer = ( acc: any, value: number, index: number ) => any;
 * @param field - tuple field name
 * @returns value assigned to the accumulator
 */
-type QuaternaryReducer = ( acc: any, value: number, index: number, field: string ) => any; // tslint-disable-line max-line-length
+type QuaternaryReducer = ( acc: any, value: number, index: number, field: string ) => any;
 
 /**
 * Function applied against an accumulator.
@@ -205,7 +205,7 @@ type QuaternaryReducer = ( acc: any, value: number, index: number, field: string
 * @param tuple - tuple on which the method is invoked
 * @returns value assigned to the accumulator
 */
-type QuinaryReducer = ( acc: any, value: number, index: number, field: string, tuple: Tuple ) => any; // tslint-disable-line max-line-length
+type QuinaryReducer = ( acc: any, value: number, index: number, field: string, tuple: Tuple ) => any;
 
 /**
 * Function applied against an accumulator.
@@ -217,7 +217,7 @@ type QuinaryReducer = ( acc: any, value: number, index: number, field: string, t
 * @param tuple - tuple on which the method is invoked
 * @returns value assigned to the accumulator
 */
-type Reducer = NullaryReducer | UnaryReducer | BinaryReducer | TernaryReducer | QuaternaryReducer | QuinaryReducer; // tslint-disable-line max-line-length
+type Reducer = NullaryReducer | UnaryReducer | BinaryReducer | TernaryReducer | QuaternaryReducer | QuinaryReducer;
 
 /**
 * Function which specifies the sort order.
@@ -279,7 +279,7 @@ type FactoryTernary = ( value: number, index: number, field: string ) => number;
 * @param field - tuple field
 * @returns transformed value
 */
-type FactoryCallback = FactoryNullary | FactoryUnary | FactoryBinary | FactoryTernary; // tslint-disable-line max-line-length
+type FactoryCallback = FactoryNullary | FactoryUnary | FactoryBinary | FactoryTernary;
 
 /**
 * Callback invoked for each field.
@@ -312,7 +312,7 @@ type FactoryObjectBinary = ( value: number, field: string ) => number;
 * @param field - source object tuple field name
 * @returns transformed value
 */
-type FactoryObjectCallback = FactoryObjectNullary | FactoryObjectUnary | FactoryObjectBinary; // tslint-disable-line max-line-length
+type FactoryObjectCallback = FactoryObjectNullary | FactoryObjectUnary | FactoryObjectBinary;
 
 /**
 * Named typed tuple.
@@ -651,7 +651,7 @@ interface Tuple {
 	* var field = tuple.findField( predicate );
 	* // returns 'z'
 	*/
-	findField( predicate: PredicateFunction, thisArg?: any ): string | undefined; // tslint-disable-line max-line-length
+	findField( predicate: PredicateFunction, thisArg?: any ): string | undefined;
 
 	/**
 	* Returns the index of the first tuple element for which a provided `predicate` function returns a truthy value.
@@ -672,7 +672,7 @@ interface Tuple {
 	* var idx = tuple.findIndex( predicate );
 	* // returns 2
 	*/
-	findIndex( predicate: PredicateFunction, thisArg?: any ): number | undefined; // tslint-disable-line max-line-length
+	findIndex( predicate: PredicateFunction, thisArg?: any ): number | undefined;
 
 	/**
 	* Invokes a callback for each tuple element.
@@ -846,7 +846,7 @@ interface Tuple {
 	* field = tuple.lastFieldOf( 2.0 );
 	* // returns undefined
 	*/
-	lastFieldOf( searchElement: number, fromIndex?: number ): string | undefined; // tslint-disable-line max-line-length
+	lastFieldOf( searchElement: number, fromIndex?: number ): string | undefined;
 
 	/**
 	* Returns the index of the last tuple element strictly equal to a search element, iterating from right to left.
@@ -866,7 +866,7 @@ interface Tuple {
 	* idx = tuple.lastIndexOf( 2.0 );
 	* // returns -1
 	*/
-	lastIndexOf( searchElement: number, fromIndex?: number ): number | undefined; // tslint-disable-line max-line-length
+	lastIndexOf( searchElement: number, fromIndex?: number ): number | undefined;
 
 	/**
 	* Maps each tuple element to an element in a new tuple having the same data type as the host tuple.
@@ -1394,7 +1394,7 @@ interface Factory {
 	* y = tuple[ 1 ];
 	* // returns -1.0
 	*/
-	( obj: TypedArray | ArrayLike<number> | Iterable<number>, dtype?: DType ): Tuple; // tslint-disable-line max-line-length
+	( obj: TypedArray | ArrayLike<number> | Iterable<number>, dtype?: DType ): Tuple;
 
 	/**
 	* Returns a named typed tuple view of an ArrayBuffer.
@@ -1431,7 +1431,7 @@ interface Factory {
 	* y = tuple[ 1 ];
 	* // returns -1.0
 	*/
-	from( src: ArrayLike<number> | Iterable<number>, map?: FactoryCallback, thisArg?: any ): Tuple; // tslint-disable-line max-line-length
+	from( src: ArrayLike<number> | Iterable<number>, map?: FactoryCallback, thisArg?: any ): Tuple;
 
 	/**
 	* Creates a new named typed tuple from an object containing tuple fields.
@@ -1521,7 +1521,7 @@ interface Factory {
 * y = p.y;
 * // returns -1.0
 */
-declare function namedtypedtuple( names: Array<string>, options?: Options ): Factory; // tslint-disable-line max-line-length
+declare function namedtypedtuple( names: Array<string>, options?: Options ): Factory;
 
 
 // EXPORTS //

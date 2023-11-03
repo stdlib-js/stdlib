@@ -60,7 +60,7 @@ interface Routine {
 	* var bool = ( y === out );
 	* // returns true
 	*/
-	assign( a: number, b: number, out: Float32Array, stride: number, offset: number ): Float32Array; // tslint-disable-line max-line-length
+	assign( a: number, b: number, out: Float32Array, stride: number, offset: number ): Float32Array;
 }
 
 /**

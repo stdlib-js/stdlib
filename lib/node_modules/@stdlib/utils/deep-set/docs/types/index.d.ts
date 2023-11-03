@@ -99,7 +99,7 @@ interface DeepSet {
 	* });
 	* // returns true
 	*/
-	( obj: any, path: string | Array<string>, value: any, options?: Options ): boolean; // tslint-disable-line max-line-length
+	( obj: any, path: string | Array<string>, value: any, options?: Options ): boolean;
 
 	/**
 	* Creates a reusable deep set function.

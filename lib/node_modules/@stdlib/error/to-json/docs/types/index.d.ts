@@ -29,7 +29,7 @@
 * var json = error2json( err );
 * // returns {...}
 */
-declare function error2json( err: Error|TypeError|SyntaxError|URIError|ReferenceError|RangeError|EvalError ): any; // tslint-disable-line max-line-length
+declare function error2json( err: Error|TypeError|SyntaxError|URIError|ReferenceError|RangeError|EvalError ): any;
 
 
 // EXPORTS //

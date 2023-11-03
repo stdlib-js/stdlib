@@ -54,7 +54,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var bool = isColumnMajorContiguous( shape, strides, offset );
 * // returns false
 */
-declare function isColumnMajorContiguous( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number ): boolean; // tslint-disable-line max-line-length
+declare function isColumnMajorContiguous( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number ): boolean;
 
 
 // EXPORTS //

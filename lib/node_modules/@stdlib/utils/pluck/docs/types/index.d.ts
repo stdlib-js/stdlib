@@ -65,7 +65,7 @@ interface Options {
 * var bool = ( arr[ 0 ] === out[ 0 ] );
 * // returns true
 */
-declare function pluck( arr: Array<any>, prop: PropertyName, options?: Options ): Array<any>; // tslint-disable-line max-line-length
+declare function pluck( arr: Array<any>, prop: PropertyName, options?: Options ): Array<any>;
 
 
 // EXPORTS //

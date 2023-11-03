@@ -108,7 +108,7 @@ type ResultFunction = ( clbk: Callback ) => void;
 * }
 * ifthenAsync( predicate, x, y, done );
 */
-declare function ifthenAsync( predicate: Predicate, x: ResultFunction, y: ResultFunction, done: Callback ): void; // tslint-disable-line max-line-length
+declare function ifthenAsync( predicate: Predicate, x: ResultFunction, y: ResultFunction, done: Callback ): void;
 
 
 // EXPORTS //

@@ -50,7 +50,7 @@ type Closure = ( v: any ) => any;
 * var sum = f( 2 )( 3 );
 * // returns 5
 */
-declare function curryRight( fcn: Function, arity: number, thisArg?: any ): Closure; // tslint-disable-line max-line-length
+declare function curryRight( fcn: Function, arity: number, thisArg?: any ): Closure;
 
 /**
 * Transforms a function into a sequence of functions each accepting a single argument.

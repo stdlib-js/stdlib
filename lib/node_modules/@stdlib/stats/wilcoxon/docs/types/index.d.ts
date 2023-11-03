@@ -128,7 +128,7 @@ interface Results {
 *     'alternative': 'greater'
 * });
 */
-declare function wilcoxon( x: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function wilcoxon( x: NumericArray, options?: Options ): Results;
 
 /**
 * Computes a Wilcoxon signed rank test.
@@ -150,7 +150,7 @@ declare function wilcoxon( x: NumericArray, options?: Options ): Results; // tsl
 * var y = [ 0.878, 0.647, 0.598, 2.05, 1.06, 1.29, 1.06, 3.14, 1.29 ];
 * var out = wilcoxon( x, y );
 */
-declare function wilcoxon( x: NumericArray, y: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function wilcoxon( x: NumericArray, y: NumericArray, options?: Options ): Results;
 
 
 // EXPORTS //

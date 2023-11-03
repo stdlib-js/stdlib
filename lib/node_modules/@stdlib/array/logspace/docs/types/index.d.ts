@@ -31,7 +31,7 @@
 * var arr = logspace( 0, 2, 6 );
 * // returns [ 1, ~2.5, ~6.31, ~15.85, ~39.81, 100 ]
 */
-declare function logspace( x1: number, x2: number, len?: number ): Array<number>; // tslint-disable-line max-line-length
+declare function logspace( x1: number, x2: number, len?: number ): Array<number>;
 
 
 // EXPORTS //

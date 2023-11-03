@@ -58,7 +58,7 @@ declare function assign<T extends object, U>( target: T, source: U ): T & U;
 * @throws first argument must not be null or undefined
 * @returns target object
 */
-declare function assign<T extends object, U, V>( target: T, source1: U, source2: V ): T & U & V; // tslint-disable-line max-line-length
+declare function assign<T extends object, U, V>( target: T, source1: U, source2: V ): T & U & V;
 
 /**
 * Copies own enumerable properties from one or more source objects to a target object.
@@ -75,7 +75,7 @@ declare function assign<T extends object, U, V>( target: T, source1: U, source2:
 * @throws first argument must not be null or undefined
 * @returns target object
 */
-declare function assign<T extends object, U, V, W>( target: T, source1: U, source2: V, source3: W ): T & U & V & W; // tslint-disable-line max-line-length
+declare function assign<T extends object, U, V, W>( target: T, source1: U, source2: V, source3: W ): T & U & V & W;
 
 /**
 * Copies own enumerable properties from one or more source objects to a target object.

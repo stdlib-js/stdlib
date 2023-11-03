@@ -92,7 +92,7 @@ type TryFunction = ( clbk: Callback ) => void;
 *
 * trythenAsync( x, y, done );
 */
-declare function trythenAsync( x: TryFunction, y: ThenFunction, done: Callback ): void; // tslint-disable-line max-line-length
+declare function trythenAsync( x: TryFunction, y: ThenFunction, done: Callback ): void;
 
 
 // EXPORTS //

@@ -123,7 +123,7 @@ interface Results {
 *     'alternative': 'greater'
 * });
 */
-declare function ztest( x: NumericArray, sigma: number, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function ztest( x: NumericArray, sigma: number, options?: Options ): Results;
 
 
 // EXPORTS //

@@ -123,7 +123,7 @@ import { Mode, Order } from '@stdlib/types/ndarray';
 * var s = ind2sub( shape, strides, offset, order, 17, 'throw' );
 * // returns [ 1, 2, 2 ]
 */
-declare function ind2sub( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order, idx: number, mode: Mode ): Array<number>; // tslint-disable-line max-line-length
+declare function ind2sub( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order, idx: number, mode: Mode ): Array<number>;
 
 
 // EXPORTS //

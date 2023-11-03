@@ -56,7 +56,7 @@ import { Buffer } from 'buffer';
 * var buf = fromArrayBuffer( ab, 2, 4 );
 * // returns <Buffer>
 */
-declare function fromArrayBuffer( buf: ArrayBuffer,  byteOffset?: number, length?: number ): Buffer; // tslint-disable-line max-line-length
+declare function fromArrayBuffer( buf: ArrayBuffer,  byteOffset?: number, length?: number ): Buffer;
 
 
 // EXPORTS //

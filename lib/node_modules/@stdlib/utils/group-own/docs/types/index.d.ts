@@ -173,7 +173,7 @@ declare function groupOwn( obj: any, indicator: Indicator ): any;
 * var out = groupOwn( obj, opts, indicator );
 * // e.g., returns { 'b': [ [ 'a', 'beep' ], [ 'b', 'boop' ], [ 'd', 'bar' ] ], 'f': [ [ 'c', 'foo' ] ] }
 */
-declare function groupOwn( obj: any, options: Options, indicator: Indicator ): any; // tslint-disable-line max-line-length
+declare function groupOwn( obj: any, options: Options, indicator: Indicator ): any;
 
 
 // EXPORTS //

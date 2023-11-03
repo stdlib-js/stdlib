@@ -88,7 +88,7 @@ type accumulator = ( vector?: ndarray ) => ndarray | null;
 * out = accumulator();
 * // returns <ndarray>
 */
-declare function incrpcorrmat( out: number | ndarray, means?: ndarray ): accumulator; // tslint-disable-line max-line-length
+declare function incrpcorrmat( out: number | ndarray, means?: ndarray ): accumulator;
 
 
 // EXPORTS //

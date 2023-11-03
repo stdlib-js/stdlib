@@ -40,7 +40,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var out = bar( 1, 2, 3 );
 * // returns [ 1, 3 ]
 */
-declare function pickArguments( fcn: Function, indices: ArrayLike<number>, thisArg?: any ): Function; // tslint-disable-line max-line-length
+declare function pickArguments( fcn: Function, indices: ArrayLike<number>, thisArg?: any ): Function;
 
 
 // EXPORTS //

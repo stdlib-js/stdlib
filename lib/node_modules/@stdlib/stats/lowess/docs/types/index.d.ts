@@ -81,7 +81,7 @@ interface Output {
 * @throws arguments `x` and `y` must have the same length
 * @returns ordered x-values and fitted values
 */
-declare function lowess( x: NumericArray, y: NumericArray, options?: Options ): Output; // tslint-disable-line max-line-length
+declare function lowess( x: NumericArray, y: NumericArray, options?: Options ): Output;
 
 
 // EXPORTS //

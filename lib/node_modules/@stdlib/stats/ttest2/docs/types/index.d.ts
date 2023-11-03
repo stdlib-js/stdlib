@@ -135,7 +135,7 @@ interface Results {
 * var out = ttest2( a, b );
 * var table = out.print();
 */
-declare function ttest2( x: NumericArray, y: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function ttest2( x: NumericArray, y: NumericArray, options?: Options ): Results;
 
 
 // EXPORTS //

@@ -108,7 +108,7 @@ interface ResolveParentPathBy {
 	*     console.log( path );
 	* }
 	*/
-	( path: string, options: Options, predicate: AsyncPredicate, clbk: DoneCallback ): void; // tslint-disable-line max-line-length
+	( path: string, options: Options, predicate: AsyncPredicate, clbk: DoneCallback ): void;
 
 	/**
 	* Asynchronously resolves a path according to a predicate function by walking parent directories.
@@ -155,7 +155,7 @@ interface ResolveParentPathBy {
 	* var path = resolveParentPathBy.sync( 'package.json', { 'dir': __dirname }, predicate );
 	* // e.g., returns '...'
 	*/
-	sync( path: string, options: Options, predicate: SyncPredicate ): string | null; // tslint-disable-line max-line-length
+	sync( path: string, options: Options, predicate: SyncPredicate ): string | null;
 
 	/**
 	* Synchronously resolves a path according to a predicate function by walking parent directories.

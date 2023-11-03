@@ -55,7 +55,7 @@
 * var y = betaincinv( 0.8, 1.0, 6.0 );
 * // returns ~0.235
 */
-declare function betaincinv( p: number, a: number, b: number, upper?: boolean ): number; // tslint-disable-line max-line-length
+declare function betaincinv( p: number, a: number, b: number, upper?: boolean ): number;
 
 
 // EXPORTS //

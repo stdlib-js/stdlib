@@ -102,7 +102,7 @@ interface Ind2Sub {
 	* var bool = ( s === out );
 	* // returns true
 	*/
-	assign( shape: ArrayLike<number>, idx: number, options: Options, out: any ): Array<number>; // tslint-disable-line max-line-length
+	assign( shape: ArrayLike<number>, idx: number, options: Options, out: any ): Array<number>;
 
 	/**
 	* Converts a linear index to an array of subscripts and assigns results to a provided output array.

@@ -45,7 +45,7 @@ interface Table {
 * var dt = promotionRules( 'float32', 'foo' );
 * // returns null
 */
-declare function promotionRules( dtype1: any, dtype2: any ): number | string | null; // tslint-disable-line max-line-length
+declare function promotionRules( dtype1: any, dtype2: any ): number | string | null;
 
 /**
 * Returns a type promotion table displaying the ndarray data types with the smallest size and closest "kind" to which ndarray data types can be safely cast.

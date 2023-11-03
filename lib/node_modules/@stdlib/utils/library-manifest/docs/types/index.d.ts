@@ -47,7 +47,7 @@ interface Options {
 * @example
 * var conf = manifest( './manifest.json', {} );
 */
-declare function manifest( fpath: string, conditions: any, options?: Options ): any; // tslint-disable-line max-line-length
+declare function manifest( fpath: string, conditions: any, options?: Options ): any;
 
 
 // EXPORTS //

@@ -50,7 +50,7 @@ type Closure = ( ...args: Array<any> ) => any;
 * var sum = add( 2, 3 );
 * // returns 5
 */
-declare function uncurry( fcn: Function, arity?: number, thisArg?: any ): Closure; // tslint-disable-line max-line-length
+declare function uncurry( fcn: Function, arity?: number, thisArg?: any ): Closure;
 
 /**
 * Transforms a curried function into a function invoked with multiple arguments.

@@ -81,7 +81,7 @@ interface Options {
 * var out = ordinalize( '7', { 'lang': 'es' } );
 * // returns '7ª'
 */
-declare function ordinalize( value: string | number, options?: Options ): string; // tslint-disable-line max-line-length
+declare function ordinalize( value: string | number, options?: Options ): string;
 
 
 // EXPORTS //

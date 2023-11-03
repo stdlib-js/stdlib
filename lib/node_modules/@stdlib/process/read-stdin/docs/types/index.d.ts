@@ -51,7 +51,7 @@ interface StdIn {
 	*
 	* stdin( 'utf8', onRead );
 	*/
-	( encoding: string | null, clbk: Callback ): void; // tslint-disable-line max-line-length
+	( encoding: string | null, clbk: Callback ): void;
 
 	/**
 	* Reads data from `stdin`.

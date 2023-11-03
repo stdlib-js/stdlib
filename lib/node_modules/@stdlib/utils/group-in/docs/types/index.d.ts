@@ -181,7 +181,7 @@ declare function groupIn( obj: any, indicator: Indicator ): any;
 * var out = groupIn( obj, opts, indicator );
 * // e.g., returns { 'b': [ [ 'a', 'beep' ], [ 'b', 'boop' ], [ 'd', 'bar' ] ], 'f': [ [ 'c', 'foo' ] ] }
 */
-declare function groupIn( obj: any, options: Options, indicator: Indicator ): any; // tslint-disable-line max-line-length
+declare function groupIn( obj: any, options: Options, indicator: Indicator ): any;
 
 
 // EXPORTS //

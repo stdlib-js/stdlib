@@ -33,7 +33,7 @@ import { DataType, OutputPolicy } from '@stdlib/types/ndarray';
 * var dt = outputDataType( 'float64', 'complex_floating_point' );
 * // returns <string>
 */
-declare function outputDataType( dtype: DataType, policy: OutputPolicy | DataType ): DataType; // tslint-disable-line max-line-length
+declare function outputDataType( dtype: DataType, policy: OutputPolicy | DataType ): DataType;
 
 
 // EXPORTS //

@@ -49,7 +49,7 @@
 * var num = hoursInMonth( 2, 2017 );
 * // returns 672
 */
-declare function hoursInMonth( month?: string | number | Date, year?: number ): number; // tslint-disable-line max-line-length
+declare function hoursInMonth( month?: string | number | Date, year?: number ): number;
 
 
 // EXPORTS //

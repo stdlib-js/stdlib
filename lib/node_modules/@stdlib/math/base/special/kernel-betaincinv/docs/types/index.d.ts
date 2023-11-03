@@ -44,7 +44,7 @@
 * y = kernelBetaincinv( 1.0, 6.0, 0.8, 0.2 )
 * // returns[ ~0.235, ~0.765 ]
 */
-declare function kernelBetaincinv( a: number, b: number, p: number, q: number ): Array<number>; // tslint-disable-line max-line-length
+declare function kernelBetaincinv( a: number, b: number, p: number, q: number ): Array<number>;
 
 
 // EXPORTS //

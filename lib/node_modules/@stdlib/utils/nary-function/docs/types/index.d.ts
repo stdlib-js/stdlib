@@ -51,7 +51,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var out = bar( 1, 2, 3, 4, 5, 6 );
 * // returns 3
 */
-declare function naryFunction( fcn: Function, arity: number, thisArg?: any ): Function; // tslint-disable-line max-line-length
+declare function naryFunction( fcn: Function, arity: number, thisArg?: any ): Function;
 
 
 // EXPORTS //

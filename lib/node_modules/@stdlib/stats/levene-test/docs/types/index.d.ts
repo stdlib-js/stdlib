@@ -128,7 +128,7 @@ interface Results {
 * });
 * // returns {...}
 */
-declare function leveneTest( x: NumericArray, options?: OptionsWithGroups ): Results; // tslint-disable-line max-line-length
+declare function leveneTest( x: NumericArray, options?: OptionsWithGroups ): Results;
 
 /**
 * Computes Levene's test for equal variances.
@@ -148,7 +148,7 @@ declare function leveneTest( x: NumericArray, options?: OptionsWithGroups ): Res
 * var out = leveneTest( x, y );
 * // returns {...}
 */
-declare function leveneTest( x: NumericArray, y: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function leveneTest( x: NumericArray, y: NumericArray, options?: Options ): Results;
 
 /**
 * Computes Levene's test for equal variances.
@@ -170,7 +170,7 @@ declare function leveneTest( x: NumericArray, y: NumericArray, options?: Options
 * var out = leveneTest( x, y, z );
 * // returns {...}
 */
-declare function leveneTest( x: NumericArray, y: NumericArray, z: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function leveneTest( x: NumericArray, y: NumericArray, z: NumericArray, options?: Options ): Results;
 
 /**
 * Computes Levene's test for equal variances.
@@ -184,7 +184,7 @@ declare function leveneTest( x: NumericArray, y: NumericArray, z: NumericArray, 
 * @throws must provide valid options
 * @returns test results
 */
-declare function leveneTest( x: NumericArray, y: NumericArray, z: NumericArray, w: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function leveneTest( x: NumericArray, y: NumericArray, z: NumericArray, w: NumericArray, options?: Options ): Results;
 
 /**
 * Computes Levene's test for equal variances.
@@ -195,7 +195,7 @@ declare function leveneTest( x: NumericArray, y: NumericArray, z: NumericArray, 
 * @throws must provide valid options
 * @returns test results
 */
-declare function leveneTest( x: NumericArray, y: NumericArray, ...args: Array<NumericArray | Options> ): Results; // tslint-disable-line max-line-length
+declare function leveneTest( x: NumericArray, y: NumericArray, ...args: Array<NumericArray | Options> ): Results;
 
 
 // EXPORTS //

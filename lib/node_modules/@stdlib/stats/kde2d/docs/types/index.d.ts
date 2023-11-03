@@ -60,7 +60,7 @@ interface Options {
 	/**
 	* A string or function to specifying the used kernel function (default: 'gaussian').
 	*/
-	kernel?: 'gaussian' | 'epanechnikov' | 'cosine' | 'quartic' | 'triangular' | 'tricube' | 'triweight' | 'uniform' | Function; // tslint-disable-line max-line-length
+	kernel?: 'gaussian' | 'epanechnikov' | 'cosine' | 'quartic' | 'triangular' | 'tricube' | 'triweight' | 'uniform' | Function;
 }
 
 /**
@@ -138,7 +138,7 @@ declare function kde2d( arr: ndarray, options?: Options ): Output;
 * var y = [ -0.0468, 0.8012, 1.6492, 2.4973, 3.3454, 4.1934, 5.0415, 5.8896, 6.7376, 7.5857 ];
 * var out = kde2d( x, y );
 */
-declare function kde2d( x: NumericArray, y: NumericArray, options?: Options ): Output; // tslint-disable-line max-line-length
+declare function kde2d( x: NumericArray, y: NumericArray, options?: Options ): Output;
 
 
 // EXPORTS //

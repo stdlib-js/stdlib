@@ -124,7 +124,7 @@ declare function kruskalTest( arr0: NumericArray, options?: Options ): Results;
 * var out = kruskalTest( x, y );
 * // returns {...}
 */
-declare function kruskalTest( arr0: NumericArray, arr1: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function kruskalTest( arr0: NumericArray, arr1: NumericArray, options?: Options ): Results;
 
 /**
 * Computes the Kruskal-Wallis test for equality of medians.
@@ -146,7 +146,7 @@ declare function kruskalTest( arr0: NumericArray, arr1: NumericArray, options?: 
 * var out = kruskalTest( x, y, z );
 * // returns {...}
 */
-declare function kruskalTest( arr0: NumericArray, arr1: NumericArray, arr2: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function kruskalTest( arr0: NumericArray, arr1: NumericArray, arr2: NumericArray, options?: Options ): Results;
 
 /**
 * Computes the Kruskal-Wallis test for equality of medians.
@@ -160,7 +160,7 @@ declare function kruskalTest( arr0: NumericArray, arr1: NumericArray, arr2: Nume
 * @throws must provide valid options
 * @returns test results
 */
-declare function kruskalTest( arr0: NumericArray, arr1: NumericArray, arr2: NumericArray, arr3: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function kruskalTest( arr0: NumericArray, arr1: NumericArray, arr2: NumericArray, arr3: NumericArray, options?: Options ): Results;
 
 /**
 * Computes the Kruskal-Wallis test for equality of medians.
@@ -170,7 +170,7 @@ declare function kruskalTest( arr0: NumericArray, arr1: NumericArray, arr2: Nume
 * @throws must provide valid options
 * @returns test results
 */
-declare function kruskalTest( arr0: NumericArray, ...args: Array<NumericArray | Options> ): Results; // tslint-disable-line max-line-length
+declare function kruskalTest( arr0: NumericArray, ...args: Array<NumericArray | Options> ): Results;
 
 
 // EXPORTS //

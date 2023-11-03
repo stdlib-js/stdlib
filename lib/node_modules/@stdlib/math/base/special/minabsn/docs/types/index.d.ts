@@ -46,7 +46,7 @@
 * var v = minabsn( +0.0, -0.0 );
 * // returns +0.0
 */
-declare function minabsn( x?: number, y?: number, ...args: Array<number> ): number; // tslint-disable-line max-line-length
+declare function minabsn( x?: number, y?: number, ...args: Array<number> ): number;
 
 
 // EXPORTS //

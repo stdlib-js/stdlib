@@ -85,7 +85,7 @@ interface ReadJSON {
 	*     console.dir( data );
 	* }
 	*/
-	( file: string | Buffer | number, options: Options | string, clbk: Callback ): void; // tslint-disable-line max-line-length
+	( file: string | Buffer | number, options: Options | string, clbk: Callback ): void;
 
 	/**
 	* Asynchronously reads a file as JSON.
@@ -127,7 +127,7 @@ interface ReadJSON {
 	* }
 	* console.dir( out );
 	*/
-	sync( file: string | Buffer | number, options?: Options | string ): string | Error; // tslint-disable-line max-line-length
+	sync( file: string | Buffer | number, options?: Options | string ): string | Error;
 }
 
 /**

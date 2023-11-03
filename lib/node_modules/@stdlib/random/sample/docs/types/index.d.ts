@@ -227,7 +227,7 @@ interface Sample {
 	* out = fcn();
 	* // returns null
 	*/
-	factory( pool: ArrayLike<any>, options?: FactoryPopOptions ): SamplePopFunction; // tslint-disable-line max-line-length
+	factory( pool: ArrayLike<any>, options?: FactoryPopOptions ): SamplePopFunction;
 
 	/**
 	* Returns a function to sample elements from an array-like object.

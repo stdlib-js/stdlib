@@ -40,7 +40,7 @@
 * var desc = getOwnPropertyDescriptor( obj, 'foo' );
 * // returns {'configurable':true,'enumerable':true,'writable':true,'value':3.14}
 */
-declare function getOwnPropertyDescriptor( value: any, property: string | symbol ): TypedPropertyDescriptor<any> | null; // tslint-disable-line max-line-length
+declare function getOwnPropertyDescriptor( value: any, property: string | symbol ): TypedPropertyDescriptor<any> | null;
 
 
 // EXPORTS //

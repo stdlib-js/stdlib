@@ -36,7 +36,7 @@
 * var desc = inheritedPropertyDescriptor( {}, 'toString' );
 * // returns {...}
 */
-declare function inheritedPropertyDescriptor( value: any, property: string | symbol, level?: number ): TypedPropertyDescriptor<any> | null; // tslint-disable-line max-line-length
+declare function inheritedPropertyDescriptor( value: any, property: string | symbol, level?: number ): TypedPropertyDescriptor<any> | null;
 
 
 // EXPORTS //

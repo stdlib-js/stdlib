@@ -51,7 +51,7 @@
 * var y = gammainc( 6.0, NaN )
 * // returns NaN
 */
-declare function gammainc( x: number, a: number, regularized?: boolean, upper?: boolean ): number; // tslint-disable-line max-line-length
+declare function gammainc( x: number, a: number, regularized?: boolean, upper?: boolean ): number;
 
 
 // EXPORTS //

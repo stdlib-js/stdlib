@@ -111,7 +111,7 @@ interface Waterfall {
 	* waterfall();
 	* waterfall();
 	*/
-	factory( fcns: Array<Function>, clbk: DoneCallback, thisArg?: any ): WaterfallFunction; // tslint-disable-line max-line-length
+	factory( fcns: Array<Function>, clbk: DoneCallback, thisArg?: any ): WaterfallFunction;
 }
 
 /**

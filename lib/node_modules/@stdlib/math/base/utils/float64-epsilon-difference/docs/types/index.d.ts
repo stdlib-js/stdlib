@@ -43,7 +43,7 @@ type ScaleFunction = ( x: number, y: number ) => number;
 *     -   'x': `x` (*noncommutative*).
 *     -   'y': `y` (*noncommutative*).
 */
-type ScaleNames = 'max-abs' | 'max' | 'min-abs' | 'min' | 'mean-abs' | 'mean' | 'x' | 'y'; // tslint-disable-line max-line-length
+type ScaleNames = 'max-abs' | 'max' | 'min-abs' | 'min' | 'mean-abs' | 'mean' | 'x' | 'y';
 
 /**
 * Computes the relative difference in units of double-precision floating-point epsilon.
@@ -79,7 +79,7 @@ type ScaleNames = 'max-abs' | 'max' | 'min-abs' | 'min' | 'mean-abs' | 'mean' | 
 * var d = epsilonDifference( 1.0000000000000002, 1.0000000000000100, scale ); // => ~44ε
 * // returns ~44
 */
-declare function epsilonDifference( x: number, y: number, scale?: ScaleFunction | ScaleNames ): number; // tslint-disable-line max-line-length
+declare function epsilonDifference( x: number, y: number, scale?: ScaleFunction | ScaleNames ): number;
 
 
 // EXPORTS //

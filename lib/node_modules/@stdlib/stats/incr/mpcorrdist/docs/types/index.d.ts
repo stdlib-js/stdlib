@@ -51,7 +51,7 @@ type accumulator = ( x?: number, y?: number ) => number | null;
 * @example
 * var accumulator = incrmpcorrdist( 3, -2.0, 10.0 );
 */
-declare function incrmpcorrdist( W: number, meanx: number, meany: number ): accumulator; // tslint-disable-line max-line-length
+declare function incrmpcorrdist( W: number, meanx: number, meany: number ): accumulator;
 
 /**
 * Returns an accumulator function which incrementally computes a moving sample Pearson product-moment correlation distance.

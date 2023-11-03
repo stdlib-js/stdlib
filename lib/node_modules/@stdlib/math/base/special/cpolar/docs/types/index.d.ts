@@ -62,7 +62,7 @@ interface Cpolar {
 	* var bool = ( v === out );
 	* // returns true
 	*/
-	assign<T = unknown>( z: Complex128, out: Collection<T>, stride: number, offset: number ): Collection<T | number>; // tslint-disable-line max-line-length
+	assign<T = unknown>( z: Complex128, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
 }
 
 /**

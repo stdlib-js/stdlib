@@ -180,7 +180,7 @@ interface Constructor {
 	*     streams.push( createStream( arr.length, arr, 1, 0 ) );
 	* }
 	*/
-	factory( options?: Options ): ( N: number, buffer: Collection, stride: number, offset: number ) => Readable; // tslint-disable-line max-line-length
+	factory( options?: Options ): ( N: number, buffer: Collection, stride: number, offset: number ) => Readable;
 
 	/**
 	* Returns an "objectMode" readable stream from an array-like value.
@@ -219,7 +219,7 @@ interface Constructor {
 	*
 	* stream.pipe( inspectStream.objectMode( log ) );
 	*/
-	objectMode( N: number, buffer: Collection, stride: number, offset: number, options?: Options ): Readable; // tslint-disable-line max-line-length
+	objectMode( N: number, buffer: Collection, stride: number, offset: number, options?: Options ): Readable;
 }
 
 /**

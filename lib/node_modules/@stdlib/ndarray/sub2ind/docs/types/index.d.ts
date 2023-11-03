@@ -66,7 +66,7 @@ interface Options {
 * var i = sub2ind( [ 3, 3, 3 ], 1, 2, 2 );
 * // returns 17
 */
-declare function sub2ind( shape: ArrayLike<number>, ...args: Array<number|Options> ): number; // tslint-disable-line max-line-length
+declare function sub2ind( shape: ArrayLike<number>, ...args: Array<number|Options> ): number;
 
 
 // EXPORTS //

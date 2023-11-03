@@ -37,7 +37,7 @@
 * var v = f();
 * // returns 5
 */
-declare function thunk<T extends Array<any>, U>( fcn: ( ...args: T ) => U, ...args: T ): () => U; // tslint-disable-line max-line-length
+declare function thunk<T extends Array<any>, U>( fcn: ( ...args: T ) => U, ...args: T ): () => U;
 
 
 // EXPORTS //

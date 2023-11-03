@@ -61,7 +61,7 @@ type IteratorThunk = ( iter: Iterator ) => any;
 * var bool = thunk( it );
 * // returns true
 */
-declare function iterThunk( iterFcn: IteratorFunction, ...args: Array<any> ): IteratorThunk; // tslint-disable-line max-line-length
+declare function iterThunk( iterFcn: IteratorFunction, ...args: Array<any> ): IteratorThunk;
 
 
 // EXPORTS //

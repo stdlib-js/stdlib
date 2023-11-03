@@ -50,7 +50,7 @@ type accumulator = ( x?: number, y?: number ) => number | null;
 * @example
 * var accumulator = incrmpcorr( 3, -2.0, 10.0 );
 */
-declare function incrmpcorr( W: number, meanx: number, meany: number ): accumulator; // tslint-disable-line max-line-length
+declare function incrmpcorr( W: number, meanx: number, meany: number ): accumulator;
 
 /**
 * Returns an accumulator function which incrementally computes an updated moving sample correlation coefficient.

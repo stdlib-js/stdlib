@@ -50,7 +50,7 @@ type accumulator = ( x?: number, y?: number ) => number | null;
 * @example
 * var accumulator = incrmcovariance( 3, -2.0, 10.0 );
 */
-declare function incrmcovariance( W: number, meanx: number, meany: number ): accumulator; // tslint-disable-line max-line-length
+declare function incrmcovariance( W: number, meanx: number, meany: number ): accumulator;
 
 /**
 * Returns an accumulator function which incrementally computes a moving unbiased sample covariance.

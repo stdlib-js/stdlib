@@ -46,7 +46,7 @@
 * var y = betainc( 0.2, 1.0, 2.0 );
 * // returns 0.36
 */
-declare function betainc( x: number, a: number, b: number, regularized?: boolean, upper?: boolean ): number; // tslint-disable-line max-line-length
+declare function betainc( x: number, a: number, b: number, regularized?: boolean, upper?: boolean ): number;
 
 
 // EXPORTS //

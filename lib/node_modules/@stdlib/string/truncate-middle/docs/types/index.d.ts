@@ -58,7 +58,7 @@
 * var out = truncateMiddle( str, 7 );
 * // returns '🐺 ... 🐺'
 */
-declare function truncateMiddle( str: string, len: number, seq?: string ): string; // tslint-disable-line max-line-length
+declare function truncateMiddle( str: string, len: number, seq?: string ): string;
 
 
 // EXPORTS //

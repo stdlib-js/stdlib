@@ -53,7 +53,7 @@ interface Decorator {
 	* v = f( 5 );
 	* // returns -5
 	*/
-	<T extends Array<any>, U, V>( fcn: ( ...args: T ) => U, arity: number, after: ( v: U ) => V, thisArg?: any ): ( ...args: T ) => V; // tslint-disable-line max-line-length
+	<T extends Array<any>, U, V>( fcn: ( ...args: T ) => U, arity: number, after: ( v: U ) => V, thisArg?: any ): ( ...args: T ) => V;
 
 	/**
 	* Decorates a provided function such that the function's return value is provided as an argument to another function.
@@ -109,7 +109,7 @@ interface Decorator {
 	* var count = ctx.count;
 	* // returns 2
 	*/
-	<T extends Array<any>, U>( fcn: ( ...args: T ) => U, arity: number, after: ( v: U ) => void, thisArg?: any ): ( ...args: T ) => U; // tslint-disable-line max-line-length
+	<T extends Array<any>, U>( fcn: ( ...args: T ) => U, arity: number, after: ( v: U ) => void, thisArg?: any ): ( ...args: T ) => U;
 
 	/**
 	* Uses code generation to decorate a provided function such that the function's return value is provided as an argument to another function.
@@ -144,7 +144,7 @@ interface Decorator {
 	* v = f( 5 );
 	* // returns -5
 	*/
-	factory<T extends Array<any>, U, V>( fcn: ( ...args: T ) => U, arity: number, after: ( v: U ) => V, thisArg?: any ): ( ...args: T ) => V; // tslint-disable-line max-line-length
+	factory<T extends Array<any>, U, V>( fcn: ( ...args: T ) => U, arity: number, after: ( v: U ) => V, thisArg?: any ): ( ...args: T ) => V;
 
 	/**
 	* Uses code generation to decorate a provided function such that the function's return value is provided as an argument to another function.
@@ -202,7 +202,7 @@ interface Decorator {
 	* var count = ctx.count;
 	* // returns 2
 	*/
-	factory<T extends Array<any>, U>( fcn: ( ...args: T ) => U, arity: number, after: ( v: U ) => void, thisArg?: any ): ( ...args: T ) => U; // tslint-disable-line max-line-length
+	factory<T extends Array<any>, U>( fcn: ( ...args: T ) => U, arity: number, after: ( v: U ) => void, thisArg?: any ): ( ...args: T ) => U;
 }
 
 /**
