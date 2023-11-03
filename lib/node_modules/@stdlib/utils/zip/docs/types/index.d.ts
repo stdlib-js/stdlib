@@ -87,7 +87,7 @@ interface Options {
 * zipped = zip( arr, { 'arrays': true } );
 * // returns [ [ 1, 'a' ], [ 2, 'b' ] ]
 */
-declare function zip( arr0: Array<any>, arr1: Array<any>, options?: Options ): Array<Array<any>>; // tslint:disable-line:max-line-length
+declare function zip( arr0: Array<any>, arr1: Array<any>, options?: Options ): Array<Array<any>>;
 
 /**
 * Generates array tuples from input arrays.
@@ -137,7 +137,7 @@ declare function zip( arr0: Array<any>, arr1: Array<any>, options?: Options ): A
 * zipped = zip( arr, { 'arrays': true } );
 * // returns [ [ 1, 'a', true ], [ 2, 'b', false ] ]
 */
-declare function zip( arr0: Array<any>, arr1: Array<any>, arr2: Array<any>, options?: Options ): Array<Array<any>>; // tslint:disable-line:max-line-length
+declare function zip( arr0: Array<any>, arr1: Array<any>, arr2: Array<any>, options?: Options ): Array<Array<any>>;
 
 /**
 * Generates array tuples from input arrays.
@@ -188,7 +188,7 @@ declare function zip( arr0: Array<any>, arr1: Array<any>, arr2: Array<any>, opti
 * zipped = zip( arr, { 'arrays': true } );
 * // returns [ [ 1, 'a', true, {} ], [ 2, 'b', false, {} ] ]
 */
-declare function zip( arr0: Array<any>, arr1: Array<any>, arr2: Array<any>, arr3: Array<any>, options?: Options ): Array<Array<any>>; // tslint:disable-line:max-line-length
+declare function zip( arr0: Array<any>, arr1: Array<any>, arr2: Array<any>, arr3: Array<any>, options?: Options ): Array<Array<any>>;
 
 /**
 * Generates array tuples from input arrays.
@@ -234,7 +234,7 @@ declare function zip( arr0: Array<any>, arr1: Array<any>, arr2: Array<any>, arr3
 * zipped = zip( arr, { 'arrays': true } );
 * // returns [ [ 1, 'a' ], [ 2, 'b' ] ]
 */
-declare function zip( arr0: Array<any>, arr1: Array<any>, ...args: Array<Array<any> | Options> ): Array<Array<any>>; // tslint:disable-line:max-line-length
+declare function zip( arr0: Array<any>, arr1: Array<any>, ...args: Array<Array<any> | Options> ): Array<Array<any>>;
 
 
 // EXPORTS //

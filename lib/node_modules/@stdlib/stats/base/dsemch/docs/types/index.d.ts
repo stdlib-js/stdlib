@@ -59,7 +59,7 @@ interface Routine {
 	* var v = dsemch.ndarray( x.length, 1, x, 1, 0 );
 	* // returns ~1.20185
 	*/
-	ndarray( N: number, correction: number, x: Float64Array, stride: number, offset: number ): number; // tslint:disable-line:max-line-length
+	ndarray( N: number, correction: number, x: Float64Array, stride: number, offset: number ): number;
 }
 
 /**

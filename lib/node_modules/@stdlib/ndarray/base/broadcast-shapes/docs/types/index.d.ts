@@ -169,7 +169,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var out = broadcastShapes( shapes );
 * // returns [ 3, 2, 1 ]
 */
-declare function broadcastShapes( shapes: ArrayLike<ArrayLike<number>> ): ArrayLike<number>; // tslint:disable-line:max-line-length
+declare function broadcastShapes( shapes: ArrayLike<ArrayLike<number>> ): ArrayLike<number>;
 
 
 // EXPORTS //

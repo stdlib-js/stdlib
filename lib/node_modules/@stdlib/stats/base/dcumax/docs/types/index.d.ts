@@ -41,7 +41,7 @@ interface Routine {
 	* dcumax( x.length, x, 1, y, 1 );
 	* // y => <Float64Array>[ 1.0, 1.0, 2.0 ]
 	*/
-	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number ): Float64Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number ): Float64Array;
 
 	/**
 	* Computes the cumulative maximum of double-precision floating-point strided array elements using alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* dcumax.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // y => <Float64Array>[ 1.0, 1.0, 2.0 ]
 	*/
-	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, y: Float64Array, strideY: number, offsetY: number ): Float64Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, y: Float64Array, strideY: number, offsetY: number ): Float64Array;
 }
 
 /**

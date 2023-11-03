@@ -42,7 +42,7 @@ interface Routine {
 	* var v = dmeanvar( x.length, 1, x, 1, out, 1 );
 	* // returns <Float64Array>[ ~0.3333, ~4.3333 ]
 	*/
-	( N: number, correction: number, x: Float64Array, strideX: number, out: Float64Array, strideOut: number ): Float64Array; // tslint:disable-line:max-line-length
+	( N: number, correction: number, x: Float64Array, strideX: number, out: Float64Array, strideOut: number ): Float64Array;
 
 	/**
 	* Computes the mean and variance of a double-precision floating-point strided array using alternative indexing semantics.
@@ -66,7 +66,7 @@ interface Routine {
 	* var v = dmeanvar.ndarray( x.length, 1, x, 1, 0, out, 1, 0 );
 	* // returns <Float64Array>[ ~0.3333, ~4.3333 ]
 	*/
-	ndarray( N: number, correction: number, x: Float64Array, strideX: number, offsetX: number, out: Float64Array, strideOut: number, offsetOut: number ): Float64Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, correction: number, x: Float64Array, strideX: number, offsetX: number, out: Float64Array, strideOut: number, offsetOut: number ): Float64Array;
 }
 
 /**

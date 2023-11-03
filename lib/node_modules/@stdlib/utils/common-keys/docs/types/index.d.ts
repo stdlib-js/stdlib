@@ -62,7 +62,7 @@
 * var keys = commonKeys( obj1, obj2, obj3 );
 * // returns [ 'a' ]
 */
-declare function commonKeys( obj1: any, obj2: any, ...obj: Array<any> ): Array<string>; // tslint:disable-line:max-line-length
+declare function commonKeys( obj1: any, obj2: any, ...obj: Array<any> ): Array<string>;
 
 
 // EXPORTS //

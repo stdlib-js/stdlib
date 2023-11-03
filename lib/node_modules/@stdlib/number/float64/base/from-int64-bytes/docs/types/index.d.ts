@@ -41,7 +41,7 @@ import { NumericArray } from '@stdlib/types/array';
 * var x = fromInt64Bytes( bytes, 1, 0 );
 * // returns -1.0
 */
-declare function fromInt64Bytes( bytes: NumericArray, stride: number, offset: number ): number; // tslint:disable-line:max-line-length
+declare function fromInt64Bytes( bytes: NumericArray, stride: number, offset: number ): number;
 
 
 // EXPORTS //

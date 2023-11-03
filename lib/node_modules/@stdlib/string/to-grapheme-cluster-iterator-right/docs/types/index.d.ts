@@ -89,7 +89,7 @@ type MapFunction = Nullary | Unary | Binary | Ternary;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function graphemeClusters2iteratorRight( src: string, mapFcn?: MapFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function graphemeClusters2iteratorRight( src: string, mapFcn?: MapFunction, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

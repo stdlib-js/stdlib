@@ -50,7 +50,7 @@ interface Routine {
 	* rsqrt( x.length, 'float64', x, 1, 'float64', y, 1 );
 	* // y => <Float64Array>[ Infinity, 0.5, ~0.333, ~0.289, ~0.204 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, dtypeY: any, y: ArrayLike<number>, strideY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, dtypeY: any, y: ArrayLike<number>, strideY: number ): ArrayLike<number>;
 
 	/**
 	* Computes the reciprocal square root for each element in a strided array `x` and assigns the results to elements in a strided array `y` using alternative indexing semantics.
@@ -78,7 +78,7 @@ interface Routine {
 	* rsqrt.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 	* // y => <Float64Array>[ Infinity, 0.5, ~0.333, ~0.289, ~0.204 ]
 	*/
-	ndarray( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	ndarray( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>;
 }
 
 /**

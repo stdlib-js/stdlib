@@ -52,7 +52,7 @@
 * var out = substringAfter( 'beep boop beep baz', 'beep', 5 );
 * // returns ' baz'
 */
-declare function substringAfter( str: string, search: string, fromIndex?: number ): string; // tslint:disable-line:max-line-length
+declare function substringAfter( str: string, search: string, fromIndex?: number ): string;
 
 
 // EXPORTS //

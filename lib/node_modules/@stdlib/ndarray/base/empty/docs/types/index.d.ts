@@ -40,7 +40,7 @@ import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarra
 * var dt = arr.dtype;
 * // returns 'float64'
 */
-declare function empty( dtype: 'float64', shape: Shape, order: Order ): float64ndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'float64', shape: Shape, order: Order ): float64ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -60,7 +60,7 @@ declare function empty( dtype: 'float64', shape: Shape, order: Order ): float64n
 * var dt = arr.dtype;
 * // returns 'float32'
 */
-declare function empty( dtype: 'float32', shape: Shape, order: Order ): float32ndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'float32', shape: Shape, order: Order ): float32ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -80,7 +80,7 @@ declare function empty( dtype: 'float32', shape: Shape, order: Order ): float32n
 * var dt = arr.dtype;
 * // returns 'complex128'
 */
-declare function empty( dtype: 'complex128', shape: Shape, order: Order ): complex128ndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'complex128', shape: Shape, order: Order ): complex128ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -100,7 +100,7 @@ declare function empty( dtype: 'complex128', shape: Shape, order: Order ): compl
 * var dt = arr.dtype;
 * // returns 'complex64'
 */
-declare function empty( dtype: 'complex64', shape: Shape, order: Order ): complex64ndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'complex64', shape: Shape, order: Order ): complex64ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -120,7 +120,7 @@ declare function empty( dtype: 'complex64', shape: Shape, order: Order ): comple
 * var dt = arr.dtype;
 * // returns 'int32'
 */
-declare function empty( dtype: 'int32', shape: Shape, order: Order ): int32ndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'int32', shape: Shape, order: Order ): int32ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -140,7 +140,7 @@ declare function empty( dtype: 'int32', shape: Shape, order: Order ): int32ndarr
 * var dt = arr.dtype;
 * // returns 'int16'
 */
-declare function empty( dtype: 'int16', shape: Shape, order: Order ): int16ndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'int16', shape: Shape, order: Order ): int16ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -160,7 +160,7 @@ declare function empty( dtype: 'int16', shape: Shape, order: Order ): int16ndarr
 * var dt = arr.dtype;
 * // returns 'int8'
 */
-declare function empty( dtype: 'int8', shape: Shape, order: Order ): int8ndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'int8', shape: Shape, order: Order ): int8ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -180,7 +180,7 @@ declare function empty( dtype: 'int8', shape: Shape, order: Order ): int8ndarray
 * var dt = arr.dtype;
 * // returns 'uint32'
 */
-declare function empty( dtype: 'uint32', shape: Shape, order: Order ): uint32ndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'uint32', shape: Shape, order: Order ): uint32ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -200,7 +200,7 @@ declare function empty( dtype: 'uint32', shape: Shape, order: Order ): uint32nda
 * var dt = arr.dtype;
 * // returns 'uint16'
 */
-declare function empty( dtype: 'uint16', shape: Shape, order: Order ): uint16ndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'uint16', shape: Shape, order: Order ): uint16ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -220,7 +220,7 @@ declare function empty( dtype: 'uint16', shape: Shape, order: Order ): uint16nda
 * var dt = arr.dtype;
 * // returns 'uint8'
 */
-declare function empty( dtype: 'uint8', shape: Shape, order: Order ): uint8ndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'uint8', shape: Shape, order: Order ): uint8ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -240,7 +240,7 @@ declare function empty( dtype: 'uint8', shape: Shape, order: Order ): uint8ndarr
 * var dt = arr.dtype;
 * // returns 'uint8c'
 */
-declare function empty( dtype: 'uint8c', shape: Shape, order: Order ): uint8cndarray; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'uint8c', shape: Shape, order: Order ): uint8cndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -260,7 +260,7 @@ declare function empty( dtype: 'uint8c', shape: Shape, order: Order ): uint8cnda
 * var dt = arr.dtype;
 * // returns 'generic'
 */
-declare function empty( dtype: 'generic', shape: Shape, order: Order ): typedndarray<number>; // tslint:disable-line:max-line-length
+declare function empty( dtype: 'generic', shape: Shape, order: Order ): typedndarray<number>;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -280,7 +280,7 @@ declare function empty( dtype: 'generic', shape: Shape, order: Order ): typednda
 * var dt = arr.dtype;
 * // returns 'float32'
 */
-declare function empty( dtype: DataType, shape: Shape, order: Order ): typedndarray<number>; // tslint:disable-line:max-line-length unified-signatures
+declare function empty( dtype: DataType, shape: Shape, order: Order ): typedndarray<number>; unified-signatures
 
 
 // EXPORTS //

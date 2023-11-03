@@ -153,7 +153,7 @@ interface UnaryFunction extends PRNG {
 	* @param options - function options
 	* @returns output array
 	*/
-	normalized( len: number, options?: NormalizedOptions ): NormalizedRandomArray; // tslint:disable-line:max-line-length
+	normalized( len: number, options?: NormalizedOptions ): NormalizedRandomArray;
 }
 
 /**
@@ -184,7 +184,7 @@ interface Random extends PRNG {
 	* var out = mt19937.normalized( 10 );
 	* // returns <Float64Array>
 	*/
-	normalized( len: number, options?: NormalizedOptions ): NormalizedRandomArray; // tslint:disable-line:max-line-length
+	normalized( len: number, options?: NormalizedOptions ): NormalizedRandomArray;
 
 	/**
 	* Returns a function for creating arrays containing pseudorandom numbers generated using a 32-bit Mersenne Twister pseudorandom number generator.

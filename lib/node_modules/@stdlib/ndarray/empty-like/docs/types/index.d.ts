@@ -259,7 +259,7 @@ interface OptionsWithDType extends Options {
 * dt = y.dtype;
 * // returns 'float64'
 */
-declare function emptyLike( x: float64ndarray, options?: Options ): float64ndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: float64ndarray, options?: Options ): float64ndarray;
 
 /**
 * Creates an uninitialized array having the same shape and data type as a provided input ndarray.
@@ -295,7 +295,7 @@ declare function emptyLike( x: float64ndarray, options?: Options ): float64ndarr
 * dt = y.dtype;
 * // returns 'float32'
 */
-declare function emptyLike( x: float32ndarray, options?: Options ): float32ndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: float32ndarray, options?: Options ): float32ndarray;
 
 /**
 * Creates an uninitialized array having the same shape and data type as a provided input ndarray.
@@ -331,7 +331,7 @@ declare function emptyLike( x: float32ndarray, options?: Options ): float32ndarr
 * dt = y.dtype;
 * // returns 'complex128'
 */
-declare function emptyLike( x: complex128ndarray, options?: Options ): complex128ndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: complex128ndarray, options?: Options ): complex128ndarray;
 
 /**
 * Creates an uninitialized array having the same shape and data type as a provided input ndarray.
@@ -367,7 +367,7 @@ declare function emptyLike( x: complex128ndarray, options?: Options ): complex12
 * dt = y.dtype;
 * // returns 'complex64'
 */
-declare function emptyLike( x: complex64ndarray, options?: Options ): complex64ndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: complex64ndarray, options?: Options ): complex64ndarray;
 
 /**
 * Creates an uninitialized array having the same shape and data type as a provided input ndarray.
@@ -511,7 +511,7 @@ declare function emptyLike( x: int8ndarray, options?: Options ): int8ndarray;
 * dt = y.dtype;
 * // returns 'uint32'
 */
-declare function emptyLike( x: uint32ndarray, options?: Options ): uint32ndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: uint32ndarray, options?: Options ): uint32ndarray;
 
 /**
 * Creates an uninitialized array having the same shape and data type as a provided input ndarray.
@@ -547,7 +547,7 @@ declare function emptyLike( x: uint32ndarray, options?: Options ): uint32ndarray
 * dt = y.dtype;
 * // returns 'uint16'
 */
-declare function emptyLike( x: uint16ndarray, options?: Options ): uint16ndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: uint16ndarray, options?: Options ): uint16ndarray;
 
 /**
 * Creates an uninitialized array having the same shape and data type as a provided input ndarray.
@@ -619,7 +619,7 @@ declare function emptyLike( x: uint8ndarray, options?: Options ): uint8ndarray;
 * dt = y.dtype;
 * // returns 'uint8c'
 */
-declare function emptyLike( x: uint8cndarray, options?: Options ): uint8cndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: uint8cndarray, options?: Options ): uint8cndarray;
 
 /**
 * Creates an uninitialized double-precision floating-point array having the same shape as a provided input ndarray.
@@ -658,7 +658,7 @@ declare function emptyLike( x: uint8cndarray, options?: Options ): uint8cndarray
 * dt = y.dtype;
 * // returns 'float64'
 */
-declare function emptyLike( x: ndarray, options: Float64Options ): float64ndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: ndarray, options: Float64Options ): float64ndarray;
 
 /**
 * Creates an uninitialized single-precision floating-point array having the same shape as a provided input ndarray.
@@ -697,7 +697,7 @@ declare function emptyLike( x: ndarray, options: Float64Options ): float64ndarra
 * dt = y.dtype;
 * // returns 'float32'
 */
-declare function emptyLike( x: ndarray, options: Float32Options ): float32ndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: ndarray, options: Float32Options ): float32ndarray;
 
 /**
 * Creates an uninitialized double-precision complex floating-point array having the same shape as a provided input ndarray.
@@ -736,7 +736,7 @@ declare function emptyLike( x: ndarray, options: Float32Options ): float32ndarra
 * dt = y.dtype;
 * // returns 'complex128'
 */
-declare function emptyLike( x: ndarray, options: Complex128Options ): complex128ndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: ndarray, options: Complex128Options ): complex128ndarray;
 
 /**
 * Creates an uninitialized single-precision complex floating-point array having the same shape as a provided input ndarray.
@@ -775,7 +775,7 @@ declare function emptyLike( x: ndarray, options: Complex128Options ): complex128
 * dt = y.dtype;
 * // returns 'complex64'
 */
-declare function emptyLike( x: ndarray, options: Complex64Options ): complex64ndarray; // tslint:disable-line:max-line-length
+declare function emptyLike( x: ndarray, options: Complex64Options ): complex64ndarray;
 
 /**
 * Creates an uninitialized 32-bit signed integer array having the same shape as a provided input ndarray.
@@ -1085,7 +1085,7 @@ declare function emptyLike( x: ndarray, options: Uint8COptions ): uint8cndarray;
 * dt = y.dtype;
 * // returns 'generic'
 */
-declare function emptyLike( x: ndarray, options?: Options | OptionsWithDType ): typedndarray<number>; // tslint:disable-line:max-line-length
+declare function emptyLike( x: ndarray, options?: Options | OptionsWithDType ): typedndarray<number>;
 
 
 // EXPORTS //

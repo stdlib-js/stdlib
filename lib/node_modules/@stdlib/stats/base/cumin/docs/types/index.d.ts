@@ -43,7 +43,7 @@ interface Routine {
 	* cumin( x.length, x, 1, y, 1 );
 	* // y => [ 1.0, 1.0, 2.0 ]
 	*/
-	( N: number, x: NumericArray, strideX: number, y: NumericArray, strideY: number ): NumericArray; // tslint:disable-line:max-line-length
+	( N: number, x: NumericArray, strideX: number, y: NumericArray, strideY: number ): NumericArray;
 
 	/**
 	* Computes the cumulative minimum of a strided array using alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* cumin.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // y => [ 1.0, 1.0, 2.0 ]
 	*/
-	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, y: NumericArray, strideY: number, offsetY: number ): NumericArray; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, y: NumericArray, strideY: number, offsetY: number ): NumericArray;
 }
 
 /**

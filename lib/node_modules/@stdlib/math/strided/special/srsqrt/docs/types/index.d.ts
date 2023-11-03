@@ -41,7 +41,7 @@ interface Routine {
 	* srsqrt( x.length, x, 1, y, 1 );
 	* // y => <Float32Array>[ 1.0, 0.5, ~0.333, ~0.289, ~0.204 ]
 	*/
-	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array;
 
 	/**
 	* Computes the reciprocal square root for each element in a single-precision floating-point strided array `x` and assigns the results to elements in a single-precision floating-point strided array `y` using alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* srsqrt.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // y => <Float32Array>[ 1.0, 0.5, ~0.333, ~0.289, ~0.204 ]
 	*/
-	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array;
 }
 
 /**

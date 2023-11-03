@@ -41,7 +41,7 @@ type ScalarFunction = ( x: number ) => number; // FIXME: add complex number supp
 * @param strideY - `y` stride length
 * @returns `y` or `undefined`
 */
-type StridedArrayFunction = ( N: number, x: ArrayLike<number>, strideX: number, y: ArrayLike<number>, strideY: number ) => ArrayLike<number> | void; // tslint:disable-line:max-line-length
+type StridedArrayFunction = ( N: number, x: ArrayLike<number>, strideX: number, y: ArrayLike<number>, strideY: number ) => ArrayLike<number> | void;
 
 /**
 * Function which operates on each element in a strided input array `x` and assigns the results to elements in a strided output array `y` using alternative (i.e., ndarray) indexing semantics.
@@ -55,7 +55,7 @@ type StridedArrayFunction = ( N: number, x: ArrayLike<number>, strideX: number, 
 * @param offsetY - starting index for `y`
 * @returns `y` or `undefined`
 */
-type StridedArrayFunctionWithOffsets = ( N: number, x: ArrayLike<number>, strideX: number, offsetX: number, y: ArrayLike<number>, strideY: number, offsetY: number ) => ArrayLike<number> | void; // tslint:disable-line:max-line-length
+type StridedArrayFunctionWithOffsets = ( N: number, x: ArrayLike<number>, strideX: number, offsetX: number, y: ArrayLike<number>, strideY: number, offsetY: number ) => ArrayLike<number> | void;
 
 /**
 * Interface describing a resolution table object.

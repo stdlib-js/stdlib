@@ -180,7 +180,7 @@ interface Uint8cOptions extends BaseOptions {
 * var v = x.get();
 * // returns 1.0
 */
-declare function scalar2ndarray( value: number, options: Float64Options ): float64ndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number, options: Float64Options ): float64ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -204,7 +204,7 @@ declare function scalar2ndarray( value: number, options: Float64Options ): float
 * var v = x.get();
 * // returns 1.0
 */
-declare function scalar2ndarray( value: number, options: Float32Options ): float32ndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number, options: Float32Options ): float32ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -244,7 +244,7 @@ declare function scalar2ndarray( value: number, options: Float32Options ): float
 * var im = imag( v );
 * // returns 2.0
 */
-declare function scalar2ndarray( value: number | ComplexLike, options: Complex128Options ): complex128ndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number | ComplexLike, options: Complex128Options ): complex128ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -284,7 +284,7 @@ declare function scalar2ndarray( value: number | ComplexLike, options: Complex12
 * var im = imagf( v );
 * // returns 2.0
 */
-declare function scalar2ndarray( value: number | ComplexLike, options: Complex64Options ): complex64ndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number | ComplexLike, options: Complex64Options ): complex64ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -308,7 +308,7 @@ declare function scalar2ndarray( value: number | ComplexLike, options: Complex64
 * var v = x.get();
 * // returns 1
 */
-declare function scalar2ndarray( value: number, options: Int32Options ): int32ndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number, options: Int32Options ): int32ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -332,7 +332,7 @@ declare function scalar2ndarray( value: number, options: Int32Options ): int32nd
 * var v = x.get();
 * // returns 1
 */
-declare function scalar2ndarray( value: number, options: Int16Options ): int16ndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number, options: Int16Options ): int16ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -356,7 +356,7 @@ declare function scalar2ndarray( value: number, options: Int16Options ): int16nd
 * var v = x.get();
 * // returns 1
 */
-declare function scalar2ndarray( value: number, options: Int8Options ): int8ndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number, options: Int8Options ): int8ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -380,7 +380,7 @@ declare function scalar2ndarray( value: number, options: Int8Options ): int8ndar
 * var v = x.get();
 * // returns 1
 */
-declare function scalar2ndarray( value: number, options: Uint32Options ): uint32ndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number, options: Uint32Options ): uint32ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -404,7 +404,7 @@ declare function scalar2ndarray( value: number, options: Uint32Options ): uint32
 * var v = x.get();
 * // returns 1
 */
-declare function scalar2ndarray( value: number, options: Uint16Options ): uint16ndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number, options: Uint16Options ): uint16ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -428,7 +428,7 @@ declare function scalar2ndarray( value: number, options: Uint16Options ): uint16
 * var v = x.get();
 * // returns 1
 */
-declare function scalar2ndarray( value: number, options: Uint8Options ): uint8ndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number, options: Uint8Options ): uint8ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -452,7 +452,7 @@ declare function scalar2ndarray( value: number, options: Uint8Options ): uint8nd
 * var v = x.get();
 * // returns 1
 */
-declare function scalar2ndarray( value: number, options: Uint8cOptions ): uint8cndarray; // tslint:disable-line:max-line-length
+declare function scalar2ndarray( value: number, options: Uint8cOptions ): uint8cndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.

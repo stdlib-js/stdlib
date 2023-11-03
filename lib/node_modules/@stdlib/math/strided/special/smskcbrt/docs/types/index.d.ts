@@ -45,7 +45,7 @@ interface Routine {
 	* smskcbrt( x.length, x, 1, m, 1, y, 1 );
 	* // y => <Float32Array>[ 0.0, 1.0, 0.0, 3.0, 0.0 ]
 	*/
-	( N: number, x: Float32Array, strideX: number, mask: Uint8Array, strideMask: number, y: Float32Array, strideY: number ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float32Array, strideX: number, mask: Uint8Array, strideMask: number, y: Float32Array, strideY: number ): Float32Array;
 
 	/**
 	* Computes the cube root for each element in a single-precision floating-point strided array `x` according to a strided mask array and assigns the results to elements in a single-precision floating-point strided array `y` using alternative indexing semantics.
@@ -73,7 +73,7 @@ interface Routine {
 	* smskcbrt.ndarray( x.length, x, 1, 0, m, 1, 0, y, 1, 0 );
 	* // y => <Float32Array>[ 0.0, 1.0, 0.0, 3.0, 0.0 ]
 	*/
-	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, mask: Uint8Array, strideMask: number, offsetMask: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, mask: Uint8Array, strideMask: number, offsetMask: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array;
 }
 
 /**

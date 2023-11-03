@@ -44,7 +44,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var sigs = dtypes2signatures( dtypes, 1, 1 );
 * // returns [ '(float64) => (float64)', '(float32) => (float32)' ]
 */
-declare function dtypes2signatures( dtypes: ArrayLike<any>, nin: number, nout: number ): ArrayLike<string>; // tslint:disable-line:max-line-length
+declare function dtypes2signatures( dtypes: ArrayLike<any>, nin: number, nout: number ): ArrayLike<string>;
 
 
 // EXPORTS //

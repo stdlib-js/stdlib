@@ -40,7 +40,7 @@
 * var out = tokenize( str );
 * // returns [ 'Hello', 'Mrs.', 'Maple', ',', 'could', 'you', 'call', 'me', 'back', '?' ]
 */
-declare function tokenize( str: string, keepWhitespace?: boolean ): Array<string>; // tslint-disable-line max-length
+declare function tokenize( str: string, keepWhitespace?: boolean ): Array<string>;
 
 
 // EXPORTS //

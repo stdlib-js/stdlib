@@ -45,7 +45,7 @@ import { ndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, in
 * var v = x.get( 0, 1 );
 * // returns 1.0
 */
-declare function broadcastScalar( value: number, dtype: 'float64', shape: Shape, order: Order ): float64ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number, dtype: 'float64', shape: Shape, order: Order ): float64ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -69,7 +69,7 @@ declare function broadcastScalar( value: number, dtype: 'float64', shape: Shape,
 * var v = x.get( 0, 1 );
 * // returns 1.0
 */
-declare function broadcastScalar( value: number, dtype: 'float32', shape: Shape, order: Order ): float32ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number, dtype: 'float32', shape: Shape, order: Order ): float32ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -109,7 +109,7 @@ declare function broadcastScalar( value: number, dtype: 'float32', shape: Shape,
 * var im = imag( v );
 * // returns 2.0
 */
-declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex128', shape: Shape, order: Order ): complex128ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex128', shape: Shape, order: Order ): complex128ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -149,7 +149,7 @@ declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex12
 * var im = imagf( v );
 * // returns 2.0
 */
-declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex64', shape: Shape, order: Order ): complex64ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex64', shape: Shape, order: Order ): complex64ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -173,7 +173,7 @@ declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex64
 * var v = x.get( 0, 1 );
 * // returns 1
 */
-declare function broadcastScalar( value: number, dtype: 'int32', shape: Shape, order: Order ): int32ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number, dtype: 'int32', shape: Shape, order: Order ): int32ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -197,7 +197,7 @@ declare function broadcastScalar( value: number, dtype: 'int32', shape: Shape, o
 * var v = x.get( 0, 1 );
 * // returns 1
 */
-declare function broadcastScalar( value: number, dtype: 'int16', shape: Shape, order: Order ): int16ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number, dtype: 'int16', shape: Shape, order: Order ): int16ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -221,7 +221,7 @@ declare function broadcastScalar( value: number, dtype: 'int16', shape: Shape, o
 * var v = x.get( 0, 1 );
 * // returns 1
 */
-declare function broadcastScalar( value: number, dtype: 'int8', shape: Shape, order: Order ): int8ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number, dtype: 'int8', shape: Shape, order: Order ): int8ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -245,7 +245,7 @@ declare function broadcastScalar( value: number, dtype: 'int8', shape: Shape, or
 * var v = x.get( 0, 1 );
 * // returns 1
 */
-declare function broadcastScalar( value: number, dtype: 'uint32', shape: Shape, order: Order ): uint32ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number, dtype: 'uint32', shape: Shape, order: Order ): uint32ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -269,7 +269,7 @@ declare function broadcastScalar( value: number, dtype: 'uint32', shape: Shape, 
 * var v = x.get( 0, 1 );
 * // returns 1
 */
-declare function broadcastScalar( value: number, dtype: 'uint16', shape: Shape, order: Order ): uint16ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number, dtype: 'uint16', shape: Shape, order: Order ): uint16ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -293,7 +293,7 @@ declare function broadcastScalar( value: number, dtype: 'uint16', shape: Shape, 
 * var v = x.get( 0, 1 );
 * // returns 1
 */
-declare function broadcastScalar( value: number, dtype: 'uint8', shape: Shape, order: Order ): uint8ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number, dtype: 'uint8', shape: Shape, order: Order ): uint8ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -317,7 +317,7 @@ declare function broadcastScalar( value: number, dtype: 'uint8', shape: Shape, o
 * var v = x.get( 0, 1 );
 * // returns 1
 */
-declare function broadcastScalar( value: number, dtype: 'uint8c', shape: Shape, order: Order ): uint8cndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: number, dtype: 'uint8c', shape: Shape, order: Order ): uint8cndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having a specified shape.
@@ -341,7 +341,7 @@ declare function broadcastScalar( value: number, dtype: 'uint8c', shape: Shape, 
 * var v = x.get( 0, 1 );
 * // returns 1.0
 */
-declare function broadcastScalar( value: any, dtype: DataType, shape: Shape, order: Order ): ndarray; // tslint:disable-line:max-line-length
+declare function broadcastScalar( value: any, dtype: DataType, shape: Shape, order: Order ): ndarray;
 
 
 // EXPORTS //

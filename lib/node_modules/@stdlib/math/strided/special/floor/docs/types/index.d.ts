@@ -50,7 +50,7 @@ interface Routine {
 	* floor( x.length, 'float64', x, 1, 'float64', y, 1 );
 	* // y => <Float64Array>[ -2.0, 2.0, -4.0, 4.0, -5.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, dtypeY: any, y: ArrayLike<number>, strideY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, dtypeY: any, y: ArrayLike<number>, strideY: number ): ArrayLike<number>;
 
 	/**
 	* Rounds each element in a strided array `x` toward negative infinity and assigns the results to elements in a strided array `y` using alternative indexing semantics.
@@ -78,7 +78,7 @@ interface Routine {
 	* floor.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 	* // y => <Float64Array>[ -2.0, 2.0, -4.0, 4.0, -5.0 ]
 	*/
-	ndarray( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	ndarray( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>;
 }
 
 /**

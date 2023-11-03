@@ -45,7 +45,7 @@ interface Routine {
 	* dmskdeg2rad( x.length, x, 1, m, 1, y, 1 );
 	* // y => <Float64Array>[ 0.0, ~0.524, 0.0, ~1.047, 0.0 ]
 	*/
-	( N: number, x: Float64Array, strideX: number, mask: Uint8Array, strideMask: number, y: Float64Array, strideY: number ): Float64Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float64Array, strideX: number, mask: Uint8Array, strideMask: number, y: Float64Array, strideY: number ): Float64Array;
 
 	/**
 	* Converts each element in a double-precision floating-point strided array `x` from degrees to radians according to a strided mask array and assigns the results to elements in a double-precision floating-point strided array `y` using alternative indexing semantics.
@@ -73,7 +73,7 @@ interface Routine {
 	* dmskdeg2rad.ndarray( x.length, x, 1, 0, m, 1, 0, y, 1, 0 );
 	* // y => <Float64Array>[ 0.0, ~0.524, 0.0, ~1.047, 0.0 ]
 	*/
-	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, mask: Uint8Array, strideMask: number, offsetMask: number, y: Float64Array, strideY: number, offsetY: number ): Float64Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, mask: Uint8Array, strideMask: number, offsetMask: number, y: Float64Array, strideY: number, offsetY: number ): Float64Array;
 }
 
 /**

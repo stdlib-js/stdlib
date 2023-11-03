@@ -90,12 +90,12 @@ function quaternary( x: number, y: number, z: number, w: number ): number {
 * @param opts - options
 * @return subscripts
 */
-function ind2sub( shape: ArrayLike<number>, idx: number, opts?: any ): Array<number> { // tslint:disable-line:max-line-length
+function ind2sub( shape: ArrayLike<number>, idx: number, opts?: any ): Array<number> {
 	let out;
 	let i;
 
 	out = [];
-	if ( typeof opts === 'object' && opts !== null && opts.order === 'row-major' ) { // tslint:disable-line:max-line-length no-unsafe-any
+	if ( typeof opts === 'object' && opts !== null && opts.order === 'row-major' ) { no-unsafe-any
 		for ( i = 0; i < shape.length; i += 1 ) {
 			out.push( idx % shape[ i ] );
 		}

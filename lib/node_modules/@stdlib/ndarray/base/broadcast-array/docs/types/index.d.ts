@@ -72,7 +72,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * v = y.get( 2, 1, 1 );
 * // returns 4
 */
-declare function broadcastArray( arr: ndarray, shape: ArrayLike<number> ): ndarray; // tslint:disable-line:max-line-length
+declare function broadcastArray( arr: ndarray, shape: ArrayLike<number> ): ndarray;
 
 
 // EXPORTS //

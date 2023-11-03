@@ -265,7 +265,7 @@ interface OptionsWithDType extends Options {
 * dt = y.dtype;
 * // returns 'float64'
 */
-declare function zerosLike( x: float64ndarray, options?: Options ): float64ndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: float64ndarray, options?: Options ): float64ndarray;
 
 /**
 * Creates a zero-filled array having the same shape and data type as a provided input ndarray.
@@ -302,7 +302,7 @@ declare function zerosLike( x: float64ndarray, options?: Options ): float64ndarr
 * dt = y.dtype;
 * // returns 'float32'
 */
-declare function zerosLike( x: float32ndarray, options?: Options ): float32ndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: float32ndarray, options?: Options ): float32ndarray;
 
 /**
 * Creates a zero-filled array having the same shape and data type as a provided input ndarray.
@@ -339,7 +339,7 @@ declare function zerosLike( x: float32ndarray, options?: Options ): float32ndarr
 * dt = y.dtype;
 * // returns 'complex128'
 */
-declare function zerosLike( x: complex128ndarray, options?: Options ): complex128ndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: complex128ndarray, options?: Options ): complex128ndarray;
 
 /**
 * Creates a zero-filled array having the same shape and data type as a provided input ndarray.
@@ -376,7 +376,7 @@ declare function zerosLike( x: complex128ndarray, options?: Options ): complex12
 * dt = y.dtype;
 * // returns 'complex64'
 */
-declare function zerosLike( x: complex64ndarray, options?: Options ): complex64ndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: complex64ndarray, options?: Options ): complex64ndarray;
 
 /**
 * Creates a zero-filled array having the same shape and data type as a provided input ndarray.
@@ -524,7 +524,7 @@ declare function zerosLike( x: int8ndarray, options?: Options ): int8ndarray;
 * dt = y.dtype;
 * // returns 'uint32'
 */
-declare function zerosLike( x: uint32ndarray, options?: Options ): uint32ndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: uint32ndarray, options?: Options ): uint32ndarray;
 
 /**
 * Creates a zero-filled array having the same shape and data type as a provided input ndarray.
@@ -561,7 +561,7 @@ declare function zerosLike( x: uint32ndarray, options?: Options ): uint32ndarray
 * dt = y.dtype;
 * // returns 'uint16'
 */
-declare function zerosLike( x: uint16ndarray, options?: Options ): uint16ndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: uint16ndarray, options?: Options ): uint16ndarray;
 
 /**
 * Creates a zero-filled array having the same shape and data type as a provided input ndarray.
@@ -635,7 +635,7 @@ declare function zerosLike( x: uint8ndarray, options?: Options ): uint8ndarray;
 * dt = y.dtype;
 * // returns 'uint8c'
 */
-declare function zerosLike( x: uint8cndarray, options?: Options ): uint8cndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: uint8cndarray, options?: Options ): uint8cndarray;
 
 /**
 * Creates a zero-filled double-precision floating-point array having the same shape as a provided input ndarray.
@@ -675,7 +675,7 @@ declare function zerosLike( x: uint8cndarray, options?: Options ): uint8cndarray
 * dt = y.dtype;
 * // returns 'float64'
 */
-declare function zerosLike( x: ndarray, options: Float64Options ): float64ndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: ndarray, options: Float64Options ): float64ndarray;
 
 /**
 * Creates a zero-filled single-precision floating-point array having the same shape as a provided input ndarray.
@@ -715,7 +715,7 @@ declare function zerosLike( x: ndarray, options: Float64Options ): float64ndarra
 * dt = y.dtype;
 * // returns 'float32'
 */
-declare function zerosLike( x: ndarray, options: Float32Options ): float32ndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: ndarray, options: Float32Options ): float32ndarray;
 
 /**
 * Creates a zero-filled double-precision complex floating-point array having the same shape as a provided input ndarray.
@@ -755,7 +755,7 @@ declare function zerosLike( x: ndarray, options: Float32Options ): float32ndarra
 * dt = y.dtype;
 * // returns 'complex128'
 */
-declare function zerosLike( x: ndarray, options: Complex128Options ): complex128ndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: ndarray, options: Complex128Options ): complex128ndarray;
 
 /**
 * Creates a zero-filled single-precision complex floating-point array having the same shape as a provided input ndarray.
@@ -795,7 +795,7 @@ declare function zerosLike( x: ndarray, options: Complex128Options ): complex128
 * dt = y.dtype;
 * // returns 'complex64'
 */
-declare function zerosLike( x: ndarray, options: Complex64Options ): complex64ndarray; // tslint:disable-line:max-line-length
+declare function zerosLike( x: ndarray, options: Complex64Options ): complex64ndarray;
 
 /**
 * Creates a zero-filled 32-bit signed integer array having the same shape as a provided input ndarray.
@@ -1113,7 +1113,7 @@ declare function zerosLike( x: ndarray, options: Uint8COptions ): uint8cndarray;
 * dt = y.dtype;
 * // returns 'generic'
 */
-declare function zerosLike( x: ndarray, options?: Options | OptionsWithDType ): typedndarray<number>; // tslint:disable-line:max-line-length
+declare function zerosLike( x: ndarray, options?: Options | OptionsWithDType ): typedndarray<number>;
 
 
 // EXPORTS //

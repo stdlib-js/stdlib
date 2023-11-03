@@ -275,7 +275,7 @@ interface Dispatcher {
 	* fcn( x, y, z, w, u );
 	* // ubuf => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( x: ndarray, y: ndarray, z: ndarray, w: ndarray, ...args: Array<ndarray> ): ndarray | void; // tslint:disable-line:max-line-length unified-signatures
+	( x: ndarray, y: ndarray, z: ndarray, w: ndarray, ...args: Array<ndarray> ): ndarray | void; unified-signatures
 }
 
 /**
@@ -326,7 +326,7 @@ interface Dispatcher {
 * fcn( x, y );
 * // ybuf => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function dispatch( fcns: ndarrayFcn | ArrayLike<ndarrayFcn>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:max-line-length
+declare function dispatch( fcns: ndarrayFcn | ArrayLike<ndarrayFcn>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher;
 
 
 // EXPORTS //

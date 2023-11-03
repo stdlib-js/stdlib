@@ -40,7 +40,7 @@ interface Routine {
 	* var v = dvarm( x.length, 1.0/3.0, 1, x, 1 );
 	* // returns ~4.3333
 	*/
-	( N: number, mean: number, correction: number, x: Float64Array, stride: number ): number; // tslint:disable-line:max-line-length
+	( N: number, mean: number, correction: number, x: Float64Array, stride: number ): number;
 
 	/**
 	* Computes the variance of a double-precision floating-point strided array provided a known mean and using alternative indexing semantics.
@@ -61,7 +61,7 @@ interface Routine {
 	* var v = dvarm.ndarray( x.length, 1.0/3.0, 1, x, 1, 0 );
 	* // returns ~4.3333
 	*/
-	ndarray( N: number, mean: number, correction: number, x: Float64Array, stride: number, offset: number ): number; // tslint:disable-line:max-line-length
+	ndarray( N: number, mean: number, correction: number, x: Float64Array, stride: number, offset: number ): number;
 }
 
 /**
