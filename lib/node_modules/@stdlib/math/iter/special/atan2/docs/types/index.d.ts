@@ -55,7 +55,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterAtan2( y: Iterator | number, x: Iterator | number ): Iterator; // tslint:disable-line:max-line-length
+declare function iterAtan2( y: Iterator | number, x: Iterator | number ): Iterator;
 
 
 // EXPORTS //

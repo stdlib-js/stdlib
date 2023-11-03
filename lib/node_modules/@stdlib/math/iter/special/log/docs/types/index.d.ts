@@ -56,7 +56,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterLog( x: Iterator | number, b: Iterator | number ): Iterator; // tslint:disable-line:max-line-length
+declare function iterLog( x: Iterator | number, b: Iterator | number ): Iterator;
 
 
 // EXPORTS //

@@ -68,7 +68,7 @@ interface Options {
 *    }
 * }
 */
-declare function continuedFraction( generator: Function, options?: Options ): number; // tslint:disable-line:max-line-length
+declare function continuedFraction( generator: Function, options?: Options ): number;
 
 
 // EXPORTS //

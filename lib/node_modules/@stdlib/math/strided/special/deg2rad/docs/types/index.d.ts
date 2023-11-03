@@ -50,7 +50,7 @@ interface Routine {
 	* deg2rad( x.length, 'float64', x, 1, 'float64', y, 1 );
 	* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.571, ~2.094 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, dtypeY: any, y: ArrayLike<number>, strideY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, dtypeY: any, y: ArrayLike<number>, strideY: number ): ArrayLike<number>;
 
 	/**
 	* Converts each element in a strided array `x` from degrees to radians and assigns the results to elements in a strided array `y` using alternative indexing semantics.
@@ -78,7 +78,7 @@ interface Routine {
 	* deg2rad.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 	* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.571, ~2.094 ]
 	*/
-	ndarray( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	ndarray( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>;
 }
 
 /**

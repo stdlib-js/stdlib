@@ -25,7 +25,7 @@ import { ComplexDataType } from '@stdlib/types/complex';
 /**
 * Real number data types.
 */
-type RealDataTypes = 'float64' | 'float32' | 'int32' | 'int16' | 'int8' | 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // tslint:disable-line:max-line-length
+type RealDataTypes = 'float64' | 'float32' | 'int32' | 'int16' | 'int8' | 'uint32' | 'uint16' | 'uint8' | 'uint8c';
 
 /**
 * Number data types.
@@ -62,7 +62,7 @@ type PromotionRule = DataType | number;
 * var dt = promotionRules( 'complex128', 'foo' );
 * // returns null
 */
-declare function promotionRules( dtype1: DataType, dtype2: DataType ): PromotionRule; // tslint:disable-line:max-line-length
+declare function promotionRules( dtype1: DataType, dtype2: DataType ): PromotionRule;
 
 /**
 * Returns the complex number data type with the smallest size and closest "kind" to which data types can be safely cast.

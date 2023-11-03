@@ -75,7 +75,7 @@ type Callback = ( ...args: Array<any> ) => any;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterMapN( iter0: Iterator, iter1: Iterator, fcn: Callback, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterMapN( iter0: Iterator, iter1: Iterator, fcn: Callback, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which transforms iterated values from three iterators by applying the iterated values as arguments to a provided function.
@@ -122,7 +122,7 @@ declare function iterMapN( iter0: Iterator, iter1: Iterator, fcn: Callback, this
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, fcn: Callback, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, fcn: Callback, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which transforms iterated values from four iterators by applying the iterated values as arguments to a provided function.
@@ -172,7 +172,7 @@ declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, fc
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, iter3: Iterator, fcn: Callback, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, iter3: Iterator, fcn: Callback, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which transforms iterated values from five iterators by applying the iterated values as arguments to a provided function.
@@ -225,7 +225,7 @@ declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, it
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, iter3: Iterator, iter4: Iterator, fcn: Callback, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, iter3: Iterator, iter4: Iterator, fcn: Callback, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which transforms iterated values from two or more iterators by applying the iterated values as arguments to a provided function.
@@ -269,7 +269,7 @@ declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, it
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterMapN( iter0: Iterator, iter1: Iterator, ...args: Array<any> ): Iterator; // tslint:disable-line:max-line-length
+declare function iterMapN( iter0: Iterator, iter1: Iterator, ...args: Array<any> ): Iterator;
 
 
 // EXPORTS //

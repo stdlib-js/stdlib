@@ -55,7 +55,7 @@ type Callback = ( value?: any ) => any;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterShift( iterator: Iterator, clbk?: Callback, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterShift( iterator: Iterator, clbk?: Callback, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

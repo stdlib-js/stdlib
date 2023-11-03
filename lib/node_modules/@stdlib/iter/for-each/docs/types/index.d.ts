@@ -98,7 +98,7 @@ type Callback = Nullary | Unary | Binary;
 *
 * // ...
 */
-declare function iterForEach( iterator: Iterator, fcn: Callback, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterForEach( iterator: Iterator, fcn: Callback, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

@@ -64,7 +64,7 @@ function binary( x: ComplexLike, y: ComplexLike ): ComplexLike {
 * @param z - input value
 * @returns result
 */
-function ternary( x: ComplexLike, y: ComplexLike, z: ComplexLike ): ComplexLike { // tslint:disable-line:max-line-length
+function ternary( x: ComplexLike, y: ComplexLike, z: ComplexLike ): ComplexLike {
 	const re: number = x.re + y.re + z.re;
 	const im: number = x.im + y.im + z.im;
 	return new Complex64( re, im );
@@ -79,7 +79,7 @@ function ternary( x: ComplexLike, y: ComplexLike, z: ComplexLike ): ComplexLike 
 * @param w - input value
 * @returns result
 */
-function quaternary( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike ): ComplexLike { // tslint:disable-line:max-line-length
+function quaternary( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike ): ComplexLike {
 	const re: number = x.re + y.re + z.re + w.re;
 	const im: number = x.im + y.im + z.im + w.im;
 	return new Complex64( re, im );
@@ -95,7 +95,7 @@ function quaternary( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexL
 * @param v - input value
 * @returns result
 */
-function quinary( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v: ComplexLike ): ComplexLike { // tslint:disable-line:max-line-length
+function quinary( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v: ComplexLike ): ComplexLike {
 	const re: number = x.re + y.re + z.re + w.re + v.re;
 	const im: number = x.im + y.im + z.im + w.im + v.im;
 	return new Complex64( re, im );
@@ -112,7 +112,7 @@ function quinary( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike
 * @param t - input value
 * @returns result
 */
-function nary( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v: ComplexLike, t: ComplexLike ): ComplexLike { // tslint:disable-line:max-line-length
+function nary( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v: ComplexLike, t: ComplexLike ): ComplexLike {
 	const re: number = x.re + y.re + z.re + w.re + v.re + t.re;
 	const im: number = x.im + y.im + z.im + w.im + v.im + t.im;
 	return new Complex64( re, im );

@@ -54,7 +54,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterSlice( iterator: Iterator, begin?: number, end?: number ): Iterator; // tslint:disable-line:max-line-length
+declare function iterSlice( iterator: Iterator, begin?: number, end?: number ): Iterator;
 
 
 // EXPORTS //

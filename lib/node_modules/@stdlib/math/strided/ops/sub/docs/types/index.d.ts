@@ -60,7 +60,7 @@ interface Routine {
 	* sub( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1 );
 	* // z => <Float64Array>[ -3.0, -1.0, 0.0, -9.0, -1.0 ]
 	*/
-	( N: number, dtypeX: any, x: RealOrComplexArray, strideX: number, dtypeY: any, y: RealOrComplexArray, strideY: number, dtypeZ: any, z: RealOrComplexArray, strideZ: number ): RealOrComplexArray; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: RealOrComplexArray, strideX: number, dtypeY: any, y: RealOrComplexArray, strideY: number, dtypeZ: any, z: RealOrComplexArray, strideZ: number ): RealOrComplexArray;
 
 	/**
 	* Subtracts each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z` using alternative indexing semantics.
@@ -94,7 +94,7 @@ interface Routine {
 	* sub.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 );
 	* // z => <Float64Array>[ -3.0, -1.0, 0.0, -9.0, -1.0 ]
 	*/
-	ndarray( N: number, dtypeX: any, x: RealOrComplexArray, strideX: number, offsetX: number, dtypeY: any, y: RealOrComplexArray, strideY: number, offsetY: number, dtypeZ: any, z: RealOrComplexArray, strideZ: number, offsetZ: number ): RealOrComplexArray; // tslint:disable-line:max-line-length
+	ndarray( N: number, dtypeX: any, x: RealOrComplexArray, strideX: number, offsetX: number, dtypeY: any, y: RealOrComplexArray, strideY: number, offsetY: number, dtypeZ: any, z: RealOrComplexArray, strideZ: number, offsetZ: number ): RealOrComplexArray;
 }
 
 /**

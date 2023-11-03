@@ -86,7 +86,7 @@ type Ternary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike ) => any;
 * @param z - input value
 * @returns result
 */
-type WrappedTernary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex ) => any; // tslint:disable-line:max-line-length
+type WrappedTernary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex ) => any;
 
 /**
 * Quaternary function accepting complex numbers.
@@ -97,7 +97,7 @@ type WrappedTernary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex ) =
 * @param w - input value
 * @returns result
 */
-type Quaternary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike ) => any; // tslint:disable-line:max-line-length
+type Quaternary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike ) => any;
 
 /**
 * Quaternary function accepting both real and complex numbers.
@@ -108,7 +108,7 @@ type Quaternary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLi
 * @param w - input value
 * @returns result
 */
-type WrappedQuaternary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w: RealOrComplex ) => any; // tslint:disable-line:max-line-length
+type WrappedQuaternary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w: RealOrComplex ) => any;
 
 /**
 * Quinary function accepting complex numbers.
@@ -120,7 +120,7 @@ type WrappedQuaternary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex,
 * @param v - input value
 * @returns result
 */
-type Quinary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v: ComplexLike ) => any; // tslint:disable-line:max-line-length
+type Quinary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v: ComplexLike ) => any;
 
 /**
 * Quinary function accepting both real and complex numbers.
@@ -132,7 +132,7 @@ type Quinary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike,
 * @param v - input value
 * @returns result
 */
-type WrappedQuinary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w: RealOrComplex, v: RealOrComplex ) => any; // tslint:disable-line:max-line-length
+type WrappedQuinary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w: RealOrComplex, v: RealOrComplex ) => any;
 
 /**
 * An n-ary function accepting complex numbers.
@@ -145,7 +145,7 @@ type WrappedQuinary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w:
 * @param args - subsequent input values
 * @returns result
 */
-type Nary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v: ComplexLike, ...args: Array<ComplexLike> ) => any; // tslint:disable-line:max-line-length
+type Nary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v: ComplexLike, ...args: Array<ComplexLike> ) => any;
 
 /**
 * An n-ary function accepting both real and complex numbers.
@@ -158,7 +158,7 @@ type Nary = ( x: ComplexLike, y: ComplexLike, z: ComplexLike, w: ComplexLike, v:
 * @param args - subsequent input values
 * @returns result
 */
-type WrappedNary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w: RealOrComplex, v: RealOrComplex, ...args: Array<RealOrComplex> ) => any; // tslint:disable-line:max-line-length
+type WrappedNary = ( x: RealOrComplex, y: RealOrComplex, z: RealOrComplex, w: RealOrComplex, v: RealOrComplex, ...args: Array<RealOrComplex> ) => any;
 
 /**
 * Complex number constructor.
@@ -271,7 +271,7 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 * var im = imagf( z );
 * // returns 0.0
 */
-declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary;
 
 /**
 * Wraps a ternary function accepting complex number arguments to support providing both real and complex numbers.
@@ -311,7 +311,7 @@ declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary
 * var im = imagf( z );
 * // returns 0.0
 */
-declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTernary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTernary;
 
 /**
 * Wraps a quaternary function accepting complex number arguments to support providing both real and complex numbers.
@@ -351,7 +351,7 @@ declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTerna
 * var im = imagf( z );
 * // returns 0.0
 */
-declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQuaternary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQuaternary;
 
 /**
 * Wraps a quinary function accepting complex number arguments to support providing both real and complex numbers.
@@ -391,7 +391,7 @@ declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQu
 * var im = imagf( z );
 * // returns 0.0
 */
-declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuinary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuinary;
 
 /**
 * Wraps an n-ary function accepting complex number arguments to support providing both real and complex numbers.
@@ -431,7 +431,7 @@ declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuina
 * var im = imagf( z );
 * // returns 0.0
 */
-declare function wrap( fcn: Nary, nargs: number, ctor: Constructor ): WrappedNary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Nary, nargs: number, ctor: Constructor ): WrappedNary;
 
 
 // EXPORTS //

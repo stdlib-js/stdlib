@@ -63,7 +63,7 @@
 * var v = heaviside( NaN );
 * // returns NaN
 */
-declare function heaviside( x: number, continuity?: 'half-maximum' | 'left-continuous' | 'right-continuous' ): number; // tslint-disable-line max-lines-length
+declare function heaviside( x: number, continuity?: 'half-maximum' | 'left-continuous' | 'right-continuous' ): number;
 
 
 // EXPORTS //

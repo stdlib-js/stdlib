@@ -44,7 +44,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var z = gdot( x, y );
 * // returns -5.0
 */
-declare function gdot( x: ndarray | NumericArray, y: ndarray | NumericArray ): number; // tslint:disable-line:max-line-length
+declare function gdot( x: ndarray | NumericArray, y: ndarray | NumericArray ): number;
 
 
 // EXPORTS //

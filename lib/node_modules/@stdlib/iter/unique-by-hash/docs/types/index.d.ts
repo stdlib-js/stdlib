@@ -67,7 +67,7 @@ type HashFunction = ( value?: any ) => any;
 *
 * var bool = iter.ne
 */
-declare function iterUniqueByHash( iterator: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterUniqueByHash( iterator: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

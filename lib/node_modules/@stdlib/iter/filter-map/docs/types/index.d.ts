@@ -98,7 +98,7 @@ type Callback = Nullary | Unary | Binary;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterFilterMap( iterator: Iterator, fcn: Callback, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterFilterMap( iterator: Iterator, fcn: Callback, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

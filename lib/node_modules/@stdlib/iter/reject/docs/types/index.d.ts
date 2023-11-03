@@ -94,7 +94,7 @@ type Predicate = Nullary | Unary | Binary;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterReject( iterator: Iterator, predicate: Predicate, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterReject( iterator: Iterator, predicate: Predicate, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

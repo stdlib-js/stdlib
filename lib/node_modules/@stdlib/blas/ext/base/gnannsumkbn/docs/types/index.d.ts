@@ -43,7 +43,7 @@ interface Routine {
 	* var v = gnannsumkbn( x.length, x, 1, out, 1 );
 	* // returns [ 1.0, 3 ]
 	*/
-	( N: number, x: NumericArray, strideX: number, out: NumericArray, strideOut: number ): NumericArray; // tslint:disable-line:max-line-length
+	( N: number, x: NumericArray, strideX: number, out: NumericArray, strideOut: number ): NumericArray;
 
 	/**
 	* Computes the sum of strided array elements, ignoring `NaN` values and using an improved Kahan–Babuška algorithm and alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* var v = gnannsumkbn( x.length, x, 1, 0, out, 1, 0 );
 	* // returns [ 1.0, 3 ]
 	*/
-	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, out: NumericArray, strideOut: number, offsetOut: number ): NumericArray; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, out: NumericArray, strideOut: number, offsetOut: number ): NumericArray;
 }
 
 /**

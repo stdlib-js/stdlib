@@ -56,7 +56,7 @@ type Iterator = Iter | IterableIterator;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterUnshift( iterator: Iterator, ...items: Array<any> ): Iterator; // tslint:disable-line:max-line-length
+declare function iterUnshift( iterator: Iterator, ...items: Array<any> ): Iterator;
 
 
 // EXPORTS //

@@ -70,7 +70,7 @@ type Predicate = ( a: any, b: any ) => boolean;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterUniqueBy( iterator: Iterator, predicate: Predicate, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterUniqueBy( iterator: Iterator, predicate: Predicate, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

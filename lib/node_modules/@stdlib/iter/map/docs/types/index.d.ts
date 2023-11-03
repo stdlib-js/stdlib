@@ -95,7 +95,7 @@ type Callback = Nullary | Unary | Binary;
 *
 * // ...
 */
-declare function iterMap( iterator: Iterator, fcn: Callback, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterMap( iterator: Iterator, fcn: Callback, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

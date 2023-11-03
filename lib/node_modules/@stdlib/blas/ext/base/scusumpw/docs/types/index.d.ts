@@ -42,7 +42,7 @@ interface Routine {
 	* scusumpw( x.length, 0.0, x, 1, y, 1 );
 	* // y => <Float32Array>[ 1.0, -1.0, 1.0 ]
 	*/
-	( N: number, sum: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, sum: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array;
 
 	/**
 	* Computes the cumulative sum of single-precision floating-point strided array elements using pairwise summation and alternative indexing semantics.
@@ -66,7 +66,7 @@ interface Routine {
 	* scusumpw.ndarray( x.length, 0.0, x, 1, 0, y, 1, 0 );
 	* // y => <Float32Array>[ 1.0, -1.0, 1.0 ]
 	*/
-	ndarray( N: number, sum: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, sum: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array;
 }
 
 /**

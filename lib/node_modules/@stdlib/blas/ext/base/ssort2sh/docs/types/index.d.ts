@@ -47,7 +47,7 @@ interface Routine {
 	* console.log( y );
 	* // => <Float32Array>[ 3.0, 1.0, 0.0, 2.0 ]
 	*/
-	( N: number, order: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, order: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array;
 
 	/**
 	* Simultaneously sorts two single-precision floating-point strided arrays based on the sort order of the first array using Shellsort and alternative indexing semantics.
@@ -76,7 +76,7 @@ interface Routine {
 	* console.log( y );
 	* // => <Float32Array>[ 3.0, 1.0, 0.0, 2.0 ]
 	*/
-	ndarray( N: number, order: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, order: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array;
 }
 
 /**

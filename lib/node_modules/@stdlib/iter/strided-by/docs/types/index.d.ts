@@ -124,7 +124,7 @@ type Callback = Nullary | Unary | Binary | Ternary | Quaternary;
 *
 * // ...
 */
-declare function iterStridedBy( iterator: Iterator, fcn: Callback, offset?: number, eager?: boolean, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterStridedBy( iterator: Iterator, fcn: Callback, offset?: number, eager?: boolean, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which steps according to a callback function.
@@ -168,7 +168,7 @@ declare function iterStridedBy( iterator: Iterator, fcn: Callback, offset?: numb
 *
 * // ...
 */
-declare function iterStridedBy( iterator: Iterator, fcn: Callback, offset?: number, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterStridedBy( iterator: Iterator, fcn: Callback, offset?: number, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which steps according to a callback function.
@@ -211,7 +211,7 @@ declare function iterStridedBy( iterator: Iterator, fcn: Callback, offset?: numb
 *
 * // ...
 */
-declare function iterStridedBy( iterator: Iterator, fcn: Callback, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterStridedBy( iterator: Iterator, fcn: Callback, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

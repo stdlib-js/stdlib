@@ -57,7 +57,7 @@ interface Routine {
 	* var v = ssumkbn.ndarray( x.length, x, 1, 0 );
 	* // returns 1.0
 	*/
-	ndarray( N: number, x: Float32Array, stride: number, offset: number ): number; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float32Array, stride: number, offset: number ): number;
 }
 
 /**

@@ -94,7 +94,7 @@ type Ternary = ( x: number, y: number, z: number ) => any;
 *
 * // ...
 */
-declare function iterMap3( iter0: Iterator | number, iter1: Iterator | number, iter2: Iterator | number, fcn: Ternary, options?: Options ): Iterator; // tslint:disable-line:max-line-length
+declare function iterMap3( iter0: Iterator | number, iter1: Iterator | number, iter2: Iterator | number, fcn: Ternary, options?: Options ): Iterator;
 
 
 // EXPORTS //

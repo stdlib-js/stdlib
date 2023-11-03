@@ -59,7 +59,7 @@ interface Routine {
 	* gsortsh.ndarray( x.length, 1, x, 1, 0 );
 	* // x => [ -4.0, -2.0, 1.0, 3.0 ]
 	*/
-	ndarray( N: number, order: number, x: NumericArray, stride: number, offset: number ): NumericArray; // tslint:disable-line:max-line-length
+	ndarray( N: number, order: number, x: NumericArray, stride: number, offset: number ): NumericArray;
 }
 
 /**

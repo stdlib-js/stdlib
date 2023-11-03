@@ -57,7 +57,7 @@ interface Routine {
 	* srev.ndarray( x.length, x, 1, 0 );
 	* // x => <Float32Array>[ -3.0, -1.0, 0.0, 4.0, -5.0, 3.0, 1.0, -2.0 ]
 	*/
-	ndarray( N: number, x: Float32Array, stride: number, offset: number ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float32Array, stride: number, offset: number ): Float32Array;
 }
 
 /**

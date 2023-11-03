@@ -152,7 +152,7 @@ type WrappedQuinary = ( x: any, y: any, z: any, w: any, v: any ) => ComplexLike;
 * @param args - subsequent input values
 * @returns result
 */
-type Nary = ( x: any, y: any, z: any, w: any, v: any, ...args: Array<any> ) => RealOrComplex; // tslint:disable-line:max-line-length
+type Nary = ( x: any, y: any, z: any, w: any, v: any, ...args: Array<any> ) => RealOrComplex;
 
 /**
 * An n-ary function returning a complex number.
@@ -165,7 +165,7 @@ type Nary = ( x: any, y: any, z: any, w: any, v: any, ...args: Array<any> ) => R
 * @param args - subsequent input values
 * @returns result
 */
-type WrappedNary = ( x: any, y: any, z: any, w: any, v: any, ...args: Array<any> ) => ComplexLike; // tslint:disable-line:max-line-length
+type WrappedNary = ( x: any, y: any, z: any, w: any, v: any, ...args: Array<any> ) => ComplexLike;
 
 /**
 * Complex number constructor.
@@ -204,7 +204,7 @@ type Constructor = new( re: number, im: number ) => ComplexLike;
 * var im = imagf( z );
 * // returns <number>
 */
-declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): WrappedNullary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): WrappedNullary;
 
 /**
 * Wraps a unary function and casts a function's return value to a complex number.
@@ -274,7 +274,7 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 * var im = imagf( z );
 * // returns 0.0
 */
-declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary;
 
 /**
 * Wraps a ternary function and casts a function's return value to a complex number.
@@ -312,7 +312,7 @@ declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary
 * var im = imagf( z );
 * // returns 0.0
 */
-declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTernary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTernary;
 
 /**
 * Wraps a quaternary function and casts a function's return value to a complex number.
@@ -350,7 +350,7 @@ declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTerna
 * var im = imagf( z );
 * // returns 0.0
 */
-declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQuaternary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQuaternary;
 
 /**
 * Wraps a quinary function and casts a function's return value to a complex number.
@@ -388,7 +388,7 @@ declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQu
 * var im = imagf( z );
 * // returns 0.0
 */
-declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuinary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuinary;
 
 /**
 * Wraps an n-ary function and casts a function's return value to a complex number.
@@ -426,7 +426,7 @@ declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuina
 * var im = imagf( z );
 * // returns 0.0
 */
-declare function wrap( fcn: Nary, nargs: number, ctor: Constructor ): WrappedNary; // tslint:disable-line:max-line-length
+declare function wrap( fcn: Nary, nargs: number, ctor: Constructor ): WrappedNary;
 
 
 // EXPORTS //

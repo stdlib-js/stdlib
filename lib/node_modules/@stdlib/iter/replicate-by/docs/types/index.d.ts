@@ -119,7 +119,7 @@ type Callback = Nullary | Unary | Binary | Ternary;
 * v = iter.next().value;
 * // returns 3
 */
-declare function iterReplicateBy( iterator: Iterator, fcn: Callback, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterReplicateBy( iterator: Iterator, fcn: Callback, thisArg?: any ): Iterator;
 
 
 // EXPORTS //

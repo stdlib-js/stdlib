@@ -86,7 +86,7 @@ function quaternary( x: number, y: number, z: number, w: number ): number {
 * @param v - input value
 * @returns result
 */
-function quinary( x: number, y: number, z: number, w: number, v: number ): number { // tslint:disable-line:max-line-length
+function quinary( x: number, y: number, z: number, w: number, v: number ): number {
 	return x + y + z + w + v;
 }
 
@@ -101,7 +101,7 @@ function quinary( x: number, y: number, z: number, w: number, v: number ): numbe
 * @param t - input value
 * @returns result
 */
-function nary( x: number, y: number, z: number, w: number, v: number, t: number ): number { // tslint:disable-line:max-line-length
+function nary( x: number, y: number, z: number, w: number, v: number, t: number ): number {
 	return x + y + z + w + v + t;
 }
 

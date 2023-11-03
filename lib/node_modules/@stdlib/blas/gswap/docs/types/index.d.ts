@@ -45,7 +45,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * // x => [ 2.0, 6.0, -1.0, -4.0, 8.0 ]
 * // y => [ 4.0, 2.0, -3.0, 5.0, -1.0 ]
 */
-declare function gswap( x: ndarray | ArrayLike<any>, y: ndarray | ArrayLike<any> ): ndarray | ArrayLike<any>; // tslint:disable-line:max-line-length
+declare function gswap( x: ndarray | ArrayLike<any>, y: ndarray | ArrayLike<any> ): ndarray | ArrayLike<any>;
 
 
 // EXPORTS //

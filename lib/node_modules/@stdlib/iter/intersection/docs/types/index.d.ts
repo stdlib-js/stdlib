@@ -57,7 +57,7 @@ type Iterator = Iter | IterableIterator;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterIntersection( iter0: Iterator, iter1: Iterator, ...iterN: Array<Iterator> ): Iterator; // tslint:disable-line:max-line-length
+declare function iterIntersection( iter0: Iterator, iter1: Iterator, ...iterN: Array<Iterator> ): Iterator;
 
 
 // EXPORTS //

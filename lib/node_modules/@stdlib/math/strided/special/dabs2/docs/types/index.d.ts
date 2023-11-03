@@ -41,7 +41,7 @@ interface Routine {
 	* dabs2( x.length, x, 1, y, 1 );
 	* // y => <Float64Array>[ 1.0, 4.0, 9.0, 16.0, 25.0 ]
 	*/
-	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number ): Float64Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number ): Float64Array;
 
 	/**
 	* Computes the squared absolute value for each element in a double-precision floating-point strided array `x` and assigns the results to elements in a double-precision floating-point strided array `y` using alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* dabs2.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // y => <Float64Array>[ 1.0, 4.0, 9.0, 16.0, 25.0 ]
 	*/
-	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, y: Float64Array, strideY: number, offsetY: number ): Float64Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, y: Float64Array, strideY: number, offsetY: number ): Float64Array;
 }
 
 /**

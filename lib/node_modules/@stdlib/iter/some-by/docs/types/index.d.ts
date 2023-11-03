@@ -77,7 +77,7 @@ type Predicate = Nullary | Unary | Binary;
 * var bool = iterSomeBy( it, 3, predicate );
 * // returns true
 */
-declare function iterSomeBy( iterator: Iterator, n: number, predicate: Predicate, thisArg?: any ): boolean; // tslint:disable-line:max-line-length
+declare function iterSomeBy( iterator: Iterator, n: number, predicate: Predicate, thisArg?: any ): boolean;
 
 
 // EXPORTS //

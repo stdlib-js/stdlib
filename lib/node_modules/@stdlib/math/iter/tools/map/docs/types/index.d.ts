@@ -78,7 +78,7 @@ type Unary = ( value: number ) => any;
 *
 * // ...
 */
-declare function iterMap( iterator: Iterator, fcn: Unary, options?: Options ): Iterator; // tslint:disable-line:max-line-length
+declare function iterMap( iterator: Iterator, fcn: Unary, options?: Options ): Iterator;
 
 
 // EXPORTS //

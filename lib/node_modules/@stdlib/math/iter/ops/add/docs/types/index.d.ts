@@ -59,7 +59,7 @@ type Iterator = Iter | IterableIterator;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterAdd( iter0: Iterator | number, iter1: Iterator | number, ...iterN: Array<Iterator | number> ): Iterator; // tslint:disable-line:max-line-length
+declare function iterAdd( iter0: Iterator | number, iter1: Iterator | number, ...iterN: Array<Iterator | number> ): Iterator;
 
 
 // EXPORTS //

@@ -44,7 +44,7 @@ interface Routine {
 	* gcusumkbn( x.length, 0.0, x, 1, y, 1 );
 	* // y => [ 1.0, -1.0, 1.0 ]
 	*/
-	( N: number, sum: number, x: NumericArray, strideX: number, y: NumericArray, strideY: number ): NumericArray; // tslint:disable-line:max-line-length
+	( N: number, sum: number, x: NumericArray, strideX: number, y: NumericArray, strideY: number ): NumericArray;
 
 	/**
 	* Computes the cumulative sum of strided array elements using an improved Kahan–Babuška algorithm and alternative indexing semantics.
@@ -66,7 +66,7 @@ interface Routine {
 	* gcusumkbn.ndarray( x.length, 0.0, x, 1, 0, y, 1, 0 );
 	* // y => [ 1.0, -1.0, 1.0 ]
 	*/
-	ndarray( N: number, sum: number, x: NumericArray, strideX: number, offsetX: number, y: NumericArray, strideY: number, offsetY: number ): NumericArray; // tslint:disable-line:max-line-length
+	ndarray( N: number, sum: number, x: NumericArray, strideX: number, offsetX: number, y: NumericArray, strideY: number, offsetY: number ): NumericArray;
 }
 
 /**

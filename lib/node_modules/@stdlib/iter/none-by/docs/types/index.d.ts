@@ -75,7 +75,7 @@ type Predicate = Nullary | Unary | Binary;
 * var bool = iterNoneBy( it, predicate );
 * // returns true
 */
-declare function iterNoneBy( iterator: Iterator, predicate: Predicate, thisArg?: any ): boolean; // tslint:disable-line:max-line-length
+declare function iterNoneBy( iterator: Iterator, predicate: Predicate, thisArg?: any ): boolean;
 
 
 // EXPORTS //

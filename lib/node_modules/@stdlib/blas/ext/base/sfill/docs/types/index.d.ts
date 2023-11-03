@@ -59,7 +59,7 @@ interface Routine {
 	* sfill.ndarray( x.length, 5.0, x, 1, 0 );
 	* // x => <Float32Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: Float32Array, stride: number, offset: number ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, alpha: number, x: Float32Array, stride: number, offset: number ): Float32Array;
 }
 
 /**

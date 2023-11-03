@@ -58,7 +58,7 @@ interface Options {
 * var v = iterContinuedFraction( it );
 * // returns ~3.245
 */
-declare function iterContinuedFraction( iterator: Iterator, options?: Options ): number | null; // tslint:disable-line:max-line-length
+declare function iterContinuedFraction( iterator: Iterator, options?: Options ): number | null;
 
 
 // EXPORTS //

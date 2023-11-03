@@ -55,7 +55,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterFill( iterator: Iterator, value: any, begin?: number, end?: number ): Iterator; // tslint:disable-line:max-line-length
+declare function iterFill( iterator: Iterator, value: any, begin?: number, end?: number ): Iterator;
 
 
 // EXPORTS //

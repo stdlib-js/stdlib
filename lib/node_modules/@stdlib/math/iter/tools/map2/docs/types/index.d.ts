@@ -87,7 +87,7 @@ type Binary = ( x: number, y: number ) => any;
 *
 * // ...
 */
-declare function iterMap2( iter0: Iterator | number, iter1: Iterator | number, fcn: Binary, options?: Options ): Iterator; // tslint:disable-line:max-line-length
+declare function iterMap2( iter0: Iterator | number, iter1: Iterator | number, fcn: Binary, options?: Options ): Iterator;
 
 
 // EXPORTS //

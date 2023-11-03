@@ -70,7 +70,7 @@ type HashFunction = ( value?: any ) => any;
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which returns the intersection of three or more iterators according to a hash function.
@@ -111,7 +111,7 @@ declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, hashF
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which returns the intersection of four or more iterators according to a hash function.
@@ -154,7 +154,7 @@ declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2: Iterator, iter3: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2: Iterator, iter3: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which returns the intersection of five or more iterators according to a hash function.
@@ -199,7 +199,7 @@ declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2: Iterator, iter3: Iterator, iter4: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator; // tslint:disable-line:max-line-length
+declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2: Iterator, iter3: Iterator, iter4: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator;
 
 /**
 * Returns an iterator which returns the intersection of two or more iterators according to a hash function.
@@ -237,7 +237,7 @@ declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, ...args: Array<any> ): Iterator; // tslint:disable-line:max-line-length
+declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, ...args: Array<any> ): Iterator;
 
 
 // EXPORTS //

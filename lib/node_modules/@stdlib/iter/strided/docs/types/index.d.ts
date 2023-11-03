@@ -56,7 +56,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterStrided( iterator: Iterator, stride: number, offset?: number, eager?: boolean ): Iterator; // tslint:disable-line:max-line-length
+declare function iterStrided( iterator: Iterator, stride: number, offset?: number, eager?: boolean ): Iterator;
 
 
 // EXPORTS //

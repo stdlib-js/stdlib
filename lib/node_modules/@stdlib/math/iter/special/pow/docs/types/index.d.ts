@@ -55,7 +55,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterPow( base: Iterator | number, exponent: Iterator | number ): Iterator; // tslint:disable-line:max-line-length
+declare function iterPow( base: Iterator | number, exponent: Iterator | number ): Iterator;
 
 
 // EXPORTS //

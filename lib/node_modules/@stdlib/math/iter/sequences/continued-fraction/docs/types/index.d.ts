@@ -79,7 +79,7 @@ interface Options {
 * var bool = iter.next().done;
 * // returns true
 */
-declare function iterContinuedFractionSeq( x: number, options?: Options ): Iterator; // tslint:disable-line:max-line-length
+declare function iterContinuedFractionSeq( x: number, options?: Options ): Iterator;
 
 
 // EXPORTS //
