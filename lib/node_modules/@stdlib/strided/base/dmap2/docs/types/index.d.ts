@@ -55,7 +55,7 @@ interface Routine {
 	* dmap2( x.length, x, 1, y, 1, z, 1, add );
 	* // z => <Float64Array>[ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 	*/
-	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number, z: Float64Array, strideZ: number, fcn: Binary ): Float64Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number, z: Float64Array, strideZ: number, fcn: Binary ): Float64Array;
 
 	/**
 	* Applies a binary function to double-precision floating-point strided input arrays and assigns results to a double-precision floating-point strided output array using alternative indexing semantics.
@@ -84,7 +84,7 @@ interface Routine {
 	* dmap2.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, add );
 	* // z => <Float64Array>[ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 	*/
-	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, y: Float64Array, strideY: number, offsetY: number, z: Float64Array, strideZ: number, offsetZ: number, fcn: Binary ): Float64Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, y: Float64Array, strideY: number, offsetY: number, z: Float64Array, strideZ: number, offsetZ: number, fcn: Binary ): Float64Array;
 }
 
 /**

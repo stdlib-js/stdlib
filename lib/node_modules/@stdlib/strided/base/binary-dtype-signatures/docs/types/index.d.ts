@@ -60,7 +60,7 @@ interface Options {
 * var sigs = signatures( dtypes, dtypes, dtypes );
 * // returns [ 'float32', 'float32', 'float32', ... ]
 */
-declare function signatures( dtypes1: ArrayLike<any>, dtypes2: ArrayLike<any>, dtypes3: ArrayLike<any>, options?: Options ): ArrayLike<string | number>; // tslint:disable-line:max-line-length
+declare function signatures( dtypes1: ArrayLike<any>, dtypes2: ArrayLike<any>, dtypes3: ArrayLike<any>, options?: Options ): ArrayLike<string | number>;
 
 
 // EXPORTS //

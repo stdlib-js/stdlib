@@ -41,7 +41,7 @@ interface Routine {
 	* scumin( x.length, x, 1, y, 1 );
 	* // y => <Float32Array>[ 1.0, -2.0, -2.0 ]
 	*/
-	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number ): Float32Array;
 
 	/**
 	* Computes the cumulative minimum of single-precision floating-point strided array elements using alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* scumin.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // y => <Float32Array>[ 1.0, -2.0, -2.0 ]
 	*/
-	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array;
 }
 
 /**

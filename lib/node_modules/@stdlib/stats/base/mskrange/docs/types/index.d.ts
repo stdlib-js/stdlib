@@ -43,7 +43,7 @@ interface Routine {
 	* var v = mskrange( x.length, x, 1, mask, 1 );
 	* // returns 4.0
 	*/
-	( N: number, x: NumericArray, strideX: number, mask: NumericArray, strideMask: number ): number; // tslint:disable-line:max-line-length
+	( N: number, x: NumericArray, strideX: number, mask: NumericArray, strideMask: number ): number;
 
 	/**
 	* Computes the range of a strided array according to a mask and using alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* var v = mskrange.ndarray( x.length, x, 1, 0, mask, 1, 0 );
 	* // returns 4.0
 	*/
-	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, mask: NumericArray, strideMask: number, offsetMask: number ): number; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, mask: NumericArray, strideMask: number, offsetMask: number ): number;
 }
 
 /**

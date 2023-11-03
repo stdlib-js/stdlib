@@ -72,7 +72,7 @@ interface Routine {
 	* var im = imag( v );
 	* // returns 10.0
 	*/
-	( N: number, x: Complex128Array, strideX: number, y: Complex128Array, strideY: number, fcn: Unary ): Complex128Array; // tslint:disable-line:max-line-length
+	( N: number, x: Complex128Array, strideX: number, y: Complex128Array, strideY: number, fcn: Unary ): Complex128Array;
 
 	/**
 	* Applies a unary function to a double-precision complex floating-point strided input array and assigns results to a double-precision complex floating-point strided output array using alternative indexing semantics.
@@ -113,7 +113,7 @@ interface Routine {
 	* var im = imag( v );
 	* // returns 10.0
 	*/
-	ndarray( N: number, x: Complex128Array, strideX: number, offsetX: number, y: Complex128Array, strideY: number, offsetY: number, fcn: Unary ): Complex128Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Complex128Array, strideX: number, offsetX: number, y: Complex128Array, strideY: number, offsetY: number, fcn: Unary ): Complex128Array;
 }
 
 /**

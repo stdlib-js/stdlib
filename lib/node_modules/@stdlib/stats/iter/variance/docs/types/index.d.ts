@@ -39,7 +39,7 @@ import { Iterator } from '@stdlib/types/iter';
 * var s2 = itervariance( rand );
 * // returns <number>
 */
-declare function itervariance( iterator: Iterator, mean?: number ): number | null; // tslint:disable-line:max-line-length
+declare function itervariance( iterator: Iterator, mean?: number ): number | null;
 
 
 // EXPORTS //

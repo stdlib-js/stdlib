@@ -58,7 +58,7 @@ interface Routine {
 	* dmskmap( x.length, x, 1, m, 1, y, 1, identity );
 	* // y => <Float64Array>[ 1.0, 2.0, 0.0, 4.0, 5.0 ]
 	*/
-	( N: number, x: Float64Array, strideX: number, mask: Uint8Array, strideMask: number, y: Float64Array, strideY: number, fcn: Unary ): Float64Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float64Array, strideX: number, mask: Uint8Array, strideMask: number, y: Float64Array, strideY: number, fcn: Unary ): Float64Array;
 
 	/**
 	* Applies a unary function to a double-precision floating-point strided input array according to a strided mask array and assigns results to a double-precision floating-point strided output array using alternative indexing semantics.
@@ -91,7 +91,7 @@ interface Routine {
 	* dmskmap.ndarray( x.length, x, 1, 0, m, 1, 0, y, 1, 0, identity );
 	* // y => <Float64Array>[ 1.0, 2.0, 0.0, 4.0, 5.0 ]
 	*/
-	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, mask: Uint8Array, strideMask: number, offsetMask: number, y: Float64Array, strideY: number, offsetY: number, fcn: Unary ): Float64Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, mask: Uint8Array, strideMask: number, offsetMask: number, y: Float64Array, strideY: number, offsetY: number, fcn: Unary ): Float64Array;
 }
 
 /**

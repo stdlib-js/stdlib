@@ -75,7 +75,7 @@ interface Meta {
 * // Set the properties:
 * setProps( meta, dtypes, obj, false );
 */
-declare function setProps( meta: Meta, dtypes: ArrayLike<any>, obj: any, bool: boolean ): any; // tslint:disable-line:max-line-length
+declare function setProps( meta: Meta, dtypes: ArrayLike<any>, obj: any, bool: boolean ): any;
 
 
 // EXPORTS //

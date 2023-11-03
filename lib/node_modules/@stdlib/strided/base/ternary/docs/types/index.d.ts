@@ -64,7 +64,7 @@ interface Routine {
 	* console.log( w );
 	* // => <Float64Array>[ 3.0, 6.0, 9.0, 12.0, 15.0 ]
 	*/
-	( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, fcn: Ternary ): void; // tslint:disable-line:max-line-length
+	( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, fcn: Ternary ): void;
 
 	/**
 	* Applies a ternary callback to strided input array elements and assigns results to elements in a strided output array using alternative indexing semantics.
@@ -96,7 +96,7 @@ interface Routine {
 	* console.log( w );
 	* // => <Float64Array>[ 3.0, 6.0, 9.0, 12.0, 15.0 ]
 	*/
-	ndarray( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, offsets: ArrayLike<number>, fcn: Ternary ): void; // tslint:disable-line:max-line-length
+	ndarray( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, offsets: ArrayLike<number>, fcn: Ternary ): void;
 }
 
 /**

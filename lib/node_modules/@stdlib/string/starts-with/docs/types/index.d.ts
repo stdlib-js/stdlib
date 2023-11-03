@@ -54,7 +54,7 @@
 * var bool = startsWith( 'To be, or not to be, that is the question.', 'quest', -9 );
 * // returns true
 */
-declare function startsWith( str: string, search: string, position?: number ): boolean; // tslint:disable-line:max-line-length
+declare function startsWith( str: string, search: string, position?: number ): boolean;
 
 
 // EXPORTS //

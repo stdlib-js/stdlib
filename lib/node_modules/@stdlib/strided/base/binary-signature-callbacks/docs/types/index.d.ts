@@ -123,7 +123,7 @@ interface Table {
 * var list = callbacks( table, sigs );
 * // returns [...]
 */
-declare function callbacks( table: Table, signatures: ArrayLike<any> ): ArrayLike<Callback>; // tslint:disable-line:max-line-length
+declare function callbacks( table: Table, signatures: ArrayLike<any> ): ArrayLike<Callback>;
 
 
 // EXPORTS //

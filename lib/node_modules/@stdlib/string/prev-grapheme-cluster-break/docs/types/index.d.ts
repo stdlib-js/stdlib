@@ -34,7 +34,7 @@
 * out = prevGraphemeClusterBreak( '🌷', 1 );
 * // returns -1
 */
-declare function prevGraphemeClusterBreak( str: string, fromIndex?: number ): number; // tslint:disable-line:max-line-length
+declare function prevGraphemeClusterBreak( str: string, fromIndex?: number ): number;
 
 
 // EXPORTS //

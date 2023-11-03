@@ -42,7 +42,7 @@
 * var out = replaceBefore( 'Hello World!', 'xyz', 'foo' );
 * // returns 'Hello World!'
 */
-declare function replaceBefore( str: string,  search: string, replacement: string ): string; // tslint:disable-line:max-line-length
+declare function replaceBefore( str: string,  search: string, replacement: string ): string;
 
 
 // EXPORTS //

@@ -89,7 +89,7 @@ function quaternary( x: number, y: number, z: number, w: number ): number {
 * @param strides - strides
 * @param fcn - callback
 */
-function strided( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, fcn: ( x: any ) => any ): void { // tslint:disable-line:max-line-length
+function strided( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, fcn: ( x: any ) => any ): void {
 	let sx;
 	let sy;
 	let ix;
@@ -122,7 +122,7 @@ function strided( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: 
 * @param offsets - offsets
 * @param fcn - callback
 */
-function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, offsets: Array<number>, fcn: ( x: any ) => any ): void { // tslint:disable-line:max-line-length
+function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, offsets: Array<number>, fcn: ( x: any ) => any ): void {
 	let sx;
 	let sy;
 	let ix;

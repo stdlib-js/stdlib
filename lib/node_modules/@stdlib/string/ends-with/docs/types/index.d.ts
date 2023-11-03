@@ -50,7 +50,7 @@
 * var bool = endsWith( 'To be, or not to be, that is the question.', 'to be', -23 );
 * // returns true
 */
-declare function endsWith( str: string, search: string, len?: number ): boolean; // tslint:disable-line:max-line-length
+declare function endsWith( str: string, search: string, len?: number ): boolean;
 
 
 // EXPORTS //

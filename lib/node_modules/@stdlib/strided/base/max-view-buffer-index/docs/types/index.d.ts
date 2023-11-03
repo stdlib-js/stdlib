@@ -30,7 +30,7 @@
 * var idx = maxViewBufferIndex( 3, 2, 10 );
 * // returns 14
 */
-declare function maxViewBufferIndex( N: number, stride: number, offset: number ): number; // tslint:disable-line:max-line-length
+declare function maxViewBufferIndex( N: number, stride: number, offset: number ): number;
 
 
 // EXPORTS //

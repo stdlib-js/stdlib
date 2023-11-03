@@ -39,7 +39,7 @@ import { Complex128Array } from '@stdlib/types/array';
 *
 * var bool = ( out.buffer === x.buffer );
 */
-declare function reinterpret( x: Complex128Array, offset: number ): Float64Array; // tslint:disable-line:max-line-length
+declare function reinterpret( x: Complex128Array, offset: number ): Float64Array;
 
 
 // EXPORTS //

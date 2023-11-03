@@ -60,7 +60,7 @@ interface Routine {
 	* console.log( y );
 	* // => <Float64Array>[ 10.0, 20.0, 30.0, 40.0, 50.0 ]
 	*/
-	( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, fcn: Unary ): void; // tslint:disable-line:max-line-length
+	( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, fcn: Unary ): void;
 
 	/**
 	* Applies a unary callback to elements in a strided input array and assigns results to elements in a strided output array using alternative indexing semantics.
@@ -90,7 +90,7 @@ interface Routine {
 	* console.log( y );
 	* // => <Float64Array>[ 10.0, 20.0, 30.0, 40.0, 50.0 ]
 	*/
-	ndarray( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, offsets: ArrayLike<number>, fcn: Unary ): void; // tslint:disable-line:max-line-length
+	ndarray( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, offsets: ArrayLike<number>, fcn: Unary ): void;
 }
 
 /**

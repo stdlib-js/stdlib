@@ -30,7 +30,7 @@
 * var idx = minViewBufferIndex( 3, -2, 10 );
 * // returns 6
 */
-declare function minViewBufferIndex( N: number, stride: number, offset: number ): number; // tslint:disable-line:max-line-length
+declare function minViewBufferIndex( N: number, stride: number, offset: number ): number;
 
 
 // EXPORTS //

@@ -46,7 +46,7 @@
 * var out = ltrimN( str, str.length, '👨🏼‍🎨🤖' );
 * // returns ''
 */
-declare function ltrimN( str: string, n: number, chars?: string | Array<string> ): string; // tslint:disable-line:max-line-length
+declare function ltrimN( str: string, n: number, chars?: string | Array<string> ): string;
 
 
 // EXPORTS //

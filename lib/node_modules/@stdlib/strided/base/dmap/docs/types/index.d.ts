@@ -54,7 +54,7 @@ interface Routine {
 	* dmap( x.length, x, 1, y, 1, identity );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number, fcn: Unary ): Float64Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number, fcn: Unary ): Float64Array;
 
 	/**
 	* Applies a unary function to a double-precision floating-point strided input array and assigns results to a double-precision floating-point strided output array using alternative indexing semantics.
@@ -82,7 +82,7 @@ interface Routine {
 	* dmap.ndarray( x.length, x, 1, 0, y, 1, 0, identity );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, y: Float64Array, strideY: number, offsetY: number, fcn: Unary ): Float64Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, y: Float64Array, strideY: number, offsetY: number, fcn: Unary ): Float64Array;
 }
 
 /**

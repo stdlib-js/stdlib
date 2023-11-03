@@ -66,7 +66,7 @@ interface Routine {
 	* console.log( u );
 	* // => <Float64Array>[ 4.0, 8.0, 12.0, 16.0, 20.0 ]
 	*/
-	( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, fcn: Quaternary ): void; // tslint:disable-line:max-line-length
+	( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, fcn: Quaternary ): void;
 
 	/**
 	* Applies a quaternary callback to strided input array elements and assigns results to elements in a strided output array using alternative indexing semantics.
@@ -99,7 +99,7 @@ interface Routine {
 	* console.log( u );
 	* // => <Float64Array>[ 4.0, 8.0, 12.0, 16.0, 20.0 ]
 	*/
-	ndarray( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, offsets: ArrayLike<number>, fcn: Quaternary ): void; // tslint:disable-line:max-line-length
+	ndarray( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, offsets: ArrayLike<number>, fcn: Quaternary ): void;
 }
 
 /**

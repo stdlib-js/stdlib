@@ -43,7 +43,7 @@ interface Routine {
 	* var v = nanmskmin( x.length, x, 1, mask, 1 );
 	* // returns -2.0
 	*/
-	( N: number, x: NumericArray, strideX: number, mask: NumericArray, strideMask: number ): number; // tslint:disable-line:max-line-length
+	( N: number, x: NumericArray, strideX: number, mask: NumericArray, strideMask: number ): number;
 
 	/**
 	* Computes the minimum value of a strided array according to a mask, ignoring `NaN` values and using alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* var v = nanmskmin.ndarray( x.length, x, 1, 0, mask, 1, 0 );
 	* // returns -2.0
 	*/
-	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, mask: NumericArray, strideMask: number, offsetMask: number ): number; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, mask: NumericArray, strideMask: number, offsetMask: number ): number;
 }
 
 /**

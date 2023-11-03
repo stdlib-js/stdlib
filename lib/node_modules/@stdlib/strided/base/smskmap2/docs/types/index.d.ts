@@ -59,7 +59,7 @@ interface Routine {
 	* smskmap2( x.length, x, 1, m, 1, y, 1, addf );
 	* // z => <Float32Array>[ 2.0, 4.0, 0.0, 8.0, 10.0 ]
 	*/
-	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number, mask: Uint8Array, strideMask: number, z: Float32Array, strideZ: number, fcn: Binary ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number, mask: Uint8Array, strideMask: number, z: Float32Array, strideZ: number, fcn: Binary ): Float32Array;
 
 	/**
 	* Applies a binary function to single-precision floating-point strided input arrays according to a strided mask array and assigns results to a single-precision floating-point strided output array using alternative indexing semantics.
@@ -93,7 +93,7 @@ interface Routine {
 	* smskmap2.ndarray( x.length, x, 1, 0, y, 1, 0, m, 1, 0, z, 1, 0, addf );
 	* // z => <Float32Array>[ 2.0, 4.0, 0.0, 8.0, 10.0 ]
 	*/
-	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number, mask: Uint8Array, strideMask: number, offsetMask: number, z: Float32Array, strideZ: number, offsetZ: number, fcn: Binary ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number, mask: Uint8Array, strideMask: number, offsetMask: number, z: Float32Array, strideZ: number, offsetZ: number, fcn: Binary ): Float32Array;
 }
 
 /**

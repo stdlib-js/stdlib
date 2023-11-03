@@ -44,7 +44,7 @@ type TypedArrayOrComplexTypedArray = TypedArray | ComplexTypedArray;
 *
 * var bool = ( out.buffer === x.buffer );
 */
-declare function offsetView( x: TypedArrayOrComplexTypedArray, offset: number ): TypedArrayOrComplexTypedArray; // tslint:disable-line:max-line-length
+declare function offsetView( x: TypedArrayOrComplexTypedArray, offset: number ): TypedArrayOrComplexTypedArray;
 
 
 // EXPORTS //

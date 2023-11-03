@@ -66,7 +66,7 @@ import { ArrayLike } from '@stdlib/types/array';
 *     }
 * }
 */
-type StridedArrayFcn = ( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, data?: any ) => void; // tslint:disable-line:max-line-length
+type StridedArrayFcn = ( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, data?: any ) => void;
 
 /**
 * Strided array function using alternative indexing semantics.
@@ -105,7 +105,7 @@ type StridedArrayFcn = ( arrays: Array<ArrayLike<any>>, shape: Array<number>, st
 *     }
 * }
 */
-type StridedArrayFcnWithOffsets = ( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, offsets: Array<number>, data?: any ) => void; // tslint:disable-line:max-line-length
+type StridedArrayFcnWithOffsets = ( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: Array<number>, offsets: Array<number>, data?: any ) => void;
 
 /**
 * Interface describing a strided array function dispatcher.
@@ -148,7 +148,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1 );
 	* // x => <Float64Array>[ 3.14, 3.14, 3.14, 3.14, 3.14 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data type(s) using alternative indexing semantics.
@@ -190,7 +190,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0 );
 	* // x => <Float64Array>[ 3.14, 3.14, 3.14, 3.14, 3.14 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number ): ArrayLike<any> | void; unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -230,7 +230,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1 );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -274,7 +274,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -321,7 +321,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1 );
 	* // z => <Float64Array>[ 2.0, 4.0, 6.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -373,7 +373,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 );
 	* // z => <Float64Array>[ 2.0, 4.0, 6.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -424,7 +424,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 );
 	* // w => <Float64Array>[ 3.0, 6.0, 9.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -481,7 +481,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 );
 	* // w => <Float64Array>[ 3.0, 6.0, 9.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, offsetW: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, offsetW: number ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -534,7 +534,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 );
 	* // u => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, ...args: Array<ArrayLike<any> | number | string> ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, ...args: Array<ArrayLike<any> | number | string> ): ArrayLike<any> | void; unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -591,7 +591,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 );
 	* // u => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, offsetW: number, ...args: Array<ArrayLike<any> | number> ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, offsetW: number, ...args: Array<ArrayLike<any> | number> ): ArrayLike<any> | void; unified-signatures
 }
 
 /**
@@ -638,7 +638,7 @@ interface Dispatcher {
 * strided( x.length, 'float64', x, 1, 'float64', y, 1 );
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function dispatch( fcns: StridedArrayFcn | ArrayLike<StridedArrayFcn>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:max-line-length
+declare function dispatch( fcns: StridedArrayFcn | ArrayLike<StridedArrayFcn>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher;
 
 /**
 * Returns a strided array function interface which performs multiple dispatch and supports alternative indexing semantics.
@@ -684,7 +684,7 @@ declare function dispatch( fcns: StridedArrayFcn | ArrayLike<StridedArrayFcn>, t
 * strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function dispatch( fcns: StridedArrayFcnWithOffsets | ArrayLike<StridedArrayFcnWithOffsets>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:max-line-length unified-signatures
+declare function dispatch( fcns: StridedArrayFcnWithOffsets | ArrayLike<StridedArrayFcnWithOffsets>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; unified-signatures
 
 
 // EXPORTS //

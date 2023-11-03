@@ -63,7 +63,7 @@ type StringOrToken = string | FormatIdentifier;
 * var out = formatInterpolate( tokens, 'boop' );
 * // returns 'beep boop'
 */
-declare function formatInterpolate( tokens: Array<StringOrToken>, ...args: Array<any> ): string; // tslint:disable-line:max-line-length
+declare function formatInterpolate( tokens: Array<StringOrToken>, ...args: Array<any> ): string;
 
 
 // EXPORTS //

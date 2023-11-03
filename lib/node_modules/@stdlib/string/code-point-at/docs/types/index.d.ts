@@ -35,7 +35,7 @@
 * str = codePointAt( '🌷', 1, true );
 * // returns 127799
 */
-declare function codePointAt( str: string, idx: number, backward?: boolean ): number; // tslint:disable-line:max-line-length
+declare function codePointAt( str: string, idx: number, backward?: boolean ): number;
 
 
 // EXPORTS //

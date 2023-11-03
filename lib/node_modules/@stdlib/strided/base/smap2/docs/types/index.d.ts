@@ -55,7 +55,7 @@ interface Routine {
 	* smap2( x.length, x, 1, y, 1, z, 1, addf );
 	* // z => <Float32Array>[ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 	*/
-	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number, z: Float32Array, strideZ: number, fcn: Binary ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number, z: Float32Array, strideZ: number, fcn: Binary ): Float32Array;
 
 	/**
 	* Applies a binary function to single-precision floating-point strided input arrays and assigns results to a single-precision floating-point strided output array using alternative indexing semantics.
@@ -84,7 +84,7 @@ interface Routine {
 	* smap2.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, addf );
 	* // z => <Float32Array>[ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 	*/
-	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number, z: Float32Array, strideZ: number, offsetZ: number, fcn: Binary ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number, z: Float32Array, strideZ: number, offsetZ: number, fcn: Binary ): Float32Array;
 }
 
 /**

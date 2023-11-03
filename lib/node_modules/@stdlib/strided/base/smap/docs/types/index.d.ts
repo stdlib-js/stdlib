@@ -54,7 +54,7 @@ interface Routine {
 	* smap( x.length, x, 1, y, 1, identity );
 	* // y => <Float32Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number, fcn: Unary ): Float32Array; // tslint:disable-line:max-line-length
+	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number, fcn: Unary ): Float32Array;
 
 	/**
 	* Applies a unary function to a single-precision floating-point strided input array and assigns results to a single-precision floating-point strided output array using alternative indexing semantics.
@@ -82,7 +82,7 @@ interface Routine {
 	* smap.ndarray( x.length, x, 1, 0, y, 1, 0, identity );
 	* // y => <Float32Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number, fcn: Unary ): Float32Array; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number, fcn: Unary ): Float32Array;
 }
 
 /**

@@ -59,7 +59,7 @@ interface Routine {
 	* var v = nanvariancetk.ndarray( x.length, 1, x, 1, 0 );
 	* // returns ~4.3333
 	*/
-	ndarray( N: number, correction: number, x: NumericArray, stride: number, offset: number ): number; // tslint:disable-line:max-line-length
+	ndarray( N: number, correction: number, x: NumericArray, stride: number, offset: number ): number;
 }
 
 /**

@@ -68,7 +68,7 @@ interface Routine {
 	* console.log( v );
 	* // => <Float64Array>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]
 	*/
-	( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, fcn: Quinary ): void; // tslint:disable-line:max-line-length
+	( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, fcn: Quinary ): void;
 
 	/**
 	* Applies a quinary callback to strided input array elements and assigns results to elements in a strided output array using alternative indexing semantics.
@@ -102,7 +102,7 @@ interface Routine {
 	* console.log( v );
 	* // => <Float64Array>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]
 	*/
-	ndarray( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, offsets: ArrayLike<number>, fcn: Quinary ): void; // tslint:disable-line:max-line-length
+	ndarray( arrays: ArrayLike<ArrayLike<any>>, shape: ArrayLike<number>, strides: ArrayLike<number>, offsets: ArrayLike<number>, fcn: Quinary ): void;
 }
 
 /**
