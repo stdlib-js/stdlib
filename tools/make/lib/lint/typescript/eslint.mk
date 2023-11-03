@@ -36,17 +36,16 @@ ESLINT_TS_CONF ?= $(CONFIG_DIR)/eslint/.eslintrc.typescript.js
 ESLINT_IGNORE ?= $(CONFIG_DIR)/eslint/.eslintignore
 
 # Define the command-line options to use when invoking the ESLint executable:
-ESLINT_FLAGS ?= \
-	--ignore-path $(ESLINT_IGNORE) \
-	--report-unused-disable-directives
+ESLINT_TS_FLAGS ?= \
+	--ignore-path $(ESLINT_IGNORE)
 
 ifeq ($(AUTOFIX),true)
-	ESLINT_FLAGS += --fix
+	ESLINT_TS_FLAGS += --fix
 endif
 
 FIX_TYPE ?=
 ifneq ($(FIX_TYPE),)
-	ESLINT_FLAGS += --fix-type $(FIX_TYPE)
+	ESLINT_TS_FLAGS += --fix-type $(FIX_TYPE)
 endif
 
 # RULES #
@@ -75,13 +74,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -111,13 +110,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -144,13 +143,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
 	done
 else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
 	done
 endif
 

@@ -181,18 +181,6 @@ module.exports = {
 			'always'
 		],
 		'guard-for-in': 'error',
-		'id-denylist': [
-			'error',
-			'any',
-			'Number',
-			'number',
-			'String',
-			'string',
-			'Boolean',
-			'boolean',
-			'Undefined',
-			'undefined'
-		],
 		'id-match': 'error',
 		'import/no-default-export': 'off',
 		'import/no-deprecated': 'error',
@@ -345,7 +333,6 @@ module.exports = {
 		'no-unused-vars': 'off',
 		'no-use-before-define': 'off',
 		'no-useless-constructor': 'error',
-		'no-var': 'error',
 		'no-void': 'error',
 		'object-shorthand': [
 			'error',
@@ -375,7 +362,7 @@ module.exports = {
 		'radix': 'error',
 		'require-await': 'off',
 		'semi': 'off',
-		'space-before-function-paren': [
+		'@typescript-eslint/space-before-function-paren': [
 			'error',
 			{
 				'anonymous': 'always',
