@@ -49,7 +49,7 @@ import nditerRows = require( './index' );
 	nditerRows( ( x: number ): number => x, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a an object...
+// The compiler throws an error if the function is provided a second argument which is not an object...
 {
 	nditerRows( zeros( [ 2, 2 ] ), 'abc' ); // $ExpectError
 	nditerRows( zeros( [ 2, 2 ] ), 123 ); // $ExpectError
