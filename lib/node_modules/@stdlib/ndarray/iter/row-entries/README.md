@@ -92,7 +92,7 @@ var iter = nditerRowEntries( x, {
 });
 
 var v = iter.next().value;
-// returns [ [ 0, 0, null ], <ndarray> ]
+// returns [...]
 
 var row = ndarray2array( v[ 1 ] );
 // returns [ 1, 2 ]
