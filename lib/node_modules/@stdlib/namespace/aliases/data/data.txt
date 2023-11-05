@@ -2299,6 +2299,7 @@ nditer2arrayEach
 nditerColumns
 nditerEntries
 nditerIndices
+nditerMatrices
 nditerRows
 nditerValues
 ndslice

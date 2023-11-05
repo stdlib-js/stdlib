@@ -2299,6 +2299,7 @@
 "@stdlib/ndarray-iter-columns","@stdlib/ndarray/iter/columns"
 "@stdlib/ndarray-iter-entries","@stdlib/ndarray/iter/entries"
 "@stdlib/ndarray-iter-indices","@stdlib/ndarray/iter/indices"
+"@stdlib/ndarray-iter-matrices","@stdlib/ndarray/iter/matrices"
 "@stdlib/ndarray-iter-rows","@stdlib/ndarray/iter/rows"
 "@stdlib/ndarray-iter-values","@stdlib/ndarray/iter/values"
 "@stdlib/ndarray-slice","@stdlib/ndarray/slice"
