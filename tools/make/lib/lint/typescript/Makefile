@@ -32,17 +32,16 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/eslint.mk
 # -   This rule supports the environment variables supported by each context-specific (`lint-typescript-<context>`) prerequisite.
 # -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained TypeScript files.
 #
-# @param {string} [TYPESCRIPT_SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [TYPESCRIPT_TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {string} [TYPESCRIPT_DECLARATIONS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [TYPESCRIPT_EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [TYPESCRIPT_DECLARATIONS_TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-typescript
 #
 # @example
-# make lint-typescript TYPESCRIPT_SOURCES_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_TESTS_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_DECLARATIONS_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_EXAMPLES_FILTER=".*/blas/base/dasum/.*"
+# make lint-typescript SOURCES_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_DECLARATIONS_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_DECLARATIONS_TESTS_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-typescript: lint-typescript-src lint-typescript-declarations lint-typescript-declarations-tests
 
@@ -55,14 +54,14 @@ lint-typescript: lint-typescript-src lint-typescript-declarations lint-typescrip
 #
 # -   This rule is useful when wanting to glob for TypeScript source files (e.g., lint all TypeScript source files for a particular package).
 #
-# @param {string} [TYPESCRIPT_SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-typescript-src
 #
 # @example
-# make lint-typescript-src TYPESCRIPT_SOURCES_FILTER=".*/math/base/special/abs/.*"
+# make lint-typescript-src SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-typescript-src:
 ifeq ($(TYPESCRIPT_LINTER), eslint)
