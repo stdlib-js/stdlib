@@ -551,7 +551,7 @@ declare function zeros( shape: Shape | number, options?: Options ): float64ndarr
 * var dt = arr.dtype;
 * // returns 'float64'
 */
-declare function zeros( shape: Shape | number, options?: OptionsWithDType ): typedndarray<number>; unified-signatures
+declare function zeros( shape: Shape | number, options?: OptionsWithDType ): typedndarray<number>;
 
 
 // EXPORTS //
