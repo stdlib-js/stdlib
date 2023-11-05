@@ -66,7 +66,7 @@ lint-typescript: lint-typescript-src lint-typescript-tests lint-typescript-examp
 #/
 lint-typescript-src:
 ifeq ($(TYPESCRIPT_LINTER), eslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-src
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-ts-src
 endif
 
 .PHONY: lint-typescript-src

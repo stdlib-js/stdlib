@@ -159,7 +159,6 @@ module.exports = {
 		'@typescript-eslint/typedef': 'error',
 		'@typescript-eslint/unbound-method': 'error',
 		'@typescript-eslint/unified-signatures': 'error',
-		'arrow-body-style': 'error',
 		'arrow-parens': [
 			'error',
 			'always'
