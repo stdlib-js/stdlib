@@ -1,0 +1,48 @@
+
+{{alias}}( x[, options] )
+    Returns an iterator which iterates over each matrix in a stack of matrices.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    If an environment supports Symbol.iterator, the function explicitly does not
+    invoke an ndarray's `@@iterator` method, regardless of whether this method
+    is defined.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray for which to create the iterator.
+
+    options: Object (optional)
+        Options.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether returned ndarray views should be read-only.
+        If the input ndarray is read-only, setting this option to `false` raises
+        an exception. Default: true.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );
+    > var it = {{alias}}( x );
+    > var v = it.next().value;
+    > {{alias:@stdlib/ndarray/to-array}}( v )
+    [ [ 1, 2 ], [ 3, 4 ] ]
+
+    See Also
+    --------
+
