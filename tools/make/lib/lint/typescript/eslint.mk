@@ -71,13 +71,13 @@ endif
 #/
 eslint-ts-src: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
-	$(QUIET) $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) $(FIND_TYPESCRIPT_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
 	done
 else
-	$(QUIET) $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) $(FIND_TYPESCRIPT_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
@@ -87,11 +87,44 @@ endif
 .PHONY: eslint-ts-src
 
 #/
-# Lints TypeScript test files using [ESLint][1].
+# Lints TypeScript declaration files using [ESLint][1].
 #
 # ## Notes
 #
-# -   This rule is useful when wanting to glob for TypeScript test files (e.g., lint all TypeScript test files for a particular package).
+# -   This rule is useful when wanting to glob for TypeScript declaration files (e.g., lint all TypeScript declaration files for a particular package).
+#
+# [1]: https://eslint.org/
+#
+# @private
+# @param {string} [DECLARATIONS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make eslint-ts-declarations
+#
+# @example
+# make eslint-ts-declarations DECLARATIONS_FILTER=".*/math/base/special/abs/.*"
+eslint-ts-declarations: $(NODE_MODULES)
+ifeq ($(FAIL_FAST), true)
+	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
+	done
+else
+	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
+	done
+endif
+
+#/
+# Lints TypeScript declaration test files using [ESLint][1].
+#
+# ## Notes
+#
+# -   This rule is useful when wanting to glob for TypeScript declaration test files (e.g., lint all TypeScript declaration test files for a particular package).
 #
 # [1]: https://eslint.org/
 #
@@ -103,24 +136,21 @@ endif
 # make eslint-ts-tests
 #
 # @example
-# make eslint-ts-tests TESTS_FILTER=".*/math/base/special/abs/.*"
-#/
-eslint-ts-tests: $(NODE_MODULES)
+# make eslint-ts-declarations-tests TESTS_FILTER=".*/math/base/special/abs/.*"
+eslint-ts-declarations-tests: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
-	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
 	done
 else
-	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
 	done
 endif
-
-.PHONY: eslint-ts-tests
 
 #/
 # Lints a specified list of TypeScript files using [ESLint][1].
