@@ -2300,6 +2300,7 @@
 "@stdlib/ndarray/iter/entries",nditerEntries
 "@stdlib/ndarray/iter/indices",nditerIndices
 "@stdlib/ndarray/iter/matrices",nditerMatrices
+"@stdlib/ndarray/iter/row-entries",nditerRowEntries
 "@stdlib/ndarray/iter/rows",nditerRows
 "@stdlib/ndarray/iter/values",nditerValues
 "@stdlib/ndarray/slice",ndslice

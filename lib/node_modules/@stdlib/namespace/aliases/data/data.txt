@@ -2300,6 +2300,7 @@ nditerColumns
 nditerEntries
 nditerIndices
 nditerMatrices
+nditerRowEntries
 nditerRows
 nditerValues
 ndslice
