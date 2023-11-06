@@ -1656,7 +1656,7 @@ rules[ 'max-len' ] = [ 'error', {
 * @default [ 'error', 1000 ]
 * @see [max-lines]{@link https://eslint.org/docs/rules/max-lines}
 */
-rules[ 'max-lines' ] = [ 'error', 1000];
+rules[ 'max-lines' ] = [ 'error', 1000 ];
 
 /**
 * Enforces the use of parentheses when invoking a constructor with no arguments.
