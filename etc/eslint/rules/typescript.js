@@ -1626,7 +1626,7 @@ rules[ 'linebreak-style' ] = [ 'error', 'unix' ];
 * // Good...
 * class Baz {}
 */
-rules[ 'max-classes-per-file' ] = [ 'error', 1];
+rules[ 'max-classes-per-file' ] = [ 'error', 1 ];
 
 /**
 * Enforces a maximum line length.
