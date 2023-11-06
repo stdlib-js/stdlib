@@ -1615,7 +1615,7 @@ rules[ 'linebreak-style' ] = [ 'error', 'unix' ];
 * @name max-classes-per-file
 * @memberof rules
 * @type {Array}
-* @default [ 'error', 1]
+* @default [ 'error', 1 ]
 * @see [max-classes-per-file]{@link https://eslint.org/docs/rules/max-classes-per-file}
 *
 * @example
