@@ -215,7 +215,10 @@ rules[ '@typescript-eslint/explicit-function-return-type' ] = 'error';
 
 /**
 * Enforces explicit visibility declarations for class members.
-* 'no-public' option requires explicit visibility except for public members.
+*
+* ## Notes
+*
+* -   The 'no-public' option requires explicit visibility except for public members.
 *
 * @name explicit-member-accessibility
 * @memberof rules
@@ -320,30 +323,6 @@ rules[ '@typescript-eslint/member-delimiter-style' ] = [
 		}
 	}
 ];
-
-/**
-* Enforces member ordering.
-*
-* @name member-ordering
-* @memberof rules
-* @type {string}
-* @default 'error'
-* @see [member-ordering]{@link https://typescript-eslint.io/rules/member-ordering}
-*
-* @example
-* // Bad...
-* class BadExample {
-*   private doSomething() {}
-*   public doSomethingElse() {}
-* }
-*
-* // Good...
-* class GoodExample {
-*   public doSomethingElse() {}
-*   private doSomething() {}
-* }
-*/
-rules[ '@typescript-eslint/member-ordering' ] = 'error';
 
 /**
 * Enforces naming conventions for everything across a codebase.
@@ -1364,7 +1343,7 @@ rules[ 'guard-for-in' ] = 'error';
 rules[ 'id-match' ] = 'error';
 
 /**
-* Disallows default exports in modules.
+* Allow default exports in modules.
 *
 * @name import/no-default-export
 * @memberof rules
@@ -1570,18 +1549,11 @@ rules[ 'jsdoc/check-alignment' ] = 'off';
 rules[ 'jsdoc/check-indentation' ] = 'off';
 
 /**
-* Disables the JSDoc rule for requiring a newline after the description.
-*
-* @name jsdoc/newline-after-description
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [newline-after-description]{@link https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-newline-after-description}
-*/
-rules[ 'jsdoc/newline-after-description' ] = 'off';
-
-/**
 * Requires that JSDoc does not include types.
+*
+* ## Notes
+*
+* -   We enable this rule as the type information in TypeScript is included in the signatures and does not need to be duplicated in the JSDoc comment.
 *
 * @name jsdoc/no-types
 * @memberof rules
@@ -2281,15 +2253,15 @@ rules[ 'no-use-before-define' ] = 'off';
 rules[ 'no-useless-constructor' ] = 'error';
 
 /**
-* Disallows the use of the `void` operator.
+* Disables the rule against usage of the `void` operator.
 *
 * @name no-void
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [no-void]{@link https://eslint.org/docs/rules/no-void}
 */
-rules[ 'no-void' ] = 'error';
+rules[ 'no-void' ] = 'off';
 
 /**
 * Enforces the consistent use of object literal shorthand syntax where possible.
