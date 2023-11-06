@@ -24,12 +24,12 @@ import { Array2D } from '@stdlib/types/array';
 import { Shape2D } from '@stdlib/types/ndarray';
 
 /**
-* Ternary callback.
+* Quaternary callback.
 *
 * @param value - input value
 * @returns result
 */
-type Ternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;
+type Quaternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;
 
 /**
 * Applies a quaternary callback to elements in four two-dimensional nested input arrays and assigns results to elements in a two-dimensional nested output array.
@@ -63,7 +63,7 @@ type Ternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;
 * console.log( out );
 * // => [ [ 4.0, 4.0 ], [ 4.0, 4.0 ] ]
 */
-declare function quaternary2d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown>( arrays: [ Array2D<T>, Array2D<U>, Array2D<V>, Array2D<W>, Array2D<X> ], shape: Shape2D, fcn: Ternary<T, U, V, W, X> ): void;
+declare function quaternary2d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown>( arrays: [ Array2D<T>, Array2D<U>, Array2D<V>, Array2D<W>, Array2D<X> ], shape: Shape2D, fcn: Quaternary<T, U, V, W, X> ): void;
 
 
 // EXPORTS //

@@ -14,7 +14,7 @@
         Array shape.
 
     fcn: Function
-        Ternary callback.
+        Quaternary callback.
 
     Examples
     --------
