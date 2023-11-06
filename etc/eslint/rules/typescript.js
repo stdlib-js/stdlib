@@ -2065,7 +2065,7 @@ rules[ 'no-param-reassign' ] = 'off';
 * @name no-plusplus
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'allowForLoopAfterthoughts': true }]
+* @default [ 'error', { 'allowForLoopAfterthoughts': true } ]
 * @see [no-plusplus]{@link https://eslint.org/docs/rules/no-plusplus}
 *
 * @example
