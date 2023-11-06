@@ -1653,7 +1653,7 @@ rules[ 'max-len' ] = [ 'error', {
 * @name max-lines
 * @memberof rules
 * @type {Array}
-* @default [ 'error', 1000]
+* @default [ 'error', 1000 ]
 * @see [max-lines]{@link https://eslint.org/docs/rules/max-lines}
 */
 rules[ 'max-lines' ] = [ 'error', 1000];
