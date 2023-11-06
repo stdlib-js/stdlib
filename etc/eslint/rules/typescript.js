@@ -1975,7 +1975,7 @@ rules[ 'no-magic-numbers' ] = 'off';
 * @name no-multiple-empty-lines
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'max': 2 }]
+* @default [ 'error', { 'max': 2 } ]
 * @see [no-multiple-empty-lines]{@link https://eslint.org/docs/rules/no-multiple-empty-lines}
 *
 * @example
