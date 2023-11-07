@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# shellcheck disable=SC2181
+# shellcheck disable=SC2181,SC2016
 
 # Publishes a new version of the project to the npm package registry.
 #
@@ -227,7 +227,7 @@ update_package_meta_data() {
 	if [[ -n "$(git status --porcelain)" ]]; then
 		echo '' >&2
 		echo 'Committing changes...' >&2
-		git add -A && git commit -m 'Update directories meta data'
+		git add -A && git commit -m 'chore: update directories meta data'
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Error: unexpected error. Unable to commit changes.' >&2
@@ -279,7 +279,7 @@ update_namespace_tocs() {
 	if [[ -n "$(git status --porcelain)" ]]; then
 		echo '' >&2
 		echo 'Committing changes...' >&2
-		git add -A && git commit -m 'Update namespace ToCs'
+		git add -A && git commit -m 'docs: update namespace ToCs'
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Error: unexpected error. Unable to commit changes.' >&2
@@ -308,7 +308,7 @@ update_markdown_related() {
 	if [[ -n "$(git status --porcelain)" ]]; then
 		echo '' >&2
 		echo 'Committing changes...' >&2
-		git add -A && git commit -m 'Update related packages'
+		git add -A && git commit -m 'docs: update related packages'
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Error: unexpected error. Unable to commit changes.' >&2
@@ -337,7 +337,7 @@ update_markdown_package_urls() {
 	if [[ -n "$(git status --porcelain)" ]]; then
 		echo '' >&2
 		echo 'Committing changes...' >&2
-		git add -A && git commit -m 'Update package URLs'
+		git add -A && git commit -m 'docs: update package URLs'
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Error: unexpected error. Unable to commit changes.' >&2
@@ -366,7 +366,7 @@ update_repl_docs() {
 	if [[ -n "$(git status --porcelain)" ]]; then
 		echo '' >&2
 		echo 'Committing changes...' >&2
-		git add -A && git commit -m 'Update REPL docs'
+		git add -A && git commit -m 'docs: update REPL docs'
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Error: unexpected error. Unable to commit changes.' >&2
@@ -473,7 +473,7 @@ publish_bundles() {
 	if [[ -n "$(git status --porcelain)" ]]; then
 		echo '' >&2
 		echo 'Committing changes...' >&2
-		git add -A && git commit -m 'Update dist versions'
+		git add -A && git commit -m 'build: update dist versions'
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Error: unexpected error. Unable to commit changes.' >&2
