@@ -169,18 +169,20 @@ jobs:
         id: create-report
         run: |
           table="${{ steps.extract-coverage.outputs.table }}"
-
-          if [ "${{ github.event_name }}" == "pull_request" ]; then
-            compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"
-            compare_txt="The above coverage report was generated for the [changes in this PR]($compare_url)."
-          elif [ "${{ github.event_name }}" == "push" ]; then
-            compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.before }}...${{ github.event.after }}"
-            compare_txt="The above coverage report was generated for the [changes in this push]($compare_url)."
+          if [ -z "$table" ]; then
+            report="## Coverage Report\n\nNo coverage information available."
           else
-            compare_txt=""
+            if [ "${{ github.event_name }}" == "pull_request" ]; then
+              compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"
+              compare_txt="The above coverage report was generated for the [changes in this PR]($compare_url)."
+            elif [ "${{ github.event_name }}" == "push" ]; then
+              compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.before }}...${{ github.event.after }}"
+              compare_txt="The above coverage report was generated for the [changes in this push]($compare_url)."
+            else
+              compare_txt=""
+            fi
+            report="## Coverage Report\n\n${table}\n\n${compare_txt}"
           fi
-
-          report="## Coverage Report\n\n${table}\n\n${compare_txt}"
           echo "report=$report" >> $GITHUB_OUTPUT
 
       # Post report as comment to PR:
@@ -249,19 +251,23 @@ jobs:
       # Copy artifacts to the repository:
       - name: 'Copy artifacts to the repository'
         run: |
-          cp -R ./artifacts/* ./www-test-code-coverage
+          if [ -d "./artifacts" ]; then
+            cp -R ./artifacts/* ./www-test-code-coverage
 
-          # Get commit SHA and timestamp:
-          commit_sha=$(git rev-parse HEAD)
-          commit_timestamp=$(git show -s --format=%ci $commit_sha)
+            # Get commit SHA and timestamp:
+            commit_sha=$(git rev-parse HEAD)
+            commit_timestamp=$(git show -s --format=%ci $commit_sha)
 
-          # Append coverage to ndjson files:
-          files=$(find ./artifacts -name 'index.html')
-          for file in $files; do
-            file=${file//artifacts/www-test-code-coverage}
-            coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" $file | awk -F/ '{ if ($2 != 0) print $1 "," $2 "," ($1/$2)*100; else print $1 "," $2 ",100" }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
-            echo $coverage >> $(dirname $file)/coverage.ndjson
-          done
+            # Append coverage to ndjson files:
+            files=$(find ./artifacts -name 'index.html')
+            for file in $files; do
+              file=${file//artifacts/www-test-code-coverage}
+              coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" $file | awk -F/ '{ if ($2 != 0) print $1 "," $2 "," ($1/$2)*100; else print $1 "," $2 ",100" }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
+              echo $coverage >> $(dirname $file)/coverage.ndjson
+            done
+          else
+            echo "The artifacts directory does not exist."
+          fi
 
       # Commit and push changes:
       - name: 'Commit and push changes'
