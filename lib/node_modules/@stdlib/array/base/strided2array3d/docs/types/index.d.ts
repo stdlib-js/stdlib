@@ -39,7 +39,7 @@ import { Shape3D, Strides3D } from '@stdlib/types/ndarray';
 * @example
 * var x = [ 1, 2, 3, 4, 5, 6 ];
 *
-* var arr = strided2array3d( x, [ 1, 3, 2 ], [ 4, 2, 1 ], 0 );
+* var arr = strided2array3d( x, [ 1, 3, 2 ], [ 6, 2, 1 ], 0 );
 * // returns [ [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ] ]
 *
 * @example
