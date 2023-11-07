@@ -430,7 +430,7 @@ update_internal_dependencies() {
 	for dependency in ${dependencies}; do
 		pkgVersion="$(npm view "${dependency}" version)"
 		echo "Updating ${dependency} to ${pkgVersion} in ${package_json}..." >&2
-		echo "s/\"${dependency}\":[^,]*/\"${dependency}\": \"${pkgVersion}\"/"	>&2
+		echo "s%\"${dependency}\":[^,]*%\"${dependency}\": \"${pkgVersion}\"%"	>&2
 		if [[ "$OSTYPE" == "darwin"* ]]; then
 			sed -i '' "s%\"${dependency}\":[^,]*%\"${dependency}\": \"${pkgVersion}\"%" "${package_json}"
 		else
