@@ -2492,6 +2492,24 @@ rules[ 'use-isnan' ] = 'error';
 */
 rules[ 'yoda' ] = 'error';
 
+/**
+* Enforces that types indicated in special comments match the types of code values.
+*
+* @name expect-type
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [expect-type]{@link https://github.com/JoshuaKGoldberg/eslint-plugin-expect-type/blob/main/docs/rules/expect.md}
+*
+* @example
+* // Bad...
+* const str = 'abc'; // $ExpectType number
+*
+* // Good...
+* const val = 9001; // $ExpectType number
+*/
+rules['expect-type/expect'] = 'error';
+
 
 // EXPORTS //
 

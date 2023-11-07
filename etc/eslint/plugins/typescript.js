@@ -20,6 +20,7 @@
 
 // ESLint plugins for TypeScript:
 var plugins = [
+	'eslint-plugin-expect-type',
 	'eslint-plugin-prefer-arrow',
 	'eslint-plugin-import',
 	'eslint-plugin-no-null',
