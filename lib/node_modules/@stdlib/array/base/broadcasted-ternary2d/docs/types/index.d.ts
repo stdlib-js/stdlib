@@ -32,6 +32,46 @@ import { Shape1D, Shape2D } from '@stdlib/types/ndarray';
 type Ternary<T, U, V, W> = ( v1: T, v2: U, v3: V ) => W;
 
 /**
+* Input array.
+*/
+type InputArray<T> = Array1D<T> | Array2D<T>;
+
+/**
+* Input array shape.
+*/
+type InputArrayShape = Shape1D | Shape2D;
+
+/**
+* Output array.
+*/
+type OutputArray<T> = Array2D<T>;
+
+/**
+* Output array shape.
+*/
+type OutputArrayShape = Shape2D;
+
+/**
+* Input and output arrays.
+*/
+type InOutArrays<T, U, V, W> = [
+	InputArray<T>,
+	InputArray<U>,
+	InputArray<V>,
+	OutputArray<W>
+];
+
+/**
+* Input and output array shapes.
+*/
+type InOutShapes = [
+	InputArrayShape,
+	InputArrayShape,
+	InputArrayShape,
+	OutputArrayShape
+];
+
+/**
 * Applies a ternary callback to elements in three broadcasted input arrays and assigns results to elements in a two-dimensional nested output array.
 *
 * ## Notes
@@ -67,7 +107,7 @@ type Ternary<T, U, V, W> = ( v1: T, v2: U, v3: V ) => W;
 * console.log( out );
 * // => [ [ 3.0, 6.0 ], [ 9.0, 12.0 ] ]
 */
-declare function bternary2d<T = unknown, U = unknown, V = unknown, W = unknown>( arrays: [ Array1D<T> | Array2D<T>, Array1D<U> | Array2D<U>, Array1D<V> | Array2D<V>, Array2D<W> ], shapes: [ Shape1D | Shape2D, Shape1D | Shape2D, Shape1D | Shape2D, Shape2D ], fcn: Ternary<T, U, V, W> ): void;
+declare function bternary2d<T = unknown, U = unknown, V = unknown, W = unknown>( arrays: InOutArrays<T, U, V, W>, shapes: InOutShapes, fcn: Ternary<T, U, V, W> ): void;
 
 
 // EXPORTS //

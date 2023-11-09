@@ -32,6 +32,48 @@ import { Shape1D, Shape2D } from '@stdlib/types/ndarray';
 type Quaternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;
 
 /**
+* Input array.
+*/
+type InputArray<T> = Array1D<T> | Array2D<T>;
+
+/**
+* Input array shape.
+*/
+type InputArrayShape = Shape1D | Shape2D;
+
+/**
+* Output array.
+*/
+type OutputArray<T> = Array2D<T>;
+
+/**
+* Output array shape.
+*/
+type OutputArrayShape = Shape2D;
+
+/**
+* Input and output arrays.
+*/
+type InOutArrays<T, U, V, W, X> = [
+	InputArray<T>,
+	InputArray<U>,
+	InputArray<V>,
+	InputArray<W>,
+	OutputArray<X>
+];
+
+/**
+* Input and output array shapes.
+*/
+type InOutShapes = [
+	InputArrayShape,
+	InputArrayShape,
+	InputArrayShape,
+	InputArrayShape,
+	OutputArrayShape
+];
+
+/**
 * Applies a quaternary callback to elements in four broadcasted input arrays and assigns results to elements in a two-dimensional nested output array.
 *
 * ## Notes
@@ -69,7 +111,7 @@ type Quaternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;
 * console.log( out );
 * // => [ [ 4.0, 8.0 ], [ 12.0, 16.0 ] ]
 */
-declare function bquaternary2d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown>( arrays: [ Array1D<T> | Array2D<T>, Array1D<U> | Array2D<U>, Array1D<V> | Array2D<V>, Array1D<W> | Array2D<W>, Array2D<X> ], shapes: [ Shape1D | Shape2D, Shape1D | Shape2D, Shape1D | Shape2D, Shape1D | Shape2D, Shape2D ], fcn: Quaternary<T, U, V, W, X> ): void;
+declare function bquaternary2d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown>( arrays: InOutArrays<T, U, V, W, X>, shapes: InOutShapes, fcn: Quaternary<T, U, V, W, X> ): void;
 
 
 // EXPORTS //

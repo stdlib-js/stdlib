@@ -32,6 +32,42 @@ import { Shape1D, Shape2D } from '@stdlib/types/ndarray';
 type Unary<T, U> = ( value: T ) => U;
 
 /**
+* Input array.
+*/
+type InputArray<T> = Array1D<T> | Array2D<T>;
+
+/**
+* Input array shape.
+*/
+type InputArrayShape = Shape1D | Shape2D;
+
+/**
+* Output array.
+*/
+type OutputArray<T> = Array2D<T>;
+
+/**
+* Output array shape.
+*/
+type OutputArrayShape = Shape2D;
+
+/**
+* Input and output arrays.
+*/
+type InOutArrays<T, U> = [
+	InputArray<T>,
+	OutputArray<U>
+];
+
+/**
+* Input and output array shapes.
+*/
+type InOutShapes = [
+	InputArrayShape,
+	OutputArrayShape
+];
+
+/**
 * Applies a unary callback to elements in a broadcasted nested input array and assigns results to elements in a two-dimensional nested output array.
 *
 * ## Notes
@@ -63,7 +99,7 @@ type Unary<T, U> = ( value: T ) => U;
 * console.log( y );
 * // => [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
 */
-declare function bunary2d<T = unknown, U = unknown>( arrays: [ Array1D<T> | Array2D<T>, Array2D<U> ], shapes: [ Shape1D | Shape2D, Shape2D ], fcn: Unary<T, U> ): void;
+declare function bunary2d<T = unknown, U = unknown>( arrays: InOutArrays<T, U>, shapes: InOutShapes, fcn: Unary<T, U> ): void;
 
 
 // EXPORTS //

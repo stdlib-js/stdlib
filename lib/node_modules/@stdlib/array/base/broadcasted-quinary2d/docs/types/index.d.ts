@@ -32,27 +32,47 @@ import { Shape1D, Shape2D } from '@stdlib/types/ndarray';
 type Quinary<T, U, V, W, X, Y> = ( v1: T, v2: U, v3: V, v4: W, v5: X ) => Y;
 
 /**
-* List of input and output arrays.
+* Input array.
+*/
+type InputArray<T> = Array1D<T> | Array2D<T>;
+
+/**
+* Input array shape.
+*/
+type InputArrayShape = Shape1D | Shape2D;
+
+/**
+* Output array.
+*/
+type OutputArray<T> = Array2D<T>;
+
+/**
+* Output array shape.
+*/
+type OutputArrayShape = Shape2D;
+
+/**
+* Input and output arrays.
 */
 type InOutArrays<T, U, V, W, X, Y> = [
-	Array1D<T> | Array2D<T>,
-	Array1D<U> | Array2D<U>,
-	Array1D<V> | Array2D<V>,
-	Array1D<W> | Array2D<W>,
-	Array1D<X> | Array2D<X>,
-	Array2D<Y>
+	InputArray<T>,
+	InputArray<U>,
+	InputArray<V>,
+	InputArray<W>,
+	InputArray<X>,
+	OutputArray<Y>
 ];
 
 /**
-* List of input and output array shapes.
+* Input and output array shapes.
 */
 type InOutShapes = [
-	Shape1D | Shape2D,
-	Shape1D | Shape2D,
-	Shape1D | Shape2D,
-	Shape1D | Shape2D,
-	Shape1D | Shape2D,
-	Shape2D
+	InputArrayShape,
+	InputArrayShape,
+	InputArrayShape,
+	InputArrayShape,
+	InputArrayShape,
+	OutputArrayShape
 ];
 
 /**

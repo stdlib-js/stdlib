@@ -32,6 +32,44 @@ import { Shape1D, Shape2D } from '@stdlib/types/ndarray';
 type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 
 /**
+* Input array.
+*/
+type InputArray<T> = Array1D<T> | Array2D<T>;
+
+/**
+* Input array shape.
+*/
+type InputArrayShape = Shape1D | Shape2D;
+
+/**
+* Output array.
+*/
+type OutputArray<T> = Array2D<T>;
+
+/**
+* Output array shape.
+*/
+type OutputArrayShape = Shape2D;
+
+/**
+* Input and output arrays.
+*/
+type InOutArrays<T, U, V> = [
+	InputArray<T>,
+	InputArray<U>,
+	OutputArray<V>
+];
+
+/**
+* Input and output array shapes.
+*/
+type InOutShapes = [
+	InputArrayShape,
+	InputArrayShape,
+	OutputArrayShape
+];
+
+/**
 * Applies a binary callback to elements in two broadcasted input arrays and assigns results to elements in a two-dimensional nested output array.
 *
 * ## Notes
@@ -62,7 +100,7 @@ type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 * console.log( z );
 * // => [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ]
 */
-declare function bbinary2d<T = unknown, U = unknown, V = unknown>( arrays: [ Array1D<T> | Array2D<T>, Array1D<U> | Array2D<U>, Array2D<V> ], shapes: [ Shape1D | Shape2D, Shape1D | Shape2D, Shape2D ], fcn: Binary<T, U, V> ): void;
+declare function bbinary2d<T = unknown, U = unknown, V = unknown>( arrays: InOutArrays<T, U, V>, shapes: InOutShapes, fcn: Binary<T, U, V> ): void;
 
 
 // EXPORTS //

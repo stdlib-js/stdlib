@@ -52,6 +52,22 @@ type OutputArray<T> = Array4D<T>;
 type OutputArrayShape = Shape4D;
 
 /**
+* Input and output arrays.
+*/
+type InOutArrays<T, U> = [
+	InputArray<T>,
+	OutputArray<U>
+];
+
+/**
+* Input and output array shapes.
+*/
+type InOutShapes = [
+	InputArrayShape,
+	OutputArrayShape
+];
+
+/**
 * Applies a unary callback to elements in a broadcasted nested input array and assigns results to elements in a four-dimensional nested output array.
 *
 * ## Notes
@@ -83,7 +99,7 @@ type OutputArrayShape = Shape4D;
 * console.log( y );
 * // => [ [ [ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ] ] ]
 */
-declare function bunary4d<T = unknown, U = unknown>( arrays: [ InputArray<T>, OutputArray<U> ], shapes: [ InputArrayShape, OutputArrayShape ], fcn: Unary<T, U> ): void;
+declare function bunary4d<T = unknown, U = unknown>( arrays: InOutArrays<T, U>, shapes: InOutShapes, fcn: Unary<T, U> ): void;
 
 
 // EXPORTS //

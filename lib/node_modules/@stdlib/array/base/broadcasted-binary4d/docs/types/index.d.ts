@@ -52,6 +52,24 @@ type OutputArray<T> = Array4D<T>;
 type OutputArrayShape = Shape4D;
 
 /**
+* Input and output arrays.
+*/
+type InOutArrays<T, U, V> = [
+	InputArray<T>,
+	InputArray<U>,
+	OutputArray<V>
+];
+
+/**
+* Input and output array shapes.
+*/
+type InOutShapes = [
+	InputArrayShape,
+	InputArrayShape,
+	OutputArrayShape
+];
+
+/**
 * Applies a binary callback to elements in two broadcasted input arrays and assigns results to elements in a four-dimensional nested output array.
 *
 * ## Notes
@@ -82,7 +100,7 @@ type OutputArrayShape = Shape4D;
 * console.log( z );
 * // => [ [ [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ],  [ [ 2.0, 2.0 ], [ 2.0, 2.0 ] ] ] ]
 */
-declare function bbinary4d<T = unknown, U = unknown, V = unknown>( arrays: [ InputArray<T>, InputArray<U>, OutputArray<V> ], shapes: [ InputArrayShape, InputArrayShape, OutputArrayShape ], fcn: Binary<T, U, V> ): void;
+declare function bbinary4d<T = unknown, U = unknown, V = unknown>( arrays: InOutArrays<T, U, V>, shapes: InOutShapes, fcn: Binary<T, U, V> ): void;
 
 
 // EXPORTS //
