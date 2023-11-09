@@ -179,6 +179,8 @@ false
 
 [whitespace]: https://en.wikipedia.org/wiki/Whitespace_character
 
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
 [mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 <!-- <related-links> -->
