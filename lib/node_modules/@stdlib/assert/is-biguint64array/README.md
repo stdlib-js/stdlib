@@ -120,7 +120,7 @@ bool = isBigUint64Array( null );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/is-bigint64array`][@stdlib/assert/is-bigint64array]</span><span class="delimiter">: </span><span class="description">test if a value is a BigUint64Array.</span>
+-   <span class="package-name">[`@stdlib/assert/is-bigint64array`][@stdlib/assert/is-bigint64array]</span><span class="delimiter">: </span><span class="description">test if a value is a BigInt64Array.</span>
 
 </section>
 
