@@ -225,12 +225,12 @@ var opts = {
     'flush': flush
 };
 
-var TransformStream = transformStream.ctor( opts );
+var MyStream = transformStream.ctor( opts );
 
-var bool = ( TransformStream.prototype._transform === transform );
+var bool = ( MyStream.prototype._transform === transform );
 // returns true
 
-bool = ( TransformStream.prototype._flush === flush );
+bool = ( MyStream.prototype._flush === flush );
 // returns true
 ```
 
