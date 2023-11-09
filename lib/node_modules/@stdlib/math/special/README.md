@@ -43,23 +43,17 @@ var o = ns;
 
 <!-- <toc pattern="+(*log*|ln|exp*|*pow*)" ignore="logit" > -->
 
-
-
 <!-- </toc> -->
 
 ### Trigonometric Functions
 
 <!-- <toc pattern="*+(sin|cos|tan)*" ignore="+(kernel-sin|kernel-cos|kernel-tan)"> -->
 
-
-
 <!-- </toc> -->
 
 ### Bessel Functions
 
 <!-- <toc pattern="*bessel*" > -->
-
-
 
 <!-- </toc> -->
 
@@ -78,8 +72,6 @@ var o = ns;
 ### Other Special Functions
 
 <!-- <toc ignore="*bessel*" ignore="*+(sin|cos|tan)*" ignore="+(*log*|ln|exp*|*pow*)" ignore="*+(abs|ceil|floor|clamp|trunc|round|signum)*" ignore="+(gamma-delta-ratio|gamma-lanczos-sum*|rempio2|kernel-*)" > -->
-
-
 
 <!-- </toc> -->
 
