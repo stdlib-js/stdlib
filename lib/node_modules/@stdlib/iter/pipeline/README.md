@@ -119,7 +119,7 @@ bool = p( arr );
 
 ## Examples
 
-<!-- eslint-disable function-paren-newline -->
+<!-- eslint-disable function-call-argument-newline, function-paren-newline -->
 
 <!-- eslint no-undef: "error" -->
 
