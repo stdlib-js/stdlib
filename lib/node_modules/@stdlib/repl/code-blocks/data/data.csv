@@ -3692,6 +3692,7 @@ nditerColumns,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerColumns(
 nditerEntries,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerEntries( x );\nvar v = it.next().value\nv = it.next().value\n"
 nditerIndices,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerIndices( x.shape );\nvar v = it.next().value\nv = it.next().value\n"
 nditerMatrices,"var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );\nvar it = nditerMatrices( x );\nvar v = it.next().value;\nndarray2array( v )\n"
+nditerMatrixEntries,"var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );\nvar it = nditerMatrixEntries( x );\nvar v = it.next().value;\nv[ 0 ]\nndarray2array( v[ 1 ] )\n"
 nditerRowEntries,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerRowEntries( x );\nvar v = it.next().value;\nv[ 0 ]\nndarray2array( v[ 1 ] )\nv = it.next().value;\nv[ 0 ]\nndarray2array( v[ 1 ] )\n"
 nditerRows,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerRows( x );\nvar v = it.next().value;\nndarray2array( v )\nv = it.next().value;\nndarray2array( v )\n"
 nditerValues,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerValues( x );\nvar v = it.next().value\nv = it.next().value\n"

@@ -611,6 +611,7 @@ base.dists.weibull.stdev
 base.dists.weibull.variance
 base.dists.weibull.Weibull
 base.ellipe
+base.ellipj
 base.ellipk
 base.epsdiff
 base.erf

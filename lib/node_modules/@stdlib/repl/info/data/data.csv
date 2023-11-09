@@ -3692,6 +3692,7 @@ nditerColumns,"\nnditerColumns( x:ndarray[, options:Object] )\n    Returns an it
 nditerEntries,"\nnditerEntries( x:ndarray[, options:Object] )\n    Returns an iterator which returns [index, value] pairs for each element in a\n    provided ndarray.\n"
 nditerIndices,"\nnditerIndices( shape:Array<integer>[, options:Object] )\n    Returns an iterator which returns indices for use indexing into an ndarray\n    having a specified shape.\n"
 nditerMatrices,"\nnditerMatrices( x:ndarray[, options:Object] )\n    Returns an iterator which iterates over each matrix in a stack of matrices.\n"
+nditerMatrixEntries,"\nnditerMatrixEntries( x:ndarray[, options:Object] )\n    Returns an iterator which returns [index, matrix] pairs for each matrix in a\n    stack of matrices.\n"
 nditerRowEntries,"\nnditerRowEntries( x:ndarray[, options:Object] )\n    Returns an iterator which returns [index, row] pairs for each row in a\n    matrix (or stack of matrices).\n"
 nditerRows,"\nnditerRows( x:ndarray[, options:Object] )\n    Returns an iterator which iterates over each row in a matrix (or stack of\n    matrices).\n"
 nditerValues,"\nnditerValues( x:ndarray[, options:Object] )\n    Returns an iterator which returns individual elements from a provided\n    ndarray.\n"

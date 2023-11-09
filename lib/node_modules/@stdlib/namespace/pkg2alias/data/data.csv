@@ -611,6 +611,7 @@
 "@stdlib/stats/base/dists/weibull/variance",base.dists.weibull.variance
 "@stdlib/stats/base/dists/weibull/ctor",base.dists.weibull.Weibull
 "@stdlib/math/base/special/ellipe",base.ellipe
+"@stdlib/math/base/special/ellipj",base.ellipj
 "@stdlib/math/base/special/ellipk",base.ellipk
 "@stdlib/math/base/utils/float64-epsilon-difference",base.epsdiff
 "@stdlib/math/base/special/erf",base.erf
