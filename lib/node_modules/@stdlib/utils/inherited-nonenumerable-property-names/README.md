@@ -36,6 +36,8 @@ var inheritedNonEnumerablePropertyNames = require( '@stdlib/utils/inherited-none
 
 Returns an `array` of an object's inherited non-enumerable property names.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var defineProperty = require( '@stdlib/utils/define-property' );
 
@@ -57,6 +59,8 @@ var keys = inheritedNonEnumerablePropertyNames( f );
 ```
 
 By default, the function walks an object's entire prototype chain. To limit the inheritance level, provide a `level` argument.
+
+<!-- eslint-disable id-length -->
 
 ```javascript
 var defineProperty = require( '@stdlib/utils/define-property' );
