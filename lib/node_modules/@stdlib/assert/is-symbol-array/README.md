@@ -49,6 +49,7 @@ bool = isSymbolArray( [ 'beep', 'boop' ] );
 Tests if a `value` is an array-like object containing only [`symbol`][mdn-symbol] primitives.
 
 ```javascript
+var Object = require( '@stdlib/object/ctor' );
 var Symbol = require( '@stdlib/symbol/ctor' );
 
 var bool = isSymbolArray.primitives( [ Symbol( 'beep' ), Symbol( 'boop' ) ] );
@@ -63,6 +64,7 @@ bool = isSymbolArray.primitives( [ Symbol( 'beep' ), Object( Symbol( 'boop' ) ) 
 Tests if a `value` is an array-like object containing only [`Symbol`][mdn-symbol] objects.
 
 ```javascript
+var Object = require( '@stdlib/object/ctor' );
 var Symbol = require( '@stdlib/symbol/ctor' );
 
 var bool = isSymbolArray.objects( [ Object( Symbol( 'beep' ) ), Object( Symbol( 'boop' ) ) ] );
