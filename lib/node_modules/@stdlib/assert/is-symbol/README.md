@@ -35,6 +35,7 @@ var isSymbol = require( '@stdlib/assert/is-symbol' );
 Tests if a value is a [symbol][mdn-symbol].
 
 ```javascript
+var Object = require( '@stdlib/object/ctor' );
 var Symbol = require( '@stdlib/symbol/ctor' );
 
 var bool = isSymbol( Symbol( 'beep' ) );
@@ -49,6 +50,7 @@ bool = isSymbol( Object( Symbol( 'beep' ) ) );
 Tests if a `value` is a primitive [symbol][mdn-symbol].
 
 ```javascript
+var Object = require( '@stdlib/object/ctor' );
 var Symbol = require( '@stdlib/symbol/ctor' );
 
 var bool = isSymbol.isPrimitive( Symbol( 'beep' ) );
@@ -63,6 +65,7 @@ bool = isSymbol.isPrimitive( Object( Symbol( 'boop' ) ) );
 Tests if a `value` is a [`Symbol`][mdn-symbol] object.
 
 ```javascript
+var Object = require( '@stdlib/object/ctor' );
 var Symbol = require( '@stdlib/symbol/ctor' );
 
 var bool = isSymbol.isObject( Symbol( 'beep' ) );
