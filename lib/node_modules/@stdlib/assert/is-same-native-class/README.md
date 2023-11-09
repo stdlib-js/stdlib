@@ -56,9 +56,12 @@ bool = isSameNativeClass( [], {} );
 
 ## Examples
 
+<!-- eslint-disable no-new-wrappers -->
+
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var Number = require( '@stdlib/number/ctor' );
 var isSameNativeClass = require( '@stdlib/assert/is-same-native-class' );
 
 var bool = isSameNativeClass( 3.14, new Number( 3.14 ) );
