@@ -36,6 +36,8 @@ var enumerablePropertySymbolsIn = require( '@stdlib/utils/enumerable-property-sy
 
 Returns an `array` of an object's own and inherited enumerable symbol properties.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );
