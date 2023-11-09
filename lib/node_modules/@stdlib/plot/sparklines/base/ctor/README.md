@@ -114,7 +114,7 @@ sparkline.data = new Float32Array( [ 3.14, 5.0, -3.14, -1.0 ] );
 
 // Get:
 var data = sparkline.data;
-// returns [ 3.14, 5.0, -3.14, -1.0 ]
+// returns [ ~3.14, 5.0, ~-3.14, -1.0 ]
 ```
 
 Note that data is **copied** to an internal data buffer.
@@ -370,7 +370,7 @@ console.log( chart.render() );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/plot`][@stdlib/plot]</span><span class="delimiter">: </span><span class="description">standard library plotting.</span>
+-   <span class="package-name">[`@stdlib/plot`][@stdlib/plot]</span><span class="delimiter">: </span><span class="description">plotting.</span>
 -   <span class="package-name">[`@stdlib/plot/ctor`][@stdlib/plot/ctor]</span><span class="delimiter">: </span><span class="description">2-dimensional plot constructor.</span>
 -   <span class="package-name">[`@stdlib/plot/sparklines/unicode/column`][@stdlib/plot/sparklines/unicode/column]</span><span class="delimiter">: </span><span class="description">create a Unicode sparkline column chart.</span>
 -   <span class="package-name">[`@stdlib/plot/sparklines/unicode/line`][@stdlib/plot/sparklines/unicode/line]</span><span class="delimiter">: </span><span class="description">create a Unicode sparkline line chart.</span>

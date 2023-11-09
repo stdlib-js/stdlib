@@ -180,7 +180,6 @@ To generate a particular plot view without updating the [`viewer`](#prop-viewer)
 ```javascript
 var plot = new Plot();
 plot.view( 'stdout' );
-// => '{...}'
 ```
 
 * * *
@@ -1476,7 +1475,7 @@ function onRender( html ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/plot`][@stdlib/plot]</span><span class="delimiter">: </span><span class="description">standard library plotting.</span>
+-   <span class="package-name">[`@stdlib/plot`][@stdlib/plot]</span><span class="delimiter">: </span><span class="description">plotting.</span>
 
 </section>
 
