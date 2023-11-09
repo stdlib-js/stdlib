@@ -39,6 +39,12 @@ REMARK_RELATED_FLAGS ?= \
 # Define the remark output option:
 REMARK_RELATED_OUTPUT_FLAG ?= --output
 
+# Define a temporary file for writing a list of files to be processed:
+REMARK_RELATED_TMP_FILE_LIST ?= $(TMP_DIR)/remark_related_tmp_file_list.txt
+
+# Define a temporary file for writing a list of files which have been processed:
+REMARK_RELATED_TMP_FILE_LIST_PROGRESS ?= $(TMP_DIR)/remark_related_tmp_file_list_progress.txt
+
 
 # RULES #
 
@@ -59,8 +65,8 @@ REMARK_RELATED_OUTPUT_FLAG ?= --output
 # @example
 # make markdown-related MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 #/
-markdown-related: $(NODE_MODULES)
-	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+markdown-related: $(NODE_MODULES) clean-markdown-related markdown-related-init
+	$(QUIET) $(FIND_MARKDOWN_CMD) | tee $(REMARK_RELATED_TMP_FILE_LIST) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Processing file: $$file"; \
 		"$(REMARK)" \
@@ -68,6 +74,7 @@ markdown-related: $(NODE_MODULES)
 			$(REMARK_RELATED_FLAGS) \
 			$(REMARK_RELATED_PLUGIN_FLAGS) \
 			$(REMARK_RELATED_OUTPUT_FLAG) || exit 1; \
+		echo "$$file" >> $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS); \
 	done
 
 .PHONY: markdown-related
@@ -97,3 +104,45 @@ markdown-related-files: $(NODE_MODULES)
 	done
 
 .PHONY: markdown-related-files
+
+#/
+# Resumes processing for updating the related packages section of Markdown files.
+#
+# @example
+# make markdown-related-resume
+#/
+markdown-related-resume: $(NODE_MODULES) $(REMARK_RELATED_TMP_FILE_LIST) $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS)
+	$(QUIET) $(UNIQUE_LINES) $(REMARK_RELATED_TMP_FILE_LIST) $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		"$(REMARK)" \
+			$$file \
+			$(REMARK_RELATED_FLAGS) \
+			$(REMARK_RELATED_PLUGIN_FLAGS) \
+			$(REMARK_RELATED_OUTPUT_FLAG) || exit 1; \
+		echo "$$file" >> $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS); \
+	done
+
+#/
+# Performs initialization tasks associated with processing Markdown files.
+#
+# @example
+# make markdown-related-init
+#/
+markdown-related-init:
+	$(QUIET) $(MKDIR_RECURSIVE) $(TMP_DIR)
+	$(QUIET) $(TOUCH) $(REMARK_RELATED_TMP_FILE_LIST)
+	$(QUIET) $(TOUCH) $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS)
+
+.PHONY: markdown-related-init
+
+#/
+# Runs clean-up tasks associated with processing Markdown files.
+#
+# @example
+# make clean-markdown-related
+#/
+clean-markdown-related:
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS)
+
+.PHONY: clean-markdown-related

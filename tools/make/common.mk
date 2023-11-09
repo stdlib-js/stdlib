@@ -171,6 +171,12 @@ MAKE_EXECUTABLE ?= chmod +x
 # Define the command for recursively creating directories (WARNING: portability issues on some systems!):
 MKDIR_RECURSIVE ?= mkdir -p
 
+# Define a command for creating a file:
+TOUCH ?= touch
+
+# Define a command for selecting lines which are unique to a file when compared to another file:
+UNIQUE_LINES ?= comm -23
+
 # Define the command for extracting tarfiles:
 TAR ?= tar
 
