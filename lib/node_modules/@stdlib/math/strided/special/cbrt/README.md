@@ -176,7 +176,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 -   <span class="package-name">[`@stdlib/math/strided/special/dcbrt`][@stdlib/math/strided/special/dcbrt]</span><span class="delimiter">: </span><span class="description">compute the cube root of each element in a double-precision floating-point strided array.</span>
 -   <span class="package-name">[`@stdlib/math/strided/special/scbrt`][@stdlib/math/strided/special/scbrt]</span><span class="delimiter">: </span><span class="description">compute the cube root of each element in a single-precision floating-point strided array.</span>
--   <span class="package-name">[`@stdlib/math/strided/special/sqrt`][@stdlib/math/strided/special/sqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root of each element in a strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/sqrt`][@stdlib/math/strided/special/sqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root for each element in a strided array.</span>
 
 </section>
 
