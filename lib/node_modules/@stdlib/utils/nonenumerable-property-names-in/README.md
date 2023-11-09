@@ -36,6 +36,8 @@ var nonEnumerablePropertyNamesIn = require( '@stdlib/utils/nonenumerable-propert
 
 Returns an `array` of an object's own and inherited non-enumerable property names.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var defineProperty = require( '@stdlib/utils/define-property' );
 
