@@ -212,7 +212,6 @@ The function accepts the following arguments:
 -   **frac**: `[out] double*` destination for the normalized fraction.
 -   **exp**: `[out] int32_t*` destination for the integer power of two.
 
-
 ```c
 void stdlib_base_frexp( const double x, double *frac, int32_t *exp );
 ```
