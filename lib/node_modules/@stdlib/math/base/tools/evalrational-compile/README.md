@@ -67,7 +67,6 @@ In the example above, the output `string` would correspond to the following modu
 *
 * [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
 *
-*
 * @private
 * @param {number} x - value at which to evaluate the rational function
 * @returns {number} evaluated rational function
