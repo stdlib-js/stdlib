@@ -36,6 +36,8 @@ var hasSharedArrayBufferSupport = require( '@stdlib/assert/has-sharedarraybuffer
 
 Detects if a runtime environment supports [`SharedArrayBuffer`][mdn-sharedarraybuffer].
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var bool = hasSharedArrayBufferSupport();
 // returns <boolean>
