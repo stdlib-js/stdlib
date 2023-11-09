@@ -86,7 +86,7 @@ The constructor accepts the following `options`:
 -   **onClose**: callback to be invoked upon closing the parser. If a parser has partially processed a record upon close, the callback is invoked with the following arguments:
 
     -   **value**: unparsed partially processed **field** text.
-    
+
     Otherwise, the callback is invoked without any arguments.
 
 -   **onColumn**: callback to be invoked upon processing a field. The callback is invoked with the following arguments:
@@ -111,7 +111,7 @@ The constructor accepts the following `options`:
     -   **row**: row number (zero-based).
     -   **ncols**: number of fields (columns).
     -   **line**: line number (zero-based).
-    
+
     If a parser is closed **before** fully processing the last record, the callback is invoked with field data for all fields which have been parsed. Any remaining field data is provided to the `onClose` callback. For example, if a parser has processed two fields and closes while attempting to process a third field, the parser invokes the `onRow` callback with field data for the first two fields and invokes the `onClose` callback with the partially processed data for the third field.
 
 -   **onSkip**: callback to be invoked upon processing a skipped line. The callback is invoked with the following arguments:
@@ -139,7 +139,7 @@ The constructor accepts the following `options`:
 
     -   **nrows**: number of processed rows (equivalent to the current row number).
     -   **line**: line number (zero-based).
-    
+
     If the callback returns a truthy value, the parser skips the row; otherwise, the parser attempts to process the row.
 
     Note, however, that, even if the callback returns a falsy value, a row may still be skipped depending on the presence of a `skip` character sequence.
