@@ -60,7 +60,7 @@ var arr = incrspace( 0, 11, 2 );
 
     ```javascript
     var roundn = require( '@stdlib/math/base/special/roundn' );
-    
+
     // Create an array subject to floating-point errors:
     var arr = incrspace( 0, 1.01, 0.02 );
 
