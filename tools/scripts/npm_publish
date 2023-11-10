@@ -430,7 +430,7 @@ update_namespace_dependency_versions() {
 	echo "${dependencies}" >&2
 	echo '' >&2
 
-	# Convert the newline-delimited output to a bash array:
+	# Convert the newline-delimited output to a bash array: FIXME: this is not best practice. We should use a `while` loop below.
 	dependencies=( $(echo "${dependencies}" | tr '\n' ' ') )
 
 	echo 'Setting versions to latest versions...' >&2
