@@ -772,10 +772,12 @@ rules[ '@typescript-eslint/no-use-before-define' ] = 'error';
 *
 * @example
 * // Bad...
-* const moduleA = require('moduleA');
+* const moduleA = require( 'moduleA' );
 *
 * // Good...
 * import moduleA from 'moduleA';
+*
+* import moduleA = require( 'moduleA' );
 */
 rules[ '@typescript-eslint/no-var-requires' ] = 'error';
 
@@ -1381,14 +1383,17 @@ rules[ 'import/no-deprecated' ] = 'error';
 * @name import/no-extraneous-dependencies
 * @memberof rules
 * @type {string}
-* @default 'off'
+* @default 'error'
 * @see [import/no-extraneous-dependencies]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md}
 *
 * @example
-* // Okay...
-* import 'some-optional-module';
+* // Good...
+* import fs from 'fs';
+*
+* // Bad...
+* import foo from 'some-extranous-module';
 */
-rules[ 'import/no-extraneous-dependencies' ] = 'off';
+rules[ 'import/no-extraneous-dependencies' ] = 'error';
 
 /**
 * Prevents importing the submodules of other modules.
@@ -1396,14 +1401,14 @@ rules[ 'import/no-extraneous-dependencies' ] = 'off';
 * @name import/no-internal-modules
 * @memberof rules
 * @type {string}
-* @default 'off'
+* @default 'error'
 * @see [import/no-internal-modules]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md}
 *
 * @example
 * // Okay...
 * import something from 'module/some/internal/path';
 */
-rules[ 'import/no-internal-modules' ] = 'off';
+rules[ 'import/no-internal-modules' ] = 'error';
 
 /**
 * Forbids import statements that import nothing.
@@ -1419,7 +1424,7 @@ rules[ 'import/no-internal-modules' ] = 'off';
 * import 'myModule';
 *
 * // Good...
-* import 'myPolyfill';
+* import foo from 'foo'
 */
 rules[ 'import/no-unassigned-import' ] = 'error';
 
@@ -1516,15 +1521,15 @@ rules[ 'import/order' ] = [
 ];
 
 /**
-* Disables the rule for indentation.
+* Enforces tab indentation.
 *
 * @name indent
 * @memberof rules
 * @type {string}
-* @default 'off'
+* @default [ 'error', 'tab' ]
 * @see [indent]{@link https://eslint.org/docs/rules/indent}
 */
-rules[ 'indent' ] = 'off';
+rules[ 'indent' ] = [ 'error', 'tab' ];
 
 /**
 * Disables the JSDoc rule for checking alignment.
