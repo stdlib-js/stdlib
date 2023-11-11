@@ -78,7 +78,7 @@ jobs:
         # Pin action to full length commit SHA corresponding to v3.8.1
         uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
-          node-version: '16' # 'lts/*'
+          node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
       # Print debug info:
