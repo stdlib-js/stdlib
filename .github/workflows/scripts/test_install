@@ -306,7 +306,7 @@ npm_install_global() {
 # Installs a package globally via `npm` from GitHub.
 npm_install_global_github() {
 	echo "Installing ${pkg_github_url}#${pkg_github_tag} as a global package..." >> "${log_file}" 2>&1
-	npm install "${pkg_github_url}#${pkg_github_tag}" >> "${log_file}" 2>&1
+	npm install -g "${pkg_github_url}#${pkg_github_tag}" >> "${log_file}" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when installing ${pkg_github_url}#${pkg_github_tag} as a global package via npm." >> "${log_file}" 2>&1
 		cat "${working_dir}/npm-debug.log" >> "${log_file}" 2>&1

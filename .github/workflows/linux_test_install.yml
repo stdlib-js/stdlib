@@ -100,7 +100,7 @@ jobs:
             PNPM_VERSION: '6'
 
           - NODE_VERSION: '12'
-            NPM_VERSION: '>2.7.0 <10.0.0'
+            NPM_VERSION: '>2.7.0 <9.0.0'
             PNPM_VERSION: '6'
 
           - NODE_VERSION: '10'
