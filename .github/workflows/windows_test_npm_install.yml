@@ -90,13 +90,13 @@ jobs:
           - OS: 'windows-latest'
             PLATFORM: 'windows'
 
-          - NODE_VERSION: '16'
+          - NODE_VERSION: '16 <10.0.0'
             NPM_VERSION: '>2.7.0'
 
-          - NODE_VERSION: '14'
+          - NODE_VERSION: '14 <10.0.0'
             NPM_VERSION: '>2.7.0'
 
-          - NODE_VERSION: '12'
+          - NODE_VERSION: '12 <10.0.0'
             NPM_VERSION: '>2.7.0'
 
           - NODE_VERSION: '10'
