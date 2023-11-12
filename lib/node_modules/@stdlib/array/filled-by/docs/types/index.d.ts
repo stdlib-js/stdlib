@@ -80,7 +80,7 @@ type Callback = Nullary | Unary;
 * var arr = filledarrayBy( 'float32' );
 * // returns <Float32Array>
 */
-declare function filledarrayBy( dtype?: DataType ): ArrayOrTypedArray; // tslint:disable-line:unified-signatures
+declare function filledarrayBy( dtype?: DataType ): ArrayOrTypedArray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Creates a filled array according to a provided callback function and having a specified `length`.
