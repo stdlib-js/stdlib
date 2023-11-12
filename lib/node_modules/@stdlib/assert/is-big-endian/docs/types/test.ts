@@ -23,6 +23,6 @@ import IS_BIG_ENDIAN = require( './index' );
 
 // The variable is a boolean...
 {
-
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	IS_BIG_ENDIAN; // $ExpectType boolean
 }
