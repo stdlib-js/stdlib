@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// tslint:disable: no-unused-expression, no-unsafe-any
+/* eslint-disable @typescript-eslint/no-unused-expressions */, no-unsafe-any
 
 import BigInt = require( './index' );
 
