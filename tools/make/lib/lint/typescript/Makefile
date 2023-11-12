@@ -130,7 +130,7 @@ endif
 # make lint-typescript-files FILES='/foo/index.ts /bar/index.ts'
 #/
 lint-typescript-files:
-ifeq ($(TYPESCRIPT_LINTER), tslint)
+ifeq ($(TYPESCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) eslint-ts-files
 endif
 
@@ -150,7 +150,7 @@ endif
 # make lint-typescript-declarations-files FILES='/foo/index.d.ts /bar/index.d.ts'
 #/
 lint-typescript-declarations-files:
-ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), dtslint)
+ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) eslint-ts-files
 endif
 
