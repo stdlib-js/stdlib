@@ -30,7 +30,7 @@ type Array1D<T> = Array<T>;
 /**
 * One-dimensional array shape.
 */
-type Shape1D = [ number ]; // tslint:disable-line:no-single-element-tuple-type
+type Shape1D = [ number ];
 
 /**
 * Two-dimensional array.

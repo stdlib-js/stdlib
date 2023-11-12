@@ -31,6 +31,4 @@
 * @param value - value of the BigInt
 * @returns BigInt
 */
-export = BigInt; // tslint:disable-line
-
-// FIXME: need to address TSLint errors regarding ES version
+export = BigInt;

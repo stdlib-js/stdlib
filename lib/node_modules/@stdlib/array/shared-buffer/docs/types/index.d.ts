@@ -23,6 +23,4 @@
 /**
 * Constructor returning an object used to represent a generic, fixed-length raw binary data buffer which can be used to create views of shared memory.
 */
-export = SharedArrayBuffer; // tslint:disable-line
-
-// FIXME: need to address TSLint errors regarding ES version
+export = SharedArrayBuffer;
