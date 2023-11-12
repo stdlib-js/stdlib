@@ -124,7 +124,7 @@ declare function bartlettTest( arr0: NumericArray, options?: Options ): Results;
 * var out = bartlettTest( x, y );
 * // returns {...}
 */
-declare function bartlettTest( arr0: NumericArray, arr1: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function bartlettTest( arr0: NumericArray, arr1: NumericArray, options?: Options ): Results;
 
 /**
 * Compute Bartlett’s test for equal variances.
@@ -146,7 +146,7 @@ declare function bartlettTest( arr0: NumericArray, arr1: NumericArray, options?:
 * var out = bartlettTest( x, y, z );
 * // returns {...}
 */
-declare function bartlettTest( arr0: NumericArray, arr1: NumericArray, arr2: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function bartlettTest( arr0: NumericArray, arr1: NumericArray, arr2: NumericArray, options?: Options ): Results;
 
 /**
 * Compute Bartlett’s test for equal variances.
@@ -160,7 +160,7 @@ declare function bartlettTest( arr0: NumericArray, arr1: NumericArray, arr2: Num
 * @throws must provide valid options
 * @returns test results
 */
-declare function bartlettTest( arr0: NumericArray, arr1: NumericArray, arr2: NumericArray, arr3: NumericArray, options?: Options ): Results; // tslint-disable-line max-line-length
+declare function bartlettTest( arr0: NumericArray, arr1: NumericArray, arr2: NumericArray, arr3: NumericArray, options?: Options ): Results;
 
 /**
 * Compute Bartlett’s test for equal variances.
@@ -170,7 +170,7 @@ declare function bartlettTest( arr0: NumericArray, arr1: NumericArray, arr2: Num
 * @throws must provide valid options
 * @returns test results
 */
-declare function bartlettTest( arr0: NumericArray, ...args: Array<NumericArray | Options> ): Results; // tslint-disable-line max-line-length
+declare function bartlettTest( arr0: NumericArray, ...args: Array<NumericArray | Options> ): Results;
 
 
 // EXPORTS //
