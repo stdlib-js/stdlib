@@ -113,37 +113,37 @@ declare class RandomStream extends Readable {
 	/**
 	* Destruction state.
 	*/
-	private readonly _destroyed: boolean; // tslint:disable-line: variable-name
+	private readonly _destroyed: boolean;
 
 	/**
 	* Flag indicating whether a stream is operating in object mode.
 	*/
-	private readonly _objectMode: boolean; // tslint:disable-line: variable-name
+	private readonly _objectMode: boolean;
 
 	/**
 	* Data separator.
 	*/
-	private readonly _sek: string; // tslint:disable-line: variable-name
+	private readonly _sek: string;
 
 	/**
 	* Total number of iterations.
 	*/
-	private readonly _iter: number; // tslint:disable-line: variable-name
+	private readonly _iter: number;
 
 	/**
 	* Number of iterations after which to emit the underlying PRNG state.
 	*/
-	private readonly _siter: number; // tslint:disable-line: variable-name
+	private readonly _siter: number;
 
 	/**
 	* Iteration counter.
 	*/
-	private _i: number; // tslint:disable-line: variable-name
+	private _i: number;
 
 	/**
 	* Pseudorandom number generator for generating chi distributed pseudorandom numbers.
 	*/
-	private readonly _prng: random.PRNG; // tslint:disable-line: variable-name
+	private readonly _prng: random.PRNG;
 
 	/**
 	* Underlying PRNG.
@@ -180,7 +180,7 @@ declare class RandomStream extends Readable {
 	*
 	* @param size - number (of bytes) to read
 	*/
-	_read( size: number ): void; // tslint:disable-line: variable-name
+	_read( size: number ): void;
 
 	/**
 	* Gracefully destroys a stream, providing backward compatibility.
