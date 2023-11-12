@@ -23,6 +23,6 @@ import FLOAT32_SMALLEST_SUBNORMAL = require( './index' );
 
 // The export is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	FLOAT32_SMALLEST_SUBNORMAL; // $ExpectType number
 }

@@ -23,6 +23,6 @@ import IS_BIG_ENDIAN = require( './index' );
 
 // The variable is a boolean...
 {
-	// tslint:disable-next-line:no-unused-expression
+
 	IS_BIG_ENDIAN; // $ExpectType boolean
 }
