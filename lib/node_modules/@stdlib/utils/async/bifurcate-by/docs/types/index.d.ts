@@ -245,7 +245,7 @@ interface BifurcateByAsync {
 	*
 	* bifurcateByAsync( files, predicate, done );
 	*/
-	<T = unknown, V = unknown>( collection: Collection<T>, predicate: Predicate<T, V>, done: Callback<T> ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, V = unknown>( collection: Collection<T>, predicate: Predicate<T, V>, done: Callback<T> ): void;
 
 	/**
 	* Returns a function which splits values into two groups according to a predicate function.
@@ -357,7 +357,7 @@ interface BifurcateByAsync {
 	* // Try to read each element in `files`:
 	* bifurcateByAsync( files, done );
 	*/
-	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>;
 }
 
 /**

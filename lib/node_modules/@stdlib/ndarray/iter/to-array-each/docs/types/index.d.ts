@@ -57,7 +57,7 @@ type Iterator<T> = TypedIterator<T> | TypedIterableIterator<T>;
 *
 * // ...
 */
-declare function nditer2arrayEach<T = unknown>( iterator: Iterator<ndarray> ): Iterator<Array<T>>; // tslint:disable-line:no-unnecessary-generics
+declare function nditer2arrayEach<T = unknown>( iterator: Iterator<ndarray> ): Iterator<Array<T>>;
 
 
 // EXPORTS //

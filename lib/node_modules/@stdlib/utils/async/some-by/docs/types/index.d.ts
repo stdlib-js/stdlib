@@ -226,7 +226,7 @@ interface SomeByAsync {
 	*
 	* someByAsync( files, 2, predicate, done );
 	*/
-	<T = unknown, V = unknown>( collection: Collection<T>, n: number, predicate: Predicate<T, V>, done: Callback ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, V = unknown>( collection: Collection<T>, n: number, predicate: Predicate<T, V>, done: Callback ): void;
 
 	/**
 	* Returns a function for testing whether a collection contains at least `n` elements which pass a test implemented by a predicate function.
@@ -343,7 +343,7 @@ interface SomeByAsync {
 	* // Try to read each element in `files`:
 	* someByAsync( files, 2, done );
 	*/
-	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>;
 }
 
 /**

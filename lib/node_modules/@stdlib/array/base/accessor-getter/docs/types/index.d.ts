@@ -125,7 +125,7 @@ declare function getter( dtype: 'complex64' ): GetComplex64;
 * var v = get( arr, 2 );
 * // returns 3
 */
-declare function getter<T = unknown>( dtype: string ): GetArrayLike<T>; // tslint:disable-line:no-unnecessary-generics
+declare function getter<T = unknown>( dtype: string ): GetArrayLike<T>;
 
 
 // EXPORTS //

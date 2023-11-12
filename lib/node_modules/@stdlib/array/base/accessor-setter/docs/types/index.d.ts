@@ -132,7 +132,7 @@ declare function setter( dtype: 'complex64' ): SetComplex64;
 * var v = arr.get( 2 );
 * // returns 3
 */
-declare function setter<T = unknown>( dtype: string ): SetArrayLike<T>; // tslint:disable-line:no-unnecessary-generics
+declare function setter<T = unknown>( dtype: string ): SetArrayLike<T>;
 
 
 // EXPORTS //

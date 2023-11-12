@@ -122,7 +122,7 @@ type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U>;
 * var out = bifurcateBy( arr, predicate );
 * // returns [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
 */
-declare function bifurcateBy<T = unknown, U = unknown>( collection: Collection<T>, predicate: Predicate<T, U> ): [ Array<T>, Array<T> ]; // tslint:disable-line:no-unnecessary-generics
+declare function bifurcateBy<T = unknown, U = unknown>( collection: Collection<T>, predicate: Predicate<T, U> ): [ Array<T>, Array<T> ];
 
 /**
 * Splits values into two groups according to a predicate function.

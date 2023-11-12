@@ -250,7 +250,7 @@ declare function onesnd( shape: Shape10D ): Array10D<number>;
 * var out = onesnd( [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ] );
 * // returns [ [ [ [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ] ] ]
 */
-declare function onesnd<T = unknown>( shape: Collection<number> ): Array<T>; // tslint:disable-line:no-unnecessary-generics
+declare function onesnd<T = unknown>( shape: Collection<number> ): Array<T>;
 
 
 // EXPORTS //

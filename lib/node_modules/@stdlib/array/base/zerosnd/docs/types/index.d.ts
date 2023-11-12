@@ -251,7 +251,7 @@ declare function zerosnd( shape: Shape10D ): Array10D<number>;
 * var out = zerosnd( [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ] );
 * // returns [ [ [ [ [ [ [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ] ] ] ] ] ]
 */
-declare function zerosnd<T = unknown>( shape: Shape ): Array<T>; // tslint:disable-line:no-unnecessary-generics
+declare function zerosnd<T = unknown>( shape: Shape ): Array<T>;
 
 
 // EXPORTS //

@@ -157,7 +157,7 @@ interface IndicesAndValuesResults<T> {
 * var out = groupBy( arr, indicator );
 * // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
 */
-declare function groupBy<T = unknown, U = unknown>( collection: Collection<T>, indicator: Indicator<T, U> ): ValuesResults<T>; // tslint:disable-line:no-unnecessary-generics
+declare function groupBy<T = unknown, U = unknown>( collection: Collection<T>, indicator: Indicator<T, U> ): ValuesResults<T>;
 
 /**
 * Groups values according to an indicator function.

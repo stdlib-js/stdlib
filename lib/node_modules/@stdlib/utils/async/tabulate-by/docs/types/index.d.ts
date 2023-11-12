@@ -251,7 +251,7 @@ interface TabulateByAsync {
 	*
 	* tabulateByAsync( files, indicator, done );
 	*/
-	<T = unknown, V = unknown>( collection: Collection<T>, indicator: Indicator<T, V>, done: Callback<T> ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, V = unknown>( collection: Collection<T>, indicator: Indicator<T, V>, done: Callback<T> ): void;
 
 	/**
 	* Returns a function for generating a frequency table according to an indicator function.
@@ -379,7 +379,7 @@ interface TabulateByAsync {
 	* // Try to read each element in `files`:
 	* tabulateByAsync( files, done );
 	*/
-	factory<T = unknown, V = unknown>( indicator: Indicator<T, V> ): FactoryFunction<T>; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, V = unknown>( indicator: Indicator<T, V> ): FactoryFunction<T>;
 }
 
 /**

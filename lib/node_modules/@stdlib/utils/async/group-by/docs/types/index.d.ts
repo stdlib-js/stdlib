@@ -447,7 +447,7 @@ interface GroupByAsync {
 	*
 	* groupByAsync( files, indicator, done );
 	*/
-	<T = unknown, V = unknown>( collection: Collection<T>, indicator: Indicator<T, V>, done: ValuesCallback<T> ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, V = unknown>( collection: Collection<T>, indicator: Indicator<T, V>, done: ValuesCallback<T> ): void;
 
 	/**
 	* Returns a function for grouping values according to an indicator function.
@@ -673,7 +673,7 @@ interface GroupByAsync {
 	* // Try to read each element in `files`:
 	* groupByAsync( files, done );
 	*/
-	factory<T = unknown, V = unknown>( indicator: Indicator<T, V> ): ValuesFactoryFunction<T>; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, V = unknown>( indicator: Indicator<T, V> ): ValuesFactoryFunction<T>;
 }
 
 /**

@@ -317,7 +317,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape10D, clbk: Ca
 * var out = filledndBy( [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ] ] ]
 */
-declare function filledndBy<T = unknown, V = unknown>( shape: Shape, clbk: Callback<T, V>, thisArg?: ThisParameterType<Callback<T, V>> ): Array<T>; // tslint:disable-line:no-unnecessary-generics
+declare function filledndBy<T = unknown, V = unknown>( shape: Shape, clbk: Callback<T, V>, thisArg?: ThisParameterType<Callback<T, V>> ): Array<T>;
 
 
 // EXPORTS //

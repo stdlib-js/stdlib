@@ -305,7 +305,7 @@ declare function fillednd<T = unknown>( value: T, shape: Shape10D ): Array10D<T>
 * var out = fillednd( 'beep', [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ] );
 * // returns [ [ [ [ [ [ [ [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ] ] ] ] ] ] ]
 */
-declare function fillednd<T = unknown, U = unknown>( value: T, shape: Shape ): Array<U>; // tslint:disable-line:no-unnecessary-generics
+declare function fillednd<T = unknown, U = unknown>( value: T, shape: Shape ): Array<U>;
 
 
 // EXPORTS //

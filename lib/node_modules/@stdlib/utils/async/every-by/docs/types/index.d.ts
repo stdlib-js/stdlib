@@ -221,7 +221,7 @@ interface EveryByAsync {
 	*
 	* everyByAsync( files, predicate, done );
 	*/
-	<T = unknown, V = unknown>( collection: Collection<T>, predicate: Predicate<T, V>, done: Callback ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, V = unknown>( collection: Collection<T>, predicate: Predicate<T, V>, done: Callback ): void;
 
 	/**
 	* Returns a function for testing whether all elements in a collection pass a test implemented by a predicate function.
@@ -343,7 +343,7 @@ interface EveryByAsync {
 	* // Try to read each element in `files`:
 	* everyByAsync( files, done );
 	*/
-	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>;
 }
 
 /**
