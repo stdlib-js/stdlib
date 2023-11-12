@@ -18,7 +18,7 @@
 
 // TypeScript Version: 4.1
 
-// tslint:disable:max-classes-per-file
+/* eslint-disable max-classes-per-file */
 
 /// <reference types="@stdlib/types"/>
 
