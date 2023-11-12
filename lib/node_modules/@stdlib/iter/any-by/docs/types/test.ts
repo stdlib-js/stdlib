@@ -48,7 +48,7 @@ function iterator() {
 * @param i - iteration index
 * @returns a boolean
 */
-function predicate1( _v: any, i: number ): boolean { // tslint:disable-line:variable-name
+function predicate1( _v: any, i: number ): boolean {
 	return ( i > 10 );
 }
 

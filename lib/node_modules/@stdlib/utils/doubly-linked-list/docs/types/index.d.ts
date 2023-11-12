@@ -58,12 +58,12 @@ declare class Node {
 	/**
 	* Private field pointing to the next node.
 	*/
-	private readonly _next: Node; // tslint:disable-line:variable-name
+	private readonly _next: Node;
 
 	/**
 	* Private field pointing to the previous node.
 	*/
-	private readonly _prev: Node; // tslint:disable-line:variable-name
+	private readonly _prev: Node;
 }
 
 /**
