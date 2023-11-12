@@ -1,5 +1,3 @@
-// tslint:disable:max-file-line-count
-
 /*
 * @license Apache-2.0
 *
@@ -17,6 +15,8 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
+
+/* eslint-disable max-lines */
 
 // TypeScript Version: 4.1
 
