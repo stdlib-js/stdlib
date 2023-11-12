@@ -80,7 +80,7 @@ type Quaternary = ( curr: any, sprev: any, dprev: any, index: number ) => any;
 * @param acc - previous resolved value
 * @returns resolved value
 */
-type Quinary = ( curr: any, sprev: any, dprev: any, index: number, acc: any ) => any; // tslint:disable-line: max-length
+type Quinary = ( curr: any, sprev: any, dprev: any, index: number, acc: any ) => any;
 
 /**
 * Indicates whether an iterated value is a "duplicate".
@@ -161,7 +161,7 @@ declare function iterDedupeBy( iterator: Iterator, fcn: Callback ): Iterator;
 *
 * // ...
 */
-declare function iterDedupeBy( iterator: Iterator, limit: number, fcn: Callback ): Iterator; // tslint:disable-line: max-length
+declare function iterDedupeBy( iterator: Iterator, limit: number, fcn: Callback ): Iterator;
 
 
 // EXPORTS //

@@ -51,7 +51,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterStep( start: number, increment: number, N?: number ): Iterator; // tslint:disable-line: max-length
+declare function iterStep( start: number, increment: number, N?: number ): Iterator;
 
 
 // EXPORTS //
