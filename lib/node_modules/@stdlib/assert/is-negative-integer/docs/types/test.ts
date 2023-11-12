@@ -35,7 +35,7 @@ import isNegativeInteger = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isNegativeInteger.isPrimitive( new Number( -2 ) ); // $ExpectType boolean
 	isNegativeInteger.isPrimitive( -2 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isNegativeInteger = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isNegativeInteger.isObject( new Number( -2 ) ); // $ExpectType boolean
 	isNegativeInteger.isObject( -2 ); // $ExpectType boolean
 }

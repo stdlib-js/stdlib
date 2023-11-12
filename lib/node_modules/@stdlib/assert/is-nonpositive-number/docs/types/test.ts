@@ -35,7 +35,7 @@ import isNonPositiveNumber = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isNonPositiveNumber.isPrimitive( new Number( -2 ) ); // $ExpectType boolean
 	isNonPositiveNumber.isPrimitive( -2 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isNonPositiveNumber = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isNonPositiveNumber.isObject( new Number( -2 ) ); // $ExpectType boolean
 	isNonPositiveNumber.isObject( -2 ); // $ExpectType boolean
 }

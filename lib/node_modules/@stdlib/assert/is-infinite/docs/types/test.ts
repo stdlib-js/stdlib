@@ -35,7 +35,7 @@ import isInfinite = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isInfinite.isPrimitive( new Number( 1 / 0 ) ); // $ExpectType boolean
 	isInfinite.isPrimitive( 1 / 0 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isInfinite = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isInfinite.isObject( new Number( 1 / 0 ) ); // $ExpectType boolean
 	isInfinite.isObject( 1 / 0 ); // $ExpectType boolean
 }

@@ -35,7 +35,7 @@ import isTriangularNumber = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isTriangularNumber.isPrimitive( new Number( 0.2 ) ); // $ExpectType boolean
 	isTriangularNumber.isPrimitive( 0.2 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isTriangularNumber = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isTriangularNumber.isObject( new Number( 0.2 ) ); // $ExpectType boolean
 	isTriangularNumber.isObject( 0.2 ); // $ExpectType boolean
 }

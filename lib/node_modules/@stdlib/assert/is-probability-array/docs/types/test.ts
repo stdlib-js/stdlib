@@ -35,7 +35,7 @@ import isProbabilityArray = require( './index' );
 
 // Attached to main export is a `primitives` method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isProbabilityArray.primitives( [ new Number( 0.2 ) ] ); // $ExpectType boolean
 	isProbabilityArray.primitives( [ 0.2 ] ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isProbabilityArray = require( './index' );
 
 // Attached to main export is an `objects` method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isProbabilityArray.objects( [ new Number( 0.2 ) ] ); // $ExpectType boolean
 	isProbabilityArray.objects( [ 0.2 ] ); // $ExpectType boolean
 }

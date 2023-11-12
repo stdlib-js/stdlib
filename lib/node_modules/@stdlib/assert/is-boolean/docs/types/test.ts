@@ -35,7 +35,7 @@ import isBoolean = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isBoolean.isPrimitive( new Boolean( true ) ); // $ExpectType boolean
 	isBoolean.isPrimitive( true ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isBoolean = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isBoolean.isObject( new Boolean( true ) ); // $ExpectType boolean
 	isBoolean.isObject( true ); // $ExpectType boolean
 }
