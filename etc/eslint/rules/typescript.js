@@ -1818,17 +1818,6 @@ rules[ 'no-duplicate-imports' ] = 'error';
 rules[ 'no-empty' ] = 'error';
 
 /**
-* Disables the rule that disallows empty functions.
-*
-* @name no-empty-function
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [no-empty-function]{@link https://eslint.org/docs/rules/no-empty-function}
-*/
-rules[ 'no-empty-function' ] = 'off';
-
-/**
 * Disallows the use of `eval()`.
 *
 * @name no-eval
@@ -2203,17 +2192,6 @@ rules[ 'no-underscore-dangle' ] = 'error';
 rules[ 'no-unsafe-finally' ] = 'error';
 
 /**
-* Disables the rule against unused expressions.
-*
-* @name no-unused-expressions
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [no-unused-expressions]{@link https://eslint.org/docs/rules/no-unused-expressions}
-*/
-rules[ 'no-unused-expressions' ] = 'off';
-
-/**
 * Disallows unused labels.
 *
 * @name no-unused-labels
@@ -2223,28 +2201,6 @@ rules[ 'no-unused-expressions' ] = 'off';
 * @see [no-unused-labels]{@link https://eslint.org/docs/rules/no-unused-labels}
 */
 rules[ 'no-unused-labels' ] = 'error';
-
-/**
-* Disables the rule against unused variables.
-*
-* @name no-unused-vars
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [no-unused-vars]{@link https://eslint.org/docs/rules/no-unused-vars}
-*/
-rules[ 'no-unused-vars' ] = 'off';
-
-/**
-* Disables the rule against using variables before they are defined.
-*
-* @name no-use-before-define
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [no-use-before-define]{@link https://eslint.org/docs/rules/no-use-before-define}
-*/
-rules[ 'no-use-before-define' ] = 'off';
 
 /**
 * Disallows unnecessary constructors.
