@@ -77,7 +77,7 @@ var v1 = view[ 0 ];
 
 var v2 = view[ 1 ];
 // returns 4.0
-````
+```
 
 </section>
 

@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* tslint:disable:no-invalid-this */
+/* eslint-disable @typescript-eslint/no-invalid-this */
 
 import isPersymmetricMatrix = require( './index' );
 

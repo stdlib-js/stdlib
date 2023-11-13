@@ -23,6 +23,6 @@ import LN_HALF = require( './index' );
 
 // The export is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	LN_HALF; // $ExpectType number
 }

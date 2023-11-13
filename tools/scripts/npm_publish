@@ -92,7 +92,6 @@ on_error() {
 # Runs clean-up tasks.
 cleanup() {
 	rm -rf "${npm_tarball_build_out}"
-
 }
 
 # Prints a success message.
@@ -414,37 +413,65 @@ update_version() {
 	return 0
 }
 
-# Updates the `@stdlib` dependencies in the root package.json to their latest versions.
-update_internal_dependencies() {
-	echo 'Updating `@stdlib` dependency versions...' >&2
-	echo 'Getting list of `@stdlib` dependencies...' >&2
+# Updates the top-level stdlib namespace dependencies in the root package.json to their latest published versions.
+update_namespace_dependency_versions() {
+	echo 'Updating top-level stdlib namespace dependency versions...' >&2
+
+	echo "Package.json: ${package_json}" >&2
+	echo 'Resolving list of stdlib dependencies...' >&2
 	script="var pkg = require( '${package_json}' ); var keys = Object.keys( pkg.dependencies ); for ( var i = 0; i < keys.length; i++ ) { if ( /^@stdlib/.test( keys[ i ] ) ) { console.log( keys[ i ] ); } }"
-	dependencies="$(node -e "${script}")"
+	dependencies=$(node -e "${script}")
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
-		echo 'Error: unexpected error. Encountered an error when getting list of `@stdlib` dependencies.' >&2
+		echo 'Error: unexpected error. Encountered an error when getting list of stdlib dependencies.' >&2
 		echo '' >&2
 		return 1
 	fi
-	echo 'Retrieving latest versions for `@stdlib` dependencies...' >&2
-	for dependency in ${dependencies}; do
-		pkgVersion="$(npm view "${dependency}" version)"
-		echo "Updating ${dependency} to ${pkgVersion} in ${package_json}..." >&2
-		echo "s%\"${dependency}\":[^,]*%\"${dependency}\": \"${pkgVersion}\"%"	>&2
+	echo "${dependencies}" >&2
+	echo '' >&2
+
+	# Convert the newline-delimited output to a bash array: FIXME: this is not best practice. We should use a `while` loop below.
+	dependencies=( $(echo "${dependencies}" | tr '\n' ' ') )
+
+	echo 'Setting versions to latest versions...' >&2
+	for dependency in "${dependencies[@]}"; do
+		pkgVersion=$(npm view "${dependency}" version --loglevel=error)
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo "Error: unexpected error. Encountered an error when resolving the latest published version for ${dependency}." >&2
+			echo '' >&2
+			return 1
+		fi
 		if [[ "$OSTYPE" == "darwin"* ]]; then
-			sed -i '' "s%\"${dependency}\":[^,]*%\"${dependency}\": \"${pkgVersion}\"%" "${package_json}"
+			sed -i '' "s%\"${dependency}\":[^,]*%\"${dependency}\": \"^${pkgVersion}\"%" "${package_json}"
 		else
-			sed -i "s%\"${dependency}\":[^,]*%\"${dependency}\": \"${pkgVersion}\"%" "${package_json}"
+			sed -i "s%\"${dependency}\":[^,]*%\"${dependency}\": \"^${pkgVersion}\"%" "${package_json}"
 		fi
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
-			echo "Error: unexpected error. Encountered an error when updating ${dependency}." >&2
+			echo "Error: unexpected error. Encountered an error when updating the version of ${dependency}." >&2
 			echo '' >&2
 			return 1
 		fi
 		echo "Updated version for ${dependency}: ${pkgVersion}" >&2
 	done
-	echo 'Successfully updated dependency versions.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m 'build: update top-level namespace versions'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+	echo 'Successfully updated stdlib dependency versions.' >&2
+	echo '' >&2
+	return 0
 }
 
 # Generates and publishes distributable bundles.
@@ -624,16 +651,18 @@ main() {
 		revert_changes
 		on_error 1
 	fi
-	update_markdown_related
-	if [[ "$?" -ne 0 ]]; then
-		revert_changes
-		on_error 1
-	fi
-	update_markdown_package_urls
-	if [[ "$?" -ne 0 ]]; then
-		revert_changes
-		on_error 1
-	fi
+
+	# update_markdown_related
+	# if [[ "$?" -ne 0 ]]; then
+	# 	revert_changes
+	# 	on_error 1
+	# fi
+	# update_markdown_package_urls
+	# if [[ "$?" -ne 0 ]]; then
+	# 	revert_changes
+	# 	on_error 1
+	# fi
+
 	update_repl_docs
 	if [[ "$?" -ne 0 ]]; then
 		revert_changes
@@ -644,7 +673,7 @@ main() {
 		revert_changes
 		on_error 1
 	fi
-	update_internal_dependencies
+	update_namespace_dependency_versions
 	if [[ "$?" -ne 0 ]]; then
 		revert_changes
 		on_error 1
@@ -652,10 +681,10 @@ main() {
 
 	# WARNING: at this point, we are at the point of no return and, from this point forward, cannot easily revert changes to the local repository as packages may already be published...
 
-	publish_bundles
-	if [[ "$?" -ne 0 ]]; then
-		on_error 1
-	fi
+	# publish_bundles
+	# if [[ "$?" -ne 0 ]]; then
+	# 	on_error 1
+	# fi
 	create_tag
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1

@@ -102,7 +102,7 @@ interface Results<T> {
 * var out = countBy( arr, indicator );
 * // returns { 'b': 3, 'f': 1 }
 */
-declare function countBy<T = unknown, U = unknown>( collection: Collection<T>, indicator: Indicator<T, U> ): Results<T>; // tslint:disable-line:no-unnecessary-generics
+declare function countBy<T = unknown, U = unknown>( collection: Collection<T>, indicator: Indicator<T, U> ): Results<T>;
 
 /**
 * Groups values according to an indicator function and returns group counts.

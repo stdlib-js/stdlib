@@ -25,16 +25,16 @@ import Complex128 = require( './index' );
 {
 	const x = new Complex128( 5.0, 3.0 ); // $ExpectType Complex128
 
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.im; // $ExpectType number
 
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.re; // $ExpectType number
 
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.BYTES_PER_ELEMENT; // $ExpectType 8
 
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.byteLength; // $ExpectType 16
 }
 
@@ -42,7 +42,7 @@ import Complex128 = require( './index' );
 {
 	const x = new Complex128( 5.0, 3.0 ); // $ExpectType Complex128
 
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.toString(); // $ExpectType string
 }
 
@@ -50,7 +50,7 @@ import Complex128 = require( './index' );
 {
 	const x = new Complex128( 5.0, 3.0 ); // $ExpectType Complex128
 
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.toJSON(); // $ExpectType any
 }
 
@@ -61,9 +61,9 @@ import Complex128 = require( './index' );
 
 // The compiler throws an error if the constructor is provided an unsupported number of arguments...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	new Complex128( 5.0 ); // $ExpectError
 
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	new Complex128( 5.0, 3.0, 1.0 ); // $ExpectError
 }

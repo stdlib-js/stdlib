@@ -18,7 +18,7 @@
 
 // TypeScript Version: 4.1
 
-// tslint:disable:max-file-line-count
+/* eslint-disable max-lines */
 
 /// <reference types="@stdlib/types"/>
 

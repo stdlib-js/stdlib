@@ -48,7 +48,7 @@ interface Options {
 * var str = compile( P, Q );
 * // returns <string>
 */
-declare function compile( P: Array<number>, Q: Array<number>, options?: Options ): string; // tslint:disable-line max-line-length
+declare function compile( P: Array<number>, Q: Array<number>, options?: Options ): string;
 
 
 // EXPORTS //

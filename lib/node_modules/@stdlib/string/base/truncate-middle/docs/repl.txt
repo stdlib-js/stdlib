@@ -1,0 +1,31 @@
+
+{{alias}}( str, len, seq )
+    Truncates the middle UTF-16 code units of a string to return a string
+    having a specified length.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    len: integer
+        Output string length.
+
+    seq: string
+        Custom replacement sequence.
+
+    Returns
+    -------
+    out: string
+        Truncated string.
+
+    Examples
+    --------
+    > var str = 'beep boop';
+    > var out = {{alias}}( str, 5, '...' )
+    'b...p'
+    > out = {{alias}}( str, 5, '|' )
+    'be|op'
+
+    See Also
+    --------

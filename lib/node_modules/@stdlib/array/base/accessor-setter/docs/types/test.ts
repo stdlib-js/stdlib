@@ -39,7 +39,7 @@ function accessorArray(): AccessorArrayLike<number> {
 		'3': 4,
 		'length': 4,
 		'get': ( idx: number ): number => {
-			return arr[ idx ]; // tslint:disable-line:no-unsafe-any
+			return arr[ idx ];
 		},
 		'set': ( value: number, idx: number ): void => {
 			arr[ idx ] = value;

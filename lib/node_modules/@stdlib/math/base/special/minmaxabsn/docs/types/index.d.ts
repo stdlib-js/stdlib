@@ -48,7 +48,7 @@ interface MinMaxAbsN {
 	* var v = minmaxabsn( 3.14 );
 	* // returns [ 3.14, 3.14 ]
 	*/
-	( x: number ): Array<number>; // tslint:disable-line unified-signatures
+	( x: number ): Array<number>; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Returns the minimum and maximum absolute values.
@@ -69,7 +69,7 @@ interface MinMaxAbsN {
 	* var v = minmaxabsn( +0.0, -0.0 );
 	* // returns [ 0.0, 0.0 ]
 	*/
-	( x: number, y: number ): Array<number>; // tslint:disable-line unified-signatures
+	( x: number, y: number ): Array<number>; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Returns the minimum and maximum absolute values.
@@ -83,7 +83,7 @@ interface MinMaxAbsN {
 	* var v = minmaxabsn( 3.14, 4.2, -3.8 );
 	* // returns [ 3.14, 4.2 ]
 	*/
-	( x: number, y: number, z: number ): Array<number>; // tslint:disable-line unified-signatures
+	( x: number, y: number, z: number ): Array<number>; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Returns the minimum and maximum absolute values.
@@ -98,7 +98,7 @@ interface MinMaxAbsN {
 	* var v = minmaxabsn( 3.14, 4.2, -3.8, 3.9 );
 	* // returns [ 3.14, 4.2 ]
 	*/
-	( x: number, y: number, z: number, w: number ): Array<number>; // tslint:disable-line unified-signatures
+	( x: number, y: number, z: number, w: number ): Array<number>; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Returns the minimum and maximum absolute values.
@@ -114,7 +114,7 @@ interface MinMaxAbsN {
 	* var v = minmaxabsn( 3.14, 4.2, -3.8, 3.9, 3.6 );
 	* // returns [ 3.14, 4.2 ]
 	*/
-	( x: number, y: number, z: number, w: number, v: number ): Array<number>; // tslint:disable-line unified-signatures
+	( x: number, y: number, z: number, w: number, v: number ): Array<number>; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Returns the minimum and maximum absolute values.
@@ -136,7 +136,7 @@ interface MinMaxAbsN {
 	* var v = minmaxabsn( +0.0, -0.0 );
 	* // returns [ 0.0, 0.0 ]
 	*/
-	( x: number, y: number, ...args: Array<number> ): Array<number>; // tslint:disable-line unified-signatures
+	( x: number, y: number, ...args: Array<number> ): Array<number>; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Returns the minimum and maximum absolute values.

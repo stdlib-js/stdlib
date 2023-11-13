@@ -225,7 +225,7 @@ interface ReduceAsync {
 	* };
 	* reduceAsync( files, acc, read, done );
 	*/
-	<T = unknown, U = unknown, V = unknown>( collection: Collection<T>, initial: U, reducer: Reducer<T, U, V>, done: Callback<U> ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, U = unknown, V = unknown>( collection: Collection<T>, initial: U, reducer: Reducer<T, U, V>, done: Callback<U> ): void;
 
 	/**
 	* Returns a function to apply a function against an accumulator and each element in a collection and return the accumulated result.
@@ -343,7 +343,7 @@ interface ReduceAsync {
 	* };
 	* reduceAsync( files, acc, done );
 	*/
-	factory<T = unknown, U = unknown, V = unknown>( reducer: Reducer<T, U, V> ): FactoryFunction<T, U>; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, U = unknown, V = unknown>( reducer: Reducer<T, U, V> ): FactoryFunction<T, U>;
 }
 
 /**

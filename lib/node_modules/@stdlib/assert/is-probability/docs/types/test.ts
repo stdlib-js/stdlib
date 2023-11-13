@@ -35,7 +35,7 @@ import isProbability = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isProbability.isPrimitive( new Number( 0.2 ) ); // $ExpectType boolean
 	isProbability.isPrimitive( 0.2 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isProbability = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isProbability.isObject( new Number( 0.2 ) ); // $ExpectType boolean
 	isProbability.isObject( 0.2 ); // $ExpectType boolean
 }

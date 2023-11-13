@@ -51,7 +51,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterIncrspace( start: number, stop: number, increment?: number ): Iterator; // tslint:disable-line: max-length
+declare function iterIncrspace( start: number, stop: number, increment?: number ): Iterator;
 
 
 // EXPORTS //

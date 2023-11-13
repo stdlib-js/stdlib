@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-/* tslint:disable:no-empty */
-/* tslint:disable:no-unused-expression */
+/* eslint-disable no-empty */
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 
 import typedarraypool = require( './index' );
 

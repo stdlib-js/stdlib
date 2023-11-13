@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* tslint:disable:max-file-line-count */
+/* eslint-disable max-lines */
 
 // TypeScript Version: 4.1
 
@@ -129,7 +129,7 @@ declare function slice( x: float64ndarray, s: MultiSlice, options?: Options ): f
 * arr = ndarray2array( y );
 * // returns [ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 */
-declare function slice( x: float64ndarray, s: ArrayLike<SliceArgument>, options?: Options ): float64ndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: float64ndarray, s: ArrayLike<SliceArgument>, options?: Options ): float64ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -263,7 +263,7 @@ declare function slice( x: float32ndarray, s: MultiSlice, options?: Options ): f
 * arr = ndarray2array( y );
 * // returns [ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 */
-declare function slice( x: float32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): float32ndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: float32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): float32ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -397,7 +397,7 @@ declare function slice( x: int32ndarray, s: MultiSlice, options?: Options ): int
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: int32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int32ndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: int32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int32ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -532,7 +532,7 @@ declare function slice( x: int16ndarray, s: MultiSlice, options?: Options ): int
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: int16ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int16ndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: int16ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int16ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -667,7 +667,7 @@ declare function slice( x: int8ndarray, s: MultiSlice, options?: Options ): int8
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: int8ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int8ndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: int8ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int8ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -802,7 +802,7 @@ declare function slice( x: uint32ndarray, s: MultiSlice, options?: Options ): ui
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: uint32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint32ndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: uint32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint32ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -937,7 +937,7 @@ declare function slice( x: uint16ndarray, s: MultiSlice, options?: Options ): ui
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: uint16ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint16ndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: uint16ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint16ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -1072,7 +1072,7 @@ declare function slice( x: uint8ndarray, s: MultiSlice, options?: Options ): uin
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: uint8ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint8ndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: uint8ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint8ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -1207,7 +1207,7 @@ declare function slice( x: uint8cndarray, s: MultiSlice, options?: Options ): ui
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice( x: uint8cndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint8cndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: uint8cndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint8cndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -1330,7 +1330,7 @@ declare function slice( x: complex128ndarray, s: MultiSlice, options?: Options )
 * sh = y.shape;
 * // returns [ 2, 2 ]
 */
-declare function slice( x: complex128ndarray, s: ArrayLike<SliceArgument>, options?: Options ): complex128ndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: complex128ndarray, s: ArrayLike<SliceArgument>, options?: Options ): complex128ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -1446,7 +1446,7 @@ declare function slice( x: complex64ndarray, s: MultiSlice, options?: Options ):
 * sh = y.shape;
 * // returns [ 2, 2 ]
 */
-declare function slice( x: complex64ndarray, s: ArrayLike<SliceArgument>, options?: Options ): complex64ndarray; // tslint:disable-line:unified-signatures
+declare function slice( x: complex64ndarray, s: ArrayLike<SliceArgument>, options?: Options ): complex64ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -1572,7 +1572,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, option
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice<T = unknown>( x: genericndarray<T>, s: ArrayLike<SliceArgument>, options?: Options ): genericndarray<T>; // tslint:disable-line:unified-signatures
+declare function slice<T = unknown>( x: genericndarray<T>, s: ArrayLike<SliceArgument>, options?: Options ): genericndarray<T>; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.
@@ -1703,7 +1703,7 @@ declare function slice<T = unknown>( x: typedndarray<T>, s: MultiSlice, options?
 * arr = ndarray2array( y );
 * // returns [ [ 6, 5 ], [ 2, 1 ] ]
 */
-declare function slice<T = unknown>( x: typedndarray<T>, s: ArrayLike<SliceArgument>, options?: Options ): typedndarray<T>; // tslint:disable-line:unified-signatures
+declare function slice<T = unknown>( x: typedndarray<T>, s: ArrayLike<SliceArgument>, options?: Options ): typedndarray<T>; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a read-only view of an input ndarray.

@@ -35,7 +35,7 @@ import isnan = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isnan.isPrimitive( new Number( NaN ) ); // $ExpectType boolean
 	isnan.isPrimitive( NaN ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isnan = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isnan.isObject( new Number( NaN ) ); // $ExpectType boolean
 	isnan.isObject( NaN ); // $ExpectType boolean
 }

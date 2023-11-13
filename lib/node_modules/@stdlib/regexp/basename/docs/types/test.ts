@@ -46,18 +46,18 @@ import reBasename = require( './index' );
 
 // Attached to main export is a `REGEXP` property that is a regular expression...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	reBasename.REGEXP; // $ExpectType RegExp
 }
 
 // Attached to main export is a `REGEXP_POSIX` property that is a regular expression...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	reBasename.REGEXP_POSIX; // $ExpectType RegExp
 }
 
 // Attached to main export is a `REGEXP_WIN32` property that is a regular expression...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	reBasename.REGEXP_WIN32; // $ExpectType RegExp
 }

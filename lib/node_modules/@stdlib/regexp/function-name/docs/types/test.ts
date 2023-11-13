@@ -34,6 +34,6 @@ import reFunctionName = require( './index' );
 
 // Attached to main export is a `REGEXP` property that is a regular expression...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	reFunctionName.REGEXP; // $ExpectType RegExp
 }

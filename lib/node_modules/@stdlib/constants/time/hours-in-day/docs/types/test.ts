@@ -23,6 +23,6 @@ import HOURS_IN_DAY = require( './index' );
 
 // The variable is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	HOURS_IN_DAY; // $ExpectType number
 }

@@ -27,6 +27,9 @@ on:
 # Workflow jobs:
 jobs:
   respond:
+    # FIXME: disabled until determination whether enabling this bot is desirable/helpful
+    if: false
+
     # Define a display name:
     name: 'Respond to question'
 

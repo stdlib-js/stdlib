@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* tslint:disable:max-file-line-count */
+/* eslint-disable max-lines */
 
 // TypeScript Version: 4.1
 
@@ -27,7 +27,7 @@ import { Collection, Array1D, Array2D, Array3D, Array4D, Array5D, Array6D, Array
 /**
 * One-dimensional array shape.
 */
-type Shape1D = [ number ]; // tslint:disable-line:no-single-element-tuple-type
+type Shape1D = [ number ];
 
 /**
 * Two-dimensional array shape.

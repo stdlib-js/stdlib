@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// tslint:disable:max-file-line-count
+/* eslint-disable max-lines */
 
 // TypeScript Version: 4.1
 
@@ -386,7 +386,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, noop );
 	* // x => <Float64Array>[ 3.14, 3.14, 3.14, 3.14, 3.14 ]
 	*/
-	<T>( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void; // tslint:disable-line:unified-signatures
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -769,7 +769,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1, 'float64', v, 1, identity );
 	* // v => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	<T>( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number, dtypeZ: any, z: Collection, strideZ: number, dtypeW: any, w: Collection, strideW: number, dtypeU: any, u: Collection, strideU: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void; // tslint:disable-line:unified-signatures
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number, dtypeZ: any, z: Collection, strideZ: number, dtypeW: any, w: Collection, strideW: number, dtypeU: any, u: Collection, strideU: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -834,7 +834,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0, 'float64', v, 1, 0, identity );
 	* // v => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	<T>( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number, dtypeZ: any, z: Collection, strideZ: number, offsetZ: number, dtypeW: any, w: Collection, strideW: number, offsetW: number, dtypeU: any, u: Collection, strideU: number, offsetU: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void; // tslint:disable-line:unified-signatures
+	<T>( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number, dtypeZ: any, z: Collection, strideZ: number, offsetZ: number, dtypeW: any, w: Collection, strideW: number, offsetW: number, dtypeU: any, u: Collection, strideU: number, offsetU: number, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): ArrayLike<any> | void; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -895,7 +895,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1, 'float64', v, 1, identity );
 	* // v => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number, dtypeZ: any, z: Collection, strideZ: number, dtypeW: any, w: Collection, strideW: number, dtypeU: any, u: Collection, strideU: number, ...args: Array<any> ): ArrayLike<any> | void; // tslint:disable-line:unified-signatures
+	( N: number, dtypeX: any, x: Collection, strideX: number, dtypeY: any, y: Collection, strideY: number, dtypeZ: any, z: Collection, strideZ: number, dtypeW: any, w: Collection, strideW: number, dtypeU: any, u: Collection, strideU: number, ...args: Array<any> ): ArrayLike<any> | void; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -961,7 +961,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0, 'float64', v, 1, 0, identity );
 	* // v => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number, dtypeZ: any, z: Collection, strideZ: number, offsetZ: number, dtypeW: any, w: Collection, strideW: number, offsetW: number, dtypeU: any, u: Collection, strideU: number, offsetU: number, ...args: Array<any> ): ArrayLike<any> | void; // tslint:disable-line:unified-signatures
+	( N: number, dtypeX: any, x: Collection, strideX: number, offsetX: number, dtypeY: any, y: Collection, strideY: number, offsetY: number, dtypeZ: any, z: Collection, strideZ: number, offsetZ: number, dtypeW: any, w: Collection, strideW: number, offsetW: number, dtypeU: any, u: Collection, strideU: number, offsetU: number, ...args: Array<any> ): ArrayLike<any> | void; // eslint-disable-line @typescript-eslint/unified-signatures
 }
 
 /**
@@ -1056,7 +1056,7 @@ declare function dispatchBy<T = unknown>( fcns: StridedArrayFcn<T> | ArrayLike<S
 * strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, identity );
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function dispatchBy<T = unknown>( fcns: StridedArrayFcnWithOffsets<T> | ArrayLike<StridedArrayFcnWithOffsets<T>>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:unified-signatures
+declare function dispatchBy<T = unknown>( fcns: StridedArrayFcnWithOffsets<T> | ArrayLike<StridedArrayFcnWithOffsets<T>>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // eslint-disable-line @typescript-eslint/unified-signatures
 
 
 // EXPORTS //

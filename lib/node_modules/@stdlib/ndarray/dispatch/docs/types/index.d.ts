@@ -146,7 +146,7 @@ interface Dispatcher {
 	* fcn( x, y );
 	* // ybuf => <Float64Array>[ 1.0, 2.0, 3.0 ]
 	*/
-	( x: ndarray, y: ndarray ): ndarray | void; // tslint:disable-line:unified-signatures
+	( x: ndarray, y: ndarray ): ndarray | void; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Invokes an ndarray function based on the provided array data types.
@@ -186,7 +186,7 @@ interface Dispatcher {
 	* fcn( x, y, z );
 	* // zbuf => <Float64Array>[ 2.0, 4.0, 6.0 ]
 	*/
-	( x: ndarray, y: ndarray, z: ndarray ): ndarray | void; // tslint:disable-line:unified-signatures
+	( x: ndarray, y: ndarray, z: ndarray ): ndarray | void; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Invokes an ndarray function based on the provided array data types.
@@ -229,7 +229,7 @@ interface Dispatcher {
 	* fcn( x, y, z, w );
 	* // wbuf => <Float64Array>[ 3.0, 6.0, 9.0 ]
 	*/
-	( x: ndarray, y: ndarray, z: ndarray, w: ndarray ): ndarray | void; // tslint:disable-line:unified-signatures
+	( x: ndarray, y: ndarray, z: ndarray, w: ndarray ): ndarray | void; // eslint-disable-line @typescript-eslint/unified-signatures
 
 	/**
 	* Invokes an ndarray function based on the provided array data types.

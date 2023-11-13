@@ -235,7 +235,7 @@ interface InMapAsync {
 	*
 	* inmapAsync( files, read, done );
 	*/
-	<T = unknown, U = unknown, V = unknown>( collection: Collection<T>, fcn: Fcn<T, U, V>, done: Callback<U> ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, U = unknown, V = unknown>( collection: Collection<T>, fcn: Fcn<T, U, V>, done: Callback<U> ): void;
 
 	/**
 	* Returns a function to invoke a function once for each element in a collection and to update the collection in-place.
@@ -345,7 +345,7 @@ interface InMapAsync {
 	* // Run `read` for each element in `files`:
 	* inmapAsync( files, done );
 	*/
-	factory<T = unknown, U = unknown, V = unknown>( fcn: Fcn<T, U, V> ): FactoryFunction<T, U>; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, U = unknown, V = unknown>( fcn: Fcn<T, U, V> ): FactoryFunction<T, U>;
 }
 
 /**

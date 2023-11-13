@@ -52,6 +52,10 @@ var arr = datespace( start, end, 6 );
 
 The `start` and `stop` times may be either [`Date`][mdn-date-object] objects, date strings, Unix timestamps, or JavaScript timestamps.
 
+<!-- FIXME: issue with executing in different realms and validating a Date object. -->
+
+<!-- run-disable -->
+
 ```javascript
 // JavaScript timestamps:
 var end = 1417503654973;
@@ -160,7 +164,7 @@ console.log( arr.join( '\n' ) );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/array/linspace`][@stdlib/array/linspace]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array.</span>
+-   <span class="package-name">[`@stdlib/array/linspace`][@stdlib/array/linspace]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced array over a specified interval.</span>
 -   <span class="package-name">[`@stdlib/array/logspace`][@stdlib/array/logspace]</span><span class="delimiter">: </span><span class="description">generate a logarithmically spaced numeric array.</span>
 
 </section>

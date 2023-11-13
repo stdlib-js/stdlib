@@ -35,7 +35,7 @@ import isSymbolArray = require( './index' );
 
 // Attached to main export is a `primitives` method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isSymbolArray.primitives( [ Object( Symbol( 'abc' ) ) ] ); // $ExpectType boolean
 	isSymbolArray.primitives( [ Symbol( 'abc' ) ] ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isSymbolArray = require( './index' );
 
 // Attached to main export is an `objects` method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isSymbolArray.objects( [ Object( Symbol( 'abc' ) ) ] ); // $ExpectType boolean
 	isSymbolArray.objects( [ Symbol( 'abc' ) ] ); // $ExpectType boolean
 }

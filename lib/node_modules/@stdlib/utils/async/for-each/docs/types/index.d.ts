@@ -217,7 +217,7 @@ interface ForEachAsync {
 	*
 	* forEachAsync( files, read, done );
 	*/
-	<T = unknown, V = unknown>( collection: Collection<T>, fcn: Fcn<T, V>, done: Callback ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, V = unknown>( collection: Collection<T>, fcn: Fcn<T, V>, done: Callback ): void;
 
 	/**
 	* Returns a function to invoke a function once for each element in a collection.
@@ -328,7 +328,7 @@ interface ForEachAsync {
 	* // Run `read` for each element in `files`:
 	* forEachAsync( files, done );
 	*/
-	factory<T = unknown, V = unknown>( fcn: Fcn<T, V> ): FactoryFunction; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, V = unknown>( fcn: Fcn<T, V> ): FactoryFunction;
 }
 
 /**

@@ -76,7 +76,7 @@ jobs:
         BUILD_TASK: ['test-npm-install']
 
         # Define the list of Node.js versions:
-        NODE_VERSION: ['16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
+        NODE_VERSION: ['20', '18', '16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
 
         # Define the list of operating systems:
         OS: ['macOS-latest']
@@ -86,14 +86,20 @@ jobs:
           - OS: 'macOS-latest'
             PLATFORM: 'macos'
 
+          - NODE_VERSION: '20'
+            NPM_VERSION: '>10.0.0'
+
+          - NODE_VERSION: '18'
+            NPM_VERSION: '>10.0.0'
+
           - NODE_VERSION: '16'
-            NPM_VERSION: '>2.7.0'
+            NPM_VERSION: '>2.7.0 <10.0.0'
 
           - NODE_VERSION: '14'
-            NPM_VERSION: '>2.7.0'
+            NPM_VERSION: '>2.7.0 <10.0.0'
 
           - NODE_VERSION: '12'
-            NPM_VERSION: '>2.7.0'
+            NPM_VERSION: '>2.7.0 <9.0.0'
 
           - NODE_VERSION: '10'
             NPM_VERSION: '>2.7.0 <7.0.0'

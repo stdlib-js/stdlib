@@ -23,6 +23,6 @@ import UINT8_NUM_BYTES = require( './index' );
 
 // The export is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	UINT8_NUM_BYTES; // $ExpectType number
 }

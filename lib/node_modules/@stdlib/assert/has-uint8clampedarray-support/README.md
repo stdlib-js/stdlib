@@ -36,6 +36,8 @@ var hasUint8ClampedArraySupport = require( '@stdlib/assert/has-uint8clampedarray
 
 Detects if a runtime environment supports [`Uint8ClampedArray`][mdn-uint8clampedarray].
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var bool = hasUint8ClampedArraySupport();
 // returns <boolean>

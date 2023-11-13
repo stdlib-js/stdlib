@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* tslint:disable:max-file-line-count */
+/* eslint-disable max-lines */
 
 // TypeScript Version: 4.1
 
@@ -161,7 +161,7 @@ declare function sliceAssign( x: ndarray, y: float64ndarray, s: MultiSlice, opti
 * arr = ndarray2array( y );
 * // returns [ [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ], [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ] ]
 */
-declare function sliceAssign( x: ndarray, y: float64ndarray, s: ArrayLike<SliceArgument>, options?: Options ): float64ndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: float64ndarray, s: ArrayLike<SliceArgument>, options?: Options ): float64ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -343,7 +343,7 @@ declare function sliceAssign( x: ndarray, y: float32ndarray, s: MultiSlice, opti
 * arr = ndarray2array( y );
 * // returns [ [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ], [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ] ]
 */
-declare function sliceAssign( x: ndarray, y: float32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): float32ndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: float32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): float32ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -525,7 +525,7 @@ declare function sliceAssign( x: ndarray, y: int32ndarray, s: MultiSlice, option
 * arr = ndarray2array( y );
 * // returns [ [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ], [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ] ]
 */
-declare function sliceAssign( x: ndarray, y: int32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int32ndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: int32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int32ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -707,7 +707,7 @@ declare function sliceAssign( x: ndarray, y: int16ndarray, s: MultiSlice, option
 * arr = ndarray2array( y );
 * // returns [ [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ], [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ] ]
 */
-declare function sliceAssign( x: ndarray, y: int16ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int16ndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: int16ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int16ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -889,7 +889,7 @@ declare function sliceAssign( x: ndarray, y: int8ndarray, s: MultiSlice, options
 * arr = ndarray2array( y );
 * // returns [ [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ], [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ] ]
 */
-declare function sliceAssign( x: ndarray, y: int8ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int8ndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: int8ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int8ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -1071,7 +1071,7 @@ declare function sliceAssign( x: ndarray, y: uint32ndarray, s: MultiSlice, optio
 * arr = ndarray2array( y );
 * // returns [ [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ], [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ] ]
 */
-declare function sliceAssign( x: ndarray, y: uint32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint32ndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: uint32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint32ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -1253,7 +1253,7 @@ declare function sliceAssign( x: ndarray, y: uint16ndarray, s: MultiSlice, optio
 * arr = ndarray2array( y );
 * // returns [ [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ], [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ] ]
 */
-declare function sliceAssign( x: ndarray, y: uint16ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint16ndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: uint16ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint16ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -1435,7 +1435,7 @@ declare function sliceAssign( x: ndarray, y: uint8ndarray, s: MultiSlice, option
 * arr = ndarray2array( y );
 * // returns [ [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ], [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ] ]
 */
-declare function sliceAssign( x: ndarray, y: uint8ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint8ndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: uint8ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint8ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -1617,7 +1617,7 @@ declare function sliceAssign( x: ndarray, y: uint8cndarray, s: MultiSlice, optio
 * arr = ndarray2array( y );
 * // returns [ [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ], [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ] ]
 */
-declare function sliceAssign( x: ndarray, y: uint8cndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint8cndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: uint8cndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint8cndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -1788,7 +1788,7 @@ declare function sliceAssign( x: ndarray, y: complex128ndarray, s: MultiSlice, o
 * var bool = ( out === y );
 * // returns true
 */
-declare function sliceAssign( x: ndarray, y: complex128ndarray, s: ArrayLike<SliceArgument>, options?: Options ): complex128ndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: complex128ndarray, s: ArrayLike<SliceArgument>, options?: Options ): complex128ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -1954,7 +1954,7 @@ declare function sliceAssign( x: ndarray, y: complex64ndarray, s: MultiSlice, op
 * var bool = ( out === y );
 * // returns true
 */
-declare function sliceAssign( x: ndarray, y: complex64ndarray, s: ArrayLike<SliceArgument>, options?: Options ): complex64ndarray; // tslint:disable-line:unified-signatures
+declare function sliceAssign( x: ndarray, y: complex64ndarray, s: ArrayLike<SliceArgument>, options?: Options ): complex64ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -2130,7 +2130,7 @@ declare function sliceAssign<T = unknown>( x: ndarray, y: genericndarray<T>, s: 
 * arr = ndarray2array( y );
 * // returns [ [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ], [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ] ]
 */
-declare function sliceAssign<T = unknown>( x: ndarray, y: genericndarray<T>, s: ArrayLike<SliceArgument>, options?: Options ): genericndarray<T>; // tslint:disable-line:unified-signatures
+declare function sliceAssign<T = unknown>( x: ndarray, y: genericndarray<T>, s: ArrayLike<SliceArgument>, options?: Options ): genericndarray<T>; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -2311,7 +2311,7 @@ declare function sliceAssign<T = unknown>( x: ndarray, y: typedndarray<T>, s: Mu
 * arr = ndarray2array( y );
 * // returns [ [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ], [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ] ]
 */
-declare function sliceAssign<T = unknown>( x: ndarray, y: typedndarray<T>, s: ArrayLike<SliceArgument>, options?: Options ): typedndarray<T>; // tslint:disable-line:unified-signatures
+declare function sliceAssign<T = unknown>( x: ndarray, y: typedndarray<T>, s: ArrayLike<SliceArgument>, options?: Options ): typedndarray<T>; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.

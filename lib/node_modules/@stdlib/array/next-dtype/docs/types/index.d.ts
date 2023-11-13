@@ -78,7 +78,7 @@ declare function nextDataType( dtype: 'float32' ): 'float64';
 * var dt = nextDataType( 'int32' );
 * // returns -1
 */
-declare function nextDataType( dtype: 'int32' ): number; // tslint:disable-line:unified-signatures
+declare function nextDataType( dtype: 'int32' ): number; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns the next larger array data type of the same kind.
@@ -126,7 +126,7 @@ declare function nextDataType( dtype: 'int8' ): 'int16';
 * var dt = nextDataType( 'uint32' );
 * // returns -1
 */
-declare function nextDataType( dtype: 'uint32' ): number; // tslint:disable-line:unified-signatures
+declare function nextDataType( dtype: 'uint32' ): number; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns the next larger array data type of the same kind.
@@ -174,7 +174,7 @@ declare function nextDataType( dtype: 'uint8' ): 'uint16';
 * var dt = nextDataType( 'uint8c' );
 * // returns 'uint16'
 */
-declare function nextDataType( dtype: 'uint8c' ): 'uint16'; // tslint:disable-line:unified-signatures
+declare function nextDataType( dtype: 'uint8c' ): 'uint16'; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns the next larger array data type of the same kind.
@@ -190,7 +190,7 @@ declare function nextDataType( dtype: 'uint8c' ): 'uint16'; // tslint:disable-li
 * var dt = nextDataType( 'generic' );
 * // returns -1
 */
-declare function nextDataType( dtype: 'generic' ): number; // tslint:disable-line:unified-signatures
+declare function nextDataType( dtype: 'generic' ): number; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns the next larger array data type of the same kind.
@@ -206,7 +206,7 @@ declare function nextDataType( dtype: 'generic' ): number; // tslint:disable-lin
 * var dt = nextDataType( 'complex128' );
 * // returns -1
 */
-declare function nextDataType( dtype: 'complex128' ): number; // tslint:disable-line:unified-signatures
+declare function nextDataType( dtype: 'complex128' ): number; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns the next larger array data type of the same kind.
