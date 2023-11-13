@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Finds top-level namespaces.
+# Finds top-level namespace packages.
 
 
 # VARIABLES #
@@ -30,7 +30,7 @@ base_dir="${root_dir}/lib/node_modules"
 
 # FUNCTIONS #
 
-# Finds packages.
+# Finds top-level namespace packages.
 main() {
 	local pkgs
 
