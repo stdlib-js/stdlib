@@ -190,10 +190,10 @@ Computes the multiplicative inverse for each element in a single-precision float
 ```c
 #include <stdint.h>
 
-float X[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
+const float X[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
 float Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-int64_t N = 4;
+const int64_t N = 4;
 
 stdlib_strided_sinv( N, X, 2, Y, 2 );
 ```
@@ -235,17 +235,17 @@ void stdlib_strided_sinv( const int64_t N, const float *X, const int64_t strideX
 
 int main( void ) {
     // Create an input strided array:
-    float X[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
+    const float X[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
 
     // Create an output strided array:
     float Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
     // Specify the number of elements:
-    int64_t N = 4;
+    const int64_t N = 4;
 
     // Specify the stride lengths:
-    int64_t strideX = 2;
-    int64_t strideY = 2;
+    const int64_t strideX = 2;
+    const int64_t strideY = 2;
 
     // Compute the results:
     stdlib_strided_sinv( N, X, strideX, Y, strideY );

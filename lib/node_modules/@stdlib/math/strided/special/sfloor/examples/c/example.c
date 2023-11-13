@@ -22,17 +22,17 @@
 
 int main( void ) {
 	// Create an input strided array:
-	float x[] = { -1.5, 2.3, -3.9, 4.2, -5.0, -6.0, 7.9, -8.1 };
+	const float x[] = { -1.5, 2.3, -3.9, 4.2, -5.0, -6.0, 7.9, -8.1 };
 
 	// Create an output strided array:
 	float y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 	// Specify the number of elements:
-	int64_t N = 4;
+	const int64_t N = 4;
 
 	// Specify the stride lengths:
-	int64_t strideX = 2;
-	int64_t strideY = 2;
+	const int64_t strideX = 2;
+	const int64_t strideY = 2;
 
 	// Compute the results:
 	stdlib_strided_sfloor( N, x, strideX, y, strideY );

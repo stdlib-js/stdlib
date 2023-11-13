@@ -22,17 +22,17 @@
 
 int main( void ) {
 	// Create an input strided array:
-	double x[] = { -1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0 };
+	const double x[] = { -1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0 };
 
 	// Create an output strided array:
 	double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 	// Specify the number of elements:
-	int64_t N = 4;
+	const int64_t N = 4;
 
 	// Specify the stride lengths:
-	int64_t strideX = 2;
-	int64_t strideY = 2;
+	const int64_t strideX = 2;
+	const int64_t strideY = 2;
 
 	// Compute the absolute value element-wise:
 	stdlib_strided_dabs( N, x, strideX, y, strideY );

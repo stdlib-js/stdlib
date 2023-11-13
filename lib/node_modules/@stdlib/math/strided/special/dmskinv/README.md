@@ -210,11 +210,11 @@ Computes the [multiplicative inverse][@stdlib/math/base/special/inv] for each el
 ```c
 #include <stdint.h>
 
-double X[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
-uint8_t Mask[] = { 0, 0, 1, 0, 1, 1, 0, 0 };
+const double X[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
+const uint8_t Mask[] = { 0, 0, 1, 0, 1, 1, 0, 0 };
 double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-int64_t N = 4;
+const int64_t N = 4;
 
 stdlib_strided_dmskinv( N, X, 2, Mask, 2, Y, 2 );
 ```
@@ -258,21 +258,21 @@ void stdlib_strided_dmskinv( const int64_t N, const double *X, const int64_t str
 
 int main( void ) {
     // Create an input strided array:
-    double X[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
+    const double X[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
 
     // Create a mask strided array:
-    uint8_t M[] = { 0, 0, 1, 0, 1, 1, 0, 0 };
+    const uint8_t M[] = { 0, 0, 1, 0, 1, 1, 0, 0 };
 
     // Create an output strided array:
     double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
     // Specify the number of elements:
-    int64_t N = 4;
+    const int64_t N = 4;
 
     // Specify the stride lengths:
-    int64_t strideX = 2;
-    int64_t strideM = 2;
-    int64_t strideY = 2;
+    const int64_t strideX = 2;
+    const int64_t strideM = 2;
+    const int64_t strideY = 2;
 
     // Compute the results:
     stdlib_strided_dmskinv( N, X, strideX, M, strideM, Y, strideY );

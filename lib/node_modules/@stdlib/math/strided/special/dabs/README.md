@@ -200,10 +200,10 @@ Computes the absolute value for each element in a double-precision floating-poin
 ```c
 #include <stdint.h>
 
-double X[] = { -1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0 };
+const double X[] = { -1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0 };
 double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-int64_t N = 4;
+const int64_t N = 4;
 
 stdlib_strided_dabs( N, X, 2, Y, 2 );
 ```
@@ -245,17 +245,17 @@ void stdlib_strided_dabs( const int64_t N, const double *X, const int64_t stride
 
 int main( void ) {
     // Create an input strided array:
-    double X[] = { -1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0 };
+    const double X[] = { -1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0 };
 
     // Create an output strided array:
     double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
     // Specify the number of elements:
-    int64_t N = 4;
+    const int64_t N = 4;
 
     // Specify the stride lengths:
-    int64_t strideX = 2;
-    int64_t strideY = 2;
+    const int64_t strideX = 2;
+    const int64_t strideY = 2;
 
     // Compute the absolute value element-wise:
     stdlib_strided_dabs( N, X, strideX, Y, strideY );
