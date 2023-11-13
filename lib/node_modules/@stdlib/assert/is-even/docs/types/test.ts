@@ -35,7 +35,7 @@ import isEven = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isEven.isPrimitive( new Number( 4 ) ); // $ExpectType boolean
 	isEven.isPrimitive( 4 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isEven = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isEven.isObject( new Number( 4 ) ); // $ExpectType boolean
 	isEven.isObject( 4 ); // $ExpectType boolean
 }

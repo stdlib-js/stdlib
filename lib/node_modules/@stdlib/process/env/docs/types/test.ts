@@ -23,6 +23,6 @@ import ENV = require( './index' );
 
 // The variable is an object...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	ENV; // $ExpectType Object
 }

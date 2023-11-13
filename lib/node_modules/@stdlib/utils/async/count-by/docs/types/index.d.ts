@@ -249,7 +249,7 @@ interface CountByAsync {
 	*
 	* countByAsync( files, indicator, done );
 	*/
-	<T = unknown, V = unknown>( collection: Collection<T>, indicator: Indicator<T, V>, done: Callback ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, V = unknown>( collection: Collection<T>, indicator: Indicator<T, V>, done: Callback ): void;
 
 	/**
 	* Returns a function for grouping values according to an indicator function and returns group counts.
@@ -361,7 +361,7 @@ interface CountByAsync {
 	* // Try to read each element in `files`:
 	* countByAsync( files, done );
 	*/
-	factory<T = unknown, V = unknown>( indicator: Indicator<T, V> ): FactoryFunction<T>; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, V = unknown>( indicator: Indicator<T, V> ): FactoryFunction<T>;
 }
 
 /**

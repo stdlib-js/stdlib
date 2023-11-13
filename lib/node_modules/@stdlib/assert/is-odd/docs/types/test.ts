@@ -35,7 +35,7 @@ import isOdd = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isOdd.isPrimitive( new Number( 3 ) ); // $ExpectType boolean
 	isOdd.isPrimitive( 3 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isOdd = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isOdd.isObject( new Number( 3 ) ); // $ExpectType boolean
 	isOdd.isObject( 3 ); // $ExpectType boolean
 }

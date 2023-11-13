@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* tslint:disable:unified-signatures */
+/* eslint-disable @typescript-eslint/unified-signatures */
 
 // TypeScript Version: 4.1
 

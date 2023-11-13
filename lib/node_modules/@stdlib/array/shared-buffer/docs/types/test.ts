@@ -16,9 +16,7 @@
 * limitations under the License.
 */
 
-// tslint:disable: no-construct
-// tslint:disable: no-unused-expression
-// tslint:disable: no-unsafe-any
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 
 import SharedArrayBuffer = require( './index' );
 

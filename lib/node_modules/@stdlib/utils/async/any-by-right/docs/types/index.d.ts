@@ -220,7 +220,7 @@ interface AnyByRightAsync {
 	*
 	* anyByRightAsync( files, predicate, done );
 	*/
-	<T = unknown, V = unknown>( collection: Collection<T>, predicate: Predicate<T, V>, done: Callback ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, V = unknown>( collection: Collection<T>, predicate: Predicate<T, V>, done: Callback ): void;
 
 	/**
 	* Returns a function for testing whether at least one element in a collection passes a test implemented by a predicate function, iterating from right to left.
@@ -336,7 +336,7 @@ interface AnyByRightAsync {
 	* // Try to read each element in `files`:
 	* anyByRightAsync( files, done );
 	*/
-	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>;
 }
 
 /**

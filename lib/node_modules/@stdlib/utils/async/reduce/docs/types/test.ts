@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-/* tslint:disable:no-unsafe-any */
-
 import reduceAsync = require( './index' );
 
 const reducer = ( acc: any, value: number, index: number, next: Function ) => {

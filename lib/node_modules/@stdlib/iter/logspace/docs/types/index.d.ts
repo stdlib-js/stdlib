@@ -65,7 +65,7 @@ interface Options {
 *
 * // ...
 */
-declare function iterLogspace( start: number, stop: number, N?: number, options?: Options ): Iterator; // tslint:disable-line: max-length
+declare function iterLogspace( start: number, stop: number, N?: number, options?: Options ): Iterator;
 
 /**
 * Returns an iterator which returns evenly spaced numbers on a log scale.
@@ -98,7 +98,7 @@ declare function iterLogspace( start: number, stop: number, N?: number, options?
 *
 * // ...
 */
-declare function iterLogspace( start: number, stop: number, options?: Options ): Iterator; // tslint:disable-line: max-length
+declare function iterLogspace( start: number, stop: number, options?: Options ): Iterator;
 
 
 // EXPORTS //

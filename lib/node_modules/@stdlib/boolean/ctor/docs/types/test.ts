@@ -16,8 +16,7 @@
 * limitations under the License.
 */
 
-// tslint:disable: no-construct
-// tslint:disable: no-unused-expression
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 
 import Bool = require( './index' );
 

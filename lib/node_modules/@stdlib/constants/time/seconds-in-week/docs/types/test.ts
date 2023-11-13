@@ -23,6 +23,6 @@ import SECONDS_IN_WEEK = require( './index' );
 
 // The variable is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	SECONDS_IN_WEEK; // $ExpectType number
 }

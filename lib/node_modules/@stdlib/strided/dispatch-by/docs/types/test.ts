@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// tslint:disable:max-file-line-count
+/* eslint-disable max-lines */
 
 /// <reference types="@stdlib/types"/>
 
@@ -119,7 +119,7 @@ function strided( arrays: Array<ArrayLike<any>>, shape: Array<number>, strides: 
 	sy = strides[ 1 ];
 	ix = 0;
 	iy = 0;
-	for ( i = 0; i < N; i++ ) { // tslint:disable-line:increment-decrement
+	for ( i = 0; i < N; i++ ) {
 		v = clbk.call( thisArg, x[ ix ], i, [ ix, iy ], [ x, y ] );
 		if ( v !== void 0 ) {
 			y[ iy ] = fcn( v );
@@ -158,7 +158,7 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	sy = strides[ 1 ];
 	ix = offsets[ 0 ];
 	iy = offsets[ 1 ];
-	for ( i = 0; i < N; i++ ) { // tslint:disable-line:increment-decrement
+	for ( i = 0; i < N; i++ ) {
 		v = clbk.call( thisArg, x[ ix ], i, [ ix, iy ], [ x, y ] );
 		if ( v !== void 0 ) {
 			y[ iy ] = fcn( v );

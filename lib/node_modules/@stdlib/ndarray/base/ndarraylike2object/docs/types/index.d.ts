@@ -45,7 +45,7 @@ type Setter = ( buf: ndarray['data'], idx: number, value: any ) => void;
 /**
 * Interface describing the output object.
 */
-interface ndarrayObject { // tslint:disable-line:class-name
+interface ndarrayObject {
 	/**
 	* Reference to the original ndarray-like object.
 	*/

@@ -35,7 +35,7 @@ import isComposite = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isComposite.isPrimitive( new Number( 0.2 ) ); // $ExpectType boolean
 	isComposite.isPrimitive( 0.2 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isComposite = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isComposite.isObject( new Number( 0.2 ) ); // $ExpectType boolean
 	isComposite.isObject( 0.2 ); // $ExpectType boolean
 }

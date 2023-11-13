@@ -36,7 +36,7 @@ import isPositiveZero = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isPositiveZero.isPrimitive( new Number( 0 ) ); // $ExpectType boolean
 	isPositiveZero.isPrimitive( 0 ); // $ExpectType boolean
 }
@@ -50,7 +50,7 @@ import isPositiveZero = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isPositiveZero.isObject( new Number( 0 ) ); // $ExpectType boolean
 	isPositiveZero.isObject( 0 ); // $ExpectType boolean
 }

@@ -35,7 +35,7 @@ import isSafeInteger = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isSafeInteger.isPrimitive( new Number( 2 ) ); // $ExpectType boolean
 	isSafeInteger.isPrimitive( 2 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isSafeInteger = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isSafeInteger.isObject( new Number( 2 ) ); // $ExpectType boolean
 	isSafeInteger.isObject( 2 ); // $ExpectType boolean
 }

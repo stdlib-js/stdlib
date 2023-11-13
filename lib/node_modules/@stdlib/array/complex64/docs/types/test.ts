@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// tslint:disable:no-unused-expression
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 
 import Complex64Array = require( './index' );
 import Complex64 = require( '@stdlib/complex/float32' );

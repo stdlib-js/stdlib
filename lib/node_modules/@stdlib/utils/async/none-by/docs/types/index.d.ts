@@ -220,7 +220,7 @@ interface NoneByAsync {
 	*
 	* noneByAsync( files, predicate, done );
 	*/
-	<T = unknown, V = unknown>( collection: Collection<T>, predicate: Predicate<T, V>, done: Callback ): void; // tslint:disable-line:no-unnecessary-generics
+	<T = unknown, V = unknown>( collection: Collection<T>, predicate: Predicate<T, V>, done: Callback ): void;
 
 	/**
 	* Returns a function for testing whether all elements in a collection fail a test implemented by a predicate function.
@@ -339,7 +339,7 @@ interface NoneByAsync {
 	* // Try to read each element in `files`:
 	* noneByAsync( files, done );
 	*/
-	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>; // tslint:disable-line:no-unnecessary-generics
+	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>;
 }
 
 /**

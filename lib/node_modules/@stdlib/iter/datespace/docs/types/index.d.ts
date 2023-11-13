@@ -69,7 +69,7 @@ interface Options {
 *
 * // ...
 */
-declare function iterDatespace( start: number | string | Date, stop: number | string | Date, N?: number, options?: Options ): Iterator; // tslint:disable-line: max-length
+declare function iterDatespace( start: number | string | Date, stop: number | string | Date, N?: number, options?: Options ): Iterator;
 
 /**
 * Returns an iterator which returns evenly spaced dates over a specified interval.
@@ -105,7 +105,7 @@ declare function iterDatespace( start: number | string | Date, stop: number | st
 *
 * // ...
 */
-declare function iterDatespace( start: number | string | Date, stop: number | string | Date, options?: Options ): Iterator; // tslint:disable-line: max-length
+declare function iterDatespace( start: number | string | Date, stop: number | string | Date, options?: Options ): Iterator;
 
 
 // EXPORTS //

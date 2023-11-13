@@ -52,7 +52,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterLinspace( start: number, stop: number, N?: number ): Iterator; // tslint:disable-line: max-length
+declare function iterLinspace( start: number, stop: number, N?: number ): Iterator;
 
 
 // EXPORTS //

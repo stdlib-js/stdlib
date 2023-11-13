@@ -164,7 +164,7 @@ interface ExtendedOptions extends Options {
 * var v = arr.get( 0 );
 * // returns [ 1, 2 ]
 */
-declare function array<T = unknown>( options: OptionsWithShape | OptionsWithBuffer ): typedndarray<T>; // tslint:disable-line:no-unnecessary-generics
+declare function array<T = unknown>( options: OptionsWithShape | OptionsWithBuffer ): typedndarray<T>;
 
 /**
 * Returns a multidimensional array.
@@ -220,7 +220,7 @@ declare function array<T = unknown>( options: OptionsWithShape | OptionsWithBuff
 * var v = arr.get( 0, 0 );
 * // returns 1.0
 */
-declare function array<T = unknown>( buffer: ArrayLike<any>, options?: ExtendedOptions ): typedndarray<T>; // tslint:disable-line:no-unnecessary-generics
+declare function array<T = unknown>( buffer: ArrayLike<any>, options?: ExtendedOptions ): typedndarray<T>;
 
 
 // EXPORTS //

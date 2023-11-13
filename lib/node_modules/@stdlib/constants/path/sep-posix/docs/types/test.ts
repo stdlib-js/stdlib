@@ -23,6 +23,6 @@ import PATH_SEP_POSIX = require( './index' );
 
 // The variable is a string...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	PATH_SEP_POSIX; // $ExpectType string
 }

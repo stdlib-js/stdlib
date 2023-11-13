@@ -35,7 +35,7 @@ import isNonNegativeNumberArray = require( './index' );
 
 // Attached to main export is a `primitives` method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isNonNegativeNumberArray.primitives( [ new Number( 2.8 ) ] ); // $ExpectType boolean
 	isNonNegativeNumberArray.primitives( [ 2.8 ] ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isNonNegativeNumberArray = require( './index' );
 
 // Attached to main export is an `objects` method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isNonNegativeNumberArray.objects( [ new Number( 2 ) ] ); // $ExpectType boolean
 	isNonNegativeNumberArray.objects( [ 2 ] ); // $ExpectType boolean
 }

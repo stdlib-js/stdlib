@@ -18,7 +18,7 @@
 
 // TypeScript Version: 4.1
 
-// tslint:disable:unified-signatures
+/* eslint-disable @typescript-eslint/unified-signatures */
 
 /// <reference types="@stdlib/types"/>
 

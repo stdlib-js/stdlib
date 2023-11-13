@@ -61,7 +61,7 @@ interface PRNGOptions {
 /**
 * Interface defining ndarray options.
 */
-interface ndarrayOptions { // tslint:disable-line:class-name
+interface ndarrayOptions {
 	/**
 	* Specifies whether an array is row-major (C-style) or column-major (Fortran-style). Default: 'row-major'.
 	*/
