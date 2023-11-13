@@ -21,7 +21,7 @@
 #include <stdbool.h>
 
 int main( void ) {
-	double x[] = { 3.14, -3.14, 1.0/0.0, 0.0/0.0 };
+	const double x[] = { 3.14, -3.14, 1.0/0.0, 0.0/0.0 };
 
 	bool b;
 	int i;
