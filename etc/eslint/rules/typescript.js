@@ -732,14 +732,16 @@ rules[ '@typescript-eslint/no-unused-expressions' ] = 'error';
 * @name no-unused-vars
 * @memberof rules
 * @type {string}
-* @default 'off'
+* @default [ 'error', { 'args': 'after-used' } ]
 * @see [no-unused-vars]{@link https://typescript-eslint.io/rules/no-unused-vars}
 *
 * @example
 * // Okay...
 * const unused = "I'm never used";
 */
-rules[ '@typescript-eslint/no-unused-vars' ] = 'off';
+rules[ '@typescript-eslint/no-unused-vars' ] = [ 'error', {
+	'args': 'after-used'
+}];
 
 /**
 * Disallows the use of variables before they are defined.
@@ -1327,22 +1329,19 @@ rules[ 'eqeqeq' ] = [ 'error', 'always' ];
 rules[ 'guard-for-in' ] = 'error';
 
 /**
-* Requires identifiers to match a specified regular expression.
+* Do not impose draconian name restrictions.
 *
 * @name id-match
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [id-match]{@link https://eslint.org/docs/rules/id-match}
 *
 * @example
-* // Bad...
-* const my_var = 'bad';
-*
 * // Good...
-* const myVar = 'good';
+* const foo = 'bar';
 */
-rules[ 'id-match' ] = 'error';
+rules[ 'id-match' ] = 'off';
 
 /**
 * Allow default exports in modules.
