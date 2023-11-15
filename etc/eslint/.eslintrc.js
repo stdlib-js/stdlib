@@ -67,7 +67,7 @@ eslint.overrides = require( './overrides/repl_namespace.js' );
 /**
 * Parser options.
 *
-* @name ParserOptions
+* @name parserOptions
 * @memberof eslint
 * @type {Object}
 */
@@ -76,7 +76,7 @@ eslint.parserOptions = require( './parser-options' );
 /**
 * Plugins.
 *
-* @name Plugins
+* @name plugins
 * @memberof eslint
 * @type {Object}
 */

@@ -62,7 +62,7 @@ eslint.parser = '@typescript-eslint/parser';
 /**
 * Parser options.
 *
-* @name ParserOptions
+* @name parserOptions
 * @memberof eslint
 * @type {Object}
 */
@@ -71,7 +71,7 @@ eslint.parserOptions = require( './parser-options/typescript.js' );
 /**
 * Plugins.
 *
-* @name Plugins
+* @name plugins
 * @memberof eslint
 * @type {Object}
 */

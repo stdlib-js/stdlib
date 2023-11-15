@@ -41,5 +41,7 @@
     "lib/node_modules/**/@stdlib/types/index.d.ts",
     "lib/node_modules/**/@stdlib/types/test.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
