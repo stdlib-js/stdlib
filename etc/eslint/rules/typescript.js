@@ -71,7 +71,7 @@ rules[ '@typescript-eslint/adjacent-overload-signatures' ] = 'error';
 * @name array-type
 * @memberof rules
 * @type {Array}
-* @default [ 'error', {'default': 'generic'}]
+* @default [ 'error', {'default': 'generic'} ]
 * @see [array-type]{@link https://typescript-eslint.io/rules/array-type}
 *
 * @example
@@ -119,7 +119,7 @@ rules[ '@typescript-eslint/await-thenable' ] = 'error';
 * @example
 * // Okay...
 * // @ts-ignore
-* console.log(someVarThatDoesNotExist);
+* console.log( someVarThatDoesNotExist );
 */
 rules[ '@typescript-eslint/ban-ts-comment' ] = 'off';
 
@@ -255,13 +255,13 @@ rules[ '@typescript-eslint/explicit-member-accessibility' ] = [
 *
 * @example
 * // Bad...
-* export function badFunction(a) {
-*   return a;
+* export function badFunction( a ) {
+*     return a;
 * }
 *
 * // Good...
-* export function goodFunction(a: string): string {
-*   return a;
+* export function goodFunction( a: string ): string {
+*     return a;
 * }
 */
 rules[ '@typescript-eslint/explicit-module-boundary-types' ] = 'error';
@@ -294,20 +294,20 @@ rules[ '@typescript-eslint/indent' ] = [ 'error', 'tab' ];
 * @name member-delimiter-style
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'multiline': { 'delimiter': 'semi', 'requireLast': true }, 'singleline': { 'delimiter': 'semi', 'requireLast': false } }]
+* @default [ 'error', { 'multiline': { 'delimiter': 'semi', 'requireLast': true }, 'singleline': { 'delimiter': 'semi', 'requireLast': false } } ]
 * @see [member-delimiter-style]{@link https://typescript-eslint.io/rules/member-delimiter-style}
 *
 * @example
 * // Bad...
 * interface Bad {
-*   name: string,
-*   age: number
+*     name: string,
+*     age: number
 * }
 *
 * // Good...
 * interface Good {
-*   name: string;
-*   age: number;
+*     name: string;
+*     age: number;
 * }
 */
 rules[ '@typescript-eslint/member-delimiter-style' ] = [
@@ -330,7 +330,7 @@ rules[ '@typescript-eslint/member-delimiter-style' ] = [
 * @name naming-convention
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'selector': 'variable', 'format': [ 'camelCase', 'UPPER_CASE' ], 'leadingUnderscore': 'forbid', 'trailingUnderscore': 'forbid' }]
+* @default [ 'error', { 'selector': 'variable', 'format': [ 'camelCase', 'UPPER_CASE' ], 'leadingUnderscore': 'forbid', 'trailingUnderscore': 'forbid' } ]
 * @see [naming-convention]{@link https://typescript-eslint.io/rules/naming-convention}
 *
 * @example
@@ -358,7 +358,7 @@ rules[ '@typescript-eslint/naming-convention' ] = [
 * @name no-shadow
 * @memberof rules
 * @type {Array}
-* @default [ 'off', { 'hoist': 'all' }]
+* @default [ 'off', { 'hoist': 'all' } ]
 * @see [no-shadow]{@link https://typescript-eslint.io/rules/no-shadow}
 *
 * @example
@@ -383,7 +383,7 @@ rules[ '@typescript-eslint/no-shadow' ] = [ 'off', {
 *
 * @example
 * // Okay...
-* delete object[dynamicKey];
+* delete object[ dynamicKey ];
 */
 rules[ '@typescript-eslint/no-dynamic-delete' ] = 'off';
 
@@ -402,7 +402,7 @@ rules[ '@typescript-eslint/no-dynamic-delete' ] = 'off';
 *
 * // Good...
 * function noOp() {
-*   // intentional no-op
+*     // intentional no-op
 * }
 */
 rules[ '@typescript-eslint/no-empty-function' ] = 'error';
@@ -422,7 +422,7 @@ rules[ '@typescript-eslint/no-empty-function' ] = 'error';
 *
 * // Good...
 * interface NotEmpty {
-*   data: string;
+*     data: string;
 * }
 */
 rules[ '@typescript-eslint/no-empty-interface' ] = 'error';
@@ -438,10 +438,10 @@ rules[ '@typescript-eslint/no-empty-interface' ] = 'error';
 *
 * @example
 * // Bad...
-* function unsafe(arg: any): any { return arg; }
+* function unsafe( arg: any ): any { return arg; }
 *
 * // Good...
-* function safe(arg: unknown): unknown { return arg; }
+* function safe( arg: unknown ): unknown { return arg; }
 */
 rules[ '@typescript-eslint/no-explicit-any' ] = 'warn';
 
@@ -457,12 +457,12 @@ rules[ '@typescript-eslint/no-explicit-any' ] = 'warn';
 * @example
 * // Bad...
 * class StaticOnly {
-*   static doSomething() {}
+*     static doSomething() {}
 * }
 *
 * // Good...
 * namespace StaticOnly {
-*   export function doSomething() {}
+*     export function doSomething() {}
 * }
 */
 rules[ '@typescript-eslint/no-extraneous-class' ] = 'error';
@@ -478,10 +478,10 @@ rules[ '@typescript-eslint/no-extraneous-class' ] = 'error';
 *
 * @example
 * // Bad...
-* new Promise(resolve => resolve());
+* new Promise( resolve => resolve() );
 *
 * // Good...
-* new Promise(resolve => resolve()).catch(handleError);
+* new Promise( resolve => resolve() ).catch( handleError );
 */
 rules[ '@typescript-eslint/no-floating-promises' ] = 'error';
 
