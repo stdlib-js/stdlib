@@ -162,7 +162,7 @@ var overrides = [
 		}
 	},
 	{
-		'files': ['*.d.ts', '*.ts', '*.tsx'],
+		'files': [ '*.d.ts', '*.ts', '*.tsx' ],
 		'extends': resolve( __dirname, '..', '.eslintrc.typescript.js' )
 	}
 ];

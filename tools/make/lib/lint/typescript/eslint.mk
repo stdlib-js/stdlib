@@ -48,6 +48,7 @@ ifneq ($(FIX_TYPE),)
 	ESLINT_TS_FLAGS += --fix-type $(FIX_TYPE)
 endif
 
+
 # RULES #
 
 #/
@@ -133,7 +134,7 @@ endif
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
-# make eslint-ts-tests
+# make eslint-ts-declarations-tests
 #
 # @example
 # make eslint-ts-declarations-tests TYPESCRIPT_DECLARATIONS_TESTS_FILTER=".*/math/base/special/abs/.*"
