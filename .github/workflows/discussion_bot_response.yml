@@ -33,8 +33,8 @@ jobs:
     # Define a display name:
     name: 'Respond to question'
 
-    # Define the conditions under which the job should run:
-    if: github.event.discussion.category.name == 'stdlib-bot Q&A'
+    # Define the conditions under which the job should run: FIXME: un-comment if and when re-enabled
+    # if: github.event.discussion.category.name == 'stdlib-bot Q&A'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
