@@ -631,6 +631,7 @@ base.expm1rel
 base.exponent
 base.exponentf
 base.factorial
+base.factorial2
 base.factorialln
 base.fallingFactorial
 base.fibonacci

@@ -631,6 +631,7 @@
 "@stdlib/number/float64/base/exponent",base.exponent
 "@stdlib/number/float32/base/exponent",base.exponentf
 "@stdlib/math/base/special/factorial",base.factorial
+"@stdlib/math/base/special/factorial2",base.factorial2
 "@stdlib/math/base/special/factorialln",base.factorialln
 "@stdlib/math/base/special/falling-factorial",base.fallingFactorial
 "@stdlib/math/base/special/fibonacci",base.fibonacci
