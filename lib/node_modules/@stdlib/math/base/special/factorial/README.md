@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Factorial
+# factorial
 
 > [Factorial][factorial-function] function.
 
