@@ -335,7 +335,6 @@ rules[ '@typescript-eslint/member-delimiter-style' ] = [
 *
 * @example
 * // Bad...
-* const BAD_NAME = 1;
 * const bad_Name = 2;
 *
 * // Good...

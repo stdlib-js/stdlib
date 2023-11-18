@@ -32,7 +32,6 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/eslint.mk
 # -   This rule supports the environment variables supported by each context-specific (`lint-typescript-<context>`) prerequisite.
 # -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained TypeScript files.
 #
-# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {string} [TYPESCRIPT_DECLARATIONS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {string} [TYPESCRIPT_DECLARATIONS_TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
@@ -41,34 +40,11 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/eslint.mk
 # make lint-typescript
 #
 # @example
-# make lint-typescript SOURCES_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_DECLARATIONS_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_DECLARATIONS_TESTS_FILTER=".*/blas/base/dasum/.*"
+# make lint-typescript TYPESCRIPT_DECLARATIONS_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_DECLARATIONS_TESTS_FILTER=".*/blas/base/dasum/.*"
 #/
-lint-typescript: lint-typescript-src lint-typescript-declarations lint-typescript-declarations-tests
+lint-typescript: lint-typescript-declarations lint-typescript-declarations-tests
 
 .PHONY: lint-typescript
-
-#/
-# Lints TypeScript source files.
-#
-# ## Notes
-#
-# -   This rule is useful when wanting to glob for TypeScript source files (e.g., lint all TypeScript source files for a particular package).
-#
-# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
-#
-# @example
-# make lint-typescript-src
-#
-# @example
-# make lint-typescript-src SOURCES_FILTER=".*/math/base/special/abs/.*"
-#/
-lint-typescript-src:
-ifeq ($(TYPESCRIPT_LINTER), eslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-ts-src
-endif
-
-.PHONY: lint-typescript-src
 
 #/
 # Lints TypeScript declaration files.

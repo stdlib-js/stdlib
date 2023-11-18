@@ -52,42 +52,6 @@ endif
 # RULES #
 
 #/
-# Lints TypeScript source files using [ESLint][1].
-#
-# ## Notes
-#
-# -   This rule is useful when wanting to glob for TypeScript source files (e.g., lint all TypeScript source files for a particular package).
-#
-# [1]: https://eslint.org/
-#
-# @private
-# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
-#
-# @example
-# make eslint-ts-src
-#
-# @example
-# make eslint-ts-src SOURCES_FILTER=".*/math/base/special/abs/.*"
-#/
-eslint-ts-src: $(NODE_MODULES)
-ifeq ($(FAIL_FAST), true)
-	$(QUIET) $(FIND_TYPESCRIPT_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
-	done
-else
-	$(QUIET) $(FIND_TYPESCRIPT_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
-	done
-endif
-
-.PHONY: eslint-ts-src
-
-#/
 # Lints TypeScript declaration files using [ESLint][1].
 #
 # ## Notes
