@@ -1,0 +1,33 @@
+
+{{alias}}( x, y )
+    Divides two double-precision floating-point numbers `x` and `y`.
+
+    Parameters
+    ----------
+    x: number
+        First input value (dividend).
+
+    y: number
+        Second input value (divisor).
+
+    Returns
+    -------
+    z: number
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( -1.0, 5.0 )
+    -0.2
+    > v = {{alias}}( 2.0, 5.0 )
+    0.4
+    > v = {{alias}}( 0.0, 5.0 )
+    0.0
+    > v = {{alias}}( -0.0, 5.0 )
+    -0.0
+    > v = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------
+
