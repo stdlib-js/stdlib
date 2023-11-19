@@ -63,6 +63,7 @@ base.acoversin
 base.acsc
 base.acsch
 base.add
+base.add3
 base.addf
 base.ahavercos
 base.ahaversin

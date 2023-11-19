@@ -133,6 +133,7 @@ base.clampf,"\nbase.clampf( v:number, min:number, max:number )\n    Restricts a 
 base.cmul,"\nbase.cmul( z1:Complex128, z2:Complex128 )\n    Multiplies two double-precision complex floating-point numbers.\n"
 base.cmulf,"\nbase.cmulf( z1:Complex64, z2:Complex64 )\n    Multiplies two single-precision complex floating-point numbers.\n"
 base.cneg,"\nbase.cneg( z )\n    Negates a double-precision complex floating-point number.\n"
+base.cnegf,"\nbase.cnegf( z )\n    Negates a single-precision complex floating-point number.\n"
 base.continuedFraction,"\nbase.continuedFraction( generator:Function[, options:Object] )\n    Evaluates the continued fraction approximation for the supplied series\n    generator using the modified Lentz algorithm.\n"
 base.copysign,"\nbase.copysign( x:number, y:number )\n    Returns a double-precision floating-point number with the magnitude of `x`\n    and the sign of `y`.\n"
 base.copysignf,"\nbase.copysignf( x:number, y:number )\n    Returns a single-precision floating-point number with the magnitude of `x`\n    and the sign of `y`.\n"
