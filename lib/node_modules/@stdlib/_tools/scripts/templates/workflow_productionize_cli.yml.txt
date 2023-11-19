@@ -767,14 +767,16 @@ jobs:
           git checkout production
           git checkout -b cli
 
-      # Copy files to cli directory:
-      - name: 'Copy files to cli directory'
+      # Copy files to `cli` directory:
+      - name: 'Copy files to `cli` directory'
         run: |
           mkdir -p cli
           mkdir -p cli/docs cli/test
           cp README.md LICENSE CONTRIBUTORS NOTICE ./cli
           cp -r bin etc ./cli
-          cp test/test.cli.js ./cli/test
+          if [ -e "test/test.cli.js" ]; then
+            cp test/test.cli.js ./cli/test
+          fi
           if [ -d "test/fixtures" ]; then
             cp -r test/fixtures ./cli/test
           fi
