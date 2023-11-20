@@ -280,7 +280,7 @@ declare function empty( dtype: 'generic', shape: Shape, order: Order ): typednda
 * var dt = arr.dtype;
 * // returns 'float32'
 */
-declare function empty( dtype: DataType, shape: Shape, order: Order ): typedndarray<number>; unified-signatures
+declare function empty( dtype: DataType, shape: Shape, order: Order ): typedndarray<number>;
 
 
 // EXPORTS //

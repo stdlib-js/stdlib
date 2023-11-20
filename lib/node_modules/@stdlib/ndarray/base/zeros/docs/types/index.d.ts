@@ -280,7 +280,7 @@ declare function zeros( dtype: 'generic', shape: Shape, order: Order ): typednda
 * var dt = arr.dtype;
 * // returns 'float32'
 */
-declare function zeros( dtype: DataType, shape: Shape, order: Order ): typedndarray<number>; unified-signatures
+declare function zeros( dtype: DataType, shape: Shape, order: Order ): typedndarray<number>;
 
 
 // EXPORTS //

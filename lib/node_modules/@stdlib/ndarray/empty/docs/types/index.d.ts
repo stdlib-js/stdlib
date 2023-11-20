@@ -533,7 +533,7 @@ declare function empty( shape: Shape | number, options?: Options ): float64ndarr
 * var dt = arr.dtype;
 * // returns 'float64'
 */
-declare function empty( shape: Shape | number, options?: OptionsWithDType ): typedndarray<number>; unified-signatures
+declare function empty( shape: Shape | number, options?: OptionsWithDType ): typedndarray<number>;
 
 
 // EXPORTS //
