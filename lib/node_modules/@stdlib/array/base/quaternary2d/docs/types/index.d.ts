@@ -43,12 +43,9 @@ type Quaternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;
 * @param fcn - quaternary callback
 *
 * @example
+* var add = require( `@stdlib/math/base/ops/add4` );
 * var ones2d = require( `@stdlib/array/base/ones2d` );
 * var zeros2d = require( `@stdlib/array/base/zeros2d` );
-*
-* function add( x, y, z, w ) {
-*     return x + y + z + w;
-* }
 *
 * var shape = [ 2, 2 ];
 *
