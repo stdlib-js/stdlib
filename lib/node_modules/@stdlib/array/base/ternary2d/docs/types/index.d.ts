@@ -43,12 +43,9 @@ type Ternary<T, U, V, W> = ( v1: T, v2: U, v3: V ) => W;
 * @param fcn - ternary callback
 *
 * @example
+* var add = require( `@stdlib/math/base/ops/add3` );
 * var ones2d = require( `@stdlib/array/base/ones2d` );
 * var zeros2d = require( `@stdlib/array/base/zeros2d` );
-*
-* function add( x, y, z ) {
-*     return x + y + z;
-* }
 *
 * var shape = [ 2, 2 ];
 *

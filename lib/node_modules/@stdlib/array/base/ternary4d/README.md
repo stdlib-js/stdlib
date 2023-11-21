@@ -41,11 +41,8 @@ var ternary4d = require( '@stdlib/array/base/ternary4d' );
 Applies a ternary callback to elements in three four-dimensional nested input arrays and assigns results to elements in a four-dimensional nested output array.
 
 ```javascript
+var add = require( '@stdlib/math/base/ops/add3' );
 var zeros4d = require( '@stdlib/array/base/zeros4d' );
-
-function add( x, y, z ) {
-    return x + y + z;
-}
 
 var x = [ [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ] ];
 var out = zeros4d( [ 1, 1, 2, 2 ] );
@@ -86,11 +83,8 @@ The function accepts the following arguments:
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filled4dBy = require( '@stdlib/array/base/filled4d-by' );
 var zeros4d = require( '@stdlib/array/base/zeros4d' );
+var add = require( '@stdlib/math/base/ops/add3' );
 var ternary4d = require( '@stdlib/array/base/ternary4d' );
-
-function add( x, y, z ) {
-    return x + y + z;
-}
 
 var shape = [ 1, 3, 3, 3 ];
 
