@@ -64,6 +64,8 @@ base.acsc
 base.acsch
 base.add
 base.add3
+base.add4
+base.add5
 base.addf
 base.ahavercos
 base.ahaversin

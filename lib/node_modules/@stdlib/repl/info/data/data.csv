@@ -72,6 +72,7 @@ base.acoversin,"\nbase.acoversin( x:number )\n    Computes the inverse coversed 
 base.acsc,"\nbase.acsc( x:number )\n    Computes the arccosecant of a number.\n"
 base.acsch,"\nbase.acsch( x:number )\n    Computes the hyperbolic arccosecant of a number.\n"
 base.add,"\nbase.add( x:number, y:number )\n    Computes the sum of two double-precision floating-point numbers `x` and `y`.\n"
+base.add3,"\nbase.add3( x:number, y:number, z:number )\n    Computes the sum of three double-precision floating-point numbers.\n"
 base.addf,"\nbase.addf( x:number, y:number )\n    Computes the sum of two single-precision floating-point numbers `x` and `y`.\n"
 base.ahavercos,"\nbase.ahavercos( x:number )\n    Computes the inverse half-value versed cosine.\n"
 base.ahaversin,"\nbase.ahaversin( x:number )\n    Computes the inverse half-value versed sine.\n"

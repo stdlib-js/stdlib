@@ -64,6 +64,8 @@
 "@stdlib/math-base-special-acsch","@stdlib/math/base/special/acsch"
 "@stdlib/math-base-ops-add","@stdlib/math/base/ops/add"
 "@stdlib/math-base-ops-add3","@stdlib/math/base/ops/add3"
+"@stdlib/math-base-ops-add4","@stdlib/math/base/ops/add4"
+"@stdlib/math-base-ops-add5","@stdlib/math/base/ops/add5"
 "@stdlib/math-base-ops-addf","@stdlib/math/base/ops/addf"
 "@stdlib/math-base-special-ahavercos","@stdlib/math/base/special/ahavercos"
 "@stdlib/math-base-special-ahaversin","@stdlib/math/base/special/ahaversin"
