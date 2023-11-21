@@ -42,19 +42,19 @@ function fcn( x: number, y: number, z: number, w: number ): number {
 	const w = [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ];
 	const out = [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ];
 
-	quaternary3d( [ x, y, z, w, out ], [ 2, 2, 2 ], fcn ); // $ExpectType void
+	quaternary3d( [ x, y, z, w, out ], [ 1, 2, 2 ], fcn ); // $ExpectType void
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of nested arrays...
 {
-	quaternary3d( 'abc', [ 2, 2, 2 ], fcn ); // $ExpectError
-	quaternary3d( 3.14, [ 2, 2, 2 ], fcn ); // $ExpectError
-	quaternary3d( true, [ 2, 2, 2 ], fcn ); // $ExpectError
-	quaternary3d( false, [ 2, 2, 2 ], fcn ); // $ExpectError
-	quaternary3d( null, [ 2, 2, 2 ], fcn ); // $ExpectError
-	quaternary3d( [ '1' ], [ 2, 2, 2 ], fcn ); // $ExpectError
-	quaternary3d( {}, [ 2, 2, 2 ], fcn ); // $ExpectError
-	quaternary3d( ( x: number ): number => x, [ 2, 2, 2 ], fcn ); // $ExpectError
+	quaternary3d( 'abc', [ 1, 2, 2 ], fcn ); // $ExpectError
+	quaternary3d( 3.14, [ 1, 2, 2 ], fcn ); // $ExpectError
+	quaternary3d( true, [ 1, 2, 2 ], fcn ); // $ExpectError
+	quaternary3d( false, [ 1, 2, 2 ], fcn ); // $ExpectError
+	quaternary3d( null, [ 1, 2, 2 ], fcn ); // $ExpectError
+	quaternary3d( [ '1' ], [ 1, 2, 2 ], fcn ); // $ExpectError
+	quaternary3d( {}, [ 1, 2, 2 ], fcn ); // $ExpectError
+	quaternary3d( ( x: number ): number => x, [ 1, 2, 2 ], fcn ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an array of numbers...
@@ -83,13 +83,13 @@ function fcn( x: number, y: number, z: number, w: number ): number {
 	const w = [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ];
 	const out = [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ];
 
-	quaternary3d( [ x, y, z, w, out ], [ 2, 2, 2 ], 'abc' ); // $ExpectError
-	quaternary3d( [ x, y, z, w, out ], [ 2, 2, 2 ], 3.14 ); // $ExpectError
-	quaternary3d( [ x, y, z, w, out ], [ 2, 2, 2 ], true ); // $ExpectError
-	quaternary3d( [ x, y, z, w, out ], [ 2, 2, 2 ], false ); // $ExpectError
-	quaternary3d( [ x, y, z, w, out ], [ 2, 2, 2 ], null ); // $ExpectError
-	quaternary3d( [ x, y, z, w, out ], [ 2, 2, 2 ], [ '1' ] ); // $ExpectError
-	quaternary3d( [ x, y, z, w, out ], [ 2, 2, 2 ], {} ); // $ExpectError
+	quaternary3d( [ x, y, z, w, out ], [ 1, 2, 2 ], 'abc' ); // $ExpectError
+	quaternary3d( [ x, y, z, w, out ], [ 1, 2, 2 ], 3.14 ); // $ExpectError
+	quaternary3d( [ x, y, z, w, out ], [ 1, 2, 2 ], true ); // $ExpectError
+	quaternary3d( [ x, y, z, w, out ], [ 1, 2, 2 ], false ); // $ExpectError
+	quaternary3d( [ x, y, z, w, out ], [ 1, 2, 2 ], null ); // $ExpectError
+	quaternary3d( [ x, y, z, w, out ], [ 1, 2, 2 ], [ '1' ] ); // $ExpectError
+	quaternary3d( [ x, y, z, w, out ], [ 1, 2, 2 ], {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -102,5 +102,5 @@ function fcn( x: number, y: number, z: number, w: number ): number {
 
 	quaternary3d(); // $ExpectError
 	quaternary3d( [ x, y, z, w, out ] ); // $ExpectError
-	quaternary3d( [ x, y, z, w, out ], [ 2, 2, 2 ], fcn, {} ); // $ExpectError
+	quaternary3d( [ x, y, z, w, out ], [ 1, 2, 2 ], fcn, {} ); // $ExpectError
 }
