@@ -85,12 +85,9 @@ type InOutShapes = [
 * @param fcn - quaternary callback
 *
 * @example
+* var add = require( `@stdlib/math/base/ops/add4` );
 * var ones2d = require( `@stdlib/array/base/ones2d` );
 * var zeros2d = require( `@stdlib/array/base/zeros2d` );
-*
-* function add( x, y, z, w ) {
-*     return x + y + z + w;
-* }
 *
 * var shapes = [
 *     [ 1, 2 ],

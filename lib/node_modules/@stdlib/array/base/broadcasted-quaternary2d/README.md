@@ -41,11 +41,8 @@ var bquaternary2d = require( '@stdlib/array/base/broadcasted-quaternary2d' );
 Applies a quaternary callback to elements in four [broadcasted][@stdlib/array/base/broadcast-array] nested input arrays and assigns results to elements in a two-dimensional nested output array.
 
 ```javascript
+var add = require( '@stdlib/math/base/ops/add4' );
 var zeros2d = require( '@stdlib/array/base/zeros2d' );
-
-function add( x, y, z, w ) {
-    return x + y + z + w;
-}
 
 var x = [ [ 1.0, 2.0 ] ];
 var y = [ [ 3.0 ], [ 4.0 ] ];
@@ -95,11 +92,8 @@ The function accepts the following arguments:
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filled2dBy = require( '@stdlib/array/base/filled2d-by' );
 var zeros2d = require( '@stdlib/array/base/zeros2d' );
+var add = require( '@stdlib/math/base/ops/add4' );
 var bquaternary2d = require( '@stdlib/array/base/broadcasted-quaternary2d' );
-
-function add( x, y, z, w ) {
-    return x + y + z + w;
-}
 
 var shapes = [
     [ 1, 3 ],
