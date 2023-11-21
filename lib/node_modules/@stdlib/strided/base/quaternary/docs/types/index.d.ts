@@ -46,11 +46,8 @@ interface Routine {
 	* @param fcn - quaternary callback
 	*
 	* @example
+	* var add = require( `@stdlib/math/base/ops/add4` );
 	* var Float64Array = require( `@stdlib/array/float64` );
-	*
-	* function add( x, y, z, w ) {
-	*     return x + y + z + w;
-	* }
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -78,11 +75,8 @@ interface Routine {
 	* @param fcn - quaternary callback
 	*
 	* @example
+	* var add = require( `@stdlib/math/base/ops/add4` );
 	* var Float64Array = require( `@stdlib/array/float64` );
-	*
-	* function add( x, y, z, w ) {
-	*     return x + y + z + w;
-	* }
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -111,11 +105,8 @@ interface Routine {
 * @param fcn - quaternary callback
 *
 * @example
+* var add = require( `@stdlib/math/base/ops/add4` );
 * var Float64Array = require( `@stdlib/array/float64` );
-*
-* function add( x, y, z, w ) {
-*     return x + y + z + w;
-* }
 *
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 * var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -132,11 +123,8 @@ interface Routine {
 * // => <Float64Array>[ 4.0, 8.0, 12.0, 16.0, 20.0 ]
 *
 * @example
+* var add = require( `@stdlib/math/base/ops/add4` );
 * var Float64Array = require( `@stdlib/array/float64` );
-*
-* function add( x, y, z, w ) {
-*     return x + y + z + w;
-* }
 *
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 * var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
