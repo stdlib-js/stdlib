@@ -119,7 +119,7 @@ jobs:
           # For all dependencies, check in all *.js files if they are still used; if not, remove them:
           jq -r '.dependencies | keys[]' ./package.json | while read -r dep; do
             dep=$(echo "$dep" | xargs)
-            if ! grep -q "$dep" lib/** && ! grep -q -s "$dep" manifest.json && ! grep -q -s "$dep" include.gypi; then
+            if ! find lib -name "*.js" -exec grep -q "$dep" {} + && ! grep -q -s "$dep" manifest.json && ! grep -q -s "$dep" include.gypi; then
               jq --indent 2 "del(.dependencies[\"$dep\"])" ./package.json > ./package.json.tmp
               mv ./package.json.tmp ./package.json
             fi
@@ -129,7 +129,7 @@ jobs:
               continue
             fi
             dep=$(echo "$dep" | xargs)
-            if ! grep -q "$dep" lib/** && ! grep -q -s "$dep" manifest.json && ! grep -q -s "$dep" include.gypi; then
+            if ! find lib -name "*.js" -exec grep -q "$dep" {} + && ! grep -q -s "$dep" manifest.json && ! grep -q -s "$dep" include.gypi; then
               jq --indent 2 "del(.devDependencies[\"$dep\"])" ./package.json > ./package.json.tmp
               mv ./package.json.tmp ./package.json
             fi

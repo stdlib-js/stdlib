@@ -190,7 +190,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0 );
 	* // x => <Float64Array>[ 3.14, 3.14, 3.14, 3.14, 3.14 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number ): ArrayLike<any> | void; unified-signatures
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
@@ -534,7 +534,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 );
 	* // u => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, ...args: Array<ArrayLike<any> | number | string> ): ArrayLike<any> | void; unified-signatures
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, ...args: Array<ArrayLike<any> | number | string> ): ArrayLike<any> | void;
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
@@ -591,7 +591,7 @@ interface Dispatcher {
 	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 );
 	* // u => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, offsetW: number, ...args: Array<ArrayLike<any> | number> ): ArrayLike<any> | void; unified-signatures
+	( N: number, dtypeX: any, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: any, w: ArrayLike<any>, strideW: number, offsetW: number, ...args: Array<ArrayLike<any> | number> ): ArrayLike<any> | void;
 }
 
 /**
@@ -684,7 +684,7 @@ declare function dispatch( fcns: StridedArrayFcn | ArrayLike<StridedArrayFcn>, t
 * strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function dispatch( fcns: StridedArrayFcnWithOffsets | ArrayLike<StridedArrayFcnWithOffsets>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; unified-signatures
+declare function dispatch( fcns: StridedArrayFcnWithOffsets | ArrayLike<StridedArrayFcnWithOffsets>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher;
 
 
 // EXPORTS //

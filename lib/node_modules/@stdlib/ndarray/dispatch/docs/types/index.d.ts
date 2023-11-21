@@ -275,7 +275,7 @@ interface Dispatcher {
 	* fcn( x, y, z, w, u );
 	* // ubuf => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( x: ndarray, y: ndarray, z: ndarray, w: ndarray, ...args: Array<ndarray> ): ndarray | void; unified-signatures
+	( x: ndarray, y: ndarray, z: ndarray, w: ndarray, ...args: Array<ndarray> ): ndarray | void; // eslint-disable-line @typescript-eslint/unified-signatures
 }
 
 /**
