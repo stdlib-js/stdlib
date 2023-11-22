@@ -24,6 +24,11 @@ import { Array2D } from '@stdlib/types/array';
 import { Shape2D } from '@stdlib/types/ndarray';
 
 /**
+* Array element indices.
+*/
+type Indices = [ number, number ];
+
+/**
 * Callback invoked for each array element.
 *
 * @returns result
@@ -45,7 +50,7 @@ type Unary<T, U, V> = ( this: V, value: T ) => U;
 * @param indices - current array element indices
 * @returns result
 */
-type Binary<T, U, V> = ( this: V, value: T, indices: [ number, number ] ) => U;
+type Binary<T, U, V> = ( this: V, value: T, indices: Indices ) => U;
 
 /**
 * Callback invoked for each array element.
@@ -54,7 +59,7 @@ type Binary<T, U, V> = ( this: V, value: T, indices: [ number, number ] ) => U;
 * @param indices - current array element indices
 * @returns result
 */
-type Ternary<T, U, V> = ( this: V, value: T, indices: [ number, number ], array: Array2D<T> ) => U;
+type Ternary<T, U, V> = ( this: V, value: T, indices: Indices, array: Array2D<T> ) => U;
 
 /**
 * Callback invoked for each array element.
