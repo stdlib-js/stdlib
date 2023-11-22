@@ -337,7 +337,7 @@ rules[ '@typescript-eslint/member-delimiter-style' ] = [
 * // Okay...
 * const x = 1;
 * function example() {
-*   const x = 2;
+*     const x = 2;
 * }
 */
 rules[ '@typescript-eslint/no-shadow' ] = [ 'off', {
@@ -468,14 +468,14 @@ rules[ '@typescript-eslint/no-floating-promises' ] = 'error';
 *
 * @example
 * // Bad...
-* const arr = [1, 2, 3];
+* const arr = [ 1, 2, 3 ];
 * for ( const i in arr ) {
-*     console.log(arr[i]);
+*     console.log( arr[ i ] );
 * }
 *
 * // Good...
 * for ( const i of arr ) {
-*     console.log(i);
+*     console.log( i );
 * }
 */
 rules[ '@typescript-eslint/no-for-in-array' ] = 'error';
@@ -594,7 +594,7 @@ rules[ '@typescript-eslint/no-require-imports' ] = 'off';
 *
 * // Good...
 * function example() {
-*   console.log(this);
+*     console.log( this );
 * }
 */
 rules[ '@typescript-eslint/no-this-alias' ] = 'error';
@@ -767,7 +767,7 @@ rules[ '@typescript-eslint/no-var-requires' ] = 'error';
 * @example
 * // Okay...
 * for ( let i = 0; i < myArray.length; i++ ) {
-*     console.log(myArray[i]);
+*     console.log( myArray[ i ] );
 * }
 */
 rules[ '@typescript-eslint/prefer-for-of' ] = 'off';
@@ -854,7 +854,7 @@ rules[ '@typescript-eslint/prefer-readonly' ] = 'error';
 * @example
 * // Okay...
 * function fetchWithoutAsync() {
-*   return fetch( 'url' ).then( response => response.json() );
+*     return fetch( 'url' ).then( response => response.json() );
 * }
 */
 rules[ '@typescript-eslint/promise-function-async' ] = 'off';
@@ -896,12 +896,12 @@ rules[ '@typescript-eslint/quotes' ] = [
 * @example
 * // Bad...
 * async function bad() {
-*   return 42;
+*     return 42;
 * }
 *
 * // Good...
 * async function good() {
-*   return await someAsyncFunction();
+*     return await someAsyncFunction();
 * }
 */
 rules[ '@typescript-eslint/require-await' ] = 'error';
@@ -1033,7 +1033,7 @@ rules[ '@typescript-eslint/typedef' ] = 'error';
 * const bad = this.handleClick;
 *
 * // Good...
-* const good = this.handleClick.bind(this);
+* const good = this.handleClick.bind( this );
 */
 rules[ '@typescript-eslint/unbound-method' ] = 'error';
 
@@ -1074,7 +1074,7 @@ rules[ '@typescript-eslint/unified-signatures' ] = 'error';
 * const bad = x => x * x;
 *
 * // Good...
-* const good = (x) => x * x;
+* const good = ( x ) => x * x;
 */
 rules[ 'arrow-parens' ] = [ 'error', 'always' ];
 
@@ -1089,14 +1089,14 @@ rules[ 'arrow-parens' ] = [ 'error', 'always' ];
 *
 * @example
 * // Bad...
-* if (foo)
+* if ( foo )
 * {
-*   bar();
+*     bar();
 * }
 *
 * // Good...
-* if (foo) {
-*   bar();
+* if ( foo ) {
+*     bar();
 * }
 */
 rules[ 'brace-style' ] = [ 'error', '1tbs' ];
@@ -1113,16 +1113,16 @@ rules[ 'brace-style' ] = [ 'error', '1tbs' ];
 * @example
 * // Bad...
 * class MyClass {
-*   method() {
-*     console.log('no this');
-*   }
+*     method() {
+*         console.log('no this');
+*     }
 * }
 *
 * // Good...
 * class MyClass {
-*   method() {
-*     console.log(this);
-*   }
+*     method() {
+*         console.log(this);
+*     }
 * }
 */
 rules[ 'class-methods-use-this' ] = 'error';
@@ -1139,8 +1139,8 @@ rules[ 'class-methods-use-this' ] = 'error';
 * @example
 * // Okay...
 * const foo = {
-*   bar: 'baz',
-*   qux: 'quux'
+*     bar: 'baz',
+*     qux: 'quux'
 * };
 */
 rules[ 'comma-dangle' ] = 'off';
@@ -1157,17 +1157,17 @@ rules[ 'comma-dangle' ] = 'off';
 * @example
 * // Bad...
 * class Bad extends Base {
-*   constructor() {
-*     console.log('missing super()');
-*   }
+*     constructor() {
+*         console.log('missing super()');
+*     }
 * }
 *
 * // Good...
 * class Good extends Base {
-*   constructor() {
-*     super();
-*     console.log('has super()');
-*   }
+*     constructor() {
+*         super();
+*         console.log('has super()');
+*     }
 * }
 */
 rules[ 'constructor-super' ] = 'error';
@@ -1187,7 +1187,7 @@ rules[ 'constructor-super' ] = 'error';
 *
 * // Good...
 * if ( foo ) {
-*   bar();
+*     bar();
 * }
 */
 rules[ 'curly' ] = 'error';
@@ -1204,17 +1204,17 @@ rules[ 'curly' ] = 'error';
 * @example
 * // Bad...
 * switch ( foo ) {
-*   case 1:
-*     doSomething();
+*     case 1:
+*         doSomething();
 * }
 *
 * // Good...
 * switch ( foo ) {
-*   case 1:
-*     doSomething();
-*     break;
-*   default:
-*     doNothing();
+*     case 1:
+*         doSomething();
+*         break;
+*     default:
+*         doNothing();
 * }
 */
 rules[ 'default-case' ] = 'error';
@@ -1293,9 +1293,9 @@ rules[ 'eqeqeq' ] = [ 'error', 'always' ];
 *
 * // Good...
 * for ( const key in object ) {
-*   if ( Object.prototype.hasOwnProperty.call( object, key ) ) {
-*     doSomething( object[ key ] );
-*   }
+*     if ( Object.prototype.hasOwnProperty.call( object, key ) ) {
+*         doSomething( object[ key ] );
+*     }
 * }
 */
 rules[ 'guard-for-in' ] = 'error';
@@ -1376,7 +1376,7 @@ rules[ 'import/no-extraneous-dependencies' ] = 'error';
 * @see [import/no-internal-modules]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md}
 *
 * @example
-* // Okay...
+* // Bad...
 * import something from 'module/some/internal/path';
 */
 rules[ 'import/no-internal-modules' ] = 'error';
@@ -1395,7 +1395,7 @@ rules[ 'import/no-internal-modules' ] = 'error';
 * import 'myModule';
 *
 * // Good...
-* import foo from 'foo'
+* import foo from 'foo';
 */
 rules[ 'import/no-unassigned-import' ] = 'error';
 
@@ -1405,7 +1405,6 @@ rules[ 'import/no-unassigned-import' ] = 'error';
 * @name import/order
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'alphabetize': { 'caseInsensitive': false, 'order': 'ignore' }, 'newlines-between': 'ignore', 'groups': [[ 'builtin', 'external', 'internal', 'unknown', 'object', 'type' ], 'parent', [ 'sibling', 'index' ]], 'distinctGroup': false, 'pathGroupsExcludedImportTypes': [], 'pathGroups': [{ 'pattern': './', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'sibling', 'position': 'before' }, { 'pattern': '.', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'sibling', 'position': 'before' }, { 'pattern': '..', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'parent', 'position': 'before' }, { 'pattern': '../', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'parent', 'position': 'before' } ] } ]
 * @see [import/order]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md}
 *
 * @example
@@ -1799,10 +1798,10 @@ rules[ 'no-empty' ] = 'error';
 *
 * @example
 * // Bad...
-* const obj = eval( '({ a: 20 })' );
+* const obj = eval( '( { "a": 20 } )' );
 *
 * // Good...
-* const obj = ({ a: 20 });
+* const obj = ( { 'a': 20 } );
 */
 rules[ 'no-eval' ] = 'error';
 
@@ -1943,11 +1942,11 @@ rules[ 'no-multiple-empty-lines' ] = [ 'error', {
 *
 * @example
 * // Bad...
-* const bad = new Function('a', 'b', 'return a + b');
+* const bad = new Function( 'a', 'b', 'return a + b' );
 *
 * // Good...
-* function good(a, b) {
-*   return a + b;
+* function good( a, b ) {
+*     return a + b;
 * }
 */
 rules[ 'no-new-func' ] = 'error';
@@ -2233,7 +2232,7 @@ rules[ 'padding-line-between-statements' ] = [ 'off', {
 rules[ 'prefer-const' ] = 'error';
 
 /**
-* Disables the preference over using object spread over `Object.assign`.
+* Disables the preference for using object spread over `Object.assign`.
 *
 * @name prefer-object-spread
 * @memberof rules
@@ -2287,10 +2286,10 @@ rules[ 'quotes' ] = 'off';
 *
 * @example
 * // Bad...
-* const bad = parseInt('123');
+* const bad = parseInt( '123' );
 *
 * // Good...
-* const good = parseInt('123', 10);
+* const good = parseInt( '123', 10 );
 */
 rules[ 'radix' ] = 'error';
 
@@ -2418,7 +2417,7 @@ rules[ 'yoda' ] = 'error';
 * // Good...
 * const val = 9001; // $ExpectType number
 */
-rules['expect-type/expect'] = 'error';
+rules[ 'expect-type/expect' ] = 'error';
 
 
 // EXPORTS //
