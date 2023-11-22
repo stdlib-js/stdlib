@@ -325,33 +325,6 @@ rules[ '@typescript-eslint/member-delimiter-style' ] = [
 ];
 
 /**
-* Enforces naming conventions for everything across a codebase.
-*
-* @name naming-convention
-* @memberof rules
-* @type {Array}
-* @default [ 'error', { 'selector': 'variable', 'format': [ 'camelCase', 'UPPER_CASE' ], 'leadingUnderscore': 'forbid', 'trailingUnderscore': 'forbid' } ]
-* @see [naming-convention]{@link https://typescript-eslint.io/rules/naming-convention}
-*
-* @example
-* // Bad...
-* const bad_Name = 2;
-*
-* // Good...
-* const goodName = 3;
-* const GOOD_NAME = 4;
-*/
-rules[ '@typescript-eslint/naming-convention' ] = [
-	'error',
-	{
-		'selector': 'variable',
-		'format': [ 'camelCase', 'UPPER_CASE' ],
-		'leadingUnderscore': 'forbid',
-		'trailingUnderscore': 'forbid'
-	}
-];
-
-/**
 * Disables TypeScript's no-shadow rule.
 *
 * @name no-shadow
