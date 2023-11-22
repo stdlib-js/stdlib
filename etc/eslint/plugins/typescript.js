@@ -20,11 +20,16 @@
 
 // ESLint plugins for TypeScript:
 var plugins = [
+	// Allows linting $ExpectError and $ExpectType type assertions:
 	'eslint-plugin-expect-type',
-	'eslint-plugin-prefer-arrow',
+
+	// Lint rules for import/export syntax:
 	'eslint-plugin-import',
-	'eslint-plugin-no-null',
+
+	// Required for JSDoc support:
 	'eslint-plugin-jsdoc',
+
+	// Required for TypeScript support:
 	'@typescript-eslint'
 ];
 

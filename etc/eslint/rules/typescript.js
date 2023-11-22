@@ -49,18 +49,18 @@ var rules = merge( {}, mapValues( defaults.rules, constantFunction( 'off' ) ) );
 * @example
 * // Bad...
 * interface Foo {
-*   foo(s: string): void;
-*   foo(n: number): void;
-*   bar(): void;
-*   foo(sn: string | number): void;
+*     foo( s: string ): void;
+*     foo( n: number ): void;
+*     bar(): void;
+*     foo( sn: string | number ): void;
 * }
 *
 * // Good...
 * interface Foo {
-*   foo(s: string): void;
-*   foo(n: number): void;
-*   foo(sn: string | number): void;
-*   bar(): void;
+*     foo( s: string ): void;
+*     foo( n: number ): void;
+*     foo( sn: string | number ): void;
+*     bar(): void;
 * }
 */
 rules[ '@typescript-eslint/adjacent-overload-signatures' ] = 'error';
@@ -71,7 +71,7 @@ rules[ '@typescript-eslint/adjacent-overload-signatures' ] = 'error';
 * @name array-type
 * @memberof rules
 * @type {Array}
-* @default [ 'error', {'default': 'generic'} ]
+* @default [ 'error', { 'default': 'generic' } ]
 * @see [array-type]{@link https://typescript-eslint.io/rules/array-type}
 *
 * @example
@@ -97,12 +97,12 @@ rules[ '@typescript-eslint/array-type' ] = [ 'error', {
 * @example
 * // Bad...
 * function test() {
-*   await 123;
+*     await 123;
 * }
 *
 * // Good...
 * async function test() {
-*   await Promise.resolve();
+*     await Promise.resolve();
 * }
 */
 rules[ '@typescript-eslint/await-thenable' ] = 'error';
@@ -203,12 +203,12 @@ rules[ '@typescript-eslint/dot-notation' ] = 'off';
 * @example
 * // Bad...
 * function test() {
-*   return 42;
+*     return 42;
 * }
 *
 * // Good...
 * function test(): number {
-*   return 42;
+*     return 42;
 * }
 */
 rules[ '@typescript-eslint/explicit-function-return-type' ] = 'error';
@@ -223,18 +223,18 @@ rules[ '@typescript-eslint/explicit-function-return-type' ] = 'error';
 * @name explicit-member-accessibility
 * @memberof rules
 * @type {Array}
-* @default [ 'error', {'accessibility': 'no-public'}]
+* @default [ 'error', { 'accessibility': 'no-public' } ]
 * @see [explicit-member-accessibility]{@link https://typescript-eslint.io/rules/explicit-member-accessibility}
 *
 * @example
 * // Bad...
 * class MyClass {
-*   memberWithoutVisibility = 'no explicit visibility';
+*     memberWithoutVisibility = 'no explicit visibility';
 * }
 *
 * // Good...
 * class MyClass {
-*   private memberWithVisibility = 'has explicit visibility';
+*     private memberWithVisibility = 'has explicit visibility';
 * }
 */
 rules[ '@typescript-eslint/explicit-member-accessibility' ] = [
@@ -278,12 +278,12 @@ rules[ '@typescript-eslint/explicit-module-boundary-types' ] = 'error';
 * @example
 * // Bad...
 * function bad() {
-*  return true;
+*     return true;
 * }
 *
 * // Good...
 * function good() {
-*   return true;
+*     return true;
 * }
 */
 rules[ '@typescript-eslint/indent' ] = [ 'error', 'tab' ];
@@ -469,13 +469,13 @@ rules[ '@typescript-eslint/no-floating-promises' ] = 'error';
 * @example
 * // Bad...
 * const arr = [1, 2, 3];
-* for (const i in arr) {
-*   console.log(arr[i]);
+* for ( const i in arr ) {
+*     console.log(arr[i]);
 * }
 *
 * // Good...
-* for (const i of arr) {
-*   console.log(i);
+* for ( const i of arr ) {
+*     console.log(i);
 * }
 */
 rules[ '@typescript-eslint/no-for-in-array' ] = 'error';
@@ -510,12 +510,12 @@ rules[ '@typescript-eslint/no-inferrable-types' ] = 'error';
 * @example
 * // Bad...
 * interface I {
-*   new (): I;
+*     new (): I;
 * }
 *
 * // Good...
 * class C implements I {
-*   constructor() {}
+*     constructor() {}
 * }
 */
 rules[ '@typescript-eslint/no-misused-new' ] = 'error';
@@ -532,12 +532,12 @@ rules[ '@typescript-eslint/no-misused-new' ] = 'error';
 * @example
 * // Bad...
 * module M {
-*   export const x = 1;
+*     export const x = 1;
 * }
 *
 * // Good...
 * namespace N {
-*   export const x = 1;
+*     export const x = 1;
 * }
 */
 rules[ '@typescript-eslint/no-namespace' ] = 'error';
@@ -557,8 +557,8 @@ rules[ '@typescript-eslint/no-namespace' ] = 'error';
 * const y: number = x!;
 *
 * // Good...
-* if (x !== null) {
-*   const y: number = x;
+* if ( x !== null ) {
+*     const y: number = x;
 * }
 */
 rules[ '@typescript-eslint/no-non-null-assertion' ] = 'error';
@@ -574,7 +574,7 @@ rules[ '@typescript-eslint/no-non-null-assertion' ] = 'error';
 *
 * @example
 * // Okay...
-* const module = require('module');
+* const module = require( 'module' );
 */
 rules[ '@typescript-eslint/no-require-imports' ] = 'off';
 
@@ -611,8 +611,8 @@ rules[ '@typescript-eslint/no-this-alias' ] = 'error';
 * @example
 * // Okay...
 * const x = true;
-* if (x === true) {
-*   // ...
+* if ( x === true ) {
+*     // ...
 * }
 */
 rules[ '@typescript-eslint/no-unnecessary-boolean-literal-compare' ] = 'off';
@@ -629,7 +629,7 @@ rules[ '@typescript-eslint/no-unnecessary-boolean-literal-compare' ] = 'off';
 * @example
 * // Bad...
 * namespace A {
-*   export const B = 1;
+*     export const B = 1;
 * }
 * const x = A.B;
 *
@@ -689,11 +689,11 @@ rules[ '@typescript-eslint/no-unnecessary-type-assertion' ] = 'error';
 * @example
 * // Bad...
 * 0;
-* if(false) {}
+* if ( false ) {}
 *
 * // Good...
 * (() => {
-*   const a = 0;
+*     const a = 0;
 * })();
 */
 rules[ '@typescript-eslint/no-unused-expressions' ] = 'error';
@@ -709,7 +709,7 @@ rules[ '@typescript-eslint/no-unused-expressions' ] = 'error';
 *
 * @example
 * // Okay...
-* const unused = "I'm never used";
+* const unused = 'I\'m never used';
 */
 rules[ '@typescript-eslint/no-unused-vars' ] = [ 'error', {
 	'args': 'after-used'
@@ -726,12 +726,12 @@ rules[ '@typescript-eslint/no-unused-vars' ] = [ 'error', {
 *
 * @example
 * // Bad...
-* console.log(a);
+* console.log( a );
 * let a = 10;
 *
 * // Good...
 * let b = 10;
-* console.log(b);
+* console.log( b );
 */
 rules[ '@typescript-eslint/no-use-before-define' ] = 'error';
 
@@ -766,8 +766,8 @@ rules[ '@typescript-eslint/no-var-requires' ] = 'error';
 *
 * @example
 * // Okay...
-* for (let i = 0; i < myArray.length; i++) {
-*   console.log(myArray[i]);
+* for ( let i = 0; i < myArray.length; i++ ) {
+*     console.log(myArray[i]);
 * }
 */
 rules[ '@typescript-eslint/prefer-for-of' ] = 'off';
@@ -784,7 +784,7 @@ rules[ '@typescript-eslint/prefer-for-of' ] = 'off';
 * @example
 * // Bad...
 * interface Callable {
-*   (): void;
+*     (): void;
 * }
 *
 * // Good...
@@ -804,12 +804,12 @@ rules[ '@typescript-eslint/prefer-function-type' ] = 'error';
 * @example
 * // Bad...
 * module M {
-*   export const x = 1;
+*     export const x = 1;
 * }
 *
 * // Good...
 * namespace M {
-*   export const x = 1;
+*     export const x = 1;
 * }
 */
 rules[ '@typescript-eslint/prefer-namespace-keyword' ] = 'error';
@@ -826,18 +826,18 @@ rules[ '@typescript-eslint/prefer-namespace-keyword' ] = 'error';
 * @example
 * // Bad...
 * class MyClass {
-*   private name: string;
-*   constructor(name: string) {
-*     this.name = name;
-*   }
+*     private name: string;
+*     constructor( name: string ) {
+*         this.name = name;
+*     }
 * }
 *
 * // Good...
 * class MyClass {
-*   private readonly name: string;
-*   constructor(name: string) {
-*     this.name = name;
-*   }
+*     private readonly name: string;
+*     constructor( name: string ) {
+*         this.name = name;
+*     }
 * }
 */
 rules[ '@typescript-eslint/prefer-readonly' ] = 'error';
@@ -854,7 +854,7 @@ rules[ '@typescript-eslint/prefer-readonly' ] = 'error';
 * @example
 * // Okay...
 * function fetchWithoutAsync() {
-*   return fetch('url').then(response => response.json());
+*   return fetch( 'url' ).then( response => response.json() );
 * }
 */
 rules[ '@typescript-eslint/promise-function-async' ] = 'off';
@@ -865,7 +865,7 @@ rules[ '@typescript-eslint/promise-function-async' ] = 'off';
 * @name quotes
 * @memberof rules
 * @type {Array}
-* @default [ 'error', 'single', { 'avoidEscape': true }]
+* @default [ 'error', 'single', { 'avoidEscape': true } ]
 * @see [quotes]{@link https://typescript-eslint.io/rules/quotes}
 *
 * @example
@@ -953,7 +953,7 @@ rules[ '@typescript-eslint/semi' ] = [ 'error', 'always' ];
 *
 * @example
 * // Okay...
-* if (someValue) {}
+* if ( someValue ) {}
 */
 rules[ '@typescript-eslint/strict-boolean-expressions' ] = 'off';
 
@@ -963,7 +963,7 @@ rules[ '@typescript-eslint/strict-boolean-expressions' ] = 'off';
 * @name triple-slash-reference
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'path': 'always', 'types': 'prefer-import', 'lib': 'always' }]
+* @default [ 'error', { 'path': 'always', 'types': 'prefer-import', 'lib': 'always' } ]
 * @see [triple-slash-reference]{@link https://typescript-eslint.io/rules/triple-slash-reference}
 *
 * @example
@@ -1048,15 +1048,15 @@ rules[ '@typescript-eslint/unbound-method' ] = 'error';
 *
 * @example
 * // Bad...
-* declare function bad(x: number): number;
+* declare function bad( x: number ): number;
 * // Some unrelated overload
-* declare function bad(x: string): string;
-* declare function bad(x: number | string): number | string;
+* declare function bad( x: string ): string;
+* declare function bad( x: number | string ): number | string;
 *
 * // Good...
-* declare function good(x: number): number;
-* declare function good(x: number | string): number | string;
-* declare function good(x: string): string;
+* declare function good( x: number ): number;
+* declare function good( x: number | string ): number | string;
+* declare function good( x: string ): string;
 */
 rules[ '@typescript-eslint/unified-signatures' ] = 'error';
 
@@ -1183,10 +1183,10 @@ rules[ 'constructor-super' ] = 'error';
 *
 * @example
 * // Bad...
-* if (foo) bar();
+* if ( foo ) bar();
 *
 * // Good...
-* if (foo) {
+* if ( foo ) {
 *   bar();
 * }
 */
@@ -1203,13 +1203,13 @@ rules[ 'curly' ] = 'error';
 *
 * @example
 * // Bad...
-* switch (foo) {
+* switch ( foo ) {
 *   case 1:
 *     doSomething();
 * }
 *
 * // Good...
-* switch (foo) {
+* switch ( foo ) {
 *   case 1:
 *     doSomething();
 *     break;
@@ -1265,13 +1265,13 @@ rules[ 'eol-last' ] = 'error';
 *
 * @example
 * // Bad...
-* if (x == y) {
-*   // ...
+* if ( x == y ) {
+*     // ...
 * }
 *
 * // Good...
-* if (x === y) {
-*   // ...
+* if ( x === y ) {
+*     // ...
 * }
 */
 rules[ 'eqeqeq' ] = [ 'error', 'always' ];
@@ -1287,14 +1287,14 @@ rules[ 'eqeqeq' ] = [ 'error', 'always' ];
 *
 * @example
 * // Bad...
-* for (const key in object) {
-*   doSomething(object[key]);
+* for ( const key in object ) {
+*     doSomething( object[ key ] );
 * }
 *
 * // Good...
-* for (const key in object) {
-*   if (Object.prototype.hasOwnProperty.call(object, key)) {
-*     doSomething(object[key]);
+* for ( const key in object ) {
+*   if ( Object.prototype.hasOwnProperty.call( object, key ) ) {
+*     doSomething( object[ key ] );
 *   }
 * }
 */
@@ -1405,7 +1405,7 @@ rules[ 'import/no-unassigned-import' ] = 'error';
 * @name import/order
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'alphabetize': { 'caseInsensitive': false, 'order': 'ignore' }, 'newlines-between': 'ignore', 'groups': [[ 'builtin', 'external', 'internal', 'unknown', 'object', 'type' ], 'parent', [ 'sibling', 'index' ]], 'distinctGroup': false, 'pathGroupsExcludedImportTypes': [], 'pathGroups': [{ 'pattern': './', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'sibling', 'position': 'before' }, { 'pattern': '.', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'sibling', 'position': 'before' }, { 'pattern': '..', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'parent', 'position': 'before' }, { 'pattern': '../', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'parent', 'position': 'before' }]}]
+* @default [ 'error', { 'alphabetize': { 'caseInsensitive': false, 'order': 'ignore' }, 'newlines-between': 'ignore', 'groups': [[ 'builtin', 'external', 'internal', 'unknown', 'object', 'type' ], 'parent', [ 'sibling', 'index' ]], 'distinctGroup': false, 'pathGroupsExcludedImportTypes': [], 'pathGroups': [{ 'pattern': './', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'sibling', 'position': 'before' }, { 'pattern': '.', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'sibling', 'position': 'before' }, { 'pattern': '..', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'parent', 'position': 'before' }, { 'pattern': '../', 'patternOptions': { 'nocomment': true, 'dot': true }, 'group': 'parent', 'position': 'before' } ] } ]
 * @see [import/order]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md}
 *
 * @example
@@ -1582,7 +1582,7 @@ rules[ 'max-classes-per-file' ] = [ 'error', 1 ];
 * @name max-len
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'ignorePattern': '^import |\\/\\/ |\\/?\\* ', 'code': 1000 }]
+* @default [ 'error', { 'ignorePattern': '^import |\\/\\/ |\\/?\\* ', 'code': 1000 } ]
 * @see [max-len]{@link https://eslint.org/docs/rules/max-len}
 *
 * @example
@@ -1658,12 +1658,12 @@ rules[ 'no-bitwise' ] = 'off';
 * @example
 * // Bad...
 * function bad() {
-*   const whoCalled = arguments.callee.caller;
+*     const whoCalled = arguments.callee.caller;
 * }
 *
 * // Good...
 * function good() {
-*   // Do not use arguments.callee or arguments.caller
+*     // Do not use arguments.callee or arguments.caller
 * }
 */
 rules[ 'no-caller' ] = 'error';
@@ -1679,13 +1679,13 @@ rules[ 'no-caller' ] = 'error';
 *
 * @example
 * // Bad...
-* if (x = y) {
-*   // ...
+* if ( x = y ) {
+*     // ...
 * }
 *
 * // Good...
-* if (x === y) {
-*   // ...
+* if ( x === y ) {
+*     // ...
 * }
 */
 rules[ 'no-cond-assign' ] = 'error';
@@ -1701,7 +1701,7 @@ rules[ 'no-cond-assign' ] = 'error';
 *
 * @example
 * // Bad...
-* console.log('Here be dragons.');
+* console.log( 'Here be dragons.' );
 */
 rules[ 'no-console' ] = 'error';
 
@@ -1731,19 +1731,19 @@ rules[ 'no-debugger' ] = 'error';
 *
 * @example
 * // Bad...
-* switch (a) {
-*   case 1:
-*     // ...
-*   case 1:
-*     // Duplicate case label.
+* switch ( a ) {
+*     case 1:
+*         // ...
+*     case 1:
+*         // Duplicate case label.
 * }
 *
 * // Good...
 * switch (a) {
-*   case 1:
-*     // ...
-*   case 2:
-*     // ...
+*     case 1:
+*         // ...
+*     case 2:
+*         // ...
 * }
 */
 rules[ 'no-duplicate-case' ] = 'error';
@@ -1778,12 +1778,12 @@ rules[ 'no-duplicate-imports' ] = 'error';
 *
 * @example
 * // Bad...
-* if (foo) {
+* if ( foo ) {
 * }
 *
 * // Good...
-* if (foo) {
-*   // code
+* if ( foo ) {
+*     // code
 * }
 */
 rules[ 'no-empty' ] = 'error';
@@ -1799,7 +1799,7 @@ rules[ 'no-empty' ] = 'error';
 *
 * @example
 * // Bad...
-* const obj = eval('({ a: 20 })');
+* const obj = eval( '({ a: 20 })' );
 *
 * // Good...
 * const obj = ({ a: 20 });
@@ -1818,12 +1818,12 @@ rules[ 'no-eval' ] = 'error';
 * @example
 * // Bad...
 * const bad = function() {
-*   console.log(this.a);
+*     console.log( this.a );
 * }.bind({ a: 'bad' });
 *
 * // Good...
 * const good = function() {
-*   console.log(this.a);
+*     console.log( this.a );
 * };
 */
 rules[ 'no-extra-bind' ] = 'error';
@@ -1839,21 +1839,21 @@ rules[ 'no-extra-bind' ] = 'error';
 *
 * @example
 * // Bad...
-* switch (foo) {
-*   case 1:
-*     doSomething();
-*     // no break and fallthrough is intentional here, but it's usually a mistake
-*   case 2:
-*     doSomethingElse();
+* switch ( foo ) {
+*     case 1:
+*         doSomething();
+*         // no break and fallthrough is intentional here, but it's usually a mistake
+*     case 2:
+*         doSomethingElse();
 * }
 *
 * // Good...
-* switch (foo) {
-*   case 1:
-*     doSomething();
-*     break;
-*   case 2:
-*     doSomethingElse();
+* switch ( foo ) {
+*     case 1:
+*         doSomething();
+*         break;
+*     case 2:
+*         doSomethingElse();
 * }
 */
 rules[ 'no-fallthrough' ] = 'error';
@@ -1870,14 +1870,14 @@ rules[ 'no-fallthrough' ] = 'error';
 * @example
 * // Bad...
 * function bad() {
-*   console.log(this);
+*     console.log( this );
 * }
 *
 * // Good...
 * class Good {
-*   good() {
-*     console.log(this);
-*   }
+*     good() {
+*         console.log( this );
+*     }
 * }
 */
 rules[ 'no-invalid-this' ] = 'error';
@@ -1963,9 +1963,9 @@ rules[ 'no-new-func' ] = 'error';
 *
 * @example
 * // Bad...
-* const badString = new String('bad');
-* const badNumber = new Number(1);
-* const badBoolean = new Boolean(false);
+* const badString = new String( 'bad' );
+* const badNumber = new Number( 1 );
+* const badBoolean = new Boolean( false );
 *
 * // Good...
 * const goodString = 'good';
@@ -1973,17 +1973,6 @@ rules[ 'no-new-func' ] = 'error';
 * const goodBoolean = false;
 */
 rules[ 'no-new-wrappers' ] = 'error';
-
-/**
-* Disables the rule against using `null`.
-*
-* @name no-null/no-null
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [no-null/no-null]{@link https://github.com/nene/eslint-plugin-no-null}
-*/
-rules[ 'no-null/no-null' ] = 'off';
 
 /**
 * Disables the rule against reassigning parameters.
@@ -2011,8 +2000,8 @@ rules[ 'no-param-reassign' ] = 'off';
 * bad++;
 *
 * // Good...
-* for (let i = 0; i < 10; i++) {
-*   // allowed in for loop afterthoughts
+* for ( let i = 0; i < 10; i++ ) {
+*     // allowed in for loop afterthoughts
 * }
 */
 rules[ 'no-plusplus' ] = [ 'error', {
@@ -2223,7 +2212,7 @@ rules[ 'one-var' ] = [ 'error', 'never' ];
 * @name padding-line-between-statements
 * @memberof rules
 * @type {Array}
-* @default [ 'off', { 'blankLine': 'always', 'prev': '*', 'next': 'return' }]
+* @default [ 'off', { 'blankLine': 'always', 'prev': '*', 'next': 'return' } ]
 * @see [padding-line-between-statements]{@link https://eslint.org/docs/rules/padding-line-between-statements}
 */
 rules[ 'padding-line-between-statements' ] = [ 'off', {
@@ -2231,17 +2220,6 @@ rules[ 'padding-line-between-statements' ] = [ 'off', {
 	'prev': '*',
 	'next': 'return'
 }];
-
-/**
-* Disables the preference for arrow functions.
-*
-* @name prefer-arrow/prefer-arrow-functions
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [prefer-arrow-functions]{@link https://github.com/sindresorhus/eslint-plugin-prefer-arrow}
-*/
-rules[ 'prefer-arrow/prefer-arrow-functions' ] = 'off';
 
 /**
 * Requires the use of `const` for variables that are never reassigned after declared.
@@ -2344,7 +2322,7 @@ rules[ 'semi' ] = 'off';
 * @name @typescript-eslint/space-before-function-paren
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always' }]
+* @default [ 'error', { 'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always' } ]
 * @see [space-before-function-paren]{@link https://typescript-eslint.io/rules/space-before-function-paren}
 */
 rules[ '@typescript-eslint/space-before-function-paren' ] = [
@@ -2373,7 +2351,7 @@ rules[ 'space-in-parens' ] = [ 'error', 'always' ];
 * @name spaced-comment
 * @memberof rules
 * @type {Array}
-* @default [ 'error', 'always', { 'markers': [ '/' ] }]
+* @default [ 'error', 'always', { 'markers': [ '/' ] } ]
 * @see [spaced-comment]{@link https://eslint.org/docs/rules/spaced-comment}
 */
 rules[ 'spaced-comment' ] = [ 'error', 'always', {
@@ -2391,13 +2369,13 @@ rules[ 'spaced-comment' ] = [ 'error', 'always', {
 *
 * @example
 * // Bad...
-* if (foo === NaN) {
-*   // ...
+* if ( foo === NaN ) {
+*     // ...
 * }
 *
 * // Good...
-* if (isNaN(foo)) {
-*   // ...
+* if ( isNaN( foo ) ) {
+*     // ...
 * }
 */
 rules[ 'use-isnan' ] = 'error';
@@ -2413,13 +2391,13 @@ rules[ 'use-isnan' ] = 'error';
 *
 * @example
 * // Bad...
-* if ('red' === color) {
-*   // ...
+* if ( 'red' === color ) {
+*     // ...
 * }
 *
 * // Good...
-* if (color === 'red') {
-*   // ...
+* if ( color === 'red' ) {
+*     // ...
 * }
 */
 rules[ 'yoda' ] = 'error';
