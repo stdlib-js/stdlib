@@ -76,14 +76,14 @@ endif
 #
 # -   This rule is useful when wanting to glob for TypeScript declaration test files (e.g., lint all TypeScript declaration test files for a particular package).
 #
-# @param {string} [TYPESCRIPT_DECLARATIONS_TESTS_FILTER] - file path pattern (e.g., `test-*.js`)
+# @param {string} [TYPESCRIPT_DECLARATIONS_TESTS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-typescript-declarations-tests
 #
 # @example
-# make lint-typescript-declarations-tests TYPESCRIPT_DECLARATIONS_TESTS_FILTER="test-*.js"
+# make lint-typescript-declarations-tests TYPESCRIPT_DECLARATIONS_TESTS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-typescript-declarations-tests:
 ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), eslint)
