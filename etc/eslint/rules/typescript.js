@@ -1269,6 +1269,7 @@ rules[ 'dot-notation' ] = 'off';
 *
 * // Good...
 * const good = 'newline';
+*
 * // EOF
 */
 rules[ 'eol-last' ] = 'error';
@@ -2324,15 +2325,22 @@ rules[ 'radix' ] = 'error';
 rules[ 'require-await' ] = 'off';
 
 /**
-* Disables the rule that requires or disallows semicolons instead of ASI.
+* Enforces semicolons at the end of each statement instead of reliance on ASI.
 *
 * @name semi
 * @memberof rules
 * @type {string}
-* @default 'off'
+* @default [ 'error', 'always' ]
 * @see [semi]{@link https://eslint.org/docs/rules/semi}
+*
+* @example
+* // Bad...
+* const bad = 'no semicolon'
+*
+* // Good...
+* const good = 'semicolon';
 */
-rules[ 'semi' ] = 'off';
+rules[ 'semi' ] = [ 'error', 'always' ];
 
 /**
 * Enforces consistent spacing before function parentheses.
