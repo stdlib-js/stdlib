@@ -26,7 +26,8 @@ import { Shape3D } from '@stdlib/types/ndarray';
 /**
 * Binary callback.
 *
-* @param value - input value
+* @param v1 - element from first input array
+* @param v2 - element from second input array
 * @returns result
 */
 type Binary<T, U, V> = ( v1: T, v2: U ) => V;

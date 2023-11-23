@@ -26,7 +26,10 @@ import { Shape3D } from '@stdlib/types/ndarray';
 /**
 * Quaternary callback.
 *
-* @param value - input value
+* @param v1 - element from first input array
+* @param v2 - element from second input array
+* @param v3 - element from third input array
+* @param v4 - element from fourth input array
 * @returns result
 */
 type Quaternary<T, U, V, W, X> = ( v1: T, v2: U, v3: V, v4: W ) => X;

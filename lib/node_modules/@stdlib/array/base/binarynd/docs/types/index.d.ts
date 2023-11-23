@@ -26,7 +26,8 @@ import { Shape, Shape1D, Shape2D, Shape3D, Shape4D, Shape5D, Shape6D, Shape7D, S
 /**
 * Binary callback.
 *
-* @param value - input value
+* @param v1 - element from first input array
+* @param v2 - element from second input array
 * @returns result
 */
 type Binary<T, U, V> = ( v1: T, v2: U ) => V;

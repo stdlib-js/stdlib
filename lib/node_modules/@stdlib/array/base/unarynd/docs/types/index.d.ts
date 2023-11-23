@@ -26,7 +26,7 @@ import { Shape, Shape1D, Shape2D, Shape3D, Shape4D, Shape5D, Shape6D, Shape7D, S
 /**
 * Unary callback.
 *
-* @param value - input value
+* @param value - array element
 * @returns result
 */
 type Unary<T, U> = ( value: T ) => U;
