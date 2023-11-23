@@ -1,0 +1,30 @@
+
+{{alias}}( N, x, stride, offset )
+    Converts a strided array to a non-strided generic array.
+
+    The function assumes that the input array is compatible with the specified
+    number of elements, index stride, and index offset.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: ArrayLikeObject
+        Input array.
+
+    stride: integer
+        Index stride.
+
+    offset: integer
+        Index of the first indexed value in the input array.
+
+    Examples
+    --------
+    > var x = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var y = {{alias}}( 2, x, 2, 0 )
+    [ 1.0, 3.0 ]
+
+    See Also
+    --------
+
