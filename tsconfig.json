@@ -34,8 +34,12 @@
     "types": []
   },
   "include": [
-    "**/docs/types/*.d.ts",
-    "**/@stdlib/types/*.d.ts"
+    "docs/types/index.d.ts",
+    "docs/types/test.ts",
+    "lib/node_modules/**/docs/types/index.d.ts",
+    "lib/node_modules/**/docs/types/test.ts",
+    "lib/node_modules/**/@stdlib/types/index.d.ts",
+    "lib/node_modules/**/@stdlib/types/test.ts"
   ],
   "exclude": [
     "node_modules"

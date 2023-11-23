@@ -356,7 +356,7 @@ run_lint() {
 	if [[ -z "${skip_typescript_declarations}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.d\.ts$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make TYPESCRIPT_DECLARATIONS_LINTER=dtslint FILES="${files}" lint-typescript-declarations-files > /dev/null >&2
+			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" lint-typescript-declarations-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				echo '' >&2
 				echo 'TypeScript declaration file lint errors.' >&2

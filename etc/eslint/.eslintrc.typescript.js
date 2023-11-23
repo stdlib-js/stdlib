@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,11 +20,6 @@
 
 // MAIN //
 
-/**
-* ESLint configuration.
-*
-* @namespace eslint
-*/
 var eslint = {};
 
 /**
@@ -44,7 +39,7 @@ eslint.root = true;
 * @memberof eslint
 * @type {Object}
 */
-eslint.env = require( './env' );
+eslint.env = require( './env/typescript.js' );
 
 /**
 * Lint rules.
@@ -53,16 +48,16 @@ eslint.env = require( './env' );
 * @memberof eslint
 * @type {Object}
 */
-eslint.rules = require( './rules' );
+eslint.rules = require( './rules/typescript.js' );
 
 /**
-* Overrides.
+* Parser.
 *
-* @name overrides
+* @name parser
 * @memberof eslint
-* @type {Array}
+* @type {string}
 */
-eslint.overrides = require( './overrides/repl_namespace.js' );
+eslint.parser = '@typescript-eslint/parser';
 
 /**
 * Parser options.
@@ -71,7 +66,7 @@ eslint.overrides = require( './overrides/repl_namespace.js' );
 * @memberof eslint
 * @type {Object}
 */
-eslint.parserOptions = require( './parser-options' );
+eslint.parserOptions = require( './parser-options/typescript.js' );
 
 /**
 * Plugins.
@@ -80,7 +75,7 @@ eslint.parserOptions = require( './parser-options' );
 * @memberof eslint
 * @type {Object}
 */
-eslint.plugins = require( './plugins' );
+eslint.plugins = require( './plugins/typescript.js' );
 
 
 // EXPORTS //
