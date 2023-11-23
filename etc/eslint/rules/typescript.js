@@ -2314,35 +2314,6 @@ rules[ 'quotes' ] = 'off';
 rules[ 'radix' ] = 'error';
 
 /**
-* Disables the requirement for `await` in `async` functions.
-*
-* @name require-await
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [require-await]{@link https://eslint.org/docs/rules/require-await}
-*/
-rules[ 'require-await' ] = 'off';
-
-/**
-* Enforces semicolons at the end of each statement instead of reliance on ASI.
-*
-* @name semi
-* @memberof rules
-* @type {string}
-* @default [ 'error', 'always' ]
-* @see [semi]{@link https://eslint.org/docs/rules/semi}
-*
-* @example
-* // Bad...
-* const bad = 'no semicolon'
-*
-* // Good...
-* const good = 'semicolon';
-*/
-rules[ 'semi' ] = [ 'error', 'always' ];
-
-/**
 * Enforces consistent spacing before function parentheses.
 *
 * @name @typescript-eslint/space-before-function-paren
