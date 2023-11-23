@@ -57,6 +57,7 @@ type Binary<T, U, V> = ( this: V, value: T, indices: Indices ) => U;
 *
 * @param value - array element
 * @param indices - current array element indices
+* @param array - input array
 * @returns result
 */
 type Ternary<T, U, V> = ( this: V, value: T, indices: Indices, array: Array2D<T> ) => U;
