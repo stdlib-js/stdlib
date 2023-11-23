@@ -650,10 +650,17 @@ rules[ '@typescript-eslint/no-unnecessary-qualifier' ] = 'error';
 *
 * @example
 * // Bad...
-* const x: Array<number> = [];
+* function f<T = number>( x: T ) {
+*     return x + x
+* }
+* f<number>();
 *
 * // Good...
-* const x: number[] = [];
+* function f<T>( x: T ) {
+*     return x + x
+* }
+* f( 1 );
+* f<string>( 'a' );
 */
 rules[ '@typescript-eslint/no-unnecessary-type-arguments' ] = 'error';
 
@@ -708,8 +715,15 @@ rules[ '@typescript-eslint/no-unused-expressions' ] = 'error';
 * @see [no-unused-vars]{@link https://typescript-eslint.io/rules/no-unused-vars}
 *
 * @example
+* // Bad...
+* function foo( x, y, z ) {
+*     return x + y;
+* }
+*
 * // Okay...
-* const unused = 'I\'m never used';
+* function bar( x, y, z ) {
+*     return y + z;
+* }
 */
 rules[ '@typescript-eslint/no-unused-vars' ] = [ 'error', {
 	'args': 'after-used'
@@ -968,11 +982,10 @@ rules[ '@typescript-eslint/strict-boolean-expressions' ] = 'off';
 *
 * @example
 * // Bad...
-* /// <reference types="something" />
-*
-* // Good...
-* import type Something from 'something';
 * /// <reference lib="libname" />
+*
+* // Okay...
+* /// <reference types="@stdlib/types" />
 */
 rules[ '@typescript-eslint/triple-slash-reference' ] = [
 	'error',
@@ -1133,17 +1146,23 @@ rules[ 'class-methods-use-this' ] = 'error';
 * @name comma-dangle
 * @memberof rules
 * @type {string}
-* @default 'off'
+* @default [ 'error', 'never' ]
 * @see [comma-dangle]{@link https://eslint.org/docs/rules/comma-dangle}
 *
 * @example
+* // Bad...
+* const foo = {
+*     bar: 'baz',
+*     qux: 'quux',
+* };
+*
 * // Okay...
 * const foo = {
 *     bar: 'baz',
 *     qux: 'quux'
 * };
 */
-rules[ 'comma-dangle' ] = 'off';
+rules[ 'comma-dangle' ] = [ 'error', 'never' ];
 
 /**
 * Verifies calls of `super()` in constructors.
