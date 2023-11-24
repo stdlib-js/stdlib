@@ -101,6 +101,8 @@
 
         - 'throw': an ndarray instance throws an error when an index exceeds
           array dimensions.
+        - 'normalize': an ndarray instance normalizes negative indices and
+          throws an error when an index exceeds array dimensions.
         - 'wrap': an ndarray instance wraps around indices exceeding array
           dimensions using modulo arithmetic.
         - 'clamp', an ndarray instance sets an index exceeding array dimensions
@@ -114,6 +116,8 @@
 
         - 'throw': an ndarray instance throws an error when a subscript exceeds
           array dimensions.
+        - 'normalize': an ndarray instance normalizes negative subscripts and
+          throws an error when a subscript exceeds array dimensions.
         - 'wrap': an ndarray instance wraps around subscripts exceeding array
           dimensions using modulo arithmetic.
         - 'clamp': an ndarray instance sets a subscript exceeding array
