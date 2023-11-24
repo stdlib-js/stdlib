@@ -26,7 +26,7 @@ on:
     inputs:
       num:
         type: string
-        description: 'Maximum number of READMEs to process'
+        description: 'Number of READMEs to process'
         default: '100'
 
   schedule:
