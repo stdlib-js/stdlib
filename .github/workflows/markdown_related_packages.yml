@@ -27,7 +27,7 @@ on:
       num:
         type: string
         description: 'Number of READMEs to process'
-        default: '100'
+        default: '250'
 
   schedule:
     # Run the workflow once a day at 2:00 AM UTC:
@@ -89,13 +89,18 @@ jobs:
           git config --local user.name "stdlib-bot"
         timeout-minutes: 5
 
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
       # Pick random READMEs from the `lib/node_modules/@stdlib` directory:
       - name: 'Pick random READMEs from the `lib/node_modules/@stdlib` directory'
         id: random-readmes
         run: |
           command="find lib/node_modules/@stdlib -type f -name 'README.md' |
             grep -v '/fixtures/' |
-            shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ','"
+            shuf -n ${{ github.event.inputs.num || 250 }} | tr '\n' ','"
           readmes=$(eval ${command})
 
           echo "readmes=$readmes" >> $GITHUB_OUTPUT
