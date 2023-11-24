@@ -100,6 +100,7 @@ jobs:
         run: |
           command="find lib/node_modules/@stdlib -type f -name 'README.md' |
             grep -v '/fixtures/' |
+            grep -v '/_tools/' |
             shuf -n ${{ github.event.inputs.num || 250 }} | tr '\n' ','"
           readmes=$(eval ${command})
 
