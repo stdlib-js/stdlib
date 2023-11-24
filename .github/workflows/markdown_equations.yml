@@ -108,7 +108,7 @@ jobs:
             exit 0
           else
             # Otherwise, add changed files to the staging area and commit:
-            git add -A && git commit -m "Add SVG equations"
+            git add -A && git commit -m "docs: update Markdown equation SVGs"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 15
@@ -126,7 +126,7 @@ jobs:
             exit 0
           else
             # Otherwise, add changed files to the staging area and commit:
-            git add -A && git commit -m "Update Markdown equation elements"
+            git add -A && git commit -m "docs: update Markdown equation elements"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 15
