@@ -105,7 +105,7 @@ jobs:
         id: update-related-packages
         run: |
           files=$(echo "${{ steps.random-readmes.outputs.readmes }}" | tr ',' ' ')
-          markdown-related-files FILES="${files}"
+          make markdown-related-files FILES="${files}"
 
           if [[ -z "$(git status --porcelain)" ]]; then
             # If no files were changed, exit with a success status code:
