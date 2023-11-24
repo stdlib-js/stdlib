@@ -1,0 +1,143 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: markdown_related_packages
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    inputs:
+      num:
+        type: string
+        description: 'Maximum number of READMEs to process'
+        default: '100'
+
+  schedule:
+    # Run the workflow once a day at 2:00 AM UTC:
+    - cron: '0 2 * * *'
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for updating the related packages section of READMEs:
+  lint:
+
+    # Define a display name:
+    name: 'Update related packages section of READMEs'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        with:
+          node-version: '20' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Initialize development environment:
+      - name: 'Initialize development environment'
+        run: |
+          make init
+        timeout-minutes: 5
+
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+        timeout-minutes: 5
+
+      # Pick random READMEs from the `lib/node_modules/@stdlib` directory:
+      - name: 'Pick random READMEs from the `lib/node_modules/@stdlib` directory'
+        id: random-readmes
+        run: |
+          command="find lib/node_modules/@stdlib -type f -name 'README.md' |
+            grep -v '/fixtures/' |
+            shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ','"
+          readmes=$(eval ${command})
+
+          echo "readmes=$readmes" >> $GITHUB_OUTPUT
+
+      # Update READMEs:
+      - name: 'Update READMEs'
+        id: update-related-packages
+        run: |
+          files=$(echo "${{ steps.random-readmes.outputs.readmes }}" | tr ',' ' ')
+          markdown-related-files FILES="${files}"
+
+          if [[ -z "$(git status --porcelain)" ]]; then
+            # If no files were changed, exit with a success status code:
+            echo "changed=false" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            # Otherwise, add changed files to the staging area and commit:
+            git add -A && git commit -m "Update Markdown equation elements"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+        timeout-minutes: 10
+
+      # Create a pull request with the changes:
+      - name: 'Create pull request'
+        id: cpr
+        if: steps.update-related-packages.outputs.changed == 'true'
+        # Pin action to full length commit SHA corresponding to v5.0.2
+        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
+        with:
+          title: 'Update related packages sections'
+          body: |
+            This PR
+
+            -   updates the related packages section of READMEs to include links to related packages.
+
+          commit-message: 'docs: update related packages sections'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          labels: |
+            documentation
+            automated-pr
+          team-reviewers: |
+            reviewers
+          branch: markdown-related-packages
+          delete-branch: true
