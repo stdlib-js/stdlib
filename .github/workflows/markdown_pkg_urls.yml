@@ -91,6 +91,11 @@ jobs:
           git config --local user.name "stdlib-bot"
         timeout-minutes: 5
 
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
       # Update Markdown stdlib package URLs:
       - name: 'Update Markdown stdlib package URLs'
         id: update-markdown-pkg-urls
