@@ -25,11 +25,12 @@
 *
 * -   The output array contains the following modes:
 *
-*     -   throw: specifies that a function should throw an error when an index is
+*     -   **throw**: specifies that a function should throw an error when an index is
 *     outside a restricted interval.
-*     -   wrap: specifies that a function should wrap around an index using modulo
+*     -   **normalize**: specifies that a function should normalize negative indices and throw an error when an index is outside a restricted interval.
+*     -   **wrap**: specifies that a function should wrap around an index using modulo
 *     arithmetic.
-*     -   clamp: specifies that a function should set an index less than zero to
+*     -   **clamp**: specifies that a function should set an index less than zero to
 *     zero (minimum index) and set an index greater than a maximum index value to
 *     the maximum possible index.
 *
@@ -37,7 +38,7 @@
 *
 * @example
 * var list = modes();
-* // returns [ 'throw', 'clamp', 'wrap' ]
+* // returns [ 'throw', 'normalize', 'clamp', 'wrap' ]
 */
 declare function modes(): Array<string>;
 
