@@ -22,8 +22,8 @@ name: markdown_pkg_urls
 # Workflow triggers:
 on:
   schedule:
-    # Run the workflow once a month on the 1st day of every month:
-    - cron:  "0 0 1 * *"
+    # Run the workflow once a day at 2:00 AM UTC:
+    - cron: '0 2 * * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -93,13 +93,25 @@ jobs:
 
       # Update Markdown stdlib package URLs:
       - name: 'Update Markdown stdlib package URLs'
+        id: update-markdown-pkg-urls
         run: |
           make markdown-pkg-urls MARKDOWN_FILTER='.*/lib/node_modules/@stdlib/.*'
+
+          if [[ -z "$(git status --porcelain)" ]]; then
+            # If no files were changed, exit with a success status code:
+            echo "changed=false" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            # Otherwise, add changed files to the staging area and commit:
+            git add -A && git commit -m "Update Markdown equation elements"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
         timeout-minutes: 10
 
      # Create a pull request with the changes:
       - name: 'Create pull request'
         id: cpr
+        if: steps.update-markdown-pkg-urls.outputs.changed == 'true'
         # Pin action to full length commit SHA corresponding to v5.0.2
         uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
         with:
