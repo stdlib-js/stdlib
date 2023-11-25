@@ -39,7 +39,7 @@ import { Collection } from '@stdlib/types/array';
 * var y = take( x, [ 1, 3 ] );
 * // returns [ 2, 4 ]
 */
-declare function take<T>( x: Collection<T>, indices: Collection<number> ): Array<T>;
+declare function take<T = unknown>( x: Collection<T>, indices: Collection<number> ): Array<T>;
 
 
 // EXPORTS //
