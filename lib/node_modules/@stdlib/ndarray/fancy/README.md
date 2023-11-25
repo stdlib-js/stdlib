@@ -111,6 +111,7 @@ The constructor accepts the following `options`:
 The constructor supports the following `modes`:
 
 -   **throw**: specifies that a `FancyArray` instance should throw an error when an index exceeds array dimensions.
+-   **normalize**: specifies that a `FancyArray` instance should normalize negative indices and throw an error when an index exceeds array dimensions.
 -   **wrap**: specifies that a `FancyArray` instance should wrap around an index exceeding array dimensions using modulo arithmetic.
 -   **clamp**: specifies that a `FancyArray` instance should set an index exceeding array dimensions to either `0` (minimum index) or the maximum index.
 
