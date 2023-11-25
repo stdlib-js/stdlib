@@ -35,7 +35,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version() {
+void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -73,7 +73,7 @@ void print_results( double elapsed ) {
 *
 * @return clock time
 */
-double tic() {
+double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
@@ -84,7 +84,7 @@ double tic() {
 *
 * @return random double
 */
-double rand_double() {
+double rand_double( void ) {
 	int r = rand();
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }
@@ -94,7 +94,7 @@ double rand_double() {
 *
 * @return elapsed time in seconds
 */
-double benchmark1() {
+double benchmark1( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -121,7 +121,7 @@ double benchmark1() {
 *
 * @return elapsed time in seconds
 */
-double benchmark2() {
+double benchmark2( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -148,7 +148,7 @@ double benchmark2() {
 *
 * @return elapsed time in seconds
 */
-double benchmark3() {
+double benchmark3( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -165,6 +165,33 @@ double benchmark3() {
 	}
 	elapsed = tic() - t;
 	if ( idx < 0 ) {
+		printf( "unexpected result\n" );
+	}
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @return elapsed time in seconds
+*/
+double benchmark4( void ) {
+	double elapsed;
+	int64_t idx;
+	double t;
+	int i;
+
+	t = tic();
+	for ( i = 0; i < ITERATIONS; i++ ) {
+		idx = (int64_t)( (rand_double()*100.0) - 50.0 );
+		idx = stdlib_ndarray_ind( idx, 10, STDLIB_NDARRAY_INDEX_NORMALIZE );
+		if ( idx < -1 ) {
+			printf( "unexpected result\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( idx < -1 ) {
 		printf( "unexpected result\n" );
 	}
 	return elapsed;
@@ -202,6 +229,13 @@ int main( void ) {
 		count += 1;
 		printf( "# c::native::%s:mode=wrap\n", NAME );
 		elapsed = benchmark3();
+		print_results( elapsed );
+		printf( "ok %d benchmark finished\n", count );
+	}
+	for ( i = 0; i < REPEATS; i++ ) {
+		count += 1;
+		printf( "# c::native::%s:mode=normalize\n", NAME );
+		elapsed = benchmark4();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}

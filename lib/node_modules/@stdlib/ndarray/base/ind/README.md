@@ -57,11 +57,12 @@ idx = ind( 10, 9, 'throw' );
 // throws <RangeError>
 ```
 
-The function supports the following `modes`:
+The function supports the following modes:
 
--   `throw`: specifies that the function should throw an error when an index is outside the interval `[0,max]`.
--   `wrap`: specifies that the function should wrap around an index using modulo arithmetic.
--   `clamp`: specifies that the function should set an index less than `0` to `0` (minimum index) and set an index greater than `max` to `max`.
+-   **throw**: specifies that the function should throw an error when an index is outside the interval `[0, max]`.
+-   **normalize**: specifies that the function should normalize negative indices and throw an error when an index is outside the interval `[-max-1, max]`.
+-   **wrap**: specifies that the function should wrap around an index using modulo arithmetic.
+-   **clamp**: specifies that the function should set an index less than `0` to `0` (minimum index) and set an index greater than `max` to `max`.
 
 ```javascript
 var idx = ind( 2, 9, 'wrap' );
@@ -81,6 +82,12 @@ idx = ind( 10, 9, 'clamp' );
 
 idx = ind( -1, 9, 'clamp' );
 // returns 0
+
+idx = ind( 2, 9, 'normalize' );
+// returns 2
+
+idx = ind( -4, 9, 'normalize' );
+// returns 6
 ```
 
 </section>

@@ -61,6 +61,16 @@ import { Mode } from '@stdlib/types/ndarray';
 *
 * idx = ind( -1, 9, 'throw' );
 * // throws <RangeError>
+*
+* @example
+* var idx = ind( 2, 9, 'normalize' );
+* // returns 2
+*
+* idx = ind( -5, 9, 'normalize' );
+* // returns 5
+*
+* idx = ind( -20, 9, 'normalize' );
+* // throws <RangeError>
 */
 declare function ind( idx: number, max: number, mode: Mode ): number;
 
