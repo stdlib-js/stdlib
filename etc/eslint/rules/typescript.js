@@ -2028,15 +2028,15 @@ rules[ 'no-plusplus' ] = [ 'error', {
 }];
 
 /**
-* Disallows redeclaring variables.
+* Disable rule disallowing redeclaring variables.
 *
 * @name no-redeclare
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [no-redeclare]{@link https://eslint.org/docs/rules/no-redeclare}
 */
-rules[ 'no-redeclare' ] = 'error';
+rules[ 'no-redeclare' ] = 'off'; // NOTE: disabled due to erroneous lint error when declaring overloaded function definitions
 
 /**
 * Disallows importing specific modules.
