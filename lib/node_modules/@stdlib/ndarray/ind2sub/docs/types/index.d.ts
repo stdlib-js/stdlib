@@ -39,6 +39,9 @@ interface Options {
 	order?: Order;
 }
 
+/**
+* Interface describing the main export.
+*/
 interface Ind2Sub {
 	/**
 	* Converts a linear index to an array of subscripts.
@@ -174,6 +177,7 @@ interface Ind2Sub {
 * // returns true
 */
 declare var ind2sub: Ind2Sub;
+
 
 // EXPORTS //
 
