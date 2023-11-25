@@ -354,7 +354,7 @@ run_lint() {
 	fi
 	# Lint TypeScript declaration files...
 	if [[ -z "${skip_typescript_declarations}" ]]; then
-		files=$(echo "${changed_files}" | grep '\.d\.ts$' | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep '/docs/types/.*\.ts$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" lint-typescript-declarations-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
