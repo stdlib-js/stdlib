@@ -939,3 +939,6 @@
 "F8","invalid argument. Dimension index exceeds the number of dimensions. Number of dimensions: %d. Value: `%d`.","RangeError"
 "F9","invalid argument. Third argument must be either a Slice, integer, null, or undefined. Value: `%s`.","TypeError"
 "FA","invalid argument. First argument must be an ndarray having at least three dimensions.","TypeError"
+"FB","invalid argument. Index must resolve to a value on the interval: [0, %d]. Value: `%d`.","RangeError"
+"FC","invalid argument. First argument must be a recognized index mode. Value: `%s`.","TypeError"
+"FD","invalid argument. Third argument exceeds the number of dimensions. Number of dimensions: %d. Value: `%d`.","RangeError"
