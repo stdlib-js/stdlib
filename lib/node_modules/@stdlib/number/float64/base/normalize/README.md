@@ -232,7 +232,7 @@ int main( void ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/number/float32/base/normalize`][@stdlib/number/float32/base/normalize]</span><span class="delimiter">: </span><span class="description">return a normal number `y` and exponent `exp` satisfying `x = y \* 2^exp`.</span>
+-   <span class="package-name">[`@stdlib/number/float32/base/normalize`][@stdlib/number/float32/base/normalize]</span><span class="delimiter">: </span><span class="description">return a normal number `y` and exponent `exp` satisfying `x = y * 2^exp`.</span>
 
 </section>
 
