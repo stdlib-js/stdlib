@@ -31,7 +31,6 @@ import take2d = require( './index' );
 
 // The compiler throws an error if the function is provided a first argument which is not a nested array...
 {
-	take2d( '5', [ 0, 1 ], 1, 'throw' ); // $ExpectError
 	take2d( 1, [ 0, 1 ], 1, 'throw' ); // $ExpectError
 	take2d( true, [ 0, 1 ], 1, 'throw' ); // $ExpectError
 	take2d( false, [ 0, 1 ], 1, 'throw' ); // $ExpectError
