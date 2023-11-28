@@ -35,8 +35,8 @@ function fcn( value: number ): number {
 {
 	const x = [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ];
 
-	map3d( x, [ 1, 2, 2 ], fcn ); // $ExpectType Array<Array<number>>
-	map3d( x, [ 1, 2, 2 ], fcn, {} ); // $ExpectType Array<Array<number>>
+	map3d( x, [ 1, 2, 2 ], fcn ); // $ExpectType Array3D<number>
+	map3d( x, [ 1, 2, 2 ], fcn, {} ); // $ExpectType Array3D<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a nested array...
@@ -119,8 +119,8 @@ function fcn( value: number ): number {
 	const x = [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ];
 	const y = [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ];
 
-	map3d.assign( x, y, [ 1, 2, 2 ], fcn ); // $ExpectType Array<Array<number>>
-	map3d.assign( x, y, [ 1, 2, 2 ], fcn, {} ); // $ExpectType Array<Array<number>>
+	map3d.assign( x, y, [ 1, 2, 2 ], fcn ); // $ExpectType Array3D<number>
+	map3d.assign( x, y, [ 1, 2, 2 ], fcn, {} ); // $ExpectType Array3D<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not a nested array...
