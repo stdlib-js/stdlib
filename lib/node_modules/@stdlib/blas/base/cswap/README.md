@@ -66,25 +66,22 @@ im = imagf( z );
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **x**: input [`Complex64Array`][@stdlib/array/complex64].
+-   **x**: first input [`Complex64Array`][@stdlib/array/complex64].
 -   **strideX**: index increment for `x`.
--   **y**: destination [`Complex64Array`][@stdlib/array/complex64].
+-   **y**: second input [`Complex64Array`][@stdlib/array/complex64].
 -   **strideY**: index increment for `y`.
 
-The `N` and `stride` parameters determine how values from `x` are interchanged with values from `y`. For example, to interchange in reverse order every other value in `x` into the first `N` elements of `y`,
+The `N` and stride parameters determine how values from `x` are interchanged with values from `y`. For example, to interchange in reverse order every other value in `x` into the first `N` elements of `y`,
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 var realf = require( '@stdlib/complex/realf' );
 var imagf = require( '@stdlib/complex/imagf' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
-var N = floor( x.length / 2 );
-
-cswap( N, x, -2, y, 1 );
+cswap( 2, x, -2, y, 1 );
 
 var z = y.get( 0 );
 // returns <Complex64>
@@ -182,7 +179,7 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offsetX` and `offsetY` parameters support indexing semantics based on starting indices. For example, to interchange every other value in `x` starting from the second value into the last `N` elements in `y` where `x[i] = y[n]`, `x[i+2] = y[n-1]`,...,
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to interchange every other value in `x` starting from the second value into the last `N` elements in `y` where `x[i] = y[n]`, `x[i+2] = y[n-1]`,...,
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
@@ -236,24 +233,21 @@ im = imagf( z );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var Complex64Array = require( '@stdlib/array/complex64' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
+var Complex64 = require( '@stdlib/complex/float32' );
 var cswap = require( '@stdlib/blas/base/cswap' );
 
-var re = discreteUniform.factory( 0, 10 );
-var im = discreteUniform.factory( -5, 5 );
-
-var x = new Complex64Array( 10 );
-var y = new Complex64Array( 10 );
-
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    x.set( [ re(), im() ], i );
-    y.set( [ re(), im() ], i );
+function rand() {
+    return new Complex64( discreteUniform( 0, 10 ), discreteUniform( -5, 5 ) );
 }
+
+var x = filledarrayBy( 10, 'complex64', rand );
 console.log( x.get( 0 ).toString() );
+
+var y = filledarrayBy( 10, 'complex64', rand );
 console.log( y.get( 0 ).toString() );
 
-// Swap elements in `x` and `y` starting from the end of `y`:
+// Swap elements in `x` into `y` starting from the end of `y`:
 cswap( x.length, x, 1, y, -1 );
 console.log( x.get( x.length-1 ).toString() );
 console.log( y.get( y.length-1 ).toString() );
