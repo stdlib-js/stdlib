@@ -74,14 +74,10 @@ The `N` and `stride` parameters determine which elements in `x` are used to comp
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 
-var N = floor( x.length / 2 );
-var stride = 2;
-
-var sum = dasum( N, x, stride );
+var sum = dasum( 4, x, 2 );
 // returns 10.0
 ```
 
@@ -96,10 +92,8 @@ var x0 = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 // Create an offset view...
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var N = 3;
-
 // Sum every other value...
-var sum = dasum( N, x1, 2 );
+var sum = dasum( 3, x1, 2 );
 // returns 12.0
 ```
 
@@ -159,28 +153,15 @@ sum = dasum.ndarray( 3, x, -1, x.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
-var Float64Array = require( '@stdlib/array/float64' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dasum = require( '@stdlib/blas/base/dasum' );
 
-var rand;
-var sign;
-var x;
-var i;
+var x = filledarrayBy( 10, 'float64', discreteUniform( -100, 100 ) );
+console.log( x );
 
-x = new Float64Array( 100 );
-for ( i = 0; i < x.length; i++ ) {
-    rand = round( randu()*100.0 );
-    sign = randu();
-    if ( sign < 0.5 ) {
-        sign = -1.0;
-    } else {
-        sign = 1.0;
-    }
-    x[ i ] = sign * rand;
-}
-console.log( dasum( x.length, x, 1 ) );
+var y = dasum( x.length, x, 1 );
+console.log( y );
 ```
 
 </section>
