@@ -41,7 +41,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, strideY, argv, 3 );
 
 	napi_value v;
-	napi_status status = napi_create_double( env, c_ddot( N, (double *)X, strideX, (double *)Y, strideY ), &v );
+	napi_status status = napi_create_double( env, c_ddot( N, X, strideX, Y, strideY ), &v );
 		assert( status == napi_ok );
 
 	return v;
