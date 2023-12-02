@@ -1,7 +1,8 @@
 {
   "options": {
     "os": "linux",
-    "blas": ""
+    "blas": "",
+    "wasm": false
   },
   "fields": [
     {
@@ -29,6 +30,7 @@
     {
       "os": "linux",
       "blas": "",
+      "wasm": false,
       "src": [
         "./src/cswap.f",
         "./src/cswap_f.c"
@@ -48,6 +50,7 @@
     {
       "os": "linux",
       "blas": "openblas",
+      "wasm": false,
       "src": [
         "./src/cswap_cblas.c"
       ],
@@ -69,6 +72,7 @@
     {
       "os": "mac",
       "blas": "",
+      "wasm": false,
       "src": [
         "./src/cswap.f",
         "./src/cswap_f.c"
@@ -88,6 +92,7 @@
     {
       "os": "mac",
       "blas": "apple_accelerate_framework",
+      "wasm": false,
       "src": [
         "./src/cswap_cblas.c"
       ],
@@ -108,6 +113,7 @@
     {
       "os": "mac",
       "blas": "openblas",
+      "wasm": false,
       "src": [
         "./src/cswap_cblas.c"
       ],
@@ -129,6 +135,7 @@
     {
       "os": "win",
       "blas": "",
+      "wasm": false,
       "src": [
         "./src/cswap.c"
       ],
@@ -143,6 +150,20 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array"
       ]
+    },
+    {
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/cswap.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
     }
   ]
 }

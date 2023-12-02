@@ -1,7 +1,8 @@
 {
   "options": {
     "os": "linux",
-    "blas": ""
+    "blas": "",
+    "wasm": false
   },
   "fields": [
     {
@@ -29,6 +30,7 @@
     {
       "os": "linux",
       "blas": "",
+      "wasm": false,
       "src": [
         "./src/dnrm2.f",
         "./src/dnrm2sub.f",
@@ -49,6 +51,7 @@
     {
       "os": "linux",
       "blas": "openblas",
+      "wasm": false,
       "src": [
         "./src/dnrm2_cblas.c"
       ],
@@ -70,6 +73,7 @@
     {
       "os": "mac",
       "blas": "",
+      "wasm": false,
       "src": [
         "./src/dnrm2.f",
         "./src/dnrm2sub.f",
@@ -90,6 +94,7 @@
     {
       "os": "mac",
       "blas": "apple_accelerate_framework",
+      "wasm": false,
       "src": [
         "./src/dnrm2_cblas.c"
       ],
@@ -110,6 +115,7 @@
     {
       "os": "mac",
       "blas": "openblas",
+      "wasm": false,
       "src": [
         "./src/dnrm2_cblas.c"
       ],
@@ -131,6 +137,7 @@
     {
       "os": "win",
       "blas": "",
+      "wasm": false,
       "src": [
         "./src/dnrm2.c"
       ],
