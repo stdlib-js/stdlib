@@ -53,7 +53,7 @@ The function has the following parameters:
 -   **y**: second input [`Float64Array`][mdn-float64array].
 -   **strideY**: index increment for `y`.
 
-The `N` and stride parameters determine how values from `x` and `y` are accessed at runtime. For example, to swap in reverse order every other value in `x` with the first `N` elements of `y`,
+The `N` and stride parameters determine how values in the strided arrays are accessed at runtime. For example, to swap in reverse order every other value in `x` with the first `N` elements of `y`,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -107,7 +107,7 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to swap every other value in `x` starting from the second value with the last `N` elements in `y` where `x[i] = y[n]`, `x[i+2] = y[n-1]`,...,
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to swap every other value in `x` starting from the second value with the last `N` elements in `y` where `x[i] = y[n]`, `x[i+2] = y[n-1]`,...,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );

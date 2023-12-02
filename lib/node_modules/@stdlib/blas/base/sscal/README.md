@@ -101,7 +101,7 @@ The function has the following additional parameters:
 
 -   **offset**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to multiply the last three elements of `x` by a constant
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the `offset` parameter supports indexing semantics based on a starting index. For example, to multiply the last three elements of `x` by a constant
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
