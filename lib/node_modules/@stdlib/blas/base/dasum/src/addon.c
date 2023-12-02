@@ -39,7 +39,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 
 	napi_value v;
-	napi_status status = napi_create_double( env, c_dasum( N, (double *)X, strideX ), &v );
+	napi_status status = napi_create_double( env, c_dasum( N, X, strideX ), &v );
 	assert( status == napi_ok );
 
 	return v;
