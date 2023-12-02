@@ -73,18 +73,15 @@ The function has the following parameters:
 -   **y**: input [`Float32Array`][@stdlib/array/float32].
 -   **strideY**: index increment for `y`.
 
-The `N` and `stride` parameters determine which elements in `x` and `y` are accessed at runtime. For example, to calculate the dot product of every other value in `x` and the first `N` elements of `y` in reverse order,
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to calculate the dot product of every other value in `x` and the first `N` elements of `y` in reverse order,
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float32Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 
-var N = floor( x.length / 2 );
-
-var z = dsdot( N, x, 2, y, -1 );
+var z = dsdot( 3, x, 2, y, -1 );
 // returns 9.0
 ```
 
@@ -94,7 +91,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial arrays...
 var x0 = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -104,9 +100,7 @@ var y0 = new Float32Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float32Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
-var N = floor( x0.length / 2 );
-
-var z = dsdot( N, x1, -2, y1, 1 );
+var z = dsdot( 3, x1, -2, y1, 1 );
 // returns 128.0
 ```
 
@@ -129,18 +123,15 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offsetX` and `offsetY` parameters support indexing semantics based on starting indices. For example, to calculate the dot product of every other value in `x` starting from the second value with the last 3 elements in `y` in reverse order
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to calculate the dot product of every other value in `x` starting from the second value with the last 3 elements in `y` in reverse order
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float32Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 
-var N = floor( x.length / 2 );
-
-var z = dsdot.ndarray( N, x, 2, 1, y, -1, y.length-1 );
+var z = dsdot.ndarray( 3, x, 2, 1, y, -1, y.length-1 );
 // returns 128.0
 ```
 
@@ -166,26 +157,18 @@ var z = dsdot.ndarray( N, x, 2, 1, y, -1, y.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var Float32Array = require( '@stdlib/array/float32' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dsdot = require( '@stdlib/blas/base/dsdot' );
 
-var x;
-var y;
-var i;
-
-x = new Float32Array( 10 );
-y = new Float32Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = round( randu() * 100.0 );
-    y[ i ] = round( randu() * 10.0 );
-}
+var x = filledarrayBy( 10, 'float32', discreteUniform( 0, 100 ) );
 console.log( x );
+
+var y = filledarrayBy( x.length, 'float32', discreteUniform( 0, 10 ) );
 console.log( y );
 
-var z = dsdot( x.length, x, 1, y, -1 );
-console.log( z );
+var out = dsdot.ndarray( x.length, x, 1, 0, y, -1, y.length-1 );
+console.log( out );
 ```
 
 </section>
