@@ -71,14 +71,9 @@ The function has the following parameters:
 The `N` and `stride` parameters determine which elements in `x` are used to compute the sum. For example, to sum every other value,
 
 ```javascript
-var floor = require( '@stdlib/math/base/special/floor' );
-
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
 
-var N = floor( x.length / 2 );
-var stride = 2;
-
-var sum = gasum( N, x, stride );
+var sum = gasum( 4, x, 2 );
 // returns 10.0
 ```
 
@@ -87,18 +82,14 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-var floor = require( '@stdlib/math/base/special/floor' );
-
 // Initial array...
 var x0 = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 
 // Create an offset view...
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var N = floor( x0.length / 2 );
-
 // Sum every other value...
-var sum = gasum( N, x1, 2 );
+var sum = gasum( 3, x1, 2 );
 // returns 12.0
 ```
 
@@ -156,27 +147,15 @@ sum = gasum.ndarray( 3, x, -1, x.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var gasum = require( '@stdlib/blas/base/gasum' );
 
-var rand;
-var sign;
-var x;
-var i;
+var x = filledarrayBy( 10, 'generic', discreteUniform( -100, 100 ) );
+console.log( x );
 
-x = [];
-for ( i = 0; i < 100; i++ ) {
-    rand = round( randu()*100.0 );
-    sign = randu();
-    if ( sign < 0.5 ) {
-        sign = -1.0;
-    } else {
-        sign = 1.0;
-    }
-    x.push( sign*rand );
-}
-console.log( gasum( x.length, x, 1 ) );
+var y = gasum( x.length, x, 1 );
+console.log( y );
 ```
 
 </section>
