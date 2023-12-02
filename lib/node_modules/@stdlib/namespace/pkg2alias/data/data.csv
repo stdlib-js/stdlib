@@ -1790,8 +1790,14 @@
 "@stdlib/assert/is-complex",isComplex
 "@stdlib/assert/is-complex64",isComplex64
 "@stdlib/assert/is-complex64array",isComplex64Array
+"@stdlib/assert/is-complex64matrix-like",isComplex64MatrixLike
+"@stdlib/assert/is-complex64ndarray-like",isComplex64ndarrayLike
+"@stdlib/assert/is-complex64vector-like",isComplex64VectorLike
 "@stdlib/assert/is-complex128",isComplex128
 "@stdlib/assert/is-complex128array",isComplex128Array
+"@stdlib/assert/is-complex128matrix-like",isComplex128MatrixLike
+"@stdlib/assert/is-complex128ndarray-like",isComplex128ndarrayLike
+"@stdlib/assert/is-complex128vector-like",isComplex128VectorLike
 "@stdlib/assert/is-complex-like",isComplexLike
 "@stdlib/assert/is-complex-typed-array",isComplexTypedArray
 "@stdlib/assert/is-complex-typed-array-like",isComplexTypedArrayLike

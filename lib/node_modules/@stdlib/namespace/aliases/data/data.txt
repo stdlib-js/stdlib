@@ -1790,8 +1790,14 @@ isCollection
 isComplex
 isComplex64
 isComplex64Array
+isComplex64MatrixLike
+isComplex64ndarrayLike
+isComplex64VectorLike
 isComplex128
 isComplex128Array
+isComplex128MatrixLike
+isComplex128ndarrayLike
+isComplex128VectorLike
 isComplexLike
 isComplexTypedArray
 isComplexTypedArrayLike
