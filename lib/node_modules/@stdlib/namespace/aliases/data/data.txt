@@ -2318,6 +2318,7 @@ ndsliceAssign
 ndsliceDimension
 ndsliceDimensionFrom
 ndsliceDimensionTo
+ndsliceTo
 ndzeros
 ndzerosLike
 nextGraphemeClusterBreak
