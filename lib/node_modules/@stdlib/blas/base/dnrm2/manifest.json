@@ -162,12 +162,7 @@
         "-m"
       ],
       "libpath": [],
-      "dependencies": [
-        "@stdlib/napi/export",
-        "@stdlib/napi/argv",
-        "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-float64array"
-      ]
+      "dependencies": []
     }
   ]
 }
