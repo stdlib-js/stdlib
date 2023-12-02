@@ -2299,6 +2299,7 @@
 "@stdlib/ndarray/safe-casts",ndarraySafeCasts
 "@stdlib/ndarray/same-kind-casts",ndarraySameKindCasts
 "@stdlib/ndarray/shape",ndarrayShape
+"@stdlib/ndarray/stride",ndarrayStride
 "@stdlib/ndarray/strides",ndarrayStrides
 "@stdlib/ndarray/empty",ndempty
 "@stdlib/ndarray/empty-like",ndemptyLike
