@@ -159,18 +159,20 @@ var z = sdsdot.ndarray( 3, 0.0, x, 2, 1, y, -1, y.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var sdsdot = require( '@stdlib/blas/base/sdsdot' );
 
-var x = filledarrayBy( 10, 'float32', discreteUniform( 0, 100 ) );
+var opts = {
+    'dtype': 'float32'
+};
+var x = discreteUniform( 10, 0, 100, opts );
 console.log( x );
 
-var y = filledarrayBy( x.length, 'float32', discreteUniform( 0, 10 ) );
+var y = discreteUniform( x.length, 0, 10, opts );
 console.log( y );
 
-var z = sdsdot( x.length, 0.0, x, 1, y, -1 );
-console.log( z );
+var out = sdsdot( x.length, 0.0, x, 1, y, -1 );
+console.log( out );
 ```
 
 </section>

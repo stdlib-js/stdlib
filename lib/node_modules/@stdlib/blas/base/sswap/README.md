@@ -142,14 +142,16 @@ sswap.ndarray( 3, x, 2, 1, y, -1, y.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var sswap = require( '@stdlib/blas/base/sswap' );
 
-var x = filledarrayBy( 10, 'float32', discreteUniform( 0, 500 ) );
+var opts = {
+    'dtype': 'float32'
+};
+var x = discreteUniform( 10, 0, 500, opts );
 console.log( x );
 
-var y = filledarrayBy( x.length, 'float32', discreteUniform( 0, 255 ) );
+var y = discreteUniform( x.length, 0, 255, opts );
 console.log( y );
 
 // Swap elements in `x` and `y` starting from the end of `y`:

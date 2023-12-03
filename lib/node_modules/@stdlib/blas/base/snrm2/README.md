@@ -145,15 +145,17 @@ var z = snrm2.ndarray( 4, x, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var snrm2 = require( '@stdlib/blas/base/snrm2' );
 
-var x = filledarrayBy( 10, 'float32', discreteUniform( 0, 100 ) );
+var opts = {
+    'dtype': 'float32'
+};
+var x = discreteUniform( 10, 0, 100, opts );
 console.log( x );
 
-var z = snrm2( x.length, x, 1 );
-console.log( z );
+var out = snrm2( x.length, x, 1 );
+console.log( out );
 ```
 
 </section>

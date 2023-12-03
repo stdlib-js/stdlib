@@ -131,14 +131,16 @@ gaxpy.ndarray( 3, 5.0, x, 2, 1, y, -1, y.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var gaxpy = require( '@stdlib/blas/base/gaxpy' );
 
-var x = filledarrayBy( 10, 'generic', discreteUniform( 0, 100 ) );
+var opts = {
+    'dtype': 'generic'
+};
+var x = discreteUniform( 10, 0, 100, opts );
 console.log( x );
 
-var y = filledarrayBy( x.length, 'generic', discreteUniform( 0, 10 ) );
+var y = discreteUniform( x.length, 0, 10, opts );
 console.log( y );
 
 gaxpy.ndarray( x.length, 5.0, x, 1, 0, y, -1, y.length-1 );

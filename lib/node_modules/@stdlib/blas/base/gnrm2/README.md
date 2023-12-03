@@ -135,11 +135,13 @@ var z = gnrm2.ndarray( 4, x, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var gnrm2 = require( '@stdlib/blas/base/gnrm2' );
 
-var x = filledarrayBy( 10, 'float64', discreteUniform( -100, 100 ) );
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
 
 var out = gnrm2( x.length, x, 1 );

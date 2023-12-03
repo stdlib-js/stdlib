@@ -121,11 +121,13 @@ gscal.ndarray( 3, 5.0, x, 1, x.length-3 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var gscal = require( '@stdlib/blas/base/gscal' );
 
-var x = filledarrayBy( 10, 'float64', discreteUniform( -100, 100 ) );
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
 
 gscal( x.length, 5.0, x, 1 );

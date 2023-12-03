@@ -157,14 +157,16 @@ var z = dsdot.ndarray( 3, x, 2, 1, y, -1, y.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dsdot = require( '@stdlib/blas/base/dsdot' );
 
-var x = filledarrayBy( 10, 'float32', discreteUniform( 0, 100 ) );
+var opts = {
+    'dtype': 'float32'
+};
+var x = discreteUniform( 10, 0, 100, opts );
 console.log( x );
 
-var y = filledarrayBy( x.length, 'float32', discreteUniform( 0, 10 ) );
+var y = discreteUniform( x.length, 0, 10, opts );
 console.log( y );
 
 var out = dsdot.ndarray( x.length, x, 1, 0, y, -1, y.length-1 );
