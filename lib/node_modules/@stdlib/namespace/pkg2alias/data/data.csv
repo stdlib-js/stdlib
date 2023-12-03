@@ -2325,6 +2325,7 @@
 "@stdlib/ndarray/slice-dimension",ndsliceDimension
 "@stdlib/ndarray/slice-dimension-from",ndsliceDimensionFrom
 "@stdlib/ndarray/slice-dimension-to",ndsliceDimensionTo
+"@stdlib/ndarray/slice-from",ndsliceFrom
 "@stdlib/ndarray/slice-to",ndsliceTo
 "@stdlib/ndarray/zeros",ndzeros
 "@stdlib/ndarray/zeros-like",ndzerosLike

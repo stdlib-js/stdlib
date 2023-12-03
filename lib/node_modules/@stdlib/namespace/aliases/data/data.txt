@@ -2325,6 +2325,7 @@ ndsliceAssign
 ndsliceDimension
 ndsliceDimensionFrom
 ndsliceDimensionTo
+ndsliceFrom
 ndsliceTo
 ndzeros
 ndzerosLike
