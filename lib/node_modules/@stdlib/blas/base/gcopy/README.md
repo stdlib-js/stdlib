@@ -47,7 +47,7 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **x**: input array.
 -   **strideX**: index increment for `x`.
--   **y**: destination array.
+-   **y**: output array.
 -   **strideY**: index increment for `y`.
 
 The `N` and stride parameters determine how values from `x` are copied into `y`. For example, to copy in reverse order every other value in `x` into the first `N` elements of `y`,
