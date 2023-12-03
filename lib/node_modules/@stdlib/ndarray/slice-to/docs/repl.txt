@@ -13,7 +13,7 @@
     In all cases, the number of stop indices must match the number of array
     dimensions.
 
-    If providing an array of slice arguments, no other stop arguments should be
+    If providing an array of stop arguments, no other stop arguments should be
     provided.
 
     Mixing function invocation styles (e.g., providing an array of stop
