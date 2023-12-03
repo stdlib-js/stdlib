@@ -34,7 +34,7 @@ interface Routine {
 	* @param strideX - `x` stride length
 	* @param y - second input array
 	* @param strideY - `y` stride length
-	* @returns dot product of `x` and `y`
+	* @returns dot product
 	*
 	* @example
 	* var x = [ 4.0, 2.0, -3.0, 5.0, -1.0 ];
@@ -55,7 +55,7 @@ interface Routine {
 	* @param y - second input array
 	* @param strideY - `y` stride length
 	* @param offsetY - starting index for `y`
-	* @returns dot product of `x` and `y`
+	* @returns dot product
 	*
 	* @example
 	* var x = [ 4.0, 2.0, -3.0, 5.0, -1.0 ];
@@ -75,7 +75,7 @@ interface Routine {
 * @param strideX - `x` stride length
 * @param y - second input array
 * @param strideY - `y` stride length
-* @returns dot product of `x` and `y`
+* @returns dot product
 *
 * @example
 * var x = [ 4.0, 2.0, -3.0, 5.0, -1.0 ];
