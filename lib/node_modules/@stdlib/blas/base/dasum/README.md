@@ -153,11 +153,13 @@ sum = dasum.ndarray( 3, x, -1, x.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dasum = require( '@stdlib/blas/base/dasum' );
 
-var x = filledarrayBy( 10, 'float64', discreteUniform( -100, 100 ) );
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
 
 var y = dasum( x.length, x, 1 );
