@@ -143,14 +143,16 @@ daxpy.ndarray( 3, alpha, x, 2, 1, y, -1, y.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var daxpy = require( '@stdlib/blas/base/daxpy' );
 
-var x = filledarrayBy( 10, 'float64', discreteUniform( 0, 100 ) );
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 10, 0, 100, opts );
 console.log( x );
 
-var y = filledarrayBy( x.length, 'float64', discreteUniform( 0, 10 ) );
+var y = discreteUniform( x.length, 0, 10, opts );
 console.log( y );
 
 daxpy.ndarray( x.length, 5.0, x, 1, 0, y, -1, y.length-1 );
