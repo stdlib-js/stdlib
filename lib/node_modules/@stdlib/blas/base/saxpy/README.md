@@ -51,7 +51,7 @@ The function has the following parameters:
 -   **alpha**: `numeric` constant.
 -   **x**: input [`Float32Array`][mdn-float32array].
 -   **strideX**: index increment for `x`.
--   **y**: input [`Float32Array`][mdn-float32array].
+-   **y**: output [`Float32Array`][mdn-float32array].
 -   **strideY**: index increment for `y`.
 
 The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to multiply every other value in `x` by `alpha` and add the result to the first `N` elements of `y` in reverse order,
