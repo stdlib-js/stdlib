@@ -22,8 +22,6 @@
 /**
 * Copies values from `X` into `Y`.
 *
-* Arguments are passed by reference to a Fortran subroutine implementing `scopy`.
-*
 * @param N        number of indexed elements
 * @param X        input array
 * @param strideX  X stride length
