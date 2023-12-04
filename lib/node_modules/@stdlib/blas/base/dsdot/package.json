@@ -79,5 +79,8 @@
     "float32array",
     "extended",
     "precision"
-  ]
+  ],
+  "__stdlib__": {
+    "wasm": false
+  }
 }

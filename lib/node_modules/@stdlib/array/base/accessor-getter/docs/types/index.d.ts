@@ -26,8 +26,7 @@ import { Complex64Array, Complex128Array, AccessorArrayLike } from '@stdlib/type
 /**
 * Returns an element from a `Complex128Array`.
 *
-* @param
-arr - input array
+* @param arr - input array
 * @param idx - element index
 * @returns element value
 */

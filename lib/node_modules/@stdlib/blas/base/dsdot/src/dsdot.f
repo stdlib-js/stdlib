@@ -60,7 +60,7 @@
 ! @param {integer} strideX - `sx` stride length
 ! @param {Array<real>} sy - second array
 ! @param {integer} strideY - `sy` stride length
-! @returns {double} the dot product of `sx` and `sy`
+! @returns {double} the dot product
 !<
 double precision function dsdot( N, sx, strideX, sy, strideY )
   implicit none

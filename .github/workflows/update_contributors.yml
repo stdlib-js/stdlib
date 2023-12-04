@@ -21,11 +21,9 @@ name: update_contributors
 
 # Workflow triggers:
 on:
-  pull_request_target:
-    branches:
-      - develop
-    types:
-      - closed
+  schedule:
+    # Run the workflow once a day at 2:00 AM UTC:
+    - cron: '0 2 * * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -38,9 +36,6 @@ jobs:
 
     # Define a display name:
     name: 'Update contributors'
-
-    # Only run this job if the pull request was merged (or the job was triggered manually):
-    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest

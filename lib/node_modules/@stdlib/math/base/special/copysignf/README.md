@@ -191,7 +191,7 @@ int main( void ) {
 ## See Also
 
 -   <span class="package-name">[`@stdlib/math/base/special/copysign`][@stdlib/math/base/special/copysign]</span><span class="delimiter">: </span><span class="description">return a double-precision floating-point number with the magnitude of x and the sign of y.</span>
--   <span class="package-name">[`@stdlib/math/base/special/flipsignf`][@stdlib/math/base/special/flipsignf]</span><span class="delimiter">: </span><span class="description">return a single-precision floating-point number with the magnitude of x and the sign of x*y.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/flipsignf`][@stdlib/math/base/special/flipsignf]</span><span class="delimiter">: </span><span class="description">return a single-precision floating-point number with the magnitude of x and the sign of x\*y.</span>
 
 </section>
 

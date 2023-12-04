@@ -30,7 +30,7 @@ interface Routine {
 	* @param strideX - `x` stride length
 	* @param y - second input array
 	* @param strideY - `y` stride length
-	* @returns dot product of `x` and `y`
+	* @returns dot product
 	*
 	* @example
 	* var Float64Array = require( `@stdlib/array/float64` );
@@ -53,7 +53,7 @@ interface Routine {
 	* @param y - second input array
 	* @param strideY - `y` stride length
 	* @param offsetY - starting index for `y`
-	* @returns dot product of `x` and `y`
+	* @returns dot product
 	*
 	* @example
 	* var Float64Array = require( `@stdlib/array/float64` );
@@ -75,7 +75,7 @@ interface Routine {
 * @param strideX - `x` stride length
 * @param y - second input array
 * @param strideY - `y` stride length
-* @returns dot product of `x` and `y`
+* @returns dot product
 *
 * @example
 * var Float64Array = require( `@stdlib/array/float64` );

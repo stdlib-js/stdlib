@@ -1,0 +1,61 @@
+
+{{alias}}( x, ...start[, options] )
+    Returns a read-only shifted view of an input ndarray.
+
+    The function supports two (mutually exclusive) means of providing starting
+    indices:
+
+    1. Providing a single array containing start arguments.
+    2. Providing start arguments as separate arguments.
+
+    An individual start argument must be either an integer, null, or undefined.
+
+    In all cases, the number of start indices must match the number of array
+    dimensions.
+
+    If providing an array of start arguments, no other start arguments should be
+    provided.
+
+    Mixing function invocation styles (e.g., providing an array of start
+    arguments followed by additional start arguments) is not supported.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    start: ...null|void|integer
+        Starting indices (inclusive). If an element is either `null` or
+        `undefined`, the function returns a view containing all elements along
+        that dimension. A negative integer indicates to resolve a starting index
+        relative to the last element along a corresponding dimension, with the
+        last element having index `-1`.
+
+    options: Object (optional)
+        Options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking.
+        Default: true.
+
+    Returns
+    -------
+    out: ndarray
+        Output array view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > x.shape
+    [ 2, 2 ]
+    > var y = {{alias}}( x, 0, 1 )
+    <ndarray>
+    > y.shape
+    [ 2, 1 ]
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ [ 2 ], [ 4 ] ]
+
+    See Also
+    --------
+

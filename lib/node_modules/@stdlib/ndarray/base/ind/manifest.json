@@ -34,6 +34,7 @@
 			"libpath": [],
 			"dependencies": [
 				"@stdlib/ndarray/base/clamp-index",
+        "@stdlib/ndarray/base/normalize-index",
 				"@stdlib/ndarray/base/wrap-index",
 				"@stdlib/ndarray/index-modes"
 			]

@@ -114,6 +114,7 @@ The function accepts the following `options`:
 -   **mode**: specifies how to handle indices which exceed array dimensions.
 
     -   `throw`: specifies that an [`ndarray`][@stdlib/ndarray/ctor] instance should throw an error when an index exceeds array dimensions.
+    -   `normalize`: specifies that an [`ndarray`][@stdlib/ndarray/ctor] instance should normalize negative indices and throw an error when an index exceeds array dimensions.
     -   `wrap`: specifies that an [`ndarray`][@stdlib/ndarray/ctor] instance should wrap around an index exceeding array dimensions using modulo arithmetic.
     -   `clamp`: specifies that an [`ndarray`][@stdlib/ndarray/ctor] instance should set an index exceeding array dimensions to either `0` (minimum index) or the maximum index.
 

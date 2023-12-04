@@ -29,9 +29,10 @@ import { ArrayLike } from '@stdlib/types/array';
 *
 * -   The function accepts the following "modes":
 *
-*     -   `throw`: throws an error when a subscript exceeds array dimensions.
-*     -   `wrap`: wrap around subscripts exceeding array dimensions using modulo arithmetic.
-*     -   `clamp`: set subscripts exceeding array dimensions to either `0` (minimum index) or the maximum index along a particular dimension.
+*     -   **throw**: throw an error when a subscript exceeds array dimensions.
+*     -   **normalize**: normalize negative subscripts and throw an error when a subscript exceeds array dimensions.
+*     -   **wrap**: wrap around subscripts exceeding array dimensions using modulo arithmetic.
+*     -   **clamp**: set subscripts exceeding array dimensions to either `0` (minimum index) or the maximum index along a particular dimension.
 *
 * -   When provided fewer modes than dimensions, the function recycles modes using modulo arithmetic.
 *

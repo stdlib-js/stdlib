@@ -26,7 +26,7 @@ import { Shape1D, Shape2D, Shape3D, Shape4D } from '@stdlib/types/ndarray';
 /**
 * Unary callback.
 *
-* @param value - input value
+* @param value - array element
 * @returns result
 */
 type Unary<T, U> = ( value: T ) => U;

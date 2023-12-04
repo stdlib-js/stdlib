@@ -32,9 +32,9 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - `x` stride length
-	* @param y - destination array
+	* @param y - output array
 	* @param strideY - `y` stride length
-	* @returns `y`
+	* @returns output array
 	*
 	* @example
 	* var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
@@ -52,10 +52,10 @@ interface Routine {
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting index for `x`
-	* @param y - destination array
+	* @param y - output array
 	* @param strideY - `y` stride length
 	* @param offsetY - starting index for `y`
-	* @returns `y`
+	* @returns output array
 	*
 	* @example
 	* var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
@@ -73,9 +73,9 @@ interface Routine {
 * @param N - number of indexed elements
 * @param x - input array
 * @param strideX - `x` stride length
-* @param y - destination array
+* @param y - output array
 * @param strideY - `y` stride length
-* @returns `y`
+* @returns output array
 *
 * @example
 * var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];

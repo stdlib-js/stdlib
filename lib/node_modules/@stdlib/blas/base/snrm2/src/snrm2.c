@@ -37,20 +37,20 @@ float c_snrm2( const int N, const float *X, const int stride ) {
 		return 0.0f;
 	}
 	if ( N == 1 ) {
-		return fabs( X[ 0 ] );
+		return fabsf( X[ 0 ] );
 	}
 	scale = 0.0f;
 	ssq = 1.0f;
 	for ( i = 0; i < N*stride; i += stride ) {
 		if ( X[ i ] != 0.0f ) {
-			ax = fabs( X[ i ] );
+			ax = fabsf( X[ i ] );
 			if ( scale < ax ) {
-				ssq = 1.0f + ( ssq * pow( scale/ax, 2 ) );
+				ssq = 1.0f + ( ssq * powf( scale/ax, 2 ) );
 				scale = ax;
 			} else {
-				ssq += pow( ax/scale, 2 );
+				ssq += powf( ax/scale, 2 );
 			}
 		}
 	}
-	return scale * sqrt( ssq );
+	return scale * sqrtf( ssq );
 }

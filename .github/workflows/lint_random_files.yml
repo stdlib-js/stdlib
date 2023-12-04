@@ -375,7 +375,7 @@ jobs:
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make TYPESCRIPT_DECLARATIONS_LINTER=dtslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}"
+            make TYPESCRIPT_DECLARATIONS_LINTER=eslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}"
           fi
 
       # Lint license headers:

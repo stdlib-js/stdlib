@@ -54,11 +54,12 @@ var subscripts = ind2sub( shape, strides, offset, order, 1, 'throw' );
 // returns [ 0, 1 ]
 ```
 
-The function supports the following `modes`:
+The function supports the following modes:
 
--   `throw`: specifies that the function should throw an error when a linear index exceeds array dimensions.
--   `wrap`: specifies that the function should wrap around a linear index exceeding array dimensions using modulo arithmetic.
--   `clamp`: specifies that the function should set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
+-   **throw**: specifies that the function should throw an error when a linear index exceeds array dimensions.
+-   **normalize**: specifies that the function should normalize negative indices and throw an error when a linear index exceeds array dimensions.
+-   **wrap**: specifies that the function should wrap around a linear index exceeding array dimensions using modulo arithmetic.
+-   **clamp**: specifies that the function should set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
 
 ```javascript
 var shape = [ 2, 2 ];
@@ -337,7 +338,7 @@ The function accepts the following arguments:
 -   **out**: `[out] int64_t*` output array.
 
 ```c
-int8_t stdlib_ndarray_ind2sub( int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset, enum STDLIB_NDARRAY_ORDER order, int64_t idx, enum STDLIB_NDARRAY_INDEX_MODE mode, int64_t *out );
+int8_t stdlib_ndarray_ind2sub( const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset, const enum STDLIB_NDARRAY_ORDER order, const int64_t idx, const enum STDLIB_NDARRAY_INDEX_MODE mode, int64_t *out );
 ```
 
 </section>

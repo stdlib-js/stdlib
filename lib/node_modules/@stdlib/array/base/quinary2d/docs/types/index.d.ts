@@ -26,7 +26,11 @@ import { Shape2D } from '@stdlib/types/ndarray';
 /**
 * Quinary callback.
 *
-* @param value - input value
+* @param v1 - element from first input array
+* @param v2 - element from second input array
+* @param v3 - element from third input array
+* @param v4 - element from fourth input array
+* @param v5 - element from fifth input array
 * @returns result
 */
 type Quinary<T, U, V, W, X, Y> = ( v1: T, v2: U, v3: V, v4: W, v5: X ) => Y;

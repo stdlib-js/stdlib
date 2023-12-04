@@ -17,10 +17,10 @@
 */
 
 /**
- * Compute the dot product of two single-precision floating-point vectors.
- *
- * @see <a href="http://www.netlib.org/lapack/expolore-html/df/d28/group__single__blas__level1.html">sdot</a>
- */
+* Compute the dot product of two single-precision floating-point vectors.
+*
+* @see <a href="http://www.netlib.org/lapack/expolore-html/df/d28/group__single__blas__level1.html">sdot</a>
+*/
 #include "stdlib/blas/base/sdot.h"
 #include "stdlib/blas/base/sdot_fortran.h"
 
@@ -34,7 +34,7 @@
 * @param strideX  X stride length
 * @param Y        second array
 * @param strideY  Y stride length
-* @returns        the dot product of X and Y
+* @returns        the dot product
 */
 float c_sdot( const int N, const float *X, const int strideX, const float *Y, const int strideY ) {
 	float dot;

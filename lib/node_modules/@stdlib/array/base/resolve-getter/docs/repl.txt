@@ -1,0 +1,51 @@
+
+{{alias}}( x )
+    Returns an accessor function for retrieving an element from an array-like
+    object.
+
+    An accessor function accepts the following arguments:
+
+    - arr: input array
+    - idx: element index
+
+    If provided an array-like object having an unsupported data type, the
+    function returns a default accessor function for accessing elements from
+    any indexed array-like object.
+
+    Otherwise, the function returns an accessor function which should *only* be
+    provided an array instance having the same data type (e.g., if provided a
+    Float64Array, the returned accessor function should only be provided
+    instances of Float64Array).
+
+    Accessor functions do *not* verify that provided input arrays are array
+    instances having a specific data type, as doing so would introduce
+    performance overhead. If array instances corresponding to other data types
+    are provided to an accessor function, JavaScript runtimes will consider the
+    function polymorphic, potentially triggering de-optimization. In order to
+    ensure maximum performance, *always* ensure that an accessor function is
+    monomorphic.
+
+    Accessor functions do *not* perform bounds checking.
+
+    Accessor functions do *not* verify that provided input arrays implement the
+    get/set protocol.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    f: Function
+        Accessor function.
+
+    Examples
+    --------
+    > var f = {{alias}}( [ 5, 6, 7, 8 ] );
+    > var v = f( [ 1, 2, 3, 4 ], 2 )
+    3
+
+    See Also
+    --------
+

@@ -109,8 +109,8 @@ import ind2sub = require( './index' );
 {
 	const shape = [ 3, 3, 3 ];
 	const out = [ 0, 0, 0 ];
-	ind2sub.assign( shape, 0, out ); // $ExpectType number[]
-	ind2sub.assign( shape, 0, { 'mode': 'throw' }, out ); // $ExpectType number[]
+	ind2sub.assign( shape, 0, out ); // $ExpectType ArrayLike<number>
+	ind2sub.assign( shape, 0, { 'mode': 'throw' }, out ); // $ExpectType ArrayLike<number>
 }
 
 // The `assign` method does not compile if provided a first argument which is not an array-like object containing numbers...

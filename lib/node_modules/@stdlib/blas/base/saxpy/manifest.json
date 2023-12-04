@@ -1,7 +1,8 @@
 {
   "options": {
     "os": "linux",
-    "blas": ""
+    "blas": "",
+    "wasm": false
   },
   "fields": [
     {
@@ -29,6 +30,7 @@
     {
       "os": "linux",
       "blas": "",
+      "wasm": false,
       "src": [
         "./src/saxpy.f",
         "./src/saxpy_f.c"
@@ -49,6 +51,7 @@
     {
       "os": "linux",
       "blas": "openblas",
+      "wasm": false,
       "src": [
         "./src/saxpy_cblas.c"
       ],
@@ -71,6 +74,7 @@
     {
       "os": "mac",
       "blas": "",
+      "wasm": false,
       "src": [
         "./src/saxpy.f",
         "./src/saxpy_f.c"
@@ -91,6 +95,7 @@
     {
       "os": "mac",
       "blas": "apple_accelerate_framework",
+      "wasm": false,
       "src": [
         "./src/saxpy_cblas.c"
       ],
@@ -112,6 +117,7 @@
     {
       "os": "mac",
       "blas": "openblas",
+      "wasm": false,
       "src": [
         "./src/saxpy_cblas.c"
       ],
@@ -134,6 +140,7 @@
     {
       "os": "win",
       "blas": "",
+      "wasm": false,
       "src": [
         "./src/saxpy.c"
       ],
@@ -146,8 +153,22 @@
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-complex64array"
+        "@stdlib/napi/argv-strided-float32array"
       ]
+    },
+    {
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/saxpy.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
     }
   ]
 }

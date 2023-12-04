@@ -26,7 +26,9 @@ import { Shape2D } from '@stdlib/types/ndarray';
 /**
 * Ternary callback.
 *
-* @param value - input value
+* @param v1 - element from first input array
+* @param v2 - element from second input array
+* @param v3 - element from third input array
 * @returns result
 */
 type Ternary<T, U, V, W> = ( v1: T, v2: U, v3: V ) => W;
