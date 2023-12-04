@@ -101,7 +101,6 @@ out = rtrimN( '~~~CUSTOM~~~', 3, '~' );
 
 <!-- /.examples -->
 
-
 <!-- Section for describing a command-line interface. -->
 
 * * *
