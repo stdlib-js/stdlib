@@ -92,7 +92,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial arrays...
 var x0 = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
