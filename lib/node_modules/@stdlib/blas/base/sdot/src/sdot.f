@@ -52,7 +52,7 @@
 ! @param {integer} strideX - `sx` stride length
 ! @param {Array<real>} sy - second array
 ! @param {integer} strideY - `sy` stride length
-! @returns {real} the dot product of `sx` and `sy`
+! @returns {real} the dot product
 !<
 real function sdot( N, sx, strideX, sy, strideY )
   implicit none
