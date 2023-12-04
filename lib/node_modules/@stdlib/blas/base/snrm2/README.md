@@ -55,9 +55,8 @@ Computes the [L2-norm][l2-norm] of a single-precision floating-point vector `x`.
 var Float32Array = require( '@stdlib/array/float32' );
 
 var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
-var N = 3;
 
-var z = snrm2( N, x, 1 );
+var z = snrm2( x.length, x, 1 );
 // returns 3.0
 ```
 
@@ -102,9 +101,8 @@ Computes the [L2-norm][l2-norm] of a single-precision floating-point vector usin
 var Float32Array = require( '@stdlib/array/float32' );
 
 var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
-var N = 3;
 
-var z = snrm2.ndarray( N, x, 1, 0 );
+var z = snrm2.ndarray( x.length, x, 1, 0 );
 // returns 3.0
 ```
 
