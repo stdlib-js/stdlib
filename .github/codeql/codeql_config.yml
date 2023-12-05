@@ -20,17 +20,18 @@ name: codeql_configuration
 
 # Define paths for which code scanning should be performed:
 paths:
-  - 'lib/node_modules/**/bin'
-  - 'lib/node_modules/**/docs/types'
-  - 'lib/node_modules/**/include'
-  - 'lib/node_modules/**/lib'
-  - 'lib/node_modules/**/src'
-
-  - 'lib/node_modules/**/*.gyp'
-  - 'lib/node_modules/**/*.gypi'
-  - 'package.json'
+  - 'lib'
 
 # Define paths for which code scanning should *not* be performed:
 paths-ignore:
-  - 'node_modules'
-  - 'lib/node_modules/**/_tools'
+  - '**/_tools'
+  - '**/test/*.js'
+  - '**/test/**/*.js'
+  - '**/benchmark/*.js'
+  - '**/benchmark/**/*.js'
+  - '**/examples/*.js'
+  - '**/examples/**/*.js'
+  - '**/data'
+  - '**/scripts'
+  - '**/etc'
+  - '**/docs'
