@@ -31,22 +31,6 @@ on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
-# Define paths for which code scanning should be performed:
-paths:
-  - 'lib/node_modules/**/bin/**'
-  - 'lib/node_modules/**/docs/types/**'
-  - 'lib/node_modules/**/include/**'
-  - 'lib/node_modules/**/lib/**'
-  - 'lib/node_modules/**/src/**'
-
-  - 'lib/node_modules/**/*.gyp'
-  - 'lib/node_modules/**/*.gypi'
-  - 'package.json'
-
-# Define paths for which code scanning should *not* be performed:
-paths-ignore:
-  - 'lib/node_modules/**/_tools/**'
-
 # Workflow jobs:
 jobs:
 
@@ -118,8 +102,12 @@ jobs:
 
         # FIXME: pin action to full length commit SHA
         uses: github/codeql-action/init@v2
+
         with:
           languages: ${{ matrix.language }}
+
+          # Specify a path to a custom CodeQL configuration file:
+          config-file: './.github/codeql/codeql_config.yml'
 
       # Install compilers:
       - name: 'Install compilers'

@@ -1,0 +1,35 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+name: codeql_configuration
+
+# Define paths for which code scanning should be performed:
+paths:
+  - 'lib/node_modules/**/bin/**'
+  - 'lib/node_modules/**/docs/types/**'
+  - 'lib/node_modules/**/include/**'
+  - 'lib/node_modules/**/lib/**'
+  - 'lib/node_modules/**/src/**'
+
+  - 'lib/node_modules/**/*.gyp'
+  - 'lib/node_modules/**/*.gypi'
+  - 'package.json'
+
+# Define paths for which code scanning should *not* be performed:
+paths-ignore:
+  - 'lib/node_modules/**/_tools/**'
