@@ -98,93 +98,93 @@ jobs:
     # Define the sequence of job steps:
     steps:
 
-    # Checkout the repository:
-    - name: 'Checkout repository'
-        # Pin action to full length commit SHA corresponding to v4.1.0
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+      # Checkout the repository:
+      - name: 'Checkout repository'
+          # Pin action to full length commit SHA corresponding to v4.1.0
+          uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+          with:
+            # Specify whether to remove untracked files before checking out the repository:
+            clean: false
+
+            # Limit clone depth to the most recent 100 commits:
+            fetch-depth: 100
+
+            # Specify whether to download Git-LFS files:
+            lfs: false
+          timeout-minutes: 10
+
+      # Initialize CodeQL tools for scanning:
+      - name: 'Initialize CodeQL'
+
+        # FIXME: pin action to full length commit SHA
+        uses: github/codeql-action/init@v2
         with:
-          # Specify whether to remove untracked files before checking out the repository:
-          clean: false
+          languages: ${{ matrix.language }}
 
-          # Limit clone depth to the most recent 100 commits:
-          fetch-depth: 100
-
-          # Specify whether to download Git-LFS files:
-          lfs: false
+      # Install compilers:
+      - name: 'Install compilers'
+        run: |
+          sudo -E apt-add-repository -y "ppa:ubuntu-toolchain-r/test"
+          sudo -E apt-get update -q
+          sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install binutils gcc-9 gcc-9-multilib g++-9 g++-9-multilib gfortran-9 gfortran-9-multilib
+          mkdir -p $HOME/bin
+          echo "$HOME/bin" >> $GITHUB_PATH
+          ln -s /usr/bin/gcc-9 $HOME/bin/gcc
+          ln -s /usr/bin/g++-9 $HOME/bin/g++
+          ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran
         timeout-minutes: 10
 
-    # Initialize CodeQL tools for scanning:
-    - name: 'Initialize CodeQL'
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA corresponding to v3.8.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        with:
+          node-version:  '20' # 'lts/*'
+        timeout-minutes: 5
 
-      # FIXME: pin action to full length commit SHA
-      uses: github/codeql-action/init@v2
-      with:
-        languages: ${{ matrix.language }}
+      # Print debug info:
+      - name: 'Print debug info'
+        run: |
+          echo 'PATH:'
+          echo $PATH
+          echo ''
+          echo 'gcc:'
+          gcc --version
+          echo ''
+          echo 'g++:'
+          g++ --version
+          echo ''
+          echo 'gfortran:'
+          gfortran --version
+          echo ''
+          echo 'Git:'
+          git --version
+          echo ''
+          echo 'Node.js:'
+          file $(which node)
+          node --version
+          node -p 'process.platform + "@" + process.arch'
+          echo ''
+          echo 'npm:'
+          npm --version
+          npm config get registry
+        timeout-minutes: 2
 
-    # Install compilers:
-    - name: 'Install compilers'
-      run: |
-        sudo -E apt-add-repository -y "ppa:ubuntu-toolchain-r/test"
-        sudo -E apt-get update -q
-        sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install binutils gcc-9 gcc-9-multilib g++-9 g++-9-multilib gfortran-9 gfortran-9-multilib
-        mkdir -p $HOME/bin
-        echo "$HOME/bin" >> $GITHUB_PATH
-        ln -s /usr/bin/gcc-9 $HOME/bin/gcc
-        ln -s /usr/bin/g++-9 $HOME/bin/g++
-        ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran
-      timeout-minutes: 10
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
 
-    # Install Node.js:
-    - name: 'Install Node.js'
-      # Pin action to full length commit SHA corresponding to v3.8.1
-      uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
-      with:
-        node-version:  '20' # 'lts/*'
-      timeout-minutes: 5
+      # Build native add-ons:
+      # - name: 'Build native add-ons'
+      #   run: |
+      #     make install-node-addons
 
-    # Print debug info:
-    - name: 'Print debug info'
-      run: |
-        echo 'PATH:'
-        echo $PATH
-        echo ''
-        echo 'gcc:'
-        gcc --version
-        echo ''
-        echo 'g++:'
-        g++ --version
-        echo ''
-        echo 'gfortran:'
-        gfortran --version
-        echo ''
-        echo 'Git:'
-        git --version
-        echo ''
-        echo 'Node.js:'
-        file $(which node)
-        node --version
-        node -p 'process.platform + "@" + process.arch'
-        echo ''
-        echo 'npm:'
-        npm --version
-        npm config get registry
-      timeout-minutes: 2
+      # Perform CodeQL analysis:
+      - name: 'Perform CodeQL Analysis'
 
-    # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-    - name: 'Install dependencies'
-      run: |
-        make install-node-modules || make install-node-modules || make install-node-modules
-      timeout-minutes: 15
-
-    # Build native add-ons:
-    # - name: 'Build native add-ons'
-    #   run: |
-    #     make install-node-addons
-
-    # Perform CodeQL analysis:
-    - name: 'Perform CodeQL Analysis'
-
-      # FIXME: pin action to full length commit SHA
-      uses: github/codeql-action/analyze@v2
-      with:
-        category: "/language:${{matrix.language}}"
+        # FIXME: pin action to full length commit SHA
+        uses: github/codeql-action/analyze@v2
+        with:
+          category: "/language:${{matrix.language}}"
