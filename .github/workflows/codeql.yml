@@ -16,7 +16,7 @@
 # limitations under the License.
 #/
 
-name: CodeQL
+name: codeql
 
 # Workflow triggers:
 on:
