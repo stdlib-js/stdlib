@@ -176,6 +176,3 @@ jobs:
         uses: github/codeql-action/analyze@v2
         with:
           category: "/language:${{matrix.language}}"
-
-          # Specify a path to a custom CodeQL configuration file:
-          config-file: './.github/codeql/codeql_config.yml'
