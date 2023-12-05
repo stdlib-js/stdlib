@@ -97,18 +97,6 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
-      # Initialize CodeQL tools for scanning:
-      - name: 'Initialize CodeQL'
-
-        # FIXME: pin action to full length commit SHA
-        uses: github/codeql-action/init@v2
-
-        with:
-          languages: ${{ matrix.language }}
-
-          # Specify a path to a custom CodeQL configuration file:
-          config-file: './.github/codeql/codeql_config.yml'
-
       # Install compilers:
       - name: 'Install compilers'
         run: |
@@ -168,6 +156,18 @@ jobs:
       # - name: 'Build native add-ons'
       #   run: |
       #     make install-node-addons
+
+      # Initialize CodeQL tools for scanning:
+      - name: 'Initialize CodeQL'
+
+        # FIXME: pin action to full length commit SHA
+        uses: github/codeql-action/init@v2
+
+        with:
+          languages: ${{ matrix.language }}
+
+          # Specify a path to a custom CodeQL configuration file:
+          config-file: './.github/codeql/codeql_config.yml'
 
       # Perform CodeQL analysis:
       - name: 'Perform CodeQL Analysis'
