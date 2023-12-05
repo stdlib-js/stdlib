@@ -100,18 +100,18 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-          # Pin action to full length commit SHA corresponding to v4.1.0
-          uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
-          with:
-            # Specify whether to remove untracked files before checking out the repository:
-            clean: false
+        # Pin action to full length commit SHA corresponding to v4.1.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
 
-            # Limit clone depth to the most recent 100 commits:
-            fetch-depth: 100
+          # Limit clone depth to the most recent 100 commits:
+          fetch-depth: 100
 
-            # Specify whether to download Git-LFS files:
-            lfs: false
-          timeout-minutes: 10
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
 
       # Initialize CodeQL tools for scanning:
       - name: 'Initialize CodeQL'
