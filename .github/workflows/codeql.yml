@@ -28,6 +28,9 @@ on:
     # Run the workflow once a week (Sunday at midnight):
     - cron: '0 0 * * 0'
 
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
 # Workflow jobs:
 jobs:
 
