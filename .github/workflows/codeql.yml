@@ -160,7 +160,7 @@ jobs:
     # Build native add-ons:
     # - name: 'Build native add-ons'
     #   run: |
-    #     ./location_of_script_within_repo/buildscript.sh
+    #     make install-node-addons
 
     # Perform CodeQL analysis:
     - name: 'Perform CodeQL Analysis'
