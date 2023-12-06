@@ -29,6 +29,11 @@ on:
     # Run the workflow every week on Sunday at 00:00 UTC:
     - cron: '0 0 * * 0'
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
