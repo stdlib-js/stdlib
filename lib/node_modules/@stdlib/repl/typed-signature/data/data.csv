@@ -3758,6 +3758,7 @@ ndsliceAssign,"ndsliceAssign( x:ndarray, y:ndarray, ...s:MultiSlice|Slice|null|u
 ndsliceDimension,"ndsliceDimension( x:ndarray, dim:integer, slice:Slice|integer|null|undefined[, options:Object] )"
 ndsliceDimensionFrom,"ndsliceDimensionFrom( x:ndarray, dim:integer, start:integer[, options:Object] )"
 ndsliceDimensionTo,"ndsliceDimensionTo( x:ndarray, dim:integer, stop:integer[, options:Object] )"
+ndsliceFrom,"ndsliceFrom( x:ndarray, ...start:null|void|integer[, options:Object] )"
 ndsliceTo,"ndsliceTo( x:ndarray, ...stop:null|void|integer[, options:Object] )"
 ndzeros,"ndzeros( shape:ArrayLikeObject<integer>|integer[, options:Object] )"
 ndzerosLike,"ndzerosLike( x:ndarray[, options:Object] )"
