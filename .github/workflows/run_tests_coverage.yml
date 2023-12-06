@@ -72,6 +72,11 @@ on:
       directories:
         description: 'List of changed directories for which to run tests (space separated):'
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
