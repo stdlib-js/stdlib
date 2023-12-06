@@ -42,7 +42,7 @@ permissions:
 jobs:
 
   # Define a job for updating the related packages section of READMEs:
-  update-related-packages:
+  update:
 
     # Define a display name:
     name: 'Update related packages section of READMEs'
