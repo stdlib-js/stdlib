@@ -22,6 +22,11 @@ name: check_licenses
 # Workflow triggers:
 on: [pull_request]
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 

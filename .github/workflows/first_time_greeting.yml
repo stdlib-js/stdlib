@@ -22,6 +22,11 @@ name: first_time_greeting
 # Workflow triggers:
 on: [pull_request_target, issues]
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
