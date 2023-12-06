@@ -42,7 +42,7 @@ ESLINT_CONF_TESTS ?= $(CONFIG_DIR)/eslint/.eslintrc.tests.js
 ESLINT_CONF_BENCHMARKS ?= $(CONFIG_DIR)/eslint/.eslintrc.benchmarks.js
 
 # Define the path to the ESLint ignore file:
-ESLINT_IGNORE ?= $(CONFIG_DIR)/eslint/.eslintignore
+ESLINT_IGNORE ?= $(ROOT_DIR)/.eslintignore
 
 # Define the command-line options to use when invoking the ESLint executable:
 ESLINT_FLAGS ?= \
