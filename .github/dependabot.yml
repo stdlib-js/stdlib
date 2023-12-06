@@ -18,6 +18,11 @@
 
 version: 2
 updates:
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: weekly
+
 - package-ecosystem: npm
   directory: "/"
   schedule:
@@ -32,6 +37,11 @@ updates:
     - dependency-name: "debug"
     - dependency-name: "ajv"
     - dependency-name: "d3-scale"
+    - dependency-name: "d3-shape"
+    - dependency-name: "d3-time-format"
+    - dependency-name: "d3-format"
     - dependency-name: "readable-stream"
     - dependency-name: "mkdirp"
     - dependency-name: "semver"
+    - dependency-name: "glob"
+    - dependency-name: "node-gyp"
