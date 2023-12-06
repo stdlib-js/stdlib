@@ -80,6 +80,8 @@ var o = blas;
 
 <!-- <toc pattern="+(*amax|*lsame|*xerbla*)"> -->
 
+
+
 <!-- </toc> -->
 
 </section>
