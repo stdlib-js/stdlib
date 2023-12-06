@@ -45,8 +45,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        # Pin action to full length commit SHA corresponding to v4.1.0
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
         timeout-minutes: 10
 
       # Install Node.js:

@@ -49,8 +49,8 @@ jobs:
     steps:
       # Checkout UMD branch of the repository:
       - name: 'Checkout branch with UMD build'
-        # Pin action to full length commit SHA corresponding to v4.1.0
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
         with:
           ref: umd
 
@@ -116,8 +116,8 @@ jobs:
 
       # Checkout ES modules branch of the repository:
       - name: 'Checkout branch with ESM build'
-        # Pin action to full length commit SHA corresponding to v4.1.0
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
         with:
           ref: esm
 
@@ -161,8 +161,8 @@ jobs:
 
       # Checkout Deno branch of the repository:
       - name: 'Checkout branch with Deno build'
-        # Pin action to full length commit SHA corresponding to v4.1.0
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
         with:
           ref: deno
 
