@@ -28,6 +28,11 @@ on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -77,6 +82,7 @@ jobs:
           title: 'TODO comments'
           content-filepath: ./tracking_issue_todos.md
           issue-number: 803
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             todos
             automated-issue
@@ -89,6 +95,7 @@ jobs:
           title: 'FIXME comments'
           content-filepath: ./tracking_issue_fixmes.md
           issue-number: 804
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             fixmes
             automated-issue
