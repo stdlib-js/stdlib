@@ -33,11 +33,16 @@ on:
     # Run the workflow once a day at 2:00 AM UTC:
     - cron: '0 2 * * *'
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
   # Define a job for updating the related packages section of READMEs:
-  lint:
+  update-related-packages:
 
     # Define a display name:
     name: 'Update related packages section of READMEs'
