@@ -217,8 +217,8 @@ jobs:
 
       # Send notification to Slack:
       - name: 'Send notification'
-        # Pin action to full length commit SHA corresponding to v3.15.1
-        uses: 8398a7/action-slack@fbd6aa58ba854a740e11a35d0df80cb5d12101d8
+        # Pin action to full length commit SHA
+        uses: 8398a7/action-slack@fbd6aa58ba854a740e11a35d0df80cb5d12101d8 # v3.15.1
         if: success()
         with:
           status: "${{ env.NOTIFICATION_STATUS }}"
