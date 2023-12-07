@@ -126,8 +126,8 @@ jobs:
       # Create a pull request with the updated declarations:
       - name: 'Create pull request'
         id: cpr
-        # Pin action to full length commit SHA corresponding to v5.0.2
-        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5.0.2
         with:
           title: 'feat: update error databases'
           body-path: /tmp/body.md
