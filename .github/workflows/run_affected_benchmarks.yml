@@ -39,7 +39,7 @@ on:
 permissions:
   # Allow read-only access to the repository contents:
   contents: read
-      
+
 # Workflow jobs:
 jobs:
 
@@ -72,8 +72,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        # Pin action to full length commit SHA corresponding to v3.8.1
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
