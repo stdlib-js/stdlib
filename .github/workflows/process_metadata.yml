@@ -43,8 +43,8 @@ jobs:
     steps:
       # Exit if the user does not have write access to the repository:
       - name: 'Exit if user does not have write access'
-        # Pin action to full length commit SHA corresponding to v2.0.2
-        uses: lannonbr/repo-permission-check-action@2bb8c89ba8bf115c4bfab344d6a6f442b24c9a1f
+        # Pin action to full length commit SHA
+        uses: lannonbr/repo-permission-check-action@2bb8c89ba8bf115c4bfab344d6a6f442b24c9a1f # v2.0.2
         with:
           permission: 'write'
         env:
@@ -68,13 +68,13 @@ jobs:
       # Extract commit message and issue comment metadata:
       - name: 'Extract metadata'
         id: extract-metadata
-        # Pin action to full length commit SHA corresponding to v2.0.2
-        uses: stdlib-js/metadata-action@503cc11fbcf8802239f29310bd492f7faeddab7e
+        # Pin action to full length commit SHA
+        uses: stdlib-js/metadata-action@503cc11fbcf8802239f29310bd492f7faeddab7e # v2.0.2
 
       # Check the metadata for directives to send tweets:
       - name: 'Send tweets'
-        # Pin action to full length commit SHA corresponding to v2.0.0
-        uses: stdlib-js/metadata-tweet-action@8e9b688c86150797c1c7f60bc8f7c9a9a30e10fe
+        # Pin action to full length commit SHA
+        uses: stdlib-js/metadata-tweet-action@8e9b688c86150797c1c7f60bc8f7c9a9a30e10fe # v2.0.0
         with:
           metadata: ${{ steps.extract-metadata.outputs.metadata }}
           TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
@@ -99,8 +99,8 @@ jobs:
 
       # Dispatch first found workflow (if applicable):
       - name: 'Dispatch workflow with inputs'
-        # Pin action to full length commit SHA corresponding to v1.2.2
-        uses: benc-uk/workflow-dispatch@798e70c97009500150087d30d9f11c5444830385
+        # Pin action to full length commit SHA
+        uses: benc-uk/workflow-dispatch@798e70c97009500150087d30d9f11c5444830385 # v1.2.2
         if: steps.check-workflow-dispatch.outputs.dispatch == 'true'
         with:
           workflow: ${{ steps.check-workflow-dispatch.outputs.workflow }}

@@ -143,8 +143,8 @@ jobs:
 
       # Install MSYS2:
       - name: 'Install MSYS2'
-        # Pin action to full length commit SHA corresponding to v2.20.1
-        uses: msys2/setup-msys2@27b3aa77f672cb6b3054121cfd80c3d22ceebb1d
+        # Pin action to full length commit SHA
+        uses: msys2/setup-msys2@27b3aa77f672cb6b3054121cfd80c3d22ceebb1d # v2.20.1
         with:
           # Set the MSYS system:
           msystem: MINGW64
@@ -236,8 +236,8 @@ jobs:
 
       # Install Windows build tools for compiling Node.js native add-ons.
       - name: 'Install Windows build tools'
-        # Pin action to full length commit SHA corresponding to v3.0.0
-        uses: crazy-max/ghaction-chocolatey@0e015857dd851f84fcb7fb53380eb5c4c8202333
+        # Pin action to full length commit SHA
+        uses: crazy-max/ghaction-chocolatey@0e015857dd851f84fcb7fb53380eb5c4c8202333 # v3.0.0
         with:
           args: install -y visualstudio2019buildtools visualstudio2019-workload-vctools
         timeout-minutes: 10

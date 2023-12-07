@@ -193,8 +193,8 @@ jobs:
       # Post report as comment to PR:
       - name: 'Post report as comment to PR'
         if: github.event_name == 'pull_request'
-        # Pin action to full length commit SHA corresponding to v6.4.1
-        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410
+        # Pin action to full length commit SHA
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6.4.1
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
@@ -208,8 +208,8 @@ jobs:
       # Post report as comment to commit:
       - name: 'Post report as comment to commit'
         if: github.event_name == 'push'
-        # Pin action to full length commit SHA corresponding to v6.4.1
-        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410
+        # Pin action to full length commit SHA
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6.4.1
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |

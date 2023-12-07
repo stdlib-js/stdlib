@@ -74,5 +74,5 @@ jobs:
 
       # Setup a terminal session:
       - name: 'Setup upterm session'
-        # Pin action to full length commit SHA corresponding to v1.0.0
-        uses: lhotari/action-upterm@b0357f23233f5ea6d58947c0c402e0631bab7334
+        # Pin action to full length commit SHA
+        uses: lhotari/action-upterm@b0357f23233f5ea6d58947c0c402e0631bab7334 # v1.0.0

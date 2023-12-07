@@ -101,8 +101,8 @@ jobs:
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
-        # Pin action to full length commit SHA corresponding to v39.2.0
-        uses: tj-actions/changed-files@8238a4103220c636f2dad328ead8a7c8dbe316a3
+        # Pin action to full length commit SHA
+        uses: tj-actions/changed-files@8238a4103220c636f2dad328ead8a7c8dbe316a3 # v39.2.0
         with:
           separator: ' '
           base_sha: ${{ github.event.pull_request.base.sha }}
@@ -261,8 +261,8 @@ jobs:
 
       # Add comment to the pull request:
       - name: 'Add comment to pull request'
-        # Pin action to full length commit SHA corresponding to v3.0.2
-        uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # v3.0.2
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |

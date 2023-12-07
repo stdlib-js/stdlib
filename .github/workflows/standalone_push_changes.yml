@@ -78,8 +78,8 @@ jobs:
       # Retrieve list of changed packages:
       - name: 'Find changed packages'
         id: 'changed_packages'
-        # Pin action to full length commit SHA corresponding to v2.0.0
-        uses: stdlib-js/changed-packages-action@e489c6b4eff164c5912a0b2d17d7462f38c11712
+        # Pin action to full length commit SHA
+        uses: stdlib-js/changed-packages-action@e489c6b4eff164c5912a0b2d17d7462f38c11712 # v2.0.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
