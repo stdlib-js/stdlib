@@ -71,7 +71,7 @@ jobs:
         # Pin action to full length commit SHA corresponding to v3.8.1
         uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
-          node-version: 16
+          node-version: 20
         timeout-minutes: 5
 
       # Create production branch:
@@ -146,7 +146,7 @@ jobs:
         # Pin action to full length commit SHA corresponding to v3.8.1
         uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
-          node-version: 16
+          node-version: 20
         timeout-minutes: 5
 
       # Install dependencies:
@@ -259,7 +259,7 @@ jobs:
         # Pin action to full length commit SHA corresponding to v3.8.1
         uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
-          node-version: 16
+          node-version: 20
         timeout-minutes: 5
 
       # Install dependencies:
@@ -427,7 +427,7 @@ jobs:
         # Pin action to full length commit SHA corresponding to v3.8.1
         uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
-          node-version: 16
+          node-version: 20
         timeout-minutes: 5
 
       # Install dependencies:
@@ -609,7 +609,7 @@ jobs:
         # Pin action to full length commit SHA corresponding to v3.8.1
         uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
-          node-version: 16
+          node-version: 20
         timeout-minutes: 5
 
       # Install dependencies:

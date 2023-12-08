@@ -59,7 +59,7 @@ jobs:
         # Pin action to full length commit SHA corresponding to v3.8.1
         uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
-          node-version: 17
+          node-version: 20
 
       # Try loading the UMD bundle:
       - name: 'Try loading UMD bundle'
@@ -126,7 +126,7 @@ jobs:
         # Pin action to full length commit SHA corresponding to v3.8.1
         uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
-          node-version: 17
+          node-version: 20
 
       # Try loading the ES module bundle:
       - name: 'Try loading ESM'
