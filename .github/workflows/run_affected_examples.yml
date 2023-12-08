@@ -100,11 +100,17 @@ jobs:
             ancestor_commit=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
             files=$(git diff --diff-filter=AM --name-only $ancestor_commit ${{ github.event.pull_request.head.sha }})
           else
-            # Get changed files by comparing the current commit to the commit before the push event or with its parent:
-            if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then
-              files=$(git diff --diff-filter=AM --name-only HEAD~ ${{ github.event.after }})
+            # Check if the commit SHA exists:
+            if git rev-parse ${{ github.event.before }} >/dev/null 2>&1 && git rev-parse ${{ github.event.after }} >/dev/null 2>&1; then
+              # Get changed files by comparing the current commit to the commit before the push event or with its parent:
+              if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then
+                files=$(git diff --diff-filter=AM --name-only HEAD~ ${{ github.event.after }})
+              else
+                files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
+              fi
             else
-              files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
+              echo "Commit SHA not found, skipping file changes detection..."
+              files=""
             fi
           fi
           # Keep only examples and `README.md` files:
