@@ -87,6 +87,7 @@ jobs:
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
+        continue-on-error: true
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:

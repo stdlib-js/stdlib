@@ -130,23 +130,18 @@ jobs:
       - name: 'Get list of changed directories'
         if: github.event_name != 'workflow_dispatch'
         id: changed-directories
+        continue-on-error: true
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:
             ancestor_commit=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
             files=$(git diff --diff-filter=AM --name-only $ancestor_commit ${{ github.event.pull_request.head.sha }})
           else
-            # Check if the commit SHA exists:
-            if git rev-parse ${{ github.event.before }} >/dev/null 2>&1 && git rev-parse ${{ github.event.after }} >/dev/null 2>&1; then
-              # Get changed files by comparing the current commit to the commit before the push event or with its parent:
-              if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then
-                files=$(git diff --diff-filter=AM --name-only HEAD~ ${{ github.event.after }})
-              else
-                files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
-              fi
+            # Get changed files by comparing the current commit to the commit before the push event or with its parent:
+            if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then
+              files=$(git diff --diff-filter=AM --name-only HEAD~ ${{ github.event.after }})
             else
-              echo "Commit SHA not found, skipping file changes detection..."
-              files=""
+              files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
             fi
           fi
           directories=$(for file in $files; do dirname $file; done | uniq | tr '\n' ' ' | sed 's/ $//')
