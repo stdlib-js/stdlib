@@ -1,0 +1,22 @@
+
+{{alias}}( x )
+    Returns the number of elements in an ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    n: integer
+        Number of elements.
+
+    Examples
+    --------
+    > var n = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ] ) )
+    27
+
+    See Also
+    --------
+

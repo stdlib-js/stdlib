@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Evaluates the cumulative distribution function (CDF) for a binomial distribution.

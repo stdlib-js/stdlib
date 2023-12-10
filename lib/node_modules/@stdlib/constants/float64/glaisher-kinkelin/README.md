@@ -28,10 +28,14 @@ limitations under the License.
 
 <!-- <equation class="equation" label="eq:glaisher_kinkelin_constant" align="center" raw="A = \lim_{n\to\infty} \frac{K(n + 1)}{n^{n^2/2 + n/2 + 1/12}e^{-n^2/4}}" alt="Glaisher-Kinkelin constant"> -->
 
-<div class="equation" align="center" data-raw-text="A = \lim_{n\to\infty} \frac{K(n + 1)}{n^{n^2/2 + n/2 + 1/12}e^{-n^2/4}}" data-equation="eq:glaisher_kinkelin_constant">
+```math
+A = \lim_{n\to\infty} \frac{K(n + 1)}{n^{n^2/2 + n/2 + 1/12}e^{-n^2/4}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="A = \lim_{n\to\infty} \frac{K(n + 1)}{n^{n^2/2 + n/2 + 1/12}e^{-n^2/4}}" data-equation="eq:glaisher_kinkelin_constant">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6e1cf583c4854b3d982f22f361f53a30c9f552dc/lib/node_modules/@stdlib/constants/float64/glaisher-kinkelin/docs/img/equation_glaisher_kinkelin_constant.svg" alt="Glaisher-Kinkelin constant">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -39,10 +43,14 @@ where
 
 <!-- <equation class="equation" label="eq:k_function" align="center" raw="K(n) = \prod_{k=1}^{n-1} k^k" alt="K-function"> -->
 
-<div class="equation" align="center" data-raw-text="K(n) = \prod_{k=1}^{n-1} k^k" data-equation="eq:k_function">
+```math
+K(n) = \prod_{k=1}^{n-1} k^k
+```
+
+<!-- <div class="equation" align="center" data-raw-text="K(n) = \prod_{k=1}^{n-1} k^k" data-equation="eq:k_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6e1cf583c4854b3d982f22f361f53a30c9f552dc/lib/node_modules/@stdlib/constants/float64/glaisher-kinkelin/docs/img/equation_k_function.svg" alt="K-function">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -28,10 +28,14 @@ The [quantile function][quantile-function] for a [Poisson][poisson-distribution]
 
 <!-- <equation class="equation" label="eq:poisson_condition" align="center" raw="F(x;\lambda) \ge p" alt="Quantile condition."> -->
 
-<div class="equation" align="center" data-raw-text="F(x;\lambda) \ge p" data-equation="eq:poisson_condition">
+```math
+F(x;\lambda) \ge p
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x;\lambda) \ge p" data-equation="eq:poisson_condition">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/poisson/quantile/docs/img/equation_poisson_condition.svg" alt="Quantile condition.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

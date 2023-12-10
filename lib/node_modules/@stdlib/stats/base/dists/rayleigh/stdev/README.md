@@ -30,10 +30,14 @@ The [standard deviation][standard-deviation] for a [Rayleigh][rayleigh-distribut
 
 <!-- <equation class="equation" label="eq:rayleigh_stdev" align="center" raw="\sqrt{ \frac{4-\pi }{2} }\sigma" alt="Standard deviation for a Rayleigh distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\sqrt{ \frac{4-\pi }{2} }\sigma" data-equation="eq:rayleigh_stdev">
+```math
+\sqrt{ \frac{4-\pi }{2} }\sigma
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sqrt{ \frac{4-\pi }{2} }\sigma" data-equation="eq:rayleigh_stdev">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/rayleigh/stdev/docs/img/equation_rayleigh_stdev.svg" alt="Standard deviation for a Rayleigh distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

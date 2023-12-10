@@ -26,7 +26,7 @@ static double add( double x, double y ) {
 	return x + y;
 }
 
-int main() {
+int main( void ) {
 	// Create underlying byte arrays:
 	uint8_t x[] = { 1, 4, 7 };
 	uint8_t y[] = { 101, 104, 107 };

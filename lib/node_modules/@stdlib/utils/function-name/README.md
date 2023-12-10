@@ -91,6 +91,8 @@ try {
 var Float64Array = require( '@stdlib/array/float64' );
 var Buffer = require( '@stdlib/buffer/ctor' );
 var Number = require( '@stdlib/number/ctor' );
+var Boolean = require( '@stdlib/boolean/ctor' );
+var Function = require( '@stdlib/function/ctor' );
 var functionName = require( '@stdlib/utils/function-name' );
 
 var v = functionName( Math.sqrt );

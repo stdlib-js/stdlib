@@ -170,8 +170,8 @@ float stdlib_base_hypotf( const float x, const float y );
 #include "stdlib/math/base/special/hypotf.h"
 #include <stdio.h>
 
-int main() {
-    float x[] = { 3.0f, 4.0f, 5.0f, 12.0f };
+int main( void ) {
+    const float x[] = { 3.0f, 4.0f, 5.0f, 12.0f };
 
     float y;
     int i;

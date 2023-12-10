@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ extern "C" {
 /**
 * Applies a unary callback to strided input array elements and assigns results to elements in a strided output array.
 */
-void stdlib_strided_s_f_as_s_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_s_f_as_s_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 
 #ifdef __cplusplus
 }

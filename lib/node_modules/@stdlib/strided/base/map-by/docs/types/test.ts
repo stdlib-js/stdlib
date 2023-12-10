@@ -45,8 +45,8 @@ function unary( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	mapBy( x.length, x, 1, y, 1, unary, accessor ); // $ExpectType Collection
-	mapBy( x.length, x, 1, y, 1, unary, accessor, {} ); // $ExpectType Collection
+	mapBy( x.length, x, 1, y, 1, unary, accessor ); // $ExpectType Collection<number>
+	mapBy( x.length, x, 1, y, 1, unary, accessor, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -169,8 +169,8 @@ function unary( x: number ): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	mapBy.ndarray( x.length, x, 1, 0, y, 1, 0, unary, accessor ); // $ExpectType Collection
-	mapBy.ndarray( x.length, x, 1, 0, y, 1, 0, unary, accessor, {} ); // $ExpectType Collection
+	mapBy.ndarray( x.length, x, 1, 0, y, 1, 0, unary, accessor ); // $ExpectType Collection<number>
+	mapBy.ndarray( x.length, x, 1, 0, y, 1, 0, unary, accessor, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

@@ -72,7 +72,8 @@ jobs:
 
       # Checkout the pull request branch:
       - name: 'Checkout the pull request branch'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Refers to the branch name of the pull request:
           ref: 'develop'
@@ -100,7 +101,8 @@ jobs:
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
-        uses: tj-actions/changed-files@v35
+        # Pin action to full length commit SHA
+        uses: tj-actions/changed-files@8238a4103220c636f2dad328ead8a7c8dbe316a3 # v39.2.0
         with:
           separator: ' '
           base_sha: ${{ github.event.pull_request.base.sha }}
@@ -165,7 +167,8 @@ jobs:
 
       # Add a comment to the pull request:
       - name: 'Add comment to pull request'
-        uses: peter-evans/create-or-update-comment@v1
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # v3.1.0
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
@@ -217,7 +220,9 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the pull request branch:
-      - uses: actions/checkout@v3
+      - name: 'Checkout the pull request branch'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Refers to the branch name of the pull request:
           ref: ${{ github.event.pull_request.head.ref }}
@@ -256,7 +261,8 @@ jobs:
 
       # Add comment to the pull request:
       - name: 'Add comment to pull request'
-        uses: peter-evans/create-or-update-comment@v1
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # v3.0.2
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |

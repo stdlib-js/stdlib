@@ -16,53 +16,36 @@
 * limitations under the License.
 */
 
-import cis = require( './index' );
+import Complex128 = require( '@stdlib/complex/float64' );
+import ccis = require( './index' );
 
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns a double-precision complex floating-point number...
 {
-	cis( -4, 3 ); // $ExpectType ArrayLike<number>
-	cis( [], 5, 3 ); // $ExpectType ArrayLike<number>
+	const z = new Complex128( 1.0, 1.0 );
+
+	ccis( z ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a complex number...
 {
-	cis( true, 3 ); // $ExpectError
-	cis( false, 3 ); // $ExpectError
-	cis( null, 3 ); // $ExpectError
-	cis( undefined, 3 ); // $ExpectError
-	cis( '5', 3 ); // $ExpectError
-	cis( [], 3 ); // $ExpectError
-	cis( {}, 3 ); // $ExpectError
-	cis( ( x: number ): number => x, 3 ); // $ExpectError
+	ccis( true ); // $ExpectError
+	ccis( false ); // $ExpectError
+	ccis( null ); // $ExpectError
+	ccis( undefined ); // $ExpectError
+	ccis( '5' ); // $ExpectError
+	ccis( [] ); // $ExpectError
+	ccis( {} ); // $ExpectError
+	ccis( ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided an imaginary component which is not a number...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	cis( 5, true ); // $ExpectError
-	cis( 5, false ); // $ExpectError
-	cis( 5, null ); // $ExpectError
-	cis( 5, undefined ); // $ExpectError
-	cis( 5, '5' ); // $ExpectError
-	cis( 5, [] ); // $ExpectError
-	cis( 5, {} ); // $ExpectError
-	cis( 5, ( x: number ): number => x ); // $ExpectError
-}
+	const z = new Complex128( 1.0, 1.0 );
 
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	cis( true, 5, 3 ); // $ExpectError
-	cis( false, 5, 3 ); // $ExpectError
-	cis( 'abc', 5, 3 ); // $ExpectError
-	cis( {}, 5, 3 ); // $ExpectError
-	cis( ( x: number ): number => x, 5, 3 ); // $ExpectError
-	cis( 123, 5, 3 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided insufficient arguments...
-{
-	cis(); // $ExpectError
-	cis( 2 ); // $ExpectError
+	ccis(); // $ExpectError
+	ccis( z, z ); // $ExpectError
+	ccis( z, z, z ); // $ExpectError
 }

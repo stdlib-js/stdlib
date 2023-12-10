@@ -36,7 +36,7 @@ Computes the sum of the series given by the supplied `generator` argument. `gene
 
 Using an ES6 [Generator object][es6-generator]:
 
-<!-- eslint-disable no-restricted-syntax -->
+<!-- eslint-disable no-restricted-syntax, node/no-unsupported-features/es-syntax -->
 
 ```javascript
 var pow = require( '@stdlib/math/base/special/pow' );
@@ -104,10 +104,11 @@ To change the maximum number of terms to be summed, set the `maxTerms` option.
 ```javascript
 var pow = require( '@stdlib/math/base/special/pow' );
 
+// Note: infinite sum is 2
 var out = sumSeries( geometricSeriesClosure( 0.5 ), {
     'maxTerms': 10
 });
-// returns ~1.998 (infinite sum is 2)
+// returns ~1.998
 
 function geometricSeriesClosure( x ) {
     var exponent = -1;
@@ -149,7 +150,7 @@ function geometricSeriesClosure( x ) {
 
 ## Examples
 
-<!-- eslint-disable no-restricted-syntax -->
+<!-- eslint-disable no-restricted-syntax, node/no-unsupported-features/es-syntax -->
 
 <!-- eslint no-undef: "error" -->
 

@@ -53,7 +53,7 @@ import imuldw = require( './index' );
 {
 	const out = [ 0, 0 ];
 
-	imuldw.assign( 1, 5, out, 1, 0 ); // $ExpectType Collection
+	imuldw.assign( 1, 5, out, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not a number...

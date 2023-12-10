@@ -45,6 +45,7 @@ function main() {
 	var split;
 	var flags;
 	var args;
+	var opts;
 	var cli;
 	var n;
 
@@ -64,6 +65,12 @@ function main() {
 	}
 	if ( flags.n ) {
 		n = parseInt( flags.n, 10 );
+	} else {
+		n = 1;
+	}
+	opts = {};
+	if ( flags.mode ) {
+		opts.mode = flags.mode;
 	}
 
 	// Get any provided command-line arguments:
@@ -81,10 +88,10 @@ function main() {
 		}
 		return stdin( onRead );
 	}
-	if ( n ) {
-		console.log( removeLast( args[ 0 ], n ) ); // eslint-disable-line no-console
-	} else {
-		console.log( removeLast( args[ 0 ] ) ); // eslint-disable-line no-console
+	try {
+		console.log( removeLast( args[ 0 ], n, opts ) ); // eslint-disable-line no-console
+	} catch ( error ) {
+		return cli.error( error );
 	}
 
 	/**
@@ -107,13 +114,14 @@ function main() {
 		if ( lines[ lines.length-1 ] === '' ) {
 			lines.pop();
 		}
-		if ( n ) {
-			for ( i = 0; i < lines.length; i++ ) {
-				console.log( removeLast( lines[ i ], n ) ); // eslint-disable-line no-console
+		if ( lines.length ) {
+			try {
+				console.log( removeLast( lines[ 0 ], n, opts ) ); // eslint-disable-line no-console
+			} catch ( error ) {
+				return cli.error( error );
 			}
-		} else {
-			for ( i = 0; i < lines.length; i++ ) {
-				console.log( removeLast( lines[ i ] ) ); // eslint-disable-line no-console
+			for ( i = 1; i < lines.length; i++ ) {
+				console.log( removeLast( lines[ i ], n, opts ) ); // eslint-disable-line no-console
 			}
 		}
 	}

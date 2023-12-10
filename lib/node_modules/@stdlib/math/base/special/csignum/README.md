@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# Signum
+# csignum
 
-> Evaluate the [signum][signum] function of a complex number.
+> Evaluate the [signum][signum] function of a double-precision complex floating-point number.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -40,33 +40,41 @@ limitations under the License.
 var csignum = require( '@stdlib/math/base/special/csignum' );
 ```
 
-#### csignum( \[out,] re, im )
+#### csignum( z )
 
-Evaluates the [signum][signum] function of a `complex` number comprised of a **real** component `re` and an **imaginary** component `im`.
-
-```javascript
-var v = csignum( -4.2, 5.5 );
-// returns [ -0.6069136033622302, 0.79476781392673 ]
-
-v = csignum( 0.0, 0.0 );
-// returns [ 0.0, 0.0 ]
-
-v = csignum( NaN, NaN );
-// returns [ NaN, NaN ]
-```
-
-By default, the function returns real and imaginary components as a two-element `array`. To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
+Evaluates the [signum][signum] function of a double-precision complex floating-point number.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var Complex128 = require( '@stdlib/complex/float64' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
 
-var out = new Float64Array( 2 );
+var v = csignum( new Complex128( -4.2, 5.5 ) );
+// returns <Complex128>
 
-var v = csignum( out, -4.2, 5.5 );
-// returns <Float64Array>[ -0.6069136033622302, 0.79476781392673 ]
+var re = real( v );
+// returns -0.6069136033622302
 
-var bool = ( v === out );
-// returns true
+var im = imag( v );
+// returns 0.79476781392673
+
+v = csignum( new Complex128( 0.0, 0.0 ) );
+// returns <Complex128>
+
+re = real( v );
+// returns 0.0
+
+im = imag( v );
+// returns 0.0
+
+v = csignum( new Complex128( NaN, NaN ) );
+// returns <Complex128>
+
+re = real( v );
+// returns NaN
+
+im = imag( v );
+// returns NaN
 ```
 
 </section>
@@ -90,32 +98,134 @@ var bool = ( v === out );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var Complex128 = require( '@stdlib/complex/float64' );
-var randu = require( '@stdlib/random/base/randu' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
 var csignum = require( '@stdlib/math/base/special/csignum' );
 
-var re;
-var im;
-var z;
-var o;
-var w;
-var i;
+var rand = uniform( -50.0, 50.0 );
 
+var z;
+var i;
 for ( i = 0; i < 100; i++ ) {
-    re = ( randu()*100.0 ) - 50.0;
-    im = ( randu()*100.0 ) - 50.0;
-    z = new Complex128( re, im );
-    o = csignum( real(z), imag(z) );
-    w = new Complex128( o[ 0 ], o[ 1 ] );
-    console.log( 'signum(%s) = %s', z.toString(), w.toString() );
+    z = new Complex128( rand(), rand() );
+    console.log( 'csignum(%s) = %s', z, csignum( z ) );
 }
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/csignum.h"
+```
+
+#### stdlib_base_csignum( z )
+
+Evaluates the [signum][signum] function of a double-precision complex floating-point number.
+
+```c
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/real.h"
+#include "stdlib/complex/imag.h"
+
+stdlib_complex128_t z = stdlib_complex128( -4.2, 5.5 );
+
+stdlib_complex128_t out = stdlib_base_csignum( z );
+
+double re = stdlib_real( out );
+// returns -0.6069136033622302
+
+double im = stdlib_imag( out );
+// returns 0.79476781392673
+```
+
+The function accepts the following arguments:
+
+-   **z**: `[in] stdlib_complex128_t` input value.
+
+```c
+stdlib_complex128_t stdlib_base_csignum( const stdlib_complex128_t z );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/csignum.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
+#include <stdio.h>
+
+int main( void ) {
+    const stdlib_complex128_t x[] = {
+        stdlib_complex128( 3.14, 1.5 ),
+        stdlib_complex128( -3.14, -1.5 ),
+        stdlib_complex128( 0.0, 0.0 ),
+        stdlib_complex128( 0.0/0.0, 0.0/0.0 )
+    };
+
+    stdlib_complex128_t v;
+    stdlib_complex128_t y;
+    double re1;
+    double im1;
+    double re2;
+    double im2;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = x[ i ];
+        y = stdlib_base_csignum( v );
+        stdlib_reim( v, &re1, &im1 );
+        stdlib_reim( y, &re2, &im2 );
+        printf( "csignum(%lf + %lfi) = %lf + %lfi\n", re1, im1, re2, im2 );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

@@ -28,10 +28,14 @@ The [corrected sample standard deviation][sample-stdev] is defined as
 
 <!-- <equation class="equation" label="eq:corrected_sample_standard_deviation" align="center" raw="s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} ( x_i - \bar{x} )^2}" alt="Equation for the corrected sample standard deviation."> -->
 
-<div class="equation" align="center" data-raw-text="s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} ( x_i - \bar{x} )^2}" data-equation="eq:corrected_sample_standard_deviation">
+```math
+s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} ( x_i - \bar{x} )^2}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} ( x_i - \bar{x} )^2}" data-equation="eq:corrected_sample_standard_deviation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6dd7df93fd2c6e40fd0662844acf8b69b887dcec/lib/node_modules/@stdlib/stats/incr/cv/docs/img/equation_corrected_sample_standard_deviation.svg" alt="Equation for the corrected sample standard deviation.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -39,10 +43,14 @@ and the [arithmetic mean][arithmetic-mean] is defined as
 
 <!-- <equation class="equation" label="eq:arithmetic_mean" align="center" raw="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" alt="Equation for the arithmetic mean."> -->
 
-<div class="equation" align="center" data-raw-text="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" data-equation="eq:arithmetic_mean">
+```math
+\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" data-equation="eq:arithmetic_mean">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6dd7df93fd2c6e40fd0662844acf8b69b887dcec/lib/node_modules/@stdlib/stats/incr/cv/docs/img/equation_arithmetic_mean.svg" alt="Equation for the arithmetic mean.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -50,10 +58,14 @@ The [coefficient of variation][coefficient-of-variation] (also known as **relati
 
 <!-- <equation class="equation" label="eq:coefficient_of_variation" align="center" raw="c_v = \frac{s}{\bar{x}}" alt="Equation for the coefficient of variation (CV)."> -->
 
-<div class="equation" align="center" data-raw-text="c_v = \frac{s}{\bar{x}}" data-equation="eq:coefficient_of_variation">
+```math
+c_v = \frac{s}{\bar{x}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="c_v = \frac{s}{\bar{x}}" data-equation="eq:coefficient_of_variation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6dd7df93fd2c6e40fd0662844acf8b69b887dcec/lib/node_modules/@stdlib/stats/incr/cv/docs/img/equation_coefficient_of_variation.svg" alt="Equation for the coefficient of variation (CV).">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

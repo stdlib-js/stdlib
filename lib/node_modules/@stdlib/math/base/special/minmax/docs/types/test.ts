@@ -57,7 +57,7 @@ import minmax = require( './index' );
 {
 	const out = [ 0.0, 0.0 ];
 
-	minmax.assign( 3.0, -0.2, out, 1, 0 ); // $ExpectType Collection
+	minmax.assign( 3.0, -0.2, out, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not a number...

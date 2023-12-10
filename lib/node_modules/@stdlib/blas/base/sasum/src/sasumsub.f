@@ -18,7 +18,7 @@
 
 !> Wraps `sasum` as a subroutine.
 !
-! @param {integer} N - number of values to sum
+! @param {integer} N - number of indexed elements
 ! @param {Array<real>} sx - input array
 ! @param {integer} stride - stride length
 ! @param {real} sum - output variable reference

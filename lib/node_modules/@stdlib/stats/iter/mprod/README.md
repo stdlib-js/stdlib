@@ -28,10 +28,14 @@ For a window of size `W`, the moving product is defined as
 
 <!-- <equation class="equation" label="eq:moving_product" align="center" raw="\prod_{i=0}^{W-1} x_i" alt="Equation for the moving product."> -->
 
-<div class="equation" align="center" data-raw-text="\prod_{i=0}^{W-1} x_i" data-equation="eq:moving_product">
+```math
+\prod_{i=0}^{W-1} x_i
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\prod_{i=0}^{W-1} x_i" data-equation="eq:moving_product">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d1970c19d8e509618bea1160c6106cc04e837f2b/lib/node_modules/@stdlib/stats/iter/mprod/docs/img/equation_moving_product.svg" alt="Equation for the moving product.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -16,66 +16,45 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import cfloorn = require( './index' );
 
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns a double-precision complex floating-point number...
 {
-	cfloorn( 5, 3, -2 ); // $ExpectType ArrayLike<number>
-	cfloorn( [], 5, 3, -2 ); // $ExpectType ArrayLike<number>
+	cfloorn( new Complex128( 1.0, 2.0 ), -2 ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the first argument of the function is provided a value other than a complex number...
 {
-	cfloorn( true, 3, -2 ); // $ExpectError
-	cfloorn( false, 3, -2 ); // $ExpectError
-	cfloorn( null, 3, -2 ); // $ExpectError
-	cfloorn( undefined, 3, -2 ); // $ExpectError
-	cfloorn( '5', 3, -2 ); // $ExpectError
-	cfloorn( [], 3, -2 ); // $ExpectError
-	cfloorn( {}, 3, -2 ); // $ExpectError
-	cfloorn( ( x: number ): number => x, 3, -2 ); // $ExpectError
+	cfloorn( 3, -2 ); // $ExpectError
+	cfloorn( true, -2 ); // $ExpectError
+	cfloorn( false, -2 ); // $ExpectError
+	cfloorn( null, -2 ); // $ExpectError
+	cfloorn( undefined, -2 ); // $ExpectError
+	cfloorn( '5', -2 ); // $ExpectError
+	cfloorn( [], -2 ); // $ExpectError
+	cfloorn( {}, -2 ); // $ExpectError
+	cfloorn( ( x: number ): number => x, -2 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided an imaginary component which is not a number...
+// The compiler throws an error if the second argument of the function is provided a value other than a number...
 {
-	cfloorn( 5, true, -2 ); // $ExpectError
-	cfloorn( 5, false, -2 ); // $ExpectError
-	cfloorn( 5, null, -2 ); // $ExpectError
-	cfloorn( 5, undefined, -2 ); // $ExpectError
-	cfloorn( 5, '5', -2 ); // $ExpectError
-	cfloorn( 5, [], -2 ); // $ExpectError
-	cfloorn( 5, {}, -2 ); // $ExpectError
-	cfloorn( 5, ( x: number ): number => x, -2 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an integer power which is not a number...
-{
-	cfloorn( 5, 3, true ); // $ExpectError
-	cfloorn( 5, 3, false ); // $ExpectError
-	cfloorn( 5, 3, null ); // $ExpectError
-	cfloorn( 5, 3, undefined ); // $ExpectError
-	cfloorn( 5, 3, '5' ); // $ExpectError
-	cfloorn( 5, 3, [] ); // $ExpectError
-	cfloorn( 5, 3, {} ); // $ExpectError
-	cfloorn( 5, 3, ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	cfloorn( true, 5, 3, -2 ); // $ExpectError
-	cfloorn( false, 5, 3, -2 ); // $ExpectError
-	cfloorn( 'abc', 5, 3, -2 ); // $ExpectError
-	cfloorn( {}, 5, 3, -2 ); // $ExpectError
-	cfloorn( ( x: number ): number => x, 5, 3, -2 ); // $ExpectError
-	cfloorn( 123, 5, 3, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), 3, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), true, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), false, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), null, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), undefined, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), '5', -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), [], -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), {}, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), ( x: number ): number => x, -2 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	cfloorn(); // $ExpectError
 	cfloorn( 2 ); // $ExpectError
-	cfloorn( 5, 3 ); // $ExpectError
 }

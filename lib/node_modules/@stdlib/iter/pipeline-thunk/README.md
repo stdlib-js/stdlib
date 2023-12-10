@@ -101,7 +101,7 @@ Accordingly, this function implements left-to-right [partial application][@stdli
 
 ## Examples
 
-<!-- eslint-disable function-paren-newline -->
+<!-- eslint-disable function-call-argument-newline, function-paren-newline -->
 
 <!-- eslint no-undef: "error" -->
 

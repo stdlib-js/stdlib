@@ -30,10 +30,14 @@ A pulse waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:pulse_waveform" align="center" raw="f(t; T, \tau, a_{\textrm{min}}, a_{\textrm{max}}, \varphi) = \begin{cases} a_{\textrm{max}} & (t-\varphi) \mod T < \tau \\ a_{\textrm{min}} & \textrm{otherwise} \end{cases}" alt="Equation for a pulse wave."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; T, \tau, a_{\textrm{min}}, a_{\textrm{max}}, \varphi) = \begin{cases} a_{\textrm{max}} &amp; (t-\varphi) \mod T < \tau \\ a_{\textrm{min}} &amp; \textrm{otherwise} \end{cases}" data-equation="eq:pulse_waveform">
+```math
+f(t; T, \tau, a_{\textrm{min}}, a_{\textrm{max}}, \varphi) = \begin{cases} a_{\textrm{max}} & (t-\varphi) \mod T < \tau \\ a_{\textrm{min}} & \textrm{otherwise} \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; T, \tau, a_{\textrm{min}}, a_{\textrm{max}}, \varphi) = \begin{cases} a_{\textrm{max}} &amp; (t-\varphi) \mod T < \tau \\ a_{\textrm{min}} &amp; \textrm{otherwise} \end{cases}" data-equation="eq:pulse_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@36d0ed92c4707f9bb44e4a6fde78f19f6f28762e/lib/node_modules/@stdlib/simulate/iter/pulse/docs/img/equation_pulse_waveform.svg" alt="Equation for a pulse wave.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

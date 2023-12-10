@@ -1,0 +1,53 @@
+
+{{alias}}( slice, len, strict )
+    Returns a normalized Slice object.
+
+    In strict mode, the function returns an error object if an input slice
+    exceeds index bounds.
+
+    A returned error object is a plain object having the following properties:
+
+    - code: error code.
+
+    A returned error object may have one of the following error codes:
+
+    - ERR_SLICE_OUT_OF_BOUNDS: a slice exceeds index bounds.
+
+    Parameters
+    ----------
+    slice: Slice
+        Input slice object.
+
+    len: integer
+        Maximum number of elements allowed in the slice.
+
+    strict: boolean
+        Boolean indicating whether to enforce strict bounds checking.
+
+    Returns
+    -------
+    s: Slice|Object
+        Slice instance (or an error object).
+
+    Examples
+    --------
+    > var s1 = new {{alias:@stdlib/slice/ctor}}( 1, 10, 1 );
+    > var s2 = {{alias}}( s1, 5, false );
+    > s2.start
+    1
+    > s2.stop
+    5
+    > s2.step
+    1
+    > s1 = new {{alias:@stdlib/slice/ctor}}( -2, null, -1 );
+    > s2 = {{alias}}( s1, 10, false );
+    > s2.start
+    8
+    > s2.stop
+    null
+    > s2.step
+    -1
+
+    See Also
+    --------
+

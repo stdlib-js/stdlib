@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/constants/float32/high-word-sign-mask",
+  "name": "@stdlib/constants/float32/sign-mask",
   "version": "0.0.0",
   "description": "Mask for the sign bit of a single-precision floating-point number.",
   "license": "Apache-2.0",

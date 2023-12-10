@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Returns the size (in bytes) of the canonical binary representation of a specified numeric type.

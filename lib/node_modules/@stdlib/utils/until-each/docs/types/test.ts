@@ -18,54 +18,72 @@
 
 import untilEach = require( './index' );
 
-const log = ( v: any, index: number ): void => {
-	console.log( `${index}: ${v}` );
-};
+/**
+* Test function.
+*
+* @param v - value
+* @param index - index
+*/
+function fcn( v: number, index: number ): void {
+	if ( v !== v ) {
+		throw new Error( 'beep' );
+	}
+	if ( index !== index ) {
+		throw new Error( 'beep' );
+	}
+}
 
-const isNotNaN = ( v: number ): boolean => {
-	return ( v === v );
-};
+/**
+* Test function.
+*
+* @param v - value
+* @returns result
+*/
+function isnan( v: number ): boolean {
+	return ( v !== v );
+}
+
 
 // TESTS //
 
 // The function returns the input collection...
 {
-	untilEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, log ); // $ExpectType Collection
-	untilEach( [ -1, 1, 2 ], isNotNaN, log, {} ); // $ExpectType Collection
+	untilEach( [ 0, 1, 1, NaN, 2 ], isnan, fcn ); // $ExpectType Collection<number>
+	untilEach( [ -1, 1, 2 ], isnan, fcn, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
 {
-	untilEach( 2, isNotNaN, log ); // $ExpectError
-	untilEach( false, isNotNaN, log ); // $ExpectError
-	untilEach( true, isNotNaN, log ); // $ExpectError
-	untilEach( {}, isNotNaN, log ); // $ExpectError
+	untilEach( 2, isnan, fcn ); // $ExpectError
+	untilEach( false, isnan, fcn ); // $ExpectError
+	untilEach( true, isnan, fcn ); // $ExpectError
+	untilEach( {}, isnan, fcn ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a function...
 {
-	untilEach( [ 0, 1, 1, NaN, 2 ], 2, log ); // $ExpectError
-	untilEach( [ 0, 1, 1, NaN, 2 ], false, log ); // $ExpectError
-	untilEach( [ 0, 1, 1, NaN, 2 ], true, log ); // $ExpectError
-	untilEach( [ 0, 1, 1, NaN, 2 ], 'abc', log ); // $ExpectError
-	untilEach( [ 0, 1, 1, NaN, 2 ], {}, log ); // $ExpectError
-	untilEach( [ 0, 1, 1, NaN, 2 ], [], log ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], 2, fcn ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], false, fcn ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], true, fcn ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], 'abc', fcn ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], {}, fcn ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], [], fcn ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a function...
 {
-	untilEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, 2 ); // $ExpectError
-	untilEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, false ); // $ExpectError
-	untilEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, true ); // $ExpectError
-	untilEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, 'abc' ); // $ExpectError
-	untilEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, {} ); // $ExpectError
-	untilEach( [ 0, 1, 1, NaN, 2 ], isNotNaN, [] ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], isnan, 2 ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], isnan, false ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], isnan, true ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], isnan, 'abc' ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], isnan, {} ); // $ExpectError
+	untilEach( [ 0, 1, 1, NaN, 2 ], isnan, [] ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	untilEach(); // $ExpectError
 	untilEach( [ 1, 2, 3 ] ); // $ExpectError
-	untilEach( [ 1, 2, 3 ], isNotNaN ); // $ExpectError
-	untilEach( [ 1, 2, 3 ], isNotNaN, log, {}, 3 ); // $ExpectError
+	untilEach( [ 1, 2, 3 ], isnan ); // $ExpectError
+	untilEach( [ 1, 2, 3 ], isnan, fcn, {}, 3 ); // $ExpectError
 }

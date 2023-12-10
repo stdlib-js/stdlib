@@ -112,12 +112,19 @@ var proto = greet.prototype;
 
 Calls the specified function with the given `this` argument and arguments provided as an array-like object.
 
+<!-- eslint-disable no-invalid-this -->
+
 ```javascript
 function add( x, y ) {
-    return x + y;
+    return this.initial + x + y;
 }
-var v = add.apply( null, [ 1, 2 ] );
-// returns 3
+
+var ctx = {
+    'initial': 10
+};
+
+var v = add.apply( ctx, [ 1, 2 ] );
+// returns 13
 ```
 
 <a name="method-bind"></a>
@@ -142,13 +149,19 @@ var v = add1( 2 );
 
 Calls the specified function with the given `this` value and arguments.
 
+<!-- eslint-disable no-invalid-this -->
+
 ```javascript
 function add( x, y ) {
-    return x + y;
+    return this.initial + x + y;
 }
 
-var v = add.call( null, 1, 2 );
-// returns 3
+var ctx = {
+    'initial': 10
+};
+
+var v = add.call( ctx, 1, 2 );
+// returns 13
 ```
 
 <a name="method-to-string"></a>

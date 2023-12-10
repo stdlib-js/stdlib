@@ -23,9 +23,9 @@ import frexp = require( './index' );
 
 // TESTS //
 
-// The function returns a collection...
+// The function returns an array of numbers...
 {
-	frexp( 4.0 ); // $ExpectType Collection
+	frexp( 4.0 ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided an argument which is not a number...
@@ -50,7 +50,7 @@ import frexp = require( './index' );
 {
 	const out = [ 0.0, 0 ];
 
-	frexp.assign( 3.14e-319, out, 1, 0 ); // $ExpectType Collection
+	frexp.assign( 3.14e-319, out, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not a number...

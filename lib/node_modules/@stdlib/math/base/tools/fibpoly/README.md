@@ -28,10 +28,14 @@ A [Fibonacci polynomial][fibonacci-polynomials] is expressed according to the fo
 
 <!-- <equation class="equation" label="eq:fibonacci_polynomial" align="center" raw="F_n(x) = \begin{cases}0 & \textrm{if}\ n = 0\\1 & \textrm{if}\ n = 1\\x \cdot F_{n-1}(x) + F_{n-2}(x) & \textrm{if}\ n \geq 2\end{cases}" alt="Fibonacci polynomial."> -->
 
-<div class="equation" align="center" data-raw-text="F_n(x) = \begin{cases}0 &amp; \textrm{if}\ n = 0\\1 &amp; \textrm{if}\ n = 1\\x \cdot F_{n-1}(x) + F_{n-2}(x) &amp; \textrm{if}\ n \geq 2\end{cases}" data-equation="eq:fibonacci_polynomial">
+```math
+F_n(x) = \begin{cases}0 & \textrm{if}\ n = 0\\1 & \textrm{if}\ n = 1\\x \cdot F_{n-1}(x) + F_{n-2}(x) & \textrm{if}\ n \geq 2\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F_n(x) = \begin{cases}0 &amp; \textrm{if}\ n = 0\\1 &amp; \textrm{if}\ n = 1\\x \cdot F_{n-1}(x) + F_{n-2}(x) &amp; \textrm{if}\ n \geq 2\end{cases}" data-equation="eq:fibonacci_polynomial">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/fibpoly/docs/img/equation_fibonacci_polynomial.svg" alt="Fibonacci polynomial.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -39,10 +43,14 @@ Alternatively, if `F(n,k)` is the coefficient of `x^k` in `F_n(x)`, then
 
 <!-- <equation class="equation" label="eq:fibonacci_polynomial_combinatoric" align="center" raw="F_n(x) = \sum_{k = 0}^n F(n,k) x^k" alt="Combinatoric interpretation of a Fibonacci polynomial."> -->
 
-<div class="equation" align="center" data-raw-text="F_n(x) = \sum_{k = 0}^n F(n,k) x^k" data-equation="eq:fibonacci_polynomial_combinatoric">
+```math
+F_n(x) = \sum_{k = 0}^n F(n,k) x^k
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F_n(x) = \sum_{k = 0}^n F(n,k) x^k" data-equation="eq:fibonacci_polynomial_combinatoric">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/fibpoly/docs/img/equation_fibonacci_polynomial_combinatoric.svg" alt="Combinatoric interpretation of a Fibonacci polynomial.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -50,10 +58,14 @@ where
 
 <!-- <equation class="equation" label="eq:fibonacci_polynomial_coefficients" align="center" raw="F(n,k) = {{\frac{n+k-1}{2}} \choose {k}}" alt="Fibonacci polynomial coefficients."> -->
 
-<div class="equation" align="center" data-raw-text="F(n,k) = {{\frac{n+k-1}{2}} \choose {k}}" data-equation="eq:fibonacci_polynomial_coefficients">
+```math
+F(n,k) = {{\frac{n+k-1}{2}} \choose {k}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(n,k) = {{\frac{n+k-1}{2}} \choose {k}}" data-equation="eq:fibonacci_polynomial_coefficients">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/fibpoly/docs/img/equation_fibonacci_polynomial_coefficients.svg" alt="Fibonacci polynomial coefficients.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -61,10 +73,14 @@ We can extend [Fibonacci polynomials][fibonacci-polynomials] to negative `n` usi
 
 <!-- <equation class="equation" label="eq:negafibonacci_polynomial" align="center" raw="F_{-n}(x) = (-1)^{n-1} F_n(x)" alt="NegaFibonacci polynomial."> -->
 
-<div class="equation" align="center" data-raw-text="F_{-n}(x) = (-1)^{n-1} F_n(x)" data-equation="eq:negafibonacci_polynomial">
+```math
+F_{-n}(x) = (-1)^{n-1} F_n(x)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F_{-n}(x) = (-1)^{n-1} F_n(x)" data-equation="eq:negafibonacci_polynomial">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/fibpoly/docs/img/equation_negafibonacci_polynomial.svg" alt="NegaFibonacci polynomial.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

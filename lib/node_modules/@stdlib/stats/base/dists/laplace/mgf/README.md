@@ -30,10 +30,14 @@ The [moment-generating function][mgf] for a [Laplace (double exponential)][lapla
 
 <!-- <equation class="equation" label="eq:laplace_mgf_function" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{\exp(\mu\,t)}{1-b^2\,t^2}\,\!\text{ for }|t|<1/b" alt="Moment-generating function (MGF) for a Laplace (double exponential) distribution."> -->
 
-<div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{\exp(\mu\,t)}{1-b^2\,t^2}\,\!\text{ for }|t|&lt;1/b" data-equation="eq:laplace_mgf_function">
+```math
+M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{\exp(\mu\,t)}{1-b^2\,t^2}\,\!\text{ for }|t|<1/b
+```
+
+<!-- <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{\exp(\mu\,t)}{1-b^2\,t^2}\,\!\text{ for }|t|&lt;1/b" data-equation="eq:laplace_mgf_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/laplace/mgf/docs/img/equation_laplace_mgf_function.svg" alt="Moment-generating function (MGF) for a Laplace (double exponential) distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

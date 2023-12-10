@@ -28,10 +28,14 @@ The [geometric mean][geometric-mean] is defined as the nth root of a product of 
 
 <!-- <equation class="equation" label="eq:geometric_mean" align="center" raw="\biggl( \prod_{i=0}^{n-1} \biggr)^{\frac{1}{n}} = \sqrt[n]{x_0 x_1 \cdots x_{n-1}}" alt="Equation for the geometric mean."> -->
 
-<div class="equation" align="center" data-raw-text="\biggl( \prod_{i=0}^{n-1} \biggr)^{\frac{1}{n}} = \sqrt[n]{x_0 x_1 \cdots x_{n-1}}" data-equation="eq:geometric_mean">
+```math
+\biggl( \prod_{i=0}^{n-1} \biggr)^{\frac{1}{n}} = \sqrt[n]{x_0 x_1 \cdots x_{n-1}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\biggl( \prod_{i=0}^{n-1} \biggr)^{\frac{1}{n}} = \sqrt[n]{x_0 x_1 \cdots x_{n-1}}" data-equation="eq:geometric_mean">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b38de7dff069561da1cb4710c85fc74433b7eaaa/lib/node_modules/@stdlib/stats/iter/cugmean/docs/img/equation_geometric_mean.svg" alt="Equation for the geometric mean.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> --> 
 

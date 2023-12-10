@@ -35,18 +35,18 @@ function clbk( acc: number, value: number ): number {
 
 // The function returns the accumulated value when provided a collection...
 {
-	reduce( [ 0, 1, 1, NaN, 2 ], 0, clbk ); // $ExpectType any
-	reduce( [ -1, 1, 2 ], 100, clbk ); // $ExpectType any
-	reduce( [ -1, 1, 2 ], 0, clbk, {} ); // $ExpectType any
+	reduce( [ 0, 1, 1, NaN, 2 ], 0, clbk ); // $ExpectType number
+	reduce( [ -1, 1, 2 ], 100, clbk ); // $ExpectType number
+	reduce( [ -1, 1, 2 ], 0, clbk, {} ); // $ExpectType number
 }
 
 // The function returns the accumulated value when provided an ndarray...
 {
-	const arr = array( [ 1, 2, 3, 4, 5, 6 ] );
+	const arr = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
 
-	reduce( arr, 0, clbk ); // $ExpectType any
-	reduce( arr, 100, clbk ); // $ExpectType any
-	reduce( arr, 0, clbk, {} ); // $ExpectType any
+	reduce( arr, 0, clbk ); // $ExpectType number
+	reduce( arr, 100, clbk ); // $ExpectType number
+	reduce( arr, 0, clbk, {} ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection or ndarray...

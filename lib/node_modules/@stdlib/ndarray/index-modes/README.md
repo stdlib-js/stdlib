@@ -46,14 +46,15 @@ Returns a list of ndarray index modes.
 
 ```javascript
 var out = modes();
-// returns [ 'throw', 'clamp', 'wrap' ]
+// returns [ 'throw', 'normalize', 'clamp', 'wrap' ]
 ```
 
-The output `array` contains the following modes:
+The output array contains the following modes:
 
--   `throw`: specifies that a function should throw an error when an index is outside a restricted interval.
--   `wrap`: specifies that a function should wrap around an index using modulo arithmetic.
--   `clamp`: specifies that a function should set an index less than `0` to `0` (minimum index) and set an index greater than a maximum index value to the maximum possible index.
+-   **throw**: specifies that a function should throw an error when an index is outside a restricted interval.
+-   **normalize**: specifies that a function should normalize negative indices and throw an error when an index is outside a restricted interval.
+-   **wrap**: specifies that a function should wrap around an index using modulo arithmetic.
+-   **clamp**: specifies that a function should set an index less than `0` to `0` (minimum index) and set an index greater than a maximum index value to the maximum possible index.
 
 </section>
 
@@ -80,7 +81,6 @@ var indexOf = require( '@stdlib/utils/index-of' );
 var modes = require( '@stdlib/ndarray/index-modes' );
 
 var MODES = modes();
-var bool;
 
 function isMode( str ) {
     if ( indexOf( MODES, str ) === -1 ) {
@@ -89,7 +89,10 @@ function isMode( str ) {
     return true;
 }
 
-bool = isMode( 'throw' );
+var bool = isMode( 'throw' );
+// returns true
+
+bool = isMode( 'normalize' );
 // returns true
 
 bool = isMode( 'clamp' );

@@ -18,24 +18,31 @@
 
 import forEach = require( './index' );
 
-const log = ( v: any, index: number ): void => {
-	console.log( `${index}: ${v}` );
-};
+/**
+* Dummy function.
+*/
+function fcn( v: any, index: number ): number {
+	if ( v !== v ) {
+		throw new Error( 'beep' );
+	}
+	return index;
+}
+
 
 // TESTS //
 
 // The function returns a collection...
 {
-	forEach( [ 0, 1, 1 ], log ); // $ExpectType Collection
-	forEach( [ -1, 1, 2 ], log, {} ); // $ExpectType Collection
+	forEach( [ 0, 1, 1 ], fcn ); // $ExpectType Collection<number>
+	forEach( [ -1, 1, 2 ], fcn, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
 {
-	forEach( 2, log ); // $ExpectError
-	forEach( false, log ); // $ExpectError
-	forEach( true, log ); // $ExpectError
-	forEach( {}, log ); // $ExpectError
+	forEach( 2, fcn ); // $ExpectError
+	forEach( false, fcn ); // $ExpectError
+	forEach( true, fcn ); // $ExpectError
+	forEach( {}, fcn ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a function...
@@ -52,5 +59,5 @@ const log = ( v: any, index: number ): void => {
 {
 	forEach(); // $ExpectError
 	forEach( [ 1, 2, 3 ] ); // $ExpectError
-	forEach( [ 1, 2, 3 ], log, {}, 3 ); // $ExpectError
+	forEach( [ 1, 2, 3 ], fcn, {}, 3 ); // $ExpectError
 }

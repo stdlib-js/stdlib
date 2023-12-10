@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Computes an absolute value of a signed 32-bit integer in two's complement format.

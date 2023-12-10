@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex64 } from '@stdlib/types/object';
+import { Complex64 } from '@stdlib/types/complex';
 
 /**
 * Returns a single-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.

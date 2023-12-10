@@ -139,8 +139,8 @@ double stdlib_base_deg2rad( const double x );
 #include "stdlib/math/base/special/deg2rad.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { 45.0, 90.0, 0.0, 0.0/0.0 };
+int main( void ) {
+    const double x[] = { 45.0, 90.0, 0.0, 0.0/0.0 };
 
     double y;
     int i;

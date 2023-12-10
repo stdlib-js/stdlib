@@ -20,7 +20,7 @@
 #
 # This hook is called with the following arguments:
 #
-# * `$1` - status flag specifying whether or not the merge being done is a squash merge
+# -   `$1` - status flag specifying whether or not the merge being done is a squash merge
 #
 # This hook cannot does __not__ affect the outcome of `git merge` and is not executed if merge fails due to conflicts.
 

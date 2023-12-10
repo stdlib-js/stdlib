@@ -28,10 +28,14 @@ The [quantile function][quantile-function] for an [inverse gamma][inverse-gamma]
 
 <!-- <equation class="equation" label="eq:invgamma_quantile_function" align="center" raw="Q(p;\alpha,\beta) = \frac{\beta \, \Gamma(\alpha)}{\Gamma(\alpha, p)}" alt="Quantile function for an inverse gamma distribution."> -->
 
-<div class="equation" align="center" data-raw-text="Q(p;\alpha,\beta) = \frac{\beta \, \Gamma(\alpha)}{\Gamma(\alpha, p)}" data-equation="eq:invgamma_quantile_function">
+```math
+Q(p;\alpha,\beta) = \frac{\beta \, \Gamma(\alpha)}{\Gamma(\alpha, p)}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="Q(p;\alpha,\beta) = \frac{\beta \, \Gamma(\alpha)}{\Gamma(\alpha, p)}" data-equation="eq:invgamma_quantile_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/invgamma/quantile/docs/img/equation_invgamma_quantile_function.svg" alt="Quantile function for an inverse gamma distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

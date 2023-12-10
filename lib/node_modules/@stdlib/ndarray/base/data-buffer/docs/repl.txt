@@ -1,0 +1,23 @@
+
+{{alias}}( x )
+    Returns the underlying data buffer of a provided ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Underlying data buffer.
+
+    Examples
+    --------
+    > var opts = { 'dtype': 'float64' };
+    > var out = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ], opts ) )
+    <Float64Array>
+
+    See Also
+    --------
+

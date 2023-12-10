@@ -36,7 +36,7 @@ var isNonConfigurablePropertyIn = require( '@stdlib/assert/is-nonconfigurable-pr
 
 Returns a `boolean` indicating if a `value` has a non-configurable `property` (i.e., a property which cannot be deleted and whose descriptor cannot be changed).
 
-<!-- eslint-disable no-restricted-syntax -->
+<!-- eslint-disable no-restricted-syntax, id-length -->
 
 ```javascript
 var defineProperty = require( '@stdlib/utils/define-property' );
@@ -85,12 +85,16 @@ bool = isNonConfigurablePropertyIn( obj, 'boop' );
 
 -   Value arguments other than `null` or `undefined` are coerced to `objects`.
 
+    <!-- eslint-disable id-length -->
+
     ```javascript
     var bool = isNonConfigurablePropertyIn( 'beep', 'length' );
     // returns true
     ```
 
 -   Non-symbol property arguments are coerced to `strings`.
+
+    <!-- eslint-disable id-length -->
 
     ```javascript
     var defineProperty = require( '@stdlib/utils/define-property' );

@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Returns the maximum finite value capable of being represented by a numeric real type.

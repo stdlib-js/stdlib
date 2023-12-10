@@ -16,46 +16,36 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
-import { ndarray } from '@stdlib/types/ndarray';
+import { Collection } from '@stdlib/types/array';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Callback invoked for each array element.
 *
 * @returns result
 */
-type Nullary = () => any;
-
-/**
-* Callback invoked for each array element.
-*
-* @param value - array element
-* @returns result
-*/
-type Unary = ( value: any ) => any;
+type Nullary<U, V> = ( this: V ) => U;
 
 /**
 * Callback invoked for each array element.
 *
 * @param value - array element
-* @param index - element index
 * @returns result
 */
-type Binary = ( value: any, index: number ) => any;
+type Unary<T, U, V> = ( this: V, value: T ) => U;
 
 /**
 * Callback invoked for each array element.
 *
 * @param value - array element
 * @param index - element index
-* @param arr - array
 * @returns result
 */
-type Ternary = ( value: any, index: number, arr: ndarray ) => any;
+type Binary<T, U, V> = ( this: V, value: T, index: number ) => U;
 
 /**
 * Callback invoked for each array element.
@@ -65,7 +55,7 @@ type Ternary = ( value: any, index: number, arr: ndarray ) => any;
 * @param arr - array
 * @returns result
 */
-type ArrayTernary = ( value: any, index: number, arr: Collection ) => any;
+type Ternary<T, U, V> = ( this: V, value: T, index: number, arr: typedndarray<T> ) => U;
 
 /**
 * Callback invoked for each array element.
@@ -75,7 +65,7 @@ type ArrayTernary = ( value: any, index: number, arr: Collection ) => any;
 * @param arr - array
 * @returns result
 */
-type Callback = Nullary | Unary | Binary | Ternary;
+type ArrayTernary<T, U, V> = ( this: V, value: T, index: number, arr: Collection<T> ) => U;
 
 /**
 * Callback invoked for each array element.
@@ -85,7 +75,17 @@ type Callback = Nullary | Unary | Binary | Ternary;
 * @param arr - array
 * @returns result
 */
-type ArrayCallback = Nullary | Unary | Binary | ArrayTernary;
+type Callback<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary<T, U, V>;
+
+/**
+* Callback invoked for each array element.
+*
+* @param value - array element
+* @param index - element index
+* @param arr - array
+* @returns result
+*/
+type ArrayCallback<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | ArrayTernary<T, U, V>;
 
 /**
 * Interface describing the main export.
@@ -125,7 +125,7 @@ interface Routine {
 	* var data = out.data;
 	* // returns [ 1, 2, 3, 4, 5, 6 ]
 	*/
-	( arr: ndarray, fcn: Callback, thisArg?: any ): ndarray;
+	<T = unknown, U = unknown, V = unknown>( arr: typedndarray<T>, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): typedndarray<U>;
 
 	/**
 	* Applies a function to each element in an array and assigns the result to an element in a new array, iterating from right to left.
@@ -152,7 +152,7 @@ interface Routine {
 	* var out = mapRight( arr, naryFunction( abs, 1 ) );
 	* // returns [ 1, 2, 3, 4, 5, 6 ]
 	*/
-	( arr: Collection, fcn: ArrayCallback, thisArg?: any ): Collection;
+	<T = unknown, U = unknown, V = unknown>( arr: Collection<T>, fcn: ArrayCallback<T, U, V>, thisArg?: ThisParameterType<ArrayCallback<T, U, V>> ): Array<U>;
 
 	/**
 	* Applies a function to each element in an array and assigns the result to an element in an output array, iterating from right to left.
@@ -188,7 +188,7 @@ interface Routine {
 	* var data = out.data;
 	* // returns [ 1, 2, 3, 4, 5, 6 ]
 	*/
-	assign( arr: ndarray, out: ndarray, fcn: Callback, thisArg?: any ): ndarray;
+	assign<T = unknown, U = unknown, V = unknown>( arr: typedndarray<T>, out: typedndarray<U>, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): typedndarray<U>;
 
 	/**
 	* Applies a function to each element in an array and assigns the result to an element in an output array, iterating from right to left.
@@ -219,7 +219,7 @@ interface Routine {
 	* console.log( out );
 	* // => [ 1, 2, 3, 4, 5, 6 ]
 	*/
-	assign( arr: Collection, out: Collection, fcn: ArrayCallback, thisArg?: any ): Collection; // tslint:disable-line:max-line-length
+	assign<T = unknown, U = unknown, V = unknown>( arr: Collection<T>, out: Collection<U>, fcn: ArrayCallback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Collection<U>;
 }
 
 /**

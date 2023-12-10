@@ -42,7 +42,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -213,7 +214,8 @@ jobs:
       # Create a comment on the pull request informing the user whether the pull request is missing required files:
       - name: 'Create a comment on the pull request informing the user whether the pull request is missing required files'
         if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
-        uses: peter-evans/create-or-update-comment@v1
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # v3.1.0
         with:
           # Specify the issue or pull request number:
           issue-number: ${{ github.event.pull_request.number }}

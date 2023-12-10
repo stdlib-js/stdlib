@@ -24,4 +24,8 @@
 #   - Keep everything on the line starting from the second column.
 # * `sort`
 #   - Sort in lexicographic order.
-git shortlog -sne | cut -f 2 | sort
+# * `grep -v`
+#   - Exclude GitHub actions.
+# * `grep -v`
+#   - Exclude the stdlib bot.
+git shortlog -sne | cut -f 2 | sort | grep -v '^github-actions' | grep -v '^stdlib-bot'

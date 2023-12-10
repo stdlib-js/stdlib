@@ -30,10 +30,14 @@ The [standard deviation][standard-deviation] for a [negative binomial][negative-
 
 <!-- <equation class="equation" label="eq:negative_binomial_stdev" align="center" raw="\sigma = \sqrt{ \tfrac{pr}{(1-p)^{2}} }" alt="Standard deviation for a negative binomial distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma = \sqrt{ \tfrac{pr}{(1-p)^{2}} }" data-equation="eq:negative_binomial_stdev">
+```math
+\sigma = \sqrt{ \tfrac{pr}{(1-p)^{2}} }
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma = \sqrt{ \tfrac{pr}{(1-p)^{2}} }" data-equation="eq:negative_binomial_stdev">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/negative-binomial/stdev/docs/img/equation_negative_binomial_stdev.svg" alt="Standard deviation for a negative binomial distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -23,6 +23,6 @@ import FLOAT64_MAX_BASE10_EXPONENT = require( './index' );
 
 // The export is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	FLOAT64_MAX_BASE10_EXPONENT; // $ExpectType number
 }

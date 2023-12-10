@@ -29,8 +29,8 @@ const fill = (): number => {
 {
 	const x = new Float64Array( 10 );
 
-	gfillBy( x.length, x, 1, fill ); // $ExpectType Collection
-	gfillBy( x.length, x, 1, fill, {} ); // $ExpectType Collection
+	gfillBy( x.length, x, 1, fill ); // $ExpectType Collection<number>
+	gfillBy( x.length, x, 1, fill, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -101,8 +101,8 @@ const fill = (): number => {
 {
 	const x = new Float64Array( 10 );
 
-	gfillBy.ndarray( x.length, x, 1, 0, fill ); // $ExpectType Collection
-	gfillBy.ndarray( x.length, x, 1, 0, fill, {} ); // $ExpectType Collection
+	gfillBy.ndarray( x.length, x, 1, 0, fill ); // $ExpectType Collection<number>
+	gfillBy.ndarray( x.length, x, 1, 0, fill, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

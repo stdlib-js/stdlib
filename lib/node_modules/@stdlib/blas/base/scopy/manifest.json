@@ -1,148 +1,169 @@
 {
-	"options": {
-		"os": "linux",
-		"blas": ""
-	},
-	"fields": [
-		{
-			"field": "src",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "include",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "libraries",
-			"resolve": false,
-			"relative": false
-		},
-		{
-			"field": "libpath",
-			"resolve": true,
-			"relative": false
-		}
-	],
-	"confs": [
-		{
-			"os": "linux",
-			"blas": "",
-			"src": [
-				"./src/scopy.f",
-				"./src/scopy_f.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/napi/export",
-				"@stdlib/napi/argv",
-				"@stdlib/napi/argv-int64",
-				"@stdlib/napi/argv-strided-float32array"
-			]
-		},
-		{
-			"os": "linux",
-			"blas": "openblas",
-			"src": [
-				"./src/scopy_cblas.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lopenblas",
-				"-lpthread"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/napi/export",
-				"@stdlib/napi/argv",
-				"@stdlib/napi/argv-int64",
-				"@stdlib/napi/argv-strided-float32array"
-			]
-		},
-		{
-			"os": "mac",
-			"blas": "",
-			"src": [
-				"./src/scopy.f",
-				"./src/scopy_f.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/napi/export",
-				"@stdlib/napi/argv",
-				"@stdlib/napi/argv-int64",
-				"@stdlib/napi/argv-strided-float32array"
-			]
-		},
-		{
-			"os": "mac",
-			"blas": "apple_accelerate_framework",
-			"src": [
-				"./src/scopy_cblas.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lblas"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/napi/export",
-				"@stdlib/napi/argv",
-				"@stdlib/napi/argv-int64",
-				"@stdlib/napi/argv-strided-float32array"
-			]
-		},
-		{
-			"os": "mac",
-			"blas": "openblas",
-			"src": [
-				"./src/scopy_cblas.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lopenblas",
-				"-lpthread"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/napi/export",
-				"@stdlib/napi/argv",
-				"@stdlib/napi/argv-int64",
-				"@stdlib/napi/argv-strided-float32array"
-			]
-		},
-		{
-			"os": "win",
-			"blas": "",
-			"src": [
-				"./src/scopy.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/napi/export",
-				"@stdlib/napi/argv",
-				"@stdlib/napi/argv-int64",
-				"@stdlib/napi/argv-strided-float32array"
-			]
-		}
-	]
+  "options": {
+    "os": "linux",
+    "blas": "",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scopy.f",
+        "./src/scopy_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array"
+      ]
+    },
+    {
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/scopy_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array"
+      ]
+    },
+    {
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scopy.f",
+        "./src/scopy_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array"
+      ]
+    },
+    {
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/scopy_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array"
+      ]
+    },
+    {
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/scopy_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array"
+      ]
+    },
+    {
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scopy.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array"
+      ]
+    },
+    {
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/scopy.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
+    }
+  ]
 }

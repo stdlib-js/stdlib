@@ -20,7 +20,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     double out;
     double x;
     int i;

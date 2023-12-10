@@ -30,10 +30,14 @@ The [expected value][expected-value] for a [beta][beta-distribution] random vari
 
 <!-- <equation class="equation" label="eq:beta_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \frac{\alpha}{\alpha+\beta}" alt="Expected value for a beta distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{\alpha}{\alpha+\beta}" data-equation="eq:beta_expectation">
+```math
+\mathbb{E}\left[ X \right] = \frac{\alpha}{\alpha+\beta}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{\alpha}{\alpha+\beta}" data-equation="eq:beta_expectation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/beta/mean/docs/img/equation_beta_expectation.svg" alt="Expected value for a beta distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

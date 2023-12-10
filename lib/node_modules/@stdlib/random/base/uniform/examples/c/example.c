@@ -22,7 +22,7 @@
 #include "stdlib/random/base/randu.h"
 #include "stdlib/random/base/uniform.h"
 
-int main() {
+int main( void ) {
 	int32_t i;
 	double d;
 

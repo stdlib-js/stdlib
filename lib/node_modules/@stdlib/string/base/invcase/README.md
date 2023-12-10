@@ -1,0 +1,102 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2023 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# invcase
+
+> Convert a string to inverse case.
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var invcase = require( '@stdlib/string/base/invcase' );
+```
+
+#### invcase( str )
+
+Converts a string to inverse case.
+
+```javascript
+var str = invcase( 'foo bar' );
+// returns 'FOO BAR'
+
+str = invcase( 'Foo Bar Baz' );
+// returns 'fOO bAR bAZ'
+
+str = invcase( 'foo BAR' );
+// returns 'FOO bar'
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+```javascript
+var invcase = require( '@stdlib/string/base/invcase' );
+
+var str = 'Hello World!';
+var out = invcase( str );
+// returns 'hELLO wORLD!'
+
+str = 'I am a tiny little teapot';
+out = invcase( str );
+// returns 'i AM A TINY LITTLE TEAPOT'
+
+str = 'with BIG problems';
+out = invcase( str );
+// returns 'WITH big PROBLEMS'
+
+str = 'To Be, Or NoT To Be: ThAt Is ThE QuEsTiOn.';
+out = invcase( str );
+// returns 'tO bE, oR nOt tO bE: tHaT iS tHe qUeStIoN.'
+
+str = 'isMobile';
+out = invcase( str );
+// returns 'ISmOBILE'
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

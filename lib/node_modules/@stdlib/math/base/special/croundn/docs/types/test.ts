@@ -16,66 +16,43 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import croundn = require( './index' );
 
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns a double-precision complex floating-point number...
 {
-	croundn( 5, 3, -2 ); // $ExpectType ArrayLike<number>
-	croundn( [], 5, 3, -2 ); // $ExpectType ArrayLike<number>
+	croundn( new Complex128( 1.0, 2.0 ), -2 ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the first argument is not a complex number...
 {
-	croundn( true, 3, -2 ); // $ExpectError
-	croundn( false, 3, -2 ); // $ExpectError
-	croundn( null, 3, -2 ); // $ExpectError
-	croundn( undefined, 3, -2 ); // $ExpectError
-	croundn( '5', 3, -2 ); // $ExpectError
-	croundn( [], 3, -2 ); // $ExpectError
-	croundn( {}, 3, -2 ); // $ExpectError
-	croundn( ( x: number ): number => x, 3, -2 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an imaginary component which is not a number...
-{
-	croundn( 5, true, -2 ); // $ExpectError
-	croundn( 5, false, -2 ); // $ExpectError
-	croundn( 5, null, -2 ); // $ExpectError
-	croundn( 5, undefined, -2 ); // $ExpectError
-	croundn( 5, '5', -2 ); // $ExpectError
-	croundn( 5, [], -2 ); // $ExpectError
-	croundn( 5, {}, -2 ); // $ExpectError
-	croundn( 5, ( x: number ): number => x, -2 ); // $ExpectError
+	croundn( true, 3 ); // $ExpectError
+	croundn( false, 3 ); // $ExpectError
+	croundn( null, 3 ); // $ExpectError
+	croundn( undefined, 3 ); // $ExpectError
+	croundn( '5', 3 ); // $ExpectError
+	croundn( [], 3 ); // $ExpectError
+	croundn( {}, 3 ); // $ExpectError
+	croundn( ( x: number ): number => x, 3 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an integer power which is not a number...
 {
-	croundn( 5, 3, true ); // $ExpectError
-	croundn( 5, 3, false ); // $ExpectError
-	croundn( 5, 3, null ); // $ExpectError
-	croundn( 5, 3, undefined ); // $ExpectError
-	croundn( 5, 3, '5' ); // $ExpectError
-	croundn( 5, 3, [] ); // $ExpectError
-	croundn( 5, 3, {} ); // $ExpectError
-	croundn( 5, 3, ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	croundn( true, 5, 3, -2 ); // $ExpectError
-	croundn( false, 5, 3, -2 ); // $ExpectError
-	croundn( 'abc', 5, 3, -2 ); // $ExpectError
-	croundn( {}, 5, 3, -2 ); // $ExpectError
-	croundn( ( x: number ): number => x, 5, 3, -2 ); // $ExpectError
-	croundn( 123, 5, 3, -2 ); // $ExpectError
+	croundn( new Complex128( 1.0, 2.0 ), true ); // $ExpectError
+	croundn( new Complex128( 1.0, 2.0 ), false ); // $ExpectError
+	croundn( new Complex128( 1.0, 2.0 ), null ); // $ExpectError
+	croundn( new Complex128( 1.0, 2.0 ), undefined ); // $ExpectError
+	croundn( new Complex128( 1.0, 2.0 ), '5' ); // $ExpectError
+	croundn( new Complex128( 1.0, 2.0 ), [] ); // $ExpectError
+	croundn( new Complex128( 1.0, 2.0 ), {} ); // $ExpectError
+	croundn( new Complex128( 1.0, 2.0 ), ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	croundn(); // $ExpectError
 	croundn( 2 ); // $ExpectError
-	croundn( 5, 3 ); // $ExpectError
 }

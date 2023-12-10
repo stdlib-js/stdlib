@@ -20,6 +20,14 @@ limitations under the License.
 
 <!-- lint disable first-heading-level -->
 
+<!-- Section to include announcements. If section is included, add a horizontal rule *after* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="announcement">
+
+</section>
+
+<!-- /.announcement -->
+
 <!-- Section to include assets such as the project logo, etc. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="banner">
@@ -44,9 +52,19 @@ limitations under the License.
 
 <section class="intro">
 
-stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing applications. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib.
 
-This is the GitHub repository of stdlib source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
+stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+
+What sets stdlib apart is its fully decomposable architecture, allowing you to swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.
+
+When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.
+
+Want to join us in bringing numerical computing to the web? **Start by starring the project.** :star2:
+
+Explore this GitHub repository for stdlib's source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
+
+Thank you for being a part of our community! Your support is invaluable to us!
 
 ## Resources
 
@@ -59,6 +77,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 ### External Resources
 
+-   [**Open Collective**][open-collective-stdlib]
 -   [**Twitter**][stdlib-twitter]
 -   [**Gitter**][stdlib-gitter]
 
@@ -130,6 +149,12 @@ This is the GitHub repository of stdlib source code and documentation. For help 
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
     </div>
 
+-   Every function is accompanied by [TypeScript][typescript] declaration files, ensuring type safety and facilitating intelligent code completion in IDEs.
+
+    <div class="image" align="center">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f5f1f915a7178d9bc76a95d34afd799e6092ec3a/docs/assets/readme/typescript.png" alt="Demo showcasing TypeScript declaration files" >
+    </div>
+
 * * *
 
 ## Installation
@@ -140,7 +165,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
 ### User Stories
 
--   I want to perform **data analysis** and/or **data science** related tasks in JavaScript and Node.js, similar to how I might use IPython, Julia, R, and/or MATLAB.
+-   I want to perform **data analysis** and **data science** tasks in JavaScript and Node.js, similar to how I might use Python, Julia, R, and MATLAB.
 
     -   Install the entire project as a [command-line utility](#install_command_line_utility).
 
@@ -566,11 +591,15 @@ Already an expert?
 stdlib development is generously supported by the following sponsors...
 
 <div class="image" align="center">
+    <br>
     <a href="https://labs.quansight.org/">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
     </a>
     <br>
+    <br>
 </div>
+
+Are you interested in supporting stdlib? If so, join our [Open Collective][open-collective-stdlib]!
 
 </section>
 
@@ -587,9 +616,11 @@ stdlib development is generously supported by the following sponsors...
 The following organizations and key stakeholders trust and depend on stdlib...
 
 <div class="image" align="center">
+    <br>
     <a href="https://www.cmu.edu/">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1c8c7dbc9d081eeb13e16c62764f27a65c6553f8/docs/assets/misc/cmu_logo.png" alt="Carnegie Mellon University">
     </a>
+    <br>
     <br>
 </div>
 
@@ -723,7 +754,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [make]: https://www.gnu.org/software/make/
 
@@ -759,6 +790,8 @@ Test and build infrastructure is generously provided by the following services:
 
 [webpack]: https://webpack.js.org/
 
+[typescript]: https://www.typescriptlang.org/
+
 [unpkg]: https://unpkg.com/#/
 
 [jsdelivr]: https://www.jsdelivr.com/
@@ -788,6 +821,8 @@ Test and build infrastructure is generously provided by the following services:
 [stdlib-bundles]: https://github.com/stdlib-js/stdlib/tree/develop/dist
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
+
+[open-collective-stdlib]: https://opencollective.com/stdlib
 
 [stdlib-twitter]: https://twitter.com/stdlibjs
 

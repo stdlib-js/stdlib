@@ -23,6 +23,6 @@ import FLOAT16_CBRT_EPSILON = require( './index' );
 
 // The variable is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	FLOAT16_CBRT_EPSILON; // $ExpectType number
 }

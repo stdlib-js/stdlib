@@ -30,9 +30,9 @@ limitations under the License.
 var removeLast = require( '@stdlib/string/remove-last' );
 ```
 
-#### removeLast( str\[, n] )
+#### removeLast( str\[, n]\[, options] )
 
-Removes the last character of a `string`.
+Removes the last character(s) of an input string.
 
 ```javascript
 var out = removeLast( 'last man standing' );
@@ -42,7 +42,17 @@ out = removeLast( 'Hidden Treasures' );
 // returns 'Hidden Treasure'
 ```
 
-If provided a second argument, the function removes the last `n` characters.
+The function supports the following options:
+
+-   **mode**: type of characters to remove. Must be one of the following:
+
+    -   `'grapheme'`: grapheme clusters. Appropriate for strings containing visual characters which can span multiple Unicode code points (e.g., emoji).
+    -   `'code_point'`: Unicode code points. Appropriate for strings containing visual characters which are comprised of more than one Unicode code unit (e.g., ideographic symbols and punctuation and mathematical alphanumerics).
+    -   `'code_unit'`: UTF-16 code units. Appropriate for strings containing visual characters drawn from the basic multilingual plane (BMP) (e.g., common characters, such as those from the Latin, Greek, and Cyrillic alphabets).
+
+    Default: `'grapheme'`.
+
+By default, the function returns the last character. To return the last `n` characters, provide a second argument specifying the number of characters to return.
 
 ```javascript
 var out = removeLast( 'foo bar', 4 );
@@ -55,6 +65,18 @@ out = removeLast( 'foo bar', 0 );
 </section>
 
 <!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+## Notes
+
+-   By default, the function assumes the general case in which an input string may contain an arbitrary number of grapheme clusters. This assumption comes with a performance cost. Accordingly, if an input string is known to only contain visual characters of a particular type (e.g., only alphanumeric), one can achieve better performance by specifying the appropriate `mode` option.
+
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 
@@ -107,6 +129,7 @@ Options:
   -V,    --version             Print the package version.
          --n                   Number of characters to remove. Default: 1.
          --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
+         --mode mode           Type of character to remove. Default: 'grapheme'.
 ```
 
 </section>

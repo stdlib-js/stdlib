@@ -21,7 +21,7 @@
 /**
 * Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
 *
-* @param N        number of elements to copy
+* @param N        number of indexed elements
 * @param X        input array
 * @param strideX  X stride length
 * @param Y        output array

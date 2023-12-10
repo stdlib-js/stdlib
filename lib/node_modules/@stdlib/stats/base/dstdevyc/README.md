@@ -28,10 +28,14 @@ The population [standard deviation][standard-deviation] of a finite size populat
 
 <!-- <equation class="equation" label="eq:population_standard_deviation" align="center" raw="\sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}" alt="Equation for the population standard deviation."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}" data-equation="eq:population_standard_deviation">
+```math
+\sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}" data-equation="eq:population_standard_deviation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@cf34dc340ace40f02a572d42d3234a21745f58f3/lib/node_modules/@stdlib/stats/base/dstdevyc/docs/img/equation_population_standard_deviation.svg" alt="Equation for the population standard deviation.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -39,10 +43,14 @@ where the population mean is given by
 
 <!-- <equation class="equation" label="eq:population_mean" align="center" raw="\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i" alt="Equation for the population mean."> -->
 
-<div class="equation" align="center" data-raw-text="\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i" data-equation="eq:population_mean">
+```math
+\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i" data-equation="eq:population_mean">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@cf34dc340ace40f02a572d42d3234a21745f58f3/lib/node_modules/@stdlib/stats/base/dstdevyc/docs/img/equation_population_mean.svg" alt="Equation for the population mean.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -50,10 +58,14 @@ Often in the analysis of data, the true population [standard deviation][standard
 
 <!-- <equation class="equation" label="eq:corrected_sample_standard_deviation" align="center" raw="s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2}" alt="Equation for computing a corrected sample standard deviation."> -->
 
-<div class="equation" align="center" data-raw-text="s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2}" data-equation="eq:corrected_sample_standard_deviation">
+```math
+s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2}" data-equation="eq:corrected_sample_standard_deviation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@cf34dc340ace40f02a572d42d3234a21745f58f3/lib/node_modules/@stdlib/stats/base/dstdevyc/docs/img/equation_corrected_sample_standard_deviation.svg" alt="Equation for computing a corrected sample standard deviation.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -61,10 +73,14 @@ where the sample mean is given by
 
 <!-- <equation class="equation" label="eq:sample_mean" align="center" raw="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" alt="Equation for the sample mean."> -->
 
-<div class="equation" align="center" data-raw-text="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" data-equation="eq:sample_mean">
+```math
+\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" data-equation="eq:sample_mean">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@cf34dc340ace40f02a572d42d3234a21745f58f3/lib/node_modules/@stdlib/stats/base/dstdevyc/docs/img/equation_sample_mean.svg" alt="Equation for the sample mean.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

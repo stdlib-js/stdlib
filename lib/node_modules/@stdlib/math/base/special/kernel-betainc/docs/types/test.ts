@@ -21,9 +21,9 @@ import kernelBetainc = require( './index' );
 
 // TESTS //
 
-// The function returns a collection...
+// The function returns an array...
 {
-	kernelBetainc( 0.5, 1.5, 1.5, true, false ); // $ExpectType Collection
+	kernelBetainc( 0.5, 1.5, 1.5, true, false ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided values other than three numbers for the first three parameters...
@@ -78,7 +78,7 @@ import kernelBetainc = require( './index' );
 // Attached to the main export is an `assign` method which returns a collection...
 {
 	const out = [ 0.0, 0.0 ];
-	kernelBetainc.assign( 0.5, 1.5, 1.5, true, false, out, 1, 0 ); // $ExpectType Collection
+	kernelBetainc.assign( 0.5, 1.5, 1.5, true, false, out, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `assign` method is provided values other than three numbers for the first three parameters...

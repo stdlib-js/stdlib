@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
  * Interface describing an interface for computing minimum and maximum values.
@@ -64,7 +64,7 @@ import { Collection } from '@stdlib/types/object';
 	* var bool = ( v === out );
 	* // returns true
 	*/
-	assign( x: number, y: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+	assign<T = unknown>( x: number, y: number, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
 }
 
 /**

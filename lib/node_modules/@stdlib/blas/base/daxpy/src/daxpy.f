@@ -47,7 +47,7 @@
 ! >
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
-! @param {integer} N - number of values
+! @param {integer} N - number of indexed elements
 ! @param {double} alpha - scalar
 ! @param {Array<double>} dx - input array
 ! @param {integer} strideX - `dx` stride length

@@ -30,10 +30,14 @@ A flat top pulse waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:flat_top_pulse_waveform" align="center" raw="f(t; \tau, A, \varphi) = \begin{align*} A\biggl(a_0 &- a_1 \cos\frac{2\pi (t-\varphi)}{\tau-1} + a_2 \cos\frac{2\pi(t-\varphi)}{\tau-1} \\ &- a_3 \cos\frac{2\pi(t-\varphi)}{\tau-1} + a_4 \cos \frac{2\pi (t-\varphi)}{\tau-1} \biggr)\end{align*}" alt="Equation for a flat top pulse waveform."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; T, \tau, A, \varphi) = \begin{align*} A\biggl(a_0 &amp;- a_1 \cos\frac{2\pi (t-\varphi)}{\tau-1} + a_2 \cos\frac{2\pi(t-\varphi)}{\tau-1} \\ &amp;- a_3 \cos\frac{2\pi(t-\varphi)}{\tau-1} + a_4 \cos \frac{2\pi (t-\varphi)}{\tau-1} \biggr)\end{align*}" data-equation="eq:flat_top_pulse_waveform">
+```math
+f(t; \tau, A, \varphi) = \begin{align*} A\biggl(a_0 &- a_1 \cos\frac{2\pi (t-\varphi)}{\tau-1} + a_2 \cos\frac{2\pi(t-\varphi)}{\tau-1} \\ &- a_3 \cos\frac{2\pi(t-\varphi)}{\tau-1} + a_4 \cos \frac{2\pi (t-\varphi)}{\tau-1} \biggr)\end{align*}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; T, \tau, A, \varphi) = \begin{align*} A\biggl(a_0 &amp;- a_1 \cos\frac{2\pi (t-\varphi)}{\tau-1} + a_2 \cos\frac{2\pi(t-\varphi)}{\tau-1} \\ &amp;- a_3 \cos\frac{2\pi(t-\varphi)}{\tau-1} + a_4 \cos \frac{2\pi (t-\varphi)}{\tau-1} \biggr)\end{align*}" data-equation="eq:flat_top_pulse_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@157025f95b239be39ac0c70158f96243f1be978e/lib/node_modules/@stdlib/simulate/iter/flat-top-pulse/docs/img/equation_flat_top_pulse_waveform.svg" alt="Equation for a flat top pulse waveform.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

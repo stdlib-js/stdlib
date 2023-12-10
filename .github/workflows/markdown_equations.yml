@@ -30,6 +30,11 @@ on:
       # List paths for which changes should trigger this workflow:
       - 'lib/**/*.md'
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -50,7 +55,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -64,7 +70,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -106,7 +113,7 @@ jobs:
             exit 0
           else
             # Otherwise, add changed files to the staging area and commit:
-            git add -A && git commit -m "Add SVG equations"
+            git add -A && git commit -m "docs: update Markdown equation SVGs"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 15
@@ -124,7 +131,7 @@ jobs:
             exit 0
           else
             # Otherwise, add changed files to the staging area and commit:
-            git add -A && git commit -m "Update Markdown equation elements"
+            git add -A && git commit -m "docs: update Markdown equation elements"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 15
@@ -133,7 +140,8 @@ jobs:
       - name: 'Create pull request'
         id: cpr
         if: steps.svg-equations.outputs.changed == 'true' || steps.equation-elements.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v4
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5.0.2
         with:
           title: 'Update Markdown equation elements'
           body: |
@@ -148,7 +156,7 @@ jobs:
             documentation
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: markdown-insert-equations
           delete-branch: true
 

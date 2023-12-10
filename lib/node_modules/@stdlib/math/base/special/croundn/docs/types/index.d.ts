@@ -16,55 +16,38 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Complex128 } from '@stdlib/types/complex';
 
 /**
-* Rounds a complex number to the nearest multiple of `10^n`.
+* Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n`.
 *
 * ## Notes
 *
 * - When operating on floating-point numbers in bases other than `2`, rounding to specified digits can be inexact.
 *
-* @param out - output array
-* @param re - real component
-* @param im - imaginary component
+* @param z - input value
 * @param n - integer power of 10
-* @returns real and imaginary components
+* @returns result
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
 *
-* var out = new Float32Array( 2 );
+* var v = cceil( new Complex128( 5.555, -3.333 ) );
+* // returns <Complex128>
 *
-* var v = croundn( out, 5.555, -3.333, -2 );
-* // returns <Float32Array>[ 5.56, -3.34 ]
+* var re = real( v );
+* // returns 5.56
 *
-* var bool = ( v === out );
-* // returns true
+* var im = imag( v );
+* // returns -3.34
 */
-declare function croundn( out: ArrayLike<number>, re: number, im: number, n: number ): ArrayLike<number>; // tslint-disable-line max-line-length
-
-/**
-* Rounds a complex number to the nearest multiple of `10^n`.
-*
-* ## Notes
-*
-* - When operating on floating-point numbers in bases other than `2`, rounding to specified digits can be inexact.
-*
-* @param re - real component
-* @param im - imaginary component
-* @param n - integer power of 10
-* @returns real and imaginary components
-*
-* @example
-* var out = croundn( 5.555, -3.333, -2 );
-* // returns [ 5.56, -3.34 ]
-*/
-declare function croundn( re: number, im: number, n: number ): ArrayLike<number>; // tslint-disable-line max-line-length
+declare function croundn( z: Complex128, n: number ): Complex128;
 
 
 // EXPORTS //

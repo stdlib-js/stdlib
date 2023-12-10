@@ -1,0 +1,29 @@
+
+{{alias}}( x )
+    Evaluates `ln(1+x) - x`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > {{alias}}( 1.1 )
+    ~-0.358
+    > {{alias}}( 0.99 )
+    ~-0.302
+    > {{alias}}( -0.99 )
+    ~-3.615
+    > {{alias}}( -1.1 )
+    NaN
+    > {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------

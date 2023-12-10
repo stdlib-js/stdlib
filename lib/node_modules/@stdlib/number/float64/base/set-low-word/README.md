@@ -173,7 +173,7 @@ void stdlib_base_float64_set_low_word( const uint32_t low, double *x );
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     uint32_t low[] = { 1374389535, 1374389545, 1374389555, 1374389565 };
     double x = 3.14;
 

@@ -18,7 +18,7 @@
 
 !> Wraps `ddot` as a subroutine.
 !
-! @param {integer} N - number of values over which to compute the dot product
+! @param {integer} N - number of indexed elements
 ! @param {Array<double>} dx - first array
 ! @param {integer} strideX - `dx` stride length
 ! @param {Array<double>} dy - second array

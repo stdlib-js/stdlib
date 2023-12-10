@@ -392,6 +392,8 @@ cli.version();
 
 ## Examples
 
+<!-- eslint-disable stdlib/require-file-extensions -->
+
 <!-- eslint no-undef: "error" -->
 
 ```javascript

@@ -30,10 +30,14 @@ The [quantile function][quantile-function] for a [hypergeometric][hypergeometric
 
 <!-- <equation class="equation" label="eq:hypergeometric_quantile_function" align="center" raw="F(x-1;N,K,n) < p \le F(x;N,K,n)" alt="Quantile value for a hypergeometric distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x-1;N,K,n) &lt; p \le F(x;N,K,n)" data-equation="eq:hypergeometric_quantile_function">
+```math
+F(x-1;N,K,n) < p \le F(x;N,K,n)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x-1;N,K,n) &lt; p \le F(x;N,K,n)" data-equation="eq:hypergeometric_quantile_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/hypergeometric/quantile/docs/img/equation_hypergeometric_quantile_function.svg" alt="Quantile value for a hypergeometric distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

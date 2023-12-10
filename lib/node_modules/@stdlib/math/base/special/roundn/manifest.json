@@ -1,0 +1,90 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/roundn.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/max-base10-exponent",
+        "@stdlib/constants/float64/min-base10-exponent",
+        "@stdlib/math/base/assert/is-infinite"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/roundn.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/max-base10-exponent",
+        "@stdlib/constants/float64/min-base10-exponent",
+        "@stdlib/math/base/assert/is-infinite"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/roundn.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/max-base10-exponent",
+        "@stdlib/constants/float64/min-base10-exponent",
+        "@stdlib/math/base/assert/is-infinite"
+      ]
+    }
+  ]
+}

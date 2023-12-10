@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <complex.h>
 
-int main() {
+int main( void ) {
 	float complex x[] = { 3.14f+1.0f*I, -3.14f-1.0f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
 
 	float complex v;

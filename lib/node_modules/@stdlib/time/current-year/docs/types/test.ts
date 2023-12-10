@@ -31,4 +31,3 @@ import currentYear = require( './index' );
 	currentYear( true ); // $ExpectError
 	currentYear( [], 123 ); // $ExpectError
 }
-

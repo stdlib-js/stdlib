@@ -30,10 +30,14 @@ The [standard deviation][standard-deviation] for a [Fréchet][frechet-distributi
 
 <!-- <equation class="equation" label="eq:frechet_stdev" align="center" raw="\sigma = \begin{cases} s \sqrt{ \Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2} } & {\text {for }}\alpha > 2\\\ \infty & \text{ otherwise } \end{cases}" alt="Standard deviation for a Fréchet distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma = \begin{cases} s \sqrt{ \Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2} } &amp; {\text {for }}\alpha &gt; 2\\\ \infty &amp; \text{ otherwise } \end{cases}" data-equation="eq:frechet_stdev">
+```math
+\sigma = \begin{cases} s \sqrt{ \Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2} } & {\text {for }}\alpha > 2\\\ \infty & \text{ otherwise } \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma = \begin{cases} s \sqrt{ \Gamma \left(1-{\frac{2}{\alpha }}\right)-\left(\Gamma\left(1-{\frac {1}{\alpha }}\right)\right)^{2} } &amp; {\text {for }}\alpha &gt; 2\\\ \infty &amp; \text{ otherwise } \end{cases}" data-equation="eq:frechet_stdev">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/frechet/stdev/docs/img/equation_frechet_stdev.svg" alt="Standard deviation for a Fréchet distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

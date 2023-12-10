@@ -26,7 +26,6 @@ import cartesianSquare = require( './index' );
 	cartesianSquare( [ 1, 2, 3, 4 ] ); // $ExpectType number[][]
 	cartesianSquare<number>( [ 1, 2, 3, 4 ] ); // $ExpectType number[][]
 	cartesianSquare<string>( [ '1', '2', '3', '4' ] ); // $ExpectType string[][]
-	cartesianSquare<any>( [ 1, 2, 3, 4 ] ); // $ExpectType any[][]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like object...

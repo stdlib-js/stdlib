@@ -187,7 +187,7 @@ These five files together comprise a library which may be used by other librarie
 #include <stdio.h>
 #include "add.h"
 
-int main() {
+int main( void ) {
   double sum = add( 1, 2 );
   printf( "Result: %.2f\n", sum );
   return 0;

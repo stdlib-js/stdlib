@@ -117,10 +117,10 @@ JAVASCRIPT_LINTER ?= eslint
 JAVASCRIPT_CODE_INSTRUMENTER ?= c8
 
 # Define the linter to use when linting TypeScript files:
-TYPESCRIPT_LINTER ?= tslint
+TYPESCRIPT_LINTER ?= eslint
 
 # Define the linter to use when linting TypeScript declaration files:
-TYPESCRIPT_DECLARATIONS_LINTER ?= dtslint
+TYPESCRIPT_DECLARATIONS_LINTER ?= eslint
 
 # Define the browser test runner:
 BROWSER_TEST_RUNNER ?=
@@ -143,6 +143,12 @@ SHELL_LINTER ?= shellcheck
 # Define the linter to use when linting C files:
 C_LINTER ?= cppcheck
 
+# Define the linter to use when linting Git commit messages:
+GIT_COMMIT_LINTER ?= commitlint
+
+# Define the tool for providing an interactive Git prompt for entering commit messages:
+GIT_COMMIT_PROMPT ?= commitizen
+
 
 # COMMANDS #
 
@@ -164,6 +170,12 @@ MAKE_EXECUTABLE ?= chmod +x
 
 # Define the command for recursively creating directories (WARNING: portability issues on some systems!):
 MKDIR_RECURSIVE ?= mkdir -p
+
+# Define a command for creating a file:
+TOUCH ?= touch
+
+# Define a command for selecting lines which are unique to a file when compared to another file:
+UNIQUE_LINES ?= comm -23
 
 # Define the command for extracting tarfiles:
 TAR ?= tar
@@ -418,6 +430,9 @@ DEPS_OPENBLAS_CFLAGS ?=
 # Fortran compiler flags:
 DEPS_OPENBLAS_FFLAGS ?= -O3 $(fPIC)
 
+# Flag indicating whether to use clang:
+DEPS_OPENBLAS_USE_CLANG ?=
+
 # Specify stack alignment on Windows.
 #
 # [1]: https://gcc.gnu.org/onlinedocs/gcc-4.5.3/gcc/i386-and-x86_002d64-Options.html
@@ -563,7 +578,7 @@ endif
 endif
 
 # Define the Electron version:
-DEPS_ELECTRON_VERSION ?= 6.0.10
+DEPS_ELECTRON_VERSION ?= 25.3.1
 
 # Generate a version slug:
 deps_electron_version_slug := $(subst .,_,$(DEPS_ELECTRON_VERSION))
@@ -586,6 +601,9 @@ deps_shellcheck_version_slug := $(subst .,_,$(DEPS_SHELLCHECK_VERSION))
 # Define the output path when building shellcheck:
 DEPS_SHELLCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/shellcheck_$(deps_shellcheck_version_slug)
 
+# Host architecture:
+DEPS_SHELLCHECK_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_ARCH))
+
 # Host platform:
 DEPS_SHELLCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
@@ -602,4 +620,7 @@ DEPS_CPPCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cppcheck_$(deps_cppcheck_version_sl
 DEPS_CPPCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
 # API key for the stdlib scaffolding service:
-SCAFFOLD_API_KEY ?= $$SCAFFOLD_API_KEY
+ifneq ($(wildcard .stdlibrc),)
+	include .stdlibrc
+	export SCAFFOLD_API_KEY
+endif

@@ -332,7 +332,7 @@ And lastly, custom patterns can include [emoji][@stdlib/datasets/emoji]. For exa
 var Presentation = require( '@stdlib/repl/presentation' );
 ```
 
-#### Presentation( \[text,\] repl\[, options] )
+#### Presentation( \[text,] repl\[, options] )
 
 Returns a [REPL][@stdlib/repl] presentation instance for running a presentation in a provided [`repl`][@stdlib/repl].
 

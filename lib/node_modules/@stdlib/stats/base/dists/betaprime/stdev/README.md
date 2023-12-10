@@ -30,10 +30,14 @@ The [standard deviation][stdev] for a [beta prime][betaprime-distribution] rando
 
 <!-- <equation class="equation" label="eq:betaprime_stdev" align="center" raw="\sigma = \sqrt{ \tfrac{\alpha(\alpha +\beta -1)}{(\beta-2)(\beta-1)^{2}} }" alt="Standard deviation for a beta prime distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma = \sqrt{ \tfrac{\alpha(\alpha +\beta -1)}{(\beta-2)(\beta-1)^{2}} }" data-equation="eq:betaprime_stdev">
+```math
+\sigma = \sqrt{ \tfrac{\alpha(\alpha +\beta -1)}{(\beta-2)(\beta-1)^{2}} }
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma = \sqrt{ \tfrac{\alpha(\alpha +\beta -1)}{(\beta-2)(\beta-1)^{2}} }" data-equation="eq:betaprime_stdev">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/betaprime/stdev/docs/img/equation_betaprime_stdev.svg" alt="Standard deviation for a beta prime distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

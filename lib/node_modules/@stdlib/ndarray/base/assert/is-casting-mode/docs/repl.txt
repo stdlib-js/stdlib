@@ -21,6 +21,8 @@
     true
     > bool = {{alias}}( 'safe' )
     true
+    > bool = {{alias}}( 'mostly-safe' )
+    true
     > bool = {{alias}}( 'same-kind' )
     true
     > bool = {{alias}}( 'unsafe' )

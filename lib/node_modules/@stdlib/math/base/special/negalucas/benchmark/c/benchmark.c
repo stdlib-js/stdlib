@@ -87,10 +87,10 @@ double rand_double() {
 }
 
 /**
-* Computes the nth negaFibonacci number.
+* Computes the nth negaLucas number.
 *
-* @param n   negaFibonacci number to compute
-* @return negaFibonacci number
+* @param n  negaLucas number to compute
+* @return   negaLucas number
 */
 int negalucas( int n ) {
 	if ( n == 0 ) {

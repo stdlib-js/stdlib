@@ -723,7 +723,7 @@ When a `fromIndex` is negative, the starting index is resolved relative to the l
 ```javascript
 var arr = new Int32Array( [ 1, 2, 3 ] );
 
-bool = arr.includes( 1, -2 );
+var bool = arr.includes( 1, -2 );
 // returns false
 ```
 

@@ -30,10 +30,14 @@ The [expected value][expected-value] for a [beta prime][betaprime-distribution] 
 
 <!-- <equation class="equation" label="eq:betaprime_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \frac{\alpha}{\beta-1}" alt="Expected value for a beta prime distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{\alpha}{\beta-1}" data-equation="eq:betaprime_expectation">
+```math
+\mathbb{E}\left[ X \right] = \frac{\alpha}{\beta-1}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{\alpha}{\beta-1}" data-equation="eq:betaprime_expectation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/betaprime/mean/docs/img/equation_betaprime_expectation.svg" alt="Expected value for a beta prime distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

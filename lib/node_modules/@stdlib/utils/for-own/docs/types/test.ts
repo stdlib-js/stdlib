@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* tslint:disable:no-construct */
+/* eslint-disable no-new-wrappers */
 
 import forOwn = require( './index' );
 

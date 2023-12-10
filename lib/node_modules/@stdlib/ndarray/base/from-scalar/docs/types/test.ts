@@ -23,35 +23,48 @@ import scalar2ndarray = require( './index' );
 
 // The function returns an ndarray...
 {
-	scalar2ndarray( 1.0, 'float64' ); // $ExpectType float64ndarray
-	scalar2ndarray( 1.0, 'float32' ); // $ExpectType float32ndarray
-	scalar2ndarray( 1.0, 'complex128' ); // $ExpectType complex128ndarray
-	scalar2ndarray( 1.0, 'complex64' ); // $ExpectType complex64ndarray
-	scalar2ndarray( 1.0, 'int32' ); // $ExpectType int32ndarray
-	scalar2ndarray( 1.0, 'int16' ); // $ExpectType int16ndarray
-	scalar2ndarray( 1.0, 'int8' ); // $ExpectType int8ndarray
-	scalar2ndarray( 1.0, 'uint32' ); // $ExpectType uint32ndarray
-	scalar2ndarray( 1.0, 'uint16' ); // $ExpectType uint16ndarray
-	scalar2ndarray( 1.0, 'uint8' ); // $ExpectType uint8ndarray
-	scalar2ndarray( 1.0, 'uint8c' ); // $ExpectType uint8cndarray
-	scalar2ndarray( 1.0, 'generic' ); // $ExpectType ndarray
+	scalar2ndarray( 1.0, 'float64', 'row-major' ); // $ExpectType float64ndarray
+	scalar2ndarray( 1.0, 'float32', 'row-major' ); // $ExpectType float32ndarray
+	scalar2ndarray( 1.0, 'complex128', 'row-major' ); // $ExpectType complex128ndarray
+	scalar2ndarray( 1.0, 'complex64', 'row-major' ); // $ExpectType complex64ndarray
+	scalar2ndarray( 1.0, 'int32', 'row-major' ); // $ExpectType int32ndarray
+	scalar2ndarray( 1.0, 'int16', 'row-major' ); // $ExpectType int16ndarray
+	scalar2ndarray( 1.0, 'int8', 'row-major' ); // $ExpectType int8ndarray
+	scalar2ndarray( 1.0, 'uint32', 'row-major' ); // $ExpectType uint32ndarray
+	scalar2ndarray( 1.0, 'uint16', 'row-major' ); // $ExpectType uint16ndarray
+	scalar2ndarray( 1.0, 'uint8', 'row-major' ); // $ExpectType uint8ndarray
+	scalar2ndarray( 1.0, 'uint8c', 'row-major' ); // $ExpectType uint8cndarray
+	scalar2ndarray( 1.0, 'generic', 'row-major' ); // $ExpectType ndarray
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a recognized/supported data type...
 {
-	scalar2ndarray( 1.0, '10' ); // $ExpectError
-	scalar2ndarray( 1.0, 5 ); // $ExpectError
-	scalar2ndarray( 1.0, false ); // $ExpectError
-	scalar2ndarray( 1.0, true ); // $ExpectError
-	scalar2ndarray( 1.0, null ); // $ExpectError
-	scalar2ndarray( 1.0, [] ); // $ExpectError
-	scalar2ndarray( 1.0, {} ); // $ExpectError
-	scalar2ndarray( 1.0, ( x: number ): number => x ); // $ExpectError
+	scalar2ndarray( 1.0, '10', 'row-major' ); // $ExpectError
+	scalar2ndarray( 1.0, 5, 'row-major' ); // $ExpectError
+	scalar2ndarray( 1.0, false, 'row-major' ); // $ExpectError
+	scalar2ndarray( 1.0, true, 'row-major' ); // $ExpectError
+	scalar2ndarray( 1.0, null, 'row-major' ); // $ExpectError
+	scalar2ndarray( 1.0, [], 'row-major' ); // $ExpectError
+	scalar2ndarray( 1.0, {}, 'row-major' ); // $ExpectError
+	scalar2ndarray( 1.0, ( x: number ): number => x, 'row-major' ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a third argument which is not a recognized/supported order...
+{
+	scalar2ndarray( 1.0, 'float64', '10' ); // $ExpectError
+	scalar2ndarray( 1.0, 'float64', 5 ); // $ExpectError
+	scalar2ndarray( 1.0, 'float64', false ); // $ExpectError
+	scalar2ndarray( 1.0, 'float64', true ); // $ExpectError
+	scalar2ndarray( 1.0, 'float64', null ); // $ExpectError
+	scalar2ndarray( 1.0, 'float64', [] ); // $ExpectError
+	scalar2ndarray( 1.0, 'float64', {} ); // $ExpectError
+	scalar2ndarray( 1.0, 'float64', ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	scalar2ndarray(); // $ExpectError
 	scalar2ndarray( 1.0 ); // $ExpectError
-	scalar2ndarray( 1.0, 'float64', 1 ); // $ExpectError
+	scalar2ndarray( 1.0, 'float64' ); // $ExpectError
+	scalar2ndarray( 1.0, 'float64', 'row-major', 1 ); // $ExpectError
 }

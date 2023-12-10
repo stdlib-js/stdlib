@@ -35,8 +35,8 @@ function accessor(): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	asinhBy( x.length, x, 1, y, 1, accessor ); // $ExpectType Collection
-	asinhBy( x.length, x, 1, y, 1, accessor, {} ); // $ExpectType Collection
+	asinhBy( x.length, x, 1, y, 1, accessor ); // $ExpectType Collection<number>
+	asinhBy( x.length, x, 1, y, 1, accessor, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -143,8 +143,8 @@ function accessor(): number {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	asinhBy.ndarray( x.length, x, 1, 0, y, 1, 0, accessor ); // $ExpectType Collection
-	asinhBy.ndarray( x.length, x, 1, 0, y, 1, 0, accessor, {} ); // $ExpectType Collection
+	asinhBy.ndarray( x.length, x, 1, 0, y, 1, 0, accessor ); // $ExpectType Collection<number>
+	asinhBy.ndarray( x.length, x, 1, 0, y, 1, 0, accessor, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

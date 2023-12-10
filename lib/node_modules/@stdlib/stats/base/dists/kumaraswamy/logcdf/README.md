@@ -28,10 +28,14 @@ The [cumulative distribution function][cdf] for a [Kumaraswamy's double bounded]
 
 <!-- <equation class="equation" label="eq:kumaraswamy_cdf" align="center" raw="F(x;a,b) = 1-(1-x^{a})^{b}" alt="Cumulative distribution function for a Kumaraswamy's double bounded distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x;a,b) = 1-(1-x^{a})^{b}" data-equation="eq:kumaraswamy_cdf">
+```math
+F(x;a,b) = 1-(1-x^{a})^{b}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x;a,b) = 1-(1-x^{a})^{b}" data-equation="eq:kumaraswamy_cdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/kumaraswamy/logcdf/docs/img/equation_kumaraswamy_cdf.svg" alt="Cumulative distribution function for a Kumaraswamy's double bounded distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

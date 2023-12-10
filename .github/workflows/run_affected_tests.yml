@@ -40,6 +40,7 @@ on:
 
       # List paths for which changes should *not* trigger this workflow:
       - '!lib/**/_tools/**'
+      - '!lib/**/*.md'
 
   pull_request:
     types:
@@ -64,11 +65,17 @@ on:
 
       # List paths for which changes should *not* trigger this workflow:
       - '!lib/**/_tools/**'
+      - '!lib/**/*.md'
 
   workflow_dispatch:
     inputs:
       directories:
         description: 'List of changed directories for which to run affected tests (space separated):'
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
 
 # Workflow jobs:
 jobs:
@@ -86,7 +93,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -100,7 +108,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -121,6 +130,7 @@ jobs:
       - name: 'Get list of changed directories'
         if: github.event_name != 'workflow_dispatch'
         id: changed-directories
+        continue-on-error: true
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:
@@ -128,11 +138,11 @@ jobs:
             files=$(git diff --diff-filter=AM --name-only $ancestor_commit ${{ github.event.pull_request.head.sha }})
           else
             # Get changed files by comparing the current commit to the commit before the push event or with its parent:
-              if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then
-                files=$(git diff --diff-filter=AM --name-only HEAD~ ${{ github.event.after }})
-              else
-                files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
-              fi
+            if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then
+              files=$(git diff --diff-filter=AM --name-only HEAD~ ${{ github.event.after }})
+            else
+              files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
+            fi
           fi
           directories=$(for file in $files; do dirname $file; done | uniq | tr '\n' ' ' | sed 's/ $//')
           echo "directories=${directories}" >> $GITHUB_OUTPUT
@@ -154,4 +164,4 @@ jobs:
             directories="${{ steps.changed-directories.outputs.directories }}"
           fi
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_tests" "$directories"
-        timeout-minutes: 15
+        timeout-minutes: 30

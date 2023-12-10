@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/string/right-trim",
+  "name": "@stdlib/string/base/right-trim",
   "version": "0.0.0",
   "description": "Trim whitespace characters from the end of a string.",
   "license": "Apache-2.0",

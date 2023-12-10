@@ -23,7 +23,7 @@
 // FIXME: remove the next line and uncomment the subsequent line once all remark JSDoc ESLint rules are completed
 var copy = require( './../../lib/node_modules/@stdlib/utils/copy' );
 
-// var copy = require( './utils/copy.js' );
+// Var copy = require( './utils/copy.js' );
 var defaults = require( './.eslintrc.js' );
 
 
@@ -138,6 +138,13 @@ eslint.rules[ 'no-undef' ] = 'off';
 * @private
 */
 eslint.rules[ 'no-unused-vars' ] = 'off';
+
+/**
+* Allow unpublished packages to be required in example code.
+*
+* @private
+*/
+eslint.rules[ 'node/no-unpublished-require' ] = 'off';
 
 
 // EXPORTS //

@@ -30,10 +30,14 @@ The [differential entropy][entropy] (in [nats][nats]) for a [chi-squared][chisqu
 
 <!-- <equation class="equation" label="eq:chisquare_entropy" align="center" raw="h\left( X \right) = \tfrac{k}{2}+\ln(2\Gamma({\tfrac{k}{2}}))\!+(1-{\tfrac{k}{2}})\psi({\tfrac{k}{2}})" alt="Differential entropy for a chi-squared distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = \tfrac{k}{2}+\ln(2\Gamma({\tfrac{k}{2}}))\!+(1-{\tfrac{k}{2}})\psi({\tfrac{k}{2}})" data-equation="eq:chisquare_entropy">
+```math
+h\left( X \right) = \tfrac{k}{2}+\ln(2\Gamma({\tfrac{k}{2}}))\!+(1-{\tfrac{k}{2}})\psi({\tfrac{k}{2}})
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = \tfrac{k}{2}+\ln(2\Gamma({\tfrac{k}{2}}))\!+(1-{\tfrac{k}{2}})\psi({\tfrac{k}{2}})" data-equation="eq:chisquare_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/chisquare/entropy/docs/img/equation_chisquare_entropy.svg" alt="Differential entropy for a chi-squared distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

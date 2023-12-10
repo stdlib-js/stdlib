@@ -36,7 +36,7 @@ import isNumberArray = require( './index' );
 
 // Attached to main export is a `primitives` method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isNumberArray.primitives( [ new Number( 3 ) ] ); // $ExpectType boolean
 	isNumberArray.primitives( [ 3 ] ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isNumberArray = require( './index' );
 
 // Attached to main export is an `objects` method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isNumberArray.objects( [ new Number( -2 ) ] ); // $ExpectType boolean
 	isNumberArray.objects( [ -2 ] ); // $ExpectType boolean
 }

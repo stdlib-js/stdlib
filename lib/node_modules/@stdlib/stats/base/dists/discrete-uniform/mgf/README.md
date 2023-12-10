@@ -30,10 +30,14 @@ The [moment-generating function][mgf] for a [discrete uniform][discrete-uniform-
 
 <!-- <equation class="equation" label="eq:discrete_uniform_mgf" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right]= \begin{cases} \frac{\mathrm{e}^{at}-\mathrm{e}^{t(b+1)}}{(b-a+1)(1-e^t)} & \text{for } t \neq 0 \\ 1 & \text{for } t = 0 \end{cases}" alt="Moment-generating function (MGF) for a discrete uniform distribution."> -->
 
-<div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right]= \begin{cases} \frac{\mathrm{e}^{at}-\mathrm{e}^{t(b+1)}}{(b-a+1)(1-e^t)} &amp; \text{for } t \neq 0 \\ 1 &amp; \text{for } t = 0 \end{cases}" data-equation="eq:discrete_uniform_mgf">
+```math
+M_X(t) := \mathbb{E}\!\left[e^{tX}\right]= \begin{cases} \frac{\mathrm{e}^{at}-\mathrm{e}^{t(b+1)}}{(b-a+1)(1-e^t)} & \text{for } t \neq 0 \\ 1 & \text{for } t = 0 \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right]= \begin{cases} \frac{\mathrm{e}^{at}-\mathrm{e}^{t(b+1)}}{(b-a+1)(1-e^t)} &amp; \text{for } t \neq 0 \\ 1 &amp; \text{for } t = 0 \end{cases}" data-equation="eq:discrete_uniform_mgf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/discrete-uniform/mgf/docs/img/equation_discrete_uniform_mgf.svg" alt="Moment-generating function (MGF) for a discrete uniform distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

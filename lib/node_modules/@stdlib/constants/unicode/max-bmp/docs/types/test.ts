@@ -23,6 +23,6 @@ import UNICODE_MAX_BMP = require( './index' );
 
 // The variable is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	UNICODE_MAX_BMP; // $ExpectType number
 }

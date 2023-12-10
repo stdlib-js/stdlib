@@ -89,7 +89,7 @@ console.log( out.join( '\n' ) );
 ## See Also
 
 -   <span class="package-name">[`@stdlib/array/incrspace`][@stdlib/array/incrspace]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array using a provided increment.</span>
--   <span class="package-name">[`@stdlib/array/linspace`][@stdlib/array/linspace]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array.</span>
+-   <span class="package-name">[`@stdlib/array/linspace`][@stdlib/array/linspace]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced array over a specified interval.</span>
 
 </section>
 

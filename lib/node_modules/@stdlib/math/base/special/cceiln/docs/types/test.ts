@@ -16,66 +16,42 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import cceiln = require( './index' );
 
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns a double-precision complex floating-point number...
 {
-	cceiln( 5, 3, -2 ); // $ExpectType ArrayLike<number>
-	cceiln( [], 5, 3, -2 ); // $ExpectType ArrayLike<number>
+	cceiln( new Complex128( 5.0, 3.0 ), -2 ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the function is provided a first argument which is not a complex number...
 {
-	cceiln( true, 3, -2 ); // $ExpectError
-	cceiln( false, 3, -2 ); // $ExpectError
-	cceiln( null, 3, -2 ); // $ExpectError
-	cceiln( undefined, 3, -2 ); // $ExpectError
-	cceiln( '5', 3, -2 ); // $ExpectError
-	cceiln( [], 3, -2 ); // $ExpectError
-	cceiln( {}, 3, -2 ); // $ExpectError
-	cceiln( ( x: number ): number => x, 3, -2 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an imaginary component which is not a number...
-{
-	cceiln( 5, true, -2 ); // $ExpectError
-	cceiln( 5, false, -2 ); // $ExpectError
-	cceiln( 5, null, -2 ); // $ExpectError
-	cceiln( 5, undefined, -2 ); // $ExpectError
-	cceiln( 5, '5', -2 ); // $ExpectError
-	cceiln( 5, [], -2 ); // $ExpectError
-	cceiln( 5, {}, -2 ); // $ExpectError
-	cceiln( 5, ( x: number ): number => x, -2 ); // $ExpectError
+	cceiln( true, -2 ); // $ExpectError
+	cceiln( false, -2 ); // $ExpectError
+	cceiln( null, -2 ); // $ExpectError
+	cceiln( undefined, -2 ); // $ExpectError
+	cceiln( '5', -2 ); // $ExpectError
+	cceiln( [], -2 ); // $ExpectError
+	cceiln( {}, -2 ); // $ExpectError
+	cceiln( ( x: number ): number => x, -2 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an integer power which is not a number...
 {
-	cceiln( 5, 3, true ); // $ExpectError
-	cceiln( 5, 3, false ); // $ExpectError
-	cceiln( 5, 3, null ); // $ExpectError
-	cceiln( 5, 3, undefined ); // $ExpectError
-	cceiln( 5, 3, '5' ); // $ExpectError
-	cceiln( 5, 3, [] ); // $ExpectError
-	cceiln( 5, 3, {} ); // $ExpectError
-	cceiln( 5, 3, ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	cceiln( true, 5, 3, -2 ); // $ExpectError
-	cceiln( false, 5, 3, -2 ); // $ExpectError
-	cceiln( 'abc', 5, 3, -2 ); // $ExpectError
-	cceiln( {}, 5, 3, -2 ); // $ExpectError
-	cceiln( ( x: number ): number => x, 5, 3, -2 ); // $ExpectError
-	cceiln( 123, 5, 3, -2 ); // $ExpectError
+	cceiln( new Complex128( 5.0, 3.0 ), true ); // $ExpectError
+	cceiln( new Complex128( 5.0, 3.0 ), false ); // $ExpectError
+	cceiln( new Complex128( 5.0, 3.0 ), null ); // $ExpectError
+	cceiln( new Complex128( 5.0, 3.0 ), undefined ); // $ExpectError
+	cceiln( new Complex128( 5.0, 3.0 ), '5' ); // $ExpectError
+	cceiln( new Complex128( 5.0, 3.0 ), [] ); // $ExpectError
+	cceiln( new Complex128( 5.0, 3.0 ), {} ); // $ExpectError
+	cceiln( new Complex128( 5.0, 3.0 ), ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	cceiln(); // $ExpectError
-	cceiln( 2 ); // $ExpectError
-	cceiln( 5, 3 ); // $ExpectError
 }

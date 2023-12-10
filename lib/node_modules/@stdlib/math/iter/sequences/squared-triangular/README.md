@@ -30,10 +30,14 @@ The [squared triangular numbers][squared-triangular-number] are the integer sequ
 
 <!-- <equation class="equation" label="eq:squared_triangular_numbers_sequence" align="center" raw="0, 1, 9, 36, 100, 225, 441, 784, 1296, 2025, 3025, 4356, \ldots" alt="Triangular number sequence"> -->
 
-<div class="equation" align="center" data-raw-text="0, 1, 9, 36, 100, 225, 441, 784, 1296, 2025, 3025, 4356, \ldots" data-equation="eq:squared_triangular_numbers_sequence">
+```math
+0, 1, 9, 36, 100, 225, 441, 784, 1296, 2025, 3025, 4356, \ldots
+```
+
+<!-- <div class="equation" align="center" data-raw-text="0, 1, 9, 36, 100, 225, 441, 784, 1296, 2025, 3025, 4356, \ldots" data-equation="eq:squared_triangular_numbers_sequence">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ffa1a1acab2d2c9973d3ad22a5dfc25afd86767a/lib/node_modules/@stdlib/math/iter/sequences/squared-triangular/docs/img/equation_squared_triangular_numbers_sequence.svg" alt="Triangular number sequence">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,10 +47,14 @@ starting at the 0th [squared triangular number][squared-triangular-number].
 
 <!-- <equation class="equation" label="eq:triangular_numbers" align="center" raw="T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}" alt="Triangular number formulas"> -->
 
-<div class="equation" align="center" data-raw-text="T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}" data-equation="eq:triangular_numbers">
+```math
+T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}" data-equation="eq:triangular_numbers">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ffa1a1acab2d2c9973d3ad22a5dfc25afd86767a/lib/node_modules/@stdlib/math/iter/sequences/squared-triangular/docs/img/equation_triangular_numbers.svg" alt="Triangular number formulas">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

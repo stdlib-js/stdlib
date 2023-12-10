@@ -1,0 +1,55 @@
+
+{{alias}}( x, inShape, outShape )
+    Broadcasts an array to a specified shape.
+
+    The broadcasted array shares the same data as the input array. As more than
+    one element of a broadcasted array may refer to the same memory location,
+    writing to the broadcasted array may affect multiple elements. If you need
+    to write to the broadcasted array, copy the array before performing
+    operations which may mutate elements.
+
+    The function throws an error if a provided input shape is incompatible with
+    a provided output shape.
+
+    Parameters
+    ----------
+    x: Collection
+        Input array.
+
+    inShape: Collection<number>
+        Input array shape.
+
+    outShape: Collection<number>
+        Output array shape.
+
+    Returns
+    -------
+    out: Object
+        Broadcast object.
+
+    out.ref: Collection
+        Reference to original input array.
+
+    out.data: ArrayLikeObject
+        Broadcasted array.
+
+    out.shape: Array<number>
+        Broadcasted array shape.
+
+    out.strides: Array<number>
+        Broadcasted array strides.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3 ], [ 3 ], [ 2, 3 ] )
+    {...}
+    > out.shape
+    [ 2, 3 ]
+    > out.strides
+    [ 0, 1 ]
+    > out.data
+    [ [ 1, 2, 3 ] ]
+
+    See Also
+    --------
+

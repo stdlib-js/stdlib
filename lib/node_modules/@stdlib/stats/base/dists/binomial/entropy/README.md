@@ -30,10 +30,14 @@ The [entropy][entropy] (in [nats][nats]) for a [binomial][binomial-distribution]
 
 <!-- <equation class="equation" label="eq:binomial_entropy" align="center" raw="H\left( X \right) = {\frac {1}{2}}\ln{\left(2\pi\,e\,np\,(1-p) \right)}" alt="Entropy for a binomial distribution."> -->
 
-<div class="equation" align="center" data-raw-text="H\left( X \right) = {\frac {1}{2}}\ln{\left(2\pi\,e\,np\,(1-p) \right)}" data-equation="eq:binomial_entropy">
+```math
+H\left( X \right) = {\frac {1}{2}}\ln{\left(2\pi\,e\,np\,(1-p) \right)}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="H\left( X \right) = {\frac {1}{2}}\ln{\left(2\pi\,e\,np\,(1-p) \right)}" data-equation="eq:binomial_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/binomial/entropy/docs/img/equation_binomial_entropy.svg" alt="Entropy for a binomial distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

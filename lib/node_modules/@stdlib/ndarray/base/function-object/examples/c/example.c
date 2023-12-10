@@ -28,7 +28,7 @@ static uint8_t scale( const uint8_t x ) {
 	return x * 10;
 }
 
-int main() {
+int main( void ) {
 	// Manually create an ndarray function object...
 	struct ndarrayFunctionObject *obj = malloc( sizeof( struct ndarrayFunctionObject ) );
 	if ( obj == NULL ) {

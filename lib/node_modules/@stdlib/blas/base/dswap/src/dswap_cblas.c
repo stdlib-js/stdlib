@@ -22,7 +22,7 @@
 /**
 * Interchanges two double-precision floating-point vectors.
 *
-* @param N        number of elements
+* @param N        number of indexed elements
 * @param X        first input array
 * @param strideX  X stride length
 * @param Y        second input array

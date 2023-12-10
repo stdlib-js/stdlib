@@ -25,7 +25,7 @@ import grev = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	grev( x.length, x, 1 ); // $ExpectType Collection
+	grev( x.length, x, 1 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -82,7 +82,7 @@ import grev = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	grev.ndarray( x.length, x, 1, 0 ); // $ExpectType Collection
+	grev.ndarray( x.length, x, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

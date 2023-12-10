@@ -28,10 +28,14 @@ The [quantile function][quantile-function] for a [logistic][logistic-distributio
 
 <!-- <equation class="equation" label="eq:logistic_quantile_function" align="center" raw="Q(p;\mu,s)= \mu + s \ln \left( \frac{p}{1-p} \right )" alt="Quantile function for a logistic distribution."> -->
 
-<div class="equation" align="center" data-raw-text="Q(p;\mu,s)= \mu + s \ln \left( \frac{p}{1-p} \right )" data-equation="eq:logistic_quantile_function">
+```math
+Q(p;\mu,s)= \mu + s \ln \left( \frac{p}{1-p} \right )
+```
+
+<!-- <div class="equation" align="center" data-raw-text="Q(p;\mu,s)= \mu + s \ln \left( \frac{p}{1-p} \right )" data-equation="eq:logistic_quantile_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/logistic/quantile/docs/img/equation_logistic_quantile_function.svg" alt="Quantile function for a logistic distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

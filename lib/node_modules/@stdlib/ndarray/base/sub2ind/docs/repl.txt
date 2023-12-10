@@ -31,10 +31,12 @@
         Specifies how to handle subscripts which exceed array dimensions for
         each dimension. If the mode for a dimension is equal to 'throw', the
         function throws an error when a subscript exceeds array dimensions. If
-        equal to 'wrap', the function wraps around subscripts exceeding array
-        dimensions using modulo arithmetic. If equal to 'clamp', the function
-        sets subscripts exceeding array dimensions to either `0` (minimum index)
-        or the maximum index along a particular dimension.
+        equal to 'normalize', the function normalizes negative subscripts and
+        throws an error when a subscript exceeds array dimensions. If equal to
+        'wrap', the function wraps around subscripts exceeding array dimensions
+        using modulo arithmetic. If equal to 'clamp', the function sets
+        subscripts exceeding array dimensions to either `0` (minimum index) or
+        the maximum index along a particular dimension.
 
     Returns
     -------

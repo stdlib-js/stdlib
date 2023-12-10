@@ -36,11 +36,11 @@ function times10( v: number ): number {
 {
 	const iter = randu( { 'iter': 10 } );
 	const out = new Float64Array( 10 );
-	iterator2arrayviewRight( iter, out ); // $ExpectType Collection
-	iterator2arrayviewRight( iter, out, times10 ); // $ExpectType Collection
-	iterator2arrayviewRight( iter, out, times10, {} ); // $ExpectType Collection
-	iterator2arrayviewRight( iter, out, 0, 10, times10 ); // $ExpectType Collection
-	iterator2arrayviewRight( iter, out, 0, 10, times10, {} ); // $ExpectType Collection
+	iterator2arrayviewRight( iter, out ); // $ExpectType Collection<number>
+	iterator2arrayviewRight( iter, out, times10 ); // $ExpectType Collection<number>
+	iterator2arrayviewRight( iter, out, times10, {} ); // $ExpectType Collection<number>
+	iterator2arrayviewRight( iter, out, 0, 10, times10 ); // $ExpectType Collection<number>
+	iterator2arrayviewRight( iter, out, 0, 10, times10, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an iterator...

@@ -53,15 +53,16 @@ var idx = sub2ind( shape, 1, 0 );
 
 The function supports the following `options`:
 
--   `mode`: specifies how to handle subscripts which exceed array dimensions. The following modes are supported:
+-   **mode**: specifies how to handle subscripts which exceed array dimensions. The following modes are supported:
 
     -   `throw`: specifies that the function should throw an error when a subscript exceeds array dimensions.
+    -   `normalize`: specifies that the function should normalize negative subscripts and throw an error when a subscript exceeds array dimensions.
     -   `wrap`: specifies that the function should wrap around subscripts exceeding array dimensions using modulo arithmetic.
     -   `clamp`: specifies that the function should set subscripts exceeding array dimensions to either `0` (minimum index) or the maximum index along a particular dimension.
 
     If provided a `mode` array, each array element corresponds to a dimension. If provided fewer modes than dimensions, the function reuses modes using modulo arithmetic. Default: `[ 'throw' ]`.
 
--   `order`: specifies whether an array is `row-major` (C-style) or `column-major` (Fortran-style). Default: `'row-major'`.
+-   **order**: specifies whether an array is `row-major` (C-style) or `column-major` (Fortran-style). Default: `'row-major'`.
 
 By default, the function assumes a row-major array. To return a linear index for a column-major array, set the `order` option.
 

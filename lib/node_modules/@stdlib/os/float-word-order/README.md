@@ -152,7 +152,7 @@ If compiled on an unrecognized/unsupported platform, the macro is **not** define
 #include "stdlib/os/byte_order.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 #if defined(STDLIB_OS_FLOAT_WORD_ORDER)
 #if STDLIB_OS_FLOAT_WORD_ORDER == STDLIB_OS_ORDER_LITTLE_ENDIAN
     printf( "Least significant word comes first...\n" );

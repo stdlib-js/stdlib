@@ -22,6 +22,7 @@
 include $(TOOLS_MAKE_LIB_DIR)/lint/c/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/conf/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/git/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/julia/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/Makefile

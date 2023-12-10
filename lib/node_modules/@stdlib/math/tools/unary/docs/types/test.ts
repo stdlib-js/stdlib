@@ -41,7 +41,7 @@ function identity( x: number ): number {
 * @param strideY - `y` stride length
 * @returns `y`
 */
-function stridedArrayFunction( N: number, x: ArrayLike<number>, strideX: number, y: ArrayLike<number>, strideY: number ): ArrayLike<number> { // tslint:disable-line:max-line-length
+function stridedArrayFunction( N: number, x: ArrayLike<number>, strideX: number, y: ArrayLike<number>, strideY: number ): ArrayLike<number> {
 	let ix;
 	let iy;
 	if ( N <= 0 ) {
@@ -78,7 +78,7 @@ function stridedArrayFunction( N: number, x: ArrayLike<number>, strideX: number,
 * @param offsetY - starting index for `y`
 * @returns `y`
 */
-function stridedArrayFunctionWithOffsets( N: number, x: ArrayLike<number>, strideX: number, offsetX: number, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number> { // tslint:disable-line:max-line-length
+function stridedArrayFunctionWithOffsets( N: number, x: ArrayLike<number>, strideX: number, offsetX: number, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number> {
 	let ix;
 	let iy;
 	if ( N <= 0 ) {

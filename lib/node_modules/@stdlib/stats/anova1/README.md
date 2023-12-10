@@ -36,10 +36,14 @@ For an [array][mdn-array] or [typed array][mdn-typed-array] of numeric values `x
 
 <!-- <equation class="equation" label="eq:hypotheses" align="center" raw="\begin{align*} H_{0}:& \; \mu_{1} = \mu_{2} = \dots = \mu_{k} \\ H_{a}:& \; \text{at least one} \; \mu_{i} \; \text{not equal to the others} \end{align*}" alt="Hypotheses of ANOVA"> -->
 
-<div class="equation" align="center" data-raw-text="\begin{align*} H_{0}:&amp; \; \mu_{1} = \mu_{2} = \dots = \mu_{k} \\ H_{a}:&amp; \; \text{at least one} \; \mu_{i} \; \text{not equal to the others} \end{align*}" data-equation="eq:hypotheses">
+```math
+\begin{align*} H_{0}:& \; \mu_{1} = \mu_{2} = \dots = \mu_{k} \\ H_{a}:& \; \text{at least one} \; \mu_{i} \; \text{not equal to the others} \end{align*}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\begin{align*} H_{0}:&amp; \; \mu_{1} = \mu_{2} = \dots = \mu_{k} \\ H_{a}:&amp; \; \text{at least one} \; \mu_{i} \; \text{not equal to the others} \end{align*}" data-equation="eq:hypotheses">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/anova1/docs/img/equation_hypotheses.svg" alt="Hypotheses of ANOVA">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

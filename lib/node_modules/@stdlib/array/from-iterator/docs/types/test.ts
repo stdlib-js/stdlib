@@ -35,14 +35,14 @@ function times10( v: number ): number {
 // The function returns an iterator...
 {
 	const iter = randu();
-	iterator2array( iter ); // $ExpectType any[]
-	// iterator2array( iter, times10 ); // $ExpectType any[] => fails in older TypeScript versions
-	iterator2array( iter, times10, {} ); // $ExpectType any[]
+	iterator2array<number>( iter ); // $ExpectType number[]
+	// iterator2array( iter, times10 ); // $ExpectType number[] => fails in older TypeScript versions
+	iterator2array( iter, times10, {} ); // $ExpectType number[]
 
 	const out = new Float64Array( 10 );
-	iterator2array( iter, out ); // $ExpectType Collection
-	iterator2array( iter, out, times10 ); // $ExpectType Collection
-	iterator2array( iter, out, times10, {} ); // $ExpectType Collection
+	iterator2array<number, number>( iter, out ); // $ExpectType Collection<number>
+	iterator2array( iter, out, times10 ); // $ExpectType Collection<number>
+	iterator2array( iter, out, times10, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an iterator...

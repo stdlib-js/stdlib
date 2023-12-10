@@ -133,7 +133,7 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math/base/special/ln`][@stdlib/math/base/special/ln]</span><span class="delimiter">: </span><span class="description">natural logarithm.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/ln`][@stdlib/math/base/special/ln]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of a double-precision floating-point number.</span>
 -   <span class="package-name">[`@stdlib/math/iter/special/exp`][@stdlib/math/iter/special/exp]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural exponential function for each iterated value.</span>
 -   <span class="package-name">[`@stdlib/math/iter/special/log10`][@stdlib/math/iter/special/log10]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the common logarithm (logarithm with base 10) for each iterated value.</span>
 -   <span class="package-name">[`@stdlib/math/iter/special/log1p`][@stdlib/math/iter/special/log1p]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural logarithm of 1+x for each iterated value.</span>

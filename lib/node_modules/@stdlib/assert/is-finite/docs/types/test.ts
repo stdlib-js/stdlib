@@ -35,7 +35,7 @@ import isFinite = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isFinite.isPrimitive( new Number( 4 ) ); // $ExpectType boolean
 	isFinite.isPrimitive( 4 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isFinite = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isFinite.isObject( new Number( 4 ) ); // $ExpectType boolean
 	isFinite.isObject( 4 ); // $ExpectType boolean
 }

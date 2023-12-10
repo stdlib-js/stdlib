@@ -28,10 +28,14 @@ The cumulative [arithmetic mean][arithmetic-mean] of squared absolute values is 
 
 <!-- <equation class="equation" label="eq:cumulative_arithmetic_mean_squared_absolute_values" align="center" raw="\bar{x}_n = \frac{1}{n} \sum_{i=0}^n x_i^2" alt="Equation for the cumulative arithmetic mean of squared absolute values."> -->
 
-<div class="equation" align="center" data-raw-text="\bar{x}_n = \frac{1}{n} \sum_{i=0}^n x_i^2" data-equation="eq:cumulative_arithmetic_mean_squared_absolute_values">
+```math
+\bar{x}_n = \frac{1}{n} \sum_{i=0}^n x_i^2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\bar{x}_n = \frac{1}{n} \sum_{i=0}^n x_i^2" data-equation="eq:cumulative_arithmetic_mean_squared_absolute_values">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d3d95236f834a139a4cb700b0acc4f1667a9ffa5/lib/node_modules/@stdlib/stats/iter/cumeanabs2/docs/img/equation_cumulative_arithmetic_mean_squared_absolute_values.svg" alt="Equation for the cumulative arithmetic mean of squared absolute values.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -23,10 +23,10 @@ import iterator = require( './index' );
 
 // The function returns an iterator...
 {
-	iterator(); // $ExpectType RandIter
-	iterator( { 'iter': 10 } ); // $ExpectType RandIter
-	iterator( { 'normalized': true } ); // $ExpectType RandIter
-	iterator( { 'copy': false } ); // $ExpectType RandIter
+	iterator(); // $ExpectType Iterator<number>
+	iterator( { 'iter': 10 } ); // $ExpectType Iterator<number>
+	iterator( { 'normalized': true } ); // $ExpectType Iterator<number>
+	iterator( { 'copy': false } ); // $ExpectType Iterator<number>
 }
 
 // The compiler throws an error if the function is provided an options argument which is not an object...

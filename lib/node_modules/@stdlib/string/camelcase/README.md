@@ -145,7 +145,7 @@ beEpBooP
 By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
 
 ```bash
-$ echo -n 'beep\nfoo_bar' | camelcase --split '\t'
+$ echo -n 'beep\tfoo_bar' | camelcase --split '\t'
 beep
 fooBar
 ```

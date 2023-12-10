@@ -30,10 +30,14 @@ The [standard deviation][standard-deviation] for a [geometric][geometric-distrib
 
 <!-- <equation class="equation" label="eq:geometric_stdev" align="center" raw="\sigma = \frac{\sqrt{1-p}}{p}" alt="Standard deviation for a geometric distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma = \frac{\sqrt{1-p}}{p}" data-equation="eq:geometric_stdev">
+```math
+\sigma = \frac{\sqrt{1-p}}{p}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma = \frac{\sqrt{1-p}}{p}" data-equation="eq:geometric_stdev">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/geometric/stdev/docs/img/equation_geometric_stdev.svg" alt="Standard deviation for a geometric distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

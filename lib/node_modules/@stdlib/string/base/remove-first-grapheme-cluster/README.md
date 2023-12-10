@@ -1,0 +1,104 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2023 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# removeFirstGraphemeCluster
+
+> Remove the first `n` grapheme clusters (i.e., user-perceived characters) of a string.
+
+<section class="usage">
+
+## Usage
+
+<!-- eslint-disable id-length -->
+
+```javascript
+var removeFirstGraphemeCluster = require( '@stdlib/string/base/remove-first-grapheme-cluster' );
+```
+
+#### removeFirstGraphemeCluster( str, n )
+
+Removes the first `n` grapheme clusters (i.e., user-perceived characters) of a string.
+
+<!-- eslint-disable id-length -->
+
+```javascript
+var out = removeFirstGraphemeCluster( 'last man standing', 1 );
+// returns 'ast man standing'
+
+out = removeFirstGraphemeCluster( 'Hidden Treasures', 1 );
+// returns 'idden Treasures'
+
+out = removeFirstGraphemeCluster( 'foo bar', 5 );
+// returns 'ar'
+
+out = removeFirstGraphemeCluster( 'foo bar', 10 );
+// returns ''
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+<!-- eslint-disable id-length -->
+
+```javascript
+var removeFirstGraphemeCluster = require( '@stdlib/string/base/remove-first-grapheme-cluster' );
+
+var str = removeFirstGraphemeCluster( 'presidential election', 1 );
+// returns 'residential election'
+
+str = removeFirstGraphemeCluster( 'JavaScript', 1 );
+// returns 'avaScript'
+
+str = removeFirstGraphemeCluster( 'The Last of the Mohicans', 5 );
+// returns 'ast of the Mohicans'
+
+str = removeFirstGraphemeCluster( '🐶🐮🐷🐰🐸', 2 );
+// returns '🐷🐰🐸'
+
+str = removeFirstGraphemeCluster( '🐶🐮🐷🐰🐸', 10 );
+// returns ''
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

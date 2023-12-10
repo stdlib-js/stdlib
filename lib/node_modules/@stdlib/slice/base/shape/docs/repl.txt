@@ -1,0 +1,24 @@
+
+{{alias}}( slice )
+    Returns the shape of a normalized multi-slice.
+
+    Parameters
+    ----------
+    slice: MultiSlice
+        Input normalized multi-slice object.
+
+    Returns
+    -------
+    sh: Array<integer>
+        Slice shape.
+
+    Examples
+    --------
+    > var s = new {{alias:@stdlib/slice/ctor}}( 1, 10, 1 );
+    > var ms = new {{alias:@stdlib/slice/multi}}( s, s );
+    > {{alias}}( ms )
+    [ 9, 9 ]
+
+    See Also
+    --------
+

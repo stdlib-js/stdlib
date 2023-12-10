@@ -1,0 +1,71 @@
+
+{{alias}}( x, y, ...s[, options] )
+    Assigns element values from a broadcasted input ndarray to corresponding
+    elements in an output ndarray view.
+
+    The function supports three (mutually exclusive) means of providing slice
+    arguments:
+
+    1. Providing a single MultiSlice object.
+    2. Providing a single array containing slice arguments.
+    3. Providing slice arguments as separate arguments.
+
+    An individual slice argument must be either a Slice, an integer, null, or
+    undefined.
+
+    In all cases, the number of slice dimensions must match the number of output
+    array dimensions.
+
+    If providing a MultiSlice object or an array of slice arguments, no other
+    slice arguments should be provided.
+
+    Mixing function invocation styles (e.g., providing multiple MultiSlice
+    objects or providing an array of slice arguments followed by additional
+    slice arguments) is not supported.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. The input array must be broadcast compatible with the
+        output array view and must have a data type which can be safely cast to
+        the output array data type. Floating-point data types (both real and
+        complex) are allowed to downcast to a lower precision data type of the
+        same kind (e.g., element values from a 'float64' input array can be
+        assigned to corresponding elements in a 'float32' output array).
+
+    y: ndarray
+        Output array. The output array must be writable.
+
+    s: ...MultiSlice|Slice|null|undefined|integer|ArrayLike
+        Slice arguments.
+
+    options: Object (optional)
+        Options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking.
+        Default: true.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var y = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ] )
+    <ndarray>
+    > var x = {{alias:@stdlib/ndarray/from-scalar}}( 3.0 )
+    <ndarray>
+    > var s = new {{alias:@stdlib/slice/multi}}( null, 1 )
+    <MultiSlice>
+    > var out = {{alias}}( x, y, s )
+    <ndarray>
+    > var bool = ( out === y )
+    true
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ [ 0.0, 3.0 ], [ 0.0, 3.0 ] ]
+
+    See Also
+    --------
+

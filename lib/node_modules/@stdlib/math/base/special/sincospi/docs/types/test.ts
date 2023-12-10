@@ -50,7 +50,7 @@ import sincospi = require( './index' );
 {
 	const out = [ 0.0, 0.0 ];
 
-	sincospi.assign( 3.14e-319, out, 1, 0 ); // $ExpectType Collection
+	sincospi.assign( 3.14e-319, out, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not a number...

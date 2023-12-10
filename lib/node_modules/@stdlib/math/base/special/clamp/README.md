@@ -182,8 +182,8 @@ double stdlib_base_clamp( const double v, const double min, const double max );
 #include "stdlib/math/base/special/clamp.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+int main( void ) {
+    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
 
     double y;
     int i;

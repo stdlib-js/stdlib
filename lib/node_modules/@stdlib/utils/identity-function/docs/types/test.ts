@@ -23,9 +23,9 @@ import identity = require( './index' );
 
 // The function returns the supplied value...
 {
-	identity( 3.12 ); // $ExpectType any
-	identity( true ); // $ExpectType any
-	identity( [] ); // $ExpectType any
+	identity( 3.12 ); // $ExpectType 3.12
+	identity( true ); // $ExpectType true
+	identity( [] ); // $ExpectType never[]
 }
 
 // The compiler throws an error if the function is provided an incorrect number of arguments...

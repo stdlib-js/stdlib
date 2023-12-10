@@ -23,10 +23,10 @@ import shift = require( './index' );
 
 // The function returns the input collection and the removed element...
 {
-	shift( [ 2, 3 ] ); // $ExpectType [Collection, any]
-	shift( [ 'a', 'b', 'c' ] ); // $ExpectType [Collection, any]
-	shift( [ true, false ] ); // $ExpectType [Collection, any]
-	shift( [ true, true ] ); // $ExpectType [Collection, any]
+	shift( [ 2, 3 ] ); // $ExpectType [Collection<number>, number]
+	shift( [ 'a', 'b', 'c' ] ); // $ExpectType [Collection<string>, string]
+	shift( [ true, false ] ); // $ExpectType [Collection<boolean>, boolean]
+	shift( [ true, true ] ); // $ExpectType [Collection<boolean>, boolean]
 }
 
 // The compiler throws an error if the function is provided a value other than a collection...

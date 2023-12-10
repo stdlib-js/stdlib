@@ -45,7 +45,7 @@
 ! >
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
-! @param {integer} N - number of values over which to compute the norm
+! @param {integer} N - number of indexed elements
 ! @param {Array<double>} dx - array
 ! @param {integer} stride - stride length
 ! @returns {double} the L2-norm

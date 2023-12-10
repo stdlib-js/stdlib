@@ -36,6 +36,37 @@ import reverseString = require( './index' );
 	reverseString( [] ); // $ExpectError
 	reverseString( {} ); // $ExpectError
 	reverseString( ( x: number ): number => x ); // $ExpectError
+
+	reverseString( true, {} ); // $ExpectError
+	reverseString( false, {} ); // $ExpectError
+	reverseString( null, {} ); // $ExpectError
+	reverseString( undefined, {} ); // $ExpectError
+	reverseString( 5, {} ); // $ExpectError
+	reverseString( [], {} ); // $ExpectError
+	reverseString( {}, {} ); // $ExpectError
+	reverseString( ( x: number ): number => x, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a value other than an object as second argument...
+{
+	reverseString( 'abc', '1' ); // $ExpectError
+	reverseString( 'abc', 1 ); // $ExpectError
+	reverseString( 'abc', true ); // $ExpectError
+	reverseString( 'abc', false ); // $ExpectError
+	reverseString( 'abc', null ); // $ExpectError
+	reverseString( 'abc', '' ); // $ExpectError
+	reverseString( 'abc', [] ); // $ExpectError
+	reverseString( 'abc', ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an invalid `mode` option...
+{
+	reverseString( 'abc', { 'mode': true } ); // $ExpectError
+	reverseString( 'abc', { 'mode': false } ); // $ExpectError
+	reverseString( 'abc', { 'mode': null } ); // $ExpectError
+	reverseString( 'abc', { 'mode': '' } ); // $ExpectError
+	reverseString( 'abc', { 'mode': [] } ); // $ExpectError
+	reverseString( 'abc', { 'mode': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...

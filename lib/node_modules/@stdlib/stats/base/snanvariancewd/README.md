@@ -28,10 +28,14 @@ The population [variance][variance] of a finite size population of size `N` is g
 
 <!-- <equation class="equation" label="eq:population_variance" align="center" raw="\sigma^2 = \frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2" alt="Equation for the population variance."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma^2 = \frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2" data-equation="eq:population_variance">
+```math
+\sigma^2 = \frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma^2 = \frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2" data-equation="eq:population_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ac7a6d2eca8922d64ee29d5a20967d8e08c7a2c9/lib/node_modules/@stdlib/stats/base/snanvariancewd/docs/img/equation_population_variance.svg" alt="Equation for the population variance.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -39,10 +43,14 @@ where the population mean is given by
 
 <!-- <equation class="equation" label="eq:population_mean" align="center" raw="\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i" alt="Equation for the population mean."> -->
 
-<div class="equation" align="center" data-raw-text="\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i" data-equation="eq:population_mean">
+```math
+\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i" data-equation="eq:population_mean">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ac7a6d2eca8922d64ee29d5a20967d8e08c7a2c9/lib/node_modules/@stdlib/stats/base/snanvariancewd/docs/img/equation_population_mean.svg" alt="Equation for the population mean.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -50,10 +58,14 @@ Often in the analysis of data, the true population [variance][variance] is not k
 
 <!-- <equation class="equation" label="eq:unbiased_sample_variance" align="center" raw="s^2 = \frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2" alt="Equation for computing an unbiased sample variance."> -->
 
-<div class="equation" align="center" data-raw-text="s^2 = \frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2" data-equation="eq:unbiased_sample_variance">
+```math
+s^2 = \frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="s^2 = \frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2" data-equation="eq:unbiased_sample_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ac7a6d2eca8922d64ee29d5a20967d8e08c7a2c9/lib/node_modules/@stdlib/stats/base/snanvariancewd/docs/img/equation_unbiased_sample_variance.svg" alt="Equation for computing an unbiased sample variance.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -61,10 +73,14 @@ where the sample mean is given by
 
 <!-- <equation class="equation" label="eq:sample_mean" align="center" raw="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" alt="Equation for the sample mean."> -->
 
-<div class="equation" align="center" data-raw-text="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" data-equation="eq:sample_mean">
+```math
+\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" data-equation="eq:sample_mean">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ac7a6d2eca8922d64ee29d5a20967d8e08c7a2c9/lib/node_modules/@stdlib/stats/base/snanvariancewd/docs/img/equation_sample_mean.svg" alt="Equation for the sample mean.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

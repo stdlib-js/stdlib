@@ -18,7 +18,7 @@ int64_t strides[] = { {{OUTPUT_ARRAY_STRIDE}} };
 int64_t shape[] = { {{N}} };
 
 // Define a callback:
-{{CALLBACK_RETURN_TYPE}} fcn() {
+static {{CALLBACK_RETURN_TYPE}} fcn( void ) {
     {{CALLBACK_BODY}}
 }
 
@@ -34,5 +34,5 @@ The function accepts the following arguments:
 -   **fcn**: `[in] void*` a `{{CALLBACK_RETURN_TYPE}} (*f)()` function to apply provided as a `void` pointer.
 
 ```c
-void stdlib_strided_{{SIGNATURE}}( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+void stdlib_strided_{{SIGNATURE}}( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```

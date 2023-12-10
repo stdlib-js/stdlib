@@ -54,11 +54,12 @@ var idx = vind2bind( shape, strides, offset, order, 1, 'throw' );
 // returns 7
 ```
 
-The function supports the following `modes`:
+The function supports the following modes:
 
--   `throw`: specifies that the function should throw an error when a linear index exceeds array dimensions.
--   `wrap`: specifies that the function should wrap around a linear index exceeding array dimensions using modulo arithmetic.
--   `clamp`: specifies that the function should set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
+-   **throw**: specifies that the function should throw an error when a linear index exceeds array dimensions.
+-   **normalize**: specifies that the function should normalize negative linear indices and throw an error when a linear index exceeds array dimensions.
+-   **wrap**: specifies that the function should wrap around a linear index exceeding array dimensions using modulo arithmetic.
+-   **clamp**: specifies that the function should set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
 
 ```javascript
 var shape = [ 2, 2 ];

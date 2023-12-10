@@ -23,10 +23,10 @@ import ifelse = require( './index' );
 
 // The function returns either the `x` or `y` value...
 {
-	ifelse( true, 0, 1 ); // $ExpectType any
-	ifelse( true, 'a', 'b' ); // $ExpectType any
-	ifelse( false, 0, 1 ); // $ExpectType any
-	ifelse( false, 'a', 'b' ); // $ExpectType any
+	ifelse( true, 0, 1 ); // $ExpectType 0 | 1
+	ifelse( true, 'a', 'b' ); // $ExpectType "a" | "b"
+	ifelse( false, 0, 1 ); // $ExpectType 0 | 1
+	ifelse( false, 'a', 'b' ); // $ExpectType "a" | "b"
 }
 
 // The compiler throws an error if the function is not provided a boolean as its first argument...

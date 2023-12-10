@@ -30,10 +30,14 @@ The [standard deviation][standard-deviation] for a [gamma][gamma-distribution] r
 
 <!-- <equation class="equation" label="eq:gamma_stdev" align="center" raw="\sigma = \frac{\sqrt{\alpha}}{\beta}" alt="Standard deviation for a gamma distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\sigma = \frac{\sqrt{\alpha}}{\beta}" data-equation="eq:gamma_stdev">
+```math
+\sigma = \frac{\sqrt{\alpha}}{\beta}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sigma = \frac{\sqrt{\alpha}}{\beta}" data-equation="eq:gamma_stdev">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/gamma/stdev/docs/img/equation_gamma_stdev.svg" alt="Standard deviation for a gamma distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

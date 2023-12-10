@@ -16,53 +16,30 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import cround = require( './index' );
 
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns a double-precision complex floating-point number...
 {
-	cround( 5, 3 ); // $ExpectType ArrayLike<number>
-	cround( [], 5, 3 ); // $ExpectType ArrayLike<number>
+	cround( new Complex128( 1.0, 2.0 ) ); // $ExpectType Complex128
 }
 
 // The compiler throws an error if the function is provided a real component which is not a number...
 {
-	cround( true, 3 ); // $ExpectError
-	cround( false, 3 ); // $ExpectError
-	cround( null, 3 ); // $ExpectError
-	cround( undefined, 3 ); // $ExpectError
-	cround( '5', 3 ); // $ExpectError
-	cround( [], 3 ); // $ExpectError
-	cround( {}, 3 ); // $ExpectError
-	cround( ( x: number ): number => x, 3 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an imaginary component which is not a number...
-{
-	cround( 5, true ); // $ExpectError
-	cround( 5, false ); // $ExpectError
-	cround( 5, null ); // $ExpectError
-	cround( 5, undefined ); // $ExpectError
-	cround( 5, '5' ); // $ExpectError
-	cround( 5, [] ); // $ExpectError
-	cround( 5, {} ); // $ExpectError
-	cround( 5, ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	cround( true, 5, 3 ); // $ExpectError
-	cround( false, 5, 3 ); // $ExpectError
-	cround( 'abc', 5, 3 ); // $ExpectError
-	cround( {}, 5, 3 ); // $ExpectError
-	cround( ( x: number ): number => x, 5, 3 ); // $ExpectError
-	cround( 123, 5, 3 ); // $ExpectError
+	cround( true ); // $ExpectError
+	cround( false ); // $ExpectError
+	cround( null ); // $ExpectError
+	cround( undefined ); // $ExpectError
+	cround( '5' ); // $ExpectError
+	cround( [] ); // $ExpectError
+	cround( {} ); // $ExpectError
+	cround( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	cround(); // $ExpectError
-	cround( 2 ); // $ExpectError
 }

@@ -1,0 +1,46 @@
+
+{{alias}}( value )
+    Tests if an input value is a supported ndarray real-valued floating-point
+    data type.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input value is a supported ndarray real-valued
+        floating-point data type.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'binary' )
+    false
+    > bool = {{alias}}( 'float32' )
+    true
+    > bool = {{alias}}( 'float64' )
+    true
+    > bool = {{alias}}( 'int16' )
+    false
+    > bool = {{alias}}( 'int32' )
+    false
+    > bool = {{alias}}( 'int8' )
+    false
+    > bool = {{alias}}( 'uint16' )
+    false
+    > bool = {{alias}}( 'uint32' )
+    false
+    > bool = {{alias}}( 'uint8' )
+    false
+    > bool = {{alias}}( 'uint8c' )
+    false
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+

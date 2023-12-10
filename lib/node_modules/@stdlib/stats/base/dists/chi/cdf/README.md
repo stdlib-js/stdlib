@@ -28,10 +28,14 @@ The [cumulative distribution function][cdf] for a [chi][chi-distribution] random
 
 <!-- <equation class="equation" label="eq:chi_chi_cdf" align="center" raw="F(x;\,k) = P\left(k/2,x^{2}/2\right)" alt="Cumulative distribution function for a chi distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x;\,k) = P\left(k/2,x^{2}/2\right)" data-equation="eq:chi_chi_cdf">
+```math
+F(x;\,k) = P\left(k/2,x^{2}/2\right)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x;\,k) = P\left(k/2,x^{2}/2\right)" data-equation="eq:chi_chi_cdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/chi/cdf/docs/img/equation_chi_chi_cdf.svg" alt="Cumulative distribution function for a chi distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

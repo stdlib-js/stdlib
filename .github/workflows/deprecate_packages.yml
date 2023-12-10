@@ -106,7 +106,7 @@ jobs:
 
             # Commit the changes:
             git add README.md
-            git commit -m "Deprecate $repo"
+            git commit -m "deprecate: add notification that the package repository is no longer supported"
 
             # Push the changes:
             git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/stdlib-js/$repo.git" main

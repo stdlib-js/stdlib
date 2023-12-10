@@ -26,7 +26,7 @@ static double fill() {
 	return 10.0;
 }
 
-int main() {
+int main( void ) {
 	// Create underlying byte arrays:
 	uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 

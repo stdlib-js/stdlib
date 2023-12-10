@@ -28,10 +28,14 @@ The [golden ratio][phi] can be defined algebraically as
 
 <!-- <equation class="equation" label="eq:golden_ratio" align="center" raw="\phi = \frac{1 + \sqrt{5}}{2}" alt="Golden ratio"> -->
 
-<div class="equation" align="center" data-raw-text="\phi = \frac{1 + \sqrt{5}}{2}" data-equation="eq:golden_ratio">
+```math
+\phi = \frac{1 + \sqrt{5}}{2}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\phi = \frac{1 + \sqrt{5}}{2}" data-equation="eq:golden_ratio">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5d87cc7cb2c58aeb732872f89562d2c89571cc8a/lib/node_modules/@stdlib/constants/float64/phi/docs/img/equation_golden_ratio.svg" alt="Golden ratio">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

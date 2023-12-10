@@ -1,0 +1,40 @@
+
+{{alias}}( shape, stridesX )
+    Reorders ndarray dimensions and associated strides for loop interchange.
+
+    The function returns an object having the following properties:
+
+    - sh: ordered dimensions.
+    - sx: array strides sorted in loop order.
+
+    For all returned arrays, the first element corresponds to the innermost
+    loop, and the last element corresponds to the outermost loop.
+
+    Parameters
+    ----------
+    shape: ArrayLikeObject<integer>
+        Array dimensions.
+
+    stridesX: ArrayLikeObject<integer>
+        Array strides.
+
+    Returns
+    -------
+    out: Object
+        Loop interchange data.
+
+    out.sh: Array<integer>
+        Ordered dimensions.
+
+    out.sx: Array<integer>
+        Array strides sorted in loop order.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var o = {{alias}}( x.shape, x.strides )
+    {...}
+
+    See Also
+    --------
+

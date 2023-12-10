@@ -535,8 +535,8 @@ static double imag( const stdlib_complex128_t z ) {
     return im;
 }
 
-int main() {
-    stdlib_complex128_t x[] = {
+int main( void ) {
+    const stdlib_complex128_t x[] = {
         stdlib_complex128( 5.0, 2.0 ),
         stdlib_complex128( -2.0, 1.0 ),
         stdlib_complex128( 0.0, -0.0 ),

@@ -14,7 +14,7 @@
     Parameters
     ----------
     N: integer
-        Number of values to copy.
+        Number of indexed elements.
 
     x: Complex64Array
         Input array.
@@ -80,7 +80,7 @@
     Parameters
     ----------
     N: integer
-        Number of values to copy.
+        Number of indexed elements.
 
     x: Complex64Array
         Input array.

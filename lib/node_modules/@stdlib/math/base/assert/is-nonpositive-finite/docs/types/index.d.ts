@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Tests if a double-precision floating-point numeric value is a nonpositive finite number.
@@ -50,4 +50,3 @@ declare function isNonPositiveFinite( x: number ): boolean;
 // EXPORTS //
 
 export = isNonPositiveFinite;
-

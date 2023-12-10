@@ -20,7 +20,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	// Create a strided array:
 	float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 

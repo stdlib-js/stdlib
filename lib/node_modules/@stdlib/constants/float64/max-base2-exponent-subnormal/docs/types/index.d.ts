@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * The maximum biased base 2 exponent for a subnormal double-precision floating-point number.

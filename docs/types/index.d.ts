@@ -16,10 +16,9 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
-/* tslint:disable:max-line-length */
-/* tslint:disable:max-file-line-count */
+/* eslint-disable max-lines */
 
 import array = require( '@stdlib/array' );
 import assert = require( '@stdlib/assert' );
@@ -47,6 +46,7 @@ import proxy = require( '@stdlib/proxy' );
 import random = require( '@stdlib/random' );
 import regexp = require( '@stdlib/regexp' );
 import simulate = require( '@stdlib/simulate' );
+import slice = require( '@stdlib/slice' );
 import stats = require( '@stdlib/stats' );
 import streams = require( '@stdlib/streams' );
 import strided = require( '@stdlib/strided' );
@@ -192,6 +192,11 @@ interface Namespace {
 	* Standard library simulation utilities.
 	*/
 	simulate: typeof simulate;
+
+	/**
+	* Standard library slice utilities.
+	*/
+	slice: typeof slice;
 
 	/**
 	* Standard library statistical functions.

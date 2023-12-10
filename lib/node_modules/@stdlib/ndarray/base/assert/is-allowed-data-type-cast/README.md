@@ -42,7 +42,7 @@ var isAllowedCast = require( '@stdlib/ndarray/base/assert/is-allowed-data-type-c
 
 #### isAllowedCast( from, to, casting )
 
-Returns a `boolean` indicating whether an ndarray [data type][@stdlib/ndarray/dtypes] can be cast to another ndarray [data type][@stdlib/ndarray/dtypes] according to a specified [`casting`][@stdlib/ndarray/casting-modes] mode.
+Returns a boolean indicating whether an ndarray [data type][@stdlib/ndarray/dtypes] can be cast to another ndarray [data type][@stdlib/ndarray/dtypes] according to a specified [`casting`][@stdlib/ndarray/casting-modes] mode.
 
 ```javascript
 var bool = isAllowedCast( 'float32', 'float64', 'safe' );
@@ -57,6 +57,7 @@ The following [`casting`][@stdlib/ndarray/casting-modes] modes are supported:
 -   `none`: only allow casting between identical types.
 -   `equiv`: allow casting between identical and byte swapped types.
 -   `safe`: only allow "safe" casts.
+-   `mostly-safe`: allow "safe" casts and, for floating-point data types, downcasts.
 -   `same-kind`: allow "safe" casts and casts within the same kind (e.g., between signed integers or between floats).
 -   `unsafe`: allow casting between all types (including between integers and floats).
 

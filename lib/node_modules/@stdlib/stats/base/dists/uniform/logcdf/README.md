@@ -28,10 +28,14 @@ The [cumulative distribution function][cdf] for a [continuous uniform][uniform-d
 
 <!-- <equation class="equation" label="eq:uniform_cdf" align="center" raw="F(x)= \begin{cases} 0 & \text{for }x < a \\ \frac{x-a}{b-a} & \text{for }a \le x < b \\ 1 & \text{for }x \ge b \end{cases}" alt="Cumulative distribution function for a uniform distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x)= \begin{cases} 0 &amp; \text{for }x &lt; a \\ \frac{x-a}{b-a} &amp; \text{for }a \le x &lt; b \\ 1 &amp; \text{for }x \ge b \end{cases}" data-equation="eq:uniform_cdf">
+```math
+F(x)= \begin{cases} 0 & \text{for }x < a \\ \frac{x-a}{b-a} & \text{for }a \le x < b \\ 1 & \text{for }x \ge b \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x)= \begin{cases} 0 &amp; \text{for }x &lt; a \\ \frac{x-a}{b-a} &amp; \text{for }a \le x &lt; b \\ 1 &amp; \text{for }x \ge b \end{cases}" data-equation="eq:uniform_cdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/uniform/logcdf/docs/img/equation_uniform_cdf.svg" alt="Cumulative distribution function for a uniform distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

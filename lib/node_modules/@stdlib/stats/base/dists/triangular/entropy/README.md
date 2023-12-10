@@ -30,10 +30,14 @@ The [differential entropy][entropy] (in [nats][nats]) for a [triangular][triangu
 
 <!-- <equation class="equation" label="eq:triangular_entropy" align="center" raw="h\left( X \right) = \frac{1}{2} + \ln \left({\frac{b-a}{2}}\right)" alt="Differential entropy for a triangular distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = \frac{1}{2} + \ln \left({\frac{b-a}{2}}\right)" data-equation="eq:triangular_entropy">
+```math
+h\left( X \right) = \frac{1}{2} + \ln \left({\frac{b-a}{2}}\right)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = \frac{1}{2} + \ln \left({\frac{b-a}{2}}\right)" data-equation="eq:triangular_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@556e0ebc42f54244079cecc91c0883bb6c442244/lib/node_modules/@stdlib/stats/base/dists/triangular/entropy/docs/img/equation_triangular_entropy.svg" alt="Differential entropy for a triangular distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

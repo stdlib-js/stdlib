@@ -1,33 +1,25 @@
 
-{{alias}}( [out,] re, im )
-    Computes the inverse of a complex number.
+{{alias}}( z )
+    Computes the inverse of a double-precision complex floating-point number.
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Output array.
-
-    re: number
-        Real component.
-
-    im: number
-        Imaginary component.
+    z: Complex128
+        Complex number.
 
     Returns
     -------
-    out: Array|TypedArray|Object
-        Real and imaginary components.
+    out: Complex128
+        Result.
 
     Examples
     --------
-    > var y = {{alias}}( 2.0, 4.0 )
-    [ 0.1, -0.2 ]
-
-    > var out = new {{alias:@stdlib/array/float64}}( 2 );
-    > var v = {{alias}}( out, 2.0, 4.0 )
-    <Float64Array>[ 0.1, -0.2 ]
-    > var bool = ( v === out )
-    true
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float64}}( 2.0, 4.0 ) )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/real}}( v )
+    0.1
+    > var im = {{alias:@stdlib/complex/imag}}( v )
+    -0.2
 
     See Also
     --------

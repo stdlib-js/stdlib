@@ -4,7 +4,7 @@
 
     The sum of absolute values corresponds to the *L1* norm.
 
-    The `N` and `stride` parameters determine which elements in `x` are used to
+    The `N` and stride parameters determine which elements in `x` are used to
     compute the sum.
 
     Indexing is relative to the first index. To introduce an offset, use typed
@@ -15,7 +15,7 @@
     Parameters
     ----------
     N: integer
-        Number of elements to sum.
+        Number of indexed elements.
 
     x: Float32Array
         Input array.
@@ -31,21 +31,18 @@
     Examples
     --------
     // Standard usage:
-    > var x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
-    > var sum = {{alias}}( x.length, x, 1 )
-    19.0
+    > var x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0 ] );
+    > var s = {{alias}}( x.length, x, 1 )
+    15.0
 
     // Sum every other value:
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > var stride = 2;
-    > sum = {{alias}}( N, x, stride )
-    10.0
+    > s = {{alias}}( 3, x, 2 )
+    9.0
 
     // Use view offset; e.g., starting at 2nd element:
     > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
     > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > sum = {{alias}}( N, x1, stride )
+    > s = {{alias}}( 3, x1, 2 )
     12.0
 
 
@@ -53,13 +50,13 @@
     Computes the sum of absolute values using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
 
     Parameters
     ----------
     N: integer
-        Number of elements to sum.
+        Number of indexed elements.
 
     x: Float32Array
         Input array.
@@ -78,13 +75,13 @@
     Examples
     --------
     // Standard usage:
-    > var x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
-    > var sum = {{alias}}.ndarray( x.length, x, 1, 0 )
-    19.0
+    > var x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0 ] );
+    > var s = {{alias}}.ndarray( x.length, x, 1, 0 )
+    15.0
 
     // Sum the last three elements:
     > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
-    > sum = {{alias}}.ndarray( 3, x, -1, x.length-1 )
+    > s = {{alias}}.ndarray( 3, x, -1, x.length-1 )
     15.0
 
     See Also

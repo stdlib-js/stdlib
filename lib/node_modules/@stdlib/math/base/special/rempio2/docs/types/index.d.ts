@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Computes `x - nπ/2 = r`.
@@ -56,7 +56,7 @@ import { Collection } from '@stdlib/types/object';
 * var y2 = y[ 1 ];
 * // returns NaN
 */
-declare function rempio2( x: number, y: Collection ): number;
+declare function rempio2( x: number, y: Collection<number> ): number;
 
 
 // EXPORTS //

@@ -19,20 +19,20 @@
 /// <reference types="@stdlib/types"/>
 
 import rempio2 = require( './index' );
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 
 // TESTS //
 
 // The function returns a number...
 {
-	const y: Collection = [ 0.0, 0.0 ];
+	const y: Collection<number> = [ 0.0, 0.0 ];
 	rempio2( 128, y ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a value other than a number as its first argument...
 {
-	const y: Collection = [ 0.0, 0.0 ];
+	const y: Collection<number> = [ 0.0, 0.0 ];
 	rempio2( true, y ); // $ExpectError
 	rempio2( false, y ); // $ExpectError
 	rempio2( '5', y ); // $ExpectError

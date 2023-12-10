@@ -28,10 +28,14 @@ The [complete elliptic integral of the second kind][elliptic-integral] is define
 
 <!-- <equation class="equation" label="eq:complete_elliptic_integral_second_kind" align="center" raw="E(m)=\int_0^{\pi/2} \sqrt{1 - m (\sin\theta)^2} d\theta" alt="Complete elliptic integral of the second kind."> -->
 
-<div class="equation" align="center" data-raw-text="E(m)=\int_0^{\pi/2} \sqrt{1 - m (\sin\theta)^2} d\theta" data-equation="eq:complete_elliptic_integral_second_kind">
+```math
+E(m)=\int_0^{\pi/2} \sqrt{1 - m (\sin\theta)^2} d\theta
+```
+
+<!-- <div class="equation" align="center" data-raw-text="E(m)=\int_0^{\pi/2} \sqrt{1 - m (\sin\theta)^2} d\theta" data-equation="eq:complete_elliptic_integral_second_kind">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@129e5a32ce2af2ed694daf2e9d4214255e60c42a/lib/node_modules/@stdlib/math/base/special/ellipe/docs/img/equation_complete_elliptic_integral_second_kind.svg" alt="Complete elliptic integral of the second kind.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

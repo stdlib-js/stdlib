@@ -1,0 +1,23 @@
+
+{{alias}}( str )
+    Converts a string to dot case.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Dot-cased string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello World!' )
+    'hello.world'
+    > out = {{alias}}( 'beep boop' )
+    'beep.boop'
+
+    See Also
+    --------

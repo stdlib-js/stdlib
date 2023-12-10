@@ -28,10 +28,14 @@ The [probability density function][pdf] for a [Fréchet][frechet-distribution] r
 
 <!-- <equation class="equation" label="eq:frechet_pdf" align="center" raw="f\left( x; \mu, \beta \right ) = {\frac{\alpha }{s}}\;\left({\frac{x-m}{s}}\right)^{{-1-\alpha }}\;e^{{-({\frac{x-m}{s}})^{-\alpha}}}" alt="Probability density function for a Fréchet distribution."> -->
 
-<div class="equation" align="center" data-raw-text="f\left( x; \mu, \beta \right ) = {\frac{\alpha }{s}}\;\left({\frac{x-m}{s}}\right)^{{-1-\alpha }}\;e^{{-({\frac{x-m}{s}})^{-\alpha}}}" data-equation="eq:frechet_pdf">
+```math
+f\left( x; \mu, \beta \right ) = {\frac{\alpha }{s}}\;\left({\frac{x-m}{s}}\right)^{{-1-\alpha }}\;e^{{-({\frac{x-m}{s}})^{-\alpha}}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f\left( x; \mu, \beta \right ) = {\frac{\alpha }{s}}\;\left({\frac{x-m}{s}}\right)^{{-1-\alpha }}\;e^{{-({\frac{x-m}{s}})^{-\alpha}}}" data-equation="eq:frechet_pdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/frechet/pdf/docs/img/equation_frechet_pdf.svg" alt="Probability density function for a Fréchet distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -21,14 +21,17 @@ name: update_contributors
 
 # Workflow triggers:
 on:
-  pull_request_target:
-    branches:
-      - develop
-    types:
-      - closed
+  schedule:
+    # Run the workflow once a day at 2:00 AM UTC:
+    - cron: '0 2 * * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
 
 # Workflow jobs:
 jobs:
@@ -39,9 +42,6 @@ jobs:
     # Define a display name:
     name: 'Update contributors'
 
-    # Only run this job if the pull request was merged (or the job was triggered manually):
-    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
-
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -50,7 +50,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -81,7 +82,8 @@ jobs:
       # Create a pull request:
       - name: 'Create pull request'
         if: steps.update-contributors.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v4
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5.0.2
         id: cpr
         with:
           title: 'Update list of contributors'
@@ -97,7 +99,7 @@ jobs:
             documentation
             automated-pr
           team-reviewers: |
-            stdlib-reviewers
+            reviewers
           branch: update-contributors
           delete-branch: true
 

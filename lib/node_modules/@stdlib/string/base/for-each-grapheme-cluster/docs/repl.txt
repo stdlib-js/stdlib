@@ -1,0 +1,38 @@
+
+{{alias}}( str, clbk[, thisArg] )
+    Invokes a function for each grapheme cluster (i.e., user-perceived
+    character) in a string.
+
+    When invoked, the provided function is provided three arguments:
+
+    - value: grapheme cluster
+    - index: starting grapheme cluster index
+    - str: input string
+
+    Parameters
+    ----------
+    str: string
+        Input string over which to iterate.
+
+    clbk: Function
+        The function to invoke for each grapheme cluster in the input string.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: string
+        Input string.
+
+    Examples
+    --------
+    > var n = 0;
+    > function fcn() { n += 1; };
+    > {{alias}}( 'hello world!', fcn );
+    > n
+    12
+
+    See Also
+    --------
+

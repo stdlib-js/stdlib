@@ -7,3 +7,4 @@ Options:
   -V,    --version             Print the package version.
          --n                   Number of characters to remove. Default: 1.
          --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
+         --mode mode           Type of character to remove. Default: 'grapheme'.

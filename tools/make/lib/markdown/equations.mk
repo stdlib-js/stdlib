@@ -87,13 +87,13 @@ REMARK_EQUATIONS_OUTPUT_FLAG ?= --output
 # make markdown-equations MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 #/
 markdown-equations: $(NODE_MODULES) assert-clean-working-directory
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_EQUATIONS_OUTPUT_FLAG) && \
 	$(GIT_ADD) -A && $(GIT_COMMIT_EQUATIONS) && \
-	NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
+	$(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
 		$(REMARK_EQUATIONS_OUTPUT_FLAG) && \
@@ -121,8 +121,7 @@ markdown-img-equations: $(NODE_MODULES)
 	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
+		"$(REMARK)" \
 			$$file \
 			$(REMARK_EQUATIONS_FLAGS) \
 			$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
@@ -147,8 +146,7 @@ markdown-img-equations-files: $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
+		"$(REMARK)" \
 			$$file \
 			$(REMARK_EQUATIONS_FLAGS) \
 			$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
@@ -172,8 +170,7 @@ markdown-svg-equations: $(NODE_MODULES)
 	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
+		"$(REMARK)" \
 			$$file \
 			$(REMARK_EQUATIONS_FLAGS) \
 			$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) || exit 1; \
@@ -196,8 +193,7 @@ markdown-svg-equations-files: $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
+		"$(REMARK)" \
 			$$file \
 			$(REMARK_EQUATIONS_FLAGS) \
 			$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) || exit 1; \
@@ -225,8 +221,7 @@ markdown-img-equations-src-urls: $(NODE_MODULES)
 	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
+		"$(REMARK)" \
 			$$file \
 			$(REMARK_EQUATIONS_FLAGS) \
 			$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
@@ -251,8 +246,7 @@ markdown-img-equations-src-urls-files: $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
+		"$(REMARK)" \
 			$$file \
 			$(REMARK_EQUATIONS_FLAGS) \
 			$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \

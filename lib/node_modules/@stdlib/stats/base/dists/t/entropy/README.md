@@ -30,10 +30,14 @@ The [differential entropy][entropy] (in [nats][nats]) for a [Student's t][t-dist
 
 <!-- <equation class="equation" label="eq:t_entropy" align="center" raw="h\left( X \right) = \frac{\nu +1}{2} \left[\psi\left({\frac{1+\nu }{2}}\right)-\psi\left({\frac{\nu }{2}}\right)\right]+\ln{\left[{\sqrt {\nu }}B\left({\frac{\nu }{2}},{\frac{1}{2}}\right)\right]}" alt="Differential entropy for a Student's t distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = \frac{\nu +1}{2} \left[\psi\left({\frac{1+\nu }{2}}\right)-\psi\left({\frac{\nu }{2}}\right)\right]+\ln{\left[{\sqrt {\nu }}B\left({\frac{\nu }{2}},{\frac{1}{2}}\right)\right]}" data-equation="eq:t_entropy">
+```math
+h\left( X \right) = \frac{\nu +1}{2} \left[\psi\left({\frac{1+\nu }{2}}\right)-\psi\left({\frac{\nu }{2}}\right)\right]+\ln{\left[{\sqrt {\nu }}B\left({\frac{\nu }{2}},{\frac{1}{2}}\right)\right]}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = \frac{\nu +1}{2} \left[\psi\left({\frac{1+\nu }{2}}\right)-\psi\left({\frac{\nu }{2}}\right)\right]+\ln{\left[{\sqrt {\nu }}B\left({\frac{\nu }{2}},{\frac{1}{2}}\right)\right]}" data-equation="eq:t_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/t/entropy/docs/img/equation_t_entropy.svg" alt="Differential entropy for a Student's t distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -162,7 +162,7 @@ double stdlib_base_rad2deg( const double x );
 #include <stdlib.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     double x;
     double d;
     int i;

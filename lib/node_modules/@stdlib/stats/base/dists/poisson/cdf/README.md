@@ -28,10 +28,14 @@ The [cumulative distribution function][cdf] for a [Poisson][poisson-distribution
 
 <!-- <equation class="equation" label="eq:poisson_cdf" align="center" raw="F(x;\lambda) = \begin{cases} 0 & \text{ for } x \le 0 \\ e^{-\lambda} \sum_{i=0}^{\lfloor x\rfloor} \frac{\lambda^i}{i!} & \text{ for } x > 0 \end{cases}" alt="Cumulative distribution function for a Poisson distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x;\lambda) = \begin{cases} 0 &amp; \text{ for } x \le 0 \\ e^{-\lambda} \sum_{i=0}^{\lfloor x\rfloor} \frac{\lambda^i}{i!} &amp; \text{ for } x &gt; 0 \end{cases}" data-equation="eq:poisson_cdf">
+```math
+F(x;\lambda) = \begin{cases} 0 & \text{ for } x \le 0 \\ e^{-\lambda} \sum_{i=0}^{\lfloor x\rfloor} \frac{\lambda^i}{i!} & \text{ for } x > 0 \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x;\lambda) = \begin{cases} 0 &amp; \text{ for } x \le 0 \\ e^{-\lambda} \sum_{i=0}^{\lfloor x\rfloor} \frac{\lambda^i}{i!} &amp; \text{ for } x &gt; 0 \end{cases}" data-equation="eq:poisson_cdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/poisson/cdf/docs/img/equation_poisson_cdf.svg" alt="Cumulative distribution function for a Poisson distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
  * Interface describing `umuldw`
@@ -59,7 +59,7 @@ interface Umuldw {
 	* var v = umuldw( 0xAAAAAAAA, 0x55555555 );
 	* // returns [ 954437176, 1908874354 ]
 	*/
-	assign( a: number, b: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+	assign<T = unknown>( a: number, b: number, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
 }
 
 /**

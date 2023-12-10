@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import csignum = require( './index' );
 
 
@@ -23,46 +24,22 @@ import csignum = require( './index' );
 
 // The function returns an array of numbers...
 {
-	csignum( 5, 3 ); // $ExpectType ArrayLike<number>
-	csignum( [], 5, 3 ); // $ExpectType ArrayLike<number>
+	csignum( new Complex128( 1.0, 2.0 ) ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the function is provided a value other than a complex number...
 {
-	csignum( true, 3 ); // $ExpectError
-	csignum( false, 3 ); // $ExpectError
-	csignum( null, 3 ); // $ExpectError
-	csignum( undefined, 3 ); // $ExpectError
-	csignum( '5', 3 ); // $ExpectError
-	csignum( [], 3 ); // $ExpectError
-	csignum( {}, 3 ); // $ExpectError
-	csignum( ( x: number ): number => x, 3 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an imaginary component which is not a number...
-{
-	csignum( 5, true ); // $ExpectError
-	csignum( 5, false ); // $ExpectError
-	csignum( 5, null ); // $ExpectError
-	csignum( 5, undefined ); // $ExpectError
-	csignum( 5, '5' ); // $ExpectError
-	csignum( 5, [] ); // $ExpectError
-	csignum( 5, {} ); // $ExpectError
-	csignum( 5, ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	csignum( true, 5, 3 ); // $ExpectError
-	csignum( false, 5, 3 ); // $ExpectError
-	csignum( 'abc', 5, 3 ); // $ExpectError
-	csignum( {}, 5, 3 ); // $ExpectError
-	csignum( ( x: number ): number => x, 5, 3 ); // $ExpectError
-	csignum( 123, 5, 3 ); // $ExpectError
+	csignum( true ); // $ExpectError
+	csignum( false ); // $ExpectError
+	csignum( null ); // $ExpectError
+	csignum( undefined ); // $ExpectError
+	csignum( '5' ); // $ExpectError
+	csignum( [] ); // $ExpectError
+	csignum( {} ); // $ExpectError
+	csignum( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	csignum(); // $ExpectError
-	csignum( 2 ); // $ExpectError
 }

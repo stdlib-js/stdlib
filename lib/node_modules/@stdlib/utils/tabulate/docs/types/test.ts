@@ -23,11 +23,11 @@ import tabulate = require( './index' );
 
 // The function returns an array of arrays...
 {
-	tabulate( [ 'beep', 'boop', 'foo', 'beep' ] ); // $ExpectType Array<Array<any>>
-	tabulate( [ false, true ] ); // $ExpectType Array<Array<any>>
-	tabulate( [ 0, 1, 1, 2, 5 ] ); // $ExpectType Array<Array<any>>
-	tabulate( [ true, true ] ); // $ExpectType Array<Array<any>>
-	tabulate( [] ); // $ExpectType Array<Array<any>>
+	tabulate( [ 'beep', 'boop', 'foo', 'beep' ] ); // $ExpectType TableEntry<string>[]
+	tabulate( [ false, true ] ); // $ExpectType TableEntry<boolean>[]
+	tabulate( [ 0, 1, 1, 2, 5 ] ); // $ExpectType TableEntry<number>[]
+	tabulate( [ true, true ] ); // $ExpectType TableEntry<boolean>[]
+	tabulate( [] ); // $ExpectType TableEntry<never>[]
 }
 
 // The compiler throws an error if the function is provided a value other than a collection...

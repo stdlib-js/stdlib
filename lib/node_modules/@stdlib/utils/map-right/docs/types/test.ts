@@ -25,7 +25,7 @@ import mapRight = require( './index' );
 * @param v - argument
 * @returns result
 */
-function clbk( v: any ): any {
+function clbk( v: number ): number {
 	return v;
 }
 
@@ -36,16 +36,16 @@ function clbk( v: any ): any {
 {
 	const arr = [ 1, 2, 3, 4, 5, 6 ];
 
-	mapRight( arr, clbk ); // $ExpectType Collection
-	mapRight( arr, clbk, {} ); // $ExpectType Collection
+	mapRight( arr, clbk ); // $ExpectType number[]
+	mapRight( arr, clbk, {} ); // $ExpectType number[]
 }
 
 // The function returns an ndarray when provided an ndarray...
 {
-	const arr = array( [ 1, 2, 3, 4, 5, 6 ] );
+	const arr = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
 
-	mapRight( arr, clbk ); // $ExpectType ndarray
-	mapRight( arr, clbk, {} ); // $ExpectType ndarray
+	mapRight( arr, clbk ); // $ExpectType typedndarray<number>
+	mapRight( arr, clbk, {} ); // $ExpectType typedndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument other than a collection or ndarray...
@@ -128,17 +128,17 @@ function clbk( v: any ): any {
 	const arr = [ 1, 2, 3, 4, 5, 6 ];
 	const out = [ 0, 0, 0, 0, 0, 0 ];
 
-	mapRight.assign( arr, out, clbk ); // $ExpectType Collection
-	mapRight.assign( arr, out, clbk, {} ); // $ExpectType Collection
+	mapRight.assign( arr, out, clbk ); // $ExpectType Collection<number>
+	mapRight.assign( arr, out, clbk, {} ); // $ExpectType Collection<number>
 }
 
 // The `assign` method returns an ndarray when provided an ndarray...
 {
-	const arr = array( [ 1, 2, 3, 4, 5, 6 ] );
-	const out = array( [ 0, 0, 0, 0, 0, 0 ] );
+	const arr = array<number>( [ 1, 2, 3, 4, 5, 6 ] );
+	const out = array<number>( [ 0, 0, 0, 0, 0, 0 ] );
 
-	mapRight.assign( arr, out, clbk ); // $ExpectType ndarray
-	mapRight.assign( arr, out, clbk, {} ); // $ExpectType ndarray
+	mapRight.assign( arr, out, clbk ); // $ExpectType typedndarray<number>
+	mapRight.assign( arr, out, clbk, {} ); // $ExpectType typedndarray<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument other than a collection or ndarray...

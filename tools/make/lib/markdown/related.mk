@@ -39,8 +39,42 @@ REMARK_RELATED_FLAGS ?= \
 # Define the remark output option:
 REMARK_RELATED_OUTPUT_FLAG ?= --output
 
+# Define a directory for writing temporary files:
+REMARK_RELATED_TMP_DIR ?= $(TMP_DIR)
+
+# Define a temporary file for writing a list of files to be processed:
+REMARK_RELATED_TMP_FILE_LIST ?= $(TMP_DIR)/remark_related_tmp_file_list.txt
+
+# Define a temporary file for writing a list of files which have been processed:
+REMARK_RELATED_TMP_FILE_LIST_PROGRESS ?= $(TMP_DIR)/remark_related_tmp_file_list_progress.txt
+
 
 # RULES #
+
+#/
+# Creates a directory for writing temporary files.
+#
+# @private
+#/
+$(REMARK_RELATED_TMP_DIR):
+	$(QUIET) $(MKDIR_RECURSIVE) $(REMARK_RELATED_TMP_DIR)
+
+#/
+# Creates a file containing a list of files to be processed.
+#
+# @private
+#/
+$(REMARK_RELATED_TMP_FILE_LIST): | $(REMARK_RELATED_TMP_DIR)
+	$(QUIET) $(TOUCH) $(REMARK_RELATED_TMP_FILE_LIST)
+	$(QUIET) $(FIND_MARKDOWN_CMD) > $(REMARK_RELATED_TMP_FILE_LIST)
+
+#/
+# Creates a file for writing the list of files which have been processed.
+#
+# @private
+#/
+$(REMARK_RELATED_TMP_FILE_LIST_PROGRESS): | $(REMARK_RELATED_TMP_DIR)
+	$(QUIET) $(TOUCH) $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS)
 
 #/
 # Updates the related packages section of Markdown files.
@@ -59,16 +93,16 @@ REMARK_RELATED_OUTPUT_FLAG ?= --output
 # @example
 # make markdown-related MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 #/
-markdown-related: $(NODE_MODULES)
-	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+markdown-related: $(NODE_MODULES) clean-markdown-related markdown-related-init
+	$(QUIET) $(FIND_MARKDOWN_CMD) | tee $(REMARK_RELATED_TMP_FILE_LIST) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
+		"$(REMARK)" \
 			$$file \
 			$(REMARK_RELATED_FLAGS) \
 			$(REMARK_RELATED_PLUGIN_FLAGS) \
 			$(REMARK_RELATED_OUTPUT_FLAG) || exit 1; \
+		echo "$$file" >> $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS); \
 	done
 
 .PHONY: markdown-related
@@ -90,8 +124,7 @@ markdown-related-files: $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
+		"$(REMARK)" \
 			$$file \
 			$(REMARK_RELATED_FLAGS) \
 			$(REMARK_RELATED_PLUGIN_FLAGS) \
@@ -99,3 +132,52 @@ markdown-related-files: $(NODE_MODULES)
 	done
 
 .PHONY: markdown-related-files
+
+#/
+# Resumes processing for updating the related packages section of Markdown files.
+#
+# ## Notes
+#
+# -   The environment variables are **only** applicable when processing has not already begun. To apply the environment variables, be sure to first run `make clean-markdown-related`.
+#
+# @param {string} [MARKDOWN_FILTER] - file path pattern (e.g., `.*/math/base/special/.*`)
+# @param {string} [MARKDOWN_PATTERN] - filename pattern (e.g., `*.md`)
+#
+# @example
+# make markdown-related-resume
+#/
+markdown-related-resume: $(NODE_MODULES) $(REMARK_RELATED_TMP_FILE_LIST) $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS)
+	$(QUIET) $(UNIQUE_LINES) $(REMARK_RELATED_TMP_FILE_LIST) $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		"$(REMARK)" \
+			$$file \
+			$(REMARK_RELATED_FLAGS) \
+			$(REMARK_RELATED_PLUGIN_FLAGS) \
+			$(REMARK_RELATED_OUTPUT_FLAG) || exit 1; \
+		echo "$$file" >> $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS); \
+	done
+
+.PHONY: markdown-related-resume
+
+#/
+# Performs initialization tasks associated with processing Markdown files.
+#
+# @example
+# make markdown-related-init
+#/
+markdown-related-init: $(REMARK_RELATED_TMP_DIR) $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS)
+	$(QUIET) $(TOUCH) $(REMARK_RELATED_TMP_FILE_LIST)
+
+.PHONY: markdown-related-init
+
+#/
+# Runs clean-up tasks associated with processing Markdown files.
+#
+# @example
+# make clean-markdown-related
+#/
+clean-markdown-related:
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(REMARK_RELATED_TMP_FILE_LIST_PROGRESS)
+
+.PHONY: clean-markdown-related

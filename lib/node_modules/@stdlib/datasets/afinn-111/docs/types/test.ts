@@ -23,7 +23,7 @@ import afinn111 = require( './index' );
 
 // The function returns an array of word ratings...
 {
-	afinn111(); // $ExpectType [string, number][]
+	afinn111(); // $ExpectType WordRating[]
 }
 
 // The compiler throws an error if the function is provided arguments...

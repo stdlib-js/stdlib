@@ -48,7 +48,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -62,7 +63,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -76,7 +78,8 @@ jobs:
       # Retrieve list of changed packages:
       - name: 'Find changed packages'
         id: 'changed_packages'
-        uses: stdlib-js/changed-packages-action@v2
+        # Pin action to full length commit SHA
+        uses: stdlib-js/changed-packages-action@e489c6b4eff164c5912a0b2d17d7462f38c11712 # v2.0.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -133,7 +136,8 @@ jobs:
 
       # Send notification to Slack:
       - name: 'Send notification'
-        uses: 8398a7/action-slack@v3
+        # Pin action to full length commit SHA
+        uses: 8398a7/action-slack@fbd6aa58ba854a740e11a35d0df80cb5d12101d8 # v3.15.1
         if: success()
         with:
           status: "${{ env.NOTIFICATION_STATUS }}"

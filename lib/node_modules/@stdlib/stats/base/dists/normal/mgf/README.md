@@ -30,10 +30,14 @@ The [moment-generating function][mgf] for a [normal][normal-distribution] random
 
 <!-- <equation class="equation" label="eq:normal_mgf_function" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \exp\{ \mu t + \frac{1}{2}\sigma^2t^2 \}" alt="Moment-generating function (MGF) for a normal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \exp\{ \mu t + \frac{1}{2}\sigma^2t^2 \}" data-equation="eq:normal_mgf_function">
+```math
+M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \exp\{ \mu t + \frac{1}{2}\sigma^2t^2 \}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \exp\{ \mu t + \frac{1}{2}\sigma^2t^2 \}" data-equation="eq:normal_mgf_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/normal/mgf/docs/img/equation_normal_mgf_function.svg" alt="Moment-generating function (MGF) for a normal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

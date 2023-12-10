@@ -152,7 +152,7 @@ A `StridedArrayFcn` function should accept the following arguments:
 
 <!-- lint disable maximum-heading-length -->
 
-#### stdlib_strided_function_allocate( *name, nin, nout, *functions, nfunctions, *types, *data[] )
+#### stdlib_strided_function_allocate( \_name, nin, nout, \_functions, nfunctions, \_types, \_data\[] )
 
 Returns a pointer to a dynamically allocated strided array function object.
 
@@ -233,7 +233,7 @@ struct StridedFunctionObject * stdlib_strided_function_allocate( const char *nam
 
 The function returns a pointer to a dynamically allocated strided array function or, if unable to allocate memory, a null pointer. The **user** is responsible for freeing the allocated memory.
 
-#### stdlib_strided_function_free( *obj )
+#### stdlib_strided_function_free( \*obj )
 
 Frees a strided array function object's allocated memory.
 
@@ -287,7 +287,7 @@ The function accepts the following arguments:
 void stdlib_strided_function_free( struct StridedFunctionObject *obj )
 ```
 
-#### stdlib_strided_function_dispatch_index_of( *obj, *types )
+#### stdlib_strided_function_dispatch_index_of( \_obj, \_types )
 
 Returns the first index of a function whose signature satisfies a provided list of array types.
 

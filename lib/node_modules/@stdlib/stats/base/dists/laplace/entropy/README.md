@@ -30,10 +30,14 @@ The [differential entropy][entropy] (in [nats][nats]) for a [Laplace][laplace-di
 
 <!-- <equation class="equation" label="eq:laplace_entropy" align="center" raw="h\left( X \right) = \ln(2be)" alt="Differential entropy for a Laplace distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = \ln(2be)" data-equation="eq:laplace_entropy">
+```math
+h\left( X \right) = \ln(2be)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = \ln(2be)" data-equation="eq:laplace_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/laplace/entropy/docs/img/equation_laplace_entropy.svg" alt="Differential entropy for a Laplace distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

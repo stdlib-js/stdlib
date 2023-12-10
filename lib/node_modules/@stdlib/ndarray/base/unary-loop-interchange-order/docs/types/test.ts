@@ -53,7 +53,7 @@ import unaryLoopOrder = require( './index' );
 	unaryLoopOrder( sh, ( x: number ): number => x, sy ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a first argument which is not an array-like object of numbers...
+// The compiler throws an error if the function is provided a third argument which is not an array-like object of numbers...
 {
 	const sh = [ 2, 2 ];
 	const sx = [ 2, 1 ];

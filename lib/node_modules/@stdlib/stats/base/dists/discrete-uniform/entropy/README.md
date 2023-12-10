@@ -30,10 +30,14 @@ The [entropy][entropy] (in [nats][nats]) for a [discrete uniform][discrete-unifo
 
 <!-- <equation class="equation" label="eq:discrete_uniform_entropy" align="center" raw="h\left( X \right) = \ln(b-a+1)" alt="Entropy for a discrete uniform distribution."> -->
 
-<div class="equation" align="center" data-raw-text="h\left( X \right) = \ln(b-a+1)" data-equation="eq:discrete_uniform_entropy">
+```math
+h\left( X \right) = \ln(b-a+1)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="h\left( X \right) = \ln(b-a+1)" data-equation="eq:discrete_uniform_entropy">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/discrete-uniform/entropy/docs/img/equation_discrete_uniform_entropy.svg" alt="Entropy for a discrete uniform distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

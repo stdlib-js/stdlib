@@ -30,10 +30,14 @@ The [expected value][expected-value] for a [geometric][geometric-distribution] r
 
 <!-- <equation class="equation" label="eq:geometric_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \frac{1-p}{p}" alt="Expected value for a geometric distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{1-p}{p}" data-equation="eq:geometric_expectation">
+```math
+\mathbb{E}\left[ X \right] = \frac{1-p}{p}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{1-p}{p}" data-equation="eq:geometric_expectation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/geometric/mean/docs/img/equation_geometric_expectation.svg" alt="Expected value for a geometric distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

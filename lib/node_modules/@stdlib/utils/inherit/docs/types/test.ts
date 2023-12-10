@@ -16,8 +16,7 @@
 * limitations under the License.
 */
 
-/* tslint:disable:no-invalid-this */
-/* tslint:disable:expect */
+/* eslint-disable @typescript-eslint/no-invalid-this */
 
 import inherit = require( './index' );
 

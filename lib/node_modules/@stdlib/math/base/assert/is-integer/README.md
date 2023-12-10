@@ -162,7 +162,7 @@ bool stdlib_base_is_integer( const double x );
 #include <stdlib.h>
 #include <stdbool.h>
 
-int main() {
+int main( void ) {
     double x;
     bool v;
     int i;

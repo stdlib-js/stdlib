@@ -162,8 +162,8 @@ double stdlib_base_copysign( const double x, const double y );
 #include "stdlib/math/base/special/copysign.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+int main( void ) {
+    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
 
     double y;
     int i;

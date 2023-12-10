@@ -30,10 +30,14 @@ The [moment-generating function][mgf] for an [Erlang][erlang-distribution] rando
 
 <!-- <equation class="equation" label="eq:erlang_mgf" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] =  \left(1 \,-\, \frac{t}{\lambda}\right)^{-k}" alt="Moment-generating function (MGF) for an Erlang distribution."> -->
 
-<div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] =  \left(1 \,-\, \frac{t}{\lambda}\right)^{-k}" data-equation="eq:erlang_mgf">
+```math
+M_X(t) := \mathbb{E}\!\left[e^{tX}\right] =  \left(1 \,-\, \frac{t}{\lambda}\right)^{-k}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] =  \left(1 \,-\, \frac{t}{\lambda}\right)^{-k}" data-equation="eq:erlang_mgf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/erlang/mgf/docs/img/equation_erlang_mgf.svg" alt="Moment-generating function (MGF) for an Erlang distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

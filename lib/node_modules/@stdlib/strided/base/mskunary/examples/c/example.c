@@ -26,7 +26,7 @@ static double scale( const double x ) {
 	return x * 10.0;
 }
 
-int main() {
+int main( void ) {
 	// Create underlying byte arrays:
 	uint8_t x[] = { 1, 4, 7 };
 	uint8_t m[] = { 0, 1, 0 };

@@ -36,8 +36,8 @@ function accessor( values: Array<number> ): Array<number> {
 	const y = new Float64Array( 10 );
 	const z = new Float64Array( 10 );
 
-	subBy( x.length, x, 1, y, 1, z, 1, accessor ); // $ExpectType Collection
-	subBy( x.length, x, 1, y, 1, z, 1, accessor, {} ); // $ExpectType Collection
+	subBy( x.length, x, 1, y, 1, z, 1, accessor ); // $ExpectType Collection<number>
+	subBy( x.length, x, 1, y, 1, z, 1, accessor, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -183,8 +183,8 @@ function accessor( values: Array<number> ): Array<number> {
 	const y = new Float64Array( 10 );
 	const z = new Float64Array( 10 );
 
-	subBy.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, accessor ); // $ExpectType Collection
-	subBy.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, accessor, {} ); // $ExpectType Collection
+	subBy.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, accessor ); // $ExpectType Collection<number>
+	subBy.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, accessor, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

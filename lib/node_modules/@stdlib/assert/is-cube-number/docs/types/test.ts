@@ -35,7 +35,7 @@ import isCubeNumber = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isCubeNumber.isPrimitive( new Number( 0.2 ) ); // $ExpectType boolean
 	isCubeNumber.isPrimitive( 0.2 ); // $ExpectType boolean
 }
@@ -49,7 +49,7 @@ import isCubeNumber = require( './index' );
 
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isCubeNumber.isObject( new Number( 0.2 ) ); // $ExpectType boolean
 	isCubeNumber.isObject( 0.2 ); // $ExpectType boolean
 }

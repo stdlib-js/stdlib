@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
  * Inteface describing `sincospi`.
@@ -70,7 +70,7 @@ interface SinCosPi {
 	* var bool = ( v === out );
 	* // returns true
 	*/
-	assign( x: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+	assign<T = unknown>( x: number, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
 }
 
 /**

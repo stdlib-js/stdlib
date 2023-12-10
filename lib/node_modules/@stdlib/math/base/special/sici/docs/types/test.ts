@@ -49,7 +49,7 @@ import sici = require( './index' );
 {
 	const out = [ 0.0, 0.0 ];
 
-	sici.assign( 3.0, out, 1, 0 ); // $ExpectType Collection
+	sici.assign( 3.0, out, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not a number...

@@ -30,6 +30,11 @@ on:
       - synchronize
       - reopened
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -46,7 +51,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -60,9 +66,10 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
         with:
-          node-version: '16' # 'lts/*'
+          node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
@@ -80,6 +87,7 @@ jobs:
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
+        continue-on-error: true
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:
@@ -239,7 +247,8 @@ jobs:
       # Setup R:
       - name: 'Setup R'
         if: ( success() || failure() ) && steps.check-r-files.outputs.files != ''
-        uses: r-lib/actions/setup-r@v2
+        # Pin action to full length commit SHA
+        uses: r-lib/actions/setup-r@3e80f8fe880a36a9f35bf3e832f1bef8af687b69 # v2.6.4
         with:
           r-version: '3.5.3'
 

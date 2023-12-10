@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -53,14 +53,14 @@
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* stdlib_complex128_t fcn( uint8_t x ) {
+* static stdlib_complex128_t fcn( uint8_t x ) {
 *     // ...
 * }
 *
 * // Apply the callback:
 * stdlib_strided_mask_b_z_as_b_z( arrays, shape, strides, (void *)fcn );
 */
-void stdlib_strided_mask_b_z_as_b_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_mask_b_z_as_b_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	typedef stdlib_complex128_t func_type( const uint8_t x );
 	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_RET_NOCAST( uint8_t, stdlib_complex128_t )

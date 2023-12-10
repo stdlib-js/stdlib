@@ -149,8 +149,8 @@ float stdlib_base_truncf( const float x );
 #include "stdlib/math/base/special/truncf.h"
 #include <stdio.h>
 
-int main() {
-    float x[] = { 3.14f, -3.14f, 0.0f, 0.0f/0.0f };
+int main( void ) {
+    const float x[] = { 3.14f, -3.14f, 0.0f, 0.0f/0.0f };
 
     float y;
     int i;

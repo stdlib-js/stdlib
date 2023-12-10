@@ -93,7 +93,7 @@ static const int64_t tribonacci_value[ 64 ] = {
 *
 * @example
 * double out = stdlib_base_tribonacci( 1 );
-* // returns 1
+* // returns 0
 */
 double stdlib_base_tribonacci( const int32_t n ) {
     if ( n < 0 || n > STDLIB_CONSTANTS_FLOAT64_MAX_SAFE_NTH_TRIBONACCI ) {

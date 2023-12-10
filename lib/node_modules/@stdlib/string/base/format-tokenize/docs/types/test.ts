@@ -23,7 +23,7 @@ import formatTokenize = require( './index' );
 
 // The function returns an array of string parts and format identifier objects...
 {
-	formatTokenize( 'Hello, %s!' ); // $ExpectType string
+	formatTokenize( 'Hello, %s!' ); // $ExpectType StringOrToken[]
 }
 
 // The compiler throws an error if the function is provided an argument other than a string...

@@ -28,10 +28,14 @@ The [cumulative distribution function][cdf] for a [F][f-distribution] random var
 
 <!-- <equation class="equation" label="eq:f_cdf" align="center" raw="F(x; d_1,d_2)=I_{\frac{d_1 x}{d_1 x + d_2}}\left (\tfrac{d_1}{2}, \tfrac{d_2}{2} \right)" alt="Cumulative distribution function for an F distribution."> -->
 
-<div class="equation" align="center" data-raw-text="F(x; d_1,d_2)=I_{\frac{d_1 x}{d_1 x + d_2}}\left (\tfrac{d_1}{2}, \tfrac{d_2}{2} \right)" data-equation="eq:f_cdf">
+```math
+F(x; d_1,d_2)=I_{\frac{d_1 x}{d_1 x + d_2}}\left (\tfrac{d_1}{2}, \tfrac{d_2}{2} \right)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x; d_1,d_2)=I_{\frac{d_1 x}{d_1 x + d_2}}\left (\tfrac{d_1}{2}, \tfrac{d_2}{2} \right)" data-equation="eq:f_cdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/f/cdf/docs/img/equation_f_cdf.svg" alt="Cumulative distribution function for an F distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

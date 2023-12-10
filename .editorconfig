@@ -148,11 +148,6 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 
-# Set properties for `tslint.json` files:
-[tslint.json]
-indent_style = space
-indent_size = 2
-
 # Set properties for `tsconfig.json` files:
 [tsconfig.json]
 indent_style = space
@@ -177,5 +172,10 @@ indent_style = space
 indent_size = 2
 
 [*.gypi]
+indent_style = space
+indent_size = 2
+
+# Set properties for citation files:
+[*.{cff,cff.txt}]
 indent_style = space
 indent_size = 2

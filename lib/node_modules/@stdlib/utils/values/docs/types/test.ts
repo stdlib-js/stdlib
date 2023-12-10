@@ -23,7 +23,9 @@ import objectValues = require( './index' );
 
 // The function returns an array of values...
 {
-	objectValues( { 'beep': 'boop', 'foo': 3.14 } ); // $ExpectType Array<any>
+	objectValues( { 'beep': 'boop', 'foo': 'bar' } ); // $ExpectType string[]
+	objectValues( { 'beep': 'boop', 'foo': 3.14 } ); // $ExpectType (string | number)[]
+	objectValues( { 'beep': 'boop', 'foo': true } ); // $ExpectType (string | boolean)[]
 }
 
 // The compiler throws an error if the function is provided an incorrect number of arguments...

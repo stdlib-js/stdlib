@@ -30,10 +30,14 @@ The [moment-generating function][mgf] for a [Bernoulli][bernoulli-distribution] 
 
 <!-- <equation class="equation" label="eq:bernoulli_mgf_function" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = 1-p + p \exp( t )" alt="Moment-generating function (MGF) for a Bernoulli distribution."> -->
 
-<div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = 1-p + p \exp( t )" data-equation="eq:bernoulli_mgf_function">
+```math
+M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = 1-p + p \exp( t )
+```
+
+<!-- <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = 1-p + p \exp( t )" data-equation="eq:bernoulli_mgf_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/bernoulli/mgf/docs/img/equation_bernoulli_mgf_function.svg" alt="Moment-generating function (MGF) for a Bernoulli distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

@@ -1,34 +1,26 @@
 
-{{alias}}( [out,] re, im )
-    Evaluates the signum function of a complex number.
+{{alias}}( z )
+    Evaluates the signum function of a double-precision complex floating-point
+    number.
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Output array.
-
-    re: number
-        Real component.
-
-    im: number
-        Imaginary component.
+    z: Complex128
+        Complex number.
 
     Returns
     -------
-    out: Array|TypedArray|Object
-        Function result.
+    out: Complex128
+        Result.
 
     Examples
     --------
-    > var out = {{alias}}( -4.2, 5.5 )
-    [ -0.6069136033622302, 0.79476781392673 ]
-
-    // Provide an output array:
-    > out = new {{alias:@stdlib/array/float64}}( 2 );
-    > var v = {{alias}}( out, -4.2, 5.5 )
-    <Float64Array>[ -0.6069136033622302, 0.79476781392673 ]
-    > var bool = ( v === out )
-    true
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float64}}( -4.2, 5.5 ) )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/real}}( v )
+    -0.6069136033622302
+    > var im = {{alias:@stdlib/complex/imag}}( v )
+    0.79476781392673
 
     See Also
     --------

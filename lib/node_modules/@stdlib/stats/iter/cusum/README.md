@@ -28,10 +28,14 @@ The cumulative sum is defined as
 
 <!-- <equation class="equation" label="eq:cumulative_sum" align="center" raw="\begin{align*} s_0 &= x_0 \\ s_1 &= x_1 + s_0 \\ s_2 &= x_2 + s_1 \\ s_n &= x_n + s_{n-1} = x_n + \sum_{i=0}^{n-1} x_i \end{align*}" alt="Equation for the cumulative sum."> -->
 
-<div class="equation" align="center" data-raw-text="\begin{align*} s_0 &amp;= x_0 \\ s_1 &amp;= x_1 + s_0 \\ s_2 &amp;= x_2 + s_1 \\ s_n &amp;= x_n + s_{n-1} = x_n + \sum_{i=0}^{n-1} x_i \end{align*}" data-equation="eq:cumulative_sum">
+```math
+\begin{align*} s_0 &= x_0 \\ s_1 &= x_1 + s_0 \\ s_2 &= x_2 + s_1 \\ s_n &= x_n + s_{n-1} = x_n + \sum_{i=0}^{n-1} x_i \end{align*}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\begin{align*} s_0 &amp;= x_0 \\ s_1 &amp;= x_1 + s_0 \\ s_2 &amp;= x_2 + s_1 \\ s_n &amp;= x_n + s_{n-1} = x_n + \sum_{i=0}^{n-1} x_i \end{align*}" data-equation="eq:cumulative_sum">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@755a26b39bb6429f6d0b6dd8d13bd0bd1ec5ba35/lib/node_modules/@stdlib/stats/iter/cusum/docs/img/equation_cumulative_sum.svg" alt="Equation for the cumulative sum.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

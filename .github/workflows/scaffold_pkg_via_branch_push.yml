@@ -40,7 +40,9 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the new branch:
-      - uses: actions/checkout@v3
+      - name: 'Checkout new branch'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Refers to the branch name of the branch being pushed:
           ref: ${{ github.event.push.head.ref }}
@@ -105,7 +107,8 @@ jobs:
       # Add a comment to the pull request:
       - name: 'Add comment to pull request'
         if: steps.check-branch-name.outputs.issue-number != ''
-        uses: peter-evans/create-or-update-comment@v1
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # v3.1.0
         with:
           issue-number: ${{ steps.check-branch-name.outputs.issue-number }}
           body: |

@@ -38,7 +38,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, Y, N, strideY, argv, 3 );
-	c_scopy( N, (float *)X, strideX, (float *)Y, strideY );
+	c_scopy( N, X, strideX, Y, strideY );
 	return NULL;
 }
 

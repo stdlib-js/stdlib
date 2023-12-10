@@ -8,8 +8,7 @@
     - v1: element from first input array.
     - v2: element from second input array.
     - idx: element index.
-    - x: first input array.
-    - y: second input array.
+    - arrays: input arrays.
 
     The returned output array always has a "generic" data type. For example, if
     provided an array-like object, the function returns a generic array. If
@@ -70,8 +69,7 @@
     - v1: element from first input array.
     - v2: element from second input array.
     - idx: element index.
-    - x: first input array.
-    - y: second input array.
+    - arrays: input arrays.
 
     Input and output arrays must be either all array-like objects or all
     ndarray-like objects.

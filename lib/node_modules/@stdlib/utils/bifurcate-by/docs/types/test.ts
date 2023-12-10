@@ -18,19 +18,28 @@
 
 import bifurcateBy = require( './index' );
 
-const predicate = ( v: Array<any> ): boolean => v[ 0 ] === 'b';
+/**
+* Predicate function.
+*
+* @param v - value
+* @returns boolean result
+*/
+function predicate( v: string ): boolean {
+	return ( v[ 0 ] === 'b' );
+}
 
 
 // TESTS //
 
 // The function returns an array of arrays...
 {
-	bifurcateBy( [ 'beep', 'boop', 'foo', 'bar' ], predicate ); // $ExpectType any[][]
-	bifurcateBy( [], predicate ); // $ExpectType any[][]
+	bifurcateBy( [ 'beep', 'boop', 'foo', 'bar' ], predicate ); // $ExpectType [string[], string[]]
+	bifurcateBy( [], predicate ); // $ExpectType [string[], string[]]
+
 	const opts = {
 		'returns': 'indices' as 'indices'
 	};
-	bifurcateBy( [ 'beep', 'boop', 'foo', 'bar' ], opts, predicate ); // $ExpectType any[][]
+	bifurcateBy( [ 'beep', 'boop', 'foo', 'bar' ], opts, predicate ); // $ExpectType [number[], number[]]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
@@ -43,6 +52,7 @@ const predicate = ( v: Array<any> ): boolean => v[ 0 ] === 'b';
 // The compiler throws an error if the function is provided a last argument which is not a function...
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
+
 	bifurcateBy( arr, false ); // $ExpectError
 	bifurcateBy( arr, true ); // $ExpectError
 	bifurcateBy( arr, 32 ); // $ExpectError
@@ -61,12 +71,14 @@ const predicate = ( v: Array<any> ): boolean => v[ 0 ] === 'b';
 // The compiler throws an error if the function is provided an options argument which is not an object...
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
+
 	bifurcateBy( arr, null, predicate ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a `returns` option which is not one of 'indices', 'values', or '*'...
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
+
 	bifurcateBy( arr, { 'returns': '5' }, predicate ); // $ExpectError
 	bifurcateBy( arr, { 'returns': 123 }, predicate ); // $ExpectError
 	bifurcateBy( arr, { 'returns': [] }, predicate ); // $ExpectError
@@ -77,6 +89,7 @@ const predicate = ( v: Array<any> ): boolean => v[ 0 ] === 'b';
 // The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
+
 	bifurcateBy(); // $ExpectError
 	bifurcateBy( arr ); // $ExpectError
 	bifurcateBy( arr, {}, predicate, 16 ); // $ExpectError

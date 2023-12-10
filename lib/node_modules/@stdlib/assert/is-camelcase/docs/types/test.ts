@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import isCamelcase = require( '../../lib/main' );
+import isCamelcase = require( './index' );
 
 
 // TESTS //

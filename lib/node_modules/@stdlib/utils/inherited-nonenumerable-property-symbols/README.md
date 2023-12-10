@@ -36,6 +36,8 @@ var inheritedNonEnumerablePropertySymbols = require( '@stdlib/utils/inherited-no
 
 Returns an `array` of an object's inherited non-enumerable [symbol][@stdlib/symbol/ctor] properties.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var defineProperty = require( '@stdlib/utils/define-property' );
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
@@ -71,6 +73,8 @@ symbols = inheritedNonEnumerablePropertySymbols( f );
 ```
 
 By default, the function walks an object's entire prototype chain. To limit the inheritance level, provide a `level` argument.
+
+<!-- eslint-disable id-length -->
 
 ```javascript
 var symbols = inheritedNonEnumerablePropertySymbols( [], 1 );

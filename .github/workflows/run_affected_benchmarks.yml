@@ -35,6 +35,11 @@ on:
       # List paths for which changes should trigger this workflow:
       - 'lib/**/benchmark/**'
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -51,7 +56,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
 
           # Specify whether to remove untracked files before checking out the repository:
@@ -66,7 +72,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -86,6 +93,7 @@ jobs:
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
+        continue-on-error: true
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:
@@ -110,4 +118,4 @@ jobs:
           if [ -n "$files" ]; then
             make benchmark-javascript-files FILES="${files}"
           fi
-        timeout-minutes: 15
+        timeout-minutes: 30

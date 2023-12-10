@@ -32,7 +32,7 @@ static double rand_double() {
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }
 
-int main() {
+int main( void ) {
 	double sign;
     double frac;
     int32_t exp;

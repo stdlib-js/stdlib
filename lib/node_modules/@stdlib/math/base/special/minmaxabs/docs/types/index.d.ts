@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 interface MinMaxAbs {
 	/**
@@ -42,7 +42,7 @@ interface MinMaxAbs {
 	* var v = minmaxabs( +0.0, -0.0 );
 	* // returns [ 0.0, 0.0 ]
 	*/
-	( x: number, y: number ): Array<number>; // tslint:disable-line unified-signatures
+	( x: number, y: number ): Array<number>;
 
 	/**
 	* Returns the minimum and maximum absolute values.
@@ -62,7 +62,7 @@ interface MinMaxAbs {
 	* var bool = ( v === out );
 	* // returns true
 	*/
-	assign( x: number, y: number, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+	assign<T = unknown>( x: number, y: number, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
 }
 
 /**

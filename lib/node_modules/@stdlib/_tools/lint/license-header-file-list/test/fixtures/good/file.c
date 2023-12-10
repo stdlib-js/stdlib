@@ -20,7 +20,7 @@
 
 extern double sindg ( double x );
 
-int main() {
+int main( void ) {
 	double x;
 	double y;
 

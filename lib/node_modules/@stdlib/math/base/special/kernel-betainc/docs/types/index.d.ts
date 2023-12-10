@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Interface describing `kernalBetaInc`.
@@ -50,7 +50,7 @@ interface Routine {
 	* var out = kernelBetainc( 0.2, 1.0, 2.0, true, false );
 	* // returns [ 0.36, 1.6 ]
 	*/
-	( x: number, a: number, b: number, invert: boolean, normalized: boolean ): Collection; // tslint-disable-line max-line-length
+	( x: number, a: number, b: number, invert: boolean, normalized: boolean ): Array<number>;
 
 	/**
 	* Evaluates the incomplete beta function and its first derivative and assigns results to a provided output array.
@@ -79,7 +79,7 @@ interface Routine {
 	* var bool = ( arr === out );
 	* // returns true
 	*/
-	assign( x: number, a: number, b: number, invert: boolean, normalized: boolean, out: Collection, stride: number, offset: number ): Collection; // tslint-disable-line max-line-length
+	assign<T = unknown>( x: number, a: number, b: number, invert: boolean, normalized: boolean, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
 }
 
 /**

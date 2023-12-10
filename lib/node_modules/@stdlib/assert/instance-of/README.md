@@ -75,7 +75,13 @@ var bool = instanceOf( bar, Foo );
 
 -   While the prototype of an `object` created using object literal notion is `undefined`, the function returns `true` when provided an `object` literal and the `Object` constructor. This maintains consistent behavior with the `instanceof` operator.
 
+    <!-- FIXME: apparent issue with realms when linting doctest values -->
+
+    <!-- eslint-disable stdlib/doctest -->
+
     ```javascript
+    var Object = require( '@stdlib/object/ctor' );
+
     var bool = ( {} instanceof Object );
     // returns true
 
@@ -91,10 +97,16 @@ var bool = instanceOf( bar, Foo );
 
 ## Examples
 
+<!-- FIXME: apparent issue with realms when linting doctest values -->
+
+<!-- eslint-disable stdlib/doctest -->
+
 <!-- eslint no-undef: "error" -->
 
 ```javascript
 var Number = require( '@stdlib/number/ctor' );
+var Object = require( '@stdlib/object/ctor' );
+var Function = require( '@stdlib/function/ctor' );
 var instanceOf = require( '@stdlib/assert/instance-of' );
 
 var bool = instanceOf( [], Array );

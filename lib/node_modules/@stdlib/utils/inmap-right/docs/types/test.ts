@@ -18,16 +18,23 @@
 
 import inmapRight = require( './index' );
 
-const square = ( x: number ): number => {
+/**
+* Squares a number.
+*
+* @param x - input value
+* @returns result
+*/
+function square( x: number ): number {
 	return x * x;
-};
+}
+
 
 // TESTS //
 
 // The function returns a collection...
 {
-	inmapRight( [ 0, 1, 1 ], square ); // $ExpectType Collection
-	inmapRight( [ -1, 1, 2 ], square, {} ); // $ExpectType Collection
+	inmapRight( [ 0, 1, 1 ], square ); // $ExpectType Collection<number>
+	inmapRight( [ -1, 1, 2 ], square, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...

@@ -28,10 +28,14 @@ The [quantile function][quantile-function] for a [beta prime][betaprime-distribu
 
 <!-- <equation class="equation" label="eq:betaprime_quantile_function" align="center" raw="Q(p;\alpha,\beta)\,= \frac{G^{-1}(p)}{1-G^{-1}(p)}" alt="Quantile function for a beta prime distribution."> -->
 
-<div class="equation" align="center" data-raw-text="Q(p;\alpha,\beta)\,= \frac{G^{-1}(p)}{1-G^{-1}(p)}" data-equation="eq:betaprime_quantile_function">
+```math
+Q(p;\alpha,\beta)\,= \frac{G^{-1}(p)}{1-G^{-1}(p)}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="Q(p;\alpha,\beta)\,= \frac{G^{-1}(p)}{1-G^{-1}(p)}" data-equation="eq:betaprime_quantile_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/betaprime/quantile/docs/img/equation_betaprime_quantile_function.svg" alt="Quantile function for a beta prime distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

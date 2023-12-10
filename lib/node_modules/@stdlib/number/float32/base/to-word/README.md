@@ -183,7 +183,7 @@ The union has the following members:
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     float x[] = { 3.14f, -3.14f, 0.0f, 0.0f/0.0f };
 
     uint32_t word;

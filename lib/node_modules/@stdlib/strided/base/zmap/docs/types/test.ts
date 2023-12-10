@@ -18,7 +18,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex128 } from '@stdlib/types/object';
+import { Complex128 } from '@stdlib/types/complex';
 import Complex128Array = require( '@stdlib/array/complex128' );
 import cmplx64 = require( '@stdlib/complex/float64' );
 import zmap = require( './index' );

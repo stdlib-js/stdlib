@@ -1,0 +1,60 @@
+
+{{alias}}( slice, shape, strict )
+    Returns a normalized MultiSlice object.
+
+    In strict mode, the function returns an error object if an input slice
+    exceeds index bounds.
+
+    A returned error object is a plain object having the following properties:
+
+    - code: error code.
+
+    A returned error object may have one of the following error codes:
+
+    - ERR_SLICE_OUT_OF_BOUNDS: a slice exceeds index bounds.
+
+    Parameters
+    ----------
+    slice: MultiSlice
+        Input slice object.
+
+    shape: Array<integer>
+        Maximum slice shape.
+
+    strict: boolean
+        Boolean indicating whether to enforce strict bounds checking.
+
+    Returns
+    -------
+    s: MultiSlice|Object
+        MultiSlice instance (or an error object).
+
+    Examples
+    --------
+    > var s1 = new {{alias:@stdlib/slice/multi}}( 1, 3, null );
+    > var s2 = {{alias}}( s1, [ 5, 5, 5 ], false );
+    > var v = s2.data[ 0 ];
+    > v.start
+    1
+    > v.stop
+    2
+    > v.step
+    1
+    > v = s2.data[ 1 ];
+    > v.start
+    3
+    > v.stop
+    4
+    > v.step
+    1
+    > v = s2.data[ 2 ];
+    > v.start
+    0
+    > v.stop
+    5
+    > v.step
+    1
+
+    See Also
+    --------
+

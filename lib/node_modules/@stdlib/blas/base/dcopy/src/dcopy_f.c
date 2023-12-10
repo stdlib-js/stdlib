@@ -22,7 +22,7 @@
 /**
 * Copies values from `X` into `Y`.
 *
-* @param N        number of elements to copy
+* @param N        number of indexed elements
 * @param X        input array
 * @param strideX  X stride length
 * @param Y        output array

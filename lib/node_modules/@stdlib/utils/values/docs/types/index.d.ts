@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Returns an array of an object's own enumerable property values.
@@ -37,7 +37,7 @@
 * var vals = objectValues( obj );
 * // e.g., returns [ 'boop', 'bar' ]
 */
-declare function objectValues( obj: any ): Array<any>;
+declare function objectValues<T extends object>( obj: T ): Array<T[keyof T]>;
 
 
 // EXPORTS //

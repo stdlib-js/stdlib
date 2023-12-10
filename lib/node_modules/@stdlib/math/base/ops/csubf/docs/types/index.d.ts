@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex64 } from '@stdlib/types/object';
+import { Complex64 } from '@stdlib/types/complex';
 
 /**
 * Subtracts two single-precision complex floating-point numbers.

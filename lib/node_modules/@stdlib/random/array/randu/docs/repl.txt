@@ -11,32 +11,6 @@
     options: Object (optional)
         Options.
 
-    options.name: string (optional)
-        Name of a supported pseudorandom number generator (PRNG), which will
-        serve as the underlying source of pseudorandom numbers. The following
-        PRNGs are supported:
-
-        - mt19937: 32-bit Mersenne Twister.
-        - minstd: linear congruential PRNG based on Park and Miller.
-        - minstd-shuffle: linear congruential PRNG whose output is shuffled.
-
-        Default: `'mt19937'`.
-
-    options.seed: any (optional)
-        Pseudorandom number generator seed. Valid seed values vary according to
-        the underlying PRNG.
-
-    options.state: any (optional)
-        Pseudorandom number generator state. Valid state values vary according
-        to the underling PRNG. If provided, the `seed` option is ignored.
-
-    options.copy: boolean (optional)
-        Boolean indicating whether to copy a provided pseudorandom number
-        generator state. Setting this option to `false` allows sharing state
-        between two or more pseudorandom number generators. Setting this option
-        to `true` ensures that a returned generator has exclusive control over
-        its internal state. Default: true.
-
     options.dtype: string (optional)
         Output array data type. Default: 'float64'.
 

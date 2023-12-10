@@ -20,11 +20,13 @@
     options.mode: string (optional)
         Specifies how to handle a linear index which exceeds array dimensions.
         If equal to 'throw', the function throws an error when a linear index
-        exceeds array dimensions. If equal to 'wrap', the function wraps around
-        a linear index exceeding array dimensions using modulo arithmetic. If
-        equal to 'clamp', the function sets a linear index exceeding array
-        dimensions to either `0` (minimum linear index) or the maximum linear
-        index. Default: 'throw'.
+        exceeds array dimensions. If equal to 'normalize', the function
+        normalizes negative linear indices and throws an error when a linear
+        index exceeds array dimensions. If equal to 'wrap', the function wraps
+        around a linear index exceeding array dimensions using modulo
+        arithmetic. If equal to 'clamp', the function sets a linear index
+        exceeding array dimensions to either `0` (minimum linear index) or the
+        maximum linear index. Default: 'throw'.
 
     Returns
     -------
@@ -60,11 +62,13 @@
     options.mode: string (optional)
         Specifies how to handle a linear index which exceeds array dimensions.
         If equal to 'throw', the function throws an error when a linear index
-        exceeds array dimensions. If equal to 'wrap', the function wraps around
-        a linear index exceeding array dimensions using modulo arithmetic. If
-        equal to 'clamp', the function sets a linear index exceeding array
-        dimensions to either `0` (minimum linear index) or the maximum linear
-        index. Default: 'throw'.
+        exceeds array dimensions. If equal to 'normalize', the function
+        normalizes negative linear indices and throws an error when a linear
+        index exceeds array dimensions. If equal to 'wrap', the function wraps
+        around a linear index exceeding array dimensions using modulo
+        arithmetic. If equal to 'clamp', the function sets a linear index
+        exceeding array dimensions to either `0` (minimum linear index) or the
+        maximum linear index. Default: 'throw'.
 
     out: Array|TypedArray|Object
         Output array.
