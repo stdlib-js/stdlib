@@ -31,6 +31,11 @@ on:
       # List paths for which changes should *not* trigger this workflow:
       - '!lib/node_modules/@stdlib/_tools/**'
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
