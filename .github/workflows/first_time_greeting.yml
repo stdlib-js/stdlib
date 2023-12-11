@@ -45,7 +45,7 @@ jobs:
       # Greet first-time contributors:
       - name: 'Greet first-time contributors'
         # Pin action to full length commit SHA
-        uses: actions/first-interaction@1dbfe1ba5525b8257e1f259b09745bee346d62d8 # v1.2.0
+        uses: actions/first-interaction@34f15e814fe48ac9312ccf29db4e74fa767cbab7 # v1.3.0
         with:
           repo-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           issue-message: |
