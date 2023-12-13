@@ -126,6 +126,7 @@ jobs:
           SCAFFOLD_BRANCH="scaffold-${{ github.event.pull_request.number }}/${{ steps.extract-readme.outputs.pkg_path }}"
           SLUG='stdlib-js/stdlib'
           REPO="https://github.com/${SLUG}.git"
+          HEAD_REF="${{ github.event.pull_request.head.ref }}"
 
           # Add remote for `stdlib-js/stdlib` repository:
           git remote add source $REPO
@@ -134,7 +135,7 @@ jobs:
           git fetch source
 
           # Create `scaffold/<path>` branch:
-          git branch $SCAFFOLD_BRANCH origin/${{ github.event.pull_request.head.ref }}
+          git branch $SCAFFOLD_BRANCH "origin/$HEAD_REF"
 
           # Checkout `scaffold/<path>` branch:
           git checkout $SCAFFOLD_BRANCH
@@ -225,7 +226,7 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Refers to the branch name of the pull request:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: "${{ github.event.pull_request.head.ref }}"
 
           # Refers to the repository name of the pull request:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
@@ -256,8 +257,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
           SLUG=${{ github.repository }}
+          HEAD_REF="${{ github.event.pull_request.head.ref }}
           echo "Pushing changes to $SLUG..."
-          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" HEAD:${{ github.event.pull_request.head.ref }}
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" "HEAD:$HEAD_REF"
 
       # Add comment to the pull request:
       - name: 'Add comment to pull request'
