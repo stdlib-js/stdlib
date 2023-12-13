@@ -1,0 +1,98 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: ossf_scorecard
+
+# Workflow triggers:
+on:
+  # For Branch-Protection check. Only the default branch is supported. See
+  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection
+  branch_protection_rule:
+  # To guarantee Maintained check is occasionally updated. See
+  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#maintained
+  schedule:
+    - cron: '24 9 * * 0'
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Declare default global permissions as read only.
+permissions: read-all
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for running the scorecard analysis:
+  analysis:
+
+    # Define a display name:
+    name: Scorecard analysis
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Workflow permissions:
+    permissions:
+      # Needed to upload the results to code-scanning dashboard.
+      security-events: write
+      # Needed to publish results and get a badge (see publish_results below).
+      id-token: write
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        timeout-minutes: 10
+        with:
+          persist-credentials: false
+
+      - name: "Run analysis"
+        # Pin action to full length commit SHA
+        uses: ossf/scorecard-action@e38b1902ae4f44df626f11ba0734b14fb91f8f86 # v2.1.2
+        with:
+          results_file: results.sarif
+          results_format: sarif
+          # (Optional) "write" PAT token. Uncomment the `repo_token` line below if:
+          # - you want to enable the Branch-Protection check on a *public* repository, or
+          # - you are installing Scorecard on a *private* repository
+          # To create the PAT, follow the steps in https://github.com/ossf/scorecard-action#authentication-with-pat.
+          # repo_token: ${{ secrets.SCORECARD_TOKEN }}
+
+          # Publishes results to OpenSSF REST API for easy access by consumers
+          # Allows the repository to include the Scorecard badge.
+          # See: https://github.com/ossf/scorecard-action#publishing-results.
+          publish_results: true
+
+      # Upload the results as artifacts:
+      - name: "Upload artifact"
+        # Pin action to full length commit SHA
+        uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8 # v3.1.0
+        with:
+          name: SARIF file
+          path: results.sarif
+          retention-days: 5
+
+      # Upload the results to GitHub's code scanning dashboard:
+      - name: "Upload to code-scanning"
+        # Pin action to full length commit SHA
+        uses: github/codeql-action/upload-sarif@17573ee1cc1b9d061760f3a006fc4aac4f944fd5 # v2.2.4
+        with:
+          sarif_file: results.sarif
