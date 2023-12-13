@@ -24,6 +24,11 @@ on:
   issue_comment:
     types: [created]
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
   scaffold:
