@@ -25,6 +25,11 @@ on:
   pull_request_target:
     types: [review_requested]
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 

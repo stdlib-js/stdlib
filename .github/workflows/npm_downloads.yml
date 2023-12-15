@@ -29,6 +29,11 @@ on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -96,7 +101,7 @@ jobs:
       # Send data to events server:
       - name: 'Post data'
         # Pin action to full length commit SHA
-        uses: distributhor/workflow-webhook@48a40b380ce4593b6a6676528cd005986ae56629 # v3.0.3
+        uses: distributhor/workflow-webhook@f5a294e144d6ef44cfac4d3d5e20b613bcee0d4b # v3.0.7
         env:
           webhook_url: ${{ secrets.STDLIB_NPM_DOWNLOADS_URL }}
           webhook_secret: ${{ secrets.STDLIB_WEBHOOK_SECRET }}

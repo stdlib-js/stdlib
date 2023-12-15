@@ -24,6 +24,11 @@ on:
   pull_request_target:
     types: [assigned]
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -102,7 +107,7 @@ jobs:
       - name: 'Get list of changed files'
         id: changed-files
         # Pin action to full length commit SHA
-        uses: tj-actions/changed-files@8238a4103220c636f2dad328ead8a7c8dbe316a3 # v39.2.0
+        uses: tj-actions/changed-files@94549999469dbfa032becf298d95c87a14c34394 # v40.2.2
         with:
           separator: ' '
           base_sha: ${{ github.event.pull_request.base.sha }}
@@ -122,6 +127,8 @@ jobs:
 
       # Copy files from forked repository to new branch on `stdlib-js/stdlib` repository:
       - name: 'Copy files from forked repository to new branch on `stdlib-js/stdlib` repository'
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
           SCAFFOLD_BRANCH="scaffold-${{ github.event.pull_request.number }}/${{ steps.extract-readme.outputs.pkg_path }}"
           SLUG='stdlib-js/stdlib'
@@ -134,7 +141,7 @@ jobs:
           git fetch source
 
           # Create `scaffold/<path>` branch:
-          git branch $SCAFFOLD_BRANCH origin/${{ github.event.pull_request.head.ref }}
+          git branch $SCAFFOLD_BRANCH "origin/$HEAD_REF"
 
           # Checkout `scaffold/<path>` branch:
           git checkout $SCAFFOLD_BRANCH
@@ -169,6 +176,8 @@ jobs:
       - name: 'Add comment to pull request'
         # Pin action to full length commit SHA
         uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # v3.1.0
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
@@ -177,7 +186,7 @@ jobs:
             From your local fork, make sure you are on the pull request branch:
 
             ```bash
-            git checkout ${{ github.event.pull_request.head.ref }}
+            git checkout ${{ env.HEAD_REF }}
             ```
 
             Make sure you have an `upstream` remote pointing to the original `stdlib-js/stdlib` repository (you may check with `git remote -v`). If not, add it as follows:
@@ -223,9 +232,11 @@ jobs:
       - name: 'Checkout the pull request branch'
         # Pin action to full length commit SHA
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
         with:
           # Refers to the branch name of the pull request:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ env.HEAD_REF }}
 
           # Refers to the repository name of the pull request:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
@@ -254,10 +265,11 @@ jobs:
       - name: 'Push changes'
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
-          SLUG=${{ github.repository }}
+          SLUG="${{ github.repository }}"
           echo "Pushing changes to $SLUG..."
-          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" HEAD:${{ github.event.pull_request.head.ref }}
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" "HEAD:$HEAD_REF"
 
       # Add comment to the pull request:
       - name: 'Add comment to pull request'
