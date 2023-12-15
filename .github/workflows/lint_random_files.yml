@@ -68,6 +68,11 @@ on:
   schedule:
     - cron: '0 0 * * *'
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
