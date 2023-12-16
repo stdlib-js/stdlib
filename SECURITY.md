@@ -87,7 +87,7 @@ When submitting a report,
 
 ## Process
 
-After submitting a private security vulnerability report, your report will normally be acknowledged within **5 business days**, and you will receive a more detailed response to your report within **10 business days** indicating the next steps in handling your submission. Note, however, that the timelines may extend when stdlib maintainers are away on holiday (particularly at the end of the year), handling personal emergencies, encountering unforeseen adverse global events, or other contingencies affecting their ability to respond.
+After submitting a private security vulnerability report, your report will normally be acknowledged within **5 business days**, and you will receive a more detailed response to your report within **10 business days** indicating the next steps in handling your submission. Note, however, that the timelines may extend when stdlib maintainers are away on holiday (particularly at the end of the year), handling personal emergencies, encountering unforeseen adverse global events, or dealing with other contingent circumstances affecting their ability to respond.
 
 After the initial reply to your report, stdlib maintainers will strive to keep you informed of progress made toward implementing a fix and making a full announcement. During the course of our investigation, we may ask for additional information or guidance concerning the reported issue.
 
