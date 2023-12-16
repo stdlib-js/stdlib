@@ -37,6 +37,11 @@ concurrency:
   # Specify whether to cancel any currently running workflow in the same concurrency group:
   cancel-in-progress: true
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 

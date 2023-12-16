@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# forEach Iterator
+# iterForEach
 
 > Create an iterator which invokes a function for each iterated value before returning the iterated value.
 
@@ -73,17 +73,17 @@ The returned iterator protocol-compliant object has the following properties:
 -   **next**: function which returns an iterator protocol-compliant object containing the next iterated value (if one exists) assigned to a `value` property and a `done` property having a `boolean` value indicating whether the iterator is finished.
 -   **return**: function which closes an iterator and returns a single (optional) argument in an iterator protocol-compliant object.
 
-The invoked `function` is provided two arguments:
+The invoked function is provided two arguments:
 
--   `value`: iterated value
--   `index`: iteration index (zero-based)
+-   **value**: iterated value
+-   **index**: iteration index (zero-based)
 
 ```javascript
 var array2iterator = require( '@stdlib/array/to-iterator' );
 
-function assert( v ) {
-    if ( v !== v ) {
-        throw new Error( 'should not be NaN' );
+function assert( v, i ) {
+    if ( i < 0 ) {
+        throw new Error( 'unexpected Error' );
     }
 }
 
@@ -102,7 +102,7 @@ r = it.next().value;
 // ...
 ```
 
-To set the function execution context, provide a `thisArg`.
+To set the execution context for `fcn`, provide a `thisArg`.
 
 ```javascript
 var array2iterator = require( '@stdlib/array/to-iterator' );
