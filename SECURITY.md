@@ -167,6 +167,8 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike 4.0
 
 Copyright © The Stdlib [Authors][stdlib-authors].
 
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="links">
 
 [github-security-advisories]: https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability
@@ -194,3 +196,5 @@ Copyright © The Stdlib [Authors][stdlib-authors].
 [cc-by-sa-4.0]: https://creativecommons.org/licenses/by-sa/4.0/
 
 </section>
+
+<!-- /.links -->
