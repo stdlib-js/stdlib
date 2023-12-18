@@ -93,6 +93,6 @@ jobs:
       # Upload the results to GitHub's code scanning dashboard:
       - name: "Upload to code-scanning"
         # Pin action to full length commit SHA
-        uses: github/codeql-action/upload-sarif@17573ee1cc1b9d061760f3a006fc4aac4f944fd5 # v2.2.4
+        uses: github/codeql-action/upload-sarif@03e7845b7bfcd5e7fb63d1ae8c61b0e791134fab # v2.22.11
         with:
           sarif_file: results.sarif
