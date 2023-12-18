@@ -44,13 +44,13 @@ Help us help you! Be sure to spend time framing questions and to provide links a
 
 When seeking help, you are encouraged to adhere the following principles in order to increase the likelihood of receiving a successful response:
 
--   **Read the documentation and other guides** for the project to see if you can figure the question or issue out on your own. Try locating an example project, and explore how the project works to see if you can answer your question.
+-   **Read documentation and other guides** for the project to see if you can answer the question or figure out the issue on your own. Try locating an example project, and explore how the project works to see if you can answer your question.
 
 -   **Search for existing questions and answers** by consulting the stdlib [issue tracker][stdlib-issues], [discussions][stdlib-discussions], and [FAQ][stdlib-faq]. For debugging issues specific to your project or figuring out how to use stdlib in a manner unique to your application, search for answers and ask questions on Stack Overflow.
 
 -   **Try ["rubber ducking"][rubber-duck-debugging]** to see if verbalizing and discussing the problem helps reveal or challenge any of your current assumptions.
 
--   **Ensure that you ask about your actual problem** and not your attempted solution (i.e., engage in the [XY problem][xy-problem]).
+-   **Ensure that you ask about your actual problem** and not your attempted solution (i.e., do not fall prey to the [XY problem][xy-problem]).
 
 -   **Define what you need help with** by asking the following questions:
 
@@ -67,7 +67,7 @@ When seeking help, you are encouraged to adhere the following principles in orde
 
 -   **Do not open duplicate issues** or litter an existing issue with +1's.
 
--   **Do not e-mail, or reach out to via social media, specific project authors or contributors** asking for help debugging your project or application. Please be respectful of maintainer time and respect that maintainers are likely to have other obligations outside of stdlib.
+-   **Do not e-mail (or reach out to via social media) specific project authors or contributors** asking for help debugging your project or application. Please be respectful of maintainer time, and respect that maintainers are likely to have other obligations outside of stdlib.
 
 * * *
 
