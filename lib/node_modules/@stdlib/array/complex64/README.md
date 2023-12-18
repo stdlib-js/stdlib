@@ -514,6 +514,56 @@ len = arr.length;
 // returns 2
 ```
 
+<a name="method-at"></a>
+
+#### Complex64Array.prototype.at( i )
+
+Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer positions.
+
+```javascript
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
+
+var arr = new Complex64Array( 10 );
+
+// Set the first, second, and last elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 9.0, -9.0 ], 9 );
+
+// Get the first element:
+var z = arr.at( 0 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 1.0
+
+var im = imagf( z );
+// returns -1.0
+
+// Get the last element:
+z = arr.at( -1 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 9.0
+
+im = imagf( z );
+// returns -9.0
+```
+
+If provided an out-of-bounds index, the method returns `undefined`.
+
+```javascript
+var arr = new Complex64Array( 10 );
+
+var z = arr.at( 100 );
+// returns undefined
+
+z = arr.at( -100 );
+// returns undefined
+```
+
 <a name="method-copy-within"></a>
 
 #### Complex64Array.prototype.copyWithin( target, start\[, end] )
@@ -748,91 +798,6 @@ var bool = it.next().done;
 // returns true
 ```
 
-<a name="method-get"></a>
-
-#### Complex64Array.prototype.get( i )
-
-Returns an array element located at a nonnegative integer position (index) `i`.
-
-```javascript
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
-
-var arr = new Complex64Array( 10 );
-
-// Set the first element:
-arr.set( [ 1.0, -1.0 ], 0 );
-
-// Get the first element:
-var z = arr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns -1.0
-```
-
-If provided an out-of-bounds index, the method returns `undefined`.
-
-```javascript
-var arr = new Complex64Array( 10 );
-
-var z = arr.get( 100 );
-// returns undefined
-```
-
-<a name="method-at"></a>
-
-#### Complex64Array.prototype.at( i )
-
-Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer positions.
-
-```javascript
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
-
-var arr = new Complex64Array( 10 );
-
-// Set the first, second, and last elements:
-arr.set( [ 1.0, -1.0 ], 0 );
-arr.set( [ 2.0, -2.0 ], 1 );
-arr.set( [ 9.0, -9.0 ], 9 );
-
-// Get the first element:
-var z = arr.at( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns -1.0
-
-// Get the last element:
-z = arr.at( -1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 9.0
-
-im = imagf( z );
-// returns -9.0
-```
-
-If provided an out-of-bounds index, the method returns `undefined`.
-
-```javascript
-var arr = new Complex64Array( 10 );
-
-var z = arr.at( 100 );
-// returns undefined
-
-z = arr.at( -100 );
-// returns undefined
-```
-
 <a name="method-every"></a>
 
 #### Complex64Array.prototype.every( predicate\[, thisArg] )
@@ -889,6 +854,41 @@ var z = arr.every( predicate, context );
 
 var count = context.count;
 // returns 3
+```
+
+<a name="method-get"></a>
+
+#### Complex64Array.prototype.get( i )
+
+Returns an array element located at a nonnegative integer position (index) `i`.
+
+```javascript
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
+
+var arr = new Complex64Array( 10 );
+
+// Set the first element:
+arr.set( [ 1.0, -1.0 ], 0 );
+
+// Get the first element:
+var z = arr.get( 0 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 1.0
+
+var im = imagf( z );
+// returns -1.0
+```
+
+If provided an out-of-bounds index, the method returns `undefined`.
+
+```javascript
+var arr = new Complex64Array( 10 );
+
+var z = arr.get( 100 );
+// returns undefined
 ```
 
 <a name="method-set"></a>
