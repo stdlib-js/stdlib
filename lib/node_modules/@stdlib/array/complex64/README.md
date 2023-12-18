@@ -1023,6 +1023,67 @@ A few notes:
 -   If a target array cannot accommodate all values (i.e., the length of source array plus `i` exceeds the target array length), the method throws an error.
 -   If provided a [typed array][@stdlib/array/typed] which shares an [`ArrayBuffer`][@stdlib/array/buffer] with the target array, the method will intelligently copy the source range to the destination range.
 
+<a name="method-some"></a>
+
+#### Complex64Array.prototype.some( predicate\[, thisArg] )
+
+Returns a boolean indicating whether at least one element passes a test.
+
+```javascript
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
+
+function predicate( v ) {
+    return ( realf( v ) === imagf( v ) );
+}
+
+var arr = new Complex64Array( 3 );
+
+// Set the first three elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, -3.0 ], 2 );
+
+// Check whether at least one element passes a test:
+var z = arr.some( predicate );
+// returns true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
+
+function predicate( v, i ) {
+    this.count += 1;
+    return ( imagf( v ) === realf( v ) );
+}
+
+var arr = new Complex64Array( 3 );
+
+var context = {
+    'count': 0
+};
+
+// Set the first three elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, -3.0 ], 2 );
+
+var z = arr.some( predicate, context );
+// returns true
+
+var count = context.count;
+// returns 2
+```
+
 </section>
 
 <!-- /.usage -->

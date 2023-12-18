@@ -421,6 +421,32 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* // returns -1.0
 	*/
 	set( value: ArrayLike<number | ComplexLike> | RealOrComplexTypedArray | ComplexLike, i?: number ): void;
+
+	/**
+	* Tests whether at least one element in an array passes a test implemented by a predicate function.
+	*
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @returns boolean indicating whether at least one element passes a test
+	*
+	* @example
+	* var realf = require( '@stdlib/complex/realf' );
+	* var imagf = require( '@stdlib/complex/imagf' );
+	*
+	* function predicate( v ) {
+	*     return ( realf( v ) === imagf( v ) );
+	* }
+	*
+	* var arr = new Complex64Array( 3 );
+	*
+	* arr.set( [ 1.0 , -1.0 ], 0 );
+	* arr.set( [ 2.0 , 2.0 ], 1 );
+	* arr.set( [ 3.0 , -3.0 ], 2 );
+	*
+	* var bool = arr.some( predicate );
+	* // returns true
+	*/
+	some<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
 }
 
 /**
