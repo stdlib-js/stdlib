@@ -387,6 +387,35 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	indexOf( searchElement: ComplexLike, fromIndex?: number ): number;
 
 	/**
+	* Returns the last index at which a given element can be found.
+	*
+	* @param searchElement - element to find
+	* @param fromIndex - index at which to start searching backward (inclusive)
+	* @returns index or -1
+	*
+	* @example
+	* var Complex64 = require( '@stdlib/complex/float32' );
+	*
+	* var arr = new Complex64Array( 5 );
+	*
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 2.0, -2.0 ], 1 );
+	* arr.set( [ 3.0, -3.0 ], 2 );
+	* arr.set( [ 4.0, -4.0 ], 3 );
+	* arr.set( [ 3.0, -3.0 ], 4 );
+	*
+	* var idx = arr.lastIndexOf( new Complex64( 3.0, -3.0 ) );
+	* // returns 4
+	*
+	* idx = arr.lastIndexOf( new Complex64( 3.0, -3.0 ), 3 );
+	* // returns 2
+	*
+	* idx = arr.lastIndexOf( new Complex64( 5.0, -5.0 ), 3 );
+	* // returns -1
+	*/
+	lastIndexOf( searchElement: ComplexLike, fromIndex?: number ): number;
+
+	/**
 	* Sets an array element.
 	*
 	* ## Notes
