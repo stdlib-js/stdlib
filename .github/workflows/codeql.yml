@@ -165,8 +165,8 @@ jobs:
       # Initialize CodeQL tools for scanning:
       - name: 'Initialize CodeQL'
 
-        # FIXME: pin action to full length commit SHA
-        uses: github/codeql-action/init@v2
+        # Pin action to full length commit SHA
+        uses: github/codeql-action/init@382a50a0284c0de445104889a9d6003acb4b3c1d # v2.15.4
 
         with:
           languages: ${{ matrix.language }}
@@ -177,7 +177,7 @@ jobs:
       # Perform CodeQL analysis:
       - name: 'Perform CodeQL Analysis'
 
-        # FIXME: pin action to full length commit SHA
-        uses: github/codeql-action/analyze@v2
+        # Pin action to full length commit SHA
+        uses: github/codeql-action/analyze@382a50a0284c0de445104889a9d6003acb4b3c1d # v2.15.4
         with:
           category: "/language:${{matrix.language}}"
