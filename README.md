@@ -656,8 +656,6 @@ Copyright © 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 ## Status
 
-[![stability-experimental][stability-image]][stability-url]
-
 #### Version
 
 <!-- lint disable no-paragraph-content-indent -->
@@ -719,10 +717,6 @@ Test and build infrastructure is generously provided by the following services:
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
-
-[stability-image]: https://img.shields.io/badge/stability-experimental-orange.svg
-
-[stability-url]: https://github.com/stdlib-js/stdlib
 
 [npm-image]: https://img.shields.io/npm/v/@stdlib/stdlib.svg
 
