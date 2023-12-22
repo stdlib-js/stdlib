@@ -102,6 +102,33 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	constructor( arg?: number | RealOrComplexTypedArray | ArrayLike<number | ComplexLike> | ArrayBuffer | Iterable<number | ComplexLike>, byteOffset?: number, length?: number );
 
 	/**
+	* Returns an array element with support for both nonnegative and negative integer indices.
+	*
+	* @param i - element index
+	* @throws index argument must be an integer
+	* @returns array element
+	*
+	* @example
+	* var arr = new Complex128Array( 10 );
+	*
+	* var z = arr.at( 0 );
+	* // returns <Complex128>
+	*
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 9.0, -9.0 ], 9 );
+	*
+	* z = arr.get( -1 )
+	* // return <Complex128>
+	*
+	* z = arr.at( 100 );
+	* // returns undefined
+	*
+	* z = arr.at( -100 );
+	* // returns undefined
+	*/
+	at( i: number ): Complex128 | void;
+
+	/**
 	* Length (in bytes) of the array.
 	*
 	* @example

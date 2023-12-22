@@ -514,6 +514,56 @@ len = arr.length;
 // returns 2
 ```
 
+<a name="method-at"></a>
+
+#### Complex128Array.prototype.at( i )
+
+Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer positions.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+var arr = new Complex128Array( 10 );
+
+// Set the first, second, and last elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 9.0, -9.0 ], 9 );
+
+// Get the first element:
+var z = arr.at( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 1.0
+
+var im = imag( z );
+// returns -1.0
+
+// Get the last element:
+z = arr.at( -1 );
+// returns <Complex128>
+
+re = real( z );
+// returns 9.0
+
+im = imag( z );
+// returns -9.0
+```
+
+If provided an out-of-bounds index, the method returns `undefined`.
+
+```javascript
+var arr = new Complex128Array( 10 );
+
+var z = arr.at( 100 );
+// returns undefined
+
+z = arr.at( -100 );
+// returns undefined
+```
+
 <a name="method-copy-within"></a>
 
 #### Complex128Array.prototype.copyWithin( target, start\[, end] )
