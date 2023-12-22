@@ -404,6 +404,39 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	findIndex<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): number;
 
 	/**
+	* Returns the last element in an array for which a predicate function returns a truthy value.
+	*
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @returns array element or undefined
+	*
+	* @example
+	* var realf = require( '@stdlib/complex/realf' );
+	* var imagf = require( '@stdlib/complex/imagf' );
+	* var Complex64 = require( '@stdlib/complex/float32' );
+	*
+	* function predicate( v ) {
+	*     return ( realf( v ) === imagf( v ) );
+	* }
+	*
+	* var arr = new Complex64Array( 3 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	*
+	* var z = arr.findLast( predicate );
+	* // returns <Complex64>
+	*
+	* var re = realf( z );
+	* // returns 3.0
+	*
+	* var im = imagf( z );
+	* // returns 3.0
+	*/
+	findLast<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): Complex64 | void;
+
+	/**
 	* Returns an array element.
 	*
 	* @param i - element index
