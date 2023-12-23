@@ -353,44 +353,6 @@ $ stdlib repl
 
 ### Environment Builds
 
-<a name="install_env_builds_jquery"></a>
-
-#### jQuery-like Bundle
-
-For those wanting a jQuery-like bundle, one can use pre-built distributable UMD bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
-
-As an example, to include a UMD bundle exposing lower-level special [math functions][@stdlib/math/base/special] in a webpage, we can first locally install the UMD bundle package using [npm][npm]
-
-<!-- run-disable -->
-
-```bash
-$ npm install @stdlib/dist-math-base-special-flat
-```
-
-and then include the following `<script>` tag in our HTML document
-
-<!-- run-disable -->
-
-```html
-<script type="text/javascript" src="/path/to/@stdlib/dist-math-base-special-flat/build/bundle.min.js"></script>
-```
-
-making sure to modify the script path based on the local installation directory.
-
-If no recognized module system is present, one can access bundle contents in another `<script>` tag via the global scope.
-
-<!-- run-disable -->
-
-```html
-<script type="text/javascript">
-    // If no recognized module system present, exposed to global scope:
-    var erf = stdlib_math_base_special_flat.erf;
-    console.log( erf( 0.5 ) );
-</script>
-```
-
-For more details and available bundles, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles]. The [guide][stdlib-bundles] includes instructions for consuming via CDNs, such as [unpkg][unpkg].
-
 <a name="install_env_builds_esm"></a>
 
 #### ES Modules
@@ -426,6 +388,13 @@ import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mo
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
 ````
+
+
+<a name="install_env_builds_jquery"></a>
+
+#### jQuery-like Bundle
+
+For those wanting a jQuery-like bundle, one can use pre-built distributable UMD bundles for use in browser environments or as shared ("vendored") libraries in server environments available in each package's repository via a dedicated `umd` branch. See sections [UMD](#install_env_builds_umd) and [Node.js](#install_env_builds_nodejs) for more details.
 
 <a name="install_env_builds_umd"></a>
 
@@ -811,8 +780,6 @@ Test and build infrastructure is generously provided by the following services:
 [stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 
 [stdlib-source]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib
-
-[stdlib-bundles]: https://github.com/stdlib-js/stdlib/tree/develop/dist
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
