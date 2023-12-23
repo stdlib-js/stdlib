@@ -484,6 +484,33 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	get( i: number ): Complex64 | void;
 
 	/**
+	* Returns a boolean indicating whether an array contains a provided value.
+	*
+	* @param searchElement - search element
+	* @param fromIndex - starting index (inclusive)
+	* @returns boolean indicating whether an array contains a provided value
+	*
+	* @example
+	* var arr = new Complex64Array( 5 );
+	*
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 2.0, -2.0 ], 1 );
+	* arr.set( [ 3.0, -3.0 ], 2 );
+	* arr.set( [ 4.0, -4.0 ], 3 );
+	* arr.set( [ 5.0, -5.0 ], 4 );
+	*
+	* var bool = arr.includes( new Complex64( 3.0, -3.0 ) );
+	* // returns true
+	*
+	* bool = arr.includes( new Complex64( 3.0, -3.0 ), 3 );
+	* // returns false
+	*
+	* bool = arr.includes( new Complex64( 4.0, -4.0 ), -3 );
+	* // returns true
+	*/
+	includes( searchElement: ComplexLike, fromIndex?: number ): boolean;
+
+	/**
 	* Returns the first index at which a given element can be found.
 	*
 	* @param searchElement - element to find
