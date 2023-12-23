@@ -798,6 +798,64 @@ var bool = it.next().done;
 // returns true
 ```
 
+<a name="method-every"></a>
+
+#### Complex128Array.prototype.every( predicate\[, thisArg] )
+
+Returns a boolean indicating whether all elements pass a test.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+function predicate( v ) {
+    return ( real( v ) === imag( v ) );
+}
+
+var arr = new Complex128Array( 3 );
+
+// Set the first three elements:
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+// Check whether all elements pass a test:
+var bool = arr.every( predicate );
+// returns true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v, i ) {
+    this.count += 1;
+    return ( i >= 0 );
+}
+
+var arr = new Complex128Array( 3 );
+
+var context = {
+    'count': 0
+};
+
+// Set the first three elements:
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var bool = arr.every( predicate, context );
+// returns true
+
+var count = context.count;
+// returns 3
+```
+
 <a name="method-get"></a>
 
 #### Complex128Array.prototype.get( i )
