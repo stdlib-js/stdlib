@@ -344,6 +344,44 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	every<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
 
 	/**
+	* Returns a new array containing the elements of an array which pass a test implemented by a predicate function.
+	*
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @returns new array containing elements which pass a test implemented by a predicate function
+	*
+	* @example
+	* var realf = require( '@stdlib/complex/realf' );
+	* var imagf = require( '@stdlib/complex/imagf' );
+	*
+	* function predicate( v ) {
+	*     return ( realf( v ) === imagf( v ) );
+	* }
+	*
+	* var arr = new Complex64Array( 3 );
+	*
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, -3.0 ], 2 );
+	*
+	* var out = arr.filter( predicate );
+	* // returns <Complex64Array>
+	*
+	* var len = out.length;
+	* // returns 1
+	*
+	* var z = out.get( 0 );
+	* // returns <Complex64>
+	*
+	* var re = realf( z );
+	* // returns 2.0
+	*
+	* var im = imagf( z );
+	* // returns 2.0
+	*/
+	filter<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): Complex64Array;
+
+	/**
 	* Returns the first element in an array for which a predicate function returns a truthy value.
 	*
 	* @param predicate - test function
