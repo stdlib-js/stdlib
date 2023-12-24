@@ -388,6 +388,32 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* // returns -1.0
 	*/
 	set( value: ArrayLike<number | ComplexLike> | RealOrComplexTypedArray | ComplexLike, i?: number ): void;
+
+	/**
+	* Tests whether at least one element in an array passes a test implemented by a predicate function.
+	*
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @returns boolean indicating whether at least one element passes a test
+	*
+	* @example
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	*
+	* function predicate( v ) {
+	*     return ( real( v ) === imag( v ) );
+	* }
+	*
+	* var arr = new Complex128Array( 3 );
+	*
+	* arr.set( [ 1.0 , -1.0 ], 0 );
+	* arr.set( [ 2.0 , 2.0 ], 1 );
+	* arr.set( [ 3.0 , -3.0 ], 2 );
+	*
+	* var bool = arr.some( predicate );
+	* // returns true
+	*/
+	some<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
 }
 
 /**
