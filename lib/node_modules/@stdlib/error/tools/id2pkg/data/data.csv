@@ -182,6 +182,8 @@
 "1iR",@stdlib/array-base-fillednd-by
 "1hc",@stdlib/array/base/fillednd
 "1hd",@stdlib/array-base-fillednd
+"1mm",@stdlib/array/base/first
+"1mn",@stdlib/array-base-first
 "1he",@stdlib/array/base/flatten-by
 "1hf",@stdlib/array-base-flatten-by
 "1Z6",@stdlib/array/base/flatten
@@ -218,6 +220,10 @@
 "1ZP",@stdlib/array-base-getter
 "008",@stdlib/array/base/incrspace
 "009",@stdlib/array-base-incrspace
+"1mo",@stdlib/array/base/index-of
+"1mp",@stdlib/array-base-index-of
+"1mq",@stdlib/array/base/last-index-of
+"1mr",@stdlib/array-base-last-index-of
 "1ZQ",@stdlib/array/base/last
 "1ZR",@stdlib/array-base-last
 "00A",@stdlib/array/base/linspace
@@ -270,6 +276,8 @@
 "1lx",@stdlib/array-base-resolve-getter
 "1ZW",@stdlib/array/base/setter
 "1ZX",@stdlib/array-base-setter
+"1ms",@stdlib/array/base/slice
+"1mt",@stdlib/array-base-slice
 "1ko",@stdlib/array/base/strided2array2d
 "1kp",@stdlib/array-base-strided2array2d
 "1kq",@stdlib/array/base/strided2array3d
@@ -2006,6 +2014,8 @@
 "0QB",@stdlib/iter-unitspace
 "0QC",@stdlib/iter/unshift
 "0QD",@stdlib/iter-unshift
+"1mu",@stdlib/iter/while-each
+"1mv",@stdlib/iter-while-each
 "0QE",@stdlib/math/base/assert/int32-is-even
 "0QF",@stdlib/math-base-assert-int32-is-even
 "0QG",@stdlib/math/base/assert/int32-is-odd
@@ -3525,6 +3535,8 @@
 "1lV",@stdlib/ndarray-slice-dimension-to
 "1ka",@stdlib/ndarray/slice-dimension
 "1kb",@stdlib/ndarray-slice-dimension
+"1mw",@stdlib/ndarray/slice-from
+"1mx",@stdlib/ndarray-slice-from
 "1mi",@stdlib/ndarray/slice-to
 "1mj",@stdlib/ndarray-slice-to
 "1jU",@stdlib/ndarray/slice
@@ -6065,6 +6077,8 @@
 "1OL",@stdlib/strided
 "1OM",@stdlib/string/acronym
 "1ON",@stdlib/string-acronym
+"1my",@stdlib/string/base/altcase
+"1mz",@stdlib/string-base-altcase
 "1fc",@stdlib/string/base/camelcase
 "1fd",@stdlib/string-base-camelcase
 "1fe",@stdlib/string/base/capitalize
@@ -6073,6 +6087,8 @@
 "1fh",@stdlib/string-base-code-point-at
 "1fi",@stdlib/string/base/constantcase
 "1fj",@stdlib/string-base-constantcase
+"1n0",@stdlib/string/base/distances/hamming
+"1n1",@stdlib/string-base-distances-hamming
 "1fk",@stdlib/string/base/distances/levenshtein
 "1fl",@stdlib/string-base-distances-levenshtein
 "1fm",@stdlib/string/base/distances
