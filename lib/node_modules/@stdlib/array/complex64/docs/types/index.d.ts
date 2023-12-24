@@ -1,3 +1,5 @@
+/* eslint-disable max-lines */
+
 /*
 * @license Apache-2.0
 *
@@ -104,6 +106,50 @@ type TernaryPredicate<U> = ( this: U, value: Complex64, index: number, arr: Comp
 * @returns boolean indicating whether an element in an array passes a test
 */
 type Predicate<U> = NullaryPredicate<U> | UnaryPredicate<U> | BinaryPredicate<U> | TernaryPredicate<U>;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @returns undefined
+*/
+type NullaryCallback<U> = ( this: U ) => void;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @returns undefined
+*/
+type UnaryCallback<U> = ( this: U, value: Complex64 ) => void;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @returns undefined
+*/
+type BinaryCallback<U> = ( this: U, value: Complex64, index: number ) => void;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns undefined
+*/
+type TernaryCallback<U> = ( this: U, value: Complex64, index: number, arr: Complex64Array ) => void;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns undefined
+*/
+type Callback<U> = NullaryCallback<U> | UnaryCallback<U> | BinaryCallback<U> | TernaryCallback<U>;
 
 /**
 * Class for creating a 64-bit complex number array.
@@ -500,6 +546,33 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* // returns 1
 	*/
 	findLastIndex<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): number;
+
+	/**
+	* Invokes a function once for each array element.
+	*
+	* @param fcn - function to invoke
+	* @param thisArg - execution context
+	* @returns undefined
+	*
+	* @example
+	* var Complex64 = require( '@stdlib/complex/float32' );
+	*
+	* function log( v, i ) {
+	*     console.log( '%s: %s', i, v.toString() );
+	* }
+	*
+	* var arr = new Complex64Array( 3 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	*
+	* arr.forEach( log );
+	* // => 0: 1 + 1i
+	* // => 1: 2 + 2i
+	* // => 2: 3 + 3i
+	*/
+	forEach<U = unknown>( fcn: Callback, thisArg?: ThisParameterType<Callback<U>> ): void;
 
 	/**
 	* Returns an array element.
