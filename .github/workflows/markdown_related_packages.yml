@@ -130,8 +130,8 @@ jobs:
           fi
         timeout-minutes: 10
 
-      # Import GPG key to sign commit:
-      - name: 'Import GPG key to sign commit'
+      # Import GPG key to sign commits:
+      - name: 'Import GPG key to sign commits'
         if: steps.update-related-packages.outputs.changed == 'true'
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@82a020f1f7f605c65dd2449b392a52c3fcfef7ef # v6.0.0
