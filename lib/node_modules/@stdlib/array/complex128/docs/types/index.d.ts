@@ -311,6 +311,38 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	every<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
 
 	/**
+	* Returns the first element in an array for which a predicate function returns a truthy value.
+	*
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @returns array element or undefined
+	*
+	* @example
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	*
+	* function predicate( v ) {
+	*     return ( real( v ) === imag( v ) );
+	* }
+	*
+	* var arr = new Complex128Array( 3 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	*
+	* var z = arr.find( predicate );
+	* // returns <Complex128>
+	*
+	* var re = real( z );
+	* // returns 1.0
+	*
+	* var im = imag( z );
+	* // returns 1.0
+	*/
+	find<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): Complex128 | void;
+
+	/**
 	* Returns an array element.
 	*
 	* @param i - element index
