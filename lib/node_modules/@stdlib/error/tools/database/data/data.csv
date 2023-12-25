@@ -944,3 +944,4 @@
 "FD","invalid argument. Third argument exceeds the number of dimensions. Number of dimensions: %d. Value: `%d`.","RangeError"
 "FE","invalid argument. Number of indices does not match the number of array dimensions. Array shape: (%s). Number of indices: %u.","RangeError"
 "FF","invalid argument. Each index argument must be either an integer, null, or undefined. Value: `%s`.","TypeError"
+"FG","invalid argument. First argument must be a complex number. Value: `%s`.","TypeError"
