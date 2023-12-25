@@ -90,6 +90,11 @@ jobs:
         run: |
           make list-pkgs-namespaces | node lib/node_modules/@stdlib/_tools/scripts/create_namespace_types.js
 
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
         # Pin action to full length commit SHA
@@ -99,11 +104,6 @@ jobs:
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
           git_user_signingkey: true
           git_commit_gpgsign: true
-
-      # Disable Git hooks:
-      - name: 'Disable Git hooks'
-        run: |
-          rm -rf .git/hooks
 
       # Create a pull request with the updated declarations:
       - name: 'Create pull request'
@@ -118,7 +118,8 @@ jobs:
             -   updates namespace TypeScript declarations
 
           commit-message: 'feat: update namespace TypeScript declarations'
-          committer: 'stdlib-bot <noreply@stdlib.io>'
+          committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
+          signoff: true
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             documentation
