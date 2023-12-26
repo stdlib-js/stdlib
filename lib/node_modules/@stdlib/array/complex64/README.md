@@ -1004,7 +1004,7 @@ var count = context.count;
 // returns 2
 ```
 
-<a name="method-findIndex"></a>
+<a name="method-find-index"></a>
 
 #### Complex64Array.prototype.findIndex( predicate\[, thisArg] )
 
@@ -1064,7 +1064,7 @@ var count = context.count;
 // returns 3
 ```
 
-<a name="method-findLast"></a>
+<a name="method-find-last"></a>
 
 #### Complex64Array.prototype.findLast( predicate\[, thisArg] )
 
@@ -1137,7 +1137,7 @@ var count = context.count;
 // returns 2
 ```
 
-<a name="method-findLastIndex"></a>
+<a name="method-find-last-index"></a>
 
 #### Complex64Array.prototype.findLastIndex( predicate\[, thisArg] )
 
@@ -1326,7 +1326,7 @@ bool = arr.includes( new Complex64( 4.0, -4.0 ), -3 );
 ```
 
 
-<a name="method-indexOf"></a>
+<a name="method-index-of"></a>
 
 #### Complex64Array.prototype.indexOf( searchElement\[, fromIndex] )
 
@@ -1370,7 +1370,7 @@ idx = arr.indexOf( new Complex64( 1.0, -1.0 ), 1 );
 // returns -1
 ```
 
-<a name="method-lastIndexOf"></a>
+<a name="method-last-index-of"></a>
 
 #### Complex64Array.prototype.lastIndexOf( searchElement\[, fromIndex] )
 
