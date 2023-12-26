@@ -79,6 +79,16 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
+      # Import GPG key to sign commits:
+      - name: 'Import GPG key to sign commits'
+        # Pin action to full length commit SHA
+        uses: crazy-max/ghaction-import-gpg@82a020f1f7f605c65dd2449b392a52c3fcfef7ef # v6.0.0
+        with:
+          gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
       # Create a pull request:
       - name: 'Create pull request'
         if: steps.update-contributors.outputs.changed == 'true'
@@ -93,7 +103,8 @@ jobs:
             -   updates the list of contributors
 
           commit-message: 'docs: update list of contributors'
-          committer: 'stdlib-bot <noreply@stdlib.io>'
+          committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
+          signoff: true
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             documentation
