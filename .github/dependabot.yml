@@ -22,6 +22,8 @@ updates:
   directory: "/"
   schedule:
     interval: weekly
+  ignore:
+    - dependency-name: "distributhor/workflow-webhook"
 
 - package-ecosystem: npm
   directory: "/"

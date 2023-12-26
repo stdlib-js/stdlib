@@ -119,8 +119,8 @@ jobs:
 
       # Send data to events server:
       - name: 'Post data'
-        # Pin action to full length commit SHA corresponding to v3.0.3:
-        uses: distributhor/workflow-webhook@48a40b380ce4593b6a6676528cd005986ae56629
+        # Pin action to full length commit SHA
+        uses: distributhor/workflow-webhook@48a40b380ce4593b6a6676528cd005986ae56629 # v3.0.3
         env:
           webhook_url: ${{ secrets.STDLIB_COVERAGE_URL }}
           webhook_secret: ${{ secrets.STDLIB_WEBHOOK_SECRET }}
