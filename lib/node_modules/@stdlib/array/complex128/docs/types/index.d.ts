@@ -434,6 +434,32 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	findLast<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex128 | void;
 
 	/**
+	* Returns the index of the last element in an array for which a predicate function returns a truthy value.
+	*
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @returns index or -1
+	*
+	* @example
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	*
+	* function predicate( v ) {
+	*     return ( real( v ) === imag( v ) );
+	* }
+	*
+	* var arr = new Complex128Array( 3 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, -3.0 ], 2 );
+	*
+	* var idx = arr.findLastIndex( predicate );
+	* // returns 1
+	*/
+	findLastIndex<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): number;
+
+	/**
 	* Returns an array element.
 	*
 	* @param i - element index
