@@ -387,7 +387,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* var bool = arr.every( predicate );
 	* // returns true
 	*/
-	every<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
+	every<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
 
 	/**
 	* Returns a new array containing the elements of an array which pass a test implemented by a predicate function.
@@ -425,7 +425,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* var im = imagf( z );
 	* // returns 2.0
 	*/
-	filter<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): Complex64Array;
+	filter<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex64Array;
 
 	/**
 	* Returns the first element in an array for which a predicate function returns a truthy value.
@@ -458,7 +458,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* var im = imagf( z );
 	* // returns 1.0
 	*/
-	find<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): Complex64 | void;
+	find<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex64 | void;
 
 	/**
 	* Returns the index of the first element in an array for which a predicate function returns a truthy value.
@@ -485,7 +485,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* var idx = arr.findIndex( predicate );
 	* // returns 2
 	*/
-	findIndex<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): number;
+	findIndex<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): number;
 
 	/**
 	* Returns the last element in an array for which a predicate function returns a truthy value.
@@ -518,7 +518,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* var im = imagf( z );
 	* // returns 3.0
 	*/
-	findLast<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): Complex64 | void;
+	findLast<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex64 | void;
 
 	/**
 	* Returns the index of the last element in an array for which a predicate function returns a truthy value.
@@ -545,7 +545,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* var idx = arr.findLastIndex( predicate );
 	* // returns 1
 	*/
-	findLastIndex<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): number;
+	findLastIndex<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): number;
 
 	/**
 	* Invokes a function once for each array element.
@@ -572,7 +572,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* // => 1: 2 + 2i
 	* // => 2: 3 + 3i
 	*/
-	forEach<U = unknown>( fcn: Callback, thisArg?: ThisParameterType<Callback<U>> ): void;
+	forEach<U = unknown>( fcn: Callback<U>, thisArg?: ThisParameterType<Callback<U>> ): void;
 
 	/**
 	* Returns an array element.
@@ -760,7 +760,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* var bool = arr.some( predicate );
 	* // returns true
 	*/
-	some<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
+	some<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
 
 	/**
 	* Creates a new typed array view over the same underlying `ArrayBuffer` and with the same underlying data type as the host array.
