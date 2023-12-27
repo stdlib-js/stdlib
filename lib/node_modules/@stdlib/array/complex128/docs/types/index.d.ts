@@ -41,7 +41,7 @@ type NullaryPredicate<U> = ( this: U ) => boolean;
 * @param value - current array element
 * @returns boolean indicating whether an element in an array passes a test
 */
-type UnaryPredicate<U> = ( this: U, value: Complex64 ) => boolean;
+type UnaryPredicate<U> = ( this: U, value: Complex128 ) => boolean;
 
 /**
 * Checks whether an element in an array passes a test.
@@ -50,7 +50,7 @@ type UnaryPredicate<U> = ( this: U, value: Complex64 ) => boolean;
 * @param index - current array element index
 * @returns boolean indicating whether an element in an array passes a test
 */
-type BinaryPredicate<U> = ( this: U, value: Complex64, index: number ) => boolean;
+type BinaryPredicate<U> = ( this: U, value: Complex128, index: number ) => boolean;
 
 /**
 * Checks whether an element in an array passes a test.
@@ -60,7 +60,7 @@ type BinaryPredicate<U> = ( this: U, value: Complex64, index: number ) => boolea
 * @param arr - array on which the method was called
 * @returns boolean indicating whether an element in an array passes a test
 */
-type TernaryPredicate<U> = ( this: U, value: Complex64, index: number, arr: Complex64Array ) => boolean;
+type TernaryPredicate<U> = ( this: U, value: Complex128, index: number, arr: Complex128Array ) => boolean;
 
 /**
 * Checks whether an element in an array passes a test.
@@ -341,6 +341,32 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* // returns 1.0
 	*/
 	find<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): Complex128 | void;
+
+	/**
+	* Returns the index of the first element in an array for which a predicate function returns a truthy value.
+	*
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @returns index or -1
+	*
+	* @example
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	*
+	* function predicate( v ) {
+	*     return ( real( v ) === imag( v ) );
+	* }
+	*
+	* var arr = new Complex128Array( 3 );
+	*
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 2.0, -2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	*
+	* var idx = arr.findIndex( predicate );
+	* // returns 2
+	*/
+	findIndex<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): number;
 
 	/**
 	* Returns the last element in an array for which a predicate function returns a truthy value.

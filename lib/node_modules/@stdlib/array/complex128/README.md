@@ -928,9 +928,69 @@ var count = context.count;
 // returns 2
 ```
 
+<a name="method-find-index"></a>
+
+#### Complex128Array.prototype.findIndex( predicate\[, thisArg] )
+
+Returns the index of the first element in an array for which a predicate function returns a truthy value.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+function predicate( v ) {
+    return ( real( v ) === imag( v ) );
+}
+
+var arr = new Complex128Array( 3 );
+
+// Set the first three elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var idx = arr.findIndex( predicate );
+// returns 2
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+function predicate( v, i ) {
+    this.count += 1;
+    return ( i >= 0 && real( v ) === imag( v ) );
+}
+
+var arr = new Complex128Array( 3 );
+
+var context = {
+    'count': 0
+};
+
+// Set the first three elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 3.0, -3.0 ], 2 );
+
+var idx = arr.findIndex( predicate, context );
+// returns -1
+
+var count = context.count;
+// returns 3
+```
+
 <a name="method-find-last"></a>
 
-#### Complex64Array.prototype.findLast( predicate\[, thisArg] )
+#### Complex128Array.prototype.findLast( predicate\[, thisArg] )
 
 Returns the last element in an array for which a predicate function returns a truthy value.
 
