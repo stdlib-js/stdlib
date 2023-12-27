@@ -856,6 +856,81 @@ var count = context.count;
 // returns 3
 ```
 
+<a name="method-filter"></a>
+
+#### Complex128Array.prototype.filter( predicate\[, thisArg] )
+
+Returns a new array containing the elements of an array which pass a test implemented by a predicate function.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+function predicate( v ) {
+    return ( real( v ) === imag( v ) );
+}
+
+var arr = new Complex128Array( 3 );
+
+// Set the first three elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, -3.0 ], 2 );
+
+var out = arr.filter( predicate );
+// returns <Complex128Array>
+
+var len = out.length;
+// returns 1
+
+var z = out.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 2.0
+
+var im = imag( z );
+// returns 2.0
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+function predicate( v, i ) {
+    this.count += 1;
+    return ( i >= 0 && real( v ) === imag( v ) );
+}
+
+var arr = new Complex128Array( 3 );
+
+var context = {
+    'count': 0
+};
+
+// Set the first three elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var out = arr.filter( predicate, context );
+// returns <Complex128Array>
+
+var len = out.length;
+// returns 2
+
+var count = context.count;
+// returns 3
+```
+
 <a name="method-find"></a>
 
 #### Complex128Array.prototype.find( predicate\[, thisArg] )
