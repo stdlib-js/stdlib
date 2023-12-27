@@ -308,7 +308,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* var bool = arr.every( predicate );
 	* // returns true
 	*/
-	every<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
+	every<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
 
 	/**
 	* Returns the first element in an array for which a predicate function returns a truthy value.
@@ -340,7 +340,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* var im = imag( z );
 	* // returns 1.0
 	*/
-	find<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): Complex128 | void;
+	find<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex128 | void;
 
 	/**
 	* Returns the index of the first element in an array for which a predicate function returns a truthy value.
@@ -398,7 +398,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* var im = imag( z );
 	* // returns 3.0
 	*/
-	findLast<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): Complex128 | void;
+	findLast<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex128 | void;
 
 	/**
 	* Returns an array element.
@@ -503,7 +503,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* var bool = arr.some( predicate );
 	* // returns true
 	*/
-	some<U = unknown>( predicate: Predicate, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
+	some<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
 }
 
 /**
