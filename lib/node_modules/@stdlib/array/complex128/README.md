@@ -1230,6 +1230,50 @@ var z = arr.get( 100 );
 // returns undefined
 ```
 
+<a name="method-index-of"></a>
+
+#### Complex128Array.prototype.indexOf( searchElement\[, fromIndex] )
+
+Returns the first index at which a given element can be found.
+
+```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+
+var arr = new Complex128Array( 5 );
+
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 3.0, -3.0 ], 2 );
+arr.set( [ 4.0, -4.0 ], 3 );
+arr.set( [ 2.0, -2.0 ], 4 );
+
+var idx = arr.indexOf( new Complex128( 3.0, -3.0 ) );
+// returns 2
+
+idx = arr.indexOf( new Complex128( 2.0, -2.0 ), 2 );
+// returns 4
+
+idx = arr.indexOf( new Complex128( 4.0, -4.0 ), -3 );
+// returns 3
+```
+
+If `searchElement` is not present in the array, the method returns `-1`.
+
+```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+
+var arr = new Complex128Array( 5 );
+
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+
+var idx = arr.indexOf( new Complex128( 3.0, -3.0 ) );
+// returns -1
+
+idx = arr.indexOf( new Complex128( 1.0, -1.0 ), 1 );
+// returns -1
+```
+
 <a name="method-set"></a>
 
 #### Complex128Array.prototype.set( z\[, i] )
