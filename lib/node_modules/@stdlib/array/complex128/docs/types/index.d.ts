@@ -518,6 +518,33 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	get( i: number ): Complex128 | void;
 
 	/**
+	* Returns the first index at which a given element can be found.
+	*
+	* @param searchElement - element to find
+	* @param fromIndex - starting index (inclusive)
+	* @returns index or -1
+	*
+	* @example
+	* var arr = new Complex128Array( 5 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	* arr.set( [ 2.0, 2.0 ], 3 );
+	* arr.set( [ 5.0, 5.0 ], 4 );
+	*
+	* var idx = arr.indexOf( new Complex128( [ 2.0, 2.0 ] ) );
+	* // returns 1
+	*
+	* idx = arr.indexOf( new Complex128( [ 2.0, 2.0 ] ), 2 );
+	* // returns 3
+	*
+	* idx = arr.indexOf( new Complex128( [ 2.0, 2.0 ] ), -3 );
+	* // returns 3
+	*/
+	indexOf( searchElement: ComplexLike, fromIndex?: number ): number;
+
+	/**
 	* Sets an array element.
 	*
 	* ## Notes
