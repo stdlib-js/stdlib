@@ -22,7 +22,7 @@
 
     Parameters
     ----------
-    arrays: ArrayLike<ndarray>
+    arrays: ArrayLikeObject<ndarray>
         List of ndarrays.
 
     Returns
