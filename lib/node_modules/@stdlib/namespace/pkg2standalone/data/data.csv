@@ -2267,6 +2267,7 @@
 "@stdlib/constants/array/max-array-length","@stdlib/constants-array-max-array-length"
 "@stdlib/constants/array/max-typed-array-length","@stdlib/constants-array-max-typed-array-length"
 "@stdlib/ndarray/maybe-broadcast-array","@stdlib/ndarray-maybe-broadcast-array"
+"@stdlib/ndarray/maybe-broadcast-arrays","@stdlib/ndarray-maybe-broadcast-arrays"
 "@stdlib/utils/memoize","@stdlib/utils-memoize"
 "@stdlib/utils/merge","@stdlib/utils-merge"
 "@stdlib/constants/time/milliseconds-in-day","@stdlib/constants-time-milliseconds-in-day"
