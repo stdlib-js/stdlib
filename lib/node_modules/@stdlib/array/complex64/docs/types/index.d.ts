@@ -152,6 +152,50 @@ type TernaryCallback<U> = ( this: U, value: Complex64, index: number, arr: Compl
 type Callback<U> = NullaryCallback<U> | UnaryCallback<U> | BinaryCallback<U> | TernaryCallback<U>;
 
 /**
+* Callback invoked for each element in an array.
+*
+* @returns transformed value
+*/
+type NullaryMapFcn<U> = ( this: U ) => ComplexLike | ArrayLike<number>;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @returns transformed value
+*/
+type UnaryMapFcn<U> = ( this: U, value: Complex64 ) => ComplexLike | ArrayLike<number>;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @returns transformed
+*/
+type BinaryMapFcn<U> = ( this: U, value: Complex64, index: number ) => ComplexLike | ArrayLike<number>;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns transformed value
+*/
+type TernaryMapFcn<U> = ( this: U, value: Complex64, index: number, arr: Complex64Array ) => ComplexLike | ArrayLike<number>;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns transformed value
+*/
+type MapFcn<U> = NullaryMapFcn<U> | UnaryMapFcn<U> | BinaryMapFcn<U> | TernaryMapFcn<U>;
+
+/**
 * Class for creating a 64-bit complex number array.
 */
 declare class Complex64Array implements Complex64ArrayInterface {
@@ -676,6 +720,42 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* // returns 1
 	*/
 	lastIndexOf( searchElement: ComplexLike, fromIndex?: number ): number;
+
+	/**
+	* Returns a new array with each element being the result of the callback function.
+	*
+	* @param fcn - callback function
+	* @param thisArg - execution context
+	* @returns new array containing elements which are the result of the callback function
+	*
+	* @example
+	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var realf = require( '@stdlib/complex/realf' );
+	* var imagf = require( '@stdlib/complex/imagf' );
+	*
+	* function scale( v, i ) {
+	*     return new Complex64( 2.0*realf( v ), 2.0*imagf( v ) );
+	* }
+	*
+	* var arr = new Complex64Array( 3 );
+	*
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 2.0, -2.0 ], 1 );
+	* arr.set( [ 3.0, -3.0 ], 2 );
+	*
+	* var out = arr.map( scale );
+	* // returns <Complex64Array>
+	*
+	* var z = out.get( 0 );
+	* // returns <Complex64>
+	*
+	* var re = realf( z );
+	* // returns 2.0
+	*
+	* var im = imagf( z );
+	* // returns -2.0
+	*/
+	map<U = unknown>( fcn: MapFcn<U>, thisArg?: ThisParameterType<MapFcn<U>> ): Complex64Array;
 
 	/**
 	* Sets an array element.
