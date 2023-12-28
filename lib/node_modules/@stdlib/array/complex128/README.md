@@ -1230,6 +1230,33 @@ var z = arr.get( 100 );
 // returns undefined
 ```
 
+<a name="method-includes"></a>
+
+#### Complex128Array.prototype.includes( searchElement\[, fromIndex] )
+
+Returns a boolean indicating whether an array includes a provided value.
+
+```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+
+var arr = new Complex128Array( 5 );
+
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 3.0, -3.0 ], 2 );
+arr.set( [ 4.0, -4.0 ], 3 );
+arr.set( [ 5.0, -5.0 ], 4 );
+
+var bool = arr.includes( new Complex128( 3.0, -3.0 ) );
+// returns true
+
+bool = arr.includes( new Complex128( 3.0, -3.0 ), 3 );
+// returns false
+
+bool = arr.includes( new Complex128( 4.0, -4.0 ), -3 );
+// returns true
+```
+
 <a name="method-index-of"></a>
 
 #### Complex128Array.prototype.indexOf( searchElement\[, fromIndex] )
