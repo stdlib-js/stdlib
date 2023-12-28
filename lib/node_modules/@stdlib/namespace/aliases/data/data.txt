@@ -1320,6 +1320,7 @@ BigInt
 binomialTest
 Boolean
 broadcastArray
+broadcastArrays
 Buffer
 buffer2json
 BYTE_ORDER
