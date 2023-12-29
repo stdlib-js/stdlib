@@ -55,15 +55,11 @@ The namespace contains the following functions for calculating distribution prop
 
 <!-- <toc pattern="*+(entropy|kurtosis|mean|median|mode|skewness|stdev|variance)*"> -->
 
-
-
 <!-- </toc> -->
 
 The namespace contains a constructor function for creating a [truncated normal][truncated-normal-distribution] distribution object.
 
 <!-- <toc pattern="*ctor*"> -->
-
-
 
 <!-- </toc> -->
 
