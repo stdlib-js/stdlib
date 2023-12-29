@@ -1418,7 +1418,7 @@ idx = arr.lastIndexOf( new Complex64( 2.0, -2.0 ), 0 );
 
 #### Complex64Array.prototype.map( callbackFn\[, thisArg] )
 
-Returns a new array with each element being the result of the callback function.
+Returns a new array with each element being the result of a provided callback function.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );

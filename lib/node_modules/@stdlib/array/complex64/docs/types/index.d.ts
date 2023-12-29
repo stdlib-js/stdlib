@@ -171,7 +171,7 @@ type UnaryMapFcn<U> = ( this: U, value: Complex64 ) => ComplexLike | ArrayLike<n
 *
 * @param value - current array element
 * @param index - current array element index
-* @returns transformed
+* @returns transformed value
 */
 type BinaryMapFcn<U> = ( this: U, value: Complex64, index: number ) => ComplexLike | ArrayLike<number>;
 
@@ -722,11 +722,11 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	lastIndexOf( searchElement: ComplexLike, fromIndex?: number ): number;
 
 	/**
-	* Returns a new array with each element being the result of the callback function.
+	* Returns a new array with each element being the result of a provided callback function.
 	*
 	* @param fcn - callback function
 	* @param thisArg - execution context
-	* @returns new array containing elements which are the result of the callback function
+	* @returns new array containing transformed elements
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32' );
