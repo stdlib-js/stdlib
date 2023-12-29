@@ -1,8 +1,8 @@
 
 {{alias}}( arrays, shape, fcn )
-    Applies a quinary callback to elements in five four-dimensional nested
-    input arrays and assigns results to elements in a four-dimensional nested
-    output array.
+    Applies a quinary callback to elements in five four-dimensional nested input
+    arrays and assigns results to elements in a four-dimensional nested output
+    array.
 
     Parameters
     ----------
