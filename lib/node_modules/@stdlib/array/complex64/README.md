@@ -856,6 +856,114 @@ var count = context.count;
 // returns 3
 ```
 
+<a name="method-fill"></a>
+
+#### Complex64Array.prototype.fill( value\[, start\[, end]] )
+
+Returns a modified typed array filled with a fill value.
+
+```javascript
+var Complex64 = require( '@stdlib/complex/float32' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
+
+var arr = new Complex64Array( 3 );
+
+// Set all elements to the same value:
+arr.fill( new Complex64( 1.0, 1.0 ) );
+
+var z = arr.get( 0 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 1.0
+
+var im = imagf( z );
+// returns 1.0
+
+z = arr.get( 2 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 1.0
+
+im = imagf( z );
+// returns 1.0
+
+// Fill all elements starting from the second element:
+arr.fill( new Complex64( 2.0, 2.0 ), 1 );
+
+z = arr.get( 1 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 2.0
+
+im = imagf( z );
+// returns 2.0
+
+z = arr.get( 2 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 2.0
+
+im = imagf( z );
+// returns 2.0
+
+// Fill all elements from first element until the second-to-last element:
+arr.fill( new Complex64( 3.0, 3.0 ), 0, 2 );
+
+z = arr.get( 0 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 3.0
+
+im = imagf( z );
+// returns 3.0
+
+z = arr.get( 1 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 3.0
+
+im = imagf( z );
+// returns 3.0
+```
+
+When a `start` and/or `end` index is negative, the respective index is determined relative to the last array element.
+
+```javascript
+var Complex64 = require( '@stdlib/complex/float32' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
+
+var arr = new Complex64Array( 3 );
+
+// Set all array elements, except the last element, to the same value:
+arr.fill( new Complex64( 1.0, 1.0 ), 0, -1 );
+
+var z = arr.get( 0 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 1.0
+
+var im = imagf( z );
+// returns 1.0
+
+z = arr.get( arr.length - 1 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 0.0
+
+im = imagf( z );
+// returns 0.0
+```
+
 <a name="method-filter"></a>
 
 #### Complex64Array.prototype.filter( predicate\[, thisArg] )
