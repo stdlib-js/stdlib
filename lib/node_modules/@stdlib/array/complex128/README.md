@@ -1345,6 +1345,77 @@ idx = arr.lastIndexOf( new Complex128( 2.0, -2.0 ), 0 );
 // returns -1
 ```
 
+<a name="method-map"></a>
+
+#### Complex128Array.prototype.map( callbackFn\[, thisArg] )
+
+Returns a new array with each element being the result of a provided callback function.
+
+```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+function scale( v ) {
+    return new Complex128( 2.0*real( v ), 2.0*imag( v ) );
+}
+
+var arr = new Complex128Array( 3 );
+
+// Set the first three elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 3.0, -3.0 ], 2 );
+
+var out = arr.map( scale );
+// returns <Complex128Array>
+
+var z = out.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 2.0
+
+var im = imag( z );
+// returns -2.0
+```
+
+The callback function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+function scale( v ) {
+    this.count += 1;
+    return new Complex128( 2.0*real( v ), 2.0*imag( v ) );
+}
+
+var arr = new Complex128Array( 3 );
+
+var context = {
+    'count': 0
+};
+
+// Set the first three elements:
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var out = arr.map( scale, context );
+// returns <Complex128Array>
+
+var count = context.count;
+// returns 3
+```
+
 <a name="method-set"></a>
 
 #### Complex128Array.prototype.set( z\[, i] )

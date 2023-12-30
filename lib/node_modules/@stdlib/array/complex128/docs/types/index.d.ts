@@ -1,3 +1,5 @@
+/* eslint-disable max-lines */
+
 /*
 * @license Apache-2.0
 *
@@ -104,6 +106,50 @@ type TernaryPredicate<U> = ( this: U, value: Complex128, index: number, arr: Com
 * @returns boolean indicating whether an element in an array passes a test
 */
 type Predicate<U> = NullaryPredicate<U> | UnaryPredicate<U> | BinaryPredicate<U> | TernaryPredicate<U>;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @returns transformed value
+*/
+type NullaryMapFcn<U> = ( this: U ) => ComplexLike | ArrayLike<number>;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @returns transformed value
+*/
+type UnaryMapFcn<U> = ( this: U, value: Complex128 ) => ComplexLike | ArrayLike<number>;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @returns transformed value
+*/
+type BinaryMapFcn<U> = ( this: U, value: Complex128, index: number ) => ComplexLike | ArrayLike<number>;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns transformed value
+*/
+type TernaryMapFcn<U> = ( this: U, value: Complex128, index: number, arr: Complex128Array ) => ComplexLike | ArrayLike<number>;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns transformed value
+*/
+type MapFcn<U> = NullaryMapFcn<U> | UnaryMapFcn<U> | BinaryMapFcn<U> | TernaryMapFcn<U>;
 
 /**
 * Class for creating a 128-bit complex number array.
@@ -601,6 +647,42 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* // returns 1
 	*/
 	lastIndexOf( searchElement: ComplexLike, fromIndex?: number ): number;
+
+	/**
+	* Returns a new array with each element being the result of a provided callback function.
+	*
+	* @param fcn - callback function
+	* @param thisArg - execution context
+	* @returns new array containing transformed elements
+	*
+	* @example
+	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	*
+	* function scale( v, i ) {
+	*     return new Complex128( 2.0*real( v ), 2.0*imag( v ) );
+	* }
+	*
+	* var arr = new Complex128Array( 3 );
+	*
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 2.0, -2.0 ], 1 );
+	* arr.set( [ 3.0, -3.0 ], 2 );
+	*
+	* var out = arr.map( scale );
+	* // returns <Complex128Array>
+	*
+	* var z = out.get( 0 );
+	* // returns <Complex128>
+	*
+	* var re = real( z );
+	* // returns 2.0
+	*
+	* var im = imag( z );
+	* // returns -2.0
+	*/
+	map<U = unknown>( fcn: MapFcn<U>, thisArg?: ThisParameterType<MapFcn<U>> ): Complex128Array;
 
 	/**
 	* Sets an array element.
