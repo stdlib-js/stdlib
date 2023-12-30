@@ -110,6 +110,50 @@ type Predicate<U> = NullaryPredicate<U> | UnaryPredicate<U> | BinaryPredicate<U>
 /**
 * Callback invoked for each element in an array.
 *
+* @returns undefined
+*/
+type NullaryCallback<U> = ( this: U ) => void;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @returns undefined
+*/
+type UnaryCallback<U> = ( this: U, value: Complex128 ) => void;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @returns undefined
+*/
+type BinaryCallback<U> = ( this: U, value: Complex128, index: number ) => void;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns undefined
+*/
+type TernaryCallback<U> = ( this: U, value: Complex128, index: number, arr: Complex128Array ) => void;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns undefined
+*/
+type Callback<U> = NullaryCallback<U> | UnaryCallback<U> | BinaryCallback<U> | TernaryCallback<U>;
+
+/**
+* Callback invoked for each element in an array.
+*
 * @returns transformed value
 */
 type NullaryMapFcn<U> = ( this: U ) => ComplexLike | ArrayLike<number>;
@@ -542,6 +586,33 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* // returns 1
 	*/
 	findLastIndex<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): number;
+
+	/**
+	* Invokes a function once for each array element.
+	*
+	* @param fcn - function to invoke
+	* @param thisArg - execution context
+	* @returns undefined
+	*
+	* @example
+	* var Complex128 = require( '@stdlib/complex/float64' );
+	*
+	* function log( v, i ) {
+	*     console.log( '%s: %s', i, v.toString() );
+	* }
+	*
+	* var arr = new Complex128Array( 3 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	*
+	* arr.forEach( log );
+	* // => 0: 1 + 1i
+	* // => 1: 2 + 2i
+	* // => 2: 3 + 3i
+	*/
+	forEach<U = unknown>( fcn: Callback<U>, thisArg?: ThisParameterType<Callback<U>> ): void;
 
 	/**
 	* Returns an array element.
