@@ -1195,6 +1195,72 @@ var count = context.count;
 // returns 3
 ```
 
+<a name="method-for-each"></a>
+
+#### Complex128Array.prototype.forEach( callbackFn\[, thisArg] )
+
+Invokes a function once for each array element.
+
+```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+
+function log( v, i ) {
+    console.log( '%s: %s', i, v.toString() );
+}
+
+var arr = new Complex128Array( 3 );
+
+// Set the first three elements:
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+arr.forEach( log );
+/* =>
+    0: 1 + 1i
+    1: 2 + 2i
+    2: 3 + 3i
+*/
+```
+
+The invoked function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+
+function fcn( v, i ) {
+    this.count += 1;
+    console.log( '%s: %s', i, v.toString() );
+}
+
+var arr = new Complex128Array( 3 );
+
+var context = {
+    'count': 0
+};
+
+// Set the first three elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 3.0, -3.0 ], 2 );
+
+arr.forEach( fcn, context );
+/* =>
+    0: 1 + 1i
+    1: 2 + 2i
+    2: 3 + 3i
+*/
+
+var count = context.count;
+// returns 3
+```
+
 <a name="method-get"></a>
 
 #### Complex128Array.prototype.get( i )
