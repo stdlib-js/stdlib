@@ -19,12 +19,26 @@
 // TypeScript Version: 4.1
 
 /**
+* Curry function type.
+*/
+type CurryFunction<
+	TThis,
+	TArgs extends Array<any>, // eslint-disable-line @typescript-eslint/no-explicit-any
+	TReturn
+> = ( this: TThis, ...args: TArgs ) => TReturn;
+
+/**
 * Curry function.
 *
 * @param v - curried function parameter
 * @returns partially applied curry function or curried function result
 */
-type Closure = ( v: any ) => any;
+type Closure<
+	TArgs extends Array<any>, // eslint-disable-line @typescript-eslint/no-explicit-any
+	TReturn
+> = TArgs extends [infer TFirst, ...infer TRest]
+	? ( v: TFirst ) => Closure<TRest, TReturn>
+	: TReturn;
 
 /**
 * Transforms a function into a sequence of functions each accepting a single argument.
@@ -49,7 +63,15 @@ type Closure = ( v: any ) => any;
 * var sum = f( 2 )( 3 );
 * // returns 5
 */
-declare function curry( fcn: Function, arity: number, thisArg?: any ): Closure;
+declare function curry<
+	TThis extends object,
+	TArgs extends Array<any>, // eslint-disable-line @typescript-eslint/no-explicit-any
+	TReturn
+>(
+	fcn: CurryFunction<TThis, TArgs, TReturn>,
+	arity: number,
+	thisArg?: TThis
+): Closure<TArgs, TReturn>;
 
 /**
 * Transforms a function into a sequence of functions each accepting a single argument.
@@ -72,7 +94,14 @@ declare function curry( fcn: Function, arity: number, thisArg?: any ): Closure;
 * var sum = f( 2 )( 3 );
 * // returns 5
 */
-declare function curry( fcn: Function, thisArg?: any ): Closure;
+declare function curry<
+	TThis extends object,
+	TArgs extends Array<any>, // eslint-disable-line @typescript-eslint/no-explicit-any
+	TReturn
+>(
+	fcn: CurryFunction<TThis, TArgs, TReturn>,
+	thisArg?: TThis
+): Closure<TArgs, TReturn>;
 
 
 // EXPORTS //
