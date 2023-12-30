@@ -1675,6 +1675,100 @@ var count = context.count;
 // returns 2
 ```
 
+<a name="method-subarray"></a>
+
+#### Complex128Array.prototype.subarray( \[begin\[, end]] )
+
+Creates a new typed array view over the same underlying [`ArrayBuffer`][@stdlib/array/buffer] and with the same underlying data type as the host array.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+var arr = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+
+var subarr = arr.subarray();
+// returns <Complex128Array>
+
+var len = subarr.length;
+// returns 4
+
+var z = subarr.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 1.0
+
+var im = imag( z );
+// returns 2.0
+
+z = subarr.get( len-1 );
+// returns <Complex128>
+
+re = real( z );
+// returns 7.0
+
+im = imag( z );
+// returns 8.0
+```
+
+By default, the method creates a typed array view beginning with the first array element. To specify an alternative array index at which to begin, provide a `begin` index (inclusive).
+
+```javascript
+var imag = require( '@stdlib/complex/imag' );
+var real = require( '@stdlib/complex/real' );
+
+var arr = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+
+var subarr = arr.subarray( 1 );
+// returns <Complex128Array>
+
+var len = subarr.length;
+// returns 3
+
+var z = subarr.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 3.0
+
+var im = imag( z );
+// returns 4.0
+```
+
+By default, the method creates a typed array view which includes all array elements after `begin`. To limit the number of array elements after `begin`, provide an `end` index (exclusive).
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+var arr = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+
+var subarr = arr.subarray( 1, -1 );
+// returns <Complex128Array>
+
+var len = subarr.length;
+// returns 2
+
+var z = subarr.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 3.0
+
+var im = imag( z );
+// returns 4.0
+
+z = subarr.get( len-1 );
+// returns <Complex128>
+
+re = real( z );
+// returns 5.0
+
+im = imag( z );
+// returns 6.0
+```
+
 </section>
 
 <!-- /.usage -->

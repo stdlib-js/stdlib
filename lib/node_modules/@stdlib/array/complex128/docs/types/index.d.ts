@@ -839,6 +839,76 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* // returns true
 	*/
 	some<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
+
+	/**
+	* Creates a new typed array view over the same underlying `ArrayBuffer` and with the same underlying data type as the host array.
+	*
+	* @param begin - starting index (inclusive)
+	* @param end - ending index (exclusive)
+	* @throws indices must be integers
+	* @returns subarray
+	*
+	* @example
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	*
+	* var arr = new Complex128Array( 5 );
+	*
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 2.0, -2.0 ], 1 );
+	* arr.set( [ 3.0, -3.0 ], 2 );
+	* arr.set( [ 4.0, -4.0 ], 3 );
+	* arr.set( [ 5.0, -5.0 ], 4 );
+	*
+	* var subarr = arr.subarray();
+	* // returns <Complex128Array>
+	*
+	* var len = subarr.length;
+	* // returns 5
+	*
+	* var z = subarr.get( 0 );
+	* // returns <Complex128>
+	*
+	* var re = real( z );
+	* // returns 1.0
+	*
+	* var im = imag( z );
+	* // returns -1.0
+	*
+	* z = subarr.get( len-1 );
+	* // returns <Complex128>
+	*
+	* re = real( z );
+	* // returns 5.0
+	*
+	* im = imag( z );
+	* // returns -5.0
+	*
+	* subarr = arr.subarray( 1, -2 );
+	* // returns <Complex128Array>
+	*
+	* len = subarr.length;
+	* // returns 2
+	*
+	* z = subarr.get( 0 );
+	* // returns <Complex128>
+	*
+	* re = real( z );
+	* // returns 2.0
+	*
+	* im = imag( z );
+	* // returns -2.0
+	*
+	* z = subarr.get( len-1 );
+	* // returns <Complex128>
+	*
+	* re = real( z );
+	* // returns 3.0
+	*
+	* im = imag( z );
+	* // returns -3.0
+	*/
+	subarray( begin?: number, end?: number ): Complex64Array;
 }
 
 /**
