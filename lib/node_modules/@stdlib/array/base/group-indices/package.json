@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/array/base/group-values",
+  "name": "@stdlib/array/base/group-indices",
   "version": "0.0.0",
-  "description": "Group elements as arrays associated with distinct keys.",
+  "description": "Group element indices as arrays associated with distinct keys.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -62,6 +62,7 @@
     "aggregate",
     "summarize",
     "partition",
-    "split"
+    "split",
+    "indices"
   ]
 }
