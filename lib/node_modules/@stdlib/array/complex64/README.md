@@ -1880,6 +1880,23 @@ im = imagf( z );
 // returns 6.0
 ```
 
+<a name="method-to-string"></a>
+
+#### Complex64Array.prototype.toString()
+
+Serializes an array as a string.
+
+```javascript
+var arr = new Complex64Array( 3 );
+
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var str = arr.toString();
+// returns '1 + 1i,2 - 2i,3 + 3i'
+```
+
 </section>
 
 <!-- /.usage -->
