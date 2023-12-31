@@ -37,7 +37,6 @@ interface ValuesResults<K, T> {
 	[key: K]: Array<T>;
 }
 
-
 /**
 * Groups elements as arrays associated with distinct keys.
 *
