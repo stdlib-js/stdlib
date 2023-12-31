@@ -24,7 +24,7 @@ import flag = require( './index' );
 
 // The function returns an ndarray flag...
 {
-	flag<boolean>( zeros( [ 3, 2, 1 ] ), 'READONLY' ); // $ExpectType boolean
+	flag( zeros( [ 3, 2, 1 ] ), 'READONLY' ); // $ExpectType boolean | undefined
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...

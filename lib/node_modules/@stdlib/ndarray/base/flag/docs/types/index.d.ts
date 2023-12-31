@@ -20,12 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
-
-/**
-* Flag name.
-*/
-type Flag = string | symbol | number;
+import { ndarray, Flags } from '@stdlib/types/ndarray';
 
 /**
 * Returns a specified flag for a provided ndarray.
@@ -40,7 +35,7 @@ type Flag = string | symbol | number;
 * var o = flag( zeros( [ 3, 3, 3 ] ), 'READONLY' );
 * // returns <boolean>
 */
-declare function flag<T = unknown>( x: ndarray, name: Flag ): T;
+declare function flag<V extends keyof Flags>( x: ndarray, name: V ): Flags[V];
 
 
 // EXPORTS //
