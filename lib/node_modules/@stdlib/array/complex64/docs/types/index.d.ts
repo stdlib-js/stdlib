@@ -983,6 +983,41 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* // returns '1 + 1i,2 + 2i'
 	*/
 	toString(): string;
+
+	/**
+	* Returns a new typed array with the element at a provided index replaced with a provided value.
+	*
+	* @param index - element index
+	* @param value - new value
+	* @throws first argument must be an integer
+	* @throws second argument must be a complex number
+	* @throws index argument is out-of-bounds
+	* @returns modified typed array
+	*
+	* @example
+	* var realf = require( '@stdlib/complex/realf' );
+	* var imagf = require( '@stdlib/complex/imagf' );
+	* var Complex64 = require( '@stdlib/complex/float32' );
+	*
+	* var arr = new Complex64Array( 3 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	*
+	* var out = arr.with( 0, new Complex64( 4.0, 4.0 ) );
+	* // returns <Complex64Array>
+	*
+	* var z = out.get( 0 );
+	* // returns <Complex64>
+	*
+	* var re = realf( z );
+	* // returns 4.0
+	*
+	* var im = imagf( z );
+	* // returns 4.0
+	*/
+	with( index: number, value: ComplexLike ): Complex64Array;
 }
 
 /**
