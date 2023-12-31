@@ -2296,6 +2296,7 @@ ndarrayDataBuffer
 ndarrayDataType
 ndarrayDataTypes
 ndarrayDispatch
+ndarrayFlags
 ndarrayIndexModes
 ndarrayMinDataType
 ndarrayMostlySafeCasts
