@@ -37,7 +37,6 @@ interface IndicesResults<K, T> {
 	[key: K]: Array<T>;
 }
 
-
 /**
 * Groups element indices as arrays associated with distinct keys.
 *
