@@ -1037,7 +1037,7 @@ declare module '@stdlib/types/ndarray' {
 	*/
 	interface Flags<T = unknown> {
 		/**
-		* Numeric properties.
+		* Properties.
 		*/
 		[key: string | symbol | number]: T;
 
