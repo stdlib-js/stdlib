@@ -20,27 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
-
-/**
-* Flags and other meta information (e.g., memory layout of the array).
-*/
-interface Flags {
-	/**
-	* Boolean indicating if an array is row-major contiguous.
-	*/
-	ROW_MAJOR_CONTIGUOUS?: boolean;
-
-	/**
-	* Boolean indicating if an array is column-major contiguous.
-	*/
-	COLUMN_MAJOR_CONTIGUOUS?: boolean;
-
-	/**
-	* Boolean indicating if an array is read-only.
-	*/
-	READONLY?: boolean;
-}
+import { ndarray, Flags } from '@stdlib/types/ndarray';
 
 /**
 * Returns the flags of a provided ndarray.
@@ -59,7 +39,7 @@ interface Flags {
 * var o = flags( zeros( [ 3, 3, 3 ] ), false );
 * // returns {...}
 */
-declare function flags( x: ndarray, copy: boolean ): Flags;
+declare function flags<T = unknown>( x: ndarray, copy: boolean ): Flags<T>;
 
 
 // EXPORTS //
