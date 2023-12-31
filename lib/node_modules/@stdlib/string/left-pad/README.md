@@ -71,7 +71,7 @@ str = lpad( 'boop', 12, 'beep' );
 
     -   The function is **not** guaranteed to return a string having a length exactly equal to `len` (as explained above).
     -   The function does **not** truncate `pad` (from the end) in order to ensure the returned string has length `len`.
-    
+
     To replicate [`String.prototype.padStart`][mdn-string-padstart] truncation behavior
 
     ```javascript
