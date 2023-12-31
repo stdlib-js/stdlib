@@ -1,0 +1,42 @@
+
+{{alias}}( x, predicate[, thisArg] )
+    Splits element indices into two groups according to an predicate function.
+
+    When invoked, the predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: input array.
+
+    If a predicate function returns a truthy value, an array value is placed in
+    the first group; otherwise, an array value is placed in the second group.
+
+    If provided an empty array, the function returns an empty object.
+
+    Parameters
+    ----------
+    x: ArrayLike
+        Input array.
+
+    predicate: Function
+        Predicate function specifying which group an element in the input array
+        belongs to.
+
+    thisArg: any (optional)
+        Predicate function execution context.
+
+    Returns
+    -------
+    out: Object
+        Split results.
+
+    Examples
+    --------
+    > function fcn( v ) { return v[ 0 ] === 'b'; };
+    > var x = [ 'beep', 'boop', 'foo', 'bar' ];
+    > var out = {{alias}}( x, fcn )
+    [ [ 0, 1, 3 ], [ 2 ] ]
+
+    See Also
+    --------
+
