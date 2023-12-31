@@ -3693,6 +3693,7 @@ ndarrayDataBuffer,"\nndarrayDataBuffer( x:ndarray )\n    Returns the underlying 
 ndarrayDataType,"\nndarrayDataType( x:ndarray )\n    Returns the data type of a provided ndarray.\n"
 ndarrayDataTypes,"\nndarrayDataTypes( [kind:string] )\n    Returns a list of ndarray data types.\n"
 ndarrayDispatch,"\nndarrayDispatch( fcns:Function|ArrayLikeObject<Function>, \n  types:ArrayLikeObject, data:ArrayLikeObject|null, nargs:integer, nin:integer, \n  nout:integer )\n    Returns an ndarray function interface which performs multiple dispatch.\n"
+ndarrayFlags,"\nndarrayFlags( x:ndarray )\n    Returns the flags of a provided ndarray.\n"
 ndarrayIndexModes,"\nndarrayIndexModes()\n    Returns a list of ndarray index modes.\n"
 ndarrayMinDataType,"\nndarrayMinDataType( value:any )\n    Returns the minimum ndarray data type of the closest \"kind\" necessary for\n    storing a provided scalar value.\n"
 ndarrayMostlySafeCasts,"\nndarrayMostlySafeCasts( [dtype:any] )\n    Returns a list of ndarray data types to which a provided ndarray data type\n    can be safely cast and, for floating-point data types, can be downcast.\n"
