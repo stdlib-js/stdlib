@@ -24,10 +24,10 @@ import dtypes = require( './index' );
 // The function returns an array of data types...
 {
 	dtypes(); // $ExpectType DataType[]
+	dtypes( 'floating_point' ); // $ExpectType DataType[]
 }
 
-// The compiler throws an error if the function is provided arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	dtypes( 1 ); // $ExpectError
-	dtypes( 1, 2 ); // $ExpectError
+	dtypes( 'floating_point', 2 ); // $ExpectError
 }

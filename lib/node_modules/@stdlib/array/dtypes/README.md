@@ -40,7 +40,7 @@ limitations under the License.
 var dtypes = require( '@stdlib/array/dtypes' );
 ```
 
-#### dtypes()
+#### dtypes( \[kind] )
 
 Returns a list of array data types.
 
@@ -49,7 +49,7 @@ var out = dtypes();
 // e.g., returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
 ```
 
-The output `array` contains the following data types:
+When not provided a data type "kind", the function returns an array containing the following data types:
 
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
@@ -63,6 +63,25 @@ The output `array` contains the following data types:
 -   `uint32`: unsigned 32-bit integers.
 -   `uint8`: unsigned 8-bit integers.
 -   `uint8c`: unsigned clamped 8-bit integers.
+
+To return the subset of data types belonging to a specified data type kind, provide a `kind` argument.
+
+```javascript
+var out = dtypes( 'floating_point' );
+// returns [...]
+```
+
+The function supports the following data type kinds:
+
+-   `floating_point`: floating-point data types.
+-   `real_floating_point`: real-valued floating-point data types.
+-   `complex_floating_point`: complex-valued floating-point data types.
+-   `integer`: integer data types.
+-   `signed_integer`: signed integer data types.
+-   `unsigned_integer`: unsigned integer data types.
+-   `real`: real-valued data types.
+-   `numeric`: numeric data types.
+-   `all`: all data types.
 
 </section>
 
@@ -89,7 +108,6 @@ var indexOf = require( '@stdlib/utils/index-of' );
 var dtypes = require( '@stdlib/array/dtypes' );
 
 var DTYPES = dtypes();
-var bool;
 
 function isdtype( str ) {
     if ( indexOf( DTYPES, str ) === -1 ) {
@@ -98,7 +116,7 @@ function isdtype( str ) {
     return true;
 }
 
-bool = isdtype( 'float64' );
+var bool = isdtype( 'float64' );
 // returns true
 
 bool = isdtype( 'int16' );

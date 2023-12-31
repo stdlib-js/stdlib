@@ -20,18 +20,23 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { DataType } from '@stdlib/types/array';
+import { DataType, DataTypeKind } from '@stdlib/types/array';
 
 /**
 * Returns a list of array data types.
 *
+* @param kind - data type kind
 * @returns list of array data types
 *
 * @example
 * var list = dtypes();
 * // e.g., returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
+*
+* @example
+* var list = dtypes( 'floating_point' );
+* // returns [...]
 */
-declare function dtypes(): Array<DataType>;
+declare function dtypes( kind?: DataTypeKind ): Array<DataType>;
 
 
 // EXPORTS //
