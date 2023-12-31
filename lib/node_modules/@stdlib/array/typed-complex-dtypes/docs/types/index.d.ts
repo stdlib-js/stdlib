@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexDataType as DataType } from '@stdlib/types/array';
+import { ComplexFloatingPointDataType as DataType } from '@stdlib/types/array';
 
 /**
 * Returns a list of complex typed array data types.

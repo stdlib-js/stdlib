@@ -20,13 +20,13 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { FloatDataType, FloatTypedArray } from '@stdlib/types/array';
+import { RealFloatingPointDataType, FloatTypedArray } from '@stdlib/types/array';
 import * as random from '@stdlib/types/random';
 
 /**
 * Supported data types.
 */
-type DataType = FloatDataType | 'generic';
+type DataType = RealFloatingPointDataType | 'generic';
 
 /**
 * Output array.

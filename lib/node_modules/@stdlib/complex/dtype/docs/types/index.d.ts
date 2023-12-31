@@ -20,12 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex64, Complex128, ComplexDataType } from '@stdlib/types/complex';
+import { Complex64, Complex128, ComplexFloatingPointDataType } from '@stdlib/types/complex';
 
 /**
 * Complex number data type.
 */
-type DataType = ComplexDataType;
+type DataType = ComplexFloatingPointDataType;
 
 /**
 * Returns the data type of a complex number.

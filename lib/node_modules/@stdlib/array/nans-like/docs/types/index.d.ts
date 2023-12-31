@@ -20,12 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex128Array, Complex64Array, AnyArray, FloatOrComplexDataType } from '@stdlib/types/array';
+import { Complex128Array, Complex64Array, AnyArray, FloatingPointDataType } from '@stdlib/types/array';
 
 /**
 * Data type.
 */
-type DataType = FloatOrComplexDataType | 'generic';
+type DataType = FloatingPointDataType | 'generic';
 
 /**
 * Creates an array filled with NaNs and having the same length as a provided input array.
