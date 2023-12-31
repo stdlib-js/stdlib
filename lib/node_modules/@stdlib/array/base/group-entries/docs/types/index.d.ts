@@ -37,7 +37,6 @@ interface EntriesResults<K, T> {
 	[key: K]: Array<[ number, T ]>;
 }
 
-
 /**
 * Groups element entries as arrays associated with distinct keys.
 *
