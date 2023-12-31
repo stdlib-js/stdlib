@@ -909,6 +909,22 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* // returns -3.0
 	*/
 	subarray( begin?: number, end?: number ): Complex64Array;
+
+	/**
+	* Serializes an array as a string.
+	*
+	* @returns string
+	*
+	* @example
+	* var arr = new Complex128Array( 2 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	*
+	* var str = arr.toString();
+	* // returns '1 + 1i,2 + 2i'
+	*/
+	toString(): string;
 }
 
 /**
