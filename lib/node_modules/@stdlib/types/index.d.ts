@@ -1033,6 +1033,31 @@ declare module '@stdlib/types/ndarray' {
 	type Strides10D = Collection<number>;
 
 	/**
+	* Flags and other meta information (e.g., memory layout of the array).
+	*/
+	interface Flags<T = unknown> {
+		/**
+		* Numeric properties.
+		*/
+		[key: string | symbol | number]: T;
+
+		/**
+		* Boolean indicating if an array is row-major contiguous.
+		*/
+		ROW_MAJOR_CONTIGUOUS?: boolean;
+
+		/**
+		* Boolean indicating if an array is column-major contiguous.
+		*/
+		COLUMN_MAJOR_CONTIGUOUS?: boolean;
+
+		/**
+		* Boolean indicating if an array is read-only.
+		*/
+		READONLY?: boolean;
+	}
+
+	/**
 	* Interface describing an ndarray.
 	*
 	* @example
@@ -1084,22 +1109,7 @@ declare module '@stdlib/types/ndarray' {
 		/**
 		* Flags and other meta information (e.g., memory layout of the array).
 		*/
-		flags: {
-			/**
-			* Boolean indicating if an array is row-major contiguous.
-			*/
-			ROW_MAJOR_CONTIGUOUS: boolean;
-
-			/**
-			* Boolean indicating if an array is column-major contiguous.
-			*/
-			COLUMN_MAJOR_CONTIGUOUS: boolean;
-
-			/**
-			* Boolean indicating if an array is read-only.
-			*/
-			READONLY?: boolean;
-		};
+		flags: Flags;
 
 		/**
 		* Number of array elements.
