@@ -945,3 +945,7 @@
 "FE","invalid argument. Number of indices does not match the number of array dimensions. Array shape: (%s). Number of indices: %u.","RangeError"
 "FF","invalid argument. Each index argument must be either an integer, null, or undefined. Value: `%s`.","TypeError"
 "FG","invalid argument. First argument must be a complex number. Value: `%s`.","TypeError"
+"FH","invalid arguments. Input arrays must be broadcast compatible.","Error"
+"FI","invalid argument. The first and second arguments must have the same length.","RangeError"
+"FJ","invalid argument. First argument must be either an ndarray or an array of ndarrays. Value: `%s`.","TypeError"
+"FK","invalid argument. An ndarray argument must be an ndarray. Value: `%s`.","TypeError"
