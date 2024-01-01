@@ -72,7 +72,7 @@ type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 type EntriesResults<T> = [ Array<[ number, T ]>, Array<[ number, T ]> ];
 
 /**
-* Splits element entries into two groups according to an predicate function.
+* Splits element entries into two groups according to a predicate function.
 *
 * ## Notes
 *
