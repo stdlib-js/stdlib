@@ -2356,6 +2356,7 @@
 "@stdlib/string/num2words",num2words
 "@stdlib/number/ctor",Number
 "@stdlib/ndarray/numel",numel
+"@stdlib/ndarray/numel-dimension",numelDimension
 "@stdlib/string/num-grapheme-clusters",numGraphemeClusters
 "@stdlib/object/ctor",Object
 "@stdlib/utils/entries",objectEntries

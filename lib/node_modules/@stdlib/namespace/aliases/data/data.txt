@@ -2356,6 +2356,7 @@ NUM_CPUS
 num2words
 Number
 numel
+numelDimension
 numGraphemeClusters
 Object
 objectEntries
