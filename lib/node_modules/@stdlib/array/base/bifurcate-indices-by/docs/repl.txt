@@ -1,6 +1,6 @@
 
 {{alias}}( x, predicate[, thisArg] )
-    Splits element indices into two groups according to an predicate function.
+    Splits element indices into two groups according to a predicate function.
 
     When invoked, the predicate function is provided the following arguments:
 

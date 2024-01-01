@@ -20,7 +20,7 @@ limitations under the License.
 
 # bifurcateIndicesBy
 
-> Split element indices into two groups according to an predicate function.
+> Split element indices into two groups according to a predicate function.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,7 +42,7 @@ var bifurcateIndicesBy = require( '@stdlib/array/base/bifurcate-indices-by' );
 
 #### bifurcateIndicesBy( x, predicate\[, thisArg] )
 
-Splits element indices into two groups according to an predicate function.
+Splits element indices into two groups according to a predicate function.
 
 ```javascript
 function predicate( v ) {
@@ -55,7 +55,7 @@ var out = bifurcateIndicesBy( x, predicate );
 // returns [ [ 0, 1, 3 ], [ 2 ] ]
 ```
 
-An `predicate` function is provided the following arguments:
+A `predicate` function is provided the following arguments:
 
 -   **value**: current array element.
 -   **index**: current array element index.
