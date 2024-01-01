@@ -434,6 +434,42 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	every<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
 
 	/**
+	* Returns a modified typed array filled with a fill value.
+	*
+	* @param value - fill value
+	* @param start - starting index (inclusive)
+	* @param end - ending index (exclusive)
+	* @returns modified typed array
+	*
+	* @example
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	*
+	* var arr = new Complex128Array( 3 );
+	*
+	* arr.fill( new Complex128( 1.0, 1.0 ), 1 );
+	*
+	* var z = arr.get( 1 );
+	* // returns <Complex128>
+	*
+	* var re = real( z );
+	* // returns 1.0
+	*
+	* var im = imag( z );
+	* // returns 1.0
+	*
+	* z = arr.get( 2 );
+	* // returns <Complex128>
+	*
+	* re = real( z );
+	* // returns 1.0
+	*
+	* im = imag( z );
+	* // returns 1.0
+	*/
+	fill( value: ComplexLike, start?: number, end?: number ): Complex128Array;
+
+	/**
 	* Returns a new array containing the elements of an array which pass a test implemented by a predicate function.
 	*
 	* @param predicate - test function

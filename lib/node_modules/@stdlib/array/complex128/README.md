@@ -856,6 +856,114 @@ var count = context.count;
 // returns 3
 ```
 
+<a name="method-fill"></a>
+
+#### Complex128Array.prototype.fill( value\[, start\[, end]] )
+
+Returns a modified typed array filled with a fill value.
+
+```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+var arr = new Complex128Array( 3 );
+
+// Set all elements to the same value:
+arr.fill( new Complex128( 1.0, 1.0 ) );
+
+var z = arr.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 1.0
+
+var im = imag( z );
+// returns 1.0
+
+z = arr.get( 2 );
+// returns <Complex128>
+
+re = real( z );
+// returns 1.0
+
+im = imag( z );
+// returns 1.0
+
+// Fill all elements starting from the second element:
+arr.fill( new Complex128( 2.0, 2.0 ), 1 );
+
+z = arr.get( 1 );
+// returns <Complex128>
+
+re = real( z );
+// returns 2.0
+
+im = imag( z );
+// returns 2.0
+
+z = arr.get( 2 );
+// returns <Complex128>
+
+re = real( z );
+// returns 2.0
+
+im = imag( z );
+// returns 2.0
+
+// Fill all elements from first element until the second-to-last element:
+arr.fill( new Complex128( 3.0, 3.0 ), 0, 2 );
+
+z = arr.get( 0 );
+// returns <Complex128>
+
+re = real( z );
+// returns 3.0
+
+im = imag( z );
+// returns 3.0
+
+z = arr.get( 1 );
+// returns <Complex128>
+
+re = real( z );
+// returns 3.0
+
+im = imag( z );
+// returns 3.0
+```
+
+When a `start` and/or `end` index is negative, the respective index is determined relative to the last array element.
+
+```javascript
+var Complex128 = require( '@stdlib/complex/float64' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+var arr = new Complex128Array( 3 );
+
+// Set all array elements, except the last element, to the same value:
+arr.fill( new Complex128( 1.0, 1.0 ), 0, -1 );
+
+var z = arr.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 1.0
+
+var im = imag( z );
+// returns 1.0
+
+z = arr.get( arr.length - 1 );
+// returns <Complex128>
+
+re = real( z );
+// returns 0.0
+
+im = imag( z );
+// returns 0.0
+```
+
 <a name="method-filter"></a>
 
 #### Complex128Array.prototype.filter( predicate\[, thisArg] )
