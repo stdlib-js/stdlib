@@ -1475,6 +1475,36 @@ idx = arr.indexOf( new Complex128( 1.0, -1.0 ), 1 );
 // returns -1
 ```
 
+<a name="method-join"></a>
+
+#### Complex128Array.prototype.join( \[separator] )
+
+Returns a new string by concatenating all array elements.
+
+```javascript
+var arr = new Complex128Array( 3 );
+
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var str = arr.join();
+// returns '1 + 1i,2 - 2i,3 + 3i'
+```
+
+By default, the method separates serialized array elements with a comma. To use an alternative separator, provide a `separator` string.
+
+```javascript
+var arr = new Complex128Array( 3 );
+
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var str = arr.join( '/' );
+// returns '1 + 1i/2 - 2i/3 + 3i'
+```
+
 <a name="method-last-index-of"></a>
 
 #### Complex128Array.prototype.lastIndexOf( searchElement\[, fromIndex] )
