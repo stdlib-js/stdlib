@@ -1924,6 +1924,36 @@ var str = arr.toString();
 // returns '1 + 1i,2 - 2i,3 + 3i'
 ```
 
+<a name="method-with"></a>
+
+#### Complex128Array.prototype.with( index, value )
+
+Returns a new typed array with the element at a provided index replaced with a provided value.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+var Complex128 = require( '@stdlib/complex/float64' );
+
+var arr = new Complex128Array( 3 );
+
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 1 );
+
+var out = arr.with( 0, new Complex128( 4.0, 4.0 ) );
+// returns <Complex128Array>
+
+var z = out.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 4.0
+
+var im = imag( z );
+// returns 4.0
+```
+
 </section>
 
 <!-- /.usage -->
