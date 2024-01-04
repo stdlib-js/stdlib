@@ -1,0 +1,85 @@
+
+{{alias}}( prng, dtypes, dtype )
+    Constructor for creating arrays filled with pseudorandom values drawn from
+    a nullary PRNG.
+
+    Parameters
+    ----------
+    prng: Function
+        Unary pseudorandom value generator.
+
+    dtypes: Array<string>
+        List of supported output array data types.
+
+    dtype: string
+        Default output array data type.
+
+    Returns
+    -------
+    out: Object
+        Instance having methods for creating filled arrays.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > var fcn = {{alias:@stdlib/random/base/exponential}}.factory( 2.0 );
+    > var out = {{alias}}( fcn, dt, 'float64' );
+
+
+{{alias}}.prototype.generate( len[, options] )
+    Returns an array filled with pseudorandom values drawn from a nullary PRNG.
+
+    Parameters
+    ----------
+    len: integer
+        Output array length.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output array data type. Setting this option overrides the default output
+        array data type.
+
+    Returns
+    -------
+    out: Array|TypedArray
+        Output array.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > fcn = {{alias:@stdlib/random/base/exponential}}.factory( 2.0 );
+    > var r = {{alias}}( fcn, dt, 'float64' );
+    > var v = r.generate( 5 )
+    <Float64Array>
+
+
+{{alias}}.prototype.assign( out )
+    Fills an array with pseudorandom values drawn from a nullary PRNG.
+
+    Parameters
+    ----------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > var fcn = {{alias:@stdlib/random/base/exponential}}.factory( 2.0 );
+    > var r = {{alias}}( fcn, dt, 'float64' );
+    > var out = {{alias:@stdlib/array/zeros}}( 5, 'float64' )
+    <Float64Array>
+    > var v = r.assign( out )
+    <Float64Array>
+    > var bool = ( out === v )
+    true
+
+    See Also
+    --------
+
