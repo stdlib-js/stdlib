@@ -28,6 +28,32 @@
     <Float64Array>
 
 
+{{alias}}.assign( p, out )
+    Fills an array with pseudorandom numbers drawn from a geometric
+    distribution.
+
+    Parameters
+    ----------
+    p: number
+        Success probability (i.e., a value on the interval [0,1]).
+
+    out: Array<number>|TypedArray
+        Output array.
+
+    Returns
+    -------
+    out: Array<number>|TypedArray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/array/zeros}}( 3, 'float64' );
+    > var out = {{alias}}.assign( 0.01, x )
+    <Float64Array>
+    > var bool = ( out === x )
+    true
+
+
 {{alias}}.factory( [p, ][options] )
     Returns a function for creating arrays containing pseudorandom numbers drawn
     from a geometric distribution.
