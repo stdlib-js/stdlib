@@ -2421,6 +2421,7 @@
 "@stdlib/utils/push","@stdlib/utils-push"
 "@stdlib/time/quarter-of-year","@stdlib/time-quarter-of-year"
 "@stdlib/random/array/arcsine","@stdlib/random-array-arcsine"
+"@stdlib/random/array/bernoulli","@stdlib/random-array-bernoulli"
 "@stdlib/random/array/beta","@stdlib/random-array-beta"
 "@stdlib/random/array/betaprime","@stdlib/random-array-betaprime"
 "@stdlib/random/array/cosine","@stdlib/random-array-cosine"
