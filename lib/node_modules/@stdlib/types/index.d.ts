@@ -47,9 +47,19 @@ declare module '@stdlib/types/array' {
 	type RealDataType = RealFloatingPointDataType | IntegerDataType; // "real"
 
 	/**
+	* Data type for real-valued typed arrays.
+	*/
+	type RealAndGenericDataType = RealDataType | 'generic'; // "real_and_generic"
+
+	/**
 	* Data type for floating-point typed arrays.
 	*/
 	type RealFloatingPointDataType = 'float64' | 'float32'; // "real_floating_point"
+
+	/**
+	* Data type for floating-point typed arrays.
+	*/
+	type RealFloatingPointAndGenericDataType = RealFloatingPointDataType | 'generic'; // "real_floating_point_and_generic"
 
 	/**
 	* Data type for integer typed arrays.
@@ -57,9 +67,19 @@ declare module '@stdlib/types/array' {
 	type IntegerDataType = SignedIntegerDataType | UnsignedIntegerDataType; // "integer"
 
 	/**
+	* Data type for integer typed arrays.
+	*/
+	type IntegerAndGenericDataType = IntegerDataType | 'generic'; // "integer_and_generic"
+
+	/**
 	* Data type for signed integer typed arrays.
 	*/
 	type SignedIntegerDataType = 'int32' | 'int16' | 'int8'; // "signed_integer"
+
+	/**
+	* Data type for signed integer typed arrays.
+	*/
+	type SignedIntegerAndGenericDataType = SignedIntegerDataType | 'generic'; // "signed_integer_and_generic"
 
 	/**
 	* Data type for unsigned integer typed arrays.
@@ -67,9 +87,19 @@ declare module '@stdlib/types/array' {
 	type UnsignedIntegerDataType = 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // "unsigned_integer"
 
 	/**
+	* Data type for unsigned integer typed arrays.
+	*/
+	type UnsignedIntegerAndGenericDataType = UnsignedIntegerDataType | 'generic'; // "unsigned_integer_and_generic"
+
+	/**
 	* Data type for complex number typed arrays.
 	*/
 	type ComplexFloatingPointDataType = 'complex64' | 'complex128'; // "complex_floating_point"
+
+	/**
+	* Data type for complex number typed arrays.
+	*/
+	type ComplexFloatingPointAndGenericDataType = ComplexFloatingPointDataType | 'generic'; // "complex_floating_point_and_generic"
 
 	/**
 	* Data type for floating-point real or complex typed arrays.
@@ -77,14 +107,29 @@ declare module '@stdlib/types/array' {
 	type FloatingPointDataType = RealFloatingPointDataType | ComplexFloatingPointDataType; // "floating_point"
 
 	/**
+	* Data type for floating-point real or complex typed arrays.
+	*/
+	type FloatingPointAndGenericDataType = FloatingPointDataType | 'generic'; // "floating_point_and_generic"
+
+	/**
 	* Data type for real-valued or complex number typed arrays.
 	*/
 	type NumericDataType = RealDataType | ComplexFloatingPointDataType; // "numeric"
 
 	/**
+	* Data type for real-valued or complex number typed arrays.
+	*/
+	type NumericAndGenericDataType = NumericDataType | 'generic'; // "numeric_and_generic"
+
+	/**
+	* Strict data type "kinds".
+	*/
+	type StrictDataTypeKind = 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer';
+
+	/**
 	* Data type "kinds".
 	*/
-	type DataTypeKind = 'all' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer';
+	type DataTypeKind = StrictDataTypeKind | 'all' | 'numeric_and_generic' | 'real_and_generic' | 'floating_point_and_generic' | 'real_floating_point_and_generic' | 'complex_floating_point_and_generic' | 'integer_and_generic' | 'signed_integer_and_generic' | 'unsigned_integer_and_generic';
 
 	/**
 	* An array-like value.
