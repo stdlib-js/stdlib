@@ -141,14 +141,14 @@ import random = require( './index' );
 	random.factory( 0.01, { 'prng': null } ); // $ExpectError
 	random.factory( 0.01, { 'prng': [] } ); // $ExpectError
 	random.factory( 0.01, { 'prng': {} } ); // $ExpectError
-	random.factory( 0.01, { 'prng': true ); // $ExpectError
+	random.factory( 0.01, { 'prng': true } ); // $ExpectError
 
 	random.factory( { 'prng': 123 } ); // $ExpectError
 	random.factory( { 'prng': 'abc' } ); // $ExpectError
 	random.factory( { 'prng': null } ); // $ExpectError
 	random.factory( { 'prng': [] } ); // $ExpectError
 	random.factory( { 'prng': {} } ); // $ExpectError
-	random.factory( { 'prng': true ); // $ExpectError
+	random.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -175,7 +175,7 @@ import random = require( './index' );
 	random.factory( 0.01, { 'state': null } ); // $ExpectError
 	random.factory( 0.01, { 'state': [] } ); // $ExpectError
 	random.factory( 0.01, { 'state': {} } ); // $ExpectError
-	random.factory( 0.01, { 'state': true ); // $ExpectError
+	random.factory( 0.01, { 'state': true } ); // $ExpectError
 	random.factory( 0.01, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	random.factory( { 'state': 123 } ); // $ExpectError
@@ -183,7 +183,7 @@ import random = require( './index' );
 	random.factory( { 'state': null } ); // $ExpectError
 	random.factory( { 'state': [] } ); // $ExpectError
 	random.factory( { 'state': {} } ); // $ExpectError
-	random.factory( { 'state': true ); // $ExpectError
+	random.factory( { 'state': true } ); // $ExpectError
 	random.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 
