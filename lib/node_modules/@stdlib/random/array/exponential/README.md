@@ -60,6 +60,28 @@ var out = exponential( 10, 2.0, opts );
 // returns [...]
 ```
 
+#### exponential.assign( lambda, out )
+
+Fills an array with pseudorandom numbers drawn from an [exponential][@stdlib/random/base/exponential] distribution.
+
+```javascript
+var zeros = require( '@stdlib/array/zeros' );
+
+var x = zeros( 10, 'float64' );
+// returns <Float64Array>
+
+var out = exponential.assign( 2.0, x );
+// returns <Float64Array>
+
+var bool = ( out === x );
+// returns true
+```
+
+The function has the following parameters:
+
+-   **lambda**: rate parameter.
+-   **out**: output array.
+
 #### exponential.factory( \[lambda, ]\[options] )
 
 Returns a function for creating arrays containing pseudorandom numbers drawn from an [exponential][@stdlib/random/base/exponential] distribution.

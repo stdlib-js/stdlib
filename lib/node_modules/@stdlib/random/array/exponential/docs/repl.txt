@@ -28,6 +28,32 @@
     <Float64Array>
 
 
+{{alias}}.assign( lambda, out )
+    Fills an array with pseudorandom numbers drawn from an exponential
+    distribution.
+
+    Parameters
+    ----------
+    lambda: number
+        Rate parameter.
+
+    out: Array<number>|Float64Array|Float32Array
+        Output array.
+
+    Returns
+    -------
+    out: Array<number>|Float64Array|Float32Array
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/array/zeros}}( 3, 'float64' );
+    > var out = {{alias}}.assign( 2.0, x )
+    <Float64Array>
+    > var bool = ( out === x )
+    true
+
+
 {{alias}}.factory( [lambda, ][options] )
     Returns a function for creating arrays containing pseudorandom numbers drawn
     from an exponential distribution.
