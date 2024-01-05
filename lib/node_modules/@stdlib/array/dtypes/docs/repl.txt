@@ -30,6 +30,9 @@
     - numeric: numeric data types.
     - all: all data types.
 
+    Additionally, the function supports extending the "kinds" listed above by
+    appending a '_and_generic' suffix to the kind name (e.g., real_and_generic).
+
     Parameters
     ----------
     kind: string (optional)
@@ -43,9 +46,11 @@
     Examples
     --------
     > var out = {{alias}}()
-    <Array>
+    [...]
     > out = {{alias}}( 'floating_point' )
-    <Array>
+    [...]
+    > out = {{alias}}( 'floating_point_and_generic' )
+    [...]
 
     See Also
     --------

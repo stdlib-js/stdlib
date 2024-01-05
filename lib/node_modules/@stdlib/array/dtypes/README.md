@@ -46,7 +46,7 @@ Returns a list of array data types.
 
 ```javascript
 var out = dtypes();
-// e.g., returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
+// e.g., returns [ 'float32', 'float64', ... ]
 ```
 
 When not provided a data type "kind", the function returns an array containing the following data types:
@@ -82,6 +82,13 @@ The function supports the following data type kinds:
 -   `real`: real-valued data types.
 -   `numeric`: numeric data types.
 -   `all`: all data types.
+
+Additionally, the function supports extending the "kinds" listed above by appending an `_and_generic` suffix to the kind name (e.g., `real_and_generic`).
+
+```javascript
+var out = dtypes( 'floating_point_and_generic' );
+// returns [...]
+```
 
 </section>
 
