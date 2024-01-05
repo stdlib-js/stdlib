@@ -113,7 +113,7 @@ interface PRNG {
 */
 interface UnaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from an exponential distribution with rate parameter `lambda`.
+	* Returns an array containing pseudorandom numbers drawn from an exponential distribution.
 	*
 	* @param len - array length
 	* @param options - function options
@@ -122,7 +122,7 @@ interface UnaryFunction extends PRNG {
 	( len: number, options?: Options ): RandomArray;
 
 	/**
-	* Fills an array with pseudorandom numbers drawn from an exponential distribution with rate parameter `lambda`.
+	* Fills an array with pseudorandom numbers drawn from an exponential distribution.
 	*
 	* @param out - output array
 	* @returns output array
@@ -135,7 +135,7 @@ interface UnaryFunction extends PRNG {
 */
 interface BinaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from an exponential distribution with rate parameter `lambda`.
+	* Returns an array containing pseudorandom numbers drawn from an exponential distribution.
 	*
 	* @param len - array length
 	* @param lambda - rate parameter
@@ -145,7 +145,7 @@ interface BinaryFunction extends PRNG {
 	( len: number, lambda: number, options?: Options ): RandomArray;
 
 	/**
-	* Fills an array with pseudorandom numbers drawn from an exponential distribution with rate parameter `lambda`.
+	* Fills an array with pseudorandom numbers drawn from an exponential distribution.
 	*
 	* @param lambda - rate parameter
 	* @param out - output array
@@ -159,7 +159,7 @@ interface BinaryFunction extends PRNG {
 */
 interface Random extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from an exponential distribution with rate parameter `lambda`.
+	* Returns an array containing pseudorandom numbers drawn from an exponential distribution.
 	*
 	* @param len - array length
 	* @param lambda - rate parameter
@@ -173,7 +173,7 @@ interface Random extends PRNG {
 	( len: number, lambda: number, options?: Options ): RandomArray;
 
 	/**
-	* Fills an array with pseudorandom numbers drawn from an exponential distribution with rate parameter `lambda`.
+	* Fills an array with pseudorandom numbers drawn from an exponential distribution.
 	*
 	* @param lambda - rate parameter
 	* @param out - output array
@@ -249,7 +249,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Returns an array containing pseudorandom numbers drawn from an exponential distribution with rate parameter `lambda`.
+* Returns an array containing pseudorandom numbers drawn from an exponential distribution.
 *
 * @param len - array length
 * @param lambda - rate parameter
