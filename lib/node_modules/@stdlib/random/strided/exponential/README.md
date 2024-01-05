@@ -20,7 +20,7 @@ limitations under the License.
 
 # Exponential Random Numbers
 
-> Fill a strided array with pseudorandom numbers drawn from a [exponential][@stdlib/random/base/exponential] distribution.
+> Fill a strided array with pseudorandom numbers drawn from an [exponential][@stdlib/random/base/exponential] distribution.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var exponential = require( '@stdlib/random/strided/exponential' );
 
 #### exponential( N, lambda, sl, out, so\[, options] )
 
-Fills a strided array with pseudorandom numbers drawn from a [exponential][@stdlib/random/base/exponential] distribution.
+Fills a strided array with pseudorandom numbers drawn from an [exponential][@stdlib/random/base/exponential] distribution.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -116,7 +116,7 @@ exponential( out.length, [ 2.0 ], 0, out, 1, opts );
 
 #### exponential.ndarray( N, lambda, sl, ol, out, so, oo\[, options] )
 
-Fills a strided array with pseudorandom numbers drawn from a [exponential][@stdlib/random/base/exponential] distribution using alternative indexing semantics.
+Fills a strided array with pseudorandom numbers drawn from an [exponential][@stdlib/random/base/exponential] distribution using alternative indexing semantics.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
