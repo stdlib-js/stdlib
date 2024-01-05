@@ -113,13 +113,21 @@ interface PRNG {
 */
 interface UnaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a geometric distribution with success probability `p`.
+	* Returns an array containing pseudorandom numbers drawn from a geometric distribution.
 	*
 	* @param len - array length
 	* @param options - function options
 	* @returns output array
 	*/
 	( len: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a geometric distribution.
+	*
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( out: RandomArray ): RandomArray;
 }
 
 /**
@@ -127,7 +135,7 @@ interface UnaryFunction extends PRNG {
 */
 interface BinaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a geometric distribution with success probability `p`.
+	* Returns an array containing pseudorandom numbers drawn from a geometric distribution.
 	*
 	* @param len - array length
 	* @param p - success probability
@@ -135,6 +143,15 @@ interface BinaryFunction extends PRNG {
 	* @returns output array
 	*/
 	( len: number, p: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a geometric distribution.
+	*
+	* @param p - success probability
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( p: number, out: RandomArray ): RandomArray;
 }
 
 /**
@@ -142,7 +159,7 @@ interface BinaryFunction extends PRNG {
 */
 interface Random extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a geometric distribution with success probability `p`.
+	* Returns an array containing pseudorandom numbers drawn from a geometric distribution.
 	*
 	* @param len - array length
 	* @param p - success probability
@@ -154,6 +171,27 @@ interface Random extends PRNG {
 	* // returns <Float64Array>
 	*/
 	( len: number, p: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a geometric distribution.
+	*
+	* @param p - success probability
+	* @param out - output array
+	* @returns output array
+	*
+	* @example
+	* var zeros = require( '@stdlib/array/zeros' );
+	*
+	* var x = zeros( 10, 'float64' );
+	* // returns <Float64Array>
+	*
+	* var out = geometric( 0.01, out );
+	* // returns <Float64Array>
+	*
+	* var bool = ( out === x );
+	* // returns true
+	*/
+	assign( p: number, out: RandomArray ): RandomArray;
 
 	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from a geometric distribution.
@@ -211,7 +249,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Returns an array containing pseudorandom numbers drawn from a geometric distribution with success probability `p`.
+* Returns an array containing pseudorandom numbers drawn from a geometric distribution.
 *
 * @param len - array length
 * @param p - success probability

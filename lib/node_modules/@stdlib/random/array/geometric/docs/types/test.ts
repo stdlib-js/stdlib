@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import zeros = require( '@stdlib/array/zeros' );
 import random = require( './index' );
 
 
@@ -91,6 +92,46 @@ import random = require( './index' );
 	random(); // $ExpectError
 	random( 10 ); // $ExpectError
 	random( 10, 0.01, {}, {} ); // $ExpectError
+}
+
+// Attached to the main export is an `assign` method which returns an array...
+{
+	const x = zeros( 10, 'float64' );
+
+	random.assign( 0.01, x ); // $ExpectType RandomArray
+}
+
+// The compiler throws an error if the `assign` method is provided a first argument which is not a number...
+{
+	const x = zeros( 10, 'float64' );
+
+	random.assign( '5', x ); // $ExpectError
+	random.assign( true, x ); // $ExpectError
+	random.assign( false, x ); // $ExpectError
+	random.assign( null, x ); // $ExpectError
+	random.assign( [], x ); // $ExpectError
+	random.assign( {}, x ); // $ExpectError
+	random.assign( ( x: number ): number => x, x ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a second argument which is not a valid output array...
+{
+	random.assign( 0.01, '5' ); // $ExpectError
+	random.assign( 0.01, 5 ); // $ExpectError
+	random.assign( 0.01, true ); // $ExpectError
+	random.assign( 0.01, false ); // $ExpectError
+	random.assign( 0.01, null ); // $ExpectError
+	random.assign( 0.01, {} ); // $ExpectError
+	random.assign( 0.01, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
+{
+	const x = zeros( 10, 'float64' );
+
+	random.assign(); // $ExpectError
+	random.assign( x ); // $ExpectError
+	random.assign( x, 0.01, {} ); // $ExpectError
 }
 
 // Attached to main export is a `factory` method which returns a function...
