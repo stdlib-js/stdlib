@@ -130,7 +130,7 @@ import random = require( './index' );
 	const x = zeros( 10, 'float64' );
 
 	random.assign(); // $ExpectError
-	random.assign( 2.0 ); // $ExpectError
+	random.assign( x ); // $ExpectError
 	random.assign( x, 2.0, {} ); // $ExpectError
 }
 
