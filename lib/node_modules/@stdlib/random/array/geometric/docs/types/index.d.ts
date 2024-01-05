@@ -20,18 +20,13 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealFloatingPointDataType, FloatTypedArray } from '@stdlib/types/array';
+import { RealAndGenericDataType as DataType, RealTypedArray } from '@stdlib/types/array';
 import * as random from '@stdlib/types/random';
-
-/**
-* Supported data types.
-*/
-type DataType = RealFloatingPointDataType | 'generic';
 
 /**
 * Output array.
 */
-type RandomArray = FloatTypedArray | Array<number>;
+type RandomArray = RealTypedArray | Array<number>;
 
 /**
 * Interface defining PRNG options.
@@ -118,7 +113,7 @@ interface PRNG {
 */
 interface UnaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a geometric distribution with parameters `p` (success probability).
+	* Returns an array containing pseudorandom numbers drawn from a geometric distribution with success probability `p`.
 	*
 	* @param len - array length
 	* @param options - function options
@@ -132,7 +127,7 @@ interface UnaryFunction extends PRNG {
 */
 interface BinaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a geometric distribution with parameters `p` (success probability).
+	* Returns an array containing pseudorandom numbers drawn from a geometric distribution with success probability `p`.
 	*
 	* @param len - array length
 	* @param p - success probability
@@ -147,7 +142,7 @@ interface BinaryFunction extends PRNG {
 */
 interface Random extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a geometric distribution with parameters `p` (success probability).
+	* Returns an array containing pseudorandom numbers drawn from a geometric distribution with success probability `p`.
 	*
 	* @param len - array length
 	* @param p - success probability
@@ -169,7 +164,7 @@ interface Random extends PRNG {
 	*
 	* @param p - success probability
 	* @param options - function options
-	* @throws `p` must be a positive number
+	* @throws `p` must be a probability
 	* @throws must provide a valid state
 	* @returns function for creating arrays
 	*
@@ -216,7 +211,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Returns an array containing pseudorandom numbers drawn from a geometric distribution with parameter `p` (success probability).
+* Returns an array containing pseudorandom numbers drawn from a geometric distribution with success probability `p`.
 *
 * @param len - array length
 * @param p - success probability
