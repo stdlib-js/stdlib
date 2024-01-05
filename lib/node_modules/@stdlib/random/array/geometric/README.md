@@ -60,6 +60,28 @@ var out = geometric( 10, 0.01, opts );
 // returns [...]
 ```
 
+#### geometric.assign( p, out )
+
+Fills an array with pseudorandom numbers drawn from a [geometric][@stdlib/random/base/geometric] distribution.
+
+```javascript
+var zeros = require( '@stdlib/array/zeros' );
+
+var x = zeros( 10, 'float64' );
+// returns <Float64Array>
+
+var out = geometric.assign( 0.01, x );
+// returns <Float64Array>
+
+var bool = ( out === x );
+// returns true
+```
+
+The function has the following parameters:
+
+-   **p**: success probability.
+-   **out**: output array.
+
 #### geometric.factory( \[p, ]\[options] )
 
 Returns a function for creating arrays containing pseudorandom numbers drawn from a [geometric][@stdlib/random/base/geometric] distribution.
