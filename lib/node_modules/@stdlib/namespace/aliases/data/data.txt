@@ -2424,6 +2424,7 @@ random.array.arcsine
 random.array.bernoulli
 random.array.beta
 random.array.betaprime
+random.array.chi
 random.array.cosine
 random.array.discreteUniform
 random.array.exponential

@@ -2424,6 +2424,7 @@
 "@stdlib/random/array/bernoulli","@stdlib/random/base/bernoulli"
 "@stdlib/random/array/beta","@stdlib/random/base/beta,@stdlib/random/strided/beta"
 "@stdlib/random/array/betaprime","@stdlib/random/base/betaprime,@stdlib/random/strided/betaprime"
+"@stdlib/random/array/chi","@stdlib/random/base/chi"
 "@stdlib/random/array/cosine","@stdlib/random/base/cosine,@stdlib/random/strided/cosine"
 "@stdlib/random/array/discrete-uniform","@stdlib/random/array/uniform,@stdlib/random/base/discrete-uniform,@stdlib/random/strided/discrete-uniform"
 "@stdlib/random/array/exponential","@stdlib/random/base/exponential,@stdlib/random/strided/exponential"
