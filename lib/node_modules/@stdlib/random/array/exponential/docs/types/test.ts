@@ -25,8 +25,7 @@ import random = require( './index' );
 // The function returns an array...
 {
 	random( 10, 2.0 ); // $ExpectType RandomArray
-	random( 10, 1.0 ); // $ExpectType RandomArray
-	random( 10, 1.0, {} ); // $ExpectType RandomArray
+	random( 10, 2.0, {} ); // $ExpectType RandomArray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
