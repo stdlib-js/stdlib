@@ -2437,6 +2437,7 @@ random.array.mt19937
 random.array.normal
 random.array.poisson
 random.array.randu
+random.array.rayleigh
 random.array.uniform
 random.iterators.arcsine
 random.iterators.bernoulli

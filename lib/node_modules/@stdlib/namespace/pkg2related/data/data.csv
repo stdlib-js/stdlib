@@ -2437,6 +2437,7 @@
 "@stdlib/random/array/normal","@stdlib/random/base/normal,@stdlib/random/strided/normal"
 "@stdlib/random/array/poisson","@stdlib/random/base/poisson"
 "@stdlib/random/array/randu","@stdlib/random/array/uniform,@stdlib/random/base/randu,@stdlib/random/strided/randu"
+"@stdlib/random/array/rayleigh","@stdlib/random/base/rayleigh"
 "@stdlib/random/array/uniform","@stdlib/random/array/discrete-uniform,@stdlib/random/base/uniform,@stdlib/random/strided/uniform"
 "@stdlib/random/iter/arcsine","@stdlib/random/base/arcsine"
 "@stdlib/random/iter/bernoulli","@stdlib/random/base/bernoulli"

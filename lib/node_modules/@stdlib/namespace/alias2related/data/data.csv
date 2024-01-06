@@ -2437,6 +2437,7 @@ random.array.mt19937,"random.array.randu,base.random.mt19937,random.strided.mt19
 random.array.normal,"base.random.normal,random.strided.normal"
 random.array.poisson,"base.random.poisson"
 random.array.randu,"random.array.uniform,base.random.randu,random.strided.randu"
+random.array.rayleigh,"base.random.rayleigh"
 random.array.uniform,"random.array.discreteUniform,base.random.uniform,random.strided.uniform"
 random.iterators.arcsine,"base.random.arcsine"
 random.iterators.bernoulli,"base.random.bernoulli"
