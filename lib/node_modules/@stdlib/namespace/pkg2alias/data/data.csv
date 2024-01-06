@@ -2428,12 +2428,14 @@
 "@stdlib/random/array/discrete-uniform",random.array.discreteUniform
 "@stdlib/random/array/exponential",random.array.exponential
 "@stdlib/random/array/gamma",random.array.gamma
+"@stdlib/random/array/geometric",random.array.geometric
 "@stdlib/random/array/invgamma",random.array.invgamma
 "@stdlib/random/array/lognormal",random.array.lognormal
 "@stdlib/random/array/minstd",random.array.minstd
 "@stdlib/random/array/minstd-shuffle",random.array.minstdShuffle
 "@stdlib/random/array/mt19937",random.array.mt19937
 "@stdlib/random/array/normal",random.array.normal
+"@stdlib/random/array/poisson",random.array.poisson
 "@stdlib/random/array/randu",random.array.randu
 "@stdlib/random/array/uniform",random.array.uniform
 "@stdlib/random/iter/arcsine",random.iterators.arcsine

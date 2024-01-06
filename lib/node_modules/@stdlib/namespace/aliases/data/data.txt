@@ -2428,12 +2428,14 @@ random.array.cosine
 random.array.discreteUniform
 random.array.exponential
 random.array.gamma
+random.array.geometric
 random.array.invgamma
 random.array.lognormal
 random.array.minstd
 random.array.minstdShuffle
 random.array.mt19937
 random.array.normal
+random.array.poisson
 random.array.randu
 random.array.uniform
 random.iterators.arcsine
