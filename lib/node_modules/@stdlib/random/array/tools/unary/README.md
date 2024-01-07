@@ -140,9 +140,7 @@ var exponential = require( '@stdlib/random/base/exponential' );
 var dtypes = require( '@stdlib/array/dtypes' );
 var Random = require( '@stdlib/random/array/tools/unary' );
 
-var dt = dtypes( 'real_floating_point' );
-dt.push( 'generic' );
-
+var dt = dtypes( 'real_floating_point_and_generic' );
 var random = new Random( exponential, dt, 'float64' );
 
 var x = random.generate( 10, 2.0 );
