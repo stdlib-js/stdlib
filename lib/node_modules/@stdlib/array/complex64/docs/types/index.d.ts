@@ -873,6 +873,76 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	set( value: ArrayLike<number | ComplexLike> | RealOrComplexTypedArray | ComplexLike, i?: number ): void;
 
 	/**
+	* Copies a portion of a typed array to a new typed array.
+	*
+	* @param start - starting index (inclusive)
+	* @param end - ending index (exclusive)
+	* @throws indices must be integers
+	* @returns output array
+	*
+	* @example
+	* var realf = require( '@stdlib/complex/realf' );
+	* var imagf = require( '@stdlib/complex/imagf' );
+	*
+	* var arr = new Complex64Array( 5 );
+	*
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 2.0, -2.0 ], 1 );
+	* arr.set( [ 3.0, -3.0 ], 2 );
+	* arr.set( [ 4.0, -4.0 ], 3 );
+	* arr.set( [ 5.0, -5.0 ], 4 );
+	*
+	* var out = arr.slice();
+	* // returns <Complex64Array>
+	*
+	* var len = out.length;
+	* // returns 5
+	*
+	* var z = out.get( 0 );
+	* // returns <Complex64>
+	*
+	* var re = realf( z );
+	* // returns 1.0
+	*
+	* var im = imagf( z );
+	* // returns -1.0
+	*
+	* z = out.get( len-1 );
+	* // returns <Complex64>
+	*
+	* re = realf( z );
+	* // returns 5.0
+	*
+	* im = imagf( z );
+	* // returns -5.0
+	*
+	* out = arr.slice( 1, -2 );
+	* // returns <Complex64Array>
+	*
+	* len = out.length;
+	* // returns 2
+	*
+	* z = out.get( 0 );
+	* // returns <Complex64>
+	*
+	* re = realf( z );
+	* // returns 2.0
+	*
+	* im = imagf( z );
+	* // returns -2.0
+	*
+	* z = out.get( len-1 );
+	* // returns <Complex64>
+	*
+	* re = realf( z );
+	* // returns 3.0
+	*
+	* im = imagf( z );
+	* // returns -3.0
+	*/
+	slice( start?: number, end?: number ): Complex64Array;
+
+	/**
 	* Tests whether at least one element in an array passes a test implemented by a predicate function.
 	*
 	* @param predicate - test function
