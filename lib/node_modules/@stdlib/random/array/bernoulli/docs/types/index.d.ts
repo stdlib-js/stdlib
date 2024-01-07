@@ -167,7 +167,7 @@ interface Random extends PRNG {
 	* @returns output array
 	*
 	* @example
-	* var out = bernoulli 10, 0.5 );
+	* var out = bernoulli( 10, 0.5 );
 	* // returns <Float64Array>
 	*/
 	( len: number, p: number, options?: Options ): RandomArray;
@@ -185,7 +185,7 @@ interface Random extends PRNG {
 	* var x = zeros( 10, 'float64' );
 	* // returns <Float64Array>
 	*
-	* var out = bernoulli 0.5, out );
+	* var out = bernoulli( 0.5, out );
 	* // returns <Float64Array>
 	*
 	* var bool = ( out === x );
@@ -202,7 +202,7 @@ interface Random extends PRNG {
 	*
 	* @param p - success probability
 	* @param options - function options
-	* @throws `p` must be a probability
+	* @throws `p` must be a probability (i.e., a number on the interval [0,1])
 	* @throws must provide a valid state
 	* @returns function for creating arrays
 	*
@@ -257,7 +257,7 @@ interface Random extends PRNG {
 * @returns output array
 *
 * @example
-* var out = bernoulli 10, 0.5 );
+* var out = bernoulli( 10, 0.5 );
 * // returns <Float64Array>
 *
 * @example
