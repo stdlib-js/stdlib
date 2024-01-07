@@ -138,9 +138,7 @@ var exponential = require( '@stdlib/random/base/exponential' );
 var dtypes = require( '@stdlib/array/dtypes' );
 var Random = require( '@stdlib/random/array/tools/nullary' );
 
-var dt = dtypes( 'real_floating_point' );
-dt.push( 'generic' );
-
+var dt = dtypes( 'real_floating_point_and_generic' );
 var random = new Random( exponential.factory( 2.0 ), dt, 'float64' );
 
 var x = random.generate( 10 );
