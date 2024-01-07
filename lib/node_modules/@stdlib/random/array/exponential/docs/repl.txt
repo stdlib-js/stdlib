@@ -58,11 +58,11 @@
     Returns a function for creating arrays containing pseudorandom numbers drawn
     from an exponential distribution.
 
-    If provided `lambda`, the returned function returns random variates drawn
-    from the specified distribution.
+    If provided a distribution parameter, the returned function returns random
+    variates drawn from the specified distribution.
 
-    If not provided `lambda`, the returned function requires that `lambda` be
-    provided at each invocation.
+    If not provided a distribution parameter, the returned function requires
+    that distribution parameters be provided at each invocation.
 
     The returned function accepts the following options:
 
