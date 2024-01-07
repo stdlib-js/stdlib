@@ -69,7 +69,7 @@ var random = factory();
 
 The function has the following parameters:
 
--   **oaram1**: PRNG parameter. If provided a PRNG parameter, the function returns a partially applied function for creating arrays, which can be useful when wanting to pass around a parameterized function for array creation.
+-   **param1**: PRNG parameter. If provided a PRNG parameter, the function returns a partially applied function for creating arrays, which can be useful when wanting to pass around a parameterized function for array creation.
 -   **options**: function options.
 
 The function supports the following options:
