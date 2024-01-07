@@ -64,7 +64,7 @@ interface Routine {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -87,7 +87,7 @@ interface Routine {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -110,7 +110,7 @@ interface Routine {
 * @returns output array
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * // Create an array:
 * var out = new Float64Array( 10 );
@@ -119,7 +119,7 @@ interface Routine {
 * randu( out.length, out, 1 );
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * // Create an array:
 * var out = new Float64Array( 10 );

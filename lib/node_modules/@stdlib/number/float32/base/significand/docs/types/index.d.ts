@@ -25,17 +25,17 @@
 * @returns significand
 *
 * @example
-* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var s = significandf( toFloat32( 3.14e34 ) ); // => 10000011000010001110111
 * // returns 4293751
 *
 * @example
-* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var s = significandf( toFloat32( 3.14e-34 ) ); // => 10100001011000001010101
 * // returns 5288021
 *
 * @example
-* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var s = significandf( toFloat32( -3.14 ) ); // => 10010001111010111000011
 * // returns 4781507
 *

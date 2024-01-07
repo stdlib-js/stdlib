@@ -110,14 +110,14 @@ declare function typedarray( obj: ArrayLike<number> | Iterable<any>, dtype?: Num
 * @returns typed array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 16 );
 * var arr = typedarray( buf );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 16 );
 * var arr = typedarray( buf, 'float32' );
@@ -134,14 +134,14 @@ declare function typedarray( buffer: ArrayBuffer, dtype?: NumericDataType ): Rea
 * @returns typed array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 16 );
 * var arr = typedarray( buf, 8 );
 * // returns <Float64Array>[ 0.0 ]
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 16 );
 * var arr = typedarray( buf, 8, 'float32' );
@@ -159,14 +159,14 @@ declare function typedarray( buffer: ArrayBuffer, byteOffset?: number, dtype?: N
 * @returns typed array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = typedarray( buf, 8, 2 );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = typedarray( buf, 8, 2, 'int32' );

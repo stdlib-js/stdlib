@@ -26,7 +26,7 @@
 * @returns either the return value of `x` or the provided argument `y`
 *
 * @example
-* var randu = require( `@stdlib/random/base/randu` );
+* var randu = require( '@stdlib/random/base/randu' );
 *
 * function x() {
 *     if ( randu() < 0.5 ) {

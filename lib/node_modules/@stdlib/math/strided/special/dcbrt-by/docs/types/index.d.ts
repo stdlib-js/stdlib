@@ -93,7 +93,7 @@ interface Routine {
 	* @returns destination array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function accessor( v ) {
 	*     return v;
@@ -122,7 +122,7 @@ interface Routine {
 	* @returns destination array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function accessor( v ) {
 	*     return v;
@@ -150,7 +150,7 @@ interface Routine {
 * @returns destination array
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * function accessor( v ) {
 *     return v;
@@ -163,7 +163,7 @@ interface Routine {
 * // out => <Float64Array>[ 1.0, ~2.08, -3.0, ~4.327, -5.0 ]
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * function accessor( v ) {
 *     return v;

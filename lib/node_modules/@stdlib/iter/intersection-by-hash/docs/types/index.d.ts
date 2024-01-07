@@ -50,7 +50,7 @@ type HashFunction = ( value?: any ) => any;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function hashFcn( v ) {
 *     return v.toString();
@@ -90,7 +90,7 @@ declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, hashF
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function hashFcn( v ) {
 *     return v.toString();
@@ -132,7 +132,7 @@ declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function hashFcn( v ) {
 *     return v.toString();
@@ -176,7 +176,7 @@ declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function hashFcn( v ) {
 *     return v.toString();
@@ -217,7 +217,7 @@ declare function iterIntersectionByHash( iter0: Iterator, iter1: Iterator, iter2
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function hashFcn( v ) {
 *     return v.toString();

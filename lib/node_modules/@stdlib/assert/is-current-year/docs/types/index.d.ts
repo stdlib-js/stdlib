@@ -29,7 +29,7 @@
 * // returns true
 *
 * @example
-* var currentYear = require( `@stdlib/time/current-year` );
+* var currentYear = require( '@stdlib/time/current-year' );
 * var bool = isCurrentYear( currentYear() );
 * // returns true
 *

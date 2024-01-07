@@ -135,7 +135,7 @@ interface ForEachRightAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error ) {
 	*     if ( error ) {
@@ -186,7 +186,7 @@ interface ForEachRightAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error ) {
 	*     if ( error ) {
@@ -236,7 +236,7 @@ interface ForEachRightAsync {
 	* @returns function which invokes the provided function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( file, next ) {
 	*     var opts = {
@@ -291,7 +291,7 @@ interface ForEachRightAsync {
 	* @returns function which invokes the provided function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( file, next ) {
 	*     var opts = {
@@ -349,7 +349,7 @@ interface ForEachRightAsync {
 * @throws must provide valid options
 *
 * @example
-* var readFile = require( `@stdlib/fs/read-file` );
+* var readFile = require( '@stdlib/fs/read-file' );
 *
 * function done( error ) {
 *     if ( error ) {

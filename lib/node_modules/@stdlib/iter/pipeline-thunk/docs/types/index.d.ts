@@ -51,8 +51,8 @@ type IteratorThunk = ( iter: Iterator ) => any;
 * @returns iterator "thunk"
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
-* var iterSome = require( `@stdlib/iter/some` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
+* var iterSome = require( '@stdlib/iter/some' );
 *
 * var it = array2iterator( [ 0, 0, 1, 1, 1 ] );
 *

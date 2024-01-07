@@ -29,13 +29,13 @@ interface IsBigInt {
 	* @returns boolean indicating whether value is a BigInt
 	*
 	* @example
-	* var BigInt = require( `@stdlib/bigint/ctor` );
+	* var BigInt = require( '@stdlib/bigint/ctor' );
 	*
 	* var bool = isBigInt( BigInt( '1' ) );
 	* // returns true
 	*
 	* @example
-	* var BigInt = require( `@stdlib/bigint/ctor` );
+	* var BigInt = require( '@stdlib/bigint/ctor' );
 	*
 	* var bool = isBigInt( Object( BigInt( '1' ) ) );
 	* // returns true
@@ -53,13 +53,13 @@ interface IsBigInt {
 	* @returns boolean indicating if a value is a BigInt primitive
 	*
 	* @example
-	* var BigInt = require( `@stdlib/bigint/ctor` );
+	* var BigInt = require( '@stdlib/bigint/ctor' );
 	*
 	* var bool = isBigInt.isPrimitive( BigInt( '1' ) );
 	* // returns true
 	*
 	* @example
-	* var BigInt = require( `@stdlib/bigint/ctor` );
+	* var BigInt = require( '@stdlib/bigint/ctor' );
 	*
 	* var bool = isBigInt.isPrimitive( Object( BigInt( '1' ) ) );
 	* // returns false
@@ -77,13 +77,13 @@ interface IsBigInt {
 	* @returns boolean indicating if a value is a BigInt object
 	*
 	* @example
-	* var BigInt = require( `@stdlib/bigint/ctor` );
+	* var BigInt = require( '@stdlib/bigint/ctor' );
 	*
 	* var bool = isBigInt.isObject( BigInt( '1' ) );
 	* // returns false
 	*
 	* @example
-	* var BigInt = require( `@stdlib/bigint/ctor` );
+	* var BigInt = require( '@stdlib/bigint/ctor' );
 	*
 	* var bool = isBigInt.isObject( Object( BigInt( '1' ) ) );
 	* // returns true
@@ -102,37 +102,37 @@ interface IsBigInt {
 * @returns boolean indicating whether value is a BigInt
 *
 * @example
-* var BigInt = require( `@stdlib/bigint/ctor` );
+* var BigInt = require( '@stdlib/bigint/ctor' );
 *
 * var bool = isBigInt.isPrimitive( BigInt( '1' ) );
 * // returns true
 *
 * @example
-* var BigInt = require( `@stdlib/bigint/ctor` );
+* var BigInt = require( '@stdlib/bigint/ctor' );
 *
 * var bool = isBigInt.isPrimitive( Object( BigInt( '1' ) ) );
 * // returns false
 *
 * @example
-* var BigInt = require( `@stdlib/bigint/ctor` );
+* var BigInt = require( '@stdlib/bigint/ctor' );
 *
 * var bool = isBigInt.isPrimitive( BigInt( '1' ) );
 * // returns true
 *
 * @example
-* var BigInt = require( `@stdlib/bigint/ctor` );
+* var BigInt = require( '@stdlib/bigint/ctor' );
 *
 * var bool = isBigInt.isPrimitive( Object( BigInt( '1' ) ) );
 * // returns false
 *
 * @example
-* var BigInt = require( `@stdlib/bigint/ctor` );
+* var BigInt = require( '@stdlib/bigint/ctor' );
 *
 * var bool = isBigInt.isObject( BigInt( '1' ) );
 * // returns false
 *
 * @example
-* var BigInt = require( `@stdlib/bigint/ctor` );
+* var BigInt = require( '@stdlib/bigint/ctor' );
 *
 * var bool = isBigInt.isObject( Object( BigInt( '1' ) ) );
 * // returns true

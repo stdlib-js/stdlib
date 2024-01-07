@@ -35,7 +35,7 @@ type SliceArgument = Slice | number | null | undefined;
 * @returns MultiSlice object
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var s = args2multislice( [ void 0, new Slice( 0, 10, 1 ) ] );
 * // returns <MultiSlice>
@@ -44,7 +44,7 @@ type SliceArgument = Slice | number | null | undefined;
 * // returns [ null, <Slice> ]
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var s = args2multislice( [ new Slice( 0, 10, 1 ), void 0 ] );
 * // returns <MultiSlice>
@@ -53,7 +53,7 @@ type SliceArgument = Slice | number | null | undefined;
 * // returns [ <Slice>, null ]
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var s = args2multislice( [ new Slice( 0, 10, 1 ), void 0, void 0, new Slice( 0, 10, 1 ) ] );
 * // returns <MultiSlice>
@@ -62,7 +62,7 @@ type SliceArgument = Slice | number | null | undefined;
 * // returns [ <Slice>, null, null, <Slice> ]
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var s = args2multislice( [ void 0, new Slice( 0, 10, 1 ), null,  void 0, new Slice( 2, 9, 2 ), null, void 0 ] );
 * // returns <MultiSlice>

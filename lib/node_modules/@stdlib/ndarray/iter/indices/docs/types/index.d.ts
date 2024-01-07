@@ -49,7 +49,7 @@ interface Options {
 * @returns iterator
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ], {
 *     'dtype': 'float64'

@@ -69,7 +69,7 @@ interface Routine {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -99,7 +99,7 @@ interface Routine {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -127,7 +127,7 @@ interface Routine {
 * @returns output array
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * // Create an array:
 * var out = new Float64Array( 10 );
@@ -136,7 +136,7 @@ interface Routine {
 * arcsine( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * // Create an array:
 * var out = new Float64Array( 10 );

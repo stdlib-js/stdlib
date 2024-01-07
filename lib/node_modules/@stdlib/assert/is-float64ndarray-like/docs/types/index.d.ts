@@ -25,8 +25,8 @@
 * @returns boolean indicating if a value is an ndarray-like object whose underlying data type is `float64`
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var arr = ndarray( 'float64', new Float64Array( [ 0, 0, 0, 0 ] ), [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 *

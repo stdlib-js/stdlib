@@ -25,7 +25,7 @@
 * @returns policy string
 *
 * @example
-* var str2enum = require( `@stdlib/ndarray/base/output-policy-str2enum` );
+* var str2enum = require( '@stdlib/ndarray/base/output-policy-str2enum' );
 *
 * var v = str2enum( 'same' );
 * // returns <number>

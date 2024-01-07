@@ -31,8 +31,8 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @throws arrays must have the same shape
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * // Create data buffers:
 * var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );

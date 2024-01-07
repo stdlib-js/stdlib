@@ -49,7 +49,7 @@ interface Options {
 * @returns result
 *
 * @example
-* var iterContinuedFractionSeq = require( `@stdlib/math/iter/sequences/continued-fraction` );
+* var iterContinuedFractionSeq = require( '@stdlib/math/iter/sequences/continued-fraction' );
 *
 * // Create an iterator for generating continued fraction terms:
 * var it = iterContinuedFractionSeq( 3.245 );

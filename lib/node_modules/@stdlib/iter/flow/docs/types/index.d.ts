@@ -84,9 +84,9 @@ declare class FluentIterator {
 * @returns constructor
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
-* var iterHead = require( `@stdlib/iter/head` );
-* var iterSome = require( `@stdlib/iter/some` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
+* var iterHead = require( '@stdlib/iter/head' );
+* var iterSome = require( '@stdlib/iter/some' );
 *
 * // Create a "fluent" interface:
 * var FluentIterator = iterFlow({

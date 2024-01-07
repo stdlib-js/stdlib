@@ -25,7 +25,7 @@
 * @returns boolean indicating whether value is an `ArrayBuffer` view
 *
 * @example
-* var Int8Array = require( `@stdlib/array/int8` );
+* var Int8Array = require( '@stdlib/array/int8' );
 * var bool = isArrayBufferView( new Int8Array() );
 * // returns true
 *

@@ -110,14 +110,14 @@ declare function realarray( obj: ArrayLike<number> | Iterable<any>, dtype?: Data
 * @returns typed array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 16 );
 * var arr = realarray( buf );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 16 );
 * var arr = realarray( buf, 'float32' );
@@ -134,14 +134,14 @@ declare function realarray( buffer: ArrayBuffer, dtype?: DataType ): TypedArray;
 * @returns typed array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 16 );
 * var arr = realarray( buf, 8 );
 * // returns <Float64Array>[ 0.0 ]
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 16 );
 * var arr = realarray( buf, 8, 'float32' );
@@ -159,14 +159,14 @@ declare function realarray( buffer: ArrayBuffer, byteOffset?: number, dtype?: Da
 * @returns typed array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = realarray( buf, 8, 2 );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = realarray( buf, 8, 2, 'int32' );

@@ -29,7 +29,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns boolean indicating whether an ndarray is read-only
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
 *     'readonly': true

@@ -36,7 +36,7 @@ type Iterator = Iter | IterableIterator;
 * @returns iterator
 *
 * @example
-* var uniform = require( `@stdlib/random/iter/uniform` );
+* var uniform = require( '@stdlib/random/iter/uniform' );
 *
 * var iter = iterLogit( uniform( 0.0, 1.0 ) );
 *

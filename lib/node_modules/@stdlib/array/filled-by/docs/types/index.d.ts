@@ -91,7 +91,7 @@ declare function filledarrayBy( dtype?: DataType ): ArrayOrTypedArray; // eslint
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var arr = filledarrayBy( 5, constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
@@ -123,7 +123,7 @@ declare function filledarrayBy( length: number, clbk: Callback, thisArg?: any ):
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var arr = filledarrayBy( 5, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
@@ -139,7 +139,7 @@ declare function filledarrayBy( length: number, dtype: DataType, clbk: Callback,
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var arr = filledarrayBy( [ 5.0, -3.0, 2.0 ], constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
@@ -171,7 +171,7 @@ declare function filledarrayBy( array: Collection, clbk: Callback, thisArg?: any
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var arr = filledarrayBy( [ 5.0, -3.0, 2.0 ], 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
@@ -187,8 +187,8 @@ declare function filledarrayBy( array: Collection, dtype: DataType, clbk: Callba
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
-* var iterConstant = require( `@stdlib/iter/constant` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
+* var iterConstant = require( '@stdlib/iter/constant' );
 *
 * var it = iterConstant( 3.0, {
 *     'iter': 3
@@ -223,8 +223,8 @@ declare function filledarrayBy( iterable: IterableIterator, callback: Callback, 
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
-* var iterConstant = require( `@stdlib/iter/constant` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
+* var iterConstant = require( '@stdlib/iter/constant' );
 *
 * var it = iterConstant( 3.0, {
 *     'iter': 3
@@ -249,8 +249,8 @@ declare function filledarrayBy( iterable: IterableIterator, dtype: DataType, cal
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarrayBy( buf, 8, 2, constantFunction( 1.0 ) );
@@ -289,8 +289,8 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length:
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarrayBy( buf, 8, 2, 'float64', constantFunction( 1.0 ) );
@@ -312,8 +312,8 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length:
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarrayBy( buf, 8, constantFunction( 1.0 ) );
@@ -351,8 +351,8 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, clbk: C
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarrayBy( buf, 8, 'float64', constantFunction( 1.0 ) );
@@ -373,8 +373,8 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, dtype: 
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarrayBy( buf, constantFunction( 1.0 ) );
@@ -411,8 +411,8 @@ declare function filledarrayBy( buffer: ArrayBuffer, clbk: Callback, thisArg?: a
 * @returns filled array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarrayBy( buf, 'float64', constantFunction( 1.0 ) );

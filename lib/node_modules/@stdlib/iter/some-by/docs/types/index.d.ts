@@ -66,7 +66,7 @@ type Predicate = Nullary | Unary | Binary;
 * @returns boolean indicating whether at least `n` iterated values pass a test implemented by a predicate function
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function predicate( v ) {
 *     return ( v > 0 );

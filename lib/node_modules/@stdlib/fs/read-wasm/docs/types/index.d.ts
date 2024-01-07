@@ -53,8 +53,8 @@ interface ReadWASM {
 	* @param clbk - callback to invoke after reading a file
 	*
 	* @example
-	* var join = require( `path` ).join;
-	* var instanceOf = require( `@stdlib/assert/instance-of` );
+	* var join = require( 'path' ).join;
+	* var instanceOf = require( '@stdlib/assert/instance-of' );
 	*
 	* var fpath = join( __dirname, 'foo.wasm' );
 	* readWASM( fpath, onRead );
@@ -75,8 +75,8 @@ interface ReadWASM {
 	* @param clbk - callback to invoke after reading a file
 	*
 	* @example
-	* var join = require( `path` ).join;
-	* var instanceOf = require( `@stdlib/assert/instance-of` );
+	* var join = require( 'path' ).join;
+	* var instanceOf = require( '@stdlib/assert/instance-of' );
 	*
 	* var fpath = join( __dirname, 'foo.wasm' );
 	* readWASM( fpath, onRead );
@@ -99,8 +99,8 @@ interface ReadWASM {
 	* @returns file contents or an error
 	*
 	* @example
-	* var join = require( `path` ).join;
-	* var instanceOf = require( `@stdlib/assert/instance-of` );
+	* var join = require( 'path' ).join;
+	* var instanceOf = require( '@stdlib/assert/instance-of' );
 	*
 	* var fpath = join( __dirname, 'foo.wasm' );
 	* var out = readWASM.sync( fpath );
@@ -121,8 +121,8 @@ interface ReadWASM {
 * @param clbk - callback to invoke after reading a file
 *
 * @example
-* var join = require( `path` ).join;
-* var instanceOf = require( `@stdlib/assert/instance-of` );
+* var join = require( 'path' ).join;
+* var instanceOf = require( '@stdlib/assert/instance-of' );
 *
 * var fpath = join( __dirname, 'foo.wasm' );
 * readWASM( fpath, onRead );
@@ -135,8 +135,8 @@ interface ReadWASM {
 * }
 *
 * @example
-* var join = require( `path` ).join;
-* var instanceOf = require( `@stdlib/assert/instance-of` );
+* var join = require( 'path' ).join;
+* var instanceOf = require( '@stdlib/assert/instance-of' );
 *
 * var fpath = join( __dirname, 'foo.wasm' );
 * var out = readWASM.sync( fpath );

@@ -25,8 +25,8 @@
 * @returns boolean indicating if a value is a 1-dimensional ndarray-like object whose underlying data type is `float32`
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var Float32Array = require( '@stdlib/array/float32' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var arr = ndarray( 'float32', new Float32Array( [ 0, 0, 0, 0 ] ), [ 4 ], [ 1 ], 0, 'row-major' );
 *

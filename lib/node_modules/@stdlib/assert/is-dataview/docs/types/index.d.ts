@@ -25,8 +25,8 @@
 * @returns boolean indicating whether value is a DataView
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
-* var DataView = require( `@stdlib/array/dataview` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
+* var DataView = require( '@stdlib/array/dataview' );
 *
 * var bool = isDataView( new DataView( new ArrayBuffer( 10 ) ) );
 * // returns true

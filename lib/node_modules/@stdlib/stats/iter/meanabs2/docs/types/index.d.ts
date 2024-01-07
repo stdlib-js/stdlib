@@ -29,7 +29,7 @@ import { Iterator } from '@stdlib/types/iter';
 * @returns arithmetic mean of squared absolute values
 *
 * @example
-* var runif = require( `@stdlib/random/iter/uniform` );
+* var runif = require( '@stdlib/random/iter/uniform' );
 *
 * var rand = runif( -10.0, 10.0, {
 *     'iter': 100

@@ -75,7 +75,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -129,7 +129,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -183,7 +183,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, result ) {
 	*     if ( error ) {
@@ -280,7 +280,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, result ) {
 	*     if ( error ) {
@@ -392,7 +392,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -446,7 +446,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -500,7 +500,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error ) {
 	*     if ( error ) {
@@ -551,7 +551,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error ) {
 	*     if ( error ) {
@@ -646,7 +646,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, result ) {
 	*     if ( error ) {
@@ -687,7 +687,7 @@ interface Namespace {
 	* @param done - callback to invoke upon completion
 	*
 	* @example
-	* var randu = require( `@stdlib/random/base/randu` );
+	* var randu = require( '@stdlib/random/base/randu' );
 	*
 	* function predicate( clbk ) {
 	*     setTimeout( onTimeout, 0 );
@@ -715,7 +715,7 @@ interface Namespace {
 	* @param done - callback to invoke upon completion
 	*
 	* @example
-	* var randu = require( `@stdlib/random/base/randu` );
+	* var randu = require( '@stdlib/random/base/randu' );
 	*
 	* function predicate( clbk ) {
 	*     setTimeout( onTimeout, 0 );
@@ -766,7 +766,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, results ) {
 	*     if ( error ) {
@@ -816,7 +816,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, results ) {
 	*     if ( error ) {
@@ -908,7 +908,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( key, value, next ) {
 	*     var opts = {
@@ -968,7 +968,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var stat = require( `fs` ).stat;
+	* var stat = require( 'fs' ).stat;
 	*
 	* function getStats( file, next ) {
 	*     stat( file, onStats );
@@ -1022,7 +1022,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -1076,7 +1076,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -1131,7 +1131,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, acc ) {
 	*     if ( error ) {
@@ -1185,7 +1185,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, acc ) {
 	*     if ( error ) {
@@ -1271,7 +1271,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -1327,7 +1327,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -1386,7 +1386,7 @@ interface Namespace {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, result ) {
 	*     if ( error ) {
@@ -1426,7 +1426,7 @@ interface Namespace {
 	* @param done - callback to invoke upon completion
 	*
 	* @example
-	* var randu = require( `@stdlib/random/base/randu` );
+	* var randu = require( '@stdlib/random/base/randu' );
 	*
 	* function x( clbk ) {
 	*     setTimeout( onTimeout, 0 );
@@ -1457,7 +1457,7 @@ interface Namespace {
 	* @param done - callback to invoke upon completion
 	*
 	* @example
-	* var randu = require( `@stdlib/random/base/randu` );
+	* var randu = require( '@stdlib/random/base/randu' );
 	*
 	* function x( clbk ) {
 	*     setTimeout( onTimeout, 0 );

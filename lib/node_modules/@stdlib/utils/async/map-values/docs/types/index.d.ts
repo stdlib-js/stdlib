@@ -164,7 +164,7 @@ interface MapValuesAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var stat = require( `fs` ).stat;
+	* var stat = require( 'fs' ).stat;
 	*
 	* function getStats( file, next ) {
 	*     stat( file, onStats );
@@ -389,7 +389,7 @@ interface MapValuesAsync {
 * @throws must provide valid options
 *
 * @example
-* var stat = require( `fs` ).stat;
+* var stat = require( 'fs' ).stat;
 *
 * function getStats( file, next ) {
 *     stat( file, onStats );

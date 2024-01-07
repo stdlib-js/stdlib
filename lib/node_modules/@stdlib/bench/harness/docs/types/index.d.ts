@@ -427,7 +427,7 @@ interface Harness {
 	* @param options - stream options
 	*
 	* @example
-	* var stdout = require( `@stdlib/streams/node/stdout` );
+	* var stdout = require( '@stdlib/streams/node/stdout' );
 	*
 	* var harness = bench.createHarness();
 	* var stream = harness.createStream();
@@ -460,7 +460,7 @@ interface Harness {
 	* -   **Warning**: a running benchmark may finish **after** closing a harness.
 	*
 	* @example
-	* var stdout = require( `@stdlib/streams/node/stdout` );
+	* var stdout = require( '@stdlib/streams/node/stdout' );
 	*
 	* var harness = bench.createHarness();
 	*
@@ -504,7 +504,7 @@ interface Harness {
 	* -   **Warning**: a running benchmark may finish **after** exiting a harness.
 	*
 	* @example
-	* var stdout = require( `@stdlib/streams/node/stdout` );
+	* var stdout = require( '@stdlib/streams/node/stdout' );
 	*
 	* var harness = bench.createHarness();
 	*

@@ -179,10 +179,10 @@ type Constructor = new( re: number, im: number ) => ComplexLike;
 * @returns wrapped function
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
-* var realf = require( `@stdlib/complex/realf` );
-* var imagf = require( `@stdlib/complex/imagf` );
-* var randu = require( `@stdlib/random/base/randu` );
+* var Complex64 = require( '@stdlib/complex/float32' );
+* var realf = require( '@stdlib/complex/realf' );
+* var imagf = require( '@stdlib/complex/imagf' );
+* var randu = require( '@stdlib/random/base/randu' );
 *
 * function randComplex() {
 *     return new Complex64( randu(), randu() );
@@ -218,10 +218,10 @@ declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
 * @returns wrapped function
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
-* var cidentityf = require( `@stdlib/math/base/special/cidentityf` );
-* var realf = require( `@stdlib/complex/realf` );
-* var imagf = require( `@stdlib/complex/imagf` );
+* var Complex64 = require( '@stdlib/complex/float32' );
+* var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
+* var realf = require( '@stdlib/complex/realf' );
+* var imagf = require( '@stdlib/complex/imagf' );
 *
 * var f = wrap( cidentityf, 1, Complex64 );
 *
@@ -253,10 +253,10 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 * @returns wrapped function
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
-* var caddf = require( `@stdlib/math/base/ops/caddf` );
-* var realf = require( `@stdlib/complex/realf` );
-* var imagf = require( `@stdlib/complex/imagf` );
+* var Complex64 = require( '@stdlib/complex/float32' );
+* var caddf = require( '@stdlib/math/base/ops/caddf' );
+* var realf = require( '@stdlib/complex/realf' );
+* var imagf = require( '@stdlib/complex/imagf' );
 *
 * var f = wrap( caddf, 2, Complex64 );
 *
@@ -288,9 +288,9 @@ declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary
 * @returns wrapped function
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
-* var realf = require( `@stdlib/complex/realf` );
-* var imagf = require( `@stdlib/complex/imagf` );
+* var Complex64 = require( '@stdlib/complex/float32' );
+* var realf = require( '@stdlib/complex/realf' );
+* var imagf = require( '@stdlib/complex/imagf' );
 *
 * function add( x, y, z ) {
 *     var re = realf( x ) + realf( y ) + realf( z );
@@ -328,9 +328,9 @@ declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTerna
 * @returns wrapped function
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
-* var realf = require( `@stdlib/complex/realf` );
-* var imagf = require( `@stdlib/complex/imagf` );
+* var Complex64 = require( '@stdlib/complex/float32' );
+* var realf = require( '@stdlib/complex/realf' );
+* var imagf = require( '@stdlib/complex/imagf' );
 *
 * function add( x, y, z, w ) {
 *     var re = realf( x ) + realf( y ) + realf( z ) + realf( w );
@@ -368,9 +368,9 @@ declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQu
 * @returns wrapped function
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
-* var realf = require( `@stdlib/complex/realf` );
-* var imagf = require( `@stdlib/complex/imagf` );
+* var Complex64 = require( '@stdlib/complex/float32' );
+* var realf = require( '@stdlib/complex/realf' );
+* var imagf = require( '@stdlib/complex/imagf' );
 *
 * function add( x, y, z, w, v ) {
 *     var re = realf( x ) + realf( y ) + realf( z ) + realf( w ) + realf( v );
@@ -408,9 +408,9 @@ declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuina
 * @returns wrapped function
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
-* var realf = require( `@stdlib/complex/realf` );
-* var imagf = require( `@stdlib/complex/imagf` );
+* var Complex64 = require( '@stdlib/complex/float32' );
+* var realf = require( '@stdlib/complex/realf' );
+* var imagf = require( '@stdlib/complex/imagf' );
 *
 * function add( x, y, z, w, v, t ) {
 *     var re = realf( x ) + realf( y ) + realf( z ) + realf( w ) + realf( v ) + realf( t );

@@ -29,7 +29,7 @@ import { Buffer } from 'buffer';
 * @returns new `Buffer` instance
 *
 * @example
-* var fromArray = require( `@stdlib/buffer/from-array` );
+* var fromArray = require( '@stdlib/buffer/from-array' );
 *
 * var b1 = fromArray( [ 1, 2, 3, 4 ] );
 * // returns <Buffer>

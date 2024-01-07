@@ -25,8 +25,8 @@
 * @returns boolean indicating if a value is a 1-dimensional ndarray-like object whose underlying data type is `complex64`
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var arr = ndarray( 'complex64', new Complex64Array( [ 0, 0, 0, 0, 0, 0, 0, 0 ] ), [ 4 ], [ 1 ], 0, 'row-major' );
 *

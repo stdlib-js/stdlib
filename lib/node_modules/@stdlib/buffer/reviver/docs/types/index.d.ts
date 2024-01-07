@@ -26,7 +26,7 @@
 * @returns value or Buffer
 *
 * @example
-* var parseJSON = require( `@stdlib/utils/parse-json` );
+* var parseJSON = require( '@stdlib/utils/parse-json' );
 *
 * var str = '{"type":"Buffer","data":[5,3]}';
 *

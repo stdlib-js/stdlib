@@ -47,9 +47,9 @@ type Quinary<T, U, V, W, X, Y> = ( v1: T, v2: U, v3: V, v4: W, v5: X ) => Y;
 * @param fcn - quinary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add5` );
-* var ones3d = require( `@stdlib/array/base/ones3d` );
-* var zeros3d = require( `@stdlib/array/base/zeros3d` );
+* var add = require( '@stdlib/math/base/ops/add5' );
+* var ones3d = require( '@stdlib/array/base/ones3d' );
+* var zeros3d = require( '@stdlib/array/base/zeros3d' );
 *
 * var shape = [ 1, 2, 2 ];
 *

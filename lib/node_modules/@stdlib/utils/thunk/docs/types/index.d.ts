@@ -26,7 +26,7 @@
 * @returns thunk
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
+* var add = require( '@stdlib/math/base/ops/add' );
 *
 * var f = thunk( add, 2, 3 );
 * // returns <Function>

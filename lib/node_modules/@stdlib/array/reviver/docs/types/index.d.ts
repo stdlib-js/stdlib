@@ -26,7 +26,7 @@
 * @returns value or typed array
 *
 * @example
-* var parseJSON = require( `@stdlib/utils/parse-json` );
+* var parseJSON = require( '@stdlib/utils/parse-json' );
 *
 * var str = '{"type":"Float64Array","data":[5,3]}';
 *

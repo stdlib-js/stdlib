@@ -128,7 +128,7 @@ type ExtendedIterator = ExtendedIter | ExtendedIterableIterator;
 * @returns iterator
 *
 * @example
-* var iterSineWave = require( `@stdlib/simulate/iter/sine-wave` );
+* var iterSineWave = require( '@stdlib/simulate/iter/sine-wave' );
 *
 * var sine = iterSineWave({
 *     'iter': 100

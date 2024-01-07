@@ -273,7 +273,7 @@ interface GroupByAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, result ) {
 	*     if ( error ) {
@@ -323,7 +323,7 @@ interface GroupByAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, result ) {
 	*     if ( error ) {
@@ -373,7 +373,7 @@ interface GroupByAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, result ) {
 	*     if ( error ) {
@@ -417,7 +417,7 @@ interface GroupByAsync {
 	* @param done - function to invoke upon completion
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, result ) {
 	*     if ( error ) {
@@ -466,7 +466,7 @@ interface GroupByAsync {
 	* @returns function which invokes the indicator function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function indicator( file, next ) {
 	*     var opts = {
@@ -525,7 +525,7 @@ interface GroupByAsync {
 	* @returns function which invokes the indicator function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function indicator( file, next ) {
 	*     var opts = {
@@ -584,7 +584,7 @@ interface GroupByAsync {
 	* @returns function which invokes the indicator function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function indicator( file, next ) {
 	*     var opts = {
@@ -637,7 +637,7 @@ interface GroupByAsync {
 	* @returns function which invokes the indicator function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function indicator( file, next ) {
 	*     var opts = {
@@ -694,7 +694,7 @@ interface GroupByAsync {
 * @throws must provide valid options
 *
 * @example
-* var readFile = require( `@stdlib/fs/read-file` );
+* var readFile = require( '@stdlib/fs/read-file' );
 *
 * function done( error, result ) {
 *     if ( error ) {

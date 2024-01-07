@@ -30,9 +30,9 @@ import { Complex64 } from '@stdlib/types/complex';
 * @returns result
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
-* var realf = require( `@stdlib/complex/realf` );
-* var imagf = require( `@stdlib/complex/imagf` );
+* var Complex64 = require( '@stdlib/complex/float32' );
+* var realf = require( '@stdlib/complex/realf' );
+* var imagf = require( '@stdlib/complex/imagf' );
 *
 * var z = new Complex64( 5.0, 3.0 );
 * // returns <Complex64>

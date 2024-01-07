@@ -25,12 +25,12 @@
 * @returns bit representation
 *
 * @example
-* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var str = toBinaryStringf( toFloat32( 4.0 ) );
 * // returns '01000000100000000000000000000000'
 *
 * @example
-* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var str = toBinaryStringf( toFloat32( 3.141592653589793 ) );
 * // returns '01000000010010010000111111011011'
 *
@@ -39,12 +39,12 @@
 * // returns '11111110100101100111011010011001'
 *
 * @example
-* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var str = toBinaryStringf( toFloat32( -3.14e-39 ) );
 * // returns '10000000001000100011000100001011'
 *
 * @example
-* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var str = toBinaryStringf( toFloat32( 1.4e-45 ) );
 * // returns '00000000000000000000000000000001'
 *
@@ -61,12 +61,12 @@
 * // returns '01111111110000000000000000000000'
 *
 * @example
-* var PINF = require( `@stdlib/constants/float32/pinf` );
+* var PINF = require( '@stdlib/constants/float32/pinf' );
 * var str = toBinaryStringf( PINF );
 * // returns '01111111100000000000000000000000'
 *
 * @example
-* var NINF = require( `@stdlib/constants/float32/ninf` );
+* var NINF = require( '@stdlib/constants/float32/ninf' );
 * var str = toBinaryStringf( NINF );
 * // returns '11111111100000000000000000000000'
 */

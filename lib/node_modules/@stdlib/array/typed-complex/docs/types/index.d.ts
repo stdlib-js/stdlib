@@ -101,14 +101,14 @@ declare function complexarray( obj: ArrayLike<number> | Iterable<any>, dtype?: D
 * @returns complex number typed array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = complexarray( buf );
 * // returns <Complex128Array>
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = complexarray( buf, 'complex64' );
@@ -125,14 +125,14 @@ declare function complexarray( buffer: ArrayBuffer, dtype?: DataType ): ComplexT
 * @returns complex number typed array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = complexarray( buf, 16 );
 * // returns <Complex128Array>
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = complexarray( buf, 16, 'complex64' );
@@ -150,14 +150,14 @@ declare function complexarray( buffer: ArrayBuffer, byteOffset?: number, dtype?:
 * @returns complex number typed array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 64 );
 * var arr = complexarray( buf, 16, 2 );
 * // returns <Complex128Array>
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 64 );
 * var arr = complexarray( buf, 16, 2, 'complex64' );

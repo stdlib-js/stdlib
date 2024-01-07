@@ -50,7 +50,7 @@ type SliceResult = Slice<number, number | null, number> | ErrorObject;
 * @returns Slice object (or an error object)
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var s = normalizeSlice( new Slice(), 10, false );
 * // returns <Slice>
@@ -65,7 +65,7 @@ type SliceResult = Slice<number, number | null, number> | ErrorObject;
 * // returns 1
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var s = normalizeSlice( new Slice( null, 20, 2 ), 10, false );
 * // returns <Slice>
@@ -80,7 +80,7 @@ type SliceResult = Slice<number, number | null, number> | ErrorObject;
 * // returns 2
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var s = normalizeSlice( new Slice( -5, -1, 1 ), 10, false );
 * // returns <Slice>
@@ -95,7 +95,7 @@ type SliceResult = Slice<number, number | null, number> | ErrorObject;
 * // returns 1
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var s = normalizeSlice( new Slice( -5, null, -1 ), 10, false );
 * // returns <Slice>

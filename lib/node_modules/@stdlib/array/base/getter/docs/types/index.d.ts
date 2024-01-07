@@ -128,7 +128,7 @@ type GetArrayLike<T> = ( arr: Collection<T>, idx: number ) => T | void;
 * @returns accessor function
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var arr = new Float64Array( [ 1, 2, 3, 4 ] );
 *
@@ -145,7 +145,7 @@ declare function getter( dtype: 'float64' ): GetFloat64;
 * @returns accessor function
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var arr = new Float32Array( [ 1, 2, 3, 4 ] );
 *
@@ -162,7 +162,7 @@ declare function getter( dtype: 'float32' ): GetFloat32;
 * @returns accessor function
 *
 * @example
-* var Int32Array = require( `@stdlib/array/int32` );
+* var Int32Array = require( '@stdlib/array/int32' );
 *
 * var arr = new Int32Array( [ 1, 2, 3, 4 ] );
 *
@@ -179,7 +179,7 @@ declare function getter( dtype: 'int32' ): GetInt32;
 * @returns accessor function
 *
 * @example
-* var Int16Array = require( `@stdlib/array/int16` );
+* var Int16Array = require( '@stdlib/array/int16' );
 *
 * var arr = new Int16Array( [ 1, 2, 3, 4 ] );
 *
@@ -196,7 +196,7 @@ declare function getter( dtype: 'int16' ): GetInt16;
 * @returns accessor function
 *
 * @example
-* var Int8Array = require( `@stdlib/array/int8` );
+* var Int8Array = require( '@stdlib/array/int8' );
 *
 * var arr = new Int8Array( [ 1, 2, 3, 4 ] );
 *
@@ -213,7 +213,7 @@ declare function getter( dtype: 'int8' ): GetInt8;
 * @returns accessor function
 *
 * @example
-* var Uint32Array = require( `@stdlib/array/uint32` );
+* var Uint32Array = require( '@stdlib/array/uint32' );
 *
 * var arr = new Uint32Array( [ 1, 2, 3, 4 ] );
 *
@@ -230,7 +230,7 @@ declare function getter( dtype: 'uint32' ): GetUint32;
 * @returns accessor function
 *
 * @example
-* var Uint16Array = require( `@stdlib/array/uint16` );
+* var Uint16Array = require( '@stdlib/array/uint16' );
 *
 * var arr = new Uint16Array( [ 1, 2, 3, 4 ] );
 *
@@ -247,7 +247,7 @@ declare function getter( dtype: 'uint16' ): GetUint16;
 * @returns accessor function
 *
 * @example
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var arr = new Uint8Array( [ 1, 2, 3, 4 ] );
 *
@@ -264,7 +264,7 @@ declare function getter( dtype: 'uint8' ): GetUint8;
 * @returns accessor function
 *
 * @example
-* var Uint8ClampedArray = require( `@stdlib/array/uint8c` );
+* var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 *
 * var arr = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
 *
@@ -296,7 +296,7 @@ declare function getter<T = unknown>( dtype: 'generic' ): GetGeneric<T>;
 * @returns accessor function
 *
 * @example
-* var dtype = require( `@stdlib/array/dtype` );
+* var dtype = require( '@stdlib/array/dtype' );
 *
 * var arr = [ 1, 2, 3, 4 ];
 *

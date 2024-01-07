@@ -98,9 +98,9 @@ type Unary = ( value: any ) => any;
 * @throws arrays must have the same shape
 *
 * @example
-* var identity = require( `@stdlib/math/base/special/identity` );
-* var Float64Array = require( `@stdlib/array/float64` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var identity = require( '@stdlib/math/base/special/identity' );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * function scale( x ) {
 *     return x * 10.0;

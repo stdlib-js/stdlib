@@ -29,7 +29,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns number of dimensions
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var n = ndims( zeros( [ 3, 3, 3 ] ) );
 * // returns 3

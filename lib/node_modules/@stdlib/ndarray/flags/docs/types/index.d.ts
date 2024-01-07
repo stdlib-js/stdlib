@@ -29,7 +29,7 @@ import { ndarray, Flags } from '@stdlib/types/ndarray';
 * @returns flags
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var o = flags( zeros( [ 3, 3, 3 ] ) );
 * // returns {...}

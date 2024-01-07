@@ -33,8 +33,8 @@ interface Routine {
 	* @returns range
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 1.0, -2.0, 4.0, 2.0 ] );
 	* var mask = new Uint8Array( [ 0, 0, 1, 0 ] );
@@ -57,8 +57,8 @@ interface Routine {
 	* @returns range
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 1.0, -2.0, 4.0, 2.0 ] );
 	* var mask = new Uint8Array( [ 0, 0, 1, 0 ] );
@@ -80,8 +80,8 @@ interface Routine {
 * @returns range
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Float32Array = require( '@stdlib/array/float32' );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var x = new Float32Array( [ 1.0, -2.0, 4.0, 2.0 ] );
 * var mask = new Uint8Array( [ 0, 0, 1, 0 ] );
@@ -90,8 +90,8 @@ interface Routine {
 * // returns 4.0
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Float32Array = require( '@stdlib/array/float32' );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var x = new Float32Array( [ 1.0, -2.0, 4.0, 2.0 ] );
 * var mask = new Uint8Array( [ 0, 0, 1, 0 ] );

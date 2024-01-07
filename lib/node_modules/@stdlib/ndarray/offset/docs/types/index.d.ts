@@ -29,7 +29,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns index offset
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var n = offset( zeros( [ 3, 3, 3 ] ) );
 * // returns 0

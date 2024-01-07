@@ -33,7 +33,7 @@ import { ndarray, Order } from '@stdlib/types/ndarray';
 * @returns layout order (or null)
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'order': 'row-major'

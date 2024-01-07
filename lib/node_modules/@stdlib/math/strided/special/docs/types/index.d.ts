@@ -122,7 +122,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -131,7 +131,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -193,7 +193,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -202,7 +202,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 4.0, 1.0, 9.0, 25.0, 16.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -948,7 +948,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 1.0, 8.0, 27.0, 64.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -957,7 +957,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 0.0, 1.0, 2.0, 3.0, 4.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 1.0, 8.0, 27.0, 64.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1019,7 +1019,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1028,7 +1028,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 2.0, 3.0, -3.0, 4.0, -5.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1085,7 +1085,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1094,7 +1094,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1115,7 +1115,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1124,7 +1124,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 1.0, 4.0, 9.0, 16.0, 25.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1145,7 +1145,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 1.0, 8.0, 27.0, 64.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1154,7 +1154,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 0.0, 1.0, 2.0, 3.0, 4.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 1.0, 8.0, 27.0, 64.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1177,7 +1177,7 @@ interface Namespace {
 	* @returns destination array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function accessor( v ) {
 	*     return v;
@@ -1190,7 +1190,7 @@ interface Namespace {
 	* // out => <Float64Array>[ 1.0, ~2.08, -3.0, ~4.327, -5.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function accessor( v ) {
 	*     return v;
@@ -1215,7 +1215,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1224,7 +1224,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 2.0, 3.0, -3.0, 4.0, -5.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1245,7 +1245,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 30.0, 45.0, 60.0, 90.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1254,7 +1254,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.047, ~1.571 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 30.0, 45.0, 60.0, 90.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1280,7 +1280,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 30.0, 45.0, 90.0, 120.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1289,7 +1289,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.571, ~2.094 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 30.0, 45.0, 90.0, 120.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1310,7 +1310,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.1, 1.1, 3.8, 4.5, 5.9 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1319,7 +1319,7 @@ interface Namespace {
 	* // y => <Float64Array>[ -2.0, 1.0, 3.0, 4.0, 5.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.1, 1.1, 3.8, 4.5, 5.9 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1340,7 +1340,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -20.0, -1.0, 2.0, 4.0, 10.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1349,7 +1349,7 @@ interface Namespace {
 	* // y => <Float64Array>[ -0.05, -1.0, 0.5, 0.25, 0.1 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -20.0, -1.0, 2.0, 4.0, 10.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1372,8 +1372,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, -3.0, -5.0, 4.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1383,8 +1383,8 @@ interface Namespace {
 	* // y => <Float64Array>[ 2.0, 1.0, 0.0, 5.0, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, -3.0, -5.0, 4.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1408,8 +1408,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, -3.0, -5.0, 4.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1419,8 +1419,8 @@ interface Namespace {
 	* // y => <Float64Array>[ 4.0, 1.0, 0.0, 25.0, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, -3.0, -5.0, 4.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1444,8 +1444,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 0.0, 1.0, 8.0, 27.0, 64.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1455,8 +1455,8 @@ interface Namespace {
 	* // y => <Float64Array>[ 0.0, 1.0, 0.0, 3.0, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 0.0, 1.0, 8.0, 27.0, 64.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1480,8 +1480,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1491,8 +1491,8 @@ interface Namespace {
 	* // y => <Float64Array>[ 2.0, 3.0, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1516,8 +1516,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 0.0, 30.0, 45.0, 60.0, 90.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1527,8 +1527,8 @@ interface Namespace {
 	* // y => <Float64Array>[ 0.0, ~0.524, 0.0, ~1.047, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 0.0, 30.0, 45.0, 60.0, 90.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1552,8 +1552,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1563,8 +1563,8 @@ interface Namespace {
 	* // y => <Float64Array>[ 1.0, 2.0, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1588,8 +1588,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ -20.0, -1.0, 2.0, 4.0, 10.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1599,8 +1599,8 @@ interface Namespace {
 	* // y => <Float64Array>[ -0.05, -1.0, 0.0, 0.25, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ -20.0, -1.0, 2.0, 4.0, 10.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1624,8 +1624,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1635,8 +1635,8 @@ interface Namespace {
 	* // y => <Float64Array>[ 1.1, 2.5, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1660,8 +1660,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1671,8 +1671,8 @@ interface Namespace {
 	* // y => <Float64Array>[ Infinity, 0.5, 0.0, ~0.289, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1696,8 +1696,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1707,8 +1707,8 @@ interface Namespace {
 	* // y => <Float64Array>[ 0.0, 2.0, 0.0, ~3.464, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1732,8 +1732,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1743,8 +1743,8 @@ interface Namespace {
 	* // y => <Float64Array>[ 1.0, 2.0, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -1766,7 +1766,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1775,7 +1775,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 1.1, 2.5, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1796,7 +1796,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1805,7 +1805,7 @@ interface Namespace {
 	* // y => <Float64Array>[ Infinity, 0.5, ~0.333, ~0.289, ~0.204 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1826,7 +1826,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1835,7 +1835,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 0.0, 2.0, 3.0, ~3.464, ~4.899 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1856,7 +1856,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1865,7 +1865,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 1.0, 2.0, -3.0, 4.0, -5.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1891,7 +1891,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.5, 2.3, -3.9, 4.2, -5.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1900,7 +1900,7 @@ interface Namespace {
 	* // y => <Float64Array>[ -2.0, 2.0, -4.0, 4.0, -5.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.5, 2.3, -3.9, 4.2, -5.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1926,7 +1926,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -20.0, -1.0, 2.0, 4.0, 10.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1935,7 +1935,7 @@ interface Namespace {
 	* // y => <Float64Array>[ -0.05, -1.0, 0.5, 0.25, 0.1 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -20.0, -1.0, 2.0, 4.0, 10.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1961,7 +1961,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1970,7 +1970,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 1.1, 2.5, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1996,7 +1996,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2005,7 +2005,7 @@ interface Namespace {
 	* // y => <Float64Array>[ Infinity, 0.5, ~0.333, ~0.289, ~0.204 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2026,7 +2026,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2035,7 +2035,7 @@ interface Namespace {
 	* // y => <Float32Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2056,7 +2056,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2065,7 +2065,7 @@ interface Namespace {
 	* // y => <Float32Array>[ 1.0, 4.0, 9.0, 16.0, 25.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2086,7 +2086,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 0.0, 1.0, 8.0, 27.0, 64.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2095,7 +2095,7 @@ interface Namespace {
 	* // y => <Float32Array>[ 0.0, 1.0, 2.0, 3.0, 4.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 0.0, 1.0, 8.0, 27.0, 64.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2116,7 +2116,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2125,7 +2125,7 @@ interface Namespace {
 	* // y => <Float32Array>[ 2.0, 3.0, -3.0, 4.0, -5.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2146,7 +2146,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 0.0, 30.0, 45.0, 60.0, 90.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2155,7 +2155,7 @@ interface Namespace {
 	* // y => <Float32Array>[ 0.0, ~0.524, ~0.785, ~1.047, ~1.571 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 0.0, 30.0, 45.0, 60.0, 90.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2176,7 +2176,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ -1.1, 1.1, 3.8, 4.5, 5.9 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2185,7 +2185,7 @@ interface Namespace {
 	* // y => <Float32Array>[ -2.0, 1.0, 3.0, 4.0, 5.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ -1.1, 1.1, 3.8, 4.5, 5.9 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2242,7 +2242,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ -20.0, -1.0, 2.0, 4.0, 10.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2251,7 +2251,7 @@ interface Namespace {
 	* // y => <Float32Array>[ ~-0.05, -1.0, 0.5, 0.25, ~0.1 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ -20.0, -1.0, 2.0, 4.0, 10.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2274,8 +2274,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ -2.0, 1.0, -3.0, -5.0, 4.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2285,8 +2285,8 @@ interface Namespace {
 	* // y => <Float32Array>[ 2.0, 1.0, 0.0, 5.0, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ -2.0, 1.0, -3.0, -5.0, 4.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2310,8 +2310,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ -2.0, 1.0, -3.0, -5.0, 4.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2321,8 +2321,8 @@ interface Namespace {
 	* // y => <Float32Array>[ 4.0, 1.0, 0.0, 25.0, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ -2.0, 1.0, -3.0, -5.0, 4.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2346,8 +2346,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 0.0, 1.0, 8.0, 27.0, 64.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2357,8 +2357,8 @@ interface Namespace {
 	* // y => <Float32Array>[ 0.0, 1.0, 0.0, 3.0, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 0.0, 1.0, 8.0, 27.0, 64.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2382,8 +2382,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2393,8 +2393,8 @@ interface Namespace {
 	* // y => <Float32Array>[ 2.0, 3.0, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2418,8 +2418,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 0.0, 30.0, 45.0, 60.0, 90.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2429,8 +2429,8 @@ interface Namespace {
 	* // y => <Float32Array>[ 0.0, ~0.524, 0.0, ~1.047, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 0.0, 30.0, 45.0, 60.0, 90.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2454,8 +2454,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2465,8 +2465,8 @@ interface Namespace {
 	* // y => <Float32Array>[ 1.0, 2.0, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2490,8 +2490,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ -20.0, -1.0, 2.0, 4.0, 10.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2501,8 +2501,8 @@ interface Namespace {
 	* // y => <Float32Array>[ ~-0.05, -1.0, 0.0, 0.25, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ -20.0, -1.0, 2.0, 4.0, 10.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2526,8 +2526,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, -3.0, 4.0, -5.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2537,8 +2537,8 @@ interface Namespace {
 	* // y => <Float32Array>[ 1.0, 2.0, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, -3.0, 4.0, -5.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2562,8 +2562,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2573,8 +2573,8 @@ interface Namespace {
 	* // y => <Float32Array>[ Infinity, 0.5, 0.0, ~0.289, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2598,8 +2598,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2609,8 +2609,8 @@ interface Namespace {
 	* // y => <Float32Array>[ 0.0, 2.0, 0.0, ~3.464, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2634,8 +2634,8 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2645,8 +2645,8 @@ interface Namespace {
 	* // y => <Float32Array>[ 1.0, 2.0, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var x = new Float32Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 1 ] );
@@ -2673,7 +2673,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2682,7 +2682,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 0.0, 2.0, 3.0, ~3.464, ~4.899 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2739,7 +2739,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, -3.0, 4.0, -5.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2748,7 +2748,7 @@ interface Namespace {
 	* // y => <Float32Array>[ 1.0, 2.0, 0.0, 4.0, 0.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, -3.0, 4.0, -5.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2769,7 +2769,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2778,7 +2778,7 @@ interface Namespace {
 	* // y => <Float32Array>[ 1.0, 0.5, ~0.333, ~0.289, ~0.204 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2799,7 +2799,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2808,7 +2808,7 @@ interface Namespace {
 	* // y => <Float32Array>[ 0.0, 2.0, 3.0, ~3.464, ~4.899 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2829,7 +2829,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2838,7 +2838,7 @@ interface Namespace {
 	* // y => <Float32Array>[ 1.0, 2.0, -3.0, 4.0, -5.0 ]
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.1, 2.5, -3.5, 4.0, -5.9 ] );
 	* var y = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2864,7 +2864,7 @@ interface Namespace {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -2873,7 +2873,7 @@ interface Namespace {
 	* // y => <Float64Array>[ 1.0, 2.0, -3.0, 4.0, -5.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.1, 2.5, -3.5, 4.0, -5.9] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );

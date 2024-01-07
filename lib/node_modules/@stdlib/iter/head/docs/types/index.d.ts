@@ -38,7 +38,7 @@ type Iterator = Iter | IterableIterator;
 * @returns iterator
 *
 * @example
-* var randu = require( `@stdlib/random/iter/randu` );
+* var randu = require( '@stdlib/random/iter/randu' );
 *
 * var iter = iterHead( randu(), 10 );
 *

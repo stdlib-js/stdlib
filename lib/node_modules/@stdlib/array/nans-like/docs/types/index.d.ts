@@ -35,7 +35,7 @@ type DataType = FloatingPointDataType | 'generic';
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float32' );
 * // returns <Float32Array>[ 0.0, 0.0 ]
@@ -53,7 +53,7 @@ declare function nansLike( x: AnyArray, dtype: 'float64' ): Float64Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -75,7 +75,7 @@ declare function nansLike( x: AnyArray, dtype: 'float32' ): Float32Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -97,7 +97,7 @@ declare function nansLike( x: AnyArray, dtype: 'complex128' ): Complex128Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -115,7 +115,7 @@ declare function nansLike( x: AnyArray, dtype: 'complex64' ): Complex64Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -141,7 +141,7 @@ declare function nansLike( x: AnyArray, dtype: 'generic' ): Array<number>;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -167,7 +167,7 @@ declare function nansLike( x: Float64Array, dtype?: DataType ): Float64Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float32' );
 * // returns <Float32Array>[ 0.0, 0.0 ]
@@ -197,7 +197,7 @@ declare function nansLike( x: Float32Array, dtype?: DataType ): Float32Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'complex128' );
 * // returns <Complex128Array>
@@ -227,7 +227,7 @@ declare function nansLike( x: Complex128Array, dtype?: DataType ): Complex128Arr
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'complex64' );
 * // returns <Complex64Array>
@@ -253,7 +253,7 @@ declare function nansLike( x: Complex64Array, dtype?: DataType ): Complex64Array
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'generic' );
 * // returns [ 0, 0 ]
@@ -279,7 +279,7 @@ declare function nansLike( x: Array<any>, dtype?: DataType ): Array<number>;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -288,7 +288,7 @@ declare function nansLike( x: Array<any>, dtype?: DataType ): Array<number>;
 * // returns <Float64Array>[ NaN, NaN ]
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]

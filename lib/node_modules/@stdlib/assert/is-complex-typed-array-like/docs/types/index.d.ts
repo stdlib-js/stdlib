@@ -41,7 +41,7 @@ import { ComplexArrayLike } from '@stdlib/types/array';
 * // returns true
 *
 * @example
-* var Complex128Array = require( `@stdlib/array/complex128` );
+* var Complex128Array = require( '@stdlib/array/complex128' );
 *
 * var val = isComplexTypedArrayLike( new Complex128Array( 4 ) );
 * // returns true

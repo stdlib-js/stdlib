@@ -60,7 +60,7 @@ declare function full( length: number, value: number, dtype: 'float32' ): Float3
 * @returns filled array
 *
 * @example
-* var Complex128 = require( `@stdlib/complex/float64` );
+* var Complex128 = require( '@stdlib/complex/float64' );
 *
 * var arr = full( 2, new Complex128( 1.0, 2.0 ), 'complex128' );
 * // returns <Complex128Array>
@@ -76,7 +76,7 @@ declare function full( length: number, value: ComplexLike, dtype: 'complex128' )
 * @returns filled array
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
+* var Complex64 = require( '@stdlib/complex/float32' );
 *
 * var arr = full( 2, new Complex64( 1.0, 2.0 ), 'complex64' );
 * // returns <Complex64Array>

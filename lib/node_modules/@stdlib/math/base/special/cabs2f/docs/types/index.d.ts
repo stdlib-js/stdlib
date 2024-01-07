@@ -33,7 +33,7 @@ import { Complex64 } from '@stdlib/types/complex';
 * @returns squared absolute value
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
+* var Complex64 = require( '@stdlib/complex/float32' );
 *
 * var v = cabs2f( new Complex64( 5.0, 3.0 ) );
 * // returns 34.0

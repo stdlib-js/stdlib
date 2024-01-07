@@ -51,7 +51,7 @@ interface Options {
 * @returns sum of all series terms
 *
 * @example
-* var pow = require( `@stdlib/math/base/special/pow` );
+* var pow = require( '@stdlib/math/base/special/pow' );
 * var gen = geometricSeriesGenerator( 0.9 );
 * var out = sumSeries( gen );
 * // returns 10.0

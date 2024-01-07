@@ -80,7 +80,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( 0.0, 10.0, {
 	*     'iter': 100
@@ -112,7 +112,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( 0.0, 10.0, {
 	*     'iter': 100
@@ -144,7 +144,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -176,7 +176,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -208,7 +208,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -240,7 +240,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -272,7 +272,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -305,7 +305,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -337,7 +337,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -369,7 +369,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -401,7 +401,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -433,7 +433,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -465,7 +465,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -497,7 +497,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -529,7 +529,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -557,7 +557,7 @@ interface Namespace {
 	* @returns maximum value
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -575,7 +575,7 @@ interface Namespace {
 	* @returns maximum absolute value
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -593,7 +593,7 @@ interface Namespace {
 	* @returns arithmetic mean
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -611,7 +611,7 @@ interface Namespace {
 	* @returns arithmetic mean of absolute values
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -629,7 +629,7 @@ interface Namespace {
 	* @returns arithmetic mean of squared absolute values
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -651,7 +651,7 @@ interface Namespace {
 	* @returns mid-range
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -669,7 +669,7 @@ interface Namespace {
 	* @returns minimum value
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -687,7 +687,7 @@ interface Namespace {
 	* @returns minimum absolute value
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -713,7 +713,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -749,7 +749,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -785,7 +785,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -821,7 +821,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -857,7 +857,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -894,7 +894,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -930,7 +930,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -966,7 +966,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1002,7 +1002,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1038,7 +1038,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1074,7 +1074,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1110,7 +1110,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1146,7 +1146,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1178,7 +1178,7 @@ interface Namespace {
 	* @returns product
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1196,7 +1196,7 @@ interface Namespace {
 	* @returns range
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1215,7 +1215,7 @@ interface Namespace {
 	* @returns corrected sample standard deviation
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1237,7 +1237,7 @@ interface Namespace {
 	* @returns sum
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1259,7 +1259,7 @@ interface Namespace {
 	* @returns sum of absolute values
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1281,7 +1281,7 @@ interface Namespace {
 	* @returns sum of squared absolute values
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100
@@ -1300,7 +1300,7 @@ interface Namespace {
 	* @returns unbiased sample variance
 	*
 	* @example
-	* var runif = require( `@stdlib/random/iter/uniform` );
+	* var runif = require( '@stdlib/random/iter/uniform' );
 	*
 	* var rand = runif( -10.0, 10.0, {
 	*     'iter': 100

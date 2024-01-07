@@ -33,7 +33,7 @@
 * // returns true
 *
 * @example
-* var Symbol = require( `@stdlib/symbol/ctor` );
+* var Symbol = require( '@stdlib/symbol/ctor' );
 * var bool = isBoxedPrimitive( Object( Symbol( 'beep' ) ) );
 * // returns true
 *
@@ -46,7 +46,7 @@
 * // returns false
 *
 * @example
-* var Symbol = require( `@stdlib/symbol/ctor` );
+* var Symbol = require( '@stdlib/symbol/ctor' );
 * var bool = isBoxedPrimitive( Symbol( 'beep' ) );
 * // returns false
 */

@@ -78,7 +78,7 @@ type Callback = Nullary | Unary | Binary;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function fcn( v ) {
 *     if ( v > 2 ) {

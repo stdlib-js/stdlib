@@ -74,7 +74,7 @@ interface ReadJSON {
 	* @param clbk - callback
 	*
 	* @example
-	* var resolve = require( `path` ).resolve;
+	* var resolve = require( 'path' ).resolve;
 	*
 	* readJSON( resolve( __dirname, '..', 'package.json' ), 'utf-8', onJSON );
 	*
@@ -94,7 +94,7 @@ interface ReadJSON {
 	* @param clbk - callback
 	*
 	* @example
-	* var resolve = require( `path` ).resolve;
+	* var resolve = require( 'path' ).resolve;
 	*
 	* readJSON( resolve( __dirname, '..', 'package.json' ), onJSON );
 	*
@@ -118,8 +118,8 @@ interface ReadJSON {
 	* @returns JSON or an error
 	*
 	* @example
-	* var resolve = require( `path` ).resolve;
-	* var instanceOf = require( `@stdlib/assert/instance-of` );
+	* var resolve = require( 'path' ).resolve;
+	* var instanceOf = require( '@stdlib/assert/instance-of' );
 	*
 	* var out = readJSON.sync( resolve( __dirname, '..', 'package.json' ) );
 	* if ( instanceOf( out, Error ) ) {
@@ -141,7 +141,7 @@ interface ReadJSON {
 * @param clbk - callback
 *
 * @example
-* var resolve = require( `path` ).resolve;
+* var resolve = require( 'path' ).resolve;
 *
 * readJSON( resolve( __dirname, '..', 'package.json' ), 'utf-8', onJSON );
 *
@@ -153,8 +153,8 @@ interface ReadJSON {
 * }
 *
 * @example
-* var resolve = require( `path` ).resolve;
-* var instanceOf = require( `@stdlib/assert/instance-of` );
+* var resolve = require( 'path' ).resolve;
+* var instanceOf = require( '@stdlib/assert/instance-of' );
 *
 * var out = readJSON.sync( resolve( __dirname, '..', 'package.json' ) );
 * if ( instanceOf( out, Error ) ) {

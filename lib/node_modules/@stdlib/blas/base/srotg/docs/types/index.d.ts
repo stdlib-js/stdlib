@@ -50,7 +50,7 @@ interface Routine {
 	* @returns output array
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var out = new Float32Array( 4 );
 	*
@@ -75,7 +75,7 @@ interface Routine {
 * // returns <Float32Array>[ 2.0, 1.0, 0.0, 1.0 ]
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var out = new Float32Array( 4 );
 * var y = srotg.assign( 0.0, 2.0, out, 1, 0 );

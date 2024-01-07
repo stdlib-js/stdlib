@@ -44,9 +44,9 @@ type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 * @param fcn - binary callback
 *
 * @example
-* var ones3d = require( `@stdlib/array/base/ones3d` );
-* var zeros3d = require( `@stdlib/array/base/zeros3d` );
-* var add = require( `@stdlib/math/base/ops/add` );
+* var ones3d = require( '@stdlib/array/base/ones3d' );
+* var zeros3d = require( '@stdlib/array/base/zeros3d' );
+* var add = require( '@stdlib/math/base/ops/add' );
 *
 * var shape = [ 2, 2, 2 ];
 *
