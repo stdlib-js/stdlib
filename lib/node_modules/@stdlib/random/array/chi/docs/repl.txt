@@ -57,11 +57,11 @@
     Returns a function for creating arrays containing pseudorandom numbers drawn
     from a chi distribution.
 
-    If provided `k`, the returned function returns random variates drawn from
-    the specified distribution.
+    If provided a distribution parameter, the returned function returns random
+    variates drawn from the specified distribution.
 
-    If not provided `k`, the returned function requires that `k` be provided at
-    each invocation.
+    If not provided a distribution parameter, the returned function requires
+    that distribution parameters be provided at each invocation.
 
     The returned function accepts the following options:
 

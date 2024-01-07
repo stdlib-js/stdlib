@@ -29,8 +29,7 @@
 
 
 {{alias}}.assign( sigma, out )
-    Fills an array with pseudorandom numbers drawn from a Rayleigh
-    distribution.
+    Fills an array with pseudorandom numbers drawn from a Rayleigh distribution.
 
     Parameters
     ----------
@@ -58,11 +57,11 @@
     Returns a function for creating arrays containing pseudorandom numbers drawn
     from a Rayleigh distribution.
 
-    If provided `sigma`, the returned function returns random variates drawn
-    from the specified distribution.
+    If provided a distribution parameter, the returned function returns random
+    variates drawn from the specified distribution.
 
-    If not provided `sigma`, the returned function requires that `sigma` be
-    provided at each invocation.
+    If not provided a distribution parameter, the returned function requires
+    that distribution parameters be provided at each invocation.
 
     The returned function accepts the following options:
 

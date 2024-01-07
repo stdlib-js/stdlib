@@ -9,7 +9,7 @@
         Output array length.
 
     p: number
-        Success probability (i.e., a value on the interval [0,1]).
+        Success probability.
 
     options: Object (optional)
         Options.
@@ -35,7 +35,7 @@
     Parameters
     ----------
     p: number
-        Success probability (i.e., a value on the interval [0,1]).
+        Success probability.
 
     out: Array<number>|TypedArray
         Output array.
@@ -58,11 +58,11 @@
     Returns a function for creating arrays containing pseudorandom numbers drawn
     from a geometric distribution.
 
-    If provided `p`, the returned function returns random variates drawn from
-    the specified distribution.
+    If provided a distribution parameter, the returned function returns random
+    variates drawn from the specified distribution.
 
-    If not provided `p`, the returned function requires that `p` be provided at
-    each invocation.
+    If not provided a distribution parameter, the returned function requires
+    that distribution parameters be provided at each invocation.
 
     The returned function accepts the following options:
 
@@ -72,7 +72,7 @@
     Parameters
     ----------
     p: number (optional)
-        Success probability (i.e., a value on the interval [0,1]).
+        Success probability.
 
     options: Object (optional)
         Options.
