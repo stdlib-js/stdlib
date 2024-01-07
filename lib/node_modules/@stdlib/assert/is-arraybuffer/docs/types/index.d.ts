@@ -25,7 +25,7 @@
 * @returns boolean indicating whether value is an ArrayBuffer
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var bool = isArrayBuffer( new ArrayBuffer( 10 ) );
 * // returns true

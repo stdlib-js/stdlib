@@ -29,13 +29,13 @@
 * // returns ~0.0
 *
 * @example
-* var PI = require( `@stdlib/constants/float64/pi` );
+* var PI = require( '@stdlib/constants/float64/pi' );
 *
 * var v = atan( -PI/4.0 );
 * // returns ~-0.666
 *
 * @example
-* var PI = require( `@stdlib/constants/float64/pi` );
+* var PI = require( '@stdlib/constants/float64/pi' );
 *
 * var v = atan( PI/4.0 );
 * // returns ~0.666

@@ -47,8 +47,8 @@ interface Routine {
 	* @param fcn - quinary callback
 	*
 	* @example
-	* var add = require( `@stdlib/math/base/ops/add5` );
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var add = require( '@stdlib/math/base/ops/add5' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -77,8 +77,8 @@ interface Routine {
 	* @param fcn - quinary callback
 	*
 	* @example
-	* var add = require( `@stdlib/math/base/ops/add5` );
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var add = require( '@stdlib/math/base/ops/add5' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -108,8 +108,8 @@ interface Routine {
 * @param fcn - quinary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add5` );
-* var Float64Array = require( `@stdlib/array/float64` );
+* var add = require( '@stdlib/math/base/ops/add5' );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 * var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -127,8 +127,8 @@ interface Routine {
 * // => <Float64Array>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add5` );
-* var Float64Array = require( `@stdlib/array/float64` );
+* var add = require( '@stdlib/math/base/ops/add5' );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 * var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );

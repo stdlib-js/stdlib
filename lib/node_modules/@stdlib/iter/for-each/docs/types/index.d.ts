@@ -76,8 +76,8 @@ type Callback = Nullary | Unary | Binary;
 * @returns iterator
 *
 * @example
-* var randu = require( `@stdlib/random/iter/randu` );
-* var isnan = require( `@stdlib/math/base/assert/is-nan` );
+* var randu = require( '@stdlib/random/iter/randu' );
+* var isnan = require( '@stdlib/math/base/assert/is-nan' );
 *
 * function assert( v ) {
 *     if ( isnan( v ) ) {

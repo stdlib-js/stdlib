@@ -25,7 +25,7 @@
 * @returns boolean indicating whether a value is an accessor array
 *
 * @example
-* var Complex128Array = require( `@stdlib/array/complex128` );
+* var Complex128Array = require( '@stdlib/array/complex128' );
 *
 * var arr = new Complex128Array( 10 );
 * var bool = isAccessorArray( arr );

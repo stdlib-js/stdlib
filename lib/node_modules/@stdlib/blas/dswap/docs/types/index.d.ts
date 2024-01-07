@@ -33,8 +33,8 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns `y`
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var array = require( `@stdlib/ndarray/array` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( new Float64Array( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] ) );
 * var y = array( new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );

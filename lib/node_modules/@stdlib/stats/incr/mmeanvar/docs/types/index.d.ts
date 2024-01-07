@@ -48,7 +48,7 @@ type accumulator = ( x?: number ) => ArrayLike<number> | null;
 * @returns accumulator function
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var accumulator = incrmmeanvar( new Float64Array( 2 ), 3 );
 *

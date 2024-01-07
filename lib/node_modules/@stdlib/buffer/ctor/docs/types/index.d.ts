@@ -29,7 +29,7 @@ import { Buffer } from 'buffer';
 * Buffer constructor.
 *
 * @example
-* var ctor = require( `@stdlib/buffer/ctor` );
+* var ctor = require( '@stdlib/buffer/ctor' );
 *
 * var b = new ctor( [ 1, 2, 3, 4 ] );
 * // returns <Buffer>

@@ -29,8 +29,8 @@ import { MultiSlice } from '@stdlib/types/slice';
 * @returns boolean indicating if a value is a MultiSlice object
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var MultiSlice = require( `@stdlib/slice/multi` );
+* var Slice = require( '@stdlib/slice/ctor' );
+* var MultiSlice = require( '@stdlib/slice/multi' );
 *
 * var s = new MultiSlice( new Slice( 0, 10, 1 ), null, 1 );
 *

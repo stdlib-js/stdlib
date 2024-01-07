@@ -30,7 +30,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns dimension size
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var d = numelDimension( zeros( [ 4, 2, 3 ] ), 0 );
 * // returns 4

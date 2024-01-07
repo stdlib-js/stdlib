@@ -35,7 +35,7 @@
 * // returns true
 *
 * @example
-* var Int8Array = require( `@stdlib/array/int8` );
+* var Int8Array = require( '@stdlib/array/int8' );
 *
 * var val = isTypedArrayLike( new Int8Array( 4 ) );
 * // returns true

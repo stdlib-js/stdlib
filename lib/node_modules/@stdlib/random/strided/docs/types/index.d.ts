@@ -58,7 +58,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -67,7 +67,7 @@ interface Namespace {
 	* ns.arcsine( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -94,7 +94,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -103,7 +103,7 @@ interface Namespace {
 	* ns.beta( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -130,7 +130,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -139,7 +139,7 @@ interface Namespace {
 	* ns.betaprime( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -166,7 +166,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -175,7 +175,7 @@ interface Namespace {
 	* ns.cosine( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -202,7 +202,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -211,7 +211,7 @@ interface Namespace {
 	* ns.discreteUniform( out.length, [ -10 ], 0, [ 10 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -236,7 +236,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -245,7 +245,7 @@ interface Namespace {
 	* ns.exponential( out.length, [ 2.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -272,7 +272,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -281,7 +281,7 @@ interface Namespace {
 	* ns.gamma( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -308,7 +308,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -317,7 +317,7 @@ interface Namespace {
 	* ns.invgamma( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -344,7 +344,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -353,7 +353,7 @@ interface Namespace {
 	* ns.lognormal( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -375,7 +375,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -384,7 +384,7 @@ interface Namespace {
 	* ns.minstd( out.length, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -393,7 +393,7 @@ interface Namespace {
 	* ns.minstd.ndarray( out.length, out, 1, 0 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -402,7 +402,7 @@ interface Namespace {
 	* ns.minstd.normalized( out.length, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -424,7 +424,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -433,7 +433,7 @@ interface Namespace {
 	* ns.minstdShuffle( out.length, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -442,7 +442,7 @@ interface Namespace {
 	* ns.minstdShuffle.ndarray( out.length, out, 1, 0 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -451,7 +451,7 @@ interface Namespace {
 	* ns.minstdShuffle.normalized( out.length, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -473,7 +473,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -482,7 +482,7 @@ interface Namespace {
 	* ns.mt19937( out.length, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -491,7 +491,7 @@ interface Namespace {
 	* ns.mt19937.ndarray( out.length, out, 1, 0 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -500,7 +500,7 @@ interface Namespace {
 	* ns.mt19937.normalized( out.length, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -527,7 +527,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -536,7 +536,7 @@ interface Namespace {
 	* ns.normal( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -558,7 +558,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -567,7 +567,7 @@ interface Namespace {
 	* ns.randu( out.length, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -594,7 +594,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -603,7 +603,7 @@ interface Namespace {
 	* ns.uniform( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -630,7 +630,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );
@@ -639,7 +639,7 @@ interface Namespace {
 	* ns.weibull( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* // Create an array:
 	* var out = new Float64Array( 10 );

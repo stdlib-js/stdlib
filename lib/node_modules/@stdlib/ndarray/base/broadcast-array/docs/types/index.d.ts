@@ -40,7 +40,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns broadcasted array
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 * // returns <ndarray>

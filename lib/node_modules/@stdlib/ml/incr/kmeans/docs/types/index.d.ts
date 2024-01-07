@@ -131,8 +131,8 @@ interface Accumulator {
 * @returns accumulator function
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * // Define initial centroid locations:
 * var buffer = [

@@ -31,7 +31,7 @@ interface Routine {
 	* @returns sum of absolute values
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
 	*
@@ -50,7 +50,7 @@ interface Routine {
 	* @returns sum of absolute values
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
 	*
@@ -69,7 +69,7 @@ interface Routine {
 * @returns sum of absolute values
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
 *
@@ -77,7 +77,7 @@ interface Routine {
 * // returns 15.0
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
 *

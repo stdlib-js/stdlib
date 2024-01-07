@@ -92,7 +92,7 @@ type Callback = Nullary | Unary | Binary | Ternary;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function fcn( v, i ) {
 *     return i + 1;

@@ -25,7 +25,7 @@
 * @returns boolean indicating if a value is a 2-dimensional ndarray-like object having equal dimensions
 *
 * @example
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var arr = ndarray( 'generic', [ 0, 0, 0, 0 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 * var bool = isSquareMatrix( arr );

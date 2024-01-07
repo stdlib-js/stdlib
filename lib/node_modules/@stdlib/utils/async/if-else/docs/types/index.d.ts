@@ -70,7 +70,7 @@ type Predicate = ( clbk: PredicateCallback ) => void;
 * @param done - callback to invoke upon completion
 *
 * @example
-* var randu = require( `@stdlib/random/base/randu` );
+* var randu = require( '@stdlib/random/base/randu' );
 *
 * function predicate( clbk ) {
 *     setTimeout( onTimeout, 0 );

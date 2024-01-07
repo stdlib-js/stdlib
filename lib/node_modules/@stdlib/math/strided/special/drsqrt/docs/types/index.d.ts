@@ -33,7 +33,7 @@ interface Routine {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -56,7 +56,7 @@ interface Routine {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -78,7 +78,7 @@ interface Routine {
 * @returns `y`
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 * var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -87,7 +87,7 @@ interface Routine {
 * // y => <Float64Array>[ Infinity, 0.5, ~0.333, ~0.289, ~0.204 ]
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ 0.0, 4.0, 9.0, 12.0, 24.0 ] );
 * var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );

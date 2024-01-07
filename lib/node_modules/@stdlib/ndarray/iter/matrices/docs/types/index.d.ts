@@ -49,8 +49,8 @@ interface Options {
 * @returns iterator
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var array = require( '@stdlib/ndarray/array' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ], {
 *     'dtype': 'float64'

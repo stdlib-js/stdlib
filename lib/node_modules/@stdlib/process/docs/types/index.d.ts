@@ -155,7 +155,7 @@ interface Namespace {
 	* Node version.
 	*
 	* @example
-	* var semver = require( `semver` );
+	* var semver = require( 'semver' );
 	*
 	* if ( semver.lt( ns.NODE_VERSION, '1.0.0' ) ) {
 	*    console.log( 'Running on a pre-io.js version...' );

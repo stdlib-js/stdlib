@@ -31,9 +31,9 @@ import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndar
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float64' );
 * var shape = [ 3, 2 ];
@@ -69,9 +69,9 @@ declare function reverseDimension( x: float64ndarray, dim: number, writable: boo
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float32' );
 * var shape = [ 3, 2 ];
@@ -107,9 +107,9 @@ declare function reverseDimension( x: float32ndarray, dim: number, writable: boo
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int32' );
 * var shape = [ 3, 2 ];
@@ -145,9 +145,9 @@ declare function reverseDimension( x: int32ndarray, dim: number, writable: boole
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int16' );
 * var shape = [ 3, 2 ];
@@ -183,9 +183,9 @@ declare function reverseDimension( x: int16ndarray, dim: number, writable: boole
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int8' );
 * var shape = [ 3, 2 ];
@@ -221,9 +221,9 @@ declare function reverseDimension( x: int8ndarray, dim: number, writable: boolea
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint32' );
 * var shape = [ 3, 2 ];
@@ -259,9 +259,9 @@ declare function reverseDimension( x: uint32ndarray, dim: number, writable: bool
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint16' );
 * var shape = [ 3, 2 ];
@@ -297,9 +297,9 @@ declare function reverseDimension( x: uint16ndarray, dim: number, writable: bool
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8' );
 * var shape = [ 3, 2 ];
@@ -335,9 +335,9 @@ declare function reverseDimension( x: uint8ndarray, dim: number, writable: boole
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8c' );
 * var shape = [ 3, 2 ];
@@ -373,9 +373,9 @@ declare function reverseDimension( x: uint8cndarray, dim: number, writable: bool
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex128' );
 * var shape = [ 3, 2 ];
@@ -405,9 +405,9 @@ declare function reverseDimension( x: complex128ndarray, dim: number, writable: 
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex64' );
 * var shape = [ 3, 2 ];
@@ -437,9 +437,9 @@ declare function reverseDimension( x: complex64ndarray, dim: number, writable: b
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
 * var shape = [ 3, 2 ];
@@ -475,9 +475,9 @@ declare function reverseDimension<T = unknown>( x: genericndarray<T>, dim: numbe
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
 * var shape = [ 3, 2 ];

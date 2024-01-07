@@ -44,9 +44,9 @@ type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 2 ];
 *
@@ -73,9 +73,9 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 2, 2 ];
 *
@@ -102,9 +102,9 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 1, 2, 2 ];
 *
@@ -131,9 +131,9 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 1, 1, 2, 2 ];
 *
@@ -160,9 +160,9 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 1, 1, 1, 2, 2 ];
 *
@@ -189,9 +189,9 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 1, 1, 1, 1, 2, 2 ];
 *
@@ -218,9 +218,9 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 1, 1, 1, 1, 1, 2, 2 ];
 *
@@ -247,9 +247,9 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 1, 1, 1, 1, 1, 1, 2, 2 ];
 *
@@ -276,9 +276,9 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 1, 1, 1, 1, 1, 1, 1, 2, 2 ];
 *
@@ -305,9 +305,9 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 1, 1, 1, 1, 1, 1, 1, 1, 2, 2 ];
 *
@@ -334,9 +334,9 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( `@stdlib/math/base/ops/add` );
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * var shape = [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2 ];
 *

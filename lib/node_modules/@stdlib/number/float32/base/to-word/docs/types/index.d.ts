@@ -25,7 +25,7 @@
 * @returns unsigned 32-bit integer
 *
 * @example
-* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 *
 * var f32 = float64ToFloat32( 1.337 );
 * // returns 1.3370000123977661

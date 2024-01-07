@@ -30,7 +30,7 @@ import { Complex128Array, Complex64Array, AnyArray, DataType } from '@stdlib/typ
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float32' );
 * // returns <Float32Array>[ 0.0, 0.0 ]
@@ -48,7 +48,7 @@ declare function onesLike( x: AnyArray, dtype: 'float64' ): Float64Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -70,7 +70,7 @@ declare function onesLike( x: AnyArray, dtype: 'float32' ): Float32Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -92,7 +92,7 @@ declare function onesLike( x: AnyArray, dtype: 'complex128' ): Complex128Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -110,7 +110,7 @@ declare function onesLike( x: AnyArray, dtype: 'complex64' ): Complex64Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -128,7 +128,7 @@ declare function onesLike( x: AnyArray, dtype: 'int32' ): Int32Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -146,7 +146,7 @@ declare function onesLike( x: AnyArray, dtype: 'int16' ): Int16Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -164,7 +164,7 @@ declare function onesLike( x: AnyArray, dtype: 'int8' ): Int8Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -182,7 +182,7 @@ declare function onesLike( x: AnyArray, dtype: 'uint32' ): Uint32Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -200,7 +200,7 @@ declare function onesLike( x: AnyArray, dtype: 'uint16' ): Uint16Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -218,7 +218,7 @@ declare function onesLike( x: AnyArray, dtype: 'uint8' ): Uint8Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -236,7 +236,7 @@ declare function onesLike( x: AnyArray, dtype: 'uint8c' ): Uint8ClampedArray;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -269,7 +269,7 @@ declare function onesLike( x: AnyArray, dtype: 'generic' ): Array<number>;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -302,7 +302,7 @@ declare function onesLike( x: Float64Array, dtype?: DataType ): Float64Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float32' );
 * // returns <Float32Array>[ 0.0, 0.0 ]
@@ -339,7 +339,7 @@ declare function onesLike( x: Float32Array, dtype?: DataType ): Float32Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'complex128' );
 * // returns <Complex128Array>
@@ -376,7 +376,7 @@ declare function onesLike( x: Complex128Array, dtype?: DataType ): Complex128Arr
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'complex64' );
 * // returns <Complex64Array>
@@ -409,7 +409,7 @@ declare function onesLike( x: Complex64Array, dtype?: DataType ): Complex64Array
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'int32' );
 * // returns <Int32Array>[ 0, 0 ]
@@ -442,7 +442,7 @@ declare function onesLike( x: Int32Array, dtype?: DataType ): Int32Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'int16' );
 * // returns <Int16Array>[ 0, 0 ]
@@ -475,7 +475,7 @@ declare function onesLike( x: Int16Array, dtype?: DataType ): Int16Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'int8' );
 * // returns <Int8Array>[ 0, 0 ]
@@ -508,7 +508,7 @@ declare function onesLike( x: Int8Array, dtype?: DataType ): Int8Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'uint32' );
 * // returns <Uint32Array>[ 0, 0 ]
@@ -541,7 +541,7 @@ declare function onesLike( x: Uint32Array, dtype?: DataType ): Uint32Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'uint16' );
 * // returns <Uint16Array>[ 0, 0 ]
@@ -574,7 +574,7 @@ declare function onesLike( x: Uint16Array, dtype?: DataType ): Uint16Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'uint8' );
 * // returns <Uint8Array>[ 0, 0 ]
@@ -607,7 +607,7 @@ declare function onesLike( x: Uint8Array, dtype?: DataType ): Uint8Array;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'uint8c' );
 * // returns <Uint8ClampedArray>[ 0, 0 ]
@@ -640,7 +640,7 @@ declare function onesLike( x: Uint8ClampedArray, dtype?: DataType ): Uint8Clampe
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'generic' );
 * // returns [ 0, 0 ]
@@ -673,7 +673,7 @@ declare function onesLike( x: Array<any>, dtype?: DataType ): Array<number>;
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -682,7 +682,7 @@ declare function onesLike( x: Array<any>, dtype?: DataType ): Array<number>;
 * // returns <Float64Array>[ 1.0, 1.0 ]
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]

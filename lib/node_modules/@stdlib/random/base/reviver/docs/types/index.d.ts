@@ -26,8 +26,8 @@
 * @returns value or PRNG
 *
 * @example
-* var parseJSON = require( `@stdlib/utils/parse-json` );
-* var mt19937 = require( `@stdlib/random/base/mt19937` );
+* var parseJSON = require( '@stdlib/utils/parse-json' );
+* var mt19937 = require( '@stdlib/random/base/mt19937' );
 *
 * var str = JSON.stringify( mt19937 );
 * var rand = parseJSON( str, reviveBasePRNG );

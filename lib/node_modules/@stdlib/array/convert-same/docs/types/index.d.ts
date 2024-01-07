@@ -30,7 +30,7 @@ import { AnyArray, Collection, Complex128Array, Complex64Array } from '@stdlib/t
 * @returns output array
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Float64Array( 0 );
@@ -48,7 +48,7 @@ declare function convertSame( x: Collection, y: Float64Array ): Float64Array;
 * @returns output array
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Float32Array( 0 );
@@ -66,7 +66,7 @@ declare function convertSame( x: Collection, y: Float32Array ): Float32Array;
 * @returns output array
 *
 * @example
-* var Int32Array = require( `@stdlib/array/int32` );
+* var Int32Array = require( '@stdlib/array/int32' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Int32Array( 0 );
@@ -84,7 +84,7 @@ declare function convertSame( x: Collection, y: Int32Array ): Int32Array;
 * @returns output array
 *
 * @example
-* var Int16Array = require( `@stdlib/array/int16` );
+* var Int16Array = require( '@stdlib/array/int16' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Int16Array( 0 );
@@ -102,7 +102,7 @@ declare function convertSame( x: Collection, y: Int16Array ): Int16Array;
 * @returns output array
 *
 * @example
-* var Int8Array = require( `@stdlib/array/int8` );
+* var Int8Array = require( '@stdlib/array/int8' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Int8Array( 0 );
@@ -120,7 +120,7 @@ declare function convertSame( x: Collection, y: Int8Array ): Int8Array;
 * @returns output array
 *
 * @example
-* var Uint32Array = require( `@stdlib/array/uint32` );
+* var Uint32Array = require( '@stdlib/array/uint32' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Uint32Array( 0 );
@@ -138,7 +138,7 @@ declare function convertSame( x: Collection, y: Uint32Array ): Uint32Array;
 * @returns output array
 *
 * @example
-* var Uint16Array = require( `@stdlib/array/uint16` );
+* var Uint16Array = require( '@stdlib/array/uint16' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Uint16Array( 0 );
@@ -156,7 +156,7 @@ declare function convertSame( x: Collection, y: Uint16Array ): Uint16Array;
 * @returns output array
 *
 * @example
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Uint8Array( 0 );
@@ -174,7 +174,7 @@ declare function convertSame( x: Collection, y: Uint8Array ): Uint8Array;
 * @returns output array
 *
 * @example
-* var Uint8ClampedArray = require( `@stdlib/array/uint8c` );
+* var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Uint8ClampedArray( 0 );
@@ -192,7 +192,7 @@ declare function convertSame( x: Collection, y: Uint8ClampedArray ): Uint8Clampe
 * @returns output array
 *
 * @example
-* var Complex128Array = require( `@stdlib/array/complex128` );
+* var Complex128Array = require( '@stdlib/array/complex128' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Complex128Array( 0 );
@@ -210,7 +210,7 @@ declare function convertSame( x: Collection, y: Complex128Array ): Complex128Arr
 * @returns output array
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Complex64Array( 0 );
@@ -228,7 +228,7 @@ declare function convertSame( x: Collection, y: Complex64Array ): Complex64Array
 * @returns output array
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 * var y = [];
@@ -246,7 +246,7 @@ declare function convertSame( x: Collection, y: Array<any> ): Array<any>;
 * @returns output array
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Float64Array( 0 );

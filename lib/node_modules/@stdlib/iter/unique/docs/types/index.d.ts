@@ -38,7 +38,7 @@ type Iterator = Iter | IterableIterator;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var iter = iterUnique( array2iterator( [ 1, 2, 1, 2, 4 ] ) );
 *

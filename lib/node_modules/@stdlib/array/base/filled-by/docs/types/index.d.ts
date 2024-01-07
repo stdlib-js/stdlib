@@ -50,7 +50,7 @@ type Callback<T, U> = Nullary<T, U> | Unary<T, U>;
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var arr = filledBy( 5, constantFunction( 1.0 ) );
 * // returns [ 1.0, 1.0, 1.0, 1.0, 1.0 ]

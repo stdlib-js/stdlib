@@ -140,7 +140,7 @@ interface SomeByRightAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -192,7 +192,7 @@ interface SomeByRightAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -245,7 +245,7 @@ interface SomeByRightAsync {
 	* @returns function which invokes the predicate function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function predicate( file, next ) {
 	*     var opts = {
@@ -304,7 +304,7 @@ interface SomeByRightAsync {
 	* @returns function which invokes the predicate function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function predicate( file, next ) {
 	*     var opts = {
@@ -371,7 +371,7 @@ interface SomeByRightAsync {
 * @throws must provide valid options
 *
 * @example
-* var readFile = require( `@stdlib/fs/read-file` );
+* var readFile = require( '@stdlib/fs/read-file' );
 *
 * function done( error, bool ) {
 *     if ( error ) {

@@ -35,7 +35,7 @@ type TypedArrayOrComplexTypedArray = TypedArray | ComplexTypedArray;
 * @returns typed array view
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( 10 );
 *

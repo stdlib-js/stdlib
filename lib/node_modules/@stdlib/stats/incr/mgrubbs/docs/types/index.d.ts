@@ -120,7 +120,7 @@ type accumulator = ( x?: number ) => Results | null;
 * @returns accumulator function
 *
 * @example
-* var rnorm = require( `@stdlib/random/base/normal` );
+* var rnorm = require( '@stdlib/random/base/normal' );
 *
 * var accumulator;
 * var opts;

@@ -25,7 +25,7 @@
 * @returns boolean indicating if a value is PRNG-like
 *
 * @example
-* var randu = require( `@stdlib/random/base/randu` );
+* var randu = require( '@stdlib/random/base/randu' );
 *
 * var bool = isPRNGLike( randu );
 * // returns true

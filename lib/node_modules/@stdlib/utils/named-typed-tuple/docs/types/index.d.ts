@@ -361,7 +361,7 @@ interface Tuple {
 	* Offset (in bytes) of a tuple from the start of its underlying `ArrayBuffer`.
 	*
 	* @example
-	* var ArrayBuffer = require( `@stdlib/array/buffer` );
+	* var ArrayBuffer = require( '@stdlib/array/buffer' );
 	*
 	* var factory = namedtypedtuple( [ 'x', 'y' ] );
 	*
@@ -1376,7 +1376,7 @@ interface Factory {
 	* // returns -1.0
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var factory = namedtypedtuple( [ 'x', 'y' ] );
 	*

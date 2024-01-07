@@ -30,9 +30,9 @@ import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndar
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float64' );
 * var shape = [ 3, 2 ];
@@ -67,9 +67,9 @@ declare function fliplr( x: float64ndarray, writable: boolean ): float64ndarray;
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float32' );
 * var shape = [ 3, 2 ];
@@ -104,9 +104,9 @@ declare function fliplr( x: float32ndarray, writable: boolean ): float32ndarray;
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int32' );
 * var shape = [ 3, 2 ];
@@ -141,9 +141,9 @@ declare function fliplr( x: int32ndarray, writable: boolean ): int32ndarray;
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int16' );
 * var shape = [ 3, 2 ];
@@ -178,9 +178,9 @@ declare function fliplr( x: int16ndarray, writable: boolean ): int16ndarray;
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int8' );
 * var shape = [ 3, 2 ];
@@ -215,9 +215,9 @@ declare function fliplr( x: int8ndarray, writable: boolean ): int8ndarray;
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint32' );
 * var shape = [ 3, 2 ];
@@ -252,9 +252,9 @@ declare function fliplr( x: uint32ndarray, writable: boolean ): uint32ndarray;
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint16' );
 * var shape = [ 3, 2 ];
@@ -289,9 +289,9 @@ declare function fliplr( x: uint16ndarray, writable: boolean ): uint16ndarray;
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8' );
 * var shape = [ 3, 2 ];
@@ -326,9 +326,9 @@ declare function fliplr( x: uint8ndarray, writable: boolean ): uint8ndarray;
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8c' );
 * var shape = [ 3, 2 ];
@@ -363,9 +363,9 @@ declare function fliplr( x: uint8cndarray, writable: boolean ): uint8cndarray;
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex128' );
 * var shape = [ 3, 2 ];
@@ -394,9 +394,9 @@ declare function fliplr( x: complex128ndarray, writable: boolean ): complex128nd
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex64' );
 * var shape = [ 3, 2 ];
@@ -425,9 +425,9 @@ declare function fliplr( x: complex64ndarray, writable: boolean ): complex64ndar
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
 * var shape = [ 3, 2 ];
@@ -462,9 +462,9 @@ declare function fliplr<T = unknown>( x: genericndarray<T>, writable: boolean ):
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
 * var shape = [ 3, 2 ];

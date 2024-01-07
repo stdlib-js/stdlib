@@ -25,7 +25,7 @@
 * @returns data type string
 *
 * @example
-* var str2enum = require( `@stdlib/ndarray/base/dtype-str2enum` );
+* var str2enum = require( '@stdlib/ndarray/base/dtype-str2enum' );
 *
 * var v = resolve( str2enum( 'float64' ) );
 * // returns 'float64'

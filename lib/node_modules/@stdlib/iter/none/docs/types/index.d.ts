@@ -29,7 +29,7 @@ import { Iterator } from '@stdlib/types/iter';
 * @returns boolean indicating whether all iterated values are falsy
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var it = array2iterator( [ 0, 0, 0, 0, 1 ] );
 *

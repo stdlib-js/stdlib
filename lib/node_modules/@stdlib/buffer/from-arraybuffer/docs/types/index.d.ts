@@ -43,14 +43,14 @@ import { Buffer } from 'buffer';
 * @returns new `Buffer` instance
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 * var ab = new ArrayBuffer( 10 );
 *
 * var buf = fromArrayBuffer( ab );
 * // returns <Buffer>
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 * var ab = new ArrayBuffer( 10 );
 *
 * var buf = fromArrayBuffer( ab, 2, 4 );

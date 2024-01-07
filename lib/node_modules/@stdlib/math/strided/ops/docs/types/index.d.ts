@@ -51,7 +51,7 @@ interface Namespace {
 	* @returns `z`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -61,7 +61,7 @@ interface Namespace {
 	* // z => <Float64Array>[ -1.0, 3.0, 6.0, -1.0, 9.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -131,7 +131,7 @@ interface Namespace {
 	* @returns `z`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -141,7 +141,7 @@ interface Namespace {
 	* // z => <Float64Array>[ -2.0, 2.0, 9.0, -20.0, 20.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -211,7 +211,7 @@ interface Namespace {
 	* @returns `z`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -221,7 +221,7 @@ interface Namespace {
 	* // z => <Float64Array>[ -3.0, -1.0, 0.0, -9.0, -1.0 ]
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );

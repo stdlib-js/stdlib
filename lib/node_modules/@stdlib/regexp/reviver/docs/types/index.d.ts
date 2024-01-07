@@ -26,7 +26,7 @@
 * @returns value
 *
 * @example
-* var parseJSON = require( `@stdlib/utils/parse-json` );
+* var parseJSON = require( '@stdlib/utils/parse-json' );
 *
 * var str = '{"type":"RegExp","pattern":"ab+c","flags":""}';
 *
@@ -34,7 +34,7 @@
 * // returns <RegExp>
 *
 * @example
-* var parseJSON = require( `@stdlib/utils/parse-json` );
+* var parseJSON = require( '@stdlib/utils/parse-json' );
 *
 * var str = '{"beep":"boop"}';
 *

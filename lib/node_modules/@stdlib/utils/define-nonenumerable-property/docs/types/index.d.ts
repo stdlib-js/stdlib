@@ -34,7 +34,7 @@ import { PropertyName } from '@stdlib/types/object';
 * @param value - value to set
 *
 * @example
-* var objectKeys = require( `@stdlib/utils/keys` );
+* var objectKeys = require( '@stdlib/utils/keys' );
 *
 * var obj = {};
 *

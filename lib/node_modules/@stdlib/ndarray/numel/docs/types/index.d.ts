@@ -29,7 +29,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns number of elements
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var n = numel( zeros( [ 3, 3, 3 ] ) );
 * // returns 27

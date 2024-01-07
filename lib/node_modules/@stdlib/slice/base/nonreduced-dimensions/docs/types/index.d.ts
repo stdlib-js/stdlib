@@ -29,8 +29,8 @@ import { MultiSlice } from '@stdlib/types/slice';
 * @returns list of indices
 *
 * @example
-* var MultiSlice = require( `@stdlib/slice/multi` );
-* var Slice = require( `@stdlib/slice/ctor` );
+* var MultiSlice = require( '@stdlib/slice/multi' );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var s = new MultiSlice( 1, null, 2, void 0, new Slice( 0, 10, 1 ) );
 * // returns <MultiSlice>

@@ -82,9 +82,9 @@ type InOutShapes = [
 * @param fcn - binary callback
 *
 * @example
-* var ones4d = require( `@stdlib/array/base/ones4d` );
-* var zeros4d = require( `@stdlib/array/base/zeros4d` );
-* var add = require( `@stdlib/math/base/ops/add` );
+* var ones4d = require( '@stdlib/array/base/ones4d' );
+* var zeros4d = require( '@stdlib/array/base/zeros4d' );
+* var add = require( '@stdlib/math/base/ops/add' );
 *
 * var shapes = [
 *     [ 1, 1, 1, 2 ],

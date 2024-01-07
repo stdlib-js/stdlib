@@ -37,7 +37,7 @@ interface Normalize {
 	* @returns output array
 	*
 	* @example
-	* var pow = require( `@stdlib/math/base/special/pow` );
+	* var pow = require( '@stdlib/math/base/special/pow' );
 	*
 	* var out = normalize( 3.14e-319 );
 	* // returns <Float64Array>[ 1.4141234400356668e-303, -52 ]
@@ -106,7 +106,7 @@ interface Normalize {
 * @returns output array
 *
 * @example
-* var pow = require( `@stdlib/math/base/special/pow` );
+* var pow = require( '@stdlib/math/base/special/pow' );
 *
 * var out = normalize( 3.14e-319 );
 * // returns <Float64Array>[ 1.4141234400356668e-303, -52 ]

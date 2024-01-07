@@ -43,8 +43,8 @@ type Unary<T, U> = ( value: T ) => U;
 * @param fcn - unary callback
 *
 * @example
-* var ones5d = require( `@stdlib/array/base/ones5d` );
-* var zeros5d = require( `@stdlib/array/base/zeros5d` );
+* var ones5d = require( '@stdlib/array/base/ones5d' );
+* var zeros5d = require( '@stdlib/array/base/zeros5d' );
 *
 * function scale( x ) {
 *     return x * 10.0;

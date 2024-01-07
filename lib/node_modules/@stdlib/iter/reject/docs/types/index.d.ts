@@ -76,7 +76,7 @@ type Predicate = Nullary | Unary | Binary;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function predicate( v ) {
 *     return ( v > 2 );

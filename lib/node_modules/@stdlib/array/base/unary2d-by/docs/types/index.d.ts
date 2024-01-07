@@ -88,8 +88,8 @@ type Unary<U, V> = ( value: U ) => V;
 * @param thisArg - callback execution context
 *
 * @example
-* var ones2d = require( `@stdlib/array/base/ones2d` );
-* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+* var ones2d = require( '@stdlib/array/base/ones2d' );
+* var zeros2d = require( '@stdlib/array/base/zeros2d' );
 *
 * function accessor( v ) {
 *     return v - 2.0;

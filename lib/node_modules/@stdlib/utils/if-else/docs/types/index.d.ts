@@ -27,7 +27,7 @@
 * @returns either `x` or `y`
 *
 * @example
-* var randu = require( `@stdlib/random/base/randu` );
+* var randu = require( '@stdlib/random/base/randu' );
 *
 * var z = ifelse( randu() > 0.5, 1.0, -1.0 );
 * // returns <number>

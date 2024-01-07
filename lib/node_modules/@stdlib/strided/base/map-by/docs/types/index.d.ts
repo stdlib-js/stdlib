@@ -104,7 +104,7 @@ interface Routine {
 	* @returns `y`
 	*
 	* @example
-	* var abs = require( `@stdlib/math/base/special/abs` );
+	* var abs = require( '@stdlib/math/base/special/abs' );
 	*
 	* function accessor( v ) {
 	*     return v * 2.0;
@@ -134,7 +134,7 @@ interface Routine {
 	* @returns `y`
 	*
 	* @example
-	* var abs = require( `@stdlib/math/base/special/abs` );
+	* var abs = require( '@stdlib/math/base/special/abs' );
 	*
 	* function accessor( v ) {
 	*     return v * 2.0;
@@ -163,7 +163,7 @@ interface Routine {
 * @returns `y`
 *
 * @example
-* var abs = require( `@stdlib/math/base/special/abs` );
+* var abs = require( '@stdlib/math/base/special/abs' );
 *
 * function accessor( v ) {
 *     return v * 2.0;
@@ -176,7 +176,7 @@ interface Routine {
 * // y => [ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 *
 * @example
-* var abs = require( `@stdlib/math/base/special/abs` );
+* var abs = require( '@stdlib/math/base/special/abs' );
 *
 * function accessor( v ) {
 *     return v * 2.0;

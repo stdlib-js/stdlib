@@ -128,7 +128,7 @@ type SetArrayLike<T> = ( arr: Collection<T>, idx: number, value: T ) => void;
 * @returns accessor function
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var arr = new Float64Array( 4 );
 *
@@ -147,7 +147,7 @@ declare function setter( dtype: 'float64' ): SetFloat64;
 * @returns accessor function
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var arr = new Float32Array( 4 );
 *
@@ -166,7 +166,7 @@ declare function setter( dtype: 'float32' ): SetFloat32;
 * @returns accessor function
 *
 * @example
-* var Int32Array = require( `@stdlib/array/int32` );
+* var Int32Array = require( '@stdlib/array/int32' );
 *
 * var arr = new Int32Array( 4 );
 *
@@ -185,7 +185,7 @@ declare function setter( dtype: 'int32' ): SetInt32;
 * @returns accessor function
 *
 * @example
-* var Int16Array = require( `@stdlib/array/int16` );
+* var Int16Array = require( '@stdlib/array/int16' );
 *
 * var arr = new Int16Array( 4 );
 *
@@ -204,7 +204,7 @@ declare function setter( dtype: 'int16' ): SetInt16;
 * @returns accessor function
 *
 * @example
-* var Int8Array = require( `@stdlib/array/int8` );
+* var Int8Array = require( '@stdlib/array/int8' );
 *
 * var arr = new Int8Array( 4 );
 *
@@ -223,7 +223,7 @@ declare function setter( dtype: 'int8' ): SetInt8;
 * @returns accessor function
 *
 * @example
-* var Uint32Array = require( `@stdlib/array/uint32` );
+* var Uint32Array = require( '@stdlib/array/uint32' );
 *
 * var arr = new Uint32Array( 4 );
 *
@@ -242,7 +242,7 @@ declare function setter( dtype: 'uint32' ): SetUint32;
 * @returns accessor function
 *
 * @example
-* var Uint16Array = require( `@stdlib/array/uint16` );
+* var Uint16Array = require( '@stdlib/array/uint16' );
 *
 * var arr = new Uint16Array( 4 );
 *
@@ -261,7 +261,7 @@ declare function setter( dtype: 'uint16' ): SetUint16;
 * @returns accessor function
 *
 * @example
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var arr = new Uint8Array( 4 );
 *
@@ -280,7 +280,7 @@ declare function setter( dtype: 'uint8' ): SetUint8;
 * @returns accessor function
 *
 * @example
-* var Uint8ClampedArray = require( `@stdlib/array/uint8c` );
+* var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 *
 * var arr = new Uint8ClampedArray( 4 );
 *
@@ -316,7 +316,7 @@ declare function setter<T = unknown>( dtype: 'generic' ): SetGeneric<T>;
 * @returns accessor function
 *
 * @example
-* var dtype = require( `@stdlib/array/dtype` );
+* var dtype = require( '@stdlib/array/dtype' );
 *
 * var arr = [ 0, 0, 0, 0 ];
 *

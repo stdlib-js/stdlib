@@ -43,8 +43,8 @@ type accumulator = ( vector?: ndarray ) => ndarray | null;
 * @returns accumulator function
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * // Create an output correlation matrix:
 * var buffer = new Float64Array( 4 );

@@ -92,7 +92,7 @@ declare class RandomStream extends Readable {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -219,7 +219,7 @@ interface Constructor {
 	* @returns Stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -255,7 +255,7 @@ interface Constructor {
 	* @returns Stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -323,7 +323,7 @@ interface Constructor {
 	* @returns Stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -349,7 +349,7 @@ interface Constructor {
 * @returns stream instance
 *
 * @example
-* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 *
 * function log( chunk ) {
 *    console.log( chunk.toString() );
@@ -365,7 +365,7 @@ interface Constructor {
 * stream.pipe( inspectStream( log )  );
 *
 * @example
-* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 *
 * function log( chunk ) {
 *    console.log( chunk.toString() );
@@ -397,7 +397,7 @@ interface Constructor {
 * }
 *
 * @example
-* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 *
 * function log( v ) {
 *    console.log( v );

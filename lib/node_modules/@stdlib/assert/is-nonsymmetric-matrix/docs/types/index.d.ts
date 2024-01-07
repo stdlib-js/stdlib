@@ -30,7 +30,7 @@
 * @returns boolean indicating if a value is a non-symmetric matrix
 *
 * @example
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var arr = ndarray( 'generic', [ 1, 2, 3, 4 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 * var bool = isNonSymmetricMatrix( arr );

@@ -52,8 +52,8 @@ interface Namespace {
 	* @returns accumulator function
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var array = require( `@stdlib/ndarray/array` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* // Create an accumulator:
 	* var accumulator = ns.incrBinaryClassification( 3, {
@@ -95,8 +95,8 @@ interface Namespace {
 	* @returns accumulator function
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var ndarray = require( `@stdlib/ndarray/ctor` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( '@stdlib/ndarray/ctor' );
 	*
 	* // Define initial centroid locations:
 	* var buffer = [
@@ -167,7 +167,7 @@ interface Namespace {
 	* @returns regression model
 	*
 	* @example
-	* var ns.incrSGDRegression = require( `@stdlib/streams/ml/incr/sgd-regression` );
+	* var ns.incrSGDRegression = require( '@stdlib/streams/ml/incr/sgd-regression' );
 	*
 	* var accumulator = ns.incrSGDRegression({
 	*     'intercept': true

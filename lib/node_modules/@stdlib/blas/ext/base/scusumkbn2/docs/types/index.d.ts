@@ -34,7 +34,7 @@ interface Routine {
 	* @returns output array
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
 	* var y = new Float32Array( x.length );
@@ -58,7 +58,7 @@ interface Routine {
 	* @returns output array
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
 	* var y = new Float32Array( x.length );
@@ -81,7 +81,7 @@ interface Routine {
 * @returns output array
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
 * var y = new Float32Array( x.length );
@@ -90,7 +90,7 @@ interface Routine {
 * // y => <Float32Array>[ 1.0, -1.0, 1.0 ]
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
 * var y = new Float32Array( x.length );

@@ -273,7 +273,7 @@ interface Namespace {
 	* // returns false
 	*
 	* @example
-	* var replace = require( `@stdlib/string/replace` );
+	* var replace = require( '@stdlib/string/replace' );
 	*
 	* var RE_EOL = ns.reEOL({
 	*     'flags': 'g'
@@ -477,7 +477,7 @@ interface Namespace {
 	* @returns value
 	*
 	* @example
-	* var parseJSON = require( `@stdlib/utils/parse-json` );
+	* var parseJSON = require( '@stdlib/utils/parse-json' );
 	*
 	* var str = '{"type":"RegExp","pattern":"ab+c","flags":""}';
 	*
@@ -485,7 +485,7 @@ interface Namespace {
 	* // returns <RegExp>
 	*
 	* @example
-	* var parseJSON = require( `@stdlib/utils/parse-json` );
+	* var parseJSON = require( '@stdlib/utils/parse-json' );
 	*
 	* var str = '{"beep":"boop"}';
 	*
