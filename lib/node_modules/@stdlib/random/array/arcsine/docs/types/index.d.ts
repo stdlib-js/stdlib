@@ -20,13 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealFloatingPointDataType, FloatTypedArray } from '@stdlib/types/array';
+import { RealFloatingPointAndGenericDataType as DataType, FloatTypedArray } from '@stdlib/types/array';
 import * as random from '@stdlib/types/random';
-
-/**
-* Supported data types.
-*/
-type DataType = RealFloatingPointDataType | 'generic';
 
 /**
 * Output array.
@@ -118,13 +113,21 @@ interface PRNG {
 */
 interface UnaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from an arcsine distribution with minimum support `a` and maximum support `b`.
+	* Returns an array containing pseudorandom numbers drawn from an arcsine distribution.
 	*
 	* @param len - array length
 	* @param options - function options
 	* @returns output array
 	*/
 	( len: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from an arcsine distribution.
+	*
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( out: RandomArray ): RandomArray;
 }
 
 /**
@@ -132,7 +135,7 @@ interface UnaryFunction extends PRNG {
 */
 interface TernaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from an arcsine distribution with minimum support `a` and maximum support `b`.
+	* Returns an array containing pseudorandom numbers drawn from an arcsine distribution.
 	*
 	* @param len - array length
 	* @param a - minimum support
@@ -141,6 +144,16 @@ interface TernaryFunction extends PRNG {
 	* @returns output array
 	*/
 	( len: number, a: number, b: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from an arcsine distribution.
+	*
+	* @param a - minimum support
+	* @param b - maximum support
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( a: number, b: number, out: RandomArray ): RandomArray;
 }
 
 /**
@@ -148,7 +161,7 @@ interface TernaryFunction extends PRNG {
 */
 interface Random extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from an arcsine distribution with minimum support `a` and maximum support `b`.
+	* Returns an array containing pseudorandom numbers drawn from an arcsine distribution.
 	*
 	* @param len - array length
 	* @param a - minimum support
@@ -163,6 +176,28 @@ interface Random extends PRNG {
 	( len: number, a: number, b: number, options?: Options ): RandomArray;
 
 	/**
+	* Fills an array with pseudorandom numbers drawn from an arcsine distribution.
+	*
+	* @param a - minimum support
+	* @param b - maximum support
+	* @param out - output array
+	* @returns output array
+	*
+	* @example
+	* var zeros = require( '@stdlib/array/zeros' );
+	*
+	* var x = zeros( 10, 'float64' );
+	* // returns <Float64Array>
+	*
+	* var out = arcsine( 2.0, 5.0, out );
+	* // returns <Float64Array>
+	*
+	* var bool = ( out === x );
+	* // returns true
+	*/
+	assign( a: number, b: number, out: RandomArray ): RandomArray;
+
+	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from an arcsine distribution.
 	*
 	* ## Notes
@@ -172,7 +207,6 @@ interface Random extends PRNG {
 	* @param a - minimum support
 	* @param b - maximum support
 	* @param options - function options
-	* @throws `a` must be less than `b`
 	* @throws must provide a valid state
 	* @returns function for creating arrays
 	*
@@ -219,7 +253,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Returns an array containing pseudorandom numbers drawn from an arcsine distribution with minimum support `a` and maximum support `b`.
+* Returns an array containing pseudorandom numbers drawn from an arcsine distribution.
 *
 * @param len - array length
 * @param a - minimum support

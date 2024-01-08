@@ -31,15 +31,43 @@
     <Float64Array>
 
 
+{{alias}}.assign( a, b, out )
+    Fills an array with pseudorandom numbers drawn from an arcsine distribution.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    out: Array<number>|Float64Array|Float32Array
+        Output array.
+
+    Returns
+    -------
+    out: Array<number>|Float64Array|Float32Array
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/array/zeros}}( 3, 'float64' );
+    > var out = {{alias}}.assign( 2.0, 5.0, x )
+    <Float64Array>
+    > var bool = ( out === x )
+    true
+
+
 {{alias}}.factory( [a, b, ][options] )
     Returns a function for creating arrays containing pseudorandom numbers drawn
     from an arcsine distribution.
 
-    If provided `a` and `b`, the returned function returns random variates drawn
-    from the specified distribution.
+    If provided distribution parameters, the returned function returns random
+    variates drawn from the specified distribution.
 
-    If not provided `a` and `b`, the returned function requires that both `a`
-    and `b` be provided at each invocation.
+    If not provided distribution parameters, the returned function requires that
+    distribution parameters be provided at each invocation.
 
     The returned function accepts the following options:
 

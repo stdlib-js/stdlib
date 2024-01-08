@@ -61,6 +61,29 @@ var out = arcsine( 10, 2.0, 5.0, opts );
 // returns [...]
 ```
 
+#### arcsine.assign( a, b, out )
+
+Fills an array with pseudorandom numbers drawn from an [arcsine][@stdlib/random/base/arcsine] distribution.
+
+```javascript
+var zeros = require( '@stdlib/array/zeros' );
+
+var x = zeros( 10, 'float64' );
+// returns <Float64Array>
+
+var out = arcsine.assign( 2.0, 5.0, x );
+// returns <Float64Array>
+
+var bool = ( out === x );
+// returns true
+```
+
+The function has the following parameters:
+
+-   **a**: minimum support.
+-   **b**: maximum support.
+-   **out**: output array.
+
 #### arcsine.factory( \[a, b, ]\[options] )
 
 Returns a function for creating arrays containing pseudorandom numbers drawn from an [arcsine][@stdlib/random/base/arcsine] distribution.
