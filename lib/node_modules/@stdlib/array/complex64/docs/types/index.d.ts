@@ -814,6 +814,53 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	map<U = unknown>( fcn: MapFcn<U>, thisArg?: ThisParameterType<MapFcn<U>> ): Complex64Array;
 
 	/**
+	* Reverses an array in-place.
+	*
+	* @returns reversed array
+	*
+	* @example
+	* var realf = require( '@stdlib/complex/realf' );
+	* var imagf = require( '@stdlib/complex/imagf' );
+	*
+	* var arr = new Complex64Array( 3 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	*
+	* var out = arr.reverse();
+	* // returns <Complex64Array>
+	*
+	* var z = out.get( 0 );
+	* // returns <Complex64>
+	*
+	* var re = realf( z );
+	* // returns 3.0
+	*
+	* var im = imagf( z );
+	* // returns 3.0
+	*
+	* z = out.get( 1 );
+	* // returns <Complex64>
+	*
+	* re = realf( z );
+	* // returns 2.0
+	*
+	* im = imagf( z );
+	* // returns 2.0
+	*
+	* z = out.get( 2 );
+	* // returns <Complex64>
+	*
+	* re = realf( z );
+	* // returns 1.0
+	*
+	* im = imagf( z );
+	* // returns 1.0
+	*/
+	reverse(): Complex64Array;
+
+	/**
 	* Sets an array element.
 	*
 	* ## Notes
