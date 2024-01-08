@@ -48,7 +48,8 @@ jobs:
     steps:
       # Run the chatbot action:
       - name: 'Run chatbot action'
-        uses: stdlib-js/stdlib-chat-bot@main
+        # Pin action to full length commit SHA
+        uses: stdlib-js/stdlib-chat-bot@6c0643a5a1eb3c782b2df3bfd11e836d2ac7268e # v0.0.1
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.CHATBOT_GITHUB_TOKEN }}

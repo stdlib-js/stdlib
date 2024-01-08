@@ -58,7 +58,8 @@ jobs:
       - name: 'Scaffold package'
         if: ${{ contains(github.event.comment.body, 'scaffold') }}
         id: scaffold
-        uses: stdlib-js/scaffold-pkg-pr-action@main
+        # Pin action to full length commit SHA
+        uses: stdlib-js/scaffold-pkg-pr-action@882ef0cbb70c1fb76135b9620232606686c1cb10 # v0.0.1
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

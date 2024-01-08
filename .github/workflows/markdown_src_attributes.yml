@@ -85,7 +85,8 @@ jobs:
 
       # Check for broken `src` attribute URLs:
       - name: 'Check `src` attribute URLs'
-        uses: stdlib-js/check-markdown-src-action@main
+        # Pin action to full length commit SHA
+        uses: stdlib-js/check-markdown-src-action@9d9c0883b8c06a04576a146e480ef7937c51cdbf # v2.0.1
         id: results
         with:
           exclude: /path/to/
