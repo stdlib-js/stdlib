@@ -98,7 +98,7 @@ var len = out.length;
 // returns 10
 ```
 
-If provided `a` and `b`, the returned generator returns random variates from the specified distribution.
+If provided distribution parameters, the returned generator returns random variates from the specified distribution.
 
 ```javascript
 var random = arcsine.factory( 2.0, 5.0 );
@@ -110,7 +110,7 @@ out = random( 10 );
 // returns <Float64Array>
 ```
 
-If not provided `a` and `b`, the returned generator requires that both parameters be provided at each invocation.
+If not provided distribution parameters, the returned generator requires that distribution parameters be provided at each invocation.
 
 ```javascript
 var random = arcsine.factory();

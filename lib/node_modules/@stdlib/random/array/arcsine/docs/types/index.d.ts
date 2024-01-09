@@ -202,7 +202,7 @@ interface Random extends PRNG {
 	*
 	* ## Notes
 	*
-	* -   When provided `a` and `b`, the returned function returns random variates drawn from the specified distribution.
+	* -   When provided distribution parameters, the returned function returns random variates drawn from the specified distribution.
 	*
 	* @param a - minimum support
 	* @param b - maximum support
@@ -230,7 +230,7 @@ interface Random extends PRNG {
 	*
 	* ## Notes
 	*
-	* -   When not provided `a` and `b`, the returned function requires that both `a` and `b` be provided at each invocation.
+	* -   When not provided distribution parameters, the returned function requires that distribution parameters be provided at each invocation.
 	*
 	* @param options - function options
 	* @throws must provide a valid state

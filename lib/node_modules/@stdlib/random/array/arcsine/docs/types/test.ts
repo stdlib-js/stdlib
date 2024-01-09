@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import zeros = require( '@stdlib/array/zeros' );
 import random = require( './index' );
 
 
