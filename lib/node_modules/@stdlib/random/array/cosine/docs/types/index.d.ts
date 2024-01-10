@@ -20,13 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealFloatingPointDataType, FloatTypedArray } from '@stdlib/types/array';
+import { RealFloatingPointAndGenericDataType as DataType, FloatTypedArray } from '@stdlib/types/array';
 import * as random from '@stdlib/types/random';
-
-/**
-* Supported data types.
-*/
-type DataType = RealFloatingPointDataType | 'generic';
 
 /**
 * Output array.
@@ -114,25 +109,33 @@ interface PRNG {
 }
 
 /**
-* Interface for generating pseudorandom numbers drawn from a raised cosine distribution with pre-specified parameter values.
+* Interface for generating pseudorandom numbers drawn from a cosine distribution with pre-specified parameter values.
 */
 interface UnaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a raised cosine distribution with parameters `mu` (mean) and `s` (scale parameter).
+	* Returns an array containing pseudorandom numbers drawn from a cosine distribution.
 	*
 	* @param len - array length
 	* @param options - function options
 	* @returns output array
 	*/
 	( len: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a cosine distribution.
+	*
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( out: RandomArray ): RandomArray;
 }
 
 /**
-* Interface for generating pseudorandom numbers drawn from a raised cosine distribution without pre-specified parameter values.
+* Interface for generating pseudorandom numbers drawn from a cosine distribution without pre-specified parameter values.
 */
 interface TernaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a raised cosine distribution with parameters `mu` (mean) and `s` (scale parameter).
+	* Returns an array containing pseudorandom numbers drawn from a cosine distribution.
 	*
 	* @param len - array length
 	* @param mu - mean
@@ -141,14 +144,24 @@ interface TernaryFunction extends PRNG {
 	* @returns output array
 	*/
 	( len: number, mu: number, s: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a cosine distribution.
+	*
+	* @param mu - mean
+	* @param s - scale parameter
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( mu: number, s: number, out: RandomArray ): RandomArray;
 }
 
 /**
-* Interface for generating pseudorandom numbers drawn from a raised cosine distribution.
+* Interface for generating pseudorandom numbers drawn from a cosine distribution.
 */
 interface Random extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a raised cosine distribution with parameters `mu` (mean) and `s` (scale parameter).
+	* Returns an array containing pseudorandom numbers drawn from a cosine distribution.
 	*
 	* @param len - array length
 	* @param mu - mean
@@ -163,16 +176,37 @@ interface Random extends PRNG {
 	( len: number, mu: number, s: number, options?: Options ): RandomArray;
 
 	/**
-	* Returns a function for creating arrays containing pseudorandom numbers drawn from a raised cosine distribution.
+	* Fills an array with pseudorandom numbers drawn from a cosine distribution.
+	*
+	* @param mu - mean
+	* @param s - scale parameter
+	* @param out - output array
+	* @returns output array
+	*
+	* @example
+	* var zeros = require( '@stdlib/array/zeros' );
+	*
+	* var x = zeros( 10, 'float64' );
+	* // returns <Float64Array>
+	*
+	* var out = cosine( 2.0, 5.0, out );
+	* // returns <Float64Array>
+	*
+	* var bool = ( out === x );
+	* // returns true
+	*/
+	assign( mu: number, s: number, out: RandomArray ): RandomArray;
+
+	/**
+	* Returns a function for creating arrays containing pseudorandom numbers drawn from a cosine distribution.
 	*
 	* ## Notes
 	*
-	* -   When provided `mu` and `s`, the returned function returns random variates drawn from the specified distribution.
+	* -   When provided distribution parameters, the returned function returns random variates drawn from the specified distribution.
 	*
 	* @param mu - mean
 	* @param s - scale parameter
 	* @param options - function options
-	* @throws `s` must be a positive number
 	* @throws must provide a valid state
 	* @returns function for creating arrays
 	*
@@ -192,11 +226,11 @@ interface Random extends PRNG {
 	factory( mu: number, s: number, options?: FactoryOptions ): UnaryFunction;
 
 	/**
-	* Returns a function for creating arrays containing pseudorandom numbers drawn from a raised cosine distribution.
+	* Returns a function for creating arrays containing pseudorandom numbers drawn from a cosine distribution.
 	*
 	* ## Notes
 	*
-	* -   When not provided `mu` and `s`, the returned function requires that both `mu` and `s` be provided at each invocation.
+	* -   When not provided distribution parameters, the returned function requires that distribution parameters be provided at each invocation.
 	*
 	* @param options - function options
 	* @throws must provide a valid state
@@ -219,7 +253,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Returns an array containing pseudorandom numbers drawn from a raised cosine distribution with parameters `mu` (mean) and `s` (scale parameter).
+* Returns an array containing pseudorandom numbers drawn from a cosine distribution.
 *
 * @param len - array length
 * @param mu - mean
