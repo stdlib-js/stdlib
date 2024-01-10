@@ -2438,6 +2438,7 @@
 "@stdlib/random/array/invgamma",random.array.invgamma
 "@stdlib/random/array/laplace",random.array.laplace
 "@stdlib/random/array/levy",random.array.levy
+"@stdlib/random/array/logistic",random.array.logistic
 "@stdlib/random/array/lognormal",random.array.lognormal
 "@stdlib/random/array/minstd",random.array.minstd
 "@stdlib/random/array/minstd-shuffle",random.array.minstdShuffle
