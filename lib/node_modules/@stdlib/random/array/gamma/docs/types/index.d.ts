@@ -20,13 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealFloatingPointDataType, FloatTypedArray } from '@stdlib/types/array';
+import { RealFloatingPointAndGenericDataType as DataType, FloatTypedArray } from '@stdlib/types/array';
 import * as random from '@stdlib/types/random';
-
-/**
-* Supported data types.
-*/
-type DataType = RealFloatingPointDataType | 'generic';
 
 /**
 * Output array.
@@ -118,13 +113,21 @@ interface PRNG {
 */
 interface UnaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a gamma distribution with parameters `alpha` (shape parameter) and `beta` (rate parameter).
+	* Returns an array containing pseudorandom numbers drawn from a gamma distribution.
 	*
 	* @param len - array length
 	* @param options - function options
 	* @returns output array
 	*/
 	( len: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a gamma distribution.
+	*
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( out: RandomArray ): RandomArray;
 }
 
 /**
@@ -132,7 +135,7 @@ interface UnaryFunction extends PRNG {
 */
 interface TernaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a gamma distribution with parameters `alpha` (shape parameter) and `beta` (rate parameter).
+	* Returns an array containing pseudorandom numbers drawn from a gamma distribution.
 	*
 	* @param len - array length
 	* @param alpha - shape parameter
@@ -141,6 +144,16 @@ interface TernaryFunction extends PRNG {
 	* @returns output array
 	*/
 	( len: number, alpha: number, beta: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a gamma distribution.
+	*
+	* @param alpha - shape parameter
+	* @param beta - rate parameter
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( alpha: number, beta: number, out: RandomArray ): RandomArray;
 }
 
 /**
@@ -148,7 +161,7 @@ interface TernaryFunction extends PRNG {
 */
 interface Random extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a gamma distribution with parameters `alpha` (shape parameter) and `beta` (rate parameter).
+	* Returns an array containing pseudorandom numbers drawn from a gamma distribution.
 	*
 	* @param len - array length
 	* @param alpha - shape parameter
@@ -163,17 +176,37 @@ interface Random extends PRNG {
 	( len: number, alpha: number, beta: number, options?: Options ): RandomArray;
 
 	/**
+	* Fills an array with pseudorandom numbers drawn from a gamma distribution.
+	*
+	* @param alpha - shape parameter
+	* @param beta - rate parameter
+	* @param out - output array
+	* @returns output array
+	*
+	* @example
+	* var zeros = require( '@stdlib/array/zeros' );
+	*
+	* var x = zeros( 10, 'float64' );
+	* // returns <Float64Array>
+	*
+	* var out = gamma( 2.0, 5.0, out );
+	* // returns <Float64Array>
+	*
+	* var bool = ( out === x );
+	* // returns true
+	*/
+	assign( alpha: number, beta: number, out: RandomArray ): RandomArray;
+
+	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from a gamma distribution.
 	*
 	* ## Notes
 	*
-	* -   When provided `alpha` and `beta`, the returned function returns random variates drawn from the specified distribution.
+	* -   When provided distribution parameters, the returned function returns random variates drawn from the specified distribution.
 	*
 	* @param alpha - shape parameter
 	* @param beta - rate parameter
 	* @param options - function options
-	* @throws `alpha` must be a positive number
-	* @throws `beta` must be a positive number
 	* @throws must provide a valid state
 	* @returns function for creating arrays
 	*
@@ -197,20 +230,20 @@ interface Random extends PRNG {
 	*
 	* ## Notes
 	*
-	* -   When not provided `alpha` and `beta`, the returned function requires that both `alpha` and `beta` be provided at each invocation.
+	* -   When not provided distribution parameters, the returned function requires that distribution parameters be provided at each invocation.
 	*
 	* @param options - function options
 	* @throws must provide a valid state
 	* @returns function for creating arrays
 	*
 	* @example
-	* var random = beta.factory();
+	* var random = gamma.factory();
 	*
 	* var out = random( 10, 2.0, 5.0 );
 	* // returns <Float64Array>
 	*
 	* @example
-	* var random = beta.factory({
+	* var random = gamma.factory({
 	*     'seed': 297
 	* });
 	* var out = random( 10, 2.0, 5.0 );
@@ -220,7 +253,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Returns an array containing pseudorandom numbers drawn from a gamma distribution with parameters `alpha` (shape parameter) and `beta` (rate parameter).
+* Returns an array containing pseudorandom numbers drawn from a gamma distribution.
 *
 * @param len - array length
 * @param alpha - shape parameter
