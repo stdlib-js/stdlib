@@ -354,6 +354,12 @@ logEach( '%f', x4 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/random/base/logistic`][@stdlib/random/base/logistic]</span><span class="delimiter">: </span><span class="description">logistic distributed pseudorandom numbers.</span>
+
 </section>
 
 <!-- /.related -->

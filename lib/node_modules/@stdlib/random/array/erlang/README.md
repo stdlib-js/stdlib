@@ -354,6 +354,12 @@ logEach( '%f', x4 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/random/base/erlang`][@stdlib/random/base/erlang]</span><span class="delimiter">: </span><span class="description">Erlang distributed pseudorandom numbers.</span>
+
 </section>
 
 <!-- /.related -->

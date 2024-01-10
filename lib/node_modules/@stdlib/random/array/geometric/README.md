@@ -352,6 +352,12 @@ logEach( '%f', x4 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/random/base/geometric`][@stdlib/random/base/geometric]</span><span class="delimiter">: </span><span class="description">geometric distributed pseudorandom numbers.</span>
+
 </section>
 
 <!-- /.related -->

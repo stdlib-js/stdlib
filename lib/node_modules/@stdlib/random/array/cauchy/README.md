@@ -354,6 +354,12 @@ logEach( '%f', x4 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/random/base/cauchy`][@stdlib/random/base/cauchy]</span><span class="delimiter">: </span><span class="description">Cauchy distributed pseudorandom numbers.</span>
+
 </section>
 
 <!-- /.related -->
