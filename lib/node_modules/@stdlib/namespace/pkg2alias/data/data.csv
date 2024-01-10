@@ -2444,6 +2444,7 @@
 "@stdlib/random/array/minstd-shuffle",random.array.minstdShuffle
 "@stdlib/random/array/mt19937",random.array.mt19937
 "@stdlib/random/array/normal",random.array.normal
+"@stdlib/random/array/pareto-type1",random.array.pareto1
 "@stdlib/random/array/poisson",random.array.poisson
 "@stdlib/random/array/randu",random.array.randu
 "@stdlib/random/array/rayleigh",random.array.rayleigh

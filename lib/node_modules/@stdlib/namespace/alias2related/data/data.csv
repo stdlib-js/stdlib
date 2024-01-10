@@ -2444,6 +2444,7 @@ random.array.minstd,"random.array.minstdShuffle,random.array.randu,base.random.m
 random.array.minstdShuffle,"random.array.minstd,random.array.randu,base.random.minstdShuffle,random.strided.minstdShuffle"
 random.array.mt19937,"random.array.randu,base.random.mt19937,random.strided.mt19937"
 random.array.normal,"base.random.normal,random.strided.normal"
+random.array.pareto1,"base.random.pareto1"
 random.array.poisson,"base.random.poisson"
 random.array.randu,"random.array.uniform,base.random.randu,random.strided.randu"
 random.array.rayleigh,"base.random.rayleigh"
