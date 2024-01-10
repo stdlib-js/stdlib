@@ -2424,6 +2424,7 @@
 "@stdlib/random/array/bernoulli","@stdlib/random/base/bernoulli"
 "@stdlib/random/array/beta","@stdlib/random/base/beta,@stdlib/random/strided/beta"
 "@stdlib/random/array/betaprime","@stdlib/random/base/betaprime,@stdlib/random/strided/betaprime"
+"@stdlib/random/array/binomial","@stdlib/random/base/binomial"
 "@stdlib/random/array/cauchy","@stdlib/random/base/cauchy"
 "@stdlib/random/array/chi","@stdlib/random/base/chi"
 "@stdlib/random/array/chisquare","@stdlib/random/base/chisquare"
