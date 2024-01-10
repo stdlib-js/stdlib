@@ -2449,6 +2449,7 @@
 "@stdlib/random/array/rayleigh","@stdlib/random-array-rayleigh"
 "@stdlib/random/array/t","@stdlib/random-array-t"
 "@stdlib/random/array/uniform","@stdlib/random-array-uniform"
+"@stdlib/random/array/weibull","@stdlib/random-array-weibull"
 "@stdlib/random/iter/arcsine","@stdlib/random-iter-arcsine"
 "@stdlib/random/iter/bernoulli","@stdlib/random-iter-bernoulli"
 "@stdlib/random/iter/beta","@stdlib/random-iter-beta"

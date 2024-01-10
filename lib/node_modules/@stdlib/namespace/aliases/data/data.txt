@@ -2449,6 +2449,7 @@ random.array.randu
 random.array.rayleigh
 random.array.t
 random.array.uniform
+random.array.weibull
 random.iterators.arcsine
 random.iterators.bernoulli
 random.iterators.beta
