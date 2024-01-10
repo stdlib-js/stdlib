@@ -20,13 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealFloatingPointDataType, FloatTypedArray } from '@stdlib/types/array';
+import { RealFloatingPointAndGenericDataType as DataType, FloatTypedArray } from '@stdlib/types/array';
 import * as random from '@stdlib/types/random';
-
-/**
-* Supported data types.
-*/
-type DataType = RealFloatingPointDataType | 'generic';
 
 /**
 * Output array.
@@ -118,13 +113,21 @@ interface PRNG {
 */
 interface UnaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a beta distribution with parameters `alpha` (first shape parameter) and `beta` (second shape parameter).
+	* Returns an array containing pseudorandom numbers drawn from a beta distribution.
 	*
 	* @param len - array length
 	* @param options - function options
 	* @returns output array
 	*/
 	( len: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a beta distribution.
+	*
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( out: RandomArray ): RandomArray;
 }
 
 /**
@@ -132,7 +135,7 @@ interface UnaryFunction extends PRNG {
 */
 interface TernaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a beta distribution with parameters `alpha` (first shape parameter) and `beta` (second shape parameter).
+	* Returns an array containing pseudorandom numbers drawn from a beta distribution.
 	*
 	* @param len - array length
 	* @param alpha - first shape parameter
@@ -141,6 +144,16 @@ interface TernaryFunction extends PRNG {
 	* @returns output array
 	*/
 	( len: number, alpha: number, beta: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a beta distribution.
+	*
+	* @param alpha - first shape parameter
+	* @param beta - second shape parameter
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( alpha: number, beta: number, out: RandomArray ): RandomArray;
 }
 
 /**
@@ -148,7 +161,7 @@ interface TernaryFunction extends PRNG {
 */
 interface Random extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a beta distribution with parameters `alpha` (first shape parameter) and `beta` (second shape parameter).
+	* Returns an array containing pseudorandom numbers drawn from a beta distribution.
 	*
 	* @param len - array length
 	* @param alpha - first shape parameter
@@ -163,17 +176,37 @@ interface Random extends PRNG {
 	( len: number, alpha: number, beta: number, options?: Options ): RandomArray;
 
 	/**
+	* Fills an array with pseudorandom numbers drawn from a beta distribution.
+	*
+	* @param alpha - first shape parameter
+	* @param beta - second shape parameter
+	* @param out - output array
+	* @returns output array
+	*
+	* @example
+	* var zeros = require( '@stdlib/array/zeros' );
+	*
+	* var x = zeros( 10, 'float64' );
+	* // returns <Float64Array>
+	*
+	* var out = beta( 2.0, 5.0, out );
+	* // returns <Float64Array>
+	*
+	* var bool = ( out === x );
+	* // returns true
+	*/
+	assign( alpha: number, beta: number, out: RandomArray ): RandomArray;
+
+	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from a beta distribution.
 	*
 	* ## Notes
 	*
-	* -   When provided `alpha` and `beta`, the returned function returns random variates drawn from the specified distribution.
+	* -   When provided distribution parameters, the returned function returns random variates drawn from the specified distribution.
 	*
 	* @param alpha - first shape parameter
 	* @param beta - second shape parameter
 	* @param options - function options
-	* @throws `alpha` must be a positive number
-	* @throws `beta` must be a positive number
 	* @throws must provide a valid state
 	* @returns function for creating arrays
 	*
@@ -197,7 +230,7 @@ interface Random extends PRNG {
 	*
 	* ## Notes
 	*
-	* -   When not provided `alpha` and `beta`, the returned function requires that both `alpha` and `beta` be provided at each invocation.
+	* -   When not provided distribution parameters, the returned function requires that distribution parameters be provided at each invocation.
 	*
 	* @param options - function options
 	* @throws must provide a valid state
@@ -220,7 +253,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Returns an array containing pseudorandom numbers drawn from a beta distribution with parameters `alpha` (first shape parameter) and `beta` (second shape parameter).
+* Returns an array containing pseudorandom numbers drawn from a beta distribution.
 *
 * @param len - array length
 * @param alpha - first shape parameter
