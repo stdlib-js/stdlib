@@ -1,5 +1,5 @@
 
-{{alias}}( len, mean, beta[, options] )
+{{alias}}( len, mu, beta[, options] )
     Returns an array containing pseudorandom numbers drawn from a Gumbel
     distribution.
 
@@ -8,7 +8,7 @@
     len: integer
         Output array length.
 
-    mean: number
+    mu: number
         Mean.
 
     beta: number
@@ -31,12 +31,12 @@
     <Float64Array>
 
 
-{{alias}}.assign( mean, beta, out )
+{{alias}}.assign( mu, beta, out )
     Fills an array with pseudorandom numbers drawn from a Gumbel distribution.
 
     Parameters
     ----------
-    mean: number
+    mu: number
         Mean.
 
     beta: number
@@ -59,7 +59,7 @@
     true
 
 
-{{alias}}.factory( [mean, beta, ][options] )
+{{alias}}.factory( [mu, beta, ][options] )
     Returns a function for creating arrays containing pseudorandom numbers drawn
     from a Gumbel distribution.
 
@@ -76,7 +76,7 @@
 
     Parameters
     ----------
-    mean: number (optional)
+    mu: number (optional)
         Mean.
 
     beta: number (optional)

@@ -138,22 +138,22 @@ interface TernaryFunction extends PRNG {
 	* Returns an array containing pseudorandom numbers drawn from a Gumbel distribution.
 	*
 	* @param len - array length
-	* @param mean - mean
+	* @param mu - mean
 	* @param beta - scale parameter
 	* @param options - function options
 	* @returns output array
 	*/
-	( len: number, mean: number, beta: number, options?: Options ): RandomArray;
+	( len: number, mu: number, beta: number, options?: Options ): RandomArray;
 
 	/**
 	* Fills an array with pseudorandom numbers drawn from a Gumbel distribution.
 	*
-	* @param mean - mean
+	* @param mu - mean
 	* @param beta - scale parameter
 	* @param out - output array
 	* @returns output array
 	*/
-	assign( mean: number, beta: number, out: RandomArray ): RandomArray;
+	assign( mu: number, beta: number, out: RandomArray ): RandomArray;
 }
 
 /**
@@ -164,7 +164,7 @@ interface Random extends PRNG {
 	* Returns an array containing pseudorandom numbers drawn from a Gumbel distribution.
 	*
 	* @param len - array length
-	* @param mean - mean
+	* @param mu - mean
 	* @param beta - scale parameter
 	* @param options - function options
 	* @returns output array
@@ -173,12 +173,12 @@ interface Random extends PRNG {
 	* var out = gumbel( 10, 2.0, 5.0 );
 	* // returns <Float64Array>
 	*/
-	( len: number, mean: number, beta: number, options?: Options ): RandomArray;
+	( len: number, mu: number, beta: number, options?: Options ): RandomArray;
 
 	/**
 	* Fills an array with pseudorandom numbers drawn from a Gumbel distribution.
 	*
-	* @param mean - mean
+	* @param mu - mean
 	* @param beta - scale parameter
 	* @param out - output array
 	* @returns output array
@@ -195,7 +195,7 @@ interface Random extends PRNG {
 	* var bool = ( out === x );
 	* // returns true
 	*/
-	assign( mean: number, beta: number, out: RandomArray ): RandomArray;
+	assign( mu: number, beta: number, out: RandomArray ): RandomArray;
 
 	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from a Gumbel distribution.
@@ -204,7 +204,7 @@ interface Random extends PRNG {
 	*
 	* -   When provided distribution parameters, the returned function returns random variates drawn from the specified distribution.
 	*
-	* @param mean - mean
+	* @param mu - mean
 	* @param beta - scale parameter
 	* @param options - function options
 	* @throws must provide a valid state
@@ -223,7 +223,7 @@ interface Random extends PRNG {
 	* var out = random( 10 );
 	* // returns <Float64Array>
 	*/
-	factory( mean: number, beta: number, options?: FactoryOptions ): UnaryFunction;
+	factory( mu: number, beta: number, options?: FactoryOptions ): UnaryFunction;
 
 	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from a Gumbel distribution.
@@ -256,7 +256,7 @@ interface Random extends PRNG {
 * Returns an array containing pseudorandom numbers drawn from a Gumbel distribution.
 *
 * @param len - array length
-* @param mean - mean
+* @param mu - mean
 * @param beta - scale parameter
 * @param options - function options
 * @returns output array
