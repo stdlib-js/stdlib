@@ -2429,6 +2429,7 @@
 "@stdlib/random/array/chisquare","@stdlib/random/base/chisquare"
 "@stdlib/random/array/cosine","@stdlib/random/base/cosine,@stdlib/random/strided/cosine"
 "@stdlib/random/array/discrete-uniform","@stdlib/random/array/uniform,@stdlib/random/base/discrete-uniform,@stdlib/random/strided/discrete-uniform"
+"@stdlib/random/array/erlang","@stdlib/random/base/erlang"
 "@stdlib/random/array/exponential","@stdlib/random/base/exponential,@stdlib/random/strided/exponential"
 "@stdlib/random/array/gamma","@stdlib/random/base/gamma,@stdlib/random/strided/gamma"
 "@stdlib/random/array/geometric","@stdlib/random/base/geometric"
