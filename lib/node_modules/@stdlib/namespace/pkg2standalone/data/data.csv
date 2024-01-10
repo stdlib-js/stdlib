@@ -2431,6 +2431,7 @@
 "@stdlib/random/array/discrete-uniform","@stdlib/random-array-discrete-uniform"
 "@stdlib/random/array/erlang","@stdlib/random-array-erlang"
 "@stdlib/random/array/exponential","@stdlib/random-array-exponential"
+"@stdlib/random/array/f","@stdlib/random-array-f"
 "@stdlib/random/array/gamma","@stdlib/random-array-gamma"
 "@stdlib/random/array/geometric","@stdlib/random-array-geometric"
 "@stdlib/random/array/invgamma","@stdlib/random-array-invgamma"
