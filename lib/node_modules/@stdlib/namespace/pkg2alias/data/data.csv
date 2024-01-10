@@ -2436,6 +2436,7 @@
 "@stdlib/random/array/geometric",random.array.geometric
 "@stdlib/random/array/gumbel",random.array.gumbel
 "@stdlib/random/array/invgamma",random.array.invgamma
+"@stdlib/random/array/kumaraswamy",random.array.kumaraswamy
 "@stdlib/random/array/laplace",random.array.laplace
 "@stdlib/random/array/levy",random.array.levy
 "@stdlib/random/array/logistic",random.array.logistic

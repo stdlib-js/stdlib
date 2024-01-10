@@ -2436,6 +2436,7 @@ random.array.gamma
 random.array.geometric
 random.array.gumbel
 random.array.invgamma
+random.array.kumaraswamy
 random.array.laplace
 random.array.levy
 random.array.logistic
