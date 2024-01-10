@@ -2434,6 +2434,7 @@ random.array.exponential
 random.array.f
 random.array.gamma
 random.array.geometric
+random.array.gumbel
 random.array.invgamma
 random.array.lognormal
 random.array.minstd
