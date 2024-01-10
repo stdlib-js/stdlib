@@ -2424,6 +2424,7 @@
 "@stdlib/random/array/bernoulli",random.array.bernoulli
 "@stdlib/random/array/beta",random.array.beta
 "@stdlib/random/array/betaprime",random.array.betaprime
+"@stdlib/random/array/cauchy",random.array.cauchy
 "@stdlib/random/array/chi",random.array.chi
 "@stdlib/random/array/chisquare",random.array.chisquare
 "@stdlib/random/array/cosine",random.array.cosine
