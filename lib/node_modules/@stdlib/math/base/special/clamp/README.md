@@ -219,7 +219,7 @@ int main( void ) {
 ## See Also
 
 -   <span class="package-name">[`@stdlib/math/base/special/clampf`][@stdlib/math/base/special/clampf]</span><span class="delimiter">: </span><span class="description">restrict a single-precision floating-point number to a specified range.</span>
--   <span class="package-name">[`@stdlib/math/base/special/wrap`][@stdlib/math/base/special/wrap]</span><span class="delimiter">: </span><span class="description">wrap a value on the half-open interval [min,max).</span>
+-   <span class="package-name">[`@stdlib/math/base/special/wrap`][@stdlib/math/base/special/wrap]</span><span class="delimiter">: </span><span class="description">wrap a value on the half-open interval \[min,max).</span>
 
 </section>
 
