@@ -2445,6 +2445,7 @@
 "@stdlib/random/array/minstd",random.array.minstd
 "@stdlib/random/array/minstd-shuffle",random.array.minstdShuffle
 "@stdlib/random/array/mt19937",random.array.mt19937
+"@stdlib/random/array/negative-binomial",random.array.negativeBinomial
 "@stdlib/random/array/normal",random.array.normal
 "@stdlib/random/array/pareto-type1",random.array.pareto1
 "@stdlib/random/array/poisson",random.array.poisson

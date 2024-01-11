@@ -2445,6 +2445,7 @@
 "@stdlib/random/array/minstd","@stdlib/random-array-minstd"
 "@stdlib/random/array/minstd-shuffle","@stdlib/random-array-minstd-shuffle"
 "@stdlib/random/array/mt19937","@stdlib/random-array-mt19937"
+"@stdlib/random/array/negative-binomial","@stdlib/random-array-negative-binomial"
 "@stdlib/random/array/normal","@stdlib/random-array-normal"
 "@stdlib/random/array/pareto-type1","@stdlib/random-array-pareto-type1"
 "@stdlib/random/array/poisson","@stdlib/random-array-poisson"

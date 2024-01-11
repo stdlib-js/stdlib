@@ -2445,6 +2445,7 @@ random.array.lognormal
 random.array.minstd
 random.array.minstdShuffle
 random.array.mt19937
+random.array.negativeBinomial
 random.array.normal
 random.array.pareto1
 random.array.poisson
