@@ -1620,6 +1620,53 @@ var count = context.count;
 // returns 3
 ```
 
+<a name="method-reverse"></a>
+
+#### Complex128Array.prototype.reverse()
+
+Reverses an array in-place.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+var arr = new Complex128Array( 3 );
+
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var out = arr.reverse();
+// returns <Complex128Array>
+
+var z = out.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 3.0
+
+var im = imag( z );
+// returns 3.0
+
+z = out.get( 1 );
+// returns <Complex128>
+
+re = real( z );
+// returns 2.0
+
+im = imag( z );
+// returns 2.0
+
+z = out.get( 2 );
+// returns <Complex128>
+
+re = real( z );
+// returns 1.0
+
+im = imag( z );
+// returns 1.0
+```
+
 <a name="method-set"></a>
 
 #### Complex128Array.prototype.set( z\[, i] )
