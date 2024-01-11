@@ -1,6 +1,6 @@
 
 {{alias}}( len, mu, s[, options] )
-    Returns an array containing pseudorandom numbers drawn from a cosine
+    Returns an array containing pseudorandom numbers drawn from a raised cosine
     distribution.
 
     Parameters
@@ -32,7 +32,8 @@
 
 
 {{alias}}.assign( mu, s, out )
-    Fills an array with pseudorandom numbers drawn from a cosine distribution.
+    Fills an array with pseudorandom numbers drawn from a raised cosine
+    distribution.
 
     Parameters
     ----------
@@ -61,7 +62,7 @@
 
 {{alias}}.factory( [mu, s, ][options] )
     Returns a function for creating arrays containing pseudorandom numbers drawn
-    from a cosine distribution.
+    from a raised cosine distribution.
 
     If provided distribution parameters, the returned function returns random
     variates drawn from the specified distribution.
