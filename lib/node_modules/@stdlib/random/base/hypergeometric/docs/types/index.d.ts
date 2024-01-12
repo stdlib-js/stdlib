@@ -109,7 +109,7 @@ interface NullaryFunction extends PRNG {
 /**
 * Interface for generating pseudorandom numbers from a hypergeometric distribution without pre-specified parameter values.
 */
-interface BinaryFunction extends PRNG {
+interface TernaryFunction extends PRNG {
 	/**
 	* Returns a pseudorandom number drawn from a hypergeometric distribution.
 	*
@@ -212,7 +212,7 @@ interface Random extends PRNG {
 	* var v = rand( 5, 3, 2 );
 	* // returns <number>
 	*/
-	factory( options?: Options ): BinaryFunction;
+	factory( options?: Options ): TernaryFunction;
 }
 
 /**

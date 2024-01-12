@@ -109,7 +109,7 @@ interface NullaryFunction extends PRNG {
 /**
 * Interface for generating pseudorandom numbers from a triangular distribution without pre-specified parameter values.
 */
-interface BinaryFunction extends PRNG {
+interface TernaryFunction extends PRNG {
 	/**
 	* Returns a pseudorandom number drawn from a triangular distribution.
 	*
@@ -208,7 +208,7 @@ interface Random extends PRNG {
 	* var v = rand( 1.0, 2.0, 1.5 );
 	* // returns <number>
 	*/
-	factory( options?: Options ): BinaryFunction;
+	factory( options?: Options ): TernaryFunction;
 }
 
 /**
