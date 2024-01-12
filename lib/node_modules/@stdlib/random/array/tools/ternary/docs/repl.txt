@@ -1,0 +1,100 @@
+
+{{alias}}( prng, dtypes, dtype )
+    Constructor for creating arrays filled with pseudorandom values drawn from
+    a ternary PRNG.
+
+    Parameters
+    ----------
+    prng: Function
+        Ternary pseudorandom value generator.
+
+    dtypes: Array<string>
+        List of supported output array data types.
+
+    dtype: string
+        Default output array data type.
+
+    Returns
+    -------
+    out: Object
+        Instance having methods for creating filled arrays.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > var out = {{alias}}( {{alias:@stdlib/random/base/triangular}}, dt, 'float64' );
+
+
+{{alias}}.prototype.generate( len, param1, param2, param3[, options] )
+    Returns an array filled with pseudorandom values drawn from a ternary PRNG.
+
+    Parameters
+    ----------
+    len: integer
+        Output array length.
+
+    param1: any
+        First PRNG parameter.
+
+    param2: any
+        Second PRNG parameter.
+
+    param3: any
+        Third PRNG parameter.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output array data type. Setting this option overrides the default output
+        array data type.
+
+    Returns
+    -------
+    out: Array|TypedArray
+        Output array.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > var r = {{alias}}( {{alias:@stdlib/random/base/triangular}}, dt, 'float64' );
+    > var v = r.generate( 5, 2.0, 5.0, 3.33 )
+    <Float64Array>
+
+
+{{alias}}.prototype.assign( param1, param2, param3, out )
+    Fills an array with pseudorandom values drawn from a ternary PRNG.
+
+    Parameters
+    ----------
+    param1: any
+        First PRNG parameter.
+
+    param2: any
+        Second PRNG parameter.
+
+    param3: any
+        Third PRNG parameter.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > var r = {{alias}}( {{alias:@stdlib/random/base/triangular}}, dt, 'float64' );
+    > var out = {{alias:@stdlib/array/zeros}}( 5, 'float64' )
+    <Float64Array>
+    > var v = r.assign( 2.0, 5.0, 3.33, out )
+    <Float64Array>
+    > var bool = ( out === v )
+    true
+
+    See Also
+    --------
+
