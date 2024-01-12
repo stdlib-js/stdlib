@@ -46,8 +46,8 @@ import t = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	t.factory( 2.3 ); // $ExpectType NullaryFunction
-	t.factory(); // $ExpectType BinaryFunction
-	t.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	t.factory(); // $ExpectType UnaryFunction
+	t.factory( { 'copy': false } ); // $ExpectType UnaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -115,14 +115,14 @@ import t = require( './index' );
 	t.factory( 2.3, { 'prng': null } ); // $ExpectError
 	t.factory( 2.3, { 'prng': [] } ); // $ExpectError
 	t.factory( 2.3, { 'prng': {} } ); // $ExpectError
-	t.factory( 2.3, { 'prng': true ); // $ExpectError
+	t.factory( 2.3, { 'prng': true } ); // $ExpectError
 
 	t.factory( { 'prng': 123 } ); // $ExpectError
 	t.factory( { 'prng': 'abc' } ); // $ExpectError
 	t.factory( { 'prng': null } ); // $ExpectError
 	t.factory( { 'prng': [] } ); // $ExpectError
 	t.factory( { 'prng': {} } ); // $ExpectError
-	t.factory( { 'prng': true ); // $ExpectError
+	t.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -149,7 +149,7 @@ import t = require( './index' );
 	t.factory( 2.3, { 'state': null } ); // $ExpectError
 	t.factory( 2.3, { 'state': [] } ); // $ExpectError
 	t.factory( 2.3, { 'state': {} } ); // $ExpectError
-	t.factory( 2.3, { 'state': true ); // $ExpectError
+	t.factory( 2.3, { 'state': true } ); // $ExpectError
 	t.factory( 2.3, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	t.factory( { 'state': 123 } ); // $ExpectError
@@ -157,7 +157,7 @@ import t = require( './index' );
 	t.factory( { 'state': null } ); // $ExpectError
 	t.factory( { 'state': [] } ); // $ExpectError
 	t.factory( { 'state': {} } ); // $ExpectError
-	t.factory( { 'state': true ); // $ExpectError
+	t.factory( { 'state': true } ); // $ExpectError
 	t.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

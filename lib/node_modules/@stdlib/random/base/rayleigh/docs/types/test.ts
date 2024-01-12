@@ -46,8 +46,8 @@ import rayleigh = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	rayleigh.factory( 2.3 ); // $ExpectType NullaryFunction
-	rayleigh.factory(); // $ExpectType BinaryFunction
-	rayleigh.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	rayleigh.factory(); // $ExpectType UnaryFunction
+	rayleigh.factory( { 'copy': false } ); // $ExpectType UnaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -115,14 +115,14 @@ import rayleigh = require( './index' );
 	rayleigh.factory( 2.3, { 'prng': null } ); // $ExpectError
 	rayleigh.factory( 2.3, { 'prng': [] } ); // $ExpectError
 	rayleigh.factory( 2.3, { 'prng': {} } ); // $ExpectError
-	rayleigh.factory( 2.3, { 'prng': true ); // $ExpectError
+	rayleigh.factory( 2.3, { 'prng': true } ); // $ExpectError
 
 	rayleigh.factory( { 'prng': 123 } ); // $ExpectError
 	rayleigh.factory( { 'prng': 'abc' } ); // $ExpectError
 	rayleigh.factory( { 'prng': null } ); // $ExpectError
 	rayleigh.factory( { 'prng': [] } ); // $ExpectError
 	rayleigh.factory( { 'prng': {} } ); // $ExpectError
-	rayleigh.factory( { 'prng': true ); // $ExpectError
+	rayleigh.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -149,7 +149,7 @@ import rayleigh = require( './index' );
 	rayleigh.factory( 2.3, { 'state': null } ); // $ExpectError
 	rayleigh.factory( 2.3, { 'state': [] } ); // $ExpectError
 	rayleigh.factory( 2.3, { 'state': {} } ); // $ExpectError
-	rayleigh.factory( 2.3, { 'state': true ); // $ExpectError
+	rayleigh.factory( 2.3, { 'state': true } ); // $ExpectError
 	rayleigh.factory( 2.3, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	rayleigh.factory( { 'state': 123 } ); // $ExpectError
@@ -157,7 +157,7 @@ import rayleigh = require( './index' );
 	rayleigh.factory( { 'state': null } ); // $ExpectError
 	rayleigh.factory( { 'state': [] } ); // $ExpectError
 	rayleigh.factory( { 'state': {} } ); // $ExpectError
-	rayleigh.factory( { 'state': true ); // $ExpectError
+	rayleigh.factory( { 'state': true } ); // $ExpectError
 	rayleigh.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

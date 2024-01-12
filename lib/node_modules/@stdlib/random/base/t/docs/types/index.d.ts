@@ -109,7 +109,7 @@ interface NullaryFunction extends PRNG {
 /**
 * Interface for generating t-distributed pseudorandom numbers without pre-specified parameter values.
 */
-interface BinaryFunction extends PRNG {
+interface UnaryFunction extends PRNG {
 	/**
 	* Returns a t-distributed pseudorandom number.
 	*
@@ -199,7 +199,7 @@ interface Random extends PRNG {
 	* var v = myt( 2.3 );
 	* // returns <number>
 	*/
-	factory( options?: Options ): BinaryFunction;
+	factory( options?: Options ): UnaryFunction;
 }
 
 /**

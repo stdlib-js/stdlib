@@ -46,8 +46,8 @@ import geometric = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	geometric.factory( 0.3 ); // $ExpectType NullaryFunction
-	geometric.factory(); // $ExpectType BinaryFunction
-	geometric.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	geometric.factory(); // $ExpectType UnaryFunction
+	geometric.factory( { 'copy': false } ); // $ExpectType UnaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -115,14 +115,14 @@ import geometric = require( './index' );
 	geometric.factory( 0.3, { 'prng': null } ); // $ExpectError
 	geometric.factory( 0.3, { 'prng': [] } ); // $ExpectError
 	geometric.factory( 0.3, { 'prng': {} } ); // $ExpectError
-	geometric.factory( 0.3, { 'prng': true ); // $ExpectError
+	geometric.factory( 0.3, { 'prng': true } ); // $ExpectError
 
 	geometric.factory( { 'prng': 123 } ); // $ExpectError
 	geometric.factory( { 'prng': 'abc' } ); // $ExpectError
 	geometric.factory( { 'prng': null } ); // $ExpectError
 	geometric.factory( { 'prng': [] } ); // $ExpectError
 	geometric.factory( { 'prng': {} } ); // $ExpectError
-	geometric.factory( { 'prng': true ); // $ExpectError
+	geometric.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -149,7 +149,7 @@ import geometric = require( './index' );
 	geometric.factory( 0.3, { 'state': null } ); // $ExpectError
 	geometric.factory( 0.3, { 'state': [] } ); // $ExpectError
 	geometric.factory( 0.3, { 'state': {} } ); // $ExpectError
-	geometric.factory( 0.3, { 'state': true ); // $ExpectError
+	geometric.factory( 0.3, { 'state': true } ); // $ExpectError
 	geometric.factory( 0.3, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	geometric.factory( { 'state': 123 } ); // $ExpectError
@@ -157,7 +157,7 @@ import geometric = require( './index' );
 	geometric.factory( { 'state': null } ); // $ExpectError
 	geometric.factory( { 'state': [] } ); // $ExpectError
 	geometric.factory( { 'state': {} } ); // $ExpectError
-	geometric.factory( { 'state': true ); // $ExpectError
+	geometric.factory( { 'state': true } ); // $ExpectError
 	geometric.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 
