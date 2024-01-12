@@ -68,52 +68,52 @@ import Random = require( './index' );
 {
 	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
 
-	new Random( arcsine, '5', dtypes[ 0 ] ); // $ExpectError
-	new Random( arcsine, 5, dtypes[ 0 ] ); // $ExpectError
-	new Random( arcsine, true, dtypes[ 0 ] ); // $ExpectError
-	new Random( arcsine, false, dtypes[ 0 ] ); // $ExpectError
-	new Random( arcsine, null, dtypes[ 0 ] ); // $ExpectError
-	new Random( arcsine, void 0, dtypes[ 0 ] ); // $ExpectError
-	new Random( arcsine, 'abc', dtypes[ 0 ] ); // $ExpectError
-	new Random( arcsine, {}, dtypes[ 0 ] ); // $ExpectError
-	new Random( arcsine, ( x: number ): number => x, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number, number>( arcsine, '5', dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number, number>( arcsine, 5, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number, number>( arcsine, true, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number, number>( arcsine, false, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number, number>( arcsine, null, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number, number>( arcsine, void 0, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number, number>( arcsine, 'abc', dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number, number>( arcsine, {}, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number, number>( arcsine, ( x: number ): number => x, dtypes[ 0 ] ); // $ExpectError
 
 	const random = Random;
-	random( arcsine, '5', dtypes[ 0 ] ); // $ExpectError
-	random( arcsine, 5, dtypes[ 0 ] ); // $ExpectError
-	random( arcsine, true, dtypes[ 0 ] ); // $ExpectError
-	random( arcsine, false, dtypes[ 0 ] ); // $ExpectError
-	random( arcsine, null, dtypes[ 0 ] ); // $ExpectError
-	random( arcsine, void 0, dtypes[ 0 ] ); // $ExpectError
-	random( arcsine, 'abc', dtypes[ 0 ] ); // $ExpectError
-	random( arcsine, {}, dtypes[ 0 ] ); // $ExpectError
-	random( arcsine, ( x: number ): number => x, dtypes[ 0 ] ); // $ExpectError
+	random<number, number, number>( arcsine, '5', dtypes[ 0 ] ); // $ExpectError
+	random<number, number, number>( arcsine, 5, dtypes[ 0 ] ); // $ExpectError
+	random<number, number, number>( arcsine, true, dtypes[ 0 ] ); // $ExpectError
+	random<number, number, number>( arcsine, false, dtypes[ 0 ] ); // $ExpectError
+	random<number, number, number>( arcsine, null, dtypes[ 0 ] ); // $ExpectError
+	random<number, number, number>( arcsine, void 0, dtypes[ 0 ] ); // $ExpectError
+	random<number, number, number>( arcsine, 'abc', dtypes[ 0 ] ); // $ExpectError
+	random<number, number, number>( arcsine, {}, dtypes[ 0 ] ); // $ExpectError
+	random<number, number, number>( arcsine, ( x: number ): number => x, dtypes[ 0 ] ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a data type...
 {
 	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
 
-	new Random( arcsine, dtypes, '5' ); // $ExpectError
-	new Random( arcsine, dtypes, 5 ); // $ExpectError
-	new Random( arcsine, dtypes, true ); // $ExpectError
-	new Random( arcsine, dtypes, false ); // $ExpectError
-	new Random( arcsine, dtypes, null ); // $ExpectError
-	new Random( arcsine, dtypes, void 0 ); // $ExpectError
-	new Random( arcsine, dtypes, 'abc' ); // $ExpectError
-	new Random( arcsine, dtypes, {} ); // $ExpectError
-	new Random( arcsine, dtypes, ( x: number ): number => x ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes, '5' ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes, 5 ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes, true ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes, false ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes, null ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes, void 0 ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes, 'abc' ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes, {} ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes, ( x: number ): number => x ); // $ExpectError
 
 	const random = Random;
-	random( arcsine, dtypes, '5' ); // $ExpectError
-	random( arcsine, dtypes, 5 ); // $ExpectError
-	random( arcsine, dtypes, true ); // $ExpectError
-	random( arcsine, dtypes, false ); // $ExpectError
-	random( arcsine, dtypes, null ); // $ExpectError
-	random( arcsine, dtypes, void 0 ); // $ExpectError
-	random( arcsine, dtypes, 'abc' ); // $ExpectError
-	random( arcsine, dtypes, {} ); // $ExpectError
-	random( arcsine, dtypes, ( x: number ): number => x ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes, '5' ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes, 5 ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes, true ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes, false ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes, null ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes, void 0 ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes, 'abc' ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes, {} ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -121,15 +121,15 @@ import Random = require( './index' );
 	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
 
 	new Random(); // $ExpectError
-	new Random( arcsine ); // $ExpectError
-	new Random( arcsine, dtypes ); // $ExpectError
-	new Random( arcsine, dtypes, dtypes[ 0 ], {} ); // $ExpectError
+	new Random<number, number, number>( arcsine ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes ); // $ExpectError
+	new Random<number, number, number>( arcsine, dtypes, dtypes[ 0 ], {} ); // $ExpectError
 
 	const random = Random;
 	random(); // $ExpectError
-	random( arcsine ); // $ExpectError
-	random( arcsine, dtypes ); // $ExpectError
-	random( arcsine, dtypes, dtypes[ 0 ], {} ); // $ExpectError
+	random<number, number, number>( arcsine ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes ); // $ExpectError
+	random<number, number, number>( arcsine, dtypes, dtypes[ 0 ], {} ); // $ExpectError
 }
 
 // The function returns an instance having a `generate` method which returns an array...

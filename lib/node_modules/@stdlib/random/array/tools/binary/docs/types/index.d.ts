@@ -102,8 +102,8 @@ declare class RandomArray<T, U, V> {
 	/**
 	* Fills an array with pseudorandom values drawn from a binary PRNG.
 	*
-	* @param param1 - PRNG parameter
-	* @param param2 - PRNG parameter
+	* @param param1 - first PRNG parameter
+	* @param param2 - second PRNG parameter
 	* @param out - output array
 	* @returns output array
 	*
