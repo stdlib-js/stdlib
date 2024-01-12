@@ -48,7 +48,7 @@ str = toBinaryString( -1.0e308 );
 The function handles [subnormals][subnormals].
 
 ```javascript
-str = toBinaryString( -3.14e-320 );
+var str = toBinaryString( -3.14e-320 );
 // returns '1000000000000000000000000000000000000000000000000001100011010011'
 
 str = toBinaryString( 5.0e-324 );
@@ -58,7 +58,7 @@ str = toBinaryString( 5.0e-324 );
 The function handles special values.
 
 ```javascript
-str = toBinaryString( 0.0 );
+var str = toBinaryString( 0.0 );
 // returns '0000000000000000000000000000000000000000000000000000000000000000'
 
 str = toBinaryString( -0.0 );
