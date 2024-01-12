@@ -68,52 +68,52 @@ import Random = require( './index' );
 {
 	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
 
-	new Random( exponential, '5', dtypes[ 0 ] ); // $ExpectError
-	new Random( exponential, 5, dtypes[ 0 ] ); // $ExpectError
-	new Random( exponential, true, dtypes[ 0 ] ); // $ExpectError
-	new Random( exponential, false, dtypes[ 0 ] ); // $ExpectError
-	new Random( exponential, null, dtypes[ 0 ] ); // $ExpectError
-	new Random( exponential, void 0, dtypes[ 0 ] ); // $ExpectError
-	new Random( exponential, 'abc', dtypes[ 0 ] ); // $ExpectError
-	new Random( exponential, {}, dtypes[ 0 ] ); // $ExpectError
-	new Random( exponential, ( x: number ): number => x, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number>( exponential, '5', dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number>( exponential, 5, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number>( exponential, true, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number>( exponential, false, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number>( exponential, null, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number>( exponential, void 0, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number>( exponential, 'abc', dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number>( exponential, {}, dtypes[ 0 ] ); // $ExpectError
+	new Random<number, number>( exponential, ( x: number ): number => x, dtypes[ 0 ] ); // $ExpectError
 
 	const random = Random;
-	random( exponential, '5', dtypes[ 0 ] ); // $ExpectError
-	random( exponential, 5, dtypes[ 0 ] ); // $ExpectError
-	random( exponential, true, dtypes[ 0 ] ); // $ExpectError
-	random( exponential, false, dtypes[ 0 ] ); // $ExpectError
-	random( exponential, null, dtypes[ 0 ] ); // $ExpectError
-	random( exponential, void 0, dtypes[ 0 ] ); // $ExpectError
-	random( exponential, 'abc', dtypes[ 0 ] ); // $ExpectError
-	random( exponential, {}, dtypes[ 0 ] ); // $ExpectError
-	random( exponential, ( x: number ): number => x, dtypes[ 0 ] ); // $ExpectError
+	random<number, number>( exponential, '5', dtypes[ 0 ] ); // $ExpectError
+	random<number, number>( exponential, 5, dtypes[ 0 ] ); // $ExpectError
+	random<number, number>( exponential, true, dtypes[ 0 ] ); // $ExpectError
+	random<number, number>( exponential, false, dtypes[ 0 ] ); // $ExpectError
+	random<number, number>( exponential, null, dtypes[ 0 ] ); // $ExpectError
+	random<number, number>( exponential, void 0, dtypes[ 0 ] ); // $ExpectError
+	random<number, number>( exponential, 'abc', dtypes[ 0 ] ); // $ExpectError
+	random<number, number>( exponential, {}, dtypes[ 0 ] ); // $ExpectError
+	random<number, number>( exponential, ( x: number ): number => x, dtypes[ 0 ] ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a data type...
 {
 	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
 
-	new Random( exponential, dtypes, '5' ); // $ExpectError
-	new Random( exponential, dtypes, 5 ); // $ExpectError
-	new Random( exponential, dtypes, true ); // $ExpectError
-	new Random( exponential, dtypes, false ); // $ExpectError
-	new Random( exponential, dtypes, null ); // $ExpectError
-	new Random( exponential, dtypes, void 0 ); // $ExpectError
-	new Random( exponential, dtypes, 'abc' ); // $ExpectError
-	new Random( exponential, dtypes, {} ); // $ExpectError
-	new Random( exponential, dtypes, ( x: number ): number => x ); // $ExpectError
+	new Random<number, number>( exponential, dtypes, '5' ); // $ExpectError
+	new Random<number, number>( exponential, dtypes, 5 ); // $ExpectError
+	new Random<number, number>( exponential, dtypes, true ); // $ExpectError
+	new Random<number, number>( exponential, dtypes, false ); // $ExpectError
+	new Random<number, number>( exponential, dtypes, null ); // $ExpectError
+	new Random<number, number>( exponential, dtypes, void 0 ); // $ExpectError
+	new Random<number, number>( exponential, dtypes, 'abc' ); // $ExpectError
+	new Random<number, number>( exponential, dtypes, {} ); // $ExpectError
+	new Random<number, number>( exponential, dtypes, ( x: number ): number => x ); // $ExpectError
 
 	const random = Random;
-	random( exponential, dtypes, '5' ); // $ExpectError
-	random( exponential, dtypes, 5 ); // $ExpectError
-	random( exponential, dtypes, true ); // $ExpectError
-	random( exponential, dtypes, false ); // $ExpectError
-	random( exponential, dtypes, null ); // $ExpectError
-	random( exponential, dtypes, void 0 ); // $ExpectError
-	random( exponential, dtypes, 'abc' ); // $ExpectError
-	random( exponential, dtypes, {} ); // $ExpectError
-	random( exponential, dtypes, ( x: number ): number => x ); // $ExpectError
+	random<number, number>( exponential, dtypes, '5' ); // $ExpectError
+	random<number, number>( exponential, dtypes, 5 ); // $ExpectError
+	random<number, number>( exponential, dtypes, true ); // $ExpectError
+	random<number, number>( exponential, dtypes, false ); // $ExpectError
+	random<number, number>( exponential, dtypes, null ); // $ExpectError
+	random<number, number>( exponential, dtypes, void 0 ); // $ExpectError
+	random<number, number>( exponential, dtypes, 'abc' ); // $ExpectError
+	random<number, number>( exponential, dtypes, {} ); // $ExpectError
+	random<number, number>( exponential, dtypes, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -121,15 +121,15 @@ import Random = require( './index' );
 	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
 
 	new Random(); // $ExpectError
-	new Random( exponential ); // $ExpectError
-	new Random( exponential, dtypes ); // $ExpectError
-	new Random( exponential, dtypes, dtypes[ 0 ], {} ); // $ExpectError
+	new Random<number, number>( exponential ); // $ExpectError
+	new Random<number, number>( exponential, dtypes ); // $ExpectError
+	new Random<number, number>( exponential, dtypes, dtypes[ 0 ], {} ); // $ExpectError
 
 	const random = Random;
 	random(); // $ExpectError
-	random( exponential ); // $ExpectError
-	random( exponential, dtypes ); // $ExpectError
-	random( exponential, dtypes, dtypes[ 0 ], {} ); // $ExpectError
+	random<number, number>( exponential ); // $ExpectError
+	random<number, number>( exponential, dtypes ); // $ExpectError
+	random<number, number>( exponential, dtypes, dtypes[ 0 ], {} ); // $ExpectError
 }
 
 // The function returns an instance having a `generate` method which returns an array...
