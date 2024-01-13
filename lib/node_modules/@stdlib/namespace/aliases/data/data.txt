@@ -2452,6 +2452,7 @@ random.array.poisson
 random.array.randu
 random.array.rayleigh
 random.array.t
+random.array.triangular
 random.array.uniform
 random.array.weibull
 random.iterators.arcsine

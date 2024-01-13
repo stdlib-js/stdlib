@@ -2452,6 +2452,7 @@
 "@stdlib/random/array/randu",random.array.randu
 "@stdlib/random/array/rayleigh",random.array.rayleigh
 "@stdlib/random/array/t",random.array.t
+"@stdlib/random/array/triangular",random.array.triangular
 "@stdlib/random/array/uniform",random.array.uniform
 "@stdlib/random/array/weibull",random.array.weibull
 "@stdlib/random/iter/arcsine",random.iterators.arcsine
