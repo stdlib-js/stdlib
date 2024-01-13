@@ -2437,6 +2437,7 @@ random.array.frechet
 random.array.gamma
 random.array.geometric
 random.array.gumbel
+random.array.hypergeometric
 random.array.invgamma
 random.array.kumaraswamy
 random.array.laplace

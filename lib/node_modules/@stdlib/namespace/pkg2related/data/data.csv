@@ -2437,6 +2437,7 @@
 "@stdlib/random/array/gamma","@stdlib/random/base/gamma,@stdlib/random/strided/gamma"
 "@stdlib/random/array/geometric","@stdlib/random/base/geometric"
 "@stdlib/random/array/gumbel","@stdlib/random/base/gumbel"
+"@stdlib/random/array/hypergeometric","@stdlib/random/base/hypergeometric"
 "@stdlib/random/array/invgamma","@stdlib/random/base/invgamma,@stdlib/random/strided/invgamma"
 "@stdlib/random/array/kumaraswamy","@stdlib/random/base/kumaraswamy"
 "@stdlib/random/array/laplace","@stdlib/random/base/laplace"
