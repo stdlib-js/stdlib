@@ -2433,6 +2433,7 @@ random.array.discreteUniform
 random.array.erlang
 random.array.exponential
 random.array.f
+random.array.frechet
 random.array.gamma
 random.array.geometric
 random.array.gumbel

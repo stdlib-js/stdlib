@@ -2433,6 +2433,7 @@
 "@stdlib/random/array/erlang","@stdlib/random/base/erlang"
 "@stdlib/random/array/exponential","@stdlib/random/base/exponential,@stdlib/random/strided/exponential"
 "@stdlib/random/array/f","@stdlib/random/base/f"
+"@stdlib/random/array/frechet","@stdlib/random/base/frechet"
 "@stdlib/random/array/gamma","@stdlib/random/base/gamma,@stdlib/random/strided/gamma"
 "@stdlib/random/array/geometric","@stdlib/random/base/geometric"
 "@stdlib/random/array/gumbel","@stdlib/random/base/gumbel"

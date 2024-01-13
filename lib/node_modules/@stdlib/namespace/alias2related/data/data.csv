@@ -2433,6 +2433,7 @@ random.array.discreteUniform,"random.array.uniform,base.random.discreteUniform,r
 random.array.erlang,"base.random.erlang"
 random.array.exponential,"base.random.exponential,random.strided.exponential"
 random.array.f,"base.random.f"
+random.array.frechet,"base.random.frechet"
 random.array.gamma,"base.random.gamma,random.strided.gamma"
 random.array.geometric,"base.random.geometric"
 random.array.gumbel,"base.random.gumbel"
