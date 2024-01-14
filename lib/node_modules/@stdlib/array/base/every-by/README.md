@@ -20,7 +20,7 @@ limitations under the License.
 
 # everyBy
 
-> Test whether all elements in a collection pass a test implemented by a predicate function.
+> Test whether all elements in an array pass a test implemented by a predicate function.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
