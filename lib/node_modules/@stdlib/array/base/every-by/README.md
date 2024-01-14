@@ -77,27 +77,22 @@ The `predicate` function is provided three arguments:
 To set the `predicate` function execution context, provide a `thisArg`.
 
 ```javascript
-function sum( value ) {
-    if ( value < 0 ) {
-        return false;
-    }
-    this.sum += value;
+function predicate( value ) {
     this.count += 1;
-    return true;
+    return ( value > 0 );
 }
 
-var x = [ 1, 2, 3, 4 ];
+var x = [ 1, 2, -3, 4 ];
 
 var context = {
-    'sum': 0,
     'count': 0
 };
 
-var bool = everyBy( x, sum, context );
-// returns true
+var bool = everyBy( x, predicate, context );
+// returns false
 
-var mean = context.sum / context.count;
-// returns 2.5
+var cnt = context.count;
+// returns 3
 ```
 
 </section>
