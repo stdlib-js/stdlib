@@ -20,7 +20,7 @@ limitations under the License.
 
 # every
 
-> Test whether all elements in a collection are truthy.
+> Test whether all elements in an array are truthy.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
