@@ -149,7 +149,7 @@ jobs:
       # Install MSYS2:
       - name: 'Install MSYS2'
         # Pin action to full length commit SHA
-        uses: msys2/setup-msys2@b2186a9c6fc760d732f4c7fc5bc5128642a1d65c # v2.21.1
+        uses: msys2/setup-msys2@cc11e9188b693c2b100158c3322424c4cc1dadea # v2.22.0
         with:
           # Set the MSYS system:
           msystem: MINGW64
