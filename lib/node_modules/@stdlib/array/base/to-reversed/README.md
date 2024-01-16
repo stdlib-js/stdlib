@@ -85,18 +85,17 @@ var bool = ( out === x );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
 var toReversed = require( '@stdlib/array/base/to-reversed' );
 
-var x = new Float64Array( zeroTo( 6 ) );
-// returns <Float64Array>[ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0 ]
+var x = zeroTo( 6 );
+// returns [ 0, 1, 2, 3, 4, 5 ]
 
 var y = toReversed( x );
-// returns <Float64Array>[ 5.0, 4.0, 3.0, 2.0, 1.0, 0.0 ]
+// returns [ 5, 4, 3, 2, 1, 0 ]
 
 var z = toReversed( y );
-// returns <Float64Array>[ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0 ]
+// returns [ 0, 1, 2, 3, 4, 5 ]
 ```
 
 </section>
