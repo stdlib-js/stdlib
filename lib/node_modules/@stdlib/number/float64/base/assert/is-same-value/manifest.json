@@ -1,5 +1,7 @@
 {
-	"options": {},
+	"options": {
+    "task": "build"
+  },
 	"fields": [
 		{
 			"field": "src",
@@ -22,17 +24,46 @@
 			"relative": false
 		}
 	],
-	"confs": [
-		{
-			"src": [
-				"./src/main.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [],
-			"libpath": [],
-			"dependencies": []
-		}
-	]
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-double"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
+    }
+  ]
 }

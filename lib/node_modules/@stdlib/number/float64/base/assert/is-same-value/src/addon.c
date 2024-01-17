@@ -17,9 +17,10 @@
 */
 
 #include "stdlib/number/float64/base/assert/is_same_value.h"
+#include "stdlib/napi/export.h"
+#include "stdlib/napi/argv.h"
+#include "stdlib/napi/argv_double.h"
 #include <node_api.h>
-#include <stdint.h>
-#include <stdbool.h>
 #include <assert.h>
 
 /**
@@ -31,74 +32,15 @@
 * @return       Node-API value
 */
 static napi_value addon( napi_env env, napi_callback_info info ) {
-	napi_status status;
-
-	// Get callback arguments:
-	size_t argc = 2;
-	napi_value argv[ 2 ];
-	status = napi_get_cb_info( env, info, &argc, argv, NULL, NULL );
-	assert( status == napi_ok );
-
-	// Check whether we were provided the correct number of arguments:
-	if ( argc < 2 ) {
-		status = napi_throw_error( env, NULL, "invalid invocation. Insufficient arguments." );
-		assert( status == napi_ok );
-		return NULL;
-	}
-	if ( argc > 2 ) {
-		status = napi_throw_error( env, NULL, "invalid invocation. Too many arguments." );
-		assert( status == napi_ok );
-		return NULL;
-	}
-
-	napi_valuetype vtype0;
-	status = napi_typeof( env, argv[ 0 ], &vtype0 );
-	assert( status == napi_ok );
-	if ( vtype0 != napi_number ) {
-		status = napi_throw_type_error( env, NULL, "invalid argument. First argument must be a number." );
-		assert( status == napi_ok );
-		return NULL;
-	}
-
-	napi_valuetype vtype1;
-	status = napi_typeof( env, argv[ 1 ], &vtype1 );
-	assert( status == napi_ok );
-	if ( vtype1 != napi_number ) {
-		status = napi_throw_type_error( env, NULL, "invalid argument. Second argument must be a number." );
-		assert( status == napi_ok );
-		return NULL;
-	}
-
-	double a;
-	status = napi_get_value_double( env, argv[ 0 ], &a );
-	assert( status == napi_ok );
-
-	double b;
-	status = napi_get_value_double( env, argv[ 1 ], &b );
-	assert( status == napi_ok );
-
-	bool out = stdlib_base_float64_is_same_value( a, b );
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 2 );
+	STDLIB_NAPI_ARGV_DOUBLE( env, a, argv, 0 );
+	STDLIB_NAPI_ARGV_DOUBLE( env, b, argv, 1 );
 
 	napi_value v;
-	status = napi_create_uint32( env, out, &v );
+	napi_status status = napi_create_uint32( env, stdlib_base_float64_is_same_value( a, b ), &v );
 	assert( status == napi_ok );
 
 	return v;
 }
 
-/**
-* Initializes a Node-API module.
-*
-* @private
-* @param env      environment under which the function is invoked
-* @param exports  exports object
-* @return         main export
-*/
-static napi_value init( napi_env env, napi_value exports ) {
-	napi_value fcn;
-	napi_status status = napi_create_function( env, "exports", NAPI_AUTO_LENGTH, addon, NULL, &fcn );
-	assert( status == napi_ok );
-	return fcn;
-}
-
-NAPI_MODULE( NODE_GYP_MODULE_NAME, init )
+STDLIB_NAPI_MODULE_EXPORT_FCN( addon )
