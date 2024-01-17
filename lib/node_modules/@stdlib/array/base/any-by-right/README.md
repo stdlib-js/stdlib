@@ -128,7 +128,7 @@ var anyByRight = require( '@stdlib/array/base/any-by-right' );
 
 var x = bernoulli( 10, 0.1, {
     'dtype': 'int8'
-} );
+});
 // returns <Int8Array>
 
 var out = anyByRight( x, naryFunction( isPositiveInteger, 1 ) );

@@ -128,7 +128,7 @@ var noneByRight = require( '@stdlib/array/base/none-by-right' );
 
 var x = bernoulli( 10, 0.1, {
     'dtype': 'int8'
-} );
+});
 // returns <Int8Array>
 
 var out = noneByRight( x, naryFunction( isPositiveInteger, 1 ) );

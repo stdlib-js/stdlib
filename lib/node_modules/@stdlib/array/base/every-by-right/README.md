@@ -128,7 +128,7 @@ var everyByRight = require( '@stdlib/array/base/every-by-right' );
 
 var x = discreteUniform( 10, 0, 10, {
     'dtype': 'int32'
-} );
+});
 // returns <Int32Array>
 
 var out = everyByRight( x, naryFunction( isPositiveInteger, 1 ) );

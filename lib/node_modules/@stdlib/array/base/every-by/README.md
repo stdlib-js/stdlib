@@ -135,7 +135,7 @@ var everyBy = require( '@stdlib/array/base/every-by' );
 
 var x = discreteUniform( 10, 0, 10, {
     'dtype': 'int32'
-} );
+});
 // returns <Int32Array>
 
 var out = everyBy( x, naryFunction( isPositiveInteger, 1 ) );

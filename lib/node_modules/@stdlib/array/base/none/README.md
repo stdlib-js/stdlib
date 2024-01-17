@@ -82,7 +82,7 @@ var none = require( '@stdlib/array/base/none' );
 
 var x = bernoulli( 10, 0.1, {
     'dtype': 'int8'
-} );
+});
 // returns <Int8Array>
 
 var out = none( x );
