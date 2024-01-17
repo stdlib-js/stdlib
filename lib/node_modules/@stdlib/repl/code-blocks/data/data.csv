@@ -3284,6 +3284,7 @@ isSafeInteger.isObject,"var bool = isSafeInteger.isObject( 3.0 )\nbool = isSafeI
 isSafeIntegerArray,"var arr = [ -3.0, new Number(0.0), 2.0 ];\nvar bool = isSafeIntegerArray( arr )\narr = [ -3.0, '3.0' ];\nbool = isSafeIntegerArray( arr )\n"
 isSafeIntegerArray.primitives,"var arr = [ -1.0, 10.0 ];\nvar bool = isSafeIntegerArray.primitives( arr )\narr = [ -1.0, 0.0, 5.0 ];\nbool = isSafeIntegerArray.primitives( arr )\narr = [ -3.0, new Number(-1.0) ];\nbool = isSafeIntegerArray.primitives( arr )\n"
 isSafeIntegerArray.objects,"var arr = [ new Number(1.0), new Number(3.0) ];\nvar bool = isSafeIntegerArray.objects( arr )\narr = [ -1.0, 0.0, 3.0 ];\nbool = isSafeIntegerArray.objects( arr )\narr = [ 3.0, new Number(-1.0) ];\nbool = isSafeIntegerArray.objects( arr )\n"
+isSameFloat64Array,"var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );\nvar y = new Float64Array( [ 1.0, 2.0, 3.0 ] );\nvar bool = isSameFloat64Array( x, y )\nx = new Float64Array( [ NaN, NaN, NaN ] );\ny = new Float64Array( [ NaN, NaN, NaN ] );\nbool = isSameFloat64Array( x, y )\n"
 isSameNativeClass,"var bool = isSameNativeClass( 3.14, new Number( 3.14 ) )\nbool = isSameNativeClass( 'beep', 'boop' )\nbool = isSameNativeClass( {}, [] )\n"
 isSameType,"var bool = isSameType( true, true )\nbool = isSameType( {}, [] )\nbool = isSameType( 3.12, -3.12 )\nbool = isSameType( 0.0, '0.0' )\n"
 isSameValue,"var bool = isSameValue( true, true )\nbool = isSameValue( {}, {} )\nbool = isSameValue( -0.0, -0.0 )\nbool = isSameValue( -0.0, 0.0 )\nbool = isSameValue( NaN, NaN )\n"
