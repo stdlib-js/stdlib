@@ -20,7 +20,7 @@ limitations under the License.
 
 # isSameFloat32Array
 
-> Test if two arguments both [Float32Arrays][@stdlib/array/float32] and have the [same values][@stdlib/assert/is-same-value].
+> Test if two arguments are both [Float32Arrays][@stdlib/array/float32] and have the [same values][@stdlib/assert/is-same-value].
 
 <section class="usage">
 
