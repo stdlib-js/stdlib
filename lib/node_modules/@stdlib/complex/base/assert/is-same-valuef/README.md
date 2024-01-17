@@ -54,7 +54,7 @@ var out = isSameValuef( z1, z2 );
 // returns true
 ```
 
-In contract to the strict equality operator `===`, the function distinguishes between `+0` and `-0` and treats `NaNs` as the same value.
+In contrast to the strict equality operator `===`, the function distinguishes between `+0` and `-0` and treats `NaNs` as the same value.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
