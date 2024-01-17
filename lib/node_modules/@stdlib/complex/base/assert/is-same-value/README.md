@@ -146,7 +146,7 @@ out = isSameValue( z1, z2 );
 #include "stdlib/complex/base/assert/is_same_value.h"
 ```
 
-#### stdlib_complex_is_same_value( z1, z2 )
+#### stdlib_base_complex128_is_same_value( z1, z2 )
 
 Tests whether double-precision complex floating-point numbers are the same value.
 
@@ -157,7 +157,7 @@ Tests whether double-precision complex floating-point numbers are the same value
 stdlib_complex128_t z1 = stdlib_complex128( 5.0, 2.0 );
 stdlib_complex128_t z2 = stdlib_complex128( 5.0, 2.0 );
 
-bool v = stdlib_complex_is_same_value( z1, z2 );
+bool v = stdlib_base_complex128_is_same_value( z1, z2 );
 ```
 
 The function accepts the following arguments:
@@ -166,7 +166,7 @@ The function accepts the following arguments:
 -   **z2**: `[in] stdlib_complex128_t` second double-precision complex floating-point number.
 
 ```c
-bool stdlib_complex_is_same_value( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
+bool stdlib_base_complex128_is_same_value( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
 ```
 
 </section>
@@ -204,7 +204,7 @@ int main( void ) {
     bool v;
     int i;
     for ( i = 0; i < 4; i++ ) {
-        v = stdlib_complex_is_same_value( z[ i ], z[ i ] );
+        v = stdlib_base_complex128_is_same_value( z[ i ], z[ i ] );
         printf( "Same value? %s\n", ( v ) ? "True" : "False" );
     }
 }

@@ -32,7 +32,7 @@ int main( void ) {
 	bool v;
 	int i;
 	for ( i = 0; i < 4; i++ ) {
-		v = stdlib_complex_is_same_value( z[ i ], z[ i ] );
+		v = stdlib_base_complex128_is_same_value( z[ i ], z[ i ] );
 		printf( "Same value? %s\n", ( v ) ? "True" : "False" );
 	}
 }

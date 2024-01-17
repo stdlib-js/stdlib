@@ -37,7 +37,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64",
-        "@stdlib/complex/reim"
+        "@stdlib/complex/reim",
+        "@stdlib/number/float64/base/assert/is-same-value"
       ]
     },
     {
@@ -52,7 +53,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64",
-        "@stdlib/complex/reim"
+        "@stdlib/complex/reim",
+        "@stdlib/number/float64/base/assert/is-same-value"
       ]
     }
   ]
