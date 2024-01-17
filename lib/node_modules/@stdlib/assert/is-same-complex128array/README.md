@@ -20,7 +20,7 @@ limitations under the License.
 
 # isSameComplex128Array
 
-> Test if two arguments both [Complex128Arrays][@stdlib/array/complex128] and have the [same values][@stdlib/assert/is-same-value].
+> Test if two arguments are both [Complex128Arrays][@stdlib/array/complex128] and have the [same values][@stdlib/assert/is-same-value].
 
 <section class="usage">
 
