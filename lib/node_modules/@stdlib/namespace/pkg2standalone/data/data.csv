@@ -1932,6 +1932,7 @@
 "@stdlib/assert/is-relative-path","@stdlib/assert-is-relative-path"
 "@stdlib/assert/is-safe-integer","@stdlib/assert-is-safe-integer"
 "@stdlib/assert/is-safe-integer-array","@stdlib/assert-is-safe-integer-array"
+"@stdlib/assert/is-same-complex128array","@stdlib/assert-is-same-complex128array"
 "@stdlib/assert/is-same-float32array","@stdlib/assert-is-same-float32array"
 "@stdlib/assert/is-same-float64array","@stdlib/assert-is-same-float64array"
 "@stdlib/assert/is-same-native-class","@stdlib/assert-is-same-native-class"
