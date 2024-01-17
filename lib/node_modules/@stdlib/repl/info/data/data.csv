@@ -2567,6 +2567,7 @@ FLOAT32_EXPONENT_BIAS,"\nFLOAT32_EXPONENT_BIAS\n    The bias of a single-precisi
 FLOAT32_MAX,"\nFLOAT32_MAX\n    Maximum single-precision floating-point number.\n"
 FLOAT32_MAX_SAFE_INTEGER,"\nFLOAT32_MAX_SAFE_INTEGER\n    Maximum safe single-precision floating-point integer.\n"
 FLOAT32_MIN_SAFE_INTEGER,"\nFLOAT32_MIN_SAFE_INTEGER\n    Minimum safe single-precision floating-point integer.\n"
+FLOAT32_NAN,"\nFLOAT32_NAN\n    Single-precision floating-point NaN.\n"
 FLOAT32_NINF,"\nFLOAT32_NINF\n    Single-precision floating-point negative infinity.\n"
 FLOAT32_NUM_BYTES,"\nFLOAT32_NUM_BYTES\n    Size (in bytes) of a single-precision floating-point number.\n"
 FLOAT32_PINF,"\nFLOAT32_PINF\n    Single-precision floating-point positive infinity.\n"
