@@ -32,7 +32,7 @@ int main( void ) {
 	bool v;
 	int i;
 	for ( i = 0; i < 4; i++ ) {
-		v = stdlib_complex_is_not_equal( z[ i ], z[ i ] );
+		v = stdlib_base_complex128_is_not_equal( z[ i ], z[ i ] );
 		printf( "Equal? %s\n", ( v ) ? "True" : "False" );
 	}
 }

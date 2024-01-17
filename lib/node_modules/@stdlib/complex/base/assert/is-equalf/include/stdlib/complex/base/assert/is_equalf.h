@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Tests whether two single-precision complex floating-point numbers are equal.
 */
-bool stdlib_complex_is_equalf( const stdlib_complex64_t z1, const stdlib_complex64_t z2 );
+bool stdlib_base_complex64_is_equal( const stdlib_complex64_t z1, const stdlib_complex64_t z2 );
 
 #ifdef __cplusplus
 }

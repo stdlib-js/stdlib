@@ -124,7 +124,7 @@ out = isEqualf( z1, z2 );
 #include "stdlib/complex/base/assert/is_equalf.h"
 ```
 
-#### stdlib_complex_is_equalf( z1, z2 )
+#### stdlib_base_complex64_is_equal( z1, z2 )
 
 Tests whether single-precision complex floating-point numbers are equal.
 
@@ -135,7 +135,7 @@ Tests whether single-precision complex floating-point numbers are equal.
 stdlib_complex64_t z1 = stdlib_complex64( 5.0, 2.0 );
 stdlib_complex64_t z2 = stdlib_complex64( 5.0, 2.0 );
 
-bool v = stdlib_complex_is_equalf( z1, z2 );
+bool v = stdlib_base_complex64_is_equal( z1, z2 );
 ```
 
 The function accepts the following arguments:
@@ -144,7 +144,7 @@ The function accepts the following arguments:
 -   **z2**: `[in] stdlib_complex64_t` second single-precision complex floating-point number.
 
 ```c
-bool stdlib_complex_is_equalf( const stdlib_complex64_t z1, const stdlib_complex64_t z2 );
+bool stdlib_base_complex64_is_equal( const stdlib_complex64_t z1, const stdlib_complex64_t z2 );
 ```
 
 </section>
@@ -182,7 +182,7 @@ int main( void ) {
     bool v;
     int i;
     for ( i = 0; i < 4; i++ ) {
-        v = stdlib_complex_is_equalf( z[ i ], z[ i ] );
+        v = stdlib_base_complex64_is_equal( z[ i ], z[ i ] );
         printf( "Equal? %s\n", ( v ) ? "True" : "False" );
     }
 }

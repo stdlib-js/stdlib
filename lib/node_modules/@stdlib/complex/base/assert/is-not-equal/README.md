@@ -124,7 +124,7 @@ out = isNotEqual( z1, z2 );
 #include "stdlib/complex/base/assert/is_not_equal.h"
 ```
 
-#### stdlib_complex_is_not_equal( z1, z2 )
+#### stdlib_base_complex128_is_not_equal( z1, z2 )
 
 Tests whether double-precision complex floating-point numbers are not equal.
 
@@ -135,7 +135,7 @@ Tests whether double-precision complex floating-point numbers are not equal.
 stdlib_complex128_t z1 = stdlib_complex128( 5.0, 2.0 );
 stdlib_complex128_t z2 = stdlib_complex128( 5.0, -2.0 );
 
-bool v = stdlib_complex_is_not_equal( z1, z2 );
+bool v = stdlib_base_complex128_is_not_equal( z1, z2 );
 ```
 
 The function accepts the following arguments:
@@ -144,7 +144,7 @@ The function accepts the following arguments:
 -   **z2**: `[in] stdlib_complex128_t` second double-precision complex floating-point number.
 
 ```c
-bool stdlib_complex_is_not_equal( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
+bool stdlib_base_complex128_is_not_equal( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
 ```
 
 </section>
@@ -182,7 +182,7 @@ int main( void ) {
     bool v;
     int i;
     for ( i = 0; i < 4; i++ ) {
-        v = stdlib_complex_is_not_equal( z[ i ], z[ i ] );
+        v = stdlib_base_complex128_is_not_equal( z[ i ], z[ i ] );
         printf( "Equal? %s\n", ( v ) ? "True" : "False" );
     }
 }

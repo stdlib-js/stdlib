@@ -35,9 +35,9 @@
 * stdlib_complex128_t z1 = stdlib_complex128( 5.0, 2.0 );
 * stdlib_complex128_t z2 = stdlib_complex128( 5.0, -2.0 );
 *
-* bool v = stdlib_complex_is_not_equal( z1, z2 );
+* bool v = stdlib_base_complex128_is_not_equal( z1, z2 );
 */
-bool stdlib_complex_is_not_equal( const stdlib_complex128_t z1, const stdlib_complex128_t z2 ) {
+bool stdlib_base_complex128_is_not_equal( const stdlib_complex128_t z1, const stdlib_complex128_t z2 ) {
 	double re1;
 	double re2;
 	double im1;

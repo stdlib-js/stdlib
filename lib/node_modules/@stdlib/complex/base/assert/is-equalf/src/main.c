@@ -35,9 +35,9 @@
 * stdlib_complex64_t z1 = stdlib_complex64( 5.0, 2.0 );
 * stdlib_complex64_t z2 = stdlib_complex64( 5.0, 2.0 );
 *
-* bool v = stdlib_complex_is_equalf( z1, z2 );
+* bool v = stdlib_base_complex64_is_equal( z1, z2 );
 */
-bool stdlib_complex_is_equalf( const stdlib_complex64_t z1, const stdlib_complex64_t z2 ) {
+bool stdlib_base_complex64_is_equal( const stdlib_complex64_t z1, const stdlib_complex64_t z2 ) {
 	float re1;
 	float re2;
 	float im1;
