@@ -1933,6 +1933,7 @@
 "@stdlib/assert/is-safe-integer","@stdlib/assert-is-safe-integer"
 "@stdlib/assert/is-safe-integer-array","@stdlib/assert-is-safe-integer-array"
 "@stdlib/assert/is-same-complex64array","@stdlib/assert-is-same-complex64array"
+"@stdlib/assert/is-same-complex128","@stdlib/assert-is-same-complex128"
 "@stdlib/assert/is-same-complex128array","@stdlib/assert-is-same-complex128array"
 "@stdlib/assert/is-same-float32array","@stdlib/assert-is-same-float32array"
 "@stdlib/assert/is-same-float64array","@stdlib/assert-is-same-float64array"
