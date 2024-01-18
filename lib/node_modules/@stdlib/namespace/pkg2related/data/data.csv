@@ -48,6 +48,7 @@
 "@stdlib/symbol/async-iterator","@stdlib/symbol/ctor,@stdlib/symbol/iterator"
 "@stdlib/array/zeros","@stdlib/array/empty,@stdlib/array/full,@stdlib/array/nans,@stdlib/array/ones,@stdlib/array/zeros-like,@stdlib/ndarray/zeros"
 "@stdlib/array/zeros-like","@stdlib/array/empty-like,@stdlib/array/full-like,@stdlib/array/nans-like,@stdlib/array/ones-like,@stdlib/array/zeros,@stdlib/ndarray/zeros-like"
+"@stdlib/array/zero-to","@stdlib/array/empty,@stdlib/array/full,@stdlib/array/nans,@stdlib/array/zeros"
 "@stdlib/stats/bartlett-test","@stdlib/stats/vartest,@stdlib/stats/levene-test"
 "@stdlib/math/base/special/abs","@stdlib/math/base/special/abs2,@stdlib/math/base/special/absf,@stdlib/math/base/special/labs"
 "@stdlib/math/base/special/abs2","@stdlib/math/base/special/abs,@stdlib/math/base/special/abs2f"

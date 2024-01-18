@@ -3284,6 +3284,7 @@ isSafeInteger.isObject,"\nisSafeInteger.isObject( value:any )\n    Tests if a va
 isSafeIntegerArray,"\nisSafeIntegerArray( value:any )\n    Tests if a value is an array-like object containing only safe integers.\n"
 isSafeIntegerArray.primitives,"\nisSafeIntegerArray.primitives( value:any )\n    Tests if a value is an array-like object containing only primitive safe\n    integer values.\n"
 isSafeIntegerArray.objects,"\nisSafeIntegerArray.objects( value:any )\n    Tests if a value is an array-like object containing only `Number` objects\n    having safe integer values.\n"
+isSameComplex64,"\nisSameComplex64( v1:any, v2:any )\n    Tests if two arguments are both single-precision complex floating-point\n    numbers and have the same value.\n"
 isSameComplex64Array,"\nisSameComplex64Array( v1:any, v2:any )\n    Tests if two arguments are both Complex64Arrays and have the same values.\n"
 isSameComplex128,"\nisSameComplex128( v1:any, v2:any )\n    Tests if two arguments are both double-precision complex floating-point\n    numbers and have the same value.\n"
 isSameComplex128Array,"\nisSameComplex128Array( v1:any, v2:any )\n    Tests if two arguments are both Complex128Arrays and have the same values.\n"

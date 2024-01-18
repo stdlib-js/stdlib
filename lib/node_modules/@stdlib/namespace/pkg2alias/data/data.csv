@@ -48,6 +48,7 @@
 "@stdlib/symbol/async-iterator",AsyncIteratorSymbol
 "@stdlib/array/zeros",azeros
 "@stdlib/array/zeros-like",azerosLike
+"@stdlib/array/zero-to",azeroTo
 "@stdlib/stats/bartlett-test",bartlettTest
 "@stdlib/math/base/special/abs",base.abs
 "@stdlib/math/base/special/abs2",base.abs2

@@ -48,6 +48,7 @@ arrayview2iteratorRight
 AsyncIteratorSymbol
 azeros
 azerosLike
+azeroTo
 bartlettTest
 base.abs
 base.abs2

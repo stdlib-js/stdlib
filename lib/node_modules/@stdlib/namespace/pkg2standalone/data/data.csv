@@ -48,6 +48,7 @@
 "@stdlib/symbol/async-iterator","@stdlib/symbol-async-iterator"
 "@stdlib/array/zeros","@stdlib/array-zeros"
 "@stdlib/array/zeros-like","@stdlib/array-zeros-like"
+"@stdlib/array/zero-to","@stdlib/array-zero-to"
 "@stdlib/stats/bartlett-test","@stdlib/stats-bartlett-test"
 "@stdlib/math/base/special/abs","@stdlib/math-base-special-abs"
 "@stdlib/math/base/special/abs2","@stdlib/math-base-special-abs2"
