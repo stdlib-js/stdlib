@@ -56,6 +56,20 @@ var arr = oneTo( 5.1 );
 // returns [ 1, 2, 3, 4, 5, 6 ]
 ```
 
+#### oneTo.assign( out, stride, offset )
+
+Fills an array with linearly spaced numeric elements which increment by 1 starting from one.
+
+```javascript
+var out = [ 0, 0, 0, 0, 0, 0 ];
+
+var arr = oneTo.assign( out, -1, out.length-1 );
+// returns [ 6, 5, 4, 3, 2, 1 ]
+
+var bool = ( arr === out );
+// returns true
+```
+
 </section>
 
 <!-- /.usage -->
