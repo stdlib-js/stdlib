@@ -1932,6 +1932,7 @@ isRegExpString
 isRelativePath
 isSafeInteger
 isSafeIntegerArray
+isSameComplex64
 isSameComplex64Array
 isSameComplex128
 isSameComplex128Array
