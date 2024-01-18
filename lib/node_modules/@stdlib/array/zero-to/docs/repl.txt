@@ -20,7 +20,7 @@
 
     The default array data type is `float64`.
 
-    If `n` is less than or equal to zero, the function returns an empty array.
+    If `n` is equal to zero, the function returns an empty array.
 
     Parameters
     ----------
