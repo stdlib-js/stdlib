@@ -57,6 +57,7 @@ arrayview2iteratorRight,"arrayview2iteratorRight( src:ArrayLikeObject[, begin:in
 AsyncIteratorSymbol,"AsyncIteratorSymbol"
 azeros,"azeros( length:integer[, dtype:string] )"
 azerosLike,"azerosLike( x:TypedArray|Array[, dtype:string] )"
+azeroTo,"azeroTo( n:integer[, dtype:string] )"
 bartlettTest,"bartlettTest( ...x:Array[, options:Object] )"
 base.abs,"base.abs( x:number )"
 base.abs2,"base.abs2( x:number )"

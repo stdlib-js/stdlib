@@ -22,6 +22,7 @@
 "@stdlib/utils/async/any-by-right","@stdlib/utils-async-any-by-right"
 "@stdlib/array/ones","@stdlib/array-ones"
 "@stdlib/array/ones-like","@stdlib/array-ones-like"
+"@stdlib/array/one-to","@stdlib/array-one-to"
 "@stdlib/constants/float64/apery","@stdlib/constants-float64-apery"
 "@stdlib/utils/append","@stdlib/utils-append"
 "@stdlib/os/arch","@stdlib/os-arch"

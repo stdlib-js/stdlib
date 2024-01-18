@@ -57,6 +57,7 @@ arrayview2iteratorRight,"\narrayview2iteratorRight( src:ArrayLikeObject[, begin:
 AsyncIteratorSymbol,"\nAsyncIteratorSymbol\n    Async iterator symbol.\n"
 azeros,"\nazeros( length:integer[, dtype:string] )\n    Returns a zero-filled array having a specified length.\n"
 azerosLike,"\nazerosLike( x:TypedArray|Array[, dtype:string] )\n    Returns a zero-filled array having the same length and data type as a\n    provided input array.\n"
+azeroTo,"\nazeroTo( n:integer[, dtype:string] )\n    Generates a linearly spaced numeric array whose elements increment by 1\n    starting from zero.\n"
 bartlettTest,"\nbartlettTest( ...x:Array[, options:Object] )\n    Computes Bartlett’s test for equal variances.\n"
 base.abs,"\nbase.abs( x:number )\n    Computes the absolute value of a double-precision floating-point number `x`.\n"
 base.abs2,"\nbase.abs2( x:number )\n    Computes the squared absolute value of a double-precision floating-point\n    `x`.\n"

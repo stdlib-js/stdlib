@@ -22,6 +22,7 @@ anyByRight,"anyBy,anyByRightAsync,everyByRight,forEachRight,noneByRight,someByRi
 anyByRightAsync,"anyByAsync,anyByRight,everyByRightAsync,forEachRightAsync,noneByRightAsync,someByRightAsync"
 aones,"afull,anans,aonesLike,azeros"
 aonesLike,"afullLike,anansLike,aones,azerosLike"
+aoneTo,"afull,anans,aones,azeroTo,azeros"
 APERY,""
 append,"prepend,push"
 ARCH,"PLATFORM"

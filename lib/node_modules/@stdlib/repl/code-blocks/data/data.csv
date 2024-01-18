@@ -57,6 +57,7 @@ arrayview2iteratorRight,"var it = arrayview2iteratorRight( [ 1, 2, 3, 4 ], 1, 3 
 AsyncIteratorSymbol,"var s = AsyncIteratorSymbol\n"
 azeros,"var arr = azeros( 2 )\narr = azeros( 2, 'float32' )\n"
 azerosLike,"var x = new Float64Array( 2 );\nvar y = azerosLike( x )\ny = azerosLike( x, 'float32' )\n"
+azeroTo,"var arr = azeroTo( 2 )\narr = azeroTo( 2, 'float32' )\n"
 bartlettTest,"var x = [ 2.9, 3.0, 2.5, 2.6, 3.2 ];\nvar y = [ 3.8, 2.7, 4.0, 2.4 ];\nvar z = [ 2.8, 3.4, 3.7, 2.2, 2.0 ];\nvar out = bartlettTest( x, y, z )\nvar arr = [ 2.9, 3.0, 2.5, 2.6, 3.2,\n 3.8, 2.7, 4.0, 2.4,\n 2.8, 3.4, 3.7, 2.2, 2.0\n ];\nvar groups = [\n 'a', 'a', 'a', 'a', 'a',\n 'b', 'b', 'b', 'b',\n 'c', 'c', 'c', 'c', 'c'\n ];\nout = bartlettTest( arr, { 'groups': groups } )\n"
 base.abs,"var y = base.abs( -1.0 )\ny = base.abs( 2.0 )\ny = base.abs( 0.0 )\ny = base.abs( -0.0 )\ny = base.abs( NaN )\n"
 base.abs2,"var y = base.abs2( -1.0 )\ny = base.abs2( 2.0 )\ny = base.abs2( 0.0 )\ny = base.abs2( -0.0 )\ny = base.abs2( NaN )\n"
