@@ -50,6 +50,7 @@ AsyncIteratorSymbol
 azeros
 azerosLike
 azeroTo
+azeroToLike
 bartlettTest
 base.abs
 base.abs2

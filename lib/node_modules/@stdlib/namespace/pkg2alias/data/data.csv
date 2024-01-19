@@ -50,6 +50,7 @@
 "@stdlib/array/zeros",azeros
 "@stdlib/array/zeros-like",azerosLike
 "@stdlib/array/zero-to",azeroTo
+"@stdlib/array/zero-to-like",azeroToLike
 "@stdlib/stats/bartlett-test",bartlettTest
 "@stdlib/math/base/special/abs",base.abs
 "@stdlib/math/base/special/abs2",base.abs2
