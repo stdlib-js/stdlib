@@ -23,6 +23,7 @@ anyByRightAsync
 aones
 aonesLike
 aoneTo
+aoneToLike
 APERY
 append
 ARCH

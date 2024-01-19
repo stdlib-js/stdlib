@@ -23,6 +23,7 @@
 "@stdlib/array/ones",aones
 "@stdlib/array/ones-like",aonesLike
 "@stdlib/array/one-to",aoneTo
+"@stdlib/array/one-to-like",aoneToLike
 "@stdlib/constants/float64/apery",APERY
 "@stdlib/utils/append",append
 "@stdlib/os/arch",ARCH
