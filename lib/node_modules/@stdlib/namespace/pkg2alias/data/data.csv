@@ -1936,6 +1936,7 @@
 "@stdlib/assert/is-relative-path",isRelativePath
 "@stdlib/assert/is-safe-integer",isSafeInteger
 "@stdlib/assert/is-safe-integer-array",isSafeIntegerArray
+"@stdlib/assert/is-same-array",isSameArray
 "@stdlib/assert/is-same-complex64",isSameComplex64
 "@stdlib/assert/is-same-complex64array",isSameComplex64Array
 "@stdlib/assert/is-same-complex128",isSameComplex128

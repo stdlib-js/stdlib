@@ -26,6 +26,7 @@ anyByRightAsync.factory,"anyByRightAsync.factory( [options:Object,] predicate:Fu
 aones,"aones( length:integer[, dtype:string] )"
 aonesLike,"aonesLike( x:TypedArray|Array[, dtype:string] )"
 aoneTo,"aoneTo( n:integer[, dtype:string] )"
+aoneToLike,"aoneToLike( x:TypedArray|Array[, dtype:string] )"
 APERY,"APERY"
 append,"append( collection1:Array|TypedArray|Object, collection2:Array|TypedArray|Object )"
 ARCH,"ARCH"

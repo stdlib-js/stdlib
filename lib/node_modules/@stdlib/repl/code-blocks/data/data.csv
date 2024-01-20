@@ -26,6 +26,7 @@ anyByRightAsync.factory,"function predicate( value, next ) {\n setTimeout( onTim
 aones,"var arr = aones( 2 )\narr = aones( 2, 'float32' )\n"
 aonesLike,"var x = new Float64Array( 2 );\nvar y = aonesLike( x )\ny = aonesLike( x, 'float32' )\n"
 aoneTo,"var arr = aoneTo( 2 )\narr = aoneTo( 2, 'float32' )\n"
+aoneToLike,"var arr = aoneToLike( [ 0, 0 ] )\narr = aoneToLike( [ 0, 0 ], 'float32' )\n"
 APERY,"APERY\n"
 append,"var arr = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];\narr = append( arr, [ 6.0, 7.0 ] )\narr = new Float64Array( [ 1.0, 2.0 ] );\narr = append( arr, [ 3.0, 4.0 ] )\narr = { 'length': 0 };\narr = append( arr, [ 1.0, 2.0 ] )\n"
 ARCH,"ARCH\n"
