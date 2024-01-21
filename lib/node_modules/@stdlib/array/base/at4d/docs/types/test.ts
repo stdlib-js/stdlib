@@ -36,8 +36,8 @@ import at4d = require( './index' );
 	at4d( false, 0, 0, 0, 0 ); // $ExpectError
 	at4d( null, 0, 0, 0, 0 ); // $ExpectError
 	at4d( void 0, 0, 0, 0, 0 ); // $ExpectError
-	at4d( {}, 0, 0, 0 ); // $ExpectError
-	at4d( ( x: number ): number => x, 0, 0, 0, 0, 0 ); // $ExpectError
+	at4d( {}, 0, 0, 0, 0 ); // $ExpectError
+	at4d( ( x: number ): number => x, 0, 0, 0, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a number...
