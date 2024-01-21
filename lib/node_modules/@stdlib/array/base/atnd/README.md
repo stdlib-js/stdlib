@@ -56,7 +56,7 @@ out = atnd( x, 1, 0 );
 
 The function accepts the following arguments:
 
--   **x**: five-dimensional nested input array.
+-   **x**: n-dimensional nested input array.
 -   **i0**: first dimension index.
 -   **indices**: dimension indices.
 
