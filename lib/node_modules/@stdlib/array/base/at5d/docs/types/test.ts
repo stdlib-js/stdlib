@@ -36,8 +36,8 @@ import at5d = require( './index' );
 	at5d( false, 0, 0, 0, 0, 0 ); // $ExpectError
 	at5d( null, 0, 0, 0, 0, 0 ); // $ExpectError
 	at5d( void 0, 0, 0, 0, 0, 0 ); // $ExpectError
-	at5d( {}, 0, 0, 0 ); // $ExpectError
-	at5d( ( x: number ): number => x, 0, 0, 0, 0, 0, 0 ); // $ExpectError
+	at5d( {}, 0, 0, 0, 0, 0 ); // $ExpectError
+	at5d( ( x: number ): number => x, 0, 0, 0, 0, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a number...
