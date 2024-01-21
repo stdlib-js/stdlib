@@ -54,6 +54,12 @@ out = at2d( x, 1, 0 );
 // returns 3
 ```
 
+The function accepts the following arguments:
+
+-   **x**: two-dimensional nested input array.
+-   **i0**: first dimension index.
+-   **i1**: second dimension index.
+
 </section>
 
 <!-- /.usage -->
