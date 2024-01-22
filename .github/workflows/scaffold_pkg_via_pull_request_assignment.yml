@@ -107,7 +107,7 @@ jobs:
       - name: 'Get list of changed files'
         id: changed-files
         # Pin action to full length commit SHA
-        uses: tj-actions/changed-files@716b1e13042866565e00e85fd4ec490e186c4a2f # v41.0.1
+        uses: tj-actions/changed-files@ae82ed4ae04587b665efad2f206578aa6f0e8539 # v42.0.0
         with:
           separator: ' '
           base_sha: ${{ github.event.pull_request.base.sha }}
