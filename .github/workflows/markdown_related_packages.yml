@@ -147,7 +147,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5.0.2
         with:
-          title: 'Update related packages sections'
+          title: 'docs: update related packages sections'
           body: |
             This PR
 
