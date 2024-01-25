@@ -356,6 +356,12 @@ logEach( '%f', x4 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/random/base/hypergeometric`][@stdlib/random/base/hypergeometric]</span><span class="delimiter">: </span><span class="description">hypergeometric distributed pseudorandom numbers.</span>
+
 </section>
 
 <!-- /.related -->
