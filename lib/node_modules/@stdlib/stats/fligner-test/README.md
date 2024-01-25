@@ -101,7 +101,7 @@ var groups = [
     'b', 'b', 'b', 'b',
     'c', 'c', 'c', 'c', 'c'
 ];
-out = flignerTest( arr, {
+var out = flignerTest( arr, {
     'groups': groups
 });
 ```
