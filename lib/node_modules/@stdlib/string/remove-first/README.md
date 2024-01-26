@@ -202,7 +202,7 @@ oop
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/string/remove-last`][@stdlib/string/remove-last]</span><span class="delimiter">: </span><span class="description">remove the last character of a string.</span>
+-   <span class="package-name">[`@stdlib/string/remove-last`][@stdlib/string/remove-last]</span><span class="delimiter">: </span><span class="description">remove the last character(s) of a string.</span>
 
 </section>
 
