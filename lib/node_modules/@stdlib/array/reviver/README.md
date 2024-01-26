@@ -127,8 +127,6 @@ console.log( out );
 
 <!-- <related-links> -->
 
-
-
 <!-- </related-links> -->
 
 </section>
