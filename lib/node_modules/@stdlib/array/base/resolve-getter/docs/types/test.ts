@@ -39,7 +39,7 @@ import resolveGetter = require( './index' );
 	resolveGetter( new Complex64Array( 0 ) ); // $ExpectType GetComplex64
 	resolveGetter( new AccessorArray( [ 1, 2, 3 ] ) ); // $ExpectType GetAccessorArrayLike<number>
 	resolveGetter<any>( [] ); // $ExpectType GetGeneric<any>
-	resolveGetter<number>( [] ); // $ExpectType GetArrayLike<number>
+	resolveGetter<number>( [] ); // $ExpectType GetGeneric<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like object...
@@ -102,11 +102,11 @@ import resolveGetter = require( './index' );
 
 	const x11 = new Complex128Array( [ 1, 2, 3, 4 ] );
 	const get11 = resolveGetter( x11 );
-	get11( x11, 0 ); // $ExpectType Complex128 | void
+	get11( x11, 0 ); // $ExpectType void | Complex128
 
 	const x12 = new Complex64Array( [ 1, 2, 3, 4 ] );
 	const get12 = resolveGetter( x12 );
-	get12( x12, 0 ); // $ExpectType Complex64 | void
+	get12( x12, 0 ); // $ExpectType void | Complex64
 
 	const x13 = new AccessorArray( [ 1, 2, 3, 4 ] );
 	const get13 = resolveGetter( x13 );
@@ -293,12 +293,12 @@ import resolveGetter = require( './index' );
 	get12( new Complex64Array( [ 1, 2, 3, 4 ] ), null ); // $ExpectError
 	get12( new Complex64Array( [ 1, 2, 3, 4 ] ), {} ); // $ExpectError
 
-	const get13 = resolveGetter( new new AccessorArray( [ 1, 2, 3, 4 ] ) );
-	get13( new new AccessorArray( [ 1, 2, 3, 4 ] ), '5' ); // $ExpectError
-	get13( new new AccessorArray( [ 1, 2, 3, 4 ] ), true ); // $ExpectError
-	get13( new new AccessorArray( [ 1, 2, 3, 4 ] ), false ); // $ExpectError
-	get13( new new AccessorArray( [ 1, 2, 3, 4 ] ), null ); // $ExpectError
-	get13( new new AccessorArray( [ 1, 2, 3, 4 ] ), {} ); // $ExpectError
+	const get13 = resolveGetter( new AccessorArray( [ 1, 2, 3, 4 ] ) );
+	get13( new AccessorArray( [ 1, 2, 3, 4 ] ), '5' ); // $ExpectError
+	get13( new AccessorArray( [ 1, 2, 3, 4 ] ), true ); // $ExpectError
+	get13( new AccessorArray( [ 1, 2, 3, 4 ] ), false ); // $ExpectError
+	get13( new AccessorArray( [ 1, 2, 3, 4 ] ), null ); // $ExpectError
+	get13( new AccessorArray( [ 1, 2, 3, 4 ] ), {} ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided an unsupported number of arguments...
