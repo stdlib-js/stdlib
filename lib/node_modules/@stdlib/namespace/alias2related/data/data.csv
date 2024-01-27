@@ -1,4 +1,6 @@
 abs,""
+acartesianProduct,"acartesianSquare"
+acartesianSquare,"acartesianProduct"
 acronym,""
 aempty,"aemptyLike,afull,aones,azeros,ndempty"
 aemptyLike,"aempty,afullLike,aonesLike,azerosLike,ndemptyLike"

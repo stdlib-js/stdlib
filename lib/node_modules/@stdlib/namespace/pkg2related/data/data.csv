@@ -1,4 +1,6 @@
 "@stdlib/math/special/abs",""
+"@stdlib/array/cartesian-product","@stdlib/array/cartesian-square"
+"@stdlib/array/cartesian-square","@stdlib/array/cartesian-product"
 "@stdlib/string/acronym",""
 "@stdlib/array/empty","@stdlib/array/empty-like,@stdlib/array/full,@stdlib/array/ones,@stdlib/array/zeros,@stdlib/ndarray/empty"
 "@stdlib/array/empty-like","@stdlib/array/empty,@stdlib/array/full-like,@stdlib/array/ones-like,@stdlib/array/zeros-like,@stdlib/ndarray/empty-like"

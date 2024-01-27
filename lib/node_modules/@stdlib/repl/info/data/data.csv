@@ -3725,6 +3725,7 @@ ndarraySameKindCasts,"\nndarraySameKindCasts( [dtype:any] )\n    Returns a list 
 ndarrayShape,"\nndarrayShape( x:ndarray )\n    Returns the shape of a provided ndarray.\n"
 ndarrayStride,"\nndarrayStride( x:ndarray, dim:integer )\n    Returns the stride along a specified dimension for a provided ndarray.\n"
 ndarrayStrides,"\nndarrayStrides( x:ndarray )\n    Returns the strides of a provided ndarray.\n"
+ndat,"\nndat( x:ndarray[, ...indices:integer] )\n    Returns an ndarray element.\n"
 ndempty,"\nndempty( shape:ArrayLikeObject<integer>|integer[, options:Object] )\n    Returns an uninitialized ndarray having a specified shape and data type.\n"
 ndemptyLike,"\nndemptyLike( x:ndarray[, options:Object] )\n    Returns an uninitialized ndarray having the same shape and data type as a\n    provided input ndarray.\n"
 ndims,"\nndims( x:ndarray )\n    Returns the number of ndarray dimensions.\n"

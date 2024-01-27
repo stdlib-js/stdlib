@@ -1,4 +1,6 @@
 abs
+acartesianProduct
+acartesianSquare
 acronym
 aempty
 aemptyLike
