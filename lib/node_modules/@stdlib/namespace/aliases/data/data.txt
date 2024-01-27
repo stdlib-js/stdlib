@@ -50,6 +50,7 @@ arrayShape
 arrayStream
 arrayview2iterator
 arrayview2iteratorRight
+aslice
 AsyncIteratorSymbol
 azeros
 azerosLike

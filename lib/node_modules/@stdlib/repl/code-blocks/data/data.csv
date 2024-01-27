@@ -1,5 +1,6 @@
 abs,"var y = abs( -1.0 )\nvar x = new Float64Array( [ -1.0, -2.0 ] );\ny = abs( x )\nx = [ -1.0, -2.0 ];\ny = abs( x )\nx = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );\ny = abs( x )\ny.get( 0, 1 )\n"
 abs.assign,"var x = new Float64Array( [ -1.0, -2.0 ] );\nvar y = new Float64Array( x.length );\nvar out = abs.assign( x, y )\nvar bool = ( out === y )\nx = [ -1.0, -2.0 ];\ny = [ 0.0, 0.0 ];\nout = abs.assign( x, y )\nbool = ( out === y )\nx = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );\ny = array( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );\nout = abs.assign( x, y )\nout.get( 0, 1 )\nbool = ( out === y )\n"
+acartesianPower,"var x = [ 1, 2 ];\nvar out = acartesianPower( x, 2 )\n"
 acartesianProduct,"var x1 = [ 1, 2 ];\nvar x2 = [ 3, 4 ];\nvar out = acartesianProduct( x1, x2 )\n"
 acartesianSquare,"var out = acartesianSquare( [ 1, 2 ] )\n"
 acronym,"var out = acronym( 'the quick brown fox' )\nout = acronym( 'Hard-boiled eggs' )\n"

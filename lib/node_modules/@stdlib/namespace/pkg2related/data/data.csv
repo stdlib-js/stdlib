@@ -50,6 +50,7 @@
 "@stdlib/streams/node/from-array","@stdlib/streams/node/from-circular-array,@stdlib/streams/node/from-iterator,@stdlib/streams/node/from-strided-array"
 "@stdlib/array/to-view-iterator","@stdlib/array/from-iterator,@stdlib/array/to-iterator,@stdlib/array/to-strided-iterator,@stdlib/array/to-view-iterator-right"
 "@stdlib/array/to-view-iterator-right","@stdlib/array/from-iterator,@stdlib/array/to-iterator-right,@stdlib/array/to-strided-iterator,@stdlib/array/to-view-iterator"
+"@stdlib/array/slice",""
 "@stdlib/symbol/async-iterator","@stdlib/symbol/ctor,@stdlib/symbol/iterator"
 "@stdlib/array/zeros","@stdlib/array/empty,@stdlib/array/full,@stdlib/array/nans,@stdlib/array/ones,@stdlib/array/zeros-like,@stdlib/ndarray/zeros"
 "@stdlib/array/zeros-like","@stdlib/array/empty-like,@stdlib/array/full-like,@stdlib/array/nans-like,@stdlib/array/ones-like,@stdlib/array/zeros,@stdlib/ndarray/zeros-like"

@@ -50,6 +50,7 @@
 "@stdlib/streams/node/from-array",arrayStream
 "@stdlib/array/to-view-iterator",arrayview2iterator
 "@stdlib/array/to-view-iterator-right",arrayview2iteratorRight
+"@stdlib/array/slice",aslice
 "@stdlib/symbol/async-iterator",AsyncIteratorSymbol
 "@stdlib/array/zeros",azeros
 "@stdlib/array/zeros-like",azerosLike

@@ -1,5 +1,6 @@
 abs,"abs( x:ndarray|ArrayLikeObject|number[, options:Object] )"
 abs.assign,"abs.assign( x:ndarray|ArrayLikeObject, y:ndarray|ArrayLikeObject )"
+acartesianPower,"acartesianPower( x:ArrayLikeObject, n:integer )"
 acartesianProduct,"acartesianProduct( x1:ArrayLikeObject, x2:ArrayLikeObject )"
 acartesianSquare,"acartesianSquare( x:ArrayLikeObject )"
 acronym,"acronym( str:string[, options:Object] )"

@@ -1,5 +1,6 @@
 abs,"abs( x[, options] )"
 abs.assign,"abs.assign( x, y )"
+acartesianPower,"acartesianPower( x, n )"
 acartesianProduct,"acartesianProduct( x1, x2 )"
 acartesianSquare,"acartesianSquare( x )"
 acronym,"acronym( str[, options] )"

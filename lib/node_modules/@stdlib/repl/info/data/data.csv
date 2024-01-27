@@ -1,5 +1,6 @@
 abs,"\nabs( x:ndarray|ArrayLikeObject|number[, options:Object] )\n    Computes the absolute value.\n"
 abs.assign,"\nabs.assign( x:ndarray|ArrayLikeObject, y:ndarray|ArrayLikeObject )\n    Computes the absolute value and assigns results to a provided output array.\n"
+acartesianPower,"\nacartesianPower( x:ArrayLikeObject, n:integer )\n    Returns the Cartesian power.\n"
 acartesianProduct,"\nacartesianProduct( x1:ArrayLikeObject, x2:ArrayLikeObject )\n    Returns the Cartesian product.\n"
 acartesianSquare,"\nacartesianSquare( x:ArrayLikeObject )\n    Returns the Cartesian square.\n"
 acronym,"\nacronym( str:string[, options:Object] )\n    Generates an acronym for a given string.\n"
