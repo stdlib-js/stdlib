@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
 * Returns the Cartesian product.
@@ -40,7 +40,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = cartesianProduct( x1, x2 );
 * // returns [ [ 1, 4 ], [ 1, 5 ], [ 2, 4 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ] ]
 */
-declare function cartesianProduct<T = unknown, U = unknown>( x1: Collection<T>, x2: Collection<U> ): Array<[T, U]>;
+declare function cartesianProduct<T = unknown, U = unknown>( x1: Collection<T> | AccessorArrayLike<T>, x2: Collection<U> | AccessorArrayLike<U> ): Array<[T, U]>;
 
 
 // EXPORTS //
