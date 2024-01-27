@@ -2328,6 +2328,7 @@ ndarraySameKindCasts
 ndarrayShape
 ndarrayStride
 ndarrayStrides
+ndat
 ndempty
 ndemptyLike
 ndims

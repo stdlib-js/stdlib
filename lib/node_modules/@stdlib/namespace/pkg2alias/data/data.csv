@@ -2328,6 +2328,7 @@
 "@stdlib/ndarray/shape",ndarrayShape
 "@stdlib/ndarray/stride",ndarrayStride
 "@stdlib/ndarray/strides",ndarrayStrides
+"@stdlib/ndarray/at",ndat
 "@stdlib/ndarray/empty",ndempty
 "@stdlib/ndarray/empty-like",ndemptyLike
 "@stdlib/ndarray/ndims",ndims
