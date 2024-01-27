@@ -1,5 +1,7 @@
 abs,"abs( x[, options] )"
 abs.assign,"abs.assign( x, y )"
+acartesianProduct,"acartesianProduct( x1, x2 )"
+acartesianSquare,"acartesianSquare( x )"
 acronym,"acronym( str[, options] )"
 aempty,"aempty( length[, dtype] )"
 aemptyLike,"aemptyLike( x[, dtype] )"

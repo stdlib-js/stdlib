@@ -1,4 +1,5 @@
 abs,"@stdlib/math-special-abs"
+acartesianPower,"@stdlib/array-cartesian-power"
 acartesianProduct,"@stdlib/array-cartesian-product"
 acartesianSquare,"@stdlib/array-cartesian-square"
 acronym,"@stdlib/string-acronym"
