@@ -85,8 +85,8 @@
 
 
 {{alias}}.factory( [options] )
-    Returns a function for filling strided arrays containing pseudorandom
-    numbers drawn from an exponential distribution.
+    Returns a function for filling strided arrays with pseudorandom numbers
+    drawn from an exponential distribution.
 
     Parameters
     ----------
