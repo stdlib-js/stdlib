@@ -2566,6 +2566,7 @@
 "@stdlib/random/strided/beta","@stdlib/random-strided-beta"
 "@stdlib/random/strided/betaprime","@stdlib/random-strided-betaprime"
 "@stdlib/random/strided/chi","@stdlib/random-strided-chi"
+"@stdlib/random/strided/chisquare","@stdlib/random-strided-chisquare"
 "@stdlib/random/strided/cosine","@stdlib/random-strided-cosine"
 "@stdlib/random/strided/discrete-uniform","@stdlib/random-strided-discrete-uniform"
 "@stdlib/random/strided/exponential","@stdlib/random-strided-exponential"

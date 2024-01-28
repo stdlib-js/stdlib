@@ -2566,6 +2566,7 @@ random.strided.bernoulli
 random.strided.beta
 random.strided.betaprime
 random.strided.chi
+random.strided.chisquare
 random.strided.cosine
 random.strided.discreteUniform
 random.strided.exponential
