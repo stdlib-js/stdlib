@@ -1715,6 +1715,7 @@ interface Namespace {
 	*
 	*     -   **sh**: dimensions sorted in loop order.
 	*     -   **sx**: ndarray strides sorted in loop order.
+	*     -   **idx**: dimension indices sorted in loop order.
 	*
 	* -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 	*
@@ -1737,6 +1738,9 @@ interface Namespace {
 	*
 	* var ssx = o.sx;
 	* // returns [ 1, 4, 12 ]
+	*
+	* var idx = o.idx;
+	* // returns [ 2, 1, 0 ]
 	*/
 	nullaryLoopOrder: typeof nullaryLoopOrder;
 
