@@ -226,13 +226,9 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param lambda - rate parameter
-	* @param sl - `lambda` strided length
+	* @param sl - `lambda` stride length
 	* @param out - output array
 	* @param so - `out` stride length
-	* @param options - function options
-	* @throws must provide valid distribution parameters
-	* @throws must provide valid options
-	* @throws must provide a valid state
 	* @returns output array
 	*
 	* @example
