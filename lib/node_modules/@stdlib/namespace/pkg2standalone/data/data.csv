@@ -2578,6 +2578,7 @@
 "@stdlib/random/strided/minstd-shuffle","@stdlib/random-strided-minstd-shuffle"
 "@stdlib/random/strided/mt19937","@stdlib/random-strided-mt19937"
 "@stdlib/random/strided/normal","@stdlib/random-strided-normal"
+"@stdlib/random/strided/poisson","@stdlib/random-strided-poisson"
 "@stdlib/random/strided/randu","@stdlib/random-strided-randu"
 "@stdlib/random/strided/uniform","@stdlib/random-strided-uniform"
 "@stdlib/stats/ranks","@stdlib/stats-ranks"

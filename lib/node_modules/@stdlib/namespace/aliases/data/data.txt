@@ -2578,6 +2578,7 @@ random.strided.minstd
 random.strided.minstdShuffle
 random.strided.mt19937
 random.strided.normal
+random.strided.poisson
 random.strided.randu
 random.strided.uniform
 ranks
