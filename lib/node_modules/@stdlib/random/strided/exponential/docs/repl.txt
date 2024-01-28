@@ -119,7 +119,7 @@
     Returns
     -------
     fcn: Function
-        Function for filled strided arrays.
+        Function for filling strided arrays.
 
     Examples
     --------
