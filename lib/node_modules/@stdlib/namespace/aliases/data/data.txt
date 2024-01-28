@@ -2571,6 +2571,7 @@ random.strided.cosine
 random.strided.discreteUniform
 random.strided.exponential
 random.strided.gamma
+random.strided.geometric
 random.strided.invgamma
 random.strided.lognormal
 random.strided.minstd

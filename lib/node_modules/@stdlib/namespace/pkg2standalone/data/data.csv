@@ -2571,6 +2571,7 @@
 "@stdlib/random/strided/discrete-uniform","@stdlib/random-strided-discrete-uniform"
 "@stdlib/random/strided/exponential","@stdlib/random-strided-exponential"
 "@stdlib/random/strided/gamma","@stdlib/random-strided-gamma"
+"@stdlib/random/strided/geometric","@stdlib/random-strided-geometric"
 "@stdlib/random/strided/invgamma","@stdlib/random-strided-invgamma"
 "@stdlib/random/strided/lognormal","@stdlib/random-strided-lognormal"
 "@stdlib/random/strided/minstd","@stdlib/random-strided-minstd"
