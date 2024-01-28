@@ -2562,6 +2562,7 @@ random.streams.triangular
 random.streams.uniform
 random.streams.weibull
 random.strided.arcsine
+random.strided.bernoulli
 random.strided.beta
 random.strided.betaprime
 random.strided.cosine

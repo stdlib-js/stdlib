@@ -2562,6 +2562,7 @@
 "@stdlib/random/streams/uniform","@stdlib/random-streams-uniform"
 "@stdlib/random/streams/weibull","@stdlib/random-streams-weibull"
 "@stdlib/random/strided/arcsine","@stdlib/random-strided-arcsine"
+"@stdlib/random/strided/bernoulli","@stdlib/random-strided-bernoulli"
 "@stdlib/random/strided/beta","@stdlib/random-strided-beta"
 "@stdlib/random/strided/betaprime","@stdlib/random-strided-betaprime"
 "@stdlib/random/strided/cosine","@stdlib/random-strided-cosine"
