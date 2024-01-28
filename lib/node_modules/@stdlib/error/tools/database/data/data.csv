@@ -955,3 +955,4 @@
 "FO","invalid argument. Third argument must be a supported data type. Value: `%s`.","TypeError"
 "FP","invalid argument. Index argument is out-of-bounds. Value: `%s`.","RangeError"
 "FQ","invalid argument. Second argument must be a complex number. Value: `%s`.","TypeError"
+"FR","invalid argument. Index arguments must be integers. Value: `%s`.","TypeError"
