@@ -106,7 +106,7 @@ interface Random extends PRNG {
 	* // Fill the array with pseudorandom numbers:
 	* exponential( out.length, [ 2.0 ], 0, out, 1 );
 	*/
-	<T = unknown>( N: number, lambda: Collection, sl: number, out: Collection<T>, so: number ): Collection<T | number>;
+	<T = unknown>( N: number, lambda: Collection<number>, sl: number, out: Collection<T>, so: number ): Collection<T | number>;
 
 	/**
 	* Fills a strided array with pseudorandom numbers drawn from an exponential distribution using alternative indexing semantics.
@@ -129,7 +129,7 @@ interface Random extends PRNG {
 	* // Fill the array with pseudorandom numbers:
 	* exponential.ndarray( out.length, [ 2.0 ], 0, 0, out, 1, 0 );
 	*/
-	ndarray<T = unknown>( N: number, lambda: Collection, sl: number, ol: number, out: Collection<T>, so: number, oo: number ): Collection<T | number>;
+	ndarray<T = unknown>( N: number, lambda: Collection<number>, sl: number, ol: number, out: Collection<T>, so: number, oo: number ): Collection<T | number>;
 }
 
 /**
