@@ -122,7 +122,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5.0.2
         with:
-          title: 'Update namespace table of contents'
+          title: 'docs: update namespace table of contents'
           body: |
             This PR
 
