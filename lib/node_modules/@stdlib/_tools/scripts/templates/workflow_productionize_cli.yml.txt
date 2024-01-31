@@ -772,7 +772,7 @@ jobs:
         run: |
           mkdir -p cli
           mkdir -p cli/docs cli/test
-          cp README.md LICENSE CONTRIBUTORS NOTICE ./cli
+          cp README.md LICENSE CONTRIBUTORS NOTICE .npmignore ./cli
           cp -r bin etc ./cli
           if [ -e "test/test.cli.js" ]; then
             cp test/test.cli.js ./cli/test
