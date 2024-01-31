@@ -870,6 +870,7 @@ jobs:
       # Move cli directory to root:
       - name: 'Move cli directory to root'
         run: |
+          mv ./cli/.npmignore .
           mv ./cli/* .
           rmdir ./cli
 
