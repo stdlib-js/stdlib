@@ -652,17 +652,20 @@ main() {
 		on_error 1
 	fi
 
-	# update_markdown_related
-	# if [[ "$?" -ne 0 ]]; then
-	# 	revert_changes
-	# 	on_error 1
-	# fi
-	# update_markdown_package_urls
-	# if [[ "$?" -ne 0 ]]; then
-	# 	revert_changes
-	# 	on_error 1
-	# fi
+	# TODO: need to update namespace TypeScript declarations
 
+	# TODO: ensure that all package CLIs are executable
+
+	update_markdown_related
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_markdown_package_urls
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
 	update_repl_docs
 	if [[ "$?" -ne 0 ]]; then
 		revert_changes
@@ -681,7 +684,7 @@ main() {
 
 	# WARNING: at this point, we are at the point of no return and, from this point forward, cannot easily revert changes to the local repository as packages may already be published...
 
-	# publish_bundles
+	# publish_bundles # FIXME: re-enable bundle publishing once determine cause for test failures
 	# if [[ "$?" -ne 0 ]]; then
 	# 	on_error 1
 	# fi
