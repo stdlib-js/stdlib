@@ -42,6 +42,7 @@
 "@stdlib/array/dtype",arrayDataType
 "@stdlib/array/dtypes",arrayDataTypes
 "@stdlib/array/min-dtype",arrayMinDataType
+"@stdlib/array/mostly-safe-casts",arrayMostlySafeCasts
 "@stdlib/array/next-dtype",arrayNextDataType
 "@stdlib/array/promotion-rules",arrayPromotionRules
 "@stdlib/array/safe-casts",arraySafeCasts

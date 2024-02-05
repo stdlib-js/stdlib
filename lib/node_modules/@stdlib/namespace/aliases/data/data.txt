@@ -42,6 +42,7 @@ arrayCtors
 arrayDataType
 arrayDataTypes
 arrayMinDataType
+arrayMostlySafeCasts
 arrayNextDataType
 arrayPromotionRules
 arraySafeCasts
