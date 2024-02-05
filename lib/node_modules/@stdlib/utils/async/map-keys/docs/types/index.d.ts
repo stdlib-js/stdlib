@@ -164,7 +164,7 @@ interface MapKeysAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( key, value, next ) {
 	*     var opts = {
@@ -219,7 +219,7 @@ interface MapKeysAsync {
 	* @param done - function to invoke upon completion
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( key, value, next ) {
 	*     var opts = {
@@ -274,7 +274,7 @@ interface MapKeysAsync {
 	* @returns function which maps keys from one object to a new object having the same values
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( key, value, next ) {
 	*     var opts = {
@@ -331,7 +331,7 @@ interface MapKeysAsync {
 	* @returns function which maps keys from one object to a new object having the same values
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( key, value, next ) {
 	*     var opts = {
@@ -391,7 +391,7 @@ interface MapKeysAsync {
 * @throws must provide valid options
 *
 * @example
-* var readFile = require( `@stdlib/fs/read-file` );
+* var readFile = require( '@stdlib/fs/read-file' );
 *
 * function read( key, value, next ) {
 *     var opts = {

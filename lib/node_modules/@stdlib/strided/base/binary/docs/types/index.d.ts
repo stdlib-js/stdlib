@@ -44,7 +44,7 @@ interface Routine {
 	* @param fcn - binary callback
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function add( x, y ) {
 	*     return x + y;
@@ -74,7 +74,7 @@ interface Routine {
 	* @param fcn - binary callback
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function add( x, y ) {
 	*     return x + y;
@@ -105,7 +105,7 @@ interface Routine {
 * @param fcn - binary callback
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * function add( x, y ) {
 *     return x + y;
@@ -124,7 +124,7 @@ interface Routine {
 * // => <Float64Array>[ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * function add( x, y ) {
 *     return x + y;

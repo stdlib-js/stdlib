@@ -28,6 +28,11 @@ on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -44,8 +49,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        # Pin action to full length commit SHA corresponding to v4.1.0
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -71,24 +76,26 @@ jobs:
 
       # Create or update issue for TODO comments:
       - name: 'Create or update issue for TODO comments'
-        # Pin action to full length commit SHA corresponding to v4.0.1
-        uses: peter-evans/create-issue-from-file@433e51abf769039ee20ba1293a088ca19d573b7f
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-issue-from-file@24452a72d85239eacf1468b0f1982a9f3fec4c94 # v5.0.0
         with:
           title: 'TODO comments'
           content-filepath: ./tracking_issue_todos.md
           issue-number: 803
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             todos
             automated-issue
 
       # Create or update issue for FIXME comments:
       - name: 'Create or update issue for FIXME comments'
-        # Pin action to full length commit SHA corresponding to v4.0.1
-        uses: peter-evans/create-issue-from-file@433e51abf769039ee20ba1293a088ca19d573b7f
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-issue-from-file@24452a72d85239eacf1468b0f1982a9f3fec4c94 # v5.0.0
         with:
           title: 'FIXME comments'
           content-filepath: ./tracking_issue_fixmes.md
           issue-number: 804
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
             fixmes
             automated-issue

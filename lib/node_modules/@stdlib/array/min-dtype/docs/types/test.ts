@@ -29,7 +29,7 @@ import minDataType = require( './index' );
 	};
 
 	minDataType( 2.13 ); // $ExpectType RealDataType
-	minDataType( z ); // $ExpectType ComplexDataType
+	minDataType( z ); // $ExpectType ComplexFloatingPointDataType
 	minDataType( 'beep' ); // $ExpectType "generic"
 }
 

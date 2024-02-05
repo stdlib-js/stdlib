@@ -62,8 +62,8 @@ type Unary = ( value: number ) => any;
 * @returns iterator
 *
 * @example
-* var randu = require( `@stdlib/random/iter/randu` );
-* var sin = require( `@stdlib/math/base/special/sin` );
+* var randu = require( '@stdlib/random/iter/randu' );
+* var sin = require( '@stdlib/math/base/special/sin' );
 *
 * var iter = iterMap( randu(), sin );
 *

@@ -29,9 +29,9 @@ import { Complex128 } from '@stdlib/types/complex';
 * @returns result
 *
 * @example
-* var Complex128 = require( `@stdlib/complex/float64` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var Complex128 = require( '@stdlib/complex/float64' );
+* var real = require( '@stdlib/complex/real' );
+* var imag = require( '@stdlib/complex/imag' );
 *
 * var z1 = new Complex128( -4.2, 5.5 );
 * // returns <Complex128>
@@ -46,9 +46,9 @@ import { Complex128 } from '@stdlib/types/complex';
 * // returns -5.5
 *
 * @example
-* var Complex128 = require( `@stdlib/complex/float64` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var Complex128 = require( '@stdlib/complex/float64' );
+* var real = require( '@stdlib/complex/real' );
+* var imag = require( '@stdlib/complex/imag' );
 *
 * var z2 = new Complex128( 0.0, 0.0 );
 * // returns <Complex128>
@@ -63,9 +63,9 @@ import { Complex128 } from '@stdlib/types/complex';
 * // returns -0.0
 *
 * @example
-* var Complex128 = require( `@stdlib/complex/float64` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var Complex128 = require( '@stdlib/complex/float64' );
+* var real = require( '@stdlib/complex/real' );
+* var imag = require( '@stdlib/complex/imag' );
 *
 * var z3 = new Complex128( NaN, NaN );
 * // returns <Complex128>

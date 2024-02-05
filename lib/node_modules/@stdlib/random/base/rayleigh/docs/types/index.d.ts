@@ -109,7 +109,7 @@ interface NullaryFunction extends PRNG {
 /**
 * Interface for generating Rayleigh distributed pseudorandom numbers without pre-specified parameter values.
 */
-interface BinaryFunction extends PRNG {
+interface UnaryFunction extends PRNG {
 	/**
 	* Returns a Rayleigh distributed pseudorandom number.
 	*
@@ -199,7 +199,7 @@ interface Random extends PRNG {
 	* var v = myrayleigh( 2.3 );
 	* // returns <number>
 	*/
-	factory( options?: Options ): BinaryFunction;
+	factory( options?: Options ): UnaryFunction;
 }
 
 /**

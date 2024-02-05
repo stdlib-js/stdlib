@@ -70,7 +70,7 @@ interface UnaryFunction {
 	* @returns result
 	*
 	* @example
-	* var array = require( `@stdlib/ndarray/array` );
+	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 	*
@@ -89,7 +89,7 @@ interface UnaryFunction {
 	* @returns result
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.0, -2.0 ] );
 	*
@@ -112,7 +112,7 @@ interface UnaryFunction {
 	* @returns output array
 	*
 	* @example
-	* var array = require( `@stdlib/ndarray/array` );
+	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 	* var y = array( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
@@ -136,7 +136,7 @@ interface UnaryFunction {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ -1.0, -2.0 ] );
 	* var y = new Float64Array( x.length );
@@ -162,7 +162,7 @@ interface UnaryFunction {
 * // returns 1.0
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 *
@@ -173,7 +173,7 @@ interface UnaryFunction {
 * // returns 2.0
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ -1.0, -2.0 ] );
 *
@@ -187,7 +187,7 @@ interface UnaryFunction {
 * // returns [ 1.0, 2.0 ]
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 * var y = array( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
@@ -202,7 +202,7 @@ interface UnaryFunction {
 * // returns 2.0
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ -1.0, -2.0 ] );
 * var y = new Float64Array( x.length );

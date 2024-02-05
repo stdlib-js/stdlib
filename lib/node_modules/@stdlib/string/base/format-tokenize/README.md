@@ -44,7 +44,7 @@ Tokenizes a string into an array of string parts and format identifier objects.
 var str = 'Hello, %s! My name is %s.';
 var out = formatTokenize( str );
 // returns [ 'Hello, ', {...}, '! My name is ', {...}, '.' ]
-``` 
+```
 
 The format identifier objects have the following properties:
 

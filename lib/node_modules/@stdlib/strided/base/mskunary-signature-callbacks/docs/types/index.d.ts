@@ -96,10 +96,10 @@ interface Table {
 * @returns list of callbacks
 *
 * @example
-* var signatures = require( `@stdlib/strided/base/mskunary-dtype-signatures` );
-* var identity = require( `@stdlib/math/base/special/identity` );
-* var cidentity = require( `@stdlib/math/base/special/cidentity` );
-* var cidentityf = require( `@stdlib/math/base/special/cidentityf` );
+* var signatures = require( '@stdlib/strided/base/mskunary-dtype-signatures' );
+* var identity = require( '@stdlib/math/base/special/identity' );
+* var cidentity = require( '@stdlib/math/base/special/cidentity' );
+* var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
 *
 * var dtypes = [
 *     'float64',

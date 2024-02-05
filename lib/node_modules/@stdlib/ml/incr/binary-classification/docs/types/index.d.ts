@@ -119,8 +119,8 @@ interface Accumulator {
 * @returns accumulator function
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var array = require( `@stdlib/ndarray/array` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * // Create an accumulator:
 * var accumulator = incrBinaryClassification( 3, {

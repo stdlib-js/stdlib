@@ -48,6 +48,9 @@ Tests if an input `value` is a supported ndarray index mode.
 var bool = isIndexMode( 'throw' );
 // returns true
 
+bool = isIndexMode( 'normalize' );
+// returns true
+
 bool = isIndexMode( 'clamp' );
 // returns true
 

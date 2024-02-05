@@ -24,6 +24,11 @@ on:
   discussion:
     types: [created]
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
   respond:
@@ -33,8 +38,8 @@ jobs:
     # Define a display name:
     name: 'Respond to question'
 
-    # Define the conditions under which the job should run:
-    if: github.event.discussion.category.name == 'stdlib-bot Q&A'
+    # Define the conditions under which the job should run: FIXME: un-comment if and when re-enabled
+    # if: github.event.discussion.category.name == 'stdlib-bot Q&A'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -43,7 +48,8 @@ jobs:
     steps:
       # Run the chatbot action:
       - name: 'Run chatbot action'
-        uses: stdlib-js/stdlib-chat-bot@main
+        # Pin action to full length commit SHA
+        uses: stdlib-js/stdlib-chat-bot@6c0643a5a1eb3c782b2df3bfd11e836d2ac7268e # v0.0.1
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.CHATBOT_GITHUB_TOKEN }}

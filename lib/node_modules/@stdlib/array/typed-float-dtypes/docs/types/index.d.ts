@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { FloatOrComplexDataType as DataType } from '@stdlib/types/array';
+import { FloatingPointDataType as DataType } from '@stdlib/types/array';
 
 /**
 * Returns a list of typed array floating-point data types.

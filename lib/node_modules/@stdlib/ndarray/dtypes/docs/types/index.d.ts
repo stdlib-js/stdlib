@@ -18,10 +18,9 @@
 
 // TypeScript Version: 4.1
 
-/**
-* Data type kind.
-*/
-type Kind = 'all' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer';
+/// <reference types="@stdlib/types"/>
+
+import { DataType, DataTypeKind } from '@stdlib/types/ndarray';
 
 /**
 * Returns a list of ndarray data types.
@@ -55,7 +54,7 @@ type Kind = 'all' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point
 * var list = dtypes( 'floating_point' );
 * // returns [...]
 */
-declare function dtypes( kind?: Kind ): Array<string>;
+declare function dtypes( kind?: DataTypeKind ): Array<DataType>;
 
 
 // EXPORTS //

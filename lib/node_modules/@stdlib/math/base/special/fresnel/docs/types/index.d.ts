@@ -64,7 +64,7 @@ interface Fresnel {
 	* @returns output array
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var out = new Float64Array( 2 );
 	*

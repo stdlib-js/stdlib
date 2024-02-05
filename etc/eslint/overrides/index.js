@@ -18,6 +18,11 @@
 
 'use strict';
 
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+
+
 // VARIABLES //
 
 var restrictedSyntaxConfig = [ 'error',
@@ -155,6 +160,10 @@ var overrides = [
 			'vars-on-top': 'off',
 			'node/no-unpublished-require': 'off'
 		}
+	},
+	{
+		'files': [ '*.d.ts', '*.ts', '*.tsx' ],
+		'extends': resolve( __dirname, '..', '.eslintrc.typescript.js' )
 	}
 ];
 

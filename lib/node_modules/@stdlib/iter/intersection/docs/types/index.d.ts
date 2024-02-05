@@ -41,7 +41,7 @@ type Iterator = Iter | IterableIterator;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var it1 = array2iterator( [ 1, 2, 1, 2, 4 ] );
 * var it2 = array2iterator( [ 1, 2, 5, 2, 3 ] );

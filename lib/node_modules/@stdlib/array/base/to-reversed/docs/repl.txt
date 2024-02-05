@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Returns a new array with elements in reverse order.
+
+    If provided an array-like object having a `toReversed` method, the function
+    defers execution to that method and assumes that the method has the
+    following signature:
+
+      x.toReversed()
+
+    If provided an array-like object without a `toReversed` method, the function
+    manually reverses elements and copies to a new generic array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Input array.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3, 4 ] )
+    [ 4, 3, 2, 1 ]
+
+    See Also
+    --------
+

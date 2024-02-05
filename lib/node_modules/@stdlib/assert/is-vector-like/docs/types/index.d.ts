@@ -25,7 +25,7 @@
 * @returns boolean indicating if a value is a 1-dimensional ndarray-like object
 *
 * @example
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var arr = ndarray( 'generic', [ 0, 0, 0, 0 ], [ 4 ], [ 1 ], 0, 'row-major' );
 * var bool = isVectorLike( arr );

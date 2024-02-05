@@ -50,7 +50,7 @@ type Predicate = ( a: any, b: any ) => boolean;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function predicate( a, b ) {
 *     return ( a !== b );

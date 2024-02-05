@@ -57,10 +57,10 @@ type SetArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number, value: T ) => v
 * @returns accessor function
 *
 * @example
-* var Complex128Array = require( `@stdlib/array/complex128` );
-* var Complex128 = require( `@stdlib/complex/float64` );
-* var real = require( `@stdlib/array/real` );
-* var imag = require( `@stdlib/array/imag` );
+* var Complex128Array = require( '@stdlib/array/complex128' );
+* var Complex128 = require( '@stdlib/complex/float64' );
+* var real = require( '@stdlib/array/real' );
+* var imag = require( '@stdlib/array/imag' );
 *
 * var arr = new Complex128Array( [ 1, 2, 3, 4 ] );
 *
@@ -85,10 +85,10 @@ declare function setter( dtype: 'complex128' ): SetComplex128;
 * @returns accessor function
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
-* var Complex64 = require( `@stdlib/complex/float32` );
-* var realf = require( `@stdlib/array/realf` );
-* var imagf = require( `@stdlib/array/imagf` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
+* var Complex64 = require( '@stdlib/complex/float32' );
+* var realf = require( '@stdlib/array/realf' );
+* var imagf = require( '@stdlib/array/imagf' );
 *
 * var arr = new Complex64Array( [ 1, 2, 3, 4 ] );
 *

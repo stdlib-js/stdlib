@@ -29,7 +29,7 @@ import { ndarray, Strides } from '@stdlib/types/ndarray';
 * @returns strides
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var sh = strides( zeros( [ 3, 3, 3 ] ) );
 * // returns [ 9, 3, 1 ]

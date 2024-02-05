@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealOrComplexDataType as DataType } from '@stdlib/types/array';
+import { NumericDataType as DataType } from '@stdlib/types/array';
 
 /**
 * Returns a list of typed array data types.

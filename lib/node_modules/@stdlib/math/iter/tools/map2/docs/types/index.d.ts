@@ -71,8 +71,8 @@ type Binary = ( x: number, y: number ) => any;
 * @returns iterator
 *
 * @example
-* var randu = require( `@stdlib/random/iter/randu` );
-* var copysign = require( `@stdlib/math/base/special/copysign` );
+* var randu = require( '@stdlib/random/iter/randu' );
+* var copysign = require( '@stdlib/math/base/special/copysign' );
 *
 * var iter = iterMap2( randu(), randu(), copysign );
 *

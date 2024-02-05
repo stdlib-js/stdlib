@@ -56,7 +56,7 @@ type ErrorHandler<T> = Nullary<T> | Unary<T>;
 * @returns the return value of either `x` or `y`
 *
 * @example
-* var randu = require( `@stdlib/random/base/randu` );
+* var randu = require( '@stdlib/random/base/randu' );
 *
 * function x() {
 *     if ( randu() < 0.5 ) {

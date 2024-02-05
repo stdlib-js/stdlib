@@ -46,8 +46,8 @@ import chisquare = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	chisquare.factory( 2.3 ); // $ExpectType NullaryFunction
-	chisquare.factory(); // $ExpectType BinaryFunction
-	chisquare.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	chisquare.factory(); // $ExpectType UnaryFunction
+	chisquare.factory( { 'copy': false } ); // $ExpectType UnaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -115,14 +115,14 @@ import chisquare = require( './index' );
 	chisquare.factory( 2.3, { 'prng': null } ); // $ExpectError
 	chisquare.factory( 2.3, { 'prng': [] } ); // $ExpectError
 	chisquare.factory( 2.3, { 'prng': {} } ); // $ExpectError
-	chisquare.factory( 2.3, { 'prng': true ); // $ExpectError
+	chisquare.factory( 2.3, { 'prng': true } ); // $ExpectError
 
 	chisquare.factory( { 'prng': 123 } ); // $ExpectError
 	chisquare.factory( { 'prng': 'abc' } ); // $ExpectError
 	chisquare.factory( { 'prng': null } ); // $ExpectError
 	chisquare.factory( { 'prng': [] } ); // $ExpectError
 	chisquare.factory( { 'prng': {} } ); // $ExpectError
-	chisquare.factory( { 'prng': true ); // $ExpectError
+	chisquare.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -149,7 +149,7 @@ import chisquare = require( './index' );
 	chisquare.factory( 2.3, { 'state': null } ); // $ExpectError
 	chisquare.factory( 2.3, { 'state': [] } ); // $ExpectError
 	chisquare.factory( 2.3, { 'state': {} } ); // $ExpectError
-	chisquare.factory( 2.3, { 'state': true ); // $ExpectError
+	chisquare.factory( 2.3, { 'state': true } ); // $ExpectError
 	chisquare.factory( 2.3, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	chisquare.factory( { 'state': 123 } ); // $ExpectError
@@ -157,7 +157,7 @@ import chisquare = require( './index' );
 	chisquare.factory( { 'state': null } ); // $ExpectError
 	chisquare.factory( { 'state': [] } ); // $ExpectError
 	chisquare.factory( { 'state': {} } ); // $ExpectError
-	chisquare.factory( { 'state': true ); // $ExpectError
+	chisquare.factory( { 'state': true } ); // $ExpectError
 	chisquare.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

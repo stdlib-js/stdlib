@@ -190,10 +190,10 @@ Rounds each element in a single-precision floating-point strided array `X` towar
 ```c
 #include <stdint.h>
 
-float X[] = { 1.1, 2.5, -3.5, 4.0, -5.9, 6.4, -7.0, 8.2 };
+const float X[] = { 1.1, 2.5, -3.5, 4.0, -5.9, 6.4, -7.0, 8.2 };
 float Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-int64_t N = 4;
+const int64_t N = 4;
 
 stdlib_strided_strunc( N, X, 2, Y, 2 );
 ```
@@ -235,17 +235,17 @@ void stdlib_strided_strunc( const int64_t N, const float *X, const int64_t strid
 
 int main( void ) {
     // Create an input strided array:
-    float X[] = { 1.1, 2.5, -3.5, 4.0, -5.9, 6.4, -7.0, 8.2 };
+    const float X[] = { 1.1, 2.5, -3.5, 4.0, -5.9, 6.4, -7.0, 8.2 };
 
     // Create an output strided array:
     float Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
     // Specify the number of elements:
-    int64_t N = 4;
+    const int64_t N = 4;
 
     // Specify the stride lengths:
-    int64_t strideX = 2;
-    int64_t strideY = 2;
+    const int64_t strideX = 2;
+    const int64_t strideY = 2;
 
     // Compute the results:
     stdlib_strided_strunc( N, X, strideX, Y, strideY );

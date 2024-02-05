@@ -22,7 +22,7 @@
 * Boolean indicating if the current process is running on Windows.
 *
 * @example
-* var PLATFORM = require( `@stdlib/os/platform` );
+* var PLATFORM = require( '@stdlib/os/platform' );
 *
 * if ( IS_WINDOWS ) {
 *     console.log( 'Running on Windows...' );

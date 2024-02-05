@@ -34,9 +34,9 @@ import { ArrayLike } from '@stdlib/types/array';
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float64' );
 * var shape = [ 3, 2 ];
@@ -74,9 +74,9 @@ declare function sliceDimensionTo( x: float64ndarray, dim: number, stop: number,
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float32' );
 * var shape = [ 3, 2 ];
@@ -114,9 +114,9 @@ declare function sliceDimensionTo( x: float32ndarray, dim: number, stop: number,
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int32' );
 * var shape = [ 3, 2 ];
@@ -154,9 +154,9 @@ declare function sliceDimensionTo( x: int32ndarray, dim: number, stop: number, s
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int16' );
 * var shape = [ 3, 2 ];
@@ -194,9 +194,9 @@ declare function sliceDimensionTo( x: int16ndarray, dim: number, stop: number, s
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int8' );
 * var shape = [ 3, 2 ];
@@ -234,9 +234,9 @@ declare function sliceDimensionTo( x: int8ndarray, dim: number, stop: number, st
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint32' );
 * var shape = [ 3, 2 ];
@@ -274,9 +274,9 @@ declare function sliceDimensionTo( x: uint32ndarray, dim: number, stop: number, 
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint16' );
 * var shape = [ 3, 2 ];
@@ -314,9 +314,9 @@ declare function sliceDimensionTo( x: uint16ndarray, dim: number, stop: number, 
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8' );
 * var shape = [ 3, 2 ];
@@ -354,9 +354,9 @@ declare function sliceDimensionTo( x: uint8ndarray, dim: number, stop: number, s
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8c' );
 * var shape = [ 3, 2 ];
@@ -394,9 +394,9 @@ declare function sliceDimensionTo( x: uint8cndarray, dim: number, stop: number, 
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex128' );
 * var shape = [ 3, 2 ];
@@ -428,9 +428,9 @@ declare function sliceDimensionTo( x: complex128ndarray, dim: number, stop: numb
 * @returns output array
 *
 * @example
-* var typedarray = require( `@stdlib/array/typed` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex64' );
 * var shape = [ 3, 2 ];
@@ -462,8 +462,8 @@ declare function sliceDimensionTo( x: complex64ndarray, dim: number, stop: numbe
 * @returns output array
 *
 * @example
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
 * var shape = [ 3, 2 ];
@@ -500,8 +500,8 @@ declare function sliceDimensionTo<T = unknown>( x: genericndarray<T>, dim: numbe
 * @returns output array
 *
 * @example
-* var ndarray = require( `@stdlib/ndarray/ctor` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
 * var shape = [ 3, 2 ];

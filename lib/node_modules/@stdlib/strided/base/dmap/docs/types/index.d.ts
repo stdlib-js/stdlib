@@ -42,7 +42,7 @@ interface Routine {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function identity( x ) {
 	*     return x;
@@ -70,7 +70,7 @@ interface Routine {
 	* @returns `y`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function identity( x ) {
 	*     return x;
@@ -97,7 +97,7 @@ interface Routine {
 * @returns `y`
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * function identity( x ) {
 *     return x;
@@ -110,7 +110,7 @@ interface Routine {
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * function identity( x ) {
 *     return x;

@@ -30,7 +30,7 @@
 *
 *     -   `x`: input value.
 *     -   `y`: input value.
-*     -   `z`: input value
+*     -   `z`: input value.
 *
 * @param env    environment under which the function is invoked
 * @param info   callback data

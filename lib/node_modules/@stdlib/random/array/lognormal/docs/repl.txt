@@ -31,15 +31,44 @@
     <Float64Array>
 
 
+{{alias}}.assign( mu, sigma, out )
+    Fills an array with pseudorandom numbers drawn from a lognormal
+    distribution.
+
+    Parameters
+    ----------
+    mu: number
+        Location parameter.
+
+    sigma: number
+        Scale parameter.
+
+    out: Array<number>|Float64Array|Float32Array
+        Output array.
+
+    Returns
+    -------
+    out: Array<number>|Float64Array|Float32Array
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/array/zeros}}( 3, 'float64' );
+    > var out = {{alias}}.assign( 2.0, 5.0, x )
+    <Float64Array>
+    > var bool = ( out === x )
+    true
+
+
 {{alias}}.factory( [mu, sigma, ][options] )
     Returns a function for creating arrays containing pseudorandom numbers drawn
     from a lognormal distribution.
 
-    If provided `mu` and `sigma`, the returned function returns random variates
-    drawn from the specified distribution.
+    If provided distribution parameters, the returned function returns random
+    variates drawn from the specified distribution.
 
-    If not provided `mu` and `sigma`, the returned function requires that both
-    `mu` and `sigma` be provided at each invocation.
+    If not provided distribution parameters, the returned function requires that
+    distribution parameters be provided at each invocation.
 
     The returned function accepts the following options:
 

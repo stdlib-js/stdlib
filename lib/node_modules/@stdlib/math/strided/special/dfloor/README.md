@@ -190,10 +190,10 @@ Rounds each element in a double-precision floating-point strided array `X` towar
 ```c
 #include <stdint.h>
 
-double X[] = { -1.5, 2.3, -3.9, 4.2, -5.0, -6.0, 7.9, -8.1 };
+const double X[] = { -1.5, 2.3, -3.9, 4.2, -5.0, -6.0, 7.9, -8.1 };
 double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-int64_t N = 4;
+const int64_t N = 4;
 
 stdlib_strided_dfloor( N, X, 2, Y, 2 );
 ```
@@ -235,17 +235,17 @@ void stdlib_strided_dfloor( const int64_t N, const double *X, const int64_t stri
 
 int main( void ) {
     // Create an input strided array:
-    double X[] = { -1.5, 2.3, -3.9, 4.2, -5.0, -6.0, 7.9, -8.1 };
+    const double X[] = { -1.5, 2.3, -3.9, 4.2, -5.0, -6.0, 7.9, -8.1 };
 
     // Create an output strided array:
     double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
     // Specify the number of elements:
-    int64_t N = 4;
+    const int64_t N = 4;
 
     // Specify the stride lengths:
-    int64_t strideX = 2;
-    int64_t strideY = 2;
+    const int64_t strideX = 2;
+    const int64_t strideY = 2;
 
     // Compute the results:
     stdlib_strided_dfloor( N, X, strideX, Y, strideY );

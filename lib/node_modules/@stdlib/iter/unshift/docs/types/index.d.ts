@@ -37,7 +37,7 @@ type Iterator = Iter | IterableIterator;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var iter = iterUnshift( array2iterator( [ 1, 2 ] ), 3, 4 );
 *

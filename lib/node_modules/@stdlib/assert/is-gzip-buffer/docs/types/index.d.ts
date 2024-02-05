@@ -32,7 +32,7 @@
 * @returns boolean indicating whether a value is a gzip buffer
 *
 * @example
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var buf = new Uint8Array( 20 );
 * buf[ 0 ] = 31;  // 0x1f => magic number

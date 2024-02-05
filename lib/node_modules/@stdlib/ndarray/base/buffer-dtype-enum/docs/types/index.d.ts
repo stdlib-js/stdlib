@@ -29,7 +29,7 @@ import { Collection } from '@stdlib/types/array';
 * @returns data type enumeration constant or null
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( 10 );
 *

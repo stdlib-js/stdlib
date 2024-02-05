@@ -74,8 +74,8 @@ type Ternary = ( x: number, y: number, z: number ) => any;
 * @returns iterator
 *
 * @example
-* var uniform = require( `@stdlib/random/iter/uniform` );
-* var clamp = require( `@stdlib/math/base/special/clamp` );
+* var uniform = require( '@stdlib/random/iter/uniform' );
+* var clamp = require( '@stdlib/math/base/special/clamp' );
 *
 * var x = uniform( 0.0, 10.0 );
 * var min = uniform( 0.0, 1.0 );

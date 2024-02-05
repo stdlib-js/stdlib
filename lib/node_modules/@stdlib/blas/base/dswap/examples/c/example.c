@@ -25,11 +25,11 @@ int main( void ) {
 	double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 	// Specify the number of elements:
-	int N = 4;
+	const int N = 4;
 
 	// Specify stride lengths:
-	int strideX = 2;
-	int strideY = -2;
+	const int strideX = 2;
+	const int strideY = -2;
 
 	// Interchange elements:
 	c_dswap( N, x, strideX, y, strideY );

@@ -190,10 +190,10 @@ Computes the principal square root for each element in a single-precision floati
 ```c
 #include <stdint.h>
 
-float X[] = { 0.0, 4.0, 9.0, 12.0, 24.0, 64.0, 81.0, 101.0 };
+const float X[] = { 0.0, 4.0, 9.0, 12.0, 24.0, 64.0, 81.0, 101.0 };
 float Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-int64_t N = 4;
+const int64_t N = 4;
 
 stdlib_strided_ssqrt( N, X, 2, Y, 2 );
 ```
@@ -235,17 +235,17 @@ void stdlib_strided_ssqrt( const int64_t N, const float *X, const int64_t stride
 
 int main( void ) {
     // Create an input strided array:
-    float X[] = { 0.0, 4.0, 9.0, 12.0, 24.0, 64.0, 81.0, 101.0 };
+    const float X[] = { 0.0, 4.0, 9.0, 12.0, 24.0, 64.0, 81.0, 101.0 };
 
     // Create an output strided array:
     float Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
     // Specify the number of elements:
-    int64_t N = 4;
+    const int64_t N = 4;
 
     // Specify the stride lengths:
-    int64_t strideX = 2;
-    int64_t strideY = 2;
+    const int64_t strideX = 2;
+    const int64_t strideY = 2;
 
     // Compute the results:
     stdlib_strided_ssqrt( N, X, strideX, Y, strideY );

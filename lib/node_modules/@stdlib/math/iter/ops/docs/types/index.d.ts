@@ -48,7 +48,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var array2iterator = require( `@stdlib/array/to-iterator` );
+	* var array2iterator = require( '@stdlib/array/to-iterator' );
 	*
 	* var it1 = array2iterator( [ 1.0, 2.0 ] );
 	* var it2 = array2iterator( [ 3.0, 4.0 ] );
@@ -84,7 +84,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var array2iterator = require( `@stdlib/array/to-iterator` );
+	* var array2iterator = require( '@stdlib/array/to-iterator' );
 	*
 	* var it1 = array2iterator( [ 3.0, 4.0 ] );
 	* var it2 = array2iterator( [ 1.0, 8.0 ] );
@@ -120,7 +120,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var array2iterator = require( `@stdlib/array/to-iterator` );
+	* var array2iterator = require( '@stdlib/array/to-iterator' );
 	*
 	* var it1 = array2iterator( [ 3.0, 4.0 ] );
 	* var it2 = array2iterator( [ 1.0, 8.0 ] );
@@ -156,7 +156,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var array2iterator = require( `@stdlib/array/to-iterator` );
+	* var array2iterator = require( '@stdlib/array/to-iterator' );
 	*
 	* var it1 = array2iterator( [ 1.0, 2.0 ] );
 	* var it2 = array2iterator( [ 3.0, 4.0 ] );
@@ -192,7 +192,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var array2iterator = require( `@stdlib/array/to-iterator` );
+	* var array2iterator = require( '@stdlib/array/to-iterator' );
 	*
 	* var it1 = array2iterator( [ 1.0, 5.0 ] );
 	* var it2 = array2iterator( [ 3.0, 4.0 ] );

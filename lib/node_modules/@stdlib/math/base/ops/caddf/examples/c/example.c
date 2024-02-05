@@ -22,7 +22,7 @@
 #include <stdio.h>
 
 int main( void ) {
-	stdlib_complex64_t x[] = {
+	const stdlib_complex64_t x[] = {
 		stdlib_complex64( 3.14f, 1.5f ),
 		stdlib_complex64( -3.14f, 1.5f ),
 		stdlib_complex64( 0.0f, -0.0f ),

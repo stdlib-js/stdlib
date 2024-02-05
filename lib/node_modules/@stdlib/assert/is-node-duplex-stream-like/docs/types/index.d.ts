@@ -25,7 +25,7 @@
 * @returns boolean indicating if a value is Node duplex stream-like
 *
 * @example
-* var transformStream = require( `@stdlib/streams/node/transform` );
+* var transformStream = require( '@stdlib/streams/node/transform' );
 *
 * var stream = transformStream();
 *

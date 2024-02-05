@@ -154,7 +154,7 @@ type Callback<T, V> = Nullary<T, V> | Unary<T, V>;
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 3 ], constantFunction( 1.0 ) );
 * // returns [ 1.0, 1.0, 1.0 ]
@@ -169,7 +169,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape1D, clbk: Cal
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ 1.0, 1.0, 1.0 ] ]
@@ -184,7 +184,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape2D, clbk: Cal
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 1, 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ [ 1.0, 1.0, 1.0 ] ] ]
@@ -200,7 +200,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape3D, clbk: Cal
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 1, 1, 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ]
@@ -216,7 +216,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape4D, clbk: Cal
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 1, 1, 1, 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ]
@@ -232,7 +232,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape5D, clbk: Cal
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 1, 1, 1, 1, 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ]
@@ -248,7 +248,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape6D, clbk: Cal
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 1, 1, 1, 1, 1, 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ]
@@ -264,7 +264,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape7D, clbk: Cal
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 1, 1, 1, 1, 1, 1, 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ]
@@ -280,7 +280,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape8D, clbk: Cal
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 1, 1, 1, 1, 1, 1, 1, 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ] ]
@@ -296,7 +296,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape9D, clbk: Cal
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ] ] ]
@@ -312,7 +312,7 @@ declare function filledndBy<T = unknown, V = unknown>( shape: Shape10D, clbk: Ca
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var out = filledndBy( [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ [ [ [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ] ] ] ] ] ]

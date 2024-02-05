@@ -40,7 +40,7 @@ type PredicateFunction = ( elem: any ) => boolean;
 * @returns a typed array function
 *
 * @example
-* var isOdd = require( `@stdlib/assert/is-odd` );
+* var isOdd = require( '@stdlib/assert/is-odd' );
 *
 * var arr1 = new Int32Array( [ 1, 3, 5, 7 ] );
 * var arr2 = new Int32Array( [ 1, 3, 5, 8 ] );

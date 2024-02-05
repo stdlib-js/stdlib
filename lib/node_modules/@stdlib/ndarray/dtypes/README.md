@@ -109,7 +109,6 @@ var indexOf = require( '@stdlib/utils/index-of' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 
 var DTYPES = dtypes();
-var bool;
 
 function isdtype( str ) {
     if ( indexOf( DTYPES, str ) === -1 ) {
@@ -118,7 +117,7 @@ function isdtype( str ) {
     return true;
 }
 
-bool = isdtype( 'float64' );
+var bool = isdtype( 'float64' );
 // returns true
 
 bool = isdtype( 'int16' );

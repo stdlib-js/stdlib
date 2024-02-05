@@ -47,9 +47,9 @@ interface Routine {
 	* @returns `z`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
-	* var add = require( `@stdlib/math/base/ops/add` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
+	* var add = require( '@stdlib/math/base/ops/add' );
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -81,9 +81,9 @@ interface Routine {
 	* @returns `z`
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
-	* var add = require( `@stdlib/math/base/ops/add` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
+	* var add = require( '@stdlib/math/base/ops/add' );
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -112,9 +112,9 @@ interface Routine {
 * @returns `z`
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var Uint8Array = require( `@stdlib/array/uint8` );
-* var add = require( `@stdlib/math/base/ops/add` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var Uint8Array = require( '@stdlib/array/uint8' );
+* var add = require( '@stdlib/math/base/ops/add' );
 *
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 * var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -125,9 +125,9 @@ interface Routine {
 * // z => <Float64Array>[ 2.0, 4.0, 0.0, 8.0, 10.0 ]
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var Uint8Array = require( `@stdlib/array/uint8` );
-* var add = require( `@stdlib/math/base/ops/add` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var Uint8Array = require( '@stdlib/array/uint8' );
+* var add = require( '@stdlib/math/base/ops/add' );
 *
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 * var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );

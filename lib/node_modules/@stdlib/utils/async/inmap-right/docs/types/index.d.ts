@@ -160,7 +160,7 @@ interface InMapRightAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, results ) {
 	*     if ( error ) {
@@ -205,7 +205,7 @@ interface InMapRightAsync {
 	* @param done - function to invoke upon completion
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, results ) {
 	*     if ( error ) {
@@ -254,7 +254,7 @@ interface InMapRightAsync {
 	* @returns function which invokes the provided function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( file, next ) {
 	*     var opts = {
@@ -309,7 +309,7 @@ interface InMapRightAsync {
 	* @returns function which invokes the provided function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( file, next ) {
 	*     var opts = {
@@ -366,7 +366,7 @@ interface InMapRightAsync {
 * @throws must provide valid options
 *
 * @example
-* var readFile = require( `@stdlib/fs/read-file` );
+* var readFile = require( '@stdlib/fs/read-file' );
 *
 * function done( error, results ) {
 *     if ( error ) {

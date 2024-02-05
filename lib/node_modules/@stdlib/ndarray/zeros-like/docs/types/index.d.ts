@@ -243,7 +243,7 @@ interface OptionsWithDType extends Options {
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -280,7 +280,7 @@ declare function zerosLike( x: float64ndarray, options?: Options ): float64ndarr
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float32'
@@ -317,7 +317,7 @@ declare function zerosLike( x: float32ndarray, options?: Options ): float32ndarr
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'complex128'
@@ -354,7 +354,7 @@ declare function zerosLike( x: complex128ndarray, options?: Options ): complex12
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'complex64'
@@ -391,7 +391,7 @@ declare function zerosLike( x: complex64ndarray, options?: Options ): complex64n
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'int32'
@@ -428,7 +428,7 @@ declare function zerosLike( x: int32ndarray, options?: Options ): int32ndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'int16'
@@ -465,7 +465,7 @@ declare function zerosLike( x: int16ndarray, options?: Options ): int16ndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'int8'
@@ -502,7 +502,7 @@ declare function zerosLike( x: int8ndarray, options?: Options ): int8ndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'uint32'
@@ -539,7 +539,7 @@ declare function zerosLike( x: uint32ndarray, options?: Options ): uint32ndarray
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'uint16'
@@ -576,7 +576,7 @@ declare function zerosLike( x: uint16ndarray, options?: Options ): uint16ndarray
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'uint8'
@@ -613,7 +613,7 @@ declare function zerosLike( x: uint8ndarray, options?: Options ): uint8ndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'uint8c'
@@ -651,7 +651,7 @@ declare function zerosLike( x: uint8cndarray, options?: Options ): uint8cndarray
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'generic'
@@ -691,7 +691,7 @@ declare function zerosLike( x: ndarray, options: Float64Options ): float64ndarra
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -731,7 +731,7 @@ declare function zerosLike( x: ndarray, options: Float32Options ): float32ndarra
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -771,7 +771,7 @@ declare function zerosLike( x: ndarray, options: Complex128Options ): complex128
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -811,7 +811,7 @@ declare function zerosLike( x: ndarray, options: Complex64Options ): complex64nd
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -851,7 +851,7 @@ declare function zerosLike( x: ndarray, options: Int32Options ): int32ndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -891,7 +891,7 @@ declare function zerosLike( x: ndarray, options: Int16Options ): int16ndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -931,7 +931,7 @@ declare function zerosLike( x: ndarray, options: Int8Options ): int8ndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -971,7 +971,7 @@ declare function zerosLike( x: ndarray, options: Uint32Options ): uint32ndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -1011,7 +1011,7 @@ declare function zerosLike( x: ndarray, options: Uint16Options ): uint16ndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -1051,7 +1051,7 @@ declare function zerosLike( x: ndarray, options: Uint8Options ): uint8ndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
@@ -1091,7 +1091,7 @@ declare function zerosLike( x: ndarray, options: Uint8COptions ): uint8cndarray;
 * @returns zero-filled array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'

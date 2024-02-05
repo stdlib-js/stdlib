@@ -35,7 +35,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version() {
+void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -74,7 +74,7 @@ void print_results( int iterations, double elapsed ) {
 *
 * @return clock time
 */
-double tic() {
+double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
@@ -85,7 +85,7 @@ double tic() {
 *
 * @return random number
 */
-double rand_double() {
+double rand_double( void ) {
 	int r = rand();
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }

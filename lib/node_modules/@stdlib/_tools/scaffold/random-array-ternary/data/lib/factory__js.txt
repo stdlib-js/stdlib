@@ -1,0 +1,79 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) {{YEAR}} {{COPYRIGHT}}.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var ternaryFactory = require( '@stdlib/random/array/tools/ternary-factory' );
+var dtypes = require( '@stdlib/array/dtypes' );
+var defaults = require( '@stdlib/array/defaults' );
+var base = require( '@{{BASE_PKG}}' );
+
+
+// VARIABLES //
+
+var DTYPES = dtypes( '{{OUTPUT_DTYPE_KIND}}' );
+
+
+// MAIN //
+
+/**
+* Returns a function for creating arrays containing pseudorandom numbers drawn from {{FROM_DESC}}.
+*
+* @name factory
+* @type {Function}
+* @param {{{PARAM_1_JSDOC_DTYPE}}} [{{PARAM_1}}] - {{PARAM_1_DESC}}
+* @param {{{PARAM_2_JSDOC_DTYPE}}} [{{PARAM_2}}] - {{PARAM_2_DESC}}
+* @param {{{PARAM_3_JSDOC_DTYPE}}} [{{PARAM_3}}] - {{PARAM_3_DESC}}
+* @param {Options} [options] - function options
+* @param {PRNG} [options.prng] - pseudorandom number generator which generates uniformly distributed pseudorandom numbers
+* @param {PRNGSeedMT19937} [options.seed] - pseudorandom number generator seed
+* @param {PRNGStateMT19937} [options.state] - pseudorandom number generator state
+* @param {boolean} [options.copy=true] - boolean indicating whether to copy a provided pseudorandom number generator state
+* @param {string} [options.dtype="{{DEFAULT_DTYPE}}"] - default data type
+* @throws {TypeError} `{{PARAM_1}}` {{PARAM_1_THROWS_DESC}}
+* @throws {TypeError} `{{PARAM_2}}` {{PARAM_2_THROWS_DESC}}
+* @throws {TypeError} `{{PARAM_3}}` {{PARAM_3_THROWS_DESC}}
+* @throws {TypeError} options argument must be an object
+* @throws {TypeError} must provide valid options
+* @throws {Error} must provide a valid state
+* @returns {Function} function for creating arrays
+*
+* @example
+* var {{ALIAS}} = factory( {{PARAM_1_VALUE}}, {{PARAM_2_VALUE}}, {{PARAM_3_VALUE}} );
+* // returns <Function>
+*
+* var arr = {{ALIAS}}( 10 );
+* // returns <Float64Array>
+*
+* @example
+* var {{ALIAS}} = factory( {{PARAM_1_VALUE}}, {{PARAM_2_VALUE}}, {{PARAM_3_VALUE}} );
+* // returns <Function>
+*
+* var arr = {{ALIAS}}( 10, {
+*     'dtype': 'generic'
+* });
+* // returns [...]
+*/
+var factory = ternaryFactory( base, DTYPES, defaults.get( 'dtypes.{{DEFAULT_DTYPE_KIND}}' ) );
+
+
+// EXPORTS //
+
+module.exports = factory;

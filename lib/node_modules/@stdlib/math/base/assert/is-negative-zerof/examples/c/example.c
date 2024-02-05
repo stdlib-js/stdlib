@@ -21,7 +21,7 @@
 #include <stdbool.h>
 
 int main( void ) {
-	float x[] = { 0.0, -0.0, 3.14, 0.0/0.0 };
+	const float x[] = { 0.0f, -0.0f, 3.14f, 0.0f/0.0f };
 
 	bool b;
 	int i;

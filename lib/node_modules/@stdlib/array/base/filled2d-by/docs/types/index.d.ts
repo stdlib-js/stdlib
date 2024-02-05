@@ -60,7 +60,7 @@ type Array2D<T> = Array<Array<T>>;
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var arr = filled2dBy( [ 1, 5 ], constantFunction( 1.0 ) );
 * // returns [ [ 1.0, 1.0, 1.0, 1.0, 1.0 ] ]

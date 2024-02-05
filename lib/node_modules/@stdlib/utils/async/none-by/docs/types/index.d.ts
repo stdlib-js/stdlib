@@ -137,7 +137,7 @@ interface NoneByAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -186,7 +186,7 @@ interface NoneByAsync {
 	* @param done - function to invoke upon completion
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, bool ) {
 	*     if ( error ) {
@@ -240,7 +240,7 @@ interface NoneByAsync {
 	* @returns function which invokes the predicate function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function predicate( file, next ) {
 	*     var opts = {
@@ -300,7 +300,7 @@ interface NoneByAsync {
 	* @returns function which invokes the predicate function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function predicate( file, next ) {
 	*     var opts = {
@@ -360,7 +360,7 @@ interface NoneByAsync {
 * @throws must provide valid options
 *
 * @example
-* var readFile = require( `@stdlib/fs/read-file` );
+* var readFile = require( '@stdlib/fs/read-file' );
 *
 * function done( error, bool ) {
 *     if ( error ) {

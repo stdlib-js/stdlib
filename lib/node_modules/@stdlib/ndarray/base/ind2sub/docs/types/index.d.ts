@@ -30,9 +30,10 @@ import { Mode, Order } from '@stdlib/types/ndarray';
 *
 * -   The function accepts the following "modes":
 *
-*     -   `throw`: throws an error when a linear index exceeds array dimensions.
-*     -   `wrap`: wrap around a linear index exceeding array dimensions using modulo arithmetic.
-*     -   `clamp`: set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
+*     -   **throw**: throw an error when a linear index exceeds array dimensions.
+*     -   **normalize**: normalize negative indices and throw an error when a linear index exceeds array dimensions.
+*     -   **wrap**: wrap around a linear index exceeding array dimensions using modulo arithmetic.
+*     -   **clamp**: set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
 *
 * -   When provided a stride array containing negative strides, if an `offset` is greater than `0`, the function interprets the linear index as an index into the underlying data buffer for the array, thus returning subscripts from the perspective of that buffer. If an `offset` is equal to `0`, the function treats the linear index as an index into an array view, thus returning subscripts from the perspective of that view.
 *

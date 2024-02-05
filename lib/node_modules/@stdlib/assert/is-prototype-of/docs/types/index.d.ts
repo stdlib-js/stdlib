@@ -27,7 +27,7 @@
 * @returns boolean indicating if a provided prototype exists in a prototype chain
 *
 * @example
-* var inherit = require( `@stdlib/utils/inherit` );
+* var inherit = require( '@stdlib/utils/inherit' );
 *
 * function Foo() {
 *     return this;

@@ -190,10 +190,10 @@ Computes the cube root of each element in a single-precision floating-point stri
 ```c
 #include <stdint.h>
 
-float X[] = { 0.0, 1.0, 8.0, 27.0, 64.0, 125.0, 216.0, 343.0 };
+const float X[] = { 0.0, 1.0, 8.0, 27.0, 64.0, 125.0, 216.0, 343.0 };
 float Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-int64_t N = 4;
+const int64_t N = 4;
 
 stdlib_strided_scbrt( N, X, 2, Y, 2 );
 ```
@@ -235,17 +235,17 @@ void stdlib_strided_scbrt( const int64_t N, const float *X, const int64_t stride
 
 int main( void ) {
     // Create an input strided array:
-    float X[] = { 0.0, 1.0, 8.0, 27.0, 64.0, 125.0, 216.0, 343.0 };
+    const float X[] = { 0.0, 1.0, 8.0, 27.0, 64.0, 125.0, 216.0, 343.0 };
 
     // Create an output strided array:
     float Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
     // Specify the number of elements:
-    int64_t N = 4;
+    const int64_t N = 4;
 
     // Specify the stride lengths:
-    int64_t strideX = 2;
-    int64_t strideY = 2;
+    const int64_t strideX = 2;
+    const int64_t strideY = 2;
 
     // Compute the results:
     stdlib_strided_scbrt( N, X, strideX, Y, strideY );

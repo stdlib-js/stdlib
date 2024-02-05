@@ -43,7 +43,7 @@ type Iterator = Iter | IterableIterator;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var it1 = array2iterator( [ 1.0, 2.0 ] );
 * var it2 = array2iterator( [ 3.0, 4.0 ] );

@@ -29,13 +29,13 @@ interface IsSymbol {
 	* @returns boolean indicating whether value is a symbol
 	*
 	* @example
-	* var Symbol = require( `@stdlib/symbol/ctor` );
+	* var Symbol = require( '@stdlib/symbol/ctor' );
 	*
 	* var bool = isSymbol( Symbol( 'beep' ) );
 	* // returns true
 	*
 	* @example
-	* var Symbol = require( `@stdlib/symbol/ctor` );
+	* var Symbol = require( '@stdlib/symbol/ctor' );
 	*
 	* var bool = isSymbol( Object( Symbol( 'beep' ) ) );
 	* // returns true
@@ -53,13 +53,13 @@ interface IsSymbol {
 	* @returns boolean indicating if a value is a symbol primitive
 	*
 	* @example
-	* var Symbol = require( `@stdlib/symbol/ctor` );
+	* var Symbol = require( '@stdlib/symbol/ctor' );
 	*
 	* var bool = isSymbol.isPrimitive( Symbol( 'beep' ) );
 	* // returns true
 	*
 	* @example
-	* var Symbol = require( `@stdlib/symbol/ctor` );
+	* var Symbol = require( '@stdlib/symbol/ctor' );
 	*
 	* var bool = isSymbol.isPrimitive( Object( Symbol( 'beep' ) ) );
 	* // returns false
@@ -77,13 +77,13 @@ interface IsSymbol {
 	* @returns boolean indicating if a value is a symbol object
 	*
 	* @example
-	* var Symbol = require( `@stdlib/symbol/ctor` );
+	* var Symbol = require( '@stdlib/symbol/ctor' );
 	*
 	* var bool = isSymbol.isObject( Symbol( 'beep' ) );
 	* // returns false
 	*
 	* @example
-	* var Symbol = require( `@stdlib/symbol/ctor` );
+	* var Symbol = require( '@stdlib/symbol/ctor' );
 	*
 	* var bool = isSymbol.isObject( Object( Symbol( 'beep' ) ) );
 	* // returns true
@@ -102,37 +102,37 @@ interface IsSymbol {
 * @returns boolean indicating whether value is a symbol
 *
 * @example
-* var Symbol = require( `@stdlib/symbol/ctor` );
+* var Symbol = require( '@stdlib/symbol/ctor' );
 *
 * var bool = isSymbol.isPrimitive( Symbol( 'beep' ) );
 * // returns true
 *
 * @example
-* var Symbol = require( `@stdlib/symbol/ctor` );
+* var Symbol = require( '@stdlib/symbol/ctor' );
 *
 * var bool = isSymbol.isPrimitive( Object( Symbol( 'beep' ) ) );
 * // returns false
 *
 * @example
-* var Symbol = require( `@stdlib/symbol/ctor` );
+* var Symbol = require( '@stdlib/symbol/ctor' );
 *
 * var bool = isSymbol.isPrimitive( Symbol( 'beep' ) );
 * // returns true
 *
 * @example
-* var Symbol = require( `@stdlib/symbol/ctor` );
+* var Symbol = require( '@stdlib/symbol/ctor' );
 *
 * var bool = isSymbol.isPrimitive( Object( Symbol( 'beep' ) ) );
 * // returns false
 *
 * @example
-* var Symbol = require( `@stdlib/symbol/ctor` );
+* var Symbol = require( '@stdlib/symbol/ctor' );
 *
 * var bool = isSymbol.isObject( Symbol( 'beep' ) );
 * // returns false
 *
 * @example
-* var Symbol = require( `@stdlib/symbol/ctor` );
+* var Symbol = require( '@stdlib/symbol/ctor' );
 *
 * var bool = isSymbol.isObject( Object( Symbol( 'beep' ) ) );
 * // returns true

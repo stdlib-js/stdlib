@@ -35,7 +35,7 @@ import { NumericArray } from '@stdlib/types/array';
 * @returns double-precision floating-point number
 *
 * @example
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var bytes = new Uint8Array( [ 255, 255, 255, 255, 255, 255, 255, 255 ] );
 * var x = fromInt64Bytes( bytes, 1, 0 );

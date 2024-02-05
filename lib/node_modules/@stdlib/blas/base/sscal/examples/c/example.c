@@ -21,13 +21,13 @@
 
 int main( void ) {
 	// Create a strided array:
-	float x[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
+	float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
 
 	// Specify the number of elements:
-	int N = 8;
+	const int N = 8;
 
 	// Specify a stride:
-	int strideX = 1;
+	const int strideX = 1;
 
 	// Scale the vector:
 	c_sscal( N, 5.0f, x, strideX );

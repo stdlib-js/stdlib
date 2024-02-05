@@ -22,17 +22,17 @@
 
 int main( void ) {
 	// Create an input strided array:
-	double x[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
+	const double x[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
 
 	// Create an output strided array:
 	double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 	// Specify the number of elements:
-	int64_t N = 4;
+	const int64_t N = 4;
 
 	// Specify the stride lengths:
-	int64_t strideX = 2;
-	int64_t strideY = 2;
+	const int64_t strideX = 2;
+	const int64_t strideY = 2;
 
 	// Compute the results:
 	stdlib_strided_dinv( N, x, strideX, y, strideY );

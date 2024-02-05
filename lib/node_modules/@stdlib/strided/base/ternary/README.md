@@ -41,11 +41,8 @@ var ternary = require( '@stdlib/strided/base/ternary' );
 Applies a ternary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```javascript
+var add = require( '@stdlib/math/base/ops/add3' );
 var Float64Array = require( '@stdlib/array/float64' );
-
-function add( x, y, z ) {
-    return x + y + z;
-}
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -66,11 +63,8 @@ The function accepts the following arguments:
 The `shape` and `strides` parameters determine which elements in the strided input and output arrays are accessed at runtime. For example, to index every other value in the strided input arrays and to index the first `N` elements of the strided output array in reverse order,
 
 ```javascript
+var add = require( '@stdlib/math/base/ops/add3' );
 var Float64Array = require( '@stdlib/array/float64' );
-
-function add( x, y, z ) {
-    return x + y + z;
-}
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -84,11 +78,8 @@ ternary( [ x, y, z, w ], [ 3 ], [ 2, 2, 2, -1 ], add );
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
 
 ```javascript
+var add = require( '@stdlib/math/base/ops/add3' );
 var Float64Array = require( '@stdlib/array/float64' );
-
-function add( x, y, z ) {
-    return x + y + z;
-}
 
 // Initial arrays...
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -113,11 +104,8 @@ Applies a ternary callback to strided input array elements and assigns results t
 <!-- eslint-disable max-len -->
 
 ```javascript
+var add = require( '@stdlib/math/base/ops/add3' );
 var Float64Array = require( '@stdlib/array/float64' );
-
-function add( x, y, z ) {
-    return x + y + z;
-}
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -137,11 +125,8 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 <!-- eslint-disable max-len -->
 
 ```javascript
+var add = require( '@stdlib/math/base/ops/add3' );
 var Float64Array = require( '@stdlib/array/float64' );
-
-function add( x, y, z ) {
-    return x + y + z;
-}
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -172,11 +157,8 @@ ternary.ndarray( [ x, y, z, w ], [ 3 ], [ 2, 2, 2, -1 ], [ 1, 1, 1, w.length-1 ]
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
+var add = require( '@stdlib/math/base/ops/add3' );
 var ternary = require( '@stdlib/strided/base/ternary' );
-
-function add( x, y, z ) {
-    return x + y + z;
-}
 
 var N = 10;
 

@@ -48,7 +48,7 @@ interface ToWords {
 	* @returns output array
 	*
 	* @example
-	* var Uint32Array = require( `@stdlib/array/uint32` );
+	* var Uint32Array = require( '@stdlib/array/uint32' );
 	*
 	* var out = new Uint32Array( 2 );
 	*

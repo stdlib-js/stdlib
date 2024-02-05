@@ -64,7 +64,7 @@ type TryFunction = ( clbk: Callback ) => void;
 * @param done - callback to invoke upon completion
 *
 * @example
-* var randu = require( `@stdlib/random/base/randu` );
+* var randu = require( '@stdlib/random/base/randu' );
 *
 * function x( clbk ) {
 *     setTimeout( onTimeout, 0 );

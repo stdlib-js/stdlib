@@ -99,7 +99,7 @@ interface Output {
 * @returns object containing the density estimates (`z`) along grid points (`x` and `y` values)
 *
 * @example
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var x = [ 0.6333, 0.8643, 1.0952, 1.3262, 1.5571, 1.7881, 2.019, 2.25, 2.481, 2.7119 ];
 * var y = [ -0.0468, 0.8012, 1.6492, 2.4973, 3.3454, 4.1934, 5.0415, 5.8896, 6.7376, 7.5857 ];

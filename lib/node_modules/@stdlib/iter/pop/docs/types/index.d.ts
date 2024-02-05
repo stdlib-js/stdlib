@@ -45,7 +45,7 @@ type Callback = ( value?: any ) => any;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var iter = iterPop( array2iterator( [ 1, 2 ] ) );
 *

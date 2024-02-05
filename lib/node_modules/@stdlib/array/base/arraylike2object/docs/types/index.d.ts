@@ -567,7 +567,7 @@ interface GetSetAccessorObject<T> {
 * @returns object containing array data
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );
@@ -595,7 +595,7 @@ declare function arraylike2object( x: Float64Array ): Float64AccessorObject;
 * @returns object containing array data
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var x = new Float32Array( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );
@@ -623,7 +623,7 @@ declare function arraylike2object( x: Float32Array ): Float32AccessorObject;
 * @returns object containing array data
 *
 * @example
-* var Int32Array = require( `@stdlib/array/int32` );
+* var Int32Array = require( '@stdlib/array/int32' );
 *
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );
@@ -651,7 +651,7 @@ declare function arraylike2object( x: Int32Array ): Int32AccessorObject;
 * @returns object containing array data
 *
 * @example
-* var Int16Array = require( `@stdlib/array/int16` );
+* var Int16Array = require( '@stdlib/array/int16' );
 *
 * var x = new Int16Array( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );
@@ -679,7 +679,7 @@ declare function arraylike2object( x: Int16Array ): Int16AccessorObject;
 * @returns object containing array data
 *
 * @example
-* var Int8Array = require( `@stdlib/array/int8` );
+* var Int8Array = require( '@stdlib/array/int8' );
 *
 * var x = new Int8Array( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );
@@ -707,7 +707,7 @@ declare function arraylike2object( x: Int8Array ): Int8AccessorObject;
 * @returns object containing array data
 *
 * @example
-* var Uint32Array = require( `@stdlib/array/uint32` );
+* var Uint32Array = require( '@stdlib/array/uint32' );
 *
 * var x = new Uint32Array( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );
@@ -735,7 +735,7 @@ declare function arraylike2object( x: Uint32Array ): Uint32AccessorObject;
 * @returns object containing array data
 *
 * @example
-* var Uint16Array = require( `@stdlib/array/uint16` );
+* var Uint16Array = require( '@stdlib/array/uint16' );
 *
 * var x = new Uint16Array( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );
@@ -763,7 +763,7 @@ declare function arraylike2object( x: Uint16Array ): Uint16AccessorObject;
 * @returns object containing array data
 *
 * @example
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var x = new Uint8Array( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );
@@ -791,7 +791,7 @@ declare function arraylike2object( x: Uint8Array ): Uint8AccessorObject;
 * @returns object containing array data
 *
 * @example
-* var Uint8ClampedArray = require( `@stdlib/array/uint8c` );
+* var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 *
 * var x = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );
@@ -819,7 +819,7 @@ declare function arraylike2object( x: Uint8ClampedArray ): Uint8cAccessorObject;
 * @returns object containing array data
 *
 * @example
-* var Complex128Array = require( `@stdlib/array/complex128` );
+* var Complex128Array = require( '@stdlib/array/complex128' );
 *
 * var x = new Complex128Array( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );
@@ -847,7 +847,7 @@ declare function arraylike2object( x: Complex128Array ): Complex128AccessorObjec
 * @returns object containing array data
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
 *
 * var x = new Complex64Array( [ 1, 2, 3, 4 ] );
 * var obj = arraylike2object( x );

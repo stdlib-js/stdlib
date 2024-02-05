@@ -76,7 +76,7 @@ type Callback = Nullary | Unary | Binary;
 * @returns iterator
 *
 * @example
-* var randu = require( `@stdlib/random/iter/randu` );
+* var randu = require( '@stdlib/random/iter/randu' );
 *
 * function transform( v ) {
 *     return v * 10.0;

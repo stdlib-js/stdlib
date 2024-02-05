@@ -51,8 +51,8 @@ type SliceResult = MultiSlice | ErrorObject;
 * @returns MultiSlice object (or an error object)
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var MultiSlice = require( `@stdlib/slice/multi` );
+* var Slice = require( '@stdlib/slice/ctor' );
+* var MultiSlice = require( '@stdlib/slice/multi' );
 *
 * var shape = [ 10, 10, 10 ];
 *

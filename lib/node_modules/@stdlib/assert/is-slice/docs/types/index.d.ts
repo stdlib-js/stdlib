@@ -29,7 +29,7 @@ import { Slice } from '@stdlib/types/slice';
 * @returns boolean indicating if a value is a Slice object
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var s = new Slice( 0, 10, 1 );
 *

@@ -29,7 +29,7 @@ import { Slice } from '@stdlib/types/slice';
 * @returns subsequence string
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
+* var Slice = require( '@stdlib/slice/ctor' );
 *
 * var str = slice2seq( new Slice( null, null, null ) );
 * // returns ':'

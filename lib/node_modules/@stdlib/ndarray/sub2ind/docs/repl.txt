@@ -20,9 +20,11 @@
     options.mode: string|Array<string> (optional)
         Specifies how to handle subscripts which exceed array dimensions. If
         equal to 'throw', the function throws an error when a subscript exceeds
-        array dimensions. If equal to 'wrap', the function wraps around
-        subscripts exceeding array dimensions using modulo arithmetic. If equal
-        to 'clamp', the function sets subscripts exceeding array dimensions to
+        array dimensions. If equal to 'normalize', the function normalizes
+        negative subscripts and throws an error when a subscript exceeds array
+        dimensions. If equal to 'wrap', the function wraps around subscripts
+        exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', the function sets subscripts exceeding array dimensions to
         either `0` (minimum index) or the maximum index along a particular
         dimension. If provided a mode array, each array element specifies the
         mode for a corresponding array dimension. If provided fewer modes than

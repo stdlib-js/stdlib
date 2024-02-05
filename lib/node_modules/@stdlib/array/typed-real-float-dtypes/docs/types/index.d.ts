@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { FloatDataType as DataType } from '@stdlib/types/array';
+import { RealFloatingPointDataType as DataType } from '@stdlib/types/array';
 
 /**
 * Returns a list of typed array real-valued floating-point data types.

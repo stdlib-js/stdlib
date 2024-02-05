@@ -22,7 +22,7 @@
 * Platform-specific path delimiter.
 *
 * @example
-* var IS_WINDOWS = require( `@stdlib/assert/is-windows` );
+* var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
 *
 * var PATH;
 * var paths;

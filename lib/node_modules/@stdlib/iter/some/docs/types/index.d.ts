@@ -31,7 +31,7 @@ import { Iterator } from '@stdlib/types/iter';
 * @returns boolean indicating whether at least `n` iterated values are truthy
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var it = array2iterator( [ 0, 0, 1, 1, 1 ] );
 *

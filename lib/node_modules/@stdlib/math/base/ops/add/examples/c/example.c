@@ -20,8 +20,8 @@
 #include <stdio.h>
 
 int main( void ) {
-	double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
-	double y[] = { 3.14, -3.14, -0.0, 0.0/0.0 };
+	const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+	const double y[] = { 3.14, -3.14, -0.0, 0.0/0.0 };
 
 	double z;
 	int i;

@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
 * Returns the Cartesian square.
@@ -38,7 +38,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = cartesianSquare( x );
 * // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 */
-declare function cartesianSquare<T = unknown>( x: Collection<T> ): Array<Array<T>>;
+declare function cartesianSquare<T = unknown>( x: Collection<T> | AccessorArrayLike<T> ): Array<Array<T>>;
 
 
 // EXPORTS //

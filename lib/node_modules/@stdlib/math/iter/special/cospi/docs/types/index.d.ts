@@ -37,7 +37,7 @@ type Iterator = Iter | IterableIterator;
 * @returns iterator
 *
 * @example
-* var randu = require( `@stdlib/random/iter/randu` );
+* var randu = require( '@stdlib/random/iter/randu' );
 *
 * var iter = iterCospi( randu() );
 *

@@ -44,36 +44,6 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 ### Commands
 
-#### dist-bundles-publish
-
-Publishes distributable browser bundles to the `npm` package registry.
-
-<!-- run-disable -->
-
-```bash
-$ make dist-bundles-publish
-```
-
-#### dist-bundles-publish-dry-run
-
-Performs a dry run of publishing packages containing distributable bundles to the `npm` package registry.
-
-<!-- run-disable -->
-
-```bash
-$ make dist-bundles-publish-dry-run
-```
-
-#### clean-dist-bundles
-
-Removes distributable bundle build artifacts.
-
-<!-- run-disable -->
-
-```bash
-$ make clean-dist-bundles
-```
-
 #### npm-publish
 
 Publishes a new project version to the npm package registry.

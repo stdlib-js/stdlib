@@ -53,13 +53,14 @@ var s = ind2sub( shape, 2 );
 
 The function supports the following `options`:
 
--   `mode`: specifies how to handle a linear index which exceeds array dimensions. The following modes are supported:
+-   **mode**: specifies how to handle a linear index which exceeds array dimensions. The following modes are supported:
 
     -   `throw`: specifies that the function should throw an error when a linear index exceeds array dimensions.
+    -   `normalize`: specifies that the function should normalize negative linear indices and throw an error when a linear index exceeds array dimensions.
     -   `wrap`: specifies that the function should wrap around a linear index exceeding array dimensions using modulo arithmetic.
     -   `clamp`: specifies that the function should set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
 
--   `order`: specifies whether an array is `row-major` (C-style) or `column-major` (Fortran-style). Default: `'row-major'`.
+-   **order**: specifies whether an array is `row-major` (C-style) or `column-major` (Fortran-style). Default: `'row-major'`.
 
 By default, the function assumes a row-major array. To return subscripts for a column-major array, set the `order` option.
 

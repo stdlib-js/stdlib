@@ -78,7 +78,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -93,7 +93,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -109,7 +109,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -170,7 +170,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -185,7 +185,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -201,7 +201,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -264,7 +264,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -279,7 +279,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -295,7 +295,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -358,7 +358,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -373,7 +373,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -389,7 +389,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -452,7 +452,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -467,7 +467,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -483,7 +483,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -542,7 +542,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -558,7 +558,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -590,7 +590,7 @@ interface Namespace {
 	* }
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -618,7 +618,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -633,7 +633,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -649,7 +649,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -710,7 +710,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -725,7 +725,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -741,7 +741,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -802,7 +802,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -817,7 +817,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -833,7 +833,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -895,7 +895,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -910,7 +910,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -926,7 +926,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -990,7 +990,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1005,7 +1005,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1021,7 +1021,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -1084,7 +1084,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1099,7 +1099,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1115,7 +1115,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -1176,7 +1176,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1191,7 +1191,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1207,7 +1207,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -1270,7 +1270,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* ns.function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1285,7 +1285,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* ns.function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1301,7 +1301,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* ns.function log( v ) {
 	*    console.log( v );
@@ -1365,7 +1365,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1380,7 +1380,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1396,7 +1396,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -1459,7 +1459,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1474,7 +1474,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1490,7 +1490,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -1551,7 +1551,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1566,7 +1566,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1582,7 +1582,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -1644,7 +1644,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1659,7 +1659,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1675,7 +1675,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -1742,7 +1742,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1757,7 +1757,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1773,7 +1773,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -1832,7 +1832,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1848,7 +1848,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1880,7 +1880,7 @@ interface Namespace {
 	* }
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -1909,7 +1909,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1924,7 +1924,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -1940,7 +1940,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2003,7 +2003,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2018,7 +2018,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2034,7 +2034,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2096,7 +2096,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2111,7 +2111,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2127,7 +2127,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2189,7 +2189,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2204,7 +2204,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2220,7 +2220,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2282,7 +2282,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2297,7 +2297,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2313,7 +2313,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2375,7 +2375,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2390,7 +2390,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2406,7 +2406,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2465,7 +2465,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2481,7 +2481,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2513,7 +2513,7 @@ interface Namespace {
 	* }
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2538,7 +2538,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2554,7 +2554,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2586,7 +2586,7 @@ interface Namespace {
 	* }
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2611,7 +2611,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2627,7 +2627,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2659,7 +2659,7 @@ interface Namespace {
 	* }
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2688,7 +2688,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2703,7 +2703,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2719,7 +2719,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2781,7 +2781,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2796,7 +2796,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2812,7 +2812,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2875,7 +2875,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2890,7 +2890,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2906,7 +2906,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -2967,7 +2967,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2982,7 +2982,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -2998,7 +2998,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -3057,7 +3057,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3073,7 +3073,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3105,7 +3105,7 @@ interface Namespace {
 	* }
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -3130,7 +3130,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3146,7 +3146,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3178,7 +3178,7 @@ interface Namespace {
 	* }
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -3203,7 +3203,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3219,7 +3219,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3251,7 +3251,7 @@ interface Namespace {
 	* }
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -3278,7 +3278,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3293,7 +3293,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3309,7 +3309,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -3370,7 +3370,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.ns.toString() );
@@ -3385,7 +3385,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.ns.toString() );
@@ -3401,7 +3401,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -3464,7 +3464,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3479,7 +3479,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3495,7 +3495,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -3557,7 +3557,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3572,7 +3572,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3588,7 +3588,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );
@@ -3651,7 +3651,7 @@ interface Namespace {
 	* @returns stream instance
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3666,7 +3666,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
 	*    console.log( chunk.toString() );
@@ -3682,7 +3682,7 @@ interface Namespace {
 	* stream.pipe( inspectStream( log )  );
 	*
 	* @example
-	* var inspectStream = require( `@stdlib/streams/node/inspect-sink` );
+	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( v ) {
 	*    console.log( v );

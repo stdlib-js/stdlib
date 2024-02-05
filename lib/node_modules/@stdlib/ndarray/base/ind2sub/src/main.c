@@ -29,7 +29,7 @@
 *
 * -   When provided a stride array containing negative strides, if an `offset` is greater than `0`, the function interprets the linear index as an index into the underlying data buffer for the array, thus returning subscripts from the perspective of that buffer. If an `offset` is equal to `0`, the function treats the linear index as an index into an array view, thus returning subscripts from the perspective of that view. In short, from the perspective of a view, view data is always ordered.
 *
-* -   In "error" mode, the function returns `-1` if an index is out-of-bounds.
+* -   In "error" and "normalize" modes, the function returns `-1` if an index is out-of-bounds.
 *
 * @param ndims    number of dimensions
 * @param shape    array shape (dimensions)
@@ -59,55 +59,62 @@
 *     // Handle error...
 * }
 */
-int8_t stdlib_ndarray_ind2sub( int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset, enum STDLIB_NDARRAY_ORDER order, int64_t idx, enum STDLIB_NDARRAY_INDEX_MODE mode, int64_t *out ) {
+int8_t stdlib_ndarray_ind2sub( const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset, const enum STDLIB_NDARRAY_ORDER order, const int64_t idx, const enum STDLIB_NDARRAY_INDEX_MODE mode, int64_t *out ) {
+	int64_t index;
 	int64_t len;
 	int64_t s;
 	int64_t k;
 	int64_t i;
 
+	index = idx;
 	len = 1;
 	for ( i = 0; i < ndims; i++ ) {
 		len *= shape[ i ];
 	}
 	if ( mode == STDLIB_NDARRAY_INDEX_CLAMP ) {
-		if ( idx < 0 ) {
-			idx = 0;
-		} else if ( idx >= len ) {
-			idx = len - 1;
+		if ( index < 0 ) {
+			index = 0;
+		} else if ( index >= len ) {
+			index = len - 1;
 		}
 	} else if ( mode == STDLIB_NDARRAY_INDEX_WRAP ) {
-		if ( idx < 0 ) {
-			idx += len; // slight optimization to avoid modulo arithmetic when |idx| <= len
-			if ( idx < 0 ) {
-				idx -= len*( (int64_t)( idx/len ) ); // this is equivalent to `idx mod len`, where the result has same sign as dividend (i.e., `idx`); cannot use `%` as the sign of the result is implementation defined in C
-				if ( idx != 0 ) {
-					idx += len;
+		if ( index < 0 ) {
+			index += len; // slight optimization to avoid modulo arithmetic when |index| <= len
+			if ( index < 0 ) {
+				index -= len*( (int64_t)( index/len ) ); // this is equivalent to `index mod len`, where the result has same sign as dividend (i.e., `index`); cannot use `%` as the sign of the result is implementation defined in C
+				if ( index != 0 ) {
+					index += len;
 				}
 			}
-		} else if ( idx >= len ) {
-			idx -= len; // slight optimization to avoid modulo arithmetic when len < idx <= 2*len
-			if ( idx >= len ) {
-				idx %= len;
+		} else if ( index >= len ) {
+			index -= len; // slight optimization to avoid modulo arithmetic when len < index <= 2*len
+			if ( index >= len ) {
+				index %= len;
 			}
 		}
-	} else if ( idx < 0 || idx >= len ) { // mode == 'error'
-		return -1;
+	} else {
+		if ( mode == STDLIB_NDARRAY_INDEX_NORMALIZE && index < 0 ) {
+			index += len;
+		}
+		if ( index < 0 || index >= len ) {
+			return -1;
+		}
 	}
 	if ( offset == 0 ) {
 		if ( order == STDLIB_NDARRAY_COLUMN_MAJOR ) {
 			for ( i = 0; i < ndims; i++ ) {
-				s = idx % shape[ i ];
-				idx -= s;
-				idx /= shape[ i ];
+				s = index % shape[ i ];
+				index -= s;
+				index /= shape[ i ];
 				out[ i ] = s;
 			}
 			return 0;
 		}
 		// Case: row-major
 		for ( i = ndims-1; i >= 0; i-- ) {
-			s = idx % shape[ i ];
-			idx -= s;
-			idx /= shape[ i ];
+			s = index % shape[ i ];
+			index -= s;
+			index /= shape[ i ];
 			out[ i ] = s;
 		}
 		return 0;
@@ -116,12 +123,12 @@ int8_t stdlib_ndarray_ind2sub( int64_t ndims, int64_t *shape, int64_t *strides, 
 		for ( i = ndims-1; i >= 0; i-- ) {
 			s = strides[ i ];
 			if ( s < 0 ) {
-				k = idx / s; // truncates
-				idx -= k * s;
+				k = index / s; // truncates
+				index -= k * s;
 				out[ i ] = shape[ i ] - 1 + k;
 			} else {
-				k = idx / s; // cppcheck-suppress zerodivcond // truncates
-				idx -= k * s;
+				k = index / s; // cppcheck-suppress zerodivcond // truncates
+				index -= k * s;
 				out[ i ] = k;
 			}
 		}
@@ -131,12 +138,12 @@ int8_t stdlib_ndarray_ind2sub( int64_t ndims, int64_t *shape, int64_t *strides, 
 	for ( i = 0; i < ndims; i++ ) {
 		s = strides[ i ];
 		if ( s < 0 ) {
-			k = idx / s; // truncates
-			idx -= k * s;
+			k = index / s; // truncates
+			index -= k * s;
 			out[ i ] = shape[ i ] - 1 + k;
 		} else {
-			k = idx / s; // cppcheck-suppress zerodivcond // truncates
-			idx -= k * s;
+			k = index / s; // cppcheck-suppress zerodivcond // truncates
+			index -= k * s;
 			out[ i ] = k;
 		}
 	}

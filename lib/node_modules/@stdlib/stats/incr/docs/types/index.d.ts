@@ -196,8 +196,8 @@ interface Namespace {
 	* @returns accumulator function
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var ndarray = require( `@stdlib/ndarray/ctor` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( '@stdlib/ndarray/ctor' );
 	*
 	* // Create an output covariance matrix:
 	* var buffer = new Float64Array( 4 );
@@ -376,7 +376,7 @@ interface Namespace {
 	* @returns accumulator function
 	*
 	* @example
-	* var rnorm = require( `@stdlib/random/base/normal` );
+	* var rnorm = require( '@stdlib/random/base/normal' );
 	*
 	* var accumulator;
 	* var opts;
@@ -884,7 +884,7 @@ interface Namespace {
 	* @returns accumulator function
 	*
 	* @example
-	* var rnorm = require( `@stdlib/random/base/normal` );
+	* var rnorm = require( '@stdlib/random/base/normal' );
 	*
 	* var accumulator;
 	* var opts;
@@ -2475,8 +2475,8 @@ interface Namespace {
 	* @returns accumulator function
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var ndarray = require( `@stdlib/ndarray/ctor` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( '@stdlib/ndarray/ctor' );
 	*
 	* // Create an output correlation distance matrix:
 	* var buffer = new Float64Array( 4 );
@@ -2533,8 +2533,8 @@ interface Namespace {
 	* @returns accumulator function
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var ndarray = require( `@stdlib/ndarray/ctor` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( '@stdlib/ndarray/ctor' );
 	*
 	* // Create an output correlation matrix:
 	* var buffer = new Float64Array( 4 );

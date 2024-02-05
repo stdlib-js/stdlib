@@ -155,7 +155,7 @@ sqrt.ndarray( 3, 'float64', x, 2, 1, 'float64', y, -1, y.length-1 );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var dtypes = require( '@stdlib/array/dtypes' );
+var dtypes = require( '@stdlib/array/typed-real-float-dtypes' );
 var sqrt = require( '@stdlib/math/strided/special/sqrt' );
 
 var dt;

@@ -25,11 +25,11 @@ int main( void ) {
 	float y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 	// Specify the number of elements:
-	int N = 4;
+	const int N = 4;
 
 	// Specify stride lengths:
-	int strideX = 1;
-	int strideY = -1;
+	const int strideX = 1;
+	const int strideY = -1;
 
 	// Copy elements:
 	c_cswap( N, (void *)x, strideX, (void *)y, strideY );

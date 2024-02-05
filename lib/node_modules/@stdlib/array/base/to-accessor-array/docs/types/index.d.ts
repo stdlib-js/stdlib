@@ -40,7 +40,7 @@ import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 * // returns 1
 *
 * @example
-* var Complex128Array = require( `@stdlib/array/complex128` );
+* var Complex128Array = require( '@stdlib/array/complex128' );
 *
 * var arr = toAccessorArray( new Complex128Array( 10 ) );
 * // returns <Complex128Array>

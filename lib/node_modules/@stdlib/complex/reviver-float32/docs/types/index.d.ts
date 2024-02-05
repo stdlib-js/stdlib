@@ -26,7 +26,7 @@
 * @returns value or 64-bit complex number
 *
 * @example
-* var parseJSON = require( `@stdlib/utils/parse-json` );
+* var parseJSON = require( '@stdlib/utils/parse-json' );
 *
 * var str = '{"type":"Complex64","re":5,"im":3}';
 *

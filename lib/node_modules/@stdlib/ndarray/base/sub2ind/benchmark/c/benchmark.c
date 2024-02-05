@@ -35,7 +35,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version() {
+void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -73,7 +73,7 @@ void print_results( double elapsed ) {
 *
 * @return clock time
 */
-double tic() {
+double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
@@ -84,7 +84,7 @@ double tic() {
 *
 * @return random double
 */
-double rand_double() {
+double rand_double( void ) {
 	int r = rand();
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }
@@ -94,7 +94,7 @@ double rand_double() {
 *
 * @return elapsed time in seconds
 */
-double benchmark1() {
+double benchmark1( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -133,7 +133,7 @@ double benchmark1() {
 *
 * @return elapsed time in seconds
 */
-double benchmark2() {
+double benchmark2( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -172,7 +172,7 @@ double benchmark2() {
 *
 * @return elapsed time in seconds
 */
-double benchmark3() {
+double benchmark3( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -211,7 +211,7 @@ double benchmark3() {
 *
 * @return elapsed time in seconds
 */
-double benchmark4() {
+double benchmark4( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -250,7 +250,7 @@ double benchmark4() {
 *
 * @return elapsed time in seconds
 */
-double benchmark5() {
+double benchmark5( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -289,7 +289,7 @@ double benchmark5() {
 *
 * @return elapsed time in seconds
 */
-double benchmark6() {
+double benchmark6( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -328,7 +328,7 @@ double benchmark6() {
 *
 * @return elapsed time in seconds
 */
-double benchmark7() {
+double benchmark7( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -368,7 +368,7 @@ double benchmark7() {
 *
 * @return elapsed time in seconds
 */
-double benchmark8() {
+double benchmark8( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -409,7 +409,7 @@ double benchmark8() {
 *
 * @return elapsed time in seconds
 */
-double benchmark9() {
+double benchmark9( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -449,7 +449,7 @@ double benchmark9() {
 *
 * @return elapsed time in seconds
 */
-double benchmark10() {
+double benchmark10( void ) {
 	double elapsed;
 	int64_t idx;
 	double t;
@@ -472,6 +472,84 @@ double benchmark10() {
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		sub[ 2 ] = (int64_t)( (rand_double()*20.0)-5.0 );
+		idx = stdlib_ndarray_sub2ind( ndims, shape, strides, offset, sub, nmodes, modes );
+		if ( idx < -1 ) {
+			printf( "unexpected result\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( idx < -1 ) {
+		printf( "unexpected result\n" );
+	}
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @return elapsed time in seconds
+*/
+double benchmark11( void ) {
+	double elapsed;
+	int64_t idx;
+	double t;
+	int i;
+
+	int64_t ndims = 3;
+	int64_t shape[] = { 10, 10, 10 };
+	int64_t strides[] = { 100, 10, 1 };
+	int64_t offset = 0;
+
+	int64_t sub[] = { 5, 5, 5 };
+
+	int64_t nmodes = 1;
+	int8_t modes[] = {
+		STDLIB_NDARRAY_INDEX_NORMALIZE
+	};
+
+	t = tic();
+	for ( i = 0; i < ITERATIONS; i++ ) {
+		sub[ 2 ] = (int64_t)( (rand_double()*2000.0)-1000.0 );
+		idx = stdlib_ndarray_sub2ind( ndims, shape, strides, offset, sub, nmodes, modes );
+		if ( idx < -1 ) {
+			printf( "unexpected result\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( idx < -1 ) {
+		printf( "unexpected result\n" );
+	}
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @return elapsed time in seconds
+*/
+double benchmark12( void ) {
+	double elapsed;
+	int64_t idx;
+	double t;
+	int i;
+
+	int64_t ndims = 3;
+	int64_t shape[] = { 10, 10, 10 };
+	int64_t strides[] = { -100, -10, -1 };
+	int64_t offset = 0;
+
+	int64_t sub[] = { 5, 5, 5 };
+
+	int64_t nmodes = 1;
+	int8_t modes[] = {
+		STDLIB_NDARRAY_INDEX_NORMALIZE
+	};
+
+	t = tic();
+	for ( i = 0; i < ITERATIONS; i++ ) {
+		sub[ 2 ] = (int64_t)( (rand_double()*2000.0) - 1000.0 );
 		idx = stdlib_ndarray_sub2ind( ndims, shape, strides, offset, sub, nmodes, modes );
 		if ( idx < -1 ) {
 			printf( "unexpected result\n" );
@@ -566,6 +644,20 @@ int main( void ) {
 		count += 1;
 		printf( "# c::native::%s:mode=[clamp,wrap,wrap]\n", NAME );
 		elapsed = benchmark10();
+		print_results( elapsed );
+		printf( "ok %d benchmark finished\n", count );
+	}
+	for ( i = 0; i < REPEATS; i++ ) {
+		count += 1;
+		printf( "# c::native::%s:mode=[normalize]\n", NAME );
+		elapsed = benchmark11();
+		print_results( elapsed );
+		printf( "ok %d benchmark finished\n", count );
+	}
+	for ( i = 0; i < REPEATS; i++ ) {
+		count += 1;
+		printf( "# c::native::%s:mode=[normalize],offset=0\n", NAME );
+		elapsed = benchmark12();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}

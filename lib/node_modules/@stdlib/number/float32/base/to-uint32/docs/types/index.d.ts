@@ -25,32 +25,32 @@
 * @returns unsigned 32-bit integer
 *
 * @example
-* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var y = float32ToUint32( float64ToFloat32( 4294967297.0 ) );
 * // returns 0
 *
 * @example
-* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var y = float32ToUint32( float64ToFloat32( 3.14 ) );
 * // returns 3
 *
 * @example
-* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var y = float32ToUint32( float64ToFloat32( -3.14 ) );
 * // returns 4294967293
 *
 * @example
-* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var y = float32ToUint32( float64ToFloat32( NaN ) );
 * // returns 0
 *
 * @example
-* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var y = float32ToUint32( float64ToFloat32( Infinity ) );
 * // returns 0
 *
 * @example
-* var float64ToFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var y = float32ToUint32( float64ToFloat32( -Infinity ) );
 * // returns 0
 */

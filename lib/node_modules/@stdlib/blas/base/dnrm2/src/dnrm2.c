@@ -25,7 +25,7 @@
 * @param N       number of indexed elements
 * @param X       input array
 * @param stride  stride length
-* @return        output value
+* @return        L2-norm
 */
 double c_dnrm2( const int N, const double *X, const int stride ) {
 	double scale;

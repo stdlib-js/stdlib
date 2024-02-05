@@ -72,6 +72,11 @@ interface Results {
 	ci: Array<number>;
 
 	/**
+	* Correlation coefficient.
+	*/
+	pcorr: number;
+
+	/**
 	* Assumed correlation under H0 (equal to the supplied `rho` option).
 	*/
 	nullValue: number;

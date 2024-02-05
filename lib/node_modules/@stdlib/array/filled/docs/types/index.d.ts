@@ -104,7 +104,7 @@ declare function filledarray( value: any, array: Collection, dtype?: DataType ):
 * @returns filled array
 *
 * @example
-* var iterConstant = require( `@stdlib/iter/constant` );
+* var iterConstant = require( '@stdlib/iter/constant' );
 *
 * var it = iterConstant( 3.0, {
 *     'iter': 3
@@ -113,7 +113,7 @@ declare function filledarray( value: any, array: Collection, dtype?: DataType ):
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 *
 * @example
-* var iterConstant = require( `@stdlib/iter/constant` );
+* var iterConstant = require( '@stdlib/iter/constant' );
 *
 * var it = iterConstant( 3.0, {
 *     'iter': 3
@@ -138,14 +138,14 @@ declare function filledarray( value: any, iterable: IterableIterator, dtype?: Da
 * @returns filled array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 8, 2 );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 8, 2, 'float32' );
@@ -167,14 +167,14 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * @returns filled array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 8 );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 8, 'float32' );
@@ -195,14 +195,14 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * @returns filled array
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0 ]
 *
 * @example
-* var ArrayBuffer = require( `@stdlib/array/buffer` );
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
 *
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 'float32' );

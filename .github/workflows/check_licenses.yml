@@ -22,6 +22,11 @@ name: check_licenses
 # Workflow triggers:
 on: [pull_request]
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -53,8 +58,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        # Pin action to full length commit SHA corresponding to v4.1.0
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
+        # Pin action to full length commit SHA
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -75,8 +80,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        # Pin action to full length commit SHA corresponding to v3.8.1
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -122,8 +127,8 @@ jobs:
 
       # Upload the log file:
       - name: 'Upload log file'
-        # Pin action to full length commit SHA corresponding to v3.1.3
-        uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32
+        # Pin action to full length commit SHA
+        uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32 # v3.1.3
         if: always()
         with:
           # Define a name for the uploaded artifact:

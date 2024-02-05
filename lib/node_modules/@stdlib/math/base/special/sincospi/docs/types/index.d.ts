@@ -60,7 +60,7 @@ interface SinCosPi {
 	* @returns two-element array containing sin(πx) and cos(πx)
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var out = new Float64Array( 2 );
 	*

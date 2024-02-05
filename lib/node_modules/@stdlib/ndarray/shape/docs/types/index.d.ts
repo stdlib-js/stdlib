@@ -29,7 +29,7 @@ import { ndarray, Shape } from '@stdlib/types/ndarray';
 * @returns shape
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var sh = shape( zeros( [ 3, 3, 3 ] ) );
 * // returns [ 3, 3, 3 ]

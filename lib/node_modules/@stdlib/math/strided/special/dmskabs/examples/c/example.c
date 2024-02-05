@@ -22,21 +22,21 @@
 
 int main( void ) {
 	// Create an input strided array:
-	double x[] = { -2.0, 1.0, -3.0, -5.0, 4.0, 0.0, -1.0, -3.0 };
+	const double x[] = { -2.0, 1.0, -3.0, -5.0, 4.0, 0.0, -1.0, -3.0 };
 
 	// Create a mask strided array:
-	uint8_t m[] = { 0, 0, 1, 0, 1, 1, 0, 0 };
+	const uint8_t m[] = { 0, 0, 1, 0, 1, 1, 0, 0 };
 
 	// Create an output strided array:
 	double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 	// Specify the number of elements:
-	int64_t N = 4;
+	const int64_t N = 4;
 
 	// Specify the stride lengths:
-	int64_t strideX = 2;
-	int64_t strideM = 2;
-	int64_t strideY = 2;
+	const int64_t strideX = 2;
+	const int64_t strideM = 2;
+	const int64_t strideY = 2;
 
 	// Compute the results:
 	stdlib_strided_dmskabs( N, x, strideX, m, strideM, y, strideY );

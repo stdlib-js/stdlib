@@ -25,7 +25,7 @@
 * @returns boolean indicating whether value is a `SharedArrayBuffer`
 *
 * @example
-* var SharedArrayBuffer = require( `@stdlib/array/shared-buffer` );
+* var SharedArrayBuffer = require( '@stdlib/array/shared-buffer' );
 *
 * try {
 *     var bool = isSharedArrayBuffer( new SharedArrayBuffer( 10 ) );

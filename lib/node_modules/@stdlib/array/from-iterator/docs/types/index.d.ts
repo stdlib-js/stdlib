@@ -66,7 +66,7 @@ type MapFunction<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V>;
 * @returns output array
 *
 * @example
-* var randu = require( `@stdlib/random/iter/randu` );
+* var randu = require( '@stdlib/random/iter/randu' );
 *
 * var iter = randu({
 *     'iter': 10
@@ -86,7 +86,7 @@ declare function iterator2array<T = unknown>( iterator: Iterator<T> ): Array<T>;
 * @returns output array
 *
 * @example
-* var randu = require( `@stdlib/random/iter/randu` );
+* var randu = require( '@stdlib/random/iter/randu' );
 *
 * function scale( v ) {
 *     return v * 2.0;
@@ -109,8 +109,8 @@ declare function iterator2array<T = unknown, U = unknown, W = unknown>( iterator
 * @returns output array
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var randu = require( `@stdlib/random/iter/randu` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var randu = require( '@stdlib/random/iter/randu' );
 *
 * var iter = randu({
 *     'iter': 10
@@ -132,8 +132,8 @@ declare function iterator2array<T = unknown, U = unknown>( iterator: Iterator<T>
 * @returns output array
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var randu = require( `@stdlib/random/iter/randu` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var randu = require( '@stdlib/random/iter/randu' );
 *
 * function scale( v ) {
 *     return v * 2.0;

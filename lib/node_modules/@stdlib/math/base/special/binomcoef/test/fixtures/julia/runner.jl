@@ -25,27 +25,27 @@ Generate fixture data and write to file.
 
 # Arguments
 
-* `m`: input value
+* `n`: input value
 * `k`: second input value
 * `name::AbstractString`: output filename
 
 # Examples
 
 ``` julia
-julia> m = round.( Int, rand( 1000 ) .* 170 );
+julia> n = round.( Int, rand( 1000 ) .* 170 );
 julia> k = round.( Int, rand( 1000 ) .* 170 );
-julia> gen( m, k, \"data.json\" );
+julia> gen( n, k, \"data.json\" );
 ```
 """
-function gen( m, k, name )
-	y = Array{Int64}( undef, length( m ) );
-	for i in eachindex(m)
-		y[i] = binomial( m[i], k[i] );
+function gen( n, k, name )
+	y = Array{Int64}( undef, length( n ) );
+	for i in eachindex(n)
+		y[i] = binomial( n[i], k[i] );
 	end
 
 	# Store data to be written to file as a collection:
 	data = Dict([
-		("m", m),
+		("n", n),
 		("k", k),
 		("expected", y)
 	]);
@@ -66,6 +66,11 @@ file = @__FILE__;
 dir = dirname( file );
 
 # Integer values:
-m = round.( Int, rand( 1000 ) .* 50 .- 20 );
+n = round.( Int, ( rand( 1000 ) .* 50 ) .+ 20 );
 k = round.( Int, rand( 1000 ) .* 20 );
-gen( m, k, "integers.json" );
+gen( n, k, "integers.json" );
+
+# Negative `n` values:
+n = -1 .* round.( Int, ( rand( 1000 ) .* 20 ) .+ 10 );
+k = round.( Int, rand( 1000 ) .* 10 );
+gen( n, k, "negative_n.json" );

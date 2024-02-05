@@ -37,7 +37,7 @@ type Iterator = Iter | IterableIterator;
 * @returns iterator
 *
 * @example
-* var uniform = require( `@stdlib/random/iter/uniform` );
+* var uniform = require( '@stdlib/random/iter/uniform' );
 *
 * var iter = iterAvercos( uniform( -2.0, 0.0 ) );
 *
