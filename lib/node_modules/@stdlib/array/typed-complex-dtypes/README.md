@@ -46,13 +46,8 @@ Returns a list of complex typed array data types.
 
 ```javascript
 var out = dtypes();
-// returns [ 'complex64', 'complex128' ]
+// e.g., returns [ 'complex64', ... ]
 ```
-
-The output `array` contains the following data types:
-
--   `complex64`: single-precision floating-point complex numbers.
--   `complex128`: double-precision floating-point complex numbers.
 
 </section>
 
@@ -79,7 +74,6 @@ var indexOf = require( '@stdlib/utils/index-of' );
 var dtypes = require( '@stdlib/array/typed-complex-dtypes' );
 
 var DTYPES = dtypes();
-var bool;
 
 function isdtype( str ) {
     if ( indexOf( DTYPES, str ) === -1 ) {
@@ -88,7 +82,7 @@ function isdtype( str ) {
     return true;
 }
 
-bool = isdtype( 'complex64' );
+var bool = isdtype( 'complex64' );
 // returns true
 
 bool = isdtype( 'complex128' );
