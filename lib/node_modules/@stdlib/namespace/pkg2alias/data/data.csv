@@ -2665,6 +2665,7 @@
 "@stdlib/datasets/savoy-stopwords-por",SAVOY_STOPWORDS_POR
 "@stdlib/datasets/savoy-stopwords-sp",SAVOY_STOPWORDS_SP
 "@stdlib/datasets/savoy-stopwords-swe",SAVOY_STOPWORDS_SWE
+"@stdlib/array/from-scalar",scalar2array
 "@stdlib/ndarray/from-scalar",scalar2ndarray
 "@stdlib/blas/sdot",sdot
 "@stdlib/constants/time/seconds-in-day",SECONDS_IN_DAY
