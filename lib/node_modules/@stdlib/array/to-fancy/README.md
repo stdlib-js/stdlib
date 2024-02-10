@@ -173,7 +173,7 @@ v = y[ ':' ];
 // returns [ 6, 6, 6, 6 ]
 ```
 
-Fancy array broadcasting follows the [same rules][@stdlib/ndarray/base/broadcast-shapes] as for [ndarrays][@stdlib/ndarray/ctor]. Consequently, when assigning arrays to slices, the array on the right-hand-side must be broadcast-compatible with number of elements in the slice. For example,
+Fancy array broadcasting follows the [same rules][@stdlib/ndarray/base/broadcast-shapes] as for [ndarrays][@stdlib/ndarray/ctor]. Consequently, when assigning arrays to slices, the array on the right-hand-side must be broadcast-compatible with number of elements in the slice. For example, each assignment expression in the following example follows broadcast rules and is thus valid.
 
 ```javascript
 var y = array2fancy( [ 1, 2, 3, 4 ] );
@@ -208,7 +208,7 @@ v = y[ ':' ];
 // returns [ 5, 12, 7, 12 ]
 ```
 
-are all valid. However,
+However, the following assignment expressions are not valid.
 
 <!-- run throws: true -->
 
