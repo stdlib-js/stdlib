@@ -1109,7 +1109,7 @@ declare module '@stdlib/types/ndarray' {
 		/**
 		* Properties.
 		*/
-		[key: string | symbol | number]: T;
+		[key: string | symbol | number]: T | boolean | undefined;
 
 		/**
 		* Boolean indicating if an array is row-major contiguous.
