@@ -18,12 +18,6 @@
 
 'use strict';
 
-// MODULES //
-
-var path = require( 'path' );
-var rootDir = require( './../../../lib/node_modules/@stdlib/_tools/utils/root-dir' );
-
-
 // MAIN //
 
 /**
@@ -40,7 +34,7 @@ var options = {};
 * @memberof options
 * @type {string}
 */
-options.project = path.join( rootDir(), 'tsconfig.json' );
+options.project = './tsconfig.json';
 
 /**
 * The source type.
