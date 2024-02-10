@@ -1,0 +1,82 @@
+
+{{alias}}( x[, options] )
+    Converts an array to an object supporting fancy indexing.
+
+    An array supporting fancy indexing is an array which supports slicing via
+    indexing expressions for both retrieval and assignment.
+
+    A fancy array shares the *same* data as the provided input array. Hence, any
+    mutations to the returned array will affect the underlying input array.
+
+    A fancy array supports indexing using positive and negative integers (both
+    numeric literals and strings), Slice instances, and subsequence expressions.
+
+    A fancy array supports all properties and methods of the input array, and,
+    thus, a fancy array can be consumed by any API which supports array-like
+    objects.
+
+    Indexing expressions provide a convenient and powerful means for creating
+    and operating on array views; however, their use does entail a performance
+    cost. Indexing expressions are best suited for interactive use (e.g., in the
+    REPL) and scripting. For performance critical applications, prefer
+    equivalent functional APIs supporting array-like objects.
+
+    Fancy arrays support broadcasting in which assigned scalars and single-
+    element arrays are repeated (without additional memory allocation) to match
+    the length of a target array instance.
+
+    Fancy array broadcasting follows the same rules as for ndarrays.
+
+    Consequently, when assigning arrays to slices, the array on the right-hand-
+    side must be broadcast-compatible with number of elements in the slice.
+
+    Fancy arrays support (mostly) safe casts (i.e., any cast which can be
+    performed without overflow or loss of precision, with the exception of
+    floating-point arrays which are also allowed to downcast from higher
+    precision to lower precision).
+
+    When attempting to perform an unsafe cast, fancy arrays will raise an
+    exception.
+
+    When assigning a real-valued scalar to a complex number array (e.g.,
+    Complex128Array or Complex64Array), a fancy array will cast the real-valued
+    scalar to a complex number argument having an imaginary component equal to
+    zero.
+
+    Note, however, that attempting to assign a real-valued array to a complex
+    number array slice is *not* supported due to the ambiguity of whether the
+    real-valued array is a collection of real components (with implied imaginary
+    components equal to zero) or an array of interleaved real and imaginary
+    components.
+
+    In older JavaScript environments which do not support Proxy objects, the use
+    of indexing expressions is not supported.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking. Default:
+        false.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array supporting fancy indexing.
+
+    Examples
+    --------
+    > var y = {{alias}}( [ 1, 2, 3, 4 ] );
+    > y[ '1::2' ]
+    [ 2, 4 ]
+    > y[ '::-1' ]
+    [ 4, 3, 2, 1 ]
+
+    See Also
+    --------
+
