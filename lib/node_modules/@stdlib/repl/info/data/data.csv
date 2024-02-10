@@ -4602,6 +4602,7 @@ SAVOY_STOPWORDS_IT,"\nSAVOY_STOPWORDS_IT()\n    Returns a list of Italian stop w
 SAVOY_STOPWORDS_POR,"\nSAVOY_STOPWORDS_POR()\n    Returns a list of Portuguese stop words.\n"
 SAVOY_STOPWORDS_SP,"\nSAVOY_STOPWORDS_SP()\n    Returns a list of Spanish stop words.\n"
 SAVOY_STOPWORDS_SWE,"\nSAVOY_STOPWORDS_SWE()\n    Returns a list of Swedish stop words.\n"
+scalar2array,"\nscalar2array( value:any[, dtype:string] )\n    Returns a single-element array containing a provided scalar value.\n"
 scalar2ndarray,"\nscalar2ndarray( value:any[, options:Object] )\n    Returns a zero-dimensional ndarray containing a provided scalar value.\n"
 sdot,"\nsdot( x:ndarray, y:ndarray )\n    Computes the dot product of two single-precision floating-point vectors.\n"
 SECONDS_IN_DAY,"\nSECONDS_IN_DAY\n    Number of seconds in a day.\n"

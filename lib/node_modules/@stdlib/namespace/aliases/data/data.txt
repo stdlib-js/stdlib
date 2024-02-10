@@ -34,6 +34,7 @@ argumentFunction
 ARGV
 array
 array2buffer
+array2fancy
 array2iterator
 array2iteratorRight
 ArrayBuffer

@@ -34,6 +34,7 @@
 "@stdlib/process/argv","@stdlib/process/env"
 "@stdlib/ndarray/array","@stdlib/ndarray/ctor"
 "@stdlib/buffer/from-array","@stdlib/buffer/ctor,@stdlib/buffer/from-arraybuffer,@stdlib/buffer/from-buffer,@stdlib/buffer/from-string"
+"@stdlib/array/to-fancy","@stdlib/array/slice,@stdlib/ndarray/fancy"
 "@stdlib/array/to-iterator","@stdlib/array/from-iterator,@stdlib/array/to-circular-iterator,@stdlib/array/to-iterator-right,@stdlib/array/to-strided-iterator"
 "@stdlib/array/to-iterator-right","@stdlib/array/from-iterator,@stdlib/array/to-iterator"
 "@stdlib/array/buffer","@stdlib/buffer/ctor,@stdlib/array/float32,@stdlib/array/float64,@stdlib/array/int16,@stdlib/array/int32,@stdlib/array/int8,@stdlib/array/shared-buffer,@stdlib/array/uint16,@stdlib/array/uint32,@stdlib/array/uint8,@stdlib/array/uint8c"

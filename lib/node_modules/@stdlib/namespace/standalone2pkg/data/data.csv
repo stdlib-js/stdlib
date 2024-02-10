@@ -34,6 +34,7 @@
 "@stdlib/process-argv","@stdlib/process/argv"
 "@stdlib/ndarray-array","@stdlib/ndarray/array"
 "@stdlib/buffer-from-array","@stdlib/buffer/from-array"
+"@stdlib/array-to-fancy","@stdlib/array/to-fancy"
 "@stdlib/array-to-iterator","@stdlib/array/to-iterator"
 "@stdlib/array-to-iterator-right","@stdlib/array/to-iterator-right"
 "@stdlib/array-buffer","@stdlib/array/buffer"
