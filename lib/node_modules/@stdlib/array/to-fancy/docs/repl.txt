@@ -6,7 +6,12 @@
     indexing expressions for both retrieval and assignment.
 
     A fancy array shares the *same* data as the provided input array. Hence, any
-    mutations to the returned array will affect the underlying input array.
+    mutations to the returned array will affect the underlying input array and
+    vice versa.
+
+    For operations returning a new array (e.g., when slicing or invoking an
+    instance method), a fancy array returns a new fancy array having the same
+    configuration as specified by provided options.
 
     A fancy array supports indexing using positive and negative integers (both
     numeric literals and strings), Slice instances, and subsequence expressions.
