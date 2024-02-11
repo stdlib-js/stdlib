@@ -97,8 +97,67 @@ import array2fancy = require( './index' );
 	array2fancy( x, { 'strict': ( x: number ): number => x } ); // $ExpectError
 }
 
+// The compiler throws an error if the function is provided a `cache` option which is not valid...
+{
+	const x = [ 1, 2, 3, 4 ];
+
+	array2fancy( x, { 'cache': '5' } ); // $ExpectError
+	array2fancy( x, { 'cache': 5 } ); // $ExpectError
+	array2fancy( x, { 'cache': true } ); // $ExpectError
+	array2fancy( x, { 'cache': false } ); // $ExpectError
+	array2fancy( x, { 'cache': null } ); // $ExpectError
+	array2fancy( x, { 'cache': [] } ); // $ExpectError
+	array2fancy( x, { 'cache': {} } ); // $ExpectError
+	array2fancy( x, { 'cache': ( x: number ): number => x } ); // $ExpectError
+}
+
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	array2fancy(); // $ExpectError
 	array2fancy( [ 1, 2, 3 ], {}, {} ); // $ExpectError
+}
+
+// Attached to the function is a `factory` method which returns a function...
+{
+	array2fancy.factory(); // $ExpectType Array2Fancy
+	array2fancy.factory( {} ); // $ExpectType Array2Fancy
+	array2fancy.factory( { 'strict': true } ); // $ExpectType Array2Fancy
+}
+
+// The compiler throws an error if the `factory` method is provided a second argument which is not an object...
+{
+	array2fancy.factory( '5' ); // $ExpectError
+	array2fancy.factory( 5 ); // $ExpectError
+	array2fancy.factory( true ); // $ExpectError
+	array2fancy.factory( false ); // $ExpectError
+	array2fancy.factory( null ); // $ExpectError
+	array2fancy.factory( [] ); // $ExpectError
+	array2fancy.factory( ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `factory` method is provided a `strict` option which is not a boolean...
+{
+	array2fancy.factory( { 'strict': '5' } ); // $ExpectError
+	array2fancy.factory( { 'strict': 5 } ); // $ExpectError
+	array2fancy.factory( { 'strict': null } ); // $ExpectError
+	array2fancy.factory( { 'strict': [] } ); // $ExpectError
+	array2fancy.factory( { 'strict': {} } ); // $ExpectError
+	array2fancy.factory( { 'strict': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the `factory` method is provided a `cache` option which is not valid...
+{
+	array2fancy.factory( { 'cache': '5' } ); // $ExpectError
+	array2fancy.factory( { 'cache': 5 } ); // $ExpectError
+	array2fancy.factory( { 'cache': true } ); // $ExpectError
+	array2fancy.factory( { 'cache': false } ); // $ExpectError
+	array2fancy.factory( { 'cache': null } ); // $ExpectError
+	array2fancy.factory( { 'cache': [] } ); // $ExpectError
+	array2fancy.factory( { 'cache': {} } ); // $ExpectError
+	array2fancy.factory( { 'cache': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the `factory` method is provided an unsupported number of arguments...
+{
+	array2fancy.factory( {}, {} ); // $ExpectError
 }

@@ -69,6 +69,19 @@
         Boolean indicating whether to enforce strict bounds checking. Default:
         false.
 
+    options.cache: Object (optional)
+        Cache for resolving array index objects. Must have a 'get' method which
+        accepts a single argument: an identifier associated with an array index.
+        If an array index associated with a provided identifier exists, the
+        'get' method should return an object having the following properties:
+
+        - data: the underlying index array.
+        - type: the index type. Must be either 'mask', 'bool', or 'int'.
+        - dtype: the data type of the underlying array.
+
+        If an array index is not associated with a provided identifier, the
+        'get' method should return `null`.
+
     Returns
     -------
     out: Array|TypedArray|Object
@@ -77,6 +90,47 @@
     Examples
     --------
     > var y = {{alias}}( [ 1, 2, 3, 4 ] );
+    > y[ '1::2' ]
+    [ 2, 4 ]
+    > y[ '::-1' ]
+    [ 4, 3, 2, 1 ]
+
+
+{{alias}}.factory( [options] )
+    Returns a function for converting an array to an object supporting fancy
+    indexing.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking by default.
+        Default: false.
+
+    options.cache: Object (optional)
+        Cache for resolving array index objects. Must have a 'get' method which
+        accepts a single argument: an identifier associated with an array index.
+        If an array index associated with a provided identifier exists, the
+        'get' method should return an object having the following properties:
+
+        - data: the underlying index array.
+        - type: the index type. Must be either 'mask', 'bool', or 'int'.
+        - dtype: the data type of the underlying array.
+
+        If an array index is not associated with a provided identifier, the
+        'get' method should return `null`.
+
+    Returns
+    -------
+    fcn: Function
+        Function for converting an array to an object supporting fancy indexing.
+
+    Examples
+    --------
+    > var f = {{alias}}.factory();
+    > var y = f( [ 1, 2, 3, 4 ] );
     > y[ '1::2' ]
     [ 2, 4 ]
     > y[ '::-1' ]
