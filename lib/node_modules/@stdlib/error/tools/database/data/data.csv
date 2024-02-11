@@ -956,3 +956,6 @@
 "FP","invalid argument. Index argument is out-of-bounds. Value: `%s`.","RangeError"
 "FQ","invalid argument. Second argument must be a complex number. Value: `%s`.","TypeError"
 "FR","invalid argument. Index arguments must be integers. Value: `%s`.","TypeError"
+"FS","invalid argument. Slice exceeds array bounds. Array length: %d.","RangeError"
+"FT","invalid argument. Input array and the output array slice are broadcast incompatible. Array length: %u. Desired length: %u.","Error"
+"FU","invalid operation. Slice exceeds array bounds.","RangeError"
