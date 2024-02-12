@@ -88,7 +88,7 @@ var out = groupIndices( x, groups );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var take = require( '@stdlib/array/base/take' );
+var take = require( '@stdlib/array/base/take-indexed' );
 var groupIndices = require( '@stdlib/array/base/group-indices' );
 
 // Define an initial array of values:
