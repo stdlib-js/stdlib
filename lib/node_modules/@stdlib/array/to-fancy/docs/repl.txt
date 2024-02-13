@@ -48,12 +48,6 @@
     scalar to a complex number argument having an imaginary component equal to
     zero.
 
-    Note, however, that attempting to assign a real-valued array to a complex
-    number array slice is *not* supported due to the ambiguity of whether the
-    real-valued array is a collection of real components (with implied imaginary
-    components equal to zero) or an array of interleaved real and imaginary
-    components.
-
     In older JavaScript environments which do not support Proxy objects, the use
     of indexing expressions is not supported.
 
@@ -71,9 +65,10 @@
 
     options.cache: Object (optional)
         Cache for resolving array index objects. Must have a 'get' method which
-        accepts a single argument: an identifier associated with an array index.
-        If an array index associated with a provided identifier exists, the
-        'get' method should return an object having the following properties:
+        accepts a single argument: a string identifier associated with an array
+        index. If an array index associated with a provided identifier exists,
+        the 'get' method should return an object having the following
+        properties:
 
         - data: the underlying index array.
         - type: the index type. Must be either 'mask', 'bool', or 'int'.
@@ -111,9 +106,10 @@
 
     options.cache: Object (optional)
         Cache for resolving array index objects. Must have a 'get' method which
-        accepts a single argument: an identifier associated with an array index.
-        If an array index associated with a provided identifier exists, the
-        'get' method should return an object having the following properties:
+        accepts a single argument: a string identifier associated with an array
+        index. If an array index associated with a provided identifier exists,
+        the 'get' method should return an object having the following
+        properties:
 
         - data: the underlying index array.
         - type: the index type. Must be either 'mask', 'bool', or 'int'.
