@@ -512,7 +512,7 @@ interface Constructor {
 	* var dt = o.dtype;
 	* // returns 'uint8'
 	*/
-	get( id: string ): ArrayObject;
+	get<T extends BaseArrayObject = ArrayObject>( id: string ): T;
 }
 
 /**
