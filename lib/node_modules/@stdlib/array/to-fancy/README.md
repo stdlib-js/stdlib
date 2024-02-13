@@ -222,7 +222,7 @@ The returned function supports the same options as above. When the returned func
 
 -   A fancy array shares the **same** data as the provided input array. Hence, any mutations to the returned array will affect the underlying input array and vice versa.
 -   For operations returning a new array (e.g., when slicing or invoking an instance method), a fancy array returns a new fancy array having the same configuration as specified by `options`.
--   A fancy array supports indexing using positive and negative integers (both numeric literals and strings), [`Slice`][@stdlib/slice/ctor] instances, and [subsequence expressions][@stdlib/slice/seq2slice].
+-   A fancy array supports indexing using positive and negative integers (both numeric literals and strings), [`Slice`][@stdlib/slice/ctor] instances, [subsequence expressions][@stdlib/slice/seq2slice], and [index arrays][@stdlib/array/index] (boolean, mask, and integer).
 -   A fancy array supports all properties and methods of the input array, and, thus, a fancy array can be consumed by any API which supports array-like objects.
 -   Indexing expressions provide a convenient and powerful means for creating and operating on array views; however, their use does entail a performance cost. Indexing expressions are best suited for interactive use (e.g., in the [REPL][@stdlib/repl]) and scripting. For performance critical applications, prefer equivalent functional APIs supporting array-like objects.
 -   In older JavaScript environments which do **not** support [`Proxy`][@stdlib/proxy/ctor] objects, the use of indexing expressions is **not** supported.
