@@ -119,8 +119,6 @@ var bool = ( re1.toString() === re2.toString() );
 
 <!-- <related-links> -->
 
-
-
 <!-- </related-links> -->
 
 </section>
