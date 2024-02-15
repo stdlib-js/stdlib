@@ -124,16 +124,10 @@ jobs:
               mv ./package.json.tmp ./package.json
             fi
           done
-          jq -r '.devDependencies | keys[]' ./package.json | while read -r dep; do
-            if [[ "$dep" != "@stdlib"* ]]; then
-              continue
-            fi
-            dep=$(echo "$dep" | xargs)
-            if ! find lib -name "*.js" -exec grep -q "$dep" {} + && ! grep -q -s "$dep" manifest.json && ! grep -q -s "$dep" include.gypi; then
-              jq --indent 2 "del(.devDependencies[\"$dep\"])" ./package.json > ./package.json.tmp
-              mv ./package.json.tmp ./package.json
-            fi
-          done
+
+          # Set `devDependencies` to an empty object:
+          jq --indent 2 '.devDependencies = {}' ./package.json > ./package.json.tmp
+          mv ./package.json.tmp ./package.json
 
           # Remove CLI section:
           find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"cli\">[\s\S]+?<\!\-\- \/.cli \-\->//"

@@ -105,6 +105,12 @@ jobs:
           SLUG=${{ github.repository }}
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" --follow-tags
 
+      # Remove development dependencies from package.json:
+      - name: 'Remove development dependencies from package.json'
+        run: |
+          jq --indent 2 '.devDependencies = {}' ./package.json > ./package.json.tmp
+          mv ./package.json.tmp ./package.json
+
       # Replace GitHub MathJax equations with SVGs:
       - name: 'Replace GitHub MathJax equations with SVGs'
         run: |
