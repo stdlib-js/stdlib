@@ -86,8 +86,8 @@ jobs:
 
       # Upload the download data:
       - name: 'Upload data'
-        # Pin action to full length commit SHA corresponding to v3.1.3
-        uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32
+        # Pin action to full length commit SHA
+        uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
           name: npm_downloads
