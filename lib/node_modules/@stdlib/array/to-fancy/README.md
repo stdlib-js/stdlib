@@ -219,7 +219,7 @@ var idx = array2fancy.idx( x );
 // returns <ArrayIndex>
 ```
 
-For documentation and usage, see [`ArrayIndex`][@stdlib/array/index]
+For documentation and usage, see [`ArrayIndex`][@stdlib/array/index].
 
 </section>
 
