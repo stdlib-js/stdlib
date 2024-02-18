@@ -132,6 +132,33 @@
     > y[ '::-1' ]
     [ 4, 3, 2, 1 ]
 
+
+{{alias}}.idx( x[, options] )
+    Wraps a provided array as an array index object.
+
+    For documentation and usage, see `{{alias:@stdlib/array/index}}`.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.persist: boolean (optional)
+        Boolean indicating whether to continue persisting an index object after
+        first usage. Default: false.
+
+    Returns
+    -------
+    out: ArrayIndex
+        ArrayIndex instance.
+
+    Examples
+    --------
+    > var idx = {{alias}}.idx( [ 1, 2, 3, 4 ] );
+
     See Also
     --------
 
