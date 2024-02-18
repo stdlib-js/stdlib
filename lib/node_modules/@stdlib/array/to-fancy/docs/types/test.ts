@@ -161,3 +161,23 @@ import array2fancy = require( './index' );
 {
 	array2fancy.factory( {}, {} ); // $ExpectError
 }
+
+// Attached to the function is an `idx` method which returns an array index...
+{
+	const x = [ 1, 2, 3, 4 ];
+	const y = [ true, false, true, false ];
+	const z = new Uint8Array( [ 1, 0, 1, 0 ] );
+	const w = new Int32Array( [ 1, 2, 3, 4 ] );
+
+	array2fancy.idx( x ); // $ExpectType IntegerArrayIndex
+	array2fancy.idx( x, {} ); // $ExpectType IntegerArrayIndex
+
+	array2fancy.idx( y ); // $ExpectType BooleanArrayIndex
+	array2fancy.idx( y, {} ); // $ExpectType BooleanArrayIndex
+
+	array2fancy.idx( z ); // $ExpectType MaskArrayIndex
+	array2fancy.idx( z, {} ); // $ExpectType MaskArrayIndex
+
+	array2fancy.idx( w ); // $ExpectType Int32ArrayIndex
+	array2fancy.idx( w, {} ); // $ExpectType Int32ArrayIndex
+}
