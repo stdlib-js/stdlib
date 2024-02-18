@@ -33,6 +33,7 @@ on:
         - patch
         - minor
         - major
+        - auto
       dry-run:
         type: boolean
         description: 'Skip uploading packages (dry run):'

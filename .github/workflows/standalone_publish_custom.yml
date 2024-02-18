@@ -48,6 +48,7 @@ on:
         - patch
         - minor
         - major
+        - auto
       only-unpublished:
         type: boolean
         description: 'Only publish packages that have not yet been published'
