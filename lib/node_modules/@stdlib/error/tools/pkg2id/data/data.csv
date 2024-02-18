@@ -7146,3 +7146,9 @@
 "@stdlib/random-strided-tools-unary-factory",1rv
 "@stdlib/slice/base/int2slice",1rw
 "@stdlib/slice-base-int2slice",1rx
+"@stdlib/array/index",1ry
+"@stdlib/array-index",1rz
+"@stdlib/array/take",1s0
+"@stdlib/array-take",1s1
+"@stdlib/strided/base/reinterpret-complex",1s2
+"@stdlib/strided-base-reinterpret-complex",1s3
