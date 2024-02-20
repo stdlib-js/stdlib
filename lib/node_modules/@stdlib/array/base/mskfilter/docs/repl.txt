@@ -25,6 +25,47 @@
     > var y = {{alias}}( x, [ 0, 1, 0, 1 ] )
     [ 2, 4 ]
 
+
+{{alias}}.assign( x, mask, out, stride, offset )
+    Applies a mask to a provided input array and assigns unmasked values to
+    elements in a provided output array.
+
+    If a mask array element is truthy, the corresponding element in `x` is
+    included in the output array; otherwise, the corresponding element in `x` is
+    "masked" and thus excluded from the output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    mask: ArrayLikeObject
+        Mask array.
+
+    out: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array offset.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var m = [ 0, 1, 0, 1 ];
+    > var out = [ 0, 0, 0, 0 ];
+    > var arr = {{alias}}.assign( x, m, out, 2, 0 )
+    [ 2, 0, 4, 0 ]
+    > var bool = ( arr === out )
+    true
+
     See Also
     --------
 
