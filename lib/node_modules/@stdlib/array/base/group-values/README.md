@@ -88,7 +88,7 @@ var out = groupValues( x, groups );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var take = require( '@stdlib/array/base/take' );
+var take = require( '@stdlib/array/base/take-indexed' );
 var groupValues = require( '@stdlib/array/base/group-values' );
 
 // Define an initial array of values:

@@ -73,19 +73,17 @@ bool = isMostlySafeCast( 'float64', 'int32' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var cartesianSquare = require( '@stdlib/array/base/cartesian-square' );
+var cartesianSquare = require( '@stdlib/array/cartesian-square' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var isMostlySafeCast = require( '@stdlib/ndarray/base/assert/is-mostly-safe-data-type-cast' );
 
 // Generate a list of dtype pairs:
-var pairs = cartesianSquare( dtypes() );
+var dt = cartesianSquare( dtypes() );
 
 // For each data type pair, determine whether one can cast to another data type...
-var dt;
 var i;
-for ( i = 0; i < pairs.length; i++ ) {
-    dt = pairs[ i ];
-    console.log( '%s => %s. Can cast? %s.', dt[ 0 ], dt[ 1 ], isMostlySafeCast( dt[0], dt[1] ) );
+for ( i = 0; i < dt.length; i++ ) {
+    console.log( '%s. Can cast? %s.', dt[i].join( ' => ' ), isMostlySafeCast.apply( null, dt[i] ) );
 }
 ```
 

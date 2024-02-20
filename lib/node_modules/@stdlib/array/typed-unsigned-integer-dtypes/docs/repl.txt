@@ -2,13 +2,6 @@
 {{alias}}()
     Returns a list of typed array unsigned integer data types.
 
-    The output array contains the following data types:
-
-    - uint16: unsigned 16-bit integers.
-    - uint32: unsigned 32-bit integers.
-    - uint8: unsigned 8-bit integers.
-    - uint8c: unsigned clamped 8-bit integers.
-
     Returns
     -------
     out: Array<string>

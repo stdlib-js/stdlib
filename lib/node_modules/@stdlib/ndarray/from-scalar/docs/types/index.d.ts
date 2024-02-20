@@ -461,8 +461,9 @@ declare function scalar2ndarray( value: number, options: Uint8cOptions ): uint8c
 *
 * -   If a `dtype` option is not provided and `value`
 *
-*     -   is a `number`, the default data type is `'float64'`.
-*     -   is a complex number object, the default data type is `'complex128'`.
+*     -   is a `number`, the default data type is the default real-valued floating-point data type.
+*     -   is a complex number object of a known complex data type, the data type is the same as the provided value.
+*     -   is a complex number object of an unknown complex data type, the default data type is the default complex-valued floating-point data type.
 *     -   is any other value type, the default data type is `'generic'`.
 *
 * @param value - scalar value

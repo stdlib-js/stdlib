@@ -78,7 +78,7 @@ var out = bifurcateEntries( x, filter );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var take = require( '@stdlib/array/base/take' );
+var take = require( '@stdlib/array/base/take-indexed' );
 var bifurcateEntries = require( '@stdlib/array/base/bifurcate-entries' );
 
 // Define an initial array of values:

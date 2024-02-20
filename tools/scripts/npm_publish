@@ -474,46 +474,6 @@ update_namespace_dependency_versions() {
 	return 0
 }
 
-# Generates and publishes distributable bundles.
-publish_bundles() {
-	echo 'Publishing distributable bundles...' >&2
-	make dist-bundles-publish
-	if [[ "$?" -ne 0 ]]; then
-		echo '' >&2
-		echo 'Error: unexpected error. Encountered an error when attempting to publish distributable bundles.' >&2
-		echo '' >&2
-		return 1
-	fi
-	echo 'Successfully published distributable bundles.' >&2
-
-	echo '' >&2
-	echo 'Removing bundle artifacts...' >&2
-	make clean-dist-bundles
-	if [[ "$?" -ne 0 ]]; then
-		echo '' >&2
-		echo 'Error: unexpected error. Encountered an error when attempting to remove bundle artifacts.' >&2
-		echo '' >&2
-		return 1
-	fi
-	echo 'Successfully removed bundled artifacts.' >&2
-
-	if [[ -n "$(git status --porcelain)" ]]; then
-		echo '' >&2
-		echo 'Committing changes...' >&2
-		git add -A && git commit -m 'build: update dist versions'
-		if [[ "$?" -ne 0 ]]; then
-			echo '' >&2
-			echo 'Error: unexpected error. Unable to commit changes.' >&2
-			echo '' >&2
-			return 1
-		fi
-		echo 'Successfully committed changes.' >&2
-	fi
-	echo '' >&2
-
-	return 0
-}
-
 # Creates (and pushes) a new Git tag.
 create_tag() {
 	echo 'Creating a new tag...' >&2
@@ -652,11 +612,17 @@ main() {
 		on_error 1
 	fi
 
+	# TODO: need to update namespace TypeScript declarations
+
+	# TODO: ensure that all package CLIs are executable
+
+	# TODO: consider removing, so long as we are comfortable relying on GitHub workflows to periodically update related packages
 	# update_markdown_related
 	# if [[ "$?" -ne 0 ]]; then
 	# 	revert_changes
 	# 	on_error 1
 	# fi
+
 	# update_markdown_package_urls
 	# if [[ "$?" -ne 0 ]]; then
 	# 	revert_changes
@@ -681,10 +647,6 @@ main() {
 
 	# WARNING: at this point, we are at the point of no return and, from this point forward, cannot easily revert changes to the local repository as packages may already be published...
 
-	# publish_bundles
-	# if [[ "$?" -ne 0 ]]; then
-	# 	on_error 1
-	# fi
 	create_tag
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1

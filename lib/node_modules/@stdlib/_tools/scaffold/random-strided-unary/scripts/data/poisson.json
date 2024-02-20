@@ -1,0 +1,28 @@
+{
+  "alias": "poisson",
+  "pkg": "stdlib/random/strided/poisson",
+  "base_pkg": "stdlib/random/base/poisson",
+  "uniform_prng_pkg_basename": "uniform",
+
+  "param_1": "lambda",
+  "param_1_stride": "sl",
+  "param_1_offset": "ol",
+  "param_1_value": "2.0",
+  "param_1_rand_min": "2.0",
+  "param_1_rand_max": "5.0",
+  "param_1_desc": "mean parameter",
+  "param_1_dtype": "number",
+
+  "from_desc": "a Poisson distribution",
+  "readme_from_desc": "a [Poisson][@stdlib/random/base/poisson] distribution",
+
+  "readme_heading": "Poisson Random Numbers",
+
+  "repl_text_main_desc": "Fills a strided array with pseudorandom numbers drawn from a Poisson distribution.",
+  "repl_text_ndarray_desc": "Fills a strided array with pseudorandom numbers drawn from a Poisson distribution using alternative indexing semantics.",
+  "repl_text_factory_desc": "Returns a function for filling strided arrays with pseudorandom numbers drawn from a Poisson distribution.",
+
+  "repl_text_param_1_desc": "Mean parameter.",
+
+  "keywords": "poisson,poiss,discrete"
+}

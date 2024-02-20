@@ -25,24 +25,6 @@ import { DataType, DataTypeKind } from '@stdlib/types/ndarray';
 /**
 * Returns a list of ndarray data types.
 *
-* ## Notes
-*
-* -   When not provided a data type "kind", the function returns an array containing the following data types:
-*
-*     -   `binary`: binary.
-*     -   `complex64`: single-precision complex floating-point numbers.
-*     -   `complex128`: double-precision complex floating-point numbers.
-*     -   `float32`: single-precision floating-point numbers.
-*     -   `float64`: double-precision floating-point numbers.
-*     -   `generic`: values of any type.
-*     -   `int16`: signed 16-bit integers.
-*     -   `int32`: signed 32-bit integers.
-*     -   `int8`: signed 8-bit integers.
-*     -   `uint16`: unsigned 16-bit integers.
-*     -   `uint32`: unsigned 32-bit integers.
-*     -   `uint8`: unsigned 8-bit integers.
-*     -   `uint8c`: unsigned clamped 8-bit integers.
-*
 * @param kind - data type kind
 * @returns list of ndarray data types
 *

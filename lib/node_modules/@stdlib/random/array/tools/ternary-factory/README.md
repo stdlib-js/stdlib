@@ -262,7 +262,6 @@ The underlying pseudorandom number generator.
 
 ```javascript
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -282,7 +281,6 @@ The value used to seed the underlying pseudorandom number generator.
 
 ```javascript
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -301,7 +299,6 @@ If the `factory` function is provided a PRNG for uniformly distributed numbers, 
 ```javascript
 var minstd = require( '@stdlib/random/base/minstd-shuffle' ).normalized;
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -323,7 +320,6 @@ Length of underlying pseudorandom number generator seed.
 
 ```javascript
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -342,7 +338,6 @@ If the `factory` function is provided a PRNG for uniformly distributed numbers, 
 ```javascript
 var minstd = require( '@stdlib/random/base/minstd-shuffle' ).normalized;
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -364,7 +359,6 @@ Writable property for getting and setting the underlying pseudorandom number gen
 
 ```javascript
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -383,7 +377,6 @@ If the `factory` function is provided a PRNG for uniformly distributed numbers, 
 ```javascript
 var minstd = require( '@stdlib/random/base/minstd-shuffle' ).normalized;
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -405,7 +398,6 @@ Length of underlying pseudorandom number generator state.
 
 ```javascript
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -424,7 +416,6 @@ If the `factory` function is provided a PRNG for uniformly distributed numbers, 
 ```javascript
 var minstd = require( '@stdlib/random/base/minstd-shuffle' ).normalized;
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -446,7 +437,6 @@ Size (in bytes) of underlying pseudorandom number generator state.
 
 ```javascript
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -465,7 +455,6 @@ If the `factory` function is provided a PRNG for uniformly distributed numbers, 
 ```javascript
 var minstd = require( '@stdlib/random/base/minstd-shuffle' ).normalized;
 var triangular = require( '@stdlib/random/base/triangular' );
-var zeros = require( '@stdlib/array/zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 

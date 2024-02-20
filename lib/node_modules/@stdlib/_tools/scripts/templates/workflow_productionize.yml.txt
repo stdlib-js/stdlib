@@ -68,8 +68,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        # Pin action to full length commit SHA corresponding to v3.8.1
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version: 20
         timeout-minutes: 5
@@ -143,8 +143,8 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         if: ${{ github.event.inputs.require-passing-tests == 'true' }}
-        # Pin action to full length commit SHA corresponding to v3.8.1
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version: 20
         timeout-minutes: 5
@@ -256,8 +256,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        # Pin action to full length commit SHA corresponding to v3.8.1
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version: 20
         timeout-minutes: 5
@@ -283,7 +283,7 @@ jobs:
           find ./deno -type f -name '*.md' -print0 | xargs -0 sed -Ei "/\/tree\/main/b; /^\[@stdlib[^:]+: https:\/\/github.com\/stdlib-js\// s/(.*)/\\1\/tree\/deno/";
 
           # Replace reference to `@stdlib/types` with CDN link:
-          find ./deno -type f -name '*.ts' -print0 | xargs -0 sed -Ei "s/\/\/\/ <reference types=\"@stdlib\/types\"\/>/\/\/\/ <reference types=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/types@main\/index.d.ts\"\/>/g"
+          find ./deno -type f -name '*.ts' -print0 | xargs -0 -r sed -Ei "s/\/\/\/ <reference types=\"@stdlib\/types\"\/>/\/\/\/ <reference types=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/types@main\/index.d.ts\"\/>/g"
 
           # Change wording of project description to avoid reference to JavaScript and Node.js:
           find ./deno -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/a standard library for JavaScript and Node.js, /a standard library /g"
@@ -424,8 +424,8 @@ jobs:
 
       # Install Node.js
       - name: 'Install Node.js'
-        # Pin action to full length commit SHA corresponding to v3.8.1
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version: 20
         timeout-minutes: 5
@@ -606,8 +606,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        # Pin action to full length commit SHA corresponding to v3.8.1
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version: 20
         timeout-minutes: 5
@@ -634,7 +634,7 @@ jobs:
           find ./esm -type f -name '*.md' -print0 | xargs -0 sed -Ei "/\/tree\/main/b; /^\[@stdlib[^:]+: https:\/\/github.com\/stdlib-js\// s/(.*)/\\1\/tree\/esm/";
 
           # Replace reference to `@stdlib/types` with esm link:
-          find ./esm -type f -name '*.ts' -print0 | xargs -0 sed -Ei "s/\/\/\/ <reference types=\"@stdlib\/types\"\/>/\/\/\/ <reference types=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/types@esm\/index.d.ts\"\/>/g"
+          find ./esm -type f -name '*.ts' -print0 | xargs -0 -r sed -Ei "s/\/\/\/ <reference types=\"@stdlib\/types\"\/>/\/\/\/ <reference types=\"https:\/\/cdn.jsdelivr.net\/gh\/stdlib-js\/types@esm\/index.d.ts\"\/>/g"
 
           # Change wording of project description to avoid reference to JavaScript and Node.js:
           find ./esm -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/a standard library for JavaScript and Node.js, /a standard library /g"

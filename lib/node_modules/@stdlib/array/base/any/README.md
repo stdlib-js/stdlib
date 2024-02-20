@@ -82,7 +82,7 @@ var any = require( '@stdlib/array/base/any' );
 
 var x = bernoulli( 10, 0.1, {
     'dtype': 'int8'
-} );
+});
 // returns <Int8Array>
 
 var out = any( x );
