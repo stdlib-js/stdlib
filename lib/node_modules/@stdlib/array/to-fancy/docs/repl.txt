@@ -14,7 +14,8 @@
     configuration as specified by provided options.
 
     A fancy array supports indexing using positive and negative integers (both
-    numeric literals and strings), Slice instances, and subsequence expressions.
+    numeric literals and strings), Slice instances, subsequence expressions,
+    mask arrays, boolean arrays, and integer arrays.
 
     A fancy array supports all properties and methods of the input array, and,
     thus, a fancy array can be consumed by any API which supports array-like
@@ -77,6 +78,8 @@
         If an array index is not associated with a provided identifier, the
         'get' method should return `null`.
 
+        Default: `{{alias:@stdlib/array/index}}`.
+
     Returns
     -------
     out: Array|TypedArray|Object
@@ -117,6 +120,8 @@
 
         If an array index is not associated with a provided identifier, the
         'get' method should return `null`.
+
+        Default: `{{alias:@stdlib/array/index}}`.
 
     Returns
     -------
