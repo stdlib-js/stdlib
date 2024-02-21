@@ -291,21 +291,34 @@ var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 ### Namespaces
 
-stdlib is comprised of various top-level namespaces (i.e., collections of related functionality united by common themes). For example, to install all math functionality found in the top-level `math` namespace,
+stdlib is comprised of various top-level namespaces (i.e., collections of related functionality united by common themes). For example, to install all time functionality found in the top-level `time` namespace,
 
 <!-- run-disable -->
 
 ```bash
-$ npm install @stdlib/math
+$ npm install @stdlib/time
 ```
 
 Once installed, packages within a top-level namespace can be individually required/imported to minimize load times and decrease bundle sizes. For example, to use `require`
 
 ```javascript
-var sin = require( '@stdlib/math/base/special/sin' );
+var daysInMonth = require( '@stdlib/time/days-in-month' );
 
-var v = sin( 3.14 );
+var num = daysInMonth();
 // returns <number>
+```
+
+To determine the number of days for a particular month and year, provide month and year arguments.
+
+```javascript
+var num = daysInMonth( 2 );
+// returns <number>
+
+num = daysInMonth( 2, 2016 );
+// returns 29
+
+num = daysInMonth( 2, 2017 );
+// returns 28
 ```
 
 and to use `import`
@@ -313,13 +326,18 @@ and to use `import`
 <!-- run-disable -->
 
 ```javascript
-import sin from '@stdlib/math/base/special/sin';
+import daysInMonth from '@stdlib/time/days-in-month';
 
-var v = sin( 3.14 );
-// returns <number>
+var v;
+var i;
+
+for ( i = 0; i < 2021; i++ ) {
+    v = daysInMonth( 'feb', i );
+    console.log( 'In the year %d, February has %d days.', i, v );
+}
 ```
 
-**Note**: installing nested namespaces found within top-level namespaces (e.g., `math/base`) is **not** supported. Consider installing individual packages or the relevant top-level namespace.
+**Note**: installing nested namespaces found within top-level namespaces  is **not** supported. Consider installing individual packages or the relevant top-level namespace.
 
 <a name="install_command_line_utility"></a>
 
