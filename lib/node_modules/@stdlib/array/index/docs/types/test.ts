@@ -132,7 +132,7 @@ import ArrayIndex = require( './index' );
 
 // Attached to the main export is a `get` function which returns array object data...
 {
-	ArrayIndex.get( '0' ); // $ExpectType ArrayObject
+	ArrayIndex.get( '0' ); // $ExpectType IndexArrayObject | null
 }
 
 // The compiler throws an error if the `get` method is provided first argument which is not a string...

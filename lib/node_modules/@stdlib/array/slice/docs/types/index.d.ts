@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, Complex128Array, Complex64Array } from '@stdlib/types/array';
+import { Collection, TypedArray, ComplexTypedArray } from '@stdlib/types/array';
 
 /**
 * Returns a shallow copy of a portion of an array.
@@ -39,274 +39,14 @@ import { Collection, Complex128Array, Complex64Array } from '@stdlib/types/array
 * // returns <Float64Array>[ 1.0, 2.0, 3.0 ]
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
-*
-* var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Float64Array>[ 1.0, 2.0 ]
-*/
-declare function slice( x: Float64Array, start?: number, end?: number ): Float64Array;
-
-/**
-* Returns a shallow copy of a portion of an array.
-*
-* @param x - input array
-* @param start - starting index (inclusive)
-* @param end - ending index (exclusive)
-* @returns output array
-*
-* @example
-* var Float32Array = require( '@stdlib/array/float32' );
-*
-* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
-*
-* var out = slice( x );
-* // returns <Float32Array>[ 1.0, 2.0, 3.0 ]
-*
-* @example
-* var Float32Array = require( '@stdlib/array/float32' );
-*
-* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Float32Array>[ 1.0, 2.0 ]
-*/
-declare function slice( x: Float32Array, start?: number, end?: number ): Float32Array;
-
-/**
-* Returns a shallow copy of a portion of an array.
-*
-* @param x - input array
-* @param start - starting index (inclusive)
-* @param end - ending index (exclusive)
-* @returns output array
-*
-* @example
-* var Int32Array = require( '@stdlib/array/int32' );
-*
-* var x = new Int32Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x );
-* // returns <Int32Array>[ 1, 2, 3 ]
-*
-* @example
-* var Int32Array = require( '@stdlib/array/int32' );
-*
-* var x = new Int32Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Int32Array>[ 1, 2 ]
-*/
-declare function slice( x: Int32Array, start?: number, end?: number ): Int32Array;
-
-/**
-* Returns a shallow copy of a portion of an array.
-*
-* @param x - input array
-* @param start - starting index (inclusive)
-* @param end - ending index (exclusive)
-* @returns output array
-*
-* @example
-* var Int16Array = require( '@stdlib/array/int16' );
-*
-* var x = new Int16Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x );
-* // returns <Int16Array>[ 1, 2, 3 ]
-*
-* @example
-* var Int16Array = require( '@stdlib/array/int16' );
-*
-* var x = new Int16Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Int16Array>[ 1, 2 ]
-*/
-declare function slice( x: Int16Array, start?: number, end?: number ): Int16Array;
-
-/**
-* Returns a shallow copy of a portion of an array.
-*
-* @param x - input array
-* @param start - starting index (inclusive)
-* @param end - ending index (exclusive)
-* @returns output array
-*
-* @example
-* var Int8Array = require( '@stdlib/array/int8' );
-*
-* var x = new Int8Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x );
-* // returns <Int8Array>[ 1, 2, 3 ]
-*
-* @example
-* var Int8Array = require( '@stdlib/array/int8' );
-*
-* var x = new Int8Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Int8Array>[ 1, 2 ]
-*/
-declare function slice( x: Int8Array, start?: number, end?: number ): Int8Array;
-
-/**
-* Returns a shallow copy of a portion of an array.
-*
-* @param x - input array
-* @param start - starting index (inclusive)
-* @param end - ending index (exclusive)
-* @returns output array
-*
-* @example
-* var Uint32Array = require( '@stdlib/array/uint32' );
-*
-* var x = new Uint32Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x );
-* // returns <Uint32Array>[ 1, 2, 3 ]
-*
-* @example
-* var Uint32Array = require( '@stdlib/array/uint32' );
-*
-* var x = new Uint32Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Uint32Array>[ 1, 2 ]
-*/
-declare function slice( x: Uint32Array, start?: number, end?: number ): Uint32Array;
-
-/**
-* Returns a shallow copy of a portion of an array.
-*
-* @param x - input array
-* @param start - starting index (inclusive)
-* @param end - ending index (exclusive)
-* @returns output array
-*
-* @example
-* var Uint16Array = require( '@stdlib/array/uint16' );
-*
-* var x = new Uint16Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x );
-* // returns <Uint16Array>[ 1, 2, 3 ]
-*
-* @example
-* var Uint16Array = require( '@stdlib/array/uint16' );
-*
-* var x = new Uint16Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Uint16Array>[ 1, 2 ]
-*/
-declare function slice( x: Uint16Array, start?: number, end?: number ): Uint16Array;
-
-/**
-* Returns a shallow copy of a portion of an array.
-*
-* @param x - input array
-* @param start - starting index (inclusive)
-* @param end - ending index (exclusive)
-* @returns output array
-*
-* @example
-* var Uint8Array = require( '@stdlib/array/uint8' );
-*
-* var x = new Uint8Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x );
-* // returns <Uint8Array>[ 1, 2, 3 ]
-*
-* @example
-* var Uint8Array = require( '@stdlib/array/uint8' );
-*
-* var x = new Uint8Array( [ 1, 2, 3 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Uint8Array>[ 1, 2 ]
-*/
-declare function slice( x: Uint8Array, start?: number, end?: number ): Uint8Array;
-
-/**
-* Returns a shallow copy of a portion of an array.
-*
-* @param x - input array
-* @param start - starting index (inclusive)
-* @param end - ending index (exclusive)
-* @returns output array
-*
-* @example
-* var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
-*
-* var x = new Uint8ClampedArray( [ 1, 2, 3 ] );
-*
-* var out = slice( x );
-* // returns <Uint8ClampedArray>[ 1, 2, 3 ]
-*
-* @example
-* var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
-*
-* var x = new Uint8ClampedArray( [ 1, 2, 3 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Uint8ClampedArray>[ 1, 2 ]
-*/
-declare function slice( x: Uint8ClampedArray, start?: number, end?: number ): Uint8ClampedArray;
-
-/**
-* Returns a shallow copy of a portion of an array.
-*
-* @param x - input array
-* @param start - starting index (inclusive)
-* @param end - ending index (exclusive)
-* @returns output array
-*
-* @example
-* var Complex128Array = require( '@stdlib/array/complex128' );
-*
-* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-*
-* var out = slice( x );
-* // returns <Complex128Array>
-*
-* @example
-* var Complex128Array = require( '@stdlib/array/complex128' );
-*
-* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Complex128Array>
-*/
-declare function slice( x: Complex128Array, start?: number, end?: number ): Complex128Array;
-
-/**
-* Returns a shallow copy of a portion of an array.
-*
-* @param x - input array
-* @param start - starting index (inclusive)
-* @param end - ending index (exclusive)
-* @returns output array
-*
-* @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 *
 * var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
 * var out = slice( x );
 * // returns <Complex64Array>
-*
-* @example
-* var Complex64Array = require( '@stdlib/array/complex64' );
-*
-* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-*
-* var out = slice( x, 0, 2 );
-* // returns <Complex64Array>
 */
-declare function slice( x: Complex64Array, start?: number, end?: number ): Complex64Array;
+declare function slice<T extends TypedArray | ComplexTypedArray>( x: T, start?: number, end?: number ): T;
 
 /**
 * Returns a shallow copy of a portion of an array.
@@ -317,7 +57,7 @@ declare function slice( x: Complex64Array, start?: number, end?: number ): Compl
 * @returns output array
 *
 * @example
-* var x = [ 1, 2, 3, 4, 5, 6 ];
+* var x = [ 1, 2, 3 ];
 *
 * var out = slice( x );
 * // returns [ 1, 2, 3 ]

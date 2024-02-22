@@ -504,6 +504,8 @@
 "00t",@stdlib/array-full
 "00u",@stdlib/array/incrspace
 "00v",@stdlib/array-incrspace
+"1ry",@stdlib/array/index
+"1rz",@stdlib/array-index
 "00w",@stdlib/array/int16
 "00x",@stdlib/array-int16
 "00y",@stdlib/array/int32
@@ -549,6 +551,8 @@
 "01T",@stdlib/array-shared-buffer
 "1pE",@stdlib/array/slice
 "1pF",@stdlib/array-slice
+"1s0",@stdlib/array/take
+"1s1",@stdlib/array-take
 "01U",@stdlib/array/to-circular-iterator
 "01V",@stdlib/array-to-circular-iterator
 "1rW",@stdlib/array/to-fancy
@@ -6314,6 +6318,8 @@
 "1NN",@stdlib/strided-base-quaternary
 "1NO",@stdlib/strided/base/quinary
 "1NP",@stdlib/strided-base-quinary
+"1s2",@stdlib/strided/base/reinterpret-complex
+"1s3",@stdlib/strided-base-reinterpret-complex
 "1NQ",@stdlib/strided/base/reinterpret-complex128
 "1NR",@stdlib/strided-base-reinterpret-complex128
 "1NS",@stdlib/strided/base/reinterpret-complex64
