@@ -296,29 +296,34 @@ stdlib is comprised of various top-level namespaces (i.e., collections of relate
 <!-- run-disable -->
 
 ```bash
-$ npm install @stdlib/time
+$ npm install @stdlib/string
 ```
 
-Once installed, packages within a top-level namespace can be individually required/imported to minimize load times and decrease bundle sizes. For example, to use `require`
+Once installed, packages within a top-level namespace can be individually required/imported to minimize load times and decrease bundle sizes. 
 
 ```javascript
-var daysInMonth = require( '@stdlib/time/days-in-month' );
+var uppercase = require( '@stdlib/string/uppercase' );
 
-var num = daysInMonth();
-// returns <number>
+var str = uppercase( 'bEEp' );
+// returns 'BEEP'
 ```
-
-To determine the number of days for a particular month and year, provide month and year arguments.
-
 ```javascript
-var num = daysInMonth( 2 );
-// returns <number>
+var startsWith = require( '@stdlib/string/starts-with' );
 
-num = daysInMonth( 2, 2016 );
-// returns 29
+var str = 'To be, or not to be, that is the question.';
 
-num = daysInMonth( 2, 2017 );
-// returns 28
+var bool = startsWith( str, 'To be' );
+// returns true
+
+bool = startsWith( str, 'to be' );
+// returns false
+```
+```javascript
+var removeWords = require( '@stdlib/string/remove-words' );
+
+var str = 'beep boop Foo bar';
+var out = removeWords( str, [ 'boop', 'foo' ] );
+// returns 'beep  Foo bar'
 ```
 
 and to use `import`
@@ -326,18 +331,22 @@ and to use `import`
 <!-- run-disable -->
 
 ```javascript
-import daysInMonth from '@stdlib/time/days-in-month';
+import pascalcase  from '@stdlib/string/pascalcase';
 
-var v;
-var i;
+var out = pascalcase( 'foo bar' );
+// returns 'FooBar'
 
-for ( i = 0; i < 2021; i++ ) {
-    v = daysInMonth( 'feb', i );
-    console.log( 'In the year %d, February has %d days.', i, v );
-}
+out = pascalcase( 'IS_MOBILE' );
+// returns 'IsMobile'
+
+out = pascalcase( 'Hello World!' );
+// returns 'HelloWorld'
+
+out = pascalcase( '--foo-bar--' );
+// returns 'FooBar'
 ```
 
-**Note**: installing nested namespaces found within top-level namespaces  is **not** supported. Consider installing individual packages or the relevant top-level namespace.
+**Note**: installing nested namespaces found within top-level namespaces (..string/lowercase) is **not** supported. Consider installing individual packages or the relevant top-level namespace.
 
 <a name="install_command_line_utility"></a>
 
