@@ -111,13 +111,13 @@ jobs:
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@b1ddad2c994a25fbc81a28b3ec0e368bb2021c50 # v6.0.0
         with:
-          title: 'Update REPL namespace'
+          title: 'docs: update REPL namespace documentation'
           body: |
             This PR
 
-            -   updates the REPL namespace
+            -   updates the REPL namespace documentation
 
-          commit-message: 'feat: update REPL namespace'
+          commit-message: 'docs: update REPL namespace documentation'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           labels: |
