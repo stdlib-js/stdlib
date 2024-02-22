@@ -20,227 +20,10 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex128Array, Complex64Array, DataType } from '@stdlib/types/array';
+import { DataTypeMap } from '@stdlib/types/array';
 
 /**
 * Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'float64' );
-* // returns <Float64Array>
-*/
-declare function empty( length: number, dtype: 'float64' ): Float64Array;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'float32' );
-* // returns <Float32Array>
-*/
-declare function empty( length: number, dtype: 'float32' ): Float32Array;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'complex128' );
-* // returns <Complex128Array>
-*/
-declare function empty( length: number, dtype: 'complex128' ): Complex128Array;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'complex64' );
-* // returns <Complex64Array>
-*/
-declare function empty( length: number, dtype: 'complex64' ): Complex64Array;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'int32' );
-* // returns <Int32Array>
-*/
-declare function empty( length: number, dtype: 'int32' ): Int32Array;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'int16' );
-* // returns <Int16Array>
-*/
-declare function empty( length: number, dtype: 'int16' ): Int16Array;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'int8' );
-* // returns <Int8Array>
-*/
-declare function empty( length: number, dtype: 'int8' ): Int8Array;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'uint32' );
-* // returns <Uint32Array>
-*/
-declare function empty( length: number, dtype: 'uint32' ): Uint32Array;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'uint16' );
-* // returns <Uint16Array>
-*/
-declare function empty( length: number, dtype: 'uint16' ): Uint16Array;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'uint8' );
-* // returns <Uint8Array>
-*/
-declare function empty( length: number, dtype: 'uint8' ): Uint8Array;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns empty array
-*
-* @example
-* var arr = empty( 2, 'uint8c' );
-* // returns <Uint8ClampedArray>
-*/
-declare function empty( length: number, dtype: 'uint8c' ): Uint8ClampedArray;
-
-/**
-* Creates a zero-filled array having a specified length.
-*
-* @param length - array length
-* @param dtype - data type
-* @returns zero-filled array
-*
-* @example
-* var arr = empty( 2, 'generic' );
-* // returns
-*/
-declare function empty( length: number, dtype: 'generic' ): Array<number>;
-
-/**
-* Creates an uninitialized array having a specified length.
-*
-* ## Notes
-*
-* -   In browser environments, the function always returns zero-filled arrays.
-* -   If `dtype` is `'generic'`, the function always returns a zero-filled array.
-* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
 *
 * The function recognizes the following data types:
 *
@@ -257,6 +40,12 @@ declare function empty( length: number, dtype: 'generic' ): Array<number>;
 * -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
 * -   `generic`: generic JavaScript values
 *
+* ## Notes
+*
+* -   In browser environments, the function always returns zero-filled arrays.
+* -   If `dtype` is `'generic'`, the function always returns a zero-filled array.
+* -   In Node.js versions `>=3.0.0`, the underlying memory of returned typed arrays is **not** initialized. Memory contents are unknown and may contain **sensitive** data.
+*
 * @param length - array length
 * @param dtype - data type (default: 'float64')
 * @returns empty array
@@ -269,7 +58,7 @@ declare function empty( length: number, dtype: 'generic' ): Array<number>;
 * var arr = empty( 2, 'float32' );
 * // returns <Float32Array>
 */
-declare function empty( length: number, dtype?: DataType ): Float64Array;
+declare function empty<T extends keyof DataTypeMap<number> = 'float64'>( length: number, dtype?: T ): DataTypeMap<number>[T];
 
 
 // EXPORTS //

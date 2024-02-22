@@ -16,17 +16,14 @@
 * limitations under the License.
 */
 
+/* eslint-disable @typescript-eslint/unified-signatures */
+
 // TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { RealOrComplexTypedArray, DataType, Collection } from '@stdlib/types/array';
+import { Collection, DataTypeMap } from '@stdlib/types/array';
 import { IterableIterator } from '@stdlib/types/iter';
-
-/**
-* Array or typed array.
-*/
-type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
 
 /**
 * Creates a filled array.
@@ -57,7 +54,7 @@ type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
 * var arr = filledarray( 'float32' );
 * // returns <Float32Array>
 */
-declare function filledarray( dtype?: DataType ): ArrayOrTypedArray;
+declare function filledarray<T = any, U extends keyof DataTypeMap<T> = 'float64'>( dtype?: U ): DataTypeMap<any>[U];
 
 /**
 * Creates a filled array having a specified `length`.
@@ -75,7 +72,7 @@ declare function filledarray( dtype?: DataType ): ArrayOrTypedArray;
 * var arr = filledarray( 1.0, 5, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, length: number, dtype?: DataType ): ArrayOrTypedArray;
+declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, length: number, dtype?: U ): DataTypeMap<T>[U];
 
 /**
 * Creates a filled array from another `array`.
@@ -93,7 +90,7 @@ declare function filledarray( value: any, length: number, dtype?: DataType ): Ar
 * var arr = filledarray( 1.0, [ 5.0, -3.0, 2.0 ], 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, array: Collection, dtype?: DataType ): ArrayOrTypedArray;
+declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, array: Collection, dtype?: U ): DataTypeMap<T>[U];
 
 /**
 * Creates a filled array from an iterable.
@@ -121,7 +118,7 @@ declare function filledarray( value: any, array: Collection, dtype?: DataType ):
 * var arr = filledarray( 1.0, it, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, iterable: IterableIterator, dtype?: DataType ): ArrayOrTypedArray;
+declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, iterable: IterableIterator, dtype?: U ): DataTypeMap<T>[U];
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -151,7 +148,7 @@ declare function filledarray( value: any, iterable: IterableIterator, dtype?: Da
 * var arr = filledarray( 1.0, buf, 8, 2, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, length: number, dtype?: DataType ): RealOrComplexTypedArray;
+declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, buffer: ArrayBuffer, byteOffset: number, length: number, dtype?: U ): DataTypeMap<T>[U];
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -180,7 +177,7 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * var arr = filledarray( 1.0, buf, 8, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, dtype?: DataType ): RealOrComplexTypedArray;
+declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, buffer: ArrayBuffer, byteOffset: number, dtype?: U ): DataTypeMap<T>[U];
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -208,7 +205,7 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * var arr = filledarray( 1.0, buf, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, dtype?: DataType ): RealOrComplexTypedArray;
+declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, buffer: ArrayBuffer, dtype?: U ): DataTypeMap<T>[U];
 
 
 // EXPORTS //
