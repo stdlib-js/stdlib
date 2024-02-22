@@ -16,6 +16,7 @@ alias2standalone,"\nalias2standalone( alias:string )\n    Returns the standalone
 aliases,"\naliases( [namespace:string] )\n    Returns a list of standard library aliases.\n"
 allocUnsafe,"\nallocUnsafe( size:integer )\n    Allocates a buffer having a specified number of bytes.\n"
 amskfilter,"\namskfilter( x:Array|TypedArray|Object, mask:Array|TypedArray|Object )\n    Returns a new array by applying a mask to a provided input array.\n"
+amskreject,"\namskreject( x:Array|TypedArray|Object, mask:Array|TypedArray|Object )\n    Returns a new array by applying a mask to a provided input array.\n"
 anans,"\nanans( length:integer[, dtype:string] )\n    Returns an array filled with NaNs and having a specified length.\n"
 anansLike,"\nanansLike( x:TypedArray|Array[, dtype:string] )\n    Returns an array filled with NaNs and having the same length and data type\n    as a provided input array.\n"
 anova1,"\nanova1( x:Array<number>, factor:Array[, options:Object] )\n    Performs a one-way analysis of variance.\n"
