@@ -291,7 +291,7 @@ var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 ### Namespaces
 
-stdlib is comprised of various top-level namespaces (i.e., collections of related functionality united by common themes). For example, to install all time functionality found in the top-level `time` namespace,
+stdlib is comprised of various top-level namespaces (i.e., collections of related functionality united by common themes). For example, to install all time functionality found in the top-level `string` namespace,
 
 <!-- run-disable -->
 
