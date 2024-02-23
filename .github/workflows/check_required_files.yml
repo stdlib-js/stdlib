@@ -21,9 +21,8 @@ name: check_required_files
 
 # Workflow triggers:
 on:
-  # Trigger the workflow when a PR review is requested:
-  pull_request_target:
-    types: [review_requested]
+  # Allow the workflow to be triggered by other workflows
+  workflow_call:
 
 # Global permissions:
 permissions:
@@ -66,23 +65,8 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
-      # Check if the review is requested from the `stdlib-bot` user:
-      - name: 'Check if review is requested from stdlib-bot'
-        id: check-reviewers
-        run: |
-          # Get the list of reviewers:
-          reviewers=$(jq -r '.pull_request.requested_reviewers | .[] | .login' "$GITHUB_EVENT_PATH")
-
-          # Check if the list of reviewers contains the `stdlib-bot` user:
-          if [[ $reviewers == *"stdlib-bot"* ]]; then
-            echo "is_stdlib_bot=true" >> $GITHUB_OUTPUT
-          else
-            echo "is_stdlib_bot=false" >> $GITHUB_OUTPUT
-          fi
-
       # Configure git:
       - name: 'Configure git'
-        if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
@@ -90,7 +74,6 @@ jobs:
 
       # Get list of added files:
       - name: 'Get list of added files'
-        if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
         id: added-files
         run: |
           page=1
@@ -108,7 +91,6 @@ jobs:
 
       # Check whether the pull request contains a new `README.md` file; if not, exit with a non-zero exit code:
       - name: 'Exit if pull request does not contain a new README.md file'
-        if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
         run: |
           if [[ ! "${{ steps.added-files.outputs.files }}" =~ "README.md" ]]; then
             echo "Pull request does not contain a new README.md file."
@@ -117,7 +99,6 @@ jobs:
 
       # Check whether the pull request contains files which are required to be present for all packages:
       - name: 'Check whether the pull request contains files which are required to be present for all packages'
-        if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
         id: check-required-files
         run: |
           # Define a list of required files:
@@ -218,7 +199,6 @@ jobs:
 
       # Create a comment on the pull request informing the user whether the pull request is missing required files:
       - name: 'Create a comment on the pull request informing the user whether the pull request is missing required files'
-        if: steps.check-reviewers.outputs.is_stdlib_bot == 'true'
         # Pin action to full length commit SHA
         uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # v4.0.0
         with:
