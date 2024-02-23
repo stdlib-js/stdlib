@@ -1799,6 +1799,100 @@ A few notes:
 -   If a target array cannot accommodate all values (i.e., the length of source array plus `i` exceeds the target array length), the method throws an error.
 -   If provided a [typed array][@stdlib/array/typed] which shares an [`ArrayBuffer`][@stdlib/array/buffer] with the target array, the method will intelligently copy the source range to the destination range.
 
+<a name="method-slice"></a>
+
+#### Complex128Array.prototype.slice( \[start\[, end]] )
+
+Copies a portion of a typed array to a new typed array.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+var arr = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+
+var out = arr.slice();
+// returns <Complex128Array>
+
+var len = out.length;
+// returns 4
+
+var z = out.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 1.0
+
+var im = imag( z );
+// returns 2.0
+
+z = out.get( len-1 );
+// returns <Complex128>
+
+re = real( z );
+// returns 7.0
+
+im = imag( z );
+// returns 8.0
+```
+
+By default, the method returns a typed array beginning with the first array element. To specify an alternative array index at which to begin, provide a `start` index (inclusive).
+
+```javascript
+var imag = require( '@stdlib/complex/imag' );
+var real = require( '@stdlib/complex/real' );
+
+var arr = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+
+var out = arr.slice( 1 );
+// returns <Complex128Array>
+
+var len = out.length;
+// returns 3
+
+var z = out.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 3.0
+
+var im = imag( z );
+// returns 4.0
+```
+
+By default, the method returns a typed array which includes all array elements after `start`. To limit the number of array elements after `start`, provide an `end` index (exclusive).
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+var arr = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+
+var out = arr.slice( 1, -1 );
+// returns <Complex128Array>
+
+var len = out.length;
+// returns 2
+
+var z = out.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 3.0
+
+var im = imag( z );
+// returns 4.0
+
+z = out.get( len-1 );
+// returns <Complex128>
+
+re = real( z );
+// returns 5.0
+
+im = imag( z );
+// returns 6.0
+```
+
 <a name="method-some"></a>
 
 #### Complex128Array.prototype.some( predicate\[, thisArg] )
