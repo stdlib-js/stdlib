@@ -291,39 +291,21 @@ var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 ### Namespaces
 
-stdlib is comprised of various top-level namespaces (i.e., collections of related functionality united by common themes). For example, to install all string functionality found in the top-level `string` namespace,
+stdlib is comprised of various top-level namespaces (i.e., collections of related functionality united by common themes). For example, to install all math functionality found in the top-level `math` namespace,
 
 <!-- run-disable -->
 
 ```bash
-$ npm install @stdlib/string
+$ npm install @stdlib/math
 ```
 
-Once installed, packages within a top-level namespace can be individually required/imported to minimize load times and decrease bundle sizes. 
+Once installed, packages within a top-level namespace can be individually required/imported to minimize load times and decrease bundle sizes. For example, to use `require`
 
 ```javascript
-var uppercase = require( '@stdlib/string/uppercase' );
+var sin = require( '@stdlib/math/base/special/sin' );
 
-var str = uppercase( 'bEEp' );
-// returns 'BEEP'
-```
-```javascript
-var startsWith = require( '@stdlib/string/starts-with' );
-
-var str = 'To be, or not to be, that is the question.';
-
-var bool = startsWith( str, 'To be' );
-// returns true
-
-bool = startsWith( str, 'to be' );
-// returns false
-```
-```javascript
-var removeWords = require( '@stdlib/string/remove-words' );
-
-var str = 'beep boop Foo bar';
-var out = removeWords( str, [ 'boop', 'foo' ] );
-// returns 'beep  Foo bar'
+var v = sin( 3.14 );
+// returns <number>
 ```
 
 and to use `import`
@@ -331,22 +313,13 @@ and to use `import`
 <!-- run-disable -->
 
 ```javascript
-import pascalcase  from '@stdlib/string/pascalcase';
+import sin from '@stdlib/math/base/special/sin';
 
-var out = pascalcase( 'foo bar' );
-// returns 'FooBar'
-
-out = pascalcase( 'IS_MOBILE' );
-// returns 'IsMobile'
-
-out = pascalcase( 'Hello World!' );
-// returns 'HelloWorld'
-
-out = pascalcase( '--foo-bar--' );
-// returns 'FooBar'
+var v = sin( 3.14 );
+// returns <number>
 ```
 
-**Note**: installing nested namespaces found within top-level namespaces (..string/lowercase) is **not** supported. Consider installing individual packages or the relevant top-level namespace.
+**Note**: installing nested namespaces found within top-level namespaces (e.g., `math/base`) is **not** supported. Consider installing individual packages or the relevant top-level namespace.
 
 <a name="install_command_line_utility"></a>
 
