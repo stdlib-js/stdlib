@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to update years for stdlib copyright notices to the current year.
+#
+# Usage: update_copyright_years file1 [file2 file3 ...]
+#
+# Arguments:
+#
+#   file1       File path.
+#   file2       File path.
+#   file3       File path.
+
+current_year=$(date +"%Y")
+directory_to_scan="${1:-.}"
+
+for file in ${@}; do
+    if [[ ! -f "$file" ]]; then
+        echo "File not found: $file"
+        continue
+    fi
+    echo "Updating copyright notice in $file..."
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        # macOS, where sed requires '' after -i to specify no backup...
+        sed -i '' "s/Copyright (c) [0-9]\{4\} The Stdlib Authors./Copyright \(c\) $current_year The Stdlib Authors./g" "$file"
+    else
+        # Linux and others, no '' required...
+        sed -i "s/Copyright (c) [0-9]\{4\} The Stdlib Authors./Copyright \(c\) $current_year The Stdlib Authors./g" "$file"
+    fi
+done
+
+echo "Copyright notices updated to $current_year."
