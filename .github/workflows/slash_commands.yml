@@ -35,6 +35,11 @@ jobs:
 
     # Run reusable workflow:
     uses: ./.github/workflows/check_required_files.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+      user: ${{ github.event.comment.user.login }}
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
 
   # Define a job for updating copyright header years:
   update_copyright_years:
@@ -44,3 +49,10 @@ jobs:
 
     # Run reusable workflow:
     uses: ./.github/workflows/update_pr_copyright_years.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}

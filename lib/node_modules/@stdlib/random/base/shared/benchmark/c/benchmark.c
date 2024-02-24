@@ -16,18 +16,15 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `random.base`.
-*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
-#include "stdlib/random/base.h"
+#include "stdlib/random/base/shared.h"
 
-#define NAME "random/base"
+#define NAME "random/base/shared"
 #define ITERATIONS 1000000
 #define REPEATS 3
 
@@ -168,7 +165,7 @@ static struct BasePRNGObject * mock_prng_allocate( const int32_t seed ) {
 /**
 * Prints the TAP version.
 */
-void print_version() {
+void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -206,7 +203,7 @@ void print_results( double elapsed ) {
 *
 * @return clock time
 */
-double tic() {
+double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
@@ -217,7 +214,7 @@ double tic() {
 *
 * @return random double
 */
-double rand_double() {
+double rand_double( void ) {
 	int r = rand();
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }
@@ -227,7 +224,7 @@ double rand_double() {
 *
 * @return elapsed time in seconds
 */
-double benchmark1() {
+double benchmark1( void ) {
 	double elapsed;
 	uint64_t v;
 	double t;
@@ -258,7 +255,7 @@ double benchmark1() {
 *
 * @return elapsed time in seconds
 */
-double benchmark2() {
+double benchmark2( void ) {
 	double elapsed;
 	double t;
 	double v;
@@ -289,7 +286,7 @@ double benchmark2() {
 *
 * @return elapsed time in seconds
 */
-double benchmark3() {
+double benchmark3( void ) {
 	double elapsed;
 	uint64_t v;
 	double t;
@@ -321,7 +318,7 @@ double benchmark3() {
 *
 * @return elapsed time in seconds
 */
-double benchmark4() {
+double benchmark4( void ) {
 	double elapsed;
 	uint64_t v;
 	double t;
@@ -353,7 +350,7 @@ double benchmark4() {
 *
 * @return elapsed time in seconds
 */
-double benchmark5() {
+double benchmark5( void ) {
 	double elapsed;
 	double v;
 	double t;
@@ -385,7 +382,7 @@ double benchmark5() {
 *
 * @return elapsed time in seconds
 */
-double benchmark6() {
+double benchmark6( void ) {
 	double elapsed;
 	double v;
 	double t;
@@ -417,7 +414,7 @@ double benchmark6() {
 *
 * @return elapsed time in seconds
 */
-double benchmark7() {
+double benchmark7( void ) {
 	double elapsed;
 	size_t v;
 	double t;
@@ -449,7 +446,7 @@ double benchmark7() {
 *
 * @return elapsed time in seconds
 */
-double benchmark8() {
+double benchmark8( void ) {
 	struct BasePRNGObject *out;
 	double elapsed;
 	double t;
@@ -484,7 +481,7 @@ double benchmark8() {
 *
 * @return elapsed time in seconds
 */
-double benchmark9() {
+double benchmark9( void ) {
 	double elapsed;
 	int8_t status;
 	double t;
@@ -523,7 +520,7 @@ double benchmark9() {
 *
 * @return elapsed time in seconds
 */
-double benchmark10() {
+double benchmark10( void ) {
 	double elapsed;
 	int8_t status;
 	double t;

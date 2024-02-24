@@ -21,83 +21,93 @@
 /**
 * Interface defining `isPositiveFinite` with methods for testing for primitives and objects, respectively.
 */
-interface isPositiveFinite {
+interface IsPositiveFinite {
 	/**
-	* Tests if a value is a non-infinite positive number.
+	* Tests if a value is a positive finite number.
 	*
 	* @param value - value to test
-	* @returns boolean indicating whether value is a non-infinite positive number
+	* @returns boolean indicating whether value is a positive finite number
 	*
+	* @example
 	* var bool = isPositiveFinite( 5.0 );
 	* // returns true
 	*
-	* bool = isPositiveFinite( new Number( 5.0 ) );
+	* @example
+	* var bool = isPositiveFinite( new Number( 5.0 ) );
 	* // returns true
 	*
-	* bool = isPositiveFinite( 3.14 );
+	* @example
+	* var bool = isPositiveFinite( 3.14 );
 	* // returns true
 	*
-	* bool = isPositiveFinite( new Number( 5.0/0.0 ) );
+	* @example
+	* var bool = isPositiveFinite( new Number( 1.0/0.0 ) );
 	* // returns false
 	*
-	* bool = isPositiveFinite( -5.0 );
+	* @example
+	* var bool = isPositiveFinite( -5.0 );
 	* // returns false
 	*
-	* bool = isPositiveFinite( 5.0/0.0 );
+	* @example
+	* var bool = isPositiveFinite( 1.0/0.0 );
 	* // returns false
 	*
-	* bool = isPositiveFinite( null );
+	* @example
+	* var bool = isPositiveFinite( null );
 	* // returns false
 	*/
-	( value: any ): value is number | Number;
+	( value: any ): boolean;
 
 	/**
-	* Tests if a value is a number primitive having a non-infinite positive value.
+	* Tests if a value is a number primitive having a positive finite value.
 	*
 	* @param value - value to test
-	* @returns boolean indicating if a value is a number primitive having a non-infinite positive value
+	* @returns boolean indicating if a value is a number primitive having a positive finite value
 	*
 	* @example
 	* var bool = isPositiveFinite.isPrimitive( 3.0 );
 	* // returns true
 	*
 	* @example
-	* var bool = isPositiveFinite.isPrimitive( 3.0/0.0 );
+	* var bool = isPositiveFinite.isPrimitive( 1.0/0.0 );
 	* // returns true
 	*
 	* @example
 	* var bool = isPositiveFinite.isPrimitive( new Number( 3.0 ) );
 	* // returns false
+	*
 	* @example
-	* var bool = isPositiveFinite.isPrimitive( new Number( 3.0/0.0 ) );
+	* var bool = isPositiveFinite.isPrimitive( new Number( 1.0/0.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): value is number;
+	isPrimitive( value: any ): boolean;
 
 	/**
-	* Tests if a value is a number object having a non-infinite positive value.
+	* Tests if a value is a number object having a positive finite value.
 	*
 	* @param value - value to test
-	* @returns boolean indicating if a value is a number object having a non-infinite positive value
+	* @returns boolean indicating if a value is a number object having a positive finite value
 	*
 	* @example
 	* var bool = isPositiveFinite.isObject( 3.0 );
 	* // returns false
+	*
 	* @example
-	* var bool = isPositiveFinite.isObject( new Number( 3.0/0.0 ));
+	* var bool = isPositiveFinite.isObject( new Number( 1.0/0.0 ) );
 	* // returns false
+	*
 	* @example
 	* var bool = isPositiveFinite.isObject( new Number( 3.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): value is Number;
+	isObject( value: any ): boolean;
 }
 
 /**
-* Tests if a value is a non-infinite positive number.
+* Tests if a value is a positive finite number.
 *
 * @param value - value to test
-* @returns boolean indicating whether value is a non-infinite positive number
+* @returns boolean indicating whether value is a positive finite number
 *
 * @example
 * var bool = isPositiveFinite( 5.0 );
@@ -112,11 +122,11 @@ interface isPositiveFinite {
 * // returns true
 *
 * @example
-* var bool = isPositiveFinite( 5.0/0.0 );
+* var bool = isPositiveFinite( 1.0/0.0 );
 * // returns false
 *
 * @example
-* var bool = isPositiveFinite( new Number( 5.0/0.0 ) );
+* var bool = isPositiveFinite( new Number( 1.0/0.0 ) );
 * // returns false
 *
 * @example
@@ -132,14 +142,14 @@ interface isPositiveFinite {
 * // returns true
 *
 * @example
-* var bool = isPositiveFinite.isPrimitive( 3.0/0.0 );
+* var bool = isPositiveFinite.isPrimitive( 1.0/0.0 );
 * // returns false
 *
 * @example
 * var bool = isPositiveFinite.isObject( 3.0 );
 * // returns false
 */
-declare var isPositiveFinite: isPositiveFinite;
+declare var isPositiveFinite: IsPositiveFinite;
 
 
 // EXPORTS //
