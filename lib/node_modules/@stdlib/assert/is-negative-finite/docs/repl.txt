@@ -10,7 +10,7 @@
     Returns
     -------
     bool: boolean
-        Boolean indicating whether value is a finite negative number.
+        Boolean indicating whether a value is a finite negative number.
 
     Examples
     --------
@@ -24,9 +24,9 @@
     false
     > bool = {{alias}}( null )
     false
-    > bool = {{alias}}( Number.NEGATIVE_INFINITY )
+    > bool = {{alias}}( -1.0/0.0 )
     false
-    > bool = {{alias}}( new Number( Number.NEGATIVE_INFINITY ) )
+    > bool = {{alias}}( new Number( -1.0/0.0 ) )
     false
 
 
@@ -41,7 +41,7 @@
     Returns
     -------
     bool: boolean
-        Boolean indicating whether value is a number primitive having a finite 
+        Boolean indicating whether a value is a number primitive having a finite
         negative value.
 
     Examples
@@ -50,9 +50,9 @@
     true
     > bool = {{alias}}.isPrimitive( new Number( -3.0 ) )
     false
-    > var bool = {{alias}}.isPrimitive( Number.NEGATIVE_INFINITY )
+    > var bool = {{alias}}.isPrimitive( -1.0/0.0 )
     false
-    > bool = {{alias}}.isPrimitive( new Number( Number.NEGATIVE_INFINITY ) )
+    > bool = {{alias}}.isPrimitive( new Number( -1.0/0.0 ) )
     false
 
 
@@ -67,7 +67,7 @@
     Returns
     -------
     bool: boolean
-        Boolean indicating whether value is a number object having a finite
+        Boolean indicating whether a value is a number object having a finite
         negative value.
 
     Examples
@@ -76,9 +76,9 @@
     false
     > bool = {{alias}}.isObject( new Number( -3.0 ) )
     true
-    > bool = {{alias}}.isObject( Number.NEGATIVE_INFINITY )
+    > bool = {{alias}}.isObject( -1.0/0.0 )
     false
-    > bool = {{alias}}.isObject( new Number( Number.NEGATIVE_INFINITY ) )
+    > bool = {{alias}}.isObject( new Number( -1.0/0.0 ) )
     false
 
     See Also

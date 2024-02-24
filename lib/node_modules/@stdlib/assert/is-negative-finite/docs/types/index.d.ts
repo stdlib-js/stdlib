@@ -49,7 +49,7 @@ interface isNegativeFinite {
 	* // returns false
 	*
 	* @example
-	* var bool = isNegativeFinite( Number.NEGATIVE_INFINITY );
+	* var bool = isNegativeFinite( -1.0/0.0 );
 	* // returns false
 	*/
 	( value: number | Number ): value is number | Number;
@@ -74,7 +74,7 @@ interface isNegativeFinite {
 	* Tests if a value is a number object having a negative value.
 	*
 	* @param value - value to test
-	* @returns boolean indicating if a value is a number object having a negative value
+	* @returns boolean indicating if a value is a number object having a finite negative value
 	*
 	* @example
 	* var bool = isNegativeFinite.isObject( -3.0 );
@@ -91,7 +91,7 @@ interface isNegativeFinite {
 * Tests if a value is a negative number.
 *
 * @param value - value to test
-* @returns boolean indicating whether value is a negative number
+* @returns boolean indicating whether value is a finite negative number
 *
 * @example
 * var bool = isNegativeFinite( -5.0 );
@@ -122,11 +122,11 @@ interface isNegativeFinite {
 * // returns true
 *
 * @example
-* var bool = isNegativeFinite.isPrimitive( Number.NEGATIVE_INFINITY );
+* var bool = isNegativeFinite.isPrimitive( -1.0/0.0 );
 * // returns false
 *
 * @example
-* var bool = isNegativeFinite.isObject( new Number( Number.NEGATIVE_INFINITY ) );
+* var bool = isNegativeFinite.isObject( new Number( -1.0/0.0 ) );
 * // returns false
 */
 declare var isNegativeFinite: isNegativeFinite;
