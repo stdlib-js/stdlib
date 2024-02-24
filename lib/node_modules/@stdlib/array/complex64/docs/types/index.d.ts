@@ -196,6 +196,60 @@ type TernaryMapFcn<U> = ( this: U, value: Complex64, index: number, arr: Complex
 type MapFcn<U> = NullaryMapFcn<U> | UnaryMapFcn<U> | BinaryMapFcn<U> | TernaryMapFcn<U>;
 
 /**
+* Reducer function invoked for each element in an array.
+*
+* @returns accumulated result
+*/
+type NullaryReducer<U> = () => U;
+
+/**
+* Reducer function invoked for each element in an array.
+*
+* @param acc - accumulated result
+* @returns accumulated result
+*/
+type UnaryReducer<U> = ( acc: U ) => U;
+
+/**
+* Reducer function invoked for each element in an array.
+*
+* @param acc - accumulated result
+* @param value - current array element
+* @returns accumulated result
+*/
+type BinaryReducer<U> = ( acc: U, value: Complex64 ) => U;
+
+/**
+* Reducer function invoked for each element in an array.
+*
+* @param acc - accumulated result
+* @param value - current array element
+* @param index - current array element index
+* @returns accumulated result
+*/
+type TernaryReducer<U> = ( acc: U, value: Complex64, index: number ) => U;
+
+/**
+* @param acc - accumulated result
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns accumulated result
+*/
+type QuaternaryReducer<U> = ( acc: U, value: Complex64, index: number, arr: Complex64Array ) => U;
+
+/**
+* Reducer function invoked for each element in an array.
+*
+* @param acc - accumulated result
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns accumulated result
+*/
+type Reducer<U> = NullaryReducer<U> | UnaryReducer<U> | BinaryReducer<U> | TernaryReducer<U> | QuaternaryReducer<U>;
+
+/**
 * Class for creating a 64-bit complex number array.
 */
 declare class Complex64Array implements Complex64ArrayInterface {
@@ -812,6 +866,35 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* // returns -2.0
 	*/
 	map<U = unknown>( fcn: MapFcn<U>, thisArg?: ThisParameterType<MapFcn<U>> ): Complex64Array;
+
+	/**
+	* Applies a provided callback function to each element of the array, in order, passing in the return value from the calculation on the preceding element and returning the accumulated result upon completion.
+	*
+	* @param reducer - callback function
+	* @param initialValue - initial value
+	* @returns accumulated result
+	*
+	* @example
+	* var realf = require( '@stdlib/complex/realf' );
+	* var imagf = require( '@stdlib/complex/imagf' );
+	* var caddf = require( '@stdlib/math/base/ops/caddf' );
+	*
+	* var arr = new Complex64Array( 3 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	*
+	* var z = arr.reduce( caddf );
+	* // returns <Complex64>
+	*
+	* var re = realf( z );
+	* // returns 6.0
+	*
+	* var im = imagf( z );
+	* // returns 6.0
+	*/
+	reduce<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
 
 	/**
 	* Reverses an array in-place.
