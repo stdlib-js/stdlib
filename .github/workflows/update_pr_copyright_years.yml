@@ -115,11 +115,6 @@ jobs:
           files=$(echo "$files" | tr '\n' ' ' | sed 's/^ //;s/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
-      # Setup a terminal session:
-      - name: 'Setup upterm session'
-        # Pin action to full length commit SHA
-        uses: lhotari/action-upterm@b0357f23233f5ea6d58947c0c402e0631bab7334 # v1.0.0
-
       # Update the copyright years:
       - name: 'Update copyright years'
         id: update-years
@@ -147,8 +142,8 @@ jobs:
         env:
             REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
             USER_NAME: stdlb-bot
-            BRANCH_NAME: ${{ inputs.branch }}
-            REPO_NAME: ${{ inputs.repository }}
+            BRANCH_NAME: ${{ steps.pr-details.outputs.branch }}
+            REPO_NAME: ${{ steps.pr-details.outputs.repository }}
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
