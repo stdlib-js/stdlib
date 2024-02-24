@@ -117,7 +117,7 @@ jobs:
         id: update-years
         run: |
           files="${{ steps.added-files.outputs.files }}"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/update_copyright_years" $files
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/update_copyright_years" "$files"
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
