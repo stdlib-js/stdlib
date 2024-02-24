@@ -30,14 +30,6 @@ on:
           description: 'PR number'
           required: true
           type: number
-        repository:
-          description: 'Repository name'
-          required: true
-          type: string
-        branch:
-          description: 'PR branch name'
-          required: true
-          type: string
       # Define the secrets accessible by the workflow:
       secrets:
         STDLIB_BOT_GITHUB_TOKEN:
@@ -68,16 +60,33 @@ jobs:
     # Define the sequence of job steps...
     steps:
 
+      # Get PR details:
+      - name: 'Get PR details'
+        id: pr-details
+        run: |
+          pr_response=$(curl -s \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}")
+
+          # Extract the needed details
+          pr_branch=$(echo "$pr_response" | jq -r '.head.ref') # PR's branch
+          pr_repo_full_name=$(echo "$pr_response" | jq -r '.head.repo.full_name') # PR's repo full name
+
+          # Set outputs for the branch and repository
+          echo "branch=$pr_branch" >> $GITHUB_OUTPUT
+          echo "repository=$pr_repo_full_name" >> $GITHUB_OUTPUT
+
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Refers to the branch name of the branch being pushed:
-          ref: ${{ inputs.branch }}
+          ref: ${{ steps.pr-details.outputs.branch }}
 
           # Refers to the repository name:
-          repository: ${{ inputs.repository }}
+          repository: ${{ steps.pr-details.outputs.repository }}
 
           # Token for accessing the repository:
           token: ${{ secrets.REPO_GITHUB_TOKEN }}

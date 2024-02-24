@@ -51,8 +51,6 @@ jobs:
     uses: ./.github/workflows/update_pr_copyright_years.yml
     with:
       pull_request_number: ${{ github.event.issue.number }}
-      repository: ${{ github.event.repository.full_name }}
-      branch: ${{ github.event.issue.pull_request.head.ref }}
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
       STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
