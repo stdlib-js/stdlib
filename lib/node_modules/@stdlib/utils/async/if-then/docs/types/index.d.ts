@@ -24,7 +24,7 @@
 * @param error - encountered error or null
 * @param args - results
 */
-type Callback = ( error: Error | null, ...args: Array<any> ) => void;
+type Callback<T> = ( error: Error | null, ...args: Array<T> ) => void;
 
 /**
 * Predicate callback function.
@@ -66,7 +66,7 @@ type Predicate = ( clbk: PredicateCallback ) => void;
 *
 * @param clbk - callback to invoke upon function completion
 */
-type ResultFunction = ( clbk: Callback ) => void;
+type ResultFunction<T> = ( clbk: Callback<T> ) => void;
 
 /**
 * If a predicate function returns a truthy value, invokes `x`; otherwise, invokes `y`.
@@ -108,7 +108,7 @@ type ResultFunction = ( clbk: Callback ) => void;
 * }
 * ifthenAsync( predicate, x, y, done );
 */
-declare function ifthenAsync( predicate: Predicate, x: ResultFunction, y: ResultFunction, done: Callback ): void;
+declare function ifthenAsync<T, U = T, V = T>( predicate: Predicate, x: ResultFunction<T>, y: ResultFunction<U>, done: Callback<V> ): void;
 
 
 // EXPORTS //
