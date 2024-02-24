@@ -205,3 +205,6 @@ jobs:
 
           # Specify the comment body:
           body: ${{ steps.check-required-files.outputs.comment-body }}
+
+          # GitHub token:
+          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}

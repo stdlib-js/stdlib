@@ -24,6 +24,34 @@ on:
 
   # Allow the workflow to be triggered by other workflows
   workflow_call:
+    # Define the input parameters for the workflow:
+      inputs:
+        pull_request_number:
+          description: 'PR number'
+          required: true
+          type: number
+        repository:
+          description: 'Repository name'
+          required: true
+          type: string
+        branch:
+          description: 'PR branch name'
+          required: true
+          type: string
+      # Define the secrets accessible by the workflow:
+      secrets:
+        STDLIB_BOT_GITHUB_TOKEN:
+          description: 'GitHub token for stdlb-bot'
+          required: true
+        REPO_GITHUB_TOKEN:
+          description: 'GitHub token for accessing the repository'
+          required: true
+        STDLIB_BOT_GPG_PRIVATE_KEY:
+          description: 'GPG private key for stdlb-bot'
+          required: true
+        STDLIB_BOT_GPG_PASSPHRASE:
+          description: 'GPG passphrase for stdlb-bot'
+          required: true
 
 # Workflow jobs:
 jobs:
@@ -46,26 +74,37 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           # Refers to the branch name of the branch being pushed:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ inputs.branch }}
+
+          # Refers to the repository name:
+          repository: ${{ inputs.repository }}
 
           # Token for accessing the repository:
           token: ${{ secrets.REPO_GITHUB_TOKEN }}
 
-      # Get list of changed files:
-      - name: 'Get list of changed files'
-        id: changed-files
-        continue-on-error: true
+      # Get list of added files:
+      - name: 'Get list of added files'
+        id: added-files
         run: |
-          # Get the list of changed files in pull request:
-          ancestor_commit=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
-          files=$(git diff --diff-filter=AM --name-only $ancestor_commit ${{ github.event.pull_request.head.sha }})
+          page=1
+          files=""
+          while true; do
+              new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN
+                 }}" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}/files?page=$page&per_page=100" | jq -r '.[] | select(.status == "added") | .filename')
+              if [ -z "$new_files" ]; then
+                  break
+              fi
+              files="$files $new_files"
+              page=$((page+1))
+          done
+          files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
       # Update the copyright years:
       - name: 'Update copyright years'
         id: update-years
         run: |
-          files="{{ steps.changed-files.outputs.files }}"
+          files="{{ steps.added-files.outputs.files }}"
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/update_copyright_years" $files
 
       # Disable Git hooks:
@@ -88,10 +127,11 @@ jobs:
         env:
             REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
             USER_NAME: stdlb-bot
-            BRANCH_NAME: ${{ github.event.pull_request.head.ref }}
+            BRANCH_NAME: ${{ inputs.branch }}
+            REPO_NAME: ${{ inputs.repository }}
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
           git add .
           git commit -m "chore: update copyright years"
-          git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/stdlib.git" $BRANCH_NAME
+          git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/$REPO_NAME.git" $BRANCH_NAME
