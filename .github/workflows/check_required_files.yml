@@ -97,7 +97,6 @@ jobs:
 
       # Check whether the pull request contains files which are required to be present for all packages:
       - name: 'Check whether the pull request contains files which are required to be present for all packages'
-        id: check-required-files
         run: |
           # Define a list of required files:
           required_files=(
@@ -186,11 +185,8 @@ jobs:
             -- stdlib-bot"
           fi
 
-          # Add the comment body to the workflow output after escaping to preserve newlines:
-          body="${body//'%'/'%25'}"
-          body="${body//$'\n'/'%0A'}"
-          body="${body//$'\r'/'%0D'}"
-          echo "comment-body=${body}" >> $GITHUB_OUTPUT
+          # Write the comment body to a file:
+          echo "${body}" > ./comment-body.txt
 
         shell: bash
         timeout-minutes: 10
@@ -203,8 +199,8 @@ jobs:
           # Specify the issue or pull request number:
           issue-number: ${{ inputs.pull_request_number }}
 
-          # Specify the comment body:
-          body: ${{ steps.check-required-files.outputs.comment-body }}
+          # Specify the comment body path:
+          body-path: ./comment-body.txt
 
           # GitHub token:
           token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
