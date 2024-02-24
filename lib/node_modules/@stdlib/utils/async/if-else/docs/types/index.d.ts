@@ -44,7 +44,7 @@ type PredicateUnary = ( error: Error ) => void;
 * @param error - error object
 * @param bool - condition used to determine whether to invoke callback with `x` or `y`
 */
-type PredicateBinary = ( error: Error, bool: boolean ) => void;
+type PredicateBinary = ( error: Error | null, bool: boolean ) => void;
 
 /**
 * Predicate callback function.
