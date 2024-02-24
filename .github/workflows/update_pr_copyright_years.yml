@@ -69,11 +69,14 @@ jobs:
             -H "Authorization: Bearer $GITHUB_TOKEN" \
             "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}")
 
-          # Extract the needed details
+          # Escape control characters:
+          pr_response=$(echo "$pr_response" | tr -d '\000-\031')
+
+          # Extract the needed details:
           pr_branch=$(echo "$pr_response" | jq -r '.head.ref') # PR's branch
           pr_repo_full_name=$(echo "$pr_response" | jq -r '.head.repo.full_name') # PR's repo full name
 
-          # Set outputs for the branch and repository
+          # Set outputs for the branch and repository:
           echo "branch=$pr_branch" >> $GITHUB_OUTPUT
           echo "repository=$pr_repo_full_name" >> $GITHUB_OUTPUT
 
