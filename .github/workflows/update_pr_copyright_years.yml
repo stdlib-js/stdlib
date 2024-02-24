@@ -66,7 +66,7 @@ jobs:
         run: |
           pr_response=$(curl -s \
             -H "Accept: application/vnd.github.v3+json" \
-            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
             "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}")
 
           # Escape control characters:
