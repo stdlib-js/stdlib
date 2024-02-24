@@ -26,7 +26,7 @@ interface IsNonNegativeFinite {
 	* Tests if a value is a nonnegative finite number.
 	*
 	* @param {*} value - value to test
-	* @returns {boolean} boolean indicating whether value is a nonnegative number
+	* @returns {boolean} boolean indicating whether value is a nonnegative finite number
 	*
 	* @example
 	* var bool = isNonNegativeFinite( 5.0 );
@@ -41,7 +41,7 @@ interface IsNonNegativeFinite {
 	* // returns true
 	*
 	* @example
-	* var bool = isNonNegativeFinite( Infinity );
+	* var bool = isNonNegativeFinite( 1.0/0.0 );
 	* // returns false
 	*
 	* @example
@@ -73,7 +73,7 @@ interface IsNonNegativeFinite {
 	* // returns false
 	*
 	* @example
-	* var bool = isNonNegativeFinite( Infinity );
+	* var bool = isNonNegativeFinite( 1.0/0.0 );
 	* // returns false
 	*/
 	isPrimitive( value: any ): value is number;
@@ -97,7 +97,7 @@ interface IsNonNegativeFinite {
 	* // returns false
 	*
 	* @example
-	* var bool = isNonNegativeFinite( Infinity );
+	* var bool = isNonNegativeFinite( 1.0/0.0 );
 	* // returns false
 	*/
 	isObject( value: any ): value is Number;
@@ -107,7 +107,7 @@ interface IsNonNegativeFinite {
 * Tests if a value is a nonnegative finite number.
 *
 * @param {*} value - value to test
-* @returns {boolean} boolean indicating whether value is a nonnegative number
+* @returns {boolean} boolean indicating whether value is a nonnegative finite number
 *
 * @example
 * var bool = isNonNegativeFinite( 5.0 );
@@ -122,7 +122,7 @@ interface IsNonNegativeFinite {
 * // returns true
 *
 * @example
-* var bool = isNonNegativeFinite( Infinity );
+* var bool = isNonNegativeFinite( 1.0/0.0 );
 * // returns false
 *
 * @example

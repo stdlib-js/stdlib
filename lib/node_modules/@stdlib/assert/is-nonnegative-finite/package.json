@@ -61,7 +61,6 @@
     "numeric",
     "nonnegative",
     "finite",
-    "nonnegativefinite",
     "is",
     "isnumber",
     "isnumeric",
