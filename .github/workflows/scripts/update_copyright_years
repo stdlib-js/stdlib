@@ -30,6 +30,10 @@ current_year=$(date +"%Y")
 directory_to_scan="${1:-.}"
 
 for file in ${@}; do
+    if [[ ! -f "$file" ]]; then
+        echo "File not found: $file"
+        continue
+    fi
     echo "Updating copyright notice in $file..."
     if [[ "$OSTYPE" == "darwin"* ]]; then
         # macOS, where sed requires '' after -i to specify no backup...

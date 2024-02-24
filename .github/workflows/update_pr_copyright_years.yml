@@ -94,6 +94,9 @@ jobs:
           # Token for accessing the repository:
           token: ${{ secrets.REPO_GITHUB_TOKEN }}
 
+          # File path to checkout to:
+          path: './'
+
       # Get list of added files:
       - name: 'Get list of added files'
         id: added-files
