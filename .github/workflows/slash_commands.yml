@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: slash-commands
+name: slash_commands
 
 # Workflow triggers:
 on:
@@ -28,10 +28,19 @@ on:
 jobs:
 
   # Define a job for checking for required files:
-  check-files:
+  check_files:
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && contains(github.event.comment.body, '/stdlib check-files')
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib check-files')
 
     # Run reusable workflow:
     uses: ./.github/workflows/check_required_files.yml
+
+  # Define a job for updating copyright header years:
+  update_copyright_years:
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib update-copyright-years')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/update_pr_copyright_years.yml
