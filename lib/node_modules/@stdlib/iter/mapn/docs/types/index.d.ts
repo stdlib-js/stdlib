@@ -55,7 +55,7 @@ type Callback = ( ...args: Array<any> ) => any;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function transform( x, y ) {
 *     return x + y;
@@ -101,7 +101,7 @@ declare function iterMapN( iter0: Iterator, iter1: Iterator, fcn: Callback, this
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function transform( x, y, z ) {
 *     return x + y + z;
@@ -150,7 +150,7 @@ declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, fc
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function transform( x, y, z, w ) {
 *     return x + y + z + w;
@@ -202,7 +202,7 @@ declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, it
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function transform( x, y, z, w, v ) {
 *     return x + y + z + w + v;
@@ -249,7 +249,7 @@ declare function iterMapN( iter0: Iterator, iter1: Iterator, iter2: Iterator, it
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function transform( x, y ) {
 *     return x + y;

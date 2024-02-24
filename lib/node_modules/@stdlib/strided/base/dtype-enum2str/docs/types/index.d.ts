@@ -25,7 +25,7 @@
 * @returns data type string
 *
 * @example
-* var str2enum = require( `@stdlib/strided/base/dtype-str2enum` );
+* var str2enum = require( '@stdlib/strided/base/dtype-str2enum' );
 *
 * var v = str2enum( 'float64' );
 * // returns <number>

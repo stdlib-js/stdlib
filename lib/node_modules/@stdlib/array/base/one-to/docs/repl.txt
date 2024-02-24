@@ -23,6 +23,34 @@
     > var arr = {{alias}}( 6 )
     [ 1, 2, 3, 4, 5, 6 ]
 
+
+{{alias}}.assign( out, stride, offset )
+    Fills an array with linearly spaced numeric elements which increment by 1
+    starting from one.
+
+    Parameters
+    ----------
+    out: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var out = [ 0, 0, 0, 0, 0, 0 ];
+    > {{alias}}.assign( out, -1, out.length-1 );
+    > out
+    [ 6, 5, 4, 3, 2, 1 ]
+
     See Also
     --------
 

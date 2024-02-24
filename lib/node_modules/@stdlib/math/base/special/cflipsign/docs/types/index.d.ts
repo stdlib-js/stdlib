@@ -30,9 +30,9 @@ import { Complex128 } from '@stdlib/types/complex';
 * @returns result
 *
 * @example
-* var Complex128 = require( `@stdlib/complex/float64` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var Complex128 = require( '@stdlib/complex/float64' );
+* var real = require( '@stdlib/complex/real' );
+* var imag = require( '@stdlib/complex/imag' );
 *
 * var v = cflipsign( new Complex128( -4.2, 5.5 ), -55.0 );
 * // returns <Complex128>

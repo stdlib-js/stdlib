@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import zeros = require( '@stdlib/array/zeros' );
 import random = require( './index' );
 
 
@@ -23,9 +24,8 @@ import random = require( './index' );
 
 // The function returns an array...
 {
-	random( 10, 2, 3 ); // $ExpectType RandomArray
-	random( 10, 1, 2 ); // $ExpectType RandomArray
-	random( 10, 1, 2, {} ); // $ExpectType RandomArray
+	random( 10, -10, 10 ); // $ExpectType RandomArray
+	random( 10, -10, 10, {} ); // $ExpectType RandomArray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -113,6 +113,60 @@ import random = require( './index' );
 	random( 10, -10, 10, {}, {} ); // $ExpectError
 }
 
+// Attached to the main export is an `assign` method which returns an array...
+{
+	const x = zeros( 10, 'float64' );
+
+	random.assign( -10, 10, x ); // $ExpectType RandomArray
+}
+
+// The compiler throws an error if the `assign` method is provided a first argument which is not a number...
+{
+	const x = zeros( 10, 'float64' );
+
+	random.assign( '5', 10, x ); // $ExpectError
+	random.assign( true, 10, x ); // $ExpectError
+	random.assign( false, 10, x ); // $ExpectError
+	random.assign( null, 10, x ); // $ExpectError
+	random.assign( [], 10, x ); // $ExpectError
+	random.assign( {}, 10, x ); // $ExpectError
+	random.assign( ( x: number ): number => x, 10, x ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a second argument which is not a number...
+{
+	const x = zeros( 10, 'float64' );
+
+	random.assign( -10, '5', x ); // $ExpectError
+	random.assign( -10, true, x ); // $ExpectError
+	random.assign( -10, false, x ); // $ExpectError
+	random.assign( -10, null, x ); // $ExpectError
+	random.assign( -10, [], x ); // $ExpectError
+	random.assign( -10, {}, x ); // $ExpectError
+	random.assign( -10, ( x: number ): number => x, x ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a third argument which is not a valid output array...
+{
+	random.assign( -10, 10, '5' ); // $ExpectError
+	random.assign( -10, 10, 5 ); // $ExpectError
+	random.assign( -10, 10, true ); // $ExpectError
+	random.assign( -10, 10, false ); // $ExpectError
+	random.assign( -10, 10, null ); // $ExpectError
+	random.assign( -10, 10, {} ); // $ExpectError
+	random.assign( -10, 10, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
+{
+	const x = zeros( 10, 'float64' );
+
+	random.assign(); // $ExpectError
+	random.assign( x ); // $ExpectError
+	random.assign( x, -10 ); // $ExpectError
+	random.assign( x, -10, 10, {} ); // $ExpectError
+}
+
 // Attached to main export is a `factory` method which returns a function...
 {
 	random.factory( -10, 10 ); // $ExpectType UnaryFunction
@@ -175,14 +229,14 @@ import random = require( './index' );
 	random.factory( -10, 10, { 'prng': null } ); // $ExpectError
 	random.factory( -10, 10, { 'prng': [] } ); // $ExpectError
 	random.factory( -10, 10, { 'prng': {} } ); // $ExpectError
-	random.factory( -10, 10, { 'prng': true ); // $ExpectError
+	random.factory( -10, 10, { 'prng': true } ); // $ExpectError
 
 	random.factory( { 'prng': 123 } ); // $ExpectError
 	random.factory( { 'prng': 'abc' } ); // $ExpectError
 	random.factory( { 'prng': null } ); // $ExpectError
 	random.factory( { 'prng': [] } ); // $ExpectError
 	random.factory( { 'prng': {} } ); // $ExpectError
-	random.factory( { 'prng': true ); // $ExpectError
+	random.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -209,7 +263,7 @@ import random = require( './index' );
 	random.factory( -10, 10, { 'state': null } ); // $ExpectError
 	random.factory( -10, 10, { 'state': [] } ); // $ExpectError
 	random.factory( -10, 10, { 'state': {} } ); // $ExpectError
-	random.factory( -10, 10, { 'state': true ); // $ExpectError
+	random.factory( -10, 10, { 'state': true } ); // $ExpectError
 	random.factory( -10, 10, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	random.factory( { 'state': 123 } ); // $ExpectError
@@ -217,7 +271,7 @@ import random = require( './index' );
 	random.factory( { 'state': null } ); // $ExpectError
 	random.factory( { 'state': [] } ); // $ExpectError
 	random.factory( { 'state': {} } ); // $ExpectError
-	random.factory( { 'state': true ); // $ExpectError
+	random.factory( { 'state': true } ); // $ExpectError
 	random.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

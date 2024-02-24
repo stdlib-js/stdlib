@@ -91,8 +91,8 @@ type InOutShapes = [
 * @param fcn - quinary callback
 *
 * @example
-* var ones2d = require( `@stdlib/array/base/ones2d` );
-* var zeros2d = require( `@stdlib/array/base/zeros2d` );
+* var ones2d = require( '@stdlib/array/base/ones2d' );
+* var zeros2d = require( '@stdlib/array/base/zeros2d' );
 *
 * function add( x, y, z, w, v ) {
 *     return x + y + z + w + v;

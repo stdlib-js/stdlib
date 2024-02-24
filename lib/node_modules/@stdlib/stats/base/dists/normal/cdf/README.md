@@ -26,12 +26,16 @@ limitations under the License.
 
 The [cumulative distribution function][cdf] for a [normal][normal-distribution] random variable is
 
-<!-- <equation class="equation" label="eq:normal_cdf" align="center" raw="center" data-raw-text="F(x;\mu,\sigma) = \frac{1}{2} \left[ 1 + \operatorname{erf}\left( \frac{x-\mu}{\sigma\sqrt{2}} \right) \right]" alt="Cumulative distribution function for a normal distribution."> -->
+<!-- <equation class="equation" label="eq:normal_cdf" align="center" raw="F(x;\mu,\sigma) = \frac{1}{2} \left[ 1 + \operatorname{erf}\left( \frac{x-\mu}{\sigma\sqrt{2}} \right) \right]" alt="Cumulative distribution function for a normal distribution."> -->
 
-<div class="equation" align="center" data-raw-text="center" data-equation="eq:normal_cdf">
+```math
+F(x;\mu,\sigma) = \frac{1}{2} \left[ 1 + \mathop{\mathrm{erf}}\left( \frac{x-\mu}{\sigma\sqrt{2}} \right) \right]
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(x;\mu,\sigma) = \frac{1}{2} \left[ 1 + \operatorname{erf}\left( \frac{x-\mu}{\sigma\sqrt{2}} \right) \right]" data-equation="eq:normal_cdf">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/normal/cdf/docs/img/equation_normal_cdf.svg" alt="Cumulative distribution function for a normal distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 

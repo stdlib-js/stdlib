@@ -29,7 +29,7 @@ import { Complex64Array, Complex128Array } from '@stdlib/types/array';
 * @returns boolean indicating if a value is a complex typed array
 *
 * @example
-* var Complex128Array = require( `@stdlib/array/complex128` );
+* var Complex128Array = require( '@stdlib/array/complex128' );
 *
 * var bool = isComplexTypedArray( new Complex128Array( 10 ) );
 * // returns true

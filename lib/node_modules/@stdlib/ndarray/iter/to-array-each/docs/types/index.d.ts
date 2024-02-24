@@ -37,9 +37,9 @@ type Iterator<T> = TypedIterator<T> | TypedIterableIterator<T>;
 * @returns iterator
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
-* var nditerRows = require( `@stdlib/ndarray/iter/rows` );
+* var array = require( '@stdlib/ndarray/array' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
+* var nditerRows = require( '@stdlib/ndarray/iter/rows' );
 *
 * var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ] );
 * // returns <ndarray>

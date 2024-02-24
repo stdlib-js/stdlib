@@ -30,6 +30,11 @@ on:
       message:
         description: 'Custom deprecation message:'
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow concurrency group:
 concurrency:
 

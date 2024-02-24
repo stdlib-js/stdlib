@@ -43,8 +43,8 @@ type Unary<T, U> = ( value: T ) => U;
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -74,8 +74,8 @@ declare function unarynd<T = unknown, U = unknown>( arrays: [ Array1D<T>, Array1
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -105,8 +105,8 @@ declare function unarynd<T = unknown, U = unknown>( arrays: [ Array2D<T>, Array2
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -136,8 +136,8 @@ declare function unarynd<T = unknown, U = unknown>( arrays: [ Array3D<T>, Array3
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -167,8 +167,8 @@ declare function unarynd<T = unknown, U = unknown>( arrays: [ Array4D<T>, Array4
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -198,8 +198,8 @@ declare function unarynd<T = unknown, U = unknown>( arrays: [ Array5D<T>, Array5
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -229,8 +229,8 @@ declare function unarynd<T = unknown, U = unknown>( arrays: [ Array6D<T>, Array6
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -260,8 +260,8 @@ declare function unarynd<T = unknown, U = unknown>( arrays: [ Array7D<T>, Array7
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -291,8 +291,8 @@ declare function unarynd<T = unknown, U = unknown>( arrays: [ Array8D<T>, Array8
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -322,8 +322,8 @@ declare function unarynd<T = unknown, U = unknown>( arrays: [ Array9D<T>, Array9
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -353,8 +353,8 @@ declare function unarynd<T = unknown, U = unknown>( arrays: [ Array10D<T>, Array
 * @param fcn - unary callback
 *
 * @example
-* var onesnd = require( `@stdlib/array/base/onesnd` );
-* var zerosnd = require( `@stdlib/array/base/zerosnd` );
+* var onesnd = require( '@stdlib/array/base/onesnd' );
+* var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
 * function scale( x ) {
 *     return x * 10.0;

@@ -25,7 +25,7 @@
 * @returns boolean indicating whether value is a Float64Array
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var bool = isFloat64Array( new Float64Array( 10 ) );
 * // returns true

@@ -133,7 +133,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterAbs( randu() );
 	*
@@ -161,7 +161,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterAbs2( randu() );
 	*
@@ -190,7 +190,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAcos( uniform( -1.0, 1.0 ) );
 	*
@@ -219,7 +219,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAcosh( uniform( 1.0, 10.0 ) );
 	*
@@ -247,7 +247,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAcot( uniform( -5.0, 5.0 ) );
 	*
@@ -276,7 +276,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAcoth( uniform( 1.0, 10.0 ) );
 	*
@@ -305,7 +305,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAcovercos( uniform( -2.0, 0.0 ) );
 	*
@@ -334,7 +334,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAcoversin( uniform( 0.0, 2.0 ) );
 	*
@@ -363,7 +363,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAhavercos( uniform( 0.0, 1.0 ) );
 	*
@@ -392,7 +392,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAhaversin( uniform( 0.0, 1.0 ) );
 	*
@@ -421,7 +421,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAsin( uniform( -1.0, 1.0 ) );
 	*
@@ -449,7 +449,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAsinh( uniform( -2.0, 2.0 ) );
 	*
@@ -477,7 +477,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAtan( uniform( -2.0, 2.0 ) );
 	*
@@ -509,7 +509,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAtan2( uniform( -2.0, 2.0 ), uniform( -2.0, 2.0 ) );
 	*
@@ -538,7 +538,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAtanh( uniform( -1.0, 1.0 ) );
 	*
@@ -567,7 +567,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAvercos( uniform( -2.0, 0.0 ) );
 	*
@@ -596,7 +596,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterAversin( uniform( 0.0, 2.0 ) );
 	*
@@ -624,7 +624,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterBesselj0( randu() );
 	*
@@ -652,7 +652,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterBesselj1( randu() );
 	*
@@ -680,7 +680,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterBessely0( randu() );
 	*
@@ -708,7 +708,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterBessely1( randu() );
 	*
@@ -740,7 +740,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterBeta( uniform( 0.0, 2.0 ), uniform( 0.0, 2.0 ) );
 	*
@@ -772,7 +772,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterBetaln( uniform( 0.0, 2.0 ), uniform( 0.0, 2.0 ) );
 	*
@@ -800,7 +800,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterBinet( randu() );
 	*
@@ -828,7 +828,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterCbrt( randu() );
 	*
@@ -856,7 +856,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterCeil( randu() );
 	*
@@ -884,7 +884,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterCeil2( uniform( -100.0, 100.0 ) );
 	*
@@ -912,7 +912,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterCeil10( uniform( -100.0, 100.0 ) );
 	*
@@ -940,7 +940,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterCos( randu() );
 	*
@@ -968,7 +968,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterCosh( uniform( -5.0, 5.0 ) );
 	*
@@ -996,7 +996,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterCosm1( uniform( 0.0, 6.28 ) );
 	*
@@ -1025,7 +1025,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterCospi( randu() );
 	*
@@ -1053,7 +1053,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterCovercos( uniform( 0.0, 6.28 ) );
 	*
@@ -1081,7 +1081,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterCoversin( uniform( 0.0, 6.28 ) );
 	*
@@ -1109,7 +1109,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterDeg2rad( uniform( -360.0, 360.0 ) );
 	*
@@ -1137,7 +1137,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterDigamma( uniform( 0.01, 5.0 ) );
 	*
@@ -1165,7 +1165,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterDiracDelta( randu() );
 	*
@@ -1193,7 +1193,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterEta( randu() );
 	*
@@ -1221,7 +1221,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterEllipe( uniform( -1.0, 1.0 ) );
 	*
@@ -1249,7 +1249,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterEllipk( uniform( -1.0, 1.0 ) );
 	*
@@ -1277,7 +1277,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterErf( randu() );
 	*
@@ -1305,7 +1305,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterErfc( randu() );
 	*
@@ -1334,7 +1334,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterErfcinv( uniform( 0.0, 2.0 ) );
 	*
@@ -1363,7 +1363,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterErfinv( uniform( -1.0, 1.0 ) );
 	*
@@ -1391,7 +1391,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterExp( randu() );
 	*
@@ -1419,7 +1419,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterExp2( uniform( -50.0, 50.0 ) );
 	*
@@ -1447,7 +1447,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterExp10( uniform( -50.0, 50.0 ) );
 	*
@@ -1475,7 +1475,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterExpit( uniform( 0.0, 1.0 ) );
 	*
@@ -1503,7 +1503,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterExpm1( uniform( -5.0, 5.0 ) );
 	*
@@ -1531,7 +1531,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterExpm1rel( uniform( -50.0, 50.0 ) );
 	*
@@ -1559,7 +1559,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterFactorial( randu() );
 	*
@@ -1587,7 +1587,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterFactorialln( randu() );
 	*
@@ -1615,7 +1615,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterFloor( randu() );
 	*
@@ -1643,7 +1643,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterFloor2( uniform( -100.0, 100.0 ) );
 	*
@@ -1671,7 +1671,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterFloor10( uniform( -100.0, 100.0 ) );
 	*
@@ -1699,7 +1699,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterFresnelc( uniform( 0.0, 10.0 ) );
 	*
@@ -1727,7 +1727,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterFresnels( uniform( 0.0, 10.0 ) );
 	*
@@ -1755,7 +1755,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterGamma( randu() );
 	*
@@ -1783,7 +1783,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterGamma1pm1( uniform( -5.0, 5.0 ) );
 	*
@@ -1811,7 +1811,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterGammaln( randu() );
 	*
@@ -1839,7 +1839,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterHacovercos( uniform( 0.0, 6.28 ) );
 	*
@@ -1867,7 +1867,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterHacoversin( uniform( 0.0, 6.28 ) );
 	*
@@ -1895,7 +1895,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterHavercos( uniform( 0.0, 6.28 ) );
 	*
@@ -1923,7 +1923,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterHaversin( uniform( 0.0, 6.28 ) );
 	*
@@ -1951,7 +1951,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterInv( randu() );
 	*
@@ -1979,7 +1979,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterLn( randu() );
 	*
@@ -2012,7 +2012,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterLog( uniform( 0.0, 100.0 ), uniform( 0.0, 10.0 ) );
 	*
@@ -2040,7 +2040,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterLog1mexp( randu() );
 	*
@@ -2068,7 +2068,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterLog1p( randu() );
 	*
@@ -2096,7 +2096,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterLog1pexp( randu() );
 	*
@@ -2124,7 +2124,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterLog2( randu() );
 	*
@@ -2152,7 +2152,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterLog10( randu() );
 	*
@@ -2180,7 +2180,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterLogit( uniform( 0.0, 1.0 ) );
 	*
@@ -2212,7 +2212,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterPow( uniform( 0.0, 2.0 ), uniform( -2.0, 2.0 ) );
 	*
@@ -2240,7 +2240,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterRad2deg( uniform( 0.0, 6.28 ) );
 	*
@@ -2268,7 +2268,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterRamp( randu() );
 	*
@@ -2296,7 +2296,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterZeta( uniform( 1.1, 50.0 ) );
 	*
@@ -2324,7 +2324,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterRound( randu() );
 	*
@@ -2352,7 +2352,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterRound2( uniform( -100.0, 100.0 ) );
 	*
@@ -2380,7 +2380,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterRound10( uniform( -100.0, 100.0 ) );
 	*
@@ -2408,7 +2408,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterRsqrt( randu() );
 	*
@@ -2436,7 +2436,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterSignum( randu() );
 	*
@@ -2464,7 +2464,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterSin( randu() );
 	*
@@ -2492,7 +2492,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterSinc( uniform( -5.0, 5.0 ) );
 	*
@@ -2520,7 +2520,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterSinh( uniform( -5.0, 5.0 ) );
 	*
@@ -2549,7 +2549,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterSinpi( randu() );
 	*
@@ -2577,7 +2577,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterSpence( uniform( 0.0, 100.0 ) );
 	*
@@ -2605,7 +2605,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterSqrt( randu() );
 	*
@@ -2633,7 +2633,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterSqrt1pm1( uniform( 0.0, 100.0 ) );
 	*
@@ -2661,7 +2661,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterTan( uniform( -1.57, 1.57 ) );
 	*
@@ -2689,7 +2689,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterTanh( uniform( -4.0, 4.0 ) );
 	*
@@ -2717,7 +2717,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterTrigamma( uniform( 0.01, 50.0 ) );
 	*
@@ -2745,7 +2745,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var randu = require( `@stdlib/random/iter/randu` );
+	* var randu = require( '@stdlib/random/iter/randu' );
 	*
 	* var iter = ns.iterTrunc( randu() );
 	*
@@ -2773,7 +2773,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterTrunc2( uniform( -100.0, 100.0 ) );
 	*
@@ -2801,7 +2801,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterTrunc10( uniform( -100.0, 100.0 ) );
 	*
@@ -2829,7 +2829,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterVercos( uniform( 0.0, 6.28 ) );
 	*
@@ -2857,7 +2857,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var uniform = require( `@stdlib/random/iter/uniform` );
+	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
 	* var iter = ns.iterVersin( uniform( 0.0, 6.28 ) );
 	*

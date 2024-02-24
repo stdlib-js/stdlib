@@ -1,0 +1,41 @@
+
+{{alias}}( x[, start[, end]] )
+    Returns a shallow copy of a portion of an array.
+
+    If provided an array-like object having a `slice` method, the function
+    defers execution to that method and assumes that the method has the
+    following signature:
+
+      x.slice( start, end )
+
+    If provided an array-like object without a `slice` method, the function
+    copies input array elements to a new generic array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    start: integer (optional)
+        Starting index (inclusive). Default: 0.
+
+    end: integer (optional)
+        Ending index (exclusive). Default: x.length.
+
+    Returns
+    -------
+    out: Array|TypedArray
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3, 4 ] )
+    [ 1, 2, 3, 4 ]
+    > out = {{alias}}( [ 1, 2, 3, 4 ], 1 )
+    [ 2, 3, 4 ]
+    > out = {{alias}}( [ 1, 2, 3, 4 ], 1, 3 )
+    [ 2, 3 ]
+
+    See Also
+    --------
+

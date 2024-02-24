@@ -29,7 +29,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns array (which may include nested arrays)
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var arr = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 * var out = ndarray2array( arr );

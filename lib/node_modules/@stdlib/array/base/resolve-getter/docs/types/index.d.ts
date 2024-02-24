@@ -157,7 +157,7 @@ type GetAccessorArrayLike<T> = ( arr: AccessorArrayLike<T>, idx: number ) => T;
 * @returns accessor function
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var arr = new Float64Array( [ 1, 2, 3, 4 ] );
 *
@@ -174,7 +174,7 @@ declare function resolveGetter( x: Float64Array ): GetFloat64;
 * @returns accessor function
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var arr = new Float32Array( [ 1, 2, 3, 4 ] );
 *
@@ -191,9 +191,9 @@ declare function resolveGetter( x: Float32Array ): GetFloat32;
 * @returns accessor function
 *
 * @example
-* var Complex128Array = require( `@stdlib/array/complex128` );
-* var real = require( `@stdlib/array/real` );
-* var imag = require( `@stdlib/array/imag` );
+* var Complex128Array = require( '@stdlib/array/complex128' );
+* var real = require( '@stdlib/array/real' );
+* var imag = require( '@stdlib/array/imag' );
 *
 * var arr = new Complex128Array( [ 1, 2, 3, 4 ] );
 *
@@ -216,9 +216,9 @@ declare function resolveGetter( x: Complex128Array ): GetComplex128;
 * @returns accessor function
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
-* var realf = require( `@stdlib/array/realf` );
-* var imagf = require( `@stdlib/array/imagf` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
+* var realf = require( '@stdlib/array/realf' );
+* var imagf = require( '@stdlib/array/imagf' );
 *
 * var arr = new Complex64Array( [ 1, 2, 3, 4 ] );
 *
@@ -241,7 +241,7 @@ declare function resolveGetter( x: Complex64Array ): GetComplex64;
 * @returns accessor function
 *
 * @example
-* var Int32Array = require( `@stdlib/array/int32` );
+* var Int32Array = require( '@stdlib/array/int32' );
 *
 * var arr = new Int32Array( [ 1, 2, 3, 4 ] );
 *
@@ -258,7 +258,7 @@ declare function resolveGetter( x: Int32Array ): GetInt32;
 * @returns accessor function
 *
 * @example
-* var Int16Array = require( `@stdlib/array/int16` );
+* var Int16Array = require( '@stdlib/array/int16' );
 *
 * var arr = new Int16Array( [ 1, 2, 3, 4 ] );
 *
@@ -275,7 +275,7 @@ declare function resolveGetter( x: Int16Array ): GetInt16;
 * @returns accessor function
 *
 * @example
-* var Int8Array = require( `@stdlib/array/int8` );
+* var Int8Array = require( '@stdlib/array/int8' );
 *
 * var arr = new Int8Array( [ 1, 2, 3, 4 ] );
 *
@@ -292,7 +292,7 @@ declare function resolveGetter( x: Int8Array ): GetInt8;
 * @returns accessor function
 *
 * @example
-* var Uint32Array = require( `@stdlib/array/uint32` );
+* var Uint32Array = require( '@stdlib/array/uint32' );
 *
 * var arr = new Uint32Array( [ 1, 2, 3, 4 ] );
 *
@@ -309,7 +309,7 @@ declare function resolveGetter( x: Uint32Array ): GetUint32;
 * @returns accessor function
 *
 * @example
-* var Uint16Array = require( `@stdlib/array/uint16` );
+* var Uint16Array = require( '@stdlib/array/uint16' );
 *
 * var arr = new Uint16Array( [ 1, 2, 3, 4 ] );
 *
@@ -326,7 +326,7 @@ declare function resolveGetter( x: Uint16Array ): GetUint16;
 * @returns accessor function
 *
 * @example
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var arr = new Uint8Array( [ 1, 2, 3, 4 ] );
 *
@@ -343,7 +343,7 @@ declare function resolveGetter( x: Uint8Array ): GetUint8;
 * @returns accessor function
 *
 * @example
-* var Uint8ClampedArray = require( `@stdlib/array/uint8c` );
+* var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 *
 * var arr = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
 *

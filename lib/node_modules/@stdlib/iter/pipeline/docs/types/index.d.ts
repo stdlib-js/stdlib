@@ -44,10 +44,10 @@ type PipelineFunction = ( iterator: Iterator ) => any;
 * @returns iterator pipeline
 *
 * @example
-* var randu = require( `@stdlib/random/iter/randu` );
-* var iterSomeBy = require( `@stdlib/iter/some-by` );
-* var iterHead = require( `@stdlib/iter/head` );
-* var iterThunk = require( `@stdlib/iter/pipeline-thunk` );
+* var randu = require( '@stdlib/random/iter/randu' );
+* var iterSomeBy = require( '@stdlib/iter/some-by' );
+* var iterHead = require( '@stdlib/iter/head' );
+* var iterThunk = require( '@stdlib/iter/pipeline-thunk' );
 *
 * function threshold( r ) {
 *     return ( r > 0.95 );

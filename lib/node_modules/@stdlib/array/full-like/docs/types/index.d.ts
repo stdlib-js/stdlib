@@ -32,7 +32,7 @@ import { ComplexLike } from '@stdlib/types/complex';
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float32' );
 * // returns <Float32Array>[ 0.0, 0.0 ]
@@ -51,7 +51,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'float64' ): Float
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -74,7 +74,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'float32' ): Float
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -97,7 +97,7 @@ declare function fullLike( x: AnyArray, value: number | ComplexLike, dtype: 'com
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -116,7 +116,7 @@ declare function fullLike( x: AnyArray, value: number | ComplexLike, dtype: 'com
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -135,7 +135,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'int32' ): Int32Ar
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -154,7 +154,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'int16' ): Int16Ar
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -173,7 +173,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'int8' ): Int8Arra
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0, 0 ]
@@ -192,7 +192,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'uint32' ): Uint32
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -211,7 +211,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'uint16' ): Uint16
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -230,7 +230,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'uint8' ): Uint8Ar
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -249,7 +249,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'uint8c' ): Uint8C
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -283,7 +283,7 @@ declare function fullLike( x: AnyArray, value: any, dtype: 'generic' ): Array<an
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -317,7 +317,7 @@ declare function fullLike( x: Float64Array, value: number, dtype?: DataType ): F
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float32' );
 * // returns <Float32Array>[ 0.0, 0.0 ]
@@ -355,7 +355,7 @@ declare function fullLike( x: Float32Array, value: number, dtype?: DataType ): F
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'complex128' );
 * // returns <Complex128Array>
@@ -393,7 +393,7 @@ declare function fullLike( x: Complex128Array, value: number | ComplexLike, dtyp
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'complex64' );
 * // returns <Complex64Array>
@@ -427,7 +427,7 @@ declare function fullLike( x: Complex64Array, value: number | ComplexLike, dtype
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'int32' );
 * // returns <Int32Array>[ 0, 0 ]
@@ -461,7 +461,7 @@ declare function fullLike( x: Int32Array, value: number, dtype?: DataType ): Int
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'int16' );
 * // returns <Int16Array>[ 0, 0 ]
@@ -495,7 +495,7 @@ declare function fullLike( x: Int16Array, value: number, dtype?: DataType ): Int
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'int8' );
 * // returns <Int8Array>[ 0, 0 ]
@@ -529,7 +529,7 @@ declare function fullLike( x: Int8Array, value: number, dtype?: DataType ): Int8
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'uint32' );
 * // returns <Uint32Array>[ 0, 0 ]
@@ -563,7 +563,7 @@ declare function fullLike( x: Uint32Array, value: number, dtype?: DataType ): Ui
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'uint16' );
 * // returns <Uint16Array>[ 0, 0 ]
@@ -597,7 +597,7 @@ declare function fullLike( x: Uint16Array, value: number, dtype?: DataType ): Ui
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'uint8' );
 * // returns <Uint8Array>[ 0, 0 ]
@@ -631,7 +631,7 @@ declare function fullLike( x: Uint8Array, value: number, dtype?: DataType ): Uin
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'uint8c' );
 * // returns <Uint8ClampedArray>[ 0, 0 ]
@@ -665,7 +665,7 @@ declare function fullLike( x: Uint8ClampedArray, value: number, dtype?: DataType
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'generic' );
 * // returns [ 0, 0 ]
@@ -699,7 +699,7 @@ declare function fullLike( x: Array<any>, value: any, dtype?: DataType ): Array<
 * @returns filled array
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
@@ -708,7 +708,7 @@ declare function fullLike( x: Array<any>, value: any, dtype?: DataType ): Array<
 * // returns <Float64Array>[ 1.0, 1.0 ]
 *
 * @example
-* var zeros = require( `@stdlib/array/zeros` );
+* var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]

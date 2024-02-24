@@ -33,7 +33,7 @@
 * @returns shifted integer
 *
 * @example
-* var toBinaryStringUint32 = require( `@stdlib/number/uint32/base/to-binary-string` );
+* var toBinaryStringUint32 = require( '@stdlib/number/uint32/base/to-binary-string' );
 *
 * var bstr = toBinaryStringUint32( 2147483649 );
 * // returns '10000000000000000000000000000001'

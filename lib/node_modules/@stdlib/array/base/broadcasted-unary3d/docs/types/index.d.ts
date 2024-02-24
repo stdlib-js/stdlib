@@ -79,8 +79,8 @@ type InOutShapes = [
 * @param fcn - unary callback
 *
 * @example
-* var ones3d = require( `@stdlib/array/base/ones3d` );
-* var zeros3d = require( `@stdlib/array/base/zeros3d` );
+* var ones3d = require( '@stdlib/array/base/ones3d' );
+* var zeros3d = require( '@stdlib/array/base/zeros3d' );
 *
 * function scale( x ) {
 *     return x * 10.0;

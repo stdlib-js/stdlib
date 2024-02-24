@@ -25,12 +25,12 @@
 * @returns signed 32-bit integer
 *
 * @example
-* var float64ToUint32 = require( `@stdlib/number/float64/base/to-uint32` );
+* var float64ToUint32 = require( '@stdlib/number/float64/base/to-uint32' );
 * var y = uint32ToInt32( float64ToUint32( 4294967295 ) );
 * // returns -1
 *
 * @example
-* var float64ToUint32 = require( `@stdlib/number/float64/base/to-uint32` );
+* var float64ToUint32 = require( '@stdlib/number/float64/base/to-uint32' );
 * var y = uint32ToInt32( float64ToUint32( 3 ) );
 * // returns 3
 */

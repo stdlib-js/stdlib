@@ -43,7 +43,7 @@ interface Routine {
 	* @param fcn - unary callback
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function scale( x ) {
 	*     return x * 10.0;
@@ -72,7 +72,7 @@ interface Routine {
 	* @param fcn - unary callback
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function scale( x ) {
 	*     return x * 10.0;
@@ -102,7 +102,7 @@ interface Routine {
 * @param fcn - unary callback
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * function scale( x ) {
 *     return x * 10.0;
@@ -120,7 +120,7 @@ interface Routine {
 * // => <Float64Array>[ 10.0, 20.0, 30.0, 40.0, 50.0 ]
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * function scale( x ) {
 *     return x * 10.0;

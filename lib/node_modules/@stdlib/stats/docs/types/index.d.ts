@@ -404,7 +404,7 @@ interface Namespace {
 	* @returns test result object
 	*
 	* @example
-	* var incrspace = require( `@stdlib/array/base/incrspace` );
+	* var incrspace = require( '@stdlib/array/base/incrspace' );
 	*
 	* var a = incrspace( 1, 11, 1 );
 	* var b = incrspace( 7, 21, 1 );

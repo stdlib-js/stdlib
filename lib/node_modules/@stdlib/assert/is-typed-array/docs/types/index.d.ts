@@ -29,7 +29,7 @@ import { TypedArray } from '@stdlib/types/array';
 * @returns boolean indicating if a value is a typed array
 *
 * @example
-* var Int8Array = require( `@stdlib/array/int8` );
+* var Int8Array = require( '@stdlib/array/int8' );
 *
 * var bool = isTypedArray( new Int8Array( 10 ) );
 * // returns true

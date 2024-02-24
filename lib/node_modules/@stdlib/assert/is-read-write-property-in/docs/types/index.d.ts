@@ -26,7 +26,7 @@
 * @returns boolean indicating if an object property is readable and writable
 *
 * @example
-* var defineProperty = require( `@stdlib/utils/define-property` );
+* var defineProperty = require( '@stdlib/utils/define-property' );
 *
 * var obj = {
 *     'boop': true

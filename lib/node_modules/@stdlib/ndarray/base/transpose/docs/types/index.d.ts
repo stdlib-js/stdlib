@@ -29,7 +29,7 @@ import { ndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, in
 * @returns ndarray view
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
 *     'dtype': 'float64'
@@ -60,7 +60,7 @@ declare function transpose( x: float64ndarray ): float64ndarray;
 * @returns ndarray view
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
 *     'dtype': 'float32'
@@ -91,8 +91,8 @@ declare function transpose( x: float32ndarray ): float32ndarray;
 * @returns ndarray view
 *
 * @example
-* var Complex128Array = require( `@stdlib/array/complex128` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var Complex128Array = require( '@stdlib/array/complex128' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buf = new Complex128Array( [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 ] );
 * var x = ndarray( 'complex128', buf, [ 2, 3 ], [ 3, 1 ], 0, 'row-major' );
@@ -119,8 +119,8 @@ declare function transpose( x: complex128ndarray ): complex128ndarray;
 * @returns ndarray view
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buf = new Complex64Array( [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 ] );
 * var x = ndarray( 'complex64', buf, [ 2, 3 ], [ 3, 1 ], 0, 'row-major' );
@@ -147,7 +147,7 @@ declare function transpose( x: complex64ndarray ): complex64ndarray;
 * @returns ndarray view
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
 *     'dtype': 'int32'
@@ -178,7 +178,7 @@ declare function transpose( x: int32ndarray ): int32ndarray;
 * @returns ndarray view
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
 *     'dtype': 'int16'
@@ -209,7 +209,7 @@ declare function transpose( x: int16ndarray ): int16ndarray;
 * @returns ndarray view
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
 *     'dtype': 'int8'
@@ -240,7 +240,7 @@ declare function transpose( x: int8ndarray ): int8ndarray;
 * @returns ndarray view
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
 *     'dtype': 'uint32'
@@ -271,7 +271,7 @@ declare function transpose( x: uint32ndarray ): uint32ndarray;
 * @returns ndarray view
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
 *     'dtype': 'uint16'
@@ -302,7 +302,7 @@ declare function transpose( x: uint16ndarray ): uint16ndarray;
 * @returns ndarray view
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
 *     'dtype': 'uint8'
@@ -333,7 +333,7 @@ declare function transpose( x: uint8ndarray ): uint8ndarray;
 * @returns ndarray view
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
 *     'dtype': 'uint8c'
@@ -364,7 +364,7 @@ declare function transpose( x: uint8cndarray ): uint8cndarray;
 * @returns ndarray view
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
 *     'dtype': 'generic'

@@ -30,7 +30,7 @@
 * @returns a list of own non-enumerable property names
 *
 * @example
-* var defineProperty = require( `@stdlib/utils/define-property` );
+* var defineProperty = require( '@stdlib/utils/define-property' );
 *
 * var obj = {};
 *

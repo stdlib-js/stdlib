@@ -105,7 +105,7 @@ type Callback = Nullary | Unary | Binary | Ternary | Quaternary | Quinary;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function fcn( v ) {
 *     return v;
@@ -141,7 +141,7 @@ declare function iterDedupeBy( iterator: Iterator, fcn: Callback ): Iterator;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * function fcn( v ) {
 *     return v;

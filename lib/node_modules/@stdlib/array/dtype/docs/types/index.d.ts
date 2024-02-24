@@ -29,7 +29,7 @@ import { RealOrComplexTypedArray, Complex128Array, Complex64Array, DataType } fr
 * @returns data type
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var dt = dtype( new Float64Array( [ 1, 2, 3 ] ) );
 * // returns 'float64'
@@ -43,7 +43,7 @@ declare function dtype( value: Float64Array ): 'float64';
 * @returns data type
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var dt = dtype( new Float32Array( [ 1, 2, 3 ] ) );
 * // returns 'float32'
@@ -57,7 +57,7 @@ declare function dtype( value: Float32Array ): 'float32';
 * @returns data type
 *
 * @example
-* var Complex128Array = require( `@stdlib/array/complex128` );
+* var Complex128Array = require( '@stdlib/array/complex128' );
 *
 * var dt = dtype( new Complex128Array( [ 1, 2, 3, 4 ] ) );
 * // returns 'complex128'
@@ -71,7 +71,7 @@ declare function dtype( value: Complex128Array ): 'complex128';
 * @returns data type
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
 *
 * var dt = dtype( new Complex64Array( [ 1, 2, 3, 4 ] ) );
 * // returns 'complex64'
@@ -85,7 +85,7 @@ declare function dtype( value: Complex64Array ): 'complex64';
 * @returns data type
 *
 * @example
-* var Int32Array = require( `@stdlib/array/int32` );
+* var Int32Array = require( '@stdlib/array/int32' );
 *
 * var dt = dtype( new Int32Array( [ 1, 2, 3 ] ) );
 * // returns 'int32'
@@ -99,7 +99,7 @@ declare function dtype( value: Int32Array ): 'int32';
 * @returns data type
 *
 * @example
-* var Int16Array = require( `@stdlib/array/int16` );
+* var Int16Array = require( '@stdlib/array/int16' );
 *
 * var dt = dtype( new Int16Array( [ 1, 2, 3 ] ) );
 * // returns 'int16'
@@ -113,7 +113,7 @@ declare function dtype( value: Int16Array ): 'int16';
 * @returns data type
 *
 * @example
-* var Int8Array = require( `@stdlib/array/int8` );
+* var Int8Array = require( '@stdlib/array/int8' );
 *
 * var dt = dtype( new Int8Array( [ 1, 2, 3 ] ) );
 * // returns 'int8'
@@ -127,7 +127,7 @@ declare function dtype( value: Int8Array ): 'int8';
 * @returns data type
 *
 * @example
-* var Uint32Array = require( `@stdlib/array/uint32` );
+* var Uint32Array = require( '@stdlib/array/uint32' );
 *
 * var dt = dtype( new Uint32Array( [ 1, 2, 3 ] ) );
 * // returns 'uint32'
@@ -141,7 +141,7 @@ declare function dtype( value: Uint32Array ): 'uint32';
 * @returns data type
 *
 * @example
-* var Uint16Array = require( `@stdlib/array/uint16` );
+* var Uint16Array = require( '@stdlib/array/uint16' );
 *
 * var dt = dtype( new Uint16Array( [ 1, 2, 3 ] ) );
 * // returns 'uint16'
@@ -155,7 +155,7 @@ declare function dtype( value: Uint16Array ): 'uint16';
 * @returns data type
 *
 * @example
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var dt = dtype( new Uint8Array( [ 1, 2, 3 ] ) );
 * // returns 'uint8'
@@ -169,7 +169,7 @@ declare function dtype( value: Uint8Array ): 'uint8';
 * @returns data type
 *
 * @example
-* var Uint8ClampedArray = require( `@stdlib/array/uint8c` );
+* var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 *
 * var dt = dtype( new Uint8ClampedArray( [ 1, 2, 3 ] ) );
 * // returns 'uint8c'

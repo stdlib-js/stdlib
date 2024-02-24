@@ -49,7 +49,7 @@ interface IsBooleanArray {
 	* // returns true
 	*
 	* @example
-	* var Boolean = require( `@stdlib/boolean/ctor` );
+	* var Boolean = require( '@stdlib/boolean/ctor' );
 	*
 	* var bool = isBooleanArray.primitives( [ false, new Boolean( true ) ] );
 	* // returns false
@@ -63,13 +63,13 @@ interface IsBooleanArray {
 	* @returns boolean indicating whether value is an array-like object containing only Boolean objects
 	*
 	* @example
-	* var Boolean = require( `@stdlib/boolean/ctor` );
+	* var Boolean = require( '@stdlib/boolean/ctor' );
 	*
 	* var bool = isBooleanArray.objects( [ new Boolean( false ), new Boolean( true ) ] );
 	* // returns true
 	*
 	* @example
-	* var Boolean = require( `@stdlib/boolean/ctor` );
+	* var Boolean = require( '@stdlib/boolean/ctor' );
 	*
 	* var bool = isBooleanArray.objects( [ new Boolean( false ), true ] );
 	* // returns false
@@ -96,7 +96,7 @@ interface IsBooleanArray {
 * // returns true
 *
 * @example
-* var Boolean = require( `@stdlib/boolean/ctor` );
+* var Boolean = require( '@stdlib/boolean/ctor' );
 *
 * var bool = isBooleanArray.objects( [ new Boolean( false ), new Boolean( true ) ] );
 * // returns true

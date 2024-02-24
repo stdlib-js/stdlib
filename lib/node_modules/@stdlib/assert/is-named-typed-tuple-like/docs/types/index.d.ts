@@ -25,7 +25,7 @@
 * @returns boolean indicating if a value is named typed tuple-like
 *
 * @example
-* var namedtypedtuple = require( `@stdlib/utils/named-typed-tuple` );
+* var namedtypedtuple = require( '@stdlib/utils/named-typed-tuple' );
 *
 * var Point = namedtypedtuple( [ 'x', 'y' ] );
 *

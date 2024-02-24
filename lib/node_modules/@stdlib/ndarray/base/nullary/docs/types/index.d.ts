@@ -37,8 +37,8 @@ type Nullary = () => any;
 * @param fcn - nullary callback
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * function fcn() {
 *     return 10.0;

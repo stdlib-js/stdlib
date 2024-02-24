@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealDataType, ComplexDataType, DataType } from '@stdlib/types/array';
+import { RealDataType, ComplexFloatingPointDataType } from '@stdlib/types/array';
 import { ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -61,7 +61,7 @@ declare function minDataType( value: number ): RealDataType;
 * var dt = minDataType( z );
 * // returns 'complex64'
 */
-declare function minDataType( value: ComplexLike ): ComplexDataType;
+declare function minDataType( value: ComplexLike ): ComplexFloatingPointDataType;
 
 /**
 * Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.

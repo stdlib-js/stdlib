@@ -29,7 +29,7 @@ import { SignedIntegerDataType as DataType } from '@stdlib/types/array';
 *
 * @example
 * var list = dtypes();
-* // e.g., returns [ 'int16', 'int32', 'int8' ]
+* // e.g., returns [ 'int16', ... ]
 */
 declare function dtypes(): Array<DataType>;
 

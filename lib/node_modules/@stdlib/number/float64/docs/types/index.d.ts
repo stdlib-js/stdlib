@@ -41,7 +41,7 @@ interface Namespace {
 	* @returns value
 	*
 	* @example
-	* var parseJSON = require( `@stdlib/utils/parse-json` );
+	* var parseJSON = require( '@stdlib/utils/parse-json' );
 	*
 	* var str = '{"type":"float64","value":"NaN"}';
 	*

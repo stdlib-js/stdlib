@@ -103,7 +103,7 @@ type Callback = Nullary | Unary | Binary | Ternary | Quaternary;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var arr = array2iterator( [ 0, 1, 2, 3, 4, 5, 6, 7 ] );
 *
@@ -147,7 +147,7 @@ declare function iterStridedBy( iterator: Iterator, fcn: Callback, offset?: numb
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var arr = array2iterator( [ 0, 1, 2, 3, 4, 5, 6, 7 ] );
 *
@@ -190,7 +190,7 @@ declare function iterStridedBy( iterator: Iterator, fcn: Callback, offset?: numb
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var arr = array2iterator( [ 0, 1, 2, 3, 4, 5, 6, 7 ] );
 *

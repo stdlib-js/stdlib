@@ -24,6 +24,11 @@ on:
   issue_comment:
     types: [created]
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
   scaffold:
@@ -53,7 +58,8 @@ jobs:
       - name: 'Scaffold package'
         if: ${{ contains(github.event.comment.body, 'scaffold') }}
         id: scaffold
-        uses: stdlib-js/scaffold-pkg-pr-action@main
+        # Pin action to full length commit SHA
+        uses: stdlib-js/scaffold-pkg-pr-action@882ef0cbb70c1fb76135b9620232606686c1cb10 # v0.0.1
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -62,7 +68,7 @@ jobs:
       - name: 'Create pull request'
         if: ${{ contains(github.event.comment.body, 'scaffold') }}
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5.0.2
+        uses: peter-evans/create-pull-request@b1ddad2c994a25fbc81a28b3ec0e368bb2021c50 # v6.0.0
         with:
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           commit-message: 'feat: add `${{ steps.scaffold.outputs.alias }}`'

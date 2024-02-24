@@ -85,7 +85,8 @@ jobs:
 
       # Check for broken `src` attribute URLs:
       - name: 'Check `src` attribute URLs'
-        uses: stdlib-js/check-markdown-src-action@main
+        # Pin action to full length commit SHA
+        uses: stdlib-js/check-markdown-src-action@9d9c0883b8c06a04576a146e480ef7937c51cdbf # v2.0.1
         id: results
         with:
           exclude: /path/to/
@@ -115,7 +116,7 @@ jobs:
       # Upload the log files:
       - name: 'Upload log files'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32 # v3.1.3
+        uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
         if: always()
         with:
           # Define a name for the uploaded artifact:
@@ -175,7 +176,7 @@ jobs:
       # Send notification to Slack:
       - name: 'Send notification'
         # Pin action to full length commit SHA
-        uses: 8398a7/action-slack@fbd6aa58ba854a740e11a35d0df80cb5d12101d8 # v3.15.1
+        uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         if: success()
         with:
           status: "${{ env.NOTIFICATION_STATUS }}"

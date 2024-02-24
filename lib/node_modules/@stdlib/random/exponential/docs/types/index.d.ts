@@ -20,13 +20,13 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { FloatDataType, floatndarray, genericndarray, Order, Mode, Shape, ndarray } from '@stdlib/types/ndarray';
+import { RealFloatingPointDataType, floatndarray, genericndarray, Order, Mode, Shape, ndarray } from '@stdlib/types/ndarray';
 import * as random from '@stdlib/types/random';
 
 /**
 * Supported data types.
 */
-type DataType = FloatDataType | 'generic';
+type DataType = RealFloatingPointDataType | 'generic';
 
 /**
 * Output array.
@@ -192,7 +192,7 @@ interface Random extends PRNG {
 	* @returns output array
 	*
 	* @example
-	* var zeros = require( `@stdlib/ndarray/zeros` );
+	* var zeros = require( '@stdlib/ndarray/zeros' );
 	*
 	* var arr = zeros( [ 3, 3 ] );
 	* // returns <ndarray>
@@ -242,7 +242,7 @@ interface Random extends PRNG {
 * // returns <ndarray>
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var arr = zeros( [ 3, 3 ] );
 * // returns <ndarray>

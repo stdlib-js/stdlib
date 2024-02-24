@@ -72,8 +72,8 @@
 * // returns 3.139998651394392e+201
 *
 * @example
-* var PINF = require( `@stdlib/constants/float64/pinf` );
-* var NINF = require( `@stdlib/constants/float64/ninf` );
+* var PINF = require( '@stdlib/constants/float64/pinf' );
+* var NINF = require( '@stdlib/constants/float64/ninf' );
 *
 * var low = 12345678;
 *

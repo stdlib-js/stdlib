@@ -30,7 +30,7 @@ import { Complex64Array } from '@stdlib/types/array';
 * @returns `Float32Array` view
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
 *
 * var x = new Complex64Array( 10 );
 *

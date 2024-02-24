@@ -33,7 +33,7 @@ import { Iterator } from '@stdlib/types/iter';
 * @returns iterator
 *
 * @example
-* var runif = require( `@stdlib/random/iter/uniform` );
+* var runif = require( '@stdlib/random/iter/uniform' );
 *
 * var rand = runif( 0.0, 10.0, {
 *     'iter': 100

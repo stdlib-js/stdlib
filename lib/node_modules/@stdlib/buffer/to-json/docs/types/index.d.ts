@@ -30,7 +30,7 @@ import { Buffer } from 'buffer';
 * @returns JSON representation
 *
 * @example
-* var array2buffer = require( `@stdlib/buffer/from-array` );
+* var array2buffer = require( '@stdlib/buffer/from-array' );
 *
 * var buf = array2buffer( [ 1, 2 ] );
 * // returns <Buffer>

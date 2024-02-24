@@ -60,6 +60,7 @@ The function returns an object having the following properties:
 
 -   **sh**: ordered dimensions.
 -   **sx**: array strides sorted in loop order.
+-   **idx**: dimension indices sorted in loop order.
 
 For all returned arrays, the first element corresponds to the innermost loop, and the last element corresponds to the outermost loop.
 

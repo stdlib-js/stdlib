@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
 * Copies the elements of an array-like object to a new "generic" array.
@@ -34,7 +34,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = copy( x );
 * // returns [ 1, 2, 3 ]
 */
-declare function copy<T = unknown>( x: Collection<T> ): Array<T>;
+declare function copy<T = unknown>( x: Collection<T> | AccessorArrayLike<T> ): Array<T>;
 
 
 // EXPORTS //

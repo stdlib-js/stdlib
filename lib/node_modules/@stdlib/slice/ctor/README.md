@@ -232,9 +232,9 @@ o = s.toJSON();
 
 <!-- Package usage examples. -->
 
-<section class="examples">
-
 * * *
+
+<section class="examples">
 
 ## Examples
 

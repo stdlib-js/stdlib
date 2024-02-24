@@ -31,7 +31,7 @@ interface Routine {
 	* @returns median value
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
@@ -50,7 +50,7 @@ interface Routine {
 	* @returns median value
 	*
 	* @example
-	* var Float32Array = require( `@stdlib/array/float32` );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
@@ -69,7 +69,7 @@ interface Routine {
 * @returns median value
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 *
@@ -77,7 +77,7 @@ interface Routine {
 * // returns 2.0
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 *

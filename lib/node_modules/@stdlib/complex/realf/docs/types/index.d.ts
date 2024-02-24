@@ -29,7 +29,7 @@ import { Complex64 } from '@stdlib/types/complex';
 * @returns real component
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
+* var Complex64 = require( '@stdlib/complex/float32' );
 *
 * var z = new Complex64( 5.0, 3.0 );
 *

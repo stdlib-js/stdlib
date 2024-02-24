@@ -56,7 +56,7 @@ interface Float64ToInt64Bytes {
 	* @returns byte array
 	*
 	* @example
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var out = new Uint8Array( 16 );
 	* var bytes = float64ToInt64Bytes.assign( 1.0, out, 2, 1 );
@@ -80,7 +80,7 @@ interface Float64ToInt64Bytes {
 * // returns <Uint8Array>
 *
 * @example
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var out = new Uint8Array( 16 );
 * var bytes = float64ToInt64Bytes.assign( 1.0, out, 2, 1 );

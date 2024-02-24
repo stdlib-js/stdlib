@@ -35,7 +35,7 @@ import { Iterator } from '@stdlib/types/iter';
 * @returns input iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var it1 = array2iterator( [ 0, 0, 0, 0, 1 ] );
 *

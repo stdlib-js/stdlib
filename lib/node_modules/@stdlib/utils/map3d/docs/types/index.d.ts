@@ -88,8 +88,8 @@ type Callback<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Tern
 * @returns three-dimensional nested array
 *
 * @example
-* var naryFunction = require( `@stdlib/utils/nary-function` );
-* var abs = require( `@stdlib/math/base/special/abs` );
+* var naryFunction = require( '@stdlib/utils/nary-function' );
+* var abs = require( '@stdlib/math/base/special/abs' );
 *
 * var arr = [
 *     [ [ -1, -2, -3 ] ],

@@ -143,7 +143,7 @@ interface ReduceRightAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, acc ) {
 	*     if ( error ) {
@@ -197,7 +197,7 @@ interface ReduceRightAsync {
 	* @throws must provide valid options
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function done( error, acc ) {
 	*     if ( error ) {
@@ -249,7 +249,7 @@ interface ReduceRightAsync {
 	* @returns function which invokes the provided function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( acc, file, next ) {
 	*     var opts = {
@@ -307,7 +307,7 @@ interface ReduceRightAsync {
 	* @returns function which invokes the provided function once for each element in a collection
 	*
 	* @example
-	* var readFile = require( `@stdlib/fs/read-file` );
+	* var readFile = require( '@stdlib/fs/read-file' );
 	*
 	* function read( acc, file, next ) {
 	*     var opts = {
@@ -369,7 +369,7 @@ interface ReduceRightAsync {
 * @throws must provide valid options
 *
 * @example
-* var readFile = require( `@stdlib/fs/read-file` );
+* var readFile = require( '@stdlib/fs/read-file' );
 *
 * function done( error, acc ) {
 *     if ( error ) {

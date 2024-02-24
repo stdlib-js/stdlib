@@ -199,7 +199,7 @@ boo
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/string/remove-first`][@stdlib/string/remove-first]</span><span class="delimiter">: </span><span class="description">remove the first character of a string.</span>
+-   <span class="package-name">[`@stdlib/string/remove-first`][@stdlib/string/remove-first]</span><span class="delimiter">: </span><span class="description">remove the first character(s) of a string.</span>
 
 </section>
 

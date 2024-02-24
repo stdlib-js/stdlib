@@ -29,9 +29,9 @@ import { Complex64 } from '@stdlib/types/complex';
 * @returns result
 *
 * @example
-* var Complex64 = require( `@stdlib/complex/float32` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var Complex64 = require( '@stdlib/complex/float32' );
+* var real = require( '@stdlib/complex/real' );
+* var imag = require( '@stdlib/complex/imag' );
 *
 * var v = cceilf( new Complex64( -1.5, 2.5 ) );
 * // returns <Complex64>

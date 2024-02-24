@@ -20,13 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealDataType, RealTypedArray } from '@stdlib/types/array';
+import { RealAndGenericDataType as DataType, RealTypedArray } from '@stdlib/types/array';
 import * as random from '@stdlib/types/random';
-
-/**
-* Supported data types.
-*/
-type DataType = RealDataType | 'generic';
 
 /**
 * Output array.
@@ -118,13 +113,21 @@ interface PRNG {
 */
 interface UnaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a discrete uniform distribution with minimum support `a` and maximum support `b`.
+	* Returns an array containing pseudorandom numbers drawn from a discrete uniform distribution.
 	*
 	* @param len - array length
 	* @param options - function options
 	* @returns output array
 	*/
 	( len: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a discrete uniform distribution.
+	*
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( out: RandomArray ): RandomArray;
 }
 
 /**
@@ -132,7 +135,7 @@ interface UnaryFunction extends PRNG {
 */
 interface TernaryFunction extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a discrete uniform distribution with minimum support `a` and maximum support `b`.
+	* Returns an array containing pseudorandom numbers drawn from a discrete uniform distribution.
 	*
 	* @param len - array length
 	* @param a - minimum support
@@ -141,14 +144,24 @@ interface TernaryFunction extends PRNG {
 	* @returns output array
 	*/
 	( len: number, a: number, b: number, options?: Options ): RandomArray;
+
+	/**
+	* Fills an array with pseudorandom numbers drawn from a discrete uniform distribution.
+	*
+	* @param a - minimum support
+	* @param b - maximum support
+	* @param out - output array
+	* @returns output array
+	*/
+	assign( a: number, b: number, out: RandomArray ): RandomArray;
 }
 
 /**
-* Interface for generating pseudorandom numbers drawn from a uniform distribution.
+* Interface for generating pseudorandom numbers drawn from a discrete uniform distribution.
 */
 interface Random extends PRNG {
 	/**
-	* Returns an array containing pseudorandom numbers drawn from a discrete uniform distribution with minimum support `a` and maximum support `b`.
+	* Returns an array containing pseudorandom numbers drawn from a discrete uniform distribution.
 	*
 	* @param len - array length
 	* @param a - minimum support
@@ -163,16 +176,37 @@ interface Random extends PRNG {
 	( len: number, a: number, b: number, options?: Options ): RandomArray;
 
 	/**
+	* Fills an array with pseudorandom numbers drawn from a discrete uniform distribution.
+	*
+	* @param a - minimum support
+	* @param b - maximum support
+	* @param out - output array
+	* @returns output array
+	*
+	* @example
+	* var zeros = require( '@stdlib/array/zeros' );
+	*
+	* var x = zeros( 10, 'float64' );
+	* // returns <Float64Array>
+	*
+	* var out = discreteUniform( -10, 10, out );
+	* // returns <Float64Array>
+	*
+	* var bool = ( out === x );
+	* // returns true
+	*/
+	assign( a: number, b: number, out: RandomArray ): RandomArray;
+
+	/**
 	* Returns a function for creating arrays containing pseudorandom numbers drawn from a discrete uniform distribution.
 	*
 	* ## Notes
 	*
-	* -   When provided `a` and `b`, the returned function returns random variates drawn from the specified distribution.
+	* -   When provided distribution parameters, the returned function returns random variates drawn from the specified distribution.
 	*
 	* @param a - minimum support
 	* @param b - maximum support
 	* @param options - function options
-	* @throws `a` must be less than or equal to `b`
 	* @throws must provide a valid state
 	* @returns function for creating arrays
 	*
@@ -196,7 +230,7 @@ interface Random extends PRNG {
 	*
 	* ## Notes
 	*
-	* -   When not provided `a` and `b`, the returned function requires that both `a` and `b` be provided at each invocation.
+	* -   When not provided distribution parameters, the returned function requires that distribution parameters be provided at each invocation.
 	*
 	* @param options - function options
 	* @throws must provide a valid state
@@ -219,7 +253,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Returns an array containing pseudorandom numbers drawn from a discrete uniform distribution with minimum support `a` and maximum support `b`.
+* Returns an array containing pseudorandom numbers drawn from a discrete uniform distribution.
 *
 * @param len - array length
 * @param a - minimum support

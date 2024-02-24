@@ -29,7 +29,7 @@ import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndar
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'float64'
@@ -47,7 +47,7 @@ declare function data( x: float64ndarray ): float64ndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'float32'
@@ -65,7 +65,7 @@ declare function data( x: float32ndarray ): float32ndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'int32'
@@ -83,7 +83,7 @@ declare function data( x: int32ndarray ): int32ndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'int16'
@@ -101,7 +101,7 @@ declare function data( x: int16ndarray ): int16ndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'int8'
@@ -119,7 +119,7 @@ declare function data( x: int8ndarray ): int8ndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'uint32'
@@ -137,7 +137,7 @@ declare function data( x: uint32ndarray ): uint32ndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'uint16'
@@ -155,7 +155,7 @@ declare function data( x: uint16ndarray ): uint16ndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'uint8'
@@ -173,7 +173,7 @@ declare function data( x: uint8ndarray ): uint8ndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'uint8c'
@@ -191,7 +191,7 @@ declare function data( x: uint8cndarray ): uint8cndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'complex128'
@@ -209,7 +209,7 @@ declare function data( x: complex128ndarray ): complex128ndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'complex64'
@@ -227,7 +227,7 @@ declare function data( x: complex64ndarray ): complex64ndarray[ 'data' ];
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'generic'
@@ -245,7 +245,7 @@ declare function data<T = unknown>( x: genericndarray<T> ): genericndarray<T>[ '
 * @returns underlying data buffer
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'float64'

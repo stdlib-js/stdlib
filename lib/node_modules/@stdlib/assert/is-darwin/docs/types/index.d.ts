@@ -22,7 +22,7 @@
 * Boolean indicating if the current process is running on Darwin.
 *
 * @example
-* var PLATFORM = require( `@stdlib/os/platform` );
+* var PLATFORM = require( '@stdlib/os/platform' );
 *
 * if ( IS_DARWIN ) {
 *     console.log( 'Running on Darwin...' );

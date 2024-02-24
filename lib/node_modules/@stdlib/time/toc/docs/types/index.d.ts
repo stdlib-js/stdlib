@@ -32,7 +32,7 @@
 * @returns high resolution time difference
 *
 * @example
-* var tic = require( `@stdlib/time/tic` );
+* var tic = require( '@stdlib/time/tic' );
 *
 * var start = tic();
 * var delta = toc( start );

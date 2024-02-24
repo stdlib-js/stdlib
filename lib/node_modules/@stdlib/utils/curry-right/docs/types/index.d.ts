@@ -19,12 +19,31 @@
 // TypeScript Version: 4.1
 
 /**
+* Utility type to reverse a tuple type.
+*/
+type ReverseTuple<T extends Array<any>> = T extends [infer First, ...infer Rest] ? [...ReverseTuple<Rest>, First] : []; // eslint-disable-line @typescript-eslint/no-explicit-any
+
+/**
+ * Curry function type for curryRight.
+ */
+type CurryRightFunction<
+	TThis,
+	TArgs extends Array<any>, // eslint-disable-line @typescript-eslint/no-explicit-any
+	TReturn
+> = ( this: TThis, ...args: TArgs ) => TReturn;
+
+/**
 * Curry function.
 *
 * @param v - curried function parameter
 * @returns partially applied curry function or curried function result
 */
-type Closure = ( v: any ) => any;
+type Closure<
+	TArgs extends Array<any>, // eslint-disable-line @typescript-eslint/no-explicit-any
+	TReturn
+> = ReverseTuple<TArgs> extends [infer TFirst, ...infer TRest]
+	? ( v: TFirst ) => Closure<ReverseTuple<TRest>, TReturn>
+	: TReturn;
 
 /**
 * Transforms a function into a sequence of functions each accepting a single argument.
@@ -50,7 +69,15 @@ type Closure = ( v: any ) => any;
 * var sum = f( 2 )( 3 );
 * // returns 5
 */
-declare function curryRight( fcn: Function, arity: number, thisArg?: any ): Closure;
+declare function curryRight<
+	TThis extends object,
+	TArgs extends Array<any>, // eslint-disable-line @typescript-eslint/no-explicit-any
+	TReturn
+>(
+	fcn: CurryRightFunction<TThis, TArgs, TReturn>,
+	arity: number,
+	thisArg?: TThis
+): Closure<TArgs, TReturn>;
 
 /**
 * Transforms a function into a sequence of functions each accepting a single argument.
@@ -74,7 +101,14 @@ declare function curryRight( fcn: Function, arity: number, thisArg?: any ): Clos
 * var sum = f( 2 )( 3 );
 * // returns 5
 */
-declare function curryRight( fcn: Function, thisArg?: any ): Closure;
+declare function curryRight<
+	TThis extends object,
+	TArgs extends Array<any>, // eslint-disable-line @typescript-eslint/no-explicit-any
+	TReturn
+>(
+	fcn: CurryRightFunction<TThis, TArgs, TReturn>,
+	thisArg?: TThis
+): Closure<TArgs, TReturn>;
 
 
 // EXPORTS //

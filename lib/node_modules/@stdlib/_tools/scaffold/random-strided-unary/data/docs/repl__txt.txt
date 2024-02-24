@@ -1,0 +1,200 @@
+
+{{alias}}( N, {{PARAM_1}}, {{PARAM_1_STRIDE}}, out, so )
+    {{REPL_TEXT_MAIN_DESC}}
+
+    The `N` and stride parameters determine which elements in the provided
+    strided arrays are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the output strided array is left
+    unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    {{PARAM_1}}: ArrayLikeObject
+        {{REPL_TEXT_PARAM_1_DESC}}
+
+    {{PARAM_1_STRIDE}}: integer
+        Index increment for `{{PARAM_1}}`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Index increment for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias:@stdlib/array/zeros}}( 5, 'generic' );
+    > {{alias}}( out.length, [ {{PARAM_1_VALUE}} ], 0, out, 1 )
+    [...]
+
+
+{{alias}}.ndarray( N, {{PARAM_1}}, {{PARAM_1_STRIDE}}, {{PARAM_1_OFFSET}}, out, so, oo )
+    {{REPL_TEXT_NDARRAY_DESC}}
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    {{PARAM_1}}: ArrayLikeObject
+        {{REPL_TEXT_PARAM_1_DESC}}
+
+    {{PARAM_1_STRIDE}}: integer
+        Index increment for `{{PARAM_1}}`.
+
+    {{PARAM_1_OFFSET}}: integer
+        Starting index for `{{PARAM_1}}`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Index increment for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias:@stdlib/array/zeros}}( 5, 'generic' );
+    > {{alias}}.ndarray( out.length, [ {{PARAM_1_VALUE}} ], 0, 0, out, 1, 0 )
+    [...]
+
+
+{{alias}}.factory( [options] )
+    {{REPL_TEXT_FACTORY_DESC}}
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.prng: Function (optional)
+        Pseudorandom number generator (PRNG) for generating uniformly
+        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
+        the `state` and `seed` options are ignored. In order to seed the
+        returned pseudorandom number generator, one must seed the provided
+        `prng` (assuming the provided `prng` is seedable).
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned generator has exclusive control over
+        its internal state. Default: true.
+
+    Returns
+    -------
+    fcn: Function
+        Function for filling strided arrays.
+
+    Examples
+    --------
+    > var fcn = {{alias}}.factory();
+    > var out = {{alias:@stdlib/array/zeros}}( 5, 'generic' );
+    > fcn( out.length, [ {{PARAM_1_VALUE}} ], 0, out, 1 )
+    [...]
+
+
+{{alias}}.PRNG
+    Underlying pseudorandom number generator.
+
+    Examples
+    --------
+    > var prng = {{alias}}.PRNG;
+
+
+{{alias}}.seed
+    Pseudorandom number generator seed.
+
+    Examples
+    --------
+    > var seed = {{alias}}.seed;
+
+
+{{alias}}.seedLength
+    Length of generator seed.
+
+    Examples
+    --------
+    > var len = {{alias}}.seedLength;
+
+
+{{alias}}.state
+    Generator state.
+
+    Examples
+    --------
+    > var out = {{alias:@stdlib/array/zeros}}( 3, 'generic' );
+    > {{alias}}( out.length, [ {{PARAM_1_VALUE}} ], 0, out, 1 )
+    [...]
+
+    // Get a copy of the current state:
+    > var state = {{alias}}.state
+    <Uint32Array>
+
+    // Advance the generator state:
+    > out = {{alias:@stdlib/array/zeros}}( 3, 'generic' );
+    > {{alias}}( out.length, [ {{PARAM_1_VALUE}} ], 0, out, 1 )
+    [...]
+    > out = {{alias:@stdlib/array/zeros}}( 3, 'generic' );
+    > {{alias}}( out.length, [ {{PARAM_1_VALUE}} ], 0, out, 1 )
+    [...]
+
+    // Set the state:
+    > {{alias}}.state = state;
+
+    // Regenerate previous generated values:
+    > out = {{alias:@stdlib/array/zeros}}( 3, 'generic' );
+    > {{alias}}( out.length, [ {{PARAM_1_VALUE}} ], 0, out, 1 )
+    [...]
+
+
+{{alias}}.stateLength
+    Length of generator state.
+
+    Examples
+    --------
+    > var len = {{alias}}.stateLength;
+
+
+{{alias}}.byteLength
+    Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > var sz = {{alias}}.byteLength;
+
+    See Also
+    --------
+

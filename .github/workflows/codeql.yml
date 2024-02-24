@@ -31,6 +31,11 @@ on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -113,7 +118,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -160,8 +165,8 @@ jobs:
       # Initialize CodeQL tools for scanning:
       - name: 'Initialize CodeQL'
 
-        # FIXME: pin action to full length commit SHA
-        uses: github/codeql-action/init@v2
+        # Pin action to full length commit SHA
+        uses: github/codeql-action/init@382a50a0284c0de445104889a9d6003acb4b3c1d # v2.15.4
 
         with:
           languages: ${{ matrix.language }}
@@ -172,7 +177,7 @@ jobs:
       # Perform CodeQL analysis:
       - name: 'Perform CodeQL Analysis'
 
-        # FIXME: pin action to full length commit SHA
-        uses: github/codeql-action/analyze@v2
+        # Pin action to full length commit SHA
+        uses: github/codeql-action/analyze@382a50a0284c0de445104889a9d6003acb4b3c1d # v2.15.4
         with:
           category: "/language:${{matrix.language}}"

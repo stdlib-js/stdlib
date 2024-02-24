@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Convert
+# convert
 
 > Convert an array to an array of a different data type.
 
@@ -37,16 +37,16 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var convertArray = require( '@stdlib/array/convert' );
+var convert = require( '@stdlib/array/convert' );
 ```
 
-#### convertArray( arr, dtype )
+#### convert( arr, dtype )
 
 Converts an array to an array of a different data type.
 
 ```javascript
 var arr = [ 1.0, 2.0, 3.0 ];
-var out = convertArray( arr, 'float32' );
+var out = convert( arr, 'float32' );
 // returns <Float32Array>[ 1.0, 2.0, 3.0 ]
 ```
 
@@ -89,7 +89,7 @@ The function supports the following data types:
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dtypes = require( '@stdlib/array/dtypes' );
-var convertArray = require( '@stdlib/array/convert' );
+var convert = require( '@stdlib/array/convert' );
 
 // Create a generic array:
 var arr = filledarrayBy( 5, 'generic', discreteUniform( -100, 100 ) );
@@ -101,7 +101,7 @@ var DTYPES = dtypes();
 var out;
 var i;
 for ( i = 0; i < DTYPES.length; i++ ) {
-    out = convertArray( arr, DTYPES[ i ] );
+    out = convert( arr, DTYPES[ i ] );
     console.log( out );
 }
 ```

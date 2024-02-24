@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
 * Returns the Cartesian power.
@@ -40,7 +40,7 @@ import { Collection } from '@stdlib/types/array';
 * var out = cartesianPower( x, 2 );
 * // returns [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
 */
-declare function cartesianPower<T = unknown>( x: Collection<T>, n: number ): Array<Array<T>>;
+declare function cartesianPower<T = unknown>( x: Collection<T> | AccessorArrayLike<T>, n: number ): Array<Array<T>>;
 
 
 // EXPORTS //

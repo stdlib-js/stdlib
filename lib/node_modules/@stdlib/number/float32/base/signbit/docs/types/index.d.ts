@@ -25,12 +25,12 @@
 * @returns boolean indicating if sign bit is on or off
 *
 * @example
-* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var bool = signbitf( toFloat32( 4.0 ) );
 * // returns false
 *
 * @example
-* var toFloat32 = require( `@stdlib/number/float64/base/to-float32` );
+* var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var bool = signbitf( toFloat32( -9.14e-34 ) );
 * // returns true
 *

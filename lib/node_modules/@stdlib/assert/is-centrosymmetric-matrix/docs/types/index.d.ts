@@ -34,7 +34,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns boolean indicating if a value is a centrosymmetric matrix
 *
 * @example
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var arr = ndarray( 'generic', [ 2, 1, 1, 2 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 *

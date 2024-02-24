@@ -12,10 +12,10 @@
 
     Parameters
     ----------
-    dtype1: string (optional)
+    dtype1: any (optional)
         Array data type.
 
-    dtype2: string (optional)
+    dtype2: any (optional)
         Array data type.
 
     Returns

@@ -60,7 +60,7 @@ type Array5D<T> = Array<Array<Array<Array<Array<T>>>>>;
 * @returns output array
 *
 * @example
-* var constantFunction = require( `@stdlib/utils/constant-function` );
+* var constantFunction = require( '@stdlib/utils/constant-function' );
 *
 * var arr = filled5dBy( [ 1, 1, 1, 1, 5 ], constantFunction( 1.0 ) );
 * // returns [ [ [ [ [ 1.0, 1.0, 1.0, 1.0, 1.0 ] ] ] ] ]

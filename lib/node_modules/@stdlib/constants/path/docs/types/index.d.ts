@@ -35,7 +35,7 @@ interface Namespace {
 	* Platform-specific path delimiter.
 	*
 	* @example
-	* var IS_WINDOWS = require( `@stdlib/assert/is-windows` );
+	* var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
 	*
 	* var PATH;
 	* var paths;
@@ -76,7 +76,7 @@ interface Namespace {
 	* Platform-specific path segment separator.
 	*
 	* @example
-	* var IS_WINDOWS = require( `@stdlib/assert/is-windows` );
+	* var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
 	*
 	* var parts;
 	* if ( IS_WINDOWS ) {

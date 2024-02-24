@@ -1,0 +1,32 @@
+
+{{alias}}( x, limit, equalNaNs )
+    Copies elements to a new "generic" array after removing consecutive
+    duplicated values.
+
+    Parameters
+    ----------
+    x: Array
+        Input array.
+
+    limit: integer
+        Number of allowed consecutive duplicates.
+
+    equalNaNs: boolean
+        Boolean indicating whether NaNs should be considered equal.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 1, 2, 3, 3 ];
+    > var out = {{alias}}( x, 1, false )
+    [ 1, 2, 3 ]
+    > var bool = ( out === x )
+    false
+
+    See Also
+    --------
+

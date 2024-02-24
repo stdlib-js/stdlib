@@ -42,7 +42,7 @@ interface Routine {
 	* @param fcn - nullary callback
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function fill() {
 	*     return 3.0;
@@ -70,7 +70,7 @@ interface Routine {
 	* @param fcn - nullary callback
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* function fill() {
 	*     return 3.0;
@@ -99,7 +99,7 @@ interface Routine {
 * @param fcn - nullary callback
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * function fill() {
 *     return 3.0;
@@ -116,7 +116,7 @@ interface Routine {
 * // => <Float64Array>[ 3.0, 3.0, 3.0, 3.0, 3.0 ]
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * function fill() {
 *     return 3.0;

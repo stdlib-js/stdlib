@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexDataType } from '@stdlib/types/complex';
+import { ComplexFloatingPointDataType } from '@stdlib/types/complex';
 
 /**
 * Returns a list of complex number data types.
@@ -31,7 +31,7 @@ import { ComplexDataType } from '@stdlib/types/complex';
 * var list = dtypes();
 * // e.g., returns [ 'complex64', 'complex128' ]
 */
-declare function dtypes(): Array<ComplexDataType>;
+declare function dtypes(): Array<ComplexFloatingPointDataType>;
 
 
 // EXPORTS //

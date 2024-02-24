@@ -25,7 +25,7 @@
 * @returns boolean indicating if a value is ndarray-like
 *
 * @example
-* var ndarray = require( `@stdlib/ndarray/ctor` );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var arr = ndarray( 'generic', [ 0, 0, 0, 0 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 *

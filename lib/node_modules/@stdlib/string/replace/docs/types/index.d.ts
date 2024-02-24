@@ -41,7 +41,7 @@
 * // returns 'Hello Mr. President'
 *
 * @example
-* var capitalize = require( `@stdlib/string/capitalize` );
+* var capitalize = require( '@stdlib/string/capitalize' );
 *
 * var str = 'Oranges and lemons say the bells of St. Clement\'s';
 *

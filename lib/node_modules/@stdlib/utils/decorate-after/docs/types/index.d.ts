@@ -38,7 +38,7 @@ interface Decorator {
 	* @returns decorator
 	*
 	* @example
-	* var abs = require( `@stdlib/math/base/special/abs` );
+	* var abs = require( '@stdlib/math/base/special/abs' );
 	*
 	* function negate( v ) {
 	*     return -v;
@@ -71,7 +71,7 @@ interface Decorator {
 	* @returns decorator
 	*
 	* @example
-	* var abs = require( `@stdlib/math/base/special/abs` );
+	* var abs = require( '@stdlib/math/base/special/abs' );
 	*
 	* function log( v ) {
 	*     console.log( v );
@@ -87,7 +87,7 @@ interface Decorator {
 	* // returns 5
 	*
 	* @example
-	* var abs = require( `@stdlib/math/base/special/abs` );
+	* var abs = require( '@stdlib/math/base/special/abs' );
 	*
 	* function counter() {
 	*     this.count += 1;
@@ -129,7 +129,7 @@ interface Decorator {
 	* @returns decorator
 	*
 	* @example
-	* var abs = require( `@stdlib/math/base/special/abs` );
+	* var abs = require( '@stdlib/math/base/special/abs' );
 	*
 	* function negate( v ) {
 	*     return -v;
@@ -164,7 +164,7 @@ interface Decorator {
 	* @returns decorator
 	*
 	* @example
-	* var abs = require( `@stdlib/math/base/special/abs` );
+	* var abs = require( '@stdlib/math/base/special/abs' );
 	*
 	* function log( v ) {
 	*     console.log( v );
@@ -180,7 +180,7 @@ interface Decorator {
 	* // returns 5
 	*
 	* @example
-	* var abs = require( `@stdlib/math/base/special/abs` );
+	* var abs = require( '@stdlib/math/base/special/abs' );
 	*
 	* function counter() {
 	*     this.count += 1;
@@ -216,7 +216,7 @@ interface Decorator {
 * @returns decorator
 *
 * @example
-* var abs = require( `@stdlib/math/base/special/abs` );
+* var abs = require( '@stdlib/math/base/special/abs' );
 *
 * function negate( v ) {
 *     return -v;
@@ -232,7 +232,7 @@ interface Decorator {
 * // returns -5
 *
 * @example
-* var abs = require( `@stdlib/math/base/special/abs` );
+* var abs = require( '@stdlib/math/base/special/abs' );
 *
 * function negate( v ) {
 *     return -v;

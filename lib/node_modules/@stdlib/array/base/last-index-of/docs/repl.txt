@@ -1,0 +1,50 @@
+
+{{alias}}( x, searchElement, fromIndex, equalNaNs )
+    Returns the index of the last element which equals a provided search
+    element.
+
+    If provided an array-like object having a `lastIndexOf` method and
+    `equalNaNs` is `false`, the function defers execution to that method and
+    assumes that the method has the following signature:
+
+      x.lastIndexOf( searchElement, fromIndex )
+
+    If provided an array-like object without a `lastIndexOf` method or if
+    `equalNaNs` is `true`, the function performs a linear scan and returns
+    immediately upon finding a match.
+
+    If unable to find an element which equals a provided search element, the
+    function returns -1.
+
+    The function scans an input array from the starting index to the beginning
+    of the array (i.e., backward).
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    searchElement: any
+        Search element.
+
+    fromIndex: integer
+        Starting index (inclusive). If less than zero, the starting index is
+        resolved relative to the last array element, with the last array element
+        corresponding to `fromIndex = -1`.
+
+    equalNaNs: boolean
+        Boolean indicating whether NaNs should be considered equal.
+
+    Returns
+    -------
+    out: integer
+        Index or -1.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 3, 3, 4 ], 3, 3, false )
+    2
+
+    See Also
+    --------
+

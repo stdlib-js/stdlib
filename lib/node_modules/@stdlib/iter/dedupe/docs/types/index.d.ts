@@ -40,7 +40,7 @@ type Iterator = Iter | IterableIterator;
 * @returns iterator
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var arr = array2iterator( [ 1, 1, 2, 3, 3 ] );
 * var iter = iterDedupe( arr );

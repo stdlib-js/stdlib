@@ -46,8 +46,8 @@ import chi = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	chi.factory( 2.3 ); // $ExpectType NullaryFunction
-	chi.factory(); // $ExpectType BinaryFunction
-	chi.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	chi.factory(); // $ExpectType UnaryFunction
+	chi.factory( { 'copy': false } ); // $ExpectType UnaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -115,14 +115,14 @@ import chi = require( './index' );
 	chi.factory( 2.3, { 'prng': null } ); // $ExpectError
 	chi.factory( 2.3, { 'prng': [] } ); // $ExpectError
 	chi.factory( 2.3, { 'prng': {} } ); // $ExpectError
-	chi.factory( 2.3, { 'prng': true ); // $ExpectError
+	chi.factory( 2.3, { 'prng': true } ); // $ExpectError
 
 	chi.factory( { 'prng': 123 } ); // $ExpectError
 	chi.factory( { 'prng': 'abc' } ); // $ExpectError
 	chi.factory( { 'prng': null } ); // $ExpectError
 	chi.factory( { 'prng': [] } ); // $ExpectError
 	chi.factory( { 'prng': {} } ); // $ExpectError
-	chi.factory( { 'prng': true ); // $ExpectError
+	chi.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -149,7 +149,7 @@ import chi = require( './index' );
 	chi.factory( 2.3, { 'state': null } ); // $ExpectError
 	chi.factory( 2.3, { 'state': [] } ); // $ExpectError
 	chi.factory( 2.3, { 'state': {} } ); // $ExpectError
-	chi.factory( 2.3, { 'state': true ); // $ExpectError
+	chi.factory( 2.3, { 'state': true } ); // $ExpectError
 	chi.factory( 2.3, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	chi.factory( { 'state': 123 } ); // $ExpectError
@@ -157,7 +157,7 @@ import chi = require( './index' );
 	chi.factory( { 'state': null } ); // $ExpectError
 	chi.factory( { 'state': [] } ); // $ExpectError
 	chi.factory( { 'state': {} } ); // $ExpectError
-	chi.factory( { 'state': true ); // $ExpectError
+	chi.factory( { 'state': true } ); // $ExpectError
 	chi.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

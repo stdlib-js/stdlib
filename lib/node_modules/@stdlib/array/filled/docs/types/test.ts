@@ -21,6 +21,17 @@
 import { IterableIterator } from '@stdlib/types/iter';
 import filledarray = require( './index' );
 
+/**
+* Implements the iterator protocol `next` method.
+*
+* @returns iterator protocol-compliant object
+*/
+function next(): any {
+	return {
+		'value': 1.0,
+		'done': false
+	};
+}
 
 /**
 * Returns an iterator protocol-compliant object.
@@ -35,50 +46,38 @@ function iterator(): IterableIterator {
 	return obj;
 }
 
-/**
-* Implements the iterator protocol `next` method.
-*
-* @returns iterator protocol-compliant object
-*/
-function next(): any {
-	return {
-		'value': 1.0,
-		'done': false
-	};
-}
-
 
 // TESTS //
 
 // The function returns an array or typed array...
 {
-	filledarray(); // $ExpectType ArrayOrTypedArray
-	filledarray( 'float32' ); // $ExpectType ArrayOrTypedArray
+	filledarray(); // $ExpectType Float64Array
+	filledarray( 'float32' ); // $ExpectType Float32Array
 
-	filledarray( 1.0, 10 ); // $ExpectType ArrayOrTypedArray
-	filledarray( 1.0, 10, 'int32' ); // $ExpectType ArrayOrTypedArray
+	filledarray( 1.0, 10 ); // $ExpectType Float64Array
+	filledarray( 1.0, 10, 'int32' ); // $ExpectType Int32Array
 
 	const x = new Float64Array( 10 );
-	filledarray( 1.0, x ); // $ExpectType ArrayOrTypedArray
-	filledarray( 1.0, x, 'uint8' ); // $ExpectType ArrayOrTypedArray
+	filledarray( 1.0, x ); // $ExpectType Float64Array
+	filledarray( 1.0, x, 'uint8' ); // $ExpectType Uint8Array
 
 	const y = [ 2.0, 2.0, 2.0 ];
-	filledarray( 1.0, y ); // $ExpectType ArrayOrTypedArray
-	filledarray( 1.0, y, 'float64' ); // $ExpectType ArrayOrTypedArray
+	filledarray( 1.0, y ); // $ExpectType Float64Array
+	filledarray( 1.0, y, 'float64' ); // $ExpectType Float64Array
 
 	const it = iterator();
-	filledarray( 1.0, it ); // $ExpectType ArrayOrTypedArray
-	filledarray( 1.0, it, 'uint8c' ); // $ExpectType ArrayOrTypedArray
+	filledarray( 1.0, it ); // $ExpectType Float64Array
+	filledarray( 1.0, it, 'uint8c' ); // $ExpectType Uint8ClampedArray
 
 	const buf = new ArrayBuffer( 32 );
-	filledarray( 1.0, buf ); // $ExpectType RealOrComplexTypedArray
-	filledarray( 1.0, buf, 'uint32' ); // $ExpectType RealOrComplexTypedArray
+	filledarray( 1.0, buf ); // $ExpectType Float64Array
+	filledarray( 1.0, buf, 'uint32' ); // $ExpectType Uint32Array
 
-	filledarray( 1.0, buf, 8 ); // $ExpectType RealOrComplexTypedArray
-	filledarray( 1.0, buf, 8, 'uint16' ); // $ExpectType RealOrComplexTypedArray
+	filledarray( 1.0, buf, 8 ); // $ExpectType Float64Array
+	filledarray( 1.0, buf, 8, 'uint16' ); // $ExpectType Uint16Array
 
-	filledarray( 1.0, buf, 8, 2 ); // $ExpectType RealOrComplexTypedArray
-	filledarray( 1.0, buf, 8, 2, 'int16' ); // $ExpectType RealOrComplexTypedArray
+	filledarray( 1.0, buf, 8, 2 ); // $ExpectType Float64Array
+	filledarray( 1.0, buf, 8, 2, 'int16' ); // $ExpectType Int16Array
 }
 
 // The compiler throws an error if the function is not provided a valid length, typed array, array-like object, `ArrayBuffer`, or iterable argument...

@@ -99,10 +99,10 @@ interface Table {
 * @returns list of callbacks
 *
 * @example
-* var signatures = require( `@stdlib/strided/base/binary-dtype-signatures` );
-* var add = require( `@stdlib/math/base/ops/add` );
-* var cadd = require( `@stdlib/math/base/ops/cadd` );
-* var caddf = require( `@stdlib/math/base/ops/caddf` );
+* var signatures = require( '@stdlib/strided/base/binary-dtype-signatures' );
+* var add = require( '@stdlib/math/base/ops/add' );
+* var cadd = require( '@stdlib/math/base/ops/cadd' );
+* var caddf = require( '@stdlib/math/base/ops/caddf' );
 *
 * var dtypes = [
 *     'float64',

@@ -56,6 +56,20 @@ var arr = zeroTo( 5.1 );
 // returns [ 0, 1, 2, 3, 4, 5 ]
 ```
 
+#### zeroTo.assign( out, stride, offset )
+
+Fills an array with linearly spaced numeric elements which increment by 1 starting from zero.
+
+```javascript
+var out = [ 0, 0, 0, 0, 0, 0 ];
+
+var arr = zeroTo.assign( out, -1, out.length-1 );
+// returns [ 5, 4, 3, 2, 1, 0 ]
+
+var bool = ( arr === out );
+// returns true
+```
+
 </section>
 
 <!-- /.usage -->

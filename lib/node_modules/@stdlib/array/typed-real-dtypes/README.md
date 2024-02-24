@@ -20,7 +20,7 @@ limitations under the License.
 
 # Data Types
 
-> List of typed array data types.
+> List of typed array real-valued data types.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,24 +42,12 @@ var dtypes = require( '@stdlib/array/typed-real-dtypes' );
 
 #### dtypes()
 
-Returns a list of typed array data types.
+Returns a list of typed array real-valued data types.
 
 ```javascript
 var out = dtypes();
-// e.g., returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+// e.g., returns [ 'float32', ... ]
 ```
-
-The output `array` contains the following data types:
-
--   `float32`: single-precision floating-point numbers.
--   `float64`: double-precision floating-point numbers.
--   `int16`: signed 16-bit integers.
--   `int32`: signed 32-bit integers.
--   `int8`: signed 8-bit integers.
--   `uint16`: unsigned 16-bit integers.
--   `uint32`: unsigned 32-bit integers.
--   `uint8`: unsigned 8-bit integers.
--   `uint8c`: unsigned clamped 8-bit integers.
 
 </section>
 

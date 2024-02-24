@@ -46,8 +46,8 @@ import exponential = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	exponential.factory( 2.3 ); // $ExpectType NullaryFunction
-	exponential.factory(); // $ExpectType BinaryFunction
-	exponential.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	exponential.factory(); // $ExpectType UnaryFunction
+	exponential.factory( { 'copy': false } ); // $ExpectType UnaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -115,14 +115,14 @@ import exponential = require( './index' );
 	exponential.factory( 2.3, { 'prng': null } ); // $ExpectError
 	exponential.factory( 2.3, { 'prng': [] } ); // $ExpectError
 	exponential.factory( 2.3, { 'prng': {} } ); // $ExpectError
-	exponential.factory( 2.3, { 'prng': true ); // $ExpectError
+	exponential.factory( 2.3, { 'prng': true } ); // $ExpectError
 
 	exponential.factory( { 'prng': 123 } ); // $ExpectError
 	exponential.factory( { 'prng': 'abc' } ); // $ExpectError
 	exponential.factory( { 'prng': null } ); // $ExpectError
 	exponential.factory( { 'prng': [] } ); // $ExpectError
 	exponential.factory( { 'prng': {} } ); // $ExpectError
-	exponential.factory( { 'prng': true ); // $ExpectError
+	exponential.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -149,7 +149,7 @@ import exponential = require( './index' );
 	exponential.factory( 2.3, { 'state': null } ); // $ExpectError
 	exponential.factory( 2.3, { 'state': [] } ); // $ExpectError
 	exponential.factory( 2.3, { 'state': {} } ); // $ExpectError
-	exponential.factory( 2.3, { 'state': true ); // $ExpectError
+	exponential.factory( 2.3, { 'state': true } ); // $ExpectError
 	exponential.factory( 2.3, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	exponential.factory( { 'state': 123 } ); // $ExpectError
@@ -157,7 +157,7 @@ import exponential = require( './index' );
 	exponential.factory( { 'state': null } ); // $ExpectError
 	exponential.factory( { 'state': [] } ); // $ExpectError
 	exponential.factory( { 'state': {} } ); // $ExpectError
-	exponential.factory( { 'state': true ); // $ExpectError
+	exponential.factory( { 'state': true } ); // $ExpectError
 	exponential.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

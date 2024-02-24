@@ -29,9 +29,9 @@ import { MultiSlice } from '@stdlib/types/slice';
 * @returns slice shape
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var MultiSlice = require( `@stdlib/slice/multi` );
-* var normalizeMultiSlice = require( `@stdlib/slice/base/normalize-multi-slice` );
+* var Slice = require( '@stdlib/slice/ctor' );
+* var MultiSlice = require( '@stdlib/slice/multi' );
+* var normalizeMultiSlice = require( '@stdlib/slice/base/normalize-multi-slice' );
 *
 * var s = new MultiSlice( new Slice( 2, null, 1 ), null, 10 );
 *
@@ -45,9 +45,9 @@ import { MultiSlice } from '@stdlib/types/slice';
 * // returns [ 3, 10, 1 ]
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var MultiSlice = require( `@stdlib/slice/multi` );
-* var normalizeMultiSlice = require( `@stdlib/slice/base/normalize-multi-slice` );
+* var Slice = require( '@stdlib/slice/ctor' );
+* var MultiSlice = require( '@stdlib/slice/multi' );
+* var normalizeMultiSlice = require( '@stdlib/slice/base/normalize-multi-slice' );
 *
 * var s = new MultiSlice( null, new Slice( -1, 3, -2 ) );
 *
@@ -61,9 +61,9 @@ import { MultiSlice } from '@stdlib/types/slice';
 * // returns [ 5, 6 ]
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var MultiSlice = require( `@stdlib/slice/multi` );
-* var normalizeMultiSlice = require( `@stdlib/slice/base/normalize-multi-slice` );
+* var Slice = require( '@stdlib/slice/ctor' );
+* var MultiSlice = require( '@stdlib/slice/multi' );
+* var normalizeMultiSlice = require( '@stdlib/slice/base/normalize-multi-slice' );
 *
 * var s = new MultiSlice( 1, new Slice( 0, 0, 1 ) );
 *

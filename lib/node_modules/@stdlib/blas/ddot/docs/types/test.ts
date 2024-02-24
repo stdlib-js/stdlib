@@ -16,54 +16,20 @@
 * limitations under the License.
 */
 
-/// <reference types="@stdlib/types"/>
-
-import { ndarray } from '@stdlib/types/ndarray';
+import zeros = require( '@stdlib/ndarray/zeros' );
 import ddot = require( './index' );
-
-/**
-* Returns an ndarray object.
-*
-* @returns ndarray object
-*/
-function createArray(): ndarray {
-	const arr: ndarray = {
-		'byteLength': null,
-		'BYTES_PER_ELEMENT': null,
-		'data': new Float64Array( [ 1, 2, 3 ] ),
-		'dtype': 'float64',
-		'flags': {
-			'ROW_MAJOR_CONTIGUOUS': true,
-			'COLUMN_MAJOR_CONTIGUOUS': false
-		},
-		'length': 3,
-		'ndims': 1,
-		'offset': 0,
-		'order': 'row-major',
-		'shape': [ 3 ],
-		'strides': [ 1 ],
-		'get': ( i: number ): any => {
-			return arr.data[ i ];
-		},
-		'set': ( i: number, v: any ): ndarray => {
-			arr.data[ i ] = v;
-			return arr;
-		}
-	};
-	return arr;
-}
 
 
 // TESTS //
 
 // The function returns a number...
 {
-	ddot( createArray(), createArray() ); // $ExpectType number
+	ddot( zeros( [ 10 ] ), zeros( [ 10 ] ) ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...
 {
-	const y: ndarray = createArray();
+	const y = zeros( [ 10 ] );
 
 	ddot( 10, y ); // $ExpectError
 	ddot( '10', y ); // $ExpectError
@@ -78,7 +44,7 @@ function createArray(): ndarray {
 
 // The compiler throws an error if the function is provided a second argument which is not an ndarray...
 {
-	const x: ndarray = createArray();
+	const x = zeros( [ 10 ] );
 
 	ddot( x, 10 ); // $ExpectError
 	ddot( x, '10' ); // $ExpectError
@@ -93,8 +59,8 @@ function createArray(): ndarray {
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	const x: ndarray = createArray();
-	const y: ndarray = createArray();
+	const x = zeros( [ 10 ] );
+	const y = zeros( [ 10 ] );
 
 	ddot(); // $ExpectError
 	ddot( x ); // $ExpectError

@@ -109,7 +109,7 @@ interface NullaryFunction extends PRNG {
 /**
 * Interface for generating pseudorandom numbers from a Fréchet distribution without pre-specified parameter values.
 */
-interface BinaryFunction extends PRNG {
+interface TernaryFunction extends PRNG {
 	/**
 	* Returns a pseudorandom number drawn from a Fréchet distribution.
 	*
@@ -209,7 +209,7 @@ interface Random extends PRNG {
 	* var v = rand( 1.0, 1.0, 0.8 );
 	* // returns <number>
 	*/
-	factory( options?: Options ): BinaryFunction;
+	factory( options?: Options ): TernaryFunction;
 }
 
 /**

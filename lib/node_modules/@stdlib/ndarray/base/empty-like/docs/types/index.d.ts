@@ -29,7 +29,7 @@ import { ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, in
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'float64', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -58,7 +58,7 @@ declare function emptyLike( x: float64ndarray ): float64ndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'float32', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -87,7 +87,7 @@ declare function emptyLike( x: float32ndarray ): float32ndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'complex128', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -116,7 +116,7 @@ declare function emptyLike( x: complex128ndarray ): complex128ndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'complex64', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -145,7 +145,7 @@ declare function emptyLike( x: complex64ndarray ): complex64ndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'int32', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -174,7 +174,7 @@ declare function emptyLike( x: int32ndarray ): int32ndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'int16', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -203,7 +203,7 @@ declare function emptyLike( x: int16ndarray ): int16ndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'int8', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -232,7 +232,7 @@ declare function emptyLike( x: int8ndarray ): int8ndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'uint32', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -261,7 +261,7 @@ declare function emptyLike( x: uint32ndarray ): uint32ndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'uint16', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -290,7 +290,7 @@ declare function emptyLike( x: uint16ndarray ): uint16ndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'uint8', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -319,7 +319,7 @@ declare function emptyLike( x: uint8ndarray ): uint8ndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'uint8c', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
@@ -348,7 +348,7 @@ declare function emptyLike( x: uint8cndarray ): uint8cndarray;
 * @returns output array
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/base/zeros` );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'generic', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>

@@ -46,7 +46,7 @@ interface ReEOL {
 	* @returns regular expression
 	*
 	* @example
-	* var replace = require( `@stdlib/string/replace` );
+	* var replace = require( '@stdlib/string/replace' );
 	*
 	* var RE_EOL = reEOL({
 	*     'flags': 'g'
@@ -94,7 +94,7 @@ interface ReEOL {
 * // returns false
 *
 * @example
-* var replace = require( `@stdlib/string/replace` );
+* var replace = require( '@stdlib/string/replace' );
 *
 * var RE_EOL = reEOL({
 *     'flags': 'g'

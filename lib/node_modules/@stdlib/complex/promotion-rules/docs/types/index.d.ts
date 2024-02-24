@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexDataType } from '@stdlib/types/complex';
+import { ComplexFloatingPointDataType } from '@stdlib/types/complex';
 
 /**
 * Real number data types.
@@ -30,7 +30,7 @@ type RealDataTypes = 'float64' | 'float32' | 'int32' | 'int16' | 'int8' | 'uint3
 /**
 * Number data types.
 */
-type DataType = RealDataTypes | ComplexDataType;
+type DataType = RealDataTypes | ComplexFloatingPointDataType;
 
 /**
 * Interface describing a promotion table.

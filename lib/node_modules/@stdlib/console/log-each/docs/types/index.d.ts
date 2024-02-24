@@ -30,7 +30,7 @@
 * @throws provided collections must have the same length
 *
 * @example
-* var logEach = require( `@stdlib/console/log-each` );
+* var logEach = require( '@stdlib/console/log-each' );
 *
 * var x = [ 1, 2, 3 ];
 * var y = [ 4, 5, 6 ];

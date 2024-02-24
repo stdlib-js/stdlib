@@ -33,7 +33,7 @@ import { Iterator } from '@stdlib/types/iter';
 * @returns first iterated value
 *
 * @example
-* var array2iterator = require( `@stdlib/array/to-iterator` );
+* var array2iterator = require( '@stdlib/array/to-iterator' );
 *
 * var it = array2iterator( [ 1, 0, 0, 0, 0 ] );
 *

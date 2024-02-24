@@ -55,7 +55,7 @@ interface JSONRepresentation {
 * @returns JSON representation
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var arr = new Float64Array( [ 5.0, 3.0 ] );
 * var json = typedarray2json( arr );

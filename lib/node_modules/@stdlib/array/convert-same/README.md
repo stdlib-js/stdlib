@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Convert
+# convertSame
 
 > Convert an array to the same data type as a second input array.
 
@@ -37,10 +37,10 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var convertArraySame = require( '@stdlib/array/convert-same' );
+var convertSame = require( '@stdlib/array/convert-same' );
 ```
 
-#### convertArraySame( x, y )
+#### convertSame( x, y )
 
 Converts an array to the same data type as a second input array.
 
@@ -50,7 +50,7 @@ var Float32Array = require( '@stdlib/array/float32' );
 var x = [ 1.0, 2.0, 3.0 ];
 var y = new Float32Array( 0 );
 
-var out = convertArraySame( x, y );
+var out = convertSame( x, y );
 // returns <Float32Array>[ 1.0, 2.0, 3.0 ]
 ```
 
@@ -96,7 +96,7 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dtypes = require( '@stdlib/array/dtypes' );
 var ctors = require( '@stdlib/array/ctors' );
-var convertArraySame = require( '@stdlib/array/convert-same' );
+var convertSame = require( '@stdlib/array/convert-same' );
 
 // Create a generic array:
 var arr = filledarrayBy( 5, 'generic', discreteUniform( -100, 100 ) );
@@ -108,7 +108,7 @@ var DTYPES = dtypes();
 var out;
 var i;
 for ( i = 0; i < DTYPES.length; i++ ) {
-    out = convertArraySame( arr, new ( ctors( DTYPES[ i ] ) )( 0 ) );
+    out = convertSame( arr, new ( ctors( DTYPES[ i ] ) )( 0 ) );
     console.log( out );
 }
 ```

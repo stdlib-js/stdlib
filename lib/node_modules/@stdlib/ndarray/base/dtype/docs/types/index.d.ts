@@ -29,7 +29,7 @@ import { ndarray, DataType } from '@stdlib/types/ndarray';
 * @returns data type
 *
 * @example
-* var zeros = require( `@stdlib/ndarray/zeros` );
+* var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'float64'

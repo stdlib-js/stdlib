@@ -47,10 +47,10 @@ interface Routine {
 	* @returns `y`
 	*
 	* @example
-	* var Complex64Array = require( `@stdlib/array/complex64` );
-	* var real = require( `@stdlib/complex/real` );
-	* var imag = require( `@stdlib/complex/imag` );
-	* var Complex64 = require( `@stdlib/complex/float32` );
+	* var Complex64Array = require( '@stdlib/array/complex64' );
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	* var Complex64 = require( '@stdlib/complex/float32' );
 	*
 	* function scale( x ) {
 	*     var re = real( x );
@@ -88,10 +88,10 @@ interface Routine {
 	* @returns `y`
 	*
 	* @example
-	* var Complex64Array = require( `@stdlib/array/complex64` );
-	* var real = require( `@stdlib/complex/real` );
-	* var imag = require( `@stdlib/complex/imag` );
-	* var Complex64 = require( `@stdlib/complex/float32` );
+	* var Complex64Array = require( '@stdlib/array/complex64' );
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	* var Complex64 = require( '@stdlib/complex/float32' );
 	*
 	* function scale( x ) {
 	*     var re = real( x );
@@ -128,10 +128,10 @@ interface Routine {
 * @returns `y`
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
-* var Complex64 = require( `@stdlib/complex/float32` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
+* var real = require( '@stdlib/complex/real' );
+* var imag = require( '@stdlib/complex/imag' );
+* var Complex64 = require( '@stdlib/complex/float32' );
 *
 * function scale( x ) {
 *     var re = real( x );
@@ -154,10 +154,10 @@ interface Routine {
 * // returns 10.0
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
-* var Complex64 = require( `@stdlib/complex/float32` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
+* var real = require( '@stdlib/complex/real' );
+* var imag = require( '@stdlib/complex/imag' );
+* var Complex64 = require( '@stdlib/complex/float32' );
 *
 * function scale( x ) {
 *     var re = real( x );

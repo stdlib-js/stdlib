@@ -29,8 +29,8 @@ import { Slice } from '@stdlib/types/slice';
 * @returns number of elements
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var normalizeSlice = require( `@stdlib/slice/base/normalize-slice` );
+* var Slice = require( '@stdlib/slice/ctor' );
+* var normalizeSlice = require( '@stdlib/slice/base/normalize-slice' );
 *
 * var s = new Slice( 2, null, 1 );
 * // returns <Slice>
@@ -45,8 +45,8 @@ import { Slice } from '@stdlib/types/slice';
 * // returns 3
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var normalizeSlice = require( `@stdlib/slice/base/normalize-slice` );
+* var Slice = require( '@stdlib/slice/ctor' );
+* var normalizeSlice = require( '@stdlib/slice/base/normalize-slice' );
 *
 * var s = new Slice( 2, null, 2 );
 * // returns <Slice>
@@ -61,8 +61,8 @@ import { Slice } from '@stdlib/types/slice';
 * // returns 2
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var normalizeSlice = require( `@stdlib/slice/base/normalize-slice` );
+* var Slice = require( '@stdlib/slice/ctor' );
+* var normalizeSlice = require( '@stdlib/slice/base/normalize-slice' );
 *
 * var s = new Slice( -1, null, -2 );
 *
@@ -76,8 +76,8 @@ import { Slice } from '@stdlib/types/slice';
 * // returns 3
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var normalizeSlice = require( `@stdlib/slice/base/normalize-slice` );
+* var Slice = require( '@stdlib/slice/ctor' );
+* var normalizeSlice = require( '@stdlib/slice/base/normalize-slice' );
 *
 * var s = new Slice( 3, 5, -1 );
 *
@@ -91,8 +91,8 @@ import { Slice } from '@stdlib/types/slice';
 * // returns 0
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var normalizeSlice = require( `@stdlib/slice/base/normalize-slice` );
+* var Slice = require( '@stdlib/slice/ctor' );
+* var normalizeSlice = require( '@stdlib/slice/base/normalize-slice' );
 *
 * var s = new Slice( 5, 3, 1 );
 *

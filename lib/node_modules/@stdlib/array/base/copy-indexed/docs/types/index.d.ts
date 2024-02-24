@@ -25,7 +25,7 @@ import { Collection } from '@stdlib/types/array';
 /**
 * Copies the elements of an indexed array-like object to a new "generic" array.
 *
-* @param x - array length
+* @param x - input array
 * @returns output array
 *
 * @example
