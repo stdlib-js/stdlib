@@ -36,7 +36,7 @@ jobs:
     # Run reusable workflow:
     uses: ./.github/workflows/check_required_files.yml
     with:
-      pull_request_number: ${{ github.event.issue.pull_request.number }}
+      pull_request_number: ${{ github.event.issue.number }}
       user: ${{ github.event.comment.user.login }}
     secrets:
       STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
