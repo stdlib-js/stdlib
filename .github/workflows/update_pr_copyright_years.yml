@@ -109,7 +109,7 @@ jobs:
               files="$files $new_files"
               page=$((page+1))
           done
-          files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$files" | tr '\n' ' ' | sed 's/^ //;s/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
       # Update the copyright years:
