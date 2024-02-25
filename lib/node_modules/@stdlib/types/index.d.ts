@@ -35,6 +35,7 @@
 */
 declare module '@stdlib/types/array' {
 	import { ComplexLike, Complex64, Complex128 } from '@stdlib/types/complex';
+	import { Remap } from '@stdlib/types/utilities';
 
 	/**
 	* Data type.
@@ -593,6 +594,106 @@ declare module '@stdlib/types/array' {
 	* const x: Collection<number> = [ 1, 2, 3 ];
 	*/
 	type Collection<T = any> = Array<T> | TypedArray | ArrayLike<T>; // eslint-disable-line @typescript-eslint/no-explicit-any
+
+	/**
+	* Mapping of data types to array constructors.
+	*/
+	type DataTypeMap<T> = Remap<NumericDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
+	* Mapping of data types for real-valued typed arrays to array constructors.
+	*/
+	type RealDataTypeMap = Remap<RealFloatingPointDataTypeMap & IntegerDataTypeMap>;
+
+	/**
+	* Mapping of data types for complex number typed arrays to array constructors.
+	*/
+	type RealFloatingPointDataTypeMap = { // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'float64': Float64Array;
+		'float32': Float32Array;
+	};
+
+	/**
+	* Mapping of data types for complex number typed arrays to array constructors.
+	*/
+	type ComplexFloatingPointDataTypeMap = {  // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'complex64': Complex64Array;
+		'complex128': Complex128Array;
+	};
+
+	/**
+	* Mapping of data types for floating-point (real or complex) typed arrays to array constructors.
+	*/
+	type FloatingPointDataTypeMap = Remap<RealFloatingPointDataTypeMap & ComplexFloatingPointDataTypeMap>;
+
+	/**
+	* Mapping for numeric data types (real or complex) to array constructors.
+	*/
+	type NumericDataTypeMap = Remap<RealDataTypeMap &  ComplexFloatingPointDataTypeMap>;
+
+	/**
+	* Type mapping for the following array data types:
+	*/
+	type IntegerDataTypeMap = Remap<SignedIntegerDataTypeMap & UnsignedIntegerDataTypeMap>;
+
+	/**
+	* Mapping of signed integer data types to array constructors.
+	*/
+	type SignedIntegerDataTypeMap = { // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'int32': Int32Array;
+		'int16': Int16Array;
+		'int8': Int8Array;
+	};
+
+	/**
+	* Mapping of unsigned integer data types to array constructors.
+	*/
+	type UnsignedIntegerDataTypeMap = { // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'uint32': Uint32Array;
+		'uint16': Uint16Array;
+		'uint8': Uint8Array;
+		'uint8c': Uint8ClampedArray;
+	};
+
+	/**
+	* Mapping for signed integer data types including the generic option to array constructors.
+	*/
+	type SignedIntegerAndGenericDataTypeMap<T> = Remap<SignedIntegerDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
+	* Mapping for unsigned integer data types including the generic option to array constructors.
+	*/
+	type UnsignedIntegerAndGenericDataTypeMap<T> = Remap<UnsignedIntegerDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
+	* Mapping for real floating point data types including the generic option to array constructors.
+	*/
+	type RealFloatingPointAndGenericDataTypeMap<T> = Remap<RealFloatingPointDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
+	* Mapping for complex floating point data types including the generic option to array constructors.
+	*/
+	type ComplexFloatingPointAndGenericDataTypeMap<T> = Remap<ComplexFloatingPointDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
+	* Mapping for floating point (real or complex) data types including the generic option to array constructors.
+	*/
+	type FloatingPointAndGenericDataTypeMap<T> = Remap<FloatingPointDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
+	* Mapping for numeric (real or complex) data types including the generic option to array constructors.
+	*/
+	type NumericAndGenericDataTypeMap<T> = Remap<NumericDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
+	* Mapping for all typed (real, complex) data types including the generic option to array constructors.
+	*/
+	type TypedAndGenericDataTypeMap<T> = Remap<TypedDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
+	* Mapping for strctly typed array data types to array constructors.
+	*/
+	type TypedDataTypeMap = Remap<RealDataTypeMap & ComplexFloatingPointDataTypeMap>;
 
 	/**
 	* Boolean index array.
@@ -3195,6 +3296,13 @@ declare module '@stdlib/types/utilities' {
 	* Override the properties of a first type with the properties of a second type.
 	*/
 	type Override<T, U> = Omit<T, keyof U> & U;
+
+	/**
+	* Remap all properties of a type for better Intellisense.
+	*/
+	type Remap<T> = {
+		[K in keyof T]: T[K];
+	} & {};
 }
 
 /**

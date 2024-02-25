@@ -1,0 +1,25 @@
+
+{{alias}}( x, value )
+    Counts the number of elements that are equal to a given value in an array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    value: any
+        Input value.
+
+    Returns
+    -------
+    out: integer
+        Number of elements that are equal to the given value.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 0, 1, 1 ], 1 )
+    2
+
+    See Also
+    --------
+

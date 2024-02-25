@@ -966,3 +966,5 @@
 "FZ","invalid operation. Unrecognized array index type. Value: `%s`.","Error"
 "Fa","invalid operation. Unable to resolve array index. Value: `%s`.","Error"
 "Fb","invalid option. `%s` option is missing a `%s` method. Option: `%s`.","TypeError"
+"Fc","invalid operation. If not provided an initial value, an array must contain at least one element.","Error"
+"Fd","invalid arguments. Must provide equal length array-like objects.","Error"

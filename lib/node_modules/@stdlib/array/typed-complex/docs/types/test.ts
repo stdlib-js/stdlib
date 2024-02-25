@@ -23,10 +23,10 @@ import complexarray = require( './index' );
 
 // The function returns a typed array..
 {
-	complexarray(); // $ExpectType ComplexTypedArray
-	complexarray( 'complex64' ); // $ExpectType ComplexTypedArray
-	complexarray( 10, 'complex64' ); // $ExpectType ComplexTypedArray
-	complexarray( [ 1, 2, 3 ], 'complex128' ); // $ExpectType ComplexTypedArray
+	complexarray(); // $ExpectType Complex128Array
+	complexarray( 'complex64' ); // $ExpectType Complex64Array
+	complexarray( 10, 'complex64' ); // $ExpectType Complex64Array
+	complexarray( [ 1, 2, 3 ], 'complex128' ); // $ExpectType Complex128Array
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a data type, number, array-like object, or typed array...
