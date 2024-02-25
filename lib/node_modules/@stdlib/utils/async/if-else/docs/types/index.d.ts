@@ -36,7 +36,7 @@ type PredicateNullary = () => void;
 *
 * @param error - error object
 */
-type PredicateUnary = ( error: Error ) => void;
+type PredicateUnary = ( error: Error | null ) => void;
 
 /**
 * Predicate callback function.
