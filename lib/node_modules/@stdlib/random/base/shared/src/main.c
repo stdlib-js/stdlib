@@ -21,7 +21,7 @@
 #include <stdint.h>
 #include <string.h>
 #include <math.h>
-#include "stdlib/random/base.h"
+#include "stdlib/random/base/shared.h"
 
 /**
 * Frees a PRNG's allocated memory.

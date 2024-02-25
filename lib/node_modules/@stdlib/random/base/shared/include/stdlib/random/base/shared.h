@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_RANDOM_BASE_H
-#define STDLIB_RANDOM_BASE_H
+#ifndef STDLIB_RANDOM_BASE_SHARED_H
+#define STDLIB_RANDOM_BASE_SHARED_H
 
 #include <stdlib.h>
 #include <stdint.h>
@@ -144,4 +144,4 @@ int8_t stdlib_base_prng_copy_state( struct BasePRNGObject *dest, const struct Ba
 }
 #endif
 
-#endif // !STDLIB_RANDOM_BASE_H
+#endif // !STDLIB_RANDOM_BASE_SHARED_H
