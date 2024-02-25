@@ -1620,6 +1620,60 @@ var count = context.count;
 // returns 3
 ```
 
+<a name="method-reduce"></a>
+
+#### Complex128Array.prototype.reduce( reducerFn\[, initialValue] )
+
+Applies a provided callback function to each element of the array, in order, passing in the return value from the calculation on the preceding element and returning the accumulated result upon completion.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+var cadd = require( '@stdlib/math/base/ops/cadd' );
+
+var arr = new Complex128Array( 3 );
+
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var z = arr.reduce( cadd );
+// returns <Complex128>
+
+var re = real( z );
+// returns 6.0
+
+var im = imag( z );
+// returns 6.0
+```
+
+The reducer function is provided four arguments:
+
+-   **acc**: accumulated result.
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+By default, the function initializes the accumulated result to the first element in the array and passes the second array element as `value` during the first invocation of the provided callback. To begin accumulation from a different starting value and pass in the first array element as `value` during the first invocation of the provided callback, provide an `initialValue` argument.
+ 
+```javascript
+var real = require( '@stdlib/complex/real' );
+
+function reducer( acc, v ) {
+    acc += real( v );
+    return acc;
+}
+
+var arr = new Complex128Array( 3 );
+
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var z = arr.reduce( reducer, 0.0 );
+// returns 6.0
+```
+
 <a name="method-reverse"></a>
 
 #### Complex128Array.prototype.reverse()
