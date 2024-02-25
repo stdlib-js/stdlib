@@ -29,8 +29,9 @@ branches.md
 .postinstall.json
 Makefile
 
-# Ignore `binding.gyp` file to avoid compilation of native addon when installing package:
+# Ignore files to avoid compilation of native addon when installing package:
 binding.gyp
+include.gypi
 
 # Directories #
 ###############
