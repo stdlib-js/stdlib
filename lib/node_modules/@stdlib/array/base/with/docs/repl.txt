@@ -1,0 +1,30 @@
+
+{{alias}}( x, index, value )
+    Return a new array after replacing an index with a given value.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    index: integer
+        Index of the element to be replaced.
+
+    value: any
+        Value to replace the element at the specified index with.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Updated array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > {{alias}}( x, 0, 5 )
+    [ 5, 2, 3, 4 ]
+    > {{alias}}( x, -1, 6 )
+    [ 1, 2, 3, 6 ]
+
+    See Also
+    --------

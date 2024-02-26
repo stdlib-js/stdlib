@@ -122,6 +122,8 @@
 "1Yt",@stdlib/array-base-assert-is-accessor-array
 "1qs",@stdlib/array/base/assert/is-complex-floating-point-data-type
 "1qt",@stdlib/array-base-assert-is-complex-floating-point-data-type
+"1s4",@stdlib/array/base/assert/is-complex-typed-array
+"1s5",@stdlib/array-base-assert-is-complex-typed-array
 "1oS",@stdlib/array/base/assert/is-complex128array
 "1oT",@stdlib/array-base-assert-is-complex128array
 "1oU",@stdlib/array/base/assert/is-complex64array
@@ -218,6 +220,12 @@
 "1Z3",@stdlib/array-base-copy-indexed
 "002",@stdlib/array/base/copy
 "003",@stdlib/array-base-copy
+"1s6",@stdlib/array/base/count-falsy
+"1s7",@stdlib/array-base-count-falsy
+"1s8",@stdlib/array/base/count-same-value
+"1s9",@stdlib/array-base-count-same-value
+"1sA",@stdlib/array/base/count-truthy
+"1sB",@stdlib/array-base-count-truthy
 "1n8",@stdlib/array/base/dedupe
 "1n9",@stdlib/array-base-dedupe
 "1oi",@stdlib/array/base/every-by-right
@@ -520,6 +528,10 @@
 "017",@stdlib/array-min-dtype
 "1rU",@stdlib/array/mostly-safe-casts
 "1rV",@stdlib/array-mostly-safe-casts
+"1sC",@stdlib/array/mskfilter
+"1sD",@stdlib/array-mskfilter
+"1sE",@stdlib/array/mskreject
+"1sF",@stdlib/array-mskreject
 "1Zk",@stdlib/array/nans-like
 "1Zl",@stdlib/array-nans-like
 "1Zm",@stdlib/array/nans
@@ -965,6 +977,8 @@
 "07X",@stdlib/assert-is-native-function
 "07Y",@stdlib/assert/is-ndarray-like
 "07Z",@stdlib/assert-is-ndarray-like
+"1sG",@stdlib/assert/is-negative-finite
+"1sH",@stdlib/assert-is-negative-finite
 "07a",@stdlib/assert/is-negative-integer-array
 "07b",@stdlib/assert-is-negative-integer-array
 "07c",@stdlib/assert/is-negative-integer
@@ -999,6 +1013,8 @@
 "085",@stdlib/assert-is-nonenumerable-property-in
 "086",@stdlib/assert/is-nonenumerable-property
 "087",@stdlib/assert-is-nonenumerable-property
+"1sI",@stdlib/assert/is-nonnegative-finite
+"1sJ",@stdlib/assert-is-nonnegative-finite
 "088",@stdlib/assert/is-nonnegative-integer-array
 "089",@stdlib/assert-is-nonnegative-integer-array
 "08A",@stdlib/assert/is-nonnegative-integer
@@ -1043,6 +1059,8 @@
 "08l",@stdlib/assert-is-plain-object-array
 "08m",@stdlib/assert/is-plain-object
 "08n",@stdlib/assert-is-plain-object
+"1sK",@stdlib/assert/is-positive-finite
+"1sL",@stdlib/assert-is-positive-finite
 "08o",@stdlib/assert/is-positive-integer-array
 "08p",@stdlib/assert-is-positive-integer-array
 "08q",@stdlib/assert/is-positive-integer
@@ -4175,6 +4193,8 @@
 "0p3",@stdlib/random-base-rayleigh
 "0p4",@stdlib/random/base/reviver
 "0p5",@stdlib/random-base-reviver
+"1sM",@stdlib/random/base/shared
+"1sN",@stdlib/random-base-shared
 "0p6",@stdlib/random/base/t
 "0p7",@stdlib/random-base-t
 "0p8",@stdlib/random/base/triangular
