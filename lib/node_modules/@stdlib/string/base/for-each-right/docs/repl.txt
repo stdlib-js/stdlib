@@ -1,0 +1,38 @@
+
+{{alias}}( str, clbk[, thisArg] )
+    Invokes a function for each UTF-16 code unit in a string, iterating from 
+    right to left.
+
+    When invoked, the provided function is provided three arguments:
+
+    - value: character
+    - index: character index
+    - str: input string
+
+    Parameters
+    ----------
+    str: string
+        Input string over which to iterate.
+
+    clbk: Function
+        Function to invoke for each UTF-16 code unit in the input string.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: string
+        Input string.
+
+    Examples
+    --------
+    > var n = 0;
+    > function fcn() { n += 1; };
+    > {{alias}}( 'hello world!', fcn );
+    > n
+    12
+
+    See Also
+    --------
+
