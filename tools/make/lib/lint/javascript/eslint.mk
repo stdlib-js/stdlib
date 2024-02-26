@@ -56,8 +56,10 @@ endif
 FIX_TYPE ?=
 ifneq ($(FIX_TYPE),)
 	ESLINT_FLAGS += --fix-type $(FIX_TYPE)
-else ifeq ($(AUTOFIX),true)
+else
+ifeq ($(AUTOFIX),true)
 	ESLINT_FLAGS += --fix-type problem,layout,directive
+endif
 endif
 
 # RULES #
