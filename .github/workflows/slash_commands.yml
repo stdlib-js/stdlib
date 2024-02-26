@@ -56,3 +56,19 @@ jobs:
       STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
       STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
       STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for auto-fixing lint errors:
+  fix_lint_errors:
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib lint-autofix')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/lint_autofix.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
