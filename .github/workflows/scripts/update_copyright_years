@@ -27,7 +27,6 @@
 #   file3       File path.
 
 current_year=$(date +"%Y")
-directory_to_scan="${1:-.}"
 
 for file in ${@}; do
     if [[ ! -f "$file" ]]; then

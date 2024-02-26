@@ -1,0 +1,152 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+  name: lint_autofix
+
+  # Workflow triggers:
+  on:
+
+    # Allow the workflow to be triggered by other workflows
+    workflow_call:
+      # Define the input parameters for the workflow:
+        inputs:
+          pull_request_number:
+            description: 'PR number'
+            required: true
+            type: number
+        # Define the secrets accessible by the workflow:
+        secrets:
+          STDLIB_BOT_GITHUB_TOKEN:
+            description: 'GitHub token for stdlb-bot'
+            required: true
+          REPO_GITHUB_TOKEN:
+            description: 'GitHub token for accessing the repository'
+            required: true
+          STDLIB_BOT_GPG_PRIVATE_KEY:
+            description: 'GPG private key for stdlb-bot'
+            required: true
+          STDLIB_BOT_GPG_PASSPHRASE:
+            description: 'GPG passphrase for stdlb-bot'
+            required: true
+
+  # Workflow jobs:
+  jobs:
+
+    # Define a job for automatically fixing lint errors:
+    autofix:
+
+      # Define a display name:
+      name: 'Fix lint errors'
+
+      # Define the type of virtual host machine:
+      runs-on: ubuntu-latest
+
+      # Define the sequence of job steps...
+      steps:
+
+        # Get PR details:
+        - name: 'Get PR details'
+          id: pr-details
+          run: |
+            pr_response=$(curl -s \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}")
+
+            # Escape control characters:
+            pr_response=$(echo "$pr_response" | tr -d '\000-\031')
+
+            # Extract the needed details:
+            pr_branch=$(echo "$pr_response" | jq -r '.head.ref') # PR's branch
+            pr_repo_full_name=$(echo "$pr_response" | jq -r '.head.repo.full_name') # PR's repo full name
+
+            # Set outputs for the branch and repository:
+            echo "branch=$pr_branch" >> $GITHUB_OUTPUT
+            echo "repository=$pr_repo_full_name" >> $GITHUB_OUTPUT
+
+        # Checkout the repository:
+        - name: 'Checkout repository'
+          # Pin action to full length commit SHA
+          uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+          with:
+            # Refers to the branch name of the branch being pushed:
+            ref: ${{ steps.pr-details.outputs.branch }}
+
+            # Refers to the repository name:
+            repository: ${{ steps.pr-details.outputs.repository }}
+
+            # Token for accessing the repository:
+            token: ${{ secrets.REPO_GITHUB_TOKEN }}
+
+            # File path to checkout to:
+            path: './'
+
+        # Get list of changed files:
+        - name: 'Get list of changed files'
+          id: changed-files
+          run: |
+            page=1
+            files=""
+            while true; do
+                changed_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN
+                   }}" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}/files?page=$page&per_page=100" | jq -r '.[] | .filename')
+                if [ -z "$changed_files" ]; then
+                    break
+                fi
+                files="$files $changed_files"
+                page=$((page+1))
+            done
+            files=$(echo "$files" | tr '\n' ' ' | sed 's/^ //;s/ $//')
+            echo "files=${files}" >> $GITHUB_OUTPUT
+
+        # Fix JavaScript lint errors:
+        - name: 'Fix JavaScript lint errors'
+          id: fix-lint-errors
+          run: |
+            files="${{ steps.changed-files.outputs.files }}"
+            FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_javascript_files" "$files"
+
+        # Disable Git hooks:
+        - name: 'Disable Git hooks'
+          run: |
+            rm -rf .git/hooks
+
+        # Import GPG key to sign commits:
+        - name: 'Import GPG key to sign commits'
+          # Pin action to full length commit SHA
+          uses: crazy-max/ghaction-import-gpg@01dd5d3ca463c7f10f7f4f7b4f177225ac661ee4 # v6.1.0
+          with:
+            gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+            passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+            git_user_signingkey: true
+            git_commit_gpgsign: true
+
+        # Commit and push changes:
+        - name: 'Commit and push changes'
+          env:
+              REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+              USER_NAME: stdlb-bot
+              BRANCH_NAME: ${{ steps.pr-details.outputs.branch }}
+              REPO_NAME: ${{ steps.pr-details.outputs.repository }}
+          run: |
+            git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
+            git config --local user.name "stdlib-bot"
+            git add .
+            git commit -m "fix: resolve lint errors"
+            git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/$REPO_NAME.git" $BRANCH_NAME

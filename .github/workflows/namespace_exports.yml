@@ -133,7 +133,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@b1ddad2c994a25fbc81a28b3ec0e368bb2021c50 # v6.0.0
         with:
-          title: 'Update namespace exports'
+          title: 'feat: update namespace exports'
           body: |
             This PR
 
