@@ -1676,6 +1676,60 @@ var z = arr.reduce( reducer, 0.0 );
 // returns 6.0
 ```
 
+<a name="method-reduce-right"></a>
+
+#### Complex64Array.prototype.reduceRight( reducerFn\[, initialValue] )
+
+Applies a provided callback function to each element of the array, in reverse order, passing in the return value from the calculation on the following element and returning the accumulated result upon completion.
+
+```javascript
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
+var caddf = require( '@stdlib/math/base/ops/caddf' );
+
+var arr = new Complex64Array( 3 );
+
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var z = arr.reduceRight( caddf );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 6.0
+
+var im = imagf( z );
+// returns 6.0
+```
+
+The reducer function is provided four arguments:
+
+-   **acc**: accumulated result.
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+By default, the function initializes the accumulated result to the last element in the array and passes the second-last array element as `value` during the first invocation of the provided callback. To begin accumulation from a different starting value and pass in the last array element as `value` during the first invocation of the provided callback, provide an `initialValue` argument.
+ 
+```javascript
+var realf = require( '@stdlib/complex/realf' );
+
+function reducer( acc, v ) {
+    acc += realf( v );
+    return acc;
+}
+
+var arr = new Complex64Array( 3 );
+
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
+
+var z = arr.reduceRight( reducer, 0.0 );
+// returns 6.0
+```
+
 <a name="method-reverse"></a>
 
 #### Complex64Array.prototype.reverse()
