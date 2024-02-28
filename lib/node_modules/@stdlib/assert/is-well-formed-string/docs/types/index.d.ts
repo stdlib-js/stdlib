@@ -56,7 +56,7 @@ interface isWellFormedString {
 	* var bool = isWellFormedString( null );
 	* // returns false
 	*/
-	( str: any ): str is string | String;
+	( str: any ): boolean;
 
 	/**
 	* Tests if a string is a well-formed string primitive.
@@ -72,7 +72,7 @@ interface isWellFormedString {
 	* var bool = isWellFormedString.isPrimitive( new String( '' ) );
 	* // returns false
 	*/
-	isPrimitive( str: any ): str is string;
+	isPrimitive( str: any ): boolean;
 
 	/**
 	* Tests if a string is a well-formed string object.
@@ -88,7 +88,7 @@ interface isWellFormedString {
 	* var bool = isWellFormedString.isObject( new String( '' ) );
 	* // returns true
 	*/
-	isObject( str: any ): str is Object;
+	isObject( str: any ): boolean;
 }
 
 /**

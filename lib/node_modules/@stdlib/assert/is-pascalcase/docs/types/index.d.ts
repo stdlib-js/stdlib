@@ -40,7 +40,7 @@
 * var bool = isPascalcase( null );
 * // returns false
 */
-declare function isPascalcase( value: any ): value is string;
+declare function isPascalcase( value: any ): boolean;
 
 
 // EXPORTS //
