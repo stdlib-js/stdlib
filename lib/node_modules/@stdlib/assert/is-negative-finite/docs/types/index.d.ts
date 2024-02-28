@@ -52,7 +52,7 @@ interface isNegativeFinite {
 	* var bool = isNegativeFinite( -1.0/0.0 );
 	* // returns false
 	*/
-	( value: number | Number ): value is number | Number;
+	( value: number | Number ): boolean;
 
 	/**
 	* Tests if a value is a number primitive having a finite negative value.
@@ -68,7 +68,7 @@ interface isNegativeFinite {
 	* var bool = isNegativeFinite.isPrimitive( new Number( -3.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: number | Number ): value is number;
+	isPrimitive( value: number | Number ): boolean;
 
 	/**
 	* Tests if a value is a number object having a negative value.
@@ -84,7 +84,7 @@ interface isNegativeFinite {
 	* var bool = isNegativeFinite.isObject( new Number( -3.0 ) );
 	* // returns true
 	*/
-	isObject( value: number | Number ): value is Number;
+	isObject( value: number | Number ): boolean;
 }
 
 /**

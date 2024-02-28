@@ -897,6 +897,35 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	reduce<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
 
 	/**
+	* Applies a provided callback function to each element of the array, in reverse order, passing in the return value from the calculation on the following element and returning the accumulated result upon completion.
+	*
+	* @param reducer - callback function
+	* @param initialValue - initial value
+	* @returns accumulated result
+	*
+	* @example
+	* var realf = require( '@stdlib/complex/realf' );
+	* var imagf = require( '@stdlib/complex/imagf' );
+	* var caddf = require( '@stdlib/math/base/ops/caddf' );
+	*
+	* var arr = new Complex64Array( 3 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	*
+	* var z = arr.reduceRight( caddf );
+	* // returns <Complex64>
+	*
+	* var re = realf( z );
+	* // returns 6.0
+	*
+	* var im = imagf( z );
+	* // returns 6.0
+	*/
+	reduceRight<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
+
+	/**
 	* Reverses an array in-place.
 	*
 	* @returns reversed array

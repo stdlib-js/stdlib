@@ -40,7 +40,7 @@
 * var bool = isEmail( null );
 * // returns false
 */
-declare function isEmail( value: any ): value is string;
+declare function isEmail( value: any ): boolean;
 
 
 // EXPORTS //

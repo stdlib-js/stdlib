@@ -97,6 +97,26 @@
             # File path to checkout to:
             path: './'
 
+        # Install Node.js:
+        - name: 'Install Node.js'
+          # Pin action to full length commit SHA
+          uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
+          with:
+            node-version: '20' # 'lts/*'
+          timeout-minutes: 5
+
+        # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+        - name: 'Install dependencies'
+          run: |
+            make install-node-modules || make install-node-modules || make install-node-modules
+          timeout-minutes: 15
+
+        # Initialize development environment:
+        - name: 'Initialize development environment'
+          run: |
+            make init
+          timeout-minutes: 5
+
         # Get list of changed files:
         - name: 'Get list of changed files'
           id: changed-files

@@ -44,7 +44,7 @@
 * var bool = isRegExpString( null );
 * // returns false
 */
-declare function isRegExpString( value: any ): value is string;
+declare function isRegExpString( value: any ): boolean;
 
 
 // EXPORTS //

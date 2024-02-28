@@ -72,3 +72,37 @@ jobs:
       STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
       STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
       STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for printing a list of available slash commands:
+  help:
+
+    # Define a display name:
+    name: 'Help'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib help')
+
+    # Define the job's steps:
+    steps:
+      # Create a comment on the pull request informing the user of available slash commands:
+      - name: 'Create a comment on the pull request informing the user of available slash commands'
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # v4.0.0
+        with:
+          # Specify the issue or pull request number:
+          issue-number: ${{ github.event.issue.number }}
+
+          # Specify the comment body:
+          body: |
+            @${{ github.event.comment.user.login }}, available slash commands include:
+
+            - `/stdlib check-files` - Check for required files.
+            - `/stdlib update-copyright-years` - Update copyright header years.
+            - `/stdlib lint-autofix` - Auto-fix lint errors.
+
+          # GitHub token:
+          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
