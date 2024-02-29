@@ -36,6 +36,6 @@ include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 # make init
 #/
 init: init-git-hooks init-eslint-plugins
-	@echo "Initialization Successful."
+	$(QUIET) echo "Initialization successful."
 
 .PHONY: init
