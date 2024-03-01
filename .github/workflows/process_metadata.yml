@@ -74,7 +74,7 @@ jobs:
       - name: 'Extract metadata'
         id: extract-metadata
         # Pin action to full length commit SHA
-        uses: stdlib-js/metadata-action@503cc11fbcf8802239f29310bd492f7faeddab7e # v2.0.2
+        uses: stdlib-js/metadata-action@3ccf68f24c51ae23470319e8e5619d539df8212b # v3.0.0
 
       # Check the metadata for directives to send tweets:
       - name: 'Send tweets'
