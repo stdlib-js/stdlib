@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -104,6 +104,91 @@ for ( i = 0; i < x.length; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/acoversin.h"
+```
+
+#### stdlib_base_acoversin( x )
+
+Computes the [inverse coversed sine][inverse-coversed-sine] of a double-precision floating-point number (in radians).
+
+```c
+double out = stdlib_base_acoversin( 3.141592653589793/2.0 );
+// returns ~-0.6075
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_acoversin( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/acoversin.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { -5.0, -3.89, -2.78, -1.67, -0.56, 0.56, 1.67, 2.78, 3.89, 5.0 };
+    
+    double v;
+    int i;
+    for ( i = 0; i < 10; i++ ) {
+        v = stdlib_base_acoversin( x[ i ] );
+        printf( "acoversin(%lf) = %lf\n", x[ i ], v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
