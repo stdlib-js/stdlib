@@ -51,7 +51,10 @@ interface Options {
 * var out = group( arr, groups );
 * // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
 */
-declare function group( collection: Collection, groups: Collection ): any;
+declare function group<T, K extends PropertyKey>(
+	collection: Collection<T>,
+	groups: Collection<K>
+): { [key in K]: Collection<T> };
 
 /**
 * Groups values as arrays associated with distinct keys.
@@ -89,7 +92,11 @@ declare function group( collection: Collection, groups: Collection ): any;
 * var out = group( arr, opts, groups );
 * // returns { 'b': [ [ 0, 'beep' ], [ 1, 'boop' ], [ 3, 'bar' ] ], 'f': [ [ 2, 'foo' ] ] }
 */
-declare function group( collection: Collection, options: Options, groups: Collection ): any;
+declare function group<T, K extends PropertyKey>(
+	collection: Collection<T>,
+	options: Options,
+	groups: Collection<K>
+): { [key in K]: Collection<T> };
 
 
 // EXPORTS //
