@@ -40,7 +40,7 @@
 * var bool = isCamelcase( 'hello world' );
 * // returns false
 */
-declare function isCamelcase( value: any ): value is string;
+declare function isCamelcase( value: any ): boolean;
 
 
 // EXPORTS //

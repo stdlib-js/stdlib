@@ -1,0 +1,38 @@
+
+{{alias}}( str, search, replacement, fromIndex )
+    Replaces the substring after the first occurrence of a specified search
+    string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    search: string
+        Search string.
+
+    replacement: string
+        Replacement string.
+
+    fromIndex: integer
+        Index from which to start the search.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep boop', ' ', 'foo', 0 )
+    'beep foo'
+    > out = {{alias}}( 'beep boop', 'o', 'foo', 0 )
+    'beep bofoo'
+    > out = {{alias}}( 'Hello World!', 'o', 'foo', 5 )
+    'Hello Wofoo'
+    > out = {{alias}}( 'beep boop beep baz', 'beep', 'foo', 5 )
+    'beep boop beepfoo'
+
+    See Also
+    --------
+
