@@ -132,7 +132,6 @@ bool = isWellFormedString( null );
 
 <section class="related">
 
-
 </section>
 
 <!-- /.related -->
@@ -142,7 +141,6 @@ bool = isWellFormedString( null );
 <section class="links">
 
 <!-- <related-links> -->
-
 
 <!-- </related-links> -->
 
