@@ -222,6 +222,10 @@
 "003",@stdlib/array-base-copy
 "1s6",@stdlib/array/base/count-falsy
 "1s7",@stdlib/array-base-count-falsy
+"1sO",@stdlib/array/base/count-if
+"1sP",@stdlib/array-base-count-if
+"1sQ",@stdlib/array/base/count-same-value-zero
+"1sR",@stdlib/array-base-count-same-value-zero
 "1s8",@stdlib/array/base/count-same-value
 "1s9",@stdlib/array-base-count-same-value
 "1sA",@stdlib/array/base/count-truthy
@@ -448,6 +452,8 @@
 "1iZ",@stdlib/array-base-unarynd
 "00I",@stdlib/array/base/unitspace
 "00J",@stdlib/array-base-unitspace
+"1sS",@stdlib/array/base/with
+"1sT",@stdlib/array-base-with
 "1Zc",@stdlib/array/base/zero-to
 "1Zd",@stdlib/array-base-zero-to
 "00K",@stdlib/array/base/zeros
@@ -1023,6 +1029,8 @@
 "08D",@stdlib/assert-is-nonnegative-number-array
 "08E",@stdlib/assert/is-nonnegative-number
 "08F",@stdlib/assert-is-nonnegative-number
+"1sU",@stdlib/assert/is-nonpositive-finite
+"1sV",@stdlib/assert-is-nonpositive-finite
 "08G",@stdlib/assert/is-nonpositive-integer-array
 "08H",@stdlib/assert-is-nonpositive-integer-array
 "08I",@stdlib/assert/is-nonpositive-integer
@@ -1087,6 +1095,8 @@
 "09B",@stdlib/assert-is-property-key
 "09C",@stdlib/assert/is-prototype-of
 "09D",@stdlib/assert-is-prototype-of
+"1sW",@stdlib/assert/is-ragged-nested-array
+"1sX",@stdlib/assert-is-ragged-nested-array
 "09E",@stdlib/assert/is-range-error
 "09F",@stdlib/assert-is-range-error
 "09G",@stdlib/assert/is-read-only-property-in
@@ -1215,6 +1225,8 @@
 "0At",@stdlib/assert-is-vector-like
 "0Au",@stdlib/assert/is-web-worker
 "0Av",@stdlib/assert-is-web-worker
+"1sY",@stdlib/assert/is-well-formed-string
+"1sZ",@stdlib/assert-is-well-formed-string
 "0Aw",@stdlib/assert/is-whitespace
 "0Ax",@stdlib/assert-is-whitespace
 "0Ay",@stdlib/assert/is-windows
@@ -1600,6 +1612,8 @@
 "1aV",@stdlib/complex-base-cast-return
 "1aW",@stdlib/complex/base
 "1aX",@stdlib/complex-base
+"1sa",@stdlib/complex/base/parse
+"1sb",@stdlib/complex-base-parse
 "0Ga",@stdlib/complex/base/wrap-function
 "0Gb",@stdlib/complex-base-wrap-function
 "0Gc",@stdlib/complex/cmplx
@@ -1623,6 +1637,10 @@
 "0Gu",@stdlib/complex/imagf
 "0Gv",@stdlib/complex-imagf
 "0Gx",@stdlib/complex
+"1sc",@stdlib/complex/parse-float32
+"1sd",@stdlib/complex-parse-float32
+"1se",@stdlib/complex/parse-float64
+"1sf",@stdlib/complex-parse-float64
 "0Gy",@stdlib/complex/promotion-rules
 "0Gz",@stdlib/complex-promotion-rules
 "0H0",@stdlib/complex/real
@@ -2226,6 +2244,8 @@
 "0QB",@stdlib/iter-unitspace
 "0QC",@stdlib/iter/unshift
 "0QD",@stdlib/iter-unshift
+"1sg",@stdlib/iter/until-each
+"1sh",@stdlib/iter-until-each
 "1mu",@stdlib/iter/while-each
 "1mv",@stdlib/iter-while-each
 "0QE",@stdlib/math/base/assert/int32-is-even
@@ -2512,6 +2532,8 @@
 "0UL",@stdlib/math-base-special-cround
 "0UM",@stdlib/math/base/special/croundn
 "0UN",@stdlib/math-base-special-croundn
+"1si",@stdlib/math/base/special/csc
+"1sj",@stdlib/math-base-special-csc
 "0UO",@stdlib/math/base/special/csch
 "0UP",@stdlib/math-base-special-csch
 "0UQ",@stdlib/math/base/special/csignum
@@ -2942,6 +2964,8 @@
 "0an",@stdlib/math-iter-sequences-squares
 "0ao",@stdlib/math/iter/sequences/triangular
 "0ap",@stdlib/math-iter-sequences-triangular
+"1sk",@stdlib/math/iter/sequences/tribonacci
+"1sl",@stdlib/math-iter-sequences-tribonacci
 "0aq",@stdlib/math/iter/special/abs
 "0ar",@stdlib/math-iter-special-abs
 "0as",@stdlib/math/iter/special/abs2
@@ -6439,6 +6463,8 @@
 "1fz",@stdlib/string-base-for-each-code-point
 "1g0",@stdlib/string/base/for-each-grapheme-cluster
 "1g1",@stdlib/string-base-for-each-grapheme-cluster
+"1sm",@stdlib/string/base/for-each-right
+"1sn",@stdlib/string-base-for-each-right
 "1g2",@stdlib/string/base/for-each
 "1g3",@stdlib/string-base-for-each
 "1OO",@stdlib/string/base/format-interpolate
@@ -6477,6 +6503,12 @@
 "1jN",@stdlib/string-base-remove-last
 "1gQ",@stdlib/string/base/repeat
 "1gR",@stdlib/string-base-repeat
+"1so",@stdlib/string/base/replace-after-last
+"1sp",@stdlib/string-base-replace-after-last
+"1sq",@stdlib/string/base/replace-after
+"1sr",@stdlib/string-base-replace-after
+"1ss",@stdlib/string/base/replace-before-last
+"1st",@stdlib/string-base-replace-before-last
 "1gS",@stdlib/string/base/replace-before
 "1gT",@stdlib/string-base-replace-before
 "1gU",@stdlib/string/base/replace
@@ -6859,6 +6891,8 @@
 "1Td",@stdlib/utils-every-by-right
 "1Te",@stdlib/utils/every-by
 "1Tf",@stdlib/utils-every-by
+"1su",@stdlib/utils/every-in-by
+"1sv",@stdlib/utils-every-in-by
 "1Tg",@stdlib/utils/every
 "1Th",@stdlib/utils-every
 "1Ti",@stdlib/utils/extname
@@ -7003,6 +7037,8 @@
 "1Vx",@stdlib/utils-none-by-right
 "1Vy",@stdlib/utils/none-by
 "1Vz",@stdlib/utils-none-by
+"1sw",@stdlib/utils/none-own-by
+"1sx",@stdlib/utils-none-own-by
 "1W0",@stdlib/utils/none
 "1W1",@stdlib/utils-none
 "1W2",@stdlib/utils/nonenumerable-properties-in
@@ -7104,6 +7140,8 @@
 "1Xb",@stdlib/utils-some-by-right
 "1Xc",@stdlib/utils/some-by
 "1Xd",@stdlib/utils-some-by
+"1sy",@stdlib/utils/some-in-by
+"1sz",@stdlib/utils-some-in-by
 "1Xe",@stdlib/utils/some
 "1Xf",@stdlib/utils-some
 "1Xg",@stdlib/utils/stack
