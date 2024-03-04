@@ -968,3 +968,6 @@
 "Fb","invalid option. `%s` option is missing a `%s` method. Option: `%s`.","TypeError"
 "Fc","invalid operation. If not provided an initial value, an array must contain at least one element.","Error"
 "Fd","invalid arguments. Must provide equal length array-like objects.","Error"
+"Fe","Index out of bounds","RangeError"
+"Ff","invalid option. `%s` option must be less than or equal to 64. Option: `%u`.","RangeError"
+"Fg","invalid argument. Unable to parse input string as a complex number. Value: `%s`.","Error"
