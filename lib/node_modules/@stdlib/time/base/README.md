@@ -76,6 +76,13 @@ var objectKeys = require( '@stdlib/utils/keys' );
 var ns = require( '@stdlib/time/base' );
 
 console.log( objectKeys( ns ) );
+
+// Parse a duration string
+var obj = ns.parseDuration( '1m3s10ms' );
+// returns { 'days': 0, 'hours': 0, 'minutes': 1, 'seconds': 3, 'milliseconds': 10 }
+
+obj = ns.parseDuration( '1m3s' );
+// returns { 'days': 0, 'hours': 0, 'minutes': 1, 'seconds': 3, 'milliseconds': 0 }
 ```
 
 </section>

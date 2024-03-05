@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -102,6 +102,99 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/minabs.h"
+```
+
+#### stdlib_base_minabs( x, y )
+
+Returns the minimum absolute value.
+
+```c
+double out = stdlib_base_minabs( -4.2, 3.14 );
+// returns 3.14
+
+out = stdlib_base_minabs( 0.0, -0.0 );
+// returns +0.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **y**: `[in] double` input value.
+
+```c
+double stdlib_base_minabs( const double x, const double y );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/minabs.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    double x;
+    double y;
+    double v;
+    int i;
+    
+    for ( i = 0; i < 100; i++ ) {
+        x = ( ( (double)rand() / (double)RAND_MAX ) * 1000.0 ) - 500.0;
+        y = ( ( (double)rand() / (double)RAND_MAX ) * 1000.0 ) - 500.0;
+        v = stdlib_base_minabs( x, y );
+        printf( "x: %lf, y: %lf, minabs(x, y): %lf\n", x, y, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
