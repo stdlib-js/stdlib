@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,34 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/assert/is_odd.h"
+#include <stdio.h>
+#include <stdbool.h>
 
-/**
-* Test if a finite double-precision floating-point number is an odd number.
-*
-* @module @stdlib/math/base/assert/is-odd
-*
-* @example
-* var isOdd = require( '@stdlib/math/base/assert/is-odd' );
-*
-* var bool = isOdd( 5.0 );
-* // returns true
-*
-* bool = isOdd( -2.0 );
-* // returns false
-*
-* bool = isOdd( 0.0 );
-* // returns false
-*
-* bool = isOdd( NaN );
-* // returns false
-*/
+int main( void ) {
+    const double x[] = { 5.0, -5.0, 3.14, -3.14, 0.0, 0.0/0.0 };
 
-// MODULES //
-
-var main = require( './main.js' );
-
-
-// EXPORTS //
-
-module.exports = main;
+    bool b;
+    int i;
+    for ( i = 0; i < 6; i++ ) {
+        b = stdlib_base_is_odd( x[ i ] );
+        printf( "Value: %lf. Is Odd? %s.\n", x[ i ], ( b ) ? "True" : "False" );
+    }
+}
