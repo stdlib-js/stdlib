@@ -33,7 +33,7 @@
 // VARIABLES //
 
 static const double MAX_INT = STDLIB_CONSTANT_FLOAT64_MAX_SAFE_INTEGER + 1.0;
-static const double HUGE = 1.0e+308;
+static const double HUGE_VALUE = 1.0e+308;
 
 
 // MAIN //
@@ -134,11 +134,11 @@ double stdlib_base_floorn( const double x, const int32_t n ) {
 	// If we overflow, return `x`, as the number of digits to the right of the decimal is too small (i.e., `x` is too large / lacks sufficient fractional precision) for there to be any effect when rounding...
 	if ( n < STDLIB_CONSTANT_FLOAT64_MIN_BASE10_EXPONENT ) {
 		s = pow( 10.0, - ( n + STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) ); // TODO: replace use of `pow` once have stdlib equivalent
-		y = ( x * HUGE ) * s; // order of operation matters!
+		y = ( x * HUGE_VALUE ) * s; // order of operation matters!
 		if ( stdlib_base_is_infinite( y ) ) {
 			return x;
 		}
-		return ( stdlib_base_floor( y ) / HUGE ) / s;
+		return ( stdlib_base_floor( y ) / HUGE_VALUE ) / s;
 	}
 	s = pow( 10.0, -n ); // TODO: replace use of `pow` once have stdlib equivalent
 	y = x * s;
