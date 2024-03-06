@@ -92,6 +92,7 @@
     "@stdlib/strided": "^0.2.1",
     "@stdlib/string": "^0.2.1",
     "@stdlib/symbol": "^0.2.1",
+    "@stdlib/string-base-reverse-grapheme-clusters": "^0.2.1",
     "@stdlib/time": "^0.2.1",
     "@stdlib/types": "^0.3.1",
     "@stdlib/utils": "^0.2.1",
