@@ -40,7 +40,8 @@
         "@stdlib/constants/float64/half-pi",
         "@stdlib/constants/float64/pinf",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/ln"
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/ellipk"
       ]
     },
     {
@@ -57,7 +58,8 @@
         "@stdlib/constants/float64/half-pi",
         "@stdlib/constants/float64/pinf",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/ln"
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/ellipk"
       ]
     },
     {
@@ -74,7 +76,8 @@
         "@stdlib/constants/float64/half-pi",
         "@stdlib/constants/float64/pinf",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/ln"
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/ellipk"
       ]
     }
   ]
