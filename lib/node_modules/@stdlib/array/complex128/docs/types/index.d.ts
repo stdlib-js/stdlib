@@ -895,6 +895,35 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	reduce<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
 
 	/**
+	* Applies a provided callback function to each element of the array, in reverse order, passing in the return value from the calculation on the following element and returning the accumulated result upon completion.
+	*
+	* @param reducer - callback function
+	* @param initialValue - initial value
+	* @returns accumulated result
+	*
+	* @example
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	* var cadd = require( '@stdlib/math/base/ops/cadd' );
+	*
+	* var arr = new Complex128Array( 3 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
+	*
+	* var z = arr.reduceRight( cadd );
+	* // returns <Complex128>
+	*
+	* var re = real( z );
+	* // returns 6.0
+	*
+	* var im = imag( z );
+	* // returns 6.0
+	*/
+	reduceRight<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
+
+	/**
 	* Reverses an array in-place.
 	*
 	* @returns reversed array

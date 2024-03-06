@@ -36,7 +36,7 @@
 * var bool = isBinaryString( '' );
 * // returns false
 */
-declare function isBinaryString( value: any ): value is string;
+declare function isBinaryString( value: any ): boolean;
 
 
 // EXPORTS //

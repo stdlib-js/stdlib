@@ -48,7 +48,7 @@ interface IsCubeNumber {
 	* var bool = isCubeNumber( null );
 	* // returns false
 	*/
-	( value: any ): value is number | Number;
+	( value: any ): boolean;
 
 	/**
 	* Tests if a value is a number primitive having a value which is a cube number.
@@ -64,7 +64,7 @@ interface IsCubeNumber {
 	* var bool = isCubeNumber.isPrimitive( new Number( 8.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): value is number;
+	isPrimitive( value: any ): boolean;
 
 	/**
 	* Tests if a value is a number object having a value which is a cube number.
@@ -80,7 +80,7 @@ interface IsCubeNumber {
 	* var bool = isCubeNumber.isObject( new Number( 8.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): value is Number;
+	isObject( value: any ): boolean;
 }
 
 /**
