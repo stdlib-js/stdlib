@@ -124,7 +124,7 @@ jobs:
       # Run C examples:
       - name: 'Run C examples'
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | sed "s|^|${GITHUB_WORKSPACE}/|" | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
             make examples-c-files FILES="${files}"
           fi
