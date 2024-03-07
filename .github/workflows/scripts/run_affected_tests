@@ -143,6 +143,13 @@ main() {
 		directories="${directories} ${required_by}"
 	fi
 
+	# Build native add-ons for affected packages (if applicable):
+	for pkg in ${directories}; do
+		if [ -f "lib/node_modules/@stdlib/${pkg}/binding.gyp" ]; then
+			NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
+		fi
+	done
+
 	# Find all test files in package directories:
 	files=$(find ${directories} -maxdepth 2 -wholename '**/test/test*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
 
