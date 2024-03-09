@@ -87,5 +87,4 @@ bool = isSameDateObject( d2, d4 );
 
 </section>
 
-
 <!-- /.examples -->
