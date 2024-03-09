@@ -1,0 +1,35 @@
+
+{{alias}}( x, separator )
+    Return a string created by joining array elements using a
+    specified separator.
+
+    If provided an array-like object having a `join` method, the function
+    defers execution to that method and assumes that the method has the
+    following signature:
+
+      x.join( separator )
+
+    If provided an array-like object without a `join` method, the function
+    manually constructs the output string.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    separator: string
+        Separator to be used.
+
+    Returns
+    -------
+    out: string
+        Joined string.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3, 4 ], ',' )
+    '1,2,3,4'
+
+    See Also
+    --------
+
