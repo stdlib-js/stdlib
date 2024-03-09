@@ -1,0 +1,27 @@
+
+{{alias}}( str[, p] )
+    Converts a string to sticky case.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+ 
+    p: number
+        Probability of capitalization.
+
+    Returns
+    -------
+    out: string
+        Sticky-cased string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello World!' )
+    <string>
+
+    > out = {{alias}}( 'I am a tiny little teapot' )
+    <string>
+    See Also
+    --------
+

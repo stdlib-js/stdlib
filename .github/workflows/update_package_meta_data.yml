@@ -83,6 +83,11 @@ jobs:
         run: |
           node lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories lib/node_modules/@stdlib
 
+      # Update gypfile field:
+      - name: 'Update gypfile field'
+        run: |
+          node lib/node_modules/@stdlib/_tools/package-json/scripts/update_gypfile lib/node_modules/@stdlib
+
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
         # Pin action to full length commit SHA
