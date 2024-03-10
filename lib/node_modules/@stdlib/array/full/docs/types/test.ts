@@ -26,7 +26,7 @@ import full = require( './index' );
 {
 	const z = new Complex128( 1.0, 2.0 );
 
-	full( 10, 1 ); // $ExpectType AnyArray
+	full( 10, 1 ); // $ExpectType Float64Array
 	full( 10, 1, 'float64' ); // $ExpectType Float64Array
 	full( 10, 1, 'float32' ); // $ExpectType Float32Array
 	full( 10, z, 'complex128' ); // $ExpectType Complex128Array
@@ -38,7 +38,8 @@ import full = require( './index' );
 	full( 10, 1, 'uint16' ); // $ExpectType Uint16Array
 	full( 10, 1, 'uint8' ); // $ExpectType Uint8Array
 	full( 10, 1, 'uint8c' ); // $ExpectType Uint8ClampedArray
-	full( 10, 1, 'generic' ); // $ExpectType any[]
+	full( 10, 1, 'generic' ); // $ExpectType number[]
+	full( 10, 'abc', 'generic' ); // $ExpectType string[]
 }
 
 // The compiler throws an error if the function is not provided a number for the first argument...

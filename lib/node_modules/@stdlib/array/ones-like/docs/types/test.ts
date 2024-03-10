@@ -37,6 +37,7 @@ import onesLike = require( './index' );
 	onesLike( new Uint16Array( [ 0, 0 ] ) ); // $ExpectType Uint16Array
 	onesLike( new Uint8Array( [ 0, 0 ] ) ); // $ExpectType Uint8Array
 	onesLike( new Uint8ClampedArray( [ 0, 0 ] ) ); // $ExpectType Uint8ClampedArray
+	onesLike( [ 'a', 'b', 'c' ] ); // $ExpectType number[]
 
 	onesLike( [ 0, 0 ], 'float64' ); // $ExpectType Float64Array
 	onesLike( [ 0, 0 ], 'float32' ); // $ExpectType Float32Array
@@ -50,6 +51,9 @@ import onesLike = require( './index' );
 	onesLike( [ 0, 0 ], 'uint8' ); // $ExpectType Uint8Array
 	onesLike( [ 0, 0 ], 'uint8c' ); // $ExpectType Uint8ClampedArray
 	onesLike( [ 0, 0 ], 'generic' ); // $ExpectType number[]
+	onesLike( new Int32Array( [ 0, 0 ] ), 'generic' ); // $ExpectType number[]
+	onesLike( [ 'a', 'b', 'c' ], 'generic' ); // $ExpectType number[]
+	onesLike( [ 'a', 'b', 'c' ], 'float64' ); // $ExpectType Float64Array
 }
 
 // The compiler throws an error if the function is not provided an array or typed array for the first argument...

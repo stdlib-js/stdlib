@@ -40,7 +40,7 @@
 * var bool = isRelativeURI( null );
 * // returns false
 */
-declare function isRelativeURI( value: any ): value is string;
+declare function isRelativeURI( value: any ): boolean;
 
 
 // EXPORTS //

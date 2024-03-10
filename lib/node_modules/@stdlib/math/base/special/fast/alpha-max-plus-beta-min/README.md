@@ -171,8 +171,6 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- <related-links> -->
 
-
-
 <!-- </related-links> -->
 
 </section>

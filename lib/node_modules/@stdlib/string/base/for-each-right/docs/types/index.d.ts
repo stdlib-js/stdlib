@@ -1,0 +1,93 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2024 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/**
+* Callback invoked for each UTF-16 code unit in a string.
+*
+* @returns result
+*/
+type Nullary = () => any;
+
+/**
+* Callback invoked for each UTF-16 code unit in a string.
+*
+* @param value - character
+* @returns result
+*/
+type Unary = ( value: string ) => any;
+
+/**
+* Callback invoked for each UTF-16 code unit in a string.
+*
+* @param value - character
+* @param index - character index
+* @returns result
+*/
+type Binary = ( value: string, index: number ) => any;
+
+/**
+* Callback invoked for each UTF-16 code unit in a string.
+*
+* @param value - character
+* @param index - character index
+* @param str - input string
+* @returns result
+*/
+type Ternary = ( value: string, index: number, str: string ) => any;
+
+/**
+* Callback invoked for each UTF-16 code unit in a string.
+*
+* @param value - character
+* @param index - character index
+* @param str - input string
+* @returns result
+*/
+type Callback = Nullary | Unary | Binary | Ternary;
+
+/**
+* Invokes a function for each UTF-16 code unit in a string iterating from right to left.
+*
+* ## Notes
+*
+* -   When invoked, the provided function is provided three arguments:
+*
+*     -   **value**: character.
+*     -   **index**: character index.
+*     -   **str**: input string.
+*
+* @param str - input string
+* @param clbk - function to invoke
+* @param thisArg - execution context
+* @returns input string
+*
+* @example
+* function log( value, index ) {
+*     console.log( '%d: %s', index, value );
+* }
+*
+* forEach( 'Hello, World!', log );
+*/
+declare function forEachRight( str: string, clbk: Callback, thisArg?: any ): string;
+
+
+// EXPORTS //
+
+export = forEachRight;
