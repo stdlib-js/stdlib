@@ -67,7 +67,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -83,6 +83,11 @@ jobs:
         run: |
           node lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories lib/node_modules/@stdlib
 
+      # Update gypfile field:
+      - name: 'Update gypfile field'
+        run: |
+          node lib/node_modules/@stdlib/_tools/package-json/scripts/update_gypfile lib/node_modules/@stdlib
+
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
         # Pin action to full length commit SHA
@@ -97,7 +102,7 @@ jobs:
       - name: 'Create pull request'
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@b1ddad2c994a25fbc81a28b3ec0e368bb2021c50 # v6.0.0
+        uses: peter-evans/create-pull-request@a4f52f8033a6168103c2538976c07b467e8163bc # v6.0.1
         with:
           title: 'Update package meta data'
           body: |

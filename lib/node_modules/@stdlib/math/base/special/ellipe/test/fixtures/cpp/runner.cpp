@@ -317,16 +317,16 @@ int main( void ) {
 	len = 4000;
 
 	// Allocate arrays:
-	x = (double*) malloc( len * sizeof(double) );
+	x = (double *) malloc( len * sizeof(double) );
 	if ( x == NULL ) {
 		printf( "Error allocating memory.\n" );
 		exit( 1 );
 	}
 
-	rand_array_f64( x, len, 0.0, 0.99);
+	rand_array_f64( x, len, 0.0, 0.99 );
 	generate( x, len, "medium_positive.json" );
 
-	rand_array_f64( x, len, 0.99, 0.999999);
+	rand_array_f64( x, len, 0.99, 0.999999 );
 	generate( x, len, "close_to_unity.json" );
 
 	// Free allocated memory:

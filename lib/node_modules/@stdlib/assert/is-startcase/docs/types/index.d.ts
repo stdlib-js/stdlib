@@ -34,7 +34,7 @@
 * bool = isStartcase( 'Beep and Boop' );
 * // returns false
 */
-declare function isStartcase( value: any ): value is string;
+declare function isStartcase( value: any ): boolean;
 
 
 // EXPORTS //

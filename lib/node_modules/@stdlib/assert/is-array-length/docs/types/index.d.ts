@@ -36,7 +36,7 @@
 * var bool = isArrayLength( 3.14 );
 * // returns false
 */
-declare function isArrayLength( value: any ): value is number;
+declare function isArrayLength( value: any ): boolean;
 
 
 // EXPORTS //
