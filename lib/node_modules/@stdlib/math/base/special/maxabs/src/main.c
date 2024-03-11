@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/maxabs.h"
+#include "stdlib/math/base/special/max.h"
 #include "stdlib/math/base/special/abs.h"
 
 /**
