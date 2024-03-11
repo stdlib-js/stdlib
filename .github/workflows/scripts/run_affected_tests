@@ -143,8 +143,8 @@ main() {
 		directories="${directories} ${required_by}"
 	fi
 
-	# Build native add-ons for affected packages (if applicable):
-	for pkg in ${directories}; do
+	# Build native add-ons for packages (if applicable):
+	for pkg in ${packages}; do
 		if [ -f "lib/node_modules/@stdlib/${pkg}/binding.gyp" ]; then
 			NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
 		fi
