@@ -107,6 +107,96 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/gammasgn.h"
+```
+
+#### stdlib_base_gammasgn( x )
+
+Returns the sign of the [gamma-function][@stdlib/math/base/special/gamma].
+
+```c
+double out = stdlib_base_gammasgn( 1.0 );
+// returns 1.0
+
+out = stdlib_base_gammasgn( -2.5 );
+// returns -1.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_gammasgn( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/gammasgn.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    double x;
+    double v;
+    int i;
+    
+    for ( i = 0; i < 100; i++ ) {
+        x = ( (double)rand() / (double)RAND_MAX ) * 100.0;
+        v = stdlib_base_gammasgn( x );
+        printf( "gammasgn%lf = %lf\n", x, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
