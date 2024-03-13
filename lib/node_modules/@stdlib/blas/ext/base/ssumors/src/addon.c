@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/blas/base/ssumors.h"
+#include "stdlib/blas/ext/base/ssumors.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
