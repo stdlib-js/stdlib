@@ -35,10 +35,10 @@
       ],
       "libpath": [],
       "dependencies": [
-        "stdlib/napi/export",
-        "stdlib/napi/argv",
-        "stdlib/napi/argv_int64",
-        "stdlib/napi/argv_strided_float32array"
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array"
       ]
     }
   ]
