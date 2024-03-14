@@ -112,6 +112,99 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/boxcox1p.h"
+```
+
+#### stdlib_base_boxcox1p( x, lambda )
+
+Computes a one-parameter [Box-Cox transformation][box-cox-transformation] of `1+x`.
+
+```c
+double out = stdlib_base_boxcox1p( 1.0, 2.5 );
+// returns ~1.8627
+
+out = stdlib_base_boxcox1p( 4.0, 2.5 );
+// returns ~21.9607
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **lambda**: `[in] double` power parameter.
+
+```c
+double stdlib_base_boxcox1p( const double x, const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/boxcox1p.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { -1.0, 10.0, 1.0 };
+    const double l[] = { -0.5, 5.0, 0.5 };
+
+    double b;
+    int i;
+    int j;
+    for ( i = 0; i < 3; i++ ) {
+        for ( j = 0; j < 3; j++ ){
+            b = stdlib_base_boxcox1p( x[ i ], l[ j ] );
+            printf ( "boxcox1p(%lf, %lf) = %lf\n", x[ i ], l[ j ], b );
+        }
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
