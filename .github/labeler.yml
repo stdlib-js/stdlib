@@ -41,5 +41,3 @@ Documentation:
 - changed-files:
   - any-glob-to-any-file: '**/repl.txt'
   - any-glob-to-any-file: '**/README.md'
-
-
