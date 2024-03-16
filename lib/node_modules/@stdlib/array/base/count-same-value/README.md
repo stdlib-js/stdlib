@@ -20,7 +20,7 @@ limitations under the License.
 
 # countSameValue
 
-> Count the number of elements that are equal to a given value in an array.
+> Count the number of elements in an array that are equal to a specified value.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,7 +42,7 @@ var countSameValue = require( '@stdlib/array/base/count-same-value' );
 
 #### countSameValue( x, value )
 
-Counts the number of elements that are equal to a given value in an array.
+Counts the number of elements in an array that are equal to a specified value.
 
 ```javascript
 var x = [ 0, 1, 0, 1, 2 ];
@@ -72,10 +72,12 @@ var out = countSameValue( x, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var sample = require( '@stdlib/random/sample' );
+var bernoulli = require( '@stdlib/random/array/bernoulli' );
 var countSameValue = require( '@stdlib/array/base/count-same-value' );
 
-var x = sample( [ 1, 2, 3, 4, 5 ] );
+var x = bernoulli( 10, 0.5, {
+    'dtype': 'generic'
+});
 console.log( x );
 
 var n = countSameValue( x, 1 );
