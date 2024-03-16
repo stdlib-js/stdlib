@@ -33,27 +33,27 @@ import isNonNegativeFinite = require( './index' );
 	isNonNegativeFinite( 2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isNonNegativeFinite.isPrimitive( new Number( 2 ) ); // $ExpectType boolean
 	isNonNegativeFinite.isPrimitive( 2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isNonNegativeFinite.isPrimitive(); // $ExpectError
 	isNonNegativeFinite.isPrimitive( 2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isObject method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isNonNegativeFinite.isObject( new Number( 2 ) ); // $ExpectType boolean
 	isNonNegativeFinite.isObject( 2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isNonNegativeFinite.isObject(); // $ExpectError
 	isNonNegativeFinite.isObject( 2, 123 ); // $ExpectError
