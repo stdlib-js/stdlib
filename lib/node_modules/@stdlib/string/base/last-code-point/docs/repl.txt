@@ -1,0 +1,29 @@
+
+{{alias}}( str, n )
+    Returns the last `n` Unicode code points of a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    n: integer
+        Number of Unicode code points to return.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'hello world', 1 )
+    'd'
+    > out = {{alias}}( 'JavaScript', 6 )
+    'Script'
+    > out = {{alias}}( 'अनुच्छेद', 1 )
+    'द'
+
+    See Also
+    --------
+

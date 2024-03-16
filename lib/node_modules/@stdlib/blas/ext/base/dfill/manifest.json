@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,7 @@
   ],
   "confs": [
     {
+      "task": "build",
       "src": [
         "./src/dfill.c"
       ],
@@ -37,10 +40,38 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
-        "@stdlib/napi/argv-float",
+        "@stdlib/napi/argv-double",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array"
       ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/dfill.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/dfill.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": []
     }
   ]
 }
