@@ -51,7 +51,7 @@ var out = countSameValueZero( x, 1 );
 // returns 2
 ```
 
-In contrast to an implementation using the strict equality operator `===`, the function distinguishes treats `NaNs` as the same value.
+In contrast to an implementation using the strict equality operator `===`, the function treats `NaNs` as the same value.
 
 ```javascript
 var x = [ NaN, NaN, NaN ];
