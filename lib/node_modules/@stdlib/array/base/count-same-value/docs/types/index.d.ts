@@ -23,11 +23,11 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
-* Counts the number of elements that are equal to a given value in an array.
+* Counts the number of elements in an array that are equal to a specified value.
 *
 * @param x - input array
-* @param value - given value
-* @returns number of elements that are equal to the given value
+* @param value - search value
+* @returns number of elements that are equal to a specified value
 *
 * @example
 * var x = [ 0, 1, 0, 1, 1 ];
