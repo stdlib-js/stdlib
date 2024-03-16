@@ -25,6 +25,13 @@ import { Collection } from '@stdlib/types/array';
 /**
 * Counts the number of elements in an array that are equal to a specified value.
 *
+* ## Notes
+*
+* -   The function uses the [SameValue Algorithm][ecma-262-same-value-algorithm], as specified in ECMAScript 5.
+* -   In contrast to the strict equality operator `===`, `-0` and `+0` are distinguishable and `NaNs` are the same.
+*
+* [ecma-262-same-value-algorithm]: http://ecma-international.org/ecma-262/5.1/#sec-9.12
+*
 * @param x - input array
 * @param value - search value
 * @returns number of elements that are equal to a specified value
