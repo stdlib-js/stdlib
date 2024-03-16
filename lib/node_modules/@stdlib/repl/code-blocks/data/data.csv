@@ -2465,7 +2465,7 @@ dayOfQuarter,"var day = dayOfQuarter()\nday = dayOfQuarter( new Date() )\nday = 
 dayOfYear,"var day = dayOfYear()\nday = dayOfYear( new Date() )\nday = dayOfYear( 12, 31, 2016 )\nday = dayOfYear( 'dec', 31, 2016 )\nday = dayOfYear( 'december', 31, 2016 )\n"
 daysInMonth,"var num = daysInMonth()\nnum = daysInMonth( 2 )\nnum = daysInMonth( 2, 2016 )\nnum = daysInMonth( 2, 2017 )\nnum = daysInMonth( 'feb', 2016 )\nnum = daysInMonth( 'february', 2016 )\n"
 daysInYear,"var num = daysInYear()\nnum = daysInYear( 2016 )\nnum = daysInYear( 2017 )\n"
-ddot,"var x = array( new Float64Array( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] ) );\nvar y = array( new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );\nddot( x, y )\n"
+ddot,"var xbuf = new Float64Array( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );\nvar x = array( xbuf );\nvar ybuf = new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );\nvar y = array( ybuf );\nddot( x, y )\n"
 debugSinkStream,"var s = debugSinkStream( { 'name': 'foo' } );\ns.write( 'a' );\ns.write( 'b' );\ns.write( 'c' );\ns.end();\n"
 debugSinkStream.factory,"var opts = { 'objectMode': true, 'highWaterMark': 64 };\nvar createStream = debugSinkStream.factory( opts );\n"
 debugSinkStream.objectMode,"var s = debugSinkStream.objectMode( { 'name': 'foo' } );\ns.write( { 'value': 'a' } );\ns.write( { 'value': 'b' } );\ns.write( { 'value': 'c' } );\ns.end();\n"
