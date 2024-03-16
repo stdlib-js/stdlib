@@ -1898,6 +1898,7 @@
 "@stdlib/assert/is-nonconfigurable-property-in",isNonConfigurablePropertyIn
 "@stdlib/assert/is-nonenumerable-property",isNonEnumerableProperty
 "@stdlib/assert/is-nonenumerable-property-in",isNonEnumerablePropertyIn
+"@stdlib/assert/is-nonnegative-finite",isNonNegativeFinite
 "@stdlib/assert/is-nonnegative-integer",isNonNegativeInteger
 "@stdlib/assert/is-nonnegative-integer-array",isNonNegativeIntegerArray
 "@stdlib/assert/is-nonnegative-number",isNonNegativeNumber
