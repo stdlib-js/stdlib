@@ -1,6 +1,9 @@
 
 {{alias}}( x, value )
-    Counts the number of elements that are equal to a given value in an array.
+    Counts the number of elements in an array that are equal to a specified
+    value.
+
+    The function treats `NaN` values as the same value.
 
     Parameters
     ----------
@@ -13,7 +16,7 @@
     Returns
     -------
     out: integer
-        Number of elements that are equal to the given value.
+        Number of elements that are equal to a specified value.
 
     Examples
     --------
