@@ -34,11 +34,11 @@
 * // returns 0.0
 */
 double stdlib_base_fast_asinh( const double x ) {
-	if ( x > 0.0 ) {
-		return stdlib_base_ln( x + ( stdlib_base_sqrt( x * x ) + 1.0 ) );
-	}
 	if ( x == 0.0 || stdlib_base_is_nan( x ) || stdlib_base_is_infinite( x ) ) {
 		return x;
 	}
-	return -stdlib_base_ln( -x + (stdlib_base_sqrt( x * x ) + 1.0 ) );
+	if ( x > 0.0 ) {
+		return stdlib_base_ln( x + ( stdlib_base_sqrt( (x*x) + 1.0 ) ) );
+	}
+	return -stdlib_base_ln( -x + ( stdlib_base_sqrt( (x*x) + 1.0 ) ) );
 }
