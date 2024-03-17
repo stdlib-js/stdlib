@@ -27,7 +27,7 @@
 * Computes the hyperbolic arccosine of a number.
 *
 * @param x    input value
-* @returns    hyperbolic arccosine (in radians)
+* @return     hyperbolic arccosine (in radians)
 *
 * @example
 * double v = stdlib_base_fast_acosh( 1.0 );
