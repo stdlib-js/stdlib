@@ -31,7 +31,7 @@
 * @param strideX  X stride length
 * @param Y        second array
 * @param strideY  Y stride length
-* @returns        the dot product
+* @return         the dot product
 */
 double c_ddot( const int N, const double *X, const int strideX, const double *Y, const int strideY ) {
 	double dot;

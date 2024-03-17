@@ -24,7 +24,7 @@
 * Computes the arccosine (in degrees) of a double-precision floating-point number.
 *
 * @param x    input value
-* @returns    arccosine (in degrees)
+* @return     arccosine (in degrees)
 *
 * @example
 * double v = stdlib_base_acosd( 0.0 );
