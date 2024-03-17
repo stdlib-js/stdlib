@@ -23,8 +23,8 @@
 /**
 * Computes the arcsine (in degrees) of a double-precision floating-point number.
 *
-* @param x - input value
-* @returns arcsine (in degrees)
+* @param x    input value
+* @return     arcsine (in degrees)
 *
 * @example
 * double v = stdlib_base_acotd( 0.0 );
