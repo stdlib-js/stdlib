@@ -24,7 +24,7 @@
 * Returns the integer corresponding to the significand of a single-precision floating-point number.
 *
 * @param x       input value
-* @returns       integer corresponding to the significand
+* @return        integer corresponding to the significand
 *
 * @example
 * #include <stdint.h>

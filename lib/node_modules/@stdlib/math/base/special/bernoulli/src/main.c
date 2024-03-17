@@ -163,7 +163,7 @@ int32_t MAX_BERNOULLI = 258;
 * Computes the nth Bernoulli number.
 *
 * @param n    input value
-* @returns    output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_bernoulli( 0 );

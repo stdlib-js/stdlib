@@ -24,7 +24,7 @@
 * Computes the arccotangent (in degrees) of a double-precision floating-point number.
 *
 * @param x    input value
-* @returns    arccotangent (in degrees)
+* @return     arccotangent (in degrees)
 *
 * @example
 * double v = stdlib_base_acotd( 0.0 );

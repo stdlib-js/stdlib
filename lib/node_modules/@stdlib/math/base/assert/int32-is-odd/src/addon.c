@@ -59,8 +59,8 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 		return NULL;
 	}
 
-	double x;
-	status = napi_get_value_double( env, argv[ 0 ], &x );
+	int32_t x;
+	status = napi_get_value_int32( env, argv[ 0 ], &x );
 	assert( status == napi_ok );
 
 	bool result = stdlib_base_int32_is_odd( x );

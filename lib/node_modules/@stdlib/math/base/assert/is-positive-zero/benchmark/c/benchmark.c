@@ -91,7 +91,7 @@ double rand_double() {
 * Tests if a numeric value is positive zero.
 *
 * @param x   value to test
-* @returns   boolean indicating if a numeric value is positive zero
+* @return    boolean indicating if a numeric value is positive zero
 */
 bool is_positive_zero( double x ) {
 	return ( 1.0/x == HUGE_VAL );
