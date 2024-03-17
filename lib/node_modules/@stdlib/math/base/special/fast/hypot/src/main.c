@@ -24,7 +24,7 @@
 *
 * @param x    number
 * @param y    number
-* @returns    hypotenuse
+* @return     hypotenuse
 *
 * @example
 * double h = stdlib_base_fast_hypot( -5.0, 12.0 );

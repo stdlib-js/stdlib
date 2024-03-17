@@ -58,7 +58,7 @@ static const double P4 = 0.145996192886612446982;  // 0x3fc2b000, 0xd4e4edd7
 * [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
 *
 * @param x    value at which to evaluate the polynomial
-* @returns    evaluated polynomial
+* @return     evaluated polynomial
 */
 static double polval( const double x ) {
 	if ( x == 0.0 ) {
