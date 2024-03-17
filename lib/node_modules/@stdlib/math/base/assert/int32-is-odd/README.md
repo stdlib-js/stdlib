@@ -123,10 +123,10 @@ out = stdlib_base_int32_is_odd( -2 );
 
 The function accepts the following arguments:
 
--   **x**: `[in] double` input value.
+-   **x**: `[in] int32_t` input value.
 
 ```c
-bool stdlib_base_int32_is_odd( const double x );
+bool stdlib_base_int32_is_odd( const int32_t x );
 ```
 
 </section>
