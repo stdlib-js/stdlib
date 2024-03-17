@@ -28,11 +28,11 @@
 * @return        maximum absolute value
 *
 * @example
-* double v = maxabs( 3.14, -4.2 );
+* double v = stdlib_base_maxabs( 3.14, -4.2 );
 * // returns 4.2
 *
 * @example
-* double v = maxabs( 0.0, -0.0 );
+* double v = stdlib_base_maxabs( 0.0, -0.0 );
 * // returns +0.0
 */
 double stdlib_base_maxabs( const double x, const double y ) {
