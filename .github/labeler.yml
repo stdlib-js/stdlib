@@ -18,8 +18,8 @@
 
 BLAS:
 - changed-files:
-  - any-glob-to-any-file: '**/blas/**/*'
+  - any-glob-to-all-files: '**/blas/**/*'
 
 Math:
 - changed-files:
-  - any-glob-to-any-file: '**/math/**/*'
+  - any-glob-to-all-files: '**/math/**/*'
