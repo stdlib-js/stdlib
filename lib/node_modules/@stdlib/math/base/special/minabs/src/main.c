@@ -28,11 +28,11 @@
 * @return        minimum absolute value
 *
 * @example
-* double v = minabs( 3.14, -4.2 );
+* double v = stdlib_base_minabs( 3.14, -4.2 );
 * // returns 3.14
 *
 * @example
-* double v = minabs( 0.0, -0.0 );
+* double v = stdlib_base_minabs( 0.0, -0.0 );
 * // returns +0.0
 */
 double stdlib_base_minabs( const double x, const double y ) {

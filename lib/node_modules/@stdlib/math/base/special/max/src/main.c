@@ -29,11 +29,11 @@
 * @return        maximum value
 *
 * @example
-* double v = max( 3.14, 4.2 );
+* double v = stdlib_base_max( 3.14, 4.2 );
 * // returns 4.2
 *
 * @example
-* double v = max( 0.0, -0.0 );
+* double v = stdlib_base_max( 0.0, -0.0 );
 * // returns 0.0
 */
 double stdlib_base_max( const double x, const double y ) {

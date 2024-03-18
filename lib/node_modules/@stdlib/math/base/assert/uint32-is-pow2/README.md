@@ -72,6 +72,98 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/assert/uint32_is_pow2.h"
+```
+
+#### stdlib_base_uint32_is_pow2( x )
+
+Tests whether an unsigned integer is a power of 2.
+
+```c
+#include <stdbool.h>
+
+bool out = stdlib_base_uint32_is_pow2( 5 );
+// returns false
+
+out = stdlib_base_uint32_is_pow2( 2 );
+// returns true
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] uint32_t` input value.
+
+```c
+bool stdlib_base_uint32_is_pow2( const uint32_t x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/assert/uint32_is_pow2.h"
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdint.h>
+
+int main( void ) {
+    const uint32_t x[] = { 0, 1, 2, 3, 4, 5, 8, 10, 16, 1024 };
+    bool b;
+    int i;
+
+    for ( i = 0; i < 9; i++ ) {
+        b = stdlib_base_uint32_is_pow2( x[ i ] );
+        printf( "Value: %u. is a power of 2? %s.\n", x[ i ], ( b ) ? "True" : "False" );
+    }
+}
+```
+
+</section>s
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
