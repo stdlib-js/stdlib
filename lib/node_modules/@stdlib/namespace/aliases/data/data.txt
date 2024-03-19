@@ -1898,6 +1898,7 @@ isNonConfigurableProperty
 isNonConfigurablePropertyIn
 isNonEnumerableProperty
 isNonEnumerablePropertyIn
+isNonNegativeFinite
 isNonNegativeInteger
 isNonNegativeIntegerArray
 isNonNegativeNumber
