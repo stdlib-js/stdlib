@@ -91,7 +91,7 @@ float rand_float() {
 * Tests if a numeric value is negative zero.
 *
 * @param x   value to test
-* @returns   boolean indicating if a numeric value is negative zero
+* @return    boolean indicating if a numeric value is negative zero
 */
 bool is_negative_zerof( float x ) {
 	return ( x == 0.0f && 1.0f/x == -INFINITY );

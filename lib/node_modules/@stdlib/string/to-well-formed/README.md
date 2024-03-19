@@ -99,7 +99,6 @@ result = str2wellformed( '-5' );
 
 <!-- <related-links> -->
 
-
 <!-- </related-links> -->
 
 </section>
