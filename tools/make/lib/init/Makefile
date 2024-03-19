@@ -35,7 +35,7 @@ include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 # @example
 # make init
 #/
-init: init-git-hooks init-eslint-plugins
+init: install-node-modules init-git-hooks init-eslint-plugins
 	$(QUIET) echo "Initialization successful."
 
 .PHONY: init
