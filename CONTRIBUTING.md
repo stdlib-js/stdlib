@@ -372,6 +372,16 @@ The project can **never** have enough tests. To address areas lacking sufficient
 
 7.  Submit the test as a [pull request][github-pull-request].
 
+Note that, for contributions targeting C implementations, you'll need to first compile the native add-on which provides the bridge between JavaScript and C (assuming that the package has a native add-on binding).
+
+```bash
+$ make install-node-addons NODE_ADDONS_PATTERN="math/base/special/sin"
+```
+
+where the pattern `math/base/special/sin` (note the differences from the filter pattern above!) matches any add-on whose absolute path contains `math/base/special/sin`.
+
+Once the add-on is compiled, you can follow steps 5-7 above.
+
 ### Writing Documentation
 
 > By contributing documentation to the project, you are agreeing to release it under the project [license][stdlib-license].
