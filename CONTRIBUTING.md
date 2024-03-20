@@ -240,7 +240,9 @@ $ git rebase upstream/develop
 
 Tests should accompany **all** bug fixes and features. For guidance on how to write tests, consult existing tests within the project.
 
-**Before** submitting a [pull request][github-pull-request] to the `upstream` repository, ensure that all tests pass, including linting. If [Git][git] hooks have been enabled,
+**Before** submitting a [pull request][github-pull-request] to the `upstream` repository, ensure that all tests pass, including linting. To run tests locally, consult the guidance [below](#writing-tests).
+
+If [Git][git] hooks have been enabled,
 
 <!-- run-disable -->
 
