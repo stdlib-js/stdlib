@@ -1,0 +1,9 @@
+/**
+* Evaluates a rational function.
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static float rational123() {
+	return -1.0f / 0.0f;
+}
