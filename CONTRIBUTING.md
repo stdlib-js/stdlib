@@ -118,7 +118,17 @@ Create a [GitHub account][github-signup]. The project uses GitHub exclusively fo
 $ git clone https://github.com/<username>/stdlib.git
 ```
 
-where `<username>` is your GitHub username. The repository has a large commit history, leading to slow download times. You can reduce the download time by limiting the clone [depth][git-clone-depth].
+where `<username>` is your GitHub username. When cloning, avoid cloning to a directory having spaces in its path. Because this project relies heavily on `make`, any spaces in the directory path will lead to errors and inevitable frustration.
+
+```text
+// Bad:
+/home/foo/bar/beep boop/stdlib
+
+// Good:
+/home/foo/bar/beep_boop/stdlib
+```
+
+The repository has a large commit history, leading to slow download times. You can reduce the download time by limiting the clone [depth][git-clone-depth].
 
 <!-- run-disable -->
 
