@@ -81,7 +81,6 @@ str = last( 'good night', 5 );
 
 * * *
 
-
 </section>
 
 <!-- /.related -->
@@ -91,7 +90,6 @@ str = last( 'good night', 5 );
 <section class="links">
 
 <!-- <related-links> -->
-
 
 <!-- </related-links> -->
 

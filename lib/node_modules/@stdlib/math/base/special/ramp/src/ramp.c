@@ -26,11 +26,11 @@
 * @return        function value
 *
 * @example
-* double v = ramp( 3.14 );
+* double v = stdlib_base_ramp( 3.14 );
 * // returns 3.14
 *
 * @example
-* double v = ramp( -3.14 );
+* double v = stdlib_base_ramp( -3.14 );
 * // returns 0.0
 */
 double stdlib_base_ramp( const double x ) {
