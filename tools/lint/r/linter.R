@@ -25,8 +25,8 @@
 # [1]: https://github.com/jimhester/lintr
 
 # Ensure that the `lintr` package is installed...
-if ( !require( "lintr", quietly = TRUE, character.only = TRUE ) ) {
-	install.packages( "lintr", repos = "http://lib.stat.cmu.edu/R/CRAN/", quiet = TRUE );
+if ( !require( 'lintr', quietly = TRUE, character.only = TRUE ) ) {
+	install.packages( 'lintr', repos = 'http://lib.stat.cmu.edu/R/CRAN/', quiet = TRUE );
 }
 
 # Get only the trailing command-line arguments:
@@ -34,8 +34,8 @@ args <- commandArgs( trailingOnly = TRUE );
 
 # Check that at least one filepath has been provided...
 n <- length( args );
-if ( n == 0 ) {
-	stop( "Must provide at least one file to lint.", call. = FALSE );
+if ( n == 0L ) {
+	stop( 'Must provide at least one file to lint.', call. = FALSE );
 }
 
 # Specify which linters to use...
@@ -65,7 +65,8 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	line_length_linter = lintr::line_length_linter( 200L ),
 
 	# Allow tabs:
-	no_tab_linter = NULL, # lintr::no_tab_linter(),
+	indentation_linter = NULL, # lintr::indentation_linter(),
+	whitespace_linter = NULL, # lintr::whitespace_linter(),
 
 	# Require that `file.path()` is used to construct safe and portable paths:
 	nonportable_path_linter = lintr::nonportable_path_linter(),
@@ -74,7 +75,7 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	object_length_linter = lintr::object_length_linter( 30L ),
 
 	# Require that object names conform to a single naming style (e.g., snake_case or lowerCamelCase):
-	object_name_linter = lintr::object_name_linter( "snake_case"),
+	object_name_linter = lintr::object_name_linter( 'snake_case' ),
 
 	# Require that closures have the proper usage using `checkUsage`:
 	object_usage_linter = lintr::object_usage_linter(),
@@ -89,7 +90,7 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	semicolon_linter = lintr::semicolon_linter( allow_trailing = TRUE ),
 
 	# Require that only single quotes be used to delimit strings:
-	single_quotes_linter = lintr::single_quotes_linter(),
+	quotes_linter = lintr::quotes_linter(delimiter = "'"),
 
 	# Allow spaces directly inside parentheses and square brackets:
 	spaces_inside_linter = NULL, # lintr::spaces_inside_linter(),
@@ -116,15 +117,15 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	undesirable_operator_linter = lintr::undesirable_operator_linter(),
 
 	# Ensure that the `c` function is not used without arguments or with a single constant:
-	unneeded_concatenation_linter = lintr::unneeded_concatenation_linter()
+	unnecessary_concatenation_linter = lintr::unnecessary_concatenation_linter()
 );
 
 # Lint each file...
-status <- 0;
-for ( i in 1:n ) {
+status <- 0L;
+for ( i in 1L:n ) {
 	results <- lintr::lint( args[ i ], linters = linters );
-	if ( length( results ) > 0 ) {
-		status <- 1;
+	if ( length( results ) > 0L ) {
+		status <- 1L;
 		print( results );
 	}
 }

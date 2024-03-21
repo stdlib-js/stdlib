@@ -118,7 +118,17 @@ Create a [GitHub account][github-signup]. The project uses GitHub exclusively fo
 $ git clone https://github.com/<username>/stdlib.git
 ```
 
-where `<username>` is your GitHub username. The repository has a large commit history, leading to slow download times. You can reduce the download time by limiting the clone [depth][git-clone-depth].
+where `<username>` is your GitHub username. When cloning, avoid cloning to a directory having spaces in its path. Because this project relies heavily on `make`, any spaces in the directory path will lead to errors and inevitable frustration.
+
+```text
+// Bad:
+/home/foo/bar/beep boop/stdlib
+
+// Good:
+/home/foo/bar/beep_boop/stdlib
+```
+
+The repository has a large commit history, leading to slow download times. You can reduce the download time by limiting the clone [depth][git-clone-depth].
 
 <!-- run-disable -->
 
@@ -152,7 +162,27 @@ And finally, add an `upstream` [remote][git-remotes] to allow syncing changes be
 $ git remote add upstream git://github.com/stdlib-js/stdlib.git
 ```
 
-#### Step 2: Branch
+#### Step 2: Initial Setup
+
+Install dependencies.
+
+<!-- run-disable -->
+
+```bash
+$ make install
+```
+
+Initialize Git hooks to enable automated development processes to run prior to authoring commits and pushing changes.
+
+<!-- run-disable -->
+
+```bash
+$ make init
+```
+
+Note that `make init` only needs to be run once; however, we repeat it below as **not** running it is a common omission by new contributors.
+
+#### Step 3: Branch
 
 For modifications intended to be included in stdlib, create a new local branch.
 
@@ -164,11 +194,11 @@ $ git checkout -b <branch>
 
 where `<branch>` is the branch name. Both the `master` and `develop` branches for the main stdlib project are protected, and direct modifications to these branches will **not** be accepted. Instead, all contributions should be made on non-master and non-develop local branches, including documentation changes and other non-code modifications. See the project [branching guide][stdlib-branching] for additional guidance.
 
-#### Step 3: Write
+#### Step 4: Write
 
 Start making your changes and/or implementing the new feature. Any text you write should follow the [text style guide][stdlib-style-guides-text], including comments and API documentation.
 
-#### Step 4: Commit
+#### Step 5: Commit
 
 Ensure that you have configured [Git][git] to know your name and email address.
 
@@ -190,7 +220,7 @@ $ git commit
 
 When writing commit messages, follow the Git [style guide][stdlib-style-guides-git]. Adherence to project commit conventions is necessary for project automation which automatically generates release notes and changelogs from commit messages.
 
-#### Step 5: Sync
+#### Step 6: Sync
 
 To incorporate recent changes from the `upstream` repository during development, you should [rebase][git-rebase] your local branch, reapplying your local commits on top of the current upstream `HEAD`. This procedure is in contrast to performing a standard [merge][git-merge], which may interleave development histories. The rationale is twofold:
 
@@ -206,11 +236,13 @@ $ git fetch upstream
 $ git rebase upstream/develop
 ```
 
-#### Step 6: Test
+#### Step 7: Test
 
 Tests should accompany **all** bug fixes and features. For guidance on how to write tests, consult existing tests within the project.
 
-**Before** submitting a [pull request][github-pull-request] to the `upstream` repository, ensure that all tests pass, including linting. If [Git][git] hooks have been enabled,
+**Before** submitting a [pull request][github-pull-request] to the `upstream` repository, ensure that all tests pass, including linting. To run tests locally, consult the guidance [below](#writing-tests).
+
+If [Git][git] hooks have been enabled,
 
 <!-- run-disable -->
 
@@ -222,7 +254,7 @@ linting should be automatically triggered prior to each commit, and test executi
 
 Any [pull requests][github-pull-request] which include failing tests and/or lint errors will **not** be accepted.
 
-#### Step 7: Push
+#### Step 8: Push
 
 Push your changes to your remote GitHub repository.
 
@@ -234,7 +266,7 @@ $ git push origin <branch>
 
 where `<branch>` is the name of your branch.
 
-#### Step 8: Pull Request
+#### Step 9: Pull Request
 
 Once your contribution is ready to be incorporated in the `upstream` repository, open a [pull request][github-pull-request] against the `develop` branch. One or more project contributors will review the contribution, provide feedback, and potentially request changes.
 
@@ -280,13 +312,13 @@ $ git commit -m "fixup! feat: add support for computing the absolute value"
 
 If the history needs modification, a contributor will modify the history during the merge process. The rationale for **not** rewriting public history is that doing so invalidates the commit history for anyone else who has pulled your changes, thus imposing additional burdens on collaborators to ensure that their local versions match the modified history.
 
-#### Step 9: Land
+#### Step 10: Land
 
 After any changes have been resolved and continuous integration tests have passed, a contributor will approve a [pull request][github-pull-request] for inclusion in the project. Once merged, the [pull request][github-pull-request] will be updated with the merge commit, and the [pull request][github-pull-request] will be closed.
 
 Note that, during the merge process, multiple commits will often be [squashed][git-rewriting-history].
 
-#### Step 10: Celebrate
+#### Step 11: Celebrate
 
 **Congratulations**! You are an official contributor to stdlib! Thank you for your hard work and patience!
 
@@ -316,7 +348,7 @@ The project can **never** have enough tests. To address areas lacking sufficient
     <!-- run-disable -->
 
     ```bash
-    $ make TESTS_FILTER=.*/<pattern>/.* test
+    $ make TESTS_FILTER=".*/<pattern>/.*" test
     ```
 
     where `<pattern>` is a pattern matching a particular path. For example, to test the base math `sin` package
@@ -324,7 +356,7 @@ The project can **never** have enough tests. To address areas lacking sufficient
     <!-- run-disable -->
 
     ```bash
-    $ make TESTS_FILTER=.*/math/base/special/sin/.* test
+    $ make TESTS_FILTER=".*/math/base/special/sin/.*" test
     ```
 
     where the pattern `.*/math/base/special/sin/.*` matches any test file whose absolute path contains `math/base/special/sin`.
@@ -334,13 +366,23 @@ The project can **never** have enough tests. To address areas lacking sufficient
     <!-- run-disable -->
 
     ```bash
-    $ make TESTS_FILTER=.*/<pattern>/.* test-cov
+    $ make TESTS_FILTER=".*/<pattern>/.*" test-cov
     $ make view-cov
     ```
 
     which opens the coverage report in your default web browser.
 
 7.  Submit the test as a [pull request][github-pull-request].
+
+Note that, for contributions targeting C implementations, you'll need to first compile the native add-on which provides the bridge between JavaScript and C (assuming that the package has a native add-on binding).
+
+```bash
+$ make install-node-addons NODE_ADDONS_PATTERN="math/base/special/sin"
+```
+
+where the pattern `math/base/special/sin` (note the differences from the filter pattern above!) matches any add-on whose absolute path contains `math/base/special/sin`.
+
+Once the add-on is compiled, you can follow steps 5-7 above.
 
 ### Writing Documentation
 
