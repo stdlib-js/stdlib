@@ -142,15 +142,15 @@ for ( i = 0; i < x.length; i++ ) {
 #include "stdlib/math/base/special/gamma_lanczos_sum_expg_scaled.h"
 ```
 
-#### gamma_lanczos_sum_expg_scaled( x )
+#### stdlib_base_gamma_lanczos_sum_expg_scaled( x )
 
 Calculates the Lanczos sum for the approximation of the [gamma function][gamma-function] (scaled by `exp(-g)`, where `g = 10.900511`).
 
 ```c
-double out = gamma_lanczos_sum_expg_scaled( 4.0 );
+double out = stdlib_base_gamma_lanczos_sum_expg_scaled( 4.0 );
 // returns ~0.018
 
-out = gamma_lanczos_sum_expg_scaled( -1.5 );
+out = stdlib_base_gamma_lanczos_sum_expg_scaled( -1.5 );
 // returns ~25.337
 ```
 
@@ -159,7 +159,7 @@ The function accepts the following arguments:
 -   **x**: `[in] double` input value.
 
 ```c
-double gamma_lanczos_sum_expg_scaled( const double x );
+double stdlib_base_gamma_lanczos_sum_expg_scaled( const double x );
 ```
 
 </section>
