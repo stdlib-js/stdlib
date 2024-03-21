@@ -3,13 +3,13 @@
     Adds a constant to each element in a double-precision floating-point strided
     array.
 
-    The `N` and `stride` parameters determine which elements in `x` are accessed
-    at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    If `N <= 0`, the function returns `x` unchanged.
+    If `N <= 0`, the function returns the strided array unchanged.
 
     Parameters
     ----------
@@ -23,39 +23,33 @@
         Input array.
 
     stride: integer
-        Index increment for `x`.
+        Index increment.
 
     Returns
     -------
     x: Float64Array
-        Input array `x`.
+        Input array.
 
     Examples
     --------
     // Standard Usage:
     > var x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ] );
-    > var alpha = 5.0;
-    > {{alias}}( x.length, alpha, x, 1 )
+    > {{alias}}( x.length, 5.0, x, 1 )
     <Float64Array>[ 3.0, 6.0, 8.0, 0.0, 9.0, 4.0, 2.0 ]
 
     // Using `N` and `stride` parameters:
     > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > alpha = 5.0;
-    > var stride = 2;
-    > {{alias}}( N, alpha, x, stride )
+    > {{alias}}( 3, 5.0, x, 2 )
     <Float64Array>[ 3.0, 1.0, 8.0, -5.0, 9.0, -1.0, -3.0 ]
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > alpha = 5.0;
-    > stride = 2;
-    > {{alias}}( N, alpha, x1, stride )
+    > {{alias}}( 3, 5.0, x1, 2 )
     <Float64Array>[ 3.0, 3.0, 1.0, 5.0, -1.0 ]
     > x0
     <Float64Array>[ 1.0, 3.0, 3.0, 1.0, 5.0, -1.0 ]
+
 
 {{alias}}.ndarray( N, alpha, x, stride, offset )
     Adds a constant to each element in a double-precision floating-point strided
@@ -77,30 +71,26 @@
         Input array.
 
     stride: integer
-        Index increment for `x`.
+        Index increment.
 
     offset: integer
-        Starting index of `x`.
+        Starting index.
 
     Returns
     -------
     x: Float64Array
-        Input array `x`.
+        Input array.
 
     Examples
     --------
     // Standard Usage:
     > var x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ] );
-    > var alpha = 5.0;
-    > {{alias}}.ndarray( x.length, alpha, x, 1, 0 )
+    > {{alias}}.ndarray( x.length, 5.0, x, 1, 0 )
     <Float64Array>[ 3.0, 6.0, 8.0, 0.0, 9.0, 4.0, 2.0 ]
 
     // Using an index offset:
     > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > alpha = 5.0;
-    > var stride = 2;
-    > {{alias}}.ndarray( N, alpha, x, stride, 1 )
+    > {{alias}}.ndarray( 3, 5.0, x, 2, 1 )
     <Float64Array>[ 1.0, 3.0, 3.0, 1.0, 5.0, -1.0 ]
 
     See Also
