@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/special/bernoulli.h"
 #include <stdio.h>
+#include <stdint.h>
 
 int main( void ) {
 	int32_t i;

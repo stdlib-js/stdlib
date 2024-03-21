@@ -32,6 +32,9 @@ jobs:
     # Define job name:
     name: 'Labeler'
 
+    # Only run this job if the pull request did not have label `automated-pr`:
+    if: contains(github.event.pull_request.labels.*.name, 'automated-pr') == false
+
     # Define job permissions:
     permissions:
       contents: read

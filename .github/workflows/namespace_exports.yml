@@ -21,12 +21,6 @@ name: namespace_exports
 
 # Workflow triggers:
 on:
-  pull_request_target:
-    branches:
-      - develop
-    types:
-      - closed
-
   # Allow the workflow to be manually run:
   workflow_dispatch:
 

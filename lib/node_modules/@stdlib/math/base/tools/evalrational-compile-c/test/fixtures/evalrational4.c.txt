@@ -1,0 +1,36 @@
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static double evalrational( const double x ) {
+	double ax;
+	double ix;
+	double s1;
+	double s2;
+	if ( x == 0.0 ) {
+		return -1.0 / 0.0;
+	}
+	if ( x < 0.0 ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0 ) {
+		s1 = -1.0 + (x * (2.5 + (x * (3.14 + (x * -1.0)))));
+		s2 = 0.0 + (x * (-3.5 + (x * (2.2 + (x * 1.25)))));
+	} else {
+		ix = 1.0 / x;
+		s1 = -1.0 + (ix * (3.14 + (ix * (2.5 + (ix * -1.0)))));
+		s2 = 1.25 + (ix * (2.2 + (ix * (-3.5 + (ix * 0.0)))));
+	}
+	return s1 / s2;
+}
