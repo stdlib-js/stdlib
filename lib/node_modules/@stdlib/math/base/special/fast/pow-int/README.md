@@ -207,6 +207,7 @@ double stdlib_base_fast_pow( const double x, const int32_t y );
 #include "stdlib/math/base/special/fast/pow.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdint.h>
 
 int main( void ) {
     const double x[] = { 3.14, 2.0, 2.0, 0.0 };

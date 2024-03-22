@@ -39,7 +39,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, stride, argv, 1 );
 
 	napi_value v;
-	napi_status status = napi_create_double( env, (double)stdlib_strided_ssumkbn( N, (float *)X, stride ), &v );
+	napi_status status = napi_create_double( env, (double)stdlib_strided_ssumkbn( N, X, stride ), &v );
 	assert( status == napi_ok );
 
 	return v;
