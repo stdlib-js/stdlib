@@ -19,6 +19,7 @@
 /**
 * Benchmark `nonfibonacci`.
 */
+#include "stdlib/math/base/special/nonfibonacci.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -85,32 +86,6 @@ double rand_double() {
 	int r = rand();
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }
-
-/**
-* Computes the nth non-Fibonacci number.
-*
-* @param n   Fibonacci number
-* @return function result
-*/
-double nonfibonacci( int n ) {
-	double sqrt5;
-	double lphi;
-	double phi;
-	double dn;
-	double a;
-	double b;
-
-	phi = 1.618033988749895;
-	lphi = log( phi );
-
-	sqrt5 = sqrt( 5.0 );
-	dn = (double)n + 1;
-
-	a = log( dn*sqrt5 ) / lphi;
-	b = (sqrt5 * ( dn+a )) - 5.0 + (3.0/dn);
-	return floor( n + (log( b )/lphi) - 2.0 );
-}
-
 /**
 * Runs a benchmark.
 *
@@ -126,7 +101,7 @@ double benchmark() {
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		x = (int)floor( (100.0*rand_double()) + 1.0 );
-		y = nonfibonacci( x );
+		y = stdlib_base_nonfibonacci( x );
 		if ( y < 0 ) {
 			printf( "should return a nonnegative integer\n" );
 			break;
