@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,7 @@
   ],
   "confs": [
     {
+      "task": "build",
       "src": [
         "./src/dapxsumkbn.c"
       ],
@@ -35,10 +38,11 @@
       ],
       "libpath": [],
       "dependencies": [
-        "stdlib/napi/export.h",
-        "stdlib/napi/argv.h",
-        "stdlib/napi/argv_int64.h",
-        "stdlib/napi/argv_strided_float64array.h"
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-strided-float64array"
       ]
     },
     {
