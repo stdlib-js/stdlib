@@ -44,19 +44,19 @@ Adds a constant to each single-precision floating-point strided array element an
 var Float32Array = require( '@stdlib/array/float32' );
 
 var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
-var N = x.length;
 
-var v = sdsapxsumpw( N, 5.0, x, 1 );
+var v = sdsapxsumpw( 3, 5.0, x, 1 );
 // returns 16.0
 ```
 
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
+-   **alpha**: scalar constant.
 -   **x**: input [`Float32Array`][@stdlib/array/float32].
 -   **stride**: index increment for `x`.
 
-The `N` and `stride` parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of every other element in `x`,
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of every other element in the strided array,
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -89,9 +89,8 @@ Adds a constant to each single-precision floating-point strided array element an
 var Float32Array = require( '@stdlib/array/float32' );
 
 var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
-var N = x.length;
 
-var v = sdsapxsumpw.ndarray( N, 5.0, x, 1, 0 );
+var v = sdsapxsumpw.ndarray( 3, 5.0, x, 1, 0 );
 // returns 16.0
 ```
 
@@ -99,7 +98,7 @@ The function has the following additional parameters:
 
 -   **offset**: starting index for `x`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to access every other value in `x` starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameter supports indexing semantics based on a starting index. For example, to access every other value in the strided array starting from the second value
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
