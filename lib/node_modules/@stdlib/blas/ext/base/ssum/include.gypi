@@ -36,7 +36,7 @@
 
     # Source files:
     'src_files': [
-      '<(src_dir)/addon.cpp',
+      '<(src_dir)/addon.c',
       '<!@(node -e "var arr = require(\'@stdlib/utils/library-manifest\')(\'./manifest.json\',{},{\'basedir\':process.cwd(),\'paths\':\'posix\'}).src; for ( var i = 0; i < arr.length; i++ ) { console.log( arr[ i ] ); }")',
     ],
 
