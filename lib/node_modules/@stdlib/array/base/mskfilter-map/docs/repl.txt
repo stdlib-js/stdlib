@@ -1,0 +1,84 @@
+
+{{alias}}( x, mask, fcn[, thisArg] )
+    Applies a mask to a provided input array and returns a new array after
+    applying a mapping function.
+
+    If a mask array element is truthy, the corresponding element in `x` is
+    included in the output array; otherwise, the corresponding element in `x`
+    is "masked" and thus excluded from the output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    mask: ArrayLikeObject
+        Mask array.
+
+    fcn: Function
+        Function to apply.
+
+    thisArg: any (optional)
+        Function execution context.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, -2, -3, 4 ];
+    > var y = {{alias}}( x, [ 0, 1, 0, 1 ], {{alias:@stdlib/math/base/special/abs}} )
+    [ 2, 4 ]
+
+
+{{alias}}.assign( x, mask, out, stride, offset, fcn[, thisArg] )
+    Applies a mask and mapping function to a provided input array and assigns
+    results to elements in a provided output array.
+
+    If a mask array element is truthy, the corresponding element in `x` is
+    included in the output array; otherwise, the corresponding element in `x`
+    is "masked" and thus excluded from the output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    mask: ArrayLikeObject
+        Mask array.
+
+    out: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array offset.
+
+    fcn: Function
+        Function to apply.
+
+    thisArg: any (optional)
+        Function execution context.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = [ -1, -2, -3, -4 ];
+    > var m = [ 0, 1, 0, 1 ];
+    > var out = [ 0, 0, 0, 0 ];
+    > var arr = {{alias}}.assign( x, m, out, 2, 0, {{alias:@stdlib/math/base/special/abs}} )
+    [ 2, 0, 4, 0 ]
+    > var bool = ( arr === out )
+    true
+
+    See Also
+    --------
+
