@@ -18,6 +18,10 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { Collection } from '@stdlib/types/array';
+
 /**
 * Interface describing function options.
 */
@@ -25,7 +29,7 @@ interface Options {
 	/**
 	* Input value floating-point data type (e.g., `double` or `float`). Default: `'double'`.
 	*/
-	dtype?: string;
+	dtype?: 'double' | 'float';
 
 	/**
 	* Function name. Default: `'evalpoly'`.
@@ -48,7 +52,7 @@ interface Options {
 * var str = compile( P, Q );
 * // returns <string>
 */
-declare function compile( P: Array<number>, Q: Array<number>, options?: Options ): string;
+declare function compile( P: Collection<number>, Q: Collection<number>, options?: Options ): string;
 
 
 // EXPORTS //
