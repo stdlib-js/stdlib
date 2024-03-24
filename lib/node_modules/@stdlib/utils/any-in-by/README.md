@@ -137,7 +137,6 @@ var mean = context.sum / context.count;
 
 </section>
 
-
 <!-- /.notes -->
 
 <!-- Package usage examples. -->

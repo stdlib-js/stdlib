@@ -36,16 +36,20 @@ limitations under the License.
 var compile = require( '@stdlib/math/base/tools/evalpoly-compile' );
 ```
 
-#### compile( c )
+#### compile( c\[, options] )
 
-Compiles a module `string` containing an exported function which evaluates a [polynomial][@stdlib/math/base/tools/evalpoly] having coefficients `c`.
+Compiles a module string containing an exported function which evaluates a [polynomial][@stdlib/math/base/tools/evalpoly] having coefficients `c`.
 
 ```javascript
 var str = compile( [ 3.0, 2.0, 1.0 ] );
 // returns <string>
 ```
 
-In the example above, the output `string` would correspond to the following module:
+The function supports the following `options`:
+
+-   **dtype**: input argument floating-point data type (e.g., `float64` or `float32`). Default: `'float64'`.
+
+In the example above, the output string would correspond to the following module:
 
 <!-- eslint-disable no-unused-expressions -->
 
@@ -71,7 +75,7 @@ function evalpoly( x ) {
     if ( x === 0.0 ) {
         return 3.0;
     }
-    return 3.0 + (x * (2.0 + (x * 1.0))); // eslint-disable-line max-len
+    return 3.0 + (x * (2.0 + (x * 1.0)));
 }
 
 
@@ -81,6 +85,55 @@ module.exports = evalpoly;
 ```
 
 The coefficients should be ordered in **ascending** degree, thus matching summation notation.
+
+By default, the function assumes double-precision floating-point arithmetic. To emulate single-precision floating-point arithmetic, set the `dtype` option to `'float32'`.
+
+```javascript
+var str = compile( [ 3.0, 2.0, 1.0 ], {
+    'dtype': 'float32'
+});
+// returns <string>
+```
+
+In the previous example, the output string would correspond to the following module:
+
+<!-- eslint-disable no-unused-expressions -->
+
+```javascript
+'use strict';
+
+// MODULES //
+
+var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
+
+
+// MAIN //
+
+/**
+* Evaluates a polynomial.
+*
+* ## Notes
+*
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @private
+* @param {number} x - value at which to evaluate the polynomial
+* @returns {number} evaluated polynomial
+*/
+function evalpoly( x ) {
+    if ( x === 0.0 ) {
+        return 3.0;
+    }
+    return float64ToFloat32(3.0 + float64ToFloat32(x * float64ToFloat32(2.0 + float64ToFloat32(x * 1.0)))); // eslint-disable-line max-len
+}
+
+
+// EXPORTS //
+
+module.exports = evalpoly;
+```
 
 </section>
 
@@ -103,29 +156,14 @@ The coefficients should be ordered in **ascending** degree, thus matching summat
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var Float64Array = require( '@stdlib/array/float64' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var compile = require( '@stdlib/math/base/tools/evalpoly-compile' );
 
-var coef;
-var sign;
-var str;
-var i;
-
-// Create an array of random coefficients...
-coef = new Float64Array( 10 );
-for ( i = 0; i < coef.length; i++ ) {
-    if ( randu() < 0.5 ) {
-        sign = -1.0;
-    } else {
-        sign = 1.0;
-    }
-    coef[ i ] = sign * round( randu()*100.0 );
-}
+// Create an array of random coefficients:
+var coef = discreteUniform( 10, -100, 100 );
 
 // Compile a module for evaluating a polynomial:
-str = compile( coef );
+var str = compile( coef );
 console.log( str );
 ```
 

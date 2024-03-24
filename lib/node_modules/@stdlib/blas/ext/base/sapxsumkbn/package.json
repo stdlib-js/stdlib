@@ -76,5 +76,7 @@
     "single",
     "float32array"
   ],
-  "__stdlib__": {}
+  "__stdlib__": {
+    "wasm": false
+  }
 }
