@@ -76,6 +76,6 @@
     "float32array"
   ],
   "__stdlib__": {
-      "wasm": false
+    "wasm": false
   }
 }
