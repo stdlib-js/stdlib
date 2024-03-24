@@ -25,7 +25,7 @@ interface Options {
 	/**
 	* Input value floating-point data type (e.g., `double` or `float`). Default: `'double'`.
 	*/
-	dtype?: string;
+	dtype?: 'double' | 'float';
 
 	/**
 	* Function name. Default: `'evalpoly'`.
