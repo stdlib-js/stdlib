@@ -60,7 +60,7 @@ static double rational_pq( const double x ) {
 // END: rational_pq
 
 /**
-* Calculates the Lanczos sum for the approximation of the gamma function (scaled by `exp(-g)`, where `g = 10.900511`.
+* Calculates the Lanczos sum for the approximation of the gamma function (scaled by `exp(-g)`, where `g = 10.900511`).
 *
 * @param x    input value
 * @return     Lanczos sum approximation
