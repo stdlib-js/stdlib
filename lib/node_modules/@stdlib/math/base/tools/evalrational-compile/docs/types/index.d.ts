@@ -18,11 +18,26 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { Collection } from '@stdlib/types/array';
+
+/**
+* Interface describing function options.
+*/
+interface Options {
+	/**
+	* Input value floating-point data type (e.g., `float64` or `float32`). Default: `'float64'`.
+	*/
+	dtype?: 'float64' | 'float32';
+}
+
 /**
 * Compiles a module string which exports a function for evaluating a rational function.
 *
 * @param P - numerator polynomial coefficients sorted in ascending degree
 * @param Q - denominator polynomial coefficients sorted in ascending degree
+* @param options - function options
 * @returns module string exporting a function for evaluating a rational function
 *
 * @example
@@ -32,7 +47,7 @@
 * var str = compile( P, Q );
 * // returns <string>
 */
-declare function compile( P: Array<number>, Q: Array<number> ): string;
+declare function compile( P: Collection<number>, Q: Collection<number>, options?: Options ): string;
 
 
 // EXPORTS //
