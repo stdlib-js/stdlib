@@ -1,5 +1,10 @@
 'use strict';
 
+// MODULES //
+
+var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
+
+
 // VARIABLES //
 
 var C = [
@@ -531,10 +536,10 @@ function evalpoly( x ) {
 		return C[ 0 ];
 	}
 	i = END;
-	p = ( C[ i ] * x ) + C[ i-1 ];
+	p = float64ToFloat32( float64ToFloat32( C[ i ] * x ) + C[ i-1 ] );
 	i -= 2;
 	while ( i >= 0 ) {
-		p = ( p * x ) + C[ i ];
+		p = float64ToFloat32( float64ToFloat32( p * x ) + C[ i ] );
 		i -= 1;
 	}
 	return p;
