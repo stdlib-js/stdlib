@@ -54,7 +54,17 @@ import normhermitepoly = require( './index' );
 
 // Attached to main export is a `factory` method which returns a function...
 {
-	normhermitepoly.factory( 3 ); // $ExpectType EvaluationFunction
+	normhermitepoly.factory( 3 ); // $ExpectType PolynomialFunction
+}
+
+// The compiler throws an error if the `factory` method is provided a first argument which is not a number...
+{
+	normhermitepoly.factory( true ); // $ExpectError
+	normhermitepoly.factory( false ); // $ExpectError
+	normhermitepoly.factory( 'abc' ); // $ExpectError
+	normhermitepoly.factory( [] ); // $ExpectError
+	normhermitepoly.factory( {} ); // $ExpectError
+	normhermitepoly.factory( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided an unsupported number of arguments...
@@ -69,7 +79,7 @@ import normhermitepoly = require( './index' );
 	polyval( 1.0 ); // $ExpectType number
 }
 
-// The `factory` method returns a function which does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function returned by the `factory` method is provided a first argument which is not a number...
 {
 	const polyval = normhermitepoly.factory( 3 );
 	polyval( true ); // $ExpectError
@@ -78,14 +88,4 @@ import normhermitepoly = require( './index' );
 	polyval( [] ); // $ExpectError
 	polyval( {} ); // $ExpectError
 	polyval( ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the `factory` method is provided a first argument which is not a number...
-{
-	normhermitepoly.factory( true ); // $ExpectError
-	normhermitepoly.factory( false ); // $ExpectError
-	normhermitepoly.factory( 'abc' ); // $ExpectError
-	normhermitepoly.factory( [] ); // $ExpectError
-	normhermitepoly.factory( {} ); // $ExpectError
-	normhermitepoly.factory( ( x: number ): number => x ); // $ExpectError
 }
