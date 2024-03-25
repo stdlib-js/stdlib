@@ -18,8 +18,12 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { Collection } from '@stdlib/types/array';
+
 /**
-* Evaluates a polynomial.
+* Evaluates a polynomial using double-precision floating-point arithmetic.
 *
 * @param x - value at which to evaluate a polynomial
 * @returns evaluated polynomial
@@ -31,7 +35,7 @@ type EvaluationFunction = ( x: number ) => number;
 */
 interface EvalPoly {
 	/**
-	* Evaluates a polynomial.
+	* Evaluates a polynomial using double-precision floating-point arithmetic.
 	*
 	* ## Notes
 	*
@@ -48,10 +52,10 @@ interface EvalPoly {
 	* var v = evalpoly( [3.0,2.0,1.0], 10.0 ); // 3*10^0 + 2*10^1 + 1*10^2
 	* // returns 123.0
 	*/
-	( c: Array<number>, x: number ): number;
+	( c: Collection<number>, x: number ): number;
 
 	/**
-	* Generates a function for evaluating a polynomial.
+	* Generates a function for evaluating a polynomial using double-precision floating-point arithmetic.
 	*
 	* ## Notes
 	*
@@ -72,11 +76,11 @@ interface EvalPoly {
 	* v = polyval( 5.0 ); // => 3*5^0 + 2*5^1 + 1*5^2
 	* // returns 38.0
 	*/
-	factory( c: Array<number> ): EvaluationFunction;
+	factory( c: Collection<number> ): EvaluationFunction;
 }
 
 /**
-* Evaluates a polynomial.
+* Evaluates a polynomial using double-precision floating-point arithmetic.
 *
 * ## Notes
 *
