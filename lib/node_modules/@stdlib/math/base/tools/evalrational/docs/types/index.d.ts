@@ -18,20 +18,24 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { Collection } from '@stdlib/types/array';
+
 /**
-* Evaluates a rational function.
+* Evaluates a rational function using double-precision floating-point arithmetic.
 *
 * @param x - value at which to evaluate a rational function
 * @returns evaluated rational function
 */
-type EvaluationFunction = ( x: number ) => number;
+type PolynomialFunction = ( x: number ) => number;
 
 /**
 * Interface for evaluating rational functions.
 */
 interface EvalRational {
 	/**
-	* Evaluates a rational function, i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\).
+	* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)) using double-precision floating-point arithmetic.
 	*
 	* ## Notes
 	*
@@ -39,7 +43,6 @@ interface EvalRational {
 	* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
 	*
 	* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-	*
 	*
 	* @param P - numerator polynomial coefficients sorted in ascending degree
 	* @param Q - denominator polynomial coefficients sorted in ascending degree
@@ -63,17 +66,16 @@ interface EvalRational {
 	* var v = evalrational( P, Q, 6.0 ); // => ( -6*6^0 - 5*6^1 + 4*6^2 + 2*6^3 ) / ( 3*6^0 + 0.5*6^1 + 0*6^2 + 0*6^3 ) = (-6-30+144+432)/(3+3)
 	* // returns 90.0
 	*/
-	( P: Array<number>, Q: Array<number>, x: number ): number;
+	( P: Collection<number>, Q: Collection<number>, x: number ): number;
 
 	/**
-	* Generates a function for evaluating a rational function.
+	* Generates a function for evaluating a rational function using double-precision floating-point arithmetic.
 	*
 	* ## Notes
 	*
 	* -   The compiled function uses [Horner's rule][horners-method] for efficient computation.
 	*
 	* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-	*
 	*
 	* @param P - numerator polynomial coefficients sorted in ascending degree
 	* @param Q - denominator polynomial coefficients sorted in ascending degree
@@ -91,11 +93,11 @@ interface EvalRational {
 	* v = rational( 2.0 ); // => (20*2^0 + 8*2^1 + 3*2^2) / (10*2^0 + 9*2^1 + 1*2^2) = (20+16+12)/(10+18+4)
 	* // returns 1.5
 	*/
-	factory( P: Array<number>, Q: Array<number> ): EvaluationFunction;
+	factory( P: Collection<number>, Q: Collection<number> ): PolynomialFunction;
 }
 
 /**
-* Evaluates a rational function, i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\).
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)) using double-precision floating-point arithmetic.
 *
 * ## Notes
 *
@@ -103,7 +105,6 @@ interface EvalRational {
 * -   The implementation uses [Horner's rule][horners-method] for efficient computation.
 *
 * [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
 *
 * @param P - numerator polynomial coefficients sorted in ascending degree
 * @param Q - denominator polynomial coefficients sorted in ascending degree
