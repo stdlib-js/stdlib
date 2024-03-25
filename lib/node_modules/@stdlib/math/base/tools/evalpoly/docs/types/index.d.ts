@@ -28,7 +28,7 @@ import { Collection } from '@stdlib/types/array';
 * @param x - value at which to evaluate a polynomial
 * @returns evaluated polynomial
 */
-type EvaluationFunction = ( x: number ) => number;
+type PolynomialFunction = ( x: number ) => number;
 
 /**
 * Interface for evaluating polynomials.
@@ -49,7 +49,7 @@ interface EvalPoly {
 	* @returns evaluated polynomial
 	*
 	* @example
-	* var v = evalpoly( [3.0,2.0,1.0], 10.0 ); // 3*10^0 + 2*10^1 + 1*10^2
+	* var v = evalpoly( [ 3.0, 2.0, 1.0 ], 10.0 ); // 3*10^0 + 2*10^1 + 1*10^2
 	* // returns 123.0
 	*/
 	( c: Collection<number>, x: number ): number;
@@ -68,7 +68,7 @@ interface EvalPoly {
 	* @returns function for evaluating a polynomial
 	*
 	* @example
-	* var polyval = evalpoly.factory( [3.0,2.0,1.0] );
+	* var polyval = evalpoly.factory( [ 3.0, 2.0, 1.0 ] );
 	*
 	* var v = polyval( 10.0 ); // => 3*10^0 + 2*10^1 + 1*10^2
 	* // returns 123.0
@@ -76,7 +76,7 @@ interface EvalPoly {
 	* v = polyval( 5.0 ); // => 3*5^0 + 2*5^1 + 1*5^2
 	* // returns 38.0
 	*/
-	factory( c: Collection<number> ): EvaluationFunction;
+	factory( c: Collection<number> ): PolynomialFunction;
 }
 
 /**
@@ -94,11 +94,11 @@ interface EvalPoly {
 * @returns evaluated polynomial
 *
 * @example
-* var v = evalpoly( [3.0,2.0,1.0], 10.0 ); // 3*10^0 + 2*10^1 + 1*10^2
+* var v = evalpoly( [ 3.0, 2.0, 1.0 ], 10.0 ); // 3*10^0 + 2*10^1 + 1*10^2
 * // returns 123.0
 *
 * @example
-* var polyval = evalpoly.factory( [3.0,2.0,1.0] );
+* var polyval = evalpoly.factory( [ 3.0, 2.0, 1.0 ] );
 *
 * var v = polyval( 10.0 ); // => 3*10^0 + 2*10^1 + 1*10^2
 * // returns 123.0
