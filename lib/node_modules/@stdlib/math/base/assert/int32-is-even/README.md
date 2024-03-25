@@ -81,6 +81,98 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/assert/int32_is_even.h"
+```
+
+#### stdlib_base_int32_is_even( x )
+
+Tests if 32-bit integer is even.
+
+```c
+#include <stdbool.h>
+
+bool out = stdlib_base_int32_is_even( -2 );
+// returns true
+
+out = stdlib_base_int32_is_even( 5 );
+// returns false
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] int32_t` input value.
+
+```c
+bool stdlib_base_int32_is_even( const int32_t x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/assert/int32_is_even.h"
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdint.h>
+
+int main( void ) {
+    const int32_t x[] = { 5, -5, 3, -3, 0, 2 };
+
+    bool b;
+    int i;
+    for ( i = 0; i < 5; i++ ) {
+        b = stdlib_base_int32_is_even( x[ i ] );
+        printf( "Value: %d. int32 Is even? %s.\n", x[ i ], ( b ) ? "True" : "False" );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
