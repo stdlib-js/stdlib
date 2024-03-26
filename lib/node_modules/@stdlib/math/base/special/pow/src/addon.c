@@ -16,32 +16,7 @@
 * limitations under the License.
 */
 
-/* This is a generated file. Do not edit directly. */
-'use strict';
+#include "stdlib/math/base/special/pow.h"
+#include "stdlib/math/base/napi/binary.h"
 
-// MAIN //
-
-/**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-* @private
-* @param {number} x - value at which to evaluate the polynomial
-* @returns {number} evaluated polynomial
-*/
-function evalpoly( x ) {
-	if ( x === 0.0 ) {
-		return 0.5;
-	}
-	return 0.5 + (x * (-0.3333333333333333 + (x * 0.25)));
-}
-
-
-// EXPORTS //
-
-module.exports = evalpoly;
+STDLIB_MATH_BASE_NAPI_MODULE_DD_D( stdlib_base_pow )

@@ -16,32 +16,20 @@
 * limitations under the License.
 */
 
-/* This is a generated file. Do not edit directly. */
-'use strict';
+#include "stdlib/math/base/special/pow.h"
+#include <stdlib.h>
+#include <stdio.h>
 
-// MAIN //
+int main( void ) {
+	double out;
+	double b;
+	double x;
+	int i;
 
-/**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-* @private
-* @param {number} x - value at which to evaluate the polynomial
-* @returns {number} evaluated polynomial
-*/
-function evalpoly( x ) {
-	if ( x === 0.0 ) {
-		return 0.5;
+	for ( i = 0; i < 100; i++ ) {
+		b = ( ( (double)rand() / (double)RAND_MAX ) * 10.0 );
+		x = ( ( (double)rand() / (double)RAND_MAX ) * 10.0 ) - 5.0;
+		out = stdlib_base_pow( b, x );
+		printf( "pow(%lf, %lf) = %lf\n", b, x, out );
 	}
-	return 0.5 + (x * (-0.3333333333333333 + (x * 0.25)));
 }
-
-
-// EXPORTS //
-
-module.exports = evalpoly;
