@@ -115,6 +115,99 @@ for ( i = 0; i < y.length; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/boxcox1pinv.h"
+```
+
+#### stdlib_base_boxcox1pinv( y, lambda )
+
+Computes the inverse of a one-parameter [Box-Cox transformation][box-cox-transformation] of `1+x`.
+
+```c
+double out = stdlib_base_boxcox1pinv( 1.0, 2.5 );
+// returns ~0.6505
+
+out = stdlib_base_boxcox1pinv( 4.0, 2.5 );
+// returns ~1.6095
+```
+
+The function accepts the following arguments:
+
+-   **y**: `[in] double` input value.
+-   **lambda**: `[in] double` power parameter.
+
+```c
+double stdlib_base_boxcox1pinv ( const double y, const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/boxcox1pinv.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double y[] = { -1.0, 10.0, 1.0 };
+    const double l[] = { -0.5, 5.0, 0.5 };
+
+    double b;
+    int i;
+    int j;
+    for ( i = 0; i < 3; i++ ) {
+        for ( j = 0; j < 3; j++ ){
+            b = stdlib_base_boxcox1pinv( y[ i ], l[ j ] );
+            printf ( "boxcox1pinv(%lf, %lf) = %lf\n", y[ i ], l[ j ], b );
+        }
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">

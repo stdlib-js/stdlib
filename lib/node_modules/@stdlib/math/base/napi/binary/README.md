@@ -331,6 +331,86 @@ The function accepts the following arguments:
 void stdlib_math_base_napi_di_d( napi_env env, napi_callback_info info, double (*fcn)( double, int32_t ) );
 ```
 
+#### stdlib_math_base_napi_ii_i( env, info, fcn )
+
+Invokes a binary function accepting and returning signed 32-bit integers.
+
+```c
+#include <node_api.h>
+#include <stdint.h>
+
+// ...
+
+static int32_t mul( const int32_t x, const int32_t y ) {
+    return x * y;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_ii_i( env, info, mul );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] int32_t (*fcn)( int32_t, int32_t )` binary function.
+
+```c
+void stdlib_math_base_napi_ii_i( napi_env env, napi_callback_info info, int32_t (*fcn)( int32_t, int32_t ) );
+```
+
+#### stdlib_math_base_napi_ii_d( env, info, fcn )
+
+Invokes a binary function accepting signed 32-bit integers and returning a double-precision floating-point number.
+
+```c
+#include <node_api.h>
+#include <stdint.h>
+
+// ...
+
+static double mul( const int32_t x, const int32_t y ) {
+    return x * y;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_ii_d( env, info, mul );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] double (*fcn)( int32_t, int32_t )` binary function.
+
+```c
+void stdlib_math_base_napi_ii_d( napi_env env, napi_callback_info info, double (*fcn)( int32_t, int32_t ) );
+```
+
 #### stdlib_math_base_napi_fi_f( env, info, fcn )
 
 Invokes a binary function accepting a single-precision floating-point number and a signed 32-bit integer and returning a single-precision floating-point number.
@@ -493,6 +573,48 @@ STDLIB_MATH_BASE_NAPI_MODULE_DD_D( add );
 The macro expects the following arguments:
 
 -   **fcn**: `double (*fcn)( double, double )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_II_I( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a binary function accepting and returning signed 32-bit integers.
+
+```c
+static int32_t add( const int32_t x, const int32_t y ) {
+    return x + y;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_II_I( add );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `int32_t (*fcn)( int32_t, int32_t )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_II_D( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a binary function accepting signed 32-bit integers and returning a double-precision floating-point number.
+
+```c
+static double add( const int32_t x, const int32_t y ) {
+    return x + y;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_II_D( add );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `double (*fcn)( int32_t, int32_t )` binary function.
 
 When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
 

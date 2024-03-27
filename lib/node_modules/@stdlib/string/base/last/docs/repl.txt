@@ -1,0 +1,29 @@
+
+{{alias}}( str, n )
+    Returns the last `n` UTF-16 code units of a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    n: integer
+        Number of UTF-16 code units to return.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'hello', 1 )
+    'o'
+    > out = {{alias}}( 'JavaScript', 6 )
+    'Script'
+    > out = {{alias}}( 'foo bar', 10 )
+    'foo bar'
+
+    See Also
+    --------
+

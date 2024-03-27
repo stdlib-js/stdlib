@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/min.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 int main( void ) {
