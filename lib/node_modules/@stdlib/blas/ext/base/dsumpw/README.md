@@ -56,16 +56,14 @@ The function has the following parameters:
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
 -   **stride**: index increment for `x`.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to compute the sum of every other element in `x`,
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of every other element in `x`,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
-var N = floor( x.length / 2 );
 
-var v = dsumpw( N, x, 2 );
+var v = dsumpw( 4, x, 2 );
 // returns 5.0
 ```
 
@@ -75,14 +73,11 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var N = floor( x0.length / 2 );
-
-var v = dsumpw( N, x1, 2 );
+var v = dsumpw( 4, x1, 2 );
 // returns 5.0
 ```
 
@@ -108,12 +103,10 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
-var N = floor( x.length / 2 );
 
-var v = dsumpw.ndarray( N, x, 2, 1 );
+var v = dsumpw.ndarray( 4, x, 2, 1 );
 // returns 5.0
 ```
 
@@ -139,18 +132,11 @@ var v = dsumpw.ndarray( N, x, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var Float64Array = require( '@stdlib/array/float64' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dsumpw = require( '@stdlib/blas/ext/base/dsumpw' );
 
-var x;
-var i;
-
-x = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = round( randu()*100.0 );
-}
+var x = filledarrayBy( 10, 'float64', discreteUniform( 0, 100 ) );
 console.log( x );
 
 var v = dsumpw( x.length, x, 1 );
