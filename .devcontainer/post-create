@@ -20,3 +20,8 @@
 
 make install
 make init
+
+sudo apt-get update
+sudo apt-get install gfortran
+
+make install-deps-r
