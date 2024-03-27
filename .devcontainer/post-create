@@ -22,6 +22,6 @@ make install
 make init
 
 sudo apt-get update
-sudo apt-get install gfortran
+sudo apt-get install -y gfortran
 
 make install-deps-r
