@@ -18,6 +18,8 @@ limitations under the License.
 
 -->
 
+[![Open in GitHub Codespaces][github-codespaces-image]][github-codespaces-url]
+
 [![Open in Dev Containers][dev-container-image]][dev-container-url]
 
 # Development Container
@@ -56,9 +58,13 @@ This folder includes configuration for developing the project in a local contain
 
 [dev-container-image]: https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode
 
-[dev-container-url]: https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/stdlib-js/stdlib/
+[dev-container-url]: https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/stdlib-js/stdlib
 
 [github-codespaces]: https://github.com/features/codespaces
+
+[github-codespaces-image]: https://github.com/codespaces/badge.svg
+
+[github-codespaces-url]: https://codespaces.new/stdlib-js/stdlib
 
 </section>
 
