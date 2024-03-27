@@ -54,12 +54,10 @@ The `N` and `stride` parameters determine which elements in `x` are accessed at 
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 1.0, -2.0, 3.0, -4.0 ] );
-var N = floor( x.length / 2 );
 
-dsorthp( N, -1.0, x, 2 );
+dsorthp( 2, -1.0, x, 2 );
 // x => <Float64Array>[ 3.0, -2.0, 1.0, -4.0 ]
 ```
 
@@ -67,17 +65,15 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial array...
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 
 // Create an offset view...
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var N = floor( x0.length/2 );
 
 // Sort every other element...
-dsorthp( N, -1.0, x1, 2 );
+dsorthp( 2, -1.0, x1, 2 );
 // x0 => <Float64Array>[ 1.0, 4.0, 3.0, 2.0 ]
 ```
 
