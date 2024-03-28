@@ -1,8 +1,7 @@
 {
   "name": "stdlib - OSS Development",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-    "ghcr.io/devcontainers/features/python:1": {},
     "ghcr.io/rocker-org/devcontainer-features/r-apt:0": {},
     "ghcr.io/julialang/devcontainer-features/julia:1": {},
     "ghcr.io/marcozac/devcontainer-features/shellcheck:1": {},
