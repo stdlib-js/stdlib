@@ -42,7 +42,7 @@
     > var z = y.get( 0 );
     > var re = {{alias:@stdlib/complex/realf}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imag}}( z )
+    > var im = {{alias:@stdlib/complex/imagf}}( z )
     2.0
 
     // Advanced indexing:
@@ -52,7 +52,7 @@
     > z = y.get( 0 );
     > re = {{alias:@stdlib/complex/realf}}( z )
     5.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/imagf}}( z )
     6.0
 
     // Using typed array views:
@@ -64,7 +64,7 @@
     > z = y0.get( 2 );
     > re = {{alias:@stdlib/complex/realf}}( z )
     7.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/imagf}}( z )
     8.0
 
 
@@ -114,7 +114,7 @@
     > var z = y.get( 0 );
     > var re = {{alias:@stdlib/complex/realf}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imag}}( z )
+    > var im = {{alias:@stdlib/complex/imagf}}( z )
     2.0
 
     // Advanced indexing:
@@ -124,7 +124,7 @@
     > z = y.get( y.length-1 );
     > re = {{alias:@stdlib/complex/realf}}( z )
     3.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/imagf}}( z )
     4.0
 
     See Also
