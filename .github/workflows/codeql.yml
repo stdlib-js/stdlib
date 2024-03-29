@@ -45,6 +45,9 @@ jobs:
     # Define a display name:
     name: 'Analyze'
 
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine.
     #
     # ## Notes

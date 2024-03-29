@@ -129,11 +129,19 @@ var v = dnansumkbn.ndarray( 4, x, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var bernoulli = require( '@stdlib/random/base/bernoulli' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dnansumkbn = require( '@stdlib/blas/ext/base/dnansumkbn' );
 
-var x = filledarrayBy( 10, 'float64', discreteUniform( 0, 100 ) );
+function clbk() {
+    if ( bernoulli( 0.7 ) > 0 ) {
+        return discreteUniform( 0, 100 );
+    }
+    return NaN;
+}
+
+var x = filledarrayBy( 10, 'float64', clbk );
 console.log( x );
 
 var v = dnansumkbn( x.length, x, 1 );
