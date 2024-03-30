@@ -24,17 +24,8 @@
 # VARIABLES #
 
 # Find Rscript:
-RSCRIPT=$(command -v rscript 2>/dev/null)
+RSCRIPT=$(command -v Rscript 2>/dev/null)
 
-
-# FUNCTIONS #
-
-# Prints usage information.
-usage() {
-	echo '' >&2
-	echo 'Usage: check_lintr' >&2
-	echo '' >&2
-}
 
 # MAIN #
 

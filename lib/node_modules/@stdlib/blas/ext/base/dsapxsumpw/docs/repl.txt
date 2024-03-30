@@ -4,8 +4,8 @@
     element and computes the sum using pairwise summation with extended
     accumulation and returning an extended precision result.
 
-    The `N` and `stride` parameters determine which elements in `x` are accessed
-    at runtime.
+    The `N` and `stride` parameters determine which elements in 
+    the strided array are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -39,19 +39,16 @@
     16.0
 
     // Using `N` and `stride` parameters:
-    > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > var stride = 2;
-    > {{alias}}( N, 5.0, x, stride )
+    > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] )
+    > {{alias}}( 3, 5.0, x, 2 )
     16.0
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ] );
     > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > stride = 2;
-    > {{alias}}( N, 5.0, x1, stride )
+    > {{alias}}( 3, 5.0, x1, 2 )
     14.0
+
 
 {{alias}}.ndarray( N, alpha, x, stride, offset )
     Adds a constant to each single-precision floating-point strided array
@@ -94,8 +91,7 @@
 
     // Using offset parameter:
     > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, 5.0, x, 2, 1 )
+    > {{alias}}.ndarray( 3, 5.0, x, 2, 1 )
     14.0
 
     See Also

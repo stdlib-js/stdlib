@@ -51,6 +51,9 @@ jobs:
     # Define a display name:
     name: "Node.js v${{ matrix.NODE_VERSION }}"
 
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine:
     runs-on: ${{ matrix.OS }}
 
@@ -273,7 +276,7 @@ jobs:
     needs: test
 
     # Run this job regardless of the outcome of the prior job:
-    if: always()
+    if: success() || failure()
 
     # Set defaults:
     defaults:
