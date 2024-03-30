@@ -20,7 +20,7 @@ limitations under the License.
 
 # Normalized Hermite Polynomial
 
-> Evaluate a normalized [Hermite polynomial][hermite-polynomial].
+> Evaluate a normalized [Hermite polynomial][hermite-polynomial] using double-precision floating-point arithmetic.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -57,7 +57,7 @@ var normhermitepoly = require( '@stdlib/math/base/tools/normhermitepoly' );
 
 #### normhermitepoly( n, x )
 
-Evaluates a normalized [Hermite polynomial][hermite-polynomial] of degree `n`.
+Evaluates a normalized [Hermite polynomial][hermite-polynomial] of degree `n` using double-precision floating-point arithmetic.
 
 ```javascript
 var v = normhermitepoly( 1, 1.0 );
@@ -78,7 +78,7 @@ v = normhermitepoly( -1, 0.5 );
 
 #### normhermitepoly.factory( n )
 
-Returns a `function` for evaluating a normalized [Hermite polynomial][hermite-polynomial] of degree `n`.
+Returns a function for evaluating a normalized [Hermite polynomial][hermite-polynomial] of degree `n` using double-precision floating-point arithmetic.
 
 ```javascript
 var polyval = normhermitepoly.factory( 2 );
@@ -108,25 +108,46 @@ var v = polyval( 0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu');
+var uniform = require( '@stdlib/random/array/uniform' );
+var zeros = require( '@stdlib/array/zeros' );
+var dmap = require( '@stdlib/strided/base/dmap' );
+var logEach = require( '@stdlib/console/log-each' );
 var normhermitepoly = require( '@stdlib/math/base/tools/normhermitepoly' );
 
-var xx;
-var yy;
-var x;
-var y;
-var i;
-var j;
+// Generate random values at which to evaluate a polynomial:
+var x = uniform( 10, -50.0, 50.0, {
+    'dtype': 'float64'
+});
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*100.0) - 50.0;
-    for ( j = 1; j < 3; j++ ) {
-        y = normhermitepoly( j, x );
-        xx = x.toFixed(3);
-        yy = y.toFixed(3);
-        console.log( 'He_%d( %d ) = %d', j, xx, yy );
-    }
-}
+// Create a polynomial function of degree 1:
+var f = normhermitepoly.factory( 1 );
+
+// Allocate an output array:
+var y = zeros( x.length, 'float64' );
+
+// Evaluate the polynomial:
+dmap( x.length, x, 1, y, 1, f );
+logEach( 'He_%d(%.3f) = %.3f', 1, x, y );
+
+// Create a polynomial function of degree 2:
+f = normhermitepoly.factory( 2 );
+
+// Allocate an output array:
+y = zeros( x.length, 'float64' );
+
+// Evaluate the polynomial:
+dmap( x.length, x, 1, y, 1, f );
+logEach( 'He_%d(%.3f) = %.3f', 2, x, y );
+
+// Create a polynomial function of degree 3:
+f = normhermitepoly.factory( 3 );
+
+// Allocate an output array:
+y = zeros( x.length, 'float64' );
+
+// Evaluate the polynomial:
+dmap( x.length, x, 1, y, 1, f );
+logEach( 'He_%d(%.3f) = %.3f', 3, x, y );
 ```
 
 </section>
