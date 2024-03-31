@@ -40,6 +40,7 @@
       "dependencies": [
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-double",
         "@stdlib/napi/argv-strided-float64array",
         "@stdlib/napi/export"
       ]

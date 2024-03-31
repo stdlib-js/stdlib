@@ -43,6 +43,9 @@ jobs:
     # Define a display name:
     name: 'Retrieve npm Download Counts'
 
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
 
