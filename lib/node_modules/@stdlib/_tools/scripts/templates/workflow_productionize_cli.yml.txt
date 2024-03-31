@@ -339,8 +339,8 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        # Pin action to full length commit SHA corresponding to v2.0.0
-        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
+        # Pin action to full length commit SHA
+        uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -512,8 +512,8 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        # Pin action to full length commit SHA corresponding to v2.0.0
-        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
+        # Pin action to full length commit SHA
+        uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -691,8 +691,8 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        # Pin action to full length commit SHA corresponding to v2.0.0
-        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
+        # Pin action to full length commit SHA
+        uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -889,8 +889,8 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        # Pin action to full length commit SHA corresponding to v2.0.0
-        uses: act10ns/slack@ed1309ab9862e57e9e583e51c7889486b9a00b0f
+        # Pin action to full length commit SHA
+        uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}

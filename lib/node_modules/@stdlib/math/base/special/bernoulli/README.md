@@ -123,6 +123,94 @@ for ( i = 0; i < 280; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/bernoulli.h"
+```
+
+#### stdlib_base_bernoulli( n )
+
+Computes the nth [Bernoulli number][bernoulli-number].
+
+```c
+double out = stdlib_base_bernoulli( 0 );
+// returns 1.0
+
+out = stdlib_base_bernoulli( 1 );
+// returns 0.0
+```
+
+The function accepts the following arguments:
+
+-   **n**: `[in] int32_t` input value.
+
+```c
+double stdlib_base_bernoulli( const int32_t n );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/bernoulli.h"
+#include <stdio.h>
+#include <stdint.h>
+
+int main( void ) {
+    int32_t i;
+    double v;
+
+    for ( i = 0; i < 130; i++ ) {
+        v = stdlib_base_bernoulli( i );
+        printf( "bernoulli(%d) = %lf\n", i, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

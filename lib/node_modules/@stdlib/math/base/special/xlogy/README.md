@@ -89,6 +89,96 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/xlogy.h"
+```
+
+#### stdlib_base_xlogy( x, y )
+
+Computes `x * ln(y)` so that the result is `0` if `x = 0`.
+
+```c
+double v = stdlib_base_xlogy( 3.0, 2.0 );
+// returns ~2.079
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **y**: `[in] double` input value.
+
+```c
+double stdlib_base_xlogy( const double x, const double y );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/xlogy.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int main( void ) {
+    double out;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 100; i++ ) {
+        x = ( (double)rand() / (double)RAND_MAX ) * 100.0;
+        y = ( (double)rand() / (double)RAND_MAX ) * 5.0;
+        out = stdlib_base_xlogy( x, y );
+        printf( "xlogy(%lf, %lf) = %lf\n", x, y, out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

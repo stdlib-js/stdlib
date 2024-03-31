@@ -28,7 +28,7 @@
 * @param strideX  X stride length
 * @param Y        second array
 * @param strideY  Y stride length
-* @returns        dot product
+* @return         dot product
 */
 float c_sdsdot( const int N, const float scalar, const float *X, const int strideX, const float *Y, const int strideY ) {
 	return cblas_sdsdot( N, scalar, X, strideX, Y, strideY );

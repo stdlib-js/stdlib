@@ -43,6 +43,9 @@ jobs:
     # Define a display name:
     name: 'Update meta data'
 
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -104,7 +107,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@a4f52f8033a6168103c2538976c07b467e8163bc # v6.0.1
         with:
-          title: 'Update package meta data'
+          title: 'chore: update package meta data'
           body: |
             This PR
 

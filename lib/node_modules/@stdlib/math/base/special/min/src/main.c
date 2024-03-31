@@ -29,11 +29,11 @@
 * @return        minimum value
 *
 * @example
-* double v = min( 3.14, 4.2 );
+* double v = stdlib_base_min( 3.14, 4.2 );
 * // returns 3.14
 *
 * @example
-* double v = min( 0.0, -0.0 );
+* double v = stdlib_base_min( 0.0, -0.0 );
 * // returns -0.0
 */
 double stdlib_base_min( const double x, const double y ) {

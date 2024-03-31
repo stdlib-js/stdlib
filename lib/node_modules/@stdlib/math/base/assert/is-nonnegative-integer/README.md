@@ -110,6 +110,97 @@ bool = isNonNegativeInteger( NaN );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/assert/is_nonnegative_integer.h"
+```
+
+#### stdlib_base_is_nonnegative_integer( x )
+
+Tests if a finite [double-precision floating-point number][ieee754] is a nonnegative integer.
+
+```c
+bool out = stdlib_base_is_nonnegative_integer( 1.0 );
+// returns true
+
+out = stdlib_base_is_nonnegative_integer( -10.0 );
+// returns false
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+bool stdlib_base_is_nonnegative_integer( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/assert/is_nonnegative_integer.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+int main( void ) {
+    double x;
+    bool v;
+    int i;
+    
+    for ( i = 0; i < 100; i++ ) {
+        x = ( ( (double)rand() / (double)RAND_MAX ) * 100.0 ) - 50.0;
+        v = stdlib_base_is_nonnegative_integer( x );
+        printf( "x = %lf, is_nonnegative_integer(x) = %s\n", x, ( v ) ? "true" : "false" );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

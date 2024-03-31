@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# alloc
+# allocUnsafe
 
 > Allocate a [buffer][@stdlib/buffer/ctor] having a specified number of bytes.
 
