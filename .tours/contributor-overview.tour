@@ -5,7 +5,7 @@
     {
       "title": "Introduction",
       "file": "README.md",
-      "description": "Thank you for your interest in contributing to stdlib, a standard library for JavaScript and Node.js with an emphasis on numerical and scientific computing applications. This tour will guide you through the codebase to help you get started by giving a quick overview of the codebase and pointing to where you can find more information.",
+      "description": "Welcome and thank you for your interest in contributing to stdlib, a comprehensive standard library for JavaScript and Node.js designed specifically to meet the demands of numerical and scientific computing. This introductory tour will navigate you through the essentials of our codebase, highlight key components, and direct you to resources to dig deeper.",
       "line": 516
     },
     {
@@ -15,12 +15,12 @@
     },
     {
       "file": "docs/development.md",
-      "description": "To setup your development environmet, follow the steps in the `docs/development.md` file or use the VSCode development container.",
+      "description": "To setup your development environment, follow the steps in the `docs/development.md` file or use the VSCode development container.",
       "line": 21
     },
     {
       "directory": "docs/style-guides",
-      "description": "Style guides for source code for the various programming languages used in the project can be found in the `docs/style-guides` folder, including our `git` conventions. We use conventional commits to ensure a consistent commit message format and to automate versioning and changelog generation."
+      "description": "Style guides for source code for the various programming languages used in the project is located in the `docs/style-guides` folder, including our `git` conventions. We use conventional commits to ensure a consistent commit message format and to automate versioning and changelog generation."
     },
     {
       "file": "tools/make/README.md",
@@ -37,11 +37,11 @@
     },
     {
       "directory": "lib/node_modules/@stdlib/utils/zip",
-      "description": "Each package contains at least the following folders:\n\n-   `benchmark`: micro-benchmarks for timing the\n-   `docs`: contains a `repl.txt` document with help text when the package is used inside the stdlib Node.js REPL and TypeScript definitions and tests in a `types` sub-directory\n-   `examples`: example code demonstrating use of the package. This could should match the code inside the `README.md` documentation's \"Examples\" section (with the only possible difference being `console.log` invocations not being included in the `README.md`)\n-   `lib`: the package's JavaScript implementation\n-   `test`: comphrehensive unit tests, ideally achieving 100% code coverage"
+      "description": "Each package contains at least the following folders:\n\n-   `benchmark`: micro-benchmarks for timing the\n-   `docs`: contains a `repl.txt` document with help text when the package is used inside the stdlib Node.js REPL and TypeScript definitions and tests in a `types` sub-directory\n-   `examples`: example code demonstrating use of the package. This could should match the code inside the `README.md` documentation's \"Examples\" section (with the only possible difference being `console.log` invocations not being included in the `README.md`)\n-   `lib`: the package's JavaScript implementation\n-   `test`: comprehensive unit tests, ideally achieving 100% code coverage"
     },
     {
       "file": "lib/node_modules/@stdlib/utils/zip/README.md",
-      "description": "The `README.md` file contains the package documentation. Notice that we use HTML fragments and commnents to demarcate the various sections in the documents, which is used as part of our tooling. The top-level `snippets` directory contains template files that can be used to scaffold out a new package; in practice, we found that often copy-pasting files from a different package with similar API is an efficient workflow.",
+      "description": "The `README.md` file contains the package documentation. Notice that we use HTML fragments and comments to demarcate the various sections in the documents, which we use as part of our tooling. The top-level `snippets` directory contains template files that can be used to scaffold out a new package; in practice, we found that often copy-pasting files from a different package with similar API is an efficient workflow.",
       "line": 33
     },
     {
@@ -54,7 +54,7 @@
     },
     {
       "file": "CONTRIBUTING.md",
-      "description": "It is our desiree to make contributing to stdlib rewarding and impactful. Please review our guidelines in `CONTRIBUTING.md` to understand our process and expectations. Your contributions help build the numerical computing infrastructure for JavaScript.",
+      "description": "It is our desire to make contributing to stdlib rewarding and impactful. Please review our guidelines in `CONTRIBUTING.md` to understand our process and expectations. Your contributions help build the numerical computing infrastructure for JavaScript.",
       "line": 21
     },
     {
