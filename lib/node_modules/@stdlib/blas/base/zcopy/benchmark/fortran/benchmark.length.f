@@ -125,7 +125,7 @@ contains
     ! External functions:
     interface
       subroutine zcopy( N, zx, strideX, zy, strideY )
-        complex(kind=8) :: zx(*), zy(*)
+        complex(kind=kind(0.0d0)) :: zx(*), zy(*)
         integer :: strideX, strideY, N
       end subroutine zcopy
     end interface
