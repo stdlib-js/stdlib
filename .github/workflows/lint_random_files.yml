@@ -317,7 +317,7 @@ jobs:
       - name: 'Setup R'
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@0ed4cdf40958ef43a6b33b9792e07ac76c3239e3 # v2.6.4
+        uses: r-lib/actions/setup-r@7171bbdc297d5a76f04914d60e5c8144991e3011 # v2.6.4
         with:
           r-version: '4.3.3'
 
@@ -417,7 +417,7 @@ jobs:
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@a4f52f8033a6168103c2538976c07b467e8163bc # v6.0.1
+        uses: peter-evans/create-pull-request@70a41aba780001da0a30141984ae2a0c95d8704e # v6.0.2
         with:
           title: 'Fix lint errors'
           add-paths: ${{ steps.random-files.outputs.files }}

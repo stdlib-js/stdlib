@@ -88,8 +88,8 @@ float stdlib_base_atanf( const float x ) {
 	float y;
 	float z;
 
-	if ( stdlib_base_is_nanf( x ) ) {
-		return 0.0f / 0.0f; // NaN
+	if ( stdlib_base_is_nanf( x ) || x == 0.0f ) {
+		return x;
 	}
 	ax = x;
 	if ( x < 0.0f ) {
