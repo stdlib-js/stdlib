@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/string/base/for-each-right",
   "version": "0.0.0",
-  "description": "Invoke a function for each UTF-16 code unit in a string iterating from right to left.",
+  "description": "Invoke a function for each UTF-16 code unit in a string, iterating from right to left.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
