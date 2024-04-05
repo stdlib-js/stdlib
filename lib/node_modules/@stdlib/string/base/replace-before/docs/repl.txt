@@ -1,5 +1,5 @@
 
-{{alias}}( str, search, replacement )
+{{alias}}( str, search, replacement, fromIndex )
     Replaces the substring before the first occurrence of a specified search
     string. 
 
@@ -10,9 +10,12 @@
 
     search: string
         Search string.
-    
+
     replacement: string
         Replacement string.
+
+    fromIndex: integer
+        Index from which to start the search.
 
     Returns
     -------
@@ -21,10 +24,9 @@
 
     Examples
     --------
-    > var str = 'beep boop';
-    > var out = {{alias}}( str, ' ', 'foo' )
+    > var out = {{alias}}( 'beep boop', ' ', 'foo', 0 )
     'foo boop'
-    > out = {{alias}}( str, 'o', 'foo' )
+    > out = {{alias}}( 'beep boop', 'o', 'foo', 0 )
     'foooop'
 
     See Also

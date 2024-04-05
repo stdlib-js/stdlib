@@ -24,25 +24,26 @@
 * @param str - input string
 * @param search - search string
 * @param replacement - replacement string
+* @param fromIndex - index at which to start the search
 * @returns output string
 *
 * @example
-* var out = replaceBefore( 'beep boop', ' ', 'foo' );
+* var out = replaceBefore( 'beep boop', ' ', 'foo', 0 );
 * // returns 'foo boop'
 *
 * @example
-* var out = replaceBefore( 'beep boop', 'p', 'foo' );
-* // returns 'foop boop'
+* var out = replaceBefore( 'beep boop', 'p', 'foo', 5 );
+* // returns 'foop'
 *
 * @example
-* var out = replaceBefore( 'Hello World!', '', 'foo' );
+* var out = replaceBefore( 'Hello World!', '', 'foo', 0 );
 * // returns 'Hello world!'
 *
 * @example
-* var out = replaceBefore( 'Hello World!', 'xyz', 'foo' );
+* var out = replaceBefore( 'Hello World!', 'xyz', 'foo', 0 );
 * // returns 'Hello World!'
 */
-declare function replaceBefore( str: string,  search: string, replacement: string ): string;
+declare function replaceBefore( str: string,  search: string, replacement: string, fromIndex: number ): string;
 
 
 // EXPORTS //
