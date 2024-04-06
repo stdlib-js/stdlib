@@ -21,6 +21,12 @@
 /**
 * Replaces the substring after the last occurrence of a specified search string.
 *
+* ## Notes
+*
+* -   The function scans a provided string from the starting index to the beginning of the string (i.e., backward).
+* -   If unable to find search string, the function returns the input string unchanged.
+* -   If `fromIndex` is less than zero, the starting index is resolved relative to the last string character, with the last string character corresponding to `fromIndex = -1`.
+*
 * @param str - input string
 * @param search - search string
 * @param replacement - replacement string
