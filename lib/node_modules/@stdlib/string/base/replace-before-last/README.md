@@ -53,12 +53,20 @@ out = replaceBeforeLast( str, 'o', 'bar', str.length );
 // returns 'barop'
 ```
 
-The search starts at the end of the string and proceeds backwards to the beginning. To start the search at a specified index, specify an integer for the `fromIndex` argument.
+To begin searching from a specific index, provide a corresponding `fromIndex` argument.
 
 ```javascript
 var str = 'beep boop beep';
 var out = replaceBeforeLast( str, ' ', 'loop', 5 );
 // returns 'loop boop beep'
+```
+
+If `fromIndex` is less than zero, the starting index is resolved relative to the last string character, with the last string character corresponding to `fromIndex = -1`.
+
+```javascript
+var str = 'beep boop beep';
+var out = replaceBeforeLast( str, ' ', 'loop', -1 );
+// returns 'loop beep'
 ```
 
 </section>
@@ -73,7 +81,7 @@ var out = replaceBeforeLast( str, ' ', 'loop', 5 );
 
 -   If a search string is not present in a provided string, the function returns the provided string unchanged.
 -   If a search string is an empty string, the function returns the provided string unchanged.
--   If `fromIndex` is less than `0`, the function returns the provided string unchanged.
+-   If `fromIndex` resolves to an index which is less than `0`, the function returns the provided string unchanged.
 
 </section>
 
