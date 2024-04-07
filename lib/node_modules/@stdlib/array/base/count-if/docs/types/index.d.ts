@@ -67,20 +67,22 @@ type Ternary<T, U> = ( this: U, value: T, index: number, arr: Collection<T> | Ac
 type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
-* Counts the number of truthy values in an array.
+* Counts the number of elements in an array which pass a test implemented by a predicate function.
 *
 * @param x - input array
-* @param predicate - testing function
-* @param thisArg - function context
-* @returns number of values for which the provided function evaluates to true
+* @param predicate - predicate function
+* @param thisArg - predicate function execution context
+* @returns result
 *
 * @example
-* var x = [ 0, 1, 0, 1 ];
 * function predicate( v ) {
-*     return v > this;
+*     return v > 0;
 * }
-* var n = countIf( x, predicate, 0 );
-* // returns 2
+*
+* var x = [ 0, 1, 0, 1, 1 ];
+*
+* var n = countIf( x, predicate );
+* // returns 3
 */
 declare function countIf<T = unknown, U = unknown>( x: Collection<T> | AccessorArrayLike<T>, predicate: Predicate<T, U>, thisArg?: ThisParameterType<Predicate<T, U>> ): number;
 
