@@ -27,12 +27,9 @@
 * @return     arcsine (in degrees)
 *
 * @example
-* double v = stdlib_base_acotd( 0.0 );
+* double v = stdlib_base_asind( 0.0 );
 * // returns 0.0
 */
 double stdlib_base_asind( const double x ) {
-	double rad;
-
-	rad = stdlib_base_asin( x );
-	return stdlib_base_rad2deg( rad );
+	return stdlib_base_rad2deg( stdlib_base_asin( x ) );
 }
