@@ -1,0 +1,30 @@
+{
+  "name": "stdlib - OSS Development",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/r-apt:0": {},
+    "ghcr.io/julialang/devcontainer-features/julia:1": {},
+    "ghcr.io/marcozac/devcontainer-features/shellcheck:1": {},
+    "ghcr.io/rocker-org/devcontainer-features/pandoc:1": {}
+  },
+  "postCreateCommand": "./.devcontainer/post-create",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "README.md"
+      ]
+    },
+    "vscode": {
+      "settings": {
+        "resmon.show.battery": false,
+        "resmon.show.cpufreq": false
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.EditorConfig",
+        "formulahendry.code-runner",
+        "vsls-contrib.codetour"
+      ]
+    }
+  }
+}

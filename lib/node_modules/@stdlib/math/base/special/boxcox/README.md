@@ -109,6 +109,99 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/boxcox.h"
+```
+
+#### stdlib_base_boxcox( x, lambda )
+
+Computes a one-parameter [Box-Cox transformation][box-cox-transformation].
+
+```c
+double out = stdlib_base_boxcox( 1.0, 2.5 );
+// returns 0.0
+
+out = stdlib_base_boxcox( 4.0, 2.5 );
+// returns 12.4
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **lambda**: `[in] double` power parameter.
+
+```c
+double stdlib_base_boxcox ( const double x, const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/boxcox.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { -1.0, 10.0, 1.0 };
+    const double y[] = { -0.5, 5.0, 0.5 };
+
+    double out;
+    int i;
+    int j;
+    for ( i = 0; i < 3; i++ ) {
+        for ( j = 0; j < 3; j++ ){
+            out = stdlib_base_boxcox( x[ i ], y[ j ] );
+            printf ( "x: %lf, y: %lf, out: %lf\n", x[ i ], y[ j ], out );
+        }
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">

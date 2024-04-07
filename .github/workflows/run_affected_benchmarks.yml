@@ -119,3 +119,12 @@ jobs:
             make benchmark-javascript-files FILES="${files}"
           fi
         timeout-minutes: 30
+
+      # Run C benchmarks:
+      - name: 'Run C benchmarks'
+        run: |
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | sed "s|^|${GITHUB_WORKSPACE}/|" | tr '\n' ' ' | sed 's/ $//')
+          if [ -n "$files" ]; then
+            make benchmark-c-files FILES="${files}"
+          fi
+        timeout-minutes: 15

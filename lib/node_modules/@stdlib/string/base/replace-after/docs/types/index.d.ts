@@ -21,6 +21,11 @@
 /**
 * Replaces the substring after the first occurrence of a specified search string.
 *
+* ## Notes
+*
+* -   If unable to find search string, the function returns the input string unchanged.
+* -   If `fromIndex` is less than zero, the starting index is resolved relative to the last string character, with the last string character corresponding to `fromIndex = -1`.
+*
 * @param str - input string
 * @param search - search string
 * @param replacement - replacement string
