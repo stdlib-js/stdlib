@@ -146,7 +146,7 @@ interface Namespace {
 	* @param alpha - constant
 	* @param x - input array
 	* @param stride - stride length
-	* @returns `x`
+	* @returns input array
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );

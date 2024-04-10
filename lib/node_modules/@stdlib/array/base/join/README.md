@@ -67,6 +67,8 @@ var out = join( x, ',' );
     x.join( separator )
     ```
 
+-   If provided an array-like object without a `join` method, the function manually constructs the output string.
+
 -   If an array element is either `null` or `undefined`, the function will serialize the element as an empty string.
 
 </section>
@@ -99,8 +101,8 @@ s = join( x, ',' );
 s = join( x, '-' );
 // returns '0-1-2-3-4-5'
 
-s = new AccessorArray( [ 1, 2, 3, 4 ] );
-s = join( s, ',' );
+x = new AccessorArray( [ 1, 2, 3, 4 ] );
+s = join( x, ',' );
 // returns '1,2,3,4'
 
 x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );

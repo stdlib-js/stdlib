@@ -971,3 +971,5 @@
 "Fe","Index out of bounds","RangeError"
 "Ff","invalid option. `%s` option must be less than or equal to 64. Option: `%u`.","RangeError"
 "Fg","invalid argument. Unable to parse input string as a complex number. Value: `%s`.","Error"
+"Fh","invalid operation. Cannot access settings for a REPL which has already closed.","Error"
+"Fi","invalid argument. First argument must be a recognized setting. Value: `%s`.","Error"

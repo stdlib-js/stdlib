@@ -83,7 +83,7 @@ var rand = minstd.factory({
 });
 
 var r = rand();
-// returns 20739838
+// returns 1421600654
 ```
 
 To return a generator having a specific initial state, set the generator `state` option.

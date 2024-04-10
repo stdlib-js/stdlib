@@ -105,7 +105,7 @@ jobs:
       # Dispatch first found workflow (if applicable):
       - name: 'Dispatch workflow with inputs'
         # Pin action to full length commit SHA
-        uses: benc-uk/workflow-dispatch@798e70c97009500150087d30d9f11c5444830385 # v1.2.2
+        uses: benc-uk/workflow-dispatch@25b02cc069be46d637e8fe2f1e8484008e9e9609 # v1.2.3
         if: steps.check-workflow-dispatch.outputs.dispatch == 'true'
         with:
           workflow: ${{ steps.check-workflow-dispatch.outputs.workflow }}

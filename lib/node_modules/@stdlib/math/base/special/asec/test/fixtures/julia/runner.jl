@@ -37,7 +37,7 @@ julia> gen( x, \"data.json\" );
 """
 function gen( domain, name )
 	x = collect( domain );
-	y = acos.( 1.0 ./ x );
+	y = asec.( x );
 
 	# Store data to be written to file as a collection:
 	data = Dict([

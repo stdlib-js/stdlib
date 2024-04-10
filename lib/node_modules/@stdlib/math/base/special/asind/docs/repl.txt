@@ -19,7 +19,7 @@
     --------
     > var y = {{alias}}( 0.0 )
     0.0
-    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/6.0 )
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}} / 6.0 )
     ~31.57
     > y = {{alias}}( NaN )
     NaN

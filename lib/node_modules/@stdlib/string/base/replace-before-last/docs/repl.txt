@@ -3,6 +3,12 @@
     Replaces the substring before the last occurrence of a specified search
     string.
 
+    If unable to find a search string, the function returns the input string
+    unchanged.
+
+    The function scans an input string from the starting index to the beginning
+    of the string (i.e., backward).
+
     Parameters
     ----------
     str: string
@@ -15,7 +21,9 @@
         Replacement string.
 
     fromIndex: integer
-        Index from which to start searching.
+        Starting index (inclusive). If less than zero, the starting index is
+        resolved relative to the last string character, with the last string
+        character corresponding to `fromIndex = -1`.
 
     Returns
     -------

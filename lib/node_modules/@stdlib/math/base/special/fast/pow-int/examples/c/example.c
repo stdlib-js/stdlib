@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/special/fast/pow.h"
 #include <stdio.h>
+#include <stdint.h>
 
 int main( void ) {
 	const double x[] = { 3.14, 2.0, 2.0, 0.0 };
