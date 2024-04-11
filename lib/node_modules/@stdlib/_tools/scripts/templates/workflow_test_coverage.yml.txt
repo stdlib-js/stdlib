@@ -89,6 +89,8 @@ jobs:
           directory: reports/coverage
           flags: unittests
           fail_ci_if_error: true
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       # Extract coverage value:
       - name: 'Extract coverage value and assign to output'
