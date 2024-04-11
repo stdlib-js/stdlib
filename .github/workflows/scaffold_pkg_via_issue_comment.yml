@@ -72,7 +72,7 @@ jobs:
         with:
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           commit-message: 'feat: add `${{ steps.scaffold.outputs.alias }}`'
-          title: Add `${{ steps.scaffold.outputs.alias }}` package
+          title: 'feat: add `${{ steps.scaffold.outputs.alias }}` package'
           body: |
             This PR adds the [${{ steps.scaffold.outputs.alias }}](../tree/${{ steps.scaffold.outputs.path }}/${{ steps.scaffold.outputs.dir }}) package.
 
