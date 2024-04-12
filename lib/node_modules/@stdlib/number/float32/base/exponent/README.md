@@ -40,7 +40,7 @@ var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 var exp = exponentf( toFloat32( 3.14e34 ) ); // => 2^114 ~ 2.08e34
 // returns 114
 
-exp = exponentf( toFloat32( 3.14e-34 ) ); //  => 2^-112 ~ 1.93e-34
+exp = exponentf( toFloat32( 3.14e-34 ) ); // => 2^-112 ~ 1.93e-34
 // returns -112
 
 exp = exponentf( toFloat32( -3.14 ) );
