@@ -17,12 +17,23 @@
 #/
 
 # Workflow name:
-name: scaffold_package_via_rfc_issue_comment
+name: scaffold_package
 
 # Workflow triggers:
 on:
-  issue_comment:
-    types: [created]
+  # Allow the workflow to be triggered by other workflows
+  workflow_call:
+    # Define the secrets accessible by the workflow:
+    secrets:
+      PULL_REQUEST_TOKEN:
+        description: 'GitHub token for stdlb-bot'
+        required: true
+      GITHUB_TOKEN:
+        description: 'GitHub token used in the scaffold package action'
+        required: true
+      OPENAI_API_KEY:
+        description: 'OpenAI API key for scaffold package action'
+        required: true
 
 # Global permissions:
 permissions:
@@ -41,22 +52,13 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-      # Exit if comment does not contain scaffolding directive:
-      - name: 'Exit if comment does not contain scaffolding directive'
-        if: ${{ !contains(github.event.comment.body, 'scaffold') }}
-        run: |
-          echo "Comment does not contain scaffolding directive. Exiting..."
-          exit 0
-
       # Checkout the current branch:
       - name: 'Checkout current branch'
         # Pin action to full length commit SHA
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-        if: ${{ contains(github.event.comment.body, 'scaffold') }}
 
       # Run the command to scaffold a package:
       - name: 'Scaffold package'
-        if: ${{ contains(github.event.comment.body, 'scaffold') }}
         id: scaffold
         # Pin action to full length commit SHA
         uses: stdlib-js/scaffold-pkg-pr-action@882ef0cbb70c1fb76135b9620232606686c1cb10 # v0.0.1
@@ -66,7 +68,6 @@ jobs:
 
       # Create a pull request:
       - name: 'Create pull request'
-        if: ${{ contains(github.event.comment.body, 'scaffold') }}
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@70a41aba780001da0a30141984ae2a0c95d8704e # v6.0.2
         with:
