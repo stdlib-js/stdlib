@@ -26,9 +26,9 @@ on:
     # Define the secrets accessible by the workflow:
     secrets:
       PULL_REQUEST_TOKEN:
-        description: 'GitHub token for stdlb-bot'
+        description: 'GitHub token for stdlib-bot'
         required: true
-      GITHUB_TOKEN:
+      SCAFFOLD_GITHUB_TOKEN:
         description: 'GitHub token used in the scaffold package action'
         required: true
       OPENAI_API_KEY:
@@ -64,7 +64,7 @@ jobs:
         uses: stdlib-js/scaffold-pkg-pr-action@882ef0cbb70c1fb76135b9620232606686c1cb10 # v0.0.1
         with:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SCAFFOLD_GITHUB_TOKEN }}
 
       # Create a pull request:
       - name: 'Create pull request'
