@@ -3,7 +3,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -799,6 +799,30 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* // returns '1 + 1i/2 + 2i'
 	*/
 	join( separator?: string ): string;
+
+	/**
+	* Returns an iterator for iterating over each index key in a typed array.
+	*
+	* @returns iterator
+	*
+	* @example
+	* var arr = new Complex128Array( 2 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	*
+	* var iter = arr.keys();
+	*
+	* var v = iter.next().value;
+	* // returns 0
+	*
+	* v = iter.next().value;
+	* // returns 1
+	*
+	* var bool = iter.next().done;
+	* // returns true
+	*/
+	keys(): TypedIterator<number>;
 
 	/**
 	* Returns the last index at which a given element can be found.
