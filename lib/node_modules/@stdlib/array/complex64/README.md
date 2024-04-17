@@ -1512,6 +1512,35 @@ var str = arr.join( '/' );
 // returns '1 + 1i/2 - 2i/3 + 3i'
 ```
 
+<a name="method-keys"></a>
+
+#### Complex64Array.prototype.keys()
+
+Returns an iterator for iterating over each index key in a typed array.
+
+```javascript
+var arr = new Complex64Array( 2 );
+
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+
+var iter = arr.keys();
+
+var v = iter.next().value;
+// returns 0
+
+v = iter.next().value;
+// returns 1
+
+var bool = iter.next().done;
+// returns true
+```
+
+The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the following properties:
+
+-   **next**: function which returns an [iterator][mdn-iterator-protocol] protocol-compliant object containing the next iterated value (if one exists) assigned to a `value` property and a `done` property having a `boolean` value indicating whether the [iterator][mdn-iterator-protocol] is finished.
+-   **return**: function which closes an [iterator][mdn-iterator-protocol] and returns a single (optional) argument in an [iterator][mdn-iterator-protocol] protocol-compliant object.
+
 <a name="method-last-index-of"></a>
 
 #### Complex64Array.prototype.lastIndexOf( searchElement\[, fromIndex] )

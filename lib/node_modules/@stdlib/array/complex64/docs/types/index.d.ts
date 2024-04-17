@@ -803,6 +803,30 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	join( separator?: string ): string;
 
 	/**
+	* Returns an iterator for iterating over each index key in a typed array.
+	*
+	* @returns iterator
+	*
+	* @example
+	* var arr = new Complex64Array( 2 );
+	*
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	*
+	* var iter = arr.keys();
+	*
+	* var v = iter.next().value;
+	* // returns 0
+	*
+	* v = iter.next().value;
+	* // returns 1
+	*
+	* var bool = iter.next().done;
+	* // returns true
+	*/
+	keys(): TypedIterator<number>;
+
+	/**
 	* Returns the last index at which a given element can be found.
 	*
 	* @param searchElement - element to find
