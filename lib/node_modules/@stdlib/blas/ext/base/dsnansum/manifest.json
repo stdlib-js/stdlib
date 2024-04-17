@@ -1,42 +1,81 @@
 {
-	"options": {},
-	"fields": [
-		{
-			"field": "src",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "include",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "libraries",
-			"resolve": false,
-			"relative": false
-		},
-		{
-			"field": "libpath",
-			"resolve": true,
-			"relative": false
-		}
-	],
-	"confs": [
-		{
-			"src": [
-				"./src/dsnansum.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/blas/ext/base/dsnansumpw"
-			]
-		}
-	]
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/dsnansum.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/ext/base/dsnansumpw",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/dsnansum.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/ext/base/dsnansumpw"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/dsnansum.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/ext/base/dsnansumpw"
+      ]
+    }
+  ]
 }

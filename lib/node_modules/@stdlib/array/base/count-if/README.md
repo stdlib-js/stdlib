@@ -20,7 +20,7 @@ limitations under the License.
 
 # countIf
 
-> Count the number of elements in an array that satisfy the provided testing function.
+> Count the number of elements in an array which pass a test implemented by a predicate function.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,20 +42,18 @@ var countIf = require( '@stdlib/array/base/count-if' );
 
 #### countIf( x, predicate\[, thisArg] )
 
-Counts the number of elements in an array that satisfy the provided testing function.
+Counts the number of elements in an array which pass a test implemented by a predicate function.
 
 ```javascript
-var x = [ 0, 1, 0, 1, 2 ];
-
-function predicate( val ) {
-    return ( val % 2 === 0 );
+function predicate( value ) {
+    return ( value > 0 );
 }
+
+var x = [ 0, 1, 0, 1, 2 ];
 
 var out = countIf( x, predicate );
 // returns 3
 ```
-
-If a `predicate` function returns a truthy value, the function counts that value.
 
 The `predicate` function is provided three arguments:
 
@@ -66,18 +64,22 @@ The `predicate` function is provided three arguments:
 To set the `predicate` function execution context, provide a `thisArg`.
 
 ```javascript
-var x = [ 1, 2, 3, 4 ];
-
-var context = {
-    'target': 3
-};
-
 function predicate( value ) {
-    return ( value > this.target );
+    this.count += 1;
+    return ( value > 0 );
 }
 
+var x = [ 0, 1, 0, 1, 2 ];
+
+var context = {
+    'count': 0
+};
+
 var out = countIf( x, predicate, context );
-// returns 1
+// returns 3
+
+var cnt = context.count;
+// returns 5
 ```
 
 </section>
@@ -101,19 +103,21 @@ var out = countIf( x, predicate, context );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var bernoulli = require( '@stdlib/random/array/bernoulli' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
+var naryFunction = require( '@stdlib/utils/nary-function' );
 var countIf = require( '@stdlib/array/base/count-if' );
 
-var x = bernoulli( 100, 0.5, {
-    'dtype': 'generic'
+var x = discreteUniform( 10, -5, 5, {
+    'dtype': 'int32'
 });
-console.log( x );
+// returns <Int32Array>
 
-function predicate( val ) {
-    return val === 1;
-}
-var n = countIf( x, predicate );
-console.log( n );
+var out = countIf( x, naryFunction( isPositiveInteger, 1 ) );
+// returns <number>
+
+console.log( x );
+console.log( out );
 ```
 
 </section>

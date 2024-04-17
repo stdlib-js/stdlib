@@ -100,6 +100,97 @@ bool = isPositiveInteger( NaN );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/assert/is_positive_integer.h"
+```
+
+#### stdlib_base_is_positive_integer( x )
+
+Tests if a finite [double-precision floating-point number][ieee754] is a positive integer.
+
+```c
+#include <stdbool.h>
+
+bool out = stdlib_base_is_positive_integer( 3.0 );
+// returns true
+
+out = stdlib_base_is_positive_integer( -4.0 );
+// returns false
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+bool stdlib_base_is_positive_integer( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/assert/is_positive_integer.h"
+#include <stdio.h>
+#include <stdbool.h>
+
+int main( void ) {
+    const double x[] = { 5.0, -5.0, 3.14, -3.14, 0.0, 0.0/0.0 };
+
+    bool b;
+    int i;
+    for ( i = 0; i < 6; i++ ) {
+        b = stdlib_base_is_positive_integer( x[ i ] );
+        printf( "Value: %lf. Is positive integer? %s.\n", x[ i ], ( b ) ? "True" : "False" );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

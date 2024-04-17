@@ -1,0 +1,73 @@
+{
+  "expression": "for ( i = 0; i < x[",
+  "cursor": 18,
+  "ast": {
+    "type": "Program",
+    "start": 0,
+    "end": 19,
+    "body": [
+      {
+        "type": "ForStatement",
+        "start": 0,
+        "end": 19,
+        "init": {
+          "type": "AssignmentExpression",
+          "start": 6,
+          "end": 11,
+          "operator": "=",
+          "left": {
+            "type": "Identifier",
+            "start": 6,
+            "end": 7,
+            "name": "i"
+          },
+          "right": {
+            "type": "Literal",
+            "start": 10,
+            "end": 11,
+            "value": 0,
+            "raw": "0"
+          }
+        },
+        "update": null,
+        "test": {
+          "type": "BinaryExpression",
+          "start": 13,
+          "end": 19,
+          "left": {
+            "type": "Identifier",
+            "start": 13,
+            "end": 14,
+            "name": "i"
+          },
+          "operator": "<",
+          "right": {
+            "type": "MemberExpression",
+            "start": 17,
+            "end": 19,
+            "object": {
+              "type": "Identifier",
+              "start": 17,
+              "end": 18,
+              "name": "x"
+            },
+            "property": {
+              "type": "Identifier",
+              "start": 19,
+              "end": 19,
+              "name": "✖"
+            },
+            "computed": true,
+            "optional": false
+          }
+        },
+        "body": {
+          "type": "EmptyStatement",
+          "start": 19,
+          "end": 19
+        }
+      }
+    ],
+    "sourceType": "script"
+  }
+}

@@ -44,9 +44,8 @@ Computes the sum of double-precision floating-point strided array elements using
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
-var N = x.length;
 
-var v = dsumkbn2( N, x, 1 );
+var v = dsumkbn2( 3, x, 1 );
 // returns 1.0
 ```
 
@@ -60,12 +59,10 @@ The `N` and `stride` parameters determine which elements in `x` are accessed at 
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
-var N = floor( x.length / 2 );
 
-var v = dsumkbn2( N, x, 2 );
+var v = dsumkbn2( 4, x, 2 );
 // returns 5.0
 ```
 
@@ -75,14 +72,11 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var N = floor( x0.length / 2 );
-
-var v = dsumkbn2( N, x1, 2 );
+var v = dsumkbn2( 4, x1, 2 );
 // returns 5.0
 ```
 
@@ -94,9 +88,8 @@ Computes the sum of double-precision floating-point strided array elements using
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
-var N = x.length;
 
-var v = dsumkbn2.ndarray( N, x, 1, 0 );
+var v = dsumkbn2.ndarray( 3, x, 1, 0 );
 // returns 1.0
 ```
 
@@ -111,9 +104,8 @@ var Float64Array = require( '@stdlib/array/float64' );
 var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
-var N = floor( x.length / 2 );
 
-var v = dsumkbn2.ndarray( N, x, 2, 1 );
+var v = dsumkbn2.ndarray( 4, x, 2, 1 );
 // returns 5.0
 ```
 
@@ -138,18 +130,11 @@ var v = dsumkbn2.ndarray( N, x, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var Float64Array = require( '@stdlib/array/float64' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dsumkbn2 = require( '@stdlib/blas/ext/base/dsumkbn2' );
 
-var x;
-var i;
-
-x = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = round( randu()*100.0 );
-}
+var x = filledarrayBy( 10, 'float64', discreteUniform( -100, 100 ) );
 console.log( x );
 
 var v = dsumkbn2( x.length, x, 1 );

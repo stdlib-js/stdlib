@@ -32,7 +32,7 @@ var dapx = require( '@stdlib/blas/ext/base/dapx' );
 
 #### dapx( N, alpha, x, stride )
 
-Adds a constant `alpha` to each element in a double-precision floating-point strided array `x`.
+Adds a constant `alpha` to each element in a double-precision floating-point strided array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -50,16 +50,14 @@ The function has the following parameters:
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
 -   **stride**: index increment.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to add a constant to every other element
+The `N` and `stride` parameters determine which elements in the strided array are accessed at runtime. For example, to add a constant to every other element
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
-var N = floor( x.length / 2 );
 
-dapx( N, 5.0, x, 2 );
+dapx( 4, 5.0, x, 2 );
 // x => <Float64Array>[ 3.0, 1.0, 8.0, -5.0, 9.0, 0.0, 4.0, -3.0 ]
 ```
 
@@ -67,23 +65,21 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial array...
 var x0 = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 
 // Create an offset view...
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var N = floor( x0.length/2 );
 
 // Add a constant to every other element...
-dapx( N, 5.0, x1, 2 );
+dapx( 3, 5.0, x1, 2 );
 // x0 => <Float64Array>[ 1.0, 3.0, 3.0, 1.0, 5.0, -1.0 ]
 ```
 
 #### dapx.ndarray( N, alpha, x, stride, offset )
 
-Adds a constant `alpha` to each element in a double-precision floating-point strided array `x` using alternative indexing semantics.
+Adds a constant `alpha` to each element in a double-precision floating-point strided array using alternative indexing semantics.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -98,7 +94,7 @@ The function has the following additional parameters:
 
 -   **offset**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of the strided array
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -117,7 +113,7 @@ dapx.ndarray( 3, 5.0, x, 1, x.length-3 );
 
 ## Notes
 
--   If `N <= 0`, both functions return `x` unchanged.
+-   If `N <= 0`, both functions return the strided array unchanged.
 
 </section>
 
@@ -130,27 +126,11 @@ dapx.ndarray( 3, 5.0, x, 1, x.length-3 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
-var Float64Array = require( '@stdlib/array/float64' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dapx = require( '@stdlib/blas/ext/base/dapx' );
 
-var rand;
-var sign;
-var x;
-var i;
-
-x = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    rand = round( randu()*100.0 );
-    sign = randu();
-    if ( sign < 0.5 ) {
-        sign = -1.0;
-    } else {
-        sign = 1.0;
-    }
-    x[ i ] = sign * rand;
-}
+var x = filledarrayBy( 10, 'float64', discreteUniform( -100, 100 ) );
 console.log( x );
 
 dapx( x.length, 5.0, x, 1 );

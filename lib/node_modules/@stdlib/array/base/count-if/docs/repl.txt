@@ -1,7 +1,13 @@
 
 {{alias}}( x, predicate[, thisArg] )
-    Counts the number of elements in an array that satisfy the provided testing 
-    function.
+    Counts the number of elements in an array which pass a test implemented by a
+    predicate function.
+
+    The predicate function is provided three arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
 
     Parameters
     ----------
@@ -9,7 +15,7 @@
         Input array.
 
     predicate: Function
-        Testing function.
+        Predicate function.
     
     thisArg: any (optional)
         Execution context.
@@ -17,14 +23,12 @@
     Returns
     -------
     out: integer
-        Number of truthy values for which the testing function evaluates to 
-        true.
+        Result.
 
     Examples
     --------
-    > var out = {{alias}}( [ 0, 1, 1 ], function predicate( v ) {
-    ...     return v === 1;
-    ... } )
+    > function f( v ) { return ( v > 0 ); };
+    > var out = {{alias}}( [ 0, 1, 1 ], f )
     2
 
     See Also

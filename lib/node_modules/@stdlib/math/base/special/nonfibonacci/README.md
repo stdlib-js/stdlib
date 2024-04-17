@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -122,6 +122,91 @@ for ( i = 1; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/nonfibonacci.h"
+```
+
+#### stdlib_base_nonfibonacci( x )
+
+Computes the nth non-Fibonacci number.
+
+```c
+double out = stdlib_base_nonfibonacci( 1 );
+// returns 4
+
+out = stdlib_base_nonfibonacci( 2 );
+// returns 6
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] int32_t` input value.
+
+```c
+double stdlib_base_nonfibonacci( const int32_t x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/nonfibonacci.h"
+#include <stdio.h>
+#include <stdlib.h>
+int main( void ) {
+    int i;
+    for ( i = 1; i < 12; i++ ) {
+        double result = stdlib_base_nonfibonacci( i );
+        printf( "x: %i => result: %lf", i , result );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

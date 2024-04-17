@@ -81,6 +81,98 @@ bool = isNegativeFinite( NaN );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/assert/is_negative_finite.h"
+```
+
+#### stdlib_base_is_negative_finite( x )
+
+Tests if a double-precision floating-point numeric value is a negative finite number.
+
+```c
+#include <stdbool.h>
+
+bool out = stdlib_base_is_negative_finite( 1.0 );
+// returns false
+
+out = stdlib_base_is_negative_finite( -4.0 );
+// returns true
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+bool stdlib_base_is_negative_finite( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/assert/is_negative_finite.h"
+#include "stdlib/constants/float64/ninf.h"
+#include <stdio.h>
+#include <stdbool.h>
+
+int main( void ) {
+    const double x[] = { 5.0, -5.0, 3.14, -3.14, 0.0/0.0, STDLIB_CONSTANT_FLOAT64_NINF };
+
+    bool b;
+    int i;
+    for ( i = 0; i < 6; i++ ) {
+        b = stdlib_base_is_negative_finite( x[ i ] );
+        printf( "x = %lf, is_negative_finite(x) = %s\n", x[ i ], ( b ) ? "True" : "False" );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
