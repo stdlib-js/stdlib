@@ -1,6 +1,20 @@
 
 {{alias}}( x, index, value )
-    Return a new array after replacing an index with a given value.
+    Returns a new array with the element at the specified index replaced with a
+    provided value.
+
+    Negative indices are resolved relative to the last array element, with the
+    last element corresponding to `-1`.
+
+    If provided an array-like object having a `with` method , the function
+    defers execution to that method and assumes that the method has the
+    following signature:
+
+      x.with( index, value )
+
+    If provided an array-like object without a `with` method, the function
+    shallow copies input array data to a new generic array, normalizes a
+    provided index, and sets a specified element.
 
     Parameters
     ----------
@@ -11,12 +25,12 @@
         Index of the element to be replaced.
 
     value: any
-        Value to replace the element at the specified index with.
+        Replacement value.
 
     Returns
     -------
     out: ArrayLikeObject
-        Updated array.
+        Output array.
 
     Examples
     --------
@@ -25,6 +39,9 @@
     [ 5, 2, 3, 4 ]
     > {{alias}}( x, -1, 6 )
     [ 1, 2, 3, 6 ]
+    > x
+    [ 1, 2, 3, 4 ]
 
     See Also
     --------
+

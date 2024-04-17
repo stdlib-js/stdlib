@@ -185,7 +185,6 @@ bool = anyOwnBy( obj, threshold );
 
 <section class="related">
 
-
 </section>
 
 <!-- /.related -->
@@ -197,7 +196,6 @@ bool = anyOwnBy( obj, threshold );
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 <!-- <related-links> -->
-
 
 <!-- </related-links> -->
 

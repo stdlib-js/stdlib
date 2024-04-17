@@ -1,0 +1,30 @@
+
+{{alias}}( str, n )
+    Returns the last `n` grapheme clusters (i.e., user-perceived characters) of
+    a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    n: integer
+        Number of grapheme clusters to return.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep', 1 )
+    'p'
+    > out = {{alias}}( 'Boop', 2 )
+    'op'
+    > out = {{alias}}( 'JavaScript', 6 )
+    'Script'
+
+    See Also
+    --------
+

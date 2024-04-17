@@ -20,70 +20,67 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, AccessorArrayLike, Complex128Array, Complex64Array } from '@stdlib/types/array';
+import { Collection, RealTypedArray, ComplexTypedArray } from '@stdlib/types/array';
+import { ComplexLike } from '@stdlib/types/complex';
 
 /**
-* Returns a new array after updating an index into the input array.
-*
-* If provided an array-like object having a `with` method , the function defers
-* execution to that method and assumes that the method has the following
-* signature:
-*
-*   x.with( index, value )
-*
-* If provided an array-like object without a `with` method, the function manually
-* shallow copied that object and assign provided value to that index.
-*
-* Negative indices are resolved relative to the last array element, with the last
-* element corresponding to `-1`.
-*
-* If provided out-of-bounds indices, the function always returns `undefined`.
+* Returns a new array with the element at the specified index replaced with a provided value.
 *
 * @param x - input array
-* @param index - element index
+* @param index - index at which to set a provided value
 * @param value - replacement value
-* @returns updated array
+* @returns output array
 *
 * @example
-* var x = [ 1, 2, 3, 4 ];
-* var out = with( x, 0, 5 );
-* // returns [ 5, 2, 3, 4 ]
-
-* @example
-* var out = with( x, -1, 6 );
-* // returns [ 1, 2, 3, 6 ]
+* var Complex128Array = require( '@stdlib/array/complex128' );
+* var Complex128 = require( '@stdlib/complex/float64' );
+*
+* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+*
+* var out = withArray( x, 0, new Complex128( 7.0, 8.0 ) );
+* // returns <Complex128Array>[ 7.0, 8.0, 3.0, 4.0, 5.0, 6.0 ]
 */
+declare function withArray<T extends ComplexTypedArray>( x: T, index: number, value: ComplexLike ): T;
 
 /**
- * Sets the value at the specified index in a Complex128Array.
- *
- * @param x - Complex128Array to modify
- * @param index - index at which to set the value
- * @param value - new value to set
- * @returns modified Complex128Array if successful; otherwise, throws a range error.
- */
-declare function withArray( x: Complex128Array, index: number, value: any ): Complex128Array | void;
+* Returns a new array with the element at the specified index replaced with a provided value.
+*
+* @param x - input array
+* @param index - index at which to set a provided value
+* @param value - replacement value
+* @returns output array
+*
+* @example
+* var Float64Array = require( '@stdlib/array/float64' );
+*
+* var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
+*
+* var out = withArray( x, 0, 5.0 );
+* // returns <Float64Array>[ 5.0, 2.0, 3.0 ]
+*/
+declare function withArray<T extends RealTypedArray>( x: T, index: number, value: number ): T; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
- * Sets the value at the specified index in a Complex64Array.
- *
- * @param x - Complex64Array to modify
- * @param index - index at which to set the value
- * @param value - new value to set
- * @returns modified Complex64Array if successful; otherwise, throws a range error
- */
-declare function withArray( x: Complex64Array, index: number, value: any ): Complex64Array | void;
-
-/**
- * Sets the value at the specified index in an array and returns the modified array.
- *
- * @template T - type of elements in the array
- * @param x - array to modify, which can be either a Collection or an AccessorArrayLike
- * @param index - index at which to set the value
- * @param value - new value to set
- * @returns modified array if successful; otherwise, throws range error
- */
-declare function withArray< T = unknown >( x: Collection<T> | AccessorArrayLike<T>, index: number, value: any ): Collection<T> | AccessorArrayLike<T> | void;
+* Returns a new array with the element at the specified index replaced with a provided value.
+*
+* @param x - input array
+* @param index - index at which to set a provided value
+* @param value - replacement value
+* @returns output array
+*
+* @example
+* var x = [ 1, 2, 3 ];
+*
+* var out = withArray( x, 0, 7 );
+* // returns [ 7, 2, 3 ]
+*
+* @example
+* var x = [ 1, 2, 3, 4, 5, 6 ];
+*
+* var out = withArray( x, 2, 8 );
+* // returns [ 1, 8, 3, 4, 5, 6 ]
+*/
+declare function withArray<T = unknown>( x: Collection<T>, index: number, value: T ): Array<T>;
 
 
 // EXPORTS //

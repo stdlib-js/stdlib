@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# withArray
+# arrayWith
 
-> Return a new array after replacing an index with a given value.
+> Return a new array with the element at the specified index replaced with a provided value.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,21 +37,21 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var withArray = require( '@stdlib/array/base/with' );
+var arrayWith = require( '@stdlib/array/base/with' );
 ```
 
-#### withArray( x, index, value )
+#### arrayWith( x, index, value )
 
-Return a new array after updating an index into the input array.
+Returns a new array with the element at the specified index replaced with a provided value.
 
 ```javascript
 var x = [ 1, 2, 3, 4 ];
 
-var out = withArray( x, 0, 5 );
-// returns [5, 2, 3, 4]
+var out = arrayWith( x, 0, 5 );
+// returns [ 5, 2, 3, 4 ]
 
-out = withArray( x, -1, 6 );
-// returns [1, 2, 3, 6]
+out = arrayWith( x, -1, 6 );
+// returns [ 1, 2, 3, 6 ]
 
 ```
 
@@ -77,11 +77,9 @@ The function accepts the following arguments:
     x.with( index, value )
     ```
 
-    If provided an array-like object without a `with` method, the function manually shallow copied that object and assign provided value to that index.
+    If provided an array-like object without a `with` method, the function shallow copies input array data to a new generic array, normalizes a provided index, and sets a specified element.
 
 -   Negative indices are resolved relative to the last array element, with the last element corresponding to `-1`.
-
--   If provided out-of-bounds indices, the function always returns `undefined`.
 
 </section>
 
@@ -96,29 +94,25 @@ The function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteuniform = require( '@stdlib/random/array/discrete-uniform' );
-var withArray = require( '@stdlib/array/base/with' );
-var rand = require( '@stdlib/random/base/randu' );
-var x;
-var indices;
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var arrayWith = require( '@stdlib/array/base/with' );
 
 // Define an array:
-x = discreteuniform( 10, -100, 100 );
+var opts = {
+    'dtype': 'generic'
+};
+var x = discreteUniform( 5, -100, 100, opts );
 
 // Define an array containing random index values:
-indices = discreteuniform( 100, -x.length, x.length-1 );
+var indices = discreteUniform( 100, -x.length, x.length-1, opts );
 
-// Randomly selected values from the input array:
+// Define an array with random values to set:
+var values = discreteUniform( indices.length, -10000, 10000, opts );
+
+// Randomly set elements in the input array:
 var i;
-var index;
-var newvalue;
-var updatedarray;
-for (i = 0; i < indices.length; i++) {
-    index = indices[i];
-    newvalue = rand(); // Random value between -100 and 100
-    updatedarray = withArray(x, index, newvalue); // Update the value at the given index
-    console.log('Updated x[%d] to %d', index, newvalue);
-    console.log('Updated array:', updatedarray);
+for ( i = 0; i < indices.length; i++ ) {
+    console.log( 'x = [%s]', arrayWith( x, indices[ i ], values[ i ] ).join( ',' ) );
 }
 ```
 

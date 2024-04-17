@@ -1,0 +1,56 @@
+
+{{alias}}( c, x )
+    Evaluates a polynomial using single-precision floating-point arithmetic.
+
+    Parameters
+    ----------
+    c: Array<number>
+        Polynomial coefficients sorted in ascending degree.
+
+    x: number
+        Value at which to evaluate the polynomial.
+
+    Returns
+    -------
+    out: number
+        Evaluated polynomial.
+
+    Examples
+    --------
+    > var arr = new {{alias:@stdlib/array/float32}}( [ 3.0, 2.0, 1.0 ] );
+
+    // 3*10^0 + 2*10^1 + 1*10^2
+    > var v = {{alias}}( arr, 10.0 )
+    123.0
+
+
+{{alias}}.factory( c )
+    Returns a function for evaluating a polynomial using single-precision
+    floating-point arithmetic.
+
+    Parameters
+    ----------
+    c: Array<number>
+        Polynomial coefficients sorted in ascending degree.
+
+    Returns
+    -------
+    fcn: Function
+        Function for evaluating a polynomial.
+
+    Examples
+    --------
+    > var c = new {{alias:@stdlib/array/float32}}( [ 3.0, 2.0, 1.0 ] );
+    > var f = {{alias}}.factory( c );
+
+    // 3*10^0 + 2*10^1 + 1*10^2
+    > var v = f( 10.0 )
+    123.0
+
+    // 3*5^0 + 2*5^1 + 1*5^2
+    > v = f( 5.0 )
+    38.0
+
+    See Also
+    --------
+

@@ -20,7 +20,7 @@ limitations under the License.
 
 # forEachRight
 
-> Invokes a function for each UTF-16 code unit in a string iterating from right to left.
+> Invokes a function for each UTF-16 code unit in a string, iterating from right to left.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,7 +42,7 @@ var forEachRight = require( '@stdlib/string/base/for-each-right' );
 
 #### forEachRight( str, clbk\[, thisArg ] )
 
-Invokes a function for each UTF-16 code unit in a string iterating from right to left.
+Invokes a function for each UTF-16 code unit in a string, iterating from right to left.
 
 ```javascript
 function log( value, index ) {
