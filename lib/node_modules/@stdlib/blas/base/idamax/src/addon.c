@@ -21,6 +21,7 @@
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
 #include "stdlib/napi/argv_strided_float64array.h"
+#include "stdlib/napi/create_int32.h"
 #include <node_api.h>
 #include <assert.h>
 
@@ -38,9 +39,9 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 
-	napi_value idx;
-	napi_status status = napi_create_int32( env, c_idamax( N, X, strideX ), &idx ); // TODO: revisit once we support 64-bit integers as return values and 64 integers more generally in JavaScript
-	assert( status == napi_ok );
+	// TODO: revisit once we support 64-bit integers as return values and 64 integers more generally in JavaScript
+	STDLIB_NAPI_CREATE_INT32( env, c_idamax( N, X, strideX ), idx );
+
 	return idx;
 }
 
