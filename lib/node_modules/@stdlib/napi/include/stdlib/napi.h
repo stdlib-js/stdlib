@@ -49,6 +49,8 @@
 #include "stdlib/napi/argv_uint32.h"
 #include "stdlib/napi/argv_uint32array.h"
 #include "stdlib/napi/create_double.h"
+#include "stdlib/napi/create_int32.h"
+#include "stdlib/napi/create_uint32.h"
 #include "stdlib/napi/export.h"
 
 #endif // !STDLIB_NAPI_H
