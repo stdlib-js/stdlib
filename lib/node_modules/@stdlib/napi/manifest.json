@@ -59,6 +59,7 @@
 				"@stdlib/napi/argv-uint16array",
 				"@stdlib/napi/argv-uint32",
 				"@stdlib/napi/argv-uint32array",
+        "@stdlib/napi/create-double",
         "@stdlib/napi/export"
 			]
 		}
