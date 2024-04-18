@@ -22,6 +22,7 @@
 #include "stdlib/napi/argv_int64.h"
 #include "stdlib/napi/argv_strided_float64array.h"
 #include "stdlib/napi/create_double.h"
+#include <node_api.h>
 
 /**
 * Receives JavaScript callback invocation data.
