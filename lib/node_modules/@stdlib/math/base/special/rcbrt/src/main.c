@@ -22,8 +22,8 @@
 /**
 * Computes the reciprocal cube root of a double-precision floating-point number.
 *
-* @param x       number
-* @return        reciprocal cube root
+* @param x    number
+* @return     reciprocal cube root
 *
 * @example
 * double y = stdlib_base_rcbrt( 8.0 );
