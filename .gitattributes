@@ -44,6 +44,7 @@
 
 # Configure directories which should *not* be included in GitHub language statistics:
 /deps/** linguist-vendored
+/dist/** linguist-generated
 /workshops/** linguist-vendored
 
 benchmark/** linguist-vendored
