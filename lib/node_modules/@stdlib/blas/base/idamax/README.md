@@ -112,7 +112,7 @@ var idx = idamax.ndarray( 5, x, 1, 1 );
 
 ## Notes
 
--   If `N < 1` or `strideX <= 0`, both functions return `0`.
+-   If `N < 1` or `strideX <= 0`, both functions return `-1`.
 -   `idamax()` corresponds to the [BLAS][blas] level 1 function [`idamax`][idamax].
 
 </section>
