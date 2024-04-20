@@ -142,6 +142,13 @@ jobs:
           files="${{ steps.changed-files.outputs.files }}"
           FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_javascript_files" "$files"
 
+      # Add missing trailing newlines:
+      - name: 'Add missing trailing newlines'
+        id: add-trailing-newlines
+        run: |
+          files="${{ steps.changed-files.outputs.files }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/add_trailing_newlines" "$files"
+
       # Disable Git hooks:
       - name: 'Disable Git hooks'
         run: |
