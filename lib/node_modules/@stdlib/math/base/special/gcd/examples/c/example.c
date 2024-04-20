@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,15 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/gcd.h"
+#include <stdio.h>
 
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var gcd = require( './../lib' );
+int main( void ) {
+	const double a[] = { 24.0, 32.0, 48.0, 116.0, 33.0 };
+	const double b[] = { 12.0, 6.0, 15.0, 52.0, 22.0 };
 
-var a = discreteUniform( 100, 0, 50 );
-var b = discreteUniform( a.length, 0, 50 );
-
-var i;
-for ( i = 0; i < a.length; i++ ) {
-	console.log( 'gcd(%d,%d) = %d', a[ i ], b[ i ], gcd( a[ i ], b[ i ] ) );
+	double out;
+	int i;
+	for ( i = 0; i < 5; i++ ) {
+		out = stdlib_base_gcd( a[ i ], b[ i ] );
+		printf( "gcd(%lf, %lf) = %lf\n", a[ i ], b[ i ], out );
+	}
 }

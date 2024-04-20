@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,15 +16,23 @@
 * limitations under the License.
 */
 
-'use strict';
+#ifndef STDLIB_MATH_BASE_SPECIAL_GCD_H
+#define STDLIB_MATH_BASE_SPECIAL_GCD_H
 
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var gcd = require( './../lib' );
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-var a = discreteUniform( 100, 0, 50 );
-var b = discreteUniform( a.length, 0, 50 );
+/**
+* Computes the greatest common divisor (gcd).
+*/
+double stdlib_base_gcd( const double a, const double b );
 
-var i;
-for ( i = 0; i < a.length; i++ ) {
-	console.log( 'gcd(%d,%d) = %d', a[ i ], b[ i ], gcd( a[ i ], b[ i ] ) );
+#ifdef __cplusplus
 }
+#endif
+
+#endif // !STDLIB_MATH_BASE_SPECIAL_GCD_H
