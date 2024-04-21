@@ -88,7 +88,6 @@ str = lastCodePoint( '六书/六書', 3 );
 
 <section class="related">
 
-
 </section>
 
 <!-- /.related -->
@@ -98,7 +97,6 @@ str = lastCodePoint( '六书/六書', 3 );
 <section class="links">
 
 <!-- <related-links> -->
-
 
 <!-- </related-links> -->
 
