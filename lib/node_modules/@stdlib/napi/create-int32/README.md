@@ -1,0 +1,228 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2024 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# create_int32
+
+> Convert a signed 32-bit integer to a Node-API value.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var headerDir = require( '@stdlib/napi/create-int32' );
+```
+
+#### headerDir
+
+Absolute file path for the directory containing header files for C APIs.
+
+```javascript
+var dir = headerDir;
+// returns <string>
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+```javascript
+var headerDir = require( '@stdlib/napi/create-int32' );
+
+console.log( headerDir );
+// => <string>
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/napi/create_int32.h"
+```
+
+#### stdlib_napi_create_int32( env, value, \*out )
+
+Converts a signed 32-bit integer to a Node-API value.
+
+```c
+#include "stdlib/napi/create_int32.h"
+#include <node_api.h>
+
+static napi_value addon( napi_env env, napi_callback_info info ) {
+    
+    // ...
+
+    napi_value value;
+    napi_status status = stdlib_napi_create_int32( env, 1, &value );
+    assert( status == napi_ok );
+    if ( err != NULL ) {
+        assert( napi_throw( env, err ) == napi_ok );
+        return NULL;
+    }
+
+    // ...
+}
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **value**: `[in] int32_t` signed 32-bit integer.
+-   **out**: `[out] napi_value*` destination for storing output value.
+
+```c
+napi_status stdlib_napi_create_int32( const napi_env env, const int32_t value, napi_value *out );
+```
+
+The function returns a `napi_status` status code indicating success or failure (returns `napi_ok` if success).
+
+#### STDLIB_NAPI_CREATE_INT32( env, expression, name )
+
+Macro for converting a signed 32-bit integer to a Node-API value.
+
+```c
+#include "stdlib/napi/create_int32.h"
+#include "stdlib/napi/argv_int32.h"
+#include "stdlib/napi/argv.h"
+#include <node_api.h>
+#include <stdint.h>
+
+static int32_t fcn( const int32_t v ) {
+    return v;
+}
+
+// ...
+
+static napi_value addon( napi_env env, napi_callback_info info ) {
+    // Retrieve add-on callback arguments:
+    STDLIB_NAPI_ARGV( env, info, argv, argc, 1 );
+
+    // Convert the first argument to a C type:
+    STDLIB_NAPI_ARGV_INT32( env, value, argv, 0 );
+
+    // ...
+
+    // Convert a value having a C type to a Node-API value:
+    STDLIB_NAPI_CREATE_INT32( env, fcn( value ), out );
+
+    return out;
+}
+```
+
+The macro expects the following arguments:
+
+-   **env**: environment under which the callback is invoked.
+-   **expression**: expression returning a signed 32-bit integer.
+-   **name**: output variable name.
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

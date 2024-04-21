@@ -1,7 +1,10 @@
 
 {{alias}}( str, search, replacement, fromIndex )
     Replaces the substring before the first occurrence of a specified search
-    string. 
+    string.
+
+    If unable to find a search string, the function returns the input string
+    unchanged.
 
     Parameters
     ----------
@@ -15,7 +18,9 @@
         Replacement string.
 
     fromIndex: integer
-        Index from which to start the search.
+        Starting index (inclusive). If less than zero, the starting index is
+        resolved relative to the last string character, with the last string
+        character corresponding to `fromIndex = -1`.
 
     Returns
     -------

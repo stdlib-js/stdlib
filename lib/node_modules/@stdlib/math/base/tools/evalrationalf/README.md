@@ -78,7 +78,7 @@ var Float32Array = require( '@stdlib/array/float32' );
 var P = new Float32Array( [ -6.0, -5.0 ] );
 var Q = new Float32Array( [ 3.0, 0.5 ] );
 
-var v = evalrationalf( P, Q, 6.0 ); //  => ( -6*6^0 - 5*6^1 ) / ( 3*6^0 + 0.5*6^1 ) = (-6-30)/(3+3)
+var v = evalrationalf( P, Q, 6.0 ); // => ( -6*6^0 - 5*6^1 ) / ( 3*6^0 + 0.5*6^1 ) = (-6-30)/(3+3)
 // returns -6.0
 ```
 

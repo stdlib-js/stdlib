@@ -60,7 +60,7 @@ var idx = lastIndexOf( x, 7, 5, false );
 // returns -1
 ```
 
-To begin searching from specific index, provide a `fromIndex` argument.
+To begin searching from a specific index, provide a corresponding `fromIndex` argument.
 
 ```javascript
 var x = [ 1, 1, 2, 1, 2, 3, 3 ];

@@ -56,16 +56,14 @@ out = replaceBeforeLast( str, 'o', 'bar', str.length );
 To begin searching from a specific index, provide a corresponding `fromIndex` argument.
 
 ```javascript
-var str = 'beep boop beep';
-var out = replaceBeforeLast( str, ' ', 'loop', 5 );
+var out = replaceBeforeLast( 'beep boop beep', ' ', 'loop', 5 );
 // returns 'loop boop beep'
 ```
 
 If `fromIndex` is less than zero, the starting index is resolved relative to the last string character, with the last string character corresponding to `fromIndex = -1`.
 
 ```javascript
-var str = 'beep boop beep';
-var out = replaceBeforeLast( str, ' ', 'loop', -1 );
+var out = replaceBeforeLast( 'beep boop beep', ' ', 'loop', -1 );
 // returns 'loop beep'
 ```
 

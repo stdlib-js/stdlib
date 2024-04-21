@@ -111,7 +111,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@70a41aba780001da0a30141984ae2a0c95d8704e # v6.0.2
         with:
-          title: 'Update namespace TypeScript declarations'
+          title: 'feat: update namespace TypeScript declarations'
           body: |
             This PR
 
