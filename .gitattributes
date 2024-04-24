@@ -60,6 +60,7 @@ Makefile linguist-vendored
 *.mk linguist-vendored
 *.jl linguist-vendored
 *.py linguist-vendored
+*.R linguist-vendored
 
 # Configure files which should be included in GitHub language statistics:
 docs/types/*.d.ts -linguist-documentation
