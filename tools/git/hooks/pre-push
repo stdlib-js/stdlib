@@ -275,7 +275,7 @@ main() {
 	fi
 	# Run JavaScript test files...
 	if [[ -z "${skip_javascript_tests}" ]]; then
-		files=$(echo "${changed_files}" | grep '/test/.*\.js$' | grep -v '/test/fixtures/.*\.js$' | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep '/test/.*\.js$' | grep -v '/test/fixtures/.*\.js$' | grep -v '/test/.*/fixtures/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running JavaScript test files...' >&2
 			make FILES="${files}" test-javascript-files > /dev/null >&2

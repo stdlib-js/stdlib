@@ -343,7 +343,6 @@ jobs:
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
-          steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
 
@@ -516,7 +515,6 @@ jobs:
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
-          steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
 
@@ -695,7 +693,6 @@ jobs:
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
-          steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
 
@@ -893,7 +890,6 @@ jobs:
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
-          steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
 

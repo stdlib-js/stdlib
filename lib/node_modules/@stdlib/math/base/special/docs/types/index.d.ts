@@ -5605,7 +5605,7 @@ interface Namespace {
 	*
 	* @example
 	* var v = ns.rcbrt( -8.0 );
-	* // returns -2.0
+	* // returns -0.5
 	*
 	* @example
 	* var v = ns.rcbrt( NaN );

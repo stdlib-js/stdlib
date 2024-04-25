@@ -50,9 +50,20 @@ var out = replaceAfter( 'beep boop', ' ', 'loop', 0 );
 
 out = replaceAfter( 'beep boop', 'o', 'bar', 0 );
 // returns 'beep bobar'
+```
 
-out = replaceAfter( 'beep boop beep baz', 'beep', 'foo', 5 );
+To begin searching from a specific index, provide a corresponding `fromIndex` argument.
+
+```javascript
+var out = replaceAfter( 'beep boop beep baz', 'beep', 'foo', 5 );
 // return 'beep boop beepfoo'
+```
+
+If `fromIndex` is less than zero, the starting index is resolved relative to the last string character, with the last string character corresponding to `fromIndex = -1`.
+
+```javascript
+var out = replaceAfter( 'beep boop beep', ' ', 'loop', -6 );
+// returns 'beep boop loop'
 ```
 
 </section>
@@ -67,7 +78,7 @@ out = replaceAfter( 'beep boop beep baz', 'beep', 'foo', 5 );
 
 -   If a search string is not present in a provided string, the function returns the provided string unchanged.
 -   If a search string is an empty string, the function returns the provided string unchanged.
--   If `fromIndex` is less than `0` or greater than `str.length`, the search starts at index `0` and `str.length`, respectively.
+-   If `fromIndex` resolves to an index which is greater than or equal to `str.length`, the function returns the provided string unchanged.
 
 </section>
 

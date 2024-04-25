@@ -35,6 +35,8 @@ permissions:
 jobs:
 
   scaffold:
+    # FIXME: disabled until determination whether to re-enable this job
+    if: false
 
     # Define a display name:
     name: 'Scaffold Package via Push to Scaffolding Branch'
