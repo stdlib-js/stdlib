@@ -1691,7 +1691,7 @@ The reducer function is provided four arguments:
 -   **arr**: the array on which this method was called.
 
 By default, the function initializes the accumulated result to the first element in the array and passes the second array element as `value` during the first invocation of the provided callback. To begin accumulation from a different starting value and pass in the first array element as `value` during the first invocation of the provided callback, provide an `initialValue` argument.
- 
+
 ```javascript
 var realf = require( '@stdlib/complex/realf' );
 
@@ -1745,7 +1745,7 @@ The reducer function is provided four arguments:
 -   **arr**: the array on which this method was called.
 
 By default, the function initializes the accumulated result to the last element in the array and passes the second-last array element as `value` during the first invocation of the provided callback. To begin accumulation from a different starting value and pass in the last array element as `value` during the first invocation of the provided callback, provide an `initialValue` argument.
- 
+
 ```javascript
 var realf = require( '@stdlib/complex/realf' );
 
