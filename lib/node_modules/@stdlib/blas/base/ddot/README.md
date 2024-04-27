@@ -205,7 +205,7 @@ console.log( out );
 
 #### c_ddot( N, X, strideX, Y, strideY )
 
-Computes the sum of absolute values.
+Computes the dot product of two double-precision floating-point vectors.
 
 ```c
 const double x[] = { 4.0, 2.0, -3.0, 5.0, -1.0 };
