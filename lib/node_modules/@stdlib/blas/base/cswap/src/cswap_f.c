@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/cswap.h"
 #include "stdlib/blas/base/cswap_fortran.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Interchanges two complex single-precision floating-point vectors.
@@ -28,6 +29,6 @@
 * @param Y        second input array
 * @param strideY  Y stride length
 */
-void c_cswap( const int N, void *X, const int strideX, void *Y, const int strideY ) {
+void c_cswap( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
 	cswap( &N, X, &strideX, Y, &strideY );
 }
