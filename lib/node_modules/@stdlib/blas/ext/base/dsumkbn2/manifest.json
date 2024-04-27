@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,21 +26,49 @@
   ],
   "confs": [
     {
+      "task": "build",
       "src": [
         "./src/dsumkbn2.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-float64array"        
+        "@stdlib/napi/argv-strided-float64array",
+        "@stdlib/math/base/special/abs"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/dsumkbn2.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/dsumkbn2.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs"
       ]
     }
   ]
