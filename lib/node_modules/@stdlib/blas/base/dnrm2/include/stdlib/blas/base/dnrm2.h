@@ -22,6 +22,8 @@
 #ifndef DNRM2_H
 #define DNRM2_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Computes the L2-norm of a double-precision floating-point vector.
 */
-double c_dnrm2( const int N, const double *X, const int stride );
+double c_dnrm2( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
 
 #ifdef __cplusplus
 }

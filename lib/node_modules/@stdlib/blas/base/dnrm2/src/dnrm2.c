@@ -17,6 +17,9 @@
 */
 
 #include "stdlib/blas/base/dnrm2.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/math/base/special/abs.h"
+#include "stdlib/math/base/special/sqrt.h"
 #include <math.h>
 
 /**
@@ -27,23 +30,23 @@
 * @param stride  stride length
 * @return        L2-norm
 */
-double c_dnrm2( const int N, const double *X, const int stride ) {
+double c_dnrm2( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
 	double scale;
 	double ssq;
 	double ax;
-	int i;
+	CBLAS_INT i;
 
 	if ( N <= 0 || stride <= 0 ) {
 		return 0.0;
 	}
 	if ( N == 1 ) {
-		return fabs( X[ 0 ] );
+		return stdlib_base_abs( X[ 0 ] );
 	}
 	scale = 0.0;
 	ssq = 1.0;
 	for ( i = 0; i < N*stride; i += stride ) {
 		if ( X[ i ] != 0.0 ) {
-			ax = fabs( X[ i ] );
+			ax = stdlib_base_abs( X[ i ] );
 			if ( scale < ax ) {
 				ssq = 1.0 + ( ssq * pow( scale/ax, 2 ) );
 				scale = ax;
@@ -52,5 +55,5 @@ double c_dnrm2( const int N, const double *X, const int stride ) {
 			}
 		}
 	}
-	return scale * sqrt( ssq );
+	return scale * stdlib_base_sqrt( ssq );
 }

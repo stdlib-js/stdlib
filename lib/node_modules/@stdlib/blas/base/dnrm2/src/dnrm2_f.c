@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/dnrm2.h"
 #include "stdlib/blas/base/dnrm2_fortran.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Computes the L2-norm of a double-precision floating-point vector.
@@ -27,7 +28,7 @@
 * @param stride  stride length
 * @return        L2-norm
 */
-double c_dnrm2( const int N, const double *X, const int stride ) {
+double c_dnrm2( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
 	double nrm2;
 	dnrm2sub( &N, X, &stride, &nrm2 );
 	return nrm2;

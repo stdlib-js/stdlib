@@ -160,6 +160,101 @@ console.log( out );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/dnrm2.h"
+```
+
+#### c_dnrm2( N, X, stride )
+
+Computes the L2-norm of a double-precision floating-point vector.
+
+```c
+const double x[] = { 1.0, -2.0, 2.0 };
+
+double v = c_dnrm2( 3, x, 1 );
+// returns 3.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+
+```c
+double c_dnrm2( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/dnrm2.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    const double x[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
+
+    // Specify the number of elements:
+    const int N = 8;
+
+    // Specify a stride:
+    const int strideX = 1;
+
+    // Compute the L2-norm:
+    double l2 = c_dnrm2( N, x, strideX );
+
+    // Print the result:
+    printf( "L2-norm: %lf\n", l2 );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
