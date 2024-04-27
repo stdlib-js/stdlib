@@ -22,6 +22,8 @@
 #ifndef DASUM_H
 #define DASUM_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Computes the sum of absolute values.
 */
-double c_dasum( const int N, const double *X, const int stride );
+double c_dasum( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
 
 #ifdef __cplusplus
 }

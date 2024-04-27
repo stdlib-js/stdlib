@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/dasum.h"
 #include "stdlib/blas/base/dasum_cblas.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Computes the sum of absolute values.
@@ -27,6 +28,6 @@
 * @param stride  stride length
 * @return        sum of absolute values
 */
-double c_dasum( const int N, const double *X, const int stride ) {
+double c_dasum( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
 	return cblas_dasum( N, X, stride );
 }
