@@ -28,6 +28,6 @@
 * @param stride  stride length
 * @return        L2-norm
 */
-double c_dnrm2( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
-	return cblas_dnrm2( N, X, stride );
+double API_SUFFIX(c_dnrm2)( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
+	return API_SUFFIX(cblas_dnrm2)( N, X, stride );
 }

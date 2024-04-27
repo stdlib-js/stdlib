@@ -28,7 +28,7 @@
 * @param stride  stride length
 * @return        L2-norm
 */
-double c_dnrm2( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
+double API_SUFFIX(c_dnrm2)( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
 	double nrm2;
 	dnrm2sub( &N, X, &stride, &nrm2 );
 	return nrm2;

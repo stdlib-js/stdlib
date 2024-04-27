@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Computes the L2-norm of a double-precision floating-point vector.
 */
-double c_dnrm2( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
+double API_SUFFIX(c_dnrm2)( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
 
 #ifdef __cplusplus
 }
