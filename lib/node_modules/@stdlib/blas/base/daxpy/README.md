@@ -206,7 +206,7 @@ The function accepts the following arguments:
 -   **alpha**: `[in] double` scalar constant.
 -   **X**: `[in] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
--   **Y**: `[out] double*` output array.
+-   **Y**: `[inout] double*` output array.
 -   **strideY**: `[in CBLAS_INT` index increment for `Y`.
 
 ```c
