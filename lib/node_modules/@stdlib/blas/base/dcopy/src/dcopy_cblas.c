@@ -29,6 +29,6 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void c_dcopy( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
-	cblas_dcopy( N, X, strideX, Y, strideY );
+void API_SUFFIX(c_dcopy)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
+	API_SUFFIX(cblas_dcopy)( N, X, strideX, Y, strideY );
 }

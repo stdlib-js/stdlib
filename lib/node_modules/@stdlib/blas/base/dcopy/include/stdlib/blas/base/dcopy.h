@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Copies values from `X` into `Y`.
 */
-void c_dcopy( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
+void API_SUFFIX(c_dcopy)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }
