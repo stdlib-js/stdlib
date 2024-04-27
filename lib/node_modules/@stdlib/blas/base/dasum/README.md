@@ -210,7 +210,7 @@ double v = c_dasum( 4, x, 1 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **X**: `[in] void*` input array.
+-   **X**: `[in] double*` input array.
 -   **stride**: `[in] CBLAS_INT` index increment for `X`.
 
 ```c
