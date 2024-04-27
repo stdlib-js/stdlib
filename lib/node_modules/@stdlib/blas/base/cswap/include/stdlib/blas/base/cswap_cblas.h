@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Interchanges two complex single-precision floating-point vectors.
 */
-void cblas_cswap( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
+void API_SUFFIX(cblas_cswap)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }
