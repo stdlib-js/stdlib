@@ -297,9 +297,9 @@ c_cswap( 2, (void *)x, 1, (void *)Y, 1 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **X**: `[out] void*` first input array.
+-   **X**: `[inout] void*` first input array.
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
--   **Y**: `[out] void*` first input array.
+-   **Y**: `[inout] void*` first input array.
 -   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
 
 ```c
