@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/base/daxpy.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Multiplies a vector `X` by a constant and adds the result to `Y`.
@@ -28,11 +29,11 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void c_daxpy( const int N, const double alpha, const double *X, const int strideX, double *Y, const int strideY ) {
-	int ix;
-	int iy;
-	int i;
-	int m;
+void c_daxpy( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT i;
+	CBLAS_INT m;
 
 	if ( N <= 0 ) {
 		return;
