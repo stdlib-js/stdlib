@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `zswap`.
-*/
 #include "stdlib/blas/base/zswap.h"
 #include <stdlib.h>
 #include <stdio.h>

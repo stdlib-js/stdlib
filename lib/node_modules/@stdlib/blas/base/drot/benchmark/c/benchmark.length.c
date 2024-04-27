@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `drot`.
-*/
 #include "stdlib/blas/base/drot.h"
 #include <stdlib.h>
 #include <stdio.h>

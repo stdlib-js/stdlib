@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `dnrm2`.
-*/
 #include "stdlib/blas/base/dnrm2.h"
 #include <stdlib.h>
 #include <stdio.h>

@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `srot`.
-*/
 #include "stdlib/blas/base/srot.h"
 #include <stdlib.h>
 #include <stdio.h>

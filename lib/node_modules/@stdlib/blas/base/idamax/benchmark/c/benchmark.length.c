@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `idamax`.
-*/
 #include "stdlib/blas/base/idamax.h"
 #include <stdlib.h>
 #include <stdio.h>

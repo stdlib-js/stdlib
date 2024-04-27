@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `isamax`.
-*/
 #include "stdlib/blas/base/isamax.h"
 #include <stdlib.h>
 #include <stdio.h>

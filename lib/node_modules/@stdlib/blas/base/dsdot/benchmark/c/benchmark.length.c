@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `dsdot`.
-*/
 #include "stdlib/blas/base/dsdot.h"
 #include <stdlib.h>
 #include <stdio.h>
