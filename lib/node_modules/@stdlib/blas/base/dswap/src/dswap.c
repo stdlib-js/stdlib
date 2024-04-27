@@ -28,7 +28,7 @@
 * @param Y        second input array
 * @param strideY  Y stride length
 */
-void c_dswap( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
+void API_SUFFIX(c_dswap)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
 	double tmp;
 	CBLAS_INT ix;
 	CBLAS_INT iy;

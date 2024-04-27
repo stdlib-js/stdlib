@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Interchanges two double-precision floating-point vectors.
 */
-void c_dswap( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
+void API_SUFFIX(c_dswap)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }
