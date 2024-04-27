@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/drot.h"
 #include "stdlib/blas/base/drot_fortran.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Applies a plane rotation.
@@ -30,6 +31,6 @@
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void c_drot( const int N, double *X, const int strideX, double *Y, const int strideY, const double c, const double s ) {
+void c_drot( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, const double c, const double s ) {
 	drot( &N, X, &strideX, Y, &strideY, &c, &s );
 }

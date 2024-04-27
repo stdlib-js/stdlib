@@ -22,6 +22,8 @@
 #ifndef DROT_H
 #define DROT_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Applies a plane rotation.
 */
-void c_drot( const int N, double *X, const int strideX, double *Y, const int strideY, const double c, const double s );
+void c_drot( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, const double c, const double s );
 
 #ifdef __cplusplus
 }
