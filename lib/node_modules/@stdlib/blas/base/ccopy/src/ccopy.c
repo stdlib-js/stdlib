@@ -28,7 +28,7 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void c_ccopy( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
+void API_SUFFIX(c_ccopy)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
 	float *x = (float *)X;
 	float *y = (float *)Y;
 	CBLAS_INT ix;
