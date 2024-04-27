@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/base/ccopy.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
@@ -27,12 +28,12 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void c_ccopy( const int N, const void *X, const int strideX, void *Y, const int strideY ) {
+void c_ccopy( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
 	float *x = (float *)X;
 	float *y = (float *)Y;
-	int ix;
-	int iy;
-	int i;
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT i;
 
 	if ( N <= 0 ) {
 		return;
