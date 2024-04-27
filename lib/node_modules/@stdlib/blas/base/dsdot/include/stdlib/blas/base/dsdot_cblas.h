@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Computes the dot product of two single-precision floating-point vectors with extended accumulation and result.
 */
-double cblas_dsdot( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY );
+double API_SUFFIX(cblas_dsdot)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }

@@ -30,6 +30,6 @@
 * @param strideY  Y stride length
 * @return         the dot product
 */
-double c_dsdot( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY ) {
-	return cblas_dsdot( N, X, strideX, Y, strideY );
+double API_SUFFIX(c_dsdot)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY ) {
+	return API_SUFFIX(cblas_dsdot)( N, X, strideX, Y, strideY );
 }
