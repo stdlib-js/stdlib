@@ -28,6 +28,6 @@
 * @param X       input array
 * @param stride  index increment
 */
-void c_dscal( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT stride ) {
-	cblas_dscal( N, alpha, X, stride );
+void API_SUFFIX(c_dscal)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT stride ) {
+	API_SUFFIX(cblas_dscal)( N, alpha, X, stride );
 }
