@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/base/drot.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
@@ -41,7 +42,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_DOUBLE( env, s, argv, 6 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, strideY, argv, 3 );
-	c_drot( N, X, strideX, Y, strideY, c, s );
+	API_SUFFIX(c_drot)( N, X, strideX, Y, strideY, c, s );
 	return NULL;
 }
 

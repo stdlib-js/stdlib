@@ -31,6 +31,6 @@
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void c_drot( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, const double c, const double s ) {
+void API_SUFFIX(c_drot)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, const double c, const double s ) {
 	drot( &N, X, &strideX, Y, &strideY, &c, &s );
 }
