@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/dcopy.h"
 #include "stdlib/blas/base/dcopy_cblas.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Copies values from `X` into `Y`.
@@ -28,6 +29,6 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void c_dcopy( const int N, const double *X, const int strideX, double *Y, const int strideY ) {
+void c_dcopy( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
 	cblas_dcopy( N, X, strideX, Y, strideY );
 }

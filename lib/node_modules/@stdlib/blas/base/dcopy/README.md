@@ -158,6 +158,107 @@ console.log( y );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/dcopy.h"
+```
+
+#### c_dcopy( N, X, strideX, Y, strideY )
+
+Copies values from `X` into `Y`.
+
+```c
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
+double y[] = { 0.0, 0.0, 0.0, 0.0 };
+
+c_dcopy( 4, x, 1, y, 1 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **Y**: `[out] double*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+
+```c
+void c_dcopy( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/dcopy.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays:
+    const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+    double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+
+    // Specify the number of elements:
+    const int N = 4;
+
+    // Specify stride lengths:
+    const int strideX = 2;
+    const int strideY = -2;
+
+    // Copy elements:
+    c_dcopy( N, x, strideX, y, strideY );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "y[ %i ] = %lf\n", i, y[ i ] );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
