@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/blas/ext/base/scusumkbn.h"
+#include "stdlib/math/base/special/absf.h"
 #include <stdint.h>
-#include <math.h>
 
 /**
 * Computes the cumulative sum of single-precision floating-point strided array elements using an improved Kahan–Babuška algorithm.
@@ -65,7 +65,7 @@ void stdlib_strided_scusumkbn( const int64_t N, const float sum, const float *X,
 	for ( i = 0; i < N; i++ ) {
 		v = X[ ix ];
 		t = s + v;
-		if ( fabsf( s ) >= fabsf( v ) ) {
+		if ( stdlib_base_absf( s ) >= stdlib_base_absf( v ) ) {
 			c += (s-t) + v;
 		} else {
 			c += (v-t) + s;
