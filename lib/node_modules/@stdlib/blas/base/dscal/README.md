@@ -146,6 +146,103 @@ console.log( x );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/dscal.h"
+```
+
+#### c_dscal( N, X, stride )
+
+Multiplies each element of a double-precision floating-point vector by a constant.
+
+```c
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
+
+c_dscal( 4, 5.0, x, 1 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **alpha**: `[in] double` scalar constant.
+-   **X**: `[inout] double*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+
+```c
+void c_dscal( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT stride );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/dscal.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    double x[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
+
+    // Specify the number of elements:
+    const int N = 8;
+
+    // Specify a stride:
+    const int strideX = 1;
+
+    // Scale the vector:
+    c_dscal( N, 5.0, x, strideX );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "x[ %i ] = %lf\n", i, x[ i ] );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
