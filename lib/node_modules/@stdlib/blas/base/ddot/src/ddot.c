@@ -16,11 +16,6 @@
 * limitations under the License.
 */
 
-/**
- * Compute the dot product of two double-precision floating-point vectors.
- *
- * @see <a href="http://www.netlib.org/lapack/expolore-html/df/d28/group__single__blas__level1.html">ddot</a>
- */
 #include "stdlib/blas/base/ddot.h"
 #include "stdlib/blas/base/shared.h"
 
