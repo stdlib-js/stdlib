@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/ddot.h"
 #include "stdlib/blas/base/ddot_cblas.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Computes the dot product of two double-precision floating-point vectors.
@@ -29,6 +30,6 @@
 * @param strideY  Y stride length
 * @return         the dot product
 */
-double c_ddot( const int N, const double *X, const int strideX, const double *Y, const int strideY ) {
+double c_ddot( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY ) {
 	return cblas_ddot( N, X, strideX, Y, strideY );
 }

@@ -22,6 +22,7 @@
  * @see <a href="http://www.netlib.org/lapack/expolore-html/df/d28/group__single__blas__level1.html">ddot</a>
  */
 #include "stdlib/blas/base/ddot.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Computes the dot product of two double-precision floating-point vectors.
@@ -33,12 +34,12 @@
 * @param strideY  Y stride length
 * @return         the dot product
 */
-double c_ddot( const int N, const double *X, const int strideX, const double *Y, const int strideY ) {
+double c_ddot( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY ) {
 	double dot;
-	int ix;
-	int iy;
-	int m;
-	int i;
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT m;
+	CBLAS_INT i;
 
 	dot = 0.0;
 	if ( N <= 0 ) {

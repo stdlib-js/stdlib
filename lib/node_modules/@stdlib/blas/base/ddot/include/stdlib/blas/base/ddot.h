@@ -22,6 +22,8 @@
 #ifndef DDOT_H
 #define DDOT_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Computes the dot product of two double-precision floating-point vectors.
 */
-double c_ddot( const int N, const double *X, const int strideX, const double *Y, const int strideY );
+double c_ddot( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }
