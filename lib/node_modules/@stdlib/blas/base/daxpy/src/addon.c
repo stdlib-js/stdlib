@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/base/daxpy.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_double.h"
@@ -40,7 +41,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 5 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 2 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, strideY, argv, 4 );
-	c_daxpy( N, alpha, X, strideX, Y, strideY );
+	API_SUFFIX(c_daxpy)( N, alpha, X, strideX, Y, strideY );
 	return NULL;
 }
 

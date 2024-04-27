@@ -30,6 +30,6 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void c_daxpy( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
+void API_SUFFIX(c_daxpy)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
 	daxpy( &N, &alpha, X, &strideX, Y, &strideY );
 }

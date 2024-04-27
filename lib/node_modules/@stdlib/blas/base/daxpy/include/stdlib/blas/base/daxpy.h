@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Multiplies a vector `X` by a constant and adds the result to `Y`.
 */
-void c_daxpy( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
+void API_SUFFIX(c_daxpy)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }
