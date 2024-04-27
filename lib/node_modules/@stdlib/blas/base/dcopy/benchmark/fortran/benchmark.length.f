@@ -16,13 +16,6 @@
 ! limitations under the License.
 !<
 
-!> Benchmark `dcopy`.
-!
-! ## Notes
-!
-! -   Written in "free form" Fortran 95.
-!
-!<
 program bench
   implicit none
   ! ..
