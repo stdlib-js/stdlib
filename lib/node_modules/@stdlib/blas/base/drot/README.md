@@ -205,7 +205,7 @@ console.log( y );
 #include "stdlib/blas/base/drot.h"
 ```
 
-#### c_drot( N, X, strideX, Y, strideY, c, s )
+#### c_drot( N, \*X, strideX, \*Y, strideY, c, s )
 
 Applies a plane rotation.
 

@@ -172,7 +172,7 @@ console.log( x );
 #include "stdlib/blas/base/dscal.h"
 ```
 
-#### c_dscal( N, X, stride )
+#### c_dscal( N, \*X, stride )
 
 Multiplies each element of a double-precision floating-point vector by a constant.
 

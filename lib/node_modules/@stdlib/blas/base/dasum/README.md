@@ -196,7 +196,7 @@ console.log( out );
 #include "stdlib/blas/base/dasum.h"
 ```
 
-#### c_dasum( N, X, stride )
+#### c_dasum( N, \*X, stride )
 
 Computes the sum of absolute values.
 

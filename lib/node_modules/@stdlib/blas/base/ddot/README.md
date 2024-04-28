@@ -203,7 +203,7 @@ console.log( out );
 #include "stdlib/blas/base/ddot.h"
 ```
 
-#### c_ddot( N, X, strideX, Y, strideY )
+#### c_ddot( N, \*X, strideX, \*Y, strideY )
 
 Computes the dot product of two double-precision floating-point vectors.
 

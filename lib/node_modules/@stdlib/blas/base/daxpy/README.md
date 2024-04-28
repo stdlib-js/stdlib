@@ -189,7 +189,7 @@ console.log( y );
 #include "stdlib/blas/base/daxpy.h"
 ```
 
-#### c_daxpy( N, alpha, X, strideX, Y, strideY )
+#### c_daxpy( N, alpha, \*X, strideX, \*Y, strideY )
 
 Multiplies a vector `X` by a constant and adds the result to `Y`.
 

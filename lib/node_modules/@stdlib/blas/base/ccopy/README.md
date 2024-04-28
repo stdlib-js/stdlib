@@ -237,7 +237,7 @@ console.log( y.get( y.length-1 ).toString() );
 #include "stdlib/blas/base/ccopy.h"
 ```
 
-#### c_ccopy( N, X, strideX, Y, strideY )
+#### c_ccopy( N, \*X, strideX, \*Y, strideY )
 
 Copies values from `X` into `Y`.
 

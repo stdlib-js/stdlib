@@ -184,7 +184,7 @@ console.log( y );
 #include "stdlib/blas/base/dcopy.h"
 ```
 
-#### c_dcopy( N, X, strideX, Y, strideY )
+#### c_dcopy( N, \*X, strideX, \*Y, strideY )
 
 Copies values from `X` into `Y`.
 

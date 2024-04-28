@@ -190,7 +190,7 @@ console.log( y );
 #include "stdlib/blas/base/dswap.h"
 ```
 
-#### c_dswap( N, X, strideX, Y, strideY )
+#### c_dswap( N, \*X, strideX, \*Y, strideY )
 
 Interchanges two double-precision floating-point vectors.
 

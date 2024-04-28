@@ -186,7 +186,7 @@ console.log( out );
 #include "stdlib/blas/base/dnrm2.h"
 ```
 
-#### c_dnrm2( N, X, stride )
+#### c_dnrm2( N, \*X, stride )
 
 Computes the L2-norm of a double-precision floating-point vector.
 

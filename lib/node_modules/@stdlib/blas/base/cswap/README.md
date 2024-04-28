@@ -283,7 +283,7 @@ console.log( y.get( y.length-1 ).toString() );
 #include "stdlib/blas/base/cswap.h"
 ```
 
-#### c_cswap( N, X, strideX, Y, strideY )
+#### c_cswap( N, \*X, strideX, \*Y, strideY )
 
 Interchanges two complex single-precision floating-point vectors.
 
