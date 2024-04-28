@@ -2249,6 +2249,49 @@ var str = arr.toString();
 // returns '1 + 1i,2 - 2i,3 + 3i'
 ```
 
+<a name="method-values"></a>
+
+#### Complex128Array.prototype.values()
+
+Returns an iterator for iterating over each value in a typed array.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+var arr = new Complex128Array( 2 );
+
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+
+var iter = arr.values();
+
+var v = iter.next().value;
+// returns <Complex128>
+
+var re = real( v );
+// returns 1.0
+
+var im = imag( v );
+// returns -1.0
+
+v = iter.next().value;
+// returns <Complex128>
+
+re = real( v );
+// returns 2.0
+
+im = imag( v );
+// returns -2.0
+
+var bool = iter.next().done;
+// returns true
+```
+
+The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the following properties:
+
+-   **next**: function which returns an [iterator][mdn-iterator-protocol] protocol-compliant object containing the next iterated value (if one exists) assigned to a `value` property and a `done` property having a `boolean` value indicating whether the [iterator][mdn-iterator-protocol] is finished.
+-   **return**: function which closes an [iterator][mdn-iterator-protocol] and returns a single (optional) argument in an [iterator][mdn-iterator-protocol] protocol-compliant object.
+
 <a name="method-with"></a>
 
 #### Complex128Array.prototype.with( index, value )
