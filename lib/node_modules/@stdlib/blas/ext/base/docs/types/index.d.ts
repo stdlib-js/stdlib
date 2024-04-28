@@ -2986,7 +2986,7 @@ interface Namespace {
 	* @param strideX - `x` stride length
 	* @param y - second input array
 	* @param strideY - `y` stride length
-	* @returns `x`
+	* @returns first input array
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
