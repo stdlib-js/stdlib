@@ -1283,6 +1283,44 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	toString(): string;
 
 	/**
+	* Returns an iterator for iterating over each value in a typed array.
+	*
+	* @returns iterator
+	*
+	* @example
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	* var arr = new Complex128Array( 2 );
+	*
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 2.0, -2.0 ], 1 );
+	*
+	* var iter = arr.values();
+	*
+	* var v = iter.next().value;
+	* // returns <Complex128>
+	*
+	* var re = real( v );
+	* // returns 1.0
+	*
+	* var im = imag( v );
+	* // returns -1.0
+	*
+	* v = iter.next().value;
+	* // returns <Complex128>
+	*
+	* re = real( v );
+	* // returns 2.0
+	*
+	* im = imag( v );
+	* // returns -2.0
+	*
+	* var bool = iter.next().done;
+	* // returns true
+	*/
+	values(): TypedIterator<Complex128>;
+
+	/**
 	* Returns a new typed array with the element at a provided index replaced with a provided value.
 	*
 	* @param index - element index
