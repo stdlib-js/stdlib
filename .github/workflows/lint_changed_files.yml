@@ -248,7 +248,7 @@ jobs:
       - name: 'Setup R'
         if: ( success() || failure() ) && steps.check-r-files.outputs.files != ''
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@7171bbdc297d5a76f04914d60e5c8144991e3011 # v2.6.4
+        uses: r-lib/actions/setup-r@b7e68d63e51bdf225997973e2add36d551f60f02 # v2.6.4
         with:
           r-version: '3.5.3'
 
