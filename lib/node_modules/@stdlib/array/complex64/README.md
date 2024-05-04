@@ -2192,6 +2192,27 @@ im = imagf( z );
 // returns 6.0
 ```
 
+<a name="method-to-locale-string"></a>
+
+#### Complex64Array.prototype.toLocaleString( \[locales\[, options]] )
+
+Serializes an array as a locale-specific string.
+
+```javascript
+var arr = new Complex64Array( 2 );
+
+arr.set( [ 1.0, 1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+
+var str = arr.toLocaleString();
+// returns '1 + 1i,2 + 2i'
+```
+
+The method supports the following arguments:
+
+-   **locales**: a string with a BCP 47 language tag or an array of such strings.
+-   **options**: configuration properties.
+
 <a name="method-to-reversed"></a>
 
 #### Complex64Array.prototype.toReversed()
