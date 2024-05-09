@@ -56,17 +56,18 @@ rules[ '@cspell/spellchecker' ] = [ 'warn', {
 			'/@stdlib\\/[a-z0-9/-]+/g', // ignore stdlib package paths
 			'/@name [a-zA-Z0-9]+/g', // ignore package names in JSDoc
 			'/\\/\\/ returns \'[^\']+\'/g', // ignore return value annotations in JSDoc
-			'/setReadOnly\\( [.a-z0-9]+, \'[^\']+\'/gi', // ignore namespace or prototype assignments
-			'/```tex\\n[\\s\\S]+```/g', // ignore LaTeX code blocks
+			'/setReadOnly\\( [.a-z0-9]+, \'[^\']+?\'/gi', // ignore namespace or prototype assignments
+			'/```[\\s\\S]+?```/g', // ignore code blocks
+			'/[^`]`[^`]+?`[^`]/g', // ignore inline code
 			'/\\\\{2,2}\\([\\s\\S]+?\\\\{2,2}\\)/g', // ignore LaTeX math expressions
-			'/`[^`]+`/g', // ignore inline code
 			'/\\[[^\\]]+\\]/g', // ignore character classes in regular expressions or markdown links
 			'/\\/\\/ exports: \\{[^}]+\\}/g', // ignore export annotations
-			'/@param \\{[^}]+\\}/g', // ignore parameter annotations in JSDoc
-			'/@returns \\{[^}]+\\}/g', // ignore returns annotations in JSDoc
+			'/@param \\{[^}]+\\} [?[a-zA-Z0-9.]+]? -/g', // ignore parameter annotations in JSDoc
+			'/@returns \\{[^}]+?\\}/g', // ignore returns annotations in JSDoc
 			'/[xy][a-z]+/g', // lowercase parameters starting with x or y (e.g., xbuf)
 			'/[a-z]+[xy]/g', // lowercase parameters ending with x or y (e.g., meanx)
-			'/([\'"`])(.*/.*?)\\1/g' // ignore file paths
+			'/([\'"`])(.*/.*?)\\1/g', // ignore file paths
+			'/\'[-\\w]+\'/g' // ignore single-quoted strings containing only word characters or hyphens
 		],
 		'words': [
 			'BLAS',
