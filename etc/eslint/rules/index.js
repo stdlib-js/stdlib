@@ -38,6 +38,7 @@ var merge = require( './../../../lib/node_modules/@stdlib/utils/merge' );
 * @namespace rules
 */
 var rules = merge(
+	{},
 	require( './programmer_errors.js' ),
 	require( './best_practices.js' ),
 	require( './spellcheck.js' ),
