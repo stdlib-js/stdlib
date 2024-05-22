@@ -467,7 +467,7 @@ DEPS_OPENBLAS_NO_AVX ?= 1
 # Specify whether to use Haswell optimizations if binutils is too old (e.g. RHEL6):
 DEPS_OPENBLAS_NO_AVX2 ?= 1
 
-# Specify whether to use 512-bit extensions to AVX instructions
+# Specify whether to use 512-bit extensions to AVX instructions:
 DEPS_OPENBLAS_NO_AVX512 ?= 1
 
 # Specify whether to compile CBLAS:
