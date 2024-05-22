@@ -55,7 +55,7 @@ rules[ '@cspell/spellchecker' ] = [ 'warn', {
 			'/[A-Z]+/g', // ignore acronyms
 			'/@stdlib\\/[a-z0-9/-]+/g', // ignore stdlib package paths
 			'/@name [a-zA-Z0-9]+/g', // ignore identifier names in JSDoc
-			'/\\/\\/ returns \'[^\']+\'/g', // ignore return value annotations in JSDoc
+			'/\\/\\/ returns \'[^\']+\'/g', // ignore return value annotations
 			'/setReadOnly\\( [.a-z0-9]+, \'[^\']+?\'/gi', // ignore namespace or prototype assignments
 			'/```[\\s\\S]+?```/g', // ignore code blocks
 			'/[^`]`[^`]+?`[^`]/g', // ignore inline code
