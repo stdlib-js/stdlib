@@ -1376,6 +1376,78 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	toReversed(): Complex128Array;
 
 	/**
+	* Returns a new typed array containing the elements in sorted order.
+	*
+	* @param compareFcn - comparison function
+	* @returns sorted array
+	*
+	* @example
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	*
+	* function compare( a, b ) {
+	*     var re1;
+	*     var re2;
+	*     var im1;
+	*     var im2;
+	*     re1 = real( a );
+	*     re2 = real( b );
+	*     if ( re1 < re2 ) {
+	*         return -1;
+	*     }
+	*     if ( re1 > re2 ) {
+	*         return 1;
+	*     }
+	*     im1 = imag( a );
+	*     im2 = imag( b );
+	*     if ( im1 < im2 ) {
+	*         return -1;
+	*     }
+	*     if ( im1 > im2 ) {
+	*         return 1;
+	*     }
+	*     return 0;
+	* }
+	*
+	* var arr = new Complex128Array( 3 );
+	*
+	* arr.set( [ 3.0, -3.0 ], 0 );
+	* arr.set( [ 1.0, -1.0 ], 1 );
+	* arr.set( [ 2.0, -2.0 ], 2 );
+	*
+	* var out = arr.toSorted( compare );
+	* // returns <Complex128Array>
+	*
+	* var z = out.get( 0 );
+	* // returns <Complex128>
+	*
+	* var re = real( z );
+	* // returns 1.0
+	*
+	* var im = imag( z );
+	* // returns -1.0
+	*
+	* z = out.get( 1 );
+	* // returns <Complex128>
+	*
+	* re = real( z );
+	* // returns 2.0
+	*
+	* im = imag( z );
+	* // returns -2.0
+	*
+	* z = out.get( 2 );
+	* // returns <Complex128>
+	*
+	* re = real( z );
+	* // returns 3.0
+	*
+	* im = imag( z );
+	* // returns -3.0
+	*/
+	toSorted( compareFcn: CompareFcn ): Complex128Array;
+
+	/**
 	* Serializes an array as a string.
 	*
 	* @returns string
