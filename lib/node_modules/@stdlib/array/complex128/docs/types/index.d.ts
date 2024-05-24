@@ -260,6 +260,15 @@ type QuaternaryReducer<U> = ( acc: U, value: Complex128, index: number, arr: Com
 type Reducer<U> = NullaryReducer<U> | UnaryReducer<U> | BinaryReducer<U> | TernaryReducer<U> | QuaternaryReducer<U>;
 
 /**
+* Comparator function.
+*
+* @param a - first value for comparison
+* @param b - second value for comparison
+* @returns number indicating comparison result
+*/
+type CompareFcn = ( a: Complex128, b: Complex128 ) => number;
+
+/**
 * Class for creating a 128-bit complex number array.
 */
 declare class Complex128Array implements Complex128ArrayInterface {
@@ -1158,6 +1167,78 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* // returns true
 	*/
 	some<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
+
+	/**
+	* Sorts an array in-place.
+	*
+	* @param compareFcn - comparison function
+	* @returns sorted array
+	*
+	* @example
+	* var real = require( '@stdlib/complex/real' );
+	* var imag = require( '@stdlib/complex/imag' );
+	*
+	* function compare( a, b ) {
+	*     var re1;
+	*     var re2;
+	*     var im1;
+	*     var im2;
+	*     re1 = real( a );
+	*     re2 = real( b );
+	*     if ( re1 < re2 ) {
+	*         return -1;
+	*     }
+	*     if ( re1 > re2 ) {
+	*         return 1;
+	*     }
+	*     im1 = imag( a );
+	*     im2 = imag( b );
+	*     if ( im1 < im2 ) {
+	*         return -1;
+	*     }
+	*     if ( im1 > im2 ) {
+	*         return 1;
+	*     }
+	*     return 0;
+	* }
+	*
+	* var arr = new Complex128Array( 3 );
+	*
+	* arr.set( [ 3.0, -3.0 ], 0 );
+	* arr.set( [ 1.0, -1.0 ], 1 );
+	* arr.set( [ 2.0, -2.0 ], 2 );
+	*
+	* var out = arr.sort( compare );
+	* // returns <Complex128Array>
+	*
+	* var z = out.get( 0 );
+	* // returns <Complex128>
+	*
+	* var re = real( z );
+	* // returns 1.0
+	*
+	* var im = imag( z );
+	* // returns -1.0
+	*
+	* z = out.get( 1 );
+	* // returns <Complex128>
+	*
+	* re = real( z );
+	* // returns 2.0
+	*
+	* im = imag( z );
+	* // returns -2.0
+	*
+	* z = out.get( 2 );
+	* // returns <Complex128>
+	*
+	* re = real( z );
+	* // returns 3.0
+	*
+	* im = imag( z );
+	* // returns -3.0
+	*/
+	sort( compareFcn: CompareFcn ): Complex128Array;
 
 	/**
 	* Creates a new typed array view over the same underlying `ArrayBuffer` and with the same underlying data type as the host array.

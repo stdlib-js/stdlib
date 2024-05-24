@@ -2091,6 +2091,88 @@ var count = context.count;
 // returns 2
 ```
 
+<a name="method-sort"></a>
+
+#### Complex128Array.prototype.sort( compareFcn )
+
+Sorts an array in-place.
+
+```javascript
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
+
+function compare( a, b ) {
+    var re1;
+    var re2;
+    var im1;
+    var im2;
+    re1 = real( a );
+    re2 = real( b );
+    if ( re1 < re2 ) {
+        return -1;
+    }
+    if ( re1 > re2 ) {
+        return 1;
+    }
+    im1 = imag( a );
+    im2 = imag( b );
+    if ( im1 < im2 ) {
+        return -1;
+    }
+    if ( im1 > im2 ) {
+        return 1;
+    }
+    return 0;
+}
+
+var arr = new Complex128Array( 3 );
+
+arr.set( [ 3.0, -3.0 ], 0 );
+arr.set( [ 1.0, -1.0 ], 1 );
+arr.set( [ 2.0, -2.0 ], 2 );
+
+var out = arr.sort( compare );
+// returns <Complex128Array>
+
+var z = out.get( 0 );
+// returns <Complex128>
+
+var re = real( z );
+// returns 1.0
+
+var im = imag( z );
+// returns -1.0
+
+z = out.get( 1 );
+// returns <Complex128>
+
+re = real( z );
+// returns 2.0
+
+im = imag( z );
+// returns -2.0
+
+z = out.get( 2 );
+// returns <Complex128>
+
+re = real( z );
+// returns 3.0
+
+im = imag( z );
+// returns -3.0
+```
+
+The `compareFcn` determines the order of the elements. The function is called with the following arguments:
+
+-   **a**: the first element for comparison.
+-   **b**: the second element for comparison.
+
+The function should return a number where:
+
+-   a negative value indicates that `a` should come before `b`.
+-   a positive value indicates that `a` should come after `b`.
+-   zero or `NaN` indicates that `a` and `b` are considered equal.
+
 <a name="method-subarray"></a>
 
 #### Complex128Array.prototype.subarray( \[begin\[, end]] )
