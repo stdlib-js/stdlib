@@ -1378,6 +1378,78 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	toReversed(): Complex64Array;
 
 	/**
+	* Returns a new typed array containing the elements in sorted order.
+	*
+	* @param compareFcn - comparison function
+	* @returns sorted array
+	*
+	* @example
+	* var realf = require( '@stdlib/complex/realf' );
+	* var imagf = require( '@stdlib/complex/imagf' );
+	*
+	* function compare( a, b ) {
+	*     var re1;
+	*     var re2;
+	*     var im1;
+	*     var im2;
+	*     re1 = realf( a );
+	*     re2 = realf( b );
+	*     if ( re1 < re2 ) {
+	*         return -1;
+	*     }
+	*     if ( re1 > re2 ) {
+	*         return 1;
+	*     }
+	*     im1 = imagf( a );
+	*     im2 = imagf( b );
+	*     if ( im1 < im2 ) {
+	*         return -1;
+	*     }
+	*     if ( im1 > im2 ) {
+	*         return 1;
+	*     }
+	*     return 0;
+	* }
+	*
+	* var arr = new Complex64Array( 3 );
+	*
+	* arr.set( [ 3.0, -3.0 ], 0 );
+	* arr.set( [ 1.0, -1.0 ], 1 );
+	* arr.set( [ 2.0, -2.0 ], 2 );
+	*
+	* var out = arr.toSorted( compare );
+	* // returns <Complex64Array>
+	*
+	* var z = out.get( 0 );
+	* // returns <Complex64>
+	*
+	* var re = realf( z );
+	* // returns 1.0
+	*
+	* var im = imagf( z );
+	* // returns -1.0
+	*
+	* z = out.get( 1 );
+	* // returns <Complex64>
+	*
+	* re = realf( z );
+	* // returns 2.0
+	*
+	* im = imagf( z );
+	* // returns -2.0
+	*
+	* z = out.get( 2 );
+	* // returns <Complex64>
+	*
+	* re = realf( z );
+	* // returns 3.0
+	*
+	* im = imagf( z );
+	* // returns -3.0
+	*/
+	toSorted( compareFcn: CompareFcn ): Complex64Array;
+
+	/**
 	* Serializes an array as a string.
 	*
 	* @returns string
