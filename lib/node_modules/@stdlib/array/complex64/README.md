@@ -2180,6 +2180,8 @@ The function should return a number where:
 -   a positive value indicates that `a` should come after `b`.
 -   zero or `NaN` indicates that `a` and `b` are considered equal.
 
+In contrast to real numbers, one cannot define a default order relation which is compatible with multiplication. Accordingly, users **must** explicitly provide a `compareFcn` argument and are thus responsible for specifying a complex number ordering.
+
 <a name="method-subarray"></a>
 
 #### Complex64Array.prototype.subarray( \[begin\[, end]] )
@@ -2423,6 +2425,8 @@ The function should return a number where:
 -   a negative value indicates that `a` should come before `b`.
 -   a positive value indicates that `a` should come after `b`.
 -   zero or `NaN` indicates that `a` and `b` are considered equal.
+
+In contrast to real numbers, one cannot define a default order relation which is compatible with multiplication. Accordingly, users **must** explicitly provide a `compareFcn` argument and are thus responsible for specifying a complex number ordering.
 
 <a name="method-to-string"></a>
 
