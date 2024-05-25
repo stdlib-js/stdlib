@@ -35,7 +35,7 @@ var isSameComplex64 = require( '@stdlib/assert/is-same-complex64' );
 Tests if two arguments are both [single-precision complex floating-point numbers][@stdlib/complex/float32] and have the [same value][@stdlib/assert/is-same-value].
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var x = new Complex64( 1.0, 2.0 );
 var y = new Complex64( 1.0, 2.0 );
@@ -64,7 +64,7 @@ var bool = isSameComplex64( x, y );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var isSameComplex64 = require( '@stdlib/assert/is-same-complex64' );
 
 var x = new Complex64( 1.0, 2.0 );

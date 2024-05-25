@@ -19,7 +19,7 @@
 #include "stdlib/complex/base/assert/is_same_value.h"
 #include "stdlib/number/float64/base/assert/is_same_value.h"
 #include "stdlib/complex/reim.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdbool.h>
 
 /**
@@ -30,7 +30,7 @@
 * @return      boolean indicating if both complex numbers are the same value
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdbool.h>
 *
 * stdlib_complex128_t z1 = stdlib_complex128( 5.0, 2.0 );

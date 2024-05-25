@@ -45,7 +45,7 @@ var isNotEqual = require( '@stdlib/complex/base/assert/is-not-equal' );
 Tests whether two double-precision complex floating-point numbers are not equal.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var z1 = new Complex128( 5.0, 3.0 );
 var z2 = new Complex128( 5.0, -3.0 );
@@ -75,7 +75,7 @@ var out = isNotEqual( z1, z2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var isNotEqual = require( '@stdlib/complex/base/assert/is-not-equal' );
 
 var z1 = new Complex128( 5.0, 3.0 );
@@ -129,7 +129,7 @@ out = isNotEqual( z1, z2 );
 Tests whether double-precision complex floating-point numbers are not equal.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdbool.h>
 
 stdlib_complex128_t z1 = stdlib_complex128( 5.0, 2.0 );
@@ -167,7 +167,7 @@ bool stdlib_base_complex128_is_not_equal( const stdlib_complex128_t z1, const st
 
 ```c
 #include "stdlib/complex/base/assert/is_not_equal.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdbool.h>
 #include <stdio.h>
 

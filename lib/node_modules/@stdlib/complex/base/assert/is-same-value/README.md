@@ -45,7 +45,7 @@ var isSameValue = require( '@stdlib/complex/base/assert/is-same-value' );
 Tests whether two double-precision complex floating-point numbers are the same value.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var z1 = new Complex128( 5.0, 3.0 );
 var z2 = new Complex128( 5.0, 3.0 );
@@ -57,7 +57,7 @@ var out = isSameValue( z1, z2 );
 In contrast to the strict equality operator `===`, the function distinguishes between `+0` and `-0` and treats `NaNs` as the same value.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var z1 = new Complex128( NaN, NaN );
 var z2 = new Complex128( NaN, NaN );
@@ -97,7 +97,7 @@ out = isSameValue( z1, z2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var isSameValue = require( '@stdlib/complex/base/assert/is-same-value' );
 
 var z1 = new Complex128( 5.0, 3.0 );
@@ -151,7 +151,7 @@ out = isSameValue( z1, z2 );
 Tests whether two double-precision complex floating-point numbers are the same value.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdbool.h>
 
 stdlib_complex128_t z1 = stdlib_complex128( 5.0, 2.0 );
@@ -189,7 +189,7 @@ bool stdlib_base_complex128_is_same_value( const stdlib_complex128_t z1, const s
 
 ```c
 #include "stdlib/complex/base/assert/is_same_value.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdbool.h>
 #include <stdio.h>
 

@@ -293,7 +293,7 @@ void stdlib_strided_b( uint8_t *arrays[], const int64_t *shape, const int64_t *s
 Applies a nullary callback and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -528,7 +528,7 @@ void stdlib_strided_c_as_t( uint8_t *arrays[], const int64_t *shape, const int64
 Applies a nullary callback and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1660,7 +1660,7 @@ void stdlib_strided_u_as_t( uint8_t *arrays[], const int64_t *shape, const int64
 Applies a nullary callback and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1739,7 +1739,7 @@ void stdlib_strided_z_as_b( uint8_t *arrays[], const int64_t *shape, const int64
 Applies a nullary callback and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2191,7 +2191,7 @@ In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`,
 Macro for a nullary loop which invokes a callback and does not cast the return callback's return value (e.g., a `struct`).
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NOCAST( stdlib_complex128_t )
 ```
@@ -2216,8 +2216,8 @@ In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`,
 Macro for a nullary loop which invokes a callback whose return values should be cast to a different type via casting functions.
 
 ```c
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
 
 STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_CAST_FCN( stdlib_complex64_t, stdlib_complex128_to_complex64 )
 ```

@@ -34,7 +34,7 @@ type DataType = ComplexFloatingPointDataType;
 * @returns data type
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var dt = dtype( new Complex128( 1.0, 2.0 ) );
 * // returns 'complex128'
@@ -48,7 +48,7 @@ declare function dtype( value: Complex128 ): 'complex128';
 * @returns data type
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float32' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var dt = dtype( new Complex64( 1.0, 2.0 ) );
 * // returns 'complex64'
@@ -66,7 +66,7 @@ declare function dtype( value: Complex64 ): 'complex64';
 * @returns data type
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float32' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var dt = dtype( new Complex64( 1.0, 2.0 ) );
 * // returns 'complex64'

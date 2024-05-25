@@ -26,7 +26,7 @@
 #include "stdlib/ndarray/base/nullary/dispatch_object.h"
 #include "stdlib/ndarray/base/nullary/dispatch.h"
 #include "stdlib/ndarray/ctor.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 /**
@@ -46,7 +46,7 @@
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -133,7 +133,7 @@ int8_t stdlib_ndarray_z_0d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -217,7 +217,7 @@ int8_t stdlib_ndarray_z_1d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -301,7 +301,7 @@ int8_t stdlib_ndarray_z_2d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -385,7 +385,7 @@ int8_t stdlib_ndarray_z_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -469,7 +469,7 @@ int8_t stdlib_ndarray_z_3d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -553,7 +553,7 @@ int8_t stdlib_ndarray_z_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -637,7 +637,7 @@ int8_t stdlib_ndarray_z_4d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -721,7 +721,7 @@ int8_t stdlib_ndarray_z_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -805,7 +805,7 @@ int8_t stdlib_ndarray_z_5d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -889,7 +889,7 @@ int8_t stdlib_ndarray_z_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -973,7 +973,7 @@ int8_t stdlib_ndarray_z_6d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -1057,7 +1057,7 @@ int8_t stdlib_ndarray_z_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -1141,7 +1141,7 @@ int8_t stdlib_ndarray_z_7d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -1225,7 +1225,7 @@ int8_t stdlib_ndarray_z_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -1309,7 +1309,7 @@ int8_t stdlib_ndarray_z_8d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -1393,7 +1393,7 @@ int8_t stdlib_ndarray_z_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -1477,7 +1477,7 @@ int8_t stdlib_ndarray_z_9d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -1561,7 +1561,7 @@ int8_t stdlib_ndarray_z_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -1645,7 +1645,7 @@ int8_t stdlib_ndarray_z_10d( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -1729,7 +1729,7 @@ int8_t stdlib_ndarray_z_10d_blocked( struct ndarray *arrays[], void *fcn ) {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
@@ -1857,7 +1857,7 @@ static const struct ndarrayNullaryDispatchObject obj = {
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>

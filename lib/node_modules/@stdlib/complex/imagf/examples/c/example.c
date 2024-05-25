@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/imagf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdio.h>
 
 int main( void ) {

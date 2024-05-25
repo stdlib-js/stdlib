@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/imag.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 /**
 * Returns the imaginary component of a double-precision complex floating-point number.
@@ -26,7 +26,7 @@
 * @return      imaginary component
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * stdlib_complex128_t z = stdlib_complex128( 5.0, 2.0 );
 *

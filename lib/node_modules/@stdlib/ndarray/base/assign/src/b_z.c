@@ -26,7 +26,7 @@
 #include "stdlib/ndarray/base/assign/dispatch_object.h"
 #include "stdlib/ndarray/base/assign/dispatch.h"
 #include "stdlib/ndarray/ctor.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 /**

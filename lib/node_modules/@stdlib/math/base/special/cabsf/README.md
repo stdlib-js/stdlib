@@ -58,7 +58,7 @@ var cabsf = require( '@stdlib/math/base/special/cabsf' );
 Computes an [absolute value][absolute-value] of a single-precision [complex][@stdlib/complex/float32] floating-point number.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var y = cabsf( new Complex64( 5.0, 3.0 ) );
 // returns ~5.83
@@ -77,7 +77,7 @@ var y = cabsf( new Complex64( 5.0, 3.0 ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var cabsf = require( '@stdlib/math/base/special/cabsf' );
 

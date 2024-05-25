@@ -45,7 +45,7 @@ var isEqualf = require( '@stdlib/complex/base/assert/is-equalf' );
 Tests whether two single-precision complex floating-point numbers are equal.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( 5.0, 3.0 );
@@ -75,7 +75,7 @@ var out = isEqualf( z1, z2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var isEqualf = require( '@stdlib/complex/base/assert/is-equalf' );
 
 var z1 = new Complex64( 5.0, 3.0 );
@@ -129,7 +129,7 @@ out = isEqualf( z1, z2 );
 Tests whether single-precision complex floating-point numbers are equal.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdbool.h>
 
 stdlib_complex64_t z1 = stdlib_complex64( 5.0, 2.0 );
@@ -167,7 +167,7 @@ bool stdlib_base_complex64_is_equal( const stdlib_complex64_t z1, const stdlib_c
 
 ```c
 #include "stdlib/complex/base/assert/is_equalf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdbool.h>
 #include <stdio.h>
 

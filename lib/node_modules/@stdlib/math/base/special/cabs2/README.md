@@ -58,7 +58,7 @@ var cabs2 = require( '@stdlib/math/base/special/cabs2' );
 Computes the squared [absolute value][absolute-value] of a double-precision [complex][@stdlib/complex/float64] floating-point number.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var y = cabs2( new Complex128( 5.0, 3.0 ) );
 // returns 34.0
@@ -88,7 +88,7 @@ var y = cabs2( new Complex128( 5.0, 3.0 ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var cabs2 = require( '@stdlib/math/base/special/cabs2' );
 
@@ -139,7 +139,7 @@ for ( i = 0; i < 100; i++ ) {
 Computes the squared [absolute value][absolute-value] of a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 stdlib_complex128_t z = stdlib_complex128( 5.0, 3.0 );
 
@@ -175,7 +175,7 @@ double stdlib_base_cabs2( const stdlib_complex128_t z );
 
 ```c
 #include "stdlib/math/base/special/cabs2.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 

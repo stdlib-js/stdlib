@@ -35,7 +35,7 @@ var isComplex64 = require( '@stdlib/assert/is-complex64' );
 Tests if a value is a [64-bit complex number][@stdlib/complex/float32].
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var x = new Complex64( 1.0, 3.0 );
 
@@ -54,8 +54,8 @@ var bool = isComplex64( x );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var isComplex64 = require( '@stdlib/assert/is-complex64' );
 
 var out = isComplex64( new Complex64( 2.0, 2.0 ) );

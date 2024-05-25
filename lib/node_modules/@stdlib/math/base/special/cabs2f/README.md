@@ -58,7 +58,7 @@ var cabs2f = require( '@stdlib/math/base/special/cabs2f' );
 Computes the squared [absolute value][absolute-value] of a single-precision [complex][@stdlib/complex/float32] floating-point number.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var y = cabs2f( new Complex64( 5.0, 3.0 ) );
 // returns 34.0
@@ -88,7 +88,7 @@ var y = cabs2f( new Complex64( 5.0, 3.0 ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var cabs2f = require( '@stdlib/math/base/special/cabs2f' );
 

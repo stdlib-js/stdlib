@@ -76,7 +76,7 @@ stdlib_complex128_t stdlib_complex128_from_float64( const double real ) {
 * @return        double-precision complex floating-point number
 *
 * @example
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 *
 * stdlib_complex64_t z1 = stdlib_complex64( 5.0f, 3.0f );
 * stdlib_complex128_t z2 = stdlib_complex128_from_complex64( z1 );
@@ -210,7 +210,7 @@ stdlib_complex128_t stdlib_complex128_from_uint32( const uint32_t real ) {
 * @return        single-precision complex floating-point number
 *
 * @example
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 *
 * stdlib_complex128_t z1 = stdlib_complex128( 5.0, 3.0 );
 * stdlib_complex64_t z2 = stdlib_complex128_to_complex64( z1 );

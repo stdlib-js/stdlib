@@ -45,7 +45,7 @@ var conj = require( '@stdlib/complex/conj' );
 Returns the [complex conjugate][complex-conjugate] of a double-precision complex floating-point number.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var z = new Complex128( 5.0, 3.0 );
 var str = z.toString();
@@ -77,7 +77,7 @@ str = v.toString();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var randu = require( '@stdlib/random/base/randu' );
 var round = require( '@stdlib/math/base/special/round' );
 var conj = require( '@stdlib/complex/conj' );
@@ -130,7 +130,7 @@ for ( i = 0; i < 100; i++ ) {
 Returns the [complex conjugate][complex-conjugate] of a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/real.h"
 #include "stdlib/complex/imag.h"
 
@@ -177,7 +177,7 @@ stdlib_complex128_t stdlib_conj( const stdlib_complex128_t z );
 #include "stdlib/complex/conj.h"
 #include "stdlib/complex/real.h"
 #include "stdlib/complex/imag.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdio.h>
 
 int main( void ) {

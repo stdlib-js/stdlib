@@ -18,7 +18,7 @@
 
 #include "stdlib/complex/base/assert/is_not_equalf.h"
 #include "stdlib/complex/reimf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdbool.h>
 
 /**
@@ -29,7 +29,7 @@
 * @return      boolean indicating if both complex numbers are not equal
 *
 * @example
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 * #include <stdbool.h>
 *
 * stdlib_complex64_t z1 = stdlib_complex64( 5.0, 2.0 );

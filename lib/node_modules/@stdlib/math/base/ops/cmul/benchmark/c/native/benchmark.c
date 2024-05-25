@@ -20,7 +20,7 @@
 * Benchmark `cmul`.
 */
 #include "stdlib/math/base/ops/cmul.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdlib.h>
 #include <stdio.h>

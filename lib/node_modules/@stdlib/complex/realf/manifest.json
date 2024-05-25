@@ -33,7 +33,7 @@
 			"libraries": [],
 			"libpath": [],
 			"dependencies": [
-        "@stdlib/complex/float32"
+        "@stdlib/complex/float32/ctor"
       ]
 		}
 	]

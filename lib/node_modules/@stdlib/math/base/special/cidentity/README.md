@@ -58,7 +58,7 @@ var cidentity = require( '@stdlib/math/base/special/cidentity' );
 Evaluates the [identity function][identity-function] for a double-precision [complex][@stdlib/complex/float64] floating-point number.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
 
@@ -86,7 +86,7 @@ var im = imag( v );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var cidentity = require( '@stdlib/math/base/special/cidentity' );
 
 var z;
@@ -132,7 +132,7 @@ for ( i = 0; i < 100; i++ ) {
 Evaluates the identity function for a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/real.h"
 #include "stdlib/complex/imag.h"
 
@@ -174,7 +174,7 @@ stdlib_complex128_t stdlib_base_cidentity( const stdlib_complex128_t z );
 
 ```c
 #include "stdlib/math/base/special/cidentity.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 

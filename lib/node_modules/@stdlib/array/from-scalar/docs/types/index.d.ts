@@ -61,7 +61,7 @@ declare function scalar2array( value: number, dtype: 'float32' ): Float32Array;
 * @returns output array
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var v = new Complex128( 1.0, 2.0 );
 *
@@ -82,7 +82,7 @@ declare function scalar2array( value: number | ComplexLike, dtype: 'complex128' 
 * @returns output array
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float64' );
+* var Complex64 = require( '@stdlib/complex/float64/ctor' );
 *
 * var v = new Complex64( 1.0, 2.0 );
 *
@@ -216,7 +216,7 @@ declare function scalar2array( value: number ): Float64Array;
 * @returns output array
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float32' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var z = new Complex64( 3.0, 4.0 );
 *
@@ -233,7 +233,7 @@ declare function scalar2array( value: Complex64 ): Complex64Array;
 * @returns output array
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var z = new Complex128( 3.0, 4.0 );
 *

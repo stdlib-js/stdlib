@@ -19,7 +19,7 @@
 #ifndef STDLIB_COMPLEX_BASE_ASSERT_IS_NOT_EQUALF_H
 #define STDLIB_COMPLEX_BASE_ASSERT_IS_NOT_EQUALF_H
 
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdbool.h>
 
 /*

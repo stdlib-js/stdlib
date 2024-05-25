@@ -19,7 +19,7 @@
 #ifndef STDLIB_COMPLEX_BASE_ASSERT_IS_SAME_VALUE_ZEROF_H
 #define STDLIB_COMPLEX_BASE_ASSERT_IS_SAME_VALUE_ZEROF_H
 
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdbool.h>
 
 /*

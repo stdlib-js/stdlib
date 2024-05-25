@@ -45,7 +45,7 @@ var isSameValueZerof = require( '@stdlib/complex/base/assert/is-same-value-zerof
 Tests whether two single-precision complex floating-point numbers are the same value.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( 5.0, 3.0 );
@@ -57,7 +57,7 @@ var out = isSameValueZerof( z1, z2 );
 In contrast to the strict equality operator `===`, the function treats `NaNs` as the same value.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var z1 = new Complex64( NaN, NaN );
 var z2 = new Complex64( NaN, NaN );
@@ -69,7 +69,7 @@ var out = isSameValueZerof( z1, z2 );
 In contrast to the [SameValue Algorithm][@stdlib/complex/base/assert/is-same-valuef] (as specified in ECMAScript 5), the function does not distinguish between `+0` and `-0`.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var z1 = new Complex64( -0.0, 0.0 );
 var z2 = new Complex64( 0.0, -0.0 );
@@ -99,7 +99,7 @@ var out = isSameValueZerof( z1, z2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var isSameValueZerof = require( '@stdlib/complex/base/assert/is-same-value-zerof' );
 
 var z1 = new Complex64( 5.0, 3.0 );
@@ -153,7 +153,7 @@ out = isSameValueZerof( z1, z2 );
 Tests whether two single-precision complex floating-point numbers are the same value.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdbool.h>
 
 stdlib_complex64_t z1 = stdlib_complex64( 5.0f, 2.0f );
@@ -191,7 +191,7 @@ bool stdlib_base_complex64_is_same_value_zero( const stdlib_complex64_t z1, cons
 
 ```c
 #include "stdlib/complex/base/assert/is_same_value_zerof.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdbool.h>
 #include <stdio.h>
 

@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/base/assert/is_equalf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdbool.h>
 #include <stdio.h>
 
