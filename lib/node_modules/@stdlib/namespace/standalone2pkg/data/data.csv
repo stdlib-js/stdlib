@@ -2868,7 +2868,7 @@
 "@stdlib/buffer-reviver","@stdlib/buffer/reviver"
 "@stdlib/complex-reviver","@stdlib/complex/reviver"
 "@stdlib/complex-reviver-float32","@stdlib/complex/float32/reviver"
-"@stdlib/complex-reviver-float64","@stdlib/complex/reviver-float64"
+"@stdlib/complex-reviver-float64","@stdlib/complex/float64/reviver"
 "@stdlib/error-reviver","@stdlib/error/reviver"
 "@stdlib/regexp-reviver","@stdlib/regexp/reviver"
 "@stdlib/array-reviver","@stdlib/array/reviver"

@@ -2868,7 +2868,7 @@
 "@stdlib/buffer/reviver",reviveBuffer
 "@stdlib/complex/reviver",reviveComplex
 "@stdlib/complex/float32/reviver",reviveComplex64
-"@stdlib/complex/reviver-float64",reviveComplex128
+"@stdlib/complex/float64/reviver",reviveComplex128
 "@stdlib/error/reviver",reviveError
 "@stdlib/regexp/reviver",reviveRegExp
 "@stdlib/array/reviver",reviveTypedArray

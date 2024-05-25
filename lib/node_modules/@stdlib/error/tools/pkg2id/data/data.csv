@@ -1054,7 +1054,7 @@
 "@stdlib/complex-reimf",0H7
 "@stdlib/complex/float32/reviver",0H8
 "@stdlib/complex-reviver-float32",0H9
-"@stdlib/complex/reviver-float64",0HA
+"@stdlib/complex/float64/reviver",0HA
 "@stdlib/complex-reviver-float64",0HB
 "@stdlib/complex/reviver",0HC
 "@stdlib/complex-reviver",0HD

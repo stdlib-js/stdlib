@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/complex/reviver-float64",
+  "name": "@stdlib/complex/float64/reviver",
   "version": "0.0.0",
   "description": "Revive a JSON-serialized 128-bit complex number.",
   "license": "Apache-2.0",

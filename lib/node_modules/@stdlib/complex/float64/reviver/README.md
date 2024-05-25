@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var reviveComplex128 = require( '@stdlib/complex/reviver-float64' );
+var reviveComplex128 = require( '@stdlib/complex/float64/reviver' );
 ```
 
 #### reviveComplex128( key, value )
@@ -78,7 +78,7 @@ For details on the JSON serialization format, see [`Complex128`][@stdlib/complex
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var parseJSON = require( '@stdlib/utils/parse-json' );
-var reviveComplex128 = require( '@stdlib/complex/reviver-float64' );
+var reviveComplex128 = require( '@stdlib/complex/float64/reviver' );
 
 var z = new Complex128( 5.0, 3.0 );
 var str = JSON.stringify( z );
