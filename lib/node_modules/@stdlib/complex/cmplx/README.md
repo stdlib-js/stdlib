@@ -80,19 +80,15 @@ var z = complex( 5.0, 3.0, 'float32' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var complex = require( '@stdlib/complex/cmplx' );
 
-var re;
-var im;
+var rand = discreteUniform( -50, 50 );
+
 var z;
 var i;
-
 for ( i = 0; i < 100; i++ ) {
-    re = round( (randu()*100.0) - 50.0 );
-    im = round( (randu()*100.0) - 50.0 );
-    z = complex( re, im, 'float64' );
+    z = complex( rand(), rand(), 'float64' );
     console.log( z.toString() );
 }
 ```
