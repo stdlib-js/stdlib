@@ -15,7 +15,7 @@
 
     Examples
     --------
-    > var v = {{alias}}( new {{alias:@stdlib/complex/float64}}( -4.2, 5.5 ) )
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( -4.2, 5.5 ) )
     <Complex128>
     > var re = {{alias:@stdlib/complex/real}}( v )
     -0.6069136033622302
