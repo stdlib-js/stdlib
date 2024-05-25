@@ -1661,7 +1661,7 @@
 "0H5",@stdlib/complex-reim
 "0H6",@stdlib/complex/reimf
 "0H7",@stdlib/complex-reimf
-"0H8",@stdlib/complex/reviver-float32
+"0H8",@stdlib/complex/float32/reviver
 "0H9",@stdlib/complex-reviver-float32
 "0HA",@stdlib/complex/reviver-float64
 "0HB",@stdlib/complex-reviver-float64
