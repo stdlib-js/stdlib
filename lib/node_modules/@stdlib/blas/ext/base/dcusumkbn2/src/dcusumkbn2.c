@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/blas/ext/base/dcusumkbn2.h"
+#include "stdlib/math/base/special/abs.h"
 #include <stdint.h>
-#include <math.h>
 
 /**
 * Computes the cumulative sum of double-precision floating-point strided array elements using a second-order iterative Kahan–Babuška algorithm.
@@ -69,14 +69,14 @@ void stdlib_strided_dcusumkbn2( const int64_t N, const double sum, const double 
 	for ( i = 0; i < N; i++ ) {
 		v = X[ ix ];
 		t = s + v;
-		if ( fabs( s ) >= fabs( v ) ) {
+		if ( stdlib_base_abs( s ) >= stdlib_base_abs( v ) ) {
 			c = (s-t) + v;
 		} else {
 			c = (v-t) + s;
 		}
 		s = t;
 		t = cs + c;
-		if ( fabs( cs ) >= fabs( c ) ) {
+		if ( stdlib_base_abs( cs ) >= stdlib_base_abs( c ) ) {
 			cc = (cs-t) + c;
 		} else {
 			cc = (c-t) + cs;

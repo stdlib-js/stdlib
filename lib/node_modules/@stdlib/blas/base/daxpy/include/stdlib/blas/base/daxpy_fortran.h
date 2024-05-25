@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Multiplies a vector `X` by a constant and adds the result to `Y`.
 */
-void daxpy( const int *, const double *, const double *, const int *, double *, const int * );
+void daxpy( const CBLAS_INT *, const double *, const double *, const CBLAS_INT *, double *, const CBLAS_INT * );
 
 #ifdef __cplusplus
 }

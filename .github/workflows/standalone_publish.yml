@@ -78,7 +78,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -118,7 +118,7 @@ jobs:
       # Archive list of to be published packages:
       - name: 'Archive package list'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4.3.3
         with:
           name: ordered-pkg-list
           path: |

@@ -115,6 +115,7 @@
   },
   "devDependencies": {
     "0x": "^4.10.2",
+    "@cspell/eslint-plugin": "^8.8.0",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/cz-commitlint": "^17.4.4",
     "@kaciras/deasync": "^1.0.1",
@@ -133,7 +134,7 @@
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "doctrine": "^3.0.0",
     "envify": "^4.0.0",
-    "eslint": "^8.53.0",
+    "eslint": "^8.57.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-expect-type": "^0.2.3",
     "eslint-plugin-import": "^2.29.0",

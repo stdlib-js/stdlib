@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `zcopy`.
-*/
 #include "stdlib/blas/base/zcopy.h"
 #include <stdlib.h>
 #include <stdio.h>

@@ -52,7 +52,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -248,7 +248,7 @@ jobs:
       - name: 'Setup R'
         if: ( success() || failure() ) && steps.check-r-files.outputs.files != ''
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@7171bbdc297d5a76f04914d60e5c8144991e3011 # v2.6.4
+        uses: r-lib/actions/setup-r@b7e68d63e51bdf225997973e2add36d551f60f02 # v2.6.4
         with:
           r-version: '3.5.3'
 

@@ -1,43 +1,82 @@
 {
-	"options": {},
-	"fields": [
-		{
-			"field": "src",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "include",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "libraries",
-			"resolve": false,
-			"relative": false
-		},
-		{
-			"field": "libpath",
-			"resolve": true,
-			"relative": false
-		}
-	],
-	"confs": [
-		{
-			"src": [
-				"./src/ssort2ins.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/math/base/assert/is-nanf",
-				"@stdlib/math/base/assert/is-negative-zerof"
-			]
-		}
-	]
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/ssort2ins.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+        "dependencies": [
+          "@stdlib/napi/export",
+          "@stdlib/napi/argv",
+          "@stdlib/napi/argv-int64",
+          "@stdlib/napi/argv-double",
+          "@stdlib/napi/argv-strided-float32array",
+          "@stdlib/math/base/assert/is-nanf",
+          "@stdlib/math/base/assert/is-negative-zerof"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/ssort2ins.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/ssort2ins.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+          "@stdlib/math/base/assert/is-nanf",
+          "@stdlib/math/base/assert/is-negative-zerof"
+      ]
+    }
+  ]
 }

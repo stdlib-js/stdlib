@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `sscal`.
-*/
 #include "stdlib/blas/base/sscal.h"
 #include <stdlib.h>
 #include <stdio.h>

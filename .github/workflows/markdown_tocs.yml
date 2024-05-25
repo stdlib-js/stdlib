@@ -56,7 +56,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -120,7 +120,7 @@ jobs:
       - name: 'Create pull request'
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@70a41aba780001da0a30141984ae2a0c95d8704e # v6.0.2
+        uses: peter-evans/create-pull-request@6d6857d36972b65feb161a90e484f2984215f83e # v6.0.5
         with:
           title: 'docs: update namespace table of contents'
           body: |
