@@ -58,7 +58,7 @@ var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
 Evaluates the [identity function][identity-function] for a single-precision [complex][@stdlib/complex/float32] floating-point number.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
 
@@ -84,7 +84,7 @@ var im = imag( v );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
 
 var z;

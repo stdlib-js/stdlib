@@ -76,7 +76,7 @@ For details on the JSON serialization format, see [`Complex64`][@stdlib/complex/
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var parseJSON = require( '@stdlib/utils/parse-json' );
 var reviveComplex64 = require( '@stdlib/complex/reviver-float32' );
 

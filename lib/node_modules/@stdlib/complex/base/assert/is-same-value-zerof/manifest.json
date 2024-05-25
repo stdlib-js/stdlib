@@ -36,7 +36,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/complex/float32",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/complex/reimf",
         "@stdlib/number/float32/base/assert/is-same-value-zero"
       ]
@@ -52,7 +52,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/complex/float32",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/complex/reimf",
         "@stdlib/number/float32/base/assert/is-same-value-zero"
       ]

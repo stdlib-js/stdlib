@@ -421,7 +421,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns modified array
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
 	*
@@ -453,7 +453,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns iterator
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var arr = [
 	*     new Complex128( 1.0, 1.0 ),
@@ -704,7 +704,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns undefined
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* function log( v, i ) {
 	*     console.log( '%s: %s', i, v.toString() );
@@ -751,7 +751,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns boolean indicating whether an array contains a provided value
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var arr = new Complex128Array( 5 );
 	*
@@ -851,7 +851,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns index or -1
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var arr = new Complex128Array( 5 );
 	*
@@ -880,7 +880,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns new array containing transformed elements
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
 	*
@@ -1514,7 +1514,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @example
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var arr = new Complex128Array( 3 );
 	*
@@ -1716,7 +1716,7 @@ interface Complex128ArrayConstructor {
 	* // returns 1
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var arr = Complex128Array.from( [ new Complex128( 1.0, 1.0 ) ] );
 	* // returns <Complex128Array>
@@ -1725,7 +1725,7 @@ interface Complex128ArrayConstructor {
 	* // returns 1
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
 	*

@@ -46,7 +46,7 @@ Returns an accessor function for setting an element in an array-like object supp
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var realf = require( '@stdlib/complex/realf' );
 var imagf = require( '@stdlib/complex/imagf' );
 
@@ -103,8 +103,8 @@ The returned accessor function accepts the following arguments:
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex64Array = require( '@stdlib/array/complex64' );
-var Complex128 = require( '@stdlib/complex/float64' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
 var dtype = require( '@stdlib/array/dtype' );
 var accessorSetter = require( '@stdlib/array/base/accessor-setter' );

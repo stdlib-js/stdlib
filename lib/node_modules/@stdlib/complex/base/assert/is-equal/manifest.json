@@ -36,7 +36,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/complex/float64",
+        "@stdlib/complex/float64/ctor",
         "@stdlib/complex/reim"
       ]
     },
@@ -51,7 +51,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/complex/float64",
+        "@stdlib/complex/float64/ctor",
         "@stdlib/complex/reim"
       ]
     }

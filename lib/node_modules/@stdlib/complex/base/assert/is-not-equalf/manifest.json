@@ -36,7 +36,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/complex/float32",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/complex/reimf"
       ]
     },
@@ -51,7 +51,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/complex/float32",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/complex/reimf"
       ]
     }
