@@ -1497,6 +1497,7 @@
 "@stdlib/bigint/ctor","@stdlib/bigint-ctor"
 "@stdlib/stats/binomial-test","@stdlib/stats-binomial-test"
 "@stdlib/boolean/ctor","@stdlib/boolean-ctor"
+"@stdlib/array/bool","@stdlib/array-bool"
 "@stdlib/ndarray/broadcast-array","@stdlib/ndarray-broadcast-array"
 "@stdlib/ndarray/broadcast-arrays","@stdlib/ndarray-broadcast-arrays"
 "@stdlib/buffer/ctor","@stdlib/buffer-ctor"

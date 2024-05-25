@@ -1497,6 +1497,7 @@ bifurcateOwn
 BigInt
 binomialTest
 Boolean
+BooleanArray
 broadcastArray
 broadcastArrays
 Buffer
