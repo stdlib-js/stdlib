@@ -40,9 +40,11 @@
       "dependencies": [
         "@stdlib/math/base/napi/binary",
         "@stdlib/math/base/special/abs",
-        "@stdlib/constants/float64/max",
+        "@stdlib/math/base/special/round",
+        "@stdlib/constants/float64/max-safe-integer",
         "@stdlib/constants/float64/max-base10-exponent",
         "@stdlib/constants/float64/min-base10-exponent",
+        "@stdlib/constants/float64/min-base10-exponent-subnormal",
         "@stdlib/math/base/assert/is-infinite"
       ]
     },
@@ -60,9 +62,11 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/special/abs",
-        "@stdlib/constants/float64/max",
+        "@stdlib/math/base/special/round",
+        "@stdlib/constants/float64/max-safe-integer",
         "@stdlib/constants/float64/max-base10-exponent",
         "@stdlib/constants/float64/min-base10-exponent",
+        "@stdlib/constants/float64/min-base10-exponent-subnormal",
         "@stdlib/math/base/assert/is-infinite"
       ]
     },
@@ -80,9 +84,11 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/special/abs",
-        "@stdlib/constants/float64/max",
+        "@stdlib/math/base/special/round",
+        "@stdlib/constants/float64/max-safe-integer",
         "@stdlib/constants/float64/max-base10-exponent",
         "@stdlib/constants/float64/min-base10-exponent",
+        "@stdlib/constants/float64/min-base10-exponent-subnormal",
         "@stdlib/math/base/assert/is-infinite"
       ]
     }
