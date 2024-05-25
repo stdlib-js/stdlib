@@ -1746,7 +1746,7 @@ interface Complex64ArrayConstructor {
 	/**
 	* Creates a new 64-bit complex number array from a variable number of arguments.
 	*
-	* @param  element - array elements
+	* @param elements - array elements
 	* @returns 64-bit complex number array
 	*
 	* @example

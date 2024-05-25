@@ -1744,7 +1744,7 @@ interface Complex128ArrayConstructor {
 	/**
 	* Creates a new 128-bit complex number array from a variable number of arguments.
 	*
-	* @param  element - array elements
+	* @param elements - array elements
 	* @returns 128-bit complex number array
 	*
 	* @example
