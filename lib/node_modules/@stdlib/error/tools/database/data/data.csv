@@ -973,3 +973,4 @@
 "Fg","invalid argument. Unable to parse input string as a complex number. Value: `%s`.","Error"
 "Fh","invalid operation. Cannot access settings for a REPL which has already closed.","Error"
 "Fi","invalid argument. First argument must be a recognized setting. Value: `%s`.","Error"
+"Fj","invalid invocation. `this` is not a boolean array.","TypeError"
