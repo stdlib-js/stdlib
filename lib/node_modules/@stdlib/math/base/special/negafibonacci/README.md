@@ -160,6 +160,94 @@ for ( i = 0; i > -79; i-- ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/negafibonacci.h"
+```
+
+#### stdlib_base_negafibonacci( n )
+
+Computes the nth [negaFibonacci number][fibonacci-number].
+
+```c
+double out = stdlib_base_negafibonacci( 0 );
+// returns 0
+
+out = stdlib_base_fibonacci( -1 );
+// returns 1
+```
+
+The function accepts the following arguments:
+
+-   **n**: `[in] int32_t` input value.
+
+```c
+double stdlib_base_negafibonacci( const int32_t n );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/negafibonacci.h"
+#include <stdio.h>
+#include <stdint.h>
+
+int main( void ) {
+    int32_t i;
+    double v;
+
+    for ( i = 0; i > -79; i-- ) {
+        v = stdlib_base_negafibonacci( i );
+        printf( "negafibonacci(%d) = %lf\n", i, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
