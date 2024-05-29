@@ -16,32 +16,23 @@
 * limitations under the License.
 */
 
-/* This is a generated file. Do not edit directly. */
-'use strict';
+#ifndef STDLIB_MATH_BASE_SPECIAL_EXP2_H
+#define STDLIB_MATH_BASE_SPECIAL_EXP2_H
 
-// MAIN //
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-* @private
-* @param {number} x - value at which to evaluate the polynomial
-* @returns {number} evaluated polynomial
+* Evaluates the base `2` exponential function.
 */
-function evalpoly( x ) {
-	if ( x === 0.0 ) {
-		return 4368.211668792106;
-	}
-	return 4368.211668792106 + (x * (233.1842117223149 + (x * 1.0)));
+double stdlib_base_exp2( const double x );
+
+#ifdef __cplusplus
 }
+#endif
 
-
-// EXPORTS //
-
-module.exports = evalpoly;
+#endif // !STDLIB_MATH_BASE_SPECIAL_EXP2_H
