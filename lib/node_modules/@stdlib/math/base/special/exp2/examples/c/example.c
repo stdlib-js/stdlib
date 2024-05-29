@@ -16,32 +16,18 @@
 * limitations under the License.
 */
 
-/* This is a generated file. Do not edit directly. */
-'use strict';
+#include "stdlib/math/base/special/exp2.h"
+#include <stdlib.h>
+#include <stdio.h>
 
-// MAIN //
+int main( void ) {
+    double x;
+    double v;
+    int i;
 
-/**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-* @private
-* @param {number} x - value at which to evaluate the polynomial
-* @returns {number} evaluated polynomial
-*/
-function evalpoly( x ) {
-	if ( x === 0.0 ) {
-		return 4368.211668792106;
-	}
-	return 4368.211668792106 + (x * (233.1842117223149 + (x * 1.0)));
+    for ( i = 0; i < 100; i++ ) {
+        x = ( ( (double)rand() / (double)RAND_MAX ) * 100.0 ) - 50.0;
+        v = stdlib_base_exp2( x );
+        printf( "2^%lf = %lf\n", x, v );
+    }
 }
-
-
-// EXPORTS //
-
-module.exports = evalpoly;

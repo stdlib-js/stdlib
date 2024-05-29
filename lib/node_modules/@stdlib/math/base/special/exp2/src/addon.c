@@ -16,32 +16,8 @@
 * limitations under the License.
 */
 
-/* This is a generated file. Do not edit directly. */
-'use strict';
+#include "stdlib/math/base/napi/unary.h"
+#include "stdlib/math/base/special/exp2.h"
 
-// MAIN //
-
-/**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-* @private
-* @param {number} x - value at which to evaluate the polynomial
-* @returns {number} evaluated polynomial
-*/
-function evalpoly( x ) {
-	if ( x === 0.0 ) {
-		return 4368.211668792106;
-	}
-	return 4368.211668792106 + (x * (233.1842117223149 + (x * 1.0)));
-}
-
-
-// EXPORTS //
-
-module.exports = evalpoly;
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_exp2 )
