@@ -58,7 +58,7 @@ rules[ '@cspell/spellchecker' ] = [ 'warn', {
 			'/\\/\\/ returns \'[^\']+\'/g', // ignore return value annotations
 			'/setReadOnly\\( [.a-z0-9]+, \'[^\']+?\'/gi', // ignore namespace or prototype assignments
 			'/```[\\s\\S]+?```/g', // ignore code blocks
-			'/(?<!`)[^`]+?`(?!`)/g', // ignore inline code
+			'/(?<!`)`[^`]+?`(?!`)/g', // ignore inline code
 			'/\\\\{2,2}\\([\\s\\S]+?\\\\{2,2}\\)/g', // ignore LaTeX math expressions
 			'/\\[[^\\]]+\\]/g', // ignore character classes in regular expressions or markdown links
 			'/\\/\\/ exports: \\{[^}]+\\}/g', // ignore export annotations
