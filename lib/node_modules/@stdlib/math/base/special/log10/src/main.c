@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The following copyright and license were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/9.3.0/lib/msun/src/e_log10.c}. The implementation follows the original, but has been modified for JavaScript.
+* The following copyright and license were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/12.2.0/lib/msun/src/e_log10.c}. The implementation follows the original, but has been modified for JavaScript.
 *
 * ```text
 * Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
@@ -39,6 +39,9 @@
 #include "stdlib/constants/float64/high_word_significand_mask.h"
 #include "stdlib/constants/float64/exponent_bias.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/special/kernel_log1p.h"
+#include <stdint.h>
 
 static const double TWO54 = 1.80143985094819840000e+16;     // 0x43500000, 0x00000000
 static const double IVLN10HI = 4.34294481878168880939e-01;  // 0x3fdbcb7b, 0x15200000
@@ -55,100 +58,6 @@ static const int32_t HIGH_MIN_NORMAL_EXP = 0x00100000;
 // 0x3ff00000 = 1072693248 => 0 01111111111 00000000000000000000 => biased exponent: 1023 = 0+1023 => 2^0 = 1
 static const int32_t HIGH_BIASED_EXP_0 = 0x3ff00000;
 
-// 1/3
-static const double ONE_THIRD = 0.33333333333333333;
-
-/* Begin auto-generated functions. The following functions are auto-generated. Do not edit directly. */
-
-// BEGIN: polyval_p
-
-/**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-* @param x    value at which to evaluate the polynomial
-* @return     evaluated polynomial
-*/
-static double polyval_p( const double x ) {
-	return 0.3999999999940942 + (x * (0.22222198432149784 + (x * 0.15313837699209373)));
-}
-
-// END: polyval_p
-
-// BEGIN: polyval_q
-
-/**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-* @param x    value at which to evaluate the polynomial
-* @return     evaluated polynomial
-*/
-static double polyval_q( const double x ) {
-	return 0.6666666666666735 + (x * (0.2857142874366239 + (x * (0.1818357216161805 + (x * 0.14798198605116586)))));
-}
-
-// END: polyval_q
-
-/* End auto-generated functions. */
-
-/**
-* Return `log(x) - (x-1)` for `x` in `~[sqrt(2)/2, sqrt(2)]`.
-*
-* @param {number} x - input value
-* @returns {number} function value
-*/
-static double klog( const double x ) {
-	double hfsq;
-	uint32_t hx;
-	int32_t ihx;
-	int32_t i;
-	int32_t j;
-	double t1;
-	double t2;
-	double f;
-	double s;
-	double z;
-	double R;
-	double w;
-
-	stdlib_base_float64_get_high_word( x, &hx );
-	ihx = (int32_t)hx;
-	f = x - 1.0;
-	if ( ( STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGNIFICAND_MASK & ( 2 + ihx ) ) < 3 ) {
-		// Case: -2**-20 <= f < 2**-20
-		if ( f == 0.0 ) {
-			return 0.0;
-		}
-		return f * f * ( ( ONE_THIRD * f ) - 0.5 );
-	}
-	s = f / ( 2.0 + f );
-	z = s * s;
-	ihx &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGNIFICAND_MASK;
-	i = (ihx - 0x6147a);
-	w = z * z;
-	j = ( 0x6b851 - ihx );
-	t1 = w * polyval_p( w );
-	t2 = z * polyval_q( w );
-	i |= j;
-	R = t2 + t1;
-	if ( i > 0 ) {
-		hfsq = 0.5 * f * f;
-		return ( s * ( hfsq + R ) ) - hfsq;
-	}
-	return s * ( R - f );
-}
-
 /**
 * Evaluates the common logarithm (base ten).
 *
@@ -160,56 +69,81 @@ static double klog( const double x ) {
 * // returns ~0.602
 */
 double stdlib_base_log10( const double x ) {
-	int32_t ihx;
-	int32_t ilx;
+	double valLo;
+	double valHi;
 	uint32_t hx;
 	uint32_t lx;
+	double hfsq;
+	double hi;
 	int32_t i;
 	int32_t k;
-	double xc;
-	double hi;
 	double lo;
+	double xc;
+	double y2;
 	double f;
+	double R;
+	double w;
 	double y;
-	double z;
 
+	if ( stdlib_base_is_nan( x ) || x < 0.0 ) {
+		return 0.0 / 0.0; // NaN
+	}
 	xc = x;
-	stdlib_base_float64_to_words( x, &hx, &lx );
-	ihx = (int32_t)hx;
-	ilx = (int32_t)lx;
+	stdlib_base_float64_to_words( xc, &hx, &lx );
 	k = 0;
-
-	// Case: 0 < x < 2**-1022
-	if ( ihx < HIGH_MIN_NORMAL_EXP ) {
-		if ( ( ( ihx & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK ) | ilx ) == 0 ) {
+	if ( hx < HIGH_MIN_NORMAL_EXP ) {
+		// Case: x < 2**-1022
+		if ( ( ( hx & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK ) | lx ) == 0 ) {
 			return STDLIB_CONSTANT_FLOAT64_NINF;
 		}
-		if ( ihx < 0 ) {
-			return 0.0 / 0.0; // NaN
-		}
-		// Subnormal number, scale up `x`...
 		k -= 54;
+
+		// Subnormal number, scale up x:
 		xc *= TWO54;
 		stdlib_base_float64_get_high_word( xc, &hx );
-		ihx = (int32_t)hx;
 	}
-	if ( ihx >= HIGH_MAX_NORMAL_EXP ) {
-		return x + x;
+	if ( hx >= HIGH_MAX_NORMAL_EXP ) {
+		return xc + xc;
 	}
-	k += ( ( ihx>>20 ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS );
-	ihx &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGNIFICAND_MASK;
-	i = ( ihx + 0x95f64 ) & 0x100000;
+	// Case: log(1) = +0
+	if ( hx == HIGH_BIASED_EXP_0 && lx == 0 ) {
+		return 0;
+	}
+	k += ( ( hx >> 20 ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS );
+	hx &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGNIFICAND_MASK;
+	i = ( hx + 0x95f64 ) & HIGH_MIN_NORMAL_EXP;
 
-	// Normalize `x` or `x/2`...
-	stdlib_base_float64_set_high_word( ihx | ( i ^ HIGH_BIASED_EXP_0 ), &xc );
-	k += i >> 20;
+	// Normalize x or x/2...
+	stdlib_base_float64_set_high_word( hx | ( i ^ HIGH_BIASED_EXP_0 ), &xc );
+	k += ( i >> 20 );
 	y = (double)k;
-	f = klog( xc );
-	xc -= 1.0;
-	hi = xc;
+	f = xc - 1.0;
+	hfsq = 0.5 * f * f;
+	R = stdlib_base_kernel_log1p( f );
+
+	/*
+	* Notes:
+	*
+	* -   `f-hfsq` must (for args near `1`) be evaluated in extra precision to avoid a large cancellation when `x` is near `sqrt(2)` or `1/sqrt(2)`. This is fairly efficient since `f-hfsq` only depends on `f`, so can be evaluated in parallel with `R`. Not combining `hfsq` with `R` also keeps `R` small (though not as small as a true `lo` term would be), so that extra precision is not needed for terms involving `R`.
+	* -   When implemented in C, compiler bugs involving extra precision used to break Dekker's theorem for spitting `f-hfsq` as `hi+lo`. These problems are now automatically avoided as a side effect of the optimization of combining the Dekker splitting step with the clear-low-bits step.
+	* -   This implementation uses Dekker's theorem to normalize `y+val_hi`, so, when implemented in C, compiler bugs may reappear in some configurations.
+	* -   The multi-precision calculations for the multiplications are routine.
+	*/
+	hi = f - hfsq;
 	stdlib_base_float64_set_low_word( 0, &hi );
-	lo = xc - hi;
-	z = ( y * LOG10_2LO ) + ( ( xc + f ) * IVLN10LO );
-	z += ( ( lo + f ) * IVLN10HI ) + ( hi * IVLN10HI );
-	return z + ( y * LOG10_2HI );
+	lo = ( f - hi ) - hfsq + R;
+	valHi = hi * IVLN10HI;
+	y2 = y * LOG10_2HI;
+	valLo = ( y * LOG10_2LO ) + ( ( lo + hi ) * IVLN10LO ) + ( lo * IVLN10HI );
+
+	/*
+	* Note:
+	*
+	* -   Extra precision for adding `y*log10_2hi` is not strictly needed since there is no very large cancellation near `x = sqrt(2)` or `x = 1/sqrt(2)`, but we do it anyway since it costs little on CPUs with some parallelism and it reduces the error for many args.
+	*/
+	w = y2 + valHi;
+	valLo += ( y2 - w ) + valHi;
+	valHi = w;
+
+	return valLo + valHi;
 }
