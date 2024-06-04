@@ -23,7 +23,6 @@
 /**
 * Computes the least common multiple (lcm).
 *
-* @private
 * @param a    integer
 * @param b    integer
 * @return     least common multiple
@@ -37,19 +36,17 @@ double stdlib_base_lcm( const double a, const double b ) {
 	double bn;
 	double d;
 
-	if( a == 0.0 || b == 0.0 ) {
+	if ( a == 0.0 || b == 0.0 ) {
 		return 0.0;
 	}
 	if ( a < 0.0 ) {
 		an = -a;
-	}
-	else {
+	} else {
 		an = a;
 	}
 	if ( b < 0.0 ) {
 		bn = -b;
-	}
-	else {
+	} else {
 		bn = b;
 	}
 	// Note: we rely on `gcd` to perform further argument validation...

@@ -73,6 +73,7 @@ double stdlib_base_log10( const double x ) {
 	double valHi;
 	uint32_t hx;
 	uint32_t lx;
+	int32_t ihx;
 	double hfsq;
 	double hi;
 	int32_t i;
@@ -90,10 +91,11 @@ double stdlib_base_log10( const double x ) {
 	}
 	xc = x;
 	stdlib_base_float64_to_words( xc, &hx, &lx );
+	ihx = (int32_t)hx;
 	k = 0;
-	if ( hx < HIGH_MIN_NORMAL_EXP ) {
+	if ( ihx < HIGH_MIN_NORMAL_EXP ) {
 		// Case: x < 2**-1022
-		if ( ( ( hx & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK ) | lx ) == 0 ) {
+		if ( ( ( ihx & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK ) | lx ) == 0 ) {
 			return STDLIB_CONSTANT_FLOAT64_NINF;
 		}
 		k -= 54;
@@ -101,20 +103,21 @@ double stdlib_base_log10( const double x ) {
 		// Subnormal number, scale up x:
 		xc *= TWO54;
 		stdlib_base_float64_get_high_word( xc, &hx );
+		ihx = (int32_t)hx;
 	}
-	if ( hx >= HIGH_MAX_NORMAL_EXP ) {
+	if ( ihx >= HIGH_MAX_NORMAL_EXP ) {
 		return xc + xc;
 	}
 	// Case: log(1) = +0
-	if ( hx == HIGH_BIASED_EXP_0 && lx == 0 ) {
+	if ( ihx == HIGH_BIASED_EXP_0 && lx == 0 ) {
 		return 0;
 	}
-	k += ( ( hx >> 20 ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS );
-	hx &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGNIFICAND_MASK;
-	i = ( hx + 0x95f64 ) & HIGH_MIN_NORMAL_EXP;
+	k += ( ( ihx >> 20 ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS );
+	ihx &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGNIFICAND_MASK;
+	i = ( ihx + 0x95f64 ) & HIGH_MIN_NORMAL_EXP;
 
 	// Normalize x or x/2...
-	stdlib_base_float64_set_high_word( hx | ( i ^ HIGH_BIASED_EXP_0 ), &xc );
+	stdlib_base_float64_set_high_word( (uint32_t)( ihx | ( i ^ HIGH_BIASED_EXP_0 ) ), &xc );
 	k += ( i >> 20 );
 	y = (double)k;
 	f = xc - 1.0;
