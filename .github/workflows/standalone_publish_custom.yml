@@ -91,7 +91,7 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Fetch all history to allowfor generation of changelogs:
+          # Fetch all history to allow for generation of changelogs:
           fetch-depth: 0
 
           # Specify whether to download Git-LFS files:
