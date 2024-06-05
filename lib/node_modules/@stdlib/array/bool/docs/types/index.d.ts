@@ -63,6 +63,50 @@ type FromBinary<U> = ( this: U, value: boolean, index: number ) => boolean;
 type FromCallback<U> = FromNullary<U> | FromUnary<U> | FromBinary<U>;
 
 /**
+* Callback invoked for each element in an array.
+*
+* @returns returned value
+*/
+type NullaryMapFcn<U> = ( this: U ) => any;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @returns returned value
+*/
+type UnaryMapFcn<U> = ( this: U, value: boolean ) => any;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @returns returned value
+*/
+type BinaryMapFcn<U> = ( this: U, value: boolean, index: number ) => any;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns returned value
+*/
+type TernaryMapFcn<U> = ( this: U, value: boolean, index: number, arr: BooleanArray ) => any;
+
+/**
+* Callback invoked for each element in an array.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns returned value
+*/
+type MapFcn<U> = NullaryMapFcn<U> | UnaryMapFcn<U> | BinaryMapFcn<U> | TernaryMapFcn<U>;
+
+/**
 * Class for creating a Boolean array.
 */
 declare class BooleanArray implements BooleanArrayInterface {
@@ -193,6 +237,38 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns undefined
 	*/
 	get( i: number ): boolean | void;
+
+	/**
+	* Returns a new array with each element being the result of a provided callback function.
+	*
+	* @param fcn - callback function
+	* @param thisArg - callback function execution context
+	* @returns new boolean array
+	*
+	* @example
+	* function invert( v ) {
+	*     return !v;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var out = arr.map( invert );
+	* // returns <BooleanArray>
+	*
+	* var v = out.get( 0 );
+	* // returns false
+	*
+	* v = out.get( 1 );
+	* // returns true
+	*
+	* v = out.get( 2 );
+	* // returns false
+	*/
+	map<U = unknown>( fcn: MapFcn<U>, thisArg?: ThisParameterType<MapFcn<U>> ): BooleanArray;
 
 	/**
 	* Sets an array element.

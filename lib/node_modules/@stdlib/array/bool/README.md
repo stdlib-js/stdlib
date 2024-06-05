@@ -360,6 +360,67 @@ var v = arr.get( 100 );
 // returns undefined
 ```
 
+<a name="method-map"></a>
+
+#### BooleanArray.prototype.map( callbackFn\[, thisArg] )
+
+Returns a new array with each element being the result of a provided callback function.
+
+```javascript
+function invert( v ) {
+    return !v;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var out = arr.map( invert );
+// returns <BooleanArray>
+
+var z = out.get( 0 );
+// returns false
+
+z = out.get( 1 );
+// returns true
+
+z = out.get( 2 );
+// returns false
+```
+
+The callback function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function invert( v, i ) {
+    this.count += i;
+    return !v;
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var out = arr.map( invert, context );
+// returns <BooleanArray>
+
+var count = context.count;
+// returns 3;
+```
+
 <a name="method-set"></a>
 
 #### BooleanArray.prototype.set( v\[, i] )
