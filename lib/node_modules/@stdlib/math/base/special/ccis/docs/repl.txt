@@ -15,13 +15,13 @@
 
     Examples
     --------
-    > var y = {{alias}}( new {{alias:@stdlib/complex/float64}}( 0.0, 0.0 ) )
+    > var y = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 0.0, 0.0 ) )
     <Complex128>
     > var re = {{alias:@stdlib/complex/real}}( y )
     1.0
     > var im = {{alias:@stdlib/complex/imag}}( y )
     0.0
-    > y = {{alias}}( new {{alias:@stdlib/complex/float64}}( 1.0, 0.0 ) )
+    > y = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 1.0, 0.0 ) )
     <Complex128>
     > re = {{alias:@stdlib/complex/real}}( y )
     ~0.540

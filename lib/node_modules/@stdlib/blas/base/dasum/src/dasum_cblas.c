@@ -28,6 +28,6 @@
 * @param stride  stride length
 * @return        sum of absolute values
 */
-double c_dasum( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
-	return cblas_dasum( N, X, stride );
+double API_SUFFIX(c_dasum)( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
+	return API_SUFFIX(cblas_dasum)( N, X, stride );
 }

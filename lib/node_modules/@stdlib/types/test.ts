@@ -104,6 +104,29 @@ function factory(): iter.IterableIterator {
 }
 
 /**
+* Returns a boolean array-like object.
+*
+* @returns boolean array-like object
+*/
+function boolArray(): array.BooleanArrayLike {
+	const buf: array.TypedArray = new Uint8Array( 8 );
+	const obj: array.BooleanArrayLike = {
+		'byteLength': 8,
+		'byteOffset': 0,
+		'BYTES_PER_ELEMENT': 1,
+		'length': 8,
+		'get': ( i: number ): boolean => {
+			return Boolean( buf[ i ] );
+		},
+		'set': ( value: boolean, i?: number ) => {
+			i = ( i ) ? i : 0;
+			buf[ i ] = ( buf[ i ] ) ? 1 : 0;
+		}
+	};
+	return obj;
+}
+
+/**
 * Returns a complex number array-like object.
 *
 * @returns complex number array-like object
@@ -359,6 +382,11 @@ function cmplx128Array(): array.Complex128Array {
 
 	const v32: array.Collection<number> = [ 1, 2, 3 ];
 	if ( v32.length !== 3 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const v33: array.BooleanArrayLike = boolArray();
+	if ( v33.byteOffset !== 0 ) {
 		throw new Error( 'something went wrong' );
 	}
 }

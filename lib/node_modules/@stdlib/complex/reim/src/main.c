@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/reim.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 /**
 * Returns the real and imaginary components of a double-precision complex floating-point number.
@@ -27,7 +27,7 @@
 * @param im    destination for imaginary component
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * stdlib_complex128_t z = stdlib_complex128( 5.0, 2.0 );
 *

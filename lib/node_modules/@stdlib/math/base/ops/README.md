@@ -87,7 +87,7 @@ The namespace contains the following functions:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var ns = require( '@stdlib/math/base/ops' );
 
 // Operations for double-precision floating point numbers:

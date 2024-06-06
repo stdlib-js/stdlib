@@ -417,7 +417,7 @@ void stdlib_strided_mask_b_c( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -459,7 +459,7 @@ void stdlib_strided_mask_b_c_as_b_c( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -501,7 +501,7 @@ void stdlib_strided_mask_b_c_as_c_c( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1445,7 +1445,7 @@ void stdlib_strided_mask_b_z( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1487,7 +1487,7 @@ void stdlib_strided_mask_b_z_as_b_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1529,7 +1529,7 @@ void stdlib_strided_mask_b_z_as_z_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1571,7 +1571,7 @@ void stdlib_strided_mask_c_c( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1613,7 +1613,7 @@ void stdlib_strided_mask_c_c_as_z_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1655,7 +1655,7 @@ void stdlib_strided_mask_c_f_as_c_f( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1697,8 +1697,8 @@ void stdlib_strided_mask_c_z( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1740,7 +1740,7 @@ void stdlib_strided_mask_c_z_as_c_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1905,7 +1905,7 @@ void stdlib_strided_mask_d_z( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1947,7 +1947,7 @@ void stdlib_strided_mask_d_z_as_d_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2030,7 +2030,7 @@ void stdlib_strided_mask_f_c( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2072,7 +2072,7 @@ void stdlib_strided_mask_f_c_as_c_c( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2114,7 +2114,7 @@ void stdlib_strided_mask_f_c_as_f_c( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2443,7 +2443,7 @@ void stdlib_strided_mask_f_z( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2485,7 +2485,7 @@ void stdlib_strided_mask_f_z_as_f_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2773,7 +2773,7 @@ void stdlib_strided_mask_i_z( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2815,7 +2815,7 @@ void stdlib_strided_mask_i_z_as_i_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2898,7 +2898,7 @@ void stdlib_strided_mask_k_c( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2940,7 +2940,7 @@ void stdlib_strided_mask_k_c_as_c_c( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2982,7 +2982,7 @@ void stdlib_strided_mask_k_c_as_k_c( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3721,7 +3721,7 @@ void stdlib_strided_mask_k_z( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3763,7 +3763,7 @@ void stdlib_strided_mask_k_z_as_k_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3887,7 +3887,7 @@ void stdlib_strided_mask_s_c( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3929,7 +3929,7 @@ void stdlib_strided_mask_s_c_as_c_c( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3971,7 +3971,7 @@ void stdlib_strided_mask_s_c_as_s_c( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4874,7 +4874,7 @@ void stdlib_strided_mask_s_z( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4916,7 +4916,7 @@ void stdlib_strided_mask_s_z_as_s_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4999,7 +4999,7 @@ void stdlib_strided_mask_t_c( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5041,7 +5041,7 @@ void stdlib_strided_mask_t_c_as_c_c( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5083,7 +5083,7 @@ void stdlib_strided_mask_t_c_as_t_c( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5781,7 +5781,7 @@ void stdlib_strided_mask_t_z( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5823,7 +5823,7 @@ void stdlib_strided_mask_t_z_as_t_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6070,7 +6070,7 @@ void stdlib_strided_mask_u_z( uint8_t *arrays[], const int64_t *shape, const int
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6112,7 +6112,7 @@ void stdlib_strided_mask_u_z_as_u_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6154,7 +6154,7 @@ void stdlib_strided_mask_u_z_as_z_z( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6196,7 +6196,7 @@ void stdlib_strided_mask_z_d_as_z_d( uint8_t *arrays[], const int64_t *shape, co
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:

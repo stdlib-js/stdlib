@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Applies a plane rotation.
 */
-void drot( const int *, double *, const int *, double *, const int *, const double *, const double * );
+void drot( const CBLAS_INT *, double *, const CBLAS_INT *, double *, const CBLAS_INT *, const double *, const double * );
 
 #ifdef __cplusplus
 }

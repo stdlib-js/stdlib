@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/math/base/special/cabs2.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 

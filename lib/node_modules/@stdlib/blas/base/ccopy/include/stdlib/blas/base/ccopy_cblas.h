@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
 */
-void cblas_ccopy( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
+void API_SUFFIX(cblas_ccopy)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }

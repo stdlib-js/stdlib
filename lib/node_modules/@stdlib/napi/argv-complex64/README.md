@@ -110,7 +110,7 @@ Converts a Node-API value to a single-precision complex floating-point number.
 
 ```c
 #include "stdlib/napi/argv_complex64.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <node_api.h>
 
 static napi_value addon( napi_env env, napi_callback_info info ) {
@@ -152,7 +152,7 @@ Macro for converting an add-on callback argument to a single-precision complex f
 ```c
 #include "stdlib/napi/argv_complex64.h"
 #include "stdlib/napi/argv.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <node_api.h>
 
 static stdlib_complex64_t fcn( const stdlib_complex64_t v ) {

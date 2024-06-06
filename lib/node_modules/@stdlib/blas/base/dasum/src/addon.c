@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/base/dasum.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
@@ -37,7 +38,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
-	STDLIB_NAPI_CREATE_DOUBLE( env, c_dasum( N, X, strideX ), v );
+	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(c_dasum)( N, X, strideX ), v );
 	return v;
 }
 

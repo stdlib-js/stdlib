@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Computes the sum of absolute values.
 */
-double c_dasum( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
+double API_SUFFIX(c_dasum)( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
 
 #ifdef __cplusplus
 }

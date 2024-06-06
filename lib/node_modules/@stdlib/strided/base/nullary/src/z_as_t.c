@@ -22,7 +22,7 @@
 
 #include "stdlib/strided/base/nullary/z_as_t.h"
 #include "stdlib/strided/base/nullary/macros.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 /**
