@@ -18,7 +18,7 @@
 
     Examples
     --------
-    > var out = {{alias}}( new {{alias:@stdlib/complex/float64}}( 5.555, -3.333 ), -2 )
+    > var out = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 5.555, -3.333 ), -2 )
     <Complex128>
     > var re = {{alias:@stdlib/complex/real}}( out )
     5.56

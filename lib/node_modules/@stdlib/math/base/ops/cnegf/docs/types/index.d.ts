@@ -29,7 +29,7 @@ import { Complex64 } from '@stdlib/types/complex';
 * @returns result
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float32' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 * var realf = require( '@stdlib/complex/realf' );
 * var imagf = require( '@stdlib/complex/imagf' );
 *
@@ -46,7 +46,7 @@ import { Complex64 } from '@stdlib/types/complex';
 * // returns -5.5
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float32' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 * var realf = require( '@stdlib/complex/realf' );
 * var imagf = require( '@stdlib/complex/imagf' );
 *
@@ -63,7 +63,7 @@ import { Complex64 } from '@stdlib/types/complex';
 * // returns -0.0
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float32' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 * var realf = require( '@stdlib/complex/realf' );
 * var imagf = require( '@stdlib/complex/imagf' );
 *

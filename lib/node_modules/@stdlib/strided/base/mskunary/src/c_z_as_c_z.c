@@ -22,8 +22,8 @@
 
 #include "stdlib/strided/base/mskunary/c_z_as_c_z.h"
 #include "stdlib/strided/base/mskunary/macros.h"
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 /**
@@ -36,8 +36,8 @@
 *
 * @example
 * #include "stdlib/strided/base/mskunary/c_z_as_c_z.h"
-* #include "stdlib/complex/float32.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float32/ctor.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 *
 * // Create underlying byte arrays:

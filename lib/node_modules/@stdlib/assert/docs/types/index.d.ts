@@ -1986,8 +1986,8 @@ interface Namespace {
 	* @returns boolean indicating if a value is a 64-bit or 128-bit complex number
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* var x = new Complex128( 4.0, 2.0 );
 	* var bool = ns.isComplex( x );
@@ -2006,8 +2006,8 @@ interface Namespace {
 	* @returns boolean indicating if a value is a complex number-like object.
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* var x = new Complex128( 4.0, 2.0 );
 	* var bool = ns.isComplexLike( x );
@@ -2082,7 +2082,7 @@ interface Namespace {
 	* @returns boolean indicating if a value is a 64-bit complex number
 	*
 	* @example
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* var x = new Complex64( 4.0, 2.0 );
 	*
@@ -2174,7 +2174,7 @@ interface Namespace {
 	* @returns boolean indicating if a value is a 128-bit complex number
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var x = new Complex128( 4.0, 2.0 );
 	*
@@ -5704,7 +5704,7 @@ interface Namespace {
 	* @returns boolean indicating whether two arguments are the same
 	*
 	* @example
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* var x = new Complex64( 1.0, 2.0 );
 	* var y = new Complex64( 1.0, 2.0 );
@@ -5713,7 +5713,7 @@ interface Namespace {
 	* // returns true
 	*
 	* @example
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* var x = new Complex64( 1.0, 2.0 );
 	* var y = new Complex64( -1.0, -2.0 );
@@ -5766,7 +5766,7 @@ interface Namespace {
 	* @returns boolean indicating whether two arguments are the same
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var x = new Complex128( 1.0, 2.0 );
 	* var y = new Complex128( 1.0, 2.0 );
@@ -5775,7 +5775,7 @@ interface Namespace {
 	* // returns true
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var x = new Complex128( 1.0, 2.0 );
 	* var y = new Complex128( -1.0, -2.0 );

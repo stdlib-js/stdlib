@@ -22,7 +22,7 @@
 
 #include "stdlib/strided/base/mskunary/f_c.h"
 #include "stdlib/strided/base/mskunary/macros.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 /**

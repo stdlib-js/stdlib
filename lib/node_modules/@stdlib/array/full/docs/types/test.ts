@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import Complex128 = require( '@stdlib/complex/float64' );
+import Complex128 = require( '@stdlib/complex/float64/ctor' );
 import full = require( './index' );
 
 

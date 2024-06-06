@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `dcopy`.
-*/
 #include "stdlib/blas/base/dcopy.h"
 #include <stdlib.h>
 #include <stdio.h>

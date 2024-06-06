@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/special/cflipsign.h"
 #include "stdlib/math/base/assert/is_negative_zero.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 
 /**
@@ -29,7 +29,7 @@
 * @return        result
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/real.h"
 * #include "stdlib/complex/imag.h"
 *

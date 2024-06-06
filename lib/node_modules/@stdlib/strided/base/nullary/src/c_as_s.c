@@ -22,7 +22,7 @@
 
 #include "stdlib/strided/base/nullary/c_as_s.h"
 #include "stdlib/strided/base/nullary/macros.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 /**

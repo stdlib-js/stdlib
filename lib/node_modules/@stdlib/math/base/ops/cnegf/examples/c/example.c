@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/math/base/ops/cnegf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/reimf.h"
 #include <stdio.h>
 

@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `dasum`.
-*/
 #include "stdlib/blas/base/dasum.h"
 #include <stdlib.h>
 #include <stdio.h>
