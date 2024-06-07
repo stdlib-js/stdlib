@@ -15,7 +15,7 @@
 
     Examples
     --------
-    > var z = new {{alias:@stdlib/complex/float32}}( 5.0, 3.0 );
+    > var z = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, 3.0 );
     > var im = {{alias}}( z )
     3.0
 

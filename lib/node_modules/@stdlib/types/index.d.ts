@@ -40,7 +40,7 @@ declare module '@stdlib/types/array' {
 	/**
 	* Data type.
 	*/
-	type DataType = NumericDataType | 'generic'; // "all"
+	type DataType = NumericDataType | BooleanDataType | 'generic'; // "all"
 
 	/**
 	* Data type for real-valued typed arrays.
@@ -123,9 +123,19 @@ declare module '@stdlib/types/array' {
 	type NumericAndGenericDataType = NumericDataType | 'generic'; // "numeric_and_generic"
 
 	/**
+	* Data type for boolean typed arrays.
+	*/
+	type BooleanDataType = 'bool'; // "boolean"
+
+	/**
+	* Data type for boolean and generic arrays.
+	*/
+	type BooleanAndGenericDataType = BooleanDataType | 'generic'; // "boolean_and_generic"
+
+	/**
 	* Data type for strictly typed arrays.
 	*/
-	type TypedDataType = RealDataType | ComplexFloatingPointDataType; // "typed"
+	type TypedDataType = RealDataType | ComplexFloatingPointDataType | BooleanDataType; // "typed"
 
 	/**
 	* Data type for strictly typed and generic arrays.
@@ -135,12 +145,12 @@ declare module '@stdlib/types/array' {
 	/**
 	* Strict data type "kinds".
 	*/
-	type StrictDataTypeKind = 'typed' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer';
+	type StrictDataTypeKind = 'typed' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer' | 'boolean';
 
 	/**
 	* Data type "kinds".
 	*/
-	type DataTypeKind = StrictDataTypeKind | 'all' | 'typed_and_generic' | 'numeric_and_generic' | 'real_and_generic' | 'floating_point_and_generic' | 'real_floating_point_and_generic' | 'complex_floating_point_and_generic' | 'integer_and_generic' | 'signed_integer_and_generic' | 'unsigned_integer_and_generic';
+	type DataTypeKind = StrictDataTypeKind | 'all' | 'typed_and_generic' | 'numeric_and_generic' | 'real_and_generic' | 'floating_point_and_generic' | 'real_floating_point_and_generic' | 'complex_floating_point_and_generic' | 'integer_and_generic' | 'signed_integer_and_generic' | 'unsigned_integer_and_generic' | 'boolean_and_generic';
 
 	/**
 	* An array-like value.
@@ -337,7 +347,7 @@ declare module '@stdlib/types/array' {
 	* const x: AnyArray = [ 1, 2, 3 ];
 	* const y: AnyArray = new Float64Array( 10 );
 	*/
-	type AnyArray = Array<any> | RealOrComplexTypedArray; // eslint-disable-line @typescript-eslint/no-explicit-any
+	type AnyArray = Array<any> | RealOrComplexTypedArray | BooleanTypedArray; // eslint-disable-line @typescript-eslint/no-explicit-any
 
 	/**
 	* An array or typed array.
@@ -396,6 +406,14 @@ declare module '@stdlib/types/array' {
 	type UnsignedIntegerTypedArray = Uint8Array | Uint8ClampedArray | Uint16Array | Uint32Array;
 
 	/**
+	* A boolean typed array.
+	*
+	* @example
+	* const x: BooleanTypedArray = new BooleanArray( 10 );
+	*/
+	type BooleanTypedArray = BooleanArray;
+
+	/**
 	* A floating-point typed array.
 	*
 	* @example
@@ -436,6 +454,102 @@ declare module '@stdlib/types/array' {
 	* const x: RealOrComplexTypedArray = new Float64Array( 10 );
 	*/
 	type RealOrComplexTypedArray = RealTypedArray | ComplexTypedArray;
+
+	/**
+	* A boolean array-like value.
+	*
+	* @example
+	* const buf = new Uint8Array( 8 );
+	*
+	* const x: BooleanArrayLike = {
+	*     'byteLength': 8,
+	*     'byteOffset': 0,
+	*     'BYTES_PER_ELEMENT': 1,
+	*     'length': 8
+	*     'get': ( i: number ): boolean => {
+	*         return Boolean( buf[ i ] );
+	*     },
+	*     'set': ( value: boolean, i?: number ) => {
+	*         i = ( i ) ? i : 0;
+	*         buf[ i ] = ( value ) ? 1 : 0;
+	*     }
+	* };
+	*/
+	interface BooleanArrayLike extends AccessorArrayLike<boolean> {
+		/**
+		* Length (in bytes) of the array.
+		*/
+		byteLength: number;
+
+		/**
+		* Offset (in bytes) of the array from the start of its underlying `ArrayBuffer`.
+		*/
+		byteOffset: number;
+
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: number;
+
+		/**
+		* Number of array elements.
+		*/
+		length: number;
+
+		/**
+		* Returns an array element.
+		*
+		* @param i - element index
+		* @returns array element
+		*/
+		get( i: number ): boolean | void;
+
+		/**
+		* Sets an array element.
+		*
+		* @param value - value(s)
+		* @param i - element index at which to start writing values (default: 0)
+		*/
+		set( value: ArrayLike<boolean> | BooleanArrayLike | boolean, i?: number ): void;
+	}
+
+	/**
+	* Boolean array.
+	*
+	* @example
+	* const buf = new Uint8Array( 8 );
+	*
+	* const z: Complex64Array = {
+	*     'byteLength': 8,
+	*     'byteOffset': 0,
+	*     'BYTES_PER_ELEMENT': 1,
+	*     'length': 8
+	*     'get': ( i: number ): boolean => {
+	*         return Boolean( buf[ i ] );
+	*     },
+	*     'set': ( value: boolean, i?: number ) => {
+	*         i = ( i ) ? i : 0;
+	*         buf[ i ] = ( value ) ? 1 : 0;
+	*     }
+	* };
+	*/
+	interface BooleanArray extends BooleanArrayLike {
+		/**
+		* Returns an array element.
+		*
+		* @param i - element index
+		* @returns array element
+		*/
+		get( i: number ): boolean | void;
+
+		/**
+		* Sets an array element.
+		*
+		* @param value - value(s)
+		* @param i - element index at which to start writing values (default: 0)
+		*/
+		set( value: ArrayLike<boolean> | BooleanArray | boolean, i?: number ): void;
+	}
 
 	/**
 	* A complex number array-like value.
@@ -598,12 +712,32 @@ declare module '@stdlib/types/array' {
 	/**
 	* Mapping of data types to array constructors.
 	*/
-	type DataTypeMap<T> = Remap<NumericDataTypeMap & { 'generic': Array<T> }>;
+	type DataTypeMap<T> = Remap<TypedDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
+	* Mapping of strictly typed array data types to array constructors.
+	*/
+	type TypedDataTypeMap = Remap<NumericDataTypeMap & BooleanDataTypeMap>;
+
+	/**
+	* Mapping of numeric data types (real or complex) to array constructors.
+	*/
+	type NumericDataTypeMap = Remap<RealDataTypeMap &  ComplexFloatingPointDataTypeMap>;
+
+	/**
+	* Mapping of numeric (real or complex) data types and the "generic" data type to array constructors.
+	*/
+	type NumericAndGenericDataTypeMap<T> = Remap<NumericDataTypeMap & { 'generic': Array<T> }>;
 
 	/**
 	* Mapping of data types for real-valued typed arrays to array constructors.
 	*/
 	type RealDataTypeMap = Remap<RealFloatingPointDataTypeMap & IntegerDataTypeMap>;
+
+	/**
+	* Mapping of data types for real-valued typed arrays and the "generic" data type to array constructors.
+	*/
+	type RealAndGenericDataTypeMap<T> = Remap<RealDataTypeMap & { 'generic': Array<T> }>;
 
 	/**
 	* Mapping of data types for complex number typed arrays to array constructors.
@@ -614,6 +748,11 @@ declare module '@stdlib/types/array' {
 	};
 
 	/**
+	* Mapping of real floating point data types and the "generic" data type to array constructors.
+	*/
+	type RealFloatingPointAndGenericDataTypeMap<T> = Remap<RealFloatingPointDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
 	* Mapping of data types for complex number typed arrays to array constructors.
 	*/
 	type ComplexFloatingPointDataTypeMap = {  // eslint-disable-line @typescript-eslint/consistent-type-definitions
@@ -622,19 +761,29 @@ declare module '@stdlib/types/array' {
 	};
 
 	/**
+	* Mapping of complex floating point data types and the "generic" data type to array constructors.
+	*/
+	type ComplexFloatingPointAndGenericDataTypeMap<T> = Remap<ComplexFloatingPointDataTypeMap & { 'generic': Array<T> }>;
+
+	/**
 	* Mapping of data types for floating-point (real or complex) typed arrays to array constructors.
 	*/
 	type FloatingPointDataTypeMap = Remap<RealFloatingPointDataTypeMap & ComplexFloatingPointDataTypeMap>;
 
 	/**
-	* Mapping for numeric data types (real or complex) to array constructors.
+	* Mapping for floating point (real or complex) data types and the "generic" data type to array constructors.
 	*/
-	type NumericDataTypeMap = Remap<RealDataTypeMap &  ComplexFloatingPointDataTypeMap>;
+	type FloatingPointAndGenericDataTypeMap<T> = Remap<FloatingPointDataTypeMap & { 'generic': Array<T> }>;
 
 	/**
-	* Type mapping for the following array data types:
+	* Mapping of integer data types to array constructors.
 	*/
 	type IntegerDataTypeMap = Remap<SignedIntegerDataTypeMap & UnsignedIntegerDataTypeMap>;
+
+	/**
+	* Mapping of integer data types and the "generic" data type to array constructors.
+	*/
+	type IntegerAndGenericDataTypeMap<T> = Remap<IntegerDataTypeMap & { 'generic': Array<T> }>;
 
 	/**
 	* Mapping of signed integer data types to array constructors.
@@ -644,6 +793,11 @@ declare module '@stdlib/types/array' {
 		'int16': Int16Array;
 		'int8': Int8Array;
 	};
+
+	/**
+	* Mapping of signed integer data types and the "generic" data type to array constructors.
+	*/
+	type SignedIntegerAndGenericDataTypeMap<T> = Remap<SignedIntegerDataTypeMap & { 'generic': Array<T> }>;
 
 	/**
 	* Mapping of unsigned integer data types to array constructors.
@@ -656,59 +810,46 @@ declare module '@stdlib/types/array' {
 	};
 
 	/**
-	* Mapping for signed integer data types including the generic option to array constructors.
-	*/
-	type SignedIntegerAndGenericDataTypeMap<T> = Remap<SignedIntegerDataTypeMap & { 'generic': Array<T> }>;
-
-	/**
-	* Mapping for unsigned integer data types including the generic option to array constructors.
+	* Mapping of unsigned integer data types and the "generic" data type to array constructors.
 	*/
 	type UnsignedIntegerAndGenericDataTypeMap<T> = Remap<UnsignedIntegerDataTypeMap & { 'generic': Array<T> }>;
 
 	/**
-	* Mapping for real floating point data types including the generic option to array constructors.
+	* Mapping of data types for boolean typed arrays to array constructors.
 	*/
-	type RealFloatingPointAndGenericDataTypeMap<T> = Remap<RealFloatingPointDataTypeMap & { 'generic': Array<T> }>;
+	type BooleanDataTypeMap = { // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'bool': BooleanArray;
+	};
 
 	/**
-	* Mapping for complex floating point data types including the generic option to array constructors.
+	* Mapping of boolean data types and the "generic" data type to array constructors.
 	*/
-	type ComplexFloatingPointAndGenericDataTypeMap<T> = Remap<ComplexFloatingPointDataTypeMap & { 'generic': Array<T> }>;
-
-	/**
-	* Mapping for floating point (real or complex) data types including the generic option to array constructors.
-	*/
-	type FloatingPointAndGenericDataTypeMap<T> = Remap<FloatingPointDataTypeMap & { 'generic': Array<T> }>;
-
-	/**
-	* Mapping for numeric (real or complex) data types including the generic option to array constructors.
-	*/
-	type NumericAndGenericDataTypeMap<T> = Remap<NumericDataTypeMap & { 'generic': Array<T> }>;
-
-	/**
-	* Mapping for all typed (real, complex) data types including the generic option to array constructors.
-	*/
-	type TypedAndGenericDataTypeMap<T> = Remap<TypedDataTypeMap & { 'generic': Array<T> }>;
-
-	/**
-	* Mapping for strctly typed array data types to array constructors.
-	*/
-	type TypedDataTypeMap = Remap<RealDataTypeMap & ComplexFloatingPointDataTypeMap>;
+	type BooleanAndGenericDataTypeMap<T> = Remap<BooleanDataTypeMap & { 'generic': Array<T> }>;
 
 	/**
 	* Boolean index array.
 	*/
-	type BooleanIndexArray = Collection<boolean> | AccessorArrayLike<boolean>;
+	type GenericBooleanIndexArray = Collection<boolean> | AccessorArrayLike<boolean>;
 
 	/**
 	* Integer index array.
 	*/
-	type IntegerIndexArray = Collection<number> | AccessorArrayLike<number>;
+	type GenericIntegerIndexArray = Collection<number> | AccessorArrayLike<number>;
+
+	/**
+	* Generic index array.
+	*/
+	type GenericIndexArray = GenericBooleanIndexArray | GenericIntegerIndexArray;
+
+	/**
+	* Strictly typed index array.
+	*/
+	type TypedIndexArray = Uint8Array | BooleanArray | Int32Array;
 
 	/**
 	* Index array.
 	*/
-	type IndexArray = BooleanIndexArray | IntegerIndexArray;
+	type IndexArray = GenericIndexArray | TypedIndexArray;
 
 	/**
 	* Interface describing an array index object.
@@ -768,6 +909,26 @@ declare module '@stdlib/types/array' {
 	}
 
 	/**
+	* Interface describing a boolean array index object.
+	*/
+	interface BooleanArrayIndex extends BaseArrayIndex {
+		/**
+		* Read-only property returning the array index type.
+		*/
+		type: 'bool';
+
+		/**
+		* Read-only property returning the underlying index array data type.
+		*/
+		dtype: 'bool';
+
+		/**
+		* Read-only property returning the underlying array data.
+		*/
+		data: BooleanArray;
+	}
+
+	/**
 	* Interface describing an integer array index object.
 	*/
 	interface Int32ArrayIndex extends BaseArrayIndex {
@@ -788,9 +949,9 @@ declare module '@stdlib/types/array' {
 	}
 
 	/**
-	* Interface describing a boolean array index object.
+	* Interface describing a "generic" boolean array index object.
 	*/
-	interface BooleanArrayIndex extends BaseArrayIndex {
+	interface GenericBooleanArrayIndex extends BaseArrayIndex {
 		/**
 		* Read-only property returning the array index type.
 		*/
@@ -804,13 +965,13 @@ declare module '@stdlib/types/array' {
 		/**
 		* Read-only property returning the underlying array data.
 		*/
-		data: BooleanIndexArray;
+		data: GenericBooleanIndexArray;
 	}
 
 	/**
-	* Interface describing an integer array index object.
+	* Interface describing a "generic" integer array index object.
 	*/
-	interface IntegerArrayIndex extends BaseArrayIndex {
+	interface GenericIntegerArrayIndex extends BaseArrayIndex {
 		/**
 		* Read-only property returning the array index type.
 		*/
@@ -824,13 +985,13 @@ declare module '@stdlib/types/array' {
 		/**
 		* Read-only property returning the underlying array data.
 		*/
-		data: IntegerIndexArray;
+		data: GenericIntegerIndexArray;
 	}
 
 	/**
 	* Array index object.
 	*/
-	type ArrayIndex = MaskArrayIndex | Int32ArrayIndex | BooleanArrayIndex | IntegerArrayIndex;
+	type ArrayIndex = MaskArrayIndex | BooleanArrayIndex | Int32ArrayIndex | GenericBooleanArrayIndex | GenericIntegerArrayIndex;
 
 	/**
 	* Interface describing an object containing index array data.
@@ -873,6 +1034,26 @@ declare module '@stdlib/types/array' {
 	}
 
 	/**
+	* Interface describing an object containing boolean index array data.
+	*/
+	interface BooleanIndexArrayObject extends BaseIndexArrayObject {
+		/**
+		* The underlying array associated with an index array.
+		*/
+		data: BooleanArray;
+
+		/**
+		* The type of index array.
+		*/
+		type: 'bool';
+
+		/**
+		* The data type of the underlying array.
+		*/
+		dtype: 'bool';
+	}
+
+	/**
 	* Interface describing an object containing integer index array data.
 	*/
 	interface Int32IndexArrayObject extends BaseIndexArrayObject {
@@ -893,13 +1074,13 @@ declare module '@stdlib/types/array' {
 	}
 
 	/**
-	* Interface describing an object containing integer index array data.
+	* Interface describing an object containing "generic" integer index array data.
 	*/
-	interface IntegerIndexArrayObject extends BaseIndexArrayObject {
+	interface GenericIntegerIndexArrayObject extends BaseIndexArrayObject {
 		/**
 		* The underlying array associated with an index array.
 		*/
-		data: IntegerIndexArray;
+		data: GenericIntegerIndexArray;
 
 		/**
 		* The type of index array.
@@ -913,13 +1094,13 @@ declare module '@stdlib/types/array' {
 	}
 
 	/**
-	* Interface describing an object containing boolean index array data.
+	* Interface describing an object containing "generic" boolean index array data.
 	*/
-	interface BooleanIndexArrayObject extends BaseIndexArrayObject {
+	interface GenericBooleanIndexArrayObject extends BaseIndexArrayObject {
 		/**
 		* The underlying array associated with an index array.
 		*/
-		data: BooleanIndexArray;
+		data: GenericBooleanIndexArray;
 
 		/**
 		* The type of index array.
@@ -935,7 +1116,7 @@ declare module '@stdlib/types/array' {
 	/**
 	* Index array data object.
 	*/
-	type IndexArrayObject = MaskIndexArrayObject | Int32IndexArrayObject | BooleanIndexArrayObject | IntegerIndexArrayObject;
+	type IndexArrayObject = MaskIndexArrayObject | BooleanIndexArrayObject | Int32IndexArrayObject | GenericBooleanIndexArrayObject | GenericIntegerIndexArrayObject;
 }
 
 /**

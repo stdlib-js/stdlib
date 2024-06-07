@@ -22,7 +22,7 @@
 
 #include "stdlib/strided/base/unary/k_z.h"
 #include "stdlib/strided/base/unary/macros.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 /**

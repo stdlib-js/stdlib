@@ -189,7 +189,7 @@ var im = imagf( z );
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var ccopy = require( '@stdlib/blas/base/ccopy' );
 
 function rand() {
