@@ -1641,7 +1641,7 @@ base.sliceNonReducedDimensions,"\nbase.sliceNonReducedDimensions( slice:MultiSli
 base.sliceReducedDimensions,"\nbase.sliceReducedDimensions( slice:MultiSlice )\n    Returns a list of reduced dimensions in an un-normalized multi-slice.\n"
 base.sliceShape,"\nbase.sliceShape( slice:MultiSlice )\n    Returns the shape of a normalized multi-slice.\n"
 base.snakecase,"\nbase.snakecase( str:string )\n    Converts a string to snake case.\n"
-base.spence,"\nbase.spence( x:number )\n    Evaluates Spence’s function, which is also known as the dilogarithm.\n"
+base.spence,"\nbase.spence( x:number )\n    Evaluates Spence's function, which is also known as the dilogarithm.\n"
 base.sqrt,"\nbase.sqrt( x:number )\n    Computes the principal square root of a double-precision floating-point\n    number.\n"
 base.sqrt1pm1,"\nbase.sqrt1pm1( x:number )\n    Computes the principal square root of `1+x` minus one.\n"
 base.sqrtf,"\nbase.sqrtf( x:number )\n    Computes the principal square root of a single-precision floating-point\n    number.\n"
