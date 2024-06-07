@@ -28,6 +28,9 @@
     out.dtypes.complex_floating_point: string
         Default complex-valued floating-point data type.
 
+    out.dtypes.boolean: string
+        Default boolean data type.
+
     out.dtypes.integer: string
         Default integer data type.
 
