@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,33 +16,26 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+/**
+* Header file containing function declarations.
+*/
+#ifndef STDLIB_MATH_BASE_SPECIAL_SPENCE_H
+#define STDLIB_MATH_BASE_SPECIAL_SPENCE_H
+
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
 * Evaluates Spence's function, which is also known as the dilogarithm.
-*
-* @param x - input value
-* @returns function value
-*
-* @example
-* var v = spence( 3.0 );
-* // returns ~-1.437
-*
-* @example
-* var v = spence( 0.0 );
-* // returns ~1.645
-*
-* @example
-* var v = spence( -9.0 );
-* // returns NaN
-*
-* @example
-* var v = spence( NaN );
-* // returns NaN
 */
-declare function spence( x: number ): number;
+double stdlib_base_spence( const double x );
 
+#ifdef __cplusplus
+}
+#endif
 
-// EXPORTS //
-
-export = spence;
+#endif // !STDLIB_MATH_BASE_SPECIAL_SPENCE_H

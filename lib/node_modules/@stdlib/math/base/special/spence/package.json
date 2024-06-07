@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/spence",
   "version": "0.0.0",
-  "description": "Spence’s function, also known as the dilogarithm.",
+  "description": "Spence's function, also known as the dilogarithm.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
