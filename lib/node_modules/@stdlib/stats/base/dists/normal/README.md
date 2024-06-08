@@ -213,7 +213,6 @@ console.log( mylogpdf( 15.0 ) );
 // => ~-3.406
 ```
 
-
 </section>
 
 <!-- /.examples -->
