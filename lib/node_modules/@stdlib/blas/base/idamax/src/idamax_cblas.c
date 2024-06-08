@@ -25,7 +25,7 @@
 * @param N        number of indexed elements
 * @param X        input array
 * @param strideX  stride length
-* @returns        index value
+* @return         index value
 */
 int c_idamax( const int N, const double *X, const int strideX ) {
 	return cblas_idamax( N, X, strideX );

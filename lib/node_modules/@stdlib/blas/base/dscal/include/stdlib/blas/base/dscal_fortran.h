@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Multiplies each element of a double-precision floating-point vector by a constant.
 */
-void dscal( const int *, const double *, double *, const int * );
+void dscal( const CBLAS_INT *, const double *, double *, const CBLAS_INT * );
 
 #ifdef __cplusplus
 }

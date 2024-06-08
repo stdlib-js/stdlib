@@ -1,0 +1,385 @@
+{
+  "options": {
+    "task": "build",
+    "os": "linux",
+    "blas": "",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/srot.f",
+        "./src/srot_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/argv-float"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/srot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/srot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
+    },
+
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/srot_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/argv-float"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/srot_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/srot_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": []
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/srot.f",
+        "./src/srot_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/argv-float"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/srot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/srot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/srot_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/argv-float"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/srot_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/srot_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": []
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/srot_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/argv-float"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/srot_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/srot_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": []
+    },
+
+    {
+      "task": "build",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/srot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/argv-float"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/srot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "examples",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/srot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
+    },
+
+    {
+      "task": "build",
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/srot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": []
+    }
+  ]
+}

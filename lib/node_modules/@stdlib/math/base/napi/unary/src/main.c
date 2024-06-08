@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/math/base/napi/unary.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/reim.h"
 #include "stdlib/complex/reimf.h"
 #include <node_api.h>

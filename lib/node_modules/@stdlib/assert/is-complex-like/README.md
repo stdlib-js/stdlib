@@ -35,8 +35,8 @@ var isComplexLike = require( '@stdlib/assert/is-complex-like' );
 Tests if a value is a complex number-like `object`.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var x = new Complex128( 1.0, 3.0 );
 var bool = isComplexLike( x );
@@ -80,8 +80,8 @@ bool = isComplexLike( x );
 <!-- eslint-disable object-curly-newline, object-property-newline -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var isComplexLike = require( '@stdlib/assert/is-complex-like' );
 
 var out = isComplexLike( new Complex64( 2.0, 2.0 ) );

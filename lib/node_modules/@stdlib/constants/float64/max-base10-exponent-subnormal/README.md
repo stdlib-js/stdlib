@@ -91,10 +91,10 @@ console.log( FLOAT64_MAX_BASE10_EXPONENT_SUBNORMAL );
 ### Usage
 
 ```c
-#include "stdlib/constants/float64/max_base10_exponent.h"
+#include "stdlib/constants/float64/max_base10_exponent_subnormal.h"
 ```
 
-#### STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT
+#### STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT_SUBNORMAL
 
 Macro for the maximum base 10 exponent for a subnormal [double-precision floating-point number][ieee754].
 

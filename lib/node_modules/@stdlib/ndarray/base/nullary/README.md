@@ -305,7 +305,7 @@ Applies a nullary callback and assigns results to elements in an output ndarray.
 #include "stdlib/ndarray/index_modes.h"
 #include "stdlib/ndarray/orders.h"
 #include "stdlib/ndarray/ctor.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -774,7 +774,7 @@ Applies a nullary callback and assigns results to elements in an output ndarray.
 #include "stdlib/ndarray/index_modes.h"
 #include "stdlib/ndarray/orders.h"
 #include "stdlib/ndarray/ctor.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -3037,7 +3037,7 @@ Applies a nullary callback and assigns results to elements in an output ndarray.
 #include "stdlib/ndarray/index_modes.h"
 #include "stdlib/ndarray/orders.h"
 #include "stdlib/ndarray/ctor.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -3194,7 +3194,7 @@ Applies a nullary callback and assigns results to elements in an output ndarray.
 #include "stdlib/ndarray/index_modes.h"
 #include "stdlib/ndarray/orders.h"
 #include "stdlib/ndarray/ctor.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>

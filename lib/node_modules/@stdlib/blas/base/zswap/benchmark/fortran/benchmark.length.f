@@ -16,13 +16,6 @@
 ! limitations under the License.
 !<
 
-!> Benchmark `zswap`.
-!
-! ## Notes
-!
-! -   Written in "free form" Fortran 95.
-!
-!<
 program bench
   implicit none
   ! ..
@@ -125,7 +118,7 @@ contains
     ! External functions:
     interface
       subroutine zswap( N, zx, strideX, zy, strideY )
-        complex(kind=kind(0.0d0)) :: zx(:), zy(:)
+        complex(kind=kind(0.0d0)) :: zx(*), zy(*)
         integer :: strideX, strideY, N
       end subroutine zswap
     end interface

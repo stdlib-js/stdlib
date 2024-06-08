@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/cpolar.h"
 #include "stdlib/math/base/special/cphase.h"
 #include "stdlib/math/base/special/cabs.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 
 /**
@@ -30,7 +30,7 @@
 * @param cphase  destination for phase value
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/real.h"
 * #include "stdlib/complex/imag.h"
 *

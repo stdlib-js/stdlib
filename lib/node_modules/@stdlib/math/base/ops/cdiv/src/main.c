@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/ops/cdiv.h"
 #include "stdlib/math/base/special/abs.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include "stdlib/constants/float64/max.h"
 #include "stdlib/constants/float64/eps.h"
@@ -93,7 +93,7 @@ static void robustInternal( const double re1, const double im1, const double re2
 * @return         result
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/real.h"
 * #include "stdlib/complex/imag.h"
 *

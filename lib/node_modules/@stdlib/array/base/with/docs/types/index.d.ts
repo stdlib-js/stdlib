@@ -33,7 +33,7 @@ import { ComplexLike } from '@stdlib/types/complex';
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *

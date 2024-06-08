@@ -44,6 +44,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -66,7 +67,11 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sqrt"
+      ]
     },
     {
       "task": "examples",
@@ -83,7 +88,11 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sqrt"
+      ]
     },
 
     {
@@ -103,6 +112,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -126,7 +136,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
@@ -144,7 +156,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
 
     {
@@ -163,6 +177,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -185,7 +200,11 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sqrt"
+      ]
     },
     {
       "task": "examples",
@@ -202,7 +221,11 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sqrt"
+      ]
     },
 
     {
@@ -221,6 +244,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -243,7 +267,9 @@
         "-lblas"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
@@ -260,7 +286,9 @@
         "-lblas"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
 
     {
@@ -280,6 +308,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -303,7 +332,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
@@ -321,7 +352,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
 
     {
@@ -340,11 +373,14 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/napi/create-double"
+        "@stdlib/napi/create-double",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sqrt"
       ]
     },
     {
@@ -362,7 +398,11 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sqrt"
+      ]
     },
     {
       "task": "examples",
@@ -379,7 +419,11 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sqrt"
+      ]
     },
 
     {
@@ -397,7 +441,11 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sqrt"
+      ]
     }
   ]
 }
