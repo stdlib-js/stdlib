@@ -1,0 +1,9 @@
+{
+  "expression": "var a = { 'b': 'bar' }; var foo = { 'bar': { 'func': function() { return true; } } };\nfoo[a.b].func()",
+  "expected": "\u001b[31mfoo\u001b[0m[\u001b[31ma\u001b[0m.\u001b[32mb\u001b[0m].\u001b[33mfunc\u001b[0m()",
+  "theme": {
+    "object": "red",
+    "function": "yellow",
+    "variable": "green"
+  }
+}
