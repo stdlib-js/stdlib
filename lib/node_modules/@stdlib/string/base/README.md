@@ -122,7 +122,7 @@ The namespace contains the following functions:
 
 <!-- TODO: better examples -->
 
-<!-- eslint no-undef: "error" -->
+<!-- eslint no-undef: "error", @cspell/spellchecker: "off" -->
 
 ```javascript
 var ns = require( '@stdlib/string/base' );
