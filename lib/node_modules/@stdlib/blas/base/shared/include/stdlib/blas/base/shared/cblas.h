@@ -21,6 +21,7 @@
 
 #include "stdlib/blas/base/diagonal_types.h"
 #include "stdlib/blas/base/layouts.h"
+#include "stdlib/blas/base/matrix_triangles.h"
 #include "stdlib/blas/base/operation_sides.h"
 #include "stdlib/blas/base/transpose_operations.h"
 #include <stddef.h>
@@ -95,10 +96,10 @@ typedef enum CBLAS_TRANSPOSE {
 #ifndef CBLAS_UPLO
 typedef enum CBLAS_UPLO {
 	// Upper triangular part:
-	CblasUpper = 121,
+	CblasUpper = STDLIB_BLAS_UPPER,
 
 	// Lower triangular part:
-	CblasLower = 122,
+	CblasLower = STDLIB_BLAS_LOWER,
 } CBLAS_UPLO;
 #endif
 
