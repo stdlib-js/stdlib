@@ -21,6 +21,7 @@
 
 #include "stdlib/blas/base/diagonal_types.h"
 #include "stdlib/blas/base/layouts.h"
+#include "stdlib/blas/base/operation_sides.h"
 #include "stdlib/blas/base/transpose_operations.h"
 #include <stddef.h>
 #include <stdint.h>
@@ -116,10 +117,10 @@ typedef enum CBLAS_DIAG {
 #ifndef CBLAS_SIDE
 typedef enum CBLAS_SIDE {
 	// Triangular matrix is on the left side of a matrix-matrix operation (e.g., AX = B, where A is a triangular matrix):
-	CblasLeft = 141,
+	CblasLeft = STDLIB_BLAS_LEFT,
 
 	// Triangular matrix is on the right side of a matrix-matrix operation (e.g., XA = B, where A is a triangular matrix):
-	CblasRight = 142,
+	CblasRight = STDLIB_BLAS_RIGHT,
 } CBLAS_SIDE;
 #endif
 
