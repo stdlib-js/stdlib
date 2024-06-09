@@ -59,8 +59,8 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Limit clone depth to the most recent 100 commits:
-          fetch-depth: 100
+          # Fetch all history to allow for changelog generation:
+          fetch-depth: 0
 
           # Specify whether to download Git-LFS files:
           lfs: false

@@ -1741,7 +1741,7 @@ interface Complex64ArrayConstructor {
 	* var len = arr.length;
 	* // returns 1
 	*/
-	from( src: ArrayLike<number | ComplexLike> | RealOrComplexTypedArray | Iterable<number | ComplexLike>, clbk?: FromCallback<U>, thisArg?: ThisParameterType<FromCallback<U>> ): Complex64Array;
+	from<U = unknown>( src: ArrayLike<number | ComplexLike> | RealOrComplexTypedArray | Iterable<number | ComplexLike>, clbk?: FromCallback<U>, thisArg?: ThisParameterType<FromCallback<U>> ): Complex64Array;
 
 	/**
 	* Creates a new 64-bit complex number array from a variable number of arguments.
