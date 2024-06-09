@@ -1,0 +1,25 @@
+
+{{alias}}( layout )
+    Returns the layout string associated with a supported BLAS memory layout
+    value.
+
+    Parameters
+    ----------
+    layout: any
+        Layout value.
+
+    Returns
+    -------
+    out: string|null
+        Layout string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'row-major' )
+    'row-major'
+    > out = {{alias}}( {{alias:@stdlib/blas/base/layout-str2enum}}( 'row-major' ) )
+    'row-major'
+
+    See Also
+    --------
+
