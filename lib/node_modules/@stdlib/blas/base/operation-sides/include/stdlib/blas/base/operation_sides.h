@@ -23,10 +23,10 @@
 * Enumeration of operation sides.
 */
 enum STDLIB_BLAS_OPERATION_SIDE {
-	// Triangular matrix is on the left side of a matrix-matrix operation (e.g., AX = B, where A is a triangular matrix)
+	// Triangular matrix is on the left side of a matrix-matrix operation (e.g., AX = B, where A is a triangular matrix):
 	STDLIB_BLAS_LEFT = 141,
 
-	// Triangular matrix is on the right side of a matrix-matrix operation (e.g., XA = B, where A is a triangular matrix)
+	// Triangular matrix is on the right side of a matrix-matrix operation (e.g., XA = B, where A is a triangular matrix):
 	STDLIB_BLAS_RIGHT = 142
 };
 
