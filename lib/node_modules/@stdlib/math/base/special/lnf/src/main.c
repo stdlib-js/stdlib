@@ -32,7 +32,6 @@
 #include "stdlib/math/base/special/lnf.h"
 #include "stdlib/number/float32/base/to_word.h"
 #include "stdlib/number/float32/base/from_word.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float32/ninf.h"
 #include "stdlib/constants/float32/exponent_bias.h"
 #include "stdlib/constants/float32/exponent_mask.h"
@@ -152,18 +151,18 @@ float stdlib_base_lnf( const float x ) {
 			if ( k == 0 ) {
 				return 0.0f;
 			}
-			dk = k;
+			dk = (float)k;
 			return ( ( dk * LN2_HI ) + ( dk * LN2_LO ) );
 		}
 		R = ( ( f * f ) * ( 0.5f - ( ONE_THIRD * f ) ) );
 		if ( k == 0 ) {
 			return ( f - R );
 		}
-		dk = k;
+		dk = (float)k;
 		return ( ( dk * LN2_HI ) - ( ( R - ( dk * LN2_LO ) ) - f ) );
 	}
 	s = ( f / ( 2.0f + f ) );
-	dk = k;
+	dk = (float)k;
 	z = ( s * s );
 	i = ( ix - ( 0x6147a << 3 ) );
 	w = ( z * z );
