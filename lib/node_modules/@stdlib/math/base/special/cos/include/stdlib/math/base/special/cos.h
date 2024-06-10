@@ -22,8 +22,6 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_COS_H
 #define STDLIB_MATH_BASE_SPECIAL_COS_H
 
-#include <stdint.h>
-
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
