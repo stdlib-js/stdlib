@@ -32,22 +32,18 @@
 
 #include "stdlib/math/base/special/cos.h"
 #include "stdlib/number/float64/base/get_high_word.h"
+#include "stdlib/constants/float64/high_word_abs_mask.h"
+#include "stdlib/constants/float64/high_word_exponent_mask.h"
 #include "stdlib/math/base/special/kernel_cos.h"
 #include "stdlib/math/base/special/kernel_sin.h"
 #include "stdlib/math/base/special/rempio2.h"
 #include <stdint.h>
-
-// High word absolute value mask: 0x7fffffff => 01111111111111111111111111111111
-static const int32_t HIGH_WORD_ABS_MASK = 0x7fffffff;
 
 // High word of π/4: 0x3fe921fb => 00111111111010010010000111111011
 static const int32_t HIGH_WORD_PIO4 = 0x3fe921fb;
 
 // High word of 2^-27: 0x3e400000 => 00111110010000000000000000000000
 static const int32_t HIGH_WORD_TWO_NEG_27 = 0x3e400000;
-
-// High word exponent mask: 0x7ff00000 => 01111111111100000000000000000000
-static const int32_t HIGH_WORD_EXPONENT_MASK = 0x7ff00000;
 
 /**
 * Computes the cosine of a number.
@@ -82,7 +78,7 @@ double stdlib_base_cos( const double x ) {
 
 	stdlib_base_float64_get_high_word( x, &uix );
 	ix = (int32_t)uix;
-	ix &= HIGH_WORD_ABS_MASK;
+	ix &= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK;
 
 	// Case: |x| ~< π/4
 	if ( ix <= HIGH_WORD_PIO4 ) {
@@ -93,7 +89,7 @@ double stdlib_base_cos( const double x ) {
 		return stdlib_base_kernel_cos( x, 0.0 );
 	}
 	// Case: cos(Inf or NaN) is NaN */
-	if ( ix >= HIGH_WORD_EXPONENT_MASK ) {
+	if ( ix >= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_EXPONENT_MASK ) {
 		return 0.0 / 0.0; // NaN
 	}
 	// Case: Argument reduction needed...
