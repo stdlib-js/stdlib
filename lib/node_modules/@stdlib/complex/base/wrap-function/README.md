@@ -45,7 +45,7 @@ var wrap = require( '@stdlib/complex/base/wrap-function' );
 Returns a function which wraps a function accepting complex number arguments to support providing both real and complex numbers.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var caddf = require( '@stdlib/math/base/ops/caddf' );
 
 var f = wrap( caddf, 2, Complex64 );
@@ -84,7 +84,7 @@ The function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var caddf = require( '@stdlib/math/base/ops/caddf' );
 var realf = require( '@stdlib/complex/realf' );
 var imagf = require( '@stdlib/complex/imagf' );

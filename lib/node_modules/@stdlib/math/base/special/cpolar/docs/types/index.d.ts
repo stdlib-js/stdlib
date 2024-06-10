@@ -34,7 +34,7 @@ interface Cpolar {
 	* @returns absolute value and phase, respectively
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var v = cpolar( new Complex128( 5.0, 3.0 ) );
 	* // returns [ ~5.83, ~0.5404 ]
@@ -51,7 +51,7 @@ interface Cpolar {
 	* @returns output array
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var out = new Float64Array( 2 );
@@ -72,7 +72,7 @@ interface Cpolar {
 * @returns absolute value and phase, respectively
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var v = cpolar( new Complex128( 5.0, 3.0 ) );
 * // returns [ ~5.83, ~0.5404 ]

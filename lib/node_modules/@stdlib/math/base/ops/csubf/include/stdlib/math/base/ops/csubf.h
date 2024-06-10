@@ -19,7 +19,7 @@
 #ifndef STDLIB_MATH_BASE_OPS_CSUBF_H
 #define STDLIB_MATH_BASE_OPS_CSUBF_H
 
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.

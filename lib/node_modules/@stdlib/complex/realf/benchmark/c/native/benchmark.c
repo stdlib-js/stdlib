@@ -20,7 +20,7 @@
 * Benchmark `realf`.
 */
 #include "stdlib/complex/realf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

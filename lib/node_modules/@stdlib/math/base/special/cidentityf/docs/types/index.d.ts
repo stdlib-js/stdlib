@@ -29,7 +29,7 @@ import { Complex64 } from '@stdlib/types/complex';
 * @returns input value
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float32' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 * var real = require( '@stdlib/complex/real' );
 * var imag = require( '@stdlib/complex/imag' );
 *

@@ -45,7 +45,7 @@ var imagf = require( '@stdlib/complex/imagf' );
 Returns the **imaginary** component of a single-precision complex floating-point number.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var z = new Complex64( 5.0, 3.0 );
 var im = imagf( z );
@@ -73,7 +73,7 @@ var im = imagf( z );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var randu = require( '@stdlib/random/base/randu' );
 var round = require( '@stdlib/math/base/special/round' );
 var imagf = require( '@stdlib/complex/imagf' );
@@ -126,7 +126,7 @@ for ( i = 0; i < 100; i++ ) {
 Returns the imaginary component of a single-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 
 stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
 
@@ -164,7 +164,7 @@ float stdlib_imagf( const stdlib_complex64_t z );
 
 ```c
 #include "stdlib/complex/imagf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdio.h>
 
 int main( void ) {

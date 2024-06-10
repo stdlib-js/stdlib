@@ -45,7 +45,7 @@ var imag = require( '@stdlib/complex/imag' );
 Returns the **imaginary** component of a double-precision complex floating-point number.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var z = new Complex128( 5.0, 3.0 );
 var im = imag( z );
@@ -73,7 +73,7 @@ var im = imag( z );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var randu = require( '@stdlib/random/base/randu' );
 var round = require( '@stdlib/math/base/special/round' );
 var imag = require( '@stdlib/complex/imag' );
@@ -126,7 +126,7 @@ for ( i = 0; i < 100; i++ ) {
 Returns the imaginary component of a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 stdlib_complex128_t z = stdlib_complex128( 5.0, 2.0 );
 
@@ -164,7 +164,7 @@ double stdlib_imag( const stdlib_complex128_t z );
 
 ```c
 #include "stdlib/complex/imag.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdio.h>
 
 int main( void ) {

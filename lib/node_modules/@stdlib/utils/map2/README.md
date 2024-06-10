@@ -205,7 +205,7 @@ The applied function is provided the same arguments as with [`map2`](#fcn-map2).
     ```javascript
     var naryFunction = require( '@stdlib/utils/nary-function' );
     var Complex64Array = require( '@stdlib/array/complex64' );
-    var Complex64 = require( '@stdlib/complex/float32' );
+    var Complex64 = require( '@stdlib/complex/float32/ctor' );
     var realf = require( '@stdlib/complex/realf' );
     var imagf = require( '@stdlib/complex/imagf' );
     var add = require( '@stdlib/math/base/ops/caddf' );

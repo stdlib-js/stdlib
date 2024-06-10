@@ -1,0 +1,75 @@
+
+{{alias}}( real, imag )
+    128-bit complex number constructor.
+
+    Both the real and imaginary components are stored as double-precision
+    floating-point numbers.
+
+    Parameters
+    ----------
+    real: number
+        Real component.
+
+    imag: number
+        Imaginary component.
+
+    Returns
+    -------
+    z: Complex128
+        128-bit complex number.
+
+    z.re: number
+        Read-only property returning the real component.
+
+    z.im: number
+        Read-only property returning the imaginary component.
+
+
+{{alias}}.BYTES_PER_ELEMENT
+    Size (in bytes) of each component.
+
+    Returns
+    -------
+    v: integer
+        Size (in bytes) of each component.
+
+    Examples
+    --------
+    > var s = {{alias}}.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.prototype.BYTES_PER_ELEMENT
+    Size (in bytes) of each component.
+
+    Returns
+    -------
+    s: integer
+        Size (in bytes) of each component.
+
+    Examples
+    --------
+    > var z = new {{alias}}( 5.0, 3.0 )
+    <Complex128>
+    > var s = z.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.prototype.byteLength
+    Length (in bytes) of a complex number.
+
+    Returns
+    -------
+    len: integer
+        Length (in bytes) of a complex number.
+
+    Examples
+    --------
+    > var z = new {{alias}}( 5.0, 3.0 )
+    <Complex128>
+    > var s = z.byteLength
+    16
+
+    See Also
+    --------
+
