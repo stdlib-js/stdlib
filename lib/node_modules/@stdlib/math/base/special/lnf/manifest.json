@@ -39,7 +39,6 @@
         "@stdlib/math/base/napi/unary",
         "@stdlib/number/float32/base/to-word",
         "@stdlib/number/float32/base/from-word",
-        "@stdlib/math/base/assert/is-nan",
         "@stdlib/constants/float32/ninf",
         "@stdlib/constants/float32/exponent-bias",
         "@stdlib/constants/float32/exponent-mask",
@@ -60,7 +59,6 @@
       "dependencies": [
         "@stdlib/number/float32/base/to-word",
         "@stdlib/number/float32/base/from-word",
-        "@stdlib/math/base/assert/is-nan",
         "@stdlib/constants/float32/ninf",
         "@stdlib/constants/float32/exponent-bias",
         "@stdlib/constants/float32/exponent-mask",
@@ -81,7 +79,6 @@
       "dependencies": [
         "@stdlib/number/float32/base/to-word",
         "@stdlib/number/float32/base/from-word",
-        "@stdlib/math/base/assert/is-nan",
         "@stdlib/constants/float32/ninf",
         "@stdlib/constants/float32/exponent-bias",
         "@stdlib/constants/float32/exponent-mask",

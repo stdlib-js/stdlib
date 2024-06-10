@@ -38,6 +38,8 @@
       "dependencies": [
         "@stdlib/math/base/napi/unary",
         "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/high-word-exponent-mask",
         "@stdlib/math/base/special/kernel-cos",
         "@stdlib/math/base/special/kernel-sin",
         "@stdlib/math/base/special/rempio2"
@@ -55,6 +57,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/high-word-exponent-mask",
         "@stdlib/math/base/special/kernel-cos",
         "@stdlib/math/base/special/kernel-sin",
         "@stdlib/math/base/special/rempio2"
@@ -72,6 +76,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/high-word-exponent-mask",
         "@stdlib/math/base/special/kernel-cos",
         "@stdlib/math/base/special/kernel-sin",
         "@stdlib/math/base/special/rempio2"
