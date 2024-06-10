@@ -59,7 +59,7 @@ file = @__FILE__;
 dir = dirname( file );
 
 # Subnormal values:
-x = range( 1.0e-39, stop = 1.4e-45, length = 500 );
+x = range( 1.0e-39, stop = 1.40129846e-45, length = 500 );
 out = joinpath( dir, "subnormal.json" );
 gen( x, out );
 
