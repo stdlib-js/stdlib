@@ -272,6 +272,15 @@ jobs:
 
           # Lint JavaScript source files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
+
+          # Build native addons if present:
+          packages=$(echo "${files}" | tr ' ' '\n' | sed 's/^lib\/node_modules\///g' | sed 's/\/lib\/.*//g' | sort | uniq)
+          for pkg in ${packages}; do
+              if [ -f "lib/node_modules/${pkg}/binding.gyp" ]; then
+                  NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
+              fi
+          done
+
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}"
           fi

@@ -6884,7 +6884,7 @@ interface Namespace {
 	sinpi: typeof sinpi;
 
 	/**
-	* Evaluates Spence’s function, which is also known as the dilogarithm.
+	* Evaluates Spence's function, which is also known as the dilogarithm.
 	*
 	* @param x - input value
 	* @returns function value
