@@ -1,0 +1,124 @@
+
+{{alias}}( N, ca, cx, strideX )
+    Scales a single-precision complex floating-point vector by a single-
+    precision complex floating-point constant.
+
+    The `N` and stride parameters determine how values from `cx` are scaled by
+    `ca`.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` or `strideX` is less than or equal to `0`, the function returns `cx`
+    unchanged.
+
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    ca: Complex64
+        Complex constant.
+
+    cx: Complex64Array
+        Input array.
+
+    strideX: integer
+        Index increment for `cx`.
+
+    Returns
+    -------
+    cx: Complex64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
+    > {{alias}}( 2, ca, cx, 1 );
+    > var z = cx.get( 0 );
+    > var re = {{alias:@stdlib/complex/realf}}( z )
+    -3.0
+    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    4.0
+
+    // Advanced indexing:
+    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > ca = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 1.0 );
+    > {{alias}}( 2, ca, cx, 2 );
+    > z = cx.get( 0 );
+    > re = {{alias:@stdlib/complex/realf}}( z )
+    -1.0
+    > im = {{alias:@stdlib/complex/imagf}}( z )
+    3.0
+
+    // Using typed array views:
+    > var cx0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var cx1 = new {{alias:@stdlib/array/complex64}}( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 );
+    > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
+    > {{alias}}( 2, ca, cx1, 1 );
+    > z = cx0.get( 1 );
+    > re = {{alias:@stdlib/complex/realf}}( z )
+    -2.0
+    > im = {{alias:@stdlib/complex/imagf}}( z )
+    14.0
+
+
+{{alias}}.ndarray( N, ca, cx, strideX, offsetX )
+    Scales a single-precision complex floating-point vector by a single-
+    precision complex floating-point constant using alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    ca: Complex64
+        Complex constant.
+
+    cx: Complex64Array
+        Input array.
+
+    strideX: integer
+        Index increment for `cx`.
+
+    offsetX: integer
+        Starting index for `cx`.
+
+    Returns
+    -------
+    cx: Complex64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
+    > {{alias}}.ndarray( 2, ca, cx, 1, 0 );
+    > var z = cx.get( 0 );
+    > var re = {{alias:@stdlib/complex/realf}}( z )
+    -2.0
+    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    6.0
+
+    // Advanced indexing:
+    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > ca = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
+    > {{alias}}.ndarray( 2, ca, cx, 1, 2 );
+    > z = cx.get( 2 );
+    > re = {{alias:@stdlib/complex/realf}}( z )
+    -7.0
+    > im = {{alias:@stdlib/complex/imagf}}( z )
+    16.0
+
+    See Also
+    --------
+
