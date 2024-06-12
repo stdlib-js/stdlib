@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Return the minimum value, ignoring NaN.
+* Returns the minimum value, ignoring NaN.
 *
 * @param x - first number
 * @param y - second number
