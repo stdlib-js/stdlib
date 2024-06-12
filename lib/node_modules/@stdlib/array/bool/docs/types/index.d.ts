@@ -107,6 +107,15 @@ type TernaryMapFcn<U> = ( this: U, value: boolean, index: number, arr: BooleanAr
 type MapFcn<U> = NullaryMapFcn<U> | UnaryMapFcn<U> | BinaryMapFcn<U> | TernaryMapFcn<U>;
 
 /**
+* Comparator function.
+*
+* @param a - first boolean value for comparison
+* @param b - second boolean value for comparison
+* @returns number indicating comparison result
+*/
+type CompareFcn = ( a: boolean, b: boolean ) => number;
+
+/**
 * Class for creating a Boolean array.
 */
 declare class BooleanArray implements BooleanArrayInterface {
@@ -312,6 +321,45 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns true
 	*/
 	set( value: ArrayLike<any> | any, i?: number ): void;
+
+	/**
+	* Sorts an array in-place.
+	*
+	* @param compareFcn - comparison function
+	* @returns sorted array
+	*
+	* @example
+	* function compare( a, b ) {
+	*    if ( a === false ) {
+	*        if ( b === false ) {
+	*            return 0;
+	*        }
+	*        return 1;
+	*    }
+	*    if ( b === true ) {
+	*        return 0;
+	*    }
+	*    return -1;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* arr.sort( compare );
+	*
+	* var v = arr.get( 0 );
+	* // returns true
+	*
+	* v = arr.get( 1 );
+	* // returns true
+	*
+	* v = arr.get( 2 );
+	* // returns false
+	*/
+	sort( compareFcn: CompareFcn ): BooleanArray;
 }
 
 /**

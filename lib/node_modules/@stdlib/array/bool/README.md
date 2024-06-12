@@ -481,6 +481,55 @@ A few notes:
 -   If a target array cannot accommodate all values (i.e., the length of source array plus `i` exceeds the target array length), the method throws an error.
 -   If provided a [typed array][@stdlib/array/typed] which shares an [`ArrayBuffer`][@stdlib/array/buffer] with the target array, the method will intelligently copy the source range to the destination range.
 
+<a name="method-sort"></a>
+
+#### BooleanArray.prototype.sort( \[compareFcn] )
+
+Sorts an array in-place.
+
+```javascript
+function compare( a, b ) {
+    if ( a === false ) {
+        if ( b === false ) {
+            return 0;
+        }
+        return 1;
+    }
+    if ( b === true ) {
+        return 0;
+    }
+    return -1;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+arr.sort( compare );
+
+var v = arr.get( 0 );
+// returns true
+
+v = arr.get( 1 );
+// returns true
+
+v = arr.get( 2 );
+// returns false
+```
+
+The `compareFcn` determines the order of the elements. The function is called with the following arguments:
+
+-   **a**: the first boolean value for comparison.
+-   **b**: the second boolean value for comparison.
+
+The function should return a number where:
+
+-   a negative value indicates that `a` should come before `b`.
+-   a positive value indicates that `a` should come after `b`.
+-   zero or `NaN` indicates that `a` and `b` are considered equal.
+
 </section>
 
 <!-- /.usage -->
