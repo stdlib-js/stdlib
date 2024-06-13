@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2024 The Stdlib Authors.
@@ -16,33 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+#include "stdlib/math/base/special/csc.h"
+#include "stdlib/math/base/napi/unary.h"
 
-/**
-* Computes the cosecant of a number.
-*
-* @param x - input value (in radians)
-* @returns cosecant
-*
-* @example
-* var v = csc( 0.0 );
-* // returns Infinity
-*
-* @example
-* var v = csc( 3.141592653589793/2.0 );
-* // returns 1.0
-*
-* @example
-* var v = csc( -3.141592653589793/6.0 );
-* // returns ~-2.0
-*
-* @example
-* var v = csc( NaN );
-* // returns NaN
-*/
-declare function csc( x: number ): number;
-
-
-// EXPORTS //
-
-export = csc;
+STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_csc )
