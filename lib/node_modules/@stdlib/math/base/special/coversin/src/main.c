@@ -14,20 +14,6 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
 * limitations under the License.
-*
-*
-* ## Notice
-*
-* The following copyright, license, and long comment were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/12.2.0/lib/msun/src/s_cos.c}. The implementation follows the original, but has been modified for JavaScript.
-*
-* ```text
-* Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
-*
-* Developed at SunPro, a Sun Microsystems, Inc. business.
-* Permission to use, copy, modify, and distribute this
-* software is freely granted, provided that this notice
-* is preserved.
-* ```
 */
 
 #include "stdlib/math/base/special/coversin.h"
