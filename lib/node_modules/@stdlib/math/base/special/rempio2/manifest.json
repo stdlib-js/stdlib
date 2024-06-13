@@ -49,7 +49,7 @@
         "@stdlib/number/float64/base/from-words",
         "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-exponent-mask",
-        "@stdlib/constants/float64/high-word-sign-mask"
+        "@stdlib/constants/float64/high-word-significand-mask"
       ]
     },
     {
@@ -71,7 +71,7 @@
         "@stdlib/number/float64/base/from-words",
         "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-exponent-mask",
-        "@stdlib/constants/float64/high-word-sign-mask"
+        "@stdlib/constants/float64/high-word-significand-mask"
       ]
     },
     {
@@ -93,7 +93,7 @@
         "@stdlib/number/float64/base/from-words",
         "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-exponent-mask",
-        "@stdlib/constants/float64/high-word-sign-mask"
+        "@stdlib/constants/float64/high-word-significand-mask"
       ]
     }
   ]
