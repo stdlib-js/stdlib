@@ -39,7 +39,7 @@
 #include "stdlib/number/float64/base/from_words.h"
 #include "stdlib/constants/float64/high_word_abs_mask.h"
 #include "stdlib/constants/float64/high_word_exponent_mask.h"
-#include "stdlib/constants/float64/high_word_sign_mask.h"
+#include "stdlib/constants/float64/high_word_significand_mask.h"
 #include <stdint.h>
 
 static const double ZERO =  0.00000000000000000000e+00;       // 0x00000000, 0x00000000
@@ -488,7 +488,7 @@ int32_t stdlib_base_rempio2( const double x, double *rem1, double *rem2 ) {
 	// Case: |x| ~<= 5π/4
 	if ( ix <= FIVE_PIO4_HIGH_WORD ) {
 		// Case: |x| ~= π/2 or π
-		if ( ( ix & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGN_MASK ) == PI_HIGH_WORD_SIGNIFICAND ) {
+		if ( ( ix & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGNIFICAND_MASK ) == PI_HIGH_WORD_SIGNIFICAND ) {
 			// Cancellation => use medium case
 			goto medium;
 		}
