@@ -63,6 +63,50 @@ type FromBinary<U> = ( this: U, value: boolean, index: number ) => boolean;
 type FromCallback<U> = FromNullary<U> | FromUnary<U> | FromBinary<U>;
 
 /**
+* Checks whether an element in an array passes a test.
+*
+* @returns boolean indicating whether an element in an array passes a test
+*/
+type NullaryPredicate<U> = ( this: U ) => boolean;
+
+/**
+* Checks whether an element in an array passes a test.
+*
+* @param value - current array element
+* @returns boolean indicating whether an element in an array passes a test
+*/
+type UnaryPredicate<U> = ( this: U, value: boolean ) => boolean;
+
+/**
+* Checks whether an element in an array passes a test.
+*
+* @param value - current array element
+* @param index - current array element index
+* @returns boolean indicating whether an element in an array passes a test
+*/
+type BinaryPredicate<U> = ( this: U, value: boolean, index: number ) => boolean;
+
+/**
+* Checks whether an element in an array passes a test.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns boolean indicating whether an element in an array passes a test
+*/
+type TernaryPredicate<U> = ( this: U, value: boolean, index: number, arr: BooleanArray ) => boolean;
+
+/**
+* Checks whether an element in an array passes a test.
+*
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns boolean indicating whether an element in an array passes a test
+*/
+type Predicate<U> = NullaryPredicate<U> | UnaryPredicate<U> | BinaryPredicate<U> | TernaryPredicate<U>;
+
+/**
 * Callback invoked for each element in an array.
 *
 * @returns returned value
@@ -226,6 +270,52 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns 10
 	*/
 	readonly length: number;
+
+	/**
+	* Returns the first element in an array for which a predicate function returns a truthy value.
+	*
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns array element or undefined
+	*
+	* @example
+	* function predicate( v ) {
+	*     return v === true;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var v = arr.find( predicate );
+	* // returns true
+	*/
+	find<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean | void;
+
+	/**
+	* Returns the last element in an array for which a predicate function returns a truthy value.
+	*
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns array element or undefined
+	*
+	* @example
+	* function predicate( v ) {
+	*     return v === true;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var v = arr.findLast( predicate );
+	* // returns true
+	*/
+	findLast<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean | void;
 
 	/**
 	* Returns an array element.
