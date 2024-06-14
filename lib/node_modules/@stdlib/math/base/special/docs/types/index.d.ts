@@ -2936,7 +2936,7 @@ interface Namespace {
 	*
 	* @example
 	* var v = ns.csc( 3.141592653589793/2.0 );
-	* // returns ~1.0
+	* // returns 1.0
 	*
 	* @example
 	* var v = ns.csc( -3.141592653589793/6.0 );
