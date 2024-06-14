@@ -334,6 +334,110 @@ var len = arr.length;
 // returns 4
 ```
 
+<a name="method-find"></a>
+
+#### BooleanArray.prototype.find( predicate\[, thisArg] )
+
+Returns the first element in an array for which a predicate function returns a truthy value.
+
+```javascript
+function predicate( v ) {
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var v = arr.find( predicate );
+// returns true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v, i ) {
+    this.count += 1;
+    return ( v === true );
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( false, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var z = arr.find( predicate, context );
+// returns true
+
+var count = context.count;
+// returns 3
+```
+
+<a name="method-find-last"></a>
+
+#### Complex64Array.prototype.findLast( predicate\[, thisArg] )
+
+Returns the last element in an array for which a predicate function returns a truthy value.
+
+```javascript
+function predicate( v ) {
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var v = arr.findLast( predicate );
+// returns true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v, i ) {
+    this.count += 1;
+    return ( v === true );
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( false, 2 );
+
+var z = arr.findLast( predicate, context );
+// returns true
+
+var count = context.count;
+// returns 3
+```
+
 <a name="method-get"></a>
 
 #### BooleanArray.prototype.get( i )
