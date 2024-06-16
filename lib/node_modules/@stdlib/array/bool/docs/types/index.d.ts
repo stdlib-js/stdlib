@@ -295,6 +295,29 @@ declare class BooleanArray implements BooleanArrayInterface {
 	find<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean | void;
 
 	/**
+	* Returns the index of the first element in an array for which a predicate function returns a truthy value.
+	*
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns array index or -1
+	*
+	* @example
+	* function predicate( v ) {
+	*     return v === true;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var v = arr.findIndex( predicate );
+	* // returns 0
+	*/
+	findIndex<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): number;
+
+	/**
 	* Returns the last element in an array for which a predicate function returns a truthy value.
 	*
 	* @param predicate - predicate function
@@ -316,6 +339,29 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns true
 	*/
 	findLast<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean | void;
+
+	/**
+	* Returns the index of the last element in an array for which a predicate function returns a truthy value.
+	*
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns array index or -1
+	*
+	* @example
+	* function predicate( v ) {
+	*     return v === true;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var v = arr.findLastIndex( predicate );
+	* // returns 2
+	*/
+	findLastIndex<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): number;
 
 	/**
 	* Returns an array element.
