@@ -1,0 +1,562 @@
+
+{{alias}}()
+    A Boolean array.
+
+    Returns
+    -------
+    out: BooleanArray
+        A typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}()
+    <BooleanArray>
+
+
+{{alias}}( length )
+    Creates a boolean array having a specified length.
+
+    Parameters
+    ----------
+    length: integer
+        Typed array length.
+
+    Returns
+    -------
+    out: BooleanArray
+        A typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 10 )
+    <BooleanArray>
+    > var len = arr.length
+    10
+
+
+{{alias}}( booleanarray )
+    Creates a boolean array from another boolean array.
+
+    Parameters
+    ----------
+    booleanarray: BooleanArray
+        Boolean array from which to generate another boolean array.
+
+    Returns
+    -------
+    out: BooleanArray
+        A typed array.
+
+    Examples
+    --------
+    > var arr1 = new {{alias}}( [ true, false, false, true ] )
+    <BooleanArray>
+    > var arr2 = new {{alias}}( arr1 )
+    <BooleanArray>
+    > var len = arr2.length
+    4
+
+
+{{alias}}( typedarray )
+    Creates a boolean array from a typed array.
+
+    Parameters
+    ----------
+    typedarray: TypedArray
+        Typed array from which to generate boolean array.
+
+    Returns
+    -------
+    out: BooleanArray
+        A typed array.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/uint8}}( [ 1, 0, 0, 1 ] )
+    <Uint8Array>
+    > var arr = new {{alias}}( buf )
+    <BooleanArray>
+    > var len = arr.length
+    4
+
+
+{{alias}}( obj )
+    Creates a boolean array from an array-like object or iterable.
+
+    Parameters
+    ----------
+    obj: Object
+        Array-like object or iterable from which to generate a boolean array.
+
+    Returns
+    -------
+    out: BooleanArray
+        A typed array.
+
+    Examples
+    --------
+    > var arr1 = new {{alias}}( [ true, false, false, true ] )
+    <BooleanArray>
+    > var len = arr1.length
+    4
+    > var arr2 = new {{alias}}( [ {}, null, '', 4 ] );
+    > len = arr2.length
+    4
+
+
+{{alias}}( buffer[, byteOffset[, length]] )
+    Returns a boolean array view of an ArrayBuffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the first typed array
+        element. Default: 0.
+
+    length: integer (optional)
+        View length. If not provided, the view spans from the byteOffset to
+        the end of the underlying ArrayBuffer.
+
+    Returns
+    -------
+    out: BooleanArray
+        A typed array.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 240 );
+    > var arr1 = new {{alias}}( buf )
+    <BooleanArray>
+    > var len = arr1.length
+    240
+    > var arr2 = new {{alias}}( buf, 8 )
+    <BooleanArray>
+    > len = arr2.length
+    232
+    > var arr3 = new {{alias}}( buf, 8, 20 )
+    <BooleanArray>
+    > len = arr3.length
+    20
+
+
+{{alias}}.from( src[, clbk[, thisArg]] )
+    Creates a new boolean array from an array-like object or an iterable.
+
+    A callback function is provided two arguments:
+
+    - value: source value.
+    - index: source index.
+
+    Parameters
+    ----------
+    src: ArrayLike|Iterable
+        Source of array elements.
+
+    clbk: Function (optional)
+        Callback to invoke for each source element.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: BooleanArray
+        A typed array.
+
+    Examples
+    --------
+    > function map( v ) { return !v };
+    > var src = [ true, false ];
+    > var arr = {{alias}}.from( src, map )
+    <BooleanArray>
+    > var len = arr.length
+    2
+    > var v = arr.get( 0 )
+    false
+    > v = arr.get( 1 )
+    true
+
+
+{{alias}}.of( element0[, element1[, ...elementN]] )
+    Creates a new boolean array from a variable number of arguments.
+
+    Parameters
+    ----------
+    element0: bool
+        Array element.
+
+    element1: bool (optional)
+        Array element.
+
+    elementN: ...bool (optional)
+        Array elements.
+
+    Returns
+    -------
+    out: BooleanArray
+        A typed array.
+
+    Examples
+    --------
+    > var arr = {{alias}}.of( true, false, false, true )
+    <BooleanArray>
+    > var len = arr.length
+    4
+
+
+{{alias}}.BYTES_PER_ELEMENT
+    The size of each array element in bytes.
+
+    Examples
+    --------
+    > var nbytes = {{alias}}.BYTES_PER_ELEMENT
+    1
+
+
+{{alias}}.name
+    Typed array constructor name.
+
+    Examples
+    --------
+    > var str = {{alias}}.name
+    'BooleanArray'
+
+
+{{alias}}.prototype.buffer
+    Pointer to the underlying data buffer.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 2 )
+    <BooleanArray>
+    > var buf = arr.buffer
+    <ArrayBuffer>
+
+
+{{alias}}.prototype.byteLength
+    Size of the array in bytes.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 10 )
+    <BooleanArray>
+    > var nbytes = arr.byteLength
+    10
+
+
+{{alias}}.prototype.byteOffset
+    Offset (in bytes) of the array from the start of its underlying
+    ArrayBuffer.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 10 )
+    <BooleanArray>
+    > var offset = arr.byteOffset
+    0
+    > var buf = new {{alias:@stdlib/array/buffer}}( 240 )
+    > arr = new {{alias}}( buf, 64 )
+    <BooleanArray>
+    > offset = arr.byteOffset
+    64
+
+
+{{alias}}.prototype.BYTES_PER_ELEMENT
+    Size (in bytes) of each array element.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 10 )
+    <BooleanArray>
+    > arr.BYTES_PER_ELEMENT
+    1
+
+
+{{alias}}.prototype.length
+    The number of array elements.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 10 )
+    <BooleanArray>
+    > var len = arr.length
+    10
+
+
+{{alias}}.prototype.find( predicate[, thisArg] )
+    Returns the first element in an array for which a predicate function returns
+    a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: boolean|void
+        Array element or `undefined`.
+
+    Examples
+    --------
+    > function predicate( v ) { return v === true; }
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var v = arr.find( predicate )
+    true
+
+
+{{alias}}.prototype.findIndex( predicate[, thisArg] )
+    Returns the index of the first element in an array for which a predicate
+    function returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `-1`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: integer
+        Array index or `-1`.
+
+    Examples
+    --------
+    > function predicate( v ) { return v === true; }
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var idx = arr.findIndex( predicate )
+    0
+
+
+{{alias}}.prototype.findLast( predicate[, thisArg] )
+    Returns the last element in an array for which a predicate function returns
+    a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: boolean|void
+        Array element or `undefined`.
+
+    Examples
+    --------
+    > function predicate( v ) { return v === true; }
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var v = arr.findLast( predicate )
+    true
+
+
+{{alias}}.prototype.findLastIndex( predicate[, thisArg] )
+    Returns the index of the last element in an array for which a predicate
+    function returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `-1`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: integer
+        Array index or `-1`.
+
+    Examples
+    --------
+    > function predicate( v ) { return v === true; }
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var idx = arr.findLastIndex( predicate )
+    2
+
+
+{{alias}}.prototype.get( i )
+    Returns an array element located at integer position (index) `i`.
+
+    If provided an index outside the array index range, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    i: integer
+        Element index.
+
+    Returns
+    -------
+    out: boolean|void
+        Array element or `undefined`.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 10 )
+    <BooleanArray>
+    > arr.set( true, 0 );
+    > var v = arr.get( 0 )
+    true
+
+
+{{alias}}.prototype.map( clbk[, thisArg] )
+    Returns a new array with each element being the result of a provided
+    callback function.
+
+    A callback function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    The returned array has the same data type as the host array.
+
+    Parameters
+    ----------
+    clbk: Function
+        Function which maps array elements to elements in the new array.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: BooleanArray
+        A new typed array.
+
+    Examples
+    --------
+    > function invert( v ) { return !v; }
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var out = arr.map( invert )
+    <BooleanArray>
+    > var v = out.get( 0 )
+    false
+    > v = out.get( 1 )
+    true
+    > v = out.get( 2 )
+    false
+
+
+{{alias}}.prototype.set( v[, i] )
+    Sets one or more array elements.
+
+    If provided a single argument, the method sets array elements starting at
+    position (index) `i = 0`. To set elements starting elsewhere in the array,
+    provide an index argument `i`.
+
+    To set one or more array elements, provide an array-like object containing
+    truthy and falsy values.
+
+    Parameters
+    ----------
+    v: bool|BooleanArray|ArrayLikeObject
+        Complex number or complex number array.
+
+    i: integer (optional)
+        Array index at which to start setting elements. Default: 0.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 2 )
+    <BooleanArray>
+    > arr.set( false );
+    > var v = arr.get( 0 )
+    false
+    > arr.set( true, 1 );
+    > v = arr.get( 1 )
+    true
+
+
+{{alias}}.prototype.sort( [compareFunction] )
+    Sorts an array in-place.
+
+    A comparison function determines the order of the array elements. The
+    function is provided two arguments:
+
+    - a: first boolean value for comparison.
+    - b: second boolean value for comparison.
+
+    The function should return a value less than zero if `a` comes before `b`,
+    a value greater than zero if `a` comes after `b`, and zero if `a` and `b`
+    are equivalent.
+
+    Parameters
+    ----------
+    compareFunction: Function (optional)
+        Comparison function.
+
+    Returns
+    -------
+    out: BooleanArray
+        Modified array.
+
+    Examples
+    --------
+    > function compare( a, b ) { return a === true ? -1 : 1; }
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > arr.sort( compare );
+    > var v = arr.get( 0 )
+    true
+    > v = arr.get( 1 )
+    true
+    > v = arr.get( 2 )
+    false
+
+
+    See Also
+    --------
