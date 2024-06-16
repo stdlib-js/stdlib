@@ -111,7 +111,7 @@ interface Routine {
 *
 * cscal( 3, ca, cx, 1 );
 *
-* var z = cx.get( 1 );
+* var z = cx.get( 0 );
 * // returns <Complex64>
 *
 * var re = realf( z );
@@ -131,7 +131,7 @@ interface Routine {
 *
 * cscal.ndarray( 2, ca, cx, 1, 0 );
 *
-* var z = cx.get( 1 );
+* var z = cx.get( 0 );
 * // returns <Complex64>
 *
 * var re = realf( z );
