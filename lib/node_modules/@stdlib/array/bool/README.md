@@ -364,7 +364,7 @@ The `predicate` function is provided three arguments:
 To set the function execution context, provide a `thisArg`.
 
 ```javascript
-function predicate( v, i ) {
+function predicate( v ) {
     this.count += 1;
     return ( v === true );
 }
@@ -381,6 +381,58 @@ arr.set( true, 2 );
 
 var z = arr.find( predicate, context );
 // returns true
+
+var count = context.count;
+// returns 3
+```
+
+<a name="method-find-index"></a>
+
+#### BooleanArray.prototype.findIndex( predicate\[, thisArg] )
+
+Returns the index of the first element in an array for which a predicate function returns a truthy value.
+
+```javascript
+function predicate( v ) {
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var v = arr.findIndex( predicate );
+// returns 0
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v ) {
+    this.count += 1;
+    return ( v === true );
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( false, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var z = arr.findIndex( predicate, context );
+// returns 2
 
 var count = context.count;
 // returns 3
@@ -416,7 +468,7 @@ The `predicate` function is provided three arguments:
 To set the function execution context, provide a `thisArg`.
 
 ```javascript
-function predicate( v, i ) {
+function predicate( v ) {
     this.count += 1;
     return ( v === true );
 }
@@ -433,6 +485,58 @@ arr.set( false, 2 );
 
 var z = arr.findLast( predicate, context );
 // returns true
+
+var count = context.count;
+// returns 3
+```
+
+<a name="method-find-last-index"></a>
+
+#### BooleanArray.prototype.findLastIndex( predicate\[, thisArg] )
+
+Returns the index of the last element in an array for which a predicate function returns a truthy value.
+
+```javascript
+function predicate( v ) {
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var v = arr.findLastIndex( predicate );
+// returns 2
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v ) {
+    this.count += 1;
+    return ( v === true );
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( false, 2 );
+
+var z = arr.findLastIndex( predicate, context );
+// returns 0
 
 var count = context.count;
 // returns 3
