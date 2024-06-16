@@ -48,7 +48,7 @@
     > var x = [ false, false, true, false, false ];
     > var y = [ false, null, false, null, false, null, false, null, false ];
     > var result = {{alias}}.assign( x, y, 2, 0 )
-    [ false, null, false, null, true, null, true, null, true ];
+    [ false, null, false, null, true, null, true, null, true ]
 
     See Also
     --------
