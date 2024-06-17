@@ -416,6 +416,32 @@ declare class BooleanArray implements BooleanArrayInterface {
 	map<U = unknown>( fcn: MapFcn<U>, thisArg?: ThisParameterType<MapFcn<U>> ): BooleanArray;
 
 	/**
+	* Reverses an array in-place.
+	*
+	* @returns reversed array
+	*
+	* @example
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( false, 2 );
+	*
+	* var out = arr.reverse();
+	* // returns <BooleanArray>
+	*
+	* var v = out.get( 0 );
+	* // returns false
+	*
+	* v = out.get( 1 );
+	* // returns false
+	*
+	* v = out.get( 2 );
+	* // returns true
+	*/
+	reverse(): BooleanArray;
+
+	/**
 	* Sets an array element.
 	*
 	* ## Notes
@@ -496,6 +522,32 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns false
 	*/
 	sort( compareFcn: CompareFcn ): BooleanArray;
+
+	/**
+	* Returns a new typed array containing the elements in reversed order.
+	*
+	* @returns reversed array
+	*
+	* @example
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( false, 2 );
+	*
+	* var out = arr.toReversed();
+	* // returns <BooleanArray>
+	*
+	* var v = out.get( 0 );
+	* // returns false
+	*
+	* v = out.get( 1 );
+	* // returns false
+	*
+	* v = out.get( 2 );
+	* // returns true
+	*/
+	toReversed(): BooleanArray;
 }
 
 /**

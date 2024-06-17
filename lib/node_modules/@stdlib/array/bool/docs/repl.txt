@@ -491,6 +491,29 @@
     false
 
 
+{{alias}}.prototype.reverse()
+    Reverses the array *in-place*.
+
+    This method mutates the array on which the method is invoked.
+
+    Returns
+    -------
+    out: BooleanArray
+        Modified array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, false ] )
+    <BooleanArray>
+    > arr.reverse();
+    > var v = arr.get( 0 )
+    false
+    > v = arr.get( 1 )
+    false
+    > v = arr.get( 2 )
+    true
+
+
 {{alias}}.prototype.set( v[, i] )
     Sets one or more array elements.
 
@@ -556,6 +579,28 @@
     true
     > v = arr.get( 2 )
     false
+
+
+{{alias}}.prototype.toReversed()
+    Returns a new typed array containing the elements in reversed order.
+
+    Returns
+    -------
+    out: BooleanArray
+        New typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, false ] )
+    <BooleanArray>
+    > var out = arr.toReversed()
+    <BooleanArray>
+    > var v = out.get( 0 )
+    false
+    > v = out.get( 1 )
+    false
+    > v = out.get( 2 )
+    true
 
 
     See Also
