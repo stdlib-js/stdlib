@@ -74,7 +74,7 @@ interface CuEvery {
 * @example
 * var x = [ true, true, true, false, true ];
 * var y = [ false, null, false, null, false, null, false, null, false, null ];
-
+*
 * var arr = cuevery.assign( x, y, 2, 0 );
 * // returns [ true, null, true, null, true, null, false, null, false, null ];
 */
