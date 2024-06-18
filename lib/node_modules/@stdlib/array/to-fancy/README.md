@@ -372,6 +372,24 @@ y[ '10:20' ] = [ 8, 9, 10, 11 ];
 // throws <Error>
 ```
 
+In order to broadcast a nested array element as one would a scalar, one must wrap the element in a single-element array.
+
+```javascript
+var y = array2fancy( [ [ 1, 2 ], [ 3, 4 ] ] );
+
+// Assign individual array elements:
+y[ ':' ] = [ 5, 6 ];
+var v = y[ ':' ];
+// returns [ 5, 6 ]
+
+y = array2fancy( [ [ 1, 2 ], [ 3, 4 ] ] );
+
+// Broadcast a nested array:
+y[ ':' ] = [ [ 5, 6 ] ];
+v = y[ ':' ];
+// returns [ [ 5, 6 ], [ 5, 6 ] ]
+```
+
 ### Casting
 
 Fancy arrays support [(mostly) safe casts][@stdlib/array/mostly-safe-casts] (i.e., any cast which can be performed without overflow or loss of precision, with the exception of floating-point arrays which are also allowed to downcast from higher precision to lower precision).
