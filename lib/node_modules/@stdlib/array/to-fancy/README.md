@@ -456,6 +456,7 @@ im = imag( v );
 ```javascript
 var Uint8Array = require( '@stdlib/array/uint8' );
 var Int32Array = require( '@stdlib/array/int32' );
+var BooleanArray = require( '@stdlib/array/bool' );
 var array2fancy = require( '@stdlib/array/to-fancy' );
 
 var x = [ 1, 2, 3, 4, 5, 6 ];
@@ -489,6 +490,10 @@ z = y[ i ];
 // returns [ 2, -9, -8 ]
 
 i = idx( [ true, false, false, true, true, true ] ); // boolean array
+z = y[ i ];
+// returns [ 1, -9, -8, 6 ]
+
+i = idx( new BooleanArray( [ true, false, false, true, true, true ] ) ); // boolean array
 z = y[ i ];
 // returns [ 1, -9, -8, 6 ]
 

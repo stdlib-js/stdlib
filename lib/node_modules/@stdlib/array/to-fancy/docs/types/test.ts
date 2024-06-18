@@ -38,6 +38,7 @@ import array2fancy = require( './index' );
 	array2fancy( new Uint8ClampedArray( [ 1, 2, 3 ] ) ); // $ExpectType Uint8ClampedArray
 	array2fancy( new Complex128Array( [ 1, 2, 3, 4, 5, 6 ] ) ); // $ExpectType Complex128Array
 	array2fancy( new Complex64Array( [ 1, 2, 3, 4, 5, 6 ] ) ); // $ExpectType Complex64Array
+	array2fancy( new BooleanArray( [ true, false, true ] ) ); // $ExpectType BooleanArray
 
 	const opts = {
 		'strict': true
@@ -54,6 +55,7 @@ import array2fancy = require( './index' );
 	array2fancy( new Uint8ClampedArray( [ 1, 2, 3 ] ), opts ); // $ExpectType Uint8ClampedArray
 	array2fancy( new Complex128Array( [ 1, 2, 3, 4, 5, 6 ] ), opts ); // $ExpectType Complex128Array
 	array2fancy( new Complex64Array( [ 1, 2, 3, 4, 5, 6 ] ), opts ); // $ExpectType Complex64Array
+	array2fancy( new BooleanArray( [ true, false, true ] ), opts ); // $ExpectType BooleanArray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like value...
