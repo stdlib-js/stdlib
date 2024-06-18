@@ -33,6 +33,7 @@
 "@stdlib/array/one-to-like","@stdlib/array-one-to-like"
 "@stdlib/constants/float64/apery","@stdlib/constants-float64-apery"
 "@stdlib/utils/append","@stdlib/utils-append"
+"@stdlib/array/put","@stdlib/array-put"
 "@stdlib/os/arch","@stdlib/os-arch"
 "@stdlib/utils/argument-function","@stdlib/utils-argument-function"
 "@stdlib/process/argv","@stdlib/process-argv"

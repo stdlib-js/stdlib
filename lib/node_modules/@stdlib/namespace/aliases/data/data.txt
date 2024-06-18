@@ -33,6 +33,7 @@ aoneTo
 aoneToLike
 APERY
 append
+aput
 ARCH
 argumentFunction
 ARGV
