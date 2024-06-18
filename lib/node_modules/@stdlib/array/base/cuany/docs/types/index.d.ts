@@ -74,7 +74,7 @@ interface CuAny {
 * @example
 * var x = [ false, false, true, false, false ];
 * var y = [ false, null, false, null, false, null, false, null, false, null ];
-
+*
 * var arr = cuany.assign( x, y, 2, 0 );
 * // returns [ false, null, false, null, true, null, true, null, true, null ]
 */

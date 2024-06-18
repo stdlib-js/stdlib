@@ -7,6 +7,10 @@
 
     The function mutates the input array.
 
+    Because each index is only validated at the time of replacing a particular
+    element, mutation may occur even when one or more indices are out-of-bounds,
+    including when the index mode indicates to raise an exception.
+
     If `indices` is an empty array, the function returns the input array
     unchanged.
 
@@ -34,7 +38,7 @@
 
     Returns
     -------
-    out: Array
+    out: ArrayLikeObject
         Input array.
 
     Examples

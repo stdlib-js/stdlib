@@ -33,6 +33,7 @@
 "@stdlib/array/one-to-like",aoneToLike
 "@stdlib/constants/float64/apery",APERY
 "@stdlib/utils/append",append
+"@stdlib/array/put",aput
 "@stdlib/os/arch",ARCH
 "@stdlib/utils/argument-function",argumentFunction
 "@stdlib/process/argv",ARGV
