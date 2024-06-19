@@ -80,6 +80,94 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/cscd.h"
+```
+
+#### stdlib_base_cscd( x )
+
+Computes the [cosecant][cosecant] of `x` (in degrees).
+
+```c
+double out = stdlib_base_cscd( 30.0 );
+// returns ~2.0
+
+out = stdlib_base_cscd( 45.0 );
+// returns ~1.41
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_cscd( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/cscd.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 30.0, 45.0, 60.0, 90.0 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_cscd( x[ i ] );
+        printf( "cscd(%lf) = %lf\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

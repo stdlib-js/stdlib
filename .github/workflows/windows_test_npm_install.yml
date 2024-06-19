@@ -137,7 +137,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -152,7 +152,7 @@ jobs:
       # Install MSYS2:
       - name: 'Install MSYS2'
         # Pin action to full length commit SHA
-        uses: msys2/setup-msys2@cc11e9188b693c2b100158c3322424c4cc1dadea # v2.22.0
+        uses: msys2/setup-msys2@d0e80f58dffbc64f6a3a1f43527d469b4fc7b6c8 # v2.23.0
         with:
           # Set the MSYS system:
           msystem: MINGW64
