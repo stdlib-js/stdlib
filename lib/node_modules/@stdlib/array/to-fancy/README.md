@@ -522,6 +522,35 @@ z = y[ i ];
 i = idx( new Int32Array( [ 0, 0, 1, 1, 2, 2 ] ) ); // integer index array
 z = y[ i ];
 // returns [ 1, 1, 2, 2, -10, -10 ]
+
+// Array index assignment:
+x = [ 1, 2, 3, 4, 5, 6 ];
+y = array2fancy( x );
+
+i = idx( [ true, false, true, false, true, false ] ); // boolean array
+y[ i ] = 5;
+z = y[ ':' ];
+// returns [ 5, 2, 5, 4, 5, 6 ]
+
+i = idx( new BooleanArray( [ true, false, true, false, true, false ] ) ); // boolean array
+y[ i ] = 7;
+z = y[ ':' ];
+// returns [ 7, 2, 7, 4, 7, 6 ]
+
+i = idx( new Uint8Array( [ 1, 1, 1, 0, 0, 0 ] ) ); // mask array
+y[ i ] = 8;
+z = y[ ':' ];
+// returns [ 7, 2, 7, 8, 8, 8 ]
+
+i = idx( new Int32Array( [ 5, 3, 2 ] ) ); // integer index array
+y[ i ] = [ 9, 10, 11 ];
+z = y[ ':' ];
+// returns [ 7, 2, 11, 10, 8, 9 ]
+
+i = idx( [ 0, 1 ] ); // integer index array
+y[ i ] = -1;
+z = y[ ':' ];
+// returns [ -1, -1, 11, 10, 8, 9 ]
 ```
 
 </section>
