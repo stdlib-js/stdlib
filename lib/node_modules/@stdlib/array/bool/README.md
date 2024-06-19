@@ -629,6 +629,32 @@ var count = context.count;
 // returns 3;
 ```
 
+<a name="method-reverse"></a>
+
+#### BooleanArray.prototype.reverse()
+
+Reverses an array in-place.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( false, 2 );
+
+var out = arr.reverse();
+// returns <BooleanArray>
+
+var v = out.get( 0 );
+// returns false
+
+v = out.get( 1 );
+// returns false
+
+v = out.get( 2 );
+// returns true
+```
+
 <a name="method-set"></a>
 
 #### BooleanArray.prototype.set( v\[, i] )
@@ -737,6 +763,32 @@ The function should return a number where:
 -   a negative value indicates that `a` should come before `b`.
 -   a positive value indicates that `a` should come after `b`.
 -   zero or `NaN` indicates that `a` and `b` are considered equal.
+
+<a name="method-to-reversed"></a>
+
+#### BooleanArray.prototype.toReversed()
+
+Returns a new typed array containing the elements in reversed order.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( false, 2 );
+
+var out = arr.toReversed();
+// returns <BooleanArray>
+
+var v = out.get( 0 );
+// returns false
+
+v = out.get( 1 );
+// returns false
+
+v = out.get( 2 );
+// returns true
+```
 
 </section>
 
