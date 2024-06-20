@@ -2579,6 +2579,7 @@ BooleanArray.prototype.reverse,"\nBooleanArray.prototype.reverse()\n    Reverses
 BooleanArray.prototype.set,"\nBooleanArray.prototype.set( v:bool|BooleanArray|ArrayLikeObject[, i:integer] )\n    Sets one or more array elements.\n"
 BooleanArray.prototype.sort,"\nBooleanArray.prototype.sort( [compareFunction:Function] )\n    Sorts an array in-place.\n"
 BooleanArray.prototype.toReversed,"\nBooleanArray.prototype.toReversed()\n    Returns a new typed array containing the elements in reversed order.\n"
+BooleanArray.prototype.toSorted,"\nBooleanArray.prototype.toSorted( [compareFunction:Function] )\n    Returns a new typed array containing the elements in sorted order.\n"
 broadcastArray,"\nbroadcastArray( x:ndarray, shape:ArrayLikeObject )\n    Broadcasts an ndarray to a specified shape.\n"
 broadcastArrays,"\nbroadcastArrays( ...arrays:ndarray|ArrayLikeObject<ndarray> )\n    Broadcasts ndarrays to a common shape.\n"
 Buffer,"\nBuffer\n\nBuffer( size:integer )\n    Allocates a buffer having a specified number of bytes.\n\nBuffer( buffer:Buffer )\n    Copies buffer data to a new Buffer instance.\n\nBuffer( array:Array )\n    Allocates a buffer using an array of octets.\n\nBuffer( str:string[, encoding:string] )\n    Allocates a buffer containing a provided string.\n"
