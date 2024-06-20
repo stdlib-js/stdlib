@@ -440,7 +440,7 @@ var count = context.count;
 
 <a name="method-find-last"></a>
 
-#### Complex64Array.prototype.findLast( predicate\[, thisArg] )
+#### BooleanArray.prototype.findLast( predicate\[, thisArg] )
 
 Returns the last element in an array for which a predicate function returns a truthy value.
 
@@ -789,6 +789,56 @@ v = out.get( 1 );
 v = out.get( 2 );
 // returns true
 ```
+
+<a name="method-to-sorted"></a>
+
+#### BooleanArray.prototype.toSorted( \[compareFcn] )
+
+Returns a new typed array containing the elements in sorted order.
+
+```javascript
+function compare( a, b ) {
+    if ( a === false ) {
+        if ( b === false ) {
+            return 0;
+        }
+        return 1;
+    }
+    if ( b === true ) {
+        return 0;
+    }
+    return -1;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var out = arr.sort( compare );
+// returns <BooleanArray>
+
+var v = out.get( 0 );
+// returns true
+
+v = out.get( 1 );
+// returns true
+
+v = out.get( 2 );
+// returns false
+```
+
+The `compareFcn` determines the order of the elements. The function is called with the following arguments:
+
+-   **a**: the first boolean value for comparison.
+-   **b**: the second boolean value for comparison.
+
+The function should return a number where:
+
+-   a negative value indicates that `a` should come before `b`.
+-   a positive value indicates that `a` should come after `b`.
+-   zero or `NaN` indicates that `a` and `b` are considered equal.
 
 </section>
 
