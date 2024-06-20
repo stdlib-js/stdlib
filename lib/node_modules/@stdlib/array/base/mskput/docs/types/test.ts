@@ -27,44 +27,46 @@ import mskput = require( './index' );
 
 // The function returns an array...
 {
-	mskput( [ 1, 2, 3, 4 ], [ 1, 0, 0, 1 ], [ 20, 30 ], 'throw' ); // $ExpectType number[]
+	mskput( [ 1, 2, 3, 4 ], [ 1, 0, 0, 1 ], [ 20, 30 ], 'strict' ); // $ExpectType number[]
+	mskput( [ 1, 2, 3, 4 ], [ 1, 0, 0, 1 ], [ 20, 30 ], 'non_strict' ); // $ExpectType number[]
+	mskput( [ 1, 2, 3, 4 ], [ 1, 0, 0, 1 ], [ 20, 30 ], 'strict_broadcast' ); // $ExpectType number[]
 	mskput( [ 1, 2, 3, 4 ], [ 1, 0, 0, 1 ], [ 20, 30 ], 'broadcast' ); // $ExpectType number[]
 	mskput( [ 1, 2, 3, 4 ], [ 1, 0, 0, 1 ], [ 20, 30 ], 'repeat' ); // $ExpectType number[]
 
-	mskput( new Int32Array( [ 1, 2, 3, 4 ] ), [ 1, 0, 0, 1 ], [ 20, 30 ], 'throw' ); // $ExpectType Int32Array
-	mskput( new Complex128Array( [ 1, 2, 3, 4 ] ), [ 1, 0, 0, 1 ], [ new Complex128( 20, 30 ), [ 40, 50 ] ], 'throw' ); // $ExpectType Complex128Array
-	mskput( new Complex64Array( [ 1, 2, 3, 4 ] ), [ 1, 0, 0, 1 ], [ new Complex128( 20, 30 ), [ 40, 50 ] ], 'throw' ); // $ExpectType Complex64Array
-	mskput( new AccessorArray<number>( [ 1, 2, 3, 4 ] ), [ 1, 0, 0, 1 ], new AccessorArray<number>( [ 20, 30 ] ), 'throw' ); // $ExpectType AccessorArrayLike<number>
+	mskput( new Int32Array( [ 1, 2, 3, 4 ] ), [ 1, 0, 0, 1 ], [ 20, 30 ], 'strict' ); // $ExpectType Int32Array
+	mskput( new Complex128Array( [ 1, 2, 3, 4 ] ), [ 1, 0, 0, 1 ], [ new Complex128( 20, 30 ), [ 40, 50 ] ], 'strict' ); // $ExpectType Complex128Array
+	mskput( new Complex64Array( [ 1, 2, 3, 4 ] ), [ 1, 0, 0, 1 ], [ new Complex128( 20, 30 ), [ 40, 50 ] ], 'strict' ); // $ExpectType Complex64Array
+	mskput( new AccessorArray<number>( [ 1, 2, 3, 4 ] ), [ 1, 0, 0, 1 ], new AccessorArray<number>( [ 20, 30 ] ), 'strict' ); // $ExpectType AccessorArrayLike<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like object...
 {
-	mskput( 1, [ 1, 0, 0, 1 ], [ 20, 30 ], 'throw' ); // $ExpectError
-	mskput( true, [ 1, 0, 0, 1 ], [ 20, 30 ], 'throw' ); // $ExpectError
-	mskput( false, [ 1, 0, 0, 1 ], [ 20, 30 ], 'throw' ); // $ExpectError
-	mskput( null, [ 1, 0, 0, 1 ], [ 20, 30 ], 'throw' ); // $ExpectError
-	mskput( void 0, [ 1, 0, 0, 1 ], [ 20, 30 ], 'throw' ); // $ExpectError
-	mskput( {}, [ 1, 0, 0, 1 ], [ 20, 30 ], 'throw' ); // $ExpectError
+	mskput( 1, [ 1, 0, 0, 1 ], [ 20, 30 ], 'strict' ); // $ExpectError
+	mskput( true, [ 1, 0, 0, 1 ], [ 20, 30 ], 'strict' ); // $ExpectError
+	mskput( false, [ 1, 0, 0, 1 ], [ 20, 30 ], 'strict' ); // $ExpectError
+	mskput( null, [ 1, 0, 0, 1 ], [ 20, 30 ], 'strict' ); // $ExpectError
+	mskput( void 0, [ 1, 0, 0, 1 ], [ 20, 30 ], 'strict' ); // $ExpectError
+	mskput( {}, [ 1, 0, 0, 1 ], [ 20, 30 ], 'strict' ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an array-like object...
 {
-	mskput( [], 1, [ 20, 30 ], 'throw' ); // $ExpectError
-	mskput( [], true, [ 20, 30 ], 'throw' ); // $ExpectError
-	mskput( [], false, [ 20, 30 ], 'throw' ); // $ExpectError
-	mskput( [], null, [ 20, 30 ], 'throw' ); // $ExpectError
-	mskput( [], void 0, [ 20, 30 ], 'throw' ); // $ExpectError
-	mskput( [], {}, [ 20, 30 ], 'throw' ); // $ExpectError
+	mskput( [], 1, [ 20, 30 ], 'strict' ); // $ExpectError
+	mskput( [], true, [ 20, 30 ], 'strict' ); // $ExpectError
+	mskput( [], false, [ 20, 30 ], 'strict' ); // $ExpectError
+	mskput( [], null, [ 20, 30 ], 'strict' ); // $ExpectError
+	mskput( [], void 0, [ 20, 30 ], 'strict' ); // $ExpectError
+	mskput( [], {}, [ 20, 30 ], 'strict' ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not an array-like object...
 {
-	mskput( [], [ 1, 0, 0, 1 ], 1, 'throw' ); // $ExpectError
-	mskput( [], [ 1, 0, 0, 1 ], true, 'throw' ); // $ExpectError
-	mskput( [], [ 1, 0, 0, 1 ], false, 'throw' ); // $ExpectError
-	mskput( [], [ 1, 0, 0, 1 ], null, 'throw' ); // $ExpectError
-	mskput( [], [ 1, 0, 0, 1 ], void 0, 'throw' ); // $ExpectError
-	mskput( [], [ 1, 0, 0, 1 ], {}, 'throw' ); // $ExpectError
+	mskput( [], [ 1, 0, 0, 1 ], 1, 'strict' ); // $ExpectError
+	mskput( [], [ 1, 0, 0, 1 ], true, 'strict' ); // $ExpectError
+	mskput( [], [ 1, 0, 0, 1 ], false, 'strict' ); // $ExpectError
+	mskput( [], [ 1, 0, 0, 1 ], null, 'strict' ); // $ExpectError
+	mskput( [], [ 1, 0, 0, 1 ], void 0, 'strict' ); // $ExpectError
+	mskput( [], [ 1, 0, 0, 1 ], {}, 'strict' ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a valid mode...
@@ -86,5 +88,5 @@ import mskput = require( './index' );
 	mskput( [] ); // $ExpectError
 	mskput( [], [] ); // $ExpectError
 	mskput( [], [], [], ); // $ExpectError
-	mskput( [], [], [], 'throw', {} ); // $ExpectError
+	mskput( [], [], [], 'strict', {} ); // $ExpectError
 }
