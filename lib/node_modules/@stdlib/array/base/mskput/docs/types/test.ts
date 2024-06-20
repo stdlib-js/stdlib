@@ -28,6 +28,7 @@ import mskput = require( './index' );
 // The function returns an array...
 {
 	mskput( [ 1, 2, 3, 4 ], [ 1, 0, 0, 1 ], [ 20, 30 ], 'throw' ); // $ExpectType number[]
+	mskput( [ 1, 2, 3, 4 ], [ 1, 0, 0, 1 ], [ 20, 30 ], 'broadcast' ); // $ExpectType number[]
 	mskput( [ 1, 2, 3, 4 ], [ 1, 0, 0, 1 ], [ 20, 30 ], 'repeat' ); // $ExpectType number[]
 
 	mskput( new Int32Array( [ 1, 2, 3, 4 ] ), [ 1, 0, 0, 1 ], [ 20, 30 ], 'throw' ); // $ExpectType Int32Array

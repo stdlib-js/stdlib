@@ -54,15 +54,28 @@ The function supports the following parameters:
 The function supports the following modes:
 
 -   `'throw'`: specifies that the function must raise an exception when the function is provided insufficient `values` to satisfy the `mask` array.
+-   `'broadcast'`: specifies that the function must broadcast a single-element `values` array and otherwise raise an exception when the function is provided insufficient `values` to satisfy the `mask` array.
 -   `'repeat'`: specifies that the function must reuse provided `values` when replacing elements in `x` in order to satisfy the `mask` array.
 
-When `mode` is equal to `'repeat`', the function supports broadcasting a `values` array containing a single element against the number of falsy values in the `mask` array.
+When `mode` is equal to `'broadcast`', the function supports broadcasting a `values` array containing a single element against the number of falsy values in the `mask` array.
 
 ```javascript
 var x = [ 1, 2, 3, 4 ];
 
-var out = mskput( x, [ 1, 0, 1, 0 ], [ 20 ], 'repeat' );
+var out = mskput( x, [ 1, 0, 1, 0 ], [ 20 ], 'broadcast' );
 // returns [ 1, 20, 3, 20 ]
+
+var bool = ( out === x );
+// returns true
+```
+
+When `mode` is equal to `repeat`, the function supports recycling elements in a `values` array to satisfy the number of falsy values in the `mask` array.
+
+```javascript
+var x = [ 1, 2, 3, 4 ];
+
+var out = mskput( x, [ 0, 0, 1, 0 ], [ 20, 40 ], 'repeat' );
+// returns [ 20, 40, 3, 20 ]
 
 var bool = ( out === x );
 // returns true

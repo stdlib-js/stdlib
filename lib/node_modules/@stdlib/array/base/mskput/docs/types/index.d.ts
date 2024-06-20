@@ -34,16 +34,17 @@ type MaskArray = Collection | AccessorArrayLike<any>;
 type ValuesArray<T> = Collection<T> | AccessorArrayLike<T>;
 
 /**
-* Mode specifying whether to raise an exception when the number of values to set is less than the number of falsy values in the mask array.
+* Mode specifying behavior when the number of values to set is less than the number of falsy values in the mask array.
 *
 * ## Notes
 *
 * -   The function supports the following modes:
 *
 *     -   `'throw'`: specifies that the function must raise an exception when the function is provided insufficient `values` to satisfy the `mask` array.
+*     -   `'broadcast'`: specifies that the function must broadcast a single-element `values` array and otherwise raise an exception when the function is provided insufficient `values` to satisfy the `mask` array.
 *     -   `'repeat'`: specifies that the function must reuse provided `values` when replacing elements in `x` in order to satisfy the `mask` array.
 */
-type Mode = 'throw' | 'repeat';
+type Mode = 'throw' | 'broadcast' | 'repeat';
 
 /**
 * Replaces elements of an array with provided values according to a provided mask array.
@@ -51,7 +52,7 @@ type Mode = 'throw' | 'repeat';
 * @param x - input array
 * @param mask - mask array
 * @param values - values to set
-* @param mode - string specifying whether to raise an exception when the number of values is less than the number of falsy values in the mask array
+* @param mode - string specifying behavior when the number of values is less than the number of falsy values in the mask array
 * @returns input array
 *
 * @example
@@ -73,7 +74,7 @@ type Mode = 'throw' | 'repeat';
 *
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
-* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ], 'repeat' );
+* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ], 'broadcast' );
 * // returns <Int32Array>[ 1, 30, 30, 4 ]
 *
 * var bool = ( out === x );
@@ -87,7 +88,7 @@ declare function mskput<T extends TypedArray | BooleanTypedArray, U = unknown>( 
 * @param x - input array
 * @param mask - mask array
 * @param values - values to set
-* @param mode - string specifying whether to raise an exception when the number of values is less than the number of falsy values in the mask array
+* @param mode - string specifying behavior when the number of values is less than the number of falsy values in the mask array
 * @returns input array
 *
 * @example
@@ -112,7 +113,7 @@ declare function mskput<T extends TypedArray | BooleanTypedArray, U = unknown>( 
 * var mask = [ 1, 0, 0, 1 ];
 * var values = new Complex128Array( [ 20.0, 30.0 ] );
 *
-* var out = mskput( x, mask, values, 'repeat' );
+* var out = mskput( x, mask, values, 'broadcast' );
 * // returns <Complex128Array>
 *
 * var bool = ( out === x );
@@ -126,7 +127,7 @@ declare function mskput<T extends ComplexTypedArray>( x: T, mask: MaskArray, val
 * @param x - input array
 * @param mask - mask array
 * @param values - values to set
-* @param mode - string specifying whether to raise an exception when the number of values is less than the number of falsy values in the mask array
+* @param mode - string specifying behavior when the number of values is less than the number of falsy values in the mask array
 * @returns input array
 *
 * @example
@@ -144,7 +145,7 @@ declare function mskput<T extends ComplexTypedArray>( x: T, mask: MaskArray, val
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ], 'repeat' );
+* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ], 'broadcast' );
 * // returns [ 1, 30, 30, 4 ]
 *
 * var bool = ( out === x );
@@ -158,7 +159,7 @@ declare function mskput<T = unknown, U = unknown>( x: Array<T>, mask: MaskArray,
 * @param x - input array
 * @param mask - mask array
 * @param values - values to set
-* @param mode - string specifying whether to raise an exception when the number of values is less than the number of falsy values in the mask array
+* @param mode - string specifying behavior when the number of values is less than the number of falsy values in the mask array
 * @returns input array
 *
 * @example
@@ -179,7 +180,7 @@ declare function mskput<T = unknown, U = unknown>( x: Array<T>, mask: MaskArray,
 *
 * var x = toAccessorArray( [ 1, 2, 3, 4 ] );
 *
-* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ], 'repeat' );
+* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ], 'broadcast' );
 *
 * var bool = ( out === x );
 * // returns true
@@ -192,7 +193,7 @@ declare function mskput<T = unknown, U = unknown>( x: AccessorArrayLike<T>, mask
 * @param x - input array
 * @param mask - mask array
 * @param values - values to set
-* @param mode - string specifying whether to raise an exception when the number of values is less than the number of falsy values in the mask array
+* @param mode - string specifying behavior when the number of values is less than the number of falsy values in the mask array
 * @returns input array
 *
 * @example
