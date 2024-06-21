@@ -334,6 +334,58 @@ var len = arr.length;
 // returns 4
 ```
 
+<a name="method-every"></a>
+
+#### BooleanArray.prototype.every( predicate\[, thisArg] )
+
+Returns a boolean indicating whether all elements pass a test.
+
+```javascript
+function predicate( v ) {
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( true, 1 );
+arr.set( true, 2 );
+
+var bool = arr.every( predicate );
+// returns true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v ) {
+    this.count += 1;
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( true, 0 );
+arr.set( true, 1 );
+arr.set( true, 2 );
+
+var bool = arr.every( predicate, context );
+// returns true
+
+var count = context.count;
+// returns 3
+```
+
 <a name="method-find"></a>
 
 #### BooleanArray.prototype.find( predicate\[, thisArg] )
@@ -714,6 +766,58 @@ A few notes:
 -   If `i` is out-of-bounds, the method throws an error.
 -   If a target array cannot accommodate all values (i.e., the length of source array plus `i` exceeds the target array length), the method throws an error.
 -   If provided a [typed array][@stdlib/array/typed] which shares an [`ArrayBuffer`][@stdlib/array/buffer] with the target array, the method will intelligently copy the source range to the destination range.
+
+<a name="method-some"></a>
+
+#### BooleanArray.prototype.some( predicate\[, thisArg] )
+
+Returns a boolean indicating whether at least one element passes a test.
+
+```javascript
+function predicate( v ) {
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( false, 0 );
+arr.set( true, 1 );
+arr.set( false, 2 );
+
+var bool = arr.some( predicate );
+// returns true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v ) {
+    this.count += 1;
+    return v === true;
+}
+
+var arr = new BooleanArray( 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( false, 0 );
+arr.set( true, 1 );
+arr.set( false, 2 );
+
+var bool = arr.some( predicate, context );
+// returns true
+
+var count = context.count;
+// returns 2
+```
 
 <a name="method-sort"></a>
 

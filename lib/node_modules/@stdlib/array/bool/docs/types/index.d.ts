@@ -272,6 +272,29 @@ declare class BooleanArray implements BooleanArrayInterface {
 	readonly length: number;
 
 	/**
+	* Tests whether all elements in an array pass a test implemented by a predicate function.
+	*
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns boolean indicating whether all elements pass a test
+	*
+	* @example
+	* function predicate( v ) {
+	*     return v === true;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( true, 1 );
+	* arr.set( true, 2 );
+	*
+	* var bool = arr.every( predicate );
+	* // returns true
+	*/
+	every<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
+
+	/**
 	* Returns the first element in an array for which a predicate function returns a truthy value.
 	*
 	* @param predicate - predicate function
@@ -483,6 +506,29 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns true
 	*/
 	set( value: ArrayLike<any> | any, i?: number ): void;
+
+	/**
+	* Tests whether at least one element in an array passes a test implemented by a predicate function.
+	*
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns boolean indicating whether at least one element passes a test
+	*
+	* @example
+	* function predicate( v ) {
+	*     return v === true;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( false, 0 );
+	* arr.set( true, 1 );
+	* arr.set( false, 2 );
+	*
+	* var bool = arr.some( predicate );
+	* // returns true
+	*/
+	some<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
 
 	/**
 	* Sorts an array in-place.
