@@ -286,6 +286,39 @@
     10
 
 
+{{alias}}.prototype.every( predicate[, thisArg] )
+    Returns a boolean indicating whether all elements in the array pass a test.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements. If a predicate function
+        returns a truthy value, an array element passes; otherwise, an array
+        element fails.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether all elements pass the test.
+
+    Examples
+    --------
+    > function predicate( v ) { return v === true; };
+    > var arr = new {{alias}}( [ true, true, true ] )
+    <BooleanArray>
+    > var bool = arr.every( predicate )
+    true
+
+
 {{alias}}.prototype.find( predicate[, thisArg] )
     Returns the first element in an array for which a predicate function returns
     a truthy value.
@@ -527,7 +560,7 @@
     Parameters
     ----------
     v: bool|BooleanArray|ArrayLikeObject
-        Complex number or complex number array.
+        Boolean value or Boolean value array.
 
     i: integer (optional)
         Array index at which to start setting elements. Default: 0.
@@ -541,6 +574,39 @@
     false
     > arr.set( true, 1 );
     > v = arr.get( 1 )
+    true
+
+
+{{alias}}.prototype.some( predicate[, thisArg] )
+    Returns a boolean indicating whether at least one element passes a test.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements. If a predicate function
+        returns a truthy value, an array element passes; otherwise, an array
+        element fails.
+    
+    thisArg: Any (optional)
+        Execution context.
+    
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether at least one element passes the test.
+    
+    Examples
+    --------
+    > function predicate( v ) { return v === true; };
+    > var arr = new {{alias}}( [ false, true, false ] )
+    <BooleanArray>
+    > var bool = arr.some( predicate )
     true
 
 
