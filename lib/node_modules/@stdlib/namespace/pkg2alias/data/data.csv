@@ -32,6 +32,7 @@
 "@stdlib/array/one-to",aoneTo
 "@stdlib/array/one-to-like",aoneToLike
 "@stdlib/constants/float64/apery",APERY
+"@stdlib/array/place",aplace
 "@stdlib/utils/append",append
 "@stdlib/array/put",aput
 "@stdlib/os/arch",ARCH

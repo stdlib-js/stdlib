@@ -32,6 +32,7 @@
 "@stdlib/array/one-to","@stdlib/array-one-to"
 "@stdlib/array/one-to-like","@stdlib/array-one-to-like"
 "@stdlib/constants/float64/apery","@stdlib/constants-float64-apery"
+"@stdlib/array/place","@stdlib/array-place"
 "@stdlib/utils/append","@stdlib/utils-append"
 "@stdlib/array/put","@stdlib/array-put"
 "@stdlib/os/arch","@stdlib/os-arch"

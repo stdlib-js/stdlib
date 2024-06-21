@@ -32,6 +32,7 @@ aonesLike
 aoneTo
 aoneToLike
 APERY
+aplace
 append
 aput
 ARCH
