@@ -35,6 +35,7 @@ aonesLike,"var x = new Float64Array( 2 );\nvar y = aonesLike( x )\ny = aonesLike
 aoneTo,"var arr = aoneTo( 2 )\narr = aoneTo( 2, 'float32' )\n"
 aoneToLike,"var arr = aoneToLike( [ 0, 0 ] )\narr = aoneToLike( [ 0, 0 ], 'float32' )\n"
 APERY,"APERY\n"
+aplace,"var x = [ 1, 2, 3, 4 ];\nvar out = aplace( x, [ 0, 1, 0, 1 ], [ 20, 40 ] )\nvar bool = ( out === x )\n"
 append,"var arr = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];\narr = append( arr, [ 6.0, 7.0 ] )\narr = new Float64Array( [ 1.0, 2.0 ] );\narr = append( arr, [ 3.0, 4.0 ] )\narr = { 'length': 0 };\narr = append( arr, [ 1.0, 2.0 ] )\n"
 aput,"var x = [ 1, 2, 3, 4 ];\nvar out = aput( x, [ 1, 3 ], [ 20, 40 ] )\nvar bool = ( out === x )\n"
 ARCH,"ARCH\n"

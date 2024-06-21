@@ -15,6 +15,7 @@
 "@stdlib/namespace/aliases",aliases
 "@stdlib/buffer/alloc-unsafe",allocUnsafe
 "@stdlib/array/mskfilter",amskfilter
+"@stdlib/array/mskput",amskput
 "@stdlib/array/mskreject",amskreject
 "@stdlib/array/nans",anans
 "@stdlib/array/nans-like",anansLike

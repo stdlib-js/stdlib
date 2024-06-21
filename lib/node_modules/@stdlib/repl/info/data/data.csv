@@ -35,6 +35,7 @@ aonesLike,"\naonesLike( x:TypedArray|Array[, dtype:string] )\n    Returns an arr
 aoneTo,"\naoneTo( n:integer[, dtype:string] )\n    Generates a linearly spaced numeric array whose elements increment by 1\n    starting from one.\n"
 aoneToLike,"\naoneToLike( x:TypedArray|Array[, dtype:string] )\n    Generates a linearly spaced numeric array whose elements increment by 1\n    starting from one and having the same length and data type as a provided\n    input array.\n"
 APERY,"\nAPERY\n    Apéry's constant.\n"
+aplace,"\naplace( x:ArrayLikeObject, mask:ArrayLikeObject, values:ArrayLikeObject[, \n  options:Object] )\n    Replaces elements of an array with provided values according to a provided\n    mask array.\n"
 append,"\nappend( collection1:Array|TypedArray|Object, \n  collection2:Array|TypedArray|Object )\n    Adds the elements of one collection to the end of another collection.\n"
 aput,"\naput( x:ArrayLikeObject, indices:ArrayLikeObject<integer>, \n  values:ArrayLikeObject[, options:Object] )\n    Replaces specified elements of an array with provided values.\n"
 ARCH,"\nARCH\n    Operating system CPU architecture for which the JavaScript runtime binary\n    was compiled.\n"

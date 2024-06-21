@@ -15,6 +15,7 @@ alias2standalone
 aliases
 allocUnsafe
 amskfilter
+amskput
 amskreject
 anans
 anansLike
