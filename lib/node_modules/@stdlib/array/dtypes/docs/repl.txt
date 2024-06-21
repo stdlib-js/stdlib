@@ -9,6 +9,7 @@
     - float64: double-precision floating-point numbers.
     - complex64: single-precision complex floating-point numbers.
     - complex128: double-precision complex floating-point numbers.
+    - bool: boolean values.
     - generic: values of any type.
     - int16: signed 16-bit integers.
     - int32: signed 32-bit integers.
@@ -23,6 +24,7 @@
     - floating_point: floating-point data types.
     - real_floating_point: real-valued floating-point data types.
     - complex_floating_point: complex-valued floating-point data types.
+    - boolean: boolean data types.
     - integer: integer data types.
     - signed_integer: signed integer data types.
     - unsigned_integer: unsigned integer data types.

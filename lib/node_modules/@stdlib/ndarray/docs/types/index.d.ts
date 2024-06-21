@@ -950,7 +950,7 @@ interface Namespace {
 	*
 	* @example
 	* var list = ns.orders();
-	* // returns [ 'row-major', 'column-major' ]
+	* // e.g., returns [ 'row-major', 'column-major' ]
 	*/
 	orders: typeof orders;
 

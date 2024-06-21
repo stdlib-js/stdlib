@@ -37,4 +37,5 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/tools.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/toposort.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/tree.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/types.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/unpublished.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/wasm.mk
