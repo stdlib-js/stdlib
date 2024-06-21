@@ -16,10 +16,10 @@
   "main": "./lib",
   "directories": {
     "benchmark": "./benchmark",
-      "doc": "./docs",
-      "example": "./examples",
-      "lib": "./lib",
-      "test": "./test"
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
   },
   "types": "./docs/types",
   "scripts": {},

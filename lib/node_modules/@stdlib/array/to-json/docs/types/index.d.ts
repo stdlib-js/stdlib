@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import { RealOrComplexTypedArray } from '@stdlib/types/array';
 /**
 * Typed array data type.
 */
-type dtype = 'Float64Array' | 'Float32Array' | 'Int32Array' | 'Uint32Array' | 'Int16Array' | 'Uint16Array' | 'Int8Array' | 'Uint8Array' | 'Uint8ClampedArray' | 'Complex64Array' | 'Complex128Array';
+type dtype = 'Float64Array' | 'Float32Array' | 'Int32Array' | 'Uint32Array' | 'Int16Array' | 'Uint16Array' | 'Int8Array' | 'Uint8Array' | 'Uint8ClampedArray' | 'Complex64Array' | 'Complex128Array' | 'BooleanArray';
 
 /**
 * JSON representation of typed array.

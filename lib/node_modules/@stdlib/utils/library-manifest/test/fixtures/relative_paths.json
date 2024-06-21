@@ -1,73 +1,73 @@
 {
-	"options": {
-		"os": "linux"
-	},
-	"fields": [
-		{
-			"field": "src",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "include",
-			"resolve": true,
-			"relative": false
-		},
-		{
-			"field": "libraries",
-			"resolve": false,
-			"relative": false
-		},
-		{
-			"field": "libpath",
-			"resolve": true,
-			"relative": false
-		}
-	],
-	"confs": [
-		{
-			"os": "linux",
-			"src": [
-				"./src/foo_linux.f",
-				"./src/foo_linux.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [],
-			"libpath": [],
-			"dependencies": [
-				"./beep"
-			]
-		},
-		{
-			"os": "mac",
-			"src": [
-				"./src/foo_mac.f",
-				"./src/foo_mac_f.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [],
-			"libpath": [],
-			"dependencies": [
-				"./beep"
-			]
-		},
-		{
-			"os": "win",
-			"src": [
-				"./src/foo_win.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [],
-			"libpath": [],
-			"dependencies": [
-				"./beep"
-			]
-		}
-	]
+  "options": {
+    "os": "linux"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": false
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "os": "linux",
+      "src": [
+        "./src/foo_linux.f",
+        "./src/foo_linux.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "./beep"
+      ]
+    },
+    {
+      "os": "mac",
+      "src": [
+        "./src/foo_mac.f",
+        "./src/foo_mac_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "./beep"
+      ]
+    },
+    {
+      "os": "win",
+      "src": [
+        "./src/foo_win.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "./beep"
+      ]
+    }
+  ]
 }
