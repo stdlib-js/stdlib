@@ -548,6 +548,46 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns true
 	*/
 	toReversed(): BooleanArray;
+
+	/**
+	* Returns a new typed array containing the elements in sorted order.
+	*
+	* @param compareFcn - comparison function
+	* @returns sorted array
+	*
+	* @example
+	* function compare( a, b ) {
+	*    if ( a === false ) {
+	*        if ( b === false ) {
+	*            return 0;
+	*        }
+	*        return 1;
+	*    }
+	*    if ( b === true ) {
+	*        return 0;
+	*    }
+	*    return -1;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var out = arr.sort( compare );
+	* // returns <BooleanArray>
+	*
+	* var v = out.get( 0 );
+	* // returns true
+	*
+	* v = out.get( 1 );
+	* // returns true
+	*
+	* v = out.get( 2 );
+	* // returns false
+	*/
+	toSorted( compareFcn: CompareFcn ): BooleanArray;
 }
 
 /**

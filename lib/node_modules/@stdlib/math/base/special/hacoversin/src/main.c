@@ -26,7 +26,7 @@
 * @return     half-value coversed sine
 *
 * @example
-* double y = stdlib_base_coversin( 0.0 );
+* double y = stdlib_base_hacoversin( 0.0 );
 * // returns 0.5
 */
 double stdlib_base_hacoversin( const double x ) {
