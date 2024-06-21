@@ -603,5 +603,42 @@
     true
 
 
+{{alias}}.prototype.toSorted( [compareFunction] )
+    Returns a new typed array containing the elements in sorted order.
+
+    A comparison function determines the order of the array elements. The
+    function is provided two arguments:
+
+    - a: first boolean value for comparison.
+    - b: second boolean value for comparison.
+
+    The function should return a value less than zero if `a` comes before `b`,
+    a value greater than zero if `a` comes after `b`, and zero if `a` and `b`
+    are equivalent.
+
+    Parameters
+    ----------
+    compareFunction: Function (optional)
+        Comparison function.
+
+    Returns
+    -------
+    out: BooleanArray
+        New typed array.
+
+    Examples
+    --------
+    > function compare( a, b ) { return a === true ? -1 : 1; }
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var out = arr.toSorted( compare );
+    > var v = out.get( 0 )
+    true
+    > v = out.get( 1 )
+    true
+    > v = out.get( 2 )
+    false
+
+
     See Also
     --------
