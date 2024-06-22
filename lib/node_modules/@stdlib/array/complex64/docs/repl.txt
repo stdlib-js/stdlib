@@ -100,7 +100,7 @@
     <Complex64Array>
     > var len = arr1.length
     2
-    > var buf = [ new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 ), new {{alias:@stdlib/complex/float32/ctor}}( 2.0, -2.0 )]
+    > var buf = [ new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 ), new {{alias:@stdlib/complex/float32/ctor}}( 2.0, -2.0 )];
     > var arr2 = new {{alias}}( buf )
     <Complex64Array>
     > len = arr2.length
@@ -211,8 +211,8 @@
     <Complex64Array>
     > var len = arr.length
     2
-    > var z1 = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 )
-    > var z2 = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, -2.0 )
+    > var z1 = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 );
+    > var z2 = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, -2.0 );
     > arr = {{alias}}.of( z1, z2 )
     <Complex64Array>
     > len = arr.length
@@ -275,7 +275,7 @@
     <Complex64Array>
     > var offset = arr.byteOffset
     0
-    > var buf = new {{alias:@stdlib/array/buffer}}( 240 )
+    > var buf = new {{alias:@stdlib/array/buffer}}( 240 );
     > arr = new {{alias}}( buf, 64 )
     <Complex64Array>
     > offset = arr.byteOffset
@@ -428,7 +428,7 @@
 
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) > 0.0 ); }
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) > 0.0 ); };
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
     <Complex64Array>
     > var bool = arr.every( predicate )
@@ -510,7 +510,7 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); }
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var out = arr.filter( predicate )
@@ -553,7 +553,7 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); }
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var z = arr.find( predicate )
@@ -592,7 +592,7 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); }
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var idx = arr.findIndex( predicate )
@@ -627,7 +627,7 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); }
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var z = arr.findLast( predicate )
@@ -666,7 +666,7 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); }
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var idx = arr.findLastIndex( predicate )
@@ -693,7 +693,7 @@
     Examples
     --------
     > var str = '%';
-    > function clbk( v ) { str += v.toString() + '%'; }
+    > function clbk( v ) { str += v.toString() + '%'; };
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
     <Complex64Array>
     > arr.forEach( clbk );
@@ -889,7 +889,7 @@
     
     Examples
     --------
-    > function clbk( v ) { return v; }
+    > function clbk( v ) { return v; };
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
     <Complex64Array>
     > var out = arr.map( clbk )
@@ -1137,7 +1137,7 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); }
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var bool = arr.some( predicate )
@@ -1169,7 +1169,7 @@
     
     Examples
     --------
-    > function compare( a, b ) { return ( {{alias:@stdlib/complex/realf}}( a ) - {{alias:@stdlib/complex/realf}}( b ) ); }
+    > function compare( a, b ) { return ( {{alias:@stdlib/complex/realf}}( a ) - {{alias:@stdlib/complex/realf}}( b ) ); };
     > var arr = new {{alias}}( [ 2.0, -2.0, 3.0, -3.0, 1.0, -1.0 ] )
     <Complex64Array>
     > arr.sort( compare );
@@ -1317,7 +1317,7 @@
     
     Examples
     --------
-    > function compare( a, b ) { return ( {{alias:@stdlib/complex/realf}}( a ) - {{alias:@stdlib/complex/realf}}( b ) ); }
+    > function compare( a, b ) { return ( {{alias:@stdlib/complex/realf}}( a ) - {{alias:@stdlib/complex/realf}}( b ) ); };
     > var arr = new {{alias}}( [ 2.0, -2.0, 3.0, -3.0, 1.0, -1.0 ] )
     <Complex64Array>
     > var out = arr.toSorted( compare );
