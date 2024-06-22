@@ -347,7 +347,7 @@
 
     Examples
     --------
-    > function predicate( v ) { return v === true; }
+    > function predicate( v ) { return v === true; };
     > var arr = new {{alias}}( [ true, false, true ] )
     <BooleanArray>
     > var v = arr.find( predicate )
@@ -382,7 +382,7 @@
 
     Examples
     --------
-    > function predicate( v ) { return v === true; }
+    > function predicate( v ) { return v === true; };
     > var arr = new {{alias}}( [ true, false, true ] )
     <BooleanArray>
     > var idx = arr.findIndex( predicate )
@@ -417,7 +417,7 @@
 
     Examples
     --------
-    > function predicate( v ) { return v === true; }
+    > function predicate( v ) { return v === true; };
     > var arr = new {{alias}}( [ true, false, true ] )
     <BooleanArray>
     > var v = arr.findLast( predicate )
@@ -452,7 +452,7 @@
 
     Examples
     --------
-    > function predicate( v ) { return v === true; }
+    > function predicate( v ) { return v === true; };
     > var arr = new {{alias}}( [ true, false, true ] )
     <BooleanArray>
     > var idx = arr.findLastIndex( predicate )
@@ -484,6 +484,66 @@
     true
 
 
+{{alias}}.prototype.indexOf( searchElement[, fromIndex] )
+    Returns the first index at which a given element can be found.
+
+    If method does not find a search element, the method returns `-1`.
+
+    Parameters
+    ----------
+    searchElement: boolean
+        Search element.
+
+    fromIndex: integer (optional)
+        Array index at which to start the search. If provided a negative value,
+        the method resolves the start index relative to the last array element.
+        Default: 0.
+
+    Returns
+    -------
+    out: integer
+        Array index or `-1`.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, true, true, true ] )
+    <BooleanArray>
+    > var idx = arr.indexOf( true )
+    0
+    > idx = arr.indexOf( false, 3 )
+    -1
+
+
+{{alias}}.prototype.lastIndexOf( searchElement[, fromIndex] )
+    Returns the last index at which a given element can be found.
+
+    If method does not find a search element, the method returns `-1`.
+
+    Parameters
+    ----------
+    searchElement: boolean
+        Search element.
+
+    fromIndex: integer (optional)
+        Array index at which to start the search. If provided a negative value,
+        the method resolves the start index relative to the last array element.
+        Default: out.length-1.
+
+    Returns
+    -------
+    out: integer
+        Array index or `-1`.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, true, true, false, true ] )
+    <BooleanArray>
+    > var idx = arr.lastIndexOf( false )
+    3
+    > idx = arr.lastIndexOf( false, 2 )
+    -1
+
+
 {{alias}}.prototype.map( clbk[, thisArg] )
     Returns a new array with each element being the result of a provided
     callback function.
@@ -511,7 +571,7 @@
 
     Examples
     --------
-    > function invert( v ) { return !v; }
+    > function invert( v ) { return !v; };
     > var arr = new {{alias}}( [ true, false, true ] )
     <BooleanArray>
     > var out = arr.map( invert )
@@ -592,15 +652,15 @@
         Predicate function which tests array elements. If a predicate function
         returns a truthy value, an array element passes; otherwise, an array
         element fails.
-    
+
     thisArg: Any (optional)
         Execution context.
-    
+
     Returns
     -------
     bool: boolean
         Boolean indicating whether at least one element passes the test.
-    
+
     Examples
     --------
     > function predicate( v ) { return v === true; };
@@ -635,7 +695,7 @@
 
     Examples
     --------
-    > function compare( a, b ) { return a === true ? -1 : 1; }
+    > function compare( a, b ) { return a === true ? -1 : 1; };
     > var arr = new {{alias}}( [ true, false, true ] )
     <BooleanArray>
     > arr.sort( compare );
@@ -694,7 +754,7 @@
 
     Examples
     --------
-    > function compare( a, b ) { return a === true ? -1 : 1; }
+    > function compare( a, b ) { return a === true ? -1 : 1; };
     > var arr = new {{alias}}( [ true, false, true ] )
     <BooleanArray>
     > var out = arr.toSorted( compare );

@@ -620,6 +620,82 @@ var v = arr.get( 100 );
 // returns undefined
 ```
 
+<a name="method-index-of"></a>
+
+#### BooleanArray.prototype.indexOf( searchElement\[, fromIndex] )
+
+Returns the first index at which a given element can be found.
+
+```javascript
+var arr = new BooleanArray( 5 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+arr.set( true, 3 );
+arr.set( true, 4 );
+
+var idx = arr.indexOf( true );
+// returns 0
+
+idx = arr.indexOf( false, 1 );
+// returns 1
+
+idx = arr.indexOf( true, -3 );
+// returns 2
+```
+
+If `searchElement` is not present in the array, the method returns `-1`.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( true, 1 );
+arr.set( true, 2 );
+
+var idx = arr.indexOf( false );
+// returns -1
+```
+
+<a name="method-last-index-of"></a>
+
+#### BooleanArray.prototype.lastIndexOf( searchElement\[, fromIndex] )
+
+Returns the last index at which a given element can be found.
+
+```javascript
+var arr = new BooleanArray( 5 );
+
+arr.set( true, 0 );
+arr.set( true, 1 );
+arr.set( true, 2 );
+arr.set( false, 3 );
+arr.set( true, 4 );
+
+var idx = arr.lastIndexOf( true );
+// returns 4
+
+idx = arr.lastIndexOf( false, 3 );
+// returns 3
+
+idx = arr.lastIndexOf( true, -3 );
+// returns 2
+```
+
+If `searchElement` is not present in the array, the method returns `-1`.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( true, 1 );
+arr.set( true, 2 );
+
+var idx = arr.lastIndexOf( false );
+// returns -1
+```
+
 <a name="method-map"></a>
 
 #### BooleanArray.prototype.map( callbackFn\[, thisArg] )

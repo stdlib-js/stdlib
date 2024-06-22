@@ -407,6 +407,60 @@ declare class BooleanArray implements BooleanArrayInterface {
 	get( i: number ): boolean | void;
 
 	/**
+	* Returns the first index at which a given element can be found.
+	*
+	* @param searchElement - element to find
+	* @param fromIndex - starting index (inclusive)
+	* @returns index or -1
+	*
+	* @example
+	* var arr = new BooleanArray( 5 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	* arr.set( true, 3 );
+	* arr.set( true, 4 );
+	*
+	* var idx = arr.indexOf( true );
+	* // returns 0
+	*
+	* idx = arr.indexOf( false, 2 );
+	* // returns -1
+	*
+	* idx = arr.indexOf( false, -3 );
+	* // returns -1
+	*/
+	indexOf( searchElement: boolean, fromIndex?: number ): number;
+
+	/**
+	* Returns the last index at which a given element can be found.
+	*
+	* @param searchElement - element to find
+	* @param fromIndex - index at which to start searching backward (inclusive)
+	* @returns index or -1
+	*
+	* @example
+	* var arr = new BooleanArray( 5 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( true, 1 );
+	* arr.set( true, 2 );
+	* arr.set( false, 3 );
+	* arr.set( true, 4 );
+	*
+	* var idx = arr.lastIndexOf( true );
+	* // returns 4
+	*
+	* idx = arr.lastIndexOf( false, 2 );
+	* // returns -1
+	*
+	* idx = arr.lastIndexOf( false, -3 );
+	* // returns -1
+	*/
+	lastIndexOf( searchElement: boolean, fromIndex?: number ): number;
+
+	/**
 	* Returns a new array with each element being the result of a provided callback function.
 	*
 	* @param fcn - callback function
