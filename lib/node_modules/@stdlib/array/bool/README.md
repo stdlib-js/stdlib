@@ -620,6 +620,28 @@ var v = arr.get( 100 );
 // returns undefined
 ```
 
+<a name="includes"></a>
+
+#### BooleanArray.prototype.includes( searchElement\[, fromIndex] )
+
+Returns a boolean indicating whether an array includes a provided value.
+
+```javascript
+var arr = new BooleanArray( 5 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+arr.set( true, 3 );
+arr.set( true, 4 );
+
+var bool = arr.includes( true );
+// returns true
+
+bool = arr.includes( false, 2 );
+// returns false
+```
+
 <a name="method-index-of"></a>
 
 #### BooleanArray.prototype.indexOf( searchElement\[, fromIndex] )

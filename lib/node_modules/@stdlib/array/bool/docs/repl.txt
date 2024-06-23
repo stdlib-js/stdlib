@@ -257,7 +257,7 @@
     <BooleanArray>
     > var offset = arr.byteOffset
     0
-    > var buf = new {{alias:@stdlib/array/buffer}}( 240 )
+    > var buf = new {{alias:@stdlib/array/buffer}}( 240 );
     > arr = new {{alias}}( buf, 64 )
     <BooleanArray>
     > offset = arr.byteOffset
@@ -482,6 +482,34 @@
     > arr.set( true, 0 );
     > var v = arr.get( 0 )
     true
+
+
+{{alias}}.prototype.includes( searchElement[, fromIndex] )
+    Returns a boolean indicating whether an array includes a provided value.
+
+    Parameters
+    ----------
+    searchElement: boolean
+        Search element.
+
+    fromIndex: integer (optional)
+        Array index at which to start the search. If provided a negative value,
+        the method resolves the start index relative to the last array element.
+        Default: 0.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether an array includes a search element.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, true, true, true ] )
+    <BooleanArray>
+    > var bool = arr.includes( true )
+    true
+    > bool = arr.includes( false, 3 )
+    false
 
 
 {{alias}}.prototype.indexOf( searchElement[, fromIndex] )

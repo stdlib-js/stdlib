@@ -407,6 +407,30 @@ declare class BooleanArray implements BooleanArrayInterface {
 	get( i: number ): boolean | void;
 
 	/**
+	* Returns a boolean indicating whether an array includes a provided value.
+	*
+	* @param searchElement - element to search for
+	* @param fromIndex - starting index (inclusive)
+	* @returns boolean indicating whether an array includes a value
+	*
+	* @example
+	* var arr = new BooleanArray( 5 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	* arr.set( true, 3 );
+	* arr.set( true, 4 );
+	*
+	* var bool = arr.includes( true );
+	* // returns true
+	*
+	* bool = arr.includes( false, 2 );
+	* // returns false
+	*/
+	includes( searchElement: boolean, fromIndex?: number ): boolean;
+
+	/**
 	* Returns the first index at which a given element can be found.
 	*
 	* @param searchElement - element to find
