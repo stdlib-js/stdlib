@@ -22,7 +22,7 @@
 
 #include "stdlib/strided/base/binary/ff_c.h"
 #include "stdlib/strided/base/binary/macros.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 /**

@@ -33,9 +33,7 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
@@ -54,11 +52,11 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/ext/base/dcusumkbn"
+      ]
     },
     {
       "task": "examples",
@@ -68,11 +66,11 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/ext/base/dcusumkbn"
+      ]
     }
   ]
 }

@@ -1,0 +1,93 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to add trailing newlines to files if they don't already have one.
+#
+# Usage: add_trailing_newlines file1 [file2 file3 ...]
+#
+# Arguments:
+#
+#   file1       File path.
+#   file2       File path.
+#   file3       File path.
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+# VARIABLES #
+
+# List of file extensions to process:
+extensions=("js" "mjs" "cjs" "json" "ts" "py" "jl" "R" "c" "h" "cpp" "hpp" "f" "sh" "awk" "html" "xml" "css" "md" "yml" "gypi" "bib" "tex")
+
+# FUNCTIONS #
+
+# Convert Windows CRLF to Unix LF line endings.
+convert_line_endings() {
+	if [[ "$OSTYPE" == "darwin"* ]]; then
+		# macOS requires an empty string argument with -i to edit in-place without backup...
+		sed -i '' 's/\r$//' "$1"
+	else
+		# Linux and other Unix-like systems...
+		sed -i 's/\r$//' "$1"
+	fi
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Main execution sequence.
+main() {
+	# Assuming all arguments are passed as one string and split by spaces:
+	IFS=' ' read -r -a files <<< "$*"
+
+	for file in "${files[@]}"; do
+		echo "Processing file: $file"
+		if [[ ! -f "$file" ]]; then
+			echo "File not found: $file"
+			continue
+		fi
+
+		# Convert line endings from CRLF to LF:
+		convert_line_endings "$file"
+
+		extension="${file##*.}"
+		local match_found=false
+		for ext in "${extensions[@]}"; do
+			if [[ "$ext" == "$extension" ]]; then
+				match_found=true
+				break
+			fi
+		done
+		if [[ "$match_found" == true ]]; then
+			if [[ "$(tail -c1 "$file"; echo x)" != $'\nx' ]]; then
+				echo "Adding newline to: $file"
+				echo >> "$file"
+			fi
+		else
+			echo "Skipping file (unsupported extension): $file"
+		fi
+	done
+
+	print_success
+	exit 0
+}
+
+# Call main with all command-line arguments:
+main "$@"

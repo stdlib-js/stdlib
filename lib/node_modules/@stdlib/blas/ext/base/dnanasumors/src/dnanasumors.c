@@ -18,8 +18,8 @@
 
 #include "stdlib/blas/ext/base/dnanasumors.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/special/abs.h"
 #include <stdint.h>
-#include <math.h>
 
 /**
 * Computes the sum of absolute values (L1 norm) of double-precision floating-point strided array elements, ignoring `NaN` values and using ordinary recursive summation.
@@ -42,7 +42,7 @@ double stdlib_strided_dnanasumors( const int64_t N, const double *X, const int64
 		if ( stdlib_base_is_nan( X[ 0 ] ) ) {
 			return 0.0;
 		}
-		return fabs( X[ 0 ] );
+		return stdlib_base_abs( X[ 0 ] );
 	}
 	if ( stride < 0 ) {
 		ix = (1-N) * stride;
@@ -53,7 +53,7 @@ double stdlib_strided_dnanasumors( const int64_t N, const double *X, const int64
 	for ( i = 0; i < N; i++ ) {
 		v = X[ ix ];
 		if ( !stdlib_base_is_nan( v ) ) {
-			sum += fabs( v );
+			sum += stdlib_base_abs( v );
 		}
 		ix += stride;
 	}

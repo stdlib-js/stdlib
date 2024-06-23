@@ -33,16 +33,15 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-float32array"
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/math/base/special/absf"
       ]
     },
     {
@@ -53,10 +52,11 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
-      "dependencies": []
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf"
+      ]
     },
     {
       "task": "examples",
@@ -66,11 +66,11 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/special/absf"
+      ]
     }
   ]
 }

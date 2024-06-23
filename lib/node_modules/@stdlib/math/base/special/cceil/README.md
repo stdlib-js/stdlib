@@ -35,7 +35,7 @@ var cceil = require( '@stdlib/math/base/special/cceil' );
 Rounds a double-precision complex floating-point number toward positive infinity.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
 
@@ -61,7 +61,7 @@ var im = imag( v );
 
 ```javascript
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var cceil = require( '@stdlib/math/base/special/cceil' );
 
 var rand = uniform( -50.0, 50.0 );
@@ -109,7 +109,7 @@ for ( i = 0; i < 100; i++ ) {
 Rounds a double-precision complex floating-point number toward positive infinity.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/real.h"
 #include "stdlib/complex/imag.h"
 
@@ -152,7 +152,7 @@ stdlib_complex128_t stdlib_base_cceil( const stdlib_complex128_t z );
 
 ```c
 #include "stdlib/math/base/special/cceil.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 

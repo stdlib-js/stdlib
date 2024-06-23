@@ -76,7 +76,7 @@ Evaluates a [rational function][rational-function] at a value `x` using double-p
 var P = [ -6.0, -5.0 ];
 var Q = [ 3.0, 0.5 ];
 
-var v = evalrational( P, Q, 6.0 ); //  => ( -6*6^0 - 5*6^1 ) / ( 3*6^0 + 0.5*6^1 ) = (-6-30)/(3+3)
+var v = evalrational( P, Q, 6.0 ); // => ( -6*6^0 - 5*6^1 ) / ( 3*6^0 + 0.5*6^1 ) = (-6-30)/(3+3)
 // returns -6.0
 ```
 

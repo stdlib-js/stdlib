@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/math/base/special/ccis.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include "stdlib/math/base/special/exp.h"
 #include <math.h>
@@ -30,7 +30,7 @@
 * @return         result
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/real.h"
 * #include "stdlib/complex/imag.h"
 *
@@ -45,7 +45,7 @@
 * // returns 0.0
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/real.h"
 * #include "stdlib/complex/imag.h"
 *

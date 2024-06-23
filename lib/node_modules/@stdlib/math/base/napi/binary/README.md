@@ -188,7 +188,7 @@ void stdlib_math_base_napi_ff_f( napi_env env, napi_callback_info info, float (*
 Invokes a binary function accepting and returning double-precision complex floating-point numbers.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <node_api.h>
 
@@ -242,7 +242,7 @@ void stdlib_math_base_napi_zz_z( napi_env env, napi_callback_info info, stdlib_c
 Invokes a binary function accepting and returning single-precision complex floating-point numbers.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <node_api.h>
 
@@ -456,7 +456,7 @@ void stdlib_math_base_napi_fi_f( napi_env env, napi_callback_info info, float (*
 Invokes a binary function accepting a double-precision complex floating-point number and a signed 32-bit integer and returning a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <node_api.h>
 #include <stdint.h>
@@ -508,7 +508,7 @@ void stdlib_math_base_napi_zi_z( napi_env env, napi_callback_info info, stdlib_c
 Invokes a binary function accepting a single-precision complex floating-point number and a signed 32-bit integer and returning a single-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reimf.h"
 #include <node_api.h>
 #include <stdint.h>
@@ -644,7 +644,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface for invoking a binary function accepting and returning double-precision complex floating-point numbers.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 
 static stdlib_complex128_t add( const stdlib_complex128_t x, const stdlib_complex128_t y ) {
@@ -681,7 +681,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface for invoking a binary function accepting and returning single-precision complex floating-point numbers.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/reimf.h"
 
 static stdlib_complex64_t add( const stdlib_complex64_t x, const stdlib_complex64_t y ) {
@@ -764,7 +764,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface invoking a binary function accepting a double-precision complex floating-point number and a signed 32-bit and returning a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdint.h>
 
@@ -799,7 +799,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface invoking a binary function accepting a single-precision complex floating-point number and a signed 32-bit integer and returning a single-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/reimf.h"
 #include <stdint.h>
 
@@ -834,7 +834,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface invoking a binary function accepting a double-precision complex floating-point number and a double-precision floating-point number and returning a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 
 static stdlib_complex128_t mul( const stdlib_complex128_t x, const double y ) {
@@ -868,7 +868,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface invoking a binary function accepting a single-precision complex floating-point number and a single-precision floating-point number and returning a single-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/reimf.h"
 
 static stdlib_complex64_t add( const stdlib_complex64_t x, const float y ) {

@@ -83,7 +83,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
         with:
           # Refers to the branch name of the branch being pushed:
           ref: ${{ steps.pr-details.outputs.branch }}
@@ -141,6 +141,13 @@ jobs:
         run: |
           files="${{ steps.changed-files.outputs.files }}"
           FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_javascript_files" "$files"
+
+      # Add missing trailing newlines:
+      - name: 'Add missing trailing newlines'
+        id: add-trailing-newlines
+        run: |
+          files="${{ steps.changed-files.outputs.files }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/add_trailing_newlines" "$files"
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'

@@ -35,13 +35,13 @@
 static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
-  STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
-  STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 	
-  napi_value v;
-  napi_create_double( env, stdlib_strided_dsumkbn2( N, X, strideX ), &v );
-  
-  return v;
+	napi_value v;
+	napi_create_double( env, stdlib_strided_dsumkbn2( N, X, strideX ), &v );
+
+	return v;
 }
 
 STDLIB_NAPI_MODULE_EXPORT_FCN( addon );

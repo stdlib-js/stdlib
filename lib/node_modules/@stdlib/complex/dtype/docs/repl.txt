@@ -17,7 +17,7 @@
 
     Examples
     --------
-    > var v = new {{alias:@stdlib/complex/float64}}( 1.0, 2.0 );
+    > var v = new {{alias:@stdlib/complex/float64/ctor}}( 1.0, 2.0 );
     > var dt = {{alias}}( v )
     'complex128'
     > dt = {{alias}}( 'beep' )

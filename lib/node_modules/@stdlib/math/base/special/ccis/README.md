@@ -56,7 +56,7 @@ var ccis = require( '@stdlib/math/base/special/ccis' );
 Evaluates the [cis][cis] function for a double-precision complex floating-point number.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
 
@@ -94,7 +94,7 @@ im = imag( v );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var uniform = require( '@stdlib/random/base/uniform' );
 var ccis = require( '@stdlib/math/base/special/ccis' );
 
@@ -144,7 +144,7 @@ for ( i = 0; i < 100; i++ ) {
 Evaluates the [cis][cis] function for a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/real.h"
 #include "stdlib/complex/imag.h"
 
@@ -187,7 +187,7 @@ stdlib_complex128_t stdlib_base_ccis( const stdlib_complex128_t z );
 
 ```c
 #include "stdlib/math/base/special/ccis.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 

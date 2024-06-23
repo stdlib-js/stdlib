@@ -54,15 +54,15 @@ limitations under the License.
 
 We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib.
 
-stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
 
-What sets stdlib apart is its fully decomposable architecture, allowing you to swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.
+What sets stdlib apart is its fully decomposable architecture, which allows you to swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.
 
-When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.
+When you use stdlib, you can be confident that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code available.
 
 Want to join us in bringing numerical computing to the web? **Start by starring the project.** :star2:
 
-Explore this GitHub repository for stdlib's source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
+Explore this GitHub repository for stdlib's source code and documentation. For guidance on developing stdlib, refer to the [development guide][stdlib-development].
 
 Thank you for being a part of our community! Your support is invaluable to us!
 
@@ -159,7 +159,7 @@ Thank you for being a part of our community! Your support is invaluable to us!
 
 ## Installation
 
-To accommodate various use cases, stdlib can be consumed in multiple ways. The preferred means of consumption depends on your individual use case. We've provided some user stories to help you identify the best approach. 😃
+To accommodate various use cases, stdlib can be used in multiple ways. The preferred method of use depends on your individual use case. We've provided some user stories to help you identify the best approach. 😃
 
 While this project's installation instructions defaults to using [npm][npm] for package management, installation via other package managers, such as [yarn][yarn], should be a matter of simply swapping out [npm][npm] commands with those of the relevant package manager.
 
@@ -557,7 +557,7 @@ Already an expert?
 
 ## Sponsors
 
-stdlib development is generously supported by the following sponsors...
+stdlib development is generously supported by the following sponsors:
 
 <div class="image" align="center">
     <br>
@@ -582,7 +582,7 @@ Are you interested in supporting stdlib? If so, join our [Open Collective][open-
 
 ## Users
 
-The following organizations and key stakeholders trust and depend on stdlib...
+The following organizations and key stakeholders trust and rely on stdlib:
 
 <div class="image" align="center">
     <br>
@@ -593,7 +593,7 @@ The following organizations and key stakeholders trust and depend on stdlib...
     <br>
 </div>
 
-Does your organization or company use stdlib? If so, we'd love to hear from you!
+Does your organization use stdlib? If so, we'd love to hear from you!
 
 </section>
 

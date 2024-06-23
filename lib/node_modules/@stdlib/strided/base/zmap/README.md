@@ -196,7 +196,7 @@ var Complex128Array = require( '@stdlib/array/complex128' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var zmap = require( '@stdlib/strided/base/zmap' );
 
 function scale( x ) {

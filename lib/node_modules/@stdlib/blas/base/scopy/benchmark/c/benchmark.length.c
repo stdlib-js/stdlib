@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `scopy`.
-*/
 #include "stdlib/blas/base/scopy.h"
 #include <stdlib.h>
 #include <stdio.h>

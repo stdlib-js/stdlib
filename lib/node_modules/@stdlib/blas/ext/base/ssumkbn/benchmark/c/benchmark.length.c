@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `ssumkbn`.
-*/
 #include "stdlib/blas/ext/base/ssumkbn.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -35,7 +32,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version() {
+void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -74,7 +71,7 @@ void print_results( int iterations, double elapsed ) {
 *
 * @return clock time
 */
-double tic() {
+double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
@@ -85,7 +82,7 @@ double tic() {
 *
 * @return random number
 */
-float rand_float() {
+float rand_float( void ) {
 	int r = rand();
 	return (float)r / ( (float)RAND_MAX + 1.0f );
 }

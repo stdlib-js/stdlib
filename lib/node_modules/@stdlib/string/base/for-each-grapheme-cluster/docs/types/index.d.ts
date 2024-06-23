@@ -23,7 +23,7 @@
 *
 * @returns result
 */
-type Nullary = () => any;
+type Nullary<T> = ( this: T ) => any;
 
 /**
 * Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
@@ -31,26 +31,16 @@ type Nullary = () => any;
 * @param value - grapheme cluster
 * @returns result
 */
-type Unary = ( value: string ) => any;
-
-/**
-* Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
-*
-* @param value - grapheme cluster
-* @param index - starting grapheme cluster index
-* @returns result
-*/
-type Binary = ( value: string, index: number ) => any;
+type Unary<T> = ( this: T, value: string ) => any;
 
 /**
 * Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
 *
 * @param value - grapheme cluster
 * @param index - starting grapheme cluster index
-* @param str - input string
 * @returns result
 */
-type Ternary = ( value: string, index: number, str: string ) => any;
+type Binary<T> = ( this: T, value: string, index: number ) => any;
 
 /**
 * Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
@@ -60,7 +50,17 @@ type Ternary = ( value: string, index: number, str: string ) => any;
 * @param str - input string
 * @returns result
 */
-type Callback = Nullary | Unary | Binary | Ternary;
+type Ternary<T> = ( this: T, value: string, index: number, str: string ) => any;
+
+/**
+* Callback invoked for each grapheme cluster (i.e., user-perceived character) in a string.
+*
+* @param value - grapheme cluster
+* @param index - starting grapheme cluster index
+* @param str - input string
+* @returns result
+*/
+type Callback<T> = Nullary<T> | Unary<T> | Binary<T> | Ternary<T>;
 
 /**
 * Invokes a function for each grapheme cluster (i.e., user-perceived character) in a string.
@@ -85,7 +85,7 @@ type Callback = Nullary | Unary | Binary | Ternary;
 *
 * forEach( 'Hello, World!', log );
 */
-declare function forEach( str: string, clbk: Callback, thisArg?: any ): string;
+declare function forEach<T = unknown>( str: string, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): string;
 
 
 // EXPORTS //

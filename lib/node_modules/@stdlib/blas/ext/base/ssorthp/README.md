@@ -32,7 +32,7 @@ var ssorthp = require( '@stdlib/blas/ext/base/ssorthp' );
 
 #### ssorthp( N, order, x, stride )
 
-Sorts a single-precision floating-point strided array `x` using heapsort.
+Sorts a single-precision floating-point strided array using heapsort.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -50,16 +50,14 @@ The function has the following parameters:
 -   **x**: input [`Float32Array`][@stdlib/array/float32].
 -   **stride**: index increment.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to sort every other element
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to sort every other element
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 1.0, -2.0, 3.0, -4.0 ] );
-var N = floor( x.length / 2 );
 
-ssorthp( N, -1.0, x, 2 );
+ssorthp( 2, -1.0, x, 2 );
 // x => <Float32Array>[ 3.0, -2.0, 1.0, -4.0 ]
 ```
 
@@ -67,23 +65,21 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial array...
 var x0 = new Float32Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 
 // Create an offset view...
-var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var N = floor( x0.length/2 );
+var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
 
 // Sort every other element...
-ssorthp( N, -1.0, x1, 2 );
+ssorthp( 2, -1.0, x1, 2 );
 // x0 => <Float32Array>[ 1.0, 4.0, 3.0, 2.0 ]
 ```
 
 #### ssorthp.ndarray( N, order, x, stride, offset )
 
-Sorts a single-precision floating-point strided array `x` using heapsort and alternative indexing semantics.
+Sorts a single-precision floating-point strided array using heapsort and alternative indexing semantics.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -98,7 +94,7 @@ The function has the following additional parameters:
 
 -   **offset**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of the strided array
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -117,7 +113,7 @@ ssorthp.ndarray( 3, 1.0, x, 1, x.length-3 );
 
 ## Notes
 
--   If `N <= 0` or `order == 0.0`, both functions return `x` unchanged.
+-   If `N <= 0` or `order == 0.0`, both functions return the strided array unchanged.
 -   The algorithm distinguishes between `-0` and `+0`. When sorted in increasing order, `-0` is sorted before `+0`. When sorted in decreasing order, `-0` is sorted after `+0`.
 -   The algorithm sorts `NaN` values to the end. When sorted in increasing order, `NaN` values are sorted last. When sorted in decreasing order, `NaN` values are sorted first.
 -   The algorithm has space complexity `O(1)` and time complexity `O(N log2 N)`.
@@ -135,27 +131,13 @@ ssorthp.ndarray( 3, 1.0, x, 1, x.length-3 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
-var Float32Array = require( '@stdlib/array/float32' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var ssorthp = require( '@stdlib/blas/ext/base/ssorthp' );
 
-var rand;
-var sign;
-var x;
-var i;
+var rand = discreteUniform( -100, 100 );
+var x = filledarrayBy( 10, 'float32', rand );
 
-x = new Float32Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    rand = round( randu()*100.0 );
-    sign = randu();
-    if ( sign < 0.5 ) {
-        sign = -1.0;
-    } else {
-        sign = 1.0;
-    }
-    x[ i ] = sign * rand;
-}
 console.log( x );
 
 ssorthp( x.length, -1.0, x, -1 );

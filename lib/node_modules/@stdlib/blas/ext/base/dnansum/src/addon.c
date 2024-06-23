@@ -21,8 +21,8 @@
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
 #include "stdlib/napi/argv_strided_float64array.h"
+#include "stdlib/napi/create_double.h"
 #include <node_api.h>
-#include <assert.h>
 
 /**
 * Receives JavaScript callback invocation data.
@@ -37,10 +37,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, stride, argv, 2 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, stride, argv, 1 );
-
-	napi_value v;
-	status = napi_create_double( env, stdlib_strided_dnansum( N, (double *)X, stride ), &v );
-	assert( status == napi_ok );
+	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_strided_dnansum( N, (double *)X, stride ), v );
 	return v;
 }
 
