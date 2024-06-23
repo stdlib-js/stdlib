@@ -2583,6 +2583,7 @@ BooleanArray.prototype.findIndex,"BooleanArray.prototype.findIndex( predicate[, 
 BooleanArray.prototype.findLast,"BooleanArray.prototype.findLast( predicate[, thisArg] )"
 BooleanArray.prototype.findLastIndex,"BooleanArray.prototype.findLastIndex( predicate[, thisArg] )"
 BooleanArray.prototype.get,"BooleanArray.prototype.get( i )"
+BooleanArray.prototype.includes,"BooleanArray.prototype.includes( searchElement[, fromIndex] )"
 BooleanArray.prototype.indexOf,"BooleanArray.prototype.indexOf( searchElement[, fromIndex] )"
 BooleanArray.prototype.lastIndexOf,"BooleanArray.prototype.lastIndexOf( searchElement[, fromIndex] )"
 BooleanArray.prototype.map,"BooleanArray.prototype.map( clbk[, thisArg] )"
