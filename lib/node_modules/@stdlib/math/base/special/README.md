@@ -252,7 +252,7 @@ var fcns = special;
 -   <span class="signature">[`coth( x )`][@stdlib/math/base/special/coth]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic cotangent of a number.</span>
 -   <span class="signature">[`cphase( z )`][@stdlib/math/base/special/cphase]</span><span class="delimiter">: </span><span class="description">compute the argument of a double-precision complex floating-point number in radians.</span>
 -   <span class="signature">[`cpolar( z )`][@stdlib/math/base/special/cpolar]</span><span class="delimiter">: </span><span class="description">compute the absolute value and phase of a double-precision complex floating-point number.</span>
--   <span class="signature">[`csc`][@stdlib/math/base/special/csc]</span><span class="delimiter">: </span><span class="description">evaluate the cosecant of a number.</span>
+-   <span class="signature">[`csc( x )`][@stdlib/math/base/special/csc]</span><span class="delimiter">: </span><span class="description">evaluate the cosecant of a number.</span>
 -   <span class="signature">[`cscd( x )`][@stdlib/math/base/special/cscd]</span><span class="delimiter">: </span><span class="description">compute the cosecant of a degree.</span>
 -   <span class="signature">[`csch( x )`][@stdlib/math/base/special/csch]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic cosecant of a number.</span>
 -   <span class="signature">[`deg2rad( x )`][@stdlib/math/base/special/deg2rad]</span><span class="delimiter">: </span><span class="description">convert an angle from degrees to radians.</span>

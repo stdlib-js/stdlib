@@ -397,6 +397,7 @@ var o = idx.toJSON();
 ```javascript
 var Uint8Array = require( '@stdlib/array/uint8' );
 var Int32Array = require( '@stdlib/array/int32' );
+var BooleanArray = require( '@stdlib/array/bool' );
 var ArrayIndex = require( '@stdlib/array/index' );
 
 var x = new Uint8Array( [ 1, 0, 1, 0 ] );
@@ -409,6 +410,15 @@ var o = ArrayIndex.get( i.id );
 console.log( 'Type: %s. Data type: %s.', o.type, o.dtype );
 
 x = [ true, false, true, false ];
+i = new ArrayIndex( x );
+// returns <ArrayIndex>
+
+o = ArrayIndex.get( i.id );
+// returns {...}
+
+console.log( 'Type: %s. Data type: %s.', o.type, o.dtype );
+
+x = new BooleanArray( [ true, false, true, false ] );
 i = new ArrayIndex( x );
 // returns <ArrayIndex>
 

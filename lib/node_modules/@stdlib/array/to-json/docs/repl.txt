@@ -15,6 +15,7 @@
     - Uint8ClampedArray
     - Complex64Array
     - Complex128Array
+    - BooleanArray
 
     The returned JSON object has the following properties:
 
