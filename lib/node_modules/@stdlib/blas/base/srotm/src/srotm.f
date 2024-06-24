@@ -16,7 +16,7 @@
 ! limitations under the License.
 !<
 
-!> Apples a modified Givens plane rotation.
+!> Applies a modified Givens plane rotation.
 !
 ! ## Notes
 !
