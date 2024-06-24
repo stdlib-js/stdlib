@@ -1739,7 +1739,7 @@ interface Complex128ArrayConstructor {
 	* var len = arr.length;
 	* // returns 1
 	*/
-	from( src: ArrayLike<number | ComplexLike> | RealOrComplexTypedArray | Iterable<number | ComplexLike>, clbk?: FromCallback<U>, thisArg?: ThisParameterType<FromCallback<U>> ): Complex128Array;
+	from<U = unknown>( src: ArrayLike<number | ComplexLike> | RealOrComplexTypedArray | Iterable<number | ComplexLike>, clbk?: FromCallback<U>, thisArg?: ThisParameterType<FromCallback<U>> ): Complex128Array;
 
 	/**
 	* Creates a new 128-bit complex number array from a variable number of arguments.

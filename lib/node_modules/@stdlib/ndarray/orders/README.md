@@ -46,10 +46,10 @@ Returns a list of ndarray orders.
 
 ```javascript
 var out = orders();
-// returns [ 'row-major', 'column-major' ]
+// e.g., returns [ 'row-major', 'column-major' ]
 ```
 
-The output `array` contains the following orders:
+The output array contains the following orders:
 
 -   `row-major`: row-major (C-style) order.
 -   `column-major`: column-major (Fortran-style) order.
@@ -75,20 +75,12 @@ The output `array` contains the following orders:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var indexOf = require( '@stdlib/utils/index-of' );
+var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var orders = require( '@stdlib/ndarray/orders' );
 
-var ORDERS = orders();
-var bool;
+var isOrder = contains( orders() );
 
-function isOrder( str ) {
-    if ( indexOf( ORDERS, str ) === -1 ) {
-        return false;
-    }
-    return true;
-}
-
-bool = isOrder( 'row-major' );
+var bool = isOrder( 'row-major' );
 // returns true
 
 bool = isOrder( 'column-major' );
