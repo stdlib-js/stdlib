@@ -89,7 +89,7 @@ var x = scalar2array( 3.0, 'float32' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var array2scalar = require( '@stdlib/array/from-scalar' );
 
 var x = array2scalar( 3.0 );

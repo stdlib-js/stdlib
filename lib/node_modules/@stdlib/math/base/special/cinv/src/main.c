@@ -21,7 +21,7 @@
 #include "stdlib/constants/float64/max.h"
 #include "stdlib/constants/float64/eps.h"
 #include "stdlib/constants/float64/smallest_normal.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <math.h>
 
@@ -46,7 +46,7 @@ Computes the inverse of a double-precision complex floating-point number.
 * @return        result
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/real.h"
 * #include "stdlib/complex/imag.h"
 *

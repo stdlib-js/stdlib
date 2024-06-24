@@ -14,7 +14,7 @@
 
     Examples
     --------
-    > var z = new {{alias:@stdlib/complex/float64}}( -4.2, 5.5 )
+    > var z = new {{alias:@stdlib/complex/float64/ctor}}( -4.2, 5.5 )
     <Complex128>
     > var v = {{alias}}( z )
     <Complex128>

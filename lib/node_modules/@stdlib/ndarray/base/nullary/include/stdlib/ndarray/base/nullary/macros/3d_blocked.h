@@ -319,7 +319,7 @@
 * @param tout  output type
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * // e.g., z
 * STDLIB_NDARRAY_NULLARY_3D_BLOCKED_LOOP_CLBK_RET_NOCAST( stdlib_complex128_t )
@@ -342,7 +342,7 @@
 * @param cout  output casting function
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * // e.g., z_as_d
 * STDLIB_NDARRAY_NULLARY_3D_BLOCKED_LOOP_CLBK_RET_CAST_FCN( stdlib_complex128_t, stdlib_complex128_from_float64 )

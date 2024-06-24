@@ -1,0 +1,7 @@
+{
+  "expression": "var a = true; var b = false; var c = null; var d = undefined;",
+  "expected": "var a = \u001b[31mtrue\u001b[0m; var b = \u001b[31mfalse\u001b[0m; var c = \u001b[31mnull\u001b[0m; var d = \u001b[31mundefined\u001b[0m;",
+  "theme": {
+    "literal": "red"
+  }
+}

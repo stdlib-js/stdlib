@@ -22,7 +22,7 @@
 
 #include "stdlib/strided/base/unary/f_c_as_f_c.h"
 #include "stdlib/strided/base/unary/macros.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 /**
@@ -35,7 +35,7 @@
 *
 * @example
 * #include "stdlib/strided/base/unary/f_c_as_f_c.h"
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 * #include <stdint.h>
 *
 * // Create underlying byte arrays:
