@@ -44,8 +44,8 @@ jobs:
 
       # Cancel existing workflow runs:
       - name: 'Cancel existing workflow runs'
-        # Pin action to full length commit SHA corresponding to v0.11.0
-        uses: styfle/cancel-workflow-action@b173b6ec0100793626c2d9e6b90435061f4fc3e5
+        # Pin action to full length commit SHA
+        uses: styfle/cancel-workflow-action@85880fa0301c86cca9da44039ee3bb12d3bedbfa # v0.12.1
         with:
           workflow_id: >-
             benchmark.yml,

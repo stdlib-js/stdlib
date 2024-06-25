@@ -52,7 +52,7 @@ interface IsNegativeZero {
 	* var bool = isNegativeZero( null );
 	* // returns false
 	*/
-	( value: any ): value is number | Number;
+	( value: any ): boolean;
 
 	/**
 	* Tests if a value is a number primitive equal to negative zero.
@@ -68,7 +68,7 @@ interface IsNegativeZero {
 	* var bool = isNegativeZero.isPrimitive( new Number( -0.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): value is number;
+	isPrimitive( value: any ): boolean;
 
 	/**
 	* Tests if a value is a number object having a value equal to negative zero.
@@ -84,7 +84,7 @@ interface IsNegativeZero {
 	* var bool = isNegativeZero.isObject( new Number( -0.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): value is Number;
+	isObject( value: any ): boolean;
 }
 
 /**

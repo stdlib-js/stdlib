@@ -76,10 +76,23 @@ The namespace contains a constructor function for creating a [truncated normal][
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var objectKeys = require( '@stdlib/utils/keys' );
 var truncatedNormal = require( '@stdlib/stats/base/dists/truncated-normal' );
 
-console.log( objectKeys( truncatedNormal ) );
+/*
+* Let's consider an example where we're modeling the heights of astronauts.
+* We'll use the truncated normal distribution to model this scenario, considering constraints on their minimum and maximum heights.
+* The distribution has parameters: a (minimum height), b (maximum height), mu (location parameter), and sigma (scale parameter).
+* In this example, we'll assume a = 150 (minimum height), b = 200 (maximum height), mu = 175 (location parameter), and sigma = 10 (scale parameter).
+*/
+
+var a = 150.0;
+var b = 200.0;
+var mu = 175.0;
+var sigma = 10.0;
+
+// Calculate the probability density function (PDF) for a height of 180 cm:
+console.log( truncatedNormal.pdf( 180, a, b, mu, sigma ) );
+// => ~0.036
 ```
 
 </section>

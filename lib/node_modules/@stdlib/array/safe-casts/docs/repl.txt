@@ -9,7 +9,7 @@
 
     Parameters
     ----------
-    dtype: string (optional)
+    dtype: any (optional)
         Array data type.
 
     Returns

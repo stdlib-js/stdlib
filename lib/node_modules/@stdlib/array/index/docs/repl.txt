@@ -1,0 +1,202 @@
+
+{{alias}}( x[, options] )
+    Wraps a provided array as an array index object.
+
+    Array index instances have no explicit functionality; however, they are used
+    by "fancy" arrays for element retrieval and assignment.
+
+    By default, an instance is invalidated and removed from an internal cache
+    immediately after a consumer resolves the underlying data associated with an
+    instance using the `get` static method. Immediate invalidation and cache
+    removal ensures that references to the underlying array are not the source
+    of memory leaks.
+
+    Because instances leverage an internal cache implementing the Singleton
+    pattern, one must be sure to use the same constructor as consumers. If one
+    uses a different constructor, the consumer will *not* be able to resolve the
+    original wrapped array, as the consumer will attempt to resolve an instance
+    in the wrong internal cache.
+
+    Because non-persisted instances are freed after first use, in order to avoid
+    holding onto memory and to allow garbage collection, one should avoid
+    scenarios in which an instance is never used.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.persist: boolean (optional)
+        Boolean indicating whether to continue persisting an index object after
+        first usage. Default: false.
+
+    Returns
+    -------
+    out: ArrayIndex
+        ArrayIndex instance.
+
+    Examples
+    --------
+    > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
+
+
+{{alias}}.free( id )
+    Frees the instance associated with a provided identifier.
+
+    Parameters
+    ----------
+    id: string
+        Instance identifier.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an instance was successfully freed.
+
+    Examples
+    --------
+    > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
+    > // ...
+    > {{alias}}.free( idx.id )
+
+
+{{alias}}.get( id )
+    Returns the array associated with the instance having a provided identifier.
+
+    Parameters
+    ----------
+    id: string
+        Instance identifier.
+
+    Returns
+    -------
+    out: Object
+        Object containing array data.
+
+    out.data: Array|TypedArray|Object
+        The underlying array associated with the provided identifier.
+
+    out.type: string
+        The type of array index.
+
+    out.dtype: string
+        The data type of the underlying array.
+
+    Examples
+    --------
+    > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
+    > {{alias}}.get( idx.id )
+    {...}
+
+
+{{alias}}.prototype.data
+    Read-only property returning the underlying index array.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Array data type.
+
+    Examples
+    --------
+    > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
+    > idx.data
+    [ 1, 2, 3, 4 ]
+
+
+{{alias}}.prototype.dtype
+    Read-only property returning the underlying data type of the index array.
+
+    Returns
+    -------
+    out: string
+        Array data type.
+
+    Examples
+    --------
+    > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
+    > idx.dtype
+    'generic'
+
+
+{{alias}}.prototype.id
+    Read-only property returning the unique identifier associated with an
+    instance.
+
+    Returns
+    -------
+    out: string
+        String identifier.
+
+    Examples
+    --------
+    > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
+    > idx.id
+    <string>
+
+
+{{alias}}.prototype.isCached
+    Read-only property returning a boolean indicating whether an array index is
+    actively cached.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an array index is actively cached.
+
+    Examples
+    --------
+    > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
+    > idx.isCached
+    true
+
+
+{{alias}}.prototype.type
+    Read-only property returning the array index type.
+
+    Returns
+    -------
+    out: string
+        Array index type.
+
+    Examples
+    --------
+    > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
+    > idx.type
+    <string>
+
+
+{{alias}}.prototype.toString()
+    Serializes an instance as a string.
+
+    Returns
+    -------
+    str: string
+        Serialized string.
+
+    Examples
+    --------
+    > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
+    > idx.toString()
+
+
+{{alias}}.prototype.toJSON()
+    Serializes an instance as a JSON object.
+
+    Returns
+    -------
+    obj: Object
+        JSON object.
+
+    Examples
+    --------
+    > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
+    > idx.toJSON()
+    { 'type': 'ArrayIndex', 'data': [ 1, 2, 3, 4 ] }
+
+    See Also
+    --------
+

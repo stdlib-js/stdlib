@@ -1,0 +1,42 @@
+
+{{alias}}( object, predicate[, thisArg ] )
+    Tests whether every own property of an object fails a test implemented
+    by a predicate function.
+
+    The predicate function is provided three arguments:
+
+    - `value`: property value
+    - `index`: property key
+    - `object`: the input object
+
+    The function immediately returns upon encountering a truthy return value.
+
+    If provided an empty object, the function returns `true`.
+
+    Parameters
+    ----------
+    object: Object
+        Input object.
+
+    predicate: Function
+        Test function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if the predicate function returns a falsy
+        value for all own properties; otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > function isUnderage( v ) { return ( v < 18 ); };
+    > var obj = { 'a': 11, 'b': 12, 'c': 22 };
+    > var bool = {{alias}}( obj, isUnderage )
+    false
+
+    See Also
+    --------
+

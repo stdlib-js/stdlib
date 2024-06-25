@@ -107,6 +107,92 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/fast/hypot.h
+```
+
+#### stdlib_base_fast_hypot( x, y )
+
+Computes the hypotenuse.
+
+```c
+double h = stdlib_base_fast_hypot( 5.0, 12.0 );
+// returns 13.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **y**: `[in] double` input value.
+
+```c
+double stdlib_base_fast_hypot( const double x, const double y );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/fast/hypot.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 3.0, 4.0, 5.0, 12.0 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 4; i += 2 ) {
+        y = stdlib_base_fast_hypot( x[ i ], x[ i + 1 ] );
+        printf( "hypot(%lf, %lf) = %lf\n", x[ i ], x[ i + 1 ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">

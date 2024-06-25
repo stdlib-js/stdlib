@@ -29,7 +29,7 @@ import { UnsignedIntegerDataType as DataType } from '@stdlib/types/array';
 *
 * @example
 * var list = dtypes();
-* // e.g., returns [ 'uint16', 'uint32', 'uint8', 'uint8c' ]
+* // e.g., returns [ 'uint16', ... ]
 */
 declare function dtypes(): Array<DataType>;
 

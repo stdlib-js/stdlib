@@ -48,7 +48,7 @@ interface IsNonPositiveInteger {
 	* var bool = isNonPositiveInteger( null );
 	* // returns false
 	*/
-	( value: any ): value is number | Number;
+	( value: any ): boolean;
 
 	/**
 	* Tests if a value is a number primitive having a nonpositive integer value.
@@ -64,7 +64,7 @@ interface IsNonPositiveInteger {
 	* var bool = isNonPositiveInteger.isPrimitive( new Number( -3.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): value is number;
+	isPrimitive( value: any ): boolean;
 
 	/**
 	* Tests if a value is a number object having a nonpositive integer value.
@@ -80,7 +80,7 @@ interface IsNonPositiveInteger {
 	* var bool = isNonPositiveInteger.isObject( new Number( -3.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): value is Number;
+	isObject( value: any ): boolean;
 }
 
 /**

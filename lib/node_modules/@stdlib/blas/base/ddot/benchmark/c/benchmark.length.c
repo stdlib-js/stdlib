@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `ddot`.
-*/
 #include "stdlib/blas/base/ddot.h"
 #include <stdlib.h>
 #include <stdio.h>

@@ -119,7 +119,7 @@ var cnt = context.count;
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var take = require( '@stdlib/array/base/take' );
+var take = require( '@stdlib/array/base/take-indexed' );
 var groupIndicesBy = require( '@stdlib/array/base/group-indices-by' );
 
 function indicator( v ) {

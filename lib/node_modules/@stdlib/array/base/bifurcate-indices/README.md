@@ -78,7 +78,7 @@ var out = bifurcateIndices( x, filter );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var take = require( '@stdlib/array/base/take' );
+var take = require( '@stdlib/array/base/take-indexed' );
 var bifurcateIndices = require( '@stdlib/array/base/bifurcate-indices' );
 
 // Define an initial array of values:

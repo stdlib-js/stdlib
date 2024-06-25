@@ -1,0 +1,57 @@
+
+{{alias}}( iterator, predicate, fcn[, thisArg] )
+    Returns an iterator which invokes a function for each iterated value before 
+    returning the iterated value until either a predicate function returns true
+    or the iterator has iterated over all values.
+
+    The condition is evaluated *after* executing the provided function; thus,
+    `fcn` *always* executes at least once.
+
+    When invoked, both input functions are provided two arguments:
+
+    - value: iterated value
+    - index: iteration index (zero-based)
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    predicate: Function
+        Function which indicates whether to continue iterating.
+
+    fcn: Function
+        Function to invoke for each iterated value.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > function predicate( v ) { return v !== v };
+    > function f( v ) { if ( v !== v ) { throw new Error( 'beep' ); } };
+    > var it = {{alias}}( {{alias:@stdlib/random/iter/randu}}(), predicate, f );
+    > var r = it.next().value
+    <number>
+    > r = it.next().value
+    <number>
+
+    See Also
+    --------
+

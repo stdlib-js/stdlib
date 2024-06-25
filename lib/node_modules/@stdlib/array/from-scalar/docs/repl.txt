@@ -1,0 +1,38 @@
+
+{{alias}}( value[, dtype] )
+    Returns a single-element array containing a provided scalar value.
+
+    If `value` is a number and `dtype` is a complex number data type, the
+    function returns a complex number array containing a complex number whose
+    real component equals the provided scalar value and whose imaginary
+    component is zero.
+
+    Parameters
+    ----------
+    value: any
+        Scalar value.
+
+    dtype: string (optional)
+        Data type. If not provided and `value`
+
+        - is a number, the default data type is the default real-valued
+          floating-point data type.
+        - is a complex number object of a known complex data type, the data type
+          is the same as the provided value.
+        - is a complex number object of an unknown data type, the default data
+          type is the default complex-valued floating-point data type.
+        - is any other value type, the default data type is 'generic'.
+
+    Returns
+    -------
+    out: Array|TypedArray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias}}( 1.0 )
+    <Float64Array>[ 1.0 ]
+
+    See Also
+    --------
+

@@ -43,6 +43,9 @@ jobs:
     # Define a display name:
     name: 'Update meta data'
 
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -52,7 +55,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -67,7 +70,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -83,6 +86,11 @@ jobs:
         run: |
           node lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories lib/node_modules/@stdlib
 
+      # Update gypfile field:
+      - name: 'Update gypfile field'
+        run: |
+          node lib/node_modules/@stdlib/_tools/package-json/scripts/update_gypfile lib/node_modules/@stdlib
+
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
         # Pin action to full length commit SHA
@@ -97,9 +105,9 @@ jobs:
       - name: 'Create pull request'
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5.0.2
+        uses: peter-evans/create-pull-request@6d6857d36972b65feb161a90e484f2984215f83e # v6.0.5
         with:
-          title: 'Update package meta data'
+          title: 'chore: update package meta data'
           body: |
             This PR
 

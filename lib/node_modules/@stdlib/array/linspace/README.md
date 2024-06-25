@@ -100,7 +100,7 @@ When either `start` or `stop` is a complex number, the default output array data
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
 

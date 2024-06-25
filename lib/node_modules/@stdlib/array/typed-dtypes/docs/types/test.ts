@@ -23,7 +23,7 @@ import dtypes = require( './index' );
 
 // The function returns a string array..
 {
-	dtypes(); // $ExpectType NumericDataType[]
+	dtypes(); // $ExpectType TypedDataType[]
 }
 
 // The compiler throws an error if the function is provided arguments...

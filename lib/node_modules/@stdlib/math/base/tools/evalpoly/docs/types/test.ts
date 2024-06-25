@@ -57,7 +57,17 @@ import evalpoly = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	const c = [ 3.0, 2.0, 1.0 ];
-	evalpoly.factory( c ); // $ExpectType EvaluationFunction
+	evalpoly.factory( c ); // $ExpectType PolynomialFunction
+}
+
+// The compiler throws an error if the `factory` method is provided a first argument which is not an array of numbers...
+{
+	evalpoly.factory( true ); // $ExpectError
+	evalpoly.factory( false ); // $ExpectError
+	evalpoly.factory( 'abc' ); // $ExpectError
+	evalpoly.factory( 123 ); // $ExpectError
+	evalpoly.factory( {} ); // $ExpectError
+	evalpoly.factory( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided an unsupported number of arguments...
@@ -74,7 +84,7 @@ import evalpoly = require( './index' );
 	polyval( 1.0 ); // $ExpectType number
 }
 
-// The `factory` method returns a function which does not compile if provided a first argument which is not a number...
+// The compiler throws an error if the function returned by the `factory` method is provided a first argument which is not a number...
 {
 	const c = [ 3.0, 2.0, 1.0 ];
 	const polyval = evalpoly.factory( c );
@@ -84,14 +94,4 @@ import evalpoly = require( './index' );
 	polyval( [] ); // $ExpectError
 	polyval( {} ); // $ExpectError
 	polyval( ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the `factory` method is provided a first argument which is not an array of numbers...
-{
-	evalpoly.factory( true ); // $ExpectError
-	evalpoly.factory( false ); // $ExpectError
-	evalpoly.factory( 'abc' ); // $ExpectError
-	evalpoly.factory( 123 ); // $ExpectError
-	evalpoly.factory( {} ); // $ExpectError
-	evalpoly.factory( ( x: number ): number => x ); // $ExpectError
 }

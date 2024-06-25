@@ -23,13 +23,13 @@
 import { RealDataType as DataType } from '@stdlib/types/array';
 
 /**
-* Returns a list of typed array data types.
+* Returns a list of typed array real-valued data types.
 *
 * @returns list of typed array data types
 *
 * @example
 * var list = dtypes();
-* // e.g., returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+* // e.g., returns [ 'float32', ... ]
 */
 declare function dtypes(): Array<DataType>;
 

@@ -54,12 +54,10 @@ The `N` and `stride` parameters determine which elements in `x` are accessed at 
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 1.0, -2.0, 3.0, -4.0 ] );
-var N = floor( x.length / 2 );
 
-dsortsh( N, -1.0, x, 2 );
+dsortsh( 2, -1.0, x, 2 );
 // x => <Float64Array>[ 3.0, -2.0, 1.0, -4.0 ]
 ```
 
@@ -67,17 +65,15 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial array...
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 
 // Create an offset view...
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var N = floor( x0.length/2 );
 
 // Sort every other element...
-dsortsh( N, -1.0, x1, 2 );
+dsortsh( 2, -1.0, x1, 2 );
 // x0 => <Float64Array>[ 1.0, 4.0, 3.0, 2.0 ]
 ```
 
@@ -136,27 +132,11 @@ dsortsh.ndarray( 3, 1.0, x, 1, x.length-3 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
-var Float64Array = require( '@stdlib/array/float64' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
+var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var dsortsh = require( '@stdlib/blas/ext/base/dsortsh' );
 
-var rand;
-var sign;
-var x;
-var i;
-
-x = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    rand = round( randu()*100.0 );
-    sign = randu();
-    if ( sign < 0.5 ) {
-        sign = -1.0;
-    } else {
-        sign = 1.0;
-    }
-    x[ i ] = sign * rand;
-}
+var x = filledarrayBy( 100, 'float64', uniform( -100.0, 100.0 ) );
 console.log( x );
 
 dsortsh( x.length, -1.0, x, -1 );

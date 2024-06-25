@@ -40,7 +40,7 @@
 * var out = isASCII( 123 );
 * // returns false
 */
-declare function isASCII( value: any ): value is string;
+declare function isASCII( value: any ): boolean;
 
 
 // EXPORTS //

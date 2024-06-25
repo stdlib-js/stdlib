@@ -45,7 +45,7 @@ interface IsRelativePath {
 	*     // returns false
 	* }
 	*/
-	( value: any ): value is string;
+	( value: any ): boolean;
 
 	/**
 	* Tests if a value is a POSIX relative path.
@@ -61,7 +61,7 @@ interface IsRelativePath {
 	* var bool = isRelativePath.posix( '/foo/../bar/baz' );
 	* // returns false
 	*/
-	posix( value: any ): value is string;
+	posix( value: any ): boolean;
 
 	/**
 	* Tests if a value is a Windows relative path.
@@ -77,7 +77,7 @@ interface IsRelativePath {
 	* var bool = isRelativePath.win32( 'C:\\foo\\..\\bar\\baz' );
 	* // returns false
 	*/
-	win32( value: any ): value is string;
+	win32( value: any ): boolean;
 }
 
 /**

@@ -46,14 +46,8 @@ Returns a list of typed array signed integer data types.
 
 ```javascript
 var out = dtypes();
-// e.g., returns [ 'int16', 'int32', 'int8' ]
+// e.g., returns [ 'int16', ... ]
 ```
-
-The output `array` contains the following data types:
-
--   `int16`: signed 16-bit integers.
--   `int32`: signed 32-bit integers.
--   `int8`: signed 8-bit integers.
 
 </section>
 

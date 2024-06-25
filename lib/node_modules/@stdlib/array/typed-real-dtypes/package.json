@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/array/typed-real-dtypes",
   "version": "0.0.0",
-  "description": "List of typed array data types.",
+  "description": "List of typed array real-valued data types.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

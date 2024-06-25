@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `dscal`.
-*/
 #include "stdlib/blas/base/dscal.h"
 #include <stdlib.h>
 #include <stdio.h>

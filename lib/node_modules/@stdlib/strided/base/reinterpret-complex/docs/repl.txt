@@ -1,0 +1,34 @@
+
+{{alias}}( x, offset )
+    Returns a real-valued floating-point array view of a complex-valued
+    floating-point array having the same precision.
+
+    Parameters
+    ----------
+    x: Complex128Array|Complex64Array
+        Input array.
+
+    offset: integer
+        Starting index of the view relative to the input array.
+
+    Returns
+    -------
+    out: Float64Array|Float32Array
+        Real-valued floating-point array view.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/complex128}}( 10 );
+    > var out = {{alias}}( x, 0 )
+    <Float64Array>
+    > var bool = ( out.buffer === x.buffer )
+    true
+    > x = new {{alias:@stdlib/array/complex64}}( 10 );
+    > out = {{alias}}( x, 0 )
+    <Float32Array>
+    > bool = ( out.buffer === x.buffer )
+    true
+
+    See Also
+    --------
+

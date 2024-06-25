@@ -1,0 +1,40 @@
+{{alias}}( object, predicate[, thisArg ] )
+    Tests whether at least one value in an object passes a test implemented by
+    a predicate function.
+
+    The predicate function is provided three arguments:
+
+    - `value`: the value of the current property being processed in the object
+    - `key`: the key of the current property being processed in the object
+    - `object`: the input object
+
+    The function immediately returns upon encountering a truthy return value.
+
+    If provided an empty object, the function returns `false`.
+
+    Parameters
+    ----------
+    object: Object
+        Input object over which to iterate. It must be non-null.
+
+    predicate: Function
+        The test function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if the predicate function returns `true` for
+        any value; otherwise, it returns `false`.
+
+    Examples
+    --------
+    > function isNegative(value) { return value < 0 }
+    > var obj = { a: 1, b: -2, c: 3, d: 4 }
+    > var result = {{alias}}(obj, isNegative)
+    true
+
+    See Also
+    --------

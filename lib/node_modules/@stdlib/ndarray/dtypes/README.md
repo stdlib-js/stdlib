@@ -82,6 +82,7 @@ The function supports the following data type kinds:
 -   `unsigned_integer`: unsigned integer data types.
 -   `real`: real-valued data types.
 -   `numeric`: numeric data types.
+-   `typed`: typed data types.
 -   `all`: all data types.
 
 </section>

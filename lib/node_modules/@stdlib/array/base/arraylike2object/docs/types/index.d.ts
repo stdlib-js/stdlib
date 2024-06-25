@@ -1,3 +1,5 @@
+/* eslint-disable max-lines */
+
 /*
 * @license Apache-2.0
 *
@@ -286,6 +288,11 @@ interface Float64AccessorObject {
 	data: Float64Array;
 
 	/**
+	* Data type.
+	*/
+	dtype: 'float64';
+
+	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
 	*/
 	accessorProtocol: false;
@@ -304,6 +311,11 @@ interface Float32AccessorObject {
 	* Reference to the original array-like object.
 	*/
 	data: Float32Array;
+
+	/**
+	* Data type.
+	*/
+	dtype: 'float32';
 
 	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
@@ -326,6 +338,11 @@ interface Int32AccessorObject {
 	data: Int32Array;
 
 	/**
+	* Data type.
+	*/
+	dtype: 'int32';
+
+	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
 	*/
 	accessorProtocol: false;
@@ -344,6 +361,11 @@ interface Int16AccessorObject {
 	* Reference to the original array-like object.
 	*/
 	data: Int16Array;
+
+	/**
+	* Data type.
+	*/
+	dtype: 'int16';
 
 	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
@@ -366,6 +388,11 @@ interface Int8AccessorObject {
 	data: Int8Array;
 
 	/**
+	* Data type.
+	*/
+	dtype: 'int8';
+
+	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
 	*/
 	accessorProtocol: false;
@@ -384,6 +411,11 @@ interface Uint32AccessorObject {
 	* Reference to the original array-like object.
 	*/
 	data: Uint32Array;
+
+	/**
+	* Data type.
+	*/
+	dtype: 'uint32';
 
 	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
@@ -406,6 +438,11 @@ interface Uint16AccessorObject {
 	data: Uint16Array;
 
 	/**
+	* Data type.
+	*/
+	dtype: 'uint16';
+
+	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
 	*/
 	accessorProtocol: false;
@@ -424,6 +461,11 @@ interface Uint8AccessorObject {
 	* Reference to the original array-like object.
 	*/
 	data: Uint8Array;
+
+	/**
+	* Data type.
+	*/
+	dtype: 'uint8';
 
 	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
@@ -446,6 +488,11 @@ interface Uint8cAccessorObject {
 	data: Uint8ClampedArray;
 
 	/**
+	* Data type.
+	*/
+	dtype: 'uint8c';
+
+	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
 	*/
 	accessorProtocol: false;
@@ -464,6 +511,11 @@ interface Complex128AccessorObject {
 	* Reference to the original array-like object.
 	*/
 	data: Complex128Array;
+
+	/**
+	* Data type.
+	*/
+	dtype: 'complex128';
 
 	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
@@ -486,6 +538,11 @@ interface Complex64AccessorObject {
 	data: Complex64Array;
 
 	/**
+	* Data type.
+	*/
+	dtype: 'complex64';
+
+	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
 	*/
 	accessorProtocol: true;
@@ -504,6 +561,11 @@ interface GenericAccessorObject<T> {
 	* Reference to the original array-like object.
 	*/
 	data: Array<T>;
+
+	/**
+	* Data type.
+	*/
+	dtype: 'generic';
 
 	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
@@ -526,6 +588,11 @@ interface IndexedAccessorObject<T> {
 	data: Collection<T>;
 
 	/**
+	* Data type.
+	*/
+	dtype: string | null;
+
+	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
 	*/
 	accessorProtocol: false;
@@ -544,6 +611,11 @@ interface GetSetAccessorObject<T> {
 	* Reference to the original array-like object.
 	*/
 	data: AccessorArrayLike<T>;
+
+	/**
+	* Data type.
+	*/
+	dtype: string | null;
 
 	/**
 	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).

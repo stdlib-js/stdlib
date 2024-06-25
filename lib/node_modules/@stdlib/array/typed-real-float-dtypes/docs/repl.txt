@@ -2,11 +2,6 @@
 {{alias}}()
     Returns a list of typed array real-valued floating-point data types.
 
-    The output array contains the following data types:
-
-    - float32: single-precision floating-point numbers.
-    - float64: double-precision floating-point numbers.
-
     Returns
     -------
     out: Array<string>

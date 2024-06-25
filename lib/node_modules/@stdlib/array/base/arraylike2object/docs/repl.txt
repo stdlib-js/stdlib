@@ -5,6 +5,7 @@
     The returned object has the following properties:
 
     - data: reference to input array.
+    - dtype: input array data type.
     - accessorProtocol: boolean indicating whether the input array uses
       accessors for getting and setting elements.
     - accessors: a two-element array whose first element is an accessor for
@@ -34,6 +35,9 @@
 
     out.data: ArrayLikeObject
         Reference to input array.
+
+    out.dtype: string|null
+        Input array data type.
 
     out.accessorProtocol: boolean
         Boolean indicating whether the input array use accessors for getting and

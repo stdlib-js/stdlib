@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericDataType as DataType } from '@stdlib/types/array';
+import { TypedDataType as DataType } from '@stdlib/types/array';
 
 /**
 * Returns a list of typed array data types.
@@ -29,7 +29,7 @@ import { NumericDataType as DataType } from '@stdlib/types/array';
 *
 * @example
 * var list = dtypes();
-* // e.g., returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex128', 'complex64' ]
+* // e.g., returns [ 'float32', ... ]
 */
 declare function dtypes(): Array<DataType>;
 

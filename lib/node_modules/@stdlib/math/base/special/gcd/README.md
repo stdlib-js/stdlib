@@ -95,26 +95,108 @@ v = gcd( 48, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var gcd = require( '@stdlib/math/base/special/gcd' );
 
-var a;
-var b;
-var v;
-var i;
+var a = discreteUniform( 100, 0, 50 );
+var b = discreteUniform( a.length, 0, 50 );
 
-for ( i = 0; i < 100; i++ ) {
-    a = round( randu()*50.0 );
-    b = round( randu()*50.0 );
-    v = gcd( a, b );
-    console.log( 'gcd(%d,%d) = %d', a, b, v );
+var i;
+for ( i = 0; i < a.length; i++ ) {
+    console.log( 'gcd(%d,%d) = %d', a[ i ], b[ i ], gcd( a[ i ], b[ i ] ) );
 }
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/gcd.h"
+```
+
+#### stdlib_base_gcd( a, b )
+
+Computes the greatest common divisor (gcd).
+
+```c
+double v = stdlib_base_gcd( 48.0, 18.0 );
+// returns 6.0
+```
+
+The function accepts the following arguments:
+
+-   **a**: `[in] double` input value.
+-   **b**: `[in] double` input value.
+
+```c
+double stdlib_base_gcd( const double a, const double b );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/gcd.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double a[] = { 24.0, 32.0, 48.0, 116.0, 33.0 };
+    const double b[] = { 12.0, 6.0, 15.0, 52.0, 22.0 };
+
+    double out;
+    int i;
+    for ( i = 0; i < 5; i++ ) {
+        out = stdlib_base_gcd( a[ i ], b[ i ] );
+        printf( "gcd(%lf, %lf) = %lf\n", a[ i ], b[ i ], out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

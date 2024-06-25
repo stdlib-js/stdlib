@@ -20,7 +20,7 @@
 * Benchmark `reim`.
 */
 #include "stdlib/complex/reim.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

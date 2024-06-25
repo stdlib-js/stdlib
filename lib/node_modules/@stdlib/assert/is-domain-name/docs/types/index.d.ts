@@ -32,7 +32,7 @@
 * var bool = isDomainName( 'foo@bar.com' );
 * // returns false
 */
-declare function isDomainName( value: any ): value is string;
+declare function isDomainName( value: any ): boolean;
 
 
 // EXPORTS //

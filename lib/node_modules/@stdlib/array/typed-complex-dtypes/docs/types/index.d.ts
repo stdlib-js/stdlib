@@ -29,7 +29,7 @@ import { ComplexFloatingPointDataType as DataType } from '@stdlib/types/array';
 *
 * @example
 * var list = dtypes();
-* // returns [ 'complex64', 'complex128' ]
+* // e.g., returns [ 'complex64', ... ]
 */
 declare function dtypes(): Array<DataType>;
 

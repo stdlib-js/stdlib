@@ -21,7 +21,7 @@ updates:
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
-    interval: weekly
+    interval: monthly
   ignore:
     - dependency-name: "distributhor/workflow-webhook"
 

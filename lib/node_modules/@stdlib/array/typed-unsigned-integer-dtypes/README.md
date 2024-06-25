@@ -46,15 +46,8 @@ Returns a list of typed array unsigned integer data types.
 
 ```javascript
 var out = dtypes();
-// e.g., returns [ 'uint16', 'uint32', 'uint8', 'uint8c' ]
+// e.g., returns [ 'uint16', ... ]
 ```
-
-The output `array` contains the following data types:
-
--   `uint16`: unsigned 16-bit integers.
--   `uint32`: unsigned 32-bit integers.
--   `uint8`: unsigned 8-bit integers.
--   `uint8c`: unsigned clamped 8-bit integers.
 
 </section>
 

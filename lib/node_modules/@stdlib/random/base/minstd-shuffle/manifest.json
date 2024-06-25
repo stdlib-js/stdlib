@@ -33,7 +33,7 @@
 			"libraries": [],
 			"libpath": [],
 			"dependencies": [
-				"@stdlib/random/base",
+				"@stdlib/random/base/shared",
 				"@stdlib/random/base/minstd"
 			]
 		}

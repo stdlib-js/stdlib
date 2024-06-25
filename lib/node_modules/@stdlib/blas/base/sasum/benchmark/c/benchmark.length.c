@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `sasum`.
-*/
 #include "stdlib/blas/base/sasum.h"
 #include <stdlib.h>
 #include <stdio.h>

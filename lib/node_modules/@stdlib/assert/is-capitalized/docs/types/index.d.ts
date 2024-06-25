@@ -40,7 +40,7 @@
 * var bool = isCapitalized( 'salt and light' );
 * // returns false
 */
-declare function isCapitalized( value: any ): value is string;
+declare function isCapitalized( value: any ): boolean;
 
 
 // EXPORTS //

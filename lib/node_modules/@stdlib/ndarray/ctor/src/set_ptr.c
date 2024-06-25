@@ -19,8 +19,8 @@
 #include "stdlib/ndarray/ctor/set_ptr.h"
 #include "stdlib/ndarray/ctor/ndarray.h"
 #include "stdlib/ndarray/dtypes.h"
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 #include <stdbool.h>
 

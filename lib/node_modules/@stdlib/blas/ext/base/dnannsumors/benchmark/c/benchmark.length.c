@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `dnannsumors`.
-*/
 #include "stdlib/blas/ext/base/dnannsumors.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -35,7 +32,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version() {
+void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -74,7 +71,7 @@ void print_results( int iterations, double elapsed ) {
 *
 * @return clock time
 */
-double tic() {
+double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
@@ -85,7 +82,7 @@ double tic() {
 *
 * @return random number
 */
-double rand_double() {
+double rand_double( void ) {
 	int r = rand();
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }
@@ -113,6 +110,7 @@ double benchmark( int iterations, int len ) {
 		}
 	}
 	v = 0.0;
+	n = 0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		v = stdlib_strided_dnannsumors( len, x, 1, &n );

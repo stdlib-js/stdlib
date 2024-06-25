@@ -19,7 +19,7 @@
 #include "stdlib/complex/conj.h"
 #include "stdlib/complex/real.h"
 #include "stdlib/complex/imag.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdio.h>
 
 int main( void ) {

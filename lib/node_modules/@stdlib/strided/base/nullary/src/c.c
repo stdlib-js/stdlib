@@ -22,7 +22,7 @@
 
 #include "stdlib/strided/base/nullary/c.h"
 #include "stdlib/strided/base/nullary/macros.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 /**
@@ -35,7 +35,7 @@
 *
 * @example
 * #include "stdlib/strided/base/nullary/c.h"
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 * #include <stdint.h>
 *
 * // Create underlying byte arrays:

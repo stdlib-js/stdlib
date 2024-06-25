@@ -32,6 +32,9 @@ ESLINT ?= $(BIN_DIR)/eslint
 # Define the path to the ESLint configuration file:
 ESLINT_TS_CONF ?= $(CONFIG_DIR)/eslint/.eslintrc.typescript.js
 
+# Define the path to a TypeScript configuration file:
+TS_CONFIG ?= $(CONFIG_DIR)/typescript/tsconfig.json
+
 # Define the path to the ESLint ignore file:
 ESLINT_IGNORE ?= $(ROOT_DIR)/.eslintignore
 
@@ -74,13 +77,21 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
+		DIR=`dirname $$file`; \
+		LOCAL_TS_CONFIG=$$DIR/tsconfig.json; \
+		cp $(TS_CONFIG) $$DIR; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) --parser-options=project:$$LOCAL_TS_CONFIG $$file || exit 1; \
+		rm $$LOCAL_TS_CONFIG; \
 	done
 else
 	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
+		DIR=`dirname $$file`; \
+		LOCAL_TS_CONFIG=$$DIR/tsconfig.json; \
+		cp $(TS_CONFIG) $$DIR; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) --parser-options=project:$$LOCAL_TS_CONFIG $$file || echo 'Linting failed.'; \
+		rm $$LOCAL_TS_CONFIG; \
 	done
 endif
 
@@ -107,13 +118,21 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
+		DIR=`dirname $$file`; \
+		LOCAL_TS_CONFIG=$$DIR/tsconfig.json; \
+		cp $(TS_CONFIG) $$DIR; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) --parser-options=project:$$LOCAL_TS_CONFIG $$file || exit 1; \
+		rm $$LOCAL_TS_CONFIG; \
 	done
 else
 	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
+		DIR=`dirname $$file`; \
+		LOCAL_TS_CONFIG=$$DIR/tsconfig.json; \
+		cp $(TS_CONFIG) $$DIR; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) --parser-options=project:$$LOCAL_TS_CONFIG $$file || echo 'Linting failed.'; \
+		rm $$LOCAL_TS_CONFIG; \
 	done
 endif
 
@@ -138,13 +157,21 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || exit 1; \
+		DIR=`dirname $$file`; \
+		LOCAL_TS_CONFIG=$$DIR/tsconfig.json; \
+		cp $(TS_CONFIG) $$DIR; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) --parser-options=project:$$LOCAL_TS_CONFIG $$file || exit 1; \
+		rm $$LOCAL_TS_CONFIG; \
 	done
 else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) $$file || echo 'Linting failed.'; \
+		DIR=`dirname $$file`; \
+		LOCAL_TS_CONFIG=$$DIR/tsconfig.json; \
+		cp $(TS_CONFIG) $$DIR; \
+		$(ESLINT) $(ESLINT_TS_FLAGS) --config $(ESLINT_TS_CONF) --parser-options=project:$$LOCAL_TS_CONFIG $$file || echo 'Linting failed.'; \
+		rm $$LOCAL_TS_CONFIG; \
 	done
 endif
 

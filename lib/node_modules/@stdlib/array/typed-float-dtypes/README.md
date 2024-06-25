@@ -46,15 +46,8 @@ Returns a list of typed array floating-point data types.
 
 ```javascript
 var out = dtypes();
-// e.g., returns [ 'float32', 'float64', 'complex64', 'complex128' ]
+// e.g., returns [ 'float32', ... ]
 ```
-
-The output `array` contains the following data types:
-
--   `float32`: single-precision floating-point numbers.
--   `float64`: double-precision floating-point numbers.
--   `complex64`: single-precision complex floating-point numbers.
--   `complex128`: double-precision complex floating-point numbers.
 
 </section>
 

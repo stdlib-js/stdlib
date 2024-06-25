@@ -397,7 +397,7 @@ void stdlib_strided_bb_c( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -439,7 +439,7 @@ void stdlib_strided_bb_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1055,7 +1055,7 @@ void stdlib_strided_bb_z( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1097,7 +1097,7 @@ void stdlib_strided_bb_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1139,7 +1139,7 @@ void stdlib_strided_bc_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1181,7 +1181,7 @@ void stdlib_strided_bc_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1264,7 +1264,7 @@ void stdlib_strided_bd_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1306,7 +1306,7 @@ void stdlib_strided_bd_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1348,7 +1348,7 @@ void stdlib_strided_bf_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1513,7 +1513,7 @@ void stdlib_strided_bf_f_as_ff_f( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1637,7 +1637,7 @@ void stdlib_strided_bi_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1679,7 +1679,7 @@ void stdlib_strided_bi_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1721,7 +1721,7 @@ void stdlib_strided_bk_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -1968,7 +1968,7 @@ void stdlib_strided_bk_k_as_kk_k( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2010,7 +2010,7 @@ void stdlib_strided_bk_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2052,7 +2052,7 @@ void stdlib_strided_bs_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2299,7 +2299,7 @@ void stdlib_strided_bs_k_as_kk_k( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2341,7 +2341,7 @@ void stdlib_strided_bs_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2383,7 +2383,7 @@ void stdlib_strided_bt_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2671,7 +2671,7 @@ void stdlib_strided_bt_u_as_uu_u( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2795,7 +2795,7 @@ void stdlib_strided_bu_u_as_uu_u( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2837,7 +2837,7 @@ void stdlib_strided_bu_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2879,7 +2879,7 @@ void stdlib_strided_bz_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2921,7 +2921,7 @@ void stdlib_strided_cb_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -2963,7 +2963,7 @@ void stdlib_strided_cb_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3005,7 +3005,7 @@ void stdlib_strided_cb_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3047,7 +3047,7 @@ void stdlib_strided_cc_c( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3089,7 +3089,7 @@ void stdlib_strided_cc_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3131,7 +3131,7 @@ void stdlib_strided_cc_z( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3173,7 +3173,7 @@ void stdlib_strided_cc_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3215,7 +3215,7 @@ void stdlib_strided_cd_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3257,7 +3257,7 @@ void stdlib_strided_cf_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3299,7 +3299,7 @@ void stdlib_strided_cf_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3341,7 +3341,7 @@ void stdlib_strided_cf_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3383,7 +3383,7 @@ void stdlib_strided_ci_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3425,7 +3425,7 @@ void stdlib_strided_ck_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3467,7 +3467,7 @@ void stdlib_strided_ck_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3509,7 +3509,7 @@ void stdlib_strided_ck_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3551,7 +3551,7 @@ void stdlib_strided_cs_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3593,7 +3593,7 @@ void stdlib_strided_cs_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3635,7 +3635,7 @@ void stdlib_strided_cs_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3677,7 +3677,7 @@ void stdlib_strided_ct_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3719,7 +3719,7 @@ void stdlib_strided_ct_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3761,7 +3761,7 @@ void stdlib_strided_ct_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3803,7 +3803,7 @@ void stdlib_strided_cu_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3886,7 +3886,7 @@ void stdlib_strided_db_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -3928,7 +3928,7 @@ void stdlib_strided_db_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4052,7 +4052,7 @@ void stdlib_strided_dd_z( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4135,7 +4135,7 @@ void stdlib_strided_df_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4218,7 +4218,7 @@ void stdlib_strided_di_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4301,7 +4301,7 @@ void stdlib_strided_dk_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4384,7 +4384,7 @@ void stdlib_strided_ds_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4467,7 +4467,7 @@ void stdlib_strided_dt_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4550,7 +4550,7 @@ void stdlib_strided_du_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4592,7 +4592,7 @@ void stdlib_strided_du_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4634,7 +4634,7 @@ void stdlib_strided_dz_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4676,7 +4676,7 @@ void stdlib_strided_fb_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4841,7 +4841,7 @@ void stdlib_strided_fb_f_as_ff_f( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4883,7 +4883,7 @@ void stdlib_strided_fb_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4925,7 +4925,7 @@ void stdlib_strided_fc_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -4967,7 +4967,7 @@ void stdlib_strided_fc_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5050,7 +5050,7 @@ void stdlib_strided_fd_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5133,7 +5133,7 @@ void stdlib_strided_ff_c( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5175,7 +5175,7 @@ void stdlib_strided_ff_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5422,7 +5422,7 @@ void stdlib_strided_ff_z( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5505,7 +5505,7 @@ void stdlib_strided_fi_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5547,7 +5547,7 @@ void stdlib_strided_fi_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5589,7 +5589,7 @@ void stdlib_strided_fk_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5754,7 +5754,7 @@ void stdlib_strided_fk_f_as_ff_f( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5796,7 +5796,7 @@ void stdlib_strided_fk_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -5838,7 +5838,7 @@ void stdlib_strided_fs_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6003,7 +6003,7 @@ void stdlib_strided_fs_f_as_ff_f( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6045,7 +6045,7 @@ void stdlib_strided_fs_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6087,7 +6087,7 @@ void stdlib_strided_ft_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6252,7 +6252,7 @@ void stdlib_strided_ft_f_as_ff_f( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6335,7 +6335,7 @@ void stdlib_strided_fu_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6377,7 +6377,7 @@ void stdlib_strided_fu_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6501,7 +6501,7 @@ void stdlib_strided_ib_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6543,7 +6543,7 @@ void stdlib_strided_ib_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6626,7 +6626,7 @@ void stdlib_strided_id_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6709,7 +6709,7 @@ void stdlib_strided_if_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -6915,7 +6915,7 @@ void stdlib_strided_ii_z( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7039,7 +7039,7 @@ void stdlib_strided_ik_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7163,7 +7163,7 @@ void stdlib_strided_is_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7287,7 +7287,7 @@ void stdlib_strided_it_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7370,7 +7370,7 @@ void stdlib_strided_iu_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7412,7 +7412,7 @@ void stdlib_strided_iu_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7454,7 +7454,7 @@ void stdlib_strided_iz_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7496,7 +7496,7 @@ void stdlib_strided_kb_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7743,7 +7743,7 @@ void stdlib_strided_kb_k_as_kk_k( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7785,7 +7785,7 @@ void stdlib_strided_kb_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7827,7 +7827,7 @@ void stdlib_strided_kc_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7869,7 +7869,7 @@ void stdlib_strided_kc_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7952,7 +7952,7 @@ void stdlib_strided_kd_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -7994,7 +7994,7 @@ void stdlib_strided_kd_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -8036,7 +8036,7 @@ void stdlib_strided_kf_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -8201,7 +8201,7 @@ void stdlib_strided_kf_f_as_ff_f( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -8325,7 +8325,7 @@ void stdlib_strided_ki_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -8408,7 +8408,7 @@ void stdlib_strided_kk_c( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -8450,7 +8450,7 @@ void stdlib_strided_kk_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -8861,7 +8861,7 @@ void stdlib_strided_kk_z( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -8903,7 +8903,7 @@ void stdlib_strided_kk_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -8945,7 +8945,7 @@ void stdlib_strided_ks_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9192,7 +9192,7 @@ void stdlib_strided_ks_k_as_kk_k( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9316,7 +9316,7 @@ void stdlib_strided_kt_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9399,7 +9399,7 @@ void stdlib_strided_ku_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9441,7 +9441,7 @@ void stdlib_strided_ku_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9483,7 +9483,7 @@ void stdlib_strided_kz_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9525,7 +9525,7 @@ void stdlib_strided_sb_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9772,7 +9772,7 @@ void stdlib_strided_sb_k_as_kk_k( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9814,7 +9814,7 @@ void stdlib_strided_sb_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9856,7 +9856,7 @@ void stdlib_strided_sc_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9898,7 +9898,7 @@ void stdlib_strided_sc_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -9981,7 +9981,7 @@ void stdlib_strided_sd_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -10023,7 +10023,7 @@ void stdlib_strided_sd_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -10065,7 +10065,7 @@ void stdlib_strided_sf_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -10230,7 +10230,7 @@ void stdlib_strided_sf_f_as_ff_f( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -10354,7 +10354,7 @@ void stdlib_strided_si_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -10396,7 +10396,7 @@ void stdlib_strided_si_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -10438,7 +10438,7 @@ void stdlib_strided_sk_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -10685,7 +10685,7 @@ void stdlib_strided_sk_k_as_kk_k( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -10768,7 +10768,7 @@ void stdlib_strided_ss_c( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -10810,7 +10810,7 @@ void stdlib_strided_ss_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -11303,7 +11303,7 @@ void stdlib_strided_ss_z( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -11427,7 +11427,7 @@ void stdlib_strided_st_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -11510,7 +11510,7 @@ void stdlib_strided_su_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -11552,7 +11552,7 @@ void stdlib_strided_su_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -11594,7 +11594,7 @@ void stdlib_strided_sz_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -11636,7 +11636,7 @@ void stdlib_strided_tb_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -11924,7 +11924,7 @@ void stdlib_strided_tb_u_as_uu_u( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -11966,7 +11966,7 @@ void stdlib_strided_tb_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12008,7 +12008,7 @@ void stdlib_strided_tc_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12050,7 +12050,7 @@ void stdlib_strided_tc_c_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12133,7 +12133,7 @@ void stdlib_strided_td_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12175,7 +12175,7 @@ void stdlib_strided_td_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12217,7 +12217,7 @@ void stdlib_strided_tf_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12382,7 +12382,7 @@ void stdlib_strided_tf_f_as_ff_f( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12506,7 +12506,7 @@ void stdlib_strided_ti_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12630,7 +12630,7 @@ void stdlib_strided_tk_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12754,7 +12754,7 @@ void stdlib_strided_ts_i_as_ii_i( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12837,7 +12837,7 @@ void stdlib_strided_tt_c( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -12879,7 +12879,7 @@ void stdlib_strided_tt_c_as_cc_c( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -13372,7 +13372,7 @@ void stdlib_strided_tt_z( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -13496,7 +13496,7 @@ void stdlib_strided_tu_u_as_uu_u( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -13538,7 +13538,7 @@ void stdlib_strided_tu_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -13662,7 +13662,7 @@ void stdlib_strided_ub_u_as_uu_u( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -13704,7 +13704,7 @@ void stdlib_strided_ub_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -13787,7 +13787,7 @@ void stdlib_strided_ud_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -13870,7 +13870,7 @@ void stdlib_strided_uf_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -13953,7 +13953,7 @@ void stdlib_strided_ui_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14036,7 +14036,7 @@ void stdlib_strided_uk_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14119,7 +14119,7 @@ void stdlib_strided_us_d_as_dd_d( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14243,7 +14243,7 @@ void stdlib_strided_ut_u_as_uu_u( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14449,7 +14449,7 @@ void stdlib_strided_uu_z( uint8_t *arrays[], const int64_t *shape, const int64_t
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14491,7 +14491,7 @@ void stdlib_strided_uu_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14533,7 +14533,7 @@ void stdlib_strided_uz_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14575,7 +14575,7 @@ void stdlib_strided_zb_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14617,7 +14617,7 @@ void stdlib_strided_zc_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14659,7 +14659,7 @@ void stdlib_strided_zd_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14701,7 +14701,7 @@ void stdlib_strided_zf_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14743,7 +14743,7 @@ void stdlib_strided_zi_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14785,7 +14785,7 @@ void stdlib_strided_zk_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14827,7 +14827,7 @@ void stdlib_strided_zs_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14869,7 +14869,7 @@ void stdlib_strided_zt_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:
@@ -14911,7 +14911,7 @@ void stdlib_strided_zu_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 // Create underlying byte arrays:

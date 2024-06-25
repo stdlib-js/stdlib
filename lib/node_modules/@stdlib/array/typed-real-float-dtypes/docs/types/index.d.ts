@@ -29,7 +29,7 @@ import { RealFloatingPointDataType as DataType } from '@stdlib/types/array';
 *
 * @example
 * var list = dtypes();
-* // e.g., returns [ 'float32', 'float64' ]
+* // e.g., returns [ 'float32', ... ]
 */
 declare function dtypes(): Array<DataType>;
 
