@@ -22,24 +22,16 @@
 /**
 * Computes the hyperbolic cosecant of a number.
 *
-* @param {number} x - input value
-* @returns {number} hyperbolic cosecant
+* @param x    input value
+* @return     hyperbolic cosecant
 *
 * @example
-* var v = csch( 0.0 );
-* // returns Infinity
-*
-* @example
-* var v = csch( 2.0 );
+* var v = stdlib_base_csch( 2.0 );
 * // returns ~0.2757
 *
 * @example
-* var v = csch( -2.0 );
+* var v = stdlib_base_csch( -2.0 );
 * // returns ~-0.2757
-*
-* @example
-* var v = csch( NaN );
-* // returns NaN
 */
 double stdlib_base_csch( const double x ) {
     return 1.0 / stdlib_base_sinh( x );

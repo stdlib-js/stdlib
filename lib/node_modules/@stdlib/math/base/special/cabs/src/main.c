@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/special/cabs.h"
 #include "stdlib/math/base/special/hypot.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 
 /**
@@ -28,7 +28,7 @@
 * @return        result
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * stdlib_complex128_t z = stdlib_complex128( 5.0, 3.0 );
 *

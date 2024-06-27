@@ -52,7 +52,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -189,6 +189,15 @@ jobs:
 
           # Lint JavaScript source files:
           files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ' | sed 's/ $//')
+
+          # Build native addons if present:
+          packages=$(echo "${files}" | tr ' ' '\n' | sed 's/^lib\/node_modules\///g' | sed 's/\/lib\/.*//g' | sort | uniq)
+          for pkg in ${packages}; do
+              if [ -f "lib/node_modules/${pkg}/binding.gyp" ]; then
+                  NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
+              fi
+          done
+
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}"
           fi
@@ -248,7 +257,7 @@ jobs:
       - name: 'Setup R'
         if: ( success() || failure() ) && steps.check-r-files.outputs.files != ''
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@0ed4cdf40958ef43a6b33b9792e07ac76c3239e3 # v2.6.4
+        uses: r-lib/actions/setup-r@929c772977a3a13c8733b363bf5a2f685c25dd91 # v2.6.4
         with:
           r-version: '3.5.3'
 

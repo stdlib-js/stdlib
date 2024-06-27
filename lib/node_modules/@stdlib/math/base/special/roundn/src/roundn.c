@@ -19,11 +19,16 @@
 #include "stdlib/math/base/special/roundn.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/special/abs.h"
-#include "stdlib/constants/float64/max.h"
+#include "stdlib/math/base/special/round.h"
+#include "stdlib/constants/float64/max_safe_integer.h"
 #include "stdlib/constants/float64/max_base10_exponent.h"
 #include "stdlib/constants/float64/min_base10_exponent.h"
+#include "stdlib/constants/float64/min_base10_exponent_subnormal.h"
 #include <stdint.h>
 #include <math.h>
+
+static const double MAX_INT = STDLIB_CONSTANT_FLOAT64_MAX_SAFE_INTEGER + 1.0;
+static const double HUGE_VALUE = 1.0e+308;
 
 /**
 * Rounds a double-precision floating-point number to the nearest multiple of `10^n`.
@@ -111,7 +116,7 @@ double stdlib_base_roundn( const double x, const int32_t n ) {
 	double y;
 
 	if ( isnan( x ) ){
-		return NAN;
+		return 0.0 / 0.0; // NaN
 	}
 
 	if (
@@ -122,10 +127,10 @@ double stdlib_base_roundn( const double x, const int32_t n ) {
 		x == 0.0 ||
 
 		// If `n` exceeds the maximum number of feasible decimal places (such as with subnormal numbers), nothing to round...
-		n < STDLIB_CONSTANT_FLOAT64_MIN_BASE10_EXPONENT ||
+		n < STDLIB_CONSTANT_FLOAT64_MIN_BASE10_EXPONENT_SUBNORMAL ||
 
 		// If `|x|` is large enough, no decimals to round...
-		( stdlib_base_abs( x ) > STDLIB_CONSTANT_FLOAT64_MAX && n <= 0 )
+		( stdlib_base_abs( x ) > MAX_INT && n <= 0 )
 	) {
 		return x;
 	}
@@ -136,16 +141,16 @@ double stdlib_base_roundn( const double x, const int32_t n ) {
 	// If we overflow, return `x`, as the number of digits to the right of the decimal is too small (i.e., `x` is too large / lacks sufficient fractional precision) for there to be any effect when rounding...
 	if ( n < STDLIB_CONSTANT_FLOAT64_MIN_BASE10_EXPONENT ){
 		s = pow( 10.0, -( n + STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) );  // TODO: replace use of `pow` once have stdlib equivalent
-		y = ( x * HUGE ) * s; // order of operation matters!
+		y = ( x * HUGE_VALUE ) * s; // order of operation matters!
 		if ( stdlib_base_is_infinite( y ) ){
 			return x;
 		}
-		return ( round( y ) / HUGE ) / s; // TODO: replace with stdlib round function once implemented
+		return ( stdlib_base_round( y ) / HUGE_VALUE ) / s;
 	}
 	s = pow( 10.0, -n );  // TODO: replace use of `pow` once have stdlib equivalent
 	y = x * s;
 	if ( stdlib_base_is_infinite( y ) ){
 		return x;
 	}
-	return round( y ) / s; // TODO: replace with stdlib round function once implemented
+	return stdlib_base_round( y ) / s;
 }

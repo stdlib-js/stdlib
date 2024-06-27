@@ -45,7 +45,7 @@ var dtype = require( '@stdlib/complex/dtype' );
 Returns the [data type][@stdlib/complex/dtypes] of a complex number.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var dt = dtype( new Complex128( 1.0, 2.0 ) );
 // returns 'complex128'

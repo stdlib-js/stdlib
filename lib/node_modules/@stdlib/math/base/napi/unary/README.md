@@ -187,7 +187,7 @@ void stdlib_math_base_napi_f_f( napi_env env, napi_callback_info info, float (*f
 Invokes a unary function accepting and returning double-precision complex floating-point numbers.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <node_api.h>
 
 // ...
@@ -227,7 +227,7 @@ void stdlib_math_base_napi_z_z( napi_env env, napi_callback_info info, stdlib_co
 Invokes a unary function accepting a double-precision complex floating-point number and returning a double-precision floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <node_api.h>
 
 // ...
@@ -267,7 +267,7 @@ void stdlib_math_base_napi_z_d( napi_env env, napi_callback_info info, double (*
 Invokes a unary function accepting and returning single-precision complex floating-point numbers.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <node_api.h>
 
 // ...
@@ -307,7 +307,7 @@ void stdlib_math_base_napi_c_c( napi_env env, napi_callback_info info, stdlib_co
 Invokes a unary function accepting a single-precision complex floating-point number and returning a single-precision floating-point number.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <node_api.h>
 
 // ...
@@ -469,7 +469,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface for invoking a unary function accepting and returning double-precision complex floating-point numbers.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 
 static stdlib_complex128_t scale( const stdlib_complex128_t x ) {
@@ -501,7 +501,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface for invoking a unary function accepting a double-precision complex floating-point number and returning a double-precision floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 static double fcn( const stdlib_complex128_t x ) {
     // ...
@@ -524,7 +524,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface for invoking a unary function accepting and returning single-precision complex floating-point numbers.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/reimf.h"
 
 static stdlib_complex64_t scale( const stdlib_complex64_t x ) {
@@ -556,7 +556,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface for invoking a unary function accepting a single-precision complex floating-point number and returning a single-precision floating-point number.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 
 static float fcn( const stdlib_complex64_t x ) {
     // ...

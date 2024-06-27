@@ -17,9 +17,9 @@
 
     Examples
     --------
-    > var z1 = new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 )
+    > var z1 = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, 3.0 )
     <Complex128>
-    > var z2 = new {{alias:@stdlib/complex/float64}}( -2.0, 1.0 )
+    > var z2 = new {{alias:@stdlib/complex/float64/ctor}}( -2.0, 1.0 )
     <Complex128>
     > var out = {{alias}}( z1, z2 )
     <Complex128>

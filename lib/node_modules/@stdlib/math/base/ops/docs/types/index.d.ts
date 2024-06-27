@@ -208,7 +208,7 @@ interface Namespace {
 	* @returns result
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
 	*
@@ -234,7 +234,7 @@ interface Namespace {
 	* @returns result
 	*
 	* @example
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	* var realf = require( '@stdlib/complex/realf' );
 	* var imagf = require( '@stdlib/complex/imagf' );
 	*
@@ -260,7 +260,7 @@ interface Namespace {
 	* @returns result
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
 	*
@@ -289,7 +289,7 @@ interface Namespace {
 	* @returns result
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
 	*
@@ -318,7 +318,7 @@ interface Namespace {
 	* @returns result
 	*
 	* @example
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	* var realf = require( '@stdlib/complex/realf' );
 	* var imagf = require( '@stdlib/complex/imagf' );
 	*
@@ -346,7 +346,7 @@ interface Namespace {
 	* @returns result
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
 	*
@@ -363,7 +363,7 @@ interface Namespace {
 	* // returns -5.5
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
 	*
@@ -380,7 +380,7 @@ interface Namespace {
 	* // returns -0.0
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
 	*
@@ -405,7 +405,7 @@ interface Namespace {
 	* @returns result
 	*
 	* @example
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	* var realf = require( '@stdlib/complex/realf' );
 	* var imagf = require( '@stdlib/complex/imagf' );
 	*
@@ -422,7 +422,7 @@ interface Namespace {
 	* // returns -5.5
 	*
 	* @example
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	* var realf = require( '@stdlib/complex/realf' );
 	* var imagf = require( '@stdlib/complex/imagf' );
 	*
@@ -439,7 +439,7 @@ interface Namespace {
 	* // returns -0.0
 	*
 	* @example
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	* var realf = require( '@stdlib/complex/realf' );
 	* var imagf = require( '@stdlib/complex/imagf' );
 	*
@@ -465,7 +465,7 @@ interface Namespace {
 	* @returns result
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	* var real = require( '@stdlib/complex/real' );
 	* var imag = require( '@stdlib/complex/imag' );
 	*
@@ -494,7 +494,7 @@ interface Namespace {
 	* @returns result
 	*
 	* @example
-	* var Complex64 = require( '@stdlib/complex/float32' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	* var realf = require( '@stdlib/complex/realf' );
 	* var imagf = require( '@stdlib/complex/imagf' );
 	*

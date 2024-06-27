@@ -404,7 +404,7 @@ deps_boost_version_slug := $(subst .,_,$(DEPS_BOOST_VERSION))
 DEPS_BOOST_BUILD_OUT ?= $(DEPS_BUILD_DIR)/boost_$(deps_boost_version_slug)
 
 # Define the OpenBLAS version:
-DEPS_OPENBLAS_VERSION ?= 0.2.19
+DEPS_OPENBLAS_VERSION ?= 0.3.27
 
 # Generate a version slug:
 deps_openblas_version_slug := $(subst .,_,$(DEPS_OPENBLAS_VERSION))
@@ -466,6 +466,9 @@ DEPS_OPENBLAS_NO_AVX ?= 1
 
 # Specify whether to use Haswell optimizations if binutils is too old (e.g. RHEL6):
 DEPS_OPENBLAS_NO_AVX2 ?= 1
+
+# Specify whether to use 512-bit extensions to AVX instructions:
+DEPS_OPENBLAS_NO_AVX512 ?= 1
 
 # Specify whether to compile CBLAS:
 DEPS_OPENBLAS_NO_CBLAS ?= 0

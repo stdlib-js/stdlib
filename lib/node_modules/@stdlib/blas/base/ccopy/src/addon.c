@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/base/ccopy.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
@@ -38,7 +39,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, Y, N, strideY, argv, 3 );
-	c_ccopy( N, (void *)X, strideX, (void *)Y, strideY );
+	API_SUFFIX(c_ccopy)( N, (void *)X, strideX, (void *)Y, strideY );
 	return NULL;
 }
 

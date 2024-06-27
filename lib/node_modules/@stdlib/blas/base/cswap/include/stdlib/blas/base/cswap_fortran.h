@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Interchanges two complex single-precision floating-point vectors.
 */
-void cswap( const int *, void *, const int *, void *, const int * );
+void cswap( const CBLAS_INT *, void *, const CBLAS_INT *, void *, const CBLAS_INT * );
 
 #ifdef __cplusplus
 }

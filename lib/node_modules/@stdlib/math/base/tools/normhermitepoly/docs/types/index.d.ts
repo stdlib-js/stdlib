@@ -21,19 +21,19 @@
 /// <reference types="@stdlib/types"/>
 
 /**
-* Evaluates a normalized Hermite polynomial.
+* Evaluates a normalized Hermite polynomial using double-precision floating-point arithmetic.
 *
 * @param x - value at which to evaluate a normalized Hermite polynomial
 * @returns result
 */
-type EvaluationFunction = ( x: number ) => number;
+type PolynomialFunction = ( x: number ) => number;
 
 /**
 * Interface for evaluating normalized Hermite polynomials.
 */
 interface NormHermitePoly {
 	/**
-	* Evaluates a normalized Hermite polynomial.
+	* Evaluates a normalized Hermite polynomial using double-precision floating-point arithmetic.
 	*
 	* @param n - nonnegative polynomial degree
 	* @param x - evaluation point
@@ -58,7 +58,7 @@ interface NormHermitePoly {
 	( n: number, x: number ): number;
 
 	/**
-	* Returns a function for evaluating a normalized Hermite polynomial.
+	* Returns a function for evaluating a normalized Hermite polynomial using double-precision floating-point arithmetic.
 	*
 	* @param n - polynomial degree
 	* @returns function for evaluating a normalized Hermite polynomial
@@ -69,11 +69,11 @@ interface NormHermitePoly {
 	* var v = polyval( 0.5 );
 	* // returns -0.75
 	*/
-	factory( n: number ): EvaluationFunction;
+	factory( n: number ): PolynomialFunction;
 }
 
 /**
-* Evaluates a normalized Hermite polynomial.
+* Evaluates a normalized Hermite polynomial using double-precision floating-point arithmetic.
 *
 * @param n - nonnegative polynomial degree
 * @param x - evaluation point

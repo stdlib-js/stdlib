@@ -41,7 +41,7 @@ var cpolar = require( '@stdlib/math/base/special/cpolar' );
 Computes the [absolute value][@stdlib/math/base/special/cabs] and [phase][@stdlib/math/base/special/cphase] of a double-precision complex floating-point number.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var o = cpolar( new Complex128( 5.0, 3.0 ) );
 // returns [ ~5.83, ~0.5404 ]
@@ -52,7 +52,7 @@ var o = cpolar( new Complex128( 5.0, 3.0 ) );
 Computes the [absolute value][@stdlib/math/base/special/cabs] and [phase][@stdlib/math/base/special/cphase] of a double-precision complex floating-point number and assigns results to a provided output array.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var Float64Array = require( '@stdlib/array/float64' );
 
 var out = new Float64Array( 2 );
@@ -75,7 +75,7 @@ var bool = ( v === out );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var randu = require( '@stdlib/random/base/randu' );
 var round = require( '@stdlib/math/base/special/round' );
 var real = require( '@stdlib/complex/real' );
@@ -133,7 +133,7 @@ for ( i = 0; i < 100; i++ ) {
 Computes the [absolute value][@stdlib/math/base/special/cabs] and [phase][@stdlib/math/base/special/cphase] of a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/real.h"
 #include "stdlib/complex/imag.h"
 
@@ -173,7 +173,7 @@ double stdlib_base_cpolar( const stdlib_complex128_t z, double *cabs, double *cp
 
 ```c
 #include "stdlib/math/base/special/cpolar.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 

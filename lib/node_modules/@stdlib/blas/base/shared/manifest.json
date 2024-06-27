@@ -1,0 +1,44 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [
+				"./src/main.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+        "@stdlib/blas/base/diagonal-types",
+        "@stdlib/blas/base/layouts",
+        "@stdlib/blas/base/matrix-triangles",
+        "@stdlib/blas/base/operation-sides",
+        "@stdlib/blas/base/transpose-operations"
+      ]
+		}
+	]
+}

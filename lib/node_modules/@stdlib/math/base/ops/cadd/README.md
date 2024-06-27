@@ -41,7 +41,7 @@ var cadd = require( '@stdlib/math/base/ops/cadd' );
 Adds two double-precision complex floating-point numbers.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
 
@@ -68,7 +68,7 @@ var im = imag( v );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var cadd = require( '@stdlib/math/base/ops/cadd' );
 
@@ -122,7 +122,7 @@ for ( i = 0; i < 100; i++ ) {
 Adds two double-precision complex floating-point numbers.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/real.h"
 #include "stdlib/complex/imag.h"
 
@@ -166,7 +166,7 @@ stdlib_complex128_t stdlib_base_cadd( const stdlib_complex128_t z1, const stdlib
 
 ```c
 #include "stdlib/math/base/ops/cadd.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 

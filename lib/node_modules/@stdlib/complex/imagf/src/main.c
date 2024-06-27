@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/imagf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 
 /**
 * Returns the imaginary component of a single-precision complex floating-point number.
@@ -26,7 +26,7 @@
 * @return      imaginary component
 *
 * @example
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 *
 * stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
 *

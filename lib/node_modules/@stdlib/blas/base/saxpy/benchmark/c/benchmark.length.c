@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `saxpy`.
-*/
 #include "stdlib/blas/base/saxpy.h"
 #include <stdlib.h>
 #include <stdio.h>

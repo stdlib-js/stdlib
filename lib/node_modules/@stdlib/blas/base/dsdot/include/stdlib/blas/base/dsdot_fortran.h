@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Computes the dot product of two single-precision floating-point vectors with extended accumulation and result.
 */
-void dsdotsub( const int *, const float *, const int *, const float *, const int *, double * );
+void dsdotsub( const CBLAS_INT *, const float *, const CBLAS_INT *, const float *, const CBLAS_INT *, double * );
 
 #ifdef __cplusplus
 }

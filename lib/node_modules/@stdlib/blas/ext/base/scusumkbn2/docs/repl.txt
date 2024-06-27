@@ -1,13 +1,13 @@
 
 {{alias}}( N, sum, x, strideX, y, strideY )
-    Computes the cumulative sum of single-precision floating-point strided array
-    elements using a second-order iterative Kahan–Babuška algorithm.
+    Computes the cumulative sum of single-precision floating-point strided 
+    array elements using a second-order iterative Kahan–Babuška algorithm.
 
-    The `N` and `stride` parameters determine which elements in `x` and `y` are
-    accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided
+    arrays are accessed at runtime.
 
-    Indexing is relative to the first index. To introduce an offset, use a typed
-    array view.
+    Indexing is relative to the first index. To introduce an offset, use 
+    a typed array view.
 
     If `N <= 0`, the function returns `y` unchanged.
 
@@ -44,11 +44,10 @@
     > {{alias}}( x.length, 0.0, x, 1, y, 1 )
     <Float32Array>[ 1.0, -1.0, 1.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
     > y = new {{alias:@stdlib/array/float32}}( x.length );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}( N, 0.0, x, 2, y, 2 )
+    > {{alias}}( 3, 0.0, x, 2, y, 2 )
     <Float32Array>[ -2.0, 0.0, -1.0, 0.0, 1.0, 0.0 ]
 
     // Using view offsets:
@@ -62,14 +61,16 @@
     > y0
     <Float32Array>[ 0.0, 0.0, 0.0, -2.0, 0.0, -1.0 ]
 
+
 {{alias}}.ndarray( N, sum, x, strideX, offsetX, y, strideY, offsetY )
-    Computes the cumulative sum of single-precision floating-point strided array
-    elements using a second-order iterative Kahan–Babuška algorithm and
+    Computes the cumulative sum of single-precision floating-point strided
+    array elements using a second-order iterative Kahan–Babuška algorithm and
     alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the `offsetX` and `offsetY` parameter supports indexing semantics
+    based on starting indices.
+
 
     Parameters
     ----------
@@ -97,10 +98,12 @@
     offsetY: integer
         Starting index for `y`.
 
+
     Returns
     -------
     out: Float32Array
         Output array.
+
 
     Examples
     --------
@@ -113,9 +116,9 @@
     // Advanced indexing:
     > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ] );
     > y = new {{alias:@stdlib/array/float32}}( x.length );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, 0.0, x, 2, 1, y, -1, y.length-1 )
+    > {{alias}}.ndarray( 3, 0.0, x, 2, 1, y, -1, y.length-1 )
     <Float32Array>[ 0.0, 0.0, 0.0, -1.0, 0.0, -2.0 ]
+
 
     See Also
     --------

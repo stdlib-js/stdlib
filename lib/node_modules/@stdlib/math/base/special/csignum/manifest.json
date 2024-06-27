@@ -37,7 +37,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/complex/float64",
+        "@stdlib/complex/float64/ctor",
         "@stdlib/complex/reim",
         "@stdlib/math/base/special/cabs"
       ]
@@ -53,7 +53,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/complex/float64",
+        "@stdlib/complex/float64/ctor",
         "@stdlib/complex/reim",
         "@stdlib/math/base/special/cabs"
       ]
@@ -69,7 +69,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/complex/float64",
+        "@stdlib/complex/float64/ctor",
         "@stdlib/complex/reim",
         "@stdlib/math/base/special/cabs"
       ]

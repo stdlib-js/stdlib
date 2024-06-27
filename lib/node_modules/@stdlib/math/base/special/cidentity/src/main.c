@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/math/base/special/cidentity.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 /**
 * Evaluates the identity function for a double-precision complex floating-point number.
@@ -26,7 +26,7 @@
 * @return        input value
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/real.h"
 * #include "stdlib/complex/imag.h"
 *

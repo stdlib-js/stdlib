@@ -100,11 +100,10 @@ var out = parseNDJSON( str, reviver );
     ```javascript
     var out = JSON.parse( '{"a":"b"}', [] );
     // returns { 'a': 'b' }
- 
+
     out = parseNDJSON( '{"a":"b"}', [] );
     // throws <TypeError>
     ```
-
 
 </section>
 

@@ -31,7 +31,7 @@
 * @example
 * var v = factorial2( 4 );
 * // returns 8
-* 
+*
 * @example
 * var v = factorial2( -10 );
 * // returns NaN

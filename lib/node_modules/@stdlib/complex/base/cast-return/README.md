@@ -45,7 +45,7 @@ var castReturn = require( '@stdlib/complex/base/cast-return' );
 Returns a function which wraps a function and casts a function's return value to a complex number.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var addf = require( '@stdlib/math/base/ops/addf' );
 
 var f = castReturn( addf, 2, Complex64 );
@@ -84,7 +84,7 @@ The function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var addf = require( '@stdlib/math/base/ops/addf' );
 var realf = require( '@stdlib/complex/realf' );
 var imagf = require( '@stdlib/complex/imagf' );
