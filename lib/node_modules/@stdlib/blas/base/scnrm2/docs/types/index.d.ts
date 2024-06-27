@@ -75,17 +75,17 @@ interface Routine {
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 *
-* var cx = new Complex64Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
+* var cx = new Complex64Array( [ 0.3, 0.1, 5.0, 8.0, 0.5, 0.0, 6.0, 9.0, 0.0, 0.5, 8.0, 3.0, 0.0, 0.2, 9.0, 4.0 ] );
 *
-* var norm = scnrm2( 4, cx, 1 );
+* var norm = scnrm2( 4, cx, 2 );
 * // returns ~0.8
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 *
-* var cx = new Complex64Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
+* var cx = new Complex64Array( [ 0.3, 0.1, 5.0, 8.0, 0.5, 0.0, 6.0, 9.0, 0.0, 0.5, 8.0, 3.0, 0.0, 0.2, 9.0, 4.0 ] );
 *
-* var norm = scnrm2.ndarray( 4, cx, 1, 0 );
+* var norm = scnrm2.ndarray( 4, cx, 2, 0 );
 * // returns ~0.8
 */
 declare var scnrm2: Routine;

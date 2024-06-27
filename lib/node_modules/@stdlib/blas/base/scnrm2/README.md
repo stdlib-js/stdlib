@@ -128,7 +128,7 @@ var norm = scnrm2.ndarray( 2, cx, 1, 1 );
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var scnrm2 = require( '@stdlib/blas/base/scnrm2' );
 
 function rand() {
