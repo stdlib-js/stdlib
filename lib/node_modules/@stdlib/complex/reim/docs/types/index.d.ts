@@ -29,7 +29,7 @@ import { Complex128 } from '@stdlib/types/complex';
 * @returns real and imaginary components
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var z = new Complex128( 5.0, 3.0 );
 *

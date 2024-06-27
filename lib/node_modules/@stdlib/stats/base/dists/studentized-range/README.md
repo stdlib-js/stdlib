@@ -65,10 +65,25 @@ The namespace contains the following distribution functions:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var objectKeys = require( '@stdlib/utils/keys' );
 var tukey = require( '@stdlib/stats/base/dists/studentized-range' );
 
-console.log( objectKeys( tukey ) );
+/*
+* Let's consider an example where we are analyzing the test scores of students in a class.
+* We're interested in using the Studentized Range Distribution to analyze the range of scores.
+* The distribution has parameters: r (number of means), v (degrees of freedom), and nranges (number of ranges).
+*/
+
+var r = 5.0;
+var v = 20.0;
+var nranges = 3.0;
+
+// CDF can be used to calculate the cumulative distribution function at a specific value:
+var out = tukey.cdf( 2.0, r, v, nranges );
+// returns ~0.074
+
+// Quantile can also be used to calculate the quantile function at a specific probability:
+out = tukey.quantile( 0.9, r, v, nranges );
+// returns ~4.433
 ```
 
 </section>

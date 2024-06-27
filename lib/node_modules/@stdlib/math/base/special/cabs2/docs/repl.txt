@@ -17,7 +17,7 @@
 
     Examples
     --------
-    > var y = {{alias}}( new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 ) )
+    > var y = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 5.0, 3.0 ) )
     34.0
 
     See Also

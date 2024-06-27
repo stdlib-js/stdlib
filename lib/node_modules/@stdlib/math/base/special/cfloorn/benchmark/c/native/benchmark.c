@@ -20,7 +20,7 @@
 * Benchmark `cfloorn`.
 */
 #include "stdlib/math/base/special/cfloorn.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdlib.h>
 #include <stdio.h>

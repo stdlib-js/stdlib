@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/math/base/special/cround.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <math.h>
 
@@ -28,7 +28,7 @@
 * @return        result
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/real.h"
 * #include "stdlib/complex/imag.h"
 *

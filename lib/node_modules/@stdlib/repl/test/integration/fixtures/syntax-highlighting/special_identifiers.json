@@ -1,0 +1,7 @@
+{
+  "expression": "class Foo { constructor() { this.a = 1; } } class Bar extends Foo { constructor() { super(); this.b = 2; } }",
+  "expected": "class Foo { constructor() { \u001b[31mthis\u001b[0m.a = 1; } } class Bar extends Foo { constructor() { \u001b[31msuper\u001b[0m(); \u001b[31mthis\u001b[0m.b = 2; } }",
+  "theme": {
+    "specialIdentifier": "red"
+  }
+}

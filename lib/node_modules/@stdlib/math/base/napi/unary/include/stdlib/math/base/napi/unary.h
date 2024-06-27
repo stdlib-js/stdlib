@@ -19,8 +19,8 @@
 #ifndef STDLIB_MATH_BASE_NAPI_UNARY_H
 #define STDLIB_MATH_BASE_NAPI_UNARY_H
 
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <node_api.h>
 #include <assert.h>
 #include <stdint.h>
@@ -111,7 +111,7 @@
 * @param fcn   unary function
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/reim.h"
 *
 * static stdlib_complex128_t scale( const stdlib_complex128_t x ) {
@@ -162,7 +162,7 @@
 * @param fcn   unary function
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * static double fcn( const stdlib_complex128_t x ) {
 *     // ...
@@ -204,7 +204,7 @@
 * @param fcn   unary function
 *
 * @example
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 * #include "stdlib/complex/reimf.h"
 *
 * static stdlib_complex64_t scale( const stdlib_complex64_t x ) {
@@ -255,7 +255,7 @@
 * @param fcn   unary function
 *
 * @example
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 *
 * static float fcn( const stdlib_complex64_t x ) {
 *     // ...

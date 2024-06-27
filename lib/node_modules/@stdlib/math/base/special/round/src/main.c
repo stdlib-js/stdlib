@@ -41,5 +41,9 @@ double stdlib_base_round( const double x ) {
 	if ( x > 0.0 && x < 0.5 ) {
 		return 0.0; // 0
 	}
+	// If the magnitude is big enough, there's no place for the fraction part. If we try to add 0.5 to this number, 1.0 will be added instead...
+	if ( x >= 4503599627370496.0 || x <= -4503599627370496.0 ) {
+		return x;
+	}
 	return stdlib_base_floor( x + 0.5 );
 }

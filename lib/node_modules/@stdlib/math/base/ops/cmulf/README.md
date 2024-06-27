@@ -41,7 +41,7 @@ var cmulf = require( '@stdlib/math/base/ops/cmulf' );
 Multiples two single-precision complex floating-point numbers.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var realf = require( '@stdlib/complex/realf' );
 var imagf = require( '@stdlib/complex/imagf' );
 
@@ -69,7 +69,7 @@ var im = imagf( v );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var cmulf = require( '@stdlib/math/base/ops/cmulf' );
 
@@ -123,7 +123,7 @@ for ( i = 0; i < 100; i++ ) {
 Multiplies two single-precision complex floating-point numbers.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/realf.h"
 #include "stdlib/complex/imagf.h"
 
@@ -168,7 +168,7 @@ stdlib_complex64_t stdlib_base_cmulf( const stdlib_complex64_t z1, const stdlib_
 
 ```c
 #include "stdlib/math/base/ops/cmulf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/reimf.h"
 #include <stdio.h>
 

@@ -22,7 +22,7 @@
 
 #include "stdlib/strided/base/binary/bs_z_as_zz_z.h"
 #include "stdlib/strided/base/binary/macros.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 /**
@@ -35,7 +35,7 @@
 *
 * @example
 * #include "stdlib/strided/base/binary/bs_z_as_zz_z.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 *
 * // Create underlying byte arrays:
