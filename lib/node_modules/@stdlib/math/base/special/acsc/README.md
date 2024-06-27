@@ -103,7 +103,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_acsc( x )
 
-Computes the [arccosecant][arccosecant] of `x`.
+Computes the [arccosecant][arccosecant] of a double-precision floating-point number.
 
 ```c
 double out = stdlib_base_acsc( 1.0 );

@@ -43,7 +43,7 @@ var cphase = require( '@stdlib/math/base/special/cphase' );
 Computes the [argument][complex-number-argument] of a double-precision complex floating-point number.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var phi = cphase( new Complex128( 5.0, 3.0 ) );
 // returns ~0.5404
@@ -60,7 +60,7 @@ var phi = cphase( new Complex128( 5.0, 3.0 ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var uniform = require( '@stdlib/random/base/uniform' );
 var cphase = require( '@stdlib/math/base/special/cphase' );
 
@@ -108,7 +108,7 @@ for ( i = 0; i < 100; i++ ) {
 Computes the [argument][complex-number-argument] of a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/real.h"
 #include "stdlib/complex/imag.h"
 
@@ -145,7 +145,7 @@ double stdlib_base_cphase( const stdlib_complex128_t z );
 
 ```c
 #include "stdlib/math/base/special/cphase.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 

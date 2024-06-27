@@ -19,7 +19,7 @@
 #ifndef STDLIB_COMPLEX_IMAG_H
 #define STDLIB_COMPLEX_IMAG_H
 
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.

@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/conj.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 /**
 * Returns the complex conjugate of a double-precision complex floating-point number.
@@ -26,7 +26,7 @@
 * @return      complex conjugate
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/real.h"
 * #include "stdlib/complex/imag.h"
 *

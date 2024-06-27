@@ -45,7 +45,7 @@ var cnegf = require( '@stdlib/math/base/ops/cnegf' );
 Negates a single-precision complex floating-point number.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var realf = require( '@stdlib/complex/realf' );
 var imagf = require( '@stdlib/complex/imagf' );
 
@@ -104,7 +104,7 @@ im = imagf( out );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var cnegf = require( '@stdlib/math/base/ops/cnegf' );
 
@@ -160,7 +160,7 @@ for ( i = 0; i < 100; i++ ) {
 Negates a single-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/realf.h"
 #include "stdlib/complex/imagf.h"
 
@@ -202,7 +202,7 @@ stdlib_complex64_t stdlib_base_cnegf( const stdlib_complex64_t z );
 
 ```c
 #include "stdlib/math/base/ops/cnegf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/reimf.h"
 #include <stdio.h>
 

@@ -46,7 +46,7 @@ interface Take {
 	* var y = take( x, [ 1, 3 ], 'throw' );
 	* // returns [ 2, 4 ]
 	*/
-	<T = unknown>( x: Collection<T>, indices: IndexArray, mode: Mode ): Array<T>;
+	<T = unknown>( x: Collection<T> | AccessorArrayLike<T>, indices: IndexArray, mode: Mode ): Array<T>;
 
 	/**
 	* Takes elements from an array and assigns the value to elements in a provided output array.

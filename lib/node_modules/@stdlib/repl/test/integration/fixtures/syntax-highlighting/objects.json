@@ -1,0 +1,7 @@
+{
+  "expression": "var a = { 'b': 4 };\na",
+  "expected": "\u001b[31ma\u001b[0m",
+  "theme": {
+    "object": "red"
+  }
+}

@@ -1,6 +1,6 @@
 
 {{alias}}( x )
-    Evaluates Spence’s function, which is also known as the dilogarithm.
+    Evaluates Spence's function, which is also known as the dilogarithm.
 
     Parameters
     ----------
