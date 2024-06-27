@@ -45,7 +45,7 @@ var reim = require( '@stdlib/complex/reim' );
 Returns the **real** and **imaginary** components of a double-precision complex floating-point number.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var z = new Complex128( 5.0, 3.0 );
 var out = reim( z );
@@ -73,7 +73,7 @@ var out = reim( z );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var randu = require( '@stdlib/random/base/randu' );
 var round = require( '@stdlib/math/base/special/round' );
 var reim = require( '@stdlib/complex/reim' );
@@ -128,7 +128,7 @@ for ( i = 0; i < 100; i++ ) {
 Returns the real and imaginary components of a double-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 stdlib_complex128_t z = stdlib_complex128( 5.0, 2.0 );
 
@@ -170,7 +170,7 @@ void stdlib_reim( const stdlib_complex128_t z, double *re, double *im );
 
 ```c
 #include "stdlib/complex/reim.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdio.h>
 
 int main( void ) {

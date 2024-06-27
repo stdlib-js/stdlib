@@ -119,7 +119,7 @@
 * @param tout  output type
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NOCAST( stdlib_complex128_t )
 */
@@ -140,8 +140,8 @@
 * @param cout  output casting function
 *
 * @example
-* #include "stdlib/complex/float32.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float32/ctor.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_CAST_FCN( stdlib_complex64_t, stdlib_complex128_to_complex64 )
 */

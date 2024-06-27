@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `daxpy`.
-*/
 #include "stdlib/blas/base/daxpy.h"
 #include <stdlib.h>
 #include <stdio.h>

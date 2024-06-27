@@ -45,7 +45,7 @@ var reimf = require( '@stdlib/complex/reimf' );
 Returns the **real** and **imaginary** components of a single-precision complex floating-point number.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var z = new Complex64( 5.0, 3.0 );
 var out = reimf( z );
@@ -73,7 +73,7 @@ var out = reimf( z );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var randu = require( '@stdlib/random/base/randu' );
 var round = require( '@stdlib/math/base/special/round' );
 var reimf = require( '@stdlib/complex/reimf' );
@@ -128,7 +128,7 @@ for ( i = 0; i < 100; i++ ) {
 Returns the real and imaginary components of a single-precision complex floating-point number.
 
 ```c
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 
 stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
 
@@ -170,7 +170,7 @@ void stdlib_reimf( const stdlib_complex64_t z, float *re, float *im );
 
 ```c
 #include "stdlib/complex/reimf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdio.h>
 
 int main( void ) {

@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/base/dscal.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_double.h"
@@ -38,7 +39,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_DOUBLE( env, alpha, argv, 1 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 2 );
-	c_dscal( N, alpha, X, strideX );
+	API_SUFFIX(c_dscal)( N, alpha, X, strideX );
 	return NULL;
 }
 

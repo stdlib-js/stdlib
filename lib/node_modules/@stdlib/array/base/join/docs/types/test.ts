@@ -53,6 +53,7 @@ import join = require( './index' );
 {
 	const x = [ 1, 2, 3 ];
 
+	join( x, 5 ); // $ExpectError
 	join( x, true ); // $ExpectError
 	join( x, false ); // $ExpectError
 	join( x, null ); // $ExpectError

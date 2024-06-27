@@ -21,8 +21,8 @@
 #include "stdlib/ndarray/dtypes.h"
 #include "stdlib/ndarray/index_modes.h"
 #include "stdlib/ndarray/base/ind.h"
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdbool.h>

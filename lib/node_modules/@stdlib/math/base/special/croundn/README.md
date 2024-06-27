@@ -35,7 +35,7 @@ var croundn = require( '@stdlib/math/base/special/croundn' );
 Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n`.
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
 
@@ -87,7 +87,7 @@ im = imag( v );
 -   When operating on [floating-point numbers][ieee754] in bases other than `2`, rounding to specified digits can be **inexact**. For example,
 
     ```javascript
-    var Complex128 = require( '@stdlib/complex/float64' );
+    var Complex128 = require( '@stdlib/complex/float64/ctor' );
     var real = require( '@stdlib/complex/real' );
     var imag = require( '@stdlib/complex/imag' );
 
@@ -117,7 +117,7 @@ im = imag( v );
 
 ```javascript
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var floor = require( '@stdlib/math/base/special/floor' );
 var croundn = require( '@stdlib/math/base/special/croundn' );
 
@@ -169,7 +169,7 @@ for ( i = 0; i < 100; i++ ) {
 Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n`.
 
 ```c
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/real.h"
 #include "stdlib/complex/imag.h"
 
@@ -213,7 +213,7 @@ stdlib_complex128_t stdlib_base_croundn( const stdlib_complex128_t z, const int3
 
 ```c
 #include "stdlib/math/base/special/croundn.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/reim.h"
 #include <stdio.h>
 

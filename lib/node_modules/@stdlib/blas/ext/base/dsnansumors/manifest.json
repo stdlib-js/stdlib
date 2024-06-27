@@ -1,6 +1,8 @@
 {
-	"options": {},
-	"fields": [
+  "options": {
+    "task": "build"
+  },
+  "fields": [
 		{
 			"field": "src",
 			"resolve": true,
@@ -21,22 +23,59 @@
 			"resolve": true,
 			"relative": false
 		}
-	],
-	"confs": [
-		{
-			"src": [
-				"./src/dsnansumors.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/math/base/assert/is-nanf"
-			]
-		}
-	]
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/dsnansumors.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/math/base/assert/is-nanf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/dsnansumors.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/dsnansumors.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf"
+      ]
+    }
+  ]
 }

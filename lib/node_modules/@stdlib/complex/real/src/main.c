@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/real.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 
 /**
 * Returns the real component of a double-precision complex floating-point number.
@@ -26,7 +26,7 @@
 * @return      real component
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * stdlib_complex128_t z = stdlib_complex128( 5.0, 2.0 );
 *

@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/reimf.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 
 /**
 * Returns the real and imaginary components of a single-precision complex floating-point number.
@@ -27,7 +27,7 @@
 * @param im    destination for imaginary component
 *
 * @example
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 *
 * stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
 *

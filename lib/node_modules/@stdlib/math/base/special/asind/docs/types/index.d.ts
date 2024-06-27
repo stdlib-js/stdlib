@@ -33,11 +33,15 @@
 * // returns ~30.0
 *
 * @example
-* var v = asind( Math.sqrt( 2.0 ) / 2.0 );
+* var sqrt = require( '@stdlib/math/base/special/sqrt' );
+*
+* var v = asindf( sqrt( 2.0 ) / 2.0 );
 * // returns ~45.0
 *
 * @example
-* var v = asind( Math.sqrt( 3.0 ) / 2.0 );
+* var sqrt = require( '@stdlib/math/base/special/sqrt' );
+*
+** var v = asindf( sqrt( 3.0 ) / 2.0 );
 * // returns ~60.0
 *
 * @example

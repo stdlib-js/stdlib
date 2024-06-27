@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Copies values from `X` into `Y`.
 */
-void dcopy( const int *, const double *, const int *, double *, const int * );
+void dcopy( const CBLAS_INT *, const double *, const CBLAS_INT *, double *, const CBLAS_INT * );
 
 #ifdef __cplusplus
 }
