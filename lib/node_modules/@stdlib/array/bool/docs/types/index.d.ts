@@ -586,6 +586,49 @@ declare class BooleanArray implements BooleanArrayInterface {
 	set( value: ArrayLike<any> | any, i?: number ): void;
 
 	/**
+	* Copies a portion of a typed array to a new typed array.
+	*
+	* @param start - starting index (inclusive)
+	* @param end - ending index (exclusive)
+	* @throws indices must be integers
+	* @returns output array
+	*
+	* @example
+	* var arr = new BooleanArray( 5 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	* arr.set( false, 3 );
+	* arr.set( true, 4 );
+	*
+	* var out = arr.slice();
+	* // returns <BooleanArray>
+	*
+	* var len = out.length;
+	* // returns 5
+	*
+	* var bool = out.get( 0 );
+	* // returns true
+	*
+	* bool = out.get( len-1 );
+	* // returns true
+	*
+	* out = arr.slice( 1, -2 );
+	* // returns <BooleanArray>
+	*
+	* len = out.length;
+	* // returns 2
+	*
+	* bool = out.get( 0 );
+	* // returns false
+	*
+	* bool = out.get( len-1 );
+	* // returns true
+	*/
+	slice( start?: number, end?: number ): BooleanArray;
+
+	/**
 	* Tests whether at least one element in an array passes a test implemented by a predicate function.
 	*
 	* @param predicate - predicate function
@@ -646,6 +689,49 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns false
 	*/
 	sort( compareFcn: CompareFcn ): BooleanArray;
+
+	/**
+	* Creates a new typed array view over the same underlying `ArrayBuffer` and with the same underlying data type as the host array.
+	*
+	* @param begin - starting index (inclusive)
+	* @param end - ending index (exclusive)
+	* @throws indices must be integers
+	* @returns subarray
+	*
+	* @example
+	* var arr = new BooleanArray( 5 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	* arr.set( false, 3 );
+	* arr.set( true, 4 );
+	*
+	* var subarr = arr.subarray();
+	* // returns <BooleanArray>
+	*
+	* var len = subarr.length;
+	* // returns 5
+	*
+	* var bool = subarr.get( 0 );
+	* // returns true
+	*
+	* bool = subarr.get( len-1 );
+	* // returns true
+	*
+	* subarr = arr.subarray( 1, -2 );
+	* // returns <BooleanArray>
+	*
+	* len = subarr.length;
+	* // returns 2
+	*
+	* bool = subarr.get( 0 );
+	* // returns false
+	*
+	* bool = subarr.get( len-1 );
+	* // returns true
+	*/
+	subarray( begin?: number, end?: number ): BooleanArray;
 
 	/**
 	* Returns a new typed array containing the elements in reversed order.
