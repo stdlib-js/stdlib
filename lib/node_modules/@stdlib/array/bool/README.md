@@ -865,6 +865,82 @@ A few notes:
 -   If a target array cannot accommodate all values (i.e., the length of source array plus `i` exceeds the target array length), the method throws an error.
 -   If provided a [typed array][@stdlib/array/typed] which shares an [`ArrayBuffer`][@stdlib/array/buffer] with the target array, the method will intelligently copy the source range to the destination range.
 
+<a name="method-slice"></a>
+
+#### BooleanArray.prototype.slice( \[start\[, end]] )
+
+Copies a portion of a typed array to a new typed array.
+
+```javascript
+var arr = new BooleanArray( 5 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+arr.set( false, 3 );
+arr.set( true, 4 );
+
+var out = arr.slice();
+// returns <BooleanArray>
+
+var len = out.length;
+// returns 5
+
+var bool = out.get( 0 );
+// returns true
+
+bool = out.get( len-1 );
+// returns true
+```
+
+By default, the method returns a typed array beginning with the first array element. To specify an alternative array index at which to begin, provide a `start` index (inclusive).
+
+```javascript
+var arr = new BooleanArray( 5 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+arr.set( false, 3 );
+arr.set( true, 4 );
+
+var out = arr.slice( 1 );
+// returns <BooleanArray>
+
+var len = out.length;
+// returns 4
+
+var bool = out.get( 0 );
+// returns false
+
+bool = out.get( len-1 );
+// returns true
+```
+
+By default, the method returns a typed array which includes all array elements after `start`. To limit the number of array elements after `start`, provide an `end` index (exclusive).
+
+```javascript
+var arr = new BooleanArray( 5 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+arr.set( false, 3 );
+arr.set( true, 4 );
+
+var out = arr.slice( 1, -2 );
+// returns <BooleanArray>
+
+var len = out.length;
+// returns 2
+
+var bool = out.get( 0 );
+// returns false
+
+bool = out.get( len-1 );
+// returns true
+```
+
 <a name="method-some"></a>
 
 #### BooleanArray.prototype.some( predicate\[, thisArg] )
@@ -967,6 +1043,82 @@ The function should return a number where:
 -   zero or `NaN` indicates that `a` and `b` are considered equal.
 
 <a name="method-to-reversed"></a>
+
+<a name="method-subarray"></a>
+
+#### BooleanArray.prototype.subarray( \[begin\[, end]] )
+
+Creates a new typed array view over the same underlying [`ArrayBuffer`][@stdlib/array/buffer] and with the same underlying data type as the host array.
+
+```javascript
+var arr = new BooleanArray( 5 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+arr.set( false, 3 );
+arr.set( true, 4 );
+
+var subarr = arr.subarray();
+// returns <BooleanArray>
+
+var len = subarr.length;
+// returns 5
+
+var bool = subarr.get( 0 );
+// returns true
+
+bool = subarr.get( len-1 );
+// returns true
+```
+
+By default, the method creates a typed array view beginning with the first array element. To specify an alternative array index at which to begin, provide a `begin` index (inclusive).
+
+```javascript
+var arr = new BooleanArray( 5 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+arr.set( false, 3 );
+arr.set( true, 4 );
+
+var subarr = arr.subarray( 1 );
+// returns <BooleanArray>
+
+var len = subarr.length;
+// returns 4
+
+var bool = subarr.get( 0 );
+// returns false
+
+bool = subarr.get( len-1 );
+// returns true
+```
+
+By default, the method creates a typed array view which includes all array elements after `begin`. To limit the number of array elements after `begin`, provide an `end` index (exclusive).
+
+```javascript
+var arr = new BooleanArray( 5 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+arr.set( false, 3 );
+arr.set( true, 4 );
+
+var subarr = arr.subarray( 1, -2 );
+// returns <BooleanArray>
+
+var len = subarr.length;
+// returns 2
+
+var bool = subarr.get( 0 );
+// returns false
+
+bool = subarr.get( len-1 );
+// returns true
+```
 
 #### BooleanArray.prototype.toReversed()
 

@@ -665,6 +665,38 @@
     true
 
 
+{{alias}}.prototype.slice( [start[, end]] )
+    Copies a portion of a typed array to a new typed array.
+
+    Parameters
+    ----------
+    start: integer (optional)
+        Start index. If less than zero, the start index is resolved relative to
+        the last array element. Default: 0.
+
+    end: integer (optional)
+        End index (non-inclusive). If less than zero, the end index is resolved
+        relative to the last array element. Default: out.length.
+
+    Returns
+    -------
+    out: BooleanArray
+        New typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, true, false, true ] )
+    <BooleanArray>
+    > var out = arr.slice( 1 )
+    <BooleanArray>
+    > var len = out.length
+    4
+    > var v = out.get( 0 )
+    false
+    > v = out.get( 1 )
+    true
+
+
 {{alias}}.prototype.some( predicate[, thisArg] )
     Returns a boolean indicating whether at least one element passes a test.
 
@@ -733,6 +765,39 @@
     true
     > v = arr.get( 2 )
     false
+
+
+{{alias}}.prototype.subarray( [begin[, end]] )
+    Creates a new typed array view over the same underlying `ArrayBuffer` and
+    with the same underlying data type as the host array.
+
+    Parameters
+    ----------
+    begin: integer (optional)
+        Start index. If less than zero, the start index is resolved relative to
+        the last array element. Default: 0.
+
+    end: integer (optional)
+        End index (non-inclusive). If less than zero, the end index is resolved
+        relative to the last array element. Default: out.length.
+
+    Returns
+    -------
+    out: BooleanArray
+        New typed array view.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, true, false, true ] )
+    <BooleanArray>
+    > var out = arr.subarray( 1, 3 )
+    <BooleanArray>
+    > var len = out.length
+    2
+    > var v = out.get( 0 )
+    false
+    > v = out.get( 1 )
+    true
 
 
 {{alias}}.prototype.toReversed()
