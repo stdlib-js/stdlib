@@ -675,7 +675,8 @@ interface Namespace {
 	*
 	* -   If a `dtype` argument is not provided and `value`
 	*
-	*     -   is a `number`, the default data type is the default real-valued floating-point data type.
+	*     -   is a number, the default data type is the default real-valued floating-point data type.
+	*     -   is a boolean, the default data type is the default boolean data type.
 	*     -   is a complex number object of a known complex data type, the data type is the same as the provided value.
 	*     -   is a complex number object of an unknown complex data type, the default data type is the default complex-valued floating-point data type.
 	*     -   is any other value type, the default data type is `'generic'`.
