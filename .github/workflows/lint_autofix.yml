@@ -149,6 +149,12 @@ jobs:
           files="${{ steps.changed-files.outputs.files }}"
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/add_trailing_newlines" "$files"
 
+      # Remove related packages from README.md files:
+      - name: 'Remove related packages from README.md files'
+        run: |
+          files="${{ steps.changed-files.outputs.files }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/remove_related_packages" "$files"
+
       # Disable Git hooks:
       - name: 'Disable Git hooks'
         run: |
