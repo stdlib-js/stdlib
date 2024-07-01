@@ -596,21 +596,6 @@ interface Namespace {
 	/**
 	* Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
 	*
-	* The function recognizes the following data types:
-	*
-	* -   `float64`: double-precision floating-point numbers (IEEE 754)
-	* -   `float32`: single-precision floating-point numbers (IEEE 754)
-	* -   `complex128`: double-precision complex floating-point numbers
-	* -   `complex64`: single-precision complex floating-point numbers
-	* -   `int32`: 32-bit two's complement signed integers
-	* -   `uint32`: 32-bit unsigned integers
-	* -   `int16`: 16-bit two's complement signed integers
-	* -   `uint16`: 16-bit unsigned integers
-	* -   `int8`: 8-bit two's complement signed integers
-	* -   `uint8`: 8-bit unsigned integers
-	* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-	* -   `generic`: generic JavaScript values
-	*
 	* ## Notes
 	*
 	* -   Creating a generic array from an `ArrayBuffer` is **not** supported.
