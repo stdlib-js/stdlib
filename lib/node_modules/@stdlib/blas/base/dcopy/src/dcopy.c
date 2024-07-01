@@ -61,16 +61,8 @@ void API_SUFFIX(c_dcopy)( const CBLAS_INT N, const double *X, const CBLAS_INT st
 		}
 		return;
 	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
+	ix = STDLIB_BLAS_BASE_STRIDE2OFFSET( N, strideX );
+	iy = STDLIB_BLAS_BASE_STRIDE2OFFSET( N, strideY );
 	for ( i = 0; i < N; i++ ) {
 		Y[ iy ] = X[ ix ];
 		ix += strideX;
