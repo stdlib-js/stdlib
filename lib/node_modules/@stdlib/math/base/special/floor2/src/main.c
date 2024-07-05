@@ -27,7 +27,6 @@
 #include "stdlib/constants/float64/min_base2_exponent_subnormal.h"
 #include "stdlib/constants/float64/ninf.h"
 
-
 /**
 * Rounds a numeric value to the nearest power of two toward negative infinity.
 *
@@ -55,6 +54,7 @@ double stdlib_base_floor2( const double x ) {
 	}
 	// Solve the equation `2^p = x` for `p`:
 	p = stdlib_base_log2( xc );
+
 	// If provided the smallest subnormal, no rounding possible:
 	if ( p == STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT_SUBNORMAL ) {
 		return xc;
