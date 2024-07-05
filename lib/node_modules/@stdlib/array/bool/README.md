@@ -779,6 +779,102 @@ var count = context.count;
 // returns 3;
 ```
 
+<a name="method-reduce"></a>
+
+#### BooleanArray.prototype.reduce( reducerFn\[, initialValue] )
+
+Applies a provided callback function to each element of the array, in order, passing in the return value from the calculation on the preceding element and returning the accumulated result upon completion.
+
+```javascript
+function reducer( acc, v ) {
+    return ( acc && v );
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var out = arr.reduce( reducer );
+// returns false
+```
+
+The reducer function is provided four arguments:
+
+-   **acc**: accumulated result.
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+By default, the function initializes the accumulated result to the first element in the array and passes the second array element as `value` during the first invocation of the provided callback. To begin accumulation from a different starting value and pass in the first array element as `value` during the first invocation of the provided callback, provide an `initialValue` argument.
+
+```javascript
+function reducer( acc, v ) {
+    if ( v ) {
+        return acc + 1;
+    }
+    return acc;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var out = arr.reduce( reducer, 0 );
+// returns 2
+```
+
+<a name="method-reduce-right"></a>
+
+#### Complex64Array.prototype.reduceRight( reducerFn\[, initialValue] )
+
+Applies a provided callback function to each element of the array, in reverse order, passing in the return value from the calculation on the following element and returning the accumulated result upon completion.
+
+```javascript
+function reducer( acc, v ) {
+    return ( acc && v );
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var out = arr.reduceRight( reducer );
+// returns false
+```
+
+The reducer function is provided four arguments:
+
+-   **acc**: accumulated result.
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+By default, the function initializes the accumulated result to the last element in the array and passes the second-last array element as `value` during the first invocation of the provided callback. To begin accumulation from a different starting value and pass in the last array element as `value` during the first invocation of the provided callback, provide an `initialValue` argument.
+
+```javascript
+function reducer( acc, v ) {
+    if ( v ) {
+        return acc + 1;
+    }
+    return acc;
+}
+
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var out = arr.reduceRight( reducer, 0 );
+// returns 2
+```
+
 <a name="method-reverse"></a>
 
 #### BooleanArray.prototype.reverse()
