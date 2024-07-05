@@ -20,9 +20,9 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#include "stdlib/strided/base/nullary/c.h"
+#include "stdlib/strided/base/nullary/x.h"
 #include "stdlib/strided/base/nullary/macros.h"
-#include "stdlib/complex/float32/ctor.h"
+#include <stdbool.h>
 #include <stdint.h>
 
 /**
@@ -34,32 +34,32 @@
 * @param fcn      callback
 *
 * @example
-* #include "stdlib/strided/base/nullary/c.h"
-* #include "stdlib/complex/float32/ctor.h"
+* #include "stdlib/strided/base/nullary/x.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 *
 * // Create underlying byte arrays:
-* uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t out[] = { 0, 0, 0 };
 *
 * // Define a pointer to an array containing pointers to strided arrays:
 * uint8_t *arrays[] = { out };
 *
 * // Define the strides:
-* int64_t strides[] = { 8 };
+* int64_t strides[] = { 1 };
 *
 * // Define the number of elements over which to iterate:
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* static stdlib_complex64_t fcn( void ) {
-*     // ...
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* stdlib_strided_c( arrays, shape, strides, (void *)fcn );
+* stdlib_strided_x( arrays, shape, strides, (void *)fcn );
 */
-void stdlib_strided_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
-	typedef stdlib_complex64_t func_type( void );
+void stdlib_strided_x( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NOCAST( stdlib_complex64_t )
+	STDLIB_STRIDED_NULLARY_LOOP_CLBK( bool )
 }
