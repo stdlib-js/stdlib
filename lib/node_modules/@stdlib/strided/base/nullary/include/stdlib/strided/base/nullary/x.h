@@ -20,8 +20,8 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#ifndef STDLIB_STRIDED_BASE_NULLARY_C_H
-#define STDLIB_STRIDED_BASE_NULLARY_C_H
+#ifndef STDLIB_STRIDED_BASE_NULLARY_X_H
+#define STDLIB_STRIDED_BASE_NULLARY_X_H
 
 #include <stdint.h>
 
@@ -35,10 +35,10 @@ extern "C" {
 /**
 * Applies a nullary callback and assigns results to elements in a strided output array.
 */
-void stdlib_strided_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
+void stdlib_strided_x( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // !STDLIB_STRIDED_BASE_NULLARY_C_H
+#endif // !STDLIB_STRIDED_BASE_NULLARY_X_H
