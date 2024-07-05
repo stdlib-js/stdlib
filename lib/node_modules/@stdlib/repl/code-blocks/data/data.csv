@@ -2581,6 +2581,8 @@ BooleanArray.prototype.includes,"var arr = new BooleanArray( [ true, false, true
 BooleanArray.prototype.indexOf,"var arr = new BooleanArray( [ true, false, true, true, true ] )\nvar idx = arr.indexOf( true )\nidx = arr.indexOf( false, 3 )\n"
 BooleanArray.prototype.lastIndexOf,"var arr = new BooleanArray( [ true, true, true, false, true ] )\nvar idx = arr.lastIndexOf( false )\nidx = arr.lastIndexOf( false, 2 )\n"
 BooleanArray.prototype.map,"function invert( v ) { return !v; };\nvar arr = new BooleanArray( [ true, false, true ] )\nvar out = arr.map( invert )\nvar v = out.get( 0 )\nv = out.get( 1 )\nv = out.get( 2 )\n"
+BooleanArray.prototype.reduce,"function reducer( acc, v ) { return ( acc && v ); };\nvar arr = new BooleanArray( [ true, false, true ] )\nvar out = arr.reduce( reducer )\n"
+BooleanArray.prototype.reduceRight,"function reducer( acc, v ) { return ( acc && v ); };\nvar arr = new BooleanArray( [ true, false, true ] )\nvar out = arr.reduceRight( reducer )\n"
 BooleanArray.prototype.reverse,"var arr = new BooleanArray( [ true, false, false ] )\narr.reverse();\nvar v = arr.get( 0 )\nv = arr.get( 1 )\nv = arr.get( 2 )\n"
 BooleanArray.prototype.set,"var arr = new BooleanArray( 2 )\narr.set( false );\nvar v = arr.get( 0 )\narr.set( true, 1 );\nv = arr.get( 1 )\n"
 BooleanArray.prototype.slice,"var arr = new BooleanArray( [ true, false, true, false, true ] )\nvar out = arr.slice( 1 )\nvar len = out.length\nvar v = out.get( 0 )\nv = out.get( 1 )\n"

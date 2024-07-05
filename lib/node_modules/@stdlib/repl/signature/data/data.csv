@@ -2587,6 +2587,8 @@ BooleanArray.prototype.includes,"BooleanArray.prototype.includes( searchElement[
 BooleanArray.prototype.indexOf,"BooleanArray.prototype.indexOf( searchElement[, fromIndex] )"
 BooleanArray.prototype.lastIndexOf,"BooleanArray.prototype.lastIndexOf( searchElement[, fromIndex] )"
 BooleanArray.prototype.map,"BooleanArray.prototype.map( clbk[, thisArg] )"
+BooleanArray.prototype.reduce,"BooleanArray.prototype.reduce( reducerFn[, initialValue] )"
+BooleanArray.prototype.reduceRight,"BooleanArray.prototype.reduceRight( reducerFn[, initialValue] )"
 BooleanArray.prototype.reverse,"BooleanArray.prototype.reverse()"
 BooleanArray.prototype.set,"BooleanArray.prototype.set( v[, i] )"
 BooleanArray.prototype.slice,"BooleanArray.prototype.slice( [start[, end]] )"
