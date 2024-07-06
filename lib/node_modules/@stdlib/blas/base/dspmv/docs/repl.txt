@@ -77,7 +77,7 @@
     <Float64Array>[ ~6.0, ~4.0 ]
 
 
-{{alias}}.ndarray( ord, uplo, N, α, AP, x, sx, ox, β, y, sy, oy )
+{{alias}}.ndarray( ord, uplo, N, α, AP, oa, x, sx, ox, β, y, sy, oy )
     Performs the matrix-vector operation `y = α*A*x + β*y` using alternative
     indexing semantics and where `α` and `β` are scalars, `x` and `y` are `N`
     element vectors, and `A` is an `N` by `N` symmetric matrix supplied in
@@ -105,6 +105,9 @@
 
     AP: Float64Array
         Matrix in packed form.
+
+    oa: integer
+        Starting index for `AP`.
 
     x: Float64Array
         Input vector `x`.
@@ -140,14 +143,14 @@
     > var AP = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var ord = 'row-major';
     > var uplo = 'upper';
-    > {{alias}}.ndarray( ord, uplo, 2, 1.0, AP, x, 1, 0, 1.0, y, 1, 0 )
+    > {{alias}}.ndarray( ord, uplo, 2, 1.0, AP, 0, x, 1, 0, 1.0, y, 1, 0 )
     <Float64Array>[ ~4.0, ~6.0 ]
 
     // Advanced indexing:
     > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
     > y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
     > AP = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > {{alias}}.ndarray( ord, uplo, 2, 1.0, AP, x, -1, 1, 1.0, y, -1, 1 )
+    > {{alias}}.ndarray( ord, uplo, 2, 1.0, AP, 0, x, -1, 1, 1.0, y, -1, 1 )
     <Float64Array>[ ~6.0, ~4.0 ]
 
     See Also
