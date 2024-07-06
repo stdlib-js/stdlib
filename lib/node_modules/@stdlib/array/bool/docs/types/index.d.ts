@@ -151,6 +151,60 @@ type TernaryMapFcn<U> = ( this: U, value: boolean, index: number, arr: BooleanAr
 type MapFcn<U> = NullaryMapFcn<U> | UnaryMapFcn<U> | BinaryMapFcn<U> | TernaryMapFcn<U>;
 
 /**
+* Reducer function invoked for each element in an array.
+*
+* @returns accumulated result
+*/
+type NullaryReducer<U> = () => U;
+
+/**
+* Reducer function invoked for each element in an array.
+*
+* @param acc - accumulated result
+* @returns accumulated result
+*/
+type UnaryReducer<U> = ( acc: U ) => U;
+
+/**
+* Reducer function invoked for each element in an array.
+*
+* @param acc - accumulated result
+* @param value - current array element
+* @returns accumulated result
+*/
+type BinaryReducer<U> = ( acc: U, value: boolean ) => U;
+
+/**
+* Reducer function invoked for each element in an array.
+*
+* @param acc - accumulated result
+* @param value - current array element
+* @param index - current array element index
+* @returns accumulated result
+*/
+type TernaryReducer<U> = ( acc: U, value: boolean, index: number ) => U;
+
+/**
+* @param acc - accumulated result
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns accumulated result
+*/
+type QuaternaryReducer<U> = ( acc: U, value: boolean, index: number, arr: BooleanArray ) => U;
+
+/**
+* Reducer function invoked for each element in an array.
+*
+* @param acc - accumulated result
+* @param value - current array element
+* @param index - current array element index
+* @param arr - array on which the method was called
+* @returns accumulated result
+*/
+type Reducer<U> = NullaryReducer<U> | UnaryReducer<U> | BinaryReducer<U> | TernaryReducer<U> | QuaternaryReducer<U>;
+
+/**
 * Comparator function.
 *
 * @param a - first boolean value for comparison
@@ -515,6 +569,58 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns false
 	*/
 	map<U = unknown>( fcn: MapFcn<U>, thisArg?: ThisParameterType<MapFcn<U>> ): BooleanArray;
+
+	/**
+	* Applies a provided callback function to each element of the array, in order, passing in the return value from the calculation on the preceding element and returning the accumulated result upon completion.
+	*
+	* @param reducer - callback function
+	* @param initialValue - initial value
+	* @returns accumulated result
+	*
+	* @example
+	* function reducer( acc, v ) {
+	*     if ( v ) {
+	*          return acc + 1;
+	*     }
+	*     return acc;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var out = arr.reduce( reducer, 0 );
+	* // returns 2
+	*/
+	reduce<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
+
+	/**
+	* Applies a provided callback function to each element of the array, in reverse order, passing in the return value from the calculation on the following element and returning the accumulated result upon completion.
+	*
+	* @param reducer - callback function
+	* @param initialValue - initial value
+	* @returns accumulated result
+	*
+	* @example
+	* function reducer( acc, v ) {
+	*     if ( v ) {
+	*          return acc + 1;
+	*     }
+	*     return acc;
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var out = arr.reduceRight( reducer, 0 );
+	* // returns 2
+	*/
+	reduceRight<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
 
 	/**
 	* Reverses an array in-place.

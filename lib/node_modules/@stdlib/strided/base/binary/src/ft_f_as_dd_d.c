@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -51,12 +51,12 @@
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* static double add( double x, double y ) {
+* static double fcn( double x, double y ) {
 *     return x + y;
 * }
 *
 * // Apply the callback:
-* stdlib_strided_ft_f_as_dd_d( arrays, shape, strides, (void *)add );
+* stdlib_strided_ft_f_as_dd_d( arrays, shape, strides, (void *)fcn );
 */
 void stdlib_strided_ft_f_as_dd_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	typedef double func_type( const double x, const double y );

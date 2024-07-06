@@ -612,6 +612,90 @@
     false
 
 
+{{alias}}.prototype.reduce( reducerFn[, initialValue] )
+    Applies a provided function to each element of the array, in order, passing
+    in the return value from the calculation on the preceding element and
+    returning the accumulated result upon completion.
+
+    A reducer function is provided the following arguments:
+
+    - acc: accumulated result.
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If provided an initial value, the method invokes a provided function with
+    the initial value as the first argument and the first array element as the
+    second argument.
+
+    If not provided an initial value, the method invokes a provided function
+    with the first array element as the first argument and the second array
+    element as the second argument.
+
+    Parameters
+    ----------
+    reducerFn: Function
+        Function to apply to each array element.
+
+    initialValue: any (optional)
+        Initial accumulation value.
+
+    Returns
+    -------
+    out: any
+        Accumulated result.
+
+    Examples
+    --------
+    > function reducer( acc, v ) { return ( acc && v ); };
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var out = arr.reduce( reducer )
+    false
+
+
+{{alias}}.prototype.reduceRight( reducerFn[, initialValue] )
+    Applies a provided function to each element of the array, in reverse order,
+    passing in the return value from the calculation on the preceding element
+    and returning the accumulated result upon completion.
+
+    A reducer function is provided the following arguments:
+
+    - acc: accumulated result.
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If provided an initial value, the method invokes a provided function with
+    the initial value as the first argument and the last array element as the
+    second argument.
+
+    If not provided an initial value, the method invokes a provided function
+    with the last array element as the first argument and the second-to-last
+    array element as the second argument.
+
+    Parameters
+    ----------
+    reducerFn: Function
+        Function to apply to each array element.
+
+    initialValue: any (optional)
+        Initial accumulation value.
+    
+    Returns
+    -------
+    out: any
+        Accumulated result.
+    
+    Examples
+    --------
+    > function reducer( acc, v ) { return ( acc && v ); };
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var out = arr.reduceRight( reducer )
+    false
+
+
 {{alias}}.prototype.reverse()
     Reverses the array *in-place*.
 
