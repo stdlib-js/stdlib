@@ -20,8 +20,9 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#include "stdlib/strided/base/mskunary/b_t.h"
+#include "stdlib/strided/base/mskunary/x_x.h"
 #include "stdlib/strided/base/mskunary/macros.h"
+#include <stdbool.h>
 #include <stdint.h>
 
 /**
@@ -33,33 +34,34 @@
 * @param fcn      callback
 *
 * @example
-* #include "stdlib/strided/base/mskunary/b_t.h"
+* #include "stdlib/strided/base/mskunary/x_x.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 *
 * // Create underlying byte arrays:
 * uint8_t x[] = { 0, 0, 0 };
 * uint8_t m[] = { 0, 0, 0 };
-* uint8_t out[] = { 0, 0, 0, 0, 0, 0 };
+* uint8_t out[] = { 0, 0, 0 };
 *
 * // Define a pointer to an array containing pointers to strided arrays:
 * uint8_t *arrays[] = { x, m, out };
 *
 * // Define the strides:
-* int64_t strides[] = { 1, 1, 2 };
+* int64_t strides[] = { 1, 1, 1 };
 *
 * // Define the number of elements over which to iterate:
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* static uint8_t fcn( uint8_t x ) {
+* static bool fcn( bool x ) {
 *     return x;
 * }
 *
 * // Apply the callback:
-* stdlib_strided_mask_b_t( arrays, shape, strides, (void *)fcn );
+* stdlib_strided_mask_x_x( arrays, shape, strides, (void *)fcn );
 */
-void stdlib_strided_mask_b_t( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
-	typedef uint8_t func_type( const uint8_t x );
+void stdlib_strided_mask_x_x( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
+	typedef bool func_type( const bool x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_MSKUNARY_LOOP_CLBK( uint8_t, uint16_t )
+	STDLIB_STRIDED_MSKUNARY_LOOP_CLBK( bool, bool )
 }
