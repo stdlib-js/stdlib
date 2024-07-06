@@ -20,10 +20,9 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#include "stdlib/strided/base/unary/k_c_as_z_z.h"
+#include "stdlib/strided/base/unary/x_x.h"
 #include "stdlib/strided/base/unary/macros.h"
-#include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/float64/ctor.h"
+#include <stdbool.h>
 #include <stdint.h>
 
 /**
@@ -35,33 +34,33 @@
 * @param fcn      callback
 *
 * @example
-* #include "stdlib/strided/base/unary/k_c_as_z_z.h"
-* #include "stdlib/complex/float64/ctor.h"
+* #include "stdlib/strided/base/unary/x_x.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 *
 * // Create underlying byte arrays:
-* uint8_t x[] = { 0, 0, 0, 0, 0, 0 };
-* uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t x[] = { 0, 0, 0 };
+* uint8_t out[] = { 0, 0, 0 };
 *
 * // Define a pointer to an array containing pointers to strided arrays:
 * uint8_t *arrays[] = { x, out };
 *
 * // Define the strides:
-* int64_t strides[] = { 2, 8 };
+* int64_t strides[] = { 1, 1 };
 *
 * // Define the number of elements over which to iterate:
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* static stdlib_complex128_t fcn( stdlib_complex128_t x ) {
-*     // ...
+* static bool fcn( bool x ) {
+*     return x;
 * }
 *
 * // Apply the callback:
-* stdlib_strided_k_c_as_z_z( arrays, shape, strides, (void *)fcn );
+* stdlib_strided_x_x( arrays, shape, strides, (void *)fcn );
 */
-void stdlib_strided_k_c_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
-	typedef stdlib_complex128_t func_type( const stdlib_complex128_t x );
+void stdlib_strided_x_x( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
+	typedef bool func_type( const bool x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_UNARY_LOOP_CLBK_ARG_CAST_FCN( int16_t, stdlib_complex64_t, stdlib_complex128_from_int16, stdlib_complex128_to_complex64 )
+	STDLIB_STRIDED_UNARY_LOOP_CLBK( bool, bool )
 }
