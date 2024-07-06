@@ -20,8 +20,8 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#ifndef STDLIB_STRIDED_BASE_UNARY_B_I_AS_I_I_H
-#define STDLIB_STRIDED_BASE_UNARY_B_I_AS_I_I_H
+#ifndef STDLIB_STRIDED_BASE_UNARY_X_X_H
+#define STDLIB_STRIDED_BASE_UNARY_X_X_H
 
 #include <stdint.h>
 
@@ -35,10 +35,10 @@ extern "C" {
 /**
 * Applies a unary callback to strided input array elements and assigns results to elements in a strided output array.
 */
-void stdlib_strided_b_i_as_i_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
+void stdlib_strided_x_x( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // !STDLIB_STRIDED_BASE_UNARY_B_I_AS_I_I_H
+#endif // !STDLIB_STRIDED_BASE_UNARY_X_X_H
