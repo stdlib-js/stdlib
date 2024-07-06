@@ -20,8 +20,8 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#ifndef STDLIB_STRIDED_BASE_MSKUNARY_Z_D_AS_Z_D_H
-#define STDLIB_STRIDED_BASE_MSKUNARY_Z_D_AS_Z_D_H
+#ifndef STDLIB_STRIDED_BASE_MSKUNARY_X_X_H
+#define STDLIB_STRIDED_BASE_MSKUNARY_X_X_H
 
 #include <stdint.h>
 
@@ -35,10 +35,10 @@ extern "C" {
 /**
 * Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 */
-void stdlib_strided_mask_z_d_as_z_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
+void stdlib_strided_mask_x_x( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // !STDLIB_STRIDED_BASE_MSKUNARY_Z_D_AS_Z_D_H
+#endif // !STDLIB_STRIDED_BASE_MSKUNARY_X_X_H
