@@ -34,6 +34,7 @@ import convert = require( './index' );
 	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'uint8c' ); // $ExpectType Uint8ClampedArray
 	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'complex128' ); // $ExpectType Complex128Array
 	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'complex64' ); // $ExpectType Complex64Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'bool' ); // $ExpectType BooleanArray
 	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'generic' ); // $ExpectType number[]
 	convert( [ 'a', 'b', 'c', 'd' ], 'generic' ); // $ExpectType string[]
 }
