@@ -72,6 +72,7 @@
     "uint8clampedarray",
     "complex128array",
     "complex64array",
+    "booleanarray",
     "complex128",
     "complex64",
     "complex",
@@ -98,6 +99,7 @@
     "clamped",
     "short",
     "long",
+    "bool",
     "generic",
     "empty",
     "empty-like"
