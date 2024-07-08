@@ -20,5 +20,6 @@
 #define STDLIB_BLAS_BASE_SHARED_H
 
 #include "shared/cblas.h"
+#include "shared/macros.h"
 
 #endif // !STDLIB_BLAS_BASE_SHARED_H

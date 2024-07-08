@@ -178,8 +178,8 @@ int main( void ) {
     double y;
     int i;
     for ( i = 0; i < 4; i++ ) {
-        y = stdlib_base_gamm_lanczos_sum( x[ i ] );
-        printf( "gamm_lanczos_sum(%lf) = %lf\n", x[ i ], y );
+        y = stdlib_base_gamma_lanczos_sum( x[ i ] );
+        printf( "gamma_lanczos_sum(%lf) = %lf\n", x[ i ], y );
     }
 }
 ```

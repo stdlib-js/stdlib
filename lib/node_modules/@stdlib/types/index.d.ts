@@ -1267,6 +1267,66 @@ declare module '@stdlib/types/iter' {
 }
 
 /**
+* Module containing definitions for BLAS routines.
+*
+* @example
+* import * as blas from `@stdlib/types/blas`;
+*
+* const layout: blas.Layout = 'row-major';
+*/
+declare module '@stdlib/types/blas' {
+	/**
+	* Diagonal element type.
+	*
+	* ## Notes
+	*
+	* -   **non-unit**: elements along a diagonal are **not** all equal to one.
+	* -   **unit**: elements along a diagonal are all equal to one.
+	*/
+	type DiagonalType = 'non-unit' | 'unit';
+
+	/**
+	* Array memory layout.
+	*
+	* ## Notes
+	*
+	* -   The array memory layout is either row-major (C-style) or column-major (Fortran-style).
+	*/
+	type Layout = 'row-major' | 'column-major';
+
+	/**
+	* Matrix triangle.
+	*
+	* ## Notes
+	*
+	* -   **upper**: upper triangular part of a matrix.
+	* -   **lower**: lower triangular part of a matrix.
+	*/
+	type MatrixTriangle = 'upper' | 'lower';
+
+	/**
+	* Operation side.
+	*
+	* ## Notes
+	*
+	* -   **left**: a triangular matrix is on the left side of a matrix-matrix operation (e.g., AX = B, where A is a triangular matrix).
+	* -   **right**: a triangular matrix is on the right side of a matrix-matrix operation (e.g., XA = B, where A is a triangular matrix).
+	*/
+	type OperationSide = 'left' | 'right';
+
+	/**
+	* Transpose operations.
+	*
+	* ## Notes
+	*
+	* -   **none**: no transposition.
+	* -   **transpose**: transposition.
+	* -   **conjugate-transpose**: conjugate transposition.
+	*/
+	type TransposeOperation = 'none' | 'transpose' | 'conjugate-transpose';
+}
+
+/**
 * Module containing ndarray definitions.
 *
 * @example
@@ -1326,6 +1386,7 @@ declare module '@stdlib/types/iter' {
 declare module '@stdlib/types/ndarray' {
 	import { ArrayLike, AccessorArrayLike, Collection, Complex128Array, Complex64Array, RealOrComplexTypedArray, FloatOrComplexTypedArray, RealTypedArray, ComplexTypedArray, IntegerTypedArray, FloatTypedArray, SignedIntegerTypedArray, UnsignedIntegerTypedArray } from '@stdlib/types/array';
 	import { ComplexLike, Complex128, Complex64 } from '@stdlib/types/complex'; // eslint-disable-line no-duplicate-imports
+	import { Layout } from '@stdlib/types/blas';
 
 	/**
 	* Data type.
@@ -1394,7 +1455,7 @@ declare module '@stdlib/types/ndarray' {
 	*
 	* -   The array order is either row-major (C-style) or column-major (Fortran-style).
 	*/
-	type Order = 'row-major' | 'column-major';
+	type Order = Layout;
 
 	/**
 	* Array index mode.

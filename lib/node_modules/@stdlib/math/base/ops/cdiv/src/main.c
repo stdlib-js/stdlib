@@ -25,9 +25,9 @@
 #include "stdlib/constants/float64/smallest_normal.h"
 #include <stdint.h>
 
-const double LARGE_THRESHOLD = STDLIB_CONSTANT_FLOAT64_MAX * 0.5;
-const double SMALL_THRESHOLD = STDLIB_CONSTANT_FLOAT64_SMALLEST_NORMAL * ( 2.0 / STDLIB_CONSTANT_FLOAT64_EPS );
-const double RECIP_EPS_SQR = 2.0 / ( STDLIB_CONSTANT_FLOAT64_EPS * STDLIB_CONSTANT_FLOAT64_EPS );
+static const double LARGE_THRESHOLD = STDLIB_CONSTANT_FLOAT64_MAX * 0.5;
+static const double SMALL_THRESHOLD = STDLIB_CONSTANT_FLOAT64_SMALLEST_NORMAL * ( 2.0 / STDLIB_CONSTANT_FLOAT64_EPS );
+static const double RECIP_EPS_SQR = 2.0 / ( STDLIB_CONSTANT_FLOAT64_EPS * STDLIB_CONSTANT_FLOAT64_EPS );
 
 /**
 * Computes the real part of the quotient.
@@ -113,6 +113,8 @@ stdlib_complex128_t stdlib_base_cdiv( const stdlib_complex128_t z1, const stdlib
 	double re2;
 	double im1;
 	double im2;
+	double t1;
+	double t2;
 	double ab;
 	double cd;
 	double re;
@@ -122,15 +124,19 @@ stdlib_complex128_t stdlib_base_cdiv( const stdlib_complex128_t z1, const stdlib
 	stdlib_reim( z1, &re1, &im1 );
 	stdlib_reim( z2, &re2, &im2 );
 
-	if ( stdlib_base_abs( re1 ) > stdlib_base_abs( im1 ) ){
-		ab = re1;
+	t1 = stdlib_base_abs( re1 );
+	t2 = stdlib_base_abs( im1 );
+	if ( t1 > t2 ){
+		ab = t1;
 	} else {
-		ab = im1;
+		ab = t2;
 	}
-	if ( stdlib_base_abs( re2 ) > stdlib_base_abs( im2 ) ){
-		cd = re2;
+	t1 = stdlib_base_abs( re2 );
+	t2 = stdlib_base_abs( im2 );
+	if ( t1 > t2 ){
+		cd = t1;
 	} else {
-		cd = im2;
+		cd = t2;
 	}
 
 	s = 1.0;
@@ -153,11 +159,13 @@ stdlib_complex128_t stdlib_base_cdiv( const stdlib_complex128_t z1, const stdlib
 		im2 *= RECIP_EPS_SQR;
 		s *= RECIP_EPS_SQR;
 	}
+	re = 0.0;
+	im = 0.0;
 	if ( stdlib_base_abs( im2 ) <= stdlib_base_abs( re2 ) ) {
 		robustInternal( re1, im1, re2, im2, &re, &im );
 	} else {
 		robustInternal( im1, re1, im2, re2, &re, &im );
-		im *= -1;
+		im *= -1.0;
 	}
 	re *= s;
 	im *= s;

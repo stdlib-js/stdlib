@@ -51,7 +51,8 @@ var x = scalar2array( 3.0 );
 
 If not provided a `dtype` argument and `value`
 
--   is a `number`, the default [data type][@stdlib/array/dtypes] is the [default][@stdlib/array/defaults] real-valued floating-point data type.
+-   is a number, the default [data type][@stdlib/array/dtypes] is the [default][@stdlib/array/defaults] real-valued floating-point data type.
+-   is a boolean, the default [data type][@stdlib/array/dtypes] is the [default][@stdlib/array/defaults] boolean data type.
 -   is a complex number object of a known data type, the data type is the same as the provided value.
 -   is a complex number object of an unknown data type, the default [data type][@stdlib/array/dtypes] is the [default][@stdlib/array/defaults] complex-valued floating-point data type.
 -   is any other value type, the default [data type][@stdlib/array/dtypes] is `'generic'`.

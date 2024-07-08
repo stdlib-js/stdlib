@@ -19,10 +19,11 @@
 /// <reference types="@stdlib/types"/>
 
 import * as array from '@stdlib/types/array';
+import * as blas from '@stdlib/types/blas';
+import * as complex from '@stdlib/types/complex';
 import * as iter from '@stdlib/types/iter';
 import * as ndarray from '@stdlib/types/ndarray';
 import * as obj from '@stdlib/types/object';
-import * as complex from '@stdlib/types/complex';
 import * as random from '@stdlib/types/random';
 import * as slice from '@stdlib/types/slice';
 
@@ -391,6 +392,65 @@ function cmplx128Array(): array.Complex128Array {
 	}
 }
 
+// The compiler should not throw an error when using BLAS types...
+{
+	const v1: blas.Layout = 'row-major';
+	if ( typeof v1 !== 'string' ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const v2: blas.TransposeOperation = 'transpose';
+	if ( typeof v2 !== 'string' ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const v3: blas.MatrixTriangle = 'upper';
+	if ( typeof v3 !== 'string' ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const v4: blas.DiagonalType = 'unit';
+	if ( typeof v4 !== 'string' ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const v5: blas.OperationSide = 'right';
+	if ( typeof v5 !== 'string' ) {
+		throw new Error( 'something went wrong' );
+	}
+}
+
+// The compiler should not throw an error when using complex number types...
+{
+	const v1: complex.ComplexLike = {
+		're': 1.0,
+		'im': 1.0
+	};
+	if ( v1.re !== 1.0 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const v2: complex.Complex64 = {
+		're': 1.0,
+		'im': 1.0,
+		'byteLength': 8,
+		'BYTES_PER_ELEMENT': 4
+	};
+	if ( v2.re !== 1.0 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const v3: complex.Complex128 = {
+		're': 1.0,
+		'im': 1.0,
+		'byteLength': 16,
+		'BYTES_PER_ELEMENT': 8
+	};
+	if ( v3.re !== 1.0 ) {
+		throw new Error( 'something went wrong' );
+	}
+}
+
 // The compiler should not throw an error when using iterator or iterable types...
 {
 	createIterator1();
@@ -566,37 +626,6 @@ function cmplx128Array(): array.Complex128Array {
 
 	const prop: obj.PropertyName = 'foo';
 	if ( prop !== 'foo' ) {
-		throw new Error( 'something went wrong' );
-	}
-}
-
-// The compiler should not throw an error when using complex number types...
-{
-	const v1: complex.ComplexLike = {
-		're': 1.0,
-		'im': 1.0
-	};
-	if ( v1.re !== 1.0 ) {
-		throw new Error( 'something went wrong' );
-	}
-
-	const v2: complex.Complex64 = {
-		're': 1.0,
-		'im': 1.0,
-		'byteLength': 8,
-		'BYTES_PER_ELEMENT': 4
-	};
-	if ( v2.re !== 1.0 ) {
-		throw new Error( 'something went wrong' );
-	}
-
-	const v3: complex.Complex128 = {
-		're': 1.0,
-		'im': 1.0,
-		'byteLength': 16,
-		'BYTES_PER_ELEMENT': 8
-	};
-	if ( v3.re !== 1.0 ) {
 		throw new Error( 'something went wrong' );
 	}
 }

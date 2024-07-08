@@ -31,6 +31,7 @@ import full = require( './index' );
 	full( 10, 1, 'float32' ); // $ExpectType Float32Array
 	full( 10, z, 'complex128' ); // $ExpectType Complex128Array
 	full( 10, z, 'complex64' ); // $ExpectType Complex64Array
+	full( 10, true, 'bool' ); // $ExpectType BooleanArray
 	full( 10, 1, 'int32' ); // $ExpectType Int32Array
 	full( 10, 1, 'int16' ); // $ExpectType Int16Array
 	full( 10, 1, 'int8' ); // $ExpectType Int8Array
