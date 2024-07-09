@@ -21,8 +21,8 @@
 
 int main( void ) {
     // Create strided arrays:
-    float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0 };
-    float y[] = { 6.0, 7.0, 8.0, 9.0, 10.0 };
+    float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
+    float y[] = { 6.0f, 7.0f, 8.0f, 9.0f, 10.0f };
 
     // Specify the number of elements:
     const int N = 5;
@@ -32,7 +32,7 @@ int main( void ) {
     const int strideY = 1;
 
     // Specify parameters for the modified Givens transformation:
-    const float param[5] = { 0.0, 0.0, 2.0, -3.0, 0.0 };
+    const float param[5] = { 0.0f, 0.0f, 2.0f, -3.0f, 0.0f };
 
     // Apply plane rotation:
     c_srotm( N, x, strideX, y, strideY, param );
