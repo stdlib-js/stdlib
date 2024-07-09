@@ -1,4 +1,4 @@
-#### stdlib_strided_{{SIGNATURE}}( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_strided_{{SIGNATURE}}( \*arrays\[], \*shape, \*strides, \*fcn )
 
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
@@ -20,12 +20,12 @@ int64_t strides[] = { {{INPUT_ARRAY_STRIDE_1}}, {{INPUT_ARRAY_STRIDE_2}}, {{OUTP
 int64_t shape[] = { {{N}} };
 
 // Define a callback:
-static {{CALLBACK_RETURN_TYPE}} add( {{CALLBACK_PARAM_TYPE_1}} x, {{CALLBACK_PARAM_TYPE_2}} y ) {
+static {{CALLBACK_RETURN_TYPE}} fcn( {{CALLBACK_PARAM_TYPE_1}} x, {{CALLBACK_PARAM_TYPE_2}} y ) {
     {{CALLBACK_BODY}}
 }
 
 // Apply the callback:
-stdlib_strided_{{SIGNATURE}}( arrays, shape, strides, (void *)add );
+stdlib_strided_{{SIGNATURE}}( arrays, shape, strides, (void *)fcn );
 ```
 
 The function accepts the following arguments:
