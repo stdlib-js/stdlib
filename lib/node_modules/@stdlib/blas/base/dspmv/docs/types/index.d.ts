@@ -61,6 +61,7 @@ interface Routine {
 	* @param N - number of columns in the matrix `A`
 	* @param alpha - scalar constant
 	* @param AP - packed form of a symmetric matrix `A`
+	* @param offsetAP - starting `AP` index
 	* @param x - first input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting `x` index
@@ -77,10 +78,10 @@ interface Routine {
 	* var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 	* var y = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 	*
-	* dspmv.ndarray( 'column-major', 'lower', 3, 1.0, AP, x, 1, 0, 1.0, y, 1, 0 );
+	* dspmv.ndarray( 'column-major', 'lower', 3, 1.0, AP, 0, x, 1, 0, 1.0, y, 1, 0 );
 	* // y => <Float64Array>[ 7.0, 12.0, 15.0 ]
 	*/
-	ndarray( order: Layout, uplo: MatrixTriangle, N: number, alpha: number, AP: Float64Array, x: Float64Array, strideX: number, offsetX: number, beta: number, y: Float64Array, strideY: number, offsetY: number ): Float64Array;
+	ndarray( order: Layout, uplo: MatrixTriangle, N: number, alpha: number, AP: Float64Array, offsetAP: number, x: Float64Array, strideX: number, offsetX: number, beta: number, y: Float64Array, strideY: number, offsetY: number ): Float64Array;
 }
 
 /**
@@ -115,7 +116,7 @@ interface Routine {
 * var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 * var y = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 *
-* dspmv.ndarray( 'column-major', 'lower', 3, 1.0, AP, x, 1, 0, 1.0, y, -1, 2 );
+* dspmv.ndarray( 'column-major', 'lower', 3, 1.0, AP, 0, x, 1, 0, 1.0, y, -1, 2 );
 * // y => <Float64Array>[ 15.0, 12.0, 7.0 ]
 */
 declare var dspmv: Routine;
