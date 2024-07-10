@@ -1,4 +1,4 @@
-#### stdlib_strided_mask_{{SIGNATURE}}( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_strided_mask_{{SIGNATURE}}( \*arrays\[], \*shape, \*strides, \*fcn )
 
 Applies a unary callback to strided input array elements according to a strided mask array and assigns results to elements in a strided output array.
 
