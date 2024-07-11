@@ -680,6 +680,36 @@ var idx = arr.indexOf( false );
 // returns -1
 ```
 
+<a name="join"></a>
+
+#### BooleanArray.prototype.join( \[separator] )
+
+Returns a new string by concatenating all array elements.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var str = arr.join();
+// returns 'true,false,true'
+```
+
+By default, the method separates serialized array elements with a comma. To use an alternative separator, provide a `separator` string.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var str = arr.join( '|' );
+// returns 'true|false|true'
+```
+
 <a name="method-last-index-of"></a>
 
 #### BooleanArray.prototype.lastIndexOf( searchElement\[, fromIndex] )
@@ -829,7 +859,7 @@ var out = arr.reduce( reducer, 0 );
 
 <a name="method-reduce-right"></a>
 
-#### Complex64Array.prototype.reduceRight( reducerFn\[, initialValue] )
+#### BooleanArray.prototype.reduceRight( reducerFn\[, initialValue] )
 
 Applies a provided callback function to each element of the array, in reverse order, passing in the return value from the calculation on the following element and returning the accumulated result upon completion.
 
@@ -1289,6 +1319,23 @@ The function should return a number where:
 -   a negative value indicates that `a` should come before `b`.
 -   a positive value indicates that `a` should come after `b`.
 -   zero or `NaN` indicates that `a` and `b` are considered equal.
+
+<a name="method-to-string"></a>
+
+#### BooleanArray.prototype.toString()
+
+Serializes an array as a string.
+
+```javascript
+var arr = new BooleanArray( 3 );
+
+arr.set( true, 0 );
+arr.set( false, 1 );
+arr.set( true, 2 );
+
+var str = arr.toString();
+// returns 'true,false,true'
+```
 
 </section>
 
