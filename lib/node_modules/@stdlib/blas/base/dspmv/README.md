@@ -91,7 +91,7 @@ dspmv( 'row-major', 'upper', 2, 1.0, AP, x1, -1, 1.0, y1, -1 );
 // y0 => <Float64Array>[ 6.0, 4.0 ]
 ```
 
-#### dspmv.ndarray( order, uplo, N, α, AP, x, sx, ox, β, y, sy, oy )
+#### dspmv.ndarray( order, uplo, N, α, AP, oa, x, sx, ox, β, y, sy, oy )
 
 Performs the matrix-vector operation `y = α*A*x + β*y` using alternative indexing semantics and where `α` and `β` are scalars, `x` and `y` are `N` element vectors, and `A` is an `N` by `N` symmetric matrix supplied in packed form `AP`.
 
@@ -102,12 +102,13 @@ var AP = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 var y = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 
-dspmv.ndarray( 'column-major', 'lower', 3, 1.0, AP, x, 1, 0, 1.0, y, 1, 0 );
+dspmv.ndarray( 'column-major', 'lower', 3, 1.0, AP, 0, x, 1, 0, 1.0, y, 1, 0 );
 // y => <Float64Array>[ 7.0, 12.0, 15.0 ]
 ```
 
 The function has the following additional parameters:
 
+-   **oa**: starting index for `AP`.
 -   **ox**: starting index for `x`.
 -   **oy**: starting index for `y`.
 
@@ -116,11 +117,11 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-var AP = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+var AP = new Float64Array( [ 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 var y = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 
-dspmv.ndarray( 'column-major', 'lower', 3, 1.0, AP, x, 1, 0, 1.0, y, -1, 2 );
+dspmv.ndarray( 'column-major', 'lower', 3, 1.0, AP, 2, x, 1, 0, 1.0, y, -1, 2 );
 // y => <Float64Array>[ 15.0, 12.0, 7.0 ]
 ```
 
@@ -158,7 +159,7 @@ var AP = discreteUniform( N * ( N + 1 ) / 2, -10, 10, opts );
 var x = discreteUniform( N, -10, 10, opts );
 var y = discreteUniform( N, -10, 10, opts );
 
-dspmv.ndarray( 'row-major', 'upper', N, 1.0, AP, x, 1, 0, 1.0, y, 1, 0 );
+dspmv.ndarray( 'row-major', 'upper', N, 1.0, AP, 0, x, 1, 0, 1.0, y, 1, 0 );
 console.log( y );
 ```
 

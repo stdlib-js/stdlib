@@ -221,7 +221,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **X**: `[inout] double*` first input array.
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
--   **Y**: `[inout] double*` first input array.
+-   **Y**: `[inout] double*` second input array.
 -   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
 -   **c**: `[in] double` cosine of the angle of rotation.
 -   **s**: `[in] double` sine of the angle of rotation.
