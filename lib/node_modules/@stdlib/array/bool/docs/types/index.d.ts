@@ -512,6 +512,27 @@ declare class BooleanArray implements BooleanArrayInterface {
 	indexOf( searchElement: boolean, fromIndex?: number ): number;
 
 	/**
+	* Returns a new string by concatenating all array elements.
+	*
+	* @param separator - value separator (default: ',')
+	* @returns string
+	*
+	* @example
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var str = arr.join();
+	* // returns 'true,false,true'
+	*
+	* str = arr.join( '|' );
+	* // returns 'true|false|true'
+	*/
+	join( separator?: string ): string;
+
+	/**
 	* Returns the last index at which a given element can be found.
 	*
 	* @param searchElement - element to find
@@ -904,6 +925,23 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns false
 	*/
 	toSorted( compareFcn: CompareFcn ): BooleanArray;
+
+	/**
+	* Serializes an array as a string.
+	*
+	* @returns string
+	*
+	* @example
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var str = arr.toString();
+	* // returns 'true,false,true'
+	*/
+	toString(): string;
 }
 
 /**
