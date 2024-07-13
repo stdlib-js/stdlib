@@ -20,12 +20,13 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#include "stdlib/ndarray/base/nullary/f_as_b.h"
+#include "stdlib/ndarray/base/nullary/x.h"
 #include "stdlib/ndarray/base/nullary/typedefs.h"
 #include "stdlib/ndarray/base/nullary/macros.h"
 #include "stdlib/ndarray/base/nullary/dispatch_object.h"
 #include "stdlib/ndarray/base/nullary/dispatch.h"
 #include "stdlib/ndarray/ctor.h"
+#include <stdbool.h>
 #include <stdint.h>
 
 /**
@@ -40,20 +41,21 @@
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 0;
@@ -88,12 +90,12 @@
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_0d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_0d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -104,10 +106,10 @@
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_0d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_0d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	int8_t status = stdlib_ndarray_iset_float32( arrays[ 0 ], 0, (float)f() );
+	int8_t status = stdlib_ndarray_iset_bool( arrays[ 0 ], 0, f() );
 	if ( status != 0 ) {
 		return -1;
 	}
@@ -126,20 +128,21 @@ int8_t stdlib_ndarray_f_as_b_0d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 1;
@@ -148,7 +151,7 @@ int8_t stdlib_ndarray_f_as_b_0d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 3 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4 };
+* int64_t sx[] = { 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -174,12 +177,12 @@ int8_t stdlib_ndarray_f_as_b_0d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_1d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_1d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -190,10 +193,10 @@ int8_t stdlib_ndarray_f_as_b_0d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_1d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_1d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_1D_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_1D_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -209,20 +212,21 @@ int8_t stdlib_ndarray_f_as_b_1d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -231,7 +235,7 @@ int8_t stdlib_ndarray_f_as_b_1d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 8, 4 };
+* int64_t sx[] = { 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -257,12 +261,12 @@ int8_t stdlib_ndarray_f_as_b_1d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_2d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_2d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -273,10 +277,10 @@ int8_t stdlib_ndarray_f_as_b_1d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_2d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_2d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_2D_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_2D_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -292,20 +296,21 @@ int8_t stdlib_ndarray_f_as_b_2d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -314,7 +319,7 @@ int8_t stdlib_ndarray_f_as_b_2d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 8, 4 };
+* int64_t sx[] = { 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -340,12 +345,12 @@ int8_t stdlib_ndarray_f_as_b_2d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_2d_blocked( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_2d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -356,10 +361,10 @@ int8_t stdlib_ndarray_f_as_b_2d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_2d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_2d_blocked( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_2D_BLOCKED_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_2D_BLOCKED_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -375,20 +380,21 @@ int8_t stdlib_ndarray_f_as_b_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 3;
@@ -397,7 +403,7 @@ int8_t stdlib_ndarray_f_as_b_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 8, 4 };
+* int64_t sx[] = { 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -423,12 +429,12 @@ int8_t stdlib_ndarray_f_as_b_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_3d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_3d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -439,10 +445,10 @@ int8_t stdlib_ndarray_f_as_b_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_3d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_3d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_3D_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_3D_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -458,20 +464,21 @@ int8_t stdlib_ndarray_f_as_b_3d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 3;
@@ -480,7 +487,7 @@ int8_t stdlib_ndarray_f_as_b_3d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 8, 4 };
+* int64_t sx[] = { 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -506,12 +513,12 @@ int8_t stdlib_ndarray_f_as_b_3d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_3d_blocked( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_3d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -522,10 +529,10 @@ int8_t stdlib_ndarray_f_as_b_3d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_3d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_3d_blocked( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_3D_BLOCKED_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_3D_BLOCKED_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -541,20 +548,21 @@ int8_t stdlib_ndarray_f_as_b_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 4;
@@ -563,7 +571,7 @@ int8_t stdlib_ndarray_f_as_b_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -589,12 +597,12 @@ int8_t stdlib_ndarray_f_as_b_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_4d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_4d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -605,10 +613,10 @@ int8_t stdlib_ndarray_f_as_b_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_4d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_4d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_4D_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_4D_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -624,20 +632,21 @@ int8_t stdlib_ndarray_f_as_b_4d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 4;
@@ -646,7 +655,7 @@ int8_t stdlib_ndarray_f_as_b_4d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -672,12 +681,12 @@ int8_t stdlib_ndarray_f_as_b_4d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_4d_blocked( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_4d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -688,10 +697,10 @@ int8_t stdlib_ndarray_f_as_b_4d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_4d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_4d_blocked( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_4D_BLOCKED_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_4D_BLOCKED_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -707,20 +716,21 @@ int8_t stdlib_ndarray_f_as_b_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 5;
@@ -729,7 +739,7 @@ int8_t stdlib_ndarray_f_as_b_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -755,12 +765,12 @@ int8_t stdlib_ndarray_f_as_b_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_5d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_5d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -771,10 +781,10 @@ int8_t stdlib_ndarray_f_as_b_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_5d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_5d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_5D_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_5D_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -790,20 +800,21 @@ int8_t stdlib_ndarray_f_as_b_5d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 5;
@@ -812,7 +823,7 @@ int8_t stdlib_ndarray_f_as_b_5d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -838,12 +849,12 @@ int8_t stdlib_ndarray_f_as_b_5d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_5d_blocked( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_5d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -854,10 +865,10 @@ int8_t stdlib_ndarray_f_as_b_5d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_5d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_5d_blocked( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_5D_BLOCKED_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_5D_BLOCKED_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -873,20 +884,21 @@ int8_t stdlib_ndarray_f_as_b_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 6;
@@ -895,7 +907,7 @@ int8_t stdlib_ndarray_f_as_b_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -921,12 +933,12 @@ int8_t stdlib_ndarray_f_as_b_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_6d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_6d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -937,10 +949,10 @@ int8_t stdlib_ndarray_f_as_b_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_6d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_6d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_6D_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_6D_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -956,20 +968,21 @@ int8_t stdlib_ndarray_f_as_b_6d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 6;
@@ -978,7 +991,7 @@ int8_t stdlib_ndarray_f_as_b_6d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1004,12 +1017,12 @@ int8_t stdlib_ndarray_f_as_b_6d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_6d_blocked( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_6d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1020,10 +1033,10 @@ int8_t stdlib_ndarray_f_as_b_6d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_6d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_6d_blocked( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_6D_BLOCKED_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_6D_BLOCKED_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -1039,20 +1052,21 @@ int8_t stdlib_ndarray_f_as_b_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 7;
@@ -1061,7 +1075,7 @@ int8_t stdlib_ndarray_f_as_b_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1087,12 +1101,12 @@ int8_t stdlib_ndarray_f_as_b_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_7d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_7d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1103,10 +1117,10 @@ int8_t stdlib_ndarray_f_as_b_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_7d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_7d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_7D_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_7D_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -1122,20 +1136,21 @@ int8_t stdlib_ndarray_f_as_b_7d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 7;
@@ -1144,7 +1159,7 @@ int8_t stdlib_ndarray_f_as_b_7d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1170,12 +1185,12 @@ int8_t stdlib_ndarray_f_as_b_7d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_7d_blocked( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_7d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1186,10 +1201,10 @@ int8_t stdlib_ndarray_f_as_b_7d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_7d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_7d_blocked( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_7D_BLOCKED_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_7D_BLOCKED_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -1205,20 +1220,21 @@ int8_t stdlib_ndarray_f_as_b_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 8;
@@ -1227,7 +1243,7 @@ int8_t stdlib_ndarray_f_as_b_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1253,12 +1269,12 @@ int8_t stdlib_ndarray_f_as_b_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_8d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_8d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1269,10 +1285,10 @@ int8_t stdlib_ndarray_f_as_b_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_8d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_8d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_8D_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_8D_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -1288,20 +1304,21 @@ int8_t stdlib_ndarray_f_as_b_8d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 8;
@@ -1310,7 +1327,7 @@ int8_t stdlib_ndarray_f_as_b_8d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1336,12 +1353,12 @@ int8_t stdlib_ndarray_f_as_b_8d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_8d_blocked( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_8d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1352,10 +1369,10 @@ int8_t stdlib_ndarray_f_as_b_8d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_8d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_8d_blocked( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_8D_BLOCKED_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_8D_BLOCKED_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -1371,20 +1388,21 @@ int8_t stdlib_ndarray_f_as_b_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 9;
@@ -1393,7 +1411,7 @@ int8_t stdlib_ndarray_f_as_b_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1419,12 +1437,12 @@ int8_t stdlib_ndarray_f_as_b_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_9d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_9d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1435,10 +1453,10 @@ int8_t stdlib_ndarray_f_as_b_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_9d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_9d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_9D_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_9D_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -1454,20 +1472,21 @@ int8_t stdlib_ndarray_f_as_b_9d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 9;
@@ -1476,7 +1495,7 @@ int8_t stdlib_ndarray_f_as_b_9d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1502,12 +1521,12 @@ int8_t stdlib_ndarray_f_as_b_9d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_9d_blocked( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_9d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1518,10 +1537,10 @@ int8_t stdlib_ndarray_f_as_b_9d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_9d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_9d_blocked( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_9D_BLOCKED_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_9D_BLOCKED_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -1537,20 +1556,21 @@ int8_t stdlib_ndarray_f_as_b_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 10;
@@ -1559,7 +1579,7 @@ int8_t stdlib_ndarray_f_as_b_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1585,12 +1605,12 @@ int8_t stdlib_ndarray_f_as_b_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_10d( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_10d( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1601,10 +1621,10 @@ int8_t stdlib_ndarray_f_as_b_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_10d( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_10d( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_10D_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_10D_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -1620,20 +1640,21 @@ int8_t stdlib_ndarray_f_as_b_10d( struct ndarray *arrays[], void *fcn ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 10;
@@ -1642,7 +1663,7 @@ int8_t stdlib_ndarray_f_as_b_10d( struct ndarray *arrays[], void *fcn ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 32, 32, 32, 32, 32, 32, 32, 16, 8, 4 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1668,12 +1689,12 @@ int8_t stdlib_ndarray_f_as_b_10d( struct ndarray *arrays[], void *fcn ) {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_10d_blocked( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_10d_blocked( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1684,10 +1705,10 @@ int8_t stdlib_ndarray_f_as_b_10d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_10d_blocked( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_10d_blocked( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_10D_BLOCKED_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_10D_BLOCKED_LOOP_CLBK( bool )
 	return 0;
 }
 
@@ -1703,20 +1724,21 @@ int8_t stdlib_ndarray_f_as_b_10d_blocked( struct ndarray *arrays[], void *fcn ) 
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 3;
@@ -1725,7 +1747,7 @@ int8_t stdlib_ndarray_f_as_b_10d_blocked( struct ndarray *arrays[], void *fcn ) 
 * int64_t shape[] = { 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 8, 4 };
+* int64_t sx[] = { 4, 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1751,12 +1773,12 @@ int8_t stdlib_ndarray_f_as_b_10d_blocked( struct ndarray *arrays[], void *fcn ) 
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b_nd( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x_nd( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1767,40 +1789,40 @@ int8_t stdlib_ndarray_f_as_b_10d_blocked( struct ndarray *arrays[], void *fcn ) 
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b_nd( struct ndarray *arrays[], void *fcn ) {
-	typedef uint8_t func_type( void );
+int8_t stdlib_ndarray_x_nd( struct ndarray *arrays[], void *fcn ) {
+	typedef bool func_type( void );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_NULLARY_ND_LOOP_CLBK( float )
+	STDLIB_NDARRAY_NULLARY_ND_LOOP_CLBK( bool )
 	return 0;
 }
 
 // Define a list of nullary ndarray functions:
 static ndarrayNullaryFcn functions[] = {
-	stdlib_ndarray_f_as_b_0d,
-	stdlib_ndarray_f_as_b_1d,
-	stdlib_ndarray_f_as_b_2d,
-	stdlib_ndarray_f_as_b_3d,
-	stdlib_ndarray_f_as_b_4d,
-	stdlib_ndarray_f_as_b_5d,
-	stdlib_ndarray_f_as_b_6d,
-	stdlib_ndarray_f_as_b_7d,
-	stdlib_ndarray_f_as_b_8d,
-	stdlib_ndarray_f_as_b_9d,
-	stdlib_ndarray_f_as_b_10d,
-	stdlib_ndarray_f_as_b_nd
+	stdlib_ndarray_x_0d,
+	stdlib_ndarray_x_1d,
+	stdlib_ndarray_x_2d,
+	stdlib_ndarray_x_3d,
+	stdlib_ndarray_x_4d,
+	stdlib_ndarray_x_5d,
+	stdlib_ndarray_x_6d,
+	stdlib_ndarray_x_7d,
+	stdlib_ndarray_x_8d,
+	stdlib_ndarray_x_9d,
+	stdlib_ndarray_x_10d,
+	stdlib_ndarray_x_nd
 };
 
 // Define a list of nullary ndarray functions implementing loop blocking...
 static ndarrayNullaryFcn blocked_functions[] = {
-	stdlib_ndarray_f_as_b_2d_blocked,
-	stdlib_ndarray_f_as_b_3d_blocked,
-	stdlib_ndarray_f_as_b_4d_blocked,
-	stdlib_ndarray_f_as_b_5d_blocked,
-	stdlib_ndarray_f_as_b_6d_blocked,
-	stdlib_ndarray_f_as_b_7d_blocked,
-	stdlib_ndarray_f_as_b_8d_blocked,
-	stdlib_ndarray_f_as_b_9d_blocked,
-	stdlib_ndarray_f_as_b_10d_blocked
+	stdlib_ndarray_x_2d_blocked,
+	stdlib_ndarray_x_3d_blocked,
+	stdlib_ndarray_x_4d_blocked,
+	stdlib_ndarray_x_5d_blocked,
+	stdlib_ndarray_x_6d_blocked,
+	stdlib_ndarray_x_7d_blocked,
+	stdlib_ndarray_x_8d_blocked,
+	stdlib_ndarray_x_9d_blocked,
+	stdlib_ndarray_x_10d_blocked
 };
 
 // Create a nullary function dispatch object:
@@ -1830,20 +1852,21 @@ static const struct ndarrayNullaryDispatchObject obj = {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/nullary/f_as_b.h"
+* #include "stdlib/ndarray/base/nullary/x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
 * #include "stdlib/ndarray/ctor.h"
+* #include <stdbool.h>
 * #include <stdint.h>
 * #include <stdlib.h>
 * #include <stdio.h>
 *
 * // Define the ndarray data type:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create an underlying byte array:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -1852,7 +1875,7 @@ static const struct ndarrayNullaryDispatchObject obj = {
 * int64_t shape[] = { 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 8, 4 };
+* int64_t sx[] = { 2, 1 };
 *
 * // Define the index offset:
 * int64_t ox = 0;
@@ -1878,12 +1901,12 @@ static const struct ndarrayNullaryDispatchObject obj = {
 * struct ndarray *arrays[] = { x };
 *
 * // Define a callback:
-* static uint8_t fcn( void ) {
-*     return 10;
+* static bool fcn( void ) {
+*     return true;
 * }
 *
 * // Apply the callback:
-* int8_t status = stdlib_ndarray_f_as_b( arrays, (void *)fcn );
+* int8_t status = stdlib_ndarray_x( arrays, (void *)fcn );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1894,6 +1917,6 @@ static const struct ndarrayNullaryDispatchObject obj = {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_f_as_b( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_x( struct ndarray *arrays[], void *fcn ) {
 	return stdlib_ndarray_nullary_dispatch( &obj, arrays, fcn );
 }
