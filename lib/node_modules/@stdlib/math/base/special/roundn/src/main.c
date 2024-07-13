@@ -18,14 +18,15 @@
 
 #include "stdlib/math/base/special/roundn.h"
 #include "stdlib/math/base/assert/is_infinite.h"
+#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/round.h"
+#include "stdlib/math/base/special/pow.h"
 #include "stdlib/constants/float64/max_safe_integer.h"
 #include "stdlib/constants/float64/max_base10_exponent.h"
 #include "stdlib/constants/float64/min_base10_exponent.h"
 #include "stdlib/constants/float64/min_base10_exponent_subnormal.h"
 #include <stdint.h>
-#include <math.h>
 
 static const double MAX_INT = STDLIB_CONSTANT_FLOAT64_MAX_SAFE_INTEGER + 1.0;
 static const double HUGE_VALUE = 1.0e+308;
@@ -115,7 +116,7 @@ double stdlib_base_roundn( const double x, const int32_t n ) {
 	double s;
 	double y;
 
-	if ( isnan( x ) ){
+	if ( stdlib_base_is_nan( x ) ){
 		return 0.0 / 0.0; // NaN
 	}
 
@@ -140,14 +141,14 @@ double stdlib_base_roundn( const double x, const int32_t n ) {
 	}
 	// If we overflow, return `x`, as the number of digits to the right of the decimal is too small (i.e., `x` is too large / lacks sufficient fractional precision) for there to be any effect when rounding...
 	if ( n < STDLIB_CONSTANT_FLOAT64_MIN_BASE10_EXPONENT ){
-		s = pow( 10.0, -( n + STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) );  // TODO: replace use of `pow` once have stdlib equivalent
+		s = stdlib_base_pow( 10.0, -( n + STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) );
 		y = ( x * HUGE_VALUE ) * s; // order of operation matters!
 		if ( stdlib_base_is_infinite( y ) ){
 			return x;
 		}
 		return ( stdlib_base_round( y ) / HUGE_VALUE ) / s;
 	}
-	s = pow( 10.0, -n );  // TODO: replace use of `pow` once have stdlib equivalent
+	s = stdlib_base_pow( 10.0, -n );
 	y = x * s;
 	if ( stdlib_base_is_infinite( y ) ){
 		return x;
