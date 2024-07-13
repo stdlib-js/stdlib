@@ -11,7 +11,8 @@
         Options.
 
     options.dtype: string (optional)
-        Underlying data type. Default: 'float64'.
+        Underlying data type. Must be a numeric data type or "generic". Default:
+        'float64'.
 
     options.order: string (optional)
         Specifies whether an array is row-major (C-style) or column-major
