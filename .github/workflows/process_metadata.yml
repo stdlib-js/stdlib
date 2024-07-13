@@ -25,7 +25,7 @@ on:
     branches:
       - develop
   issue_comment:
-    types: [created, edited]
+    types: [ created, edited ]
 
 # Global permissions:
 permissions:
@@ -48,6 +48,8 @@ jobs:
     steps:
       # Exit if the user does not have write access to the repository:
       - name: 'Exit if user does not have write access'
+        id: assert-write-access
+
         # Pin action to full length commit SHA
         uses: lannonbr/repo-permission-check-action@2bb8c89ba8bf115c4bfab344d6a6f442b24c9a1f # v2.0.2
         with:
@@ -55,8 +57,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+        # Continue with subsequent steps even when this step fails in order to "pass" the job and not trigger failure e-mails/notifications:
+        continue-on-error: true
+
       # Checkout the repository:
       - name: 'Checkout repository'
+
+        # Only run this step if a user has write access:
+        if: steps.assert-write-access.outcome == 'success'
+
         # Pin action to full length commit SHA
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
@@ -73,11 +82,16 @@ jobs:
       # Extract commit message and issue comment metadata:
       - name: 'Extract metadata'
         id: extract-metadata
+
+        # Only run this step if a user has write access:
+        if: steps.assert-write-access.outcome == 'success'
+
         # Pin action to full length commit SHA
         uses: stdlib-js/metadata-action@3ccf68f24c51ae23470319e8e5619d539df8212b # v3.0.0
 
       # Check the metadata for directives to send tweets:
       - name: 'Send tweets'
+
         # Pin action to full length commit SHA
         uses: stdlib-js/metadata-tweet-action@8e9b688c86150797c1c7f60bc8f7c9a9a30e10fe # v2.0.0
         with:
@@ -90,6 +104,10 @@ jobs:
       # Check the metadata for directives to dispatch workflows:
       - name: 'Check metadata for workflow dispatch directives'
         id: check-workflow-dispatch
+
+        # Only run this step if a user has write access:
+        if: steps.assert-write-access.outcome == 'success'
+
         run: |
           inputs=$(echo '${{ steps.extract-metadata.outputs.metadata }}' | jq -c '.[] | select(.type | contains("workflow_dispatch"))')
           if [ -n "$inputs" ]; then
@@ -104,9 +122,10 @@ jobs:
 
       # Dispatch first found workflow (if applicable):
       - name: 'Dispatch workflow with inputs'
+
         # Pin action to full length commit SHA
         uses: benc-uk/workflow-dispatch@25b02cc069be46d637e8fe2f1e8484008e9e9609 # v1.2.3
-        if: steps.check-workflow-dispatch.outputs.dispatch == 'true'
+        if: ${{ steps.assert-write-access.outcome == 'success' && steps.check-workflow-dispatch.outputs.dispatch == 'true' }}
         with:
           workflow: ${{ steps.check-workflow-dispatch.outputs.workflow }}
           inputs: ${{ steps.check-workflow-dispatch.outputs.inputs }}

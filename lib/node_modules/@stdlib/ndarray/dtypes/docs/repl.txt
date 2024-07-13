@@ -7,6 +7,7 @@
     - floating_point: floating-point data types.
     - real_floating_point: real-valued floating-point data types.
     - complex_floating_point: complex-valued floating-point data types.
+    - boolean: boolean data types.
     - integer: integer data types.
     - signed_integer: signed integer data types.
     - unsigned_integer: unsigned integer data types.
