@@ -2909,14 +2909,14 @@ interface Namespace {
 	* @returns zero-filled array
 	*
 	* @example
-	* var arr = ns.zeros( 'float32', [ 2, 2 ], 'row-major' );
+	* var arr = ns.zeros( 'float64', [ 2, 2 ], 'row-major' );
 	* // returns <ndarray>
 	*
 	* var sh = arr.shape;
 	* // returns [ 2, 2 ]
 	*
 	* var dt = arr.dtype;
-	* // returns 'float32'
+	* // returns 'float64'
 	*/
 	zeros: typeof zeros;
 
