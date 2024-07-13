@@ -533,6 +533,30 @@ declare class BooleanArray implements BooleanArrayInterface {
 	join( separator?: string ): string;
 
 	/**
+	* Returns an iterator for iterating over each index key in a typed array.
+	*
+	* @returns iterator
+	*
+	* @example
+	* var arr = new BooleanArray( 2 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	*
+	* var iter = arr.keys();
+	*
+	* var v = iter.next().value;
+	* // returns 0
+	*
+	* v = iter.next().value;
+	* // returns 1
+	*
+	* var bool = iter.next().done;
+	* // returns true
+	*/
+	keys(): TypedIterator<number>;
+
+	/**
 	* Returns the last index at which a given element can be found.
 	*
 	* @param searchElement - element to find
@@ -942,6 +966,55 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns 'true,false,true'
 	*/
 	toString(): string;
+
+	/**
+	* Returns an iterator for iterating over each value in a typed array.
+	*
+	* @returns iterator
+	*
+	* @example
+	* var arr = new BooleanArray( 2 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	*
+	* var iter = arr.values();
+	*
+	* var v = iter.next().value;
+	* // returns true
+	*
+	* v = iter.next().value;
+	* // returns false
+	*
+	* var bool = iter.next().done;
+	* // returns true
+	*/
+	values(): TypedIterator<boolean>;
+
+	/**
+	* Returns a new typed array with the element at a provided index replaced with a provided value.
+	*
+	* @param index - element index
+	* @param value - new value
+	* @throws first argument must be an integer
+	* @throws second argument must be a boolean
+	* @throws index argument is out-of-bounds
+	* @returns modified typed array
+	*
+	* @example
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var out = arr.with( 0, false );
+	* // returns <BooleanArray>
+	*
+	* var v = out.get( 0 );
+	* // returns false
+	*/
+	with( index: number, value: boolean ): BooleanArray;
 }
 
 /**
