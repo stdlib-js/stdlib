@@ -141,15 +141,15 @@ for ( i = 0; i < 10; i++ ) {
 #include "stdlib/math/base/special/digamma.h"
 ```
 
-#### digamma( x )
+#### stdlib_base_digamma( x )
 
 Evaluates the [digamma function][digamma-function].
 
 ```c
-double out = digamma( -2.5 );
+double out = stdlib_base_digamma( -2.5 );
 // returns ~1.103
 
-out = digamma( 1.0 );
+out = stdlib_base_digamma( 1.0 );
 // returns ~-0.577
 ```
 
@@ -158,7 +158,7 @@ The function accepts the following arguments:
 -   **x**: `[in] double` input value.
 
 ```c
-double digamma( const double x );
+double stdlib_base_digamma( const double x );
 ```
 
 </section>
