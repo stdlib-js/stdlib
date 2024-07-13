@@ -20,8 +20,8 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#ifndef STDLIB_NDARRAY_BASE_UNARY_B_U_H
-#define STDLIB_NDARRAY_BASE_UNARY_B_U_H
+#ifndef STDLIB_NDARRAY_BASE_UNARY_X_X_H
+#define STDLIB_NDARRAY_BASE_UNARY_X_X_H
 
 #include "stdlib/ndarray/ctor.h"
 #include <stdint.h>
@@ -36,115 +36,115 @@ extern "C" {
 /**
 * Applies a unary callback to an input ndarray and assigns results to elements in an output ndarray.
 */
-int8_t stdlib_ndarray_b_u( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a zero-dimensional input ndarray and assigns results to elements in a zero-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_0d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_0d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a one-dimensional input ndarray and assigns results to elements in a one-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_1d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_1d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a two-dimensional input ndarray and assigns results to elements in a two-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_2d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_2d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a two-dimensional input ndarray and assigns results to elements in a two-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_2d_blocked( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_2d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a three-dimensional input ndarray and assigns results to elements in a three-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_3d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_3d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a three-dimensional input ndarray and assigns results to elements in a three-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_3d_blocked( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_3d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a four-dimensional input ndarray and assigns results to elements in a four-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_4d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_4d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a four-dimensional input ndarray and assigns results to elements in a four-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_4d_blocked( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_4d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a five-dimensional input ndarray and assigns results to elements in a five-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_5d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_5d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a five-dimensional input ndarray and assigns results to elements in a five-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_5d_blocked( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_5d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a six-dimensional input ndarray and assigns results to elements in a six-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_6d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_6d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a six-dimensional input ndarray and assigns results to elements in a six-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_6d_blocked( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_6d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a seven-dimensional input ndarray and assigns results to elements in a seven-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_7d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_7d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a seven-dimensional input ndarray and assigns results to elements in a seven-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_7d_blocked( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_7d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to an eight-dimensional input ndarray and assigns results to elements in an eight-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_8d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_8d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to an eight-dimensional input ndarray and assigns results to elements in an eight-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_8d_blocked( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_8d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a nine-dimensional input ndarray and assigns results to elements in a nine-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_9d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_9d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a nine-dimensional input ndarray and assigns results to elements in a nine-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_9d_blocked( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_9d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a ten-dimensional input ndarray and assigns results to elements in a ten-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_10d( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_10d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to a ten-dimensional input ndarray and assigns results to elements in a ten-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_10d_blocked( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_10d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Applies a unary callback to an n-dimensional input ndarray and assigns results to elements in an n-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_b_u_nd( struct ndarray *arrays[], void *fcn );
+int8_t stdlib_ndarray_x_x_nd( struct ndarray *arrays[], void *fcn );
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // !STDLIB_NDARRAY_BASE_UNARY_B_U_H
+#endif // !STDLIB_NDARRAY_BASE_UNARY_X_X_H
