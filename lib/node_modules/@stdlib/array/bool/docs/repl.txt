@@ -542,6 +542,30 @@
     -1
 
 
+{{alias}}.prototype.join( [separator] )
+    Returns a new string by concatenating all array elements separated by a
+    separator string.
+
+    Parameters
+    ----------
+    separator: string (optional)
+        Separator string. Default: ','.
+
+    Returns
+    -------
+    out: string
+        Array serialized as a string.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var str = arr.join()
+    'true,false,true'
+    > str = arr.join( '|' )
+    'true|false|true'
+
+
 {{alias}}.prototype.lastIndexOf( searchElement[, fromIndex] )
     Returns the last index at which a given element can be found.
 
@@ -941,6 +965,22 @@
     true
     > v = out.get( 2 )
     false
+
+
+{{alias}}.prototype.toString()
+    Serializes an array as a string.
+
+    Returns
+    -------
+    out: string
+        String serialization of the array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var str = arr.toString()
+    'true,false,true'
 
 
     See Also
