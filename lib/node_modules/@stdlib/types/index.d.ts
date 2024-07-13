@@ -1384,7 +1384,7 @@ declare module '@stdlib/types/blas' {
 * };
 */
 declare module '@stdlib/types/ndarray' {
-	import { ArrayLike, AccessorArrayLike, Collection, Complex128Array, Complex64Array, RealOrComplexTypedArray, FloatOrComplexTypedArray, RealTypedArray, ComplexTypedArray, IntegerTypedArray, FloatTypedArray, SignedIntegerTypedArray, UnsignedIntegerTypedArray } from '@stdlib/types/array';
+	import { ArrayLike, AccessorArrayLike, BooleanArray, BooleanTypedArray, Collection, Complex128Array, Complex64Array, RealOrComplexTypedArray, FloatOrComplexTypedArray, RealTypedArray, ComplexTypedArray, IntegerTypedArray, FloatTypedArray, SignedIntegerTypedArray, UnsignedIntegerTypedArray } from '@stdlib/types/array';
 	import { ComplexLike, Complex128, Complex64 } from '@stdlib/types/complex'; // eslint-disable-line no-duplicate-imports
 	import { Layout } from '@stdlib/types/blas';
 
@@ -2777,6 +2777,120 @@ declare module '@stdlib/types/ndarray' {
 		* @returns ndarray instance
 		*/
 		set( ...args: Array<number> ): uint8cndarray;
+	}
+
+	/**
+	* Interface describing an ndarray having a boolean data type.
+	*
+	* @example
+	* const arr: booleanndarray = {
+	*     'byteLength': 3,
+	*     'BYTES_PER_ELEMENT': 1,
+	*     'data': new BooleanArray( [ true, false, true ] ),
+	*     'dtype': 'bool',
+	*     'flags': {
+	*         'ROW_MAJOR_CONTIGUOUS': true,
+	*         'COLUMN_MAJOR_CONTIGUOUS': false
+	*     },
+	*     'length': 3,
+	*     'ndims': 1,
+	*     'offset': 0,
+	*     'order': 'row-major',
+	*     'shape': [ 3 ],
+	*     'strides': [ 1 ],
+	*     'get': function get( i ) {
+	*         return this.data.get( i );
+	*     },
+	*     'set': function set( i, v ) {
+	*         this.data.set( v, i );
+	*         return this;
+	*     }
+	* };
+	*/
+	interface booleanndarray extends typedndarray<boolean> {
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: 1;
+
+		/**
+		* A reference to the underlying data buffer.
+		*/
+		data: BooleanTypedArray;
+
+		/**
+		* Underlying data type.
+		*/
+		dtype: 'bool';
+
+		/**
+		* Sets an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts and value to set
+		* @returns ndarray instance
+		*/
+		set( ...args: Array<number | boolean> ): booleanndarray;
+	}
+
+	/**
+	* Interface describing an ndarray having a boolean data type.
+	*
+	* @example
+	* const arr: boolndarray = {
+	*     'byteLength': 3,
+	*     'BYTES_PER_ELEMENT': 1,
+	*     'data': new BooleanArray( [ true, false, true ] ),
+	*     'dtype': 'bool',
+	*     'flags': {
+	*         'ROW_MAJOR_CONTIGUOUS': true,
+	*         'COLUMN_MAJOR_CONTIGUOUS': false
+	*     },
+	*     'length': 3,
+	*     'ndims': 1,
+	*     'offset': 0,
+	*     'order': 'row-major',
+	*     'shape': [ 3 ],
+	*     'strides': [ 1 ],
+	*     'get': function get( i ) {
+	*         return this.data.get( i );
+	*     },
+	*     'set': function set( i, v ) {
+	*         this.data.set( v, i );
+	*         return this;
+	*     }
+	* };
+	*/
+	interface boolndarray extends booleanndarray {
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: 1;
+
+		/**
+		* A reference to the underlying data buffer.
+		*/
+		data: BooleanArray;
+
+		/**
+		* Underlying data type.
+		*/
+		dtype: 'bool';
+
+		/**
+		* Sets an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts and value to set
+		* @returns ndarray instance
+		*/
+		set( ...args: Array<number | boolean> ): boolndarray;
 	}
 
 	/**
