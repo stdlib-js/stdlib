@@ -549,7 +549,7 @@ interface Namespace {
 	broadcastShapes: typeof broadcastShapes;
 
 	/**
-	* Returns a zero-filled contiguous linear ndarray data buffer.
+	* Returns a contiguous linear ndarray data buffer.
 	*
 	* @param dtype - data type
 	* @param size - buffer size
