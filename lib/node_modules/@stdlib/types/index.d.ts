@@ -1391,7 +1391,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type.
 	*/
-	type DataType = NumericDataType | 'binary' | 'generic'; // "all"
+	type DataType = NumericDataType | BooleanDataType | 'binary' | 'generic'; // "all"
 
 	/**
 	* Data type for real-valued ndarrays.
@@ -1399,9 +1399,19 @@ declare module '@stdlib/types/ndarray' {
 	type RealDataType = RealFloatingPointDataType | IntegerDataType; // "real"
 
 	/**
+	* Data type for real-valued ndarrays.
+	*/
+	type RealAndGenericDataType = RealDataType | 'generic'; // "real_and_generic"
+
+	/**
 	* Data type for floating-point ndarrays.
 	*/
 	type RealFloatingPointDataType = 'float64' | 'float32'; // "real_floating_point"
+
+	/**
+	* Data type for floating-point ndarrays.
+	*/
+	type RealFloatingPointAndGenericDataType = RealFloatingPointDataType | 'generic'; // "real_floating_point_and_generic"
 
 	/**
 	* Data type for integer ndarrays.
@@ -1409,9 +1419,19 @@ declare module '@stdlib/types/ndarray' {
 	type IntegerDataType = SignedIntegerDataType | UnsignedIntegerDataType; // "integer"
 
 	/**
+	* Data type for integer ndarrays.
+	*/
+	type IntegerAndGenericDataType = IntegerDataType | 'generic'; // "integer_and_generic"
+
+	/**
 	* Data type for signed integer ndarrays.
 	*/
 	type SignedIntegerDataType = 'int32' | 'int16' | 'int8'; // "signed_integer"
+
+	/**
+	* Data type for signed integer ndarrays.
+	*/
+	type SignedIntegerAndGenericDataType = SignedIntegerDataType | 'generic'; // "signed_integer_and_generic"
 
 	/**
 	* Data type for unsigned integer ndarrays.
@@ -1419,9 +1439,19 @@ declare module '@stdlib/types/ndarray' {
 	type UnsignedIntegerDataType = 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // "unsigned_integer"
 
 	/**
+	* Data type for unsigned integer ndarrays.
+	*/
+	type UnsignedIntegerAndGenericDataType = UnsignedIntegerDataType | 'generic'; // "unsigned_integer_and_generic"
+
+	/**
 	* Data type for complex number ndarrays.
 	*/
 	type ComplexFloatingPointDataType = 'complex64' | 'complex128'; // "complex_floating_point"
+
+	/**
+	* Data type for complex number ndarrays.
+	*/
+	type ComplexFloatingPointAndGenericDataType = ComplexFloatingPointDataType | 'generic'; // "complex_floating_point_and_generic"
 
 	/**
 	* Data type for floating-point real or complex ndarrays.
@@ -1429,24 +1459,54 @@ declare module '@stdlib/types/ndarray' {
 	type FloatingPointDataType = RealFloatingPointDataType | ComplexFloatingPointDataType; // "floating_point"
 
 	/**
+	* Data type for floating-point real or complex ndarrays.
+	*/
+	type FloatingPointAndGenericDataType = FloatingPointDataType | 'generic'; // "floating_point_and_generic"
+
+	/**
 	* Data type for real-valued or complex number ndarrays.
 	*/
 	type NumericDataType = RealDataType | ComplexFloatingPointDataType; // "numeric"
 
 	/**
+	* Data type for real-valued or complex number ndarrays.
+	*/
+	type NumericAndGenericDataType = NumericDataType | 'generic'; // "numeric_and_generic"
+
+	/**
+	* Data type for boolean typed arrays.
+	*/
+	type BooleanDataType = 'bool'; // "boolean"
+
+	/**
+	* Data type for boolean and generic ndarrays.
+	*/
+	type BooleanAndGenericDataType = BooleanDataType | 'generic'; // "boolean_and_generic"
+
+	/**
 	* Data type for strictly "typed" ndarrays.
 	*/
-	type TypedDataType = NumericDataType; // "typed"
+	type TypedDataType = NumericDataType | BooleanDataType; // "typed"
+
+	/**
+	* Data type for strictly typed and generic ndarrays.
+	*/
+	type TypedAndGenericDataType = TypedDataType | 'generic'; // "typed_and_generic"
+
+	/**
+	* Strict data type "kinds".
+	*/
+	type StrictDataTypeKind = 'typed' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer' | 'boolean';
 
 	/**
 	* Data type "kinds".
 	*/
-	type DataTypeKind = 'all' | 'typed' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer';
+	type DataTypeKind = StrictDataTypeKind | 'all' | 'typed_and_generic' | 'numeric_and_generic' | 'real_and_generic' | 'floating_point_and_generic' | 'real_floating_point_and_generic' | 'complex_floating_point_and_generic' | 'integer_and_generic' | 'signed_integer_and_generic' | 'unsigned_integer_and_generic' | 'boolean_and_generic';
 
 	/**
 	* Output data type policy.
 	*/
-	type OutputPolicy = 'default' | 'same' | 'promoted' | 'bool' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer';
+	type OutputPolicy = 'default' | 'same' | 'promoted' | 'boolean' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer';
 
 	/**
 	* Array order.

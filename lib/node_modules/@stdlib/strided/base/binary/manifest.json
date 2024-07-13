@@ -368,6 +368,7 @@
         "./src/uu_z.c",
         "./src/uu_z_as_zz_z.c",
         "./src/uz_z_as_zz_z.c",
+        "./src/xx_x.c",
         "./src/zb_z_as_zz_z.c",
         "./src/zc_z_as_zz_z.c",
         "./src/zd_z_as_zz_z.c",
