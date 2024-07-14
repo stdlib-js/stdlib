@@ -20,12 +20,13 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#include "stdlib/ndarray/base/assign/k_d.h"
+#include "stdlib/ndarray/base/assign/x_x.h"
 #include "stdlib/ndarray/base/assign/typedefs.h"
 #include "stdlib/ndarray/base/assign/macros.h"
 #include "stdlib/ndarray/base/assign/dispatch_object.h"
 #include "stdlib/ndarray/base/assign/dispatch.h"
 #include "stdlib/ndarray/ctor.h"
+#include <stdbool.h>
 #include <stdint.h>
 
 /**
@@ -39,7 +40,7 @@
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -49,12 +50,12 @@
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0 };
+* uint8_t ybuf[] = { 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 0;
@@ -98,7 +99,7 @@
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_0d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_0d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -110,13 +111,13 @@
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_0d( struct ndarray *arrays[], void *data ) {
-	int16_t v;
-	int8_t status = stdlib_ndarray_iget_int16( arrays[ 0 ], 0, &v );
+int8_t stdlib_ndarray_assign_x_x_0d( struct ndarray *arrays[], void *data ) {
+	bool v;
+	int8_t status = stdlib_ndarray_iget_bool( arrays[ 0 ], 0, &v );
 	if ( status != 0 ) {
 		return -1;
 	}
-	status = stdlib_ndarray_iset_float64( arrays[ 1 ], 0, (double)v );
+	status = stdlib_ndarray_iset_bool( arrays[ 1 ], 0, v );
 	if ( status != 0 ) {
 		return -1;
 	}
@@ -134,7 +135,7 @@ int8_t stdlib_ndarray_assign_k_d_0d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -144,12 +145,12 @@ int8_t stdlib_ndarray_assign_k_d_0d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 1;
@@ -158,8 +159,8 @@ int8_t stdlib_ndarray_assign_k_d_0d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 3 };
 *
 * // Define the strides:
-* int64_t sx[] = { 2 };
-* int64_t sy[] = { 8 };
+* int64_t sx[] = { 1 };
+* int64_t sy[] = { 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -193,7 +194,7 @@ int8_t stdlib_ndarray_assign_k_d_0d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_1d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_1d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -205,8 +206,8 @@ int8_t stdlib_ndarray_assign_k_d_0d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_1d( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_1D_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_1d( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_1D_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -221,7 +222,7 @@ int8_t stdlib_ndarray_assign_k_d_1d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -231,12 +232,12 @@ int8_t stdlib_ndarray_assign_k_d_1d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -245,8 +246,8 @@ int8_t stdlib_ndarray_assign_k_d_1d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 2 };
-* int64_t sy[] = { 16, 8 };
+* int64_t sx[] = { 2, 1 };
+* int64_t sy[] = { 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -280,7 +281,7 @@ int8_t stdlib_ndarray_assign_k_d_1d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_2d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_2d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -292,8 +293,8 @@ int8_t stdlib_ndarray_assign_k_d_1d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_2d( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_2D_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_2d( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_2D_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -308,7 +309,7 @@ int8_t stdlib_ndarray_assign_k_d_2d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -318,12 +319,12 @@ int8_t stdlib_ndarray_assign_k_d_2d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -332,8 +333,8 @@ int8_t stdlib_ndarray_assign_k_d_2d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 2 };
-* int64_t sy[] = { 16, 8 };
+* int64_t sx[] = { 2, 1 };
+* int64_t sy[] = { 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -367,7 +368,7 @@ int8_t stdlib_ndarray_assign_k_d_2d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_2d_blocked( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_2d_blocked( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -379,8 +380,8 @@ int8_t stdlib_ndarray_assign_k_d_2d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_2d_blocked( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_2D_BLOCKED_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_2d_blocked( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_2D_BLOCKED_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -395,7 +396,7 @@ int8_t stdlib_ndarray_assign_k_d_2d_blocked( struct ndarray *arrays[], void *dat
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -405,12 +406,12 @@ int8_t stdlib_ndarray_assign_k_d_2d_blocked( struct ndarray *arrays[], void *dat
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 3;
@@ -419,8 +420,8 @@ int8_t stdlib_ndarray_assign_k_d_2d_blocked( struct ndarray *arrays[], void *dat
 * int64_t shape[] = { 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 8, 4, 2 };
-* int64_t sy[] = { 32, 16, 8 };
+* int64_t sx[] = { 4, 2, 1 };
+* int64_t sy[] = { 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -454,7 +455,7 @@ int8_t stdlib_ndarray_assign_k_d_2d_blocked( struct ndarray *arrays[], void *dat
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_3d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_3d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -466,8 +467,8 @@ int8_t stdlib_ndarray_assign_k_d_2d_blocked( struct ndarray *arrays[], void *dat
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_3d( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_3D_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_3d( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_3D_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -482,7 +483,7 @@ int8_t stdlib_ndarray_assign_k_d_3d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -492,12 +493,12 @@ int8_t stdlib_ndarray_assign_k_d_3d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 3;
@@ -506,8 +507,8 @@ int8_t stdlib_ndarray_assign_k_d_3d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 8, 4, 2 };
-* int64_t sy[] = { 32, 16, 8 };
+* int64_t sx[] = { 4, 2, 1 };
+* int64_t sy[] = { 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -541,7 +542,7 @@ int8_t stdlib_ndarray_assign_k_d_3d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_3d_blocked( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_3d_blocked( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -553,8 +554,8 @@ int8_t stdlib_ndarray_assign_k_d_3d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_3d_blocked( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_3D_BLOCKED_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_3d_blocked( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_3D_BLOCKED_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -569,7 +570,7 @@ int8_t stdlib_ndarray_assign_k_d_3d_blocked( struct ndarray *arrays[], void *dat
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -579,12 +580,12 @@ int8_t stdlib_ndarray_assign_k_d_3d_blocked( struct ndarray *arrays[], void *dat
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 4;
@@ -593,8 +594,8 @@ int8_t stdlib_ndarray_assign_k_d_3d_blocked( struct ndarray *arrays[], void *dat
 * int64_t shape[] = { 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -628,7 +629,7 @@ int8_t stdlib_ndarray_assign_k_d_3d_blocked( struct ndarray *arrays[], void *dat
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_4d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_4d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -640,8 +641,8 @@ int8_t stdlib_ndarray_assign_k_d_3d_blocked( struct ndarray *arrays[], void *dat
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_4d( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_4D_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_4d( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_4D_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -656,7 +657,7 @@ int8_t stdlib_ndarray_assign_k_d_4d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -666,12 +667,12 @@ int8_t stdlib_ndarray_assign_k_d_4d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 4;
@@ -680,8 +681,8 @@ int8_t stdlib_ndarray_assign_k_d_4d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -715,7 +716,7 @@ int8_t stdlib_ndarray_assign_k_d_4d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_4d_blocked( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_4d_blocked( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -727,8 +728,8 @@ int8_t stdlib_ndarray_assign_k_d_4d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_4d_blocked( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_4D_BLOCKED_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_4d_blocked( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_4D_BLOCKED_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -743,7 +744,7 @@ int8_t stdlib_ndarray_assign_k_d_4d_blocked( struct ndarray *arrays[], void *dat
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -753,12 +754,12 @@ int8_t stdlib_ndarray_assign_k_d_4d_blocked( struct ndarray *arrays[], void *dat
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 5;
@@ -767,8 +768,8 @@ int8_t stdlib_ndarray_assign_k_d_4d_blocked( struct ndarray *arrays[], void *dat
 * int64_t shape[] = { 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -802,7 +803,7 @@ int8_t stdlib_ndarray_assign_k_d_4d_blocked( struct ndarray *arrays[], void *dat
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_5d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_5d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -814,8 +815,8 @@ int8_t stdlib_ndarray_assign_k_d_4d_blocked( struct ndarray *arrays[], void *dat
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_5d( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_5D_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_5d( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_5D_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -830,7 +831,7 @@ int8_t stdlib_ndarray_assign_k_d_5d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -840,12 +841,12 @@ int8_t stdlib_ndarray_assign_k_d_5d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 5;
@@ -854,8 +855,8 @@ int8_t stdlib_ndarray_assign_k_d_5d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -889,7 +890,7 @@ int8_t stdlib_ndarray_assign_k_d_5d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_5d_blocked( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_5d_blocked( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -901,8 +902,8 @@ int8_t stdlib_ndarray_assign_k_d_5d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_5d_blocked( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_5D_BLOCKED_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_5d_blocked( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_5D_BLOCKED_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -917,7 +918,7 @@ int8_t stdlib_ndarray_assign_k_d_5d_blocked( struct ndarray *arrays[], void *dat
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -927,12 +928,12 @@ int8_t stdlib_ndarray_assign_k_d_5d_blocked( struct ndarray *arrays[], void *dat
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 6;
@@ -941,8 +942,8 @@ int8_t stdlib_ndarray_assign_k_d_5d_blocked( struct ndarray *arrays[], void *dat
 * int64_t shape[] = { 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -976,7 +977,7 @@ int8_t stdlib_ndarray_assign_k_d_5d_blocked( struct ndarray *arrays[], void *dat
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_6d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_6d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -988,8 +989,8 @@ int8_t stdlib_ndarray_assign_k_d_5d_blocked( struct ndarray *arrays[], void *dat
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_6d( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_6D_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_6d( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_6D_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -1004,7 +1005,7 @@ int8_t stdlib_ndarray_assign_k_d_6d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1014,12 +1015,12 @@ int8_t stdlib_ndarray_assign_k_d_6d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 6;
@@ -1028,8 +1029,8 @@ int8_t stdlib_ndarray_assign_k_d_6d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1063,7 +1064,7 @@ int8_t stdlib_ndarray_assign_k_d_6d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_6d_blocked( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_6d_blocked( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1075,8 +1076,8 @@ int8_t stdlib_ndarray_assign_k_d_6d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_6d_blocked( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_6D_BLOCKED_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_6d_blocked( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_6D_BLOCKED_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -1091,7 +1092,7 @@ int8_t stdlib_ndarray_assign_k_d_6d_blocked( struct ndarray *arrays[], void *dat
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1101,12 +1102,12 @@ int8_t stdlib_ndarray_assign_k_d_6d_blocked( struct ndarray *arrays[], void *dat
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 7;
@@ -1115,8 +1116,8 @@ int8_t stdlib_ndarray_assign_k_d_6d_blocked( struct ndarray *arrays[], void *dat
 * int64_t shape[] = { 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1150,7 +1151,7 @@ int8_t stdlib_ndarray_assign_k_d_6d_blocked( struct ndarray *arrays[], void *dat
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_7d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_7d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1162,8 +1163,8 @@ int8_t stdlib_ndarray_assign_k_d_6d_blocked( struct ndarray *arrays[], void *dat
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_7d( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_7D_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_7d( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_7D_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -1178,7 +1179,7 @@ int8_t stdlib_ndarray_assign_k_d_7d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1188,12 +1189,12 @@ int8_t stdlib_ndarray_assign_k_d_7d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 7;
@@ -1202,8 +1203,8 @@ int8_t stdlib_ndarray_assign_k_d_7d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1237,7 +1238,7 @@ int8_t stdlib_ndarray_assign_k_d_7d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_7d_blocked( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_7d_blocked( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1249,8 +1250,8 @@ int8_t stdlib_ndarray_assign_k_d_7d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_7d_blocked( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_7D_BLOCKED_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_7d_blocked( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_7D_BLOCKED_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -1265,7 +1266,7 @@ int8_t stdlib_ndarray_assign_k_d_7d_blocked( struct ndarray *arrays[], void *dat
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1275,12 +1276,12 @@ int8_t stdlib_ndarray_assign_k_d_7d_blocked( struct ndarray *arrays[], void *dat
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 8;
@@ -1289,8 +1290,8 @@ int8_t stdlib_ndarray_assign_k_d_7d_blocked( struct ndarray *arrays[], void *dat
 * int64_t shape[] = { 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 64, 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1324,7 +1325,7 @@ int8_t stdlib_ndarray_assign_k_d_7d_blocked( struct ndarray *arrays[], void *dat
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_8d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_8d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1336,8 +1337,8 @@ int8_t stdlib_ndarray_assign_k_d_7d_blocked( struct ndarray *arrays[], void *dat
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_8d( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_8D_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_8d( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_8D_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -1352,7 +1353,7 @@ int8_t stdlib_ndarray_assign_k_d_8d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1362,12 +1363,12 @@ int8_t stdlib_ndarray_assign_k_d_8d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 8;
@@ -1376,8 +1377,8 @@ int8_t stdlib_ndarray_assign_k_d_8d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 64, 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1411,7 +1412,7 @@ int8_t stdlib_ndarray_assign_k_d_8d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_8d_blocked( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_8d_blocked( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1423,8 +1424,8 @@ int8_t stdlib_ndarray_assign_k_d_8d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_8d_blocked( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_8d_blocked( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -1439,7 +1440,7 @@ int8_t stdlib_ndarray_assign_k_d_8d_blocked( struct ndarray *arrays[], void *dat
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1449,12 +1450,12 @@ int8_t stdlib_ndarray_assign_k_d_8d_blocked( struct ndarray *arrays[], void *dat
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 9;
@@ -1463,8 +1464,8 @@ int8_t stdlib_ndarray_assign_k_d_8d_blocked( struct ndarray *arrays[], void *dat
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 64, 64, 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1498,7 +1499,7 @@ int8_t stdlib_ndarray_assign_k_d_8d_blocked( struct ndarray *arrays[], void *dat
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_9d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_9d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1510,8 +1511,8 @@ int8_t stdlib_ndarray_assign_k_d_8d_blocked( struct ndarray *arrays[], void *dat
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_9d( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_9D_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_9d( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_9D_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -1526,7 +1527,7 @@ int8_t stdlib_ndarray_assign_k_d_9d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1536,12 +1537,12 @@ int8_t stdlib_ndarray_assign_k_d_9d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 9;
@@ -1550,8 +1551,8 @@ int8_t stdlib_ndarray_assign_k_d_9d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 64, 64, 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1585,7 +1586,7 @@ int8_t stdlib_ndarray_assign_k_d_9d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_9d_blocked( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_9d_blocked( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1597,8 +1598,8 @@ int8_t stdlib_ndarray_assign_k_d_9d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_9d_blocked( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_9D_BLOCKED_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_9d_blocked( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_9D_BLOCKED_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -1613,7 +1614,7 @@ int8_t stdlib_ndarray_assign_k_d_9d_blocked( struct ndarray *arrays[], void *dat
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1623,12 +1624,12 @@ int8_t stdlib_ndarray_assign_k_d_9d_blocked( struct ndarray *arrays[], void *dat
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 10;
@@ -1637,8 +1638,8 @@ int8_t stdlib_ndarray_assign_k_d_9d_blocked( struct ndarray *arrays[], void *dat
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 64, 64, 64, 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1672,7 +1673,7 @@ int8_t stdlib_ndarray_assign_k_d_9d_blocked( struct ndarray *arrays[], void *dat
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_10d( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_10d( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1684,8 +1685,8 @@ int8_t stdlib_ndarray_assign_k_d_9d_blocked( struct ndarray *arrays[], void *dat
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_10d( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_10D_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_10d( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_10D_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -1700,7 +1701,7 @@ int8_t stdlib_ndarray_assign_k_d_10d( struct ndarray *arrays[], void *data ) {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1710,12 +1711,12 @@ int8_t stdlib_ndarray_assign_k_d_10d( struct ndarray *arrays[], void *data ) {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 10;
@@ -1724,8 +1725,8 @@ int8_t stdlib_ndarray_assign_k_d_10d( struct ndarray *arrays[], void *data ) {
 * int64_t shape[] = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 16, 16, 16, 16, 16, 16, 16, 8, 4, 2 };
-* int64_t sy[] = { 64, 64, 64, 64, 64, 64, 64, 32, 16, 8 };
+* int64_t sx[] = { 8, 8, 8, 8, 8, 8, 8, 4, 2, 1 };
+* int64_t sy[] = { 8, 8, 8, 8, 8, 8, 8, 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1759,7 +1760,7 @@ int8_t stdlib_ndarray_assign_k_d_10d( struct ndarray *arrays[], void *data ) {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_10d_blocked( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_10d_blocked( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1771,8 +1772,8 @@ int8_t stdlib_ndarray_assign_k_d_10d( struct ndarray *arrays[], void *data ) {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_10d_blocked( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_10D_BLOCKED_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_10d_blocked( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_10D_BLOCKED_LOOP_CAST( bool, bool )
 	return 0;
 }
 
@@ -1787,7 +1788,7 @@ int8_t stdlib_ndarray_assign_k_d_10d_blocked( struct ndarray *arrays[], void *da
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1797,12 +1798,12 @@ int8_t stdlib_ndarray_assign_k_d_10d_blocked( struct ndarray *arrays[], void *da
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 3;
@@ -1811,8 +1812,8 @@ int8_t stdlib_ndarray_assign_k_d_10d_blocked( struct ndarray *arrays[], void *da
 * int64_t shape[] = { 2, 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 8, 4, 2 };
-* int64_t sy[] = { 32, 16, 8 };
+* int64_t sx[] = { 4, 2, 1 };
+* int64_t sy[] = { 4, 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1846,7 +1847,7 @@ int8_t stdlib_ndarray_assign_k_d_10d_blocked( struct ndarray *arrays[], void *da
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d_nd( arrays, NULL );
+* int8_t status = stdlib_ndarray_assign_x_x_nd( arrays, NULL );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1858,38 +1859,38 @@ int8_t stdlib_ndarray_assign_k_d_10d_blocked( struct ndarray *arrays[], void *da
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d_nd( struct ndarray *arrays[], void *data ) {
-	STDLIB_NDARRAY_ASSIGN_ND_LOOP_CAST( int16_t, double )
+int8_t stdlib_ndarray_assign_x_x_nd( struct ndarray *arrays[], void *data ) {
+	STDLIB_NDARRAY_ASSIGN_ND_LOOP_CAST( bool, bool )
 	return 0;
 }
 
 // Define a list of unary ndarray functions:
 static ndarrayUnaryAssignFcn functions[] = {
-	stdlib_ndarray_assign_k_d_0d,
-	stdlib_ndarray_assign_k_d_1d,
-	stdlib_ndarray_assign_k_d_2d,
-	stdlib_ndarray_assign_k_d_3d,
-	stdlib_ndarray_assign_k_d_4d,
-	stdlib_ndarray_assign_k_d_5d,
-	stdlib_ndarray_assign_k_d_6d,
-	stdlib_ndarray_assign_k_d_7d,
-	stdlib_ndarray_assign_k_d_8d,
-	stdlib_ndarray_assign_k_d_9d,
-	stdlib_ndarray_assign_k_d_10d,
-	stdlib_ndarray_assign_k_d_nd
+	stdlib_ndarray_assign_x_x_0d,
+	stdlib_ndarray_assign_x_x_1d,
+	stdlib_ndarray_assign_x_x_2d,
+	stdlib_ndarray_assign_x_x_3d,
+	stdlib_ndarray_assign_x_x_4d,
+	stdlib_ndarray_assign_x_x_5d,
+	stdlib_ndarray_assign_x_x_6d,
+	stdlib_ndarray_assign_x_x_7d,
+	stdlib_ndarray_assign_x_x_8d,
+	stdlib_ndarray_assign_x_x_9d,
+	stdlib_ndarray_assign_x_x_10d,
+	stdlib_ndarray_assign_x_x_nd
 };
 
 // Define a list of unary ndarray functions implementing loop blocking...
 static ndarrayUnaryAssignFcn blocked_functions[] = {
-	stdlib_ndarray_assign_k_d_2d_blocked,
-	stdlib_ndarray_assign_k_d_3d_blocked,
-	stdlib_ndarray_assign_k_d_4d_blocked,
-	stdlib_ndarray_assign_k_d_5d_blocked,
-	stdlib_ndarray_assign_k_d_6d_blocked,
-	stdlib_ndarray_assign_k_d_7d_blocked,
-	stdlib_ndarray_assign_k_d_8d_blocked,
-	stdlib_ndarray_assign_k_d_9d_blocked,
-	stdlib_ndarray_assign_k_d_10d_blocked
+	stdlib_ndarray_assign_x_x_2d_blocked,
+	stdlib_ndarray_assign_x_x_3d_blocked,
+	stdlib_ndarray_assign_x_x_4d_blocked,
+	stdlib_ndarray_assign_x_x_5d_blocked,
+	stdlib_ndarray_assign_x_x_6d_blocked,
+	stdlib_ndarray_assign_x_x_7d_blocked,
+	stdlib_ndarray_assign_x_x_8d_blocked,
+	stdlib_ndarray_assign_x_x_9d_blocked,
+	stdlib_ndarray_assign_x_x_10d_blocked
 };
 
 // Create a unary function dispatch object:
@@ -1918,7 +1919,7 @@ static const struct ndarrayUnaryAssignDispatchObject obj = {
 * @return         status code
 *
 * @example
-* #include "stdlib/ndarray/base/assign/k_d.h"
+* #include "stdlib/ndarray/base/assign/x_x.h"
 * #include "stdlib/ndarray/dtypes.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
@@ -1928,12 +1929,12 @@ static const struct ndarrayUnaryAssignDispatchObject obj = {
 * #include <stdio.h>
 *
 * // Define the ndarray data types:
-* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
-* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_FLOAT64;
+* enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+* enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 *
 * // Create underlying byte arrays:
-* uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-* uint8_t ybuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+* uint8_t xbuf[] = { 0, 0, 0, 0 };
+* uint8_t ybuf[] = { 0, 0, 0, 0 };
 *
 * // Define the number of dimensions:
 * int64_t ndims = 2;
@@ -1942,8 +1943,8 @@ static const struct ndarrayUnaryAssignDispatchObject obj = {
 * int64_t shape[] = { 2, 2 };
 *
 * // Define the strides:
-* int64_t sx[] = { 4, 2 };
-* int64_t sy[] = { 16, 8 };
+* int64_t sx[] = { 2, 1 };
+* int64_t sy[] = { 2, 1 };
 *
 * // Define the offsets:
 * int64_t ox = 0;
@@ -1977,7 +1978,7 @@ static const struct ndarrayUnaryAssignDispatchObject obj = {
 * struct ndarray *arrays[] = { x, y };
 *
 * // Copy elements:
-* int8_t status = stdlib_ndarray_assign_k_d( arrays );
+* int8_t status = stdlib_ndarray_assign_x_x( arrays );
 * if ( status != 0 ) {
 *     fprintf( stderr, "Error during computation.\n" );
 *     exit( EXIT_FAILURE );
@@ -1989,6 +1990,6 @@ static const struct ndarrayUnaryAssignDispatchObject obj = {
 * stdlib_ndarray_free( x );
 * stdlib_ndarray_free( y );
 */
-int8_t stdlib_ndarray_assign_k_d( struct ndarray *arrays[] ) {
+int8_t stdlib_ndarray_assign_x_x( struct ndarray *arrays[] ) {
 	return stdlib_ndarray_unary_assign_dispatch( &obj, arrays );
 }
