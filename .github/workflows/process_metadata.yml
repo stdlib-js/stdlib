@@ -92,6 +92,9 @@ jobs:
       # Check the metadata for directives to send tweets:
       - name: 'Send tweets'
 
+        # Only run this step if a user has write access:
+        if: steps.assert-write-access.outcome == 'success'
+
         # Pin action to full length commit SHA
         uses: stdlib-js/metadata-tweet-action@8e9b688c86150797c1c7f60bc8f7c9a9a30e10fe # v2.0.0
         with:

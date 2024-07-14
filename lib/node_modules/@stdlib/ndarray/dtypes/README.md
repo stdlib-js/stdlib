@@ -87,6 +87,13 @@ The function supports the following data type kinds:
 -   `typed`: typed data types.
 -   `all`: all data types.
 
+Additionally, the function supports extending the "kinds" listed above by appending an `_and_generic` suffix to the kind name (e.g., `real_and_generic`).
+
+```javascript
+var out = dtypes( 'floating_point_and_generic' );
+// returns [...]
+```
+
 </section>
 
 <!-- /.usage -->
