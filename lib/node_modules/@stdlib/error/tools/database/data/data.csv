@@ -994,3 +994,4 @@
 "G1","invalid argument. Twelfth argument must be non-zero. Value: `%d`.","RangeError"
 "G2","invalid argument. Seventh argument must be non-zero. Value: `%d`.","RangeError"
 "G3","invalid argument. Tenth argument must be non-zero. Value: `%d`.","RangeError"
+"G4","invalid argument. Fourth argument must be greater than or equal to max(1,%d). Value: `%d`.","RangeError"

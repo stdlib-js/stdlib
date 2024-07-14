@@ -36,7 +36,7 @@ import zeros = require( './index' );
 	zeros( [ 2, 2 ], { 'dtype': 'uint16' } ); // $ExpectType uint16ndarray
 	zeros( [ 2, 2 ], { 'dtype': 'uint8' } ); // $ExpectType uint8ndarray
 	zeros( [ 2, 2 ], { 'dtype': 'uint8c' } ); // $ExpectType uint8cndarray
-	zeros( [ 2, 2 ], { 'dtype': 'generic' } ); // $ExpectType typedndarray<number>
+	zeros( [ 2, 2 ], { 'dtype': 'generic' } ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is not provided a valid shape for the first argument...
