@@ -20,8 +20,8 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-#ifndef STDLIB_NDARRAY_BASE_ASSIGN_F_C_H
-#define STDLIB_NDARRAY_BASE_ASSIGN_F_C_H
+#ifndef STDLIB_NDARRAY_BASE_ASSIGN_X_X_H
+#define STDLIB_NDARRAY_BASE_ASSIGN_X_X_H
 
 #include "stdlib/ndarray/ctor.h"
 #include <stdint.h>
@@ -36,115 +36,115 @@ extern "C" {
 /**
 * Assigns elements in an input ndarray to elements in an output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c( struct ndarray *arrays[] );
+int8_t stdlib_ndarray_assign_x_x( struct ndarray *arrays[] );
 
 /**
 * Assigns elements in a zero-dimensional input ndarray to elements in a zero-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_0d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_0d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a one-dimensional input ndarray to elements in a one-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_1d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_1d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a two-dimensional input ndarray to elements in a two-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_2d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_2d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a two-dimensional input ndarray to elements in a two-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_2d_blocked( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_2d_blocked( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a three-dimensional input ndarray to elements in a three-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_3d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_3d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a three-dimensional input ndarray to elements in a three-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_3d_blocked( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_3d_blocked( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a four-dimensional input ndarray to elements in a four-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_4d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_4d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a four-dimensional input ndarray to elements in a four-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_4d_blocked( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_4d_blocked( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a five-dimensional input ndarray to elements in a five-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_5d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_5d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a five-dimensional input ndarray to elements in a five-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_5d_blocked( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_5d_blocked( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a six-dimensional input ndarray to elements in a six-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_6d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_6d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a six-dimensional input ndarray to elements in a six-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_6d_blocked( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_6d_blocked( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a seven-dimensional input ndarray to elements in a seven-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_7d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_7d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a seven-dimensional input ndarray to elements in a seven-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_7d_blocked( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_7d_blocked( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in an eight-dimensional input ndarray to elements in an eight-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_8d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_8d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in an eight-dimensional input ndarray to elements in an eight-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_8d_blocked( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_8d_blocked( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a nine-dimensional input ndarray to elements in a nine-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_9d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_9d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a nine-dimensional input ndarray to elements in a nine-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_9d_blocked( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_9d_blocked( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a ten-dimensional input ndarray to elements in a ten-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_10d( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_10d( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in a ten-dimensional input ndarray to elements in a ten-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_10d_blocked( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_10d_blocked( struct ndarray *arrays[], void *data );
 
 /**
 * Assigns elements in an n-dimensional input ndarray to elements in an n-dimensional output ndarray.
 */
-int8_t stdlib_ndarray_assign_f_c_nd( struct ndarray *arrays[], void *data );
+int8_t stdlib_ndarray_assign_x_x_nd( struct ndarray *arrays[], void *data );
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // !STDLIB_NDARRAY_BASE_ASSIGN_F_C_H
+#endif // !STDLIB_NDARRAY_BASE_ASSIGN_X_X_H
