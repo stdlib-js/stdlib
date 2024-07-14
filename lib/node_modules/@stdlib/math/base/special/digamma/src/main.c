@@ -111,7 +111,7 @@ static double rational_pq( const double x ) {
 * Evaluates the digamma function via asymptotic expansion.
 *
 * @param x    input value
-* @returns    function value
+* @return     function value
 */
 static double asymptoticApprox( const double x ) {
 	double y;
@@ -129,7 +129,7 @@ static double asymptoticApprox( const double x ) {
 * Evaluates the digamma function over interval `[1,2]`.
 *
 * @param x    input value
-* @returns    function value
+* @return     function value
 */
 static double rationalApprox( const double x ) {
 	double g;
@@ -211,7 +211,7 @@ static double rationalApprox( const double x ) {
 * -   Max error found: \\(2.452\mbox{e-}17\\) (double precision)
 *
 * @param x    input value
-* @returns    function value
+* @return     function value
 *
 * @example
 * double v = stdlib_base_digamma( -2.5 );
