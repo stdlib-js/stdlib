@@ -1324,6 +1324,8 @@
 "0BR",@stdlib/blas-base-ccopy
 "1vg",@stdlib/blas/base/cscal
 "1vh",@stdlib/blas-base-cscal
+"1xY",@stdlib/blas/base/csrot
+"1xZ",@stdlib/blas-base-csrot
 "0BS",@stdlib/blas/base/cswap
 "0BT",@stdlib/blas-base-cswap
 "0BU",@stdlib/blas/base/dasum
@@ -1366,6 +1368,8 @@
 "0Bj",@stdlib/blas-base-dswap
 "1xA",@stdlib/blas/base/dsymv
 "1xB",@stdlib/blas-base-dsymv
+"1xa",@stdlib/blas/base/dznrm2
+"1xb",@stdlib/blas-base-dznrm2
 "0Bk",@stdlib/blas/base/gasum
 "0Bl",@stdlib/blas-base-gasum
 "0Bm",@stdlib/blas/base/gaxpy
@@ -1460,8 +1464,12 @@
 "1w3",@stdlib/blas-base-transpose-operations
 "1ug",@stdlib/blas/base/xerbla
 "1uh",@stdlib/blas-base-xerbla
+"1xc",@stdlib/blas/base/zaxpy
+"1xd",@stdlib/blas-base-zaxpy
 "1t6",@stdlib/blas/base/zcopy
 "1t7",@stdlib/blas-base-zcopy
+"1xe",@stdlib/blas/base/zdrot
+"1xf",@stdlib/blas-base-zdrot
 "1wo",@stdlib/blas/base/zscal
 "1wp",@stdlib/blas-base-zscal
 "1t8",@stdlib/blas/base/zswap
@@ -2405,6 +2413,11 @@
 "1sh",@stdlib/iter-until-each
 "1mu",@stdlib/iter/while-each
 "1mv",@stdlib/iter-while-each
+"1xg",@stdlib/lapack/base/dlaswp
+"1xh",@stdlib/lapack-base-dlaswp
+"1xi",@stdlib/lapack/base
+"1xj",@stdlib/lapack-base
+"1xl",@stdlib/lapack
 "0QE",@stdlib/math/base/assert/int32-is-even
 "0QF",@stdlib/math-base-assert-int32-is-even
 "0QG",@stdlib/math/base/assert/int32-is-odd
@@ -3677,6 +3690,8 @@
 "1q3",@stdlib/ndarray-at
 "0hU",@stdlib/ndarray/base/assert/is-allowed-data-type-cast
 "0hV",@stdlib/ndarray-base-assert-is-allowed-data-type-cast
+"1xm",@stdlib/ndarray/base/assert/is-boolean-data-type
+"1xn",@stdlib/ndarray-base-assert-is-boolean-data-type
 "0hW",@stdlib/ndarray/base/assert/is-buffer-length-compatible-shape
 "0hX",@stdlib/ndarray-base-assert-is-buffer-length-compatible-shape
 "0hY",@stdlib/ndarray/base/assert/is-buffer-length-compatible
