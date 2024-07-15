@@ -566,6 +566,27 @@
     'true|false|true'
 
 
+{{alias}}.prototype.keys()
+    Returns an iterator for iterating over each index key in a typed array.
+
+    Returns
+    -------
+    iterator: Iterator
+        Iterator for iterating over array index keys.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false ] )
+    <BooleanArray>
+    > var it = arr.keys();
+    > var v = it.next().value
+    0
+    > v = it.next().value
+    1
+    > v = it.next().done
+    true
+
+
 {{alias}}.prototype.lastIndexOf( searchElement[, fromIndex] )
     Returns the last index at which a given element can be found.
 
@@ -981,6 +1002,54 @@
     <BooleanArray>
     > var str = arr.toString()
     'true,false,true'
+
+
+{{alias}}.prototype.values()
+    Returns an iterator for iterating over each value in a typed array.
+
+    Returns
+    -------
+    iterator: Iterator
+        Iterator for iterating over array values.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false ] )
+    <BooleanArray>
+    > var it = arr.values();
+    > var v = it.next().value
+    true
+    > v = it.next().value
+    false
+    > var bool = it.next().done
+    true
+
+
+{{alias}}.prototype.with( index, value )
+    Returns a new typed array with the element at a provided index replaced
+    with a provided value.
+
+    Parameters
+    ----------
+    index: integer
+        Element index.
+    
+    value: boolean
+        Element value.  
+
+    Returns
+    -------
+    out: BooleanArray
+        New typed array.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var out = arr.with( 0, false )
+    <BooleanArray>
+    > var v = out.get( 0 )
+    false
 
 
     See Also

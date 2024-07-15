@@ -1390,7 +1390,7 @@ interface Namespace {
 	*
 	* @example
 	* var list = ns.transposeOperations();
-	* // e.g., returns [ 'none', 'transpose', 'conjugate-transpose' ]
+	* // e.g., returns [ 'no-transpose', 'transpose', 'conjugate-transpose' ]
 	*/
 	transposeOperations: typeof transposeOperations;
 
