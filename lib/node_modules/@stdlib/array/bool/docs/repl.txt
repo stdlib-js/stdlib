@@ -286,6 +286,33 @@
     10
 
 
+{{alias}}.prototype.at( i )
+    Returns an array element located at integer position (index) `i`, with
+    support for noth nonnegative and negative integer positions.
+
+    If provided an index outside the array index range, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    i: integer
+        Element index.
+
+    Returns
+    -------
+    out: boolean|void
+        An array element.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, false, true ] )
+    <BooleanArray>
+    > var v = arr.at( 1 )
+    false
+    > v = arr.at( -1 )
+    true
+
+
 {{alias}}.prototype.every( predicate[, thisArg] )
     Returns a boolean indicating whether all elements in the array pass a test.
 
@@ -316,6 +343,82 @@
     > var arr = new {{alias}}( [ true, true, true ] )
     <BooleanArray>
     > var bool = arr.every( predicate )
+    true
+
+
+{{alias}}.prototype.fill( value[, start[, end]] )
+    Returns a modified typed array filled with a fill value.
+
+    Parameters
+    ----------
+    value: boolean
+        Fill value.
+
+    start: integer (optional)
+        Start index. If less than zero, the start index is resolved relative to
+        the last array element. Default: 0.
+
+    end: integer (optional)
+        End index (non-inclusive). If less than zero, the end index is resolved
+        relative to the last array element. Default: out.length.
+
+    Returns
+    -------
+    out: BooleanArray
+        Modified array.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( 3 )
+    <BooleanArray>
+    > arr.fill( true );
+    > var v = arr.get( 0 )
+    true
+    > v = arr.get( 1 )
+    true
+    > v = arr.get( 2 )
+    true
+
+
+{{alias}}.prototype.filter( predicate[, thisArg] )
+    Returns a new array containing the elements of an array which pass a test
+    implemented by a predicate function.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    The returned array has the same data type as the host array.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which filters array elements. If a predicate function
+        returns a truthy value, an array element is included in the output
+        array; otherwise, an array element is not included in the output array.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: BooleanArray
+        A new typed array.
+    
+    Examples
+    --------
+    > function predicate( v ) { return ( v === true ); };
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var out = arr.filter( predicate )
+    <BooleanArray>
+    > var len = out.length
+    2
+    > var v = out.get( 0 )
+    true
+    > v = out.get( 1 )
     true
 
 
@@ -927,6 +1030,30 @@
     false
     > v = out.get( 1 )
     true
+
+
+{{alias}}.prototype.toLocaleString( [locales[, options]] )
+    Serializes an array as a locale-specific string.
+
+    Parameters
+    ----------
+    locales: string|Array (optional)
+        Locale identifier(s).
+    
+    options: Object (optional)
+        An object containing serialization options.
+    
+    Returns
+    -------
+    str: string
+        Local-specific string.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var str = arr.toLocaleString()
+    'true,false,true'
 
 
 {{alias}}.prototype.toReversed()
