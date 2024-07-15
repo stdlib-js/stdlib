@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ComplexLike } from '@stdlib/types/complex';
-import { ndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType, Order } from '@stdlib/types/ndarray';
+import { ndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, boolndarray, DataType, Order } from '@stdlib/types/ndarray';
 
 /**
 * Interface defining common options.
@@ -86,6 +86,16 @@ interface Complex64Options extends BaseOptions {
 	* Output array data type.
 	*/
 	dtype: 'complex64';
+}
+
+/**
+* Interface defining options when `dtype` is `'bool'`.
+*/
+interface BoolOptions extends BaseOptions {
+	/**
+	* Output array data type.
+	*/
+	dtype: 'bool';
 }
 
 /**
@@ -294,6 +304,30 @@ declare function scalar2ndarray( value: number | ComplexLike, options: Complex64
 * @returns zero-dimensional ndarray
 *
 * @example
+* var x = scalar2ndarray( true, {
+*     'dtype': bool'
+* };
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns []
+*
+* var dt = x.dtype;
+* // returns 'bool'
+*
+* var v = x.get();
+* // returns true
+*/
+declare function scalar2ndarray( value: boolean, options: BoolOptions ): boolndarray;
+
+/**
+* Returns a zero-dimensional ndarray containing a provided scalar value.
+*
+* @param value - scalar value
+* @param options - options
+* @returns zero-dimensional ndarray
+*
+* @example
 * var x = scalar2ndarray( 1, {
 *     'dtype': int32'
 * };
@@ -461,7 +495,8 @@ declare function scalar2ndarray( value: number, options: Uint8cOptions ): uint8c
 *
 * -   If a `dtype` option is not provided and `value`
 *
-*     -   is a `number`, the default data type is the default real-valued floating-point data type.
+*     -   is a number, the default data type is the default real-valued floating-point data type.
+*     -   is a boolean, the default data type is the default boolean data type.
 *     -   is a complex number object of a known complex data type, the data type is the same as the provided value.
 *     -   is a complex number object of an unknown complex data type, the default data type is the default complex-valued floating-point data type.
 *     -   is any other value type, the default data type is `'generic'`.

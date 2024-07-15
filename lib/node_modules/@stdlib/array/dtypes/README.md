@@ -114,25 +114,18 @@ var out = dtypes( 'floating_point_and_generic' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var indexOf = require( '@stdlib/utils/index-of' );
+var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var dtypes = require( '@stdlib/array/dtypes' );
 
-var DTYPES = dtypes();
-
-function isdtype( str ) {
-    if ( indexOf( DTYPES, str ) === -1 ) {
-        return false;
-    }
-    return true;
-}
+var isdtype = contains( dtypes() );
 
 var bool = isdtype( 'float64' );
 // returns true
 
-bool = isdtype( 'int16' );
+bool = isdtype( 'int8' );
 // returns true
 
-bool = isdtype( 'uint8' );
+bool = isdtype( 'uint16' );
 // returns true
 
 bool = isdtype( 'beep' );

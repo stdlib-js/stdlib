@@ -69,8 +69,8 @@ subroutine zdrot( N, zx, strideX, zy, strideY, c, s )
   ! ..
   if ( strideX == 1 .AND. strideY == 1 ) then
     do i = 1, N
-      ztmp = c*zx( i ) + s*zy( i )
-      zy( i ) = c*zy( i ) - s*zx( i )
+      ztmp = ( c*zx( i ) ) + ( s*zy( i ) )
+      zy( i ) = ( c*zy( i ) ) - ( s*zx( i ) )
       zx( i ) = ztmp
     end do
   else
@@ -85,8 +85,8 @@ subroutine zdrot( N, zx, strideX, zy, strideY, c, s )
       iy = 1
     end if
     do i = 1, N
-      ztmp = c*zx( ix ) + s*zy( iy )
-      zy( iy ) = c*zy( iy ) - s*zx( ix )
+      ztmp = ( c*zx( ix ) ) + ( s*zy( iy ) )
+      zy( iy ) = ( c*zy( iy ) ) - ( s*zx( ix ) )
       zx( ix ) = ztmp
       ix = ix + strideX
       iy = iy + strideY

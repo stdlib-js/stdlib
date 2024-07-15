@@ -37,6 +37,9 @@
     out.dtypes.unsigned_integer: string
         Default unsigned integer data type.
 
+    out.dtypes.boolean: string
+        Default boolean data type.
+
     out.order: string
         Default memory layout.
 
