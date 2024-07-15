@@ -23,7 +23,11 @@ import uncapitalize = require( './index' );
 
 // The function returns a string...
 {
-	uncapitalize( 'Last man standing' ); // $ExpectType string
+	uncapitalize( 'Last man standing' ); // $ExpectType "last man standing"
+	uncapitalize( 'Hello World!' ); // $ExpectType "hello World!"
+	uncapitalize( 'BeepBoop' ); // $ExpectType "beepBoop"
+	uncapitalize( 'A' ); // $ExpectType "a"
+	uncapitalize( 'foo' as string ); // $ExpectType string
 }
 
 // The compiler throws an error if the function is provided a value other than a string...

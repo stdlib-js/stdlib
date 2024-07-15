@@ -28,7 +28,7 @@
 * var str = lowercase( 'bEEp' );
 * // returns 'beep'
 */
-declare function lowercase( str: string ): string;
+declare function lowercase<S extends string>( str: S ): Lowercase<S>;
 
 
 // EXPORTS //
