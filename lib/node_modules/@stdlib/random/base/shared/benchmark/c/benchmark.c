@@ -36,7 +36,6 @@ static inline void prng_free( struct BasePRNGObject *obj );
 /**
 * Mock PRNG state.
 *
-* @private
 */
 struct MockStateObject {
 	uint32_t seed;
@@ -46,7 +45,6 @@ struct MockStateObject {
 /**
 * Mock PRNG.
 *
-* @private
 */
 static const struct BasePRNG mock_prng = {
 	"mock",                                     // name
@@ -67,7 +65,6 @@ static const struct BasePRNG mock_prng = {
 *
 * -   The function returns `-1` if unable to generate a pseudorandom integer and `0` otherwise.
 *
-* @private
 * @param obj  PRNG object
 * @param out  output address
 * @return     status code
@@ -101,7 +98,6 @@ static inline int8_t next( struct BasePRNGObject *obj, uint64_t *out ) {
 *
 * -   The function returns `-1` if unable to generate a pseudorandom number and `0` otherwise.
 *
-* @private
 * @param obj  PRNG object
 * @param out  output address
 * @return     status code
@@ -121,7 +117,6 @@ static inline int8_t normalized( struct BasePRNGObject *obj, double *out ) {
 /**
 * Frees a PRNG's allocated memory.
 *
-* @private
 * @param obj  PRNG object
 */
 static inline void prng_free( struct BasePRNGObject *obj ) {
@@ -139,7 +134,6 @@ static inline void prng_free( struct BasePRNGObject *obj ) {
 *
 * -   The user is responsible for freeing the allocated memory.
 *
-* @private
 * @param seed  PRNG seed
 * @return      pointer to a dynamically allocated PRNG or, if unable to allocate memory, a null pointer
 */
