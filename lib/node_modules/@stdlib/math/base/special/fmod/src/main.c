@@ -46,7 +46,7 @@
 *
 * @param x    dividend
 * @param y    divisor
-* @returns    remainder
+* @return    remainder
 *
 * @example
 * double out = stdlib_base_fmod( 8.9, 3.0 );
@@ -86,14 +86,14 @@ double stdlib_base_fmod( const double x, const double y ) {
 	// Purge off exception values
 	if ( ( hy | ly ) == 0 || ( hx >= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_EXPONENT_MASK ) || ( ( hy | ( ( ly | -ly ) >> 31 ) ) > STDLIB_CONSTANT_FLOAT64_HIGH_WORD_EXPONENT_MASK ) ) {
 		// y=0, x not finite, or y is NaN
-	    return ( x * y ) / ( x * y );
+		return ( x * y ) / ( x * y );
 	}
 	if ( hx <= hy ) {
-	    if ( ( hx < hy ) || ( lx < ly ) ){
+		if ( ( hx < hy ) || ( lx < ly ) ){
 			// |x|<|y| return x
 			return x;
 		}
-	    if ( lx == ly ) {
+		if ( lx == ly ) {
 			// |x|=|y| return x*0
 			return ZERO[ (uint32_t)sx >> 31 ];
 		}
@@ -102,86 +102,84 @@ double stdlib_base_fmod( const double x, const double y ) {
 	// Determine ix = ilogb(x)
 	if ( hx < 0x00100000 ) {
 		// subnormal x
-	    if ( hx == 0 ) {
+		if ( hx == 0 ) {
 			ix = -1043;
 			for ( i = lx; i > 0; i <<= 1 ) {
 				ix -=1;
 			}
-	    } else {
+		} else {
 			ix = STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT;
 			for ( i = ( hx << 11 ); i > 0; i <<= 1 ) {
 				ix -=1;
 			}
-	    }
+		}
 	} else {
 		ix = ( hx >> 20 ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS;
 	}
 
-    // determine iy = ilogb(y)
+	// determine iy = ilogb(y)
 	if ( hy < 0x00100000 ) {
 		// subnormal y
-	    if ( hy == 0 ) {
+		if ( hy == 0 ) {
 			iy = -1043;
 			for ( i = ly; i > 0; i <<= 1 ) {
 				iy -=1;
 			}
-	    } else {
+		} else {
 			iy = STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT;
 			for ( i = ( hy << 11 ); i > 0; i <<= 1) {
 				iy -=1;
 			}
-	    }
+		}
 	} else {
 		iy = ( hy >> 20 ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS;
 	}
 
-    // set up {hx,lx}, {hy,ly} and align y to x
+	// set up {hx,lx}, {hy,ly} and align y to x
 	if ( ix >= STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT ) {
 		hx = 0x00100000 | ( STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGNIFICAND_MASK & hx );
-	}
-	else {
+	} else {
 		// subnormal x, shift x to normal
-	    n = STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT - ix;
-	    if ( n <= 31 ) {
-	        hx = ( (uint32_t)hx << n ) | ( lx >> ( 32 - n ) );
-	        lx <<= n;
+		n = STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT - ix;
+		if ( n <= 31 ) {
+			hx = ( (uint32_t)hx << n ) | ( lx >> ( 32 - n ) );
+			lx <<= n;
 	    } else {
 			hx = lx << ( n - 32 );
 			lx = 0;
-	    }
+		}
 	}
 	if ( iy >= STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT ) {
 		hy = 0x00100000 | ( STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGNIFICAND_MASK & hy );
-	}
-	else {
+	} else {
 		// subnormal y, shift y to normal
-	    n = STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT - iy;
-	    if ( n <= 31 ) {
-	        hy = ( (uint32_t)hy << n ) | ( ly >> ( 32 - n ) );
-	        ly <<= n;
-	    } else {
+		n = STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT - iy;
+		if ( n <= 31 ) {
+			hy = ( (uint32_t)hy << n ) | ( ly >> ( 32 - n ) );
+			ly <<= n;
+		} else {
 			hy = ly << ( n - 32 );
 			ly = 0;
-	    }
+		}
 	}
 	n = ix - iy;
 	while ( n-- ) {
-	    hz = hx - hy;
+		hz = hx - hy;
 		lz = lx - ly;
 		if ( lx < ly ) {
 			hz -= 1;
 		}
-	    if ( hz < 0 ) {
+		if ( hz < 0 ) {
 			hx = hx + hx + ( lx >> 31 );
 			lx += lx;
-		}
-	    else {
-	    	if ( ( hz | lz ) == 0 )
-			// return sign(x)*0
-		    return ZERO[ (uint32_t)sx >> 31 ];
-	    	hx = hz + hz + ( lz >> 31 );
+		} else {
+			if ( ( hz | lz ) == 0 ) {
+				// return sign(x)*0
+				return ZERO[ (uint32_t)sx >> 31 ];
+			}
+			hx = hz + hz + ( lz >> 31 );
 			lx = lz + lz;
-	    }
+		}
 	}
 	hz = hx - hy;
 	lz = lx - ly;
@@ -193,34 +191,34 @@ double stdlib_base_fmod( const double x, const double y ) {
 		lx = lz;
 	}
 
-    // Convert back to floating value and restore the sign
+	// Convert back to floating value and restore the sign
 	if ( ( hx | lx ) == 0 ) {
 		// return sign(x)*0
 		return ZERO[ (uint32_t)sx >> 31 ];
 	}
 	while ( hx < 0x00100000 ) {
 		// normalize x
-	    hx = hx + hx + ( lx >> 31 );
+		hx = hx + hx + ( lx >> 31 );
 		lx += lx;
-	    iy -= 1;
+		iy -= 1;
 	}
 	if ( iy >= STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT ) {
 		// normalize output
-	    hx = ( ( hx - 0x00100000 ) | ( ( iy + STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS ) << 20 ) );
+		hx = ( ( hx - 0x00100000 ) | ( ( iy + STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS ) << 20 ) );
 		stdlib_base_float64_from_words( (uint32_t)( hx | sx ), lx, &xc );
 	} else {
 		// subnormal output
-	    n = STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT - iy;
-	    if ( n <= 20 ) {
+		n = STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT - iy;
+		if ( n <= 20 ) {
 			lx = ( lx >> n ) | ( (uint32_t)hx << ( 32 - n ) );
 			hx >>= n;
-	    } else if ( n <= 31 ) {
+		} else if ( n <= 31 ) {
 			lx = ( hx << ( 32 - n ) ) | ( lx >> n );
 			hx = sx;
-	    } else {
+		} else {
 			lx = hx >> ( n - 32 );
 			hx = sx;
-	    }
+		}
 		stdlib_base_float64_from_words( (uint32_t)( hx | sx ), lx, &xc );
 
 		// create necessary signal
