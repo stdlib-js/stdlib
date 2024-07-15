@@ -38,9 +38,9 @@ julia> gen( x, y, \"data.json\" );
 ```
 """
 function gen( x, y, name )
-	z = Array{Float64}( undef, length(x) );
+	z = Array{Float64}( undef, length( x ) );
 	for i in eachindex(x)
-		z[ i ] = mod(x[i], y[i])
+		z[ i ] = rem( x[ i ], y[ i ] )
 	end
 
 	# Store data to be written to file as a collection:
@@ -85,3 +85,18 @@ gen( x, y, "small_large.json" );
 x = rand( 5001 ) .* 5e20;
 y = rand( 5001 ) .* 10;
 gen( x, y, "large_small.json" );
+
+# x positive, y negative:
+x = range( 1.0, stop = 709.78, length = 1000 );
+y = range( -709.78, stop = -1.0, length = 1000 );
+gen( x, y, "positive_negative.json" );
+
+# x negative, y positive:
+x = range( -709.78, stop = -1.0, length = 1000 );
+y = range( 1.0, stop = 709.78, length = 1000 );
+gen( x, y, "negative_positive.json" );
+
+# x negative, y negative:
+x = range( -709.78, stop = -1.0, length = 1000 );
+y = range( -709.78, stop = -1.0, length = 1000 );
+gen( x, y, "negative_negative.json" );
