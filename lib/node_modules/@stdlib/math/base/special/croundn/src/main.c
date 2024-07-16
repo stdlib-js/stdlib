@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/croundn.h"
 #include "stdlib/math/base/special/roundn.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 /**
 * Rounds each component of a double-precision complex floating-point number to the nearest multiple of `10^n`.
@@ -47,7 +47,7 @@ stdlib_complex128_t stdlib_base_croundn( const stdlib_complex128_t z, const int3
 	double re;
 	double im;
 
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 
 	re = stdlib_base_roundn( re, n );
 	im = stdlib_base_roundn( im, n );

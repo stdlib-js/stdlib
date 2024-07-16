@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/special/cphase.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <math.h>
 
 /**
@@ -40,6 +40,6 @@ double stdlib_base_cphase( const stdlib_complex128_t z ) {
 	double re;
 	double im;
 
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 	return atan2( im, re ); // TODO: replace with stdlib function once available
 }

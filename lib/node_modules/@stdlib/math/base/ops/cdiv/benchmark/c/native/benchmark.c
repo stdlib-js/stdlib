@@ -21,7 +21,7 @@
 */
 #include "stdlib/math/base/ops/cdiv.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -116,7 +116,7 @@ double benchmark() {
 		z2 = stdlib_complex128( re, im );
 
 		z3 = stdlib_base_cdiv( z1, z2 );
-		stdlib_reim( z3, &re, &im );
+		stdlib_complex128_reim( z3, &re, &im );
 		if ( re != re ) {
 			printf( "should not return NaN\n" );
 			break;

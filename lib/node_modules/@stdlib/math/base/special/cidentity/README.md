@@ -175,7 +175,7 @@ stdlib_complex128_t stdlib_base_cidentity( const stdlib_complex128_t z );
 ```c
 #include "stdlib/math/base/special/cidentity.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
 
 int main() {
@@ -196,8 +196,8 @@ int main() {
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
         y = stdlib_base_cidentity( v );
-        stdlib_reim( v, &re1, &im1 );
-        stdlib_reim( y, &re2, &im2 );
+        stdlib_complex128_reim( v, &re1, &im1 );
+        stdlib_complex128_reim( y, &re2, &im2 );
         printf( "cidentity(%lf + %lfi) = %lf + %lfi\n", re1, im1, re2, im2 );
     }
 }

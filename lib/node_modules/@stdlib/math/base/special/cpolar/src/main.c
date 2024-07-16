@@ -20,7 +20,7 @@
 #include "stdlib/math/base/special/cphase.h"
 #include "stdlib/math/base/special/cabs.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 /**
 * Computes the absolute value and the phase of a complex double-precision complex floating-point number.

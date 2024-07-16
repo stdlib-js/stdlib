@@ -174,7 +174,7 @@ stdlib_complex128_t stdlib_base_cdiv( const stdlib_complex128_t z1, const stdlib
 ```c
 #include "stdlib/math/base/ops/cdiv.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -192,11 +192,11 @@ int main( void ) {
     int i;
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
-        stdlib_reim( v, &re, &im );
+        stdlib_complex128_reim( v, &re, &im );
         printf( "z = %lf + %lfi\n", re, im );
 
         y = stdlib_base_cdiv( v, v );
-        stdlib_reim( y, &re, &im );
+        stdlib_complex128_reim( y, &re, &im );
         printf( "cdiv(z, z) = %lf + %lfi\n", re, im );
     }
 }

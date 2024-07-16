@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/special/ccis.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include "stdlib/math/base/special/exp.h"
 #include <math.h>
 
@@ -66,7 +66,7 @@ stdlib_complex128_t stdlib_base_ccis( const stdlib_complex128_t z ) {
 	double x;
 	double e;
 
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 
 	y = sin( re ); //TODO: use stdlib function once available
 	x = cos( re ); //TODO: use stdlib function once available

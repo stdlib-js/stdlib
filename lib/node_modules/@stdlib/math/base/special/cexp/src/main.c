@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/special/cexp.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <math.h>
 
 /**
@@ -46,7 +46,7 @@ stdlib_complex128_t stdlib_base_cexp( const stdlib_complex128_t z ) {
 	double im;
 	double e;
 
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 
 	if ( isnan( re ) ){
 		re = NAN;
