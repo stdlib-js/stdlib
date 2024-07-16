@@ -169,7 +169,7 @@ stdlib_complex64_t stdlib_base_cmulf( const stdlib_complex64_t z1, const stdlib_
 ```c
 #include "stdlib/math/base/ops/cmulf.h"
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float32/reim.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -187,11 +187,11 @@ int main( void ) {
     int i;
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
-        stdlib_reimf( v, &re, &im );
+        stdlib_complex64_reim( v, &re, &im );
         printf( "z = %f + %fi\n", re, im );
 
         y = stdlib_base_cmulf( v, v );
-        stdlib_reimf( y, &re, &im );
+        stdlib_complex64_reim( y, &re, &im );
         printf( "cmulf(z, z) = %f + %fi\n", re, im );
     }
 }

@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/ops/cmulf.h"
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float32/reim.h"
 
 /**
 * Multiplies two single-precision complex floating-point numbers.
@@ -51,8 +51,8 @@ stdlib_complex64_t stdlib_base_cmulf( const stdlib_complex64_t z1, const stdlib_
 	float re;
 	float im;
 
-	stdlib_reimf( z1, &re1, &im1 );
-	stdlib_reimf( z2, &re2, &im2 );
+	stdlib_complex64_reim( z1, &re1, &im1 );
+	stdlib_complex64_reim( z2, &re2, &im2 );
 
 	re = (re1*re2) - (im1*im2);
 	im = (re1*im2) + (im1*re2);

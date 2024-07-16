@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/ops/cnegf.h"
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float32/reim.h"
 
 /**
 * Negates a single-precision complex floating-point number.
@@ -44,7 +44,7 @@ stdlib_complex64_t stdlib_base_cnegf( const stdlib_complex64_t z ) {
 	float re;
 	float im;
 
-	stdlib_reimf( z, &re, &im );
+	stdlib_complex64_reim( z, &re, &im );
 
 	return stdlib_complex64( -re, -im );
 }

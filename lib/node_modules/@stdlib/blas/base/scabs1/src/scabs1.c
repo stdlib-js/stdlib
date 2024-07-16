@@ -19,7 +19,7 @@
 #include "stdlib/blas/base/scabs1.h"
 #include "stdlib/math/base/special/absf.h"
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float32/reim.h"
 
 /**
 * Computes the sum of the absolute values of the real and imaginary components of a single-precision complex floating-point number.
@@ -38,6 +38,6 @@
 float c_scabs1( const stdlib_complex64_t c ) {
 	float re;
 	float im;
-	stdlib_reimf( c, &re, &im );
+	stdlib_complex64_reim( c, &re, &im );
 	return stdlib_base_absf( re ) + stdlib_base_absf( im );
 }
