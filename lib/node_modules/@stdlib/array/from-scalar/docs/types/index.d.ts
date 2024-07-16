@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ComplexLike, Complex64, Complex128 } from '@stdlib/types/complex';
-import { DataType, Complex128Array, Complex64Array } from '@stdlib/types/array';
+import { DataType, Complex128Array, Complex64Array, BooleanArray } from '@stdlib/types/array';
 
 /**
 * Returns a single-element array containing a provided scalar value.
@@ -48,6 +48,19 @@ declare function scalar2array( value: number, dtype: 'float64' ): Float64Array; 
 * // returns <Float32Array>[ 1.0 ]
 */
 declare function scalar2array( value: number, dtype: 'float32' ): Float32Array;
+
+/**
+* Returns a single-element array containing a provided scalar value.
+*
+* @param value - scalar value
+* @param dtype - output array data type
+* @returns output array
+*
+* @example
+* var x = scalar2array( true, 'bool' );
+* // returns <BooleanArray>
+*/
+declare function scalar2array( value: any, dtype: 'bool' ): BooleanArray;
 
 /**
 * Returns a single-element array containing a provided scalar value.
@@ -216,6 +229,19 @@ declare function scalar2array( value: number ): Float64Array;
 * @returns output array
 *
 * @example
+* var x = scalar2array( true );
+* // returns <BooleanArray>
+*/
+declare function scalar2array( value: boolean ): BooleanArray;
+
+/**
+* Returns a single-element array containing a provided scalar value.
+*
+* @param value - scalar value
+* @param dtype - output array data type
+* @returns output array
+*
+* @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var z = new Complex64( 3.0, 4.0 );
@@ -249,7 +275,8 @@ declare function scalar2array( value: Complex128 | ComplexLike ): Complex128Arra
 *
 * -   If a `dtype` argument is not provided and `value`
 *
-*     -   is a `number`, the default data type is the default real-valued floating-point data type.
+*     -   is a number, the default data type is the default real-valued floating-point data type.
+*     -   is a boolean, the default data type is the default boolean data type.
 *     -   is a complex number object of a known complex data type, the data type is the same as the provided value.
 *     -   is a complex number object of an unknown complex data type, the default data type is the default complex-valued floating-point data type.
 *     -   is any other value type, the default data type is `'generic'`.

@@ -30,7 +30,6 @@
 * -   The function assumes that the number of indexed elements in `Y` equals the number of columns in `X`.
 * -   The function returns a row index. To convert to a linear index, multiply `strideX1` by the return value.
 *
-* @private
 * @param N           number of rows in `X` (size of first dimension)
 * @param M           number of columns in `X` (size of second dimension)
 * @param X           input two-dimensional reference array

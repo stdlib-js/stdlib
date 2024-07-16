@@ -82,11 +82,7 @@ var out = dtype2c( 'foobar' );
 ```javascript
 var dtype2c = require( '@stdlib/ndarray/base/dtype2c' );
 
-var dtypes;
-var out;
-var i;
-
-dtypes = [
+var dtypes = [
     'float64',
     'float32',
     'int8',
@@ -101,9 +97,9 @@ dtypes = [
     'foobar'
 ];
 
+var i;
 for ( i = 0; i < dtypes.length; i++ ) {
-    out = dtype2c( dtypes[ i ] );
-    console.log( '%s => %s', dtypes[ i ], out );
+    console.log( '%s => %s', dtypes[ i ], dtype2c( dtypes[ i ] ) );
 }
 ```
 
