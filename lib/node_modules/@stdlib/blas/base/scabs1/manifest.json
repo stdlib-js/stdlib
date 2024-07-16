@@ -67,7 +67,7 @@
       "dependencies": [
         "@stdlib/math/base/special/absf",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/reimf"
+        "@stdlib/complex/float32/reim"
       ]
     },
     {
@@ -86,7 +86,7 @@
       "dependencies": [
         "@stdlib/math/base/special/absf",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/reimf",
+        "@stdlib/complex/float32/reim",
         "@stdlib/complex/realf",
         "@stdlib/complex/imagf"
       ]
@@ -198,7 +198,7 @@
       "dependencies": [
         "@stdlib/math/base/special/absf",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/reimf"
+        "@stdlib/complex/float32/reim"
       ]
     },
     {
@@ -217,7 +217,7 @@
       "dependencies": [
         "@stdlib/math/base/special/absf",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/reimf",
+        "@stdlib/complex/float32/reim",
         "@stdlib/complex/realf",
         "@stdlib/complex/imagf"
       ]
@@ -374,7 +374,7 @@
         "@stdlib/napi/create-double",
         "@stdlib/complex/float32/ctor",
         "@stdlib/math/base/special/absf",
-        "@stdlib/complex/reimf"
+        "@stdlib/complex/float32/reim"
       ]
     },
     {
@@ -393,7 +393,7 @@
       "dependencies": [
         "@stdlib/math/base/special/absf",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/reimf"
+        "@stdlib/complex/float32/reim"
       ]
     },
     {
@@ -412,7 +412,7 @@
       "dependencies": [
         "@stdlib/math/base/special/absf",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/reimf",
+        "@stdlib/complex/float32/reim",
         "@stdlib/complex/realf",
         "@stdlib/complex/imagf"
       ]
@@ -434,7 +434,7 @@
       "dependencies": [
         "@stdlib/math/base/special/absf",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/reimf"
+        "@stdlib/complex/float32/reim"
       ]
     }
   ]

@@ -282,6 +282,31 @@ declare class BooleanArray implements BooleanArrayInterface {
 	constructor( arg?: number | ArrayLike<any> | ArrayBuffer | Iterable<any>, byteOffset?: number, length?: number );
 
 	/**
+	* Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer indices.
+	*
+	* @param i - element index
+	* @throws index argument must be a integer
+	* @returns array element
+	*
+	* @example
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var v = arr.at( 0 );
+	* // returns true
+	*
+	* v = arr.at( -1 );
+	* // returns true
+	*
+	* v = arr.at( 100 );
+	* // returns undefined
+	*/
+	at( i: number ): boolean | void;
+
+	/**
 	* Length (in bytes) of the array.
 	*
 	* @example
@@ -347,6 +372,62 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns true
 	*/
 	every<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): boolean;
+
+	/**
+	* Returns a modified typed array filled with a fill value.
+	*
+	* @param value - fill value
+	* @param start - starting index (inclusive)
+	* @param end - ending index (exclusive)
+	* @returns modified typed array
+	*
+	* @example
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.fill( true, 1 );
+	*
+	* var v = arr.get( 0 );
+	* // returns false
+	*
+	* v = arr.get( 1 );
+	* // returns true
+	*
+	* v = arr.get( 2 );
+	* // returns true
+	*/
+	fill( value: boolean, start?: number, end?: number ): BooleanArray;
+
+	/**
+	* Returns a new array containing the elements of an array which pass a test implemented by a predicate function.
+	*
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @returns new array containing elements which pass a test implemented by a predicate function
+	*
+	* @example
+	* function predicate( v ) {
+	*     return ( v === true );
+	* }
+	*
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 2 );
+	*
+	* var out = arr.filter( predicate );
+	* // returns <BooleanArray>
+	*
+	* var len = out.length;
+	* // returns 2
+	*
+	* var v = out.get( 0 );
+	* // returns true
+	*
+	* v = out.get( 1 );
+	* // returns true
+	*/
+	filter<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): BooleanArray;
 
 	/**
 	* Returns the first element in an array for which a predicate function returns a truthy value.
@@ -883,6 +964,25 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* // returns true
 	*/
 	subarray( begin?: number, end?: number ): BooleanArray;
+
+	/**
+	* Serializes an array as a locale-specific string.
+	*
+	* @param locales - locale identifier(s)
+	* @param options - configuration options
+	* @returns string
+	*
+	* @example
+	* var arr = new BooleanArray( 3 );
+	*
+	* arr.set( true, 0 );
+	* arr.set( false, 1 );
+	* arr.set( true, 1 );
+	*
+	* var str = arr.toLocaleString();
+	* // returns 'true,false,true'
+	*/
+	toLocaleString( locales?: string | Array<string>, options?: LocaleOptions ): string;
 
 	/**
 	* Returns a new typed array containing the elements in reversed order.

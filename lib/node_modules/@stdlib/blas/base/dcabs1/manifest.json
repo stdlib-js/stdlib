@@ -67,7 +67,7 @@
       "dependencies": [
         "@stdlib/math/base/special/abs",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/reim"
+        "@stdlib/complex/float64/reim"
       ]
     },
     {
@@ -86,7 +86,7 @@
       "dependencies": [
         "@stdlib/math/base/special/abs",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/reim",
+        "@stdlib/complex/float64/reim",
         "@stdlib/complex/real",
         "@stdlib/complex/imag"
       ]
@@ -198,7 +198,7 @@
       "dependencies": [
         "@stdlib/math/base/special/abs",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/reim"
+        "@stdlib/complex/float64/reim"
       ]
     },
     {
@@ -217,7 +217,7 @@
       "dependencies": [
         "@stdlib/math/base/special/abs",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/reim",
+        "@stdlib/complex/float64/reim",
         "@stdlib/complex/real",
         "@stdlib/complex/imag"
       ]
@@ -374,7 +374,7 @@
         "@stdlib/napi/create-double",
         "@stdlib/complex/float64/ctor",
         "@stdlib/math/base/special/abs",
-        "@stdlib/complex/reim"
+        "@stdlib/complex/float64/reim"
       ]
     },
     {
@@ -393,7 +393,7 @@
       "dependencies": [
         "@stdlib/math/base/special/abs",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/reim"
+        "@stdlib/complex/float64/reim"
       ]
     },
     {
@@ -412,7 +412,7 @@
       "dependencies": [
         "@stdlib/math/base/special/abs",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/reim",
+        "@stdlib/complex/float64/reim",
         "@stdlib/complex/real",
         "@stdlib/complex/imag"
       ]
@@ -434,7 +434,7 @@
       "dependencies": [
         "@stdlib/math/base/special/abs",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/reim"
+        "@stdlib/complex/float64/reim"
       ]
     }
   ]

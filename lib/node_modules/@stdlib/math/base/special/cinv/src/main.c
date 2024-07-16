@@ -22,7 +22,7 @@
 #include "stdlib/constants/float64/eps.h"
 #include "stdlib/constants/float64/smallest_normal.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <math.h>
 
 
@@ -68,7 +68,7 @@ stdlib_complex128_t stdlib_base_cinv( const stdlib_complex128_t z ) {
 	double r;
 	double t;
 
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 
 	// TODO: replace `fmax` with stdlib max implementation once available
 	ab = fmax( stdlib_base_abs( re ), stdlib_base_abs( im ) );

@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/ops/cmul.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 /**
 * Multiplies two double-precision complex floating-point numbers.
@@ -51,8 +51,8 @@ stdlib_complex128_t stdlib_base_cmul( const stdlib_complex128_t z1, const stdlib
 	double re;
 	double im;
 
-	stdlib_reim( z1, &re1, &im1 );
-	stdlib_reim( z2, &re2, &im2 );
+	stdlib_complex128_reim( z1, &re1, &im1 );
+	stdlib_complex128_reim( z2, &re2, &im2 );
 
 	re = (re1*re2) - (im1*im2);
 	im = (re1*im2) + (im1*re2);

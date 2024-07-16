@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/cfloor.h"
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 /**
 * Rounds a double-precision complex floating-point number toward negative infinity.
@@ -46,7 +46,7 @@ stdlib_complex128_t stdlib_base_cfloor( const stdlib_complex128_t z ) {
 	double re;
 	double im;
 
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 
 	re = stdlib_base_floor( re );
 	im = stdlib_base_floor( im );

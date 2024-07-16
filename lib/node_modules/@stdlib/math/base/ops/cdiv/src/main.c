@@ -19,7 +19,7 @@
 #include "stdlib/math/base/ops/cdiv.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include "stdlib/constants/float64/max.h"
 #include "stdlib/constants/float64/eps.h"
 #include "stdlib/constants/float64/smallest_normal.h"
@@ -121,8 +121,8 @@ stdlib_complex128_t stdlib_base_cdiv( const stdlib_complex128_t z1, const stdlib
 	double im;
 	double s;
 
-	stdlib_reim( z1, &re1, &im1 );
-	stdlib_reim( z2, &re2, &im2 );
+	stdlib_complex128_reim( z1, &re1, &im1 );
+	stdlib_complex128_reim( z2, &re2, &im2 );
 
 	t1 = stdlib_base_abs( re1 );
 	t2 = stdlib_base_abs( im1 );

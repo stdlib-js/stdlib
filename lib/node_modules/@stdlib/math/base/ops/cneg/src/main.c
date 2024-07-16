@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/ops/cneg.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 /**
 * Negates a double-precision complex floating-point number.
@@ -44,6 +44,6 @@
 stdlib_complex128_t stdlib_base_cneg( const stdlib_complex128_t z ) {
 	double re;
 	double im;
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 	return stdlib_complex128( -re, -im );
 }

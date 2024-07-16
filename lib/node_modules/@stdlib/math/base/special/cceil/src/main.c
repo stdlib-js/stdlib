@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/cceil.h"
 #include "stdlib/math/base/special/ceil.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 /**
 * Rounds a double-precision complex floating-point number toward positive infinity.
@@ -46,7 +46,7 @@ stdlib_complex128_t stdlib_base_cceil( const stdlib_complex128_t z ) {
 	double re;
 	double im;
 
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 
 	re = stdlib_base_ceil( re );
 	im = stdlib_base_ceil( im );

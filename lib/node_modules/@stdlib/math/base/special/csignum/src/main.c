@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/csignum.h"
 #include "stdlib/math/base/special/cabs.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 /**
 * Evaluates the signum function of a double-precision floating-point complex number.
@@ -51,7 +51,7 @@ stdlib_complex128_t stdlib_base_csignum( const stdlib_complex128_t z ) {
 	if ( az == 0.0 ) {
 		return z;
 	}
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 	re = re / az;
 	im = im / az;
 	return stdlib_complex128( re, im );
