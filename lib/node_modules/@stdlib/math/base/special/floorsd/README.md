@@ -87,6 +87,80 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/floorsd.h"
+```
+
+#### stdlib_base_floorsd( x, n, b )
+
+Rounds a `numeric` value to the nearest `number` toward negative infinity with `n` significant figures.
+
+```c
+double out = stdlib_base_floorsd( 0.0313, 2, 2 );
+// returns 0.03125
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **n**: `[in] int32_t` number of significant figures.
+-   **b**: `[in] int32_t` base.
+
+```c
+double stdlib_base_floorsd( const double x, const int32_t n, const int32_t b );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/floorsd.h"
+#include <stdio.h>
+#include <stdint.h>
+
+int main( void ) {
+    const double x[] = { -5.0, -3.89, -2.78, -1.67, -0.56, 0.56, 1.67, 2.78, 3.89, 5.0 };
+    const int32_t n[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    const int32_t b[] = { 20, 19, 18, 17, 16, 15, 14, 13, 12, 11 };
+
+    double v;
+    int i;
+    for ( i = 0; i < 10; i++ ) {
+        v = stdlib_base_floorsd( x[ i ], n[ i ], b[ i ] );
+        printf( "floorsd(%lf, %d, %d) = %lf\n", x[ i ], n[ i ], b[ i ], v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
