@@ -19,7 +19,7 @@
 #include "stdlib/complex/float64/conj.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/real.h"
-#include "stdlib/complex/imag.h"
+#include "stdlib/complex/float64/imag.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -115,7 +115,7 @@ double benchmark() {
 		}
 	}
 	elapsed = tic() - t;
-	im = stdlib_imag( v );
+	im = stdlib_complex128_imag( v );
 	if ( im != im ) {
 		printf( "should not return NaN\n" );
 	}

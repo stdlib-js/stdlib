@@ -52,7 +52,7 @@
       "dependencies": [
         "@stdlib/complex/float64/ctor",
         "@stdlib/complex/real",
-        "@stdlib/complex/imag"
+        "@stdlib/complex/float64/imag"
       ]
     },
     {
@@ -68,7 +68,7 @@
       "dependencies": [
         "@stdlib/complex/float64/ctor",
         "@stdlib/complex/real",
-        "@stdlib/complex/imag"
+        "@stdlib/complex/float64/imag"
       ]
     }
   ]

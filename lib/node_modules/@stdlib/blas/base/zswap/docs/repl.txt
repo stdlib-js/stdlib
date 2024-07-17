@@ -41,12 +41,12 @@
     > var z = y.get( 0 );
     > var re = {{alias:@stdlib/complex/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imag}}( z )
+    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
     2.0
     > z = x.get( 0 );
     > re = {{alias:@stdlib/complex/real}}( z )
     6.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     7.0
 
     // Advanced indexing:
@@ -56,12 +56,12 @@
     > z = y.get( 0 );
     > re = {{alias:@stdlib/complex/real}}( z )
     5.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     6.0
     > z = x.get( 0 );
     > re = {{alias:@stdlib/complex/real}}( z )
     0.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     0.0
 
     // Using typed array views:
@@ -73,12 +73,12 @@
     > z = y0.get( 1 );
     > re = {{alias:@stdlib/complex/real}}( z )
     3.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     4.0
     > z = x0.get( 1 );
     > re = {{alias:@stdlib/complex/real}}( z )
     0.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     0.0
 
 
@@ -127,12 +127,12 @@
     > var z = y.get( 0 );
     > var re = {{alias:@stdlib/complex/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imag}}( z )
+    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
     2.0
     > z = x.get( 0 );
     > re = {{alias:@stdlib/complex/real}}( z )
     6.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     7.0
 
     // Advanced indexing:
@@ -142,12 +142,12 @@
     > z = y.get( y.length-1 );
     > re = {{alias:@stdlib/complex/real}}( z )
     3.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     4.0
     > z = x.get( 1 );
     > re = {{alias:@stdlib/complex/real}}( z )
     0.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     0.0
 
     See Also

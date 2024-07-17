@@ -28,7 +28,7 @@
 * @example
 * #include "stdlib/complex/float64/ctor.h"
 * #include "stdlib/complex/real.h"
-* #include "stdlib/complex/imag.h"
+* #include "stdlib/complex/float64/imag.h"
 *
 * stdlib_complex128_t z = stdlib_complex128( 5.0, 2.0 );
 *
@@ -39,7 +39,7 @@
 * double re = stdlib_real( v );
 * // returns 5.0
 *
-* double im = stdlib_imag( v );
+* double im = stdlib_complex128_imag( v );
 * // returns -2.0
 */
 stdlib_complex128_t stdlib_complex128_conj( const stdlib_complex128_t z ) {

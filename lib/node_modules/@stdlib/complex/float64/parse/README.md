@@ -46,7 +46,7 @@ Parse a string representation of a 128-bit [complex number][@stdlib/complex/floa
 
 ```javascript
 var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var imag = require( '@stdlib/complex/float64/imag' );
 
 var str = '5 + 3i';
 
@@ -86,7 +86,7 @@ For details on the string format, see [Complex128][@stdlib/complex/float64/ctor]
 var parseComplex128 = require( '@stdlib/complex/float64/parse' );
 var isComplex128 = require( '@stdlib/assert/is-complex128' );
 var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var imag = require( '@stdlib/complex/float64/imag' );
 
 var str = '1e3 - 2.75i';
 
