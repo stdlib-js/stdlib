@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/special/cabs2.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 /**
 * Computes the squared absolute value of a double-precision complex floating-point number.
@@ -37,6 +37,6 @@
 double stdlib_base_cabs2( const stdlib_complex128_t z ) {
 	double re;
 	double im;
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 	return ( re * re ) + ( im * im );
 }

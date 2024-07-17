@@ -21,9 +21,9 @@
     <Complex64>
     > var out = {{alias}}( z, z )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( out )
+    > var re = {{alias:@stdlib/complex/float32/real}}( out )
     10.0
-    > var im = {{alias:@stdlib/complex/imagf}}( out )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( out )
     6.0
 
     See Also

@@ -179,9 +179,9 @@
     2
     > var z = arr.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -2.0
 
 
@@ -219,9 +219,9 @@
     2
     > var z = arr.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -1.0
 
 
@@ -327,9 +327,9 @@
     <Complex64Array>
     > var z = arr.at( 1 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -2.0
 
 
@@ -361,9 +361,9 @@
     <Complex64Array>
     > var z = arr.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -3.0
 
 
@@ -382,21 +382,21 @@
     > var it = arr.entries();
     > var v = it.next().value
     [ 0, <Complex64> ]
-    > var re = {{alias:@stdlib/complex/realf}}( v[ 1 ] )
+    > var re = {{alias:@stdlib/complex/float32/real}}( v[ 1 ] )
     1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( v[ 1 ] )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( v[ 1 ] )
     -1.0
     > v = it.next().value
     [ 1, <Complex64> ]
-    > re = {{alias:@stdlib/complex/realf}}( v[ 1 ] )
+    > re = {{alias:@stdlib/complex/float32/real}}( v[ 1 ] )
     2.0
-    > im = {{alias:@stdlib/complex/imagf}}( v[ 1 ] )
+    > im = {{alias:@stdlib/complex/float32/imag}}( v[ 1 ] )
     -2.0
     > v = it.next().value
     [ 2, <Complex64> ]
-    > re = {{alias:@stdlib/complex/realf}}( v[ 1 ] )
+    > re = {{alias:@stdlib/complex/float32/real}}( v[ 1 ] )
     3.0
-    > im = {{alias:@stdlib/complex/imagf}}( v[ 1 ] )
+    > im = {{alias:@stdlib/complex/float32/imag}}( v[ 1 ] )
     -3.0
     > var bool = it.next().done
     true
@@ -428,7 +428,7 @@
 
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) > 0.0 ); };
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) > 0.0 ); };
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
     <Complex64Array>
     > var bool = arr.every( predicate )
@@ -463,21 +463,21 @@
     > arr.fill( new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 1.0 ) );
     > var z = arr.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     1.0
     > z = arr.get( 1 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     1.0
     > z = arr.get( 2 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     1.0
 
 
@@ -510,7 +510,7 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var out = arr.filter( predicate )
@@ -519,9 +519,9 @@
     1
     > var z = out.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     2.0
 
 
@@ -553,14 +553,14 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var z = arr.find( predicate )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     1.0
 
 
@@ -592,7 +592,7 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var idx = arr.findIndex( predicate )
@@ -627,14 +627,14 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var z = arr.findLast( predicate )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     2.0
 
 
@@ -666,7 +666,7 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var idx = arr.findLastIndex( predicate )
@@ -723,9 +723,9 @@
     <Complex64Array>
     > var z = arr.get( 1 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -2.0
 
 
@@ -896,15 +896,15 @@
     <Complex64Array>
     > var z = out.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -1.0
     > z = out.get( 1 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -2.0
 
 
@@ -947,9 +947,9 @@
     <Complex64Array>
     > var z = arr.reduce( {{alias:@stdlib/math/base/ops/caddf}} )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -3.0
 
 
@@ -992,9 +992,9 @@
     <Complex64Array>
     > var z = arr.reduceRight( {{alias:@stdlib/math/base/ops/caddf}} )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -3.0
 
 
@@ -1015,21 +1015,21 @@
     > arr.reverse();
     > var z = arr.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -3.0
     > z = arr.get( 1 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -2.0
     > z = arr.get( 2 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -1.0
 
 
@@ -1058,16 +1058,16 @@
     > arr.set( new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 ) );
     > var z = arr.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -1.0
     > arr.set( new {{alias:@stdlib/complex/float32/ctor}}( 2.0, -2.0 ), 1 );
     > z = arr.get( 1 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -2.0
 
 
@@ -1099,15 +1099,15 @@
     2
     > var z = out.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -2.0
     > z = out.get( 1 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -3.0
 
 
@@ -1137,7 +1137,7 @@
     
     Examples
     --------
-    > function predicate( v ) { return ( {{alias:@stdlib/complex/realf}}( v ) === {{alias:@stdlib/complex/imagf}}( v ) ); };
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex64Array>
     > var bool = arr.some( predicate )
@@ -1169,27 +1169,27 @@
     
     Examples
     --------
-    > function compare( a, b ) { return ( {{alias:@stdlib/complex/realf}}( a ) - {{alias:@stdlib/complex/realf}}( b ) ); };
+    > function compare( a, b ) { return ( {{alias:@stdlib/complex/float32/real}}( a ) - {{alias:@stdlib/complex/float32/real}}( b ) ); };
     > var arr = new {{alias}}( [ 2.0, -2.0, 3.0, -3.0, 1.0, -1.0 ] )
     <Complex64Array>
     > arr.sort( compare );
     > var z = arr.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -1.0
     > z = arr.get( 1 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -2.0
     > z = arr.get( 2 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -3.0
 
 
@@ -1222,15 +1222,15 @@
     2
     > var z = out.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -2.0
     > z = out.get( 1 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -3.0
 
 
@@ -1274,21 +1274,21 @@
     <Complex64Array>
     > var z = out.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     3.0
     > z = out.get( 1 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     2.0
     > z = out.get( 2 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     1.0
 
 
@@ -1317,27 +1317,27 @@
     
     Examples
     --------
-    > function compare( a, b ) { return ( {{alias:@stdlib/complex/realf}}( a ) - {{alias:@stdlib/complex/realf}}( b ) ); };
+    > function compare( a, b ) { return ( {{alias:@stdlib/complex/float32/real}}( a ) - {{alias:@stdlib/complex/float32/real}}( b ) ); };
     > var arr = new {{alias}}( [ 2.0, -2.0, 3.0, -3.0, 1.0, -1.0 ] )
     <Complex64Array>
     > var out = arr.toSorted( compare );
     > var z = out.get( 0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -1.0
     > z = out.get( 1 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     2.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -2.0
     > z = out.get( 2 )
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -3.0
 
 
@@ -1372,15 +1372,15 @@
     > var it = arr.values();
     > var v = it.next().value
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( v )
+    > var re = {{alias:@stdlib/complex/float32/real}}( v )
     1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( v )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
     -1.0
     > v = it.next().value
     <Complex64>
-    > re = {{alias:@stdlib/complex/realf}}( v )
+    > re = {{alias:@stdlib/complex/float32/real}}( v )
     2.0
-    > im = {{alias:@stdlib/complex/imagf}}( v )
+    > im = {{alias:@stdlib/complex/float32/imag}}( v )
     -2.0
     > var bool = it.next().done
     true
@@ -1411,9 +1411,9 @@
     <Complex64Array>
     > var z = out.get( 1 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     -3.0
 
 
