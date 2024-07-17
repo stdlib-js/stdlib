@@ -39,12 +39,12 @@
     > var y = new {{alias:@stdlib/array/complex128}}( [ 6.0, 7.0, 8.0, 9.0 ] );
     > {{alias}}( x.length, x, 1, y, 1 );
     > var z = y.get( 0 );
-    > var re = {{alias:@stdlib/complex/real}}( z )
+    > var re = {{alias:@stdlib/complex/float64/real}}( z )
     1.0
     > var im = {{alias:@stdlib/complex/float64/imag}}( z )
     2.0
     > z = x.get( 0 );
-    > re = {{alias:@stdlib/complex/real}}( z )
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
     6.0
     > im = {{alias:@stdlib/complex/float64/imag}}( z )
     7.0
@@ -54,12 +54,12 @@
     > y = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
     > {{alias}}( 2, x, -2, y, 1 );
     > z = y.get( 0 );
-    > re = {{alias:@stdlib/complex/real}}( z )
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
     5.0
     > im = {{alias:@stdlib/complex/float64/imag}}( z )
     6.0
     > z = x.get( 0 );
-    > re = {{alias:@stdlib/complex/real}}( z )
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
     0.0
     > im = {{alias:@stdlib/complex/float64/imag}}( z )
     0.0
@@ -71,12 +71,12 @@
     > var y1 = new Complex128Array( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
     > {{alias}}( 1, x1, -1, y1, 1 );
     > z = y0.get( 1 );
-    > re = {{alias:@stdlib/complex/real}}( z )
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
     3.0
     > im = {{alias:@stdlib/complex/float64/imag}}( z )
     4.0
     > z = x0.get( 1 );
-    > re = {{alias:@stdlib/complex/real}}( z )
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
     0.0
     > im = {{alias:@stdlib/complex/float64/imag}}( z )
     0.0
@@ -125,12 +125,12 @@
     > var y = new {{alias:@stdlib/array/complex128}}( [ 6.0, 7.0, 8.0, 9.0 ] );
     > {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0 );
     > var z = y.get( 0 );
-    > var re = {{alias:@stdlib/complex/real}}( z )
+    > var re = {{alias:@stdlib/complex/float64/real}}( z )
     1.0
     > var im = {{alias:@stdlib/complex/float64/imag}}( z )
     2.0
     > z = x.get( 0 );
-    > re = {{alias:@stdlib/complex/real}}( z )
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
     6.0
     > im = {{alias:@stdlib/complex/float64/imag}}( z )
     7.0
@@ -140,12 +140,12 @@
     > y = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
     > {{alias}}.ndarray( 2, x, 2, 1, y, -1, y.length-1 );
     > z = y.get( y.length-1 );
-    > re = {{alias:@stdlib/complex/real}}( z )
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
     3.0
     > im = {{alias:@stdlib/complex/float64/imag}}( z )
     4.0
     > z = x.get( 1 );
-    > re = {{alias:@stdlib/complex/real}}( z )
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
     0.0
     > im = {{alias:@stdlib/complex/float64/imag}}( z )
     0.0

@@ -247,7 +247,7 @@ declare function filter<T = unknown, U = unknown>( x: Uint8ClampedArray, predica
 *
 * @example
 * var isPositiveNumber = require( '@stdlib/assert/is-positive-number' ).isPrimitive;
-* var real = require( '@stdlib/complex/real' );
+* var real = require( '@stdlib/complex/float64/real' );
 * var imag = require( '@stdlib/complex/float64/imag' );
 * var Complex128Array = require( '@stdlib/array/complex128' );
 *

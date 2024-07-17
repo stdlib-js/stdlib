@@ -36,7 +36,7 @@ Copies values from `x` into `y`.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/real' );
+var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -66,7 +66,7 @@ The `N` and stride parameters determine how values from `x` are copied into `y`.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/real' );
+var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -90,7 +90,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/real' );
+var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
 
 // Initial arrays...
@@ -120,7 +120,7 @@ Copies values from `x` into `y` using alternative indexing semantics.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/real' );
+var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -147,7 +147,7 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/real' );
+var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );

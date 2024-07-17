@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/float64/conj.h"
-#include "stdlib/complex/real.h"
+#include "stdlib/complex/float64/real.h"
 #include "stdlib/complex/float64/imag.h"
 #include "stdlib/complex/float64/ctor.h"
 #include <stdio.h>
@@ -36,6 +36,6 @@ int main( void ) {
 	for ( i = 0; i < 4; i++ ) {
 		z = x[ i ];
 		v = stdlib_complex128_conj( z );
-		printf( "conj(%lf + %lfi) = %lf + %lfi\n", stdlib_real( z ), stdlib_complex128_imag( z ), stdlib_real( v ), stdlib_complex128_imag( v ) );
+		printf( "conj(%lf + %lfi) = %lf + %lfi\n", stdlib_complex128_real( z ), stdlib_complex128_imag( z ), stdlib_complex128_real( v ), stdlib_complex128_imag( v ) );
 	}
 }
