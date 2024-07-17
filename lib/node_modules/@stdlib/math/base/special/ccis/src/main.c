@@ -20,8 +20,8 @@
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/reim.h"
 #include "stdlib/math/base/special/exp.h"
-#include <math.h>
-
+#include "stdlib/math/base/special/sin.h"
+#include "stdlib/math/base/special/cos.h"
 
 /**
 * Evaluates the cis function for a double-precision complex floating-point number.
@@ -68,8 +68,9 @@ stdlib_complex128_t stdlib_base_ccis( const stdlib_complex128_t z ) {
 
 	stdlib_complex128_reim( z, &re, &im );
 
-	y = sin( re ); //TODO: use stdlib function once available
-	x = cos( re ); //TODO: use stdlib function once available
+	// TODO: replace with stdlib/math/base/special/sincos
+	y = stdlib_base_sin( re );
+	x = stdlib_base_cos( re );
 	if( im != 0.0 ){
 		e = stdlib_base_exp( -im );
 		y *= e;
