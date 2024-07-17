@@ -47,12 +47,12 @@
     > var z = zy.get( 0 );
     > var re = {{alias:@stdlib/complex/real}}( z )
     ~-0.6
-    > var im = {{alias:@stdlib/complex/imag}}( z )
+    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
     ~-1.2
     > z = zx.get( 0 );
     > re = {{alias:@stdlib/complex/real}}( z )
     ~0.8
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     ~1.6
 
     // Advanced indexing:
@@ -62,12 +62,12 @@
     > z = zy.get( 0 );
     > re = {{alias:@stdlib/complex/real}}( z )
     ~-3.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     ~-3.6
     > z = zx.get( 2 );
     > re = {{alias:@stdlib/complex/real}}( z )
     ~4.0
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     ~4.8
 
     // Using typed array views:
@@ -79,12 +79,12 @@
     > z = zy0.get( 2 );
     > re = {{alias:@stdlib/complex/real}}( z )
     ~-1.8
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     ~-2.4
     > z = zx0.get( 1 );
     > re = {{alias:@stdlib/complex/real}}( z )
     ~2.4
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     ~3.2
 
 
@@ -138,12 +138,12 @@
     > var z = zy.get( 0 );
     > var re = {{alias:@stdlib/complex/real}}( z )
     ~-0.6
-    > var im = {{alias:@stdlib/complex/imag}}( z )
+    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
     ~-1.2
     > z = zx.get( 0 );
     > re = {{alias:@stdlib/complex/real}}( z )
     ~0.8
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     ~1.6
 
     // Advanced indexing:
@@ -153,12 +153,12 @@
     > z = zy.get( 1 );
     > re = {{alias:@stdlib/complex/real}}( z )
     ~-1.8
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     ~-2.4
     > z = zx.get( 1 );
     > re = {{alias:@stdlib/complex/real}}( z )
     ~2.4
-    > im = {{alias:@stdlib/complex/imag}}( z )
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
     ~3.2
 
     See Also

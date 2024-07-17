@@ -18,8 +18,8 @@
 
 #include "stdlib/complex/float32/conj.h"
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/realf.h"
-#include "stdlib/complex/imagf.h"
+#include "stdlib/complex/float32/real.h"
+#include "stdlib/complex/float32/imag.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -108,14 +108,14 @@ double benchmark() {
 		im = rand_float();
 		z = stdlib_complex64( re, im );
 		v = stdlib_complex64_conj( z );
-		re = stdlib_realf( v );
+		re = stdlib_complex64_real( v );
 		if ( re != re ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	im = stdlib_imagf( v );
+	im = stdlib_complex64_imag( v );
 	if ( im != im ) {
 		printf( "should not return NaN\n" );
 	}

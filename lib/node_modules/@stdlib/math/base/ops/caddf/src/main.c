@@ -29,17 +29,17 @@
 *
 * @example
 * #include "stdlib/complex/float32/ctor.h"
-* #include "stdlib/complex/realf.h"
-* #include "stdlib/complex/imagf.h"
+* #include "stdlib/complex/float32/real.h"
+* #include "stdlib/complex/float32/imag.h"
 *
 * stdlib_complex64_t z = stdlib_complex64( 3.0f, -2.0f );
 *
 * stdlib_complex64_t out = stdlib_base_caddf( z, z );
 *
-* float re = stdlib_realf( out );
+* float re = stdlib_complex64_real( out );
 * // returns 6.0f
 *
-* float im = stdlib_imagf( out );
+* float im = stdlib_complex64_imag( out );
 * // returns -4.0f
 */
 stdlib_complex64_t stdlib_base_caddf( const stdlib_complex64_t z1, const stdlib_complex64_t z2 ) {

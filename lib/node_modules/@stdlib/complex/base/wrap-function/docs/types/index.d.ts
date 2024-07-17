@@ -180,8 +180,8 @@ type Constructor = new( re: number, im: number ) => ComplexLike;
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 * var randu = require( '@stdlib/random/base/randu' );
 *
 * function randComplex() {
@@ -220,8 +220,8 @@ declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
 * var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var f = wrap( cidentityf, 1, Complex64 );
 *
@@ -255,8 +255,8 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
 * var caddf = require( '@stdlib/math/base/ops/caddf' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var f = wrap( caddf, 2, Complex64 );
 *
@@ -289,8 +289,8 @@ declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * function add( x, y, z ) {
 *     var re = realf( x ) + realf( y ) + realf( z );
@@ -329,8 +329,8 @@ declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTerna
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * function add( x, y, z, w ) {
 *     var re = realf( x ) + realf( y ) + realf( z ) + realf( w );
@@ -369,8 +369,8 @@ declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQu
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * function add( x, y, z, w, v ) {
 *     var re = realf( x ) + realf( y ) + realf( z ) + realf( w ) + realf( v );
@@ -409,8 +409,8 @@ declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuina
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * function add( x, y, z, w, v, t ) {
 *     var re = realf( x ) + realf( y ) + realf( z ) + realf( w ) + realf( v ) + realf( t );

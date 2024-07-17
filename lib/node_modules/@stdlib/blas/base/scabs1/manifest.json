@@ -87,8 +87,8 @@
         "@stdlib/math/base/special/absf",
         "@stdlib/complex/float32/ctor",
         "@stdlib/complex/float32/reim",
-        "@stdlib/complex/realf",
-        "@stdlib/complex/imagf"
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
       ]
     },
 
@@ -154,8 +154,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/realf",
-        "@stdlib/complex/imagf"
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
       ]
     },
 
@@ -218,8 +218,8 @@
         "@stdlib/math/base/special/absf",
         "@stdlib/complex/float32/ctor",
         "@stdlib/complex/float32/reim",
-        "@stdlib/complex/realf",
-        "@stdlib/complex/imagf"
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
       ]
     },
 
@@ -282,8 +282,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/realf",
-        "@stdlib/complex/imagf"
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
       ]
     },
 
@@ -349,8 +349,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/realf",
-        "@stdlib/complex/imagf"
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
       ]
     },
 
@@ -413,8 +413,8 @@
         "@stdlib/math/base/special/absf",
         "@stdlib/complex/float32/ctor",
         "@stdlib/complex/float32/reim",
-        "@stdlib/complex/realf",
-        "@stdlib/complex/imagf"
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
       ]
     },
 

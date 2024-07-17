@@ -45,9 +45,9 @@
     > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
     > {{alias}}( 2, ca, cx, 1, cy, 1 );
     > var z = cy.get( 0 );
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     -1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     7.0
 
     // Advanced indexing:
@@ -55,9 +55,9 @@
     > cy = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
     > {{alias}}( 2, ca, cx, -2, cy, 1 );
     > z = cy.get( 0 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     -1.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     23.0
 
     // Using typed array views:
@@ -67,9 +67,9 @@
     > var cy1 = new {{alias:@stdlib/array/complex64}}( cy0.buffer, cy0.BYTES_PER_ELEMENT*1 );
     > {{alias}}( 1, ca, cx1, 1, cy1, 1 );
     > z = cy0.get( 1 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     -1.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     15.0
 
 
@@ -122,9 +122,9 @@
     > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
     > {{alias}}.ndarray( cx.length, ca, cx, 1, 0, cy, 1, 0 );
     > var z = cy.get( 0 );
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     -1.0
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     7.0
 
     // Advanced indexing:
@@ -132,9 +132,9 @@
     > cy = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
     > {{alias}}.ndarray( 2, ca, cx, 1, 1, cy, 1, 1 );
     > z = cy.get( 2 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     -1.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     23.0
 
     See Also

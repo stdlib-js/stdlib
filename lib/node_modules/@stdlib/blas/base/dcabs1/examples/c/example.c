@@ -19,7 +19,7 @@
 #include "stdlib/blas/base/dcabs1.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/real.h"
-#include "stdlib/complex/imag.h"
+#include "stdlib/complex/float64/imag.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -34,6 +34,6 @@ int main( void ) {
 	int i;
 	for ( i = 0; i < 4; i++ ) {
 		y = c_dcabs1( x[ i ] );
-		printf( "f(%lf + %lf) = %lf\n", stdlib_real( x[ i ] ), stdlib_imag( x[ i ] ), y );
+		printf( "f(%lf + %lf) = %lf\n", stdlib_real( x[ i ] ), stdlib_complex128_imag( x[ i ] ), y );
 	}
 }

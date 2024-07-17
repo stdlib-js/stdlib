@@ -27,8 +27,8 @@
 *
 * @example
 * #include "stdlib/complex/float32/ctor.h"
-* #include "stdlib/complex/realf.h"
-* #include "stdlib/complex/imagf.h"
+* #include "stdlib/complex/float32/real.h"
+* #include "stdlib/complex/float32/imag.h"
 *
 * stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
 *
@@ -36,10 +36,10 @@
 *
 * stdlib_complex64_t v = stdlib_complex64_conj( z );
 *
-* float re = stdlib_realf( v );
+* float re = stdlib_complex64_real( v );
 * // returns 5.0f
 *
-* float im = stdlib_imagf( v );
+* float im = stdlib_complex64_imag( v );
 * // returns -2.0f
 */
 stdlib_complex64_t stdlib_complex64_conj( const stdlib_complex64_t z ) {

@@ -422,8 +422,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var arr = new Complex64Array( 4 );
 	*
@@ -488,8 +488,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns boolean indicating whether all elements pass a test
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* function predicate( v ) {
 	*     return ( realf( v ) === imagf( v ) );
@@ -515,8 +515,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns modified typed array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var arr = new Complex64Array( 3 );
 	*
@@ -550,8 +550,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns new array containing elements which pass a test implemented by a predicate function
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* function predicate( v ) {
 	*     return ( realf( v ) === imagf( v ) );
@@ -588,8 +588,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns array element or undefined
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* function predicate( v ) {
@@ -622,8 +622,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* function predicate( v ) {
 	*     return ( realf( v ) === imagf( v ) );
@@ -648,8 +648,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns array element or undefined
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* function predicate( v ) {
@@ -682,8 +682,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* function predicate( v ) {
 	*     return ( realf( v ) === imagf( v ) );
@@ -883,8 +883,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* function scale( v, i ) {
 	*     return new Complex64( 2.0*realf( v ), 2.0*imagf( v ) );
@@ -918,8 +918,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns accumulated result
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	* var caddf = require( '@stdlib/math/base/ops/caddf' );
 	*
 	* var arr = new Complex64Array( 3 );
@@ -947,8 +947,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns accumulated result
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	* var caddf = require( '@stdlib/math/base/ops/caddf' );
 	*
 	* var arr = new Complex64Array( 3 );
@@ -974,8 +974,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns reversed array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var arr = new Complex64Array( 3 );
 	*
@@ -1047,8 +1047,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @throws target array lacks sufficient storage to accommodate source values
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var arr = new Complex64Array( 10 );
 	*
@@ -1083,8 +1083,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns output array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var arr = new Complex64Array( 5 );
 	*
@@ -1152,8 +1152,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns boolean indicating whether at least one element passes a test
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* function predicate( v ) {
 	*     return ( realf( v ) === imagf( v ) );
@@ -1177,8 +1177,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns sorted array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* function compare( a, b ) {
 	*     var re1;
@@ -1251,8 +1251,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns subarray
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var arr = new Complex64Array( 5 );
 	*
@@ -1336,8 +1336,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns reversed array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var arr = new Complex64Array( 3 );
 	*
@@ -1384,8 +1384,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns sorted array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* function compare( a, b ) {
 	*     var re1;
@@ -1471,8 +1471,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns iterator
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	* var arr = new Complex64Array( 2 );
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
@@ -1514,8 +1514,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns modified typed array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* var arr = new Complex64Array( 3 );
@@ -1728,8 +1728,8 @@ interface Complex64ArrayConstructor {
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* function clbk( v ) {
 	*     return new Complex64( realf(v)*2.0, imagf(v)*2.0 );

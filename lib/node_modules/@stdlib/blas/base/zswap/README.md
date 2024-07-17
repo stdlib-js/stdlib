@@ -45,7 +45,7 @@ Interchange two complex double-precision floating-point vectors.
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -84,7 +84,7 @@ The `N` and stride parameters determine how values from `x` are interchanged wit
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -117,7 +117,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var imag = require( '@stdlib/complex/float64/imag' );
 
 // Initial arrays...
 var x0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -156,7 +156,7 @@ Interchange two complex double-precision floating-point vectors using alternativ
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -192,7 +192,7 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );

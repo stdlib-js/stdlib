@@ -42,8 +42,8 @@ Adds two single-precision complex floating-point numbers.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
+var realf = require( '@stdlib/complex/float32/real' );
+var imagf = require( '@stdlib/complex/float32/imag' );
 
 var z = new Complex64( -1.5, 2.5 );
 
@@ -123,17 +123,17 @@ Adds two single-precision complex floating-point numbers.
 
 ```c
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/realf.h"
-#include "stdlib/complex/imagf.h"
+#include "stdlib/complex/float32/real.h"
+#include "stdlib/complex/float32/imag.h"
 
 stdlib_complex64_t z = stdlib_complex64( 3.0f, -2.0f );
 
 stdlib_complex64_t out = stdlib_base_caddf( z, z );
 
-float re = stdlib_realf( out );
+float re = stdlib_complex64_real( out );
 // returns 6.0f
 
-float im = stdlib_imagf( out );
+float im = stdlib_complex64_imag( out );
 // returns -4.0f
 ```
 
