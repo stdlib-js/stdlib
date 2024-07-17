@@ -38,7 +38,7 @@ interface Routine {
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/real' );
+	* var real = require( '@stdlib/complex/float64/real' );
 	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -80,7 +80,7 @@ interface Routine {
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/real' );
+	* var real = require( '@stdlib/complex/float64/real' );
 	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -121,7 +121,7 @@ interface Routine {
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
-* var real = require( '@stdlib/complex/real' );
+* var real = require( '@stdlib/complex/float64/real' );
 * var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -149,7 +149,7 @@ interface Routine {
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
-* var real = require( '@stdlib/complex/real' );
+* var real = require( '@stdlib/complex/float64/real' );
 * var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );

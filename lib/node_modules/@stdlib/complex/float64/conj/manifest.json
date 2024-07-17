@@ -51,7 +51,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/real",
+        "@stdlib/complex/float64/real",
         "@stdlib/complex/float64/imag"
       ]
     },
@@ -67,7 +67,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/real",
+        "@stdlib/complex/float64/real",
         "@stdlib/complex/float64/imag"
       ]
     }
