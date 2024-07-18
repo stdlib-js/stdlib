@@ -918,7 +918,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @example
 	* var real = require( '@stdlib/complex/float64/real' );
 	* var imag = require( '@stdlib/complex/float64/imag' );
-	* var cadd = require( '@stdlib/math/base/ops/cadd' );
+	* var cadd = require( '@stdlib/complex/float64/base/add' );
 	*
 	* var arr = new Complex128Array( 3 );
 	*
@@ -947,7 +947,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @example
 	* var real = require( '@stdlib/complex/float64/real' );
 	* var imag = require( '@stdlib/complex/float64/imag' );
-	* var cadd = require( '@stdlib/math/base/ops/cadd' );
+	* var cadd = require( '@stdlib/complex/float64/base/add' );
 	*
 	* var arr = new Complex128Array( 3 );
 	*

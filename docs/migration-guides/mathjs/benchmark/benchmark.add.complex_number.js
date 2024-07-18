@@ -26,7 +26,7 @@ var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
-var base = require( '@stdlib/math/base/ops/cadd' );
+var base = require( '@stdlib/complex/float64/base/add' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
 
