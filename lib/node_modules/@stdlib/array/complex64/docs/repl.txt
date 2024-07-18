@@ -945,7 +945,7 @@
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
     <Complex64Array>
-    > var z = arr.reduce( {{alias:@stdlib/math/base/ops/caddf}} )
+    > var z = arr.reduce( {{alias:@stdlib/complex/float32/base/add}} )
     <Complex64>
     > var re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0
@@ -990,7 +990,7 @@
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
     <Complex64Array>
-    > var z = arr.reduceRight( {{alias:@stdlib/math/base/ops/caddf}} )
+    > var z = arr.reduceRight( {{alias:@stdlib/complex/float32/base/add}} )
     <Complex64>
     > var re = {{alias:@stdlib/complex/float32/real}}( z )
     3.0

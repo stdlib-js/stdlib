@@ -46,7 +46,7 @@ Returns a function which wraps a function accepting complex number arguments to 
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var caddf = require( '@stdlib/math/base/ops/caddf' );
+var caddf = require( '@stdlib/complex/float32/base/add' );
 
 var f = wrap( caddf, 2, Complex64 );
 // returns <Function>
@@ -85,7 +85,7 @@ The function accepts the following arguments:
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var caddf = require( '@stdlib/math/base/ops/caddf' );
+var caddf = require( '@stdlib/complex/float32/base/add' );
 var realf = require( '@stdlib/complex/float32/real' );
 var imagf = require( '@stdlib/complex/float32/imag' );
 var wrap = require( '@stdlib/complex/base/wrap-function' );
