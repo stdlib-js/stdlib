@@ -2029,8 +2029,8 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
+	* var real = require( '@stdlib/complex/float32/real' );
+	* var imag = require( '@stdlib/complex/float32/imag' );
 	*
 	* var v = ns.cceilf( new Complex64( -1.5, 2.5 ) );
 	* // returns <Complex64>
@@ -2346,8 +2346,8 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
+	* var real = require( '@stdlib/complex/float32/real' );
+	* var imag = require( '@stdlib/complex/float32/imag' );
 	*
 	* var v = ns.cflipsignf( new Complex64( -4.0, 5.0 ), -55.0 );
 	* // returns <Complex64>
@@ -2435,8 +2435,8 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
+	* var real = require( '@stdlib/complex/float32/real' );
+	* var imag = require( '@stdlib/complex/float32/imag' );
 	*
 	* var v = ns.cidentityf( new Complex64( -1.0, 2.0 ) );
 	* // returns <Complex64>
@@ -4005,19 +4005,19 @@ interface Namespace {
 	*
 	* @param x - input value
 	* @param n - number of significant figures
-	* @param b - base (default: 10)
+	* @param b - base
 	* @returns rounded value
 	*
 	* @example
-	* var v = ns.floorsd( 3.141592653589793, 5 );
+	* var v = ns.floorsd( 3.141592653589793, 5, 10 );
 	* // returns 3.1415
 	*
 	* @example
-	* var v = ns.floorsd( 3.141592653589793, 1 );
+	* var v = ns.floorsd( 3.141592653589793, 1, 10 );
 	* // returns 3.0
 	*
 	* @example
-	* var v = ns.floorsd( 12368.0, 2 );
+	* var v = ns.floorsd( 12368.0, 2, 10 );
 	* // returns 12000.0
 	*
 	* @example

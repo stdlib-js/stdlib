@@ -920,7 +920,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @example
 	* var realf = require( '@stdlib/complex/float32/real' );
 	* var imagf = require( '@stdlib/complex/float32/imag' );
-	* var caddf = require( '@stdlib/math/base/ops/caddf' );
+	* var caddf = require( '@stdlib/complex/float32/base/add' );
 	*
 	* var arr = new Complex64Array( 3 );
 	*
@@ -949,7 +949,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @example
 	* var realf = require( '@stdlib/complex/float32/real' );
 	* var imagf = require( '@stdlib/complex/float32/imag' );
-	* var caddf = require( '@stdlib/math/base/ops/caddf' );
+	* var caddf = require( '@stdlib/complex/float32/base/add' );
 	*
 	* var arr = new Complex64Array( 3 );
 	*

@@ -254,7 +254,7 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var caddf = require( '@stdlib/math/base/ops/caddf' );
+* var caddf = require( '@stdlib/complex/float32/base/add' );
 * var realf = require( '@stdlib/complex/float32/real' );
 * var imagf = require( '@stdlib/complex/float32/imag' );
 *
