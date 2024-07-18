@@ -24,7 +24,6 @@ import floorsd = require( './index' );
 // The function returns a number...
 {
 	floorsd( 3.141592653589793, 4, 10 ); // $ExpectType number
-	floorsd( 3.141592653589793, 4 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided values other than numbers...
