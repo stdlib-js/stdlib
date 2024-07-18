@@ -30,25 +30,21 @@ limitations under the License.
 var floorsd = require( '@stdlib/math/base/special/floorsd' );
 ```
 
-#### floorsd( x, n\[, b] )
+#### floorsd( x, n, b )
 
 Rounds a `numeric` value to the nearest `number` toward negative infinity with `n` significant figures.
 
 ```javascript
-var v = floorsd( 3.141592653589793, 5 );
+var v = floorsd( 3.141592653589793, 5, 10 );
 // returns 3.1415
 
-v = floorsd( 3.141592653589793, 1 );
+v = floorsd( 3.141592653589793, 1, 10 );
 // returns 3.0
 
-v = floorsd( 12368.0, 2 );
+v = floorsd( 12368.0, 2, 10 );
 // returns 12000.0
-```
 
-The default base is `10` (decimal). To round using a different base, provide a third argument.
-
-```javascript
-var v = floorsd( 0.0313, 2, 2 );
+v = floorsd( 0.0313, 2, 2 );
 // returns 0.03125
 ```
 
@@ -78,7 +74,7 @@ var i;
 
 for ( i = 0; i < 100; i++ ) {
     x = (randu()*10000.0) - 5000.0;
-    y = floorsd( x, 5 );
+    y = floorsd( x, 5, 10 );
     console.log( 'x: %d. Rounded: %d.', x, y );
 }
 ```
