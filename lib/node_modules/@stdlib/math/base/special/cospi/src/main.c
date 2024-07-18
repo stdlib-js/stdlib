@@ -34,10 +34,11 @@ static const double MAX_INTEGER_P1 = STDLIB_CONSTANT_FLOAT64_MAX_SAFE_INTEGER + 
 *
 * ## Notes
 *
-* -   `sin(-x) = -sin(x)`
-* -   `sin(+n) = +0`, where `n` is a positive integer
-* -   `sin(-n) = -sin(+n) = -0`, where `n` is a positive integer
 * -   `cos(-x) = cos(x)`
+* -   `sin(-x) = -sin(x)`
+* -   `cos(π/2) = 0`
+* -   `cos(0) = 1`
+* -   `cos(π) = -1`
 *
 * @param x    input value
 * @return     function value
