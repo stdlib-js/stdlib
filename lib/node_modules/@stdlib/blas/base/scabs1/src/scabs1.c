@@ -28,7 +28,7 @@
 * @return        result
 *
 * @example
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 *
 * stdlib_complex64_t c = stdlib_complex64( 5.0f, -3.0f );
 *
