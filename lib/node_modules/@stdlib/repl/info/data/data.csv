@@ -988,7 +988,7 @@ base.floor10,"\nbase.floor10( x:number )\n    Rounds a numeric value to the near
 base.floorb,"\nbase.floorb( x:number, n:integer, b:integer )\n    Rounds a numeric value to the nearest multiple of `b^n` toward negative\n    infinity.\n"
 base.floorf,"\nbase.floorf( x:number )\n    Rounds a single-precision floating-point number toward negative infinity.\n"
 base.floorn,"\nbase.floorn( x:number, n:integer )\n    Rounds a double-precision floating-point number to the nearest multiple of\n    `10^n` toward negative infinity.\n"
-base.floorsd,"\nbase.floorsd( x:number, n:integer[, b:integer] )\n    Rounds a numeric value to the nearest number toward negative infinity with\n    `n` significant figures.\n"
+base.floorsd,"\nbase.floorsd( x:number, n:integer, b:integer )\n    Rounds a numeric value to the nearest number toward negative infinity with\n    `n` significant figures.\n"
 base.forEachChar,"\nbase.forEachChar( str:string, clbk:Function[, thisArg:any] )\n    Invokes a function for each UTF-16 code unit in a string.\n"
 base.forEachCodePoint,"\nbase.forEachCodePoint( str:string, clbk:Function[, thisArg:any] )\n    Invokes a function for each Unicode code point in a string.\n"
 base.forEachCodePointRight,"\nbase.forEachCodePointRight( str:string, clbk:Function[, thisArg:any] )\n    Invokes a function for each Unicode code point in a string, iterating from\n    right to left.\n"
