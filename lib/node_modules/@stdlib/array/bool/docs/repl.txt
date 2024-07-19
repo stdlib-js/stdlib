@@ -313,6 +313,61 @@
     true
 
 
+{{alias}}.prototype.copyWithin( target, start[, end] )
+    Copies a sequence of elements within the array starting at `start` and
+    ending at `end` (non-inclusive) to the position starting at `target`.
+
+    Parameters
+    ----------
+    target: integer
+        Target start index position.
+    
+    start: integer
+        Source start index position.
+    
+    end: integer (optional)
+        Source end index position. Default: out.length.
+
+    Returns
+    -------
+    out: BooleanArray
+        Modified array.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, false, true ] )
+    <BooleanArray>
+    > arr.copyWithin( 0, 2 )
+    <BooleanArray>
+    > var v = arr.get( 0 )
+    false
+    > v = arr.get( 1 )
+    true
+
+
+{{alias}}.prototype.entries()
+    Returns an iterator for iterating over array key-value pairs.
+
+    Returns
+    -------
+    iterator: Iterator
+        Iterator for iterating over array key-value pairs.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ true, false, true ] )
+    <BooleanArray>
+    > var it = arr.entries();
+    > var v = it.next().value
+    [ 0, true ]
+    > v = it.next().value
+    [ 1, false ]
+    > v = it.next().value
+    [ 2, true ]
+    > var bool = it.next().done
+    true
+
+
 {{alias}}.prototype.every( predicate[, thisArg] )
     Returns a boolean indicating whether all elements in the array pass a test.
 
@@ -560,6 +615,34 @@
     <BooleanArray>
     > var idx = arr.findLastIndex( predicate )
     2
+
+
+{{alias}}.prototype.forEach( clbk[, thisArg] )
+    Invokes a function once for each array element.
+
+    A callback function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    Parameters
+    ----------
+    clbk: Function
+        Function to invoke for each array element.
+
+    thisArg: Any (optional)
+        Execution context.
+    
+    Examples
+    --------
+    > var str = '%';
+    > function clbk( v ) { str += v.toString() + '%'; };
+    > var arr = new {{alias}}( [ true, false, false, true ] )
+    <BooleanArray>
+    > arr.forEach( clbk );
+    > str
+    '%true%false%false%true%'
 
 
 {{alias}}.prototype.get( i )
