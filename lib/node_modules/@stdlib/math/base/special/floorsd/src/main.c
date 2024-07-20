@@ -40,7 +40,6 @@
 * // returns 0.03125
 */
 double stdlib_base_floorsd( const double x, const int32_t n, const int32_t b ) {
-	int32_t base;
 	double exp;
 	double s;
 	double y;
@@ -48,19 +47,18 @@ double stdlib_base_floorsd( const double x, const int32_t n, const int32_t b ) {
 	if ( stdlib_base_is_nan( x ) || n < 1 || b <= 0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	base = b;
 	if ( stdlib_base_is_infinite( x ) || x == 0.0 ) {
 		return x;
 	}
-	if ( base == 10 ) {
+	if ( b == 10 ) {
 		exp = stdlib_base_log10( stdlib_base_abs( x ) );
-	} else if ( base == 2 ) {
+	} else if ( b == 2 ) {
 		exp = stdlib_base_float64_exponent( stdlib_base_abs( x ) );
 	} else {
-		exp = stdlib_base_ln( stdlib_base_abs( x ) ) / stdlib_base_ln( base );
+		exp = stdlib_base_ln( stdlib_base_abs( x ) ) / stdlib_base_ln( (double)b );
 	}
 	exp = stdlib_base_floor( exp - n + 1.0 );
-	s = stdlib_base_pow( base, stdlib_base_abs( exp ) );
+	s = stdlib_base_pow( (double)b, stdlib_base_abs( exp ) );
 
 	// Check for overflow:
 	if ( stdlib_base_is_infinite( s ) ) {
