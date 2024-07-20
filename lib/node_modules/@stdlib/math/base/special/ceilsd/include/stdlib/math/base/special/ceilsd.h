@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,35 +16,25 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+#ifndef STDLIB_MATH_BASE_SPECIAL_CEILSD_H
+#define STDLIB_MATH_BASE_SPECIAL_CEILSD_H
+
+#include <stdint.h>
+
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
 * Rounds a numeric value to the nearest number toward positive infinity with \\(n\\) significant figures.
-*
-* @param x - input value
-* @param n - number of significant figures
-* @param b - base
-* @returns rounded value
-*
-* @example
-* var v = ceilsd( 3.141592653589793, 5, 10 );
-* // returns 3.1416
-*
-* @example
-* var v = ceilsd( 3.141592653589793, 1, 10 );
-* // returns 4.0
-*
-* @example
-* var v = ceilsd( 12368.0, 2, 10 );
-* // returns 13000.0
-*
-* @example
-* var v = ceilsd( 0.0313, 2, 2 );
-* // returns 0.046875
 */
-declare function ceilsd( x: number, n: number, b: number ): number;
+double stdlib_base_ceilsd( const double x, const int32_t n, const int32_t b );
 
+#ifdef __cplusplus
+}
+#endif
 
-// EXPORTS //
-
-export = ceilsd;
+#endif // !STDLIB_MATH_BASE_SPECIAL_CEILSD_H

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,17 +16,19 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/ceilsd.h"
+#include <stdio.h>
+#include <stdint.h>
 
-var randu = require( '@stdlib/random/base/randu' );
-var ceilsd = require( './../lib' );
+int main( void ) {
+	const double x[] = { -5.0, -3.89, -2.78, -1.67, -0.56, 0.56, 1.67, 2.78, 3.89, 5.0 };
+	const int32_t n[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	const int32_t b[] = { 20, 19, 18, 17, 16, 15, 14, 13, 12, 11 };
 
-var x;
-var y;
-var i;
-
-for ( i = 0; i < 100; i++ ) {
-	x = (randu()*10000.0) - 5000.0;
-	y = ceilsd( x, 5, 10 );
-	console.log( 'x: %d. Rounded: %d.', x, y );
+	double v;
+	int i;
+	for ( i = 0; i < 10; i++ ) {
+		v = stdlib_base_ceilsd( x[ i ], n[ i ], b[ i ] );
+		printf( "ceilsd(%lf, %d, %d) = %lf\n", x[ i ], n[ i ], b[ i ], v );
+	}
 }
