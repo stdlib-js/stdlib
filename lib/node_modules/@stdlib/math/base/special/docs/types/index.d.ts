@@ -2257,19 +2257,19 @@ interface Namespace {
 	*
 	* @param x - input value
 	* @param n - number of significant figures
-	* @param b - base (default: 10)
+	* @param b - base
 	* @returns rounded value
 	*
 	* @example
-	* var v = ns.ceilsd( 3.141592653589793, 5 );
+	* var v = ns.ceilsd( 3.141592653589793, 5, 10 );
 	* // returns 3.1416
 	*
 	* @example
-	* var v = ns.ceilsd( 3.141592653589793, 1 );
+	* var v = ns.ceilsd( 3.141592653589793, 1, 10 );
 	* // returns 4.0
 	*
 	* @example
-	* var v = ns.ceilsd( 12368.0, 2 );
+	* var v = ns.ceilsd( 12368.0, 2, 10 );
 	* // returns 13000.0
 	*
 	* @example
