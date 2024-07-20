@@ -1,0 +1,23 @@
+
+{{alias}}()
+    Returns a list of transpose operations.
+
+    The output array contains the following operations:
+
+    - no-transpose: no transposition.
+    - transpose: transposition.
+    - conjugate-transpose: conjugate transposition.
+
+    Returns
+    -------
+    out: Array<string>
+        List of operations.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'no-transpose', 'transpose', 'conjugate-transpose' ]
+
+    See Also
+    --------
+

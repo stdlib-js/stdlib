@@ -20,7 +20,7 @@
 #include "stdlib/math/base/special/asin.h"
 
 /**
-* Computes the arccosecant of a  number.
+* Computes the arccosecant of a double-precision floating-point number.
 *
 * @param x    input value
 * @return     output value

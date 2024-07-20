@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { AnyArray, Collection, Complex128Array, Complex64Array } from '@stdlib/types/array';
+import { AnyArray, Collection, Complex128Array, Complex64Array, BooleanArray } from '@stdlib/types/array';
 
 /**
 * Converts an array to the same data type as a `Float64Array`.
@@ -183,6 +183,24 @@ declare function convertSame( x: Collection, y: Uint8Array ): Uint8Array;
 * // returns <Uint8ClampedArray>[ 1, 2, 3, 4 ]
 */
 declare function convertSame( x: Collection, y: Uint8ClampedArray ): Uint8ClampedArray;
+
+/**
+* Converts an array to a `BooleanArray`.
+*
+* @param x - array to convert
+* @param y - array having the desired output data type
+* @returns output array
+*
+* @example
+* var BooleanArray = require( '@stdlib/array/bool' );
+*
+* var x = [ -1, 0, 1, 2 ];
+* var y = new BooleanArray( 0 );
+*
+* var out = convertSame( x, y );
+* // returns <BooleanArray>
+*/
+declare function convertSame( x: Collection, y: BooleanArray ): BooleanArray;
 
 /**
 * Converts an array to a `Complex128Array`.

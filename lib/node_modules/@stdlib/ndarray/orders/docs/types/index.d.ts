@@ -32,7 +32,7 @@
 *
 * @example
 * var list = orders();
-* // returns [ 'row-major', 'column-major' ]
+* // e.g., returns [ 'row-major', 'column-major' ]
 */
 declare function orders(): Array<string>;
 
