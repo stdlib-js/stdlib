@@ -56,10 +56,10 @@ double stdlib_base_ceilsd( const double x, const int32_t n, const int32_t b ) {
 	} else if ( b == 2 ) {
 		exp = stdlib_base_float64_exponent( stdlib_base_abs( x ) );
 	} else {
-		exp = stdlib_base_ln( stdlib_base_abs( x ) ) / stdlib_base_ln( b );
+		exp = stdlib_base_ln( stdlib_base_abs( x ) ) / stdlib_base_ln( (double)b );
 	}
-	exp = stdlib_base_floor( exp - n + 1.0 );
-	s = stdlib_base_pow( b, stdlib_base_abs( exp ) );
+	exp = stdlib_base_floor( exp - (double)n + 1.0 );
+	s = stdlib_base_pow( (double)b, stdlib_base_abs( exp ) );
 
 	// Check for overflow:
 	if ( stdlib_base_is_infinite( s ) ) {

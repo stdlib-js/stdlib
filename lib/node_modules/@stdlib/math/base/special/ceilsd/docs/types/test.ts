@@ -28,20 +28,6 @@ import ceilsd = require( './index' );
 
 // The compiler throws an error if the function is provided values other than numbers...
 {
-	ceilsd( true, 3 ); // $ExpectError
-	ceilsd( false, 2 ); // $ExpectError
-	ceilsd( '5', 1 ); // $ExpectError
-	ceilsd( [], 1 ); // $ExpectError
-	ceilsd( {}, 2 ); // $ExpectError
-	ceilsd( ( x: number ): number => x, 2 ); // $ExpectError
-
-	ceilsd( 9, true ); // $ExpectError
-	ceilsd( 9, false ); // $ExpectError
-	ceilsd( 5, '5' ); // $ExpectError
-	ceilsd( 8, [] ); // $ExpectError
-	ceilsd( 9, {} ); // $ExpectError
-	ceilsd( 8, ( x: number ): number => x ); // $ExpectError
-
 	ceilsd( true, 3, 2 ); // $ExpectError
 	ceilsd( false, 2, 2 ); // $ExpectError
 	ceilsd( '5', 1, 2 ); // $ExpectError
