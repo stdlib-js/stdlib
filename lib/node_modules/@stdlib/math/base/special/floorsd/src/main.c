@@ -57,7 +57,7 @@ double stdlib_base_floorsd( const double x, const int32_t n, const int32_t b ) {
 	} else {
 		exp = stdlib_base_ln( stdlib_base_abs( x ) ) / stdlib_base_ln( (double)b );
 	}
-	exp = stdlib_base_floor( exp - n + 1.0 );
+	exp = stdlib_base_floor( exp - (double)n + 1.0 );
 	s = stdlib_base_pow( (double)b, stdlib_base_abs( exp ) );
 
 	// Check for overflow:
