@@ -232,7 +232,7 @@ base.ceil10,"\nbase.ceil10( x:number )\n    Rounds a numeric value to the neares
 base.ceilb,"\nbase.ceilb( x:number, n:integer, b:integer )\n    Rounds a numeric value to the nearest multiple of `b^n` toward positive\n    infinity.\n"
 base.ceilf,"\nbase.ceilf( x:number )\n    Rounds a single-precision floating-point number toward positive infinity.\n"
 base.ceiln,"\nbase.ceiln( x:number, n:integer )\n    Rounds a numeric value to the nearest multiple of `10^n` toward positive\n    infinity.\n"
-base.ceilsd,"\nbase.ceilsd( x:number, n:integer[, b:integer] )\n    Rounds a numeric value to the nearest number toward positive infinity with\n    `n` significant figures.\n"
+base.ceilsd,"\nbase.ceilsd( x:number, n:integer, b:integer )\n    Rounds a numeric value to the nearest number toward positive infinity with\n    `n` significant figures.\n"
 base.cexp,"\nbase.cexp( z:Complex128 )\n    Evaluates the exponential function for a double-precision complex floating-\n    point number.\n"
 base.cflipsign,"\nbase.cflipsign( z:Complex128, y:number )\n    Returns a double-precision complex floating-point number with the same\n    magnitude as `z` and the sign of `y*z`.\n"
 base.cflipsignf,"\nbase.cflipsignf( z:Complex64, y:number )\n    Returns a single-precision complex floating-point number with the same\n    magnitude as `z` and the sign of `y*z`.\n"
