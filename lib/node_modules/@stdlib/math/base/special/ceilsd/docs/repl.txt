@@ -12,7 +12,7 @@
         Number of significant figures. Must be greater than 0.
 
     b: integer
-        Base. Must be greater than 0. Default: 10.
+        Base. Must be greater than 0.
 
     Returns
     -------
