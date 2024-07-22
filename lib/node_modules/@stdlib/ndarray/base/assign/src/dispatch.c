@@ -31,7 +31,6 @@
 *
 * -   If able to successfully assign elements, the function returns `0`; otherwise, the function returns an error code.
 *
-* @private
 * @param f     unary ndarray function
 * @param x1    input ndarray
 * @param x2    output ndarray
@@ -93,7 +92,6 @@ static int8_t stdlib_ndarray_unary_assign_1d_squeeze( const ndarrayUnaryAssignFc
 *
 * -   If able to successfully apply a unary callback, the function returns `0`; otherwise, the function returns an error code.
 *
-* @private
 * @param f     unary ndarray function
 * @param N     number of elements
 * @param x1    input ndarray

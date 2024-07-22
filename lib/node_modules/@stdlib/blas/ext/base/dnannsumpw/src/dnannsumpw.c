@@ -22,7 +22,6 @@
 /**
 * Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using pairwise summation.
 *
-* @private
 * @param N       number of indexed elements
 * @param X       input array
 * @param stride  stride length

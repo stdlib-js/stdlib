@@ -18,6 +18,8 @@
 
 // TypeScript Version: 4.1
 
+type Uncapitalize<S extends string> = S extends `${infer F}${infer R}` ? `${Lowercase<F>}${R}` : S;
+
 /**
 * Uncapitalizes the first character of a string.
 *
@@ -40,7 +42,7 @@
 * var out = uncapitalize( 'Hidden Treasures' );
 * // returns 'hidden Treasures'
 */
-declare function uncapitalize( str: string ): string;
+declare function uncapitalize<S extends string>( str: S ): Uncapitalize<S>;
 
 
 // EXPORTS //
