@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/ceiln.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
 	const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
 
 	double y;

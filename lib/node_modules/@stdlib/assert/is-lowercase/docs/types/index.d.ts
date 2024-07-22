@@ -40,7 +40,7 @@
 * var bool = isLowercase( '!' );
 * // returns false
 */
-declare function isLowercase( value: any ): value is string;
+declare function isLowercase( value: any ): boolean;
 
 
 // EXPORTS //

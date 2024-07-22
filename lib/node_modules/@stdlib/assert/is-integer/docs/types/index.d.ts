@@ -44,7 +44,7 @@ interface IsInteger {
 	* var bool = isInteger( null );
 	* // returns false
 	*/
-	( value: any ): value is number | Number;
+	( value: any ): boolean;
 
 	/**
 	* Tests if a value is a number primitive having an integer value.
@@ -60,7 +60,7 @@ interface IsInteger {
 	* var bool = isInteger.isPrimitive( new Number( -3.0 ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): value is number;
+	isPrimitive( value: any ): boolean;
 
 	/**
 	* Tests if a value is a number object having an integer value.
@@ -76,7 +76,7 @@ interface IsInteger {
 	* var bool = isInteger.isObject( new Number( 3.0 ) );
 	* // returns true
 	*/
-	isObject( value: any ): value is Number;
+	isObject( value: any ): boolean;
 }
 
 /**

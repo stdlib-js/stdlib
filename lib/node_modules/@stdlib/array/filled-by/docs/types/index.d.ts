@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,13 +20,13 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, RealOrComplexTypedArray, DataType } from '@stdlib/types/array';
+import { Collection, RealOrComplexTypedArray, BooleanArray, DataType } from '@stdlib/types/array';
 import { IterableIterator } from '@stdlib/types/iter';
 
 /**
 * Array or typed array.
 */
-type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
+type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray | BooleanArray;
 
 /**
 * Nullary callback function.
@@ -53,21 +53,6 @@ type Callback = Nullary | Unary;
 
 /**
 * Creates a filled array according to a provided callback function and having a specified data type.
-*
-* The function recognizes the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * @param dtype - data type
 * @returns filled array
@@ -101,21 +86,6 @@ declare function filledarrayBy( length: number, clbk: Callback, thisArg?: any ):
 /**
 * Creates a filled array according to a provided callback function and having a specified `length`.
 *
-* The function recognizes the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
-*
 * @param length - array length
 * @param dtype - data type
 * @param clbk - callback function
@@ -144,25 +114,10 @@ declare function filledarrayBy( length: number, dtype: DataType, clbk: Callback,
 * var arr = filledarrayBy( [ 5.0, -3.0, 2.0 ], constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( array: Collection, clbk: Callback, thisArg?: any ): ArrayOrTypedArray;
+declare function filledarrayBy( array: Collection, clbk: Callback, thisArg?: any ): ArrayOrTypedArray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Creates a filled array from another `array` according to a provided callback function.
-*
-* The function recognizes the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * @param array - typed array or array-like object
 * @param dtype - data type
@@ -176,7 +131,7 @@ declare function filledarrayBy( array: Collection, clbk: Callback, thisArg?: any
 * var arr = filledarrayBy( [ 5.0, -3.0, 2.0 ], 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( array: Collection, dtype: DataType, clbk: Callback, thisArg?: any ): ArrayOrTypedArray;
+declare function filledarrayBy( array: Collection, dtype: DataType, clbk: Callback, thisArg?: any ): ArrayOrTypedArray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Creates a filled array from an iterable according to a callback function.
@@ -196,25 +151,10 @@ declare function filledarrayBy( array: Collection, dtype: DataType, clbk: Callba
 * var arr = filledarrayBy( it, constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( iterable: IterableIterator, callback: Callback, thisArg?: any ): ArrayOrTypedArray;
+declare function filledarrayBy( iterable: IterableIterator, callback: Callback, thisArg?: any ): ArrayOrTypedArray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Creates a filled array from an iterable according to a callback function.
-*
-* The function recognizes the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * @param iterable - iterable
 * @param dtype - data type
@@ -232,7 +172,7 @@ declare function filledarrayBy( iterable: IterableIterator, callback: Callback, 
 * var arr = filledarrayBy( it, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( iterable: IterableIterator, dtype: DataType, callback: Callback, thisArg?: any ): ArrayOrTypedArray;
+declare function filledarrayBy( iterable: IterableIterator, dtype: DataType, callback: Callback, thisArg?: any ): ArrayOrTypedArray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -256,25 +196,11 @@ declare function filledarrayBy( iterable: IterableIterator, dtype: DataType, cal
 * var arr = filledarrayBy( buf, 8, 2, constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length: number, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray;
+declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length: number, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray | BooleanArray;
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
 *
-* The function recognizes the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * ## Notes
 *
@@ -296,7 +222,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length:
 * var arr = filledarrayBy( buf, 8, 2, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length: number, dtype: DataType, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray;
+declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length: number, dtype: DataType, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray | BooleanArray;
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -319,25 +245,10 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length:
 * var arr = filledarrayBy( buf, 8, constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray;
+declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray | BooleanArray;
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
-*
-* The function recognizes the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * ## Notes
 *
@@ -358,7 +269,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, clbk: C
 * var arr = filledarrayBy( buf, 8, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, dtype: DataType, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray;
+declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, dtype: DataType, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray | BooleanArray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -380,25 +291,10 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, dtype: 
 * var arr = filledarrayBy( buf, constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray;
+declare function filledarrayBy( buffer: ArrayBuffer, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray | BooleanArray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
-*
-* The function recognizes the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * ## Notes
 *
@@ -418,7 +314,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, clbk: Callback, thisArg?: a
 * var arr = filledarrayBy( buf, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, dtype: DataType, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray;
+declare function filledarrayBy( buffer: ArrayBuffer, dtype: DataType, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray | BooleanArray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 
 // EXPORTS //

@@ -17,10 +17,10 @@
 */
 
 #include "stdlib/math/base/napi/unary.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/reim.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float64/reim.h"
+#include "stdlib/complex/float32/reim.h"
 #include <node_api.h>
 #include <stdint.h>
 #include <assert.h>
@@ -204,7 +204,7 @@ napi_value stdlib_math_base_napi_z_z( napi_env env, napi_callback_info info, std
 	stdlib_complex128_t v = fcn( stdlib_complex128( re0, im0 ) );
 	double re;
 	double im;
-	stdlib_reim( v, &re, &im );
+	stdlib_complex128_reim( v, &re, &im );
 
 	napi_value obj;
 	status = napi_create_object( env, &obj );
@@ -395,7 +395,7 @@ napi_value stdlib_math_base_napi_c_c( napi_env env, napi_callback_info info, std
 	stdlib_complex64_t v = fcn( stdlib_complex64( (float)re0, (float)im0 ) );
 	float re;
 	float im;
-	stdlib_reimf( v, &re, &im );
+	stdlib_complex64_reim( v, &re, &im );
 
 	napi_value obj;
 	status = napi_create_object( env, &obj );

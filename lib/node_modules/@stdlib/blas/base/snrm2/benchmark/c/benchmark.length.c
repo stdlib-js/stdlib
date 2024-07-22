@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `snrm2`.
-*/
 #include "stdlib/blas/base/snrm2.h"
 #include <stdlib.h>
 #include <stdio.h>

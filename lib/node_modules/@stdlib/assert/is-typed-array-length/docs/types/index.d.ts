@@ -36,7 +36,7 @@
 * var bool = isTypedArrayLength( 3.14 );
 * // returns false
 */
-declare function isTypedArrayLength( value: any ): value is number;
+declare function isTypedArrayLength( value: any ): boolean;
 
 
 // EXPORTS //

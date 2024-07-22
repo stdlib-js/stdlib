@@ -356,6 +356,12 @@ logEach( '%f', x4 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/random/base/frechet`][@stdlib/random/base/frechet]</span><span class="delimiter">: </span><span class="description">Fréchet distributed pseudorandom numbers.</span>
+
 </section>
 
 <!-- /.related -->

@@ -32,7 +32,7 @@
 * var v = isJSON( '{a":5}' );
 * // returns false
 */
-declare function isJSON( value: any ): value is string;
+declare function isJSON( value: any ): boolean;
 
 
 // EXPORTS //

@@ -89,7 +89,7 @@ out = replaceBefore( 'Hello World!', 'xyz', 'foo' );
 out = replaceBefore( 'Hello World!', '', 'foo' );
 // returns 'Hello World!'
 
-out = replaceBefore( '', 'xyz', 'foo');
+out = replaceBefore( '', 'xyz', 'foo' );
 // returns ''
 ```
 

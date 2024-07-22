@@ -1,0 +1,45 @@
+
+{{alias}}( str, search, replacement, fromIndex )
+    Replaces the substring before the last occurrence of a specified search
+    string.
+
+    If unable to find a search string, the function returns the input string
+    unchanged.
+
+    The function scans an input string from the starting index to the beginning
+    of the string (i.e., backward).
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    search: string
+        Search string.
+
+    replacement: string
+        Replacement string.
+
+    fromIndex: integer
+        Starting index (inclusive). If less than zero, the starting index is
+        resolved relative to the last string character, with the last string
+        character corresponding to `fromIndex = -1`.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var str = 'beep boop';
+    > var out = {{alias}}( str, ' ', 'foo', str.length )
+    'foo boop'
+    > out = {{alias}}( str, 'o', 'foo', str.length )
+    'fooop'
+    > out = {{alias}}( 'Hello World!', 'o', 'foo', 5 )
+    'fooo World!'
+
+    See Also
+    --------
+

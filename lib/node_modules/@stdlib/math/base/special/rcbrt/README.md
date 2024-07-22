@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Reciprocal Cube Root
+# rcbrt
 
 > Compute the reciprocal of the principal [cube root][cube-root] of a double-precision floating-point number.
 
@@ -86,15 +86,13 @@ v = rcbrt( Infinity );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var rcbrt = require( '@stdlib/math/base/special/rcbrt' );
 
 var x;
 var i;
-
 for ( i = 0; i < 100; i++ ) {
-    x = round( randu() * 100.0 );
+    x = discreteUniform( 0.0, 100.0 );
     console.log( 'rcbrt(%d) = %d', x, rcbrt( x ) );
 }
 ```

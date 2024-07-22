@@ -187,7 +187,7 @@
 * @param tout  output type
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * // e.g., z_z
 * STDLIB_NDARRAY_UNARY_ND_LOOP_CLBK_RET_NOCAST( stdlib_complex128_t, stdlib_complex128_t )
@@ -240,8 +240,8 @@
 * @param cout  output casting function
 *
 * @example
-* #include "stdlib/complex/float32.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float32/ctor.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * // e.g., f_c_as_z_z
 * STDLIB_NDARRAY_UNARY_ND_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex128_from_float32, stdlib_complex128_to_complex64 )
@@ -267,7 +267,7 @@
 * @param cout  output casting function
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * // e.g., d_z
 * STDLIB_NDARRAY_UNARY_ND_LOOP_CLBK_RET_CAST_FCN( double, stdlib_complex128_t, stdlib_complex128_from_float64 )

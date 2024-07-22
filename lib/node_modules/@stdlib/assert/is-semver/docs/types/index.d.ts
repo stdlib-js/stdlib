@@ -40,7 +40,7 @@
 * var bool = isSemVer( null );
 * // returns false
 */
-declare function isSemVer( value: any ): value is string;
+declare function isSemVer( value: any ): boolean;
 
 
 // EXPORTS //

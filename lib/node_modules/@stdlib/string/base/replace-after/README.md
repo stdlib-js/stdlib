@@ -1,0 +1,140 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2024 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# replaceAfter
+
+> Replace the substring after the first occurrence of a specified search string.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var replaceAfter = require( '@stdlib/string/base/replace-after' );
+```
+
+#### replaceAfter( str, search, replacement, fromIndex )
+
+Replaces the substring after the first occurrence of a specified search string.
+
+```javascript
+var out = replaceAfter( 'beep boop', ' ', 'loop', 0 );
+// returns 'beep loop'
+
+out = replaceAfter( 'beep boop', 'o', 'bar', 0 );
+// returns 'beep bobar'
+```
+
+To begin searching from a specific index, provide a corresponding `fromIndex` argument.
+
+```javascript
+var out = replaceAfter( 'beep boop beep baz', 'beep', 'foo', 5 );
+// return 'beep boop beepfoo'
+```
+
+If `fromIndex` is less than zero, the starting index is resolved relative to the last string character, with the last string character corresponding to `fromIndex = -1`.
+
+```javascript
+var out = replaceAfter( 'beep boop beep', ' ', 'loop', -6 );
+// returns 'beep boop loop'
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+## Notes
+
+-   If a search string is not present in a provided string, the function returns the provided string unchanged.
+-   If a search string is an empty string, the function returns the provided string unchanged.
+-   If `fromIndex` resolves to an index which is greater than or equal to `str.length`, the function returns the provided string unchanged.
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var replaceAfter = require( '@stdlib/string/base/replace-after' );
+
+var out = replaceAfter( 'beep boop', 'p', 'see', 0 );
+// returns 'beepsee'
+
+out = replaceAfter( 'Hello World!', 'xyz', 'foo', 0 );
+// returns 'Hello World!'
+
+out = replaceAfter( 'Hello World!', '', 'foo', 0 );
+// returns 'Hello World!'
+
+out = replaceAfter( '', 'xyz', 'foo', 0 );
+// returns ''
+
+out = replaceAfter( 'beep boop beep baz', 'beep', 'foo', 5 );
+// return 'beep boop beepfoo'
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

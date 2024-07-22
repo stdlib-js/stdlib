@@ -40,7 +40,7 @@
 * var bool = isKebabcase( 1 );
 * // returns false
 */
-declare function isKebabcase( value: any ): value is string;
+declare function isKebabcase( value: any ): boolean;
 
 
 // EXPORTS //

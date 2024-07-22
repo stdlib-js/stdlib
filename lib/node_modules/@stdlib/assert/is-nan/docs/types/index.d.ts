@@ -44,7 +44,7 @@ interface IsNaN {
 	* var bool = isnan( null );
 	* // returns false
 	*/
-	( value: any ): value is number | Number;
+	( value: any ): boolean;
 
 	/**
 	* Tests if a value is a `NaN` number primitive.
@@ -64,7 +64,7 @@ interface IsNaN {
 	* var bool = isnan.isPrimitive( new Number( NaN ) );
 	* // returns false
 	*/
-	isPrimitive( value: any ): value is number;
+	isPrimitive( value: any ): boolean;
 
 	/**
 	* Tests if a value is a number object having a value of `NaN`.
@@ -80,7 +80,7 @@ interface IsNaN {
 	* var bool = isnan.isObject( new Number( NaN ) );
 	* // returns true
 	*/
-	isObject( value: any ): value is Number;
+	isObject( value: any ): boolean;
 }
 
 /**

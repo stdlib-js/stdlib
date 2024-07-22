@@ -1,0 +1,28 @@
+
+{{alias}}( x, value )
+    Counts the number of elements in an array that are equal to a specified
+    value.
+
+    The function treats `-0` and `+0` as distinct and `NaNs` as the same.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    value: any
+        Input value.
+
+    Returns
+    -------
+    out: integer
+        Number of elements that are equal to the specified value.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 0, 1, 1 ], 1 )
+    2
+
+    See Also
+    --------
+

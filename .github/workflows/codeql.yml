@@ -45,6 +45,9 @@ jobs:
     # Define a display name:
     name: 'Analyze'
 
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine.
     #
     # ## Notes
@@ -90,7 +93,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -118,7 +121,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5

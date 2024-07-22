@@ -20,8 +20,8 @@
 * Benchmark `croundn`.
 */
 #include "stdlib/math/base/special/croundn.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/complex/float64/reim.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -110,7 +110,7 @@ double benchmark() {
 		v = ( 1000.0*rand_double() ) - 500.0;
 		x = stdlib_complex128( v, v );
 		y = stdlib_base_croundn( x, -2 );
-        stdlib_reim( y, &re, &im );
+        stdlib_complex128_reim( y, &re, &im );
 		if ( re != re ) {
 			printf( "unexpected result\n" );
 			break;

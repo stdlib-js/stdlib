@@ -114,6 +114,96 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/ellipe.h"
+```
+
+#### stdlib_base_ellipe( m )
+
+Computes the [complete elliptic integral of the second kind][elliptic-integral].
+
+```c
+double out = stdlib_base_ellipe( 0.5 );
+// returns ~1.351
+
+out = stdlib_base_ellipe( -1.0 );
+// returns ~1.910
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_ellipe( const double m );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/ellipe.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    double m;
+    double v;
+    int i;
+    
+    for ( i = 0; i < 100; i++ ) {
+        m = -1.0 + ( ( (double)rand() / (double)RAND_MAX ) * 2.0 );
+        v = stdlib_base_ellipe( m );
+        printf( "ellipe(%lf) = %lf\n", m, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 * * *
 
 <section class="references">

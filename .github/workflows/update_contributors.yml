@@ -42,6 +42,9 @@ jobs:
     # Define a display name:
     name: 'Update contributors'
 
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -51,7 +54,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -93,10 +96,10 @@ jobs:
       - name: 'Create pull request'
         if: steps.update-contributors.outputs.changed == 'true'
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@b1ddad2c994a25fbc81a28b3ec0e368bb2021c50 # v6.0.0
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6.1.0
         id: cpr
         with:
-          title: 'Update list of contributors'
+          title: 'docs: update list of contributors'
           body: |
             This PR
 

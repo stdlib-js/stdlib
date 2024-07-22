@@ -1,0 +1,110 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2024 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# stickycase
+
+> Convert a string to sticky case.
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var stickycase = require( '@stdlib/string/base/stickycase' );
+```
+
+#### stickycase( str\[, p] )
+
+Converts a string to sticky case, where each character in the input string is randomly converted to either uppercase or lowercase.
+
+```javascript
+var str = 'hello world';
+var out = stickycase( 'hello world' );
+// returns <string>
+```
+
+By default, the probability for any character to be capitalized is `0.5`. To set a different probability, provide a `p` argument.
+
+```javascript
+var str = 'welcome!';
+var out = stickycase( 'welcome!', 0.2 );
+// returns <string>
+
+str = 'good morning';
+out = stickycase( 'good morning', 0.8 );
+// returns <string>
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+```javascript
+var stickycase = require( '@stdlib/string/base/stickycase' );
+
+var str = 'Hello World!';
+var out = stickycase( str );
+// returns <string>
+// returns <string>
+
+str = 'I am a tiny little teapot';
+out = stickycase( str );
+// returns <string>
+
+str = 'with big problems';
+out = stickycase( str, 0.1 );
+// returns <string>
+
+str = 'To be, or not to be: that is the question.';
+out = stickycase( str, 0.9 );
+// returns <string>
+
+str = 'isMobile';
+out = stickycase( str );
+// returns <string>
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

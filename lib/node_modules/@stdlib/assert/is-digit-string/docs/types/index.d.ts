@@ -40,7 +40,7 @@
 * var out = isDigitString( 123 );
 * // returns false
 */
-declare function isDigitString( value: any ): value is string;
+declare function isDigitString( value: any ): boolean;
 
 
 // EXPORTS //

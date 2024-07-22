@@ -48,7 +48,7 @@
 * var bool = isDurationString( '1d2h' );
 * // returns true
 */
-declare function isDurationString( value: any ): value is string;
+declare function isDurationString( value: any ): boolean;
 
 
 // EXPORTS //

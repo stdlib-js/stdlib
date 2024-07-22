@@ -84,6 +84,97 @@ bool = isNonNegativeFinite( NaN );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/assert/is_nonnegative_finite.h"
+```
+
+#### stdlib_base_is_nonnegative_finite( x )
+
+Tests if a numeric value is a nonnegative finite number.
+
+```c
+#include <stdbool.h>
+
+bool out = stdlib_base_is_nonnegative_finite( 3.14 );
+// returns true
+
+out = stdlib_base_is_nonnegative_finite( -2.0 );
+// returns false
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+bool stdlib_base_is_nonnegative_finite( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/assert/is_nonnegative_finite.h"
+#include <stdio.h>
+#include <stdbool.h>
+
+int main( void ) {
+    const double x[] = { 5.0, -5.0, 3.14, -3.14, 0.0, 0.0/0.0 };
+
+    bool b;
+    int i;
+    for ( i = 0; i < 6; i++ ) {
+        b = stdlib_base_is_nonnegative_finite( x[ i ] );
+        printf( "Value: %lf. Is nonnegative finite? %s.\n", x[ i ], ( b ) ? "True" : "False" );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

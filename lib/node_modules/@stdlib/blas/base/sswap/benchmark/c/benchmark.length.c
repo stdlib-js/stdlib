@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `sswap`.
-*/
 #include "stdlib/blas/base/sswap.h"
 #include <stdlib.h>
 #include <stdio.h>

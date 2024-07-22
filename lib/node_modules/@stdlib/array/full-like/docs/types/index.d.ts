@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex128Array, Complex64Array, AnyArray, DataType } from '@stdlib/types/array';
+import { Complex128Array, Complex64Array, BooleanArray, AnyArray, DataType } from '@stdlib/types/array';
 import { ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -60,6 +60,25 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'float64' ): Float
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
 declare function fullLike( x: AnyArray, value: number, dtype: 'float32' ): Float32Array;
+
+/**
+* Creates a filled array having the same length as a provided input array.
+*
+* @param x - input array from which to derive the output array length
+* @param value - fill value
+* @param dtype - data type
+* @returns filled array
+*
+* @example
+* var zeros = require( '@stdlib/array/zeros' );
+*
+* var x = zeros( 2, 'uint8' );
+* // returns <Uint8Array>[ 0, 0 ]
+*
+* var y = fullLike( x, true, 'bool' );
+* // returns <BooleanArray>[ true, true ]
+*/
+declare function fullLike( x: AnyArray, value: boolean, dtype: 'bool' ): BooleanArray;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -262,21 +281,6 @@ declare function fullLike( x: AnyArray, value: any, dtype: 'generic' ): Array<an
 /**
 * Creates a filled array having the same length and data type as a provided input array.
 *
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
-*
 * @param x - input array from which to derive the output array length
 * @param value - fill value
 * @param dtype - data type
@@ -295,21 +299,6 @@ declare function fullLike( x: Float64Array, value: number, dtype?: DataType ): F
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
-*
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
 * @param value - fill value
@@ -330,20 +319,24 @@ declare function fullLike( x: Float32Array, value: number, dtype?: DataType ): F
 /**
 * Creates a filled array having the same length and data type as a provided input array.
 *
-* The function supports the following data types:
+* @param x - input array from which to derive the output array length
+* @param value - fill value
+* @param dtype - data type
+* @returns filled array
 *
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
+* @example
+* var zeros = require( '@stdlib/array/zeros' );
+*
+* var x = zeros( 2, 'bool' );
+* // returns <BooleanArray>[ false, false ]
+*
+* var y = fullLike( x, true );
+* // returns <BooleanArray>[ true, true ]
+*/
+declare function fullLike( x: BooleanArray, value: boolean, dtype?: DataType ): BooleanArray;
+
+/**
+* Creates a filled array having the same length and data type as a provided input array.
 *
 * ## Notes
 *
@@ -368,21 +361,6 @@ declare function fullLike( x: Complex128Array, value: number | ComplexLike, dtyp
 /**
 * Creates a filled array having the same length and data type as a provided input array.
 *
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
-*
 * ## Notes
 *
 * -   If provided a number, the function returns a complex number array where each element has a real component whose value equals the provided fill value and where each element has an imaginary component equal to `0`.
@@ -406,21 +384,6 @@ declare function fullLike( x: Complex64Array, value: number | ComplexLike, dtype
 /**
 * Creates a filled array having the same length and data type as a provided input array.
 *
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
-*
 * @param x - input array from which to derive the output array length
 * @param value - fill value
 * @param dtype - data type
@@ -439,21 +402,6 @@ declare function fullLike( x: Int32Array, value: number, dtype?: DataType ): Int
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
-*
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
 * @param value - fill value
@@ -474,21 +422,6 @@ declare function fullLike( x: Int16Array, value: number, dtype?: DataType ): Int
 /**
 * Creates a filled array having the same length and data type as a provided input array.
 *
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
-*
 * @param x - input array from which to derive the output array length
 * @param value - fill value
 * @param dtype - data type
@@ -507,21 +440,6 @@ declare function fullLike( x: Int8Array, value: number, dtype?: DataType ): Int8
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
-*
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
 * @param value - fill value
@@ -542,21 +460,6 @@ declare function fullLike( x: Uint32Array, value: number, dtype?: DataType ): Ui
 /**
 * Creates a filled array having the same length and data type as a provided input array.
 *
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
-*
 * @param x - input array from which to derive the output array length
 * @param value - fill value
 * @param dtype - data type
@@ -575,21 +478,6 @@ declare function fullLike( x: Uint16Array, value: number, dtype?: DataType ): Ui
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
-*
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
 * @param value - fill value
@@ -610,21 +498,6 @@ declare function fullLike( x: Uint8Array, value: number, dtype?: DataType ): Uin
 /**
 * Creates a filled array having the same length and data type as a provided input array.
 *
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
-*
 * @param x - input array from which to derive the output array length
 * @param value - fill value
 * @param dtype - data type
@@ -644,21 +517,6 @@ declare function fullLike( x: Uint8ClampedArray, value: number, dtype?: DataType
 /**
 * Creates a filled array having the same length and data type as a provided input array.
 *
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
-*
 * @param x - input array from which to derive the output array length
 * @param value - fill value
 * @param dtype - data type
@@ -677,21 +535,6 @@ declare function fullLike( x: Array<any>, value: any, dtype?: DataType ): Array<
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
-*
-* The function supports the following data types:
-*
-* -   `float64`: double-precision floating-point numbers (IEEE 754)
-* -   `float32`: single-precision floating-point numbers (IEEE 754)
-* -   `complex128`: double-precision complex floating-point numbers
-* -   `complex64`: single-precision complex floating-point numbers
-* -   `int32`: 32-bit two's complement signed integers
-* -   `uint32`: 32-bit unsigned integers
-* -   `int16`: 16-bit two's complement signed integers
-* -   `uint16`: 16-bit unsigned integers
-* -   `int8`: 8-bit two's complement signed integers
-* -   `uint8`: 8-bit unsigned integers
-* -   `uint8c`: 8-bit unsigned integers clamped to `0-255`
-* -   `generic`: generic JavaScript values
 *
 * @param x - input array from which to derive the output array length
 * @param value - fill value
