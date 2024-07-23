@@ -1,0 +1,7 @@
+---
+type: amend-message
+---
+docs: remove long comment
+
+PR-URL: #2364
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
