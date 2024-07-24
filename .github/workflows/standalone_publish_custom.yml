@@ -98,6 +98,12 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
+      # Apply Git notes:
+      - name: 'Apply Git notes'
+        run: |
+          make apply-git-notes
+        timeout-minutes: 5
+
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
