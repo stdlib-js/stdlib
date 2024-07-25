@@ -30,8 +30,8 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var real = require( '@stdlib/complex/real' );
-* var imag = require( '@stdlib/complex/imag' );
+* var real = require( '@stdlib/complex/float32/real' );
+* var imag = require( '@stdlib/complex/float32/imag' );
 *
 * var v = cceilf( new Complex64( -1.5, 2.5 ) );
 * // returns <Complex64>

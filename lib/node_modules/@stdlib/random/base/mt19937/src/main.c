@@ -131,7 +131,6 @@ static const double MAX_NORMALIZED = FLOAT64_MAX_SAFE_INTEGER * FLOAT64_NORMALIZ
 /**
 * MT19937 PRNG.
 *
-* @private
 */
 static const struct BasePRNG mt19937_prng = {
 	"mt19937",                                            // name
@@ -156,7 +155,6 @@ static const struct BasePRNG mt19937_prng = {
 *
 * -   Matsumoto, Makoto, and Takuji Nishimura. 1998. "Mersenne Twister: A 623-dimensionally Equidistributed Uniform Pseudo-random Number Generator." _ACM Transactions on Modeling and Computer Simulation_ 8 (1). New York, NY, USA: ACM: 3–30. doi:[10.1145/272991.272995][@matsumoto:1998a].
 *
-* @private
 * @param obj  PRNG object
 * @param out  output address
 * @return     status code
@@ -260,7 +258,6 @@ static inline int8_t next( struct BasePRNGObject *obj, uint64_t *out ) {
 *
 * -   Harase, Shin. 2017. "Conversion of Mersenne Twister to double-precision floating-point numbers." _ArXiv_ abs/1708.06018 (September). <https://arxiv.org/abs/1708.06018>.
 *
-* @private
 * @param obj  PRNG object
 * @param out  output address
 * @return     status code
@@ -286,7 +283,6 @@ static inline int8_t normalized( struct BasePRNGObject *obj, double *out ) {
 /**
 * Frees a PRNG's allocated memory.
 *
-* @private
 * @param obj  PRNG object
 */
 static inline void mt19937_free( struct BasePRNGObject *obj ) {
@@ -302,7 +298,6 @@ static inline void mt19937_free( struct BasePRNGObject *obj ) {
 /**
 * Returns an initial PRNG state.
 *
-* @private
 * @param state  pointer to state array
 * @param N      state array length
 * @param s      seed
@@ -322,7 +317,6 @@ static inline void create_state( uint32_t *state, const int32_t N, const uint32_
 /**
 * Initializes a PRNG state array according to a seed array.
 *
-* @private
 * @param state  pointer to state array
 * @param N      state array length
 * @param seed   pointer to seed array
@@ -363,7 +357,6 @@ static inline void init_state( uint32_t *state, const int32_t N, const uint32_t 
 /**
 * Updates a PRNG's internal state by generating the next `N` words.
 *
-* @private
 * @param state  pointer to a PRNG's internal state array
 * @param N      state array length
 */

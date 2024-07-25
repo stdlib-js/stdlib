@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -29,6 +29,7 @@ import scalar2ndarray = require( './index' );
 	scalar2ndarray( 1.0, { 'dtype': 'float32' } ); // $ExpectType float32ndarray
 	scalar2ndarray( 1.0, { 'dtype': 'complex128' } ); // $ExpectType complex128ndarray
 	scalar2ndarray( 1.0, { 'dtype': 'complex64' } ); // $ExpectType complex64ndarray
+	scalar2ndarray( true, { 'dtype': 'bool' } ); // $ExpectType boolndarray
 	scalar2ndarray( 1.0, { 'dtype': 'int32' } ); // $ExpectType int32ndarray
 	scalar2ndarray( 1.0, { 'dtype': 'int16' } ); // $ExpectType int16ndarray
 	scalar2ndarray( 1.0, { 'dtype': 'int8' } ); // $ExpectType int8ndarray

@@ -43,6 +43,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -63,7 +64,9 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
@@ -78,7 +81,9 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
 
     {
@@ -98,6 +103,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -121,7 +127,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
@@ -139,7 +147,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
 
     {
@@ -157,6 +167,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -177,7 +188,9 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
@@ -192,7 +205,9 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
 
     {
@@ -211,6 +226,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -233,7 +249,9 @@
         "-lblas"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
@@ -250,7 +268,9 @@
         "-lblas"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
 
     {
@@ -270,6 +290,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -293,7 +314,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
@@ -311,7 +334,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
 
     {
@@ -328,6 +353,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -348,7 +374,9 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
@@ -363,7 +391,9 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     },
 
     {
@@ -379,7 +409,9 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
     }
   ]
 }

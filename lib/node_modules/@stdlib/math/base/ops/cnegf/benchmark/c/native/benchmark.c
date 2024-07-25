@@ -21,7 +21,7 @@
 */
 #include "stdlib/math/base/ops/cnegf.h"
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float32/reim.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -111,7 +111,7 @@ double benchmark() {
 		z1 = stdlib_complex64( re, im );
 
 		z2 = stdlib_base_cnegf( z1 );
-		stdlib_reimf( z2, &re, &im );
+		stdlib_complex64_reim( z2, &re, &im );
 		if ( re != re ) {
 			printf( "should not return NaN\n" );
 			break;

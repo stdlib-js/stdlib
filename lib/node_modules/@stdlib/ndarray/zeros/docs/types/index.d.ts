@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType, Mode } from '@stdlib/types/ndarray';
+import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, genericndarray, complex128ndarray, complex64ndarray, NumericAndGenericDataType, Mode } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing function options.
@@ -208,6 +208,34 @@ interface Uint8COptions extends Options {
 /**
 * Interface describing function options.
 */
+interface Uint8COptions extends Options {
+	/**
+	* Underlying data type.
+	*
+	* ## Notes
+	*
+	* -   This option overrides the input array's inferred data type.
+	*/
+	dtype: 'uint8c';
+}
+
+/**
+* Interface describing function options.
+*/
+interface GenericOptions extends Options {
+	/**
+	* Underlying data type.
+	*
+	* ## Notes
+	*
+	* -   This option overrides the input array's inferred data type.
+	*/
+	dtype: 'generic';
+}
+
+/**
+* Interface describing function options.
+*/
 interface OptionsWithDType extends Options {
 	/**
 	* Underlying data type.
@@ -216,7 +244,7 @@ interface OptionsWithDType extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: DataType;
+	dtype: NumericAndGenericDataType;
 }
 
 /**
@@ -504,6 +532,32 @@ declare function zeros( shape: Shape | number, options: Uint8Options ): uint8nda
 * // returns 'uint8c'
 */
 declare function zeros( shape: Shape | number, options: Uint8COptions ): uint8cndarray;
+
+/**
+* Creates a zero-filled array having a specified shape and data type.
+*
+* @param shape - array shape
+* @param options - options
+* @param options.dtype - underlying data type
+* @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
+* @returns zero-filled array
+*
+* @example
+* var arr = zeros( [ 2, 2 ], {
+*     'dtype': generic'
+* });
+* // returns <ndarray>
+*
+* var sh = arr.shape;
+* // returns [ 2, 2 ]
+*
+* var dt = arr.dtype;
+* // returns 'generic'
+*/
+declare function zeros( shape: Shape | number, options: GenericOptions ): genericndarray<number>;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
