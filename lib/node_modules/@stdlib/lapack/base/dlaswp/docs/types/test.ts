@@ -170,52 +170,52 @@ import dlaswp = require( './index' );
 	const IPIV = new Int32Array( 3 );
 	const A = new Float64Array( 6 );
 
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectType Float64Array
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectType Float64Array
 }
 
-// The compiler throws an error if the function is provided a first argument which is not a string...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	const IPIV = new Int32Array( 3 );
 	const A = new Float64Array( 6 );
 
-	dlaswp.ndarray( 5, 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( true, 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( false, 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( null, 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( void 0, 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( [], 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( {}, 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( ( x: number ): number => x, 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( '5', A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( true, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( false, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( null, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( void 0, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( [], A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( {}, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( ( x: number ): number => x, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a Float64Array...
+{
+	const IPIV = new Int32Array( 3 );
+
+	dlaswp.ndarray( 2, '5', 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, 5, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, true, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, false, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, null, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, void 0, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, [], 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, {}, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, ( x: number ): number => x, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a third argument which is not a number...
 {
 	const IPIV = new Int32Array( 3 );
 	const A = new Float64Array( 6 );
 
-	dlaswp.ndarray( 'row-major', '5', A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', true, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', false, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', null, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', void 0, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', [], A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', {}, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', ( x: number ): number => x, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided a third argument which is not a Float64Array...
-{
-	const IPIV = new Int32Array( 3 );
-
-	dlaswp.ndarray( 'row-major', 2, '5', 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, 5, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, true, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, false, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, null, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, void 0, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, [], 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, {}, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, ( x: number ): number => x, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, '5', 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, true, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, false, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, null, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, void 0, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, [], 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, {}, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, ( x: number ): number => x, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a number...
@@ -223,14 +223,14 @@ import dlaswp = require( './index' );
 	const IPIV = new Int32Array( 3 );
 	const A = new Float64Array( 6 );
 
-	dlaswp.ndarray( 'row-major', 2, A, '5', 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, true, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, false, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, null, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, void 0, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, [], 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, {}, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, ( x: number ): number => x, 1, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, '5', 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, true, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, false, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, null, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, void 0, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, [], 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, {}, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, ( x: number ): number => x, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fifth argument which is not a number...
@@ -238,14 +238,14 @@ import dlaswp = require( './index' );
 	const IPIV = new Int32Array( 3 );
 	const A = new Float64Array( 6 );
 
-	dlaswp.ndarray( 'row-major', 2, A, 2, '5', 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, true, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, false, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, null, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, void 0, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, [], 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, {}, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, ( x: number ): number => x, 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, '5', 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, true, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, false, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, null, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, void 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, [], 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, {}, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, ( x: number ): number => x, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a sixth argument which is not a number...
@@ -253,14 +253,14 @@ import dlaswp = require( './index' );
 	const IPIV = new Int32Array( 3 );
 	const A = new Float64Array( 6 );
 
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, '5', 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, true, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, false, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, null, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, void 0, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, [], 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, {}, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, ( x: number ): number => x, 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, '5', 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, true, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, false, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, null, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, void 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, [], 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, {}, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, ( x: number ): number => x, 2, 1, IPIV, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a seventh argument which is not a number...
@@ -268,14 +268,14 @@ import dlaswp = require( './index' );
 	const IPIV = new Int32Array( 3 );
 	const A = new Float64Array( 6 );
 
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, '5', 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, true, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, false, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, null, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, void 0, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, [], 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, {}, 2, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, ( x: number ): number => x, 2, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, '5', 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, true, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, false, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, null, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, void 0, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, [], 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, {}, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, ( x: number ): number => x, 1, IPIV, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an eighth argument which is not a number...
@@ -283,44 +283,44 @@ import dlaswp = require( './index' );
 	const IPIV = new Int32Array( 3 );
 	const A = new Float64Array( 6 );
 
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, '5', 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, true, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, false, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, null, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, void 0, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, [], 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, {}, 1, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, ( x: number ): number => x, 1, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, '5', IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, true, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, false, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, null, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, void 0, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, [], IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, {}, IPIV, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, ( x: number ): number => x, IPIV, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a ninth argument which is not a number...
+// The compiler throws an error if the function is provided a ninth argument which is not an Int32Array...
+{
+	const A = new Float64Array( 6 );
+
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, '5', 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, 5, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, true, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, false, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, null, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, void 0, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, [], 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, {}, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, ( x: number ): number => x, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a tenth argument which is not a number...
 {
 	const IPIV = new Int32Array( 3 );
 	const A = new Float64Array( 6 );
 
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, '5', IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, true, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, false, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, null, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, void 0, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, [], IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, {}, IPIV, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, ( x: number ): number => x, IPIV, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided a tenth argument which is not an Int32Array...
-{
-	const A = new Float64Array( 6 );
-
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, '5', 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, 5, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, true, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, false, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, null, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, void 0, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, [], 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, {}, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, ( x: number ): number => x, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, '5', 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, true, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, false, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, null, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, void 0, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, [], 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, {}, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an eleventh argument which is not a number...
@@ -328,29 +328,14 @@ import dlaswp = require( './index' );
 	const IPIV = new Int32Array( 3 );
 	const A = new Float64Array( 6 );
 
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, '5', 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, true, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, false, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, null, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, void 0, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, [], 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, {}, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, ( x: number ): number => x, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided a twelfth argument which is not a number...
-{
-	const IPIV = new Int32Array( 3 );
-	const A = new Float64Array( 6 );
-
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, '5' ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, true ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, false ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, null ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, void 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, [] ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, {} ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, ( x: number ): number => x ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, '5' ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, true ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, false ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, null ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, void 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, [] ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, {} ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
@@ -359,16 +344,15 @@ import dlaswp = require( './index' );
 	const A = new Float64Array( 6 );
 
 	dlaswp.ndarray(); // $ExpectError
-	dlaswp.ndarray( 'row-major' ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1 ); // $ExpectError
-	dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0, 10 ); // $ExpectError
+	dlaswp.ndarray( 2 ); // $ExpectError
+	dlaswp.ndarray( 2, A ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1 ); // $ExpectError
+	dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0, 10 ); // $ExpectError
 }
