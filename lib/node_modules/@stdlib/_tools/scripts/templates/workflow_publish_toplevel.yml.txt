@@ -72,8 +72,8 @@ jobs:
           node-version: 20
         timeout-minutes: 5
 
-      # Configure git:
-      - name: 'Configure git'
+      # Configure Git:
+      - name: 'Configure Git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
