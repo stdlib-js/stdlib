@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,35 +16,25 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+#ifndef STDLIB_MATH_BASE_SPECIAL_TRUNCSD_H
+#define STDLIB_MATH_BASE_SPECIAL_TRUNCSD_H
+
+#include <stdint.h>
+
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
 * Rounds a numeric value to the nearest number toward zero with \\(n\\) significant figures.
-*
-* @param x - input value
-* @param n - number of significant figures
-* @param b - integer base
-* @returns rounded value
-*
-* @example
-* var v = truncsd( 3.141592653589793, 5, 10 );
-* // returns 3.1415
-*
-* @example
-* var v = truncsd( 3.141592653589793, 1, 10 );
-* // returns 3.0
-*
-* @example
-* var v = truncsd( 12368.0, 2, 10 );
-* // returns 12000.0
-*
-* @example
-* var v = truncsd( 0.0313, 2, 2 );
-* // returns 0.03125
 */
-declare function truncsd( x: number, n: number, b: number ): number;
+double stdlib_base_truncsd( const double x, const int32_t n, const int32_t b );
 
+#ifdef __cplusplus
+}
+#endif
 
-// EXPORTS //
-
-export = truncsd;
+#endif // !STDLIB_MATH_BASE_SPECIAL_TRUNCSD_H
