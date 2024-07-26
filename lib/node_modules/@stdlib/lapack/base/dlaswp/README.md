@@ -102,7 +102,7 @@ dlaswp( 'row-major', 2, A1, 2, 0, 2, IPIV1, 1 );
 // A0 => <Float64Array>[ 0.0, 3.0, 4.0, 1.0, 2.0, 5.0, 6.0 ]
 ```
 
-#### dlaswp.ndarray( order, N, A, sa1, sa2, oa, k1, k2, inck, IPIV, si, oi )
+#### dlaswp.ndarray( N, A, sa1, sa2, oa, k1, k2, inck, IPIV, si, oi )
 
 Performs a series of row interchanges on the matrix `A` using pivot indices stored in `IPIV` and alternative indexing semantics.
 
@@ -113,13 +113,12 @@ var Float64Array = require( '@stdlib/array/float64' );
 var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 var IPIV = new Int32Array( [ 2, 0, 1 ] );
 
-dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 );
+dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 );
 // A => <Float64Array>[ 3.0, 4.0, 1.0, 2.0, 5.0, 6.0 ]
 ```
 
 The function has the following additional parameters:
 
--   **order**: storage layout.
 -   **N**: number of columns in `A`.
 -   **A**: input matrix stored in linear memory as a [`Float64Array`][mdn-float64array].
 -   **sa1**: stride of the first dimension of `A`.
@@ -143,7 +142,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 var A = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var IPIV = new Int32Array( [ 0, 0, 2, 0, 1 ] );
 
-dlaswp.ndarray( 'row-major', 2, A, 2, 1, 4, 0, 2, 1, IPIV, 1, 2 );
+dlaswp.ndarray( 2, A, 2, 1, 4, 0, 2, 1, IPIV, 1, 2 );
 // A => <Float64Array>[ 0.0, 0.0, 0.0, 0.0, 3.0, 4.0, 1.0, 2.0, 5.0, 6.0 ]
 ```
 
