@@ -2536,7 +2536,7 @@ base.truncateMiddle,"var str = 'beep boop';\nvar out = base.truncateMiddle( str,
 base.truncb,"var y = base.truncb( 3.14159, -4, 10 )\ny = base.truncb( 3.14159, 0, 2 )\ny = base.truncb( 5.0, 1, 2 )\n"
 base.truncf,"var y = base.truncf( 3.14 )\ny = base.truncf( -4.2 )\ny = base.truncf( -4.6 )\ny = base.truncf( 9.5 )\ny = base.truncf( -0.0 )\n"
 base.truncn,"var y = base.truncn( 3.14159, -4 )\ny = base.truncn( 3.14159, 0 )\ny = base.truncn( 12368.0, 3 )\n"
-base.truncsd,"var y = base.truncsd( 3.14159, 5 )\ny = base.truncsd( 3.14159, 1 )\ny = base.truncsd( 12368.0, 2 )\ny = base.truncsd( 0.0313, 2, 2 )\n"
+base.truncsd,"var y = base.truncsd( 3.14159, 5, 10 )\ny = base.truncsd( 3.14159, 1, 10 )\ny = base.truncsd( 12368.0, 2, 10 )\ny = base.truncsd( 0.0313, 2, 2 )\n"
 base.uint32ToInt32,"var y = base.uint32ToInt32( base.float64ToUint32( 4294967295 ) )\ny = base.uint32ToInt32( base.float64ToUint32( 3 ) )\n"
 base.umul,"var v = base.umul( 10>>>0, 4>>>0 )\n"
 base.umuldw,"var v = base.umuldw( 1, 10 )\n"
