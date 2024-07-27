@@ -198,7 +198,7 @@ var fcns = special;
 -   <span class="signature">[`truncb( x, n, b )`][@stdlib/math/base/special/truncb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n toward zero.</span>
 -   <span class="signature">[`truncf( x )`][@stdlib/math/base/special/truncf]</span><span class="delimiter">: </span><span class="description">round a single-precision floating-point number toward zero.</span>
 -   <span class="signature">[`truncn( x, n )`][@stdlib/math/base/special/truncn]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of 10^n toward zero.</span>
--   <span class="signature">[`truncsd( x, n[, b] )`][@stdlib/math/base/special/truncsd]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest number toward zero with `n` significant figures.</span>
+-   <span class="signature">[`truncsd( x, n, b )`][@stdlib/math/base/special/truncsd]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest number toward zero with `n` significant figures.</span>
 
 </div>
 
