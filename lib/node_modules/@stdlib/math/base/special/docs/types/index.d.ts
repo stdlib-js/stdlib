@@ -7366,19 +7366,19 @@ interface Namespace {
 	*
 	* @param x - input value
 	* @param n - number of significant figures
-	* @param b - integer base (default: 10)
+	* @param b - integer base
 	* @returns rounded value
 	*
 	* @example
-	* var v = ns.truncsd( 3.141592653589793, 5 );
+	* var v = ns.truncsd( 3.141592653589793, 5, 10 );
 	* // returns 3.1415
 	*
 	* @example
-	* var v = ns.truncsd( 3.141592653589793, 1 );
+	* var v = ns.truncsd( 3.141592653589793, 1, 10 );
 	* // returns 3.0
 	*
 	* @example
-	* var v = ns.truncsd( 12368.0, 2 );
+	* var v = ns.truncsd( 12368.0, 2, 10 );
 	* // returns 12000.0
 	*
 	* @example
