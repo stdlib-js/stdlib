@@ -56,7 +56,7 @@ interface Namespace {
 	* var IPIV = new Int32Array( [ 2, 0, 1 ] );
 	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 	*
-	* ns.dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 );
+	* ns.dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 );
 	* // A => <Float64Array>[ 3.0, 4.0, 1.0, 2.0, 5.0, 6.0 ]
 	*/
 	dlaswp: typeof dlaswp;
