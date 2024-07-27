@@ -25,6 +25,7 @@ import dtypes = require( './index' );
 {
 	dtypes(); // $ExpectType DataType[]
 	dtypes( 'floating_point' ); // $ExpectType DataType[]
+	dtypes( 'floating_point_and_generic' ); // $ExpectType DataType[]
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...

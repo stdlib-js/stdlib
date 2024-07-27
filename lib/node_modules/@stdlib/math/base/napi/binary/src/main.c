@@ -19,8 +19,8 @@
 #include "stdlib/math/base/napi/binary.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/reim.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float64/reim.h"
+#include "stdlib/complex/float32/reim.h"
 #include <node_api.h>
 #include <stdint.h>
 #include <assert.h>
@@ -283,7 +283,7 @@ napi_value stdlib_math_base_napi_zz_z( napi_env env, napi_callback_info info, st
 	stdlib_complex128_t v = fcn( stdlib_complex128( re0, im0 ), stdlib_complex128( re1, im1 ) );
 	double re;
 	double im;
-	stdlib_reim( v, &re, &im );
+	stdlib_complex128_reim( v, &re, &im );
 
 	napi_value obj;
 	status = napi_create_object( env, &obj );
@@ -439,7 +439,7 @@ napi_value stdlib_math_base_napi_cc_c( napi_env env, napi_callback_info info, st
 	stdlib_complex64_t v = fcn( stdlib_complex64( (float)re0, (float)im0 ), stdlib_complex64( (float)re1, (float)im1 ) );
 	float re;
 	float im;
-	stdlib_reimf( v, &re, &im );
+	stdlib_complex64_reim( v, &re, &im );
 
 	napi_value obj;
 	status = napi_create_object( env, &obj );
@@ -806,7 +806,7 @@ napi_value stdlib_math_base_napi_zi_z( napi_env env, napi_callback_info info, st
 	stdlib_complex128_t v = fcn( stdlib_complex128( re0, im0 ), y );
 	double re;
 	double im;
-	stdlib_reim( v, &re, &im );
+	stdlib_complex128_reim( v, &re, &im );
 
 	napi_value obj;
 	status = napi_create_object( env, &obj );
@@ -925,7 +925,7 @@ napi_value stdlib_math_base_napi_ci_c( napi_env env, napi_callback_info info, st
 	stdlib_complex64_t v = fcn( stdlib_complex64( (float)re0, (float)im0 ), y );
 	float re;
 	float im;
-	stdlib_reimf( v, &re, &im );
+	stdlib_complex64_reim( v, &re, &im );
 
 	napi_value obj;
 	status = napi_create_object( env, &obj );
@@ -1044,7 +1044,7 @@ napi_value stdlib_math_base_napi_zd_z( napi_env env, napi_callback_info info, st
 	stdlib_complex128_t v = fcn( stdlib_complex128( re0, im0 ), y );
 	double re;
 	double im;
-	stdlib_reim( v, &re, &im );
+	stdlib_complex128_reim( v, &re, &im );
 
 	napi_value obj;
 	status = napi_create_object( env, &obj );
@@ -1163,7 +1163,7 @@ napi_value stdlib_math_base_napi_cf_c( napi_env env, napi_callback_info info, st
 	stdlib_complex64_t v = fcn( stdlib_complex64( (float)re0, (float)im0 ), (float)y );
 	float re;
 	float im;
-	stdlib_reimf( v, &re, &im );
+	stdlib_complex64_reim( v, &re, &im );
 
 	napi_value obj;
 	status = napi_create_object( env, &obj );

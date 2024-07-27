@@ -19,7 +19,7 @@
 #include "stdlib/blas/base/zscal.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/math/base/ops/cmul.h"
+#include "stdlib/complex/float64/base/mul.h"
 #include <stdint.h>
 
 /**
@@ -42,7 +42,7 @@ void API_SUFFIX(c_zscal)( const CBLAS_INT N, const stdlib_complex128_t za, void 
 	}
 	for ( i = 0; i < N; i++, ip1 += is1 ) {
 		z = *( (stdlib_complex128_t *)ip1 );
-		*( (stdlib_complex128_t *)ip1 ) = stdlib_base_cmul( za, z );
+		*( (stdlib_complex128_t *)ip1 ) = stdlib_base_complex128_mul( za, z );
 	}
 	return;
 }

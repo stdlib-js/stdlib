@@ -189,7 +189,7 @@ Invokes a binary function accepting and returning double-precision complex float
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <node_api.h>
 
 // ...
@@ -202,8 +202,8 @@ static stdlib_complex128_t add( const stdlib_complex128_t x, const stdlib_comple
     double re;
     double im;
 
-    stdlib_reim( x, &xre, &xim );
-    stdlib_reim( y, &yre, &yim );
+    stdlib_complex128_reim( x, &xre, &xim );
+    stdlib_complex128_reim( y, &yre, &yim );
 
     re = xre + yre;
     im = xim + yim;
@@ -243,7 +243,7 @@ Invokes a binary function accepting and returning single-precision complex float
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <node_api.h>
 
 // ...
@@ -256,8 +256,8 @@ static stdlib_complex64_t add( const stdlib_complex64_t x, const stdlib_complex6
     float re;
     float im;
 
-    stdlib_reimf( x, &xre, &xim );
-    stdlib_reimf( y, &yre, &yim );
+    stdlib_complex64_reim( x, &xre, &xim );
+    stdlib_complex64_reim( y, &yre, &yim );
 
     re = xre + yre;
     im = xim + yim;
@@ -457,7 +457,7 @@ Invokes a binary function accepting a double-precision complex floating-point nu
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <node_api.h>
 #include <stdint.h>
 
@@ -469,7 +469,7 @@ static stdlib_complex128_t mul( const stdlib_complex128_t x, const int32_t y ) {
     double re;
     double im;
 
-    stdlib_reim( x, &xre, &xim );
+    stdlib_complex128_reim( x, &xre, &xim );
 
     re = xre * y;
     im = xim * y;
@@ -509,7 +509,7 @@ Invokes a binary function accepting a single-precision complex floating-point nu
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float32/reim.h"
 #include <node_api.h>
 #include <stdint.h>
 
@@ -521,7 +521,7 @@ static stdlib_complex64_t mul( const stdlib_complex64_t x, const int32_t y ) {
     float re;
     float im;
 
-    stdlib_reimf( x, &xre, &xim );
+    stdlib_complex64_reim( x, &xre, &xim );
 
     re = xre * y;
     im = xim * y;
@@ -645,7 +645,7 @@ Macro for registering a Node-API module exporting an interface for invoking a bi
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 static stdlib_complex128_t add( const stdlib_complex128_t x, const stdlib_complex128_t y ) {
     double xre;
@@ -655,8 +655,8 @@ static stdlib_complex128_t add( const stdlib_complex128_t x, const stdlib_comple
     double re;
     double im;
 
-    stdlib_reim( x, &xre, &xim );
-    stdlib_reim( y, &yre, &yim );
+    stdlib_complex128_reim( x, &xre, &xim );
+    stdlib_complex128_reim( y, &yre, &yim );
 
     re = xre + yre;
     im = xim + yim;
@@ -682,7 +682,7 @@ Macro for registering a Node-API module exporting an interface for invoking a bi
 
 ```c
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float32/reim.h"
 
 static stdlib_complex64_t add( const stdlib_complex64_t x, const stdlib_complex64_t y ) {
     float xre;
@@ -692,8 +692,8 @@ static stdlib_complex64_t add( const stdlib_complex64_t x, const stdlib_complex6
     float re;
     float im;
 
-    stdlib_reimf( x, &xre, &xim );
-    stdlib_reimf( y, &yre, &yim );
+    stdlib_complex64_reim( x, &xre, &xim );
+    stdlib_complex64_reim( y, &yre, &yim );
 
     re = xre + yre;
     im = xim + yim;
@@ -765,7 +765,7 @@ Macro for registering a Node-API module exporting an interface invoking a binary
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <stdint.h>
 
 static stdlib_complex128_t mul( const stdlib_complex128_t x, const int32_t y ) {
@@ -774,7 +774,7 @@ static stdlib_complex128_t mul( const stdlib_complex128_t x, const int32_t y ) {
     double re;
     double im;
 
-    stdlib_reim( x, &xre, &xim );
+    stdlib_complex128_reim( x, &xre, &xim );
 
     re = xre * y;
     im = xim * y;
@@ -800,7 +800,7 @@ Macro for registering a Node-API module exporting an interface invoking a binary
 
 ```c
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float32/reim.h"
 #include <stdint.h>
 
 static stdlib_complex64_t add( const stdlib_complex64_t x, const int32_t y ) {
@@ -809,7 +809,7 @@ static stdlib_complex64_t add( const stdlib_complex64_t x, const int32_t y ) {
     float re;
     float im;
 
-    stdlib_reimf( x, &xre, &xim );
+    stdlib_complex64_reim( x, &xre, &xim );
 
     re = xre * y;
     im = xim * y;
@@ -835,7 +835,7 @@ Macro for registering a Node-API module exporting an interface invoking a binary
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 static stdlib_complex128_t mul( const stdlib_complex128_t x, const double y ) {
     double xre;
@@ -843,7 +843,7 @@ static stdlib_complex128_t mul( const stdlib_complex128_t x, const double y ) {
     double re;
     double im;
 
-    stdlib_reim( x, &xre, &xim );
+    stdlib_complex128_reim( x, &xre, &xim );
 
     re = xre * y;
     im = xim * y;
@@ -869,7 +869,7 @@ Macro for registering a Node-API module exporting an interface invoking a binary
 
 ```c
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/reimf.h"
+#include "stdlib/complex/float32/reim.h"
 
 static stdlib_complex64_t add( const stdlib_complex64_t x, const float y ) {
     float xre;
@@ -877,7 +877,7 @@ static stdlib_complex64_t add( const stdlib_complex64_t x, const float y ) {
     float re;
     float im;
 
-    stdlib_reimf( x, &xre, &xim );
+    stdlib_complex64_reim( x, &xre, &xim );
 
     re = xre * y;
     im = xim * y;
