@@ -1,5 +1,5 @@
 
-{{alias}}( x, n[, b] )
+{{alias}}( x, n, b )
     Rounds a numeric value to the nearest number toward zero with `n`
     significant figures.
 
@@ -11,8 +11,8 @@
     n: integer
         Number of significant figures. Must be greater than 0.
 
-    b: integer (optional)
-        Base. Must be greater than 0. Default: 10.
+    b: integer
+        Base. Must be greater than 0.
 
     Returns
     -------
@@ -21,11 +21,11 @@
 
     Examples
     --------
-    > var y = {{alias}}( 3.14159, 5 )
+    > var y = {{alias}}( 3.14159, 5, 10 )
     3.1415
-    > y = {{alias}}( 3.14159, 1 )
+    > y = {{alias}}( 3.14159, 1, 10 )
     3.0
-    > y = {{alias}}( 12368.0, 2 )
+    > y = {{alias}}( 12368.0, 2, 10 )
     12000.0
     > y = {{alias}}( 0.0313, 2, 2 )
     0.03125
