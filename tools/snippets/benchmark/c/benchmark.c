@@ -85,7 +85,7 @@ static double tic( void ) {
 }
 
 /**
-* Generates a random number on the interval [0,1].
+* Generates a random number on the interval [0,1).
 *
 * @return random number
 */
@@ -95,7 +95,7 @@ static float rand_float( void ) {
 }
 
 /**
-* Generates a random number on the interval [0,1].
+* Generates a random number on the interval [0,1).
 *
 * @return random number
 */
