@@ -95,8 +95,8 @@ var A0 = new Float64Array( [ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var IPIV0 = new Int32Array( [ 0, 2, 0, 1] );
 
 // Create offset views...
-var A1 = new Float64Array( A0.buffer, A0.BYTES_PER_ELEMENT*1 ); // start at 1st element
-var IPIV1 = new Int32Array( IPIV0.buffer, IPIV0.BYTES_PER_ELEMENT*1 ); // start at 1st element
+var A1 = new Float64Array( A0.buffer, A0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+var IPIV1 = new Int32Array( IPIV0.buffer, IPIV0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
 dlaswp( 'row-major', 2, A1, 2, 0, 2, IPIV1, 1 );
 // A0 => <Float64Array>[ 0.0, 3.0, 4.0, 1.0, 2.0, 5.0, 6.0 ]
