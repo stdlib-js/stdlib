@@ -54,7 +54,6 @@ interface Routine {
 	/**
 	* Performs a series of row interchanges on a matrix `A` using pivot indices stored in `IPIV` and alternative indexing semantics.
 	*
-	* @param order - storage layout
 	* @param N - number of columns in `A`
 	* @param A - input matrix
 	* @param strideA1 - stride of the first dimension of `A`
@@ -75,10 +74,10 @@ interface Routine {
 	* var IPIV = new Int32Array( [ 2, 0, 1 ] );
 	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 	*
-	* dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 );
+	* dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 );
 	* // A => <Float64Array>[ 3.0, 4.0, 1.0, 2.0, 5.0, 6.0 ]
 	*/
-	ndarray( order: Layout, N: number, A: Float64Array, strideA1: number, strideA2: number, offsetA: number, k1: number, k2: number, inck: number, IPIV: Int32Array, strideIPIV: number, offsetIPIV: number ): Float64Array;
+	ndarray( N: number, A: Float64Array, strideA1: number, strideA2: number, offsetA: number, k1: number, k2: number, inck: number, IPIV: Int32Array, strideIPIV: number, offsetIPIV: number ): Float64Array;
 }
 
 /**
@@ -111,7 +110,7 @@ interface Routine {
 * var IPIV = new Int32Array( [ 2, 0, 1 ] );
 * var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* dlaswp.ndarray( 'row-major', 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 );
+* dlaswp.ndarray( 2, A, 2, 1, 0, 0, 2, 1, IPIV, 1, 0 );
 * // A => <Float64Array>[ 3.0, 4.0, 1.0, 2.0, 5.0, 6.0 ]
 */
 declare var dlaswp: Routine;

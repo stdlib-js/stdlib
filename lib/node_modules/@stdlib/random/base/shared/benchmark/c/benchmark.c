@@ -159,7 +159,7 @@ static struct BasePRNGObject * mock_prng_allocate( const int32_t seed ) {
 /**
 * Prints the TAP version.
 */
-void print_version( void ) {
+static void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -169,7 +169,7 @@ void print_version( void ) {
 * @param total     total number of tests
 * @param passing   total number of passing tests
 */
-void print_summary( int total, int passing ) {
+static void print_summary( int total, int passing ) {
 	printf( "#\n" );
 	printf( "1..%d\n", total ); // TAP plan
 	printf( "# total %d\n", total );
@@ -183,7 +183,7 @@ void print_summary( int total, int passing ) {
 *
 * @param elapsed   elapsed time in seconds
 */
-void print_results( double elapsed ) {
+static void print_results( double elapsed ) {
 	double rate = (double)ITERATIONS / elapsed;
 	printf( "  ---\n" );
 	printf( "  iterations: %d\n", ITERATIONS );
@@ -197,18 +197,18 @@ void print_results( double elapsed ) {
 *
 * @return clock time
 */
-double tic( void ) {
+static double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
 }
 
 /**
-* Generates a random double on the interval [0,1].
+* Generates a random number on the interval [0,1).
 *
-* @return random double
+* @return random number
 */
-double rand_double( void ) {
+static double rand_double( void ) {
 	int r = rand();
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }
@@ -218,7 +218,7 @@ double rand_double( void ) {
 *
 * @return elapsed time in seconds
 */
-double benchmark1( void ) {
+static double benchmark1( void ) {
 	double elapsed;
 	uint64_t v;
 	double t;
@@ -249,7 +249,7 @@ double benchmark1( void ) {
 *
 * @return elapsed time in seconds
 */
-double benchmark2( void ) {
+static double benchmark2( void ) {
 	double elapsed;
 	double t;
 	double v;
@@ -280,7 +280,7 @@ double benchmark2( void ) {
 *
 * @return elapsed time in seconds
 */
-double benchmark3( void ) {
+static double benchmark3( void ) {
 	double elapsed;
 	uint64_t v;
 	double t;
@@ -312,7 +312,7 @@ double benchmark3( void ) {
 *
 * @return elapsed time in seconds
 */
-double benchmark4( void ) {
+static double benchmark4( void ) {
 	double elapsed;
 	uint64_t v;
 	double t;
@@ -344,7 +344,7 @@ double benchmark4( void ) {
 *
 * @return elapsed time in seconds
 */
-double benchmark5( void ) {
+static double benchmark5( void ) {
 	double elapsed;
 	double v;
 	double t;
@@ -376,7 +376,7 @@ double benchmark5( void ) {
 *
 * @return elapsed time in seconds
 */
-double benchmark6( void ) {
+static double benchmark6( void ) {
 	double elapsed;
 	double v;
 	double t;
@@ -408,7 +408,7 @@ double benchmark6( void ) {
 *
 * @return elapsed time in seconds
 */
-double benchmark7( void ) {
+static double benchmark7( void ) {
 	double elapsed;
 	size_t v;
 	double t;
@@ -440,7 +440,7 @@ double benchmark7( void ) {
 *
 * @return elapsed time in seconds
 */
-double benchmark8( void ) {
+static double benchmark8( void ) {
 	struct BasePRNGObject *out;
 	double elapsed;
 	double t;
@@ -475,7 +475,7 @@ double benchmark8( void ) {
 *
 * @return elapsed time in seconds
 */
-double benchmark9( void ) {
+static double benchmark9( void ) {
 	double elapsed;
 	int8_t status;
 	double t;
@@ -514,7 +514,7 @@ double benchmark9( void ) {
 *
 * @return elapsed time in seconds
 */
-double benchmark10( void ) {
+static double benchmark10( void ) {
 	double elapsed;
 	int8_t status;
 	double t;
