@@ -18,12 +18,48 @@
 
 'use strict';
 
+var arcsine = require( '@stdlib/stats/base/dists/arcsine' );
 var stdlib = require( './../lib' );
 
+var keys;
+var y;
+var cdfValue;
+var pdfValue;
+var mean;
+var variance;
+var medianValue;
+var modeValue;
+var entropy;
+
 // List sub-namespaces:
-var keys = stdlib.utils.objectKeys( stdlib );
-console.log( keys );
+keys = stdlib.utils.objectKeys(stdlib);
+console.log(keys);
 
 // Compute the value of sine:
-var y = stdlib.math.base.special.sin( 3.14 );
-console.log( y );
+y = stdlib.math.base.special.sin(3.14);
+console.log(y);
+
+// Example 1: Calculate the Cumulative Distribution Function (CDF)
+cdfValue = arcsine.cdf(0.5, 0, 1);
+console.log('CDF value at 0.5:', cdfValue);
+
+// Example 2: Calculate the Probability Density Function (PDF)
+pdfValue = arcsine.pdf(0.5, 0, 1);
+console.log('PDF value at 0.5:', pdfValue);
+
+// Example 3: Calculate the Mean and Variance
+mean = arcsine.mean(0, 1);
+variance = arcsine.variance(0, 1);
+console.log('Mean:', mean, 'Variance:', variance);
+
+// Example 4: Calculate the Median
+medianValue = arcsine.median(0, 1);
+console.log('Median of the distribution:', medianValue);
+
+// Example 5: Calculate the Mode
+modeValue = arcsine.mode(0, 1);
+console.log('Mode of the distribution:', modeValue);
+
+// Example 6: Calculate the Entropy
+entropy = arcsine.entropy(0, 1);
+console.log('Entropy:', entropy);
