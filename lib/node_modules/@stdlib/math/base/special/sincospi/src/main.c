@@ -25,7 +25,6 @@
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/pi.h"
-#include <stdint.h>
 
 /**
 * Simultaneously computes the sine and cosine of a number times π.

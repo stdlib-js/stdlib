@@ -101,13 +101,13 @@ static double benchmark( void ) {
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		x = ( 20.0 * rand_double() ) - 10.0;
 		stdlib_base_fresnel( x, &S, &C );
-		if ( C != C || S != S) {
+		if ( C != C || S != S ) {
 			printf( "unexpected results\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( C != C || S != S) {
+	if ( C != C || S != S ) {
 		printf( "unexpected results\n" );
 	}
 	return elapsed;
