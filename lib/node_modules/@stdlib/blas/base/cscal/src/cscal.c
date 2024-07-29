@@ -41,8 +41,8 @@ void API_SUFFIX(c_cscal)( const CBLAS_INT N, const stdlib_complex64_t ca, void *
 		return;
 	}
 	for ( i = 0; i < N; i++, ip1 += is1 ) {
-		z = *( (stdlib_complex64_t *)ip1 );
-		*( (stdlib_complex64_t *)ip1 ) = stdlib_base_complex64_mul( ca, z );
+		z = *(stdlib_complex64_t *)ip1;
+		*(stdlib_complex64_t *)ip1 = stdlib_base_complex64_mul( ca, z );
 	}
 	return;
 }
