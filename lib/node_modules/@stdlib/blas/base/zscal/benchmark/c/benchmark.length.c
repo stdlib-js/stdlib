@@ -102,10 +102,10 @@ static double benchmark( int iterations, int len ) {
 	double t;
 	int i;
 
-	za = stdlib_complex128( rand_double()*1.0, rand_double()*0.0 );
+	za = stdlib_complex128( 1.0, 0.0 );
 	for ( i = 0; i < len*2; i+=2 ) {
-		zx[ i ] = ( rand_double()*10000.0 ) - 5000.0;
-		zx[ i+1 ] = ( rand_double()*10000.0 ) - 5000.0;
+		zx[ i ] = ( rand_double()*2.0 ) - 1.0;
+		zx[ i+1 ] = ( rand_double()*2.0 ) - 1.0;
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {

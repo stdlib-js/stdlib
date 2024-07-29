@@ -102,10 +102,10 @@ static double benchmark( int iterations, int len ) {
 	double t;
 	int i;
 
-	ca = stdlib_complex64( rand_float()*5.0f, rand_float()*2.0f );
+	ca = stdlib_complex64( 1.0f, 0.0f );
 	for ( i = 0; i < len*2; i += 2 ) {
-		cx[ i ] = ( rand_float()*10000.0f ) - 5000.0f;
-		cx[ i+1 ] = ( rand_float()*10000.0f ) - 5000.0f;
+		cx[ i ] = ( rand_float()*2.0f ) - 1.0f;
+		cx[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
