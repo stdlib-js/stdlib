@@ -116,6 +116,96 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/fresnel.h"
+```
+
+#### stdlib_base_fresnel( x, &S, &C )
+
+Simultaneously computes the [Fresnel integrals][fresnel-integral] S(x) and C(x).
+
+```c
+double S;
+double C;
+
+stdlib_base_fresnel( 4.0, &S, &C );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **S**: `[out] double*` destination for S(x).
+-   **C**: `[out] double*` destination for C(x).
+
+```c
+void stdlib_base_fresnel( const double x, double *S, double *C );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/fresnel.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 0.0, 1.57, 3.14, 6.28 };
+
+    double S;
+    double C;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        stdlib_base_fresnel( x[ i ], &S, &C );
+        printf( "x: %lf => S(x): %lf, C(x): %lf\n", x[ i ], S, C );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
