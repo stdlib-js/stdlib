@@ -125,7 +125,8 @@ void stdlib_base_sincos( const double x, double* sine, double* cosine ) {
 				*cosine = 0.0;
 			}
 		}
-		return kernelSincos( x, 0.0, sine, cosine );
+		kernelSincos( x, 0.0, sine, cosine );
+		return;
 	}
 
 	// Case: x is NaN or infinity
