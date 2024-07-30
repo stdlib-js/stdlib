@@ -16,7 +16,7 @@
 ! limitations under the License.
 !<
 
-!> Benchmark `dznrm2`.
+!> Benchmarks.
 !
 ! ## Notes
 !

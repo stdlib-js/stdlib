@@ -41,8 +41,8 @@ void API_SUFFIX(c_zscal)( const CBLAS_INT N, const stdlib_complex128_t za, void 
 		return;
 	}
 	for ( i = 0; i < N; i++, ip1 += is1 ) {
-		z = *( (stdlib_complex128_t *)ip1 );
-		*( (stdlib_complex128_t *)ip1 ) = stdlib_base_complex128_mul( za, z );
+		z = *(stdlib_complex128_t *)ip1;
+		*(stdlib_complex128_t *)ip1 = stdlib_base_complex128_mul( za, z );
 	}
 	return;
 }

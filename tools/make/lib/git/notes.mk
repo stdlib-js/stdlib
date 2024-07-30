@@ -21,6 +21,7 @@
 # Define the directory containing git notes:
 GIT_NOTES_DIR ?= $(ROOT_DIR)/docs/git-notes
 
+
 # RULES #
 
 #/
@@ -28,13 +29,13 @@ GIT_NOTES_DIR ?= $(ROOT_DIR)/docs/git-notes
 #
 # ## Notes
 #
-# -   This rule applies git notes where the file name (without the .txt extension) is the git commit hash and the content is the note.
+# -   This rule applies Git notes where the file name (without the .txt extension) is the Git commit hash and the content is the note.
 #
 # @example
 # make apply-git-notes
 #/
 apply-git-notes:
-	$(QUIET) echo "Applying git notes..."
+	$(QUIET) echo "Applying Git notes..."
 	$(QUIET) for note in $(GIT_NOTES_DIR)/*.txt; do \
 		if [ -f "$$note" ]; then \
 			commit_hash=$$(basename "$$note" .txt); \
