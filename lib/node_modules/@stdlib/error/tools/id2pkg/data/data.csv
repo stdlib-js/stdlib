@@ -2309,6 +2309,8 @@
 "0ON",@stdlib/fs-resolve-parent-path-by
 "0OO",@stdlib/fs/resolve-parent-path
 "0OP",@stdlib/fs-resolve-parent-path
+"1yS",@stdlib/fs/resolve-parent-paths
+"1yT",@stdlib/fs-resolve-parent-paths
 "0OQ",@stdlib/fs/unlink
 "0OR",@stdlib/fs-unlink
 "0OS",@stdlib/fs/write-file
@@ -2332,6 +2334,8 @@
 "0Of",@stdlib/iter-counter
 "1xS",@stdlib/iter/cuany
 "1xT",@stdlib/iter-cuany
+"1yU",@stdlib/iter/cusome
+"1yV",@stdlib/iter-cusome
 "0Og",@stdlib/iter/datespace
 "0Oh",@stdlib/iter-datespace
 "0Oi",@stdlib/iter/dedupe-by
@@ -3824,6 +3828,8 @@
 "1l5",@stdlib/ndarray-base-fliplr
 "1l6",@stdlib/ndarray/base/flipud
 "1l7",@stdlib/ndarray-base-flipud
+"1yW",@stdlib/ndarray/base/for-each
+"1yX",@stdlib/ndarray-base-for-each
 "0ig",@stdlib/ndarray/base/from-scalar
 "0ih",@stdlib/ndarray-base-from-scalar
 "0ii",@stdlib/ndarray/base/function-object
