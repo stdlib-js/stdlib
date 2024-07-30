@@ -40,7 +40,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-integer",
         "@stdlib/math/base/special/gamma",
-        "@stdlib/constants/float64/pinf"
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/max-safe-nth-factorial"
       ]
     },
     {
@@ -57,7 +58,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-integer",
         "@stdlib/math/base/special/gamma",
-        "@stdlib/constants/float64/pinf"
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/max-safe-nth-factorial"
       ]
     },
     {
@@ -74,7 +76,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-integer",
         "@stdlib/math/base/special/gamma",
-        "@stdlib/constants/float64/pinf"
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/max-safe-nth-factorial"
       ]
     }
   ]

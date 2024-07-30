@@ -21,9 +21,9 @@
 #include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/math/base/special/gamma.h"
 #include "stdlib/constants/float64/pinf.h"
+#include "stdlib/constants/float64/max_safe_nth_factorial.h"
 #include <stdint.h>
 
-static const double MAX_FACTORIAL = 170.0;
 static const double FACTORIALS[ 171 ] = {
 	1.0,
 	1.0,
@@ -217,7 +217,7 @@ double stdlib_base_factorial( const double x ) {
 		if ( x < 0.0 ) {
 			return 0.0 / 0.0; // NaN
 		}
-		if ( x <= MAX_FACTORIAL ) {
+		if ( x <= STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL ) {
 			return FACTORIALS[ (int32_t)x ];
 		}
 		return STDLIB_CONSTANT_FLOAT64_PINF;
