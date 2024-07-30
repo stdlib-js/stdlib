@@ -35,7 +35,7 @@
     "notes": "make notes",
     "lint": "make lint",
     "repl": "make repl",
-    "test": "make test",
+    "test": "tape 'lib/node_modules/@stdlib/array/base/cusome-by/test/**/*.js'",
     "test-cov": "make test-cov",
     "view-cov": "make view-cov",
     "examples": "make examples",
@@ -44,6 +44,8 @@
     "check-deps": "make check-deps",
     "check-licenses": "make check-licenses"
   },
+
+
   "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {
     "type": "git",
@@ -108,7 +110,8 @@
     "readable-stream": "^2.1.4",
     "resolve": "^1.1.7",
     "vdom-to-html": "^2.3.0",
-    "virtual-dom": "^2.1.1"
+    "virtual-dom": "^2.1.1",
+     "tape": "^5.0.1"
   },
   "optionalDependencies": {
     "node-gyp": "^9.3.1"
