@@ -1,0 +1,60 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: autclose
+
+# Workflow triggers:
+on:
+  pull_request_target:
+    types: [ labeled ]
+
+# Workflow jobs:
+jobs:
+
+  # Define a job which closes a pull request if a contributor failed to setup EditorConfig:
+  editorconfig:
+
+    # Define job name:
+    name: 'Check for label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'autoclose: EditorConfig' }}"
+
+    # Define job permissions:
+    permissions:
+      contents: read
+      pull-requests: write
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Close the pull request:
+      - name: 'Close pull request'
+        run: gh pr close "$NUMBER" --comment "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: >
+            Thank you for working on this pull request. However, we cannot accept your contribution as this pull request does not follow our [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md). Per the guidelines outlined in our [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md), you should download and setup [EditorConfig](http://editorconfig.org/) to ensure that files are automatically configured to use expected indentation and line endings.
+
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contriubtions.
