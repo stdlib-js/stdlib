@@ -16,7 +16,7 @@
 ! limitations under the License.
 !<
 
-!> Benchmark `dcabs1`.
+!> Benchmarks.
 !
 ! ## Notes
 !
