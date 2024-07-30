@@ -996,3 +996,4 @@
 "G3","invalid argument. Tenth argument must be non-zero. Value: `%d`.","RangeError"
 "G4","invalid argument. Fourth argument must be greater than or equal to max(1,%d). Value: `%d`.","RangeError"
 "G5","invalid argument. First argument must be a string or an array of strings. Value: `%s`.","TypeError"
+"G6","invalid option. `%s` option must be a valid mode. Option: `%s`.","TypeError"

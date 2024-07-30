@@ -7545,3 +7545,9 @@
 "@stdlib/constants-float64-max-safe-nth-factorial",1yP
 "@stdlib/math/base/special/fmod",1yQ
 "@stdlib/math-base-special-fmod",1yR
+"@stdlib/fs/resolve-parent-paths",1yS
+"@stdlib/fs-resolve-parent-paths",1yT
+"@stdlib/iter/cusome",1yU
+"@stdlib/iter-cusome",1yV
+"@stdlib/ndarray/base/for-each",1yW
+"@stdlib/ndarray-base-for-each",1yX

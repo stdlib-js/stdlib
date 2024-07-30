@@ -2536,7 +2536,7 @@ base.truncateMiddle,"\nbase.truncateMiddle( str:string, len:integer, seq:string 
 base.truncb,"\nbase.truncb( x:number, n:integer, b:integer )\n    Rounds a numeric value to the nearest multiple of `b^n` toward zero.\n"
 base.truncf,"\nbase.truncf( x:number )\n    Rounds a single-precision floating-point number toward zero.\n"
 base.truncn,"\nbase.truncn( x:number, n:integer )\n    Rounds a numeric value to the nearest multiple of `10^n` toward zero.\n"
-base.truncsd,"\nbase.truncsd( x:number, n:integer[, b:integer] )\n    Rounds a numeric value to the nearest number toward zero with `n`\n    significant figures.\n"
+base.truncsd,"\nbase.truncsd( x:number, n:integer, b:integer )\n    Rounds a numeric value to the nearest number toward zero with `n`\n    significant figures.\n"
 base.uint32ToInt32,"\nbase.uint32ToInt32( x:integer )\n    Converts an unsigned 32-bit integer to a signed 32-bit integer.\n"
 base.umul,"\nbase.umul( a:integer, b:integer )\n    Performs C-like multiplication of two unsigned 32-bit integers.\n"
 base.umuldw,"\nbase.umuldw( a:integer, b:integer )\n    Multiplies two unsigned 32-bit integers and returns an array of two unsigned\n    32-bit integers which represents the unsigned 64-bit integer product.\n"
