@@ -54,7 +54,9 @@ jobs:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
-          BODY: >
-            Thank you for working on this pull request. However, we cannot accept your contribution as this pull request does not follow our [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md). Per the guidelines outlined in our [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md), you should download and setup [EditorConfig](http://editorconfig.org/) to ensure that files are automatically configured to use expected indentation and line endings.
+          BODY: |
+            Thank you for working on this pull request. However, we cannot accept your contribution as this pull request does not follow our [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md).
+
+            Per the guidelines outlined in our [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md), you should download and setup [EditorConfig](http://editorconfig.org/) to ensure that files are automatically configured to use expected indentation and line endings.
 
             Thank you again for your interest in stdlib, and we look forward to reviewing your future contriubtions.
