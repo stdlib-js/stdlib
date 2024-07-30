@@ -45,14 +45,14 @@
     > var cy = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
     > {{alias}}( cx.length, cx, 1, cy, 1, 0.8, 0.6 );
     > var z = cy.get( 0 );
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     ~-0.6
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     ~-1.2
     > z = cx.get( 0 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     ~0.8
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     ~1.6
 
     // Advanced indexing:
@@ -60,14 +60,14 @@
     > cy = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
     > {{alias}}( 2, cx, -2, cy, 1, 0.8, 0.6 );
     > z = cy.get( 0 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     ~-3.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     ~-3.6
     > z = cx.get( 2 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     ~4.0
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     ~4.8
 
     // Using typed array views:
@@ -77,14 +77,14 @@
     > var cy1 = new {{alias:@stdlib/array/complex64}}( cy0.buffer, cy0.BYTES_PER_ELEMENT*2 );
     > {{alias}}( 1, cx1, 1, cy1, 1, 0.8, 0.6 );
     > z = cy0.get( 2 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     ~-1.8
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     ~-2.4
     > z = cx0.get( 1 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     ~2.4
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     ~3.2
 
 
@@ -136,14 +136,14 @@
     > var cy = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
     > {{alias}}.ndarray( cx.length, cx, 1, 0, cy, 1, 0, 0.8, 0.6 );
     > var z = cy.get( 0 );
-    > var re = {{alias:@stdlib/complex/realf}}( z )
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
     ~-0.6
-    > var im = {{alias:@stdlib/complex/imagf}}( z )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
     ~-1.2
     > z = cx.get( 0 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     ~0.8
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     ~1.6
 
     // Advanced indexing:
@@ -151,14 +151,14 @@
     > cy = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
     > {{alias}}.ndarray( 1, cx, 2, 1, cy, 2, 1, 0.8, 0.6 );
     > z = cy.get( 1 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     ~-1.8
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     ~-2.4
     > z = cx.get( 1 );
-    > re = {{alias:@stdlib/complex/realf}}( z )
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     ~2.4
-    > im = {{alias:@stdlib/complex/imagf}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     ~3.2
 
     See Also

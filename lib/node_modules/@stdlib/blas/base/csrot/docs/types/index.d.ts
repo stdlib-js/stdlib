@@ -40,8 +40,8 @@ interface Routine {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -84,8 +84,8 @@ interface Routine {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/realf' );
-	* var imagf = require( '@stdlib/complex/imagf' );
+	* var realf = require( '@stdlib/complex/float32/real' );
+	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -127,8 +127,8 @@ interface Routine {
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 * var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -155,8 +155,8 @@ interface Routine {
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 * var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
