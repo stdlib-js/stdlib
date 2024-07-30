@@ -21,7 +21,7 @@ name: do_not_merge
 
 # Workflow triggers:
 on:
-  pull_request:
+  pull_request_target:
     types: [ synchronize, opened, reopened, labeled, unlabeled ]
 
 # Workflow jobs:
