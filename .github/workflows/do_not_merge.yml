@@ -31,7 +31,7 @@ jobs:
   do_not_merge:
 
     # Define job name:
-    name: 'Check for label'
+    name: 'Check for Do Not Merge label'
 
     # Only run this job if the pull request has a "Do Not Merge" label:
     if: ${{ contains(github.event.*.labels.*.name, 'Do Not Merge') }}
