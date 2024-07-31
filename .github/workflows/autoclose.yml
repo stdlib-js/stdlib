@@ -22,7 +22,8 @@ name: autclose
 # Workflow triggers:
 on:
   pull_request_target:
-    types: [ labeled ]
+    types:
+      - labeled
 
 # Workflow jobs:
 jobs:
