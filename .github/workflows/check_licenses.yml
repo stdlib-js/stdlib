@@ -20,7 +20,7 @@
 name: check_licenses
 
 # Workflow triggers:
-on: [pull_request]
+on: [ pull_request ]
 
 # Global permissions:
 permissions:
