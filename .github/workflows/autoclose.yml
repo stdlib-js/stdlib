@@ -129,9 +129,9 @@ jobs:
 
             -   If you are attempting to contribute a new package, sometimes the best approach is to simply copy the contents of an existing package and then modify the minimum amount necessary to implement the feature (e.g., changing descriptions, parameter names, and implementation).
             -   If you are contributing tests, find a package implementing a similar feature and emulate the tests of that package.
-            -   If you are updating documentation, examine several similar packages and emulate the tests, style, and prose of those packages.
+            -   If you are updating documentation, examine several similar packages and emulate the content, style, and prose of those packages.
 
-            In short, the more effort you put in to ensure that your contribution looks and feels like stdlib--including variables names, bracket spacing, line breaks, etc--the more likely that your contribution will be reviewed and ultimately accepted. We encourage you to study the codebase **before** continuing to work on this pull request.
+            In short, the more effort you put in to ensure that your contribution looks and feels like stdlib—including variables names, bracket spacing, line breaks, etc—the more likely that your contribution will be reviewed and ultimately accepted. We encourage you to closely study the codebase **before** continuing to work on this pull request.
 
             Thank you again for your interest in stdlib, and we look forward to reviewing your future contriubtions.
 
