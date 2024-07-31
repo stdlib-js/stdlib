@@ -25,7 +25,6 @@ import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Callback invoked for each ndarray element.
-*
 */
 type Nullary<U> = ( this: U ) => void;
 
