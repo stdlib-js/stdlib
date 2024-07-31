@@ -42,7 +42,7 @@ type Unary<T, U> = ( this: U, value: T ) => void;
 * @param value - current array element
 * @param indices - current array element indices
 */
-type Binary<T, U> = ( this: U, value: T, indices: number ) => void;
+type Binary<T, U> = ( this: U, value: T, indices: Array<number> ) => void;
 
 /**
 * Callback invoked for each ndarray element.
@@ -51,7 +51,7 @@ type Binary<T, U> = ( this: U, value: T, indices: number ) => void;
 * @param indices - current array element indices
 * @param arr - input array
 */
-type Ternary<T, U> = ( this: U, value: T, indices: number, arr: typedndarray<T> ) => void;
+type Ternary<T, U> = ( this: U, value: T, indices: Array<number>, arr: typedndarray<T> ) => void;
 
 /**
 * Callback invoked for each ndarray element.
