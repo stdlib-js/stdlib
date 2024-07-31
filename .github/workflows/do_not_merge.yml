@@ -17,23 +17,29 @@
 #/
 
 # Workflow name:
-name: labeler
+name: do_not_merge
 
 # Workflow triggers:
 on:
-  pull_request_target:
+  pull_request:
+    types:
+      - synchronize
+      - opened
+      - reopened
+      - labeled
+      - unlabeled
 
 # Workflow jobs:
 jobs:
 
-  # Define a job which automatically labels pull requests based on the contents of the pull request:
-  labeler:
+  # Define a job which fails a pull request if the pull request has a "Do Not Merge" label:
+  do_not_merge:
 
     # Define job name:
-    name: 'Labeler'
+    name: 'Check for Do Not Merge label'
 
-    # Only run this job if the pull request did not have label `automated-pr`:
-    if: contains(github.event.pull_request.labels.*.name, 'automated-pr') == false
+    # Only run this job if the pull request has a "Do Not Merge" label:
+    if: ${{ contains(github.event.*.labels.*.name, 'Do Not Merge') }}
 
     # Define job permissions:
     permissions:
@@ -46,10 +52,9 @@ jobs:
     # Define the sequence of job steps:
     steps:
 
-      # Automatically label pull requests:
-      - name: 'Automatically label pull requests'
-        # Pin action to full length commit SHA
-        uses: actions/labeler@8558fd74291d67161a8a78ce36a881fa63b766a9 # v5.0.0
-        with:
-          configuration-path: .github/labeler.yml
-          repo-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+      # Fail the pull request:
+      - name: 'Prevent merge'
+        run: |
+          echo "Pull request is labeled as 'Do Not Merge'."
+          echo "This workflow fails so that the pull request cannot be merged."
+          exit 1
