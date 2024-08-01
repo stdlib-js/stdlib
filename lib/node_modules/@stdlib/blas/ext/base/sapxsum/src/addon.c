@@ -40,7 +40,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 2 );
 
 	napi_value v;
-	status = napi_create_double( env, (double)stdlib_strided_sapxsum( N, alpha, X, stride ), &v );
+	napi_status status = napi_create_double( env, (double)stdlib_strided_sapxsum( N, alpha, X, strideX ), &v );
 	assert( status == napi_ok );
 
 	return v;
