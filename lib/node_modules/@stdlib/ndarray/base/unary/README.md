@@ -94,7 +94,7 @@ The function accepts the following arguments:
 -   **arrays**: array-like object containing one input ndarray and one output ndarray.
 -   **fcn**: unary function to apply.
 
-Each provided ndarray should be an `object` with the following properties:
+Each provided ndarray should be an object with the following properties:
 
 -   **dtype**: data type.
 -   **data**: data buffer.
