@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/blas/base/sapxsum.h"
+#include "stdlib/blas/ext/base/sapxsum.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_float.h"
