@@ -40,6 +40,8 @@ pr_number="$1"
 # Set the repository name:
 GITHUB_REPOSITORY="stdlib-js/stdlib"
 
+# Set the contributing guidelines link:
+CONTRIBUTING_LINK="https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md"
 
 # FUNCTIONS #
 
@@ -93,7 +95,9 @@ This acknowledgment confirms that you've read the guidelines, which include:
 
 We can't review or accept contributions without this acknowledgment.
 
-Thank you for your understanding and cooperation. We look forward to reviewing your contribution!"
+Thank you for your understanding and cooperation. We look forward to reviewing your contribution!
+
+[contributing]: ${CONTRIBUTING_LINK}"
 
 		if ! curl -s -X POST \
 			-H "Authorization: token ${GITHUB_TOKEN}" \
