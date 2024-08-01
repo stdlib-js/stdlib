@@ -32,6 +32,7 @@ on:
       user:
         required: true
         type: string
+
     # Define the secrets accessible by the workflow:
     secrets:
       STDLIB_BOT_GITHUB_TOKEN:
