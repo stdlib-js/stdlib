@@ -707,11 +707,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [coverage-url-develop]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/stdlib
-
 [dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies
-
-[dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib
 
 [dev-dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies -->
 
