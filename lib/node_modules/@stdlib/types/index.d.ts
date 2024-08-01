@@ -1319,11 +1319,11 @@ declare module '@stdlib/types/blas' {
 	*
 	* ## Notes
 	*
-	* -   **none**: no transposition.
+	* -   **no-transpose**: no transposition.
 	* -   **transpose**: transposition.
 	* -   **conjugate-transpose**: conjugate transposition.
 	*/
-	type TransposeOperation = 'none' | 'transpose' | 'conjugate-transpose';
+	type TransposeOperation = 'no-transpose' | 'transpose' | 'conjugate-transpose';
 }
 
 /**
