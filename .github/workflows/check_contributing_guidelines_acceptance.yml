@@ -40,7 +40,9 @@ on:
 
   # Trigger on pull request events:
   pull_request_target:
-    types: [opened, reopened]
+    types:
+      - opened
+      - reopened
 
 # Global permissions:
 permissions:
