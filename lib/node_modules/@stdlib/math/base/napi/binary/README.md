@@ -621,6 +621,8 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface for invoking a binary function accepting and returning signed 32-bit integers.
 
 ```c
+#include <stdint.h>
+
 static int32_t add( const int32_t x, const int32_t y ) {
     return x + y;
 }
@@ -642,6 +644,8 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 Macro for registering a Node-API module exporting an interface for invoking a binary function accepting signed 32-bit integers and returning a double-precision floating-point number.
 
 ```c
+#include <stdint.h>
+
 static double add( const int32_t x, const int32_t y ) {
     return x + y;
 }
@@ -951,7 +955,7 @@ static double fcn( const int64_t x, const int64_t y ) {
 // ...
 
 // Register a Node-API module:
-STDLIB_MATH_BASE_NAPI_MODULE_II_D( fcn );
+STDLIB_MATH_BASE_NAPI_MODULE_LL_D( fcn );
 ```
 
 The macro expects the following arguments:
