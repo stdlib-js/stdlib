@@ -93,10 +93,10 @@ Performs the symmetric rank 1 operation `A = α*x*x^T + A`, using alternative in
 var Float32Array = require( '@stdlib/array/float32' );
 
 var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] );
-var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 
-ssyr.ndarray( 'upper', 3, 1.0, x, -2, 4, A, 3, 1, 0 );
-// A => <Float32Array>[ 26.0, 17.0, 8.0, 0.0, 10.0, 5.0, 0.0, 0.0, 2.0 ]
+ssyr.ndarray( 'upper', 3, 1.0, x, 1, 0, A, 3, 1, 0 );
+// A => <Float32Array>[ 2.0, 4.0, 6.0, 0.0, 5.0, 8.0, 0.0, 0.0, 10.0 ]
 ```
 
 The function has the following additional parameters:
@@ -112,10 +112,10 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 var Float32Array = require( '@stdlib/array/float32' );
 
 var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] );
-var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
+var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 
-ssyr.ndarray( 'upper', 3, 1.0, x, 1, 0, A, 3, 1, 0 );
-// A => <Float32Array>[ 2.0, 4.0, 6.0, 0.0, 5.0, 8.0, 0.0, 0.0, 10.0 ]
+ssyr.ndarray( 'upper', 3, 1.0, x, -2, 4, A, 3, 1, 0 );
+// A => <Float32Array>[ 26.0, 17.0, 8.0, 0.0, 10.0, 5.0, 0.0, 0.0, 2.0 ]
 ```
 
 </section>
