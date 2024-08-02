@@ -140,7 +140,7 @@ jobs:
         id: fix-lint-errors
         run: |
           files="${{ steps.changed-files.outputs.files }}"
-          FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_javascript_files" "$files"
+          FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_javascript_files" "$files" || true
 
       # Add missing trailing newlines:
       - name: 'Add missing trailing newlines'
