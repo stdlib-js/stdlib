@@ -21,11 +21,9 @@ name: markdown_tocs
 
 # Workflow triggers:
 on:
-  pull_request_target:
-    branches:
-      - develop
-    types:
-      - closed
+  schedule:
+    # Run the workflow once a day at 2:00 AM UTC:
+    - cron: '0 2 * * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
