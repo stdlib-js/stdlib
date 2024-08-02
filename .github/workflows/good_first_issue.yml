@@ -56,6 +56,8 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: |
+            # :rotating_light: Important: PLEASE READ :rotating_light:
+
             This issue has been labeled as a **good first issue** and is available for anyone to work on.
 
             If this is your first time contributing to an open source project, some aspects of the development process may seem unusual, arcane, or some combination of both.
