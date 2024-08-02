@@ -68,12 +68,24 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Limit clone depth to the most recent commit:
-          fetch-depth: 1
+          # Fetch all history to allow for changelog generation:
+          fetch-depth: 0
 
           # Specify whether to download Git-LFS files:
           lfs: false
         timeout-minutes: 10
+
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
+          git config --local user.name "stdlib-bot"
+
+      # Apply Git notes:
+      - name: 'Apply Git notes'
+        run: |
+          make apply-git-notes
+        timeout-minutes: 5
 
       # Install Node.js:
       - name: 'Install Node.js'
