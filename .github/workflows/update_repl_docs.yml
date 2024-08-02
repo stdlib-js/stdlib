@@ -21,18 +21,9 @@ name: update_repl_docs
 
 # Workflow triggers:
 on:
-  pull_request_target:
-    branches:
-      - develop
-    types:
-      - closed
-    paths:
-      # List paths for which changes should trigger this workflow:
-      - 'lib/**/namespace/lib/**'
-      - 'lib/**/docs/repl.txt'
-
-      # List paths for which changes should *not* trigger this workflow:
-      - '!lib/**/_tools/**'
+  schedule:
+    # Run the workflow once a day at 2:00 AM UTC:
+    - cron: '0 2 * * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
