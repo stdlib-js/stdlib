@@ -50,7 +50,7 @@ jobs:
 
       # Post a comment:
       - name: 'Add comment'
-        run: gh issue comment "$NUMBER" --comment "$BODY"
+        run: gh issue comment "$NUMBER" --body "$BODY"
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
