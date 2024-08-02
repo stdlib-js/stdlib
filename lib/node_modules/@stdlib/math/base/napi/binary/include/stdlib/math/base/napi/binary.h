@@ -70,6 +70,8 @@
 * @param fcn   binary function
 *
 * @example
+* #include <stdint.h>
+*
 * static int_32 add( const int_32 x, const int_32 y ) {
 *     return x + y;
 * }
@@ -110,6 +112,8 @@
 * @param fcn   binary function
 *
 * @example
+* #include <stdint.h>
+*
 * static double add( const int_32 x, const int_32 y ) {
 *     return x + y;
 * }
