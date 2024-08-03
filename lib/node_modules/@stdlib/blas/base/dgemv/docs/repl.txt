@@ -29,14 +29,14 @@
     α: number
         Scalar constant.
 
-    A: Float32Array
+    A: Float64Array
         Input Matrix.
 
     lda: integer
         Stride of the first dimension of `A` (a.k.a., leading dimension of the
         matrix `A`).
 
-    x: Float32Array
+    x: Float64Array
         First input vector.
 
     sx: integer
@@ -45,7 +45,7 @@
     β: number
         Scalar constant.
 
-    y: Float32Array
+    y: Float64Array
         Second input vector.
 
     sy: integer
@@ -53,36 +53,36 @@
 
     Returns
     -------
-    y: Float32Array
+    y: Float64Array
         Second input vector.
 
     Examples
     --------
     // Standard usage:
-    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
-    > var y = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
-    > var A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var ord = 'row-major';
     > var trans = 'no-transpose';
     > {{alias}}( ord, trans, 2, 2, 1.0, A, 2, x, 1, 1.0, y, 1 )
-    <Float32Array>[ 4.0, 8.0 ]
+    <Float64Array>[ 4.0, 8.0 ]
 
     // Advanced indexing:
-    > x = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
-    > y = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
-    > A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > {{alias}}( ord, trans, 2, 2, 1.0, A, 2, x, -1, 1.0, y, -1 )
-    <Float32Array>[ 8.0, 4.0 ]
+    <Float64Array>[ 8.0, 4.0 ]
 
     // Using typed array views:
-    > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0, 1.0 ] );
-    > var y0 = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
-    > A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-    > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > var y1 = new {{alias:@stdlib/array/float32}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 1.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
     > {{alias}}( ord, trans, 2, 2, 1.0, A, 2, x1, -1, 1.0, y1, -1 );
     > y0
-    <Float32Array>[ 1.0, 8.0 ]
+    <Float64Array>[ 1.0, 8.0 ]
 
 
 {{alias}}.ndarray( trans, M, N, α, A, sa1, sa2, oa, x, sx, ox, β, y, sy, oy )
@@ -109,7 +109,7 @@
     α: number
         Scalar constant.
 
-    A: Float32Array
+    A: Float64Array
         Input Matrix.
 
     sa1: integer
@@ -121,7 +121,7 @@
     oa: integer
         Starting index for `A`.
 
-    x: Float32Array
+    x: Float64Array
         First input vector.
 
     sx: integer
@@ -133,7 +133,7 @@
     β: number
         Scalar constant.
 
-    y: Float32Array
+    y: Float64Array
         Second input vector.
 
     sy: integer
@@ -144,17 +144,17 @@
 
     Returns
     -------
-    y: Float32Array
+    y: Float64Array
         Second input vector.
 
     Examples
     --------
-    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
-    > var y = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
-    > var A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var trans = 'no-transpose';
     > {{alias}}.ndarray( trans, 2, 2, 1, A, 2, 1, 0, x, 1, 0, 1, y, 1, 0 )
-    <Float32Array>[ 4.0, 8.0 ]
+    <Float64Array>[ 4.0, 8.0 ]
 
     See Also
     --------

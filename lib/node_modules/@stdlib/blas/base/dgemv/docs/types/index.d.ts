@@ -23,7 +23,7 @@
 import { Layout, TransposeOperation } from '@stdlib/types/blas';
 
 /**
-* Interface describing `sgemv`.
+* Interface describing `dgemv`.
 */
 interface Routine {
 	/**
@@ -44,16 +44,16 @@ interface Routine {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var x = new Float32Array( [ 1.0, 1.0, 1.0 ] );
-	* var y = new Float32Array( [ 1.0, 1.0 ] );
+	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
+	* var y = new Float64Array( [ 1.0, 1.0 ] );
 	*
-	* sgemv( 'row-major', 'no-transpose', 2, 3, 1.0, A, 3, x, 1, 1.0, y, 1 );
-	* // y => <Float32Array>[ 7.0, 16.0 ]
+	* dgemv( 'row-major', 'no-transpose', 2, 3, 1.0, A, 3, x, 1, 1.0, y, 1 );
+	* // y => <Float64Array>[ 7.0, 16.0 ]
 	*/
-	( order: Layout, trans: TransposeOperation, M: number, N: number, alpha: number, A: Float32Array, LDA: number, x: Float32Array, strideX: number, beta: number, y: Float32Array, strideY: number ): Float32Array;
+	( order: Layout, trans: TransposeOperation, M: number, N: number, alpha: number, A: Float64Array, LDA: number, x: Float64Array, strideX: number, beta: number, y: Float64Array, strideY: number ): Float64Array;
 
 	/**
 	* Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`, using alternative indexing semantics and where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
@@ -76,16 +76,16 @@ interface Routine {
 	* @returns `y`
 	*
 	* @example
-	* var Float32Array = require( '@stdlib/array/float32' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var x = new Float32Array( [ 1.0, 1.0, 1.0 ] );
-	* var y = new Float32Array( [ 1.0, 1.0 ] );
+	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
+	* var y = new Float64Array( [ 1.0, 1.0 ] );
 	*
-	* sgemv( 'no-transpose', 2, 3, 1.0, A, 3, 1, 0, x, 1, 0, 1.0, y, 1, 0 );
-	* // y => <Float32Array>[ 7.0, 16.0 ]
+	* dgemv( 'no-transpose', 2, 3, 1.0, A, 3, 1, 0, x, 1, 0, 1.0, y, 1, 0 );
+	* // y => <Float64Array>[ 7.0, 16.0 ]
 	*/
-	ndarray( trans: TransposeOperation, M: number, N: number, alpha: number, A: Float32Array, strideA1: number, strideA2: number, offsetA: number, x: Float32Array, strideX: number, offsetX: number, beta: number, y: Float32Array, strideY: number, offsetY: number ): Float32Array;
+	ndarray( trans: TransposeOperation, M: number, N: number, alpha: number, A: Float64Array, strideA1: number, strideA2: number, offsetA: number, x: Float64Array, strideX: number, offsetX: number, beta: number, y: Float64Array, strideY: number, offsetY: number ): Float64Array;
 }
 
 /**
@@ -106,28 +106,28 @@ interface Routine {
 * @returns `y`
 *
 * @example
-* var Float32Array = require( '@stdlib/array/float32' );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
-* var A = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0 ] );
-* var x = new Float32Array( [ 1.0, 1.0, 1.0 ] );
-* var y = new Float32Array( [ 1.0, 1.0, 1.0 ] );
+* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0 ] );
+* var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
+* var y = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 *
-* sgemv( 'row-major', 'no-transpose', 3, 3, 1.0, A, 3, x1, -1, 1.0, y1, -1 );
-* // y => <Float32Array>[ 25.0, 16.0, 7.0 ]
+* dgemv( 'row-major', 'no-transpose', 3, 3, 1.0, A, 3, x1, -1, 1.0, y1, -1 );
+* // y => <Float64Array>[ 25.0, 16.0, 7.0 ]
 *
 * @example
-* var Float32Array = require( '@stdlib/array/float32' );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
-* var A = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0 ] );
-* var x = new Float32Array( [ 1.0, 1.0, 1.0 ] );
-* var y = new Float32Array( [ 1.0, 1.0, 1.0 ] );
+* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0 ] );
+* var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
+* var y = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 *
-* sgemv.ndarray( 'no-transpose', 3, 3, 1.0, A, 3, 1, 0, x1, -1, 2, 1.0, y1, -1, 2 );
-* // y => <Float32Array>[ 25.0, 16.0, 7.0 ]
+* dgemv.ndarray( 'no-transpose', 3, 3, 1.0, A, 3, 1, 0, x1, -1, 2, 1.0, y1, -1, 2 );
+* // y => <Float64Array>[ 25.0, 16.0, 7.0 ]
 */
-declare var sgemv: Routine;
+declare var dgemv: Routine;
 
 
 // EXPORTS //
 
-export = sgemv;
+export = dgemv;
