@@ -41,7 +41,6 @@
         "@stdlib/math/base/napi/binary",
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/gcd",
-        "@stdlib/math/base/assert/is-odd",
         "@stdlib/constants/float64/pinf",
         "@stdlib//constants/float64/max-safe-integer"
       ]
@@ -61,7 +60,6 @@
       "dependencies": [
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/gcd",
-        "@stdlib/math/base/assert/is-odd",
         "@stdlib/constants/float64/pinf",
         "@stdlib//constants/float64/max-safe-integer"
       ]
@@ -81,7 +79,6 @@
       "dependencies": [
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/gcd",
-        "@stdlib/math/base/assert/is-odd",
         "@stdlib/constants/float64/pinf",
         "@stdlib//constants/float64/max-safe-integer"
       ]
