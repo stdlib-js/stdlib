@@ -403,7 +403,7 @@ static double polyval_w( const double x ) {
 * // returns 0.0
 */
 double stdlib_base_gammaln( const double x ) {
-	bool isNegative;
+	uint8_t isNegative;
 	int32_t flg;
 	double nadj;
 	double xc;
@@ -429,10 +429,10 @@ double stdlib_base_gammaln( const double x ) {
 	}
 	xc = x;
 	if ( xc < 0.0 ) {
-		isNegative = true;
+		isNegative = 1;
 		xc = -xc;
 	} else {
-		isNegative = false;
+		isNegative = 0;
 	}
 
 	// If |x| < 2**-56, return -ln(|x|)
@@ -483,7 +483,7 @@ double stdlib_base_gammaln( const double x ) {
 				flg = 2;
 			}
 		}
-		switch ( flg ) { // eslint-disable-line default-case
+		switch ( flg ) {
 		case 0:
 			z = y * y;
 			p1 = A1C + ( z * polyval_a1( z ) );
@@ -513,7 +513,7 @@ double stdlib_base_gammaln( const double x ) {
 		q = RC + ( y * polyval_r( y ) );
 		r = ( 0.5 * y ) + ( p / q );
 		z = 1.0; // gammaln(1+s) = ln(s) + gammaln(s)
-		switch ( flg ) { // eslint-disable-line default-case
+		switch ( flg ) {
 		case 7:
 			z *= y + 6.0;
 
