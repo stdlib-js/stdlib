@@ -19,7 +19,6 @@
 #include "stdlib/math/base/special/binomcoef.h"
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/math/base/special/gcd.h"
-#include "stdlib/math/base/assert/is_odd.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib//constants/float64/max_safe_integer.h"
 #include <stdint.h>
@@ -53,7 +52,7 @@ double stdlib_base_binomcoef( const int64_t n, const int64_t k ) {
 	nc = n;
 	if ( nc < 0 ) {
 		nc = -nc + k - 1;
-		if ( stdlib_base_is_odd( (double)k ) ) {
+		if ( k & 1 ) {
 			sgn *= -1.0;
 		}
 	}
@@ -64,7 +63,7 @@ double stdlib_base_binomcoef( const int64_t n, const int64_t k ) {
 		return sgn;
 	}
 	if ( k == 1 || k == nc - 1 ) {
-		return sgn * nc;
+		return sgn * (double)nc;
 	}
 
 	// Minimize the number of computed terms by leveraging symmetry:
