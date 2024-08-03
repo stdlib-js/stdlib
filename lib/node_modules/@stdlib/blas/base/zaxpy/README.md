@@ -36,7 +36,7 @@ Scales values from `zx` by `za` and adds the result to `zy`.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var Complex128 = require('@stdlib/complex/float64/ctor');
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
 
