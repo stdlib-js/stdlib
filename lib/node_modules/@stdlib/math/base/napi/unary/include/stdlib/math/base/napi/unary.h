@@ -112,13 +112,13 @@
 *
 * @example
 * #include "stdlib/complex/float64/ctor.h"
-* #include "stdlib/complex/reim.h"
+* #include "stdlib/complex/float64/reim.h"
 *
 * static stdlib_complex128_t scale( const stdlib_complex128_t x ) {
 *     double re;
 *     double im;
 *
-*     stdlib_reim( x, &re, &im );
+*     stdlib_complex128_reim( x, &re, &im );
 *
 *     re *= 10.0;
 *     im *= 10.0;
@@ -205,13 +205,13 @@
 *
 * @example
 * #include "stdlib/complex/float32/ctor.h"
-* #include "stdlib/complex/reimf.h"
+* #include "stdlib/complex/float32/reim.h"
 *
 * static stdlib_complex64_t scale( const stdlib_complex64_t x ) {
 *     float re;
 *     float im;
 *
-*     stdlib_reimf( x, &re, &im );
+*     stdlib_complex64_reim( x, &re, &im );
 *
 *     re *= 10.0f;
 *     im *= 10.0f;

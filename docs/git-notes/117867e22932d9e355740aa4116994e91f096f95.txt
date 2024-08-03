@@ -1,0 +1,7 @@
+---
+type: filter-packages
+exclude:
+  - complex/float32/parse
+  - error/tools/id2pkg
+  - error/tools/pkg2id
+---

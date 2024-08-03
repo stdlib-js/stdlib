@@ -67,7 +67,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmul",
+        "@stdlib/complex/float64/base/mul",
         "@stdlib/complex/float64/ctor"
       ]
     },
@@ -86,7 +86,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmul",
+        "@stdlib/complex/float64/base/mul",
         "@stdlib/complex/float64/ctor"
       ]
     },
@@ -199,7 +199,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmul",
+        "@stdlib/complex/float64/base/mul",
         "@stdlib/complex/float64/ctor"
       ]
     },
@@ -218,7 +218,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmul",
+        "@stdlib/complex/float64/base/mul",
         "@stdlib/complex/float64/ctor"
       ]
     },
@@ -379,7 +379,7 @@
         "@stdlib/napi/argv-strided-complex128array",
         "@stdlib/napi/argv-complex128",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/math/base/ops/cmul"
+        "@stdlib/complex/float64/base/mul"
       ]
     },
     {
@@ -397,7 +397,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmul",
+        "@stdlib/complex/float64/base/mul",
         "@stdlib/complex/float64/ctor"
       ]
     },
@@ -416,7 +416,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmul",
+        "@stdlib/complex/float64/base/mul",
         "@stdlib/complex/float64/ctor"
       ]
     },
@@ -436,7 +436,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmul",
+        "@stdlib/complex/float64/base/mul",
         "@stdlib/complex/float64/ctor"
       ]
     }

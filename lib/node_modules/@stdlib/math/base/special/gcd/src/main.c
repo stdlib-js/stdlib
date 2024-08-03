@@ -30,7 +30,6 @@ static const int64_t STDLIB_CONSTANT_INT64_MAX = 9223372036854775807;
 /**
 * Computes the greatest common divisor (gcd) using the binary GCD algorithm.
 *
-* @private
 * @param a    input value
 * @param b    input value
 * @return     output value
@@ -87,7 +86,6 @@ static double largeIntegers( const double a, const double b ) {
 /**
 * Computes the greatest common divisor (gcd) using the binary GCD algorithm and bitwise operations.
 *
-* @private
 * @param a    input value
 * @param b    input value
 * @return     output value

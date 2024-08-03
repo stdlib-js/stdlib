@@ -46,8 +46,8 @@ Parse a string representation of a 64-bit [complex number][@stdlib/complex/float
 
 ```javascript
 var parseComplex64 = require( '@stdlib/complex/float32/parse' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var real = require( '@stdlib/complex/float32/real' );
+var imag = require( '@stdlib/complex/float32/imag' );
 
 var str = '5 + 3i';
 
@@ -86,8 +86,8 @@ For details on the string format, see [Complex64][@stdlib/complex/float32/ctor].
 ```javascript
 var parseComplex64 = require( '@stdlib/complex/float32/parse' );
 var isComplex64 = require( '@stdlib/assert/is-complex64' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var real = require( '@stdlib/complex/float32/real' );
+var imag = require( '@stdlib/complex/float32/imag' );
 
 var str = '1e3 - 2.75i';
 
