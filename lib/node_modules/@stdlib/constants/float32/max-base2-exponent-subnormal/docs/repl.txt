@@ -1,0 +1,13 @@
+
+{{alias}}
+    The maximum biased base 2 exponent for a subnormal single-precision
+    floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    -127
+
+    See Also
+    --------
+
