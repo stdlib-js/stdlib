@@ -128,6 +128,7 @@ strsv.ndarray( 'upper', 'no-transpose', 'unit', 3, A, 3, 1, 0, x, -1, 2 );
 ## Notes
 
 -   `strsv()` corresponds to the [BLAS][blas] level 2 function [`strsv`][blas-strsv].
+-   Neither routine tests for singularity or near-singularity. Such tests must be performed before calling the routines.
 
 </section>
 
