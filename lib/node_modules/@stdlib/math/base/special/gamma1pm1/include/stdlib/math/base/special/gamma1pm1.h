@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,15 +16,23 @@
 * limitations under the License.
 */
 
-'use strict';
+#ifndef STDLIB_MATH_BASE_SPECIAL_GAMMA1PM1_H
+#define STDLIB_MATH_BASE_SPECIAL_GAMMA1PM1_H
 
-var randu = require( '@stdlib/random/base/randu' );
-var gamma1pm1 = require( './../lib' );
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-var x;
-var i;
+/**
+* Computes `gamma(x+1) - 1`.
+*/
+double stdlib_base_gamma1pm1( const double x );
 
-for ( i = 0; i < 100; i++ ) {
-	x = (randu()*10.0) - 5.0;
-	console.log( 'gamma(%d+1) - 1 = %d', x, gamma1pm1( x ) );
+#ifdef __cplusplus
 }
+#endif
+
+#endif // !STDLIB_MATH_BASE_SPECIAL_GAMMA1PM1_H
