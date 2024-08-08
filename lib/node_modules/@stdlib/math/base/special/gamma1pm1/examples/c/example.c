@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,15 +16,16 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/gamma1pm1.h"
+#include <stdio.h>
 
-var randu = require( '@stdlib/random/base/randu' );
-var gamma1pm1 = require( './../lib' );
+int main( void ) {
+	const double x[] = { 4.0, -1.5, -0.5, 0.5 };
 
-var x;
-var i;
-
-for ( i = 0; i < 100; i++ ) {
-	x = (randu()*10.0) - 5.0;
-	console.log( 'gamma(%d+1) - 1 = %d', x, gamma1pm1( x ) );
+	double y;
+	int i;
+	for ( i = 0; i < 4; i++ ) {
+		y = stdlib_base_gamma1pm1( x[ i ] );
+		printf( "gamma1pm1(%lf) = %lf\n", x[ i ], y );
+	}
 }
