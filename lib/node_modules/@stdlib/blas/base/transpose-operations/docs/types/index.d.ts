@@ -25,7 +25,7 @@
 *
 * @example
 * var list = transposeOperations();
-* // e.g., returns [ 'none', 'transpose', 'conjugate-transpose' ]
+* // e.g., returns [ 'no-transpose', 'transpose', 'conjugate-transpose' ]
 */
 declare function transposeOperations(): Array<string>;
 

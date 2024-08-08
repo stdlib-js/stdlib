@@ -47,8 +47,8 @@ Returns an accessor function for setting an element in an array-like object supp
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
+var realf = require( '@stdlib/complex/float32/real' );
+var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( [ 1, 2, 3, 4 ] );
 

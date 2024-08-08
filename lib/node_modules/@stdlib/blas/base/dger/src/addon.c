@@ -51,8 +51,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, M, strideX, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, strideY, argv, 6 );
 
-	// FIXME: need to parse a strided 2D matrix
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, A, M*N, 1, argv, 8 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, A, ((M-1)*LDA) + N, 1, argv, 8 );
 
 	API_SUFFIX(c_dger)( layout, M, N, alpha, X, strideX, Y, strideY, A, LDA );
 

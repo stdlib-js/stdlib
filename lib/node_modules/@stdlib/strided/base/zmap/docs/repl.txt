@@ -44,9 +44,9 @@
     > {{alias}}( x.length, x, 1, y, 1, {{alias:@stdlib/math/base/special/cidentity}} );
     > var v = y.get( 0 )
     <Complex128>
-    > var re = {{alias:@stdlib/complex/real}}( v )
+    > var re = {{alias:@stdlib/complex/float64/real}}( v )
     1.0
-    > var im = {{alias:@stdlib/complex/imag}}( v )
+    > var im = {{alias:@stdlib/complex/float64/imag}}( v )
     2.0
 
     // Using `N` and stride parameters:
@@ -54,9 +54,9 @@
     > {{alias}}( 2, x, 2, y, -1, {{alias:@stdlib/math/base/special/cidentity}} );
     > v = y.get( 0 )
     <Complex128>
-    > re = {{alias:@stdlib/complex/real}}( v )
+    > re = {{alias:@stdlib/complex/float64/real}}( v )
     5.0
-    > im = {{alias:@stdlib/complex/imag}}( v )
+    > im = {{alias:@stdlib/complex/float64/imag}}( v )
     6.0
 
     // Using view offsets:
@@ -67,9 +67,9 @@
     > {{alias}}( 2, x1, -2, y1, 1, {{alias:@stdlib/math/base/special/cidentity}} );
     > v = y1.get( 0 )
     <Complex128>
-    > re = {{alias:@stdlib/complex/real}}( v )
+    > re = {{alias:@stdlib/complex/float64/real}}( v )
     7.0
-    > im = {{alias:@stdlib/complex/imag}}( v )
+    > im = {{alias:@stdlib/complex/float64/imag}}( v )
     8.0
 
 
@@ -122,9 +122,9 @@
     > {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0, {{alias:@stdlib/math/base/special/cidentity}} );
     > var v = y.get( 0 )
     <Complex128>
-    > var re = {{alias:@stdlib/complex/real}}( v )
+    > var re = {{alias:@stdlib/complex/float64/real}}( v )
     1.0
-    > var im = {{alias:@stdlib/complex/imag}}( v )
+    > var im = {{alias:@stdlib/complex/float64/imag}}( v )
     2.0
 
     // Advanced indexing:
@@ -133,9 +133,9 @@
     > {{alias}}.ndarray( 2, x, 2, 1, y, -1, y.length-1, {{alias:@stdlib/math/base/special/cidentity}} );
     > v = y.get( y.length-1 )
     <Complex128>
-    > re = {{alias:@stdlib/complex/real}}( v )
+    > re = {{alias:@stdlib/complex/float64/real}}( v )
     3.0
-    > im = {{alias:@stdlib/complex/imag}}( v )
+    > im = {{alias:@stdlib/complex/float64/imag}}( v )
     4.0
 
     See Also
