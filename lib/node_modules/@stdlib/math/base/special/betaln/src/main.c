@@ -58,7 +58,7 @@ static const double XBIG = 94906265.62425156;
 static const double XMAX = 3.745194030963158e306;
 
 /**
-* Evaluate the n-term Chebyshev series at `x`.
+* Evaluates the n-term Chebyshev series at `x`.
 *
 * ## References
 *
@@ -90,7 +90,7 @@ static double dceval( const double x ) {
 }
 
 /**
-* Compute the log gamma correction factor for `x >= 10`.
+* Computes the log gamma correction factor for `x >= 10`.
 *
 * ```tex
 * \log(\gamma(x)) = \log(\sqrt{2*\Pi}) + (x-0.5) \cdot \log(x) - x \operatorname{R9LGMC}(x).
@@ -115,7 +115,7 @@ static double gammaCorrection( const double x ) {
 }
 
 /**
-* Evaluate the natural logarithm of the beta function.
+* Evaluates the natural logarithm of the beta function.
 *
 * @param a    first input value
 * @param b    second input value
