@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -51,12 +51,12 @@
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* static int16_t add( int16_t x, int16_t y ) {
+* static int16_t fcn( int16_t x, int16_t y ) {
 *     return x + y;
 * }
 *
 * // Apply the callback:
-* stdlib_strided_bs_k_as_kk_k( arrays, shape, strides, (void *)add );
+* stdlib_strided_bs_k_as_kk_k( arrays, shape, strides, (void *)fcn );
 */
 void stdlib_strided_bs_k_as_kk_k( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	typedef int16_t func_type( const int16_t x, const int16_t y );

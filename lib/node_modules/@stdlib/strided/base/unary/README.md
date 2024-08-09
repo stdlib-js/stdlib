@@ -191,6 +191,7 @@ Character codes for data types:
 
 <!-- charcodes -->
 
+-   **x**: `bool` (boolean).
 -   **c**: `complex64` (single-precision floating-point complex number).
 -   **z**: `complex128` (double-precision floating-point complex number).
 -   **f**: `float32` (single-precision floating-point number).
@@ -5998,6 +5999,47 @@ The function accepts the following arguments:
 
 ```c
 void stdlib_strided_u_z_as_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_x_x( \*arrays\[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback to strided input array elements and assigns results to elements in a strided output array.
+
+```c
+#include <stdbool.h>
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 1, 1 };
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+static bool fcn( bool x ) {
+    return x;
+}
+
+// Apply the callback:
+stdlib_strided_x_x( arrays, shape, strides, (void *)fcn );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose second element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `bool (*f)(bool)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_x_x( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_z_d_as_z_d( \*arrays\[], \*shape, \*strides, \*fcn )

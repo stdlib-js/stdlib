@@ -179,6 +179,113 @@ console.log( y );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/srot.h"
+```
+
+#### c_srot( N, \*X, strideX, \*Y, strideY, c, s )
+
+Applies a plane rotation.
+
+```c
+float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
+float y[] = { 6.0f, 7.0f, 8.0f, 9.0f, 10.0f };
+
+c_drot( 5, x, 1, y, 1, 0.8f, 0.6f );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[inout] float*` first input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **Y**: `[inout] float*` second input array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **c**: `[in] float` cosine of the angle of rotation.
+-   **s**: `[in] float` sine of the angle of rotation.
+
+```c
+void c_drot( const CBLAS_INT N, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY, const float c, const float s );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/drot.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays:
+    float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
+    float y[] = { 6.0f, 7.0f, 8.0f, 9.0f, 10.0f };
+
+    // Specify the number of elements:
+    const int N = 5;
+
+    // Specify stride lengths:
+    const int strideX = 1;
+    const int strideY = 1;
+
+    // Specify angle of rotation:
+    const float c = 0.8f;
+    const float s = 0.6f;
+
+    // Apply plane rotation:
+    c_drot( N, x, strideX, y, strideY, c, s );
+
+    // Print the result:
+    for ( int i = 0; i < 5; i++ ) {
+        printf( "x[ %i ] = %f, y[ %i ] = %f\n", i, x[ i ], i, y[ i ] );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

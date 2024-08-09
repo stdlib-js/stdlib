@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `ndarray`.
-*/
 #include "stdlib/ndarray/ctor.h"
 #include "stdlib/ndarray/dtypes.h"
 #include "stdlib/ndarray/index_modes.h"
@@ -38,7 +35,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version() {
+static void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -48,7 +45,7 @@ void print_version() {
 * @param total     total number of tests
 * @param passing   total number of passing tests
 */
-void print_summary( int total, int passing ) {
+static void print_summary( int total, int passing ) {
 	printf( "#\n" );
 	printf( "1..%d\n", total ); // TAP plan
 	printf( "# total %d\n", total );
@@ -62,7 +59,7 @@ void print_summary( int total, int passing ) {
 *
 * @param elapsed   elapsed time in seconds
 */
-void print_results( double elapsed ) {
+static void print_results( double elapsed ) {
 	double rate = (double)ITERATIONS / elapsed;
 	printf( "  ---\n" );
 	printf( "  iterations: %d\n", ITERATIONS );
@@ -76,18 +73,18 @@ void print_results( double elapsed ) {
 *
 * @return clock time
 */
-double tic() {
+static double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
 }
 
 /**
-* Generates a random double on the interval [0,1].
+* Generates a random number on the interval [0,1).
 *
-* @return random double
+* @return random number
 */
-double rand_double() {
+static double rand_double( void ) {
 	int r = rand();
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }
@@ -97,7 +94,7 @@ double rand_double() {
 *
 * @return elapsed time in seconds
 */
-double benchmark1() {
+static double benchmark1( void ) {
 	double elapsed;
 	double t;
 	int i;
@@ -138,7 +135,7 @@ double benchmark1() {
 *
 * @return elapsed time in seconds
 */
-double benchmark2() {
+static double benchmark2( void ) {
 	double elapsed;
 	int64_t v;
 	double t;
@@ -182,7 +179,7 @@ double benchmark2() {
 *
 * @return elapsed time in seconds
 */
-double benchmark3() {
+static double benchmark3( void ) {
 	double elapsed;
 	uint8_t *v;
 	double t;
@@ -226,7 +223,7 @@ double benchmark3() {
 *
 * @return elapsed time in seconds
 */
-double benchmark4() {
+static double benchmark4( void ) {
 	enum STDLIB_NDARRAY_DTYPE v;
 	double elapsed;
 	double t;
@@ -270,7 +267,7 @@ double benchmark4() {
 *
 * @return elapsed time in seconds
 */
-double benchmark5() {
+static double benchmark5( void ) {
 	double elapsed;
 	int64_t v;
 	double t;
@@ -313,7 +310,7 @@ double benchmark5() {
 *
 * @return elapsed time in seconds
 */
-double benchmark6() {
+static double benchmark6( void ) {
 	double elapsed;
 	int64_t v;
 	double t;
@@ -357,7 +354,7 @@ double benchmark6() {
 *
 * @return elapsed time in seconds
 */
-double benchmark7() {
+static double benchmark7( void ) {
 	double elapsed;
 	int64_t v;
 	double t;
@@ -401,7 +398,7 @@ double benchmark7() {
 *
 * @return elapsed time in seconds
 */
-double benchmark8() {
+static double benchmark8( void ) {
 	double elapsed;
 	int64_t v;
 	double t;
@@ -445,7 +442,7 @@ double benchmark8() {
 *
 * @return elapsed time in seconds
 */
-double benchmark9() {
+static double benchmark9( void ) {
 	enum STDLIB_NDARRAY_ORDER v;
 	double elapsed;
 	double t;
@@ -489,7 +486,7 @@ double benchmark9() {
 *
 * @return elapsed time in seconds
 */
-double benchmark10() {
+static double benchmark10( void ) {
 	double elapsed;
 	int64_t *v;
 	double t;
@@ -533,7 +530,7 @@ double benchmark10() {
 *
 * @return elapsed time in seconds
 */
-double benchmark11() {
+static double benchmark11( void ) {
 	double elapsed;
 	int64_t *v;
 	double t;
@@ -577,7 +574,7 @@ double benchmark11() {
 *
 * @return elapsed time in seconds
 */
-double benchmark12() {
+static double benchmark12( void ) {
 	double elapsed;
 	int64_t sub[1];
 	uint8_t v;
@@ -624,7 +621,7 @@ double benchmark12() {
 *
 * @return elapsed time in seconds
 */
-double benchmark13() {
+static double benchmark13( void ) {
 	double elapsed;
 	int64_t sub[1];
 	uint8_t v;
@@ -671,7 +668,7 @@ double benchmark13() {
 *
 * @return elapsed time in seconds
 */
-double benchmark14() {
+static double benchmark14( void ) {
 	double elapsed;
 	int64_t sub[1];
 	uint8_t v;
@@ -724,7 +721,7 @@ double benchmark14() {
 *
 * @return elapsed time in seconds
 */
-double benchmark15() {
+static double benchmark15( void ) {
 	double elapsed;
 	int64_t sub[2];
 	uint8_t v;
@@ -773,7 +770,7 @@ double benchmark15() {
 *
 * @return elapsed time in seconds
 */
-double benchmark16() {
+static double benchmark16( void ) {
 	double elapsed;
 	int64_t sub[2];
 	uint8_t v;
@@ -822,7 +819,7 @@ double benchmark16() {
 *
 * @return elapsed time in seconds
 */
-double benchmark17() {
+static double benchmark17( void ) {
 	double elapsed;
 	int64_t sub[2];
 	uint8_t v;
@@ -871,7 +868,7 @@ double benchmark17() {
 *
 * @return elapsed time in seconds
 */
-double benchmark18() {
+static double benchmark18( void ) {
 	double elapsed;
 	int64_t sub[3];
 	uint8_t v;
@@ -921,7 +918,7 @@ double benchmark18() {
 *
 * @return elapsed time in seconds
 */
-double benchmark19() {
+static double benchmark19( void ) {
 	double elapsed;
 	int64_t sub[3];
 	uint8_t v;
@@ -971,7 +968,7 @@ double benchmark19() {
 *
 * @return elapsed time in seconds
 */
-double benchmark20() {
+static double benchmark20( void ) {
 	double elapsed;
 	int64_t sub[3];
 	uint8_t v;
@@ -1021,7 +1018,7 @@ double benchmark20() {
 *
 * @return elapsed time in seconds
 */
-double benchmark21() {
+static double benchmark21( void ) {
 	double elapsed;
 	int64_t sub[4];
 	uint8_t v;
@@ -1072,7 +1069,7 @@ double benchmark21() {
 *
 * @return elapsed time in seconds
 */
-double benchmark22() {
+static double benchmark22( void ) {
 	double elapsed;
 	int64_t sub[4];
 	uint8_t v;
@@ -1123,7 +1120,7 @@ double benchmark22() {
 *
 * @return elapsed time in seconds
 */
-double benchmark23() {
+static double benchmark23( void ) {
 	double elapsed;
 	int64_t sub[4];
 	uint8_t v;
@@ -1174,7 +1171,7 @@ double benchmark23() {
 *
 * @return elapsed time in seconds
 */
-double benchmark24() {
+static double benchmark24( void ) {
 	double elapsed;
 	int64_t sub[5];
 	uint8_t v;
@@ -1226,7 +1223,7 @@ double benchmark24() {
 *
 * @return elapsed time in seconds
 */
-double benchmark25() {
+static double benchmark25( void ) {
 	double elapsed;
 	int64_t sub[5];
 	uint8_t v;
@@ -1278,7 +1275,7 @@ double benchmark25() {
 *
 * @return elapsed time in seconds
 */
-double benchmark26() {
+static double benchmark26( void ) {
 	double elapsed;
 	int64_t sub[5];
 	uint8_t v;
@@ -1330,7 +1327,7 @@ double benchmark26() {
 *
 * @return elapsed time in seconds
 */
-double benchmark27() {
+static double benchmark27( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -1377,7 +1374,7 @@ double benchmark27() {
 *
 * @return elapsed time in seconds
 */
-double benchmark28() {
+static double benchmark28( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -1424,7 +1421,7 @@ double benchmark28() {
 *
 * @return elapsed time in seconds
 */
-double benchmark29() {
+static double benchmark29( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -1471,7 +1468,7 @@ double benchmark29() {
 *
 * @return elapsed time in seconds
 */
-double benchmark30() {
+static double benchmark30( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -1518,7 +1515,7 @@ double benchmark30() {
 *
 * @return elapsed time in seconds
 */
-double benchmark31() {
+static double benchmark31( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -1565,7 +1562,7 @@ double benchmark31() {
 *
 * @return elapsed time in seconds
 */
-double benchmark32() {
+static double benchmark32( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -1612,7 +1609,7 @@ double benchmark32() {
 *
 * @return elapsed time in seconds
 */
-double benchmark33() {
+static double benchmark33( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -1659,7 +1656,7 @@ double benchmark33() {
 *
 * @return elapsed time in seconds
 */
-double benchmark34() {
+static double benchmark34( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -1706,7 +1703,7 @@ double benchmark34() {
 *
 * @return elapsed time in seconds
 */
-double benchmark35() {
+static double benchmark35( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -1753,7 +1750,7 @@ double benchmark35() {
 *
 * @return elapsed time in seconds
 */
-double benchmark36() {
+static double benchmark36( void ) {
 	double elapsed;
 	int64_t sub[1];
 	uint8_t v;
@@ -1801,7 +1798,7 @@ double benchmark36() {
 *
 * @return elapsed time in seconds
 */
-double benchmark37() {
+static double benchmark37( void ) {
 	double elapsed;
 	int64_t sub[1];
 	uint8_t v;
@@ -1849,7 +1846,7 @@ double benchmark37() {
 *
 * @return elapsed time in seconds
 */
-double benchmark38() {
+static double benchmark38( void ) {
 	double elapsed;
 	int64_t sub[1];
 	uint8_t v;
@@ -1903,7 +1900,7 @@ double benchmark38() {
 *
 * @return elapsed time in seconds
 */
-double benchmark39() {
+static double benchmark39( void ) {
 	double elapsed;
 	int64_t sub[2];
 	uint8_t v;
@@ -1953,7 +1950,7 @@ double benchmark39() {
 *
 * @return elapsed time in seconds
 */
-double benchmark40() {
+static double benchmark40( void ) {
 	double elapsed;
 	int64_t sub[2];
 	uint8_t v;
@@ -2003,7 +2000,7 @@ double benchmark40() {
 *
 * @return elapsed time in seconds
 */
-double benchmark41() {
+static double benchmark41( void ) {
 	double elapsed;
 	int64_t sub[2];
 	uint8_t v;
@@ -2053,7 +2050,7 @@ double benchmark41() {
 *
 * @return elapsed time in seconds
 */
-double benchmark42() {
+static double benchmark42( void ) {
 	double elapsed;
 	int64_t sub[3];
 	uint8_t v;
@@ -2104,7 +2101,7 @@ double benchmark42() {
 *
 * @return elapsed time in seconds
 */
-double benchmark43() {
+static double benchmark43( void ) {
 	double elapsed;
 	int64_t sub[3];
 	uint8_t v;
@@ -2155,7 +2152,7 @@ double benchmark43() {
 *
 * @return elapsed time in seconds
 */
-double benchmark44() {
+static double benchmark44( void ) {
 	double elapsed;
 	int64_t sub[3];
 	uint8_t v;
@@ -2206,7 +2203,7 @@ double benchmark44() {
 *
 * @return elapsed time in seconds
 */
-double benchmark45() {
+static double benchmark45( void ) {
 	double elapsed;
 	int64_t sub[4];
 	uint8_t v;
@@ -2258,7 +2255,7 @@ double benchmark45() {
 *
 * @return elapsed time in seconds
 */
-double benchmark46() {
+static double benchmark46( void ) {
 	double elapsed;
 	int64_t sub[4];
 	uint8_t v;
@@ -2310,7 +2307,7 @@ double benchmark46() {
 *
 * @return elapsed time in seconds
 */
-double benchmark47() {
+static double benchmark47( void ) {
 	double elapsed;
 	int64_t sub[4];
 	uint8_t v;
@@ -2362,7 +2359,7 @@ double benchmark47() {
 *
 * @return elapsed time in seconds
 */
-double benchmark48() {
+static double benchmark48( void ) {
 	double elapsed;
 	int64_t sub[5];
 	uint8_t v;
@@ -2415,7 +2412,7 @@ double benchmark48() {
 *
 * @return elapsed time in seconds
 */
-double benchmark49() {
+static double benchmark49( void ) {
 	double elapsed;
 	int64_t sub[5];
 	uint8_t v;
@@ -2468,7 +2465,7 @@ double benchmark49() {
 *
 * @return elapsed time in seconds
 */
-double benchmark50() {
+static double benchmark50( void ) {
 	double elapsed;
 	int64_t sub[5];
 	uint8_t v;
@@ -2521,7 +2518,7 @@ double benchmark50() {
 *
 * @return elapsed time in seconds
 */
-double benchmark51() {
+static double benchmark51( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -2569,7 +2566,7 @@ double benchmark51() {
 *
 * @return elapsed time in seconds
 */
-double benchmark52() {
+static double benchmark52( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -2617,7 +2614,7 @@ double benchmark52() {
 *
 * @return elapsed time in seconds
 */
-double benchmark53() {
+static double benchmark53( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -2671,7 +2668,7 @@ double benchmark53() {
 *
 * @return elapsed time in seconds
 */
-double benchmark54() {
+static double benchmark54( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -2719,7 +2716,7 @@ double benchmark54() {
 *
 * @return elapsed time in seconds
 */
-double benchmark55() {
+static double benchmark55( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -2767,7 +2764,7 @@ double benchmark55() {
 *
 * @return elapsed time in seconds
 */
-double benchmark56() {
+static double benchmark56( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -2815,7 +2812,7 @@ double benchmark56() {
 *
 * @return elapsed time in seconds
 */
-double benchmark57() {
+static double benchmark57( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -2863,7 +2860,7 @@ double benchmark57() {
 *
 * @return elapsed time in seconds
 */
-double benchmark58() {
+static double benchmark58( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -2911,7 +2908,7 @@ double benchmark58() {
 *
 * @return elapsed time in seconds
 */
-double benchmark59() {
+static double benchmark59( void ) {
 	double elapsed;
 	int64_t idx;
 	uint8_t v;
@@ -2959,7 +2956,7 @@ double benchmark59() {
 *
 * @return elapsed time in seconds
 */
-double benchmark60() {
+static double benchmark60( void ) {
 	double elapsed;
 	int64_t v;
 	int64_t j;
@@ -3004,7 +3001,7 @@ double benchmark60() {
 *
 * @return elapsed time in seconds
 */
-double benchmark61() {
+static double benchmark61( void ) {
 	double elapsed;
 	int64_t v;
 	int64_t j;
@@ -3049,7 +3046,7 @@ double benchmark61() {
 *
 * @return elapsed time in seconds
 */
-double benchmark62() {
+static double benchmark62( void ) {
 	enum STDLIB_NDARRAY_INDEX_MODE v;
 	double elapsed;
 	double t;
@@ -3093,7 +3090,7 @@ double benchmark62() {
 *
 * @return elapsed time in seconds
 */
-double benchmark63() {
+static double benchmark63( void ) {
 	double elapsed;
 	int8_t *v;
 	double t;
@@ -3137,7 +3134,7 @@ double benchmark63() {
 *
 * @return elapsed time in seconds
 */
-double benchmark64() {
+static double benchmark64( void ) {
 	enum STDLIB_NDARRAY_INDEX_MODE v;
 	double elapsed;
 	int64_t j;
