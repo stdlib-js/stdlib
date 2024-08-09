@@ -78,9 +78,9 @@ static double tic( void ) {
 *
 * @return random number
 */
-static double rand_double( void ) {
+static float rand_float( void ) {
 	int r = rand();
-	return (double)r / ( (double)RAND_MAX + 1.0 );
+	return (float)r / ( (float)RAND_MAX + 1.0f );
 }
 
 /**
@@ -90,14 +90,14 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
-	double y;
 	double t;
+	float x;
+	float y;
 	int i;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 1000.0*rand_double() ) - 500.0;
+		x = ( 1000.0f * rand_float() ) - 500.0f;
 		y = truncf( x );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
