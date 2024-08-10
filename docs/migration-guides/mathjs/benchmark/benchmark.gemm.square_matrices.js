@@ -195,10 +195,10 @@ function main() {
 			'row-major'
 		];
 		f = createBenchmark1( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
-		bench( format( '%s::stdlib:blas/base/sgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', OPTS.dtype, pkg, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
+		bench( format( '%s::stdlib:blas/base/sgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
 
 		f = createBenchmark2( shapes[0], shapes[1], shapes[2] );
-		bench( format( '%s::mathjs:multiply:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', OPTS.dtype, pkg, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
+		bench( format( '%s::mathjs:multiply:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
 
 		orders = [
 			'row-major',
@@ -206,10 +206,10 @@ function main() {
 			'row-major'
 		];
 		f = createBenchmark1( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
-		bench( format( '%s::stdlib:blas/base/sgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', OPTS.dtype, pkg, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
+		bench( format( '%s::stdlib:blas/base/sgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
 
 		f = createBenchmark2( shapes[0], shapes[1], shapes[2] );
-		bench( format( '%s::mathjs:multiply:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', OPTS.dtype, pkg, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
+		bench( format( '%s::mathjs:multiply:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
 	}
 }
 
