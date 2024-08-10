@@ -41,10 +41,10 @@ var pkg = require( './../package.json' ).name;
 
 // VARIABLES //
 
-var ndarray = tryRequire( resolve( __dirname, '..', 'node_modules', 'ndarray' ) );
-var ndgemm = tryRequire( resolve( __dirname, '..', 'node_modules', 'ndarray-gemm' ) );
+var tf = tryRequire( resolve( __dirname, '..', 'node_modules', '@tensorflow/tfjs' ) );
+var tfnode = tryRequire( resolve( __dirname, '..', 'node_modules', '@tensorflow/tfjs-node' ) );
 var opts = {
-	'skip': ( ndarray instanceof Error || ndgemm instanceof Error )
+	'skip': ( tf instanceof Error )
 };
 var OPTS = {
 	'dtype': 'float32'
@@ -113,35 +113,18 @@ function createBenchmark1( shapeA, orderA, shapeB, orderB, shapeC, orderC ) {
 *
 * @private
 * @param {PositiveIntegerArray} shapeA - shape of the first array
-* @param {string} orderA - memory layout of the first array
 * @param {PositiveIntegerArray} shapeB - shape of the second array
-* @param {string} orderB - memory layout of the second array
 * @param {PositiveIntegerArray} shapeC - shape of the third array
-* @param {string} orderC - memory layout of the third array
 * @returns {Function} benchmark function
 */
-function createBenchmark2( shapeA, orderA, shapeB, orderB, shapeC, orderC ) {
+function createBenchmark2( shapeA, shapeB, shapeC ) {
 	var abuf;
 	var bbuf;
 	var cbuf;
-	var sa;
-	var sb;
-	var sc;
-	var A;
-	var B;
-	var C;
 
 	abuf = discreteUniform( numel( shapeA ), 0, 10, OPTS );
 	bbuf = discreteUniform( numel( shapeB ), 0, 10, OPTS );
 	cbuf = discreteUniform( numel( shapeC ), 0, 10, OPTS );
-
-	sa = shape2strides( shapeA, orderA );
-	sb = shape2strides( shapeB, orderB );
-	sc = shape2strides( shapeC, orderC );
-
-	A = ndarray( abuf, shapeA, sa, 0 );
-	B = ndarray( bbuf, shapeB, sb, 0 );
-	C = ndarray( cbuf, shapeC, sc, 0 );
 
 	return benchmark;
 
@@ -152,19 +135,98 @@ function createBenchmark2( shapeA, orderA, shapeB, orderB, shapeC, orderC ) {
 	* @param {Benchmark} b - benchmark instance
 	*/
 	function benchmark( b ) {
+		var out;
+		var A;
+		var B;
+		var C;
+		var D;
 		var i;
+
+		tf.setBackend( 'cpu' );
+
+		A = tf.tensor( abuf, shapeA, OPTS.dtype );
+		B = tf.tensor( bbuf, shapeB, OPTS.dtype );
+		C = tf.tensor( cbuf, shapeC, OPTS.dtype );
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			ndgemm( C, A, B, 0.5, 2.0 );
-			if ( isnanf( cbuf[ i%cbuf.length ] ) ) {
-				b.fail( 'should not return NaN' );
+			D = tf.matMul( A, B );
+			out = tf.add( D, C );
+			if ( typeof out !== 'object' ) {
+				b.fail( 'should return an object' );
 			}
+			tf.dispose( D );
+			tf.dispose( out );
 		}
 		b.toc();
-		if ( isnanf( cbuf[ i%cbuf.length ] ) ) {
-			b.fail( 'should not return NaN' );
+		if ( typeof out !== 'object' ) {
+			b.fail( 'should return an object' );
 		}
+		tf.dispose( A );
+		tf.dispose( B );
+		tf.dispose( C );
+		b.pass( 'benchmark finished' );
+		b.end();
+	}
+}
+
+/**
+* Creates a benchmark function.
+*
+* @private
+* @param {PositiveIntegerArray} shapeA - shape of the first array
+* @param {PositiveIntegerArray} shapeB - shape of the second array
+* @param {PositiveIntegerArray} shapeC - shape of the third array
+* @returns {Function} benchmark function
+*/
+function createBenchmark3( shapeA, shapeB, shapeC ) {
+	var abuf;
+	var bbuf;
+	var cbuf;
+
+	abuf = discreteUniform( numel( shapeA ), 0, 10, OPTS );
+	bbuf = discreteUniform( numel( shapeB ), 0, 10, OPTS );
+	cbuf = discreteUniform( numel( shapeC ), 0, 10, OPTS );
+
+	return benchmark;
+
+	/**
+	* Benchmark function.
+	*
+	* @private
+	* @param {Benchmark} b - benchmark instance
+	*/
+	function benchmark( b ) {
+		var out;
+		var A;
+		var B;
+		var C;
+		var D;
+		var i;
+
+		tfnode.setBackend( 'tensorflow' );
+
+		A = tfnode.tensor( abuf, shapeA, OPTS.dtype );
+		B = tfnode.tensor( bbuf, shapeB, OPTS.dtype );
+		C = tfnode.tensor( cbuf, shapeC, OPTS.dtype );
+
+		b.tic();
+		for ( i = 0; i < b.iterations; i++ ) {
+			D = tfnode.matMul( A, B );
+			out = tfnode.add( D, C );
+			if ( typeof out !== 'object' ) {
+				b.fail( 'should return an object' );
+			}
+			tfnode.dispose( D );
+			tfnode.dispose( out );
+		}
+		b.toc();
+		if ( typeof out !== 'object' ) {
+			b.fail( 'should return an object' );
+		}
+		tfnode.dispose( A );
+		tfnode.dispose( B );
+		tfnode.dispose( C );
 		b.pass( 'benchmark finished' );
 		b.end();
 	}
@@ -205,8 +267,11 @@ function main() {
 		f = createBenchmark1( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
 		bench( format( '%s::stdlib:blas/base/sgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
 
-		f = createBenchmark2( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
-		bench( format( '%s::scijs:ndarray-gemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
+		f = createBenchmark2( shapes[0], shapes[1], shapes[2] );
+		bench( format( '%s::tfjs:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
+
+		f = createBenchmark3( shapes[0], shapes[1], shapes[2] );
+		bench( format( '%s::tfjs-node:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
 
 		orders = [
 			'row-major',
@@ -216,8 +281,11 @@ function main() {
 		f = createBenchmark1( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
 		bench( format( '%s::stdlib:blas/base/sgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
 
-		f = createBenchmark2( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
-		bench( format( '%s::scijs:ndarray-gemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
+		f = createBenchmark2( shapes[0], shapes[1], shapes[2] );
+		bench( format( '%s::tfjs:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
+
+		f = createBenchmark3( shapes[0], shapes[1], shapes[2] );
+		bench( format( '%s::tfjs-node:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
 	}
 }
 
