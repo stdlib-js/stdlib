@@ -121,17 +121,10 @@ function createBenchmark2( shapeA, shapeB, shapeC ) {
 	var abuf;
 	var bbuf;
 	var cbuf;
-	var A;
-	var B;
-	var C;
 
 	abuf = discreteUniform( numel( shapeA ), 0, 10, OPTS );
 	bbuf = discreteUniform( numel( shapeB ), 0, 10, OPTS );
 	cbuf = discreteUniform( numel( shapeC ), 0, 10, OPTS );
-
-	A = tf.tensor( abuf, shapeA, OPTS.dtype );
-	B = tf.tensor( bbuf, shapeB, OPTS.dtype );
-	C = tf.tensor( cbuf, shapeC, OPTS.dtype );
 
 	return benchmark;
 
@@ -143,19 +136,35 @@ function createBenchmark2( shapeA, shapeB, shapeC ) {
 	*/
 	function benchmark( b ) {
 		var out;
+		var A;
+		var B;
+		var C;
+		var D;
 		var i;
+
+		tf.setBackend( 'cpu' );
+
+		A = tf.tensor( abuf, shapeA, OPTS.dtype );
+		B = tf.tensor( bbuf, shapeB, OPTS.dtype );
+		C = tf.tensor( cbuf, shapeC, OPTS.dtype );
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			out = tf.add( tf.matMul( A, B ), C );
+			D = tf.matMul( A, B );
+			out = tf.add( D, C );
 			if ( typeof out !== 'object' ) {
 				b.fail( 'should return an object' );
 			}
+			tf.dispose( D );
+			tf.dispose( out );
 		}
 		b.toc();
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an object' );
 		}
+		tf.dispose( A );
+		tf.dispose( B );
+		tf.dispose( C );
 		b.pass( 'benchmark finished' );
 		b.end();
 	}
@@ -174,17 +183,10 @@ function createBenchmark3( shapeA, shapeB, shapeC ) {
 	var abuf;
 	var bbuf;
 	var cbuf;
-	var A;
-	var B;
-	var C;
 
 	abuf = discreteUniform( numel( shapeA ), 0, 10, OPTS );
 	bbuf = discreteUniform( numel( shapeB ), 0, 10, OPTS );
 	cbuf = discreteUniform( numel( shapeC ), 0, 10, OPTS );
-
-	A = tfnode.tensor( abuf, shapeA, OPTS.dtype );
-	B = tfnode.tensor( bbuf, shapeB, OPTS.dtype );
-	C = tfnode.tensor( cbuf, shapeC, OPTS.dtype );
 
 	return benchmark;
 
@@ -196,19 +198,35 @@ function createBenchmark3( shapeA, shapeB, shapeC ) {
 	*/
 	function benchmark( b ) {
 		var out;
+		var A;
+		var B;
+		var C;
+		var D;
 		var i;
+
+		tfnode.setBackend( 'tensorflow' );
+
+		A = tfnode.tensor( abuf, shapeA, OPTS.dtype );
+		B = tfnode.tensor( bbuf, shapeB, OPTS.dtype );
+		C = tfnode.tensor( cbuf, shapeC, OPTS.dtype );
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			out = tfnode.add( tfnode.matMul( A, B ), C );
+			D = tfnode.matMul( A, B );
+			out = tfnode.add( D, C );
 			if ( typeof out !== 'object' ) {
 				b.fail( 'should return an object' );
 			}
+			tfnode.dispose( D );
+			tfnode.dispose( out );
 		}
 		b.toc();
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an object' );
 		}
+		tfnode.dispose( A );
+		tfnode.dispose( B );
+		tfnode.dispose( C );
 		b.pass( 'benchmark finished' );
 		b.end();
 	}
@@ -232,7 +250,7 @@ function main() {
 	var i;
 
 	min = 1; // 10^min
-	max = 3; // 10^max
+	max = 6; // 10^max
 
 	for ( i = min; i <= max; i++ ) {
 		N = floor( pow( pow( 10, i ), 1.0/2.0 ) );
