@@ -2565,6 +2565,7 @@ nditerMatrixEntries
 nditerRowEntries
 nditerRows
 nditerSelectDimension
+nditerSubarrays
 nditerValues
 ndslice
 ndsliceAssign
