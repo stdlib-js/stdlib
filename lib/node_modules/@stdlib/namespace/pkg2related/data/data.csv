@@ -2565,6 +2565,7 @@
 "@stdlib/ndarray/iter/row-entries","@stdlib/ndarray/iter/column-entries,@stdlib/ndarray/iter/entries,@stdlib/ndarray/iter/rows,@stdlib/ndarray/slice"
 "@stdlib/ndarray/iter/rows","@stdlib/ndarray/iter/columns,@stdlib/ndarray/iter/row-entries,@stdlib/ndarray/slice"
 "@stdlib/ndarray/iter/select-dimension","@stdlib/ndarray/iter/columns,@stdlib/ndarray/iter/matrices,@stdlib/ndarray/iter/rows,@stdlib/ndarray/slice"
+"@stdlib/ndarray/iter/subarrays","@stdlib/ndarray/iter/columns,@stdlib/ndarray/iter/matrices,@stdlib/ndarray/iter/rows,@stdlib/ndarray/slice"
 "@stdlib/ndarray/iter/values","@stdlib/ndarray/ctor,@stdlib/ndarray/iter/entries,@stdlib/ndarray/iter/indices"
 "@stdlib/ndarray/slice","@stdlib/ndarray/array,@stdlib/ndarray/at,@stdlib/ndarray/ctor,@stdlib/ndarray/slice-assign,@stdlib/ndarray/slice-dimension"
 "@stdlib/ndarray/slice-assign","@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/ndarray/slice"
