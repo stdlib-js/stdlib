@@ -2564,6 +2564,7 @@
 "@stdlib/ndarray/iter/matrix-entries","@stdlib/ndarray-iter-matrix-entries"
 "@stdlib/ndarray/iter/row-entries","@stdlib/ndarray-iter-row-entries"
 "@stdlib/ndarray/iter/rows","@stdlib/ndarray-iter-rows"
+"@stdlib/ndarray/iter/select-dimension","@stdlib/ndarray-iter-select-dimension"
 "@stdlib/ndarray/iter/values","@stdlib/ndarray-iter-values"
 "@stdlib/ndarray/slice","@stdlib/ndarray-slice"
 "@stdlib/ndarray/slice-assign","@stdlib/ndarray-slice-assign"
