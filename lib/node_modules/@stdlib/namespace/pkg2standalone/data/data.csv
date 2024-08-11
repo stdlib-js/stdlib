@@ -2560,6 +2560,7 @@
 "@stdlib/ndarray/iter/columns","@stdlib/ndarray-iter-columns"
 "@stdlib/ndarray/iter/entries","@stdlib/ndarray-iter-entries"
 "@stdlib/ndarray/iter/indices","@stdlib/ndarray-iter-indices"
+"@stdlib/ndarray/iter/interleave-subarrays","@stdlib/ndarray-iter-interleave-subarrays"
 "@stdlib/ndarray/iter/matrices","@stdlib/ndarray-iter-matrices"
 "@stdlib/ndarray/iter/matrix-entries","@stdlib/ndarray-iter-matrix-entries"
 "@stdlib/ndarray/iter/row-entries","@stdlib/ndarray-iter-row-entries"
