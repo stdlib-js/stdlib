@@ -35,7 +35,7 @@
 * // returns ~3.332
 */
 double stdlib_base_binomcoefln( const int64_t n, const int64_t k ) {
-	if ( n < 0.0 ) {
+	if ( n < 0 ) {
 		return stdlib_base_binomcoefln( -n + k - 1, k );
 	}
 	if ( k < 0 ) {
