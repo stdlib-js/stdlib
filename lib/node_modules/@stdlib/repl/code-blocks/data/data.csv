@@ -4126,6 +4126,7 @@ nditerMatrixEntries,"var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );\nvar it = ndit
 nditerRowEntries,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerRowEntries( x );\nvar v = it.next().value;\nv[ 0 ]\nndarray2array( v[ 1 ] )\nv = it.next().value;\nv[ 0 ]\nndarray2array( v[ 1 ] )\n"
 nditerRows,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerRows( x );\nvar v = it.next().value;\nndarray2array( v )\nv = it.next().value;\nndarray2array( v )\n"
 nditerSelectDimension,"var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );\nvar it = nditerSelectDimension( x, 0 );\nvar v = it.next().value;\nndarray2array( v )\n"
+nditerStacks,"var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );\nvar it = nditerStacks( x, [ 1, 2 ] );\nvar v = it.next().value;\nndarray2array( v )\n"
 nditerSubarrays,"var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );\nvar it = nditerSubarrays( x, 2 );\nvar v = it.next().value;\nndarray2array( v )\n"
 nditerValues,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerValues( x );\nvar v = it.next().value\nv = it.next().value\n"
 ndslice,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar s = new MultiSlice( null, 1 )\nvar y = ndslice( x, s )\ny.shape\nndarray2array( y )\n"

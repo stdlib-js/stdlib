@@ -2560,6 +2560,7 @@ nditerColumnEntries
 nditerColumns
 nditerEntries
 nditerIndices
+nditerInterleaveSubarrays
 nditerMatrices
 nditerMatrixEntries
 nditerRowEntries

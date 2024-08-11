@@ -4127,6 +4127,7 @@ nditerMatrixEntries,"\nnditerMatrixEntries( x:ndarray[, options:Object] )\n    R
 nditerRowEntries,"\nnditerRowEntries( x:ndarray[, options:Object] )\n    Returns an iterator which returns [index, row] pairs for each row in a\n    matrix (or stack of matrices).\n"
 nditerRows,"\nnditerRows( x:ndarray[, options:Object] )\n    Returns an iterator which iterates over each row in a matrix (or stack of\n    matrices).\n"
 nditerSelectDimension,"\nnditerSelectDimension( x:ndarray, dim:integer[, options:Object] )\n    Returns an iterator which iterates over each view along a specified\n    dimension.\n"
+nditerStacks,"\nnditerStacks( x:ndarray, dims:Array<integer>[, options:Object] )\n    Returns an iterator which iterates over each subarray in a stack of\n    subarrays according to a list of specified stack dimensions.\n"
 nditerSubarrays,"\nnditerSubarrays( x:ndarray, ndims:integer[, options:Object] )\n    Returns an iterator which iterates over each subarray in a stack of\n    subarrays.\n"
 nditerValues,"\nnditerValues( x:ndarray[, options:Object] )\n    Returns an iterator which returns individual elements from a provided\n    ndarray.\n"
 ndslice,"\nndslice( x:ndarray, ...s:MultiSlice|Slice|null|undefined|integer|ArrayLike[, \n  options:Object] )\n    Returns a read-only view of an input ndarray.\n"
