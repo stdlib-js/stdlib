@@ -91,8 +91,8 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double n;
-	double k;
+	int64_t n;
+	int64_t k;
 	double y;
 	double t;
 	int i;
