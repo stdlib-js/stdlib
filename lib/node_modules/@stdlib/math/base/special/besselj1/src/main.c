@@ -18,7 +18,7 @@
 *
 * ## Notice
 *
-* The original C++ code and copyright notice are from the [Boost library]{@link https://github.com/boostorg/math/blob/develop/include/boost/math/special_functions/detail/bessel_j1.hpp}. The implementation has been modified for use in stdlib.
+* The original C++ code and copyright notice are from the [Boost library]{@link https://www.boost.org/doc/libs/1_85_0/boost/math/special_functions/detail/bessel_j1.hpp}. The implementation has been modified for use in stdlib.
 *
 * ```text
 * Copyright Xiaogang Zhang, 2006.
@@ -29,7 +29,7 @@
 * ```
 */
 
-#include "stdlib/math/base/special/j1.h"
+#include "stdlib/math/base/special/besselj1.h"
 #include "stdlib/math/base/special/sqrt.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/sincos.h"
@@ -222,10 +222,10 @@ static double rational_psqs( const double x ) {
 * @return     evaluated Bessel function
 *
 * @example
-* double out = stdlib_base_j1( 1.0 );
+* double out = stdlib_base_besselj1( 1.0 );
 * // returns ~0.440
 */
-double stdlib_base_j1( const double x ) {
+double stdlib_base_besselj1( const double x ) {
 	double value;
 	double rc;
 	double rs;
