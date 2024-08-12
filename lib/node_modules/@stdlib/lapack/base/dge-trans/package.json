@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/lapack/base/dge-trans",
   "version": "0.0.0",
-  "description": "Convert input general matrix from row-major to column-major layout or vice versa.",
+  "description": "Convert a matrix from row-major layout to column-major layout or vice versa.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
