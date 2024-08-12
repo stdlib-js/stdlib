@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/special/j1.h"
+#include "stdlib/math/base/special/besselj1.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -25,7 +25,7 @@ int main( void ) {
 	int i;
 
 	for ( i = 0; i < 7; i++ ) {
-		v = stdlib_base_j1( x[ i ] );
-		printf( "j1(%lf) = %lf\n", x[ i ], v );
+		v = stdlib_base_besselj1( x[ i ] );
+		printf( "besselj1(%lf) = %lf\n", x[ i ], v );
 	}
 }
