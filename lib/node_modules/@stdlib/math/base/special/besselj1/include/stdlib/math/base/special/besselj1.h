@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_MATH_BASE_SPECIAL_J1_H
-#define STDLIB_MATH_BASE_SPECIAL_J1_H
+#ifndef STDLIB_MATH_BASE_SPECIAL_BESSELJ1_H
+#define STDLIB_MATH_BASE_SPECIAL_BESSELJ1_H
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -29,10 +29,10 @@ extern "C" {
 /**
 * Computes the Bessel function of the first kind of order one.
 */
-double stdlib_base_j1( const double x );
+double stdlib_base_besselj1( const double x );
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // !STDLIB_MATH_BASE_SPECIAL_J1_H
+#endif // !STDLIB_MATH_BASE_SPECIAL_BESSELJ1_H
