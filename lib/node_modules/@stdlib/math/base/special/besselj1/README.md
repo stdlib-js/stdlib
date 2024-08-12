@@ -122,18 +122,18 @@ for ( i = 0; i < 100; i++ ) {
 ### Usage
 
 ```c
-#include "stdlib/math/base/special/j1.h"
+#include "stdlib/math/base/special/besselj1.h"
 ```
 
-#### stdlib_base_j1( x )
+#### stdlib_base_besselj1( x )
 
 Computes the [Bessel function of the first kind][bessel-first-kind] of order one at `x`.
 
 ```c
-double out = stdlib_base_j1( 0.0 );
+double out = stdlib_base_besselj1( 0.0 );
 // returns 0.0
 
-out = stdlib_base_j1( 1.0 );
+out = stdlib_base_besselj1( 1.0 );
 // returns ~0.440
 ```
 
@@ -142,7 +142,7 @@ The function accepts the following arguments:
 -   **x**: `[in] double` input value.
 
 ```c
-double stdlib_base_j1( const double x );
+double stdlib_base_besselj1( const double x );
 ```
 
 </section>
@@ -164,7 +164,7 @@ double stdlib_base_j1( const double x );
 ### Examples
 
 ```c
-#include "stdlib/math/base/special/j1.h"
+#include "stdlib/math/base/special/besselj1.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -173,8 +173,8 @@ int main( void ) {
     int i;
     
     for ( i = 0; i < 7; i++ ) {
-        v = stdlib_base_j1( x[ i ] );
-        printf( "j1(%lf) = %lf\n", x[ i ], v );
+        v = stdlib_base_besselj1( x[ i ] );
+        printf( "besselj1(%lf) = %lf\n", x[ i ], v );
     }
 }
 ```

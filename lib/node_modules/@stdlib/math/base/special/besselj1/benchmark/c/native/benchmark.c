@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/special/j1.h"
+#include "stdlib/math/base/special/besselj1.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -99,7 +99,7 @@ static double benchmark( void ) {
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		x = ( 100000.0 * rand_double() ) - 0.0;
-		y = stdlib_base_j1( x );
+		y = stdlib_base_besselj1( x );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
