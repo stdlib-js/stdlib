@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/special/j1.h"
+#include "stdlib/math/base/special/besselj1.h"
 #include "stdlib/math/base/napi/unary.h"
 
 // cppcheck-suppress shadowFunction
-STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_j1 )
+STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_besselj1 )
