@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/srot.h"
 #include "stdlib/blas/base/srot_fortran.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Applies a plane rotation.
@@ -30,6 +31,6 @@
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void c_srot( const int N, float *X, const int strideX, float *Y, const int strideY, const float c, const float s ) {
+void API_SUFFIX(c_srot)( const CBLAS_INT N, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY, const float c, const float s ) {
 	srot( &N, X, &strideX, Y, &strideY, &c, &s );
 }

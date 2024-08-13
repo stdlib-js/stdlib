@@ -41,9 +41,9 @@
         "@stdlib/blas/ext/base/sapxsumkbn",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
-        "@stdlib/napi/argv_int64",
-        "@stdlib/napi/argv_strided_float32array",
-        "@stdlib/napi/argv_float"
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/argv-float"
       ]
     },
     {
