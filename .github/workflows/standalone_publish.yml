@@ -33,6 +33,7 @@ on:
         - patch
         - minor
         - major
+        - auto
       dry-run:
         type: boolean
         description: 'Skip uploading packages (dry run):'
@@ -78,22 +79,33 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Limit clone depth to the most recent commit:
-          fetch-depth: 1
+          # Fetch all history to allow for changelog generation:
+          fetch-depth: 0
 
           # Specify whether to download Git-LFS files:
           lfs: false
         timeout-minutes: 10
 
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
+          git config --local user.name "stdlib-bot"
+
+      # Apply Git notes:
+      - name: 'Apply Git notes'
+        run: |
+          make apply-git-notes
+
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4.0.3
         with:
           node-version: '16' # 'lts/*'
         timeout-minutes: 5
@@ -118,7 +130,7 @@ jobs:
       # Archive list of to be published packages:
       - name: 'Archive package list'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
+        uses: actions/upload-artifact@0b2256b8c012f0828dc542b3febcab082c67f72b # v4.3.4
         with:
           name: ordered-pkg-list
           path: |

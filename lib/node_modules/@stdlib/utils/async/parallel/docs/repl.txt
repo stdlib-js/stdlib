@@ -1,0 +1,127 @@
+
+{{alias}}( fcns, [options,] done )
+    Executes a set of functions in parallel and passes the results of all
+    functions to a provided callback.
+
+    The function invokes each function with a single callback function, which
+    should be invoked upon function completion.
+
+    The callback function has the following parameters:
+
+    - error: encountered error.
+    - result: function results.
+
+    If the callback function is not invoked, the `done` callback will never be
+    called.
+
+    If any function calls the provided callback with a truthy `error` argument,
+    the function immediately calls the completion callback for subsequent error
+    handling and does not execute any more functions which have yet to be
+    invoked.
+
+    This function is intended to start asynchronous tasks so that execution of
+    each task runs concurrently. If provided a function which does not perform
+    asynchronous tasks, the function will execute synchronously.
+
+    Hence, execution is *not* guaranteed to be asynchronous. To ensure
+    asynchrony, wrap the completion callback in a function which either executes
+    at the end of the current stack (e.g., `nextTick`) or during a subsequent
+    turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+
+    The function executes provided functions in the same thread. Accordingly,
+    the function does *not* spawn new threads.
+
+    Parameters
+    ----------
+    fcns: Array<Function>
+        Array of functions.
+
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    done: Function
+        Callback to invoke upon completion.
+
+    Examples
+    --------
+    > function foo( clbk ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         clbk( null, 'beep' );
+    ...     }
+    ... };
+    > function bar( clbk ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         clbk( null, 'boop' );
+    ...     }
+    ... };
+    > function done( error, results ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( results );
+    ... };
+    > var fcns = [ foo, bar ];
+    > {{alias}}( fcns, done );
+
+
+{{alias}}.factory( fcns, [options] )
+    Returns a reusable function for executing a set of functions in parallel.
+
+    Parameters
+    ----------
+    fcns: Array<Function>
+        Array of functions.
+
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    fcn: Function
+        A function for executing a set of functions in parallel. The function
+        accepts a single callback argument which is invoked after all functions
+        have finished execution.
+
+    Examples
+    --------
+    > function foo( clbk ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         clbk( null, 'beep' );
+    ...     }
+    ... };
+    > function bar( clbk ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         clbk( null, 'boop' );
+    ...     }
+    ... };
+    > function done( error, results ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( results );
+    ... };
+    > var fcns = [ foo, bar ];
+    > var f = {{alias}}.factory( fcns );
+    > f( done );
+    > f( done );
+    > f( done );
+
+    See Also
+    --------
+

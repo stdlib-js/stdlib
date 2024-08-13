@@ -1,0 +1,142 @@
+
+{{alias}}( N, ca, cx, strideX, cy, strideY )
+    Scales a single-precision complex floating-point vector by a single-
+    precision complex floating point constant and adds the result to a single-
+    precision complex floating-point vector.
+
+    The `N` and stride parameters determine how values from `cx` are scaled by
+    `ca` and added to `cy`.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the function returns `cy` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    ca: Complex64
+        Scalar constant.
+
+    cx: Complex64Array
+        First input array.
+
+    strideX: integer
+        Index increment for `cx`.
+
+    cy: Complex64Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `cy`.
+
+    Returns
+    -------
+    cy: Complex64Array
+        Second input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var cy = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0 ] );
+    > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
+    > {{alias}}( 2, ca, cx, 1, cy, 1 );
+    > var z = cy.get( 0 );
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    -1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    7.0
+
+    // Advanced indexing:
+    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > cy = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+    > {{alias}}( 2, ca, cx, -2, cy, 1 );
+    > z = cy.get( 0 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    -1.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    23.0
+
+    // Using typed array views:
+    > var cx0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var cy0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0 ] );
+    > var cx1 = new {{alias:@stdlib/array/complex64}}( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 );
+    > var cy1 = new {{alias:@stdlib/array/complex64}}( cy0.buffer, cy0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 1, ca, cx1, 1, cy1, 1 );
+    > z = cy0.get( 1 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    -1.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    15.0
+
+
+{{alias}}.ndarray( N, ca, cx, strideX, offsetX, cy, strideY, offsetY )
+    Scales a single-precision complex floating-point vector by a single-
+    precision complex floating-point constant and adds the result to a single-
+    precision complex floating-point vector using alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    ca: Complex64
+        Scalar constant.
+
+    cx: Complex64Array
+        First input array.
+
+    strideX: integer
+        Index increment for `cx`.
+
+    offsetX: integer
+        Starting index for `cx`.
+
+    cy: Complex64Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `cy`.
+
+    offsetY: integer
+        Starting index for `cy`.
+
+    Returns
+    -------
+    cy: Complex64Array
+        Second input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var cy = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0 ] );
+    > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
+    > {{alias}}.ndarray( cx.length, ca, cx, 1, 0, cy, 1, 0 );
+    > var z = cy.get( 0 );
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    -1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    7.0
+
+    // Advanced indexing:
+    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > cy = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+    > {{alias}}.ndarray( 2, ca, cx, 1, 1, cy, 1, 1 );
+    > z = cy.get( 2 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    -1.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    23.0
+
+    See Also
+    --------
+

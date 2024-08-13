@@ -1,0 +1,441 @@
+{
+  "options": {
+    "task": "build",
+    "os": "linux",
+    "blas": "",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1.f",
+        "./src/dcabs1sub.f",
+        "./src/dcabs1_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex128",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex128",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1.f",
+        "./src/dcabs1sub.f",
+        "./src/dcabs1_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex128",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex128",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex128",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex128",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/complex/float64/reim"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dcabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/dcabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim"
+      ]
+    }
+  ]
+}

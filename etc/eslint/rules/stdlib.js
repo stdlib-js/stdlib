@@ -4455,6 +4455,23 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 rules[ 'stdlib/require-leading-slash' ] = 'error';
 
 /**
+* Enforce spaces inside `require()` parentheses.
+*
+* @name require-spaces
+* @memberof rules
+* @type {string}
+*
+* @example
+* // Bad...
+* var foo = require('@stdlib/foo');
+*
+* @example
+* // Good...
+* var foo = require( '@stdlib/foo' );
+*/
+rules[ 'stdlib/require-spaces' ] = 'error';
+
+/**
 * Enforce that `require()` calls follow a specified order.
 *
 * @name require-order

@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/math/base/special/cflipsign.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
 
 
@@ -40,8 +40,8 @@ int main( void ) {
 	for ( i = 0; i < 4; i++ ) {
 		v = x[ i ];
 		y = stdlib_base_cflipsign( v, -1.0 );
-		stdlib_reim( v, &re1, &im1 );
-		stdlib_reim( y, &re2, &im2 );
+		stdlib_complex128_reim( v, &re1, &im1 );
+		stdlib_complex128_reim( y, &re2, &im2 );
 		printf( "cflipsign(%lf + %lfi, %lf) = %lf + %lfi\n", re1, im1, -1.0, re2, im2 );
 	}
 }

@@ -33,16 +33,15 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs"
       ]
     },
     {
@@ -53,11 +52,12 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs"
+      ]
     },
     {
       "task": "examples",
@@ -67,11 +67,12 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs"
+      ]
     }
   ]
 }

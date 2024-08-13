@@ -68,7 +68,7 @@ var bool = ( y === out );
 
 ## Notes
 
--   `drotg()` corresponds to the [BLAS][blas] level 1 function [`drotg`][drotg].
+-   `drotg()` corresponds to the [BLAS][blas] level 1 function [`drotg`][blas-drotg].
 
 </section>
 
@@ -107,7 +107,7 @@ for ( i = 0; i < 100; i++ ) {
 
 [blas]: http://www.netlib.org/blas
 
-[drotg]: https://netlib.org/lapack/explore-html/df/d28/group__single__blas__level1_gaafa91c51f75df6c3f2182032a221c2db.html
+[blas-drotg]: https://www.netlib.org/lapack/explore-html/d7/dc5/group__rotg_gaafa91c51f75df6c3f2182032a221c2db.html#gaafa91c51f75df6c3f2182032a221c2db
 
 </section>
 

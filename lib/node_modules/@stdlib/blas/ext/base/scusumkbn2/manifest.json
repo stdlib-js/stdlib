@@ -1,86 +1,76 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
-	{
-	  "field": "src",
-	  "resolve": true,
-	  "relative": true	
-	},
-	{
-	  "field": "include",
-	  "resolve": true,
-	  "relative": true	
-	},
-	{
-	  "field": "libraries",
-	  "resolve": false,
-	  "relative": false	
-	},
-	{
-	  "field": "libpath",
-	  "resolve": true,
-	  "relative": false	
-	}
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
   ],
   "confs": [
-	{
-	  "task": "build",
-	  "src": [
-	    "./src/scusumkbn2.c"
-	  ],
-	  "include": [
-		"./include"
-	  ],
-	  "libraries": [
-		"-lm"
-	  ],
-	  "libpath": [],
-	  "dependencies": [
-	    "@stdlib/napi/export",
+    {
+      "task": "build",
+      "src": [
+        "./src/scusumkbn2.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf",
+        "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array"
-	  ]
-	},
-	{
-	  "task": "benchmark",
-	  "src": [
-		"./src/scusumkbn2.c"
-	  ],
-	  "include": [
-		"./include"
-	  ],
-	  "libraries": [
-		"-lm"
-	  ],
-	  "dependencies": [
-		"@stdlib/napi/export",
-		"@stdlib/napi/argv",
-		"@stdlib/napi/argv-float",
-		"@stdlib/napi/argv-int64",
-		"@stdlib/napi/argv-strided-float32array"
-	  ]
-	},
-	{
-	  "task": "examples",
-	  "src": [
-		"./src/scusumkbn2.c"
-	  ],
-	  "include": [
-		"./include"
-	  ],
-	  "libraries": [
-		"-lm"
-	  ],
-	  "libpath": [],
-	  "dependencies": [
-		"@stdlib/napi/export",
-		"@stdlib/napi/argv",
-		"@stdlib/napi/argv-float",
-		"@stdlib/napi/argv-int64",
-		"@stdlib/napi/argv-strided-float32array"
-	  ]
-	}
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/scusumkbn2.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/scusumkbn2.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf"
+      ]
+    }
   ]
 }

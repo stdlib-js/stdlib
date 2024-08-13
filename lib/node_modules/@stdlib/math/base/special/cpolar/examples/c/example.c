@@ -18,8 +18,8 @@
 */
 
 #include "stdlib/math/base/special/cpolar.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -35,9 +35,9 @@ int main( void ) {
 	double re;
 	double im;
 	int i;
-	for ( i = 0; i < 12; i++ ) {
+	for ( i = 0; i < 4; i++ ) {
 		stdlib_base_cpolar( x[i], &cabs, &cphase );
-		stdlib_reim( x[i], &re, &im );
+		stdlib_complex128_reim( x[i], &re, &im );
 		printf( "cpolar(%lf + %lfi) => cabs: %lf, cphase: %lf\n", re, im, cabs, cphase );
 	}
 }

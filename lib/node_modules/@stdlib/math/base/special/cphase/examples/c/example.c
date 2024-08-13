@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/math/base/special/cphase.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -37,7 +37,7 @@ int main( void ) {
 	for ( i = 0; i < 4; i++ ) {
 		v = x[ i ];
 		y = stdlib_base_cphase( v );
-		stdlib_reim( v, &re, &im );
+		stdlib_complex128_reim( v, &re, &im );
 		printf( "fcphase(%lf + %lfi) = %lf\n", re, im, y );
 	}
 }

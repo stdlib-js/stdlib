@@ -18,11 +18,11 @@
 
     Examples
     --------
-    > var v = {{alias}}( new {{alias:@stdlib/complex/float32}}( -4.0, 5.0 ), -9.0 )
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float32/ctor}}( -4.0, 5.0 ), -9.0 )
     <Complex64>
-    > var re = {{alias:@stdlib/complex/real}}( v )
+    > var re = {{alias:@stdlib/complex/float32/real}}( v )
     4.0
-    > var im = {{alias:@stdlib/complex/imag}}( v )
+    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
     -5.0
 
     See Also
