@@ -494,7 +494,7 @@ endif
 DEPS_EMSDK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
 
 # Define the Emscripten SDK version:
-DEPS_EMSDK_VERSION ?= incoming
+DEPS_EMSDK_VERSION ?= latest
 
 # Define the path to Emscripten:
 DEPS_EMSDK_EMSCRIPTEN ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)
@@ -506,7 +506,7 @@ DEPS_EMSDK_EMSCRIPTEN_EMCC ?= $(DEPS_EMSDK_EMSCRIPTEN)/emcc
 DEPS_EMSDK_EMSCRIPTEN_EMXX ?= $(DEPS_EMSDK_EMSCRIPTEN)/em++
 
 # Define the Binaryen version:
-DEPS_EMSDK_BINARYEN_VERSION ?= master
+DEPS_EMSDK_BINARYEN_VERSION ?= main
 
 # Define the output path when building the WebAssembly Binary Toolkit (WABT):
 DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
