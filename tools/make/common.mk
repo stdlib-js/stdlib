@@ -512,13 +512,13 @@ DEPS_EMSDK_BINARYEN_VERSION ?= main
 DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
 
 # Define the path to the utility for converting WebAssembly binary files to the WebAssembly text format:
-DEPS_WABT_WASM2WAT ?= $(DEPS_WABT_BUILD_OUT)/wasm2wat
+DEPS_WABT_WASM2WAT ?= $(DEPS_WABT_BUILD_OUT)/build/wasm2wat
 
 # Define the path to the utility for converting WebAssembly text format files to the WebAssembly binary format:
-DEPS_WABT_WAT2WASM ?= $(DEPS_WABT_BUILD_OUT)/wat2wasm
+DEPS_WABT_WAT2WASM ?= $(DEPS_WABT_BUILD_OUT)/build/wat2wasm
 
 # Define the path to the utility for linking (merging) multiple WebAssembly files:
-DEPS_WABT_WASM_LINK ?= $(DEPS_WABT_BUILD_OUT)/wasm-link
+DEPS_WABT_WASM_LINK ?= $(DEPS_WABT_BUILD_OUT)/build/wasm-link
 
 # Define the Cephes distribution to build (netlib, moshier, cephes-2.8):
 DEPS_CEPHES_DIST ?= moshier
