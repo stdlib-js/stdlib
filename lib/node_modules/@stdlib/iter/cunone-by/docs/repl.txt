@@ -1,0 +1,64 @@
+
+{{alias}}( iterator, predicate[, thisArg] )
+    Returns an iterator which cumulatively tests whether every iterated value
+    fails a test implemented by a predicate function.
+
+    If an environment supports Symbol.iterator and a provided iterator is
+    iterable, the returned iterator is iterable.
+
+    The predicate function is provided two arguments:
+
+    - value: iterated value
+    - index: iteration index
+
+    A predicate function is invoked for each iterated value until the first
+    truthy predicate function return value. Upon encountering the first truthy
+    return value, the returned iterator ceases to invoke the predicate function
+    and returns `false` for each subsequent iterated value of the provided input
+    iterator.
+
+    If provided an iterator which does not return any iterated values, the
+    function returns an iterator which is also empty.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    predicate: Function
+        The test function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating
+        whether the iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 0, 1, 0 ] );
+    > function fcn( v ) { return ( v > 0 ); };
+    > var it = {{alias}}( arr, fcn );
+    > var v = it.next().value
+    true
+    > v = it.next().value
+    true
+    > v = it.next().value
+    true
+    > v = it.next().value
+    false
+    > v = it.next().value
+    false
+
+    See Also
+    --------
