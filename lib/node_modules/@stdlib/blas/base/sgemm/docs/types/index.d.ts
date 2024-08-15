@@ -27,7 +27,7 @@ import { Layout, TransposeOperation } from '@stdlib/types/blas';
 */
 interface Routine {
 	/**
-	* Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C` where `op(A)` is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
+	* Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C` where `op(X)` is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
 	*
 	* @param order - storage layout
 	* @param transA - specifies whether `A` should be transposed, conjugate-transposed, or not transposed
@@ -58,7 +58,7 @@ interface Routine {
 	( order: Layout, transA: TransposeOperation, transB: TransposeOperation, M: number, N: number, K: number, alpha: number, A: Float32Array, LDA: number, B: Float32Array, LDB: number, beta: number, C: Float32Array, LDC: number ): Float32Array;
 
 	/**
-	* Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C`, using alternative indexing semantics and where `op(A)` is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
+	* Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C`, using alternative indexing semantics and where `op(X)` is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
 	*
 	* @param transA - specifies whether `A` should be transposed, conjugate-transposed, or not transposed
 	* @param transB - specifies whether `B` should be transposed, conjugate-transposed, or not transposed
@@ -95,7 +95,7 @@ interface Routine {
 }
 
 /**
-* Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C` where `op(A)` is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
+* Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C` where `op(X)` is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
 *
 * @param order - storage layout
 * @param transA - specifies whether `A` should be transposed, conjugate-transposed, or not transposed

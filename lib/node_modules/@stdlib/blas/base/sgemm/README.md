@@ -32,7 +32,7 @@ var sgemm = require( '@stdlib/blas/base/sgemm' );
 
 #### sgemm( ord, ta, tb, M, N, K, α, A, lda, B, ldb, β, C, ldc )
 
-Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C` where `op(A)` is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
+Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C` where `op(X)` is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -79,7 +79,7 @@ sgemm( 'row-major', 'no-transpose', 'no-transpose', 2, 2, 2, 1.0, A, 4, B, 4, 1.
 
 #### sgemm.ndarray( ta, tb, M, N, K, α, A, sa1, sa2, oa, B, sb1, sb2, ob, β, C, sc1, sc2, oc )
 
-Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C`, using alternative indexing semantics and where `op(A)` is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
+Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C`, using alternative indexing semantics and where `op(X)` is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
