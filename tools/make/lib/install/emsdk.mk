@@ -68,10 +68,10 @@ deps_emsdk := sdk-$(DEPS_EMSDK_VERSION)-64bit
 deps_emsdk_binaryen := binaryen-$(DEPS_EMSDK_BINARYEN_VERSION)-64bit
 
 # Define the path to the `emcc` compiler:
-EMCC ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)/emcc
+EMCC ?= $(DEPS_EMSDK_BUILD_OUT)/upstream/emscripten/emcc
 
 # Define the path to an executable for running HTML pages:
-EMRUN ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)/emrun
+EMRUN ?= $(DEPS_EMSDK_BUILD_OUT)/upstream/emscripten/emrun
 
 
 # RULES #
