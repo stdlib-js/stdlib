@@ -2539,6 +2539,7 @@
 "@stdlib/ndarray/flag","@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/ndarray/flags"
 "@stdlib/ndarray/flags","@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/ndarray/flag"
 "@stdlib/ndarray/index-modes","@stdlib/ndarray/array,@stdlib/ndarray/ctor"
+"@stdlib/ndarray/ndarraylike2ndarray","@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/ndarray/empty-like,@stdlib/ndarray/zeros-like"
 "@stdlib/ndarray/min-dtype","@stdlib/ndarray/dtypes,@stdlib/ndarray/promotion-rules,@stdlib/ndarray/safe-casts"
 "@stdlib/ndarray/mostly-safe-casts","@stdlib/ndarray/casting-modes,@stdlib/ndarray/dtypes,@stdlib/ndarray/safe-casts,@stdlib/ndarray/same-kind-casts"
 "@stdlib/ndarray/next-dtype","@stdlib/ndarray/dtypes,@stdlib/ndarray/promotion-rules,@stdlib/ndarray/safe-casts"
