@@ -32,10 +32,7 @@ var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
 var isnanf = require( '@stdlib/math/base/assert/is-nanf' );
 var format = require( '@stdlib/string/format' );
 var tryRequire = require( '@stdlib/utils/try-require' );
-
-// var sgemm = require( '@stdlib/blas/base/sgemm' ).ndarray;
-var sgemm = require( '@stdlib/utils/noop' ); // FIXME: remove once `sgemm` merged
-
+var dgemm = require( '@stdlib/blas/base/dgemm' ).ndarray;
 var pkg = require( './../package.json' ).name;
 
 
@@ -46,7 +43,10 @@ var tfnode = tryRequire( resolve( __dirname, '..', 'node_modules', '@tensorflow/
 var opts = {
 	'skip': ( tf instanceof Error )
 };
-var OPTS = {
+var SOPTS = {
+	'dtype': 'float64'
+};
+var TOPTS = {
 	'dtype': 'float32'
 };
 
@@ -73,9 +73,9 @@ function createBenchmark1( shapeA, orderA, shapeB, orderB, shapeC, orderC ) {
 	var B;
 	var C;
 
-	A = discreteUniform( numel( shapeA ), 0, 10, OPTS );
-	B = discreteUniform( numel( shapeB ), 0, 10, OPTS );
-	C = discreteUniform( numel( shapeC ), 0, 10, OPTS );
+	A = discreteUniform( numel( shapeA ), 0, 10, SOPTS );
+	B = discreteUniform( numel( shapeB ), 0, 10, SOPTS );
+	C = discreteUniform( numel( shapeC ), 0, 10, SOPTS );
 
 	sa = shape2strides( shapeA, orderA );
 	sb = shape2strides( shapeB, orderB );
@@ -94,7 +94,7 @@ function createBenchmark1( shapeA, orderA, shapeB, orderB, shapeC, orderC ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			sgemm( 'no-transpose', 'no-transpose', shapeA[0], shapeC[1], shapeB[0], 0.5, A, sa[0], sa[1], 0, B, sb[0], sb[1], 0, 2.0, C, sc[0], sc[1], 0 );
+			dgemm( 'no-transpose', 'no-transpose', shapeA[0], shapeC[1], shapeB[0], 0.5, A, sa[0], sa[1], 0, B, sb[0], sb[1], 0, 2.0, C, sc[0], sc[1], 0 );
 			if ( isnanf( C[ i%C.length ] ) ) {
 				b.fail( 'should not return NaN' );
 			}
@@ -122,9 +122,9 @@ function createBenchmark2( shapeA, shapeB, shapeC ) {
 	var bbuf;
 	var cbuf;
 
-	abuf = discreteUniform( numel( shapeA ), 0, 10, OPTS );
-	bbuf = discreteUniform( numel( shapeB ), 0, 10, OPTS );
-	cbuf = discreteUniform( numel( shapeC ), 0, 10, OPTS );
+	abuf = discreteUniform( numel( shapeA ), 0, 10, TOPTS );
+	bbuf = discreteUniform( numel( shapeB ), 0, 10, TOPTS );
+	cbuf = discreteUniform( numel( shapeC ), 0, 10, TOPTS );
 
 	return benchmark;
 
@@ -144,9 +144,9 @@ function createBenchmark2( shapeA, shapeB, shapeC ) {
 
 		tf.setBackend( 'cpu' );
 
-		A = tf.tensor( abuf, shapeA, OPTS.dtype );
-		B = tf.tensor( bbuf, shapeB, OPTS.dtype );
-		C = tf.tensor( cbuf, shapeC, OPTS.dtype );
+		A = tf.tensor( abuf, shapeA, TOPTS.dtype );
+		B = tf.tensor( bbuf, shapeB, TOPTS.dtype );
+		C = tf.tensor( cbuf, shapeC, TOPTS.dtype );
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
@@ -184,9 +184,9 @@ function createBenchmark3( shapeA, shapeB, shapeC ) {
 	var bbuf;
 	var cbuf;
 
-	abuf = discreteUniform( numel( shapeA ), 0, 10, OPTS );
-	bbuf = discreteUniform( numel( shapeB ), 0, 10, OPTS );
-	cbuf = discreteUniform( numel( shapeC ), 0, 10, OPTS );
+	abuf = discreteUniform( numel( shapeA ), 0, 10, TOPTS );
+	bbuf = discreteUniform( numel( shapeB ), 0, 10, TOPTS );
+	cbuf = discreteUniform( numel( shapeC ), 0, 10, TOPTS );
 
 	return benchmark;
 
@@ -206,9 +206,9 @@ function createBenchmark3( shapeA, shapeB, shapeC ) {
 
 		tfnode.setBackend( 'tensorflow' );
 
-		A = tfnode.tensor( abuf, shapeA, OPTS.dtype );
-		B = tfnode.tensor( bbuf, shapeB, OPTS.dtype );
-		C = tfnode.tensor( cbuf, shapeC, OPTS.dtype );
+		A = tfnode.tensor( abuf, shapeA, TOPTS.dtype );
+		B = tfnode.tensor( bbuf, shapeB, TOPTS.dtype );
+		C = tfnode.tensor( cbuf, shapeC, TOPTS.dtype );
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
@@ -250,7 +250,7 @@ function main() {
 	var i;
 
 	min = 1; // 10^min
-	max = 6; // 10^max
+	max = 5; // 10^max
 
 	for ( i = min; i <= max; i++ ) {
 		N = floor( pow( pow( 10, i ), 1.0/2.0 ) );
@@ -265,13 +265,13 @@ function main() {
 			'row-major'
 		];
 		f = createBenchmark1( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
-		bench( format( '%s::stdlib:blas/base/sgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
+		bench( format( '%s::stdlib:blas/base/dgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, SOPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
 
 		f = createBenchmark2( shapes[0], shapes[1], shapes[2] );
-		bench( format( '%s::tfjs:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
+		bench( format( '%s::tfjs:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, TOPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
 
 		f = createBenchmark3( shapes[0], shapes[1], shapes[2] );
-		bench( format( '%s::tfjs-node:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
+		bench( format( '%s::tfjs-node:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, TOPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
 
 		orders = [
 			'row-major',
@@ -279,13 +279,13 @@ function main() {
 			'row-major'
 		];
 		f = createBenchmark1( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
-		bench( format( '%s::stdlib:blas/base/sgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
+		bench( format( '%s::stdlib:blas/base/dgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, SOPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
 
 		f = createBenchmark2( shapes[0], shapes[1], shapes[2] );
-		bench( format( '%s::tfjs:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
+		bench( format( '%s::tfjs:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, TOPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
 
 		f = createBenchmark3( shapes[0], shapes[1], shapes[2] );
-		bench( format( '%s::tfjs-node:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
+		bench( format( '%s::tfjs-node:matmul:dtype=%s,size=%d,shapes={(%s),(%s),(%s)}', pkg, TOPTS.dtype, numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
 	}
 }
 

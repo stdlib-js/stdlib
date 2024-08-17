@@ -32,10 +32,7 @@ var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
 var isnanf = require( '@stdlib/math/base/assert/is-nanf' );
 var format = require( '@stdlib/string/format' );
 var tryRequire = require( '@stdlib/utils/try-require' );
-
-// var sgemm = require( '@stdlib/blas/base/sgemm' ).ndarray;
-var sgemm = require( '@stdlib/utils/noop' ); // FIXME: remove once `sgemm` merged
-
+var dgemm = require( '@stdlib/blas/base/dgemm' ).ndarray;
 var pkg = require( './../package.json' ).name;
 
 
@@ -47,7 +44,7 @@ var opts = {
 	'skip': ( ndarray instanceof Error || ndgemm instanceof Error )
 };
 var OPTS = {
-	'dtype': 'float32'
+	'dtype': 'float64'
 };
 
 
@@ -94,7 +91,7 @@ function createBenchmark1( shapeA, orderA, shapeB, orderB, shapeC, orderC ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			sgemm( 'no-transpose', 'no-transpose', shapeA[0], shapeC[1], shapeB[0], 0.5, A, sa[0], sa[1], 0, B, sb[0], sb[1], 0, 2.0, C, sc[0], sc[1], 0 );
+			dgemm( 'no-transpose', 'no-transpose', shapeA[0], shapeC[1], shapeB[0], 0.5, A, sa[0], sa[1], 0, B, sb[0], sb[1], 0, 2.0, C, sc[0], sc[1], 0 );
 			if ( isnanf( C[ i%C.length ] ) ) {
 				b.fail( 'should not return NaN' );
 			}
@@ -188,7 +185,7 @@ function main() {
 	var i;
 
 	min = 1; // 10^min
-	max = 6; // 10^max
+	max = 5; // 10^max
 
 	for ( i = min; i <= max; i++ ) {
 		N = floor( pow( pow( 10, i ), 1.0/2.0 ) );
@@ -203,7 +200,7 @@ function main() {
 			'row-major'
 		];
 		f = createBenchmark1( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
-		bench( format( '%s::stdlib:blas/base/sgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
+		bench( format( '%s::stdlib:blas/base/dgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
 
 		f = createBenchmark2( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
 		bench( format( '%s::scijs:ndarray-gemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
@@ -214,7 +211,7 @@ function main() {
 			'row-major'
 		];
 		f = createBenchmark1( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
-		bench( format( '%s::stdlib:blas/base/sgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
+		bench( format( '%s::stdlib:blas/base/dgemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), f );
 
 		f = createBenchmark2( shapes[0], orders[0], shapes[1], orders[1], shapes[2], orders[2] );
 		bench( format( '%s::scijs:ndarray-gemm:dtype=%s,orders=(%s),size=%d,shapes={(%s),(%s),(%s)}', pkg, OPTS.dtype, orders.join( ',' ), numel( shapes[2] ), shapes[0].join( ',' ), shapes[1].join( ',' ), shapes[2].join( ',' ) ), opts, f );
