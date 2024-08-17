@@ -4102,6 +4102,7 @@ ndarrayDispatch,"\nndarrayDispatch( fcns:Function|ArrayLikeObject<Function>, \n 
 ndarrayFlag,"\nndarrayFlag( x:ndarray, name:string|symbol )\n    Returns a specified flag for a provided ndarray.\n"
 ndarrayFlags,"\nndarrayFlags( x:ndarray )\n    Returns the flags of a provided ndarray.\n"
 ndarrayIndexModes,"\nndarrayIndexModes()\n    Returns a list of ndarray index modes.\n"
+ndarraylike2ndarray,"\nndarraylike2ndarray( x:ndarrayLike[, options:Object] )\n    Converts an ndarray-like object to an ndarray.\n"
 ndarrayMinDataType,"\nndarrayMinDataType( value:any )\n    Returns the minimum ndarray data type of the closest \"kind\" necessary for\n    storing a provided scalar value.\n"
 ndarrayMostlySafeCasts,"\nndarrayMostlySafeCasts( [dtype:any] )\n    Returns a list of ndarray data types to which a provided ndarray data type\n    can be safely cast and, for floating-point data types, can be downcast.\n"
 ndarrayNextDataType,"\nndarrayNextDataType( [dtype:any] )\n    Returns the next larger ndarray data type of the same kind.\n"

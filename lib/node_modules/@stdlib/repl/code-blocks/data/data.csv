@@ -4101,6 +4101,7 @@ ndarrayDispatch,"var t = [ 'float64', 'float64', 'float32', 'float32' ];\nvar d 
 ndarrayFlag,"var out = ndarrayFlag( ndzeros( [ 3, 3, 3 ] ), 'READONLY' )\n"
 ndarrayFlags,"var out = ndarrayFlags( ndzeros( [ 3, 3, 3 ] ) )\n"
 ndarrayIndexModes,"var out = ndarrayIndexModes()\n"
+ndarraylike2ndarray,"var arr = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar out = ndarraylike2ndarray( arr )\n"
 ndarrayMinDataType,"var dt = ndarrayMinDataType( 3.141592653589793 )\ndt = ndarrayMinDataType( 3 )\ndt = ndarrayMinDataType( -3 )\ndt = ndarrayMinDataType( '-3' )\n"
 ndarrayMostlySafeCasts,"var out = ndarrayMostlySafeCasts( 'float32' )\n"
 ndarrayNextDataType,"var out = ndarrayNextDataType( 'float32' )\n"

@@ -4154,6 +4154,7 @@ ndarrayDispatch,"ndarrayDispatch( fcns:Function|ArrayLikeObject<Function>, types
 ndarrayFlag,"ndarrayFlag( x:ndarray, name:string|symbol )"
 ndarrayFlags,"ndarrayFlags( x:ndarray )"
 ndarrayIndexModes,"ndarrayIndexModes()"
+ndarraylike2ndarray,"ndarraylike2ndarray( x:ndarrayLike[, options:Object] )"
 ndarrayMinDataType,"ndarrayMinDataType( value:any )"
 ndarrayMostlySafeCasts,"ndarrayMostlySafeCasts( [dtype:any] )"
 ndarrayNextDataType,"ndarrayNextDataType( [dtype:any] )"
