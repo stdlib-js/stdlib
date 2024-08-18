@@ -2539,6 +2539,7 @@ ndarrayDispatch
 ndarrayFlag
 ndarrayFlags
 ndarrayIndexModes
+ndarraylike2ndarray
 ndarrayMinDataType
 ndarrayMostlySafeCasts
 ndarrayNextDataType
