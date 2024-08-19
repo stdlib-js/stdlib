@@ -1090,7 +1090,7 @@ base.ldexp,"\nbase.ldexp( frac:number, exp:number )\n    Multiplies a double-pre
 base.leftPad,"\nbase.leftPad( str:string, len:integer, pad:string )\n    Left pads a string such that the padded string has a length of at least\n    `len`.\n"
 base.leftTrim,"\nbase.leftTrim( str:string )\n    Trims whitespace from the beginning of a string.\n"
 base.ln,"\nbase.ln( x:number )\n    Evaluates the natural logarithm of a double-precision floating-point number.\n"
-base.log,"\nbase.log( x:number, b:number )\n    Computes the base `b` logarithm of `x`.\n"
+base.log,"\nbase.log( x:number, b:number )\n    Computes the base `b` logarithm of a double-precision floating-point number.\n"
 base.log1mexp,"\nbase.log1mexp( x:number )\n    Evaluates the natural logarithm of `1-exp(-|x|)`.\n"
 base.log1p,"\nbase.log1p( x:number )\n    Evaluates the natural logarithm of `1+x`.\n"
 base.log1pexp,"\nbase.log1pexp( x:number )\n    Evaluates the natural logarithm of `1+exp(x)`.\n"

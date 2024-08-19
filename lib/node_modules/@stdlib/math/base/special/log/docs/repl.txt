@@ -1,6 +1,6 @@
 
 {{alias}}( x, b )
-    Computes the base `b` logarithm of `x`.
+    Computes the base `b` logarithm of a double-precision floating-point number.
 
     For negative `b` or `x`, the function returns `NaN`.
 
