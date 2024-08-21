@@ -420,6 +420,8 @@
 "1nR",@stdlib/array-base-quinary5d
 "1rQ",@stdlib/array/base/reject
 "1rR",@stdlib/array-base-reject
+"1yy",@stdlib/array/base/remove-at
+"1yz",@stdlib/array-base-remove-at
 "1lw",@stdlib/array/base/resolve-getter
 "1lx",@stdlib/array-base-resolve-getter
 "1oy",@stdlib/array/base/resolve-setter
@@ -480,6 +482,8 @@
 "1wL",@stdlib/array-base-where
 "1sS",@stdlib/array/base/with
 "1sT",@stdlib/array-base-with
+"1z0",@stdlib/array/base/without
+"1z1",@stdlib/array-base-without
 "1Zc",@stdlib/array/base/zero-to
 "1Zd",@stdlib/array-base-zero-to
 "00K",@stdlib/array/base/zeros
@@ -1340,6 +1344,8 @@
 "0BZ",@stdlib/blas-base-dcopy
 "0Ba",@stdlib/blas/base/ddot
 "0Bb",@stdlib/blas-base-ddot
+"1z2",@stdlib/blas/base/dgemm
+"1z3",@stdlib/blas-base-dgemm
 "1yY",@stdlib/blas/base/dgemv
 "1yZ",@stdlib/blas-base-dgemv
 "1uU",@stdlib/blas/base/dger
@@ -1378,6 +1384,8 @@
 "1yd",@stdlib/blas-base-dsyr2
 "1ye",@stdlib/blas/base/dtrmv
 "1yf",@stdlib/blas-base-dtrmv
+"1z4",@stdlib/blas/base/dtrsv
+"1z5",@stdlib/blas-base-dtrsv
 "1xa",@stdlib/blas/base/dznrm2
 "1xb",@stdlib/blas-base-dznrm2
 "0Bk",@stdlib/blas/base/gasum
@@ -1446,6 +1454,8 @@
 "0C7",@stdlib/blas-base-sdot
 "0C8",@stdlib/blas/base/sdsdot
 "0C9",@stdlib/blas-base-sdsdot
+"1z6",@stdlib/blas/base/sgemm
+"1z7",@stdlib/blas-base-sgemm
 "1yg",@stdlib/blas/base/sgemv
 "1yh",@stdlib/blas-base-sgemv
 "1uc",@stdlib/blas/base/shared
@@ -1462,6 +1472,8 @@
 "0CD",@stdlib/blas-base-sscal
 "1wc",@stdlib/blas/base/sspmv
 "1wd",@stdlib/blas-base-sspmv
+"1z8",@stdlib/blas/base/sspr
+"1z9",@stdlib/blas-base-sspr
 "0CE",@stdlib/blas/base/sswap
 "0CF",@stdlib/blas-base-sswap
 "1we",@stdlib/blas/base/ssymv
@@ -1472,6 +1484,8 @@
 "1yl",@stdlib/blas-base-ssyr2
 "1ym",@stdlib/blas/base/strmv
 "1yn",@stdlib/blas-base-strmv
+"1zA",@stdlib/blas/base/strsv
+"1zB",@stdlib/blas-base-strsv
 "1wg",@stdlib/blas/base/transpose-operation-enum2str
 "1wh",@stdlib/blas-base-transpose-operation-enum2str
 "1wi",@stdlib/blas/base/transpose-operation-resolve-enum
@@ -1909,10 +1923,16 @@
 "1tB",@stdlib/constants-float32-fourth-pi
 "1tC",@stdlib/constants/float32/half-pi
 "1tD",@stdlib/constants-float32-half-pi
+"1zC",@stdlib/constants/float32/max-base2-exponent-subnormal
+"1zD",@stdlib/constants-float32-max-base2-exponent-subnormal
+"1zE",@stdlib/constants/float32/max-base2-exponent
+"1zF",@stdlib/constants-float32-max-base2-exponent
 "0I0",@stdlib/constants/float32/max-safe-integer
 "0I1",@stdlib/constants-float32-max-safe-integer
 "0I2",@stdlib/constants/float32/max
 "0I3",@stdlib/constants-float32-max
+"1zG",@stdlib/constants/float32/min-base2-exponent-subnormal
+"1zH",@stdlib/constants-float32-min-base2-exponent-subnormal
 "0I4",@stdlib/constants/float32/min-safe-integer
 "0I5",@stdlib/constants-float32-min-safe-integer
 "1py",@stdlib/constants/float32/nan
@@ -2350,6 +2370,8 @@
 "0Of",@stdlib/iter-counter
 "1xS",@stdlib/iter/cuany
 "1xT",@stdlib/iter-cuany
+"1zI",@stdlib/iter/cunone-by
+"1zJ",@stdlib/iter-cunone-by
 "1yU",@stdlib/iter/cusome
 "1yV",@stdlib/iter-cusome
 "0Og",@stdlib/iter/datespace
@@ -2455,6 +2477,8 @@
 "1sh",@stdlib/iter-until-each
 "1mu",@stdlib/iter/while-each
 "1mv",@stdlib/iter-while-each
+"1zK",@stdlib/lapack/base/dge-trans
+"1zL",@stdlib/lapack-base-dge-trans
 "1yo",@stdlib/lapack/base/dlacpy
 "1yp",@stdlib/lapack-base-dlacpy
 "1yq",@stdlib/lapack/base/dlassq
@@ -2465,8 +2489,12 @@
 "1yt",@stdlib/lapack-base-dpttrf
 "1xi",@stdlib/lapack/base
 "1xj",@stdlib/lapack-base
+"1zM",@stdlib/lapack/base/sge-trans
+"1zN",@stdlib/lapack-base-sge-trans
 "1yu",@stdlib/lapack/base/slacpy
 "1yv",@stdlib/lapack-base-slacpy
+"1zO",@stdlib/lapack/base/slaswp
+"1zP",@stdlib/lapack-base-slaswp
 "1yw",@stdlib/lapack/base/spttrf
 "1yx",@stdlib/lapack-base-spttrf
 "1xl",@stdlib/lapack
@@ -2490,6 +2518,8 @@
 "0QV",@stdlib/math-base-assert-is-infinitef
 "0QW",@stdlib/math/base/assert/is-integer
 "0QX",@stdlib/math-base-assert-is-integer
+"1zQ",@stdlib/math/base/assert/is-integerf
+"1zR",@stdlib/math-base-assert-is-integerf
 "0QY",@stdlib/math/base/assert/is-nan
 "0QZ",@stdlib/math-base-assert-is-nan
 "0Qa",@stdlib/math/base/assert/is-nanf
@@ -3052,6 +3082,8 @@
 "0Y3",@stdlib/math-base-special-round2
 "0Y4",@stdlib/math/base/special/roundb
 "0Y5",@stdlib/math-base-special-roundb
+"1zS",@stdlib/math/base/special/roundf
+"1zT",@stdlib/math-base-special-roundf
 "0Y6",@stdlib/math/base/special/roundn
 "0Y7",@stdlib/math-base-special-roundn
 "0Y8",@stdlib/math/base/special/roundsd
@@ -3866,6 +3898,8 @@
 "0in",@stdlib/ndarray-base-ind2sub
 "0io",@stdlib/ndarray/base/iteration-order
 "0ip",@stdlib/ndarray-base-iteration-order
+"1zU",@stdlib/ndarray/base/map
+"1zV",@stdlib/ndarray-base-map
 "0iq",@stdlib/ndarray/base/max-view-buffer-index
 "0ir",@stdlib/ndarray-base-max-view-buffer-index
 "0is",@stdlib/ndarray/base/maybe-broadcast-array
@@ -3888,6 +3922,8 @@
 "0j7",@stdlib/ndarray-base-napi-typedarray-type-to-dtype
 "0j8",@stdlib/ndarray/base/napi/unary
 "0j9",@stdlib/ndarray-base-napi-unary
+"1zW",@stdlib/ndarray/base/ndarraylike2ndarray
+"1zX",@stdlib/ndarray-base-ndarraylike2ndarray
 "0jA",@stdlib/ndarray/base/ndarraylike2object
 "0jB",@stdlib/ndarray-base-ndarraylike2object
 "1jc",@stdlib/ndarray/base/ndims
@@ -4028,6 +4064,8 @@
 "1jr",@stdlib/ndarray-iter-entries
 "1js",@stdlib/ndarray/iter/indices
 "1jt",@stdlib/ndarray-iter-indices
+"1zY",@stdlib/ndarray/iter/interleave-subarrays
+"1zZ",@stdlib/ndarray-iter-interleave-subarrays
 "1lM",@stdlib/ndarray/iter/matrices
 "1lN",@stdlib/ndarray-iter-matrices
 "1lO",@stdlib/ndarray/iter/matrix-entries
@@ -4038,6 +4076,12 @@
 "1lR",@stdlib/ndarray-iter-row-entries
 "1jw",@stdlib/ndarray/iter/rows
 "1jx",@stdlib/ndarray-iter-rows
+"1za",@stdlib/ndarray/iter/select-dimension
+"1zb",@stdlib/ndarray-iter-select-dimension
+"1zc",@stdlib/ndarray/iter/stacks
+"1zd",@stdlib/ndarray-iter-stacks
+"1ze",@stdlib/ndarray/iter/subarrays
+"1zf",@stdlib/ndarray-iter-subarrays
 "1jy",@stdlib/ndarray/iter/to-array-each
 "1jz",@stdlib/ndarray-iter-to-array-each
 "1k0",@stdlib/ndarray/iter/values
@@ -4050,6 +4094,8 @@
 "0k1",@stdlib/ndarray-min-dtype
 "1kW",@stdlib/ndarray/mostly-safe-casts
 "1kX",@stdlib/ndarray-mostly-safe-casts
+"1zg",@stdlib/ndarray/ndarraylike2ndarray
+"1zh",@stdlib/ndarray-ndarraylike2ndarray
 "1k4",@stdlib/ndarray/ndims
 "1k5",@stdlib/ndarray-ndims
 "0k2",@stdlib/ndarray/next-dtype

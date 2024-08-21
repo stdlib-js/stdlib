@@ -181,7 +181,6 @@ double stdlib_base_trigamma( const double x );
 
 ```c
 #include "stdlib/math/base/special/trigamma.h"
-#include <stdlib.h>
 #include <stdio.h>
 
 int main( void ) {

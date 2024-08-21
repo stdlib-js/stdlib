@@ -29,11 +29,11 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
+  "engines": {},
   "dependencies": {
-    "mathjs": "^11.10.0"
+    "mathjs": "^13.0.3"
   },
   "devDependencies": {},
-  "engines": {},
   "os": [
     "aix",
     "darwin",

@@ -1,0 +1,73 @@
+
+{{alias}}( x, index )
+    Returns a new array containing every element from an input array, except for
+    the element at a specified index.
+
+    Negative indices are resolved relative to the last array element, with the
+    last element corresponding to `-1`.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    index: integer
+        Index of the element to be omitted.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > {{alias}}( x, 0 )
+    [ 2, 3, 4 ]
+    > {{alias}}( x, -1 )
+    [ 1, 2, 3 ]
+    > x
+    [ 1, 2, 3, 4 ]
+
+
+{{alias}}.assign( x, index, out, stride, offset )
+    Copies every element from one array to another array, except for the element
+    at a specified index.
+
+    Negative indices are resolved relative to the last array element, with the
+    last element corresponding to `-1`.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    index: integer
+        Index of the element to be omitted.
+
+    out: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array offset.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var out = [ 0, 0, 0 ];
+    > var arr = {{alias}}.assign( x, 0, out, 1, 0 )
+    [ 2, 3, 4 ]
+    > var bool = ( arr === out )
+    true
+
+    See Also
+    --------
+

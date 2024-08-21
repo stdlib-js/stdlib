@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluate the natural logarithm of the beta function.
+* Evaluates the natural logarithm of the beta function.
 */
 double stdlib_base_betaln( const double x, const double y );
 
