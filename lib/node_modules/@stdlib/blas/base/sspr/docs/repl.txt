@@ -7,7 +7,7 @@
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    If `N` is equal to `0` or `α` is equal to `0`, the function returns `x`
+    If `N` is equal to `0` or `α` is equal to `0`, the function returns `AP`
     unchanged.
 
     Parameters

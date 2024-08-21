@@ -2539,6 +2539,7 @@
 "@stdlib/ndarray/flag",ndarrayFlag
 "@stdlib/ndarray/flags",ndarrayFlags
 "@stdlib/ndarray/index-modes",ndarrayIndexModes
+"@stdlib/ndarray/ndarraylike2ndarray",ndarraylike2ndarray
 "@stdlib/ndarray/min-dtype",ndarrayMinDataType
 "@stdlib/ndarray/mostly-safe-casts",ndarrayMostlySafeCasts
 "@stdlib/ndarray/next-dtype",ndarrayNextDataType
