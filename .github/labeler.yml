@@ -20,6 +20,10 @@ BLAS:
 - changed-files:
   - any-glob-to-all-files: '**/blas/**/*'
 
+LAPACK:
+- changed-files:
+  - any-glob-to-all-files: '**/lapack/**/*'
+
 Math:
 - changed-files:
   - any-glob-to-all-files: '**/math/**/*'

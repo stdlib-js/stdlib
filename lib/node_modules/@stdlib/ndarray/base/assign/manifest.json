@@ -76,6 +76,7 @@
         "./src/u_d.c",
         "./src/u_u.c",
         "./src/u_z.c",
+        "./src/x_x.c",
         "./src/z_c.c",
         "./src/z_z.c",
         "./src/dispatch.c",

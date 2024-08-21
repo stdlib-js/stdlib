@@ -35,8 +35,8 @@ var COMPLEX128_ZERO = require( '@stdlib/constants/complex128/zero' );
 Double-precision complex floating-point zero.
 
 ```javascript
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var real = require( '@stdlib/complex/float64/real' );
+var imag = require( '@stdlib/complex/float64/imag' );
 
 var re = real( COMPLEX128_ZERO );
 // returns 0.0
@@ -56,8 +56,8 @@ var im = imag( COMPLEX128_ZERO );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var real = require( '@stdlib/complex/float64/real' );
+var imag = require( '@stdlib/complex/float64/imag' );
 var Complex128Array = require( '@stdlib/array/complex128' );
 var COMPLEX128_ZERO = require( '@stdlib/constants/complex128/zero' );
 

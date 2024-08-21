@@ -31,7 +31,6 @@
 *
 * -   If able to successfully apply a nullary callback, the function returns `0`; otherwise, the function returns an error code.
 *
-* @private
 * @param f     nullary ndarray function
 * @param x1    output ndarray
 * @param i     index of the non-singleton dimension
@@ -75,7 +74,6 @@ static int8_t stdlib_ndarray_nullary_1d_squeeze( const ndarrayNullaryFcn f, stru
 *
 * -   If able to successfully apply a nullary callback, the function returns `0`; otherwise, the function returns an error code.
 *
-* @private
 * @param f     nullary ndarray function
 * @param N     number of elements
 * @param x1    output ndarray

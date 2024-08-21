@@ -1,0 +1,8 @@
+---
+type: filter-packages
+exclude:
+  - complex/base/assert
+  - complex/float64/base/assert/is-equal
+  - error/tools/id2pkg
+  - error/tools/pkg2id
+---

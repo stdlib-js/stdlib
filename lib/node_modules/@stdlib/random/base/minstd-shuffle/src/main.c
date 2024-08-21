@@ -47,7 +47,6 @@ static const int32_t NUM_WARMUPS = 8;
 /**
 * MINSTD PRNG whose output is shuffled.
 *
-* @private
 */
 static const struct BasePRNG minstd_shuffle_prng = {
 	"minstd-shuffle",                                     // name
@@ -68,7 +67,6 @@ static const struct BasePRNG minstd_shuffle_prng = {
 *
 * -   The function returns `-1` if unable to generate a pseudorandom integer and `0` otherwise.
 *
-* @private
 * @param obj  PRNG object
 * @param out  output address
 * @return     status code
@@ -110,7 +108,6 @@ static inline int8_t next( struct BasePRNGObject *obj, uint64_t *out ) {
 *
 * -   The function returns `-1` if unable to generate a pseudorandom number and `0` otherwise.
 *
-* @private
 * @param obj  PRNG object
 * @param out  output address
 * @return     status code
@@ -130,7 +127,6 @@ static inline int8_t normalized( struct BasePRNGObject *obj, double *out ) {
 /**
 * Frees a PRNG's allocated memory.
 *
-* @private
 * @param obj  PRNG object
 */
 static inline void minstd_shuffle_free( struct BasePRNGObject *obj ) {
@@ -148,7 +144,6 @@ static inline void minstd_shuffle_free( struct BasePRNGObject *obj ) {
 *
 * -   The function returns `-1` if unable to resolve a PRNG seed and `0` otherwise.
 *
-* @private
 * @param obj    MINSTD PRNG object
 * @param table  pointer to output shuffle table
 * @return       status code

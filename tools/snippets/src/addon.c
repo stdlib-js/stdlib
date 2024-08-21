@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -25,7 +25,6 @@
 /**
 * Receives JavaScript callback invocation data.
 *
-* @private
 * @param env    environment under which the function is invoked
 * @param info   callback data
 * @return       Node-API value
@@ -89,7 +88,6 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 /**
 * Initializes a Node-API module.
 *
-* @private
 * @param env      environment under which the function is invoked
 * @param exports  exports object
 * @return         main export

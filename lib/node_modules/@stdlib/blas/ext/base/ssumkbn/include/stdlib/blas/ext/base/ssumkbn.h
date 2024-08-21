@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Header file containing function declarations.
-*/
 #ifndef STDLIB_BLAS_EXT_BASE_SSUMKBN_H
 #define STDLIB_BLAS_EXT_BASE_SSUMKBN_H
 

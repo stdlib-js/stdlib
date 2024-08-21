@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Header file containing function declarations.
-*/
 #ifndef STDLIB_MATH_BASE_SPECIAL_DEG2RAD_H
 #define STDLIB_MATH_BASE_SPECIAL_DEG2RAD_H
 

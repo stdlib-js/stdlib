@@ -98,7 +98,7 @@ interface ndarrayObject {
 }
 
 /**
-* Converts an ndarray-like to an object likely to have the same "shape".
+* Converts an ndarray-like object to an object likely to have the same "shape".
 *
 * ## Notes
 *

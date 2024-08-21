@@ -78,6 +78,18 @@ $ git add . && make commit
 $ git add . && make retry-commit
 ```
 
+#### apply-git-notes
+
+Applies Git notes from the `docs/git-notes` directory to their corresponding commits.
+
+<!-- run-disable -->
+
+```bash
+$ make apply-git-notes
+```
+
+This is useful for fixing commit messages which contain errors or do not adhere to the project's [Git style guide][stdlib-style-guides-git] and to exclude certain commits from the changelog notes for specific packages.
+
 </section>
 
 <!-- /.usage -->

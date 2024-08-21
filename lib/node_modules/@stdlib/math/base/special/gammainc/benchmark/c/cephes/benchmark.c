@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark Cephes `igam` and `igamc`.
-*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -38,7 +35,7 @@ extern double igamc( double x, double y );
 /**
 * Prints the TAP version.
 */
-void print_version() {
+static void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -48,7 +45,7 @@ void print_version() {
 * @param total     total number of tests
 * @param passing   total number of passing tests
 */
-void print_summary( int total, int passing ) {
+static void print_summary( int total, int passing ) {
 	printf( "#\n" );
 	printf( "1..%d\n", total ); // TAP plan
 	printf( "# total %d\n", total );
@@ -62,7 +59,7 @@ void print_summary( int total, int passing ) {
 *
 * @param elapsed   elapsed time in seconds
 */
-void print_results( double elapsed ) {
+static void print_results( double elapsed ) {
 	double rate = (double)ITERATIONS / elapsed;
 	printf( "  ---\n" );
 	printf( "  iterations: %d\n", ITERATIONS );
@@ -76,18 +73,18 @@ void print_results( double elapsed ) {
 *
 * @return clock time
 */
-double tic() {
+static double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
 }
 
 /**
-* Generates a random number on the interval [0,1].
+* Generates a random number on the interval [0,1).
 *
 * @return random number
 */
-double rand_double() {
+static double rand_double( void ) {
 	int r = rand();
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }
@@ -97,7 +94,7 @@ double rand_double() {
 *
 * @return elapsed time in seconds
 */
-double benchmark1() {
+static double benchmark1( void ) {
 	double elapsed;
 	double x;
 	double y;
@@ -127,7 +124,7 @@ double benchmark1() {
 *
 * @return elapsed time in seconds
 */
-double benchmark2() {
+static double benchmark2( void ) {
 	double elapsed;
 	double x;
 	double y;

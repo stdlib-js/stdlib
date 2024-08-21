@@ -101,8 +101,8 @@ interface Table {
 * @example
 * var signatures = require( '@stdlib/strided/base/binary-dtype-signatures' );
 * var add = require( '@stdlib/math/base/ops/add' );
-* var cadd = require( '@stdlib/math/base/ops/cadd' );
-* var caddf = require( '@stdlib/math/base/ops/caddf' );
+* var cadd = require( '@stdlib/complex/float64/base/add' );
+* var caddf = require( '@stdlib/complex/float32/base/add' );
 *
 * var dtypes = [
 *     'float64',

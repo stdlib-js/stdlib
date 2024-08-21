@@ -30,7 +30,6 @@
 * -   The algorithm is **stable**, meaning that the algorithm does **not** change the order of array elements which are equal or equivalent.
 * -   The input arrays are sorted in-place (i.e., the input arrays are mutated).
 *
-* @private
 * @param n   number of elements
 * @param x   first array
 * @param y   second array

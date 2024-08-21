@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `atanf`.
-*/
 #include "stdlib/math/base/special/atanf.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -33,7 +30,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version() {
+static void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -43,7 +40,7 @@ void print_version() {
 * @param total     total number of tests
 * @param passing   total number of passing tests
 */
-void print_summary( int total, int passing ) {
+static void print_summary( int total, int passing ) {
 	printf( "#\n" );
 	printf( "1..%d\n", total ); // TAP plan
 	printf( "# total %d\n", total );
@@ -57,7 +54,7 @@ void print_summary( int total, int passing ) {
 *
 * @param elapsed   elapsed time in seconds
 */
-void print_results( double elapsed ) {
+static void print_results( double elapsed ) {
 	double rate = (double)ITERATIONS / elapsed;
 	printf( "  ---\n" );
 	printf( "  iterations: %d\n", ITERATIONS );
@@ -71,18 +68,18 @@ void print_results( double elapsed ) {
 *
 * @return clock time
 */
-double tic() {
+static double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
 }
 
 /**
-* Generates a random number on the interval [0,1].
+* Generates a random number on the interval [0,1).
 *
 * @return random number
 */
-float rand_float() {
+static float rand_float( void ) {
 	int r = rand();
 	return (float)r / ( (float)RAND_MAX + 1.0f );
 }
@@ -92,7 +89,7 @@ float rand_float() {
 *
 * @return elapsed time in seconds
 */
-double benchmark() {
+static double benchmark( void ) {
 	double elapsed;
 	double t;
 	float x;

@@ -50,9 +50,9 @@
     > f( x, 1, new {{alias:@stdlib/complex/float32/ctor}}( 10.0, 11.0 ) );
     > var v = x.get( 1 )
     <Complex64>
-    > var r = {{alias:@stdlib/complex/realf}}( v )
+    > var r = {{alias:@stdlib/complex/float32/real}}( v )
     10.0
-    > var i = {{alias:@stdlib/complex/imagf}}( v )
+    > var i = {{alias:@stdlib/complex/float32/imag}}( v )
     11.0
 
     See Also

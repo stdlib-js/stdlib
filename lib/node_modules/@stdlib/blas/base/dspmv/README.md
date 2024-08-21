@@ -79,16 +79,16 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 var Float64Array = require( '@stdlib/array/float64' );
 
 // Initial arrays...
-var x0 = new Float64Array( [ 1.0, 1.0 ] );
-var y0 = new Float64Array( [ 1.0, 1.0 ] );
+var x0 = new Float64Array( [ 0.0, 1.0, 1.0 ] );
+var y0 = new Float64Array( [ 0.0, 1.0, 1.0 ] );
 var AP = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 
 // Create offset views...
-var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*0 ); // start at 1st element
-var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*0 ); // start at 1st element
+var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
 dspmv( 'row-major', 'upper', 2, 1.0, AP, x1, -1, 1.0, y1, -1 );
-// y0 => <Float64Array>[ 6.0, 4.0 ]
+// y0 => <Float64Array>[ 0.0, 6.0, 4.0 ]
 ```
 
 #### dspmv.ndarray( order, uplo, N, α, AP, oa, x, sx, ox, β, y, sy, oy )

@@ -1,4 +1,4 @@
-Resolves # .
+Resolves #{{TODO: add issue number}}.
 
 ## Description
 
@@ -6,9 +6,7 @@ Resolves # .
 
 This pull request:
 
--   a
--   b
--   c
+-   {{TODO: add description describing what this pull request does}}
 
 ## Related Issues
 
@@ -16,8 +14,7 @@ This pull request:
 
 This pull request:
 
--   resolves #
--   fixes #
+-   resolves #{{TODO: add issue number}} 
 
 ## Questions
 

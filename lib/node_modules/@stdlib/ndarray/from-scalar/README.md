@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2022 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -66,7 +66,8 @@ The function accepts the following `options`:
 
 If a `dtype` option is not provided and `value`
 
--   is a `number`, the default [data type][@stdlib/ndarray/dtypes] is the [default][@stdlib/ndarray/defaults] real-valued floating-point data type.
+-   is a number, the default [data type][@stdlib/ndarray/dtypes] is the [default][@stdlib/ndarray/defaults] real-valued floating-point data type.
+-   is a boolean, the default [data type][@stdlib/ndarray/dtypes] is the [default][@stdlib/ndarray/defaults] boolean data type.
 -   is a complex number object of a known data type, the data type is the same as the provided value.
 -   is a complex number object of an unknown data type, the default [data type][@stdlib/ndarray/dtypes] is the [default][@stdlib/ndarray/defaults] complex-valued floating-point data type.
 -   is any other value type, the default [data type][@stdlib/ndarray/dtypes] is `'generic'`.
@@ -100,6 +101,7 @@ var v = x.get();
 ## Notes
 
 -   If `value` is a number and `options.dtype` is a complex [data type][@stdlib/ndarray/dtypes], the function returns a zero-dimensional [`ndarray`][@stdlib/ndarray/ctor] containing a complex number whose real component equals the provided scalar `value` and whose imaginary component is zero.
+-   The function does not guard against precision loss when `value` is a number and the `dtype` argument is an integer [data type][@stdlib/ndarray/dtypes].
 
 </section>
 

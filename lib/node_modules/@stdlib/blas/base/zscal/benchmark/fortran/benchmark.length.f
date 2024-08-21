@@ -16,7 +16,7 @@
 ! limitations under the License.
 !<
 
-!> Benchmark `zscal`.
+!> Benchmarks.
 !
 ! ## Notes
 !

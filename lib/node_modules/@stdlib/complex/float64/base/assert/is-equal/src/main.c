@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/float64/base/assert/is_equal.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include "stdlib/complex/float64/ctor.h"
 #include <stdbool.h>
 
@@ -42,7 +42,7 @@ bool stdlib_base_complex128_is_equal( const stdlib_complex128_t z1, const stdlib
 	double re2;
 	double im1;
 	double im2;
-	stdlib_reim( z1, &re1, &im1 );
-	stdlib_reim( z2, &re2, &im2 );
+	stdlib_complex128_reim( z1, &re1, &im1 );
+	stdlib_complex128_reim( z2, &re2, &im2 );
 	return ( re1 == re2 && im1 == im2 );
 }

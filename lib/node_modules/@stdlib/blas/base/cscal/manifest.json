@@ -50,7 +50,7 @@
         "@stdlib/napi/argv-strided-complex64array",
         "@stdlib/napi/argv-complex64",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/math/base/ops/cmulf"
+        "@stdlib/complex/float32/base/mul"
       ]
     },
     {
@@ -68,7 +68,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmulf",
+        "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -87,7 +87,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmulf",
+        "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -200,7 +200,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmulf",
+        "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -219,7 +219,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmulf",
+        "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -380,7 +380,7 @@
         "@stdlib/napi/argv-strided-complex64array",
         "@stdlib/napi/argv-complex64",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/math/base/ops/cmulf"
+        "@stdlib/complex/float32/base/mul"
       ]
     },
     {
@@ -398,7 +398,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmulf",
+        "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -417,7 +417,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmulf",
+        "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -437,7 +437,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/ops/cmulf",
+        "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
     }

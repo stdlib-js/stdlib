@@ -77,6 +77,8 @@
 #include "nullary/u_as_b.h"
 #include "nullary/u_as_t.h"
 
+#include "nullary/x.h"
+
 #include "nullary/z.h"
 #include "nullary/z_as_b.h"
 #include "nullary/z_as_c.h"

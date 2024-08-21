@@ -161,7 +161,7 @@ double stdlib_base_cabs( const stdlib_complex128_t complex z );
 ```c
 #include "stdlib/math/base/special/cabs.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -180,7 +180,7 @@ int main( void ) {
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
         y = stdlib_base_cabs( v );
-        stdlib_reim( v, &re, &im );
+        stdlib_complex128_reim( v, &re, &im );
         printf( "f(%lf + %lf) = %lf\n", re, im, y );
     }
 }

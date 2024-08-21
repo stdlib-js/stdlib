@@ -38,7 +38,7 @@
       "dependencies": [
         "@stdlib/math/base/napi/unary",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/reim",
+        "@stdlib/complex/float64/reim",
         "@stdlib/math/base/special/abs",
         "@stdlib/constants/float64/max",
         "@stdlib/constants/float64/eps",
@@ -57,7 +57,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/reim",
+        "@stdlib/complex/float64/reim",
         "@stdlib/math/base/special/abs",
         "@stdlib/constants/float64/max",
         "@stdlib/constants/float64/eps",
@@ -76,7 +76,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/reim",
+        "@stdlib/complex/float64/reim",
         "@stdlib/math/base/special/abs",
         "@stdlib/constants/float64/max",
         "@stdlib/constants/float64/eps",

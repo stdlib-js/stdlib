@@ -113,6 +113,99 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/powm1.h"
+```
+
+#### stdlib_base_powm1( base, exponent )
+
+Evaluates `bˣ - 1`.
+
+```c
+double out = stdlib_base_powm1( 3.141592653589793, 5.0 );
+// returns ~305.0197
+
+out = stdlib_base_powm1( 4.0, 0.5 );
+// returns 1.0
+```
+
+The function accepts the following arguments:
+
+-   **base**: `[in] double` base.
+-   **exponent**: `[in] double` exponent.
+
+```c
+double stdlib_base_powm1( const double base, const double exponent );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/powm1.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    double out;
+    double b;
+    double x;
+    int i;
+
+    for ( i = 0; i < 100; i++ ) {
+        b = ( ( (double)rand() / (double)RAND_MAX ) * 10.0 );
+        x = ( ( (double)rand() / (double)RAND_MAX ) * 10.0 ) - 5.0;
+        out = stdlib_base_powm1( b, x );
+        printf( "powm1(%lf, %lf) = %lf\n", b, x, out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

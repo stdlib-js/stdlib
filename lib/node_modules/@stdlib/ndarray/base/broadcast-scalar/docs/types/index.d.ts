@@ -86,8 +86,8 @@ declare function broadcastScalar( value: number, dtype: 'float32', shape: Shape,
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/real' );
-* var imag = require( '@stdlib/complex/imag' );
+* var real = require( '@stdlib/complex/float64/real' );
+* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var v = new Complex128( 1.0, 2.0 );
 *
@@ -126,8 +126,8 @@ declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex12
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var v = new Complex64( 1.0, 2.0 );
 *

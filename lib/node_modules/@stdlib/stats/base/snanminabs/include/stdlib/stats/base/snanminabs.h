@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Header file containing function declarations.
-*/
 #ifndef STDLIB_STATS_BASE_SNANMINABS_H
 #define STDLIB_STATS_BASE_SNANMINABS_H
 

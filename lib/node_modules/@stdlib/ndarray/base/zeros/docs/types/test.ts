@@ -34,7 +34,7 @@ import zeros = require( './index' );
 	zeros( 'uint16', [ 2, 2 ], 'row-major' ); // $ExpectType uint16ndarray
 	zeros( 'uint8', [ 2, 2 ], 'row-major' ); // $ExpectType uint8ndarray
 	zeros( 'uint8c', [ 2, 2 ], 'row-major' ); // $ExpectType uint8cndarray
-	zeros( 'generic', [ 2, 2 ], 'row-major' ); // $ExpectType typedndarray<number>
+	zeros( 'generic', [ 2, 2 ], 'row-major' ); // $ExpectType genericndarray<number>
 
 	zeros( 'float64', [ 2, 2 ], 'column-major' ); // $ExpectType float64ndarray
 	zeros( 'float32', [ 2, 2 ], 'column-major' ); // $ExpectType float32ndarray
@@ -47,7 +47,7 @@ import zeros = require( './index' );
 	zeros( 'uint16', [ 2, 2 ], 'column-major' ); // $ExpectType uint16ndarray
 	zeros( 'uint8', [ 2, 2 ], 'column-major' ); // $ExpectType uint8ndarray
 	zeros( 'uint8c', [ 2, 2 ], 'column-major' ); // $ExpectType uint8cndarray
-	zeros( 'generic', [ 2, 2 ], 'column-major' ); // $ExpectType typedndarray<number>
+	zeros( 'generic', [ 2, 2 ], 'column-major' ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is an unrecognized/unsupported data type...

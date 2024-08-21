@@ -24,25 +24,10 @@ import truncsd = require( './index' );
 // The function returns a number...
 {
 	truncsd( 3.141592653589793, 4, 10 ); // $ExpectType number
-	truncsd( 3.141592653589793, 4 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided values other than numbers...
 {
-	truncsd( true, 3 ); // $ExpectError
-	truncsd( false, 2 ); // $ExpectError
-	truncsd( '5', 1 ); // $ExpectError
-	truncsd( [], 1 ); // $ExpectError
-	truncsd( {}, 2 ); // $ExpectError
-	truncsd( ( x: number ): number => x, 2 ); // $ExpectError
-
-	truncsd( 9, true ); // $ExpectError
-	truncsd( 9, false ); // $ExpectError
-	truncsd( 5, '5' ); // $ExpectError
-	truncsd( 8, [] ); // $ExpectError
-	truncsd( 9, {} ); // $ExpectError
-	truncsd( 8, ( x: number ): number => x ); // $ExpectError
-
 	truncsd( true, 3, 2 ); // $ExpectError
 	truncsd( false, 2, 2 ); // $ExpectError
 	truncsd( '5', 1, 2 ); // $ExpectError

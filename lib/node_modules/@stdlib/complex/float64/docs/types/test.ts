@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,54 +16,14 @@
 * limitations under the License.
 */
 
-import Complex128 = require( './index' );
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+
+import ns = require( './index' );
 
 
 // TESTS //
 
-// The function returns a 128-bit complex number with the expected properties...
+// The exported value is the expected interface...
 {
-	const x = new Complex128( 5.0, 3.0 ); // $ExpectType Complex128
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	x.im; // $ExpectType number
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	x.re; // $ExpectType number
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	x.BYTES_PER_ELEMENT; // $ExpectType 8
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	x.byteLength; // $ExpectType 16
-}
-
-// 128-bit complex number comes with a `toString` method to serialize a complex number as a string...
-{
-	const x = new Complex128( 5.0, 3.0 ); // $ExpectType Complex128
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	x.toString(); // $ExpectType string
-}
-
-// 128-bit complex number comes with a `toJSON` method to serialize a complex number as a JSON object...
-{
-	const x = new Complex128( 5.0, 3.0 ); // $ExpectType Complex128
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	x.toJSON(); // $ExpectType any
-}
-
-// The compiler throws an error if the constructor is invoked without the `new` keyword...
-{
-	Complex128( 5.0, 3.0 ); // $ExpectError
-}
-
-// The compiler throws an error if the constructor is provided an unsupported number of arguments...
-{
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	new Complex128( 5.0 ); // $ExpectError
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	new Complex128( 5.0, 3.0, 1.0 ); // $ExpectError
+	ns; // $ExpectType Namespace
 }

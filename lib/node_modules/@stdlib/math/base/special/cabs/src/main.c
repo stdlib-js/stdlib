@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/cabs.h"
 #include "stdlib/math/base/special/hypot.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 /**
 * Computes the absolute value of a double-precision complex floating-point number.
@@ -38,6 +38,6 @@
 double stdlib_base_cabs( const stdlib_complex128_t z ) {
 	double re;
 	double im;
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 	return stdlib_base_hypot( re, im );
 }

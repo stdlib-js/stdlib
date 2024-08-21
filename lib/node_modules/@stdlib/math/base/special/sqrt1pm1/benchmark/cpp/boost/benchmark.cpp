@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark Boost `sqrt1pm1`.
-*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

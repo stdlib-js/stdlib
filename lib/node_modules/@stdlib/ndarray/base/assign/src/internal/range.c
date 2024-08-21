@@ -22,7 +22,6 @@
 /**
 * Writes `n` evenly spaced values from `0` to `n-1` to an output array.
 *
-* @private
 * @param n    number of values to write
 * @param out  output array
 */

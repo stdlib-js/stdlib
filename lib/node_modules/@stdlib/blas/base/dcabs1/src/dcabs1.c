@@ -19,7 +19,7 @@
 #include "stdlib/blas/base/dcabs1.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/complex/float64/ctor.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 
 /**
 * Computes the sum of the absolute values of the real and imaginary components of a double-precision complex floating-point number.
@@ -38,6 +38,6 @@
 double c_dcabs1( const stdlib_complex128_t z ) {
 	double re;
 	double im;
-	stdlib_reim( z, &re, &im );
+	stdlib_complex128_reim( z, &re, &im );
 	return stdlib_base_abs( re ) + stdlib_base_abs( im );
 }

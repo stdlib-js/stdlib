@@ -41,7 +41,6 @@ compile_wasm_bin := $(TOOLS_DIR)/scripts/compile_wasm
 #
 # -   If unable to compile WebAssemby artifacts, the recipe prints an error message and tries compiling WebAssembly artifacts for the next package.
 #
-#
 # @param {string} [PKGS_WASM_PATTERN] - package pattern (e.g., `**/math/base/special/**/package.json`)
 #
 # @example

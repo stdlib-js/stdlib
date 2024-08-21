@@ -1,4 +1,4 @@
-#### stdlib_ndarray_assign_{{SIGNATURE}}( \*arrays[] )
+#### stdlib_ndarray_assign_{{SIGNATURE}}( \*arrays\[] )
 
 Assigns elements in an input ndarray to elements in an output ndarray.
 

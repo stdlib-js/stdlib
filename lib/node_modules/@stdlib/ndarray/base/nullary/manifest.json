@@ -61,6 +61,7 @@
         "./src/u.c",
         "./src/u_as_b.c",
         "./src/u_as_t.c",
+        "./src/x.c",
         "./src/z.c",
         "./src/z_as_b.c",
         "./src/z_as_c.c",

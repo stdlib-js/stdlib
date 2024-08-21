@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Header file containing function declarations.
-*/
 #ifndef STDLIB_NUMBER_FLOAT32_BASE_EXPONENT_H
 #define STDLIB_NUMBER_FLOAT32_BASE_EXPONENT_H
 

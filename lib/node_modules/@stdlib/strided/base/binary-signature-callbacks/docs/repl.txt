@@ -32,8 +32,8 @@
     > var sigs = {{alias:@stdlib/strided/base/binary-dtype-signatures}}( dt, dt, dt );
     > var t = {
     ...     'default': {{alias:@stdlib/math/base/ops/add}},
-    ...     'complex64': {{alias:@stdlib/math/base/ops/caddf}},
-    ...     'complex128': {{alias:@stdlib/math/base/ops/cadd}}
+    ...     'complex64': {{alias:@stdlib/complex/float32/base/add}},
+    ...     'complex128': {{alias:@stdlib/complex/float64/base/add}}
     ... };
     > var out = {{alias}}( t, sigs )
     [...]

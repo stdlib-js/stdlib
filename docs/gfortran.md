@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2024 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 # gfortran
 
 > GNU Fortran [compiler][gfortran].
@@ -77,7 +97,7 @@ $ gfortran [options] -fsyntax-only <file>
 
 ### Combining C and Fortran
 
-A common scenario in numeric computing is exposing numeric computing libraries written in Fortran as C functions. To illustrate how one might proceed, consider a Fortran function which adds two numbers and returns the sum.
+A common scenario in numerical computing is exposing numerical computing libraries written in Fortran as C functions. To illustrate how one might proceed, consider a Fortran function which adds two numbers and returns the sum.
 
 ```fortran
 !>
@@ -201,7 +221,7 @@ $ gfortran -std=f95 -free-form -O3 -fno-underscoring -c -o add.o add.f
 $ gfortran -std=f95 -free-form -O3 -fno-underscoring -c -o addsub.o addsub.f
 ```
 
-Note that `-fno-underscoring` prevents [gfortran][gfortran] from modifying function names. This ensures that the name used in our C code matches the exported symbol. Be careful, however, as non-mangled names may conflict with existing symbols.
+Note that `-fno-underscoring` prevents [GFortran][gfortran] from modifying function names. This ensures that the name used in our C code matches the exported symbol. Be careful, however, as non-mangled names may conflict with existing symbols.
 
 Next, we compile our C files.
 
@@ -210,7 +230,7 @@ $ gcc -std=c99 -O3 -I add_fortran.h -I add.h -c -o add_f.o add_f.c
 $ gcc -std=c99 -O3 -I add_fortran.h -I add.h -c -o main.o main.c
 ```
 
-Finally, we link the object files using [gfortran][gfortran], thus generating an executable.
+Finally, we link the object files using [GFortran][gfortran], thus generating an executable.
 
 ```bash
 $ gfortran -o main add.o addsub.o add_f.o main.o
@@ -249,6 +269,6 @@ $ ./main
 
 [c-with-fortran]: https://www.math.utah.edu/software/c-with-fortran.html
 
-[intel-mkl]: https://software.intel.com/en-us/node/528729#IX_COMPLEX_BLAS_LEVEL_1_1
+[intel-mkl]: https://www.intel.com/content/www/us/en/docs/onemkl/developer-guide-windows/2023-1/call-blas-funcs-return-complex-values-in-c-code.html
 
 <!-- </definitions> -->

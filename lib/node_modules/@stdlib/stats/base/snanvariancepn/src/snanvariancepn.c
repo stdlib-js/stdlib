@@ -30,7 +30,6 @@
 *
 * -   Higham, Nicholas J. 1993. "The Accuracy of Floating Point Summation." _SIAM Journal on Scientific Computing_ 14 (4): 783–99. doi:[10.1137/0914050](https://doi.org/10.1137/0914050).
 *
-* @private
 * @param N       number of indexed elements
 * @param W       two-element output array
 * @param X       input array

@@ -31,8 +31,8 @@ import { Complex128 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/real' );
-* var imag = require( '@stdlib/complex/imag' );
+* var real = require( '@stdlib/complex/float64/real' );
+* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var v = cfloor( new Complex128( 5.555, -3.333 ), -2 );
 * // returns <Complex128>

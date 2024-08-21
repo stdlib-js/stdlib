@@ -34,7 +34,8 @@ import empty = require( './index' );
 	empty( 'uint16', [ 2, 2 ], 'row-major' ); // $ExpectType uint16ndarray
 	empty( 'uint8', [ 2, 2 ], 'row-major' ); // $ExpectType uint8ndarray
 	empty( 'uint8c', [ 2, 2 ], 'row-major' ); // $ExpectType uint8cndarray
-	empty( 'generic', [ 2, 2 ], 'row-major' ); // $ExpectType typedndarray<number>
+	empty( 'bool', [ 2, 2 ], 'row-major' ); // $ExpectType boolndarray
+	empty( 'generic', [ 2, 2 ], 'row-major' ); // $ExpectType genericndarray<number>
 
 	empty( 'float64', [ 2, 2 ], 'column-major' ); // $ExpectType float64ndarray
 	empty( 'float32', [ 2, 2 ], 'column-major' ); // $ExpectType float32ndarray
@@ -47,7 +48,8 @@ import empty = require( './index' );
 	empty( 'uint16', [ 2, 2 ], 'column-major' ); // $ExpectType uint16ndarray
 	empty( 'uint8', [ 2, 2 ], 'column-major' ); // $ExpectType uint8ndarray
 	empty( 'uint8c', [ 2, 2 ], 'column-major' ); // $ExpectType uint8cndarray
-	empty( 'generic', [ 2, 2 ], 'column-major' ); // $ExpectType typedndarray<number>
+	empty( 'bool', [ 2, 2 ], 'column-major' ); // $ExpectType boolndarray
+	empty( 'generic', [ 2, 2 ], 'column-major' ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is an unrecognized/unsupported data type...

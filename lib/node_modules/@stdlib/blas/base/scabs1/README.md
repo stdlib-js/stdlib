@@ -136,8 +136,8 @@ float c_scabs1( const stdlib_complex64_t c );
 ```c
 #include "stdlib/blas/base/scabs1.h"
 #include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/realf.h"
-#include "stdlib/complex/imagf.h"
+#include "stdlib/complex/float32/real.h"
+#include "stdlib/complex/float32/imag.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -152,7 +152,7 @@ int main( void ) {
     int i;
     for ( i = 0; i < 4; i++ ) {
         y = c_scabs1( x[ i ] );
-        printf( "f(%f + %f) = %f\n", stdlib_realf( x[ i ] ), stdlib_imagf( x[ i ] ), y );
+        printf( "f(%f + %f) = %f\n", stdlib_complex64_real( x[ i ] ), stdlib_complex64_imag( x[ i ] ), y );
     }
 }
 ```
