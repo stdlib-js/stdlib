@@ -53,7 +53,7 @@ var fcns = special;
 -   <span class="signature">[`expm1rel( x )`][@stdlib/math/base/special/expm1rel]</span><span class="delimiter">: </span><span class="description">compute the relative error exponential.</span>
 -   <span class="signature">[`kernelLog1p( f )`][@stdlib/math/base/special/kernel-log1p]</span><span class="delimiter">: </span><span class="description">compute `log(1+f) - f` for `1+f` in `~[sqrt(2)/2, sqrt(2)]`.</span>
 -   <span class="signature">[`ln( x )`][@stdlib/math/base/special/ln]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of a double-precision floating-point number.</span>
--   <span class="signature">[`log( x, b )`][@stdlib/math/base/special/log]</span><span class="delimiter">: </span><span class="description">compute the base `b` logarithm.</span>
+-   <span class="signature">[`log( x, b )`][@stdlib/math/base/special/log]</span><span class="delimiter">: </span><span class="description">compute the base `b` logarithm of a double-precision floating-point number.</span>
 -   <span class="signature">[`log10( x )`][@stdlib/math/base/special/log10]</span><span class="delimiter">: </span><span class="description">evaluate the common logarithm.</span>
 -   <span class="signature">[`log1mexp( x )`][@stdlib/math/base/special/log1mexp]</span><span class="delimiter">: </span><span class="description">evaluates the natural logarithm of `1-exp(-|x|)`.</span>
 -   <span class="signature">[`log1p( x )`][@stdlib/math/base/special/log1p]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of `1+x`.</span>
