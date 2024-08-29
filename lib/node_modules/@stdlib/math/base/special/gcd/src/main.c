@@ -17,12 +17,12 @@
 */
 
 #include "stdlib/math/base/special/gcd.h"
+#include "stdlib/math/base/special/fmod.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib//constants/float64/ninf.h"
 #include <stdint.h>
-#include <math.h>
 
 // 2^63 - 1
 static const int64_t STDLIB_CONSTANT_INT64_MAX = 9223372036854775807;
@@ -56,19 +56,19 @@ static double largeIntegers( const double a, const double b ) {
 	k = 1.0;
 
 	// Reduce `a` and/or `b` to odd numbers and keep track of the greatest power of 2 dividing both `a` and `b`...
-	while ( fmod( ac, 2.0 ) == 0.0 && fmod( bc, 2.0 ) == 0.0 ) {
+	while ( stdlib_base_fmod( ac, 2.0 ) == 0.0 && stdlib_base_fmod( bc, 2.0 ) == 0.0 ) {
 		ac /= 2.0; // right shift
 		bc /= 2.0; // right shift
 		k *= 2.0; // left shift
 	}
 	// Reduce `a` to an odd number...
-	while ( fmod( ac, 2.0 ) == 0.0 ) {
+	while ( stdlib_base_fmod( ac, 2.0 ) == 0.0 ) {
 		ac /= 2.0; // right shift
 	}
 	// Henceforth, `a` is always odd...
 	while ( bc ) {
 		// Remove all factors of 2 in `b`, as they are not common...
-		while ( fmod( bc, 2.0 ) == 0.0 ) {
+		while ( stdlib_base_fmod( bc, 2.0 ) == 0.0 ) {
 			bc /= 2.0; // right shift
 		}
 		// `a` and `b` are both odd. Swap values such that `b` is the larger of the two values, and then set `b` to the difference (which is even)...
