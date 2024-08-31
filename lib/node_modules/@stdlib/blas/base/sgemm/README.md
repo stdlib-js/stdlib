@@ -22,7 +22,7 @@ limitations under the License.
 
 > Perform the matrix-matrix operation `C = α*op(A)*op(B) + β*C` where `op(X)` is one of the `op(X) = X`, or `op(X) = X^T`.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 

@@ -22,7 +22,7 @@ limitations under the License.
 
 > Convert a matrix from row-major layout to column-major layout or vice versa.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 

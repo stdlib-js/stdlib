@@ -22,7 +22,7 @@ limitations under the License.
 
 > Perform a series of row interchanges on an input matrix.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 

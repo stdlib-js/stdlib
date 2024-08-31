@@ -22,7 +22,7 @@ limitations under the License.
 
 > Perform the symmetric rank 1 operation `A = α*x*x**T + A`.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 
