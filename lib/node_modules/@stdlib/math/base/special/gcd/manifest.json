@@ -38,6 +38,7 @@
       "dependencies": [
         "@stdlib/math/base/napi/binary",
         "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/fmod",
         "@stdlib/math/base/assert/is-integer",
         "@stdlib/constants/float64/pinf",
         "@stdlib/constants/float64/ninf"
@@ -55,6 +56,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/fmod",
         "@stdlib/math/base/assert/is-integer",
         "@stdlib/constants/float64/pinf",
         "@stdlib/constants/float64/ninf"
@@ -72,6 +74,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/fmod",
         "@stdlib/math/base/assert/is-integer",
         "@stdlib/constants/float64/pinf",
         "@stdlib/constants/float64/ninf"

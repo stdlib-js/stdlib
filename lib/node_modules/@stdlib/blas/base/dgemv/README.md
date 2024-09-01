@@ -22,7 +22,7 @@ limitations under the License.
 
 > Perform one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A**T*x + β*y`.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 
