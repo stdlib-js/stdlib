@@ -22,7 +22,7 @@ limitations under the License.
 
 > Copy all or part of a matrix `A` to another matrix `B`.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 

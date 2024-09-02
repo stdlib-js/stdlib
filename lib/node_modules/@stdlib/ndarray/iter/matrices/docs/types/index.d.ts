@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { TypedIterator, TypedIterableIterator } from '@stdlib/types/iter';
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 // Define a union type representing both iterable and non-iterable iterators:
 type Iterator<T> = TypedIterator<T> | TypedIterableIterator<T>;
@@ -73,7 +73,7 @@ interface Options {
 *
 * // ...
 */
-declare function nditerMatrices( x: ndarray, options?: Options ): Iterator<ndarray>;
+declare function nditerMatrices<T = unknown>( x: typedndarray<T>, options?: Options ): Iterator<typedndarray<T>>;
 
 
 // EXPORTS //

@@ -1,0 +1,6 @@
+feat: add C API for `@stdlib/math/base/special/tribonacci`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/903
+Closes: https://github.com/stdlib-js/stdlib/issues/895
+Co-authored-by: Athan Reines <kgryte@gmail.com>
+Reviewed-by: Athan Reines <kgryte@gmail.com>
