@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/base/ssymv",
   "version": "0.0.0",
-  "description": "Perform the matrix-vector operation `y = α*A*x + β*y` where `α` and `β` are scalars, `x` and `y` are `N` element vectors, and `A` is an `N` by `N` symmetric matrix.",
+  "description": "Perform the matrix-vector operation `y = α*A*x + β*y`.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
