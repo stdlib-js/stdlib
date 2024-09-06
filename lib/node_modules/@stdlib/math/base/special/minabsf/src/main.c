@@ -29,7 +29,7 @@
 *
 * @example
 * float v = stdlib_base_minabsf( 3.14f, -4.2f );
-* // returns ~3.14f
+* // returns 3.14f
 *
 * @example
 * float v = stdlib_base_minabsf( 0.0f, -0.0f );
