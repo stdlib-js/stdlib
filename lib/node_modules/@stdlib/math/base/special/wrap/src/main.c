@@ -28,7 +28,7 @@
 * @param v    input value
 * @param min  minimum value
 * @param max  maximum value
-* @return	  wrapped value
+* @return     wrapped value
 *
 * @example
 * double v = stdlib_base_wrap( 3.14, 0.0, 5.0 );
