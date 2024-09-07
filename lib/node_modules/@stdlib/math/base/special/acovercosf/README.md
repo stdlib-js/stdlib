@@ -26,10 +26,10 @@ limitations under the License.
 
 The [inverse coversed cosine][inverse-coversed-cosine] is defined as
 
-<!-- <equation class="equation" label="eq:arccovercosine" align="center" raw="\operatorname{acovercosf}(\theta) = \arcsin(1+\theta)" alt="Inverse coversed cosine."> -->
+<!-- <equation class="equation" label="eq:arccovercosine" align="center" raw="\operatorname{acovercos}(\theta) = \arcsin(1+\theta)" alt="Inverse coversed cosine."> -->
 
 ```math
-\mathop{\mathrm{acovercosf}}(\theta) = \arcsin(1+\theta)
+\mathop{\mathrm{acovercos}}(\theta) = \arcsin(1+\theta)
 ```
 
 <!-- </equation> -->
@@ -167,7 +167,7 @@ float stdlib_base_acovercosf( const float x );
 
 int main( void ) {
     const float x[] = { -2.0f, -1.80f, -1.78f, -1.67f, -0.56f, -0.27f, -1.67f, -0.78f, -1.89f, 0.0f };
-    
+
     float v;
     int i;
     for ( i = 0; i < 10; i++ ) {
