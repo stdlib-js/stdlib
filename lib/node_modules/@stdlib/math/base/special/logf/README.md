@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm
 
-> Compute the base `b` [logarithm][logarithm] of a single-precision floating-point number..
+> Compute the base `b` [logarithm][logarithm] of a single-precision floating-point number.
 
 <section class="usage">
 
@@ -66,18 +66,19 @@ v = logf( 2.0, -4.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var roundf = require( '@stdlib/math/base/special/roundf' );
+var randu = require( '@stdlib/random/array/discrete-uniform' );
 var logf = require( '@stdlib/math/base/special/logf' );
 
-var b;
-var x;
-var i;
+var opts = {
+    'dtype': 'float32'
+};
 
+var x = randu( 100, 0, 100, opts );
+var b = randu( 100, 0, 5, opts );
+
+var i;
 for ( i = 0; i < 100; i++ ) {
-    x = roundf( randu() * 100.0 );
-    b = roundf( randu() * 5.0 );
-    console.log( 'logf( %d, %d ) = %d', x, b, logf( x, b ) );
+    console.log( 'logf( %d, %d ) = %d', x[ i ], b[ i ], logf( x[ i ], b[ i ] ) );
 }
 ```
 
