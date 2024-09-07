@@ -32,7 +32,7 @@ var isNonNegativeInteger = require( '@stdlib/math/base/assert/is-nonnegative-int
 
 #### isNonNegativeInteger( x )
 
-Tests if a finite [double-precision floating-point number][ieee754] is a nonnegative `integer`.
+Tests if a finite [double-precision floating-point number][ieee754] is a nonnegative integer.
 
 ```javascript
 var bool = isNonNegativeInteger( 1.0 );
@@ -53,7 +53,7 @@ bool = isNonNegativeInteger( -10.0 );
 
 ## Notes
 
--   The function assumes a **finite** `number`. If provided positive `infinity`, the function will return `true`, when, in fact, the result is undefined. If `x` can be `infinite`, wrap the implementation as follows:
+-   The function assumes a **finite** number. If provided positive `infinity`, the function will return `true`, when, in fact, the result is undefined. If `x` can be `infinite`, wrap the implementation as follows:
 
     ```javascript
     function check( x ) {
@@ -141,6 +141,8 @@ bool = isNonNegativeInteger( NaN );
 Tests if a finite [double-precision floating-point number][ieee754] is a nonnegative integer.
 
 ```c
+#include <stdbool.h>
+
 bool out = stdlib_base_is_nonnegative_integer( 1.0 );
 // returns true
 
