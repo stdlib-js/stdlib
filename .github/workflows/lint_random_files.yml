@@ -326,7 +326,7 @@ jobs:
       - name: 'Setup R'
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@929c772977a3a13c8733b363bf5a2f685c25dd91 # v2.6.4
+        uses: r-lib/actions/setup-r@e6be4b3706e0f39bc7a4cf4496a5f2c4cb840040 # v2.10.1
         with:
           r-version: '4.3.3'
 

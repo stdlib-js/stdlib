@@ -22,7 +22,7 @@ limitations under the License.
 
 > Compute the `L * D * L^T` factorization of a real symmetric positive definite tridiagonal matrix `A`.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 
