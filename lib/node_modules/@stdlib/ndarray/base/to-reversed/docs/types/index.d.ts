@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -23,10 +23,9 @@
 import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Returns a view of an input ndarray in which the order of elements along each dimension is reversed.
+* Returns a new ndarray where the order of elements of an input ndarray is reversed along each dimension.
 *
 * @param x - input array
-* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -48,7 +47,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var arr = ndarray2array( x );
 * // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var y = reverse( x, false );
+* var y = toReversed( x );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -57,9 +56,9 @@ import { ndarray } from '@stdlib/types/ndarray';
 * arr = ndarray2array( y );
 * // returns [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
 */
-declare function reverse<T extends ndarray>( x: T, writable: boolean ): T;
+declare function toReversed<T extends ndarray>( x: T ): T;
 
 
 // EXPORTS //
 
-export = reverse;
+export = toReversed;
