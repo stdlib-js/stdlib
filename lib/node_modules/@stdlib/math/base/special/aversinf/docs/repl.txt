@@ -1,7 +1,7 @@
 
 {{alias}}( x )
-    Computes the inverse versed sine of a single-precision
-    floating-point number (in radians).
+    Computes the inverse versed sine of a single-precision floating-
+    point number (in radians).
 
     The inverse versed sine is defined as `acos(1-x)`.
 
