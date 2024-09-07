@@ -59,18 +59,16 @@ The function has the following parameters:
 -   **out**: output [`Float64Array`][@stdlib/array/float64] whose first element is the sum and whose second element is the number of non-NaN elements.
 -   **strideOut**: index increment for `out`.
 
-The `N` and `stride` parameters determine which elements are accessed at runtime. For example, to compute the sum of every other element in `x`,
+The `N` and stride parameters determine which elements are accessed at runtime. For example, to compute the sum of every other element in `x`,
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 1.0, 2.0, NaN, -7.0, NaN, 3.0, 4.0, 2.0 ] );
 var out = new Float64Array( 2 );
-var N = floor( x.length / 2 );
 
-var v = dsnannsumors( N, x, 2, out, 1 );
+var v = dsnannsumors( 4, x, 2, out, 1 );
 // returns <Float64Array>[ 5.0, 2 ]
 ```
 
@@ -81,7 +79,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x0 = new Float32Array( [ 2.0, 1.0, NaN, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
@@ -89,9 +86,7 @@ var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd 
 var out0 = new Float64Array( 4 );
 var out1 = new Float64Array( out0.buffer, out0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
 
-var N = floor( x0.length / 2 );
-
-var v = dsnannsumors( N, x1, 2, out1, 1 );
+var v = dsnannsumors( 4, x1, 2, out1, 1 );
 // returns <Float64Array>[ 5.0, 4 ]
 ```
 
@@ -120,13 +115,11 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 2.0, 1.0, NaN, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var out = new Float64Array( 4 );
-var N = floor( x.length / 2 );
 
-var v = dsnannsumors.ndarray( N, x, 2, 1, out, 2, 1 );
+var v = dsnannsumors.ndarray( 4, x, 2, 1, out, 2, 1 );
 // returns <Float64Array>[ 0.0, 5.0, 0.0, 4 ]
 ```
 
@@ -152,23 +145,23 @@ var v = dsnannsumors.ndarray( N, x, 2, 1, out, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var bernoulli = require( '@stdlib/random/base/bernoulli' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var Float32Array = require( '@stdlib/array/float32' );
 var Float64Array = require( '@stdlib/array/float64' );
 var dsnannsumors = require( '@stdlib/blas/ext/base/dsnannsumors' );
 
 var x;
-var i;
 
-x = new Float32Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    if ( randu() < 0.2 ) {
-        x[ i ] = NaN;
-    } else {
-        x[ i ] = round( randu()*100.0 );
+function rand() {
+    if ( bernoulli( 0.5 ) < 0.2 ) {
+        return NaN;
     }
+    return discreteUniform( 0, 100 );
 }
+
+x = filledarrayBy( 10, 'float32', rand );
 console.log( x );
 
 var out = new Float64Array( 2 );
