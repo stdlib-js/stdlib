@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Arccoversinef
+# acoversinf
 
 > Compute the [inverse coversed sine][inverse-coversed-sine] of a single-precision floating-point number (in radians).
 
@@ -26,10 +26,10 @@ limitations under the License.
 
 The [inverse coversed sine][inverse-coversed-sine] is defined as
 
-<!-- <equation class="equation" label="eq:arccoversine" align="center" raw="\operatorname{acoversinf}(\theta) = \arcsin(1-\theta)" alt="Inverse coversed sine."> -->
+<!-- <equation class="equation" label="eq:arccoversine" align="center" raw="\operatorname{acoversin}(\theta) = \arcsin(1-\theta)" alt="Inverse coversed sine."> -->
 
 ```math
-\mathop{\mathrm{acoversinf}}(\theta) = \arcsin(1-\theta)
+\mathop{\mathrm{acoversin}}(\theta) = \arcsin(1-\theta)
 ```
 
 <!-- </equation> -->
@@ -167,7 +167,7 @@ float stdlib_base_acoversinf( const float x );
 
 int main( void ) {
     const float x[] = { -5.0f, -3.89f, -2.78f, -1.67f, -0.56f, 0.56f, 1.67f, 2.78f, 3.89f, 5.0f };
-    
+
     float v;
     int i;
     for ( i = 0; i < 10; i++ ) {
