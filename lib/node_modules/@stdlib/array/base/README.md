@@ -234,15 +234,31 @@ The namespace exports the following:
 
 ## Examples
 
-<!-- TODO: better examples -->
-
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var objectKeys = require( '@stdlib/utils/keys' );
+var randu = require( '@stdlib/random/base/randu' );
 var ns = require( '@stdlib/array/base' );
 
-console.log( objectKeys( ns ) );
+// Create a zero-filled array:
+var zeros = ns.zeros( 5 );
+// returns [ 0, 0, 0, 0, 0 ]
+
+// Create an array filled with a specific value:
+var filled = ns.filled( 7, 4 );
+// returns [ 7, 7, 7, 7 ]
+
+// Create a linearly spaced array:
+var linear = ns.linspace( 0, 1, 5 );
+// returns [ 0, 0.25, 0.5, 0.75, 1 ]
+
+// Create a two-dimensional array:
+var arr2d = ns.ones2d( [ 2, 3 ] );
+// returns [ [ 1, 1, 1 ], [ 1, 1, 1 ] ]
+
+// Map a function over a 2D array:
+var squared = ns.map2d( arr2d, [ 2, 3 ], randu );
+// e.g., returns [ [ ~0.123, ~0.789, ~0.456 ], [ ~0.321, ~0.654, ~0.987 ] ]
 ```
 
 </section>
