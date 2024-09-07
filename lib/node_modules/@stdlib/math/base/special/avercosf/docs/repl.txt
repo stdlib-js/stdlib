@@ -1,9 +1,9 @@
 
 {{alias}}( x )
-    Computes the inverse versed cosine for a single-precision
-    floating-point number (in radians).
+    Computes the inverse versed cosine for a single-precision floating-point
+    number (in radians).
 
-    The inverse versed cosine is defined as `acosf(1+x)`.
+    The inverse versed cosine is defined as `acos(1+x)`.
 
     If `x < -2`, `x > 0`, or `x` is `NaN`, the function returns `NaN`.
 
