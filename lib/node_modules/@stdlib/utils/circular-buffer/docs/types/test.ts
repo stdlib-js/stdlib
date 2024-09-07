@@ -29,10 +29,23 @@ import CircularBuffer = require( './index' );
 // The function returns a circular buffer instance...
 {
 	new CircularBuffer( 3 ); // $ExpectType CircularBuffer<unknown>
+	new CircularBuffer( [ 1, 2, 3 ] ); // $ExpectType CircularBuffer<number>
+	new CircularBuffer( 'abc' ); // $ExpectType CircularBuffer<string>
+	new CircularBuffer( { 'length': 10 } ); // $ExpectType CircularBuffer<unknown>
 }
 
 // The compiler throws an error if the constructor function is provided an invalid number of arguments...
 {
 	new CircularBuffer(); // $ExpectError
 	new CircularBuffer( 3, 4 ); // $ExpectError
+}
+
+// The compiler throws an error if the constructor function is provided a first argument which is not a number or an array-like object...
+{
+	new CircularBuffer( true ); // $ExpectError
+	new CircularBuffer( false ); // $ExpectError
+	new CircularBuffer( null ); // $ExpectError
+	new CircularBuffer( undefined ); // $ExpectError
+	new CircularBuffer( {} ); // $ExpectError
+	new CircularBuffer( ( x: number ): number => x ); // $ExpectError
 }
