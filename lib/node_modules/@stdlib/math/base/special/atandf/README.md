@@ -20,7 +20,7 @@ limitations under the License.
 
 # atandf
 
-> Compute the [arctangent][arctangent] in degrees of a single-precision floating-point number.
+> Compute the [arctangent][arctangent] (in degrees) of a single-precision floating-point number.
 
 <section class="usage">
 
@@ -36,6 +36,7 @@ Computes the [arctangent][arctangent] (in degrees) of a single-precision floatin
 
 ```javascript
 var sqrtf = require( '@stdlib/math/base/special/sqrtf' );
+
 var v = atandf( 0.0 );
 // returns 0.0
 

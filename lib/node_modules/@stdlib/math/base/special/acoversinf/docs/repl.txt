@@ -1,7 +1,7 @@
 
 {{alias}}( x )
-    Computes the inverse coversed sine of a single-precision
-    floating-point number (in radians).
+    Computes the inverse coversed sine of a single-precision floating-point
+    number (in radians).
 
     The inverse coversed sine is defined as `asin(1-x)`.
 

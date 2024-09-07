@@ -26,8 +26,8 @@
 * @returns minimum absolute value
 *
 * @example
-* var v = minabsf( -3.14, 4.2 );
-* // returns ~3.14
+* var v = minabsf( -4.0, 3.0 );
+* // returns 3.0
 *
 * @example
 * var v = minabsf( 3.14, NaN );
