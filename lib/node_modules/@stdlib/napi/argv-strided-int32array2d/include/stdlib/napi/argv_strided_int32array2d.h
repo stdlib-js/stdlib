@@ -69,7 +69,7 @@
 *     STDLIB_NAPI_ARGV_INT64( env, strideY1, argv, 6 );
 *     STDLIB_NAPI_ARGV_INT64( env, strideY2, argv, 7 );
 *
-*     // Convert the arrays a C types:
+*     // Convert the arrays to C types:
 *     STDLIB_NAPI_ARGV_STRIDED_INT32ARRAY2D( env, X, M, N, strideX1, strideX2, argv, 2 );
 *     STDLIB_NAPI_ARGV_STRIDED_INT32ARRAY2D( env, Y, M, N, strideY1, strideY2, argv, 5 );
 *
