@@ -59,7 +59,7 @@
 *     // Retrieve add-on callback arguments:
 *     STDLIB_NAPI_ARGV( env, info, argv, argc, 8 );
 *
-*     // Convert the number of rows and columns to a C types:
+*     // Convert the number of rows and columns to C types:
 *     STDLIB_NAPI_ARGV_INT64( env, M, argv, 0 );
 *     STDLIB_NAPI_ARGV_INT64( env, N, argv, 1 );
 *
