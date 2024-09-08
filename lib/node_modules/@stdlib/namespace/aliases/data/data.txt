@@ -2148,6 +2148,7 @@ isRelativeURI
 isSafeInteger
 isSafeIntegerArray
 isSameArray
+isSameArrayLike
 isSameComplex64
 isSameComplex64Array
 isSameComplex128
