@@ -33,7 +33,7 @@
 * @param strideX2  stride length along the second dimension
 * @param value     Node-API value
 * @param data      pointer for returning a reference to the output array
-* @param message1  error message if a value is not a Int32Array
+* @param message1  error message if a value is not an Int32Array
 * @param message2  error message if a value has insufficient elements
 * @param err       pointer for storing a JavaScript error
 * @return          status code indicating success or failure (returns `napi_ok` if success)

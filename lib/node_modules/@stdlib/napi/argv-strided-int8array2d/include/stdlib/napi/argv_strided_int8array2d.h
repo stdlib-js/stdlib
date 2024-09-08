@@ -81,7 +81,7 @@
 #define STDLIB_NAPI_ARGV_STRIDED_INT8ARRAY2D( env, X, M, N, strideX1, strideX2, argv, index ) \
 	napi_value __STDLIB_NAPI_ARGV_STRIDED_INT8ARRAY2D_ERR_ ## X;               \
 	int8_t *X;                                                                 \
-	stdlib_napi_argv_strided_int8array2d( env, M, N, strideX1, strideX2, argv[ index ], &X, "invalid argument. " STDLIB_NAPI_ARGV_INDEX2ORDINAL( index ) " argument must be a Int8Array.", "invalid argument. " STDLIB_NAPI_ARGV_INDEX2ORDINAL( index ) " argument has insufficient elements based on the associated strides and the number of rows and columns.", &__STDLIB_NAPI_ARGV_STRIDED_INT8ARRAY2D_ERR_ ## X ); \
+	stdlib_napi_argv_strided_int8array2d( env, M, N, strideX1, strideX2, argv[ index ], &X, "invalid argument. " STDLIB_NAPI_ARGV_INDEX2ORDINAL( index ) " argument must be an Int8Array.", "invalid argument. " STDLIB_NAPI_ARGV_INDEX2ORDINAL( index ) " argument has insufficient elements based on the associated strides and the number of rows and columns.", &__STDLIB_NAPI_ARGV_STRIDED_INT8ARRAY2D_ERR_ ## X ); \
 	if ( __STDLIB_NAPI_ARGV_STRIDED_INT8ARRAY2D_ERR_ ## X != NULL ) {          \
 		STDLIB_ASSERT_NAPI_STATUS_OK_RET_NULL( env, napi_throw( env, __STDLIB_NAPI_ARGV_STRIDED_INT8ARRAY2D_ERR_ ## X ), "" ) \
 		return NULL;                                                           \
