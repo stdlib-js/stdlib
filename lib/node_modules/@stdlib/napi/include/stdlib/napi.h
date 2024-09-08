@@ -42,6 +42,7 @@
 #include "stdlib/napi/argv_strided_float64array2d.h"
 #include "stdlib/napi/argv_strided_int8array.h"
 #include "stdlib/napi/argv_strided_int16array.h"
+#include "stdlib/napi/argv_strided_int16array2d.h"
 #include "stdlib/napi/argv_strided_int32array.h"
 #include "stdlib/napi/argv_strided_int32array2d.h"
 #include "stdlib/napi/argv_strided_uint8array.h"
