@@ -47,6 +47,7 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
         "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/napi/argv-strided-complex128array2d",
         "@stdlib/napi/argv-strided-float32array",
         "@stdlib/napi/argv-strided-float32array2d",
         "@stdlib/napi/argv-strided-float64array",
