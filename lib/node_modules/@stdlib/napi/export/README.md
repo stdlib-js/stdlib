@@ -149,7 +149,7 @@ static napi_value method( napi_env env, napi_callback_info info ) {
 // ...
 
 // Register a Node-API module:
-STDLIB_NAPI_MODULE_EXPORT_FCN( addon, "foo", method )
+STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "foo", method )
 ```
 
 The macro expects the following arguments:
