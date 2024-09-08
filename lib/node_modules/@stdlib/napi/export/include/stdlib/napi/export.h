@@ -60,4 +60,50 @@
 	};                                                                         \
 	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_napi_module_export_fcn_init )
 
+/**
+* Macro for registering a Node-API module which exports a function having a method.
+*
+* @param fcn_name     exported function name
+* @param prop_name    property name
+* @param method_name  exported function name for the method
+*
+* @example
+* #include <node_api.h>
+*
+* // ...
+*
+* static napi_value addon( napi_env env, napi_callback_info info ) {
+*     // ...
+* }
+*
+* static napi_value method( napi_env env, napi_callback_info info ) {
+*     // ...
+* }
+*
+* // ...
+*
+* // Register a Node-API module:
+* STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "foo", method )
+*/
+#define STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( fcn_name, prop_name, method_name ) \
+	static napi_value stdlib_napi_module_export_fcn_with_method_init(          \
+		napi_env env,                                                          \
+		napi_value exports                                                     \
+	) {                                                                        \
+		napi_value fcn;                                                        \
+		napi_status status = napi_create_function(                             \
+			env,                                                               \
+			"exports",                                                         \
+			NAPI_AUTO_LENGTH,                                                  \
+			fcn_name,                                                          \
+			NULL,                                                              \
+			&fcn                                                               \
+		);                                                                     \
+		assert( status == napi_ok );                                           \
+		status = napi_set_named_property( env, fcn, prop_name, method_name )   \
+		assert( status == napi_ok );                                           \
+		return fcn;                                                            \
+	};                                                                         \
+	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_napi_module_export_fcn_with_method_init )
+
 #endif // !STDLIB_NAPI_EXPORT_H
