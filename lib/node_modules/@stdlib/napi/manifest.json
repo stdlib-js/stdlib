@@ -53,6 +53,7 @@
         "@stdlib/napi/argv-strided-float64array2d",
         "@stdlib/napi/argv-strided-int8array",
         "@stdlib/napi/argv-strided-int16array",
+        "@stdlib/napi/argv-strided-int16array2d",
         "@stdlib/napi/argv-strided-int32array",
         "@stdlib/napi/argv-strided-int32array2d",
         "@stdlib/napi/argv-strided-uint8array",
