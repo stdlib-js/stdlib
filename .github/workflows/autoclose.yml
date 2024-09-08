@@ -62,7 +62,7 @@ jobs:
 
             If you would prefer to avoid manual setup, you could also consider using a pre-configured [development container](https://github.com/stdlib-js/stdlib/tree/develop/.devcontainer) for use locally or in GitHub Codespaces.
 
-            Thank you again for your interest in stdlib, and we look forward to reviewing your future contriubtions.
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
 
   # Define a job which closes a pull request if a contributor failed to follow contributing guidelines:
   contributor_guidelines:
@@ -98,7 +98,7 @@ jobs:
 
             If you would prefer to avoid manual setup, you could also consider using a pre-configured [development container](https://github.com/stdlib-js/stdlib/tree/develop/.devcontainer) for use locally or in GitHub Codespaces.
 
-            Thank you again for your interest in stdlib, and we look forward to reviewing your future contriubtions.
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
 
   # Define a job which closes a pull request if a contributor failed to follow project conventions:
   project_conventions:
@@ -138,7 +138,7 @@ jobs:
 
             In short, the more effort you put in to ensure that your contribution looks and feels like stdlib—including variables names, bracket spacing, line breaks, etc—the more likely that your contribution will be reviewed and ultimately accepted. We encourage you to closely study the codebase **before** continuing to work on this pull request.
 
-            Thank you again for your interest in stdlib, and we look forward to reviewing your future contriubtions.
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
 
   # Define a job which closes a pull request if a pull request is considered spam:
   spam:
@@ -170,7 +170,7 @@ jobs:
           BODY: |
             Thank you for working on this pull request. However, we cannot accept your contribution as this pull request does not meet the standards of this project.
 
-            Thank you again for your interest in stdlib, and we look forward to reviewing your future contriubtions.
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
 
       # Lock pull request conversation:
       - name: 'Lock conversation'
