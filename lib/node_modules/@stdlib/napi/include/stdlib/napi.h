@@ -35,6 +35,7 @@
 #include "stdlib/napi/argv_int32array.h"
 #include "stdlib/napi/argv_int64.h"
 #include "stdlib/napi/argv_strided_complex64array.h"
+#include "stdlib/napi/argv_strided_complex64array2d.h"
 #include "stdlib/napi/argv_strided_complex128array.h"
 #include "stdlib/napi/argv_strided_complex128array2d.h"
 #include "stdlib/napi/argv_strided_float32array.h"
