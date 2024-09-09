@@ -2032,6 +2032,7 @@ isEmptyObject
 isEmptyString
 isEnumerableProperty
 isEnumerablePropertyIn
+isEqualArray
 isError
 isEvalError
 isEven

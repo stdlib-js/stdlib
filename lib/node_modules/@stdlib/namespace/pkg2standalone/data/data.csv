@@ -2032,6 +2032,7 @@
 "@stdlib/assert/is-empty-string","@stdlib/assert-is-empty-string"
 "@stdlib/assert/is-enumerable-property","@stdlib/assert-is-enumerable-property"
 "@stdlib/assert/is-enumerable-property-in","@stdlib/assert-is-enumerable-property-in"
+"@stdlib/assert/is-equal-array","@stdlib/assert-is-equal-array"
 "@stdlib/assert/is-error","@stdlib/assert-is-error"
 "@stdlib/assert/is-eval-error","@stdlib/assert-is-eval-error"
 "@stdlib/assert/is-even","@stdlib/assert-is-even"
