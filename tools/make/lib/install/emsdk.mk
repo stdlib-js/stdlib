@@ -185,7 +185,7 @@ deps-update-emsdk: deps-install-emsdk deps-test-emsdk
 # @example
 # make deps-test-emsdk
 #/
-deps-test-emsdk: $(DEPS_EMSDK_TEST_INSTALL_WASM_OUT)
+deps-test-emsdk: $(DEPS_EMSDK_TEST_INSTALL_WASM_OUT) deps-test-emsdk-wasm
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'emcc info...' >&2
 	$(QUIET) echo '' >&2
@@ -206,7 +206,7 @@ deps-test-emsdk: $(DEPS_EMSDK_TEST_INSTALL_WASM_OUT)
 deps-test-emsdk-wasm: $(DEPS_EMSDK_TEST_INSTALL_WASM_OUT)
 	$(QUIET) echo 'Running wasm tests...' >&2
 	$(QUIET) echo '' >&2
-	$(QUIET) echo 'TODO: make more robust' >&2
+	$(QUIET) echo 'TODO: make test more robust' >&2
 	$(QUIET) test -f $(DEPS_EMSDK_TEST_INSTALL_WASM_OUT) >&2
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'Success.' >&2
