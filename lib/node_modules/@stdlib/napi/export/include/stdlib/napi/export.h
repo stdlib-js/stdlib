@@ -63,9 +63,9 @@
 /**
 * Macro for registering a Node-API module which exports a function having a method.
 *
-* @param fcn_name     exported function name
-* @param prop_name    property name
-* @param method_name  exported function name for the method
+* @param fcn_name         exported function name
+* @param prop_name        property name
+* @param fcn_method_name  exported function name for the method
 *
 * @example
 * #include <node_api.h>
@@ -76,16 +76,16 @@
 *     // ...
 * }
 *
-* static napi_value method( napi_env env, napi_callback_info info ) {
+* static napi_value addon_method( napi_env env, napi_callback_info info ) {
 *     // ...
 * }
 *
 * // ...
 *
 * // Register a Node-API module:
-* STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "foo", method )
+* STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "foo", addon_method )
 */
-#define STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( fcn_name, prop_name, method_name ) \
+#define STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( fcn_name, prop_name, fcn_method_name ) \
 	static napi_value stdlib_napi_module_export_fcn_with_method_init(          \
 		napi_env env,                                                          \
 		napi_value exports                                                     \
@@ -100,7 +100,17 @@
 			&fcn                                                               \
 		);                                                                     \
 		assert( status == napi_ok );                                           \
-		status = napi_set_named_property( env, fcn, prop_name, method_name )   \
+		napi_value fcn_method;                                                 \
+		status = napi_create_function(                                         \
+			env,                                                               \
+			prop_name,                                                         \
+			NAPI_AUTO_LENGTH,                                                  \
+			fcn_method_name,                                                   \
+			NULL,                                                              \
+			&fcn_method                                                        \
+		);                                                                     \
+		assert( status == napi_ok );                                           \
+		status = napi_set_named_property( env, fcn, prop_name, fcn_method );   \
 		assert( status == napi_ok );                                           \
 		return fcn;                                                            \
 	};                                                                         \
