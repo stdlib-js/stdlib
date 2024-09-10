@@ -80,3 +80,37 @@ void API_SUFFIX(c_daxpy)( const CBLAS_INT N, const double alpha, const double *X
 	}
 	return;
 }
+
+/**
+* Multiplies a vector `X` by a constant and adds the result to `Y` using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param alpha    scalar
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting X index
+* @param Y        output array
+* @param strideY  Y stride length
+* @param offsetY  starting Y index
+*/
+void API_SUFFIX(c_daxpy_ndarray)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT i;
+
+	if ( N <= 0 ) {
+		return;
+	}
+	// If `alpha` is `0`, then `y` is unchanged...
+	if ( alpha == 0.0 ) {
+		return;
+	}
+	ix = offsetX;
+	iy = offsetY;
+	for ( i = 0; i < N; i++ ) {
+		Y[ iy ] += alpha * X[ ix ];
+		ix += strideX;
+		iy += strideY;
+	}
+	return;
+}
