@@ -505,8 +505,8 @@ DEPS_EMSDK_EMSCRIPTEN_EMCC ?= $(DEPS_EMSDK_EMSCRIPTEN)/emcc
 # Define the path to the Emscripten C++ compiler:
 DEPS_EMSDK_EMSCRIPTEN_EMXX ?= $(DEPS_EMSDK_EMSCRIPTEN)/em++
 
-# Define the Binaryen version:
-DEPS_EMSDK_BINARYEN_VERSION ?= main
+# Define the path to the utility for converting WebAssembly binary files to JavaScript:
+DEPS_EMSDK_EMSCRIPTEN_WASM2JS ?= $(DEPS_EMSDK_BUILD_OUT)/upstream/bin/wasm2js
 
 # Define the output path when building the WebAssembly Binary Toolkit (WABT):
 DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
@@ -516,9 +516,6 @@ DEPS_WABT_WASM2WAT ?= $(DEPS_WABT_BUILD_OUT)/build/wasm2wat
 
 # Define the path to the utility for converting WebAssembly text format files to the WebAssembly binary format:
 DEPS_WABT_WAT2WASM ?= $(DEPS_WABT_BUILD_OUT)/build/wat2wasm
-
-# Define the path to the utility for linking (merging) multiple WebAssembly files:
-DEPS_WABT_WASM_LINK ?= $(DEPS_WABT_BUILD_OUT)/build/wasm-link
 
 # Define the Cephes distribution to build (netlib, moshier, cephes-2.8):
 DEPS_CEPHES_DIST ?= moshier
