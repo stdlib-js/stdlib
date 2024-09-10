@@ -27,7 +27,6 @@
 #
 # Environment Variables:
 #
-#   OS              Host operating system. Default: `linux`.
 #   NODE            Command for running Node.js. Default: `node`.
 #   NODE_PATH       Path for resolving node modules.
 #   EMCCC_COMPILER  Emscripten C compiler. Default: `emcc`.
@@ -123,7 +122,7 @@ resolve_includes() {
 	local script
 	local opts
 
-	opts="{'wasm':true}"
+	opts="{'wasm':true,'os':''}"
 
 	# Generate the script for resolving external include directories:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -142,7 +141,7 @@ resolve_source_files() {
 	local script
 	local opts
 
-	opts="{'wasm':true}"
+	opts="{'wasm':true,'os':''}"
 
 	# Generate the script for resolving external source files:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += p+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -161,7 +160,7 @@ resolve_libraries() {
 	local script
 	local opts
 
-	opts="{'wasm':true}"
+	opts="{'wasm':true,'os':''}"
 
 	# Generate the script for resolving libraries:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libraries; var str = ''; for (var i = 0; i < arr.length; i++){str += arr[i]+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -180,7 +179,7 @@ resolve_libpaths() {
 	local script
 	local opts
 
-	opts="{'wasm':true}"
+	opts="{'wasm':true,'os':''}"
 
 	# Generate the script for resolving library paths:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libpath; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-L '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
