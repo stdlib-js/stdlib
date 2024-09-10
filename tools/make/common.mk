@@ -497,7 +497,7 @@ DEPS_EMSDK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
 DEPS_EMSDK_VERSION ?= latest
 
 # Define the path to Emscripten:
-DEPS_EMSDK_EMSCRIPTEN ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)
+DEPS_EMSDK_EMSCRIPTEN ?= $(DEPS_EMSDK_BUILD_OUT)/upstream/emscripten
 
 # Define the path to the Emscripten C compiler:
 DEPS_EMSDK_EMSCRIPTEN_EMCC ?= $(DEPS_EMSDK_EMSCRIPTEN)/emcc
