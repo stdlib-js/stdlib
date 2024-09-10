@@ -61,6 +61,7 @@ wasm: $(NODE_MODULES)
 		SRC_FOLDER="$(SRC_FOLDER)" \
 		EMCC_COMPILER="$(DEPS_EMSDK_EMSCRIPTEN_EMCC)" \
 		WASM2WAT="$(DEPS_WABT_WASM2WAT)" \
+		WASM2JS="$(DEPS_EMSDK_EMSCRIPTEN_WASM2JS)" \
 		"${compile_wasm_bin}" $$pkg \
 		|| { echo "Error: failed to compile WebAssembly: $$pkg"; exit 0; } \
 	done
