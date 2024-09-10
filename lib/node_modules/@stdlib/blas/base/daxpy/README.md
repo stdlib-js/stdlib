@@ -213,6 +213,32 @@ The function accepts the following arguments:
 void c_daxpy( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
 ```
 
+#### c_daxpy_ndarray( N, alpha, \*X, strideX, offsetX, \*Y, strideY, offsetY )
+
+Multiplies a vector `X` by a constant and adds the result to `Y` using alternative indexing semantics.
+
+```c
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
+double y[] = { 0.0, 0.0, 0.0, 0.0 };
+
+c_daxpy( 4, 5.0, x, 1, 0, y, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **alpha**: `[in] double` scalar constant.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[inout] double*` output array.
+-   **strideY**: `[in CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+void c_daxpy_ndarray( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -249,6 +275,14 @@ int main( void ) {
 
     // Compute `a*x + y`:
     c_daxpy( N, 5.0, x, strideX, y, strideY );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "y[ %i ] = %lf\n", i, y[ i ] );
+    }
+
+    // Compute `a*x + y`:
+    c_daxpy_ndarray( N, 5.0, x, strideX, 1, y, strideY, 7 );
 
     // Print the result:
     for ( int i = 0; i < 8; i++ ) {
