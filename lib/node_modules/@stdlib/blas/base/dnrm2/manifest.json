@@ -70,7 +70,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/pow"
       ]
     },
     {
@@ -91,7 +92,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/pow"
       ]
     },
 
@@ -203,7 +205,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/pow"
       ]
     },
     {
@@ -224,7 +227,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/pow"
       ]
     },
 
@@ -380,7 +384,8 @@
         "@stdlib/napi/argv-strided-float64array",
         "@stdlib/napi/create-double",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/pow"
       ]
     },
     {
@@ -401,7 +406,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/pow"
       ]
     },
     {
@@ -422,7 +428,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/pow"
       ]
     },
 
@@ -444,7 +451,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/pow"
       ]
     }
   ]

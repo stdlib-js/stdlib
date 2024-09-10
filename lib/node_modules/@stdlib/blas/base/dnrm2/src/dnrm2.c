@@ -20,7 +20,7 @@
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/sqrt.h"
-#include <math.h>
+#include "stdlib/math/base/special/pow.h"
 
 /**
 * Computes the L2-norm of a double-precision floating-point vector.
@@ -48,10 +48,10 @@ double API_SUFFIX(c_dnrm2)( const CBLAS_INT N, const double *X, const CBLAS_INT 
 		if ( X[ i ] != 0.0 ) {
 			ax = stdlib_base_abs( X[ i ] );
 			if ( scale < ax ) {
-				ssq = 1.0 + ( ssq * pow( scale/ax, 2 ) );
+				ssq = 1.0 + ( ssq * stdlib_base_pow( scale/ax, 2 ) );
 				scale = ax;
 			} else {
-				ssq += pow( ax/scale, 2 );
+				ssq += stdlib_base_pow( ax/scale, 2 );
 			}
 		}
 	}
