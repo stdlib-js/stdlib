@@ -405,7 +405,7 @@ interface Tuple {
 	*
 	* // Create a tuple factory which generates tuples having a custom tuple name:
 	* var opts = {
-	* 	'name': 'Point'
+	*     'name': 'Point'
 	* };
 	* factory = namedtypedtuple( [ 'x', 'y' ], opts );
 	*
@@ -518,7 +518,7 @@ interface Tuple {
 	* var tuple = factory( [ 1.0, -1.0 ] );
 	*
 	* function predicate( v ) {
-	* 	return ( v >= 0.0 );
+	*     return ( v >= 0.0 );
 	* }
 	*
 	* var bool = tuple.every( predicate );
@@ -624,7 +624,7 @@ interface Tuple {
 	* var tuple = factory( [ 1.0, 0.0, -1.0 ] );
 	*
 	* function predicate( v ) {
-	* 	return ( v < 0.0 );
+	*     return ( v < 0.0 );
 	* }
 	*
 	* var v = tuple.find( predicate );
@@ -645,7 +645,7 @@ interface Tuple {
 	* var tuple = factory( [ 1.0, 0.0, -1.0 ] );
 	*
 	* function predicate( v ) {
-	* 	return ( v < 0.0 );
+	*     return ( v < 0.0 );
 	* }
 	*
 	* var field = tuple.findField( predicate );
@@ -666,7 +666,7 @@ interface Tuple {
 	* var tuple = factory( [ 1.0, 0.0, -1.0 ] );
 	*
 	* function predicate( v ) {
-	* 	return ( v < 0.0 );
+	*     return ( v < 0.0 );
 	* }
 	*
 	* var idx = tuple.findIndex( predicate );
@@ -688,10 +688,10 @@ interface Tuple {
 	* var str = '';
 	*
 	* function fcn( v, i, f ) {
-	* 	str += f + '=' + v;
-	* 	if ( i < tuple.length-1 ) {
-	* 		str += ' ';
-	* 	}
+	*     str += f + '=' + v;
+	*     if ( i < tuple.length-1 ) {
+	*     	str += ' ';
+	*     }
 	* }
 	*
 	* tuple.forEach( fcn );
@@ -881,7 +881,7 @@ interface Tuple {
 	* var p1 = factory( [ 1.0, 0.0, -1.0 ] );
 	*
 	* function fcn( v ) {
-	* 	return v * 2.0;
+	*     return v * 2.0;
 	* }
 	*
 	* var p2 = p1.map( fcn );
@@ -915,7 +915,7 @@ interface Tuple {
 	* var tuple = factory( [ 2.0, 0.0, -3.0 ] );
 	*
 	* function fcn( acc, v ) {
-	* 	return acc + ( v*v );
+	*     return acc + ( v*v );
 	* }
 	*
 	* var v = tuple.reduce( fcn );
@@ -941,7 +941,7 @@ interface Tuple {
 	* var tuple = factory( [ 2.0, 0.0, -3.0 ] );
 	*
 	* function fcn( acc, v ) {
-	* 	return acc + ( v*v );
+	*     return acc + ( v*v );
 	* }
 	*
 	* var v = tuple.reduceRight( fcn );
@@ -1074,7 +1074,7 @@ interface Tuple {
 	* }
 	*
 	* var ctx = {
-	* 	'count': 0
+	*     'count': 0
 	* };
 	*
 	* var bool = tuple.some( predicate, ctx );
@@ -1131,7 +1131,7 @@ interface Tuple {
 	* // returns 2.0
 	*
 	* function descending( a, b ) {
-	* 	return b - a;
+	*     return b - a;
 	* }
 	*
 	* // Sort the tuple (in descending order):
