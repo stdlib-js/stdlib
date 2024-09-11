@@ -19,6 +19,7 @@
 #include "stdlib/blas/base/daxpy.h"
 #include "stdlib/blas/base/daxpy_fortran.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Multiplies a vector `X` by a constant and adds the result to `Y`.
@@ -47,26 +48,7 @@ void API_SUFFIX(c_daxpy)( const CBLAS_INT N, const double alpha, const double *X
 * @param offsetY  starting Y index
 */
 void API_SUFFIX(c_daxpy_ndarray)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	CBLAS_INT ox;
-	CBLAS_INT oy;
-
-	double *x = X;
-	double *y = Y;
-
-	// TODO: replace with @stdlib/strided/base/min-view-buffer-index
-	if ( N > 0 && strideX < 0 ) {
-		ox = offsetX + ( (N-1)*strideX ); // decrements the offset
-	} else {
-		ox = offsetX;
-	}
-	if ( N > 0 && strideY < 0 ) {
-		oy = offsetY + ( (N-1)*strideY ); // decrements the offset
-	} else {
-		oy = offsetY;
-	}
-	// Adjust the array pointers:
-	x += ox;
-	y += oy;
-
-	daxpy( &N, &alpha, x, &strideX, y, &strideY );
+	X += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
+	Y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
+	daxpy( &N, &alpha, X, &strideX, Y, &strideY );
 }
