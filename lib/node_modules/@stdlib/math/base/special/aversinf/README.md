@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Arcversinef
+# aversinf
 
 > Compute the [inverse versed sine][inverse-versed-sine] of a single-precision floating-point number (in radians).
 
@@ -128,7 +128,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_aversinf( x )
 
-Compute the [inverse versed sine][inverse-versed-sine] of a single-precision floating-point number (in radians).
+Computes the [inverse versed sine][inverse-versed-sine] of a single-precision floating-point number (in radians).
 
 ```c
 float out = stdlib_base_aversinf( 3.141592653589793f / 2.0f );

@@ -23,7 +23,7 @@
 * Computes the inverse versed sine of a single-precision floating-point number (in radians).
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * float out = stdlib_base_aversinf( 3.141592653589793f / 6.0f );

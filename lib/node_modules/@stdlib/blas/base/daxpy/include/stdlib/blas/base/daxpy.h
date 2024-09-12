@@ -36,6 +36,11 @@ extern "C" {
 */
 void API_SUFFIX(c_daxpy)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
 
+/**
+* Multiplies a vector `X` by a constant and adds the result to `Y` using alternative indexing semantics.
+*/
+void API_SUFFIX(c_daxpy_ndarray)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+
 #ifdef __cplusplus
 }
 #endif
