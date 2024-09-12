@@ -58,7 +58,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/daxpy.c"
+        "./src/daxpy.c",
+        "./src/daxpy_ndarray.c"
       ],
       "include": [
         "./include"
@@ -76,7 +77,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/daxpy.c"
+        "./src/daxpy.c",
+        "./src/daxpy_ndarray.c"
       ],
       "include": [
         "./include"
@@ -186,7 +188,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/daxpy.c"
+        "./src/daxpy.c",
+        "./src/daxpy_ndarray.c"
       ],
       "include": [
         "./include"
@@ -204,7 +207,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/daxpy.c"
+        "./src/daxpy.c",
+        "./src/daxpy_ndarray.c"
       ],
       "include": [
         "./include"
@@ -354,7 +358,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/daxpy.c"
+        "./src/daxpy.c",
+        "./src/daxpy_ndarray.c"
       ],
       "include": [
         "./include"
@@ -377,7 +382,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/daxpy.c"
+        "./src/daxpy.c",
+        "./src/daxpy_ndarray.c"
       ],
       "include": [
         "./include"
@@ -395,7 +401,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/daxpy.c"
+        "./src/daxpy.c",
+        "./src/daxpy_ndarray.c"
       ],
       "include": [
         "./include"
@@ -414,7 +421,8 @@
       "blas": "",
       "wasm": true,
       "src": [
-        "./src/daxpy.c"
+        "./src/daxpy.c",
+        "./src/daxpy_ndarray.c"
       ],
       "include": [
         "./include"
