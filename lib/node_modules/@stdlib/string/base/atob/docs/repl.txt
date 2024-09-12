@@ -1,0 +1,22 @@
+
+{{alias}}( str )
+    Decodes a string of data which has been encoded using Base64 encoding.
+
+    Parameters
+    ----------
+    str: string
+        Binary string containing base64-encoded data.
+
+    Returns
+    -------
+    out: string
+        An ASCII string containing decoded data.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'SGVsbG8sIHdvcmxk' )
+    'Hello, world'
+
+    See Also
+    --------
+

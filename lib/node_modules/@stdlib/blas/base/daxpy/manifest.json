@@ -44,6 +44,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-double",
@@ -65,7 +66,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -82,7 +84,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -104,6 +107,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-double",
@@ -127,7 +131,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
     {
       "task": "examples",
@@ -145,7 +151,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
 
     {
@@ -164,6 +172,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-double",
@@ -185,7 +194,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -202,7 +212,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -223,6 +234,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-double",
@@ -245,7 +257,9 @@
         "-lblas"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
     {
       "task": "examples",
@@ -262,7 +276,9 @@
         "-lblas"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
 
     {
@@ -283,6 +299,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-double",
@@ -306,7 +323,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
     {
       "task": "examples",
@@ -324,7 +343,9 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
 
     {
@@ -342,6 +363,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-double",
@@ -363,7 +385,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -380,7 +403,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -398,7 +422,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     }
   ]
