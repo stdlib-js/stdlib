@@ -96,6 +96,102 @@ console.log( 'N: %d, stride: %d, offset: %d => %d', N, stride, offset, idx );
 
 <!-- /.examples -->
 
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/strided/base/min_view_buffer_index.h"
+```
+
+#### stdlib_strided_min_view_buffer_index( N, stride, offset )
+
+Returns the minimum accessible index based on a set of provided strided array parameters.
+
+```c
+#include "stdlib/strided/base/min_view_buffer_index.h"
+#include <stdint.h>
+
+int64_t offset = stdlib_strided_min_view_buffer_index( 3, -2, 10 );
+// returns 6
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] int64_t` number of indexed elements.
+-   **stride**: `[in] int64_t` index increment.
+-   **offset**: `[in] int64_t` starting index.
+
+```c
+int64_t stdlib_strided_min_view_buffer_index( const int64_t N, const int64_t stride, const int64_t offset );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/strided/base/min_view_buffer_index.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <inttypes.h>
+
+int main( void ) {
+    // Specify the number of indexed elements:
+    int64_t N = 6;
+
+    // Define a stride:
+    int64_t stride = -2;
+
+    // Define an offset:
+    int64_t offset = 100;
+
+    // Compute the minimum accessible index:
+    int64_t idx = stdlib_strided_min_view_buffer_index( N, stride, offset );
+
+    // Print the results:
+    printf( "N: %"PRId64", stride: %"PRId64", offset: %"PRId64" => idx: %"PRId64"\n", N, stride, offset, idx );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">

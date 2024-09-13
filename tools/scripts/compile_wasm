@@ -30,7 +30,8 @@
 #   NODE            Command for running Node.js. Default: `node`.
 #   NODE_PATH       Path for resolving node modules.
 #   EMCCC_COMPILER  Emscripten C compiler. Default: `emcc`.
-#   WASM2WAT        Command for converting wasm binary format to text format. Default. `wasm2wat`.
+#   WASM2WAT        Command for converting WebAssembly binary format to text format. Default. `wasm2wat`.
+#   WASM2JS         Command for converting WebAssembly binary format to JavaScript. Default. `wasm2js`.
 #   SRC_FOLDER      Folder containing source files. Default: `src`.
 #   INCLUDE         Includes (e.g., `-I /foo/bar -I /a/b`).
 #   SOURCE_FILES    Source file list.
@@ -65,6 +66,12 @@ fi
 wasm_to_wat="${WASM2WAT}"
 if [[ -z "${wasm_to_wat}" ]]; then
 	wasm_to_wat='wasm2wat'
+fi
+
+# Define the path to an executable for converting a WebAssembly binary to JavaScript:
+wasm_to_js="${WASM2JS}"
+if [[ -z "${wasm_to_js}" ]]; then
+	wasm_to_js='wasm2js'
 fi
 
 # Define the folder containing source files:
@@ -194,7 +201,7 @@ resolve_libpaths() {
 #
 # $1 - source directory
 compile() {
-	cd "$1" && EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" make wasm 2>&1
+	cd "$1" && EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" WASM2JS="${wasm_to_js}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" make wasm 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Error when attempting to compile WebAssembly.' >&2
 		return 1
