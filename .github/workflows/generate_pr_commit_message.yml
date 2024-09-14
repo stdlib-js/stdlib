@@ -64,7 +64,7 @@ jobs:
       - name: 'Generate commit message'
         id: commit_message
         run: |
-          COMMIT_MESSAGE=$(./github/scripts/generate_commit_message.sh $PR_NUMBER)
+          COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message $PR_NUMBER)
           echo "commit_message<<EOF" >> $GITHUB_OUTPUT
           echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
