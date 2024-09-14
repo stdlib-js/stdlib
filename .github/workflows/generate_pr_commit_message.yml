@@ -73,7 +73,7 @@ jobs:
       - name: 'Post commit message as PR comment'
         uses: peter-evans/create-or-update-comment@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             ### PR Commit Message
@@ -82,4 +82,4 @@ jobs:
             ${{ steps.commit_message.outputs.commit_message }}
             ```
 
-            *Please review the above commit message and make any necessary adjustments before merging.*
+            *Please review the above commit message and make any necessary adjustments.*

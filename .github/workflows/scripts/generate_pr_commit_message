@@ -104,8 +104,9 @@ main() {
 	pr_body=$(echo "$pr_details" | jq -r '.body // ""')
 	pr_url=$(echo "$pr_details" | jq -r '.html_url')
 
-	# Extract requested reviewers:
-	reviewers=$(echo "$pr_details" | jq -r '.requested_reviewers[].login')
+	# Extract reviewers:
+	pr_reviews=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/reviews")
+	reviewers=$(echo "$pr_reviews" | jq -r '.[] | select(.state == "APPROVED" ) | .user.login' | sort -u)
 
 	# Fetch commits in the PR:
 	pr_commits=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/commits")
