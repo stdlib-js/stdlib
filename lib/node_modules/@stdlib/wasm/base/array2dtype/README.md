@@ -92,7 +92,7 @@ var v;
 var i;
 for ( i = 0; i < dt.length; i++ ) {
     v = array2dtype( empty( 10, dt[ i ] ) );
-    console.log( '%s => %s', dt, v );
+    console.log( '%s => %s', dt[ i ], v );
 }
 ```
 
