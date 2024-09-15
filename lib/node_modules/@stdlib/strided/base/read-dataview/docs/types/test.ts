@@ -26,7 +26,7 @@ import readDataView = require( './index' );
 	const x = new DataView( new ArrayBuffer( 100 ) );
 	const y = new Float64Array( 10 );
 
-	readDataView( y.length, x, 1, y, 1, true ); // $ExpectType Float64Array
+	readDataView( x.length, x, 1, y, 1, true ); // $ExpectType Float64Array
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -64,28 +64,27 @@ import readDataView = require( './index' );
 	const x = new DataView( new ArrayBuffer( 100 ) );
 	const y = new Float64Array( 10 );
 
-	readDataView( y.length, x, '10', y, 1, true ); // $ExpectError
-	readDataView( y.length, x, true, y, 1, true ); // $ExpectError
-	readDataView( y.length, x, false, y, 1, true ); // $ExpectError
-	readDataView( y.length, x, null, y, 1, true ); // $ExpectError
-	readDataView( y.length, x, undefined, y, 1, true ); // $ExpectError
-	readDataView( y.length, x, [], y, 1, true ); // $ExpectError
-	readDataView( y.length, x, {}, y, 1, true ); // $ExpectError
-	readDataView( y.length, x, ( x: number ): number => x, y, 1, true ); // $ExpectError
+	readDataView( x.length, x, '10', y, 1, true ); // $ExpectError
+	readDataView( x.length, x, true, y, 1, true ); // $ExpectError
+	readDataView( x.length, x, false, y, 1, true ); // $ExpectError
+	readDataView( x.length, x, null, y, 1, true ); // $ExpectError
+	readDataView( x.length, x, undefined, y, 1, true ); // $ExpectError
+	readDataView( x.length, x, [], y, 1, true ); // $ExpectError
+	readDataView( x.length, x, {}, y, 1, true ); // $ExpectError
+	readDataView( x.length, x, ( x: number ): number => x, y, 1, true ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a collection...
 {
 	const x = new DataView( new ArrayBuffer( 100 ) );
-	const y = new Float64Array( 10 );
 
-	readDataView( y.length, x, 1, 10, 1, true ); // $ExpectError
-	readDataView( y.length, x, 1, true, 1, true ); // $ExpectError
-	readDataView( y.length, x, 1, false, 1, true ); // $ExpectError
-	readDataView( y.length, x, 1, null, 1, true ); // $ExpectError
-	readDataView( y.length, x, 1, undefined, 1, true ); // $ExpectError
-	readDataView( y.length, x, 1, {}, 1, true ); // $ExpectError
-	readDataView( y.length, x, 1, ( x: number ): number => x, 1, true ); // $ExpectError
+	readDataView( x.length, x, 1, 10, 1, true ); // $ExpectError
+	readDataView( x.length, x, 1, true, 1, true ); // $ExpectError
+	readDataView( x.length, x, 1, false, 1, true ); // $ExpectError
+	readDataView( x.length, x, 1, null, 1, true ); // $ExpectError
+	readDataView( x.length, x, 1, undefined, 1, true ); // $ExpectError
+	readDataView( x.length, x, 1, {}, 1, true ); // $ExpectError
+	readDataView( x.length, x, 1, ( x: number ): number => x, 1, true ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fifth argument which is not a number...
@@ -93,14 +92,14 @@ import readDataView = require( './index' );
 	const x = new DataView( new ArrayBuffer( 100 ) );
 	const y = new Float64Array( 10 );
 
-	readDataView( y.length, x, 1, y, '10', true ); // $ExpectError
-	readDataView( y.length, x, 1, y, true, true ); // $ExpectError
-	readDataView( y.length, x, 1, y, false, true ); // $ExpectError
-	readDataView( y.length, x, 1, y, null, true ); // $ExpectError
-	readDataView( y.length, x, 1, y, undefined, true ); // $ExpectError
-	readDataView( y.length, x, 1, y, [], true ); // $ExpectError
-	readDataView( y.length, x, 1, y, {}, true ); // $ExpectError
-	readDataView( y.length, x, 1, y, ( x: number ): number => x, true ); // $ExpectError
+	readDataView( x.length, x, 1, y, '10', true ); // $ExpectError
+	readDataView( x.length, x, 1, y, true, true ); // $ExpectError
+	readDataView( x.length, x, 1, y, false, true ); // $ExpectError
+	readDataView( x.length, x, 1, y, null, true ); // $ExpectError
+	readDataView( x.length, x, 1, y, undefined, true ); // $ExpectError
+	readDataView( x.length, x, 1, y, [], true ); // $ExpectError
+	readDataView( x.length, x, 1, y, {}, true ); // $ExpectError
+	readDataView( x.length, x, 1, y, ( x: number ): number => x, true ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a sixth argument which is not a boolean...
@@ -108,13 +107,13 @@ import readDataView = require( './index' );
 	const x = new DataView( new ArrayBuffer( 100 ) );
 	const y = new Float64Array( 10 );
 
-	readDataView( y.length, x, 1, y, 1, '10' ); // $ExpectError
-	readDataView( y.length, x, 1, y, 1, 0 ); // $ExpectError
-	readDataView( y.length, x, 1, y, 1, null ); // $ExpectError
-	readDataView( y.length, x, 1, y, 1, undefined ); // $ExpectError
-	readDataView( y.length, x, 1, y, 1, [] ); // $ExpectError
-	readDataView( y.length, x, 1, y, 1, {} ); // $ExpectError
-	readDataView( y.length, x, 1, y, 1, ( x: number ): number => x ); // $ExpectError
+	readDataView( x.length, x, 1, y, 1, '10' ); // $ExpectError
+	readDataView( x.length, x, 1, y, 1, 0 ); // $ExpectError
+	readDataView( x.length, x, 1, y, 1, null ); // $ExpectError
+	readDataView( x.length, x, 1, y, 1, undefined ); // $ExpectError
+	readDataView( x.length, x, 1, y, 1, [] ); // $ExpectError
+	readDataView( x.length, x, 1, y, 1, {} ); // $ExpectError
+	readDataView( x.length, x, 1, y, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -123,12 +122,12 @@ import readDataView = require( './index' );
 	const y = new Float64Array( 10 );
 
 	readDataView(); // $ExpectError
-	readDataView( y.length ); // $ExpectError
-	readDataView( y.length, x ); // $ExpectError
-	readDataView( y.length, x, 1 ); // $ExpectError
-	readDataView( y.length, x, 1, y ); // $ExpectError
-	readDataView( y.length, x, 1, y, 1 ); // $ExpectError
-	readDataView( y.length, x, 1, y, 1, true, 10 ); // $ExpectError
+	readDataView( x.length ); // $ExpectError
+	readDataView( x.length, x ); // $ExpectError
+	readDataView( x.length, x, 1 ); // $ExpectError
+	readDataView( x.length, x, 1, y ); // $ExpectError
+	readDataView( x.length, x, 1, y, 1 ); // $ExpectError
+	readDataView( x.length, x, 1, y, 1, true, 10 ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a collection...
@@ -136,7 +135,7 @@ import readDataView = require( './index' );
 	const x = new DataView( new ArrayBuffer( 100 ) );
 	const y = new Float64Array( 10 );
 
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, 0, true ); // $ExpectType Float64Array
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, 0, true ); // $ExpectType Float64Array
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
@@ -174,14 +173,14 @@ import readDataView = require( './index' );
 	const x = new DataView( new ArrayBuffer( 100 ) );
 	const y = new Float64Array( 10 );
 
-	readDataView.ndarray( y.length, x, '10', 0, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, true, 0, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, false, 0, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, null, 0, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, undefined, 0, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, [], 0, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, {}, 0, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, ( x: number ): number => x, 0, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, '10', 0, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, true, 0, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, false, 0, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, null, 0, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, undefined, 0, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, [], 0, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, {}, 0, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, ( x: number ): number => x, 0, y, 1, 0, true ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -189,28 +188,27 @@ import readDataView = require( './index' );
 	const x = new DataView( new ArrayBuffer( 100 ) );
 	const y = new Float64Array( 10 );
 
-	readDataView.ndarray( y.length, x, 1, '10', y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, true, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, false, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, null, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, undefined, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, [], y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, {}, y, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, ( x: number ): number => x, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, '10', y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, true, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, false, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, null, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, undefined, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, [], y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, {}, y, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, ( x: number ): number => x, y, 1, 0, true ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a collection...
 {
 	const x = new DataView( new ArrayBuffer( 100 ) );
-	const y = new Float64Array( 10 );
 
-	readDataView.ndarray( y.length, x, 1, 0, 10, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, true, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, false, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, null, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, undefined, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, {}, 1, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, ( x: number ): number => x, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, 10, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, true, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, false, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, null, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, undefined, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, {}, 1, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, ( x: number ): number => x, 1, 0, true ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a sixth argument which is not a number...
@@ -218,14 +216,14 @@ import readDataView = require( './index' );
 	const x = new DataView( new ArrayBuffer( 100 ) );
 	const y = new Float64Array( 10 );
 
-	readDataView.ndarray( y.length, x, 1, 0, y, '10', 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, true, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, false, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, null, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, undefined, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, [], 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, {}, 0, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, ( x: number ): number => x, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, '10', 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, true, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, false, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, null, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, undefined, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, [], 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, {}, 0, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, ( x: number ): number => x, 0, true ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a seventh argument which is not a number...
@@ -233,14 +231,14 @@ import readDataView = require( './index' );
 	const x = new DataView( new ArrayBuffer( 100 ) );
 	const y = new Float64Array( 10 );
 
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, '10', true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, true, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, false, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, null, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, undefined, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, [], true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, {}, true ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, ( x: number ): number => x, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, '10', true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, true, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, false, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, null, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, undefined, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, [], true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, {}, true ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, ( x: number ): number => x, true ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an eighth argument which is not a boolean...
@@ -248,13 +246,13 @@ import readDataView = require( './index' );
 	const x = new DataView( new ArrayBuffer( 100 ) );
 	const y = new Float64Array( 10 );
 
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, 0, '10' ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, 0, 0 ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, 0, null ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, 0, undefined ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, 0, [] ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, 0, {} ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, 0, ( x: number ): number => x ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, 0, '10' ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, 0, 0 ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, 0, null ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, 0, undefined ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, 0, [] ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, 0, {} ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, 0, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
@@ -263,12 +261,12 @@ import readDataView = require( './index' );
 	const y = new Float64Array( 10 );
 
 	readDataView.ndarray(); // $ExpectError
-	readDataView.ndarray( y.length ); // $ExpectError
-	readDataView.ndarray( y.length, x ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1 ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0 ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1 ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, 0 ); // $ExpectError
-	readDataView.ndarray( y.length, x, 1, 0, y, 1, 0, true, 10 ); // $ExpectError
+	readDataView.ndarray( x.length ); // $ExpectError
+	readDataView.ndarray( x.length, x ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1 ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0 ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1 ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectError
+	readDataView.ndarray( x.length, x, 1, 0, y, 1, 0, true, 10 ); // $ExpectError
 }
