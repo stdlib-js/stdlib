@@ -147,15 +147,15 @@ import cscal = require( './index' );
 	const cx = new Complex64Array( 10 );
 	const ca = new Complex64( 2.0, 2.0 );
 
-	cscal( cx.length, ca, 10, 1, 0 ); // $ExpectError
-	cscal( cx.length, ca, '10', 1, 0 ); // $ExpectError
-	cscal( cx.length, ca, true, 1, 0 ); // $ExpectError
-	cscal( cx.length, ca, false, 1, 0 ); // $ExpectError
-	cscal( cx.length, ca, null, 1, 0 ); // $ExpectError
-	cscal( cx.length, ca, undefined, 1, 0 ); // $ExpectError
-	cscal( cx.length, ca, [ '1' ], 1, 0 ); // $ExpectError
-	cscal( cx.length, ca, {}, 1, 0 ); // $ExpectError
-	cscal( cx.length, ca, ( cx: number ): number => cx, 1, 0 ); // $ExpectError
+	cscal.ndarray( cx.length, ca, 10, 1, 0 ); // $ExpectError
+	cscal.ndarray( cx.length, ca, '10', 1, 0 ); // $ExpectError
+	cscal.ndarray( cx.length, ca, true, 1, 0 ); // $ExpectError
+	cscal.ndarray( cx.length, ca, false, 1, 0 ); // $ExpectError
+	cscal.ndarray( cx.length, ca, null, 1, 0 ); // $ExpectError
+	cscal.ndarray( cx.length, ca, undefined, 1, 0 ); // $ExpectError
+	cscal.ndarray( cx.length, ca, [ '1' ], 1, 0 ); // $ExpectError
+	cscal.ndarray( cx.length, ca, {}, 1, 0 ); // $ExpectError
+	cscal.ndarray( cx.length, ca, ( cx: number ): number => cx, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
