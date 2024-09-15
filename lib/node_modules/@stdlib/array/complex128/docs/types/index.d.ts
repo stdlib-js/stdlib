@@ -369,6 +369,17 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	at( i: number ): Complex128 | void;
 
 	/**
+	* Pointer to the underlying data buffer.
+	*
+	* @example
+	* var arr = new Complex128Array( 10 );
+	*
+	* var buf = arr.buffer;
+	* // returns <ArrayBuffer>
+	*/
+	readonly buffer: ArrayBuffer;
+
+	/**
 	* Length (in bytes) of the array.
 	*
 	* @example
