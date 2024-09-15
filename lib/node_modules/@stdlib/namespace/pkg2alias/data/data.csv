@@ -2200,6 +2200,7 @@
 "@stdlib/assert/is-uri",isURI
 "@stdlib/assert/is-uri-error",isURIError
 "@stdlib/assert/is-vector-like",isVectorLike
+"@stdlib/assert/is-wasm-memory",isWebAssemblyMemory
 "@stdlib/assert/is-well-formed-string",isWellFormedString
 "@stdlib/assert/is-whitespace",isWhitespace
 "@stdlib/assert/is-writable-property",isWritableProperty
@@ -3087,6 +3088,7 @@
 "@stdlib/string/utf16-to-utf8-array",utf16ToUTF8Array
 "@stdlib/stats/vartest",vartest
 "@stdlib/utils/async/series-waterfall",waterfall
+"@stdlib/wasm/memory",WebAssemblyMemory
 "@stdlib/utils/async/while",whileAsync
 "@stdlib/utils/while-each",whileEach
 "@stdlib/utils/while-each-right",whileEachRight
