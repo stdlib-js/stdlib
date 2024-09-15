@@ -1753,9 +1753,11 @@ hasArrayBufferSupport
 hasArrowFunctionSupport
 hasAsyncAwaitSupport
 hasAsyncIteratorSymbolSupport
+hasAtobSupport
 hasBigInt64ArraySupport
 hasBigIntSupport
 hasBigUint64ArraySupport
+hasBtoaSupport
 hasClassSupport
 hasDataViewSupport
 hasDefinePropertiesSupport

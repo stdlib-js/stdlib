@@ -1753,9 +1753,11 @@
 "@stdlib/assert/has-arrow-function-support",hasArrowFunctionSupport
 "@stdlib/assert/has-async-await-support",hasAsyncAwaitSupport
 "@stdlib/assert/has-async-iterator-symbol-support",hasAsyncIteratorSymbolSupport
+"@stdlib/assert/has-atob-support",hasAtobSupport
 "@stdlib/assert/has-bigint64array-support",hasBigInt64ArraySupport
 "@stdlib/assert/has-bigint-support",hasBigIntSupport
 "@stdlib/assert/has-biguint64array-support",hasBigUint64ArraySupport
+"@stdlib/assert/has-btoa-support",hasBtoaSupport
 "@stdlib/assert/has-class-support",hasClassSupport
 "@stdlib/assert/has-dataview-support",hasDataViewSupport
 "@stdlib/assert/has-define-properties-support",hasDefinePropertiesSupport

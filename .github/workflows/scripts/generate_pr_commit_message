@@ -1,0 +1,162 @@
+#!/bin/bash
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Script to generate a commit message for a pull request.
+#
+# Usage: generate_pr_commit_message PR_NUMBER
+#
+# Arguments:
+#
+#   PR_NUMBER    Pull request number.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Get the pull request number:
+pr_number="$1"
+
+# GitHub API base URL
+GITHUB_API_URL="https://api.github.com"
+
+# Repository owner and name
+REPO_OWNER="stdlib-js"
+REPO_NAME="stdlib"
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Function to resolve GitHub handle to name and email using .mailmap
+#
+# $1 - GitHub handle
+resolve_user() {
+	local github_handle="$1"
+	local mailmap_file=".mailmap"
+	local name_email
+
+	# Try to find a match for the GitHub handle:
+	name_email=$(grep -i "$github_handle" "$mailmap_file" | head -n 1)
+
+	if [ -n "$name_email" ]; then
+		# Extract name and email from the matching line:
+		echo "$name_email" | sed -E 's/^(.*)<(.*)>.*$/\1 <\2>/' | xargs
+	else
+		# If no match found, use the GitHub handle as is:
+		echo "$github_handle <$github_handle@users.noreply.github.com>"
+	fi
+}
+
+# Function to make authenticated GitHub API requests
+#
+# $1 - HTTP method (GET or POST)
+# $2 - API endpoint
+# $3 - Data for POST requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+
+	if [ "$method" == "GET" ]; then
+		curl -s -H "Authorization: token $GITHUB_TOKEN" "$GITHUB_API_URL$endpoint"
+	elif [ "$method" == "POST" ]; then
+		curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d "$data" "$GITHUB_API_URL$endpoint"
+	else
+		echo "Invalid HTTP method: $method"
+		on_error 1
+	fi
+}
+
+# Main execution sequence.
+main() {
+	# Fetch pull request details:
+	pr_details=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number")
+	pr_title=$(echo "$pr_details" | jq -r '.title')
+	pr_body=$(echo "$pr_details" | jq -r '.body // ""')
+	pr_url=$(echo "$pr_details" | jq -r '.html_url')
+
+	# Extract reviewers:
+	pr_reviews=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/reviews")
+	reviewers=$(echo "$pr_reviews" | jq -r '.[] | select(.state == "APPROVED" ) | .user.login' | sort -u)
+
+	# Fetch commits in the PR:
+	pr_commits=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/commits")
+
+	# Extract co-authors from commits:
+	co_authors=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -i "Co-authored-by:" | awk -F': ' '{print $2}' | sort | uniq | paste -sd '\n' -)
+
+	# Extract linked issues from PR body (e.g., #123)
+	issue_numbers=$(echo "$pr_body" | grep -oE '#[0-9]+' | grep -oE '[0-9]+' | sort | uniq)
+	closes_issues=""
+	ref_issues=""
+	for issue in $issue_numbers; do
+		if echo "$pr_body" | grep -qi "closes.*#$issue"; then
+			closes_issues+="Closes: https://github.com/$REPO_OWNER/$REPO_NAME/issues/$issue\n"
+		else
+			ref_issues+="Ref: https://github.com/$REPO_OWNER/$REPO_NAME/issues/$issue\n"
+		fi
+	done
+	closes_issues=$(echo -e "$closes_issues" | sed '$ s/\n$//')
+	ref_issues=$(echo -e "$ref_issues" | sed '$ s/\n$//')
+
+	# Assemble commit message components:
+	commit_subject="$pr_title"
+	commit_body="PR-URL: $pr_url"
+
+	if [ -n "$closes_issues" ]; then
+		commit_body+="\n$closes_issues"
+	fi
+	if [ -n "$ref_issues" ]; then
+		commit_body+="\n$ref_issues"
+	fi
+	if [ -n "$co_authors" ]; then
+		commit_body+="\n$co_authors"
+	fi
+	for reviewer in $reviewers; do
+		resolved_reviewer=$(resolve_user "$reviewer")
+		commit_body+="\nReviewed-by: $resolved_reviewer"
+	done
+
+	# Add Signed-off-by line:
+	pr_author=$(echo "$pr_details" | jq -r '.user.login')
+	signed_off_by=$(resolve_user "$pr_author")
+	commit_body+="\nSigned-off-by: $signed_off_by"
+
+	# Combine subject and body:
+	commit_message="$commit_subject\n\n$commit_body"
+
+	# Output the commit message:
+	echo -e "$commit_message"
+}
+
+# Call main with all command-line arguments:
+main "$@"
