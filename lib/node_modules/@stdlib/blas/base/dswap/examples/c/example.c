@@ -39,4 +39,13 @@ int main( void ) {
 		printf( "x[ %i ] = %lf\n", i, x[ i ] );
 		printf( "y[ %i ] = %lf\n", i, y[ i ] );
 	}
+
+	// Interchange elements:
+	c_dswap_ndarray( N, x, strideX, 0, y, strideY, 6 );
+
+	// Print the result:
+	for ( int i = 0; i < 8; i++ ) {
+		printf( "x[ %i ] = %lf\n", i, x[ i ] );
+		printf( "y[ %i ] = %lf\n", i, y[ i ] );
+	}
 }
