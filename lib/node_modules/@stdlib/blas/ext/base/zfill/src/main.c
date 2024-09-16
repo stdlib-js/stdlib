@@ -1,0 +1,72 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2024 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/blas/ext/base/zfill.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/strided/base/stride2offset.h"
+#include <stdint.h>
+
+/**
+* Fills a double-precision complex floating-point strided array with a specified scalar constant.
+*
+* @param N       number of indexed elements
+* @param alpha   scalar constant
+* @param X       input array
+* @param stride  index increment
+*/
+void c_zfill( const int64_t N, const stdlib_complex128_t alpha, stdlib_complex128_t *X, const int64_t stride ) {
+	int64_t ix;
+	int64_t m;
+	int64_t i;
+
+	if ( N <= 0 ) {
+		return;
+	}
+
+	// Use loop unrolling if the stride is equal to `1`...
+	if ( stride == 1 ) {
+		m = N % 8;
+
+		// If we have a remainder, run a clean-up loop...
+		if ( m > 0 ) {
+			for ( i = 0; i < m; i++ ) {
+				X[ i ] = alpha;
+			}
+		}
+		if ( N < 8 ) {
+			return;
+		}
+		for ( i = m; i < N; i += 8 ) {
+			X[ i ] = alpha;
+			X[ i+1 ] = alpha;
+			X[ i+2 ] = alpha;
+			X[ i+3 ] = alpha;
+			X[ i+4 ] = alpha;
+			X[ i+5 ] = alpha;
+			X[ i+6 ] = alpha;
+			X[ i+7 ] = alpha;
+		}
+		return;
+	}
+	ix = stdlib_strided_stride2offset( N, stride );
+	for ( i = 0; i < N; i++ ) {
+		X[ ix ] = alpha;
+		ix += stride;
+	}
+	return;
+}
