@@ -46,7 +46,6 @@ import isPositiveNumberArray = require( './index' );
 	isPositiveNumberArray.primitives( [ 2 ], 123 ); // $ExpectError
 }
 
-
 // Attached to main export is an `objects` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers

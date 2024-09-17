@@ -129,7 +129,6 @@ const isPositive = ( v: number ): boolean => {
 	cusomeByRight.assign( x, [], y, 1, 0, isPositive ); // $ExpectError
 }
 
-
 // The compiler throws an error if the `assign` method is provided a third argument which is not an array-like object...
 {
 	const x = [ 1, 1, 0, 0, 0 ];
@@ -183,7 +182,6 @@ const isPositive = ( v: number ): boolean => {
 	cusomeByRight.assign( x, 1, y, 1, 0, {} ); // $ExpectError
 	cusomeByRight.assign( x, 1, y, 1, 0, [] ); // $ExpectError
 }
-
 
 // The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
 {
