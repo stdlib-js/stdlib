@@ -42,7 +42,7 @@ var str2enum = require( '@stdlib/ndarray/base/output-policy-str2enum' );
 
 #### str2enum( policy )
 
-Return the enumeration constant associated with an output ndarray [data type policy][@stdlib/ndarray/output-dtype-policies] string.
+Returns the enumeration constant associated with an output ndarray [data type policy][@stdlib/ndarray/output-dtype-policies] string.
 
 ```javascript
 var v = str2enum( 'same' );

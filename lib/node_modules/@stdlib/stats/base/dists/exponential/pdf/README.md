@@ -84,7 +84,7 @@ var y = pdf( 2.0, -1.0 );
 
 #### pdf.factory( lambda )
 
-Partially apply `lambda` to create a reusable `function` for evaluating the [PDF][pdf].
+Partially applies `lambda` to create a reusable `function` for evaluating the [PDF][pdf].
 
 ```javascript
 var mypdf = pdf.factory( 0.1 );

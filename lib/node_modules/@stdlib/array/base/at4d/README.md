@@ -42,7 +42,7 @@ var at4d = require( '@stdlib/array/base/at4d' );
 
 #### at4d( x, i0, i1, i2, i3 )
 
-Return an element from a four-dimensional nested array.
+Returns an element from a four-dimensional nested array.
 
 ```javascript
 var x = [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ];

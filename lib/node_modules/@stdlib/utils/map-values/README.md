@@ -42,7 +42,7 @@ var mapValues = require( '@stdlib/utils/map-values' );
 
 #### mapValues( obj, transform )
 
-Map values from one `object` to a new `object` having the same keys.
+Maps values from one `object` to a new `object` having the same keys.
 
 ```javascript
 function transform( value, key ) {
