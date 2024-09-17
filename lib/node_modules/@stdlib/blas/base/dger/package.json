@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/base/dger",
   "version": "0.0.0",
-  "description": "Performs the rank 1 operation A = alpha⋅x⋅y^T + A.",
+  "description": "Perform the rank 1 operation A = alpha⋅x⋅y^T + A.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
