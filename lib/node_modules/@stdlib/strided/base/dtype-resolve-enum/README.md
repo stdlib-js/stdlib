@@ -42,7 +42,7 @@ var resolve = require( '@stdlib/strided/base/dtype-resolve-enum' );
 
 #### resolve( dtype )
 
-Return the enumeration constant associated with a strided array data type value.
+Returns the enumeration constant associated with a strided array data type value.
 
 ```javascript
 var str2enum = require( '@stdlib/strided/base/dtype-str2enum' );

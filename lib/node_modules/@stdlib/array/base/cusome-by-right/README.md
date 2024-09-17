@@ -32,7 +32,7 @@ var cusomeByRight = require( '@stdlib/array/base/cusome-by-right' );
 
 #### cusomeByRight( x, n, predicate\[, thisArg ] )
 
-Cumulatively test whether at least `n` elements in a provided array pass a test implemented by a `predicate` function, while iterating from right-to-left.
+Cumulatively tests whether at least `n` elements in a provided array pass a test implemented by a `predicate` function, while iterating from right-to-left.
 
 ```javascript
 function fcn( value ) {
@@ -74,7 +74,7 @@ var count = context.count;
 
 #### cusomeByRight.assign( x, n, out, stride, offset, predicate\[, thisArg ] )
 
-Cumulatively test whether at least `n` elements in a provided array pass a test implemented by a `predicate` function, while iterating from right-to-left and assign the results to the elements in the output array.
+Cumulatively tests whether at least `n` elements in a provided array pass a test implemented by a `predicate` function, while iterating from right-to-left and assign the results to the elements in the output array.
 
 ```javascript
 function fcn( v ) {

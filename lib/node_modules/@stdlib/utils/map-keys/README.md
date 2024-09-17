@@ -42,7 +42,7 @@ var mapKeys = require( '@stdlib/utils/map-keys' );
 
 #### mapKeys( obj, transform )
 
-Map keys from one `object` to a new `object` having the same values.
+Maps keys from one `object` to a new `object` having the same values.
 
 ```javascript
 function transform( key, value ) {

@@ -111,7 +111,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_acsch( x )
 
-Compute the [hyperbolic arccosecant][inverse-hyperbolic-functions] of a double-precision floating-point number.
+Computes the [hyperbolic arccosecant][inverse-hyperbolic-functions] of a double-precision floating-point number.
 
 ```c
 double out = stdlib_base_acsch( 1.0 );

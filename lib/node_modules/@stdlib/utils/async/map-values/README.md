@@ -42,7 +42,7 @@ var mapValuesAsync = require( '@stdlib/utils/async/map-values' );
 
 #### mapValuesAsync( obj, \[options,] transform, done )
 
-Map values from one `object` to a new `object` having the same keys.
+Maps values from one `object` to a new `object` having the same keys.
 
 ```javascript
 function transform( value, next ) {
