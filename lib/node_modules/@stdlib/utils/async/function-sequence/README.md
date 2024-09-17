@@ -81,8 +81,8 @@ f( 6, done ); // ((2*x)+3)/5
 
 The last argument provided to each function is a `next` callback which accepts two arguments:
 
--   `error`: error argument
--   `result`: function result
+-   **error**: error argument.
+-   **result**: function result.
 
 **Only** the leftmost function is explicitly permitted to accept multiple arguments. All other functions are evaluated as **binary** functions.
 

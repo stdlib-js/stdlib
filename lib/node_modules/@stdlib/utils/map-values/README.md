@@ -60,9 +60,9 @@ var obj2 = mapValues( obj1, transform );
 
 The `transform` function is provided three arguments:
 
--   `value`: object value corresponding to `key`
--   `key`: object key
--   `obj`: the input object
+-   **value**: object value corresponding to `key`.
+-   **key**: object key.
+-   **obj**: the input object.
 
 </section>
 
