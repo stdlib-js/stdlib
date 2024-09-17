@@ -221,7 +221,7 @@ Multiplies a vector `X` by a constant and adds the result to `Y` using alternati
 const double x[] = { 1.0, 2.0, 3.0, 4.0 };
 double y[] = { 0.0, 0.0, 0.0, 0.0 };
 
-c_daxpy( 4, 5.0, x, 1, 0, y, 1, 0 );
+c_daxpy_ndarray( 4, 5.0, x, 1, 0, y, 1, 0 );
 ```
 
 The function accepts the following arguments:
