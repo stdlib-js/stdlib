@@ -142,6 +142,7 @@ interface CusomeByRight {
 	* Cumulatively tests whether no array element in a provided array passes a test implemented by a predicate function, while iterating from right-to-left, and assigns the results to the provided output array.
 	*
 	* @param x - input array
+	* @param n - number of elements
 	* @param out - output array
 	* @param stride - output array stride
 	* @param offset - output array offset
@@ -159,7 +160,7 @@ interface CusomeByRight {
 	* var arr = cunoneBy.cunoneByRight( x, y, 2, 0, isPositive );,
 	* // returns [ true, null, false, null, false, null, false, null, false, null ]
 	*/
-	assign<T = unknown, U = unknown, V = unknown>( x: Collection<T> | AccessorArrayLike<T>, out: Collection<U> | AccessorArrayLike<U>, stride: number, offset: number, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): Collection<U | boolean> | AccessorArrayLike<U | boolean>;
+	assign<T = unknown, U = unknown, V = unknown>( x: Collection<T> | AccessorArrayLike<T>, n: number, out: Collection<U> | AccessorArrayLike<U>, stride: number, offset: number, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): Collection<U | boolean> | AccessorArrayLike<U | boolean>;
 }
 
 /**
