@@ -17,25 +17,12 @@
 */
 
 #include "stdlib/blas/base/dcopy.h"
-#include "stdlib/blas/base/dcopy_cblas.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/strided/base/min_view_buffer_index.h"
+
+static const CBLAS_INT M = 7;
 
 /**
 * Copies values from `X` into `Y`.
-*
-* @param N        number of indexed elements
-* @param X        input array
-* @param strideX  X stride length
-* @param Y        output array
-* @param strideY  Y stride length
-*/
-void API_SUFFIX(c_dcopy)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
-	API_SUFFIX(cblas_dcopy)( N, X, strideX, Y, strideY );
-}
-
-/**
-* Copies values from `X` into `Y` using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        input array
@@ -46,7 +33,47 @@ void API_SUFFIX(c_dcopy)( const CBLAS_INT N, const double *X, const CBLAS_INT st
 * @param offsetY  starting index for Y
 */
 void API_SUFFIX(c_dcopy_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	X += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
-	Y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
-	API_SUFFIX(cblas_dcopy)( N, X, strideX, Y, strideY );
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT i;
+	CBLAS_INT m;
+
+	if ( N <= 0 ) {
+		return;
+	}
+	ix = offsetX;
+	iy = offsetY;
+
+	// If both strides are equal to `1`, use unrolled loops...
+	if ( strideX == 1 && strideY == 1 ) {
+		m = N % M;
+
+		// If we have a remainder, do a clean-up loop...
+		if ( m > 0 ) {
+			for ( i = 0; i < m; i++ ) {
+				Y[ iy ] = X[ ix ];
+				ix += strideX;
+				iy += strideY;
+			}
+			if ( N < 7 ) {
+				return;
+			}
+		}
+		for ( i = m; i < N; i += 7 ) {
+			Y[ iy ] = X[ ix ];
+			Y[ iy+1 ] = X[ ix+1 ];
+			Y[ iy+2 ] = X[ ix+2 ];
+			Y[ iy+3 ] = X[ ix+3 ];
+			Y[ iy+4 ] = X[ ix+4 ];
+			Y[ iy+5 ] = X[ ix+5 ];
+			Y[ iy+6 ] = X[ ix+6 ];
+		}
+		return;
+	}
+	for ( i = 0; i < N; i++ ) {
+		Y[ iy ] = X[ ix ];
+		ix += strideX;
+		iy += strideY;
+	}
+	return;
 }
