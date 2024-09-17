@@ -36,6 +36,11 @@ extern "C" {
 */
 void API_SUFFIX(c_dcopy)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
 
+/**
+* Copies values from `X` into `Y` using alternative indexing semantics.
+*/
+void API_SUFFIX(c_dcopy_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+
 #ifdef __cplusplus
 }
 #endif
