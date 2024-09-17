@@ -19,7 +19,7 @@
 #ifndef STDLIB_BLAS_EXT_BASE_DFILL_H
 #define STDLIB_BLAS_EXT_BASE_DFILL_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Fills a double-precision floating-point strided array with a specified scalar constant.
 */
-void c_dfill( const int64_t N, const double alpha, double *X, const int64_t stride );
+void API_SUFFIX(c_dfill)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX );
+
+/**
+* Fills a double-precision floating-point strided array with a specified scalar constant using alternative indexing semantics.
+*/
+void API_SUFFIX(c_dfill_ndarray)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }
