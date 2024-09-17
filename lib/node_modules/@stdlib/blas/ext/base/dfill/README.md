@@ -30,7 +30,7 @@ limitations under the License.
 var dfill = require( '@stdlib/blas/ext/base/dfill' );
 ```
 
-#### dfill( N, alpha, x, stride )
+#### dfill( N, alpha, x, strideX )
 
 Fills a double-precision floating-point strided array `x` with a specified scalar constant `alpha`.
 
@@ -48,7 +48,7 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **alpha**: scalar constant.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **stride**: index increment.
+-   **strideX**: index increment.
 
 The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to fill every other element
 
@@ -77,7 +77,7 @@ dfill( 3, 5.0, x1, 2 );
 // x0 => <Float64Array>[ 1.0, 5.0, 3.0, 5.0, 5.0, 5.0 ]
 ```
 
-#### dfill.ndarray( N, alpha, x, stride, offset )
+#### dfill.ndarray( N, alpha, x, strideX, offsetX )
 
 Fills a double-precision floating-point strided array `x` with a specified scalar constant `alpha` using alternative indexing semantics.
 
@@ -92,7 +92,7 @@ dfill.ndarray( x.length, 5.0, x, 1, 0 );
 
 The function has the following additional parameters:
 
--   **offset**: starting index.
+-   **offsetX**: starting index.
 
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
 
