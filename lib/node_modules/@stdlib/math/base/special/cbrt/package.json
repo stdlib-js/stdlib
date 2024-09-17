@@ -64,5 +64,81 @@
     "root",
     "power",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "cbrt",
+      "alias": "cbrt",
+      "pkg_desc": "compute the cube root",
+      "desc": "computes the cube root",
+      "short_desc": "cube root",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10.0,
+              10.0
+            ]
+          },
+          "example_values": [
+            64.0,
+            27.0,
+            0.0,
+            -0.0,
+            -9.0,
+            8.0,
+            -1.0,
+            125.0,
+            -10.2,
+            11.3,
+            -12.4,
+            3.5,
+            -1.6,
+            15.7,
+            -16.0,
+            17.9,
+            -188.0,
+            19.11,
+            -200.0,
+            21.15
+          ]
+        }
+      ],
+      "returns": {
+        "desc": "cube root",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "cube",
+        "root",
+        "cbrt",
+        "cubic",
+        "power"
+      ],
+      "extra_keywords": [
+        "math.cbrt"
+      ]
+    }
+  }
 }
