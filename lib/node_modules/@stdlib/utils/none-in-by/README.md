@@ -78,9 +78,9 @@ var bool = noneInBy( obj, isUnderage );
 
 The invoked `function` is provided three agruments:
 
--   `value`: property value
--   `key`: property key
--   `object`: input object
+-   **value**: property value.
+-   **key**: property key.
+-   **object**: input object.
 
 To set the function execution context, provide a `thisArg`.
 

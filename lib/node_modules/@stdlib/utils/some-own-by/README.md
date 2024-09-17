@@ -83,9 +83,9 @@ var bool = someOwnBy( obj, 2, isPositive );
 
 The invoked `function` is provided three arguments:
 
--   `value`: object property value
--   `key`: object property key
--   `obj`: input object
+-   **value**: object property value.
+-   **key**: object property key.
+-   **obj**: input object.
 
 To set the function execution context, provide a `thisArg`.
 
