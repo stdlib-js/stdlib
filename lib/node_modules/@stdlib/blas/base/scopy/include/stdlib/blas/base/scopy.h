@@ -22,6 +22,8 @@
 #ifndef SCOPY_H
 #define SCOPY_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,12 @@ extern "C" {
 /**
 * Copies values from `x` into `y`.
 */
-void c_scopy( const int N, const float *X, const int strideX, float *Y, const int strideY );
+void API_SUFFIX(c_scopy)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY );
+
+/**
+* Copies values from `x` into `y` using alternative indexing semantics.
+*/
+void API_SUFFIX(c_scopy_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 
 #ifdef __cplusplus
 }
