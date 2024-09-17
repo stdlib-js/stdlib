@@ -64,5 +64,125 @@
     "exponential",
     "function",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "pow",
+      "alias": "pow",
+      "pkg_desc": "exponential function",
+      "desc": "exponential function",
+      "short_desc": "exponential function",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "base",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10.0,
+              10.0
+            ]
+          },
+          "example_values": [
+            -1.2,
+            2.0,
+            -3.1,
+            4.0,
+            5.5,
+            100.0,
+            8.9,
+            3.141592653589793,
+            11.3,
+            -3.141592653589793,
+            13.5,
+            14.6,
+            -15.7,
+            16.8,
+            -17.9,
+            10.0,
+            -19.11,
+            20.12,
+            -21.15,
+            1.0
+          ]
+        },
+        {
+          "name": "y",
+          "desc": "exponent",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10.0,
+              10.0
+            ]
+          },
+          "example_values": [
+            1.2,
+            -2.0,
+            3.0,
+            -0.5,
+            0.0,
+            -5.6,
+            8.9,
+            -10.0,
+            1.5,
+            -12.0,
+            13.5,
+            14.6,
+            -15.7,
+            6.0,
+            -17.0,
+            18.0,
+            -9.0,
+            2.12,
+            -1.15,
+            -2.0
+          ]
+        }
+      ],
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "natural",
+        "exponential",
+        "pow",
+        "power"
+      ],
+      "extra_keywords": [
+        "math.pow"
+      ]
+    }
+  }
 }
