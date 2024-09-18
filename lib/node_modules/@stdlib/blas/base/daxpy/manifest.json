@@ -134,6 +134,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
@@ -154,6 +155,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
@@ -262,6 +264,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
@@ -281,6 +284,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
@@ -328,6 +332,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
@@ -348,6 +353,7 @@
       ],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
