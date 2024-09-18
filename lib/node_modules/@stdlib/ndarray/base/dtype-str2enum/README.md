@@ -42,7 +42,7 @@ var str2enum = require( '@stdlib/ndarray/base/dtype-str2enum' );
 
 #### str2enum( dtype )
 
-Return the enumeration constant associated with an ndarray data type `string`.
+Returns the enumeration constant associated with an ndarray data type `string`.
 
 ```javascript
 var v = str2enum( 'float64' );

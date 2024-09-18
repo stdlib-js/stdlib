@@ -1,10 +1,10 @@
 
-{{alias}}( N, alpha, x, stride )
+{{alias}}( N, alpha, x, strideX )
     Fills a double-precision floating-point strided array with a specified
     scalar value.
 
-    The `N` and `stride` parameters determine which elements in the strided
-    array are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
@@ -22,7 +22,7 @@
     x: Float64Array
         Input array.
 
-    stride: integer
+    strideX: integer
         Index increment for `x`.
 
     Returns
@@ -37,7 +37,7 @@
     > {{alias}}( x.length, 5.0, x, 1 )
     <Float64Array>[ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ] );
     > {{alias}}( 3, 5.0, x, 2 )
     <Float64Array>[ 5.0, 1.0, 5.0, -5.0, 5.0, -1.0, -3.0 ]
@@ -51,13 +51,13 @@
     <Float64Array>[ 1.0, 5.0, 3.0, 5.0, 5.0, 5.0 ]
 
 
-{{alias}}.ndarray( N, alpha, x, stride, offset )
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX )
     Fills a double-precision floating-point strided array with a specified
     scalar value using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
 
     Parameters
     ----------
@@ -70,10 +70,10 @@
     x: Float64Array
         Input array.
 
-    stride: integer
+    strideX: integer
         Index increment for `x`.
 
-    offset: integer
+    offsetX: integer
         Starting index of `x`.
 
     Returns

@@ -133,7 +133,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_avercosf( x )
 
-Compute the [inverse versed cosine][inverse-versed-cosine] of a single-precision floating-point number (in radians).
+Computes the [inverse versed cosine][inverse-versed-cosine] of a single-precision floating-point number (in radians).
 
 ```c
 float out = stdlib_base_avercosf( -3.141592653589793f / 2.0f );

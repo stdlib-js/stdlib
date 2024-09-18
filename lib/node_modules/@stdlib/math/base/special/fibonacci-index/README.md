@@ -153,7 +153,7 @@ for ( i = 3; i < 79; i++ ) {
 
 #### stdlib_base_fibonacci_index( F )
 
-Compute the [Fibonacci number][fibonacci-number] index.
+Computes the [Fibonacci number][fibonacci-number] index.
 
 ```c
 double out = stdlib_base_fibonacci( 2 );

@@ -60,9 +60,9 @@ var bool = ( out === arr );
 
 The invoked `function` is provided three arguments:
 
--   `value`: collection element
--   `index`: collection index
--   `collection`: input collection
+-   **value**: collection element.
+-   **index**: collection index.
+-   **collection**: input collection.
 
 Basic support for dynamic collections is provided. Note, however, that index incrementation is **not** guaranteed to be monotonically **decreasing**.
 

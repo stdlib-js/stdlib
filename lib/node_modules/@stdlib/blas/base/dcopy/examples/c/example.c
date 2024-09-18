@@ -38,4 +38,12 @@ int main( void ) {
 	for ( int i = 0; i < 8; i++ ) {
 		printf( "y[ %i ] = %lf\n", i, y[ i ] );
 	}
+
+	// Copy elements:
+	c_dcopy_ndarray( N, x, strideX, 0, y, strideY, 6 );
+
+	// Print the result:
+	for ( int i = 0; i < 8; i++ ) {
+		printf( "y[ %i ] = %lf\n", i, y[ i ] );
+	}
 }

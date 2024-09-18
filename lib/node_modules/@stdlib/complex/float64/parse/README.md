@@ -42,7 +42,7 @@ var parseComplex128 = require( '@stdlib/complex/float64/parse' );
 
 #### parseComplex128( str )
 
-Parse a string representation of a 128-bit [complex number][@stdlib/complex/float64/ctor].
+Parses a string representation of a 128-bit [complex number][@stdlib/complex/float64/ctor].
 
 ```javascript
 var real = require( '@stdlib/complex/float64/real' );

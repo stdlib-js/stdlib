@@ -42,7 +42,7 @@ var at = require( '@stdlib/array/base/at' );
 
 #### at( x, index )
 
-Return an element from an array.
+Returns an element from an array.
 
 ```javascript
 var x = [ 1, 2, 3, 4 ];

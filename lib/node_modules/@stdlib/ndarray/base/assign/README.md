@@ -38,7 +38,7 @@ var assign = require( '@stdlib/ndarray/base/assign' );
 
 #### assign( arrays )
 
-Assign elements in an input ndarray to elements in an output ndarray.
+Assigns elements in an input ndarray to elements in an output ndarray.
 
 <!-- eslint-disable max-len -->
 

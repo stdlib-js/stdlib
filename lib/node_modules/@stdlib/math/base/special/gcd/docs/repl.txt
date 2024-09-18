@@ -10,10 +10,10 @@
     Parameters
     ----------
     a: integer
-        First integer.
+        First number.
 
     b: integer
-        Second integer.
+        Second number.
 
     Returns
     -------

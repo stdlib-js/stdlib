@@ -111,7 +111,7 @@ y = mgf( 2.0, 1.0, -1.0 );
 
 #### mgf.factory( alpha, beta )
 
-Return a function for evaluating the [MGF][mgf] of a [gamma][gamma-distribution] distribution with parameters `alpha` (shape parameter) and `beta` (rate parameter).
+Returns a function for evaluating the [MGF][mgf] of a [gamma][gamma-distribution] distribution with parameters `alpha` (shape parameter) and `beta` (rate parameter).
 
 ```javascript
 var mymgf = mgf.factory( 3.0, 1.5 );

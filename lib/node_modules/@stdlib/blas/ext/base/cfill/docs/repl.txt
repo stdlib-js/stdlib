@@ -43,13 +43,13 @@
     -5.0
 
     // Using `N` and stride parameters:
-    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, -5.0 );
+    > x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, -5.0 );
     > {{alias}}( 2, alpha, x, 2 );
-    > var z = x.get( 0 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    > z = x.get( 0 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     5.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     -5.0
     > z = x.get( 1 );
     > re = {{alias:@stdlib/complex/float32/real}}( z )
@@ -60,12 +60,12 @@
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > var x1 = new {{alias:@stdlib/array/complex64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, -5.0 );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, -5.0 );
     > {{alias}}( 2, alpha, x1, 1 );
-    > var z = x0.get( 0 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    > z = x0.get( 0 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     2.0
     > z = x0.get( 1 );
     > re = {{alias:@stdlib/complex/float32/real}}( z )
@@ -117,13 +117,13 @@
     2.0
 
     // Using an index offset:
-    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, -5.0 );
+    > x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, -5.0 );
     > {{alias}}.ndarray( 2, alpha, x, 2, 1 );
-    > var z = x.get( 0 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    > z = x.get( 0 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
     1.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
     2.0
     > z = x.get( 1 );
     > re = {{alias:@stdlib/complex/float32/real}}( z )

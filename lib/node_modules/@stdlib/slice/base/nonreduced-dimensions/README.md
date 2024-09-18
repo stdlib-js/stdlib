@@ -46,7 +46,7 @@ var nonreducedDimensions = require( '@stdlib/slice/base/nonreduced-dimensions' )
 
 #### nonreducedDimensions( slice )
 
-Return a list of non-reduced dimensions in an un-normalized [`MultiSlice`][@stdlib/slice/multi] object.
+Returns a list of non-reduced dimensions in an un-normalized [`MultiSlice`][@stdlib/slice/multi] object.
 
 ```javascript
 var MultiSlice = require( '@stdlib/slice/multi' );

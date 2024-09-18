@@ -32,7 +32,7 @@ var isSameArrayLikeObject = require( '@stdlib/assert/is-same-array-like-object' 
 
 #### isSameArrayLikeObject( v1, v2 )
 
-Test if two arguments are both [array-like objects][@stdlib/assert/is-array-like-object] and have the [same values][@stdlib/assert/is-same-value].
+Tests if two arguments are both [array-like objects][@stdlib/assert/is-array-like-object] and have the [same values][@stdlib/assert/is-same-value].
 
 ```javascript
 var x = [ 1.0, 2.0 ];

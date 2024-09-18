@@ -65,7 +65,7 @@ doUntil( beep, predicate );
 
 Both the `predicate` function and the `function` to invoke are provided a single argument:
 
--   `i`: iteration number (starting from zero)
+-   **i**: iteration number (starting from zero).
 
 To set the function execution context for the invoked function, provide a `thisArg`.
 

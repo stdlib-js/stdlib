@@ -44,7 +44,7 @@ function onPaths( error, paths ) {
         throw error;
     }
     console.log( paths );
-    // => '...'
+    // => [...]
 }
 ```
 
@@ -74,7 +74,7 @@ function onPaths( error, paths ) {
         throw error;
     }
     console.log( paths );
-    // => '...'
+    // => [...]
 }
 ```
 
@@ -92,7 +92,7 @@ function onPaths( error, paths ) {
         throw error;
     }
     console.log( paths );
-    // => '...'
+    // => [...]
 }
 ```
 
@@ -102,7 +102,7 @@ Synchronously resolves paths from a set of paths by walking parent directories.
 
 ```javascript
 var paths = resolveParentPaths.sync( [ 'package.json', 'README.md' ] );
-// returns [ '...', '...' ]
+// returns [...]
 ```
 
 The function accepts the same `options` as [`resolveParentPaths()`](#resolve-parent-paths).
@@ -138,14 +138,14 @@ var opts = {
 /* Sync */
 
 var out = resolveParentPaths.sync( [ 'package.json', 'README.md' ], opts );
-// returns [ '...', '...' ]
+// returns [...]
 
 out = resolveParentPaths.sync( [ 'non_existent_basename' ], opts );
 // returns []
 
 opts.mode = 'first';
 out = resolveParentPaths.sync( [ 'non_existent_basename', 'package.json' ], opts );
-// returns [ '...' ]
+// returns [...]
 
 /* Async */
 
