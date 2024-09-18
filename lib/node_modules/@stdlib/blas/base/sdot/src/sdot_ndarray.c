@@ -22,32 +22,12 @@
 * @see <a href="http://www.netlib.org/lapack/expolore-html/df/d28/group__single__blas__level1.html">sdot</a>
 */
 #include "stdlib/blas/base/sdot.h"
-#include "stdlib/blas/base/sdot_fortran.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/strided/base/min_view_buffer_index.h"
 
-/**
-* Computes the dot product of two single-precision floating-point vectors.
-*
-* Arguments are passed by reference to a Fortran subroutine implementing `sdot`.
-*
-* @param N        number of indexed elements
-* @param X        first array
-* @param strideX  X stride length
-* @param Y        second array
-* @param strideY  Y stride length
-* @return         the dot product
-*/
-float API_SUFFIX(c_sdot)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY ) {
-	float dot;
-	sdotsub( &N, X, &strideX, Y, &strideY, &dot );
-	return dot;
-}
+static const CBLAS_INT M = 5;
 
 /**
 * Computes the dot product of two single-precision floating-point vectors using alternative indexing semantics.
-*
-* Arguments are passed by reference to a Fortran subroutine implementing `sdot`.
 *
 * @param N        number of indexed elements
 * @param X        first array
@@ -55,14 +35,50 @@ float API_SUFFIX(c_sdot)( const CBLAS_INT N, const float *X, const CBLAS_INT str
 * @param offsetX  starting index for X
 * @param Y        second array
 * @param strideY  Y stride length
-* @param strideY  starting index for Y
+* @param offsetY  starting index for Y
 * @return         the dot product
 */
-float API_SUFFIX(c_sdot_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+float API_SUFFIX(c_sdot_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, CBLAS_INT offsetX, const float *Y, const CBLAS_INT strideY, CBLAS_INT offsetY ) {
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT m;
+	CBLAS_INT i;
 	float dot;
 
-	X += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
-	Y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
-	sdotsub( &N, X, &strideX, Y, &strideY, &dot );
+	dot = 0.0f;
+	if ( N <= 0 ) {
+		return dot;
+	}
+	ix = offsetX;
+	iy = offsetY;
+	
+	// If both strides are equal to `1`, use unrolled loops...
+	if ( strideX == 1 && strideY == 1 ) {
+		m = N % M;
+
+		// If we have a remainder, do a clean-up loop...
+		if ( m > 0 ) {
+			for ( i = 0; i < m; i++ ) {
+				dot += X[ ix ] * Y[ iy ];
+				ix += strideX;
+				iy += strideY;
+			}
+		}
+		if ( N < M ) {
+			return dot;
+		}
+		for ( i = m; i < N; i += M ) {
+			dot += ( X[ ix ]*Y[ iy ] ) + ( X[ ix+1 ]*Y[ iy+1 ] ) + ( X[ ix+2 ]*Y[ iy+2 ] ) + ( X[ ix+3 ]*Y[ iy+3 ] ) + ( X[ ix+4 ]*Y[ iy+4 ] );
+			ix += M;
+			iy += M;
+		}
+		return dot;
+	}
+	for ( i = 0; i < N; i++ ) {
+		dot += X[ ix ] * Y[ iy];
+		ix += strideX;
+		iy += strideY;
+	}
 	return dot;
 }
+
