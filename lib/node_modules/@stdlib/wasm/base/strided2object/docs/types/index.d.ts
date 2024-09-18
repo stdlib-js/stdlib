@@ -109,8 +109,7 @@ type GetUint8c = ( arr: Uint8ClampedArray, idx: number ) => number | void;
 /**
 * Returns an element from a `Complex128Array`.
 *
-* @param
-arr - input array
+* @param arr - input array
 * @param idx - element index
 * @returns element value
 */
@@ -719,11 +718,11 @@ interface GetSetAccessorObject<T> extends OutputObject {
 }
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -761,11 +760,11 @@ interface GetSetAccessorObject<T> extends OutputObject {
 declare function strided2object( N: number, x: Float64Array, stride: number, offset: number ): Float64AccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -803,11 +802,11 @@ declare function strided2object( N: number, x: Float64Array, stride: number, off
 declare function strided2object( N: number, x: Float32Array, stride: number, offset: number ): Float32AccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -845,11 +844,11 @@ declare function strided2object( N: number, x: Float32Array, stride: number, off
 declare function strided2object( N: number, x: Int32Array, stride: number, offset: number ): Int32AccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -887,11 +886,11 @@ declare function strided2object( N: number, x: Int32Array, stride: number, offse
 declare function strided2object( N: number, x: Int16Array, stride: number, offset: number ): Int16AccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -929,11 +928,11 @@ declare function strided2object( N: number, x: Int16Array, stride: number, offse
 declare function strided2object( N: number, x: Int8Array, stride: number, offset: number ): Int8AccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -971,11 +970,11 @@ declare function strided2object( N: number, x: Int8Array, stride: number, offset
 declare function strided2object( N: number, x: Uint32Array, stride: number, offset: number ): Uint32AccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -1013,11 +1012,11 @@ declare function strided2object( N: number, x: Uint32Array, stride: number, offs
 declare function strided2object( N: number, x: Uint16Array, stride: number, offset: number ): Uint16AccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -1055,11 +1054,11 @@ declare function strided2object( N: number, x: Uint16Array, stride: number, offs
 declare function strided2object( N: number, x: Uint8Array, stride: number, offset: number ): Uint8AccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -1097,11 +1096,11 @@ declare function strided2object( N: number, x: Uint8Array, stride: number, offse
 declare function strided2object( N: number, x: Uint8ClampedArray, stride: number, offset: number ): Uint8cAccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -1139,11 +1138,11 @@ declare function strided2object( N: number, x: Uint8ClampedArray, stride: number
 declare function strided2object( N: number, x: Complex128Array, stride: number, offset: number ): Complex128AccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -1181,11 +1180,11 @@ declare function strided2object( N: number, x: Complex128Array, stride: number, 
 declare function strided2object( N: number, x: Complex64Array, stride: number, offset: number ): Complex64AccessorObject;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -1233,11 +1232,11 @@ declare function strided2object( N: number, x: Complex64Array, stride: number, o
 declare function strided2object<T = unknown>( N: number, x: AccessorArrayLike<T>, stride: number, offset: number ): GetSetAccessorObject<T>;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
@@ -1273,11 +1272,11 @@ declare function strided2object<T = unknown>( N: number, x: AccessorArrayLike<T>
 declare function strided2object<T = unknown>( N: number, x: Array<T>, stride: number, offset: number ): GenericAccessorObject<T>;
 
 /**
-* Converts a strided array and associated meta data to an object likely to have the same "shape".
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
 *
 * ## Notes
 *
-* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 *
 * -   The returned object has the following properties:
 *
