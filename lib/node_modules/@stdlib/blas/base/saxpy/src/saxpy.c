@@ -17,6 +17,8 @@
 */
 
 #include "stdlib/blas/base/saxpy.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Multiplies a vector `X` by a constant and adds the result to `Y`.
@@ -28,54 +30,8 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void c_saxpy( const int N, const float alpha, const float *X, const int strideX, float *Y, const int strideY ) {
-	int ix;
-	int iy;
-	int i;
-	int m;
-
-	if ( N <= 0 ) {
-		return;
-	}
-	// If `alpha` is `0`, then `y` is unchanged...
-	if ( alpha == 0.0f ) {
-		return;
-	}
-	// If both strides are equal to `1`, use unrolled loops...
-	if ( strideX == 1 && strideY == 1 ) {
-		m = N % 4;
-
-		// If we have a remainder, do a clean-up loop...
-		if ( m > 0 ) {
-			for ( i = 0; i < m; i++ ) {
-				Y[ i ] += alpha * X[ i ];
-			}
-			if ( N < 4 ) {
-				return;
-			}
-		}
-		for ( i = m; i < N; i += 4 ) {
-			Y[ i ] += alpha * X[ i ];
-			Y[ i+1 ] += alpha * X[ i+1 ];
-			Y[ i+2 ] += alpha * X[ i+2 ];
-			Y[ i+3 ] += alpha * X[ i+3 ];
-		}
-		return;
-	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
-	for ( i = 0; i < N; i++ ) {
-		Y[ iy ] += alpha * X[ ix ];
-		ix += strideX;
-		iy += strideY;
-	}
-	return;
+void API_SUFFIX(c_saxpy)( const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(c_saxpy_ndarray)( N, alpha, X, strideX, ox, Y, strideY, oy );
 }
