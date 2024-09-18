@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/strided/base/strided2object",
   "version": "0.0.0",
-  "description": "Convert a strided array and associated meta data to an object likely to have the same \"shape\".",
+  "description": "Convert a strided array and associated metadata to an object likely to have the same \"shape\".",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

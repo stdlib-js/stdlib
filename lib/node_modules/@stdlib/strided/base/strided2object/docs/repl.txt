@@ -1,7 +1,7 @@
 
 {{alias}}( N, x, stride, offset )
-    Converts a strided array and associated meta data to an object likely to
-    have the same "shape".
+    Converts a strided array and associated metadata to an object likely to have
+    the same "shape".
 
     The returned object has the following properties:
 
