@@ -20,7 +20,7 @@ limitations under the License.
 
 # strided2object
 
-> Convert a strided array and associated meta data to an object likely to have the same "shape".
+> Convert a strided array and associated metadata to an object likely to have the same "shape".
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,7 +42,7 @@ var strided2object = require( '@stdlib/wasm/base/strided2object' );
 
 #### strided2object( N, x, stride, offset )
 
-Converts a strided array and associated meta data to an object likely to have the same "shape".
+Converts a strided array and associated metadata to an object likely to have the same "shape".
 
 ```javascript
 var obj = strided2object( 4, [ 1, 2, 3, 4 ], 1, 0 );
@@ -81,7 +81,7 @@ var obj = strided2object( 4, [ 1, 2, 3, 4 ], 1, 0 );
     -   **idx**: element index.
     -   **value**: value to set.
 
--   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array meta data to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+-   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
 
 </section>
 
