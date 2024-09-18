@@ -36,4 +36,10 @@ int main( void ) {
 
 	// Print the result:
 	printf( "dot product: %f\n", d );
+
+	// Compute the dot product:
+	d = c_sdot_ndarray( N, x, strideX, 0, y, strideY, 7 );
+
+	// Print the result:
+	printf( "dot product: %f\n", d );
 }
