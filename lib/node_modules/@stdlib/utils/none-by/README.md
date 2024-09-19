@@ -70,9 +70,9 @@ var bool = noneBy( arr, isPositive );
 
 The invoked `function` is provided three arguments:
 
--   `value`: collection element
--   `index`: collection index
--   `collection`: input collection
+-   **value**: collection element.
+-   **index**: collection index.
+-   **collection**: input collection.
 
 To set the function execution context, provide a `thisArg`.
 

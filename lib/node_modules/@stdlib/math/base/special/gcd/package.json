@@ -71,5 +71,129 @@
     "gcm",
     "arithmetic",
     "integer"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "gcd",
+      "alias": "gcd",
+      "pkg_desc": "compute the greatest common divisor (gcd)",
+      "desc": "computes the greatest common divisor (gcd)",
+      "short_desc": "greatest common divisor (gcd)",
+      "parameters": [
+        {
+          "name": "a",
+          "desc": "first number",
+          "type": {
+            "javascript": "integer",
+            "jsdoc": "integer",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0.0,
+              50.0
+            ]
+          },
+          "example_values": [
+            1.0,
+            2.0,
+            4.0,
+            5.0,
+            9.0,
+            10.0,
+            15.0,
+            20.0,
+            21.0,
+            25.0,
+            28.0,
+            30.0,
+            33.0,
+            35.0,
+            39.0,
+            40.0,
+            42.0,
+            45.0,
+            48.0,
+            50.0
+          ]
+        },
+        {
+          "name": "b",
+          "desc": "second number",
+          "type": {
+            "javascript": "integer",
+            "jsdoc": "integer",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0.0,
+              50.0
+            ]
+          },
+          "example_values": [
+            1.0,
+            2.0,
+            4.0,
+            5.0,
+            9.0,
+            10.0,
+            15.0,
+            20.0,
+            21.0,
+            25.0,
+            28.0,
+            30.0,
+            33.0,
+            35.0,
+            39.0,
+            40.0,
+            42.0,
+            45.0,
+            48.0,
+            50.0
+          ]
+        }
+      ],
+      "returns": {
+        "desc": "greatest common divisor",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "binary gcd",
+        "greatest common divisor",
+        "greatest common factor",
+        "highest common factor",
+        "greatest common measure",
+        "highest common divisor",
+        "gcd",
+        "gcf",
+        "hcf",
+        "gcm"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

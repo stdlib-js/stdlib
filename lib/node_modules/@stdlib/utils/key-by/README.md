@@ -62,8 +62,8 @@ var out = keyBy( arr, toKey );
 
 The invoked `function` is provided two arguments:
 
--   `value`: collection element
--   `index`: collection index
+-   **value**: collection element.
+-   **index**: collection index.
 
 To set the function execution context, provide a `thisArg`.
 

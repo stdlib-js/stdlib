@@ -42,7 +42,7 @@ var str2enum = require( '@stdlib/blas/base/diagonal-type-str2enum' );
 
 #### str2enum( diagonal )
 
-Return the enumeration constant associated with a BLAS diagonal-type.
+Returns the enumeration constant associated with a BLAS diagonal-type.
 
 ```javascript
 var v = str2enum( 'unit' );

@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/assert/is-ragged-nested-array",
   "version": "0.0.0",
-  "description": "Test if a value is a ragged nested array",
+  "description": "Test if a value is a ragged nested array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

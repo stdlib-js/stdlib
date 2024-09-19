@@ -45,6 +45,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
@@ -57,14 +59,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/sdot.c"
+        "./src/sdot.c",
+        "./src/sdot_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
     {
       "task": "examples",
@@ -72,14 +78,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/sdot.c"
+        "./src/sdot.c",
+        "./src/sdot_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
 
     {
@@ -100,6 +110,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
@@ -122,7 +134,10 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
     {
       "task": "examples",
@@ -140,7 +155,10 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
 
     {
@@ -160,6 +178,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
@@ -172,14 +192,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/sdot.c"
+        "./src/sdot.c",
+        "./src/sdot_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
     {
       "task": "examples",
@@ -187,14 +211,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/sdot.c"
+        "./src/sdot.c",
+        "./src/sdot_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
 
     {
@@ -214,6 +242,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
@@ -235,7 +265,10 @@
         "-lblas"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
     {
       "task": "examples",
@@ -252,7 +285,10 @@
         "-lblas"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
 
     {
@@ -273,6 +309,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
@@ -295,7 +333,10 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
     {
       "task": "examples",
@@ -313,7 +354,10 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
+      ]
     },
 
     {
@@ -322,7 +366,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/sdot.c"
+        "./src/sdot.c",
+        "./src/sdot_ndarray.c"
       ],
       "include": [
         "./include"
@@ -331,6 +376,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
@@ -343,14 +390,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/sdot.c"
+        "./src/sdot.c",
+        "./src/sdot_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
     {
       "task": "examples",
@@ -358,14 +409,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/sdot.c"
+        "./src/sdot.c",
+        "./src/sdot_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
 
     {
@@ -374,14 +429,18 @@
       "blas": "",
       "wasm": true,
       "src": [
-        "./src/sdot.c"
+        "./src/sdot.c",
+        "./src/sdot_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     }
   ]
 }

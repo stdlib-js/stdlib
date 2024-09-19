@@ -42,7 +42,7 @@ var wrapIndex = require( '@stdlib/ndarray/base/wrap-index' );
 
 #### wrapIndex( idx, max )
 
-Wrap an index on the interval `[0,max]`.
+Wraps an index on the interval `[0,max]`.
 
 ```javascript
 var idx = wrapIndex( 2, 10 );

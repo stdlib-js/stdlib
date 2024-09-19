@@ -70,10 +70,10 @@ The function accepts the following arguments:
 -   **x**: input strided array.
 -   **strideX**: index increment for `x`.
 -   **view**: output [`DataView`][@stdlib/array/dataview].
--   **strideView**: index increment (in bytes) for `y`.
+-   **strideView**: index increment (in bytes) for `view`.
 -   **littleEndian**: boolean indicating whether to store values in little-endian format.
 
-The `N` and stride parameters determine which elements in `x` and `view` are accessed at runtime. For example, to index every other value in `x` and to index the first `N` elements of `y` in reverse order,
+The `N` and stride parameters determine which elements in `x` and `view` are accessed at runtime. For example, to index every other value in `x` and to index the first `N` elements of `view` in reverse order,
 
 ```javascript
 var ArrayBuffer = require( '@stdlib/array/buffer' );

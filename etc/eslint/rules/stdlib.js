@@ -4231,7 +4231,8 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'Uint8ClampedArray',
 		'Uint16Array',
 		'Uint32Array',
-		'URIError'
+		'URIError',
+		'WebAssembly'
 	]
 }];
 
