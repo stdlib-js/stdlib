@@ -18,6 +18,8 @@
 
 #include "stdlib/blas/base/sasum.h"
 #include "stdlib/blas/base/sasum_fortran.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Computes the sum of absolute values.
@@ -27,8 +29,36 @@
 * @param stride  stride length
 * @return        sum of absolute values
 */
-float c_sasum( const int N, const float *X, const int stride ) {
+float API_SUFFIX(c_sasum)( const CBLAS_INT N, const float *X, const CBLAS_INT stride ) {
+	CBLAS_INT sx;
 	float sum;
-	sasumsub( &N, X, &stride, &sum );
+
+	sx = stride;
+	if ( sx < 0 ) {
+		sx = -sx;
+	}
+	sasumsub( &N, X, &sx, &sum );
+	return sum;
+}
+
+/**
+* Computes the sum of absolute values using alternative indexing semantics.
+*
+* @param N       number of indexed elements
+* @param X       input array
+* @param stride  stride length
+* @param offset  starting index
+* @return        sum of absolute values
+*/
+float API_SUFFIX(c_sasum_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT stride, const CBLAS_INT offset ) {
+	CBLAS_INT sx;
+	float sum;
+
+	sx = stride;
+	X += stdlib_strided_min_view_buffer_index( N, stride, offset ); // adjust array pointer
+	if ( sx < 0 ) {
+		sx = -sx;
+	}
+	sasumsub( &N, X, &sx, &sum );
 	return sum;
 }
