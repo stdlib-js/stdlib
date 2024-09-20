@@ -23,6 +23,8 @@
  */
 #include "stdlib/blas/base/sdsdot.h"
 #include "stdlib/blas/base/sdsdot_fortran.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Computes the dot product of two single-precision floating-point vectors with extended accumulation.
@@ -37,8 +39,32 @@
 * @param strideY  Y stride length
 * @return         dot product
 */
-float c_sdsdot( const int N, const float scalar, const float *X, const int strideX, const float *Y, const int strideY ) {
+float API_SUFFIX(c_sdsdot)( const CBLAS_INT N, const float scalar, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY ) {
 	float dot;
+	sdsdotsub( &N, &scalar, X, &strideX, Y, &strideY, &dot );
+	return dot;
+}
+
+/**
+* Computes the dot product of two single-precision floating-point vectors with extended accumulation using alternative indexing semantics.
+*
+* Arguments are passed by reference to a Fortran subroutine implementing `sdsdot`.
+*
+* @param N        number of indexed elements
+* @param scalar   scalar constant added to the dot product
+* @param X        first array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y        second array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
+* @return         dot product
+*/
+float API_SUFFIX(c_sdsdot_ndarray)( const CBLAS_INT N, const float scalar, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+	float dot;
+
+	X += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
+	Y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
 	sdsdotsub( &N, &scalar, X, &strideX, Y, &strideY, &dot );
 	return dot;
 }
