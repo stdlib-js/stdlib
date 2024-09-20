@@ -135,7 +135,7 @@ var filledarrayBy = require( '@stdlib/array/filled-by' );
 var Float32Array = require( '@stdlib/array/float32' );
 var sapxsumors = require( '@stdlib/blas/ext/base/sapxsumors' );
 
-var x = filledarrayBy( 10, 'float32', discreteUniform( 0, 100 ));
+var x = filledarrayBy( 10, 'float32', discreteUniform( 0, 100 ) );
 console.log( x );
 
 var v = sapxsumors( x.length, 5.0, x, 1 );

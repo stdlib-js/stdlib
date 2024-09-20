@@ -152,8 +152,6 @@ var Float32Array = require( '@stdlib/array/float32' );
 var Float64Array = require( '@stdlib/array/float64' );
 var dsnannsumors = require( '@stdlib/blas/ext/base/dsnannsumors' );
 
-var x;
-
 function rand() {
     if ( bernoulli( 0.5 ) < 0.2 ) {
         return NaN;
@@ -161,7 +159,7 @@ function rand() {
     return discreteUniform( 0, 100 );
 }
 
-x = filledarrayBy( 10, 'float32', rand );
+var x = filledarrayBy( 10, 'float32', rand );
 console.log( x );
 
 var out = new Float64Array( 2 );
