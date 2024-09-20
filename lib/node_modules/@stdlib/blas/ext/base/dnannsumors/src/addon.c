@@ -22,7 +22,6 @@
 #include "stdlib/napi/argv_int64.h"
 #include "stdlib/napi/argv_strided_float64array.h"
 #include <node_api.h>
-#include <assert.h>
 
 /**
 * Receives JavaScript callback invocation data.

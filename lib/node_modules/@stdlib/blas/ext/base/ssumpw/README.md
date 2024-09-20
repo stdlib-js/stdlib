@@ -136,7 +136,7 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var ssumpw = require( '@stdlib/blas/ext/base/ssumpw' );
 
-var x = filledarrayBy(10, 'float32', discreteUniform(0, 100));
+var x = filledarrayBy( 10, 'float32', discreteUniform( 0, 100 ) );
 console.log( x );
 
 var v = ssumpw( x.length, x, 1 );
