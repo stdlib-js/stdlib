@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/assert/is-ndarray-like-with-data-type",
   "version": "0.0.0",
-  "description": "Test if a value is an ndarray-like having a specified data type.",
+  "description": "Test if a value is an ndarray-like object having a specified data type.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
