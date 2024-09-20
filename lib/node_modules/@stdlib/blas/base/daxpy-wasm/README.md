@@ -147,7 +147,7 @@ var mod = new daxpy.Module( mem );
 mod.initializeSync();
 ```
 
-#### mod.main( N, alpha, xptr, strideX, yptr, strideY )
+#### daxpy.Module.prototype.main( N, α, xp, sx, yp, sy )
 
 Multiplies a vector `x` by a constant and adds the result to `y`.
 
@@ -201,13 +201,13 @@ console.log( view );
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **alpha**: scalar constant.
--   **xptr**: input [`Float64Array`][@stdlib/array/float64] pointer (i.e., byte offset).
--   **strideX**: index increment for `x`.
--   **yptr**: input [`Float64Array`][@stdlib/array/float64] pointer (i.e., byte offset).
--   **strideY**: index increment for `y`.
+-   **α**: scalar constant.
+-   **xp**: input [`Float64Array`][@stdlib/array/float64] pointer (i.e., byte offset).
+-   **sx**: index increment for `x`.
+-   **yp**: input [`Float64Array`][@stdlib/array/float64] pointer (i.e., byte offset).
+-   **sy**: index increment for `y`.
 
-#### mod.ndarray( N, alpha, xptr, strideX, offsetX, yptr, strideY, offsetY )
+#### daxpy.Module.prototype.ndarray( N, α, xp, sx, ox, yp, sy, oy )
 
 Multiplies a vector `x` by a constant and adds the result to `y` using alternative indexing semantics.
 
@@ -260,8 +260,8 @@ console.log( view );
 
 The function has the following additional parameters:
 
--   **offsetX**: starting index for `x`.
--   **offsetY**: starting index for `y`.
+-   **ox**: starting index for `x`.
+-   **oy**: starting index for `y`.
 
 </section>
 
