@@ -22,6 +22,8 @@
 #ifndef SDOT_CBLAS_H
 #define SDOT_CBLAS_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Computes the dot product of two single-precision floating-point vectors.
 */
-float cblas_sdot( const int N, const float *X, const int strideX, const float *Y, const int strideY );
+float API_SUFFIX(cblas_sdot)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }

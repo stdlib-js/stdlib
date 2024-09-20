@@ -51,7 +51,7 @@ type Predicate = ( i: number ) => boolean;
 *
 * until( predicate, beep );
 */
-declare function until<T extends Function>( fcn: T, predicate: Predicate, thisArg?: ThisParameterType<T> ): void;
+declare function until<T extends Function>( predicate: Predicate, fcn: T, thisArg?: ThisParameterType<T> ): void;
 
 
 // EXPORTS //

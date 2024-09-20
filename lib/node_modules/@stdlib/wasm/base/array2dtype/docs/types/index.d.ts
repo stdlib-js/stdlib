@@ -25,7 +25,7 @@ import { RealOrComplexTypedArray, Complex128Array, Complex64Array, BooleanArray,
 /**
 * Returns the WebAssembly data type for a provided array.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -38,12 +38,12 @@ import { RealOrComplexTypedArray, Complex128Array, Complex64Array, BooleanArray,
 * var dt = array2dtype( [ 1, 2, 3 ] );
 * // returns 'float64'
 */
-declare function array2dtype( value: Float64Array | Array<any> ): 'float64';
+declare function array2dtype( array: Float64Array | Array<any> ): 'float64';
 
 /**
 * Returns the WebAssembly data type for a provided array.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -52,12 +52,12 @@ declare function array2dtype( value: Float64Array | Array<any> ): 'float64';
 * var dt = array2dtype( new Float32Array( [ 1, 2, 3 ] ) );
 * // returns 'float32'
 */
-declare function array2dtype( value: Float32Array ): 'float32';
+declare function array2dtype( array: Float32Array ): 'float32';
 
 /**
 * Returns the WebAssembly data type for a provided array.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -66,12 +66,12 @@ declare function array2dtype( value: Float32Array ): 'float32';
 * var dt = array2dtype( new Complex128Array( [ 1, 2, 3, 4 ] ) );
 * // returns 'complex128'
 */
-declare function array2dtype( value: Complex128Array ): 'complex128';
+declare function array2dtype( array: Complex128Array ): 'complex128';
 
 /**
 * Returns the WebAssembly data type for a provided array.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -80,12 +80,12 @@ declare function array2dtype( value: Complex128Array ): 'complex128';
 * var dt = array2dtype( new Complex64Array( [ 1, 2, 3, 4 ] ) );
 * // returns 'complex64'
 */
-declare function array2dtype( value: Complex64Array ): 'complex64';
+declare function array2dtype( array: Complex64Array ): 'complex64';
 
 /**
 * Returns the WebAssembly data type for a provided array.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -94,12 +94,12 @@ declare function array2dtype( value: Complex64Array ): 'complex64';
 * var dt = array2dtype( new Int32Array( [ 1, 2, 3 ] ) );
 * // returns 'int32'
 */
-declare function array2dtype( value: Int32Array ): 'int32';
+declare function array2dtype( array: Int32Array ): 'int32';
 
 /**
 * Returns the WebAssembly data type for a provided array.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -108,12 +108,12 @@ declare function array2dtype( value: Int32Array ): 'int32';
 * var dt = array2dtype( new Int16Array( [ 1, 2, 3 ] ) );
 * // returns 'int16'
 */
-declare function array2dtype( value: Int16Array ): 'int16';
+declare function array2dtype( array: Int16Array ): 'int16';
 
 /**
 * Returns the WebAssembly data type for a provided array.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -122,12 +122,12 @@ declare function array2dtype( value: Int16Array ): 'int16';
 * var dt = array2dtype( new Int8Array( [ 1, 2, 3 ] ) );
 * // returns 'int8'
 */
-declare function array2dtype( value: Int8Array ): 'int8';
+declare function array2dtype( array: Int8Array ): 'int8';
 
 /**
 * Returns the WebAssembly data type for a provided array.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -136,12 +136,12 @@ declare function array2dtype( value: Int8Array ): 'int8';
 * var dt = array2dtype( new Uint32Array( [ 1, 2, 3 ] ) );
 * // returns 'uint32'
 */
-declare function array2dtype( value: Uint32Array ): 'uint32';
+declare function array2dtype( array: Uint32Array ): 'uint32';
 
 /**
 * Returns the WebAssembly data type for a provided array.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -150,12 +150,12 @@ declare function array2dtype( value: Uint32Array ): 'uint32';
 * var dt = array2dtype( new Uint16Array( [ 1, 2, 3 ] ) );
 * // returns 'uint16'
 */
-declare function array2dtype( value: Uint16Array ): 'uint16';
+declare function array2dtype( array: Uint16Array ): 'uint16';
 
 /**
 * Returns the WebAssembly data type for a provided array.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -176,7 +176,7 @@ declare function array2dtype( value: Uint16Array ): 'uint16';
 * var dt = array2dtype( new BooleanArray( [ true, false, true, false ] ) );
 * // returns 'uint8'
 */
-declare function array2dtype( value: Uint8Array | Uint8ClampedArray | BooleanArray ): 'uint8';
+declare function array2dtype( array: Uint8Array | Uint8ClampedArray | BooleanArray ): 'uint8';
 
 /**
 * Returns the WebAssembly data type for a provided array.
@@ -185,7 +185,7 @@ declare function array2dtype( value: Uint8Array | Uint8ClampedArray | BooleanArr
 *
 * -   If provided an argument having an unknown or unsupported type, the function assumes that the values can be stored as double-precision floating-point numbers and returns `'float64'`.
 *
-* @param value - input value
+* @param array - input value
 * @returns data type
 *
 * @example
@@ -195,7 +195,7 @@ declare function array2dtype( value: Uint8Array | Uint8ClampedArray | BooleanArr
 * var dt = array2dtype( 'beep' );
 * // returns 'float64'
 */
-declare function array2dtype( value: Array<any> | RealOrComplexTypedArray | AccessorArrayLike<any> ): DataType;
+declare function array2dtype( array: Array<any> | RealOrComplexTypedArray | AccessorArrayLike<any> ): DataType;
 
 
 // EXPORTS //
