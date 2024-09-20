@@ -3781,7 +3781,7 @@ declare module '@stdlib/types/slice' {
 * import * as wasm from `@stdlib/types/wasm`;
 */
 declare module '@stdlib/types/wasm' {
-	import { Collection, AccessorArrayLike } from '@stdlib/types/array';
+	import { Collection, AccessorArrayLike } from '@stdlib/types/array'; // eslint-disable-line no-duplicate-imports
 
 	/**
 	* WebAssembly memory interface.
