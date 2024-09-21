@@ -4,8 +4,8 @@
 
     When invoked, the predicate function is provided two arguments:
 
-    - `value`: object value
-    - `key`: object key
+    - value: object value.
+    - key: object key.
 
     If a predicate function returns a truthy value, a value is placed in the
     first group; otherwise, a value is placed in the second group.

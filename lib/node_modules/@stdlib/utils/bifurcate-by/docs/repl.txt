@@ -4,8 +4,8 @@
 
     When invoked, the predicate function is provided two arguments:
 
-    - `value`: collection value
-    - `index`: collection index
+    - value: collection value.
+    - index: collection index.
 
     If a predicate function returns a truthy value, a collection value is
     placed in the first group; otherwise, a collection value is placed in the

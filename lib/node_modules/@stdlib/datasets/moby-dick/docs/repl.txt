@@ -4,9 +4,9 @@
 
     Each array element has the following fields:
 
-    - chapter: book chapter (number or identifier)
-    - title: chapter title (if available; otherwise, empty)
-    - text: chapter text
+    - chapter: book chapter (number or identifier).
+    - title: chapter title (if available; otherwise, empty).
+    - text: chapter text.
 
     Returns
     -------

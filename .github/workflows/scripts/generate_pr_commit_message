@@ -56,7 +56,7 @@ on_error() {
 	exit "$1"
 }
 
-# Function to resolve GitHub handle to name and email using .mailmap
+# Resolves GitHub handle to name and email using .mailmap.
 #
 # $1 - GitHub handle
 resolve_user() {
@@ -76,7 +76,7 @@ resolve_user() {
 	fi
 }
 
-# Function to make authenticated GitHub API requests
+# Makes authenticated GitHub API requests.
 #
 # $1 - HTTP method (GET or POST)
 # $2 - API endpoint
@@ -114,12 +114,21 @@ main() {
 	# Extract co-authors from commits:
 	co_authors=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -i "Co-authored-by:" | awk -F': ' '{print $2}' | sort | uniq | paste -sd '\n' -)
 
-	# Extract linked issues from PR body (e.g., #123)
+	# Extract 'Signed-off-by' lines from commits:
+	signed_off_bys=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -Eio 'Signed-off-by:.*' | sort -u)
+
+	# Extract linked issues from PR body (e.g., #123):
 	issue_numbers=$(echo "$pr_body" | grep -oE '#[0-9]+' | grep -oE '[0-9]+' | sort | uniq)
 	closes_issues=""
 	ref_issues=""
+
+	# GitHub-supported closing keywords:
+	closing_keywords=("close" "closes" "closed" "fix" "fixes" "fixed" "resolve" "resolves" "resolved")
+	# Create a regex pattern from the keywords:
+	keywords_pattern=$(IFS='|'; echo "${closing_keywords[*]}")
+
 	for issue in $issue_numbers; do
-		if echo "$pr_body" | grep -qi "closes.*#$issue"; then
+		if echo "$pr_body" | grep -Eiq "(${keywords_pattern})([[:space:]]+|:)[[:space:]]*#${issue}\b"; then
 			closes_issues+="Closes: https://github.com/$REPO_OWNER/$REPO_NAME/issues/$issue\n"
 		else
 			ref_issues+="Ref: https://github.com/$REPO_OWNER/$REPO_NAME/issues/$issue\n"
@@ -146,10 +155,10 @@ main() {
 		commit_body+="\nReviewed-by: $resolved_reviewer"
 	done
 
-	# Add Signed-off-by line:
-	pr_author=$(echo "$pr_details" | jq -r '.user.login')
-	signed_off_by=$(resolve_user "$pr_author")
-	commit_body+="\nSigned-off-by: $signed_off_by"
+	# Include Signed-off-by lines if present in the commits:
+	if [ -n "$signed_off_bys" ]; then
+		commit_body+="\n$signed_off_bys"
+	fi
 
 	# Combine subject and body:
 	commit_message="$commit_subject\n\n$commit_body"
