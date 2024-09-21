@@ -36,6 +36,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-complex64",
@@ -56,6 +57,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/complex/float32/ctor",
         "@stdlib/strided/base/stride2offset"
       ]
@@ -71,6 +73,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/complex/float32/ctor",
         "@stdlib/strided/base/stride2offset"
       ]
