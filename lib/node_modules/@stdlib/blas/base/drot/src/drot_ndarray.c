@@ -18,22 +18,37 @@
 
 #include "stdlib/blas/base/drot.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/strided/base/stride2offset.h"
 
 /**
-* Applies a plane rotation.
+* Applies a plane rotation using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        input array
 * @param strideX  X stride length
+* @param offsetX  starting index for X
 * @param Y        output array
 * @param strideY  Y stride length
+* @param offsetY  starting index for Y
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void API_SUFFIX(c_drot)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, const double c, const double s ) {
-	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
-	API_SUFFIX(c_drot_ndarray)( N, X, strideX, ox, Y, strideY, oy, c, s );
+void API_SUFFIX(c_drot_ndarray)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const double c, const double s ) {
+	double tmp;
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT i;
+
+	if ( N <= 0 ) {
+		return;
+	}
+	ix = offsetX;
+	iy = offsetY;
+	for ( i = 0; i < N; i++ ) {
+		tmp = ( c * X[ ix ] ) + ( s * Y[ iy ] );
+		Y[ iy ] = ( c * Y[ iy ] ) - ( s * X[ ix ] );
+		X[ ix ] = tmp;
+		ix += strideX;
+		iy += strideY;
+	}
 	return;
 }
