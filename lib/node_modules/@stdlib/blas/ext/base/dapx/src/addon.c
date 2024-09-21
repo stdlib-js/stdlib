@@ -31,7 +31,7 @@
 * @param info   callback data
 * @return       Node-API value
 */
-static napi_value node_dapx( napi_env env, napi_callback_info info ) {
+static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_DOUBLE( env, alpha, argv, 1 );

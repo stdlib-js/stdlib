@@ -38,7 +38,7 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
-        "@stdlib/napi/argv-float",
+        "@stdlib/napi/argv-double",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
         "@stdlib/math/base/special/abs"
