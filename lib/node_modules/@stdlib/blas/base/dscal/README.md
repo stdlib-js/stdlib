@@ -77,7 +77,7 @@ dscal( 3, 5.0, x1, 2 );
 // x0 => <Float64Array>[ 1.0, -10.0, 3.0, -20.0, 5.0, -30.0 ]
 ```
 
-If either `N` or `stride` is less than or equal to `0`, the function returns `x` unchanged.
+If `N` is less than or equal to `0`, the function returns `x` unchanged.
 
 #### dscal.ndarray( N, alpha, x, stride, offset )
 
@@ -193,6 +193,28 @@ The function accepts the following arguments:
 void c_dscal( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT stride );
 ```
 
+#### c_dscal_ndarray( N, alpha, \*X, stride, offset )
+
+Multiplies each element of a double-precision floating-point vector by a constant using alternative indexing semantics.
+
+```c
+double x[] = { 1.0, 2.0, 3.0, 4.0 };
+
+c_dscal_ndarray( 4, 5.0, x, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **alpha**: `[in] double` scalar constant.
+-   **X**: `[inout] double*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+-   **offset**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+void c_dscal_ndarray( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT stride, const CBLAS_INT offset );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -223,10 +245,18 @@ int main( void ) {
     const int N = 8;
 
     // Specify a stride:
-    const int strideX = 1;
+    const int stride = 1;
 
     // Scale the vector:
-    c_dscal( N, 5.0, x, strideX );
+    c_dscal( N, 5.0, x, stride );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "x[ %i ] = %lf\n", i, x[ i ] );
+    }
+
+    // Scale the vector:
+    c_dscal_ndarray( N, 5.0, x, -stride, N-1 );
 
     // Print the result:
     for ( int i = 0; i < 8; i++ ) {
