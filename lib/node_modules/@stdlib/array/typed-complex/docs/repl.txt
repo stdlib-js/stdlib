@@ -4,8 +4,8 @@
 
     The function supports the following data types:
 
-    - complex128: double-precision complex floating-point numbers
-    - complex64: single-precision complex floating-point numbers
+    - complex128: double-precision complex floating-point numbers.
+    - complex64: single-precision complex floating-point numbers.
 
     The default typed array data type is `complex128`.
 

@@ -5,9 +5,9 @@
 
     When invoked, the input function is provided three arguments:
 
-    - `value`: collection value
-    - `index`: collection index
-    - `collection`: the input collection
+    - value: collection value.
+    - index: collection index.
+    - collection: the input collection.
 
     Parameters
     ----------
