@@ -17,25 +17,11 @@
 */
 
 #include "stdlib/blas/base/sasum.h"
-#include "stdlib/blas/base/sasum_cblas.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/strided/base/min_view_buffer_index.h"
+#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/math/base/special/absf.h"
 
-/**
-* Computes the sum of absolute values.
-*
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  stride length
-* @return        sum of absolute values
-*/
-float API_SUFFIX(c_sasum)( const CBLAS_INT N, const float *X, const CBLAS_INT stride ) {
-	CBLAS_INT sx = stride;
-	if ( sx < 0 ) {
-		sx = -sx;
-	}
-	return API_SUFFIX(cblas_sasum)( N, X, sx );
-}
+static const CBLAS_INT M = 6;
 
 /**
 * Computes the sum of absolute values using alternative indexing semantics.
@@ -47,10 +33,40 @@ float API_SUFFIX(c_sasum)( const CBLAS_INT N, const float *X, const CBLAS_INT st
 * @return        sum of absolute values
 */
 float API_SUFFIX(c_sasum_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT stride, const CBLAS_INT offset ) {
-	CBLAS_INT sx = stride;
-	if ( sx < 0 ) {
-		sx = -sx;
+	CBLAS_INT ix;
+	CBLAS_INT i;
+	CBLAS_INT m;
+	float sum;
+
+	sum = 0.0f;
+	if ( N <= 0 ) {
+		return sum;
 	}
-	X += stdlib_strided_min_view_buffer_index( N, stride, offset ); // adjust array pointer
-	return API_SUFFIX(cblas_sasum)( N, X, sx );
+	ix = offset;
+
+	// If the stride is equal to `1`, use unrolled loops...
+	if ( stride == 1 ) {
+		m = N % M;
+
+		// If we have a remainder, run a clean-up loop...
+		if ( m > 0 ) {
+			for ( i = 0; i < m; i++ ) {
+				sum += stdlib_base_absf( X[ ix ] );
+				ix += stride;
+			}
+		}
+		if ( N < 6 ) {
+			return sum;
+		}
+		for ( i = m; i < N; i += M ) {
+			sum += stdlib_base_absf( X[ ix ] ) + stdlib_base_absf( X[ ix+1 ] ) + stdlib_base_absf( X[ ix+2 ] ) + stdlib_base_absf( X[ ix+3 ] ) + stdlib_base_absf( X[ ix+4 ] ) + stdlib_base_absf( X[ ix+5 ] );
+			ix += M;
+		}
+		return sum;
+	}
+	for ( i = 0; i < N; i ++ ) {
+		sum += stdlib_base_absf( X[ ix ] );
+		ix += stride;
+	}
+	return sum;
 }
