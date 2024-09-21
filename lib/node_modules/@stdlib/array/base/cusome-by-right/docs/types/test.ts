@@ -169,7 +169,7 @@ const isPositive = ( v: number ): boolean => {
 	cusomeByRight.assign( x, 1, y, 1, [], isPositive ); // $ExpectError
 }
 
-// The compiler throws an error if the `assign` method is provided a fifth argument which is not a function...
+// The compiler throws an error if the `assign` method is provided a sixth argument which is not a function...
 {
 	const x = [ 1, 1, 0, 0, 0 ];
 	const y = [ false, null, false, null, false, null, false, null, false, null ];
