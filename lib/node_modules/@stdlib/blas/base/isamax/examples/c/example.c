@@ -34,4 +34,10 @@ int main( void ) {
 
 	// Print the result:
 	printf( "index value: %d\n", idx );
+
+	// Compute the index of the maximum absolute value:
+	idx = c_isamax_ndarray( N, x, -strideX, N-1 );
+
+	// Print the result:
+	printf( "index value: %d\n", idx );
 }
