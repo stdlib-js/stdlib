@@ -30,8 +30,8 @@
 * @param info   callback data
 * @return       Node-API value
 */
-napi_value addon( napi_env env, napi_callback_info info ) {
-    STDLIB_NAPI_ARGV( env, info, argv, argc, 5 )
+static napi_value addon( napi_env env, napi_callback_info info ) {
+    STDLIB_NAPI_ARGV( env, info, argv, argc, 5 );
     STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
     STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
     STDLIB_NAPI_ARGV_INT64( env, strideOut, argv, 4 );
