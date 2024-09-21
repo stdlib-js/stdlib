@@ -230,6 +230,33 @@ The function accepts the following arguments:
 void c_drot( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, const double c, const double s );
 ```
 
+#### c_drot_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY, c, s )
+
+Applies a plane rotation using alternative indexing semantics.
+
+```c
+double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0 };
+double y[] = { 6.0, 7.0, 8.0, 9.0, 10.0 };
+
+c_drot_ndarray( 5, x, 1, 0, y, 1, 0, 0.8, 0.6 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[inout] double*` first input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[inout] double*` second input array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+-   **c**: `[in] double` cosine of the angle of rotation.
+-   **s**: `[in] double` sine of the angle of rotation.
+
+```c
+void c_drot_ndarray( const CBLAS_INT N, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const double c, const double s );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -258,11 +285,11 @@ int main( void ) {
     double y[] = { 6.0, 7.0, 8.0, 9.0, 10.0 };
 
     // Specify the number of elements:
-    const int N = 5;
+    const int N = 3;
 
     // Specify stride lengths:
-    const int strideX = 1;
-    const int strideY = 1;
+    const int strideX = 2;
+    const int strideY = -2;
 
     // Specify angle of rotation:
     const double c = 0.8;
@@ -270,6 +297,14 @@ int main( void ) {
 
     // Apply plane rotation:
     c_drot( N, x, strideX, y, strideY, c, s );
+
+    // Print the result:
+    for ( int i = 0; i < 5; i++ ) {
+        printf( "x[ %i ] = %lf, y[ %i ] = %lf\n", i, x[ i ], i, y[ i ] );
+    }
+
+    // Apply plane rotation:
+    c_drot_ndarray( N, x, strideX, 0, y, strideY, 4, c, s );
 
     // Print the result:
     for ( int i = 0; i < 5; i++ ) {

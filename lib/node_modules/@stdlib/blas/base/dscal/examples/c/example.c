@@ -36,4 +36,12 @@ int main( void ) {
 	for ( int i = 0; i < 8; i++ ) {
 		printf( "x[ %i ] = %lf\n", i, x[ i ] );
 	}
+
+	// Scale the vector:
+	c_dscal_ndarray( N, 5.0, x, -strideX, N-1 );
+
+	// Print the result:
+	for ( int i = 0; i < 8; i++ ) {
+		printf( "x[ %i ] = %lf\n", i, x[ i ] );
+	}
 }
