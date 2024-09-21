@@ -349,8 +349,6 @@ var str = arr.toString();
 
 <!-- /.usage -->
 
-* * *
-
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
