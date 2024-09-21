@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-In contrast to the [`Float64Array`][@stdlib/array/float64] typed array constructor which stores values according to the platform byte order, the `Float64ArrayFE` constructor allows enforcing a specific byte order. Such enforcement can be particularly advantageous when working with memory buffers which do not necessarily follow host byte order, such as [WebAssembly memory][@stdlib/wasm/memory].
+In contrast to the [`Float64Array`][@stdlib/array/float64] typed array constructor which stores values according to the host platform byte order, the `Float64ArrayFE` constructor allows enforcing a specific byte order. Such enforcement can be particularly advantageous when working with memory buffers which do not necessarily follow host platform byte order, such as [WebAssembly memory][@stdlib/wasm/memory].
 
 </section>
 
