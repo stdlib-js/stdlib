@@ -1,13 +1,14 @@
+
 {{alias}}( x, n, predicate[, thisArg] )
-    Cumulatively test whether at least `n` elements in a provided array pass a
+    Cumulatively tests whether at least `n` elements in a provided array pass a
     test implemented by a predicate function, while iterating from
     right-to-left.
 
     The predicate function is provided three arguments:
 
-    - `value`: current array element.
-    - `index`: current array element index.
-    - `arr`: the input array.
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
 
     Parameters
     ----------
@@ -43,9 +44,9 @@
 
     The predicate function is provided three arguments:
 
-    - `value`: current array element.
-    - `index`: current array element index.
-    - `arr`: the input array.
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
 
     Parameters
     ----------
