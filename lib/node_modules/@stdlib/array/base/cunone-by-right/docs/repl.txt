@@ -1,8 +1,8 @@
 
 {{alias}}( x, predicate[, thisArg] )
-    Cumulatively tests whether no array element in a provided array passes a
-    test implemented by a predicate function, while iterating from
-    right-to-left.
+    Cumulatively tests whether every array element in a provided array fails a
+    test implemented by a predicate function, while iterating from right-to-
+    left.
 
     The predicate function is provided three arguments:
 
@@ -35,9 +35,9 @@
 
 
 {{alias}}.assign( x, out, stride, offset, predicate[, thisArg] )
-    Cumulatively tests whether no array element in a provided array passes a
-    test implemented by a predicate function, while iterating from
-    right-to-left, and assign the results to the provided output array.
+    Cumulatively tests whether every array element in a provided array fails a
+    test implemented by a predicate function, while iterating from right-to-
+    left, and assigns the results to the provided output array.
 
     The predicate function is provided three arguments:
 
