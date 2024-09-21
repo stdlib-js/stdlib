@@ -20,7 +20,7 @@
 #define STDLIB_BLAS_EXT_BASE_CFILL_H
 
 #include "stdlib/complex/float32/ctor.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -32,7 +32,12 @@ extern "C" {
 /**
 * Fills a single-precision complex floating-point strided array with a specified scalar constant.
 */
-void c_cfill( const int64_t N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const int64_t stride );
+void API_SUFFIX(c_cfill)( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX );
+
+/**
+* Fills a single-precision complex floating-point strided array with a specified scalar constant using alternative indexing semantics.
+*/
+void API_SUFFIX(c_cfill_ndarray)( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }
