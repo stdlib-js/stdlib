@@ -38,9 +38,9 @@
 
 
 {{alias}}.assign( x, n, out, stride, offset, predicate[, thisArg] )
-    Cumulatively test whether at least `n` elements in a provided array pass a
-    test implemented by a predicate function, while iterating from right-to-left
-    and assign the results to the provided output array.
+    Cumulatively tests whether at least `n` elements in a provided array pass a
+    test implemented by a predicate function, while iterating from
+    right-to-left, and assigns the results to the provided output array.
 
     The predicate function is provided three arguments:
 
