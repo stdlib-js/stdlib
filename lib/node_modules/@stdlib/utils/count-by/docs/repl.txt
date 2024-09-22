@@ -4,8 +4,8 @@
 
     When invoked, the indicator function is provided two arguments:
 
-    - value: collection value
-    - index: collection index
+    - value: collection value.
+    - index: collection index.
 
     The value returned by an indicator function should be a value which can be
     serialized as an object key.

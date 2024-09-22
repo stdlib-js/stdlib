@@ -94,7 +94,7 @@ static float rand_float( void ) {
 * @param len          array length
 * @return elapsed time in seconds
 */
-static double benchmark( int iterations, int len ) {
+static double benchmark1( int iterations, int len ) {
 	double elapsed;
 	float x[ len ];
 	float y[ len ];
@@ -110,6 +110,41 @@ static double benchmark( int iterations, int len ) {
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		c_srotm( len, x, 1, y, 1, param );
+		if ( y[ 0 ] != y[ 0 ] ) {
+			printf( "should not return NaN\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( y[ 0 ] != y[ 0 ] ) {
+		printf( "should not return NaN\n" );
+	}
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @param iterations   number of iterations
+* @param len          array length
+* @return elapsed time in seconds
+*/
+static double benchmark2( int iterations, int len ) {
+	double elapsed;
+	float x[ len ];
+	float y[ len ];
+	double t;
+	int i;
+
+	const float param[5] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+	for ( i = 0; i < len; i++ ) {
+		x[ i ] = ( rand_float()*200.0f ) - 100.0f;
+		y[ i ] = ( rand_float()*200.0f ) - 100.0f;
+	}
+
+	t = tic();
+	for ( i = 0; i < iterations; i++ ) {
+		c_srotm_ndarray( len, x, 1, 0, y, 1, 0, param );
 		if ( y[ 0 ] != y[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -144,7 +179,14 @@ int main( void ) {
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
 			printf( "# c::%s:len=%d\n", NAME, len );
-			elapsed = benchmark( iter, len );
+			elapsed = benchmark1( iter, len );
+			print_results( iter, elapsed );
+			printf( "ok %d benchmark finished\n", count );
+		}
+		for ( j = 0; j < REPEATS; j++ ) {
+			count += 1;
+			printf( "# c::%s:ndarray:len=%d\n", NAME, len );
+			elapsed = benchmark2( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}
