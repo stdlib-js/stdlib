@@ -74,7 +74,7 @@ var count = context.count;
 
 #### cusomeByRight.assign( x, n, out, stride, offset, predicate\[, thisArg ] )
 
-Cumulatively tests whether at least `n` elements in a provided array pass a test implemented by a `predicate` function, while iterating from right-to-left and assign the results to the elements in the output array.
+Cumulatively tests whether at least `n` elements in a provided array pass a test implemented by a `predicate` function, while iterating from right-to-left, and assigns the results to the elements in the output array.
 
 ```javascript
 function fcn( v ) {
