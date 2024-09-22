@@ -23,12 +23,12 @@
 */
 interface Routine {
 	/**
-	* Adds a constant to each element in a double-precision floating-point strided array.
+	* Adds a scalar constant to each element in a double-precision floating-point strided array.
 	*
 	* @param N - number of indexed elements
 	* @param alpha - constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns input array
 	*
 	* @example
@@ -39,16 +39,16 @@ interface Routine {
 	* dapx( x.length, 5.0, x, 1 );
 	* // x => <Float64Array>[ 3.0, 6.0, 8.0, 0.0, 9.0, 5.0, 4.0, 2.0 ]
 	*/
-	( N: number, alpha: number, x: Float64Array, stride: number ): Float64Array;
+	( N: number, alpha: number, x: Float64Array, strideX: number ): Float64Array;
 
 	/**
-	* Adds a constant to each element in a double-precision floating-point strided array using alternative indexing semantics.
+	* Adds a scalar constant to each element in a double-precision floating-point strided array using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param alpha - constant
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns input array
 	*
 	* @example
@@ -59,16 +59,16 @@ interface Routine {
 	* dapx.ndarray( x.length, 5.0, x, 1, 0 );
 	* // x => <Float64Array>[ 3.0, 6.0, 8.0, 0.0, 9.0, 5.0, 4.0, 2.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: Float64Array, stride: number, offset: number ): Float64Array;
+	ndarray( N: number, alpha: number, x: Float64Array, strideX: number, offsetX: number ): Float64Array;
 }
 
 /**
-* Adds a constant to each element in a double-precision floating-point strided array.
+* Adds a scalar constant to each element in a double-precision floating-point strided array.
 *
 * @param N - number of indexed elements
 * @param alpha - constant
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns input array
 *
 * @example

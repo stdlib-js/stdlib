@@ -223,6 +223,33 @@ The function accepts the following arguments:
 void c_srotm( const CBLAS_INT N, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY, const float *param );
 ```
 
+#### c_srotm_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY, param )
+
+Applies a modified Givens plane rotation using alternative indexing semantics.
+
+```c
+float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
+float y[] = { 6.0f, 7.0f, 8.0f, 9.0f, 10.0f };
+const float param[5] = { 0.0f, 0.0f, 2.0f, -3.0f, 0.0f };
+
+c_srotm_ndarray( 5, x, 1, 0, y, 1, 0, param );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[inout] float*` first input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[inout] float*` second input array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+-   **param**: `[in] float` parameters for the modified Givens transformation.
+
+```c
+void c_srotm_ndarray( const CBLAS_INT N, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const float *param );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -262,6 +289,14 @@ int main( void ) {
 
     // Apply plane rotation:
     c_srotm( N, x, strideX, y, strideY, param );
+
+    // Print the result:
+    for ( int i = 0; i < 5; i++ ) {
+        printf( "x[ %i ] = %f, y[ %i ] = %f\n", i, x[ i ], i, y[ i ] );
+    }
+
+    // Apply plane rotation:
+    c_srotm_ndarray( N, x, -strideX, N-1, y, -strideY, N-1, param );
 
     // Print the result:
     for ( int i = 0; i < 5; i++ ) {
