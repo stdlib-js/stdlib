@@ -1055,3 +1055,8 @@
 "H0","invalid argument. Must provide a WebAssembly memory instance. Value: `%s`.","TypeError"
 "H1","invalid argument. First argument must be an ndarray containing single-precision floating-point numbers. Value: `%s`.","TypeError"
 "H2","invalid argument. Second argument must be an ndarray containing single-precision floating-point numbers. Value: `%s`.","TypeError"
+"H3","invalid invocation. `this` is not a Float64ArrayFE.","TypeError"
+"H4","invalid argument. First argument must be a supported byte order. Value: `%s`.","TypeError"
+"H5","invalid argument. Second argument must a data type. Value: `%s`.","TypeError"
+"H6","invalid argument. First argument must be an ndarray-like object having a supported data type. Value: `%s`.","TypeError"
+"H7","invalid argument. Second argument must be an ndarray-like object having a supported data type. Value: `%s`.","TypeError"
