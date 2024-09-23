@@ -48,7 +48,7 @@ type BaseFunction<T> = ( N: number, x: T, strideX: number, offsetX: number, y: T
 *
 * @param x - first input array
 * @param y - second input array
-* @param dim - dimension for which to compute the dot product (default: -1)
+* @param dim - dimension along which to interchange vectors (default: -1)
 * @throws first argument must be a non-zero-dimensional ndarray
 * @throws second argument must be a non-zero-dimensional ndarray
 * @throws input arrays must have the same shape
