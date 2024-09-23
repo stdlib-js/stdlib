@@ -20,7 +20,7 @@ limitations under the License.
 
 # factory
 
-> Return a function which interchange two vectors.
+> Return a function which interchanges two vectors.
 
 <section class="intro">
 
