@@ -18,7 +18,6 @@
 
 #include "stdlib/blas/base/sasum.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/strided/base/stride2offset.h"
 #include "stdlib/math/base/special/absf.h"
 
 static const CBLAS_INT M = 6;
