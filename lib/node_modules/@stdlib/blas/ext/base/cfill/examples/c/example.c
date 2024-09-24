@@ -34,7 +34,7 @@ int main() {
 	const int strideX = 1;
 
 	// Fill the array:
-	c_cfill( N, alpha, (stdlib_complex64_t *)x, strideX );
+	stdlib_strided_cfill( N, alpha, (stdlib_complex64_t *)x, strideX );
 
 	// Print the result:
 	for ( int i = 0; i < 8; i++ ) {
