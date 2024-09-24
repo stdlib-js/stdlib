@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
 * limitations under the License.
 */
 
-#include "stdlib/blas/base/sasum.h"
+#include "stdlib/blas/base/dasum.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/math/base/special/absf.h"
+#include "stdlib/math/base/special/abs.h"
 
 static const CBLAS_INT M = 6;
 
@@ -29,15 +29,15 @@ static const CBLAS_INT M = 6;
 * @param X       input array
 * @param stride  stride length
 * @param offset  starting index
-* @return        sum of absolute values
+* @return        sum
 */
-float API_SUFFIX(c_sasum_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT stride, const CBLAS_INT offset ) {
+double API_SUFFIX(c_dasum_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT stride, const CBLAS_INT offset ) {
 	CBLAS_INT ix;
 	CBLAS_INT i;
 	CBLAS_INT m;
-	float sum;
+	double sum;
 
-	sum = 0.0f;
+	sum = 0.0;
 	if ( N <= 0 ) {
 		return sum;
 	}
@@ -50,21 +50,21 @@ float API_SUFFIX(c_sasum_ndarray)( const CBLAS_INT N, const float *X, const CBLA
 		// If we have a remainder, run a clean-up loop...
 		if ( m > 0 ) {
 			for ( i = 0; i < m; i++ ) {
-				sum += stdlib_base_absf( X[ ix ] );
+				sum += stdlib_base_abs( X[ ix ] );
 				ix += stride;
 			}
 		}
-		if ( N < 6 ) {
+		if ( N < M ) {
 			return sum;
 		}
 		for ( i = m; i < N; i += M ) {
-			sum += stdlib_base_absf( X[ ix ] ) + stdlib_base_absf( X[ ix+1 ] ) + stdlib_base_absf( X[ ix+2 ] ) + stdlib_base_absf( X[ ix+3 ] ) + stdlib_base_absf( X[ ix+4 ] ) + stdlib_base_absf( X[ ix+5 ] );
+			sum += stdlib_base_abs( X[ ix ] ) + stdlib_base_abs( X[ ix+1 ] ) + stdlib_base_abs( X[ ix+2 ] ) + stdlib_base_abs( X[ ix+3 ] ) + stdlib_base_abs( X[ ix+4 ] ) + stdlib_base_abs( X[ ix+5 ] );
 			ix += M;
 		}
 		return sum;
 	}
 	for ( i = 0; i < N; i ++ ) {
-		sum += stdlib_base_absf( X[ ix ] );
+		sum += stdlib_base_abs( X[ ix ] );
 		ix += stride;
 	}
 	return sum;
