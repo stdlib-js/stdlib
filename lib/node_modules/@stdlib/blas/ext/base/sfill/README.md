@@ -168,14 +168,14 @@ console.log( x );
 #include "stdlib/blas/ext/base/sfill.h"
 ```
 
-#### c_sfill( N, alpha, \*X, strideX )
+#### stdlib_strided_sfill( N, alpha, \*X, strideX )
 
 Fills a single-precision floating-point strided array `X` with a specified scalar constant `alpha`.
 
 ```c
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 
-c_sfill( 4, 5.0f, x, 1 );
+stdlib_strided_sfill( 4, 5.0f, x, 1 );
 
 ```
 
@@ -187,17 +187,17 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 
 ```c
-void c_sfill( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT strideX );
+void stdlib_strided_sfill( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT strideX );
 ```
 
-#### c_sfill_ndarray( N, alpha, \*X, strideX, offsetX )
+#### stdlib_strided_sfill_ndarray( N, alpha, \*X, strideX, offsetX )
 
 Fills a single-precision floating-point strided array `X` with a specified scalar constant `alpha` using alternative indexing semantics.
 
 ```c
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 
-c_sfill_ndarray( 4, 5.0f, x, 1, 0 );
+stdlib_strided_sfill_ndarray( 4, 5.0f, x, 1, 0 );
 ```
 
 The function accepts the following arguments:
@@ -209,7 +209,7 @@ The function accepts the following arguments:
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c
-void c_sfill_ndarray( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+void stdlib_strided_sfill_ndarray( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>
@@ -245,7 +245,7 @@ int main( void ) {
     const int strideX = 1;
 
     // Fill the array:
-    c_sfill( N, 5.0f, x, strideX );
+    stdlib_strided_sfill( N, 5.0f, x, strideX );
 
     // Print the result:
     for ( int i = 0; i < 8; i++ ) {
