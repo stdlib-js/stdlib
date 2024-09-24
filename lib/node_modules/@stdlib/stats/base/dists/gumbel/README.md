@@ -110,7 +110,7 @@ var y = dist.pdf( 2.0 );
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var filledarrayBy = require('@stdlib/array/filled-by');
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var mean = require( '@stdlib/stats/base/mean' );
 var variance = require( '@stdlib/stats/base/variance' );
 var stdev = require( '@stdlib/stats/base/stdev' );
