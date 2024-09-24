@@ -18,9 +18,7 @@
 
 #include "stdlib/blas/base/dnrm2.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/math/base/special/abs.h"
-#include "stdlib/math/base/special/sqrt.h"
-#include "stdlib/math/base/special/pow.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the L2-norm of a double-precision floating-point vector.
@@ -31,29 +29,6 @@
 * @return        L2-norm
 */
 double API_SUFFIX(c_dnrm2)( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
-	double scale;
-	double ssq;
-	double ax;
-	CBLAS_INT i;
-
-	if ( N <= 0 || stride <= 0 ) {
-		return 0.0;
-	}
-	if ( N == 1 ) {
-		return stdlib_base_abs( X[ 0 ] );
-	}
-	scale = 0.0;
-	ssq = 1.0;
-	for ( i = 0; i < N*stride; i += stride ) {
-		if ( X[ i ] != 0.0 ) {
-			ax = stdlib_base_abs( X[ i ] );
-			if ( scale < ax ) {
-				ssq = 1.0 + ( ssq * stdlib_base_pow( scale/ax, 2 ) );
-				scale = ax;
-			} else {
-				ssq += stdlib_base_pow( ax/scale, 2 );
-			}
-		}
-	}
-	return scale * stdlib_base_sqrt( ssq );
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, stride );
+	return API_SUFFIX(c_dnrm2_ndarray)( N, X, stride, ox );
 }
