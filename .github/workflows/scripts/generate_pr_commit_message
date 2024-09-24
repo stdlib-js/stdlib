@@ -112,7 +112,7 @@ main() {
 	pr_commits=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/commits")
 
 	# Extract co-authors from commits:
-	co_authors=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -i "Co-authored-by:" | awk -F': ' '{print $2}' | sort | uniq | paste -sd '\n' -)
+	co_authors=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -Eio "Co-authored-by:.*" | sort -u)
 
 	# Extract 'Signed-off-by' lines from commits:
 	signed_off_bys=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -Eio 'Signed-off-by:.*' | sort -u)
@@ -147,6 +147,7 @@ main() {
 	if [ -n "$ref_issues" ]; then
 		commit_body+="\n$ref_issues"
 	fi
+	commit_body+="\n"
 	if [ -n "$co_authors" ]; then
 		commit_body+="\n$co_authors"
 	fi
