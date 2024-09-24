@@ -56,8 +56,8 @@ var out = bifurcateBy( arr, predicate );
 
 A `predicate` function is provided two arguments:
 
--   `value`: collection element
--   `index`: collection index
+-   **value**: collection element.
+-   **index**: collection index.
 
 ```javascript
 function predicate( v, i ) {
@@ -72,8 +72,8 @@ var out = bifurcateBy( arr, predicate );
 
 The function accepts the following `options`:
 
--   `returns`: specifies the output format. If the option equals `'values'`, the function outputs element values. If the option equals `'indices'`, the function outputs element indices. If the option equals `'*'`, the function outputs both element indices and values. Default: `'values'`.
--   `thisArg`: execution context.
+-   **returns**: specifies the output format. If the option equals `'values'`, the function outputs element values. If the option equals `'indices'`, the function outputs element indices. If the option equals `'*'`, the function outputs both element indices and values. Default: `'values'`.
+-   **thisArg**: execution context.
 
 By default, the function returns element values. To return element indices, set the `returns` option to `'indices'`.
 

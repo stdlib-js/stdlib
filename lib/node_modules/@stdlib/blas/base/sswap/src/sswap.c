@@ -17,6 +17,8 @@
 */
 
 #include "stdlib/blas/base/sswap.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Interchanges two single-precision floating-point vectors.
@@ -27,62 +29,9 @@
 * @param Y        second input array
 * @param strideY  Y stride length
 */
-void c_sswap( const int N, float *X, const int strideX, float *Y, const int strideY ) {
-	float tmp;
-	int ix;
-	int iy;
-	int i;
-	int m;
+void API_SUFFIX(c_sswap)( const CBLAS_INT N, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY ) {
 
-	if ( N <= 0 ) {
-		return;
-	}
-	// If both strides are equal to `1`, use unrolled loops...
-	if ( strideX == 1 && strideY == 1 ) {
-		m = N % 3;
-
-		// If we have a remainder, do a clean-up loop...
-		if ( m > 0 ) {
-			for ( i = 0; i < m; i++ ) {
-				tmp = X[ i ];
-				X[ i ] = Y[ i ];
-				Y[ i ] = tmp;
-			}
-			if ( N < 3 ) {
-				return;
-			}
-		}
-		for ( i = m; i < N; i += 3 ) {
-			tmp = X[ i ];
-			X[ i ] = Y[ i ];
-			Y[ i ] = tmp;
-
-			tmp = X[ i+1 ];
-			X[ i+1 ] = Y[ i+1 ];
-			Y[ i+1 ] = tmp;
-
-			tmp = X[ i+2 ];
-			X[ i+2 ] = Y[ i+2 ];
-			Y[ i+2 ] = tmp;
-		}
-		return;
-	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
-	for ( i = 0; i < N; i++ ) {
-		tmp = X[ ix ];
-		X[ ix ] = Y[ iy ];
-		Y[ iy ] = tmp;
-		ix += strideX;
-		iy += strideY;
-	}
-	return;
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(c_sswap_ndarray)( N, X, strideX, ox, Y, strideY, oy );
 }

@@ -1,0 +1,44 @@
+
+{{alias}}( value, dtype )
+    Tests if a value is an ndarray-like object having a specified data type.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    dtype: any
+        Data type value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an ndarray-like object having a
+        specified data type.
+
+    Examples
+    --------
+    > var M = {};
+    > M.data = [ 0, 0, 0, 0 ];
+    > M.ndims = 2;
+    > M.shape = [ 2, 2 ];
+    > M.strides = [ 2, 1 ];
+    > M.offset = 0;
+    > M.order = 'row-major';
+    > M.dtype = 'generic';
+    > M.length = 4;
+    > M.flags = {};
+    > M.get = function get( i, j ) {};
+    > M.set = function set( i, j ) {};
+    > var bool = {{alias}}( M, 'generic' )
+    true
+    > bool = {{alias}}( [ 1, 2, 3, 4 ], 'generic' )
+    false
+    > bool = {{alias}}( 3.14, 'generic' )
+    false
+    > bool = {{alias}}( {}, 'generic' )
+    false
+
+    See Also
+    --------
+

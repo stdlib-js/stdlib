@@ -29,7 +29,6 @@ function isPositive( v: number ): boolean {
 	return v > 0;
 }
 
-
 // The function returns a boolean...
 {
 	everyInBy( { 'a': 1, 'b': 2, 'c': 3 }, isPositive ); // $ExpectType boolean

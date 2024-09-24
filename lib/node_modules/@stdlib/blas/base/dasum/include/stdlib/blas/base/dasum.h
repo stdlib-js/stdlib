@@ -36,6 +36,11 @@ extern "C" {
 */
 double API_SUFFIX(c_dasum)( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
 
+/**
+* Computes the sum of absolute values using alternative indexing semantics.
+*/
+double API_SUFFIX(c_dasum_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT stride, const CBLAS_INT offset );
+
 #ifdef __cplusplus
 }
 #endif

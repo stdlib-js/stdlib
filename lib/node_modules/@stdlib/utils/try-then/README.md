@@ -66,7 +66,7 @@ z = trythen( x2, y );
 
 The function `y` is provided a single argument:
 
--   `error`: the error thrown by `x`
+-   **error**: the error thrown by `x`.
 
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );

@@ -97,7 +97,7 @@ y = pdf( 8.0, 8.0, 0.0 );
 
 #### pdf.factory( mu, sigma )
 
-Partially apply `mu` and `sigma` to create a reusable `function` for evaluating the PDF.
+Partially applies `mu` and `sigma` to create a reusable `function` for evaluating the PDF.
 
 ```javascript
 var mypdf = pdf.factory( 10.0, 2.0 );

@@ -42,7 +42,7 @@ var str2enum = require( '@stdlib/blas/base/operation-side-str2enum' );
 
 #### str2enum( operation )
 
-Return the enumeration constant associated with a BLAS operation side.
+Returns the enumeration constant associated with a BLAS operation side.
 
 ```javascript
 var v = str2enum( 'left' );

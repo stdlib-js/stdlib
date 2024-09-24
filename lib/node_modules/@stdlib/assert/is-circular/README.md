@@ -32,7 +32,7 @@ var isCircular = require( '@stdlib/assert/is-circular' );
 
 #### isCircular( value )
 
-Test if an object-like `value` contains a circular reference.
+Tests if an object-like `value` contains a circular reference.
 
 ```javascript
 var obj = {

@@ -361,6 +361,17 @@ declare class BooleanArray implements BooleanArrayInterface {
 	at( i: number ): boolean | void;
 
 	/**
+	* Pointer to the underlying data buffer.
+	*
+	* @example
+	* var arr = new BooleanArray( 10 );
+	*
+	* var buf = arr.buffer;
+	* // returns <ArrayBuffer>
+	*/
+	readonly buffer: ArrayBuffer;
+
+	/**
 	* Length (in bytes) of the array.
 	*
 	* @example

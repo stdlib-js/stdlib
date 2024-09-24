@@ -273,7 +273,7 @@ jobs:
           TEST_NPM_INSTALL_GITHUB_URL: 'https://github.com/stdlib-js/stdlib'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
-          . "./.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:

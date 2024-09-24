@@ -22,6 +22,8 @@
 * @see <a href="http://www.netlib.org/lapack/expolore-html/df/d28/group__single__blas__level1.html">sdot</a>
 */
 #include "stdlib/blas/base/sdot.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the dot product of two single-precision floating-point vectors.
@@ -33,50 +35,9 @@
 * @param strideY  Y stride length
 * @return         the dot product
 */
-float c_sdot( const int N, const float *X, const int strideX, const float *Y, const int strideY ) {
-	float dot;
-	int ix;
-	int iy;
-	int m;
-	int i;
-
-	dot = 0.0f;
-	if ( N <= 0 ) {
-		return dot;
-	}
-	// If both strides are equal to `1`, use unrolled loops...
-	if ( strideX == 1 && strideY == 1 ) {
-		m = N % 5;
-
-		// If we have a remainder, do a clean-up loop...
-		if ( m > 0 ) {
-			for ( i = 0; i < m; i++ ) {
-				dot += X[ i ] * Y[ i ];
-			}
-		}
-		if ( N < 5 ) {
-			return dot;
-		}
-		for ( i = m; i < N; i += 5 ) {
-			dot += ( X[i]*Y[i] ) + ( X[i+1]*Y[i+1] ) + ( X[i+2]*Y[i+2] ) + ( X[i+3]*Y[i+3] ) + ( X[i+4]*Y[i+4] );
-		}
-		return dot;
-	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
-	for ( i = 0; i < N; i++ ) {
-		dot += X[ ix ] * Y[ iy];
-		ix += strideX;
-		iy += strideY;
-	}
-	return dot;
+float API_SUFFIX(c_sdot)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	return API_SUFFIX(c_sdot_ndarray)( N, X, strideX, ox, Y, strideY, oy );
 }
 

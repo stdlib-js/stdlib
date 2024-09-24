@@ -1,0 +1,25 @@
+
+{{alias}}( str )
+    Converts a base64-encoded string to a Uint8Array.
+
+    If provided a string containing non-ASCII characters, the function returns
+    `null`.
+
+    Parameters
+    ----------
+    str: string
+        Base64-encoded string.
+
+    Returns
+    -------
+    out: Uint8Array|null
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'SGVsbG8gV29ybGQh' )
+    <Uint8Array>
+
+    See Also
+    --------
+

@@ -5,8 +5,8 @@
 
     When invoked, the callback function is provided two arguments:
 
-    - value: iterated value
-    - index: iteration index (zero-based)
+    - value: iterated value.
+    - index: iteration index (zero-based).
 
     If the callback returns `undefined`, the iterator invokes the function for
     the next value of the provided iterator; otherwise, the iterator returns

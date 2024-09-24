@@ -369,6 +369,17 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	at( i: number ): Complex64 | void;
 
 	/**
+	* Pointer to the underlying data buffer.
+	*
+	* @example
+	* var arr = new Complex64Array( 10 );
+	*
+	* var buf = arr.buffer;
+	* // returns <ArrayBuffer>
+	*/
+	readonly buffer: ArrayBuffer;
+
+	/**
 	* Length (in bytes) of the array.
 	*
 	* @example
