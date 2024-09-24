@@ -30,7 +30,7 @@ int main( void ) {
 	const int strideX = 1;
 
 	// Fill the array:
-	c_sfill( N, 5.0f, x, strideX );
+	stdlib_strided_sfill( N, 5.0f, x, strideX );
 
 	// Print the result:
 	for ( int i = 0; i < 8; i++ ) {
