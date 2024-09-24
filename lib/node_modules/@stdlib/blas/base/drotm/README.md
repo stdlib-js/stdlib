@@ -223,6 +223,33 @@ The function accepts the following arguments:
 void c_drotm( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, const double *param );
 ```
 
+#### c_drotm_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY, param )
+
+Applies a modified Givens plane rotation using alternative indexing semantics.
+
+```c
+double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0 };
+double y[] = { 6.0, 7.0, 8.0, 9.0, 10.0 };
+const double param[5] = { 0.0, 0.0, 2.0, -3.0, 0.0 };
+
+c_drotm_ndarray( 5, x, -1, 4, y, -1, 4, param );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[inout] double*` first input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[inout] double*` second input array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+-   **param**: `[in] double` parameters for the modified Givens transformation.
+
+```c
+void c_drotm_ndarray( const CBLAS_INT N, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const double *param );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -262,6 +289,14 @@ int main( void ) {
 
     // Apply plane rotation:
     c_drotm( N, x, strideX, y, strideY, param );
+
+    // Print the result:
+    for ( int i = 0; i < 5; i++ ) {
+        printf( "x[ %i ] = %lf, y[ %i ] = %lf\n", i, x[ i ], i, y[ i ] );
+    }
+
+    // Apply plane rotation:
+    c_drotm_ndarray( N, x, -strideX, N-1, y, -strideY, N-1, param );
 
     // Print the result:
     for ( int i = 0; i < 5; i++ ) {
