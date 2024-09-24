@@ -17,38 +17,62 @@
 */
 
 #include "stdlib/blas/base/ddot.h"
-#include "stdlib/blas/base/ddot_cblas.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/strided/base/min_view_buffer_index.h"
 
-/**
-* Computes the dot product of two double-precision floating-point vectors.
-*
-* @param N        number of indexed elements
-* @param X        first input array
-* @param strideX  X stride length
-* @param Y        second input array
-* @param strideY  Y stride length
-* @return         dot product
-*/
-double API_SUFFIX(c_ddot)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY ) {
-	return API_SUFFIX(cblas_ddot)( N, X, strideX, Y, strideY );
-}
+static const CBLAS_INT M = 5;
 
 /**
 * Computes the dot product of two double-precision floating-point vectors using alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param X        first input array
+* @param X        first array
 * @param strideX  X stride length
 * @param offsetX  starting index for X
-* @param Y        second input array
+* @param Y        second array
 * @param strideY  Y stride length
 * @param offsetY  starting index for Y
-* @return         dot product
+* @return         the dot product
 */
 double API_SUFFIX(c_ddot_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	X += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
-	Y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
-	return API_SUFFIX(cblas_ddot_ndarray)( N, X, strideX, Y, strideY );
+	double dot;
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT m;
+	CBLAS_INT i;
+
+	dot = 0.0;
+	if ( N <= 0 ) {
+		return dot;
+	}
+	ix = offsetX;
+	iy = offsetY;
+
+	// If both strides are equal to `1`, use unrolled loops...
+	if ( strideX == 1 && strideY == 1 ) {
+		m = N % M;
+
+		// If we have a remainder, do a clean-up loop...
+		if ( m > 0 ) {
+			for ( i = 0; i < m; i++ ) {
+				dot += X[ ix ] * Y[ iy ];
+				ix += strideX;
+				iy += strideY;
+			}
+		}
+		if ( N < M ) {
+			return dot;
+		}
+		for ( i = m; i < N; i += M ) {
+			dot += ( X[ ix ]*Y[ iy ] ) + ( X[ ix+1 ]*Y[ iy+1 ] ) + ( X[ ix+2 ]*Y[ iy+2 ] ) + ( X[ ix+3 ]*Y[ iy+3 ] ) + ( X[ ix+4 ]*Y[ iy+4 ] );
+			ix += M;
+			iy += M;
+		}
+		return dot;
+	}
+	for ( i = 0; i < N; i++ ) {
+		dot += X[ ix ] * Y[ iy ];
+		ix += strideX;
+		iy += strideY;
+	}
+	return dot;
 }
