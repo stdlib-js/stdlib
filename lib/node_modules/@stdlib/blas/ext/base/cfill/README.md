@@ -285,7 +285,7 @@ console.log( x.get( 0 ).toString() );
 #include "stdlib/blas/ext/base/cfill.h"
 ```
 
-#### c_cfill( N, alpha, \*X, strideX )
+#### stdlib_strided_cfill( N, alpha, \*X, strideX )
 
 Fills a single-precision floating-point strided array `X` with a specified scalar constant `alpha`.
 
@@ -293,7 +293,7 @@ Fills a single-precision floating-point strided array `X` with a specified scala
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
 
-c_cfill( 2, alpha, (stdlib_complex64_t *)x, 1 );
+stdlib_strided_cfill( 2, alpha, (stdlib_complex64_t *)x, 1 );
 ```
 
 The function accepts the following arguments:
@@ -304,10 +304,10 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 
 ```c
-void c_cfill( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX );
+void stdlib_strided_cfill( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX );
 ```
 
-#### c_cfill_ndarray( N, alpha, \*X, strideX, offsetX )
+#### stdlib_strided_cfill_ndarray( N, alpha, \*X, strideX, offsetX )
 
 Fills a single-precision complex floating-point strided array `X` with a specified scalar constant `alpha` using alternative indexing semantics.
 
@@ -315,7 +315,7 @@ Fills a single-precision complex floating-point strided array `X` with a specifi
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
 
-c_cfill_ndarray( 4, alpha, (stdlib_complex64_t *x), 1, 0 );
+stdlib_strided_cfill_ndarray( 4, alpha, (stdlib_complex64_t *x), 1, 0 );
 ```
 
 The function accepts the following arguments:
@@ -327,7 +327,7 @@ The function accepts the following arguments:
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c
-void c_cfill_ndarray( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex_64_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+void stdlib_strided_cfill_ndarray( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex_64_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>
@@ -367,7 +367,7 @@ int main( void ) {
     const int strideX = 1;
 
     // Fill the array:
-    c_cfill( N, alpha, (stdlib_complex_64_t *)x, strideX );
+    stdlib_strided_cfill( N, alpha, (stdlib_complex_64_t *)x, strideX );
 
     // Print the result:
     for ( int i = 0; i < N; i++ ) {

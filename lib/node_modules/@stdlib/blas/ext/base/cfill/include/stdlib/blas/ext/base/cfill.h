@@ -32,12 +32,12 @@ extern "C" {
 /**
 * Fills a single-precision complex floating-point strided array with a specified scalar constant.
 */
-void API_SUFFIX(c_cfill)( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX );
+void API_SUFFIX(stdlib_strided_cfill)( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX );
 
 /**
 * Fills a single-precision complex floating-point strided array with a specified scalar constant using alternative indexing semantics.
 */
-void API_SUFFIX(c_cfill_ndarray)( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+void API_SUFFIX(stdlib_strided_cfill_ndarray)( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }
