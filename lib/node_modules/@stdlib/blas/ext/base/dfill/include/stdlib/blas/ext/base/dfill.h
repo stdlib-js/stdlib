@@ -31,12 +31,12 @@ extern "C" {
 /**
 * Fills a double-precision floating-point strided array with a specified scalar constant.
 */
-void API_SUFFIX(c_dfill)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX );
+void API_SUFFIX(stdlib_strided_dfill)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX );
 
 /**
 * Fills a double-precision floating-point strided array with a specified scalar constant using alternative indexing semantics.
 */
-void API_SUFFIX(c_dfill_ndarray)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+void API_SUFFIX(stdlib_strided_dfill_ndarray)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }
