@@ -17,11 +17,12 @@
 */
 
 #include "stdlib/blas/ext/base/dapxsumkbn.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 #include <math.h>
 
 /**
-* Adds a constant to each double-precision floating-point strided array element and computes the sum using an improved Kahan–Babuška algorithm.
+* Adds a scalar constant to each double-precision floating-point strided array element and computes the sum using an improved Kahan–Babuška algorithm.
 *
 * ## Method
 *
@@ -37,10 +38,24 @@
 * @param stride  stride length
 * @return        output value
 */
-double stdlib_strided_dapxsumkbn( const int64_t N, const double alpha, const double *X, const int64_t stride ) {
+double API_SUFFIX(stdlib_strided_dapxsumkbn)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dapxsumkbn_ndarray)( N, alpha, X, strideX, ox );
+}
+
+/**
+* Adds a scalar constant to each double-precision floating-point strided array element and computes the sum using an improved Kahan–Babuška algorithm and alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param alpha    scalar
+* @param X        input array
+* @param strideX  index increment
+* @param offsetX  starting index
+*/
+double API_SUFFIX(stdlib_strided_dapxsumkbn_ndarray)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	double sum;
-	int64_t ix;
-	int64_t i;
+	CBLAS_INT ix;
+	CBLAS_INT i;
 	double v;
 	double t;
 	double c;
@@ -48,14 +63,10 @@ double stdlib_strided_dapxsumkbn( const int64_t N, const double alpha, const dou
 	if ( N <= 0 ) {
 		return 0.0;
 	}
-	if ( N == 1 || stride == 0 ) {
-		return alpha + X[ 0 ];
+	if ( N == 1 || strideX == 0 ) {
+		return alpha + X[ offsetX ];
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
+	ix = offsetX;
 	sum = 0.0;
 	c = 0.0;
 	for ( i = 0; i < N; i++ ) {
@@ -67,7 +78,7 @@ double stdlib_strided_dapxsumkbn( const int64_t N, const double alpha, const dou
 			c += (v-t) + sum;
 		}
 		sum = t;
-		ix += stride;
+		ix += strideX;
 	}
 	return sum + c;
 }
