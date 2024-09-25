@@ -32,11 +32,11 @@
 *
 * -   Neumaier, Arnold. 1974. "Rounding Error Analysis of Some Methods for Summing Finite Sums." _Zeitschrift Für Angewandte Mathematik Und Mechanik_ 54 (1): 39–51. doi:[10.1002/zamm.19740540106](https://doi.org/10.1002/zamm.19740540106).
 *
-* @param N       number of indexed elements
-* @param alpha   constant
-* @param X       input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
 double API_SUFFIX(stdlib_strided_dapxsumkbn)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
