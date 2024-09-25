@@ -50,7 +50,7 @@ Returns a typed array constructor for creating typed arrays having a specified [
 var Float64ArrayFE = fixedEndianFactory( 'float64' );
 // returns <Function>
 
-Float32ArrayFE = fixedEndianFactory( 'float32' );
+var Float32ArrayFE = fixedEndianFactory( 'float32' );
 // returns <Function>
 ```
 
