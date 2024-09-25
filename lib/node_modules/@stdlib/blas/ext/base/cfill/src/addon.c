@@ -39,7 +39,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
 	STDLIB_NAPI_ARGV_COMPLEX64( env, alpha, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, X, N, strideX, argv, 2 );
-	API_SUFFIX(c_cfill)( N, alpha, (stdlib_complex64_t *)X, strideX );
+	API_SUFFIX(stdlib_strided_cfill)( N, alpha, (stdlib_complex64_t *)X, strideX );
 	return NULL;
 }
 
@@ -57,7 +57,7 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, X, N, strideX, argv, 2 );
-	API_SUFFIX(c_cfill_ndarray)( N, alpha, (stdlib_complex64_t *)X, strideX, offsetX );
+	API_SUFFIX(stdlib_strided_cfill_ndarray)( N, alpha, (stdlib_complex64_t *)X, strideX, offsetX );
 	return NULL;
 }
 
