@@ -2079,6 +2079,7 @@ isnan
 isNaNArray
 isNativeFunction
 isndarrayLike
+isndarrayLikeWithDataType
 isNegativeFinite
 isNegativeInteger
 isNegativeIntegerArray

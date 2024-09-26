@@ -41,4 +41,12 @@ int main( void ) {
     for ( int i = 0; i < 5; i++ ) {
         printf( "x[ %i ] = %f, y[ %i ] = %f\n", i, x[ i ], i, y[ i ] );
     }
+
+    // Apply plane rotation:
+    c_srotm_ndarray( N, x, -strideX, N-1, y, -strideY, N-1, param );
+
+    // Print the result:
+    for ( int i = 0; i < 5; i++ ) {
+        printf( "x[ %i ] = %f, y[ %i ] = %f\n", i, x[ i ], i, y[ i ] );
+    }
 }

@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/dapxsum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -36,17 +36,20 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-double",
         "@stdlib/napi/argv-int64",
-        "@stdlib/blas/ext/base/dapxsumkbn"
+        "@stdlib/blas/ext/base/dapxsumkbn",
+        "@stdlib/napi/create-double"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/dapxsum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -54,13 +57,15 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/ext/base/dapxsumkbn"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dapxsum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -68,6 +73,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/ext/base/dapxsumkbn"
       ]
     }

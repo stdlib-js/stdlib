@@ -29,9 +29,9 @@
 * @param strideX  index increment
 */
 
-void API_SUFFIX(c_sfill)( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT strideX ) {
+void API_SUFFIX(stdlib_strided_sfill)( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	API_SUFFIX(c_sfill_ndarray)( N, alpha, X, strideX, ox );
+	API_SUFFIX(stdlib_strided_sfill_ndarray)( N, alpha, X, strideX, ox );
 }
 
 /**
@@ -43,7 +43,7 @@ void API_SUFFIX(c_sfill)( const CBLAS_INT N, const float alpha, float *X, const 
 * @param strideX  index increment
 * @param offsetX  starting index
 */
-void API_SUFFIX(c_sfill_ndarray)( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+void API_SUFFIX(stdlib_strided_sfill_ndarray)( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	CBLAS_INT ix;
 	CBLAS_INT m;
 	CBLAS_INT i;

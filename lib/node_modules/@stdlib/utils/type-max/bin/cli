@@ -55,7 +55,7 @@ function main() {
 		return;
 	}
 
-	// Get any provided command-line arguments:s
+	// Get any provided command-line arguments:
 	args = cli.args();
 	console.log( typeMax( args[ 0 ] ) ); // eslint-disable-line no-console
 }

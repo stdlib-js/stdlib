@@ -2079,6 +2079,7 @@
 "@stdlib/assert-is-nan-array","@stdlib/assert/is-nan-array"
 "@stdlib/assert-is-native-function","@stdlib/assert/is-native-function"
 "@stdlib/assert-is-ndarray-like","@stdlib/assert/is-ndarray-like"
+"@stdlib/assert-is-ndarray-like-with-data-type","@stdlib/assert/is-ndarray-like-with-data-type"
 "@stdlib/assert-is-negative-finite","@stdlib/assert/is-negative-finite"
 "@stdlib/assert-is-negative-integer","@stdlib/assert/is-negative-integer"
 "@stdlib/assert-is-negative-integer-array","@stdlib/assert/is-negative-integer-array"

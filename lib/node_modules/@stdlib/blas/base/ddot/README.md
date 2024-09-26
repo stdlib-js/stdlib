@@ -227,6 +227,32 @@ The function accepts the following arguments:
 double c_ddot( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY );
 ```
 
+#### c_ddot_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
+
+Computes the dot product of two double-precision floating-point vectors using alternative indexing semantics.
+
+```c
+const double x[] = { 4.0, 2.0, -3.0, 5.0, -1.0 };
+const double y[] = { 2.0, 6.0, -1.0, -4.0, 8.0 };
+
+double v = c_ddot_ndarray( 5, x, -1, 4, y, -1, 4 );
+// returns -5.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` first input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[in] double*` second input array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+double c_ddot_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY. const CBLAS_INT offsetY );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -263,6 +289,12 @@ int main( void ) {
 
     // Compute the dot product:
     double d = c_ddot( N, x, strideX, y, strideY );
+
+    // Print the result:
+    printf( "dot product: %lf\n", d );
+
+    // Compute the dot product:
+    d = c_ddot_ndarray( N, x, strideX, 0, y, strideY, N-1 );
 
     // Print the result:
     printf( "dot product: %lf\n", d );

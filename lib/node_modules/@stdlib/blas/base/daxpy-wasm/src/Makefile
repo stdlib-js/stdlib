@@ -73,6 +73,13 @@ else
 	WASM_TO_JS := wasm2js
 endif
 
+# Define the path to the Node.js executable:
+ifdef NODE
+	NODEJS := $(NODE)
+else
+	NODEJS := node
+endif
+
 # Define the command-line options when compiling C files:
 CFLAGS ?= \
 	-std=c99 \
@@ -115,6 +122,9 @@ wat_targets := main.wat
 # List of WebAssembly JavaScript targets:
 wasm_js_targets := main.wasm.js
 
+# List of other JavaScript targets:
+browser_js_targets := ./../lib/binary.browser.js
+
 
 # RULES #
 
@@ -155,7 +165,7 @@ all: wasm
 # @example
 # make wasm
 #/
-wasm: $(wasm_targets) $(wat_targets)
+wasm: $(wasm_targets) $(wat_targets) $(browser_js_targets)
 
 .PHONY: wasm
 
@@ -190,6 +200,15 @@ $(wat_targets): %.wat: %.wasm
 #/
 $(wasm_js_targets): %.wasm.js: %.wasm
 	$(QUIET) $(WASM_TO_JS) -o $@ $(wasm_targets)
+
+#/
+# Generates an inline WebAssembly build for use in bundlers.
+#
+# @private
+# @param {string} NODE - Node.js executable
+#/
+$(browser_js_targets): $(wasm_targets)
+	$(QUIET) $(NODEJS) ./../scripts/build.js
 
 #/
 # Removes generated WebAssembly files.
