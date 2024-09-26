@@ -116,12 +116,12 @@ The function supports the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var bernoulli = require( '@stdlib/random/array/bernoulli' );
+var cuanyBy = require( '@stdlib/array/base/cuany-by' );
+
 function isPositive( value ) {
     return ( value > 0 );
 }
-
-var bernoulli = require( '@stdlib/random/array/bernoulli' );
-var cuanyBy = require( '@stdlib/array/base/cuany-by' );
 
 // Create an array of random values:
 var x = bernoulli( 10, 0.1 );

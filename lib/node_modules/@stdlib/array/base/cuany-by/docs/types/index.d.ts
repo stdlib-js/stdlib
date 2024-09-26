@@ -79,7 +79,6 @@ interface CuAnyBy {
 	* @returns output array
 	*
 	* @example
-	*
 	* function isPositive( v ) {
 	*     return v > 0;
 	* }
