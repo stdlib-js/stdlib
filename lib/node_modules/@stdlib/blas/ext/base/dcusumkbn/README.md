@@ -287,7 +287,7 @@ int main( void ) {
 
     // Print the result:
     for ( int i = 0; i < 8; i++ ) {
-        printf( "y[ %"PRId64" ] = %lf\n", i, y[ i ] );
+        printf( "y[ %d ] = %lf\n", i, y[ i ] );
     }
 }
 ```
