@@ -16,7 +16,6 @@
 * limitations under the License.
 */
 
-
 import cuanyBy = require( './index' );
 
 /**
