@@ -29,8 +29,8 @@ interface Options {
 * Inverts an object, such that keys become values and values become keys.
 *
 * @param obj - input object
-* @param opts - function options
-* @param opts.duplicates - boolean indicating whether to store duplicate keys (default: true)
+* @param options - function options
+* @param options.duplicates - boolean indicating whether to store duplicate keys (default: true)
 * @returns inverted object
 *
 * @example

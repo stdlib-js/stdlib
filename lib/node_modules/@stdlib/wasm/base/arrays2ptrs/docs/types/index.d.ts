@@ -175,7 +175,7 @@ interface OutputArrayObject<T> extends InputArrayObject<T> {
 * var out = arrays2ptrs( ctx, [ xobj, yobj ] );
 * // returns [...]
 */
-declare function arrays2ptrs<T extends Collection | AccessorArrayLike<any>>( ctx: Context, arrays: ArrayLike<InputArrayObject<T>> ): Array<OutputArrayObject<T>>;
+declare function arrays2ptrs<T extends Collection | AccessorArrayLike<any>>( ctx: Context, list: ArrayLike<InputArrayObject<T>> ): Array<OutputArrayObject<T>>;
 
 
 // EXPORTS //
