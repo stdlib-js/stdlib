@@ -786,7 +786,7 @@ interface Dispatcher {
 	* @param dtypeZ - data type for `z`
 	* @param z - strided array
 	* @param strideZ - index increment for `z`
-	* @param offsetZ = starting index for `z`
+	* @param offsetZ - starting index for `z`
 	* @param dtypeW - data type for `w`
 	* @param w - strided array
 	* @param strideW - index increment for `w`
@@ -912,7 +912,7 @@ interface Dispatcher {
 	* @param dtypeZ - data type for `z`
 	* @param z - strided array
 	* @param strideZ - index increment for `z`
-	* @param offsetZ = starting index for `z`
+	* @param offsetZ - starting index for `z`
 	* @param dtypeW - data type for `w`
 	* @param w - strided array
 	* @param strideW - index increment for `w`
