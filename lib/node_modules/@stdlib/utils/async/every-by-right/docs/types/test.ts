@@ -22,7 +22,7 @@ const isPositive = ( v: number ): boolean => {
 	return ( v > 0 );
 };
 
-const done = ( error: Error | null, bool: boolean ) => {
+const done = ( error: Error | null, bool: boolean ): void => {
 	if ( error ) {
 		throw error;
 	}

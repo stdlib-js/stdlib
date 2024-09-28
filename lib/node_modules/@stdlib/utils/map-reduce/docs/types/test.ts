@@ -33,7 +33,7 @@ function mapper( value: number ): number {
 * Reducing function.
 *
 * @param acc - accumulated value
-* @param v - array element
+* @param value - array element
 * @returns result
 */
 function reducer( acc: number, value: number ): number {

@@ -21,10 +21,22 @@ import mskrejectMap = require( './index' );
 
 // FUNCTIONS //
 
+/**
+* Multiplies a value by two.
+*
+* @param val - input value
+* @returns result
+*/
 function timesTwo( val: number ): number {
 	return val * 2;
 }
 
+/**
+* Identity function.
+*
+* @param val - input value
+* @returns input value
+*/
 function identity( val: string ): string {
 	return val;
 }
