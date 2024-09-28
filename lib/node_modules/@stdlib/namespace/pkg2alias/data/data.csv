@@ -1684,6 +1684,8 @@
 "@stdlib/constants/float32/sqrt-eps",FLOAT32_SQRT_EPS
 "@stdlib/constants/float32/two-pi",FLOAT32_TWO_PI
 "@stdlib/array/float32",Float32Array
+"@stdlib/array/fixed-endian-float32",Float32ArrayFE
+"@stdlib/array/little-endian-float32",Float32ArrayLE
 "@stdlib/constants/float64/exponent-bias",FLOAT64_EXPONENT_BIAS
 "@stdlib/constants/float64/high-word-abs-mask",FLOAT64_HIGH_WORD_ABS_MASK
 "@stdlib/constants/float64/high-word-exponent-mask",FLOAT64_HIGH_WORD_EXPONENT_MASK
@@ -1711,6 +1713,8 @@
 "@stdlib/constants/float64/smallest-normal",FLOAT64_SMALLEST_NORMAL
 "@stdlib/constants/float64/smallest-subnormal",FLOAT64_SMALLEST_SUBNORMAL
 "@stdlib/array/float64",Float64Array
+"@stdlib/array/fixed-endian-float64",Float64ArrayFE
+"@stdlib/array/little-endian-float64",Float64ArrayLE
 "@stdlib/utils/for-each",forEach
 "@stdlib/utils/async/for-each",forEachAsync
 "@stdlib/string/for-each",forEachChar
