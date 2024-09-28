@@ -874,7 +874,7 @@ declare function accessors<T = unknown>( x: Array<T> ): GenericAccessorObject<T>
 *     '2': 3,
 *     '4': 4,
 *     'length': 4
- };
+* };
 * var obj = accessors( x );
 * // returns {...}
 *
