@@ -829,32 +829,24 @@ rules[ '@typescript-eslint/prefer-function-type' ] = 'error';
 rules[ '@typescript-eslint/prefer-namespace-keyword' ] = 'error';
 
 /**
-* Requires that private members are marked as `readonly` if they're never modified outside of the constructor.
+* Disables the rule that private members are marked as `readonly` if they're never modified outside of the constructor.
 *
 * @name prefer-readonly
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [prefer-readonly]{@link https://typescript-eslint.io/rules/prefer-readonly}
 *
 * @example
-* // Bad...
+* // Okay...
 * class MyClass {
 *     private name: string;
 *     constructor( name: string ) {
 *         this.name = name;
 *     }
 * }
-*
-* // Good...
-* class MyClass {
-*     private readonly name: string;
-*     constructor( name: string ) {
-*         this.name = name;
-*     }
-* }
 */
-rules[ '@typescript-eslint/prefer-readonly' ] = 'error';
+rules[ '@typescript-eslint/prefer-readonly' ] = 'off';
 
 /**
 * Disables the rule that functions which return promises must be async.
