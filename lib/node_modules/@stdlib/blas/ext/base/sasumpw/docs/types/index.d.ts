@@ -36,7 +36,7 @@ interface Routine {
 	* var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
 	*
 	* var v = sasumpw( x.length, x, 1 );
-	* // returns 1.0
+	* // returns 5.0
 	*/
 	( N: number, x: Float32Array, stride: number ): number;
 
@@ -55,7 +55,7 @@ interface Routine {
 	* var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
 	*
 	* var v = sasumpw.ndarray( x.length, x, 1, 0 );
-	* // returns 1.0
+	* // returns 5.0
 	*/
 	ndarray( N: number, x: Float32Array, stride: number, offset: number ): number;
 }
@@ -74,7 +74,7 @@ interface Routine {
 * var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
 *
 * var v = sasumpw( x.length, x, 1 );
-* // returns 1.0
+* // returns 5.0
 *
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
@@ -82,7 +82,7 @@ interface Routine {
 * var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
 *
 * var v = sasumpw.ndarray( x.length, x, 1, 0 );
-* // returns 1.0
+* // returns 5.0
 */
 declare var sasumpw: Routine;
 
