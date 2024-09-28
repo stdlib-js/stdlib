@@ -151,7 +151,7 @@ declare function filledarrayBy( array: Collection, dtype: DataType, clbk: Callba
 * var arr = filledarrayBy( it, constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( iterable: IterableIterator, callback: Callback, thisArg?: any ): ArrayOrTypedArray; // eslint-disable-line @typescript-eslint/unified-signatures
+declare function filledarrayBy( iterable: IterableIterator, clbk: Callback, thisArg?: any ): ArrayOrTypedArray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Creates a filled array from an iterable according to a callback function.
@@ -172,7 +172,7 @@ declare function filledarrayBy( iterable: IterableIterator, callback: Callback, 
 * var arr = filledarrayBy( it, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( iterable: IterableIterator, dtype: DataType, callback: Callback, thisArg?: any ): ArrayOrTypedArray; // eslint-disable-line @typescript-eslint/unified-signatures
+declare function filledarrayBy( iterable: IterableIterator, dtype: DataType, clbk: Callback, thisArg?: any ): ArrayOrTypedArray; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
