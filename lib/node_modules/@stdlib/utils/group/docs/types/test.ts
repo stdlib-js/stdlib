@@ -23,11 +23,11 @@ import group = require( './index' );
 
 // The function returns an object...
 {
-	group( [ 'beep', 'boop', 'foo', 'bar' ], [ 'b', 'b', 'f', 'b' ] ); // $ExpectType any
+	group( [ 'beep', 'boop', 'foo', 'bar' ], [ 'b', 'b', 'f', 'b' ] ); // $ExpectType { b: Collection<string>; f: Collection<string>; }
 	const opts = {
 		'returns': 'indices' as 'indices'
 	};
-	group( [ 'beep', 'boop', 'foo', 'bar' ], opts, [ 'b', 'b', 'f', 'b' ] ); // $ExpectType any
+	group( [ 'beep', 'boop', 'foo', 'bar' ], opts, [ 'b', 'b', 'f', 'b' ] ); // $ExpectType { b: Collection<string>; f: Collection<string>; }
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...

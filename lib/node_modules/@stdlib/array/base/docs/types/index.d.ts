@@ -284,7 +284,7 @@ interface Namespace {
 	*     '2': 3,
 	*     '4': 4,
 	*     'length': 4
-	 };
+	* };
 	* var obj = ns.accessors( x );
 	* // returns {...}
 	*
@@ -385,7 +385,7 @@ interface Namespace {
 	*     '2': 3,
 	*     '4': 4,
 	*     'length': 4
-	 };
+	* };
 	* var obj = ns.arraylike2object( x );
 	* // returns {...}
 	*

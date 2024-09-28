@@ -65,9 +65,9 @@ type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 /**
 * Checks whether all own and inherited properties in an object pass a test implemented by a predicate function.
 *
-* @param obj - The object to iterate over
-* @param predicate - The test function to apply to each property
-* @param thisArg - Optional execution context for the predicate function
+* @param obj - object to iterate over
+* @param predicate - test function to apply to each property
+* @param thisArg - optional execution context for the predicate function
 * @throws if `obj` is not an object or if `predicate` is not a function
 * @returns boolean indicating whether all properties pass the test
 */
