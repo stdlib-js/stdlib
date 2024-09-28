@@ -95,7 +95,7 @@ static double rand_double( void ) {
 * @param len          array length
 * @return elapsed time in seconds
 */
-static double benchmark( int iterations, int len ) {
+static double benchmark1( int iterations, int len ) {
 	stdlib_complex128_t alpha;
 	double elapsed;
 	double *x;
@@ -110,7 +110,43 @@ static double benchmark( int iterations, int len ) {
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		c_zfill( len, alpha, (stdlib_complex128_t *)x, 1 );
+		stdlib_strided_zfill( len, alpha, (stdlib_complex128_t *)x, 1 );
+		if ( x[ 0 ] != x[ 0 ] ) {
+			printf( "should not return NaN\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( x[ 0 ] != x[ 0 ] ) {
+		printf( "should not return NaN\n" );
+	}
+	free( x );
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @param iterations   number of iterations
+* @param len          array length
+* @return elapsed time in seconds
+*/
+static double benchmark2( int iterations, int len ) {
+	stdlib_complex128_t alpha;
+	double elapsed;
+	double *x;
+	double t;
+	int i;
+
+	x = (double *)malloc( len * 2 * sizeof( double ) );
+	alpha = stdlib_complex128( 1.0, 0.0 );
+	for ( i = 0; i < len*2; i+=2 ) {
+		x[ i ] = ( rand_double()*2.0 ) - 1.0;
+		x[ i+1 ] = ( rand_double()*2.0 ) - 1.0;
+	}
+	t = tic();
+	for ( i = 0; i < iterations; i++ ) {
+		stdlib_strided_zfill_ndarray( len, alpha, (stdlib_complex128_t *)x, 1, 0 );
 		if ( x[ 0 ] != x[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -146,7 +182,18 @@ int main( void ) {
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
 			printf( "# c::%s:len=%d\n", NAME, len );
-			elapsed = benchmark( iter, len );
+			elapsed = benchmark1( iter, len );
+			print_results( iter, elapsed );
+			printf( "ok %d benchmark finished\n", count );
+		}
+	}
+	for ( i = MIN; i <= MAX; i++ ) {
+		len = pow( 10, i );
+		iter = ITERATIONS / pow( 10, i-1 );
+		for ( j = 0; j < REPEATS; j++ ) {
+			count += 1;
+			printf( "# c::%s:ndarray:len=%d\n", NAME, len );
+			elapsed = benchmark2( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}
