@@ -66,6 +66,7 @@ type Ternary<T, V> = ( this: V, value: T, idx: number, xi: number ) => number | 
 * @returns accessed value
 */
 type Quaternary<T, V> = ( this: V, value: T, idx: number, xi: number, yi: number ) => number | void;
+
 /**
 * Returns an accessed value.
 *
@@ -77,6 +78,7 @@ type Quaternary<T, V> = ( this: V, value: T, idx: number, xi: number, yi: number
 * @returns accessed value
 */
 type Quinary<T, V> = ( this: V, value: T, idx: number, xi: number, yi: number, x: Collection<T> ) => number | void;
+
 /**
 * Returns an accessed value.
 *
@@ -88,7 +90,8 @@ type Quinary<T, V> = ( this: V, value: T, idx: number, xi: number, yi: number, x
 * @param y - output array
 * @returns accessed value
 */
-type Senary<T, U, V> = ( value: T, idx: number, xi: number, yi: number, x: Collection<T>, y: Collection<U> ) => number | void;
+type Senary<T, U, V> = ( thos: V, value: T, idx: number, xi: number, yi: number, x: Collection<T>, y: Collection<U> ) => number | void;
+
 /**
 * Returns an accessed value.
 *

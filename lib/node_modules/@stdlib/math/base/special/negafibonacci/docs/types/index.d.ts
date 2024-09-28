@@ -27,7 +27,7 @@
 * -   If `|n|` is greater than `78`, the function returns `NaN` as larger negaFibonacci numbers cannot be accurately represented due to limitations of double-precision floating-point format.
 * -   If not provided a non-positive integer value, the function returns `NaN`.
 *
-* @param - the negaFibonacci number to compute
+* @param n - the negaFibonacci number to compute
 * @returns negaFibonacci number
 *
 * @example
