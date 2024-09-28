@@ -70,7 +70,7 @@ const fill = (): number => {
 	gfillBy( x.length, x, undefined, fill ); // $ExpectError
 	gfillBy( x.length, x, [], fill ); // $ExpectError
 	gfillBy( x.length, x, {}, fill ); // $ExpectError
-	gfillBy( x.length, x, ( x: number, fill ): number => x, fill ); // $ExpectError
+	gfillBy( x.length, x, ( x: number ): number => x, fill ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a function...
