@@ -36,7 +36,7 @@ interface Routine {
 	* var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 	*
 	* var v = dasumpw( x.length, x, 1 );
-	* // returns 1.0
+	* // returns 5.0
 	*/
 	( N: number, x: Float64Array, strideX: number ): number;
 
@@ -55,7 +55,7 @@ interface Routine {
 	* var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 	*
 	* var v = dasumpw.ndarray( x.length, x, 1, 0 );
-	* // returns 1.0
+	* // returns 5.0
 	*/
 	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number ): number;
 }
@@ -74,7 +74,7 @@ interface Routine {
 * var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 *
 * var v = dasumpw( x.length, x, 1 );
-* // returns 1.0
+* // returns 5.0
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -82,7 +82,7 @@ interface Routine {
 * var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 *
 * var v = dasumpw.ndarray( x.length, x, 1, 0 );
-* // returns 1.0
+* // returns 5.0
 */
 declare var dasumpw: Routine;
 

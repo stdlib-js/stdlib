@@ -39,7 +39,7 @@ type IteratorFunction = ( iterator: Iterator, ...args: Array<any> ) => any;
 *
 * @param iter - input iterator
 * @throws must provide an iterator
-* @returns iterator function result`
+* @returns iterator function result
 */
 type IteratorThunk = ( iter: Iterator ) => any;
 

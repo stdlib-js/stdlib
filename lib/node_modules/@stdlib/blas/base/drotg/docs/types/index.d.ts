@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Inteface describing `drotg`.
+* Interface describing `drotg`.
 */
 interface Routine {
 	/**

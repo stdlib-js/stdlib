@@ -1114,7 +1114,7 @@ interface Namespace {
 	* @returns result
 	*
 	* @example
-	* var Complex64 = require( '@stdlib/complex/float3/ctor' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* var v = ns.scabs1( new Complex64( 5.0, -3.0 ) );
 	* // returns 8.0

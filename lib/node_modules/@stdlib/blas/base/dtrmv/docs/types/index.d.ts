@@ -46,7 +46,7 @@ interface Routine {
 	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] );
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	*
-	* dtrmv( row-major', 'upper', 'no-transpose', 'non-unit', 3, A, 3, x, 1 );
+	* dtrmv( 'row-major', 'upper', 'no-transpose', 'non-unit', 3, A, 3, x, 1 );
 	* // x => <Float64Array>[ 14.0, 8.0, 3.0 ]
 	*/
 	( order: Layout, uplo: MatrixTriangle, trans: TransposeOperation, diag: DiagonalType, N: number, A: Float64Array, LDA: number, x: Float64Array, strideX: number ): Float64Array;
@@ -60,7 +60,7 @@ interface Routine {
 	* @param N - number of elements along each dimension in the matrix `A`
 	* @param A - input matrix
 	* @param strideA1 - stride of the first dimension of `A`
-	* @param strideA2 - stride of the first dimension of `A`
+	* @param strideA2 - stride of the second dimension of `A`
 	* @param offsetA - starting index for `A`
 	* @param x - input vector
 	* @param strideX - `x` stride length
