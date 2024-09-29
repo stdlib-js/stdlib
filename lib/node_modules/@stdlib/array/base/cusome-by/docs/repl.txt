@@ -1,0 +1,83 @@
+
+{{alias}}( x, n, predicate[, thisArg] )
+    Cumulatively tests whether at least n array elements in a provided array
+    pass a test implemented by a predicate function.
+
+    The predicate function is provided three arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    n: integer
+        Number of elements.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > function fcn( v ) { return ( v > 0 ); };
+    > var x = [ 0, 0, 0, 1, 1 ];
+    > var y = {{alias}}( x, 2, fcn )
+    [ false, false, false, false, true ]
+
+
+{{alias}}.assign( x, n, out, stride, offset, predicate[, thisArg] )
+    Cumulatively tests whether at least n elements in a provided array pass a
+    test implemented by a predicate function and assigns the values to elements
+    in a provided output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    n: Integer
+        Number of Elements.
+
+    out: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array offset.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > function fcn( v ) { return ( v > 0 ); };
+    > var x = [ 0, 0, 1, 1 ];
+    > var out = [ false, null, false, null, false, null, false, null ];
+    > var arr = {{alias}}.assign( x, 2, out, 2, 0, fcn )
+    [ false, null, false, null, false, null, true, null ];
+    > var bool = ( arr === out )
+    true
+
+    See Also
+    --------
