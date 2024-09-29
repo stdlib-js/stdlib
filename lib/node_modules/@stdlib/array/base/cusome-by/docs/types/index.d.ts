@@ -109,7 +109,7 @@ interface CuSomeBy {
 	* var x = [ 0, 0, 0, 1, 1,];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
 	*
-	* var arr = cusomeBy.assign( x, 2, y, 2, 0, isPositive );,
+	* var arr = cusomeBy.assign( x, 2, y, 2, 0, isPositive );
 	* // returns [ false, null, false, null, false, null, false, null, true, null ];
 	*/
 	assign<T = unknown, U = unknown, V = unknown>( x: Collection<T> | AccessorArrayLike<T>, n: number, out: Array<U>, stride: number, offset: number, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): Array<U | boolean>;
