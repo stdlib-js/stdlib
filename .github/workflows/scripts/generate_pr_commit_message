@@ -56,7 +56,7 @@ on_error() {
 	exit "$1"
 }
 
-# Resolves a name and email using .mailmap via git check-mailmap, falling back to the provided values if no match is found.
+# Resolves a name and email using .mailmap via `git check-mailmap`, falling back to the provided values if no match is found.
 #
 # $1 - name
 # $2 - email
@@ -85,8 +85,8 @@ resolve_user() {
 	name_email=$(grep -i "$github_handle" "$mailmap_file" | head -n 1)
 
 	if [ -n "$name_email" ]; then
-		# Extract name and email from the matching line:
-		echo "$name_email" | sed -E 's/^(.*)<(.*)>.*$/\1 <\2>/' | xargs
+		# Extract only the first name and email pair:
+		echo "$name_email" | sed -E 's/^([^<]+)<([^>]+)>.*/\1<\2>/' | xargs
 	else
 		# If no match found, use the GitHub handle as is:
 		echo "$github_handle <$github_handle@users.noreply.github.com>"
