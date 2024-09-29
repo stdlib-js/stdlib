@@ -55,7 +55,7 @@ interface cusome {
 	* var x = [ false, false, false, true, true ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
 	*
-	* var arr = cusome.assign( x, 2, y, 2, 0 );,
+	* var arr = cusome.assign( x, 2, y, 2, 0 );
 	* // returns [ false, null, false, null, false, null, false, null, true, null ];
 	*/
 	assign<T, U extends Collection<T> | AccessorArrayLike<T>>( x: Collection | AccessorArrayLike<any>, n: number, y: U, stride: number, offset: number ): U;

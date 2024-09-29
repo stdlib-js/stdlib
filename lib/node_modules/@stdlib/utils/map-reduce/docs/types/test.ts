@@ -171,7 +171,7 @@ function reducer( acc: number, value: number ): number {
 	mapReduce(); // $ExpectError
 	mapReduce( arr1 ); // $ExpectError
 	mapReduce( arr1, 0 ); // $ExpectError
-	mapReduce( arr1, 0, mapper, ); // $ExpectError
+	mapReduce( arr1, 0, mapper ); // $ExpectError
 	mapReduce( arr1, 0, mapper, reducer, {}, 3 ); // $ExpectError
 
 	const arr2 = array( [ 1, 2, 3 ] );

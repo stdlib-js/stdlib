@@ -109,7 +109,7 @@ interface CuAnyBy {
 	* var x = [ 0, 0, 0, 1, 0 ];
 	* var y = [ false, null, false, null, false, null, true, null, true, null ];
 	*
-	* var arr = cuanyBy.assign( x, y, 2, 0, isPositive );,
+	* var arr = cuanyBy.assign( x, y, 2, 0, isPositive );
 	* // returns [ false, null, false, null, false, null, true, null, true, null ];
 	*/
 	assign<T = unknown, U = unknown, V = unknown>( x: Collection<T> | AccessorArrayLike<T>, out: Array<U>, stride: number, offset: number, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): Array<U | boolean>;
@@ -161,7 +161,7 @@ interface CuAnyBy {
 	* var x = [ 0, 0, 0, 1, 0 ];
 	* var y = [ false, null, false, null, false, null, true, null, true, null ];
 	*
-	* var arr = cuanyBy.assign( x, y, 2, 0, isPositive );,
+	* var arr = cuanyBy.assign( x, y, 2, 0, isPositive );
 	* // returns [ false, null, false, null, false, null, true, null, true, null ];
 	*/
 	assign<T = unknown, U = unknown, V = unknown>( x: Collection<T> | AccessorArrayLike<T>, out: Collection<U> | AccessorArrayLike<U>, stride: number, offset: number, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): Collection<U | boolean> | AccessorArrayLike<U | boolean>;

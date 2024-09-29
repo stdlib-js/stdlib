@@ -169,7 +169,7 @@ function arrayLike(): ArrayLike<number> {
 	const x = [ 1, 2, 3, 4, 5, 6 ];
 
 	strided2object(); // $ExpectError
-	strided2object( x.length, ); // $ExpectError
+	strided2object( x.length ); // $ExpectError
 	strided2object( x.length, x ); // $ExpectError
 	strided2object( x.length, x, 1 ); // $ExpectError
 	strided2object( x.length, x, 1, 0, {} ); // $ExpectError
