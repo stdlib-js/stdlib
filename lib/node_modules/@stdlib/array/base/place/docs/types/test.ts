@@ -87,6 +87,6 @@ import place = require( './index' );
 	place(); // $ExpectError
 	place( [] ); // $ExpectError
 	place( [], [] ); // $ExpectError
-	place( [], [], [], ); // $ExpectError
+	place( [], [], [] ); // $ExpectError
 	place( [], [], [], 'strict', {} ); // $ExpectError
 }

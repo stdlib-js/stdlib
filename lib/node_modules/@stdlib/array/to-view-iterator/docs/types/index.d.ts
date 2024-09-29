@@ -82,7 +82,7 @@ type MapFunction = Nullary | Unary | Binary | Ternary;
 * function fcn( v ) {
 *     return v * 10.0;
 * }
-
+*
 * var iter = arrayview2iterator( [ 1, 2, 3, 4 ], fcn );
 *
 * var v = iter.next().value;

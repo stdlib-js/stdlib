@@ -29,7 +29,7 @@ type Iterator = Iter | IterableIterator;
 * Iterator function
 *
 * @param iterator - input iterator
-* @param ...args - function arguments
+* @param args - function arguments
 * @returns hash value
 */
 type IteratorFunction = ( iterator: Iterator, ...args: Array<any> ) => any;
@@ -39,7 +39,7 @@ type IteratorFunction = ( iterator: Iterator, ...args: Array<any> ) => any;
 *
 * @param iter - input iterator
 * @throws must provide an iterator
-* @returns iterator function result`
+* @returns iterator function result
 */
 type IteratorThunk = ( iter: Iterator ) => any;
 

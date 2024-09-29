@@ -1016,7 +1016,7 @@ declare function arraylike2object<T = unknown>( x: Array<T> ): GenericAccessorOb
 *     '2': 3,
 *     '4': 4,
 *     'length': 4
- };
+* };
 * var obj = arraylike2object( x );
 * // returns {...}
 *

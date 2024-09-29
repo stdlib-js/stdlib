@@ -59,6 +59,6 @@ import prependSingletonDimensions = require( './index' );
 	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 	prependSingletonDimensions(); // $ExpectError
-	prependSingletonDimensions( x, ); // $ExpectError
+	prependSingletonDimensions( x ); // $ExpectError
 	prependSingletonDimensions( x, 3, [ 1, 2, 3 ], [ 2, 3 ] ); // $ExpectError
 }

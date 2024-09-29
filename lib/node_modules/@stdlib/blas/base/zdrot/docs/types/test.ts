@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import Complex128Array = require( '@stdlib/array/complex64' );
+import Complex128Array = require( '@stdlib/array/complex128' );
 import zdrot = require( './index' );
 
 

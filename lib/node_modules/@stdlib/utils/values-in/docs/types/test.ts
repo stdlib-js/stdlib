@@ -23,7 +23,7 @@ import objectValuesIn = require( './index' );
 
 // The function returns an array of values...
 {
-	objectValuesIn( { 'beep': 'boop', 'foo': 3.14 } ); // $ExpectType Array<any>
+	objectValuesIn( { 'beep': 'boop', 'foo': 3.14 } ); // $ExpectType any[]
 }
 
 // The compiler throws an error if the function is provided an incorrect number of arguments...

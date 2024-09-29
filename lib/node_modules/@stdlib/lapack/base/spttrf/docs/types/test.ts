@@ -22,7 +22,7 @@ import spttrf = require( './index' );
 
 // TESTS //
 
-// The function returns a Float32Array...
+// The function returns a number...
 {
 	const D = new Float32Array( 3 );
 	const E = new Float32Array( 2 );
