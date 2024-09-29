@@ -219,9 +219,6 @@ jobs:
           echo 'g++:'
           g++ --version
           echo ''
-          echo 'gfortran:'
-          gfortran --version
-          echo ''
           echo 'Git:'
           git --version
           echo ''
