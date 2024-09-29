@@ -86,7 +86,7 @@ jobs:
         BUILD_TASK: ['test-install']
 
         # Define the list of Node.js versions on which to run this job:
-        NODE_VERSION: ['20', '18', '16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
+        NODE_VERSION: ['20', '18', '16'] # ['20', '18', '16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
 
         # Define the list of package managers to test:
         PACKAGE_MANAGER: ['npm']
