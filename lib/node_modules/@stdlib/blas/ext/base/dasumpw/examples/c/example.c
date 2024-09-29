@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/blas/ext/base/dasumpw.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {

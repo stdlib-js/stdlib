@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/blas/ext/base/dapxsumkbn2.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {

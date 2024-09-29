@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/dcusum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -36,6 +36,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -47,7 +49,7 @@
     {
       "task": "benchmark",
       "src": [
-        "./src/dcusum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -55,13 +57,15 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/ext/base/dcusumkbn"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dcusum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -69,6 +73,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/ext/base/dcusumkbn"
       ]
     }
