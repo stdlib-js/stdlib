@@ -72,7 +72,6 @@ function isPositive( value: number ): boolean {
 	cuanyByRight( x, [], {} ); // $ExpectError
 	cuanyByRight( x, '', {} ); // $ExpectError
 	cuanyByRight( x, undefined, {} ); // $ExpectError
-
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...

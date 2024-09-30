@@ -33,7 +33,7 @@ function mapper( value: number ): number {
 * Reducing function.
 *
 * @param acc - accumulated value
-* @param v - array element
+* @param value - array element
 * @returns result
 */
 function reducer( acc: number, value: number ): number {
@@ -171,7 +171,7 @@ function reducer( acc: number, value: number ): number {
 	mapReduceRight(); // $ExpectError
 	mapReduceRight( arr1 ); // $ExpectError
 	mapReduceRight( arr1, 0 ); // $ExpectError
-	mapReduceRight( arr1, 0, mapper, ); // $ExpectError
+	mapReduceRight( arr1, 0, mapper ); // $ExpectError
 	mapReduceRight( arr1, 0, mapper, reducer, {}, 3 ); // $ExpectError
 
 	const arr2 = array( [ 1, 2, 3 ] );

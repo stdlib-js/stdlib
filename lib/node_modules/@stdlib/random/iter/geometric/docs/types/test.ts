@@ -30,7 +30,7 @@ import iterator = require( './index' );
 
 // The compiler throws an error if the function is provided an invalid input argument...
 {
-	iterator( '0.2', ); // $ExpectError
+	iterator( '0.2' ); // $ExpectError
 	iterator( true ); // $ExpectError
 	iterator( { 'iter': 'beep' } ); // $ExpectError
 }

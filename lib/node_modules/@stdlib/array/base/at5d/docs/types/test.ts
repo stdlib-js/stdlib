@@ -119,6 +119,6 @@ import at5d = require( './index' );
 	at5d( x, 0 ); // $ExpectError
 	at5d( x, 0, 0 ); // $ExpectError
 	at5d( x, 0, 0, 0 ); // $ExpectError
-	at5d( x, 0, 0, 0, 0, ); // $ExpectError
+	at5d( x, 0, 0, 0, 0 ); // $ExpectError
 	at5d( x, 0, 0, 0, 0, 0, 0 ); // $ExpectError
 }

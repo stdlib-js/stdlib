@@ -54,7 +54,7 @@ type CMACH = 'E' | 'e' | 'S' | 's' | 'B' | 'b' | 'P' | 'p' | 'N' | 'n' | 'R' | '
 * out = dlamch( 'B' );
 * // returns 2.0
 */
-declare function dlamch( x: CMACH | string ): number;
+declare function dlamch( cmach: CMACH | string ): number;
 
 
 // EXPORTS //

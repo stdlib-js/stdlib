@@ -87,8 +87,8 @@ interface Namespace {
 	* Parse a string representation of a 64-bit complex number.
 	*
 	* @param str - string representation of a complex number
-	* @returns Complex64 instance
 	* @throws must provide a string recognized as a complex number
+	* @returns Complex64 instance
 	*
 	* @example
 	* var str = '5 + 3i';
