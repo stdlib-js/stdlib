@@ -287,7 +287,7 @@ console.log( x.get( 0 ).toString() );
 
 #### stdlib_strided_cfill( N, alpha, \*X, strideX )
 
-Fills a single-precision floating-point strided array `X` with a specified scalar constant `alpha`.
+Fills a single-precision complex floating-point strided array `X` with a specified scalar constant `alpha`.
 
 ```c
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
@@ -321,13 +321,13 @@ stdlib_strided_cfill_ndarray( 4, alpha, (stdlib_complex64_t *x), 1, 0 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **alpha**: `[in] stlib_complex64_t` scalar constant.
+-   **alpha**: `[in] stdlib_complex64_t` scalar constant.
 -   **X**: `[out] stdlib_complex64_t*` input array.
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c
-void stdlib_strided_cfill_ndarray( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex_64_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+void stdlib_strided_cfill_ndarray( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>
@@ -367,7 +367,7 @@ int main( void ) {
     const int strideX = 1;
 
     // Fill the array:
-    stdlib_strided_cfill( N, alpha, (stdlib_complex_64_t *)x, strideX );
+    stdlib_strided_cfill( N, alpha, (stdlib_complex64_t *)x, strideX );
 
     // Print the result:
     for ( int i = 0; i < N; i++ ) {

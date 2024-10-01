@@ -31,10 +31,10 @@ int main() {
 	const int N = 4;
 
 	// Specify a stride:
-	const int stride = 1;
+	const int strideX = 1;
 
 	// Fill the array:
-	c_zfill( N, alpha, (stdlib_complex128_t *)x, stride );
+	stdlib_strided_zfill( N, alpha, (stdlib_complex128_t *)x, strideX );
 
 	// Print the result:
 	for ( int i = 0; i < 8; i++ ) {

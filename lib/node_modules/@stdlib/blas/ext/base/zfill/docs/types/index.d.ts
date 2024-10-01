@@ -33,7 +33,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns input array
 	*
 	* @example
@@ -59,7 +59,7 @@ interface Routine {
 	* var im = imag( y );
 	* // returns 10.0
 	*/
-	( N: number, alpha: Complex128, x: Complex128Array, stride: number ): Complex128Array;
+	( N: number, alpha: Complex128, x: Complex128Array, strideX: number ): Complex128Array;
 
 	/**
 	* Fills a double-precision complex floating-point strided array with a specified scalar constant.
@@ -67,8 +67,8 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns input array
 	*
 	* @example
@@ -94,7 +94,7 @@ interface Routine {
 	* var im = imag( y );
 	* // returns 10.0
 	*/
-	ndarray( N: number, alpha: Complex128, x: Complex128Array, stride: number, offset: number ): Complex128Array;
+	ndarray( N: number, alpha: Complex128, x: Complex128Array, strideX: number, offsetX: number ): Complex128Array;
 }
 
 /**
@@ -103,7 +103,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param alpha - scalar constant
 * @param x - input array
-* @param stride - index increment
+* @param strideX - index increment
 * @returns input array
 *
 * @example
