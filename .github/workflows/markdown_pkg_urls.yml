@@ -77,7 +77,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # v4.0.4
         with:
-          node-version: '16' # 'lts/*'
+          node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
