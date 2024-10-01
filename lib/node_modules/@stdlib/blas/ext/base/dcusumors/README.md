@@ -115,7 +115,7 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, `offsetX` and `offsetY` parameters support indexing semantics based on a starting indices. For example, to calculate the cumulative sum of every other value in the strided input array starting from the second value and to store in the last `N` elements of the strided output array starting from the last element
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, offset parameters support indexing semantics based on starting indices. For example, to calculate the cumulative sum of every other value in the strided input array starting from the second value and to store in the last `N` elements of the strided output array starting from the last element
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -149,12 +149,13 @@ dcusumors.ndarray( 4, 0.0, x, 2, 1, y, -1, y.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var Float64Array = require( '@stdlib/array/float64' );
 var dcusumors = require( '@stdlib/blas/ext/base/dcusumors' );
 
-var x = filledarrayBy( 10, 'float64', discreteUniform( 0, 100 ) );
+var x = discreteUniform( 10, -100, 100, {
+    'dtype': 'float64'
+});
 var y = new Float64Array( x.length );
 
 console.log( x );
@@ -167,6 +168,138 @@ console.log( y );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/ext/base/dcusumors.h"
+```
+
+#### stdlib_strided_dcusumors( N, sum, \*X, strideX, \*Y, strideY )
+
+Computes the cumulative sum of double-precision floating-point strided array elements using ordinary recursive summation.
+
+```c
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
+double y[] = { 0.0, 0.0, 0.0, 0.0 };
+
+stdlib_strided_dcusumors( 4, 0.0, x, 1, y, 1 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **sum**: `[in] double` initial sum.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **Y**: `[out] double*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+
+```c
+void stdlib_strided_dcusumors( const CBLAS_INT N, double sum, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
+```
+
+<!-- lint disable maximum-heading-length -->
+
+#### stdlib_strided_dcusumors_ndarray( N, sum, \*X, strideX, offsetX, \*Y, strideY, offsetY )
+
+<!-- lint enable maximum-heading-length -->
+
+Computes the cumulative sum of double-precision floating-point strided array elements using ordinary recursive summation and alternative indexing semantics.
+
+```c
+const double x[] = { 1.0, 2.0, 3.0, 4.0 }
+double y[] = { 0.0, 0.0, 0.0, 0.0 }
+
+stdlib_strided_dcusumors_ndarray( 4, 0.0, x, 1, 0, y, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **sum**: `[in] double` initial sum.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[out] double*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+void stdlib_strided_dcusumors_ndarray( const CBLAS_INT N, double sum, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/ext/base/dcusumors.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays:
+    const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+    double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+
+    // Specify the number of elements:
+    const int N = 4;
+
+    // Specify stride lengths:
+    const int strideX = 2;
+    const int strideY = -2;
+
+    // Compute the cumulative sum:
+    stdlib_strided_dcusumors( N, 0.0, x, strideX, y, strideY );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "y[ %d ] = %lf\n", i, y[ i ] );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <section class="references">
 

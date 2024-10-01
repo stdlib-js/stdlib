@@ -17,9 +17,7 @@
 */
 
 #include "stdlib/blas/ext/base/dcusumors.h"
-#include <stdint.h>
 #include <stdio.h>
-#include <inttypes.h>
 
 int main( void ) {
 	// Create strided arrays:
@@ -27,17 +25,17 @@ int main( void ) {
 	double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 	// Specify the number of elements:
-	const int64_t N = 4;
+	const int N = 4;
 
 	// Specify stride lengths:
-	const int64_t strideX = 2;
-	const int64_t strideY = -2;
+	const int strideX = 2;
+	const int strideY = -2;
 
 	// Compute the cumulative sum:
 	stdlib_strided_dcusumors( N, 0.0, x, strideX, y, strideY );
 
 	// Print the result:
-	for ( int64_t i = 0; i < 8; i++ ) {
-		printf( "y[ %"PRId64" ] = %lf\n", i, y[ i ] );
+	for ( int i = 0; i < 8; i++ ) {
+		printf( "y[ %d ] = %lf\n", i, y[ i ] );
 	}
 }
