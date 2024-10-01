@@ -42,7 +42,8 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex128array",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
@@ -57,7 +58,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64/ctor",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
@@ -72,7 +74,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64/ctor",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     }
   ]
