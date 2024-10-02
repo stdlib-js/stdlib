@@ -251,7 +251,7 @@ Scales values from `CX` by `ca`.
 float cx[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
 const stdlib_complex64_t ca = stdlib_complex64( 2.0f, 2.0f );
 
-c_dscal( 4, ca, (void *)cx, 1 );
+c_cscal( 4, ca, (void *)cx, 1 );
 ```
 
 The function accepts the following arguments:
@@ -262,7 +262,32 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` index increment for `CX`.
 
 ```c
-void c_dscal( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX );
+void c_cscal( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX );
+```
+
+#### c_cscal_ndarray( N, ca, \*CX, strideX, offsetX )
+
+Scales values from `CX` by `ca` using alternative indexing semantics.
+
+```c
+#include "stdlib/complex/float32/ctor.h"
+
+float cx[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+const stdlib_complex64_t ca = stdlib_complex64( 2.0f, 2.0f );
+
+c_cscal( 4, ca, (void *)cx, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **ca**: `[in] stdlib_complex64_t` scalar constant.
+-   **CX**: `[inout] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `CX`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `CX`.
+
+```c
+void c_cscal_ndarray( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>
@@ -303,6 +328,14 @@ int main( void ) {
 
     // Scale the elements of the array:
     c_cscal( N, ca, (void *)cx, strideX );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "cx[ %i ] = %f + %fj\n", i, cx[ i*2 ], cx[ (i*2)+1 ] );
+    }
+
+    // Scale the elements of the array:
+    c_cscal_ndarray( N, ca, (void *)cx, -strideX, 3 );
 
     // Print the result:
     for ( int i = 0; i < N; i++ ) {

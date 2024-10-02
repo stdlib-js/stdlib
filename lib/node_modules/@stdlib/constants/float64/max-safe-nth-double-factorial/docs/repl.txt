@@ -1,0 +1,13 @@
+
+{{alias}}
+    Maximum safe nth double factorial when stored in double-precision floating-
+    point format.
+
+    Examples
+    --------
+    > {{alias}}
+    301
+
+    See Also
+    --------
+
