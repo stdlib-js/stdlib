@@ -4,8 +4,8 @@
 
     When invoked, the indicator function is provided two arguments:
 
-    - `value`: object value
-    - `key`: object key
+    - value: object value.
+    - key: object key.
 
     The value returned by an indicator function should be a value which can be
     serialized as an object key.

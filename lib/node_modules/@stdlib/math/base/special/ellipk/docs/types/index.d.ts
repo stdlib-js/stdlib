@@ -43,7 +43,7 @@
 * v = ellipk( NaN );
 * // returns NaN
 */
-declare function ellipk( x: number ): number;
+declare function ellipk( m: number ): number;
 
 
 // EXPORTS //

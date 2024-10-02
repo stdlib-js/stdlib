@@ -20,7 +20,7 @@ limitations under the License.
 
 # cunoneByRight
 
-> Cumulatively test whether no array element in a provided array passes a test implemented by a predicate function, while iterating from right-to-left.
+> Cumulatively test whether every array element in a provided array fails a test implemented by a predicate function, while iterating from right-to-left.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var cunoneByRight = require( '@stdlib/array/base/cunone-by-right' );
 
 #### cunoneByRight( x, predicate\[, thisArg ] )
 
-Cumulatively tests whether no array element in a provided array passes a test implemented by a `predicate` function, while iterating from right-to-left.
+Cumulatively tests whether every array element in a provided array fails a test implemented by a `predicate` function, while iterating from right-to-left.
 
 ```javascript
 function fcn( value ) {
@@ -43,25 +43,6 @@ var x = [ 1, 1, 0, 0, 0 ];
 
 var y = cunoneByRight( x, fcn );
 // returns [ true, true, true, false, false ];
-```
-
-#### cunoneByRight.assign( x, out, stride, offset, predicate\[, thisArg ] )
-
-Cumulatively tests whether no array element in a provided array passes a test implemented by a `predicate` function, while iterating from right-to-left, and assigns the results to the elements in the output array.
-
-```javascript
-function fcn( v ) {
-    return v > 0;
-}
-
-var x = [ 1, 1, 0, 0, 0 ];
-var y = [ false, null, false, null, false, null, false, null, false, null ];
-
-var out = cunoneByRight.assign( x, y, 2, 0, fcn );
-// returns [ true, null, true, null, true, null, false, null, false, null ]
-
-var bool = ( out === y );
-// returns true
 ```
 
 The invoked `predicate` function is provided three arguments:
@@ -89,6 +70,25 @@ var bool = cunoneByRight( x, fcn, context );
 
 var count = context.count;
 // returns 4
+```
+
+#### cunoneByRight.assign( x, out, stride, offset, predicate\[, thisArg ] )
+
+Cumulatively test whether every array element in a provided array fails a test implemented by a `predicate` function, while iterating from right-to-left, and assigns the results to the elements in the output array.
+
+```javascript
+function fcn( v ) {
+    return v > 0;
+}
+
+var x = [ 1, 1, 0, 0, 0 ];
+var y = [ false, null, false, null, false, null, false, null, false, null ];
+
+var out = cunoneByRight.assign( x, y, 2, 0, fcn );
+// returns [ true, null, true, null, true, null, false, null, false, null ]
+
+var bool = ( out === y );
+// returns true
 ```
 
 </section>

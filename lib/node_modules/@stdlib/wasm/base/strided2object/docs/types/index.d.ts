@@ -1302,7 +1302,7 @@ declare function strided2object<T = unknown>( N: number, x: Array<T>, stride: nu
 *     '2': 3,
 *     '4': 4,
 *     'length': 4
- };
+* };
 * var obj = strided2object( 4, x, 1, 0 );
 * // returns {...}
 *

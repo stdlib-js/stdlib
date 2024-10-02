@@ -69,9 +69,9 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4.0.3
+        uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # v4.0.4
         with:
-          node-version: '16' # 'lts/*'
+          node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
@@ -150,7 +150,7 @@ jobs:
         id: cpr
         if: steps.svg-equations.outputs.changed == 'true' || steps.equation-elements.outputs.changed == 'true'
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6.1.0
+        uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5
         with:
           title: 'docs: update Markdown equation elements'
           body: |

@@ -5,9 +5,9 @@
 
     The predicate function is provided three arguments:
 
-    - `value`: property value
-    - `index`: property key
-    - `object`: the input object
+    - value: property value.
+    - index: property key.
+    - object: the input object.
 
     The function immediately returns upon encountering a non-truthy return
     value.

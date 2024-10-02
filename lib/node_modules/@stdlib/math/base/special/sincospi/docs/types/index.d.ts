@@ -23,8 +23,8 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Inteface describing `sincospi`.
- */
+* Interface describing `sincospi`.
+*/
 interface SinCosPi {
 	/**
 	* Simultaneously computes the sine and cosine of a number times π.

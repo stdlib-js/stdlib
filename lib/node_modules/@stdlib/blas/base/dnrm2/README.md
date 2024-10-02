@@ -91,7 +91,7 @@ var z = dnrm2( 4, x1, 2 );
 // returns 5.0
 ```
 
-If either `N` or `stride` is less than or equal to `0`, the function returns `0`.
+If `N` is less than or equal to `0`, the function returns `0`.
 
 #### dnrm2.ndarray( N, x, stride, offset )
 
@@ -207,6 +207,28 @@ The function accepts the following arguments:
 double c_dnrm2( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
 ```
 
+#### c_dnrm2_ndarray( N, \*X, stride, offset )
+
+Computes the L2-norm of a double-precision floating-point vector using alternative indexing semantics.
+
+```c
+const double x[] = { 1.0, -2.0, 2.0 };
+
+double v = c_dnrm2( 3, x, -1, 2 );
+// returns 3.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+-   **offset**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+double c_dnrm2_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT stride, const CBLAS_INT offset );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -241,6 +263,12 @@ int main( void ) {
 
     // Compute the L2-norm:
     double l2 = c_dnrm2( N, x, strideX );
+
+    // Print the result:
+    printf( "L2-norm: %lf\n", l2 );
+
+    // Compute the L2-norm:
+    l2 = c_dnrm2_ndarray( N, x, -strideX, N-1 );
 
     // Print the result:
     printf( "L2-norm: %lf\n", l2 );

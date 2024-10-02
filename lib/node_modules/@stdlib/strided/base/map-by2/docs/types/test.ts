@@ -21,6 +21,7 @@ import mapBy2 = require( './index' );
 /**
 * Accessor callback.
 *
+* @param values - accessed values
 * @returns accessed values
 */
 function accessor( values: [ number, number ] ): [ number, number ] {

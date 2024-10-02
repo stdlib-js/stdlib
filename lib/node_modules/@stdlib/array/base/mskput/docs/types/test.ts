@@ -87,6 +87,6 @@ import mskput = require( './index' );
 	mskput(); // $ExpectError
 	mskput( [] ); // $ExpectError
 	mskput( [], [] ); // $ExpectError
-	mskput( [], [], [], ); // $ExpectError
+	mskput( [], [], [] ); // $ExpectError
 	mskput( [], [], [], 'strict', {} ); // $ExpectError
 }

@@ -23,22 +23,22 @@
 *
 * @param x - input value (in degrees)
 * @returns cosine
- *
- * @example
- * var v = cosd( 0.0 );
- * // returns 1.0
- *
- * @example
- * var v = cosd( 60.0 );
- * // returns ~0.5
- *
- * @example
- * var v = cosd( 90.0);
- * // returns 0
- *
- * @example
- * var v = cosd( NaN );
- * // returns NaN
+*
+* @example
+* var v = cosd( 0.0 );
+* // returns 1.0
+*
+* @example
+* var v = cosd( 60.0 );
+* // returns ~0.5
+*
+* @example
+* var v = cosd( 90.0);
+* // returns 0
+*
+* @example
+* var v = cosd( NaN );
+* // returns NaN
 */
 declare function cosd( x: number ): number;
 

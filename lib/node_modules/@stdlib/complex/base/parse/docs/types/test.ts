@@ -24,7 +24,7 @@ import parse = require( './index' );
 // The function returns a complex like object...
 {
 	const str = '54 + 3i';
-	parse( str ); // $ExpectType {re: number; im: number} | null
+	parse( str ); // $ExpectType ComplexLike | null
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...

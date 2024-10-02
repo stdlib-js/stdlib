@@ -24,7 +24,7 @@ import serialize = require( './index' );
 /**
 * Mock function to create an ndarray-like object.
 *
-* @return ndarray-like object
+* @returns ndarray-like object
 */
 function array(): ndarray {
 	const obj: ndarray = {

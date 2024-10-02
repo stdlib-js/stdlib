@@ -24,7 +24,7 @@ import forEach = require( './index' );
 /**
 * Mock function to create an ndarray-like object.
 *
-* @return ndarray-like object
+* @returns ndarray-like object
 */
 function array(): ndarray {
 	const obj: ndarray = {
@@ -50,6 +50,9 @@ function array(): ndarray {
 
 /**
 * Callback function.
+*
+* @param v - ndarray element
+* @throws unexpected error
 */
 function clbk( v: any ): void {
 	if ( v !== v ) {

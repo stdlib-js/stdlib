@@ -28,16 +28,16 @@
     {
       "task": "build",
       "src": [
-        "./src/dapx.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-double",
@@ -48,30 +48,32 @@
     {
       "task": "benchmark",
       "src": [
-        "./src/dapx.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dapx.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     }
   ]
 }

@@ -26,11 +26,10 @@ import arraylike2object = require( './index' );
 /**
 * Returns an array-like object supporting the get/set protocol.
 *
-* @return array-like object
+* @returns array-like object
 */
 function accessorArray(): AccessorArrayLike<number> {
-	let arr: AccessorArrayLike<number>;
-	arr = {
+	const arr: AccessorArrayLike<number> = {
 		'0': 1,
 		'1': 2,
 		'2': 3,
@@ -49,11 +48,10 @@ function accessorArray(): AccessorArrayLike<number> {
 /**
 * Returns an array-like object.
 *
-* @return array-like object
+* @returns array-like object
 */
 function arrayLike(): ArrayLike<number> {
-	let arr: ArrayLike<number>;
-	arr = {
+	const arr: ArrayLike<number> = {
 		'0': 1,
 		'1': 2,
 		'2': 3,

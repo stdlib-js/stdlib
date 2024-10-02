@@ -36,7 +36,7 @@ import cscal = require( './index' );
 	const cx = new Complex64Array( 10 );
 	const ca = new Complex64( 2.0, 2.0 );
 
-	cscal( '10', ca, cx, 1 ); // $EcxpectError
+	cscal( '10', ca, cx, 1 ); // $ExpectError
 	cscal( true, ca, cx, 1 ); // $ExpectError
 	cscal( false, ca, cx, 1 ); // $ExpectError
 	cscal( null, ca, cx, 1 ); // $ExpectError

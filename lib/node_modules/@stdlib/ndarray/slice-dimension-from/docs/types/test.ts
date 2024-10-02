@@ -125,7 +125,7 @@ import sliceDimensionFrom = require( './index' );
 	sliceDimensionFrom( x, 1, {} ); // $ExpectError
 	sliceDimensionFrom( x, 1, ( x: number ): number => x, 1 ); // $ExpectError
 
-	sliceDimensionFrom( x, 1, '5', {}; // $ExpectError
+	sliceDimensionFrom( x, 1, '5', {} ); // $ExpectError
 	sliceDimensionFrom( x, 1, false, {}; // $ExpectError
 	sliceDimensionFrom( x, 1, true, {}; // $ExpectError
 	sliceDimensionFrom( x, 1, null, {}; // $ExpectError

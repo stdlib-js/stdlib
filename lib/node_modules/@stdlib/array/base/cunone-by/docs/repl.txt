@@ -5,9 +5,9 @@
 
     The predicate function is provided three arguments:
 
-    - `value`: current array element.
-    - `index`: current array element index.
-    - `arr`: the input array.
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
 
     Parameters
     ----------

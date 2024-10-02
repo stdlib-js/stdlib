@@ -3,8 +3,8 @@
     Simultaneously sorts two single-precision floating-point strided arrays
     based on the sort order of the first array using Shellsort.
 
-    The `N` and `stride` parameters determine which elements in `x` and `y` are
-    accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
@@ -67,11 +67,10 @@
     > y
     <Float32Array>[ 3.0, 1.0, 0.0, 2.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0 ] );
     > y = new {{alias:@stdlib/array/float32}}( [ 0.0, 1.0, 2.0, 3.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}( N, -1, x, 2, y, 2 )
+    > {{alias}}( 2, -1, x, 2, y, 2 )
     <Float32Array>[ 3.0, -2.0, 1.0, -4.0 ]
     > y
     <Float32Array>[ 2.0, 1.0, 0.0, 3.0 ]
@@ -81,13 +80,13 @@
     > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
     > var y0 = new {{alias:@stdlib/array/float32}}( [ 0.0, 1.0, 2.0, 3.0 ] );
     > var y1 = new {{alias:@stdlib/array/float32}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, 1, x1, 2, y1, 2 )
+    > {{alias}}( 2, 1, x1, 2, y1, 2 )
     <Float32Array>[ -4.0, 3.0, -2.0 ]
     > x0
     <Float32Array>[ 1.0, -4.0, 3.0, -2.0 ]
     > y0
     <Float32Array>[ 0.0, 3.0, 2.0, 1.0 ]
+
 
 {{alias}}.ndarray( N, order, x, strideX, offsetX, y, strideY, offsetY )
     Simultaneously sorts two single-precision floating-point strided arrays
@@ -95,8 +94,8 @@
     indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
 
     Parameters
     ----------
@@ -143,8 +142,7 @@
     // Using an index offset:
     > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0 ] );
     > y = new {{alias:@stdlib/array/float32}}( [ 0.0, 1.0, 2.0, 3.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, 1, x, 2, 1, y, 2, 1 )
+    > {{alias}}.ndarray( 2, 1, x, 2, 1, y, 2, 1 )
     <Float32Array>[ 1.0, -4.0, 3.0, -2.0 ]
     > y
     <Float32Array>[ 0.0, 3.0, 2.0, 1.0 ]
