@@ -17,19 +17,41 @@
 */
 
 #include "stdlib/blas/base/isamax.h"
-#include "stdlib/math/base/special/absf.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/math/base/special/absf.h"
 
 /**
-* Finds the index of the first element having the maximum absolute value.
+* Finds the index of the first element having the maximum absolute value using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        input array
 * @param strideX  X stride length
+* @param offsetX  starting index for X
 * @return         index value
 */
-CBLAS_INT API_SUFFIX(c_isamax)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX ) {
-	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	return API_SUFFIX(c_isamax_ndarray)( N, X, strideX, ox );
+CBLAS_INT API_SUFFIX(c_isamax_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT idx;
+	CBLAS_INT ix;
+	CBLAS_INT i;
+	float smax;
+	float v;
+
+	if ( N < 1 ) {
+		return -1;
+	}
+	idx = 0;
+	if ( N == 1 ) {
+		return idx;
+	}
+	smax = stdlib_base_absf( X[ offsetX ] );
+	ix = offsetX + strideX;
+	for ( i = 1; i < N; i++ ) {
+		v = stdlib_base_absf( X[ ix ] );
+		if ( v > smax ) {
+			idx = i;
+			smax = v;
+		}
+		ix += strideX;
+	}
+	return idx;
 }
