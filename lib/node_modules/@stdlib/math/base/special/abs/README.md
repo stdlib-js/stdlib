@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Absolute Value
+# abs
 
 > Compute the [absolute value][absolute-value] of a double-precision floating-point number.
 
@@ -33,7 +33,7 @@ The [absolute value][absolute-value] is defined as
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="|x| = \begin{cases} x &amp; \textrm{if}\ x \geq 0 \\ -x &amp; \textrm{if}\ x &lt; 0\end{cases}" data-equation="eq:absolute_value">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/C:\Users\pb\Documents\GitHub\stdlib\lib\node_modules\@stdlib\math\base\special\abs\docs\img\equation_absolute_value.svg" alt="Absolute value">
+    <img src="" alt="Absolute value">
     <br>
 </div> -->
 
@@ -83,16 +83,16 @@ v = abs( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var abs = require( '@stdlib/math/base/special/abs' );
 
-var rand;
-var i;
+var x = discreteUniform( 100, -100, 100, {
+    'dtype': 'float64'
+});
 
-for ( i = 0; i < 100; i++ ) {
-    rand = round( randu() * 100.0 ) - 50.0;
-    console.log( 'abs(%d) = %d', rand, abs( rand ) );
+var i;
+for ( i = 0; i < x.length; i++ ) {
+    console.log( 'abs(%d) = %d', x[ i ], abs( x[ i ] ) );
 }
 ```
 
