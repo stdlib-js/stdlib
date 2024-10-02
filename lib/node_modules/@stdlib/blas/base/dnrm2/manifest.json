@@ -44,8 +44,9 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
@@ -58,7 +59,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dnrm2.c"
+        "./src/dnrm2.c",
+        "./src/dnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -70,8 +72,10 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/abs2",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/constants/float64/max",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -80,7 +84,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dnrm2.c"
+        "./src/dnrm2.c",
+        "./src/dnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -92,8 +97,10 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/abs2",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/constants/float64/max",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -114,8 +121,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
@@ -139,7 +147,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
     {
@@ -159,7 +168,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
 
@@ -179,8 +189,9 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
@@ -193,7 +204,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dnrm2.c"
+        "./src/dnrm2.c",
+        "./src/dnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -205,8 +217,10 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/abs2",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/constants/float64/max",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -215,7 +229,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dnrm2.c"
+        "./src/dnrm2.c",
+        "./src/dnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -227,8 +242,10 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/abs2",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/constants/float64/max",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -248,8 +265,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
@@ -272,7 +290,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
     {
@@ -291,7 +310,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
 
@@ -312,8 +332,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
@@ -337,7 +358,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
     {
@@ -357,7 +379,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
 
@@ -367,7 +390,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dnrm2.c"
+        "./src/dnrm2.c",
+        "./src/dnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -377,15 +401,17 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/abs2",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/constants/float64/max",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/napi/create-double",
-        "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/napi/create-double"
       ]
     },
     {
@@ -394,7 +420,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dnrm2.c"
+        "./src/dnrm2.c",
+        "./src/dnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -406,8 +433,10 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/abs2",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/constants/float64/max",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -416,7 +445,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dnrm2.c"
+        "./src/dnrm2.c",
+        "./src/dnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -428,8 +458,10 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/abs2",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/constants/float64/max",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -439,7 +471,8 @@
       "blas": "",
       "wasm": true,
       "src": [
-        "./src/dnrm2.c"
+        "./src/dnrm2.c",
+        "./src/dnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -451,8 +484,10 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/abs2",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/constants/float64/max",
+        "@stdlib/strided/base/stride2offset"
       ]
     }
   ]

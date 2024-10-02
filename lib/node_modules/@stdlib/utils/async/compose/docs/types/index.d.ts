@@ -67,7 +67,7 @@ type BinaryFunction = ( result: any, next: DoneCallback ) => void;
 *
 * ## Notes
 *
-* - Only the rightmost function is explicitly permitted to accept multiple arguments. All other functions are evaluated as binary functions.
+* -   Only the rightmost function is explicitly permitted to accept multiple arguments. All other functions are evaluated as binary functions.
 *
 * @param args - arguments
 * @param next - invoked upon function completion

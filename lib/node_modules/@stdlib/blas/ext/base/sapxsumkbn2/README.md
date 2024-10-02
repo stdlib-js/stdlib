@@ -132,10 +132,10 @@ var v = sapxsumkbn2.ndarray( 4, 5.0, x, 2, 1 );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by');
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var sapxsumkbn2 = require( '@stdlib/blas/ext/base/sapxsumkbn2' );
 
-var x = filledarrayBy( 10, 'float32', discreteUniform( 0, 100 ));
+var x = filledarrayBy( 10, 'float32', discreteUniform( 0, 100 ) );
 console.log( x );
 
 var v = sapxsumkbn2( x.length, 5.0, x, 1 );

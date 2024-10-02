@@ -21,14 +21,19 @@ name: generate_pr_commit_message
 
 # Workflow triggers:
 on:
-  pull_request:
+  pull_request_target:
     types:
       - labeled
 
 # Global permissions:
 permissions:
+  # Allow read-only access to the repository contents:
   contents: read
+
+  # Allow write access to issues, assignees, labels, and milestones:
   issues: write
+
+  # Allow write access to pull requests:
   pull-requests: write
 
 # Workflow jobs:
@@ -71,7 +76,7 @@ jobs:
 
       # Post commit message as PR comment:
       - name: 'Post commit message as PR comment'
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v4
         with:
           token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           issue-number: ${{ github.event.pull_request.number }}

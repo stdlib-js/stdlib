@@ -33,7 +33,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns input array
 	*
 	* @example
@@ -59,7 +59,7 @@ interface Routine {
 	* var im = imagf( y );
 	* // returns 10.0
 	*/
-	( N: number, alpha: Complex64, x: Complex64Array, stride: number ): Complex64Array;
+	( N: number, alpha: Complex64, x: Complex64Array, strideX: number ): Complex64Array;
 
 	/**
 	* Fills a single-precision complex floating-point strided array with a specified scalar constant.
@@ -67,8 +67,8 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns input array
 	*
 	* @example
@@ -94,7 +94,7 @@ interface Routine {
 	* var im = imagf( y );
 	* // returns 10.0
 	*/
-	ndarray( N: number, alpha: Complex64, x: Complex64Array, stride: number, offset: number ): Complex64Array;
+	ndarray( N: number, alpha: Complex64, x: Complex64Array, strideX: number, offsetX: number ): Complex64Array;
 }
 
 /**
@@ -103,7 +103,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param alpha - scalar constant
 * @param x - input array
-* @param stride - index increment
+* @param strideX - index increment
 * @returns input array
 *
 * @example

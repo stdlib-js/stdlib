@@ -46,11 +46,11 @@ interface ModuleConstructor {
 	* });
 	*
 	* // Create a BLAS routine:
-	* var daxpy = new daxpy.Module( mem );
+	* var mod = new daxpy.Module( mem );
 	* // returns <Module>
 	*
 	* // Initialize the routine:
-	* daxpy.initializeSync();
+	* mod.initializeSync();
 	*
 	* // Define a vector data type:
 	* var dtype = 'float64';
@@ -63,11 +63,11 @@ interface ModuleConstructor {
 	* var yptr = N * bytesPerElement( dtype );
 	*
 	* // Write vector values to module memory:
-	* daxpy.write( xptr, oneTo( N, dtype ) );
-	* daxpy.write( yptr, ones( N, dtype ) );
+	* mod.write( xptr, oneTo( N, dtype ) );
+	* mod.write( yptr, ones( N, dtype ) );
 	*
 	* // Perform computation:
-	* var ptr = daxpy.main( N, 5.0, xptr, 1, yptr, 1 );
+	* var ptr = mod.main( N, 5.0, xptr, 1, yptr, 1 );
 	* // returns <number>
 	*
 	* var bool = ( ptr === yptr );
@@ -75,7 +75,7 @@ interface ModuleConstructor {
 	*
 	* // Read out the results:
 	* var view = zeros( N, dtype );
-	* daxpy.read( yptr, view );
+	* mod.read( yptr, view );
 	* // view => <Float64Array>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 	*/
 	new( mem: Memory ): Module; // newable
@@ -100,11 +100,11 @@ interface ModuleConstructor {
 	* });
 	*
 	* // Create a BLAS routine:
-	* var daxpy = daxpy.Module( mem );
+	* var mod = daxpy.Module( mem );
 	* // returns <Module>
 	*
 	* // Initialize the routine:
-	* daxpy.initializeSync();
+	* mod.initializeSync();
 	*
 	* // Define a vector data type:
 	* var dtype = 'float64';
@@ -117,11 +117,11 @@ interface ModuleConstructor {
 	* var yptr = N * bytesPerElement( dtype );
 	*
 	* // Write vector values to module memory:
-	* daxpy.write( xptr, oneTo( N, dtype ) );
-	* daxpy.write( yptr, ones( N, dtype ) );
+	* mod.write( xptr, oneTo( N, dtype ) );
+	* mod.write( yptr, ones( N, dtype ) );
 	*
 	* // Perform computation:
-	* var ptr = daxpy.main( N, 5.0, xptr, 1, yptr, 1 );
+	* var ptr = mod.main( N, 5.0, xptr, 1, yptr, 1 );
 	* // returns <number>
 	*
 	* var bool = ( ptr === yptr );
@@ -129,7 +129,7 @@ interface ModuleConstructor {
 	*
 	* // Read out the results:
 	* var view = zeros( N, dtype );
-	* daxpy.read( yptr, view );
+	* mod.read( yptr, view );
 	* // view => <Float64Array>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 	*/
 	( mem: Memory ): Module; // callable
@@ -164,11 +164,11 @@ interface Module extends ModuleWrapper {
 	* });
 	*
 	* // Create a BLAS routine:
-	* var daxpy = new Module( mem );
+	* var mod = new daxpy.Module( mem );
 	* // returns <Module>
 	*
 	* // Initialize the routine:
-	* daxpy.initializeSync();
+	* mod.initializeSync();
 	*
 	* // Define a vector data type:
 	* var dtype = 'float64';
@@ -181,11 +181,11 @@ interface Module extends ModuleWrapper {
 	* var yptr = N * bytesPerElement( dtype );
 	*
 	* // Write vector values to module memory:
-	* daxpy.write( xptr, oneTo( N, dtype ) );
-	* daxpy.write( yptr, ones( N, dtype ) );
+	* mod.write( xptr, oneTo( N, dtype ) );
+	* mod.write( yptr, ones( N, dtype ) );
 	*
 	* // Perform computation:
-	* var ptr = daxpy.main( N, 5.0, xptr, 1, yptr, 1 );
+	* var ptr = mod.main( N, 5.0, xptr, 1, yptr, 1 );
 	* // returns <number>
 	*
 	* var bool = ( ptr === yptr );
@@ -193,7 +193,7 @@ interface Module extends ModuleWrapper {
 	*
 	* // Read out the results:
 	* var view = zeros( N, dtype );
-	* daxpy.read( yptr, view );
+	* mod.read( yptr, view );
 	* // view => <Float64Array>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 	*/
 	main( N: number, alpha: number, xptr: number, strideX: number, yptr: number, strideY: number ): number;
@@ -225,11 +225,11 @@ interface Module extends ModuleWrapper {
 	* });
 	*
 	* // Create a BLAS routine:
-	* var daxpy = new Module( mem );
+	* var mod = new daxpy.Module( mem );
 	* // returns <Module>
 	*
 	* // Initialize the routine:
-	* daxpy.initializeSync();
+	* mod.initializeSync();
 	*
 	* // Define a vector data type:
 	* var dtype = 'float64';
@@ -242,11 +242,11 @@ interface Module extends ModuleWrapper {
 	* var yptr = N * bytesPerElement( dtype );
 	*
 	* // Write vector values to module memory:
-	* daxpy.write( xptr, oneTo( N, dtype ) );
-	* daxpy.write( yptr, ones( N, dtype ) );
+	* mod.write( xptr, oneTo( N, dtype ) );
+	* mod.write( yptr, ones( N, dtype ) );
 	*
 	* // Perform computation:
-	* var ptr = daxpy.ndarray( N, 5.0, xptr, 1, 0, yptr, 1, 0 );
+	* var ptr = mod.ndarray( N, 5.0, xptr, 1, 0, yptr, 1, 0 );
 	* // returns <number>
 	*
 	* var bool = ( ptr === yptr );
@@ -254,7 +254,7 @@ interface Module extends ModuleWrapper {
 	*
 	* // Read out the results:
 	* var view = zeros( N, dtype );
-	* daxpy.read( yptr, view );
+	* mod.read( yptr, view );
 	* // view => <Float64Array>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 	*/
 	ndarray( N: number, alpha: number, xptr: number, strideX: number, offsetX: number, yptr: number, strideY: number, offsetY: number ): number;
@@ -330,11 +330,11 @@ interface Routine extends ModuleWrapper {
 	* });
 	*
 	* // Create a BLAS routine:
-	* var daxpy = new daxpy.Module( mem );
+	* var mod = new daxpy.Module( mem );
 	* // returns <Module>
 	*
 	* // Initialize the routine:
-	* daxpy.initializeSync();
+	* mod.initializeSync();
 	*
 	* // Define a vector data type:
 	* var dtype = 'float64';
@@ -347,11 +347,11 @@ interface Routine extends ModuleWrapper {
 	* var yptr = N * bytesPerElement( dtype );
 	*
 	* // Write vector values to module memory:
-	* daxpy.write( xptr, oneTo( N, dtype ) );
-	* daxpy.write( yptr, ones( N, dtype ) );
+	* mod.write( xptr, oneTo( N, dtype ) );
+	* mod.write( yptr, ones( N, dtype ) );
 	*
 	* // Perform computation:
-	* var ptr = daxpy.main( N, 5.0, xptr, 1, yptr, 1 );
+	* var ptr = mod.main( N, 5.0, xptr, 1, yptr, 1 );
 	* // returns <number>
 	*
 	* var bool = ( ptr === yptr );
@@ -359,7 +359,7 @@ interface Routine extends ModuleWrapper {
 	*
 	* // Read out the results:
 	* var view = zeros( N, dtype );
-	* daxpy.read( yptr, view );
+	* mod.read( yptr, view );
 	* // view => <Float64Array>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 	*/
 	Module: ModuleConstructor;

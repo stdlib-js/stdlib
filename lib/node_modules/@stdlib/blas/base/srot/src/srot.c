@@ -18,53 +18,22 @@
 
 #include "stdlib/blas/base/srot.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Applies a plane rotation.
 *
 * @param N        number of indexed elements
-* @param X        input array
+* @param X        first input array
 * @param strideX  X stride length
-* @param Y        output array
+* @param Y        second input array
 * @param strideY  Y stride length
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
 void API_SUFFIX(c_srot)( const CBLAS_INT N, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY, const float c, const float s ) {
-	float tmp;
-	CBLAS_INT ix;
-	CBLAS_INT iy;
-	CBLAS_INT i;
-
-	if ( N <= 0 ) {
-		return;
-	}
-	// If both strides are equal to `1`...
-	if ( strideX == 1 && strideY == 1 ) {
-		for ( i = 0; i < N; i++ ) {
-			tmp = ( c * X[ i ] ) + ( s * Y[ i ] );
-			Y[ i ] = ( c * Y[ i ] ) - ( s * X[ i ] );
-			X[ i ] = tmp;
-		}
-		return;
-	}
-	// If both strides are not equal to `1`...
-	if ( strideX < 0 ) {
-		ix = ( 1 - N ) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = ( 1 - N ) * strideY;
-	} else {
-		iy = 0;
-	}
-	for ( i = 0; i < N; i++ ) {
-		tmp = ( c * X[ ix ] ) + ( s * Y[ iy ] );
-		Y[ iy ] = ( c * Y[ iy ] ) - ( s * X[ ix ] );
-		X[ ix ] = tmp;
-		ix += strideX;
-		iy += strideY;
-	}
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(c_srot_ndarray)( N, X, strideX, ox, Y, strideY, oy, c, s );
 	return;
 }

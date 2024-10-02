@@ -24,8 +24,8 @@ import { Complex128 } from '@stdlib/types/complex';
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Interface describing `cpolar`.
- */
+* Interface describing `cpolar`.
+*/
 interface Cpolar {
 	/**
 	* Computes the absolute value and the phase of a double-precision complex floating-point number.

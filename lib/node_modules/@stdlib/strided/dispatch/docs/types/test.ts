@@ -29,7 +29,7 @@ import dispatch = require( './index' );
 /**
 * Nullary callback.
 *
-* @return input value
+* @returns input value
 */
 function nullary(): any {
 	return 5.0;
@@ -39,7 +39,7 @@ function nullary(): any {
 * Unary callback.
 *
 * @param x - input value
-* @return input value
+* @returns input value
 */
 function unary( x: any ): any {
 	return x;
@@ -50,7 +50,7 @@ function unary( x: any ): any {
 *
 * @param x - input value
 * @param y - input value
-* @return output value
+* @returns output value
 */
 function binary( x: number, y: number ): number {
 	return x + y;
@@ -62,7 +62,7 @@ function binary( x: number, y: number ): number {
 * @param x - input value
 * @param y - input value
 * @param z - input value
-* @return output value
+* @returns output value
 */
 function ternary( x: number, y: number, z: number ): number {
 	return x + y + z;
@@ -75,7 +75,7 @@ function ternary( x: number, y: number, z: number ): number {
 * @param y - input value
 * @param z - input value
 * @param w - input value
-* @return output value
+* @returns output value
 */
 function quaternary( x: number, y: number, z: number, w: number ): number {
 	return x + y + z + w;

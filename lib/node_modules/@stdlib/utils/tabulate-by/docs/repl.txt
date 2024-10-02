@@ -4,15 +4,15 @@
 
     When invoked, the indicator function is provided two arguments:
 
-    - `value`: collection value
-    - `index`: collection index
+    - value: collection value.
+    - index: collection index.
 
     The table is an array of arrays where each sub-array corresponds to a unique
     value in the input collection. Each sub-array is structured as follows:
 
-    - 0: unique value
-    - 1: value count
-    - 2: frequency percentage
+    - 0: unique value.
+    - 1: value count.
+    - 2: frequency percentage.
 
     If provided an empty collection, the function returns an empty array.
 

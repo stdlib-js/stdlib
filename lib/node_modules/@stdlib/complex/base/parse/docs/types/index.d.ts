@@ -18,10 +18,14 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { ComplexLike } from '@stdlib/types/complex';
+
 /**
 * Parses a string representing a complex number into a complex like object.
 *
-* @param str
+* @param str - input string
 * @returns complex like object
 *
 * @example
@@ -32,7 +36,7 @@
 * var z = parse( str );
 * returns { re : 4, im : 6 }
 */
-declare function parse( str: string ): {re: number; im: number} | null;
+declare function parse( str: string ): ComplexLike | null;
 
 
 // EXPORTS //

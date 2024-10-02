@@ -18,8 +18,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import rempio2 = require( './index' );
 import { Collection } from '@stdlib/types/array';
+import rempio2 = require( './index' );
 
 
 // TESTS //

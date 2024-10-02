@@ -43,6 +43,7 @@ skip_c_benchmarks="${SKIP_LINT_C_BENCHMARKS}"
 skip_c_tests_fixtures="${SKIP_LINT_C_TESTS_FIXTURES}"
 skip_shell="${SKIP_LINT_SHELL}"
 skip_typescript_declarations="${SKIP_LINT_TYPESCRIPT_DECLARATIONS}"
+skip_typescript_tests="${SKIP_LINT_TYPESCRIPT_TESTS}"
 skip_license_headers="${SKIP_LINT_LICENSE_HEADERS}"
 
 # Determine root directory:
@@ -65,6 +66,9 @@ eslint_tests_conf="${root}/etc/eslint/.eslintrc.tests.js"
 
 # Define the path to ESLint configuration file for linting benchmarks:
 eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
+
+# Define the path to ESLint configuration file for linting TypeScript definition tests:
+eslint_typescript_tests_conf="${root}/etc/eslint/.eslintrc.typescript.tests.js"
 
 # Define the path to cppcheck configuration file for linting examples:
 cppcheck_examples_suppressions_list="${root}/etc/cppcheck/suppressions.examples.txt"
@@ -354,12 +358,24 @@ run_lint() {
 	fi
 	# Lint TypeScript declaration files...
 	if [[ -z "${skip_typescript_declarations}" ]]; then
-		files=$(echo "${changed_files}" | grep '/docs/types/.*\.ts$' | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep '/docs/types/.*\.d.ts$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" lint-typescript-declarations-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				echo '' >&2
 				echo 'TypeScript declaration file lint errors.' >&2
+				return 1
+			fi
+		fi
+	fi
+	# Lint TypeScript declaration test files...
+	if [[ -z "${skip_typescript_tests}" ]]; then
+		files=$(echo "${changed_files}" | grep '/docs/types/test.ts$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" ESLINT_TS_CONF="${eslint_typescript_tests_conf}" lint-typescript-declarations-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'TypeScript test file lint errors.' >&2
 				return 1
 			fi
 		fi

@@ -23,8 +23,8 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Interface describing `modf`.
- */
+* Interface describing `modf`.
+*/
 interface Modf {
 	/**
 	* Decomposes a double-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value.

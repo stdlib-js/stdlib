@@ -16,7 +16,8 @@
 * limitations under the License.
 */
 
-import stickycase from './index';
+import stickycase = require( './index' );
+
 
 // TESTS //
 
@@ -39,13 +40,12 @@ import stickycase from './index';
 
 // The compiler throws an error if the second parameter is not a number...
 {
-	stickycase('hello world', true); // $ExpectError
-	stickycase('hello world', false); // $ExpectError
-	stickycase('hello world', undefined); // $ExpectError
-	stickycase('hello world', 'test'); // $ExpectError
-	stickycase('hello world', []); // $ExpectError
-	stickycase('hello world', {}); // $ExpectError
-	stickycase('hello world', (x: number): number => x); // $ExpectError
+	stickycase( 'hello world', true ); // $ExpectError
+	stickycase( 'hello world', false ); // $ExpectError
+	stickycase( 'hello world', 'test' ); // $ExpectError
+	stickycase( 'hello world', [] ); // $ExpectError
+	stickycase( 'hello world', {} ); // $ExpectError
+	stickycase( 'hello world', ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...

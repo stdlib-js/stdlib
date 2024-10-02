@@ -41,7 +41,7 @@
 * @example
 * var sqrtf = require( '@stdlib/math/base/special/sqrtf' );
 *
-** var v = asindf( sqrtf( 3.0 ) / 2.0 );
+* var v = asindf( sqrtf( 3.0 ) / 2.0 );
 * // returns ~60.0
 *
 * @example

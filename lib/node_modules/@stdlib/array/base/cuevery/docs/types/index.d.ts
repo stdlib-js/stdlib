@@ -53,7 +53,7 @@ interface CuEvery {
 	* var x = [ true, true, true, false, false ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
 	*
-	* var arr = cuevery.assign( x, y, 2, 0 );,
+	* var arr = cuevery.assign( x, y, 2, 0 );
 	* // returns [ true, null, true, null, true, null, false, null, false, null ];
 	*/
 	assign<T, U extends Collection<T> | AccessorArrayLike<T>>( x: Collection | AccessorArrayLike<any>, y: U, stride: number, offset: number ): U;

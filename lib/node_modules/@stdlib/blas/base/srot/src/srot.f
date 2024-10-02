@@ -48,9 +48,9 @@
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
 ! @param {integer} N - number of indexed elements
-! @param {Array<real>} sx - input array
+! @param {Array<real>} sx - first input array
 ! @param {integer} strideX - `sx` stride length
-! @param {Array<real>} sy - output array
+! @param {Array<real>} sy - second input array
 ! @param {integer} strideY - `sy` stride length
 ! @param {real} c - cosine of the angle of rotation
 ! @param {real} s - sine of the angle of rotation
