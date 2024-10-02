@@ -98,7 +98,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 1000.0*rand_double() ) - 500.0;
+		x = ( 2.0*rand_double() ) - 1.0;
 		y = stdlib_base_erf( x );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
