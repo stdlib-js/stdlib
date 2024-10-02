@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,15 +28,14 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/constants/float64/high-word-abs-mask",
@@ -48,15 +48,14 @@
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/constants/float64/high-word-abs-mask",
@@ -68,15 +67,33 @@
     },
     {
       "task": "examples",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/high-word-sign-mask",
+        "@stdlib/number/float64/base/to-words",
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/from-words"
+      ]
+    },
+    {
+      "task": "build",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
       ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/constants/float64/high-word-abs-mask",
