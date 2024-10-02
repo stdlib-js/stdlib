@@ -143,6 +143,130 @@ console.log( idx );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/idamax.h"
+```
+
+#### c_idamax( N, \*X, strideX )
+
+Finds the index of the first element having the maximum absolute value.
+
+```c
+const double x[] = { 4.0, 2.0, -3.0, 5.0, -1.0 };
+
+int idx = c_idamax( 5, x, 1 );
+// returns 3
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+
+```c
+CBLAS_INT c_idamax( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
+```
+
+#### c_idamax_ndarray( N, \*X, strideX, offsetX )
+
+Finds the index of the first element having the maximum absolute value using alternative indexing semantics.
+
+```c
+const double x[] = { 4.0, 2.0, -3.0, 5.0, -1.0 };
+
+int idx = c_idamax_ndarray( 5, x, 1, 0 );
+// returns 3
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+CBLAS_INT c_idamax_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/idamax.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided array:
+    const double x[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
+
+    // Specify the number of element:
+    const int N = 8;
+
+    // Specify stride:
+    const int strideX = 1;
+
+    // Compute the index of the maximum absolute value:
+    int idx = c_idamax( N, x, strideX );
+
+    // Print the result:
+    printf( "index value: %d\n", idx );
+
+    // Compute the index of the maximum absolute value:
+    idx = c_idamax_ndarray( N, x, -strideX, N-1 );
+
+    // Print the result:
+    printf( "index value: %d\n", idx );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
