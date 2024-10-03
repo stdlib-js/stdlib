@@ -1,3 +1,4 @@
+
 {{alias}}( x, predicate[, thisArg] )
     Cumulatively tests whether at least one array element in a provided array
     passes a test implemented by a predicate function, while iterating from
@@ -27,9 +28,9 @@
 
     Examples
     --------
-    > function isPositive( v ) { return ( v > 0 ); };
+    > function predicate( v ) { return ( v > 0 ); };
     > var x = [ 1, 1, 0, 0, 0 ];
-    > var y = {{alias}}( x, isPositive )
+    > var y = {{alias}}( x, predicate )
     [ false, false, false, true, true ]
 
 
@@ -71,10 +72,10 @@
 
     Examples
     --------
-    > function isPositive( v ) { return ( v > 0 ); };
     > var x = [ 1, 1, 0, 0 ];
     > var out = [ false, null, false, null, false, null, false, null ];
-    > var arr = {{alias}}.assign( x, out, 2, 0, isPositive )
+    > function predicate( v ) { return ( v > 0 ); };
+    > var arr = {{alias}}.assign( x, out, 2, 0, predicate )
     [ false, null, ..., true, null ]
     > var bool = ( arr === out )
     true
