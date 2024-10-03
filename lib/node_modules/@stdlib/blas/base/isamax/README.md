@@ -183,7 +183,7 @@ int idx = c_isamax( 5, x, 1 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **X**: `[in] float*` first input array.
+-   **X**: `[in] float*` input array.
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 
 ```c
@@ -204,7 +204,7 @@ int idx = c_isamax_ndarray( 5, x, 1, 0 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **X**: `[in] float*` first input array.
+-   **X**: `[in] float*` input array.
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
