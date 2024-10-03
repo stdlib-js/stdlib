@@ -55,7 +55,7 @@
 * int64_t out[] = { 0, 0, 0, 0 };
 * int8_t status = stdlib_ndarray_broadcast_shapes( 2, shapes, ndims, out );
 */
-int8_t stdlib_ndarray_broadcast_shapes( int64_t M, int64_t *shapes[], int64_t ndims[], int64_t *out ) {
+int8_t stdlib_ndarray_broadcast_shapes( int64_t M, int64_t *shapes[], const int64_t ndims[], int64_t *out ) {
 	int64_t dim;
 	int64_t *sh;
 	int64_t n1;
