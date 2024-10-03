@@ -100,7 +100,7 @@ interface CuanyByRight {
 	*
 	* @example
 	* function isPositive( v ) {
-	* 	return v > 0;
+	*     return v > 0;
 	* }
 	* var x = [ 1, 1, 0, 0, 0 ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
@@ -172,7 +172,7 @@ interface CuanyByRight {
 *
 * @example
 * function isPositive( v ) {
-* 	return v > 0;
+*     return v > 0;
 * }
 * var x = [ 1, 1, 0, 0, 0 ];
 *
@@ -181,7 +181,7 @@ interface CuanyByRight {
 *
 * @example
 * function isPositive( v ) {
-* 	return v > 0;
+*     return v > 0;
 * }
 * var x = [ 0, 1, 1, 0, 0 ];
 * var y = [ false, null, false, null, false, null, false, null, false, null ];
