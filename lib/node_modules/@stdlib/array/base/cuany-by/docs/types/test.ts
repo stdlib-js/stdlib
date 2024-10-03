@@ -56,7 +56,24 @@ function isPositive( value: number ): boolean {
 	cuanyBy( new Uint8ClampedArray( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType boolean[]
 }
 
-// The compiler throws an error if the function is provided a first argument which is not like a function..
+// The compiler throws an error if the function is provided a first argument which is not an array-like object...
+{
+	cuanyBy( 1, isPositive ); // $ExpectError
+	cuanyBy( true, isPositive ); // $ExpectError
+	cuanyBy( false, isPositive ); // $ExpectError
+	cuanyBy( null, isPositive ); // $ExpectError
+	cuanyBy( void 0, isPositive ); // $ExpectError
+	cuanyBy( {}, isPositive ); // $ExpectError
+
+	cuanyBy( 1, isPositive, {} ); // $ExpectError
+	cuanyBy( true, isPositive, {} ); // $ExpectError
+	cuanyBy( false, isPositive, {} ); // $ExpectError
+	cuanyBy( null, isPositive, {} ); // $ExpectError
+	cuanyBy( void 0, isPositive, {} ); // $ExpectError
+	cuanyBy( {}, isPositive, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a second argument which is not function...
 {
 	const x = [ 1, 2, 3, 4 ];
 
@@ -147,7 +164,6 @@ function isPositive( value: number ): boolean {
 	cuanyBy.assign( x, {}, 2, 0, isPositive, {} ); // $ExpectError
 }
 
-
 // The compiler throws an error if the `assign` method is provided a third argument which is not a number...
 {
 	const x = [ false, false, true, false, false ];
@@ -192,7 +208,7 @@ function isPositive( value: number ): boolean {
 	cuanyBy.assign( x, y, 1, [], isPositive, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the `assign` method is provided a fourth argument which is not like a function...
+// The compiler throws an error if the `assign` method is provided a fifth argument which is not like a function...
 {
 	const x = [ false, false, true, false, false ];
 	const y = [ false, null, false, null, false, null, false, null, false, null ];

@@ -315,7 +315,7 @@
         Byte offset at which to start writing values.
 
     values: ArrayLikeObject
-        First input array containing values to write.
+        Input array containing values to write.
 
     Returns
     -------
@@ -340,7 +340,7 @@
     Parameters
     ----------
     values: ArrayLikeObject
-        First input array.
+        Input array.
 
     Returns
     -------
@@ -380,7 +380,7 @@
         Byte offset at which to start writing values.
 
     values: ArrayLikeObject
-        First input array containing values to write.
+        Input array containing values to write.
 
     Returns
     -------
@@ -419,7 +419,7 @@
         Byte offset at which to start reading values.
 
     out: ArrayLikeObject
-        Second input array for storing read values.
+        Output array for storing read values.
 
     Returns
     -------
