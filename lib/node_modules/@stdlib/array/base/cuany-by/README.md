@@ -127,6 +127,7 @@ function isPositive( value ) {
 var x = bernoulli( 10, 0.1 );
 console.log( x );
 
+// Cumulatively determine whether at least one element is positive:
 var out = cuanyBy( x, isPositive );
 console.log( out );
 ```
