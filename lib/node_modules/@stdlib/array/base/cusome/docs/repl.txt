@@ -25,7 +25,7 @@
 
 {{alias}}.assign( x, n, y, stride, offset )
     Cumulatively tests whether at least `n` array elements in a provided array
-    are truthy and assigns results to provided output array.
+    are truthy and assigns results to a provided output array.
 
     Parameters
     ----------
