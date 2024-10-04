@@ -51,7 +51,7 @@ The [_L1_ norm][l1norm] is defined as
 var dnanasum = require( '@stdlib/blas/ext/base/dnanasum' );
 ```
 
-#### dnanasum( N, x, stride )
+#### dnanasum( N, x, strideX )
 
 Computes the sum of absolute values ([_L1_ norm][l1norm]) of double-precision floating-point strided array elements, ignoring `NaN` values.
 
@@ -69,9 +69,9 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **stride**: index increment for `x`.
+-   **strideX**: index increment for `x`.
 
-The `N` and `stride` parameters determine which elements in  the strided array are accessed at runtime. For example, to compute the sum of absolute values ([_L1_ norm][l1norm]) every other element in  the strided array,
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of absolute values ([_L1_ norm][l1norm]) for every other element in the strided array,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -96,7 +96,7 @@ var v = dnanasum( 4, x1, 2 );
 // returns 9.0
 ```
 
-#### dnanasum.ndarray( N, x, stride, offset )
+#### dnanasum.ndarray( N, x, strideX, offsetX )
 
 Computes the sum of absolute values ([_L1_ norm][l1norm]) of double-precision floating-point strided array elements, ignoring `NaN` values and using alternative indexing semantics.
 
@@ -111,9 +111,9 @@ var v = dnanasum.ndarray( 4, x, 1, 0 );
 
 The function has the following additional parameters:
 
--   **offset**: starting index for `x`.
+-   **offsetX**: starting index for `x`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to calculate the sum of absolute values ([_L1_ norm][l1norm]) every other value in the strided array starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the sum of absolute values ([_L1_ norm][l1norm]) for every other value in the strided array starting from the second value
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -168,6 +168,123 @@ console.log( v );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/ext/base/dnanasum.h"
+```
+
+#### stdlib_strided_dnanasum( N, \*X, strideX )
+
+Computes the sum of absolute values ([_L1_ norm][l1norm]) of double-precision floating-point strided array elements, ignoring `NaN` values.
+
+```c
+const double x[] = { 1.0, 2.0, 0.0/0.0, 4.0 };
+
+double v = stdlib_strided_dnanasum( 4, x, 1 );
+// returns 7.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+
+```c
+double stdlib_strided_dnanasum( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
+```
+
+#### stdlib_strided_dnanasum_ndarray( N, \*X, strideX, offsetX )
+
+Computes the sum of absolute values ([_L1_ norm][l1norm]) of double-precision floating-point strided array elements, ignoring `NaN` values and using alternative indexing semantics.
+
+```c
+const double x[] = { 1.0, 2.0, 0.0/0.0, 4.0 };
+
+double v = stdlib_strided_dnanasum_ndarray( 4, x, 1, 0 );
+// returns 7.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+double stdlib_strided_dnanasum_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/ext/base/dnanasum.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    const double x[] = { 1.0, 2.0, -3.0, -4.0, 5.0, -6.0, -7.0, 8.0, 0.0/0.0, 0.0/0.0 };
+
+    // Specify the number of elements:
+    const int N = 5;
+
+    // Specify the stride length:
+    const int strideX = 2;
+
+    // Compute the sum:
+    double v = stdlib_strided_dnanasum( N, x, strideX );
+
+    // Print the result:
+    printf( "sumabs: %lf\n", v );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <section class="references">
 
