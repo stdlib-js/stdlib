@@ -16,30 +16,33 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_BLAS_EXT_BASE_DNANASUM_H
-#define STDLIB_BLAS_EXT_BASE_DNANASUM_H
-
+#include "stdlib/blas/ext/base/dnanasum.h"
+#include "stdlib/blas/ext/base/dnanasumors.h"
+#include "stdlib/strided/base/stride2offset.h"
 #include "stdlib/blas/base/shared.h"
-
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
 * Computes the sum of absolute values (L1 norm) of double-precision floating-point strided array elements, ignoring `NaN` values.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
-double API_SUFFIX(stdlib_strided_dnanasum)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
+double API_SUFFIX(stdlib_strided_dnanasum)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dnanasum_ndarray)( N, X, strideX, ox );
+}
 
 /**
 * Computes the sum of absolute values (L1 norm) of double-precision floating-point strided array elements, ignoring `NaN` values and using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  index increment
+* @param offsetX  starting index
+* @return         output value
 */
-double API_SUFFIX(stdlib_strided_dnanasum_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
-
-#ifdef __cplusplus
+double API_SUFFIX(stdlib_strided_dnanasum_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	return API_SUFFIX(stdlib_strided_dnanasumors_ndarray)( N, X, strideX, offsetX );
 }
-#endif
-
-#endif // !STDLIB_BLAS_EXT_BASE_DNANASUM_H
