@@ -136,9 +136,9 @@ var geometricCDF = geometric.cdf.factory( p );
 var cdf = filledarrayBy( x.length, 'float64', geometricCDF );
 
 // Output the PMF and CDF values:
-console.log( 'x values:', x );
-console.log( 'PMF values:', pmf );
-console.log( 'CDF values:', cdf );
+console.log( 'x values: ', x );
+console.log( 'PMF values: ', pmf );
+console.log( 'CDF values: ', cdf );
 
 // Compute statistical properties:
 var theoreticalMean = geometric.mean( p );
@@ -146,10 +146,10 @@ var theoreticalVariance = geometric.variance( p );
 var theoreticalSkewness = geometric.skewness( p );
 var theoreticalKurtosis = geometric.kurtosis( p );
 
-console.log( 'Theoretical Mean:', theoreticalMean );
-console.log( 'Theoretical Variance:', theoreticalVariance );
-console.log( 'Skewness:', theoreticalSkewness );
-console.log( 'Kurtosis:', theoreticalKurtosis );
+console.log( 'Theoretical Mean: ', theoreticalMean );
+console.log( 'Theoretical Variance: ', theoreticalVariance );
+console.log( 'Skewness: ', theoreticalSkewness );
+console.log( 'Kurtosis: ', theoreticalKurtosis );
 
 // Generate random samples from the geometric distribution:
 var rgeom = geometricRandomFactory( p );
@@ -160,19 +160,19 @@ var samples = filledarrayBy( n, 'float64', rgeom );
 var sampleMean = mean( n, samples, 1 );
 var sampleVariance = variance( n, 1, samples, 1 );
 
-console.log( 'Sample Mean:', sampleMean );
-console.log( 'Sample Variance:', sampleVariance );
+console.log( 'Sample Mean: ', sampleMean );
+console.log( 'Sample Variance: ', sampleVariance );
 
 // Demonstrate the memoryless property:
 var s = 2.0;
 var t = 3.0;
 var prob1 = ( 1.0 - geometric.cdf( s + t - 1.0, p ) ) /
-    ( 1.0 - geometric.cdf( s - 1.0, p ));
+    ( 1.0 - geometric.cdf( s - 1.0, p ) );
 var prob2 = 1.0 - geometric.cdf( t - 1.0, p );
 
-console.log( 'P(X > s + t | X > s):', prob1 );
-console.log( 'P(X > t):', prob2 );
-console.log( 'Difference:', abs( prob1 - prob2 ) );
+console.log( 'P(X > s + t | X > s): ', prob1 );
+console.log( 'P(X > t): ', prob2 );
+console.log( 'Difference: ', abs( prob1 - prob2 ) );
 
 // Demonstrate that the sum of k independent geometric random variables follows a negative binomial distribution:
 var k = 5;
@@ -194,14 +194,14 @@ var sumSampleVariance = variance( n, 1, sumSamples, 1 );
 var nbMean = negativeBinomial.mean( k, p );
 var nbVariance = negativeBinomial.variance( k, p );
 
-console.log( 'Sum Sample Mean:', sumSampleMean );
-console.log( 'Sum Sample Variance:', sumSampleVariance );
-console.log( 'Negative Binomial Mean:', nbMean );
-console.log( 'Negative Binomial Variance:', nbVariance );
+console.log( 'Sum Sample Mean: ', sumSampleMean );
+console.log( 'Sum Sample Variance: ', sumSampleVariance );
+console.log( 'Negative Binomial Mean: ', nbMean );
+console.log( 'Negative Binomial Variance: ', nbVariance );
 
 // Compare sample statistics to theoretical values:
-console.log( 'Difference in Mean:', abs( nbMean - sumSampleMean ) );
-console.log( 'Difference in Variance:', abs( nbVariance - sumSampleVariance ) );
+console.log( 'Difference in Mean: ', abs( nbMean - sumSampleMean ) );
+console.log( 'Difference in Variance: ', abs( nbVariance - sumSampleVariance ) );
 ```
 
 </section>

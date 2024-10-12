@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# isSameArrayLike
+# isSameTypedArrayLike
 
 > Test if two arguments are both typed-array-like objects and have the [same values][@stdlib/assert/is-same-value].
 

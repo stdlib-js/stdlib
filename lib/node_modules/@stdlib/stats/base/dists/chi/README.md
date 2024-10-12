@@ -109,8 +109,10 @@ var filledarrayBy = require( '@stdlib/array/filled-by' );
 var variance = require( '@stdlib/stats/base/variance' );
 var linspace = require( '@stdlib/array/base/linspace' );
 var rayleigh = require( '@stdlib/stats/base/dists/rayleigh' );
+var absdiff = require( '@stdlib/math/base/utils/absolute-difference' );
 var mean = require( '@stdlib/stats/base/mean' );
 var abs = require( '@stdlib/math/base/special/abs' );
+var max = require( '@stdlib/math/base/special/max' );
 var chi = require( '@stdlib/stats/base/dists/chi' );
 
 // Define the degrees of freedom parameter:
@@ -128,9 +130,9 @@ var chiCDF = chi.cdf.factory( k );
 var cdf = filledarrayBy( x.length, 'float64', chiCDF );
 
 // Output the PDF and CDF values:
-console.log( 'x values:', x );
-console.log( 'PDF values:', pdf );
-console.log( 'CDF values:', cdf );
+console.log( 'x values: ', x );
+console.log( 'PDF values: ', pdf );
+console.log( 'CDF values: ', cdf );
 
 // Compute statistical properties:
 var theoreticalMean = chi.mean( k );
@@ -138,10 +140,10 @@ var theoreticalVariance = chi.variance( k );
 var theoreticalSkewness = chi.skewness( k );
 var theoreticalKurtosis = chi.kurtosis( k );
 
-console.log( 'Theoretical Mean:', theoreticalMean );
-console.log( 'Theoretical Variance:', theoreticalVariance );
-console.log( 'Skewness:', theoreticalSkewness );
-console.log( 'Kurtosis:', theoreticalKurtosis );
+console.log( 'Theoretical Mean: ', theoreticalMean );
+console.log( 'Theoretical Variance: ', theoreticalVariance );
+console.log( 'Skewness: ', theoreticalSkewness );
+console.log( 'Kurtosis: ', theoreticalKurtosis );
 
 // Generate random samples from the Chi distribution:
 var rchi = chiRandomFactory( k );
@@ -152,12 +154,12 @@ var samples = filledarrayBy( n, 'float64', rchi );
 var sampleMean = mean( n, samples, 1 );
 var sampleVariance = variance( n, 1, samples, 1 );
 
-console.log( 'Sample Mean:', sampleMean );
-console.log( 'Sample Variance:', sampleVariance );
+console.log( 'Sample Mean: ', sampleMean );
+console.log( 'Sample Variance: ', sampleVariance );
 
 // Compare sample statistics to theoretical values:
-console.log( 'Difference in Mean:', abs( theoreticalMean - sampleMean ) );
-console.log( 'Difference in Variance:', abs( theoreticalVariance - sampleVariance ) );
+console.log( 'Difference in Mean: ', abs( theoreticalMean - sampleMean ) );
+console.log( 'Difference in Variance: ', abs( theoreticalVariance - sampleVariance ) );
 
 // Demonstrate the relationship with the Rayleigh distribution when k=2:
 var rayleighPDF = rayleigh.pdf.factory( 1.0 );
@@ -175,17 +177,13 @@ var diffPDF;
 var diffCDF;
 var i;
 for ( i = 0; i < x.length; i++ ) {
-    diffPDF = abs( pdf[ i ] - rayleighPDFValues[ i ] );
-    if ( diffPDF > maxDiffPDF ) {
-        maxDiffPDF = diffPDF;
-    }
-    diffCDF = abs( cdf[ i ] - rayleighCDFValues[ i ] );
-    if ( diffCDF > maxDiffCDF ) {
-        maxDiffCDF = diffCDF;
-    }
+    diffPDF = absdiff( pdf[ i ], rayleighPDFValues[ i ] );
+    maxDiffPDF = max( maxDiffPDF, diffPDF );
+    diffCDF = absdiff( cdf[ i ], rayleighCDFValues[ i ] );
+    maxDiffCDF = max( maxDiffCDF, diffCDF );
 }
-console.log( 'Maximum difference between Chi(k=2) PDF and Rayleigh PDF:', maxDiffPDF );
-console.log( 'Maximum difference between Chi(k=2) CDF and Rayleigh CDF:', maxDiffCDF );
+console.log( 'Maximum difference between Chi(k=2) PDF and Rayleigh PDF: ', maxDiffPDF );
+console.log( 'Maximum difference between Chi(k=2) CDF and Rayleigh CDF: ', maxDiffCDF );
 ```
 
 </section>
