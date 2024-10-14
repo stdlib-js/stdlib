@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/dnanasumors.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -41,13 +41,16 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/abs"
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/napi/create-double"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/dnanasumors.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -56,13 +59,15 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/abs"
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dnanasumors.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -71,7 +76,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/abs"
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     }
   ]
