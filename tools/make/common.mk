@@ -608,7 +608,7 @@ DEPS_SHELLCHECK_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOS
 DEPS_SHELLCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
 # Define the cppcheck version:
-DEPS_CPPCHECK_VERSION ?= 2.9
+DEPS_CPPCHECK_VERSION ?= 2.15.0
 
 # Generate a version slug:
 deps_cppcheck_version_slug := $(subst .,_,$(DEPS_CPPCHECK_VERSION))
