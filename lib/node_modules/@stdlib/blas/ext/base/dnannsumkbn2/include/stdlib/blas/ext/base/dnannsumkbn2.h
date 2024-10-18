@@ -19,7 +19,7 @@
 #ifndef STDLIB_BLAS_EXT_BASE_DNANNSUMKBN2_H
 #define STDLIB_BLAS_EXT_BASE_DNANNSUMKBN2_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using a second-order iterative Kahan–Babuška algorithm.
 */
-double stdlib_strided_dnannsumkbn2( const int64_t N, const double *X, const int64_t stride, int64_t *n );
+double API_SUFFIX(stdlib_strided_dnannsumkbn2)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, CBLAS_INT *n );
+
+/**
+* Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using a second-order iterative Kahan–Babuška algorithm and alternative indexing semantics.
+*/
+double API_SUFFIX(stdlib_strided_dnannsumkbn2_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, CBLAS_INT *n );
 
 #ifdef __cplusplus
 }
