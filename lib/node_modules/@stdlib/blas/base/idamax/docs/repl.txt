@@ -8,7 +8,7 @@
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    If `N < 1`, both functions return `-1`.
+    If `N < 1`, the function returns `-1`.
 
     Parameters
     ----------
