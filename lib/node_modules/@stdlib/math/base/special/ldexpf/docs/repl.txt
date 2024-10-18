@@ -1,7 +1,7 @@
 
 {{alias}}( frac, exp )
     Multiplies a single-precision floating-point number by an integer power of
-    two; i.e., `x = frac * 2^exp`.
+    two (i.e., `x = frac * 2^exp`).
 
     If `frac` equals positive or negative `zero`, `NaN`, or positive or negative
     infinity, the function returns a value equal to `frac`.
