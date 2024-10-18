@@ -218,7 +218,7 @@ interface Routine extends ModuleWrapper {
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	*
-	* var out = dnrm2.main( x.length, 5.0, x, 1, y, 1 );
+	* var out = dnrm2.main( x.length, x, 1 );
 	* // returns ~7.42
 	*/
 	main( N: number, x: Float64Array, strideX: number ): number;
@@ -278,7 +278,7 @@ interface Routine extends ModuleWrapper {
 	* mod.write( xptr, oneTo( N, dtype ) );
 	*
 	* // Perform computation:
-	* var out = mod.main( N, 5.0, xptr, 1, yptr, 1 );
+	* var out = mod.main( N, xptr, 1 );
 	* // returns ~7.42
 	*/
 	Module: ModuleConstructor;
