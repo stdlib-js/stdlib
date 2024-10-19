@@ -31,5 +31,5 @@
 * // returns 2.0
 */
 double stdlib_base_log( const double x, const double b ) {
-	return stdlib_base_ln ( x ) / stdlib_base_ln ( b );
+	return stdlib_base_ln( x ) / stdlib_base_ln( b );
 }
