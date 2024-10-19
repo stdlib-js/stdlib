@@ -28,6 +28,7 @@
 * @example
 * var Int8Array = require( '@stdlib/array/int8' );
 * var Int16Array = require( '@stdlib/array/int16' );
+*
 * var x = new Int8Array( [ 1.0, 2.0, 3.0 ] );
 * var y = new Int16Array( [ 1.0, 2.0, 3.0 ] );
 *
@@ -36,6 +37,7 @@
 *
 * @example
 * var Int8Array = require( '@stdlib/array/int8' );
+*
 * var x = new Int8Array( [ 1.0, 2.0, 3.0 ] );
 * var y = new Int8Array( [ 1.0, 2.0, 4.0 ] );
 *
