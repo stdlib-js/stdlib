@@ -42,8 +42,7 @@ var iterCuNone = require( '@stdlib/iter/cunone' );
 
 #### iterCuNone( iterator )
 
-Returns an [iterator][mdn-iterator-protocol] which cumulatively tests whether every
-iterated value is falsy.
+Returns an [iterator][mdn-iterator-protocol] which cumulatively tests whether every iterated value is falsy.
 
 ```javascript
 var array2iterator = require( '@stdlib/array/to-iterator' );
@@ -115,7 +114,7 @@ var riter = randu( opts );
 // Create an iterator which applies a threshold to generated numbers:
 var miter = iterMap( riter, threshold );
 
-// Create an iterator which cumulatively tests whether every iterated value is falsy.
+// Create an iterator which cumulatively tests whether every iterated value is falsy:
 var it = iterCuNone( miter );
 
 // Perform manual iteration...
