@@ -83,7 +83,7 @@
         Number of indexed elements.
 
     x: Float64Array
-        Input array.
+        First input array.
 
     strideX: integer
         Index increment for `x`.
@@ -300,9 +300,9 @@
     Reallocates the underlying WebAssembly memory instance to a specified number
     of bytes.
 
-    WebAssembly memory can only **grow**, not shrink. Hence, if provided a
-    number of bytes which is less than or equal to the size of the current
-    memory, the function does nothing.
+    WebAssembly memory can only *grow*, not shrink. Hence, if provided a number
+    of bytes which is less than or equal to the size of the current memory, the
+    function does nothing.
 
     When non-shared memory is resized, the underlying the `ArrayBuffer` is
     detached, consequently invalidating any associated typed array views. Before
