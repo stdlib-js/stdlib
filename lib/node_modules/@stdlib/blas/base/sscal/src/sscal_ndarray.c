@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -17,25 +17,9 @@
 */
 
 #include "stdlib/blas/base/sscal.h"
-#include "stdlib/blas/base/sscal_fortran.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/strided/base/min_view_buffer_index.h"
 
-/**
-* Multiplies a single-precision floating-point vector `X` by a constant.
-*
-* @param N       number of indexed elements
-* @param alpha   scalar
-* @param X       input array
-* @param stride  index increment
-*/
-void API_SUFFIX(c_sscal)( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT stride ) {
-	CBLAS_INT sx = stride;
-	if ( sx < 0 ) {
-		sx = -sx;
-	}
-	sscal( &N, &alpha, X, &sx );
-}
+static const CBLAS_INT M = 5;
 
 /**
 * Multiplies a single-precision floating-point vector `X` by a constant using alternative indexing semantics.
@@ -47,10 +31,42 @@ void API_SUFFIX(c_sscal)( const CBLAS_INT N, const float alpha, float *X, const 
 * @param offset  starting index
 */
 void API_SUFFIX(c_sscal_ndarray)( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT stride, const CBLAS_INT offset ) {
-	CBLAS_INT sx = stride;
-	if ( sx < 0 ) {
-		sx = -sx;
+	CBLAS_INT ix;
+	CBLAS_INT i;
+	CBLAS_INT m;
+
+	if ( N <= 0 || alpha == 1.0f ) {
+		return;
 	}
-	X += stdlib_strided_min_view_buffer_index( N, stride, offset ); // adjust array pointer
-	sscal( &N, &alpha, X, &sx );
+	ix = offset;
+
+	// Use loop unrolling if the stride is equal to `1`...
+	if ( stride == 1 ) {
+		m = N % M;
+
+		// If we have a remainder, run a clean-up loop...
+		if ( m > 0 ) {
+			for ( i = 0; i < m; i++ ) {
+				X[ ix ] *= alpha;
+				ix += stride;
+			}
+		}
+		if ( N < M ) {
+			return;
+		}
+		for ( i = m; i < N; i += M ) {
+			X[ ix ] *= alpha;
+			X[ ix+1 ] *= alpha;
+			X[ ix+2 ] *= alpha;
+			X[ ix+3 ] *= alpha;
+			X[ ix+4 ] *= alpha;
+			ix += M;
+		}
+		return;
+	}
+	for ( i = 0; i < N; i++ ) {
+		X[ ix ] *= alpha;
+		ix += stride;
+	}
+	return;
 }
