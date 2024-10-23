@@ -490,6 +490,18 @@ ifeq (, $(BLAS_DIR))
 endif
 endif
 
+# Define the output path when building LLVM:
+DEPS_LLVM_BUILD_OUT ?= $(DEPS_BUILD_DIR)/llvm
+
+# Define the LLVM version:
+DEPS_LLVM_VERSION ?=
+
+# Define the path to clang compiler:
+DEPS_LLVM_CLANG ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/clang
+
+# Define the path to LLVM static compiler:
+DEPS_LLVM_LLC ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/llc
+
 # Define the output path when building the Emscripten SDK:
 DEPS_EMSDK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
 
