@@ -27,6 +27,6 @@ int main( void ) {
 	int i;
 	for ( i = 0; i < 10; i++ ) {
 		v = stdlib_base_nanmin( x[ i ], y[ i ] );
-		printf( "x[ %d ]: %f, y[ %d ]: %f, nanmin( x[ %d ], y[ %d ] ): %f\n", i, x[ i ], i, y[ i ], i, i, v );
+		printf( "x[ %d ]: %lf, y[ %d ]: %lf, nanmin( x[ %d ], y[ %d ] ): %lf\n", i, x[ i ], i, y[ i ], i, i, v );
 	}
 }
