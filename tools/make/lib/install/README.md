@@ -37,6 +37,7 @@ This directory contains [`make`][make] rules for running the project's installat
     -   [Cppcheck](#cppcheck)
     -   [Electron](#electron)
     -   [Emscripten SDK](#emscripten-sdk)
+    -   [LLVM](#llvm)
     -   [OpenBLAS](#openblas)
     -   [Python](#python)
     -   [R](#r)
@@ -419,6 +420,36 @@ $ make clean-deps-emscripten-tests
 
 * * *
 
+<a name="llvm"></a>
+
+### LLVM
+
+#### install-deps-llvm
+
+Installs [LLVM][llvm].
+
+```bash
+$ make install-deps-llvm
+```
+
+#### clean-deps-llvm
+
+Removes an installed [LLVM][llvm] distribution.
+
+```bash
+$ make clean-deps-llvm
+```
+
+#### clean-deps-llvm-tests
+
+Removes [LLVM][llvm] installation tests.
+
+```bash
+$ make clean-deps-llvm-tests
+```
+
+* * *
+
 <a name="openblas"></a>
 
 ### OpenBLAS
@@ -594,6 +625,8 @@ $ make clean-deps-wabt-tests
 [electron]: https://www.electronjs.org/
 
 [emscripten-sdk]: https://github.com/emscripten-core/emsdk
+
+[llvm]: https://llvm.org
 
 [node-js]: https://nodejs.org/en/
 
