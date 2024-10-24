@@ -29,7 +29,9 @@
 #
 #   NODE            Command for running Node.js. Default: `node`.
 #   NODE_PATH       Path for resolving node modules.
-#   EMCCC_COMPILER  Emscripten C compiler. Default: `emcc`.
+#   CLANG_COMPILER  LLVM Clang compiler. Default: `clang`.
+#   CLANG_SYSROOT   Path to a C standard library.
+#   EMCC_COMPILER   Emscripten C compiler. Default: `emcc`.
 #   WASM2WAT        Command for converting WebAssembly binary format to text format. Default. `wasm2wat`.
 #   WASM2JS         Command for converting WebAssembly binary format to JavaScript. Default. `wasm2js`.
 #   SRC_FOLDER      Folder containing source files. Default: `src`.
@@ -56,6 +58,12 @@ fi
 # Define the node path:
 node_path="${NODE_PATH}"
 
+# Define the path to the LLVM `clang` compiler:
+clang_compiler="${CLANG_COMPILER}"
+if [[ -z "${clang_compiler}" ]]; then
+	clang_compiler='clang'
+fi
+
 # Define the path to the Emscripten `emcc` compiler:
 emcc_compiler="${EMCC_COMPILER}"
 if [[ -z "${emcc_compiler}" ]]; then
@@ -79,6 +87,9 @@ src_folder="${SRC_FOLDER}"
 if [[ -z "${src_folder}" ]]; then
 	src_folder='src'
 fi
+
+# Define a path to a C standard library:
+clang_sysroot="${CLANG_SYSROOT}"
 
 # Define a list of external `include` directories:
 include="${INCLUDE}"
@@ -201,7 +212,7 @@ resolve_libpaths() {
 #
 # $1 - source directory
 compile() {
-	cd "$1" && EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" WASM2JS="${wasm_to_js}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" make wasm 2>&1
+	cd "$1" && CLANG_COMPILER="${clang_compiler}" CLANG_SYSROOT="${clang_sysroot}" EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" WASM2JS="${wasm_to_js}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" make wasm 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Error when attempting to compile WebAssembly.' >&2
 		return 1

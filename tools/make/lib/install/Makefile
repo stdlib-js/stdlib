@@ -46,6 +46,7 @@ include $(TOOLS_MAKE_LIB_DIR)/install/python_deps.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/r_deps.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/shellcheck.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/wabt.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/wasi_libc.mk
 
 
 # RULES #

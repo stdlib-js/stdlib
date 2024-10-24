@@ -43,6 +43,7 @@ This directory contains [`make`][make] rules for running the project's installat
     -   [R](#r)
     -   [ShellCheck](#shellcheck)
     -   [WebAssembly Binary Toolkit](#wabt)
+    -   [WASI libc](#wasi-libc)
 
 </section>
 
@@ -598,6 +599,36 @@ Removes [WebAssembly Binary Toolkit][wabt] installation tests.
 $ make clean-deps-wabt-tests
 ```
 
+* * *
+
+<a name="wasi-libc"></a>
+
+### WASI libc
+
+#### install-deps-wasi-libc
+
+Installs a [WASI libc][wasi-libc] implementation for WebAssembly.
+
+```bash
+$ make install-deps-wasi-libc
+```
+
+#### clean-deps-wasi-libc
+
+Removes an installed [WASI libc][wasi-libc] distribution.
+
+```bash
+$ make clean-deps-wasi-libc
+```
+
+#### clean-deps-wasi-libc-tests
+
+Removes [WASI libc][wasi-libc] installation tests.
+
+```bash
+$ make clean-deps-wasi-libc-tests
+```
+
 </section>
 
 <!-- /.usage -->
@@ -637,6 +668,8 @@ $ make clean-deps-wabt-tests
 [shellcheck]: https://github.com/koalaman/shellcheck
 
 [wabt]: https://github.com/WebAssembly/wabt
+
+[wasi-libc]: https://github.com/WebAssembly/wasi-libc
 
 </section>
 
