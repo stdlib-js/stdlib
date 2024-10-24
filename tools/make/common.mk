@@ -496,11 +496,23 @@ DEPS_LLVM_BUILD_OUT ?= $(DEPS_BUILD_DIR)/llvm
 # Define the LLVM version:
 DEPS_LLVM_VERSION ?=
 
-# Define the path to clang compiler:
+# Define the path to the LLVM clang compiler:
 DEPS_LLVM_CLANG ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/clang
 
-# Define the path to LLVM static compiler:
-DEPS_LLVM_LLC ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/llc
+# Define the path to the LLVM archiver:
+DEPS_LLVM_AR ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/llvm-ar
+
+# Define the path to the LLVM tool for listing LLVM bitcode and object file symbol tables:
+DEPS_LLVM_NM ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/llvm-nm
+
+# Define the output path when building WASI libc:
+DEPS_WASI_LIBC_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wasi-libc
+
+# Define the WASI libc version:
+DEPS_WASI_LIBC_VERSION ?=
+
+# Define the path to WASI libc sysroot:
+DEPS_WASI_LIBC_SYSROOT ?= $(DEPS_WASI_LIBC_BUILD_OUT)/sysroot
 
 # Define the output path when building the Emscripten SDK:
 DEPS_EMSDK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
