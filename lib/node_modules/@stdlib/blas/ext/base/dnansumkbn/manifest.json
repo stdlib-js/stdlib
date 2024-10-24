@@ -28,53 +28,57 @@
     {
       "task": "build",
       "src": [
-        "./src/dnansumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-float64array"
+        "@stdlib/napi/argv-strided-float64array",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/napi/create-double"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/dnansumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dnansumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     }
   ]
