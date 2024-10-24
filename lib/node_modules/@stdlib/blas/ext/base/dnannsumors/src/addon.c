@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/ext/base/dnannsumors.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
@@ -38,7 +39,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Out, 2, strideOut, argv, 3 );
 
-	int64_t io;
+	int io;
 	if ( strideOut < 0 ) {
 		io = -strideOut;
 	} else {
@@ -46,11 +47,37 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	}
 
 	double *out = Out;
-	int64_t n;
-	out[ io ] = stdlib_strided_dnannsumors( N, X, strideX, &n );
+	CBLAS_INT n;
+	out[ io ] = API_SUFFIX(stdlib_strided_dnannsumors)( N, X, strideX, &n );
 	out[ io + strideOut ] = (double)n;
 
 	return NULL;
 }
 
-STDLIB_NAPI_MODULE_EXPORT_FCN( addon )
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+static napi_value addon_method( napi_env env, napi_callback_info info ) {
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 7 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 3 );
+	STDLIB_NAPI_ARGV_INT64( env, strideOut, argv, 5 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetOut, argv, 6 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Out, 2, strideOut, argv, 4 );
+
+	int io = offsetOut;
+	double *out = Out;
+	CBLAS_INT n;
+	out[ io ] = API_SUFFIX(stdlib_strided_dnannsumors_ndarray)( N, X, strideX, offsetX, &n );
+	out[ io+strideOut ] = (double)n;
+
+	return NULL;
+}
+
+STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "ndarray", addon_method )
