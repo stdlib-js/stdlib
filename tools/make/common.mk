@@ -391,6 +391,9 @@ BLAS ?=
 # Define the path to the BLAS library (used for includes and linking):
 BLAS_DIR ?=
 
+# Define the primary integer type to use in BLAS routines:
+CBLAS_INT ?=
+
 # Define the path for building dependencies:
 DEPS_BUILD_DIR ?= $(DEPS_DIR)/build
 
