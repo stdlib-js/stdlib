@@ -347,7 +347,7 @@
     Int32Array before passing the values to this method.
 
     If provided an array having an unknown or "generic" data type, elements are
-    written as single-precision floating-point numbers.
+    written as double-precision floating-point numbers.
 
     Parameters
     ----------
@@ -386,7 +386,7 @@
     after reading memory values using this method.
 
     If provided an output array having an unknown or "generic" data type,
-    elements are read as single-precision floating-point numbers.
+    elements are read as double-precision floating-point numbers.
 
     Parameters
     ----------
