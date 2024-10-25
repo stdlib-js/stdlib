@@ -1,19 +1,3 @@
-;; @license Apache-2.0
-;;
-;; Copyright (c) 2024 The Stdlib Authors.
-;;
-;; Licensed under the Apache License, Version 2.0 (the "License");
-;; you may not use this file except in compliance with the License.
-;; You may obtain a copy of the License at
-;;
-;;    http://www.apache.org/licenses/LICENSE-2.0
-;;
-;; Unless required by applicable law or agreed to in writing, software
-;; distributed under the License is distributed on an "AS IS" BASIS,
-;; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-;; See the License for the specific language governing permissions and
-;; limitations under the License.
-
 (module
   (type (;0;) (func))
   (type (;1;) (func (param i32 f64 i32 i32)))
@@ -22,280 +6,108 @@
   (func (;0;) (type 0)
     nop)
   (func (;1;) (type 1) (param i32 f64 i32 i32)
-    (local i64)
     local.get 0
     local.get 1
     local.get 2
     local.get 3
-    local.get 3
-    i64.extend_i32_s
-    local.tee 4
-    i64.const 1
+    i32.const 1
     local.get 0
-    i64.extend_i32_s
-    i64.sub
-    i64.mul
-    i64.const 0
-    local.get 4
-    i64.const 0
-    i64.le_s
+    i32.sub
+    local.get 3
+    i32.mul
+    i32.const 0
+    local.get 3
+    i32.const 0
+    i32.le_s
     select
-    i32.wrap_i64
     call 2)
   (func (;2;) (type 2) (param i32 f64 i32 i32 i32)
-    (local i32 i32 i32 i32 i32 i32 i32)
+    (local i32 i32)
     block  ;; label = @1
       local.get 0
       i32.const 0
       i32.le_s
-      br_if 0 (;@1;)
       local.get 1
       f64.const 0x1p+0 (;=1;)
       f64.eq
+      i32.or
       br_if 0 (;@1;)
       local.get 3
       i32.const 1
       i32.ne
       if  ;; label = @2
-        local.get 0
-        i32.const 1
-        i32.sub
-        i32.const 3
-        i32.ge_u
-        if  ;; label = @3
-          local.get 0
-          i32.const 2147483644
-          i32.and
-          local.set 7
-          local.get 3
-          local.get 3
-          i32.add
-          local.tee 8
-          local.get 3
-          i32.add
-          local.tee 10
-          local.get 3
-          i32.add
-          local.set 11
-          loop  ;; label = @4
-            local.get 2
-            local.get 4
-            i32.const 3
-            i32.shl
-            i32.add
-            local.tee 6
-            local.get 1
-            local.get 6
-            f64.load
-            f64.mul
-            f64.store
-            local.get 2
-            local.get 3
-            local.get 4
-            i32.add
-            i32.const 3
-            i32.shl
-            i32.add
-            local.tee 6
-            local.get 1
-            local.get 6
-            f64.load
-            f64.mul
-            f64.store
-            local.get 2
-            local.get 4
-            local.get 8
-            i32.add
-            i32.const 3
-            i32.shl
-            i32.add
-            local.tee 6
-            local.get 1
-            local.get 6
-            f64.load
-            f64.mul
-            f64.store
-            local.get 2
-            local.get 4
-            local.get 10
-            i32.add
-            i32.const 3
-            i32.shl
-            i32.add
-            local.tee 6
-            local.get 1
-            local.get 6
-            f64.load
-            f64.mul
-            f64.store
-            local.get 4
-            local.get 11
-            i32.add
-            local.set 4
-            local.get 5
-            i32.const 4
-            i32.add
-            local.tee 5
-            local.get 7
-            i32.ne
-            br_if 0 (;@4;)
-          end
-        end
-        local.get 0
-        i32.const 3
-        i32.and
-        local.tee 0
-        i32.eqz
-        br_if 1 (;@1;)
-        i32.const 0
-        local.set 5
         loop  ;; label = @3
+          local.get 0
+          local.get 5
+          i32.eq
+          br_if 2 (;@1;)
           local.get 2
           local.get 4
           i32.const 3
           i32.shl
           i32.add
-          local.tee 7
+          local.tee 6
           local.get 1
-          local.get 7
+          local.get 6
           f64.load
           f64.mul
           f64.store
+          local.get 5
+          i32.const 1
+          i32.add
+          local.set 5
           local.get 3
           local.get 4
           i32.add
           local.set 4
-          local.get 5
-          i32.const 1
-          i32.add
-          local.tee 5
-          local.get 0
-          i32.ne
-          br_if 0 (;@3;)
+          br 0 (;@3;)
         end
-        br 1 (;@1;)
+        unreachable
       end
       block  ;; label = @2
         local.get 0
         i32.const 5
         i32.rem_u
-        local.tee 3
-        local.tee 5
+        local.tee 6
         i32.eqz
         br_if 0 (;@2;)
-        local.get 3
-        i32.const 1
-        i32.sub
-        i32.const 3
-        i32.ge_u
-        if  ;; label = @3
-          local.get 2
-          i32.const 24
-          i32.add
-          local.set 8
-          local.get 2
-          i32.const 16
-          i32.add
-          local.set 10
-          local.get 2
-          i32.const 8
-          i32.add
-          local.set 11
-          local.get 5
-          i32.const 4
-          i32.and
-          local.set 6
-          loop  ;; label = @4
-            local.get 2
-            local.get 4
-            i32.const 3
-            i32.shl
-            local.tee 3
-            i32.add
-            local.tee 9
-            local.get 1
-            local.get 9
-            f64.load
-            f64.mul
-            f64.store
-            local.get 3
-            local.get 11
-            i32.add
-            local.tee 9
-            local.get 1
-            local.get 9
-            f64.load
-            f64.mul
-            f64.store
-            local.get 3
-            local.get 10
-            i32.add
-            local.tee 9
-            local.get 1
-            local.get 9
-            f64.load
-            f64.mul
-            f64.store
-            local.get 3
-            local.get 8
-            i32.add
-            local.tee 3
-            local.get 1
-            local.get 3
-            f64.load
-            f64.mul
-            f64.store
-            local.get 4
-            i32.const 4
-            i32.add
-            local.set 4
-            local.get 7
-            i32.const 4
-            i32.add
-            local.tee 7
-            local.get 6
-            i32.ne
-            br_if 0 (;@4;)
-          end
-        end
-        local.get 5
-        i32.const 3
-        i32.and
-        local.tee 7
-        i32.eqz
-        br_if 0 (;@2;)
-        i32.const 0
-        local.set 3
         loop  ;; label = @3
+          local.get 5
+          local.get 6
+          i32.eq
+          br_if 1 (;@2;)
           local.get 2
           local.get 4
           i32.const 3
           i32.shl
           i32.add
-          local.tee 8
+          local.tee 3
           local.get 1
-          local.get 8
+          local.get 3
           f64.load
           f64.mul
           f64.store
+          local.get 5
+          i32.const 1
+          i32.add
+          local.set 5
           local.get 4
           i32.const 1
           i32.add
           local.set 4
-          local.get 3
-          i32.const 1
-          i32.add
-          local.tee 3
-          local.get 7
-          i32.ne
-          br_if 0 (;@3;)
+          br 0 (;@3;)
         end
+        unreachable
       end
       local.get 0
       i32.const 5
       i32.lt_s
       br_if 0 (;@1;)
       loop  ;; label = @2
+        local.get 0
+        local.get 6
+        i32.le_s
+        br_if 1 (;@1;)
         local.get 2
         local.get 4
         i32.const 3
@@ -331,18 +143,17 @@
         f64.load offset=32
         f64.mul
         f64.store offset=32
+        local.get 6
+        i32.const 5
+        i32.add
+        local.set 6
         local.get 4
         i32.const 5
         i32.add
         local.set 4
-        local.get 5
-        i32.const 5
-        i32.add
-        local.tee 5
-        local.get 0
-        i32.lt_s
-        br_if 0 (;@2;)
+        br 0 (;@2;)
       end
+      unreachable
     end)
   (export "__wasm_call_ctors" (func 0))
   (export "__wasm_apply_data_relocs" (func 0))
