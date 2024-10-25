@@ -80,26 +80,37 @@ else
 	NODEJS := node
 endif
 
+# Define the integer size:
+ifdef CBLAS_INT
+	INT_TYPE := $(CBLAS_INT)
+else
+	INT_TYPE := int32_t
+endif
+
 # Define the command-line options when compiling C files:
 CFLAGS ?= \
 	-std=c99 \
 	-O3 \
+	-flto \
 	-Wall \
 	-pedantic \
-	-D CBLAS_INT=int32_t
+	-D CBLAS_INT=$(INT_TYPE)
 
 # Define the command-line options when compiling C files to WebAssembly and asm.js:
 EMCCFLAGS ?= $(CFLAGS)
 
 # Define shared `emcc` flags:
 EMCC_SHARED_FLAGS := \
+	-Oz \
+	-fwasm-exceptions \
+	-s SUPPORT_LONGJMP=1 \
 	-s SIDE_MODULE=2 \
-	-s WASM_BIGINT=0 \
-	-s EXPORTED_FUNCTIONS="['_c_scopy','_c_scopy_ndarray']"
+	-s EXPORTED_FUNCTIONS="$(shell cat exports.json | tr -d ' \t\n' | sed s/\"/\'/g)"
 
 # Define WebAssembly `emcc` flags:
 EMCC_WASM_FLAGS := $(EMCC_SHARED_FLAGS) \
-	-s WASM=1
+	-s WASM=1 \
+	-s WASM_BIGINT=0
 
 # List of includes (e.g., `-I /foo/bar -I /beep/boop/include`):
 INCLUDE ?=
@@ -217,7 +228,7 @@ $(browser_js_targets): $(wasm_targets)
 # make clean-wasm
 #/
 clean-wasm:
-	$(QUIET) -rm -f *.wasm *.wat *.wasm.js
+	$(QUIET) -rm -f *.wasm *.wat *.wasm.js $(browser_js_targets)
 
 .PHONY: clean-wasm
 
