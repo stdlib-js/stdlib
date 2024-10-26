@@ -452,7 +452,7 @@
     > var mod = new {{alias}}.Module( mem );
     > mod.initializeSync();
 
-    // Define "pointer" (i.e., byte offsets) into module memory:
+    // Define a "pointer" (i.e., byte offset) into module memory:
     > var xptr = 0;
 
     // Write data to module memory:
@@ -500,7 +500,7 @@
     > var mod = new {{alias}}.Module( mem );
     > mod.initializeSync();
 
-    // Define "pointer" (i.e., byte offsets) into module memory:
+    // Define a "pointer" (i.e., byte offset) into module memory:
     > var xptr = 0;
 
     // Write data to module memory:
