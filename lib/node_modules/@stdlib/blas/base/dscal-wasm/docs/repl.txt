@@ -491,7 +491,7 @@
 
     Returns
     -------
-    ox: integer
+    xp: integer
         Input array pointer (i.e., byte offset).
 
     Examples
