@@ -55,9 +55,9 @@ type Reviver = ( key: string, value: any ) => any;
 * Callback invoked upon reading a file.
 *
 * @param err - error object
-* @param file - file contents
+* @param data - file contents
 */
-type Callback = ( err: Error | null, file: Buffer | string ) => void;
+type Callback<T> = ( err: Error | null, data: T ) => void;
 
 /**
 * Interface for reading a file as JSON.
@@ -85,7 +85,7 @@ interface ReadJSON {
 	*     console.dir( data );
 	* }
 	*/
-	( file: string | Buffer | number, options: Options | string, clbk: Callback ): void;
+	<T = unknown>( file: string | Buffer | number, options: Options | string, clbk: Callback<T> ): void;
 
 	/**
 	* Asynchronously reads a file as JSON.
@@ -105,7 +105,7 @@ interface ReadJSON {
 	*     console.dir( data );
 	* }
 	*/
-	( file: string | Buffer | number, clbk: Callback ): void;
+	<T = unknown>( file: string | Buffer | number, clbk: Callback<T> ): void;
 
 	/**
 	* Synchronously reads a file as JSON.
@@ -127,7 +127,7 @@ interface ReadJSON {
 	* }
 	* console.dir( out );
 	*/
-	sync( file: string | Buffer | number, options?: Options | string ): string | Error;
+	sync<T = unknown>( file: string | Buffer | number, options?: Options | string ): T | Error;
 }
 
 /**
