@@ -133,9 +133,9 @@ var gammaCDF = gamma.cdf.factory( alpha, beta );
 var cdf = filledarrayby( x.length, 'float64', gammaCDF );
 
 // Output the PDF and CDF values:
-console.log( 'x values:', x );
-console.log( 'PDF values:', pdf );
-console.log( 'CDF values:', cdf );
+console.log( 'x values: %s', x );
+console.log( 'PDF values: %s', pdf );
+console.log( 'CDF values: %s', cdf );
 
 // Compute statistical properties:
 var theoreticalMean = gamma.mean( alpha, beta );
@@ -143,10 +143,10 @@ var theoreticalVariance = gamma.variance( alpha, beta );
 var theoreticalSkewness = gamma.skewness( alpha, beta );
 var theoreticalKurtosis = gamma.kurtosis( alpha, beta );
 
-console.log( 'Theoretical Mean:', theoreticalMean );
-console.log( 'Theoretical Variance:', theoreticalVariance );
-console.log( 'Skewness:', theoreticalSkewness );
-console.log( 'Kurtosis:', theoreticalKurtosis );
+console.log( 'Theoretical Mean: %s', theoreticalMean );
+console.log( 'Theoretical Variance: %s', theoreticalVariance );
+console.log( 'Skewness: %s', theoreticalSkewness );
+console.log( 'Kurtosis: %s', theoreticalKurtosis );
 
 // Generate random samples from the gamma distribution:
 var rgamma = gammaRandomFactory( alpha, beta );
@@ -157,12 +157,12 @@ var samples = filledarrayby( n, 'float64', rgamma );
 var sampleMean = mean( n, samples, 1 );
 var sampleVariance = variance( n, 1, samples, 1 );
 
-console.log( 'Sample Mean:', sampleMean );
-console.log( 'Sample Variance:', sampleVariance );
+console.log( 'Sample Mean: %s', sampleMean );
+console.log( 'Sample Variance: %s', sampleVariance );
 
 // Compare sample statistics to theoretical values:
-console.log( 'Difference in Mean:', abs( theoreticalMean - sampleMean ) );
-console.log( 'Difference in Variance:', abs( theoreticalVariance - sampleVariance ) );
+console.log( 'Difference in Mean: %s', abs( theoreticalMean - sampleMean ) );
+console.log( 'Difference in Variance: %s', abs( theoreticalVariance - sampleVariance ) );
 
 // Demonstrate that the sum of `k` gamma variables is a gamma-distributed sum of `k` gamma(α, β) variables with same β is `gamma(k*α, β)`:
 var k = 5;
@@ -184,15 +184,15 @@ var sumAlpha = k * alpha;
 var sumMean = gamma.mean( sumAlpha, beta );
 var sumVariance = gamma.variance( sumAlpha, beta );
 
-console.log( 'Sum Theoretical Mean:', sumMean );
-console.log( 'Sum Theoretical Variance:', sumVariance );
+console.log( 'Sum Theoretical Mean: %s', sumMean );
+console.log( 'Sum Theoretical Variance: %s', sumVariance );
 
 // Compute sample mean and variance for the sum:
 var sumSampleMean = mean( sumSamples.length, sumSamples, 1 );
 var sumSampleVariance = variance( sumSamples.length, 1, sumSamples, 1 );
 
-console.log( 'Sum Sample Mean:', sumSampleMean );
-console.log( 'Sum Sample Variance:', sumSampleVariance );
+console.log( 'Sum Sample Mean: %s', sumSampleMean );
+console.log( 'Sum Sample Variance: %s', sumSampleVariance );
 ```
 
 </section>

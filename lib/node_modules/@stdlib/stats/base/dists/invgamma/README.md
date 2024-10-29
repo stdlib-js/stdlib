@@ -101,8 +101,6 @@ var y = dist.cdf( 0.5 );
 
 ## Examples
 
-<!-- TODO: better examples -->
-
 <!-- eslint no-undef: "error" -->
 
 ```javascript
@@ -131,9 +129,9 @@ var invgammaCDF = invgamma.cdf.factory( alpha, beta );
 var cdf = filledarrayBy( x.length, 'float64', invgammaCDF );
 
 // Output the PDF and CDF values:
-console.log( 'x values:', x );
-console.log( 'PDF values:', pdf );
-console.log( 'CDF values:', cdf );
+console.log( 'x values: %s', x );
+console.log( 'PDF values: %s', pdf );
+console.log( 'CDF values: %s', cdf );
 
 // Compute statistical properties:
 var theoreticalMean = invgamma.mean( alpha, beta );
@@ -141,10 +139,10 @@ var theoreticalVariance = invgamma.variance( alpha, beta );
 var theoreticalSkewness = invgamma.skewness( alpha, beta );
 var theoreticalKurtosis = invgamma.kurtosis( alpha, beta );
 
-console.log( 'Theoretical Mean:', theoreticalMean );
-console.log( 'Theoretical Variance:', theoreticalVariance );
-console.log( 'Skewness:', theoreticalSkewness );
-console.log( 'Kurtosis:', theoreticalKurtosis );
+console.log( 'Theoretical Mean: %s', theoreticalMean );
+console.log( 'Theoretical Variance: %s', theoreticalVariance );
+console.log( 'Skewness: %s', theoreticalSkewness );
+console.log( 'Kurtosis: %s', theoreticalKurtosis );
 
 // Generate random samples from the inverse gamma distribution:
 var rinvGamma = invgammaRandomFactory( alpha, beta );
@@ -155,21 +153,21 @@ var samples = filledarrayBy( n, 'float64', rinvGamma );
 var sampleMean = mean( n, samples, 1 );
 var sampleVariance = variance( n, 1, samples, 1 );
 
-console.log( 'Sample Mean:', sampleMean );
-console.log( 'Sample Variance:', sampleVariance );
+console.log( 'Sample Mean: %s', sampleMean );
+console.log( 'Sample Variance: %s', sampleVariance );
 
 // Compare sample statistics to theoretical values:
-console.log( 'Difference in Mean:', abs( mean - sampleMean ) );
-console.log( 'Difference in Variance:', abs( variance - sampleVariance ) );
+console.log( 'Difference in Mean: %s', abs( theoreticalMean - sampleMean ) );
+console.log( 'Difference in Variance: %s', abs( theoreticalVariance - sampleVariance ) );
 
 // Demonstrate the relationship between inverse gamma and gamma distributions:
 var y = 0.5;
 var invGammaCDF = invgamma.cdf( y, alpha, beta );
 var gammaCDF = 1.0 - gamma.cdf( 1.0 / y, alpha, 1.0 / beta );
 
-console.log( 'Inverse Gamma CDF at y =', y, ':', invGammaCDF );
-console.log( '1 - Gamma CDF at 1/y =', 1 / y, ':', gammaCDF );
-console.log( 'Difference:', abs( invGammaCDF - gammaCDF ) );
+console.log( 'Inverse Gamma CDF at y = %s: %s', y, invGammaCDF );
+console.log( '1 - Gamma CDF at 1/y = %s: %s', 1 / y, gammaCDF );
+console.log( 'Difference: %s', abs( invGammaCDF - gammaCDF ) );
 ```
 
 </section>

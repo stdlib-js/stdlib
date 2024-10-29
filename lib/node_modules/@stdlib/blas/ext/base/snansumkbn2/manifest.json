@@ -1,8 +1,8 @@
 {
-	"options": {
+  "options": {
     "task": "build"
   },
-	"fields": [
+  "fields": [
     {
       "field": "src",
       "resolve": true,
@@ -23,28 +23,28 @@
       "resolve": true,
       "relative": false
     }
-	],
-	"confs": [
-		{
+  ],
+  "confs": [
+    {
       "task": "build",
-			"src": [
-				"./src/snansumkbn2.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
+      "src": [
+        "./src/snansumkbn2.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
         "@stdlib/math/base/assert/is-nanf",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array"
-			]
-		},
+      ]
+    },
     {
       "task": "benchmark",
       "src": [
@@ -77,5 +77,5 @@
         "@stdlib/math/base/assert/is-nanf"
       ]
     }
-	]
+  ]
 }
