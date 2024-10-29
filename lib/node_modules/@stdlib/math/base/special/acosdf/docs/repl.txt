@@ -1,0 +1,29 @@
+
+{{alias}}( x )
+    Computes the arccosine (in degrees) of a single-precision floating-point
+    number.
+
+    If `|x| > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Arccosine (in degrees).
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    90.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float32/pi}} / 6.0 )
+    ~58.43
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+
