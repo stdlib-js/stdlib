@@ -87,15 +87,48 @@ The namespace contains the following functions for creating iterator protocol-co
 
 ## Examples
 
-<!-- TODO: better examples -->
-
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var objectKeys = require( '@stdlib/utils/keys' );
 var ns = require( '@stdlib/math/iter/sequences' );
 
-console.log( objectKeys( ns ) );
+// Create iterators for generating square and cube numbers:
+var squares = ns.iterSquaresSeq();
+var cubes = ns.iterCubesSeq();
+
+// Iterate over both sequences and log the first five pairs:
+var square;
+var cube;
+var i;
+for ( i = 0; i < 5; i++ ) {
+    square = squares.next().value;
+    cube = cubes.next().value;
+    console.log( 'Square: %d, Cube: %d', square, cube );
+}
+
+// Calculate the sum of the first ten Fibonacci numbers:
+var fibonacci = ns.iterFibonacciSeq({
+    'iter': 10
+});
+var sum = 0;
+var v = fibonacci.next();
+while ( v.done === false ) {
+    sum += v.value;
+    v = fibonacci.next();
+}
+console.log( 'Sum of first ten Fibonacci numbers: %d', sum );
+
+// Generate prime numbers:
+var primes = ns.iterPrimesSeq({
+    'iter': 10
+});
+
+console.log( 'First ten prime numbers:' );
+v = primes.next();
+while ( v.done === false ) {
+    console.log( v.value );
+    v = primes.next();
+}
 ```
 
 </section>
