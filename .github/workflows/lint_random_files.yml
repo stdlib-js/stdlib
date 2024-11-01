@@ -414,7 +414,7 @@ jobs:
       - name: 'Import GPG key to sign commits'
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-import-gpg@01dd5d3ca463c7f10f7f4f7b4f177225ac661ee4 # v6.1.0
+        uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         with:
           gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
