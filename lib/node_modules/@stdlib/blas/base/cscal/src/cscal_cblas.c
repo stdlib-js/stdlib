@@ -31,7 +31,7 @@
 */
 void API_SUFFIX(c_cscal)( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX ) {
 	CBLAS_INT sx = strideX;
-	if( sx < 0 ) {
+	if ( sx < 0 ) {
 		sx = -sx;
 	}
 	API_SUFFIX(cblas_cscal)( N, ca, CX, sx );
@@ -51,7 +51,7 @@ void API_SUFFIX(c_cscal_ndarray)( const CBLAS_INT N, const stdlib_complex64_t ca
 	CBLAS_INT sx = strideX;
 
     cx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
-	if( sx < 0 ) {
+	if ( sx < 0 ) {
 		sx = -sx;
 	}
 	API_SUFFIX(cblas_cscal)( N, ca, (void *)cx, sx );
