@@ -117,7 +117,7 @@ github_api() {
 			curl -s "${headers[@]}" "$GITHUB_API_URL$endpoint"
 			;;
 		POST)
-			# For POST requests, always set the Content-Type header>
+			# For POST requests, always set the Content-Type header:
 			headers+=("-H" "Content-Type: application/json")
 
 			# If data is provided, include it in the request:
@@ -156,13 +156,22 @@ main() {
 	pr_commits=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/commits")
 
 	# Extract co-authors from commit messages:
+	co_authors=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -Eio 'Co-authored-by:.*' | sort -u)
 	processed_co_authors=""
 	while IFS= read -r co_author_line; do
+		# Skip empty lines:
+		if [ -z "$co_author_line" ]; then
+			continue
+		fi
 		name_email=$(echo "$co_author_line" | sed -E 's/Co-authored-by:[[:space:]]*(.*)/\1/')
 		name=$(echo "$name_email" | sed -E 's/^(.*)<.*>$/\1/' | xargs)
 		email=$(echo "$name_email" | sed -E 's/^.*<(.*)>$/\1/' | xargs)
 		resolved_author=$(resolve_name_email "$name" "$email")
 
+		# Skip if the resolved author matches the resolved PR author:
+		if [ "$resolved_author" == "$pr_author_resolved" ]; then
+			continue
+		fi
 		processed_co_authors+="Co-authored-by: $resolved_author"$'\n'
 	done <<< "$co_authors"
 
@@ -195,11 +204,13 @@ main() {
 	# Remove any empty lines and duplicates:
 	commit_authors=$(echo "$commit_authors" | sort -u | sed '/^$/d')
 
-	# Prefix with 'Co-authored-by: ':
-	commit_authors_formatted=$(echo "$commit_authors" | sed 's/^/Co-authored-by: /' | sort -u)
+	# Prefix with 'Co-authored-by: ' if not empty:
+	if [ -n "$commit_authors" ]; then
+		commit_authors=$(echo "$commit_authors" | sed 's/^/Co-authored-by: /' | sort -u)
+	fi
 
-	# Combine co-authors and commit authors:
-	all_co_authors=$(echo -e "$co_authors\n$commit_authors_formatted" | sort -u | sed '/^$/d')
+	# Combine co-authors and commit authors, removing empty lines:
+	all_co_authors=$(echo -e "$processed_co_authors\n$commit_authors" | sed '/^\s*$/d' | sort -u)
 
 	# Extract 'Signed-off-by' lines from commits:
 	signed_off_bys=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -Eio 'Signed-off-by:.*' | sort -u)
