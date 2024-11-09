@@ -4,8 +4,8 @@
     ignoring `NaN` values and using a second-order iterative Kahan–Babuška
     algorithm.
 
-    The `N` and stride parameters determine which elements in the strided
-    array are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset,
     use a typed array view.
