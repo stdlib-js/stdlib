@@ -242,7 +242,7 @@ jobs:
       # Install Windows build tools for compiling Node.js native add-ons.
       - name: 'Install Windows build tools'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-chocolatey@0e015857dd851f84fcb7fb53380eb5c4c8202333 # v3.0.0
+        uses: crazy-max/ghaction-chocolatey@2ae99523e93879734d432250f87e2c45c379cd60 # v3.2.0
         with:
           args: install -y visualstudio2019buildtools visualstudio2019-workload-vctools
         timeout-minutes: 10
