@@ -40,7 +40,6 @@ static const double NORMALIZATION_CONSTANT = 2147483646.0; // MAX_INT32 - 1
 /**
 * MINSTD PRNG.
 *
-* @private
 */
 static const struct BasePRNG minstd_prng = {
 	"minstd",                                     // name
@@ -61,7 +60,6 @@ static const struct BasePRNG minstd_prng = {
 *
 * -   The function returns `-1` if unable to generate a pseudorandom integer and `0` otherwise.
 *
-* @private
 * @param obj  PRNG object
 * @param out  output address
 * @return     status code
@@ -95,7 +93,6 @@ static inline int8_t next( struct BasePRNGObject *obj, uint64_t *out ) {
 *
 * -   The function returns `-1` if unable to generate a pseudorandom number and `0` otherwise.
 *
-* @private
 * @param obj  PRNG object
 * @param out  output address
 * @return     status code
@@ -115,7 +112,6 @@ static inline int8_t normalized( struct BasePRNGObject *obj, double *out ) {
 /**
 * Frees a PRNG's allocated memory.
 *
-* @private
 * @param obj  PRNG object
 */
 static inline void minstd_free( struct BasePRNGObject *obj ) {

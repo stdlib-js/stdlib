@@ -4231,7 +4231,8 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'Uint8ClampedArray',
 		'Uint16Array',
 		'Uint32Array',
-		'URIError'
+		'URIError',
+		'WebAssembly'
 	]
 }];
 
@@ -4453,6 +4454,23 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 * var baz = require( './../baz.js' );
 */
 rules[ 'stdlib/require-leading-slash' ] = 'error';
+
+/**
+* Enforce spaces inside `require()` parentheses.
+*
+* @name require-spaces
+* @memberof rules
+* @type {string}
+*
+* @example
+* // Bad...
+* var foo = require('@stdlib/foo');
+*
+* @example
+* // Good...
+* var foo = require( '@stdlib/foo' );
+*/
+rules[ 'stdlib/require-spaces' ] = 'error';
 
 /**
 * Enforce that `require()` calls follow a specified order.

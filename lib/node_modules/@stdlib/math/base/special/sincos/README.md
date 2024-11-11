@@ -88,6 +88,96 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/sincos.h"
+```
+
+#### stdlib_base_sincos( x, &sine, &cosine )
+
+Simultaneously computes the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of a `number` (in radians).
+
+```c
+double cosine;
+double sine;
+
+stdlib_base_sincos( 4.0, &sine, &cosine );
+```
+
+The function accepts the following arguments:
+
+-   **x**:      `[in] double` input value.
+-   **sine**:   `[out] double*` destination for the sine.
+-   **cosine**: `[out] double*` destination for the cosine.
+
+```c
+void stdlib_base_sincos( const double x, double *sine, double *cosine );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/sincos.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 0.0, 1.57, 3.14, 6.28 };
+
+    double cosine;
+    double sine;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        stdlib_base_sincos( x[ i ], &sine, &cosine );
+        printf( "x: %lf => sine: %lf, cosine: %lf\n", x[ i ], sine, cosine );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

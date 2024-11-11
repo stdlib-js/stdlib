@@ -62,7 +62,7 @@ var dt = y.dtype;
 
 The function supports the following `options`:
 
--   **dtype**: output [ndarray][@stdlib/ndarray/ctor] [data type][@stdlib/ndarray/dtypes]. Overrides the input ndarray's inferred [data type][@stdlib/ndarray/dtypes].
+-   **dtype**: output [ndarray][@stdlib/ndarray/ctor] [data type][@stdlib/ndarray/dtypes]. Must be a numeric [data type][@stdlib/ndarray/dtypes] or "generic". Overrides the input ndarray's inferred [data type][@stdlib/ndarray/dtypes].
 -   **shape**: output [ndarray][@stdlib/ndarray/ctor] shape. Overrides the input ndarray's inferred shape.
 -   **order**: specifies whether the output [ndarray][@stdlib/ndarray/ctor] should be `'row-major'` (C-style) or `'column-major'` (Fortran-style). Overrides the input ndarray's inferred order.
 -   **mode**: specifies how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). Default: `'throw'`.
@@ -118,7 +118,7 @@ var zeros = require( '@stdlib/ndarray/zeros' );
 var zerosLike = require( '@stdlib/ndarray/zeros-like' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'numeric' );
 
 // Generate zero-filled arrays...
 var x;

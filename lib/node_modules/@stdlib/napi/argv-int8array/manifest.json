@@ -1,43 +1,43 @@
 {
-	"options": {},
-	"fields": [
-		{
-			"field": "src",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "include",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "libraries",
-			"resolve": false,
-			"relative": false
-		},
-		{
-			"field": "libpath",
-			"resolve": true,
-			"relative": false
-		}
-	],
-	"confs": [
-		{
-			"src": [
+  "options": {},
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "src": [
         "./src/main.c"
       ],
-			"include": [
-				"./include"
-			],
-			"libraries": [],
-			"libpath": [],
-			"dependencies": [
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
         "@stdlib/assert/napi/equal-typedarray-types",
         "@stdlib/assert/napi/is-typedarray",
         "@stdlib/assert/napi/status-ok",
         "@stdlib/napi/argv"
       ]
-		}
-	]
+    }
+  ]
 }

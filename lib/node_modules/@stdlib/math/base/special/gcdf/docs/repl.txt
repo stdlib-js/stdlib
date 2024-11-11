@@ -1,0 +1,31 @@
+
+{{alias}}( a, b )
+    Computes the greatest common divisor (gcd) of two single-precision
+    floating point numbers.
+
+    If both `a` and `b` are `0`, the function returns `0`.
+
+    Both `a` and `b` must have integer values; otherwise, the function returns
+    `NaN`.
+
+    Parameters
+    ----------
+    a: integer
+        First number.
+
+    b: integer
+        Second number.
+
+    Returns
+    -------
+    out: integer
+        Greatest common divisor.
+
+    Examples
+    --------
+    > var v = {{alias}}( 48, 18 )
+    6
+
+    See Also
+    --------
+

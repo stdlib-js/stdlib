@@ -92,10 +92,10 @@ commitlint: $(NODE_MODULES) commitlint-init
 # @private
 #
 # @example
-# make commitlint-message
+# make commitlint-message GIT_COMMIT_MESSAGE='feat: add `foo/bar`'
 #/
 commitlint-message: $(NODE_MODULES) commitlint-init
-	$(QUIET) ( printf "$(GIT_COMMIT_MESSAGE)" | "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || ( $(MAKE) -f $(this_file) commitlint-cleanup && exit 1 )
+	$(QUIET) ( printf '$(GIT_COMMIT_MESSAGE)' | "$(COMMITLINT)" $(COMMITLINT_FLAGS) ) || ( $(MAKE) -f $(this_file) commitlint-cleanup && exit 1 )
 	$(QUIET) $(MAKE) -f $(this_file) commitlint-cleanup
 
 .PHONY: commitlint-message

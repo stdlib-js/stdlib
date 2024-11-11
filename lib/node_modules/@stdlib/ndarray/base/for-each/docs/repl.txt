@@ -1,0 +1,63 @@
+
+{{alias}}( arrays, fcn[, thisArg] )
+    Invokes a provided callback once for each ndarray element.
+
+    A provided "ndarray" should be an object with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or column-major
+    (Fortran-style).
+
+    The callback function is provided the following arguments:
+
+    - value: current array element.
+    - indices: current array element indices.
+    - arr: the input ndarray.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing an output ndarray.
+
+    fcn: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback function execution context.
+
+    Examples
+    --------
+    // Define ndarray data and meta data...
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var dtype = 'float64';
+    > var shape = [ 2, 2 ];
+    > var sx = [ 2, 1 ];
+    > var ox = 0;
+    > var order = 'row-major';
+
+    // Define a callback function...
+    > function f( v ) { if ( v !== v ) { throw new Error( '...' ); } };
+
+    // Using an ndarray...
+    > var x = {{alias:@stdlib/ndarray/ctor}}( dtype, xbuf, shape, sx, ox, order );
+    > {{alias}}( [ x ], f );
+
+    // Using a minimal ndarray-like object...
+    > xbuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > x = {
+    ...     'dtype': dtype,
+    ...     'data': xbuf,
+    ...     'shape': shape,
+    ...     'strides': sx,
+    ...     'offset': ox,
+    ...     'order': order
+    ... };
+    > {{alias}}( [ x ], f );
+
+    See Also
+    --------
+

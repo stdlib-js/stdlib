@@ -42,7 +42,7 @@ var zeros = require( '@stdlib/ndarray/base/zeros' );
 
 #### zeros( dtype, shape, order )
 
-Creates a zero-filled [ndarray][@stdlib/ndarray/base/ctor] having a specified shape and [data type][@stdlib/ndarray/dtypes].
+Creates a zero-filled [ndarray][@stdlib/ndarray/base/ctor] having a specified shape and numeric [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
 var arr = zeros( 'float64', [ 2, 2 ], 'row-major' );
@@ -57,7 +57,7 @@ var dt = arr.dtype;
 
 The function accepts the following arguments:
 
--   **dtype**: underlying [data type][@stdlib/ndarray/dtypes].
+-   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Must be a numeric [data type][@stdlib/ndarray/dtypes] or "generic". 
 -   **shape**: array shape.
 -   **order**: specifies whether an [ndarray][@stdlib/ndarray/base/ctor] is `'row-major'` (C-style) or `'column-major'` (Fortran-style).
 
@@ -86,7 +86,7 @@ var dtypes = require( '@stdlib/ndarray/dtypes' );
 var zeros = require( '@stdlib/ndarray/base/zeros' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'numeric' );
 
 // Generate zero-filled arrays...
 var arr;

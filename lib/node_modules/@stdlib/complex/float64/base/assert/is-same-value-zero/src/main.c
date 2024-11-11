@@ -18,7 +18,7 @@
 
 #include "stdlib/complex/float64/base/assert/is_same_value_zero.h"
 #include "stdlib/number/float64/base/assert/is_same_value_zero.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/reim.h"
 #include "stdlib/complex/float64/ctor.h"
 #include <stdbool.h>
 
@@ -43,8 +43,8 @@ bool stdlib_base_complex128_is_same_value_zero( const stdlib_complex128_t z1, co
 	double re2;
 	double im1;
 	double im2;
-	stdlib_reim( z1, &re1, &im1 );
-	stdlib_reim( z2, &re2, &im2 );
+	stdlib_complex128_reim( z1, &re1, &im1 );
+	stdlib_complex128_reim( z2, &re2, &im2 );
 	return (
 		stdlib_base_float64_is_same_value_zero( re1, re2 ) &&
 		stdlib_base_float64_is_same_value_zero( im1, im2 )

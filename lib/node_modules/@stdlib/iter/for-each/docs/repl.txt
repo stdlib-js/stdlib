@@ -5,8 +5,8 @@
 
     When invoked, the input function is provided two arguments:
 
-    - value: iterated value
-    - index: iteration index (zero-based)
+    - value: iterated value.
+    - index: iteration index (zero-based).
 
     If an environment supports Symbol.iterator, the returned iterator is
     iterable.

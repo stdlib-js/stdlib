@@ -29,10 +29,12 @@
 # Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
 set -o pipefail
 
+
 # VARIABLES #
 
 # List of file extensions to process:
 extensions=("js" "mjs" "cjs" "json" "ts" "py" "jl" "R" "c" "h" "cpp" "hpp" "f" "sh" "awk" "html" "xml" "css" "md" "yml" "gypi" "bib" "tex")
+
 
 # FUNCTIONS #
 

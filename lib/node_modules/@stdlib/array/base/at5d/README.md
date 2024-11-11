@@ -42,7 +42,7 @@ var at5d = require( '@stdlib/array/base/at5d' );
 
 #### at5d( x, i0, i1, i2, i3, i4 )
 
-Return an element from a five-dimensional nested array.
+Returns an element from a five-dimensional nested array.
 
 ```javascript
 var x = [ [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ] ];

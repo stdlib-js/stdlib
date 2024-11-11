@@ -133,7 +133,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_ahavercos( x )
 
-Compute the [inverse half-value versed cosine][archavercosine] of a double-precision floating-point number (in radians).
+Computes the [inverse half-value versed cosine][archavercosine] of a double-precision floating-point number (in radians).
 
 ```c
 double out = stdlib_base_ahavercos( 0.0 );

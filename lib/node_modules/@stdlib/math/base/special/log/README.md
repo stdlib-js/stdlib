@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm
 
-> Compute the base `b` [logarithm][logarithm].
+> Compute the base `b` [logarithm][logarithm] of a double-precision floating-point number.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var log = require( '@stdlib/math/base/special/log' );
 
 #### log( x, b )
 
-Computes the base `b` logarithm of `x`.
+Computes the base `b` logarithm of a double-precision floating-point number.
 
 ```javascript
 var v = log( 100.0, 10.0 );
@@ -113,7 +113,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_log( x, b )
 
-Computes the base `b` logarithm of `x`.
+Computes the base `b` logarithm of a double-precision floating-point number.
 
 ```c
 double v = stdlib_base_log( 100.0, 10.0 );

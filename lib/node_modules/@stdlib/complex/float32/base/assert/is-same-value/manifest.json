@@ -37,7 +37,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/reimf",
+        "@stdlib/complex/float32/reim",
         "@stdlib/number/float32/base/assert/is-same-value"
       ]
     },
@@ -53,7 +53,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/reimf",
+        "@stdlib/complex/float32/reim",
         "@stdlib/number/float32/base/assert/is-same-value"
       ]
     }

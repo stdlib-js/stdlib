@@ -85,7 +85,7 @@ var sh = y.shape;
 
 ```javascript
 var dtypes = require( '@stdlib/ndarray/dtypes' );
-var zeros = require( '@stdlib/ndarray/base/zeros' );
+var empty = require( '@stdlib/ndarray/base/empty' );
 var emptyLike = require( '@stdlib/ndarray/base/empty-like' );
 
 // Get a list of data types:
@@ -96,7 +96,7 @@ var x;
 var y;
 var i;
 for ( i = 0; i < dt.length; i++ ) {
-    x = zeros( dt[ i ], [ 2, 2 ], 'row-major' );
+    x = empty( dt[ i ], [ 2, 2 ], 'row-major' );
     y = emptyLike( x );
     console.log( y.data );
 }

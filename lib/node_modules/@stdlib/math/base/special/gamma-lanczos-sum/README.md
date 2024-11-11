@@ -129,15 +129,15 @@ for ( i = 0; i < x.length; i++ ) {
 #include "stdlib/math/base/special/gamma_lanczos_sum.h"
 ```
 
-#### gamma_lanczos_sum( x )
+#### stdlib_base_gamma_lanczos_sum( x )
 
 Calculates the Lanczos sum for the approximation of the [gamma function][gamma-function].
 
 ```c
-double out = gamma_lanczos_sum( 4.0 );
+double out = stdlib_base_gamma_lanczos_sum( 4.0 );
 // returns ~950.366
 
-out = gamma_lanczos_sum( -1.5 );
+out = stdlib_base_gamma_lanczos_sum( -1.5 );
 // returns ~1373366.245
 ```
 
@@ -146,7 +146,7 @@ The function accepts the following arguments:
 -   **x**: `[in] double` input value.
 
 ```c
-double gamma_lanczos_sum( const double x );
+double stdlib_base_gamma_lanczos_sum( const double x );
 ```
 
 </section>

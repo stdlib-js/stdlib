@@ -85,8 +85,8 @@ var arr = iterator2array( array2iterator( [ 1, 2, 3, 4 ] ), fcn );
 
 The invoked function is provided two arguments:
 
--   `value`: iterated value
--   `index`: iterated value index
+-   **value**: iterated value.
+-   **index**: iterated value index.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );

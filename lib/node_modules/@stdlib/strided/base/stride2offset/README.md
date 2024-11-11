@@ -144,7 +144,7 @@ int64_t offset = stdlib_strided_stride2offset( 10, -10 );
 The function accepts the following arguments:
 
 -   **N**: `[in] int64_t` number of indexed elements.
--   **stride** `[in] int64_t` index increment.
+-   **stride**: `[in] int64_t` index increment.
 
 ```c
 int64_t stdlib_strided_stride2offset( int64_t N, int64_t stride );

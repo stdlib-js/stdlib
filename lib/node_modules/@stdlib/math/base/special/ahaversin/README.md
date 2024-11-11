@@ -133,7 +133,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_ahaversin( x )
 
-Compute the [inverse half-value versed sine][archaversine] of a double-precision floating-point number (in radians).
+Computes the [inverse half-value versed sine][archaversine] of a double-precision floating-point number (in radians).
 
 ```c
 double out = stdlib_base_ahaversin( 0.0 );

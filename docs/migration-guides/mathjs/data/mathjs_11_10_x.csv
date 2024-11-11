@@ -70,8 +70,8 @@ composition,
 stirlingS2,
 arg,
 conj,
-im,complex/imag
-re,complex/real
+im,complex/float64/imag
+re,complex/float64/real
 distance,
 intersect,
 and,

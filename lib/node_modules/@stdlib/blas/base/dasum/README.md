@@ -97,7 +97,7 @@ var sum = dasum( 3, x1, 2 );
 // returns 12.0
 ```
 
-If either `N` or `stride` is less than or equal to `0`, the function returns `0`.
+If `N` is less than or equal to `0`, the function returns `0`.
 
 #### dasum.ndarray( N, x, stride, offset )
 
@@ -217,6 +217,28 @@ The function accepts the following arguments:
 double c_dasum( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
 ```
 
+#### c_dasum_ndarray( N, \*X, stride, offset )
+
+Computes the sum of absolute values using alternative indexing semantics.
+
+```c
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
+
+double v = c_dasum_ndarray( 4, x, -1, 3 );
+// returns 10.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+-   **offset**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+double c_dasum_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT stride, const CBLAS_INT offset );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -251,6 +273,12 @@ int main( void ) {
 
     // Compute the sum of absolute values:
     double sum = c_dasum( N, x, strideX );
+
+    // Print the result:
+    printf( "sum: %lf\n", sum );
+
+    // Compute the sum of absolute values:
+    sum = c_dasum_ndarray( N, x, -strideX, N-1 );
 
     // Print the result:
     printf( "sum: %lf\n", sum );

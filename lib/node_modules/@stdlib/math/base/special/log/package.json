@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/log",
   "version": "0.0.0",
-  "description": "Base `b` logarithm.",
+  "description": "Compute the base `b` logarithm of a double-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

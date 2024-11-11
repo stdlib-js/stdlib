@@ -29,18 +29,18 @@
 current_year=$(date +"%Y")
 
 for file in ${@}; do
-    if [[ ! -f "$file" ]]; then
-        echo "File not found: $file"
-        continue
-    fi
-    echo "Updating copyright notice in $file..."
-    if [[ "$OSTYPE" == "darwin"* ]]; then
-        # macOS, where sed requires '' after -i to specify no backup...
-        sed -i '' "s/Copyright (c) [0-9]\{4\} The Stdlib Authors./Copyright \(c\) $current_year The Stdlib Authors./g" "$file"
-    else
-        # Linux and others, no '' required...
-        sed -i "s/Copyright (c) [0-9]\{4\} The Stdlib Authors./Copyright \(c\) $current_year The Stdlib Authors./g" "$file"
-    fi
+	if [[ ! -f "$file" ]]; then
+		echo "File not found: $file"
+		continue
+	fi
+	echo "Updating copyright notice in $file..."
+	if [[ "$OSTYPE" == "darwin"* ]]; then
+		# macOS, where sed requires '' after -i to specify no backup...
+		sed -i '' "s/Copyright (c) [0-9]\{4\} The Stdlib Authors./Copyright \(c\) $current_year The Stdlib Authors./g" "$file"
+	else
+		# Linux and others, no '' required...
+		sed -i "s/Copyright (c) [0-9]\{4\} The Stdlib Authors./Copyright \(c\) $current_year The Stdlib Authors./g" "$file"
+	fi
 done
 
 echo "Copyright notices updated to $current_year."

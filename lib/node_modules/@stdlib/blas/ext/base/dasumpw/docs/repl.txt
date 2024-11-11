@@ -1,9 +1,9 @@
 
-{{alias}}( N, x, stride )
+{{alias}}( N, x, strideX )
     Computes the sum of absolute values (L1 norm) of double-precision floating-
     point strided array elements using pairwise summation.
 
-    The `N` and `stride` parameters determine which elements in `x` are accessed
+    The `N` and stride parameters determine which elements in `x` are accessed
     at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
@@ -19,7 +19,7 @@
     x: Float64Array
         Input array.
 
-    stride: integer
+    strideX: integer
         Index increment.
 
     Returns
@@ -49,13 +49,14 @@
     > {{alias}}( N, x1, stride )
     5.0
 
-{{alias}}.ndarray( N, x, stride, offset )
+
+{{alias}}.ndarray( N, x, strideX, offsetX )
     Computes the sum of absolute values (L1 norm) of double-precision floating-
     point strided array elements using pairwise summation and alternative
     indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
+    buffer, the offset parameter supports indexing semantics based on a
     starting index.
 
     Parameters
@@ -66,10 +67,10 @@
     x: Float64Array
         Input array.
 
-    stride: integer
+    strideX: integer
         Index increment.
 
-    offset: integer
+    offsetX: integer
         Starting index.
 
     Returns

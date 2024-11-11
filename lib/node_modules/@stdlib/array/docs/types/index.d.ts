@@ -817,7 +817,7 @@ interface Namespace {
 	*
 	* ## Notes
 	*
-	* -   The function does *not* provide precision guarantees for non-integer-valued real numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
+	* -   The function does *not* provide precision guarantees for non-integer-valued numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
 	*
 	* @param value - scalar value
 	* @returns array data type

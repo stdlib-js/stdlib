@@ -113,6 +113,93 @@ for ( x = 0; x < 10; x++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/betaln.h"
+```
+
+#### stdlib_base_betaln( x, y )
+
+Evaluates the the [natural logarithm][natural-logarithm] of the [beta function][beta-function].
+
+```c
+double v = stdlib_base_betaln( 5.0, 0.2 );
+// returns ~1.218
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **y**: `[in] double` input value.
+
+```c
+double stdlib_base_betaln( const double x, const double y );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/betaln.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 24.0, 32.0, 48.0, 116.0, 33.0 };
+    const double y[] = { 12.0, 6.0, 15.0, 52.0, 22.0 };
+
+    double out;
+    int i;
+    for ( i = 0; i < 5; i++ ) {
+        out = stdlib_base_betaln( x[ i ], y[ i ] );
+        printf( "betaln(%lf, %lf) = %lf\n", x[ i ], y[ i ], out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

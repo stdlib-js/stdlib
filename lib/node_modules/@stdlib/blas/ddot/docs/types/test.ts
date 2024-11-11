@@ -24,7 +24,7 @@ import ddot = require( './index' );
 
 // The function returns a number...
 {
-	ddot( zeros( [ 10 ] ), zeros( [ 10 ] ) ); // $ExpectType number
+	ddot( zeros( [ 10 ] ), zeros( [ 10 ] ) ); // $ExpectType float64ndarray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...
@@ -40,6 +40,16 @@ import ddot = require( './index' );
 	ddot( {}, y ); // $ExpectError
 	ddot( [], y ); // $ExpectError
 	ddot( ( x: number ): number => x, y ); // $ExpectError
+
+	ddot( 10, y, -1 ); // $ExpectError
+	ddot( '10', y, -1 ); // $ExpectError
+	ddot( true, y, -1 ); // $ExpectError
+	ddot( false, y, -1 ); // $ExpectError
+	ddot( null, y, -1 ); // $ExpectError
+	ddot( undefined, y, -1 ); // $ExpectError
+	ddot( {}, y, -1 ); // $ExpectError
+	ddot( [], y, -1 ); // $ExpectError
+	ddot( ( x: number ): number => x, y, -1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an ndarray...
@@ -55,6 +65,30 @@ import ddot = require( './index' );
 	ddot( x, {} ); // $ExpectError
 	ddot( x, [] ); // $ExpectError
 	ddot( x, ( x: number ): number => x ); // $ExpectError
+
+	ddot( x, 10, -1 ); // $ExpectError
+	ddot( x, '10', -1 ); // $ExpectError
+	ddot( x, true, -1 ); // $ExpectError
+	ddot( x, false, -1 ); // $ExpectError
+	ddot( x, null, -1 ); // $ExpectError
+	ddot( x, undefined, -1 ); // $ExpectError
+	ddot( x, {}, -1 ); // $ExpectError
+	ddot( x, [], -1 ); // $ExpectError
+	ddot( x, ( x: number ): number => x, -1 ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a third argument which is not a number...
+{
+	const x = zeros( [ 10 ] );
+	const y = zeros( [ 10 ] );
+
+	ddot( x, y, '10' ); // $ExpectError
+	ddot( x, y, true ); // $ExpectError
+	ddot( x, y, false ); // $ExpectError
+	ddot( x, y, null ); // $ExpectError
+	ddot( x, y, {} ); // $ExpectError
+	ddot( x, y, [] ); // $ExpectError
+	ddot( x, y, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -64,5 +98,5 @@ import ddot = require( './index' );
 
 	ddot(); // $ExpectError
 	ddot( x ); // $ExpectError
-	ddot( x, y, {} ); // $ExpectError
+	ddot( x, y, -1, {} ); // $ExpectError
 }

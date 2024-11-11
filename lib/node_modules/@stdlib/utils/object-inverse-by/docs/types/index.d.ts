@@ -152,7 +152,7 @@ declare function invertBy( obj: any, transform: Transform ): any;
 * var out = invertBy( obj, opts, transform );
 * // returns { 'beep': 'c', 'boop': 'b' }
 */
-declare function invertBy( obj: any, options: Options, transform: Transform ): any;
+declare function invertBy( obj: any, opts: Options, transform: Transform ): any;
 
 
 // EXPORTS //

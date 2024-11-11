@@ -65,15 +65,31 @@ The namespace contains the following:
 
 ## Examples
 
-<!-- TODO: better examples -->
-
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var objectKeys = require( '@stdlib/utils/keys' );
+var exponential = require( '@stdlib/random/base/exponential' );
+var arcsine = require( '@stdlib/random/base/arcsine' );
+var randn = require( '@stdlib/random/base/improved-ziggurat' );
 var ns = require( '@stdlib/random/array/tools' );
 
-console.log( objectKeys( ns ) );
+// Create a binary PRNG array:
+var dtypes = [ 'float64', 'float32', 'generic' ];
+var defaultDType = 'float64';
+
+var rand = new ns.binary( arcsine, dtypes, defaultDType );
+var x = rand.generate( 10, 2.0, 5.0 );
+// e.g., returns <Float64Array>[ ~3.65, ~4.34, ~3.52, ~4.68, ~2.62, ... ]
+
+// Create a unary PRNG array:
+rand = new ns.unary( exponential, dtypes, defaultDType );
+x = rand.generate( 10, 0.5 );
+// e.g., returns <Float64Array>[ ~0.22, ~2.89, ~0.69, ~2.48, ~0.82, ... ]
+
+// Create a nullary PRNG array:
+rand = new ns.nullary( randn, dtypes, defaultDType );
+x = rand.generate( 10 );
+// e.g., returns <Float64Array>[ ~-0.22, ~1.89, ~-0.69, ~0.48, ~-0.82, ... ]
 ```
 
 </section>

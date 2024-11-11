@@ -5,11 +5,11 @@
 
     The function supports the following data types:
 
-    - float64: double-precision floating-point numbers (IEEE 754)
-    - float32: single-precision floating-point numbers (IEEE 754)
-    - complex128: double-precision complex floating-point numbers
-    - complex64: single-precision complex floating-point numbers
-    - generic: generic JavaScript values
+    - float64: double-precision floating-point numbers (IEEE 754).
+    - float32: single-precision floating-point numbers (IEEE 754).
+    - complex128: double-precision complex floating-point numbers.
+    - complex64: single-precision complex floating-point numbers.
+    - generic: generic JavaScript values.
 
     Parameters
     ----------

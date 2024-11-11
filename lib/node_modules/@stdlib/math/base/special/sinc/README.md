@@ -97,6 +97,91 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/sinc.h"
+```
+
+#### stdlib_base_sinc( x )
+
+Computes the normalized [cardinal sine][sinc] of a `number`.
+
+```c
+double y = stdlib_base_sinc( 0.5 );
+// returns ~0.637
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_sinc( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/sinc.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 0.0, 0.523, 0.785, 1.047, 3.14 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 5; i++ ) {
+        y = stdlib_base_sinc( x[ i ] );
+        printf( "sinc(%lf) = %lf\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

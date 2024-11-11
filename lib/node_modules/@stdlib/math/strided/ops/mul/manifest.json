@@ -33,8 +33,8 @@
 			"dependencies": [
 				"@stdlib/math/base/ops/mul",
 				"@stdlib/math/base/ops/mulf",
-				"@stdlib/math/base/ops/cmul",
-        "@stdlib/math/base/ops/cmulf",
+				"@stdlib/complex/float64/base/mul",
+        "@stdlib/complex/float32/base/mul",
         "@stdlib/strided/base/function-object",
 				"@stdlib/strided/base/binary",
 				"@stdlib/strided/dtypes",

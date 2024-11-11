@@ -12,7 +12,8 @@
 		"complex128": 1,
 		"complex64": 0,
 		"binary": 0,
-		"generic": 1
+		"generic": 1,
+		"bool": 0
 	},
 	"float32": {
 		"float64": 1,
@@ -27,7 +28,8 @@
 		"complex128": 1,
 		"complex64": 1,
 		"binary": 0,
-		"generic": 1
+		"generic": 1,
+		"bool": 0
 	},
 	"int32": {
 		"float64": 1,
@@ -42,7 +44,8 @@
 		"complex128": 1,
 		"complex64": 0,
 		"binary": 0,
-		"generic": 1
+		"generic": 1,
+		"bool": 0
 	},
 	"int16": {
 		"float64": 1,
@@ -57,7 +60,8 @@
 		"complex128": 1,
 		"complex64": 1,
 		"binary": 0,
-		"generic": 1
+		"generic": 1,
+		"bool": 0
 	},
 	"int8": {
 		"float64": 1,
@@ -72,7 +76,8 @@
 		"complex128": 1,
 		"complex64": 1,
 		"binary": 0,
-		"generic": 1
+		"generic": 1,
+		"bool": 0
 	},
 	"uint32": {
 		"float64": 1,
@@ -87,7 +92,8 @@
 		"complex128": 1,
 		"complex64": 0,
 		"binary": 0,
-		"generic": 1
+		"generic": 1,
+		"bool": 0
 	},
 	"uint16": {
 		"float64": 1,
@@ -102,7 +108,8 @@
 		"complex128": 1,
 		"complex64": 1,
 		"binary": 0,
-		"generic": 1
+		"generic": 1,
+		"bool": 0
 	},
 	"uint8": {
 		"float64": 1,
@@ -117,7 +124,8 @@
 		"complex128": 1,
 		"complex64": 1,
 		"binary": 0,
-		"generic": 1
+		"generic": 1,
+		"bool": 0
 	},
 	"uint8c": {
 		"float64": 1,
@@ -132,7 +140,8 @@
 		"complex128": 1,
 		"complex64": 1,
 		"binary": 0,
-		"generic": 1
+		"generic": 1,
+		"bool": 0
 	},
 	"complex128": {
 		"float64": 0,
@@ -147,7 +156,8 @@
 		"complex128": 1,
 		"complex64": 1,
 		"binary": 0,
-		"generic": 0
+		"generic": 0,
+		"bool": 0
 	},
 	"complex64": {
 		"float64": 0,
@@ -162,7 +172,8 @@
 		"complex128": 1,
 		"complex64": 1,
 		"binary": 0,
-		"generic": 0
+		"generic": 0,
+		"bool": 0
 	},
 	"generic": {
 		"float64": 0,
@@ -177,7 +188,8 @@
 		"complex128": 0,
 		"complex64": 0,
 		"binary": 0,
-		"generic": 1
+		"generic": 1,
+		"bool": 0
 	},
 	"binary": {
 		"float64": 0,
@@ -192,6 +204,23 @@
 		"complex128": 0,
 		"complex64": 0,
 		"binary": 1,
-		"generic": 0
+		"generic": 0,
+		"bool": 0
+	},
+	"bool": {
+		"float64": 0,
+		"float32": 0,
+		"int32": 0,
+		"int16": 0,
+		"int8": 0,
+		"uint32": 0,
+		"uint16": 0,
+		"uint8": 0,
+		"uint8c": 0,
+		"complex128": 0,
+		"complex64": 0,
+		"binary": 0,
+		"generic": 1,
+		"bool": 1
 	}
 }

@@ -1,6 +1,7 @@
 {
 	"options": {
-		"task": "build"
+		"task": "build",
+    "wasm": false
 	},
 	"fields": [
 		{
@@ -27,6 +28,7 @@
 	"confs": [
 		{
 			"task": "build",
+      "wasm": false,
 			"src": [
 				"./src/floor.c"
 			],
@@ -43,6 +45,7 @@
 		},
 		{
 			"task": "benchmark",
+      "wasm": false,
 			"src": [
 				"./src/floor.c"
 			],
@@ -57,6 +60,7 @@
 		},
 		{
 			"task": "examples",
+      "wasm": false,
 			"src": [
 				"./src/floor.c"
 			],
@@ -68,6 +72,21 @@
 			],
 			"libpath": [],
 			"dependencies": []
-		}
+		},
+    {
+      "task": "build",
+      "wasm": true,
+      "src": [
+        "./src/floor.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": []
+    }
 	]
 }

@@ -1,0 +1,31 @@
+
+{{alias}}( x, value )
+    Fills an input ndarray with a specified value.
+
+    If `value` is a number and `x` has a complex data type, the function fills
+    an input ndarray with a complex number whose real component equals the
+    provided scalar `value` and whose imaginary component is zero.
+
+    The function *mutates* the input ndarray.
+
+    Parameters
+    ----------
+    x: ndarrayLike
+        Input ndarray-like object.
+
+    value: any
+        Scalar value.
+
+    Examples
+    --------
+    > var opts = { 'dtype': 'float64' };
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ], opts );
+    > x.get( 0, 0 )
+    0.0
+    > {{alias}}( x, 10.0 );
+    > x.get( 0, 0 )
+    10.0
+
+    See Also
+    --------
+

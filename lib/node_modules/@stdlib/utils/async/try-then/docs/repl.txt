@@ -5,7 +5,7 @@
 
     A function `x` is provided a single argument:
 
-    - clbk: callback to invoke upon function completion
+    - clbk: callback to invoke upon function completion.
 
     The callback function accepts any number of arguments, with the first
     argument reserved for providing an error.
@@ -17,12 +17,12 @@
     number of arguments provided to `y` depends on the function's length. If `y`
     is a unary function, `y` is provided a single argument:
 
-    - clbk: callback to invoke upon function completion
+    - clbk: callback to invoke upon function completion.
 
     Otherwise, `y` is provided two arguments:
 
-    - error: the error from `x`
-    - clbk: callback to invoke upon function completion
+    - error: the error from `x`.
+    - clbk: callback to invoke upon function completion.
 
     The callback function accepts any number of arguments, with the first
     argument reserved for providing an error.

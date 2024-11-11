@@ -44,7 +44,7 @@ var args2multislice = require( '@stdlib/slice/base/args2multislice' );
 
 #### args2multislice( args )
 
-Create a [`MultiSlice`][@stdlib/slice/multi] object from a list of [`MultiSlice`][@stdlib/slice/multi] constructor arguments.
+Creates a [`MultiSlice`][@stdlib/slice/multi] object from a list of [`MultiSlice`][@stdlib/slice/multi] constructor arguments.
 
 ```javascript
 var Slice = require( '@stdlib/slice/ctor' );

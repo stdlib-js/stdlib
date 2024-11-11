@@ -68,19 +68,31 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Limit clone depth to the most recent commit:
-          fetch-depth: 1
+          # Fetch all history to allow for changelog generation:
+          fetch-depth: 0
 
           # Specify whether to download Git-LFS files:
           lfs: false
         timeout-minutes: 10
 
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
+          git config --local user.name "stdlib-bot"
+
+      # Apply Git notes:
+      - name: 'Apply Git notes'
+        run: |
+          make apply-git-notes
+        timeout-minutes: 5
+
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
         with:
-          node-version: '16' # 'lts/*'
+          node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):

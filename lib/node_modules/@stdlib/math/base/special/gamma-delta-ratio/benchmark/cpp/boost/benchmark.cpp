@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark Boost `tgamma_delta_ratio`.
-*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

@@ -87,7 +87,7 @@ var zeros = require( '@stdlib/ndarray/base/zeros' );
 var zerosLike = require( '@stdlib/ndarray/base/zeros-like' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'numeric' );
 
 // Generate zero-filled arrays...
 var x;

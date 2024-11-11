@@ -41,17 +41,16 @@ compile_wasm_bin := $(TOOLS_DIR)/scripts/compile_wasm
 #
 # -   If unable to compile WebAssemby artifacts, the recipe prints an error message and tries compiling WebAssembly artifacts for the next package.
 #
-#
-# @param {string} [PKGS_WASM_PATTERN] - package pattern (e.g., `**/math/base/special/**/package.json`)
+# @param {string} [PKGS_WASM_PATTERN] - package pattern (e.g., `blas/base/daxpy-wasm`)
 #
 # @example
 # make wasm
 #
 # @example
-# make wasm PKGS_WASM_PATTERN=**/math/base/special/**/package.json
+# make wasm PKGS_WASM_PATTERN="blas/base/daxpy-wasm"
 #/
 wasm: $(NODE_MODULES)
-	$(QUIET) $(MAKE) LIST_PACKAGE_WASM_FLAGS=$(pkgs_wasm_list_wasm_flags) -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
+	$(QUIET) $(MAKE) LIST_PKGS_WASM_FLAGS=$(pkgs_wasm_list_wasm_flags) -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
 		fi; \
@@ -60,8 +59,11 @@ wasm: $(NODE_MODULES)
 		NODE="$(NODE)" \
 		NODE_PATH="$(NODE_PATH)" \
 		SRC_FOLDER="$(SRC_FOLDER)" \
+		CLANG_COMPILER="$(DEPS_LLVM_CLANG)" \
+		CLANG_SYSROOT="$(DEPS_WASI_LIBC_SYSROOT)" \
 		EMCC_COMPILER="$(DEPS_EMSDK_EMSCRIPTEN_EMCC)" \
 		WASM2WAT="$(DEPS_WABT_WASM2WAT)" \
+		WASM2JS="$(DEPS_EMSDK_EMSCRIPTEN_WASM2JS)" \
 		"${compile_wasm_bin}" $$pkg \
 		|| { echo "Error: failed to compile WebAssembly: $$pkg"; exit 0; } \
 	done
@@ -71,16 +73,16 @@ wasm: $(NODE_MODULES)
 #/
 # Removes all compiled and generated WebAssembly files.
 #
-# @param {string} [PKGS_WASM_PATTERN] - package pattern (e.g., `**/math/base/special/**/package.json`)
+# @param {string} [PKGS_WASM_PATTERN] - package pattern (e.g., `blas/base/daxpy-wasm`)
 #
 # @example
 # make clean-wasm
 #
 # @example
-# make clean-wasm PKGS_WASM_PATTERN=**/math/base/special/**/package.json
+# make clean-wasm PKGS_WASM_PATTERN="blas/base/daxpy-wasm"
 #/
 clean-wasm: $(NODE_MODULES)
-	$(QUIET) $(MAKE) LIST_PACKAGE_WASM_FLAGS=$(pkgs_wasm_list_wasm_flags) -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
+	$(QUIET) $(MAKE) LIST_PKGS_WASM_FLAGS=$(pkgs_wasm_list_wasm_flags) -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
 		fi; \

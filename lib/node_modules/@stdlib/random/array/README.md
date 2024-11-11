@@ -95,15 +95,46 @@ The namespace contains the following:
 
 ## Examples
 
-<!-- TODO: better examples -->
-
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var objectKeys = require( '@stdlib/utils/keys' );
 var ns = require( '@stdlib/random/array' );
 
-console.log( objectKeys( ns ) );
+// Generate arrays with ten random numbers drawn from the respective distributions:
+var out = ns.arcsine( 10, 2.0, 5.0 );
+// returns <Float64Array>
+
+out = ns.weibull( 10, 2.0, 5.0 );
+// returns <Float64Array>
+
+out = ns.laplace( 10, 2.0, 5.0 );
+// returns <Float64Array>
+
+// Factory methods:
+
+// 1. Basic factory usage (no parameters):
+var random = ns.arcsine.factory();
+out = random( 10, 2.0, 5.0 );
+// returns <Float64Array>
+
+// 2. Factory with options (e.g., seed):
+random = ns.arcsine.factory({
+    'seed': 1234
+});
+out = random( 10, 2.0, 5.0 );
+// returns <Float64Array>
+
+// 3. Factory with distribution parameters:
+random = ns.arcsine.factory( 2.0, 5.0 );
+out = random( 10 );
+// returns <Float64Array>
+
+// 4. Factory with both distribution parameters and options:
+random = ns.arcsine.factory( 2.0, 5.0, {
+    'dtype': 'float32'
+});
+out = random( 10 );
+// returns <Float32Array>
 ```
 
 </section>

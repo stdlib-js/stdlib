@@ -40,7 +40,7 @@ limitations under the License.
 var log = require( '@stdlib/console/log' );
 ```
 
-#### log( \[data]\[,..args] )
+#### log( \[data]\[,...args] )
 
 Outputs a message to the debugger console.
 

@@ -30,8 +30,8 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var z = new Complex64( -4.2, 5.5 );
 * // returns <Complex64>
@@ -47,8 +47,8 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var z = new Complex64( 0.0, 0.0 );
 * // returns <Complex64>
@@ -64,8 +64,8 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/realf' );
-* var imagf = require( '@stdlib/complex/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var z = new Complex64( NaN, NaN );
 * // returns <Complex64>

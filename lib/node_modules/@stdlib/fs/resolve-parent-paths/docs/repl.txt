@@ -1,0 +1,84 @@
+
+{{alias}}( paths[, options], clbk )
+    Asynchronously resolves paths from a set of paths by walking parent
+    directories.
+
+    Parameters
+    ----------
+    paths: Array<string>
+        Paths to resolve.
+
+    options: Object (optional)
+        Options.
+
+    options.dir: string (optional)
+        Base directory from which to search. Default: current working directory.
+
+    options.mode: string (optional)
+        Mode of operation. The following modes are supported:
+
+        - first: return the first resolved path.
+        - some: return one or more paths resolved within the first directory
+          level containing a match.
+        - all: return all resolved paths within the first directory level
+          containing matches for all provided paths.
+        - each: independently return the first resolved path for each path at
+          any directory level.
+
+        Default: 'all'.
+
+    clbk: Function
+        Callback to invoke after resolving a path.
+
+    Examples
+    --------
+    > function onPaths( error, paths ) {
+    ...     if ( error ) {
+    ...         console.error( error.message );
+    ...     } else {
+    ...         console.log( paths );
+    ...     }
+    ... };
+    > {{alias}}( [ 'package.json', 'package-lock.json' ], onPaths );
+
+
+{{alias}}.sync( paths[, options] )
+    Synchronously resolves paths from a set of paths by walking parent
+    directories.
+
+    Parameters
+    ----------
+    paths: Array<string>
+        Paths to resolve.
+
+    options: Object (optional)
+        Options.
+
+    options.dir: string (optional)
+        Base directory from which to search. Default: current working directory.
+
+    options.mode: string (optional)
+        Mode of operation. The following modes are supported:
+
+        - first: return the first resolved path.
+        - some: return one or more paths resolved within the first directory
+          level containing a match.
+        - all: return all resolved paths within the first directory level
+          containing matches for all provided paths.
+        - each: independently return the first resolved path for each path at
+          any directory level.
+
+        Default: 'all'.
+
+    Returns
+    -------
+    out: Array<string|null>
+        Resolved paths.
+
+    Examples
+    --------
+    > var out = {{alias}}.sync( [ 'package.json', 'package-lock.json' ] );
+
+    See Also
+    --------
+

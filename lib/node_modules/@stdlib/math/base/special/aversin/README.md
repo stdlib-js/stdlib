@@ -133,7 +133,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_aversin( x )
 
-Compute the [inverse versed sine][inverse-versed-sine] of a double-precision floating-point number (in radians).
+Computes the [inverse versed sine][inverse-versed-sine] of a double-precision floating-point number (in radians).
 
 ```c
 double out = stdlib_base_aversin( 3.141592653589793/2.0 );

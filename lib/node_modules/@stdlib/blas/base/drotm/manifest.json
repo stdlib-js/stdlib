@@ -44,6 +44,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -57,7 +58,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/drotm.c"
+        "./src/drotm.c",
+        "./src/drotm_ndarray.c"
       ],
       "include": [
         "./include"
@@ -65,7 +67,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -74,7 +77,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/drotm.c"
+        "./src/drotm.c",
+        "./src/drotm_ndarray.c"
       ],
       "include": [
         "./include"
@@ -82,7 +86,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -104,6 +109,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -128,7 +134,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
     {
@@ -148,7 +155,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
 
@@ -168,6 +176,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -181,7 +190,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/drotm.c"
+        "./src/drotm.c",
+        "./src/drotm_ndarray.c"
       ],
       "include": [
         "./include"
@@ -189,7 +199,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -198,7 +209,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/drotm.c"
+        "./src/drotm.c",
+        "./src/drotm_ndarray.c"
       ],
       "include": [
         "./include"
@@ -206,7 +218,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -227,6 +240,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -250,7 +264,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
     {
@@ -269,7 +284,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
 
@@ -291,6 +307,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -315,7 +332,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
     {
@@ -335,7 +353,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
 
@@ -345,7 +364,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/drotm.c"
+        "./src/drotm.c",
+        "./src/drotm_ndarray.c"
       ],
       "include": [
         "./include"
@@ -354,6 +374,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -367,7 +388,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/drotm.c"
+        "./src/drotm.c",
+        "./src/drotm_ndarray.c"
       ],
       "include": [
         "./include"
@@ -375,7 +397,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -384,7 +407,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/drotm.c"
+        "./src/drotm.c",
+        "./src/drotm_ndarray.c"
       ],
       "include": [
         "./include"
@@ -392,7 +416,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -402,7 +427,8 @@
       "blas": "",
       "wasm": true,
       "src": [
-        "./src/drotm.c"
+        "./src/drotm.c",
+        "./src/drotm_ndarray.c"
       ],
       "include": [
         "./include"
@@ -410,7 +436,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     }
   ]

@@ -42,7 +42,7 @@ var at3d = require( '@stdlib/array/base/at3d' );
 
 #### at3d( x, i0, i1, i2 )
 
-Return an element from a three-dimensional nested array.
+Returns an element from a three-dimensional nested array.
 
 ```javascript
 var x = [ [ [ 1, 2 ], [ 3, 4 ] ] ];

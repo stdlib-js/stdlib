@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/dscal.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Multiplies a double-precision floating-point vector `X` by a constant.
@@ -28,36 +29,6 @@
 * @param stride  index increment
 */
 void API_SUFFIX(c_dscal)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT stride ) {
-	CBLAS_INT m;
-	CBLAS_INT i;
-
-	if ( N <= 0 || stride <= 0 || alpha == 1.0 ) {
-		return;
-	}
-	// Use loop unrolling if the stride is equal to `1`...
-	if ( stride == 1 ) {
-		m = N % 5;
-
-		// If we have a remainder, run a clean-up loop...
-		if ( m > 0 ) {
-			for ( i = 0; i < m; i++ ) {
-				X[ i ] *= alpha;
-			}
-		}
-		if ( N < 5 ) {
-			return;
-		}
-		for ( i = m; i < N; i += 5 ) {
-			X[ i ] *= alpha;
-			X[ i+1 ] *= alpha;
-			X[ i+2 ] *= alpha;
-			X[ i+3 ] *= alpha;
-			X[ i+4 ] *= alpha;
-		}
-		return;
-	}
-	for ( i = 0; i < N*stride; i += stride ) {
-		X[ i ] *= alpha;
-	}
-	return;
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, stride );
+	API_SUFFIX(c_dscal_ndarray)( N, alpha, X, stride, ox );
 }

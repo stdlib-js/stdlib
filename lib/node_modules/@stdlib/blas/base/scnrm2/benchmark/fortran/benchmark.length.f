@@ -16,7 +16,7 @@
 ! limitations under the License.
 !<
 
-!> Benchmark `scnrm2`.
+!> Benchmarks.
 !
 ! ## Notes
 !

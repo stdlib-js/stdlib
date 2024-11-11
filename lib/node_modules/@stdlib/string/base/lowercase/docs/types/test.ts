@@ -23,7 +23,9 @@ import lowercase = require( './index' );
 
 // The function returns a string...
 {
-	lowercase( 'abc' ); // $ExpectType string
+	lowercase( 'ABC' ); // $ExpectType "abc"
+	lowercase( 'Beep BOOP' ); // $ExpectType "beep boop"
+	lowercase( 'abc' as string ); // $ExpectType string
 }
 
 // The compiler throws an error if the function is provided a value other than a string...

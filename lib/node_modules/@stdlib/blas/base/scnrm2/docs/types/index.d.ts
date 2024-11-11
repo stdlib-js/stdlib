@@ -42,7 +42,7 @@ interface Routine {
 	* var norm = scnrm2( 4, cx, 1 );
 	* // returns ~0.8
 	*/
-	( N: number, x: Complex64Array, strideX: number ): number;
+	( N: number, cx: Complex64Array, strideX: number ): number;
 
 	/**
 	* Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
@@ -61,7 +61,7 @@ interface Routine {
 	* var norm = scnrm2.ndarray( 4, cx, 1, 0 );
 	* // returns ~0.8
 	*/
-	ndarray( N: number, x: Complex64Array, strideX: number, offsetX: number ): number;
+	ndarray( N: number, cx: Complex64Array, strideX: number, offsetX: number ): number;
 }
 
 /**

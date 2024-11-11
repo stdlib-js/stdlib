@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Max View Buffer Index
+# maxViewBufferIndex
 
 > Compute the maximum linear index in an underlying data buffer accessible to an array view.
 
@@ -121,6 +121,112 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/ndarray/base/max_view_buffer_index.h"
+```
+
+#### stdlib_ndarray_max_view_buffer_index( ndims, \*shape, \*strides, offset )
+
+Computes the maximum linear index (in bytes) in an underlying data buffer accessible to an array view.
+
+```c
+#include <stdint.h>
+
+int64_t ndims = 2;
+int64_t shape[] = { 10, 10 };
+int64_t strides[] = { 10, 1 };
+int64_t offset = 0;
+
+int64_t idx = stdlib_ndarray_max_view_buffer_index( ndims, shape, strides, offset );
+// returns 99
+```
+
+The function accepts the following arguments:
+
+-   **ndims**: `[in] int64_t` number of dimensions.
+-   **shape**: `[in] int64_t*` array shape (dimensions).
+-   **strides**: `[in] int64_t*` array strides (in bytes).
+-   **offset**: `[in] int64_t` index offset.
+
+```c
+int64_t stdlib_ndarray_max_view_buffer_index( const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/ndarray/base/max_view_buffer_index.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <inttypes.h>
+
+int main( void ) {
+    // Specify the number of dimensions:
+    const int64_t ndims = 2;
+
+    // Define an array shape:
+    const int64_t shape[] = { 10, 10 };
+
+    // Define array strides:
+    const int64_t strides[] = { -2, 5 };
+
+    // Define an offset:
+    const int64_t offset = 100;
+
+    // Compute the maximum accessible index:
+    int64_t idx = stdlib_ndarray_max_view_buffer_index( ndims, shape, strides, offset );
+
+    // Print the results:
+    printf( "idx: %"PRId64"\n", idx );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

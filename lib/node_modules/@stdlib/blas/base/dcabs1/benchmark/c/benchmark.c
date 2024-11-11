@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `dcabs1`.
-*/
 #include "stdlib/blas/base/dcabs1.h"
 #include "stdlib/complex/float64/ctor.h"
 #include <stdlib.h>
@@ -36,7 +33,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version( void ) {
+static void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -46,7 +43,7 @@ void print_version( void ) {
 * @param total     total number of tests
 * @param passing   total number of passing tests
 */
-void print_summary( int total, int passing ) {
+static void print_summary( int total, int passing ) {
 	printf( "#\n" );
 	printf( "1..%d\n", total ); // TAP plan
 	printf( "# total %d\n", total );
@@ -61,7 +58,7 @@ void print_summary( int total, int passing ) {
 * @param iterations   number of iterations
 * @param elapsed      elapsed time in seconds
 */
-void print_results( int iterations, double elapsed ) {
+static void print_results( int iterations, double elapsed ) {
 	double rate = (double)iterations / elapsed;
 	printf( "  ---\n" );
 	printf( "  iterations: %d\n", iterations );
@@ -75,18 +72,18 @@ void print_results( int iterations, double elapsed ) {
 *
 * @return clock time
 */
-double tic( void ) {
+static double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
 }
 
 /**
-* Generates a random number on the interval [0,1].
+* Generates a random number on the interval [0,1).
 *
 * @return random number
 */
-double rand_double( void ) {
+static double rand_double( void ) {
 	int r = rand();
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }

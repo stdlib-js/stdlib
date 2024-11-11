@@ -4,8 +4,8 @@
 
     When invoked, an input function is provided two arguments:
 
-    - value: iterated value
-    - index: iterated value index (zero-based)
+    - value: iterated value.
+    - index: iterated value index (zero-based).
 
     If provided an output array, the function fills the output array with
     iterated values.

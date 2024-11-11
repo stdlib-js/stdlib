@@ -32,30 +32,30 @@
 set -o pipefail
 
 for file in ${@}; do
-    if [[ $file == *README.md ]]; then
-        awk '
-        BEGIN { print_mode = 1; in_related = 0; in_related_links = 0 }
-        /<section class="related">/ {
-            print; print ""; print "</section>";
-            in_related = 1; print_mode = 0; next
-        }
-        /<\/section>/ {
-            if (in_related) { in_related = 0; print_mode = 1 }
-            else { print }
-            next
-        }
-        /<!-- <related-links> -->/ {
-            print; print ""; print "<!-- </related-links> -->";
-            in_related_links = 1; print_mode = 0; next
-        }
-        /<!-- <\/related-links> -->/ {
-            if (in_related_links) { in_related_links = 0; print_mode = 1 }
-            else { print }
-            next
-        }
-        { if (print_mode == 1) print }
-        ' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
-    fi
+	if [[ $file == *README.md ]]; then
+		awk '
+		BEGIN { print_mode = 1; in_related = 0; in_related_links = 0 }
+		/<section class="related">/ {
+			print; print ""; print "</section>";
+			in_related = 1; print_mode = 0; next
+		}
+		/<\/section>/ {
+			if (in_related) { in_related = 0; print_mode = 1 }
+			else { print }
+			next
+		}
+		/<!-- <related-links> -->/ {
+			print; print ""; print "<!-- </related-links> -->";
+			in_related_links = 1; print_mode = 0; next
+		}
+		/<!-- <\/related-links> -->/ {
+			if (in_related_links) { in_related_links = 0; print_mode = 1 }
+			else { print }
+			next
+		}
+		{ if (print_mode == 1) print }
+		' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+	fi
 done
 
 echo "All files processed successfully."

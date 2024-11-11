@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,6 +28,7 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
@@ -54,6 +56,7 @@
     },
     {
       "task": "examples",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
@@ -84,6 +87,35 @@
     },
     {
       "task": "benchmark",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/number/float64/base/normalize",
+        "@stdlib/number/float64/base/exponent",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/min-base2-exponent-subnormal",
+        "@stdlib/constants/float64/max-base2-exponent",
+        "@stdlib/constants/float64/max-base2-exponent-subnormal",
+        "@stdlib/constants/float64/exponent-bias"
+      ]
+    },
+    {
+      "task": "build",
+      "wasm": true,
       "src": [
         "./src/main.c"
       ],

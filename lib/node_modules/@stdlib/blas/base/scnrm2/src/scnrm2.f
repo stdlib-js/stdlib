@@ -60,10 +60,10 @@ real function scnrm2( N, cx, strideX )
   real( wp ), parameter :: maxN = huge( 0.0_wp )
   ! ..
   ! Blue's scaling constants:
-  real(wp), parameter :: tsml = 1.08420217e-19_wp
-  real(wp), parameter :: tbig = 4.50359963e15_wp
-  real(wp), parameter :: ssml = 3.77789319e22_wp
-  real(wp), parameter :: sbig = 1.32348898e-23_wp
+  real( wp ), parameter :: tsml = 1.08420217e-19_wp
+  real( wp ), parameter :: tbig = 4.50359963e15_wp
+  real( wp ), parameter :: ssml = 3.77789319e22_wp
+  real( wp ), parameter :: sbig = 1.32348898e-23_wp
   !..
   ! Scalar arguments:
   integer :: N, strideX

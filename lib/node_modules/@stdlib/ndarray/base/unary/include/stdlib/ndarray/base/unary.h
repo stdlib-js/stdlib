@@ -183,6 +183,8 @@
 #include "unary/u_z_as_u_z.h"
 #include "unary/u_z_as_z_z.h"
 
+#include "unary/x_x.h"
+
 #include "unary/z_d_as_z_d.h"
 #include "unary/z_z.h"
 // END LOOPS

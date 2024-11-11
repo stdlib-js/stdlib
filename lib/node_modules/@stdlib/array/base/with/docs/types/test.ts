@@ -66,3 +66,105 @@ import arrayWith = require( './index' );
 	arrayWith( x, 0 ); // $ExpectError
 	arrayWith( x, 0, 0, 5 ); // $ExpectError
 }
+
+// Attached to the main export is an `assign` method which returns a collection...
+{
+	const x = [ 1, 2, 3, 4 ];
+	const y = new Complex128Array( 4 );
+
+	arrayWith.assign( x, 0, 5, [ 0, 0, 0, 0 ], 1, 0 ); // $ExpectType number[]
+	arrayWith.assign( x, 0, 5, new Float64Array( 4 ), 1, 0 ); // $ExpectType Float64Array
+	arrayWith.assign( x, 0, 5, new Float32Array( 4 ), 1, 0 ); // $ExpectType Float32Array
+	arrayWith.assign( x, 0, 5, new Int32Array( 4 ), 1, 0 ); // $ExpectType Int32Array
+	arrayWith.assign( x, 0, 5, new Int16Array( 4 ), 1, 0 ); // $ExpectType Int16Array
+	arrayWith.assign( x, 0, 5, new Int8Array( 4 ), 1, 0 ); // $ExpectType Int8Array
+	arrayWith.assign( x, 0, 5, new Uint32Array( 4 ), 1, 0 ); // $ExpectType Uint32Array
+	arrayWith.assign( x, 0, 5, new Uint16Array( 4 ), 1, 0 ); // $ExpectType Uint16Array
+	arrayWith.assign( x, 0, 5, new Uint8Array( 4 ), 1, 0 ); // $ExpectType Uint8Array
+	arrayWith.assign( x, 0, 5, new Uint8ClampedArray( 4 ), 1, 0 ); // $ExpectType Uint8ClampedArray
+	arrayWith.assign( y, 0, { 're': 1.0, 'im': 1.0 }, new Complex128Array( 4 ), 1, 0 ); // $ExpectType Complex128Array
+	arrayWith.assign( y, 0, { 're': 1.0, 'im': 1.0 }, new Complex64Array( 4 ), 1, 0 ); // $ExpectType Complex64Array
+}
+
+// The compiler throws an error if the `assign` method is provided a first argument which is not an array-like object...
+{
+	const out = [ 0, 0, 0, 0 ];
+
+	arrayWith.assign( 1, 0, 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( true, 0, 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( false, 0, 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( null, 0, 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( void 0, 0, 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( {}, 0, 5, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a second argument which is not a number...
+{
+	const x = [ 1, 2, 3, 4 ];
+	const out = [ 0, 0, 0, 0 ];
+
+	arrayWith.assign( x, '1', 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, true, 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, false, 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, null, 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, void 0, 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, [], 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, {}, 5, out, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, ( x: number ): number => x, 5, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a fourth argument which is not an array-like object...
+{
+	const x = [ 1, 2, 3, 4 ];
+
+	arrayWith.assign( x, 0, 5, 1, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 5, true, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 5, false, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 5, null, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 5, void 0, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 5, {}, 1, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 5, ( x: number ): number => x, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a fifth argument which is not a number...
+{
+	const x = [ 1, 2, 3, 4 ];
+	const out = [ 0, 0, 0, 0 ];
+
+	arrayWith.assign( x, 0, 1, out, '1', 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, true, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, false, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, null, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, void 0, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, [], 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, {}, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, ( x: number ): number => x, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a sixth argument which is not a number...
+{
+	const x = [ 1, 2, 3, 4 ];
+	const out = [ 0, 0, 0, 0 ];
+
+	arrayWith.assign( x, 0, 1, out, 1, '1' ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, 1, true ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, 1, false ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, 1, null ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, 1, void 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, 1, [] ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, 1, {} ); // $ExpectError
+	arrayWith.assign( x, 0, 1, out, 1, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
+{
+	const x = [ 1, 2, 3, 4 ];
+	const out = [ 0, 0, 0, 0 ];
+
+	arrayWith.assign(); // $ExpectError
+	arrayWith.assign( x ); // $ExpectError
+	arrayWith.assign( x, 0 ); // $ExpectError
+	arrayWith.assign( x, 0, 0, out ); // $ExpectError
+	arrayWith.assign( x, 0, 0, out, 1 ); // $ExpectError
+	arrayWith.assign( x, 0, 0, out, 1, 0, {} ); // $ExpectError
+}

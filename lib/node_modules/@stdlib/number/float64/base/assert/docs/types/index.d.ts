@@ -61,7 +61,7 @@ interface Namespace {
 	*
 	* ## Notes
 	*
-	* -   The function differs from the `===` operator in that the function treats ``NaNs` as the same value.
+	* -   The function differs from the `===` operator in that the function treats `NaNs` as the same value.
 	*
 	* @param a - first input value
 	* @param b - second input value

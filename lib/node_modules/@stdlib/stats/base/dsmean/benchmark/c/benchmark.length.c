@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark `dsmean`.
-*/
 #include "stdlib/stats/base/dsmean.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -35,7 +32,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version() {
+static void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -45,7 +42,7 @@ void print_version() {
 * @param total     total number of tests
 * @param passing   total number of passing tests
 */
-void print_summary( int total, int passing ) {
+static void print_summary( int total, int passing ) {
 	printf( "#\n" );
 	printf( "1..%d\n", total ); // TAP plan
 	printf( "# total %d\n", total );
@@ -60,7 +57,7 @@ void print_summary( int total, int passing ) {
 * @param iterations  number of iterations
 * @param elapsed     elapsed time in seconds
 */
-void print_results( int iterations, double elapsed ) {
+static void print_results( int iterations, double elapsed ) {
 	double rate = (double)iterations / elapsed;
 	printf( "  ---\n" );
 	printf( "  iterations: %d\n", iterations );
@@ -74,30 +71,30 @@ void print_results( int iterations, double elapsed ) {
 *
 * @return clock time
 */
-double tic() {
+static double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
 	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
 }
 
 /**
-* Generates a random number on the interval [0,1].
+* Generates a random number on the interval [0,1).
 *
 * @return random number
 */
-float rand_float() {
+static float rand_float( void ) {
 	int r = rand();
 	return (float)r / ( (float)RAND_MAX + 1.0f );
 }
 
-/*
+/**
 * Runs a benchmark.
 *
 * @param iterations   number of iterations
 * @param len          array length
 * @return elapsed time in seconds
 */
-double benchmark( int iterations, int len ) {
+static double benchmark( int iterations, int len ) {
 	double elapsed;
 	float x[ len ];
 	double v;

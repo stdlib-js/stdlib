@@ -46,7 +46,7 @@ var reducedDimensions = require( '@stdlib/slice/base/reduced-dimensions' );
 
 #### reducedDimensions( slice )
 
-Return a list of reduced dimensions in an un-normalized [`MultiSlice`][@stdlib/slice/multi] object.
+Returns a list of reduced dimensions in an un-normalized [`MultiSlice`][@stdlib/slice/multi] object.
 
 ```javascript
 var MultiSlice = require( '@stdlib/slice/multi' );

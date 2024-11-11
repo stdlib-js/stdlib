@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2023 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -62,6 +62,7 @@ The returned object has the following properties:
     -   **integer**: default integer data type.
     -   **signed_integer**: default signed integer data type.
     -   **unsigned_integer**: default unsigned integer data type.
+    -   **boolean**: default boolean data type.
 
 -   **order**: default memory layout.
 
@@ -137,6 +138,10 @@ x = array( buf, opts );
 console.log( x.dtype );
 
 opts.dtype = o.dtypes.unsigned_integer;
+x = array( buf, opts );
+console.log( x.dtype );
+
+opts.dtype = o.dtypes.boolean;
 x = array( buf, opts );
 console.log( x.dtype );
 ```

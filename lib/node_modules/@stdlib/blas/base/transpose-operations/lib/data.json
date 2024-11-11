@@ -1,5 +1,5 @@
 [
-  "none",
+  "no-transpose",
   "transpose",
   "conjugate-transpose"
 ]

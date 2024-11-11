@@ -152,7 +152,7 @@ jobs:
       # Install MSYS2:
       - name: 'Install MSYS2'
         # Pin action to full length commit SHA
-        uses: msys2/setup-msys2@d0e80f58dffbc64f6a3a1f43527d469b4fc7b6c8 # v2.23.0
+        uses: msys2/setup-msys2@ddf331adaebd714795f1042345e6ca57bd66cea8 # v2.24.1
         with:
           # Set the MSYS system:
           msystem: MINGW64
@@ -219,9 +219,6 @@ jobs:
           echo 'g++:'
           g++ --version
           echo ''
-          echo 'gfortran:'
-          gfortran --version
-          echo ''
           echo 'Git:'
           git --version
           echo ''
@@ -245,7 +242,7 @@ jobs:
       # Install Windows build tools for compiling Node.js native add-ons.
       - name: 'Install Windows build tools'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-chocolatey@0e015857dd851f84fcb7fb53380eb5c4c8202333 # v3.0.0
+        uses: crazy-max/ghaction-chocolatey@2ae99523e93879734d432250f87e2c45c379cd60 # v3.2.0
         with:
           args: install -y visualstudio2019buildtools visualstudio2019-workload-vctools
         timeout-minutes: 10
@@ -273,7 +270,7 @@ jobs:
           TEST_NPM_INSTALL_GITHUB_URL: 'https://github.com/stdlib-js/stdlib'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
-          . "./.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
@@ -287,7 +284,7 @@ jobs:
       # Upload the log file:
       - name: 'Upload log file'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4.3.3
+        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
         if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):

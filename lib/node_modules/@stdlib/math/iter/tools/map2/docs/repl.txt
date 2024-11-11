@@ -5,8 +5,8 @@
 
     When invoked, the input function is provided two arguments:
 
-    - x: iterated value from first input iterator
-    - y: iterated value from second input iterator
+    - x: iterated value from first input iterator.
+    - y: iterated value from second input iterator.
 
     The length of the returned iterator is equal to the length of the shortest
     provided iterator. In other words, the returned iterator ends once *one* of

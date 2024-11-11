@@ -12,12 +12,12 @@
 
     The callback function is provided six arguments:
 
-    - value: array element
-    - idx: iteration index
-    - xi: strided index (offsetX + idx*sx)
-    - yi: strided index (offsetY + idx*sy)
-    - x: the input array
-    - y: the destination array
+    - value: array element.
+    - idx: iteration index.
+    - xi: strided index (offsetX + idx*sx).
+    - yi: strided index (offsetY + idx*sy).
+    - x: the input array.
+    - y: the destination array.
 
     If the callback function does not return any value (or equivalently,
     explicitly returns `undefined`), the value is ignored.

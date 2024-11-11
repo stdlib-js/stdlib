@@ -1,43 +1,43 @@
 {
-	"options": {},
-	"fields": [
-		{
-			"field": "src",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "include",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "libraries",
-			"resolve": false,
-			"relative": false
-		},
-		{
-			"field": "libpath",
-			"resolve": true,
-			"relative": false
-		}
-	],
-	"confs": [
-		{
-			"src": [
-				"./src/smin.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/math/base/assert/is-nanf",
-				"@stdlib/math/base/assert/is-negative-zerof"
-			]
-		}
-	]
+  "options": {},
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "src": [
+        "./src/smin.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-negative-zerof"
+      ]
+    }
+  ]
 }

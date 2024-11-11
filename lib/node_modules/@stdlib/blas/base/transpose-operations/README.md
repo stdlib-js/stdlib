@@ -46,12 +46,12 @@ Returns a list of BLAS transpose operations.
 
 ```javascript
 var out = transposeOperations();
-// e.g., returns [ 'none', 'transpose', 'conjugate-transpose' ]
+// e.g., returns [ 'no-transpose', 'transpose', 'conjugate-transpose' ]
 ```
 
 The output array contains the following operations:
 
--   `none`: no transposition.
+-   `no-transpose`: no transposition.
 -   `transpose`: transposition.
 -   `conjugate-transpose`: conjugate transposition.
 

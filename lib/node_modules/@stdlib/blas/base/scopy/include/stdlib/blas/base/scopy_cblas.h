@@ -22,6 +22,8 @@
 #ifndef SCOPY_CBLAS_H
 #define SCOPY_CBLAS_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Copies values from `x` into `y`.
 */
-void cblas_scopy( const int N, const float *X, const int strideX, float *Y, const int strideY );
+void API_SUFFIX(cblas_scopy)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }

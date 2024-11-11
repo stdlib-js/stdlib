@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-import isPRNGLike = require( './index' );
 import randu = require( '@stdlib/random/base/randu' );
+import isPRNGLike = require( './index' );
 
 
 // TESTS //

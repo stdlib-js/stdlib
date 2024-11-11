@@ -133,7 +133,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_avercos( x )
 
-Compute the [inverse versed cosine][inverse-versed-cosine] of a double-precision floating-point number (in radians).
+Computes the [inverse versed cosine][inverse-versed-cosine] of a double-precision floating-point number (in radians).
 
 ```c
 double out = stdlib_base_avercos( -3.141592653589793/2.0 );
