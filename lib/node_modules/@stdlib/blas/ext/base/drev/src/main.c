@@ -17,46 +17,62 @@
 */
 
 #include "stdlib/blas/ext/base/drev.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Reverses a double-precision floating-point strided array in-place.
 *
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  index increment
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
 */
-void c_drev( const int64_t N, double *X, const int64_t stride ) {
+void API_SUFFIX(stdlib_strided_drev)( const CBLAS_INT N, double *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	API_SUFFIX(stdlib_strided_drev_ndarray)( N, X, strideX, ox );
+}
+
+/**
+* Reverses a double-precision floating-point strided array in-place using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index
+*/
+void API_SUFFIX(stdlib_strided_drev_ndarray)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	double tmp;
-	int64_t ix;
-	int64_t iy;
-	int64_t m;
-	int64_t n;
-	int64_t i;
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT m;
+	CBLAS_INT n;
+	CBLAS_INT i;
 
 	if ( N <= 0 ) {
 		return;
 	}
 	n = N / 2;
+	ix = offsetX;
 
 	// Use loop unrolling if the stride is equal to `1`...
-	if ( stride == 1 ) {
+	if ( strideX == 1 ) {
 		m = n % 3;
-		iy = N - 1;
+		iy = ix + N - 1;
 
 		// If we have a remainder, run a clean-up loop...
 		if ( m > 0 ) {
-			for ( ix = 0; ix < m; ix++ ) {
+			for ( i = 0; i < m; i++ ) {
 				tmp = X[ ix ];
 				X[ ix ] = X[ iy ];
 				X[ iy ] = tmp;
-				iy -= 1;
+				ix += strideX;
+				iy -= strideX;
 			}
 		}
 		if ( n < 3 ) {
 			return;
 		}
-		for ( ix = m; ix < n; ix += 3 ) {
+		for ( i = m; i < n; i += 3 ) {
 			tmp = X[ ix ];
 			X[ ix ] = X[ iy ];
 			X[ iy ] = tmp;
@@ -69,22 +85,18 @@ void c_drev( const int64_t N, double *X, const int64_t stride ) {
 			X[ ix+2 ] = X[ iy-2 ];
 			X[ iy-2 ] = tmp;
 
+			ix += 3;
 			iy -= 3;
 		}
 		return;
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
-	iy = ix + ((N-1)*stride);
+	iy = ix + ( (N-1) * strideX );
 	for ( i = 0; i < n; i++ ) {
 		tmp = X[ ix ];
 		X[ ix ] = X[ iy ];
 		X[ iy ] = tmp;
-		ix += stride;
-		iy -= stride;
+		ix += strideX;
+		iy -= strideX;
 	}
 	return;
 }
