@@ -1,0 +1,90 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/constants/float32/exponent-bias",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/min-base2-exponent"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/constants/float32/exponent-bias",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/min-base2-exponent"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/constants/float32/exponent-bias",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/min-base2-exponent"
+      ]
+    }
+  ]
+}
