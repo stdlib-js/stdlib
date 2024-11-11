@@ -1,0 +1,199 @@
+{
+  "name": "@stdlib/math/base/special/gcdf",
+  "version": "0.0.0",
+  "description": "Compute the greatest common divisor (gcd).",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "math",
+    "mathematics",
+    "euclid",
+    "euclidean",
+    "stein",
+    "binary gcd",
+    "greatest common divisor",
+    "greatest common factor",
+    "highest common factor",
+    "greatest common measure",
+    "highest common divisor",
+    "gcd",
+    "gcf",
+    "hcf",
+    "gcm",
+    "arithmetic",
+    "integer"
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "gcd",
+      "alias": "gcd",
+      "pkg_desc": "compute the greatest common divisor (gcd)",
+      "desc": "computes the greatest common divisor (gcd)",
+      "short_desc": "greatest common divisor (gcd)",
+      "parameters": [
+        {
+          "name": "a",
+          "desc": "first number",
+          "type": {
+            "javascript": "integer",
+            "jsdoc": "integer",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0,
+              50
+            ]
+          },
+          "example_values": [
+            1,
+            2,
+            4,
+            5,
+            9,
+            10,
+            15,
+            20,
+            21,
+            25,
+            28,
+            30,
+            33,
+            35,
+            39,
+            40,
+            42,
+            45,
+            48,
+            50
+          ]
+        },
+        {
+          "name": "b",
+          "desc": "second number",
+          "type": {
+            "javascript": "integer",
+            "jsdoc": "integer",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0,
+              50
+            ]
+          },
+          "example_values": [
+            1,
+            2,
+            4,
+            5,
+            9,
+            10,
+            15,
+            20,
+            21,
+            25,
+            28,
+            30,
+            33,
+            35,
+            39,
+            40,
+            42,
+            45,
+            48,
+            50
+          ]
+        }
+      ],
+      "returns": {
+        "desc": "greatest common divisor",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "binary gcd",
+        "greatest common divisor",
+        "greatest common factor",
+        "highest common factor",
+        "greatest common measure",
+        "highest common divisor",
+        "gcd",
+        "gcf",
+        "hcf",
+        "gcm"
+      ],
+      "extra_keywords": []
+    }
+  }
+}
