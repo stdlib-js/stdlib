@@ -21,13 +21,13 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     out: Float64Array
         Output array.
 
     strideOut: integer
-        Index increment for `out`.
+        Stride length for `out`.
 
     Returns
     -------
@@ -61,11 +61,12 @@
 {{alias}}.ndarray( N, x, strideX, offsetX, out, strideOut, offsetOut )
     Computes the sum of single-precision floating-point strided array elements,
     ignoring `NaN` values and using ordinary recursive summation with extended
-    accumulation and alternative indexing semantics.
+    accumulation and alternative indexing semantics and returning an extended
+    precision result.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the offset parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameters support indexing semantics based on
+    starting indices.
 
     Parameters
     ----------
@@ -76,7 +77,7 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     offsetX: integer
         Starting index for `x`.
@@ -85,7 +86,7 @@
         Output array.
 
     strideOut: integer
-        Index increment for `out`.
+        Stride length for `out`.
 
     offsetOut: integer
         Starting index for `out`.
