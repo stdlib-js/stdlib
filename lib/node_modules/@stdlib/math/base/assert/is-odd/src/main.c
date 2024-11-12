@@ -20,7 +20,7 @@
 #include "stdlib/math/base/assert/is_even.h"
 
 /**
-* Test if a finite double-precision floating-point number is an odd number.
+* Tests if a finite double-precision floating-point number is an odd number.
 *
 * @param x    input value
 * @return	  output value
@@ -32,9 +32,9 @@
 * // returns true
 */
 bool stdlib_base_is_odd( const double x ) {
-    // Check sign to prevent overflow...
-    if ( x > 0.0 ) {
-        return stdlib_base_is_even( x - 1.0 );
-    }
-    return stdlib_base_is_even( x + 1.0 );
+	// Check sign to prevent overflow...
+	if ( x > 0.0 ) {
+		return stdlib_base_is_even( x - 1.0 );
+	}
+	return stdlib_base_is_even( x + 1.0 );
 }
