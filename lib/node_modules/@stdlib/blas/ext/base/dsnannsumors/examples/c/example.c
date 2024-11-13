@@ -17,27 +17,26 @@
 */
 
 #include "stdlib/blas/ext/base/dsnannsumors.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 #include <stdio.h>
-#include <inttypes.h>
 
 int main( void ) {
 	// Create a strided array:
-	const float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 0.0/0.0, 0.0/0.0 };
+	const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 0.0/0.0, 0.0/0.0 };
 
 	// Specify the number of elements:
-	const int64_t N = 5;
+	const int N = 5;
 
 	// Specify the stride length:
-	const int64_t stride = 2;
+	const int strideX = 2;
 
 	// Initialize a variable for storing the number of non-NaN elements:
-	int64_t n = 0;
+	CBLAS_INT n = 0;
 
 	// Compute the sum:
-	double v = stdlib_strided_dsnannsumors( N, x, stride, &n );
+	double v = stdlib_strided_dsnannsumors( N, x, strideX, &n );
 
 	// Print the result:
 	printf( "sum: %lf\n", v );
-	printf( "n: %"PRId64"\n", n );
+	printf( "n: %"CBLAS_IFMT"\n", n );
 }

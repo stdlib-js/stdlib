@@ -1,0 +1,29 @@
+
+{{alias}}( x )
+    Computes the inverse half-value versed cosine of a
+    single-precision floating-point number.
+
+    The inverse half-value versed cosine is defined as `2*acos(sqrt(x))`.
+
+    If `x < 0`, `x > 1`, or `x` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Inverse half-value versed cosine.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5 )
+    ~1.5708
+    > y = {{alias}}( 0.0 )
+    ~3.1416
+
+    See Also
+    --------
+
