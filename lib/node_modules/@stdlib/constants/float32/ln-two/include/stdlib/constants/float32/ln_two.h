@@ -22,6 +22,6 @@
 /**
 * Macro for the natural logarithm of `2` as a single-precision floating-point number.
 */
-#define STDLIB_CONSTANT_FLOAT32_LN2 0.6931471824645996
+#define STDLIB_CONSTANT_FLOAT32_LN2 0.6931471824645996f
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_LN2_H
