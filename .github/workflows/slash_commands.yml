@@ -75,6 +75,38 @@ jobs:
       STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
       STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
 
+  # Define a job for merging develop branch:
+  merge_develop:
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib merge')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/pr_merge_develop.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for rebasing on develop branch:
+  rebase_develop:
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib rebase')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/pr_rebase_develop.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
   # Define a job for printing a list of available slash commands:
   help:
 
@@ -83,7 +115,6 @@ jobs:
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
-
 
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib help')
@@ -105,6 +136,8 @@ jobs:
             - `/stdlib check-files` - Check for required files.
             - `/stdlib update-copyright-years` - Update copyright header years.
             - `/stdlib lint-autofix` - Auto-fix lint errors.
+            - `/stdlib merge` - Merge changes from develop branch into this PR.
+            - `/stdlib rebase` - Rebase this PR on top of develop branch.
 
           # GitHub token:
           token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
