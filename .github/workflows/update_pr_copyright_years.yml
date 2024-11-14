@@ -25,25 +25,26 @@ on:
   # Allow the workflow to be triggered by other workflows
   workflow_call:
     # Define the input parameters for the workflow:
-      inputs:
-        pull_request_number:
-          description: 'PR number'
-          required: true
-          type: number
-      # Define the secrets accessible by the workflow:
-      secrets:
-        STDLIB_BOT_GITHUB_TOKEN:
-          description: 'GitHub token for stdlb-bot'
-          required: true
-        REPO_GITHUB_TOKEN:
-          description: 'GitHub token for accessing the repository'
-          required: true
-        STDLIB_BOT_GPG_PRIVATE_KEY:
-          description: 'GPG private key for stdlb-bot'
-          required: true
-        STDLIB_BOT_GPG_PASSPHRASE:
-          description: 'GPG passphrase for stdlb-bot'
-          required: true
+    inputs:
+      pull_request_number:
+        description: 'PR number'
+        required: true
+        type: number
+
+    # Define the secrets accessible by the workflow:
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN:
+        description: 'GitHub token for stdlb-bot'
+        required: true
+      REPO_GITHUB_TOKEN:
+        description: 'GitHub token for accessing the repository'
+        required: true
+      STDLIB_BOT_GPG_PRIVATE_KEY:
+        description: 'GPG private key for stdlb-bot'
+        required: true
+      STDLIB_BOT_GPG_PASSPHRASE:
+        description: 'GPG passphrase for stdlb-bot'
+        required: true
 
 # Workflow jobs:
 jobs:
