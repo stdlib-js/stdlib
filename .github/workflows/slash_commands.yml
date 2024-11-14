@@ -29,6 +29,35 @@ on:
 # Workflow jobs:
 jobs:
 
+  # Add a new job for adding the initial reaction
+  add_initial_reaction:
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib')
+
+    # Define the job's steps:
+    steps:
+      # Add initial reaction to the comment
+      - name: 'Add initial reaction'
+        run: |
+          COMMENT="${{ github.event.comment.body }}"
+          if [[ $COMMENT == "/stdlib help" || \
+                $COMMENT == "/stdlib check-files" || \
+                $COMMENT == "/stdlib update-copyright-years" || \
+                $COMMENT == "/stdlib lint-autofix" || \
+                $COMMENT == "/stdlib merge" || \
+                $COMMENT == "/stdlib rebase"
+          ]]; then
+            curl -X POST \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" \
+              -d '{"content":"eyes"}'
+          fi
+
   # Define a job for checking for required files:
   check_files:
 
