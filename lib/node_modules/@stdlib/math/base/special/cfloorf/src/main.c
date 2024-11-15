@@ -22,7 +22,7 @@
 #include "stdlib/complex/float32/reim.h"
 
 /**
-* Rounds a single-precision complex floating-point number toward negative infinity.
+* Rounds each component of a single-precision complex floating-point number toward negative infinity.
 *
 * @param z       input value
 * @return        result

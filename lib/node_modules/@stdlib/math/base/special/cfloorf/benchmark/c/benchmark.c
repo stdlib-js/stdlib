@@ -93,8 +93,8 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	float re;
-	float im;
+	float re[ 100 ];
+	float im[ 100 ];
 	double t;
 	int i;
 
@@ -103,11 +103,14 @@ static double benchmark( void ) {
 	float a;
 	float b;
 
+	for ( i = 0; i < 100; i++ ) {
+		re[ i ] = ( 1000.0f * rand_float() ) - 500.0f;
+		im[ i ] = ( 1000.0f * rand_float() ) - 500.0f;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		re = ( 1000.0f * rand_float() ) - 500.0f;
-		im = ( 1000.0f * rand_float() ) - 500.0f;
-		z = stdlib_complex64( re, im );
+		z = stdlib_complex64( re[ i % 100 ], im[ i % 100 ] );
 		y = stdlib_base_cfloorf( z );
 		stdlib_complex64_reim( y, &a, &b );
 		if ( a != a || b != b ) {
