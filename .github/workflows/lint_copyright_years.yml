@@ -1,0 +1,114 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: 'Lint Copyright Years in Newly Added Files'
+
+# Workflow triggers:
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+  # Define a job for linting copyright years in newly added files:
+  lint:
+    name: 'Lint Copyright Years'
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the last 1000 commits:
+          fetch-depth: 100
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Get list of newly added files:
+      - name: 'Get list of newly added files'
+        id: added-files
+        run: |
+          page=1
+          files=""
+          while true; do
+              new_files=$(curl -s \
+                -H "Accept: application/vnd.github.v3+json" \
+                -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+                "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files?page=$page&per_page=100" \
+                | jq -r '.[] | select(.status == "added") | .filename')
+              if [ -z "$new_files" ]; then
+                  break
+              fi
+              files="$files $new_files"
+              page=$((page+1))
+          done
+          files=$(echo "$files" | tr '\n' ' ' | sed 's/^ //;s/ $//')
+          echo "files=${files}" >> $GITHUB_OUTPUT
+
+      # Check copyright years in newly added files:
+      - name: 'Check copyright years'
+        run: |
+          current_year=$(date +"%Y")
+          files="${{ steps.added-files.outputs.files }}"
+          exit_code=0
+
+          echo "## 📄 Copyright Year Check Results" >> $GITHUB_STEP_SUMMARY
+          echo "_Only newly added files are checked for the current year in the copyright notice._" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [[ -z "$files" ]]; then
+              echo "No newly added files to check." >> $GITHUB_STEP_SUMMARY
+              exit 0
+          fi
+
+          for file in $files; do
+              if [[ ! -f "$file" ]]; then
+                  continue
+              fi
+
+              # Check if file contains stdlib copyright notice:
+              year=$(grep -oP \
+                'Copyright \(c\) \K[0-9]{4}(?= The Stdlib Authors\.)' \
+                "$file")
+
+              if [[ -n "$year" ]]; then
+                  if [[ "$year" == "$current_year" ]]; then
+                      echo "- ✅ \`$file\`: Year is correct (**$year**)" >> $GITHUB_STEP_SUMMARY
+                  else
+                      echo "- ❌ **Error**: \`$file\` — Expected year **$current_year**, found **$year**" >> $GITHUB_STEP_SUMMARY
+                      exit_code=1
+                  fi
+              else
+                  echo "- ⚠️ No copyright notice found in \`$file\`" >> $GITHUB_STEP_SUMMARY
+              fi
+          done
+
+          exit $exit_code
