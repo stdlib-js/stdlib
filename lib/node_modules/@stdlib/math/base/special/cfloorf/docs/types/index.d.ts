@@ -23,7 +23,7 @@
 import { Complex64 } from '@stdlib/types/complex';
 
 /**
-* Rounds a single-precision complex floating-point number toward negative infinity.
+* Rounds each component of a single-precision complex floating-point number toward negative infinity.
 *
 * @param z - input value
 * @returns result
