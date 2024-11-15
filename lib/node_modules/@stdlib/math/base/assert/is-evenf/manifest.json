@@ -36,6 +36,10 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-float",
+        "@stdlib/napi/create-int32",
+        "@stdlib/napi/export",
         "@stdlib/math/base/assert/is-integerf"
       ]
     },
