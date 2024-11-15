@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: 'Lint Copyright Years in Newly Added Files'
+name: 'lint_copyright_years'
 
 # Workflow triggers:
 on:
@@ -85,30 +85,34 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
 
           if [[ -z "$files" ]]; then
-              echo "No newly added files to check." >> $GITHUB_STEP_SUMMARY
-              exit 0
+            echo "No newly added files to check."
+            echo "No newly added files to check." >> $GITHUB_STEP_SUMMARY
+            exit 0
           fi
 
           for file in $files; do
-              if [[ ! -f "$file" ]]; then
-                  continue
-              fi
+            if [[ ! -f "$file" ]]; then
+              continue
+            fi
 
-              # Check if file contains stdlib copyright notice:
-              year=$(grep -oP \
-                'Copyright \(c\) \K[0-9]{4}(?= The Stdlib Authors\.)' \
-                "$file")
+            # Check if file contains stdlib copyright notice:
+            year=$(grep -oP \
+              'Copyright \(c\) \K[0-9]{4}(?= The Stdlib Authors\.)' \
+              "$file")
 
-              if [[ -n "$year" ]]; then
-                  if [[ "$year" == "$current_year" ]]; then
-                      echo "- ✅ \`$file\`: Year is correct (**$year**)" >> $GITHUB_STEP_SUMMARY
-                  else
-                      echo "- ❌ **Error**: \`$file\` — Expected year **$current_year**, found **$year**" >> $GITHUB_STEP_SUMMARY
-                      exit_code=1
-                  fi
+            if [[ -n "$year" ]]; then
+              if [[ "$year" == "$current_year" ]]; then
+                echo "✅ $file: Correct year $year"
+                echo "- ✅ \`$file\`: Year is correct (**$year**)" >> $GITHUB_STEP_SUMMARY
               else
-                  echo "- ⚠️ No copyright notice found in \`$file\`" >> $GITHUB_STEP_SUMMARY
+                echo "❌ $file: Expected $current_year, found $year"
+                echo "- ❌ **Error**: \`$file\` — Expected year **$current_year**, found **$year**" >> $GITHUB_STEP_SUMMARY
+                exit_code=1
               fi
+            else
+              echo "⚠️ $file: No copyright notice found"
+              echo "- ⚠️ No copyright notice found in \`$file\`" >> $GITHUB_STEP_SUMMARY
+            fi
           done
 
           exit $exit_code
