@@ -193,18 +193,34 @@ jobs:
 
       # Post report as comment to PR:
       - name: 'Post report as comment to PR'
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request_target'
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
-            github.rest.issues.createComment({
+            const { data: comments } = await github.rest.issues.listComments({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '${{ steps.create-report.outputs.report }}'
-            })
+            });
+
+            const isBotComment = comments.find(comment => comment.user.login === 'stdlib-bot' && comment.body.includes('## Coverage Report'));
+            if (isBotComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: `${{ steps.create-report.outputs.report }}`,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `${{ steps.create-report.outputs.report }}`,
+              });
+            }
 
       # Post report as comment to commit:
       - name: 'Post report as comment to commit'
