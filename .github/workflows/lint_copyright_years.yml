@@ -96,9 +96,7 @@ jobs:
             fi
 
             # Check if file contains stdlib copyright notice:
-            year=$(grep -oP \
-              'Copyright \(c\) \K[0-9]{4}(?= The Stdlib Authors\.)' \
-              "$file")
+            year=$(grep -o 'Copyright (c) [0-9]\{4\} The Stdlib Authors\.' "$file" | sed -E 's/^Copyright \(c\) ([0-9]{4}) The Stdlib Authors\./\1/' || true)
 
             if [[ -n "$year" ]]; then
               if [[ "$year" == "$current_year" ]]; then
