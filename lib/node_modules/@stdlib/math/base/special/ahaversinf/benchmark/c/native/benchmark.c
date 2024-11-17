@@ -81,7 +81,7 @@ static double tic( void ) {
 */
 static float rand_float( void ) {
 	int r = rand();
-	return (float)r / ( (float)RAND_MAX + 1.0 );
+	return (float)r / ( (float)RAND_MAX + 1.0f );
 }
 
 /**
@@ -91,15 +91,18 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	float x;
-	float y;
+	float x[ 100 ];
 	double t;
+	float y;
 	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = rand_float();
+	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = rand_float();
-		y = stdlib_base_ahaversinf( x );
+		y = stdlib_base_ahaversinf( x[ i % 100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

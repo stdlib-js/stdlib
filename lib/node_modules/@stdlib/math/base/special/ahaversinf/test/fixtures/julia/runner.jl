@@ -2,7 +2,7 @@
 #
 # @license Apache-2.0
 #
-# Copyright (c) 2018 The Stdlib Authors.
+# Copyright (c) 2024 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -66,5 +66,5 @@ x = range( 0.0, stop = 1.0, length = 2003 );
 gen( x, "data.json" );
 
 # Generate fixture data for small positive values:
-x = range( 1e-200, stop = 1e-208, length = 2003 );
+x = range( 1e-20, stop = 1e-28, length = 2003 );
 gen( x, "small_positive.json" );
