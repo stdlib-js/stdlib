@@ -178,7 +178,7 @@ jobs:
           if [ -z "$table" ]; then
             report="## Coverage Report\n\nNo coverage information available."
           else
-            if [ "${{ github.event_name }}" == "pull_request" ]; then
+            if [ "${{ github.event_name }}" == "pull_request_target" ]; then
               compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"
               compare_txt="The above coverage report was generated for the [changes in this PR]($compare_url)."
             elif [ "${{ github.event_name }}" == "push" ]; then
@@ -193,18 +193,34 @@ jobs:
 
       # Post report as comment to PR:
       - name: 'Post report as comment to PR'
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request_target'
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
-            github.rest.issues.createComment({
+            const { data: comments } = await github.rest.issues.listComments({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '${{ steps.create-report.outputs.report }}'
-            })
+            });
+
+            const botComment = comments.find( comment => comment.user.login === 'stdlib-bot' && comment.body.includes( '## Coverage Report' ) );
+            if ( botComment ) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: `${{ steps.create-report.outputs.report }}`,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `${{ steps.create-report.outputs.report }}`,
+              });
+            }
 
       # Post report as comment to commit:
       - name: 'Post report as comment to commit'
@@ -246,7 +262,7 @@ jobs:
         run: |
           cd ./www-test-code-coverage
 
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+          if [[ "${{ github.event_name }}" == "pull_request_target" ]]; then
             BRANCH_NAME="pr-${{ github.event.pull_request.number }}"
             git fetch origin $BRANCH_NAME || true
             git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME

@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Computes the greatest common divisor (gcd) of two single-precision floating point numbers.
+* Computes the greatest common divisor (gcd) of two single-precision floating-point numbers.
 *
 * ## Notes
 *
