@@ -36,7 +36,7 @@
 * @param N        number of indexed elements
 * @param X        input array
 * @param strideX  stride length
-* @param n        number of non-NaN elements
+* @param n        pointer for storing the number of non-NaN elements
 * @return         output value
 */
 double API_SUFFIX(stdlib_strided_dnannsumkbn2)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, CBLAS_INT *n ) {
@@ -59,16 +59,16 @@ double API_SUFFIX(stdlib_strided_dnannsumkbn2)( const CBLAS_INT N, const double 
 * @param X        input array
 * @param strideX  stride length
 * @param offsetX  starting index
-* @param n        number of non-NaN elements
+* @param n        pointer for storing the number of non-NaN elements
 * @return         output value
 */
 double API_SUFFIX(stdlib_strided_dnannsumkbn2_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, CBLAS_INT *n ) {
+	CBLAS_INT ix;
+	CBLAS_INT i;
 	double sum;
 	double ccs;
 	double cs;
 	double cc;
-	CBLAS_INT ix;
-	CBLAS_INT i;
 	double v;
 	double t;
 	double c;
