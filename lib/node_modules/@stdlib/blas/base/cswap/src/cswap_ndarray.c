@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,7 +18,6 @@
 
 #include "stdlib/blas/base/cswap.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Interchanges two complex single-precision floating-point vectors.
@@ -26,11 +25,39 @@
 * @param N        number of indexed elements
 * @param X        first input array
 * @param strideX  X stride length
+* @param offsetX  starting index for X
 * @param Y        second input array
 * @param strideY  Y stride length
+* @param offsetY  starting index for Y
 */
-void API_SUFFIX(c_cswap)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
-	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
-	API_SUFFIX(c_cswap_ndarray)( N, X, strideX, ox, Y, strideY, oy );
+void API_SUFFIX(c_cswap_ndarray)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+	float *x = (float *)X;
+	float *y = (float *)Y;
+	float tmp;
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT sx;
+	CBLAS_INT sy;
+	CBLAS_INT i;
+
+	if ( N <= 0 ) {
+		return;
+	}
+	ix = offsetX * 2;
+	iy = offsetY * 2;
+	sx = strideX * 2;
+	sy = strideY * 2;
+	for ( i = 0; i < N; i++ ) {
+		tmp = x[ ix ];
+		x[ ix ] = y[ iy ];
+		y[ iy ] = tmp;
+
+		tmp = x[ ix+1 ];
+		x[ ix+1 ] = y[ iy+1 ];
+		y[ iy+1 ] = tmp;
+
+		ix += sx;
+		iy += sy;
+	}
+	return;
 }
