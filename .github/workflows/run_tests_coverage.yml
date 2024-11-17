@@ -178,6 +178,15 @@ jobs:
           else
             directories="${{ steps.changed-directories.outputs.directories }}"
           fi
+
+          # Append suffix to coverage base URL for PRs:
+          if [ -n "${{ github.event.pull_request.number }}" ]; then
+            PR_NUMBER=${{ github.event.pull_request.number }}
+            export COVERAGE_BASE_URL="https://coverage.stdlib.io/pr-${PR_NUMBER}"
+          else
+            export COVERAGE_BASE_URL="https://coverage.stdlib.io"
+          fi
+
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage" "$directories"
         timeout-minutes: 30
 
