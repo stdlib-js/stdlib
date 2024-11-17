@@ -39,8 +39,8 @@ julia> gen( x, y, \"data.json\" );
 """
 function gen( x, y, name )
 	z = Array{Float32}( undef, length( x ) );
-	for i in eachindex(x)
-		z[ i ] = Float32(rem( Float32(x[ i ]), Float32(y[ i ])) )
+	for i in eachindex( x )
+		z[ i ] = Float32( rem( Float32( x[ i ] ), Float32( y[ i ] ) ) );
 	end
 
 	# Store data to be written to file as a collection:
@@ -67,13 +67,13 @@ file = @__FILE__;
 dir = dirname( file );
 
 # Subnormal results:
-x = range(1.18e-38, stop = 1.0e-45, length = 2001)
-y = range(1.18e-38, stop = 1.0e-45, length = 2001)
+x = range( 1.18e-38, stop = 1.0e-45, length = 2001 );
+y = range( 1.18e-38, stop = 1.0e-45, length = 2001 );
 gen( x, y, "subnormal_results.json" );
 
 # x small, y small:
-x = rand( 5001 ) .* 100
-y = rand( 5001 ) .* 100
+x = rand( 5001 ) .* 100;
+y = rand( 5001 ) .* 100;
 gen( x, y, "small_small.json" );
 
 # x small, y large:

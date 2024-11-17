@@ -43,7 +43,8 @@
         "@stdlib/constants/float32/exponent-bias",
         "@stdlib/constants/float32/exponent-mask",
         "@stdlib/constants/float32/abs-mask",
-        "@stdlib/constants/float32/min-base2-exponent"
+        "@stdlib/constants/float32/min-base2-exponent",
+        "@stdlib/constants/float32/precision"
       ]
     },
     {
@@ -63,7 +64,8 @@
         "@stdlib/constants/float32/exponent-bias",
         "@stdlib/constants/float32/exponent-mask",
         "@stdlib/constants/float32/abs-mask",
-        "@stdlib/constants/float32/min-base2-exponent"
+        "@stdlib/constants/float32/min-base2-exponent",
+        "@stdlib/constants/float32/precision"
       ]
     },
     {
@@ -83,7 +85,8 @@
         "@stdlib/constants/float32/exponent-bias",
         "@stdlib/constants/float32/exponent-mask",
         "@stdlib/constants/float32/abs-mask",
-        "@stdlib/constants/float32/min-base2-exponent"
+        "@stdlib/constants/float32/min-base2-exponent",
+        "@stdlib/constants/float32/precision"
       ]
     }
   ]
