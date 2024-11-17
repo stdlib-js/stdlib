@@ -299,7 +299,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **X**: `[inout] void*` first input array.
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
--   **Y**: `[inout] void*` first input array.
+-   **Y**: `[inout] void*` second input array.
 -   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
 
 ```c
