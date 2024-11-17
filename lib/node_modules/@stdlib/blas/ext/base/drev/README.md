@@ -181,7 +181,7 @@ stdlib_strided_drev( 4, x, 1 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **X**: `[in] double*` input array.
+-   **X**: `[inout] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 
 ```c
@@ -201,7 +201,7 @@ stdlib_strided_drev_ndarray( 4, x, 1, 0 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **X**: `[in] double*` input array.
+-   **X**: `[inout] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 

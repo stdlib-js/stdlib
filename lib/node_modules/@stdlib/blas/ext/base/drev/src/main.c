@@ -41,12 +41,12 @@ void API_SUFFIX(stdlib_strided_drev)( const CBLAS_INT N, double *X, const CBLAS_
 * @param offsetX  starting index
 */
 void API_SUFFIX(stdlib_strided_drev_ndarray)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	double tmp;
 	CBLAS_INT ix;
 	CBLAS_INT iy;
 	CBLAS_INT m;
 	CBLAS_INT n;
 	CBLAS_INT i;
+	double tmp;
 
 	if ( N <= 0 ) {
 		return;

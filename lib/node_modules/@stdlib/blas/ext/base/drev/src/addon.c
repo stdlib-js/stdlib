@@ -36,7 +36,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
-	API_SUFFIX(stdlib_strided_drev)( N, (double *)X, strideX );
+	API_SUFFIX(stdlib_strided_drev)( N, X, strideX );
 	return NULL;
 }
 
@@ -53,7 +53,7 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 3 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
-	API_SUFFIX(stdlib_strided_drev_ndarray)( N, (double *)X, strideX, offsetX );
+	API_SUFFIX(stdlib_strided_drev_ndarray)( N, X, strideX, offsetX );
 	return NULL;
 }
 
