@@ -20,7 +20,7 @@ limitations under the License.
 
 # gcdf
 
-> Compute the [greatest common divisor][gcd] (gcd) of two single-precision floating point numbers.
+> Compute the [greatest common divisor][gcd] (gcd) of two single-precision floating-point numbers.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -44,7 +44,7 @@ var gcdf = require( '@stdlib/math/base/special/gcdf' );
 
 #### gcdf( a, b )
 
-Computes the [greatest common divisor][gcd] (gcd).
+Computes the [greatest common divisor][gcd] (gcd) of two single-precision floating-point numbers.
 
 ```javascript
 var v = gcdf( 48, 18 );
@@ -139,7 +139,7 @@ for ( i = 0; i < a.length; i++ ) {
 
 #### stdlib_base_gcdf( a, b )
 
-Computes the greatest common divisor (gcd).
+Computes the greatest common divisor (gcd) of two single-precision floating-point numbers.
 
 ```c
 float v = stdlib_base_gcdf( 48.0f, 18.0f );

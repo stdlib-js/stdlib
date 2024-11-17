@@ -26,15 +26,15 @@
 #include <stdint.h>
 
 /**
-* Computes the greatest common divisor (gcd) using the binary GCD algorithm.
+* Computes the greatest common divisor (gcd) of two single-precision floating-point numbers using the binary GCD algorithm.
 *
-* @param a first number
-* @param b second number
-* @return greatest common divisor
+* @param a    first number
+* @param b    second number
+* @return     greatest common divisor
 *
 * @example
-* float out = largeIntegersf(16777216.0, 65536.0);
-* // returns 65536.0
+* float out = largeIntegersf( 16777216.0f, 65536.0f );
+* // returns 65536.0f
 */
 static float largeIntegersf( const float a, const float b ) {
 	float ac;
@@ -43,32 +43,35 @@ static float largeIntegersf( const float a, const float b ) {
 	float t;
 
 	// Simple cases:
-	if ( a == 0.0 ) {
+	if ( a == 0.0f ) {
 		return b;
 	}
-	if ( b == 0.0 ) {
+	if ( b == 0.0f ) {
 		return a;
 	}
 	ac = a;
 	bc = b;
-	k = 1.0;
+	k = 1.0f;
 
 	// Reduce `a` and/or `b` to odd numbers and keep track of the greatest power of 2 dividing both `a` and `b`...
-	while ( stdlib_base_fmodf( ac, 2.0 ) == 0.0 && stdlib_base_fmodf( bc, 2.0 ) == 0.0 ) {
-		ac /= 2.0; // right shift
-		bc /= 2.0; // right shift
-		k *= 2.0; // left shift
+	while ( stdlib_base_fmodf( ac, 2.0f ) == 0.0f && stdlib_base_fmodf( bc, 2.0f ) == 0.0f ) {
+		ac /= 2.0f; // right shift
+		bc /= 2.0f; // right shift
+		k *= 2.0f; // left shift
 	}
+
 	// Reduce `a` to an odd number...
-	while ( stdlib_base_fmodf( ac, 2.0 ) == 0.0 ) {
-		ac /= 2.0; // right shift
+	while ( stdlib_base_fmodf( ac, 2.0f ) == 0.0f ) {
+		ac /= 2.0f; // right shift
 	}
+
 	// Henceforth, `a` is always odd...
 	while ( bc ) {
 		// Remove all factors of 2 in `b`, as they are not common...
-		while ( stdlib_base_fmodf( bc, 2.0 ) == 0.0 ) {
-			bc /= 2.0; // right shift
+		while ( stdlib_base_fmodf( bc, 2.0f ) == 0.0f ) {
+			bc /= 2.0f; // right shift
 		}
+
 		// `a` and `b` are both odd. Swap values such that `b` is the larger of the two values, and then set `b` to the difference (which is even)...
 		if ( ac > bc ) {
 			t = bc;
@@ -77,20 +80,21 @@ static float largeIntegersf( const float a, const float b ) {
 		}
 		bc -= ac; // b=0 iff b=a
 	}
+
 	// Restore common factors of 2...
 	return k * ac;
 }
 
 /**
-* Computes the greatest common divisor (gcd) using the binary GCD algorithm and bitwise operations.
+* Computes the greatest common divisor (gcd) of two single-precision floating-point numbers using the binary GCD algorithm and bitwise operations.
 *
 * @param a    first number
 * @param b    second number
 * @return     greatest common divisor
 *
 * @example
-* float out = bitwisef( 48.0, 18.0 );
-* // returns 6.0
+* float out = bitwisef( 48.0f, 18.0f );
+* // returns 6.0f
 */
 static float bitwisef( const float a, const float b ) {
 	int32_t ac;
@@ -99,10 +103,10 @@ static float bitwisef( const float a, const float b ) {
 	int32_t t;
 
 	// Simple cases:
-	if ( a == 0.0 ) {
+	if ( a == 0.0f ) {
 		return b;
 	}
-	if ( b == 0.0 ) {
+	if ( b == 0.0f ) {
 		return a;
 	}
 	ac = (int32_t)a;
@@ -110,21 +114,24 @@ static float bitwisef( const float a, const float b ) {
 	k = 0;
 
 	// Reduce `a` and/or `b` to odd numbers and keep track of the greatest power of 2 dividing both `a` and `b`...
-	while ( (ac & 1) == 0 && (bc & 1) == 0 ) {
+	while ( ( ac & 1 ) == 0 && ( bc & 1 ) == 0 ) {
 		ac >>= 1; // right shift
 		bc >>= 1; // right shift
 		k += 1;
 	}
+
 	// Reduce `a` to an odd number...
-	while ( (ac & 1) == 0 ) {
+	while ( ( ac & 1 ) == 0 ) {
 		ac >>= 1; // right shift
 	}
+
 	// Henceforth, `a` is always odd...
 	while ( bc ) {
 		// Remove all factors of 2 in `b`, as they are not common...
-		while ( (bc & 1) == 0 ) {
+		while ( ( bc & 1 ) == 0 ) {
 			bc >>= 1; // right shift
 		}
+
 		// `a` and `b` are both odd. Swap values such that `b` is the larger of the two values, and then set `b` to the difference (which is even)...
 		if ( ac > bc ) {
 			t = bc;
@@ -133,27 +140,28 @@ static float bitwisef( const float a, const float b ) {
 		}
 		bc -= ac; // b=0 iff b=a
 	}
+
 	// Restore common factors of 2...
 	return ac << k;
 }
 
 /**
-* Computes the greatest common divisor (gcd).
+* Computes the greatest common divisor (gcd) of two single-precision floating-point numbers.
 *
 * @param a    first number
 * @param b    second number
 * @return     greatest common divisor
 *
 * @example
-* float out = stdlib_base_gcdf( 48.0, 18.0 );
-* // returns 6.0
+* float out = stdlib_base_gcdf( 48.0f, 18.0f );
+* // returns 6.0f
 */
 float stdlib_base_gcdf( const float a, const float b ) {
 	float ac;
 	float bc;
 
 	if ( stdlib_base_is_nanf( a ) || stdlib_base_is_nanf( b ) ) {
-		return 0.0/0.0; // NaN
+		return 0.0f / 0.0f; // NaN
 	}
 	if (
 		a == STDLIB_CONSTANT_FLOAT32_PINF ||
@@ -161,10 +169,10 @@ float stdlib_base_gcdf( const float a, const float b ) {
 		a == STDLIB_CONSTANT_FLOAT32_NINF ||
 		b == STDLIB_CONSTANT_FLOAT32_NINF
 	) {
-		return 0.0/0.0; // NaN
+		return 0.0f / 0.0f; // NaN
 	}
 	if ( !( stdlib_base_is_integerf( a ) && stdlib_base_is_integerf( b ) ) ) {
-		return 0.0/0.0; // NaN
+		return 0.0f / 0.0f; // NaN
 	}
 	ac = a;
 	bc = b;

@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the greatest common divisor (gcd) of two single-precision floating point numbers.
+* Computes the greatest common divisor (gcd) of two single-precision floating-point numbers.
 */
 float stdlib_base_gcdf( const float a, const float b );
 

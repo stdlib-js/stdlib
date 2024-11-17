@@ -1,7 +1,7 @@
 
 {{alias}}( a, b )
     Computes the greatest common divisor (gcd) of two single-precision
-    floating point numbers.
+    floating-point numbers.
 
     If both `a` and `b` are `0`, the function returns `0`.
 

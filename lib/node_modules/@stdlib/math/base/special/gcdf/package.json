@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/gcdf",
   "version": "0.0.0",
-  "description": "Compute the greatest common divisor (gcd).",
+  "description": "Compute the greatest common divisor (gcd) of two single-precision floating-point numbers.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -76,7 +76,7 @@
     "scaffold": {
       "$schema": "math/base@v1.0",
       "base_alias": "gcd",
-      "alias": "gcd",
+      "alias": "gcdf",
       "pkg_desc": "compute the greatest common divisor (gcd)",
       "desc": "computes the greatest common divisor (gcd)",
       "short_desc": "greatest common divisor (gcd)",
@@ -87,8 +87,8 @@
           "type": {
             "javascript": "integer",
             "jsdoc": "integer",
-            "c": "double",
-            "dtype": "float64"
+            "c": "float",
+            "dtype": "float32"
           },
           "domain": [
             {
@@ -132,8 +132,8 @@
           "type": {
             "javascript": "integer",
             "jsdoc": "integer",
-            "c": "double",
-            "dtype": "float64"
+            "c": "float",
+            "dtype": "float32"
           },
           "domain": [
             {
@@ -177,8 +177,8 @@
         "type": {
           "javascript": "number",
           "jsdoc": "number",
-          "c": "double",
-          "dtype": "float64"
+          "c": "float",
+          "dtype": "float32"
         }
       },
       "keywords": [
