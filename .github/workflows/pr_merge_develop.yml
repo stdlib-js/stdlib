@@ -1,0 +1,115 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: pr_merge_develop
+
+# Workflow triggers:
+on:
+
+  # Allow the workflow to be triggered by other workflows
+  workflow_call:
+    # Define the input parameters for the workflow:
+    inputs:
+      pull_request_number:
+        description: 'PR number'
+        required: true
+        type: number
+
+    # Define the secrets accessible by the workflow:
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN:
+        description: 'GitHub token for stdlb-bot'
+        required: true
+      REPO_GITHUB_TOKEN:
+        description: 'GitHub token for accessing the repository'
+        required: true
+      STDLIB_BOT_GPG_PRIVATE_KEY:
+        description: 'GPG private key for stdlb-bot'
+        required: true
+      STDLIB_BOT_GPG_PASSPHRASE:
+        description: 'GPG passphrase for stdlb-bot'
+        required: true
+
+# Workflow jobs:
+jobs:
+  merge:
+    # Define a display name:
+    name: 'Merge Develop into PR Branch'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the job's steps:
+    steps:
+      # Get PR details:
+      - name: 'Get PR details'
+        id: pr-details
+        run: |
+          pr_response=$(curl -s \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}")
+
+          # Escape control characters:
+          pr_response=$(echo "$pr_response" | tr -d '\000-\031')
+
+          # Extract the needed details:
+          pr_branch=$(echo "$pr_response" | jq -r '.head.ref')
+          pr_repo_full_name=$(echo "$pr_response" | jq -r '.head.repo.full_name')
+
+          echo "branch=$pr_branch" >> $GITHUB_OUTPUT
+          echo "repository=$pr_repo_full_name" >> $GITHUB_OUTPUT
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          ref: ${{ steps.pr-details.outputs.branch }}
+          repository: ${{ steps.pr-details.outputs.repository }}
+          token: ${{ secrets.REPO_GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
+      # Import GPG key to sign commits:
+      - name: 'Import GPG key to sign commits'
+        # Pin action to full length commit SHA
+        uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
+        with:
+          gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
+      # Merge the develop branch into the PR branch:
+      - name: 'Merge develop branch'
+        env:
+          REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          USER_NAME: stdlb-bot
+          BRANCH_NAME: ${{ steps.pr-details.outputs.branch }}
+          REPO_NAME: ${{ steps.pr-details.outputs.repository }}
+        run: |
+          git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
+          git config --local user.name "stdlib-bot"
+          git fetch origin develop:develop
+          git merge develop --no-edit
+          git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/$REPO_NAME.git" $BRANCH_NAME

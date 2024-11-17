@@ -45,7 +45,7 @@ Similar to `time`, the returned `array` has format `[seconds, nanoseconds]`.
 
 <!-- /.usage -->
 
-<secton class="notes">
+<section class="notes">
 
 ## Notes
 
