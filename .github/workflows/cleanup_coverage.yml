@@ -1,0 +1,78 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: cleanup_coverage
+
+# Workflow triggers:
+on:
+
+  # Trigger the workflow when a pull request is closed (e.g., merged or closed without merging):
+  pull_request:
+    types:
+      - closed
+
+# Workflow jobs:
+jobs:
+
+  # Define a job to perform coverage cleanup...
+  cleanup:
+
+    # Define a display name:
+    name: 'Cleanup coverage'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Delete the 'pr-<number>' branch from the 'stdlib-js/www-test-code-coverage' repository:
+      - name: 'Delete coverage branch for PR'
+        env:
+          REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          curl -X DELETE -H "Authorization: token $REPO_GITHUB_TOKEN" \
+            "https://api.github.com/repos/stdlib-js/www-test-code-coverage/git/refs/heads/pr-${PR_NUMBER}" \
+            || echo "Branch pr-${PR_NUMBER} does not exist or could not be deleted."
+
+      # Find and update the '## Coverage Report' comment in the PR
+      - name: 'Update coverage comment in PR'
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+            });
+            const coverageComment = comments.find( comment => comment.body && comment.body.includes( '## Coverage Report' ) );
+            if ( coverageComment ) {
+              // Replace URLs with plain text in the coverage report comment body:
+              const updatedBody = coverageComment.body.replace( /<a href="[^"]+">([^<]+)<\/a>/g, '$1' );
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: coverageComment.id,
+                body: updatedBody,
+              });
+            } else {
+              console.log( 'No Coverage Report comment found.' );
+            }
