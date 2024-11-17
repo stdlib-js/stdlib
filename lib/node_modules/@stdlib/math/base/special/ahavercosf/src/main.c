@@ -21,10 +21,10 @@
 #include "stdlib/math/base/special/sqrtf.h"
 
 /**
-* Compute the inverse half value versed cosine of a single-precision floating-point number.
+* Computes the inverse half value versed cosine of a single-precision floating-point number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * float out = stdlib_base_ahavercosf( 0.0f );

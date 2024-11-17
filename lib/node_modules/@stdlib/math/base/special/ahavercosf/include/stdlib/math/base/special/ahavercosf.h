@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Compute the inverse half-value versed cosine of a single-precision floating-point number.
+* Computes the inverse half-value versed cosine of a single-precision floating-point number.
 */
 float stdlib_base_ahavercosf( const float x );
 
