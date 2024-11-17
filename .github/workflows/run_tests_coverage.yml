@@ -205,8 +205,8 @@ jobs:
               repo: context.repo.repo,
             });
 
-            const isBotComment = comments.find(comment => comment.user.login === 'stdlib-bot' && comment.body.includes('## Coverage Report'));
-            if (isBotComment) {
+            const botComment = comments.find( comment => comment.user.login === 'stdlib-bot' && comment.body.includes( '## Coverage Report' ) );
+            if ( botComment ) {
               await github.rest.issues.updateComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
