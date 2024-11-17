@@ -291,7 +291,7 @@ Interchanges two complex single-precision floating-point vectors.
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }; // interleaved real and imaginary components
 float y[] = { 5.0f, 6.0f, 7.0f, 8.0f };
 
-c_cswap( 2, (void *)x, 1, (void *)Y, 1 );
+c_cswap( 2, (void *)x, 1, (void *)y, 1 );
 ```
 
 The function accepts the following arguments:
