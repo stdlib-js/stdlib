@@ -178,7 +178,7 @@ jobs:
           if [ -z "$table" ]; then
             report="## Coverage Report\n\nNo coverage information available."
           else
-            if [ "${{ github.event_name }}" == "pull_request" ]; then
+            if [ "${{ github.event_name }}" == "pull_request_target" ]; then
               compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"
               compare_txt="The above coverage report was generated for the [changes in this PR]($compare_url)."
             elif [ "${{ github.event_name }}" == "push" ]; then
@@ -262,7 +262,7 @@ jobs:
         run: |
           cd ./www-test-code-coverage
 
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+          if [[ "${{ github.event_name }}" == "pull_request_target" ]]; then
             BRANCH_NAME="pr-${{ github.event.pull_request.number }}"
             git fetch origin $BRANCH_NAME || true
             git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME
