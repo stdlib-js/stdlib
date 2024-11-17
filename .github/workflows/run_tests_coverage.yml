@@ -131,11 +131,22 @@ jobs:
         if: github.event_name != 'workflow_dispatch'
         id: changed-directories
         continue-on-error: true
+        env:
+          STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:
-            ancestor_commit=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
-            files=$(git diff --diff-filter=AM --name-only $ancestor_commit ${{ github.event.pull_request.head.sha }})
+            page=1
+            files=""
+            while true; do
+                changed_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer $STDLIB_BOT_GITHUB_TOKEN" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ github.event.pull_request.number }}/files?page=$page&per_page=100" | jq -r '.[] | .filename')
+                if [ -z "$changed_files" ]; then
+                    break
+                fi
+                files="$files $changed_files"
+                page=$((page+1))
+            done
+            files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
           else
             # Get changed files by comparing the current commit to the commit before the push event or with its parent:
             if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then
