@@ -108,8 +108,18 @@ jobs:
           BRANCH_NAME: ${{ steps.pr-details.outputs.branch }}
           REPO_NAME: ${{ steps.pr-details.outputs.repository }}
         run: |
+          # Configure Git user:
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
-          git fetch origin develop:develop
-          git rebase develop
+
+          # Add upstream remote pointing to the original repository:
+          git remote add upstream https://github.com/stdlib-js/stdlib.git
+
+          # Fetch the develop branch from upstream:
+          git fetch upstream develop
+
+          # Rebase current branch onto upstream develop:
+          git rebase upstream/develop
+
+          # Force push the updated branch back to the forked repository:
           git push --force-with-lease "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/$REPO_NAME.git" $BRANCH_NAME
