@@ -23,7 +23,7 @@ name: cleanup_coverage
 on:
 
   # Trigger the workflow when a pull request is closed (e.g., merged or closed without merging):
-  pull_request:
+  pull_request_target:
     types:
       - closed
 
