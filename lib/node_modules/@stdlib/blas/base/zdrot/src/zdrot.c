@@ -32,47 +32,7 @@
 * @param s        sine of the angle of rotation
 */
 void API_SUFFIX(c_zdrot)( const CBLAS_INT N, void *ZX, const CBLAS_INT strideX, void *ZY, const CBLAS_INT strideY, const double c, const double s ) {
-	double *zx = (double *)ZX;
-	double *zy = (double *)ZY;
-	CBLAS_INT ix;
-	CBLAS_INT iy;
-	CBLAS_INT sx;
-	CBLAS_INT sy;
-	CBLAS_INT i;
-	CBLAS_INT j;
-	double tmp;
-
-	if ( N <= 0 ) {
-		return;
-	}
-	if ( strideX == 1 && strideY == 1 ) {
-		for ( i = 0; i < N*2; i += 2 ) {
-			tmp = ( c*zx[ i ] ) + ( s*zy[ i ] );
-			zy[ i ] = ( c*zy[ i ] ) - ( s*zx[ i ] );
-			zx[ i ] = tmp;
-
-			j = i + 1;
-			tmp = ( c*zx[ j ] ) + ( s*zy[ j ] );
-			zy[ j ] = ( c*zy[ j ] ) - ( s*zx[ j ] );
-			zx[ j ] = tmp;
-		}
-		return;
-	}
-	sx = strideX * 2;
-	sy = strideY * 2;
-	ix = stdlib_strided_stride2offset( N, strideX );
-	iy = stdlib_strided_stride2offset( N, strideY );
-	for ( i = 0; i < N; i++ ) {
-		tmp = ( c*zx[ ix ] ) + ( s*zy[ iy ] );
-		zy[ iy ] = ( c*zy[ iy ] ) - ( s*zx[ ix ] );
-		zx[ ix ] = tmp;
-
-		tmp = ( c*zx[ ix+1 ] ) + ( s*zy[ iy+1 ] );
-		zy[ iy+1 ] = ( c*zy[ iy+1 ] ) - ( s*zx[ ix+1 ] );
-		zx[ ix+1 ] = tmp;
-
-		ix += sx;
-		iy += sy;
-	}
-	return;
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(c_zdrot_ndarray)( N, ZX, strideX, ox, ZY, strideY, oy, c, s );
 }

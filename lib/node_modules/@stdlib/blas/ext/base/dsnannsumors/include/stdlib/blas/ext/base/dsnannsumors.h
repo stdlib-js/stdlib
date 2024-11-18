@@ -19,7 +19,7 @@
 #ifndef STDLIB_BLAS_EXT_BASE_DSNANNSUMORS_H
 #define STDLIB_BLAS_EXT_BASE_DSNANNSUMORS_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using ordinary recursive summation with extended accumulation, and returning an extended precision result.
 */
-double stdlib_strided_dsnannsumors( const int64_t N, const float *X, const int64_t stride, int64_t *n );
+double API_SUFFIX(stdlib_strided_dsnannsumors)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, CBLAS_INT *n );
+
+/**
+* Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values and using ordinary recursive summation with extended accumulation and alternative indexing semantics and returning an extended precision result.
+*/
+double API_SUFFIX(stdlib_strided_dsnannsumors_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, CBLAS_INT *n );
 
 #ifdef __cplusplus
 }
