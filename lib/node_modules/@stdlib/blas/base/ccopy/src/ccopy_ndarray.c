@@ -31,7 +31,7 @@
 * @param offsetY  starting index for Y
 */
 void API_SUFFIX(c_ccopy_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	float *x = (float *)X;
+	const float *x = (float *)X;
 	float *y = (float *)Y;
 	CBLAS_INT ix;
 	CBLAS_INT iy;
