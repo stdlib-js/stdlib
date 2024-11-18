@@ -245,7 +245,7 @@ Copies values from `X` into `Y`.
 const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }; // interleaved real and imaginary components
 float y[] = { 0.0f, 0.0f, 0.0f, 0.0f };
 
-c_ccopy( 2, (void *)x, 1, (void *)Y, 1 );
+c_ccopy( 2, (void *)x, 1, (void *)y, 1 );
 ```
 
 The function accepts the following arguments:
