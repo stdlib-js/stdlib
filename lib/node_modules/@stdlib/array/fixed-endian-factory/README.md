@@ -306,6 +306,65 @@ var v = arr.get( 0 );
 // returns 1.0
 ```
 
+<a name="method-for-each"></a>
+
+#### TypedArrayFE.prototype.forEach( callbackFn\[, thisArg] )
+
+Invokes a function once for each array element.
+
+```javascript
+function log( v, i ) {
+    console.log( '%s: %s', i.toString(), v.toString() );
+}
+
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', 3 );
+
+arr.set( 1.5, 0 );
+arr.set( 2.5, 1 );
+arr.set( 3.5, 2 );
+
+arr.forEach( log );
+/* =>
+    0: 1.5
+    1: 2.5
+    2: 3.5
+*/
+```
+
+The invoked function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function fcn( v, i ) {
+    this.count += 1;
+    console.log( '%s: %s', i.toString(), v.toString() );
+}
+
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', 3 );
+
+var context = {
+    'count': 0
+};
+
+arr.set( 1.0, 0 );
+arr.set( 2.0, 1 );
+arr.set( 3.0, 2 );
+
+arr.forEach( fcn, context );
+
+var count = context.count;
+// returns 3
+```
+
 <a name="method-get"></a>
 
 #### TypedArrayFE.prototype.get( i )
