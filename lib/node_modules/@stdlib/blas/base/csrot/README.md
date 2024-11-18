@@ -295,7 +295,7 @@ Applies a plane rotation.
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }; // interleaved real and imaginary components
 float y[] = { 5.0f, 6.0f, 7.0f, 8.0f };
 
-c_csrot( 2, (void *)x, 1, (void *)Y, 1, 0.8, 0.6 );
+c_csrot( 2, (void *)x, 1, (void *)y, 1, 0.8, 0.6 );
 ```
 
 The function accepts the following arguments:
