@@ -312,6 +312,33 @@ The function accepts the following arguments:
 void c_zdrot( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY, const double c, const double s );
 ```
 
+#### c_zdrot_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY, c, s )
+
+Applies a plane rotation using alternative indexing semantics.
+
+```c
+double x[] = { 1.0, 2.0, 3.0, 4.0 }; // interleaved real and imaginary components
+double y[] = { 5.0, 6.0, 7.0, 8.0 };
+
+c_zdrot_ndarray( 2, (void *)x, 1, 0, (void *)y, 1, 0, 0.8, 0.6 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **zx**: `[inout] void*` first input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `zx`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `zx`.
+-   **zy**: `[inout] void*` second input array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `zy`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `zy`.
+-   **c**: `[in] double` cosine of the angle of rotation.
+-   **s**: `[in] double` sine of the angle of rotation.
+
+```c
+void c_zdrot_ndarray( const CBLAS_INT N, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const double c, const double s );
+```
+
 </section>
 
 <!-- /.usage -->

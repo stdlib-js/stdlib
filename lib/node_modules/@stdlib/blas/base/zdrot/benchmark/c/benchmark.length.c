@@ -94,7 +94,7 @@ static double rand_double( void ) {
 * @param len          array length
 * @return elapsed time in seconds
 */
-static double benchmark( int iterations, int len ) {
+static double benchmark1( int iterations, int len ) {
 	double elapsed;
 	double x[ len*2 ];
 	double y[ len*2 ];
@@ -110,6 +110,41 @@ static double benchmark( int iterations, int len ) {
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		c_zdrot( len, (void *)x, 1, (void *)y, 1, 0.8, 0.6 );
+		if ( y[ 0 ] != y[ 0 ] ) {
+			printf( "should not return NaN\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( y[ 0 ] != y[ 0 ] ) {
+		printf( "should not return NaN\n" );
+	}
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @param iterations   number of iterations
+* @param len          array length
+* @return elapsed time in seconds
+*/
+static double benchmark2( int iterations, int len ) {
+	double elapsed;
+	double x[ len*2 ];
+	double y[ len*2 ];
+	double t;
+	int i;
+
+	for ( i = 0; i < len; i++ ) {
+		x[ i ] = ( rand_double()*10000.0 ) - 5000.0;
+		x[ i+1 ] = ( rand_double()*10000.0 ) - 5000.0;
+		y[ i ] = ( rand_double()*10000.0 ) - 5000.0;
+		y[ i+1 ] = ( rand_double()*10000.0 ) - 5000.0;
+	}
+	t = tic();
+	for ( i = 0; i < iterations; i++ ) {
+		c_zdrot_ndarray( len, (void *)x, 1, 0, (void *)y, 1, 0, 0.8, 0.6 );
 		if ( y[ 0 ] != y[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -144,7 +179,14 @@ int main( void ) {
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
 			printf( "# c::%s:len=%d\n", NAME, len );
-			elapsed = benchmark( iter, len );
+			elapsed = benchmark1( iter, len );
+			print_results( iter, elapsed );
+			printf( "ok %d benchmark finished\n", count );
+		}
+		for ( j = 0; j < REPEATS; j++ ) {
+			count += 1;
+			printf( "# c::%s:ndarray:len=%d\n", NAME, len );
+			elapsed = benchmark2( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}
