@@ -22,7 +22,7 @@ import cfloorf = require( './index' );
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns a complex number...
 {
 	cfloorf( new Complex64( 1.0, 2.0 ) ); // $ExpectType Complex64
 }

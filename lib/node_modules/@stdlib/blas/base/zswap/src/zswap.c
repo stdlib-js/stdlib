@@ -17,6 +17,8 @@
 */
 
 #include "stdlib/blas/base/zswap.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Interchanges two complex double-precision floating-point vectors.
@@ -27,50 +29,8 @@
 * @param Y        second input array
 * @param strideY  Y stride length
 */
-void c_zswap( const int N, void *X, const int strideX, void *Y, const int strideY ) {
-	double *x = (double *)X;
-	double *y = (double *)Y;
-	double tmp;
-	int ix;
-	int iy;
-	int i;
-
-	if ( N <= 0 ) {
-		return;
-	}
-	if ( strideX == 1 && strideY == 1 ) {
-		for ( i = 0; i < N*2; i += 2 ) {
-			tmp = x[ i ];
-			x[ i ] = y[ i ];
-			y[ i ] = tmp;
-
-			tmp = x[ i+1 ];
-			x[ i+1 ] = y[ i+1 ];
-			y[ i+1 ] = tmp;
-		}
-		return;
-	}
-	if ( strideX < 0 ) {
-		ix = 2 * ( 1-N ) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = 2 * ( 1-N ) * strideY;
-	} else {
-		iy = 0;
-	}
-	for ( i = 0; i < N; i++ ) {
-		tmp = x[ ix ];
-		x[ ix ] = y[ iy ];
-		y[ iy ] = tmp;
-
-		tmp = x[ ix+1 ];
-		x[ ix+1 ] = y[ iy+1 ];
-		y[ iy+1 ] = tmp;
-
-		ix += strideX * 2;
-		iy += strideY * 2;
-	}
-	return;
+void API_SUFFIX(c_zswap)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(c_zswap_ndarray)( N, X, strideX, ox, Y, strideY, oy );
 }

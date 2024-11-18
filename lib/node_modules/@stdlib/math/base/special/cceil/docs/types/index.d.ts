@@ -23,7 +23,7 @@
 import { Complex128 } from '@stdlib/types/complex';
 
 /**
-* Rounds a double-precision complex floating-point number toward positive infinity.
+* Rounds each component of a double-precision complex floating-point number toward positive infinity.
 *
 * @param z - input value
 * @returns result

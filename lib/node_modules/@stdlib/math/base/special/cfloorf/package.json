@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/cfloorf",
   "version": "0.0.0",
-  "description": "Round a single-precision complex floating-point number toward negative infinity.",
+  "description": "Round each component of a single-precision complex floating-point number toward negative infinity.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
