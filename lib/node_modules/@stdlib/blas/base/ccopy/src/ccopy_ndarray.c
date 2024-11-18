@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -17,23 +17,7 @@
 */
 
 #include "stdlib/blas/base/ccopy.h"
-#include "stdlib/blas/base/ccopy_cblas.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/complex/float32/ctor.h"
-#include "stdlib/strided/base/min_view_buffer_index.h"
-
-/**
-* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
-*
-* @param N        number of indexed elements
-* @param X        input array
-* @param strideX  X stride length
-* @param Y        output array
-* @param strideY  Y stride length
-*/
-void API_SUFFIX(c_ccopy)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
-	API_SUFFIX(cblas_ccopy)( N, X, strideX, Y, strideY );
-}
 
 /**
 * Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector using alternative indexing semantics.
@@ -47,11 +31,26 @@ void API_SUFFIX(c_ccopy)( const CBLAS_INT N, const void *X, const CBLAS_INT stri
 * @param offsetY  starting index for Y
 */
 void API_SUFFIX(c_ccopy_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	stdlib_complex64_t *x = (stdlib_complex64_t *)X;
-	stdlib_complex64_t *y = (stdlib_complex64_t *)Y;
+	float *x = (float *)X;
+	float *y = (float *)Y;
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT sx;
+	CBLAS_INT sy;
+	CBLAS_INT i;
 
-	x += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
-	y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
-
-	API_SUFFIX(cblas_ccopy)( N, (void *)x, strideX, (void *)y, strideY );
+	if ( N <= 0 ) {
+		return;
+	}
+	sx = strideX * 2;
+	sy = strideY * 2;
+	ix = offsetX * 2;
+	iy = offsetY * 2;
+	for ( i = 0; i < N; i++ ) {
+		y[ iy ] = x[ ix ];
+		y[ iy+1 ] = x[ ix+1 ];
+		ix += sx;
+		iy += sy;
+	}
+	return;
 }

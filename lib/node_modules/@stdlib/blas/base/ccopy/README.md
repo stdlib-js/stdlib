@@ -260,6 +260,31 @@ The function accepts the following arguments:
 void c_ccopy( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
 ```
 
+#### c_ccopy_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
+
+Copies values from `X` into `Y` using alternative indexing semantics.
+
+```c
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }; // interleaved real and imaginary components
+float y[] = { 0.0f, 0.0f, 0.0f, 0.0f };
+
+c_ccopy_ndarray( 2, (void *)x, 1, 0, (void *)y, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[out] void*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+void c_ccopy_ndarray( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -296,6 +321,14 @@ int main( void ) {
 
     // Copy elements:
     c_ccopy( N, (void *)x, strideX, (void *)y, strideY );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "y[ %i ] = %f + %fj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
+    }
+
+    // Copy elements using alternative indexing semantics:
+    c_ccopy_ndarray( N, (void *)x, -strideX, N-1, (void *)y, strideY, N-1 );
 
     // Print the result:
     for ( int i = 0; i < N; i++ ) {
