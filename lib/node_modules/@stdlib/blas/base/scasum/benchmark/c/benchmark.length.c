@@ -94,7 +94,7 @@ static float rand_float( void ) {
 * @param len          array length
 * @return elapsed time in seconds
 */
-static double benchmark( int iterations, int len ) {
+static double benchmark1( int iterations, int len ) {
 	float cx[ len*2 ];
 	double elapsed;
 	float out;
@@ -109,6 +109,40 @@ static double benchmark( int iterations, int len ) {
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		out = c_scasum( len, (void *)cx, 1 );
+		if ( out != out ) {
+			printf( "should not return NaN\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( out != out ) {
+		printf( "should not return NaN\n" );
+	}
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @param iterations   number of iterations
+* @param len          array length
+* @return elapsed time in seconds
+*/
+static double benchmark2( int iterations, int len ) {
+	float cx[ len*2 ];
+	double elapsed;
+	float out;
+	double t;
+	int i;
+
+	for ( i = 0; i < len*2; i += 2 ) {
+		cx[ i ] = ( rand_float()*10000.0f ) - 5000.0f;
+		cx[ i+1 ] = ( rand_float()*10000.0f ) - 5000.0f;
+	}
+	out = 0.0f;
+	t = tic();
+	for ( i = 0; i < iterations; i++ ) {
+		out = c_scasum_ndarray( len, (void *)cx, 1, 0 );
 		if ( out != out ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -143,7 +177,14 @@ int main( void ) {
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
 			printf( "# c::%s:len=%d\n", NAME, len );
-			elapsed = benchmark( iter, len );
+			elapsed = benchmark1( iter, len );
+			print_results( iter, elapsed );
+			printf( "ok %d benchmark finished\n", count );
+		}
+		for ( j = 0; j < REPEATS; j++ ) {
+			count += 1;
+			printf( "# c::%s:ndarray:len=%d\n", NAME, len );
+			elapsed = benchmark2( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}
