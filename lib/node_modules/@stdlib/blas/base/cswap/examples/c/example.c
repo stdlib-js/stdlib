@@ -31,8 +31,17 @@ int main( void ) {
 	const int strideX = 1;
 	const int strideY = -1;
 
-	// Copy elements:
+	// Swap elements:
 	c_cswap( N, (void *)x, strideX, (void *)y, strideY );
+
+	// Print the result:
+	for ( int i = 0; i < N; i++ ) {
+		printf( "x[ %i ] = %f + %fj\n", i, x[ i*2 ], x[ (i*2)+1 ] );
+		printf( "y[ %i ] = %f + %fj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
+	}
+
+	// Swap elements using alternative indexing semantics:
+	c_cswap_ndarray( N, (void *)x, -strideX, N-1, (void *)y, strideY, N-1 );
 
 	// Print the result:
 	for ( int i = 0; i < N; i++ ) {

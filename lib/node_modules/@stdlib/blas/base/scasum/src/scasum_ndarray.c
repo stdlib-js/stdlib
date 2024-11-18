@@ -18,16 +18,32 @@
 
 #include "stdlib/blas/base/scasum.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/math/base/special/absf.h"
 
 /**
-* Computes the sum of the absolute values of the real and imaginary components of a single-precision complex floating-point vector.
+* Computes the sum of the absolute values of the real and imaginary components of a single-precision complex floating-point vector using alternative indexing semantics.
 *
 * @param N         number of indexed elements
 * @param CX        input array
 * @param strideX   CX stride length
+* @param offsetX   starting index for CX
 */
-float API_SUFFIX(c_scasum)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX ) {
-	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	return API_SUFFIX(c_scasum_ndarray)( N, CX, strideX, ox );
+float API_SUFFIX(c_scasum_ndarray)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	float *x = (float *)CX;
+	float stemp;
+	CBLAS_INT sx;
+	CBLAS_INT ix;
+	CBLAS_INT i;
+
+	if ( N <= 0 ) {
+		return 0.0f;
+	}
+	stemp = 0.0f;
+	sx = strideX * 2;
+	ix = offsetX * 2;
+	for( i = 0; i < N; i++ ) {
+		stemp += stdlib_base_absf( x[ix] ) + stdlib_base_absf( x[ix+1] );
+		ix += sx;
+	}
+	return stemp;
 }
