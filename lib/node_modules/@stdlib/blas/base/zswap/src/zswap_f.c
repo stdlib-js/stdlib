@@ -18,6 +18,9 @@
 
 #include "stdlib/blas/base/zswap.h"
 #include "stdlib/blas/base/zswap_fortran.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Interchanges two complex double-precision floating-point vectors.
@@ -28,6 +31,26 @@
 * @param Y        second input array
 * @param strideY  Y stride length
 */
-void c_zswap( const int N, void *X, const int strideX, void *Y, const int strideY ) {
+void API_SUFFIX(c_zswap)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
 	zswap( &N, X, &strideX, Y, &strideY );
+}
+
+/**
+* Interchanges two complex double-precision floating-point vectors using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        first input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y        second input array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
+*/
+void API_SUFFIX(c_zswap_ndarray)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+	stdlib_complex128_t *zx = (stdlib_complex128_t *)X;
+	stdlib_complex128_t *zy = (stdlib_complex128_t *)Y;
+
+	zx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	zy += stdlib_strided_min_view_buffer_index( N, strideY, offsetY );
+	zswap( &N, (void *)zx, &strideX, (void *)zy, &strideY );
 }
