@@ -30,7 +30,7 @@
 *
 * @example
 * var y = bernoulli( 1 );
-* // returns 0.0
+* // returns 0.5
 *
 * @example
 * var y = bernoulli( 2 );

@@ -1,0 +1,13 @@
+
+{{alias}}
+    The minimum base 10 exponent for a normalized single-precision floating-
+    point number.
+
+    Examples
+    --------
+    > {{alias}}
+    -37
+
+    See Also
+    --------
+

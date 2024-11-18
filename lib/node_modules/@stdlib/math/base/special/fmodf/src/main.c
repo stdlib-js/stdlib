@@ -38,7 +38,10 @@
 #include "stdlib/constants/float32/exponent_mask.h"
 #include "stdlib/constants/float32/exponent_bias.h"
 #include "stdlib/constants/float32/min_base2_exponent.h"
+#include "stdlib/constants/float32/precision.h"
 #include <stdint.h>
+
+static const float ZERO[] = { 0.0f, -0.0f };
 
 /**
 * Evaluates the modulus function for single-precision floating-point numbers.
@@ -52,7 +55,6 @@
 * // returns 2.9f
 */
 float stdlib_base_fmodf( const float x, const float y ) {
-	const float ZERO[] = { 0.0f, -0.0f };
 	uint32_t uhx;
 	uint32_t uhy;
 	int32_t hx;
@@ -101,7 +103,7 @@ float stdlib_base_fmodf( const float x, const float y ) {
 			ix -= 1;
 		}
 	} else {
-		ix = ( hx >> 23 ) - STDLIB_CONSTANT_FLOAT32_EXPONENT_BIAS;
+		ix = ( hx >> ( STDLIB_CONSTANT_FLOAT32_PRECISION - 1 ) ) - STDLIB_CONSTANT_FLOAT32_EXPONENT_BIAS;
 	}
 
 	// determine iy = ilogb(y)
@@ -111,7 +113,9 @@ float stdlib_base_fmodf( const float x, const float y ) {
 		for ( i = ( hy << 8 ); i >= 0; i <<= 1 ) {
 			iy -= 1;
 		}
-	} else iy = ( hy >> 23 ) - STDLIB_CONSTANT_FLOAT32_EXPONENT_BIAS;
+	} else {
+		iy = ( hy >> ( STDLIB_CONSTANT_FLOAT32_PRECISION - 1 ) ) - STDLIB_CONSTANT_FLOAT32_EXPONENT_BIAS;
+	}
 
 	// set up {hx,lx}, {hy,ly} and align y to x
 	if ( ix >= STDLIB_CONSTANT_FLOAT32_MIN_BASE2_EXPONENT ) {
@@ -160,7 +164,7 @@ float stdlib_base_fmodf( const float x, const float y ) {
 	}
 	if ( iy >= STDLIB_CONSTANT_FLOAT32_MIN_BASE2_EXPONENT ) {
 		// normalize output
-		hx = ( ( hx - 0x00800000 ) | ( ( iy + STDLIB_CONSTANT_FLOAT32_EXPONENT_BIAS ) << 23 ) );
+		hx = ( ( hx - 0x00800000 ) | ( ( iy + STDLIB_CONSTANT_FLOAT32_EXPONENT_BIAS ) << ( STDLIB_CONSTANT_FLOAT32_PRECISION - 1 ) ) );
 		stdlib_base_float32_from_word( (uint32_t)( hx | sx ), &xc );
 	} else {
 		// subnormal output
