@@ -194,6 +194,28 @@ The function accepts the following arguments:
 float c_scasum( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX );
 ```
 
+#### c_scasum_ndarray( N, \*CX, strideX, offsetX )
+
+Computes the sum of the absolute values of the real and imaginary components of a single-precision complex floating-point vector using alternative indexing semantics.
+
+```c
+const float cx[] = { 0.3f, 0.1f, 0.5f, 0.0f, 0.0f, 0.5f, 0.0f, 0.2f };
+
+float out = c_scasum_ndarray( 4, (void *)cx, 1, 0 );
+// returns 1.6f
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **CX**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `CX`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `CX`.
+
+```c
+float c_scasum_ndarray( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX );  
+```
+
 </section>
 
 <!-- /.usage -->
@@ -228,6 +250,12 @@ int main( void ) {
 
     // Compute the sum of the absolute values of real and imaginary components:
     float out = c_scasum( N, (void *)cx, strideX );
+
+    // Print the result:
+    printf( "out: %f\n", out );
+
+    // Compute the sum of the absolute values of real and imaginary components using alternative indexing semantics:
+    out = c_scasum_ndarray( N, (void *)cx, -strideX, N-1 );
 
     // Print the result:
     printf( "out: %f\n", out );
