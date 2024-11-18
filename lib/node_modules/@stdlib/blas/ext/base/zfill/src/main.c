@@ -19,54 +19,70 @@
 #include "stdlib/blas/ext/base/zfill.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/strided/base/stride2offset.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Fills a double-precision complex floating-point strided array with a specified scalar constant.
 *
-* @param N       number of indexed elements
-* @param alpha   scalar constant
-* @param X       input array
-* @param stride  index increment
+* @param N        number of indexed elements
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  strided length
 */
-void c_zfill( const int64_t N, const stdlib_complex128_t alpha, stdlib_complex128_t *X, const int64_t stride ) {
-	int64_t ix;
-	int64_t m;
-	int64_t i;
+void API_SUFFIX(stdlib_strided_zfill)( const CBLAS_INT N, const stdlib_complex128_t alpha, stdlib_complex128_t *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	API_SUFFIX(stdlib_strided_zfill_ndarray)( N, alpha, X, strideX, ox );
+}
+
+/**
+* Fills a double-precision complex floating-point strided array with a specified scalar constant using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  index increment
+* @param offsetX  starting index
+*/
+void API_SUFFIX(stdlib_strided_zfill_ndarray)( const CBLAS_INT N, const stdlib_complex128_t alpha, stdlib_complex128_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT m;
+	CBLAS_INT i;
 
 	if ( N <= 0 ) {
 		return;
 	}
+	ix = offsetX;
 
 	// Use loop unrolling if the stride is equal to `1`...
-	if ( stride == 1 ) {
+	if ( strideX == 1 ) {
 		m = N % 8;
 
 		// If we have a remainder, run a clean-up loop...
 		if ( m > 0 ) {
 			for ( i = 0; i < m; i++ ) {
-				X[ i ] = alpha;
+				X[ ix ] = alpha;
+				ix += strideX;
 			}
 		}
 		if ( N < 8 ) {
 			return;
 		}
 		for ( i = m; i < N; i += 8 ) {
-			X[ i ] = alpha;
-			X[ i+1 ] = alpha;
-			X[ i+2 ] = alpha;
-			X[ i+3 ] = alpha;
-			X[ i+4 ] = alpha;
-			X[ i+5 ] = alpha;
-			X[ i+6 ] = alpha;
-			X[ i+7 ] = alpha;
+			X[ ix ] = alpha;
+			X[ ix+1 ] = alpha;
+			X[ ix+2 ] = alpha;
+			X[ ix+3 ] = alpha;
+			X[ ix+4 ] = alpha;
+			X[ ix+5 ] = alpha;
+			X[ ix+6 ] = alpha;
+			X[ ix+7 ] = alpha;
+			ix += 8;
 		}
 		return;
 	}
-	ix = stdlib_strided_stride2offset( N, stride );
 	for ( i = 0; i < N; i++ ) {
 		X[ ix ] = alpha;
-		ix += stride;
+		ix += strideX;
 	}
 	return;
 }

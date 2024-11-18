@@ -18,7 +18,6 @@
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
-    "include": "./include",
     "lib": "./lib",
     "test": "./test"
   },

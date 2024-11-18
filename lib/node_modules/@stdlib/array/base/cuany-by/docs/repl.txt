@@ -55,6 +55,9 @@
     predicate: Function
         Predicate function.
 
+    thisArg: any (optional)
+        Execution context.
+
     Returns
     -------
     y: ArrayLikeObject

@@ -25,7 +25,7 @@ options( digits = 16L );
 #' main();
 main <- function() {
 	# Define benchmark parameters:
-	name <- "erf";
+	name <- 'erf';
 	iterations <- 1000000L;
 	repeats <- 3L;
 
@@ -34,7 +34,7 @@ main <- function() {
 	#' @examples
 	#' print_version();
 	print_version <- function() {
-		cat( "TAP version 13\n" );
+		cat( 'TAP version 13\n' );
 	}
 
 	#' Print the TAP summary.
@@ -45,12 +45,12 @@ main <- function() {
 	#' @examples
 	#' print_summary( 3, 3 );
 	print_summary <- function( total, passing ) {
-		cat( "#\n" );
-		cat( paste0( "1..", total, "\n" ) ); # TAP plan
-		cat( paste0( "# total ", total, "\n" ) );
-		cat( paste0( "# pass  ", passing, "\n" ) );
-		cat( "#\n" );
-		cat( "# ok\n" );
+		cat( '#\n' );
+		cat( paste0( '1..', total, '\n' ) ); # TAP plan
+		cat( paste0( '# total ', total, '\n' ) );
+		cat( paste0( '# pass  ', passing, '\n' ) );
+		cat( '#\n' );
+		cat( '# ok\n' );
 	}
 
 	#' Print benchmark results.
@@ -62,11 +62,11 @@ main <- function() {
 	#' print_results( 10000L, 0.131009101868 );
 	print_results <- function( iterations, elapsed ) {
 		rate <- iterations / elapsed;
-		cat( "  ---\n" );
-		cat( paste0( "  iterations: ", iterations, "\n" ) );
-		cat( paste0( "  elapsed: ", elapsed, "\n" ) );
-		cat( paste0( "  rate: ", rate, "\n" ) );
-		cat( "  ...\n" );
+		cat( '  ---\n' );
+		cat( paste0( '  iterations: ', iterations, '\n' ) );
+		cat( paste0( '  elapsed: ', elapsed, '\n' ) );
+		cat( paste0( '  rate: ', rate, '\n' ) );
+		cat( '  ...\n' );
 	}
 
 	#' Error function.
@@ -96,10 +96,10 @@ main <- function() {
 	#' elapsed <- benchmark( 10000L );
 	benchmark <- function( iterations ) {
 		# Run the benchmarks:
-		results <- microbenchmark::microbenchmark( erf( (1000.0*runif(1)) - 500.0 ), times = iterations );
+		results <- microbenchmark::microbenchmark( erf( (2.0*runif(1L)) - 1.0 ), times = iterations );
 
 		# Sum all the raw timing results to get a total "elapsed" time:
-		elapsed <- sum( results$time );
+		elapsed <- sum( results[[ 'time' ]] );
 
 		# Convert the elapsed time from nanoseconds to seconds:
 		elapsed <- elapsed / 1.0e9;
@@ -108,11 +108,11 @@ main <- function() {
 	}
 
 	print_version();
-	for ( i in 1:repeats ) {
-		cat( paste0( "# r::", name, "\n" ) );
+	for ( i in 1L:repeats ) {
+		cat( paste0( '# r::', name, '\n' ) );
 		elapsed <- benchmark( iterations );
 		print_results( iterations, elapsed );
-		cat( paste0( "ok ", i, " benchmark finished", "\n" ) );
+		cat( paste0( 'ok ', i, ' benchmark finished', '\n' ) );
 	}
 	print_summary( repeats, repeats );
 }

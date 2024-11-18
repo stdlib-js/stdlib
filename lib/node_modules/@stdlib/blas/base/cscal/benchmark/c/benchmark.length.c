@@ -95,7 +95,7 @@ static float rand_float( void ) {
 * @param len          array length
 * @return elapsed time in seconds
 */
-static double benchmark( int iterations, int len ) {
+static double benchmark1( int iterations, int len ) {
 	stdlib_complex64_t ca;
 	float cx[ len*2 ];
 	double elapsed;
@@ -110,6 +110,40 @@ static double benchmark( int iterations, int len ) {
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		c_cscal( len, ca, (void *)cx, 1 );
+		if ( cx[ 0 ] != cx[ 0 ] ) {
+			printf( "should not return NaN\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( cx[ 0 ] != cx[ 0 ] ) {
+		printf( "should not return NaN\n" );
+	}
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @param iterations   number of iterations
+* @param len          array length
+* @return elapsed time in seconds
+*/
+static double benchmark2( int iterations, int len ) {
+	stdlib_complex64_t ca;
+	float cx[ len*2 ];
+	double elapsed;
+	double t;
+	int i;
+
+	ca = stdlib_complex64( 1.0f, 0.0f );
+	for ( i = 0; i < len*2; i += 2 ) {
+		cx[ i ] = ( rand_float()*2.0f ) - 1.0f;
+		cx[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
+	}
+	t = tic();
+	for ( i = 0; i < iterations; i++ ) {
+		c_cscal_ndarray( len, ca, (void *)cx, 1, 0 );
 		if ( cx[ 0 ] != cx[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -144,7 +178,14 @@ int main( void ) {
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
 			printf( "# c::%s:len=%d\n", NAME, len );
-			elapsed = benchmark( iter, len );
+			elapsed = benchmark1( iter, len );
+			print_results( iter, elapsed );
+			printf( "ok %d benchmark finished\n", count );
+		}
+		for ( j = 0; j < REPEATS; j++ ) {
+			count += 1;
+			printf( "# c::%s:ndarray:len=%d\n", NAME, len );
+			elapsed = benchmark2( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}

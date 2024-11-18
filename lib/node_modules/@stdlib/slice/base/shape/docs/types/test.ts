@@ -22,7 +22,7 @@ import sliceShape = require( './index' );
 
 // TESTS //
 
-// The function returns a number...
+// The function returns an array of numbers...
 {
 	sliceShape( new MultiSlice( null, null ) ); // $ExpectType number[]
 	sliceShape( new MultiSlice( null, null, null ) ); // $ExpectType number[]

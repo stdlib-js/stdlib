@@ -109,7 +109,7 @@ interface CusomeByRight {
 	* var x = [ 1, 1, 0, 0, 0 ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
 	*
-	* var arr = cusomeByRight.assign( x, 2, y, 2, 0, fcn );,
+	* var arr = cusomeByRight.assign( x, 2, y, 2, 0, fcn );
 	* // returns [ false, null, false, null, false, null, false, null, true, null ];
 	*/
 	assign<T = unknown, U = unknown, V = unknown>( x: Collection<T> | AccessorArrayLike<T>, n: number, out: Array<U>, stride: number, offset: number, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): Array<U | boolean>;
@@ -162,7 +162,7 @@ interface CusomeByRight {
 	* var x = [ 1, 1, 0, 0, 0 ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
 	*
-	* var arr = cusomeByRight.assign( x, 2, y, 2, 0, fcn );,
+	* var arr = cusomeByRight.assign( x, 2, y, 2, 0, fcn );
 	* // returns [ false, null, false, null, false, null, false, null, true, null ];
 	*/
 	assign<T = unknown, U = unknown, V = unknown>( x: Collection<T> | AccessorArrayLike<T>, n: number, out: Collection<U> | AccessorArrayLike<U>, stride: number, offset: number, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): Collection<U | boolean> | AccessorArrayLike<U | boolean>;

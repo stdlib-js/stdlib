@@ -125,14 +125,14 @@ import sliceDimensionTo = require( './index' );
 	sliceDimensionTo( x, 1, {} ); // $ExpectError
 	sliceDimensionTo( x, 1, ( x: number ): number => x, 1 ); // $ExpectError
 
-	sliceDimensionTo( x, 1, '5', {}; // $ExpectError
-	sliceDimensionTo( x, 1, false, {}; // $ExpectError
-	sliceDimensionTo( x, 1, true, {}; // $ExpectError
-	sliceDimensionTo( x, 1, null, {}; // $ExpectError
-	sliceDimensionTo( x, 1, undefined, {}; // $ExpectError
-	sliceDimensionTo( x, 1, [ '5' ], {}; // $ExpectError
-	sliceDimensionTo( x, 1, {}, {}; // $ExpectError
-	sliceDimensionTo( x, 1, ( x: number ): number => x, {}; // $ExpectError
+	sliceDimensionTo( x, 1, '5', {} ); // $ExpectError
+	sliceDimensionTo( x, 1, false, {} ); // $ExpectError
+	sliceDimensionTo( x, 1, true, {} ); // $ExpectError
+	sliceDimensionTo( x, 1, null, {} ); // $ExpectError
+	sliceDimensionTo( x, 1, undefined, {} ); // $ExpectError
+	sliceDimensionTo( x, 1, [ '5' ], {} ); // $ExpectError
+	sliceDimensionTo( x, 1, {}, {} ); // $ExpectError
+	sliceDimensionTo( x, 1, ( x: number ): number => x, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not an object...

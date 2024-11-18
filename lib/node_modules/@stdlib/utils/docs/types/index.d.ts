@@ -473,7 +473,7 @@ interface Namespace {
 	*
 	* -   Key iteration order is *not* guaranteed, and, thus, result order is *not* guaranteed.
 	*
-	* @param input object
+	* @param obj - input object
 	* @param options - function options
 	* @param options.thisArg - execution context
 	* @param options.returns - if `'values'`, values are returned; if `'keys'`, keys are returned; if `'*'`, both keys and values are returned (default: 'values')

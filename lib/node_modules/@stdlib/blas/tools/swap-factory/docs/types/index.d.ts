@@ -61,6 +61,7 @@ type SwapFunction = ( x: ndarray, y: ndarray, dim?: number ) => ndarray;
 *
 * @param base - "base" function which interchanges two vectors
 * @param dtype - array data type
+* @returns function wrapper
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );

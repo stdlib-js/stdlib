@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,6 +28,7 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
         "./src/trunc.c"
       ],
@@ -43,6 +45,7 @@
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
         "./src/trunc.c"
       ],
@@ -57,6 +60,22 @@
     },
     {
       "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/trunc.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "build",
+      "wasm": true,
       "src": [
         "./src/trunc.c"
       ],

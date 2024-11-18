@@ -40,4 +40,12 @@ int main( void ) {
 	for ( int i = 0; i < N; i++ ) {
 		printf( "cx[ %i ] = %f + %fj\n", i, cx[ i*2 ], cx[ (i*2)+1 ] );
 	}
+
+	// Scale the elements of the array:
+	c_cscal_ndarray( N, ca, (void *)cx, -strideX, 3 );
+
+	// Print the result:
+	for ( int i = 0; i < N; i++ ) {
+		printf( "cx[ %i ] = %f + %fj\n", i, cx[ i*2 ], cx[ (i*2)+1 ] );
+	}
 }

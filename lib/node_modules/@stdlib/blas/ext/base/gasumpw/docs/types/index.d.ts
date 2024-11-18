@@ -38,7 +38,7 @@ interface Routine {
 	* var x = [ 1.0, -2.0, 2.0 ];
 	*
 	* var v = gasumpw( x.length, x, 1 );
-	* // returns 1.0
+	* // returns 5.0
 	*/
 	( N: number, x: NumericArray, stride: number ): number;
 
@@ -55,7 +55,7 @@ interface Routine {
 	* var x = [ 1.0, -2.0, 2.0 ];
 	*
 	* var v = gasumpw.ndarray( x.length, x, 1, 0 );
-	* // returns 1.0
+	* // returns 5.0
 	*/
 	ndarray( N: number, x: NumericArray, stride: number, offset: number ): number;
 }
@@ -72,13 +72,13 @@ interface Routine {
 * var x = [ 1.0, -2.0, 2.0 ];
 *
 * var v = gasumpw( x.length, x, 1 );
-* // returns 1.0
+* // returns 5.0
 *
 * @example
 * var x = [ 1.0, -2.0, 2.0 ];
 *
 * var v = gasumpw.ndarray( x.length, x, 1, 0 );
-* // returns 1.0
+* // returns 5.0
 */
 declare var gasumpw: Routine;
 

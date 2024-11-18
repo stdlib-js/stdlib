@@ -76,7 +76,7 @@ jobs:
 
       # Post commit message as PR comment:
       - name: 'Post commit message as PR comment'
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v4
         with:
           token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           issue-number: ${{ github.event.pull_request.number }}

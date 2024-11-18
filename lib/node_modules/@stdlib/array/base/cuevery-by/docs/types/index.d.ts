@@ -107,7 +107,7 @@ interface CuEveryBy {
 	* var x = [ 1, 1, 0, 0, 0 ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
 	*
-	* var arr = cueveryBy.assign( x, y, 2, 0, isPositive );,
+	* var arr = cueveryBy.assign( x, y, 2, 0, isPositive );
 	* // returns [ true, null, true, null, false, null, false, null, false, null ];
 	*/
 	assign<T = unknown, U = unknown, V = unknown>( x: Collection<T> | AccessorArrayLike<T>, out: Array<U>, stride: number, offset: number, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): Array<U | boolean>;
@@ -158,11 +158,10 @@ interface CuEveryBy {
 	* var x = [ 1, 1, 0, 0, 0 ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
 	*
-	* var arr = cueveryBy.assign( x, y, 2, 0, isPositive );,
+	* var arr = cueveryBy.assign( x, y, 2, 0, isPositive );
 	* // returns [ true, null, true, null, false, null, false, null, false, null ];
 	*/
 	assign<T = unknown, U = unknown, V = unknown>( x: Collection<T> | AccessorArrayLike<T>, out: Collection<U> | AccessorArrayLike<U>, stride: number, offset: number, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): Collection<U | boolean> | AccessorArrayLike<U | boolean>;
-
 }
 
 /**

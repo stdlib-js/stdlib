@@ -311,7 +311,7 @@ interface Namespace {
 	* Inserts supplied variable values into a format string.
 	*
 	* @param str - input string
-	* @param ...args - variable values
+	* @param args - variable values
 	* @throws invalid flags
 	* @returns formatted string
 	*

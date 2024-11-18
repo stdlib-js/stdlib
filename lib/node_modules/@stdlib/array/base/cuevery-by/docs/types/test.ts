@@ -44,8 +44,9 @@ const isPositive = ( v: number ): boolean => {
 	cueveryBy( {}, isPositive ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a second argument which is not function...
 {
+	cueveryBy( [ 1, 2, 3, 4 ], 1 ); // $ExpectError
 	cueveryBy( [], 1 ); // $ExpectError
 	cueveryBy( [], true ); // $ExpectError
 	cueveryBy( [], false ); // $ExpectError
