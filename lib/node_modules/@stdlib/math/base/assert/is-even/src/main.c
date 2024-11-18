@@ -20,7 +20,7 @@
 #include "stdlib/math/base/assert/is_integer.h"
 
 /**
-* Test if a finite numeric value is an even number.
+* Tests if a finite numeric value is an even number.
 *
 * @param x    input value
 * @return	  output value
@@ -32,5 +32,5 @@
 * // returns false
 */
 bool stdlib_base_is_even( const double x ) {
-    return stdlib_base_is_integer( x/2.0 );
+	return stdlib_base_is_integer( x / 2.0 );
 }

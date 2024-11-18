@@ -1,0 +1,13 @@
+
+{{alias}}
+    The maximum base 10 exponent for a subnormal single-precision floating-point
+    number.
+
+    Examples
+    --------
+    > {{alias}}
+    -38
+
+    See Also
+    --------
+
