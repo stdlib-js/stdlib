@@ -46,7 +46,7 @@
 *
 * @param x    dividend
 * @param y    divisor
-* @return    remainder
+* @return     remainder
 *
 * @example
 * double out = stdlib_base_fmod( 8.9, 3.0 );

@@ -77,8 +77,9 @@ interface ModuleConstructor {
 	* var viewX = zeros( N, dtype );
 	* var viewY = zeros( N, dtype );
 	* mod.read( xptr, viewX );
-	* mod.read( yptr, viewY );
 	* // viewX => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
+	*
+	* mod.read( yptr, viewY );
 	* // viewY => <Float64Array>[ -1.0, -2.0, -3.0, -4.0, -5.0 ]
 	*/
 	new( mem: Memory ): Module; // newable
@@ -134,8 +135,9 @@ interface ModuleConstructor {
 	* var viewX = zeros( N, dtype );
 	* var viewY = zeros( N, dtype );
 	* mod.read( xptr, viewX );
-	* mod.read( yptr, viewY );
 	* // viewX => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
+	*
+	* mod.read( yptr, viewY );
 	* // viewY => <Float64Array>[ -1.0, -2.0, -3.0, -4.0, -5.0 ]
 	*/
 	( mem: Memory ): Module; // callable
@@ -202,8 +204,9 @@ interface Module extends ModuleWrapper {
 	* var viewX = zeros( N, dtype );
 	* var viewY = zeros( N, dtype );
 	* mod.read( xptr, viewX );
-	* mod.read( yptr, viewY );
 	* // viewX => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
+	*
+	* mod.read( yptr, viewY );
 	* // viewY => <Float64Array>[ -1.0, -2.0, -3.0, -4.0, -5.0 ]
 	*/
 	main( N: number, xptr: number, strideX: number, yptr: number, strideY: number, c: number, s: number ): number;
@@ -267,8 +270,9 @@ interface Module extends ModuleWrapper {
 	* var viewX = zeros( N, dtype );
 	* var viewY = zeros( N, dtype );
 	* mod.read( xptr, viewX );
-	* mod.read( yptr, viewY );
 	* // viewX => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
+	*
+	* mod.read( yptr, viewY );
 	* // viewY => <Float64Array>[ -1.0, -2.0, -3.0, -4.0, -5.0 ]
 	*/
 	ndarray( N: number, xptr: number, strideX: number, offsetX: number, yptr: number, strideY: number, offsetY: number, c: number, s: number ): number;
@@ -379,8 +383,9 @@ interface Routine extends ModuleWrapper {
 	* var viewX = zeros( N, dtype );
 	* var viewY = zeros( N, dtype );
 	* mod.read( xptr, viewX );
-	* mod.read( yptr, viewY );
 	* // viewX => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
+	*
+	* mod.read( yptr, viewY );
 	* // viewY => <Float64Array>[ -1.0, -2.0, -3.0, -4.0, -5.0 ]
 	*/
 	Module: ModuleConstructor;
