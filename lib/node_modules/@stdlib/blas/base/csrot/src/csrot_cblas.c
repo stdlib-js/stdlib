@@ -19,6 +19,8 @@
 #include "stdlib/blas/base/csrot.h"
 #include "stdlib/blas/base/csrot_cblas.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Applies a plane rotation.
@@ -33,4 +35,26 @@
 */
 void API_SUFFIX(c_csrot)( const CBLAS_INT N, void *CX, const CBLAS_INT strideX, void *CY, const CBLAS_INT strideY, const float c, const float s ) {
 	API_SUFFIX(cblas_csrot)( N, CX, strideX, CY, strideY, c, s );
+}
+
+/**
+* Applies a plane rotation using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param CX       first input array
+* @param strideX  CX stride length
+* @param offsetX  starting index for CX
+* @param CY       second input array
+* @param strideY  CY stride length
+* @param offsetY  starting index for CY
+* @param c        cosine of the angle of rotation
+* @param s        sine of the angle of rotation
+*/
+void API_SUFFIX(c_csrot_ndarray)( const CBLAS_INT N, void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *CY, const CBLAS_INT strideY, const CBLAS_INT offsetY, const float c, const float s ) {
+	stdlib_complex64_t *cx = (stdlib_complex64_t *)CX;
+	stdlib_complex64_t *cy = (stdlib_complex64_t *)CY;
+
+	cx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
+	cy += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
+	API_SUFFIX(cblas_csrot)( N, (void *)cx, strideX, (void *)cy, strideY, c, s );
 }

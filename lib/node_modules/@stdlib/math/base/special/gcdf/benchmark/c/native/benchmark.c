@@ -91,17 +91,20 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	float a;
-	float b;
-	float y;
+	float a[ 100 ];
+	float b[ 100 ];
 	double t;
+	float y;
 	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		a[ i ] = roundf( 500.0f * rand_float() );
+		b[ i ] = roundf( 500.0f * rand_float() );
+	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		a = round( 500.0f * rand_float() );
-		b = round( 500.0f * rand_float() );
-		y = stdlib_base_gcdf( a, b );
+		y = stdlib_base_gcdf( a[ i % 100 ], b[ i % 100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

@@ -18,6 +18,9 @@
 
 #include "stdlib/blas/base/zcopy.h"
 #include "stdlib/blas/base/zcopy_cblas.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
@@ -28,6 +31,26 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void c_zcopy( const int N, const void *X, const int strideX, void *Y, const int strideY ) {
+void API_SUFFIX(c_zcopy)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
 	cblas_zcopy( N, X, strideX, Y, strideY );
+}
+
+/**
+* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y        output array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
+*/
+void API_SUFFIX(c_zcopy_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+	stdlib_complex128_t *zx = (stdlib_complex128_t *)X;
+	stdlib_complex128_t *zy = (stdlib_complex128_t *)Y;
+
+	zx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
+	zy += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
+	cblas_zcopy( N, (void *)zx, strideX, (void *)zy, strideY );
 }
