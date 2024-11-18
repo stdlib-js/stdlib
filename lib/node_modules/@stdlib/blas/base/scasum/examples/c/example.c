@@ -34,4 +34,10 @@ int main( void ) {
 
 	// Print the result:
 	printf( "out: %f\n", out );
+
+	// Compute the sum of the absolute values of real and imaginary components using alternative indexing semantics:
+	out = c_scasum_ndarray( N, (void *)cx, -strideX, N-1 );
+
+	// Print the result:
+	printf( "out: %f\n", out );
 }
