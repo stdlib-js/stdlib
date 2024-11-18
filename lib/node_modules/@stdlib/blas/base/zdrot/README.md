@@ -295,7 +295,7 @@ Applies a plane rotation.
 double x[] = { 1.0, 2.0, 3.0, 4.0 }; // interleaved real and imaginary components
 double y[] = { 5.0, 6.0, 7.0, 8.0 };
 
-c_zdrot( 2, (void *)x, 1, (void *)Y, 1, 0.8, 0.6 );
+c_zdrot( 2, (void *)x, 1, (void *)y, 1, 0.8, 0.6 );
 ```
 
 The function accepts the following arguments:
