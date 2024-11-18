@@ -92,7 +92,7 @@ var v = dsnannsumors( 4, x1, 2, out1, 1 );
 
 #### dsnannsumors.ndarray( N, x, strideX, offsetX, out, strideOut, offsetOut )
 
-Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values and using ordinary recursive summation with extended accumulation and alternative indexing semantics and returning an extended precision result.
+Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using ordinary recursive summation with extended accumulation and alternative indexing semantics, and returning an extended precision result.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -202,7 +202,7 @@ console.log( out );
 Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using ordinary recursive summation with extended accumulation, and returning an extended precision result.
 
 ```c
-const float x[] = { 1.0f, -2.0f, 0.0/0.0, 2.0f };
+const float x[] = { 1.0f, -2.0f, 0.0f/0.0f, 2.0f };
 CBLAS_INT n = 0;
 
 double v = stdlib_strided_dsnannsumors( 4, x, 1, &n );
@@ -214,7 +214,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **X**: `[in] float*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
--   **n**: `[out] CBLAS_INT*` number of non-NaN elements.
+-   **n**: `[out] CBLAS_INT*` pointer for storing the number of non-NaN elements.
 
 ```c
 double stdlib_strided_dsnannsumors( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, CBLAS_INT *n );
@@ -222,10 +222,10 @@ double stdlib_strided_dsnannsumors( const CBLAS_INT N, const float *X, const CBL
 
 #### stdlib_strided_dsnannsumors_ndarray( N, \*X, strideX, offsetX, \*n )
 
-Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values and using ordinary recursive summation with extended accumulation and alternative indexing semantics and returning an extended precision result.
+Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using ordinary recursive summation with extended accumulation and alternative indexing semantics, and returning an extended precision result.
 
 ```c
-const float x[] = { 1.0f, -2.0f, 0.0/0.0, 2.0f };
+const float x[] = { 1.0f, -2.0f, 0.0f/0.0f, 2.0f };
 CBLAS_INT n = 0;
 
 double v = stdlib_strided_dsnannsumors_ndarray( 4, x, 1, 0, &n );
@@ -238,7 +238,7 @@ The function accepts the following arguments:
 -   **X**: `[in] float*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
--   **n**: `[out] CBLAS_INT*` number of non-NaN elements.
+-   **n**: `[out] CBLAS_INT*` pointer for storing the number of non-NaN elements.
 
 ```c
 double stdlib_strided_dsnannsumors_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, CBLAS_INT *n );
@@ -269,7 +269,7 @@ double stdlib_strided_dsnannsumors_ndarray( const CBLAS_INT N, const float *X, c
 
 int main( void ) {
     // Create a strided array:
-    const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 0.0/0.0, 0.0/0.0 };
+    const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 0.0f/0.0f, 0.0f/0.0f };
 
     // Specify the number of elements:
     const int N = 5;
