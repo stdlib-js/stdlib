@@ -36,6 +36,11 @@ extern "C" {
 */
 void API_SUFFIX(c_csrot)( const CBLAS_INT N, void *CX, const CBLAS_INT strideX, void *CY, const CBLAS_INT strideY, const float c, const float s );
 
+/**
+* Applies a plane rotation using alternative indexing semantics.
+*/
+void API_SUFFIX(c_csrot_ndarray)( const CBLAS_INT N, void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *CY, const CBLAS_INT strideY, const CBLAS_INT offsetY, const float c, const float s );
+
 #ifdef __cplusplus
 }
 #endif

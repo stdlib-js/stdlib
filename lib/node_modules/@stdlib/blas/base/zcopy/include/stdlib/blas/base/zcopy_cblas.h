@@ -22,6 +22,8 @@
 #ifndef ZCOPY_CBLAS_H
 #define ZCOPY_CBLAS_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
 */
-void cblas_zcopy( const int N, const void *X, const int strideX, void *Y, const int strideY );
+void API_SUFFIX(cblas_zcopy)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }
