@@ -312,6 +312,33 @@ The function accepts the following arguments:
 void c_csrot( const CBLAS_INT N, void *CX, const CBLAS_INT strideX, void *CY, const CBLAS_INT strideY, const float c, const float s );
 ```
 
+#### c_csrot_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY, c, s )
+
+Applies a plane rotation using alternative indexing semantics.
+
+```c
+float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }; // interleaved real and imaginary components
+float y[] = { 5.0f, 6.0f, 7.0f, 8.0f };
+
+c_csrot_ndarray( 2, (void *)x, 1, 0, (void *)y, 1, 0, 0.8f, 0.6f );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **CX**: `[inout] void*` first input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `CX`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `CX`.
+-   **CY**: `[inout] void*` second input array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `CY`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `CY`.
+-   **c**: `[in] float` cosine of the angle of rotation.
+-   **s**: `[in] float` sine of the angle of rotation.
+
+```c
+void c_csrot_ndarray( const CBLAS_INT N, void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *CY, const CBLAS_INT strideY, const CBLAS_INT offsetY, const float c, const float s );
+```
+
 </section>
 
 <!-- /.usage -->
