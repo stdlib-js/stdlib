@@ -94,7 +94,7 @@ static double rand_double( void ) {
 * @param len          array length
 * @return elapsed time in seconds
 */
-static double benchmark( int iterations, int len ) {
+static double benchmark1( int iterations, int len ) {
 	double zx[ len*2 ];
 	double elapsed;
 	double norm;
@@ -109,6 +109,40 @@ static double benchmark( int iterations, int len ) {
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		norm = c_dznrm2( len, (void *)zx, 1 );
+		if ( norm != norm ) {
+			printf( "should not return NaN\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( norm != norm ) {
+		printf( "should not return NaN\n" );
+	}
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @param iterations   number of iterations
+* @param len          array length
+* @return elapsed time in seconds
+*/
+static double benchmark2( int iterations, int len ) {
+	double zx[ len*2 ];
+	double elapsed;
+	double norm;
+	double t;
+	int i;
+
+	for ( i = 0; i < len*2; i += 2 ) {
+		zx[ i ] = ( rand_double()*10000.0 ) - 5000.0;
+		zx[ i+1 ] = ( rand_double()*10000.0 ) - 5000.0;
+	}
+	norm = 0.0;
+	t = tic();
+	for ( i = 0; i < iterations; i++ ) {
+		norm = c_dznrm2_ndarray( len, (void *)zx, 1, 0 );
 		if ( norm != norm ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -143,7 +177,14 @@ int main( void ) {
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
 			printf( "# c::%s:len=%d\n", NAME, len );
-			elapsed = benchmark( iter, len );
+			elapsed = benchmark1( iter, len );
+			print_results( iter, elapsed );
+			printf( "ok %d benchmark finished\n", count );
+		}
+		for ( j = 0; j < REPEATS; j++ ) {
+			count += 1;
+			printf( "# c::%s:ndarray:len=%d\n", NAME, len );
+			elapsed = benchmark2( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}
