@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,7 @@
   ],
   "confs": [
     {
+      "task": "build",
       "src": [
         "./src/main.c"
       ],
@@ -35,7 +38,42 @@
       "dependencies": [
         "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/floor",
-        "@stdlib/constants/float64/max-safe-integer"
+        "@stdlib/constants/float64/max-safe-integer",
+        "@stdlib/math/base/special/fmod"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/constants/float64/max-safe-integer",
+        "@stdlib/math/base/special/fmod"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/constants/float64/max-safe-integer",
+        "@stdlib/math/base/special/fmod"
       ]
     }
   ]
