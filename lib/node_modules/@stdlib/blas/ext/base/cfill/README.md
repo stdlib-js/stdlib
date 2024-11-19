@@ -63,9 +63,9 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **alpha**: scalar constant.
 -   **x**: input [`Complex64Array`][@stdlib/array/complex64].
--   **strideX**: index increment.
+-   **strideX**: stride length.
 
-The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to fill every other element
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to fill every other element:
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -175,7 +175,7 @@ The function has the following additional parameters:
 
 -   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last two elements of the strided array
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last two elements of the strided array:
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -290,6 +290,8 @@ console.log( x.get( 0 ).toString() );
 Fills a single-precision complex floating-point strided array `X` with a specified scalar constant `alpha`.
 
 ```c
+#include "stdlib/complex/float32/ctor.h"
+
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
 
@@ -301,7 +303,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **alpha**: `[in] stdlib_complex64_t` scalar constant.
 -   **X**: `[out] stdlib_complex64_t*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 
 ```c
 void stdlib_strided_cfill( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX );
@@ -312,6 +314,8 @@ void stdlib_strided_cfill( const CBLAS_INT N, const stdlib_complex64_t alpha, st
 Fills a single-precision complex floating-point strided array `X` with a specified scalar constant `alpha` using alternative indexing semantics.
 
 ```c
+#include "stdlib/complex/float32/ctor.h"
+
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
 
@@ -323,7 +327,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **alpha**: `[in] stdlib_complex64_t` scalar constant.
 -   **X**: `[out] stdlib_complex64_t*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c

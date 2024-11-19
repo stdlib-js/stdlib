@@ -109,6 +109,7 @@ static double benchmark1( int iterations, int len ) {
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
 		stdlib_strided_cfill( len, alpha, (stdlib_complex64_t *)x, 1 );
 		if ( x[ 0 ] != x[ 0 ] ) {
 			printf( "should not return NaN\n" );
@@ -143,6 +144,7 @@ static double benchmark2( int iterations, int len ) {
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
 		stdlib_strided_cfill_ndarray( len, alpha, (stdlib_complex64_t *)x, 1, 0 );
 		if ( x[ 0 ] != x[ 0 ] ) {
 			printf( "should not return NaN\n" );

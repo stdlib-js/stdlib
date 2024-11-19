@@ -17,13 +17,13 @@
         Number of indexed elements.
 
     alpha: Complex64
-        Constant.
+        Scalar Constant.
 
     x: Complex64Array
         Input array.
 
     strideX: integer
-        Index increment.
+        Stride length.
 
     Returns
     -------
@@ -88,13 +88,13 @@
         Number of indexed elements.
 
     alpha: Complex64
-        Constant.
+        Scalar Constant.
 
     x: Complex64Array
         Input array.
 
     strideX: integer
-        Index increment.
+        Stride length.
 
     offsetX: integer
         Starting index.
