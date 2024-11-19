@@ -37,8 +37,25 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
 	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, CX, N, strideX, argv, 1 );
-	STDLIB_NAPI_CREATE_DOUBLE( env, (double)API_SUFFIX(c_scnrm2)( N, CX, strideX ), norm );
+	STDLIB_NAPI_CREATE_DOUBLE( env, (double)API_SUFFIX(c_scnrm2)( N, (void *)CX, strideX ), norm );
 	return norm;
 }
 
-STDLIB_NAPI_MODULE_EXPORT_FCN( addon )
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+static napi_value addon_method( napi_env env, napi_callback_info info ) {
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 3 );
+	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, CX, N, strideX, argv, 1 );
+	STDLIB_NAPI_CREATE_DOUBLE( env, (double)API_SUFFIX(c_scnrm2_ndarray)( N, (void *)CX, strideX, offsetX ), norm );
+	return norm;
+}
+
+STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "ndarray", addon_method )

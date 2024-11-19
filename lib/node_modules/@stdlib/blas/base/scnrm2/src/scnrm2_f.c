@@ -19,6 +19,8 @@
 #include "stdlib/blas/base/scnrm2.h"
 #include "stdlib/blas/base/scnrm2_fortran.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Computes the L2-norm of a complex single-precision floating-point vector.
@@ -31,5 +33,22 @@
 float API_SUFFIX(c_scnrm2)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX ) {
 	float nrm2;
 	scnrm2sub( &N, CX, &strideX, &nrm2 );
+	return nrm2;
+}
+
+/**
+* Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param CX       input array
+* @param strideX  CX stride length
+* @param offsetX  starting index for CX
+* @return         L2-norm
+*/
+float API_SUFFIX(c_scnrm2_ndarray)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	stdlib_complex64_t *cx = (stdlib_complex64_t *)CX;
+	float nrm2;
+	cx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	scnrm2sub( &N, (void *)cx, &strideX, &nrm2 );
 	return nrm2;
 }

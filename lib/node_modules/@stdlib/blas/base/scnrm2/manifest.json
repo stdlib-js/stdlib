@@ -49,6 +49,8 @@
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/napi/create-double"
       ]
     },
@@ -58,7 +60,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scnrm2.c"
+        "./src/scnrm2.c",
+        "./src/scnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -67,6 +70,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/absf",
         "@stdlib/math/base/special/abs2f",
         "@stdlib/math/base/special/sqrtf",
@@ -79,7 +83,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scnrm2.c"
+        "./src/scnrm2.c",
+        "./src/scnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -88,6 +93,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/absf",
         "@stdlib/math/base/special/abs2f",
         "@stdlib/math/base/special/sqrtf",
@@ -117,6 +123,8 @@
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/napi/create-double"
       ]
     },
@@ -137,7 +145,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -157,7 +167,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
 
@@ -182,6 +194,8 @@
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/napi/create-double"
       ]
     },
@@ -191,7 +205,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scnrm2.c"
+        "./src/scnrm2.c",
+        "./src/scnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -200,6 +215,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/absf",
         "@stdlib/math/base/special/abs2f",
         "@stdlib/math/base/special/sqrtf",
@@ -212,7 +228,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scnrm2.c"
+        "./src/scnrm2.c",
+        "./src/scnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -221,6 +238,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/absf",
         "@stdlib/math/base/special/abs2f",
         "@stdlib/math/base/special/sqrtf",
@@ -249,6 +267,8 @@
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/napi/create-double"
       ]
     },
@@ -268,7 +288,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -287,7 +309,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
 
@@ -313,6 +337,8 @@
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/napi/create-double"
       ]
     },
@@ -333,7 +359,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -353,7 +381,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
 
@@ -363,7 +393,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scnrm2.c"
+        "./src/scnrm2.c",
+        "./src/scnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -376,6 +407,8 @@
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/napi/create-double",
         "@stdlib/math/base/special/absf",
         "@stdlib/math/base/special/abs2f",
@@ -389,7 +422,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scnrm2.c"
+        "./src/scnrm2.c",
+        "./src/scnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -398,6 +432,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/absf",
         "@stdlib/math/base/special/abs2f",
         "@stdlib/math/base/special/sqrtf",
@@ -410,7 +445,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scnrm2.c"
+        "./src/scnrm2.c",
+        "./src/scnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -419,6 +455,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/absf",
         "@stdlib/math/base/special/abs2f",
         "@stdlib/math/base/special/sqrtf",
@@ -432,7 +469,8 @@
       "blas": "",
       "wasm": true,
       "src": [
-        "./src/scnrm2.c"
+        "./src/scnrm2.c",
+        "./src/scnrm2_ndarray.c"
       ],
       "include": [
         "./include"
@@ -441,6 +479,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/absf",
         "@stdlib/math/base/special/abs2f",
         "@stdlib/math/base/special/sqrtf",
