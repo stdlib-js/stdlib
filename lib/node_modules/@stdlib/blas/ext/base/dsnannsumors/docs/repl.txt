@@ -60,8 +60,8 @@
 
 {{alias}}.ndarray( N, x, strideX, offsetX, out, strideOut, offsetOut )
     Computes the sum of single-precision floating-point strided array elements,
-    ignoring `NaN` values and using ordinary recursive summation with extended
-    accumulation and alternative indexing semantics and returning an extended
+    ignoring `NaN` values, using ordinary recursive summation with extended
+    accumulation and alternative indexing semantics, and returning an extended
     precision result.
 
     While typed array views mandate a view offset based on the underlying
