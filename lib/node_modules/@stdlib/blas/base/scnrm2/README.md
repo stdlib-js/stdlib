@@ -181,7 +181,7 @@ Computes the L2-norm of a complex single-precision floating-point vector.
 const float cx[] = { 0.3f, 0.1f, 0.5f, 0.0f, 0.0f, 0.5f, 0.0f, 0.2f };
 
 float norm = c_scnrm2( 4, (void *)cx, 1 );
-// returns 0.8
+// returns 0.8f
 ```
 
 The function accepts the following arguments:
@@ -192,6 +192,27 @@ The function accepts the following arguments:
 
 ```c
 float c_scnrm2( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX );
+```
+
+#### c_scnrm2_ndarray( N, \*CX, strideX, offsetX )
+
+Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
+
+```c
+const float cx[] = { 0.3f, 0.1f, 0.5f, 0.0f, 0.0f, 0.5f, 0.0f, 0.2f };
+
+float norm = c_scnrm2_ndarray( 4, (void *)cx, 1, 0 );
+// returns 0.8f
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **CX**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `CX`.
+
+```c
+float c_scnrm2_ndarray( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>
@@ -227,7 +248,13 @@ int main( void ) {
     const int strideX = 1;
 
     // Compute the L2-norm:
-    c_scnrm2( N, (void *)cx, strideX );
+    float norm = c_scnrm2( N, (void *)cx, strideX );
+
+    // Print the result:
+    printf( "L2-norm: %f\n", norm );
+
+    // Compute the L2-norm using alternative indexing semantics:
+    norm = c_scnrm2_ndarray( N, (void *)cx, -strideX, N-1 );
 
     // Print the result:
     printf( "L2-norm: %f\n", norm );
