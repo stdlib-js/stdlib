@@ -115,6 +115,7 @@ interface Namespace {
 	* // returns <Float64Array>
 	*/
 	unary: typeof unary;
+
 }
 
 /**
