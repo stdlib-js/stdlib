@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": false,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "baseUrl": "lib/node_modules",
+    "checkJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "keyofStringsOnly": false,
+    "lib": [
+      "es6"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "newLine": "lf",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "noStrictGenericChecks": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {},
+    "pretty": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "suppressExcessPropertyErrors": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "typeRoots": [ "." ],
+    "types": []
+  },
+  "include": [
+    "./../../lib/node_modules/**/docs/types/index.d.ts",
+    "./../../lib/node_modules/**/@stdlib/types/index.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
