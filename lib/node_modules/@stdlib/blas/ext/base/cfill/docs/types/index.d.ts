@@ -103,7 +103,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param alpha - scalar constant
 * @param x - input array
-* @param strideX - index increment
+* @param strideX - stride length
 * @returns input array
 *
 * @example
