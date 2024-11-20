@@ -241,7 +241,7 @@
     "tap-xunit": "^2.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "to-vfile": "^6.0.0",
-    "typedoc": "^0.16.11",
+    "typedoc": "^0.26.11",
     "typescript": "4.3.5",
     "uglify-js": "^3.17.4",
     "uglifyify": "^5.0.0",
